@@ -107,7 +107,7 @@ There are two configurations options available. Choose the option that works bes
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

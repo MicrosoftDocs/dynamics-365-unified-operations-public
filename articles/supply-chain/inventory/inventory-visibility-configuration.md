@@ -2,7 +2,7 @@
 title: Configure Inventory Visibility
 description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 03/03/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -51,7 +51,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. It provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ring fencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
-| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
+| *AdvancedWHS* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
 
 > [!IMPORTANT]
 > We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
@@ -171,6 +171,7 @@ Inventory Visibility provides a list of default physical measures that are mappe
 | `Registered` | Registered |
 | `ReservOrdered` | Ordered reserved |
 | `ReservPhysical` | Physical reserved |
+| `OrderedSum` | Ordered in total |
 
 If your data source is Supply Chain Management, you don't have to re-create the default physical measures. However, for external data sources, you can create new physical measures by following these steps.
 
@@ -182,7 +183,7 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 Customers who want to use external data sources in the data source can take advantages of the extensibility that Dynamics 365 offers by creating [Class Extensions](../../fin-ops-core/dev-itpro/extensibility/class-extensions.md) for the `InventOnHandChangeEventDimensionSet` and `InventInventoryDataServiceBatchJobTask` classes.
 
-Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to Dimensions section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
+Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
 > [!NOTE] 
 > For additional details about creating extensions, see [Extensibility home page](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).

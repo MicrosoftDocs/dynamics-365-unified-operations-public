@@ -45,7 +45,7 @@ If you must redistribute service activity assignments, you can move the graphica
 
 ## Example
 
-While monitoring the day's service activity, you notice that John, a service technician, is running behind schedule on assigned service calls. You also notice that the last call in his list must be completed by the end of the day to meet service level agreement requirements. By using the drag-and-drop functionality of the Gantt chart, you can reassign that service call to Meg, who has completed her own service calls ahead of schedule.
+While monitoring the day's service activity, you notice that John, a service technician, is running behind schedule on assigned service calls. You also notice that the last call in John's list must be completed by the end of the day to meet service level agreement requirements. By using the drag-and-drop functionality of the Gantt chart, you can reassign that service call to Meg, who has completed service calls ahead of schedule.
 
 ## Open the Dispatch board form
 

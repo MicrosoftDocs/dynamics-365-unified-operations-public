@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 12/06/2022
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -188,6 +188,7 @@ The environment state will show the deployment progress. The state will be chang
 - If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
+- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure. 
 
 #### Dual-write integration
 

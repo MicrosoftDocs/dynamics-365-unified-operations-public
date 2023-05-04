@@ -4,7 +4,7 @@
 title: Revenue recognition reallocation
 description: This article provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
 author: bking
-ms.date: 09/09/2021
+ms.date: 02/22/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -38,24 +38,8 @@ Your organization must determine for itself whether reallocation is required. Th
 - A customer returned or received a credit for an item after the original sales order was fully or partially invoiced.
 
 There are a few important limitations on the reallocation process:
-
-- The process can be run only one time. Therefore, it's important that you run it only after all changes are finalized.
-
-    - This limitation is removed in release 10.0.17 and later.
-
-- The process can't be run on project sales orders.
-
-    - This limitation is removed in release 10.0.17 and later.
-
 - If multiple sales orders are involved, they must be for the same customer account.
 - All sales orders that are reallocated must be in the same transaction currency.
-- The process can't be reversed or undone after it's run.
-
-    - This limitation is removed in release 10.0.17 and later.
-
-- Reallocation can be done only for either sales orders or project sales orders. It can't be done for a combination of sales orders and project sales orders.
-
-    - This limitation is removed in release 10.0.17 and later.
 
 ## Set up reallocation
 

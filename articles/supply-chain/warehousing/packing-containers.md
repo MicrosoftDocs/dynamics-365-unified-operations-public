@@ -3,7 +3,7 @@ title: Pack containers for shipment
 description: This article describes the packing process that lets you validate inventory items and pack them into containers.
 author: perlynne
 ms.date: 7/13/2022
-ms.topic: business-process
+ms.topic: how-to
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 audience: Application User
 ms.reviewer: kamaybac
@@ -232,7 +232,7 @@ Follow these steps to set up a packing profile.
 
 1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
-1. On the header of the new or selected profile, set the following fields:
+1. Make the following settings for your new or selected profile:
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.

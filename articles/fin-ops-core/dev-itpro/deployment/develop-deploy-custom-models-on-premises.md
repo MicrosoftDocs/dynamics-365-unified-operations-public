@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform update 8
 ms.custom: 107013
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Develop and deploy custom models to on-premises environments
