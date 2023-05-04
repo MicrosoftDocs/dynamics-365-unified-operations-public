@@ -14,11 +14,13 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
+<!-- KFM: Find out when and how to use ® and ™ -->
+
 This article describes how to set up and print labels in Microsoft Dynamics 365 Supply Chain Management by using the BarTender® by Seagull Scientific. It's one example that shows how to use the Supply Chain Management external service label printing feature. For general information about how this feature works, see [Print labels using an external service](label-printing-using-external-label-service.md).
 
-The BarTender labeling solution is available as on-premise software and as a cloud-based SaaS offering. At this time, only BarTender Cloud can be used together with the external label printing service. In this guide, the focus on integration with the BarTender Cloud™ solution.
+The BarTender labeling solution is available both as on-premies software and as a cloud-based software-as-a-service (SaaS) offering. At this time, only BarTender Cloud can be used together with the external label printing service for Supply Chain Management. This topic describes how to integrate Supply Chain Management with the BarTender Cloud™ solution.
 
-This guide describes how to use the BarTender Cloud REST API with the YAML format to call BarTender Cloud. For more information about BarTender Cloud, see [BarTender Cloud](https://www.seagullscientific.com/software/cloud/).
+This article describes how to communicate with BarTender Cloud by exchanging YAML format documents though the BarTender Cloud REST API. For more information about BarTender Cloud, see [BarTender Cloud](https://www.seagullscientific.com/software/cloud/).
 
 > [!IMPORTANT]
 > By enabling the external service integration, you affirm that you understand that the data handling, privacy, and compliance standards of the external service might not be the same as the standards that are provided by Dynamics 365 Supply Chain Management. To learn whether the external service meets your organization's security and privacy requirements, including requirements for the handling of personal data and geo-residency, consult the external service's documentation and terms. Your privacy is important to us. To learn more, read the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
@@ -28,11 +30,11 @@ This guide describes how to use the BarTender Cloud REST API with the YAML forma
 
 ## <a name="prepare-integration"></a>Prepare for BarTender Cloud integration
 
-Before you can access BarTender Cloud by using by the REST API, you must copy the personal access token from BarTender Cloud, which will be used to authenticate to BarTender Cloud. For more information, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender Help Center.
+Before you can access BarTender Cloud through its REST API, you must copy your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center.
 
-## Configure Supply Chain Management to print to BarTender Cloud managed printers by using the Actions API
+## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 
-The BarTender Cloud Actions REST API supports submitting scripts for execution by the BarTender Cloud service in several formats, including YAML- and JSON-based action scripts and scripts that use the older BarTender XML (BTXML) format. We will be using the PrintBTWAction action to print a label that is based on a design that is saved in the BarTender Cloud account to a printer that is accessed through the BarTender Cloud Print Gateway, which is installed on a workstation on the local network.
+The BarTender Cloud Actions REST API supports submitting scripts for execution by the BarTender Cloud service in several formats, including YAML-based and JSON-based action scripts and scripts that use the older BarTender XML (BTXML) format. This article describes how to use the `PrintBTWAction` action to print a label based on a design saved in your BarTender Cloud account to a printer that is accessed through the BarTender Cloud Print Gateway, which is installed on a workstation on the local network.
 
 ### Set up an external service definition for printing through the Actions API
 
@@ -72,7 +74,7 @@ Follow these steps to set up an external service definition.
     - On the **Request body** FastTab, set the following fields:
 
         - **Content type** – Enter *text/yaml*.
-        - **Body** – Enter the content of the request body. Here's an example. 
+        - **Body** – Enter the content of the request body. Here's an example.
         > [!NOTE]
         > Paste text exactly as written. Indentation is important. Be sure to use four spaces to indent, and do not use tabs.
 
@@ -105,7 +107,7 @@ Follow these steps to set up an external service definition.
 
 ### Set up an external service instance for printing through the Actions API
 
-For the this step, you will need the personal access token that you copied earlier from BarTender Cloud. 
+For the this step, you will need the personal access token that you copied earlier from BarTender Cloud.
 > [!NOTE]
 > Personal access tokens expire after 30 days, and you will have to enter a new token before the old one expires. You can manually refresh the token to obtain a new one.
 
