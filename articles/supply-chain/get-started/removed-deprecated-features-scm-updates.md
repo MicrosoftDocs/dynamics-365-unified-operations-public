@@ -39,6 +39,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.35 release
+
+### Integration with Outlook for contacts, appointments, and tasks
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Exchange web service API is transitioning from SOAP to REST. |
+| **Replaced by another feature?**   | No replacement is planned. We recommend that customers integrate with Dynamics 365 Sales. |
+| **Product areas affected** | Supply Chain Management - sales and marketing |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Deprecated. As of December 1, 2023, Microsoft will discontinue support for synchronizing contacts, appointments, and tasks between Supply Chain Management and Outlook. In addition, security updates will no longer be provided for these features.</p><p>This functionality is being discontinued because the existing integration is based on SOAP. However, Exchange Web Service (EWS) is transitioning from SOAP to REST and will support only REST going forward. There are no plans to add REST support for Outlook integration in Supply Chain Management.</p><p>As of May 1, 2024, it will no longer be possible to synchronize the following types of records between Supply Chain Management and Outlook:</p><ul><li>Contacts</li><li>Appointment activities</li><li>Task activities</li></ul><p>To prepare for this change, redesign any extensions that you've made to any of these capabilities to remove the dependency.</p><p>To support customer relations management scenarios, consider integrating Dynamics 365 Sales with Outlook and/or using dual-write to synchronize contacts for customer accounts between Supply Chain Management and Dynamics 365 Sales. (For more information, see [Integrated customer master](../../fin-ops-core/dev-itpro/data-entities/dual-write/customer-mapping.md).)</p> |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.29 release
 
 ### Stock transfer orders that have tax on the transfer price

@@ -3266,6 +3266,8 @@
           items: 
           - name: Latin America overview
             href: localizations/latam-overview.md
+          - name: Latin America parameters
+            href: localizations/ltm-core-latam-parameters.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
@@ -3290,6 +3292,10 @@
             href: localizations/ltm-core-sales-point-prefixes.md
           - name: Sales point relation for sales documents and remission
             href: localizations/ltm-core-point-relation.md
+          - name: Sales invoice posting for Latin America
+            href: localizations/ltm-core-sales-invoice-posting-latam.md
+          - name: Value query for Latin America
+            href: localizations/ltm-core-value-query.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -4089,6 +4095,22 @@
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
         - name: Help prevent long-running reports from timing out
           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance  
+    - name: Business performance analytics (preview)
+      items: 
+      - name: Business performance analytics
+        href: business-performance-analytics/business-performance-analytics-home-page
+      - name: Configure business performance analytics
+        href: business-performance-analytics/configure-BPA.md
+      - name: Install business performance analytics
+        href: business-performance-analytics/install-bpa.md
+      - name: Set up security in business performance analytics
+        href: business-performance-analytics/set-up-security.md
+      - name: Business performance analytics FAQ 
+        href: business-performance-analytics/bpa-faq.md
+      - name: Business performance analytics reports
+        href: business-performance-analytics/Reports-in-BPA.md
+      - name: Create business performance analytics reports  
+        href: business-performance-analytics/how-to-create-and-edit-reports.md        
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview

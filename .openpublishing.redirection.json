@@ -1,11 +1,20 @@
 {
   "redirections": [
     {
+      "source_path": "articles//fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
+      "redirect_url": "/dynamics365/finance",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu12.md",
       "redirect_url": "setup-deploy-on-premises-latest",
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/personalization-gdpr.md",
+      "redirect_url": "opt-out-personalization",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/public-preview-terms.md",
       "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2105274",
       "redirect_document_id": "false"

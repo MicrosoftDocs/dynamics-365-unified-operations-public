@@ -2,7 +2,7 @@
 title: Set up POS hybrid app on Android and iOS
 description: This article shows how to set up the POS hybrid app on Android and iOS.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 05/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -15,6 +15,7 @@ ms.search.validFrom: 2018-10-29
 # Set up POS hybrid app on Android and iOS
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/mpos-hybrid-apps-deprecation-banner.md)]
 
 This article shows how to build and run the Retail point of sale (POS) hybrid app on Android and iOS devices. 
 
@@ -79,7 +80,7 @@ For more detailed information about how to install Xamarin on iOS, see [Xamarin.
 
 ### Build the iOS Retail hybrid app
 
-1. In the [Retail SDK folder](/retail-sdk/retail-sdk-overview#download-the-retail-sdk), open **SampleExtensions\\HybridApp\\iOS\\solution**. After you've connected to the Mac and built the application in Visual Studio, select the iOS device type, and deploy the app on the selected device.
+1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\\HybridApp\\iOS\\solution**. After you've connected to the Mac and built the application in Visual Studio, select the iOS device type, and deploy the app on the selected device.
       
     ![POS iOS app Visual Studio setting for deployment](./media/iOSSetting.png)
    
