@@ -60,7 +60,7 @@ For a *non-integrated* Power Platform environment, you must install the finance 
 
 Invoice capture officially supports *integrated* Power Platform environments. Before you can install the Invoice capture solution, you must set up the connection between the environment and the Microsoft Dynamics 365 Finance environment by following these steps.
 
-1. Register an application, and add a client secret to Microsoft Azure Active Directory (Azure AD) under your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad).
+1. Register an application, and add a client secret to Microsoft Azure Active Directory (Azure AD) in your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad).
 
     > [!NOTE]
     > Make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you will need them later.
