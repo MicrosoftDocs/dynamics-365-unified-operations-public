@@ -153,8 +153,15 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 | Scheme | Card present | Card not present |
 |---|---|---|
-| Alipay | Support will be added in a future release. | No |
-| WeChat | Support will be added in a future release. | No |
+| PayPal (via Adyen Connector) | No | No |
+| Google Pay | No | No |
+| Apple Pay | Yes | Yes |
+| Klarna | No | No |
+| Affirm | No | No |
+| Afterpay | No | No |
+| Alipay | No | No |
+| WeChat | No | No |
+
 
 #### Supported card present input methods
 | Input method | Supported | Notes |
