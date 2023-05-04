@@ -2,12 +2,12 @@
 title: Respond to requests for personal data in Human Resources
 description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
-ms.date: 01/31/2018
+ms.date: 02/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
@@ -93,7 +93,11 @@ Only terminated workers can be deleted from Human Resources. Follow these steps 
 
 + Delete any associated checklists.
 
-    To delete the checklists, select the **Checklists** option on the **Worker** page.
+    To delete the checklists, select the **Checklists** option on the **Worker** page.+ Delete the Party in the Address book
+    
++ Delete the Party in the Address book
+
+     If the **Delete parties with no roles** option is selected on the **Global Address book parameters** page and the party is NOT associated to another role (ex: vendor, customer, contact) the associated party record will be deleted automatically when the worker is deleted. If this option isn't enabled, the user will need to manually delete the party in the address book. 
 
 Compensation isn't assigned to contractors. Therefore, those steps can be skipped in the preceding process.
 

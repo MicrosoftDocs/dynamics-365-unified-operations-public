@@ -93,7 +93,7 @@ The following illustration shows the **Enable Shop Similar Looks Link** check bo
 
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Add product recommendations on POS](product.md)
 

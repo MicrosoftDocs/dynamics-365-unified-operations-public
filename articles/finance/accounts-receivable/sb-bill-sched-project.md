@@ -29,6 +29,9 @@ ms.dyn365.ops.version: 10.0.24
 
 # Billing schedules with projects
 
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 Subscription billing enables organizations to manage recurring billing through billing schedules. Projects help you plan, create, manage, control, and complete customer-focused work for your organization. On some time-and-material projects, a customer might have to be billed on a recurring basis for all or part of the project.
 
 For example, for one project that you have with a customer, the customer agrees to pay for a monthly subscription for a service, such as cloud storage or a support contract. A billing schedule can be used to set up the recurring charge, and the project invoice proposal can be used to do the billing. This approach helps streamline customer billing, because project transactions and recurring billing charges can be included in the project invoice proposal.

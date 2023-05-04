@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-06-30 
 ms.dyn365.ops.version: Platform update 44 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) supported software

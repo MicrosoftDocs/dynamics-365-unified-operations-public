@@ -20,7 +20,6 @@ ms.search.validFrom: 2016-11-30
 # Send email receipts from Store Commerce
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to send receipt emails from Microsoft Dynamics 365 Commerce Store Commerce when a transaction is tendered at the point of sale (POS).
 

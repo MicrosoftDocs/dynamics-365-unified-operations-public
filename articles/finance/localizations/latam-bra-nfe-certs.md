@@ -44,23 +44,26 @@ The Brazilian government updated the root certification authority (CA) that is u
 
 ## Solutions
 - Manually install root CA v5 (AC Raiz v5) – The root certificate must be installed in Trusted Root Certification Authorities store. Although the Brazilian government created a new root certificate (v5), Windows Security hasn’t yet added this certificate to the Trusted Root Certification Authorities store. This means you must open an incident in Windows Support and then manually install the certificate. You can use this workaround until the Windows Security group reaches an agreement with the Brazilian government.
-- Install the NF-e proxy on an on-premises VM – The tax authorities for the states of Ceará (CE), Goias (GO), and Pernambuco (PE) didn’t enable the most secure and market-standard protocol, Transport Layer Security (TLS) 1.2, in their web servers. However, the Windows virtual machines (VMs) that are used to run Finance follow Microsoft security policy and allow only connections that use TLS 1.2. Therefore, the system can’t connect directly to these web services. To route communications to those three states, customers must install a proxy web service on an on-premises Windows VM in their Microsoft Azure subscription.
+- Install a NF-e HTTP proxy server – The tax authorities for some states (e.g.: Ceará (CE), Goias (GO), Pernambuco (PE) and Rio de Janeiro (RJ) among others) haven’t enabled the most secure and market-standard cipher suites in their web servers. However, the Windows virtual machines (VMs) that are used to run Finance follow the Microsoft security policy and allow only connections that use TLS 1.2 with more secure cipher suites. Therefore, the system can’t connect directly to these web services. To route communications to those three states, customers must install a proxy http server in their Microsoft Azure subscription. For more information about the supported cipher suites, see [Encryption in finance and operations apps](../../fin-ops-core/dev-itpro/sysadmin/encryption.md).
+
+> [!NOTE]
+> To verify that your endpoints comply with the supported ciphers described in the article, [Encryption in finance and operations apps](../../fin-ops-core/dev-itpro/sysadmin/encryption.md), perform a test using a TLS cipher and scanner tool. Test your endpoint using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html) .
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
 For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](/rest/api/keyvault/about-keys--secrets-and-certificates).
-The following table lists each tax authority and the solution that you should use to install certificates for it.
+The following table lists each tax authority and the solution that you should use to install certificates for it. In case your test of TLS cipher reveals that the tax authority doesn't use the more secure cipher suites, install the NF e HTTP proxy server.
 
 |Tax authority|	States|	Solution|
 |-------------|-------|---------|
 |Sefaz Amazonas - (AM)|	AM|	Manually install root CA v5.|
 |Sefaz Bahia (BA)|	BA|	Manually install root CA v5.|
-|Sefaz Ceará (CE)|	CE|	Install the NF e proxy on an on-premises VM.|
-|Sefaz Goias (GO)|	GO|	Install the NF e proxy on an on-premises VM.|
+|Sefaz Ceará (CE)|	CE|	Install the NF e HTTP proxy server.|
+|Sefaz Goias (GO)|	GO|	Install the NF e HTTP proxy server.|
 |Sefaz Minas Gerais (MG)|	MG|	Manually install root CA v5.|
 |Sefaz Mato Grosso do Sul (MS)|	MS|	No additional solution is required|
 |Sefaz Mato Grosso (MT)|	MT|	No additional solution is required|
-|Sefaz Pernambuco (PE)|	PE|	Install the NF e proxy on an on-premises VM.|
+|Sefaz Pernambuco (PE)|	PE|	Install the NF e HTTP proxy server.|
 |Sefaz Paraná (PR)|	PR|	Manually install root CA v5.|
 |Sefaz Rio Grande do Sul (RS)|	RS|	No additional solution is required|
 |Sefaz São Paulo (SP)|	SP|	No additional solution is required|

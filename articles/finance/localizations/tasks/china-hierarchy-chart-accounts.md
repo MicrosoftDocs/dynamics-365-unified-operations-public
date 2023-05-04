@@ -3,7 +3,7 @@ title: CN-00010 China hierarchy of chart of accounts
 description: This procedure shows how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

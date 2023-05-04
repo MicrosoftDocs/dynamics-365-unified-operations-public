@@ -5,7 +5,7 @@ title: Create a purchase agreement
 description: This article guides you through the creation of a purchase agreement. 
 author: GalynaFedorova
 ms.date: 07/18/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -4,8 +4,8 @@
 title: Create advanced rules for journals
 description: This procedure steps through creating advanced rules for journals. 
 author: aprilolson
-ms.date: 08/08/2019
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,14 +31,14 @@ This procedure steps through creating advanced rules for journals. This includes
 
 
 ## Set up journal control
-1. In the **Navigation pane**, go to **Modules > General ledger > Journal setup > Journal names**.
+1. Go to **General ledger > Journal setup > Journal names**.
 2. In the list, find and select the desired record.
 3. On the **Action pane**, click **Journal control**.
-4. In the **Which account types can be posted** fastTab, click **Add**.
+4. In the **Which account types can be posted** FastTab, click **Add**.
 5. In the **Company accounts** field, click the drop-down button to open the lookup.
 6. In the list, find and select the desired record.
 7. In the list, click the link in the selected row.
-8. In the **Which segment values are valid for this journal** fastTab, click **Add**.
+8. In the **Which segment values are valid for this journal** FastTab, click **Add**.
 9. In the **Account structure** field, click the drop-down button to open the lookup.
 10. In the list, find and select the desired record.
 11. In the list, click the link in the selected row.
@@ -54,8 +54,8 @@ This procedure steps through creating advanced rules for journals. This includes
 ## Set up posting restrictions
 1. Close the page.
 2. Click **Posting restrictions**.
-3. In the **How do you want to set up posting restrictions** field, select 'By user group'.
-4. In the tree, check 'the group that you want to allow posting for this journal name.'.
+3. In the **How do you want to set up posting restrictions** field, select **By user group**.
+4. In the tree, check **The group that you want to allow posting for this journal name**.
 5. Click **OK**.
 
 

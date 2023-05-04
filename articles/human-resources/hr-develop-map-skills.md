@@ -4,7 +4,6 @@
 title: Map skills
 description: You can create a skill-mapping search to find a qualified person in Dynamics 365 Human Resources.
 author: twheeloc
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: 

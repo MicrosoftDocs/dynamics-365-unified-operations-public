@@ -3,7 +3,7 @@ title: ER Create required configurations to import data from an external file
 description: This article describes how to design Electronic reporting configurations to import data in to the Microsoft Dynamics 365 Finance app from an external file.
 author: kfend
 ms.date: 03/24/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

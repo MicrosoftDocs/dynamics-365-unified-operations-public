@@ -2,14 +2,14 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
-description: This article explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
-author: veeravendhan-s 
-ms.date: 10/06/2022
+description: This article explains how to upgrade data from Microsoft Dynamics AX 2012 in self-service environments.
+author: ttreen  
+ms.date: 04/03/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: vesakkar
+ms.author: ttreen
 ms.search.validFrom: 2021-06-30
 
 ---
@@ -21,14 +21,15 @@ ms.search.validFrom: 2021-06-30
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 
 1. **[Prerequisites](data-upgrade-self-service.md#prerequisites)**
-2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
+2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the DataMigrationTool.exe application to complete the upgrade process.
 3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 4. **[Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)**  – This section will help you reset the process parameters and restart any of the processes.
 
 ## Prerequisites
 
-1. Download the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file.
-2. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
+1. A successful upgrade test has been completed in a cloud hosted (development) environment with customer data. This test should have been run against the same application version and customizations as the self-service environment. 
+2. Download the **Data Migration Toolkit for Dynamics365 Version 1.0.8 (or higher)** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file. Unblock the ZIP download via file properties before extracting. 
+3. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
 
 > [!IMPORTANT]
 > It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
@@ -38,7 +39,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > Keep the following points in mind:
 > 
 > - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
-> - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
+> - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from LCS.
 > - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
@@ -46,15 +47,11 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
     ```sql
     -- If @installed is 0, replication must be added to the SQL Server installation.
-
+    
     USE master;
-
     GO
-
     DECLARE @installed int;
-
     EXEC @installed = sys.sp_MS_replication_installed;
-
     SELECT @installed;
     ```
 
@@ -64,12 +61,13 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
-    > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
+    > A user should have the **DB\_Owner** privilege in the source database and should have access to the master database and the source database.
 
-8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
+8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
+    - **Path of the SpecialTables.xml file:** Data\\SpecialTables.xml
 
     The following examples show how to specify tables and functions in the XML files.
 
@@ -85,7 +83,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!NOTE]
-    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade.
+    > The tables added to the ignore list should only be tables that do not exist in the Microsoft Dynamics AX 2012 Application Object Tree (AOT). Including tables that exist in the AOT will result in an error during the data upgrade. These tables won't be replicated to the target database.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -97,26 +95,43 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     ```
 
     > [!IMPORTANT]
-    > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
+    > The functions that are specified in the XML file won't be replicated in the target database.
+
+
+   ```
+   <?xml version="1.0" encoding="utf-8"?>
+   <SpecialTables>
+     <Name>
+       <Table></Table>
+     </Name>
+   </SpecialTables>
+   ```
+   
+    > [!IMPORTANT]
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
+    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
+    - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
+
+
 > [!NOTE]
-> Do not set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
+> Don't set up or configure replication during peak times when the system resources/memory usage/IO operations are high. When resources are being used to the max (greater than 90% is already consumed) then the replication may be delayed as the system tries to find available resources. We recommend that you start the replication during off hours, when the system resources are at minimum usage (during off-peak time). Additionally, it is recommended for a go-live cutover that you start the replication the prior weekend. 
 
 ## Data upgrade process
 
-### Run the AX2012DataMigration.exe application
+### Run the DataMigrationTool.exe application
 
 Before you begin the replication process, note that the LCS environment will be in a **Deployed** state when it's created.
 
-1. Run the **AX2012DataMigration.exe** application.
+1. Run the **DataMigrationTool.exe** application.
 
     A console window will open where you can provide the cloud environment type.  
         - Public : **\[ lcs.dynamics.com \]** 
-        - GCC : **\[ gov.lcs.microsoftdynamics.us \]**    
+        - GCC : **\[ gov.lcs.microsoftdynamics.us \]**
+        - UAE : **\[ uae.lcs.dynamics.com \]**     
     After you enter the cloud environment, you will receive a prompt to sign in.
 
 2. Provide the credentials that are used to sign in to LCS.
@@ -132,7 +147,7 @@ Before you begin the replication process, note that the LCS environment will be 
 
 After the validation is successful, the application presents a set of menu options that correspond to the steps in the data upgrade process. To complete the data replication and upgrade, you should perform the steps in the following order.
 
-1. **Data upgrade preparation: Environment setup activity**
+1. **Environment preparation: Environment setup activity**
 
     This step prompts you for the following information:
 
@@ -161,31 +176,33 @@ After the validation is successful, the application presents a set of menu optio
     - It authorizes the source IP address.
     - It validates the target databases.
 
-2. **Data upgrade preparation: Prepare the target environment for the data upgrade**
+2. **Environment preparation: Prepare the target environment for the data upgrade**
 
     This step changes the state of the LCS environment from **Deployed** to **Ready for replication**.
 
-3. **Replication: Clean-up target database**
+3. **Replication: Cleanup Target Database**
 
     This step performs the following actions:
 
     1. Change the state of the LCS environment from **Ready for replication** to **Replication in progress**.
     2. Delete all AX product tables, views, stored procedures, and user-defined functions in the target database.
 
-4. **Replication: Set up distributor**
+4. **Replication: Setup Distributor**
 
     This step creates a distribution database under the **System Databases** folder on the source server. This distribution database is used for replication.
 
-5. **Replication: Set up publication for primary key tables**
+5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
-    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If  any **ignore-table** entries are specified, the specified tables are exempted from replication.
+    This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
+    
+    You will be prompted with: **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
-6. **Replication: Set up publication for other objects (functions)**
+6. **Replication: Setup Publication for Other Objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
@@ -198,9 +215,9 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-7. **Cutover: Set up publication for non-primary key tables**
+7. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one that is used to replicate non-primary key tables, and one that is used to replicate locked tables. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
     
     > [!NOTE]
     > If there are no locked tables, then publication will not be created.
@@ -210,7 +227,7 @@ After the validation is successful, the application presents a set of menu optio
     If AX Service acquires a schema lock during creation of the primary key publication, those tables will be ignored and omitted from the publication. They will be added to temporary tables and marked for replication during creation of the cutover publication.
 
     > [IMPORTANT]
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
    
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
@@ -238,7 +255,7 @@ After the validation is successful, the application presents a set of menu optio
 
     This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
 
-10. **Data upgrade: Trigger upgrade**
+10. **Data Synchronise: Trigger Transformation**
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
@@ -273,7 +290,7 @@ You can use the following options to review the reports of the replication valid
 
     This option compares the number of tables and records in the source server database and the target server database, and then shows the report. You should use this option only after step 7 is completed.
     
-    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
+    If there are mismatched tables, this step lets you create a publication for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app and use the **'dv'** option.
 
     You can find the report data at **output/PostValidationInfo.csv**.
 

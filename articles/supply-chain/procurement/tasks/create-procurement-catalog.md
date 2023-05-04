@@ -5,7 +5,7 @@ title: Create a procurement catalog
 description: This article explains how to create a procurement catalog. 
 author: GalynaFedorova
 ms.date: 07/19/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -52,7 +52,7 @@ This article explains how to create a procurement catalog. This task would typic
 
 ## Make the catalog visible
 1. Go to **Procurement and sourcing > Setup > Policies > Purchasing policies**.
-2. Select **Procurement Policy USMF**. You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in. In the USMF demo data, the Admin user is connected to the worker called **Julia Funderburk**, and she orders products in USMF by default.  
+2. Select **Procurement Policy USMF**. You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in. In the USMF demo data, the Admin user is connected to the worker called **Julia Funderburk**, and orders products in USMF by default.  
 3. Select the catalog that you've just created.
 4. Select **OK**.
 

@@ -2,7 +2,7 @@
 title: Commerce runtime (CRT) services
 description: This article describes the Commerce runtime (CRT) services, the libraries that contain the business logic for the commerce channel and pricing functionality.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 02/17/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,9 +20,9 @@ ms.search.industry: Retail
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Store Commerce calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to point of sale. POS is like a thin client, all the business logic should be done in CRT.
+Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Store Commerce calls CRT to request that it performs business logic. CRT processes the request and then sends the response back to point of sale. POS is like a thin client, all the business logic should be done in CRT.
 
-A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
+A CRT service is a group of requests/responses. Anytime that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
 
 This article shows some important requests/responses that you can customize for your business scenario.
 
@@ -113,6 +113,12 @@ The Address service supports the following requests/responses for various extens
 | CalculateQuantityFromPriceServiceRequest | This request calculates the price and quantity, based on the barcode that is scanned or entered. |
 
 ### CartService
+
+It's possible to generate extensions that can cause parallel execution in an additional thread, as shown in the following example:
+```Console
+cartService.Execute(createRequest(calculateSalesTransactionServiceRequest, CalculationModes.Totals));
+```
+The example above could generate high CPU usage in a system due to concurrent access to both the insert and **FindEntry** functions of the dictionary due to parallel execution.
 
 | Request                                                     | Purpose                                                                                                    |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|

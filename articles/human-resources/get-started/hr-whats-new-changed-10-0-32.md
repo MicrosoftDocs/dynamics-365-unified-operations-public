@@ -56,7 +56,7 @@ article was initially published.
 ## Feature enhancements included in this release
 
 The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing 
-feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
+feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
 
 | Feature name | More information | 
 |--------------|------------------|
@@ -64,9 +64,9 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default or are now mandatory in version 10.0.32. Most features that have been turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change is made to ensure that customers are using current functionality. In this way, as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+The following table lists the features that are turned on by default or are now mandatory in version 10.0.32. Most features that have been turned on automatically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change is made to ensure that customers are using current functionality. In this way, as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they're determined to be essential.
 
-| Feature name | Enable date | Feature state | Module |
+| Feature name | Enable date | Feature state | Module |  
 |--------------|-------------|---------------|--------|
 | Managers can view performance-related information for extended reports | April 29, 2021 | Mandatory | Manager self service |
 | Filter active positions | January 6, 2020 | Mandatory | Personnel management |
@@ -110,7 +110,7 @@ The following table lists the features that are turned on by default or are now 
 
 ## Entities and entity templates added in this release
 
-Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. See [Human Resources data entities and templates](data-entity.md) for more information.
+Multiple Data management framework (DMF) entities and data entity templates for Human Resources were added in this release. For more information, see [Human Resources data entities and templates](../../human-resources/data-entity.md).
 
 ## Additional resources
 

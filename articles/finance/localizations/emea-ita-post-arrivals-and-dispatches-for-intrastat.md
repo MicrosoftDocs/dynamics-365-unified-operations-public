@@ -225,7 +225,7 @@ This part of the example shows how to use a vendor invoice to purchase services 
     2. In the **Transport** field, select **2 Air**.
     3. In the **Commodity** field, select **\[123456\] Service**.
     4. In the **Country/region** field, select **ITA**.
-    5. In he **State/province** field, select **LAZ**.
+    5. In the **State/province** field, select **LAZ**.
     6. In the **County of origin/destination** field, select **LT**.
 
 
