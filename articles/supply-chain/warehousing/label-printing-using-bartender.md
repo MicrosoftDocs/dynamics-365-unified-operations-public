@@ -28,13 +28,13 @@ This article describes how to communicate with BarTender Cloud by exchanging YAM
 > [!IMPORTANT]
 > The information in this article is for general information purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with the respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you experience any issues or have any additional questions about the BarTender product, contact the [Seagull Scientific Customer Success Team](PSCustomerSuccessTeam@SeagullScientific.com), and they will route you to the appropriate internal resource.
 
-## <a name="prepare-integration"></a>Prepare for BarTender Cloud integration
+## <a name="prepare-integration"></a>Get a copy of your personal access token from BarTender Cloud
 
-Before you can access BarTender Cloud through its REST API, you must copy your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center.
+Before you can access BarTender Cloud through its REST API, you must get a copy of your personal access token from BarTender Cloud. Supply Chain Management will use this token to authenticate with BarTender Cloud. For more information about how to get this token, see [BarTender Cloud REST API](https://support.seagullscientific.com/hc/en-us/articles/9756611024535) in the BarTender help center.
 
 ## Configure Supply Chain Management to print to printers managed by BarTender Cloud
 
-The BarTender Cloud Actions REST API supports submitting scripts for execution by the BarTender Cloud service in several formats, including YAML-based and JSON-based action scripts and scripts that use the older BarTender XML (BTXML) format. This article describes how to use the `PrintBTWAction` action to print a label based on a design saved in your BarTender Cloud account to a printer that is accessed through the BarTender Cloud Print Gateway, which is installed on a workstation on the local network.
+The BarTender Cloud Actions REST API accepts scripts to be run by the BarTender Cloud service in several formats, including YAML-based and JSON-based action scripts and scripts that use the older BarTender XML (BTXML) format. This article describes how to use the `PrintBTWAction` action to print a label based on a design saved in your BarTender Cloud account to a printer accessed through a BarTender Cloud Print Gateway installed on your local network.
 
 ### Set up an external service definition for printing through the Actions API
 
@@ -49,7 +49,7 @@ Follow these steps to set up an external service definition.
 
 1. On the Action Pane, select **Save**.
 1. On the **External service operations** FastTab, select **Edit operations** on the toolbar.
-1. On the **External service operations** page, on the Action Pane, select **New** to add an operation for printing variable-based layouts. Then follow these steps for the new record. 
+1. On the **External service operations** page, on the Action Pane, select **New** to add an operation for printing variable-based layouts. Then follow these steps for the new record.
 
     - On the header, set the following fields:
 
@@ -75,8 +75,6 @@ Follow these steps to set up an external service definition.
 
         - **Content type** – Enter *text/yaml*.
         - **Body** – Enter the content of the request body. Here's an example.
-        > [!NOTE]
-        > Paste text exactly as written. Indentation is important. Be sure to use four spaces to indent, and do not use tabs.
 
             ```YAML
             - SetVariableAction:
@@ -84,6 +82,9 @@ Follow these steps to set up an external service definition.
                 VariableValue: $label.printer$
             $label.body$
             ```
+
+        > [!IMPORTANT]
+        > Paste the body text exactly as written. Indentation is important. Be sure to use four spaces to indent, and do not use tabs.
 
 1. On the Action Pane, select **Save**.
 1. Select the **Close** button to return to the **External service definition** page.
