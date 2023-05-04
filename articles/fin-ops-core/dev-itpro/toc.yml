@@ -378,7 +378,7 @@
           items:
           - name: Geo migration overview
             href: deployment/geo-to-geo-migrations.md
-          - name: Environment migration process
+          - name: Finance and operations apps environment migration
             href: deployment/environment-migration-process.md
           - name: LCS project migration manager
             href: lifecycle-services/project-migration-manager.md
