@@ -170,20 +170,30 @@ You can also use the **help** command in PowerShell to find information about al
 
 | Parameter | Description |
 |---|---|
-| installoffline | Deploy the offline database. |
-| sqlservername | Specify the name of the SQL Server instance that Store Commerce uses in offline mode. If you don't specify this parameter, the installer will use a default instance. |
-| skipsqlfulltextcheck | Skip validation of the SQL Full-Text Search that is required for offline deployment. |
-| trustsqlservercertificate | Trust the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
-| enablewebviewdevtools | Enable developer tools for Store Commerce. If you don't specify this parameter, developer tools will be enabled only if Windows Developer Mode is enabled. |
-| retailserverurl | Specify the default Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
-| useremoteappcontent | Use the remote application content to download the Store Commerce app content from CPOS that is hosted in CSU. By default, the local application content that is deployed with Store Commerce is used. |
-| skipversioncheck | Skip the validation during downgrade. |
-| skipurlcheck | Skip the validation of URLs that are passed to the installer. |
-| logdirectorypath | Specify the path of the log's directory. |
-| config | Specify the path of the configuration file that will be used as part of the installation. |
-| verbosity | Deploy the offline database. |
-| help | Show parameter information.|
-| version | Show information about the app version. |
+| --config &lt;path to config file&gt; | Specify the path of the configuration file that will be used as part of the installation. |
+| --device &lt;device identifier&gt; | Specify the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user will be prompted to input the device identifier during device activation. |
+| --disableaadauthentication | Disable the usage of AAD authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
+| --enablewebviewdevtools | Enable developer tools for Store Commerce. If this parameter is omitted, developer tools will be enabled only if Windows Developer Mode is enabled. |
+| --help | Show parameter information. |
+| --inplaceupgradefrommodernpos | Execute an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
+| --installoffline | Deploy the offline database. If you are upgrading from Modern POS, you can update the existing offline database by passing the SQL instance in the `--sqlservername` parameter. |
+| --logdirectorypath &lt;path to log directory&gt; | Specify the path of the logs directory. |
+| --register &lt;register number&gt; | Specify the register number to be used for Store Commerce application as a default value. If not specified, the user will be prompted to input the register number during device activation. |
+| --retailserverurl &lt;retail server URL&gt; | Specify the Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
+| --skipdotnetversioncheck | Bypass the check to see if .NET is installed. |
+| --skipenhancedmodernposupgradevalidation | Bypass enhanced upgrade validation when migrating from an existing Modern POS device. |
+| --skipsqlfulltextcheck | Bypass validation of the SQL Full-Text Search that is required for offline deployment. |
+| --skipschannelcheck | Bypass the secure channel prerequisite checks. |
+| --skiptelemetrycheck | Bypass validation of telemetry endpoints used by the application being installed. |
+| --skipuninstallmodernposafterupgrade | Do not uninstall Modern POS as the last step of the upgrade. |
+| --skipurlcheck | Bypass the validation of URLs that are passed to the installer. |
+| --skipversioncheck | Bypass version validation during downgrade. |
+| --sqlservername &lt;SQL server name&gt; | Specify the name of the SQL Server instance that Store Commerce uses in offline mode. If this parameter is omitted, the installer will use the default instance. |
+| --trustsqlservercertificate | Trust the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
+| --usecommonapplicationdata                       | Use a common application data folder across all Windows users on this device. If this parameter is omitted, Store Commerce will only be installed for the current user. |
+| --useremoteappcontent | Download the Store Commerce app content from CPOS that is hosted in CSU. If this parameter is omitted, the local application content that is deployed with Store Commerce is used. |
+| --verbosity | Specify the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, defaults to 2. |
+| --version | Show information about the app version. |
 
 ### Activate Store Commerce
 
