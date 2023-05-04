@@ -24,7 +24,7 @@ Start planning the migration by assessing whether you want to migrate only envir
 
 Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
 
-### Feaure parity
+### Feature parity
 
 Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
