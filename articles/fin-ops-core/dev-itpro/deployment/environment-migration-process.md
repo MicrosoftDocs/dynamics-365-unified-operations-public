@@ -18,8 +18,52 @@ Microsoft continues to open data centers for business service in both existing r
 
 If your tenant resides in a Microsoft 365 environment in a single tenant, when you move your environment, the Microsoft 365 environment isn't moved. Your environment and the Microsoft 365 environment are separate services. Your environment will still appear alongside the Microsoft 365 environment in your tenant.
 
-- The Geo migration capability lets you move your environments in a single tenant from source geography to another geography. When F&O environment (Sandbox or Production) is deployed in a geo, there are multiple Azure resources associated with it. As part of migration process these resources will also move from source geo to target geo.
-- Only Sandbox and Production environments can be migrated from one geo to another. Cloud Hosted Environment (CHE) migration is not supported.
+When finance and operations apps environment is deployed in a geo, there are multiple Azure resources associated with it. As part of migration process these resources will also move from source geo to target geo.
+
+## Supported environments
+
+Only Sandbox and Production environments can be migrated from one geo to another. 
+Cloud Hosted Environment (CHE) migration is not supported.
+
+## Considerations before starting the migration
+- We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
+- Environment migrations are not self-serve and require customer initiated support ticket.
+- Create your support request for migration at least 10 days before you want the environment to be migrated.
+- Overall migration activity will require at least 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
+- If Dataverse environment is linked then it will need additional 24 hours of downtime.
+
+When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. 
+Data resident geographies indicate both the LCS data and the environment data will be stored within the same discrete geography.
+  - Migration between two data resident local geographies is supported (e.g. migration from US to UAE or from EU to Norway is supported)
+  - Migrating from one data resident geo to another will change -environment URL/endpoint as mentioned here (e.g. migrating from US to UAE will change URL from <https://NAME.operations.dynamics.com/> to <https://NAME.operations.uae.dynamics.com/>) 
+
+**Integration impact and updates with other services**
+- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
+- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
+
+Non-data resident geographies indicate the LCS data and the environment data will be stored in different geographies.
+  - Migration between two non-data resident geos is supported (e.g. migration from US to UK or US to Canada is supported)
+  - Migrating between commercial non-data resident geos will not change environment URL (e.g. (e.g. Moving from US to UK will keep URL same as <https://NAME.operations.dynamics.com/>)
+
+## Environment migration process steps
+
+We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
+
+| Step | Responsible party | Description | Additional comments |
+|---|---|---|---|
+|1|Customer/Partner|Refresh Sandbox with Production data|Evaluate, if this is step is required for your project|
+|2|Customer/Partner|Submit support request to migrate only Sandbox environment|Information required in ticket is, Customer name, Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.|
+|3|Microsoft|Review the geo-to-geo migration request and approve it||
+|4|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
+|5|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. Premigration work begins 12 hours before the scheduled downtime. During premigration The environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. Associated Dataverse environment (if any) will also be migrated in same time frame. During the migration finance and operations apps and Dataverse environments ar unlinked, both environments are migrated and relinked after migration is complete.|
+|6|Microsoft|Confirm completion of migration to customer/partner||
+|8|Customer/Partner|Validate Sandbox functionality in target geo||
+|7|Customer/Partner|Reconfigure any integrations (Add-ins, Commerce/ POS, etc)||
+
+After Sandbox migration validation is successfully complete project team can plan the time for Production environment migration and follow same steps described above starting with raising the Support ticket. 
+
+______
+KEEPING BELOW ALL ORIGINAL TEXT FOR NOW IN CASE WE WANT TO COMPARE/BRING BACK SOMETHING
 - Suggested environment migration process steps are,
   1. Refresh Sandbox with Production data (if required)
   2. Submit support request to migrate only Sandbox environment from source to target geo
@@ -33,14 +77,6 @@ If your tenant resides in a Microsoft 365 environment in a single tenant, when y
   2. Create your support request for migration at least 10 days before you want the environment to be migrated.
   3. Information required in ticket is, Customer name, Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.
 
-## Supported environments
-
-- Sandbox environments
-- Production environments
-
-We recommend that you migrate sandbox environments first and validate them before you trigger a production migration.
-
-CHE environments are not supported.
 
 ## Migration process
 
