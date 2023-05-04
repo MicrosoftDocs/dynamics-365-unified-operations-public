@@ -38,8 +38,17 @@ ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 
 - Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
 - PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview page](../paypal.md).
-- The **TestConnector** isn't supported for user acceptance testing (UAT) or for production (prod). The **TestConnector** is for sandbox and development use only, and is for sample use only. 
 - Mastercard Simplify is no longer supported for new customers.
+
+### The TestConnector in Dynamics 365 Commerce
+Commerce has a referenced **TestConnector** referenced in the various Payment Connector setup pages (Payment Services, Online store Payment accounts, and Hardware Profile EFT service Connectors sections). The **TestConnector** should only be used for limited, point-of-sale, test environment-only scenarios:
+
+- POS basic credit card test transaction
+- POS basic unlinked test refund transaction
+
+The **TestConnector** is only intended to mimic a payment gateway return (without actually calling out to a gateway, it auto-responds its own approval signal. Note that there is limited support for this connector. The **TestConnector** is not supported for online store or call center channels. The **TestConnector** is also not supported for user accepted testing (UAT) and production (prod) environments.
+
+Many scenarios in Commerce payments require token usage and references that are not supported by the **TestConnector**.  Commerce recommends getting a payment gateway test account to test scenarios within your sandbox environment to validate test patterns. Using an actual gateway is the best means to ensure all scenarios are working as expected in testing. 
 
 ## What is a payment connector and in what cases do I need to deploy and implement a payment connector?
 
