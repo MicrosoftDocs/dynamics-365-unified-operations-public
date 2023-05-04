@@ -66,13 +66,13 @@ After Sandbox migration validation is successfully complete project team can pla
 
 | Step | Responsible party | Description | Additional comments |
 |---|---|---|---|
-|1|Customer/Partner|Refresh Sandbox with Production data|Evaluate, if this is step is required for your project.|
-|2|Customer/Partner|Submit support request to migrate only Sandbox environment|Create your support request for migration at least 10 days before you want the environment to be migrated. Information required in ticket is, Customer name, Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.|
-|3|Microsoft|Review the geo-to-geo migration request and approve it||
-|4|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
-|5|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. **Premigration** work begins 12 hours before the scheduled downtime. During premigration the environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. During the **migration** finance and operations apps and Dataverse environments ar unlinked, both environments are migrated and relinked after migration is complete.|
-|6|Microsoft|Confirm completion of the migration to customer/partner||
-|8|Customer/Partner|Validate Sandbox functionality in target geo||
+|0|Customer/Partner|Refresh Sandbox with Production data|Optional step before Sandbox migration.|
+|1|Customer/Partner|Submit support request to migrate a specific environment|Create your support request for migration at least 10 days before you want the environment to be migrated. Information required in ticket is: Customer name, Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.|
+|2|Microsoft|Review the geo-to-geo migration request and approve it||
+|3|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
+|4|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. **Premigration** work begins 12 hours before the scheduled downtime. During premigration the environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. During the **migration** finance and operations apps and Dataverse environments ar unlinked, both environments are migrated and relinked after migration is complete.|
+|5|Microsoft|Confirm completion of the migration to customer/partner||
+|6|Customer/Partner|Validate environment functionality in target geo||
 |7|Customer/Partner|Reconfigure any add-ins, Commerce/ POS, 3rd party integrations etc)||
 
 
