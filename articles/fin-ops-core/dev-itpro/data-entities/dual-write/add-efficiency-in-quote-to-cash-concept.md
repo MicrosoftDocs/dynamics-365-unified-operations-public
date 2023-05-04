@@ -28,7 +28,7 @@ This article provides a conceptual overview of how the improved quote-to-cash sy
 Both Supply Chain Management and Dynamics 365 Sales store and show origin and ownership information for each quotation.
 
 - The **Origin** tells which system originally created a quotation. Possible values are *Supply Chain Management* and *Dynamics 365 Sales*. This value is set when the quotation is created and is read-only thereafter.
-- The **Ownership** tells which system currently owns a quotation. Ownership determines the system that owns the processing of a quotation through its lifecycle and the system that is allowed to perform updates to the quotation throughout its lifecycle. The owner can be *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. When ownership is *Based on origin*, the value of the **Origin** field determines ownership. When ownership is *Dynamics 365 Sales*, processing of the quotation throughout its lifecycle is done from Dynamics 365 Sales. When ownership is “Supply Chain Management*, processing of the quotation throughout its lifecycle is done from Supply Chain Management. <!-- KFM: mention that default in SCM can be set. Always Sales in Sales? -->
+- The **Ownership** tells which system currently owns a quotation. Ownership determines the system that owns the processing of a quotation through its lifecycle and the system that is allowed to perform updates to the quotation throughout its lifecycle. The owner can be *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. When ownership is *Based on origin*, the value of the **Origin** field determines ownership. When ownership is *Dynamics 365 Sales*, processing of the quotation throughout its lifecycle is done from Dynamics 365 Sales. When ownership is *Supply Chain Management*, processing of the quotation throughout its lifecycle is done from Supply Chain Management. <!-- KFM: mention that default in SCM can be set.  -->
 
 When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled, all sales quotations have an **Origin** of *Supply Chain Management* and an **Ownership** of *Based on origin*.
 
@@ -95,15 +95,15 @@ The following steps show what happens when you create a sales quotation in Suppl
 
 1. A user creates a sales quotation header in Supply Chain Management.
 1. Supply Chain Management sets **Origin** to *Supply Chain Management* and **Ownership** to *Based on origin*.
-1. The system syncs the new sales quotation header through dual-write using the *Dynamics 365 Sales quotation header (quotes)* entity. <!-- KFM: Is this entity part of SCM? -->
-1. When inserted into Dataverse from the *Dynamics 365 Sales quotation header (quotes)* entity, the **Origin** value is also synched and therefore set to *Supply Chain Management*. The synchronization of the **Origin** value is one directional&mdash;from Supply Chain Management to Dataverse only. Once in Dataverse, the sales quotation can be accessed in Dynamics 365 Sales with a **Status** of *In progress* and a **State** of *Draft*.
-1. While a sales quotation has a **State** of *Draft* and **Status** of *Created* <!-- KFM: But the status is *In progress*? --> users of both systems can add, delete, and modify lines for it <!-- KFM: and changes are synced continuously? -->. However, because ownership is with Supply Chain Management, users working in Dynamics 365 Sales can't delete the quotation <!-- KFM: header? --> or process it through its lifecycle. Therefore, users who open the sales quotation from the Dynamics 365 Sales **Quote** page, will see the following message:
+1. When inserted into Dataverse from the *Dynamics 365 Sales quotation header (quotes)* entity, the **Origin** value is also synched and therefore set to *Supply Chain Management*. The synchronization of the **Origin** value is one directional&mdash;from Supply Chain Management to Dataverse only. Once in Dataverse, the sales quotation can be accessed in Dynamics 365 Sales with a **Status reason** of *In progress* and a **Status** of *Draft*.
+1. While a sales quotation has a **Status** of *Draft* in Sales and *Created* in Supply Chain Management, users of both systems can add, delete, and modify lines for it. However, because ownership is with Supply Chain Management, users working in Dynamics 365 Sales can't delete the quotation or process it through its lifecycle. Therefore, users who open the sales quotation from the Dynamics 365 Sales **Quote** page, will see the following message:
 
     > This quote is not owned by Dynamics 365 Sales
 
-1. When users working in Supply Chain Management add products to the quotation, the related quotation lines are synchronized to Dynamics 365 Sales<!-- KFM: Are we just repeating the previous paragraph here? -->. Then the sales quotation is sent from Supply Chain Management using the generate send quotation functionality <!-- KFM: What does it mean to be "sent"? How/why is the quote "sent" and by whom? -->. When the **Status** is updated to *Sent*, the new status is synched to Dynamics 365 Sales and triggers an update of the quotation to *Active* <!-- KFM: What trigger is this? What field is set to "Active", and how does this new value affect SCM? -->.
+1. When the quotation is ready to be sent to the customer, a user in Supply Chain Management invokes the *generate send quotation* functionality, which creates a sales quotation journal and updates the quotation **Status** to *Sent*. The new status is then synched to Dynamics 365 Sales and triggers an update of the quotation **Status** to *Active* in Sales.
 
-    <!-- KFM: In the previous section, we describe different behaviors here based on whether the *Process Dynamics 365 Sales integration related events* feature is enabled. Does that not matter in this scenario? -->
+    > [!NOTE]
+    > The *Process Dynamics 365 Sales integration related events* feature doesn't affect this scenario because the sales quotation was processed from Supply Chain Management.
 
 1. When a sales quotation in Dynamics 365 Sales has a **State** of *Active*, default Dynamics 365 Sales logic ensures that the quotation data is shown as read-only in the Dynamics 365 Sales user interface. For quotations where **Origin** is *Supply Chain Management* and **Ownership** is *Based on origin*, users working in Dynamics 365 Sales won't be able select **Create order**, **Close**, **Revise**, or **Delete** actions. Users who open these sales quotation from the Dynamics 365 Sales **Quote** page, will see the following message:
 
@@ -113,53 +113,34 @@ The following steps show what happens when you create a sales quotation in Suppl
 
 ## Example of an integrated sales quotation workflow
 
- <!-- KFM: This seems like just a more detailed version of the first scenario above. How is it different? Highlight this in the intro. -->
-
 This section provides an example of an integrated sales quotation workflow for the following scenario:
 
 - The *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is enabled.
 - The sales quotation is created in and owned by Dynamics 365 Sales (**Origin** is *Dynamics 365 Sales* and **Ownership** is *Based on origin*).
 
-<!-- KFM: The tables in this section use **Status** and **Status reason**. In the previous section we have **State** and **Status**. Are we talking about three different fields here, or what?  -->
+The example presented here is similar to the first scenario described in the previous section, but with more details about the status values and restrictions that apply to the sales quotation in each system.
 
 ### Step 1: Create the sales quotation
 
-The workflow begins when a user creates a sales quotation in Dynamics 365 Sales. The **Status** is *In progress* <!-- KFM: Earlier we say *Created*. We seem confused about this in a few places. --> and the **State** is *Draft*. 
-
-The new quotation is then synchronized to Supply Chain Management. The **Status** is *Created* <!-- KFM: More status confusion! -->. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. However, users are able to edit the sales quotation in Supply Chain Management.
+The process begins when a user creates a sales quotation in Dynamics 365 Sales. In Sales, the **Status reason** is *In progress* and the **Status** is *Draft*. The new quotation is then synchronized to Supply Chain Management, where the **Status** is shown as *Created*. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. However, users are able to edit the sales quotation in Supply Chain Management.
 
 The following table summarizes the initial status values of the sales quotation in each system and the restrictions that apply.
-
-<!-- KFM: NOTE: For all tables I changed "Similar to when the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled" to simply "Standard"? -->
 
 | &nbsp; | Sales (owner) | Supply Chain Management |
 |---|---|---|
 | **Status** value | *Draft* | *Created* |
 | **Status reason** value | *In Progress* | N/A |
-| Lifecycle restrictions | Standard | Can't be sent, lost, canceled, confirmed, or deleted |
-| Data restrictions | Standard | Standard |
+| Lifecycle restrictions | None | Can't be sent, lost, canceled, confirmed, or deleted |
+| Data restrictions | None | None |
 
-<!-- KFM: I think the following tables just repeat the previous one. I suggest deleting them. 
-
-**Dynamics 365 Sales Quotation: Create quotation**
-
-| Result | Status | Status reason | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|---|
-| Quotation created | Draft | In Progress | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* |
-
-**Supply Chain Management Sales Quotation: Quotation synchronization**
-
-| Result | Status | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|
-| Quotation created | Created | Cannot Generate Send, Lost, Cancel, Confirm, Delete | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* |
-
--->
+> [!NOTE]
+> In this table (and others in this section), a value of "None" indicates that the referenced restrictions are the same as when the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled".
 
 ### Step 2: Activate the sales quotation
 
-The sales quotation is activated in Dynamics 365 Sales<!-- KFM: Who does this? Why? What does it indicate IRL? -->. The **Status** is changed to *In progress* and the **State** is changed to *Active*.
+When the quotation is ready to be sent to the customer, the user in Sales activates the quotation. In Sales, the **Status reason** is changed to *In progress* and the **Status** is changed to *Active*, which makes the quotation read-only in the Sales user interface.
 
-The quotation update is synchronized to Supply Chain Management, where the **Status** is changed to *Sent*<!-- KFM: So, this value is different in each system? -->. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is now read-only in Supply Chain Management <!-- KFM: Because of the status value? -->. Activating a quotation in Dynamics 365 Sales also makes it read-only in the Sales user interface <!-- KFM: Because of the status value? -->.
+The quotation update is synchronized to Supply Chain Management, where the **Status** is changed to *Sent*. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is now read-only in Supply Chain Management as a result of its **Status** value and ownership.
 
 The following table summarizes the status values of the sales quotation in each system and the restrictions that apply.
 
@@ -167,34 +148,16 @@ The following table summarizes the status values of the sales quotation in each 
 |---|---|---|
 | **Status** value | *Active* | *Sent* |
 | **Status reason** value | *In Progress* | N/A |
-| Lifecycle restrictions | Standard | Can't be sent, lost, canceled, confirmed, or deleted |
+| Lifecycle restrictions | None | Can't be sent, lost, canceled, confirmed, or deleted |
 | Data restrictions |  None | Read-only |
-
-<!-- KFM: I think the following tables just repeat the previous one. I suggest deleting them.
-
-**Dynamics 365 Sales Quotation: Activate**
-
-| Result | Status | Status reason | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|---|
-| Quotation activated | Active | In Progress | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* |
-
-**Supply Chain Management Sales Quotation: Quotation synchronization**
-
-| Result | Status | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|
-| Quotation journal created | Sent | Cannot Generate Send, Lost, Cancel, Confirm, Delete | Read Only |
-
- -->
 
 ### Step 3: Revise the sales quotation
 
-The sales quotation is revised in Dynamics 365 Sales.<!-- KFM: Who does this? Why? What does it indicate IRL? --> The **Status** is changed to *Closed* and the **State** is changed to *Revised*.
+If a change is needed after a quotation has been activated, then it must be revised from the owning system, which in this case is Dynamics 365 Sales. When this happens, Sales creates a copy of the quotation and then updates the now-outdated quotation to have a **Status** of *Closed* and a **Status reason** of *Revised*. The **Status** of the new copy is set to *Draft*, with a **Status reason** of *In progress*.
 
-The quotation update is synchronized to Supply Chain Management, where the **Status** is also changed to *Revised*. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is now read-only in Supply Chain Management <!-- KFM: Because of the status value? -->.
+The now-outdated quotation is synchronized to Supply Chain Management, where the **Status** is shown as *Revised*.
 
-Dynamics 365 Sales automatically creates a new sales quotation based on the revised (and now closed) one <!-- KFM: Correct? -->. The **Status** is *In progress* <!-- KFM: Earlier we say *Created*. We seem confused about this in a few places. --> and the **State** is *Draft*.
-
-The new quotation is then synchronized to Supply Chain Management. The **Status** is *Created* <!-- KFM: More status confusion! -->. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. <!-- KFM: But can be edited in SCM? -->
+The new quotation is synchronized to Supply Chain Management, where the **Status** is shown as *Created*. Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management.
 
 The following table summarizes the status values of the revised sales quotation in each system and the restrictions that apply.
 
@@ -202,55 +165,35 @@ The following table summarizes the status values of the revised sales quotation 
 |---|---|---|---|---|
 | **Status** value | *Closed* | *Draft* | *Revised* | *Created* |
 | **Status reason** value | *Revised* | *In progress* | N/A | N/A |
-| Lifecycle restrictions | Standard | Standard | Can't be sent, lost, canceled, confirmed, or deleted | Can't be sent, lost, canceled, confirmed, or deleted |
-| Data restrictions | Standard | Standard | Read-only | Standard |
-
-<!-- KFM: I adapted the below tables into the above one. Maybe check and confirm. I suggest deleting the following tables. 
-
-**Dynamics 365 Sales Quotation: Revise**
-
-| Result | Status | Status reason | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|---|
-| Quotation Revised | Closed | Revised | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* |
-| Quotation Created | Draft | In Progress | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* | *Similar to Integrate Sales Quotation lifecycle with Dynamics 365 Sales feature disabled* |
-
-**Supply Chain Management Sales Quotation: Quotation synchronization**
-
-| Result | Status | Lifecycle restrictions | Data restrictions |
-|---|---|---|---|
-| Quotation Revised | Revised | Cannot Generate Send, Lost, Cancel, Confirm, Delete | Read Only |
-| Quotation Created | Created | Cannot Generate Send, Lost, Cancel, Confirm, Delete | No |
-
--->
+| Lifecycle restrictions | None | None | Can't be sent, lost, canceled, confirmed, or deleted | Can't be sent, lost, canceled, confirmed, or deleted |
+| Data restrictions | None | None | Read-only | None |
 
 ### Step 4: Close the sales quotation
 
-When a user closes an activated sales quotation in Dynamics 365 Sales, different can be applied <!-- KFM: Different what can be applied? -->. Usually, a quotation is closed for one of the following reasons:
+When a user closes an activated sales quotation in Dynamics 365 Sales, they are asked to specify a reason by choosing one of the following reason codes:
 
-- **The quotation is revised**<br>The sales quotation is closed in Dynamics 365 Sales with a **Status reason** of *Revised*. The **Status** is *Closed* and the **State** is *Revised*. The update is then synchronized to Supply Chain Management. The **Status** is *Revised*. <!-- KFM: I'm confused here about Status reason, Status (2 different?), and State. --> Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is read-only in Supply Chain Management.
-
-- **The quotation is lost**<br>The sales quotation is closed in Dynamics 365 Sales with a **Status reason** of *Lost*. The **Status** is *Closed* and the **State** is *Lost*. The update is synchronized to Supply Chain Management. The **Status** is *Lost*. <!-- KFM: I'm confused here about Status reason, Status (2 different?), and State. --> Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is read-only in Supply Chain Management.
-
-- **The quotation is canceled**<br>The sales quotation is closed in Dynamics 365 Sales with a **Status reason** of *Canceled*. The **Status** is *Closed* and the **State** is *Canceled*. The update is synchronized to Supply Chain Management. The **Status** is *Canceled*. <!-- KFM: I'm confused here about Status reason, Status (2 different?), and State. --> Because ownership is with Dynamics 365 Sales, the quotation can't be sent, lost, canceled, confirmed, or deleted from Supply Chain Management. Data on the sales quotation is read-only in Supply Chain Management.
+- **The quotation is revised**
+- **The quotation is lost**
+- **The quotation is canceled**
 
 > [!NOTE]
-> No reason code is synchronized between systems for the lost and canceled events in Supply Chain Management. <!-- KFM: Reason code = Status reason? -->
+> No reason code is synchronized between systems for the lost and canceled events in Supply Chain Management.
 
-The following table summarizes the status values and restrictions that apply when closing a sales quotation in Dynamics 365 Sales for each of the common reasons.
+The following table summarizes the status values and restrictions that apply when closing a sales quotation in *Dynamics 365 Sales* for each of the common reasons.
 
 | Result | Status | Status reason | Lifecycle restrictions | Data restrictions |
 |---|---|---|---|---|
-| Quotation Closed | *Closed* | *Revised* | Standard | Standard |
-| Quotation Closed | *Closed* | *Lost* | Standard | Standard |
-| Quotation Closed | *Closed* | *Canceled* | Standard | Standard |
+| Quotation Closed | *Closed* | *Revised* | None | None |
+| Quotation Closed | *Closed* | *Lost* | None | None |
+| Quotation Closed | *Closed* | *Canceled* | None | None |
 
-The following table summarizes the status values and restrictions that apply in Supply Chain Management when a sales quotation is closed in Dynamics 365 Sales for each of the common reasons and then synced to Supply Chain Management.
+The following table summarizes the status values and restrictions that apply in *Supply Chain Management* when a sales quotation is closed in Dynamics 365 Sales for each of the common reasons and then synced to Supply Chain Management.
 
 | Result | Status | Lifecycle restrictions | Data restrictions |
 |---|---|---|---|
-| Quotation Revised | *Revised* | Can't be sent, lost, canceled, confirmed, or deleted | Standard |
-| Quotation Lost | *Lost* | Can't be sent, lost, canceled, confirmed, or deleted | Standard |
-| Quotation Canceled | *Canceled* | Can't be sent, lost, canceled, confirmed, or deleted | Standard |
+| Quotation Revised | *Revised* | Can't be sent, lost, canceled, confirmed, or deleted | None |
+| Quotation Lost | *Lost* | Can't be sent, lost, canceled, confirmed, or deleted | None |
+| Quotation Canceled | *Canceled* | Can't be sent, lost, canceled, confirmed, or deleted | None |
 
 ### Step 4 variation: Create a sales order from the quotation
 
@@ -260,19 +203,19 @@ When a user creates as sales order from an activated sales quotation in Dynamics
 1. The sales order that was created in Dynamics 365 Sales is synchronized and available in Supply Chain Management.
 1. Supply Chain Management links the new sales order to the related sales quotation, which enables users to navigate between them.
 
-The following table summarizes the status values and restrictions that apply when a sales order is created from a sales quotation in Dynamics 365 Sales.
+The following table summarizes the status values and restrictions that apply is *Dynamics 365 Sales* when a sales order is created from a sales quotation in Dynamics 365 Sales.
 
 | Result | Status | Status reason | Lifecycle restrictions | Data restrictions |
 |---|---|---|---|---|
-| Quotation won | *Won* | *Won* | Standard | Standard |
-| Sales order created | *Active* | *New* | Standard | Standard |
+| Quotation won | *Won* | *Won* | None | None |
+| Sales order created | *Active* | *New* | None | None |
 
-The following table summarizes the status values and restrictions that apply in Supply Chain Management when a sales order is created from a sales quotation in Dynamics 365 Sales and then synced to Supply Chain Management.
+The following table summarizes the status values and restrictions that apply in *Supply Chain Management* when a sales order is created from a sales quotation in Dynamics 365 Sales and then synced to Supply Chain Management.
 
 | Result | Status | Lifecycle restrictions | Data restrictions |
 |---|---|---|---|
 | Quotation confirmation journal created | *Won* | Can't be sent, lost, canceled, confirmed, or deleted | Read Only |
-| Sales order created | *Open* | <!-- KFM: Value missing --> | <!-- KFM: Value missing --> |
+| Sales order created | *Open* | None | None |
 
 ## Next steps
 
