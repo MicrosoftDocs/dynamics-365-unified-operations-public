@@ -222,16 +222,16 @@ To configure omnichannel media managment features in your Commerce environments,
 
 
 ## Omnichannel media architecture and dataflow
-[Describe new management UX interfaces (HQ, Omnichannel content library)
-[Diagram of dataflows between UX -> CMS -> HQ -> CSU -> Frontend/POS]
+[Todo]
 
-Mermaid example [to be deleted]
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+graph TD;
+A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
+B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
+C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
+C-->|"1040 (products) full data sync"|E["Product seach index service"]
+D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
+E-->|"Search index refresh"|F
 ```
 [todo]
 
