@@ -26,7 +26,7 @@ Organizations looking to migrate environments and data from one geography to ano
 
 ### Feaure parity
 
-Make sure you review the [availability of features in the selected target geography](deployment-options-geo#feature-availability-in-local-geographies.md) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
+Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
 ### Sovereign data resident geographies
 
@@ -40,8 +40,8 @@ Migrations into or out of a sovereign cloud environment (for example, US Governm
 
 ## Environment migration considerations
 
-- Overall migration activity will require at least 48 hrs of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
-- If Dataverse environment is linked then it will need additional 24 hrs of downtime.
+- Overall migration activity will require at least 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
+- If Dataverse environment is linked then it will need additional 24 hours of downtime.
 
 When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. 
 Data resident geographies indicate both the LCS data and the environment data will be stored within the same discrete geography.
