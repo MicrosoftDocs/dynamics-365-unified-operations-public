@@ -120,7 +120,7 @@ To assign media to certain product dimensions, follow these steps:
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product variants
-As explained in the [master > dimensions > variant fallback section](#product-master-product-dimensions-and-product-variant-media-assignments) above, media can be assigned to individual product variants whenever needed.  This severs the fallback to both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
+As explained in the [master > dimensions > variant fallback section](#product-master-product-dimensions-and-product-variant-media-assignments) above, media can be assigned to individual product variants whenever needed.  This disconnects the fallback to both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
 
 To assign media to a specific product variant, follow these steps:
 1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
@@ -159,10 +159,10 @@ To publish product (or category) media assignments, follow these steps:
 [todo]
 
 ### Reseting assignments to defaults
-The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default Omnichannel media assignments.  This effectively reverses the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which severs the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
+The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the product in the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default fallback assignments, as explained in the [channel and locale media fallback section](#omnichannel-channel-specific-and-locale-specific-media-assignments).  This effectively _reverses_ the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which disconnects the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
 
 To reset a product's media assignments, follow these steps:
-1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+1. Navigate to the **Product media** assignments view located in the **Omnichannel content** workspace within **site builder** , or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
 2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
 3. Click the **Reset to default** button in the top action bar.
 4. When the confirmation dialog appears, click **Ok**.
