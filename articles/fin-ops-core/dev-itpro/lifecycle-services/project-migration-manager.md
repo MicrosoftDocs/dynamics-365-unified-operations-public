@@ -35,7 +35,7 @@ The Microsoft Dynamics Lifecycle Services Project migration manager lets you mov
 
 The Project migration manager lets you move your Lifecycle Services project from one geography to another geography that meets your requirements. However, it's important that you understand why you might want to move your project in this way.
 
-Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
+Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](../deployment/deployment-options-geo.md).
 
 There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described later in this article.
 
@@ -75,7 +75,7 @@ You're responsible for migrating data that requires manual migration. However, y
 ## Additional considerations
 - Migration can take up to two hours when LCS project and environments will be unavailable.
 - As part of the migration a new LCS project will be created and the new project will have a different project URL and LCS project ID. 
-- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into.
+- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](../deployment/deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into.
 - All project environments (Sandbox and Production) must be on supported versions before a migration is scheduled.
 - Project migration manager feature is available only to LCS project owners.
 
