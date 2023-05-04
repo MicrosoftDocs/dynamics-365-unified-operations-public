@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.28 (July 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.28. 
 author: josaw1
-ms.date: 05/26/2022
+ms.date: 01/10/2023
 ms.topic: article
 ms.technology: 
 
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.28
 # What's new or changed in Dynamics 365 Commerce 10.0.28 (July 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
@@ -47,7 +46,8 @@ The following table lists the features that are included in this release. We mig
 |  Commerce SDK   |   Pricing and discount customization  |  To support pricing and discount customization in the Commerce SDK, **Microsoft.Dynamics.Commerce.Runtime.Services.PricingEngine.Contracts** package is published to the public feed for extension code to consume the pricing and discounts contracts.  |  See [Migrate to Commerce SDK](../dev-itpro/retail-sdk/migrate-commerce-sdk.md#reference-package-difference-between-legacy-retail-sdk-and-commerce-sdk)
 |  Deployment | Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-commerce package deployment   |  With version 3.* and later, the Dynamics Lifecycle Services (LCS) **Asset Deployment** task supports deploying Commerce packages. A new field type named **Type of asset** was added so you can select the Commerce package deployment type. The values available for this field are:</p><p>- **Software deployable package**: Finance and operations apps environment deployment (default value)<p>- **Commerce Cloud Scale Unit Extension**: CSU Extension package deployment<p>- **E-commerce Package**: e-commerce environment deployment.<p>Selecting either the **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** or **E-commerce Package - e-Commerce environment deployment** options will override previous deployments. If you have multiple CSU extensions packages, all CSU packages must be merged as one package for deployment.  | See [Deploy assets by using Azure Pipelines](../../fin-ops-core/dev-itpro/dev-tools/pipeline-deploy-asset.md)  |
 | Payments   |  Google Pay with Dynamics 365 Payment Connector for Adyen   |  E-commerce customers can use Google Pay on cart and checkout pages that are configured with the express checkout module.   |  Developer opt-in   |
-
+| POS | The [Store Commerce app](../dev-itpro/store-commerce.md) is now available for Android and can be installed directly from the Google Play app store. | <p>[Store Commerce for mobile platforms](../dev-itpro/store-commerce-mobile.md)<p>[Store Commerce app in the Google Play store](https://play.google.com/store/apps/details?id=microsoft.dynamics.commerce.storecommerce.android&pli=1) | <p>On by default<p>When creating a new device in Commerce headquarters, use the existing "Modern POS - Android" device type. |
+  
 ## Additional resources
 
 Dynamics 365 Finance 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).

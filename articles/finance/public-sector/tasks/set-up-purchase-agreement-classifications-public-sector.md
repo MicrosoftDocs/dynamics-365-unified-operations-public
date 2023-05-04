@@ -5,7 +5,7 @@ title: Set up purchase agreement classifications in the public sector
 description: The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

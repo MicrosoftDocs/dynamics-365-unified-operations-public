@@ -4,7 +4,7 @@
 title: Support for network peripherals
 description: This article provides an overview of network peripherals that are supported in the store.
 author: BrianShook
-ms.date: 05/26/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,15 +38,15 @@ This article describes the support for and setup of network peripherals in the s
 | Term | Description |
 |---|---|
 | Register | The entity that is used to configure an instance of a point of sale (POS) register. |
-| Device | A representation of the physical instance of a POS register and the Modern POS application that is assigned to it. |
-| Dedicated hardware station | The hardware station business logic that is built into the Modern POS for Windows and Modern POS for Android applications. |
+| Device | A representation of the physical instance of a POS register and the Store Commerce app that is assigned to it. |
+| Dedicated hardware station | The hardware station business logic that is built into the Store Commerce apps for Windows, Android, and iOS. |
 | Drawer kick (d/k) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
 | ESC/P | Epson Standard Code for Printers, aslo know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
 
 ## Supported POS clients and devices
 
-Functionality for network peripherals is supported by the Modern POS for Windows and Modern POS for Android POS clients.
+Functionality for network peripherals is supported by the Store Commerce apps for Windows, Android, and iOS.
 
 This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
 
@@ -86,11 +86,13 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
 
 5. Select **Save**.
 
-#### Set up Modern POS for Windows or Modern POS for Android clients that have built-in hardware station logic
+#### Set up the Store Commerce app for Windows, Android, or iOS
+
+To set up the Store Commerce app for Windows, Android, or iOS, follow these steps.
 
 1. In Dynamics 365 Commerce, search for **Registers**.
 2. Select a register by selecting the register number, and then select **Edit**.
-3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Modern POS for Windows application or the Modern POS for Android application.
+3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
 4. Select **Save**.
 5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
 6. On the **Printer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
@@ -106,7 +108,7 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
 16. Select distribution schedule **1090**, and then select **Run now**.
 17. Select distribution schedule **1070**, and then select **Run now**.
 
-The Modern POS for iOS and Modern POS for Cloud applications don't have built-in hardware station logic. If you're using either of these applications, follow these steps.
+Store Commerce for web doesn't have built-in hardware station logic. If you're using Store Commerce for web, follow these steps.
 
 1. In Dynamics 365 Commerce, search for **All stores**.
 2. Select a store by selecting its **Retail Channel Id** value, and then select **Edit**.
@@ -129,7 +131,7 @@ The Modern POS for iOS and Modern POS for Cloud applications don't have built-in
 
 ### Sharing network peripherals
 
-Network receipt printers and cash drawers can be shared by multiple POS devices. To share them, you can use a shared hardware station to broker the connection to the devices. Alternatively, if you're using Modern POS for Windows or Modern POS for Android, you can configure the same devices directly in the register properties.
+Network receipt printers and cash drawers can be shared by multiple POS devices. To share them, you can use a shared hardware station to broker the connection to the devices. Alternatively, if you're using Store Commerce for Windows, Android, or iOS, you can configure the same devices directly in the register properties.
 
 Payment terminals can be shared only if a shared hardware station is deployed to broker the connection to the payment terminal. You can't share a payment terminal by setting the same payment terminal IP address directly at the register level. If you try to use this approach, issues will occur when individual POS clients try to lock and claim the device.
 

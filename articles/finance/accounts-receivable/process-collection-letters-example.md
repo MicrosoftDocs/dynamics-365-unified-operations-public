@@ -4,8 +4,8 @@
 title: Process collection letters example
 description: This article goes through an example that shows the process of creating, printing, and posting collection letters. 
 author: JodiChristiansen
-ms.date: 02/03/2021
-ms.topic: business-process 
+ms.date: 03/23/2023
+ms.topic: how-to 
 ms.prod: 
 ms.technology: 
  
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.16
 
 This article goes through an example that shows the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
 
-To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and then enter the required information to create customer US-045.
+To begin, go to **Accounts receivable \> Customers \> All customers**, select **New**, and enter the required information to create customer US-045.
 
 When you've finished, follow these steps.
 
@@ -58,7 +58,7 @@ The following illustration shows the information that's in the table as it would
 
 3. Go to **Accounts receivable \> Invoices \> All free text invoices**, select **New**, and then follow these steps:
 
-    1. In the **Customer account** field select **US-045**.
+    1. In the **Customer account** field, select **US-045**.
     2. In the **Invoice date** field, enter **1/15/2021**.
     3. In the **Due date** field, enter **1/16/2021**.
     4. On the **Invoice lines** FastTab, in the **Main account** field, enter **401100**.
@@ -77,7 +77,7 @@ The following illustration shows the information that's in the table as it would
     6. Select **Post**.
 
 5. Repeat step 4, but enter **-200.00** in the **Unit price** field.
-6. Go to **Accounts receivable \> Customers \> All customers**, and select customer **US-045**. Then, on the Action Pane, select **Transactions \> Transactions** to review the customer transactions that you posted earlier.
+6. Go to **Accounts receivable \> Customers \> All customers**, and select customer **US-045**. On the Action Pane, select **Transactions \> Transactions** to review the customer transactions that you posted earlier.
 
     [![Reviewing the posted customer transactions.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
@@ -90,7 +90,7 @@ The following illustration shows the information that's in the table as it would
         By default, the **Collection letter** field should be set to **Collection per customer**.
 
     2. In the **Collection letter date** field, enter **1/19/2021**.
-    3. On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.
+    3. On the **Records to include** FastTab, select **Filter**, and, in the **Customer account** field, add customer **US-045**.
     4. Select **OK**.
     5. Select **OK** to create collection letters.
 
@@ -112,7 +112,7 @@ The following illustration shows the information that's in the table as it would
         By default, the **Collection letter** field should be set to **Collection per customer**.
 
     2. In the **Collection letter date** field, enter **1/23/2021**.
-    3. On the **Records to include** FastTab, select **Filter**, and then, in the **Customer account** field, add customer **US-045**.
+    3. On the **Records to include** FastTab, select **Filter**, and in the **Customer account** field, add customer **US-045**.
     4. Select **OK**.
     5. Select **OK** to create collection letters.
 
@@ -126,7 +126,7 @@ The following illustration shows the information that's in the table as it would
 
   2. Don't post this collection letter.
 
-11. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and then, on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.
+11. Go to **Credit and collections \> Setup \> Accounts receivable parameters**, and on the **Collections** tab, set the **Ignore payments and credit memos when calculating collection letter code** option to **No**.
 
     [![Setting the Ignore payments and credit memos when calculating collection letter code option to No.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 

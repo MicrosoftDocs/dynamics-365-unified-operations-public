@@ -2,12 +2,11 @@
 title: Troubleshoot on-premises deployments
 description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 06/07/2022
+ms.date: 05/04/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
@@ -15,6 +14,8 @@ ms.dyn365.ops.version: Platform Update 8
 ms.custom: 60373
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Troubleshoot on-premises deployments
 
@@ -28,8 +29,8 @@ You can access Service Fabric Explorer in a web browser by using the default add
 
 To verify the address, note the value that was used in the "Create DNS zones and add A records" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#createdns)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#createdns)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#createdns)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#createdns)
 
 You can access the site only if the client certificate is in cert:\\CurrentUser\\My on the machine that you're accessing the site on. (In Certificate Manger, go to **Certificates - Current User** \> **Personal** \> **Certificates**.) When you access the site, select the client certificate when you're prompted.
 
@@ -128,9 +129,8 @@ Note the current deployment status for the environment in Microsoft Dynamics Lif
 
 Run Test-D365FOConfiguration.ps1 as noted in the "Set up a standalone Service Fabric cluster" section of the appropriate setup and deployment article for your environment. Note any errors.
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupsfcluster)
-
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupsfcluster)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupsfcluster)
 
 Be sure to complete these steps:
 
@@ -226,8 +226,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
     For information about how to correctly fill in the fields in the templates, see the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md)
   
 
 5. In LCS, open the project, and update the LCS on-premises connector as required.
@@ -240,8 +240,8 @@ To clean up an existing environment and redeploy, follow these steps.
 
 6. Deploy again by following the instructions in the appropriate setup and deployment article for the environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md)
 
 ## Find the local agent values that are used
 
@@ -304,7 +304,7 @@ Press any key to exit
 
 **Reason:** You're trying to install local agent version 2.3.0 or later, but the localagent-config.json file that you're using isn't up to date.
 
-**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector).
+**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-latest.md#configureconnector).
 
 You can also manually add the following values in the **components** section of the localagent-config.json file.
 ```json
@@ -349,8 +349,8 @@ You can also manually add the following values in the **components** section of 
 
 3. Make sure that the same certificate that is specified in the local agent configuration in LCS was used to complete the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs)
 
 4. Uninstall the local agent.
 5. Specify the correct certificate in the local agent configuration, and download the configuration file again.
@@ -389,8 +389,8 @@ To resolve the error, run the .\Set-CertificateAcls.ps1 script to reset the ACLs
 
 3. Make sure that the "Set up file storage" section of the appropriate setup and deployment article for your environment is completed:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupfile)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupfile)
 
 4. Uninstall the local agent.
 5. Specify the correct file share in the local agent configuration, and download the configuration file again.
@@ -448,7 +448,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](setup-deploy-on-premises-pu12.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When you performing the [Configure the databases](setup-deploy-on-premises-latest.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
@@ -699,8 +699,8 @@ You can do additional logging by registering providers. To register providers, i
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment article for your environment:
 > 
-> - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupfile)
-> - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupfile)
+> - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupfile)
+> - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupfile)
 > 
 > **Example:** \[*Agent Share*\]\\wp\\\[*Deployment name*\]\\StandaloneSetup-...\\Apps\\ETWManifests
 
@@ -911,48 +911,37 @@ On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management**
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
 
-### Fiddler
+### Microsoft Edge developer tools
 
-Fiddler can be used for additional debugging. For in-depth information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](/archive/blogs/tangent_thoughts/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider).
+The developer tools that are shipped with Microsoft Edge can be helpful when debugging network requests between a client and the AOS server.
 
 The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.
 
-#### Repo/capture
+#### Capture
 
-1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
-2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
-3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
-4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
-5. Sign in by using the USERINFO.NETWORKALIAS account and password.
-6. After you're signed in, stop Fiddler from capturing traffic.
+1. Open Microsoft Edge, and then open an **InPrivate** window (the shortcut key is Ctrl + Shift + N).
+1. Open the **Microsoft Edge developer tools** (the shortcut key is Ctrl + Shift + I)
+1. Navigate to the **Network** tab. You can verify that traffic is being captured by looking at the lower part of the tool.
+1. In the **Network** tab make sure you have **Preserve Log** and **Disable Cache** checked.
+1. Open finance and operations apps (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
+1. Sign in by using the USERINFO.NETWORKALIAS account and password.
+1. After you're signed in, stop recording the network log (the shortcut key is Ctrl + E).
 
 #### Analyze
 
-In the right pane of Fiddler, notice that a horizontal divider separates the request from the response. Unlike a network trace, where you typically get one frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.
+Once you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. Foreach request that gets sent you will be able to view the full request as well as the full response.
 
-1. In Fiddler, in the upper-right corner, select **Inspectors** \> **Raw**.
-2. In the lower-right corner, select **Cookies**.
-3. Do a search for **MSISAuth**.
-4. Select the row that has a result of **200** for the AD FS host.
-5. Look above the row that you just selected to find a row that has a result of **302**. Select the row.
-
-    You should see the AD FS URL, host, user name, and password. 
-
-    > [!IMPORTANT]
-    > For privacy, you might have to scrub personally identifiable information.
-
-    ![Personally identifiable information.](media/Scrub-PII.png)
-
-6. Select the next row that has a result of **302**. The URL should be **.../namespaces/AXSF/**.
-7. Find the code line that is shown on that row. 
-
-    ![Code line.](media/Note-the-code.png)
-
-8. Copy the value of code line after the equal sign (=).
-9. Go to <https://www.base64decode.org/>, and paste the code that you just copied.
-9. In the **Source charset** field, select **ASCII**.
-10. Select **Decode**.
-11. Copy the results, and follow these steps:
+1. In the network log look for the POST request that gets sent to Finance +Operations after having successfully authenticated through AD FS.
+    ![Network log.](media/NetworkLogOnpremADFS.png)
+1. Select the request, and then select **Payload**.
+1. In the payload find the id_token parameter and copy the value.
+> [!NOTE]
+> Only copy the value of the id_token parameter. Don't copy the entire payload.
+> Copy the value of the id_token parameter after the colon sign (:).
+> ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
+1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
+1. Paste the value of the id_token parameter in the **Encoded JWT Token** field, and it will be automatically decoded.
+1. Check the results in the Payload: Data and Claims section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
     - Make sure that the **unique_name** value is the Active Directory user that is being tested.
@@ -1006,8 +995,8 @@ In this case, either the certificates haven't been installed, or they haven't gi
 
 If you find that the keyset doesn't exist, scripts weren't run on all machines. Review and complete the "Set up VMs" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupvms)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#setupvms)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupvms)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupvms)
 
 Copy the scripts in each folder to the VMs that correspond to the folder name.
 
@@ -1059,8 +1048,8 @@ If you receive an "Unable to find certificate" error when you run Test-D365FOCon
 
 If the client and server can't communicate because they don't have a common algorithm, verify that the certificates that are created use the specified provider, as explained in the "Plan and acquire your certificates" section of the appropriate setup and deployment article for your environment:
 
-- [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert)
-- [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#plancert)
+- [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#plancert)
+- [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#plancert)
 
 ## Find a list of group managed service accounts
 
@@ -1106,8 +1095,8 @@ This issue occurs because AOS users aren't in the local administrator group, and
 
 1. Add AOS users as local admins, as described in the "Join VMs to the domain" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#joindomain)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#joindomain)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#joindomain)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#joindomain)
  
 2. Run the **Config-PreReq** script on all the AOS machines.
 3. Make sure that the **Test-Configuration** script passes.
@@ -1174,8 +1163,8 @@ Follow these steps to configure the local agent with the updated tenant.
 
 2. Follow the steps in the "Configure LCS connectivity for the tenant" section of the appropriate setup and deployment article for your environment:
 
-    - [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs)
-    - [Platform updates 12 through 40](setup-deploy-on-premises-pu12.md#configurelcs)
+    - [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs)
+    - [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs)
 
 3. Create a new LCS connector in the new tenant.
 4. Download the **local-agent.config** file.
@@ -1193,25 +1182,25 @@ You will receive the following error when you deploy an additional environment:
 
 You can skip or modify the following sections in the deployment instructions.
 
-### Plan and acquire your certificates (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#plancert) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#plancert))
+### Plan and acquire your certificates (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#plancert) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#plancert))
 
 - You must use the same on-premises local agent certificate.
 - You can use same star certificates (AOS SSL and Service Fabric).
 - The remaining certificates should probably differ from the certificates for the existing environment.
 
-### Download setup scripts from LCS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#downloadscripts) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#downloadscripts))
+### Download setup scripts from LCS (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#downloadscripts) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#downloadscripts))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Set up a standalone Service Fabric cluster (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#setupsfcluster) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#setupsfcluster))
+### Set up a standalone Service Fabric cluster (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#setupsfcluster) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#setupsfcluster))
 
 - The scripts that are downloaded should be copied into a new folder.
 
-### Configure LCS connectivity for the tenant (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configurelcs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configurelcs))
+### Configure LCS connectivity for the tenant (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configurelcs) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configurelcs))
 
 - You must complete this task only one time for the tenant.
 
-### Configure AD FS (as documented for [Platform update 41 and later](setup-deploy-on-premises-pu41.md#configureadfs) or [Platform updates 12 through 40](./setup-deploy-on-premises-pu12.md#configureadfs))
+### Configure AD FS (as documented for [Application 10.0.32 and later](setup-deploy-on-premises-latest.md#configureadfs) or [Platform update 41 through 55](setup-deploy-on-premises-pu41.md#configureadfs))
 
 - Configure AD FS according to the [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md) guide.
 
@@ -1325,7 +1314,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](setup-deploy-on-premises-latest.md#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 
@@ -1417,7 +1406,7 @@ This error will cause the AXSF service to fail with the same error.
 
 To resolve this issue, follow these steps.
 
-1. In the [agent share path](setup-deploy-on-premises-pu12.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
+1. In the [agent share path](setup-deploy-on-premises-latest.md#setupfile), find the **netstandard.dll** file. For example, this file might be at \\wp\\\<name\>\\StandaloneSetup-\<ver\>\\Apps\\AOS\\AXServiceApp\\AXSF\\Code\\bin\\netstandard.dll.
 2. On each AOS server, open a Command Prompt window as an administrator, and run the following command.
 
     ```Console

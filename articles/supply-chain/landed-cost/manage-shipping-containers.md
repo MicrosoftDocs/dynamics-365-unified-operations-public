@@ -4,7 +4,7 @@
 title: Manage shipping containers
 description: This article describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 author: Weijiesa
-ms.date: 12/14/2020
+ms.date: 03/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,46 @@ ms.dyn365.ops.version: 10.0.17
 
 Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 
-To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. You can use the buttons on the Action Pane to create, delete, and work with shipping containers. Select any shipping container in the list to view its details on the **Shipping containers** page.
+## Create shipping containers for voyages
+
+You create a shipping container by opening or creating the voyage where you will use it, and then assigning the purchase order lines that the shipping container will include. Follow these steps to create a shipping container for a voyage.
+
+1. Follow one of these steps:
+
+    - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
+    - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
+
+1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
+1. The **Inbound orders** FastTab shows all the qualifying purchase orders that match your filter settings. Select an inbound order to include in the new shipping container.
+1. On the **Lines to select** FastTab, select the checkbox for each purchase order line that you want to include in the new shipping container.
+1. Repeat steps 2 through 4 until you've found and selected all the order lines that you want to include in the new shipping container.
+1. On the **Lines to select** FastTab, on the toolbar, select **Add to staging list**.
+1. On the toolbar, select **View staging list**.
+1. The **Add staging list or shipping container** page is opened. The purchase order lines that you selected are listed on the **Lines in staging list** FastTab. All the purchase order lines in this list will be added to the shipping container that you create. You can remove any line by selecting it and then selecting **Remove line** on the toolbar of the FastTab.
+1. On the **Lines in staging list** FastTab, on the toolbar, select **Add to new shipping container**.
+1. In the **Create shipping container** dialog box, on the **General** tab, define the new shipping container.
+
+    [<img src="media/create-shipping-container.png" alt="Create shipping container dialog box." title="Create shipping container dialog box" width="720" />](media/create-shipping-container.png)
+
+1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
+
+    > [!NOTE]
+    > The **Run in the background** tab is available only if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
+    >
+    > Background processing won't be activated if the transfer quantity is less than the total quantity of the related purchase order line.
+
+1. Select **OK** to create the shipping container and add the selected purchase order lines to it.
+
+> [!NOTE]
+> If a container already exists for your selected voyage, you can add new purchase order lines to it by selecting **Add to new existing shipping container** on the **Add staging list or shipping container** page.
+
+## View shipping container lists and details
+
+To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. You can use the buttons on the Action Pane to delete and manage shipping containers. Select any shipping container in the list to view its details on the **Shipping containers** page.
 
 The upper part of the shipping container details page shows shipping container and costing information. The **Lines** section shows the folios, items, and purchase orders or transfer orders that are attached to the container.
 
-## Action Pane
+## Shipping containers Action Pane
 
 The Action Pane on the **All shipping containers** and **Shipping containers** pages provides buttons that let you work with a selected shipping container. Each button performs a single action. The Action Pane also includes tabs, each of which, in turn, provides a set of related buttons. Except where noted, all buttons and tabs that are described in the following subsections are available both in the list view (that is, on the **All shipping containers** page) and in the detailed view (that is, on the **Shipping containers** page).
 
@@ -68,7 +103,7 @@ The following table describes the buttons that are available on the **General** 
 | Tracking | View or update shipment tracking. |
 | Goods in transit orders | You can open the **Goods in transit** page directly from the container. That page shows the goods-in-transit records for the selected shipping container only. |
 
-## Header view
+## Shipping container Header view
 
 To open the **Header** view, open a shipping container, and then select the **Header** tab in the upper right of the shipping container heading.
 
@@ -102,8 +137,8 @@ The following table describes the settings that are available on the **Delivery*
 | Field | Description |
 |---|---|
 | Created date and time | The date and time when the container was created. |
-| Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. You can also manually enter it here. |
-| Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set to that it's automatically updated when the tracking control page is updated. |
+| Ex-factory date | This date is usually provided to the factory/vendor to indicate when you expect the goods to leave its premises. When you work with a factory in Asia, this date is often required instead of the date that you expect the goods by. (By contrast, for a local delivery, the date that you expect the goods by is required.) This field can be filled in from the purchase order lines in the shipping container list. |
+| Ship date | This date can be printed on the purchase order document. It usually informs the factory/vendor about the date that the goods should be delivered to the port by. This field is for informational purposes only. It isn't used to estimate the expected delivery date of the goods in the shipping container. This field can be set so that it's automatically updated when the tracking control page is updated. |
 | In to store date | The earliest date when the goods from the purchase orders that are linked to the voyage will be available for sale.|
 | Estimated delivery date | Usually, the date when the goods are due to arrive in the warehouse. This field is for informational purposes only. It isn't used to calculate master planning on the purchase order lines in the shipping container. The expected delivery date on the purchase order lines is updated through tracking control. This field can be set up so that it's updated when the tracking control page is updated. |
 | Departure date | Usually, the date when the plane or vessel actually leaves the overseas port. |
@@ -134,14 +169,14 @@ The following table describes the settings that are available on the **Other** F
 | Original voyage | If the shipping container was moved to a new voyage, the original voyage. |
 | Used | Use this to record whether a rental shipping container has been used. It is for informational purposes only. |
 | Expected loading date | The date when the shipping container is expected to be loaded with goods. |
-| Our serial number | Enter the serial number that your company uses internally for the shipping container. |
-| Shipping company serial number | Enter the serial number that the shipping company or agent provided for the shipping container. |
+| Our seal number | Enter the seal number that your company uses internally for the shipping container. |
+| Shipping company seal number | Enter the seal number that the shipping company or agent provided for the shipping container. |
 | Examination certificate applied date | The date when an examination was requested for the shipping container. |
 | Examination certificate received date | The date when the examination certificate was received. |
 | Examination certificate expiry date | The date when the examination certificate will expire. |
 | Examination certificate number | The certificate number of the certificate that was issued after an examination was done. |
 
-## Lines view
+## Shipping container Lines view
 
 To open the **Lines** view, open a shipping container, and then select the **Lines** tab in the upper right of the shipping container heading.
 

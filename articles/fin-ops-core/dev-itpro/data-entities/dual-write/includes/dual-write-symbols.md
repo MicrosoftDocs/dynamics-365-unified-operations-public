@@ -1,10 +1,3 @@
----
-author: josaw
-ms.date: 06/28/2021
-ms.topic: include
-ms.author: josaw
----
-
 ## Mapping tables
 
 ### Mapping types

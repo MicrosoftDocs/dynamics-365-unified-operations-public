@@ -5,7 +5,7 @@ title: Define inventory counting processes
 description: This article describes the configuration of basic inventory counting processes by creating a counting group and a counting journal. 
 author: yufeihuang
 ms.date: 07/26/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This article describes the configuration of basic inventory counting processes b
 
 
 ## Create a counting group
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Inventory > Counting groups**.
+1. Go to **Inventory management > Setup > Inventory > Counting groups**.
 2. Select **New**.
 3. In the **Counting group** field of the new row, type a value.
 4. In the **Name** field, type a value.
@@ -47,7 +47,7 @@ This article describes the configuration of basic inventory counting processes b
 6. Select **Save**.
 
 ## Create a counting journal name
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Journal names > Inventory**.
+1. Go to **Inventory management > Setup > Journal names > Inventory**.
 2. Select **New**.
 3. In the **Name** field, type a value.
 4. In the **Description** field, type a value.
@@ -63,13 +63,13 @@ This article describes the configuration of basic inventory counting processes b
 7. Select **Save**.
 
 ## Set standard counting journal name
-1. In the navigation pane, go to **Modules > Inventory management > Setup > Inventory and warehouse management parameters**.
+1. Go to **Inventory management > Setup > Inventory and warehouse management parameters**.
 2. Select the **Journals** tab.
 3. In the drop down menu of the **Counting** field, select the journal you previously created. This journal will then be the default journal name for inventory journals of the **Counting** type.  
 4. Select the **General** tab. Optional: Select this option to lock an item during the counting process to prevent updates for packing slips, picking lists, or picking list registrations.  
 
 ## Set the counting policy for an item
-1. In the navigation pane, go to **Modules > Product information management > Products > Released products**.
+1. Go to **Product information management > Products > Released products**.
 2. In the list, select the link for the Item number of the product that you want to set counting policies on. You must select an item that is inventory tracked. A non-stocked product can't be counted. If you are using USMF demo data you can select item A0001.  
 3. Select **Edit**.
 4. Toggle the expansion of the **Manage inventory** section.

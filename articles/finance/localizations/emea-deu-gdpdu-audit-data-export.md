@@ -3,7 +3,7 @@
 
 title: German audit file (GDPdU/GoBD) overview
 description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
-author: mrolecki
+author: liza-golub
 ms.date: 03/11/2021
 ms.topic: overview
 ms.prod: 
@@ -71,7 +71,7 @@ The following tables show the General ledger data structure definitions.
 |-----|------------------------|-----------|---------------------------------------------------|-----------------------------------------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | $GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue    |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr | $GeneralJournalEntry/$GeneralJournalAccountEntry/RecId                            |
-| 3   | PERIODENCODE           | Zeichen   | Periodencode                                      | $GeneralJournalEntry/$FiscalCalendarPeriod/Type                                   |
+| 3   | PERIODENCODE           | Zeichen   | Periodencode                                      | $Entries/$GeneralJournalEntry/$FiscalCalendarPeriodName                           |
 | 4   | PERIODENZUGEHORIGKEIT  | Zeichen   | Vortrag, Normal oder Abschlussbuchung             | $GeneralJournalEntry/$FiscalCalendarPeriod/Type                                   |
 | 5   | BUCHUNGSTYP            | Zeichen   | Buchungstyp                                       | $GeneralJournalEntry/$GeneralJournalAccountEntry/PostingType                      |
 | 6   | KORREKTUR              | Zeichen   | Korrektur                                         | $GeneralJournalEntry/$GeneralJournalAccountEntry/IsCorrection                     |

@@ -44,14 +44,16 @@ In finance and operations apps, users can view a calculated value for each numer
 
 [![Showing calculated values in grids.](./media/grids-aggregation.png)](./media/grids-aggregation.png)
 
-In versions before 10.0.29, the total is the only supported calculated value. However, as of version 10.0.29, after they enable the **Extended grid aggregation capabilities** feature, users can select among the following four calculated values:
+In versions before 10.0.29, the total is the only supported calculated value. However, as of version 10.0.29, if your organization has enabled the **Extended grid aggregation capabilities** feature, users can select among the following four calculated values:
 
 - Minimum
 - Maximum
 - Total
 - Average
 
-A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value.
+A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value. 
+
+In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be shown in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated based on the values in the selected row.   
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
@@ -112,6 +114,9 @@ Users have always been able to export data from grids in finance and operations 
 
 - If the number of columns in the copied table exceeds the number of columns that remain in the grid, starting from the paste location, the user is notified that the extra columns have been ignored. 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
+
+### Copying from a grid in the product
+As of version 10.0.32, grids in finance and operations apps support range selection capability that resembles the capability in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns). That range can then be copied and pasted as required.  
 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
@@ -175,13 +180,6 @@ Note that the row selection and row status columns in the new grid are always fr
 ## Autofit column width
 As in Excel, users can force a column to be automatically resized based on the content that is currently shown in it. Just double-tap (or double-click) the sizing handles in the column. Alternatively, put the focus in the column header, and then select the **A** key (for autofit).
 
-## Frequently asked questions
-### How do I enable the new grid control in my environment? 
-
-The **New grid control** feature is available directly in Feature management in any environment. After enabling the feature in Feature management, all subsequent user sessions will utilize the new grid control. 
-
-This feature began to be enabled by default in version 10.0.21. It's targeted to become mandatory in October 2022.
-
 ## Developer topics
 
 ### [Developer] Opting out individual pages from using the new grid 
@@ -222,24 +220,6 @@ Users and organizations can create saved views that are optimized for data entry
 When a grid is loading, if the system encounters an extensible control that is not React based, the system will force the legacy grid to render instead. When a user first encounters this situation, a message will be shown indicating the page needs to be refreshed. Afterwards, this page will load the legacy grid automatically without any further notifications to users until the next system update. 
 
 To overcome this situation permanently, extensible control authors can create a React version of the control for use in the grid.  Once developed, the X++ class for the control can be decorated with the **FormReactControlAttribute** attribute to specify the location of the React bundle to load for that control. See the `SegmentedEntryControl` class as an example.  
-
-## Known issues
-This section maintains a list of known issues for the new grid control.
-
-### Open issues
-- After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:
- 
-    - [Resolved] Issue 762533: Unexpected client error when selecting a row in a card list.
-    - [Resolved] A card list exists on the page that is rendered in multiple columns.
-        - This type of card list is supported by the **New grid control** starting in version 10.0.30. Any usages of forceLegacyGrid() for this purpose can be removed. 
-    - [Resolved] A grouped card list exists on the page.
-        - Grouped card lists are supported by the **New grid control** starting in version 10.0.30. Any usages of forceLegacyGrid() for this purpose can be removed. 
-    - [Resolved] A grid column with a non-react extensible control.
-        - Extensible controls can provide a React version of their control that will be loaded when placed in the grid and adjust their control definition to load this control when used in the grid. See the corresponding developer section for more details. 
-
-    When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.
-
-- [KB 4582758] Records are blurry when you change zoom from 100 to any other percentage
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

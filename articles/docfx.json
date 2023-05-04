@@ -85,24 +85,41 @@
       "recommendations": "true"
     },
     "fileMetadata": {
+      "audience": {
+        "supply-chain/**/**.md": [
+          "Application User"
+        ]
+      },
+      "ms.search.region": {
+        "supply-chain/**/**.md": [
+          "Global"
+        ]
+      },
       "search.app": {
         "finance/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "financeandoperations-docs"
         ],
         "supply-chain/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "supplychainmanagement-docs",
+          "supplychaincenter-docs"
         ],
         "commerce/**/*.md": [
-          "Commerce"
+          "Commerce",
+          "commerce-docs"
         ],
         "human-resources/**/*.md": [
-          "HumanResources"
+          "HumanResources",
+          "humanresources-docs"
         ],
         "talent/**/*.md": [
-          "HumanResources"
+          "HumanResources",
+          "humanresources-docs"
         ],
         "fin-ops-core/**/*.md": [
-          "FinanceAndOperations"
+          "FinanceAndOperations",
+          "financeandoperations-docs"
         ]
       },
       "featureFlags": {

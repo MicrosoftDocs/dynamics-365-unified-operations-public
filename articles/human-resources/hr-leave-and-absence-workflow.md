@@ -4,7 +4,7 @@
 title: Create a leave request workflow
 description: Create a Leave and absence request workflow to manage leave requests consistently in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 03/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,7 +50,7 @@ You can create a workflow in Dynamics 365 Human Resources to consistently manage
 
 4. When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.
 
-5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json.)
+5. Use the workflow editor to create a workflow for your leave requests. For more information about working with workflows, see [Create workflows overview](../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=%2fdynamics365%2fcommerce%2ftoc.json).
 
 ## Leave and absence request workflow data elements
 
@@ -84,6 +84,27 @@ These examples show how you can create different types of workflow conditions by
 - Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees. For more information about automatic actions, see [Configure approval processes in a workflow](../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md).
 
 - Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.
+
+### Leave request and workflow statuses
+
+When a leave request is created, two statuses are assigned to it:
+
+- A leave request status
+- A workflow status that's associated with the workflow as part of the leave request that was submitted.
+
+The following leave request statuses are used:
+
+- **Draft** – The leave request was created but not submitted.
+- **Submitted** – The leave request was submitted for review.
+- **Denied** – The leave request was denied by a manager or an absence manager.
+- **Approved** – The leave request was approved by a manager or an absence manager.
+- **Failed** – Validation of the leave request failed. The failure might occur because of an insufficient balance at the time of approval.
+
+The following workflow statuses are used for leave requests:
+
+- **In review** – The leave request was submitted. When a leave request is in review, the workflow has been triggered for the next steps.
+- **Cancelled** – A user decided to cancel the workflow.
+- **Completed** – No further action is required.
 
 ## See also
 

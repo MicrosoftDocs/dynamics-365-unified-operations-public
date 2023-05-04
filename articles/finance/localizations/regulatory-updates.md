@@ -4,7 +4,7 @@
 title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: VStamberg
-ms.date: 09/26/2022
+ms.date: 01/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,14 +45,12 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Brazil         |   April 2022         | 10.0.28         |    SPED ECF - LAYOUT 8  |
-|      Brazil         |   June 2022         | 10.0.30HF         |    EFD ICMS IPI - version 3.0.9  |
-|      Brazil         |   August 2022         | 10.0.30         |    NF-e NT2021.004  v1.31 - Layout and validation rules updates  |
-|      Eastern Europe         |   July 2022         | 10.0.28HF, 10.0.29         |    General ledger statement by main account  |
-|      Hungary         |   July 2022         | 10.0.30         |    VAT declaration in XML (2065A) and preview in Excel. Purchase invoices appendix in XML (2065M)  |
-|      Poland          |   April 2022     | 10.0.28     |   JPK_FA version 4 starting from April 1, 2022 |
-|      Russia          |   June 2022     | 10.0.29    |  Import address data from the State Address Register (GAR)|
-|      Singapore      |   July 2022| 10.0.28HF, 10.0.29 | IRAS Audit File (IAF) in TXT format|
+|      Brazil         |   December 2022         | 10.0.31         |    Sped Fiscal EFD ICMS IPI - version 3.1.1 (Layout 1.16 / 017 / 2023)  |
+|      Denmark         |   November 2022         | 10.0.31, 10.0.32   |    VAT declaration preview report update for 2022  |
+|      Italy      |   October 2022| 10.0.32 | The new type of TD28 document to communicate the purchase of goods from San Marino |
+|      Italy      |   February 2023| 10.0.31HF, 10.0.32HF, 10.0.33 | Unique Certification - 2023 in Dynamics 365 Finance |
+|      Italy      |   March 2023| 10.0.31HF, 10.0.32HF, 10.0.33HF | Italy - VAT return 2023 - Dichiarazione Iva annuale 2023 |
+|      Saudi Arabia      |   November 2022| 10.0.31HF, 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
 
 ## Additional resources

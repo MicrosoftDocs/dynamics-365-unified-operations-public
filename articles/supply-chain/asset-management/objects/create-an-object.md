@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTableCopyStructure, EntAssetObjectTableCreate
+ms.search.form: EntAssetObjectTableCopyStructure, EntAssetObjectTableCreate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

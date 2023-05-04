@@ -111,8 +111,6 @@ Follow these steps to specify filter codes for released products. For example, y
 
     Product filter codes aren't enabled unless the item group that is attached to the product has been configured for filter codes.
 
-    For more information, see [Create a new product](../pim/tasks/create-new-product.md).
-
 1. On the **Warehouse** FastTab, in the **Product filter codes** section, select filter codes for the **Code 1** through **Code 10** fields, as required, to specify filter codes for the product.
 
 ## Set up generally available items

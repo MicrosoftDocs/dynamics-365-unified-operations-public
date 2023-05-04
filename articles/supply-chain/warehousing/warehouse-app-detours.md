@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.30
 # Configure detours for steps in mobile device menu items
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 10.0.31 GA -->
 
 > [!IMPORTANT]
 > The features that are described in this article apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.

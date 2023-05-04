@@ -5,7 +5,7 @@ title: Customer payment overview
 description: This procedure walks through the various methods used to enter customer payments. 
 author: kweekley
 ms.date: 11/15/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: t-benebo
-ms.date: 01/06/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
-# ROBOTS: 
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: 
 ms.author: benebotg
-ms.dyn365.ops.version: 7.3 
-ms.search.validFrom: 2017-12-31
-
+ms.reviewer: kamaybac
+ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
+ms.topic: overview
+ms.date: 01/05/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Product lifecycle state overview
@@ -38,7 +23,6 @@ A released product or product variant can be associated with a product lifecycle
 ## Create a new product lifecycle state
 
 - To create a new product lifecycle state, see [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md).
-
 - To create a default product lifecycle state, see [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md).
 
 ## Associate product lifecycle states to released products  
@@ -63,7 +47,7 @@ For more information:
 
 ## Impact on master planning
 
-The product lifecycle state has only one control flag: **Is active for planning**. By default, this is set to **Yes** for all created product lifecycle states, but it can be changed to **No**. When set to **No**, the associated released products or released product variants are:
+The product lifecycle state has only one control flag: **Is active for planning**. By default, this option is set to *Yes* for all created product lifecycle states, but it can be changed to *No*. When set to *No*, the associated released products or released product variants are:
 
 - Excluded from master planning.
 - Excluded from BOM-level calculation.
@@ -72,6 +56,12 @@ For detailed information about how to use product lifecycle state to exclude pro
 
 > [!NOTE]
 > For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.  
+
+## Enable and apply detailed control of business processes
+
+It's possible set up your system to provide control over which business processes should be allowed or blocked by the system for a specific lifecycle state. This capability can be useful when introducing new products (where, for example, it may be possible to purchase the item but receive a warning that it's still a prototype) or to discontinue or end-of-life of a product (where it may be possible to sell the existing on-hand but not to purchase it or to produce it).
+
+To enable this level of control over your business processes, the *Engineering Change Management* configuration key must be enabled for the processes to appear (see also [Engineering change management overview](../engineering-change-management/product-engineering-overview.md)). You can set up the control of business processes in products, variants, and engineering products. You can safely enable the configuration key and use the lifecycle state for standard products even if you don't use any other aspects of the engineering change management processes. For more information about how to work with lifecycle states using the features provided by engineering change management, see [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
 
 ## Default migration, import, and export
 
@@ -93,16 +83,16 @@ Use the following criteria to select and update the released products and produc
 - The product lifecycle state of the product or product variant must be different from the new desired state.
 - The product or product variant was created some days ago based on the number of days that you enter in the selection dialog box.
 - There are no open production orders (= status < ended) for the product or product variant.
-- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registrered to QuotationReceipt) for the product or product variant.
+- There are no open inventory transactions (= status issue ReservPhysical to QuotationIssue or status receipt Registered to QuotationReceipt) for the product or product variant.
 - There are no inventory transactions within the last number of days for the product or product variant.
-- There is no future demand or supply forecast for the product or product variant.  
+- There's no future demand or supply forecast for the product or product variant.  
 - No minimum stock level has been set in item coverage for the product or product variant.
 - No active fixed quantity kanban rule for the product or product variant.  
 - No service order line for the product or product variant.
 - No active or future sales or purchase agreement lines for the product or product variant.
-- The product or product variant is not used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
+- The product or product variant isn't used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
 
-## Related articles
+## Additional resources
 
 - [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md)
 - [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md)
@@ -110,6 +100,5 @@ Use the following criteria to select and update the released products and produc
 - [Assign a product lifecycle state to a released product](tasks/product-lifecycle-state-released-product.md)
 - [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md)
 - [Create a product lifecycle state to exclude products from Master planning](tasks/exclude-products-master-planning.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

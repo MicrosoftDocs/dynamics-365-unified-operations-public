@@ -2,7 +2,7 @@
 title: Extend POS views to add custom columns and app bar buttons
 description: This article explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: josaw1
-ms.date: 04/21/2022
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -419,7 +419,7 @@ Sample code for custom filter extensions is available in the Retail SDK (...\Ret
 
 Follow these steps to validate the customization.
 
-1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
 2. Search for customer **2001** by using the search bar on the top.
 
     You should see the custom columns that you added.

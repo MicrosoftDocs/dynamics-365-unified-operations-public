@@ -1,8 +1,8 @@
 ---
-title: Modern POS (MPOS) triggers and printing
-description: You can use triggers to capture events that occur before and after any Modern POS operations.
+title: Store Commerce app triggers and printing
+description: This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 author: josaw1
-ms.date: 07/13/2020
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,11 +15,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ms.custom: 83892
 ---
 
-# POS triggers
+# Store Commerce app triggers and printing
 
 [!include [banner](../../includes/banner.md)]
 
-You can use triggers to capture events that occur before or after Retail Modern POS operations. Using triggers supports several business logic scenarios that enable you to do the following: 
+This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
+
+You can use triggers to capture events that occur before or after Store Commerce app operations. Using triggers supports several business logic scenarios that enable you to do the following: 
 - Insert custom logic before the operation runs or after it has completed. This includes operation-specific triggers and generic triggers called the PreOperationTrigger and PostOperationTrigger, which run at the beginning and end of all POS operations.  
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable.
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 

@@ -14,7 +14,6 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-manager: annbe
 ---
 # Fiscal printer integration sample for Russia
 

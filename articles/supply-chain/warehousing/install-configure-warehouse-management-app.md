@@ -1,62 +1,65 @@
 ---
-# required metadata
-
 title: Install and connect the Warehouse Management mobile app
 description: This article explains how to install the Warehouse Management mobile app on each of your mobile devices and configure it to connect to your Microsoft Dynamics 365 Supply Chain Management environment.
 author: Mirzaab
-ms.date: 02/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
-# ROBOTS: 
-audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 267694
-ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
-ms.search.region: global
-ms.search.industry: Manufacturing
 ms.author: mirzaab
-ms.search.validFrom: 2021-02-28
-ms.dyn365.ops.version: 10.0.17
-
+ms.reviewer: kamaybac
+ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
+ms.topic: how-to
+ms.date: 03/07/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Install and connect the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how configure the app to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
+This article explains how to download and install the Warehouse Management mobile app on each of your mobile devices, and how to configure the app to connect to your Supply Chain Management environment. You can configure each device manually, or you can import connection settings through a file or by scanning a QR code.
 
-## System requirements
+The Warehouse Management mobile app is only for your internal business use. You may not republish or distribute the Warehouse Management mobile app externally in any app store or similar distribution service.
+
+## Prerequisites
+
+### Operating system requirements
 
 The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
+- iOS 8.0 or later
 
-## Turn Warehouse Management mobile app features on or off in Supply Chain Management
+### External URLs required by the app
 
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+For the Warehouse Management mobile app to function correctly, your internal network must allow it to access the following external URLs:
+
+- *.microsoft.com
+- *.microsoftonline.com
+- login.windows.net
+- *.appcenter.ms
+- *.ces.microsoftcloud.com
+- *.onyx.azure.net
+- play.google.com
+- itunes.apple.com
+
+### Turn Warehouse Management mobile app features on or off in Supply Chain Management
+
+To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Get the Warehouse Management mobile app
 
 For smaller deployments, you might typically install the app on each device from the relevant store and then manually configure the connection to the environments that you're using.
 
-For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
+For larger deployments, you can automate app deployment and/or configuration, which can be more convenient if you manage many devices. For example, you might use a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to manage your deployments of the Warehouse Management mobile app, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
 
 ### Install the app from an app store
 
-The easiest way to install the app on single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
+The easiest way to install the app on a single device is to install it from an app store, which always provides the latest generally available version. Microsoft Intune can also fetch apps from the app stores. Use one of the following links to install the app from an app store:
 
 - **Windows (UWP):** [Warehouse Management on Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
-
 - **Android:** [Warehouse Management on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+- **iOS:** [Warehouse Management on Apple App Store](https://apps.apple.com/app/microsoft-warehouse-management/id6444014310)
 
 ### Download the app from Microsoft App Center
 
@@ -64,11 +67,13 @@ As an alternative to installing from an app store, you can instead download the 
 
 - **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)  
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
-
 - **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
-    If you download a preview version, a few extra steps are required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
+    A few extra steps might be required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
+- **iOS:** The iOS version of the app is only available through App Store.
 
-For information about how install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
+For information about how to install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
+
+The Warehouse Management mobile app isn't available in app stores in China. However, downloading it from Microsoft App Center and using it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China is officially supported.
 
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
@@ -90,13 +95,13 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 
     ![Register an application wizard.](media/app-connect-azure-register-wizard.png "Register an application wizard")
 
-1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you will need it later. This ID will be referred to later in this article as the *client ID*.
+1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
 
     ![Application (client) ID.](media/app-connect-azure-app-id.png "Application (client) ID")
 
 1. In the **Manage** list, select **Certificate & secrets**. Then select one of the following buttons, depending on how you want to configure the app for authentication. (For more information, see the [Authenticate by using a certificate or client secret](#authenticate) section later in this article.)
 
-    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You will need this value when you configure the certificate on Windows devices.
+    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
     - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
     ![Certificate & secrets.](media/app-connect-azure-authentication.png "Certificate & secrets")
@@ -138,11 +143,11 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 
 ## <a name="authenticate"></a>Authenticate by using a certificate or client secret
 
-Authentication with Azure AD provides a secure way of connecting a mobile device to Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you will import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code, as described later in this article.
+Authentication with Azure AD provides a secure way of connecting a mobile device to Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code, as described later in this article.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
 
-You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Use certificates for authentication in Microsoft Intune](/mem/intune/protect/certificates-configure).
+You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
 
 ## Configure the Warehouse Management mobile app for cloud and edge scale units
 
@@ -161,7 +166,7 @@ You can import connection settings from either a file or a QR code. For both app
 | ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
 | ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section. |
 | ActiveDirectoryResource | Specify the root URL of Supply Chain Management. |
-| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
+| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | Company | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
 | ConnectionType | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are *"certificate"* and *"clientsecret"*. The default value is *"certificate"*.<p>**Note:** Client secrets can't be imported.</p> |
 | IsEditable | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
@@ -198,27 +203,28 @@ The following example shows a valid connection settings file that contains two c
 }
 ```
 
-You can either save the information as a JSON file or generate a QR code that has the same content. If you save the information as a file, we recommend that you save it by using the default name, *connections.json*, especially if you will store it in the default location on each mobile device.
+You can either save the information as a JSON file or generate a QR code that has the same content. If you save the information as a file, we recommend that you save it by using the default name, *connections.json*, especially if you'll store it in the default location on each mobile device.
 
 ### Save the connection settings file on each device
 
-Typically, you will use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
+Typically, you'll use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
 
 Every time that the app is started, it reimports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
 
 You can't remove a connection by using the connection settings file.
 
-As has been mentioned, the default file name is *connections.json*. The default file location depends on whether you're using a Windows device or an Android device:
+As has been mentioned, the default file name is *connections.json*. The default file location depends on which type of device you're using:
 
 - **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
 - **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`
+- **iOS:** File sharing isn't yet supported.
 
 Usually, the paths are automatically created after the first run of the app. However, you can manually create them if you must transfer the connection settings file to the device before installation.
 
 > [!NOTE]
 > If the app is uninstalled, the default path and its contents are removed.
 
-### Import the connection settings
+### <a name="config"></a>Import the connection settings
 
 Follow these steps to import connection settings from a file or a QR code.
 
@@ -241,9 +247,15 @@ Follow these steps to import connection settings from a file or a QR code.
 
     ![Connection settings loaded.](media/app-configure-select-connection.png "Connection settings loaded")
 
-1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+1. Do one of the following steps to select the authentication certificate, depending on which type of device that you're using.
 
-    ![Select certificate prompt on an Android device.](media/app-configure-select-certificate.png "Select certificate prompt on an Android device")
+    - If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+
+        ![Select certificate prompt on an Android device.](media/app-configure-select-certificate.png "Select certificate prompt on an Android device")
+
+    - If you're using an iOS device and are using a certificate for authentication, select **Edit connection settings** and then select **Select certificate**. On the page that opens, select **Select certificate** to open a file browser and select your certificate file. The app then shows a **Certificate is selected** confirmation. Enter the certificate password and select **Import certificate**. Finally, save the connection settings.
+
+        ![Connection setup menu on iOS.](media/app-configure-connection-setup-ios.png "Connection setup menu on iOS")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
@@ -280,7 +292,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
         > Don't end this value with a slash (/).
         > Ensure the HTTPS (SSL) certificate is valid.
 
-    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
+    - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
@@ -288,7 +300,9 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
 
 1. Select the **Save** button in the upper-right corner of the page.
-1. If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
+1. If you're using a certificate for authentication, do one of the following steps:
+    - For Android devices, select the certificate when prompted.
+    - For iOS devices, follow the instructions given in step 5 in the [Import the connection settings](#config) section.
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
 ## Remove access for a device
@@ -296,9 +310,9 @@ If you don't have a file or QR code, you can manually configure the app on the d
 If a device is lost or compromised, you must remove access to Supply Chain Management for it. The following steps describe the recommended process for removing access.
 
 1. Go to **System administration \> Setup \> Azure Active Directory applications**.
-1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that is used for the device, because you will need it later.
+1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that is used for the device, because you'll need it later.
 
-    If you've registered only one client ID, and multiple devices use the same client ID, you must push out new connection settings to those devices. Otherwise, they will lose access.
+    If you've registered only one client ID, and multiple devices use the same client ID, you must push out new connection settings to those devices. Otherwise, they'll lose access.
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 1. In the left navigation pane, select **Active Directory**, and make sure that you're in the correct directory.

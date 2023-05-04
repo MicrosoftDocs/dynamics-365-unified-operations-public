@@ -2,7 +2,7 @@
 title: Linked refunds of previously approved and confirmed transactions
 description: This article describes how to enable and use Linked refunds.
 author: josaw1
-ms.date: 11/04/2021
+ms.date: 02/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,7 +51,7 @@ In Commerce version 10.0.11 and later, you can enable the **Omni-channel payment
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Modern POS (MPOS)) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-commerce applications, customers can still manually enter card numbers for payment.
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or the Store Commerce app) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, Store Commerce app, and e-commerce applications, customers can still manually enter card numbers for payment.
 
 ### Supported flows
 

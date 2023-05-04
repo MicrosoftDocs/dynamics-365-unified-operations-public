@@ -52,9 +52,6 @@ Before you can create a location directive, you must follow these steps to make 
 
 ## <a name="scopes-feature"></a>Turn the Location directive scopes feature on or off
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.31 GA -->
-
 The *Location directive scopes* feature gives you more freedom when you design location directives and helps reduce redundant configurations. It adds a **Scopes** option, which replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values). For more information about these settings, see [Location directives FastTab](#location-directives-tab).
 
 When it's enabled, the **Scope** option supersedes the **Multiple SKU** option and is 100-percent compatible with existing configurations.
@@ -157,8 +154,6 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!IMPORTANT]
     > The other values in the **Work type** field aren't relevant for location directives. They appear only because the field isn't filtered to match the selected work order type.
 
-- **Site** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
-- **Warehouse** – This field is mandatory, because the location directive must be able to determine the site and warehouse that it's valid for.
 - **Directive code** – Select the directive code to associate with a work template or replenishment template. On the **Directive code** page, you can create new codes that can be used to connect work templates or replenishment templates to location directives. Directive codes can also be used to establish a link between any work template line and a location directive (such as the bay door or stage location).
 
     > [!TIP]
@@ -183,8 +178,10 @@ The fields on the **Location directives** FastTab are specific to the work order
     | All | Puts | All | No |
 
     > [!NOTE]
+    >
     > - To do puts for both multiple items and single items, you must ensure that location directives exist that cover both scenarios. For example, you might set up one or more *Single item or order* location directives to cover scenarios that require fine-tuning (such as through edits to the query), and then one or more *All* location directives to cover the remaining scenarios.
     > - Although *Single item* and *Multiple items* scopes can be used for puts, this approach typically leads to redundant configurations. Consider using *Single item or order* and *All* scopes instead, because this approach will produce a cleaner setup.
+    > - When using the *Single item or order* scope, receiving flows (like purchase orders) will add the order number to the location directive query during work creation. To prevent unexpected behavior, don't add query ranges for the lines in such cases.
 
 - **Multiple SKU** – Use this option to specify the scenario that the location directive will be applied to. This setting is replaced by the **Scope** setting if the *Location directive scopes* feature is turned on in your system. (For more information, see [Turn the Location directive scopes feature on or off](#scopes-feature).) Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 
@@ -214,6 +211,19 @@ The fields on the **Location directives** FastTab are specific to the work order
 
     > [!NOTE]
     > This field is available only for selected work order types where replenishment is permitted. For a complete list, see the [Fields that are specific to work order types](#fields-specific-types) section.
+
+## Warehouse selection FastTab
+
+Use the **Warehouse selection** FastTab to specify the warehouse and site where the location directive will apply.
+
+- **Warehouse selection**  – Select one of the following values:
+
+    - *All* – Use the location directive for all warehouses where a more specific location directive hasn't been assigned.
+    - *Warehouse group* – Use the location directive for all warehouses in the warehouse group that's selected in the **Warehouse group** field.
+    - *Warehouse* – Use the location directive only for the specific warehouse that's selected in the **Warehouse** field.
+
+- **Site** and **Warehouse** – If the **Warehouse selection** field is set to *Warehouse*, select the site and warehouse where the location directive applies. If you select the warehouse first, the site will be filled in automatically. If you select the site first, the warehouse list will be filtered so that it shows only warehouses at that site.
+- **Warehouse group** – If the **Warehouse selection** field is set to *Warehouse group*, select the warehouse group where the location directive applies. For more information about how to set up warehouse groups, see [Warehouse groups](warehouse-groups.md).
 
 ## Lines FastTab
 

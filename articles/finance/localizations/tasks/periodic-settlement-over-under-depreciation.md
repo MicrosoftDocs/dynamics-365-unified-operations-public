@@ -3,7 +3,7 @@ title: Periodic settlement of over and under depreciation
 description: Use this task to learn how to calculate and record depreciation expense for deductible expense.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

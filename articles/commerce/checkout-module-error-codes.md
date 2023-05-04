@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-09-20
 # Checkout module error reference codes
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the checkout module error codes that are shown in user-facing error messages in Microsoft Dynamics 365 Commerce.
 

@@ -158,7 +158,7 @@ Automated containerization creates containers and the picking work for shipments
 
 ## Work with the scheduled work creation
 
-When the *Schedule work creation* functionality is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. For more information, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
+When the *Schedule work creation* feature is enabled, wave processing will create planned work, which will eventually be used by the new work creation process. During work creation, the work will be blocked using the *Organization-wide work blocking* feature. For more information, see [Schedule work creation during wave](configure-wave-schedule-work-creation.md).
 
 The following flowchart shows how planned work is created during wave processing.
 
@@ -196,7 +196,7 @@ Use the **Wave batch job details** page to inspect the batch jobs and related ta
 
 ### Turn the Wave batch job details page on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 
@@ -214,7 +214,7 @@ You are then able to review the final status of each load line in the wave and c
 
 The way the system displays your wave processing status messages depends on how you have set the **Create wave processing history log** option on the **Warehouse management parameters** page.
 
-- When **Create wave processing history log** is set to *No*, the load line status messages are shown in the **Infolog**.
+- When **Create wave processing history log** is set to *No*, the load line status messages are shown in the Action center.
 - When **Create wave processing history log** is set to *Yes*, the load line status messages are shown on the **Wave processing history log** page. To view the log, go to **Warehouse management \> Outbound waves \> Wave processing history log**.
 
 ## Additional resources

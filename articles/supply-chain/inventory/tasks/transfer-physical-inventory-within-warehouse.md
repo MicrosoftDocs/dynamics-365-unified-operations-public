@@ -5,7 +5,7 @@ title: Transfer physical inventory within the warehouse
 description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. 
 author: yufeihuang
 ms.date: 08/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ This procedure walks you through the process of creating and posting an inventor
 
 
 ## Create an inventory transfer journal
-1. In the **Navigation pane**, go to **Inventory management > Journal entries > Items > Transfer**.
+1. Go to **Inventory management > Journal entries > Items > Transfer**.
 2. Click **New**.
 3. In the **Name** field, enter or select a value.
 4. Click **OK**. There is the option to specify 'From' and 'To' dimensions for each journal line. These are essential for this journal type. You can transfer items to locations using different rules. In this example we'll transfer an item within the same warehouse, from a license plate controlled location to a location that is not license plate controlled.   

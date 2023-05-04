@@ -2,7 +2,7 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This article explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: josaw1
-ms.date: 04/27/2022
+ms.date: 01/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -232,7 +232,7 @@ RetailSDK\SampleExtensions\RetailServer\Extensions.StoreHoursSample\StoreHoursCo
 
 ```csharp
 
-private async Task<Response> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
+private async Task<CommerceEntity> GetStoreDayHoursAsync(GetStoreHoursDataRequest request)
             {
                 ThrowIf.Null(request, "request");
 

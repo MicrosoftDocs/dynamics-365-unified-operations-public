@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Master planning home page
 description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
 author: t-benebo
-ms.date: 12/03/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
+ms.topic: home-page
+ms.date: 01/06/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Master planning home page
@@ -40,31 +25,21 @@ Master planning uses the information to calculate the requirements and generate 
 
 The three main planning processes are:
 
-- **Master planning** - The Master plan calculates net requirements. It is based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it is the *Net requirements plan*. For more information, see [Master plans overview](master-plans.md).
+- **Master planning** - The master plan calculates net requirements. It's based on actual current orders and enables companies to control inventory replenishment on a short-term, day-to-day basis. Another term to describe it's the *Net requirements plan*. For more information, see [Master plans overview](master-plans.md).
 
-- **Forecast planning** - The Forecast schedule calculates gross requirements. It is based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. For more information, see [Demand forecasting overview](introduction-demand-forecasting.md).
+- **Forecast planning** - The forecast schedule calculates gross requirements. It's based on future projections (or forecasts), and enables companies to conduct long-term planning of materials and capacity. For more information, see [Demand forecasting overview](introduction-demand-forecasting.md).
 
-- **Intercompany master planning** - The Intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, firm demand and supply but also for long-term, planned (that is not yet firmed) demand and supply. For more information, see [Intercompany planning](planning-optimization/Intercompany-planning.md).
+- **Intercompany master planning** - The intercompany master plan calculates net requirements across legal entities. It connects demand and supply between companies not only for short term, but also for long-term, planned (not yet firmed) demand and supply. For more information, see [Intercompany planning](planning-optimization/Intercompany-planning.md).
 
 Companies can change the output of the plan. They can run regenerative, net change, or both. Regenerative plans update all requirements, whereas, net change plans only update the plan on items with new requirements that have come in since the last scheduling run.
 
-Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The Master planning module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies this is extended to include the longest cumulative lead time among the products to be received.
+Master scheduling plans typically involve the short term, which can be anywhere from one week to six months. The Master planning module determines the supply (materials) and capacity (resources) needs that will meet current demand (the net requirements). In most companies, this is extended to include the longest cumulative lead time among the products to be received.
 
 ## Learning map
 
-The following learning map shows the major concepts and tasks that make up the framework of the Master planning module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
+The following learning map shows the major concepts and tasks that make up the framework of the Master planning module.
 
 [![Learning map for master planning.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
-
-## Quick links
-
-- [Master plans overview](master-plans.md)  
-- [Generate a constrained plan](./tasks/constrained-plan.md)
-- [Create a material plan for co-products](./tasks/create-material-plan-co-products.md)
-- [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
-- [Create an intercompany plan](./tasks/create-intercompany-plan.md)
-- [Demand forecasting overview](introduction-demand-forecasting.md)
-- [Forecast reduction keys](reduction-keys.md)
 
 ## Additional resources
 
@@ -77,18 +52,17 @@ Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see
 You can find opinions, news, and other information about Master planning and other solutions on the
 [Dynamics AX Manufacturing R&D Team blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
-### Task guides
-
-Additional help is available as task guides. To access task guides, click the **Help** button on any page.
-
 ### Webinars
 
 [Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### Tech conference recordings
 
+- [Planning Optimization service](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-supply-chain-management---planning-optimization-service-february-21-2020)
+- [Get started with Planning Optimization](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/get-started-with-planning-optimization-for-dynamics-365-supply-chain-management-march-1-2021)
+- [Demand forecasting series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/demand-forecasting-with-azure-machine-learning-series)
 - [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [MRP performance tuning](https://youtu.be/RLXybx20B5o)
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
