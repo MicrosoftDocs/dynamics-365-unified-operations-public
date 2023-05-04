@@ -32,6 +32,12 @@ Organizations looking to migrate environments and data from one geography to ano
 
 Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
+Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
+
+**Integration impact and updates with other services**
+- 3rd party integrations - if the migration crosses data resident geo then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
+- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
+
 **Timeline of actions and downtime**
 
 - We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
@@ -40,20 +46,19 @@ Make sure you review the [availability of features in the selected target geogra
 - Overall migration activity will require at least 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
 - If Dataverse environment is linked then it will need additional 24 hours of downtime.
 
+**Geo to geo migration between various geographies**
+
 When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. 
-Data resident geographies indicate both the LCS data and the environment data will be stored within the same discrete geography.
+
+**Data resident geographies** indicate both the LCS data and the environment data will be stored within the same discrete geography.
   - Migration between two data resident local geographies is supported (e.g. migration from US to UAE or from EU to Norway is supported)
   - Migrating from one data resident geo to another will change -environment URL/endpoint as mentioned here (e.g. migrating from US to UAE will change URL from <https://NAME.operations.dynamics.com/> to <https://NAME.operations.uae.dynamics.com/>) 
 
-**Integration impact and updates with other services**
-- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
-- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
-
-Non-data resident geographies indicate the LCS data and the environment data will be stored in different geographies.
+**Non-data resident geographies** indicate the LCS data and the environment data will be stored in different geographies.
   - Migration between two non-data resident geos is supported (e.g. migration from US to UK or US to Canada is supported)
   - Migrating between commercial non-data resident geos will not change environment URL (e.g. (e.g. Moving from US to UK will keep URL same as <https://NAME.operations.dynamics.com/>)
 
-## Environment migration process steps
+## Environment migration process
 
 We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
 
