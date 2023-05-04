@@ -79,54 +79,54 @@ while (ss.findNext(so))
 
 Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryObject in a fluent way.
 
- SysDaQueryObjectBuilder supports all four **JOIN** clauses:
+SysDaQueryObjectBuilder supports all four **JOIN** clauses:
 
- - INNER
- - OUTER
- - EXISTS
- - NOT EXISTS JOIN
+- INNER
+- OUTER
+- EXISTS
+- NOT EXISTS JOIN
 
- It supports all 5 aggregation functions: namely,
- - COUNT
- - SUM
- - AVG
- - MIN 
- - MAX
+It supports all 5 aggregation functions: namely,
+- COUNT
+- SUM
+- AVG
+- MIN 
+- MAX
 
- It supports WHERE clauses, and multiple WHERE clauses are ANDed.
+It supports WHERE clauses, and multiple WHERE clauses are ANDed.
 
- It supports all seven comparison expressions: namely,
+It supports all seven comparison expressions: namely,
 
- - ==
- - \<\>
- - \>
- - \>=
- - \<
- - \<=
- - LIKE
+- ==
+- \<\>
+- \>
+- \>=
+- \<
+- \<=
+- LIKE
 
- It supports ORDER BY clauses.
+It supports ORDER BY clauses.
 
- It supports GROUP BY clauses.
+It supports GROUP BY clauses.
 
- It supports all 16 hints:
+It supports all 16 hints:
 
- - firstOnly1
- - firstOnly10
- - firstOnly100
- - firstOnly1000
- - firstFast
- - reverse
- - forUpdate
- - noFetch
- - forceSelectOrder
- - forceNestedLoop
- - forceLiterals
- - forcePlaceholders
- - repeatableRead
- - optimisticLock
- - pessimisticLock
- - generateOnly
+- firstOnly1
+- firstOnly10
+- firstOnly100
+- firstOnly1000
+- firstFast
+- reverse
+- forUpdate
+- noFetch
+- forceSelectOrder
+- forceNestedLoop
+- forceLiterals
+- forcePlaceholders
+- repeatableRead
+- optimisticLock
+- pessimisticLock
+- generateOnly
 
 The following examples show two ways to build a SysDaQueryObject.
 
