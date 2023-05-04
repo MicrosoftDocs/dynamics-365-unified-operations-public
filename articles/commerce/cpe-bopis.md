@@ -4,7 +4,7 @@
 title: Configure BOPIS in a Dynamics 365 Commerce sandbox environment
 description: This article explains how to configure buy online, pick up in store (BOPIS) in a Microsoft Dynamics 365 Commerce sandbox environment after it has been provisioned.
 author: BrianShook
-ms.date: 06/14/2022
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ After your Commerce environment has been provisioned and configured end to end, 
 
 ### Configure Modern POS
 
-BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Modern POS for Windows and Android clients. If you're using Cloud POS or Modern POS for iOS, the point of sale (POS) client must be paired with a shared hardware station. This article explains how to configure BOPIS for Windows and Android clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
+BOPIS scenarios that involve a credit card payment require a hardware station. The hardware station is built into Store Commerce for Windows, Android, and iOS clients. If you're using Store Commerce for web, the point of sale (POS) client must be paired with a shared hardware station. This article explains how to configure BOPIS for Windows, Android, and iOS clients. For information about how to set up a shared hardware station, see [Configure and install Retail hardware station](./retail-hardware-station-configuration-installation.md).
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select register **SANFRAN-5**, and then select **Edit**.
@@ -50,42 +50,24 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 5. Select distribution schedule **1090**, and then, on the Action Pane, select **Run now**.
 6. Select **Yes** and then **OK** to initiate data synchronization. 
 
-### Install Modern POS
+### Install Store Commerce
 
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> Devices**.
-2. Select device **SANFRANCIS-5**.
-3. On the Action Pane, select **Download**, and then select **Configuration file**.
-4. Select **Download**, and then select **Retail Modern POS**. 
-5. When download of the **ModernPOSSetup.exe** file is completed, select **Open file**.
+For guidance on downloading and installing the Store Commerce app, see [Store Commerce app](dev-itpro/store-commerce.md) and [Store Commerce for mobile platforms](dev-itpro/store-commerce-mobile.md). 
 
-    ![Open file.](./dev-itpro/media/PAYMENTS/openfile.png)
+### Activate Store Commerce
 
-6. Select **Next** to go through the installation process. When installation is completed, select **Close**.
+For guidance on activating the Store Commerce app, see [Retail device activation](dev-itpro/retail-device-activation.md). 
 
-### Activate Modern POS
+### Enable BOPIS in Store Commerce
 
-1. On the Windows desktop, select the **Start** button, and enter **Retail Modern POS**.
-2. Select the **Retail Modern POS** application to initiate activation.
-3. Select **Next**. The **Server URL**, **Device ID**, and **Register number** fields should be preset by using information from the configuration file that you downloaded in the previous procedure.
-4. Select **Activate**.
-5. An authentication dialog box appears. Select the account that uses the email address that was previously associated with worker **000713 - Andrew Collette**.
+To enable BOPIS in Store Commerce, follow these steps.
 
-    > [!NOTE]
-    > If you haven't yet associated a worker with your identity, activation will be unsuccessful. In this case, follow the steps under the "Associate a worker with your identity" section in the [Configure a Dynamics 365 Commerce sandbox environment](cpe-post-provisioning.md#associate-a-worker-with-your-identity) article.
-    
-6. When you're prompted to let your organization manage the device, select **This app only**.
-7. When activation is completed, select **Get started**.
-
-### Enable BOPIS in Modern POS
-
-1. Sign in to Modern POS by using **000713** as the operator ID and **123** as the password.
-2. While the introductory walkthrough video is playing, select the two check boxes in the lower-left corner of the dialog box, and then close the dialog box.
-3. If you aren't prompted to close the shift, scroll to the right on the **Welcome** page, select **Close shift**, and then sign back in to the POS.
-4. After you're signed in, when you're prompted, select **Perform a non-drawer operation**.
+1. Sign in to Store Commerce by using **000713** as the operator ID and **123** as the password.
+2. When prompted, select **Perform a non-drawer operation**.
 5. On the **Welcome** page, scroll to the right, and select the **Select hardware station** operation.
 6. Select **Manage**, set the **Use hardware station** option to **On**, and then select **OK**.
 7. Sign out of the POS, and then sign back in.
-8. After you're signed in, select **Open a new shift**, and then select **Drawer**.
+8. After you're signed in, select **Open a new shift**.
 
 ## Complete a BOPIS scenario
 
@@ -105,7 +87,7 @@ BOPIS scenarios that involve a credit card payment require a hardware station. T
 
     - **Cardholder name:** Enter any name.
     - **Card number:** Enter **4111-1111-1111-1111**.
-    - **Expiration date:** Enter **10/20**.
+    - **Expiration date:** Enter **03/30**.
     - **Card verification value (CVV) code:** Enter **737**.
 
     > [!IMPORTANT]
@@ -133,14 +115,14 @@ For information about how to synchronize online orders, see [Posting of online s
 
 ### Online orders that are retrieved in the POS have a non-zero balance due
 
-When an order is retrieved for in-store pickup, if the balance due isn't 0 (zero), make sure that Modern POS is being used, and that the hardware station is active. If Cloud POS or Modern POS for iOS is being used, make sure that a shared hardware station is active. Some form of active hardware station is required to retrieve payments that were made online.
+When an order is retrieved for in-store pickup, if the balance due isn't 0 (zero), make sure that Store Commerce is being used, and that the hardware station is active. If you are using Store Commerce for web, make sure that a shared hardware station is active, because some form of active hardware station is required to retrieve payments that were made online.
 
 ### General issues with payment capture
 
-For all general issues, you should always consult the Modern POS or Internet Information Services (IIS) Hardware Station event logs as a first step. You can find these logs under the following nodes in the Windows event log:
+For all general issues, you should always consult the Store Commerce or Internet Information Services (IIS) Hardware Station event logs as a first step. You can find these logs under the following nodes in the Windows event log:
 
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-ModernPOS
-- Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-StoreCommerce**
+- **Application and Services Logs \> Microsoft \> Dynamics \> Commerce-Hardware Station**
 
 ## Additional resources
 
