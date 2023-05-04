@@ -11,12 +11,13 @@ ms.custom:
 ---
 ##  Geo to geo migration overview
 
-To support data residency, Microsoft Dynamics 365 finance and operations apps and LCS are generally available in specific geographies. Customers can migrate their workload from one geography to another. This article provides and overview of the process and the considerations.
+To support data residency, Microsoft Dynamics 365 finance and operations apps and Lifecycle Services (LCS) are generally available in specific geographies. Customers can migrate their workload from one geography to another. This article provides and overview of the process and the considerations.
 
 Moving between geographies involve two separate processes:
 
-1. [Lifecycle Services (LCS) project migration](../lifecycle-services/project-migration-manager.md) - this feature lets you move your Lifecycle Services project data from one geography to another geography that meets your requirements.
-2. [Finance and operations apps environment migration](environment-migration-process.md) - this feature lets you move your finance and operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
+- [Finance and operations apps environment migration](environment-migration-process.md) - this feature lets you move your finance and operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
+- [LCS project migration manager](../lifecycle-services/project-migration-manager.md) - this feature lets you move your Lifecycle Services project data from one geography to another geography that meets your requirements.
+ 
 
 Start planning the migration by assessing whether you want to migrate only environments, only LCS project or both.
 
@@ -46,10 +47,7 @@ Learn more at [Lifecycle Services (LCS) project migration](../lifecycle-services
 - Overall migration activity will require at least 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
 - If Dataverse environment is linked then it will need additional 24 hours of downtime.
 - Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
-
-**Integration impact and updates with other services**
 - 3rd party integrations - if the migration crosses data resident geo then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
-- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
 
 **Geo to geo migration between various geographies**
 
