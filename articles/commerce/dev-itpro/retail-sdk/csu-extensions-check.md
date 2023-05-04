@@ -16,17 +16,17 @@ ms.dyn365.ops.version: AX 10.0.30
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to use the Commerce Scale Unit extensions health check feature in Microsoft Dynamics 365 Commerce.
+This article explains how to use the Commerce Scale Unit (CSU) extensions health check feature in Microsoft Dynamics 365 Commerce.
 
-Developers building Commerce Scale Unit extensions can use the health check feature to run tests built into the framework and validate if their extensions meet current requirements.
+Developers building CSU extensions can use the health check feature to run tests built into the framework and validate if their extensions meet current requirements.
 
-The Commerce Scale Unit extensions health check feature can be accessed using the following URL format.
+The CSU extensions health check feature can be accessed using the following URL format.
 
 `https://[CommerceScaleUnitURL]/healthcheck?testname=extensions`
 
-Replace *CommerceScaleUnitURL* with the URL for your Commerce Scale Unit instance.
+Replace *CommerceScaleUnitURL* with the URL for your CSU instance.
 
-Commerce Scale Unit extension health check includes the following tests in two main categories.
+The CSU extension health check includes the following tests in two main categories.
 1. Assembly tests
     1. Target framework tests
     2. Unsupported dependencies test
@@ -121,6 +121,6 @@ The results output by the entity binding test is summarized in the table below. 
 | Test Status | Failed. |
 | Test Severity | Normal |
 
-If you're a developer building Commerce Scale Unit extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
+If you're a developer building CSU extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
