@@ -102,15 +102,25 @@ This section lists the supported operating systems for each Commerce self-servic
 
 #### Store Commerce
 
-- Windows 11, Windows 10 (Pro, Enterprise, LTSC, and IOT Enterprise editions) with the latest available updates are supported.
+- Store Commerce and Modern POS is supported on the following operating systems:
+
+    - Windows 11 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions.)
+    - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
+    - Windows Server 2022 (Standard, Essentials.) 
+    - Windows Server 2019 (Standard, Essentials) with the latest available updates.
 
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
+
+- We recommend that you don't use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
+- iOS support requires iOS version 11 or later.
+- Android support requires Android version 6.0 or later.
 - Windows Server 2019 is supported.
 - We don't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
 - iOS support requires iOS version 16 or later.
 - Android support requires Android version 7.0 or later.
+
 
 > [!NOTE]
 > If an offline database will be used, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.

@@ -757,7 +757,7 @@
           - name: Enable personalized recommendations
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
-            href: personalization-gdpr.md
+            href: opt-out-personalization.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
         - name: Enable "shop similar description" recommendations

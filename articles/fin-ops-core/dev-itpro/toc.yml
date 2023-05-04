@@ -15,7 +15,7 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for version 10.0.34 (May 2023)
+        - name: Platform updates for version 10.0.34 (June 2023)
           href: get-started/whats-new-platform-updates-10-0-34.md 
         - name: Platform updates for version 10.0.33 (April 2023)
           href: get-started/whats-new-platform-updates-10-0-33.md
@@ -663,6 +663,8 @@ items:
             href: dev-ref/application-explorer-aot-properties.md
           - name: SysSetupConfigAttribute attribute
             href: dev-tools/syssetupconfigattribute.md
+          - name: SysSetup
+            href: dev-tools/syssetup.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview

@@ -1977,6 +1977,8 @@
             href: master-planning/tasks/monitor-master-planning-run.md
           - name: Net requirements and pegging information with the deprecated planning engine
             href: master-planning/net-requirements-built-in-master-planning.md
+          - name: Safety stock fulfillment with the deprecated master planning engine
+            href: master-planning/safety-stock-replenishment-in-deprecated-engine.md
           - name: Create a material plan for co-products
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
@@ -3793,6 +3795,10 @@
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
+          - name: Print labels using an external service
+            href: warehousing/label-printing-using-external-label-service.md
+          - name: Print labels using the Loftware NiceLabel label service solution
+            href: warehousing/label-printing-using-nicelabel.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
         - name: Auto-update shipments
