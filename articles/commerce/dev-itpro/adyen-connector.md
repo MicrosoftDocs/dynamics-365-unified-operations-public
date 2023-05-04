@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 03/09/2023
+ms.date: 05/04/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -42,7 +42,7 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The below iteration values also represent the same iterations and Adyen firmware versions for Dynamics 365 Store Commerce.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
 
