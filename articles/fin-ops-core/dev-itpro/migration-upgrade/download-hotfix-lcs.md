@@ -130,7 +130,7 @@ To download X++ updates, follow these steps in LCS.
 
 ## Additional resources
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
-- [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
