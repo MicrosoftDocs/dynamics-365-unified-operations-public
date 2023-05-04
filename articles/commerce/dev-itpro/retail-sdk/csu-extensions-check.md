@@ -74,7 +74,7 @@ The results output by the unsupported dependencies test is summarized in the fol
 |--------|-------|
 | **Test Name** | **Unsupported dependencies (Commerce)** |
 | **Data** | **Count** - The number of referenced Commerce assemblies that aren't part of Commerce SDK.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled a comma-separated list of assembly names will be displayed.|
-| **Result Text** | - |
+| **Result Text** | N/A |
 | **Test Status** | **Failed** - Extensions or their dependencies are referencing Commerce assemblies that aren't a part of the Commerce SDK.|
 | **Test Severity** | **Normal** |
 
@@ -92,7 +92,7 @@ The results output by the extension types tests are summarized in the following 
 |--------|-------|
 | **Test Name** | Controllers (IController) - Checks for extensions implementing `IController`.<br/><br/>Obsolete extensions (ICommerceController) - Checks for extensions implementing `ICommerceController`.<br/><br/>**Obsolete extensions (IRequestHandler)** - Checks for extensions implementing `IRequestHandler`.<br/><br/>**Obsolete extensions (IRequestTrigger)** - Checks for extensions implementing `IRequestTrigger`.|
 | **Data** | **Count** - The number of exported types that implement the contract specified in the test name.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled a comma-separated list of assembly names will be displayed.|
-| **Result Text** | - |
+| **Result Text** | N/A |
 | **Test Status** | **Succeeded** - If no types are implementing any of the obsolete contracts. The test for `IController` always succeeds.<br/><br/>**Failed** - If one or more types are implementing any of the obsolete contracts.|
 | **Test Severity** | **Normal** |
 
@@ -106,7 +106,7 @@ The results output by the route prefix test is summarized in the following table
 |--------|-------|
 | **Test Name** | **Controllers (Invalid route prefix)** |
 | **Data** | **Count** - The number of controllers with an incorrect route prefix.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names will be displayed.|
-| **Result Text** | - |
+| **Result Text** | N/A |
 | **Test Status** | **Failed** |
 | **Test Severity** | **Normal** |
 
@@ -120,7 +120,7 @@ The results output by the entity binding test is summarized in the following tab
 |--------|-------|
 | **Test Name** | **Controllers (Invalid entity binding)** |
 | **Data** | **Count** - The number of controllers incorrectly bound to a Commerce entity.<br/><br/> Assembly names - If 'HealthCheck.Extensions.ShowAssemblyFiles' is enabled a comma-separated list of assembly names will be displayed.|
-| **Result Text** | - |
+| **Result Text** | N/A |
 | **Test Status** | **Failed** |
 | **Test Severity** | **Normal** |
 
