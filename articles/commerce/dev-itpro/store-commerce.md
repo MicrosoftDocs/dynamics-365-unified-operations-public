@@ -191,7 +191,7 @@ You can also use the **help** command in PowerShell to find information about al
 | --sqlservername &lt;SQL server name&gt; | Specify the name of the SQL Server instance that Store Commerce uses in offline mode. If this parameter is omitted, the installer will use the default instance. |
 | --trustsqlservercertificate | Trust the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
 | --usecommonapplicationdata                       | Use a common application data folder across all Windows users on this device. If this parameter is omitted, Store Commerce will only be installed for the current user. |
-| --useremoteappcontent | Download the Store Commerce app content from CPOS that is hosted in CSU. If this parameter is omitted, the local application content that is deployed with Store Commerce is used. |
+| --useremoteappcontent | Download and display the Store Commerce UI from the Commerce Scale Unit (CSU.) If this parameter is omitted, the local application content that is deployed with Store Commerce is used. See the **Hybrid deployment** section in this document for more information. |
 | --verbosity | Specify the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, defaults to 2. |
 | --version | Show information about the app version. |
 
