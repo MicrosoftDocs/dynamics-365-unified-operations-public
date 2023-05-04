@@ -71,7 +71,7 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.30 | 9.40.x |
 | 10.0.31 | 9.41.x |
 | 10.0.32 | 9.42.x |
-| 10.0.32 | 9.43.x |
+| 10.0.33 | 9.43.x |
 
 ## Pull updates
 
