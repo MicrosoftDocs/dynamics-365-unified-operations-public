@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: josaw1
-ms.date: 02/03/2023
+ms.date: 05/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -22,7 +22,7 @@ The Dynamics 365 Commerce Store Commerce app is the next generation offering for
 
 The Store Commerce app provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
 
-The Store Commerce app is a [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) shell application for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render Store Commerce for web. Although Store Commerce for web can only run in a web browser, Store Commerce can run as a native Windows application like [MPOS](retail-modern-pos-architecture.md) does, providing the benefits of both the the Store Commerce app and Store Commerce for web.
+The Store Commerce app is a [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) shell application for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render Store Commerce for web. Although Store Commerce for web can only run in a web browser, Store Commerce can run as a native Windows application like [MPOS](retail-modern-pos-architecture.md) does, providing the benefits of both the Store Commerce app and Store Commerce for web.
 
 Store Commerce supports local hardware station and offline usage, and can be directly integrated with a payment terminal, printer, and cash drawer. It can use hardware devices without requiring that a shared hardware station be set up.
 
@@ -83,7 +83,7 @@ Store Commerce has full functional parity with MPOS. For more information about 
 
 ## Hardware parity between MPOS and Store Commerce
 
-The Store Commerce app does not support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started.md). If you are currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you will need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, refer to the [Commerce peripherals](../retail-peripherals-overview.md) article.
+The Store Commerce app doesn't support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started). If you're currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you'll need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, refer to the [Commerce peripherals](../retail-peripherals-overview.md) article.
 
 For guidance on migrating from MPOS to Store Commerce, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md).
 
@@ -128,7 +128,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
+<td>Yes, but doesn't support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -152,7 +152,8 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- The .NET Framework version 4.7.2 or later. See [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)
+- The .NET Framework version 4.7.2 or later is required for embedded Hardware Station components. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
+- The .NET Desktop Runtime 6.0.16 or later. Is used by Store Commerce App for UI rendering. 
 
 ### Device setup in Commerce headquarters
 
@@ -216,9 +217,10 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 
 ## Known issues with the Microsoft Edge WebView2 control
 
-+ During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
++ During activation, when prompted for entering the Azure AD password with multiple options, choose password. The other options might not work.
 
-## Additional Resources
+## Additional resources
+
 [Store Commerce app capabilities](../store-commerce-capabilities.md)
 
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
