@@ -43,7 +43,7 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 4. Select the **region** where you want this environment to be deployed. 
 
 > [!NOTE]
-> In May 2023 a change was introduced in the selection of available Azure Regions for finance and operations apps. For more information around what regions are available and what you need to consider when making a selection see the [Dynamics 365 finance and operations apps in local geographies](deployment-options-geo.md).
+> In May 2023 a change was introduced in the selection of available Azure Regions for finance and operations apps. For more information around what regions are available and what you need to consider when making a selection see [Dynamics 365 finance and operations apps in local geographies](deployment-options-geo.md).
 
 6. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
 7. Select the **BPM library** that will be set as the Getting started library in the product.
