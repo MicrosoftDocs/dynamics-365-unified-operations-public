@@ -66,3 +66,9 @@ The following setup is required in the Dynamics 365 Finance before you can insta
     3. In **General ledger**, confirm that **Budget** and **Reversing entries** are enabled. If they aren't, select the checkboxes.
 
 3. When you've finished, disable maintenance mode.
+
+## Required configurations in Power Platform Admin Center
+
+1. In the Power Platform Admin Center, select Dynamics 365 installed apps under Resources. 
+2. Find the **Finance and Operations Virtual Entity** app and check the status to see if there are any updates available. 
+3. If an update is available, update the application. (Only required if installing BPA app on existing environments)
