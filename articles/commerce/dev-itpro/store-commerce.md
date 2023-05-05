@@ -34,7 +34,7 @@ The Store Commerce app is also available for the Android and iOS platforms. For 
 ## Benefits of Store Commerce
 
 - Application lifecycle management is simplified.
-- Extension or independent software vendor (ISV) code that is developed for the Store Commerce app or Store Commerce for web by using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes.
+- Extension or independent software vendor (ISV) code developed for the Store Commerce app or Store Commerce for web using the Commerce software development kit (SDK) can be reused in Store Commerce with minimal changes.
 - The industry-standard developer experience uses Microsoft Visual Studio Code and GitHub.
 - Store Commerce provides the benefits of both MPOS and Store Commerce for web.
 - Performance is significantly improved.
