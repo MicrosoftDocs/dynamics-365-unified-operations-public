@@ -63,7 +63,7 @@ There are no separate installers for the hybrid and in-app topologies. The deplo
 
 For the in-app deployment option, the application content is locally deployed. Store Commerce then renders the application content from its local deployment. It doesn't retrieve the Cloud POS UI hosted in the Commerce Scale Unit (CSU).
 
-To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
+To update the application content, run the latest version of the Store Commerce installer. The application content isn't updated if you update the CSU, so you can manage the updates at individual registers.
 
 In-app deployment supports offline mode. During installation, pass the **--installoffline** parameter to deploy the offline database. In offline mode, the application isn't able to connect to CSU or Commerce headquarters, and uses the locally deployed CRT.
 
@@ -76,7 +76,7 @@ Store Commerce is a shell that connects to Headless Commerce and Commerce headqu
 
 ![Active Store Commerce dialog box prompting for the Cloud POS URL.](../media/SC-Hybrid.png)
 
-To update Store Commerce, just update the CSU. Store Commerce will then update automatically. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
+To update Store Commerce, update the CSU to update Store Commerce automatically. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 ## Store Commerce and MPOS parity
 
