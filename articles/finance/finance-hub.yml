@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
-title: Microsoft Dynamics 365 Finance # < 60 chars
-summary: Dynamics 365 Finance is an enterprise business solution that can help you monitor global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+title: Microsoft Dynamics 365 Finance documentation # < 60 chars
+summary: Learn how Dynamics 365 Finance can help you monitor global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -40,7 +40,7 @@ additionalContent:
   sections:
   - title: Implement Finance
     items:
-    - title: Try or Buy
+    - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Try Dynamics 365 Finance
