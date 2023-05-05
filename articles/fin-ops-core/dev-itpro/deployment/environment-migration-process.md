@@ -24,7 +24,7 @@ When finance and operations apps environment is deployed in a geo, there are mul
 Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
 
 **Supported environments**
-- Only Sandbox and Production environments can be migrated from one geo to another. 
+- Sandbox and Production environments can be migrated from one geo to another. 
 - Cloud Hosted Environment (CHE) migration is not supported.
 - Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
 
@@ -48,15 +48,9 @@ Commerce isn't available in all target geographies. If you have Commerce compone
 
 **Geo to geo migration between various geographies**
 
-When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. 
+When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with LCS. 
 
-**Data resident geographies** indicate both the LCS data and the environment data will be stored within the same discrete geography.
-  - Migration between two data resident local geographies is supported (e.g. migration from US to UAE or from EU to Norway is supported)
-  - Migrating from one data resident geo to another will change -environment URL/endpoint as mentioned here (e.g. migrating from US to UAE will change URL from <https://NAME.operations.dynamics.com/> to <https://NAME.operations.uae.dynamics.com/>) 
-
-**Non-data resident geographies** indicate the LCS data and the environment data will be stored in different geographies.
-  - Migration between two non-data resident geos is supported (e.g. migration from US to UK or US to Canada is supported)
-  - Migrating between commercial non-data resident geos will not change environment URL (e.g. (e.g. Moving from US to UK will keep URL same as <https://NAME.operations.dynamics.com/>)
+Some supported geographies will have different endpoint URLs. When moving between geographies, this can change the environment endpoint. Example, moving from United States to Europe will change the environment endpoint (from NAME.operations.dynamics.com to NAME.operations.eu.dynamics.com). The change of the environment endpoint will impact any integrated service that takes a dependency on the correct endpoint URL. Consider the [list of avaialble geographies and endpoints](deployment-options-geo.md) to see what geograhpies change the URL. 
 
 ## Environment migration process
 
