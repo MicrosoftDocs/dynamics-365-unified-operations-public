@@ -2,7 +2,7 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 04/26/2023
+ms.date: 05/03/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -32,8 +32,9 @@ The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MP
 | Offline | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
 | Local or Dedicated HWS support | Yes | Yes |
 | Device setup in Dynamics 365 Commerce headquarters | On the **Devices** page in Commerce headquarters, use the application as Store Commerce. | On the **Devices** page in Commerce headquarters, use the application as Retail Modern POS. |
-| Device activation | Required | Required |
 | Installer | Download from the [Shared asset library in Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. | Download from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Modern POS (SEALED)**. |
+| Installation context | User or machine | User |
+| Device activation | Not required when upgrading from MPOS. | Required |
 | Extensions | [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) | [Retail SDK](../retail-sdk/retail-sdk-overview.md) for non-sealed MPOS and [Commerce SDK](https://github.com/microsoft/Dynamics365Commerce.InStore) for sealed MPOS |
 
 ## Migrate to the Store Commerce app from MPOS
@@ -50,6 +51,8 @@ The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MP
 
 1. After the app is installed, open it from the **Start** menu in Windows, and activate it. For information about how to activate the app, see [Point of sale (POS) device activation](../retail-device-activation.md).
 1. After the app is activated, sign in to it by using your employee credentials.
+
+You can perform silent installation and servicing updates for the Store Commerce app. For more information, see [Mass deployment of sealed Commerce self-service installers](../enhanced-mass-deployment.md).  
 
 ## Migrate extensions
 

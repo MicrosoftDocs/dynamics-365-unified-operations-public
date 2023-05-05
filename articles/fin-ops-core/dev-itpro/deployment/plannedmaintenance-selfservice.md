@@ -42,11 +42,11 @@ A planned maintenance window is typically during the dark hours of the geographi
 |India	|18:30 UTC|Friday, Saturday|Six hours|
 |Japan	|16:00 UTC|Friday, Saturday|Six hours|
 |Norway	|22:00 UTC|Friday, Saturday|Six hours|
-|South Africa	|22:00 UTC|Friday, Saturday|6 hours|
-|Switzerland	|22:00 UTC|Friday, Saturday|6 hours|
-|United Arab Emirates	|18:00 UTC|Friday, Saturday|6 hours|
-|United Kingdom	|22:00 UTC|Friday, Saturday|6 hours|
-|United States	|04:00 UTC |Saturday, Sunday|6 hours|
+|South Africa	|22:00 UTC|Friday, Saturday|Six hours|
+|Switzerland	|22:00 UTC|Friday, Saturday|Six hours|
+|United Arab Emirates	|18:00 UTC|Friday, Saturday|Six hours|
+|United Kingdom	|22:00 UTC|Friday, Saturday|Six hours|
+|United States	|04:00 UTC |Saturday, Sunday|Six hours|
 
 ## What is the schedule for proactive quality updates?
 
