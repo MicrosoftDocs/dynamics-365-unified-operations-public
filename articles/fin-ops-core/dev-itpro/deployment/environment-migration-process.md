@@ -23,8 +23,9 @@ When finance and operations apps environment is deployed in a geo, there are mul
 ## Considerations before starting the migration
 Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
 
-**Supported environments**
-- Sandbox and Production environments can be migrated from one geo to another. 
+**Supported scenarios**
+
+- Sandbox and Production environments can be migrated between geographies. 
 - Cloud Hosted Environment (CHE) migration is not supported.
 - Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
 
@@ -32,10 +33,11 @@ Organizations looking to migrate environments and data from one geography to ano
 
 Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
-Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
+Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to a geography where Commerce isn't available.
 
 **Integration impact and updates with other services**
-- 3rd party integrations - if the migration crosses data resident geo then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
+
+- 3rd-party integrations: If the [migration crosses data resident geos](#geo-migration-between-lifecycle-services-endpoints) then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
 - Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
 
 **Timeline of actions and downtime**
@@ -46,9 +48,9 @@ Commerce isn't available in all target geographies. If you have Commerce compone
 - Overall migration activity will require up to 48 hours of downtime. Overall time will vary depending on connectivity between two geos along with database and storage account size.
 - If Dataverse environment is linked then it will need additional 24 hours of downtime.
 
-**Geo to geo migration between various geographies**
+**Geo migration between Lifecycle Services endpoints**
 
-When deploying environments from LCS the available regions listed will display if the target region is Data resident or not. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with LCS. 
+When deploying environments from LCS the available regions listed will display if the target region is "Data resident" or not. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with LCS. 
 
 Some supported geographies will have different endpoint URLs. When moving between geographies, this can change the environment endpoint. Example, moving from United States to Europe will change the environment endpoint (from NAME.operations.dynamics.com to NAME.operations.eu.dynamics.com). The change of the environment endpoint will impact any integrated service that takes a dependency on the correct endpoint URL. Consider the [list of avaialble geographies and endpoints](deployment-options-geo.md) to see what geograhpies change the URL. 
 
@@ -58,13 +60,13 @@ We recommend that you migrate Sandbox environments first and validate them befor
 
 After Sandbox migration validation is successfully complete project team can plan the time for Production environment migration and follow same steps described above starting with raising the Support ticket. 
 
-| Step | Responsible party | Description | Additional comments |
-|---|---|---|---|
-|1|Customer/Partner|Refresh Sandbox with Production data|Optional step before Sandbox migration.|
+| Step | Responsible | Description | Additional comments |
+|------|-------------|-------------|---------------------|
+|1|Customer/Partner|Refresh Sandbox with Production data|Optional step if migrating Sandbox|
 |2|Customer/Partner|Submit support request to migrate a specific environment|Create your support request for migration at least 10 days before you want the environment to be migrated. Information required in ticket is: Customer name, Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.|
 |3|Microsoft|Review the geo-to-geo migration request and approve it||
 |4|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
 |5|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. **Premigration** work begins 12 hours before the scheduled downtime. During premigration the environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. During the **migration** finance and operations apps and Dataverse environments ar unlinked, both environments are migrated and relinked after migration is complete.|
 |6|Microsoft|Confirm completion of the migration to customer/partner||
 |7|Customer/Partner|Validate functionality in the migrated environment in the target geo||
-|8|Customer/Partner|Reconfigure any add-ins, Commerce/ POS, 3rd party integrations etc)||
+|8|Customer/Partner|Reconfigure any add-ins, Commerce/POS, 3rd-party integrations, etc||
