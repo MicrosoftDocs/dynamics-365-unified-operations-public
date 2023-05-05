@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft Dynamics 365 Finance documentation # < 60 chars
-summary: Learn how Dynamics 365 Finance can help you monitor global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+summary: Learn how Dynamics 365 Finance can help monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/10/2023 #Required; mm/dd/yyyy format.
+  ms.date: 05/05/2023 #Required; mm/dd/yyyy format.
   hide_bc: true
 
 # highlightedContent section (optional)
