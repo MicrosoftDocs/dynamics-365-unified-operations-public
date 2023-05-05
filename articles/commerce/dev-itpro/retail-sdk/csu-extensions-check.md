@@ -18,35 +18,36 @@ ms.dyn365.ops.version: AX 10.0.30
 
 This article explains how to use the Commerce Scale Unit (CSU) extensions health check feature in Microsoft Dynamics 365 Commerce.
 
-Developers building CSU extensions can use the Commerce health check feature to run tests built into the framework and validate if their extensions meet current requirements.
+Developers who build CSU extensions can use the Commerce health check feature to run tests that are built into the framework and validate that their extensions meet current requirements.
 
-The CSU extensions health check feature can be accessed using the following URL format.
+The CSU extensions health check feature can be accessed by using the following URL format. Replace *CommerceScaleUnitURL* with the URL of your CSU instance.
 
 `https://<CommerceScaleUnitURL>/healthcheck?testname=extensions`
 
-Replace *CommerceScaleUnitURL* with the URL for your CSU instance.
+The CSU extensions health check includes the following tests in two main categories:
 
-The CSU extension health check includes the following tests in two main categories.
+- **Assembly tests:**
 
-- Assembly tests:
     - Target framework tests
     - Unsupported dependencies test
-- Extension export tests:
+
+- **Extension export tests:**
+
     - Extension types tests
     - Route prefix test
     - Entity binding test
 
-Details on the categories and the tests they include are described in the following sections.
+The rest of this article provides details about these categories and the tests that they include.
 
 ## Assembly tests
 
-Assembly tests validate assemblies in an extension to ensure they meet current requirements. The top-level assemblies of an extension are validated first. Next, all dependent assemblies are validated recursively until the entire dependency tree is traversed. Finally, all unused assemblies in the extension folders are validated. Assembly tests don't validate **System** and **Microsoft.Dynamics** assemblies.
+Assembly tests validate assemblies in an extension to ensure that they meet current requirements. The top-level assemblies of an extension are validated first. Next, all dependent assemblies are validated recursively, until the whole dependency tree is traversed. Finally, all unused assemblies in the extension folders are validated. Assembly tests don't validate **System** and **Microsoft.Dynamics** assemblies.
 
-To preserve security by default, the tests don't display assembly names in the results. If needed, you can have tests display assembly names in the results by implementing the following app setting.
+By default, the tests don't show assembly names in the results, to help preserve security. If you require that tests show assembly names in the results, you can implement the following app setting.
 
 ``` xml
 <appSettings>
-  <add key="HealthCheck.Extensions.ShowAssemblyFiles" value="true" />
+    <add key="HealthCheck.Extensions.ShowAssemblyFiles" value="true" />
 </appSettings>
 ```
 
@@ -54,76 +55,76 @@ To preserve security by default, the tests don't display assembly names in the r
 
 Target framework tests validate the target framework of the assemblies to ensure that it's supported.
 
-The results output by the target framework tests is summarized in the following table.
+The following table summarizes the results that are the output of the target framework tests.
 
 | Column | Value |
 |--------|-------|
-| **Test Name** | **Target framework (extensions)** - This test validates the top-level extension assemblies.<br/><br/>**Target framework (dependencies)** - This test validates assemblies that the extension depends on, both direct and indirect.<br/><br/>**Target framework (others)** - This test validates all unused assemblies located in the extension folders. |
-| **Data** | **Count** - The number of assemblies with the same target framework (as specified by the target framework name in the **Result Text** column).<br/><br/> **Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is displayed. |
-| **Result Text** | **Target framework name** - The name of the target framework of the validated assemblies.<br/><br/>**Not specified** - The assembly isn't marked with `TargetFrameworkAttribute` or the value is empty.<br/><br/>**Assembly not found** - The assembly file wasn't found.<br/><br/>**Failed to load assembly** - The assembly failed to load, possibly due to incompatibility. |
-| **Test Status** | **Succeeded** - The target framework is supported.<br/><br/>**Failed** - The target framework isn't supported or couldn't be retrieved. |
-| **Test Severity** | **Normal** |
+| Test Name | <p>**Target framework (extensions)** – This test validates the top-level extension assemblies.</p><p>**Target framework (dependencies)** – This test validates assemblies that the extension depends on, both directly and indirectly.</p><p>**Target framework (others)** – This test validates all unused assemblies in the extension folders.</p> |
+| Data | <p>**Count** – The number of assemblies that have the same target framework (as specified by the target framework name in the **Result Text** column).</p><p> **Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Result Text | <p>**Target framework name** – The name of the target framework of the validated assemblies.</p><p>**Not specified** – The assembly isn't marked with `TargetFrameworkAttribute`, or the value is blank.</p><p>**Assembly not found** – The assembly file wasn't found.</p><p>**Failed to load assembly** – The assembly failed to load, possibly because of incompatibility.</p> |
+| Test Status | <p>**Succeeded** – The target framework is supported.</p><p>**Failed** – The target framework isn't supported or couldn't be retrieved.</p> |
+| Test Severity | **Normal** |
 
 ### Unsupported dependencies test
 
-The unsupported dependencies test checks if the assemblies in an extension or their dependencies are referencing Commerce assemblies that aren't a part of the Commerce SDK.
+The unsupported dependencies test validates whether the assemblies in an extension or their dependencies reference Commerce assemblies that aren't part of the Commerce software development kit (SDK).
 
-The results output by the unsupported dependencies test is summarized in the following table. Results are only displayed if the test fails.
+The following table summarizes the results that are the output of the unsupported dependencies test. Results are shown only if the test fails.
 
 | Column | Value |
 |--------|-------|
-| **Test Name** | **Unsupported dependencies (Commerce)** |
-| **Data** | **Count** - The number of referenced Commerce assemblies that aren't part of Commerce SDK.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is displayed.|
-| **Result Text** | N/A |
-| **Test Status** | **Failed** - Extensions or their dependencies are referencing Commerce assemblies that aren't a part of the Commerce SDK.|
-| **Test Severity** | **Normal** |
+| Test Name | **Unsupported dependencies (Commerce)** |
+| Data | <p>**Count** – The number of referenced Commerce assemblies that aren't part of the Commerce SDK.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Result Text | Not applicable |
+| Test Status | **Failed** – Extensions or their dependencies reference Commerce assemblies that aren't part of the Commerce SDK. |
+| Test Severity | **Normal** |
 
 ## Extension export tests
 
-Extension export tests validate types exported by extension assemblies.
+Extension export tests validate types that are exported by extension assemblies.
 
 ### Extension types tests
 
-Extension types tests validate exported types to ensure they aren't implementing obsolete contracts.
+Extension types tests validate exported types to ensure that they don't implement obsolete contracts.
 
-The results output by the extension types tests are summarized in the following table. Results always include tests for the four different types of contracts.
+The following table summarizes the results that are the output of the extension types tests. Results always include tests for the four different types of contracts.
 
 | Column | Value |
 |--------|-------|
-| **Test Name** | Controllers (IController) - Checks for extensions implementing `IController`.<br/><br/>Obsolete extensions (ICommerceController) - Checks for extensions implementing `ICommerceController`.<br/><br/>**Obsolete extensions (IRequestHandler)** - Checks for extensions implementing `IRequestHandler`.<br/><br/>**Obsolete extensions (IRequestTrigger)** - Checks for extensions implementing `IRequestTrigger`.|
-| **Data** | **Count** - The number of exported types that implement the contract specified in the test name.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is displayed.|
-| **Result Text** | N/A |
-| **Test Status** | **Succeeded** - If no types are implementing any of the obsolete contracts. The test for `IController` always succeeds.<br/><br/>**Failed** - If one or more types are implementing any of the obsolete contracts.|
-| **Test Severity** | **Normal** |
+| Test Name | <p>**Controllers (IController)** – This test checks for extensions that implement `IController`.</p><p>**Obsolete extensions (ICommerceController)** – This test checks for extensions that implement `ICommerceController`.</p><p>**Obsolete extensions (IRequestHandler)** – This test checks for extensions that implement `IRequestHandler`.</p><p>**Obsolete extensions (IRequestTrigger)** – This test checks for extensions that implement `IRequestTrigger`.</p> |
+| Data | <p>**Count** – The number of exported types that implement the contract that's specified in the test name.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Result Text | Not applicable |
+| Test Status | <p>**Succeeded** – No types implement any of the obsolete contracts. The test for `IController` always succeeds.</p><p>**Failed** – One or more types implement any of the obsolete contracts.</p> |
+| Test Severity | **Normal** |
 
 ### Route prefix test
 
-The route prefix test validates if an extension is using one of the reserved route prefixes via the `RoutePrefix` attribute. If extensions use one of the reserved route prefixes, it may cause Retail Server to work incorrectly.
+The route prefix test validates whether an extension uses one of the reserved route prefixes via the `RoutePrefix` attribute. Extensions that use a reserved route prefix might cause Retail Server to work incorrectly.
 
-The results output by the route prefix test is summarized in the following table. Results are only displayed if the test fails.
+The following table summarizes the results that are the output of the route prefix test. Results are shown only if the test fails.
 
 | Column | Value |
 |--------|-------|
-| **Test Name** | **Controllers (Invalid route prefix)** |
-| **Data** | **Count** - The number of controllers with an incorrect route prefix.<br/><br/>**Assembly names** - If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is displayed.|
-| **Result Text** | N/A |
-| **Test Status** | **Failed** |
-| **Test Severity** | **Normal** |
+| Test Name | **Controllers (Invalid route prefix)** |
+| Data | <p>**Count** – The number of controllers that have an incorrect route prefix.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Result Text | Not applicable |
+| Test Status | **Failed** |
+| Test Severity | **Normal** |
 
 ### Entity binding test
 
-The entity binding test validates if an extension is bound to a Commerce entity via the `BindEntity` attribute. If extensions are bound to one of the Commerce entities, it may cause Retail Server to work incorrectly.
+The entity binding test validates whether an extension is bound to a Commerce entity via the `BindEntity` attribute. Extensions that are bound to a Commerce entity might cause Retail Server to work incorrectly.
 
-The results output by the entity binding test is summarized in the following table. Results are only displayed if the test fails.
+The following table summarizes the results that are the output of the entity binding test. Results are shown only if the test fails.
 
 | Column | Value |
 |--------|-------|
-| **Test Name** | **Controllers (Invalid entity binding)** |
-| **Data** | **Count** - The number of controllers incorrectly bound to a Commerce entity.<br/><br/> Assembly names - If 'HealthCheck.Extensions.ShowAssemblyFiles' is enabled, a comma-separated list of assembly names is displayed.|
-| **Result Text** | N/A |
-| **Test Status** | **Failed** |
-| **Test Severity** | **Normal** |
+| Test Name | **Controllers (Invalid entity binding)** |
+| Data | <p>**Count** – The number of controllers that are incorrectly bound to a Commerce entity.</p><p>**Assembly names** – If `HealthCheck.Extensions.ShowAssemblyFiles` is enabled, a comma-separated list of assembly names is shown.</p> |
+| Result Text | Not applicable |
+| Test Status | **Failed** |
+| Test Severity | **Normal** |
 
-If you're a developer building CSU extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
+If you're a developer who builds CSU extensions, you must use the health check feature to run the built-in validation tests and ensure that your extensions are compliant with current requirements.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
