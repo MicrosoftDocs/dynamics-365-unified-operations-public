@@ -19,13 +19,13 @@ ms.search.validFrom: 2022-03-01
 
 This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
 
-The Dynamics 365 Commerce Store Commerce app is the next generation offering for physical stores. It unifies Modern point of sale (MPOS) and Cloud point of sale (CPOS) (referred to hereafter as Store Commerce for web) into a single application, providing deployment choices to retailers, helping improve performance, and offering superior application lifecycle management (ALM) while retaining all the functionality of MPOS and Store Commerce for web, including extensibility.
+The Dynamics 365 Commerce Store Commerce app is the next generation offering for physical stores. It unifies Modern point of sale (MPOS) and Cloud point of sale (CPOS) (hereafter referred to as *Store Commerce for web*) into a single application, providing deployment choices to retailers, helping improve performance, and offering superior application lifecycle management (ALM) while retaining all the functionality of MPOS and Store Commerce for web, including extensibility.
 
-The Store Commerce app provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such cash-and-carry transactions, cash/shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing/fulfillment, inventory management, and reporting.
+The Store Commerce app provides rich commerce functionality for first-line workers such as cashiers, sales associates, inventory associates, stock clerks, and store managers. It lets these workers perform commerce operations such as cash-and-carry transactions, cash and shift management, customer engagement, assisted selling, clienteling, endless aisle, order processing and fulfillment, inventory management, and reporting.
 
 The Store Commerce app is a [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/?view=netdesktop-6.0&preserve-view=true) shell application for Windows that uses the [Microsoft Edge WebView2](/microsoft-edge/webview2/) control to render Store Commerce for web. Although Store Commerce for web can only run in a web browser, Store Commerce can run as a native Windows application like [MPOS](retail-modern-pos-architecture.md) does, providing the benefits of both the Store Commerce app and Store Commerce for web.
 
-Store Commerce supports local hardware station and offline usage, and can be directly integrated with a payment terminal, printer, and cash drawer. It can use hardware devices without requiring that a shared hardware station be set up.
+Store Commerce supports local hardware station and offline usage, and can be directly integrated with a payment terminal, printer, and cash drawer. It can use hardware devices without requiring you to set up a shared hardware station.
 
 To render the user interface (UI), Store Commerce uses the Chromium engine instead of the Universal Windows Platform (UWP) app rendering framework. The Chromium engine has better rendering performance than the native JavaScript UWP app in Windows. The main difference between MPOS and Store Commerce is that Store Commerce uses the Chromium engine to render the app.
 
@@ -65,18 +65,18 @@ For the in-app deployment option, the application content is locally deployed. S
 
 To update the application content, run the latest version of the Store Commerce installer. The application content won't be updated if you update the CSU. Therefore, you can manage the updates at individual registers.
 
-In-app deployment supports offline mode. During installation, pass the **--installoffline** parameter to deploy the offline database. In offline mode, the application won't be able to connect to CSU or Commerce headquarters, and will use the locally deployed CRT.
+In-app deployment supports offline mode. During installation, pass the **--installoffline** parameter to deploy the offline database. In offline mode, the application isn't able to connect to CSU or Commerce headquarters, and uses the locally deployed CRT.
 
 > [!NOTE]
 > During the installation of Store Commerce, users can pass parameters to select either the hybrid option or the in-app option. The default option is in-app deployment.
 
 ### Hybrid deployment
 
-Store Commerce is a shell that connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce renders the Cloud POS UI that is hosted in the CSU. When the Store Commerce app is opened, it will prompt for the Cloud POS URL.
+Store Commerce is a shell that connects to Headless Commerce and Commerce headquarters by using CSU in online mode. In hybrid mode, Store Commerce renders the Cloud POS UI that is hosted in the CSU. When the Store Commerce app is opened, it prompts for the Cloud POS URL.
 
 ![Active Store Commerce dialog box prompting for the Cloud POS URL.](../media/SC-Hybrid.png)
 
-To update Store Commerce, just update the CSU. Store Commerce will then automatically receive the update. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
+To update Store Commerce, just update the CSU. Store Commerce will then update automatically. Because updates are centrally managed in CSU, they don't have to be managed at individual registers. The Store Commerce application shell must still be updated separately by using the installer. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md). 
 
 ## Store Commerce and MPOS parity
 
@@ -84,7 +84,7 @@ Store Commerce has full functional parity with MPOS. For more information about 
 
 ## Hardware parity between MPOS and Store Commerce
 
-The Store Commerce app doesn't support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started). If you're currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you'll need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, see [Commerce peripherals](../retail-peripherals-overview.md).
+The Store Commerce app doesn't support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started). If you're currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you must install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, see [Commerce peripherals](../retail-peripherals-overview.md).
 
 For guidance on migrating from MPOS to Store Commerce, see [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md).
 
@@ -177,16 +177,16 @@ You can also use the **help** command in PowerShell to find information about al
 
 | Parameter | Description |
 |---|---|
-| --config \<path to config file\> | Specifies the path of the configuration file that will be used as part of the installation. |
-| --device \<device identifier\> | Specifies the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user will be prompted to input the device identifier during device activation. |
-| --disableaadauthentication | Disables the usage of AAD authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
-| --enablewebviewdevtools | Enables developer tools for Store Commerce. If this parameter is omitted, developer tools will be enabled only if Windows Developer Mode is enabled. |
+| --config \<path to config file\> | Specifies the path of the configuration file used as part of the installation. |
+| --device \<device identifier\> | Specifies the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user is prompted to input the device identifier during device activation. |
+| --disableaadauthentication | Disables the usage of Azure Active Directory (Azure AD) authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
+| --enablewebviewdevtools | Enables developer tools for Store Commerce. If this parameter is omitted, developer tools are only enabled if Windows Developer Mode is enabled. |
 | --help | Shows parameter information. |
 | --inplaceupgradefrommodernpos | Executes an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
-| --installoffline | Deploys the offline database. If you are upgrading from Modern POS, you can update the existing offline database by passing the SQL instance in the `--sqlservername` parameter. |
+| --installoffline | Deploys the offline database. If you're upgrading from Modern POS, you can update the existing offline database by passing the SQL instance in the `--sqlservername` parameter. |
 | --logdirectorypath \<path to log directory\> | Specifies the path of the logs directory. |
-| --register \<register number\> | Specifies the register number to be used for Store Commerce application as a default value. If not specified, the user will be prompted to input the register number during device activation. |
-| --retailserverurl \<Retail Server URL\> | Specifies the Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
+| --register \<register number\> | Specifies the register number to be used for Store Commerce application as a default value. If not specified, the user is prompted to input the register number during device activation. |
+| --retailserverurl \<Retail Server URL\> | Specifies the Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user is prompted to enter the Retail Server URL during device activation. |
 | --skipdotnetversioncheck | Bypasses the check to see if .NET is installed. |
 | --skipenhancedmodernposupgradevalidation | Bypass enhanced upgrade validation when migrating from an existing Modern POS device. |
 | --skipsqlfulltextcheck | Bypasses validation of the SQL Full-Text Search that is required for offline deployment. |
@@ -195,9 +195,9 @@ You can also use the **help** command in PowerShell to find information about al
 | --skipuninstallmodernposafterupgrade | Skips uninstalling Modern POS as the last step of the upgrade. |
 | --skipurlcheck | Bypasses the validation of URLs that are passed to the installer. |
 | --skipversioncheck | Bypasses version validation during downgrade. |
-| --sqlservername \<SQL server name\> | Specifies the name of the SQL Server instance that Store Commerce uses in offline mode. If this parameter is omitted, the installer will use the default instance. |
+| --sqlservername \<SQL server name\> | Specifies the name of the SQL Server instance that Store Commerce uses in offline mode. If this parameter is omitted, the installer uses the default instance. |
 | --trustsqlservercertificate | Trusts the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
-| --usecommonapplicationdata                       | Use a common application data folder across all Windows users on this device. If this parameter is omitted, Store Commerce will only be installed for the current user. |
+| --usecommonapplicationdata                       | Use a common application data folder across all Windows users on this device. If this parameter is omitted, Store Commerce is only installed for the current user. |
 | --useremoteappcontent | Download and display the Store Commerce UI from the Commerce Scale Unit (CSU.) If this parameter is omitted, the local application content that is deployed with Store Commerce is used. See the **Hybrid deployment** section in this document for more information. |
 | --verbosity | Specifies the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, defaults to 2. |
 | --version | Shows information about the app version. |
@@ -227,7 +227,7 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 
 ## Known issues with the Microsoft Edge WebView2 control
 
-+ During activation, when prompted for entering the Azure AD password with multiple options, choose password. The other options might not work.
+During activation, when prompted to enter the Azure AD password with multiple options, choose the password option. The other options might not work.
 
 ## Additional resources
 
