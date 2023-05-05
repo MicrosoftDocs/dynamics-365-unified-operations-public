@@ -1778,6 +1778,24 @@
               href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
           - name: Extension
             items: 
+            - name: Tax integration design
+              items:
+              - name: Tax integration overview
+                href: localizations/tax-integration-flow.md
+              - name: Facade, sequence, and activities in tax integration
+                href: localizations/tax-integration-facade-sequence-activity.md
+            - name: Integrate a new transaction
+              items:
+              - name: Entrance code to tax integration
+                href: localizations/tax-integration-entrance-code.md
+              - name: Implement tax integration activities
+                href: localizations/tax-integration-implement-tax-integration-activities.md
+              - name: Uptake features and functions
+                href: localizations/tax-integration-uptake-features.md
+              - name: Modifications on switch functions and the front end
+                href: localizations/tax-integration-modification-swtich-functions-frontend.md
+            - name: Add a new activity in tax integration
+              href: localizations/tax-integration-how-to-add-activity.md
             - name: Add data fields in tax configurations
               href: localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
             - name: Add data fields in the tax integration by using extensions
