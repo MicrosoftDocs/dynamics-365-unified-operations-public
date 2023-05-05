@@ -4169,6 +4169,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance  
+      - name: Supported data souce types for ER components
+        href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
       - name: Formula designers in ER
         items:
         - name: Formula designer
