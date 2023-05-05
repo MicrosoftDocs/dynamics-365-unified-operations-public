@@ -31,7 +31,7 @@ Organizations looking to migrate environments and data from one geography to ano
 
 **Feature parity**
 
-Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
+Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
 Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to a geography where Commerce isn't available.
 
