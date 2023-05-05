@@ -1,5 +1,5 @@
 ---
-title: Update features and functions 
+title: Uptake features and functions 
 description: This article introduces the features and functions that must be implemented to integrate a new transaction.
 author: Qiuchen-Ren
 ms.author: qire
