@@ -191,11 +191,11 @@ Starting with Commerce version 10.0.35, **site builder** contains an **Omnichann
 # Omnichannel media management prerequisites and configuration
 [todo]
 To configure omnichannel media managment features in your Commerce environments, follow these steps:
-1. In Site Builder set **Enable omnichannel content** feature flag to on.
-2. In HQ, search for **feature managemnt** in the seach bar
-3. Click **Check for updates** in upper right
-4. Click **All** and search for *Omni
-5. Select the **Enable omnichannel meida assignment authoring UX**
+1. In **site builder** go to **Tenant settings** > **Features**, set the **Omnichannel content** feature flag to **On**, and click **Save and publish**.
+2. In HQ, search for **feature managemnt** in the seach bar and navigate to it.
+3. Click the **Check for updates** button in upper right.
+4. Click the **All** tab and search for _"*omni"_ in the **Filter** text box. 
+5. Select **Enable omnichannel meida assignment authoring UX** from the filter results.
 6. In the right panel click **Enable now**.  (If you dont see this then during the preview period, then you will need to submit an ICM asking Microsoft to enable this feature flight for your environment.  Once the feature flight ICM is approved you will be able to enable this feature).
 7. For preview window, need to go to **Commerce parameters** from search bar
 8. Select **Set up omnichannel media management**
