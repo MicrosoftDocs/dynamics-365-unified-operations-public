@@ -1,74 +1,78 @@
 ---
-title: Transition from dual-write application orchestration package to split packages
-description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This article explains how to switch from the orchestration package to the individual.
+title: Transition from the Dual-write Application Orchestration package to split packages
+description: The Dual-write Application Orchestration package is no longer a single package but has been split into smaller packages. This article explains how to switch to the split packages.
 author: abunduc-ms
 ms.author: abunduc
 ms.date: 05/04/2023
 ms.topic: article
 ---
 
-# Transition from dual-write application orchestration package to split packages
+# Transition from the Dual-write Application Orchestration package to split packages
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
-Before March 2022, when setting up dual-write, customers had to install the dual-write application orchestration package from AppSource. This package contained solutions for all application logic, including all table maps. Customers were in all-or-nothing situation where they had to have all solutions installed even if they would only require using a subset.
+Before March 2022, when customers set up dual-write, they had to install the Dual-write Application Orchestration package from Microsoft AppSource. This package contained solutions for all application logic, including all table maps. Therefore, customers were in an "all or nothing" situation, where they had to install all solutions, even if they had to use only a subset.
 
-To solve this problem, we split the monolith orchestration package into smaller individual packages. The individual packages contain solutions with the same name, publisher, and map versions as the application orchestration package. Therefore, this is a nonbreaking change and environments can easily upgrade by installing the split packages required from AppSource.
+To fix this issue, Microsoft split the monolithic application orchestration package into smaller individual packages. These individual packages contain solutions that have the same name, publisher, and map versions as the application orchestration package. Therefore, this change is nonbreaking, and customers can easily upgrade environments by installing the required split packages from AppSource.
 
 > [!IMPORTANT]
-> The orchestration solution is no longer being maintained and it will be deprecated. In order to benefit from enhancements and bug fixes, we recommend installing the split packages.
+> The orchestration solution is no longer being maintained and will be deprecated. We recommend that you install the split packages, so that you can continue to benefit from enhancements and updates.
 
-## What do you need to do to install the split packages?
+## What you must do to install the split packages
 
-Repeat these steps for all environments:
+Follow these steps for each environment.
 
-* Step 1. Identify which split solution packages are required.
-* Step 2. Install the required packages.
-* Step 3. If table maps were updated in the split packages, apply the updates in the dual-write workspace.
+1. Identify which split solution packages are required.
+2. Install the required packages.
+3. If table maps were updated in the split packages, apply the updates in the **Dual-write** workspace.
 
-As with any app updates, we advise applying these steps in lower environments first and perform regression testing for your specific use cases.
+As for any app update, we recommend that you first complete these steps in lower environments and do regression testing for your specific use cases.
 
 ### Step 1. Identify which split solution packages are required
 
-You can easily identify the packages that are required by tracking the entities or table maps that you're syncing today. The entities and maps included in the solutions of each split package are detailed in the [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions) article.
+You can easily identify the packages that are required by tracking the entities or table maps that you're currently syncing. For information about the entities and maps that are included in the solutions of each split package, see [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions). In the following illustration, a user is searching that article for information about contact-related maps in the Dual-write Finance package.
 
-:::image type="content" source="media/find-entity-in-split-package.png" alt-text="Screenshot of the Dual-write Finance page with the available packages highlighted." lightbox="media/find-entity-in-split-package.png":::
+:::image type="content" source="media/find-entity-in-split-package.png" alt-text='Screenshot that shows the "Dual-write Finance" section of the "Separated Dual-write Application Orchestration package" article, where contact-related maps are highlighted by the browser's search functionality.' lightbox="media/find-entity-in-split-package.png":::
 
-For example:
+Here are some examples:
 
-- If you're syncing contacts, therefore using Customers V3, you would need to install the Dual-write Application Core and Dual-write Finance packages.
-- If you're syncing products, you would need to install Dual-write Supply Chain package and its dependencies.
-- If you're syncing a full prospect to cash flow, with customers, products, quotes, and orders being synced, the required packages are:
-  - Dual-write Application Core package
-  - Dual-write Finance package
-  - Dual-write Human Resources package
-  - Dynamics 365 HR Common Tables
-  - Dual-write Supply Chain
+- If you're syncing contacts and therefore using **Customers V3**, you must install the Dual-write Application Core and Dual-write Finance packages.
+- If you're syncing products, you must install the Dual-write Supply Chain package and its dependencies.
+- If you're syncing a full prospect-to-cash flow, where customers, products, quotes, and orders are being synced, you must install the following packages:
+
+    - Dual-write Application Core package
+    - Dual-write Finance package
+    - Dual-write Human Resources package
+    - Dynamics 365 HR Common Tables
+    - Dual-write Supply Chain
 
 ### Step 2. Install the required packages
 
 To install the required packages, follow these steps.
 
-1. With an administrator account, open the **Power Platform Admin Center**.
-1. Select the environment to upgrade, **Resources**, **Dynamics 365 Apps** and then select **Open App Source**.
-1. Search for Dual-write, and review the available packages. 
-1. Install the available packages that are required. You'll need to install any dependencies first.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using an administrator account.
+1. Select the environment to upgrade.
+1. In the left navigation, under **Resources**, select **Dynamics 365 Apps**.
+1. Select **Open App Source**.
+1. Search for "dual-write," and review the available packages in the search results. 
+
+    :::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Screenshot of the dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
+
+1. Install the available packages that are required. You must first install any dependencies.
 
 For a complete list of split packages and dependencies, see [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions).
 
-:::image type="content" source="media/dual-write-packages-app-source.png" alt-text="Screenshot of the Dual-write packages in AppSource." lightbox="media/dual-write-packages-app-source.png":::
+### Step 3. Apply solutions in the Dual-write workspace
 
-### Step 3. Apply solutions in Dual-write workspace
+When installation of the packages/apps is completed, and their status is **Installed**, one or more solutions that contain the latest features and table maps are installed in Dataverse.
 
-Once the packages/apps have completed installation (status is **Installed**), one or more solutions containing the latest features and table maps will be installed in Microsoft Dataverse.
+Use the information in the [dual-write release notes](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/whats-new-dual-write) to determine whether any of the split packages that were installed have table map updates. You'll know that a package has table maps updates if the **Has new changes** option is set to **Yes** for the solution that contains table maps. If the **Has new changes** option is set to **Yes** for any table maps, open the **Dual-write** workspace, select **Apply solution**, and then select to install the relevant solutions.
 
-Based on the information provided in the [Dual-write release notes](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/whats-new-dual-write), identify if any of the split packages installed have table maps updates. You can identify if a package has table maps updates if the solution containing table maps will have **Has new changes** set to **Yes**. If there are table maps that have **Has new changes** set to yes, then open the Dual-write workspace, select **Apply solution** and then choose to install the relevant solutions.
+:::image type="content" source="media/apply-solution.png" alt-text="Screenshot that highlights the Apply solution button in the Dual-write workspace." lightbox="media/apply-solution.png":::
 
-:::image type="content" source="media/apply-solution.png" alt-text="Screenshot of the the dual-write workspace search results for dual-write, with the Apply a solution button highlighted." lightbox="media/apply-solution.png":::
+The following table shows the complete list of solutions that contain table maps for each split package.
 
-The following table shows the complete list of solutions containing table maps for each split package:
-
-| **Package**                                        | **Solution table maps to apply in Dual-write workspace**  |
+| Package                                            | Solution table maps to apply in the Dual-write workspace  |
 |----------------------------------------------------|-----------------------------------------------------------|
 | Dual-write Application Core                        | Dual-write applications core entity maps                  |
 | Dual-write Human Resources                         | Dynamics 365 Human Resources entity maps                  |
@@ -77,6 +81,5 @@ The following table shows the complete list of solutions containing table maps f
 | Dual-write Notes                                   | Dynamics 365 notes entity maps                            |
 | Dual-write Asset Management                        | Dynamics 365 Asset Management entity maps                 |
 | Dual-write party and global address book solutions | Dynamics 365 GAB Dual Write Entity Maps                   |
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
