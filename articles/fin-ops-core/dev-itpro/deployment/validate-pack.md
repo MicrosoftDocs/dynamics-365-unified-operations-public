@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This article explains how to validate a package in Microsoft Dynamics Lifecycle Services before you apply it to a self-service cloud environment.
 
-A new **Validate packages** feature has been introduced in Lifecycle Services. This feature lets customers validate an environment package before they schedule it or apply it to an environment without downtime.
+A new **Validate packages** feature has been introduced in Lifecycle Services. This feature lets customers validate an environment package before they schedule it or apply it to an environment. The validation involves no downtime.
 
 ## Prerequisites
 
@@ -55,4 +55,4 @@ After the validation is completed, details can be found on the **Environment his
 
 ### Troubleshoot
 
-This service can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
+This validation can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
