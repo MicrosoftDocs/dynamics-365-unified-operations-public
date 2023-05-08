@@ -142,8 +142,8 @@ To generate a VAT declaration, you must configure the tax number (Steuernummer) 
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Austria, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Austria, and that uses the **VAT ID** registration category.
+3. Select or create the address in Germany, and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Germany, and that uses the **VAT ID** registration category.
 5. In the **Registration number** field, enter the VAT number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
