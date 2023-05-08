@@ -38,8 +38,8 @@ A new feature **Validate packages** has been introduced in Microsoft Dynamics Li
 without downtime.
 
 ### Prerequisites
- - This is feature applies to self-service environments.
- - The package to be validated needs to meet the prerequisites. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md#prerequisite-steps).
+ - This is functionality applies to self-service environments.
+ - There are requirements for the package to be validated. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md#prerequisite-steps).
 
 ### Validate a package
 1. In LCS, click **Maintain** and **Validate Packages**.
