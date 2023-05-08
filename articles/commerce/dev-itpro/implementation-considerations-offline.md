@@ -82,7 +82,6 @@ When you perform updates, it's crucial that you thoroughly test the Store Commer
     - Check
     - Loyalty
     - Card
-    - Customer account
     - Gift card
 
 - Test **Show journal**.
