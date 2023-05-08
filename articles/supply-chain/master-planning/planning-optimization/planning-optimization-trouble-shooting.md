@@ -177,7 +177,7 @@ Because you've set each batch task to run a different master plan, both batch ta
 
 ### Consider reducing the size of your resource groups
 
-Consider your setup for resource groups. For resource groups that contain a large number of resources, consider if you can divide them into several resource groups. For example, if you have a resource group that is AssemblyStations where you have 20 resources (AssemblyStation1, AssemblyStation2...), consider if you can setup two resource groups AssemblyStationNorth and AssemblyStationSouth where each contains the 10 assembly stations located in the North or South area of the factory. Make sure to assign the right resource group to your routes depending on if the product is produced in the North or South manufacturing side of the plant.
+Consider whether you can split large resource groups (with many resources) into several smaller groups (each with fewer resources). For example, you might be able to split a large resource group called *AssemblyStations* (which contains 20 resources) into two smaller resource groups based on location (such as *AssemblyStationsNorth* and *AssemblyStationsSouth*), where each contains just 10 assembly stations. After splitting the group, reassign each new resource group to the right routes based on whether a product is produced in the northern or southern area of the plant.
 
 ## Data export timeout
 
