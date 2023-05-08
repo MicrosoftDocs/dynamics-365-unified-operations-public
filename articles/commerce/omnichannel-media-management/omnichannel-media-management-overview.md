@@ -186,7 +186,14 @@ Starting with Commerce version 10.0.35, **site builder** contains an **Omnichann
 [todo: Link to Petri's documentation]
 
 ## Omnichannel content copy between tenants
-[todo]
+Omnichannel content can be copied accross tenants, much like site copies for individual websites in **site builder**.  The copy process is always initiated from the destination tenant, by choosing a source tenant can be chosen to copy omnichannel content from.  The copy is performed by the CMS job service which can be monitored in from **site builder**'s tenant view under **Tenant settings > Jobs**.  The length of time to complete a copy is variable, and is dependent on the amount of content being copied.  If you wish to perform a partial copy or have the ability to audit which specific omnichannel media and product assignments are copied, it is recommended to use the media library's bulk import and export functionality instead of copy.
+
+To copy all omnichannel content between two tenants, follow these steps:
+1. From the **Sites** page within **site builder**'s tenant view , click the **Copy to** button in the top action bar and select **Omnichannel content** from the dropdown.
+2. Enter the **Source tenant** ID that you wish to copy from and click **Next**.  If you don't know this string, it can normally be found in the source tenant's sitebuilder URL immediately following the commerce.dynamics.com domain (example: ...commerce.dynamics.com/**[tenant ID]**/...).
+3. Choose what behavior the copy job should use when it encounters existing files on the destination using the **Select a behavior for conflicting files** radio buttons.  **Keep destination files** will skip the copy operation for any files that already exist on the destination.  **Replace files in destination tenant** will always overwrite files in the destination, regardless of whether they already exist or not. **Keep latest version from either source or destination** will look at the last modified date for the file and keep whichever is more recent from either the source or destination.  If you are copying to an empty tenant, then any selection will work.
+4. Choose whther to copy only the latest published version, or the latest published version and most recent draft from the **Select which document versions to copy** radio buttons.  Site copy does not currently copy all historical document versions, but does allow you to choose whether to copy the latest draft versions along with published versions.  If you only need the published versions, then this can save some time during the copy process.
+5. [TODO]
 
 # Omnichannel media management prerequisites and configuration
 [todo]
