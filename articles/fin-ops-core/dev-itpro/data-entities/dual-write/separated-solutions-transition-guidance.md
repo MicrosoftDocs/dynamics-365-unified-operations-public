@@ -32,7 +32,7 @@ As for any app update, we recommend that you first complete these steps in lower
 
 You can easily identify the packages that are required by tracking the entities or table maps that you're currently syncing. For information about the entities and maps that are included in the solutions of each split package, see [Separated Dual-write Application Orchestration package](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions). In the following illustration, a user is searching that article for information about contact-related maps in the Dual-write Finance package.
 
-:::image type="content" source="media/find-entity-in-split-package.png" alt-text='Screenshot that shows the "Dual-write Finance" section of the "Separated Dual-write Application Orchestration package" article, where contact-related maps are highlighted by the browser's search functionality.' lightbox="media/find-entity-in-split-package.png":::
+:::image type="content" source="media/find-entity-in-split-package.png" alt-text="Screenshot that shows the 'Dual-write Finance' section of the 'Separated Dual-write Application Orchestration package' article, where contact-related maps are highlighted by the browser's search functionality." lightbox="media/find-entity-in-split-package.png":::
 
 Here are some examples:
 
