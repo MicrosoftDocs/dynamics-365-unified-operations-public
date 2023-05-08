@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Validate a package in Lifecycle Services (LCS)
-description: This article explains how to validate a package in Lifecycle Services (LCS) before applying it to a self-service cloud environment.
+title: Validate a package in Lifecycle Services
+description: This article explains how to validate a package in Microsoft Dynamics Lifecycle Services before you apply it to a self-service cloud environment.
 author: kumarnaresh
 ms.date: 05/08/2023
 ms.topic: how-to
@@ -26,29 +26,33 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Validate a package in Lifecycle Services (LCS)
+# Validate a package in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to validate a package in Lifecycle Services (LCS) before applying it to a self-service cloud environment.
+This article explains how to validate a package in Microsoft Dynamics Lifecycle Services before you apply it to a self-service cloud environment.
 
-## Validate packages
+A new **Validate packages** feature has been introduced in Lifecycle Services. This feature lets customers validate an environment package before they schedule it or apply it to an environment without downtime.
 
-A new feature **Validate packages** has been introduced in Microsoft Dynamics Lifecycle Services. This allows customers to validate an environment package before scheduling or applying it in an environment 
-without downtime.
+## Prerequisites
 
-### Prerequisites
- - This is functionality applies to self-service environments.
- - There are requirements for the package to be validated. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md#prerequisite-steps).
+- This functionality applies only to self-service environments.
+- The package that will be validated must meet some requirements. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md#prerequisite-steps).
 
-### Validate a package
-1. In LCS, click **Maintain** and **Validate Packages**.
-2. In a Sandbox environment, select the deployable package to be validated.  
-In a Production environment, select the Sandbox environment that the update has been applied and select the specific environment update to be validated. The environment update doesn't need to be a **Release Candidate** to be validated.
-3. Click **Yes** and then **Proceed**.
-4.	After the action has started, the environment homepage will display updated service action information. The environment status will be **Validating Package**. The environment will be available during this environment state.
-5. After the validation is complete, details can be found on the **Environment history** page. If the validation fails, a rollback isn't needed. The **Action state** will be **Failed** on the **History** page.
+## Validate a package
+
+1. In Lifecycle Services, select **Maintain** and then **Validate Packages**.
+2. Follow one of these steps, depending on the type of environment:
+
+    - In a sandbox environment, select the deployable package to validate.
+    - In a production environment, select the sandbox environment that the update has been applied to, and then select the specific environment update to validate. The environment update doesn't have to be a **Release Candidate** to be validated.
+
+3. Select **Yes** and then **Proceed**.
+
+After the validation has begun, the environment homepage will show updated service action information. The environment status will be **Validating Package**. The environment will be available during this environment state.
+
+After the validation is completed, details can be found on the **Environment history** page. If the validation fails, a rollback isn't required. The **Action state** will be **Failed** on the **History** page.
 
 ### Troubleshoot
 
-Common failures that occur during pre-servicing phase of a deployment, can be detected using this service. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
+This service can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
