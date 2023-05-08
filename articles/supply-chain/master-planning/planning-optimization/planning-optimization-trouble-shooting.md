@@ -175,6 +175,10 @@ Because you've set each batch task to run a different master plan, both batch ta
 
 - Review your item coverage settings. For items that use multiple item coverage lines to apply the same settings for all warehouses at the same site, replace those lines with a single line for the site (with the **Warehouse** column blank). That setting will then apply to all warehouses at that site.
 
+### Consider reducing the size of your resource groups
+
+Consider your setup for resource groups. For resource groups that contain a large number of resources, consider if you can divide them into several resource groups. For example, if you have a resource group that is AssemblyStations where you have 20 resources (AssemblyStation1, AssemblyStation2...), consider if you can setup two resource groups AssemblyStationNorth and AssemblyStationSouth where each contains the 10 assembly stations located in the North or South area of the factory. Make sure to assign the right resource group to your routes depending on if the product is produced in the North or South manufacturing side of the plant.
+
 ## Data export timeout
 
 The following message will appear if a data export times out for Planning Optimization:
