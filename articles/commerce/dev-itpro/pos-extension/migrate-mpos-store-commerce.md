@@ -2,7 +2,7 @@
 title: Migrate Modern POS to Store Commerce
 description: This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: josaw1
-ms.date: 05/03/2023
+ms.date: 05/05/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -15,6 +15,7 @@ ms.search.validFrom: 2022-05-24
 # Migrate Modern POS to Store Commerce
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to migrate from Microsoft Dynamics 365 Commerce Modern POS (MPOS) to the Microsoft Dynamics 365 Commerce Store Commerce app. 
 
@@ -44,10 +45,10 @@ The [Store Commerce app](../store-commerce.md) replaces Modern point of sale (MP
 1. [Create a new device in Commerce headquarters](../../tasks/create-associate-device.md). Alternatively, to migrate an existing device, select the device and change the application type to **Store Commerce** on the **Devices** page in headquarters, and then run the **1070 (Channel configuration)** and **1090 (Registers)** jobs.
 1. Uninstall MPOS. You don't have to uninstall the offline database.
 1. Download the Store Commerce installer from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**.
-1. Install the Store Commerce app by passing the required parameters and related details. For information about setup and installation in offline mode, see [Store Commerce app](../store-commerce.md).
+1. Install the Store Commerce app. For a list of install parameters and related details, see [Store Commerce app](../store-commerce.md).
 
     > [!NOTE]
-    > If you require offline mode, you can update the existing offline database by passing the correct SQL instance in the installer parameter. Alternatively, you can create a new offline database.
+    > Store Commerce supports seamless upgrade from Modern POS, which allows you to bypass activation of Store Commerce after installation. For more information, see the `--InPlaceUpgradeFromModernPOS`, `--SkipEnhancedModernPOSUpgradeValidation`, and `--SkipUninstallModernPOSAfterUpgrade` install parameters in [Store Commerce app](../store-commerce.md). 
 
 1. After the app is installed, open it from the **Start** menu in Windows, and activate it. For information about how to activate the app, see [Point of sale (POS) device activation](../retail-device-activation.md).
 1. After the app is activated, sign in to it by using your employee credentials.
