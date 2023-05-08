@@ -290,6 +290,10 @@ When you enable single record sharing for products, it's important that you crea
 
 If you already have existing products in the system before you enable the single record sharing policies, they won't be shared.
 
+## Modifying policies
+
+Note it is not possible to add more fields to a data sharing policy once it has been created and enabled. 
+
 ## More information about cross-company data sharing
 
 To learn more about cross-company data sharing, see [Cross-company data sharing overview](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md).
