@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-This article describes how to set up and print labels by using an external service. This feature enables direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing a framework for communicating via HTTP APIs, without requiring the [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). You can design and print different types of labels by using third-party labeling products, such as [Seagull Scientific BarTender](label-printing-using-bartender.md) and [Loftware NiceLabel](label-printing-using-nicelabel.md).
+This article describes how to set up and print labels by using an external service. This feature enables direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing a framework for communicating via HTTP APIs, without requiring the [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). You can design and print different types of labels by using third-party labeling products, such as [Seagull Scientific BarTender®](label-printing-using-bartender.md) and [Loftware NiceLabel](label-printing-using-nicelabel.md).
 
 The following illustrations show how printing through the DRA compares to printing through an external service. They highlight the benefits and drawbacks of each method, and can help you decide which printing solution best fits your business needs.
 
@@ -33,7 +33,7 @@ For an example that shows how to set up this feature for a specific third-party 
 
 ## Prerequisites
 
-To use the features described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+To use the features that are described in this article, you must be running Supply Chain Management version 10.0.34 or later.
 
 ## Overview of required configurations
 
