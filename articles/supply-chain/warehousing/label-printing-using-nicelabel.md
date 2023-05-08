@@ -43,7 +43,7 @@ Here are some of the pros and cons of each integration option:
 
 ## Prerequisites
 
-To use the features described in this article, you must be running Supply Chain Management version 10.0.34 or later.
+To use the features that are described in this article, you must be running Supply Chain Management version 10.0.34 or later.
 
 ## <a name="prepare-integration"></a>Prepare for NiceLabel Cloud integration
 
