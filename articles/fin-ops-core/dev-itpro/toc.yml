@@ -1150,7 +1150,11 @@ items:
                 - name: Enable table map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
-              href: data-entities/dual-write/separated-solutions.md
+              items:
+                - name: Separated dual-write application orchestration package
+                  href: data-entities/dual-write/separated-solutions.md
+                - name: Transition from dual-write application orchestration package to split packages
+                  href: data-entities/dual-write/separated-solutions-transition-guidance.md
             - name: Setup security roles and permissions
               href: data-entities/dual-write/security-roles.md
             - name: User-specified team owner
@@ -1900,8 +1904,6 @@ items:
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Install metadata hotfixes in development environments
-          href: migration-upgrade/install-metadata-hotfix-package.md
         - name: Patch Reporting Services in one-box environments
           href: migration-upgrade/patch-reporting-service-environment.md
         - name: Update Visual Studio development tools
