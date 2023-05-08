@@ -1150,7 +1150,11 @@ items:
                 - name: Enable table map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
-              href: data-entities/dual-write/separated-solutions.md
+              items:
+                - name: Separated dual-write application orchestration package
+                  href: data-entities/dual-write/separated-solutions.md
+                - name: Transition from dual-write application orchestration package to split packages
+                  href: data-entities/dual-write/separated-solutions-transition-guidance.md
             - name: Setup security roles and permissions
               href: data-entities/dual-write/security-roles.md
             - name: User-specified team owner
