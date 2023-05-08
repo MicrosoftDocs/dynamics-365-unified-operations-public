@@ -292,7 +292,7 @@ If you already have existing products in the system before you enable the single
 
 ## Modifying policies
 
-Note it is not possible to add more fields to a data sharing policy once it has been created and enabled. 
+It isn't possible to add more fields to a data sharing policy after it has been created and enabled. 
 
 ## More information about cross-company data sharing
 
