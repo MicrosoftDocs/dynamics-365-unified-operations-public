@@ -51,4 +51,4 @@ In a Production environment, select the Sandbox environment that the update has 
 
 ### Troubleshoot
 
-Common failures that occur during pre-servicing phase of a deployment, can be detected using this service. For more information, see [Pre-servicing and post-servicing](/lifecycle-services/pre-post-servicing.md#common-failures).
+Common failures that occur during pre-servicing phase of a deployment, can be detected using this service. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
