@@ -90,6 +90,9 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 The primary address of the legal entity must be in France.
 Feature management key **(France) Electronic invoicing integration with Chorus Pro** must be enabled.
 
+> [!NOTE]
+> If apart from having infomration about sucessful or failed document submittion you want want to have possibility to track status of submitted document at Chorus pro you need to enable two more feature management keys: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
+
 ### Configure legal entity data
 
 #### Enter a legal entity's address
@@ -143,7 +146,7 @@ You can enable SIRET numbers and service code validation prior posting and invoi
 > If you want to creatae a new submission report instead of customizing default one, you should use **DocumentSubmitted** model name and **SubmittedInvoice** mapping name for integration point.
 
 
-## Issue electronic invoices (TODO)
+## Issue electronic invoices
 
 When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
@@ -153,7 +156,7 @@ For Sales orders or Free text invoices:
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders** or **Accounts receivable** \> **Invoices** \> **All free text invoices** 
 2. When you swith to **Header** view you can select:
 	- Electronic invoice framweork type
-	- Invoice aacount service code
+	- Invoice aacount service code (if you enabled **SIRET and service code validation** parameter, the list of available service codes will be obtained from Chorus Pro)
 	- Project manager
 For project invoice:
 1. Create a new or open created **Project management and accounting** \> **Proejct invoices** \> **Project invoic proposals** 
@@ -163,9 +166,16 @@ For project invoice:
 	- Project manager
 	- Project manager service code
 
+You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and use **Electronic document** \> **Generate report** fucntion in the form to generate a sumission report.
 
+## Receive electronic invoices
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and use **Electronic document ** \> **Generate report** fucntion in the form to generate a sumission report.
+You can use **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents** to import documents from Chorus Pro. Once process executed sucessfuly, imported documents will be present in **Pending vendor invoice** workspace, where when needed addtional attributes for received docuemnt might be added:
+- Electronic invoice framework type
+- Invoice account service code
+- Project manager
+- Project manager service code.
+For more details refer to [Use the electronic invoicing service to import vendor invoices](e-invoicing-get-started-import-vendor-invoices.md)
 
 ## Additional resources
 
