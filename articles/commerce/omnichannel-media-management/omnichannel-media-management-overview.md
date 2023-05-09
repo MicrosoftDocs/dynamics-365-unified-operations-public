@@ -29,7 +29,7 @@ The following topics cover the steps to author and assign media to products.
 > The following how-to guide assumes that the [**Omnichannel media management prerequisites and configuration**](#omnichannel-media-management-prerequisites-and-configuration) steps have already been followed to enable this feature for your environment.
 
 ### Assign media to simple products
-For simple products, there are two media assignment scopes available: **Primary media**, **Additional media**.
+For simple products, there are two media assignment scopes available: **Primary media** and **Additional media**.
 
 ### Primary media
 **Primary media** is used for media assignments that should always display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in **Primary media** have a specific display order, and can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments is treated as the product's default image for scenarios where the entire media gallery experience is not needed.
