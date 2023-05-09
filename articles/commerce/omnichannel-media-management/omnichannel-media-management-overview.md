@@ -155,8 +155,8 @@ To preview primary product media assignments, follow these steps:
 5. If the product is configured with dimensions, select different dimension values in the dropdown controls to preview the media gallery experience for different product variants.
 6. Click **Close** to exit the preview experience.
 
-## Category media assignments
-Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level like they can be for individual products.  Category media assignments are generally used for category navigation end-user experiences.  Commerce currently supports a single default image to be assigned to each channel-specific category.
+### Category media assignments
+Commerce currently supports a single default image to be assigned to each channel-specific product category. Category media assignments are generally used for category navigation end-user experiences. Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level (like they can be for individual products).  
 
 To assign a default image for a channel-specific category, follow these steps:
 1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
