@@ -20,7 +20,7 @@ This article covers frequently asked questions about the Microsoft Dynamics 365 
 
 ## Why is MPOS being deprecated?
 
-MPOS (aka Modern POS, or Modern Point of Sale) uses the legacy Universal Windows App (UWP) rendering framework. Support for the UWP platform has been reduced, starting with Visual Studio 2019. The Store Commerce app is a Windows Presentation Foundation shell application that uses the Microsoft Edge WebView2 control, which is far more performant and supports the development of better experiences through components such as IndexedDB. Store Commerce also offers superior application lifecycle management options. 
+MPOS (also known as Modern POS, or Modern point of sale) uses the legacy Universal Windows App (UWP) rendering framework. Support for the UWP platform has been reduced, starting with Visual Studio 2019. The Store Commerce app is a Windows Presentation Foundation shell application that uses the Microsoft Edge WebView2 control, which is far more performant and supports the development of better experiences through components such as IndexedDB. Store Commerce also offers superior application lifecycle management options. 
 
 See the [Store Commerce app](store-commerce.md) and [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) help topics for more information. 
 
@@ -30,15 +30,15 @@ Yes. Store Commerce app has full functional parity with MPOS, including offline 
 
 ## Do I have to reactivate my registers after migrating to Store Commerce app? 
 
-No. Store commerce for Windows offers an in-place upgrade option that captures the Modern POS device token before uninstalling MPOS, which eliminates the need to reactivate. Read more about the `--inplaceupgradefrommodernpos` parameter in the [Store Commerce app](store-commerce.md) help topic. 
+No. Store commerce for Windows offers an in-place upgrade option that captures the Modern POS device token before uninstalling MPOS, which eliminates the need to reactivate. For more information about the `--inplaceupgradefrommodernpos` parameter, see [Store Commerce app](store-commerce.md). 
 
-## I am already using Commerce SDK, do I need to migrate?
+## I'm already using Commerce SDK, do I need to migrate?
 
-If you are already using Commerce SDK for POS and Scale Unit extensions, and don’t have any remaining instances of Modern POS, you don't have any additional migration tasks. If you have any instances of MPOS, you should [migrate to Store Commerce app](pos-extension/migrate-mpos-store-commerce.md).
+If you're already using Commerce SDK for POS and Scale Unit extensions, and don’t have any remaining instances of Modern POS, you don't have any additional migration tasks. If you have any instances of MPOS, you should [migrate to Store Commerce app](pos-extension/migrate-mpos-store-commerce.md).
 
-## I am already using Store Commerce app, do I need to migrate?
+## I'm already using Store Commerce app, do I need to migrate?
 
-No, you don’t have to migrate if you are using Store Sommerce app and using Commerce SDK to build any Scale Unit extensions you have.
+No, you don’t have to migrate if you're using Store Commerce app and using Commerce SDK to build any Scale Unit extensions you have.
 
 ## Will Retail SDK be available in IaaS VM? 
 
@@ -50,11 +50,11 @@ No. legacy installers will stop working effective October 2023. You should migra
 
 ## Will sealed MPOS be supported?
 
-No. Sealed MPOS will not be supported effective October 2023. You have to migrate your [sealed MPOS instances to Store Commerce app](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Fcommerce%2Fdev-itpro%2Fpos-extension%2Fmigrate-mpos-store-commerce&data=05|01|stuharg%40microsoft.com|547685291c6e42c588e608db3f9ff74c|72f988bf86f141af91ab2d7cd011db47|1|0|638173728507629660|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|3000|||&sdata=9mO9bNpB41%2BfHrqRzKYL1Yzf%2FB89SKjHP6QLfyFvMys%3D&reserved=0).
+No. Sealed MPOS won't be supported effective October 2023. You have to migrate your [sealed MPOS instances to Store Commerce app](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Fcommerce%2Fdev-itpro%2Fpos-extension%2Fmigrate-mpos-store-commerce&data=05|01|stuharg%40microsoft.com|547685291c6e42c588e608db3f9ff74c|72f988bf86f141af91ab2d7cd011db47|1|0|638173728507629660|Unknown|TWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D|3000|||&sdata=9mO9bNpB41%2BfHrqRzKYL1Yzf%2FB89SKjHP6QLfyFvMys%3D&reserved=0).
 
 ## What happens if I continue to use Retail SDK or MPOS beyond the deprecation date?
 
-Existing deployments using Retail SDK and MPOS will remain functional. However, Microsoft will not provide support or bug fixes for issues you encounter. In addition, there will be no newer versions of Retail SDK or MPOS released after October 2023. 
+Existing deployments using Retail SDK and MPOS will remain functional. However, Microsoft won't provide support or bug fixes for issues you encounter. In addition, there will be no newer versions of Retail SDK or MPOS released after October 2023. 
 
 ## Does Commerce SDK apply for on-premises deployments too?
 
