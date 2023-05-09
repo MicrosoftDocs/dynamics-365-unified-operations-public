@@ -198,7 +198,14 @@ Some additional parameters must be configured directly in Finance.
 1. Make sure that the following Electronic Reporting configurations are imported.
  - Vendor invoice import (PL)
  - Vendor invoice Mapping to destination
-2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
+3. Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
+4. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
+5. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
+6. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Import channel** section for the **Import vendor invoice** feature setup in RCS.
+7. Save your changes, and complete the derived configuration.
+8. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+9. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same Import channel name as was previously defined.
 
 ## Additional resources
 
