@@ -29,7 +29,7 @@ The following topics cover the steps to author and assign media to products.
 > The following how-to guide assumes that the [**Omnichannel media management prerequisites and configuration**](#omnichannel-media-management-prerequisites-and-configuration) steps have already been followed to enable this feature for your environment.
 
 ### Assign media to simple products
-For simple products, there are three media assignment scopes available: **Primary media**, **Additional media**, and product-specific **Swatches**.
+For simple products, there are two media assignment scopes available: **Primary media**, **Additional media**.
 
 ### Primary media
 **Primary media** is used for media assignments that should always display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in **Primary media** have a specific display order, and can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments is treated as the product's default image for scenarios where the entire media gallery experience is not needed.
@@ -41,32 +41,22 @@ To assign media to a product's **Primary media**, follow these steps:
 2. Search for a product using its name or product ID in the search view on the left, and select it.
 3. Click the **Edit product media** button in the upper right.
 4. Click the **Add media** button in the Master > **Primary media** section.  
-5. Select one or more media items from the media library picker (you can also upload new images here with the **Upload** button in the upper left of the media picker), then click **Apply**.
+5. Select one or more media items from the media library picker (you can also upload new media here with the **Upload** button in the upper left of the media picker), then click **Apply**.
 6. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
 7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Additional media
-**Additional media** is used for media assignments that have a purpose outside of a standard product media gallery.  **Additional media** items have a property named **Purpose** that indicates its inteded use.  Typical **Additional media** purposes include product manuals, spec sheets, media kits, or any other custom media assignment purpose needed outside of the primary media gallery.  The list of media purposes is extensible and can be defined and expanded using the Commerce SDKs.
+**Additional media** is used for media assignments that have a purpose outside of a standard product media gallery.  **Additional media** items have a string property named **Purpose** that indicates its inteded use.  Typical **Additional media** purposes include product manuals, spec sheets, media kits, or any other custom media assignment purpose needed outside of the primary media gallery.  Any alphanumeric string can be set as an **Additional media** item's **Purpose** property, and then leveraged through Commerce SDKs, APIs, and data actions for extensibility scenarios.
 
-### Product-specific swatches
-Prior to Commerce version 10.0.35, swatches were centrally managed in Commerce HQ by assigning a color hex value or image to dimension values (_example_: color|blue = #0000ff).  This central management of swatch assignments does _not_ change with the introduction of the media management features included in 10.0.35+ versions of Commerce; but there is a new capability to optionally assign product-specific swatches to override within product page experiences.  Swatches used for filtering products in category page, list view, and search results still use the centrally managed swatch values configured for product dimension values.  These centrally managed dimension-specific swatch assignments allow search refiners and filters to behave correctly accross multiple products. But for scenarios where more detailed swatches are wanted within a single product page, product-specific swatch overrides are available.  These swatch overrides can be used to show things like product-specific fabric textures, multi-colored patterns, iconography, or anything else that might go beyond the generic swatch values needed for product list refiners spanning multiple products.
-
->[!NOTE]
->If you plan to assign product-specific swatch assignements, it is important to ensure that swatch values are also assigned to the centrally managed list of dimension values in Commerce HQ.  This ensures that product list refiners and filters will display correctly for experiences that return results spanning multiple products (examples: category pages, search results, and product lists).  To configure these centrally-managed swatch dimension assignments, follow the steps described in the [Configure dimension values in Commerce headquarters
-](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/dimensions-swatch#configure-dimension-values-in-commerce-headquarters) article.
-
-To assign product-specific swatches, follow these steps:
+To assign media to a product's **Additional media**, follow these steps:
 1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
 2. Search for a product using its name or product ID in the search view on the left, and select it.
 3. Click the **Edit product media** button in the upper right.
-4. In the product's Master tab, find the **Swatches** section underneath Additional Media and click the **Add swatch** button.
-5. Select the **Dimension group** (eg. Color) and **Dimension** (eg. Blue) values that you wish to assign from the drop-down selection controls. 
-6. Select the **Swatch type** from the drop-down selection control. If using a hexcode color value, click on the color picker control and choose the desired hex value; then skip ahead to step 9. 
-7. If using an image, click the **Add media** button and upload or choose an image from the Omnichannel media library.
-8. To choose a cropped sample from a product image, toggle the **Use cropped sample of image** to **On**.  Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
-9. When finished, click the **Add swatch** button at the bottom of the panel.  
-10. Repeat steps 4-9 for any additional dimension values.
-11. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
+4. Click the **Add media** button in the Master > **Additional media** section.  
+5. Set the **Media purpose** property to the desired value.
+6. Select a media item from the media library picker (you can also upload new media here with the **Upload** button in the upper left of the media picker), then click **Apply**.
+7. Click the **Add media** button at the bottom of the panel.
+8. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Omnichannel, channel-specific, and locale-specific media assignments
 Media can be assigned in a hierarchical fallback manner accross channels and locales.  The default assignment for any product should use Omnichannel (channel) and Neutral (locale).  These assignments will be returned by default anywhere a more specific channel+local combination is not available.  For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default.  After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
@@ -103,6 +93,26 @@ Here is the fallback order for product master, product dimension(s), and product
 ### Assign media to product master
 
 Default media for a product master is assigned using the **Master** tab in the product media view using the same steps described in the [**Assign media to simple products**](#assign-media-to-simple-products) section. The only difference in assignment workflow between simple products and product masters is that product masters can have one or more dimensions (color, style, size, configuration), which in turn define possible product variants for a master product. 
+
+#### Product-specific swatches
+Prior to Commerce version 10.0.35, swatches were centrally managed in Commerce HQ by assigning a color hex value or image to dimension values (_example_: color|blue = #0000ff).  This central management of swatch assignments does _not_ change with the introduction of the media management features included in 10.0.35+ versions of Commerce; but there is a new capability to optionally assign product-specific swatches to override within product page experiences.  Swatches used for filtering products in category page, list view, and search results still use the centrally managed swatch values configured for product dimension values.  These centrally managed dimension-specific swatch assignments allow search refiners and filters to behave correctly accross multiple products. But for scenarios where more detailed swatches are wanted within a single product page, product-specific swatch overrides are available.  These swatch overrides can be used to show things like product-specific fabric textures, multi-colored patterns, iconography, or anything else that might go beyond the generic swatch values needed for product list refiners spanning multiple products.
+
+>[!NOTE]
+>If you plan to assign product-specific swatch assignements, it is important to ensure that swatch values are also assigned to the centrally managed list of dimension values in Commerce HQ.  This ensures that product list refiners and filters will display correctly for experiences that return results spanning multiple products (examples: category pages, search results, and product lists).  To configure these centrally-managed swatch dimension assignments, follow the steps described in the [Configure dimension values in Commerce headquarters
+](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/dimensions-swatch#configure-dimension-values-in-commerce-headquarters) article.
+
+To assign product-specific swatches, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Search for a product using its name or product ID in the search view on the left, and select it.
+3. Click the **Edit product media** button in the upper right.
+4. In the product's Master tab, find the **Swatches** section underneath Additional Media and click the **Add swatch** button.
+5. Select the **Dimension group** (eg. Color) and **Dimension** (eg. Blue) values that you wish to assign from the drop-down selection controls. 
+6. Select the **Swatch type** from the drop-down selection control. If using a hexcode color value, click on the color picker control and choose the desired hex value; then skip ahead to step 9. 
+7. If using an image, click the **Add media** button and upload or choose an image from the Omnichannel media library.
+8. To choose a cropped sample from a product image, toggle the **Use cropped sample of image** to **On**.  Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
+9. When finished, click the **Add swatch** button at the bottom of the panel.  
+10. Repeat steps 4-9 for any additional dimension values.
+11. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product dimensions
 For product masters with multiple dimensions, it's common that media assignments are only needed for a subset of dimensions.  For example, in the apparel industry it is common to take photos of different colors and styles of the same master product shirt, but not different photos for every size.  
