@@ -72,6 +72,8 @@ Here is the fallback order for channel and locale media assignments:
       style C fill:#cae3ef
       style D fill:#afd5e7
 ```
+> [!NOTE]
+> The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace.  Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments accross all channels.
 
 ### Product master, product dimension(s), and product variant media assignments
 Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  When media assignments are created for product dimension(s) or specific product variants, the inheritance to the product master assignments is severed and all media assignments are controlled by the dimension(s) or specific product variant media assignments.
