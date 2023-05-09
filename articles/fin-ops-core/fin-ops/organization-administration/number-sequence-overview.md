@@ -44,7 +44,7 @@ When you set up a number sequence, you must specify a scope, which defines which
 
 Number sequence formats consist of segments. Number sequences with a scope other than **Shared** can contain segments that correspond to the scope. For example, a number sequence with a scope of **Legal entity** can contain a legal entity segment. By including a scope segment in the number sequence format, you can identify the scope of a particular record by looking at its number.
 
-In addition to segments that correspond to scopes, number sequence formats can contain **Constant** and **Alphanumeric segments**. A **Constant** segment contains a set of letters, numbers, or symbols that does not change. An **Alphanumeric** segment contains a set of letters or numbers that increment every time that a number is used. Use a number sign (\#) to represent incrementing numbers and an ampersand (&) to represent incrementing letters. For example, the format \#\#\#\#\#\_2017 creates the sequence 00001\_2017, 00002\_2017, and so on.
+In addition to segments that correspond to scopes, number sequence formats can contain **Constant** and **Alphanumeric segments**. A **Constant** segment contains a set of letters, numbers, or symbols that doesn't change. An **Alphanumeric** segment contains a set of letters or numbers that increment every time that a number is used. Use a number sign (\#) to represent incrementing numbers and an ampersand (&) to represent incrementing letters. For example, the format \#\#\#\#\#\_2017 creates the sequence 00001\_2017, 00002\_2017, and so on.
 
 ## Number sequence examples
 
@@ -85,7 +85,7 @@ In the following example, sales order numbers are set up for the company ID **CE
 
 **Example of formatted number**: SO-0029
 
-Even though a scope segment is not included in the format, numbering restarts for each company ID. If you use the same format for all company IDs, the same numbers are used in each company. For example, sales order number SO-0029 is used in each company. You can also change the whole number sequence format for other company IDs.
+Even though a scope segment isn't included in the format, numbering restarts for each company ID. If you use the same format for all company IDs, the same numbers are used in each company. For example, sales order number SO-0029 is used in each company. You can also change the whole number sequence format for other company IDs.
 
 ### Purchase requisition numbers
 
@@ -108,16 +108,16 @@ Because the scope is **Shared**, the number sequence format is used across the o
 
 Consider the following information about how the configuration of number sequences can affect system performance before you set up number sequences.
 
-### Continuous and non-continuous number sequences
+### Continuous and noncontinuous number sequences
 
-Number sequences can be continuous or non-continuous. A continuous number sequence does not skip any numbers, but numbers may not be used sequentially. Numbers from a non-continuous number sequence are used sequentially, but the number sequence may skip numbers.
+Number sequences can be continuous or noncontinuous. A continuous number sequence doesn't skip any numbers, but numbers may not be used sequentially. Numbers from a noncontinuous number sequence are used sequentially, but the number sequence may skip numbers.
 - Continuous Number Sequence (CNS)
 
-   - Does not skip any numbers
+   - Doesn't skip any numbers
    - Numbers may not be used sequentially
    - Ex: If a user cancels a transaction, a number is generated, but recycled (re-used) later
 
-- Non-continuous Number Sequence (Non-CNS)
+- Noncontinuous Number Sequence (Non-CNS)
 
    - May skip numbers
    - Numbers may be used sequentially (based on caching)
@@ -128,18 +128,18 @@ Number sequences can be continuous or non-continuous. A continuous number sequen
 >
 >This feature improves performance with continuous number sequences by pre-allocating a number in the sequence for each request. By default, five numbers in a sequence will be allocated, but this can be adjusted as you need. In the event of an unexpected termination of any number, improvements have been made to the clean-up job that runs.
 
-For continuous/non-continuous number sequences, you can enable **Preallocation** on the **Performance** FastTab of the Number sequences page. When you specify a quantity of numbers to preallocate, the system selects those numbers, then stores them in memory in case of non-continuous number sequences and in the database for continuous number sequences.
+For continuous/noncontinuous number sequences, you can enable **Preallocation** on the **Performance** FastTab of the Number sequences page. When you specify a quantity of numbers to preallocate, the system selects those numbers, then stores them in memory in case of noncontinuous number sequences and in the database for continuous number sequences.
 
 
-If you use a non-continuous number sequence, you can enable **Preallocation** on the **Performance** FastTab of the **Number sequences** page. When you specify a quantity of numbers to preallocate, the system selects those numbers and stores them in memory. New numbers are requested from the database only after the preallocated quantity has been used.
+If you use a noncontinuous number sequence, you can enable **Preallocation** on the **Performance** FastTab of the **Number sequences** page. When you specify a quantity of numbers to preallocate, the system selects those numbers and stores them in memory. New numbers are requested from the database only after the preallocated quantity has been used.
 
-Unless there is a regulatory/legal compliance requirement that you use continuous number sequences, we recommend that you use non-continuous number sequences.
+Unless there's a regulatory/legal compliance requirement that you use continuous number sequences, we recommend that you use noncontinuous number sequences.
 
 ### Automatic cleanup of number sequences
 
-In case of an application error, crashes or other unexpected failure, the system will try to recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers.
+In case of an application error, crashes or other unexpected failure, the system tries to recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers.
 
-Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
+Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during nonpeak hours.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
