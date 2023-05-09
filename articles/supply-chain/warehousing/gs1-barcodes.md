@@ -329,10 +329,10 @@ The receipt is then registered, and the relevant database values are entered aft
 > - Make sure the settings on the **GS1 generic setup** and **GS1 application identifiers** pages are in alignment with barcodes you are using, and with the **GS1 policy** assigned on the **Mobile device menu item** page.
 > - On the **GS1 policy** page, select the policy that's giving you trouble and check the following settings:
 >     - Set **Field value capturing method** to *Save as default*.
->     - In the grid, make sure that all the **Field** names are aligned with the **Step ID** input control names for the actual mobile device. See also [Work user sessions](work-user-sessions.md). See also the table after this list for some common examples.
+>     - In the grid, make sure that all the **Field** names are aligned with the **Step ID** input control names for the actual mobile device. For more information about how to look up field names, see [Work user sessions page](work-user-sessions.md). See also the table after this list for some common examples.
 > - On the **Warehouse management parameters** page, open the **General** tab, expand the **Bar codes** FastTab and set **Unknown application identifier policy** to *Skip the data element*.
 >
-> The following tables shows some common examples where the step ID field mapping failed, making it impossible to process a scanned GS1 barcode:
+> The following tables shows some common examples where the step-ID field mapping failed, making it impossible to process a scanned GS1 barcode:
 >
 > | Used Field name | Correct Field name  | Process                   |
 > |-----------------|---------------------|---------------------------|

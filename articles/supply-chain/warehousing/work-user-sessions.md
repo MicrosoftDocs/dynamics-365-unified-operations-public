@@ -23,7 +23,7 @@ The XML messages can for example be used to look up [mobile device step ids](mob
 
 As an example the below XML content has been copied from a *Mixed license plate receiving* process where it can be seen that the Warehouse management mobile app is in the **Step Id="LoadId"** having the **"PrimaryInputArea"** with a control **name="LoadId"**. 
 
-``` XML example
+``` XML
 <?xml version="1.0" encoding="utf-8"?>
 <ParentNode>
   <Controls PagePattern="Default" PageTitle="Mixed LP receiving" MenuItemName="Mixed LP receiving">
@@ -45,7 +45,7 @@ As an example the below XML content has been copied from a *Mixed license plate 
 </ParentNode>
 ```
 
-![Mixed license plate receiving - Load item](media/Mixed-LP-receiving-LoadId-step.png "Mixed license plate receiving - Load item")
+:::image type="content" source="media/mixed-lp-receiving-load-id-step.png" alt-text="Mixed license plate receiving - Load item":::
 
 > [!NOTE]
 > In case you cannot find the historical data, please make sure a clean up job like the [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management) has not been running.
