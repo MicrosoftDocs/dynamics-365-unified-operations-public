@@ -104,33 +104,33 @@ Feature management key **(France) Electronic invoicing integration with Chorus P
 
 Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) articles to set up NAF codes and Siret numbers. Alternatively you can use [Registration IDs](emea-registration-ids.md) to setup SIRET number.
 
-### Define electronic invoice frameworks (TODO)
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
+### Define electronic invoice frameworks
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
+2. In **Type** enter elctronic invoicing framework. 
 
 > [!NOTE]
-> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
+> When no electronic invoice framework is confugyured and used, all invoices are sent as A1 - simple invoice. You can use following codes for invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14 and A22. Refer official documentation for more details [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
 
 ### Enable Chorus Pro structures validation (TODO)
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
 
 > [!NOTE]
-> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
+> In addition to A1, you can use following codes for invoice framework to attribute work invoices: A1, A4 , A7, A8, A9, A10, A12, A13, A14 and A22. Refer official documentation for more details [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
 
 ## Issue electronic invoices (TODO)
 
 When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
 > [!NOTE]
-> For Polish electronic invoice submission, additional steps must be completed in addition to the standard procedure that was described earlier.
+> For French electronic invoice submission, additional steps may be completed in addition to the standard procedure that was referred earlier.
 
-In Poland, the standard submission procedure just generates electronic invoices and stores them on the service side. It doesn't actually submit them to KSeF. To submit the electronic invoices, follow these steps.
+In France, you may add addtional information prior the standard invoice posting procedure. To provide extra information for invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
 2. In the **Channel** field, select the channel that you [previously created](#channel). Then select **OK**.
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
+You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and use **Electronic document ** \> **Generate report** fucntion in the form to generate a sumission report.
 
 ## Additional resources
 
