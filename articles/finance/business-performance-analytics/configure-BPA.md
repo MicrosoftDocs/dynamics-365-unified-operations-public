@@ -69,6 +69,6 @@ The following setup is required in the Dynamics 365 Finance before you can insta
 
 ## Required configurations in Power Platform Admin Center
 
-1. In the Power Platform Admin Center, select Dynamics 365 installed apps under Resources. 
-2. Find the **Finance and Operations Virtual Entity** app and check the status to see if there are any updates available. 
-3. If an update is available, update the application. (Only required if installing BPA app on existing environments)
+1. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**. 
+2. Find **Finance and Operations Virtual Entity** and check if any updates are available. 
+3. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).
