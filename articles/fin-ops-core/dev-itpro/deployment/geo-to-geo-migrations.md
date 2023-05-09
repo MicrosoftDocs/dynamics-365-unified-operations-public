@@ -37,8 +37,8 @@ Migrations into or out of a sovereign cloud environment (for example, US Governm
 
 ## LCS project migration considerations
 
-Refer to [LCS project migration manager](../lifecycle-services/project-migration-manager.md#considerations) to learn details.
+Refer to [LCS project migration manager - Considerations](../lifecycle-services/project-migration-manager.md#considerations) to learn details.
 
 ## Environment migration considerations
 
-Refer to [Finance and operations apps environment migration](environment-migration-process.md#considerations) to learn details.
+Refer to [Finance and operations apps environment migration - Considerations](environment-migration-process.md#considerations) to learn details.
