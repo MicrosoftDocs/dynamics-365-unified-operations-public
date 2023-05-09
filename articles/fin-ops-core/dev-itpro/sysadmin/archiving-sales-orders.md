@@ -12,14 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!--KFM: Add form codes to metadata -^  -->
-
 # Archive sales orders
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!--KFM: Preview until further notice. -->
+<!--KFM: Add form codes to metadata -->
 
 Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they may still be needed for purposes such as historical reporting, auditing, machine learning, legal claims, and so on. Keeping a large volume of historical sales orders and lines in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
 
@@ -89,20 +88,5 @@ The **Archive** workspace shows your full archiving history. Each row in the gri
 1. The **Archived sales orders** page opens, showing a list of each sales order included in the archive.
     - To view an order, including its header and all of its order lines, select it in the grid. <!-- KFM: Please confirm this guess. -->
     - To view related information about an order, select the order, open the **Inquiry** menu on the Action Pane and then choose the entry for the type of records you'd like to inspect (**Sent sales quotations**, **Sales order confirmations**, **Picking list**, **Packing slip** or **Invoice journal**).
-
-## Schedule long-term data retention in Dataverse managed data lake
-
-After you have reviewed a sales order archive and are sure you're ready to move it to your Dataverse managed data lake, follow these steps:
-
-1. Return to the **Sales order archive** tab of the **Archive** workspace.
-1. Select the archive you want to move to your Dataverse managed data lake.
-1. On the toolbar, select **Schedule purge**.
-1. The **Schedule purge** dialog opens. Select the date and time at which to start copying data from the `SalesTableHistory` and `SalesLineHistory` tables to Dataverse managed data lake.
-1. Select **OK** to schedule the purge and close the dialog.
-1. You can view information about previous purges and/or modify a purge in progress by selecting a listed archive and the selecting one of the following buttons on the toolbar:
-    - **Cancel scheduled purge** – Cancel a purge that has been scheduled but not yet started. <!-- KFM: Please confirm this guess. -->
-    - **View purge history** – View information about previous purges and/or view the progress of a purge that is currently in progress. <!-- KFM: Please confirm this guess. -->
-    - **Refresh purge state fo...** – <!-- KFM: Description needed. -->
-    - <!-- KFM: Others? -->
 
 <!--KFM: Maybe add a section about how to search/review the records in the data lake. Can we do this within SCM somehow? -->

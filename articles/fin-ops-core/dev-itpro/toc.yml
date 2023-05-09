@@ -279,6 +279,14 @@ items:
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+      - name: Archiving
+        items:
+        - name: Archiving overview
+          href: sysadmin/archiving-overview.md
+        - name: Set up record archiving
+          href: sysadmin/archiving-setup.md
+        - name: Archive sales orders
+          href: sysadmin/archiving-sales-orders.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
