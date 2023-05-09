@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 10.0.29
 
 ---
 
-# Get started with the Electronic invoicing add-on for France
+# Get started with the Electronic invoicing for France
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for France. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+This article provides information that will help you get started with Electronic invoicing for France. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](e-invoicing-get-started.md).
 
 ## Country-specific configuration for French Chorus Pro submission (FR) Electronic invoicing feature
 
