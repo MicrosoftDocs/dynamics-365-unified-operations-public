@@ -120,12 +120,15 @@ The **Warehouse management parameters** page provides a few settings that establ
 To set up global GS1 options, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+1. Open the **General** tab.
 1. On the **Bar codes** FastTab, set the following fields:
 
     - **FNC1 Character**, **Datamatrix character**, and **QR code character** – Specify characters that should be interpreted as a prefix for each type of GS1 bar code.
     - **Group separator** – Specify the character that replaces the ASCII group separator character.
     - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on for your system.
-    - **Unknown application identifier policy** - Specifies the action the system will take if an unknown Application Identifier is encountered when parsing a GS1 barcode. If the policy is set to **Error**, the system will report an error and a new entry in the GS1 Application Identifiers table will have to be set up to proceed. If the policy is set to **Ignore**, then the system will continue parsing the barcode without reporting an error or a warning. The data from the unknown Application Identifier will not be available to the application for further processing.
+    - **Unknown application identifier policy** - Specify the action the system should take if it encounters an unknown application identifier when parsing a GS1 barcode. Choose one of the following values:
+        - *Error* – The system will report an error and won't scan any part of the code. To be able to scan this type of code, you'll need to add a matching entry in the GS1 application identifier table.
+        - *Skip the data element* – The system will continue parsing the barcode without reporting an error or a warning. The data from the unknown application identifier will not be available to the application for further processing.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.
