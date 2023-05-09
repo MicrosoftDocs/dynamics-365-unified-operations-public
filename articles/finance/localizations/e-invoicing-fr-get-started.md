@@ -49,7 +49,6 @@ Before you begin the procedures in this article, complete the following prerequi
     - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
     - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
     - [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md) – Use the information in this article to activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management app and the Electronic Invoicing service.
-    - [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) – Use the information in these articles to set up NAF codes and Siret numbers in your legal entities. 
 
 - Your organization must be registered to operate with Chorus Pro. Microsoft provides integration with Chorus pro in OAuth2 Mode via an application programming interface (API). For detailed information about Chorus Pro registration and application activation, see the [official documentation](https://communaute.chorus-pro.gouv.fr/documentation/help-for-api-developers-in-oauth2-mode/).
 
@@ -96,19 +95,42 @@ Feature management key **(France) Electronic invoicing integration with Chorus P
 #### Enter a legal entity's address
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
 
 > [!NOTE]
 > Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
 
-#### Enter a legal entity's SIRET 
+#### Enter a legal entity and a customer SIRET 
 
+Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) articles to set up NAF codes and Siret numbers. Alternatively you can use [Registration IDs](emea-registration-ids.md) to setup SIRET number.
+
+### Define electronic invoice frameworks (TODO)
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (SIRET) alternatively you can use [Registration IDs](emea-registration-ids.md) to setup SIRET number.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
 
-#### Enter a customer's SIRET 
+> [!NOTE]
+> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
 
-### Configure additional data
+### Enable Chorus Pro structures validation (TODO)
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
+
+> [!NOTE]
+> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
+
+## Issue electronic invoices (TODO)
+
+When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+
+> [!NOTE]
+> For Polish electronic invoice submission, additional steps must be completed in addition to the standard procedure that was described earlier.
+
+In Poland, the standard submission procedure just generates electronic invoices and stores them on the service side. It doesn't actually submit them to KSeF. To submit the electronic invoices, follow these steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
+2. In the **Channel** field, select the channel that you [previously created](#channel). Then select **OK**.
+
+You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
 ## Additional resources
 
