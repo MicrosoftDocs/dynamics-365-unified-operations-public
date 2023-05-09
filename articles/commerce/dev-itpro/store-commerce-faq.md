@@ -1,8 +1,8 @@
 ---
-title: Store Commerce app
-description: This article covers frequently asked questions about the Store Commerce app and Commerce SDK migration. 
+title: Store Commerce app FAQ
+description: This article covers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce SDK migration. 
 author: josaw1
-ms.date: 10/25/2022
+ms.date: 05/26/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -12,9 +12,11 @@ ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
-# Store Commerce app - FAQ
+# Store Commerce app FAQ
 
 [!include [banner](../includes/banner.md)]
+
+This article covers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce SDK migration.
 
 ## Why is MPOS being deprecated?
 
@@ -54,21 +56,17 @@ No. Sealed MPOS will not be supported effective October 2023. You have to migrat
 
 Existing deployments using Retail SDK and MPOS will remain functional. However, Microsoft will not provide support or bug fixes for issues you encounter. In addition, there will be no newer versions of Retail SDK or MPOS released after October 2023. 
 
-## Does Commerce SDK apply for on-prem deployments too?
+## Does Commerce SDK apply for on-premises deployments too?
 
-Yes. For on-prem deployments, the new [Commerce SDK](retail-sdk/migrate-commerce-sdk.md) enables sealed base installers where extensions are deployed via a dedicated installer containing extensions only.
+Yes. For on-premises deployments, the new [Commerce SDK](retail-sdk/migrate-commerce-sdk.md) enables sealed base installers where extensions are deployed via a dedicated installer containing extensions only.
 
-
-
-
-
-## Additional Resources
+## Additional resources
 
 [Store Commerce app capabilities](../store-commerce-capabilities.md)
 
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
 
-[Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+[Commerce SDK Tech Talk series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
 
 [Store Commerce Extensions Overview](pos-extension/pos-extension-overview.md)
 
