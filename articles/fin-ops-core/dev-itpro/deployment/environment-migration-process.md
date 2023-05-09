@@ -20,7 +20,7 @@ If your tenant resides in a Microsoft 365 environment in a single tenant, when y
 
 When finance and operations apps environment is deployed in a geo, there are multiple Azure resources associated with it. As part of migration process these resources will also move from source geo to target geo.
 
-## Considerations before starting the migration
+## Considerations
 Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
 
 **Supported scenarios**
