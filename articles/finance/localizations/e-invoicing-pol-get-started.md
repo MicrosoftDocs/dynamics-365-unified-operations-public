@@ -193,7 +193,12 @@ Do the following configuration steps for the same version **Polish electronic in
 
 ### Finance configuration
 
-Before
+Some additional parameters must be configured directly in Finance.
+
+1. Make sure that the following Electronic Reporting configurations are imported.
+ - Vendor invoice import (PL)
+ - Vendor invoice Mapping to destination
+2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 
 ## Additional resources
 
