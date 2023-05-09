@@ -14,8 +14,6 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-<!-- KFM: Find out when and how to use ® and ™ -->
-
 This article describes how to set up and print labels in Microsoft Dynamics 365 Supply Chain Management by using the BarTender® labeling solution by Seagull Scientific. It's one example that shows how to use the Supply Chain Management external service label printing feature. For general information about how this feature works, see [Print labels using an external service](label-printing-using-external-label-service.md).
 
 The BarTender labeling solution is available both as on-premises software and as a cloud-based software-as-a-service (SaaS) offering that's named BarTender Cloud™. Currently, only BarTender Cloud can be used together with the external label printing service for Supply Chain Management.
@@ -98,8 +96,8 @@ Follow these steps to set up an external service definition.
 1. On the **Label print service** FastTab, set the following fields:
 
     - **Print operation** – Leave this field blank.
-    - **Variables print operation** – If you created an operation for printing variable-based layouts, select the name of that operation (for example, *Actions*).
-    - **Variable label layout template** – If you're using a variable-based layout, enter the content for your variable-based layout template. Here's an example.
+    - **Variables print operation** – Select the name of the operation that you created for printing variable-based layouts (for example, *Actions*).
+    - **Variable label layout template** – Enter the content for your variable-based layout template. Here's an example.
 
         ```YAML
         - PrintBTWAction:
@@ -108,9 +106,12 @@ Follow these steps to set up an external service definition.
             Copies: $SystemVariables.Quantity$
             NamedDataSources:
         {{Row Table=LabelLayoutVariable
-              $LabelLayoutVariable.Variable$: $LabelLayoutVariable.Value$
+            $LabelLayoutVariable.Variable$: $LabelLayoutVariable.Value$
         }}
         ```
+
+        > [!IMPORTANT]
+        > Paste the body text exactly as it appears here. Indentation is important. Be sure to use four spaces to indent. Don't use tabs.
 
 ### Set up an external service instance for printing through the Actions API
 
@@ -138,7 +139,7 @@ Follow these steps to set up an external service instance for printing through t
     - **Logging level** – Select *Successes and errors*.
     - **Log request bodies** – Select *Successes and errors*.
 
-You can now create label printers and label layouts by using either variables or ZPL.
+You can now create label printers and label layouts.
 
 > [!NOTE]
 >
