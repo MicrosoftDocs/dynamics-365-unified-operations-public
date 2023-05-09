@@ -187,7 +187,9 @@ Do the following configuration steps for the same version **Polish electronic in
 4. Select the **Client ID**, and then select the name of the secret containing the client identifier.
 5. Select **Certificate name**, and then select the name of the digital certificate that you created.
 6. Select the **Start date** parameter, and define the initial date for the first receiving of invoices from KSEF. All invoices with the dates laying between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
-. 
+7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same Import channel name as was defined during step 2.
+8. On the **Variables** tab, make a notice of the **OutputFile** name as since it will be used during further configuration steps.
+9. Select **Save** (if you made any changes), and close the page. 
 
 ### Finance configuration
 
