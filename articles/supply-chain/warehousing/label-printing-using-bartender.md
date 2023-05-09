@@ -1,6 +1,6 @@
 ---
-title: Print labels using the BarTender® label service solution
-description: This article describes how to set up and print labels by using the BarTender® label service solution.
+title: Print labels using the Seagull Scientific BarTender® label service solution
+description: This article describes how to set up and print labels by using the Seagull Scientific BarTender® label service solution.
 author: GalynaFedorova
 ms.author: gfedorova
 ms.reviewer: kamaybac
@@ -10,7 +10,7 @@ ms.date: 01/05/2023
 ms.custom: bap-template
 ---
 
-# Print labels using the BarTender® label service solution
+# Print labels using the Seagull Scientific BarTender® label service solution
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

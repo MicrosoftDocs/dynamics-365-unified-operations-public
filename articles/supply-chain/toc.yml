@@ -3799,7 +3799,7 @@
             href: warehousing/label-printing-using-external-label-service.md
           - name: Print labels using the Loftware NiceLabel label service solution
             href: warehousing/label-printing-using-nicelabel.md
-          - name: Print labels using the BarTender label service solution
+          - name: Print labels using the Seagull Scientific BarTender label service solution
             href: warehousing/label-printing-using-bartender.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
