@@ -248,7 +248,7 @@ graph TD;
 A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
 B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
 C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
-C-->|"1040 (products) full data sync"|E["Product seach index service"]
+C-->|"1040 (products) full data sync"|E["Product search index service"]
 D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
 E-->|"Search index refresh"|F
 ```
