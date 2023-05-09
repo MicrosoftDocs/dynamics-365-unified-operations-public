@@ -84,6 +84,27 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 16. Select **Save**, and then close the page.
 17. Repeat steps 6 through 16 for the **UBL Project invoice derived** feature setup, **UBL Sales Credit Note derived** feature setup, and **UBL Project Credit Note derived** feature setup.
 
+## Finance business data configuration
+
+### Prerequisites
+
+The primary address of the legal entity must be in France.
+
+### Configure legal entity data
+
+#### Enter a legal entity's address
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
+
+> [!NOTE]
+> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
+
+#### Enter a legal entity's SIRET 
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
+2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (SIRET).
+
 ## Additional resources
 
 - [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
