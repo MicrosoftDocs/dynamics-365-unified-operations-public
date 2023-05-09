@@ -144,7 +144,7 @@ To assign media to a specific product variant, follow these steps:
 9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
-### Previewing media assignments
+### Previewing product media assignments
 Omnichannel media assignments, by definition, can apply accross a range of channels and user experiences (examples: Point of Sale (POS) devices, e-Commerce product pages (PDPs), etc.).  To preview media assignments that can span multiple channels, the Omnichannel product media workspace has a generic media gallery preview experience to quickly validate how media should display for a product's primary media assignments.
 
 To preview primary product media assignments, follow these steps:
@@ -154,6 +154,18 @@ To preview primary product media assignments, follow these steps:
 4. The default view will show any product **Master** primary media in the media gallery preview.
 5. If the product is configured with dimensions, select different dimension values in the dropdown controls to preview the media gallery experience for different product variants.
 6. Click **Close** to exit the preview experience.
+
+## Category media assignments
+Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level like they can be for individual products.  Category media assignments are generally used for category navigation end-user experiences.  Commerce currently supports a single default image to be assigned to each channel-specific category.
+
+To assign a default image for a channel-specific category, follow these steps:
+1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
+2. Set the channel context picker in the upper right portion of the action bar to any channel other than Omnichannel.
+3. Search for a known category name in the search view on the left.  Category records will have the word **Category** underneath the name in the results list.  Find the desired category and select it.
+4. In the media assignment workspace, click the **Edit category media** button in the upper right.
+5. In the **Primary media** section, click the **Add media** button.
+6. Select (or upload) the category image to assign from the media picker, and click **Apply**. 
+7. Click **Finish editing** in the upper right to check in the category media assignment (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Publishing media assignments
 Publishing product and category media assignments involves several automatic sequential steps that happen in the backgound. The content management system (CMS) first publishes all the media library items (images, videos, documents, etc.) that are assigned to a product or category. This is the same as going to the **Media library** and clicking **Publish** for each assigned media item. After this step, the individual media items each have public CMS URLs. Next, the product (or category) assignments and fallback defaults are flattened and stored in the Commerce Headquarters (HQ) SQL database via batch job. Then, the HQ data-sync jobs push the flattened media assignments to Commerce Scale Unit (CSU) database(s) accross configured channels. The CSU architecture has a two-hour rolling cache for product and category merchandising data from its own database. To summarize, the time for product and category media assignments to appear for end users after a **Publish** action depends on these factors: 1) the number of media items and assignments for the publish action, 2) the frequency of the HQ omnichannel media batch job in HQ, 3) the frequency of the HQ -> CSU data sync jobs in HQ, 4) the default 2-hour cache for CSU merchandising data.
@@ -170,6 +182,20 @@ To publish product (or category) media assignments, follow these steps:
 #### Using publish groups for media assignments
 [todo]
 
+# Omnichannel media publishing architecture and dataflow
+[Todo]
+
+```mermaid
+graph TD;
+A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
+B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
+C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
+C-->|"1040 (products) full data sync"|E["Product search index service"]
+D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
+E-->|"Search index refresh"|F
+```
+[todo]
+
 ### Reseting assignments to defaults
 The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the product in the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default fallback assignments, as explained in the [channel and locale media fallback section](#omnichannel-channel-specific-and-locale-specific-media-assignments).  This effectively _reverses_ the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which disconnects the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
 
@@ -179,23 +205,8 @@ To reset a product's media assignments, follow these steps:
 3. Click the **Reset to default** button in the top action bar.
 4. When the confirmation dialog appears, click **Ok**.
 
-## Category media assignments
-Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level like they can be for individual products.  Category media assignments are generally used for category navigation end-user experiences.  Commerce currently supports a single default image to be assigned to each channel-specific category.
-
-To assign a default image for a channel-specific category, follow these steps:
-1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
-2. Set the channel context picker in the upper right portion of the action bar to any channel other than Omnichannel.
-3. Search for a known category name in the search view on the left.  Category records will have the word **Category** underneath the name in the results list.  Find the desired category and select it.
-4. In the media assignment workspace, click the **Edit category media** button in the upper right.
-5. In the **Primary media** section, click the **Add media** button.
-6. Select (or upload) the category image to assign from the media picker, and click **Apply**. 
-7. Click **Finish editing** in the upper right to check in the category media assignment (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
-
 # Omnichannel content media library
 Starting with Commerce version 10.0.35, **site builder** contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within **site builder**; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in **site builder**, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in **Commerce Headquarters (HQ)** accross all configured channels, and 2) there is a system-default language called **Neutral** that can be used as a base configuration and [default fallback](#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
-
-## Bulk import and export of media assignments
-[todo: Link to Petri's documentation]
 
 ## Omnichannel content copy between tenants
 Omnichannel content can be copied accross tenants, much like site copies for individual websites in **site builder**.  The copy process is always initiated from the destination tenant, by choosing a source tenant can be chosen to copy omnichannel content from.  The copy is performed by the CMS job service which can be monitored in from **site builder**'s tenant view under **Tenant settings > Jobs**.  The length of time to complete a copy is variable, and is dependent on the amount of content being copied.  If you wish to perform a partial copy or have the ability to audit which specific omnichannel media and product assignments are copied, it is recommended to use the media library's bulk import and export functionality instead of copy.
@@ -233,29 +244,3 @@ To configure omnichannel media managment features in your Commerce environments,
 21. Select **Enable omnichannel media assignments for CSU media locations** and click **Enable now** to switch CSU media locations behavior
 22. Go to **Distribution schedules** and run 1110 job (**Global configuration**)
 23. In site builder's individual sites go to **Site settings** > **Extensions** and turn on **Enable omnichannel media management**.  Click **Save and publish** button at the top.
-
-
-# Omnichannel media management concepts and data model
-[todo]
-
-
-
-## Omnichannel media architecture and dataflow
-[Todo]
-
-```mermaid
-graph TD;
-A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
-B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
-C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
-C-->|"1040 (products) full data sync"|E["Product search index service"]
-D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
-E-->|"Search index refresh"|F
-```
-[todo]
-
-
-
-
-
-
