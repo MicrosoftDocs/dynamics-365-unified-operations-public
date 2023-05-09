@@ -255,28 +255,6 @@ E-->|"Search index refresh"|F
 [todo]
 
 
-# Migrating legacy product media libraries to latest 10.0.35+ omnichannel media management data model
-[todo]
-
-# Omnichannel merchandising media extensibility
-[todo]
-
-## e-Commerce merchandising media modules
-[todo]
-
-### e-Commerce module scenarios for primary media
-[todo]
-
-### e-Commerce module scenarios for additional media
-[todo]
-
-## Omnichannel media data actions and APIs
-[todo]
-
-# Omnichannel media management FAQs
-[Todo]
-
-
 
 
 
