@@ -33,8 +33,6 @@ Organizations looking to migrate environments from one geography to another need
 
 Make sure you review the [availability of features in the selected target geography](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
-Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to a geography where Commerce isn't available.
-
 **Integration impact and updates with other services**
 
 - 3rd-party integrations: If the [migration crosses data resident geos](#geo-migration-between-lifecycle-services-endpoints) then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change. Learn more at [Supported local geographies and endpoints](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#supported-local-geographies-and-endpoints).
