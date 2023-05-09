@@ -147,10 +147,7 @@ You can enable SIRET numbers and service code validation prior posting and invoi
 
 When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-> [!NOTE]
-> For French electronic invoice submission, additional steps may be completed in addition to the standard procedure that was referred earlier.
-
-In France, you may add addtional information prior the standard invoice posting procedure. To provide extra information for invoices, follow these steps in your applibale business process.
+In France, you may add addtional information prior executing the standard invoice posting procedure. To provide extra information for invoices, follow these steps in your applibale business process.
 
 For Sales orders or Free text invoices:
 1. Go to **Accounts receivable** \> **Orders** \> **All sales orders** or **Accounts receivable** \> **Invoices** \> **All free text invoices** 
@@ -158,8 +155,13 @@ For Sales orders or Free text invoices:
 	- Electronic invoice framweork type
 	- Invoice aacount service code
 	- Project manager
-	- Project manager service code
 For project invoice:
+1. Create a new or open created **Project management and accounting** \> **Proejct invoices** \> **Project invoic proposals** 
+2. In invoice proposal header you can select:
+	- Electronic invoice framework type
+	- Funding source service code
+	- Project manager
+	- Project manager service code
 
 
 
