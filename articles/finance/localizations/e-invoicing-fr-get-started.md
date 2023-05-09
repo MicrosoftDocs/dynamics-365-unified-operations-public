@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with the Electronic invoicing add-on for France
-description: This article provides information that will help you get started with the Electronic invoicing add-on for France.
+title: Get started with the Electronic invoicing for France
+description: This article provides information that will help you get started with Electronic invoicing for France in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dkalyuzh
 ms.date: 07/07/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for France. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
+This article provides information that will help you get started with Electronic invoicing for France. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md).
 
 ## Country-specific configuration for French Chorus Pro submission (FR) Electronic invoicing feature
 
@@ -84,11 +84,12 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 16. Select **Save**, and then close the page.
 17. Repeat steps 6 through 16 for the **UBL Project invoice derived** feature setup, **UBL Sales Credit Note derived** feature setup, and **UBL Project Credit Note derived** feature setup.
 
-## Finance business data configuration
+## Finance configuration
 
 ### Prerequisites
 
 The primary address of the legal entity must be in France.
+Feature management key **(France) Electronic invoicing integration with Chorus Pro** must be enabled.
 
 ### Configure legal entity data
 
@@ -103,7 +104,11 @@ The primary address of the legal entity must be in France.
 #### Enter a legal entity's SIRET 
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (SIRET).
+2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (SIRET) alternatively you can use [Registration IDs](emea-registration-ids.md) to setup SIRET number.
+
+#### Enter a customer's SIRET 
+
+### Configure additional data
 
 ## Additional resources
 
