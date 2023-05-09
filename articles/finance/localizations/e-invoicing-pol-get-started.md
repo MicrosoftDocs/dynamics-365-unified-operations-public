@@ -176,6 +176,23 @@ In Poland, the standard submission procedure just generates electronic invoices 
 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
+
+## Receiving of incoming invoices
+
+Do the following configuration steps for the same version **Polish electronic invoice (PL)** electronic invoicing feature which was used for outgoing invoives submission.
+
+1. On the **Setups** tab, in the grid, select the **Import vendor invoice** feature setup, and then select **Edit**.
+2. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. The default value can be kept unchanged, in this case make a notice of this value as since it will be used during further configuration steps.
+3. Select the **Service URI** parameter, and make sure that a valid URI is configured.
+4. Select the **Client ID**, and then select the name of the secret containing the client identifier.
+5. Select **Certificate name**, and then select the name of the digital certificate that you created.
+6. Select the **Start date** parameter, and define the initial date for the first receiving of invoices from KSEF. All invoices with the dates laying between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
+. 
+
+### Finance configuration
+
+Before
+
 ## Additional resources
 
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
