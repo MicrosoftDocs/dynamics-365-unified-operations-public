@@ -31,14 +31,14 @@ Organizations looking to migrate environments and data from one geography to ano
 
 **Feature parity**
 
-Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
+Make sure you review the [availability of features in the selected target geography](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#feature-availability-in-local-geographies) before deciding on which geography to deploy into. If certain features are not available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
 
 Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to a geography where Commerce isn't available.
 
 **Integration impact and updates with other services**
 
-- 3rd-party integrations: If the [migration crosses data resident geos](#geo-migration-between-lifecycle-services-endpoints) then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change.
-- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes. (e.g. dual-write needs to be reconfigured in target geo)
+- 3rd-party integrations: If the [migration crosses data resident geos](#geo-migration-between-lifecycle-services-endpoints) then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change. Learn more at [Supported local geographies and endpoints](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#supported-local-geographies-and-endpoints).
+- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes (e.g. dual-write needs to be reconfigured in target geo).
 
 **Timeline of actions and downtime**
 
@@ -52,7 +52,7 @@ Commerce isn't available in all target geographies. If you have Commerce compone
 
 When deploying environments from LCS the available regions listed will display if the target region is "Data resident" or not. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with LCS. 
 
-Some supported geographies will have different endpoint URLs. When moving between geographies, this can change the environment endpoint. Example, moving from United States to Europe will change the environment endpoint (from NAME.operations.dynamics.com to NAME.operations.eu.dynamics.com). The change of the environment endpoint will impact any integrated service that takes a dependency on the correct endpoint URL. Consider the [list of avaialble geographies and endpoints](deployment-options-geo.md) to see what geograhpies change the URL. 
+Some supported geographies will have different endpoint URLs. When moving between geographies, this can change the environment endpoint. Example, moving from United States to Europe will change the environment endpoint (from NAME.operations.dynamics.com to NAME.operations.eu.dynamics.com). The change of the environment endpoint will impact any integrated service that takes a dependency on the correct endpoint URL. Consider the [list of avaialble geographies and endpoints](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#supported-local-geographies-and-endpoints) to see what geograhpies change the URL. 
 
 ## Environment migration process
 
