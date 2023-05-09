@@ -66,7 +66,87 @@ The amount of time that's required depends on the volume of data. However, there
 
 ### How do I uninstall business performance analytics?
 
-Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
+####Option 1:##### 
+1. Log in to your organization
+2. Open the developer console by hitting Ctrl+Shit+I  Or under More tools you can select Developer tools and switch to console tab.
+3. Paste the below JavaScript code to start uninstall process.
+
+UninstallBPA JavaScript
+
+// Get the current org URL
+const ORG = window.location.hostname;
+const WEB_API = `https://${ORG}/api/data/v9.2`;
+const SOLUTIONS = [
+  "msdyn_BpaAnchor",
+  "msdyn_BpaPlugins",
+  "msdyn_Bpa",
+  "msdyn_BpaPermissions",
+  "msdyn_BpaPermissions_TIP",
+  "msdyn_BpaTables",
+  "msdyn_BpaControls",
+  "msdyn_BpaTablesAnchorSolution",
+  "msdyn_BpaTablesUserRoles",
+  "msdyn_BpaTablesUserRoles_TIP",
+  "msdyn_BpaAnalyticalTablesWorkspace",
+  "msdyn_BpaAnalyticalTables",
+  "msdyn_BpaTablesTransformationJobFlows",
+  "msdyn_BpaTablesTransformationJobFlows_TIP",
+  "msdyn_BpaTablesDataProcessingConfigurations",
+  "msdyn_BpaTablesDataProcessingConfigurations_TIP",
+  "msdyn_BpaTablesDataLakeSynchronizationWorkspace",
+  "msdyn_BpaTablesDataLakeSynchronization",
+  "msdyn_BpaTablesStandardEntities",
+  "msdyn_BpaTablesVirtualEntitiesWorkspace",
+  "msdyn_BpaTablesVirtualEntities",
+  "msdyn_BpaTablesManagedDataLake",
+  "msdyn_BpaTablesManagedDataLake_TIP",
+  "msdyn_BpaPipelinePlugins",
+  "msdyn_BpaTablesSecurity",
+  "msdyn_BpaTablesSecurity_TIP",
+];
+
+
+// Get all solutions
+let _getSolutions = () => {
+  var requestOptions = {
+    method: "GET",
+  };
+  return fetch(
+    `${WEB_API}/solutions?$filter=(isvisible%20eq%20true)&$select=solutionid,friendlyname,uniquename`,
+    requestOptions
+  ).then((response) => response.json());
+};
+
+// Delete the solution by solution ID
+let _deleteSolution = (solutionid) => {
+  var requestOptions = {
+    method: "DELETE",
+  };
+  return fetch(`${WEB_API}/solutions(${solutionid})`, requestOptions);
+};
+let start = async () => {
+  console.info("Uninstalling BPA solutions");
+  let installedSolutions = (await _getSolutions()).value;
+
+
+  // Sort the installed BPA solutions 
+  let installedBPASoltuins = installedSolutions
+    .filter((i) => SOLUTIONS.indexOf(i.uniquename) > -1)
+    .sort(
+      (i, j) =>
+        SOLUTIONS.indexOf(i.uniquename) - SOLUTIONS.indexOf(j.uniquename)
+    );
+  for (let solution of installedBPASoltuins) {
+    console.info(`Removing solution ${solution.friendlyname}`);
+    await _deleteSolution(solution.solutionid);
+  }
+  console.info("BPA Solutions removed successfully");
+};
+
+start();
+
+####Option 2:#### 
+The solutions must be manually deleted in the following order.
 
 1. Business performance analytics anchor solution  
 2. Business performance analytics plugins solution 
@@ -89,7 +169,7 @@ Business performance analytics can be manually uninstalled through Power Platfor
 
 To delete each of the preceding solutions, follow these steps.
 
-1. In the maker portal, on the **Solution** tab, select the solution to delete, and then select **Delete**.
+1. In the [maker portal](https://make.preview.powerapps.com/), on the **Solution** tab, select the solution to delete, and then select **Delete**.
 2. Select **Delete** again to confirm the operation.
 3. Wait for the **Deleting** message box to disappear. If the operation is successful, you receive the following message: "Successfully deleted solution."
 
