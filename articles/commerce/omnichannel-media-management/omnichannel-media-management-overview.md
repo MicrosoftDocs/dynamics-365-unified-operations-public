@@ -19,9 +19,6 @@ ms.search.form:
 # Omnichannel media management overview
 Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrated solution for managing merchandising media. It is now easy to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy filenames, allowing for the reuse of a single media asset for multiple merchandising entities. Specific product dimensions can be assigned media while ignoring unnecessary ones (example: a shirt product with size, color, and style dimensions can assign media to color + style dimension combinations, while ignoring size dimension media assignments).  Additionally, large sets of media assignments and metadata can be managed through bulk export and import using manifest files (.TSV format). The solution integrates media management capabilities into the **Commerce headquarters (HQ)** merchandising flow, and introduces a new omnichannel content workspace within **Commerce site builder**. All omnichannel media management capabilities introduced in 10.0.35+ are currently opt-in through feature flags. New implementations are encouraged to use this capability by default, while existing solutions may opt-in on their own preferred timeline by following the documented migration steps. With these capabilities, **Dynamics 365 Commerce** now offers a more flexible native solution for managing merchandising media.
 
-# Omnichannel media management quick links
-[todo]
-
 # Omnichannel media management how-to guides
 ## Product media assignments
 The following topics cover the steps to author and assign media to products.  
@@ -180,7 +177,17 @@ To publish product (or category) media assignments, follow these steps:
 7. The assignments are now **Published**, and will appear for channel-specific end-users after the configured HQ batch jobs, CSU data-sync, and CSU cache schedule are completed.
 
 #### Using publish groups for media assignments
-[todo]
+Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  To learn more about the publish group feature within **site builder** , read the (Work with publish groups)[https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups] article.
+
+To use a publish group for product media assignments, follow these steps:
+1. In the **Omnichannel content** workspace, click **Publish groups** in the left navigation panel.
+2. In the publish groups list view, click the **New** button in the top action bar, enter a friendly name for your publish group, and click **Ok**.
+3. In the left navigation publish group context selector control (the default will be **Live site**), select your new publish group.  
+4. Go to **Product media** in the left navigation panel.
+5. Select and edit the product media assignments you wish to stage inside the publish group as you would normally. 
+>[!NOTE]
+>By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
+6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the (Schedule a publish group to go live)[https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups#schedule-a-publish-group-to-go-live] article.
 
 # Omnichannel media publishing architecture and dataflow
 [Todo]
