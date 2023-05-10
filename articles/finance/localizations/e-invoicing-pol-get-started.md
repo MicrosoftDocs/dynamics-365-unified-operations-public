@@ -177,9 +177,9 @@ In Poland, the standard submission procedure just generates electronic invoices 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
 
-## Receiving of incoming invoices
+## Receiving of incoming electronic invoices
 
-Do the following configuration steps for the same version **Polish electronic invoice (PL)** electronic invoicing feature which was used for outgoing invoives submission.
+Do the following configuration steps for the same version of **Polish electronic invoice (PL)** electronic invoicing feature which was used for outgoing invoives submission.
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoice** feature setup, and then select **Edit**.
 2. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. The default value can be kept unchanged, in this case make a notice of this value as since it will be used during further configuration steps.
@@ -189,6 +189,7 @@ Do the following configuration steps for the same version **Polish electronic in
 6. Select the **Start date** parameter, and define the initial date for the first receiving of invoices from KSEF. All invoices with the dates laying between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same Import channel name as was defined during step 2.
 8. <a id="OutputFile"></a>On the **Variables** tab, make a notice of the **OutputFile** name as since it will be used during further configuration steps.
+*!!! TO CLARIFY HOW REFERENCE NUMBER IS USED. ANY EXTRA CONFIGURATION NEEDED?*
 9. Select **Save** (if you made any changes), and close the page. 
 
 ### Finance configuration
@@ -207,12 +208,15 @@ Some additional parameters must be configured directly in Finance.
 8. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 9. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same Import channel name as was previously defined.
 10. In the **Channels** section, in the **Company** field, select a required Legal Entity.
-11. In the **Channels** section, in the **Document context** field, select the configuration previous created during steps 3-7.
+11. In the **Channels** section, in the **Document context** field, select the configuration previously created during steps 3-7.
 12. In the **Import sources** section, in the **Name** field, enter the same name of **OutputFile** as was defined during [step 8](#OutputFile) of the previous chapter.
 13. In the **Import sources** section, in the **Data entity name** field, select **Vendor invoice header** value.
 14. In the **Import sources** section, in the **Model mapping** field, refer to **Vendor invoice import (PL)** configuration.
+15. Select **Save**, and close the page.
 
 ### Finance business data configuration
+
+to do
 
 ## Additional resources
 
