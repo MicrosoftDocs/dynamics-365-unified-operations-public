@@ -149,7 +149,7 @@ start();
 
 ### Uninstall business process analytics
 
-Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
+Option two: Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
 1. Business performance analytics anchor solution  
 2. Business performance analytics plugins solution 
