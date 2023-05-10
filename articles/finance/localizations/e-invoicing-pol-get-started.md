@@ -216,7 +216,21 @@ Some additional parameters must be configured directly in Finance.
 
 ### Finance business data configuration
 
-to do
+The following configuration of master data must be done to provide matching of incoming electronic invoices.
+
+#### Vendors 
+ 
+ 1. Go to **Accounts payable** > **Vendors** > **All vendors** and select a specific vendor.
+ 2. On the **Invoice and delivery** FastTab, enter a valid value in the **Tax exempt number** field. Vendor's tax exempt number will be used for the vendor's identification during incoming electronic invoices import process. If no vendor with matching data is found in the system then the import process will fail with a related error-message.
+
+#### Products
+
+1. Go to **Product information management** > **Productss** > **Released products** and select a specific product.
+2. In the **Purchase** menu, in the **Related information** section, select **External item description**.
+3. In the **Vendor relation** field, select the vendor or vendor group for which products external identification is being set up.
+4. In the **External item number** field, enter the identification number of the product for a specific vendor or the group of vendors. External item numbers will be used for the product's identification during incoming electronic invoices import process. If no product with matching criteria is found in the system then the import process will fail with a related error-message.
+
+#### Units
 
 ## Additional resources
 
