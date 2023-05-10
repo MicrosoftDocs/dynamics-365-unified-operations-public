@@ -48,7 +48,7 @@ The following errors are likely to occur if another operation is in progress dur
 
 Data will be available within 12 to 24 hours after installation is completed.
 
-### How will I know when data is available on reports?
+### When will data be available on reports?
 
 We recommend that you check 24 hours after the installation of business performance analytics is completed.
 
