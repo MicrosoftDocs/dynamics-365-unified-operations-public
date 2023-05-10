@@ -66,8 +66,10 @@ The amount of time that's required depends on the volume of data. However, there
 
 ### How do I uninstall business performance analytics?
 There are two options available to uninstall business performance analytics. 
- 
-1. Log in to your organization
+
+Option one:
+
+1. Log into Power platform administration center. 
 2. Click Ctrl+Shit+I to open the developer console or go to **More tools**, select **Developer tools** and **Console** tab.
 3. Paste the below JavaScript code to start uninstall process.
 
