@@ -28,20 +28,12 @@ To solve these issues, you can use the archival framework for finance and operat
 
 To use this feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later. <!--KFM: Correct version? -->
-- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). <!--KFM: Link to more info? What is the service called? Maybe a short mention of what configuration is needed (with link). -->
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Enable them in the following order:
-    1. *(Preview) Archive*
-    1. *(Preview) Archive sales orders to history tables*
-    1. *(Preview) Archive sales orders to history tables using archive service*
-
-The purpose of each of these features is summarized in the following table
-
-| Feature | Description |
-|---|---|
-| *(Preview) Archive* | This feature lets you execute data archive for select high volume areas of the product. |
-| *(Preview) Archive sales orders to history tables* | Provides a framework for archiving sales orders from day-to-day transaction tables to local history tables. |
-| *(Preview) Archive sales orders to history tables using archive service* | Performs the archiving of sales orders from day-to-day transaction tables to history tables. Once archived to history tables, the data from the day-to-day transaction tables will be purged. |
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archiving-setup.md).
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archiving-setup.md).
+    - *(Preview) Archive*
+    - *(Preview) Archive sales orders to history tables*
+    - *(Preview) Archive sales orders to history tables using archive service*
 
 ## Which sales orders can be archived and when
 
