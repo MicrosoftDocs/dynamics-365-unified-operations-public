@@ -19,7 +19,7 @@ Microsoft Dynamics 365 finance and operations apps are generally available to su
 
 ## Data residency
 
-Data residency for finance and operations apps environments and Lifecycle Services (LCS) are not necessarily the same. When deploying environments you will see the supported regions. Only regions marked "Data resident region" store the data within the same geograhy as LCS. Regions without this mark are "not data resident", meaning the data will not be located in the same geography as LCS. Customers requiring both LCS and environments data doesn't leave the geographic boundary will need to ensure they create the LCS Implementation project using the correct LCS endpoint and correct region for environment deployment. See the [overview below for more information on which geographies LCS stores data](#supported-geographies-and-endpoints).
+Data residency for finance and operations apps environments and Lifecycle Services (LCS) aren't necessarily the same. You can see the supported regions when deploying environments. Only regions marked "Data resident region" store the data within the same geography as LCS. Regions without this mark are "not data resident", meaning the data is not located in the same geography as LCS. Customers requiring both LCS and environments data don't leave the geographic boundary need to ensure they create the LCS Implementation project using the correct LCS endpoint and correct region for environment deployment. See the [overview for more information on which geographies LCS stores data](#supported-geographies-and-endpoints).
 
 ### Supported geographies and endpoints
 
@@ -41,7 +41,7 @@ The following table lists the Lifecycle Services geographies and endpoints.
 
 ## Feature availability across geographies
 
-Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the below documents to get an overview of services and their availability in the geographies you are planning to use.
+Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the following documents to get an overview of services and their availability in the geographies you're planning to use.
 
 * [Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
 * [Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
