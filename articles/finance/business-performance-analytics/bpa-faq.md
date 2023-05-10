@@ -26,7 +26,7 @@ We're implementing a public preview to ensure that we can provide a successful e
 
 ### What's the estimated time that's required to set up business performance analytics?
 
-The setup of business performance analytics will take about 30 minutes. However, it will take 12 to 24 hours for data to be available on reports.
+The setup of business performance analytics takes about 30 minutes. However, it takes 12 to 24 hours for data to be available on reports.
 
 ### I received an error during the installation of business performance analytics. How do I fix it?
 
@@ -44,21 +44,21 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-### When will data be available in reports after the app is installed for the first time?
+### When will data be available in reports after the business process analytics is installed for the first time?
 
-Data will be available within 12 to 24 hours after app installation is completed.
+Data will be available within 12 to 24 hours after installation is completed.
 
 ### How will I know when data is available on reports?
 
 We recommend that you check 24 hours after the installation of business performance analytics is completed.
 
-### How many years of data will be available on reports?
+### How many years of data are available on reports?
 
-Business performance analytics will have data for the current fiscal year plus the previous two years.
+Business performance analytics has data for the current fiscal year plus the previous two years.
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
-Data will be refreshed once per day, at 00:00:00 AM (UTC).
+Data is refreshed once per day, at 00:00:00 AM (UTC).
 
 ### How long does it take for fresh data to be available every day on business performance analytics reports?
 
@@ -69,8 +69,8 @@ There are two options available to uninstall business performance analytics.
 
 Option one:
 
-1. Log into Power platform administration center. 
-2. Click Ctrl+Shit+I to open the developer console or go to **More tools**, select **Developer tools** and **Console** tab.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+2. Click Ctrl+Shift+I to open the developer console or go to **More tools**, select **Developer tools** and **Console** tab.
 3. Paste the below JavaScript code to start uninstall process.
 
 UninstallBPA JavaScript
@@ -201,6 +201,6 @@ When a new release of business performance analytics is available, you can updat
 
 ### During public preview, what can I expect each time that data is restored from production to sandbox?
 
-As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of business performance analytics. In public preview, data will not be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install business performance analytics.
+As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install business performance analytics.
 Any new data changes done in Dynamics 365 finance and operations UI can still be seen in business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
 
