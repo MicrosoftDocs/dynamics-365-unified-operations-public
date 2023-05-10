@@ -45,7 +45,7 @@ Organizations looking to migrate LCS project from one geography to another need 
 - Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](../deployment/deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into.
 - All project environments (Sandbox and Production) must be on supported versions before a migration is scheduled.
 - Project migration manager feature is available only to LCS project owners.
-- The Project migration manager can be used to transfer data within cloud implementation projects and partner projects for Finance and Operations apps. Other types of projects aren't yet supported.
+- The Project migration manager can be used to transfer data within cloud implementation projects and partner projects for finance and operations apps. Other types of projects aren't yet supported.
 - There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described in below table.
 
 **Data that can be transferred between instances**
