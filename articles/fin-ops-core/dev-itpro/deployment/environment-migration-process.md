@@ -1,12 +1,12 @@
 ---
 title: Environment migration process
-description: This article describes hot to move your environment from one geography to another.
+description: This article describes how to move your environment from one geography to another.
 author: matapg007
 ms.author: matgupta
 ms.reviewer: johnmichalak
 ms.service: dynamics-365-finance
 ms.topic: how-to
-ms.date: 10/19/2022
+ms.date: 05/05/2023
 ms.custom:
 ---
 
@@ -16,16 +16,16 @@ ms.custom:
 
 Microsoft continues to open data centers for business service in both existing regions and new regions. The Geo migration feature lets you move your finance and operations apps environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
 
-Microsoft 365 and Dynamics 365 are separate services. Moving your finance and operations apps environments won't move your Microsoft 365 service. Your finance and operations apps environment will still appear alongside the Microsoft 365 environment in your tenant.
+Microsoft 365 and Dynamics 365 are separate services. Moving your finance and operations apps environments won't move your Microsoft 365 service. Your finance and operations apps environment still appears alongside the Microsoft 365 environment in your tenant.
 
-When finance and operations apps environment is deployed in a geo, there are multiple Azure resources associated with it. As part of migration process these resources also move from source geo to target geo.
+When finance and operations apps environment is deployed in a geography, there are multiple Azure resources associated with it. As part of migration process these resources also move from source geography to target geography.
 
 ## Considerations
-Organizations looking to migrate environments from one geography to another need to consider the following various aspects before migrating.
+Organizations looking to migrate environments from one geography to another need to consider the following aspects before migrating.
 
 **Supported scenarios**
 
-- Sandbox and Production environments can be migrated between geographies. 
+- Sandbox and production environments can be migrated between geographies. 
 - Cloud Hosted Environment (CHE) migration isn't supported.
 - Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
 
@@ -36,19 +36,19 @@ Make sure you review the [availability of features in the selected target geogra
 **Integration impact and updates with other services**
 
 - Third party integrations: If the migration crosses data resident geographies, then finance and operations apps environment endpoint change. Any third party integrations that make use of the endpoint require change. Learn more at [Supported geographies and endpoints](deployment-options-geo.md#supported-geographies-and-endpoints).
-- Finance and operations apps add-ins and micro-services: add-ins configurations are not migrated as part of migration process. You have to uninstall the add-ins before the migration and then reinstall them once migration completes (e.g. dual-write needs to be reconfigured in target geo).
+- Finance and operations apps add-ins and micro-services: add-ins configurations aren't migrated as part of migration process. You have to uninstall the add-ins before the migration and then reinstall them once migration completes (For example, dual-write needs to be reconfigured in target geo).
 
 **Timeline of actions and downtime**
 
 - We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
-- Environment migrations are not self-serve and require customer initiated support ticket.
+- Environment migrations aren't self-serve and require customer-initiated support ticket.
 - Create your support request for migration at least 10 days before you want the environment to be migrated.
-- Overall migration activity requires up to 48 hours of downtime. Overall time varies depending on connectivity between two geos along with database and storage account size.
-- If there is a linked Dataverse environment, it needs another 24 hours of downtime.
+- Overall migration activity requires up to 48 hours of downtime. Overall time varies depending on connectivity between two geographies along with database and storage account size.
+- If there is a linked Microsoft Dataverse environment, it needs another 24 hours of downtime.
 
 **Geo migration between Lifecycle Services endpoints**
 
-The available regions for deploying environments shows "Data resident" if the target region is the same region as the where LCS stored data. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with LCS. 
+The available regions for deploying environments show **Data resident** if the target region is the same region as they where Microsoft Lifecycle Services stored data. See finance and operations apps [data residency](deployment-options-geo.md#data-residency) for more information about how you can make finance and operations apps environments stay data resident with Lifecycle Services. 
 
 Some supported geographies have different endpoint URLs. Moving between geographies can change the environment endpoint URL. Example, moving from United States to Europe change the environment endpoint (from NAME.operations.dynamics.com to NAME.operations._eu_.dynamics.com). The change of the environment endpoint impacts any integrated service that takes a dependency on the correct endpoint URL. Consider the [list of available geographies and endpoints](deployment-options-geo.md#supported-geographies-and-endpoints) to see what geographies change the URL. 
 
@@ -60,11 +60,11 @@ After Sandbox migration validation is successfully completed, project team can p
 
 | **Step** | **Responsible** | **Description** | **Additional comments** |
 |------|-------------|-------------|---------------------|
-|1|Customer/Partner|Refresh Sandbox with Production data|Optional step if migrating Sandbox|
-|2|Customer/Partner|Submit support request to migrate a specific environment|Create your support request for migration at least 10 days before you want the environment to be migrated. Information required in ticket is: Customer name, Azure Active Directory Tenant ID, Environment ID, LCS Project ID (associated with environment), source geography, target geography, and preferred date and time.|
-|3|Microsoft|Review the geo-to-geo migration request and approve it||
-|4|Customer/Partner|Before the start of downtime uninstall any microservices or add-ins||
-|5|Microsoft|Execute migration|Associated Dataverse environment (if any) will also be migrated in same time frame. **Premigration** work begins 12 hours before the scheduled downtime. The environment remains available for use during premigration. The environment is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. During the **migration**, finance and operations apps and Dataverse environments are unlinked. Both environments are migrated and relinked after migration is complete.|
-|6|Microsoft|Confirm completion of the migration to customer/partner||
-|7|Customer/Partner|Validate functionality in the migrated environment in the target geo|Consider potential feature parity differences.|
-|8|Customer/Partner|Reconfigure any add-ins, Commerce/POS, third party integrations, etc.|Consider change of endpoint URLs.|
+| 1 | Customer/Partner | Refresh Sandbox with Production data. | Optional step if migrating Sandbox. |
+| 2 | Customer/Partner | Submit support request to migrate a specific environment. | Create your support request for migration at least 10 days before you want the environment to be migrated. Information required in ticket is: Customer name, Azure Active Directory Tenant ID, Environment ID, Lifecycle Services Project ID (associated with environment), source geography, target geography, and preferred date and time. |
+| 3 | Microsoft | Review the geo-to-geo migration request and approve it.| |
+| 4 | Customer/Partner | Before the start of downtime uninstall any microservices or add-ins. | |
+| 5 | Microsoft | Execute migration | Associated Dataverse environment, if any, are migrated in same time frame. **Premigration** work begins 12 hours before the scheduled downtime. The environment remains available for use during premigration. The environment is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed. During the **migration**, finance and operations apps and Dataverse environments are unlinked. Both environments are migrated and relinked after migration is complete.|
+| 6 | Microsoft | Confirm completion of the migration to customer/partner. | |
+| 7 | Customer/Partner | Validate functionality in the migrated environment in the target geography. | Consider potential feature parity differences.|
+| 8 | Customer/Partner | Reconfigure any add-ins, Commerce/POS, third party integrations, etc. | Consider change of endpoint URLs.|
