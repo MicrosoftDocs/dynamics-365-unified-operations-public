@@ -56,7 +56,7 @@ Some supported geographies will have different endpoint URLs. When moving betwee
 
 We recommend that you migrate Sandbox environments first and validate them before you trigger a Production migration.
 
-After Sandbox migration validation is successfully complete project team can plan the time for Production environment migration and follow same steps described above starting with raising the Support ticket. 
+After Sandbox migration validation is successfully completed, project team can plan the time for Production environment migration and follow same steps described above starting with raising the Support ticket. 
 
 | Step | Responsible | Description | Additional comments |
 |------|-------------|-------------|---------------------|
