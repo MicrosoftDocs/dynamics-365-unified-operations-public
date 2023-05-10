@@ -698,6 +698,12 @@
           items:
           - name: Create and configure extended warranties
             href: extended-warranty.md
+        - name: Omnichannel media management
+          items:
+          - name: Omnichannel media management overview
+            href: omnichannel-media-management-overview.md
+          - name: Assign media to products and categories
+            href: assign-media-omnichannel.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
