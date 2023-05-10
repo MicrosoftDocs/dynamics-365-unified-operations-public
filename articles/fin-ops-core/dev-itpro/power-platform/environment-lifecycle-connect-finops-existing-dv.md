@@ -15,7 +15,6 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
@@ -31,15 +30,15 @@ Administrators in Microsoft Lifecycle Services are finding that more capabilitie
 
 You'll learn how to:
 
-> [!div class="checklist"]
-> * Step 1: From the **Power Platform Integration** tab, select **Setup**.
-> * Step 2: Use a different Power Platform environment.
-> * Step 3: Confirm you wish to proceed.
-> * Step 4: Provisioning in progress.
+* Step 1: From the **Power Platform Integration** tab, select **Setup**.
+* Step 2: Use a different Power Platform environment.
+* Step 3: Confirm you wish to proceed.
+* Step 4: Provisioning in progress.
 
-As an example of this scenario, a customer who has already gone live with the Microsoft Dynamics 365 Field Service application on a Dataverse-based environment Power Platform admin center (PPAC) wants to connect their new finance and operations apps environment to it. This operation unlocks popular features, such as, Dual-write, Virtual entities, and Business events out of the box between the back-office and front-office applications.
+As an example of this scenario, a customer who has already gone live with the Microsoft Dynamics 365 Field Service application on a Microsoft Dataverse-based environment Power Platform admin center (PPAC) wants to connect their new finance and operations apps environment to it. This operation unlocks popular features, such as, Dual-write, Virtual entities, and Business events out of the box between the back-office and front-office applications.
 
 ## Prerequisites
+
 The following list describes the prerequisites for setting up the Power Platform integration.
 
 - Make sure that at least 1 GB of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. To view your capacity, see the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
@@ -92,7 +91,7 @@ Type your name in the dialog window to proceed with the setup activity.
 
 ## Step 4: Provisioning in progress
 
-There is a brief downtime on the finance and operations apps environment so that the X++ runtime is made aware of its connection to Dataverse for various features.
+There's a brief downtime on the finance and operations apps environment so that the X++ runtime is made aware of its connection to Dataverse for various features.
 
 During this time, any finance and operations platform applications that are required, but weren't previously installed, may be installed on your Dataverse instance.  
 
