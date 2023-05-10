@@ -56,7 +56,7 @@ To configure omnichannel media management features in your Commerce environments
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
-As explained in the [Publish media assignments](publish-media-assignments.md), product media assignments flow from site builder's CMS > headquarters database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
+As explained in the [Publish media assignments](publish-media-omnichannel.md), product media assignments flow from site builder's CMS > headquarters database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
 
 ```mermaid
 graph TD;
@@ -70,7 +70,7 @@ E-->|"Search index refresh"|F
 
 ## Omnichannel content media library
 
-Starting with Commerce version 10.0.35, site builder contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within site builder; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in site builder, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in headquarters across all configured channels, and 2) there's a system-default language called **Neutral** that can be used as a base configuration and [default fallback](omnichannel-media-management/assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
+Starting with Commerce version 10.0.35, site builder contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within site builder; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in site builder, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in headquarters across all configured channels, and 2) there's a system-default language called **Neutral** that can be used as a base configuration and [default fallback](assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
 
 ## Additional resources
 
