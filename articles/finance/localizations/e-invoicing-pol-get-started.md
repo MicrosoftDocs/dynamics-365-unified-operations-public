@@ -179,7 +179,7 @@ You can inquire about the results of the submission at **Organization administra
 
 ## Receiving of incoming electronic invoices
 
-Do the following configuration steps for the same version of **Polish electronic invoice (PL)** electronic invoicing feature which was used for outgoing invoives submission.
+Do the following additional configuration steps for the same version of **Polish electronic invoice (PL)** electronic invoicing feature which was used for outgoing invoices submission.
 
 1. On the **Setups** tab, in the grid, select the **Import vendor invoice** feature setup, and then select **Edit**.
 2. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. The default value can be kept unchanged, in this case make a notice of this value as since it will be used during further configuration steps.
@@ -189,7 +189,6 @@ Do the following configuration steps for the same version of **Polish electronic
 6. Select the **Start date** parameter, and define the initial date for the first receiving of invoices from KSEF. All invoices with the dates laying between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same Import channel name as was defined during step 2.
 8. <a id="OutputFile"></a>On the **Variables** tab, make a notice of the **OutputFile** name as since it will be used during further configuration steps.
-*!!! TO CLARIFY HOW REFERENCE NUMBER IS USED. ANY EXTRA CONFIGURATION NEEDED?*
 9. Select **Save** (if you made any changes), and close the page. 
 
 ### Finance configuration
@@ -238,6 +237,20 @@ The following configuration of master data must be done to provide matching of i
 4. In the **Value** section, in the **Value** field, enter the external code that will be matching with the unit codes from incoming electronic invoices during import process.
    > [!NOTE]
    > External unit codes make sense only in assumption that incoming electronic invoices will contain explicitly defined units. Otherwise this step can be omitted. 
+
+#### Receive electronic invoices
+
+To receive electonic invoices, follow these steps:
+
+1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
+2. Select **OK** and then close the page.
+
+During import process the system will try to automatically match incoming electronic vendor invoices with existing purchase orders.
+If no purchase order is found, the system will raise a warning but continue import considering products in invoice lines as **Non-stock** items and will expect that such products belong to **Item model group** with unmarked **Stocked product** check-box in Inventory policy. Otherwise, the import process will fail with a related error-message.
+
+To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
+
+To view successfully received invoiced, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**.
 
 ## Additional resources
 
