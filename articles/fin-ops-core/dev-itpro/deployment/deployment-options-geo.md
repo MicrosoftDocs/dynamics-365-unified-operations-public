@@ -23,8 +23,7 @@ Data residency for finance and operations apps environments and Lifecycle Servic
 
 ### Supported geographies and endpoints
 
-Dynamics 365 finance and operations apps can be installed in the following geographies:
-Asia Pacific, Australia, Brazil, Canada, Europe, France, India, Japan, Norway, South Africa, Switzerland, Uniated Arab Emirates, United Kingdom and United States.
+Dynamics 365 finance and operations apps environments can be deployed across many different geographies. See the overview below for [a complete list of available regions](#feature-availability-across-geographies). Lifecycle Services (LCS) is used for deploying the environments, and there are several instances available globally to provide data residency for the data stored in LCS.
 
 The following table lists the Lifecycle Services geographies and endpoints.
 
