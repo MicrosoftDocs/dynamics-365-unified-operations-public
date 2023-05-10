@@ -10,6 +10,8 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2023-03-01
 
+---
+
 # Publish media assignments
 
 [!include[banner](../includes/banner.md)]
