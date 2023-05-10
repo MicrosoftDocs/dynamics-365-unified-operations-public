@@ -4,13 +4,11 @@ description: This article provides an overview of omnichannel media management i
 author: phinneyridge
 ms.date: 5/10/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
-ms.search.validFrom: 
+ms.search.validFrom: 2023-03-01
 
 ---
 
@@ -310,3 +308,7 @@ To configure omnichannel media management features in your Commerce environments
 18. Search and navigate to the **Distribution schedules** screen from the headquarters search control, and run the **1110 (Global configuration)** job to push the feature flag settings to CSU.
 19. For any e-Commerce channels, open site builder and navigate to each site's **Site settings** > **Extensions** controls, and click until a checkmark appears on the **Enable omnichannel media management** feature switch.  Click **Save and publish** button at the top to enable.
 20. Your environment should now be ready to use the omnichannel media features end-to-end. Refer to the [Omnichannel media management overview](#omnichannel-media-management-overview) for authoring tutorials, and the [Omnichannel media publish architecture and dataflow](#omnichannel-media-publish-and-unpublish-architecture-and-dataflow) section to learn about job and cache behavior for product media publishing.
+
+## Additional resources
+
+
