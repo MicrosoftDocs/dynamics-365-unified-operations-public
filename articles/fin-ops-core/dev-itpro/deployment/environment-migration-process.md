@@ -36,7 +36,7 @@ Make sure you review the [availability of features in the selected target geogra
 **Integration impact and updates with other services**
 
 - 3rd-party integrations: If the [migration crosses data resident geos](#geo-migration-between-lifecycle-services-endpoints) then finance and operations apps environment endpoint will change. Any 3rd party integrations that make use of the endpoint will require change. Learn more at [Supported local geographies and endpoints](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#supported-local-geographies-and-endpoints).
-- Finance and operations apps add-ins and micro-services: Add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes (e.g. dual-write needs to be reconfigured in target geo).
+- Finance and operations apps add-ins and micro-services: add-ins configurations are not migrated as part of migration process. You will have to uninstall the add-ins before the migration and then reinstall them once migration completes (e.g. dual-write needs to be reconfigured in target geo).
 
 **Timeline of actions and downtime**
 
