@@ -107,7 +107,7 @@ Prior to Commerce version 10.0.35, swatches were centrally managed in Commerce H
 
 >[!NOTE]
 >If you plan to assign product-specific swatch assignements, it is important to ensure that swatch values are also assigned to the centrally managed list of dimension values in Commerce HQ.  This ensures that product list refiners and filters will display correctly for experiences that return results spanning multiple products (examples: category pages, search results, and product lists).  To configure these centrally-managed swatch dimension assignments, follow the steps described in the [Configure dimension values in Commerce headquarters
-](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters) article.
+](../dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters) article.
 
 To assign product-specific swatches, follow these steps:
 1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
@@ -186,13 +186,13 @@ To publish product (or category) media assignments, follow these steps:
 2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
 3. Ensure that the product (or category) is _not_ still being edited.  If it is, and the edits are yours, then click the **Finish editing button** to check-in the changes to the CMS.  If someone else is editing the media assignments, then ask them to check-in their changes (or if necessary, you can **Discard edits** to return to the previously checked-in media assignments).
 4. Click the **Publish** button on the action bar at the top.  For products, this will publish all draft media assignments in **Master**, **Dimensions**, and **Variants** for the selected product.
-5. The first time you publish media assignments you will see a dialog explaining the sequential publish behavior described in the [paragraph above](#publishing-media-assignments). To skip this dialog for future publish actions, select the **Don't show this message again** checkbox, and then click the **I understand** button.
+5. The first time you publish media assignments you will see a dialog explaining the sequential publish behavior described in the [paragraph above](#publish-media-assignments). To skip this dialog for future publish actions, select the **Don't show this message again** checkbox, and then click the **I understand** button.
 6. If the media assignments reference any unpublished CMS items, you will see a dialog listing the unpublished dependencies.  Click the **Publish all** to automatically publish the unpublished CMS item dependencies.
 7. The assignments are now **Published**, and will appear for channel-specific end-users after the configured HQ batch jobs, CSU data-sync, and CSU cache schedule are completed.
 
 ### Use publish groups for media assignments
 
-Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](publish-groups.md).
+Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](../publish-groups.md).
 
 To use a publish group for product media assignments, follow these steps:
 1. In the **Omnichannel content** workspace, click **Publish groups** in the left navigation panel.
@@ -203,7 +203,7 @@ To use a publish group for product media assignments, follow these steps:
 
 >[!NOTE]
 >By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
-6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live](publish-groups.md#schedule-a-publish-group-to-go-live) article.
+6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live].(../publish-groups.md#schedule-a-publish-group-to-go-live) article.
 
 ### Reset assignments to defaults
 
@@ -220,7 +220,7 @@ To reset a product's media assignments, follow these steps:
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
-As explained in the [Publishing media assignments](#publishing-media-assignments) section, product media assignments flow from **site builder**'s CMS > HQ database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
+As explained in the [Publishing media assignments](#publish-media-assignments) section, product media assignments flow from **site builder**'s CMS > HQ database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
 ```mermaid
 graph TD;
 A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
