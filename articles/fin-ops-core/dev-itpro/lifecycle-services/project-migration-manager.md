@@ -4,7 +4,7 @@
 title: Project migration manager
 description: This article explains how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
 author: LaneSwenka
-ms.date: 04/21/2023
+ms.date: 05/10/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: IT Pro, Developer
 # ms.devlang:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm:
 ms.custom: 257614
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -38,15 +38,15 @@ The Project migration manager lets you move your Lifecycle Services project from
 Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 finance and operations apps available geographies](../deployment/deployment-options-geo.md).
 
 ## Considerations
-Organizations looking to migrate LCS project from one geography to another need to consider various aspects mentioned below before actual migration.
+Organizations looking to migrate Lifecycle Services project from one geography to another need to consider the following aspects before actual migration.
 
-- Migration can take up to two hours when LCS project and environments will be unavailable.
-- As part of the migration a new LCS project will be created and the new project will have a different project URL and LCS project ID. 
+- Migration can take up to two hours when Lifecycle Services project and environments are unavailable.
+- As part of the migration a new Lifecycle Services project is created, and the new project will have a different project URL and Lifecycle Services project ID. 
 - Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](../deployment/deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into.
-- All project environments (Sandbox and Production) must be on supported versions before a migration is scheduled.
-- Project migration manager feature is available only to LCS project owners.
+- All project environments (Sandbox and Production) must be on supported versions before migration is scheduled.
+- Project migration manager feature is available only to Lifecycle Services project owners.
 - The Project migration manager can be used to transfer data within cloud implementation projects and partner projects for finance and operations apps. Other types of projects aren't yet supported.
-- There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations will be described in below table.
+- There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations are described in the following table.
 
 **Data that can be transferred between instances**
 
@@ -67,10 +67,10 @@ The following table shows the data that can be transferred between instances and
 | Automated | Project users | Only project owners from the tenant that owns the source project are migrated to the target Lifecycle Services project. | 
 | Automated | Asset library | Only the last application or merged software deployable package asset that was applied to your sandbox or production environments is automatically migrated. |
 | Manual | Asset library | You'll be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
-| Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They'll have the same environment IDs but will be in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
-| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project will be locked but you'll still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
+| Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They'll have the same environment IDs but are in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
+| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project is locked but you'll still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Manual | Project users | Remaining users must be added manually by project owners. |
-| Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
+| Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics are generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
 | Not supported | Globalization | Regulatory alerts aren't transferrable between projects. |
 | Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
@@ -91,7 +91,7 @@ You're responsible for migrating data that requires manual migration. However, y
 
 ![Image showing the Schedule Migration dialog with inputs to populate.](media/projectmigrationmanager.png)
 
-4. Select a migration start time in the future. This step will begin the migration of your project, and several aspects of the project will become read-only.
+4. Select a migration start time in the future. This step starts the migration of your project, and several aspects of the project becomes read-only.
 5. Select the checkbox to agree to the terms and continue.
 
 After the migration is scheduled, you can cancel it by selecting it on the Project migration manager list page and then selecting **Delete**.
@@ -101,7 +101,7 @@ After the migration is scheduled, you can cancel it by selecting it on the Proje
 The Project migration manager performs several validations:
 
 - All project environments (sandbox and production) must be on supported versions before a migration is scheduled.
-- When a migration begins, all environments must be in a **Deployed** state. Any other state will cancel the migration.
+- When a migration begins, all environments must be in a **Deployed** state. Any other state cancels the migration.
 - All migrations must be scheduled in the future.
 - Only one migration can be scheduled at a time.
 - Migration can be done for cloud implementation projects, and partner projects. 
@@ -110,9 +110,9 @@ The Project migration manager performs several validations:
 
 ### Before the migration begins
 
-Emails will be sent to all project owners to notify them that a migration has been scheduled. These emails will include the date when the migration begins. During preview, emails might not be sent.
+Emails are sent to all project owners to notify them that a migration has been scheduled. These emails include the date when the migration begins. During preview, emails might not be sent.
 
-Banners will also be shown across the source project to indicate that an upcoming migration has been scheduled.
+Banners are shown across the source project to indicate that an upcoming migration has been scheduled.
 
 You can cancel the migration at any time before it begins.
 
@@ -120,21 +120,21 @@ You can cancel the migration at any time before it begins.
 
 A new Lifecycle Services project is created in the target geography.  This will provide you with a new LCS Project ID and URL.  The migration can take up to two hours depending on the size of the data that is automatically transferred.
 
-While the migration is in progress, a banner will be shown across the source and target projects to indicate that they are participating in a migration. The projects will be locked for changes until either the migration is successfully completed, or it fails and is rolled back.
+While the migration is in progress, a banner is shown across the source and target projects to indicate that they're participating in a migration. The projects are locked for changes until either the migration is successfully completed, or it fails and is rolled back.
 
 If any customization, service, or quality updates are scheduled during your migration, they'll automatically be canceled.
 
-The LCS project and other information must be updated in the Sandbox and Production environments.  This will incur an environment restart which could take up to one hour on each environment.
+The Lifecycle Services project and other information must be updated in the Sandbox and Production environments.  This restarts the environment and can take up to one hour on each environment.
 
 ### After the migration
 
-After the migration is completed you'll receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent.  Upon successful migration, you should manually transfer any additional assets and settings from the old project to the new project, that weren't automatically transferred. In addition, you'll have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed you'll receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent.  Upon successful migration, you should manually transfer any other assets and settings from the old project to the new project, that weren't automatically transferred. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
 You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
-The source project is then locked after successful migration, and data will be in read-only mode.  If you still have cloud-hosted environments deployed on the source project, you'll still be allowed to deallocate and delete them despite the source project being locked.  This is to allow for cleaning up any resources as required on the source project.
+The source project is then locked after successful migration, and data is in read-only mode.  If you still have cloud-hosted environments deployed on the source project, you'll still be allowed to deallocate and delete them despite the source project being locked.  This is to allow for cleaning up any resources as required on the source project.
 
-Microsoft will store the source project for up to one year until it will be automatically deleted.  You can delete the source project sooner to remove the data from the source geography.
+Microsoft will store the source project for up to one year until it is automatically deleted.  You can delete the source project sooner to remove the data from the source geography.
 
 ## Frequently asked questions (FAQ)
 
@@ -150,11 +150,11 @@ The source project remains available for up to one year, in read-only mode. Alth
 
 ### What if I want to go back to my source geography after migration is successfully completed?
 
-The software doesn't support this option. You'll have to open a support ticket so that the product engineering group can help you.
+The software doesn't support this option. You have to open a support ticket so that the product engineering group can help you.
 
 ### What happens if my migration is canceled or rolled back?
 
-Your source project will be unlocked, and you'll receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we'll help you.
+Your source project is unlocked, and you'll receive an email notification that the migration wasn't successfully completed. Open a support ticket, and we'll help you.
 
 ### I'm currently a First Release customer. Will I still be a First Release customer after migration?
 
