@@ -196,8 +196,8 @@ Do the following additional configuration steps for the same version of **Polish
 Some additional parameters must be configured directly in Finance.
 
 1. Make sure that the following Electronic Reporting configurations are imported.
- - Vendor invoice import (PL)
- - Vendor invoice Mapping to destination
+   - Vendor invoice import (PL)
+   - Vendor invoice Mapping to destination
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
 4. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
