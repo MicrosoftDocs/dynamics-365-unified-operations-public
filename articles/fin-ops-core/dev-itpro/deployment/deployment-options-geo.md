@@ -2,10 +2,10 @@
 title: Dynamics 365 finance and operations apps available geographies
 description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps.
 author: ShaileshNikam-MSFT
-ms.date: 08/29/2022
+ms.date: 05/10/2023
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2022-04-28
@@ -19,15 +19,15 @@ Microsoft Dynamics 365 finance and operations apps are generally available to su
 
 ## Data residency
 
-Data residency for finance and operations apps environments and Lifecycle Services (LCS) aren't necessarily the same. You can see the supported regions when deploying environments. Only regions marked "Data resident region" store the data within the same geography as LCS. Regions without this mark are "not data resident", meaning the data is not located in the same geography as LCS. Customers requiring both LCS and environments data don't leave the geographic boundary need to ensure they create the LCS Implementation project using the correct LCS endpoint and correct region for environment deployment. See the [overview for more information on which geographies LCS stores data](#supported-geographies-and-endpoints).
+Data residency for finance and operations apps environments and Microsoft Lifecycle Services aren't necessarily the same. You can see the supported regions when deploying environments. Only regions marked **Data resident region** store the data within the same geography as Lifecycle Services. Regions without this mark are **not data resident**, meaning the data isn't located in the same geography as Lifecycle Services. Customers requiring both Lifecycle Services and environments data don't leave the geographic boundary needed to ensure they create the Lifecycle Services Implementation project using the correct Lifecycle Services endpoint and correct region for environment deployment. For more information about which geographies store Lifecycle Services data, see the [Supported geographies and endpoints](#supported-geographies-and-endpoints).
 
 ### Supported geographies and endpoints
 
-Dynamics 365 finance and operations apps environments can be deployed across many different geographies. See the overview below for [a complete list of available regions](#feature-availability-across-geographies). Lifecycle Services (LCS) is used for deploying the environments, and there are several instances available globally to provide data residency for the data stored in LCS.
+Dynamics 365 finance and operations apps environments can be deployed across many different geographies. For a complete list of available regions, see [Feature availability across geographies](#feature-availability-across-geographies). Lifecycle Services is used for deploying the environments, and there are several instances available globally to provide data residency for the data stored in Lifecycle Services.
 
 The following table lists the Lifecycle Services geographies and endpoints.
 
-| **Geography** | **LCS portal** | **LCS API endpoint** | **Environment URL*** |
+| **Geography** | **Lifecycle Services portal** | **Lifecycle Services API endpoint** | **Environment URL*** |
 |-----------|--------------|------------------|----------------------|
 | United States | [https://lcs.dynamics.com/](https://lcs.dynamics.com/) | <https://lcsapi.lcs.dynamics.com> | <https://NAME.operations.dynamics.com/> |
 | Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) | <https://lcsapi.eu.lcs.dynamics.com> | <https://NAME.operations.eu.dynamics.com/> |
