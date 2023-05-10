@@ -1,27 +1,32 @@
 ---
-title: Work user sessions
-description: This article describes about the Work user sessions page.
+title: Inspect details of active Warehouse Management mobile app sessions
+description: This article describes how to view a detailed history of XML messages and errors associated with all active Warehouse Management mobile app sessions.
 author: perlynne
-ms.date: 04/24/2023
-ms.topic: article
-ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2023-05-01
-ms.dyn365.ops.version: 10.0.35
+ms.reviewer: kamaybac
+ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
+ms.topic: how-to
+ms.date: 05/26/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
-# Work user sessions
+# Inspect details of active Warehouse Management mobile app sessions
 
 [!include [banner](../includes/banner.md)]
 
-A **Work user session** will get maintained for each of the [warehouse work users](manage-warehouse-workers.md) using the [Warehouse management mobile app](install-configure-warehouse-management-app). Here the warehouse manager role will be able to track the *Login date and time* and the *Last user action date and time* together with detailed history XML communication messages and error log history.
+The entire time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app), the system maintains a *work user session* for that user. You can view details of each active work user session by going to **Warehouse management \> Periodic tasks \> Work user sessions**. For each session, this page shows the associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** together with a detailed history of XML communication messages and logged errors.
 
-The XML messages can for example be used to look up [mobile device step ids](mobile-app-titles-instructions.md) when setting up a [detour](warehouse-app-detours.md) process or used to look up a **Field** name as part of the [GS1 policy](gs1-barcodes.md#set-up-custom-specific-gs1-policies) definition where he names must be having an exact match between the XML message and the the **GS1 policy**.
+> [!NOTE]
+> If you don't see any historical data on the **Work user sessions** page, then it might be because a clean-up job, such as the [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management), is running.
 
-As an example the below XML content has been copied from a *Mixed license plate receiving* process where it can be seen that the Warehouse management mobile app is in the **Step Id="LoadId"** having the **"PrimaryInputArea"** with a control **name="LoadId"**. 
+The XML messages can be useful, for example, when you need to look up [mobile device step IDs](mobile-app-titles-instructions.md) as you're setting up a [detour](warehouse-app-detours.md) process. They're also useful for looking up field names to use in your [GS1 policy](gs1-barcodes.md#set-up-custom-specific-gs1-policies) definition, which must match exactly with the field names used in the relevant XML messages.
+
+> [!IMPORTANT]
+> To see the correct XML for finding info such as field names and step IDs, you must work using the actual Warehouse Management mobile app (not using an alternative tool like the browser-based emulator).
+
+The following XML content shows an example that was copied from a *Mixed license plate receiving* process, where you can see that the Warehouse Management mobile app is currently processing a step where `Step Id="LoadId"`, which includes a control where `DisplayArea="PrimaryInputArea"` (which is where controls that are awaiting input or confirmation are typically found) and `name="LoadId"` (which is the field name associated with that control).
 
 ``` XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,7 +50,6 @@ As an example the below XML content has been copied from a *Mixed license plate 
 </ParentNode>
 ```
 
-:::image type="content" source="media/mixed-lp-receiving-load-id-step.png" alt-text="Mixed license plate receiving - Load item":::
+The following image shows how this step looks in the Warehouse Management mobile app.
 
-> [!NOTE]
-> In case you cannot find the historical data, please make sure a clean up job like the [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management) has not been running.
+:::image type="content" source="media/mixed-lp-receiving-load-id-step.png" alt-text="Mixed license plate receiving - Load item":::
