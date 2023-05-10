@@ -1,8 +1,8 @@
 ---
-title: Omnichannel media managment overview
-description: This article covers omnichannel media managment topics for Microsoft Dynamics 365 Commerce.
+title: Omnichannel media management overview
+description: This article covers omnichannel media management topics for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 2/1/2023
+ms.date: 5/10/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -17,18 +17,23 @@ ms.search.form:
 ---
 
 # Omnichannel media management overview
+
 Starting with version 10.0.35, **Dynamics 365 Commerce** introduces an integrated solution for managing merchandising media. It is now easy to assign images and other media to products, product dimensions, and variants. Media assignments are no longer based on legacy filenames, allowing for the reuse of a single media asset for multiple merchandising entities. Specific product dimensions can be assigned media while ignoring unnecessary ones (example: a shirt product with size, color, and style dimensions can assign media to color + style dimension combinations, while ignoring size dimension media assignments).  Additionally, large sets of media assignments and metadata can be managed through bulk export and import using manifest files (.TSV format). The solution integrates media management capabilities into the **Commerce headquarters (HQ)** merchandising flow, and introduces a new omnichannel content workspace within **Commerce site builder**. All omnichannel media management capabilities introduced in 10.0.35+ are currently opt-in through feature flags. New implementations are encouraged to use this capability by default, while existing solutions may opt-in on their own preferred timeline by following the documented migration steps. With these capabilities, **Dynamics 365 Commerce** now offers a more flexible native solution for managing merchandising media.
 
 # Omnichannel media management how-to guides
+
 ## Product media assignments
+
 The following topics cover the steps to author and assign media to products.  
 > [!NOTE]
 > The following how-to guide assumes that the [**Omnichannel media management prerequisites and configuration**](#omnichannel-media-management-prerequisites-and-configuration) steps have already been followed to enable this feature for your environment.
 
 ### Assign media to simple products
+
 For simple products, there are two media assignment scopes available: **Primary media** and **Additional media**.
 
 ### Primary media
+
 **Primary media** is used for media assignments that should always display in a product's media gallery UX (examples: Point of Sale media gallery, e-Commerce PDP media gallery, etc.).  Media items in **Primary media** have a specific display order, and can be re-arranged using the **Up** or **Down** arrow buttons on each media item or by dragging and dropping them to the correct position.  The highest ordered image in the **Primary media** assignments is treated as the product's default image for scenarios where the entire media gallery experience is not needed.
 > [!NOTE]
 > The default image returned by core data-action APIs (example: get-simple-products) for UX scenarios like category pages, search results, or any other list view, will be the highest ordered media item in the **Primary media** assignments that is an image (example: any media item that is not an image will be skipped over, and the first image found in the **Primary media** ordered assignments will be returned as the default image for the product).
@@ -43,6 +48,7 @@ To assign media to a product's **Primary media**, follow these steps:
 7. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Additional media
+
 **Additional media** is used for media assignments that have a purpose outside of a standard product media gallery.  **Additional media** items have a string property named **Purpose** that indicates its inteded use.  Typical **Additional media** purposes include product manuals, spec sheets, media kits, or any other custom media assignment purpose needed outside of the primary media gallery.  Any alphanumeric string can be set as an **Additional media** item's **Purpose** property, and then leveraged through Commerce SDKs, APIs, and data actions for extensibility scenarios.
 
 To assign media to a product's **Additional media**, follow these steps:
@@ -56,6 +62,7 @@ To assign media to a product's **Additional media**, follow these steps:
 8. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 ### Omnichannel, channel-specific, and locale-specific media assignments
+
 Media can be assigned in a hierarchical fallback manner accross channels and locales.  The default assignment for any product should use Omnichannel (channel) and Neutral (locale).  These assignments will be returned by default anywhere a more specific channel+local combination is not available.  For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default.  After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
 
 Here is the fallback order for channel and locale media assignments:
@@ -73,6 +80,7 @@ Here is the fallback order for channel and locale media assignments:
 > The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace.  Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments accross all channels.
 
 ### Product master, product dimension(s), and product variant media assignments
+
 Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  When media assignments are created for product dimension(s) or specific product variants, the inheritance to the product master assignments is severed and all media assignments are controlled by the dimension(s) or specific product variant media assignments.
 
 Here is the fallback order for product master, product dimension(s), and product variant media assignments:
@@ -94,11 +102,12 @@ Here is the fallback order for product master, product dimension(s), and product
 Default media for a product master is assigned using the **Master** tab in the product media view using the same steps described in the [**Assign media to simple products**](#assign-media-to-simple-products) section. The only difference in assignment workflow between simple products and product masters is that product masters can have one or more dimensions (color, style, size, configuration), which in turn define possible product variants for a master product. 
 
 #### Product-specific swatches
+
 Prior to Commerce version 10.0.35, swatches were centrally managed in Commerce HQ by assigning a color hex value or image to dimension values (_example_: color|blue = #0000ff).  This central management of swatch assignments does _not_ change with the introduction of the media management features included in 10.0.35+ versions of Commerce; but there is a new capability to optionally assign product-specific swatches to override within product page experiences.  Swatches used for filtering products in category page, list view, and search results still use the centrally managed swatch values configured for product dimension values.  These centrally managed dimension-specific swatch assignments allow search refiners and filters to behave correctly accross multiple products. But for scenarios where more detailed swatches are wanted within a single product page, product-specific swatch overrides are available.  These swatch overrides can be used to show things like product-specific fabric textures, multi-colored patterns, iconography, or anything else that might go beyond the generic swatch values needed for product list refiners spanning multiple products.
 
 >[!NOTE]
 >If you plan to assign product-specific swatch assignements, it is important to ensure that swatch values are also assigned to the centrally managed list of dimension values in Commerce HQ.  This ensures that product list refiners and filters will display correctly for experiences that return results spanning multiple products (examples: category pages, search results, and product lists).  To configure these centrally-managed swatch dimension assignments, follow the steps described in the [Configure dimension values in Commerce headquarters
-](https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/dimensions-swatch#configure-dimension-values-in-commerce-headquarters) article.
+](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters) article.
 
 To assign product-specific swatches, follow these steps:
 1. Navigate to the **Product media** assignments view in either **site builder's** **Omnichannel content** workspace, or to the same view in **Commerce Headquarters (HQ)** via the **Product media assignments** button in the released products by category view.
@@ -114,6 +123,7 @@ To assign product-specific swatches, follow these steps:
 11. Click **Finish editing** in the upper right to check in your changes (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product dimensions
+
 For product masters with multiple dimensions, it's common that media assignments are only needed for a subset of dimensions.  For example, in the apparel industry it is common to take photos of different colors and styles of the same master product shirt, but not different photos for every size.  
 
 To assign media to certain product dimensions, follow these steps:
@@ -129,6 +139,7 @@ To assign media to certain product dimensions, follow these steps:
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
 #### Assign media to product variants
+
 As explained in the [master > dimensions > variant fallback section](#product-master-product-dimensions-and-product-variant-media-assignments) above, media can be assigned to individual product variants whenever needed.  This disconnects the fallback to both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
 
 To assign media to a specific product variant, follow these steps:
@@ -141,7 +152,8 @@ To assign media to a specific product variant, follow these steps:
 9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
 10. When  your changes are complete, click **Finish editing** in the upper right to check in the new set of media assignments (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
-### Previewing product media assignments
+### Preview product media assignments
+
 Omnichannel media assignments, by definition, can apply accross a range of channels and user experiences (examples: Point of Sale (POS) devices, e-Commerce product pages (PDPs), etc.).  To preview media assignments that can span multiple channels, the Omnichannel product media workspace has a generic media gallery preview experience to quickly validate how media should display for a product's primary media assignments.
 
 To preview primary product media assignments, follow these steps:
@@ -153,6 +165,7 @@ To preview primary product media assignments, follow these steps:
 6. Click **Close** to exit the preview experience.
 
 ### Category media assignments
+
 Commerce currently supports a single default image to be assigned to each channel-specific product category. Category media assignments are generally used for category navigation end-user experiences. Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level (like they can be for individual products).  
 
 To assign a default image for a channel-specific category, follow these steps:
@@ -164,7 +177,8 @@ To assign a default image for a channel-specific category, follow these steps:
 6. Select (or upload) the category image to assign from the media picker, and click **Apply**. 
 7. Click **Finish editing** in the upper right to check in the category media assignment (this will not publish your edits, but will allow others within your organization to see staged changes and make additional edits prior to publish). 
 
-## Publishing media assignments
+## Publish media assignments
+
 Publishing product and category media assignments involves several automatic sequential steps that happen in the backgound. The content management system (CMS) first publishes all the media library items (images, videos, documents, etc.) that are assigned to a product or category. This is the same as going to the **Media library** and clicking **Publish** for each assigned media item. After this step, the individual media items each have public CMS URLs. Next, the product (or category) assignments and fallback defaults are flattened and stored in the Commerce Headquarters (HQ) SQL database via batch job. Then, the HQ data-sync jobs push the flattened media assignments to Commerce Scale Unit (CSU) database(s) accross configured channels. The CSU architecture has a two-hour rolling cache for product and category merchandising data from its own database. To summarize, the time for product and category media assignments to appear for end users after a **Publish** action depends on these factors: 1) the number of media items and assignments for the publish action, 2) the frequency of the HQ omnichannel media batch job in HQ, 3) the frequency of the HQ -> CSU data sync jobs in HQ, 4) the default 2-hour cache for CSU merchandising data.
 
 To publish product (or category) media assignments, follow these steps:
@@ -176,8 +190,9 @@ To publish product (or category) media assignments, follow these steps:
 6. If the media assignments reference any unpublished CMS items, you will see a dialog listing the unpublished dependencies.  Click the **Publish all** to automatically publish the unpublished CMS item dependencies.
 7. The assignments are now **Published**, and will appear for channel-specific end-users after the configured HQ batch jobs, CSU data-sync, and CSU cache schedule are completed.
 
-### Using publish groups for media assignments
-Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  To learn more about the publish group feature within **site builder** , read the [Work with publish groups](https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups) article.
+### Use publish groups for media assignments
+
+Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](publish-groups.md).
 
 To use a publish group for product media assignments, follow these steps:
 1. In the **Omnichannel content** workspace, click **Publish groups** in the left navigation panel.
@@ -185,11 +200,13 @@ To use a publish group for product media assignments, follow these steps:
 3. In the left navigation publish group context selector control (the default will be **Live site**), select your new publish group.  
 4. Go to **Product media** in the left navigation panel.
 5. Select and edit the product media assignments you wish to stage inside the publish group as you would normally. 
+
 >[!NOTE]
 >By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
-6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live](https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups#schedule-a-publish-group-to-go-live) article.
+6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live](publish-groups.md#schedule-a-publish-group-to-go-live) article.
 
-### Reseting assignments to defaults
+### Reset assignments to defaults
+
 The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the product in the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default fallback assignments, as explained in the [channel and locale media fallback section](#omnichannel-channel-specific-and-locale-specific-media-assignments).  This effectively _reverses_ the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which disconnects the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
 
 To reset a product's media assignments, follow these steps:
@@ -202,6 +219,7 @@ To reset a product's media assignments, follow these steps:
 >If a product media assignment has already been published, you will first need to click the **Unpublish** button in the action bar in order to enable the **Reset to default** button.
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
+
 As explained in the [Publishing media assignments](#publishing-media-assignments) section, product media assignments flow from **site builder**'s CMS > HQ database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
 ```mermaid
 graph TD;
@@ -213,9 +231,11 @@ D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-C
 E-->|"Search index refresh"|F
 ```
 ## Omnichannel content media library
+
 Starting with Commerce version 10.0.35, **site builder** contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within **site builder**; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in **site builder**, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in **Commerce Headquarters (HQ)** accross all configured channels, and 2) there is a system-default language called **Neutral** that can be used as a base configuration and [default fallback](#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
 
 ## Omnichannel content copy between tenants
+
 Omnichannel content can be copied accross tenants, much like site copies for individual websites in **site builder**.  The copy process is always initiated from the destination tenant, by choosing a source tenant can be chosen to copy omnichannel content from.  The copy is performed by the CMS job service which can be monitored in from **site builder**'s tenant view under **Tenant settings > Jobs**.  The length of time to complete a copy is variable, and is dependent on the amount of content being copied.  If you wish to perform a partial copy or have the ability to audit which specific omnichannel media and product assignments are copied, it is recommended to use the media library's bulk import and export functionality instead of copy.
 
 To copy all omnichannel content between two tenants, follow these steps:
@@ -227,7 +247,8 @@ To copy all omnichannel content between two tenants, follow these steps:
 6. On the **Review and start copy** screen, review your selections and when ready click the **Start copy job** button.
 7. To monitor the copy job progress, either: a) click the link in the job queue notification from the **Notifications (bell icon)** button in the upper right, or b) go to **Tenant settings** (lower left of navigation panel) > **Jobs**.  Job completion times will vary based on whether you have other tenant jobs in the queue, and the amount of content being copied.
 
-# Omnichannel media management prerequisites and configuration
+## Omnichannel media management prerequisites and configuration
+
 The omnichannel media management features introduced in 10.0.35 are enabled using multiple sequential feature switches that allow staged rollouts to the new data model and workflows. End user experiences such as e-Commerce websites and Point of Sale can still use the legacy data model, while media and assignments are migrated and configured using the new product media assignment workflows.  And when the new media assignments are staged, feature switches can be used to update HQ, CSU, and rendering behavior to switch to the new media assignment data.  You will need system and tenant administrator privileges for HQ and site builder respectively to enable the necessary feature switches in your environments.
 
 To configure omnichannel media managment features in your Commerce environments, the following steps must be completed:
@@ -237,6 +258,7 @@ To configure omnichannel media managment features in your Commerce environments,
 4. Click the **All** tab and search for _"*omni"_ in the **Filter** text box. 
 5. Select **Enable omnichannel media assignment authoring UX** from the filter results.
 6. In the right panel click **Enable now**.  
+
 >[!NOTE]
 >During the pre-GA preview timeframe, if the **Feature state** column for the **Enable omnichannel media assignment authoring UX** feature reads "**Preview**", then you will need to submit an ICM asking Microsoft to enable this feature flight for your environment.  Once the feature flight ICM is approved you will be able to complete step #6 above.  After enabling, you will also need to search and navigate to the **Commerce parameters** screen using the HQ search bar, and select **Omnichannel media management** in the left navigation panel, and enter the **CMS endpoint** and **CMS tenant code** that will be provided by Microsoft Support in their feature flighting ICM request response, and click the **Save** button.
 
