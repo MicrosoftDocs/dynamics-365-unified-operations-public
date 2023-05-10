@@ -65,10 +65,10 @@ Data will be refreshed once per day, at 00:00:00 AM (UTC).
 The amount of time that's required depends on the volume of data. However, there should be fresh data every 24 hours.
 
 ### How do I uninstall business performance analytics?
-
-####Option 1:##### 
+There are two options available to uninstall business performance analytics. 
+ 
 1. Log in to your organization
-2. Open the developer console by hitting Ctrl+Shit+I  Or under More tools you can select Developer tools and switch to console tab.
+2. Click Ctrl+Shit+I to open the developer console or go to **More tools**, select **Developer tools** and **Console** tab.
 3. Paste the below JavaScript code to start uninstall process.
 
 UninstallBPA JavaScript
@@ -145,8 +145,9 @@ let start = async () => {
 
 start();
 
-####Option 2:#### 
-The solutions must be manually deleted in the following order.
+### Uninstall business process analytics
+
+Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
 1. Business performance analytics anchor solution  
 2. Business performance analytics plugins solution 
