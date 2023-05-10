@@ -189,21 +189,7 @@ To use a publish group for product media assignments, follow these steps:
 >By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
 6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live](https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups#schedule-a-publish-group-to-go-live) article.
 
-# Omnichannel media publishing architecture and dataflow
-[Todo]
-
-```mermaid
-graph TD;
-A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
-B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
-C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
-C-->|"1040 (products) full data sync"|E["Product search index service"]
-D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
-E-->|"Search index refresh"|F
-```
-[todo]
-
-### Reseting assignments to defaults
+#### Reseting assignments to defaults
 The **Reset to default** button in the product media action bar will clear _all media_ assignments accross Master, Dimensions, and Variants for the product in the currently selected channel and locale.  If assignments for a product in a specific channel are **Reset to default**, then the product will revert back to any default fallback assignments, as explained in the [channel and locale media fallback section](#omnichannel-channel-specific-and-locale-specific-media-assignments).  This effectively _reverses_ the action of clicking the "Edit product media" button for the first time on a channel specific product media assignment (which disconnects the inheritance to Omnichannel media assignments).  Clicking the **Reset to default** button while in the **Omnichannel - Neutral** context is equivalent to a "clear-all" for the selected product's media assignments accross Master, Dimensions, and Variants.
 
 To reset a product's media assignments, follow these steps:
@@ -215,6 +201,17 @@ To reset a product's media assignments, follow these steps:
 >[!NOTE]
 >If a product media assignment has already been published, you will first need to click the **Unpublish** button in the action bar in order to enable the **Reset to default** button.
 
+#### Omnichannel media publish (and unpublish) architecture and dataflow
+As explained in the [Publishing media assignments](#publishing-media-assignments) section, product media assignments flow from **site builder**'s CMS > HQ database > CSU database(s) on their way to end user interfaces. The diagram below illustrates this architecture and dataflow:
+```mermaid
+graph TD;
+A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
+B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
+C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
+C-->|"1040 (products) full data sync"|E["Product search index service"]
+D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
+E-->|"Search index refresh"|F
+```
 # Omnichannel content media library
 Starting with Commerce version 10.0.35, **site builder** contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within **site builder**; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in **site builder**, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in **Commerce Headquarters (HQ)** accross all configured channels, and 2) there is a system-default language called **Neutral** that can be used as a base configuration and [default fallback](#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
 
