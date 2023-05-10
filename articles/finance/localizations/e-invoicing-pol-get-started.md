@@ -250,7 +250,7 @@ If no purchase order is found, the system will raise a warning but continue impo
 
 To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
 
-To view successfully received invoiced, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**.
+To view successfully received invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**.
 
 ## Additional resources
 
