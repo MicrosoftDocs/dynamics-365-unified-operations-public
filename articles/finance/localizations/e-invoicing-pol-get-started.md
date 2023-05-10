@@ -232,6 +232,13 @@ The following configuration of master data must be done to provide matching of i
 
 #### Units
 
+1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
+2. Select a specific unit, and then select the **External codes** menu.
+2. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit.
+4. In the **Value** section, in the **Value** field, enter the external code that will be matching with the unit codes from incoming electronic invoices during import process.
+   > [!NOTE]
+   > External unit codes make sense only in assumption that incoming electronic invoices will contain explicitly defined units. Otherwise this step can be omitted. 
+
 ## Additional resources
 
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
