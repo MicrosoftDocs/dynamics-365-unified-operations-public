@@ -704,6 +704,10 @@
             href: omnichannel-media-management/omnichannel-media-management-overview.md
           - name: Assign media to products and categories
             href: omnichannel-media-management/assign-media-omnichannel.md
+          - name: Publish media assignments
+            href: omnichannel-media-management/publish-media-omnichannel.md
+          - name: Copy omnichannel content between tenants
+            href: omnichannel-media-management/copy-content-between-tenants.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
