@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.0
 
 Every day administrators perform lifecycle operations on their environments. This includes common activities like backup and restore, refreshing sandbox environments with new transactions from Production instances, and more. This article provides an overview for environment lifecycle opeations core concepts, and includes links to more detailed scenario articles.
 
-To learn more about Microsoft Power Platform Integration, watch our TechTalk on the [Microsoft Dynamics 365 Community](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/one-admin---lcs-ppac-integration-december-7-2022) YouTube channel.
+To learn more about Power Platform Integration, watch our TechTalk on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community) YouTube channel.
 
 > [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg]
 

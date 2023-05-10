@@ -23,8 +23,8 @@ This article explains how to enable dual-write from Microsoft Dynamics Lifecycle
 
 Customers must complete the Power Platform integration as described in the following topics:
 
-- If you don't yet use Microsoft Power Platform and want to expand your finance and operations environments by adding platform capabilities, see [Power Platform Integration - Enable during environment deployment](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
-- If you already have Dataverse and Power Platform environments, and want to connect them to finance and operations environments, see [Power Platform integration - Enable after environment deployment](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
+- If you don't yet use Microsoft Power Platform and want to expand your finance and operations environments by adding platform capabilities, see [Power Platform Integration - Enable during environment deployment](../../power-platform/environment-lifecycle-connect-finops-new-dv.md).
+- If you already have Dataverse and Power Platform environments, and want to connect them to finance and operations environments, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../power-platform/environment-lifecycle-connect-finops-existing-dv.md).
 
 ## Set up dual-write for new or existing Dataverse environments
 

@@ -61,7 +61,7 @@ Before you can enable add-in functionality, you must integrate with Microsoft Po
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
 1. After setup of the Microsoft Power Platform environment is completed, the page shows the name of your environment. Additionally, the **Power Platform Integration** section shows the statement, "Power Platform environment setup is complete." Global Inventory Accounting doesn't require a dual-write application.
 
-For more information, see [Enable after environment deployment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
+For more information, see [Enable Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) and follow the steps to either connect to a new Power Platform environment or to an existing Dataverse instance that you already manage.
 
 ## <a name="install"></a>Install or update the add-in and solution
 
