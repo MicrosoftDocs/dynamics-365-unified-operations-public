@@ -41,7 +41,7 @@ As an example of this scenario, a customer who has already gone live with the Mi
 
 The following list describes the prerequisites for setting up the Power Platform integration.
 
-- Make sure that at least 1 GB of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup will fail. To view your capacity, see the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
+- Make sure that at least 1 GB of Microsoft Power Platform database storage capacity space is available for your tenant. If this space isn't available, the setup fails. To view your capacity, see the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity). 
 - Validate the governance policy of your tenant in Power Platform admin center. To do this validation, you must have either the **Global administrator** role or the **Power Platform administrator** role.
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
     2. From the left navigation, select **Settings** to open the **Power Platform settings** page.
@@ -61,19 +61,19 @@ In Lifecycle Services, visit your sandbox or Production environment and locate t
 
 :::image type="content" source="media/Scenario1_Step1.png" alt-text="A screenshot of the Power Platform Integration page."::: 
 
-There is already a Power Platform Environment Id listed here. This is the "Initial Power Platform Environment," and it's the free placeholder environment that's created in Power Platform admin center for every sandbox and Production environment in Lifecycle Services. There is a one-to-one relationship and it will be the eventual migration path to Power Platform admin center in the future.
+There's already a Power Platform Environment ID listed here. This is the "Initial Power Platform Environment," and it's the free placeholder environment that's created in Power Platform admin center for every sandbox and Production environment in Lifecycle Services. There's a one-to-one relationship and it will be the eventual migration path to Power Platform admin center in the future.
 
 In this scenario, we already have a Power Platform environment with Dynamics 365 Field Service installed. The Initial Power Platform environment shown above will be disconnected from finance and operations apps and will be able to be deleted if you choose.
 
 ## Step 2: Use a different Power Platform environment
 
-In this step, we'll connect finance and operations apps with your existing Dataverse instance. To enable this connection, in the slider window be sure to select to **use a different Power Platform Environment**.  
+In this step, we connect finance and operations apps with your existing Dataverse instance. To enable this connection, in the slider window be sure to select to **use a different Power Platform Environment**.  
 
 ### Validations
 
-To bring your own Dataverse instance you'll need to adhere to several validations that are performed by Lifecycle Services:
+To bring your own Dataverse instance you need to adhere to several validations that are performed by Lifecycle Services:
 
-- The Power Platform environment geography must be the same logical geography where your finance and operations apps are deployed. In this example, your finance and operations apps are deployed to West US Azure Region. This equates to a Power Platform geography of United States.  
+- The Power Platform environment geography must be the same logical geography where your finance and operations apps are deployed. In this example, your finance and operations apps are deployed to West US Azure Region. This geography equates to the Power Platform geography of the United States.  
 - You must have System Administrator permissions in Dataverse.
 - You must have an Environment Manager or a Project Owner role in Lifecycle Services.
 - You must be logged in with an account from the customer tenant who owns the Lifecycle Services project.
@@ -83,7 +83,7 @@ To bring your own Dataverse instance you'll need to adhere to several validation
 
 ## Step 3: Confirm you wish to proceed
 
-You'll now be presented with a dialog box indicating that this **action cannot be reversed**. Connecting finance and operations apps with Power Platform and Microsoft Dataverse is similar in nature to applying a Microsoft Platform update on your environment. Once it's applied, it can't be unapplied.
+You are presented with a dialog box indicating that this **action cannot be reversed**. Connecting finance and operations apps with Power Platform and Microsoft Dataverse is similar in nature to applying a Microsoft Platform update on your environment. Once it's applied, it can't be unapplied.
 
 Type your name in the dialog window to proceed with the setup activity.
 
