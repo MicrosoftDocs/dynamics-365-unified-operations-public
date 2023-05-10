@@ -177,7 +177,7 @@ To publish product (or category) media assignments, follow these steps:
 7. The assignments are now **Published**, and will appear for channel-specific end-users after the configured HQ batch jobs, CSU data-sync, and CSU cache schedule are completed.
 
 #### Using publish groups for media assignments
-Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  To learn more about the publish group feature within **site builder** , read the (Work with publish groups)[https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups] article.
+Omnichannel content (example: **Product media** assignments) can use **site builder**'s publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  To learn more about the publish group feature within **site builder** , read the [Work with publish groups](https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups) article.
 
 To use a publish group for product media assignments, follow these steps:
 1. In the **Omnichannel content** workspace, click **Publish groups** in the left navigation panel.
@@ -187,7 +187,7 @@ To use a publish group for product media assignments, follow these steps:
 5. Select and edit the product media assignments you wish to stage inside the publish group as you would normally. 
 >[!NOTE]
 >By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
-6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the (Schedule a publish group to go live)[https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups#schedule-a-publish-group-to-go-live] article.
+6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live](https://learn.microsoft.com/en-us/dynamics365/commerce/publish-groups#schedule-a-publish-group-to-go-live) article.
 
 # Omnichannel media publishing architecture and dataflow
 [Todo]
@@ -211,6 +211,9 @@ To reset a product's media assignments, follow these steps:
 2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
 3. Click the **Reset to default** button in the top action bar.
 4. When the confirmation dialog appears, click **Ok**.
+
+>[!NOTE]
+>If a product media assignment has already been published, you will first need to click the **Unpublish** button in the action bar in order to enable the **Reset to default** button.
 
 # Omnichannel content media library
 Starting with Commerce version 10.0.35, **site builder** contains an **Omnichannel content** workspace that can host and manage omnichannel media items which can be assigned to products and categories.  This **Omnichannel content** workspace has visual similarities to the authoring experience for individual websites within **site builder**; the primary difference is that content is organized without pairing channels to specific front-end website domains. The **Omnichannel content** CMS capabilities can be leveraged for both e-Commerce and _non_ e-Commerce (example: Point of Sale) scenarios. The **Omnichannel content** workspace functions as the central media library for merchandising media items, which can be assigned to products and categories.  The **Media library** in the **Omnichannel content** workspace behaves similar to the **Media library** for individual websites in **site builder**, with a few important distinctions:  1) The available languages in the **Omnichannel content** **Media library** are a superset of all languages in **Commerce Headquarters (HQ)** accross all configured channels, and 2) there is a system-default language called **Neutral** that can be used as a base configuration and [default fallback](#omnichannel-channel-specific-and-locale-specific-media-assignments) for media items and assignments.
