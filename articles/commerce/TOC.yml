@@ -701,9 +701,9 @@
         - name: Omnichannel media management
           items:
           - name: Omnichannel media management overview
-            href: omnichannel-media-management-overview.md
+            href: omnichannel-media-management/omnichannel-media-management-overview.md
           - name: Assign media to products and categories
-            href: assign-media-omnichannel.md
+            href: omnichannel-media-management/assign-media-omnichannel.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
