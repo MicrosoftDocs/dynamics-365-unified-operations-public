@@ -9,7 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2023-03-01
-
+---
 
 # Omnichannel content copy between tenants
 
