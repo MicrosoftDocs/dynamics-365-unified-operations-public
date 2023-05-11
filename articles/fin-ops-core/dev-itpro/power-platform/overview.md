@@ -32,7 +32,7 @@ Microsoft Power Platform provides a suite of capabilities for Dynamics 365 appli
 
 ## Getting started
 
-To learn more about how to connect your environment to either a new or existing Power Platform environment, visit [Enable the Microsoft Power Platform integration](enable-power-platform-integration.md).
+To learn more about how to connect your environment to either a new or an existing Power Platform environment, see [Enable Power Platform Integration](enable-power-platform-integration.md).
 
 ## Prerequisite reading
 
