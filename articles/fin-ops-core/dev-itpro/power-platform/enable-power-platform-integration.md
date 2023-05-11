@@ -48,9 +48,9 @@ By default, all finance and operations apps environments (sandbox and production
 
 ![A Power Platform environment in Power Platform admin center is created with the same name as the finance and operations environment from Lifecycle Services. The finance and operations URL is populated with the URL of the finance and operations instance.](media/LinkedPowerPlatformEnvironment.png)
 
-The Power Platform environment that is connected to your environment in Lifecycle Services enables finance and operations apps customers to take advantage of Microsoft Power Platform. This Power Platform environment can't be deleted or reset, and a Dataverse database can't be manually added to it in Power Platform admin center. To add Dataverse and fully enable Microsoft Power Platform integration capabilities, follow the instructions in the [Enable integration with an existing Power Platform environment](./environment-lifecycle-connect-finops-existing-dv.md) section of this article.
+The Power Platform environment that is connected to your environment in Lifecycle Services enables finance and operations apps customers to take advantage of Microsoft Power Platform. This Power Platform environment can't be deleted or reset, and a Dataverse database can't be manually added to it in Power Platform admin center. To add Dataverse and fully enable Microsoft Power Platform integration capabilities, follow the instructions in [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md).
 
-Alternatively, your organization might already have a Power Platform environment with Dataverse that you want to connect to your finance and operations environment. To reuse an existing Dataverse instance, follow the instructions in [Enable integration with an existing Power Platform environment](./environment-lifecycle-connect-finops-existing-dv.md). In this case, the initial Power Platform environment that was created when your finance and operations environment was created is disconnected and will no longer show the finance and operations apps URL. At that point, the initial environment can be deleted or used for another purpose.
+Alternatively, your organization might already have a Power Platform environment with Dataverse that you want to connect to your finance and operations environment. To reuse an existing Dataverse instance, follow the instructions in [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md). In this case, the initial Power Platform environment that was created when your finance and operations environment was created is disconnected and will no longer show the finance and operations apps URL. At that point, the initial environment can be deleted or used for another purpose.
 
 ## Licensing and capacity considerations
 
@@ -63,7 +63,8 @@ The same purchase of licenses entitles you to one self-service sandbox environme
 Additional add-on sandbox environments that customers purchase to use in Lifecycle Services do **not** entitle them to additional Dataverse database capacity. Customers who will require Power Platform integration capabilities should purchase add-on Dataverse database storage. For more information about how to manage capacity in Power Platform admin center, see [Free up storage space](/power-platform/admin/free-storage-space).
 
 ## Scenarios and core concepts
-To understand the core concepts of Power Platform Integration and a detailed list of supported scenarios, visit [Environment lifecycle operations - Core concepts](./environment-lifecycle-core-concepts.md).
+
+To learn the core concepts of Power Platform Integration and view a detailed list of supported scenarios, see [Environment lifecycle operations - Core concepts](./environment-lifecycle-core-concepts.md).
 
 ## Troubleshooting the setup
 
