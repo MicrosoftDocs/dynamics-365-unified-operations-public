@@ -61,7 +61,7 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 6. In the **Parameters** section, select **Client ID**, and then select the name of the secret that you previously created for the legal entity's tax identification number.
 7. Select **Certificate name**, and then select the name of the digital certificate that you created.
 8. Select **Public key**, and then select the name of the secret that you created for the public key.
-9. Select **Service URL**, and make sure that a valid URL is configured. To get the testing and production URLs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
+9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
 10. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
 11. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
 12. Select **Save**, and close the page.
@@ -87,7 +87,7 @@ Some additional parameters must be configured directly in Finance.
 7. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
 8. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 9. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-10. Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
+10. <a id="ExportChannel"></a>Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
 11. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
 12. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
 13. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Export channel** section for the **Submit batch** feature setup in RCS.
@@ -200,6 +200,8 @@ Some additional parameters must be configured directly in Finance.
    - Vendor invoice Mapping to destination
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
+   > [!NOTE]
+   > The derived configuration must differ from the [configuration](#ExportChannel) used for invoices *submission* setup. 
 4. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
 5. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
 6. In the **Value** field, select **Edit**, and enter the data channel name.
