@@ -74,4 +74,8 @@ Starting with Commerce version 10.0.35, site builder contains an **Omnichannel c
 
 ## Additional resources
 
+[Assign media to products and categories](assign-media-omnichannel.md)
 
+[Publish media assignments](publish-media-omnichannel.md)
+
+[Copy omnichannel content between tenants](copy-content-between-tenants.md)
