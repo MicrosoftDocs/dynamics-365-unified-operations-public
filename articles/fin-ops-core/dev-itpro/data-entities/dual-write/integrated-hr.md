@@ -40,9 +40,9 @@ Finance and operations apps | Customer engagement apps     | Description
 
 ## Unmapped fields
 
-During live synchronization you might encounter an issue where only part of the data is synced from finance and operations to Dataverse, or data isn’t synced at all. Changes will be triggered only if the modifications are on mapped fields in the entity.  Unmapped field modifications won’t trigger dual-write.
+During data synchronization, it's possible that only part of the data is synced from finance and operations to Dataverse, or data isn’t synced at all. Changes will be synchronized only when mapped fields in the entity are updated. Modifying fields that are not mapped won’t sync the data. 
 
-A list of Human Resources entities and unmapped fields within those entities is listed below. Changes to these fields will not trigger dual-write.
+A list of Human Resources entities and unmapped fields within those entities are listed below. Changes to these fields will not trigger dual-write.
 
 |Entity | Unmapped fields   |
 |-----------------------------|----------------------------------|
