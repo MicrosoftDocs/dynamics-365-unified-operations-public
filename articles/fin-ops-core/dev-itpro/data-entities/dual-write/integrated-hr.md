@@ -36,11 +36,11 @@ Finance and operations apps | Customer engagement apps     | Description
 [Positions V2](mapping-reference.md#106) | cdm_jobpositions | |
 [Position type](mapping-reference.md#110) | cdm_positiontypes | |
 [Position worker assignments](mapping-reference.md#111) | cdm_positionworkerassignmentmaps | |
-[Worker](mapping-reference.md#113) | cdm_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Dataverse can also classify workers as volunteers. Volunteers will become contractors when the data is transformed back into Finance and Supply Chain Management. |
+[Worker](mapping-reference.md#113) | cdm_workers | In Dynamics 365 Finance and Supply Chain Management data, workers are classified as either employees or contractors. Dataverse can also classify workers as volunteers. Volunteers become contractors when the data is transformed back into Finance and Supply Chain Management. |
 
 ## Unmapped fields
 
-During data synchronization, it's possible that only part of the data is synced from finance and operations to Dataverse, or data isn’t synced at all. Changes will be synchronized only when mapped fields in the entity are updated. Modifying fields that are not mapped won’t sync the data. 
+During data synchronization, it's possible that either only part of the data is synced or data isn’t synced at all from finance and operations. Changes are synchronized only when mapped fields in the entity are updated. Modifying fields that are not mapped won’t sync the data. 
 
 A list of Human Resources entities and unmapped fields within those entities are listed below. Changes to these fields will not trigger dual-write.
 
