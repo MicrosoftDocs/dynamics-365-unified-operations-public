@@ -53,6 +53,6 @@ After the validation has begun, the environment homepage will show updated servi
 
 After the validation is completed, details can be found on the **Environment history** page. If the validation fails, a rollback isn't required. The **Action state** will be **Failed** on the **History** page.
 
-### Troubleshoot
+### Troubleshoot errors
 
 This validation can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
