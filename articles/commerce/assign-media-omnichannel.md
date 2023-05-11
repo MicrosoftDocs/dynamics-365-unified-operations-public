@@ -174,3 +174,9 @@ To assign a default image for a channel-specific category, follow these steps:
 
 ## Additional resources
 
+[Omnichannel media management overview](omnichannel-media-management-overview.md)
+
+[Publish media assignments](publish-media-omnichannel.md)
+
+[Copy omnichannel content between tenants](copy-content-between-tenants.md)
+
