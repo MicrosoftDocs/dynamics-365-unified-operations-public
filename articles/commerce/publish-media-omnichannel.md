@@ -43,6 +43,12 @@ To use a publish group for product media assignments, follow these steps:
     > [!NOTE]
     > By clicking the **Edit product media** button when working inside a publish group, the product media assignments are automatically added to the publish group context.  You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
 
-6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in the [Schedule a publish group to go live].(../publish-groups.md#schedule-a-publish-group-to-go-live) article.
+6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in [Schedule a publish group to go live].(publish-groups.md#schedule-a-publish-group-to-go-live).
 
 ## Additional resources
+
+[Omnichannel media management overview](omnichannel-media-management-overview.md)
+
+[Assign media to products and categories](assign-media-omnichannel.md)
+
+[Copy omnichannel content between tenants](copy-content-between-tenants.md)
