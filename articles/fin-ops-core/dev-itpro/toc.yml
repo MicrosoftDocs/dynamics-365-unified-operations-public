@@ -355,6 +355,10 @@ items:
         href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
       - name: Generate demo data using data packages
         href: data-entities/generate-demo-data-packages.md
+    - name: Validate package operations     
+      items:   
+      - name: Validate packages
+        href: deployment/validate-pack.md
     - name: Deployment
       items:
       - name: Deploy demo environments
