@@ -31,7 +31,7 @@ To publish product (or category) media assignments, follow these steps:
 
 ## Use publish groups for media assignments
 
-Omnichannel content (example: **Product media** assignments) can use site builder's publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](../publish-groups.md).
+Omnichannel content (example: **Product media** assignments) can use site builder's publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](publish-groups.md).
 
 To use a publish group for product media assignments, follow these steps:
 1. In the **Omnichannel content** workspace, click **Publish groups** in the left navigation panel.
