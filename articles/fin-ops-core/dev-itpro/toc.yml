@@ -358,7 +358,7 @@ items:
     - name: Validate package operations     
       items:   
       - name: Validate packages
-        href: deployment/vaidate-pack.md
+        href: deployment/validate-pack.md
     - name: Deployment
       items:
       - name: Deploy demo environments
