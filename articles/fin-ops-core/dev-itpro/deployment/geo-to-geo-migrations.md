@@ -1,6 +1,6 @@
 ---
-title: Geo-to-geo migrations
-description: This article provides an overview of how to move between geographies.
+title: Geo to geo migration overview
+description: This article provides an overview of the process for moving between geographies.
 author: matapg007
 ms.author: matgupta
 ms.reviewer: johnmichalak
@@ -9,36 +9,35 @@ ms.topic: how-to
 ms.date: 05/10/2023
 ms.custom:
 ---
-#  Geo to geo migration overview
+# Geo to geo migration overview
 
-To support data residency, Microsoft Dynamics 365 finance and operations apps and Lifecycle Services are generally available in specific geographies. Customers can migrate their workload from one geography to another. This article provides an overview of the process and the considerations.
+To support data residency, Microsoft Dynamics 365 finance and operations apps and Microsoft Dynamics Lifecycle Services are generally available in specific geographies. Customers can migrate their workload from one geography to another. This article provides an overview of the process and the considerations.
 
-Moving between geographies involve two separate processes:
+Movement between geographies involves two separate processes:
 
-- [Finance and operations apps environment migration](environment-migration-process.md). Use this feature to move your finance and operations apps environments between geographies. 
-- [Lifecycle Services project migration manager](../lifecycle-services/project-migration-manager.md). Use this feature to move your Lifecycle Services project data between geographies.
- 
+- [Finance and operations apps environment migration](environment-migration-process.md) – Use this feature to move your finance and operations apps environments between geographies.
+- [Lifecycle Services project migration manager](../lifecycle-services/project-migration-manager.md) – Use this feature to move your Lifecycle Services project data between geographies.
 
-Start planning the migration by assessing whether you want to migrate only environments, only Lifecycle Services project or both.
+To start planning for the migration, assess whether you want to migrate only environments, only Lifecycle Services projects, or both.
 
-##  General considerations
+## General considerations
 
-Organizations looking to migrate environments and data from one geography to another need to consider various aspects mentioned below before actual migration.
+Organizations that want to migrate environments and data from one geography to another must consider the following aspects before actual migration.
 
 ### Feature parity
 
-Make sure you review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into. If certain features aren't available in target geo, associated functionality will not work in target geo after migration so plan migration activity accordingly.
+Be sure to review the [availability of features in the selected target geography](deployment-options-geo.md#feature-availability-across-geographies) before you decide which geography to deploy in. If any features aren't available in the target geography, associated functionality won't work in that geography after migration. Therefore, plan the migration activity accordingly.
 
-Commerce isn't available in all target geographies. If you have Commerce components enabled, your Lifecycle Services project migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
+Dynamics 365 Commerce isn't available in all target geographies. If you have Commerce components enabled, your Lifecycle Services project migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
 
 ### Sovereign data resident geographies
 
-Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud [GCC] and China) aren't supported.
+Migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud \[GCC\] and China) aren't supported.
 
-## Lifecycle Services project migration considerations
+### Lifecycle Services project migration considerations
 
-Refer to [Lifecycle Services project migration manager - Considerations](../lifecycle-services/project-migration-manager.md#considerations) to learn details.
+For more information, see [Lifecycle Services project migration manager - Considerations](../lifecycle-services/project-migration-manager.md#considerations).
 
 ## Environment migration considerations
 
-Refer to [Finance and operations apps environment migration - Considerations](environment-migration-process.md#considerations) to learn details.
+For more information, see [Finance and operations apps environment migration - Considerations](environment-migration-process.md#considerations).
