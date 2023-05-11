@@ -17,17 +17,26 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!--KFM: Intro needed -->
+
+## Prerequisites
+
+<!--KFM: Explain that power platform integration must be complete. Give a link or instructions. -->
+
 ## Install the archiving add-in from LCS add-in
 
 To enable the archiving features for finance and operations apps, start by installing the *Archive* add-in from Microsoft Dynamics Lifecycle Services (LCS). Follow these steps to install the add-in:
 
-1. Under the **Power Platform integration** tab of your environment, select to install a new add-in. <!--KFM: More details needed. How do we get here? Name each navigation step and each relevant label (navigation, headings, buttons) -->
-1. From the list of add-ins select *(Preview) Archive*.
-1. <!--KFM: What now? Maybe just "Follow the instructions on your screen." -->
+1. Sign in to [LCS](https://lcs.dynamics.com/).
+1. Open your environment page.
+1. Open the **Power Platform integration** FastTab.
+1. Select **Install a new add-in**.
+1. From the list of add-ins select **(Preview) Archive**.
+1. Follow the instructions on your screen.
 
 ## Enable the features you need
 
-Once you have installed the *Archive* add-in from LCS, you'll be able to enable the archiving features you need. Use the [**Feature management** workspace](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the following features as needed:
+Once you have installed the *(Preview) Archive* add-in from LCS, you'll be able to enable the archiving features you need. Use the [**Feature management** workspace](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the following features as needed:
 
 - *(Preview) Archive* – Required for all of the following archiving scenarios. It provides basic archiving support and adds the **Archive** workspace.
 - *(Preview) Ledger archive automation* – Archives general ledger records to the relevant history tables. Once archived to history tables, archived data from the day-to-day general ledger tables will be purged. <!--KFM: Add link to scenario topic.  -->

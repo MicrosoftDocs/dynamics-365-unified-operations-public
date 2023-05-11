@@ -17,12 +17,12 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--KFM: Preview until further notice. -->
+<!--KFM: Preview until 10.0.34 GA -->
 <!--KFM: Add form codes to metadata -->
 
-Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they may still be needed for purposes such as historical reporting, auditing, machine learning, legal claims, and so on. Keeping a large volume of historical sales orders and lines in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
+Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they may still be needed for purposes such as historical reporting, auditing, machine learning, and so on. Keeping a large volume of historical sales orders and lines in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
 
-To solve these issues, you can use the archival framework for finance and operations apps to implement rules-based archiving of historical sales orders and order lines. During archiving, the system starts by moving records from the sales orders headers database table (`SalesTable`) and the related sales order lines table (`SalesLine`) to the `SalesTableHistory` and `SalesLineHistory` tables, respectively. Administrators and other users can then view and validate the archived sales order records. Once approved, the administrator then schedules the process to move the verified records from the `SalesTableHistory` and `SalesLineHistory` tables to the Dataverse managed data lake for long-term storage. <!--KFM: Please verify my edit of this paragraph. -->
+To solve these issues, you can use the archival framework for finance and operations apps to implement rules-based archiving of historical sales orders and order lines. During archiving, the system starts by moving records from the sales orders headers database table (`SalesTable`) and the related sales order lines table (`SalesLine`) to the `SalesTableHistory` and `SalesLineHistory` tables, respectively. Administrators and other users can then view and validate the archived sales order records.
 
 ## Prerequisites
 
@@ -40,27 +40,20 @@ To use this feature, your system must meet the following requirements:
 Sales orders can be archived when the following conditions are met:
 
 - The sales orders to be archived must be fully invoiced.
-- The ledger period must be closed or on hold. <!--KFM: Which period? Current period? -->
-- Inventory closing must be run on or after the to-period date of the archive. <!--KFM: Is our point that the closing must already be set to run, or that it must not be run before the to-period? -->
-- The period must be at least one year before the from-period date of the archive. <!--KFM: Which period? -->
+- Sales invoices related to the sales orders to be archived must be at least one year old.
+- The ledger period that includes the related sales invoice must be closed or on hold.
+- Inventory must be closed for the period that includes the related sales invoice.
 
 ## Schedule archiving of sales orders
 
 To schedule sales order archiving, follow these steps:
 
-1. Navigate to the **Archive** workspace. <!--KFM: How do we get here? Give full nav path. -->
+1. Open the **Archive** workspace.
 1. On the Action Pane, select **Archive** to open a drop-down dialog box, and then make the following settings:
     - **Name** – select *Sales order archive automation*.
     - **Company** – select the legal entity (company) for which you want to archive sales orders.
 1. Select **Archive** to apply your settings and close the drop-down dialog box.
-1. The **Create new process automation** page opens, open to the **General** tab. Make the following settings:
-    - **Schedule type** – <!-- KFM: Description needed -->
-    - **Name** – Enter a name for the archive job.
-    - **Description** – Enter a short description for the archive job.
-    - **Scheduling** field group – Use the settings in this field group to define ... <!-- KFM: Description needed. -->
-    - **Occurrence run times** field group – Use the settings in this field group to define ... <!-- KFM: Description needed -->
-    - **Occurrence pattern** field group – Use the settings in this field group to define how often the archive job should run. When you're setting up a sales archive job, you have more options here than you do for most other types of process automation jobs.<!-- KFM: Description needed -->
-    - **Alerts** and **Other alerts** field groups – Choose which kinds of events should trigger an alert (**Ended**, **Canceled**, and/or **Error**) and how you want to be notified (**Email** and/or **Show pop-ups**). <!-- KFM: Confirm these guesses. -->
+1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). You can also set up alerts as needed.
 1. Select **Next** to continue to the **Sales order archive automation** tab. Make the following settings:
     - **Archive from date** – Enter the date of the oldest sales orders that you want to archive.
     - **Archive to date** – Enter the date of the newest sales orders that you want to archive.
@@ -74,11 +67,10 @@ To schedule sales order archiving, follow these steps:
 
 The **Archive** workspace shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status. The orders listed here haven't yet been moved to your Dataverse managed data lake. They're now available for review and can be moved to your Dataverse managed data lake at any time, as described in the next section.
 
-1. To open the **Archive** workspace, go to <!--KFM: How do we get here? Give full nav path. -->
+1. Open the **Archive** workspace.
 1. On the **Section** FastTab, open the **Sales order archive** tab.
-1. Your sales order archives are listed in the grid. To view details about the sales orders included in any archive, select an archive and then select **Archived Sales order** on the toolbar. <!--KFM: We should document the purpose of each other toolbar button somewhere ... -->
+1. Your sales order archives are listed in the grid. To view details about the sales orders included in any archive, select an archive and then select **Archived sales order details** on the toolbar.
 1. The **Archived sales orders** page opens, showing a list of each sales order included in the archive.
-    - To view an order, including its header and all of its order lines, select it in the grid. <!-- KFM: Please confirm this guess. -->
-    - To view related information about an order, select the order, open the **Inquiry** menu on the Action Pane and then choose the entry for the type of records you'd like to inspect (**Sent sales quotations**, **Sales order confirmations**, **Picking list**, **Packing slip** or **Invoice journal**).
+1. To view an order, including its header and all of its order lines, select it in the grid and select **Archived sales order details** on the Action Pane. From the order details, you can view more related information about an order by opening the **Inquiry** menu on the Action Pane and then choose the entry for the type of records you'd like to inspect (**Sent sales quotations**, **Sales order confirmations**, **Picking list**, **Packing slip** or **Invoice journal**).
 
-<!--KFM: Maybe add a section about how to search/review the records in the data lake. Can we do this within SCM somehow? -->
+<!--KFM: Add info about what to do if customers have extended sales header or line, as in [Archive inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md) -->
