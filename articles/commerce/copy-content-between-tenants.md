@@ -30,3 +30,9 @@ To copy all omnichannel content between two tenants, follow these steps:
 7. To monitor the copy job progress, either: a) click the link in the job queue notification from the **Notifications (bell icon)** button in the upper right, or b) go to **Tenant settings** (lower left of navigation panel) > **Jobs**.  Job completion times will vary based on whether you have other tenant jobs in the queue, and the amount of content being copied.
 
 ## Additional resources
+
+[Omnichannel media management overview](omnichannel-media-management-overview.md)
+
+[Assign media to products and categories](assign-media-omnichannel.md)
+
+[Publish media assignments](publish-media-omnichannel.md)
