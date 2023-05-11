@@ -4,10 +4,11 @@
 title: Deploy a new environment
 description: This article explains how to deploy a new environment using the self-service deployment experience.
 author: rashmansur
-ms.date: 06/23/2021
+ms.date: 05/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
+ms.reviewer: johnmichalak
 
 # optional metadata
 
@@ -15,7 +16,6 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 ms.custom: 24211
 ms.search.region: Global
@@ -37,29 +37,33 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 2. Select the **Application** and **Platform** version for the environment that you want to deploy. 
 3. Provide a **unique name** for the environment.
 
-> [!NOTE]
-> For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
+    > [!NOTE]
+    > For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
 
 4. Select the **region** where you want this environment to be deployed. 
-5. Choose whether you want to load **demo data** in your environment or if you want an **empty database**.
-6. Select the **BPM library** that will be set as the Getting started library in the product.
-7. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
-8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
-9. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
-10. After you validate the configurations, click **Submit** to trigger the deployment.
-11. If you plan to use channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
+
+    > [!NOTE]
+    > In May 2023, a change was introduced in the selection of available Azure Regions for finance and operations apps. For more information about which regions are available and what you must consider when you make a selection, see [Available geographies for Dynamics 365 finance and operations apps](deployment-options-geo.md).
+
+5. Select whether you want to load demo data in your environment or whether you want an empty database.
+6. Select the BPM library to use as the Getting started library in the product.
+7. If you want to apply customizations, select from a list of available AOT packages (customization packages) on the **Software Deployable** tabs in the Asset library. You should select only packages that are generated from a build environment on version 8.1 and later. Application of a package from an incompatible version will adversely affect the environment.
+8. Specify **two** user email addresses that should receive notifications that are related to this environment. These users are in addition to the users who are already on the project team (such as an independent software vendor \[ISV\] or a partner).
+9. Select the email address of the user to set as the system administrator in the product.
+10. After you validate the configurations, select **Submit** to trigger the deployment.
+11. If you plan to use channels, you must also [initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
 
 The environment deployment starts immediately and could take anywhere between **30 minutes to 1 hour** to complete for a sandbox environment and **1-2 hours** for a production environment. 
 
 To closely monitor the deployment progress, you can view the **Environment details** page. The environment state should change to either **Deploying** or **Deployed/Failed**.
 
-If the deployment **succeeds**, the environment state will be **Deployed**, and the user set as the environment administrator will be able to sign in to the environment.
+If the deployment **succeeds**, the environment state is **Deployed**, and the user set as the environment administrator is able to sign in to the environment.
 
 If the deployment **fails**, then create a Microsoft [support ticket](../lifecycle-services/lcs-support.md) and provide the **Last Activity ID** (available under **Manage environment** on the **Environment details** page) in the support ticket.
 
 ## Delete an environment
 
-You can delete an environment that is in the deployed state directly through the environment details page. To delete an environment, go to the environment details page and click the  **Delete** button on the action bar. A confirmation dialog box will display asking you to enter the name of the environment that you want to delete. After you enter the environment name and select **Yes**, the deletion operation will start. When the deletion operation is complete, the **Configure** button for this environment will be enabled on the project dashboard if you want to redeploy the environment. 
+You can delete an environment that is in the deployed state directly through the environment details page. To delete an environment, go to the environment details page and click the  **Delete** button on the action bar. A confirmation dialog box prompts you to enter the name of the environment that you want to delete. After you enter the environment name and select **Yes**, the deletion operation will start. When the deletion operation is complete, the **Configure** button for this environment is enabled on the project dashboard if you want to redeploy the environment. 
 
 > [!NOTE]
 > To redeploy an environment, you will need to delete the environment and then deploy it again using the steps listed above. 
