@@ -35,20 +35,21 @@ The Microsoft Dynamics Lifecycle Services Project migration manager lets you mov
 
 The Project migration manager lets you move your Lifecycle Services project from one geography to another geography that meets your requirements. However, it's important that you understand why you might want to move your project in this way.
 
-Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Dynamics 365 finance and operations apps available geographies](../deployment/deployment-options-geo.md).
+Originally, Lifecycle Services supported only one instance (<https://lcs.dynamics.com/>), which served as the global endpoint for all customers. However, because of recent regulatory trends across the industry, customers and software vendors are now required to keep data within a geographic boundary. Therefore, Lifecycle Services has started to deploy geography-specific instances, so that customers can have all their project data in the desired location. For more information about the different geographies that are available, see [Available geographies for Dynamics 365 finance and operations apps](../deployment/deployment-options-geo.md).
 
 ## Considerations
-Organizations looking to migrate Lifecycle Services project from one geography to another need to consider the following aspects before actual migration.
 
-- Migration can take up to two hours when Lifecycle Services project and environments are unavailable.
-- As part of the migration a new Lifecycle Services project is created, and the new project will have a different project URL and Lifecycle Services project ID. 
-- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Make sure you review the [availability of features in the selected target geography](../deployment/deployment-options-geo.md#feature-availability-across-geographies) before deciding on which geography to deploy into.
-- All project environments (Sandbox and Production) must be on supported versions before migration is scheduled.
-- Project migration manager feature is available only to Lifecycle Services project owners.
-- The Project migration manager can be used to transfer data within cloud implementation projects and partner projects for finance and operations apps. Other types of projects aren't yet supported.
-- There are some limitations to this functionality in terms of all the data that is automatically transferred. These limitations are described in the following table.
+Organizations that want to migrate Lifecycle Services projects from one geography to another must consider the following aspects before actual migration:
 
-**Data that can be transferred between instances**
+- Migration can take up to two hours when Lifecycle Services projects and environments are unavailable.
+- As part of the migration, a new Lifecycle Services project is created. The new project will have a different project URL and Lifecycle Services project ID. 
+- Dynamics 365 Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available. Be sure to review the [availability of features in the selected target geography](../deployment/deployment-options-geo.md#feature-availability-across-geographies) before you decide which geography to deploy in.
+- All project environments (sandbox and production) must be on supported versions before migration is scheduled.
+- The Project migration manager feature is available only to Lifecycle Services project owners.
+- The Project migration manager can be used to transfer data only within cloud implementation projects and partner projects for finance and operations apps. Other types of projects aren't yet supported.
+- This functionality has some limitations in terms of the data that's automatically transferred. These limitations are described in the table that follows.
+
+### Data that can be transferred between instances
 
 The following table shows the data that can be transferred between instances and the actions that can be used to transfer it.
 
@@ -56,7 +57,7 @@ The following table shows the data that can be transferred between instances and
 |------------------|---------|---------|
 | Automated | Business process modeler | |
 | Automated | Methodologies | The state of the methodology isn't migrated. You can manually complete stages as required in the target project. |
-| Automated | Commerce | Metadata is moved for the Commerce Scale Unit (CSU) and other Commerce functionality.  This doesn't migrate the CSU, but rather ensures it'is available for use in the target project.  |
+| Automated | Commerce | Metadata is moved for the Commerce Scale Unit (CSU) and other Commerce functionality.  This doesn't migrate the CSU, but rather ensures it's available for use in the target project.  |
 | Automated | Self-service environments | Metadata is moved for the Sandbox and Production environments.  This doesn't migrate the actual environment to a new geography, but rather ensures it's available for use in the target project for applying updates, database movement, and other admin activities. |
 | Automated | Subscription estimator | |
 | Automated | Project onboarding | |
@@ -72,10 +73,10 @@ The following table shows the data that can be transferred between instances and
 | Manual | Project users | Remaining users must be added manually by project owners. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics are generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
-| Not supported | Globalization | Regulatory alerts aren't transferrable between projects. |
+| Not supported | Globalization | Regulatory alerts aren't transferable between projects. |
 | Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
-| Not supported | Environment history | History isn't transferred for environments, they start new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
+| Not supported | Environment history | History isn't transferred for environments. It starts new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
 
@@ -84,14 +85,14 @@ You're responsible for migrating data that requires manual migration. However, y
 1. On the navigation menu, select **Project migration manager**.
 
 >[!NOTE]
->You must be a project owner to migrate a project, In addition, your account must be in the tenant that owns the project.
+>You must be a project owner to migrate a project. In addition, your account must be in the tenant that owns the project.
 
 2. Select **New** to start a new migration request.
 3. In the **Schedule Migration** dialog box, select a target geography that meets your specifications.
 
 ![Image showing the Schedule Migration dialog with inputs to populate.](media/projectmigrationmanager.png)
 
-4. Select a migration start time in the future. This step starts the migration of your project, and several aspects of the project becomes read-only.
+4. Select a migration start time in the future. This step starts the migration of your project, and several aspects of the project become read-only.
 5. Select the checkbox to agree to the terms and continue.
 
 After the migration is scheduled, you can cancel it by selecting it on the Project migration manager list page and then selecting **Delete**.
@@ -124,11 +125,11 @@ While the migration is in progress, a banner is shown across the source and targ
 
 If any customization, service, or quality updates are scheduled during your migration, they'll automatically be canceled.
 
-The Lifecycle Services project and other information must be updated in the Sandbox and Production environments.  This restarts the environment and can take up to one hour on each environment.
+The Lifecycle Services project and other information must be updated in the Sandbox and Production environments. This update restarts the environment and can take up to one hour on each environment.
 
 ### After the migration
 
-After the migration is completed you'll receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent.  Upon successful migration, you should manually transfer any other assets and settings from the old project to the new project, that weren't automatically transferred. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
 You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
