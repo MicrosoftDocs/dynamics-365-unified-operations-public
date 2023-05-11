@@ -1,13 +1,13 @@
 ﻿---
 title: Bulk import and export of digital assets using manifests
 description: This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
-author: phinneyridge
-ms.date: 5/10/2023
-ms.topic: overview
+author: psimolin
+ms.date: 5/11/2023
+ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: psimolin
 ms.search.validFrom: 2023-03-01
 
 ---
@@ -33,7 +33,7 @@ Main use cases for manifest driven asset import and export operations are:
 -   Performing search and replace operations on the metadata (e.g. rebranding)
 -   Performing actions (e.g. publish, delete) in bulk
 
-Manifests can also be used to import and export product media assignments. The schema used for product media assignments is an extended version of the the plain asset management manifest schema. Product media assignments are explained in more detail in \[LINK TO NICK – PRODUCT MEDIA ASSIGNMENTS\]
+Manifests can also be used to import and export product media assignments. The schema used for product media assignments is an extended version of the plain asset management manifest schema. Product media assignments are explained in more detail in \[LINK TO NICK – PRODUCT MEDIA ASSIGNMENTS\]
 
 More details and examples can be found from \[LINK TO MANIFEST IMPORT\] and \[LINK TO MANIFEST EXPORT\]
 
@@ -196,11 +196,11 @@ The view is updated with the folder that you selected. Clicking "Next" takes you
 
 ![A screenshot of a computer Description automatically generated with medium confidence](media/image9.png)
 
-In the "Review and finish" step, you have all the information for the new bulk import job in the single view you to review. If you need to change any of the paramters, clicking "Edit" next to the information allows you to do that. Clicking "Begin import" will first upload the local files to the service (if selected) and then create a job for the bulk import.
+In the "Review and finish" step, you have all the information for the new bulk import job in the single view you to review. If you need to change any of the parameters, clicking "Edit" next to the information allows you to do that. Clicking "Begin import" will first upload the local files to the service (if selected) and then create a job for the bulk import.
 
 ![A screenshot of a computer Description automatically generated with medium confidence](media/image10.png)
 
-The local file upload may take time, depending on the amount and the filesize of the asset and your network connection.
+The local file upload may take time, depending on the amount and the file size of the asset and your network connection.
 
 ![A screenshot of a computer Description automatically generated with medium confidence](media/image11.png)
 
