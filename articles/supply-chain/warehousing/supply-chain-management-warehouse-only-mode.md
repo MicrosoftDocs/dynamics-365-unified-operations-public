@@ -181,14 +181,14 @@ The high-level process for inbound processing is as following:
     - *License plate receiving (and put away)*
     - *Load item receiving (and put away)*
     - *Mixed license plate receiving (and put away)* for source document line identification method *Load item receiving*
-- **Receiving completed** processes follows which will finalize the shipment order transactions and create **Business events** and **Shipment receipts** data for the external systems
-- The external systems read and uses the **Shipment receipts** data for further processing, like for example purchase order invoicing in case of having the associated *inbound shipment orders* linked to purchase orders.
-- The *Inbound shipment orders* get finalized by running the periodic back-ground process [**Update product receipts**](inbound-load-handling#post-registered-quantities).
+- **Receiving completed** processes will follow related to a load which will update the load status to *Received* and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
+- The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having the associated *inbound shipment orders* linked to purchase orders.
+- The *Inbound shipment orders* get finalized by running the periodic back-ground process **Post shipment receiving journal**.
 
 > [!NOTE]
-> Reversal of shipment receipts will be supported as long as the related inbound shipment order line transactions have not been finalized.
+> The **Receiving completed** process requires load lines being fully received in 10.0.35. Future plans exists for having automated process handling based on policy settings.
 
-## Shipment Receipts
+## <a name="shipment-receipts"></a>Shipment Receipts
 In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can following the **Posting status** on the header data.
 The header will get from *Ready for posting* into *Posted* by processing the [**Warehouse management > Periodic tasks > Update product receipts**](inbound-load-handling#post-registered-quantities) batch job.
 
