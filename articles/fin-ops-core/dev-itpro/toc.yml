@@ -1131,6 +1131,14 @@ items:
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
+      - name: Environment lifecycle operations - Core concepts
+        href: power-platform/environment-lifecycle-core-concepts.md
+      - name: Power Platform integration scenarios
+        items: 
+        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
+        - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
       - name: Dual-write
