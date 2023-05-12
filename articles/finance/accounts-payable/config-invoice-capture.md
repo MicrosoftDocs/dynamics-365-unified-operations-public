@@ -39,29 +39,28 @@ After the Invoice capture solution is installed, default configurations for usin
 1. **AI Builder model** – The default model is set to **Invoice processing model**. This is a prebuilt model that can handle the most common invoices with various languages. To update the default model, select one in the drop-down list and additional mapping will be required to map the model fields to the invoice files. 
 2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
-4. **Configuration group** – The configuration group that will be used if a configuration group isn't set at the legal entity or vendor level during invoice processing.
+4. **Configuration group** – The configuration group that will be used if a configuration group isn't set at the legal entity or vendor acount level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
 
 ### Manage file filters (optional)
 
-Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files** list, but they will show file validation errors. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. Users can review the incoming files and decide whether each file is a non-valid invoice, and they can obsolete the file or manually include it for recognition and inclusion in captured invoices.
+Manage file filters lets admins define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and appear in the **Received files (Pending)** list with state "Cancelled". Clerks can review them and decide whether to void and obsolete them. This behavior differs from the one defined in the flow behind the channel. In the flow, files that don't meet the criteria won't be received at all. 
 
-When the Invoice capture solution is installed, a default file filter is defined. This file filter is global. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
+After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want to have different filter settings, you can creat a own file filter and update the value in default filter.  
 
 
 ### Definition of master data
 
-Invoice capture supports two data types for vendor invoice processing: legal entities and vendors.
+Invoice capture processing requires two types of master data: legal entities and vendors.
 
 **Legal entities** are organizations that are registered with legal authorities and defined in Microsoft Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Microsoft Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This link controls data access through business units and security roles, and allows Accounts payable clerks to view only the invoices that are assigned to their users.
 
-**Vendors** are supplier organizations or sole proprietors that supply goods or services to a business, as defined in Dynamics 365 Finance. The vendor master data is used to automatically derive the vendor account. Therefore, it helps increase the touchless rate in invoice processing.
+**Vendors** are individuals or organizations that supplies goods or services to a business. In Dynamics 365 Finance, if a vendor provides services or product to multiple legal entities, a vendor account has to be created for each legal entity. Then the business activity can be correctly recored. In Invoice capture, the vendor master data is used to automatically derive the vendor account, which helps increase the touchless rate in invoice processing.
 
-The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities and vendors in Finance. When a supplier invoice arrives, the legal entity and vendor account must be correctly determined before the invoice is transferred to the target system. The use of master data to derive legal entities and vendor accounts can help reduce maintenance of mapping rules.
 
-### Sync master data
+#### Sync legal entities
 
-The **Manage legal entities** and **Manage vendors** processes work in the same way. In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities from Finance by following these steps.
+In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
 1. Go to **Setup \> System setup \> Manage legal entities**.
 2. Select **Sync**.
@@ -69,4 +68,15 @@ The **Manage legal entities** and **Manage vendors** processes work in the same 
 
 After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
-An Accounts payable administrator will manually trigger synchronization.
+#### Sync vendors
+ In **Manage vendors**, it provides three options to sync the vendor accounts
+ 1. Sync all
+ It will sync all the vendor accounts and potentially it will cause the performance issue.
+ 2. Sync by legal entity
+ Admin can select one or multiple legal entities and sync all the vendors under select legal entities.
+ 3. Sync by selection
+ Admin can search and select one or mutliple vendor accounts and sync the selected vendor. 
+ 
+An Accounts payable administrator needs manually trigger synchronization. 
+>[!NOTE]
+>Automatic synchronization is under development that could let the system automatically sync the data in a scheduled time in a recurring way.
