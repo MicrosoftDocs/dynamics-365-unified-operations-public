@@ -197,7 +197,7 @@ Not all workflows support catch weight product processing with warehouse managem
 
 ### Catch weight tags
 
-A catch weight tag can be created by using a Warehouse Management mobile app process, it can be manually created in the form **Warehouse management > Inquiries and reports > Catch weight tag** or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped. You can view all the historical catch weight tag registration events via the **Catch weight tag registration** option from the **Catch weight tag** page.
+A catch weight tag can be created by using a Warehouse Management mobile app process, it can be manually created in the form **Warehouse management > Enquiries and reports > Catch weight tag** or it can be created by using a data entity process. If a catch weight tag is associated with an inbound source document line, such as purchase order line, the tag will be registered. If the line is used for outbound processing, the tag will be updated as shipped. You can view all the historical catch weight tag registration events via the **Catch weight tag registration** option from the **Catch weight tag** page.
 
 You can use the **Change tag captured weight** option to manually update the weight value for a catch weight tag. Note that the weight for the inventory on-hand won't get adjusted as part of this manual process, but you can easily use the **On-hand discrepancies for catch weight tagged items** page to look up any discrepancies between the currently active catch weight tags and the current inventory.
 

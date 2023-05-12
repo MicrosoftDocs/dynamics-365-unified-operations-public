@@ -82,7 +82,7 @@ The **Multimodal dangerous goods** report is provided for shipments that must be
 
 To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Multi model dangerous goods**.
 
-When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Multimodal dangerous goods**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
+When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Enquiries and reports \> Hazardous materials shipping documentation \> Multimodal dangerous goods**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
 
 ## Shippers declaration report
 
@@ -96,7 +96,7 @@ The **Carriage of merchandise by road** report resembles a bill of lading but is
 
 To generate and print this report, go to **Warehouse management \> Shipments \> All shipments**, and open the relevant shipment. Then, on the Action Pane, on the **Shipments** tab, in the **Hazardous materials document** group, select **Carriage of merchandise by road**.
 
-When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Inquiries and reports \> Hazardous materials shipping documentation \> Carriage of merchandise by road**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
+When you generate this report, the information is saved so that you can edit it and/or reprint the report if you must. To edit a generated report, go to **Warehouse management \> Enquiries and reports \> Hazardous materials shipping documentation \> Carriage of merchandise by road**, and find the relevant report in the list. After you've finished editing the content as you require, select **Print** on the Action Pane to print the report.
 
 ## Shipment summary report
 

@@ -45,7 +45,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 12. Close the page.
 
 ## Check physical on-hand inventory
-1. Go to **Warehouse management > Inquiries and reports > Physical on-hand inventory**.
+1. Go to **Warehouse management > Enquiries and reports > Physical on-hand inventory**.
 2. In the **Item number** field, type a value. You can use the Site and Warehouse fields to filter the list of items. 
 3. Refresh the page.
 4. On the **Action Pane**, click **Display Dimensions**. The Dimensions Display tab allows you select how much detail you want to see about your on-hand inventory.
@@ -53,7 +53,7 @@ This procedure shows you how to check on-hand and physical on-hand inventory for
 6. Close the page.
 
 ## Check on-hand inventory by location
-1. Go to **Warehouse management > Inquiries and reports > On hand by location**.
+1. Go to **Warehouse management > Enquiries and reports > On hand by location**.
 2. In the **Warehouse** field, type a value. If you're using the USMF demo data company, you can use '51'.  
 3. Refresh the page.
 4. Click **Display Dimensions**.

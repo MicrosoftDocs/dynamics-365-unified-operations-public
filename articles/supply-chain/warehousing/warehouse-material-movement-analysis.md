@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The Power Automate process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Supply Chain Management offers a *Warehouse material movement analysis* template for the process advisor, which can be used to create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. It can help find inefficiencies that could be removed to improve the performance of the warehouse. It uses warehousing, product, and transactional data stored in your system and lets you visualize and analyze material movements on the warehouse floor based on closed warehouse work records. In process advisor terminology, each warehouse work record corresponds to a *case*, while each pick or put work line corresponds to an *event*. Depending on your configuration, an *activity* can be any one of the following:
+The Power Automate process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Supply Chain Management offers a *Warehouse material movement analysis* template for the process advisor, which can be used to create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. It can help find inefficiencies that could be removed to improve the performance of the warehouse. It uses warehousing, product, and transactional data stored in your system and lets you visualize and analyze material movements on the warehouse floor based on closed warehouse work records. In process advisor terminology, each warehouse work record corresponds to a *case*, while each pick or put work line corresponds to an *event*. Depending on your configuration, an *activity* can be any one of the following items:
 
 - Warehouse location
 - Warehouse location profile
@@ -37,21 +37,21 @@ The *Warehouse material movement analysis* process advisor template requires the
 
 ## Deploy a new process advisor process based on the template
 
-You can set up as many processes as you need, each with a different name and different settings. Follow these steps to deploy a *Warehouse material movement analysis* process:
+You can set up as many processes as you need, each with a different name and filters. Follow these steps to deploy a *Warehouse material movement analysis* process:
 
 1. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration**.
 1. On the Action Pane, select **Deploy process** to launch the deployment wizard.
-1. Follow the instructions on your screen. You will be asked to specify the following information:
+1. Follow the instructions on your screen. You'll be asked to specify the following information:
 
-    - **Process name** – Identifies the process. We recommend that you include the legal entity and other filter information into the name so you can easily identify the process later.
-    - **Company** – Acts as a filter. Only warehouse work records in the selected company will be included in the process advisor process.
-    - **Number of months to load** – Acts as a filter. Use this to avoid loading excessive or irrelevant data into the process advisor. Only warehouse work records that were closed after the specified time threshold will be included into the process advisor process.
-    - **Activity** – Specifies which column the process advisor will treat as an *activity*. To learn more about process advisor terminology, see the [process advisor documentation](/power-automate/process-advisor-overview).
+    - **Process name** – Enter a name for the process. We recommend that you include the legal entity and other filter information into the name so you can easily identify the process later.
+    - **Company** – Select the legal entity (company) to analyze with this process. Only warehouse work records in the selected company will be included in the process advisor process.
+    - **Number of months to load** – Specify how many months to load at a time. Use this to avoid loading excessive or irrelevant data into the process advisor. Only warehouse work records that were closed after the specified time threshold will be included into the process advisor process.
+    - **Activity** – Specify which column the process advisor should treat as an *activity*. To learn more about process advisor terminology, see the [process advisor documentation](/power-automate/process-advisor-overview).
 
     > [!NOTE]
     > Try to limit the data by optimizing the **Number of months to load** filter value. Power Query Online includes several threshold checks, so if you try to load too much data, the system may fail with timeout or quota-violation exceptions. We recommend that you load less than 25 months of data into the *Warehouse material movement analysis* process and ensure that the total number of events in the process is less than 4 millions.
 
-When you're done filling out the deployment wizard, the the following actions will occur:
+When you're done filling out the deployment wizard, the following actions will occur:
 
 - **Load initial data** – The system loads 200 *cases* into the staging table. In context of the *Warehouse material movement analysis* process template, each *case* corresponds to a single closed warehouse work record. Most likely, many more than 200 records will meet the filtering criteria set in the deployment wizard, but loading only 200 cases enhances the performance and user experience, so you can access the visualization more quickly.
 - **Prompt you to complete the deployment process** – The process advisor user interface opens in new tab in your browser. You may be asked to sign in. Your credentials will be used by the process advisor to read data from Supply Chain Management. Be sure not to close the page right away because that will interrupt the deployment. You don't have to do anything else here. The process advisor will let you know when deployment is complete.
@@ -79,7 +79,7 @@ After you have deployed a process, you can configure it at any time as needed. F
 1. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration**.
 1. From the list pane, select the process for which you want to refresh the data.
 1. Make the following settings on the **General** FastTab:
-    - **Automatic refresh recurrence** – Select how often the system should update the data table (*None*, *Once per day*, or *Once per week*). This will refresh data in the staging table, but won't automatically load that data into the process advisor. To set the process advisor to load this data periodically from the staging table, select **Open in process advisor** on the Action Pane. Then, in the process advisor, select the **Schedule refresh** button and choose the desired refresh schedule. You can also manually refresh the data in the process advisor by selecting the **Refresh data** button here.
+    - **Automatic refresh recurrence** – Select how often the system should update the data table (*None*, *Once per day*, or *Once per week*). This refreshes data in the staging table, but won't automatically load that data into the process advisor. To set the process advisor to load this data periodically from the staging table, select **Open in process advisor** on the Action Pane. Then, in the process advisor, select the **Schedule refresh** button and choose the desired refresh schedule. You can also manually refresh the data in the process advisor by selecting the **Refresh data** button here.
     - **Last staging table refresh** – This read-only field shows the date and time when the staging table was last refreshed.
     - **Enforce offline hours** – Set this option to *yes* to prevent the system from refreshing the staging table during the specified hours. This can be useful if you want to avoid refreshing the table during peak hours.
 1. Read the following information on the **Process parameters** FastTab:
@@ -121,6 +121,4 @@ There are several reasons why you might not see a particular process on the **Wa
 
 ### Why do I get an error during process deployment?
 
-The system performs several checks while provisioning the process. Most failures occur because the Supply Chain Management user account being used isn't registered in Dataverse or the account doesn't have the required privileges. If deployment is taking a long time (around 4 hours), then you are probably exceeding the threshold limits for the process advisor integration. Consider changing the filters to reduce the number of events to be loaded into the process advisor. This is normally achieved by reducing the **Number of months to load** filter.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+The system performs several checks while provisioning the process. Most failures occur because the Supply Chain Management user account being used isn't registered in Dataverse or the account doesn't have the required privileges. If deployment is taking a long time (around 4 hours), then you're probably exceeding the threshold limits for the process advisor integration. Consider changing the filters to reduce the number of events to be loaded into the process advisor. This is normally achieved by reducing the **Number of months to load** filter.

@@ -230,7 +230,7 @@ For each request, the system will confirm that the external service has returned
 
 Follow these steps to review the request log that's generated while labels are printed to the external service.
 
-1. Go to **Warehouse Management \> Inquiries and reports \> External service request log**. Alternatively, to review the log for a specific instance, go to **Warehouse Management \> Setup \> External service instances \> Request log**.
+1. Go to **Warehouse management \> Enquiries and reports \> External service request log**. Alternatively, to review the log for a specific instance, go to **Warehouse Management \> Setup \> External service instances \> Request log**.
 1. In the grid, select the request log to review.
 1. On the Action Pane, select **Request details**.
 1. Review the log.
