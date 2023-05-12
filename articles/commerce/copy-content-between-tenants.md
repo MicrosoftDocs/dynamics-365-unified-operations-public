@@ -11,7 +11,7 @@ ms.author: niholman
 ms.search.validFrom: 2023-03-01
 ---
 
-# Omnichannel content copy between tenants
+# Copy omnichannel content between tenants
 
 [!include[banner](../includes/banner.md)]
 
