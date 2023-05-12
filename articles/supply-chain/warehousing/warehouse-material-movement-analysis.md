@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The Power Automate process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Supply Chain Management offers a *Warehouse material movement analysis* template for the process advisor, which <!-- KFM: the template creates a process that helps...? --> helps warehouse and operations managers gain insights into the material flow in the warehouse. It can help find inefficiencies that could be removed to improve the performance of the warehouse. It uses warehousing, product, and transactional data stored in your system and lets you visualize and analyze material movements on the warehouse floor based on closed warehouse work records. In process advisor terminology, each warehouse work record corresponds to a *case*, while each pick or put work line corresponds to an *event*. Depending on your configuration, an *activity* can be one of the following: <!-- KFM: Those don't look like activities -->
+The Power Automate process advisor feature allows you to gain a better understanding of your business processes so you can optimize them. Process advisor offers *task mining* and *process mining* capabilities to do this. Supply Chain Management offers a *Warehouse material movement analysis* template for the process advisor, which can be used to create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. It can help find inefficiencies that could be removed to improve the performance of the warehouse. It uses warehousing, product, and transactional data stored in your system and lets you visualize and analyze material movements on the warehouse floor based on closed warehouse work records. In process advisor terminology, each warehouse work record corresponds to a *case*, while each pick or put work line corresponds to an *event*. Depending on your configuration, an *activity* can be any one of the following:
 
 - Warehouse location
 - Warehouse location profile
@@ -26,22 +26,18 @@ For more information about the process advisor, see [Overview of process advisor
 
 This article describes what's included in the *Warehouse material movement analysis* template and explains how to deploy and access the process advisor processes.
 
-<!-- KFM: Maybe we need to add this to https://learn.microsoft.com/en-us/power-automate/process-mining-finance-ops-templates ? Where do we want to list this in the TOC?  -->
-
-## Deploy the process advisor process template
-
-### Prerequisites
+## Prerequisites
 
 The *Warehouse material movement analysis* process advisor template requires the following prerequisites:
 
-- You must be running Supply Chain Management version 10.0.35 or later. <!-- KFM: Any feature management needed? -->
-- Your Supply Chain Management environment must be linked to a Dataverse environment. See also [Dual-write home page](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md). <!-- KFM: Right? -->
-- The user who deploys the process <!-- KFM: What do we mean by "the process"? This term appears often. How is this different from the template? Does the template create the process somehow? --> in the process advisor must have the *Warehouse manager*, *Warehouse planner*, and/or *System administrator* roles. Alternatively, the required privileges and/or duties must be assigned to the user. <!-- KFM: Can we name these required privileges and/or duties? -->
-- The user who performs the deployment of the process in the process advisor must be a configured in the linked Dataverse environment <!-- KFM: Configured how? -->. To deploy the process, a user must have the *Environment maker* and/or *System administrator* roles. Once the process is deployed, it can be shared with other users who will automatically get the necessary permissions to use the process.
+- You must be running Supply Chain Management version 10.0.35 or later.
+- Your Supply Chain Management environment must be linked to a Dataverse environment.
+- The user who deploys the process in the process advisor must have the *Warehouse manager*, *Warehouse planner*, and/or *System administrator* roles.
+- The Supply Chain Manager user who performs the deployment of the process in the process advisor must also be a configured as a user in the linked Dataverse environment. To deploy the process, a user must have the *Environment maker* and/or *System administrator* roles. Once the process is deployed, it can be shared with other users who will automatically get the necessary permissions to use the process.
 
-### Deployment instructions
+## Deploy a new process advisor process based on the template
 
-Follow these steps to deploy the *Warehouse material movement analysis* process:
+You can set up as many processes as you need, each with a different name and different settings. Follow these steps to deploy a *Warehouse material movement analysis* process:
 
 1. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration**.
 1. On the Action Pane, select **Deploy process** to launch the deployment wizard.
@@ -58,52 +54,53 @@ Follow these steps to deploy the *Warehouse material movement analysis* process:
 When you're done filling out the deployment wizard, the the following actions will occur:
 
 - **Load initial data** – The system loads 200 *cases* into the staging table. In context of the *Warehouse material movement analysis* process template, each *case* corresponds to a single closed warehouse work record. Most likely, many more than 200 records will meet the filtering criteria set in the deployment wizard, but loading only 200 cases enhances the performance and user experience, so you can access the visualization more quickly.
-- **Prompt you to complete the deployment process** – A new tab opens in your browser, asking you to complete the deployment of the process. The process advisor template provision page <!-- KFM: Is this the same as the tab just mentioned? --> will open inside Power Automate in the linked Dataverse environment. You may be asked for credentials. Those credentials will be used by the process advisor to read data from Supply Chain Management. Be sure not to close the page right away because that will interrupt the deployment. <!-- KFM: What do we do here? -->
-
-After the deployment succeeds, you'll be able to use the process. It's available both from within Supply Chain Management and from the process advisor.
+- **Prompt you to complete the deployment process** – The process advisor user interface opens in new tab in your browser. You may be asked to sign in. Your credentials will be used by the process advisor to read data from Supply Chain Management. Be sure not to close the page right away because that will interrupt the deployment. You don't have to do anything else here. The process advisor will let you know when deployment is complete.
 
 ## Refresh data in the staging table and process advisor
 
-<!-- KFM: Do this right away after deployment? When/how-often do we need to do this? Introduce the purpose of doing this. -->
+As mentioned, after you deploy a new process, the system loads an initial set of 200 cases into the staging table and loads that data into the process advisor. This lets you get started quickly. However, to start working with your full data set, you'll need to refresh the staging table and process advisor. This section describes how to trigger this process manually.
+
+> [!TIP]
+> Though it can be handy to refresh the data on demand from time to time, you'll probably want to set up each process to refresh its data automatically on a regular basis. For instructions, see [Configure the warehouse material movement process](#config).
 
 Follow these steps to manually refresh data in the staging table and process advisor:
 
 1. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration**.
+1. From the list pane, select the process for which you want to refresh the data.
 1. On the Action Pane, select **Refresh staging table**. The batch job responsible for refreshing the staging table runs every five minutes. The next time it runs, it will pick up the request to refresh the table and then load all the data that matches the filters specified during deployment.
-1. The **Last staging table refresh** field (on the General FastTab) will update to indicate that the table has been refreshed<!-- KFM: please confirm -->, but the new data won't be available in the process advisor until you refresh it. To do so, select **Open in process advisor** on the Action Pane. Then select the **Refresh data** button in the process advisor. <!-- KFM: Please confirm. -->
+1. The **Last staging table refresh** field (on the **General** FastTab) will update to indicate that the table has been refreshed, but the new data won't be available in the process advisor until you refresh it there. To do so, select **Open in process advisor** on the Action Pane. Then select the **Refresh data** button in the process advisor.
 
-A staging table cleanup batch job runs daily and removes any records from the staging table that no longer satisfy the filter criteria (for example, to remove records that are now too old). <!-- KFM: Is this set up automatically, or should we describe how to set this up? -->
+A staging table cleanup batch job runs daily and removes any records from the staging table that no longer satisfy the filter criteria (for example, to remove records that are now too old).
 
-You'll probably want to configure the feature to refresh the staging table automatically on a regular basis, and also to load data from the staging table to the process advisor. See the [Configure the warehouse material movement process](#config) for instructions.
+## <a name="config"></a>Configure warehouse material movement processes
 
-## <a name="config"></a>Configure the warehouse material movement process
-
-After you have deployed the process, you can configure it at any time as needed. Follow these steps:
+After you have deployed a process, you can configure it at any time as needed. Follow these steps:
 
 1. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration**.
+1. From the list pane, select the process for which you want to refresh the data.
 1. Make the following settings on the **General** FastTab:
-    - **Automatic refresh recurrence** – Establish how often the system should update data in the data table <!-- KFM: What do we enter? Number of days? -->. This will refresh data in the staging table, but won't automatically load that data into the process advisor. To set the process advisor to load this data periodically from the staging table, select **Open in process advisor** on the Action Pane. Then, in the process advisor, select the **Schedule refresh** button and choose the desired refresh schedule. You can also manually refresh the data in the process advisor by selecting the **Refresh data** button here.
-    - **Last staging table refresh** – <!-- KFM: Description needed -->
-    - **Enforce offline hours** – <!-- KFM: Description needed -->
-1. Make the following settings on the **Process parameters** FastTab:
-    - **Legal entity** – <!-- KFM: Description needed -->
-    - **Number of months to load** – <!-- KFM: Description needed -->
-    - **Granularity level** – <!-- KFM: Description needed -->
-1. <!-- KFM: Say something about the **Processing log** FastTab. -->
+    - **Automatic refresh recurrence** – Select how often the system should update the data table (*None*, *Once per day*, or *Once per week*). This will refresh data in the staging table, but won't automatically load that data into the process advisor. To set the process advisor to load this data periodically from the staging table, select **Open in process advisor** on the Action Pane. Then, in the process advisor, select the **Schedule refresh** button and choose the desired refresh schedule. You can also manually refresh the data in the process advisor by selecting the **Refresh data** button here.
+    - **Last staging table refresh** – This read-only field shows the date and time when the staging table was last refreshed.
+    - **Enforce offline hours** – Set this option to *yes* to prevent the system from refreshing the staging table during the specified hours. This can be useful if you want to avoid refreshing the table during peak hours.
+1. Read the following information on the **Process parameters** FastTab:
+    - **Legal entity** – This read-only field shows the legal entity that was specified during deployment.
+    - **Number of months to load** – This read-only field shows the number of months to load, as specified during deployment.
+    - **Activity** – This read-only field shows the activity that was specified during deployment.
+1. The **Processing log** FastTab shows a history of data refresh and cleanup operations. This can be useful during troubleshooting.
 
 ## Access the warehouse material movement analysis process
 
-You can access the warehouse material movement analysis process both from within Supply Chain Management and from the process advisor user interface. 
+You can access the warehouse material movement analysis process both from within Supply Chain Management and from the process advisor user interface.
 
 To open the process from Supply Chain Management, follow these steps:
 
 1. Go to **Warehouse management \> Enquiries and reports \> Warehouse performance analysis \> Warehouse material movement analysis**.
 1. In the **Process name** field, select the name of the process that you want to view. This drop-down list only shows the processes that are both ready for analysis (deployed and analyzed in process advisor) and accessible to the current user (created by or shared with the current user).
-1. <!-- KFM: What happens now? -->
-1. To view the selected process in the process advisor, select **Open in process advisor** on the Action Pane, which opens the process advisor in a new browser tab. <!-- KFM: What do we see here? A Power BI report? -->
+1. The Power BI report for your selected process opens. You can interact with the report to view the process and analyze it in various ways.
+1. To view the selected process in the process advisor, select **Open in process advisor** on the Action Pane, which opens the process advisor in a new browser tab.
 
     > [!TIP]
-    > From this page, you can select **Download minit** to download the **Minit** desktop application, which gives much richer process mining capabilities than the Power BI report. You can read more about its capabilities in [Minit overview](/power-automate/minit/minit-desktop-application-overview). <!-- KFM: Please confirm this -->
+    > From this page in the process advisor, you can select **Download minit** to download the **Minit** desktop application, which gives much richer process mining capabilities than the Power BI report. You can read more about its capabilities in [Minit overview](/power-automate/minit/minit-desktop-application-overview).
 
 ## FAQs
 
@@ -112,7 +109,7 @@ To open the process from Supply Chain Management, follow these steps:
 There are several reasons why you might not see all of the events and cases that you expect. Here are some things to check:
 
 - Check that the staging table has been refreshed recently. Go to **Warehouse management \> Setup \> Process mining \> Warehouse material movement process configuration** and review the **Last staging table refresh** and **Processing log**.
-- Make sure that the warehouse work you expect to see in the process is closed. The warehouse work closed date and company should fall into the process filtering criteria specified during process deployment. You can check that on the **Warehouse material movement process configuration** page. <!-- KFM: Maybe we should provide a section on how to change the filters after deployment? -->
+- Make sure that the warehouse work you expect to see in the process is closed. The warehouse work closed date and company should fall into the process filtering criteria specified during process deployment. You can check that on the **Warehouse material movement process configuration** page.
 - Verify that the process advisor process has been refreshed recently. See [Configure the warehouse material movement process](#config) for details about how to view refresh information and set up schedules to refresh the staging table and process advisor process automatically.
 
 ### Why don't I see the process I'm looking for on the Warehouse material movement analysis page?

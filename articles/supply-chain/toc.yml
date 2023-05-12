@@ -875,6 +875,10 @@
           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?context=/dynamics365/context/supply-chain
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
+      - name: Process advisor content
+        items:
+        - name: Analyze warehouse material movement through process mining
+          href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
         - name: Analytical Workspaces (using Power BI Embedded)
@@ -3821,8 +3825,6 @@
           href: warehousing/tasks/set-up-dispositions-codes.md
         - name: Unit of measure and stocking policies
           href: warehousing/unit-measure-stocking-policies.md
-        - name: Warehouse Power BI content
-          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
         - name: GS1 bar codes and QR codes
