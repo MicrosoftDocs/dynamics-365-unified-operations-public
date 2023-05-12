@@ -57,16 +57,7 @@ This duality of each conceptual environment has an impact on the lifecycle opera
 
 The following list of continually updated scenario articles provides a walkthrough for administrators:
 
-1. [Connect finance and operations apps with a new Microsoft Dataverse instance](./environment-lifecycle-connect-finops-new-dv.md)
-2. [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md)
-3. Enable Dual-write applications on a connected environment
-4. Delete Finance and Operations apps that are connected to Microsoft Dataverse
-5. Delete Microsoft Dataverse instances
-6. Correcting differences between Dual-write and Power Platform Integration
-7. Go live process with Power Platform Integration involved
-8. Refresh sandbox with latest database from Production with Power Platform Integration involved
-9. Point in time restore with Power Platform Integration involved
-10. Edit environment properties of Microsoft Dataverse when Power Platform Integration is involved
-11. Setup developer cloud-hosted environments with Power Platform Integration
+- [Connect finance and operations apps with a new Microsoft Dataverse instance](./environment-lifecycle-connect-finops-new-dv.md)
+- [Connect finance and operations apps with an existing Microsoft Dataverse instance](./environment-lifecycle-connect-finops-existing-dv.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
