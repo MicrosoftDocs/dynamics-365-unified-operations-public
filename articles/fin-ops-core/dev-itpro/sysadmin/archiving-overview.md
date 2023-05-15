@@ -18,6 +18,7 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 TODO: our content here.
+*Thanks Karl* - **Ryan** is able to edit.*
 
 ## Next steps
 
