@@ -299,7 +299,7 @@ The following APIs are used to export files (data packages).
 
 The **ExportToPackagePreview** API is used to preview an export of a data package with a large number of records. This API is applicable to both cloud deployments and on-premises deployments.
 
-There is an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
+There is an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. It will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
