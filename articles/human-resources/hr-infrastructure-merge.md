@@ -5,8 +5,8 @@
 title: Dynamics 365 Human Resources infrastructure merge overview
 description: This article describes the Microsoft Dynamics 365 Human Resources infrastructure merge.
 author: twheeloc
-ms.date: 10/24/2022
-ms.topic: article
+ms.date: 05/15/2023
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -46,6 +46,25 @@ Microsoft Dynamics 365 Human Resources provides tools that help HR teams increas
 Dynamics 365 Human Resources is a standalone application that currently uses a different infrastructure than other finance and operations apps, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management. The infrastructure merge will bring Dynamics 365 Human Resources into the same infrastructure as other finance and operations apps.
 
 To learn more about the Human Resources infrastructure merge, see [Merging of HR offerings](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers/). For answers to frequently asked questions, see [Human Resources infrastructure merge FAQ](./hr-infrastructure-merge-faq.md).
+
+## Value and benefits of the infrastructure merge
+
+What is the Dynamics 365 Human Resources infrastructure merge?
+There are currently two separate sets of HR capabilities on two different infrastructures in Dynamics 365:
+ - Dynamics 365 Human Resources – A stand-alone app that runs on an independent infrastructure. When this app was launched, the infrastructure was separated from other Dynamics 365 operations apps. Our customers use this app to increase organizational agility, optimize HR programs, transform employee experiences, and gain workforce insights.
+ - HR module – A legacy set of capabilities that was previously part of the Unified Operations licensing. The HR module runs on the finance and operations infrastructure, which is the same across all operations apps. These apps include Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management. Customers received the HR capabilities as part of Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
+ 
+Over the last three years, Microsoft has not enhancemented the HR module. Instead, our investments have focused on the Dynamics 365 Human Resources app.
+By bringing these two sets of capabilities onto the same infrastructure, customers benefit by:
+ - Enhancements that have been added to Dynamics 365 Human Resources over the last three years, including enhanced leave and absence, benefit management, and reporting.
+ - Improved extensibility through Microsoft Power Platform and the ability to extend business logic to personalize pages.
+ - Improved deployment, updates, and maintenance that are consistent in terms of application lifecycle management (ALM), lifecycle services, geographic availability, and more.
+ - More technological innovation as our engineering team uses shared services, tooling, and reduced platform costs.
+
+This transition affects customers who are currently using either Dynamics 365 Human Resources or the legacy HR module.
+
+For more inforamtion about the infrastructure merge, see [Infrastructure merge FAQ](hr-infrastructure-merge-faq.md#general-questions-about-the-infrastructure-merge).
+
 
 ## Customer migration vs. customer merge
 
