@@ -138,7 +138,7 @@ Not all workflows support catch weight product processing with warehouse managem
 - Only formula processing is supported for catch weight products (not bill of materials).
 - Catch weight products can't be associated with a tracking dimension group by using the Owner dimension.
 - Catch weight products can't be used as services.
-- Catch weight products can be used as "stocked products" only as part the item model group.
+- Catch weight products can be used as "stocked products" only as part of the item model group.
 - Catch weight products can't be used together with the functionality for tracking "Active in sales process."
 - Catch weight products can't be used together with the functionality for capturing serial numbers. Therefore, products can't be transferred from a "blank" to a serial number as part of the picking/packing process.
 - Catch weight products can't be used together with the functionality for registering serials before consumption.
@@ -201,7 +201,7 @@ A catch weight tag can be created by using a Warehouse Management mobile app pro
 
 You can use the **Change tag captured weight** option to manually update the weight value for a catch weight tag. Note that the weight for the inventory on-hand won't get adjusted as part of this manual process, but you can easily use the **On-hand discrepancies for catch weight tagged items** page to look up any discrepancies between the currently active catch weight tags and the current inventory.
 
-Other manual options are to **Register tag** to a source document line and **Register work** against a existing warehouse work.
+Other manual options are to **Register tag** to a source document line and **Register work** against an existing warehouse work.
 
 In addition to the restrictions that currently apply for catch weight products, tagged catch weight products have other restrictions that currently apply.
 
