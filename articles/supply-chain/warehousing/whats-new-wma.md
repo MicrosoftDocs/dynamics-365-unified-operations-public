@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/15/2023
+ms.date: 05/15/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -21,9 +21,9 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## Version 2.1.6.0
 
-This version introduces the following new features, fixes, and improvements: 
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
 
-- Added a new setting that lets workers specify the visibility and type of the quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically. 
+- Added a new setting that lets workers specify the visibility and type of quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically. 
 - Added a search function to inquiry pages. Workers can now scan or type to search in all the fields and titles on the page. 
 - On custom pages, the app now focuses on the first non-filled text box instead of the first text box. 
 - Added a close button on all dialog pop-up pages. 
