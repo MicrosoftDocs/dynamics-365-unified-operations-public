@@ -4,8 +4,8 @@
 title: Project deferrals
 description: This article provides information about project deferrals, which let you set up deferrals for project transactions for hours, expenses, fees, and sales orders.
 author: msftbrking
-ms.date: 04/06/2023
-ms.topic: article
+ms.date: 05/06/2023
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -54,7 +54,7 @@ A project group option for **Deferred** has been added to the **Post costs** opt
 
 To create a deferral schedule from a time and material project, follow these steps.
 
-Using billing rules:
+If you're using billing rules:
 1. On the **All projects** page, select a project.
 2. Select the project contract.
 3. Select **Add** to create a billing rule where the **Line type** field is set to **Time and material**.
@@ -67,16 +67,16 @@ Using billing rules:
 
 7. Create and post the invoice proposal. Deferral schedules will be created when the invoice proposal is posted.
 
-Not using billing rules:
+If you're not using billing rules:
 1. On the **All projects** page, select a project.
-2. Enter project hour, expense, fee, or sales order transactions, ensuring the line property is marked as **Chargeable.**
+2. Enter project hour, expense, fee, or sales order transactions. Select **Chargeable** for the line property.
 
     > [!NOTE]
     > A deferred option will appear and will be marked on the line for transactions that are correctly configured for deferrals.
 
-7. Create and post the invoice proposal. Deferral schedules will be created when the invoice proposal is posted.
+3. Create and post the invoice proposal. Deferral schedules will be created when the invoice proposal is posted.
 
-The **All deferral schedules** page shows the newly created deferral schedule. By default, the **Transaction type** field will reflect the originating project transaction type for the deferral.
+The **All deferral schedules** page displays the newly created deferral schedule. By default, the **Transaction type** field will reflect the originating project transaction type for the deferral.
 
 ## View a deferral schedule from a project or a project contract
 
