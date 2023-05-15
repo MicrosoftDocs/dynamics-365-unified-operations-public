@@ -1,4 +1,35 @@
-﻿**<u>How to move in process revenue schedules to a deferral schedule in Revenue and expense deferrals</u>**
+---
+# required metadata
+
+title: Revenue recognition migration to Subscription bililng
+description: This article provides information about migrating in progress Revenue recognition schedules to Revenue and expense deferral Deferral schedules.
+author: msftbrking
+ms.date: 05/15/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 539093
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: brking
+ms.search.validFrom: 2021-11-05
+ms.dyn365.ops.version: 10.0.34
+
+---
+ 
+ 
+ 
+ **<u>How to move in process revenue schedules to a deferral schedule in Revenue and expense deferrals</u>**
 
 This topic will detail how to move in-process Revenue recognition **Revenue schedules** to Revenue and expense deferrals **Deferral schedules.**
 
