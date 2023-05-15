@@ -19,6 +19,18 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.6.0
+
+This version introduces the following new features, fixes, and improvements: 
+
+- Added a new setting that lets workers specify the visibility and type of the quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically. 
+- Added a search function to inquiry pages. Workers can now scan or type to search in all the fields and titles on the page. 
+- On custom pages, the app now focuses on the first non-filled text box instead of the first text box. 
+- Added a close button on all dialog pop-up pages. 
+- Added a back button on the **Settings**, **Alphanumeric** input, and **Numpad** pages. 
+- Fixed an issue where the camera scanner would read an extra unprintable character at the end of specific Code 128 barcodes. 
+- Improved narration and keyboard navigation for better accessibility. 
+
 ## Version 2.1.1.0  
 
 ### New features introduced in version 2.1.1.0
