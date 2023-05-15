@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Revenue recognition migration to Subscription bililng
+title: Migrate Revenue recognition to Subscription billing
 description: This article provides information about migrating in progress Revenue recognition schedules to Revenue and expense deferral Deferral schedules.
 author: msftbrking
 ms.date: 05/15/2023
-ms.topic: article
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 
@@ -26,18 +26,19 @@ ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.34
 
 ---
- 
- 
- 
- **<u>How to move in process revenue schedules to a deferral schedule in Revenue and expense deferrals</u>**
+# Migrate Revenue recognition to Subscription billing
 
-This topic will detail how to move in-process Revenue recognition **Revenue schedules** to Revenue and expense deferrals **Deferral schedules.**
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)] 
+ 
+ ## Migrate in-process revenue schedules to a deferral schedule in Revenue and expense deferrals
+
+This article describes how to move in-process Revenue recognition **Revenue schedules** to Revenue and expense deferrals **Deferral schedules.**
 
 For example, a revenue schedule that was configured by fiscal period with even amounts starting on January 1 has been recognized through June 30.
 
-1.  Export Revenue recognition entity **Deferred line (RevRecDeferredLineEntity)**
-
-2.  Import the data into Revenue and expense deferrals entity **Subscription billing deferral table (SubBillDeferralScheduleTableEntity).** The below table illustrates how the fields can be mapped to each other.
+1.  Export Revenue recognition entity **Deferred line (RevRecDeferredLineEntity)**.
+2.  Import the data into the Revenue and expense deferrals entity **Subscription billing deferral table (SubBillDeferralScheduleTableEntity)**. The below table illustrates how the fields can be mapped to each other.
 
 | Subscription billing deferral table | Deferred line                | Notes                                                                                                                      |
 |-------------------------------------|------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -53,10 +54,7 @@ For example, a revenue schedule that was configured by fiscal period with even a
 
 The newly imported deferral schedules will need to be Stubbed to the date which they were previously recognized in revenue recognition. In the example, this date is June 30. The stubbing option is used to set the January – June periods as stubbed to prevent recognition for periods recognized through the Revenue schedule.
 
-3\. This is done through the **Recognition processing** periodic task (Subscription billing – Revenue and expense deferrals – Periodic tasks – Recognition processing).
-
-4\. Use Recognition action = Stub and set the Cutoff date = 6/30/2023. Fitlers can be used to filter deferral schedules to stub.
-
-5\. Click Process. We should see a notification that Schedule lines processed: 6.
-
-6\. Review the deferral schedule and observe the first 6 periods are marked as stubbed.
+3. This is done through the **Recognition processing** periodic task (Subscription billing – Revenue and expense deferrals – Periodic tasks – Recognition processing).
+4. Use Recognition action = Stub and set the Cutoff date = 6/30/2023. Filters can be used to filter deferral schedules to stub.
+5. Click Process. We should see a notification that Schedule lines processed: 6.
+6. Review the deferral schedule and observe the first 6 periods are marked as stubbed.
