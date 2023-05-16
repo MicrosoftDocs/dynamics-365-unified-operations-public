@@ -19,7 +19,7 @@ ms.search.validFrom: 2022-02-10
 This article describes the impact of the **Enable consistent delivery mode handling in channel** feature in Microsoft Dynamics 365 Commerce, and some of the recommended tests that organizations should run to ensure that system behavior meets expectations.
 
 > [!NOTE]
-> The **Enable consistent delivery mode handling in channel** feature has been made mandatory since Commerce version 10.0.31.
+> The **Enable consistent delivery mode handling in channel** feature has been mandatory since Commerce version 10.0.31.
 
 The **Enable consistent delivery mode handling in channel** feature was originally created to resolve issues related to charges calculation on e-commerce channels. For example, without this feature users could experience one or both of the following issues in e-commerce channels:
 - Non-prorated header-level charges don't appear.
