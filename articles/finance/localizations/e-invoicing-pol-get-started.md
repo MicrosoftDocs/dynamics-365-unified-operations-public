@@ -176,47 +176,51 @@ In Poland, the standard submission procedure just generates electronic invoices 
 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
-
 ## Receive incoming electronic invoices
 
-Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature which is used for outgoing invoices submission.
+Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
 
-1. In Regulatory Configuration Service, in **Globalization features** tile, in **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature which was configured for outgoing invoices submission.
+1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
 2. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
-3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. You can leave the default value unchanged. Whatever you do, make a note of the value because you will use it in later configuration steps.
+3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
 4. Select the **Service URI** parameter, and make sure that a valid URI is configured.
-5. Select the **Client ID**, and then select the name of the secret containing the client identifier.
-6. Select **Certificate name**, and then select the name of the digital certificate that you created.
-7. Select the **Start date** parameter, and define the initial date for the first receipt of invoices from KSEF. All invoices with the dates between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
-8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same miport channel name that was previously defined.
-9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name because you will use it in later configuration steps.
-10. Select **Save** and close the page. 
+5. Select the **Client ID** parameter, and then select the name of the secret that contains the client identifier.
+6. Select the **Certificate name** parameter, and then select the name of the digital certificate that you created.
+7. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
+8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
+9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
+10. Select **Save**, and close the page. 
 
 ### Finance configuration
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the following Electronic Reporting configurations are imported.
-   - Vendor invoice import (PL)
-   - Vendor invoice Mapping to destination
+1. Make sure that the following Electronic Reporting configurations are imported:
+
+    - Vendor invoice import (PL)
+    - Vendor invoice Mapping to destination
+
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-3. Select **Create configuration**, and in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-   > [!NOTE]
-   > The derived configuration must differ from the [configuration](#ExportChannel) used for invoice *submission* setup. 
-4. Open the derived configuration to edit in the designer, and select **Map model to datasource**.
-5. Open the **DataChannel** definition to edit in the designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
-6. In the **Value** field, select **Edit**, and enter the data channel name.
-7. Save your changes, and complete the derived configuration.
-8. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
-9. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same import channel name that you created.
-10. In the **Channels** section, in the **Company** field, select a required Legal Entity and in the **Document context** field, select the configuration you created earlier.
-11. In the **Import sources** section, in the **Name** field, enter the same name of **OutputFile** that you [created earlier](#OutputFile).
-12. In the **Data entity name** field, select **Vendor invoice header** value and in the **Model mapping** field, refer to **Vendor invoice import (PL)** configuration.
-13. Select **Save**, and close the page.
+3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
 
-### Configuring Finance business data
+    > [!NOTE]
+    > The derived configuration must differ from the [configuration](#ExportChannel) that's used for the invoice *submission* setup. 
 
-Configuring the following types of master data must be completed to provide a match to incoming electronic invoices:
+4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
+5. Open the **DataChannel** definition for editing in the designer.
+6. In the **Data sources** tree, expand the **$Context\_Channel** container.
+7. In the **Value** field, select **Edit**, and then enter the data channel name.
+8. Save your changes, and complete the derived configuration.
+9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same import channel name that you created earlier.
+11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the configuration that you created earlier.
+12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
+13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+14. Select **Save**, and close the page.
+
+### Configure Finance business data
+
+You must configure the following types of master data to provide a match for incoming electronic invoices:
 
 - Vendors
 - Products
@@ -224,38 +228,38 @@ Configuring the following types of master data must be completed to provide a ma
 
 #### Vendors 
  
- 1. Go to **Accounts payable** > **Vendors** > **All vendors** and select a specific vendor.
- 2. On the **Invoice and delivery** FastTab, enter a valid value in the **Tax exempt number** field. The vendor's tax exempt number is used for the vendor's identification during the incoming electronic invoices import process. If no vendor with matching data is found in the system, the import process fails with a related error-message.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
+2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid value. The vendor's tax exempt number is used to identify the vendor during the import process for incoming electronic invoices. If no vendor that has matching data is found in the system, the import process fails, and a related error message is shown.
 
 #### Products
 
-1. Go to **Product information management** > **Products** > **Released products** and select a specific product.
-2. In theSelect **Purchase** > **Related information** > **External item description**.
-3. In the **Vendor relation** field, select the vendor or vendor group for which the product's external identification is being set up.
-4. In the **External item number** field, enter the identification number of the product for a specific vendor or the group of vendors. External item numbers are used for the product's identification during incoming electronic invoices import process. If no product with matching criteria is found in the system, the import process will fail with a related error-message.
+1. Go to **Product information management** \> **Products** \> **Released products**, and select a product.
+2. On the Action Pane, on the **Purchase** tab, in the **Related information** group, select **External item description**.
+3. In the **Vendor relation** field, select the vendor or vendor group that the product's external identification is being set up for.
+4. In the **External item number** field, enter the identification number of the product for a specific vendor or the group of vendors. External item numbers are used to identify the product during the import process for incoming electronic invoices. If no product that has matching criteria is found in the system, the import process fails, and a related error message is shown.
 
 #### Units
 
-1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
-2. Select a specific unit, and then select **External codes**.
-2. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit.
-4. In the **Value** section, in the **Value** field, enter the external code that will be matching with the unit codes from incoming electronic invoices during import process.
-   
-   > [!NOTE]
-   > External unit codes make sense only if it's assumed that incoming electronic invoices contain explicitly defined units. Otherwise, you can skip step 4. 
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2. Select a unit, and then select **External codes**.
+3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit.
+4. In the **Value** section, in the **Value** field, enter the external code to match with the unit codes from incoming electronic invoices during the import process.
+
+    > [!NOTE]
+    > External unit codes make sense only if incoming electronic invoices contain explicitly defined units. Otherwise, you can skip step 4. 
 
 ### Receive electronic invoices
 
 Follow these steps to receive electronic invoices.
 
-1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
-2. Select **OK** and then close the page.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
+2. Select **OK**, and then close the page.
 
-During the import process, the system tries to automatically match incoming electronic vendor invoices with existing purchase orders. If no purchase order is found, the system will raise a warning but continue to import products in invoice lines as **Non-stock** items expecting that the products belong to the **Item model group** with an unmarked **Stocked product** check-box in the Inventory policy. Otherwise, the import process fails with a related error-message.
+During the import process, the system tries to automatically match incoming electronic vendor invoices with existing purchase orders. If no purchase order is found, the system raises a warning but continues to import the products on invoice lines as **Non-stock** items, expecting that the products belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy. Otherwise, the import process fails, and a related error message is shown.
 
-To view the receipt logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
+To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
-To view successfully received invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**.
+To view successfully received invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
 ## Additional resources
 
