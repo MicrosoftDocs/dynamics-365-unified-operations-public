@@ -12,6 +12,11 @@ ms.custom:
 
 # Finance and operations apps environment migration
 
+[!INCLUDE[banner](../includes/preview-banner.md)]
+
+> [!NOTE]
+> Contact support for more information if you need to move endpoints before this feature is generally available. 
+
 Microsoft continues to open data centers for business service in both existing regions and new regions. The Geo migration feature lets you move your finance and operations apps environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface (UI) or version occur as part of the move.
 
 Microsoft 365 and Dynamics 365 are separate services. If you move your finance and operations apps environments, your Microsoft 365 service isn't moved. Your finance and operations apps environments continue to appear alongside the Microsoft 365 environment in your tenant.
