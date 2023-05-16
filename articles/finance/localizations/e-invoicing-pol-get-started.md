@@ -181,15 +181,16 @@ You can inquire about the results of the submission at **Organization administra
 
 Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature which is used for outgoing invoices submission.
 
-1. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
-2. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. You can leave the default value unchanged. Whatever you do, make a note of the value because you will use it in later configuration steps.
-3. Select the **Service URI** parameter, and make sure that a valid URI is configured.
-4. Select the **Client ID**, and then select the name of the secret containing the client identifier.
-5. Select **Certificate name**, and then select the name of the digital certificate that you created.
-6. Select the **Start date** parameter, and define the initial date for the first receipt of invoices from KSEF. All invoices with the dates between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
-7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same miport channel name that was previously defined.
-8. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name because you will use it in later configuration steps.
-9. Select **Save** and close the page. 
+1. In Regulatory Configuration Service, in **Globalization features** tile, in **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature which was configured for outgoing invoices submission.
+2. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
+3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Define the name of the data channel in the **Value** field. You can leave the default value unchanged. Whatever you do, make a note of the value because you will use it in later configuration steps.
+4. Select the **Service URI** parameter, and make sure that a valid URI is configured.
+5. Select the **Client ID**, and then select the name of the secret containing the client identifier.
+6. Select **Certificate name**, and then select the name of the digital certificate that you created.
+7. Select the **Start date** parameter, and define the initial date for the first receipt of invoices from KSEF. All invoices with the dates between the **Start date** and current receiving date will be downloaded. Each next receiving process will start from the date of preceeding process.
+8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same miport channel name that was previously defined.
+9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name because you will use it in later configuration steps.
+10. Select **Save** and close the page. 
 
 ### Finance configuration
 
