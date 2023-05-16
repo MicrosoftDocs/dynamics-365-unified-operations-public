@@ -1,7 +1,7 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Lithuania
-ms.author: atrukawk
+ms.author: liza-golub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -33,6 +33,7 @@ To start to work with the **Lithuania SAF-T** report, complete the following ste
 3. [Select the SAT-T format in General ledger parameters.](#satt)
 4. [Turn on features in Feature management.](#features)
 5. [Create a contact person for your company.](#contact)
+6. [Configure Registration number of the legal entity](#registration-id)
 
 ### <a name="import"></a>Import Electronic reporting configurations
 
@@ -119,6 +120,19 @@ The **Company** node of the SAF-T report must include information for a contact.
 3. Check by **Party ID** value to make sure that you select the legal entity that SAF-T will be reported from.
 
 ![ER configurations for the SAF-T report for Lithuania.](media/lt-saf-t-contact-person.png)
+
+### <a name="registration-id"></a> Configure Registration number of the legal entity
+
+To generate a SAF-T, you must configure the Registration number.
+
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select the legal entity, and then select **Registration IDs**.
+3. Select or create the address in Lithuania, and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Lithuania, and that uses the **VAT Id** registration category.
+5. In the **Registration number** field, enter the tax number.
+6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
 
 ## Generate the SAF-T report
 
