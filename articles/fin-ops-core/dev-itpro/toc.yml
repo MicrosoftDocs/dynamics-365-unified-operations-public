@@ -421,7 +421,7 @@ items:
             href: deployment/geo-to-geo-migrations.md
           - name: Finance and operations apps environment migration
             href: deployment/environment-migration-process.md
-          - name: Lifecycle Services (LCS) project migration manager
+          - name: Lifecycle Services project migration manager
             href: lifecycle-services/project-migration-manager.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
