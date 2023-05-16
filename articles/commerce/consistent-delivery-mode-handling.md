@@ -1,14 +1,15 @@
 ---
 title: Enable consistent delivery mode handling in e-commerce channels
 description: This article describes the impact of the "Enable consistent delivery mode handling in channel" feature in Microsoft Dynamics 365 Commerce, and some of the recommended tests that organizations should run to ensure that system behavior meets expectations.
-author: shajain
+author: gvrmohanreddy
 ms.date: 05/16/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: shajain
 ms.search.validFrom: 2022-02-10
+
 ---
 
 # Enable consistent delivery mode handling in e-commerce channels
