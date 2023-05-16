@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Microsoft Dynamics Lifecycle Services Project migration manager lets you move your project data from one geography (or geo) to another geography that Lifecycle Services supports. This article describes the terminology and supported scenarios for this functionality, and provides answers to frequently asked questions.
 
+>[!NOTE]
+>Project migration feature is currently still in preview. Contact support for more information if you need to move before this feature is publically available.
+
 ## Move projects to new geographies
 
 The Project migration manager lets you move your Lifecycle Services project from one geography to another geography that meets your requirements. However, it's important that you understand why you might want to move your project in this way.
