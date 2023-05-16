@@ -50,21 +50,24 @@ To learn more about the Human Resources infrastructure merge, see [Merging of HR
 ## Value and benefits of the infrastructure merge
 
 What is the Dynamics 365 Human Resources infrastructure merge?
+
 There are currently two separate sets of HR capabilities on two different infrastructures in Dynamics 365:
- - Dynamics 365 Human Resources – A stand-alone app that runs on an independent infrastructure. When this app was launched, the infrastructure was separated from other Dynamics 365 operations apps. Our customers use this app to increase organizational agility, optimize HR programs, transform employee experiences, and gain workforce insights.
- - HR module – A legacy set of capabilities that was previously part of the Unified Operations licensing. The HR module runs on the finance and operations infrastructure, which is the same across all operations apps. These apps include Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management. Customers received the HR capabilities as part of Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
- 
-Over the last three years, Microsoft has not enhancemented the HR module. Instead, our investments have focused on the Dynamics 365 Human Resources app.
-By bringing these two sets of capabilities onto the same infrastructure, customers benefit by:
- - Enhancements that have been added to Dynamics 365 Human Resources over the last three years, including enhanced leave and absence, benefit management, and reporting.
- - Improved extensibility through Microsoft Power Platform and the ability to extend business logic to personalize pages.
- - Improved deployment, updates, and maintenance that are consistent in terms of application lifecycle management (ALM), lifecycle services, geographic availability, and more.
- - More technological innovation as our engineering team uses shared services, tooling, and reduced platform costs.
 
-This transition affects customers who are currently using either Dynamics 365 Human Resources or the legacy HR module.
+- **Dynamics 365 Human Resources** – A stand-alone app that runs on an independent infrastructure. When this app was introduced, the infrastructure was separated from other Dynamics 365 operations apps. Our customers use this app to increase organizational agility, optimize HR programs, transform employee experiences, and gain workforce insights.
+- **Human Resource module** – A legacy set of capabilities that was previously part of the Unified Operations licensing. The **Human Resources** module runs on the finance and operations infrastructure, which is the same across all operations apps. These apps include Dynamics 365 Finance, Dynamics 365 Project Operations, and Dynamics 365 Supply Chain Management. Customers received the HR capabilities as part of Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
-For more inforamtion about the infrastructure merge, see [Infrastructure merge FAQ](hr-infrastructure-merge-faq.md#general-questions-about-the-infrastructure-merge).
+Over the last three years, Microsoft hasn't enhanced the **Human Resources** module. Instead, our investments have been focused on the Dynamics 365 Human Resources app.
 
+By bringing these two sets of capabilities onto the same infrastructure, we help customers gain the following benefits:
+
+- Enhancements that have been added to Dynamics 365 Human Resources over the last three years, including enhanced leave and absence, benefit management, and reporting
+- Improved extensibility through Microsoft Power Platform and the ability to extend business logic to personalize pages
+- Improved deployment, updates, and maintenance that are consistent in terms of application lifecycle management (ALM), lifecycle services, geographic availability, and more
+- More technological innovation as our engineering team uses shared services, tooling, and reduced platform costs
+
+This transition affects customers who are currently using either Dynamics 365 Human Resources or the legacy **Human Resources** module.
+
+For more information about the infrastructure merge, see [Infrastructure merge FAQ](hr-infrastructure-merge-faq.md#general-questions-about-the-infrastructure-merge).
 
 ## Customer migration vs. customer merge
 
