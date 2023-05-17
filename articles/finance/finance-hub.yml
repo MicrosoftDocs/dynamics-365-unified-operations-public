@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: Microsoft Dynamics 365 Finance documentation # < 60 chars
-summary: Learn how Dynamics 365 Finance can help monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+summary: Discover how Dynamics 365 Finance can help monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
-  title: Dynamics 365 Finance
+  title: Dynamics 365 Finance documentation
   description: You can use Dynamics 365 Finance to manage invoices and payments, get payment authorizations, verify payment status, correct invoice or payment details, and regularly report on accounts.
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
