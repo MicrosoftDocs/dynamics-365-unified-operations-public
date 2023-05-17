@@ -159,7 +159,9 @@ The high-level process for outbound processing is as following:
 > Reversal of shipment packing slips will be supported as long as the related outbound shipment order line transactions have not been finalized.
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
-In the **Warehouse management > Inquiries and reports > Shipment packing slips** page you can view the detailed line transactions related to the shipped inventory and print out a report of the data via the **Preview/Print** option. The data is version controlled and you can follo the **Posting status** on the header data.
+In the **Warehouse management > Inquiries and reports > Shipment packing slips** page you can view the detailed line transactions related to the shipped inventory and print out a report of the data via the **Preview/Print** option. You can control the printed inventory dimension values as part of the **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**.
+
+The **Shipment packing slip** data is version controlled and you can follow the **Posting status** on the header data.
 The header will get from *Ready for posting* into *Posted* by processing the **Warehouse management > Periodic tasks > Post shipment packing slips** batch job which will ensure the related outbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
 
 > [!NOTE]
