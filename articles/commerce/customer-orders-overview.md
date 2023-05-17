@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 03/03/2023
+ms.date: 05/16/2023
 ms.topic: overview
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
@@ -67,6 +67,9 @@ Before you try to create customer orders in POS, you must configure the appropri
 
 - **Default order type** – You can specify the order type that is assigned by default to customer orders that are created in POS. These customer orders can be either sales orders or quotation orders. Regardless of the default order type, users can still create both sales orders and customer orders from POS.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
+     > [!NOTE]
+     > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage using the **Deposit override** operation.
+
 - **Pickup mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are configured for pickup in POS.
 - **Carryout mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines will be picked up or shipped, and other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, specify the amount of that charge.
@@ -181,20 +184,20 @@ To enable customer orders to be created in asynchronous mode, follow these steps
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
 1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
-1. On the **General** FastTab, select one of the following configuration options:
+1. On the **General** FastTab, select from the following configuration options:
 
     - **Create customer order in async mode**
-    - **Create customer order with async fall back**
+    - **Use realtime service for order creation with async backup**
 
 > [!NOTE]
-> The **Create customer order with async fall back** option is available in Commerce version 10.0.33 and later.
+> The **Use realtime service for order creation with async backup** option is available in Commerce version 10.0.33 and later.
 
-The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but the order will be created in headquarters after a few minutes (after the relevant jobs have been run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used to recall the order for fulfillment and editing scenarios.
+The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but it takes a few minutes for the order to be created in headquarters (after the relevant jobs have been run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used to recall the order for fulfillment and editing scenarios. 
 
-The **Create customer order with async fall back** option first tries to create the order by using the Retail Transaction Service (RTS). If (and only if) that attempt fails, the order will be created by using the same batch process that was just described. Most of the time, the order is created as quickly as it would be created through synchronous order creation. However, as for the **Create customer order in async mode** option, POS immediately completes the transaction by using the confirmation number for the order. It doesn't wait for the RTS call to be completed. 
+The **Use realtime service for order creation with async backup** option can only be enabled if the **Create customer order in async mode** option is already enabled. The **Use realtime service for order creation with async backup** option first tries to create the order using the Retail Transaction Service (RTS). If that attempt fails, the order is created using the same batch process described above. Most of the time the order is created as quickly as it would be via synchronous order creation. However, with this configuration POS uses the confirmation number to immediately complete the order transaction and doesn't wait for the RTS call to be completed. 
 
 > [!NOTE]
-> Asynchronous orders can't be edited or canceled unless the orders are created in headquarters. Because the **Create customer order with async fall back** option first tries to create the order by using an RTS call, the order should usually be available for editing and cancellation within a few seconds. The capability to cancel asynchronous orders before they're synced in headquarters is currently planned for future releases.
+> Asynchronous orders can't be edited or canceled unless the orders are created in headquarters. Because the **Create customer order with async fall back** option first tries to create the order using an RTS call, the order is usually available for editing and cancellation within a few seconds. The capability to cancel asynchronous orders before they're synced in headquarters is currently planned for future releases.
 
 ## Additional resources
 
