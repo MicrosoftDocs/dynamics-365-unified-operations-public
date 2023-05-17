@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "articles//fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
       "redirect_url": "/dynamics365/finance",
       "redirect_document_id": "false"
     },
