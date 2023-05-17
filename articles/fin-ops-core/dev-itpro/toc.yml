@@ -393,7 +393,7 @@ items:
             href: sysadmin/business-continuity-disaster-recovery.md
         - name: Finance and operations apps regional services
           items:
-          - name: Local geographies
+          - name: Available geographies
             href: deployment/deployment-options-geo.md
           - name: US Government Community Cloud (GCC)
             href: deployment/us-gcc-deployment.md
@@ -421,7 +421,7 @@ items:
             href: deployment/geo-to-geo-migrations.md
           - name: Finance and operations apps environment migration
             href: deployment/environment-migration-process.md
-          - name: LCS project migration manager
+          - name: Lifecycle Services project migration manager
             href: lifecycle-services/project-migration-manager.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
