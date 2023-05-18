@@ -68,7 +68,7 @@ Commerce Scale Unit is available for deployment in the following regions.
 | EMEA            | North Europe        | Generally available |  No comments.                         |
 | EMEA            | UK South            | Generally available |    No comments.                       |
 | EMEA            | UK West             | Generally available |    No comments.                       |
-| UAE             | UAE North           | Not available       | US-based or EU-based Lifecycle Services projects must be used. UAE-based environments can deploy UAE-based CSUs. As of December 2022, UAE-based environments can't be deployed in US-based or EU-based Lifecycle Services projects. Work is in progress to fix this issue. |
+| UAE             | UAE North           | Capacity restricted | LCS UAE can be used to deploy commerce scale unit in UAE. Note: Commerce scale units in UAE run only in one region and don't have BCDR region to failover in case of azure regional failure.  |
 
 Deployment capacity in limited capacity regions is extremely constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently don't allow for Commerce Scale Unit deployment at this time. 
 
