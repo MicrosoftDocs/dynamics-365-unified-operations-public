@@ -54,7 +54,7 @@ In the following example, if the first four digits of a card number are **6036**
 
 ### Gift card item numbers
 
-The **Gift card item number** field values mentioned below in the store setup, call center setup, and online store setup sections should differ from the ID values used to configure internal gift cards (as described in [Set up gift cards](https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1). External and internal gift cards use these references to determine their processing route in the system. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
+The **Gift card item number** field values mentioned below in the store setup, call center setup, and online store setup sections should differ from the ID values used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1). External and internal gift cards use these references to determine their processing route in the system. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
 ### Payment methods
 
