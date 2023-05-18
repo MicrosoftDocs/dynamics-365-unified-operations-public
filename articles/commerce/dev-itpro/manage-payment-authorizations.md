@@ -2,7 +2,7 @@
 title: Manage payment authorizations
 description: This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/17/2023
+ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ The **Authorization resubmit** dialog box includes the following parameters:
 - **Release and authorize future orders** – This parameter removes "don't process" holds from orders that a future order date is set for, and authorizes the amount as the configured order shipping date approaches.
 
 > [!NOTE]
-> Future orders marked with a future shipping date get authorization holds created. These orders will show in the **Retail and Commerce > Channels > Call centers > Call center credit cards > Authorization management** form in Headquarters. The Sales Order header "Do not process" remains set to true. To update the "Do not process" property for the sales order, navigate to the **Authorization management** form, set the page filter **Status** set to "Declined", and select the intended record by the customer account or sales order row in the records list. Select the **Credit card** menu item, and choose **Process**. This should re-send the authorization and set "Do not process" to false if successfully authorized.
+> Orders marked with a future shipping date have authorization holds created for them. These orders appear on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form in headquarters. The sales order header **Do not process** property remains set to **True**. To update the **Do not process** property for the sales order, go to the **Authorization management** form, set the page filter **Status** to **Declined**, and then select the intended record by the customer account or sales order row in the records list. Next, select the **Credit card** menu item, and then select **Process**. This should resend the authorization and set the **Do not process** property to **False** if successfully authorized.
 
 - **Retry declined credit cards** – This parameter retries a card authorization for a previously declined card. Depending on your business requirements, you might not want to set this parameter.
 - **Resubmit stale credit cards** – This parameter resubmits a card for authorization after the system has determined an expired authorization. Depending on your business requirements, you might not want to set this parameter.
