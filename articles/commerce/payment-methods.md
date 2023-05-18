@@ -38,24 +38,25 @@ Retailers can accept various types of payment in exchange for the products and s
 To set up payment methods, you must complete the following tasks.
 
 1. Set up payment methods for an organization. Create the payment methods that are accepted by the whole organization.
-2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers. See below section **Card Types** for additional information.
+2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers. For more information, see [Card types](#card-types) below.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
 
-## Card Types
-To configure Card Types for the environment, follow these steps:
+## Card types
 
-1. In Headquarters, navigate to **Retail and Commerce > Channel setup > Payment methods > Card types**.
-2. In the **Electronic payment types** section, click **New**.
-3. Fill out the **ID**, **Electronic payment name**, **Type**, and **Issuer** value for the record.
+To configure card types for your environment in Commerce headquarters, follow these steps:
 
-Next, the mapping parameters for the record must be set to properly associate the Card Type to the payment method used in a transaction for financial reporting in Dynamics. Two methods of mapping are offered:
- - **Processor mapping**: available when the feature management **Enhanced wallet support and payment improvements** feature is enabled. This mapping is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. See information about setting up Processor mapping [here](https://learn.microsoft.com/en-us/dynamics365/commerce/wallets#processor-payment-method-mapping).
- - **Card numbers**: this is a card bin range listing used to match the card number used at payment to the card type for processing and reporting in the Commerce system. 
+1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
+1. In the **Electronic payment types** section, select **New**.
+1. Enter **ID**, **Electronic payment name**, **Type**, and **Issuer** values for the record.
 
-The system uses the **Card numbers** mapping to check a **Card number from** value at the beginning of the number provided, to the **Card number to** value within the set length of the **Digits to identify** value.  
+Next, the mapping parameters for the record must be set to associate the card type to the payment method used in a transaction for financial reporting in Dynamics. Two mapping methods are available:
+ - **Processor mapping**: This mapping method is available when the **Enhanced wallet support and payment improvements** feature is enabled. This mapping method is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. For more information about setting up processor mapping, see [Processor payment method mapping](wallets.md#processor-payment-method-mapping).
+ - **Card numbers**: This is a card bin range listing used to match the card number used at payment to the card type for processing and reporting in the system. 
 
-The below table represents an example set of **Card number** mappings, but is **not** an official prescribed set of values from Microsoft (as values can change by issuers). Your payment gateway service can advise further on recommended mappings. In many cases, a smaller range (1 or 2 digits) is less complex to implement and may catch broader card scenarios.
+The system uses the card numbers mapping method to check a **Card number from** value at the beginning of the number provided, to the **Card number to** value within the set length of the **Digits to identify** value.  
+
+The following table represents an example set of card numbers mappings, but isn't an official prescribed set of values from Microsoft (as values can change by issuers). Your payment gateway service can further advise you on recommended mappings to use. In many cases, a smaller range (1 or 2 digits) is less complex to implement and may catch broader card scenarios.
 
 | Card ID   | Card number from | Card number to | Digits to identify |
 | --------- | ---------------- | -------------- | ------------------ |
@@ -73,9 +74,10 @@ The below table represents an example set of **Card number** mappings, but is **
 | VISAELEC  | 5802             | 5803           | 4                  |
 
 
-Note that if using the **Processor mapping**, **Card numbers** is used as a backup if the processor mapping is unable to make a match. If neither match, a default can be set per store in the **General** tab, set for the **Electronic Payments: Default for unmapped processor payments** field. Otherwise, without a default set- the Commerce system will decline the authorization attempt protectively.
+> [!NOTE]
+> When you use the processor mapping mapping method, the card numbers mapping method is used as a backup if the processor mapping is unable to make a match. If neither mapping method makes a match, you can set a default value for each store in the **Electronic Payments: Default for unmapped processor payments** field on the **General** tab. If neither mapping method makes a match and a default value isn't set, the system protectively declines the authorization attempt.
 
-Additionally, when creating or updating the **Card numbers** in the Commerce system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedules. Allow 15 minutes after these jobs have completed to update the Retail Server cache in order for the changes take effect.
+When creating or updating the card numbers mapping in the system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedule jobs. Allow 15 minutes after these jobs have completed to update the Retail Server cache for the changes take effect.
 
 ## Handle change tendering for payment methods
 
