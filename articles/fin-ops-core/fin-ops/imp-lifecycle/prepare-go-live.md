@@ -96,17 +96,19 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 ### Initiate the Go-live Readiness Review in the Portal
 
-1. The customer/partner sends an e-mail to <d365fogl@microsoft.com> and includes the following information:
+1. Project team decides who will be the key review participant from the **customer** organisation. 
+2. Key review participant from the customer organisation registers on the Dynamics 365 Implementation Portal by clicking on this [link](https://aka.ms/D365ImplementationPortal) and providing required user details. 
+    > [!NOTE]
+    > It is required that it is done by customer team member and not the implementation partner team member. Key stakeholders from the customer organization who are participating in the review must be selected as Review participants in the portal.
+
+3. Key review participant from the customer organisation sends an email to d365fogl@microsoft.com and includes the following information:
 
     - Confirmation that the project is ready to start the Go-live Readiness Review
-    - Confirmation of the LCS project ID
-    - **Confirmation of the users from the LCS project who will participate in the Go-live Readiness Review and should be granted access to the portal for the Go-live Readiness Review process**
+    - Confirmation of the LCS project ID or LCS project URL
+    - Confirmation that the previous step has been completed
 
-    > [!NOTE]
-    > Key stakeholders from the customer organization who are participating in the review must be selected as **Review participants** in the portal.
-
-2. Microsoft grants portal access to the requested LCS project users and confirms that this task has been completed by responding to the email.
-3. The customer/partner starts the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have access to the portal can access this article.
+4. Microsoft grants access to the project to the key review participant from the customer organisation and confirms that this task has been completed by responding to the email.
+5. The key review participant from the customer organisation adds the additional project team members and creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registred on portal can access this article. 
 
 ### Submit the review
 
