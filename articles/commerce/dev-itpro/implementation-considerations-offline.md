@@ -4,7 +4,7 @@
 title: Commerce offline implementation considerations
 description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations.
 author: jashanno
-ms.date: 02/01/2023
+ms.date: 05/18/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
