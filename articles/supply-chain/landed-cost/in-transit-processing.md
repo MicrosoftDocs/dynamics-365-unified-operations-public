@@ -142,7 +142,7 @@ The configuration settings for these processes resemble the settings for the [pu
 
 - **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
-#### Specify goods in transit order when receiving via mobile device
+####  <a name="specify-GIT-order"></a> Specify goods in transit order when receiving via mobile device
 This feature empowers users to manually determine the receiving of specific goods in transit order when multiple orders are associated with the same voyage, container, item number, and purchase order number. Users can effortlessly achieve this by inputting the Voyage, Container,Item and Order number, and subsequently selecting the desired Goods in Transit order from a dropdown list available in the 'Goods in transit number' field on their mobile devices.
 
 ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/4b0bd332-6442-4092-af1e-a11af7983229)
