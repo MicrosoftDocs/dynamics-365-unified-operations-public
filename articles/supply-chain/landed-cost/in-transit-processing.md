@@ -142,6 +142,24 @@ The configuration settings for these processes resemble the settings for the [pu
 
 - **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
+#### Specify goods in transit order when receiving via mobile device
+This feature empowers users to manually determine the receiving of specific goods in transit order when multiple orders are associated with the same voyage, container, item number, and purchase order number. Users can effortlessly achieve this by inputting the Voyage, Container,Item and Order number, and subsequently selecting the desired Goods in Transit order from a dropdown list available in the 'Goods in transit number' field on their mobile devices.
+
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/4b0bd332-6442-4092-af1e-a11af7983229)
+
+This functionality is available in two mobile device menu items:
+- Goods in transit item receiving
+- Goods in transit item receiving and putaway
+
+Both options provide flexibility and control over the selection of goods in transit orders, ensuring accurate and efficient handling of incoming inventory.
+
+#### Assign batch/serial number when receiving via mobile device
+When receiving goods in transit order with batch/serial tracking enable items, user can assign batch/serial number during the receiving process. In the meanwhile,the mobile device GIT receiving process allow user define the goods quantity per batch/serial number being received.
+System will conslidate the received quantity per batch/serial number into one work for process. The batch/serial number will be assigned to the received item automatically.
+
+> [!NOTE]
+> The under delivery receive scenario is not supported as user cannot specify batch/serial number manually due to the entrie under dlivery process is automatical without user interaction.
+
 ### Location directives
 
 Landed cost adds a new work order type that is named *Goods in transit* to the **Location directives** page. This work order type should be configured in the same manner as the [purchase order work order types](/dynamicsax-2012/appuser-itpro/create-a-work-template).
