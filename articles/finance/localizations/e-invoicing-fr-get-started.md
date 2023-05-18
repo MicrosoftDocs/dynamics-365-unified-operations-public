@@ -2,9 +2,9 @@
 # required metadata
 
 title: Get started with the Electronic invoicing for France
-description: This article provides information that will help you get started with Electronic invoicing for France in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: Learn how to get started with Electronic invoicing for France in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: dkalyuzh
-ms.date: 07/07/2022
+ms.date: 05/17/2023
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for France. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](e-invoicing-get-started.md).
+Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country-dependent in the Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](e-invoicing-get-started.md).
 
 ## Country-specific configuration for French Chorus Pro submission (FR) Electronic invoicing feature
 
@@ -91,91 +91,97 @@ The primary address of the legal entity must be in France.
 Feature management key **(France) Electronic invoicing integration with Chorus Pro** must be enabled.
 
 > [!NOTE]
-> If apart from having infomration about sucessful or failed document submittion you want want to have possibility to track status of submitted document at Chorus pro you need to enable two more feature management keys: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
+> If you want want to be able to track the status of a submitted document at Chorus pro, you need to enable two features in the **Feature management** workspace: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
 
 ### Configure legal entity data
 
 #### Enter a legal entity's address
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity.
-
-> [!NOTE]
-> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid French primary address for the legal entity. Make sure that the following mandatory address elements are defined: 
+   - Country/region code
+   - ZIP/postal code
+   - City
+   - Building number
 
 #### Enter a legal entity and a customer SIRET 
 
-Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) articles to set up NAF codes and Siret numbers. Alternatively you can use [Registration IDs](emea-registration-ids.md) to setup SIRET number.
+Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) articles to set up NAF codes and Siret numbers. Alternatively you can use [Registration IDs](emea-registration-ids.md) to setup a SIRET number.
 
-### Setup project manager account
+### Set up the project manager account
 
-When you sumbit work invoices you may use apart from contrating authority (invoice account) also a newly intoduced party **Project manager**. The new party needs to be setup as a customer account and then can be used when posting invoices. Use below procedure to enable project manager for a project invoice.
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**
-2. Expand **Funding sources** and in **Project manager** select a customer account **Project contracts** \> **Project contracts** \> **Project contracts**
+When you sumbit work invoices, you can use the the **Project manager** party. Before you use it, the new party type must be set up as a customer account and then can be used when posting invoices. Use the following steps to enable the project manager for a project invoice.
+1. Go to **Project management and accounting** > **Projects** > **Project contracts**
+2. On the **Funding sources** tab, in the **Project manager** field, select a customer account and then select **Project contracts** > **Project contracts** > **Project contracts**
 
 > [!NOTE]
-> **Project manager** is only available for Funding type = Customer..
+> **Project manager** is only available when the funding type is **Customer**.
 
 ### Define electronic invoice frameworks
 
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic invoice frameworks**.
-2. In **Type** enter elctronic invoicing framework. 
+1. Go to **Accounts receivable** > **Setup** > **Electronic invoice frameworks**.
+2. In the **Type** field, enter the electronic invoicing framework. 
 
-> [!NOTE]
-> When no electronic invoice framework is confugyured and used, all invoices are sent as A1 - simple invoice. You can use following codes for invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14 and A22. Refer official documentation for more details [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
+When no electronic invoice framework is configured, all invoices are sent as an **A1 - simple invoice**. Use the following codes for the invoice framework to attribute work invoices: A4 , A7, A8, A9, A10, A12, A13, A14, and A22. To learn more, see [Invoicing framework and transmission modes](https://communaute.chorus-pro.gouv.fr/documentation/submit-works-invoices-for-suppliers-contracting-party-subcontracting-co-contracting/?lang=en#1530527446538-8a6bf25f-3ff8).
 
-### Set up Chorus Pro lectronic document parmaters
-You can enable SIRET numbers and service code validation prior posting and invoice.
+### Set up Chorus Pro electronic document parameters
+You can enable SIRET numbers and service code validation before you post and invoice documents.
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-2. Expand **Chorus Pro** tab to set up:
-	- Web service URL
-	- Login service URL
-	- Client Id
-	- Client secret
-	- Technical user name
-	- Technical user password
-
-> [!NOTE]
-> It is highly recomended to use Azure Key Vault storage for storing those secrets. Refer to [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md) for details.	
+1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
+2. On the **Chorus Pro** tab, add the following information:
 	
-3. Enable **SIRET and service code validation** parameter
-4. In **Report format** select a cofigurable business document that will be used to print a submission report.
+   - Web service URL
+   - Login service URL
+   - Client ID
+   - Client secret
+   - Technical user name
+   - Technical user password
 
 > [!NOTE]
-> If you want to creatae a new submission report instead of customizing default one, you should use **DocumentSubmitted** model name and **SubmittedInvoice** mapping name for integration point.
+> We recommend that you use Azure Key Vault storage to store the secrets. Refer to [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md) for details.	
+	
+3. Enable the **SIRET and service code validation** parameter.
+4. In the **Report format** field, select the cofigurable business document to use when printing a submission report.
+
+> [!NOTE]
+> To creatae a new submission report instead of customizing a default report, use the **DocumentSubmitted** model name and the **SubmittedInvoice** mapping name for integration point.
 
 
 ## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+When you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-In France, you may add addtional information prior executing the standard invoice posting procedure. To provide extra information for invoices, follow these steps in your applibale business process.
+In France, you may add addtional information before you execute the standard invoice posting procedure. To provide extra information for invoices, follow these steps in your applicable business process.
 
-For Sales orders or Free text invoices:
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders** or **Accounts receivable** \> **Invoices** \> **All free text invoices** 
-2. When you swith to **Header** view you can select:
+**For Sales orders or Free text invoices**
+
+1. Go to **Accounts receivable** > **Orders** > **All sales orders** or **Accounts receivable** > **Invoices** > **All free text invoices** 
+2. Switch to the **Header** view and select the following:
 	- Electronic invoice framweork type
-	- Invoice aacount service code (if you enabled **SIRET and service code validation** parameter, the list of available service codes will be obtained from Chorus Pro)
+	- Invoice aacount service code. If you enabled **SIRET and service code validation** parameter, the list of available service codes are obtained from Chorus Pro.
 	- Project manager
-For project invoice:
-1. Create a new or open created **Project management and accounting** \> **Proejct invoices** \> **Project invoic proposals** 
-2. In invoice proposal header you can select:
+
+**For project invoice**
+
+1. Go to **Project management and accounting** > **Proejct invoices** > **Project invoic proposals** and open an existing invoice proposal or create a new one. 
+2. In the invoice proposal, switch to the **Header** view and select the following:
 	- Electronic invoice framework type
 	- Funding source service code
 	- Project manager
 	- Project manager service code
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and use **Electronic document** \> **Generate report** fucntion in the form to generate a sumission report.
+You can view the submission results by navigating to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document submission log** and then select **Electronic document** > **Generate report** to generate a sumission report.
 
 ## Receive electronic invoices
 
-You can use **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents** to import documents from Chorus Pro. Once process executed sucessfuly, imported documents will be present in **Pending vendor invoice** workspace, where when needed addtional attributes for received docuemnt might be added:
+Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents** to import documents from Chorus Pro. After the process is complete, the imported documents are available in **Pending vendor invoice** workspace, where addtional attributes for received docuemnt can be added as needed. Attributes include:
+
 - Electronic invoice framework type
 - Invoice account service code
 - Project manager
 - Project manager service code.
-For more details refer to [Use the electronic invoicing service to import vendor invoices](e-invoicing-get-started-import-vendor-invoices.md)
+
+For more details, see [Use the electronic invoicing service to import vendor invoices](e-invoicing-get-started-import-vendor-invoices.md)
 
 ## Additional resources
 
