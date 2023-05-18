@@ -22,6 +22,9 @@ ms.dyn365.ops.version:
 
 This article describes how to prepare Finance to work with the SAF-T report and generate the file in XML format according to requirements to SAF-T in Denmark.
 
+> [!NOTE]
+> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
+
 ## Setup
 
 To start to work with the **SAF-T** report for Denmark, complete the following steps:
