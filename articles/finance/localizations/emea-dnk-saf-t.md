@@ -54,7 +54,7 @@ For more information about how to download ER configurations, see [Download ER c
 |-----------------------------|---------------|---------|-------------|
 | Standard Audit File (SAF-T) | Model         | 163     | The common data model for different audit reports. |
 | SAF-T General model mapping | Model mapping | 163.353 | The model mapping that provides general data source mapping. |
-| SAF-T Format (LT)           | Format        | 163.20 | The XML format that represents the SAF-T report in accordance with the requirements for Denmark. |
+| SAF-T Format (DK)           | Format        | 163.20 | The XML format that represents the SAF-T report in accordance with the requirements for Denmark. |
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
@@ -89,6 +89,9 @@ The **SAF-T General model mapping** configuration also provides general data sou
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
+
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (DK)**.
 3. Make sure that you're working in the company that you want to set up the application-specific parameters for.
@@ -104,7 +107,7 @@ At least one line that has **\*Not blank\*** values must be set up.
 ### <a name="satt"></a>Select the SAT-T format in General ledger parameters
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, set up the SAF-T format.
+2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (DK)**.
 
 ### <a name="contact"></a>Create a contact person for your company
 
@@ -131,7 +134,10 @@ For more information about how to set up registration categories and registratio
 
 ### <a name="coa"></a> Configure Standard chart of accounts (Standardkontoplan)
 
+In Danish SAF-T report, main accounts that are used in Finance must be associated with Danish standard accounts. To associate **Main accounts** that are used in Finance with Danish standard accounts use the [Consolidation account groups and additional consolidation accounts](https://learn.microsoft.com/en-us/dynamics365/finance/budgeting/consolidation-account-groups-consolidation-accounts.md) functionality:
 
+1. Create a [Consolidation account group](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-consolidation-groups#create-a-consolidation-account-group). For example, \"Standardkontoplan\".
+2. [Add accounts to consolidation account group](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/tasks/create-consolidation-groups#add-accounts-to-consolidation-account-group). Specify Standard account in **Consolidation account** field (this value is to be reported in `<StandardAccountID>` field of SAF-T under `Master data > GeneralLedgerAccounts > Account` node). Optionaly specify Standard account name or description in **Consolidation account name** field (this value is not used in SAF-T).
 
 ## Generate the SAF-T report
 
