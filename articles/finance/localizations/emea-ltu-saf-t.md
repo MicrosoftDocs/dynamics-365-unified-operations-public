@@ -24,16 +24,30 @@ According to Article 16 of the Law on Accounting of the Republic of Lithuania, c
 
 For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
+
+> [!NOTE]
+> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
+
 ## Setup
 
 To start to work with the **Lithuania SAF-T** report, complete the following steps:
 
-1. [Import Electronic reporting configurations.](#import)
-2. [Set up application-specific parameters for the **SAF-T Format (LT)** configuration.](#application)
-3. [Select the SAT-T format in General ledger parameters.](#satt)
-4. [Turn on features in Feature management.](#features)
+1. [Turn on features in Feature management.](#features)
+2. [Import Electronic reporting configurations.](#import)
+3. [Set up application-specific parameters for the **SAF-T Format (LT)** configuration.](#application)
+4. [Select the SAT-T format in General ledger parameters.](#satt)
 5. [Create a contact person for your company.](#contact)
 6. [Configure Registration number of the legal entity](#registration-id)
+
+### <a name="features"></a>Turn on features in Feature management
+
+1. Go to **Feature management**, and select the **All** tab.
+2. In the feature list, find and select the following features:
+
+    - [Standard Audit File for Tax (SAF-T) electronic report](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file.md)
+    - Optimize datasets memory consumption at ER reports runtime
+
+3. Select **Enable now**.
 
 ### <a name="import"></a>Import Electronic reporting configurations
 
@@ -82,6 +96,9 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
+
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
 3. Make sure that you're working in the company that you want to set up the application-specific parameters for.
@@ -99,17 +116,7 @@ Import the most recent versions of the configurations. The version description u
 ### <a name="satt"></a>Select the SAT-T format in General ledger parameters
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, set up the SAF-T format.
-
-### <a name="features"></a>Turn on features in Feature management
-
-1. Go to **Feature management**, and select the **All** tab.
-2. In the feature list, find and select the following features:
-
-    - Optimization of query data source creation time during execution of ER reports
-    - Optimize datasets memory consumption at ER reports runtime
-
-3. Select **Enable now**.
+2. On the **Standard Audit File for Tax** FastTab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (LT)**.
 
 ### <a name="contact"></a>Create a contact person for your company
 
@@ -136,7 +143,7 @@ For more information about how to set up registration categories and registratio
 
 ## Generate the SAF-T report
 
-- To generate the SAF-T report, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+To generate the SAF-T report, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 
 The following table describes the fields in the report dialog box.
 
