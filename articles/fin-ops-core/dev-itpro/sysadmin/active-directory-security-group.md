@@ -2,7 +2,7 @@
 title: Active Directory security groups
 description: This article provides information about the Active Directory security groups feature.
 author: peakerbl
-ms.date: 11/10/2022
+ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,6 +35,7 @@ Before you enable the **Active Directory security groups** feature, it's importa
 - Disabling a group in system administration doesn't stop JIT provisioning or role assignment.
 - The **User Id** value of users that are created through JIT provisioning has a leading dollar sign ($) and numbers.
 - Publishing views to security roles doesn't consider the role assignments made to Active directory security groups. 
+- Legal entity assignments are applied to the entire Active directory security group. 
 
 Microsoft doesn't expect to address these known limitations until the group experience is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](/power-platform/admin/manage-group-teams).
 
