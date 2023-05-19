@@ -41,7 +41,7 @@ To configure Microsoft Power Platform for business performance analytics, follow
 
 Azure Active Directory (Azure AD) must be configured so that it can be used with Microsoft Power Platform. The following setup must be completed.
 
-1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_AAD_IAM/LicensesMenuBlade/~/Products). Sign in by using the credentials of the tenant administrator.
+1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_AAD_IAM/LicensesMenuBlade/~/Products). Sign in using the credentials of the tenant administrator.
 2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing business performance analytics.
 
 For more information, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).
