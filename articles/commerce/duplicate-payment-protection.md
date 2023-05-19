@@ -61,7 +61,7 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 ## Scenario details
 
-The duplicate payment protection feature is applicable to payment authorization scenarios where a payment is initiated and completed on a payment terminal, but the Store Commerce app is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
+The duplicate payment protection feature is applicable to any payment authorization scenario where a payment is initiated and completed on a payment terminal, but the Store Commerce app is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
 
 > [!NOTE]
 > Refund or return payment scenarios are not supported for duplicate payment protection in POS.
