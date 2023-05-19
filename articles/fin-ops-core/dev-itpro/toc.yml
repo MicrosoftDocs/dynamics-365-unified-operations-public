@@ -355,6 +355,10 @@ items:
         href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
       - name: Generate demo data using data packages
         href: data-entities/generate-demo-data-packages.md
+    - name: Validate package operations     
+      items:   
+      - name: Validate packages
+        href: deployment/validate-pack.md
     - name: Deployment
       items:
       - name: Deploy demo environments
@@ -375,22 +379,26 @@ items:
             href: deployment/delete-production-environment.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
             href: deployment/maintenanceoperationsguide-newinfrastructure.md
           - name: Update an environment
             href: deployment/updateenvironment-newinfrastructure.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
             href: sysadmin/business-continuity-disaster-recovery.md
+        - name: Finance and operations apps regional services
+          items:
+          - name: Available geographies
+            href: deployment/deployment-options-geo.md
+          - name: US Government Community Cloud (GCC)
+            href: deployment/us-gcc-deployment.md
+          - name: China Operated by 21Vianet
+            href: deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
         - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
@@ -407,6 +415,14 @@ items:
           href: deployment/Auto-Update-Commerce-Scale-Unit.md
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Geo to Geo migration
+          items:
+          - name: Geo migration overview
+            href: deployment/geo-to-geo-migrations.md
+          - name: Finance and operations apps environment migration
+            href: deployment/environment-migration-process.md
+          - name: Lifecycle Services project migration manager
+            href: lifecycle-services/project-migration-manager.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
@@ -527,16 +543,10 @@ items:
           href: help/connect-help-pane.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
+        - name: Extend and collaborate on the help
+          href: help/contributor-guide.md      
         - name: Contribute to the Help
           href: help/contributor-guide.md
-      - name: Finance and operations apps regional services
-        items:
-        - name: Local geographies
-          href: deployment/deployment-options-geo.md
-        - name: US Government Community Cloud (GCC)
-          href: deployment/us-gcc-deployment.md
-        - name: China Operated by 21Vianet
-          href: deployment/china-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
@@ -1121,6 +1131,14 @@ items:
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
+      - name: Environment lifecycle operations - Core concepts
+        href: power-platform/environment-lifecycle-core-concepts.md
+      - name: Power Platform integration scenarios
+        items: 
+        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
+        - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
       - name: Dual-write
@@ -1150,7 +1168,11 @@ items:
                 - name: Enable table map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
-              href: data-entities/dual-write/separated-solutions.md
+              items:
+                - name: Separated dual-write application orchestration package
+                  href: data-entities/dual-write/separated-solutions.md
+                - name: Transition from dual-write application orchestration package to split packages
+                  href: data-entities/dual-write/separated-solutions-transition-guidance.md
             - name: Setup security roles and permissions
               href: data-entities/dual-write/security-roles.md
             - name: User-specified team owner
@@ -1900,8 +1922,6 @@ items:
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Install metadata hotfixes in development environments
-          href: migration-upgrade/install-metadata-hotfix-package.md
         - name: Patch Reporting Services in one-box environments
           href: migration-upgrade/patch-reporting-service-environment.md
         - name: Update Visual Studio development tools

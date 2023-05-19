@@ -5,7 +5,7 @@ description: This article provides information about business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 04/24/2023
+ms.date: 05/15/2023
 ms.topic: welcome
 ms.prod: 
 ms.technology:
@@ -38,13 +38,13 @@ A Tier-2 environment (multi-box) is required to preview business performance ana
 
 ### Version requirements
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.33 and later.
+Business performance analytics requires Dynamics 365 Finance version 10.0.33 and later. Finance and operations AppVersion: 10.0.1549.43 (Quality update from LCS). 
 
 ## Set up business performance analytics
 
 ### Set up business performance analytics environment
 
-Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
+Business performance analytics is currently supported in the following regions: AU, CA, US, UK, EU and JP. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
 
 ### Install business performance analytics
 

@@ -2590,6 +2590,8 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Migrate to the Commerce SDK
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Commerce Scale Unit extensions health check
+            href: dev-itpro/retail-sdk/csu-extensions-check.md
           - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)

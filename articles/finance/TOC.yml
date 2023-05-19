@@ -465,9 +465,7 @@
       - name: Subscription billing
         items:
         - name: Subscription billing overview
-          href: accounts-receivable/subscription-billing-summary.md
-        - name: Revenue and expense deferrals  
-          href: accounts-receivable/sb-project-deferrals.md
+          href: accounts-receivable/subscription-billing-summary.md     
         - name: Recurring contract billing
           items:
           - name: Set up recurring contract billing
@@ -506,6 +504,10 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Revenue and expense deferrals with project  
+            href: accounts-receivable/sb-project-deferrals.md
+          - name: Migrate revenue recognition data to revenue and expense deferrals  
+            href: accounts-receivable/sb-RevRecSubBillMigration.md
           - name: Deferral posting method 
             href: accounts-receivable/Deferral-posting-methods.md
           - name: Create deferral schedules
@@ -1778,6 +1780,24 @@
               href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
           - name: Extension
             items: 
+            - name: Tax integration design
+              items:
+              - name: Tax integration overview
+                href: localizations/tax-integration-flow.md
+              - name: Facade, sequence, and activities in tax integration
+                href: localizations/tax-integration-facade-sequence-activity.md
+            - name: Integrate a new transaction
+              items:
+              - name: Entrance code to tax integration
+                href: localizations/tax-integration-entrance-code.md
+              - name: Implement tax integration activities
+                href: localizations/tax-integration-implement-tax-integration-activities.md
+              - name: Uptake features and functions
+                href: localizations/tax-integration-uptake-features.md
+              - name: Modifications on switch functions and the front end
+                href: localizations/tax-integration-modification-swtich-functions-frontend.md
+            - name: Add a new activity in tax integration
+              href: localizations/tax-integration-how-to-add-activity.md
             - name: Add data fields in tax configurations
               href: localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
             - name: Add data fields in the tax integration by using extensions
@@ -3294,6 +3314,8 @@
             href: localizations/ltm-core-point-relation.md
           - name: Sales invoice posting for Latin America
             href: localizations/ltm-core-sales-invoice-posting-latam.md
+          - name: Value query for Latin America
+            href: localizations/ltm-core-value-query.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -4096,7 +4118,7 @@
     - name: Business performance analytics (preview)
       items: 
       - name: Business performance analytics
-        href: business-performance-analytics/business-performance-analytics-home-page
+        href: business-performance-analytics/business-performance-analytics-home-page.md
       - name: Configure business performance analytics
         href: business-performance-analytics/configure-BPA.md
       - name: Install business performance analytics
@@ -4149,6 +4171,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance  
+      - name: Supported data souce types for ER components
+        href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
       - name: Formula designers in ER
         items:
         - name: Formula designer
