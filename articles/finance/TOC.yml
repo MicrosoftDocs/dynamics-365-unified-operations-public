@@ -3050,7 +3050,9 @@
             href: localizations/emea-ita-vat-statements-details.md
           - name: Quarterly VAT communication report
             href: localizations/emea-ita-quarterly-vat-communication.md
-          - name: Competence date and fiscal journal
+          - name: Fiscal journal report
+            href: localizations/emea-ita-fiscal-journal.md
+          - name: Competence date for transactions in Italy 
             href: localizations/emea-ita-competence-date.md
           - name: Depreciation of fixed assets
             href: localizations/emea-ita-depreciation-of-fixed-assets.md
