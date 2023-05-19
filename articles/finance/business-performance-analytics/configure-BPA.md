@@ -50,6 +50,16 @@ For more details, see [Assign or remove licenses](/azure/active-directory/fundam
 
 To move data from your production environment to a sandbox environment, follow the instructions in [Data movement](../../fin-ops-core/dev-itpro/database/dbmovement-operations.md). This data will be loaded into business performance analytics and is a prerequisite for the installation of business performance analytics.
 
+## Required Validations of PowerApp User being enabled in Dynamics 365 Finance
+
+The following setup is required in the Dynamics 365 Finance before you can install business performance analytics.
+
+1. Login to D365 Finance. Navigate to path **Modules  \> System Administration \> Users**.
+2. On the Filters in right hand side, Add the filter IsMicrosoftAccount Isexactly true.
+3. Select the record **PowerplatformApp** user and click on Edit if the user is not enabled.
+4. Check the box Enabled and Click on Save.
+
+
 ## Required configurations in Dynamics 365 Finance
 
 The following setup is required in the Dynamics 365 Finance before you can install business performance analytics.
