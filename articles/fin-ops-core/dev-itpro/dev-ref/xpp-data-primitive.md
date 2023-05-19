@@ -197,7 +197,7 @@ static void GuidRoundTripJob(Args _args)
     str string3;
 
     // Convert a guid to a string, and back to a guid.
-    guid2 = newGuid();
+    guid2 = new Guid();
     info(strFmt("Info_a1:  guid2 == %1", guid2));
     string3 = guid2str(guid2);
     info(strFmt("Info_a2:  string3 == %1", string3));
