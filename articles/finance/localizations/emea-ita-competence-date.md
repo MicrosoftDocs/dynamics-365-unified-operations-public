@@ -1,6 +1,6 @@
 ---
-title: Competence date for transactions and the Fiscal journal report
-description: This article provides information about the competence date and explains how to turn on the functionality for transactions in Italy
+title: Competence date for transactions
+description: This article provides information about the competence date for transactions functionality in Italy
 author: AdamTrukawka
 ms.date: 02/05/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 ms.custom: 
 ---
 
-# Competence date for transactions and the Fiscal journal report
+# Competence date for transactions in Italy
 
 This article provides information about the competence date and explains how to turn on the functionality for transactions in Italy.
 
@@ -41,25 +41,6 @@ Usually, adjustment and closing transactions occur on the date when the balance 
     -   Project – Estimate post (**Project management and accounting** \> **Periodic** \> **Estimates** \> **Post estimates**)
     -   Project – Estimate reverse (**Project management and accounting** \> **Periodic** \> **Estimates** \> **Reverse estimates**)
 
-## Fiscal journal report
-
-The Italian **Fiscal journal** report (**General ledger \> Inquiries and reports \> Fiscal journal**) is a monthly report that lists all the vouchers and journal entries in order, by posting date.
-
-This report includes the following fields:
-
--   Line number
--   Posting date
--   Competence date
--   Document number (voucher number)
--   Date for document
--   Ledger account number and name
--   Customer/Vendor account number and name
--   Description
--   Currency
--   Debit or credit amount of the document
-
-![Fiscal journal report transactions.](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
-
 ## Example
 
 The company's fiscal year is from January 1 through December 31. The balance sheet is approved on April 15. Therefore, adjustment and closing transactions are reported in the Italian fiscal journal in April, but they affect the balance on December 31.
@@ -82,23 +63,6 @@ The company's fiscal year is from January 1 through December 31. The balance she
 7. Go to **General ledger** \> **Inquiries and reports** \> **Voucher transactions**.
 8. On the **Voucher transactions** page, add the **Transaction date** column.
 9. Verify that the **Date** field is set to December 31, and the **Transaction date** field is set to April 15.
-
-## Fiscal journal page numbering improvements
-
-You can enable the feature **(Italy) Fiscal journal page numbering improvements** in the **Feature management** workspace.
-
-This feature improves the calculation logic for page numbering in the Italian fiscal journal report. To update and store the page numbers, print the report to a screen with the **Report PDF Viewer** feature enabled, or print the report to a file in PDF format. Page numbers are calculated using the new algorithm when the fiscal journal report is printed in PDF format. Page numbers are stored so that pages for the next month’s report start sequentially using the next number after the stored one. This feature also enables an algorithm for grouping lines with the same column values into one line, so that only the necessary pages are included in the report printout.
-
-If you need to calculate the number of the documents included in the Fiscal journal, complete the following steps.
-
-1.	Print the report in a PDF file format.
-2.	Convert the PDF to Microsoft Excel using a converter software.
-3.	Create a pivot table and in the **Rows** field, select **Docum. No.**.
-
-    ![Excel pivot table.](media/ExcelPivotTable.png)
-
-The number of documents is equal to number of lines in the pivot table.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
