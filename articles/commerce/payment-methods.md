@@ -76,7 +76,7 @@ The following table represents an example set of card numbers mappings, but isn'
 > [!NOTE]
 > When you use the processor mapping mapping method, the card numbers mapping method is used as a backup if the processor mapping is unable to make a match. If neither mapping method makes a match, you can set a default value for each store in the **Electronic Payments: Default for unmapped processor payments** field on the **General** tab. If neither mapping method makes a match and a default value isn't set, the system protectively declines the authorization attempt.
 
-When creating or updating the card numbers mapping in the system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedule jobs. Allow 15 minutes after these jobs have completed to update the Retail Server cache for the changes take effect.
+When creating or updating card number mapping in the system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedule jobs. Allow 15 minutes after these jobs have completed for the system to update the Retail Server cache, and for the changes take effect.
 
 ## Handle change tendering for payment methods
 
