@@ -162,3 +162,6 @@ The following table describes the fields in the report dialog box.
 | **Tax Accounting Basis** | Select one of the following values from the list: <li>Invoice Accounting <li>Cash Accounting <li>Delivery <li>Other |
 | **Tax Entity** | Select one of the following values from the list: <li>Company <li>Division <li>Branch reference |
 
+On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+    
+Click **OK** button on the **Electronic report parameters** dialog to start report generation.
