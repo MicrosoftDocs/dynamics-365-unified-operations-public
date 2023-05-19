@@ -4,7 +4,7 @@
 title: Ledger settlement inquiry
 description: This article describes the Ledger settlement inquiry window  
 author: kweekley
-ms.date: 12/15/2022
+ms.date: 05/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
