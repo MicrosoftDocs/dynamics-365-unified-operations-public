@@ -154,7 +154,7 @@ Hundreds of enumerable types are built into the standard application. For exampl
 ### Create an enum
 
 1. In Solution Explorer, right-click the project, point to **Add**, and then click **New Item**.
-2. Under **Artifacts**, select **Data Types**.
+2. Under **Dynamics 365 Items**, select **Data Types**.
 3. Click **Base Enum** to select the new item type.
 4. In the **Name** field, enter a name for the enum, and then click **Add**. A new enum is added to the project, and the enum designer for the new element is opened.
 5. In the enum designer, right-click the enum name, and then click **New Element**.
