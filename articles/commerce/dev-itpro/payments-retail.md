@@ -46,7 +46,7 @@ This article answers frequently ask questions about payment options in Microsoft
 
 ### What is the TestConnector, and how should it be used?
 
-Commerce references a *TestConnector* in the payment connector setup pages for **Payment services**, **Online store payment accounts**, and **Hardware profile EFT service connectors**. 
+Commerce references a **TestConnector** in the payment connector setup pages for **Payment services**, **Online store payment accounts**, and **Hardware profile EFT service connectors**. 
 
 The TestConnector is intended to mimic a payment gateway return without actually calling out to a gateway (it automatically sends its own approval signal). There is limited support for this connector. The TestConnector isn't supported for online store or call center channels, or for user acceptance testing (UAT) and production (prod) environments.
 
@@ -55,7 +55,7 @@ The TestConnector should only be used in test environments for the following lim
 - POS basic credit card test transaction
 - POS basic unlinked test refund transaction
 
-Many scenarios in Commerce payments require token usage and references that aren't supported by the TestConnector. Microsoft recommends using a payment gateway test account to test scenarios within your sandbox environment to validate test patterns. Using an actual gateway is the best means to ensure that all scenarios are working as expected during testing. 
+Many scenarios in Commerce payments require token usage and references that aren't supported by the TestConnector. Microsoft recommends using a payment gateway test account to test scenarios within your sandbox environment to validate test patterns. Using an actual gateway's test environment is the best means to ensure that all scenarios are working as expected during testing. 
 
 ### What is a payment connector and in what cases do I need to deploy and implement a payment connector?
 
