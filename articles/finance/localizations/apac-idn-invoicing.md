@@ -46,6 +46,8 @@ Before you use the invoicing functionality, the following prerequisites must be 
     For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - [Configure the Electronic invoicing solution in Dataverse](e-invoicing-power-platform-plug-in.md).
+  > [!NOTE]
+  > By.
 - Enable Electronic invoicing for Indonesia
 
 ## Tax invoice numbering
