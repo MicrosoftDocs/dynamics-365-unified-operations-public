@@ -6,7 +6,7 @@ description: This article describes how to configure business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 04/24/2023
+ms.date: 05/19/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -54,10 +54,11 @@ To move data from your production environment to a sandbox environment, follow t
 
 The following setup is required in the Dynamics 365 Finance before you can install business performance analytics.
 
-1. Login to D365 Finance. Navigate to path **Modules  \> System Administration \> Users**.
-2. On the Filters in right hand side, Add the filter IsMicrosoftAccount Isexactly true.
-3. Select the record **PowerplatformApp** user and click on Edit if the user is not enabled.
-4. Check the box Enabled and Click on Save.
+1. In Dynamics 365 Finance, go to **System Administration \> Users**.
+2. In the filters, add **IsMicrosoftAccount Isexactly true**.
+3. Select the **PowerplatformApp** user. 
+4. Click **Edit**.
+5. Select **Enabled** and click **Save**.
 
 
 ## Required configurations in Dynamics 365 Finance
