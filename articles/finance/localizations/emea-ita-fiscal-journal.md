@@ -34,6 +34,10 @@ This report includes the following fields:
 
 ![Fiscal journal report transactions.](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
 
+> [!NOTE]
+> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further Fiscal journal reporting for some scenarios that are subject to this report. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the Fiscal journal report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
+
+
 ## Fiscal journal page numbering improvements
 
 You can enable the feature **(Italy) Fiscal journal page numbering improvements** in the **Feature management** workspace.
