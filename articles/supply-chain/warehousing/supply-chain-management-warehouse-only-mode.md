@@ -108,12 +108,12 @@ The **Warehouse management > Workspaces > Warehouse integration monitoring** pag
 **Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represents information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed **inventory transactions** as well as any associated **warehouse work**.
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal purchase order document. No financial postings as part of the [**General ledger**](../../finance/general-ledger/general-ledger.md) will be used for this source document.
 > [!NOTE]
-> The internal inbound shipment order number must be unique. You can define using the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order.
+> The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
 
 # Outbound shipment orders
 **Warehouse management > Inquiries and reports > Outbound shipment orders** are documents that represents information about the requested product dispatch. The **Outbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed **inventory transactions** as well as any associated **warehouse work**.
 > [!NOTE]
-> The internal outbound shipment order number must be unique. You can define using the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order.
+> The internal outbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
 
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the [**Source systems**](#source-systems) definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
 
