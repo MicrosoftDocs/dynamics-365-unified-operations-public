@@ -55,9 +55,9 @@ For more information about how to download ER configurations, see [Download ER c
 
 | ER configuration name       | Type          | Version | Description |
 |-----------------------------|---------------|---------|-------------|
-| Standard Audit File (SAF-T) | Model         | 163     | The common data model for different audit reports. |
-| SAF-T General model mapping | Model mapping | 163.353 | The model mapping that provides general data source mapping. |
-| SAF-T Format (DK)           | Format        | 163.20 | The XML format that represents the SAF-T report in accordance with the requirements for Denmark. |
+| Standard Audit File (SAF-T) | Model         | 164     | The common data model for different audit reports. |
+| SAF-T General model mapping | Model mapping | 164.354 | The model mapping that provides general data source mapping. |
+| SAF-T Format (DK)           | Format        | 164.21 | The XML format that represents the SAF-T report in accordance with the requirements for Denmark. |
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
@@ -144,21 +144,21 @@ In Danish SAF-T report, main accounts that are used in Finance must be associate
 
 ## Generate the SAF-T report
 
-- To generate the SAF-T report, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+To generate the SAF-T report, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 
 The following table describes the fields in the report dialog box.
 
 | Field name | Description |
 |------------|-------------|
-| **SAF-T File type** | <p>The SAF-T supports the following file types:</p><ul><li>**F** – A full SAF-T file. This type of SAF-T file can be split by period.</li><li>**GL** – General ledger records. This part of the SAF-T file can be split by entities, periods, or parts. </li><li>**PI** – Purchase data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li>**PA** – Payment data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li>**SI** – Sales data. This part of the SAF-T file can be split by entities, periods, or parts.</li><li>**MG** – The movement of goods. This part of the SAF-T file can be split by entities, periods, or parts.</li><li>**AS** – The movement of fixed assets. This part of the SAF-T file can be split by entities, periods, or parts.</li><ul> |
-| **Reporting period from** and **Reporting period to** | Define the start and end dates of the period that the SAF-T is requested for. The start date is reflected in the **Header** \> **SelectionCriteria** \> **SelectionStartDate** node of the SAF-T, and the end date is reflected in the **Header** \> **SelectionCriteria** \> **SelectionEndDate** node. |
 | **From date** and **To date** | Specify the start and end dates of the period that the report should include data for. The start date is reflected in the **Header** \> **SelectionCriteria** \> **PeriodStart** node of the SAF-T. The end date is reflected in the **Header** \> **SelectionCriteria** \> **PeriodEnd** node. The period for one file or one part of a file can't be shorter than one month and longer than a reporting period. |
-| **Number of parts** | Specify the number of parts to generate the SAF-T in. This value is reflected in the **Header** \> **NumberOfParts** node of the SAF-T. |
-| **Part number** | Specify the number of the part to generate in the current SAF-T. This value is reflected in the **Header** \> **PartNumber** node of the SAF-T. |
 | **Print zero balance** | This check box affects the data that is reported in the **MasterFiles** \> **GeneralLedgerAccounts** node of the SAF-T. Select this check box to include all the main accounts of your company, even main accounts that have a zero balance during the specified period. Clear the check box to include only main accounts that have a non-zero balance or transactions during the specified period. |
 | **Export all Customers** | This check box affects the data that is reported in the **MasterFiles** \> **Customers** node of the SAF-T. Select this check box to include all the customers of your company, even customers that have a zero balance during the specified period. Clear the check box to include only customers that have a non-zero balance or transactions during the specified period. |
 | **Export all Suppliers** | This check box affects the data that is reported in the **MasterFiles** \> **Suppliers** node of the SAF-T. Select this check box to include all the suppliers of your company, even suppliers that have a zero balance during the specified period. Clear the check box to include only suppliers that have a non-zero balance or transactions during the specified period. |
 | **Export all Analysis types** | This check box affects the data that is reported in the **MasterFiles** \> **AnalysisTypeTable** node of the SAF-T. Select this check box to include all the dimensions of your company. Clear the check box to include only dimensions that are used in transactions that are reported during the specified period. |
 | **Export all Products** | This check box affects the data that is reported in the **MasterFiles** \> **Products** node of the SAF-T. Select this check box to include all the products of your company, even products that have zero physical stock during the specified period. Clear the check box to include only products that have non-zero physical stock or transactions during the specified period. |
 | **Export all Sales tax codes** | This check box affects the data that is reported in the  **MasterFiles** \> **TaxTable** node of the SAF-T. Select this check box to include all the sales tax codes of your company. Clear the check box to include only sales tax codes that are used in transactions that are reported during the specified period. |
+| **Consolidation account group** | Select the **Consolidation account group** set up to [Configure Standard chart of accounts (Standardkontoplan)](#coa). |
+| **Header Comment** | Specify your comment to SAF-T. It can contain any further generic comments on the audit file. Maximum length is 256 characters.  |
+| **Tax Accounting Basis** | Select one of the following values from the list: <li>Invoice Accounting <li>Cash Accounting <li>Delivery <li>Other |
+| **Tax Entity** | Select one of the following values from the list: <li>Company <li>Division <li>Branch reference |
 
