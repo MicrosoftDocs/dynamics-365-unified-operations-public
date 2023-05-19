@@ -46,7 +46,7 @@ The linked refunds functionality works with the omni-channel payments functional
 To turn on the linked refunds functionality in headquarters, go to **System administration \> Workspaces \> Feature management** and enable the **Omni-channel payments** feature.
 
 > [!NOTE]
-> In Commerce versions prior to version 10.0.11, omnichannel payments are enabled in headquarters at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
+> In versions prior to Commerce version 10.0.11, omnichannel payments are enabled in headquarters at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
