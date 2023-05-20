@@ -44,7 +44,7 @@ Business performance analytics requires Dynamics 365 Finance version 10.0.33 and
 
 ### Set up business performance analytics environment
 
-Business performance analytics is currently supported in the following regions: AU, CA, US, UK, EU and JP. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
+Business performance analytics is currently supported in the following regions: Australia, Canada, UK, USA, Europe and Japan. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
 
 ### Install business performance analytics
 
