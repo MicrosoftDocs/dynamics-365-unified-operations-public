@@ -38,3 +38,11 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** June 2023
 - **General availability of release (auto-update):** Junly 2023
+
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
+
+| Feature area | Feature | More information | Enabled by |
+|--------------|---------|------------------|------------|
+| Tax Calculation | Enable exchange rate types for sales tax | The feature enables calculation of VAT amount for foreign invoice transactions on exchange rate different from the document date. This functionality will be available only for the legal entities with the enabled Tax calculation service for the selected business processes. | Feature management |
