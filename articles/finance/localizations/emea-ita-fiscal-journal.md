@@ -1,8 +1,8 @@
 ---
 title: Fiscal journal report
-description: This article provides information about Fiscal journal report in Italy
+description: This article provides information about Fiscal journal report in Italy.
 author: liza-golub
-ms.date: 05/19/2023
+ms.date: 05/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ ms.custom:
 
 # Fiscal journal report
 
-The Italian **Fiscal journal** report (**General ledger \> Inquiries and reports \> Fiscal journal**) is a monthly report that lists all the vouchers and journal entries in order, by posting date.
+The Italian **Fiscal journal** report, located under **General ledger** > **Inquiries and reports** > **Fiscal journal** is a monthly report that lists all the vouchers and journal entries in order, by posting date.
 
 This report includes the following fields:
 
@@ -35,8 +35,7 @@ This report includes the following fields:
 ![Fiscal journal report transactions.](media/ITA-Competence-date-for-transactions-1-fiscal-journal.png)
 
 > [!NOTE]
-> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further Fiscal journal reporting for some scenarios that are subject to this report. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the Fiscal journal report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
-
+> Using the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further Fiscal journal reporting for some scenarios that are subject to this report. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the Fiscal journal report. For information about One voucher functionality, see [One voucher](../general-ledger/one-voucher.md).
 
 ## Fiscal journal page numbering improvements
 
