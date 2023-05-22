@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 03/10/2023
+ms.date: 05/18/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -51,6 +51,10 @@ In the following example, if the first four digits of a card number are **6036**
 | Card number from   | 6000  |
 | Card number to     | 6999  |
 | Digits to identify | 4     |
+
+### Gift card item numbers
+
+The **Gift card item number** field values mentioned in the [Store setup](#store-setup), [Call center setup](#call-center-setup), and [Online store setup](#online-store-setup) sections below should differ from the ID values used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
 ### Payment methods
 
