@@ -1,5 +1,5 @@
 ---
-title: Archiving overview
+title: Archive overview
 description: This article provides an overview of how to archive various types of records in finance and operations apps.
 author: Henrikan
 ms.author: henrikan
@@ -51,5 +51,5 @@ archive data selection. 
 
 ## Next steps
 
-- Install the required add-in and enable the features you need as described in [Set up record archiving](archiving-setup.md)
-- [Archive sales orders](archiving-sales-orders.md)
+- Install the required add-in and enable the features you need as described in [Set up record Archive](archive-setup.md)
+- [Archive sales orders](archive-sales-orders.md)
