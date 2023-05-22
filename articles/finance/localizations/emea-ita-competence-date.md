@@ -1,5 +1,5 @@
 ---
-title: Competence date for transactions
+title: Competence date for transactions in Italy
 description: This article provides information about the competence date for transactions functionality in Italy.
 author: AdamTrukawka
 ms.date: 05/22/2023
