@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Tax application for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can register fiscal codes to identify finance entities on the file reports that are required by fiscal authorities.
 

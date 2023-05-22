@@ -2,7 +2,7 @@
 title: Cookie compliance
 description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/03/2023
+ms.date: 04/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,9 +54,10 @@ The following table shows the current reference list of cookies placed by Dynami
 | `_msdyn365___aud_0`                          | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
 | `_msdyn365___aud_1`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
 | `_msdyn365___aud_2`                           | Stores segment values used by targeting and is only employed if targeting is configured on a page or fragment requested by a site user. The cookie is placed only when the segment values come from a third-party segmentation provider.      | Seven days |
-| `d365gi`                                       | This cookie stores geographical location data when a third-party geolocation service is used.      | One day |
-| `_msdyn365___can_`                            | This cookie stores customer account number when on behalf of (OBO) business-to-business (B2B) functionality is being used.      | Session |
-| `_msdyn365___catalogid_`                            | This cookie is being used for maintaining customer catalog id selection.      | Session |
+| `d365gi`                                       | Stores geographical location data when using a third-party geolocation service.      | One day |
+| `_msdyn365___can_`                            | Stores customer account number when using on behalf of (OBO) business-to-business (B2B) functionality.      | Session |
+| `_msdyn365___catalogid_`                            | Stores the customer catalog ID selection.      | Session |
+
 
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 

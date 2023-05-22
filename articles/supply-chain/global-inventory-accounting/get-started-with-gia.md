@@ -61,7 +61,7 @@ Before you can enable add-in functionality, you must integrate with Microsoft Po
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
 1. After setup of the Microsoft Power Platform environment is completed, the page shows the name of your environment. Additionally, the **Power Platform Integration** section shows the statement, "Power Platform environment setup is complete." Global Inventory Accounting doesn't require a dual-write application.
 
-For more information, see [Enable after environment deployment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
+For more information, see [Enable Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md), and follow the steps to connect either to a new Power Platform environment or to an existing Dataverse instance that you already manage.
 
 ## <a name="install"></a>Install or update the add-in and solution
 
@@ -101,7 +101,7 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. Sign in to Supply Chain Management.
 1. Go to **System administration \> Feature Management**.
 1. Select **Check for updates**.
-1. On the **All** tab, search for the feature that is named *(Preview) Global inventory accounting*.
+1. On the **All** tab, search for the feature that is named *Global inventory accounting*.
 1. Select **Enable now**.
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
 1. Depending on which version of Supply Chain Management you're running, do one of the following steps:

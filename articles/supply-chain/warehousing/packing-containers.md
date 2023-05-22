@@ -232,7 +232,7 @@ Follow these steps to set up a packing profile.
 
 1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
-1. On the header of the new or selected profile, set the following fields:
+1. Make the following settings for your new or selected profile:
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.

@@ -23,6 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Buy Finance + Operations (on-premises)

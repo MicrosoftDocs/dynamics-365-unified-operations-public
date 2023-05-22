@@ -4,7 +4,7 @@
 title: Vendor aging report storage
 description: This article describes the process of using external storage for vendor aging data. 
 author: sunfzam
-ms.date: 02/15/2023
+ms.date: 04/15/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,8 @@ Before you can use this feature, it must be enabled. Administrators can use the 
     > Transaction details are always included, and the processing is always done in a batch job.
 
 5. Select **OK**.
-6. Refresh the **Vendor aging data storage** page to see the batch name, batch runtime, and processing status. When the batch job is completed, the **Processing status** field is set to **Ended**, and the **Number of aging lines** field is set. If the batch job is recurring, the **Processing status** field is set to **Waiting**.
-7. Select **Filter** to review the filters that have been added for the batch job.
+6. Refresh the **Vendor aging data storage** page to see the batch name, batch runtime, and processing status. When the batch job is completed, the **Processing status** field is set to **Ended**, and the **Number of aging lines** field is set. If the batch job is recurring, the **Processing status** field is set to **Waiting**. Record the **Execution name**.
+7. Go to **Data management framework**, select the "Vendor aging data storage" entity.
+8. Export the records after adding **Filter**. Set **Execution name** in **Vendor aging data storage** with the **Execution name**.
 
 The **Vendor aging data storage** page doesn't include the results. However, the **Vendor aging data storage** data entity lets you export the output to any format that Data management supports.

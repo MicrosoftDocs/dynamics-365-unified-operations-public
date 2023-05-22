@@ -2,7 +2,7 @@
 title: Migrate to the Commerce SDK
 description: This article explains how to migrate to the Commerce software development kit (SDK).
 author: josaw1
-ms.date: 05/31/2022
+ms.date: 05/03/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 10.0.19
 # Migrate to the Commerce SDK
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 The Commerce software development kit (SDK) and sealed installers simplify the Commerce developer and upgrade experience. The new Commerce SDK minimizes the effort that is involved in upgrades, and helps reduce the time and effort that must be spent on the upgrade process. Additionally, integration with Git, Microsoft Azure DevOps, and Visual Studio Code brings the .NET development experience to the Commerce SDK.
 
@@ -37,7 +38,7 @@ The Commerce SDK provides these benefits:
 - Extensions are published to GitHub and a public feed. You can download the SDK within minutes instead of hours.
 - The new sealed installers are headless (that is, there is no user interface). Sealed installers work great for mass deployment.
 - Separate headless installers for extensions use the new installer framework.
-- Packaging and configuration of CRT and Hardware station extensions for Modern POS are automated.
+- Packaging and configuration of CRT and Hardware station extensions for Store Commerce Modern POS are automated.
 - Build times are improved.
 - The developer experience is improved. CSU extensions can be developed by using Visual Studio Code, Git for source code management, and Azure DevOps for build automation.
 
@@ -56,7 +57,7 @@ The Commerce SDK provides these benefits:
 ## Overview of the migration steps
 
 1. Set up your [local development environment](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit/blob/release/9.33/src/ScaleUnitSample/Readme.md), or configure the [LCS development environment](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
-2. Uninstall the Modern POS, Hardware Station, and Cloud Scale Unit - Self-hosted that were installed by using the legacy installers. Then install the required application by using the [new sealed installers](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers).
+2. Uninstall the Store Commerce app, Hardware Station, and Cloud Scale Unit - Self-hosted that were installed by using the legacy installers. Then install the required application by using the [new sealed installers](https://community.dynamics.com/ax/b/axforretail/posts/introducing-sealed-installers).
 3. Migrate the CRT, API, channel database, proxy, POS, and Hardware Station extensions by using the Commerce SDK.
 
     Most of the code that was written by using the Retail SDK can easily be migrated. You don't have to rewrite it. For example, the CRT extension can be updated by changing the project to **NET standard 2.0** and updating the reference package so that it's consumed from the public feed. The API extension can be updated by using new interface and removing the **EDMModel** extender code, because it's automated in the back end.
@@ -235,7 +236,7 @@ In older versions of Retail SDK extensions, you must use the packages from the R
 
 #### Why we made this change to the API extensions
 
-This change removes the need to create the `EdmModel` factory and extender. It was complex for the extensions to add this factory and extender, and to set appropriate attributes. The whole Entity Data Model (EDM) process is now automated, and you don't have to generate a separate offline proxy library for Modern POS. The API extension library can be used directly offline, and the proxy generation process is simplified.
+This change removes the need to create the `EdmModel` factory and extender. It was complex for the extensions to add this factory and extender, and to set appropriate attributes. The whole Entity Data Model (EDM) process is now automated, and you don't have to generate a separate offline proxy library. The API extension library can be used directly offline, and the proxy generation process is simplified.
 
 ### Channel database
 
@@ -251,7 +252,7 @@ In older versions of Retail SDK extension, you must use the packages from the Re
 
 ### New sealed installers
 
-You can download the new sealed installers from LCS by going to the [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary) and selecting **Retail Self-service package** as the asset type. The legacy installers or the apps (Modern POS, Hardware Station, Cloud Scale Unit - Self-hosted) must be uninstalled before you install the new sealed installers. The Commerce SDK for POS will work only with the sealed installers.
+You can download the new sealed installers from LCS by going to the [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary) and selecting **Retail Self-service package** as the asset type. The legacy installers or the apps (Hardware Station, Cloud Scale Unit - Self-hosted) must be uninstalled before you install the new sealed installers. The Commerce SDK for POS will work only with the sealed installers.
 
 ### POS
 

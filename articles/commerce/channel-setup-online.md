@@ -54,7 +54,7 @@ The following image shows an example online channel.
 
 ## Assign the channel to a Commerce Scale Unit
 
-Your new channel must be assigned to a Commerce Scale Unit. For instructions, see [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-commerce-scale-unit).
+Your new channel must be assigned to a Commerce Scale Unit. For instructions, see [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-csu).
 
 ## Set up languages
 

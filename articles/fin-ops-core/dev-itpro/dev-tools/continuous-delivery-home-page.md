@@ -44,7 +44,6 @@ These topics describe tools and guidelines related to continuous delivery of you
 ## Servicing
 - [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
-- [Install metadata hotfixes in development environments](../migration-upgrade/install-metadata-hotfix-package.md)
 - [Patch SQL Server Reporting Services (SSRS) in one-box environments](../migration-upgrade/patch-reporting-service-environment.md)
 - [Update the Visual Studio development tools](update-development-tools.md)
 

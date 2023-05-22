@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.34 (June)  
+          href: get-started/whats-new-changed-10-0-34.md
         - name: Finance 10.0.33 (April)  
           href: get-started/whats-new-changed-changed-10-0-33.md
         - name: Finance 10.0.32 (March) 
@@ -65,7 +67,13 @@
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
         - name: Proactive quality updates
-          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
+          items:
+          - name: Proactive quality updates overview
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
+          - name: Release schedule for proactive quality updates
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/finance
+          - name: Proactive quality updates FAQ
+            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/finance
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
         - name: Delivering ISV solutions using One Version
@@ -242,14 +250,14 @@
           href: accounts-payable/install-invoice-capture.md
         - name: Configure Invoice capture
           href: accounts-payable/config-invoice-capture.md
+        - name: Manage channels in Invoice capture   
+          href: accounts-payable/invoice-capture-channel.md
         - name: Invoice capture configuration groups
           href: accounts-payable/invoice-capture-config-group.md
         - name: Invoice capture mapping rules
           href: accounts-payable/invoice-capture-mapping-rules.md
         - name: Invoice capture workspace
           href: accounts-payable/invoice-capture-workspace.md
-        - name: Invoice capture advanced settings
-          href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
         - name: Invoice capture received files
@@ -457,7 +465,7 @@
       - name: Subscription billing
         items:
         - name: Subscription billing overview
-          href: accounts-receivable/subscription-billing-summary.md
+          href: accounts-receivable/subscription-billing-summary.md     
         - name: Recurring contract billing
           items:
           - name: Set up recurring contract billing
@@ -496,6 +504,10 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Revenue and expense deferrals with project  
+            href: accounts-receivable/sb-project-deferrals.md
+          - name: Migrate revenue recognition data to revenue and expense deferrals  
+            href: accounts-receivable/sb-RevRecSubBillMigration.md
           - name: Deferral posting method 
             href: accounts-receivable/Deferral-posting-methods.md
           - name: Create deferral schedules
@@ -1300,12 +1312,16 @@
           href: general-ledger/posting-fail-imbalance.md
         - name: Why can't I reverse this transaction?
           href: general-ledger/cant-reverse-transctns.md
+        - name: Intercompany journals and financial dimensions  
+          href: general-ledger/intercompany-journal.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?context=/dynamics365/context/finance
+      - name: Financial reporting best practices  
+        href: general-ledger/fin-reports-best.md
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?context=/dynamics365/context/finance
       - name: View and design financial reports
@@ -1764,6 +1780,24 @@
               href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
           - name: Extension
             items: 
+            - name: Tax integration design
+              items:
+              - name: Tax integration overview
+                href: localizations/tax-integration-flow.md
+              - name: Facade, sequence, and activities in tax integration
+                href: localizations/tax-integration-facade-sequence-activity.md
+            - name: Integrate a new transaction
+              items:
+              - name: Entrance code to tax integration
+                href: localizations/tax-integration-entrance-code.md
+              - name: Implement tax integration activities
+                href: localizations/tax-integration-implement-tax-integration-activities.md
+              - name: Uptake features and functions
+                href: localizations/tax-integration-uptake-features.md
+              - name: Modifications on switch functions and the front end
+                href: localizations/tax-integration-modification-swtich-functions-frontend.md
+            - name: Add a new activity in tax integration
+              href: localizations/tax-integration-how-to-add-activity.md
             - name: Add data fields in tax configurations
               href: localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
             - name: Add data fields in the tax integration by using extensions
@@ -3252,6 +3286,8 @@
           items: 
           - name: Latin America overview
             href: localizations/latam-overview.md
+          - name: Latin America parameters
+            href: localizations/ltm-core-latam-parameters.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
@@ -3276,6 +3312,10 @@
             href: localizations/ltm-core-sales-point-prefixes.md
           - name: Sales point relation for sales documents and remission
             href: localizations/ltm-core-point-relation.md
+          - name: Sales invoice posting for Latin America
+            href: localizations/ltm-core-sales-invoice-posting-latam.md
+          - name: Value query for Latin America
+            href: localizations/ltm-core-value-query.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -4074,7 +4114,23 @@
         - name: Create custom designs for business documents
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
         - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance
+          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance  
+    - name: Business performance analytics (preview)
+      items: 
+      - name: Business performance analytics
+        href: business-performance-analytics/business-performance-analytics-home-page.md
+      - name: Configure business performance analytics
+        href: business-performance-analytics/configure-BPA.md
+      - name: Install business performance analytics
+        href: business-performance-analytics/install-bpa.md
+      - name: Set up security in business performance analytics
+        href: business-performance-analytics/set-up-security.md
+      - name: Business performance analytics FAQ 
+        href: business-performance-analytics/bpa-faq.md
+      - name: Business performance analytics reports
+        href: business-performance-analytics/Reports-in-BPA.md
+      - name: Create business performance analytics reports  
+        href: business-performance-analytics/how-to-create-and-edit-reports.md        
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
@@ -4115,6 +4171,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance  
+      - name: Supported data souce types for ER components
+        href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
       - name: Formula designers in ER
         items:
         - name: Formula designer
