@@ -122,8 +122,8 @@ additionalContent:
       - text: Enable integration between finance and operations and Power Platform
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview     
       - text: Dual-write overview 
-       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
-       - text: Virual entities overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
+      - text: Virual entities overview
     - title: System administration  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
