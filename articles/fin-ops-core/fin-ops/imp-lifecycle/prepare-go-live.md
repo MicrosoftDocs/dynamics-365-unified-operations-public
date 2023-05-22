@@ -67,7 +67,7 @@ The project team should validate solution readiness. The following prerequisites
 
     Performance testing is a crucial part of validating the readiness of your solution. For detailed guidance about the recommended practices, review the [Performance Testing Techtalks](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/performance-testing-in-microsoft-dynamics-365-techtalk-series).
 
-- The environment version that is planned for the go-live complies with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](/commerce/arch-component-versioning.md#component-dependencies).
+- The environment version that is planned for the go-live complies with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](../../../commerce/arch-component-versioning.md#component-dependencies).
 - Key customer team members have been added to the LCS project.
 - A generic service account that will be used to deploy the production environment has been added to LCS.
 - All licenses that are required for go-live have been purchased in the correct tenant.
