@@ -46,3 +46,19 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
 | Tax Calculation | Enable exchange rate types for sales tax | The feature enables calculation of VAT amount for foreign invoice transactions on exchange rate different from the document date. This functionality will be available only for the legal entities with the enabled Tax calculation service for the selected business processes. | Feature management |
+
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2023wave1/finance-operations/dynamics365-finance).
+
+| Feature area | Feature name | More information |
+|--------------|--------------|------------------|
+|General ledger|Financial tags|When the Financial tags feature is enabled, additional financial tags are available. Financial tags have been added to the Load ledger transactions function. Additionally, general journal entries that are marked as **Reversing entry**, financial tag values will default on the reversal entries. Financial tags default from the Ledger account to the split values for the breakdown of voucher functionality in journals.|
+|General ledger|Ability to view the original document’s financial tags for Ledger settlements|You can view the original document’s financial tag values on the **Ledger settlement** page. This information will be updated for opening balances for the ledger settlement main accounts that are defined to keep details during the year-end close process.|
+
+
+
+
+
+
