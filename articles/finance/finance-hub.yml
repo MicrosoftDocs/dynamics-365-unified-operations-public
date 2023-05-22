@@ -38,7 +38,7 @@ highlightedContent:
 
 additionalContent:
   sections:
-  - title: Implement Finance
+  - title: Implement 
     items:
     - title: Try/Buy/Deploy
       links: 
@@ -72,7 +72,7 @@ additionalContent:
         text: Implementation guide
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ     
-  - title: Develop Finance
+  - title: Develop 
     items:
     - title: Manage
       links:
