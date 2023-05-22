@@ -72,7 +72,7 @@ additionalContent:
         text: Implementation guide
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ     
-  - title: Develop 
+  - title: Administer and develop 
     items:
     - title: Manage
       links:
@@ -113,7 +113,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api  
         text: Data management REST API
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
-        text: Sevice endpoint overview  
+        text: Service endpoint overview  
     - title: Microsoft Power Platform integration
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
