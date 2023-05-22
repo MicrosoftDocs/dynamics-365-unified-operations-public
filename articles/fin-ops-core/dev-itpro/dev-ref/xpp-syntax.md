@@ -71,8 +71,8 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 <td></td>
 </tr>
 <tr class="even">
-<td><strong><em></strong></td>
-<td>Multiply. The asterisk (<span class="code"></em></span>) is also used in X++ SQL. One use is to signify all fields from the tables on a <code>select</code> statement. Another use is as a wildcard with the <code>like</code> operator, to signify 0 to many characters of any kind. The <code>like</code> operator also uses the <span class="code">?</span> character.</td>
+<td><strong>*</strong></td>
+<td>Multiply. The asterisk (<span class="code">*</span>) is also used in X++ SQL. One use is to signify all fields from the tables on a <code>select</code> statement. Another use is as a wildcard with the <code>like</code> operator, to signify 0 to many characters of any kind. The <code>like</code> operator also uses the <span class="code">?</span> character.</td>
 <td>Arithmetic Operators</td>
 </tr>
 <tr class="odd">
