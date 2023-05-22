@@ -61,7 +61,7 @@ Yes. You can proactively install a PQU. Microsoft will skip the update if the en
 - If a service update is scheduled within seven days of a scheduled PQU, the PQU is skipped. For example, a PQU is scheduled on January 28 for a production environment, and a service update is scheduled on February 4 for the same environment. In this case, the PQU on January 28 is skipped.
 - If a sandbox environment has the same build version as the scheduled PQU, or if it has a later build version, the PQU is skipped.
 - If a production environment has the same build version as the scheduled PQU, or if it has a later build version, the PQU is skipped.
-- If a sandbox environment has the same build version or a later build version because of a PQU or a manual update to the production environment, the production environment still receives the scheduled version of the PQU. If you don't want the production environment to receive the scheduled service update version, you can pause the service update from Lifecycle Services.
+- If a sandbox environment has the same build version or a later build version because of a PQU or a manual update to the production environment, the production environment still receives the scheduled version of the PQU. 
 - If any Lifecycle Services environment or project is under exemption, PQUs are skipped.
 - PQUs for a production environment are skipped if the update failed or was skipped in other sandbox environments in the Lifecycle Services project.
 
