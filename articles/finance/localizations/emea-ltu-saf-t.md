@@ -2,7 +2,7 @@
 title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
 author: liza-golub
-ms.date: 09/20/2021
+ms.date: 05/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -26,7 +26,7 @@ For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
 
 > [!NOTE]
-> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
+> Using the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
 
 ## Setup
 
@@ -41,13 +41,12 @@ To start to work with the **Lithuania SAF-T** report, complete the following ste
 
 ### <a name="features"></a>Turn on features in Feature management
 
-1. Go to **Feature management**, and select the **All** tab.
-2. In the feature list, find and select the following features:
+1. Go to the **Feature management** workspace, and on the **All** tab, in the feature list, find and select the following features:
 
     - [Standard Audit File for Tax (SAF-T) electronic report](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file.md)
     - Optimize datasets memory consumption at ER reports runtime
 
-3. Select **Enable now**.
+2. Select **Enable now**.
 
 ### <a name="import"></a>Import Electronic reporting configurations
 
@@ -93,11 +92,9 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="application"></a>Set up application-specific parameters for the SAF-T Format (LT) configuration
 
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature isn't enabled, configure the application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-> [!NOTE]
-> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
+We recommend that you also enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
 1. In Electronic reporting, open the **Configurations** page. 
 2. In the configuration tree, under **Standard Audit File (SAF-T)**, select **SAF-T Format (LT)**.
@@ -143,7 +140,7 @@ For more information about how to set up registration categories and registratio
 
 ## Generate the SAF-T report
 
-To generate the SAF-T report, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+To generate the SAF-T report, go to **General ledger** > **Inquiries and reports** > **Standard Audit File for Tax (SAF-T)** > **Standard Audit File for Tax (SAF-T)**.
 
 The following table describes the fields in the report dialog box.
 
