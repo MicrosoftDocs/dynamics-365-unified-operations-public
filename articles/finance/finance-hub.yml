@@ -117,21 +117,21 @@ additionalContent:
     - title: Microsoft Power Platform integration
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
-      - text: Integration between finance and operations and Power Platform overview
+        text: Integration between finance and operations and Power Platform overview
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration
-      - text: Enable integration between finance and operations and Power Platform
+        text: Enable integration between finance and operations and Power Platform
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview     
-      - text: Dual-write overview 
+        text: Dual-write overview 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
-      - text: Virual entities overview
+        text: Virual entities overview
     - title: System administration  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
-      - text: System administration overview
+        text: System administration overview
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation
-      - text: Process automation
+        text: Process automation
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
-      - text: Batch processing overview
+        text: Batch processing overview
   - title: Use Finance
     items:
     - title: Accounts payable
