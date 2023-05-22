@@ -1,5 +1,5 @@
 ---
-title: Set up record archiving
+title: Set up Archive
 description: This article describes how to set up your system to support archiving of various types of records.
 author: Henrikan
 ms.author: henrikan
@@ -12,16 +12,10 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up record archiving
+# Set up Archive
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!--KFM: Intro needed -->
-
-## Prerequisites
-
-<!--KFM: Explain that power platform integration must be complete. Give a link or instructions. -->
 
 ## Install the archiving add-in from LCS add-in
 
