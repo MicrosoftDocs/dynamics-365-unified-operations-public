@@ -57,6 +57,9 @@ The **Feature management** workspace also has several tabs, each of which shows 
 - **Scheduled** – This tab shows all features that have been scheduled to be turned on in the future. The features that have the earliest scheduled date appear at the top of the list. In addition, a tile at the top of the page shows the total number of scheduled features.
 - **All** – This tab shows all features. The newest features appear at the top of the list.
 
+## Feature recommendation notifications
+Starting in 10.0.35, users may start to see notifications informing them that certain features are recommended.  The users can view the suggested feature and request this feature to be enabled by the administrator.  This request will create a notification for the administrator, and they can then assess the feature and whether it should be enabled for their organization.
+
 ## Feature states
 Features can transition between several states, from being introduced in Feature management to eventually becoming mandatory in the product. This section describes the valid feature states.
 
