@@ -87,17 +87,17 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/
         text: Develop your environment
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/finance
-        text: Customize your experience
+        text: Customize your environment
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
         text: Use Dual-write
-    - title: Finance development 
+    - title: Azure data lake  
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/financial/dimensions
-        text: Patterns in Finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview?context=/dynamics365/context/finance
+       text: Export to Azure data lake overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
+        text: Export to Azure data lake in finance and operations
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/finance
         text: Data entities
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview?context=/dynamics365/context/finance
-        text: Azure data lake
     - title: Developer reference
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api
@@ -132,6 +132,14 @@ additionalContent:
         text: Process automation
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
         text: Batch processing overview
+    - title: Develop the user interface  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
+        text: User interface development home
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
+        text: General form guidelines
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
+        text: Build extensible controls     
   - title: Use Finance
     items:
     - title: Accounts payable
