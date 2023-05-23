@@ -29,8 +29,8 @@ To solve these issues, you can use the archival framework for finance and operat
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
-- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archiving-setup.md).
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archiving-setup.md).
+- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archive-setup.md).
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archive-setup.md).
     - *(Preview) Archive*
     - *(Preview) Archive sales orders to history tables*
     - *(Preview) Archive sales orders to history tables using archive service*
