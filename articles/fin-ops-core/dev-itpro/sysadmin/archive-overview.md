@@ -25,7 +25,7 @@ business and the number of transactions made YoY.
 
 ## Solution
 The **Archive** solution will provide the ability to **archive
-transactional data to a [historical table]{.underline}** within the
+transactional data to a 'historical table'** within the
 transactional SQL database. These historical tables will have *limited
 indexing* which results in a **significant reduction in storage space
 used**.  The movement of data from the live tables to the 'history
