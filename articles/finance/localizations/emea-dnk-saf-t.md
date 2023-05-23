@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Denmark
-ms.author: liza-golub
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
