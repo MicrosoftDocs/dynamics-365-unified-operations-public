@@ -51,7 +51,8 @@ To schedule a general ledger archive job, follow these steps:
 1. Select **Next** to continue to --more needed here -- 
 
     > [!NOTE]
-    > Only dates that meet the [prerequisites](#prerequisites) will be available for selection.
+    > Only data 
+    > 
 
 1. Select **Finish**.
 
