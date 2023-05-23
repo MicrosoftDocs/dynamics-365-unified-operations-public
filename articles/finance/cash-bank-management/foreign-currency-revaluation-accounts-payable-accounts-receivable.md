@@ -66,7 +66,7 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **Posting** – The financial dimensions of the transaction that is being revalued are posted on the foreign currency revaluation transactions. By default, the financial dimensions from the original transaction's AR/AP ledger account will be used for the revaluation transaction's AR/AP main account, and the financial dimensions from the original transaction's expense/asset/revenue ledger account will be used for the revaluation transaction's unrealized gain/loss main account.
 
 > [!NOTE] 
-> Exchange gain or loss is not aggregated because during settlement, unrealized gain or loss per open transaction should be reversed to recalculate realized gain or loss. If total gain or loss is posted to GL, it’s not possible to reverse per transaction. 
+> Exchange gain or loss isn't aggregated. At the time of settlement, the unrealized gain or loss for each open transaction should be reversed to recalculate any realized gain or loss. If the total gain or loss is posted to the General ledger, it’s not possible to reverse per transaction. 
 
 
 
