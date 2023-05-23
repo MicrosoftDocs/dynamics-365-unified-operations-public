@@ -15,9 +15,9 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-#Using Archive
+# Using Archive
 
-##Job Scheduling
+## Job Scheduling
 
 After the features have been enabled, you will find the workspace named
 **Archive** to schedule archive/reversal jobs and view historical data
@@ -36,14 +36,14 @@ amount of time an archive job runs in a day. If an archive job does not
 finish executing within the occurrence runtime limits, the job will be
 paused and picked up at the next execution occurrence.
 
-##Progress results and logs 
+## Progress results and logs 
 
 Once an archive job is scheduled and running, the progress and log
 information can be viewed by pressing the 'View Results' button. 
 Additional details can be found by viewing the detailed logs.  
 
 
-##Reverse an archive job 
+## Reverse an archive job 
 
 To reverse a job, select the reverse button from the workspace with the
 archive job selected you intend to reverse.  A dialog will appear
