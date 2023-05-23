@@ -34,8 +34,8 @@ Once you have installed the *(Preview) Archive* add-in from LCS, you'll be able 
 
 - *(Preview) Archive* – Required for all of the following archiving scenarios. It provides basic archiving support and adds the **Archive** workspace.
 - *(Preview) Ledger archive automation* – Archives general ledger records to the relevant history tables. Once archived to history tables, archived data from the day-to-day general ledger tables will be purged. <!--KFM: Add link to scenario topic.  -->
-- *(Preview) Archive sales orders to history tables* – Required for archiving sales orders. This feature provides a framework for archiving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archiving-sales-orders.md)
-- *(Preview) Archive sales orders to history tables using archive service* – Required for archiving sales orders. This feature performs the archiving of sales orders from day-to-day transaction tables to history tables. Once archived to history tables, archived data from the day-to-day transaction tables will be purged. For more information about how to use this feature, see [Archive sales orders](archiving-sales-orders.md)
+- *(Preview) Archive sales orders to history tables* – Required for archiving sales orders. This feature provides a framework for archiving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
+- *(Preview) Archive sales orders to history tables using archive service* – Required for archiving sales orders. This feature performs the archiving of sales orders from day-to-day transaction tables to history tables. Once archived to history tables, archived data from the day-to-day transaction tables will be purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
 
 ## Next steps
 
