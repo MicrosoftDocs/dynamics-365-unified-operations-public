@@ -9,7 +9,7 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: par.akerblom
 ms.search.validFrom: 2022-11-10
 ms.dyn365.ops.version: AX 7.0
 ---
