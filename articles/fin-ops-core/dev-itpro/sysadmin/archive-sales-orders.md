@@ -1,4 +1,4 @@
-﻿---
+---
 title: Archive sales orders
 description: This article describes how to archive sales orders to help improve database performance while keeping the records available for historical reporting, auditing, machine learning, legal claims, and other purposes.
 author: Henrikan
