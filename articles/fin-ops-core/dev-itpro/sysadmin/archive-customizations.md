@@ -26,7 +26,7 @@ structure of its corresponding live table.
 If you have custom fields added to live tables, please refer to
 following documentation on adding fields to history tables through
 extension in D365 Finance & Operations:
-<https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/add-field-extension>
+<https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/add-field-extension>
 
 ## Add additional table to archive scope 
 
