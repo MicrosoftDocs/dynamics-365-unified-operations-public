@@ -19,15 +19,15 @@ ms.dyn365.ops.version: 10.0.8
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
 ## May 2023 release
+
 The May release of the Dual-write Global Address Book solution 3.5.1.87 contains the following bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
-|Bug fix|Contact for **Customer**, **Vendor**, **Associate organizations** tab fix. |General availability|
-|Bug fix|"Object reference not set to an instance of an object" error when updating the party postal address.|General availability|
-|Bug fix|	**Add existing** button in sub grid for multiple entities.	|General availability|
-|Bug fix| **County** field isn't moved correctly to customer address in CE when filled in finance and operations. |General availability|
-
+| Bug fix | Contact for **Customer**, **Vendor**, and **Associate organizations** tab fix. | General availability |
+| Bug fix | "Object reference not set to an instance of an object" error when the party postal address is updated. | General availability |
+| Bug fix | **Add existing** button in the subgrid for multiple entities. | General availability |
+| Bug fix | **County** field isn't correctly moved to the customer address in customer engagement apps when it's set in finance and operations apps. | General availability |
 
 ## March 2023 release 
 
