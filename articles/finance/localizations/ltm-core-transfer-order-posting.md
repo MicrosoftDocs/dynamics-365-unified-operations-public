@@ -1,6 +1,6 @@
 ---
-title: Sales invoice posting for Latin America
-description: This topic provides information about the Inventory transfer order posting for Latin America. 
+title: Inventory transfer order for posting for Latin America
+description: This article provides information about inventory transfer order posting for Latin America. 
 author: Fhernandez0088
 ms.date: 05/18/2023
 ms.topic: Article
@@ -8,21 +8,35 @@ ms.reviewer: kfend
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---
-# Inventory transfer order posting for Latin America
-You can add the information needed for Latin American countries when posting an inventory transfer order in an extended LATAM section.
+# Inventory transfer order for posting for Latin America
+
+[!include [banner](../includes/banner.md)]
+
+You can add the information needed for Latin American countries when you an inventory transfer order in an extended LATAM section.
+
 ## Prerequisites
-Before posting an inventory transfer order with LATAM information you must configure the following:
-- Create a document class configured as inventory transfer packing slip.
-- In the Inventory and warehouse management parameters menu in the LATAM tab select a document class to use in the inventory transfer order transaction.
-- Configure at leas one product with the requirements to be used in an inventory transfer order transaction.
-## Post an inventory transfer order with LATAM information.
-1. Go to **Inventory management > Inbound orders > Transfer order**.
-2. Create a new transfer order.
-3. Add an item and select the warehouses to transfer the item.
-4. Select **Ship transfer order** from the **Ship** menu.
-5. Go to the LATAM tab and complete the required fields and select ok.
-## Checking LATAM information from transfer order transactions.
-1. Go to **Inventory management > Inbound orders > Transfer order**.
+
+Before you post an inventory transfer order with LATAM information, the following configurations must be complete. 
+
+- Create a document class that's configured as an inventory transfer packing slip.
+- In the **Inventory and warehouse management parameters**, on the **LATAM** tab, select a document class to use in the inventory transfer order transaction.
+- Configure at least one product with requirements that will be used in an inventory transfer order transaction.
+
+## Post an inventory transfer order with LATAM information
+Complete the following steps to post an intentory transfer order.
+
+1. Go to **Inventory management** > **Inbound orders** > **Transfer order** and create a new transfer order.
+2. Add an item, and select the warehouses to transfer the item.
+3. Select **Ship** > **Ship transfer order**.
+4. On the **LATAM** tab, complete the required fields and then select **OK**.
+
+## Checking LATAM information from transfer order transactions
+Complete the steps to view transaction information related to LATAM on the transfer order.
+
+1. Go to **Inventory management** > **Inbound orders** > **Transfer order**.
 2. Select a shipped transfer order.
-3. Select **Transfer order history** from the **Transfer order** menu.
-4. Go to the **LATAM** tab to check the LATAM information.
+3. Select **Transfer order** > **Transfer order history**.
+4. Onthe **LATAM** tab, review the LATAM information.
+
+
+[!include [banner](../includes/banner.md)]
