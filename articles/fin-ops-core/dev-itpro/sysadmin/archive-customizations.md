@@ -28,7 +28,7 @@ following documentation on adding fields to history tables through
 extension in D365 Finance & Operations:
 <https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/add-field-extension>
 
-##Add additional table to archive scope 
+## Add additional table to archive scope 
 
 Additional transaction tables can be added to the archive scope if they
 are related to the parent live table directly or via tables in its
