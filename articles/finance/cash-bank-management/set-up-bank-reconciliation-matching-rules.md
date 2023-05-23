@@ -44,11 +44,11 @@ By default, matching rules will match to the first bank document that meets the 
 
 You can turn on the **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** feature to enable three additional matching types: 
 
-  - One to many
-  - Many to one
-  - Many to many 
+- One to many
+- Many to one
+- Many to many 
 
-Grouping conditions are available in the reconciliation matching rules setup when you select one of the three matching types. Bank statement records and bank transaction records are grouped by the grouping conditions defined in this step and then the rest of the matching steps are executed.
+When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
 
 > [!NOTE] 
 > The option that you select determines the fields that appear.
