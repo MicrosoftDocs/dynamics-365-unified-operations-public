@@ -4,7 +4,7 @@
 title: Set up value models
 description: This procedure shows you to how create a new fixed asset book and associate it with a fixed asset group. 
 author: moaamer
-ms.date: 12/03/2021
+ms.date: 05/23/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetBookTable, AssetGroupBookSetup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -38,13 +38,14 @@ This procedure shows you to how create a new fixed asset book and associate it w
 4. In the **Description** field, enter a value.
 5. Set the **Calculate depreciation** option to **Yes**.
 
-    If the **Calculate depreciation** is option is set to **Yes**, the associated asset book will be included in depreciation proposals. If it's set to **No**, the asset book won't automatically be depreciated.
+>[!Note:]
+>If the **Calculate depreciation** field is set to **Yes**, the associated asset book will be included in depreciation proposals. If it's set to **No**, the asset book won't automatically be depreciated.
 
 6. In the **Depreciation profile** field, enter or select a value.
 
     * An alternative depreciation profile is also known as a switchover method of depreciation. The depreciation proposal will switch to this profile when the alternative profile calculates a depreciation amount that is equal to or greater than the default depreciation profile.
-    * The Extraordinary depreciation profile is used for additional depreciation of an asset in unusual circumstances. For example, you might use this to record depreciation that results from a natural disaster.
-    * If you select **Create depreciation adjustments with basis adjustments**, depreciation adjustments will automatically be created when the value of the asset is updated. Otherwise, the updated asset value will affect only future depreciation calculations.
+    * The extraordinary depreciation profile is used for additional depreciation of an asset in unusual circumstances. For example, you might use this to record depreciation that results from a natural disaster.
+    * If you select **Create depreciation adjustments with basis adjustments**, depreciation adjustments will be automatically created when the value of the asset is updated. Otherwise, the updated asset value will affect only future depreciation calculations.
 
 7. Set the **Create depreciation adjustments with basis adjustments** option to **Yes**.
 
@@ -54,7 +55,7 @@ This procedure shows you to how create a new fixed asset book and associate it w
 8. Calculate positive depreciation.
 
     * By default, the **Calculate positive depreciation** option is set to **No**. This setting indicates that depreciation will credit the selected asset book. In addition, the **Allow net book value higher than acquisition price** and **Allow negative net book value** options are both set to **No**, and the settings can be changed independently. 
-    * To calculate positive depreciation, set the **Calculate positive depreciation** option to **Yes**. This setting indicates the depreciation will debit the fixed asset book. When the **Calculate positive depreciation** option is set to **Yes**, the **Allow net book value higher than acquisition price** and **Allow negative net book value** options will automatically be set to **Yes**, and they will be locked. This lock helps ensure that positive depreciation will be applied only to fixed assets that were acquired with negative book value (credit). 
+    * To calculate positive depreciation, set the **Calculate positive depreciation** option to **Yes**. This setting indicates the depreciation will debit the fixed asset book. When the **Calculate positive depreciation** option is set to **Yes**, the **Allow net book value higher than acquisition price** and **Allow negative net book value** options will automatically be set to **Yes**, and will be locked. This lock helps ensure that positive depreciation will be applied only to fixed assets that were acquired with negative book value (credit). 
 
 10. In the **Calendar** field, enter or select a value.
 
