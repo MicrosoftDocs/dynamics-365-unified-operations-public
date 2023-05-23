@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Lithuania
-ms.author: liza-golub
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -42,7 +42,7 @@ To start to work with the **Lithuania SAF-T** report, complete the following ste
 
 1. In the **Feature management** workspace, on the **All** tab, find and select the following features in the feature list:
 
-    - [Standard Audit File for Tax (SAF-T) electronic report](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file.md)
+    - [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md)
     - Optimize datasets memory consumption at ER reports runtime
 
 2. Select **Enable now**.
