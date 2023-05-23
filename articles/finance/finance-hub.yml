@@ -93,7 +93,7 @@ additionalContent:
     - title: Azure data lake  
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview?context=/dynamics365/context/finance
-       text: Export to Azure data lake overview
+        text: Export to Azure data lake overview
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
         text: Export to Azure data lake in finance and operations
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/finance
