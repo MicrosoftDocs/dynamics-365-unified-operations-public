@@ -9,7 +9,7 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: Peakerbl
 ms.search.validFrom: 2022-11-10
 ms.dyn365.ops.version: AX 7.0
 ---
@@ -26,9 +26,9 @@ Group-based role assignments are applied by using manual and automatic rule-base
 
 Before you enable the **Active Directory security groups** feature, it's important that you are aware of the following known limitations. Several of the limitations affect internal control and auditing.
 
-- Segregation of duty reporting doesn't consider these role assignments.
 - No database logging can be done for these role assignments.
 - Security and licensing reports don't include these role assignments.
+- Segregation of duties engine is not compatible with these role assignments.
 - Pages that show role assignments, the **Assign users to role** page, and the **Roles for selected user** FactBox don't include these role assignments.
 - External users aren't supported. They can't use JIT provisioning, and no roles can be assigned to them based on group memberships.
 - Workflows that depend on assigned roles don't consider these role assignments.

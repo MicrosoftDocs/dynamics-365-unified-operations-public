@@ -200,9 +200,9 @@ HTTP/1.1 200 OK
 | string errorkeysfileurl | The URL of the error keys file, if the file is available. If the error file is still being generated, or if no errors exist, the method returns an empty string. |
 
 
-### GetAzureWritableUrl
+### GetAzureWriteUrl
 
-The **GetAzureWritableUrl** API is used to get a writable blob URL. The method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container. For on-premises deployments, this API will still return the URL that has been abstracted to local storage.
+The **GetAzureWriteUrl** API is used to get a writable blob URL. The method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container. For on-premises deployments, this API will still return the URL that has been abstracted to local storage.
 
 > [!NOTE]
 > An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
@@ -243,7 +243,7 @@ HTTP/1.1 200 OK
 
 The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Blob storage that is associated with your implementation. For on-premises deployments, the import will be initiated from the local storage that the file was uploaded previously to.
 
-There is an async version of this API **ImportFromPackageAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.   
+There is an async version of this API **ImportFromPackageAsync**. The specifications are the same. It will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.   
 
 > [!NOTE]
 > The **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
@@ -299,7 +299,7 @@ The following APIs are used to export files (data packages).
 
 The **ExportToPackagePreview** API is used to preview an export of a data package with a large number of records. This API is applicable to both cloud deployments and on-premises deployments.
 
-There is an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
+There is an async version of this API **ImportFromPackagePreviewAsync**. The specifications are the same. It will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed.  
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
@@ -351,7 +351,7 @@ HTTP/1.1 200 OK
 
 The **ExportToPackage** API is used to initiate an export of a data package. This API is applicable to both cloud deployments and on-premises deployments.
 
-There is an async version of this API **ExportToPackageAsync**. The specifications are the same. I will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed. 
+There is an async version of this API **ExportToPackageAsync**. The specifications are the same. It will be required to capture the execution id returned and the later call the **GetExecutionSummaryStatus** API to determine when the execution has completed. 
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)

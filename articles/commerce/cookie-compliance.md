@@ -58,6 +58,7 @@ The following table shows the current reference list of cookies placed by Dynami
 | `_msdyn365___can_`                            | Stores customer account number when using on behalf of (OBO) business-to-business (B2B) functionality.      | Session |
 | `_msdyn365___catalogid_`                            | Stores the customer catalog ID selection.      | Session |
 
+
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
 
