@@ -24,9 +24,8 @@ According to Article 16 of the Law on Accounting of the Republic of Lithuania, c
 
 For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
-
 > [!NOTE]
-> Using the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
+> The [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
 
 ## Setup
 
@@ -37,11 +36,11 @@ To start to work with the **Lithuania SAF-T** report, complete the following ste
 3. [Set up application-specific parameters for the **SAF-T Format (LT)** configuration.](#application)
 4. [Select the SAT-T format in General ledger parameters.](#satt)
 5. [Create a contact person for your company.](#contact)
-6. [Configure Registration number of the legal entity](#registration-id)
+6. [Configure Registration number of the legal entity.](#registration-id)
 
 ### <a name="features"></a>Turn on features in Feature management
 
-1. Go to the **Feature management** workspace, and on the **All** tab, in the feature list, find and select the following features:
+1. In the **Feature management** workspace, on the **All** tab, find and select the following features in the feature list:
 
     - [Standard Audit File for Tax (SAF-T) electronic report](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file.md)
     - Optimize datasets memory consumption at ER reports runtime
@@ -92,7 +91,7 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="application"></a>Set up application-specific parameters for the SAF-T Format (LT) configuration
 
-We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature isn't enabled, configure the application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature isn't enabled, explicitly configure the application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 We recommend that you also enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
@@ -125,9 +124,9 @@ The **Company** node of the SAF-T report must include information for a contact.
 
 ![ER configurations for the SAF-T report for Lithuania.](media/lt-saf-t-contact-person.png)
 
-### <a name="registration-id"></a> Configure Registration number of the legal entity
+### <a name="registration-id"></a>Configure the registration number of the legal entity
 
-To generate a SAF-T, you must configure the Registration number.
+To generate a SAF-T, you must configure the registration number.
 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
