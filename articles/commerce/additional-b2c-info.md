@@ -2,7 +2,7 @@
 title: Additional B2C information
 description: This article provides additional information on how to set your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 05/24/2023
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -22,7 +22,7 @@ This article provides additional information on how to set your business-to-cons
 
 If you are considering migrating customer records from a previous identity provider platform, please work with the Dynamics 365 Commerce team to review your customer migration needs.
 
-For additional Azure AD B2C documentation on customer migration, see [Migrate users to Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
+For additional Azure Active Directory (Azure AD) B2C documentation on customer migration, see [Migrate users to Azure Active Directory B2C](/azure/active-directory-b2c/active-directory-b2c-user-migration).
 
 ### Custom policies
 
@@ -32,13 +32,11 @@ For additional information regarding customizing Azure AD B2C interactions and p
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
 
-### Azure AD B2C Phone Sign-up and Sign-in 
+### Azure AD B2C phone sign-up and sign-in 
 
-To enable Azure AD B2C phone sign-up and sign-in for Dynamics 365 e-Commerce follow the instructions in [Set up phone sign-up and sign-in for user flows](/azure/active-directory-b2c/phone-authentication-user-flows). Please note, it's recommended to use a generic Azure AD Identity Module in Dynamics. Also, if there is a need to include the style, the use of generic Azure AD Identity Module is required.
+To enable Azure AD B2C phone sign-up and sign-in for Commerce, follow the instructions in [Set up phone sign-up and sign-in for user flows](/azure/active-directory-b2c/phone-authentication-user-flows). Microsoft recommends that you use a generic Commerce Azure AD identity module. If you need to include the style, you must use the generic Azure AD identity module.
 
-Both options **Phone signup** and **Phone/Email signup** are supported. 
-
-When selecting return values for **Phone signup** note that it's recommended to choose **Email Address** as a required value, because D365 Commerce utilizes email for receipts and other purposes.
+Both the **Phone signup** and **Phone/Email signup** options are supported. When selecting return values for **Phone signup**, Microsoft recommends that you select **Email Address** as a required value, because Commerce uses email for receipts and other purposes.
 
 ### Set up a custom sign-in domain
 
