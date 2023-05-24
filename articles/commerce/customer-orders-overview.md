@@ -196,8 +196,27 @@ The **Create customer order in async mode** option always creates the order in a
 
 The **Use realtime service for order creation with async backup** option can only be enabled if the **Create customer order in async mode** option is already enabled. The **Use realtime service for order creation with async backup** option first tries to create the order using the Retail Transaction Service (RTS). If that attempt fails, the order is created using the same batch process described above. Most of the time the order is created as quickly as it would be via synchronous order creation. However, with this configuration POS uses the confirmation number to immediately complete the order transaction and doesn't wait for the RTS call to be completed. 
 
+With 10.0.35 release, the asynchronous customer orders can be cancelled even if the corresponding sales order has not been created in the Commerce Headquarters (HQ). To enable this capability, enable the feature "Enable asynchronous order cancellation" using the Feature management workspace. 
+> [!Note]
+> This feature is currently marked as preview since it not yet validated alongside the localization features. 
+
+The order cancellation experience is exactly same as the experience for cancelling an existing customer order. However, please note that even though the store associate cancels the order and refunds the deposit to the customer, but the original order gets cancelled only after it has been created in HQ. The below mentioned jobs need to run at pre-defined interval so that the system automatically cancels the original order once it is created.
+Go to System administration > Inquiries > Batch jobs.
+1. Go to System administration > Inquiries > Batch jobs.
+2. On the Batch job page, create two batch jobs:
+3. Configure one job to run the RetailDocumentOperationMonitorBatch class.
+4. Configure the other job to run the RetailDocumentOperationProcessingBatch class.
+5. Schedule the new batch jobs to run on a recurring basis. For example, set the schedule so that the jobs run every five minutes.
+
+In case there are any issues in cancelling the order, then such issues can be viewed in the "Sales order processing and inquiry" workspace in a new section "Incomplete async order cancellations". There can be two types of issues, permanent issue or transient issue (aka retriable issue) which prevented the original sales order to get cancelled. Permanent issues would include, the order is fulfilled and hence it cannot be cancelled, or the order was partially fulfilled and hence only partially cancelled, but the customer has been refunded the full deposit. The transient issues include the cases where the original order has not yet created and hence the corresponding cancellation transaction is not yet processed. The system automatically retries to process the lines which have a transient error, but the users need to manually handle the lines which have a permanent error. Once the order has been manually fixed, then the user can set the troubleshooting status of such transactions as desired to indicate that no further troubleshooting is needed for this transaction.
+
+For scenarios where the organizations cannot enable asynchronous customer orders and hence must use the synchronous customer orders, in case, the order creation is taking too long such that the POS times out or the user gets into a bad order state, then a new operation named "Force complete transaction", released in 10.0.35, can be leveraged which completes the order asynchronously. However, since the organization did not want the asynchronous customer order, so their associates can use the above mentioned asynchronous order cancellation process to cancel the order and try creating a new order. To summarize, this feature provides a way to the user to get out from a state when the order creation is failing but the user cannot void the transaction. 
+
 > [!NOTE]
-> Asynchronous orders can't be edited or canceled unless the orders are created in headquarters. Because the **Create customer order with async fall back** option first tries to create the order using an RTS call, the order is usually available for editing and cancellation within a few seconds. The capability to cancel asynchronous orders before they're synced in headquarters is currently planned for future releases.
+> This operation can only be used if the feature "Enable asynchronous order cancellation" is enabled. 
+
+
+
 
 ## Additional resources
 
