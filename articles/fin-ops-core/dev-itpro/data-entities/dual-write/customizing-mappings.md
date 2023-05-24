@@ -2,10 +2,10 @@
 title: Customize table and column mappings
 description: This article explains how to customize table and column mappings.
 author: nhelgren
-ms.date: 03/20/2020
+ms.date: 05/20/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -19,6 +19,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 The out-of-box table maps have predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
+
+>[!Note:]
+>The entity Worker Personal details of dataverse doesn't have Professional Suffix out of the box but you can add it via extensibility. You can't save new values to fields Professional Suffix and Personal Suffix of entity Worker while mapping Worker Personal details from dataverse to Worker entity in finance and operations as the data source DirNameAffixPersonalSuffix of finance and operations which contains these two fields, doesn't allow to save values which are not present in the system.
+
+
 
 ## Customize column mappings, add transforms, and enable filtering
 
