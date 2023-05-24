@@ -93,6 +93,7 @@ The following table lists the supported registration types. If you're familiar w
 | Residence certificate                                         | Spain             | Residence certificate|
 | Other identification document                                 | Spain             | Other identification document|
 | Not censused                                                  | Spain             | Not available in AX 2012 R3|
+| SIRET                                                         | France            | Not available in AX 2012 R3|
 
 
 For more information about registration IDs processing, including required prerequisites, see the following task recordings for VAT ID in Lifecycle Services (LCS):

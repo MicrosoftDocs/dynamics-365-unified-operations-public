@@ -42,6 +42,14 @@ On the **Reconciliation matching rules** page, you can select which actions and 
 
 By default, matching rules will match to the first bank document that meets the matching rule criteria. If multiple bank document meet the rule criteria, the parameter to require manual matching can be turned on by going to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount**.
 
+You can turn on the **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** feature to enable three additional matching types: 
+
+- One to many
+- Many to one
+- Many to many 
+
+When you select one of these matching types, grouping conditions are available in the reconciliation matching rule setup. Bank statement records and bank transaction records are grouped by the grouping conditions that are defined in this step, and then the remaining matching steps are run.
+
 > [!NOTE] 
 > The option that you select determines the fields that appear.
 
