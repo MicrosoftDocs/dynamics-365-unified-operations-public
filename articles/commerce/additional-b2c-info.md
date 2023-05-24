@@ -34,7 +34,7 @@ An optional, secondary administrator account can be added in the **Users** secti
 
 ### AAD B2C Phone Sign-up and Sign-in 
 
-To enable AADB2C phone sign-up and sign-in for Dynamics 365 e-Commerce follow the instructions in this [article](https://learn.microsoft.com/azure/active-directory-b2c/phone-authentication-user-flows). Please note, it is recommended to use a generic AAD Identity Module in Dynamics. Also, if there is a need to include the style, the use of generic AAD Identity Module is required.
+To enable AADB2C phone sign-up and sign-in for Dynamics 365 e-Commerce follow the instructions in this [article](/azure/active-directory-b2c/phone-authentication-user-flows). Please note, it is recommended to use a generic AAD Identity Module in Dynamics. Also, if there is a need to include the style, the use of generic AAD Identity Module is required.
 
 Both options **Phone signup** and **Phone/Email signup** are supported. 
 
