@@ -32,7 +32,7 @@ For additional information regarding customizing Azure AD B2C interactions and p
 
 An optional, secondary administrator account can be added in the **Users** section of your B2C tenant. This can be a direct account or a general account. If you need to share an account across team resources, a common account can also be created. Due to the sensitivity of the data stored in Azure AD B2C, a common account should be monitored closely per your company's security practices.
 
-### Azure AD B2C phone sign-up and sign-in 
+### Enable Azure AD B2C phone sign-up and sign-in 
 
 To enable Azure AD B2C phone sign-up and sign-in for Commerce, follow the instructions in [Set up phone sign-up and sign-in for user flows](/azure/active-directory-b2c/phone-authentication-user-flows). Microsoft recommends that you use a generic Commerce Azure AD identity module. If you need to include the style, you must use the generic Azure AD identity module.
 
