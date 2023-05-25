@@ -27,16 +27,15 @@ The following templates available for Human Resources:
 
 
 ## Power automate templates 
-To use Power automate templates to create business events in Microsoft Dynamics 365 Human Resources follow these steps:
+To use Power automate templates to create business events in Microsoft Dynamics 365 Human Resources, follow these steps:
 1. Go to Microsoft Power Automate. 
 2. Select **Templates** from the left navigation panel.
 3. Search for the template name. Ex: **Goal due reminder**.
-4. Select template and the flow connection will be displayed.
+4. Select template and the flow connection will display.
 5. Click **Continue**. 
 6. Enter your Finance environment. 
 
 To change the occurrence of the flow, go to **Recurrence** and update the **Interval** and **Frequency**. If the flow interval is updated from every day to every week, the flow will run once a week and send 
 email notifications. 
 
-You can update email notification in the **Conditions** section. When the **Goal due reminder** flow is ran, the email notification will be sent to all workers where the goal end date is today 
-and is not completed or cancelled. To send notifications to all workers where a goal is due on a specific date, change the condition using the **Is less than and equal to**. 
+You can update email notification in the **Conditions** section. When the **Goal due reminder** flow is ran, the email notification is sent to all workers where the goal end date is today and isn't completed or canceled. To send notifications to all workers where a goal is due on a specific date, change the condition using the **Is less than and equal to**. 
