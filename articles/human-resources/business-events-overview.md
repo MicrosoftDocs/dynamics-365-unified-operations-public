@@ -4,7 +4,7 @@
 title: Human resources business events overview
 description: This article provides an overview of business events.
 author: twheeloc
-ms.date: 03/06/2023
+ms.date: 05/06/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -71,3 +71,6 @@ For more information about business events such as activation, performance, and 
 - Course assignment
 - Course completion
 - Goal assignment
+
+
+For a full list of business events, review the business events catalog and search category: Human Resources.
