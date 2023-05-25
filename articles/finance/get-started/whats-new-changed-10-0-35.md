@@ -37,7 +37,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** Junly 2023
+- **General availability of release (auto-update):** July 2023
 
 ## Features included in this release
 
@@ -45,9 +45,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-| Tax Calculation | Enable exchange rate types for sales tax | The feature enables calculation of VAT amount for foreign invoice transactions on exchange rate different from the document date. This functionality will be available only for the legal entities with the enabled Tax calculation service for the selected business processes. | Feature management |
-|Globalization |Electronic Invoicing service – French e-invoice integration with Chorus Pro|The Electronic Invoicing service in Dynamics 365 Finance allows businesses to fully automate the electronic invoicing clearance process end to end. This automation ranges from issuing sales, free text, and project invoices to submitting electronic invoices to Chorus Pro for clearance purposes and then distributing them to other companies registered in Chorus Pro. This feature provides compliance with the legal requirements for electronic invoicing in France.| Feature management|
-
+| Tax Calculation | Enable exchange rate types for sales tax | The feature enables value-added tax (VAT) amounts for foreign invoice transactions to be calculated at an exchange rate that differs from the exchange rate on the document date. This functionality will be available only for legal entities where the Tax calculation service is enabled for the selected business processes. | Feature management |
+| Globalization | Electronic Invoicing service – French e-invoice integration with Chorus Pro | The Electronic Invoicing service in Dynamics 365 Finance enables businesses to fully automate the electronic invoicing clearance process from end to end. This automation ranges from issuing sales invoices, free text invoices, and project invoices, to submitting electronic invoices to Chorus Pro for clearance purposes and then distributing them to other companies that are registered in Chorus Pro. This feature provides compliance with the legal requirements for electronic invoicing in France. | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -55,11 +54,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|General ledger|Financial tags|When the Financial tags feature is enabled, additional financial tags are available. Financial tags have been added to the Load ledger transactions function. Additionally, general journal entries that are marked as **Reversing entry**, financial tag values will default on the reversal entries. Financial tags default from the Ledger account to the split values for the breakdown of voucher functionality in journals.|
-|General ledger|Ability to view the original document’s financial tags for Ledger settlements|You can view the original document’s financial tag values on the **Ledger settlement** page. This information will be updated for opening balances for the ledger settlement main accounts that are defined to keep details during the year-end close process.|
-|Project management and Accounting |Enable GST/TDS-TCS tax support for Project Integration Journal|When the feature is enabled, India Indirect and direct taxes are available on Project integration Journal . This feature provides users with an option to review transactions and adjust tax attributes and accounting attributes as needed in all the types of integration journals.|
-|Subscription billing |Ability to use sales agreements with billing schedules |Billing schedules can create a Sales agreement or be linked to a sales agreement and leverage the pricing from the sales agreement.|
-
-
-
-
+| General ledger | Financial tags | When the Financial tags feature is enabled, additional financial tags are available. Financial tags have been added to the **Load ledger transactions** function. Additionally, for general journal entries that are marked as **Reversing entry**, default financial tag values will be entered on the reversal entries. Default financial tags are entered from the ledger account to the split values for the breakdown of voucher functionality in journals. |
+| General ledger | Ability to view the original document's financial tags for Ledger settlements | You can view the original document's financial tag values on the **Ledger settlement** page. This information will be updated for opening balances for the ledger settlement main accounts that are defined to keep details during the year-end close process. |
+| Project management and Accounting | Enable GST/TDS-TCS tax support for Project Integration Journal | When the feature is enabled, Indian indirect and direct taxes are available in the Project integration journal. This feature provides an option that lets users review transactions and adjust tax attributes and accounting attributes as needed in all types of integration journals. |
+| Subscription billing | Ability to use sales agreements with billing schedules | Billing schedules can create a sales agreement or be linked to a sales agreement and use the pricing from the sales agreement. |
