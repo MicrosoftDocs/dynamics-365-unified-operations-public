@@ -1,3 +1,6 @@
+---
+# required metadata
+
 title: Batch-based business events in Human Resources
 description: This topic describes how to configure batch-based business events in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
