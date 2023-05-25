@@ -1,3 +1,6 @@
+---
+# required metadata
+
 title: Power automates templates based business events    
 description: This article describes the templates that are available for Human Resources business events
 author: twheeloc
