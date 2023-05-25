@@ -37,7 +37,7 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+| Data Engine/ Authorization | The new role ‘XDSDataAccessPolicyBypassRole’ is introduced to the bypass XDS policy. </br></br>If a user is assigned with the ‘XDSDataAccessPolicyBypassRole’ role, then the user with this role will bypass any supplemental extensible data security (XDS) policies and their data access will be purely role-based. For example, if then XDS policy is created with Query “XDSQCustGroup10” and is assigned to role ‘X’, when ‘User1’ is assigned with role ‘X’ then ‘User1’ can see Customer group: 10 on all customers pages.</br></br>If ‘User1’ is also assigned with ‘XDSDataAccessPolicyBypassRole’ along with role ‘X’ then the filter will not be applied, as the XDS policy is bypassed with the role ‘XDSDataAccessPolicyBypassRole’. ‘User1’ can see all of the groups | [Allow Row version change tracking for tables and data entities (Preview)](../data-entities/rowversion-change-track.md) | Default |
 
 
 ### Bug fixes
