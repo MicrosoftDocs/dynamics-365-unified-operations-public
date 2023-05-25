@@ -24,7 +24,7 @@ This article provides a high-level overview of how to add new inventory dimensio
 
 ## Solution overview
 
-The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution, however, in real life there is overlap between the roles, and sometimes it might even be the same person filling several roles.
+The cornerstone in this solution is that multiple roles participate in the life cycle of adding new inventory dimensions through extensions. The following description simplifies and generalizes this solution, however, in real life there's overlap between the roles, and sometimes it might even be the same person filling several roles.
 
 ### Microsoft's role
 
@@ -54,17 +54,17 @@ The ISV provides the logical implementation.
 
 ### VAR role
 
-The VAR must be able to deliver a fully functional system to a customer. The system can contain solutions from multiple ISV's - each potentially containing new inventory dimensions. In total, up to 10 ISV dimension fields are supported.
+The VAR must be able to deliver a fully functional system to a customer. The system can contain solutions from multiple ISVs - each potentially containing new inventory dimensions. In total, up to 10 ISV dimension fields are supported.
 
 The VAR provides the binding between the physical data model and logical implementation.
 
 ## Details
 
-The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. Currently, there is no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
+The first half of the solution is straight forward. A new class hierarchy is introduced. Each new dimension must be implemented in a new class deriving from either InventProductDimension or InventTrackingDimension. Currently, there's no support for storage dimensions. With this, ISVs can introduce new dimensions without having to change any of the logic on the InventDim table. 
 
 ![InventDimensionClassHierarchy.](media/InventDimensions1.png)
 
-To reference the new dimension in a strongly-typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
+To reference the new dimension in a strongly typed fashion, the ISV introduces a table extension class to the InventDim table. The extension classes for Style, Color, and Size can be used as templates.
 
 **Example: InventDimStyle_Extension**
 
@@ -108,7 +108,7 @@ select inventDim
 
 The ISV can now build logic, including the data model and user interface for maintaining the list of dimension values, for the new inventory dimension.
 
-The second half of the solution is the data model. The standard application will contain the following for each new dimension:
+The second half of the solution is the data model. The standard application contains the following for each new dimension:
 
 - A label file.
 - A configuration key.
@@ -130,9 +130,9 @@ The VAR's job is to wire the ISV solutions to the available dimension fields on 
 
 ## Known issues
 
-There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application that contain where-clauses on InventDim. Most of these are implemented using macros, which doesn't change the fact that SQL statements are not extensible. Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain. A viable solution cannot require changes to these SQL statements when adding new dimensions.
+There are some technical limitations influencing the design of the solution. The most significant is the SQL statements throughout the application that contain where-clauses on InventDim. Most of these are implemented using macros, which doesn't change the fact that SQL statements aren't extensible. Many of the SQL statements could be rewritten to use query objects to make them extensible, however many delete_from and update_recordset would remain. A viable solution can't require changes to these SQL statements when adding new dimensions.
 
-Another technical limitation is the amount of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32. This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32. The provided solution stays within the limit of 32. If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.
+Another technical limitation is the number of inventory dimensions that can be supported. Each adds a small overhead, and the InventDimFixed EDT sets an upper limit at 32. This EDT contains a bit mask for each dimension, and because the EDT is an integer, the limit is 32. The provided solution stays within the limit of 32. If required in the future, InventDimFixed could be changed to be an Int64, a container, or it could be removed.
 
 ## Sample application
 
