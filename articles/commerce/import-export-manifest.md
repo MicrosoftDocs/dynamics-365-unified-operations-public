@@ -2,7 +2,7 @@
 title: Bulk import and export of digital assets using manifests
 description: This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 5/11/2023
+ms.date: 5/26/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -15,6 +15,7 @@ ms.search.validFrom: 2023-03-01
 # Bulk import and export of digital assets using manifests
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 
@@ -256,3 +257,8 @@ The job status can be monitored from "Site settings" -&gt; "Jobs" or by clicking
 ### Sample product media assignment manifests (Urls redacted/removed)
 
 Links to download center URLs TBD
+
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
