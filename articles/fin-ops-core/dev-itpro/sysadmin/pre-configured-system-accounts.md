@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preconfigured system accounts
-description: This article provides information about the system accounts that are pre-configured on your finance and operations environments.
+description: This article provides information about the system accounts that are preconfigured on your finance and operations environments.
 author: jaredha
 ms.date: 05/26/2023
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include [banner](../includes/banner.md)]
 
-Pre-configured system accounts are included on deployed environments so that Microsoft can manage and operate the finance and operations service and provide specific features to customers. The following table provides information about each account, including the purpose and use case for the account.  
+Preconfigured system accounts are included on deployed environments so that Microsoft can manage and operate the finance and operations service and provide specific features to customers. The following table provides information about each account, including the purpose and use case for the account.  
 
 > [!IMPORTANT] 
 > Do not delete these system accounts. Deleting these accounts will cause a disruption in key functionality provided by Microsoft.
