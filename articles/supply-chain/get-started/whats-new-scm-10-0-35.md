@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.35. This version has a build number of 10.0.XXX <!--KFM: Update build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** July 2023
@@ -31,7 +31,6 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Planning | [Plan for manufacturing with Planning Optimization](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/plan-manufacturing-planning-optimization) | *Coming soon* | Enabled by default |
 | Warehouse management | [Capture multiple GS1 label segments simultaneously](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/capture-multiple-gs1-label-segments-simultaneously) | [GS1 bar codes](../warehousing/gs1-barcodes.md) | Enabled by default |
-| Warehouse management | [Improve worker efficiency with optimized mobile device screen layout](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-worker-efficiency-optimized-mobile-device-screen-layout) | *Coming soon* | Enabled by default |
 | Warehouse management | Optimize location directive queries | [Optimize location directive queries](../warehousing/location-directives-optimize.md) | Enabled by default |
 | Warehouse management | [Optimize warehouse management implementation and maintenance](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-warehouse-management-implementation-maintenance) | <p>[Print labels using an external service](../warehousing/label-printing-using-external-label-service.md)</p><p>[Print labels using the Loftware NiceLabel label service solution](../warehousing/label-printing-using-nicelabel.md)</p><p>[Print labels using the Seagull Scientific BarTender label service solution](../warehousing/label-printing-using-bartender.md)</p><p>[Warehouse groups](../warehousing/warehouse-groups.md)</p><p>[Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md)</p><p>[Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)</p><p>[Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)</p> | Enabled by default |
 | Warehouse management | [Optimize warehouse management processes](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-warehouse-management-processes) | [Analyze warehouse material movement through process mining](../warehousing/warehouse-material-movement-analysis.md) | Enabled by default |
@@ -67,9 +66,10 @@ We have recently added or significantly updated the following help articles. The
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (July 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md)<!--KFM: Confirm link -->.
 
+<!--KFM: Get link
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.35, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=#). <!--KFM: Get link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.35, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=#).  -->
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
