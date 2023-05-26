@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.35. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** June 2023
@@ -42,7 +42,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Decimals for rounding precision in **Leave and absence**|This feature gives organizations the flexibility to choose the number of decimals in **Leave and absence**. Organizations can choose a minimum of 2 to a maximum of 6 decimals. This feature was first available in Dynamics 365 Human Resources version 10.0.34.|Preview|
+|Decimals for rounding precision in **Leave and absence**|This feature gives organizations the flexibility to choose the number of decimals in **Leave and absence**. Organizations can select a minimum of two to a maximum of six decimals. This feature was first available in Dynamics 365 Human Resources version 10.0.34.|Preview|
 |Feature recommendation notifications for Course enhancements feature| Feature recommendation functionality provides an in-app experience to promote awareness and adoption of features. The system will notify users that their experience can be improved by enabling specific features. Users can then make feature requests to administrators, and administrators can navigate to the feature being requested.	|This feature  is enabled by default.|
 
 
@@ -53,3 +53,14 @@ The following table lists the feature enhancements that are included in this rel
 | Feature name | More information |
 |--------------|------------------|
 |Batch-based business events | Batch-based business events provide customers with an easy way to configure and set up business events that are tied to a point in time. All batch-based business events can be found **Human resources shared parameters > Business events**.|
+
+
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Human Resources version 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=817204).
