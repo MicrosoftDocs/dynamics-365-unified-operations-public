@@ -90,6 +90,9 @@ If you select **By quantity** in the **Calculation origin** field, the tax amoun
 
 For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
 
+> [!NOTE] 
+> Unit conversion is not supported for By quantity calculation. User can create multiple tax codes in RCS for different units and maintain converted tax rate by quantity.
+
 ### By margin
 
 If you select **By margin** in the **Calculation origin** field, the tax amount is calculated as a percentage of the sales margin. The sales margin is the sales amount minus the cost amount. This calculation method applies only to sales transactions.
