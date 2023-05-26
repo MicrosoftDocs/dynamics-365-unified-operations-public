@@ -34,12 +34,12 @@ To use this feature, your system must meet the following requirements:
     - *(Preview) Archive*
     - *(Preview) Ledger archive automation*
 
-## General ledger move to history
+## <a name="archival-requirements"></a>Which general ledger data can be archived and when
 
 General ledger data can be moved to history when the following conditions are met:
 
 - The year end close process has been completed for the year.
-- All periods are **on hold** or **permanently closed**.
+- All periods are *on hold* or *permanently closed*.
 - The prior year has already moved to history or long-term retention.
 
 ## Schedule archive of general ledger
@@ -52,7 +52,7 @@ To schedule a general ledger archive job, follow these steps:
 1. Select **Next** to continue to the **Ledger archive automation selection**
 
     > [!NOTE]
-    > Only fiscal years that are in the **Ready** state are shown in this list.
+    > Only fiscal years that are in the *Ready* state are shown in this list. <!-- KFM: Shouldn't we add this to the archival requirements section? -->
 
 1. Select **Finish**.
 

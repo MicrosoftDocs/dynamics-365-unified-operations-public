@@ -35,7 +35,7 @@ To use this feature, your system must meet the following requirements:
     - *(Preview) Archive sales orders to history tables*
     - *(Preview) Archive sales orders to history tables using archive service*
 
-## Which sales orders can be archived and when
+## <a name="archival-requirements"></a>Which sales orders can be archived and when
 
 Sales orders can be archived when the following conditions are met:
 
@@ -59,7 +59,7 @@ To schedule sales order archiving, follow these steps:
     - **Archive to date** – Enter the date of the newest sales orders that you want to archive.
 
     > [!NOTE]
-    > Only dates that meet the [prerequisites](#prerequisites) will be available for selection.
+    > Only dates that meet the [archival requirements](#archival-requirements) will be available for selection.
 
 1. Select **Finish**.
 
