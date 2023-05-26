@@ -45,8 +45,8 @@ We might update this article to include features that made it into the build aft
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Decimals for rounding precision in **Leave and absence**|This feature gives organizations the flexibility to choose the number of decimals in **Leave and absence**. Organizations can choose a minimum of 2 to a maximum of 6 decimals. This feature was first available in Dynamics 365 Human Resources version 10.0.34.|Preview|
-|Feature recommendation notifications for Course enhancements feature| Feature recommendation functionality provides an in-app experience to promote awareness and adoption of features. The system will notify users that their experience can be improved by enabling specific features. Users can then make feature requests to administrators, and administrators can navigate to the feature being requested.	|This feature  is enabled by default.|
+| Decimals for rounding precision in Leave and absence | This feature gives organizations the flexibility to choose the number of decimal places in **Leave and absence**. Organizations can choose a minimum of two decimal places and a maximum of six. This feature was first available in Dynamics 365 Human Resources version 10.0.34. | Preview |
+| Feature recommendation notifications for Course enhancements feature | Feature recommendation functionality provides an in-app experience to promote awareness and adoption of features. The system will notify users that their experience can be improved by enabling specific features. Users can then make feature requests to administrators, and administrators can go to the feature that is being requested. | This feature is enabled by default. |
 
 ## Known issues
 
