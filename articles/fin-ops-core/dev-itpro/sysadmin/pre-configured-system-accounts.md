@@ -4,7 +4,7 @@
 title: Preconfigured system accounts
 description: This article provides information about the system accounts that are pre-configured on your finance and operations environments.
 author: jaredha
-ms.date: 10/03/2022
+ms.date: 05/26/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -40,6 +40,7 @@ Pre-configured system accounts are included on deployed environments so that Mic
 |---|---|
 | Axrunner | <p>Monitoring the health of the environment, and providing alerts as required.</p><p>**Note:** This account is deprecated for self-service environments and is no longer used.</p> |
 | DataSyncFrameworkApp | Used by Microsoft Power Platform apps that are provided by Microsoft to synchronize data from finance and operations virtual tables in Dataverse, based on row version change tracking. |
+| DataverseSearchApp | Used for synchronizing data from finance and operations apps to Microsoft Azure Cognitive Services through Dataverse virtual tables that have row version change tracking. This account enables global search functionality for finance and operations data on Microsoft Power Platform apps. |
 | DynamicsMaintAppUser | Performing deployment and service operations in finance and operations apps. |
 | FRServiceUser | The Financial Reporting service user account. The Management Reporter application uses this account for integrations with finance and operations apps. |
 | MonitoringAppUser | Used as part of **Geneva Synthetics Monitoring in FnO** to help identify availability or functionality loss issues in customer environments and contribute to CRI reduction. |
