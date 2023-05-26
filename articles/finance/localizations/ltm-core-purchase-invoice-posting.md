@@ -2,7 +2,7 @@
 title: Purchase invoice posting for Latin America
 description: This article provides information about the purchase invoice posting process for Latin America.
 author: Fhernandez0088
-ms.date: 05/24/2023
+ms.date: 05/26/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -10,6 +10,9 @@ ms.custom: bap-template
 ---
 
 # Purchase invoice posting for Latin America
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 You can add the necessary information for Latin American countries when you post invoices of the following types in an extended LATAM section:
 
@@ -78,3 +81,6 @@ In addition, the following items must be configured:
 7. Select the document date and due date.
 8. Complete the **Additional data** fields as required by the document class configuration.
 9. Post the invoice.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
