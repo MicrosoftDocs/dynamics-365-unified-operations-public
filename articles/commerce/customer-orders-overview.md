@@ -54,7 +54,7 @@ In Commerce version 10.0.12 and later, organizations can define whether the ware
 
 When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in headquarters.
 
-- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, we encourage the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
+- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, Microsoft encourages the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
 - **Shipping Warehouse** - This field indicates the warehouse that will be used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** has been enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user will pick the specific warehouse to ship the order from when the order is created.
 - **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
@@ -131,11 +131,9 @@ Retail orders that are created in either the online or store channel can be reca
 > Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in headquarters.
 
 > [!NOTE]
-> We recommend that you don't edit orders and quotations in POS that are created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will re-price them.
-
+> Microsoft recommends that you don't edit orders and quotations in POS that are created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will reprice them.
 
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
-
 
 1. Select **Recall order**.
 2. Use **Search** to enter filters to find the order, and then select **Apply**.
