@@ -52,7 +52,7 @@ You can print highly complex labels, provided that the printing device can inter
 
 As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value. Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
-To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
+To see the values that will be printed, go to **Warehouse management \> Enquiries and reports \> License plate labels**.
 
 ## Turn this feature on or off
 
