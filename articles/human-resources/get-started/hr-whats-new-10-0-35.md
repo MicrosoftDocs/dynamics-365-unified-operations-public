@@ -38,13 +38,13 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 - **General availability of release (auto-update):** July 2023
 
 ## Features included in this release
+
 The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Decimals for rounding precision in **Leave and absence**|This feature gives organizations the flexibility to choose the number of decimals in **Leave and absence**. Organizations can select a minimum of two to a maximum of six decimals. This feature was first available in Dynamics 365 Human Resources version 10.0.34.|Preview|
-|Feature recommendation notifications for Course enhancements feature| Feature recommendation functionality provides an in-app experience to promote awareness and adoption of features. The system will notify users that their experience can be improved by enabling specific features. Users can then make feature requests to administrators, and administrators can navigate to the feature being requested.	|This feature  is enabled by default.|
-
+| Decimals for rounding precision in Leave and absence | This feature gives organizations the flexibility to choose the number of decimal places in **Leave and absence**. Organizations can choose a minimum of two decimal places and a maximum of six. This feature was first available in Dynamics 365 Human Resources version 10.0.34. | Preview |
+| Feature recommendation notifications for Course enhancements feature | Feature recommendation functionality provides an in-app experience to promote awareness and adoption of features. The system will notify users that their experience can be improved by enabling specific features. Users can then make feature requests to administrators, and administrators can go to the feature that is being requested. | This feature is enabled by default. |
 
 ## Feature enhancements included in this release
 
@@ -52,8 +52,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature name | More information |
 |--------------|------------------|
-|Batch-based business events | Batch-based business events provide customers with an easy way to configure and set up business events that are tied to a point in time. All batch-based business events can be found **Human resources shared parameters > Business events**.|
-
+| Batch-based business events | Batch-based business events give customers an easy way to configure and set up business events that are linked to a point in time. All batch-based business events can be found at **Human resources shared parameters** \> **Business events**. |
 
 ## Additional resources
 
