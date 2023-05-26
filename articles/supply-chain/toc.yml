@@ -3739,6 +3739,8 @@
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
+        - name: Inspect details of active Warehouse Management mobile app sessions
+          href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
