@@ -279,14 +279,20 @@ items:
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
-      - name: Archiving
+      - name: Record archiving
         items:
-        - name: Archiving overview
-          href: sysadmin/archiving-overview.md
+        - name: Record archiving overview
+          href: sysadmin/archive-overview.md
         - name: Set up record archiving
-          href: sysadmin/archiving-setup.md
+          href: sysadmin/archive-setup.md
+        - name: Extend the archive solution to support custom tables and fields
+          href: sysadmin/archive-customizations.md
+        - name: Work with the Archive workspace
+          href: sysadmin/archive-using.md
+        - name: Archive general ledger data
+          href: sysadmin/archive-general-ledger.md
         - name: Archive sales orders
-          href: sysadmin/archiving-sales-orders.md
+          href: sysadmin/archive-sales-orders.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview

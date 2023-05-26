@@ -1,5 +1,5 @@
 ---
-title: Archive overview
+title: Record archiving overview
 description: This article provides an overview of how to archive various types of records in finance and operations apps.
 author: Henrikan
 ms.author: henrikan
@@ -12,44 +12,28 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Archive overview
+# Record archiving overview
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Dynamics 365 Finance and Operations applications customers naturally
-generate business data at a regular cadence over time.  On average,
-medium to upper-mid market businesses accumulate \>1TB of data in less
-than 5 years. The data growth is directly proportional to the age of the
-business and the number of transactions made YoY.
+Finance and operations applications generate business data at a regular cadence over time.  On average, medium to upper-mid market businesses accumulate over a terabyte of data in less
+than five years. The data growth is directly proportional to the age of the business and the number of transactions made year over year.
 
-## Solution
-The **Archive** solution will provide the ability to **archive
-transactional data to a 'historical table'** within the
-transactional SQL database. These historical tables will have *limited
-indexing* which results in a **significant reduction in storage space
-used**.  The movement of data from the live tables to the 'history
-tables' happens as one process from a user perspective but will occur in
-small database transactions on the server to avoid processing delays in
-other areas of the application. 
+## How the solution works
 
-The following steps happen as a single process from the user
-perspective:
+The archive solution lets you archive transactional data to *historical tables* within the transactional SQL database. These historical tables have *limited indexing*, which results in a significant reduction in the storage space used. From a user perspective, data moves from the live tables to the history tables as a single process, but the system actually moves the data using several smaller database transactions to avoid processing delays in other areas of the app. The following steps happen as a single process from the user perspective:
 
--   F&O copies the data range specified from the Live tables to the
-    History tables.
+1. The system copies the data range specified from the live tables to the history tables.
+1. The system removes the data range specified from the live tables.
 
--   F&O removes the data range specified from the Live tables.
+> [!NOTE]
+> Data can't be changed once it is moved to a historical table.
 
-**Note**: Data cannot be changed once it is moved to the historical
-table set. 
-
-The solution will also provide the ability to 'reverse' data from the
-historical table back to the live table in case you need the data to be
-moved back for any unexpected requirement, or if you need to rectify the
-archive data selection. 
+The solution also provides the ability to reverse data from the historical table back to the live table if needed, such as if you need to rectify the archived data.
 
 ## Next steps
 
-- Install the required add-in and enable the features you need as described in [Set up record Archive](archive-setup.md)
-- [Archive sales orders](archive-sales-orders.md)
+- Install the required add-in and enable the features you need as described in [Set up record archiving](archive-setup.md)
+- [Extend the archive solution to support custom tables and fields](archive-customizations.md)
+- [Work with the Archive workspace](archive-using.md)

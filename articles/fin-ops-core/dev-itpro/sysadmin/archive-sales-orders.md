@@ -30,7 +30,7 @@ To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
 - The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archive-setup.md).
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archive-setup.md).
+- The following features must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archive-setup.md).
     - *(Preview) Archive*
     - *(Preview) Archive sales orders to history tables*
     - *(Preview) Archive sales orders to history tables using archive service*
@@ -50,8 +50,8 @@ To schedule sales order archiving, follow these steps:
 
 1. Open the **Archive** workspace.
 1. On the Action Pane, select **Archive** to open a drop-down dialog box, and then make the following settings:
-    - **Name** – select *Sales order archive automation*.
-    - **Company** – select the legal entity (company) for which you want to archive sales orders.
+    - **Name** – Select *Sales order archive automation*.
+    - **Company** – Select the legal entity (company) for which you want to archive sales orders.
 1. Select **Archive** to apply your settings and close the drop-down dialog box.
 1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). You can also set up alerts as needed.
 1. Select **Next** to continue to the **Sales order archive automation** tab. Make the following settings:
@@ -72,5 +72,3 @@ The **Archive** workspace shows your full archiving history. Each row in the gri
 1. Your sales order archives are listed in the grid. To view details about the sales orders included in any archive, select an archive and then select **Archived sales order details** on the toolbar.
 1. The **Archived sales orders** page opens, showing a list of each sales order included in the archive.
 1. To view an order, including its header and all of its order lines, select it in the grid and select **Archived sales order details** on the Action Pane. From the order details, you can view more related information about an order by opening the **Inquiry** menu on the Action Pane and then choose the entry for the type of records you'd like to inspect (**Sent sales quotations**, **Sales order confirmations**, **Picking list**, **Packing slip** or **Invoice journal**).
-
-<!--KFM: Add info about what to do if customers have extended sales header or line, as in [Archive inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md) -->
