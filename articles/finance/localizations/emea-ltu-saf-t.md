@@ -2,7 +2,7 @@
 title: Standard Audit File for Tax (SAF-T) for Lithuania
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
 author: liza-golub
-ms.date: 05/22/2023
+ms.date: 05/26/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,7 +25,7 @@ According to Article 16 of the Law on Accounting of the Republic of Lithuania, c
 For more information, see [SAF-T - VMI](https://www.vmi.lt/evmi/en/home).
 
 > [!NOTE]
-> The [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
+> The [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. 
 
 ## Setup
 
