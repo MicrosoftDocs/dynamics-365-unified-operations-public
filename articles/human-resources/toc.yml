@@ -27,14 +27,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.35 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-35.md                      
         - name: Human Resources 10.0.34 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-34.md          
         - name: Human Resources 10.0.33 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-33.md  
         - name: Human Resources 10.0.32 (merged infrastructure)          
           href: ./get-started/hr-whats-new-changed-10-0-32.md        
-        - name: Human Resources 10.0.31 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10-0-31.md
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
           - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
