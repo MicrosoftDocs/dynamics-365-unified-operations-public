@@ -17,7 +17,6 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 51661
 ms.assetid: 0473acef-755e-4b42-acf5-5e5aa902dc0e
 ms.search.region: Global
 # ms.search.industry: 

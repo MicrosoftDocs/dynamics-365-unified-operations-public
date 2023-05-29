@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: ["2174", "intro-internal"]
+ms.custom: ["2174"]
+ms.collection: get-started
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 # ms.search.industry: 

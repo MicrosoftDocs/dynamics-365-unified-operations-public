@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 20691,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.industry: Public sector
 ms.search.form: SysConfiguration

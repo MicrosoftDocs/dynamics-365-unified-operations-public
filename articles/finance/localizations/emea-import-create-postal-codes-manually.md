@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 29901
 ms.search.region: Belgium, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: epopov

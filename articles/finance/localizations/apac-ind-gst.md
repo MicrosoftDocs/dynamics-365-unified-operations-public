@@ -12,7 +12,8 @@ ms.search.region: India
 ms.author: wangchen
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-ms.custom: 1587884,  ""intro-internal
+ms.custom: 1587884
+ms.collection: get-started
 ---
 # India Goods and Services Tax (GST) overview
 

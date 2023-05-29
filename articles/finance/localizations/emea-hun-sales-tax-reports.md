@@ -12,7 +12,6 @@ ms.search.region: Hungary
 ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-ms.custom: 12641
 ---
 
 # Sales tax reports for Hungary

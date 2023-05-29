@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ---
 
