@@ -105,7 +105,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | May 29 to June 1, 2023 | June 10 to June 11, 2023 |
 | Station 6 | May 30 to June 2, 2023 | June 10 to June 11, 2023 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-2 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-3 train schedule
 
 **App version: 10.0.1515.111**
 
