@@ -109,8 +109,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **App version: 10.0.1515.111**
 
-> [Build Details](quality-updates-build-details-10-0-32.md)
-
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | June 5 to June 8, 2023 | NA |
