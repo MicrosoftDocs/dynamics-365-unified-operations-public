@@ -79,8 +79,7 @@ Parameters set on the **Global address book parameters** page determine which ro
 
 7. To change the methods by which you're paid, select the **My payment information** tab. This tab is only available if payment methods are enabled in the **Human Resources parameters** page. HR can enable **Bank draft**, **Cash**, **Check**, **Electronic payment**, or **Other**. HR can also disable electronic payment validation (used for US Payroll), and bank account and routing number validation.
 
-    - **My bank information** will be updated when the bank account has the **Bank account disbursement** configured. After this is completed, the bank information will display. Employees can add new bank information and make edits.  
-
+    **My bank information** will be updated when bank account disbursement is configured for the bank account. After this configuration is completed, the bank information will be shown. Employees can add new bank information and make edits.
 
 8. To change the image that displays in Human Resources for your profile, select the **Image** tab. Depending on your organization's settings, images might be routed for approval.
 
