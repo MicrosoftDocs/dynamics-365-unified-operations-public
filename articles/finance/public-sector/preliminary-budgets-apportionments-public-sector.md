@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 19701
 ms.assetid: 8885478d-67f5-4db8-b97b-c0734216f8dd
 ms.search.industry: Public sector
 ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode

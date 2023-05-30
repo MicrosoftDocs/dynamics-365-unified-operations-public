@@ -18,7 +18,7 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

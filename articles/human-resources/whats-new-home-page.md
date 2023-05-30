@@ -14,9 +14,8 @@ ms.topic: whats-new
 ms.reviewer: kfend
 ms.author: edupont
 audience: Developer, IT Pro
-ms.custom: 
-- intro-internal
-- bap-template
+ms.custom: bap-template
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2023-02-14

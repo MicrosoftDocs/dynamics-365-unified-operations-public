@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.custom: 55651
 ms.assetid: 
 ms.service: 
 search.app:

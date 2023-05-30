@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 21681
 ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ---
 

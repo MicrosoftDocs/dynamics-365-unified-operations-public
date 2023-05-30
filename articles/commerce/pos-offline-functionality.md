@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 27041
 ms.assetid: 20b51874-8912-40cf-9296-864df707315a
 ms.search.region: Global
 ms.search.industry: Retail

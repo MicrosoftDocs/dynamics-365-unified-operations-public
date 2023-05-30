@@ -9,7 +9,8 @@ ms.topic: overview
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ["260594", "intro-internal"]
+ms.custom: ["260594"]
+ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
 ms.author: anpurush
