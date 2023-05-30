@@ -32,8 +32,8 @@ The omnichannel media management features introduced in 10.0.35 are enabled usin
 To configure omnichannel media management features in your Commerce environments, the following steps must be completed:
 1. In site builder go to **Tenant settings** > **Features**, set the **Omnichannel content** feature flag to **On**, and select **Save and publish**. This will make all omnichannel content authoring controls visible in site builder.
 2. In headquarters, search for "**feature management**" in the search bar and navigate to it.
-3. Click the **Check for updates** button in upper right.
-4. Click the **All** tab and search for _"*omni"_ in the **Filter** text box. 
+3. Select the **Check for updates** button in upper right.
+4. Select the **All** tab and search for _"*omni"_ in the **Filter** text box. 
 5. Select **Enable omnichannel media assignment authoring UX** from the filter results.
 6. In the right pane, select **Enable now**.  
 
