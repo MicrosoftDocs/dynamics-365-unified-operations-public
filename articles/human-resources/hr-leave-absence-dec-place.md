@@ -22,7 +22,7 @@ You can set the number of decimal places in the leave and absence module from a 
 ## Prerequisites
 1.	Go to **Feature management**, select the **Decimals for rounding precision in leave and absence module** feature is selected.
 
->[!Note:] 
+>[!Note] 
 >This feature can't be turned off after it has been turned on.
 
 2.	After this feature is selected, the **Number of decimals** option will be available on the **Leave and absence parameters** page.
