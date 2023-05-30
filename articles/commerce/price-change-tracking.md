@@ -24,13 +24,15 @@ A product’s active sales price is influenced by multiple factors (seasonal adj
 
 ## Configure price change tracking
 
-Price change tracking can be enabled at legal entity level. To use this feature, follow these configuration steps in Commerce headquarters:
+Price change tracking can be enabled at legal entity level. 
 
-1. Go to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce shared parameters**.
-1. On the **Prices and discounts** tab, add the legal entities you want to enable price change tracking into the data grids, then click **Save**.
+To use this feature, follow these configuration steps in Commerce headquarters.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
+1. On the **Prices and discounts** tab, add the legal entities you want to enable price change tracking into the data grids, then select **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule.
 
-For customers who use [cloud-powered product search](https://learn.microsoft.com/dynamics365/commerce/cloud-powered-search-overview) in Commerce, after first time upgrading to version **10.0.32** and later, the price change tracking is enabled by default on all legal entities where the cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by leveraging incremental updates only for products with changed prices rather than relying on full product data sync. Please ensure the [environment initialization process](https://learn.microsoft.com/dynamics365/commerce/enable-configure-retail-functionality) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
+For customers who use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce, after first time upgrading to version 10.0.32 and later, the price change tracking is enabled by default on all legal entities where the cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by leveraging incremental updates only for products with changed prices rather than relying on full product data sync. Please ensure the [environment initialization process](enable-configure-retail-functionality.md) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
 
 To disable price change tracking on a specific legal entity, simply remove that legal entity from the price change tracking setting in Commerce shared parameters. The removed legal entities won’t be automatically added back even cloud-powered product search is enabled for them. Removing all legal entities effectively disables the entire price change tracking feature.
 
@@ -39,7 +41,7 @@ To disable price change tracking on a specific legal entity, simply remove that 
 The statement of “a product’s price has changed” must be based on a comparison baseline. For example, product X’s sales price has changed since two weeks ago. In price change tracking feature, that baseline is set or refreshed when any of the following occurs:
 
 - Price change tracking company list is updated.
-- Pricing related data is imported into Commerce headquarters via [Data management framework](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+- Pricing related data is imported into Commerce headquarters via [Data management framework](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 - Discount concurrency control setting is updated in Commerce parameters.
 
 On top of the baseline, the following changes in the system that might affect a product’s effective sales price are monitored by the price change tracking feature:
