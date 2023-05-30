@@ -36,4 +36,4 @@ Here are some examples of Human Resources business events that can run in a batc
 5. In the **Days** field, enter the batch job recurrence in days.
 6. Select **Create batch jobs**, and then select **OK**.
 
-If you select **Set default values**, all the values will be reset.
+If you select **Set default values**, all the values are reset.
