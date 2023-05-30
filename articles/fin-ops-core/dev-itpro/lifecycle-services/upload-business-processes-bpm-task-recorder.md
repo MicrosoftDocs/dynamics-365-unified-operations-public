@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 18991
 ms.assetid: 74808085-e971-4e7b-8547-d3549273d14a
 ---
 

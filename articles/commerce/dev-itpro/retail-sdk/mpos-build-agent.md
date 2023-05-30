@@ -9,7 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-06-20
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Set up a Visual Studio 2017 build agent to build Modern POS

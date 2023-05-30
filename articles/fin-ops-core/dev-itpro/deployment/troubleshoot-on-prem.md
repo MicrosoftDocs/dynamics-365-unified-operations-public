@@ -11,7 +11,6 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.custom: 60373
 ms.assetid: 
 ms.service: 
 search.app:

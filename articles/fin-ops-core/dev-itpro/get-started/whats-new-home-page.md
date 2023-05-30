@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 56
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ---
 # What's new or changed in Platform updates

@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 25341
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

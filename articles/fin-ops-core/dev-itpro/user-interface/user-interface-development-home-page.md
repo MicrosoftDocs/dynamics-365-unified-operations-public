@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ---
 

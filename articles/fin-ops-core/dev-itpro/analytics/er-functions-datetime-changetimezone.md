@@ -11,7 +11,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: AX 10.0.23
-ms.custom: 58771
 ms.assetid: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---

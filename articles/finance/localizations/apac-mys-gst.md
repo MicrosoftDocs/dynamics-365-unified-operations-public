@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 10904
 ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 ms.search.region: Malaysia
 # ms.search.industry: 
