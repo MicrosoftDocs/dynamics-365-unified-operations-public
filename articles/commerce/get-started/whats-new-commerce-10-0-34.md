@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Commerce 10.0.34 (June 2023)
+title: What's new or changed in Dynamics 365 Commerce 10.0.34 (June 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.34. 
 author: josaw1
 ms.date: 04/21/2023
@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-04-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# Preview of Dynamics 365 Commerce 10.0.34 (June 2023)
+# What's new or changed in Dynamics 365 Commerce 10.0.34 (June 2023)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
