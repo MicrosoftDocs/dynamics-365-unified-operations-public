@@ -39,7 +39,7 @@ Currently, we support dual-write in the following regions:
 
 
 > [!NOTE]
-> There are currently no plans to support any additional regions.
+> There are currently no plans to support more regions.
 
 ## Verify requirements and grant access
 
@@ -80,7 +80,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     1. Open your instance of the finance and operations app, search and navigate to Azure Active Directory applications.
 
-    2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that will be used to connect from Dataverse to the finance and operations app.
+    2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
     3. Repeat the previous two steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
     When you've finished, follow these steps to refresh the list of tables:
@@ -91,8 +91,8 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     **Related health check result:**<br>
     *The Dataverse can connect to the finance and operations app*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
 4. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
@@ -118,8 +118,8 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     **Related health check result:**<br>
     *The finance and operations app can connect to the Dataverse*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 00000015-0000-0000-c000-000000000000 exists<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
     > [!NOTE]
     > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
@@ -135,7 +135,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 6. Make sure that the dual-write plug-ins are enabled.
 
-    This step isn't usually required, because the plug-ins should be enabled as part of the process of installing the dual-write core solution. However, if the health check fails, follow these steps to manually enable the dual-write plug-ins:
+    This step isn't required, because the plug-ins should be enabled as part of the process of installing the dual-write core solution. However, if the health check fails, follow these steps to manually enable the dual-write plug-ins:
 
     1. Download the [Plug-in Registration Tool](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PluginRegistrationTool).
 
@@ -161,9 +161,9 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     + On-demand functions like pricing, inventory, ATP dates.
     + Reference data for ledger, tax, payment terms, and schedules etc.
 
-Please follow the [pre-requisites instructions](separated-solutions.md) to find the solution you are looking for. Select the solution, and follow the prompts to import it. 
+Follow the [prerequisites instructions](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it. 
      
-Dual-write framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
+Dual-write framework is extensible and accommodates customer-centric business data exchange through a few more clicks.
     
 > [!NOTE]
 > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
@@ -178,7 +178,7 @@ Dual-write framework is extensible and accommodates customer-centric business da
     Make sure that the finance and operations app and Dataverse are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
     > [!NOTE]
-    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and additional steps. 
+    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and steps. 
 
 **For dual-write core solution lower than version 1.0.16.0 only**
 
