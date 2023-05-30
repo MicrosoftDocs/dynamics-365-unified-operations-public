@@ -2,7 +2,7 @@
 title: Customize table and column mappings
 description: This article explains how to customize table and column mappings.
 author: nhelgren
-ms.date: 03/20/2020
+ms.date: 05/30/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
@@ -92,9 +92,9 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
     |**Grouping operators** | Use parentheses: `(` and `)` to specify the precedence to evaluate a complex expression. | [Grouping operators](/power-apps/developer/data-platform/webapi/query-data-web-api#grouping-operators.md) |
     
     > [!NOTE]
-    > Nested lookups are not supported in dual-write source filter. Only standard filter operators directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
+    > Nested lookups aren't supported in dual-write source filters. Only standard filter operators used directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
     > 
-    > Query filters with the `contains` operator are also not supported.
+    > Query filters with the `contains` operator aren't supported.
     
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges).
 
