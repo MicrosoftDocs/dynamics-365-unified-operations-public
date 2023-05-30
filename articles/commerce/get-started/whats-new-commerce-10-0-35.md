@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.34
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.35. This version has a build number of X and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** July 2023
-- **General availability of release (auto-update):** ? 2023
+- **General availability of release (auto-update):** August 2023
 
 ## Features included in this release
 
@@ -30,9 +30,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| X | X | X | X |
-| X | X | X | X |
-| X | X | X | X |
+|e-Commerce Framework | [Enable catalog support for "on behalf of" ordering](/dynamics365/release-plan/2023wave1/commerce/dynamics365-commerce/order-behalf-b2b-buyer) | This new functionality allows B2B account managers to sign into the B2B e-commerce website on behalf of the B2B buyers they work with. The feature now includes catalog support. The account manager can view all the same information that the buyer sees and can take actions such as adding items to the cart and placing orders. The feature is enabled by default in the Feature Management workspace.<p>[Enable on behalf of (OBO) functionality](../on-behalf-of.md) | Default |
+| Orders | Cancel asynchronous customer orders | When this feature is enabled from the Feature Management workspace and the point of sale (POS) is using asynchronous customer orders, if the customer wants to cancel the order after placing it, the store associate will be able to cancel the asynchronous customer order and refund the customer deposit, if any.<p>[Customer orders in point of sale (POS)](../customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode) | IT Pro opt-in |
+
 
 
 ## Additional resources
