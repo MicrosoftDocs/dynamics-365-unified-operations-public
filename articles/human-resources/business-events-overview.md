@@ -72,5 +72,4 @@ For more information about business events such as activation, performance, and 
 - Course completion
 - Goal assignment
 
-
-For a full list of business events, review the business events catalog and search category: Human Resources.
+For a full list of business events, go to the business event catalog, and search the **Human Resources** category.
