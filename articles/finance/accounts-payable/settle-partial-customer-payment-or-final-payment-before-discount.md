@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 14491
 ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ---

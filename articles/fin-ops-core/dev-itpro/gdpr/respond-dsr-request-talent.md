@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 10031
 ---
 
 

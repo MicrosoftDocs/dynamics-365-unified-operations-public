@@ -8,7 +8,7 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-08-09
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Client APIs home page

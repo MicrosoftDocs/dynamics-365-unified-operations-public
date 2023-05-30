@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: ["59201", "intro-internal"]
+ms.collection: get-started
 ms.search.region: Austria, Germany
 # ms.search.industry: 
 ms.author: mrolecki

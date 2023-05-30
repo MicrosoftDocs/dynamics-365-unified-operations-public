@@ -2,7 +2,7 @@
 title: Customize table and column mappings
 description: This article explains how to customize table and column mappings.
 author: nhelgren
-ms.date: 05/20/2023
+ms.date: 05/30/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: twheeloc
@@ -84,15 +84,24 @@ Dual-write lets you filter data by using Open Data Protocol (OData) filter expre
 
     | Filter | Dataverse | Finance and operations apps |
     |---|---|---|
-    |String field like| startswith(name, 'A')|(name like "A*")|
-    |String field not like|not contains(name, 'A')|(!(name like "*A*"))|
     |Enumeration fields| AccountType eq '3'| (AccountType == AccountType::Customer)|
     |Dates|TransactionDate le '2021-06-23'|(TransactionDate <= 23\06\2021)|
     |Multiple criteria combined| numberofemployees gt 1000 and<br>numberofemployees le 2000 | ((numberofemployees > 1000) &&<br>(numberofemployees <= 2000)) |
 
+    The following are filter query operators supported by dual-write:
+    
+    | Type | Operators | More information |
+    |------|------|------|
+    |**Comparison operators** | Use the `eq`, `ne`, `gt`, `ge`, `lt`, and `le` operators to compare a property and a value. | [Comparison operators](/power-apps/developer/data-platform/webapi/query-data-web-api#comparison-operators.md) |
+    |**Logical operators** | Use `and`, `or`, and `not` to create more complex expressions. | [Logical operators](/power-apps/developer/data-platform/webapi/query-data-web-api#logical-operators.md) |
+    |**Grouping operators** | Use parentheses: `(` and `)` to specify the precedence to evaluate a complex expression. | [Grouping operators](/power-apps/developer/data-platform/webapi/query-data-web-api#grouping-operators.md) |
+    
+    > [!NOTE]
+    > Nested lookups aren't supported in dual-write source filters. Only standard filter operators used directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
+    > 
+    > Query filters with the `contains` operator aren't supported.
+    
     For more examples that show how to use expressions in query ranges, see [Using Expressions in Query Ranges](/dynamicsax-2012/developer/using-expressions-in-query-ranges).
-
-    Currently, we do not support nested lookups in dual-write source filter. Only standard filter operators directly against table columns are supported. For more examples, see [Standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators).
 
 ## Add new table maps
 

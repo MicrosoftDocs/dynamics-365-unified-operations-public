@@ -7,7 +7,6 @@ ms.topic: article
 ms.search.form: ReqGroup, MCRSalesOrderMessages, MCRSalesTableDetailedStatus, TAMItemVendRebateGroup, TAMVendRebate, TAMVendRebateAgreementLineInfoPart, TAMVendRebateGroup, TAMVendRebateTable, TAMVendRebateTrans, ReqTransActionListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 19411
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28

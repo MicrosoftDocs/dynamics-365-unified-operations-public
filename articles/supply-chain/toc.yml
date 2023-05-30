@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.35 (July 2023)
+          href: get-started/whats-new-scm-10-0-35.md
         - name: Supply Chain Management 10.0.34 (June 2023)
           href: get-started/whats-new-scm-10-0-34.md
         - name: Supply Chain Management 10.0.33 (April 2023)
@@ -875,6 +877,10 @@
           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?context=/dynamics365/context/supply-chain
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
+      - name: Process advisor content
+        items:
+        - name: Analyze warehouse material movement through process mining
+          href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
         - name: Analytical Workspaces (using Power BI Embedded)
@@ -3735,6 +3741,8 @@
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
+        - name: Inspect details of active Warehouse Management mobile app sessions
+          href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
@@ -3821,8 +3829,6 @@
           href: warehousing/tasks/set-up-dispositions-codes.md
         - name: Unit of measure and stocking policies
           href: warehousing/unit-measure-stocking-policies.md
-        - name: Warehouse Power BI content
-          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
         - name: GS1 bar codes and QR codes
@@ -3835,6 +3841,8 @@
           href: warehousing/warehouse-message-processor-messages.md
         - name: Warehouse-specific inventory transactions
           href: warehousing/warehouse-transactions.md
+        - name: Optimize location directive queries
+          href: warehousing/location-directives-optimize.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights

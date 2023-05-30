@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 21631
 ---
 
 # Encryption in finance and operations apps

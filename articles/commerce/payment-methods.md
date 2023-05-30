@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.industry: Retail
 ms.search.form: RetailTenderTypeTable

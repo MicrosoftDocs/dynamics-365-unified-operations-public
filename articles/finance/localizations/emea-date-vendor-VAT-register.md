@@ -12,7 +12,7 @@ ms.search.region: global
 ms.author: atrukawk
 ms.search.validFrom: 2022-01-15
 ms.dyn365.ops.version: AX 10.0.24
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Date of vendor VAT register

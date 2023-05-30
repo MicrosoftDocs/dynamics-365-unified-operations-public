@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.custom: 97423
 ms.assetid: 
 ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 ---

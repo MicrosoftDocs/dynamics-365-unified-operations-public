@@ -9,7 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
-ms.custom: 16181,  ""intro-internal
+ms.collection: get-started
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 
 ---

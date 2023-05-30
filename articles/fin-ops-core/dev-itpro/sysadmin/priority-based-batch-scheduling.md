@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 62333
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

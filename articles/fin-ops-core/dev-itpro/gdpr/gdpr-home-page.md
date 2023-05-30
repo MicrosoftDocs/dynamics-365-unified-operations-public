@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Respond to GDPR data requests resources
