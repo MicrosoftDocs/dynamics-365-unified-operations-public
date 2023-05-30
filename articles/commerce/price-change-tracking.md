@@ -30,7 +30,7 @@ Price change tracking can be enabled at legal entity level. To use this feature,
 1. On the **Prices and discounts** tab, add the legal entities you want to enable price change tracking into the data grids, then click **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule.
 
-For customers who use [cloud-powered product search](https://learn.microsoft.com/dynamics365/commerce/cloud-powered-search-overview) in Commerce, after first time upgrading to version **10.0.32** and later, the price change tracking is by default enabled for all legal entities where the cloud-powered product search is enabled. This helps improve the performance of pricing data publishing in the search index by relying on incremental updates only for products with changed prices rather than full product data sync. Please ensure the [environment initialization process](https://learn.microsoft.com/dynamics365/commerce/enable-configure-retail-functionality) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
+For customers who use [cloud-powered product search](https://learn.microsoft.com/dynamics365/commerce/cloud-powered-search-overview) in Commerce, after first time upgrading to version **10.0.32** and later, the price change tracking is enabled by default on all legal entities where the cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by leveraging incremental updates only for products with changed prices rather than relying on full product data sync. Please ensure the [environment initialization process](https://learn.microsoft.com/dynamics365/commerce/enable-configure-retail-functionality) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
 
 To disable price change tracking on a specific legal entity, simply remove that legal entity from the price change tracking setting in Commerce shared parameters. The removed legal entities won’t be automatically added back even cloud-powered product search is enabled for them. Removing all legal entities effectively disables the entire price change tracking feature.
 
@@ -60,7 +60,7 @@ The price change tracking feature relies on two batch jobs to detect and record 
 - **Check price and discount valid period for change tracking** – A recurrent job that records price changes by checking validity period of trade agreements, price adjustments and discounts. This batch job can be found in the Batch jobs form and runs daily by default. Organizations can adjust its recurrence as needed.
 -	**Price change tracking** – A job that is executed at runtime when pricing master data or pricing rule is updated in Commerce headquarters. This job cannot be found in the Batch jobs form.
 
-Price changes are recorded on the **RetailPriceChangeTracking** table.
+Price changes are recorded in the **RetailPriceChangeTracking** table.
 
 | **Field**           | **Type**    | **Description**                                                                                                                          |
 |---------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -71,8 +71,8 @@ Price changes are recorded on the **RetailPriceChangeTracking** table.
 
 ## Other considerations
 
-For customer environments where pricing or product data is updated very frequently (e.g., >1 line / second), it’s recommended to test this feature extensively to assess its potential performance implications before enabling it on production.
+For customer environments where pricing or product data is updated very frequently (e.g., >1 line / second), it’s recommended to test this feature extensively to assess performance implications before enabling it on production.
 
-Before performing large-scale changes, for example, bulk data migration, it’s recommended to temporarily remove all legal entities from the price change tracking setting prior to the changes and add them back after the changes are done. This way, the system will mark a one-time full refresh instead of tracking every single line change.
+When performing large-scale changes, for example, bulk data migration, it’s recommended to temporarily remove all legal entities from the price change tracking setting prior to the changes and add them back after the changes are done. This way, the system will mark a one-time full refresh instead of tracking every single line change, to mitigate the performance impact.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
