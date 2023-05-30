@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Payments  | [Configure Apple Pay Express payments](/dynamics365/release-plan/2023wave1/commerce/dynamics365-commerce/configure-apple-pay-express-payments) |  [Set up Apple Pay with Adyen in Dynamics 365 Commerce](../dev-itpro/apple-pay-adyen.md)  | IT Pro opt-in   |
 | Payments  |  Configure Google Pay Express payments  | [Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md)  | IT Pro opt-in   |
-| Privacy | Remove data scrubbing for non-identifying data  |  Only data that identifies an individual either directly or by association must be scrubbed for privacy compliance. This feature removes data scrubbing from data that is non-identifying and will help with diagnostics or analytics (such as device make and model) when logging to a customer owned and operated device. | On by default |
+| Privacy | Remove data scrubbing for non-identifying data  |  Only data that identifies an individual either directly or by association must be scrubbed for privacy compliance. This feature removes data scrubbing from data that is non-identifying. The feature helps with diagnostics or analytics (such as device make and model) when logging to a customer owned and operated device. | On by default |
 
 
 ## Additional resources
