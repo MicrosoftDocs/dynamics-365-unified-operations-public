@@ -54,7 +54,7 @@ To assign media to a product's **Additional media**, follow these steps:
 4. In the **Master \> Additional media** section, select **Add media**.  
 5. Set the **Media purpose** property to the desired value.
 6. Select a media item from the media library picker, and then select **Apply**. Alternatively, you can also upload new media selecting **Upload** on the upper left of the media picker.
-7. Select **Add media** at the bottom of the panel.
+7. Select **Add media** at the bottom of the pane.
 8. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
 ### Omnichannel, channel-specific, and locale-specific media assignments
@@ -90,8 +90,8 @@ Here's the fallback order for product master, product dimension(s), and product 
       style C fill:#cae3ef
       style D fill:#afd5e7
 ```
->[!NOTE]
->The fallback diagrams above for both product master and channel+locale media assignments illustrate the effective fallback logic, but _not_ the actual runtime behavior.  All the fallback logic is processed and flattened when the media assignments are published so that no unecessary fallback processing occurs at the time of request that could impact performance.  Assigning media at any level of this hierarchy will have _no_ impact on performance between one level to the next.
+> [!NOTE]
+> The fallback diagrams above for both product master and channel+locale media assignments illustrate the effective fallback logic, but not the actual runtime behavior. All the fallback logic is processed and flattened when the media assignments are published so that no unecessary fallback processing occurs at the time of request that could impact performance. Assigning media at any level of this hierarchy will have no impact on performance between one level to the next.
 
 ### Assign media to product master
 
@@ -112,9 +112,9 @@ To assign product-specific swatches, follow these steps:
 4. In the product's **Master** tab, find the **Swatches** section underneath **Additional Media**, and then select **Add swatch**.
 5. Select the **Dimension group** (for example, **Color**) and **Dimension** (for example, **Blue**) values that you wish to assign from the drop-down menu controls. 
 6. Select **Swatch type** from the drop-down selection control. If using a hex code color value, select the the desired hex value on the color picker control, and then skip ahead to step 9. 
-7. If using an image, select the **Add media** button and upload or choose an image from the Omnichannel media library.
-8. To select a cropped sample from a product image, toggle the **Use cropped sample of image** to **On**.  Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
-9. When finished, select **Add swatch** at the bottom of the panel.  
+7. If using an image, select the **Add media** button to upload an image, or select an image from the omnichannel media library.
+8. To select a cropped sample from a product image, toggle the **Use cropped sample of image** to **On**. Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
+9. When finished, select **Add swatch** at the bottom of the pane.  
 10. Repeat steps 4-9 for any additional dimension values.
 11. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
@@ -128,7 +128,7 @@ To assign media to certain product dimensions, follow these steps:
 3. Select **Edit product media** button in the upper right.
 4. Select the **Dimensions** tab in-between the Master tab and the Variants tab at the top of the workspace.
 5. Select the **Create assignment matrix** button in the middle of the workspace (if someone has already created an assignment matrix for this product master, then skip ahead to step 7).
-6. Choose the dimension(s) that you want to use for media assignments and then select the **Create assignment matrix** button at the bottom of the panel. There will now be a grid matrix with the chosen dimensions.
+6. Select the dimension(s) that you want to use for media assignments, and then select **Create assignment matrix** at the bottom of the pane. A grid matrix with the chosen dimensions appears.
 7. Select a cell in the grid to navigate to the assignment view for that dimension value.
 8. Edit your primary and additional media assignments for the chosen dimension combination using the **Add media** and **Remove** (trash can icon on each media item when selected) buttons. 
 9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
