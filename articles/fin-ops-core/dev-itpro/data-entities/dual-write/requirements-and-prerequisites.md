@@ -96,7 +96,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 4. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
-    + **Applications**: Add users to these applications:
+    + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse that will be configured for dual-write.
 
         + 00000015-0000-0000-c000-000000000000
         + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
