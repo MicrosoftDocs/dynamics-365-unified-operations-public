@@ -3916,8 +3916,14 @@
             href: localizations/apac-tha-withholding-tax.md          
         - name: United Arab Emirates (UAE)
           items: 
+          - name: United Arab Emirates (UAE) overview
+            href: localizations/uae.md
           - name: Set up and report value-added tax (VAT)
             href: localizations/uae-vat-setup-reporting.md
+          - name: FTA Tax Audit File (FAF)
+            href: localizations/uae-faf.md
+          - name: Print a sales invoice in the UAE layout
+            href: localizations/uae-sales-invoice-layout.md
         - name: United Kingdom
           items:
           - name: United Kingdom overview
