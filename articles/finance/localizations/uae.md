@@ -35,4 +35,12 @@ This article provides links to documentation resources for the United Arab Emira
 - [FTA Tax Audit File (FAF) in TXT format](uae-faf.md)
 - [Print a sales invoice in the UAE layout](uae-sales-invoice-layout.md)
 
+## Activate the UAE functionality
+
+Country-specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
+
+[![Legal entities page.](./media/uae_vat_01.jpg)](./media/uae_vat_01.jpg)
+
+For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
