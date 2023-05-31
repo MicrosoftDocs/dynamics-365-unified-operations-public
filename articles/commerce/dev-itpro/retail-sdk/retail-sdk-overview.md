@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
-ms.custom: 17771,  ""intro-internal
+ms.collection: get-started
 ---
 
 # Retail software development kit (SDK)

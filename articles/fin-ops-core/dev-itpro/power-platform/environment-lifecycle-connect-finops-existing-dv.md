@@ -16,7 +16,7 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry:
 ms.search.validFrom: 2021-10-13

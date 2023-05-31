@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2023-01-03
 ms.dyn365.ops.version: F&O 10.0.30 PU54
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Set up dual-write security roles and permissions

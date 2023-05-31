@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 05/04/2023
+ms.date: 05/18/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -153,8 +153,15 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 | Scheme | Card present | Card not present |
 |---|---|---|
-| Alipay | Support will be added in a future release. | No |
-| WeChat | Support will be added in a future release. | No |
+| PayPal (via Adyen Connector) | No | No |
+| Google Pay | No | No |
+| Apple Pay | Yes | Yes |
+| Klarna | No | No |
+| Affirm | No | No |
+| Afterpay | No | No |
+| Alipay | No | No |
+| WeChat | No | No |
+
 
 #### Supported card present input methods
 | Input method | Supported | Notes |

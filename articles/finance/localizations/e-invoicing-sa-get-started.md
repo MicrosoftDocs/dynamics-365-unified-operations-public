@@ -12,7 +12,7 @@ ms.search.region: Saudi Arabia
 ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: AX 10.0.21
-ms.custom: intro-internal
+ms.collection: get-started
 ms.assetid: 
 ms.search.form: 
 ---

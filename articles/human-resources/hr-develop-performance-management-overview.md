@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: ["221024", "intro-internal"]
+ms.custom: ["221024"]
+ms.collection: get-started
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 # ms.search.industry: 

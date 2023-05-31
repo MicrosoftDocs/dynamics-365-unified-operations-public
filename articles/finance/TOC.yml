@@ -12,14 +12,14 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.35 (July)
+          href: get-started/whats-new-changed-10-0-35.md
         - name: Finance 10.0.34 (June)  
           href: get-started/whats-new-changed-10-0-34.md
         - name: Finance 10.0.33 (April)  
           href: get-started/whats-new-changed-changed-10-0-33.md
         - name: Finance 10.0.32 (March) 
           href: get-started/whats-new-changed-10-0-32.md
-        - name: Finance 10.0.31 (February)
-          href: get-started/whats-new-changed-10-0-31.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -2314,6 +2314,8 @@
             href: localizations/emea-dnk-intrastat.md
           - name: VAT declaration
             href: localizations/emea-dnk-vat-declaration-denmark.md
+          - name: Standard Audit File for Tax (SAF-T) for Denmark
+            href: localizations/emea-dnk-saf-t.md
         - name: Egypt
           items: 
           - name: Egypt overview
@@ -3050,7 +3052,9 @@
             href: localizations/emea-ita-vat-statements-details.md
           - name: Quarterly VAT communication report
             href: localizations/emea-ita-quarterly-vat-communication.md
-          - name: Competence date and fiscal journal
+          - name: Fiscal journal report
+            href: localizations/emea-ita-fiscal-journal.md
+          - name: Competence date for transactions in Italy 
             href: localizations/emea-ita-competence-date.md
           - name: Depreciation of fixed assets
             href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3314,6 +3318,10 @@
             href: localizations/ltm-core-point-relation.md
           - name: Sales invoice posting for Latin America
             href: localizations/ltm-core-sales-invoice-posting-latam.md
+          - name: Purchase invoice posting for Latin America
+            href: localizations/ltm-core-purchase-invoice-posting.md
+          - name: Inventory transfer order for posting for Latin America
+            href: localizations/ltm-core-transfer-order-posting.md
           - name: Value query for Latin America
             href: localizations/ltm-core-value-query.md
         - name: Latvia

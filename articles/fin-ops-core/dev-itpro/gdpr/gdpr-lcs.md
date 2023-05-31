@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 10031
 ---
 
 # GDPR data requests for Lifecycle Services (LCS)

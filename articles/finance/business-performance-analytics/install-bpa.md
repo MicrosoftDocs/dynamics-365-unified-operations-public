@@ -6,7 +6,7 @@ description: This article describes how to install business performance analytic
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 04/24/2023
+ms.date: 05/24/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -33,6 +33,9 @@ To install business performance analytics, follow these steps.
 3. In the Power Platform admin center, select the Microsoft Power Platform environment to install the application into. 
 4. Accept the terms and conditions, and then select **Install**. This will start the installation of business performance analytics in the selected environment. 
 5. Go to the environment page for the selected environment, click **Dynamics 365 apps** to check status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**. Refer to the Frequently Asked Questions if the status has a different value. 
+
+>[!NOTE]
+>If you uninstall and install business performance analytics, any new reports that were created won't be saved.
 
 
    

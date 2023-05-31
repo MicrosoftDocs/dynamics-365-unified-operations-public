@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27621
 ms.assetid: 018a11ae-854c-4f36-9358-8c39baca882d
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---

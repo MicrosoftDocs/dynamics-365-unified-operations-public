@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 03/20/2023
+ms.date: 05/20/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -17,6 +17,17 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## May 2023 release
+
+The May release of the Dual-write Global Address Book solution 3.5.1.87 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contact for **Customer**, **Vendor**, and **Associate organizations** tab fix. | General availability |
+| Bug fix | "Object reference not set to an instance of an object" error when the party postal address is updated. | General availability |
+| Bug fix | **Add existing** button in the subgrid for multiple entities. | General availability |
+| Bug fix | **County** field isn't correctly moved to the customer address in customer engagement apps when it's set in finance and operations apps. | General availability |
 
 ## March 2023 release 
 

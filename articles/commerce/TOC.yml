@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.35 (July 2023)
+          href: get-started/whats-new-commerce-10-0-34.md
         - name: Commerce 10.0.34 (June 2023)
           href: get-started/whats-new-commerce-10-0-34.md
         - name: Commerce 10.0.33 (April 2023)
@@ -398,6 +400,8 @@
             href: dev-itpro/store-commerce.md
           - name: Store Commerce app capabilities
             href: store-commerce-capabilities.md
+          - name: Store Commerce app FAQ
+            href: dev-itpro/store-commerce-faq.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce

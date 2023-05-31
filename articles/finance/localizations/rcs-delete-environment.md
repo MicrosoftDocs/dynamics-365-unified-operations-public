@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.custom: 97423
 ms.assetid: 
 ms.search.form: RCS, Regulatory Configuration Services, Localization, Global
 ---

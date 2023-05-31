@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-ms.custom: 62753,  ""intro-internal
+ms.collection: get-started
 ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 ---
 
