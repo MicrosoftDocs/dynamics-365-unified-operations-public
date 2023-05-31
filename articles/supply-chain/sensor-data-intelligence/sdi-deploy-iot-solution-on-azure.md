@@ -25,7 +25,7 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ## Prerequisites
 
-To deploy and administer Azure components for Sensor Data Intelligence, you must meet the following requirements:
+To deploy and administer Azure components for Sensor Data Intelligence, your Azure environment and user account must meet the following requirements:
 
 1. You must sign in using an Azure organizational account that is tied to your Supply Chain Management environment. You can't use a personal Azure account (such as one registered to an Outlook or Gmail address).
 1. Your Azure account must have one of the following security roles:
@@ -33,6 +33,7 @@ To deploy and administer Azure components for Sensor Data Intelligence, you must
     - Co-administrator
     - Service administrator
     - Account administrator
+1. The Power Apps component framework must be enabled for your Azure environment. For instructions, see [Enable the Power Apps component framework](/powerapps/developer/component-framework/overview#enable-the-power-apps-component-framework).
 
 ## Video instructions
 
@@ -41,6 +42,9 @@ The following video shows how to [turn on the Sensor Data Intelligence feature](
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
 
 ## Procedure
+
+> [!IMPORTANT]
+> Before you start this procedure, make sure your Azure environment and user account fulfil the [prerequisites](#prerequisites) listed earlier in this article.
 
 Follow these steps to deploy the required resources on Azure.
 
