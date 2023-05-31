@@ -44,7 +44,7 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-### When will data be available in reports after the business process analytics is installed for the first time?
+### When will data be available in reports after the business performance analytics is installed for the first time?
 
 Data will be available within 12 to 24 hours after installation is completed.
 
@@ -147,7 +147,7 @@ let start = async () => {
 
 start();
 
-### Uninstall business process analytics
+### Uninstall business performance analytics
 
 Option two: Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
