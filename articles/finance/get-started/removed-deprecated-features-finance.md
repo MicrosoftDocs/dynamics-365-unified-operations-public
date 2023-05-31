@@ -39,6 +39,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.36 release
+
+### \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\"
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using \"SAF-T General model mapping\". | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By July 1, 2024, we plan to no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\". New \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" is introduced. |
+
 ## Features removed or deprecated in the Finance 10.0.31 release
 
 ### EDIFACT PAYMUL (AT) configuration under Payment model
