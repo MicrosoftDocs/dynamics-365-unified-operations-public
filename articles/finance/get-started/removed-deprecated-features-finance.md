@@ -41,15 +41,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Finance 10.0.36 release
 
-### \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\"
+### \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\" and \"FAF declaration\" menu item
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with a new \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using \"SAF-T General model mapping\". | 
+| **Reason for deprecation/removal** | Replaced with a new \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using \"SAF-T General model mapping\" and \"Standard Audit File for Tax (SAF-T) electronic report\" feature, [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By July 1, 2024, we plan to no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\". New \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" is introduced. |
+| **Status**                         | Deprecated: By July 1, 2024, we plan to no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\" and \"FAF declaration\" menu item (**Tax** > **Declarations** > **FAF declaration**). New \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" runnable with [\"Standard Audit File for Tax (SAF-T) electronic report\"](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file) feature is introduced, [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
 
 ## Features removed or deprecated in the Finance 10.0.31 release
 
