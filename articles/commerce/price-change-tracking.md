@@ -2,7 +2,7 @@
 # required metadata
 
 title: Price change tracking
-description: This article describes the price change tracking feature provided by Dynamics 365 Commerce.
+description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
 ms.date: 06/01/2023
 ms.topic: article
@@ -18,9 +18,9 @@ ms.search.validFrom: 2023-06-01
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the price change tracking feature provided by Dynamics 365 Commerce.
+This article describes the price change tracking feature provided by Microsoft Dynamics 365 Commerce.
 
-A product’s active sales price is influenced by multiple factors (seasonal adjustments, promotions, etc.) and may go up and down over a period. Many commerce scenarios rely on the price change signals to trigger specific business workflows. For example, a retail store needs to update the shelf labels with changed prices, an e-commerce website wants to alert shoppers about price drop of items in their shopping bags. The price change tracking feature provides a mechanism to detect products with changed prices and generate data feeds to surface the information.
+A product's active sales price is influenced by multiple factors (seasonal adjustments, promotions, etc.) and may go up and down over a period. Many commerce scenarios rely on the price change signals to trigger specific business workflows. For example, a retail store needs to update the shelf labels with changed prices, an e-commerce website wants to alert shoppers about price drop of items in their shopping bags. The price change tracking feature provides a mechanism to detect products with changed prices and generate data feeds to surface the information.
 
 ## Configure price change tracking
 
@@ -30,7 +30,7 @@ To use this feature, follow these configuration steps in Commerce headquarters.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 1. On the **Prices and discounts** tab, add the legal entities you want to enable price change tracking into the data grids, then select **Save**.
-1. Run the **1110 (Global configuration)** distribution schedule.
+1. Run the **1110 (Global configuration)** distribution schedule job.
 
 For customers who use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce, after first time upgrading to version 10.0.32 and later, the price change tracking is enabled by default on all legal entities where the cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by leveraging incremental updates only for products with changed prices rather than relying on full product data sync. Please ensure the [environment initialization process](enable-configure-retail-functionality.md) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
 
@@ -66,10 +66,10 @@ Price changes are recorded in the **RetailPriceChangeTracking** table.
 
 | **Field**           | **Type**    | **Description**                                                                                                                          |
 |---------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| ProductId           | BigInt      | RecordId of the product that has price change. Special value *0* indicates a timestamp when the price change tracking baseline is reset. |
-| UpdatedDatetime     | Datetime    | Datetime when the price change is detected.                                                                                              |
-| UpdatedDatetimeTZId | Int         | Timezone of the datetime when the price change is detected.                                                                              |
-| DataAreaId          | Nvarchar(4) | Legal entity where this price change occurs.                                                                                             |
+| ProductId           | BigInt      | Unique identifier of the product record that has the price change. Special value of **0** indicates a timestamp when the price change tracking baseline is reset. |
+| UpdatedDatetime     | Datetime    | Date and time when the price change was detected. |
+| UpdatedDatetimeTZId | Int         | Time zone of the date and time when the price change was detected. |
+| DataAreaId          | Nvarchar(4) | Legal entity where the price change occurred.  |
 
 ## Other considerations
 
