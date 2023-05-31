@@ -25,6 +25,6 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates (UAE)
+# FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
 
 This article includes country-specific information about how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE)
