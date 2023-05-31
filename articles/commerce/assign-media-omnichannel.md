@@ -117,13 +117,14 @@ To assign product-specific swatches, follow these steps.
 2. In the search view on the left, search for a product using its name or product ID, and then select it.
 3. Select **Edit product media** on the upper right.
 4. On the product's **Master** tab, under **Additional Media**, in the **Swatches** section, select **Add swatch**.
-5. From the drop-down menu, select the **Dimension group** (for example, **Color**) and **Dimension** (for example, **Blue**) values that you want to assign. 
-6. From the drop-down menu, select **Swatch type**. If using a hexidecimal code color value, select the the desired value on the color picker control, and then skip ahead to step 9. 
-7. If using an image, select **Add media** to upload an image, or select an image from the omnichannel media library.
-8. To select a cropped sample from a product image, toggle the **Use cropped sample of image** option to **On**. Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
-9. When finished, at the bottom of the pane, select **Add swatch**.  
-10. Repeat steps 4-9 for any additional dimension values.
-11. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+5. On the **Dimension group** drop-down menu, select the dimension group (for example, **Color**) that you want to assign.
+6. On the **Dimension** drop-down menu, select the dimension values (for example, **Blue**) that you want to assign. 
+7. On the **Swatch type** drop-down menu, select the swatch type that you want to assign. If using a hexidecimal code color value, select the the desired value on the color picker control, and then skip ahead to step 10. 
+8. If using an image, select **Add media** to upload an image, or select an image from the omnichannel media library.
+9. To select a cropped sample from a product image, toggle the **Use cropped sample of image** option to **On**. Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
+10. When finished, at the bottom of the pane, select **Add swatch**.  
+11. Repeat steps 4-10 for any additional dimension values.
+12. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
 ### Assign media to product dimensions
 
