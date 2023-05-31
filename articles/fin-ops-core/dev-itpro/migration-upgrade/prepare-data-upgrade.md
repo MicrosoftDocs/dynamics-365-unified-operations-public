@@ -24,11 +24,33 @@ ms.assetid:
 
 This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
 
-## Installation
-Use the pre-upgrade checklist to enter data that will be required for the upgrade procedure. 
+# Installation
+The pre-upgrade checklist for the D365 upgrade is included in AX 2012 R3 CU13, if you are on an older version then please install the required KB below. 
 
-- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255)
+- If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255) 
 - if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
+
+    > [!NOTE] 
+    > If you are upgrading from AX 2012 R3, you must be on CU13. If you are on an older version, and are unable to upgrade to CU13 please contact Microsoft Support.
+
+# Running the Pre-upgrade checklist
+
+Open the checklist from here: System Administration > Setup > Checklists > Dynamics 365 for Unified Operations data upgrade checklist	
+
+If you do not see the checklist, it could be due to overlayering of the System Admin menu. An alternative way to open the checklist is as follows:
+ 1. Open the Developer Workspace
+ 2. In the AOT go to: Menu Items > Display > SysCheckList_UpgradeToNextV
+ 3. Right Click on **SysCheckList_UpgradeToNextV** and select **Open**
+
+Run each of the checklist items, as detailed below.
+
+## Validate baseline version
+
+Run this task to validate that the current version can be upgraded.
+
+- In the finance and operations data upgrade checklist, click **Validate baseline version**.
+
+If the baseline version is one of the supported baseline versions, the task is marked as completed.
 
 ## Prepare model metadata
 
@@ -76,14 +98,6 @@ In AX 2012, users are authenticated against an on-premises Active Directory serv
         The grid should be filled with the mappings that you specified in the file.
 
 If the imported file contains an entry that isn’t valid, an error file is generated.
-
-## Validate baseline version
-
-Run this task to validate that the current version can be upgraded.
-
-- In the finance and operations data upgrade checklist, click **Validate baseline version**.
-
-If the baseline version is one of the supported baseline versions, the task is marked as completed.
 
 
 ## Archive retail salt data
