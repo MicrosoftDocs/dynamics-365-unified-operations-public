@@ -34,7 +34,7 @@ Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on Januar
 
 Registered businesses and traders charge VAT to all their customers at the current rate, and they incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
-## Configure a legal entity for VAT
+## <a name="header-information"></a>Configure a legal entity for VAT
 
 According to *Requirements Document for Tax Accounting Software* issued by the Federal Tax Authority (FTA), additional information must be set up in the configuration of a legal entity. In Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, on the **Value added tax** FastTab, set the following fields:
 
