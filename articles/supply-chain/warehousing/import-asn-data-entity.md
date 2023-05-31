@@ -4,7 +4,7 @@ description: This article explains how to manage the import of inbound advanced 
 author: GalynaFedorova
 ms.date: 05/11/2022
 ms.topic: article
-ms.search.form: WHSInboundASNV3Entity, WHSInboundASNEntity, DMFEntity
+ms.search.form: WHSInboundASNV3Entity, WHSInboundASNEntity, DMFEntity, WHSInboundShipmentOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -19,16 +19,16 @@ ms.dyn365.ops.version: 10.0.19
 
 Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and additional information about it, such as the items and packaging.
 
-ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order that was previously created.
+ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order and/or [inbound shipment order](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders) that was previously created.
 
 This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
 > [!IMPORTANT]
-> *Inbound ASN* import applies only to items that are enabled for warehouse management processes (WMS). Before you receive an ASN, a purchase order must be registered in the system against the vendor who is sending that ASN.
+> _Inbound ASN_ import applies only to items that are enabled for warehouse management processes (WMS). Before you receive an ASN, a purchase or inbound shipment order must be registered in the system.
 
-## Inbound ASN V3 entity
+## Inbound ASN
 
-You import inbound ASNs by using the *Inbound ASN V3* composite data entity. *Inbound ASN V3* takes advantage of the following entities:
+You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V4_ composite data entities which takes advantage of the following child entities:
 
 - Inbound load header
 - Inbound shipment header
@@ -37,7 +37,9 @@ You import inbound ASNs by using the *Inbound ASN V3* composite data entity. *In
 - Inbound load packing structure case lines
 - Inbound load packing structure lines
 
-The *Inbound ASN V3* composite data entity is intended for asynchronous integration scenarios where XML file–based imports are used.
+The _Inbound ASN_ composite data entities are intended for asynchronous integration scenarios where for example XML file–based files imports can be used.
+> [!NOTE]
+> Only the _ASN V4_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders), In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders
 
 ## XML format for importing ASNs
 
@@ -61,9 +63,9 @@ Microsoft Dynamics 365 Supply Chain Management supports the following XML format
 </Document>
 ```
 
-## Examples
+## Inbound ASN V3 entity (Only for purchase orders) examples
 
-The following subsections provide examples of ASN XML import files for vendor shipments.
+The following subsections provide examples of ASN XML import files for purchase order vendor shipments for _ASN V3_.
 
 ### Example 1
 
@@ -75,7 +77,7 @@ The following example shows an XML file for importing vendor shipments for one p
     <WHSInboundLoadHeaderEntity TRACTORNUMBER="0000101">
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_01" VENDORADDRESSCOUNTRYREGIONID = "USA" VENDORADDRESSSTREET = "123 Coffee Street" VENDORADDRESSSTATEID = "WA" VENDORADDRESSCITY = "Redmond" VENDORADDRESSZIPCODE = "98052">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_001">
-                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000176" ITEMNUMBER="A0001" QUANTITY="1" UNITSYMBOL="ea" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000176" ITEMNUMBER="A0001" QUANTITY="1" UNITSYMBOL="pcs" />
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>
@@ -93,7 +95,7 @@ The following example shows an XML file for importing vendor shipments for one p
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="MVR_SNN_0004">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="MVR_SNN_0004" PACKEDTOTALQUANTITY="2.00">
                 <WHSInboundLoadPackingStructureCaseEntity PARENTPACKINGSTRUCTURELICENSEPLATENUMBER="MVR_SNN_0004" LICENSEPLATENUMBER="MVR_SNN_0004A" PACKEDTOTALQUANTITY="2.00" />
-                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000175" ITEMNUMBER="A0001" PURCHASEORDERLINENUMBER="1" QUANTITY="2.00" UNITSYMBOL="ea" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000175" ITEMNUMBER="A0001" PURCHASEORDERLINENUMBER="1" QUANTITY="2.00" UNITSYMBOL="pcs" />
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>
@@ -110,18 +112,39 @@ The following example shows an XML file for importing vendor shipments for multi
     <WHSInboundLoadHeaderEntity TRACTORNUMBER="0000101">
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_01" VENDORADDRESSCOUNTRYREGIONID = "USA" VendorAddressStreet = "123 Coffee Street" VENDORADDRESSSTATEID = "WA" VENDORADDRESSCITY = "Redmond" VENDORADDRESSZIPCODE = "98052">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_001">
-                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000176" ITEMNUMBER="A0001" QUANTITY="100" UNITSYMBOL="ea" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000176" ITEMNUMBER="A0001" QUANTITY="100" UNITSYMBOL="pcs" />
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_02" VENDORADDRESSCOUNTRYREGIONID = "USA" VendorAddressStreet = "123 Coffee Street" VENDORADDRESSSTATEID = "WA" VENDORADDRESSCITY = "Redmond" VENDORADDRESSZIPCODE = "98052">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_001">
-                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="A0001" QUANTITY="200" UNITSYMBOL="ea" />
-                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="P0004" QUANTITY="300" UNITSYMBOL="ea" ITEMBATCHNUMBER="BN0001" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="A0001" QUANTITY="200" UNITSYMBOL="pcs" />
+                <WHSInboundLoadPackingStructureLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="P0004" QUANTITY="300" UNITSYMBOL="pcs" ITEMBATCHNUMBER="BN0001" />
             </WHSInboundLoadPackingStructureEntity>
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_002">
                 <WHSInboundLoadPackingStructureCaseEntity LICENSEPLATENUMBER="LP_ASN_002_C01">
-                    <WHSInboundLoadPackingStructureCaseLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="A0001" QUANTITY="400" UNITSYMBOL="ea" />
+                    <WHSInboundLoadPackingStructureCaseLineV3Entity PURCHASEORDERNUMBER="00000177" ITEMNUMBER="A0001" QUANTITY="400" UNITSYMBOL="pcs" />
                 </WHSInboundLoadPackingStructureCaseEntity>
+            </WHSInboundLoadPackingStructureEntity>
+        </WHSInboundShipmentHeaderEntity>
+    </WHSInboundLoadHeaderEntity>
+</Document>
+```
+
+## Inbound ASN V4 entity example
+
+The following subsection provide an example of ASN XML import files for inbound shipment orders for _ASN V4_. Note that the _ASN V4_ can as well be used for purchase orders and thereby supporting the same examples as shown above.
+
+### Example 4
+
+The following example shows an XML file for importing shipments for one inbound shipment order when no case details are included.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Document>
+    <WHSInboundLoadHeaderEntity TRACTORNUMBER="0000104">
+        <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_04">
+            <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_004">
+                <WHSInboundLoadPackingStructureLineV4Entity MODULE="InboundShipmentOrder" ORDERNUMBER="00000174" ORDERLINENUMBER="1" ITEMNUMBER="A0001" QUANTITY="10" UNITSYMBOL="pcs"/>
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>
