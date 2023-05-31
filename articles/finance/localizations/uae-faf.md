@@ -49,7 +49,7 @@ Before you generate a FAF for UAE, import the latest versions of the following E
 |-----------------------|------|-------------|
 | Standard Audit File (SAF-T) | Model | The common data model for different audit reports. |
 | SAF-T General model mapping | Model mapping | The model mapping that provides general data source mapping. |
-| FTA Tax Audit File - FAF in TXT (AE) | Format | IRAS Audit File for Singapore in pipe-delimited text format. |
+| FTA Tax Audit File - FAF in TXT (AE) | Format | Federal Tax Authority Audit file for the United Arab Emirates text format. |
 
 For more information about how to download ER configurations, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
