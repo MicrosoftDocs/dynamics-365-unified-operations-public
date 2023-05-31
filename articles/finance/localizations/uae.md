@@ -31,14 +31,8 @@ ms.dyn365.ops.version: July 2017 update
 
 This article provides links to documentation resources for the United Arab Emirates (UAE). 
 
+- [Set up and report value-added tax (VAT)](uae-vat-setup-reporting.md)
+- [FTA Tax Audit File (FAF) in TXT format](uae-faf.md)
 - [Print a sales invoice in the UAE layout](uae-sales-invoice-layout.md)
-- [FTA Tax Audit File (FAF) in TXT format](uae-faf.md)
-- [FTA Tax Audit File (FAF) in TXT format](uae-faf.md)
-
-## Additional resources
-- [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/thailand.html)
-- [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
-- [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
