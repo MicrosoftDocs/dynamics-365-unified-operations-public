@@ -367,6 +367,12 @@ items:
             href: business-events-overview.md
           - name: Human Resources business event example
             href: bus-event-example.md
+          - name: Batch based business events
+            items:  
+            - name: Configure batch based business events
+              href: hr-configure-batch-bus-events.md
+            - name: Power Automate templated based business events
+              href: hr-power-auto-temp-bus-events.md
           - name: Use cases for Human Resouces business events
             href: bus-event-use-case.md             
         - name: Workflow system
