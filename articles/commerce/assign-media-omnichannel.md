@@ -60,7 +60,7 @@ To assign media to a product's **Additional media**, follow these steps.
 7. Select **Add media** at the bottom of the pane.
 8. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
-### Omnichannel, channel-specific, and locale-specific media assignments
+## Omnichannel, channel-specific, and locale-specific media assignments
 
 Media can be assigned in a hierarchical fallback manner across channels and locales.  The default assignment for any product should use Omnichannel (channel) and Neutral (locale).  These assignments will be returned by default anywhere a more specific channel+local combination isn't available.  For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default.  After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
 
@@ -78,7 +78,7 @@ Here's the fallback order for channel and locale media assignments:
 > [!NOTE]
 > The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace.  Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments across all channels.
 
-### Product master, product dimension(s), and product variant media assignments
+## Product master, product dimension(s), and product variant media assignments
 
 Product masters typically have one or more product dimensions (color, size, style, configuration) which determine complete set of possible variants for the product.  Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments.  When media assignments are created for product dimension(s) or specific product variants, the inheritance to the product master assignments is severed and all media assignments are controlled by the dimension(s) or specific product variant media assignments.
 
@@ -121,7 +121,7 @@ To assign product-specific swatches, follow these steps.
 10. Repeat steps 4-9 for any additional dimension values.
 11. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
-#### Assign media to product dimensions
+### Assign media to product dimensions
 
 For product masters with multiple dimensions, it's common that media assignments are only needed for a subset of dimensions.  For example, in the apparel industry it's common to take photos of different colors and styles of the same master product shirt, but not different photos for every size.  
 
@@ -138,7 +138,7 @@ To assign media to certain product dimensions, follow these steps.
 9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
 10. When your changes are complete, select **Finish editing** on the upper right to check in the new set of media assignments. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
-#### Assign media to product variants
+### Assign media to product variants
 
 As explained in the [master > dimensions > variant fallback section](#product-master-product-dimensions-and-product-variant-media-assignments) above, media can be assigned to individual product variants whenever needed.  This disconnects the fallback to both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
 
@@ -153,7 +153,7 @@ To assign media to a specific product variant, follow these steps.
 9. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
 10. When  your changes are complete, select **Finish editing** on the upper right to check in the new set of media assignments. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
 
-### Preview product media assignments
+## Preview product media assignments
 
 Omnichannel media assignments, by definition, can apply across a range of channels and user experiences (examples: Point of Sale (POS) devices, e-Commerce product pages (PDPs), etc.).  To preview media assignments that can span multiple channels, the Omnichannel product media workspace has a generic media gallery preview experience to quickly validate how media should display for a product's primary media assignments.
 
@@ -165,7 +165,7 @@ To preview primary product media assignments, follow these steps.
 5. If the product is configured with dimensions, select different dimension values in the dropdown controls to preview the media gallery experience for different product variants.
 6. Select **Close** to exit the preview experience.
 
-### Category media assignments
+## Category media assignments
 
 Commerce currently supports a single default image to be assigned to each channel-specific product category. Category media assignments are generally used for category navigation end-user experiences. Category media assignments are always channel-specific, which means that default media assignments are not made at the Omnichannel-level (like they can be for individual products).  
 
