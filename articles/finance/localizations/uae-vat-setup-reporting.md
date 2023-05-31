@@ -173,7 +173,7 @@ For more information, see [Download ER configurations from the Global repository
 
 After all the configurations are uploaded, the configuration tree should be present in **Electronic reporting** > **Reporting configurations**.
 
-[![Configuration tree.](./media/uae_vat_11.jpg)](./media/uae-vat-er.png)
+![Configuration tree.](./media/uae-vat-er.png)
 
 > [!IMPORTANT]
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **VAT declaration model mapping** configuration.
