@@ -20,10 +20,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The out-of-box table maps have predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as "blueprints." However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
 
->[!Note:]
->The Worker Personal details entity in Dataverse doesn't contain Professional Suffix. Professional suffix can be added using extensibility. You can't save new values to the Professional and Personal suffixes of the Worker entity while mapping Worker Personal details from Dataverse to the Worker entity in finance and operations. The data source DirNameAffixPersonalSuffix contains these fields and will not save values to fields that aren't available in finance and operations. 
-
-
+> [!NOTE]
+> The Worker Personal details entity in Microsoft Dataverse doesn't contain the **Professional Suffix** field. However, this field can be added through extensibility. You can't save new values to the **Professional Suffix** and **Personal Suffix** fields of the Worker entity while you're mapping the Worker Personal details entity from Dataverse to the Worker entity in finance and operations apps. The **DirNameAffixPersonalSuffix** data source contains these fields and won't save values to fields that aren't available in finance and operations apps.
 
 ## Customize column mappings, add transforms, and enable filtering
 
