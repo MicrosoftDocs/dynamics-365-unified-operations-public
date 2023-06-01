@@ -1,6 +1,6 @@
 ---
 title: Get started with setting up the Warehouse management module
-description: This article explains how to work with the built-in wizards and checklists that will help you quickly and efficiently set up and configure the Warehouse management module.
+description: This article explains how to work with the built-in wizards and checklists that help you quickly and efficiently set up and configure the Warehouse management module.
 author: GalynaFedorova
 ms.author: gfedorova 
 ms.reviewer: kamaybac
@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to work with the built-in wizards and checklists that will help you quickly and efficiently set up and configure the **Warehouse management** module.
+This article explains how to work with the built-in wizards and checklists that can help you quickly and efficiently set up and configure the **Warehouse management** module.
 
 ## Track the Warehouse management configuration processes
 
@@ -34,7 +34,7 @@ To open the workspace, go to **Warehouse management \> Workspaces \> Warehouse i
 
 ### Create a new implementation project
 
-You must start by creating at least one implementation task project. You can add as many project as you need. All data that is shown in the workspace is filtered by the selected **Implementation task project**. Follow these steps to create a new project in the **Warehouse implementation tasks** workspace.
+You must start by creating at least one implementation task project. You can add as many projects as you need. All data that is shown in the workspace is filtered by the selected **Implementation task project**. Follow these steps to create a new project in the **Warehouse implementation tasks** workspace.
 
 1. In the **Warehouse implementation tasks** workspace, at the top of the workspace, select **New project**.
 1. A drop-down dialog box opens. Make the following settings:
@@ -72,7 +72,7 @@ After you import a task list, you can customize it as you require by adding, rem
     - **Task link** – Select the page in Supply Chain Management where the user should go to complete the task.
 
 - **Edit task** – Edit a selected task. This button opens the **Edit task** dialog box, where you can edit the **Description** and **Task link** fields for the task. Other settings are read-only for existing tasks.
-- **Remove** – Delete all selected tasks. You will be prompted to confirm the operation.
+- **Remove** – Delete all selected tasks. You'll be prompted to confirm the operation.
 - **Move up** – Move a selected task up in the sequence order.
 - **Move down** – Move a selected task down in the sequence order.
 
@@ -80,7 +80,7 @@ After you import a task list, you can customize it as you require by adding, rem
 
 When your task list is ready, follow these steps to work through it.
 
-1. In the **Warehouse implementation tasks** workspace, expand the **Summary** FastTab for an overview of the total number of tasks and the proportion of them that have been marked as completed.
+1. In the **Warehouse implementation tasks** workspace, expand the **Summary** FastTab for an overview of the total number of tasks and the proportion of them that has been marked as completed.
 1. Expand the **Tasks and status** FastTab to view the full list and mark tasks as completed while you work.
 
     For each task, the following information is shown:
@@ -104,7 +104,7 @@ When your task list is ready, follow these steps to work through it.
 
 ## Warehouse management initiation wizard
 
-The *Warehouse management initiation wizard* provides a step-by-step guide that will help you configure the most basic settings that the **Warehouse management** module requires. Use this wizard for new legal entities where you must configure the **Warehouse management** module from scratch. The wizard will define the main settings of Warehouse management parameters for you. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
+The *Warehouse management initiation wizard* provides a step-by-step guide that helps you configure the most basic settings that the **Warehouse management** module requires. Use this wizard for new legal entities where you must configure the **Warehouse management** module from scratch. The wizard will define the main settings of Warehouse management parameters for you. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
 
 The following table summarizes the configurations that the wizard does.
 
@@ -220,15 +220,15 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - **Sales pick location directive** – Specify the name of the pick location directive for the shipping process.
 
 1. Select **Next** to continue.
-1. On the **Staging area** page, use the following fields to specify whether you will use a staging area in your outbound processes and, if you will, to set up the feature. You might have to use the feature if you pick your items and then put them in a staging location where all lines of an order are held. In the staging area, items can be packed, relabeled, or loaded onto a delivery truck, and then sent out the door. Default values are suggested, but you can edit them as you require.
-    - **Use staging area** – Select this checkbox if you will use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
+1. On the **Staging area** page, use the following fields to specify whether you'll use a staging area in your outbound processes and, if you will, to set up the feature. You might have to use the feature if you pick your items and then put them in a staging location where all lines of an order are held. In the staging area, items can be packed, relabeled, or loaded onto a delivery truck, and then sent out the door. Default values are suggested, but you can edit them as you require.
+    - **Use staging area** – Select this checkbox if you'll use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
     - **Location** – Specify the name of the staging location.
     - **Directive code** – Specify the name of the directive code for the shipping process. This value will be used in the shipping work template and location directive to link them together.
     - **Sales work class** – Specify the name of the work class for the shipping process. This value will be used in the work template.
     - **Sales put location directive** – Specify the name of the put location directive for the shipping process.
 1. Select **Next** to continue.
-1. On the **Packing preference** page, use the following fields to specify whether you will use a packing functionality in your outbound processes and, if you will, to set up the feature. You might have to use the feature if you pack items before shipping. Default values are suggested, but you can edit them as you require.
-    - **Would you like to pack items before shipping** – Select this checkbox if you will use packing. If you select this option, you must also select with type of packing functionality you will use (manual or using wave containerization). If you clear this checkbox, no packing will be set up, and all the other pages related to packing will be unavailable.
+1. On the **Packing preference** page, use the following fields to specify whether you'll use a packing functionality in your outbound processes and, if you will, to set up the feature. You might have to use the feature if you pack items before shipping. Default values are suggested, but you can edit them as you require.
+    - **Would you like to pack items before shipping** – Select this checkbox if you'll use packing. If you select this option, you must also select with type of packing functionality you'll use (manual or using wave containerization). If you clear this checkbox, no packing will be set up, and all the other pages related to packing will be unavailable.
     - **Manually pack items through Pack station** – Select this check box if you want to use manual packing. Then make the following settings:
         - **Directive code** – Specify the name of the directive code.
         - **Sales work class** – Specify name to use for sales work class.
@@ -242,7 +242,7 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
 
 1. On the **Container type and group** page, create or select container types for packing.
     - If you don't see the container(s) you want to use, then select **Add** from the toolbar and fill out the columns as needed to create and set up the container.
-    - If you chose the **Manually pack items through Pack station** option, then you must select exactly one container type with a maximum net weight greater than 0.
+    - If you chose the **Manually pack items through Pack station** option, then you must select exactly one container type with a maximum net weight greater than zero.
     - If you chose the **Pack items through wave containerization** option, select one or more container types. Then set **Container group** to the name of the container group that you want to create to hold the container types you selected.
 
 1. Select **Next** to continue. If you chose the **Pack items through wave containerization** option, you'll skip ahead to the **Final shipping area** page of the wizard, so you can skip ahead to step 18 of this procedure. If you chose the **Manually pack items through Pack station** option, then continue to the next step.
