@@ -2,7 +2,7 @@
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
 author: gianugo
-ms.date: 02/20/2020
+ms.date: 06/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -24,25 +24,25 @@ ms.assetid:
 
 This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
 
-# Installation
-The pre-upgrade checklist for the D365 upgrade is included in AX 2012 R3 CU13, if you are on an older version then please install the required KB below. 
+## Installation
+The pre-upgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3 CU13. If you are on an older version, install the required knowledgebase below. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255) 
 - if upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025)
 
     > [!NOTE] 
-    > If you are upgrading from AX 2012 R3, you must be on CU13. If you are on an older version, and are unable to upgrade to CU13 please contact Microsoft Support.
+    > If you are upgrading from AX 2012 R3, your environment must have CU13 installed. If you are on an older version, and are unable to upgrade to CU13 please contact Microsoft Support.
 
-# Running the Pre-upgrade checklist
+## Run the pre-upgrade checklist
 
-Open the checklist from here: System Administration > Setup > Checklists > Dynamics 365 for Unified Operations data upgrade checklist	
+To run the pre-upgrade checklist, follow these steps:
+1. Go to **System Administration > Setup > Checklists > Dynamics 365 for Unified Operations data upgrade checklist**.	
 
-If you do not see the checklist, it could be due to overlayering of the System Admin menu. An alternative way to open the checklist is as follows:
- 1. Open the Developer Workspace
- 2. In the AOT go to: Menu Items > Display > SysCheckList_UpgradeToNextV
- 3. Right Click on **SysCheckList_UpgradeToNextV** and select **Open**
+If you don't see the checklist, follow these steps:
+ 1. Open the Developer workspace, go to **Display > SysCheckList_UpgradeToNextV**.
+ 2. Right-click **SysCheckList_UpgradeToNextV** and select **Open**.
 
-Run each of the checklist items, as detailed below.
+Each of the below checklist items must be ran. 
 
 ## Validate baseline version
 
