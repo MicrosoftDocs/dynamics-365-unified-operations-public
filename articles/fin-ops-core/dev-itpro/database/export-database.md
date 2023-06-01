@@ -4,7 +4,7 @@
 title: Export a database
 description: This article explains how to export a database for finance and operations.
 author: LaneSwenka
-ms.date: 06/07/2022
+ms.date: 06/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,10 +29,10 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database from a sandbox user acceptance testing (UAT) environment to the Asset library.
+You can use Microsoft Dynamics Lifecycle Services to export a database from a sandbox user acceptance testing (UAT) environment to the Asset library.
 
 > [!NOTE]
-> - If customer managed key (CMK) is applied to the environment, the exported file will be stored without the CMK in LCS asset library. CMK support for LCS asset library will be available soon, after that the exported files will be stored with the CMK policy applied to the LCS asset library.
+> If the customer managed key (CMK) is applied to the environment, the exported file is stored without the CMK in the Lifecycle Services asset library. CMK support for the Lifecycle Services asset library will be available soon, after that the exported files will be stored with the CMK policy applied to the LCS asset library.
 
 ## Self-service export database
 
