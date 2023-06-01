@@ -83,7 +83,7 @@ After you import a task list, you can customize it as you require by adding, rem
 
 When your task list is ready, follow these steps to work through it.
 
-1. In the **Warehouse implementation tasks** workspace, expand the **Summary** FastTab for an overview of the total number of tasks and the proportion of them that have been marked as completed.
+1. In the **Warehouse implementation tasks** workspace, expand the **Summary** FastTab for an overview of the total number of tasks and the proportion of them that has been marked as completed.
 1. Expand the **Tasks and status** FastTab to view the full list and mark tasks as completed while you work.
 
     For each task, the following information is shown:
