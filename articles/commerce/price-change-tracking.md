@@ -20,21 +20,21 @@ ms.search.validFrom: 2023-06-01
 
 This article describes the price change tracking feature provided by Microsoft Dynamics 365 Commerce.
 
-A product's active sales price is influenced by multiple factors (seasonal adjustments, promotions, etc.) and may go up and down over a period. Many commerce scenarios rely on the price change signals to trigger specific business workflows. For example, a retail store needs to update the shelf labels with changed prices, an e-commerce website wants to alert shoppers about price drop of items in their shopping bags. The price change tracking feature provides a mechanism to detect products with changed prices and generate data feeds to surface the information.
+A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions) and may go up and down over a period. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Examples of triggered business workflows include a retail store needing to update shelf labels with changed prices, or an e-commerce website alerting shoppers about a price drop of items in their shopping bags. The Commerce price change tracking feature provides a mechanism to detect products with changed prices and generate data feeds to surface the information.
 
 ## Configure price change tracking
 
-Price change tracking can be enabled at legal entity level. 
+Price change tracking can be enabled at the legal entity level. 
 
-To use this feature, follow these configuration steps in Commerce headquarters.
+To use the price change tracking feature, follow these configuration steps in Commerce headquarters.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
-1. On the **Prices and discounts** tab, add the legal entities you want to enable price change tracking into the data grids, then select **Save**.
+1. On the **Prices and discounts** tab, add the legal entities for which you want to enable price change tracking into the data grids, then select **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule job.
 
-For customers who use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce, after first time upgrading to version 10.0.32 and later, the price change tracking is enabled by default on all legal entities where the cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by leveraging incremental updates only for products with changed prices rather than relying on full product data sync. Please ensure the [environment initialization process](enable-configure-retail-functionality.md) is done and the **1020 (Prices and discounts)** distribution schedule job is executed after environment upgrade to take advantage of this enhancement. 
+For customers who use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce, after upgrading to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default on all legal entities where cloud-powered product search is enabled. This helps improve the efficiency of pricing data publishing in the search index by only detecting incremental updates for products with changed prices, instead of relying on a full product data sync. To take advantage of this enhancement, ensure that the [environment initialization process](enable-configure-retail-functionality.md) has been completed and execute the **1020 (Prices and discounts)** distribution schedule job after your environment upgrade. 
 
-To disable price change tracking on a specific legal entity, simply remove that legal entity from the price change tracking setting in Commerce shared parameters. The removed legal entities won’t be automatically added back even cloud-powered product search is enabled for them. Removing all legal entities effectively disables the entire price change tracking feature.
+To disable price change tracking for a specific legal entity, remove the legal entity from the price change tracking setting in Commerce shared parameters. The removed legal entities won't be automatically readded, even if cloud-powered product search is enabled for them. Removing all legal entities effectively disables the entire price change tracking feature.
 
 ## How price change tracking works
 
