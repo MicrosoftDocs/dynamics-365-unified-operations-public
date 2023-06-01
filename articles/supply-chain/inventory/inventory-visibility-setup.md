@@ -185,5 +185,7 @@ If you need to restore a Supply Chain Management database, use the following pro
 1. Restore your Supply Chain Management database, for example as described in [Database point-in-time restore (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) or [Point-in-time restore of the production database to a sandbox environment](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
 1. If you still want to use it, then reinstall and set up the Inventory Visibility Add-in as described in [Install the Inventory Visibility Add-in](#install-add-in) and [Set up Inventory Visibility integration](#setup-inventory-visibility-integration)
 
+> [!NOTE]
+> There are couple of ways to migrate Dataverse data between environments. We are not encourage to do this because there is **EnvironmentId** is stored in Dataverse, directly migrate different environments data will result in data corruption. If this has happened, please contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to resolve the issue.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
