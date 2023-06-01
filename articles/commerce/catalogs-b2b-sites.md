@@ -20,12 +20,13 @@ ms.search.validFrom: 2022-02-28
 
 This article describes how to create Commerce product catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answers to frequently asked questions about Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
-> [!NOTE]
-> This article applies to Dynamics 365 Commerce version 10.0.27 and later releases.
-
 You can use Commerce catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for each B2B online store, as shown in the following illustration.
 
 ![Commerce product catalogs preview.](./media/Commerce_Catalogs.png)
+
+> [!NOTE]
+> This article applies to Dynamics 365 Commerce version 10.0.27 and later releases. 
+> Once this feature is enabled, it's important requirement to have at least one catalog associated with every B2B Partner organization (Customer hierarchy), otherwise even successfully onboarded and signed-in B2B partners (website visitors) would not be able to find any categories or products and they shall see a message 'No catalogs found, please contact system administrator.'
 
 Commerce product catalogs let you define the following information:
 
