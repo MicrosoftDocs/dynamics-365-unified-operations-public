@@ -6,7 +6,7 @@ ms.author: gfedorova
 ms.reviewer: kamaybac
 ms.search.form: WHSWarehouseInitiationWizard, WHSManagementInitiationWizard, WHSImplementationWorkspace, WHSImplementationTaskListPage
 ms.topic: how-to
-ms.date: 11/09/2022
+ms.date: 06/01/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -41,7 +41,7 @@ You must start by creating at least one implementation task project. You can add
     - **New project** – Enter a name for the new project.
     - **Copy existing project** – Choose whether to create a new blank project or to start by copying an existing project. Select one of the following values:
         - *No* – Create a new, blank project.
-        - *Yes* – Copy an existing project. When you select this option, two new settings are added to the dialog. From **Project to copy**, select the project you want to copy. Set **Copy tasks** to Yes to copy all tasks from the selected project; set to *No* to <!--KFM: What am I copying if not the tasks? What other content is there to copy? -->.
+        - *Yes* – Copy an existing project.
 1. Select **OK** to create the new task and close the drop-down dialog.
 
 ### Import the default configuration task list
@@ -98,7 +98,7 @@ When your task list is ready, follow these steps to work through it.
     - **Filter** – To quickly find a specific task in a long list, enter a value here, and then select the column where that value should be found.
     - **Hide completed tasks** or **Show completed tasks** – Select whether to hide or show tasks that have already been completed. The button label changes, depending on whether completed tasks are currently shown or hidden.
 
-    To view the full task list (including both completed and non-completed tasks), on the **Links** FastTab, select the **All tasks** link. The page that appears is the same page that appears when you select the **Warehouse implementation tasks** tile on the **Summary** FastTab. It provides the same information as, and works like, the **Task list** FastTab on the **Warehouse implementation tasks** page. <!--KFM: The **All tasks** page is strange. Completed tasks are always hidden with no way to show them. Tasks are duplicated, with one for each project. The number on the tile is strange.-->
+    To view the full task list (including both completed and non-completed tasks), on the **Links** FastTab, select the **All tasks** link. The page that appears is the same page that appears when you select the **Warehouse implementation tasks** tile on the **Summary** FastTab. It provides the same information as, and works like, the **Task list** FastTab on the **Warehouse implementation tasks** page.
 
 1. Continue to work until all tasks are completed.
 
@@ -157,7 +157,7 @@ The following table summarizes the configurations that the wizard makes.
 | Locations | Create | <p>Locations are used to identify where items are stored, picked from, and put to in the warehouse. The wizard will create a receiving location for each warehouse that you select at the start of the wizard and use the name and location profile that you specify using the wizard.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other locations by going to **Warehouse management \> Setup \> Warehouse \> Locations**.</p> |
 | Work classes | Create | <p>Work classes are used to direct and/or limit the types of work order lines that a warehouse worker can process on a mobile device. The wizard will create a single work class and use the name that you specify.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work classes by going to **Warehouse management \> Setup \> Work \> Work classes**.</p> |
 | Location directives | Create | <p>Location directives are used to identify pick and put locations for inventory movement. The wizard will create a put location directive for each warehouse you that you select at the start of the wizard, and name each location directive using the name that you specify in the wizard prefixed with the name of the warehouse where it applies. Each created location directive will have a work order type of *Purchase orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other location directives by going to **Warehouse management \> Setup \> Location directives**.</p><p>For more information, see [Work with location directives](create-location-directive.md).</p> |
-| Work templates | Create | <p>Work templates are used to create warehouse work at various points in the system. The wizard will create a work template for each warehouse you that you select at the start of the wizard, and name each work template using the name that you specify prefixed with the name of the warehouse where it applies <!--KFM: Seems to create just one template, regardless of selected warehouses, with no prefix. Right? For sales, it creates one per warehouse. -->. Each created work template will have a work order type of *Purchase orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
+| Work templates | Create | <p>Work templates are used to create warehouse work at various points in the system. The wizard will create a work template using the name that you specify in the wizard. The work template will have a work order type of *Purchase orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
 
 Follow these steps to open and complete the inbound configuration wizard.
 
@@ -259,11 +259,13 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
 1. Select **Next** to continue. If you selected the **Make available at sorting location** option on the **Release container** page, then the **Sorting area** page opens. If you chose one of the other options on the **Release container** page, then skip this step. Make the following settings on the **Sorting area** page if it appears:
     - **Sort location** – Specify the name of the sorting location.
     - **Outbound sorting template** – Specify the name of the outbound sorting template.
-    - **Create work on position close** – Choose whether or not to create work after closing the position <!--KFM: a bit more detail would be nice. I'm not sure what a "position" is here. -->
+    - **Create work on position close** – Choose whether or not to create work after closing the position.
     - **Work template** – This setting is only shown if you set **Create work on position close** to *Yes*. Use it to specify the name of the work template used to create the work.
-    - **Sort final location** – This setting is only shown if you set **Create work on position close** to *No*. Use it to specify the name of the final sort location. <!--KFM: What is this for? -->
+    - **Sort final location** – This setting is only shown if you set **Create work on position close** to *No*. Use it to specify the name of the final sort location.
 
-1. Select **Next** to continue. If you selected the **Create work to move container from packing station to location** option on the **Release container** page, then the **Container staging area** page opens. If you chose one of the other options on the **Release container** page, then skip this step. If the **Container staging area** page appears, use the following fields to <!--KFM: What are we doing here? -->. Default values are suggested, but you can edit them as you require. <!--KFM: How is this different from the other staging area we set up? Why are the fields here called "Packing" while the other page uses "Sales"? Please review this step and all field descriptions. How do these settings differ from the identical settings provided on the **Final shipping area** page? -->
+    For more information about sorting, see [Outbound sorting](outbound-sorting.md).
+
+1. Select **Next** to continue. If you selected the **Create work to move container from packing station to location** option on the **Release container** page, then the **Container staging area** page opens. If you chose one of the other options on the **Release container** page, then skip this step. If the **Container staging area** page appears, use the following fields to set up a staging area for staging packed items before moving them to the final shipping area. Default values are suggested, but you can edit them as you require.
     - **Use staging area** – Select this checkbox if you will use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
     - **Location** – Specify the name of the staging location.
     - **Directive code** – Specify the name of the directive code for the shipping process. This value will be used in the shipping work template and location directive to link them together.
@@ -271,7 +273,7 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - **Packing put location directive** – Specify the name of the put location directive for the packing process.
 
 1. Select **Next** to continue.
-1. The **Final shipping area** page opens regardless of which options you chose earlier. Use the following fields to define names for the final shipping area in the outbound processes. Default values are suggested, but you can edit them as you require.<!--KFM: How do these settings differ from the identical settings provided on the **Container staging area** page? -->
+1. The **Final shipping area** page opens regardless of which options you chose earlier. Use the following fields to define names for the final shipping area in the outbound processes. Default values are suggested, but you can edit them as you require.
     - **Location** – Specify the name of the final shipping location.
     - **Directive code** – Specify the name of the directive code for the shipping process. This value will be used in the shipping work template and location directive to link them together.
     - **Packing work class** – Specify the name of the work class for the shipping process. This value will be used in the work template.
