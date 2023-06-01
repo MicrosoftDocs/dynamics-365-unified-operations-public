@@ -127,7 +127,7 @@ To generate a FAF for UAE, follow these steps.
 
 ### Special symbols in the value of text fields
 
-A comma (\,) is a special symbol in the FAF. If it is used in the value of any text field of the report, it's replaced with a space.
+A comma (\,) is a special symbol in the FAF. If it is used in the value of any text field of the report, it's replaced with a \";\".
  
 If char(10) or char(32) is included in the value of any text field of the FAF, it is excluded for the value in reporting.
 
