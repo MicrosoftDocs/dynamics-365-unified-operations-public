@@ -50,6 +50,15 @@ Yes. As soon as a user selects a specific catalog, the whole shopping journey be
 
 No, a B2B shopper isn't allowed to purchase from the default assortment. That assortment is intended only for anonymous browsing. If a B2B shopper is missing catalog assignments (pending updates from their administration), they won't be able to see any catalogs that they can choose from, and no category hierarchy will be visible.
 
+### A B2B shopper is getting 404s and no longer able to access the categories or products pages?
+
+As noted, if **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters, then it's mandatory to have at least one catalog associated with every customer hierarchy. And if B2B shopper is accessing a B2B catalog, that was previously accessible, confirm if the catalog is still valid and not expired or retracted by your organization. 
+
+### Upon getting a 404 page, for expired or invalid catalog, a B2B shopper is not getting redirected to catalog-picker page? 
+As a site administrator, please make sure to select catalog picker page in Extension-->Route and Save & Publish the changes in Site builder. 
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/28311449/0c179087-7fd3-442d-9435-6708c7760ca7)
+
+
 ### Can marketing content be curated for a product that is specific to a catalog?
 
 Currently, product enrichment is supported only at the site and channel level. In other words, if a product is enriched and is shared across multiple catalogs, the corresponding enriched product details page (PDP) for that product will be rendered in the same way across all catalogs for a given site. 
