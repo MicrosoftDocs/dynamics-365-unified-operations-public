@@ -121,6 +121,8 @@ To generate a FAF for UAE, follow these steps.
 3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only the **General Ledger Table** section of the report.
 4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
+[Example of a FAF dialog.](./media/uae-faf-ud.png)
+
 ## Implementation details
 
 ### Special symbols in the value of text fields
