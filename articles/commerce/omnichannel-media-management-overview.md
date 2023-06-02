@@ -40,7 +40,7 @@ To configure omnichannel media management features in your Commerce environments
 6. On the lower right, select **Enable now**.  
 
     > [!NOTE]
-    > During the pre-GA preview timeframe, if the **Feature state** column value for the **Enable omnichannel media assignment authoring UX** feature is **Preview**, then you'll need to submit an support request asking Microsoft to enable this feature flight for your environment. Once the feature flight support request is approved, you'll be able to complete the preceding step above. After enabling the feature, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, select **Omnichannel media management** in the left navigation pane, enter the CMS endpoint and CMS tenant code values that were provided by Microsoft Support in the feature flighting support request response, and then select **Save**.
+    > During the pre-GA preview timeframe, if the **Feature state** column value for the **Enable omnichannel media assignment authoring UX** feature is **Preview**, then you'll need to submit an support request asking Microsoft to enable this feature flight for your environment. Once the feature flight support request is approved, you'll be able to complete the preceding step above. After enabling the feature, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, select **Omnichannel media management** in the left navigation pane, enter the content management system (CMS) endpoint and CMS tenant code values that were provided by Microsoft Support in the feature flighting support request response, and then select **Save**.
 
 7. Go to **Distribution schedules** and run the **1110 (Global configuration)** job.
 8. At this stage you can use all authoring experiences to stage product media assignments, but nothing will flow through to headquarters, CSU databases, or end clients yet. For an existing environment migration, you may want to wait to proceed to step 9 until all of your media assignments are staged. For new or test environments, you can immediately proceed to step 9 now.
@@ -66,11 +66,11 @@ The following illustration shows the product media assignment architecture and d
 
 ```mermaid
 graph TD;
-A["Media Assignment UX<br>(Site builder or HQ)"]-->|Publish action|B["Content Management System (CMS)"];
-B-->|"'CMS to HQ omnichannel media sync' HQ batch job"|C["Commerce Headquarters (HQ) database"];
-C-->|"1040 (products) full data sync"|D["Commerce Scale Unit (CSU) database"];
+A["Media assignment UX<br>(Site builder or headquarters)"]-->|Publish action|B["CMS"];
+B-->|"'CMS to headquarters omnichannel media sync' headquarters batch job"|C["Headquarters database"];
+C-->|"1040 (products) full data sync"|D["CSU database"];
 C-->|"1040 (products) full data sync"|E["Product search index service"]
-D-->|"2-hour default cache"|F["End user experience<br>Point of Sale (POS) or e-Commerce website"]
+D-->|"2 hour default cache"|F["User experience<br>Point of sale (POS) or e-commerce website"]
 E-->|"Search index refresh"|F
 ```
 
