@@ -34,7 +34,7 @@ Article [Edit properties of an environment](/power-platform/admin/edit-propertie
 :::image type="content" source="media/ppi-edit-URL.png" alt-text="Editing the URL of a linked Dataverse environment." lightbox="media/ppi-edit-URL.png":::
 
 > [!TIP]
-> If you need a different URL for your Dataverse environment, consider deploying a  separate one from Power Platform Admin center and updating the URL there. Afterwards follow the steps in article [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecyle-connect-finops-existing-dv.md).
+> If you need a different URL for your Dataverse environment, consider deploying a  separate one from Power Platform Admin center and updating the URL there. Afterwards follow the steps in article [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
 
 ## Delete an environment from Power Platform admin center
 
