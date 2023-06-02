@@ -60,7 +60,9 @@ To configure omnichannel media management features in your Commerce environments
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
-On their way to user interfaces, product media assignments flow from site builder's CMS  to the headquarters database and then to the CSU database(s). The following illustration shows this architecture and dataflow.
+On their way to user interfaces, product media assignments flow from site builder's content management system (CMS) to the headquarters database, and then to the CSU database(s).
+
+The following illustration shows the product media assignment architecture and dataflow.
 
 ```mermaid
 graph TD;
