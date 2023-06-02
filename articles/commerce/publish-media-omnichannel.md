@@ -67,7 +67,7 @@ To use a publish group for product media assignments, follow these steps.
 
 [Work with publish groups](publish-groups.md)
 
-[Schedule a publish group to go live].(publish-groups.md#schedule-a-publish-group-to-go-live)
+[Schedule a publish group to go live](publish-groups.md#schedule-a-publish-group-to-go-live)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
