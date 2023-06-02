@@ -122,14 +122,30 @@ The **Warehouse management > Workspaces > Warehouse integration monitoring** pag
 
 # Inbound shipment orders
 
-**Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represents information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed **inventory transactions** as well as any associated **warehouse work**.
+**Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represents information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed information about the **Receiving status**, **inventory transactions**, as well as any associated **warehouse work**. The **Receiving status** gets as well maintained on the order header and can be used to follow the inbound progress of the orders. The following **Receiving status** values are available:
+
+- _Open_ - No quantities has been **Receiving completed**
+- _Partially received_ - Partly quantities has been **Receiving completed**
+- _Received_ - All quantities has been **Receiving completed**
+
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal purchase order document. No financial postings as part of the [**General ledger**](../../finance/general-ledger/general-ledger.md) will be used for this source document.
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the _Order number prefix/suffix_ options.
 
 # Outbound shipment orders
 
-**Warehouse management > Inquiries and reports > Outbound shipment orders** are documents that represents information about the requested product dispatch. The **Outbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed **inventory transactions** as well as any associated **warehouse work**.
+**Warehouse management > Inquiries and reports > Outbound shipment orders** are documents that represents information about the requested product dispatch. The **Outbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed information about **Release status**, **Shipment status**, **inventory transactions**, as well as any associated **warehouse work**. The **Release status** and **Shipment status** gets as well maintained on the order header and can be used to follow the outbound progress of the orders. The following states are available for the **Release status**:
+
+- _Open_ - No quantities has been [released to warehouse](release-to-warehouse-process.md)
+- _Partially released_ - Partly quantities has been [released to warehouse](release-to-warehouse-process.md)
+- _Released_ - All quantities has been [released to warehouse](release-to-warehouse-process.md)
+
+And the following states are available for the **Shipment status**:
+
+- _Open_ - No quantities has been shipped confirmed
+- _Partially shipped_ - Partly quantities has been shipped confirmed
+- _Shipped_ - All quantities has been shipped confirmed
+
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the _Order number prefix/suffix_ options.
 
@@ -148,7 +164,8 @@ The high-level process for inbound processing is as following:
 
 - External systems provides _Inbound shipment order_ messages
 - The messages get processed in _Supply Chain Warehouse-only mode_ and orders get created
-- Inbound loads gets created manually via **Inbound load planning workbench**, via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
+- Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
+  52,43: 1. Go to **Warehouse management > Loads > Inbound load planning workbench**), via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
 - Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes:
 
   - _License plate receiving (and put away)_
