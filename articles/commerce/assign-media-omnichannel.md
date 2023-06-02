@@ -67,16 +67,7 @@ You can assign media in a hierarchical fallback structure across channels and lo
 
 The following illustration shows the fallback order for channel and locale media assignments.
 
-```mermaid
-  flowchart TD;
-      A[fa:fa-globe Client UX channel+locale]-->|request| B("Specific channel+locale (exact match)")
-      B-->|if not found| C("Omnichannel+language_id (language-only match)")
-      C-->|if not found| D("Omnichannel+Neutral (default)")
-      style A fill:#B3EC98
-      style B fill:#e4f1f7
-      style C fill:#cae3ef
-      style D fill:#afd5e7
-```
+:::image type="content" source="media/OMM_2.png" alt-text="Illustration showing the fallback order for channel and locale media assignments.":::
 
 > [!NOTE]
 > The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace. Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments across all channels.
@@ -87,16 +78,7 @@ Product masters typically have one or more product dimensions (color, size, styl
 
 The following illustration shows the fallback order for product master, product dimension(s), and product variant media assignments.
 
-```mermaid
-  flowchart TD;
-      A[fa:fa-globe Client UX]-->|request product variant| B("Specific product variant media assignment match (example: color=blue, style=slim, size=large)")
-      B-->|if not found| C("Specific product dimension(s) media assignment match (example: color=blue, style=slim, ignore size)")
-      C-->|if not found| D("Product master media assignment (default)")
-      style A fill:#B3EC98
-      style B fill:#e4f1f7
-      style C fill:#cae3ef
-      style D fill:#afd5e7
-```
+:::image type="content" source="media/OMM_3.png" alt-text="Illustration showing the fallback order for product master, product dimension(s), and product variant media assignments.":::
 
 > [!NOTE]
 > The fallback diagrams above for both product master and channel+locale media assignments illustrate the effective fallback logic, but not the actual runtime behavior. All fallback logic is processed and flattened when media assignments are published so that no unnecessary fallback processing occurs at the time of request that could impact performance. Assigning media at any level of this hierarchy will have no impact on performance between one level to the next.
@@ -192,6 +174,30 @@ To assign a default image for a channel-specific category, follow these steps.
 [Publish media assignments](publish-media-omnichannel.md)
 
 [Copy omnichannel content between tenants](copy-content-between-tenants.md)
+
+
+
+```mermaid
+  flowchart TD;
+      A[fa:fa-globe Client UX channel+locale]-->|request| B("Specific channel+locale (exact match)")
+      B-->|if not found| C("Omnichannel+language_id (language-only match)")
+      C-->|if not found| D("Omnichannel+Neutral (default)")
+      style A fill:#B3EC98
+      style B fill:#e4f1f7
+      style C fill:#cae3ef
+      style D fill:#afd5e7
+```
+
+```mermaid
+  flowchart TD;
+      A[fa:fa-globe Client UX]-->|request product variant| B("Specific product variant media assignment match (example: color=blue, style=slim, size=large)")
+      B-->|if not found| C("Specific product dimension(s) media assignment match (example: color=blue, style=slim, ignore size)")
+      C-->|if not found| D("Product master media assignment (default)")
+      style A fill:#B3EC98
+      style B fill:#e4f1f7
+      style C fill:#cae3ef
+      style D fill:#afd5e7
+```
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
