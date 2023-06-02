@@ -21,37 +21,40 @@ This article describes how to publish media assignments using omnichannel media 
 
 Publishing product and category media assignments involves several automatic, sequential steps that happen in the background. The content management system (CMS) first publishes all the media library items (images, videos, and documents) that are assigned to a product or category. This is the same as going to the Commerce site builder **Media library** and selecting **Publish** for each assigned media item. After the CMS publishes all media library items, each media item has its own public CMS URL. Next, the product (or category) assignments and fallback defaults are flattened and stored in the headquarters SQL database via a batch job. Then, the headquarters data sync jobs push the flattened media assignments to Commerce Scale Unit (CSU) database(s) across configured channels. The CSU architecture has a two hour rolling cache for product and category merchandising data from its own database. 
 
-The time it takes for product and category media assignments to appear for site users after a **Publish** action depends on these factors
-    - The number of media items and assignments for the publish action.
-    - The frequency of the headquarters omnichannel media batch job in headquarters.
-    - The frequency of the headquarters -> CSU data sync jobs in headquarters.
-    - The default two hour cache for CSU merchandising data.
+The time it takes for product and category media assignments to appear for site users after a **Publish** action depends on the following factors:
+
+- The number of media items and assignments for the publish action.
+- The frequency of the headquarters omnichannel media batch job in headquarters.
+- The frequency of the headquarters -> CSU data sync jobs in headquarters.
+- The default two hour cache for CSU merchandising data.
 
 To publish product (or category) media assignments, follow these steps.
 
 1. Navigate to the **Product media** assignments view in either site builder's **Omnichannel content** workspace, or to the same view in headquarters via the **Product media assignments** button in the released products by category view.
-2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
-3. Ensure that the product (or category) isn't still being edited.  If it's still being edited, and the edits are yours, then select **Finish editing** to check in the changes to the CMS.  If someone else is editing the media assignments, then ask them to check in their changes (or if necessary, you can **Discard edits** to return to the previously checked-in media assignments).
-4. Select the **Publish** button on the action bar at the top.  For products, this will publish all draft media assignments in **Master**, **Dimensions**, and **Variants** for the selected product.
-5. The first time you publish media assignments you'll see a dialog explaining the sequential publish behavior described in the [paragraph above](#publish-media-assignments). To skip this dialog for future publish actions, select the **Don't show this message again** checkbox, and then select **I understand**.
-6. If the media assignments reference any unpublished CMS items, you'll see a dialog listing the unpublished dependencies. Select the **Publish all** to automatically publish the unpublished CMS item dependencies.
-7. The assignments are now **Published**, and will appear for channel-specific end-users after the configured headquarters batch jobs, CSU data-sync, and CSU cache schedule are completed.
+2. In the search box on the left, search for a product (or category) using its name or product ID, and then select it.
+3. Check that the product (or category) isn't still being edited. If it's still being edited, and the edits are yours, then select **Finish editing** to check in the changes to the CMS. If someone else is editing the media assignments, then ask them to check in their changes. Or, if necessary, select **Discard edits** to return to the previously checked-in media assignments.
+4. Select **Publish**. For products, this will publish all draft media assignments in **Master**, **Dimensions**, and **Variants** for the selected product.
+5. The first time you publish media assignments, you'll see a dialog box that explains the sequential publish behavior described earlier in this article. To skip this dialog box for future publish actions, select the **Don't show this message again** checkbox, and then select **I understand**.
+6. If the media assignments reference any unpublished CMS items, a dialog box will appear that lists the unpublished dependencies. Select **Publish all** to automatically publish the unpublished CMS item dependencies.
+
+Once the media assignments are published, they will appear for channel-specific site users after the configured headquarters batch jobs, CSU data sync, and CSU cache schedule are completed.
 
 ## Use publish groups for media assignments
 
-Omnichannel content (example: **Product media** assignments) can use site builder's publish group feature to trigger a publish action for a set of changes at a scheduled date and time.  For more information about the publish group feature, see [Work with publish groups](publish-groups.md).
+Omnichannel content (for example, product media assignments) can use site builder's publish group feature to trigger a publish action for a set of changes at a scheduled date and time. For more information about the publish group feature, see [Work with publish groups](publish-groups.md).
 
-To use a publish group for product media assignments, follow these steps:
-1. In the **Omnichannel content** workspace, select **Publish groups** in the left navigation panel.
+To use a publish group for product media assignments, follow these steps.
+
+1. In the **Omnichannel content** workspace, in the left navigation pane, select **Publish groups**.
 2. In the publish groups list view, select **New** on the command bar, enter a friendly name for your publish group, and then select **OK**.
-3. In the left navigation publish group context selector control (the default will be **Live site**), select your new publish group.  
-4. Go to **Product media** in the left navigation panel.
-5. Select and edit the product media assignments you wish to stage inside the publish group as you would normally. 
+3. In the navigation publish group context selector control on the left, select your new publish group. The default value is **Live site**.
+4. In the left navigation pane, go to **Product media**.
+5. Select and edit the product media assignments you want to stage inside the publish group, as you would normally. 
 
     > [!NOTE]
     > When you select **Edit product media** when working inside a publish group, the product media assignments are automatically added to the publish group context. You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
 
-6. When all edits are staged within the publish group, go to **Publish groups** in the left navigation panel and schedule your publish date and time using the same instructions explained in [Schedule a publish group to go live].(publish-groups.md#schedule-a-publish-group-to-go-live).
+6. When all edits are staged within the publish group, in the left navigation pane, go to **Publish groups** and schedule your publish date and time following the instructions in [Schedule a publish group to go live].(publish-groups.md#schedule-a-publish-group-to-go-live).
 
 ## Additional resources
 
