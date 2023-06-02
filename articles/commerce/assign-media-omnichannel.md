@@ -67,7 +67,7 @@ You can assign media in a hierarchical fallback structure across channels and lo
 
 The following illustration shows the fallback order for channel and locale media assignments.
 
-![Illustration showing the fallback order for product master, product dimension(s), and product variant media assignments.](media/OMM_2.png)
+![Illustration showing the fallback order for channel and locale media assignments.](media/OMM_2.png)
 
 > [!NOTE]
 > The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace. Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments across all channels.
