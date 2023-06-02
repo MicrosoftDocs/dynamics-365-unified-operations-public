@@ -64,7 +64,7 @@ On their way to user interfaces, product media assignments flow from site builde
 
 The following illustration shows the product media assignment architecture and dataflow.
 
-:::image type="content" source="media/OMM_1.png" alt-text=" Illustration showing the product media assignment architecture and dataflow.":::
+![Illustration showing the product media assignment architecture and dataflow.](media/OMM_1.png)
 
 For more information, see [Publish media assignments](publish-media-omnichannel.md).
 
@@ -82,17 +82,5 @@ Starting with Commerce version 10.0.35, site builder contains an **Omnichannel c
 [Publish media assignments](publish-media-omnichannel.md)
 
 [Copy omnichannel content between tenants](copy-content-between-tenants.md)
-
-
-```mermaid
-graph TD;
-A["Media assignment UX<br>(Site builder or headquarters)"]-->|Publish action|B["CMS"];
-B-->|"'CMS to headquarters omnichannel media sync' headquarters batch job"|C["Headquarters database"];
-C-->|"1040 (products) full data sync"|D["CSU database"];
-C-->|"1040 (products) full data sync"|E["Product search index service"]
-D-->|"2 hour default cache"|F["User experience<br>Point of sale (POS) or e-commerce website"]
-E-->|"Search index refresh"|F
-```
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
