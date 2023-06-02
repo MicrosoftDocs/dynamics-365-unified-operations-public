@@ -2,7 +2,7 @@
 title: Publish media assignments
 description: This article describes how to publish media assignments using omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 5/26/2023
+ms.date: 6/01/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -19,9 +19,16 @@ ms.search.validFrom: 2023-03-01
 
 This article describes how to publish media assignments using omnichannel media management in Microsoft Dynamics 365 Commerce.
 
-Publishing product and category media assignments involves several automatic sequential steps that happen in the background. The content management system (CMS) first publishes all the media library items (images, videos, documents, etc.) that are assigned to a product or category. This is the same as going to the **Media library** and selecting **Publish** for each assigned media item. After this step, the individual media items each have public CMS URLs. Next, the product (or category) assignments and fallback defaults are flattened and stored in the headquarters SQL database via batch job. Then, the headquarters data-sync jobs push the flattened media assignments to Commerce Scale Unit (CSU) database(s) across configured channels. The CSU architecture has a two-hour rolling cache for product and category merchandising data from its own database. To summarize, the time for product and category media assignments to appear for end users after a **Publish** action depends on these factors: 1) the number of media items and assignments for the publish action, 2) the frequency of the headquarters omnichannel media batch job in headquarters, 3) the frequency of the headquarters -> CSU data sync jobs in headquarters, 4) the default 2-hour cache for CSU merchandising data.
+Publishing product and category media assignments involves several automatic, sequential steps that happen in the background. The content management system (CMS) first publishes all the media library items (images, videos, and documents) that are assigned to a product or category. This is the same as going to the Commerce site builder **Media library** and selecting **Publish** for each assigned media item. After the CMS publishes all media library items, each media item has its own public CMS URL. Next, the product (or category) assignments and fallback defaults are flattened and stored in the headquarters SQL database via a batch job. Then, the headquarters data sync jobs push the flattened media assignments to Commerce Scale Unit (CSU) database(s) across configured channels. The CSU architecture has a two hour rolling cache for product and category merchandising data from its own database. 
 
-To publish product (or category) media assignments, follow these steps:
+The time it takes for product and category media assignments to appear for site users after a **Publish** action depends on these factors
+    - The number of media items and assignments for the publish action.
+    - The frequency of the headquarters omnichannel media batch job in headquarters.
+    - The frequency of the headquarters -> CSU data sync jobs in headquarters.
+    - The default two hour cache for CSU merchandising data.
+
+To publish product (or category) media assignments, follow these steps.
+
 1. Navigate to the **Product media** assignments view in either site builder's **Omnichannel content** workspace, or to the same view in headquarters via the **Product media assignments** button in the released products by category view.
 2. Search for a product (or category) using its name or product ID in the search view on the left, and select it.
 3. Ensure that the product (or category) isn't still being edited.  If it's still being edited, and the edits are yours, then select **Finish editing** to check in the changes to the CMS.  If someone else is editing the media assignments, then ask them to check in their changes (or if necessary, you can **Discard edits** to return to the previously checked-in media assignments).
