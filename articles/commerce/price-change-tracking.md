@@ -80,7 +80,7 @@ Price changes are recorded in the **RetailPriceChangeTracking** table, as descri
 
 For customer environments where pricing or product data is updated very frequently (for example, more than one line per second), Microsoft recommends that you extensively test the price change feature to assess performance implications before you enable it in your production environment.
 
-When you make large-scale changes (for example, bulk data migration), Microsoft recommends that you temporarily remove all legal entities from the price change tracking setting before the changes, and then add them back after the changes are completed. In this way, the system mitigates the performance impact by making a one-time full refresh instead of tracking every single line change.
+When you make large-scale changes (for example, bulk data migration), Microsoft recommends that you temporarily remove all legal entities from the price change tracking setting before the changes. Then add them back after the changes are completed. In this way, the system mitigates the performance impact by making a one-time full refresh instead of tracking every single line change.
 
 ## Additional resources
 
