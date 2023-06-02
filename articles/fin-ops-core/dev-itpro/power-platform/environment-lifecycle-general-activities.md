@@ -47,4 +47,4 @@ It it not possible to delete a linked environment from Power Platform admin cent
 The Lifecycle services (LCS) portal can still be used to delete a finance and operations apps environment, the process is not changed.
 
 > [!NOTE]
-> When the finance and operations apps environment is deleted, the linked Dateverse environment is **not** automatically deleted. However, the link is removed and the environment can be further deleted from Power Platform admin center.
+> When the finance and operations apps environment is deleted, the linked Dateverse environment is **not** automatically deleted. However, the link is removed and the environment can be further deleted from [Power Platform admin center](/power-platform/admin/delete-environment).
