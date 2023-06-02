@@ -40,14 +40,13 @@ Another example is a more SCM integrated implementation methodology, having the 
 
 And then everything between the two above example deployment options, which for example could be running a dedicated legal entity within an existing D365 SCM deployment which only handles the warehouse management processes for external systems. All-in-all you can use the **Supply Chain Management in warehouse-only mode** exactly as needed.
 
-## <a name="feature-management"></a>Feature management>
+## <a name="feature-management"></a>Feature management
 
 To use the **Supply Chain Management warehouse-only mode** capability, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.35 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
 
 - The feature that's named **(Preview) Supply Chain Management warehouse-only mode** must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - In version 10.0.35 this will require enablement of the flight: **_WHSWarehouseOrdersConfigurationFeature_**
 - With the feature enabled you can open the **Warehouse management > Setup > Warehouse management integration > Source systems** used to define the integration systems. To enable all the functionalities, you must at least insert one record into this entity.
 
 ## Data exchange
@@ -164,13 +163,13 @@ The high-level process for inbound processing is as following:
 
 - External systems provides _Inbound shipment order_ messages
 - The messages get processed in _Supply Chain Warehouse-only mode_ and orders get created
-- Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
-  52,43: 1. Go to **Warehouse management > Loads > Inbound load planning workbench**), via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
+- Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
 - Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes:
 
   - _License plate receiving (and put away)_
   - _Load item receiving (and put away)_
   - _Mixed license plate receiving (and put away)_ for source document line identification method _Load item receiving_
+
 - **Receiving completed** processes will follow related to a load which will update the load status to _Received_ and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
 - The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
 - The _Inbound shipment orders_ get finalized by running the periodic back-ground process **Post shipment receipts**.
@@ -438,6 +437,18 @@ The _Outbound shipment order_ requires to create an address. For this to happen 
 - ConsigneeCountryRegionId
 - ReceiverName
 - ReceiverCountryRegionId
+
+## Why do I see all the modules and not only the needed for warehouse management processes?
+
+The **Supply Chain Management Warehouse-Only Mode** is part of the larger Microsoft Dynamics Supply Chain Management deployment and thereby enabling you to use all the integration points being part of this. To limit the access to processes you must assign [**roles**](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security) only related to warehouse management processes, this will limit the access to other areas of the product.
+
+- _Warehouse manager_ - Enables and reviews processes, maintains master data, and responds to inquiries
+- _Warehouse mobile device user_ - Used to access the Warehouse Mobile Devices Portal service
+- _Warehouse planner_ - Setup and planning processes
+- _Warehouse system integration operator_ - Setup integration processes related to inbound and outbound shipment orders
+- _Receiving clerk_ - Working with inbound processes
+- _Shipping clerk_ - Working with outbound processes
+- _Warehouse worker_ - Working with daily warehouse processes
 
 <!-- perlynne
 ### Warehouse management initiation wizard
