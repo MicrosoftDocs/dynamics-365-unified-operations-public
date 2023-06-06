@@ -114,7 +114,6 @@ To generate a FAF for UAE, follow these steps.
     | Group by main account | Select this checkbox to group general ledger account entries by main account on the report. When this checkbox is selected, the amounts in **General Ledger Table** section of the report that are reported for each main account are represented as aggregated amounts, where aggregation is done by the `TransactionDate` and `TransactionID` fields. |
     | Include reversed | Select this checkbox if a reversed transaction must be reported. This parameter affects only the **General Ledger Table** section of the report. |
     | Posting layer(s) | Select one or more posting layer transactions to include on the report. If you leave this field blank, all the posting layers are reported. This parameter affects only the **General Ledger Table** section of the report. |
-    | Sales tax specification | Select this checkbox to report the standard GST codes that are [associated with the GST codes in Finance](#tax-codes) in the `TaxCode` field of the **Purchase Listing Table (PurchaseLines)** and **Supply Listing Table (SupplyLines)** sections of the report. If this checkbox is cleared, the GST codes that are set up and used in Finance are reported in the `TaxCode` field of the **Purchase Listing Table (PurchaseLines)** and **Supply Listing Table (SupplyLines)** sections of the report. |
     | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
     | Include invoices by | Data that is reported in the **Purchase Listing Table** and **Supply Listing Table** sections of the report is filtered according to the dates that are specified in the **From date** and **To date** fields. Use the **Include invoices by** parameter to define which field of the data this filter must be applied to. The following options are available: **Invoice Date**, **Tax transaction date**, and **Date of VAT register**. The **Date of VAT register** option is available only when the [Date of VAT register](emea-tax-point-date.md) feature is enabled. |
 
@@ -129,7 +128,7 @@ To generate a FAF for UAE, follow these steps.
 
 A comma (\,) is a special symbol in the FAF. If it is used in the value of any text field of the report, it's replaced with a \";\".
  
-If char(10) or char(32) is included in the value of any text field of the FAF, it is excluded for the value in reporting.
+If char(10) or char(13) is included in the value of any text field of the FAF, it is excluded for the value in reporting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
