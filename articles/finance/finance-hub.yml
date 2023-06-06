@@ -158,6 +158,14 @@ additionalContent:
         text: Main account types
       - url: /dynamics365/finance/general-ledger/financial-dimensions
         text: Financial dimensions
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+        text: Overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+        text: Organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+        text: Workflow system    
     - title: Accounts payable
       links:
       - url: /dynamics365/finance/accounts-payable/accounts-payable
@@ -202,14 +210,6 @@ additionalContent:
         text: Map a cost element dimension
       - url: /dynamics365/finance/cost-accounting/overhead-calculation
         text: Overhead calculation
-    - title: Electronic messaging
-      links:
-      - url: /dynamics365/finance/general-ledger/electronic-messaging
-        text: Overview
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-work-with-em
-        text: Work with electronic messages
-      - url: /dynamics365/finance/general-ledger/electronic-messaging-example
-        text: Electronic messaging reporting
     - title: Fixed assets
       links:
       - url: /dynamics365/finance/fixed-assets/fixed-assets
@@ -278,14 +278,6 @@ additionalContent:
         text: Configure and send email
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
         text: Customize the Open in Microsoft Office menu 
-    - title: Organization administration
-      links:
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
-        text: Overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
-        text: Organizational hierarchies
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
-        text: Workflow system
   - title: Related products
     items:
         # Card
