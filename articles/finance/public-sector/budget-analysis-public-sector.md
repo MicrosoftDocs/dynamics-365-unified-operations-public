@@ -94,9 +94,5 @@ If the grids are empty in the **Budget analysis** page, try the following action
 ## How do I see updated numbers in the columns when I change the dimension set, dates, posting layers, and other settings?
 After you change the settings at the top of the page, click **Update totals** to see the results of your query.
 
-## Feature: Budget control statistics date range enhancements
-This feature provides a new view to display only actual amounts inside the date range that's provided on the **Budget control statistics** inquiry. This feature is turned on by default in the 2022 Wave 2 release. 
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
