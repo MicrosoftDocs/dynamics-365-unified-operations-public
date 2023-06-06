@@ -1,6 +1,6 @@
 ---
 title: Assign media to products and categories
-description: This article describes how to assign media to products and categories using omnichannel media management in Microsoft Dynamics 365 Commerce.
+description: This article describes how to assign media to products and categories by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 06/02/2023
 ms.topic: overview
@@ -18,152 +18,155 @@ ms.search.validFrom: 2023-03-01
 [!include[banner](../includes/preview-banner.md)]
 [!include[banner](../includes/production-ready-preview-banner.md)]
 
-This article describes how to assign media to products and categories using omnichannel media management in Microsoft Dynamics 365 Commerce.
+This article describes how to assign media to products and categories by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
-> The following procedures assume that the you have already configured omnichannel media management features in your Commerce environments by following the steps in [Omnichannel media management prerequisites and configuration](omnichannel-media-management-overview.md#omnichannel-media-management-prerequisites-and-configuration).
+> The following procedures assume that you've already configured omnichannel media management features in your Commerce environments by following the steps in [Omnichannel media management prerequisites and configuration](omnichannel-media-management-overview.md#omnichannel-media-management-prerequisites-and-configuration).
 
 ## Assign media to simple products
 
-For simple products, there are two media assignment scopes available: **Primary media** and **Additional media**.
+For simple products, two media assignment scopes are available: **Primary media** and **Additional media**.
 
 ### Primary media
 
-The **Primary media** assignment scope is used for media assignments that should always display in a product's media gallery UX, for example, a POS media gallery or an e-commerce product details page (PDP) media gallery. Media items in the **Primary media** assignment scope have a specific display order, and can be rearranged using the up or down arrows on each media item, or by dragging and dropping media items to their correct positions. The highest ordered image in the **Primary media** assignment scope is treated as the product's default image for scenarios where the entire media gallery experience isn't needed.
+The **Primary media** assignment scope is used for media assignments that should always appear in the user experience for a product's media gallery. Examples include a POS media gallery or an e-commerce product details page (PDP) media gallery. Media items in the **Primary media** assignment scope have a specific display order. They can be rearranged by using the up or down arrow button on each media item, or by dragging media items to their correct position. In scenarios where the whole media gallery experience isn't required, the image that has the highest order in the **Primary media** assignment scope is treated as the product's default image.
 
 > [!NOTE]
-> The default image returned by core data action APIs (for example, get-simple-products) for UX scenarios like category pages, search results, or any other list view, will be the highest ordered media item in the **Primary media** assignments scope that is an image. For example, any media item that isn't an image is skipped, and the first image found in the **Primary media** ordered assignments is returned as the default image for the product.
+> For user experience scenarios such as category pages, search results, or any other list view, the default image that core data action APIs (for example, get-simple-products) return is the media item that has the highest order in the **Primary media** assignment scope and that's an image. For example, any media item that isn't an image is skipped, and the first image that's found in the **Primary media** ordered assignments is returned as the default image for the product.
 
 To assign media to a product's **Primary media** assignment scope, follow these steps.
 
-1. Go to the **Product media** assignments view in the Commerce site builder **Omnichannel content** workspace, or to the same view in Commerce headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search view on the left, search for a product using its name or product ID, and then select it.
-1. On the upper right, select **Edit product media**.
-1. In the **Master \> Primary media** section, select **Add media**.  
-1. Select one or more media items from the media library picker, then select **Apply**. Alternatively, you can also upload new media by selecting **Upload** on the upper left of the media picker.
-1. Use the up and down arrows, or drag and drop, to reorder the media in the **Primary media** assignments.
-1. Select **Finish editing** on the upper right to check in your changes. This action won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing. 
+1. In the Commerce site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in Commerce headquarters by selecting **Product media assignments** in the **Released products by category** view (**Modules \> Retail and Commerce \> Products and categories \> Released products by category**).
+1. In the search field on the left, search for a product by its name or product ID. Then select it.
+1. In the upper right, select **Edit product media**.
+1. On the product's **Master** tab, in the **Primary media** section, select **Add media**.
+1. In the media library picker, select one or more media items. Then select **Apply**. Alternatively, you can upload new media by selecting **Upload** in the upper left of the media picker.
+1. To reorder the media in the **Primary media** assignments, use the up and down arrow buttons, or drag the media items to their correct position.
+1. In the upper right, select **Finish editing** to check in your changes. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ### Additional media
 
-The **Additional media** assignment scope is used for media assignments that have a purpose outside of a standard product media gallery. **Additional media** items have a **Purpose** string property that indicates its intended use. Typical **Additional media** purposes include product manuals, spec sheets, media kits, or any other custom media assignment purpose needed outside of the primary media gallery. Any alphanumeric string can be set as an **Additional media** item's **Purpose** property, and then accessed via Commerce SDKs, APIs, and data actions for extensibility scenarios.
+The **Additional media** assignment scope is used for media assignments that have a purpose outside a standard product media gallery. **Additional media** items have a **Media purpose** string property that indicates its intended use. Typical **Additional media** purposes include product manuals, spec sheets, media kits, and any other custom media assignment purpose that's outside the primary media gallery. Any alphanumeric string can be set as the value of an **Additional media** item's **Media purpose** property. That string can then be accessed via Commerce software development kits (SDKs), APIs, and data actions for extensibility scenarios.
 
 To assign media to a product's **Additional media** assignment scope, follow these steps.
 
-1. Go to the **Product media** assignments view in either the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search view on the left, search for a product using its name or product ID, and then select it.
-1. Select **Edit product media** on the upper right.
-1. In the **Master \> Additional media** section, select **Add media**.  
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the search field on the left, search for a product by its name or product ID. Then select it.
+1. In the upper right, select **Edit product media**.
+1. On the product's **Master** tab, in the **Additional media** section, select **Add media**.
 1. Set the **Media purpose** property to the desired value.
-1. Select a media item from the media library picker, and then select **Apply**. Alternatively, you can also upload new media by selecting **Upload** on the upper left of the media picker.
-1. Select **Add media** at the bottom of the pane.
-1. Select **Finish editing** on the upper right to check in your changes. This action won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+1. In the media library picker, select a media item. Then select **Apply**. Alternatively, you can upload new media by selecting **Upload** in the upper left of the media picker.
+1. At the bottom of the pane, select **Add media**.
+1. In the upper right, select **Finish editing** to check in your changes. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ## Omnichannel, channel-specific, and locale-specific media assignments
 
-You can assign media in a hierarchical fallback structure across channels and locales. The default assignment for any product should use **Omnichannel** (for channels) and **Neutral** (for locales). These assignments are returned by default anywhere a more specific channel+locale combination isn't available. For channel+locale combinations that require different product media assignments than the default Omnichannel+Neutral assignments, specific channel+locale media assignments can be configured to override the default assignments. After a specific channel+locale media assignment for a product is created and published, the inheritance to the omnichannel combination is severed and all media assignments are controlled by the specific channel+locale media assignments.
+You can assign media in a hierarchical fallback structure across channels and locales. The default assignments for any product should be **Omnichannel** (for channels) and **Neutral** (for locales). These assignments are returned by default whenever a more specific combination of a channel and a locale isn't available. For channel and locale combinations that require different product media assignments than the default **Omnichannel** and **Neutral** assignments, specific channel and locale media assignments can be configured to override the default assignments. After a specific channel and locale media assignment is created and published for a product, the inheritance to the omnichannel combination is severed, and all media assignments are controlled by the specific channel and locale media assignments.
 
 The following illustration shows the fallback order for channel and locale media assignments.
 
-![Illustration showing the fallback order for channel and locale media assignments.](media/OMM_2.png)
+![Diagram showing the fallback order for channel and locale media assignments.](media/OMM_2.png)
 
 > [!NOTE]
-> The channel and locale/language context picker is located in the upper right of the **Product media** assignment workspace. Select **Omnichannel** (for channel) and **Neutral** (for locale) to configure default fallback media assignments across all channels.
+> The channel and locale/language context picker is in the upper right of the **Product media** assignment view. To configure default fallback media assignments across all channels, select **Omnichannel** (for channel) and **Neutral** (for locale).
 
 ## Product master, product dimension, and product variant media assignments
 
-Product masters typically have one or more product dimensions (color, size, style, configuration) that determine the complete set of possible variants for the product. Media assigned directly to the product master will serve as the default media for any product variants or dimensions that don't have their own explicit media assignments. When media assignments are created for product dimensions or specific product variants, the inheritance to the product master assignments is severed and all media assignments are controlled by the dimension(s) or specific product variant media assignments.
+Product masters typically have one or more product dimensions (color, size, style, or configuration) that determine the complete set of possible variants for the product. Media that are assigned directly to the product master serve as the default media for any product variants or dimensions that don't have their own explicit media assignments. When media assignments are created for product dimensions or specific product variants, the inheritance to the product master assignments is severed, and all media assignments are controlled by the dimensions or the specific product variant media assignments.
 
-The following illustration shows the fallback order for product master, product dimension(s), and product variant media assignments.
+The following illustration shows the fallback order for product master, product dimensions, and product variant media assignments.
 
-![Illustration showing the fallback order for product master, product dimension(s), and product variant media assignments.](media/OMM_3.png)
+![Diagram showing the fallback order for product master, product dimensions, and product variant media assignments.](media/OMM_3.png)
 
 > [!NOTE]
-> The fallback diagrams above for both product master and channel+locale media assignments illustrate the effective fallback logic, but not the actual runtime behavior. All fallback logic is processed and flattened when media assignments are published so that no unnecessary fallback processing that could impact performance occurs at the time of request. Assigning media at any level of this hierarchy will have no impact on performance between one level and the next.
+> Although the preceding fallback diagrams for channel and locale media assignments and product master media assignments show the effective fallback logic, they don't show the actual runtime behavior. All fallback logic is processed and flattened when media assignments are published, so that no unnecessary fallback processing that might affect performance occurs at the time of the request. Media can be assigned at any level of this hierarchy without affecting the performance between one level and the next.
 
-### Assign media to product master
+### Assign media to a product master
 
-Default media for a product master is assigned using the **Master** tab in the product media view, using the same steps described in [Assign media to simple products](#assign-media-to-simple-products). The only difference in assignment workflows between simple products and product masters is that product masters can have one or more dimensions (color, style, size, configuration) that define possible product variants for a master product. 
+Default media for a product master are assigned on the **Master** tab in the product media view. The steps are the same as the steps for [assigning media to simple products](#assign-media-to-simple-products). The only difference is that product masters can have one or more dimensions (color, style, size, or configuration) that define possible product variants for a master product.
 
 #### Product-specific swatches
 
-Prior to Commerce version 10.0.35, swatches were centrally managed in headquarters by assigning a color hexidecimal value or image to dimension values (for example, color|blue = #0000ff). This central management of swatch assignments doesn't change with the introduction of the media management features included in Commerce version 10.0.35 and later. However, version 10.0.35 introduced a capability to optionally assign product-specific swatches to override within product page experiences. Swatches used for filtering products in category page, search results, and list views still use the centrally managed swatch values configured for product dimension values. These centrally managed dimension-specific swatch assignments allow search refiners and filters to behave correctly across multiple products. However, for scenarios where more detailed swatches are wanted within a single product page, product-specific swatch overrides are available. Swatch overrides can be used to show things like product-specific fabric textures, multi-colored patterns, iconography, or anything else that might go beyond the generic swatch values needed for product list refiners spanning multiple products.
+Before Commerce version 10.0.35, swatches were centrally managed in headquarters by assigning a hexadecimal color value or image to dimension values (for example, **color|blue = #0000ff**). The introduction of the media management features in Commerce version 10.0.35 doesn't change this centralized management of swatch assignments. However, version 10.0.35 introduced a capability to optionally assign product-specific swatches as overrides in product page experiences.
+
+Swatches that are used to filter products in category page, search result, and list views still use the centrally managed swatch values that are configured for product dimension values. These centrally managed dimension-specific swatch assignments enable search refiners and filters to behave correctly across multiple products. However, for scenarios where more detailed swatches are desired on a single product page, product-specific swatch overrides are available. Swatch overrides can be used to show product-specific fabric textures, multi-colored patterns, iconography, or anything else that goes beyond the generic swatch values that are required for product list refiners that span multiple products.
 
 > [!NOTE]
-> If you plan to assign product-specific swatch assignments, it's important to ensure that swatch values are also assigned to the centrally managed list of dimension values in headquarters. This ensures that product list refiners and filters display correctly for experiences that return results spanning multiple products (for example, category pages, search results, and product lists). To configure centrally-managed swatch dimension assignments, follow the steps in [Configure dimension values in Commerce headquarters](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters).
+> If you plan to assign product-specific swatch overrides, make sure that swatch values are also assigned to the centrally managed list of dimension values in headquarters. In this way, you ensure that product list refiners and filters are shown correctly for experiences that return results that span multiple products (for example, category pages, search results, and product lists). To configure centrally managed swatch dimension assignments, follow the steps in [Configure dimension values in Commerce headquarters](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters).
 
 To assign product-specific swatches, follow these steps.
 
-1. Go to the **Product media** assignments view in the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search box on the left, search for a product using its name or product ID, and then select it.
-1. Select **Edit product media** on the upper right.
-1. On the product's **Master** tab, under **Additional Media**, in the **Swatches** section, select **Add swatch**.
-1. On the **Dimension group** drop-down menu, select the dimension group (for example, **Color**) that you want to assign.
-1. On the **Dimension** drop-down menu, select the dimension values (for example, **Blue**) that you want to assign. 
-1. On the **Swatch type** drop-down menu, select the swatch type that you want to assign. If using a hexidecimal code color value, select the the desired value on the color picker control, and then skip ahead to step 10. 
-1. If using an image, select **Add media** to upload an image, or select an image from the omnichannel media library.
-1. To select a cropped sample from a product image, toggle the **Use cropped sample of image** option to **On**. Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
-1. When finished, at the bottom of the pane, select **Add swatch**.  
-1. Repeat steps 4-10 for any additional dimension values.
-1. Select **Finish editing** on the upper right to check in your changes. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the search field on the left, search for a product by its name or product ID. Then select it.
+1. In the upper right, select **Edit product media**.
+1. On the product's **Master** tab, under **Additional media**, in the **Swatches** section, select **Add swatch**.
+1. On the **Dimension group** menu, select the dimension group to assign (for example, **Color**).
+1. On the **Dimension** menu, select the dimension values to assign (for example, **Blue**).
+1. On the **Swatch type** menu, select the swatch type to assign.
+1. If you're using a hexadecimal color value, select the desired value in the color picker control. Then skip ahead to step 11.
+1. If you're using an image, select **Add media** to upload an image, or select an image in the omnichannel media library.
+1. To select a cropped sample from a product image, set the **Use cropped sample of image** option to **On**. Then drag and resize the blue rectangle on the image preview to select the portion of the image to use for the swatch.
+1. When you've finished, at the bottom of the pane, select **Add swatch**.
+1. Repeat steps 4 through 11 for each additional dimension value.
+1. In the upper right, select **Finish editing** to check in your changes. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ### Assign media to product dimensions
 
-For product masters with multiple dimensions, it's common that media assignments are only needed for a subset of dimensions. For example, in the apparel industry it's common to take photos of different colors and styles of the same master product shirt, but not different photos for every size.  
+For product masters that have multiple dimensions, media assignments are typically required only for a subset of dimensions. For example, in the apparel industry, photos are usually taken for each color and style of the same master product shirt, but not for each size.
 
 To assign media to product dimensions, follow these steps.
 
-1. Go to the **Product media** assignments view in the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search box on the left, search for a product master using its name or product ID, and then select it. The product master you select must be configured in headquarters with more than one dimension.
-1. Select **Edit product media** on the upper right.
-1. Select the **Dimensions** tab at the top of the workspace.
-1. Select **Create assignment matrix** in the middle of the workspace. If someone has already created an assignment matrix for this product master, then skip ahead to step 7.
-1. Select the dimension(s) that you want to use for media assignments, and then select **Create assignment matrix** at the bottom of the pane. A grid matrix with your chosen dimensions appears.
-1. Select a cell in the grid to navigate to the assignment view for that dimension value.
-1. Edit your primary and additional media assignments for the chosen dimension combination using the **Add media** button and the trash can symbol that appears on each media item when selected. 
-1. Use the up and down arrows to reorder the media in the **Primary media** assignments. Alternatively, you can also drag and drop items to reorder media.
-1. When your changes are complete, select **Finish editing** on the upper right to check in the new set of media assignments. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the search field on the left, search for a product master by its name or product ID. Then select it. The product master that you select must be configured with more than one dimension in headquarters.
+1. In the upper right, select **Edit product media**.
+1. At the top of the workspace, select the **Dimensions** tab.
+1. In the center of the workspace, select **Create assignment matrix**. If someone has already created an assignment matrix for this product master, skip ahead to step 7.
+1. Select the dimensions to use for media assignments, and then, at the bottom of the pane, select **Create assignment matrix**. A grid matrix that has your selected dimensions appears.
+1. Select a cell in the grid to go to the assignment view for that dimension value.
+1. Edit the primary and additional media assignments for the selected dimension combination by using the **Add media** button and the trash can symbol that appears on each media item when it's selected.
+1. To reorder the media in the **Primary media** assignments, use the up and down arrow buttons, or drag the media items to their correct position.
+1. When you've completed your changes, in the upper right, select **Finish editing** to check in the new set of media assignments. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ### Assign media to product variants
 
-Assigning media to individual product variants disables the fallback logic for both dimension or master media assignments, and media assignments for the selected variant are entirely controlled at the variant level.
+If you assign media to individual product variants, you disable the fallback logic for both dimension media assignments and master media assignments. In this case, media assignments for the selected variant are controlled entirely at the variant level.
 
 To assign media to a specific product variant, follow these steps.
 
-1. Go to the **Product media** assignments view in the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search box on the left, search for a product master using its name or product ID, and then select it. The product master must be configured in headquarters with more than one dimension.
-1. Select **Edit product media** on the upper right.
-1. Select the **Variant** tab at the top of the workspace.
-1. Find the variant you want to edit, and in the **Assign media** column, select the plus (**+**) symbol (or the preview image, if media is already assigned). This action navigates you to the media assignment editing workspace for the chosen product variant.
-1. Edit your primary and additional media assignments for the chosen product variant using the **Add media** button and the trash can symbol that appears on each media item when selected. 
-1. Use the up and down arrows to reorder the media in the **Primary media** assignments. Alternatively, you can also drag and drop items to reorder media.
-1. When your changes are complete, select **Finish editing** on the upper right to check in the new set of media assignments. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the search field on the left, search for a product master by its name or product ID. Then select it. The product master that you select must be configured with more than one dimension in headquarters.
+1. In the upper right, select **Edit product media**.
+1. At the top of the workspace, select the **Variant** tab.
+1. Find the variant that you want to edit, and then, in the **Assign media** column, select the plus sign (**+**). Alternatively, if media are already assigned, select the preview image. You're taken to the media assignment editing workspace for the selected product variant.
+1. Edit the primary and additional media assignments for the selected product variant by using the **Add media** button and the trash can symbol that appears on each media item when it's selected.
+1. To reorder the media in the **Primary media** assignments, use the up and down arrow buttons, or drag the media items to their correct position.
+1. When you've completed your changes, in the upper right, select **Finish editing** to check in the new set of media assignments. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ## Preview product media assignments
 
-Omnichannel media assignments, by definition, can apply across a range of channels and user experiences (or example, POS devices or e-commerce PDPs). To preview media assignments that span multiple channels, the omnichannel product media workspace has a generic media gallery preview experience to validate how media should display for a product's primary media assignments.
+By definition, omnichannel media assignments can apply across a range of channels and user experiences (for example, POS devices or e-commerce PDPs). The omnichannel product media workspace has a generic media gallery preview experience that lets you preview media assignments that span multiple channels. In this way, you can validate how media should be shown for a product's primary media assignments.
 
 To preview primary product media assignments, follow these steps.
 
-1. Go to the **Product media** assignments view in the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-1. In the search box on the left, search for a product using its name or product ID, and then select it.
-1. Select **Preview** on the command bar to show the primary media preview interface. The default view shows any product master primary media in the media gallery preview.
-1. If the product is configured with dimensions, select different dimension values in the drop-down menus to preview the media gallery experience for different product variants.
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the search field on the left, search for a product by its name or product ID. Then select it.
+1. On the command bar, select **Preview** to show the primary media preview interface. The default view shows any product master primary media in the media gallery preview.
+1. If the product is configured with dimensions, select different dimension values on the dropdown menus to preview the media gallery experience for different product variants.
 1. Select **Close** to exit the preview experience.
 
 ## Category media assignments
 
-Commerce currently supports a single default image to be assigned to each channel-specific product category. Category media assignments are generally used for category navigation user experiences. Category media assignments are always channel-specific, which means that default media assignments aren't made at the omnichannel level like they can be for individual products.  
+Commerce currently supports the assignment of a single default image to each channel-specific product category. Category media assignments are generally used for category navigation user experiences. Category media assignments are always channel-specific. Therefore, default media assignments aren't made at the omnichannel level as they can be for individual products.
 
 To assign a default image for a channel-specific category, follow these steps.
 
-1. Go to the **Product media** assignments view in the site builder **Omnichannel content** workspace, or to the same view in headquarters using the **Product media assignments** button in the **Modules \> Retail and Commerce \> Products and categories \> Released products by category** view.
-2. On the upper right of the command bar, set the channel context picker to any channel other than **Omnichannel**.
-3. In the search box on the left, search for a known category name. Category records have the word **Category** underneath the name in the results list. Find the desired category and select it.
-4. In the media assignment workspace, on the upper right, select **Edit category media**.
-5. In the **Primary media** section, select **Add media**.
-6. Select (or upload) the category image to assign from the media picker, and then select **Apply**. 
-7. Select **Finish editing** on the upper right to check in the category media assignment. This won't publish your edits, but allows others within your organization to see staged changes and make additional edits prior to publishing.
+1. In the site builder **Omnichannel content** workspace, open the **Product media** assignment view. Alternatively, you can open the same view in headquarters by selecting **Product media assignments** in the **Released products by category** view.
+1. In the upper right of the command bar, set the channel context picker to any channel other than **Omnichannel**.
+1. In the search field on the left, search for a known category name. Category records have the word "Category" beneath the name in the list of search results. Find the desired category, and select it.
+1. In the media assignment workspace, in the upper right, select **Edit category media**.
+1. In the **Primary media** section, select **Add media**.
+1. Select (or upload) the category image to assign from the media picker, and then select **Apply**.
+1. In the upper right, select **Finish editing** to check in the category media assignment. Although this action doesn't publish your edits, it does enable other users in your organization to view staged changes and make additional edits before publication.
 
 ## Additional resources
 
