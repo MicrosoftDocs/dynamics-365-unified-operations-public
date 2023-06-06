@@ -32,7 +32,7 @@ The pre-upgrade checklist for the Dynamics 365 upgrade is included in AX 2012 R3
 - If you're upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025).
 
 > [!NOTE] 
-> If you're upgrading from AX 2012 R3, CU13 must be installed in your environment. If you're on an older version and can't upgrade to CU13, contact Microsoft Support.
+> If you're upgrading from AX 2012 R3, CU13 must be installed in your environment. If you're on an older version and have issues or concerns updating to CU13, contact Microsoft Support.
 
 ## Run the pre-upgrade checklist
 
@@ -42,7 +42,7 @@ To run the pre-upgrade checklist, follow these steps.
 
 If the checklist isn't shown, follow these steps.
 
-1. Open the Developer workspace, and go to **Display \> SysCheckList\_UpgradeToNextV**.
+1. Open the **Developer workspace**, and in the **AOT** go to **Menu Items \> Display \> SysCheckList\_UpgradeToNextV**.
 2. Select and hold (or right-click) **SysCheckList\_UpgradeToNextV**, and then select **Open**.
 
 You must run each of the following checklist tasks. 
