@@ -56,7 +56,7 @@ additionalContent:
         text: Set up users
       - url: /dynamics365/dev-itpro/sysadmin/role-based-security
         text: Set up roles     
-    - title: Administer 
+    - title: Configure 
       links:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Configure organization administration 
@@ -139,7 +139,15 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
-        text: Build extensible controls     
+        text: Build extensible controls    
+    - title: Lifecycle services  
+      links:      
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide
+        text: Lifecycle services user guide
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configuration-manager-lcs
+        text: Configuration in Lifecycle services     
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics  
+        text: Monitoring and diagnostics tools in Lifecycle services
   - title: Use Finance
     items:
     - title: Accounts payable
