@@ -1,5 +1,5 @@
-﻿---
-title: Bulk import and export of digital assets using manifests
+---
+title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 5/26/2023
@@ -12,41 +12,39 @@ ms.search.validFrom: 2023-03-01
 
 ---
 
-# Bulk import and export of digital assets using manifests
+# Bulk import and export digital assets using manifests
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
 This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 
-This article provides an overview of the manifest based asset import and export operations in the Microsoft Dynamics 365 Commerce site builder, describes the schema of the manifest and provides detailed examples of both import and export operations.
+This article provides an overview of the manifest based asset import and export operations in the Microsoft Dynamics 365 Commerce site builder, outlining the manifest schema of the and providing examples of both import and export operations.
 
-Manifest based asset import and export operations are initiated from the media library of the site builder. Import operation can be started by clicking "Bulk import" from the command bar. \[LINK TO MANIFEST IMPORT\] Export operation is started by selecting one or more assets and clicking "Bulk export" from the command bar. \[LINK TO MANIFEST EXPORT\]
-
-Manifest based operations always require (import) or produce (export) a manifest file, which is a tab limited text file listing all the assets that are part of that operation. \[LINK TO MANIFEST SCHEMA\] In the case of export operations, all the information of the assets is included in the manifest, including read-only metadata information such as when the asset was created and published. Import operations only require some of the fields to be entered for each asset and the rest are optional.
+Manifest-based asset import and export operations are initiated from the Commerce site builder media library. Manifest-based operations always require (for import) or produce (during export) a manifest file, which is a tab-limited text file listing all the assets that are part of that operation. \[LINK TO MANIFEST SCHEMA\] For export operations, all the asset information is included in the manifest, including read-only metadata information such as when the asset was created and published. Import operations only require some of the fields to be entered for each asset and the rest are optional.
 
 When imported, manifests documents are processed row by row and if processing of any of the rows fails for any reason, the description of the error is included in the resulting manifest which can be downloaded from the job details view. If one of multiple entries in the manifest fails, it does not prevent the rest of the manifest to be processed. If the error requires user to fix something, for example, if the http source url was incorrect in the first import and it is fixed now, the result manifest from the first run can be used to reprocess the failed assets.
 
-Main use cases for manifest driven asset import and export operations are:
+The main use cases for manifest-driven asset import and export operations are:
 
--   Uploading product media and other digital assets to the system during onboarding
--   Modifying asset metadata in bulk (e.g. adding specific keyword to large number of assets)
--   Performing search and replace operations on the metadata (e.g. rebranding)
--   Performing actions (e.g. publish, delete) in bulk
+-   Uploading product media and other digital assets to the system during onboarding.
+-   Modifying asset metadata in bulk (for example, adding specific keyword to large number of assets).
+-   Performing search and replace operations on the metadata (for example, rebranding).
+-   Performing actions (for example, publish, delete) in bulk.
 
 Manifests can also be used to import and export product media assignments. The schema used for product media assignments is an extended version of the plain asset management manifest schema. Product media assignments are explained in more detail in \[LINK TO NICK – PRODUCT MEDIA ASSIGNMENTS\]
 
-More details and examples can be found from \[LINK TO MANIFEST IMPORT\] and \[LINK TO MANIFEST EXPORT\]
+<!--More details and examples can be found from \[LINK TO MANIFEST IMPORT\] and \[LINK TO MANIFEST EXPORT\]-->
 
 ## Manifest schema
 
 Manifest documents are tab delimited unicode text files. First row of the manifest is a header row and contains the column names. After the header row, each row represents a single asset and its metadata. For initial ingestion of an asset, binary files (actual assets) have to be provided along with the manifest either as a local upload or as publicly accessible http source urls.
 
-After the manifest based import operation has completed, the imported manifest with import results and possible error information can be downloaded from "Jobs" menu and the "Past jobs" tab. Please see the four last rows in the schema description below for more information.
+After the manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from "Jobs" menu and the "Past jobs" tab. Please see the four last rows in the schema description below for more information.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)-->
 
-Schema for asset import / export
+The following table shows the schema for asset import/export operations.
 
 | Column name                          | Description                                                |
 |--------------------------------------|------------------------------------------------------------|
@@ -98,35 +96,24 @@ Sample asset manifests (Urls redacted/removed)
 
 Sample manifests have all been exported from an environment. They could be imported back (to that same environment) or imported to another environment after clearing the InternalMediaId, MediaChannel and MediaVersion fields.
 
-Mandatory fields for manifest import (for new asset)
+Mandatory fields for manifest import (for new assets):
 
--   MediaLocale
+- MediaLocale
+- MediaType
+- MediaImportPath
+- ImageAltText (for image assets)
+- MediaDisplayName
+- MediaTitle (for video assets)
 
--   MediaType
+Mandatory fields for manifest import (for existing assets):
 
--   MediaImportPath
-
--   ImageAltText (for image assets)
-
--   MediaDisplayName
-
--   MediaTitle (for video assets)
-
-Mandatory fields for manifest import (for existing asset)
-
--   InternalMediaId
-
--   MediaChannel
-
--   MediaLocale
-
--   MediaType
-
--   ImageAltText (for image assets)
-
--   MediaDisplayName
-
--   MediaTitle (for video assets)
+- InternalMediaId
+- MediaChannel
+- MediaLocale
+- MediaType
+- ImageAltText (for image assets)
+- MediaDisplayName
+- MediaTitle (for video assets)
 
 Columns can be in any order in the import manifest.
 
@@ -161,61 +148,65 @@ Schema extension for product media assignments
 | EntityVersion                       | Assignment version number                                                                                                    |
 | EntityPublishedOn                   | Date and time when the assignment was published                                                                              |
 
-For more information on swatches, please see \[LINK TO NICK – PRODUCT-SPECIFIC SWATCHES\]
+For more information on swatches, see \[LINK TO NICK – PRODUCT-SPECIFIC SWATCHES\]. For more information on media groups, please see \[LINK TO NICK – ASSIGN MEDIA TO SIMPLE PRODUCTS\].
 
-For more information on media groups, please see \[LINK TO NICK – ASSIGN MEDIA TO SIMPLE PRODUCTS\]
+## Import asset manifests 
 
-## Import assets manifests 
+Import operation can be started by clicking "Bulk import" from the command bar.
 
 Manifest based asset import operation targeting regular site is started from the media library in the commerce site builder by clicking "Bulk import" from the command bar.
 
-![A screenshot of a computer Description automatically generated with low confidence](media/image2.png)
+<!--![A screenshot of a computer Description automatically generated with low confidence](media/image2.png)-->
 
 Bulk import dialog is opened where the import job name and description can be modified. Job name is required, but the description is optional.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)These values don't have an impact on the actual import process, but they help users locate their job from the list of jobs. After entering name and description, clicking "Next" brings up the manifest selection view. Manifest file needs to be tab delimited text file, with a header row with specific column names and one or more rows of assets. \[LINK TO MANIFEST SCHEMA\] Manifest file will be uploaded from the local machine either by selecting "browse your computer" or dragging the file into the view from file explorer of the operating system.
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)-->
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)
+These values don't have an impact on the actual import process, but they help users locate their job from the list of jobs. After entering name and description, clicking "Next" brings up the manifest selection view. Manifest file needs to be tab delimited text file, with a header row with specific column names and one or more rows of assets. \[LINK TO MANIFEST SCHEMA\] Manifest file will be uploaded from the local machine either by selecting "browse your computer" or dragging the file into the view from file explorer of the operating system.
+
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)-->
 
 After selecting the manifest file, you need to specify if you need to upload local binaries with the manifest. This is not required if all of the assets in the manifest have source http url or they are existing assets and are updating metadata only.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)-->
 
 If you have new assets that you will be uploading from your local machine, tick the "Import using local files from my device"-box. Proceed to the next step with "Next".
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image6.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image6.png)-->
 
 This step is shown only if you indicated that you will be importing assets from local machine. Click "Browse" and select the folder that contains the assets that are associated with the manifest.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image7.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image7.png)-->
 
 After selecting the folder, you might see a confirmation dialogue that varies depending on the browser you are using. After reviewing the message, confirm by clicking "Upload" (could be "OK", "Yes" or something similar on depending on your browser).
 
-![A screenshot of a computer Description automatically generated with low confidence](media/image8.png)
+<!--![A screenshot of a computer Description automatically generated with low confidence](media/image8.png)-->
 
 The view is updated with the folder that you selected. Clicking "Next" takes you to the next step of the process.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image9.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image9.png)-->
 
 In the "Review and finish" step, you have all the information for the new bulk import job in the single view you to review. If you need to change any of the parameters, clicking "Edit" next to the information allows you to do that. Clicking "Begin import" will first upload the local files to the service (if selected) and then create a job for the bulk import.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image10.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image10.png)-->
 
 The local file upload may take time, depending on the amount and the file size of the asset and your network connection.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image11.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image11.png)-->
 
 After the local file upload is completed, manifest import job is created on your site. You can view your job and its progress by clicking "Go to job" from the notification, "-&gt; Go to job" from the view or by navigating to "Site settings" and "Jobs".
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image12.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image12.png)-->
 
 By locating and selecting your job from the list of current jobs, you can view details for the job in the inspector pane to the right. After the job has been processed it will be moved to "Past jobs" and the result manifest will become available for download.
 
-![A screenshot of a computer Description automatically generated with medium confidence](media/image13.png)
+<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image13.png)-->
 
 Manifest based asset import operation targeting omnichannel should be started from the media library of the omnichannel. Otherwise the steps are the same.
 
 Manifests with product media assignments should be imported from the "Product media" view in your omnichannel.
+
+### Bulk import an asset manifest
 
 To bulk import an asset manifest, follow these steps.
 
@@ -228,9 +219,13 @@ To bulk import an asset manifest, follow these steps.
 7.  Click "Next". Select media directory from your computer and proceed to next step (this applies only if you checked the box in previous step)
 8.  Review the job settings and click "Begin import"
 
-## Export assets manifests 
+## Export asset manifests 
 
 Asset manifests can be exported from the media library of any of the sites or the omnichannel. Manifest with product media assignments must be exported from the "Product media" view in your omnichannel.
+
+Export operation is started by selecting one or more assets and clicking "Bulk export" from the command bar.
+
+### Bulk export an asset manifest
 
 To bulk export an asset manifest, follow these steps.
 
@@ -240,6 +235,8 @@ To bulk export an asset manifest, follow these steps.
 4.  Enter name and description for the export job, review the selected media and click "Export"
 
 The job status can be monitored from "Site settings" -&gt; "Jobs" or by clicking "Go to job" from the notification.
+
+### Bulk export a product assignment manifest
 
 To bulk export a product assignment manifest, follow these steps.
 
@@ -253,12 +250,18 @@ To bulk export a product assignment manifest, follow these steps.
 
 The job status can be monitored from "Site settings" -&gt; "Jobs" or by clicking "Go to job" from the notification.
 
-
 ### Sample product media assignment manifests (Urls redacted/removed)
 
 Links to download center URLs TBD
 
+## Additional resources
 
+[Omnichannel media management overview](omnichannel-media-management-overview.md)
 
+[Assign media to products and categories](assign-media-omnichannel.md)
+
+[Publish media assignments](publish-media-omnichannel.md)
+
+[Copy omnichannel content between tenants](copy-content-between-tenants.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
