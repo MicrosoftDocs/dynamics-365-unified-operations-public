@@ -36,7 +36,7 @@ Manifests can also be used to import and export product media assignments. The s
 
 Manifest documents are tab delimited unicode text files with \*.tsv extensions. The first row of the manifest is a header row and contains the column names. After the header row, each following row represents a single asset and its associated metadata. For the initial ingestion of an asset, binary files (in other words, actual assets) must be provided along with the manifest, either as a local upload or as publicly accessible HTTP source URLs.
 
-After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page. See the last four rows in the schema description below for what error information is captured and provided.
+After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page (**Site settings \> Jobs**). See the last four rows in the schema description below for what error information is captured and provided.
 
 <!--![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)-->
 
@@ -46,49 +46,49 @@ The following table shows the schema for asset import/export operations.
 
 | Column name                          | Description                                                |
 |--------------------------------------|------------------------------------------------------------|
-| InternalMediaId                      | Commerce CMS asset identity identifier                     |
-| MediaChannel                         | Name of the channel where the asset is exported from       |
-| MediaLocale                          | Locale of the asset                                        |
-| MediaType                            | Type of the asset                                          |
-| MediaVersion                         | Version number of the asset                                |
-| MediaCategory                        | Commerce media category                                    |
-| MediaSourceProvider                  | External system the asset is being imported from           |
-| MediaSourceId                        | Identifier in the external system                          |
-| MediaReferenceUrl                    | URL to external provider (instead of MediaImportPath)      |
-| MediaSourceIfExistsAction            | UseExisting, Overwrite, TakeLatest, or KeepBoth             |
-| MediaAction                          | PublishNow, Draft, Unpublish, UnpublishAndDelete           |
-| MediaCheckedOutAction                | UseExisting, Overwrite                                     |
-| MediaVersionMismatchAction           | UseExisting, Overwrite                                     |
-| MediaImportPath                      | Either HTTP source URL or filename                         |
-| ImageAltText                         | Alt text for an image asset                                |
-| MediaSearchTags                      | Keywords describing the asset (comma separated)            |
-| MediaCaption                         | Caption for a video asset                         |
-| MediaDisplayName                     | Display name of the asset (unique within a site)           |
-| MediaDescription                     | Description of a video asset                     |
-| VideoCaptionImportPath               | URL to the captions for a video asset                             |
-| VideoThumbnailImportPath             | URL to the thumbnail for a video asset (otherwise automatically generated)      |
-| VideoTranscriptImportPath            | URL to the transcript for a video asset                           |
-| VideoAudioTrackImportPath            | URL to the additional audio track of a video asset              |
-| VideoDescriptiveAudioTrackImportPath | URL to the descriptive audio track of a video asset             |
-| VideoPlaytime                        | Playtime of a video asset (in seconds)                          |
-| MediaCreatedOn                       | Date and time when the asset was created                   |
-| MediaLastModifiedOn                  | Date and time when the asset was last modified             |
-| MediaPublished                       | Has the asset been published (true/false)                  |
-| MediaPublishedOn                     | Date and time when the asset was published                 |
-| MediaPublishedURL                    | URL to the published asset                                     |
-| MediaPreviewURL                      | Preview URL for the asset (requires sign-in)                      |
-| ImageQuality                         | Quality of the image asset                                |
-| ImageWidth                           | Width of the image asset                                   |
-| ImageHeight                          | Height of the image asset                                  |
-| MediaChecksum                        | Hash of the image asset binary                             |
-| MediaTitle                           | Title of a video asset                           |
-| VideoSubtitle                        | URL to the subtitles of a video asset                           |
-| VideoMinimumAge                      | Minimum age for a video asset                                |
-| DocumentForceDownload                | Force the download of file asset (instead of viewing)      |
-| Result                               | Result of the import operation for this row                |
-| ResultTime                           | Time when this row was processed                           |
-| ErrorCode                            | Error code                                                 |
-| ResultDescription                    | Detailed description of the result (for example, an error description) |
+| InternalMediaId                      | Commerce content management system (CMS) asset identity identifier.     |
+| MediaChannel                         | Name of the channel from which the asset is exported.       |
+| MediaLocale                          | Locale of the asset.                                        |
+| MediaType                            | Type of the asset.                                          |
+| MediaVersion                         | Version number of the asset.                               |
+| MediaCategory                        | Commerce media category.                                    |
+| MediaSourceProvider                  | External system from which the asset is being imported.           |
+| MediaSourceId                        | Identifier in the external system.                          |
+| MediaReferenceUrl                    | URL to external provider (instead of MediaImportPath).      |
+| MediaSourceIfExistsAction            | UseExisting, Overwrite, TakeLatest, or KeepBoth.             |
+| MediaAction                          | PublishNow, Draft, Unpublish, UnpublishAndDelete.           |
+| MediaCheckedOutAction                | UseExisting, Overwrite.                                    |
+| MediaVersionMismatchAction           | UseExisting, Overwrite.                                     |
+| MediaImportPath                      | Either HTTP source URL or filename.                         |
+| ImageAltText                         | Alt text for an image asset.                                |
+| MediaSearchTags                      | Keywords describing the asset (comma separated).            |
+| MediaCaption                         | Caption for a video asset.                         |
+| MediaDisplayName                     | Display name of the asset (unique within a site).           |
+| MediaDescription                     | Description of a video asset.                     |
+| VideoCaptionImportPath               | URL to the captions for a video asset.                             |
+| VideoThumbnailImportPath             | URL to the thumbnail for a video asset (otherwise automatically generated).      |
+| VideoTranscriptImportPath            | URL to the transcript for a video asset.                           |
+| VideoAudioTrackImportPath            | URL to the additional audio track of a video asset.              |
+| VideoDescriptiveAudioTrackImportPath | URL to the descriptive audio track of a video asset.             |
+| VideoPlaytime                        | Playtime of a video asset (in seconds).                          |
+| MediaCreatedOn                       | Date and time when the asset was created.                   |
+| MediaLastModifiedOn                  | Date and time when the asset was last modified.            |
+| MediaPublished                       | Has the asset been published (true/false).                  |
+| MediaPublishedOn                     | Date and time when the asset was published.                 |
+| MediaPublishedURL                    | URL to the published asset.                                     |
+| MediaPreviewURL                      | Preview URL for the asset (requires sign-in).                      |
+| ImageQuality                         | Quality of the image asset.                                |
+| ImageWidth                           | Width of the image asset.                                   |
+| ImageHeight                          | Height of the image asset.                                  |
+| MediaChecksum                        | Hash of the image asset binary.                             |
+| MediaTitle                           | Title of a video asset.                           |
+| VideoSubtitle                        | URL to the subtitles of a video asset.                           |
+| VideoMinimumAge                      | Minimum age for a video asset.                                |
+| DocumentForceDownload                | Force the download of file asset (instead of viewing).      |
+| Result                               | Result of the import operation for this row.                |
+| ResultTime                           | Time when this row was processed.                           |
+| ErrorCode                            | Error code.                                                 |
+| ResultDescription                    | Detailed description of the result (for example, an error description). |
 
 <!-- Sample asset manifests (Urls redacted/removed)-->
 
@@ -119,30 +119,30 @@ The same manifest schema can be used for product media assignments. Product medi
 
 ### Schema extension for product media assignments
 
-The following table shows the schema for extension for product media assignments.
+The following table shows the schema extension for product media assignments.
 
 | Column name                         | Description                                                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| EntityType                          | Product assignment target for this row (e.g. Master, Variant, DimensionMatrix, Category)                                     |
-| EntityKey                           | Specifies what is used as the key for this assignment in the EntityKeyValue field (e.g. ProductNumber, RecordId, CategoryID) |
-| EntityKeyValue                      | The value of the key specified in EntityKey                                                                                  |
-| EntityLocale                        | Locale of the product assignment                                                                                             |
-| CatalogNumber                       | Catalog number this assignment is associated with                                                                            |
-| EntityChannel                       | Channel OUN this assignment is associated with                                                                               |
-| EntityAssignmentCurrentPublishState | Publish state of the assignment                                                                                              |
+| EntityType                          | Product assignment target for this row (for example, Master, Variant, DimensionMatrix, Category).                                     |
+| EntityKey                           | Specifies what is used as the key for this assignment in the EntityKeyValue field (for example, ProductNumber, RecordId, CategoryID). |
+| EntityKeyValue                      | The value of the key specified in EntityKey.                                                                                  |
+| EntityLocale                        | Locale of the product assignment.                                                                                            |
+| CatalogNumber                       | Catalog number this assignment is associated with.                                                                           |
+| EntityChannel                       | Channel operating unit number (OUN) this assignment is associated with.                                                                              |
+| EntityAssignmentCurrentPublishState | Publish state of the assignment.                                                                                              |
 | EntityAssignmentAction              | PublishNow, Draft, Unpublish, UnpublishAndDelete                                                                             |
 | EntityCheckedOutAction              | UseExisting, Overwrite                                                                                                       |
 | EntityVersionMismatchAction         | UseExisting, Overwrite                                                                                                       |
-| MediaGroup                          | Media group of the asset (Primary/Additional)                                                                                |
-| MediaPurpose                        | Purpose of the asset (free-text)                                                                                             |
-| MediaDisplayOrder                   | Display order                                                                                                                |
-| SwatchGroup                         | Swatch group (e.g. Size or Style)                                                                                            |
+| MediaGroup                          | Media group of the asset (Primary/Additional).                                                                                |
+| MediaPurpose                        | Purpose of the asset (free-text).                                                                                             |
+| MediaDisplayOrder                   | Display order.                                                                                                                |
+| SwatchGroup                         | Swatch group (for example, Size or Style).                                                                                            |
 | SwatchDimension                     | Swatch dimension (e.g. M, XL, XXL)                                                                                           |
-| SwatchValue                         | Swatch value (Hex code of the color or identity identifier of an image asset)                                                |
-| EntityCreatedOn                     | Date and time when the assignment was created                                                                                |
-| EntityLastModifiedOn                | Date and time when the assignment was last modified                                                                          |
-| EntityVersion                       | Assignment version number                                                                                                    |
-| EntityPublishedOn                   | Date and time when the assignment was published                                                                              |
+| SwatchValue                         | Swatch value (Hexidecimal code of the color or identity identifier of an image asset).                                                |
+| EntityCreatedOn                     | Date and time when the assignment was created.                                                                                |
+| EntityLastModifiedOn                | Date and time when the assignment was last modified.                                                                          |
+| EntityVersion                       | Assignment version number.                                                                                                    |
+| EntityPublishedOn                   | Date and time when the assignment was published.                                                                              |
 
 For more information on swatches, see \[LINK TO NICK – PRODUCT-SPECIFIC SWATCHES\]. For more information on media groups, please see \[LINK TO NICK – ASSIGN MEDIA TO SIMPLE PRODUCTS\].
 
@@ -200,55 +200,56 @@ By locating and selecting your job from the list of current jobs, you can view d
 
 Manifest based asset import operation targeting omnichannel should be started from the media library of the omnichannel. Otherwise the steps are the same.
 
-Manifests with product media assignments should be imported from the "Product media" view in your omnichannel.
+Manifests with product media assignments should be imported from the **Product media** view in your omnichannel.
 
 ### Bulk import an asset manifest
 
 To bulk import an asset manifest, follow these steps.
 
-1.  Navigate to the Omnichannel of your environment.
-2.  Click "Product media"
-3.  Click "Bulk import"
-4.  Enter name and description for the job, then click "Next"
-5.  Select the manifest file either by browsing your computer or dragging the manifest file to the view
-6.  If the manifest references asset binaries from the local machine, check the box "Import using local files from my device"
-7.  Click "Next". Select media directory from your computer and proceed to next step (this applies only if you checked the box in previous step)
-8.  Review the job settings and click "Begin import"
+1.  Go to the omnichannel for your environment.
+2.  Select **Product media**.
+3.  Select **Bulk import**.
+4.  Enter name and description for the job, then select **Next**.
+5.  Select the manifest file by browsing your local machine, or by dragging and dropping it onto the view.
+6.  If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
+7.  Select **Next**. 
+8.  If you selected the **Import using local files from my device** checkbox above, select the media directory on your local machine, and then proceed to the next step..
+9.  Review the job settings, and then slect **Begin import**.
 
 ## Export asset manifests 
 
-Asset manifests can be exported from the media library of any of the sites or the omnichannel. Manifest with product media assignments must be exported from the "Product media" view in your omnichannel.
+You can export asset manifests from the site builder media library of any of e-commerce site, or from your omnichannel. Manifests with product media assignments must be exported from the **Product media** view in your omnichannel.
 
-Export operation is started by selecting one or more assets and clicking "Bulk export" from the command bar.
+<!--Export operation is started by selecting one or more assets and clicking "Bulk export" from the command bar.-->
 
 ### Bulk export an asset manifest
 
 To bulk export an asset manifest, follow these steps.
 
-1.  Navigate to the site or omnichannel you want to export the manifest from
-2.  Go to "Media library"
-3.  Select the assets you would like to export and click "Bulk export" (or "Export entire library")
-4.  Enter name and description for the export job, review the selected media and click "Export"
+1.  Go to the site or omnichannel from which you want to export the manifest.
+2.  Go to **Media library**.
+3.  Select the assets you want to export, and then select **Bulk export** (or **Export entire library**).
+4.  Enter a name and description for the export job, review the selected media, and then select **Export**.
 
-The job status can be monitored from "Site settings" -&gt; "Jobs" or by clicking "Go to job" from the notification.
+The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
 
 ### Bulk export a product assignment manifest
 
 To bulk export a product assignment manifest, follow these steps.
 
-1.  Navigate to the omnichannel of your environment
-2.  Click "Product media"
-3.  Click "Bulk export"
-4.  Select if you like to export media assignments "for all products" or "for specific products", click "Next"
-5.  If you selected "specific products" you will be presented with a view where you can select the products you want to export the media assignments for. After selecting the products, click "Next"
-6.  If you wish to export all locales and not just the currently selected locale, check the box "Export all locales"
-7.  Click "Export product media"
+1.  Go to the omnichannel of your environment.
+2.  Select **Product media**.
+3.  Select **Bulk export**.
+4.  Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
+5.  If you selected **Export media assignments for specific products**, under **All products**, select the products from which you want to export the media assignments, and then select **Next**.
+6.  If you want to export all locales and not just the currently selected locale, select the **Export all locales** checkbox.
+7.  Select **Export product media**.
 
-The job status can be monitored from "Site settings" -&gt; "Jobs" or by clicking "Go to job" from the notification.
+The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
 
-### Sample product media assignment manifests (Urls redacted/removed)
+<!--### Sample product media assignment manifests (Urls redacted/removed)-->
 
-Links to download center URLs TBD
+<!--Links to download center URLs TBD-->
 
 ## Additional resources
 
