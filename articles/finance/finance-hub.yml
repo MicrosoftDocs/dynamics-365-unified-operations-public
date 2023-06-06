@@ -150,6 +150,14 @@ additionalContent:
         text: Monitoring and diagnostics tools in Lifecycle services
   - title: Use Finance
     items:
+    - title: General ledger
+      links:
+      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
+        text: Plan your chart of accounts
+      - url: /dynamics365/finance/general-ledger/main-account-types
+        text: Main account types
+      - url: /dynamics365/finance/general-ledger/financial-dimensions
+        text: Financial dimensions
     - title: Accounts payable
       links:
       - url: /dynamics365/finance/accounts-payable/accounts-payable
@@ -218,14 +226,6 @@ additionalContent:
         text: Manage Asset leases
       - url: /dynamics365/finance/asset-leasing/set-up-lease-wrkflw
         text: Lease workflows
-    - title: General ledger
-      links:
-      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
-        text: Plan your chart of accounts
-      - url: /dynamics365/finance/general-ledger/main-account-types
-        text: Main account types
-      - url: /dynamics365/finance/general-ledger/financial-dimensions
-        text: Financial dimensions
     - title: Reporting
       links:
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
