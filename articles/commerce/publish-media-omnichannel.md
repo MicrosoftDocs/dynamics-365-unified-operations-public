@@ -55,7 +55,7 @@ To use a publish group for product media assignments, follow these steps.
     > [!NOTE]
     > When you select **Edit product media** when working inside a publish group, the product media assignments are automatically added to the publish group context. You can see which products have been edited and added to the publish group by noting the yellow **Draft** tag that is shown next to each edited product media assignment.
 
-1. When all edits are staged within the publish group, in the left navigation pane, go to **Publish groups** and schedule your publish date and time following the instructions in [Schedule a publish group to go live].(publish-groups.md#schedule-a-publish-group-to-go-live).
+1. When all edits are staged within the publish group, in the left navigation pane, go to **Publish groups** and schedule your publish date and time following the instructions in [Schedule a publish group to go live](publish-groups.md#schedule-a-publish-group-to-go-live).
 
 ## Additional resources
 
