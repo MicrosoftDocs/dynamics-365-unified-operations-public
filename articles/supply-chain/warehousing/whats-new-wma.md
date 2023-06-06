@@ -25,11 +25,11 @@ This version of the Warehouse Management mobile app introduces the following new
 
 - Increased stability.
 - Improved narration and keyboard navigation for better accessibility.
-- The timeout period can now be set to less than 5 minutes.
+- The minimum timeout is now three minutes (down from five minutes).
 - Added a new color for highlighted fields (available across all themes).
-- Improved error message descriptions on the New Connection page.
+- Improved error message descriptions on the **New Connection** page.
 - Fixed an issue that could sometimes result in truncated labels on inquiry cards.
-- Increased text margins on the Details page to make labels easier to read.
+- Increased text margins on the **Details** page to make labels easier to read.
 
 ## Version 2.1.6.0
 
