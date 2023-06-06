@@ -19,6 +19,18 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.9.0
+
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
+
+- Increased stability.
+- Improved narration and keyboard navigation for better accessibility.
+- The timeout period can now be set to less than 5 minutes.
+- Added a new color for highlighted fields (available across all themes).
+- Improved error message descriptions on the New Connection page.
+- Fixed an issue that could sometimes result in truncated labels on inquiry cards.
+- Increased text margins on the Details page to make labels easier to read.
+
 ## Version 2.1.6.0
 
 This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
