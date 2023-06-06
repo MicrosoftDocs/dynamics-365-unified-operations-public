@@ -17,32 +17,30 @@ ms.search.validFrom: 2023-03-01
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
+This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce site builder, and also describes the manifest schema and provides examples of import and export operations.
 
-This article provides an overview of the manifest based asset import and export operations in the Microsoft Dynamics 365 Commerce site builder, outlining the manifest schema of the and providing examples of both import and export operations.
+Manifest-based asset import and export operations are executed in the Commerce site builder media library. Manifest-based operations always require (for import) or produce (during export) a manifest file, which is a tab-delimited \*.tsv text file listing all the assets that are part of the operation. For export operations, all of the asset information is included in the manifest, including read-only metadata information such as when assets were created and published. Import operations only require a subset of the fields to be entered for each asset, the remaining fields are optional.
 
-Manifest-based asset import and export operations are initiated from the Commerce site builder media library. Manifest-based operations always require (for import) or produce (during export) a manifest file, which is a tab-limited text file listing all the assets that are part of that operation. \[LINK TO MANIFEST SCHEMA\] For export operations, all the asset information is included in the manifest, including read-only metadata information such as when the asset was created and published. Import operations only require some of the fields to be entered for each asset and the rest are optional.
-
-When imported, manifests documents are processed row by row and if processing of any of the rows fails for any reason, the description of the error is included in the resulting manifest which can be downloaded from the job details view. If one of multiple entries in the manifest fails, it does not prevent the rest of the manifest to be processed. If the error requires user to fix something, for example, if the http source url was incorrect in the first import and it is fixed now, the result manifest from the first run can be used to reprocess the failed assets.
+When imported, manifest documents are processed row by row. If the processing of any of the rows fails for any reason, a description of the error is included in the resulting manifest which can be downloaded from the job details view. If one of multiple entries in a manifest fails, it won't prevent the rest of the manifest from being processed. If the error requires the user to fix something in the manifest (for example, if the source URL is incorrect), the result manifest from the first run can be used to fix and reprocess the assets with errors.
 
 The main use cases for manifest-driven asset import and export operations are:
 
--   Uploading product media and other digital assets to the system during onboarding.
--   Modifying asset metadata in bulk (for example, adding specific keyword to large number of assets).
--   Performing search and replace operations on the metadata (for example, rebranding).
--   Performing actions (for example, publish, delete) in bulk.
+- Uploading product media and other digital assets to the system during onboarding.
+- Modifying asset metadata in bulk (for example, adding specific keywords to a large number of assets).
+- Performing search and replace operations on the metadata (for example, rebranding).
+- Performing actions in bulk (for example, publishing or deleting assets).
 
-Manifests can also be used to import and export product media assignments. The schema used for product media assignments is an extended version of the plain asset management manifest schema. Product media assignments are explained in more detail in \[LINK TO NICK – PRODUCT MEDIA ASSIGNMENTS\]
-
-<!--More details and examples can be found from \[LINK TO MANIFEST IMPORT\] and \[LINK TO MANIFEST EXPORT\]-->
+Manifests can also be used to import and export product media assignments. The schema used for product media assignments is an extended version of the plain asset management manifest schema. For information on product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
 
 ## Manifest schema
 
-Manifest documents are tab delimited unicode text files. First row of the manifest is a header row and contains the column names. After the header row, each row represents a single asset and its metadata. For initial ingestion of an asset, binary files (actual assets) have to be provided along with the manifest either as a local upload or as publicly accessible http source urls.
+Manifest documents are tab delimited unicode text files with \*.tsv extensions. The first row of the manifest is a header row and contains the column names. After the header row, each following row represents a single asset and its associated metadata. For the initial ingestion of an asset, binary files (in other words, actual assets) must be provided along with the manifest, either as a local upload or as publicly accessible HTTP source URLs.
 
-After the manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from "Jobs" menu and the "Past jobs" tab. Please see the four last rows in the schema description below for more information.
+After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page. See the last four rows in the schema description below for what error information is captured and provided.
 
 <!--![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)-->
+
+### Schema for asset import and export operations
 
 The following table shows the schema for asset import/export operations.
 
@@ -56,45 +54,45 @@ The following table shows the schema for asset import/export operations.
 | MediaCategory                        | Commerce media category                                    |
 | MediaSourceProvider                  | External system the asset is being imported from           |
 | MediaSourceId                        | Identifier in the external system                          |
-| MediaReferenceUrl                    | Url to external provider (instead of MediaImportPath)      |
-| MediaSourceIfExistsAction            | UseExisting, Overwrite, TakeLatest or KeepBoth             |
+| MediaReferenceUrl                    | URL to external provider (instead of MediaImportPath)      |
+| MediaSourceIfExistsAction            | UseExisting, Overwrite, TakeLatest, or KeepBoth             |
 | MediaAction                          | PublishNow, Draft, Unpublish, UnpublishAndDelete           |
 | MediaCheckedOutAction                | UseExisting, Overwrite                                     |
 | MediaVersionMismatchAction           | UseExisting, Overwrite                                     |
-| MediaImportPath                      | Either http source url or filename                         |
+| MediaImportPath                      | Either HTTP source URL or filename                         |
 | ImageAltText                         | Alt text for an image asset                                |
 | MediaSearchTags                      | Keywords describing the asset (comma separated)            |
-| MediaCaption                         | Caption of the asset (video asset)                         |
+| MediaCaption                         | Caption for a video asset                         |
 | MediaDisplayName                     | Display name of the asset (unique within a site)           |
-| MediaDescription                     | Description of the asset (video asset)                     |
-| VideoCaptionImportPath               | Url to captions of video asset                             |
-| VideoThumbnailImportPath             | Url to thumbnail of video asset (otherwise generated)      |
-| VideoTranscriptImportPath            | Url to transcript of video asset                           |
-| VideoAudioTrackImportPath            | Url to additional audio track for video asset              |
-| VideoDescriptiveAudioTrackImportPath | Url to descriptive audio track for video asset             |
-| VideoPlaytime                        | Playtime of video asset (seconds)                          |
+| MediaDescription                     | Description of a video asset                     |
+| VideoCaptionImportPath               | URL to the captions for a video asset                             |
+| VideoThumbnailImportPath             | URL to the thumbnail for a video asset (otherwise automatically generated)      |
+| VideoTranscriptImportPath            | URL to the transcript for a video asset                           |
+| VideoAudioTrackImportPath            | URL to the additional audio track of a video asset              |
+| VideoDescriptiveAudioTrackImportPath | URL to the descriptive audio track of a video asset             |
+| VideoPlaytime                        | Playtime of a video asset (in seconds)                          |
 | MediaCreatedOn                       | Date and time when the asset was created                   |
 | MediaLastModifiedOn                  | Date and time when the asset was last modified             |
 | MediaPublished                       | Has the asset been published (true/false)                  |
 | MediaPublishedOn                     | Date and time when the asset was published                 |
-| MediaPublishedURL                    | Url to published asset                                     |
-| MediaPreviewURL                      | Preview url to asset (requires login)                      |
-| ImageQuality                         | Quality% of the image asset                                |
+| MediaPublishedURL                    | URL to the published asset                                     |
+| MediaPreviewURL                      | Preview URL for the asset (requires sign-in)                      |
+| ImageQuality                         | Quality of the image asset                                |
 | ImageWidth                           | Width of the image asset                                   |
 | ImageHeight                          | Height of the image asset                                  |
 | MediaChecksum                        | Hash of the image asset binary                             |
-| MediaTitle                           | Title of the asset (video asset)                           |
-| VideoSubtitle                        | Url to subtitles for video asset                           |
-| VideoMinimumAge                      | Minimum age for video asset                                |
+| MediaTitle                           | Title of a video asset                           |
+| VideoSubtitle                        | URL to the subtitles of a video asset                           |
+| VideoMinimumAge                      | Minimum age for a video asset                                |
 | DocumentForceDownload                | Force the download of file asset (instead of viewing)      |
 | Result                               | Result of the import operation for this row                |
 | ResultTime                           | Time when this row was processed                           |
 | ErrorCode                            | Error code                                                 |
-| ResultDescription                    | Detailed description of the result, e.g. error description |
+| ResultDescription                    | Detailed description of the result (for example, an error description) |
 
-Sample asset manifests (Urls redacted/removed)
+<!-- Sample asset manifests (Urls redacted/removed)-->
 
-Sample manifests have all been exported from an environment. They could be imported back (to that same environment) or imported to another environment after clearing the InternalMediaId, MediaChannel and MediaVersion fields.
+<!--Sample manifests have all been exported from an environment. They could be imported back (to that same environment) or imported to another environment after clearing the InternalMediaId, MediaChannel and MediaVersion fields.-->
 
 Mandatory fields for manifest import (for new assets):
 
@@ -115,15 +113,13 @@ Mandatory fields for manifest import (for existing assets):
 - MediaDisplayName
 - MediaTitle (for video assets)
 
-Columns can be in any order in the import manifest.
+Columns can be in any order in the import manifest. Export manifests always contain all available fields for assets (depending on the asset type).
 
-Export manifests will always contain all available fields for assets (depending on the asset type).
+The same manifest schema can be used for product media assignments. Product media assignment manifests must include the mandatory fields of the base asset manifest as well. For information on product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
 
-The same manifest schema can be used for product media assignment. For more information on product media assignments in general, please see \[LINK TO NICK – PRODUCT MEDIA ASSIGNMENTS\]
+### Schema extension for product media assignments
 
-Please note, that the product media assignment manifests must include the mandatory fields of the base asset manifest as well.
-
-Schema extension for product media assignments
+The following table shows the schema for extension for product media assignments.
 
 | Column name                         | Description                                                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
