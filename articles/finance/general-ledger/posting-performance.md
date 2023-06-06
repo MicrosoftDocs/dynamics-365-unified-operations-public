@@ -50,9 +50,9 @@ The number sequence, and the retrieval of numbers in it, can affect the performa
 
 In some countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. However, in many jurisdictions, continuous voucher numbers aren't a regulatory requirement.
 
-When general journal posting becomes a performance bottleneck, we recommend that you use a non-continuous number sequence and enable preallocation for the voucher number sequence.
+When general journal posting becomes a performance bottleneck, we recommend that you use a noncontinuous number sequence and enable preallocation for the voucher number sequence.
 
-On the **Number sequences** page, you can enable preallocation when a non-continuous number sequence is used. You can specify how many numbers should be requested from the database and stored in memory. After all the preallocated numbers are used, new numbers are requested from the database.
+On the **Number sequences** page, you can enable preallocation when a noncontinuous number sequence is used. You can specify how many numbers should be requested from the database and stored in memory. After all the preallocated numbers are used, new numbers are requested from the database.
 
 For more information about preallocation of number sequences, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?context=/dynamics365/context/finance).
 
