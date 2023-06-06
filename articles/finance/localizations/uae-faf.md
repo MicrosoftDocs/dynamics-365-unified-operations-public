@@ -105,10 +105,10 @@ To generate a FAF for UAE, follow these steps.
 
     | Field name | Description |
     | ---------- | ----------- |
-    | Report language | Select the language to generate the report in. |
+    | FAF Version | Specify the versio nof the FAF. Default value is `FAFv1.0.0`. |
     | Purchase and supply data in tax code currency | Select this checkbox to report the `PurchaseValueAED` and `VATValueAED` amounts in the **Purchase Listing Table** section of the report, and the `SupplyValueAED` and `VATValueAED` amounts in the **Supply Listing Table** section of the report, in the tax code currency. If this checkbox is cleared, these amounts will be reported in the currency that is selected in the **Currency** field. |
-    | From date, To date | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
     | Include opening balance in General ledger table | Select this check box if openning balance information must be included in `General Ledger` section of the report. |
+    | From date, To date | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
     | Currency | Select **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Balance** columns of the **General Ledger Table** section of the report in the accounting currency. Select **Reporting currency** to report those amounts in the reporting currency. |
     | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. This parameter affects only the **General Ledger Table** section of the report when **Include opening balance in General ledger table** parameter is selected. For more information about financial dimension sets, see [Financial dimension sets](../general-ledger/financial-dimension-sets.md). |
     | Group by main account | Select this checkbox to group general ledger account entries by main account on the report. When this checkbox is selected, the amounts in **General Ledger Table** section of the report that are reported for each main account are represented as aggregated amounts, where aggregation is done by the `TransactionDate` and `TransactionID` fields. |
