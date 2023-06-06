@@ -3324,6 +3324,8 @@
             href: localizations/ltm-core-transfer-order-posting.md
           - name: Post bank expenses for Latin America
             href: localizations/ltm-core-bank-expenses.md
+          - name: Post packing slips for Latin America
+            href: localizations/ltm-core-packing-slip-posting.md
           - name: Configure journal names for Latin America
             href: localizations/ltm-core-journal-name-configuration..md
           - name: Value query for Latin America
