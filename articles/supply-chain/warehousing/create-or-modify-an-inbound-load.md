@@ -39,10 +39,10 @@ To create an inbound load automatically by using a purchase order, follow these 
 
 ## Create an inbound load automatically via inbound shipment orders
 
-To create an inbound load automatically by using a inbound shipment order, follow these steps:
+To create an inbound load automatically by using an inbound shipment order, follow these steps:
 
 1. Go to **Warehouse management > Setup > Source systems**.
-2. Create or modify existing record for a integration making sure having the **Inbound shipment order policies** definition using **Load synchronization policy** = **Full synchronization**.
+2. Create or modify existing record for an integration making sure having the **Inbound shipment order policies** definition using **Load synchronization policy** = **Full synchronization**.
 3. [Import and process an inbound shipment order](supply-chain-management-warehouse-only-mode.md#simple-inbound-shipment-order-message-example) and an inbound load will be created automatically.
 
 ## Create an inbound load manually
@@ -57,4 +57,4 @@ To create an inbound load manually, follow these steps (prerequisite is to have 
 
 ## Create an inbound load via Advanced shipping notices (ASNs)
 
-Loads can get created automatically as part of a [Advanced shipping notices (ASN)](import-asn-data-entity.md) import. You can read more about this process [here]
+Loads can get created automatically as part of an [advanced shipping notices (ASN)](import-asn-data-entity.md) import.
