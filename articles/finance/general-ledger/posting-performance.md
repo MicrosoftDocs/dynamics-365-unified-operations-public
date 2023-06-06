@@ -2,7 +2,7 @@
 # required metadata
 
 title: General journal posting performance 
-description: The article suggests ways to troubleshoot performance issues when posting general journals, including adjusting number sequence setup and limiting journal lines.
+description: The article suggests ways to troubleshoot performance issues when you post general journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
 ms.date: 05/24/2023
 ms.topic: article
@@ -25,95 +25,90 @@ ms.dyn365.ops.version: 10.0.28
 
 ---
 
-# Journal posting performance
+# General journal posting performance
 
 [!include [banner](../includes/banner.md)]
 
-This article describes issues that might cause performance issues with general journals. This includes:
- - number sequence setup 
- - number of lines per journal 
- - batch processing of journals 
- - the **Lines limit** feature
+The article suggests ways to troubleshoot performance issues when you post general journals. These issues might be caused by the following factors:
+
+- The number sequence setup
+- The number of lines per journal
+- Batch processing of journals
+- The **Lines limit** feature
 
 ## Symptom
 
-General journal posting seem slower than expected.
+General journal posting seems slower than you expect.
 
 ## Resolution
 
-Dynamics 365 Finance supports journals with large numbers of lines. But the configuration of the finance module and journal posting can create situations where posting general journals seem slower than customer 
-expectations.
+Microsoft Dynamics 365 Finance supports journals that have a large number of lines. However, the configuration of the **Finance** module and journal posting can create situations where general journal posting seem slower than customers expect.
 
-## Number sequences and journal performance
+### Number sequences and journal performance
 
-The number sequence, and retrieval of numbers in it, can be a factor in general ledger posting performance. Particularly, the voucher number sequence itself.
+The number sequence, and the retrieval of numbers in it, can affect the performance of general ledger posting. In particular, the voucher number sequence itself can be a factor.
 
-In certain countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. But in many jurisdictions, continuous vouchers aren't a regulatory requirement.
+In some countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. However, in many jurisdictions, continuous voucher numbers aren't a regulatory requirement.
 
-When general journal posting becomes a performance bottleneck, we recommend number sequence that isn't continuous and enable preallocation for voucher number sequence.  
+When general journal posting becomes a performance bottleneck, we recommend that you use a non-continuous number sequence and enable preallocation for the voucher number sequence.
 
-On the **Number Sequences Page**, you can enable preallocation when using a non-continuous number sequence. You can specify a quantity of numbers to be selected and stored in memory. 
-After all the preallocated numbers have been used, new numbers are requested from the database.
+On the **Number sequences** page, you can enable preallocation when a non-continuous number sequence is used. You can specify how many numbers should be requested from the database and stored in memory. After all the preallocated numbers are used, new numbers are requested from the database.
 
-For more information about preallocation of number sequences, see [Number Sequence Overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?context=/dynamics365/context/finance).
+For more information about preallocation of number sequences, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?context=/dynamics365/context/finance).
 
-## Run journal posting in batch
+### Run journal posting in batch mode
 
-We recommend posting journals in the background as a **Batch job**. Journal posting in batch can improve performance in several ways:
+We recommend that you post journals in the background as a batch job. Journal posting in batch mode can improve performance in several ways:
 
-- It's executed in the background, allowing the user to continue with other tasks while the journal is being processed.
-- It supports parallel processing for improved performance.
-- It can reduce the need for manual interaction by setting up a recurring batch job with **Late selection** of journals and transfer of errors to a separate journal.
+- Because it runs in the background, users can continue to work on other tasks while the journal is being processed.
+- It supports parallel processing.
+- If it's set up as a recurring batch job that uses late selection of journals and transfer of errors to a separate journal, it can reduce the need for manual interaction.
 
-On the **Post journals** page to post journals in batch. The fields on this page:
- - **Select** - View or modify the query that selects the journals to be posted. After the query window is closed, the selected records are displayed in the grid unless **Late selection** is selected.
- - **Late selection** - Select **Late selection** to run the query that selects journals to be posted, when the journal posting batch job starts. When **Late selection** isn't marked, the selected journals are  shown in the **Overview grid**.
+Use the following buttons and fields on the **Post journals** page to set up journal posting in batch mode:
 
-> [!NOTE]
-> Mark **Late selection** when using a recurring batch to select the journals to be posted.
+- **Select** – View or modify the query that selects the journals to post. After the query dialog box is closed, the selected records appear in the **Overview** grid, unless the **Late selection** option is selected.
+- **Late selection** – Select this option to run the query that selects the journals to post when the batch job for journal posting begins. If this option isn't selected, the selected journals appear in the **Overview** grid.
 
- - **Transfer errors** - Select **Transfer errors** to allow valid journals to post and move vouchers that fail to post to a new journal. If **Transfer errors** isn't selected, the entire journal will fail to 
- post if any of the vouchers contain errors.
+    > [!NOTE]
+    > Select **Late selection** if you're using a recurring batch job to select the journals to post.
 
-## Run journal posting in parallel
+- **Transfer errors** – Select this option to enable valid journals to post and move vouchers that fail to be posted to a new journal. If this option isn't selected, the whole journal will fail to be posted if any of the vouchers contain errors.
 
-We recommended parallel or multithreaded execution of processes where possible. 
-Some things to consider: 
+### Run journal posting in parallel
 
-- Size of the journals
-- Advantages of splitting larger journals into multiple smaller journals before posting them
-- Having the system split them at posting time
-- Size of the vouchers 
+We recommend parallel or multithreaded execution of processes whenever possible.
 
-### Size of journals
+Here are some things to consider:
 
-For example, you have a journal with 150,000 lines to post. If you post the lines in one journal, with none of the parallel options configured, the journal posting is executed in a single thread.
+- The size of the journals
+- The advantages of splitting larger journals into multiple smaller journals before posting
+- Whether you want the system to split the journals at posting time
+- The size of the vouchers
 
-If you manually split the journal into 15 separate journals with 10,000 lines in each, the journals can be executed in parallel manually by using batch. However, manually splitting journals can be tedious work. 
-Dynamics 365 Finance can, in many cases, automatically split the journal. 
+#### Size of journals
 
-### Lines limit
+For example, a journal has 150,000 lines that must be posted. If you don't configure any of the parallel options, and you post the lines in one journal, journal posting runs in a single thread.
 
-The **Lines limit** on a journal has to enable parallel processing when posting journals in batch. The **Lines limit** defines the minimum number of lines to move to a new journal, which are then processed in 
-parallel.
+If you manually split the journal into 15 journals, each of which has 10,000 lines, the journals can be manually run in parallel by using a batch. It can be tedious work to manually split journals. However, in many cases, Dynamics 365 Finance can automatically split the journal.
 
-Splitting a journal works best with vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal it was split from. 
-The **Lines limit** can be set on a journal name and defaults to all journals created with the journal name.
+#### Lines limit
+
+The **Lines limit** value on a journal enables parallel processing when journals are posted in a batch. The **Lines limit** field defines the minimum number of lines to move to a new journal. Those lines are then processed in parallel.
+
+Splitting a journal works best for vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal that it was split from. The **Lines limit** field can be set for a journal name. The value is then used by default for all journals that are created that have that journal name.
 
 > [!NOTE]
-> We recommend starting the **Lines limit** at 1000 and then testing specific workloads until you find the optimal number.
+> We recommend that you start the **Lines limit** value at 1,000 and then test specific workloads until you find the optimal number.
+>
+> When the **Lines Limit** feature is used, any document attachment or workflow on the original journal isn't copied to the additional journals that are created during posting. Users must pay attention to the **Original Journal No.** value for document and workflow references.
 
-> [!NOTE]
-> When the **Lines Limit** feature is used, any document attachment or workflow on the original journal isn't copied to the additional journals created during posting. Users must pay attention to the **Original Journal No.** for document and workflow references.
+#### Voucher size
 
-## Voucher size
+If you use the **Lines limit** feature, it's important that you consider the average voucher size. The posting process can determine when it should split the journals if the vouchers in the journal balances. If the number of lines in each voucher exceeds the **Lines limit** value, the voucher size determines which journal lines are used for the split.
 
-It's important to consider the average voucher size when using the **Lines limit** feature. The posting process can decide when to split the journals if the vouchers in the journal balances. If each
-voucher has more lines than the **Lines limit** field, the voucher size decides which journal lines are used for the split.
-
-| Journal lines | Voucher lines    | Lines Limit      | Parallel processing | Number of journals posted|
-|---------------|------------------|------------------|---------------------|--------------------------|
-|    150,000    |       ~500       |           0      |       No            |    1                     |
-|    150,000    |       ~500       |      10,000      |       Yes           |    15                    |
-|    150,000    |    ~50,000       |      10,000      |       Yes           |    3                     |
-|    150,000    |    150,000       |      10,000      |       No            |    1                     |
+| Journal lines | Voucher lines | Lines Limit | Parallel processing | Number of journals posted |
+|---------------|---------------|-------------|---------------------|---------------------------|
+| 150,000       | ~500          | 0           | No                  | 1                         |
+| 150,000       | ~500          | 10,000      | Yes                 | 15                        |
+| 150,000       | ~50,000       | 10,000      | Yes                 | 3                         |
+| 150,000       | 150,000       | 10,000      | No                  | 1                         |
