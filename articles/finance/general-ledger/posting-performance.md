@@ -48,9 +48,9 @@ expectations.
 
 The number sequence, and retrieval of numbers in it, can be a factor in general ledger posting performance. Particularly, the voucher number sequence itself.
 
-In certain countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. But in many jurisdictions, continuous vouchers isn't a regulatory requirement.
+In certain countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. But in many jurisdictions, continuous vouchers aren't a regulatory requirement.
 
-When general journal posting becomes a performance bottleneck, we recommend number sequence that aren't continuous and enable preallocation for voucher number sequence.  
+When general journal posting becomes a performance bottleneck, we recommend number sequence that isn't continuous and enable preallocation for voucher number sequence.  
 
 On the **Number Sequences Page**, you can enable preallocation when using a non-continuous number sequence. You can specify a quantity of numbers to be selected and stored in memory. 
 After all the preallocated numbers have been used, new numbers are requested from the database.
@@ -59,7 +59,7 @@ For more information about preallocation of number sequences, see [Number Sequen
 
 ## Run journal posting in batch
 
-We recommend to post journals in the background as a **Batch job**. Journal posting in batch can improve performance in several ways:
+We recommend posting journals in the background as a **Batch job**. Journal posting in batch can improve performance in several ways:
 
 - It's executed in the background, allowing the user to continue with other tasks while the journal is being processed.
 - It supports parallel processing for improved performance.
@@ -67,8 +67,7 @@ We recommend to post journals in the background as a **Batch job**. Journal post
 
 On the **Post journals** page to post journals in batch. The fields on this page:
  - **Select** - View or modify the query that selects the journals to be posted. After the query window is closed, the selected records are displayed in the grid unless **Late selection** is selected.
- - **Late selection** - Select **Late selection** to run the query that selects journals to be posted, when the journal posting batch job starts. When **Late selection** isn't marked, the selected journals are 
- - shown in the **Overview grid**.
+ - **Late selection** - Select **Late selection** to run the query that selects journals to be posted, when the journal posting batch job starts. When **Late selection** isn't marked, the selected journals are  shown in the **Overview grid**.
 
 > [!NOTE]
 > Mark **Late selection** when using a recurring batch to select the journals to be posted.
@@ -105,12 +104,11 @@ The **Lines limit** can be set on a journal name and defaults to all journals cr
 > We recommend starting the **Lines limit** at 1000 and then testing specific workloads until you find the optimal number.
 
 > [!NOTE]
-> When the **Lines Limit** feature is used, any document attachment or workflow on the original journal isn't copied to the additional journals created during posting. Users must pay attention to the 
-> **Original Journal No.** for document and workflow references.
+> When the **Lines Limit** feature is used, any document attachment or workflow on the original journal isn't copied to the additional journals created during posting. Users must pay attention to the **Original Journal No.** for document and workflow references.
 
 ## Voucher size
 
-It's important to consider the average voucher size when using the **Lines limit** feature. When the posting process decides when to split the journals, it can only if the vouchers in the journal balances. If each
+It's important to consider the average voucher size when using the **Lines limit** feature. The posting process can decide when to split the journals if the vouchers in the journal balances. If each
 voucher has more lines than the **Lines limit** field, the voucher size decides which journal lines are used for the split.
 
 | Journal lines | Voucher lines    | Lines Limit      | Parallel processing | Number of journals posted|
