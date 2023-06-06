@@ -2,7 +2,7 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 02/03/2023
+ms.date: 06/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Online and offline point of sale (POS) operations
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. To make an operation available to be added to a button grid in button grid designer, it must first be marked as a user operation on the POS operations view in Commerce headquarters (**Retail and Commerce \> Channel Setup \> POS setup \> POS \> POS Operations**.)
 
@@ -134,8 +135,8 @@ The following columns specify where the operations can be invoked:
 | 517  | Income accounts                                   | Record money that is put into the cash drawer for a reason other than a sale.                                                                                                                                  | Yes            | Yes                | Yes            | Yes               | No              |
 | 518  | Expense accounts                                  | Record money that is removed from the cash drawer for occasional expenses.                                                                                                                                     | Yes            | Yes                | Yes            | Yes               | No              |
 | 519  | Add to gift card                                  | Add money to the specified gift card.                                                                                                                                                                          | Yes            | Yes                | No             | No                | No              |
-| 520  | Gift card balance                                 | Show the balance of a gift card.                                                                                                                                                                               | Yes            | Yes                | No             | No                | No              |
-| 521  | Loyalty card points balance                       | Show the balance of points for the specified loyalty card.                                                                                                                                                     | Yes            | Yes                | No             | No                | No              |
+| 520  | Gift card balance                                 | Shows the balance of a gift card.                                                                                                                                                                               | Yes            | Yes                | No             | No                | No              |
+| 521  | Loyalty card points balance                       | Shows the balance of points for the specified loyalty card.                                                                                                                                                     | Yes            | Yes                | No             | No                | No              |
 | 522  | Force complete transaction                       | Complete the order asynchronously if the customer order creation fails and the order cannot be voided.                                                                                                           | Yes            | Yes                | No             | No                | No              |
 | 550  | Cash changer register amount                      | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
 | 551  | Cash changer reset                                | This operation isn't supported.                                                                                                                                                                                | Not applicable | Not applicable     | Not applicable | Not applicable    | Not applicable  |
