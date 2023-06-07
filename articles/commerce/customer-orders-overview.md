@@ -170,6 +170,8 @@ Call center users can also disable the **Price locked** property for order lines
 5. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
 6. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
 
+If an order is partially cancelled and it is recalled in POS for editing, then prior to 10.0.36, the cancelled order lines were also displayed on the transaction and hence printed on the receipt of the edited order. However, with 10.0.36, these cancelled lines are hidden from POS and hence not printed on receipt. This is controlled by the feature "Hide cancelled order lines from POS" which is enabled by default in the Feature management, but users can disable it, if needed.
+
 ## Finalizing the customer order shipment or pickup from POS
 
 After an order is created, the items will be picked up by the customer from a store location or shipped, depending on the configuration of the order. For more information about this process, see the [store order fulfillment](./order-fulfillment-overview.md) documentation.
