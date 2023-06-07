@@ -2,9 +2,9 @@
 # required metadata
 
 title: FTA Tax Audit File (FAF)
-description: This article includes country-specific information about how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE). 
+description: This article explains how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities with a primary address in the United Arab Emirates (UAE). 
 author: liza-golub
-ms.date: 31/05/2023
+ms.date: 06/07/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 This article includes country-specific information about how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
 
 > [!NOTE]
-> \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\" and \"FAF declaration\" menu item are announced for deprecation. We plan to no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\" and \"FAF declaration\" menu item (**Tax** > **Declarations** > **FAF declaration**). New \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" runnable with [\"Standard Audit File for Tax (SAF-T) electronic report\"](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file) feature is introduced. See [Removed or deprecated features in Dynamics 365 Finance](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance).
+> The Electronic reporting (ER) format, \"FTA VAT Audit File (AE)\" that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item is being deprecated. We will no longer support the Electronic reporting (ER) format, \"FTA VAT Audit File (AE)\" that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** > **Declarations** > **FAF declaration**). A new ER format, **FTA Tax Audit File - FAF in TXT (AE)** which uses the **SAF-T General** model mapping\" can be used with [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md). For more details, see [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance).
 
 ## Prepare your environment to generate a FAF for UAE
 
