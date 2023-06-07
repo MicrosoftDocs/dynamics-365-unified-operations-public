@@ -159,6 +159,7 @@ To bulk import an asset manifest in site builder, follow these steps.
 3. Select **Bulk import**. The **Bulk import files** dialog box appears.
 4. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
 5. Under **Select a manifest file for import**, select **browse your computer** to select the manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
+6. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
 
 Manifest based asset import operation targeting regular site is started from the media library in the commerce site builder by clicking "Bulk import" from the command bar.
 
@@ -222,11 +223,13 @@ To bulk import a product media assignment asset manifest, follow these steps.
 2.  Select **Product media**.
 3.  Select **Bulk import**.
 4.  Enter a name (required) and a description (optional) for the job, then select **Next**.
-5.  Select the manifest file by browsing your local machine, or by dragging and dropping it onto the view.
-6.  If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
+5.  Select the product media assignment asset manifest file by browsing your local machine, or by dragging and dropping it onto the view.
+6.  If the manifest references asset binaries from your local machine, select the **Import using local files from my device** checkbox.
 7.  Select **Next**. 
-8.  If you selected the **Import using local files from my device** checkbox above, select the media directory on your local machine, and then proceed to the next step..
-9.  Review the job settings, and then slect **Begin import**.
+8.  If you selected the **Import using local files from my device** checkbox above, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine.
+9.  After selecting the media directory to upload, depending on your browser, you may see a confirmation dialog box appear. After reviewing the message, select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated showing the folder you selected for upload.
+10.  Select **Next**.
+11.  In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
 
 ## Export an asset manifest 
 
