@@ -45,11 +45,11 @@ To work with the FAF for UAE, you must complete the following tasks:
 
 Before you generate a FAF for UAE, import the latest versions of the following ER configurations.
 
-| ER configuration name | Type | Description |
-|-----------------------|------|-------------|
-| Standard Audit File (SAF-T) | Model | The common data model for different audit reports. |
-| SAF-T General model mapping | Model mapping | The model mapping that provides general data source mapping. |
-| FTA Tax Audit File - FAF in TXT (AE) | Format | Federal Tax Authority Audit file for the United Arab Emirates text format. |
+| ER configuration name | Type | Description | Recommended version |
+|-----------------------|------|-------------|---------------------|
+| Standard Audit File (SAF-T) | Model | The common data model for different audit reports. | Any version starting from 164 |
+| SAF-T General model mapping | Model mapping | The model mapping that provides general data source mapping. | Any version starting from 164.357 |
+| FTA Tax Audit File - FAF in TXT (AE) | Format | Federal Tax Authority Audit file for the United Arab Emirates text format. | Any version starting from 164.6 |
 
 For more information about how to download ER configurations, see [Download ER configurations from the Global repository](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -75,6 +75,8 @@ Import the most recent versions of the configurations. The version description u
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
+
+[![Select **FTA Tax Audit File - FAF in TXT (AE)** in **General ledger parameters**.](./media/uae-faf-ud.png)](./media/uae-faf-gl.png)
 
 ### <a name="header-information"></a>Set up company information for the reporting header
 
