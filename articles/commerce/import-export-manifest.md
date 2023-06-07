@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 5/26/2023
+ms.date: 06/07/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -160,56 +160,6 @@ To bulk import an asset manifest in site builder, follow these steps.
 4. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
 5. Under **Select a manifest file for import**, select **browse your computer** to select the manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
 6. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
-
-Manifest based asset import operation targeting regular site is started from the media library in the commerce site builder by clicking "Bulk import" from the command bar.
-
-<!--![A screenshot of a computer Description automatically generated with low confidence](media/image2.png)-->
-
-Bulk import dialog is opened where the import job name and description can be modified. Job name is required, but the description is optional.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image3.png)-->
-
-These values don't have an impact on the actual import process, but they help users locate their job from the list of jobs. After entering name and description, clicking "Next" brings up the manifest selection view. Manifest file needs to be tab delimited text file, with a header row with specific column names and one or more rows of assets. \[LINK TO MANIFEST SCHEMA\] Manifest file will be uploaded from the local machine either by selecting "browse your computer" or dragging the file into the view from file explorer of the operating system.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image4.png)-->
-
-After selecting the manifest file, you need to specify if you need to upload local binaries with the manifest. This is not required if all of the assets in the manifest have source http url or they are existing assets and are updating metadata only.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image5.png)-->
-
-If you have new assets that you will be uploading from your local machine, tick the "Import using local files from my device"-box. Proceed to the next step with "Next".
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image6.png)-->
-
-This step is shown only if you indicated that you will be importing assets from local machine. Click "Browse" and select the folder that contains the assets that are associated with the manifest.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image7.png)-->
-
-After selecting the folder, you might see a confirmation dialogue that varies depending on the browser you are using. After reviewing the message, confirm by clicking "Upload" (could be "OK", "Yes" or something similar on depending on your browser).
-
-<!--![A screenshot of a computer Description automatically generated with low confidence](media/image8.png)-->
-
-The view is updated with the folder that you selected. Clicking "Next" takes you to the next step of the process.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image9.png)-->
-
-In the "Review and finish" step, you have all the information for the new bulk import job in the single view you to review. If you need to change any of the parameters, clicking "Edit" next to the information allows you to do that. Clicking "Begin import" will first upload the local files to the service (if selected) and then create a job for the bulk import.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image10.png)-->
-
-The local file upload may take time, depending on the amount and the file size of the asset and your network connection.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image11.png)-->
-
-After the local file upload is completed, manifest import job is created on your site. You can view your job and its progress by clicking "Go to job" from the notification, "-&gt; Go to job" from the view or by navigating to "Site settings" and "Jobs".
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image12.png)-->
-
-By locating and selecting your job from the list of current jobs, you can view details for the job in the inspector pane to the right. After the job has been processed it will be moved to "Past jobs" and the result manifest will become available for download.
-
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image13.png)-->
-
-
 
 ### Bulk import a product media assignment asset manifest
 
