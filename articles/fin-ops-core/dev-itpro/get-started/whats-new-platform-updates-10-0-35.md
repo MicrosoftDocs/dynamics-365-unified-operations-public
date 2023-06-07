@@ -35,7 +35,7 @@ This section lists the enhancements that are included in this release when avail
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Data integration | User-based service protection API limits are disabled by default. | User-based service protection API limits are no longer mandatory and are disabled by default. The limits may optionally be enabled with the **User-based service protection API limits** feature in **Feature management**. However, the limits will be disabled for all environments and the option removed from **Feature management** in a future release. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | Optional |
+| Data integration: User-based service protection API limits are disabled by default. | User-based service protection API limits are no longer mandatory and are disabled by default. The limits may optionally be enabled with the **User-based service protection API limits** feature in **Feature management**. However, the limits will be disabled for all environments and the option removed from **Feature management** in a future release. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | Optional |
 
 
 ### Bug fixes
@@ -57,4 +57,4 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
