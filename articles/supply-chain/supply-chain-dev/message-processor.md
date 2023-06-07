@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Create and process custom message queues and message types
+# Create and process message queues and message types - including custom
 
 [!include [banner](../includes/banner.md)]
 
@@ -25,7 +25,7 @@ The message processor is a framework for processing messages that represent even
 - It's reliable.
 - It's traceable.
 
-You might use this framework, for example, to develop and manage custom integration with external systems, and to process other custom functionality. Microsoft Dynamics 365 Supply Chain Management includes two features that use predefined message types and message queues: [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md) and [deferred posting](../production-control/deferred-posting.md).
+You might use this framework, for example, to develop and manage custom integration with external systems, and to process other custom functionality. Microsoft Dynamics 365 Supply Chain Management includes for example out-of-the-box features that use predefined message types and message queues: [third-party manufacturing execution system (MES) integration](../production-control/mes-integration.md), [deferred posting](../production-control/deferred-posting.md), [packing slip posting during container close](../warehousing/packing-containers.md#set-up-the-packing-process), or as part of the [Supply Chain Management warehouse-only mode](../warehousing/supply-chain-management-warehouse-only-mode) to create _Inbound and outbound shipment orders_.
 
 This article describes how to design your own custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types (including the predefined message types) by using the **Message processor messages** page.
 

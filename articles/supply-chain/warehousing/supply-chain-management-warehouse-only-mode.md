@@ -10,7 +10,8 @@ ms.prod:
 ms.technology: 
 
 # optional metadata
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -68,12 +69,32 @@ With the introduction of these two new, lightweight inbound and outbound warehou
 
 #### <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
 
-The **inbound shipment order** and the **outbound shipment order** messages can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) shipment order message entities in a optimal manner.
-A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. It is recommended to process the messages as part of a periodic batch job triggered by the  **Message processor** page where you must use the **Shipment Orders** _Message queue_.
+The **inbound shipment order messages** and the **outbound shipment order messages** can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) shipment order message entities in a optimal manner.
+A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. It is recommended to process the messages as part of a periodic batch job triggered by the [**Message processor**](../supply-chain-dev/message-processor.md) page where you must use the **Shipment Orders** _Message queue_.
 
 ![SCM warehouse-only mode to ERP/Order system](./media/shipment-order-integrations.png)
 
-Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
+> [!NOTE]
+> Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
+
+##### Viewing and maintaining shipment order messages
+It is possible to both view and update shipment order messages, which can be a quick way to test integrations as part of an implementation process. You can update the fields values in _Failed_ messages which is not used as record keys (like the order header and line numbers). The pages used to view and maintain the messages are:
+
+- **Warehouse management > Inquiries and reports > Inbound shipment order messages**
+- **Warehouse management > Inquiries and reports > Outbound shipment order messages**
+
+The **Processing status** field can be used to monitor the progress of the shipment order messages. The the following states are available:
+
+- _Received_ - The message has been received and in a _Queued_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
+- _Accepted_ - The message processor state is _Processed_ and thereby a shipment order has been created.  
+- _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of edit saving.
+- _Draft_ - A copy of a message which can get updated. To reprocess the message you can move the message into the _Queued_ message state by using the **Queue** option.
+<!-- perlynne Canceled message state => ??? -->
+> [!TIP]
+>  By selecting the **Show old versions** option you can follow the manual message updates by using the _Replaced by message_ field value.
+
+> [!WARNING]
+> Making manual message field updates in production environments might result in data corruption between the external source system and D365 SCM. Make sure to have the proper user role security privilege assigned for this process.
 
 ### Master data
 
@@ -163,7 +184,7 @@ The high-level process for inbound processing is as following:
 
 - External systems provides _Inbound shipment order_ messages
 - The messages get processed in _Supply Chain Warehouse-only mode_ and orders get created
-- Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during message processing based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
+- Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during [message processing](../supply-chain-dev/message-processor.md) based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
 - Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes:
 
   - _License plate receiving (and put away)_
@@ -174,8 +195,8 @@ The high-level process for inbound processing is as following:
 - The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
 - The _Inbound shipment orders_ get finalized by running the periodic back-ground process **Post shipment receipts**.
 
-> [!NOTE]
-> The **Receiving completed** process requires load lines being fully received in 10.0.35. Future plans exists for having automated process handling based on policy settings.
+> [!NOTE] <!-- perlynne -->
+> The **Receiving completed** process requires load lines being fully received. Future plans exists for having automated process handling based on policy settings.
 
 ## <a name="shipment-receipts"></a> Shipment Receipts
 
@@ -188,7 +209,7 @@ The header will get from _Ready for posting_ into _Posted_ by processing the **W
 The high-level process for outbound processing is as following:
 
 - External system provides _Outbound shipment order_ messages
-- The messages gets processed in _Supply Chain Warehouse-only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the message processing or will need to get processed manually or as part of the release process.
+- The messages gets processed in _Supply Chain Warehouse-only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the [message processing](../supply-chain-dev/message-processor.md) or will need to get processed manually or as part of the release process.
 - The orders gets released for further warehouse processing, either manually or automatically via the batch job **Automatic release of outbound shipment orders** and based on the [wave template](wave-templates.md) definitions warehouse work can get created and released immediately.
 - The outbound warehouse work get processed and the related outbound shipment order line transactions get updated to status _Picked_.
 - The loads get outbound ship confirmed which will create **Business events** and [**Shipment packing slip**](#shipment-packing-slips) data for the external systems.
@@ -256,16 +277,14 @@ The external system will get informed via business event and can read the shipme
 |------------|------------|------------|
 |A0001       |11 pcs      |11 pcs      |
 
-> [!WARNING]
-> In 10.0.35 it is not possible to run **Supply Chain Management in warehouse-only mode** without using the [**General ledger**](../../finance/general-ledger/general-ledger.md) and thereby for example not needing to configure the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
->
-> It is planned to have [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) processes for **Released products** associated with an **Item model group** indicated with _Inventory model_ as **Unvalued**. For now simply use posting with cost values as zero.
+> [!NOTE] <!-- perlynne -->
+> When making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) for items being assigned to **Item model groups** not using _Inventory model_ as **Non-valuated** requires configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 # Example of using inbound and outbound shipment orders
 
 This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
-To create inbound and outbound shipment orders, a message entity needs to be posted using [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message then needs to be processed by the [**Message processor**](message-processor.md) in D365 SCM which will create the orders in the warehouse system.
+To create inbound and outbound shipment orders, a message entity needs to be posted using [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message then needs to be processed by the [**Message processor**](../supply-chain-dev/message-processor.md) in D365 SCM which will create the orders in the warehouse system.
 The same message structure logic applies for both the inbound and outbound shipment order messages which are:
 
 ``` Message structure:
@@ -423,7 +442,7 @@ Having the two documents imported into the [message queue](#inbound-outbound-shi
 
 ## What to do when a message processing is **Failed**?
 
-The message processing will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into  reprocessing (**Queue** option) or **Cancel** the message. Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message.
+The [message processing](../supply-chain-dev/message-processor.md) will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into  reprocessing (**Queue** option) or **Cancel** the message. Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message.
 
 ## Why does my message not get processed, but stays in the _Queued_ state?
 
@@ -451,8 +470,10 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 - _Warehouse worker_ - Working with daily warehouse processes
 
 <!-- perlynne
+
+Update ../supply-chain-dev/message-processor.md
+
 ### Warehouse management initiation wizard
 ### Outbound configuration wizard
 ### Inbound configuration wizard
-## Security roles
 -->
