@@ -2,7 +2,7 @@
 title: Budget analysis in the public sector
 description: This article describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page.
 author: v-kiarnd
-ms.date: 01/28/2022
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to use the Budget analysis page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
+This article describes how to use the **Budget analysis** page to view posted revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 
 This article describes the budget analysis functionality available for the public sector. 
 
@@ -62,8 +62,8 @@ The following table explains the differences between these pages.
 | Budget control statistics page | Budget analysis                        |
 |---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
-| Includes data from both confirmed and unconfirmed encumbrances.                                                         | Includes data from confirmed encumbrances only.                                             |
-| Includes data from expense accounts only.                                                                               | Includes data from both revenue and expense accounts.                                       |
+| Includes data from both confirmed and unconfirmed encumbrances.                               | Includes data from confirmed encumbrances only.                                             |
+| Includes data from expense accounts only.                                                 | Includes data from both revenue and expense accounts.                                       |
 
 > [!NOTE] 
 > If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.
@@ -72,10 +72,10 @@ The following table explains the differences between these pages.
 Yes, you can export budget analysis results. On the **Budget analysis** page, press Ctrl+Shift+E.
 
 ## How do I display information for a specific closing period?
-To view balances and information for a specific closing period, use the **Trial balance** page. The **Budget analysis** page does not distinguish between operating periods and closing periods.
+To view balances and information for a specific closing period, use the **Trial balance** page. The **Budget analysis** page doesn't distinguish between operating periods and closing periods.
 
 ## Can I analyze the budget in a dimension order that’s different from the expense account structure?
-Yes. For example, you might want to view certain Main accounts across programs or other dimensions. You can create financial dimension sets that reflect the way that you want to analyze your data. To do this, use the **Financial dimension sets** page in General ledger. To view Main accounts across programs, for example, create a Programs dimension set, and then add dimensions by using **MainAccount**. When you return to the **Budget analysis** page and select that dimension set, the budget appears as a list of Main accounts. You can then drill down in any Main account to include the program level of the dimension set, which breaks down all the totals by program within that Main account.
+Yes. For example, you might want to view certain Main accounts across programs or other dimensions. You can create financial dimension sets that reflect the way that you want to analyze your data. To do this, use the **Financial dimension sets** page in the General ledger. To view Main accounts across programs, for example, create a Programs dimension set, and then add dimensions by using **MainAccount**. When you return to the **Budget analysis** page and select that dimension set, the budget appears as a list of Main accounts. You can then drill down in any Main account to include the program level of the dimension set, which breaks down all the totals by program within that Main account.
 
 ## What if the financial dimension set that I want to use isn’t included on the page?
 All existing financial dimensions sets are displayed on the **Budget analysis** page. If you don’t see the one that you want, you can create it in General ledger.
