@@ -471,7 +471,15 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 
 <!-- perlynne
 
-Update ../supply-chain-dev/message-processor.md
+Update ..Cancel state message edit
+
+Setup post in-/out packing slip + Message processor process automation...  ?
+
+Detour Receiving complete
+
+ASN V5?
+
+
 
 ### Warehouse management initiation wizard
 ### Outbound configuration wizard
