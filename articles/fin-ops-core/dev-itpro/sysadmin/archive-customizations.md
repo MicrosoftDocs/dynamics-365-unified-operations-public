@@ -47,7 +47,7 @@ maintain table relations needs such as a foreign key index.
 <!-- KFM: Is the following code the code you mean? Is this X++? Should we add some indenting? Do I see incorrect carriage returns here? -->
 
 ```xpp
-\[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))\]
+[ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]
 
 final class public final class
 LedgerArchiveAutomationJobRequestCreator_Extension
@@ -55,11 +55,11 @@ LedgerArchiveAutomationJobRequestCreator_Extension
 {
 
     public ArchiveJobPostRequest
-    createPostJobRequest(LedgerArchiveAutomationCriteria \_criteria)
+    createPostJobRequest(LedgerArchiveAutomationCriteria _criteria)
 
     {
 
-    ArchiveJobPostRequest postRequest = next createPostJobRequest(\_criteria);
+    ArchiveJobPostRequest postRequest = next createPostJobRequest(_criteria);
 
     ArchiveServiceArchiveJobPostRequestBuilder builder = ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
 
