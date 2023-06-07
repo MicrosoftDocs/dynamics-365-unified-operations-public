@@ -144,6 +144,6 @@ To generate an IAF for Singapore, follow these steps.
 
 A pipe or vertical bar (\|) is a special symbol in the IAF. If it's used in the value of any text field of the report, it's replaced with a space.
  
-If char(10) or char(32) is included in the value of any text field of the IAF, it's excluded for the value in reporting.
+If char(10) or char(13) is included in the value of any text field of the IAF, it's excluded for the value in reporting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
