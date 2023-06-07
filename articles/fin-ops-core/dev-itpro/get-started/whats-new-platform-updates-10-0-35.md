@@ -35,7 +35,7 @@ This section lists the enhancements that are included in this release when avail
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Data Engine/ Authorization | The new role ‘XDSDataAccessPolicyBypassRole’ is introduced to the bypass XDS policy. </br></br>If a user is assigned with the ‘XDSDataAccessPolicyBypassRole’ role, then the user with this role will bypass any supplemental extensible data security (XDS) policies and their data access will be purely role-based. For example, if then XDS policy is created with Query “XDSQCustGroup10” and is assigned to role ‘X’, when ‘User1’ is assigned with role ‘X’ then ‘User1’ can see Customer group: 10 on all customers pages.</br></br>If ‘User1’ is also assigned with ‘XDSDataAccessPolicyBypassRole’ along with role ‘X’ then the filter will not be applied, as the XDS policy is bypassed with the role ‘XDSDataAccessPolicyBypassRole’. ‘User1’ can see all of the groups | [Allow Row version change tracking for tables and data entities (Preview)](../data-entities/rowversion-change-track.md) | Default |
+| Data integration: User-based service protection API limits are disabled by default. | User-based service protection API limits are no longer mandatory and are disabled by default. The limits may optionally be enabled with the **User-based service protection API limits** feature in **Feature management**. However, the limits will be disabled for all environments and the option removed from **Feature management** in a future release. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | Optional |
 
 
 ### Bug fixes
@@ -57,4 +57,4 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic 12 months before the removal of any feature from the product.
 
-For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
