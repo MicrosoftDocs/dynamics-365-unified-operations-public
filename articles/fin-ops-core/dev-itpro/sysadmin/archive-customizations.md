@@ -49,51 +49,27 @@ maintain table relations needs such as a foreign key index.
 ```xpp
 [ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]
 
-final class public final class
-LedgerArchiveAutomationJobRequestCreator_Extension
-
+final class public final class LedgerArchiveAutomationJobRequestCreator_Extension
 {
-
     public ArchiveJobPostRequest
     createPostJobRequest(LedgerArchiveAutomationCriteria _criteria)
-
     {
+        ArchiveJobPostRequest postRequest = next createPostJobRequest(_criteria);
+        ArchiveServiceArchiveJobPostRequestBuilder builder = ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
 
-    ArchiveJobPostRequest postRequest = next createPostJobRequest(_criteria);
-
-    ArchiveServiceArchiveJobPostRequestBuilder builder = ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
-
-    // Using builder add additional live tables, history tables, join conditions and where conditions (if needed)
-
-    // Example: Adding new ledger trans settlement table
-
-    DictTable generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry));
-
-    str generalJournalEntryTableName = generalJournalEntryTable.name(DbBackend::Sql);
-
-    DictTable newLedgerTransSettlementTable = new DictTable(tableNum(NewLedgerTransSettlement));
-
-    DictTable newLedgerTransSettlementHistoryTable = new DictTable(tableNum(NewLedgerTransSettlementHistory));
-
-    str nltsTableName = newLedgerTransSettlementTable.name(DbBackend::Sql);
-
-    str nltsHisTableName = NewLedgerTransSettlementHistoryTable.name(DbBackend::Sql);
-
-    builder.addDataSource(nltsTableName, nltsHisTableName, generalJournalAccountEntryTableName)
-
-        .addJoinCondition(
-
-        nltsTableName,
-
-        newLedgerTransSettlementTable.fieldName(fieldNum(NewLedgerTransSettlement, TransRecId), DbBackend::Sql),
-
-        generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId)))
-
-        .addPartitionWhereCondition(nltsTableName);
-
+        // Using builder add additional live tables, history tables, join conditions and where conditions (if needed)
+        // Example: Adding new ledger trans settlement table
+        DictTable generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry));
+        str generalJournalEntryTableName = generalJournalEntryTable.name(DbBackend::Sql);
+        DictTable newLedgerTransSettlementTable = new DictTable(tableNum(NewLedgerTransSettlement));
+        DictTable newLedgerTransSettlementHistoryTable = new DictTable(tableNum(NewLedgerTransSettlementHistory));
+        str nltsTableName = newLedgerTransSettlementTable.name(DbBackend::Sql);
+        str nltsHisTableName = NewLedgerTransSettlementHistoryTable.name(DbBackend::Sql);
+        builder.addDataSource(nltsTableName, nltsHisTableName, generalJournalAccountEntryTableName)
+            .addJoinCondition(nltsTableName,
+            newLedgerTransSettlementTable.fieldName(fieldNum(NewLedgerTransSettlement, TransRecId), DbBackend::Sql),
+            generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId))).addPartitionWhereCondition(nltsTableName);
         return builder.finalizeArchiveJobPostRequest();
-
     }
-
 }
 ```
