@@ -4,7 +4,7 @@
 title: United Arab Emirates (UAE) overview
 description: This article provides links to documentation resources for the United Arab Emirates (UAE). 
 author: liza-golub
-ms.date: 31/05/2023
+ms.date: 06/07/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
