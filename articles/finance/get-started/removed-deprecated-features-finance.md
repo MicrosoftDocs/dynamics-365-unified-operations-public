@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 01/11/2023
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By July 1, 2024, we plan to no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the \"Standard Audit File model mapping\" and \"FAF declaration\" menu item (**Tax** > **Declarations** > **FAF declaration**). New \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" runnable with [\"Standard Audit File for Tax (SAF-T) electronic report\"](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file) feature is introduced, [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
+| **Status**                         | Deprecated: By July 1, 2024, we will no longer support the \"FTA VAT Audit File (AE)\" Electronic reporting (ER) format using the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** > **Declarations** > **FAF declaration**). A new \"FTA Tax Audit File - FAF in TXT (AE)\" ER format using the \"SAF-T General model mapping\" is usable with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature that's been introduced, [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
 
 ## Features removed or deprecated in the Finance 10.0.31 release
 
