@@ -54,57 +54,46 @@ LedgerArchiveAutomationJobRequestCreator_Extension
 
 {
 
-public ArchiveJobPostRequest
-createPostJobRequest(LedgerArchiveAutomationCriteria \_criteria)
+    public ArchiveJobPostRequest
+    createPostJobRequest(LedgerArchiveAutomationCriteria \_criteria)
 
-{
+    {
 
-ArchiveJobPostRequest postRequest = next
-createPostJobRequest(\_criteria);
+    ArchiveJobPostRequest postRequest = next createPostJobRequest(\_criteria);
 
-ArchiveServiceArchiveJobPostRequestBuilder builder =
-ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
+    ArchiveServiceArchiveJobPostRequestBuilder builder = ArchiveServiceArchiveJobPostRequestBuilder::constructFromArchiveJobPostRequest(postRequest);
 
-// Using builder add additional live tables, history tables, join
-conditions and where conditions (if needed)
+    // Using builder add additional live tables, history tables, join conditions and where conditions (if needed)
 
-// Example: Adding new ledger trans settlement table
+    // Example: Adding new ledger trans settlement table
 
-DictTable generalJournalAccountEntryTable = new
-DictTable(tableNum(GeneralJournalAccountEntry));
+    DictTable generalJournalAccountEntryTable = new DictTable(tableNum(GeneralJournalAccountEntry));
 
-str generalJournalEntryTableName =
-generalJournalEntryTable.name(DbBackend::Sql);
+    str generalJournalEntryTableName = generalJournalEntryTable.name(DbBackend::Sql);
 
-DictTable newLedgerTransSettlementTable = new
-DictTable(tableNum(NewLedgerTransSettlement));
+    DictTable newLedgerTransSettlementTable = new DictTable(tableNum(NewLedgerTransSettlement));
 
-DictTable newLedgerTransSettlementHistoryTable = new
-DictTable(tableNum(NewLedgerTransSettlementHistory));
+    DictTable newLedgerTransSettlementHistoryTable = new DictTable(tableNum(NewLedgerTransSettlementHistory));
 
-str nltsTableName = newLedgerTransSettlementTable.name(DbBackend::Sql);
+    str nltsTableName = newLedgerTransSettlementTable.name(DbBackend::Sql);
 
-str nltsHisTableName =
-NewLedgerTransSettlementHistoryTable.name(DbBackend::Sql);
+    str nltsHisTableName = NewLedgerTransSettlementHistoryTable.name(DbBackend::Sql);
 
-builder.addDataSource(nltsTableName, nltsHisTableName,
-generalJournalAccountEntryTableName)
+    builder.addDataSource(nltsTableName, nltsHisTableName, generalJournalAccountEntryTableName)
 
-.addJoinCondition(
+        .addJoinCondition(
 
-nltsTableName,
+        nltsTableName,
 
-newLedgerTransSettlementTable.fieldName(fieldNum(NewLedgerTransSettlement,
-TransRecId), DbBackend::Sql),
+        newLedgerTransSettlementTable.fieldName(fieldNum(NewLedgerTransSettlement, TransRecId), DbBackend::Sql),
 
-generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry,
-RecId)))
+        generalJournalAccountEntryTable.fieldName(fieldNum(GeneralJournalAccountEntry, RecId)))
 
-.addPartitionWhereCondition(nltsTableName);
+        .addPartitionWhereCondition(nltsTableName);
 
-return builder.finalizeArchiveJobPostRequest();
+        return builder.finalizeArchiveJobPostRequest();
 
-}
+    }
 
 }
 ```
