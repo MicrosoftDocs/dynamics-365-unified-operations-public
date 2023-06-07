@@ -76,7 +76,7 @@ Import the most recent versions of the configurations. The version description u
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **FTA Tax Audit File - FAF in TXT (AE)**.
 
-[![Select **FTA Tax Audit File - FAF in TXT (AE)** in **General ledger parameters**.](./media/uae-faf-ud.png)](./media/uae-faf-gl.png)
+[![Select **FTA Tax Audit File - FAF in TXT (AE)** in **General ledger parameters**.](./media/uae-faf-gl.png)](./media/uae-faf-gl.png)
 
 ### <a name="header-information"></a>Set up company information for the reporting header
 
