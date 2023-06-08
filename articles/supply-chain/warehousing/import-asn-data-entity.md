@@ -1,5 +1,5 @@
 ---
-title: Import inbound ASNs through the V3 data entity
+title: Import inbound ASNs through the V3 and V5 data entity
 description: This article explains how to manage the import of inbound advanced shipping notices (ASNs) through the Inbound ASN data entity.
 author: GalynaFedorova
 ms.date: 05/11/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-06-04
 ms.dyn365.ops.version: 10.0.19
 ---
 
-# Import inbound ASNs through the V3 data entity
+# Import inbound ASNs through data entities
 
 [!include [banner](../../includes/banner.md)]
 
@@ -28,7 +28,7 @@ This article presents a collection of scenarios that show, through examples, how
 
 ## Inbound ASN
 
-You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V4_ composite data entities which takes advantage of the following child entities:
+You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V5_ composite data entities which takes advantage of the following child entities:
 
 - Inbound load header
 - Inbound shipment header
@@ -39,9 +39,12 @@ You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V4_ co
 
 The _Inbound ASN_ composite data entities are intended for asynchronous integration scenarios where for example XML file–based files imports can be used.
 > [!NOTE]
-> Only the _ASN V4_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders), In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders
+> Only the _ASN V5_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders). In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders.
 
-## XML format for importing ASNs
+> [!WARNING]
+> Please do not use the _ASN V4_ data entities - but use the **_ASN V5_**
+
+## XML format for importing V3 ASNs
 
 Microsoft Dynamics 365 Supply Chain Management supports the following XML format for importing ASNs. Each node in the XML file represents an attribute from an individual entity.
 
@@ -130,9 +133,9 @@ The following example shows an XML file for importing vendor shipments for multi
 </Document>
 ```
 
-## Inbound ASN V4 entity example
+## Inbound ASN V5 entity example
 
-The following subsection provide an example of ASN XML import files for inbound shipment orders for _ASN V4_. Note that the _ASN V4_ can as well be used for purchase orders and thereby supporting the same examples as shown above.
+The following subsection provide an example of ASN XML import files for inbound shipment orders for _ASN V5_. Note that the _ASN V5_ can as well be used for purchase orders and thereby supporting the same examples as shown above.
 
 ### Example 4
 
@@ -144,7 +147,7 @@ The following example shows an XML file for importing shipments for one inbound 
     <WHSInboundLoadHeaderEntity TRACTORNUMBER="0000104">
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_04">
             <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_004">
-                <WHSInboundLoadPackingStructureLineV4Entity MODULE="InboundShipmentOrder" ORDERNUMBER="00000174" ORDERLINENUMBER="1" ITEMNUMBER="A0001" QUANTITY="10" UNITSYMBOL="pcs"/>
+                <WHSInboundLoadPackingStructureLineV5Entity MODULE="InboundShipmentOrder" ORDERNUMBER="00000174" ORDERLINENUMBER="1" ITEMNUMBER="A0001" QUANTITY="10" UNITSYMBOL="pcs"/>
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>

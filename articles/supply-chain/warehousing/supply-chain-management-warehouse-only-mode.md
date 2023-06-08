@@ -280,6 +280,21 @@ The external system will get informed via business event and can read the shipme
 > [!NOTE] <!-- perlynne -->
 > When making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) for items being assigned to **Item model groups** not using _Inventory model_ as **Non-valuated** requires configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
+# Unsupported processes
+<!-- perlynne -->
+The following high-level processes are not supported out-of-the-box related to the **Inbound shipment orders** and **Outbound shipment orders**.
+
+|Process                          |Description                                       |
+|---------------------------------|--------------------------------------------------|
+| Linked quality order processing | For other type of source documents like for example _Purchase orders_ it is possible to define [_Quality associations_](../inventory/quality-management-for-warehouses-processes.md#quality-associations) to control the triggering for automatic quality orders creation. This is not yet supported |
+| Return order processing with disposition codes | When using the _Inbound shipment orders_ related to an inbound return process, it is not possible to use the same process as the [_Sales return orders_](sales-returns.md) which supports the use of _Return reason codes_ and _Disposition codes_ as part of the _Return order receiving (and put away)_ mobile device menu item flow |
+| Cross docking                   | When using the _Outbound shipment orders_ and _Inbound shipment orders_ for cross docking processing the [planned cross docking](planned-cross-docking.md) capability is not supported. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) |
+| Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. Instead the _Load item (and put away)_ setup must be used </li> <li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
+| Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
+| Outbound load planning with release to warehouse from loads | In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving |
+| Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
+| [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
+
 # Example of using inbound and outbound shipment orders
 
 This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
@@ -443,6 +458,8 @@ Having the two documents imported into the [message queue](#inbound-outbound-shi
 ## What to do when a message processing is **Failed**?
 
 The [message processing](../supply-chain-dev/message-processor.md) will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into  reprocessing (**Queue** option) or **Cancel** the message. Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message.
+> [!NOTE]
+> You can as well edit the _Failed_ messages in the [**inbound and outbound shipment order messages**](#inbound-and-outbound-shipment-order-messages) pages.
 
 ## Why does my message not get processed, but stays in the _Queued_ state?
 
@@ -472,13 +489,12 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 <!-- perlynne
 
 Update ..Cancel state message edit
-
 Setup post in-/out packing slip + Message processor process automation...  ?
-
 Detour Receiving complete
-
-ASN V5?
-
+Enhanced inbound receiving process
+ASN V5 => Check **Purch** for purchase orders. 
+Delivery remainder
+OData value mapping (Item/Warehouse) counting + dispatch/advice notification
 
 
 ### Warehouse management initiation wizard
