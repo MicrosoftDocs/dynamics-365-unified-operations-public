@@ -672,6 +672,12 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
+1. (Optional) If any of the nodes in your ConfigTemplate.xml have been setup with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
+
+```powershell
+.\Set-SFDynamicNodeTags.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
+
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations (on-premises) through Lifecycle Services. To establish connectivity from Lifecycle Services to the Finance + Operations (on-premises) tenant, you must configure a certificate that enables the local agent to act on behalf of your Azure AD tenant (for example, contoso.onmicrosoft.com).
