@@ -2,7 +2,7 @@
 title: Trial balance with transactional detail report
 description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 author: abruer
-ms.date: 03/07/2023
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
