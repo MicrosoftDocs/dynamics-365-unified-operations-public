@@ -50,7 +50,7 @@ According to the *Requirements Document for Tax Accounting Software* that the Fe
 
 [![Value added tax FastTab on the Legal entities page.](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
 
-To prepare your legal entity in Finance for VAT accounting and reporting, use the [Sales tax](../general-ledger/indirect-taxes-overview) functionality. For more detailed information, see the following articles:
+To prepare your legal entity in Finance for VAT accounting and reporting, use the [Sales tax](../general-ledger/indirect-taxes-overview.md) functionality. For more detailed information, see the following articles:
 
 - [Setting up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)
 - [Set up a sales tax settlement period](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
@@ -185,7 +185,7 @@ After all the configurations are uploaded, the configuration tree should be pres
 
 To generate the VAT declaration report for UAE in Excel, use the standard **Report sales tax for settlement reporting period** procedure (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement reporting period**), and print the VAT declaration report.
 
-To generate the VAT declaration after a VAT settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Export VAT file**. (For more information, see [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment).)
+To generate the VAT declaration after a VAT settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Export VAT file**. (For more information, see [Create a sales tax payment](../general-ledger/tasks/create-sales-tax-payment.md).)
 
 [![Sales tax parameters line item.](./media/uae_vat_12.jpg)](./media/uae_vat_12.jpg)
 
