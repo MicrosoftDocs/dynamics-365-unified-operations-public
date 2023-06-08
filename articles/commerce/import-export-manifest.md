@@ -90,11 +90,7 @@ The following table shows the schema for asset import/export operations.
 | ErrorCode                            | Error code.                                                 |
 | ResultDescription                    | Detailed description of the result (for example, an error description). |
 
-<!-- Sample asset manifests (Urls redacted/removed)-->
-
-<!--Sample manifests have all been exported from an environment. They could be imported back (to that same environment) or imported to another environment after clearing the InternalMediaId, MediaChannel and MediaVersion fields.-->
-
-Mandatory fields for manifest import (for new assets):
+#### Mandatory fields for manifest import (for new assets)
 
 - MediaLocale
 - MediaType
@@ -103,7 +99,7 @@ Mandatory fields for manifest import (for new assets):
 - MediaDisplayName
 - MediaTitle (for video assets)
 
-Mandatory fields for manifest import (for existing assets):
+#### Mandatory fields for manifest import (for existing assets)
 
 - InternalMediaId
 - MediaChannel
@@ -113,9 +109,9 @@ Mandatory fields for manifest import (for existing assets):
 - MediaDisplayName
 - MediaTitle (for video assets)
 
-Columns can be in any order in the import manifest. Export manifests always contain all available fields for assets (depending on the asset type).
+Columns can be in any order in an import manifest. Export manifests always contain all available fields for assets (depending on the asset type).
 
-The same manifest schema can be used for product media assignments. Product media assignment manifests must include the mandatory fields of the base asset manifest as well. For information on product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
+The same manifest schema can be used for product media assignments. Product media assignment manifests must also include the mandatory fields of the base asset manifest. For information on product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
 
 ### Schema extension for product media assignments
 
@@ -128,23 +124,23 @@ The following table shows the schema extension for product media assignments.
 | EntityKeyValue                      | The value of the key specified in EntityKey.                                                                                  |
 | EntityLocale                        | Locale of the product assignment.                                                                                            |
 | CatalogNumber                       | Catalog number this assignment is associated with.                                                                           |
-| EntityChannel                       | Channel operating unit number (OUN) this assignment is associated with.                                                                              |
+| EntityChannel                       | Channel operating unit number (OUN) associated with the assignment.                                                                              |
 | EntityAssignmentCurrentPublishState | Publish state of the assignment.                                                                                              |
 | EntityAssignmentAction              | PublishNow, Draft, Unpublish, UnpublishAndDelete                                                                             |
 | EntityCheckedOutAction              | UseExisting, Overwrite                                                                                                       |
 | EntityVersionMismatchAction         | UseExisting, Overwrite                                                                                                       |
 | MediaGroup                          | Media group of the asset (Primary/Additional).                                                                                |
-| MediaPurpose                        | Purpose of the asset (free-text).                                                                                             |
+| MediaPurpose                        | Purpose of the asset (free text).                                                                                             |
 | MediaDisplayOrder                   | Display order.                                                                                                                |
 | SwatchGroup                         | Swatch group (for example, Size or Style).                                                                                            |
-| SwatchDimension                     | Swatch dimension (e.g. M, XL, XXL)                                                                                           |
-| SwatchValue                         | Swatch value (Hexidecimal code of the color or identity identifier of an image asset).                                                |
+| SwatchDimension                     | Swatch dimension (for example, M, XL, XXL)                                                                                           |
+| SwatchValue                         | Swatch value (hexidecimal code of the color or identity identifier of an image asset).                                                |
 | EntityCreatedOn                     | Date and time when the assignment was created.                                                                                |
 | EntityLastModifiedOn                | Date and time when the assignment was last modified.                                                                          |
 | EntityVersion                       | Assignment version number.                                                                                                    |
 | EntityPublishedOn                   | Date and time when the assignment was published.                                                                              |
 
-For more information on swatches, see \[LINK TO NICK – PRODUCT-SPECIFIC SWATCHES\]. For more information on media groups, please see \[LINK TO NICK – ASSIGN MEDIA TO SIMPLE PRODUCTS\].
+For more information on swatches, see [Product-specific swatches](assign-media-omnichannel.md#product-specific-swatches). For more information on media groups, please see [Assign media to simple products](assign-media-omnichannel.md#assign-media-to-simple-products).
 
 ## Import an asset manifest 
 
