@@ -2,7 +2,7 @@
 title: Trial balance with transactional detail report
 description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
 author: abruer
-ms.date: 03/07/2023
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,9 +110,9 @@ The information that is shown in the **Document** and **Description** columns va
 | Transaction type | Document | Description |
 |------------------|----------|-------------|
 | General journal – Ledger accounts only | Journal batch number | Ledger account or Offset ledger account |
-| General journal – Vendor/Ledger account | Journal batch number | Vendor name |
-| Free text invoice or Free text credit memo | Free text invoice number | Customer name: XXXXXX Line description |
-| Vendor invoice | Invoice number and invoice date | Vendor name |
-| Vendor payment journal or Customer payment journal | Journal batch number | Vendor name or Customer name |
+| General journal – Vendor accounts only and Invoice journal | Pay number and Pay date | Vendor name |
+| Free text invoice or Free text credit memo | Posting type and Free text invoice number | Journal number and Free text invoice |
+| Vendor invoice | Posting type and Invoice number and invoice date | Journal number and Vendor invoice |
+| Vendor payment journal or Customer payment journal | Pay number and Pay date | Vendor name or Customer name |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
