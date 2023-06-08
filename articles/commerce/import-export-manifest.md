@@ -21,7 +21,7 @@ This article describes how to bulk import and export digital assets using manife
 
 You can perform manifest-based asset import and export operations in the Commerce site builder media library. Manifest-based operations require (during import) or produce (during export) a manifest file, which is a tab-delimited \*.tsv text file that lists all assets that are part of the operation. For export operations, all asset information is included in the manifest, including read-only metadata information such as when assets were created and published. Import operations only require a subset of asset information in the manifest for each asset, the remaining fields are optional.
 
-When imported, manifest documents are processed row by row. If the processing of any of the rows fails for any reason, a description of the error is included in the resulting manifest, which can be downloaded from the job details view. If one of multiple entries in a manifest fails, it won't prevent the rest of the manifest from being processed. If an error requires you to fix something in the manifest (for example, if the source URL is incorrect), the result manifest from the first run can be used to fix and reprocess the assets that generated errors.
+When imported, manifest documents are processed row by row. If the processing of any of the rows fails for any reason, a description of the error is included in the resulting manifest, which can be downloaded from the job details view (**Site settings \> Jobs**) in site builder. If one of multiple entries in a manifest fails, this won't prevent the rest of the manifest from being processed. If an error requires you to fix something in a manifest (for example, if the source URL is incorrect), the result manifest from the first run can be used to fix and reprocess the assets that generated errors.
 
 The main use cases for manifest-driven asset import and export operations are:
 
@@ -142,7 +142,7 @@ For more information on swatches, see [Product-specific swatches](assign-media-o
 
 ## Import asset manifests
 
-You can import asset manifests to the site builder media library of any of e-commerce site, or to your omnichannel. Manifests with product media assignments must be imported from the **Product media** view in your omnichannel.
+You can import asset manifests to the site builder media library of your e-commerce site or omnichannel. Manifests with product media assignments must be imported from the **Product media** view in your omnichannel.
 
 ### Bulk import an asset manifest
 
@@ -150,17 +150,17 @@ Manifest-based asset import operations for e-commerce sites are initiated from t
 
 To bulk import an asset manifest in site builder, follow these steps.
 
-1. Go to the site into which you want to import the manifest.
-2. Go to **Media library**.
-3. Select **Bulk import**. The **Bulk import files** dialog box appears.
-4. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
-5. Under **Select a manifest file for import**, select **browse your computer** to select the manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
-6. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
-7. Select **Next**. 
-8. If you selected the **Import using local files from my device** checkbox above, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine. If you are not importing media assets, proceed to step 11.
-9. After selecting the media directory to upload, you may see a confirmation dialog box appear, depending on your browser. After reviewing the message, select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated showing the folder you selected for upload.
-10. Select **Next**.
-11. In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
+1. In site builder, go to the site into which you want to import the manifest.
+1. Go to **Media library**.
+1. Select **Bulk import**. The **Bulk import files** dialog box appears.
+1. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
+1. Under **Select a manifest file for import**, select **browse your computer** to select the manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
+1. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
+1. Select **Next**. 
+1. If you selected the **Import using local files from my device** checkbox above, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine. If you are not importing media assets, proceed to step 11.
+1. After selecting the media directory to upload, you may see a confirmation dialog box appear, depending on your browser. After reviewing the message, select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated showing the folder you selected for upload.
+1. Select **Next**.
+1. In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
 
 ### Bulk import a product media assignment asset manifest
 
@@ -168,30 +168,30 @@ Manifest-based product media assignment asset import operations are initiated fr
 
 To bulk import a product media assignment asset manifest, follow these steps.
 
-1. Go to the omnichannel for your environment.
-2. Select **Product media**.
-3. Select **Bulk import**.
-4. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
-5. Under **Select a manifest file for import**, select **browse your computer** to select the product media assignment asset manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
-6. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
-7. Select **Next**. 
-8. If you selected the **Import using local files from my device** checkbox above, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine. If you are not importing media assets, proceed to step 11.
-9. After selecting the media directory to upload, you may see a confirmation dialog box appear, depending on your browser. After reviewing the message, select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated showing the folder you selected for upload.
-10. Select **Next**.
-11. In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
+1. In site builder, go to the omnichannel for your environment.
+1. Select **Product media**.
+1. Select **Bulk import**.
+1. Under **Import details**, enter a name (required) and a description (optional) for the job, then select **Next**.
+1. Under **Select a manifest file for import**, select **browse your computer** to select the product media assignment asset manifest file on your your local machine, or drag and drop the manifest file onto the **Drop your file here** box.
+1. If the manifest references asset binaries from the local machine, select the **Import using local files from my device** checkbox.
+1. Select **Next**. 
+1. If you selected the **Import using local files from my device** checkbox above, under **Select a media directory**, select **Browse**, and then select the media directory on your local machine. If you are not importing media assets, proceed to step 11.
+1. After selecting the media directory to upload, you may see a confirmation dialog box appear, depending on your browser. After reviewing the message, select **Upload**, **OK**, or **Yes** (depending on your browser). The **Select a media directory** dialog box is then updated showing the folder you selected for upload.
+1. Select **Next**.
+1. In the **Review and finish** dialog box, review the job settings, and then select **Begin import**.
 
 ## Export asset manifests 
 
-You can export asset manifests from the site builder media library of any of e-commerce site, or from your omnichannel. Manifests with product media assignments must be exported from the **Product media** view in your omnichannel.
+You can export asset manifests from the site builder media library of your e-commerce site or omnichannel. Manifests with product media assignments must be exported from the **Product media** view in your omnichannel.
 
 ### Bulk export an asset manifest
 
 To bulk export an asset manifest, follow these steps.
 
-1.  Go to the site or omnichannel from which you want to export the manifest.
-2.  Go to **Media library**.
-3.  Select the assets you want to export, and then select **Bulk export**. Alternatively, to export all media assets, select **Export entire library**.
-4.  Enter a name and description for the export job, review the selected media, and then select **Export**.
+1. In site builder, go to the site or omnichannel from which you want to export the manifest.
+1. Go to **Media library**.
+1. Select the assets you want to export, and then select **Bulk export**. Alternatively, to export all media assets, select **Export entire library**.
+1. Enter a name and description for the export job, review the selected media, and then select **Export**.
 
 The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
 
@@ -199,13 +199,13 @@ The job status can be monitored from **Site settings \> Jobs**, or by selecting 
 
 To bulk export a product media assignment manifest, follow these steps.
 
-1.  Go to the omnichannel of your environment.
-2.  Select **Product media**.
-3.  Select **Bulk export**.
-4.  Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
-5.  If you selected **Export media assignments for specific products**, under **All products**, select the products from which you want to export the media assignments, and then select **Next**. If you selected **Export media assignments for all products**, proceed to step 6.
-6.  If you want to export all locales and not just the currently selected locale, select the **Export all locales** checkbox.
-7.  Select **Export product media**.
+1. In site builder, go to the omnichannel of your environment.
+1. Select **Product media**.
+1. Select **Bulk export**.
+1. Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
+1. If you selected **Export media assignments for specific products**, under **All products**, select the products from which you want to export the media assignments, and then select **Next**. If you selected **Export media assignments for all products**, proceed to step 6.
+1. If you want to export all locales and not just the currently selected locale, select the **Export all locales** checkbox.
+1. Select **Export product media**.
 
 The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
 
