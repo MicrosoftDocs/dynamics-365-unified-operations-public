@@ -55,6 +55,7 @@ To schedule a general ledger archive job, follow these steps:
 1. You return to the **Active** workspace, which now shows the archive job you just created (with an **Archive status** of *Scheduled*). The job will run at the scheduled time.
 
 <!--KFM: What is the "Fiscal calendar" drop-down list for? -->
+<!-- RCC: The fiscal calendar is the base pivot of data - meaning you have to pick that, then you can see all the companies and the the years in use for that given fiscal calendar. --> 
 
 ## Review the progress and log of an archive job
 
@@ -71,14 +72,14 @@ To review the progress and log of an archive job, follow these steps:
 
 To view the historical general ledger data, go to **General ledger \> Inquiries and reports \> Voucher transactions history**.
 
-<!-- KFM: This section isn't clear. Is that really the right navigation path to see this?  Are we reviewing a history of archive jobs, or looking at the archived records themselves? Is it possible to view the archived data, as with SO? Confirm with UI. -->
+<!-- KFM: This section isn't clear. Is that really the right navigation path to see this?  Are we reviewing a history of archive jobs, or looking at the archived records themselves? Is it possible to view the archived data, as with SO? Confirm with UI. RCC - view the history records themselves -->
 
 ## Reverse an archive
 
-When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived sales order becaus you can edit records in the history tables. To reverse an archive, follow these steps:
+When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived transaction because you cannot edit records in the history tables. To reverse an archive, follow these steps:
 
 1. Open the **Archive** workspace.
 1. Open the **General ledger archive** tab.
 1. Your existing archives are listed in the grid. Select the archive you want to reverse and then select **Reverse** on the toolbar.
 1. The **Reverse** dialog opens. Schedule the reverse job by entering a **Reversal start time** and select **OK**.
-1. A message appears asking you to confirm the operation. Select **OK** to confirm. <!-- KFM: Confirm this step -->
+1. A message appears asking you to confirm the operation. Select **OK** to confirm. <!-- KFM: Confirm this step - RCC correct -->
