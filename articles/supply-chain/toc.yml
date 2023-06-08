@@ -3731,6 +3731,8 @@
           href: warehousing/mobile-device-parameters.md
         - name: Mobile device user accounts
           href: warehousing/mobile-device-work-users.md
+        - name: Warehouse Mobile app accessibility features
+          href: warehousing/warehouse-app-accessibility.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
