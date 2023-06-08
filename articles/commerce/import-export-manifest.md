@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 06/07/2023
+ms.date: 06/08/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,11 +17,11 @@ ms.search.validFrom: 2023-03-01
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce site builder, and also describes the manifest schema and provides examples of import and export operations.
+This article describes how to bulk import and export digital assets using manifests in Microsoft Dynamics 365 Commerce site builder, and also describes the manifest schema.
 
-Manifest-based asset import and export operations are executed in the Commerce site builder media library. Manifest-based operations always require (for import) or produce (during export) a manifest file, which is a tab-delimited \*.tsv text file listing all the assets that are part of the operation. For export operations, all of the asset information is included in the manifest, including read-only metadata information such as when assets were created and published. Import operations only require a subset of the fields to be entered for each asset, the remaining fields are optional.
+You can perform manifest-based asset import and export operations in the Commerce site builder Media library. Manifest-based operations require (during import) or produce (during export) a manifest file, which is a tab-delimited \*.tsv text file that lists all assets that are part of the operation. For export operations, all asset information is included in the manifest, including read-only metadata information such as when assets were created and published. Import operations only require a subset of asset information in the manifest for each asset, the remaining fields are optional.
 
-When imported, manifest documents are processed row by row. If the processing of any of the rows fails for any reason, a description of the error is included in the resulting manifest which can be downloaded from the job details view. If one of multiple entries in a manifest fails, it won't prevent the rest of the manifest from being processed. If the error requires the user to fix something in the manifest (for example, if the source URL is incorrect), the result manifest from the first run can be used to fix and reprocess the assets with errors.
+When imported, manifest documents are processed row by row. If the processing of any of the rows fails for any reason, a description of the error is included in the resulting manifest, which can be downloaded from the job details view. If one of multiple entries in a manifest fails, it won't prevent the rest of the manifest from being processed. If an error requires you to fix something in the manifest (for example, if the source URL is incorrect), the result manifest from the first run can be used to fix and reprocess the assets that generated errors.
 
 The main use cases for manifest-driven asset import and export operations are:
 
@@ -34,9 +34,9 @@ Manifests can also be used to import and export product media assignments. The s
 
 ## Manifest schema
 
-Manifest documents are tab delimited unicode text files with \*.tsv extensions. The first row of the manifest is a header row and contains the column names. After the header row, each following row represents a single asset and its associated metadata. For the initial ingestion of an asset, binary files (in other words, actual assets) must be provided along with the manifest, either as a local upload or as publicly accessible HTTP source URLs.
+Manifest documents are tab-delimited unicode text files with \*.tsv extensions. The first row of the manifest is a header row and contains the column names. After the header row, each following row represents a single asset and its associated metadata. For the initial ingestion of an asset, binary files (in other words, actual assets) must be provided along with the manifest, either as a local upload or as publicly accessible HTTP source URLs.
 
-After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page (**Site settings \> Jobs**). See the last four rows in the schema description below for what error information is captured and provided.
+After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page (**Site settings \> Jobs**) in site builder. The last four rows in the schema description below describe what error information is captured and provided.
 
 <!--![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)-->
 
