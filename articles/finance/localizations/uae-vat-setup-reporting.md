@@ -4,7 +4,7 @@
 title: Set up and report value-added tax (VAT)
 description: This article explains how to set up and report value-added tax (VAT).
 author: liza-golub
-ms.date: 10/20/2021
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,22 +32,24 @@ ms.search.validFrom: 2019-05-29
 
 Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
 
-Registered businesses and traders charge VAT to all their customers at the current rate, and they incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
+Registered businesses and traders charge VAT to all their customers at the current rate, and they incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases. This includes supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
 ## <a name="header-information"></a>Configure a legal entity for VAT
 
-According to *Requirements Document for Tax Accounting Software* issued by the Federal Tax Authority (FTA), additional information must be set up in the configuration of a legal entity. In Finance, go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, on the **Value added tax** FastTab, set the following fields:
+According to the *Requirements Document for Tax Accounting Software* issued by the Federal Tax Authority (FTA), additional information must be set up when you configure a legal entity. 
 
-- **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the UI language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
-- **Tax agency name** and **Tax agent name** – The tax agency name, tax agency number, tax agent name, and tax agent approval number are required when electronic VAT reports are prepared by a contracted tax agent or vendor.
-- **Declarant name** – The electronic VAT report will include information about the person who is preparing a VAT declaration.
-- **VAT refund required (if any)** – Set this option to **Yes** if a VAT refund is due, and the company has requested to receive it.
-- **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
-- **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
+In Dynamics 365 Finance, go to **Organization administration** \> **Organizations** \> **Legal entities** and on the **Value added tax** FastTab, set the following fields:
 
-[![Value added tax FastTab on the Legal entities page.](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
+  - **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the UI language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
+  - **Tax agency name** and **Tax agent name** – The tax agency name, tax agency number, tax agent name, and tax agent approval number are required when electronic VAT reports are prepared by a contracted tax agent or vendor.
+  - **Declarant name** – The electronic VAT report will include information about the person who is preparing a VAT declaration.
+  - **VAT refund required (if any)** – Set this option to **Yes** if a VAT refund is due, and the company has requested to receive it.
+  - **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
+  - **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
 
-To prepare your legal entity in Finance for VAT accounting and reporting, use [Sales tax](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview) functionality. For more detailed information, see the following topics:
+    [![Value added tax FastTab on the Legal entities page.](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
+
+To prepare your legal entity in Finance for VAT accounting and reporting, use the [Sales tax](../general-ledger/indirect-taxes-overview) functionality. For more detailed information, see the following articles:
 
 - [Setting up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)
 - [Set up a sales tax settlement period](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
