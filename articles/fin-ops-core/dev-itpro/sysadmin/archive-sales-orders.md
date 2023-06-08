@@ -53,7 +53,7 @@ To schedule sales order archiving, follow these steps:
     - **Name** – Select *Sales order archive automation*.
     - **Company** – Select the legal entity (company) for which you want to archive sales orders.
 1. Select **Archive** to apply your settings and close the drop-down dialog box.
-1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). You can also set up alerts as needed.
+1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). You can also set up alerts as needed. <!-- KFM: Is a name required? Is there a duration setting that we should mention? -->
 1. Select **Next** to continue to the **Sales order archive automation** tab. Make the following settings:
     - **Archive from date** – Enter the date of the oldest sales orders that you want to archive.
     - **Archive to date** – Enter the date of the newest sales orders that you want to archive.
@@ -65,10 +65,22 @@ To schedule sales order archiving, follow these steps:
 
 ## Review archived sales orders
 
-The **Archive** workspace shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status. The orders listed here haven't yet been moved to your Dataverse managed data lake. They're now available for review and can be moved to your Dataverse managed data lake at any time, as described in the next section.
+The **Archive** workspace shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status. Follow these steps to view details about a selected archive:
 
 1. Open the **Archive** workspace.
-1. On the **Section** FastTab, open the **Sales order archive** tab.
+1. Open the **Sales order archive** tab.
 1. Your sales order archives are listed in the grid. To view details about the sales orders included in any archive, select an archive and then select **Archived sales order details** on the toolbar.
 1. The **Archived sales orders** page opens, showing a list of each sales order included in the archive.
 1. To view an order, including its header and all of its order lines, select it in the grid and select **Archived sales order details** on the Action Pane. From the order details, you can view more related information about an order by opening the **Inquiry** menu on the Action Pane and then choose the entry for the type of records you'd like to inspect (**Sent sales quotations**, **Sales order confirmations**, **Picking list**, **Packing slip** or **Invoice journal**).
+
+## Reverse an archive
+
+When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived sales order becaus you can edit records in the history tables. To reverse an archive, follow these steps:<!-- KFM: Confirm this procedure -->
+
+1. Open the **Archive** workspace.
+1. Open the **Sales order archive** tab.
+1. Your existing archives are listed in the grid. Select the archive you want to reverse and then select **Reverse** on the toolbar.
+1. The **Reverse** dialog opens. Schedule the reverse job by entering a **Reversal start time** and select **OK**.
+1. A message appears asking you to confirm the operation. Select **OK** to confirm. <!-- KFM: Confirm this label -->
+
+<!-- KFM: Check whether more toolbar or Action Pane buttons need documentation (maybe history or log buttons) -->

@@ -43,8 +43,7 @@ maintain table relations needs such as a foreign key index.
 
 ## Example: Extend the general ledger archive job request creator class to add an additional table
 
-<!-- TODO get the code snip here. -->
-<!-- KFM: Is the following code the code you mean? Is this X++? Should we add some indenting? Do I see incorrect carriage returns here? -->
+The following code example shows how to extend the `LedgerArchiveAutomationJobRequestCreator` class to add an additional table to the archive scope.
 
 ```xpp
 [ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]

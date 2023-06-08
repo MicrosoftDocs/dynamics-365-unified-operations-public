@@ -34,46 +34,51 @@ To use this feature, your system must meet the following requirements:
     - *(Preview) Archive*
     - *(Preview) Ledger archive automation*
 
-## <a name="archival-requirements"></a>Which general ledger data can be archived and when 
+## <a name="archival-requirements"></a>Which general ledger data can be archived and when
 
 General ledger data can be moved to history when the following conditions are met:
 
 - The year end close process has been completed for the year.
 - All periods are *on hold* or *permanently closed*.
 - The prior year has already moved to history or long-term retention.
-Once these conditions are met, the fiscal year will change to "Ready" 
 
-## Schedule archive of general ledger
+Once these conditions are met, the fiscal year will change to *Ready* status and will be available for archiving.
+
+## Schedule archiving of general ledger data
 
 To schedule a general ledger archive job, follow these steps:
 
 1. Open the **Archive** workspace.
-1. On the Action Pane, select **Archive** to open a drop-down dialog box, and then select **LedgerArchiveAutomation**.
-1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the name and when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences).  You can also schedule an "occurrence runtime limit" to define the total amount of time an archive job runs in a day. If an archive job does not finish executing within the occurrence runtime limits, the job will be paused and picked up at the next execution occurrence.
+1. On the Action Pane, select **Archive** to open a drop-down dialog box. Then set **Name** to *LedgerArchiveAutomation* and select **Archive**.
+1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the archive **Name** (required), when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). If you choose to set up multiple occurrences, then you can also set a **Duration**, which sets a limit on the amount of time an archive job runs in a day; if an archive job does not finish running within this limit, the job will be paused and picked up at the next execution occurrence. <!--KFM: Confirm this about the **Duration** setting. --> You can also set up alerts as needed.
+1. Select **Next** to continue to the **Ledger archive automation selection** tab. This page shows a list record collections that meet the [archival requirements](#archival-requirements) (grouped by company and fiscal year). Select the record collection you want to archive, and then select **Finish**.
+1. You return to the **Active** workspace, which now shows the archive job you just created (with an **Archive status** of *Scheduled*). The job will run at the scheduled time.
 
-1. Select **Next** to continue to the **Ledger archive automation selection**
+<!--KFM: What is the "Fiscal calendar" drop-down list for? -->
 
-<!-- [!NOTE] Only fiscal years that are in the *Ready* state are shown in this list. -->
-<!-- KFM: Shouldn't we add this to the archival requirements section? RCC the status of Ready will only happen when the req are met, so I'll change the above.  -->
+## Review the progress and log of an archive job
 
-1. Select **Finish**.
+To review the progress and log of an archive job, follow these steps:
+
+1. Open the **Archive** workspace.
+1. Open the **General ledger archive** tab.
+1. In the grid, select the archive job you want to inspect.
+1. On the toolbar, select **View results**.
+1. The **General ledger archive progress** dialog box opens, showing the archive progress of each table that is being archived. To see more details, select the **View detailed logs** button.
+1. Select **Close** to return to the **Archive** workspace.
 
 ## Review general ledger historical data
 
-To view the historical general ledger data use the provided form found in the menu at:
-*General ledger - inquiries and reports - Voucher transactions history.*
+To view the historical general ledger data, go to **General ledger \> Inquiries and reports \> Voucher transactions history**.
 
-## Progress results and logs
+<!-- KFM: This section isn't clear. Is that really the right navigation path to see this?  Are we reviewing a history of archive jobs, or looking at the archived records themselves? Is it possible to view the archived data, as with SO? Confirm with UI. -->
 
-Once an archive job is scheduled and running, the progress and log information can be viewed by pressing the 'View Results' button. Additional details can be found by viewing the detailed logs.  
+## Reverse an archive
 
-## Reverse an archive job
+When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived sales order becaus you can edit records in the history tables. To reverse an archive, follow these steps:
 
-To reverse a job, select the reverse button from the workspace with the archive job selected you intend to reverse. A dialog will appear requesting the start time for the reverse job to begin. After entering a start time and pressing OK, a message will appear verifying your approval to proceed.
-
-<!-- KFM: We should not speculate about future functionality in documentation. Recommend removing this section.  RCC Noted, left commented out for next release. 
-## Dataverse long term retention
-
-Future releases will enable the movement of data from Finance and Operations history tables to Dataverse long term retention. This moves data from the existing database to a Microsoft managed data lake storage location, completely removing this data from your Finance and Operations database.
-
--->
+1. Open the **Archive** workspace.
+1. Open the **General ledger archive** tab.
+1. Your existing archives are listed in the grid. Select the archive you want to reverse and then select **Reverse** on the toolbar.
+1. The **Reverse** dialog opens. Schedule the reverse job by entering a **Reversal start time** and select **OK**.
+1. A message appears asking you to confirm the operation. Select **OK** to confirm. <!-- KFM: Confirm this step -->

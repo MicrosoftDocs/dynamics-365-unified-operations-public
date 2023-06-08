@@ -27,12 +27,22 @@ The archive solution lets you archive transactional data to *history tables* wit
 1. The system removes the data range specified from the live tables.
 
 > [!NOTE]
-> Data can't be changed once it is moved to a history table.
+> Data in the history tables can't be edited.
 
-The solution also provides the ability to reverse data from the history table back to the live table if needed, such as if you need to rectify the archived data.
+## The Archive workspace
+
+Use the **Archive** workspace to create and work with your archives. It lets you do the following actions:
+
+- Set up and schedule archive jobs
+- Browse archives
+- Monitor the progress of running archive jobs
+- Cancel scheduled archive jobs
+- Review the archive history and logs
+- Reverse archives (for example, if you need to edit the data of an archived record)
 
 ## Next steps
 
 - Install the required add-in and enable the features you need as described in [Set up record archiving](archive-setup.md)
 - [Extend the archive solution to support custom tables and fields](archive-customizations.md)
-- [Work with the Archive workspace](archive-using.md)
+- [Archive general ledger data](archive-general-ledger.md)
+- [Archive sales orders](archive-sales-orders.md)

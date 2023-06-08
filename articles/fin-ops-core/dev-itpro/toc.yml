@@ -287,8 +287,6 @@ items:
           href: sysadmin/archive-setup.md
         - name: Extend the archive solution to support custom tables and fields
           href: sysadmin/archive-customizations.md
-        - name: Work with the Archive workspace
-          href: sysadmin/archive-using.md
         - name: Archive general ledger data
           href: sysadmin/archive-general-ledger.md
         - name: Archive sales orders
