@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: twheeloc
-ms.date: 01/11/2023
+ms.date: 06/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Finance 10.0.36 release
+
+### "FTA VAT Audit File (AE)" Electronic reporting (ER) format using the "Standard Audit File model mapping" and "FAF declaration" menu item
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new **FTA Tax Audit File - FAF in TXT (AE)** Electronic reporting (ER) format that uses the **SAF-T General** model mapping and the **Standard Audit File for Tax (SAF-T) electronic report** feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By July 1, 2024, we will no longer support the **FTA VAT Audit File (AE)** ER format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**). A new **FTA Tax Audit File - FAF in TXT (AE)** ER format has been introduced that uses the **SAF-T General** model mapping and can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). |
 
 ## Features removed or deprecated in the Finance 10.0.31 release
 
