@@ -75,7 +75,7 @@ The **Archive** workspace shows your full archiving history. Each row in the gri
 
 ## Reverse an archive
 
-When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived sales order becaus you can edit records in the history tables. To reverse an archive, follow these steps:<!-- KFM: Confirm this procedure -->
+When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived sales order because you cannot edit records in the history tables. To reverse an archive, follow these steps:<!-- KFM: Confirm this procedure -->
 
 1. Open the **Archive** workspace.
 1. Open the **Sales order archive** tab.
