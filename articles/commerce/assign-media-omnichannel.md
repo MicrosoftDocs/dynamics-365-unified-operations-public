@@ -179,7 +179,3 @@ To assign a default image for a channel-specific category, follow these steps.
 [Configure dimension values in Commerce headquarters](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
-[TEST_1](#product-specific-swatches)
-[TEST_2](#product--specific-swatches)
