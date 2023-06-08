@@ -34,13 +34,14 @@ To use this feature, your system must meet the following requirements:
     - *(Preview) Archive*
     - *(Preview) Ledger archive automation*
 
-## <a name="archival-requirements"></a>Which general ledger data can be archived and when
+## <a name="archival-requirements"></a>Which general ledger data can be archived and when 
 
 General ledger data can be moved to history when the following conditions are met:
 
 - The year end close process has been completed for the year.
 - All periods are *on hold* or *permanently closed*.
 - The prior year has already moved to history or long-term retention.
+Once these conditions are met, the fiscal year will change to "Ready" 
 
 ## Schedule archive of general ledger
 
@@ -48,11 +49,12 @@ To schedule a general ledger archive job, follow these steps:
 
 1. Open the **Archive** workspace.
 1. On the Action Pane, select **Archive** to open a drop-down dialog box, and then select **LedgerArchiveAutomation**.
-1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the name and when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences). You can also set up alerts as needed.
+1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the name and when the archive job should start running, how often it should run, and when it should stop running (if you set up multiple occurrences).  You can also schedule an "occurrence runtime limit" to define the total amount of time an archive job runs in a day. If an archive job does not finish executing within the occurrence runtime limits, the job will be paused and picked up at the next execution occurrence.
+
 1. Select **Next** to continue to the **Ledger archive automation selection**
 
-    > [!NOTE]
-    > Only fiscal years that are in the *Ready* state are shown in this list. <!-- KFM: Shouldn't we add this to the archival requirements section? -->
+<!-- [!NOTE] Only fiscal years that are in the *Ready* state are shown in this list. -->
+<!-- KFM: Shouldn't we add this to the archival requirements section? RCC the status of Ready will only happen when the req are met, so I'll change the above.  -->
 
 1. Select **Finish**.
 
@@ -61,8 +63,15 @@ To schedule a general ledger archive job, follow these steps:
 To view the historical general ledger data use the provided form found in the menu at:
 *General ledger - inquiries and reports - Voucher transactions history.*
 
-<!-- KFM: We should not speculate about future functionality in documentation. Recommend removing this section. 
+## Progress results and logs
 
+Once an archive job is scheduled and running, the progress and log information can be viewed by pressing the 'View Results' button. Additional details can be found by viewing the detailed logs.  
+
+## Reverse an archive job
+
+To reverse a job, select the reverse button from the workspace with the archive job selected you intend to reverse. A dialog will appear requesting the start time for the reverse job to begin. After entering a start time and pressing OK, a message will appear verifying your approval to proceed.
+
+<!-- KFM: We should not speculate about future functionality in documentation. Recommend removing this section.  RCC Noted, left commented out for next release. 
 ## Dataverse long term retention
 
 Future releases will enable the movement of data from Finance and Operations history tables to Dataverse long term retention. This moves data from the existing database to a Microsoft managed data lake storage location, completely removing this data from your Finance and Operations database.
