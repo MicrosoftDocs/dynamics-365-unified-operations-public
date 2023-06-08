@@ -38,8 +38,6 @@ Manifest documents are tab-delimited unicode text files with \*.tsv extensions. 
 
 After a manifest-based import operation has completed, the imported manifest with import results and possible error information can be downloaded from the **Past jobs** tab on the **Site jobs** page (**Site settings \> Jobs**) in site builder. The last four rows in the schema description below describe what error information is captured and provided.
 
-<!--![A screenshot of a computer Description automatically generated with medium confidence](media/image1.png)-->
-
 ### Schema for asset import and export operations
 
 The following table shows the schema for asset import/export operations.
@@ -186,15 +184,13 @@ To bulk import a product media assignment asset manifest, follow these steps.
 
 You can export asset manifests from the site builder media library of any of e-commerce site, or from your omnichannel. Manifests with product media assignments must be exported from the **Product media** view in your omnichannel.
 
-<!--Export operation is started by selecting one or more assets and clicking "Bulk export" from the command bar.-->
-
 ### Bulk export an asset manifest
 
 To bulk export an asset manifest, follow these steps.
 
 1.  Go to the site or omnichannel from which you want to export the manifest.
 2.  Go to **Media library**.
-3.  Select the assets you want to export, and then select **Bulk export** (or **Export entire library**).
+3.  Select the assets you want to export, and then select **Bulk export**. Alternatively, to export all media assets, select **Export entire library**.
 4.  Enter a name and description for the export job, review the selected media, and then select **Export**.
 
 The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
@@ -207,15 +203,11 @@ To bulk export a product media assignment manifest, follow these steps.
 2.  Select **Product media**.
 3.  Select **Bulk export**.
 4.  Select **Export media assignments for all products** or **Export media assignments for specific products**, and then select **Next**.
-5.  If you selected **Export media assignments for specific products**, under **All products**, select the products from which you want to export the media assignments, and then select **Next**.
+5.  If you selected **Export media assignments for specific products**, under **All products**, select the products from which you want to export the media assignments, and then select **Next**. If you selected **Export media assignments for all products**, proceed to step 6.
 6.  If you want to export all locales and not just the currently selected locale, select the **Export all locales** checkbox.
 7.  Select **Export product media**.
 
 The job status can be monitored from **Site settings \> Jobs**, or by selecting **Go to job** from the job notification.
-
-<!--### Sample product media assignment manifests (Urls redacted/removed)-->
-
-<!--Links to download center URLs TBD-->
 
 ## Additional resources
 
