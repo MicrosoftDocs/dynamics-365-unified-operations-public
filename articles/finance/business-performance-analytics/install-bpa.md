@@ -37,5 +37,15 @@ To install business performance analytics, follow these steps.
 >[!NOTE]
 >If you uninstall and install business performance analytics, any new reports that were created won't be saved.
 
+## Access Reports in business performance analytics app
+To access reports in business performance analytics, follow these steps. 
+
+1. Go to Maker portal of environment where App is installed.
+2. Select **Apps** on the menu. The page will navigate to Business performance analytics. 
+3. It will display reports to Admin.
+4. Admin can set up security as defined here https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/set-up-security.
+
+
+
 
    
