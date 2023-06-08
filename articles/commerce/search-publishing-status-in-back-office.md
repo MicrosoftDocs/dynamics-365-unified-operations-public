@@ -20,19 +20,21 @@ ms.search.validFrom: 2023-01-30
 
 This article describes the capability to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 
-Starting in Commerce version 10.0.32, view the publishing status for product search in headquarters. To enable this capability, you must turn on the **Search publishing sessions monitoring** feature in the feature management workspace. Enabling this feature makes discoverable the **Session publishing sessions** form that shows the status of the product/customer Commerce publishing sessions to Azure Search.
+Starting in Commerce version 10.0.32, you can view the publishing status for product search in headquarters. With this capability, whenever you publish product information by channel, you're able to see how many products and catalogs were successfully published to the Azure search index, and how many products failed. The total product count is for simple and product masters, and excludes variants.
 
-With this feature, we are introducing an ability for headquarters users to view product search publishing status in back office, that means whenever you are publishing product information by channel, you would be able to see how many products and catalogs were successfully published to Azure search index and how many products failed. Total product count is for simple and product masters, it is excluding variants. 
+Product search publishing sessions are queued upon the conclusion of the **1040**, **1070** and **1150** Commerce Data Exchange (CDX) jobs that are scheduled after **Publish channel updates** is executed from **Channel categories and products attributes** form (**Retail and Commerce \> Channel setup \> Channel categories and product attributes**). 
 
-The product search publishing sessions get queued upon conclusion of the CDX jobs (1040, 1070 and 1150) that are scheduled post trigger of 'Publish channel updates' from 'Channel categories and products attributes' form. And search sessions publishing status will be one of the following - 
+To enable the product search publishing status capability, you must turn on the **Search publishing sessions monitoring** feature in the feature management workspace. Enabling this feature makes discoverable the **Session publishing sessions** form that shows the status of the product/customer Commerce publishing sessions to Azure Search.
+
+Search session publishing statuses are shown in the following table. 
 
 |Publishing status |Description |
 --- | --- |
-|Queued|Waiting for publisher to start publishing|
-|In-progress|Publishing is in-progress|
-|Completed|Publishing was successfully completed|
-|Failed|There was an error in publishing, system will re-try automatically|
-|Timed out|Due to some reason, bad query plan or unavailability of required resources or network latency issue it couldn't complete the publishing in appropriate time|
+|Queued|Waiting for publisher to start publishing.|
+|In-progress|Publishing is in progress.|
+|Completed|Publishing was successfully completed.|
+|Failed|There was an error in publishing, system will retry automatically.|
+|Timed out|Due to some reason, bad query plan or unavailability of required resources or network latency issue it couldn't complete the publishing in appropriate time.|
 
 Along with the publishing status and product count, it also gives you visibility into the timeframe as when was it published successfully and typically how long it has been waiting to be published as well as duration of time required to publish for a particular channel. 
 
