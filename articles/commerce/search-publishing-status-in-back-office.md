@@ -4,7 +4,7 @@
 title: View product search publishing status in headquarters
 description: This article describes the capability to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 author: ashishmsft
-ms.date: 06/07/2023
+ms.date: 06/08/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -20,9 +20,9 @@ ms.search.validFrom: 2023-01-30
 
 This article describes the capability to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 
-In this article, you can learn how to view the publishing status for product search in the back-office. Starting 10.0.32, you can enable this feature 'Search publishing sessions monitoring' from feature management and this will enable 'Session publishing sessions' form that shows the status of the product/customer Commerce publishing sessions to Azure Search.
+Starting in Commerce version 10.0.32, view the publishing status for product search in headquarters. To enable this capability, you must turn on the **Search publishing sessions monitoring** feature in the feature management workspace. Enabling this feature makes discoverable the **Session publishing sessions** form that shows the status of the product/customer Commerce publishing sessions to Azure Search.
 
-With this feature, we are introducing an ability for back-office users to view product search publishing status in back office, that means whenever you are publishing product information by channel, you would be able to see how many products and catalogs were successfully published to Azure search index and how many products failed. Total product count is for simple and product masters, it is excluding variants. 
+With this feature, we are introducing an ability for headquarters users to view product search publishing status in back office, that means whenever you are publishing product information by channel, you would be able to see how many products and catalogs were successfully published to Azure search index and how many products failed. Total product count is for simple and product masters, it is excluding variants. 
 
 The product search publishing sessions get queued upon conclusion of the CDX jobs (1040, 1070 and 1150) that are scheduled post trigger of 'Publish channel updates' from 'Channel categories and products attributes' form. And search sessions publishing status will be one of the following - 
 
