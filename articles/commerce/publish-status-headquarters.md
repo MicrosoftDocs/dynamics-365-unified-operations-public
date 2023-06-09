@@ -4,7 +4,7 @@
 title: View product search publishing status in headquarters
 description: This article describes the capability to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 author: ashishmsft
-ms.date: 06/08/2023
+ms.date: 06/09/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
