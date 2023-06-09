@@ -1,6 +1,6 @@
 ---
-title: Invoicing for Indonesia (ID-00002)
-description: This article explains how to configure tax invoice numbering so that you can configure and run export sales invoices and import vendor invoices for Indonesia.
+title: Tax invoice numbering for Indonesia (ID-00002)
+description: This article explains how to configure and use tax invoice numbering in Indonesia.
 author: AdamTrukawka
 ms.date: 06/10/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.23
 ms.search.form: 
 ---
 
-# Invoicing for Indonesia 
+# Tax invoice numbering for Indonesia 
 
 [!include [banner](../includes/banner.md)]
 
