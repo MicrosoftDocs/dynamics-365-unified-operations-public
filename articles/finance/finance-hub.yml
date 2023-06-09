@@ -43,8 +43,8 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/dynamics365/guidance/implementation-guide/overview
-        text: Implementation guide
+      - url: /dynamics365/dynamics365/guidance/implementation-guide/overview 
+        text: Implementation  guide
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
