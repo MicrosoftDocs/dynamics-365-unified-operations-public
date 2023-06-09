@@ -20,9 +20,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Get started
+    - title: Welcome to Dynamics 365 Finance
       itemType: get-started
-      url: /dynamics365/fin-ops-core/fin-ops/get-started/service-description
+      url: /dynamics365/finance
     # Card
     - title: What's new
       itemType: whats-new
@@ -40,6 +40,14 @@ additionalContent:
   sections:
   - title: Implement 
     items:
+    - title: Guidance
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Security 
+      - url: /dynamics365/dynamics365/guidance/implementation-guide/overview
+        text: Implementation guide
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Implementation FAQ   
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
@@ -63,15 +71,7 @@ additionalContent:
       - url: /dynamics365/guidance/implementation-guide/overview
         text: Configure Finance
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
-        text: Configure reporting  
-    - title: Guidance
-      links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Security 
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Implementation guide
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Implementation FAQ     
+        text: Configure reporting    
   - title: Administer and develop 
     items:
     - title: Manage
@@ -150,14 +150,6 @@ additionalContent:
         text: Monitoring and diagnostics tools in Lifecycle services
   - title: Use Finance
     items:
-    - title: General ledger
-      links:
-      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
-        text: Plan your chart of accounts
-      - url: /dynamics365/finance/general-ledger/main-account-types
-        text: Main account types
-      - url: /dynamics365/finance/general-ledger/financial-dimensions
-        text: Financial dimensions
     - title: Organization administration
       links:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
@@ -165,7 +157,15 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
         text: Organizational hierarchies
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
-        text: Workflow system    
+        text: Workflow system  
+    - title: General ledger
+      links:
+      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
+        text: Plan your chart of accounts
+      - url: /dynamics365/finance/general-ledger/main-account-types
+        text: Main account types
+      - url: /dynamics365/finance/general-ledger/financial-dimensions
+        text: Financial dimensions   
     - title: Accounts payable
       links:
       - url: /dynamics365/finance/accounts-payable/accounts-payable
