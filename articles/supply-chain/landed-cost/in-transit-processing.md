@@ -66,7 +66,7 @@ To work with goods-in-transit settings for your warehouses, go to **Inventory ma
 | Under delivery warehouse | Identify the under-delivery warehouse that is related to the main warehouse. |
 
 > [!NOTE]
-> Error message "*Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*" will throw out when **Goods in transit** or **Under** type warehouse try to enable **use warehouse management processes** parameter in the warehouse setting. 
+> Warehouses that have a **Type** of *Goods in transit* or *Under* can't be enabled for warehouse management processes. If you try to set **Use warehouse management processes** to *Yes* for one of these types of warehouses, you'll get the following error message: *Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*
 
 ## Posting rules for landed cost
 
@@ -142,18 +142,21 @@ The configuration settings for these processes resemble the settings for the [pu
 
 - **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
-####  <a name="specify-GIT-order"></a> Specify goods in transit order when receiving via mobile device
-This feature empowers users to manually determine the receiving of specific goods in transit order when multiple orders are associated with the same voyage, container, item number, and purchase order number. Users can effortlessly achieve this by inputting the Voyage, Container,Item and Order number, and subsequently selecting the desired Goods in Transit order from a dropdown list available in the 'Goods in transit number' field on their mobile devices.
+#### <a name="specify-GIT-order"></a>Specify goods in transit order when receiving with a mobile device
 
-![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/4b0bd332-6442-4092-af1e-a11af7983229)
+Workers using the Warehouse Management mobile app can register the receipt of goods in transit even when multiple orders are associated with the same voyage, container, item number, and purchase order number. To do so, the worker enters the voyage, container, item, and order numbers, and can then select the relevant goods in transit order from a drop-down list.
 
-This functionality is available in two mobile device menu items:
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/4b0bd332-6442-4092-af1e-a11af7983229) <!-- KFM: continue here. -->
+
+This functionality is available in the following types of mobile device menu items:
+
 - Goods in transit item receiving
 - Goods in transit item receiving and putaway
 
 Both options provide flexibility and control over the selection of goods in transit orders, ensuring accurate and efficient handling of incoming inventory.
 
 #### Assign batch/serial number when receiving via mobile device
+
 When receiving goods in transit order with batch/serial tracking enable items, user can assign batch/serial number during the receiving process. In the meanwhile,the mobile device GIT receiving process allow user define the goods quantity per batch/serial number being received.
 System will conslidate the received quantity per batch/serial number into one work for process. The batch/serial number will be assigned to the received item automatically.
 
