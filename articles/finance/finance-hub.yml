@@ -110,8 +110,6 @@ additionalContent:
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
         text: Integration between finance and operations and Power Platform overview
-      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration
-        text: Enable integration between finance and operations and Power Platform
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview     
         text: Dual-write overview 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
@@ -127,7 +125,7 @@ additionalContent:
     - title: Develop the user interface  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
-        text: User interface development home
+        text: User interface development 
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
@@ -137,7 +135,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide
         text: Lifecycle services user guide
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configuration-manager-lcs
-        text: Configuration in Lifecycle services     
+        text: Configure Lifecycle services     
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics  
         text: Monitoring and diagnostics tools in Lifecycle services
   - title: Use Finance
