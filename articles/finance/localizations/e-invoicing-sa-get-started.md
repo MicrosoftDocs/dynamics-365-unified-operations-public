@@ -80,7 +80,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
 13. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile, and then select the draft version of the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. 
 14. On the **Setups** menu, select the **Sales invoice** feature setup, and then select **Edit**.
     > [!NOTE]
-    > Depending on your place in the [onboarding](#onboarding) process, select the **Tax invoice compliance check** feature setup for  **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature.
+    > Select the **Tax invoice compliance check** feature setup for  **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature.
 15. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Get next number sequence value** action. 
 16. In the **Parameters** section, in the **Value** field, select the number sequence that you created in step 12.
 17. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
@@ -103,7 +103,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
 
 19. Repeat steps 13 through 17 for the **Project invoice** and **Retail simplified invoice** feature setups. 
     > [!NOTE]
-    > Depending on your place in the [onboarding](#onboarding) process, Repeat steps 13 through 17 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups feature setup for  **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature.
+    > Repeat steps 13 through 17 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups feature setup for  **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature.
 20. Complete, publish, and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service environment. For more information, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 21. Deploy the **Saudi Arabian Zatca submission (SA)** feature to the connected application. For more information, see [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
 
