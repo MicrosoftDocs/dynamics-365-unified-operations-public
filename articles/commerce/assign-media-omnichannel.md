@@ -175,6 +175,8 @@ To assign a default image for a channel-specific category, follow these steps.
 
 [Copy omnichannel content between tenants](copy-content-between-tenants.md)
 
+[Bulk import and export digital assets using manifests](import-export-manifest.md)
+
 [Configure dimension values in Commerce headquarters](dev-itpro/dimensions-swatch.md#configure-dimension-values-in-commerce-headquarters)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
