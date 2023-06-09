@@ -1,7 +1,8 @@
 ### YamlMime:Hub
 
 title: Microsoft Dynamics 365 Finance documentation # < 60 chars
-summary: Discover how Dynamics 365 Finance can help monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+summary: Discover how to make the most of Dynamics 365 Finance with online training courses, documentation, and videos covering product capabilities. Learn how to use Dynamics 365 Finance to monitor your global 
+financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
@@ -11,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/05/2023 #Required; mm/dd/yyyy format.
+  ms.date: 06/05/2023 #Required; mm/dd/yyyy format.
   hide_bc: true
 
 # highlightedContent section (optional)
@@ -33,7 +34,7 @@ highlightedContent:
       url: /training/dynamics365/finance
     # Card
     - title: Troubleshoot
-      itemType: concept
+      itemType: reference
       url: /dynamics365/finance/finance-troubleshooting
 
 additionalContent:
