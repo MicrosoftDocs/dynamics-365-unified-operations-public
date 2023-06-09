@@ -380,20 +380,44 @@ A *delegate* collects methods that subscribe to it. The delegate specifies the p
 ```xpp
 abstract class VarDatClass
 {
-    // delegatemethod examples
+
+    void new(utcdatetime _dateTime, str _changeDescription)
+    {
+        // An example of subscribing a delegate.
+        this.notifyChanged += eventhandler(this.InfologChanges);
+        this.notifyChanged += eventhandler(this.SaveInDatabase);
+        
+        notifyChange(_dateTime, _changeDescription);
+    }
+
+    void notifyChange(utcdatetime _dateTime, str _changeDescription)
+    {
+        // An example of calling a delegate.
+        this.notifyChanged(_dateTime, _changeDescription);
+    }
+    
+    // delegate method examples
     // An example of declaring a delegate.
-    delegate void notifyChange(utcdatetime _dateTime, str _changeDescription)
+    delegate void notifyChanged(utcdatetime _dateTime, str _changeDescription)
     {
     }
 
-    // An example of subscribing an event handler to a delegate.
-    public static void notifyStatic(utcDateTime _dateTime, str _changeDescription)
+    // method that is to be subscribed.
+    public static void InfologChanges(utcDateTime _dateTime, str _changeDescription)
     {
         info("A notification has occurred calling static handler:" +
             DateTimeUtil::toStr(_dateTime) +
             " Message:" +
             _changeDescription);
     }
+    
+    // method that is to be subscribed.
+    public static void SaveInDatabase(utcDateTime _dateTime, str _changeDescription)
+    {
+       // save changes in database.
+    }
+    
+    
 }
 ```
 
