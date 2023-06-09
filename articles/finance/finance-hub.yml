@@ -34,7 +34,7 @@ highlightedContent:
       url: /training/dynamics365/finance
     # Card
     - title: Troubleshoot
-      itemType: reference
+      itemType: concept
       url: /dynamics365/finance/finance-troubleshooting
 
 additionalContent:
