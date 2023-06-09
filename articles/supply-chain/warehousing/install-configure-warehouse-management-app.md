@@ -113,6 +113,14 @@ By completing the following steps, you'll configure your app registration to use
 
     - To grant the necessary API permissions, navigate to **API permissions**. Click the **Add a permission** button and select the **Microsoft APIs** tab. Click the **Dynamics ERP** button and then the **Delegated permissions** button. Under **CustomService**, tick the **CustomService.FullAccess (Access Dynamics AX Custom Service)** checkbox. Finally, click the **Add permissions** button to save your changes.
 
+    - Switch to the **Azure Active Directory** -> **Enterprise applications** -> **All applications** tab and find an app with a name identical to your app registration name.
+
+    - On the **Properties** tab, check **Assignment required?** to **Yes** and **Visible to users?** to **No**.
+
+    - On the **Users and groups** tab, press the **Add user/group** button and select the designated users for the Warehouse Management app.
+
+    - Optionally, you can grant admin consent for **CustomService.FullAccess** in **Azure Active Directory** -> **App registrations** -> [your app registration] -> **App registrations** page; you may click the **Grand admin consent** button.
+
 For more information about how to set up web service applications in Azure AD, see the following resources:
 
 - For instructions that show how to use Windows PowerShell to set up web service applications in Azure AD, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
