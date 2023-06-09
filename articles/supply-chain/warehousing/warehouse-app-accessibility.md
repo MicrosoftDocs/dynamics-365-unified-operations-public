@@ -18,7 +18,7 @@ The Warehouse Management mobile app is designed for accessibility, to help ensur
 
 ## Font and button scaling
 
-Font and button scaling helps ensure that the Warehouse Management mobile app remains worker-friendly and accessible to many workers, including those who have visual impairments.
+Font and button scaling helps ensure that the Warehouse Management mobile app remains worker-friendly and accessible to many workers, including workers who have visual impairments.
 
 - **Font Scaling** – The app supports font scaling from 50 to 400 percent. Therefore, workers can adjust the text size according to their preference. This flexibility helps ensure that workers can comfortably read and interact with the app's content, regardless of their visual acuity. The font size in the app is independent of the operating system's font settings. Therefore, workers can set font sizes in the app that differ from the font sizes on their device, for a more personalized experience.
 - **Button Scaling** – The app supports button scaling from 50 to 200 percent. Therefore, workers can adjust the size of buttons and other interactive elements in the app. This flexibility helps worker more easily tap and interact with the app's functionality.
