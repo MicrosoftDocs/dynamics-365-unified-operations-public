@@ -1314,6 +1314,8 @@
           href: general-ledger/cant-reverse-transctns.md
         - name: Intercompany journals and financial dimensions  
           href: general-ledger/intercompany-journal.md
+        - name: General journal posting performance  
+          href: general-ledger/posting-performance.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -3322,6 +3324,12 @@
             href: localizations/ltm-core-purchase-invoice-posting.md
           - name: Inventory transfer order for posting for Latin America
             href: localizations/ltm-core-transfer-order-posting.md
+          - name: Post bank expenses for Latin America
+            href: localizations/ltm-core-bank-expenses.md
+          - name: Post packing slips for Latin America
+            href: localizations/ltm-core-packing-slip-posting.md
+          - name: Configure journal names for Latin America
+            href: localizations/ltm-core-journal-name-configuration..md
           - name: Value query for Latin America
             href: localizations/ltm-core-value-query.md
         - name: Latvia
@@ -3916,8 +3924,14 @@
             href: localizations/apac-tha-withholding-tax.md          
         - name: United Arab Emirates (UAE)
           items: 
+          - name: United Arab Emirates (UAE) overview
+            href: localizations/uae.md
           - name: Set up and report value-added tax (VAT)
             href: localizations/uae-vat-setup-reporting.md
+          - name: FTA Tax Audit File (FAF)
+            href: localizations/uae-faf.md
+          - name: Print a sales invoice in the UAE layout
+            href: localizations/uae-sales-invoice-layout.md
         - name: United Kingdom
           items:
           - name: United Kingdom overview

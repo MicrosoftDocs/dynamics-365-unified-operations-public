@@ -746,6 +746,8 @@
           href: pos-pricing-functions.md
         - name: Commerce pricing APIs
           href: pricing-apis.md
+        - name: Price change tracking
+          href: price-change-tracking.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 

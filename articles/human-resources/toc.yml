@@ -595,6 +595,8 @@ items:
         href: hr-leave-and-absence-suspend-leave.md
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
+      - name: Manage leave requests in Teams  
+        href: hr-teams-leave-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave

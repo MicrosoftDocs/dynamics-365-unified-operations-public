@@ -13,7 +13,6 @@ ms.custom: bap-template
 # Use customer-managed keys to control encryption keys for data at rest
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Microsoft services adhere to data privacy and compliance requirements when they secure customer data by encrypting data at rest. This practice secures the data from being exposed if a copy of the database is stolen. When data encryption at rest is used, any stolen database data is protected from being restored to a different server without the encryption key.
 
@@ -24,10 +23,9 @@ This article explains how to set up CMKs to control encryption keys for data at 
 > [!IMPORTANT]
 >
 > - The CMK feature is provided through Microsoft Power Platform. It applies to environments that run one or more finance and operations apps that are integrated with Microsoft Power Platform. It also applies to all environment-specific resources, including SQL databases and Azure storage accounts. (For more information, see [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).)
-> - The preview version of CMKs is available at no cost. When CMKs become generally available, a cost will be associated with environments where they're enabled.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that Microsoft customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not yet be available in your region.
 > - CMK policy enforcement doesn't include cloud-hosted environments because these environments are deployed in customer-managed subscriptions. For more information on best practices for securing cloud-hosted environment, see [Secure one-box development environments](../../dev-itpro/dev-tools/secure-developer-vm.md).
+> - Refer to [Licensing requirements for customer managed key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key).
 
 ## Enable CMKs
 
@@ -62,7 +60,7 @@ Lifecycle Services might provide several add-ins for finance and operations envi
 
 ## CMK support across finance and operations apps
 
-Not all finance and operations apps support CMK policies in the preview. The following table describes the CMK support status of each app.
+Not all finance and operations apps support CMK policies. The following table describes the CMK support status of each app.
 
 | App | Status |
 | --- | --- |
