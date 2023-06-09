@@ -56,16 +56,10 @@ additionalContent:
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Deploy Dynamics 365 Finance 
-    - title: Set up
-      links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Set up environments
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
-        text: Set up users
-      - url: /dynamics365/dev-itpro/sysadmin/role-based-security
-        text: Set up roles     
     - title: Configure 
       links:
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/system-requirements?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Configure environment
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Configure organization administration 
       - url: /dynamics365/guidance/implementation-guide/overview
