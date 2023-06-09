@@ -710,6 +710,18 @@
           items:
           - name: Create and configure extended warranties
             href: extended-warranty.md
+        - name: Omnichannel media management
+          items:
+          - name: Omnichannel media management overview
+            href: omnichannel-media-management-overview.md
+          - name: Assign media to products and categories
+            href: assign-media-omnichannel.md
+          - name: Publish media assignments
+            href: publish-media-omnichannel.md
+          - name: Copy omnichannel content between tenants
+            href: copy-content-between-tenants.md
+          - name: Bulk import and export digital assets using manifests
+            href: import-export-manifest.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
