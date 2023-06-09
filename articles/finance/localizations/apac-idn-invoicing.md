@@ -149,4 +149,8 @@ When you must create a credit note for cancellation and a debit note for replace
 
 To associate a credit or debit note with an original invoice, select **Credit invoicing** on a free text invoice or a sales order, or when you select a project invoice to create a credit note.
 
+## Additional resources
+
+- [Get started with Electronic invoicing for Indonesia](e-invoicing-id-get-started.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
