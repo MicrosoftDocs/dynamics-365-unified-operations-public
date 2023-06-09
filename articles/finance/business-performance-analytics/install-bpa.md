@@ -42,8 +42,8 @@ To install business performance analytics, follow these steps.
 To access reports in business performance analytics, follow these steps. 
 
 1. Go to the Maker portal of environment where business performance analytics is installed.
-2. Select **Apps**. 
-3. Business performance analytics will display reports to the Admin.
+2. Select **Apps** to open business performance analytics.
+3. The available reports will be displayed. 
 4. For more information about setting up security, see [Set up security in business performance analytics](set-up-security.md).
 
 
