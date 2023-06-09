@@ -48,4 +48,6 @@ To copy all the omnichannel content from one tenant to another, follow these ste
 
 [Publish media assignments](publish-media-omnichannel.md)
 
+[Bulk import and export digital assets using manifests](import-export-manifest.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
