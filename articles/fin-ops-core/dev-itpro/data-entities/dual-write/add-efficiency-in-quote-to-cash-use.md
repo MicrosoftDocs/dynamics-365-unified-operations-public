@@ -19,40 +19,71 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until 10.0.34 GA -->
 
-This article describes how to work with the improved quote-to-cash features when integrating with Dynamics 365 Sales. It provides information about how to the integrated system will behave based on which enhanced features you choose to enable. For details about how to enable these improvements for your system, see [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
+This article describes how to work with the improved quote-to-cash features when integrating with Dynamics 365 Sales. It provides information about how the integrated system will behave based on which enhanced features you choose to enable. For details about how to enable these improvements for your system, see [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
+
+## Set the default ownership for all sales quotations
+
+When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is enabled, you can set the default ownership of for all new sales quotations (regardless of which system they are created in) in Supply Chain Management. Follow these steps:
+
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Dynamics 365 Sales integration** tab.
+1. Expand the **Sales quotation** FastTab.
+1. Set **Default ownership** to one of the following values:
+    - *Based on origin* – The ownership of all new sales quotations will be set to match the system they were created in.
+    - *Supply Chain Management* – The ownership of all new sales quotations will be set to Supply Chain Management, regardless of which system they are created in.
+    - *Dynamics 365 Sales* – The ownership of all new sales quotations will be set to Dynamics 365 Sales, regardless of which system they are created in.
 
 ## Change ownership for a sales quotation
 
-It is possible to change the defaulted ownership value on the sales quotation from the Dynamics Supply Chain management sales quotation user interface<!-- KFM: Describe how with a procedure. -->. This capability is not available from Dynamics 365 Sales quotation. A separate security construct of privilege and duty is assigned to the sales manager role allowing the sales manager to change the ownership of a single sales quotation in Dynamics Supply Chain management <!-- KFM: Does the reader care about this detail? -->. It is not possible to change ownership for multiple sales quotations at a time. It is possible to change the ownership on a sales quotation in any from/to direction when the sales quotation status in Supply Chain management is created and active in Dynamics 365 Sales <!-- KFM: Specify the field names. -->. When the sales quotation status in Supply Chain Management is sent then it is possible to change the ownership to Supply Chain Management. It is possible to change ownership to based on origin, when origin is Supply Chain Management. When the sales quotation is in status sent in Supply Chain Management, it is not possible directly nor indirectly to change ownership to Dynamics 365 Sales. Beyond the status sent in Supply Chain Management, it is not possible to change ownership for a sales quotation.  <!-- KFM: If we really need this kind of detail here, we should have a table showing which combinations of status field values allow a change of ownership. -->
-
-The ownership change event is captured in a separate table log in Supply Chain Management not accessible from the user interface. <!-- KFM: How can we read this log? -->
-
-## Set default ownership for sales quotations when integrated with Dynamics 365 Sales
-
-By default, the ownership value assigned to a sales quotation when created is *Based on origin*. With feature *Set default ownership for sales quotations when integrated with Dynamics 365 Sales* a setting is added to the **Accounts receivable parameters** page, where the default ownership can be set different from Based on ownership<!-- KFM: Describe how with a procedure. -->. Default ownership can be set to *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. When this feature is disabled, ownership is always *Based on origin*.
-
-This setting is per company and allows an organization to, regardless of sales quotation creation happing from Dynamics 365 Sales or Supply Chain Management, always have a constant default ownership.
-
-## Make Supply Chain Management price master when integrated with Dynamics 365 Sales
-
-With the feature *Make Supply Chain Management price master when integrated with Dynamics 365 Sales*, you now have an option to disable Dynamics 365 Sales logic when doing calculations for sales quotations and sales orders. <!-- KFM: How do set this option? Only in FM? -->
-
-When enabled, calculations for extended amounts, summary amounts, subtotals, and totals for sales quotations and sales orders will not be performed in Dynamics 365 Sales. When quotations or sales orders are created in Sales, and a price list exists in Sales, then that price will be used, but no other calculations will be made automatically in Sales. All calculated monetary fields are calculated in and synchronized from Supply Chain Management to Sales. When enabled, this feature behaves as if the Sales settings **Use system price calculation** is set to *No* and **Discount calculation method** is set to *Per unit* in Sales regardless of how the settings are in Dynamics 365 Sales. When enabled, the following changes are made in the Sales user interface for sales quotation and sales order lines: The **Volume discount** field is hidden, the "**Line discount amount** field is now replacing **Manual discount** field and is expressed as per-unit discount amount, and the **Manual discount** field is made read-only and relabeled to **Discount** which represents total discount amount which is calculated from Supply Chain Management. Manual discounts can henceforth be entered for a quotation and sales order line in Sales in the **Line discount amount** field.
-
-When enabled, the following fields in Sales are no longer automatically calculated based on Sales logic but rely upon values being synchronized from Supply Chain Management. When a quote and sales order line is created the following fields in Sales will not have values until synchronized from Supply Chain Management:
-
-- Quotation and Sales order line line discount and extended amount.
-- Quotation and Sales order Detail Amount, (-) Discount, Pre-Freight Amount, Freight Amount, Total Tax, Total Amount.
-- For the Sales Order, the Recalculate option will not perform any recalculation in Sales.
+You can change the ownership of a sales quotation by opening it in Supply Chain management. You can't do so from Sales.
 
 > [!NOTE]
-> The following fields in Sales are not mapped 1:1 to fields in the sales order and sales quotation in Supply Chain Management, and require that a Calculate Sales Totals is run <!-- KFM: Where, how, by whom?--> to aggregate the data to be synchronized to Sales: Line Discount, (-) Discount, (+) Freight Amount, (+) Total Tax Total Amount <!-- KFM: What do the symbols in parenthesis mean? -->. It requires a Totals calculation to be done in Supply Chain Management management <!-- KFM: How, by whom?--> before the result is synchronized to Sales, and the amounts on a quotation and sales order in Sales are correctly updated <!-- KFM: How, by whom?-->.
+> To change ownership of a sales quotation, the following conditions must be met:
+>
+> - Your user account must have the *Change defaulted sales quotation ownership* privilege and *Maintain sales quotation ownership* duty. By default, the required privilege and duty are assigned to the *Sales manager* role, but not to the *Sales clerk* role.
+> - The sales quotation must be in status *Created* or *Send* in Supply Chain Management.
+> - The sales quotation must be in status *Draft* or *Active* in Sales.
 
-## Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales
+Follow these steps:
 
-In some scenarios <!-- KFM: Which ones?--> it is required for a user to on demand recalculate and push prices and totals for one or more sales quotations or sales orders from Supply Chain Management to Sales. This is possible when feature *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* is enabled.
+1. Find and select the quotation you want to work with, for example by going to **Sales and marketing \> Sales quotations \> All quotations**. You can't change ownership for multiple sales quotations at a time, so select only one quotation.
+1. On the Action Pane, open the **Follow up** tab and select **Change ownership** to open a drop-down dialog box. Then set **Ownership** to one of the following values:
+    - *Based on origin* – The ownership will be inherited from the **Origin** value.
+    - *Supply Chain Management* – The ownership will be assigned to Supply Chain Management.
+    - *Dynamics 365 Sales* – The ownership will be assigned to Dynamics 365 Sales.
+1. Select **OK** to apply the change.
 
-When the feature is enabled a new menu item <!-- KFM: Where, in the Action Pane?--> is added to the sales quotation and sales order list and details pages **Push price and totals**. When clicking Push price and totals the same update is performed as if a user in Sales clicked **Price Quote** or **Price Order** <!-- KFM: Where are these buttons in Sales?-->. When **Price Quote** or **Price Order** is a request <!-- KFM: Only sometimes?--> for Supply Chain Management to price the sales order or sales quotation and then synchronize the changes back to Sales, the **Push price and totals** action will support scenarios where a user in Supply Chain Management needs to price the sales order or sales quotation and then push the changes to Sales. Same logic, but a push instead of a pull.
+Ownership change events are logged in a table in Supply Chain Management that isn't available from the user interface. To see it, enter the following URL in your browser: `https://<DomainName>/?cmp=<CompanyName>&mi=SysTableBrowser&TableName=SalesQuotationOwnershipChangeLog`, where `<DomainName>` is the domain name of your environment and `<CompanyName>` is the name of your legal entity.
+
+## Make Supply Chain Management price master
+
+When the feature *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* is enabled, Supply Chain Management becomes the price master for making calculations for sales quotations and sales orders. Therefore, the following conditions apply when this feature is enabled:
+
+- When a quotation or sales order is created in Sales, and a price list exists in Sales, then that price will be used.
+- Sales behaves as though its **Use system price calculation** setting is set to *No*.
+- The following changes are made in the Sales user interface for sales quotation and sales order lines:
+    - The **Volume discount** field is hidden.
+    - The **Line discount amount** field replaces the **Manual discount** field and is expressed as per-unit discount amount.
+    - The **Manual discount** field is made read-only and relabeled to **Discount** which represents total discount amount which is calculated from Supply Chain Management.
+- In Sales, manual discounts can be entered for quotation and sales order lines in the **Line discount amount** field.
+- The following fields in Sales are no longer calculated based on Sales logic but instead rely upon values that are calculated and synchronized from Supply Chain Management. When a quote and sales order line is created in Sales, these fields won't have values until they are synchronized from Supply Chain Management.
+    - For sales quotations and sales order lines: **Discount** and **Extended amount**.
+    - For sales quotations and sales order summaries: **Detail amount**, **(-) Discount**, **Pre-freight amount**, **(+) Freight amount**, **(+) Total tax**, and **Total amount**.
+- For sales orders in Sales, the **Recalculate** option will have no effect.
+
+> [!NOTE]
+> When you create or update a sales quotation or sales order Dynamics 365 Sales, select **Price quote** (for quotes) or **Price order** (for orders) to make sure all of the relevant calculations are done in Supply Chain Management and synced back to Sales. This isn't necessary for quotes and sales orders created in Supply Chain Management provided the *Calculate sales totals* batch job is set to run on a regular schedule.
+
+## Calculate and push prices, discounts, and totals from Supply Chain Management to Sales
+
+After updating a sales quotation or sales order in Supply Chain Management, it can sometimes be important to push the updated prices, discounts, and totals to Sales right away. To enable this ability, the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* must be enabled in Supply Chain Management.
+
+Do the following steps to work with this feature:
+
+1. Select the sales quotation or sales order you want to work with. If you are working in a list view, you can select more than one quotation or order.
+1. On the Action Pane, open the **Quotation** tab (for quotations) or the **Sell** tab (for orders) and select **Push price and totals**.
+
+
 
 When the feature is enabled additionally two new menu items <!-- KFM: Where, in the Action Pane?--> are added to **Sales and Marketing \> Periodic tasks**: **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales**. These two menu actions allow for use cases complementary and not replacing existing **Calculate sales totals** <!-- KFM: What is this?-->. **Calculate sales totals** supports the use case of calculating both sales order and sales quotation subtotals and totals and synchronizing these to Sales with a fixed recurrence. **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales** support the use case of needing to perform a calculation of sales quotation or sales order totals for a range of source documents immediately in a non-recurring scenario. The range can be based <!-- KFM: How do we choose this?--> on sales quotation and order numbers, customer account, and invoice account, while still considering the setting to ignore documents updated before (days)<!-- KFM: Where is this setting? What is it called? -->. The two settings work in combination<!-- KFM: Which two settings? -->. Setting up a recurring batch job is not supported. Use these capabilities when you need to apply a specific range of quotations and orders for which a total calculation should be performed as a one-off.
 
