@@ -42,12 +42,12 @@ additionalContent:
     items:
     - title: Guidance
       links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Security 
       - url: /dynamics365/dynamics365/guidance/implementation-guide/overview
         text: Implementation guide
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Security   
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
@@ -62,8 +62,6 @@ additionalContent:
         text: Configure environment
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Configure organization administration 
-      - url: /dynamics365/guidance/implementation-guide/overview
-        text: Configure Finance
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
         text: Configure reporting    
   - title: Administer and develop 
