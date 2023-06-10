@@ -58,7 +58,7 @@ In general, three categories of interactions are needed for the **Supply Chain M
 
 - Document data (like purchase and sales orders)
 - Master data (like products)
-- Progress data (like dispatch and receiving advice and inventory on-hand updates)
+- Progress data (like receiving, dispatch, and inventory on-hand information)
 
 Many different integration methodologies can be used for the above, but the following is the recommended integration process.
 
@@ -78,7 +78,7 @@ A following [**message processing**](warehouse-message-processor-messages.md) wi
 > Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
 
 ##### Viewing and maintaining shipment order messages
-It is possible to both view and update shipment order messages, which can be a quick way to test integrations as part of an implementation process. You can update the fields values in _Failed_ messages which is not used as record keys (like the order header and line numbers). The pages used to view and maintain the messages are:
+It is possible to both view and update shipment order messages in S365 SCM Warehouse-Only mode, which can be a quick way to test integrations as part of an implementation process. You can update the fields values which is not used as record keys (like the order header and line numbers) when a message is in a _Failed_ message state. The pages used to view and maintain the messages are:
 
 - **Warehouse management > Inquiries and reports > Inbound shipment order messages**
 - **Warehouse management > Inquiries and reports > Outbound shipment order messages**
@@ -87,20 +87,28 @@ The **Processing status** field can be used to monitor the progress of the shipm
 
 - _Received_ - The message has been received and in a _Queued_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
 - _Accepted_ - The message processor state is _Processed_ and thereby a shipment order has been created.  
-- _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of edit saving.
+- _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of an edit saving.
+- _Canceled_ - The message has been canceled and will thereby not get evaluated.
 - _Draft_ - A copy of a message which can get updated. To reprocess the message you can move the message into the _Queued_ message state by using the **Queue** option.
-<!-- perlynne Canceled message state => ??? -->
+<!-- perlynne Canceled message state + ITem number edit! => ??? -->
 > [!TIP]
 >  By selecting the **Show old versions** option you can follow the manual message updates by using the _Replaced by message_ field value.
 
 > [!WARNING]
-> Making manual message field updates in production environments might result in data corruption between the external source system and D365 SCM. Make sure to have the proper user role security privilege assigned for this process.
+> Making manual message field updates in production environments might result in data inconsistency between the external source system and D365 SCM. As an example you will be able to change an _item number_ to a value which will be unknown to the related external system. This type of update will most likely cause problems as part of the further progress information flows and might not be possible to get corrected as well in the back-end external system. Make sure to have the proper user role security privilege assigned for this process.
 
 ### Master data
 
-Different master data will need to be recorded to be able to run your warehouse management system, here the [**data entities**](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) can be used to easily import the data.
-You can read more about the support of importing product master data via the [**product data entities**](../pim/data-entities.md) and get an overview of the [**Product information management entities**](../../../../../common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview.md).
-Besides the product master data you must at least have defined the [countries/regions](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process, to create an address.
+A few master data entities will need to be recorded to be able to run your warehouse management system, here the [**data entities**](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) can be used to easily import the data.
+
+To create the _shipment orders_ **Released products** must exist. You can read more about the support of importing product master data via the [**product data entities**](../pim/data-entities.md) and get an overview of the [**Product information management entities**](../../../../../common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview.md).
+
+As part of the creation of a _Released product_ you must assign an **Item model group**. Please make sure this model group gets enabled with an _Inventory model_ as **Non-valuated** which will eliminate the need for setting up any costing data for this product.
+
+Besides the product master data you must at least have defined the [**Countries/regions**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process to create addresses. You will as well need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses.
+
+> [!NOTE]
+> Depending on the [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) and the use of the address fields in the order messages you might need to create additional data before the order messages can get imported. Example could be the state and county combinations.
 
 ### Progress data
 
@@ -134,7 +142,7 @@ The **Supply Chain Management in warehouse-only mode** shipment order integratio
 The **Source system** name must be identical with the name in the provided message before a message can be accepted getting imported into D365 SCM.
 Additional policy settings can be used as part of the **Source systems** page to control the shipment order import processes, for example it is possible to define **Message value mapping** for item and warehouse identifications and define if loads for inbound shipment orders automatically gets created as part of the **Inbound shipment order policies** definition.
 > [!NOTE]
-> When mapping the items to [**Bar codes**](../pim/tasks/create-bar-code-product.md) remember to enable the _Scanning_ setting for the bar codes. For product variants it is only the "ItemNumber" field being used from the order line messages when using **Message value mapping**.
+> When mapping the items to [**Bar codes**](../pim/tasks/create-bar-code-product.md) remember to enable the _Scanning_ setting for the bar codes. For product variants it is only the "ItemNumber" field being used from the order line messages when using **Message value mapping** for the items.
 
 ## Warehouse integration monitoring
 
@@ -282,17 +290,18 @@ The external system will get informed via business event and can read the shipme
 
 # Unsupported processes
 <!-- perlynne -->
-The following high-level processes are not supported out-of-the-box related to the **Inbound shipment orders** and **Outbound shipment orders**.
+The following high-level processes are not supported out-of-the-box related to a integration to external systems.
 
 |Process                          |Description                                       |
 |---------------------------------|--------------------------------------------------|
-| Linked quality order processing | For other type of source documents like for example _Purchase orders_ it is possible to define [_Quality associations_](../inventory/quality-management-for-warehouses-processes.md#quality-associations) to control the triggering for automatic quality orders creation. This is not yet supported |
+| Linked quality order processing | For other type of source documents like for example _Purchase orders_ it is possible to define [_Quality associations_](../inventory/quality-management-for-warehouses-processes.md#quality-associations) to control the triggering for automatic quality orders creation. This is not yet supported for _Inbound shipment orders_ |
 | Return order processing with disposition codes | When using the _Inbound shipment orders_ related to an inbound return process, it is not possible to use the same process as the [_Sales return orders_](sales-returns.md) which supports the use of _Return reason codes_ and _Disposition codes_ as part of the _Return order receiving (and put away)_ mobile device menu item flow |
-| Cross docking                   | When using the _Outbound shipment orders_ and _Inbound shipment orders_ for cross docking processing the [planned cross docking](planned-cross-docking.md) capability is not supported. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) |
+| Cross docking                   | The _Outbound shipment orders_ and _Inbound shipment orders_ cannot yet be used as part of the the [planned cross docking](planned-cross-docking.md) capability. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md). |
 | Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. Instead the _Load item (and put away)_ setup must be used </li> <li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
 | Outbound load planning with release to warehouse from loads | In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving |
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
+| Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way then the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
 
 # Example of using inbound and outbound shipment orders
@@ -486,6 +495,10 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 - _Shipping clerk_ - Working with outbound processes
 - _Warehouse worker_ - Working with daily warehouse processes
 
+
+## Why do I get the error "" when posting a counting journal?
+
+
 <!-- perlynne
 
 Update ..Cancel state message edit
@@ -500,4 +513,6 @@ OData value mapping (Item/Warehouse) counting + dispatch/advice notification
 ### Warehouse management initiation wizard
 ### Outbound configuration wizard
 ### Inbound configuration wizard
+https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/get-started-with-setting-up-module
+
 -->
