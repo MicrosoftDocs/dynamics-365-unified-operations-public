@@ -50,14 +50,14 @@ During quality updates, no specific versioning requirements must be followed for
 
 The following table describes the current supported versions of various Commerce components as of **April 14, 2023**.
 
-| Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
-|---|---|---|---|---|
-| Finance and operations apps | 10.0.33 | 10.0.33 | 10.0.29 | 10.0.29 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.33 | 9.43 | 10.0.33 | 9.39 |
-| Commerce module library | 10.0.33 | 9.43 | 10.0.29 | 9.39 |
-| Commerce Scale Unit (self-hosted) | 10.0.33 | 9.43 | 10.0.25 | 9.35 |
-| Modern POS | 10.0.33 | 9.43 | 10.0.25 | 9.35 |
-| Hardware Station | 10.0.33 | 9.43 | 10.0.25 | 9.35 |
+| Component | Latest available release / component version (first release available in Sandbox) | Earliest supported release / component version |
+|---|---|---|
+| Finance and operations apps | 10.0.33 | 10.0.29 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.33 / 9.43 | 10.0.29 / 9.39 |
+| Commerce module library | 10.0.33 / 9.43 | 10.0.29 / 9.39 |
+| Commerce Scale Unit (self-hosted) | 10.0.33 / 9.43 | 10.0.25 / 9.35 |
+| Modern POS | 10.0.33 / 9.43 | 10.0.25 / 9.35 |
+| Hardware Station | 10.0.33 / 9.43 | 10.0.25 / 9.35 |
 
 ## One Version requirements
 
