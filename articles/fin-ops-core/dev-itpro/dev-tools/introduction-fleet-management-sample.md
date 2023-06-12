@@ -49,7 +49,7 @@ The Fleet Management solution includes two separate projects: one for the base m
 
 [Download the FMLab sample code](https://github.com/Microsoft/FMLab)
 
-[Create the FleetManagement solution](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)
+[End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md)
 
 
 
