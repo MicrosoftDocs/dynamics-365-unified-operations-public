@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Terminate schedule lines
-description: This topic 
+title: Collections coordinator workspace
+description: This topic describes the Collections coordinator workspace including the aged balances and customer timeline summary. 
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 06/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,20 +22,24 @@ ms.custom: 539093
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jchrist
-ms.search.validFrom: 2021-11-05
-ms.dyn365.ops.version: 10.0.24
+ms.search.validFrom: 2023-06-05
+ms.dyn365.ops.version: 10.0.34
 
 ---
 
-# Collections coordinator workspace (preview)
+# Collections coordinator workspace
 
-Collections coordinators (collections agents) typically need to find various types of information for their customers with overdue invoices. Before they contact their customers, they need to know information like the aging balances, last payment received and outstanding invoice amounts. With the Collections coordinator workspace much of that information is displayed in one page, save you time by not having to search in multiple pages and files. 
+Collections coordinators (collections agents) have the daily task of contacting customers with overdue balances. Before they contact their customers, they need to know information like the aged balances, last payment received, outstanding invoice amounts and many other data points. Finding this information requires navigating to multiple screens and lookups. With the Collections coordinator workspace much of that information is displayed in one page, saving them time by not having to search in multiple places. 
 
-The Collections coordinator workspace displays information for a collections coordinator (collections agent) looking for relevant collection information for their customers. If the collections coordinator is assigned a default collection pool it will default in the **Pool** field. The **Customer account** list is restricted to customers in the pool if one is selected. If not using pools then the drop down list for the Customer account displays all customers. Once selected, the workspace displays the customer name along with their credit rating and payment history summary for the last year. 
+## Enable the Collections coordinator workspace
+The Collections coordinator workspace is enabled through **Feature management**. In the **Feature management** workspace, on the **All** tab, enter **(Preview) Collections coordinator workspace** and then select **Enable**.
 
-The Overview tab displays the customer account details including the aging balances and other customer data points in D365 Finance relevant to their credit and open transactions. The aging balances chart displays the aging bucket summaries of the current and overdue amounts. 
+## Overview
+The Collections coordinator workspace displays information for a collections coordinator (collections agent) looking for relevant collection information for their customers. If the collections coordinator is setup as a collections agent and assigned a default collection pool it will default in the **Pool** field. The **Customer account** list is restricted to customers in the pool. If you are not using pools then the **Customer account** selection displays all customers. Once selected, the workspace displays the customer name along with their credit rating in Dynamics 365 Finance, payment history summary and overdue balance as of 60 days ago. 
 
-The data points displayed include:
+The Overview tab displays the customer account details including the aged balances and other customer data points in Dynamics 365 Finance relevant to their credit and open transactions. The aged balances chart displays the aging bucket summaries of the current and overdue amounts. 
+
+The selected customer data points displayed include:
 Open contracts which is the number of active project contracts from the Project management and accounting module
 Open invoices which is the total number of invoices that have not been fully settled
 Months as a customer is calculated from the **Customer since** field on the Credit and collections tab on the customer record
