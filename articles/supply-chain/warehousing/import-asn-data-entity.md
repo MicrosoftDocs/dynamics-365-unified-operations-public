@@ -39,10 +39,10 @@ You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V5_ co
 
 The _Inbound ASN_ composite data entities are intended for asynchronous integration scenarios where for example XML file–based files imports can be used.
 > [!NOTE]
-> Only the _ASN V5_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders). In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders.
+> Only the _Inbound ASN V5_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders). In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders.
 
 > [!WARNING]
-> Please do not use the _ASN V4_ data entities - but use the **_ASN V5_**
+> Please do not use the _Inbound ASN V5_ data entities - but use the **_Inbound ASN V5_**
 
 ## XML format for importing V3 ASNs
 
@@ -68,7 +68,7 @@ Microsoft Dynamics 365 Supply Chain Management supports the following XML format
 
 ## Inbound ASN V3 entity (Only for purchase orders) examples
 
-The following subsections provide examples of ASN XML import files for purchase order vendor shipments for _ASN V3_.
+The following subsections provide examples of ASN XML import files for purchase order vendor shipments for _Inbound ASN V3_.
 
 ### Example 1
 
@@ -135,7 +135,9 @@ The following example shows an XML file for importing vendor shipments for multi
 
 ## Inbound ASN V5 entity example
 
-The following subsection provide an example of ASN XML import files for inbound shipment orders for _ASN V5_. Note that the _ASN V5_ can as well be used for purchase orders and thereby supporting the same examples as shown above.
+The following subsection provide an example of ASN XML import files for **Inbound shipment orders** for _Inbound ASN V5_.
+> [!NOTE]
+> The _Inbound ASN V5_ uses a _MODULE_ field as part of both the _WHSInboundLoadPackingStructureEntity_ and the _WHSInboundLoadPackingStructureLineV5Entity_, it can be used for both purchase order (MODULE="Purch") and Inbound shipment orders (MODULE="InboundShipmentOrder")
 
 ### Example 4
 
@@ -146,8 +148,8 @@ The following example shows an XML file for importing shipments for one inbound 
 <Document>
     <WHSInboundLoadHeaderEntity TRACTORNUMBER="0000104">
         <WHSInboundShipmentHeaderEntity VENDORSHIPMENTID="VendASN_04">
-            <WHSInboundLoadPackingStructureEntity LICENSEPLATENUMBER="LP_ASN_004">
-                <WHSInboundLoadPackingStructureLineV5Entity MODULE="InboundShipmentOrder" ORDERNUMBER="00000174" ORDERLINENUMBER="1" ITEMNUMBER="A0001" QUANTITY="10" UNITSYMBOL="pcs"/>
+            <WHSInboundLoadPackingStructureEntity MODULE="InboundShipmentOrder" LICENSEPLATENUMBER="LP_ASN_004">
+                <WHSInboundLoadPackingStructureLineV5Entity MODULE="InboundShipmentOrder" ORDERNUMBER="IO04" ORDERLINENUMBER="1" ITEMNUMBER="A0001" QUANTITY="2" UNITSYMBOL="pcs"/>
             </WHSInboundLoadPackingStructureEntity>
         </WHSInboundShipmentHeaderEntity>
     </WHSInboundLoadHeaderEntity>

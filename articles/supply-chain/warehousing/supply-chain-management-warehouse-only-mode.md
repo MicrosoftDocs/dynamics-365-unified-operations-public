@@ -301,7 +301,7 @@ The following high-level processes are not supported out-of-the-box related to a
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
 | Outbound load planning with release to warehouse from loads | In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving |
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
-| Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way then the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
+| Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way than the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
 
 # Example of using inbound and outbound shipment orders
@@ -331,9 +331,9 @@ The provided example data uses the process of not being depending on the default
 
 Make sure having the **Supply Chain Management in warehouse-only mode** enabled as described in the [Feature management](#feature-management) section.
 
-### Azure Active Directory
+### Microsoft Entra ID applications
 
-In the **Azure Active Directory** page, assign the _Admin_ user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source.
+In the **Microsoft Entra ID applications** page, assign the _Admin_ user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source.
 
 When posting entities via [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md), it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case the company (dataAreId) must get specified to complete the messages for the shipment orders.
 
@@ -404,7 +404,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId
 ```
 
 > [!NOTE]
-> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Azure Active Directory applications** user default company.
+> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Microsoft Entra ID applications** user default company.
 
 ### Simple outbound shipment order message example
 
@@ -456,7 +456,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageI
 ```
 
 > [!NOTE]
-> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Azure Active Directory applications** user default company.
+> The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Microsoft Entra ID applications** user default company.
 
 ## Message processor messages for shipment orders
 
@@ -496,8 +496,9 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 - _Warehouse worker_ - Working with daily warehouse processes
 
 
-## Why do I get the error "" when posting a counting journal?
+## Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
 
+Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 <!-- perlynne
 
@@ -505,7 +506,7 @@ Update ..Cancel state message edit
 Setup post in-/out packing slip + Message processor process automation...  ?
 Detour Receiving complete
 Enhanced inbound receiving process
-ASN V5 => Check **Purch** for purchase orders. 
+
 Delivery remainder
 OData value mapping (Item/Warehouse) counting + dispatch/advice notification
 
