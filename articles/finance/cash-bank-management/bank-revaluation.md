@@ -78,39 +78,46 @@ No entry is made for the accounting currency if the bank currency matches the ac
 
 The foreign currency revaluation transaction is also split across the dimensions that are found on the bank transactions. The split is based on the balance for each dimension. For example, the total bank balance is 10,000, but the balance for business unit 001 is 4,000, whereas the balance for business unit 002 is 6,000. In this case, 40 percent of the revaluation amount is posted to the revaluation account that has business unit 001, and 60 percent is posted to the revaluation account that has business unit 002. If the account structure doesn't include a business unit, the full amount is posted to the revaluation account.
 
-### Bank foreign currency revaluation enhancement
+#### Bank foreign currency revaluation enhancement
 
 As of Dynamics 365 Finance version 10.0.36, a new **Enhancements to bank foreign currency revaluation** feature is available. This feature provides an alternative way to calculate bank foreign currency revaluation. Before this feature, the process of bank foreign currency revaluation considered every financial dimension value when it calculated the gain or loss. This feature enables organizations to select all or none of the financial dimensions when the gain or loss is calculated. In addition, this feature changes the calculation logic. It calculates the balance of the bank account by considering either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account. 
 
 > [!IMPORTANT]
 > After this feature is enabled, it can't be disabled.
 
-### Example 
+#### Example 1 - Different exchange rate on the dimensions
 
 The following table shows three ending balances in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
 
-| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance |
-| ------------ | --------------------- | --------------------- | --------------------- | -------------- |
-| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000         |
-| Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000         |
-| Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000         |
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Exchange rate - EUR/USD |
+| ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ----------------------- |
+| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 1.2                     |
+| Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 1.175                   |
+| Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | 1.22                    |
 
-In the next accounting period, there's a 5,000 EUR debit for financial dimension 001, as shown in the following table.
+Assuming the exchange rate between EUR and USD is 1:1.21 at the time point of revaluation date, then the gain/loss is calcualted as
 
-| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Opening balance | Debit | Credit | Ending balance |
-| ------------ | --------------------- | --------------------- | --------------------- | --------------- | ----- | ------ | -------------- |
-| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000          | 5,000 | 0      | 15,000         |
-| Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000          | 0     | 0      | 20,000         |
-| Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000          | 0     | 0      | 30,000         |
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
+| ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
+| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 100                             |
+| Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 700                             |
+| Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | -300                            |
 
-The gain/loss isn't allocated to all the financial dimensions that have a balance. Instead, the foreign currency revaluation voucher is posted only on financial dimension 001. In the following table, the currency exchange gain/loss amount is 50 USD.
+### Example 2 - Postive and negative balance on the dimensions
 
-| Main account                             | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Transaction currency | Accounting currency | Reporting currency |
-| ---------------------------------------- | --------------------- | --------------------- | --------------------- | -------------------- | ------------------- | ------------------ |
-| Bank - EUR                               | 001                   | Not applicable        | Not applicable        | 0                    | 50                  | 0                  |
-| Currency Exchange gain/loss - Unrealized | 001                   | Not applicable        | Not applicable        | 0                    | -50                 | 0                  |
-| Bank - EUR                               | 001                   | Not applicable        | Not applicable        | 0                    | 0                   | 50                 |
-| Currency Exchange gain/loss - Unrealized | 001                   | Not applicable        | Not applicable        | 0                    | 0                   | -50                |
+The following table shows one positive balance and one negative balance in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
+
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Exchange rate -EUR/USD |
+| ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ---------------------- |
+| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 1.2                    |
+| Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | 1.2                    |
+
+Assuming the exchange rate between EUR and USD is 1:1.21 at the time point of revaluation date, then the gain/loss is calcualted as
+
+| Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
+| ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
+| Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 100                             |
+| Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | -90                             |
 
 > [!NOTE]
 > To use this enhancement when you revalue foreign currency, you must first run **Reset foreign currency revaluation, define dimension level** (**Cash and bank management** \> **Periodic tasks** \> **Reset foreign currency revaluation, define dimension level**).
