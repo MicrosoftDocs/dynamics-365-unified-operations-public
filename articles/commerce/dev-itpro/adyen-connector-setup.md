@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 04/07/2023
+ms.date: 04/26/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -105,6 +105,17 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 - Key identifier
 - Key passphrase
 - Key version
+
+#### Enable a dedicated or shared hardware station
+
+To enable a dedicated hardware station, follow these steps in Commerce headquarters for each store for which you want to configure payment terminals.
+
+1. Go to **Retail and Commerce \> Channel setup \> Stores** and select the store for which you're configuring payment terminals.
+1. On the **Hardware Station** FastTab, select **Add**. 
+1. For **Hardware Station type**, select **Dedicated**.
+1. Save your changes to the store, and then run the **1070 (Channels)** job.
+
+For instructions on enabling a shared hardware station, see [Configure a new Retail hardware station](../retail-hardware-station-configuration-installation.md#configure-a-new-retail-hardware-station). 
 
 #### Set up a Dynamics 365 POS hardware profile
 

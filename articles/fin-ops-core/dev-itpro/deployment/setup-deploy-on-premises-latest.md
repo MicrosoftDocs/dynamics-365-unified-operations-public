@@ -425,7 +425,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. On the file share machine, run the following command.
 
     ```powershell
-    .\Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
+    Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
 1. If you want to change the default share names and base paths, update the **FileShares** section in the **ConfigTemplate.xml** file.
@@ -456,7 +456,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
-    You can install SQL Server with high availability either as SQL Server clusters that include a storage area network (SAN) or in an Always On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
+    You can install SQL Server with high availability either as SQL Server clusters that include a storage area network (SAN) or in an Always On configuration. Verify that the Database Engine, Full-Text Search, and SQL Server Management Tools are already installed.
 
     > [!NOTE]
     > Make sure that Always On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
@@ -671,6 +671,12 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > [!IMPORTANT]
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
+
+1. (Optional) If any of the nodes in your ConfigTemplate.xml have been setup with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
+
+```powershell
+.\Set-SFDynamicNodeTags.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+```
 
 ### <a name="configurelcs"></a>Step 16. Configure Lifecycle Services connectivity for the tenant
 

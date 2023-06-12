@@ -12,7 +12,8 @@ ms.search.region: Brazil
 ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 270004,  ""intro-internal
+ms.custom: 270004
+ms.collection: get-started
 ms.search.form: FBBookingPeriodCreate_BR, FBBookingPeriodListPage_BR, FBBookingPeriodLookup_BR, FBBookingPeriodWizard_BR
 ---
 

@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 25471
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ---
 

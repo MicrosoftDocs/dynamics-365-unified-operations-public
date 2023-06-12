@@ -14,19 +14,19 @@ ms.dyn365.ops.version: Operations
 
 # Language and locale descriptors in Help
 
-The client that finance and operations apps use supports multiple languages and locales. To add custom Help content for one or more locales to the in-product **Help** pane, you must make sure that both the following conditions are met:
+The client that finance and operations apps use supports multiple languages and locales. To add Help content for one or more locales to the in-product **Help** pane, you must make sure that the following conditions are met:
 
 - The value of the **ms.locale** property in each HTML file matches the locale of the content.
 
     For example, the German (Germany) content must have a setting of **ms.locale: de-de**.
 
-- On the custom Help website, the content is in a folder has the same name as the locale.
+- The content on the Help website is in a folder that has the same name as the locale.
 
     For example, the German (Germany) content must be in a folder that is named **de-de**.
 
 ## Languages and descriptors
 
-The following table lists the languages that the finance and operations help can support.
+The following table lists the languages that the finance and operations Help supports.
 
 | Language/locale  | Language/region name |
 |-------------------------------|----------------------|

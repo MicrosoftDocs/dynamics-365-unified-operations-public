@@ -381,7 +381,7 @@ To debug the error, follow these steps.
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Add product recommendations on POS](product.md)
 

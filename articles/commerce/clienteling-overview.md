@@ -8,7 +8,8 @@ ms.date: 11/16/2022
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ["260624", "intro-internal"]
+ms.custom: ["260624"]
+ms.collection: get-started
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: Global
 ms.author: shajain

@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
 author: alejandra-cabrales
-ms.date: 07/07/2022
+ms.date: 05/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,7 +67,7 @@ The project team should validate solution readiness. The following prerequisites
 
     Performance testing is a crucial part of validating the readiness of your solution. For detailed guidance about the recommended practices, review the [Performance Testing Techtalks](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/performance-testing-in-microsoft-dynamics-365-techtalk-series).
 
-- The environment version that is planned for the go-live complies with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](/commerce/arch-component-versioning.md#component-dependencies).
+- The environment version that is planned for the go-live complies with the [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](../../../commerce/arch-component-versioning.md#component-dependencies).
 - Key customer team members have been added to the LCS project.
 - A generic service account that will be used to deploy the production environment has been added to LCS.
 - All licenses that are required for go-live have been purchased in the correct tenant.
@@ -94,19 +94,21 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 > - Projects that are in **[United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)**. Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
 > - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Please follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 
-### Initiate the Go-live Readiness Review in the Portal
+### Initiate the Go-live Readiness Review in the portal
 
-1. The customer/partner sends an e-mail to <d365fogl@microsoft.com> and includes the following information:
+1. The project team decides who will be the key review participant from the **customer** organization. 
+2. A key review participant from the customer organization registers in the [Dynamics 365 Implementation Portal](https://aka.ms/D365ImplementationPortal) and provides required user details. 
+    > [!NOTE]
+    > This step must be completed by a customer team member and not the implementation partner team member. Key stakeholders from the customer organization who are participating in the review must be selected as Review participants in the portal.
+
+3. A key review participant from the customer organization sends an email to d365fogl@microsoft.com and includes the following information:
 
     - Confirmation that the project is ready to start the Go-live Readiness Review
-    - Confirmation of the LCS project ID
-    - **Confirmation of the users from the LCS project who will participate in the Go-live Readiness Review and should be granted access to the portal for the Go-live Readiness Review process**
+    - Confirmation of the LCS project ID or LCS project URL
+    - Confirmation that the previous step has been completed
 
-    > [!NOTE]
-    > Key stakeholders from the customer organization who are participating in the review must be selected as **Review participants** in the portal.
-
-2. Microsoft grants portal access to the requested LCS project users and confirms that this task has been completed by responding to the email.
-3. The customer/partner starts the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have access to the portal can access this article.
+4. Microsoft grants the key review participant from the customer organization access to the project and confirms that this task has been completed by responding to the email.
+5. The key review participant adds the additional project team members and creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registred on portal can access this article. 
 
 ### Submit the review
 

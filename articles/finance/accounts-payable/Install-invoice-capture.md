@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["13971", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
@@ -60,14 +60,19 @@ For a *non-integrated* Power Platform environment, you must install the finance 
 
 Invoice capture officially supports *integrated* Power Platform environments. Before you can install the Invoice capture solution, you must set up the connection between the environment and the Microsoft Dynamics 365 Finance environment by following these steps.
 
-1. In the Power Platform admin center, go to **Environment**, and open the **Environment details** page.
-2. Find and make a note of the environment URL.
-3. Replace **\<Environment URL\>** in the following URL with the environment URL that you found, and open the "Finance and Operation Virtual Data Source configuration."
+1. Register an application, and add a client secret to Microsoft Azure Active Directory (Azure AD) in your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad).
 
-    `https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911- a95e-000d3a110bbd`
+    > [!NOTE]
+    > Make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you will need them later.
+2. In the Power Platform admin center, go to **Environment**, and open the **Environment details** page.
+3. Find and make a note of the environment URL.
+4. Replace **\<Environment URL\>** in the following URL with the environment URL that you found, and open the "Finance and Operation Virtual Data Source configuration."
 
-4. Leave the existing entries unchanged.
-5. Enter the finance and operations target URL, tenant ID, client ID, and application secret in the appropriate fields.
+    `https://<Environment URL>/main.aspx?cmdbar=true&forceUCI=1&navbar=off&pagetype=entityrecord&etn=msdyn_financeandoperationsvirtualentity&id=47c40dcb-35d6-e911-a95e-000d3a110bbd`
+
+5. Leave the existing entries unchanged.
+6. Enter the finance and operations target URL, tenant ID, client ID, and application secret in the appropriate fields.
+7. Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
 > [!NOTE]
 > For integrated Power Platform environments, this step is still required in the current version. However, it isn't required in the general availability (GA) version.

@@ -12,14 +12,14 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.35 (July)
+          href: get-started/whats-new-changed-10-0-35.md
         - name: Finance 10.0.34 (June)  
           href: get-started/whats-new-changed-10-0-34.md
         - name: Finance 10.0.33 (April)  
           href: get-started/whats-new-changed-changed-10-0-33.md
         - name: Finance 10.0.32 (March) 
           href: get-started/whats-new-changed-10-0-32.md
-        - name: Finance 10.0.31 (February)
-          href: get-started/whats-new-changed-10-0-31.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -465,9 +465,7 @@
       - name: Subscription billing
         items:
         - name: Subscription billing overview
-          href: accounts-receivable/subscription-billing-summary.md
-        - name: Revenue and expense deferrals  
-          href: accounts-receivable/sb-project-deferrals.md
+          href: accounts-receivable/subscription-billing-summary.md     
         - name: Recurring contract billing
           items:
           - name: Set up recurring contract billing
@@ -506,6 +504,10 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Revenue and expense deferrals with project  
+            href: accounts-receivable/sb-project-deferrals.md
+          - name: Migrate revenue recognition data to revenue and expense deferrals  
+            href: accounts-receivable/sb-RevRecSubBillMigration.md
           - name: Deferral posting method 
             href: accounts-receivable/Deferral-posting-methods.md
           - name: Create deferral schedules
@@ -1312,6 +1314,8 @@
           href: general-ledger/cant-reverse-transctns.md
         - name: Intercompany journals and financial dimensions  
           href: general-ledger/intercompany-journal.md
+        - name: General journal posting performance  
+          href: general-ledger/posting-performance.md
     - name: Financial reporting
       items:
       - name: Get started with Financial reporting
@@ -1778,6 +1782,24 @@
               href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
           - name: Extension
             items: 
+            - name: Tax integration design
+              items:
+              - name: Tax integration overview
+                href: localizations/tax-integration-flow.md
+              - name: Facade, sequence, and activities in tax integration
+                href: localizations/tax-integration-facade-sequence-activity.md
+            - name: Integrate a new transaction
+              items:
+              - name: Entrance code to tax integration
+                href: localizations/tax-integration-entrance-code.md
+              - name: Implement tax integration activities
+                href: localizations/tax-integration-implement-tax-integration-activities.md
+              - name: Uptake features and functions
+                href: localizations/tax-integration-uptake-features.md
+              - name: Modifications on switch functions and the front end
+                href: localizations/tax-integration-modification-swtich-functions-frontend.md
+            - name: Add a new activity in tax integration
+              href: localizations/tax-integration-how-to-add-activity.md
             - name: Add data fields in tax configurations
               href: localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/finance
             - name: Add data fields in the tax integration by using extensions
@@ -2294,6 +2316,8 @@
             href: localizations/emea-dnk-intrastat.md
           - name: VAT declaration
             href: localizations/emea-dnk-vat-declaration-denmark.md
+          - name: Standard Audit File for Tax (SAF-T) for Denmark
+            href: localizations/emea-dnk-saf-t.md
         - name: Egypt
           items: 
           - name: Egypt overview
@@ -3030,7 +3054,9 @@
             href: localizations/emea-ita-vat-statements-details.md
           - name: Quarterly VAT communication report
             href: localizations/emea-ita-quarterly-vat-communication.md
-          - name: Competence date and fiscal journal
+          - name: Fiscal journal report
+            href: localizations/emea-ita-fiscal-journal.md
+          - name: Competence date for transactions in Italy 
             href: localizations/emea-ita-competence-date.md
           - name: Depreciation of fixed assets
             href: localizations/emea-ita-depreciation-of-fixed-assets.md
@@ -3266,6 +3292,8 @@
           items: 
           - name: Latin America overview
             href: localizations/latam-overview.md
+          - name: Latin America parameters
+            href: localizations/ltm-core-latam-parameters.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
@@ -3290,6 +3318,20 @@
             href: localizations/ltm-core-sales-point-prefixes.md
           - name: Sales point relation for sales documents and remission
             href: localizations/ltm-core-point-relation.md
+          - name: Sales invoice posting for Latin America
+            href: localizations/ltm-core-sales-invoice-posting-latam.md
+          - name: Purchase invoice posting for Latin America
+            href: localizations/ltm-core-purchase-invoice-posting.md
+          - name: Inventory transfer order for posting for Latin America
+            href: localizations/ltm-core-transfer-order-posting.md
+          - name: Post bank expenses for Latin America
+            href: localizations/ltm-core-bank-expenses.md
+          - name: Post packing slips for Latin America
+            href: localizations/ltm-core-packing-slip-posting.md
+          - name: Configure journal names for Latin America
+            href: localizations/ltm-core-journal-name-configuration..md
+          - name: Value query for Latin America
+            href: localizations/ltm-core-value-query.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -3882,8 +3924,14 @@
             href: localizations/apac-tha-withholding-tax.md          
         - name: United Arab Emirates (UAE)
           items: 
+          - name: United Arab Emirates (UAE) overview
+            href: localizations/uae.md
           - name: Set up and report value-added tax (VAT)
             href: localizations/uae-vat-setup-reporting.md
+          - name: FTA Tax Audit File (FAF)
+            href: localizations/uae-faf.md
+          - name: Print a sales invoice in the UAE layout
+            href: localizations/uae-sales-invoice-layout.md
         - name: United Kingdom
           items:
           - name: United Kingdom overview
@@ -4089,6 +4137,22 @@
           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
         - name: Help prevent long-running reports from timing out
           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance  
+    - name: Business performance analytics (preview)
+      items: 
+      - name: Business performance analytics
+        href: business-performance-analytics/business-performance-analytics-home-page.md
+      - name: Configure business performance analytics
+        href: business-performance-analytics/configure-BPA.md
+      - name: Install business performance analytics
+        href: business-performance-analytics/install-bpa.md
+      - name: Set up security in business performance analytics
+        href: business-performance-analytics/set-up-security.md
+      - name: Business performance analytics FAQ 
+        href: business-performance-analytics/bpa-faq.md
+      - name: Business performance analytics reports
+        href: business-performance-analytics/Reports-in-BPA.md
+      - name: Create business performance analytics reports  
+        href: business-performance-analytics/how-to-create-and-edit-reports.md        
     - name: Electronic reporting
       items:
       - name: Electronic reporting overview
@@ -4129,6 +4193,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/finance
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/finance  
+      - name: Supported data souce types for ER components
+        href: ../fin-ops-core/dev-itpro/analytics/er-data-sources.md
       - name: Formula designers in ER
         items:
         - name: Formula designer

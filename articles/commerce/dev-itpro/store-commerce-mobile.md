@@ -4,7 +4,7 @@
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg 
-ms.date: 02/03/2023
+ms.date: 05/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -88,7 +88,7 @@ To activate a device on a Store Commerce mobile app, follow these steps.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
 1. Your device should now be activated. You can sign in to the register by using the operator ID and password for of worker who is associated with the store that you selected. 
 
-For more information about device activation, see [Point of sale (POS) device activation](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
+For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 
 ## Feature parity with Store Commerce for Windows
 

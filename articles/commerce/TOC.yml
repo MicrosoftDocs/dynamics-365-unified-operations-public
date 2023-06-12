@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.35 (July 2023)
+          href: get-started/whats-new-commerce-10-0-34.md
         - name: Commerce 10.0.34 (June 2023)
           href: get-started/whats-new-commerce-10-0-34.md
         - name: Commerce 10.0.33 (April 2023)
@@ -398,6 +400,8 @@
             href: dev-itpro/store-commerce.md
           - name: Store Commerce app capabilities
             href: store-commerce-capabilities.md
+          - name: Store Commerce app FAQ
+            href: dev-itpro/store-commerce-faq.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce
@@ -706,6 +710,18 @@
           items:
           - name: Create and configure extended warranties
             href: extended-warranty.md
+        - name: Omnichannel media management
+          items:
+          - name: Omnichannel media management overview
+            href: omnichannel-media-management-overview.md
+          - name: Assign media to products and categories
+            href: assign-media-omnichannel.md
+          - name: Publish media assignments
+            href: publish-media-omnichannel.md
+          - name: Copy omnichannel content between tenants
+            href: copy-content-between-tenants.md
+          - name: Bulk import and export digital assets using manifests
+            href: import-export-manifest.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
@@ -742,6 +758,8 @@
           href: pos-pricing-functions.md
         - name: Commerce pricing APIs
           href: pricing-apis.md
+        - name: Price change tracking
+          href: price-change-tracking.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -757,7 +775,7 @@
           - name: Enable personalized recommendations
             href: personalized-recommendations.md
           - name: Opt out of personalized recommendations 
-            href: personalization-gdpr.md
+            href: opt-out-personalization.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
         - name: Enable "shop similar description" recommendations
@@ -2590,6 +2608,8 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Migrate to the Commerce SDK
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Commerce Scale Unit extensions health check
+            href: dev-itpro/retail-sdk/csu-extensions-check.md
           - name: Obsolete and removed APIs, classes, and methods
             href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)

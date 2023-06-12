@@ -45,6 +45,7 @@ This article provides links to documentation resources for Denmark.
 - [Set up payment slip format](tasks/set-up-payment-slip-format.md)
 - [Danish Intrastat](emea-dnk-intrastat.md)
 - [VAT declaration](emea-dnk-vat-declaration-denmark.md)
+- [Standard Audit File for Tax (SAF-T) for Denmark](emea-dnk-saf-t.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

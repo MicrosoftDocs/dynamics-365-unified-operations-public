@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.35 (July 2023)
+          href: get-started/whats-new-scm-10-0-35.md
         - name: Supply Chain Management 10.0.34 (June 2023)
           href: get-started/whats-new-scm-10-0-34.md
         - name: Supply Chain Management 10.0.33 (April 2023)
@@ -875,6 +877,10 @@
           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?context=/dynamics365/context/supply-chain
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
+      - name: Process advisor content
+        items:
+        - name: Analyze warehouse material movement through process mining
+          href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
         - name: Analytical Workspaces (using Power BI Embedded)
@@ -1977,6 +1983,8 @@
             href: master-planning/tasks/monitor-master-planning-run.md
           - name: Net requirements and pegging information with the deprecated planning engine
             href: master-planning/net-requirements-built-in-master-planning.md
+          - name: Safety stock fulfillment with the deprecated master planning engine
+            href: master-planning/safety-stock-replenishment-in-deprecated-engine.md
           - name: Create a material plan for co-products
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
@@ -3729,10 +3737,14 @@
           href: warehousing/mobile-device-parameters.md
         - name: Mobile device user accounts
           href: warehousing/mobile-device-work-users.md
+        - name: Warehouse Mobile app accessibility features
+          href: warehousing/warehouse-app-accessibility.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
           href: warehousing/warehouse-app-events.md
+        - name: Inspect details of active Warehouse Management mobile app sessions
+          href: warehousing/work-user-sessions.md
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
@@ -3793,6 +3805,12 @@
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
+          - name: Print labels using an external service
+            href: warehousing/label-printing-using-external-label-service.md
+          - name: Print labels using the Loftware NiceLabel label service solution
+            href: warehousing/label-printing-using-nicelabel.md
+          - name: Print labels using the Seagull Scientific BarTender label service solution
+            href: warehousing/label-printing-using-bartender.md
           - name: Enable license plate label printing
             href: warehousing/tasks/license-plate-label-printing.md
         - name: Auto-update shipments
@@ -3813,8 +3831,6 @@
           href: warehousing/tasks/set-up-dispositions-codes.md
         - name: Unit of measure and stocking policies
           href: warehousing/unit-measure-stocking-policies.md
-        - name: Warehouse Power BI content
-          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
         - name: GS1 bar codes and QR codes
@@ -3827,6 +3843,8 @@
           href: warehousing/warehouse-message-processor-messages.md
         - name: Warehouse-specific inventory transactions
           href: warehousing/warehouse-transactions.md
+        - name: Optimize location directive queries
+          href: warehousing/location-directives-optimize.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights

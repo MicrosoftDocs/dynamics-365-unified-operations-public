@@ -143,8 +143,8 @@ To generate a VAT declaration, you must configure the tax number (Steuernummer) 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Germany, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Germany, and that uses the **Enterprise Id (COID)** registration category.
-5. In the **Registration number** field, enter the tax number.
+4. In the **Registration type** field, select the registration type that is dedicated to Germany, and that uses the **VAT ID** registration category.
+5. In the **Registration number** field, enter the VAT number (Steuernummer).
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).

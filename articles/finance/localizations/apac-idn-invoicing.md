@@ -46,6 +46,10 @@ Before you use the invoicing functionality, the following prerequisites must be 
     For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 - [Configure the Electronic invoicing solution in Dataverse](e-invoicing-power-platform-plug-in.md).
+
+    > [!NOTE]
+    > [Microsoft Dynamics 365 Electronic Invoicing connector for Microsoft Dataverse](https://appsource.microsoft.com/product/dynamics-crm/mscrm.electronic-invoicing) isn't currently available from AppSource. If this connector is required to obtain the Dataverse solution for Electronic invoicing, send a request to <DataverseEnvoicing@microsoft.com> to get the Dataverse solution. For general questions about electronic invoicing, go to the dedicated Yammer group, [Electronic invoicing](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=9386819584&view=all). If you need further assistance, create a support ticket. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
 - Enable Electronic invoicing for Indonesia
 
 ## Tax invoice numbering

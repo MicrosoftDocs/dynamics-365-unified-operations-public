@@ -27,14 +27,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.35 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-35.md                      
+        - name: Human Resources 10.0.34 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-34.md          
         - name: Human Resources 10.0.33 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-33.md  
         - name: Human Resources 10.0.32 (merged infrastructure)          
           href: ./get-started/hr-whats-new-changed-10-0-32.md        
-        - name: Human Resources 10.0.31 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10-0-31.md
-        - name: Human Resources 10.0.30 (merged infrastructure)
-          href: ./get-started/whats-new-changed-10-0-30.md
         - name: What's new in Dynamics 365 Human Resources (stand-alone)
           items: 
           - name: What's new in Dynamics 365 Human Resources (stand-alone) December 2022
@@ -367,6 +367,12 @@ items:
             href: business-events-overview.md
           - name: Human Resources business event example
             href: bus-event-example.md
+          - name: Batch based business events
+            items:  
+            - name: Configure batch based business events
+              href: hr-configure-batch-bus-events.md
+            - name: Power Automate templated based business events
+              href: hr-power-auto-temp-bus-events.md
           - name: Use cases for Human Resouces business events
             href: bus-event-use-case.md             
         - name: Workflow system
@@ -589,6 +595,8 @@ items:
         href: hr-leave-and-absence-suspend-leave.md
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
+      - name: Manage leave requests in Teams  
+        href: hr-teams-leave-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
