@@ -65,7 +65,7 @@ The following table shows the various results that can be shown after a fit anal
 | Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. For more information, see [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
 | Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
 | Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
-| Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
+| Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 2 |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
 | Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | Future wave |
@@ -75,7 +75,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Demand with specific BOM or route requirements defined: *\#* | This feature is now supported. | Supported |
 | Production | Formula versions with Co/By products: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
 | Production | Formula versions with yield: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
-| Production | Plans including sequencing: *\#* | This feature is pending. Currently, sequencing is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
+| Production | Plans including sequencing: *\#* | This feature is now supported. | Supported |
 | Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is now supported. | Supported |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
