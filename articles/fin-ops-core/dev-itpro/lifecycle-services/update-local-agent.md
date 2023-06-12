@@ -31,13 +31,14 @@ search.app:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.2.1, which was released in June 2023.
+This article explains how to update the local agent. The latest version of the local agent is version 3.2.2, which was released in June 2023.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.2.2               | This version fixes a bug with the local agent not being able to cleanup the workspace directory due to the directory containing files with very long paths. | June 2023 | Not applicable |
 | 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
 | 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation | March 2023 | Not applicable |
 | 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |June 2022 | Not applicable |
@@ -58,6 +59,9 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.2.2
+- This version fixes a bug with the local agent not being able to cleanup the workspace directory due to the directory containing files with very long paths.
 
 ## What's new in local agent 3.2.1
 - This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage.
