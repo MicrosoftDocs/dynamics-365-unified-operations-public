@@ -40,6 +40,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
 | Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
+| Product dimensions | Planning Optimization suppports the product dimensions: Color, Size, Style, Version, Configuration; the storage dimensions: Site, Warehouse, Location; the tracking dimensions: Serial, Batch and the extensible dimensions: InventDim1 to InventDim12. The rest of the dimensions not mentioned here are not supported on Planning Optimization. |
 
 ## Additional resources
 
