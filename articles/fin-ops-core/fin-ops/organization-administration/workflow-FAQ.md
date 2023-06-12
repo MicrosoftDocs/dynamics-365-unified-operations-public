@@ -4,7 +4,7 @@
 title: Workflow FAQ
 description: This article answers frequently asked questions about the workflow system.
 author: ChrisGarty 
-ms.date: 03/01/2022
+ms.date: 06/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -58,6 +58,12 @@ Here are a few key areas to note about adding alerts to workflows to provide not
     - [Workflows have business events](../../dev-itpro/business-events/business-events-workflow.md) that the customer could use to trigger Flows have the notifications that they are looking for.   
 
 In summary, if a user does not get the proper notification from the Action Center when they are assigned a workflow work item, then leverage [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) with Microsoft Power Automate to provide additional or different notifications.
+
+There is some overlap between workflow and Microsoft Power Automate. 
+ - Workflows that are created in Dynamics 365 Finance are restricted to run inside Dynamics 365 Finance. 
+     - Use Dynamics 365 Finance to set up workflows that are specific to your Dynamics 365 Finance.
+ - Power Automate allows users to set up workflows that run outside of Dynamics 365 Finance. For more information, see [Power Automate](../../../powerautomate/getting-started.md)
+    - Use Power Automate to set up flows that involve information flowing through your company. 
 
 ## Why is workflow editor not able to start under AD FS?
 When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor may have trouble starting. If it does, make sure that the URL "https://dynamicsaxworkfloweditor/" is added to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.
