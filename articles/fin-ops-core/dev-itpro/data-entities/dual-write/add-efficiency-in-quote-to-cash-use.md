@@ -76,59 +76,104 @@ When the feature *Make Supply Chain Management price master when integrated with
 
 ## Calculate and push prices, discounts, and totals from Supply Chain Management to Sales
 
-After updating a sales quotation or sales order in Supply Chain Management, it can sometimes be important to push the updated prices, discounts, and totals to Sales right away. To enable this ability, the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* must be enabled in Supply Chain Management.
+After updating a sales quotation or sales order in Supply Chain Management, it's important to push the updated prices, discounts, and totals to Sales. To enable this ability, the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* must be enabled in Supply Chain Management (see also [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md)).
+
+To process the calculations in the background, you must also enable the *Process sales quotation related events* feature (recommended). Background calculations are managed by the message processor as described in XXXX <!-- KFM: Link to later section about this. -->
+
+### Fully recalculate and push prices, discounts, and totals
+
+When you fully recalculate and push prices, discounts, and totals, the system checks trade agreement evaluation policies and, if necessary, searches trade agreements to see whether line unit prices and discounts need to be recalculated. It then retrieves the correct line unit prices and discounts, calculates all the totals required, and syncs them to Sales.
 
 Do the following steps to work with this feature:
 
-1. Select the sales quotation or sales order you want to work with. If you are working in a list view, you can select more than one quotation or order.
+1. In Supply Chain Management, select the sales quotation or sales order you want to work with. If you are working in a list view, you can select more than one quotation or order.
 1. On the Action Pane, open the **Quotation** tab (for quotations) or the **Sell** tab (for orders) and select **Push price and totals**.
+1. The system will now run the calculation either synchronously or asynchronously based on your system preferences, as described in [Choose whether to process totals synchronously or asynchronously](#synch-async).
 
+### Calculate and push totals only
 
+When you calculate and push totals only, the system doesn't recalculate any line unit prices or discounts. Instead, it only calculates new line and header totals and syncs them to Sales.
 
-When the feature is enabled additionally two new menu items <!-- KFM: Where, in the Action Pane?--> are added to **Sales and Marketing \> Periodic tasks**: **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales**. These two menu actions allow for use cases complementary and not replacing existing **Calculate sales totals** <!-- KFM: What is this?-->. **Calculate sales totals** supports the use case of calculating both sales order and sales quotation subtotals and totals and synchronizing these to Sales with a fixed recurrence. **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales** support the use case of needing to perform a calculation of sales quotation or sales order totals for a range of source documents immediately in a non-recurring scenario. The range can be based <!-- KFM: How do we choose this?--> on sales quotation and order numbers, customer account, and invoice account, while still considering the setting to ignore documents updated before (days)<!-- KFM: Where is this setting? What is it called? -->. The two settings work in combination<!-- KFM: Which two settings? -->. Setting up a recurring batch job is not supported. Use these capabilities when you need to apply a specific range of quotations and orders for which a total calculation should be performed as a one-off.
+Do the following steps to work with this feature:
 
-When the feature *Process sales quotation related events* is enabled together with *Calculate and push prices* <!-- KFM: Are these both in FM?--> , discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales, a setting is added to the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page: **Calculate and push prices and totals in batch**. This setting lets administrators choose whether to Calculate and push prices and totals in batch synchronously or asynchronously through the message processor. When using the message processor <!-- KFM: Clarify what this is and give a link. -->, four messages appear. Two for sales order: *Calculate and push prices and totals for sales order* and *Calculate and push totals for sales order*. Two for sales quotation: *Calculate and push prices and totals for sales quotation* and *Calculate and push totals for sales quotation*.
+1. In Supply Chain Management, go to one of the following, based on the type of document you want to work with:
+    - **Sales and Marketing \> Periodic tasks \> Calculate sales order totals for Sales**
+    - **Sales and Marketing \> Periodic tasks \> Calculate sales quotation totals for Sales**
+1. A dialog box opens. Make the following settings:
+    - **Ignore documents updated before** – Enter a number of days to define the oldest document that you want to process.
+    - To control which records should be processed, on the **Records to include** FastTab, select **Filter**. A standard query dialog appears, where you can define selection criteria. The fields work just as they work for other types of queries in Microsoft Dynamics 365 Supply Chain Management.
+    - Note that you can't set these jobs to recur on a schedule. They are intended for one-off calculations.
+1. Select **OK**.
+1. The system will now run the calculation either synchronously or asynchronously based on your system preferences, as described in [Choose whether to process totals synchronously or asynchronously](#synch-async).
 
-When the common use case is to select more sales orders and sales quotation for which to do the **Push price and totals** or **Calculate sales order/quotation totals for Sales**, then set **Calculate and push prices and totals in batch** to *Yes*. This setting will provide the better user experience when working in the Supply Chain Management.
+### <a name="synch-async"></a> Choose whether to process totals synchronously or asynchronously
+
+Each time you trigger a full or totals-only calculation, the system can run the calculation either synchronously or asynchronously based on your system preferences. To set your preferences, do the following steps:
+
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Dynamics 365 Sales integration** tab.
+1. Set **Calculate and push prices and totals in batch** to *Yes* to run the calculation asynchronously. Set it to *No* to run the calculation synchronously.
+
+> [!NOTE]
+> We recommend that you enable the **Calculate and push prices and totals in batch** option because then users won't need to wait for the system to process the data.
+
+### Schedule the Calculate sales totals batch job
+
+We recommend that you set up the scheduled task called *Calculate sales totals* to run at a regular interval to ensure that all line and order totals are regularly calculated and synced to Sales. This task calculates and pushes the totals only (it doesn't do the full price recalculation described previously), and includes pushing taxes and freight charges to sales.
+
+To set up this scheduled task, go to **Sales and marketing \> Accounts receivable \> Periodic tasks \> Calculate sales totals**.
 
 ## Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales
 
-Sales orders created from the sales quotation process in Dynamics 365 Sales are not created with the same data as sales orders created from the sales quotation process in Supply Chain Management. This is due to differences in data models between Dynamics 365 Sales and Supply Chain Management. Sales orders created from the sales quotation process in Dynamics 365 Sales have a small set of data (payload) carried forward to the sales order from the sales quotation. When the sales order is synchronized from Dynamics 365 Sales to Supply Chain Management, Supply Chain Management initializes values fields without values using standard Supply Chain Management logic. While this may be appropriate in some scenarios, in other scenarios it is not. In a scenario where Supply Chain Management only fields such as financial dimensions are manually updated on a sales quotation in Supply Chain Management where ownership is with Dynamics 365 Sales, these manually updated financial dimension values are not carried forward to the resulting sales order in Supply Chain Management.
+Sales orders created from the sales quotation process in Dynamics 365 Sales are not created with the same data as sales orders created from the sales quotation process in Supply Chain Management. This is due to differences in data models between Dynamics 365 Sales and Supply Chain Management. Sales orders created from the sales quotation process in Dynamics 365 Sales have a small set of data carried forward to the sales order from the sales quotation. When the sales order is synchronized from Dynamics 365 Sales to Supply Chain Management, Supply Chain Management initializes field values without using standard Supply Chain Management logic. While this may be appropriate in some scenarios, in other scenarios it is not. In a scenario where Supply Chain Management only fields such as financial dimensions are manually updated on a sales quotation in Supply Chain Management where ownership is with Dynamics 365 Sales, these manually updated financial dimension values are not carried forward to the resulting sales order in Supply Chain Management.
 
-With the feature *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* you now have an option:<!-- KFM: How do set this option? Only in FM? -->
+To control this behavior, either enable or disable the feature called *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* (see also [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md)). Based on this condition, the system will work as follows:
 
-- Use the data from sales order created from the sales quotation in the Dynamics 365 Sales when the sales order is synched to and created in Supply Chain Management regardless of the data on the sales quotation in Supply Chain Management.
-- When the feature is enabled, have the sales order synched to and created in Supply Chain Management have the same field values carried over from the sales quotation in Supply Chain Management regardless of ownership with Dynamics 365 Sales or Supply Chain Management.
+- **When the feature is enabled** – The sales order in Supply Chain Management will have field values carried over from the sales quotation in Supply Chain Management regardless of ownership.
+- **When the feature is disabled** – The sales order in Supply Chain Management the field values won't be carried over when ownership is with Dynamics 365 Sales. Instead they will be initialized.
 
-*Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* is applicable only when the *Integrate sales quotation lifecycle with Dynamics 365 Sales* feature is enabled.
+When the *Process sales quotation related events* feature is enabled together with *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* feature, you can choose whether to copy quotation information on order creation in real time or through the message processor. Follow these steps to set this option:
 
-When the feature *Process sales quotation related events* is enabled together with *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales*, a setting is added to the Dynamics 365 Sales integration tab of the **Accounts receivable parameters** page. This setting lets administrators choose whether to copy quotation information on order creation in real time or through the message processor.
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Dynamics 365 Sales integration** tab.
+1. Set **Copy quotation data to sales order in batch** to *No* to copy quotation information on order creation in real time. Set it to *Yes* to copy quotation information asynchronously.
 
-There are pros and cons to copying quotation information on order creation through the message processor.<!-- KFM: What are they? Next paragraph? -->
-
-When copy quotation information on order creation is using the message processor, then the Create Order action will complete be faster compared to not using the message processor. This gives a better user experience in the in the Dynamics 365 Sales user interface when clicking Create Order from a sales quotation. The sales order synched from Dynamics 365 Sales and created in Supply Chain Management will have the data from the sales quotation in Supply Chain Management copied, once the copy quotation information on order creation is processed. Depending on the job execution recurrence setup in the message processor, this can happen with a delay. If this delay is unacceptable, then copy quotation information on order creation can happen immediately upon sales order synched from Dynamics 365 Sales and created in Supply Chain Management. Please note, when copy quotation information on order creation is not using the message processor, the wait time added to the user experience in Dynamics 365 Sales upon Create Order depends on the number of lines on the sales quotation. Fewer lines, less wait time.
+> [!NOTE]
+> We recommend that you enable the **Copy quotation data to sales order in batch** option because then users won't need to wait for the system to process the data.
 
 ## <a name="process-events"></a>Process Dynamics 365 Sales integration related events
 
 The *Process Dynamics 365 Sales integration related events* feature enables sales quotation events to be processed asynchronously using the message processor framework. The feature is applicable only when *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is enabled.
 
+### Message queue options
+
 When the feature Process sales quotation related events <!-- KFM: Do you mean *Process Dynamics 365 Sales integration related events*? --> is enabled, two settings are added to the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page: **Create quotation journal in batch** and **Create quotation confirmation journal** in batch. These settings let administrators choose whether to create the quotation journal or the quotation confirmation journal in real time upon the send and confirm events synchronously or through the message processor when sales quotation ownership is indirectly or directly with Dynamics 365 Sales.
 
-The feature provides new messages for the message processor:
+### Work with the message queue
 
-- *Create sales quotation journal* – Creates the sales quotation journal.
-- *Create sales quotation confirmation journal* – Creates the sales quotation confirmation journal.
-- *Link sales order and sales quotation* – Results from the confirmation event and updates the sales quotation/sales order relationship. <!-- KFM: What do we mean by "results from"? -->
+[Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md)
+
+### Message queue messages
+
+When feature *Process Dynamics 365 Sales integration related events* is enabled, the *Dynamics 365 Sales Integration* message queue is available from the message processor user interface. The system uses this queue to process messages related to the Dynamics 365 Sales integration. The following table describes the messages that are available in the queue and the features required for each message to be available.
+
+| Message type | Feature required | Description |
+|---|---|---|
+| Calculate and push prices and totals for sales quotation | *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Does a full recalculations of prices, discounts, and totals for sales quotation and pushes the results to Sales. |
+| Calculate and push prices and totals for sales order | *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Does a full recalculations of prices, discounts, and totals for sales order and pushes the results to Sales. |
+| Calculate and push totals for sales order | *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Calculate and push totals for sales order. |
+| Calculate and push totals for sales quotation | *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Calculate and push totals for sales quotation. |
+| Create sales quotation journal | *Process Dynamics 365 Sales integration related events* | Creates the sales quotation journal. |
+| Create sales quotation confirmation journal| *Process Dynamics 365 Sales integration related events* | Creates the sales quotation confirmation journal. |
+| Link sales order and sales quotation | *Process Dynamics 365 Sales integration related events* | Results from the confirmation event and updates the sales quotation/sales order relationship. <!-- KFM: What do we mean by "results from"? --> |
+| Copy sales quotation data to sales order | *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365* | <!-- KFM: Description needed -->  |
+
 
 *Create quotation confirmation journal* and *Link sales order from quotation* are interrelated in that *Link sales order from quotation* is dependent on *Create quotation confirmation journal* being successfully processed. The two messages serve the same use case as the **Confirm** action in the user interface (**Sales and marketing \> Sales quotations \> All quotations**, header ribbon Follow up; group Generate, Confirm action).
 
-When feature *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365* is enabled, the *Copy sales quotation data to sales order* message becomes available. <!-- KFM: What is this message? Available where, to whom, for what purpose? -->
 
-When feature *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* is enabled, additionally 4 messages are introduced. Two for sales order: *Calculate and push prices and totals for sales order* and *Calculate and push totals for sales order*. Two for sales quotation: *Calculate and push prices and totals for sales quotation* and *Calculate and push totals for sales quotation*. <!-- KFM: We should describe the purpose of each of these messages. -->
 
-When feature Process *Dynamics 365 Sales integration related events* is enabled, one new message queue is available from the message processor user interface:
 
-- *Dynamics 365 Sales Integration* – <!-- KFM: Description needed -->
 
 ### Set up Process Dynamics 365 Sales integration related events
 
@@ -163,3 +208,5 @@ When events are processed leveraging the message queue framework, it is possible
 ![Message process messages form](../dual-write/media/add_effciency_16.png)
 
 For more information on the Message processor, see [Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md).
+
+
