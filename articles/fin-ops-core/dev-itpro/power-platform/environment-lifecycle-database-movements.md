@@ -30,7 +30,7 @@ In Power Platform, it's possible to restore a [system backup](/power-platform/ad
 
 Elements to pay attention after the restore and point-in-time restore are complete:
 
-- The environment administrators need to ensure the two environments are realligned from a code perspective:
+- The environment administrators need to ensure the two environments are alligned from a code perspective:
   - Option 1: After restore, install in Dataverse the solutions prior to restore
   - Option 2: Deploy to the finance and operations apps environment the code package corresponding to the time of the backup used for PITR.
 
@@ -45,7 +45,7 @@ In Power Platform, it's possible to [copy an environment](/power-platform/admin/
 
 Elements to pay attention after the restore and point-in-time restore are complete:
 
-- The environment administrators need to ensure the target environments are realligned from a code perspective:
+- The environment administrators need to ensure the target environments are alligned from a code perspective:
   - Option 1: After copy, install in Dataverse the solutions prior to the copy
   - Option 2: Deploy to the finance and operations apps environment the code package installed in the source environment.
 
