@@ -37,5 +37,16 @@ To install business performance analytics, follow these steps.
 >[!NOTE]
 >If you uninstall and install business performance analytics, any new reports that were created won't be saved.
 
+## Access Reports in business performance analytics
+
+To access reports in business performance analytics, follow these steps. 
+
+1. Go to the Maker portal of environment where business performance analytics is installed.
+2. Select **Apps** to open business performance analytics.
+3. The available reports will be displayed. 
+4. For more information about setting up security, see [Set up security in business performance analytics](set-up-security.md).
+
+
+
 
    
