@@ -4,7 +4,7 @@
 title: Invoice capture solution configuration groups
 description: This article provides general information about configuration groups in the Invoice capture solution.
 author: sunfzam
-ms.date: 04/4/2023
+ms.date: 06/13/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -32,13 +32,13 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Admin can manage the list of invoice fields and the manual review settings by using configuration groups. Users can assign the configurations to different legal entities or different vendors. All the legal entities in the same configuration group use the same invoice fields and manual review setting.
+Administrators can manage the list of invoice fields and the manual review settings by using configuration groups. Users can assign configurations to different legal entities or different vendors. All the legal entities in the same configuration group use the same invoice fields and manual review setting.
 
 ## What is a configuration group?
 
 Invoices received from various suppliers are in different styles and resolutions. These invoices may require different confidence score thresholds to determine if further review is needed to confirm the recognized invoice context.
 
-Typically, invoices from a single supplier are in a consistent format with a specific type of invoice (a purchase order invoice or a cost invoice). There may be cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivations and mapping logic specific to each type of invoice to ensure accuracy and completeness of the invoice data.
+Typically, invoices from a single supplier are in a consistent format with a specific type of invoice, such as a purchase order invoice or a cost invoice. There may be cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivations and mapping logic specific to each type of invoice to ensure accuracy and completeness of the invoice data.
 
 The configuration group incorporates all the necessary settings for the review process in Invoice capture.
 
@@ -46,14 +46,14 @@ The configuration group incorporates all the necessary settings for the review p
 
 After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
-Admin can assign different configuration groups to different level (vendor account, legal entity and system). After a vendor account and legal entity are determined, the application will check whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system will check on the legal entity level. If no configuration group is assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** will be used. 
+Administrators can assign different configuration groups to different levels, such as vendor account, legal entity and system. After a vendor account and legal entity are determined, the application will check whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system will check on the legal entity level. If no configuration group is assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used. 
 
 
 ## Manage configuration groups
 
 To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
-To create a new configuration group, select a configuration group and click **Copy**. The system will then create a new configuration group by duplicating an existing group. The new configuration group will pop in the **Configuration group** list view, which has the same values as the original configuration group for all the settings except **Group name** and **Group description**. 
+To create a new configuration group, select a configuration group and click **Copy**. A new configuration group will be created by duplicating an existing group. The new configuration group will display in the **Configuration group** list view. The new configuration group has the same values as the original configuration group except the **Group name** and **Group description** fields. 
 
 ### Define the confidence score
 
@@ -61,9 +61,8 @@ Admin can define the quality standard for the invoice date recognized by AI Buil
 
 ### Define whether manual review is required before invoice creation
 
-Admin can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). 
-In default configuration group, it is defined that manual review is only required when there are errors. This means that if there is no error during the process in Invoice capture, the invoice will be automatically transferred from invoice capture to Dynamics 365 Finance and Operations.  
-The parameter will influence the touchless rate for invoice process in Invoice capture. 
+Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). 
+In default configuration group, it can be defined that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice will be transferred from invoice capture to Dynamics 365 finance and operations. This parameter affects the touchless rate in the Invoice capture process. 
 
 ### Supported invoice types
 
