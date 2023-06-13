@@ -16,7 +16,7 @@ When the Power Platform Integration is enabled, the finance and operations apps 
 
 ## Edit the properties of an environment in Power Platform admin center
 
-Article [Edit properties of an environment](/power-platform/admin/edit-properties-environment), highlights how administrators can edit properties of an environment in Power Platform Admin center when there is no link with finance and operations app. Most of these actions are still possible, with one notable restriction, the **URL**. Once a Dataverse environment is linked to finance and operations apps, the URL cannot be updated anymore, the error below is thrown:
+Article [Edit properties of an environment](/power-platform/admin/edit-properties-environment) highlights how administrators can edit properties of an environment in Power Platform Admin center when there is no link with finance and operations app. Most of these actions are still possible, with one notable restriction, the **URL**. Once a Dataverse environment is linked to finance and operations apps, the URL cannot be updated anymore, an error is thrown:
 
 :::image type="content" source="media/ppi-edit-URL.png" alt-text="Editing the URL of a linked Dataverse environment." lightbox="media/ppi-edit-URL.png":::
 
