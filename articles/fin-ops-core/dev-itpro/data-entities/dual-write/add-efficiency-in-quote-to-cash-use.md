@@ -143,19 +143,36 @@ When the *Process sales quotation related events* feature is enabled together wi
 
 ## <a name="process-events"></a>Process Dynamics 365 Sales integration related events
 
-The *Process Dynamics 365 Sales integration related events* feature enables sales quotation events to be processed asynchronously using the message processor framework. The feature is applicable only when *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is enabled.
+The *Process Dynamics 365 Sales integration related events* feature enables sales quotation events to be processed asynchronously using the message processor framework.
 
-### Message queue options
+This topic describes several features that support asynchronous processing of events related to the integration with Dynamics 365 Sales. These features work by adding messages to the message processor queue. You can monitor the progress of these messages using the **Message processor messages** page. It provides insight into queued, failed, and processed messages. The page also supports error handling, manual processing, cancelling , and re-queuing of messages.
 
-When the feature Process sales quotation related events <!-- KFM: Do you mean *Process Dynamics 365 Sales integration related events*? --> is enabled, two settings are added to the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page: **Create quotation journal in batch** and **Create quotation confirmation journal** in batch. These settings let administrators choose whether to create the quotation journal or the quotation confirmation journal in real time upon the send and confirm events synchronously or through the message processor when sales quotation ownership is indirectly or directly with Dynamics 365 Sales.
+### Set up a batch job to process Dynamics 365 Sales Integration message queue
+
+The system will only process the *Dynamics 365 Sales Integration* message queue when the *Dynamics 365 Sales Integration message processor* batch job runs. Therefore, if you want to take advantage of asynchronous processing of integration-related events, you must schedule this batch job to run on a regular basis, as described in the following procedure:
+
+1. Go to **Sales and Marketing \> Periodic tasks \> Dynamics 365 Sales Integration message processor**.
+1. The **Dynamics 365 Sales integration message processor** dialog opens. On the **Run in the background** FastTab, specify how, when, and how often to process messages in the *Dynamics 365 Sales Integration*  queue. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. Select **OK** to apply your settings and close the dialog box.
+
+### Set message processor options
+
+When the *Process Dynamics 365 Sales integration related events* feature is enabled, you can configure the feature by following these steps:
+
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Dynamics 365 Sales integration** tab.
+1. Make the following settings:
+    - **Create quotation journal in batch** – Set this to *Yes* to create quotation journals asynchronously by adding a messages to the message processor queue, which will prevent the user from needing to wait for the journal to be created each time they activate a sales quotation from Sales.
+    - **Create quotation confirmation journal in batch** – Set this to *Yes* to create quotation confirmation journals asynchronously by adding a messages to the message processor queue, which will prevent the user from needing to wait for the confirmation journal to be created each time they win a sales quotation from Dynamics 365 Sales.
+    - **Messages per task** – Set the maximum number of messages to be processed in a single task (a task is similar to a bundle). In some cases, you may be able to improve your system performance by adjusting this value. If you set this field to *0*, then the system will process 30 messages per task. You should set it to a value which results in a 1-2 minute execution time. A value of 50 usually works well. We recommend against setting a low value because that will result in a large number of tasks being created, which will add overhead to the system. The optimal value for this setting also depends on how many processor tasks you have configured for the *Dynamics 365 Sales Integration* message queue (see also [Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md)). Microsoft support may advise you to adjust this value if you are experiencing performance issues.
 
 ### Work with the message queue
 
-[Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md)
+You can monitor the progress of your message queue using the **Message processor messages** page. It provides insight into queued, failed, and processed messages. The page also supports error handling, manual processing, cancelling , and re-queuing of messages. For details about how to work with this page and configure settings related to the message processor, see [Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md).
 
 ### Message queue messages
 
-When feature *Process Dynamics 365 Sales integration related events* is enabled, the *Dynamics 365 Sales Integration* message queue is available from the message processor user interface. The system uses this queue to process messages related to the Dynamics 365 Sales integration. The following table describes the messages that are available in the queue and the features required for each message to be available.
+When feature *Process Dynamics 365 Sales integration related events* is enabled, the *Dynamics 365 Sales Integration* message queue is available from the [message processor user interface](../../../../supply-chain/supply-chain-dev/message-processor.md). The system uses this queue to process messages related to the Dynamics 365 Sales integration. The following table describes the messages that are available in the queue and the features required for each message to be available.
 
 | Message type | Feature required | Description |
 |---|---|---|
@@ -165,48 +182,8 @@ When feature *Process Dynamics 365 Sales integration related events* is enabled,
 | Calculate and push totals for sales quotation | *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Calculate and push totals for sales quotation. |
 | Create sales quotation journal | *Process Dynamics 365 Sales integration related events* | Creates the sales quotation journal. |
 | Create sales quotation confirmation journal| *Process Dynamics 365 Sales integration related events* | Creates the sales quotation confirmation journal. |
-| Link sales order and sales quotation | *Process Dynamics 365 Sales integration related events* | Results from the confirmation event and updates the sales quotation/sales order relationship. <!-- KFM: What do we mean by "results from"? --> |
-| Copy sales quotation data to sales order | *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365* | <!-- KFM: Description needed -->  |
+| Link sales order and sales quotation | *Process Dynamics 365 Sales integration related events* | Created is response to a confirmation event and updates the sales quotation/sales order relationship. |
+| Copy sales quotation data to sales order | *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365* | Copies Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales.  |
 
-
-*Create quotation confirmation journal* and *Link sales order from quotation* are interrelated in that *Link sales order from quotation* is dependent on *Create quotation confirmation journal* being successfully processed. The two messages serve the same use case as the **Confirm** action in the user interface (**Sales and marketing \> Sales quotations \> All quotations**, header ribbon Follow up; group Generate, Confirm action).
-
-
-
-
-
-### Set up Process Dynamics 365 Sales integration related events
-
-When *Process Dynamics 365 Sales integration related events* has been enabled, then navigate to **Sales and Marketing \> Periodic tasks \> Dynamics 365 Sales Integration message processor** form to set up the required batch job. Setup the batch job to run with required recurrence. The batch job can also be set up from the **System administration > Message processor > Message processor** form. <!-- Give a procedure and describe all settings. -->
-
-When the feature is enabled <!-- KFM: Which feature? -->, then the Send quotation and Confirm events are processed asynchronously <!-- KFM: Use proper names for each event. -->. A single batch job must be set up and be running for the messages from the message queue to be processed automatically. <!-- KFM: Describe how. -->
-
-The messages can be processed using multithreading by defining the number of messages in a task and by defining the number of processor tasks.
-
-When the feature <!-- KFM: Which feature? --> is enabled, a new tab **Dynamics 365 Sales integration** is available from **Accounts receivables \> Setup \> Accounts receivables parameters** page.
-
-![Schematic representation of step 4](../dual-write/media/add_effciency_14.png)
-
-On the **Dynamics 365 Sales integration** tab, you set up the number of messages per task. <!-- Give a procedure and describe all settings. --> Messages per task represent the maximum number of messages to be processed in a single task <!-- Is this a setting? What is the label? --> . A task is similar to a bundle. The messages per tasks is defaulted to *0* (zero) in the user interface. Number of tasks *0* is interpreted as not being set, and a number of *30* is used implicitly as maximum. Any number higher than *0* (zero) is considered.
-
-It is recommended not to set the (maximum) <!-- KFM: Why the parenthesis here? What is the actual label? --> number of messages too low, such as to the value *1*. It is recommended to set the maximum number of messages in a task to a value which results in a 1-2 minute execution time. <!-- KFM: OK, so 2 is good? How do I know what value is right? -->
-
-Setting the number of messages per task goes hand-in-hand with setting the number of processor tasks.<!-- KFM: How so? How do we do this? -->
-
-Go to **System administration \> Message processor \> Message queue setup**.
-
-![Message queue setup form](../dual-write/media/add_effciency_15.png)
-
-In this form you can specify a number of processor tasks for a specific queue, such as the queue Dynamics 365 Sales integration <!-- KFM: Describe how, use field labels. -->. If there is no record for the message queue, then the number *5* is used as maximum. Number of processor tasks value represents the maximum number of processor tasks for the specific queue.
-
-If set <!-- KFM: If what is set? -->, the recommendation is to set the value higher than *1*, while not exceeding the number of maximum batch threads <!-- KFM: Where do I find this? -->. The value must be considered as a balancing act between expected peak volume and with other workloads running on the same batch servers.
-
-### Monitoring Process Dynamics 365 Sales integration related events
-
-When events are processed leveraging the message queue framework, it is possible to monitor the process from the **System Administration \> Message Queue \> Message process messages** page. This page provides insight into queued, failed, and processed messages. The page supports error handling, manual processing, cancelling , and re-queuing of messages.
-
-![Message process messages form](../dual-write/media/add_effciency_16.png)
-
-For more information on the Message processor, see [Create and process custom message queues and message types](../../../../supply-chain/supply-chain-dev/message-processor.md).
-
-
+> [!NOTE]
+> *Create quotation confirmation journal* and *Link sales order from quotation* are interrelated in that *Link sales order from quotation* is dependent on *Create quotation confirmation journal* being successfully processed. The two messages serve the same use case as the **Confirm** action when winning a sales quotation in Supply Chain Management.
