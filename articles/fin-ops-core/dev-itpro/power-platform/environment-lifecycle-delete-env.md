@@ -16,9 +16,9 @@ When the Power Platform Integration is enabled, the finance and operations apps 
 
 ## Delete an environment from Power Platform admin center
 
-It it not possible to delete a linked environment from Power Platform admin center, the following error is shown:
+It is not possible to delete a linked environment from Power Platform admin center, the following error is shown:
 
-:::image type="content" source="media/ppi-delete-ppac.png" alt-text="Delete an environemnt from Power Platform admin center." lightbox="media/ppi-delete-ppac.png":::
+:::image type="content" source="media/ppi-delete-ppac.png" alt-text="Delete an environment from Power Platform admin center." lightbox="media/ppi-delete-ppac.png":::
 
 ## Delete an environment from Lifecycle services
 
