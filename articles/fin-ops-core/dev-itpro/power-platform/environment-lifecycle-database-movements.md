@@ -16,21 +16,21 @@ When the Power Platform Integration is enabled, the finance and operations apps 
 
 ## Backup and database export
 
-Automated backups as well as the option to perform manual backups are in place for both [Power Platform](/power-platform/admin/backup-restore-environments) and [finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/database/export-database), with the notable difference that both code and data are backed-up for Power Platform, while only the database is applicable for finance and operations apps.
+Automatic and manual backups are options for both [Power Platform](/power-platform/admin/backup-restore-environments) and [finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/database/export-database). The main difference between the two platforms is that both code and data are backed-up for Power Platform, while only the database is applicable for finance and operations apps.
 
 > [!NOTE]
 > Perform manual backups at the same time for both platforms.
 
 ## Restore and point-in-time restore
 
-In Power Platform, it is possible to restore [system backup](/power-platform/admin/backup-restore-environments#restore-a-system-backup) or a [manual backup](/power-platform/admin/backup-restore-environments#manual-backups) which will restore both code and database into the environment. For finance and operations apps, it is possible to do a [database point-in-time restore (PITR)](/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
+In Power Platform, it is possible to restore a [system backup](/power-platform/admin/backup-restore-environments#restore-a-system-backup) or a [manual backup](/power-platform/admin/backup-restore-environments#manual-backups), which restores both code and database into the environment. For finance and operations apps, it is possible to do a [database point-in-time restore (PITR)](/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
 
 > [!NOTE]
 > Perform the restore and point-in-time restore in parallel, starting from the same point in time.
 
 Elements to pay attention after the restore and point-in-time restore are complete:
 
-- Since a Power Platform restore includes also the underlying codebase, while PITR is only for the database, the admins need to ensure the two environments are re-alligned from a code perspective. This implies:
+- Since a Power Platform restore includes also the underlying codebase, while PITR is only for the database, the admins need to ensure the two environments are re-alligned from a code perspective:
   - Option 1: After restore, install in Dataverse the solutions prior to restore
   - Option 2: Deploy to the finance and operations apps environment the code package corresponding to the time of the backup used for PITR.
 
@@ -45,7 +45,7 @@ In Power Platform, it is possible to [copy an environment](/power-platform/admin
 
 Elements to pay attention after the restore and point-in-time restore are complete:
 
-- Since a Power Platform copy includes also the underlying codebase, while finance and operations apps actions target only the database, the admins need to ensure the target environments are re-alligned from a code perspective. This implies:
+- Since a Power Platform copy includes also the underlying codebase, while finance and operations apps actions target only the database, the admins need to ensure the target environments are re-alligned from a code perspective:
   - Option 1: After copy, install in Dataverse the solutions prior to the copy
   - Option 2: Deploy to the finance and operations apps environment the code package installed in the source environment.
 
