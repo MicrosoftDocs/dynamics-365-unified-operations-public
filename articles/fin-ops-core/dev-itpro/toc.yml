@@ -1142,7 +1142,7 @@ items:
         - name: Delete environments when Power Platform Integration is enabled
           href: power-platform/environment-lifecycle-delete-env.md
         - name: Reset and change the type of a connected Microsoft Dataverse environment
-          href: power-platform/environment-lifecycle-reset-change-env-type.md
+          href: power-platform/environment-lifecycle-reset-change-env-type-dv.md
         - name: Database and environment movements when Power Platform Integration is enabled
           href: power-platform/environment-lifecycle-database-movements.md
       - name: Authentication and authorization
