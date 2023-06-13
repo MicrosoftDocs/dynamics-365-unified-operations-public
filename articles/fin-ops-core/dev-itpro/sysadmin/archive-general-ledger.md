@@ -4,7 +4,7 @@ description: This article describes how to archive general ledger data to help i
 author: rcarlson
 ms.author: rcarlson
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, LedgerArchiveAutomationCriteriaForm, TimelineDialog, ArchiveMessageLogDialog, ArchiveReversalDialog, LedgerTransHistoryVoucher
 ms.topic: how-to
 ms.date: 06/01/2023
 audience: Application User
@@ -18,7 +18,6 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!--KFM: Preview until 10.0.34 GA -->
-<!--KFM: Add form codes to metadata -->
 
 General ledger data is often one of the highest volume sets of data in your Dynamics 365 Finance and Operations environment. Your ability to manage this data while staying compliant with your data storage retention policies is paramount. This data is needed for auditing, historical reporting and analysis, but keeping historical data in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
 

@@ -4,7 +4,7 @@ description: This article provides an overview of how to archive various types o
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: ArchiveWorkspace
 ms.topic: overview
 ms.date: 05/01/2023
 audience: Application User

@@ -4,7 +4,7 @@ description: This article describes how to archive sales orders to help improve 
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, SalesOrderArchiveProcessAutomationCriteriaForm, SalesOrderArchiveForm
 ms.topic: how-to
 ms.date: 05/01/2023
 audience: Application User
