@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until 10.0.34 GA -->
 
-Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and higher, this capability has been improved to provide a more seamless quotation process flow across the two systems, allowing for fewer touch points, higher efficiency, and improved transparency. To take advantage of these improvements, you must enable several new features in Supply Chain Management and make sure you are using a qualifying version of the Dual-write Supply chain solution.
+Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and higher, this capability has been improved to provide a more seamless quotation process flow across the two systems, allowing for fewer touch points, higher efficiency, and improved transparency. To take advantage of these improvements, you must enable several new features in Supply Chain Management and make sure you're using a qualifying version of the Dual-write Supply chain solution.
 
 For a conceptual overview of how the improved quote-to-cash system works and how the integrated system will behave based on which features you choose to enable, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash.md).
 
@@ -46,10 +46,10 @@ Follow these steps to add the Dual-write Supply Chain solution to your Power Pla
 1. In the **Resources** tile, select **Dynamics 365 apps**.
 1. From the toolbar, select **Install app** to open **Install Dynamics 365 apps** dialog.
 1. Scroll down to find the row where **Name** is *Dual-write Supply Chain solution*. Do one of the following steps:
-    - If the **Status** for this row indicates that the app isn't installed or that there is an update available, then select the row and then select **Next** to launch an installation wizard. Follow the instructions on your screen to install the app.
+    - If the **Status** for this row indicates that the app isn't installed or that there's an update available, then select the row and then select **Next** to launch an installation wizard. Follow the instructions on your screen to install the app.
     - If the **Status** for this row indicates that the app is installed, enabled, and up to date, select **Cancel**.
 1. You now return to the **Dynamics 365 apps** page. Scroll down to find the row where **Name** is *Dual-write Supply Chain solution*. The **Status** column should now indicate that this app is installed. 
-1. Select the ellipsis button for this row to open a drop-down list and then select **Details** to open the **Details** dialog for the solution. Make sure the **Version** shown fulfils the [prerequisites](#prerequisites) listed at the start of this article. Then close the dialog.
+1. Select the ellipsis button for this row to open a drop-down list and then select **Details** to open the **Details** dialog for the solution. Make sure the **Version** shown fulfills the [prerequisites](#prerequisites) listed at the start of this article. Then close the dialog.
 
 ## <a name="enable-mappings"></a>Step 2: Enable mappings in Supply Chain Management
 
@@ -69,27 +69,31 @@ Follow these steps to enable the required mappings in Supply Chain Management:
     > The solution won't work correctly unless you run the initial sync as described in this step.
 
 1. Select **Run** to apply your settings and close the dialog.
-1. On the **Dual-write** page, scroll down to the following rows and make sure they show a **Status** of *Not running*. If one or both are running, then select them and then select **Stop** on the Action Pane.
+1. On the **Dual-write** page, scroll down to the following rows and make sure they show a **Status** of *Not running*. If any of them are running, then select them and then select **Stop** on the Action Pane.
+    - *CDS Sales order headers (salesorders)*
+    - *CDS Sales order lines (salesorderdetails)*
     - *CDS sales quotation header (quotes)*
     - *CDS sales quotation lines (quotedetails)*
 1. On the **Dual-write** page, scroll down to the *Dynamics 365 Sales quotation header (quotes)* table map. Select the link in the **Version** column for this row to open the **Table map version** dialog. Select one of the following versions and then select **Save**:
-    - *1.0.0.0* – Select this version if you are running Supply Chain Management version 10.0.32 or 10.0.33.
-    - *1.0.1.0* – Select this version if you are running Supply Chain Management version 10.0.34 or later. This version provides more features, but will generate an error if you enable it for an unsupported version of Supply Chain Management.
-1. On the **Dual-write** page, scroll down to the following rows and make sure they show a **Status** of *Running*. If one or both aren't running, then select them and then select **Run** on the Action Pane.
+    - *1.0.0.0* – Select this version if you're running Supply Chain Management version 10.0.32 or 10.0.33.
+    - *1.0.1.0* – Select this version if you're running Supply Chain Management version 10.0.34 or later. This version provides more features, but will generate an error if you enable it for an unsupported version of Supply Chain Management.
+1. On the **Dual-write** page, scroll down to the following rows and make sure they show a **Status** of *Running*. If any of them aren't running, then select them and then select **Run** on the Action Pane.
+    - *Dynamics 365 Sales order headers (salesorders)*
+    - *Dynamics 365 Sales order lines (salesorderdetails)*
     - *Dynamics 365 Sales quotation header (quotes)*
     - *Dynamics 365 Sales quotation lines (quotedetails)*
 
 ## Step 3: Enable the features you need in feature management
 
-Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the feature listed as required in the following table. Then use the workspace turn on each of the optional features as you would like to use.
+Use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the feature listed as required in the following table. Then use the workspace turn on each of the optional features as you would like to use. For more information about what each of these features does and how to work with them, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).
 
 | Feature | Required or optional | Description |
 |---|---|---|
 | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Required | This feature changes the way sales quotations in the Dynamics 365 Sales application integrate with sales quotations in Supply Chain management over dual-write. Once enabled, state and status transitions throughout the lifecycle of a sales quotation are mapped between the two applications while applying a policy of ownership to control the available actions for a sales quotation when in either Dynamics 365 Sales or in Supply Chain Management. |
 | *Set default ownership for sales quotations when integrated with Dynamics 365 Sales* | Optional | Adds a setting to the **Accounts receivables parameters** page, where the default ownership can be set. Default ownership can be set to *Based on origin*, *Dynamics 365 Sales*, or *Supply Chain Management*. When this feature is disabled, ownership is always based on origin. |
-| *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* | Optional | When enabled, calculations for extended amounts, summary amounts, subtotals, and totals for sales quotations and sales orders will not be performed in Dynamics 365 Sales. When quotations or sales orders are created in Sales, and a price list exists in Sales, then that price will be used, but no other calculations will be made. All calculated monetary fields are calculated in and synchronized from Supply Chain Management.<br><br>When enabled, this feature sets **Use system price calculation** to *No* and **Discount calculation method** to *Per unit* in Sales. The following changes are also made in the Sales user interface for sales quotation and sales order lines: the **Volume discount** field is hidden, the **Discount** field is expressed as per-unit discount amount, and the **Manual discount** field is made read-only and relabeled. Manual discounts can henceforth be entered in the **Line discount amount** field. |
-| *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Optional | Enables the system to calculate and push line prices, discounts, charges, taxes and totals for a single sales order and sales quotation to Dynamics 365 Sales.<br><br>This feature adds a new menu item <!-- KFM: Name the menu here -->to the sales order and sales quotation list and details pages in Supply Chain Management; when selected, will enable the calculation and push to Dynamics 365 Sales. The feature also adds two new pages that complement the existing **Calculate sales totals** page: **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales**. Each of these pages let you specify a range of sales orders or sales quotations to be considered in the calculation. |
-| *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* | Optional | This feature ensures data consistency between sales orders and related sales quotations in Supply Chain Management when sales orders are created from sales quotations in Dynamics 365 Sales and synchronized over dual-write. As a result, sales orders in Supply Chain Management will contain the information from the sales quotation in Supply Chain Management. This feature adds a setting <!-- KFM: Name the setting here --> on the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page, which lets admins choose whether to copy quotation information on order creation or through the message processor. |
+| *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* | Optional | When enabled, calculations for extended amounts, summary amounts, subtotals, and totals for sales quotations and sales orders won't be performed in Dynamics 365 Sales. When quotations or sales orders are created in Sales, and a price list exists in Sales, then that price will be used, but no other calculations will be made. All calculated monetary fields are calculated in and synchronized from Supply Chain Management.<br><br>When enabled, this feature sets **Use system price calculation** to *No* and **Discount calculation method** to *Per unit* in Sales. The following changes are also made in the Sales user interface for sales quotation and sales order lines: the **Volume discount** field is hidden, the **Discount** field is expressed as per-unit discount amount, and the **Manual discount** field is made read-only and relabeled. Manual discounts can henceforth be entered in the **Line discount amount** field. |
+| *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* | Optional | Enables the system to calculate and push line prices, discounts, charges, taxes and totals for a single sales order and sales quotation to Dynamics 365 Sales.<br><br>This feature adds a new menu item to the sales order and sales quotation list and details pages in Supply Chain Management; when selected, this menu item will enable the calculation and push to Dynamics 365 Sales. The feature also adds two new pages that complement the existing **Calculate sales totals** page: **Calculate sales order totals for Sales** and **Calculate sales quotation totals for Sales**. Each of these pages lets you specify a range of sales orders or sales quotations to be considered in the calculation. |
+| *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* | Optional | This feature ensures data consistency between sales orders and related sales quotations in Supply Chain Management when sales orders are created from sales quotations in Dynamics 365 Sales and synchronized over dual-write. As a result, sales orders in Supply Chain Management will contain the information from the sales quotation in Supply Chain Management. This feature adds a setting to the **Dynamics 365 Sales integration** tab of the **Accounts receivable parameters** page, which lets admins choose whether to copy quotation information on order creation or through the message processor. |
 | *Process Dynamics 365 Sales integration related events* | Optional | Enables Dynamics 365 Sales integration-related events to be processed asynchronously using the message processor framework. This can improve performance in various scenarios, such as transitioning the status of a sales quotation when a quotation journal or quotation confirmation journal needs to be created. |
 
 > [!NOTE]
@@ -103,14 +107,14 @@ If the sales quotation lifecycle flow isn't working as expected for newly create
 1. Run an initial sync for the table map called *Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)*.
 1. Make sure that that following maps are running:
 
-    - Dynamics 365 Sales order headers (salesorders) <!-- KFM: Not mentioned in the procedure. Add this there? -->
-    - Dynamics 365 Sales order lines (salesorderdetails) <!-- KFM: Not mentioned in the procedure. Add this there? -->
+    - Dynamics 365 Sales order headers (salesorders)
+    - Dynamics 365 Sales order lines (salesorderdetails)
     - Dynamics 365 Sales quotation header (quotes)
     - Dynamics 365 Sales quotation lines (quotedetails)
 
 1. Make sure that these table maps have been stopped:
 
-    - CDS Sales order headers (salesorders) <!-- KFM: Not mentioned in the procedure. Add this there? -->
-    - CDS Sales order lines (salesorderdetails) <!-- KFM: Not mentioned in the procedure. Add this there? -->
+    - CDS Sales order headers (salesorders)
+    - CDS Sales order lines (salesorderdetails)
     - CDS Sales quotation header (quotes)
     - CDS Sales quotation lines (quotedetails)
