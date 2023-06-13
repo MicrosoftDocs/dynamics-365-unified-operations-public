@@ -57,7 +57,7 @@ To create a new configuration group, select a configuration group and click **Co
 
 ### Define the confidence score
 
-Admin can define the quality standard for the invoice date recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. For more information about confidence score, see [confidence score](../../azure/cognitive-services/language-service/question-answering/concepts/confidence-score). The confidence score on each recognized field indicates confidence about the accuracy for the returned result. The value range of confidence score in Invoice capture is interpreted from 0 to 100. A higher score means AI Builder has more confidence in the recognized result. Admin can configure the threshold of confidence scores to indicate different severity of message.
+Admin can define the quality standard for the invoice date recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. For more information about confidence score, see [confidence score](/azure/cognitive-services/language-service/question-answering/concepts/confidence-score.md). The confidence score on each recognized field indicates confidence about the accuracy for the returned result. The value range of confidence score in Invoice capture is interpreted from 0 to 100. A higher score means AI Builder has more confidence in the recognized result. Admin can configure the threshold of confidence scores to indicate different severity of message.
 
 ### Define whether manual review is required before invoice creation
 
