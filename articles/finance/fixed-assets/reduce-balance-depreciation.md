@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reduce balance depreciation
-description: This article gives an overview of the Reducing balance method of depreciation.
+description: This article gives an overview of the reducing balance method of depreciation.
 author: moaamer
 ms.date: 06/13/2023
 ms.topic: article
