@@ -1340,6 +1340,8 @@
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
+        - name: View product search publishing status in headquarters
+          href: publish-status-headquarters.md
       - name: Reporting
         items:
         - name: Generate online channel reports
