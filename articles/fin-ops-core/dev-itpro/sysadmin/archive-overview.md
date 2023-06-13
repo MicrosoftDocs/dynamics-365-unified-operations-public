@@ -1,6 +1,6 @@
 ---
-title: Record archiving overview
-description: This article provides an overview of how to archive various types of records in finance and operations apps.
+title: Archive solution overview
+description: This article provides an overview of how to use the archive solution to archive various types of records in finance and operations apps.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Record archiving overview
+# Archive solution overview
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -21,7 +21,7 @@ Finance and operations applications generate business data at a regular cadence 
 
 ## How the solution works
 
-The archive solution lets you archive transactional data to *history tables* within the transactional SQL database. These history tables have *limited indexing*, which results in a significant reduction in the storage space used. From a user perspective, data moves from the live tables to the history tables as a single process, but the system actually moves the data using several smaller database transactions to avoid processing delays in other areas of the app. The following steps happen as a single process from the user perspective:
+The *archive solution* lets you archive transactional data to *history tables* within the transactional SQL database. These history tables have *limited indexing*, which results in a significant reduction in the storage space used. From a user perspective, data moves from the live tables to the history tables as a single process, but the system actually moves the data using several smaller database transactions to avoid processing delays in other areas of the app. The following steps happen as a single process from the user perspective:
 
 1. The system copies the data range specified from the live tables to the history tables.
 1. The system removes the data range specified from the live tables.
