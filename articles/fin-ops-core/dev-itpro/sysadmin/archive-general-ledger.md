@@ -6,7 +6,7 @@ ms.author: rcarlson
 ms.reviewer: kamaybac
 ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, LedgerArchiveAutomationCriteriaForm, TimelineDialog, ArchiveMessageLogDialog, ArchiveReversalDialog, LedgerTransHistoryVoucher
 ms.topic: how-to
-ms.date: 06/01/2023
+ms.date: 06/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -21,15 +21,15 @@ ms.custom: bap-template
 
 General ledger data is often one of the highest volume sets of data in your Dynamics 365 Finance and Operations environment. Your ability to manage this data while staying compliant with your data storage retention policies is paramount. This data is needed for auditing, historical reporting and analysis, but keeping historical data in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
 
-To solve these issues, you can use the archive workspace to manage archiving of historical years of general ledger data. During the archive process, the system moves records from General ledger voucher header and lines: ('GeneralJournalEntry') and ('GeneralJournalAccountEntry') and related child tables.
+To solve these issues, you can use the archive solution to manage the archiving of historical years of general ledger data. During the archive process, the system moves records from General ledger voucher header and lines: ('GeneralJournalEntry') and ('GeneralJournalAccountEntry') and related child tables.
 
 ## Prerequisites
 
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Finance and Operations 10.0.34 or later.
-- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archive-setup.md).
-- The following features must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archive-setup.md).
+- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up the archive solution](archive-setup.md).
+- The following features must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up the archive solution](archive-setup.md).
     - *(Preview) Archive*
     - *(Preview) Ledger archive automation*
 
@@ -51,7 +51,7 @@ To schedule a general ledger archive job, follow these steps:
 1. On the Action Pane, select **Archive** to open a drop-down dialog box. Then set **Name** to *LedgerArchiveAutomation* and select **Archive**.
 1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the archive **Name** (required), the **Schedule time** (required) when the archive job should start running, and how often it should run. If you choose to set up multiple occurrences, then you can also set an **End time**, which sets a limit on the amount of time an archive job runs in a day; if an archive job doesn't finish running within this limit, the job will be paused and picked up at the next  occurrence. You can also set up alerts as needed.
 1. Select **Next** to continue to the **Ledger archive automation selection** tab. This page shows a list record collections that meet the [archival requirements](#archival-requirements) (grouped by company and fiscal year). Select the record collection you want to archive, and then select **Finish**.
-1. You return to the **Active** workspace, which now shows the archive job you just created (with an **Archive status** of *Scheduled*). The job will run at the scheduled time.
+1. You return to the **Archive** workspace, which now shows the archive job you just created (with an **Archive status** of *Scheduled*). The job will run at the scheduled time.
 
 ## Review the progress and log of an archive job
 
@@ -71,7 +71,7 @@ To view the historical general ledger data, go to **General ledger \> Inquiries 
 
 ## Reverse an archive
 
-When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived transaction because you cannot edit records in the history tables. To reverse an archive, follow these steps:
+When you reverse an archive, the system moves records from the selected archive from the history tables back to the live tables. This operation is useful if you need to edit an archived transaction because you can't edit records in the history tables. To reverse an archive, follow these steps:
 
 1. Go to **System administration \> Workspaces \> Archive**.
 1. Open the **General ledger archive** tab.

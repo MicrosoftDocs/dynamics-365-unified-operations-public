@@ -6,7 +6,7 @@ ms.author: alexeiantao
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 06/01/2023
+ms.date: 06/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -17,27 +17,29 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-To move data from live tables to history tables, it is necessary that the underlying history table structures for transactions mirror the structure of its corresponding live table.
+<!--KFM: Preview until 10.0.34 GA -->
+
+To move data from live tables to history tables, the underlying history table structures for transactions must mirror the structure of its corresponding live table.
 
 ## Add all custom fields to history tables through extension
 
 If you have custom fields added to live tables, you must extend your system's history table to include those fields. For more information, see [Add fields to tables through extension](../extensibility/add-field-extension.md).
 
-## Add additional tables to the archive scope
+## Add tables to the archive scope
 
-Additional transaction tables can be added to the archive scope if they are related to the parent live table directly or via tables in its hierarchy chain.
+Transaction tables can be added to the archive scope if they're related to the parent live table directly or via tables in its hierarchy chain.
 
 Create history table corresponding to the live table being added to the archive scope using the following conventions:
 
-1. Mirror all fields from the live table to the history table including all metadata properties on the live table. SysRowVersion and SysDataState tables are added by the system and are managed via table
-metadata properties. These columns aren't required to be added to the history table.
+1. Mirror all fields from the live table to the history table including all metadata properties on the live table. `SysRowVersion` and `SysDataState` tables are added by the system and are managed via table
+metadata properties. These columns don't need to be added to the history table.
 
 1. Don't mirror indexes from the live table to the history table. For most history tables, a clustered index on RecId column should be sufficient. Add additional columns to index based on query needs and to
 maintain table relations needs such as a foreign key index.
 
-1. Add the created history table add its corresponding live table to the archive scope. Archive scope is defined by the archive job configuration which is managed by the corresponding archive type registered in process automation.
+1. Add the created history table add its corresponding live table to the archive scope. The archive scope is defined by the archive job configuration, which is managed by the corresponding archive type registered in process automation.
 
-1. Find archive type class that implements `ArchiveServiceICreateArchiveJob` interface. From this class find `ArchiveAutomationJobRequestCreator` class for the archive type. Create extension of `ArchiveAutomationJobRequestCreator` class to extend `createPostJobRequest()` method to add new tables in archive scope using chain of command (CoC) design pattern.
+1. Find archive type class that implements `ArchiveServiceICreateArchiveJob` interface. From this class, find the `ArchiveAutomationJobRequestCreator` class for the archive type. Create extension of `ArchiveAutomationJobRequestCreator` class to extend `createPostJobRequest()` method to add new tables in archive scope using chain of command (CoC) design pattern.
 
 1. In the extension class, see example below to add new tables to the archive scope by extending `createPostJobRequest()` method. Also refer to the original code to understand how archive contract is built to define the archive scope.
 

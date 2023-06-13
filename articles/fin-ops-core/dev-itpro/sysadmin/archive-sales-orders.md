@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, SalesOrderArchiveProcessAutomationCriteriaForm, SalesOrderArchiveForm
 ms.topic: how-to
-ms.date: 05/01/2023
+ms.date: 06/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -21,15 +21,15 @@ ms.custom: bap-template
 
 Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they may still be needed for purposes such as historical reporting, auditing, machine learning, and so on. Keeping a large volume of historical sales orders and lines in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability.
 
-To solve these issues, you can use the archival framework for finance and operations apps to implement rules-based archiving of historical sales orders and order lines. During archiving, the system starts by moving records from the sales orders headers database table (`SalesTable`) and the related sales order lines table (`SalesLine`) to the `SalesTableHistory` and `SalesLineHistory` tables, respectively. Administrators and other users can then view and validate the archived sales order records.
+To solve these issues, you can use the archive solution for finance and operations apps to implement rules-based archiving of historical sales orders and order lines. During archiving, the system starts by moving records from the sales orders headers database table (`SalesTable`) and the related sales order lines table (`SalesLine`) to the `SalesTableHistory` and `SalesLineHistory` tables, respectively. Administrators and other users can then view and validate the archived sales order records.
 
 ## Prerequisites
 
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
-- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up record archiving](archive-setup.md).
-- The following features must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up record archiving](archive-setup.md).
+- The data archive micro-service must be installed on your system from Lifecycle Services (LCS). See also [Set up the archive solution](archive-setup.md).
+- The following features must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). See also [Set up the archive solution](archive-setup.md).
     - *(Preview) Archive*
     - *(Preview) Archive sales orders to history tables*
     - *(Preview) Archive sales orders to history tables using archive service*
@@ -52,17 +52,17 @@ To schedule sales order archiving, follow these steps:
     - **Name** – Select *SalesOrderArchiveAutomation*.
     - **Company** – Select the legal entity (company) for which you want to archive sales orders.
 1. Select **Archive** to apply your settings and close the drop-down dialog box.
-1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the archive **Name** (required), the **Schedule time** (required) when the archive job should start running, and how often it should run. If you choose to set up multiple occurrences, then you can also set an **End time**, which sets a limit on the amount of time an archive job runs in a day; if an archive job doesn't finish running within this limit, the job will be paused and picked up at the next  occurrence. You can also set up alerts as needed.
+1. The **Create new process automation** page opens, open to the **General** tab. Use the settings on this page to establish the archive **Name** (required), the **Schedule time** (required) when the archive job should start running, and how often it should run. If you choose to set up multiple occurrences, then you can also set an **End time**, which sets a limit on the amount of time an archive job runs in a day; if an archive job doesn't finish running within this limit, the job will be paused and picked up at the next occurrence. You can also set up alerts as needed.
 1. Select **Next** to continue to the **Sales order archive automation** tab. Make the following settings:
-    - **Archive from date** – Enter the date of the oldest sales orders that you want to archive.
-    - **Archive to date** – Enter the date of the newest sales orders that you want to archive.
+    - **Archive from date** – Enter the date of the oldest sales orders that you want to move to the history tables.
+    - **Archive to date** – Enter the date of the newest sales orders that you want to move to the history tables.
 
     > [!NOTE]
     > Only dates that meet the [archival requirements](#archival-requirements) will be available for selection.
 
 1. Select **Finish**.
 
-## Review archived sales orders
+## Review sales orders in the history tables
 
 The **Archive** workspace shows your full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status. Follow these steps to view details about a selected archive:
 

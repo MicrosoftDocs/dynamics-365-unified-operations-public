@@ -1,25 +1,27 @@
 ---
-title: Set up record archiving
+title: Set up the archive solution
 description: This article describes how to set up your system to support archiving of various types of records.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 05/01/2023
+ms.date: 06/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up record archiving
+# Set up the archive solution
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!--KFM: Preview until 10.0.34 GA -->
+
 ## Install the archiving add-in from LCS add-in
 
-To enable the archiving features for finance and operations apps, start by installing the *Archive* add-in from Microsoft Dynamics Lifecycle Services (LCS). Follow these steps to install the add-in:
+To enable the archiving solution, start by installing the *Archive* add-in from Microsoft Dynamics Lifecycle Services (LCS). Follow these steps to install the add-in:
 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
 1. Open your environment page.
@@ -33,9 +35,9 @@ To enable the archiving features for finance and operations apps, start by insta
 Once you have installed the *(Preview) Archive* add-in from LCS, you'll be able to enable the archiving features you need. Use the [**Feature management** workspace](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the following features as needed:
 
 - *(Preview) Archive* – Required for all of the following archiving scenarios. It provides basic archiving support and adds the **Archive** workspace.
-- *(Preview) Ledger archive automation* – Archives general ledger records to the relevant history tables. Once archived to history tables, archived data from the day-to-day general ledger tables will be purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md)
-- *(Preview) Archive sales orders to history tables* – Required for archiving sales orders. This feature provides a framework for archiving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
-- *(Preview) Archive sales orders to history tables using archive service* – Required for archiving sales orders. This feature performs the archiving of sales orders from day-to-day transaction tables to history tables. Once archived to history tables, archived data from the day-to-day transaction tables will be purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
+- *(Preview) Ledger archive automation* – Moves general ledger records to the relevant history tables. Once the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md)
+- *(Preview) Archive sales orders to history tables* – Required for archiving sales orders. This feature provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
+- *(Preview) Archive sales orders to history tables using archive service* – Required for archiving sales orders. This feature performs the moving of sales orders from day-to-day transaction tables to history tables. Once the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
 
 ## Next steps
 

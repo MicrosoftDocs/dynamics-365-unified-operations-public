@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ArchiveWorkspace
 ms.topic: overview
-ms.date: 05/01/2023
+ms.date: 06/13/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -41,7 +41,7 @@ Use the **Archive** workspace to create and work with your archives. It lets you
 
 ## Next steps
 
-- Install the required add-in and enable the features you need as described in [Set up record archiving](archive-setup.md)
+- Install the required add-in and enable the features you need as described in [Set up the archive solution](archive-setup.md)
 - [Extend the archive solution to support custom tables and fields](archive-customizations.md)
 - [Archive general ledger data](archive-general-ledger.md)
 - [Archive sales orders](archive-sales-orders.md)

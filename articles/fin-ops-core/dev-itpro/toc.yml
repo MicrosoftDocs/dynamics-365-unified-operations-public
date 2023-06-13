@@ -279,11 +279,11 @@ items:
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
-      - name: Record archiving
+      - name: Archive historical records
         items:
-        - name: Record archiving overview
+        - name: Archive solution overview
           href: sysadmin/archive-overview.md
-        - name: Set up record archiving
+        - name: Set up the archive solution
           href: sysadmin/archive-setup.md
         - name: Extend the archive solution to support custom tables and fields
           href: sysadmin/archive-customizations.md
