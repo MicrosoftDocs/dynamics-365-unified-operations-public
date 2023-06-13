@@ -1137,6 +1137,14 @@ items:
           href: power-platform/environment-lifecycle-connect-finops-new-dv.md
         - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
           href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
+        - name: Edit the properties of a connected Microsoft Dataverse environment
+          href: power-platform/environment-lifecycle-edit-properties-dv.md
+        - name: Delete environments when Power Platform Integration is enabled
+          href: power-platform/environment-lifecycle-delete-env.md
+        - name: Reset and change the type of a connected Microsoft Dataverse environment
+          href: power-platform/environment-lifecycle-reset-change-env-type.md
+        - name: Database and environment movements when Power Platform Integration is enabled
+          href: power-platform/environment-lifecycle-database-movements.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
       - name: Dual-write
