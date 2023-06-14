@@ -56,7 +56,7 @@ When you enable the **Landed cost** module, the standard *warehouses* entity is 
 
 Landed cost adds two new types of warehouse: *goods in transit* and *under-delivery*. Warehouses of both types can be selected as default warehouses. Successful processing of goods-in-transit orders requires that both the goods-in-transit warehouse and the under-delivery warehouse be configured on the **Warehouses** page. Then, for each default warehouse that will be used with Landed cost and goods in transit, the goods-in-transit warehouse and under-delivery warehouse must be selected for the available warehouses of each type.
 
-The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse, and that warehouse will be used to process the goods on goods-in-transit orders before they are received at the final destination warehouse. In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
+The *goods in transit* warehouse type will be associated with your goods-in-transit warehouse, and that warehouse will be used to process the goods on goods-in-transit orders before they're received at the final destination warehouse. In general, one goods-in-transit warehouse is enough for each site if Site and Warehouse are the only inventory dimensions that are used for inventory management. If the Location inventory dimension is also used, a goods-in-transit warehouse must be set up for each combination of a site and warehouse, so that the default location can also be specified.
 
 To work with goods-in-transit settings for your warehouses, go to **Inventory management \> Setup \> Inventory breakdown \> Warehouses**. The following table describes the fields that the **Landed cost** module adds to the **Warehouses** page to support the goods-in-transit functionality. Both fields appear on the **General** FastTab. For information about the other fields on the page, see [Warehouses (form)](/dynamicsax-2012//warehouses-form).
 
@@ -65,9 +65,12 @@ To work with goods-in-transit settings for your warehouses, go to **Inventory ma
 | Goods in transit warehouse | Identify the goods-in-transit warehouse that is related to the main warehouse. |
 | Under delivery warehouse | Identify the under-delivery warehouse that is related to the main warehouse. |
 
+> [!NOTE]
+> Warehouses that have a **Type** of *Goods in transit* or *Under* can't be enabled for warehouse management processes (WMS). If you try to set **Use warehouse management processes** to *Yes* for one of these types of warehouses, you'll get the following error message: *Landed cost goods in transit warehouse and under warehouse should not use warehouse management processes. Please replace it with new warehouse if warehouse management processes parameter cannot be disabled.*
+
 ## Posting rules for landed cost
 
-Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they are received.
+Landed cost adds two new posting rules that you can configure. These posting rules are used to financially post the direct purchase order invoice amounts to identify ownership of the goods when they leave the point of origin. This process replaces the concept of *goods received not invoiced*, because the goods are invoiced before they're received.
 
 To work with posting profiles, go to **Inventory management \> Setup \> Posting \> Posting**. On the **Purchase Order** tab, the following new posting rules are available:
 
@@ -137,7 +140,33 @@ Landed cost adds the following work creation processes to the mobile device menu
 
 The configuration settings for these processes resemble the settings for the [purchase order receive and putaway work creation processes](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). However, the *Goods in transit item receiving and putaway* process also adds the following field.
 
-- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app will provide an additional option that is named **Shipping container complete**. When that option is selected, the worker will be asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
+- **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
+
+#### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!--KFM: Preview until further notice -->
+
+Workers using the Warehouse Management mobile app can register the receipt of goods in transit even when multiple orders are associated with the same voyage, container, item number, and purchase order number. To do so, the worker starts by entering the voyage, container, item, and order numbers, and can then select the relevant goods-in-transit order from a drop-down list.
+
+:::image type="content" source="media/wma-git-receiving.png" alt-text="Receiving goods in transit with the mobile app":::
+
+This functionality is available in the following types of mobile device menu items:
+
+- Goods in transit item receiving
+- Goods in transit item receiving and putaway
+
+Both options provide flexibility and control over the selection of goods-in-transit orders, ensuring accurate and efficient handling of incoming inventory.
+
+#### <a name="batch-serial"></a>Assign batch/serial numbers when receiving with a mobile device
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!--KFM: Preview until further notice -->
+
+Workers using the Warehouse Management mobile app can register batch/serial numbers when receiving goods-in-transit orders that include items enabled for batch/serial number tracking. The system consolidates the received quantity for each batch/serial number into one work process and automatically assigns the numbers to the received items.
+
+> [!NOTE]
+> The system doesn't support [under deliveries](over-under-transactions.md) of batch/serial numbered items because the under-delivery process is fully automated and doesn't allow for the manual interaction required to register the batch/serial numbers.
 
 ### Location directives
 
