@@ -4,7 +4,7 @@
 title: View product search publishing status in headquarters
 description: This article describes the capability to view product search publishing status in Microsoft Dynamics 365 Commerce headquarters.
 author: ashishmsft
-ms.date: 06/13/2023
+ms.date: 06/14/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -26,7 +26,7 @@ Product search publishing sessions are queued upon the conclusion of the **1040*
 
 To enable the product search publishing status capability, you must turn on the **Search publishing sessions monitoring** feature in the feature management workspace (**Workspaces \> Feature management**). Enabling this feature makes the **Session publishing sessions** form discoverable, which shows the status of Commerce publishing sessions to the Azure Cognitive Search index.
 
-The **Search publishing sessions form** displays the following columns:
+The list on the **Search publishing sessions** form in headquarters displays the following columns:
 
 - **Session number**
 - **Channel database ID**
