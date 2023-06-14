@@ -23,7 +23,7 @@ This tutorial shows you how to create and run test cases.
 
 ## Prerequisites
 
-You will need to deploy Developer Topology with Developer and Build VM.
+You need to deploy Developer Topology with Developer and Build VM.
 
 ## Key concepts
 -   Use SysTest Framework to author unit/component test code.
@@ -108,10 +108,10 @@ You can create new test cases to test the functionality in an application.
     }
     ```
 
-1. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
+1. Save the new class. After the save is complete, the additional two test cases in **Test Explorer** are displayed. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
 1.  On the **View** menu, open **Test Explorer**. 
 1. Click **Run selected test** to execute specific test case.
-1. Test Explorer will show the results of test after it is complete. 
+1. Test Explorer shows the results of test after it is complete. 
 
     [![Completed test.](./media/59-300x290.png)](./media/59.png)
 
@@ -120,10 +120,10 @@ For a test to be of high value it must be reliable. A test will pass or fail con
 
 |  TestTransactionMode | Description  |
 |---|---|
-| AutoRollback | **Default**. This provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all database statements are routed to the main connection, including user connections. No data will be persisted. |
-| LegacyRollback | All insert statements are tracked and deleted during clean-up.<br><br> All insert statements are downgraded to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level will clean up setup data, and the recommendation is to wrap each test method in a ttsBegin and ttsAbort. |
+| AutoRollback | **Default**. Provides the best isolation.<br><br> All transactions are rolled back using SQL save points, and all database statements are routed to the main connection, including user connections. No data is persisted. |
+| LegacyRollback | All insert statements are tracked and deleted during clean-up.<br><br> All insert statements are downgraded to row-by-row. One typical use case is when testing user connections or concurrency scenarios. This isolation level cleans up setup data, and the recommendation is to wrap each test method in a ttsBegin and ttsAbort. |
 | LegacyRollbackWithUpdateTracking | All update, delete, and insert statements are tracked and reverted during cleanup.<br><br> All insert, update, and delete statements are tracked and downgraded to row-by-row. This is the slowest isolation level. |
-| None | **Only use for debugging**. This provides no isolation.<br><br> This setting can be useful to temporarily to debug a test, as it allows you to use the regular user interface to navigate the data that the test created. |
+| None | **Only use for debugging**. Provides no isolation.<br><br> This setting can be useful to temporarily debug a test, as it allows you to use the regular user interface to navigate the data that the test created. |
 
 Example:
 
@@ -137,13 +137,13 @@ Creating a test specific module helps to keep test code together and manageable.
 
 1. Open **Visual Studio** and go to **Dynamics 365** > **Model Management** > **Create model**.
 
-2. Enter the model name, select the layer, and then enter any additional details. Note that it's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
+2. Enter the model name, select the layer, and then enter any additional details. It's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
    
 3. Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
 
     [![Model references.](./media/62-1024x786.png)](./media/62.png)
 
-After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. We have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
+After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms, and provide strongly typed API that can be used to test form functionality. We have included pregenerated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
 
 ## Import a Task Recorder recording into Visual Studio to generate test code
 You can generate test code from Task Recorder recording to execute headless (non-UI) test.
@@ -156,7 +156,7 @@ You can generate test code from Task Recorder recording to execute headless (non
 
     [![Test module.](./media/64-249x300.png)](./media/64.png)
 
-4. The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
+4. The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor, which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
   
 5. After the test code is generated, set up Visual Studio options for test discovery and execution:
    - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
@@ -164,16 +164,16 @@ You can generate test code from Task Recorder recording to execute headless (non
    - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
     - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
-6. From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
+6. From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it attempts to discover test from test code and list all the available tests as shown below.
 
     [![Test explorer.](./media/67-1024x658.png)](./media/67.png)
 
-7. Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed environment. 
+7. Select the test and then click **Run** &gt; **Execute selected**, which executes test against the locally deployed environment. 
 
     [![Execute selected.](./media/68-1024x652.png)](./media/68.png)
 
 ## Integration of the test module with build process
-After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
+After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Codespace. 
 
 [![Build and test execution.](./media/69.png)](./media/69.png)
 
