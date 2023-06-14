@@ -2,66 +2,76 @@
 # required metadata
 
 title: Channel merchandising configuration validator
-description: Find missing and invalid configurations for products, categories, and attributes by channel. 
-author: josaw1
-ms.date: 03/03/2023
-ms.topic: overview
+description: This article describes how to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters. 
+author: ashishmsft
+ms.date: 03/14/2023
+ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace 
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
-ms.author: ashishmsft
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 
 ---
+
+# Channel merchandising configuration validator
+
+[!include[banner](../includes/banner.md)]
+
+This article describes how to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters.
 
 Channel merchandising configuration validator is designed to identify and address incorrect and missing configurations related to products, categories, catalogs and attributes that may result in complications when selling products in eCommerce and POS Commerce channels. By utilizing the configuration validator, you can efficiently resolve these issues and streamline your backoffice operations.
 
 ![Channel merchandising configuration validator in headquarters.](media/channel-merch-config-validator.png)
 
-
 ## Capabilities
 
 This feature offers a wide range of capabilities to optimize your backoffice operations:
 
-**Proactive validation:** The configuration validator proactively identifies and reports missing or invalid configurations related to products, categories, variants, attributes, and catalogs.
-
-**Validation Across Multiple Locales**: It provides comprehensive validation checks across all locales, ensuring all merchandising configurations are thoroughly assessed for a selected channel.
-
-**Deep Linking**: Upon identifying invalid configurations, the feature creates deep links to the specific form that allow users to quickly navigate to the source of the issue and resolve it efficiently, streamlining the correction process.
-
-**Extensive Rule Set**: With a comprehensive set of validation rules, including over 40 distinct rules, the Channel merchandising configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
+- **Proactive validation** - The configuration validator proactively identifies and reports missing or invalid configurations related to products, categories, variants, attributes, and catalogs.
+- **Validation Across Multiple Locales** - It provides comprehensive validation checks across all locales, ensuring all merchandising configurations are thoroughly assessed for a selected channel.
+- **Deep Linking** - Upon identifying invalid configurations, the feature creates deep links to the specific form that allow users to quickly navigate to the source of the issue and resolve it efficiently, streamlining the correction process.
+- **Extensive Rule Set** - With a comprehensive set of validation rules, including over 40 distinct rules, the Channel merchandising configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
 
 ## How to use it? 
 
-**Create validation for a new channel**
-- Go to Retail and Commerce > Retail and Commerce IT > **Channel merchandising configuration validator**.
-- Click **New**.
-- In the **Channel Id** field, enter or select a value (e.g., AW Business Online store)
-- Click **Validate**
-- Wait for the progress % to become **100**% and validation phase to show '**Completed**' 
-- Upon completion of validation, click on the 'Channel name' to view detailed summary of the validation results. 
-- Here you shall notice, there are two options '**By entity**' and '**By rules**' 
-- When viewing '**By entity**' it shows you **all entity records validated** with number of messages, errors and warnings. To view details, click on 'Show details' 
-- Upon clicking on **'Show details'** it would load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. 
-- Additionally, from 'show details view' you can **directly navigate to the entity record to fix** the necessary configuration. 
-- Alternatively you can view '**By rules**' it shows you each rule that was validated with corresponding number of messages, errors and warnings. To view details, click on 'Show details' 
-- Upon clicking on '**Show details**' it would load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. 
-- Additionally, from '**show details view**' you can directly navigate to the entity record to fix the necessary configuration. 
-- Upon fixing the necessary configurations across all entities, you can navigate back to the 'Validation summary' view and click on 'Validate failed' and it shall re-run the validation for the previously failed rules. 
+## Create validation for a new channel
 
-**Create validation for all channels**
-- Go to Retail and Commerce > Retail and Commerce IT > Channel merchandising configuration validator.
-- Click '**Create all**' 
-- It will create a validation for each channel and you will notice the **channel grid** on this workspace getting populated with list of channels. 
-- Next, in the grid of channels, select the channels for which you would like to initiate the validation process. 
-- If you would like to run it for all channels, then from the grid header, select the checkbox which would select all channels. 
-- And then click '**validate**' 
+To create validation for a new channel, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
+1. Select **New**.
+1. In the **Channel Id** field, enter or select a value (e.g., AW Business Online store)
+1. Select **Validate**
+1. Wait for the progress % to become **100**% and validation phase to show '**Completed**' 
+1. Upon completion of validation, select **Channel name** to view detailed summary of the validation results. 
+1. Here you shall notice, there are two options '**By entity**' and '**By rules**' 
+1. When viewing '**By entity**' it shows you **all entity records validated** with number of messages, errors and warnings. To view details, select **Show details**. 
+1. Select **'Show details'** to load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. 
+1. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration. 
+1. Alternatively you can view **By rules** it shows you each rule that was validated with corresponding number of messages, errors and warnings. To view details, select **Show details**. 
+1. Select '**Show details**' to load an additional grid with details of messages, errors, and warnings. You can filter by issue type. 
+1. From the **Show details** view, you can directly navigate to the entity record to fix the necessary configuration. 
+1. Upon fixing the necessary configurations across all entities, you can navigate back to the 'Validation summary' view and select **Validate failed** and it shall re-run the validation for the previously failed rules. 
+
+## Create validation for all channels
+
+To create validation for all channels, follow these steps.
+
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
+1. Select '**Create all**.
+1. It will create a validation for each channel and you will notice the **channel grid** on this workspace getting populated with list of channels. 
+1. Next, in the grid of channels, select the channels for which you would like to initiate the validation process. 
+1. If you would like to run it for all channels, then from the grid header, select the checkbox which would select all channels. 
+1. Select **Validate**. 
 
 ## Rules
 
-| Rule id | Entity | Rule description | Rule type | Effect of incorrect configuration|
+The following table describes the rules for the channel merchandising configuration validator.
+
+| Rule ID | Entity | Rule description | Rule type | Effect of incorrect configuration|
 |--------|--------|--------|--------|--------|
 | AttribGroup-Ru-001 | Attribute group  | Attribute group display order is missing | Information |  If attributes on a product are based of multiple attribute groups, then they will be ordered using default ordering of attributes |
 | AttribGroup-Ru-002 | Attribute group  | AttributeGroup translation for Description and FriendlyName is missing | Information | This will have impact on HQ user, when they have user preferences set to use language different than default system language. |
