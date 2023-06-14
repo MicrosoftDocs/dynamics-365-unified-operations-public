@@ -2,7 +2,7 @@
 title: Tax invoice numbering for Indonesia (ID-00002)
 description: This article explains how to configure and use tax invoice numbering in Indonesia.
 author: AdamTrukawka
-ms.date: 06/10/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
