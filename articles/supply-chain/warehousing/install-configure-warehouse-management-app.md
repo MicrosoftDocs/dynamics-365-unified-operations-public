@@ -75,6 +75,8 @@ For information about how to install a build downloaded from the App Center, see
 
 The Warehouse Management mobile app isn't available in app stores in China. However, downloading it from Microsoft App Center and using it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China is officially supported.
 
+<!-- KFM: Maybe add a new H2 section with an overview of authentication methods here. -->
+
 ## <a name="create-service"></a>Create a web service application in Azure Active Directory
 
 To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure Active Directory (Azure AD). The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
@@ -106,20 +108,20 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 
     ![Certificate & secrets.](media/app-connect-azure-authentication.png "Certificate & secrets")
 
-1. To use the [device code flow](#authenticate-devicecode) for user authentication, configure two additional settings in your app registration.
-By completing the following steps, you'll configure your app registration to use the device code flow for user authentication and grant the required API permissions.
+1. If you want to use the [device code flow](#authenticate-devicecode) to authenticate users, complete the following steps to set it up and grant the required API permissions. If you won't use device code flow, then skip this step. <!-- KFM: How does this interact with the previous step?  -->
 
-    - In the left navigation pane, select **Authentication**. Then, set **Enable the following mobile and desktop flows** to **Yes**. This enables the device code flow for your application.
-
-    - To grant the necessary API permissions, navigate to **API permissions**. Click the **Add a permission** button and select the **Microsoft APIs** tab. Click the **Dynamics ERP** button and then the **Delegated permissions** button. Under **CustomService**, tick the **CustomService.FullAccess (Access Dynamics AX Custom Service)** checkbox. Finally, click the **Add permissions** button to save your changes.
-
-    - Switch to the **Azure Active Directory** -> **Enterprise applications** -> **All applications** tab and find an app with a name identical to your app registration name.
-
-    - On the **Properties** tab, check **Assignment required?** to **Yes** and **Visible to users?** to **No**.
-
-    - On the **Users and groups** tab, press the **Add user/group** button and select the designated users for the Warehouse Management app.
-
-    - Optionally, you can grant admin consent for **CustomService.FullAccess** in **Azure Active Directory** -> **App registrations** -> [your app registration] -> **App registrations** page; you may click the **Grand admin consent** button.
+    1. In the **Manage** list, select **Authentication**.
+    1. Set **Enable the following mobile and desktop flows** to *Yes*. This enables the device code flow for your application.
+    1. Select **Save**.
+    1. In the **Manage** list, select **API permissions**.
+    1. Select **Add a permission**.
+    1. The **Request API permissions** dialog opens. On the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then select the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** button to save your changes.
+    1. On the left navigation pane, select **Azure Active Directory**. Then, in the **Manage** list select **Enterprise applications**. Then, in the new **Manage** list, select **All applications** tab.
+    1. In the search form, enter then name that you chose for app earlier in this procedure. Confirm that the **Application ID** shown for the found app matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app you found.
+    1. In the **Manage** list, select **Properties**. Set **Assignment required?** to *Yes* and **Visible to users?** to *No*. Then select **Save** in the toolbar.
+    1. In the **Manage** list, select **Users and groups**. Select **Add user/group** in the toolbar.
+    1. The **Add Assignment** page opens. Select the link under the **Users** heading to open the **Users** dialog and then use the dialog to select each of the users that you want to allow to use the Warehouse Management app. <!-- KFM: Please confirm this description  -->
+    1. Optionally, you can grant admin consent for **CustomService.FullAccess** in **Azure Active Directory** -> **App registrations** -> [your app registration] -> **App registrations** page; you may click the **Grand admin consent** button. <!-- KFM: We should describe a bit more about what we are doing here... -->
 
 For more information about how to set up web service applications in Azure AD, see the following resources:
 
@@ -175,10 +177,6 @@ Still, it has several caveats:
 1. It requires a unique Azure AD user for each worker. **These AD users should be strictly limited to warehouse mobile device user activities.**
 1. If users remain idle for [90 days](https://learn.microsoft.com/en-us/azure/active-directory/develop/refresh-tokens), they will be automatically logged out.
 1. Lack of proper MDM support
-
-## Configure the Warehouse Management mobile app for cloud and edge scale units
-
-A few extra steps are required if you plan to run the Warehouse Management mobile app against a cloud or edge scale unit. For instructions, see [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## Configure the application by importing connection settings
 
@@ -376,6 +374,5 @@ By disabling the user in Azure Active Directory, you effectively revoke access t
 
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
-- [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
