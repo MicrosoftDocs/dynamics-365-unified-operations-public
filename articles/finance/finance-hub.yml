@@ -92,12 +92,12 @@ additionalContent:
         text: Data entities
     - title: Developer reference
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
         text: API references
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/customizing-mappings
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
         text: Mapping references
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type
-        text: Access to finance and tax reference data
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
+        text: Database movement API
     - title: Develop integration    
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
