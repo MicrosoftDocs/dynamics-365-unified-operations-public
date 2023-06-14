@@ -71,7 +71,7 @@ If you haven't opened the Fleet Management Solution in a previous tutorial, foll
 
 1. On the **Desktop**, double-click the **Visual Studio** shortcut to open the development environment.
 2. Open the **FleetManagement** solution. On the **File** menu, point to **Open**, and then select **Project/Solution**.
-3. Browse to the desktop and open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3. Browse to the desktop and open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](../dev-tools/fleet-management-sample.md).
 4. Select the solution file named **FleetManagement**. The file type listed is Microsoft Visual Studio Solution.
 5. Select **Open**. The solution may take some time to open.
 

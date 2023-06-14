@@ -108,7 +108,7 @@ This section describes the steps needed to add a solution to Azure DevOps source
 
 1. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2. Browse to the desktop and open the **FleetManagement** folder.
-3. Select the solution file named **FleetManagement**. The file type is listed as **Microsoft Visual Studio Solution**. If the solution file isn't on your computer, create it by following the steps in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3. Select the solution file named **FleetManagement**. The file type is listed as **Microsoft Visual Studio Solution**. If the solution file isn't on your computer, create it by following the steps in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 4. Click **Open**. Loading the solution may take some time.
 
 ### Add the FleetManagement solution to source control
