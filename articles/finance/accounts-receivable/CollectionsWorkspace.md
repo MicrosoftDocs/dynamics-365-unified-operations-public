@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.34
 ---
 
 # Collections coordinator workspace
-> [!NOTE] 
+> [!NOTE] Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
 
 Collections coordinators (collections agents) have the daily task of contacting customers with overdue balances. Before they contact their customers, they need to know information like the aged balances, last payment received, outstanding invoice amounts and many other data points. Finding this information requires navigating to multiple screens and lookups. With the Collections coordinator workspace much of that information is displayed in one page, saving them time by not having to search in multiple places. 
 
@@ -36,7 +36,7 @@ Collections coordinators (collections agents) have the daily task of contacting 
 The Collections coordinator workspace is enabled through **Feature management**. In the **Feature management** workspace, on the **All** tab, enter **(Preview) Collections coordinator workspace** and then select **Enable**.
 
 ## Overview
-The Collections coordinator workspace displays information for a collections coordinator (collections agent) looking for relevant collection information for their customers. If the collections coordinator is setup as a collections agent and assigned a default collection pool it will default in the **Pool** field. The **Customer account** list is restricted to customers in the pool. If you are not using pools then the **Customer account** selection displays all customers. Once selected, the workspace displays the customer name along with their credit rating in Dynamics 365 Finance, payment history summary and overdue balance as of 60 days ago. 
+The Collections coordinator workspace displays information for a collections coordinator (collections agent) looking for relevant collection information for their customers. If the collections coordinator is setup as a collections agent and assigned a default collection pool it will default in the **Pool** field. The **Customer account** list is restricted to customers in the pool. If you are not using pools then the **Customer account** selection displays all customers. Once selected, the workspace displays the customer name along with their credit rating in Dynamics 365 Finance, payment history summary and overdue balance as of 60 days ago. If this information is not available in Dynamics 365 Finance the header will not display it. 
 
 The **Overview** tab displays the customer account details including the aged balances and other customer data points in Dynamics 365 Finance relevant to their credit and open transactions. The aged balances chart displays the aging bucket summaries of the current and overdue amounts. 
 
