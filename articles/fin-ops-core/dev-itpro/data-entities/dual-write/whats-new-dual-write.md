@@ -26,6 +26,8 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 |---|---|---|
 | Bug fix | CRM workflow performance fix to add an additional check on update calls. | General availability |
 | Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance issues. | General availability |
+|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	General availability
+
 
 ### Solution details
 
