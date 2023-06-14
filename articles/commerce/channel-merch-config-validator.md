@@ -35,36 +35,28 @@ This feature offers a wide range of capabilities to optimize your backoffice ope
 - **Deep Linking** - Upon identifying invalid configurations, the feature creates deep links to the specific form that allow users to quickly navigate to the source of the issue and resolve it efficiently, streamlining the correction process.
 - **Extensive Rule Set** - With a comprehensive set of validation rules, including over 40 distinct rules, the Channel merchandising configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
 
-## How to use it? 
-
 ## Create validation for a new channel
 
 To create validation for a new channel, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **New**.
-1. In the **Channel Id** field, enter or select a value (e.g., AW Business Online store).
+1. In the **Channel Id** field, enter or select a value (for example, "AW Business online store").
 1. Select **Validate**.
-1. Wait for the progress % to become **100**% and validation phase to show **Completed**. 
-1. Upon completion of validation, select **Channel name** to view detailed summary of the validation results. 
-1. Here you shall notice, there are two options **By entity** and **By rules**. 
-1. When viewing **By entity** it shows you **all entity records validated** with number of messages, errors and warnings. To view details, select **Show details**. 
-1. Select **Show details** to load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. 
-1. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration. 
-1. Alternatively you can view **By rules** it shows you each rule that was validated with corresponding number of messages, errors and warnings. To view details, select **Show details**. 
-1. Select **Show details** to load an additional grid with details of messages, errors, and warnings. You can filter by issue type. 
-1. From the **Show details** view, you can directly navigate to the entity record to fix the necessary configuration. 
-1. Upon fixing the necessary configurations across all entities, you can navigate back to the **Validation summary** view and select **Validate failed** and it shall re-run the validation for the previously failed rules. 
+1. Wait for the progress to become 100% and the validation phase to show **Completed**. 
+1. After validation has completed, select **Channel name** to view a detailed summary of the validation results. There are two viewing options: **By entity** and **By rules**. 
+    - **By entity** it shows you **all entity records validated** with number of messages, errors and warnings. To view details, select **Show details** to load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration. 
+    - **By rules** shows you each rule that was validated with corresponding number of messages, errors and warnings. To view details, select **Show details**. Select **Show details** to load an additional grid with details of messages, errors, and warnings. You can filter by issue type. From the **Show details** view, you can directly navigate to the entity record to fix the necessary configuration. 
+1. After fixing the necessary configurations across all entities, you can navigate back to the **Validation summary** view and select **Validate failed** to rerun the validation for the previously failed rules. 
 
 ## Create validation for all channels
 
 To create validation for all channels, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
-1. Select **Create all**.
-1. It will create a validation for each channel and you will notice the **channel grid** on this workspace getting populated with list of channels. 
-1. Next, in the grid of channels, select the channels for which you would like to initiate the validation process. 
-1. If you would like to run it for all channels, then from the grid header, select the checkbox which would select all channels. 
+1. Select **Create all**. This action will create a validation for each channel and you will notice the **channel grid** on this workspace getting populated with list of channels. 
+1. Next, in channel grid, select the channels for which you would like to initiate the validation process. 
+1. If you want to run validation for all channels, from the grid header, select the checkbox that selects all channels. 
 1. Select **Validate**. 
 
 ## Rules
