@@ -2,7 +2,7 @@
 title: Electronic invoicing for Indonesia
 description: This article explains how to configure and process electronic invoice for Indonesia.
 author: AdamTrukawka
-ms.date: 06/10/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article will help you get started with Electronic invoicing for Indonesia. The article provides the configuration steps that are country/region-dependent in RCS and Finance. You're also guided through the steps that you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
+This article will help you get started with Electronic invoicing for Indonesia. The article provides the configuration steps that are country/region-dependent in the Regulatory Configuration Service (RCS) and Dynamics 365 Finance. You'll be guided through the steps you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ Before you use the invoicing functionality, the following prerequisites must be 
     > [!NOTE]
     > [Microsoft Dynamics 365 Electronic Invoicing connector for Microsoft Dataverse](https://appsource.microsoft.com/product/dynamics-crm/mscrm.electronic-invoicing) isn't currently available from AppSource. If this connector is required to obtain the Dataverse solution for Electronic invoicing, send a request to <DataverseEnvoicing@microsoft.com> to get the Dataverse solution. For general questions about electronic invoicing, go to the dedicated Yammer group, [Electronic invoicing](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=9386819584&view=all). If you need further assistance, create a support ticket. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
-- Follow the steps in [Get started with Electronic invoicing](e-invoicing-set-up-overview.md).
+- Follow the steps in the article,[Get started with Electronic invoicing](e-invoicing-set-up-overview.md).
 
-### RCS setup
+### Set up RCS
 
 During RCS setup, complete the following tasks.
 
