@@ -1,7 +1,7 @@
 ---
-title: Changes to confirmed purchase orders
-description: This article describes the workspace where users can review and accept changes to a ‘Confirmed’ purchase orders based on their downstream impact.
-author: CjhristianAbeln
+title: Review and accept changes to confirmed purchase orders
+description: This article describes the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders based on their downstream impact.
+author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
@@ -12,104 +12,116 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Review and accept changes to confirm purchase orders
+# Review and accept changes to confirmed purchase orders
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the workspace where users can review and accept changes to a ‘Confirmed’ purchase order (PO) based on their downstream impact.
+> [!IMPORTANT]
+> Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+>
+> During this preview phase, the summarization of changes and the summarization of downstream impact are only available in environments hosted in North America and will render in English. All other functionality is available globally.
 
-> [!NOTE]
-> This workspace for procurement is currently in public preview. The capability has been added to the release 10.0.34. Please upgrade the version of finance and operations to application suite version 10.25.1372, which is included in application version 10.0.1591.72.
->During this phase, the summarization of changes and the summarization of downstream impact will only be available in environments hosted in North America and will render in English. All other functionality is available globally.
+<!-- KFM: Preview until further notice -->
 
-## Business Value
+During the procurement planning process, any changes made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that will only have a low risk of downstream impact, which allows procurement managers to focus on high-impact changes so they can assess potential downstream order impacts and communicate directly with vendors.
 
-In the procurement planning process, any changes to the confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new Procurement Order Review Workspace offers an efficient way to identify and reconfirm changes with a low risk of downstream impact. This allows procurement managers to focus on impactful changes, communicate directly with vendors, and assess potential downstream order impacts.
+This article describes the workspace where users can review and accept changes made by suppliers to *Confirmed* purchase orders based on the downstream impact of the changes made.
 
-## Enabling the Procurement Order Review Capability
+## Prerequisites
 
-To enable the feature, navigate to the feature management and activate the feature flag: ”Review changes to confirmed purchase orders based on downstream impact”.
+To use this feature, your system must meet the following requirements:
 
-## Procurement Order Review Workspace Overview
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+- This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35, so you may need to update these versions as described later in this list.
+    - If you're running Supply Chain Management version 10.0.34, then you must upgrade the Application Suite to 10.25.1372 (or later), which is included in build number 10.0.1591.72 of finance and operations apps.
+    - If you're running Supply Chain Management version 10.0.35, then you must upgrade to the latest available build.
+- The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-You can access the workspace by navigating to the workspace with the name "Confirmed purchase orders with changes".
+## The Confirmed purchase orders with changes workspace
+
+To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirmed purchase orders with changes**. <!-- KFM: Confirm path. Is workspace name really different from the path name? -->
+
+[<img src="media/po-change-review-highimpact.png" alt="Workspace showing high impact changes and downstream impact." title="Workspace showing high impact changes and downstream impact" width="720" />](media/po-change-review-highimpact.png#lightbox)
 
 The workspace lists all previously confirmed purchase orders that have been changed after confirmation. It aids the review process by identifying potential impacts on production work, service work orders, and sales orders.
 
-At the top of the workspace, three tiles summarize changed confirmed purchase orders and downstream impacts:
+At the top of the workspace, the following tiles summarize the changed confirmed purchase orders and the related downstream impacts:
 
-1. **Low Impact Changes:** This tile focuses on purchase orders with low risk for downstream impact, i.e., those with no downstream orders allocated. A generated summary of changes is provided to aid review and validation.
+- **Low impact changes** – Focuses on purchase orders with low risk for downstream impact (in other words, those with no downstream orders allocated). A generated summary of changes is provided to help you review and validate them.
+- **High impact changes** – Highlights purchase orders with known downstream impacts. These high-risk changes are summarized along with the detected impact, which helps you investigate further and decide what actions to take.
+- **Impacted downstream orders** – Summarizes impacts by the number and type of orders and shows the purchase order changes causing each impact. This information helps you review potential downstream impacts based on the latest master planning run.
 
-2. **High Impact Changes:** This tile highlights purchase orders with known downstream impacts. These high-risk changes are summarized along with the detected impact, aiding the user in further exploration and decision-making.
+Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list columns include original and new quantities, original and new confirmed delivery dates, and so on.
 
-3. **Impacted Downstream Orders:** This tile allows the user to review potential downstream impacts based on the last master planning run. It summarizes the impact by the number and type of orders and shows the purchase order changes causing the impact.
+## Review changes to confirmed purchase orders
 
-Each tile contains a “Show” link, clicking on which filters the list of purchase orders and purchase order lines below. The list columns include original and new quantities, original and new confirmed delivery dates, etc.
+Purchasers use the workspace to review and accept changes to confirmed purchase orders. They'll typically proceed using the following steps:
 
-![Workspace showing high impact changes and downstream impact](media/po-change-review-highimpact.png)
+1. Study all changes to confirmed purchase orders and their downstream impact.
+1. Focus on changes with low risk of downstream impact.
+1. Review changes with high risk of downstream impact.
+1. Review remaining downstream impact.
 
-## Typical user activities when reviewing changes to confirmed purchase orders
+Each of these steps is described in more detail in the following sections.
 
-A purchaser can use the workspace to review and accept changes to confirmed purchase orders. The following steps describe the typical user activities:
+## Study all changes to confirmed purchase orders and their downstream impact
 
-### 1. Study changes across all confirmed purchase orders and their downstream impact
+The purchaser starts by opening the **Confirmed purchase orders with changes** workspace and studying all the changes that have been submitted through the purchase order change management process. These changes can have been submitted by vendors through any of several various channels.
 
-A purchaser typically will first study all the changes that have been submitted through the purchase order change management process and can arrive from the vendor through different channels.
+When a purchase order that had previously been *Confirmed* is changed, it's moved back into the *Approved* state. The workspace shows all purchase orders that have been changed after confirmation.
 
-When entering the workspace it will show all purchase orders with changes. When a purchase order that had previously been confirmed is changed it will move back into the Approved state. The workspace will show all purchase orders that have been changed after confirmation.
+The workspace shows two lists, one with the purchase orders details, and one with the purchase order lines.
 
-The workspace shows two list, one with the purchase orders details, the second with the purchase order lines. 
+The purchase order list shows the purchase order number, the vendor, and the requested receipt date from the purchase order header. To view the related records, select the purchase order or vendor links in the list.
 
-The purchase order list includes the purchase order number, vendor and the requested receipt date from the purchase order header. Purchase order or vendor can be easily opened from the list by clicking on the purchase order number or vendor account.
+The purchase order lines list shows information about each line that has proposed changes. This information includes the item number, product name, original quantity, new quantity, original confirmed delivery date, and new confirmed delivery date. The workspace also provides a hierarchical view of the downstream impact (if any). The **Reference** field highlights the type of downstream impact, such as a planned kanban for a production order, a sales order, or a maintenance work order.
 
-The purchase order lines list shows the lines that have proposed changes. This includes item number, the product name, original and new quantity, original and new confirmed delivery date.
-It shows as well downstream impact in a hierarchical manner, if such has been identified. The Reference field will highlight the type of downstream impact, such as a Planned Kanban for a production order, a sales order, or a maintenance work order.
+## Focus on changes with low risk of downstream impact
 
-### 2. Focus first on changes with low risk of downstream impact
+To take action effectively and efficiently, you'll typically start by focusing on low-impact changes. These are changes that have no known downstream impact according to the current plan.
 
-In order to take action effectively and efficiently, the purchaser will often first focus on low impact changes. These are changes that have no known downstream impact according to the current plan.
+The **Low impact changes** tile gives an AI-generated, natural-language summary of the changes with low impact risk. Select the **Show** link to open the respective filtered view.
 
-The tile "Low impact changes" gives a AI generated summary in natural language on the amount of changes with low impact risk. The link Show opens the respective filtered view.
+The purchaser reviews the changes and can then accept them by selecting individual or multiple purchase orders and then selecting **Confirm purchase orders** on the toolbar above the list. The procedure to confirm the changes is the same as when confirming a purchase order for the first time, and it supports batch processing. Any extension that is registered for the purchase order confirmation will also be executed.
 
-Here the purchaser can review the changes and accept those by reconfirming individual or multiple purchase order using the Menu Confirm purchase orders. The experience to confirm the changes is the same as when confirming a purchase order for the first time and support batch processing. Any extension that is registered for the purchase order confirmation will be executed as well.
-Once re-confirmed, the purchase order will then move back into the Confirmed state.
+Once reconfirmed, the selected purchase orders will then move back into the *Confirmed* state.
 
-### 3. Review changes with high risk of downstream impact
+## Review changes with high risk of downstream impact
 
-A Purchaser will spend more time on changes that have a high risk of downstream impact. These are changes that have downstream orders allocated and where the downstream impact has been identified.
+The purchaser will spend more time on changes that have a high risk of downstream impact. These are changes that have downstream orders allocated and where the downstream impact has been identified.
 
-The workspace supports users with dedicated AI support and views on that task. The tile "High impact changes" gives a AI generated summary in natural language on the amount of changes with high impact risk.
-The link Show in the tile opens the filtered view where the purchaser can focus on those impacts and take action.
+The **High impact changes** tile gives an AI-generated, natural-language summary of the changes with high impact risk. Select the **Show** link to open a filtered view where you can focus on those impacts and take action.
 
 > [!NOTE]
-> Please note, in the preview only direct downstream impact is considered. Indirect downstream impact, such as product work depending on other production work, is not yet considered.
+> Only direct downstream impacts are considered. Indirect downstream impacts, such as product work depending on other production work, aren't yet considered.
 
-In this view the user can reach out to the vendor using email or Microsoft Teams conversation. The system will use the email address as recorded in the purchase order header of the email address of the vendor contact person. The system will generate a proposed message text and open the email client or Microsoft Teams conversation window. The user can then review, update and send the message.  
+From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update and send the message.
 
-![Workspace showing one selected purchase order with changes and downstream impact](media/po-change-review-highimpact-one-selected.png)
+[<img src="media/po-change-review-highimpact-one-selected.png" alt="Workspace showing one selected purchase order with changes and downstream impact." title="Workspace showing one selected purchase order with changes and downstream impact" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
 
-After the review and collaboration with the vendor, the purchaser can update the order further before sending it to the vendor again or possibly cancel the order and planning for alternative supply.
+After talking with the vendor, you can update the order further before sending it back to the vendor for confirmation, or possibly cancel the order and plan for alternative supply.
 
-### 4. Review remaining downstream impact
+## Review remaining downstream impact
 
-Once the majority of the order changes have been addressed the purchaser may review the overall downstream remaining impact of the remaining open order changes.
+Once most the order changes have been addressed, the purchaser can review the overall downstream impact of the remaining open order changes.
 
-The tile Impacted downstream orders gives a summary of the downstream impact. The link Show in the tile opens the filtered view where the purchaser can focus on those impacts and take action.
+The **Impacted downstream orders** tile gives a summary of the downstream impact. Select the **Show** link to open a filtered view where you can focus on those impacts and take action.
 
-In this view the purchaser will begin the analysis from the perspective of down stream impact and identify the purchase order changes that are causing the impact. The purchaser can then take action on those purchase orders.
+In this view, you can analyze the changes from the perspective of downstream impact and identify the purchase order changes that are causing the impact. Then you can take action on those purchase orders.
 
 ![Workspace showing filtering for most pressing downstream impact by purchase order changes](media/po-change-review-downstream-impact.png)
 
-A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact, the requested date in the downstream order. This way users can identify the most eminent impact and take action by communicating with downstream stakeholders who might reach out to impacted customers and  replan downstream orders.
+A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact (the requested date in the downstream order). This lats you identify the most eminent impact and take action by communicating with downstream stakeholders who might then reach out to impacted customers and replan the downstream orders.
 
-## How does the Copilot technology work?
+## Frequently asked questions
 
-The system summarizes changes to purchase orders such as changed quantities and confirmed delivery dates and identified downstream impacts. It uses the generative AI model Text-davinci-003 to generate a summary of the changes in natural language as well as content for email and Teams conversation.  
+### How does the Copilot technology work?
 
+The system summarizes changes to purchase orders, such as changed quantities and confirmed delivery dates, and identifies downstream impacts. It uses the generative-AI model Text-davinci-003 to generate natural-language change summaries and suggested content for email and Teams conversations.  
 
-## What if I'm not satisfied with the generated content?
+### What if I'm not satisfied with the generated content?
 
-Text generated by purchase order change review workspace isn't intended to be used without manual review or supervision.
+Text generated by Copilot isn't intended to be used without manual review or supervision.
 
 > [!NOTE]
 > If you encounter inappropriate content being generated, report it to Microsoft using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback helps improve the functionality moving forward.
