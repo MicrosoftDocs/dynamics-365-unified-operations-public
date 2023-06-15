@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.24
 >Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
 
 ## Overview
-Enable the **Collections coordinator summary** feature to see an AI-generated summary of a customer’s account and revenue and use AI-generated reminder emails. This feature is powered by Azure Open AI’s large language model and has been developed to reduce the time it takes to review collections details for your customers. The goals of this capability are to: 
+Enable the **Collections coordinator summary** feature to get an AI-generated summary of a customer’s account and revenue and use AI-generated reminder emails. This feature is powered by Azure Open AI’s large language model and has been developed to reduce the time it takes to review collections details for your customers. The goals of this capability are to: 
  - provide customer account information 
  - help make better decisions about your customers 
  - increase efficiency by drafting a reminder email that can be edited and then sent to your customer
@@ -85,13 +85,13 @@ To enable the **Collections coordinator summary**, go to:
 >The **(Preview) Collections coordinator workspace** must also be enabled for this functionality to display this workspace.
 
 ## Summary text
-The AI-generated content appears below the data points on the **Collections coordinator** workspace as soon as a customer is selected in the **Customer account** field. Azure OpenAI is used to generate the results based on data in Dynamics 365 finance and the provided prompts. All calculations are done through Dynamics 365 finance. The summary is based on the amounts for a customer’s payment history for the past year, outstanding debt amount and revenue year-to-date.
+The AI-generated content appears below the data points on the **Collections coordinator** workspace as soon as a customer is selected in the **Customer account** field. Azure OpenAI is used to generate the results based on data in Dynamics 365 Finance and the provided prompts. All calculations are done in Dynamics 365 finance. The summary is based on the amounts for a customer’s payment history for the past year, outstanding debt amount and revenue year-to-date.
 
 ## Create reminder email
-Select **Create reminder email** to have an AI-generated email drafted in the format of a reminder letter. When selected, a dialog box displays the message **A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?”**. Select **No** to close the dialog and return to the workspace. Select **Yes** to open your default email service with an email draft. Azure OpenAI services incorporates robust filters and safeguards to help prevent the generation of offensive, destructive or abusive content and will not be created using this feature.
+Select **Create reminder email** to have an AI-generated email drafted in the format of a reminder letter. When selected, a dialog box displays the message **"A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?”**. Select **No** to close the dialog and return to the workspace. Select **Yes** to open your default email service with an email draft. Azure OpenAI services incorporates robust filters and safeguards to help prevent the generation of offensive, destructive or abusive content and will not be created using this feature.
 
 >[!Note] 
->The email is created using AI and Dynamics 365 Finance data and is a suggestion. It is your responsibility to review and edit the suggested content to make sure it’s accurate and appropriate before sending your email.  
+>The email is created using AI and Dynamics 365 Finance data and is a suggestion. It is your responsibility to review and edit the suggested content to make sure it’s complete, accurate and appropriate before sending your email.  
 
 ## Collections coordinator summary: Frequently asked questions
 What is the Collections coordinator summary?
