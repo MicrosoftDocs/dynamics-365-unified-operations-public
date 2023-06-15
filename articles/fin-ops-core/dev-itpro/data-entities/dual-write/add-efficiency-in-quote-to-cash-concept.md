@@ -34,7 +34,7 @@ Both Supply Chain Management and Sales store and show origin and ownership infor
 
 When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled, all sales quotations have an **Origin** value of *Supply Chain Management* and an **Ownership** value of *Based on origin*.
 
-When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is [enabled and fully configured](enable-efficiency-in-quote-to-cash.md), the **Origin** fields works in the following way:
+When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is [enabled and fully configured](enable-efficiency-in-quote-to-cash.md), the **Origin** field works in the following way:
 
 - Quotations that are created in Supply Chain Management have an **Origin** value of *Supply Chain Management*.
 - Quotations that are created in Sales have an **Origin** value of *Dynamics 365 Sales*.
