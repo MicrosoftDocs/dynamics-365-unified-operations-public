@@ -60,7 +60,7 @@ Currently, the system shows the aggregated count of products that are published 
 
 #### Can the system show why products are failing to get published?
 
-Ideally, we want to show all failure reasons in this view, but there are going to be so many reasons for which the product publishing might be failing and some maybe fixable by updating product configuration and other may require support from Microsoft to address some deeper technical issues. For the issues that maybe fixable by updating product configuration, we recommend you leverage 'Channel merchandising configuration validator' available in headquarters, that would actually help in parallel or complement where it would kind of a showcase to you what product configurations would have been required.
+Ideally, we want to show all failure reasons in this view, but there are going to be so many reasons for which the product publishing might be failing and some maybe fixable by updating product configuration and other may require support from Microsoft to address some deeper technical issues. For the issues that maybe fixable by updating product configuration, we recommend you leverage channel merchandising configuration validator available in headquarters, that would actually help in parallel or complement where it would kind of a showcase to you what product configurations would have been required. For more information, see [Channel merchandising configuration validator](channel-merch-config-validator.md).
 
 #### Can the system show the breakdown of the products that are published/not published by each catalog? 
 
@@ -71,3 +71,4 @@ Currently, the system is limited to showing the aggregated product count for a g
 Currently, it's limited to show the aggregated product count for a given channel across all catalogs and all locales, in future versions we will look for opportunity to provide the published products count by each locale. We recommend you leverage 'Channel merchandising configuration validator' for common mistakes that may cause issues with locales specific product publishing where it can identify missing values (Product name, category name, attribute values or product description) for a specific locale. 
 
 
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
