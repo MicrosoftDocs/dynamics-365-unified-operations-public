@@ -5,7 +5,7 @@ title: Develop and open job requisition
 description: Recruitment projects help manage the recruiting process. 
 author: twheeloc
 ms.date: 01/10/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

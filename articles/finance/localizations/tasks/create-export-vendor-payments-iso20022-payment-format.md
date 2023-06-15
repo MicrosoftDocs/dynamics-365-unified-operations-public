@@ -5,7 +5,7 @@ title: Create and export vendor payments using ISO20022 payment format
 description: This procedure shows how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example. 
 author: mrolecki
 ms.date: 01/17/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -17,7 +17,7 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["56381", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 # ms.search.industry: 
@@ -50,7 +50,7 @@ A workflow represents a business process. It defines how a document flows, or mo
 
 ![Workflow with elements that are assigned to users.](./media/workflow_user.gif)
 
-To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
+To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts submitted by Sam. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 
 ## Benefits of using the workflow system
 

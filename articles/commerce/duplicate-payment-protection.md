@@ -4,7 +4,7 @@
 title: Duplicate payments prevention
 description: This article describes how Microsoft Dynamics 365 Commerce helps to prevent duplicate payments in Store Commerce.
 author: BrianShook
-ms.date: 02/02/2023
+ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,10 @@ The [Dynamics 365 Payment Connector for Adyen](TODO) has built in support for th
 
 ## Scenario details
 
-The duplicate payment protection feature is applicable to any scenario in which a payment is initiated and completed on a payment terminal, but the Store Commerce app is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
+The duplicate payment protection feature is applicable to any payment authorization scenario where a payment is initiated and completed on a payment terminal, but the Store Commerce app is unable to receive the corresponding response. As a result, the customer's card (such as a credit card) is charged but the payment line is not added to the POS. In most cases, the cashier will trigger a subsequent payment on the payment terminal, which results in a duplicate payment for the customer.
+
+> [!NOTE]
+> Refund or return payment scenarios are not supported for duplicate payment protection in POS.
 
 ### How duplicate payments scenarios are triggered
 

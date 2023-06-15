@@ -4,7 +4,7 @@
 title: Data entities overview
 description: This article describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: peakerbl
-ms.date: 04/20/2020
+ms.date: 04/28/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["22051", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 89ee656f-3a91-42cd-a189-11744cd2415b
 ms.search.region: Global
 # ms.search.industry: 
@@ -61,7 +61,7 @@ A consumer wants to access data that is related to a customer object, but this d
 
 ### Supported scenarios
 
-Data entities support all the following scenarios.
+Data entities support all the following scenarios. Learn more at [Configuration data and data migration in Dynamics 365 implementation projects](/dynamics365/guidance/implementation-guide/data-management-configuration-data-migration).
 
 #### Integration scenarios
 
@@ -107,7 +107,31 @@ After the initial deployment is up and running, the system implementer will **mi
 - Master data (for example, customers and vendors)
 - Subsets of documents (for example, sales orders)
 
+## Built-in entities
+
+You can use data entities to import data in Dynamics 365 projects, such as for data migration or integration scenarios. The following list shows some of the entities that are most often used in Dynamics 365 solutions.  
+
+- Accounts receivable  
+
+  - [Customer definitions entity](entity-customer-definitions-customerbase.md)  
+  - [Customer details V2 entity](entity-customer-details-v2-na.md)  
+  - [Customers V3 entity](entity-customers-v3-customerv3.md)  
+  - [Sales order headers V2](entity-sales-order-headers-v2-salesorderheaderv2.md)  
+  - [Sales order lines V2](entity-sales-order-lines-v2-salesorderline.md)  
+- Accounts payable  
+
+  - [Vendor invoice header entity](entity-vendor-invoice-header-vendorinvoiceheader.md)  
+  - [Vendor invoice line entity](entity-vendor-invoice-line-vendorinvoiceline.md)  
+  - [Vendor invoice charges entity](entity-vendor-invoice-charges-vendorinvoiceheadercharge.md)  
+  - [Vendor invoice line charges entity](entity-vendor-invoice-line-charges-vendorinvoicelinecharge.md)  
+  - [Vendor invoice document attachment V2 entity](entity-vendor-invoice-document-attachment-v2-vendorinvoicedocumentattachment.md)  
+- Product information management  
+
+  - [Products V2 entity](entity-products-v2-productsv2.md)  
+  - [Released products V2 entity](entity-released-products-v2-releasedproductv2.md)  
+
 ## Categories of entities
+
 Entities are categorized based on their functions and the type of data that they serve. The following are five categories for data entities.
 
 ### Parameter

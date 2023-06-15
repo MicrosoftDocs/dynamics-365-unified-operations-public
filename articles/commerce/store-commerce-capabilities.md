@@ -2,7 +2,7 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/25/2022
+ms.date: 04/26/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -31,7 +31,7 @@ This article provides an overview of the Store Commerce app capabilities.
 | Commerce headquarters | Commerce headquarters provides back-office capabilities that enable the configuration of products, employees, business processes, pricing, and other functionality that is required for the business. | [Architecture overview](commerce-architecture.md) | |
 | Point of sale (POS) | The Store Commerce app is the POS experience for Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. In addition, it provides several deployment options to retailers, helps improve performance, and offers improved application lifecycle management (ALM). | [Store Commerce App](dev-itpro/store-commerce.md) | <p>[Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/modernize-the-dynamics-365-commerce-in-store-technology-using-the-new-store-commerce-app-march-30-2022)</p><p>[Video](https://youtu.be/7B332XH_zfs)</p><p>[Migration from MPOS to Store Commerce](dev-itpro/pos-extension/migrate-mpos-store-commerce.md)</p> |
 | Cloud deployment | Multiple instances of Commerce Scale Units can be deployed for load distribution and geo proximity. | [Cloud deployment](../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md) | |
-| On-premises deploymen | Using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
+| On-premises deployment | Using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md) | |
 
 ## Device management
 
@@ -56,10 +56,10 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Assortment management | Merchandising managers can assort products so that they are available for sale in a specific channel and during a specific period. | [Assortments](assortments.md) | |
+| Assortment management | Merchandising managers can assort products so that they're available for sale in a specific channel and during a specific period. | [Assortments](assortments.md) | |
 | Catalogs | Merchandising managers can manage catalogs to identify the products that you want to offer with catalog-specific pricing. | [Catalogs](/dynamicsax-2012/appuser-itpro/about-retail-product-catalogs) | |
 | Product and category management | In Commerce headquarters, merchandising managers can create products that have variants, attributes, a unit of measure, and so on. They can also define a category hierarchy to organize products. | [Product](retail-hierarchies.md) | |
-| Bundles | Merchandising managers can group products so that they are sold as a bundle or kit. | [Kits](/dynamicsax-2012/appuser-itpro/about-setting-up-retail-product-kits) | |
+| Bundles | Merchandising managers can group products so that they're sold as a bundle or kit. | [Kits](/dynamicsax-2012/appuser-itpro/about-setting-up-retail-product-kits) | |
 | Info codes | Use info codes to prompt the cashier to enter information during different actions at the POS, such as item sales, item returns, or customer selection. | [Info codes](/dynamicsax-2012/appuser-itpro/about-info-codes-retail) | |
 | Linked items | Use linked items to upsell products when an item is added to transaction. | [Linked items](/dynamicsax-2012/appuser-itpro/set-up-products-for-cross-selling-and-up-selling) | |
 | Warranties | Extended warranties can be sold together with products. | [Warranty](extended-warranty.md) | |
@@ -109,7 +109,7 @@ This article provides an overview of the Store Commerce app capabilities.
 | Credit and debit | The Store Commerce app supports major credit and debit card payments through Adyen Payment Gateway and order fulfillment through PayPal. The Payments SDK allows for external gateway connections that are supported by independent software vendor (ISV) integrations. | <p>[Adyen](dev-itpro/adyen-connector.md?tabs=10-0-23)</p><p>[PayPal](paypal.md)</p><p>[Payments](payment-methods.md)</p> | <p>[Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-omni-channel-payment-configuration-february-9-2021)</p><p>[Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-omni-channel-payment-overview-processing-february-4-2021)</p> |
 | Digital wallet support | The Store Commerce app supports payments through digital wallet payment methods that don't use Bank Identification Number (BIN) ranges as traditional credit and debit cards do. Payment methods can be mapped to digital wallet payments such as Adyen. | [Wallet](wallets.md) | |
 | Gift card support | Bank Identification Number Dynamics 365 gift card, Stored Value Solutions (SVS), and Givex gift cards. Gift cards can be purchased and redeemed in an order. | [Gift cards](dev-itpro/gift-card.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/d365-commerce-internal-gift-cards-november-16-2021) |
-| Fraud protection | Dynamics 365 Fraud Protection help you prevent fraudulent activity and identify places where fraud might be unnoticed. | [Fraud protection](dev-itpro/dfp.md) | [Video](https://www.youtube.com/watch?v=j_1nEiq3LfM) |
+| Fraud protection | Dynamics 365 Fraud Protection helps you prevent fraudulent activity and identify places where fraud might be unnoticed. | [Fraud protection](dev-itpro/dfp.md) | [Video](https://www.youtube.com/watch?v=j_1nEiq3LfM) |
 
 ## Taxes and charges
 
@@ -163,9 +163,10 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](retail-peripherals-overview.md) ||
-| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | <p>[Hardware station](retail-peripherals-overview.md) ||
-| POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Simulator](dev-itpro/retail-peripheral-simulator.md) | |
+| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](retail-peripherals-overview.md)<br/><br/>[Network peripherals](dev-itpro/network-peripherals.md) ||
+| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | [Hardware station](retail-peripherals-overview.md) ||
+| POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Peripheral simulator](dev-itpro/retail-peripheral-simulator.md) | |
+| POS health check | Point of sale users can test the connectivity and functionality of peripherals such as printers, payment terminals, and bar code scanners. Health check can also test a POS terminal's network performance and its connectivity to Commerce Scale Unit and Retail Server. | [Health check](pos-healthcheck.md) | [Video: Health check for Dynamics 365 Commerce point of sale](https://www.youtube.com/watch?v=3BaU9ciY-1o&ab_channel=MicrosoftDynamics365Community) |
 
 ## Receipts
 

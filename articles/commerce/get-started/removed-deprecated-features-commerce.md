@@ -2,7 +2,7 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/23/2022
+ms.date: 03/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,6 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 # Removed or deprecated features in Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 
@@ -27,6 +28,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Commerce 10.0.33 release
+
+### Accessibility Insights integration within site builder
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Similar results can be achieved with less latency by installing the Accessibility Insights browser plug-in from https://accessibilityinsights.io/. The reasons for deprecation are low feature usage, maintenance costs, and the availability of a more efficient browser plug-in. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Site builder |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Functionality will be removed in spring 2023 and replaced with in-tool instructions to guide users to the Accessibility Insights browser plug-in. |
 
 ## Features removed or deprecated in the Commerce 10.0.29 release
 

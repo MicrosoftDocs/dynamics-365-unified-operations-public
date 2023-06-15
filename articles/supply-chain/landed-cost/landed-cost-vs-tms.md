@@ -56,7 +56,7 @@ TMS and Landed cost don't share reference data for entities such as cost setup, 
 The following reports don't work in conjunction with the goods in transit feature that Landed cost provides:
 
 - [Intercompany goods in transit totals report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Intercompany goods in transit totals report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Intercompany goods in transit transactions report](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-transactions-report-intercompanygoodsintransittransactions)
 
 These reports assume that goods are put in transit as soon as you issue a sales packing slip, and that they are taken into inventory from transit upon receipt. However, goods in transit aren't processed in this way. Therefore, if you use the goods in transit and intercompany features together, the results for both these reports will be incorrect.
 

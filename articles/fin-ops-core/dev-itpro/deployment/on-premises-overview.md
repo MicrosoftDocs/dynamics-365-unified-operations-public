@@ -12,9 +12,11 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.custom: 23401,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # On-premises deployment overview
 

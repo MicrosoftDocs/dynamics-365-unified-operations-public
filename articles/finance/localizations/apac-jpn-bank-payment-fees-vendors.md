@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
 # ms.search.industry: 

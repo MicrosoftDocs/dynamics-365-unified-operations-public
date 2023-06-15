@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-03
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 21631
 ---
 
 # Trial mode without Azure DevOps

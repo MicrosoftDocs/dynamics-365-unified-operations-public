@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.industry: Retail
 ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace

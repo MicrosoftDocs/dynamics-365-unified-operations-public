@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31 
 ms.dyn365.ops.version: Platform update 41
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Set up and deploy on-premises environments (Platform update 41 through 55)
