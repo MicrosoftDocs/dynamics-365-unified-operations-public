@@ -43,22 +43,22 @@ Collections coordinator summary requires the latest hotfix on Dynamics 365 Finan
 ## Configure Collections coordinator summary
 This article describes how to configure **Collections coordinator summary**.
 
-**Collections coordinator summary** is currently supported in the USA. It is only available to users configured to use English-United States in Dynamics 365 Finance. The AI-generated text displays on the **Collections coordinator** workspace.
+**Collections coordinator summary** is currently supported in the United States. It is only available to users configured to use English-United States in Dynamics 365 Finance. The AI-generated text displays on the **Collections coordinator** workspace.
 To complete the following procedures and successfully configure the **Collections coordinator summary**, you must have the following privileges:
- - The **System Administrator** and **System Customizer** roles in Power Platform admin center
+ - The **System administrator** and **System customizer** roles in Power Platform admin center
  - The **System administrator** role in Microsoft Dynamics 365 Finance
  - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
 
-## Required configurations in Power Platform Admin Center
-1.	In the Power Platform Admin Center, select the Microsoft Power Platform environment to install the application. 
+## Configure Power Platform admin center
+1.	In the Power Platform admin center, select the Microsoft Power Platform environment to install the application. 
 2.	Select **Resources** > **Dynamics 365 installed apps**. 
 3.	Find **Finance and Operations Virtual entity**. The status should be **Update available**. Select the **...** and **Update**. 
 4.	Accept the terms of service and then select **Update**. 
 5.	You can check the status of the update. During the update, the status is **Installing**. On completion, the status will change to **Installed**
 
-## Install the Dataverse app Copilot in Microsoft Dynamics 365 Finance
+## Install Copilot 
 1. In Partner Center, find the **Copilot in Microsoft Dynamics 365 Finance** solution. 
-2. Accept the terms and conditions and then select **Install**. This starts the installation of **Copilot in Microsoft Dynamics 365 Finance** in the selected environment.
+2. Accept the terms and conditions and select **Install**. The **Copilot in Microsoft Dynamics 365 Finance** will be installed in the selected environment.
 3. Go to the environment page for the selected environment. 
 4. Select **Dynamics 365 apps** to check the status of the installation. The status is **Installing** and after completion, the status is **Installed**.
 
@@ -74,14 +74,18 @@ Explicit consent must be granted for Dynamics 365 finance and operations to impe
 >[!Note] 
 >For more information, see Managed feature settings - Power Platform.
 
-## Enable Collections coordinator summary in Dynamics 365 Finance
-Collections coordinator summary is enabled through **Feature management**. In the **Feature management** workspace, on the **All** tab, enter **(Preview) Collections coordinator summary**. Select the “Learn more” link to learn more about the AI terms. Select **Enable**. 
+## Enable Collections coordinator summary 
+To enable the **Collections coordinator summary**, go to:
+1. Go to **Feature management** workspace, on the **All** tab. 
+2. Enter **(Preview) Collections coordinator summary**. 
+3. Select **Learn more** to learn more about the AI terms. 
+4. Select **Enable**. 
 
 >[!Note] 
 >The **(Preview) Collections coordinator workspace** must also be enabled for this functionality to display this workspace.
 
 ## Summary text
-The AI-generated content appears below the data points on the **Collections coordinator** workspace as soon as a customer is selected in the **Customer account** field. Azure OpenAI is used to generate the results based on data in Dynamics 365 finance and the provided prompts. All calculations are done through Dynamics 365 finance code. The summary is based on the amounts for a customer’s payment history for the past year, outstanding debt amount and revenue year-to-date.
+The AI-generated content appears below the data points on the **Collections coordinator** workspace as soon as a customer is selected in the **Customer account** field. Azure OpenAI is used to generate the results based on data in Dynamics 365 finance and the provided prompts. All calculations are done through Dynamics 365 finance. The summary is based on the amounts for a customer’s payment history for the past year, outstanding debt amount and revenue year-to-date.
 
 ## Create reminder email
 Select **Create reminder email** to have an AI-generated email drafted in the format of a reminder letter. When selected, a dialog box displays the message **A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?”**. Select **No** to close the dialog and return to the workspace. Select **Yes** to open your default email service with an email draft. Azure OpenAI services incorporates robust filters and safeguards to help prevent the generation of offensive, destructive or abusive content and will not be created using this feature.
@@ -102,11 +106,11 @@ What are the Collections coordinator summary intended uses?
 How was Collections coordinator summary evaluated? What metrics are used to measure performance? 
  - The AI-generated summary was evaluated based on the existing Dynamics 365 Finance data. All calculations are performed in Dynamics 365 Finance, not through Azure OpenAI. All emails are based on Dynamics 365 Finance data and verified against the data in the testing process. 
 
-What are the limitations of Collections coordinator summary? How can users minimize the Collections coordinator summary’s limitations when using the system? 
+What are the limitations of Collections coordinator summary? How can users minimize the Collections coordinator summary’s limitations? 
  - If the same customer exists in multiple legal entities in Dynamics 365 Finance, the data on the workspace is only returned based on the legal entity that the Collections coordinator is using. It may not give you the full picture of the customer account across all entities. 
  
 What operational factors and settings allow for effective and responsible use of Collections coordinator summary? 
- - All processing of data is configured using the prompt inside Dynamics 365 Finance and can't be changed or modified. All data that's AI-generated comes from the customer data inside Dynamics 365 Finance. There's no text that can be entered by the end user and processed through Azure OpenAI. Only the customer name and Finance data, found directly in Finance, are processed through Azure OpenAI and returned as a summary or used to generate a draft email. 
+ - All processing of data is configured using the prompt inside Dynamics 365 Finance and can't be changed or modified. All data that's AI-generated comes from the customer data inside Dynamics 365 Finance. No text that can be entered by the end user and processed through Azure OpenAI. Only the customer name and Finance data, found directly in Finance, are processed through Azure OpenAI and returned as a summary or used to generate a draft email. 
 
 
 
