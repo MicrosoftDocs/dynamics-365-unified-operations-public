@@ -2,10 +2,10 @@
 title: Upgrade to the party and global address book model
 description: This article describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 03/10/2023
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
@@ -47,6 +47,7 @@ The following prerequisites must be in place before you can upgrade to the party
 + You must have an [Azure subscription](https://portal.azure.com/).
 + You must have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 + You must be an existing dual-write customer.
++ If the party and global address book solution is installed, you must disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead. To disable the plugin, contact support. 
 
 ## Prepare for the upgrade
 
