@@ -47,6 +47,6 @@ used to generate a draft email which you can edit before sending.
 
 ## See also
 
-- [Collection coordinator summary](CollectionsCoordinatorSummary.md)
+- [Collection coordinator summary](accounts-receivable/CollectionsCoordinatorSummary.md)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
