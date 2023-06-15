@@ -54,7 +54,7 @@ To complete the following procedures and successfully configure the Collections 
 ## Install the Dataverse app Copilot in Microsoft Dynamics 365 Finance
 1. In Partner Center find the **Copilot in Microsoft Dynamics 365 Finance** solution. 
 2. Accept the terms and conditions and then select Install. This will start the installation of **Copilot in Microsoft Dynamics 365 Finance** in the selected environment.
-3.Go to the environment page for the select environment, click **Dynamics 365 apps** to check the status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**.
+3. Go to the environment page for the select environment, click **Dynamics 365 apps** to check the status of the installation. During installation the status is **Installing**. On completion, the status will change to **Installed**.
 
 ## Dataverse consent for user impersonation
 Explicit consent must be greanted for Finance and Operations to impersonate Dataverse users. 
@@ -68,7 +68,7 @@ Explicit consent must be greanted for Finance and Operations to impersonate Data
 > [Note] For more information see Managed feature settings - Power Platform.
 
 ## Enable Collections coordinator summary in Dynamics 365 Finance
-Collections coordinator summary is enabled through **Feature management**. In the Feature management workspace, on the **All** tab, enter **(Preview) Collections coordinator summary**. Select the “view terms” link to learn more about the AI terms. Select **Enable**. 
+Collections coordinator summary is enabled through **Feature management**. In the Feature management workspace, on the **All** tab, enter **(Preview) Collections coordinator summary**. Select the “Learn More” link to learn more about the AI terms. Select **Enable**. 
 
 > [Note] The **(Preview) Collections coordinator workspace** must also be enabled for this functionality to work because it displays on this workspace.
 
