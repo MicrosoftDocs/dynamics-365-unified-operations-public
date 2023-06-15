@@ -96,3 +96,8 @@ Once the majority of the order changes have been addressed the purchaser may rev
 
 The tile Impacted downstream orders gives a summary of the downstream impact. The link Show in the tile opens the filtered view where the purchaser can focus on those impacts and take action.
 
+In this view the purchaser will begin the analysis from the perspective of down stream impact and identify the purchase order changes that are causing the impact. The purchaser can then take action on those purchase orders.
+
+![Workspace showing filtering for most pressing downstream impact by purchase order changes](media/po-change-review-downstream-impact.png)
+
+A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact, the requested date in the downstream order. This way users can identify the most eminent impact and take action by communicating with downstream stakeholders who might reach out to impacted customers and  replan downstream orders.
