@@ -1071,6 +1071,7 @@ CURRENCYCODE | > | msdyn_isocurrencycode |
 This template synchronizes data between finance and operations apps and Dataverse.
 
 Reversed source filter:
+
 - Version 1.x.x.x: msdyn_isreadytosync eq true <br>(to be used in the context of Supply Chain solution without Project Operations or Field Services solution installed.)
 - Version 2.x.x.x: (msdyn_linetype ne 690970000 or msdyn_linetype eq null) and msdyn_isreadytosync eq true <br>(to be used in the context of Supply Chain solution and Project Operations or Field Services solution installed.)
 
@@ -1217,6 +1218,7 @@ SALESQUOTATIONOWNERSHIP | >><br>`BasedOnOrigin` : `776160000`<br>`SCM` : `776160
 This template synchronizes data between finance and operations apps and Dataverse.
 
 Reversed source filter:
+
 - Version 1.x.x.x: None <br>(to be used in the context of Supply Chain solution without Project Operations or Field Services solution installed.)
 - Version 2.x.x.x: msdyn_linetype ne 690970000 or msdyn_linetype eq null <br>(to be used in the context of Supply Chain solution and Project Operations or Field Services solution installed.)
 
