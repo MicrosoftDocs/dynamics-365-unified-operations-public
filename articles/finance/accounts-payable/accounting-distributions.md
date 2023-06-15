@@ -4,7 +4,7 @@
 title: Accounting distributions
 description: This article provides information about accounting distributions and describes available processing options.
 author: sunfzam
-ms.date: 09/17/2020
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
 
-Accounting distributions are a program-wide capability that is used and extended by each source document, such as a purchase order, vendor invoice, expense report, and free text invoice. By default, a default accounting distribution is generated for each source document line and monetary amount, and is conditionally enabled for modification. 
+Accounting distributions are a capability that is used and extended by each source document, such as a purchase order, vendor invoice, expense report, and free text invoice. By default, a default accounting distribution is generated for each source document line and monetary amount, and is conditionally enabled for modification. 
 
 > [!NOTE] 
 > Some documents also support header document monetary amounts, such as charges for orders and invoices. 

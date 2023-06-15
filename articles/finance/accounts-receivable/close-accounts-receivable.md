@@ -4,7 +4,7 @@
 title: Close Accounts receivable
 description: The following article lists the pages that support the close Accounts receivable business process.
 author: ShivamPandey-msft
-ms.date: 10/26/2017
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
