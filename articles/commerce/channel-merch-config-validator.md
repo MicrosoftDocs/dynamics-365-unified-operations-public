@@ -37,26 +37,26 @@ The channel merchandising configuration validator provides a wide range of capab
 
 ## Create validation for a new channel
 
-To create validation for a new channel, follow these steps.
+To create validation for a new channel in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **New**.
-1. In the **Channel Id** field, enter or select a value (for example, "AW Business online store").
+1. In the **Channel ID** field, enter or select a value (for example, "AW Business online store").
 1. Select **Validate**.
-1. Wait for the progress to become 100% and the validation phase to show **Completed**. 
-1. After validation has completed, select **Channel name** to view a detailed summary of the validation results. There are two viewing options: **By entity** and **By rules**. 
-    - **By entity** it shows you **all entity records validated** with number of messages, errors and warnings. To view details, select **Show details** to load an additional grid with details of messages, errors and warnings and you can filter by type of the issue. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration. 
-    - **By rules** shows you each rule that was validated with corresponding number of messages, errors and warnings. To view details, select **Show details**. Select **Show details** to load an additional grid with details of messages, errors, and warnings. You can filter by issue type. From the **Show details** view, you can directly navigate to the entity record to fix the necessary configuration. 
-1. After fixing the necessary configurations across all entities, you can navigate back to the **Validation summary** view and select **Validate failed** to rerun the validation for the previously failed rules. 
+1. Wait for the validation progress reach 100%, and for the validation phase to show as **Completed**. 
+1. After validation is complete, select the **Channel name** to view a detailed summary of the validation results. There are two viewing options: **By entity** and **By rules**. 
+    - **By entity** shows you all validated entity records with messages, errors, and warnings.  
+    - **By rules** shows you each rule that was validated with corresponding number of messages, errors and warnings
+1. Select **Show details** to load an additional grid with details of messages, errors and warnings that you can filter by issue type. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration.
+1. After fixing the necessary configurations across all entities, you can navigate back to the **Validation summary** view and select **Validate failed** to rerun validation for the previously failed rules. 
 
 ## Create validation for all channels
 
-To create validation for all channels, follow these steps.
+To create validation for all channels in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
-1. Select **Create all**. This action will create a validation for each channel and you will notice the **channel grid** on this workspace getting populated with list of channels. 
-1. Next, in channel grid, select the channels for which you would like to initiate the validation process. 
-1. If you want to run validation for all channels, from the grid header, select the checkbox that selects all channels. 
+1. Select **Create all**. This action creates a validation process for each channel. The channel grid becomes populated with the list of channels. 
+1. In channel grid, select the channels for which you would like to initiate the validation process. If you want to run validation for all channels, on the grid header, select the checkbox that selects all channels. 
 1. Select **Validate**. 
 
 ## Rules
