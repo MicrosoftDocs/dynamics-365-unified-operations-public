@@ -1,8 +1,8 @@
 ---
 title: Transparency note for Collections coordinator summary
 description: This transparency note provides information about the AI technology used in Dynamics 365 Finance, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 6/16/2023
-ms.custom:  - transparency-note
+ms.date: 6/15/2023
+ms.custom:  transparency-note
 ms.topic: article
 author: JodiChristiansen
 ms.author: jchrist
