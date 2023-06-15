@@ -10,11 +10,10 @@ ms.reviewer: twheeloc
 ---
 
 
-
-# Transparency notes for [Product]
+# Transparency notes for Dynamics 365 Finance 
 
 [!INCLUDE[transparency-note-intro](../includes/transparency-note-intro.md)]
 
 [!INCLUDE[transparency-note-features](../includes/transparency-note-features.md)]
 
-- [Collections coordinator summary](/accounts-receivable/CollectionsCoordinatorSummary.md)
+[Collections coordinator summary](accounts-receivable/CollectionsCoordinatorSummary.md)
