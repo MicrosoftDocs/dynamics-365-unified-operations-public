@@ -79,8 +79,9 @@ The following table shows the mapping of **Processing Status** between Sales and
 | Invoiced            | Invoiced        | Invoiced                          |
 | Cancelled           | Cancelled       | Cancelled                         |
 
-**Note**, with the dual write solution for supply chain version XXXX and Supply Chain Management 10.0.32?, changes are made to the **status map**. The changes depend on whether map for the CDS Sales order headers entity or the map for the Dynamics 365 Sales order headers entity is running. 
-When the map for the CDS Sales order headers entity is running, then this is the resulting status map:
+Note that Dual-write Supply chain solution version XXXX<!--Update version information--> and Supply Chain Management version 10.0.32?<!--Confirm version number--> introduces changes to the status map. The changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. 
+
+The following table shows the resulting status map if the map for the *CDS sales order headers* entity is running.
 
 | Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
 |---------------------|-----------------------------------|--------------------------------------------|-----------------|
@@ -93,7 +94,7 @@ When the map for the CDS Sales order headers entity is running, then this is the
 | Invoiced            | Invoiced                          | Invoice                                    | Invoiced        |
 | Cancelled           | Cancelled                         | Not applicable                             | Canceled        |
 
-When the map for the  Dynamics 365 Sales order headers entity is running, and additional processing status is introduced with the below resulting status map:
+If the map for the *Dynamics 365 Sales order headers* entity is running, an additional processing status (*Delivered and Partially Invoiced*) is introduced. The following stable shows the resulting status map.
 
 | Processing Status                 | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
 |-----------------------------------|-----------------------------------|--------------------------------------------|-----------------|
@@ -106,8 +107,6 @@ When the map for the  Dynamics 365 Sales order headers entity is running, and ad
 | Delivered and Partially Invoiced  | Delivered                         | Invoice                                    | Fulfilled       |
 | Invoiced                          | Invoiced                          | Invoice                                    | Invoiced        |
 | Cancelled                         | Cancelled                         | Not applicable                             | Canceled        |
-
-
 
 ## Setup
 
