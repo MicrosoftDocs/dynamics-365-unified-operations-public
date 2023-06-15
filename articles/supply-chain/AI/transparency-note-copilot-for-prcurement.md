@@ -25,7 +25,7 @@ The system takes as input the changes to confirmed purchase orders and identifie
 
 ## What are the system’s capabilities?
 
-The system summarizes changes to purchase orders such as changed quantities and confirmed delivery dates. It uses the generative AI DaVinci model to generate a summary of the changes in natural language as well as content for email and Teams conversation.  
+The system summarizes changes to purchase orders such as changed quantities and confirmed delivery dates. It uses the generative AI model Text-davinci-003 to generate a summary of the changes in natural language as well as content for email and Teams conversation.  
 
 ## What is the system’s intended use?
 
