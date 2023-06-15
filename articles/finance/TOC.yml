@@ -5134,11 +5134,11 @@
       - name: Settle transactions using CustTrans::settleTransaction
         href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
   - name: Responsible AI
-      items:
-      - name: Overview
-        href: /finance/transparency-note.md
-      - name: Transparency note for Collections coordinator summary
-        href: /accounts-receivable/transparency-note-collections-workspace.md              
+    items:
+   - name: Overview
+     href: /finance/transparency-note.md
+   - name: Transparency note for Collections coordinator summary
+     href: /accounts-receivable/transparency-note-collections-workspace.md              
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 
