@@ -2,9 +2,9 @@
 # required metadata
 
 title: Channel merchandising configuration validator
-description: This article describes how to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters. 
+description: This article describes how to use the channel merchandising configuration validator to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters. 
 author: ashishmsft
-ms.date: 03/14/2023
+ms.date: 06/15/2023
 ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace 
 audience: Application User, Developer, IT Pro
@@ -20,20 +20,20 @@ ms.search.validFrom: 2016-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters.
+This article describes how to use the channel merchandising configuration validator to find missing and invalid configurations for products, categories, and attributes by channel in Microsoft Dynamics 365 Commerce headquarters.
 
-Channel merchandising configuration validator is designed to identify and address incorrect and missing configurations related to products, categories, catalogs and attributes that may result in complications when selling products in eCommerce and POS Commerce channels. By utilizing the configuration validator, you can efficiently resolve these issues and streamline your backoffice operations.
+The Dynamics 365 Commerce channel merchandising configuration validator is designed to identify and address incorrect and missing configurations related to products, categories, catalogs, and attributes that may result in complications when selling products in e-commerce and point of sale (POS) Commerce channels. You can use the channel merchandising configuration validator to efficiently resolve issues and streamline your operations in Commerce headquarters.
 
 ![Channel merchandising configuration validator in headquarters.](media/channel-merch-config-validator.png)
 
 ## Capabilities
 
-This feature offers a wide range of capabilities to optimize your backoffice operations:
+The channel merchandising configuration validator provides a wide range of capabilities that can optimize your operations in headquarters:
 
 - **Proactive validation** - The configuration validator proactively identifies and reports missing or invalid configurations related to products, categories, variants, attributes, and catalogs.
-- **Validation Across Multiple Locales** - It provides comprehensive validation checks across all locales, ensuring all merchandising configurations are thoroughly assessed for a selected channel.
-- **Deep Linking** - Upon identifying invalid configurations, the feature creates deep links to the specific form that allow users to quickly navigate to the source of the issue and resolve it efficiently, streamlining the correction process.
-- **Extensive Rule Set** - With a comprehensive set of validation rules, including over 40 distinct rules, the Channel merchandising configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
+- **Validation across multiple locales** - The configuration validator executes comprehensive validation checks across all locales, ensuring that all merchandising configurations are verified for a selected channel.
+- **Deep linking** - After identifying invalid configurations, the configuration validator streamlines the correction process by creating deep links to specific headquarters forms, enabling you to quickly navigate to the sources of the issues and resolve them efficiently.
+- **Extensive rule set** - With a comprehensive set of over 40 distinct validation rules, the configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
 
 ## Create validation for a new channel
 
