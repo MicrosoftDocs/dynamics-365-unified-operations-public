@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 # ms.search.industry: 
@@ -106,7 +105,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Save record                                   | Alt+S or Ctrl+S   |
 | Revert (restore)                              | Ctrl+Shift+F5     |
 | Data refresh                                  | Shift+F5          |
-| Move to the visible first field on the page   | Alt+Shift+F       |
+| Move to the visible first field on the page   | Ctrl+Shift+F      |
 | Toggle edit mode                              | F2                |
 | Attach a document                             | Ctrl+Shift+A      |
 | Export to Excel                               | Ctrl+Shift+E      |

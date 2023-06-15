@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 09/02/2022
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -18,28 +18,30 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: osfaixat
 ms.search.validFrom: 2017-12-05
 ms.dyn365.ops.version: 7.3
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Update the local agent
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.1.0, which was released in June 2022.
+This article explains how to update the local agent. The latest version of the local agent is version 3.2.1, which was released in June 2023.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
+| 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation | March 2023 | Not applicable |
 | 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |June 2022 | Not applicable |
-| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | Not applicable |
+| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | November 2021 | June 30, 2023 |
 | 2.7.2               | This version includes a fix for deploying older application versions. | October 2021 | June 30, 2023 |
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. | October 2021 | June 30, 2023 |
 | 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. | August 2021 | June 30, 2023 |
@@ -56,6 +58,23 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.2.1
+- This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage.
+- Upgrades the Azure Storage libraries.
+- Adds logging for 7zip operations.
+
+## What's new in local agent 3.2.0
+- Local agent 3.2.0 uptakes a new Service Fabric Explorer SDK and runtime.
+- This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll look at bringing back checkpoints once the Azure Storage libraries support it again.
+- Artifact management logic has been improved, and re-downloading existing artifacts should no longer take place.
+- Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
+- The MSAL libraries are now used to authenticate with Microsoft Azure Active Directory (Azure AD).
+- Detection of the local agent being deprecated with clear messaging in Service Fabric Explorer.
+
+> [!IMPORTANT]
+> This release is only compatible with 8.2+ Service Fabric clusters.
+> This release requires that a new local agent configuration file be downloaded from Lifecycle Services.
 
 ## What's new in local agent 3.1.0
 
@@ -179,7 +198,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Local agent expiration dates
 
-After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you will have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future, so that customers have time to upgrade to a newer version.
+After the date when a local agent becomes expired, it can no longer communicate with Lifecycle Services. Therefore, you'll have to update your local agent to a supported version. Going forward, we plan to support only a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point, the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future, so that customers have time to upgrade to a newer version.
 
 > [!NOTE]
 > A released local agent version will be supported for at least six months.

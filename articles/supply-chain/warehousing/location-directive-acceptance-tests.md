@@ -21,7 +21,7 @@ Acceptance tests let you define a set of *given-when-then* tests to verify that 
 Acceptance tests provide two main benefits:
 
 - **Faster initial setup:** You can verify the outcomes of your location directives without having to go through the regular warehouse processes and inspect the work creation history log.
-- **Lower maintenance:** You will be able to have more confidence when you modify your location directives later, because you can have the impact of each change automatically validated by running your defined acceptance tests.
+- **Lower maintenance:** You'll be able to have more confidence when you modify your location directives later, because you can have the impact of each change automatically validated by running your defined acceptance tests.
 
 Acceptance tests for location directives have no operational impact on the warehouse.
 
@@ -65,10 +65,11 @@ Follow these steps to set up an acceptance test.
     > [!IMPORTANT]
     > The settings on the **Given** FastTab don't influence the actual inventory levels in the warehouse. Instead, they simulate conditions that are in effect only temporarily, during test execution.
 
-1. On the **When** FastTab, specify what you want to test. The values that you enter are the inputs to the location directive engine. This approach is much simpler than building manual tests by creating orders. Set the following fields:
+1. On the **When** FastTab, specify what you want to test. The values that you enter are the inputs to the location directive engine. This approach is simpler than building manual tests by creating orders. Set the following fields:
 
     - **Work order type** – Specify the type of order to simulate (for example, *Sales orders* or *Purchase orders*).
-    - **Work type** – Specify the work type to simulate. Typically, you will select *Pick* or *Put*.
+    - **Work type** – Specify the work type to simulate. Typically, you'll select *Pick* or *Put*.
+    - **Order number** – Specify the order number to use during the test. This information can be useful if the location directive query has ranges related to the order table.
     - **Disposition code** – Specify the disposition code that is used to handle return orders.
     - **Directive code** – Specify the directive code that drives the location directives.
     - **Item number** – Specify the item to locate.
@@ -81,6 +82,7 @@ Follow these steps to set up an acceptance test.
     - **Exact location** – Select a precise location. The test will be marked as passed if this location is the result of the location directive.
     - **Location matching regular expression** – Enter a regular expression that will be validated against the resulting location, even if the resulting location is blank (no result). The test will be marked as passed if the regular expression matches the name of the resulting location. For more information about regular expressions, see [.NET regular expressions](https://aka.ms/regex).
     - **Location with profile** – Select a location profile. The test will be marked as passed if the resulting location has this profile.
+    - **Location in zone** – Select a location zone. The test will be marked as passed if the resulting location has this zone.
 
 1. Select **Save** to save your test. The **Results** FastTab stores a record of any test results for each test. For information about how to run tests and interpret the results, see the next section.
 
@@ -126,4 +128,4 @@ To troubleshoot your location directives and acceptance tests, follow these step
     - In the **Name** column, select the name of a test to open that test on the **Location directive acceptance tests** page. There, you can inspect and adjust the test as you require.
     - Select **Run tests after change** to turn on and off the setting that will automatically run all tests each time that you change a location directive. Use this functionality to provide immediate feedback about the impact of changes as you make them.
 
-1. Based on the results that are indicated by the coverage view and test log, adjust your tests and/or location directives until they produce the expected results for each test.
+1. Based on the results indicated by the coverage view and test log, adjust your tests and/or location directives until they produce the expected results for each test.

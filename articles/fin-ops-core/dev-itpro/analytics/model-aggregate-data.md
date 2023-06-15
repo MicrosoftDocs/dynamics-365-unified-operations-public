@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 10234
 ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
 ---
 
@@ -62,7 +61,7 @@ If you have already imported the Fleet management tutorial project, skip to the 
 5. Press Ctrl+F5 to run the project and load the data.
 
 ## Model an aggregate measurement for rental charges
-Often, when a user asks for additional information, you get a request for one or more new reports. Imagine that the manager of a rental car company has called and asked for a report. The manager is interested in finding out how the rental business is performing. The manager wants a report that shows rental revenue by month. You soon find out that the manager is interested in a breakdown of rental revenues. The manager wants to know whether the rental revenue is high in cases where they have sold additional services, for example, car seats, GPS, re-fueling, as opposed to the base rental charge. As it turns out, the manager suspects that specific customer groups are driving revenue up, and this is why the manager wanted the report in the first place. The manager insists on adding Customer group to the report. Because the revenue must be considered in relation to the number of rentals, the manager doesn’t want a few large corporate rentals to skew her analysis. You both agree that the number of rentals needs to be shown along with revenue. We could represent this requirement as a set of business questions using a matrix. Rows indicate the **measures** (or numbers) and the columns indicate the **dimensions** (or slicers). An "X" in the intersection between a measure and a dimension indicates that the measure needs to be "grouped by" the dimension.
+Often, when a user asks for additional information, you get a request for one or more new reports. Imagine that the manager of a rental car company has called and asked for a report. The manager is interested in finding out how the rental business is performing. The manager wants a report that shows rental revenue by month. You soon find out that the manager is interested in a breakdown of rental revenues. The manager wants to know whether the rental revenue is high in cases where they have sold additional services, for example, car seats, GPS, re-fueling, as opposed to the base rental charge. As it turns out, the manager suspects that specific customer groups are driving revenue up, and this is why the manager wanted the report in the first place. The manager insists on adding Customer group to the report. Because the revenue must be considered in relation to the number of rentals, the manager doesn’t want a few large corporate rentals to skew the analysis. You both agree that the number of rentals needs to be shown along with revenue. We could represent this requirement as a set of business questions using a matrix. Rows indicate the **measures** (or numbers) and the columns indicate the **dimensions** (or slicers). An "X" in the intersection between a measure and a dimension indicates that the measure needs to be "grouped by" the dimension.
 
 | Item                  | Rental date | Customer group | Rental charge type |
 |-----------------------|-------------|----------------|--------------------|

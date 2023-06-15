@@ -4,12 +4,13 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 05/26/2023
 ms.topic: overview
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.custom: ["260594", "intro-internal"]
+ms.custom: ["260594"]
+ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
 ms.author: anpurush
@@ -37,7 +38,7 @@ Before you try to use customer order functionality in POS, make sure that you co
 
 ### Configure modes of delivery
 
-To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in Commerce headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
+To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
 
 ![Modes of delivery page.](media/customer-order-modes-of-delivery.png)
 
@@ -52,9 +53,9 @@ In Commerce version 10.0.12 and later, organizations can define whether the ware
 
 ### Configure channel settings
 
-When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in Commerce headquarters.
+When you work with customer orders in POS, you must consider some of the settings of the store channel. These settings are found on the **Stores** page in headquarters.
 
-- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, we encourage the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
+- **Warehouse** – This field indicates the warehouse that will be used when decrementing inventory for cash and carry and customer pickup orders tied to this store. As a best practice, Microsoft encourages the use of unique warehouses for each store channel, to prevent conflicting business logic issues across stores.
 - **Shipping Warehouse** - This field indicates the warehouse that will be used when decrementing inventory for customer orders to be shipped from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** has been enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer utilized, since the user will pick the specific warehouse to ship the order from when the order is created.
 - **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
@@ -64,10 +65,13 @@ When you work with customer orders in POS, you must consider some of the setting
 
 ### Set up customer order parameters
 
-Before you try to create customer orders in POS, you must configure the appropriate parameters in Commerce headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
+Before you try to create customer orders in POS, you must configure the appropriate parameters in headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
 
 - **Default order type** – You can specify the order type that is assigned by default to customer orders that are created in POS. These customer orders can be either sales orders or quotation orders. Regardless of the default order type, users can still create both sales orders and customer orders from POS.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
+     > [!NOTE]
+     > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage using the **Deposit override** operation.
+
 - **Pickup mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are configured for pickup in POS.
 - **Carryout mode of delivery** – Specify the mode of delivery that should be applied to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines will be picked up or shipped, and other lines will be carried out by the customer immediately.
 - **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, specify the amount of that charge.
@@ -125,14 +129,12 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 Retail orders that are created in either the online or store channel can be recalled and edited through POS as required.
 
 > [!IMPORTANT]
-> Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in Commerce headquarters.
+> Not all retail orders can be edited through the POS application. Orders that are created in a call center channel can't be edited through POS if the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel. To ensure correct payment processing, orders that originated in a call center channel and that use Enable order completion functionality must be edited through the call center application in headquarters.
 
 > [!NOTE]
-> We recommend that you don't edit orders and quotations in POS that are created by a non-call center user in Commerce headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will re-price them.
-
+> Microsoft recommends that you don't edit orders and quotations in POS that are created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine will reprice them.
 
 In version 10.0.17 and later, users can edit eligible orders through the POS application, even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature is not enabled, or if you're using version 10.0.16 or earlier, users will only be able to edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. The option to disable this capability for specific stores can be configured through the **Functionality profile** under the **General** FastTab.
-
 
 1. Select **Recall order**.
 2. Use **Search** to enter filters to find the order, and then select **Apply**.
@@ -174,14 +176,47 @@ After an order is created, the items will be picked up by the customer from a st
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created in POS in either synchronous mode or asynchronous mode. If you notice performance issues or user delays when you create customer orders in POS, consider turning on asynchronous order creation.
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. Microsoft recommends that you use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.
 
 ### Enable customer orders to be created in asynchronous mode
 
-1. In Commerce headquarters, on the **Functionality profiles** page, select the functionality profile that corresponds to the store that you want to configure.
-2. On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
+To enable customer orders to be created in asynchronous mode, follow these steps.
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they're pulled and created as retail transactions in Commerce headquarters from the Commerce Pull (P) jobs. The corresponding sales orders for the retail transactions are created when **Synchronize orders** is run either manually or through a batch process.
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**. 
+1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
+1. On the **General** FastTab, select from the following configuration options:
+
+    - **Create customer order in async mode**
+    - **Use realtime service for order creation with async backup**
+
+> [!NOTE]
+> The **Use realtime service for order creation with async backup** option is available in Commerce version 10.0.33 and later.
+
+The **Create customer order in async mode** option always creates the order in a batch process. POS immediately completes the transaction by using the confirmation number for the order, but it takes a few minutes for the order to be created in headquarters (after the relevant jobs have been run). The jobs that are required to create the order are the **P-0001 (Channel transactions)** job and the **Synchronize orders** job. The confirmation number can be used to recall the order for fulfillment and editing scenarios. 
+
+The **Use realtime service for order creation with async backup** option can only be enabled if the **Create customer order in async mode** option is already enabled. The **Use realtime service for order creation with async backup** option first tries to create the order using the Retail Transaction Service (RTS). If that attempt fails, the order is created using the same batch process described above. Most of the time the order is created as quickly as it would be via synchronous order creation. However, with this configuration POS uses the confirmation number to immediately complete the order transaction and doesn't wait for the RTS call to be completed. 
+
+With the Commerce version 10.0.35 release, asynchronous customer orders can be cancelled even if the corresponding sales order has not been created in headquarters. To enable this capability, you must turn on the **Enable asynchronous order cancellation** feature in the **Feature management** workspace. 
+
+> [!NOTE]
+> The **Enable asynchronous order cancellation** feature is currently marked as a preview feature because it hasn't yet been validated against localization features. 
+
+The asynchronous order cancellation experience is the same as the experience for cancelling an existing customer order. However, even though a store associate cancels the order and refunds the deposit to the customer, the original order is cancelled only after it has been created in headquarters. To ensure that the system automatically cancels the original order once it has been created in headquarters, you must run the batch jobs mentioned below at predefined intervals.
+
+To create and schedule the batch jobs that ensure that **Enable asynchronous order cancellation** feature works correctly, follow these steps.
+
+1. Go to **System administration \> Inquiries \> Batch jobs**.
+1. On the **Batch job** page, create the following two batch jobs:
+    1. Configure a job to run the **RetailDocumentOperationMonitorBatch** class.
+    1. Configure a job to run the **RetailDocumentOperationProcessingBatch** class.
+1. Schedule the new batch jobs to run on a recurring basis. For example, set the schedule so that the jobs run every five minutes.
+
+If you experience any issues when cancelling an order, you can view the issues in the **Incomplete async order cancellations \> Sales order processing and inquiry** workspace. There are two types of issues that can prevent an original sales order getting cancelled: *permanent* issues, or *transient* issues (also known as retriable issues). Permanent issue scenarios include cases where an order is fulfilled and so can't be cancelled, or where an order is partially fulfilled (and partially cancelled), but the customer has been refunded the full deposit. Transient issues include cases where an original order hasn't yet been created, so the corresponding cancellation transaction hasn't yet been processed. The system automatically retries to process lines associated with transient errors, but you must manually handle lines associated with permanent errors. Once an order has been fixed manually, you can set the troubleshooting status of a transaction to indicate that no further troubleshooting is needed.
+
+For scenarios where organizations can't enable asynchronous customer orders and must use synchronous customer orders, if order creation takes too long so that the POS times out, or if the order gets into a bad state, you can use the **Force complete transaction** operation (released in version 10.0.35) to complete the order asynchronously. Since the organization doesn't want the asynchronous customer order, you can use the asynchronous order cancellation process mentioned above to cancel the order and then try creating a new order. To summarize, the **Force complete transaction** operation provides a way for you to get out from a state where order creation is failing but you can't void the transaction. 
+
+> [!NOTE]
+> The **Force complete transaction** operation can only be used if the **Enable asynchronous order cancellation** feature is enabled. 
 
 ## Additional resources
 

@@ -3,7 +3,7 @@ title: Reopen and edit a vendor consolidated invoice
 description: This article explains how to reopen and modify a confirmed vendor consolidated invoice.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

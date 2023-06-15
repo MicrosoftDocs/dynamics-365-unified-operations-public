@@ -12,7 +12,6 @@ ms.search.region: Russia
 ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.custom: 27231
 ms.search.industry: 
 ---
 

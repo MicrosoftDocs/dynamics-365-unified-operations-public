@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 10.0.x
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # In-place upgrade process for on-premises environments

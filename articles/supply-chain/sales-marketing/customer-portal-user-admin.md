@@ -98,7 +98,7 @@ The following table shows which sales orders the users in each web role can see 
 | Customer&nbsp;Y Orderer:&nbsp;May | Yes | No | No | No | No |
 
 > [!NOTE]
-> Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the Customer portal.)
+> Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system but can't see that order in the Customer portal, because May is an unauthorized user. (Additionally, May must have placed the order through some channel other than the Customer portal.)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,7 +5,7 @@ title: Transfer materials with kanban jobs
 description: This procedure focuses on executing a withdrawal kanban job to transfer materials. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

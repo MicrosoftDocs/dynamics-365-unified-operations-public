@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ---
 # Extensibility home page

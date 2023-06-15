@@ -3,7 +3,7 @@ title: Configure depreciation profile and posting profile for additional depreci
 description: Use this procedure to learn how to configure a depreciation profile and a posting profile for special depreciation.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -17,7 +17,6 @@ audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: zezhangzhao
 # ms.tgt_pltfrm: 
-ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 # ms.search.industry: 

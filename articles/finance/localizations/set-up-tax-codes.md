@@ -5,7 +5,7 @@ title: Set up tax codes
 description: This article explains how to set up tax codes in the Tax Calculation Service. 
 author: wangchen
 ms.date: 11/30/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
 
@@ -89,6 +89,9 @@ If the net amount is 10.00, the Duty 1 amount is 1.00 (10.00 × 10 percent), and
 If you select **By quantity** in the **Calculation origin** field, the tax amount is calculated as a fixed amount per unit and multiplied by the quantity that is entered on the document line. The amount per unit is specified on the **Rates** FastTab.
 
 For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
+
+> [!NOTE] 
+> Unit conversion isn't supported for **By quantity** calculation. However you can create multiple tax codes in RCS for different units and maintain converted tax rates by quantity.
 
 ### By margin
 

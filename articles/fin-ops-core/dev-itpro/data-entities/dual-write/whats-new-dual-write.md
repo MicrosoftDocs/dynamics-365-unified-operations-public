@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/02/2022
+ms.date: 05/20/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,9 +18,52 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## May 2023 release
+
+The May release of the Dual-write Global Address Book solution 3.5.1.87 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contact for **Customer**, **Vendor**, and **Associate organizations** tab fix. | General availability |
+| Bug fix | "Object reference not set to an instance of an object" error when the party postal address is updated. | General availability |
+| Bug fix | **Add existing** button in the subgrid for multiple entities. | General availability |
+| Bug fix | **County** field isn't correctly moved to the customer address in customer engagement apps when it's set in finance and operations apps. | General availability |
+
+## March 2023 release 
+
+The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid march.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Require additional exception handling to PostCommit plugin. | General availability |
+|Bug fix|	When updating the postal address page, the street field wasn't concatenating correctly when the street 2 field wasn't populated. |General availability|
+|Bug fix|	Fixed the GAB plugin for creation of account. The **Search name** field in Dataverse won't be overwritten at CREATE if the search name is different than the name.|	General availability|
+|Bug fix	|Prevent the deactivation of primary postal address and customer addresses in Customer engagement to match functionality with finance and operations and avoid data corruption.|	General availability|
+|Bug fix|	When creating an account with the same party and filling a different electronic address on the **Details** tab, duplicate electronic addresses were created.|	General availability|
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+|Party|	Yes|	3.5.1.55	|3.5.1.76|
+|Dynamics365GABExtended	|Yes|	3.5.1.55	|3.5.1.76|
+|Dynamics365GABDualWriteEntityMaps|	Yes|	3.5.1.55|	3.5.1.76|
+|Dynamics365GABPartyAnchor	|Yes	|3.5.1.55	|3.5.1.76|
+|Dynamics365GABPartyCommon	|Yes|	3.5.1.55	|3.5.1.76|
+
+
+
+## February 2023 release 
+
+The February release of [Dual-write core solution 1.0.40.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. 
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug | Handle Azure resource throttling during live-sync. | GA |
+
 ## January 2023 release 
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. The rollout has started and will complete in January.
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
 
 ## November 2022 release 
 

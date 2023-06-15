@@ -17,7 +17,6 @@ audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 21761
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks

@@ -10,7 +10,6 @@ ms.search.region: Global
 ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 13211
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ---
 
@@ -18,11 +17,11 @@ ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to subscribe to the preview/partner offer and deploy an environment. The subscription that you create gives you a Microsoft Online Services test tenant and a Microsoft Dynamics Lifecycle Services (LCS) project where you can deploy an environment. This article will also help you set up additional users in your Microsoft Online Services tenant and gain experience with service administration capabilities. Here are the skills that you will learn:
+This article explains how to subscribe to the preview/partner offer and deploy an environment. The subscription that you create gives you a Microsoft Online Services test tenant and a Microsoft Dynamics 365 Lifecycle Services project where you can deploy an environment. This article will also help you set up additional users in your Microsoft Online Services tenant and gain experience with service administration capabilities. Here are the skills that you will learn:
 
 - Subscribe, and create a new Microsoft Online test tenant.
-- Navigate to LCS projects.
-- Use various features of LCS.
+- Navigate to Lifecycle Services projects.
+- Use various features of Lifecycle Services.
 - Add users to Microsoft Azure Active Directory (Azure AD) and the client.
 - View resources in your subscription email.
 
@@ -32,7 +31,7 @@ This article explains how to subscribe to the preview/partner offer and deploy a
 - **Subscription** – A subscription gives you an online cloud environment and experience. It also lets you see how customizations that you develop can be deployed to the cloud.
 - **Microsoft Azure Active Directory** – The cloud environment includes Azure AD. Azure AD helps you manage users, groups, security roles, and licenses for online applications, much as you manage them for on-premise environments.
 - **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
-- **Developers and administrators** – Developers and administrators are users who also have access to LCS that lets them manage projects and environments. These users are also end users.
+- **Developers and administrators** – Developers and administrators are users who also have access to Lifecycle Services that lets them manage projects and environments. These users are also end users.
 - **Organizational account** – Users receive Azure AD credentials. These credentials are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft 365 and other Microsoft cloud services. Users sign in by using their organizational account.
 
     > [!IMPORTANT]
@@ -59,9 +58,12 @@ This article explains how to subscribe to the preview/partner offer and deploy a
 
     [![You're ready to go.](./media/wizardprompt.png)](./media/wizardprompt.png)
 
-## Start a new project in LCS
+## Start a new project in Lifecycle Services
 
-To use LCS to manage your environments, you must create a new project.
+> [!NOTE]
+> Prospect projects is available only in Global Lifecycle Services (https://lcs.dynamics.com). The preview license is not available in Local Lifecycle Services. For more information about Lifecycle Services in local geographies, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](../deployment/deployment-options-geo.md).
+
+To use Lifecycle Services to manage your environments, you must create a new project.
 
 1. Go to <https://lcs.dynamics.com/Logon/Index>.
 2. Select **Sign in**.
@@ -79,9 +81,9 @@ To use LCS to manage your environments, you must create a new project.
 
     ![New project.](./media/projectworkspace.jpg)
 
-## Add users to LCS
+## Add users to Lifecycle Services
 
-You're already set up as a user of your LCS project. If you've also added other Microsoft 365 users, you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These LCS users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the project page in LCS.
+You're already set up as a user of your Lifecycle Services project. If you've also added other Microsoft 365 users, you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These Lifecycle Services users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the project page in Lifecycle Services.
 
 1. Scroll to the right, and then, in the **More tools** section, select the **Project users** tile.
 2. In the upper left, select the plus sign (**+**) to add a new user.
@@ -102,13 +104,13 @@ You can create environments in two ways:
 - Deploy to Microsoft cloud services (Azure).
 - Download a local virtual hard disk (VHD).
 
-Start on the project page in LCS.
+Start on the project page in Lifecycle Services.
 
 1. In the **Environments** section, select the plus sign (**+**). The **Microsoft Azure setup** dialog box appears.
 2. Enter your Azure subscription ID. You can find your Azure subscription ID in Azure Portal (<https://ms.portal.azure.com/>), under **Settings** in the lower left.
 3. Select **Next**.
-4. Download the Azure Management Certificate to a local folder on your computer, and then upload it to Azure Management Portal by going to **Settings** &gt; **Management Certificates**. This certificate will enable LCS to communicate with Azure on your behalf.
-5. Return to LCS, and select **Next**.
+4. Download the Azure Management Certificate to a local folder on your computer, and then upload it to Azure Management Portal by going to **Settings** &gt; **Management Certificates**. This certificate will enable Lifecycle Services to communicate with Azure on your behalf.
+5. Return to Lifecycle Services, and select **Next**.
 6. Select the Azure region to deploy in. The **West US** region will have the fastest deployments, but it's important that you select a data center that is close to where you plan to use this system.
 7. Select **Connect**.
 8. In the list of available topologies, select the topology to deploy. You can select either the **Download** link to download the VHD or **Next** to deploy on Azure. Azure is the preferred path.
@@ -127,15 +129,15 @@ Start on the project page in LCS.
 13. Select the environment to view details about the deployment status. The first deployment will require a few hours, but each subsequent deployment will be much faster.
 14. When the deployment status changes to **Deployed**, select **Login** to connect to the client, or select the name of the VM to connect to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL and the information that you require to connect to the environment via Remote Desktop.
 
-## Use the features of LCS
+## Use the features of Lifecycle Services
 
-LCS is the starting point for performing online administrative activities. Here are some of these activities:
+Lifecycle Services is the starting point for performing online administrative activities. Here are some of these activities:
 
 - Deploy VMs on Azure.
 - Access materials.
 - Access downloads of tools and resources.
 
-### Explore the LCS project
+### Explore the Lifecycle Services project
 
 1. Review the methodology, and complete the tasks and phases as you progress through the life cycle. The phases and task information lets you view tools and resources that are available throughout your enterprise resource planning (ERP) experience.
 
@@ -143,7 +145,7 @@ LCS is the starting point for performing online administrative activities. Here 
 
     ![Tiles.](./media/pic9.jpg)]
 
-    The available tiles include various tools and services in LCS. They also include the following additional tiles:
+    The available tiles include various tools and services in Lifecycle Services. They also include the following additional tiles:
 
     - **My subscription** – The Microsoft 365 subscription management portal is where you can view and work with your online subscriptions. By selecting **User and Groups** in the left navigation section of the page, you can also manage your online users.
 

@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["77523", "intro-internal"]
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl

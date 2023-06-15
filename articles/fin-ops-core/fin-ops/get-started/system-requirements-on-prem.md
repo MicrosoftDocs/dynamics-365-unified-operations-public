@@ -18,14 +18,14 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peterfriis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # System requirements for on-premises deployments

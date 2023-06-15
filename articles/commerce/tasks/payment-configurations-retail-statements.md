@@ -5,7 +5,7 @@ title: Payment configurations for Retail statements
 description: This procedure demonstrates configurations for Commerce store payment methods, which affect how statements get created and posted. 
 author: jashanno
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

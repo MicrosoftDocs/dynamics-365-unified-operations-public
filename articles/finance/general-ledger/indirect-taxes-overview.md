@@ -19,7 +19,7 @@ ms.reviewer: kfend
 
 
 # ms.tgt_pltfrm: 
-ms.custom: ["13111", "intro-internal"]
+ms.collection: get-started
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 # ms.search.industry: 

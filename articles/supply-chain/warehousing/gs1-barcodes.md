@@ -2,15 +2,14 @@
 title: GS1 bar codes
 description: This article describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
 author: Mirzaab
-ms.date: 03/21/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.25
+ms.reviewer: kamaybac
+ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
+ms.topic: how-to
+ms.date: 05/26/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # GS1 bar codes
@@ -19,36 +18,36 @@ ms.dyn365.ops.version: 10.0.25
 
 Warehouse workers often have to complete several tasks when they use a mobile device scanner to register movements of an item, palette, or container. These tasks can include both scanning bar codes and manually entering information on the mobile device. The bar codes use a company-specific format that you define and manage by using Microsoft Dynamics 365 Supply Chain Management.
 
-GS1 bar codes for shipping labels were developed to provide a global standard for the exchange of data between companies. They are available in both linear (1D) symbologies (bar code formats), such as GS1-128, and 2D symbologies, such as GS1 DataMatrix and GS1 QR codes. GS1 bar codes not only encode data but also let you use a predefined list of *application identifiers* to define the meaning of that data. The GS1 standard defines the data format and the various kinds of data that it can be used to encode. Unlike older bar code standards, GS1 bar codes can have multiple data elements. Therefore, a single bar code scan can capture several types of product information, such as the batch and the expiration date.
+GS1 bar codes for shipping labels were developed to provide a global standard for the exchange of data between companies. They're available in both linear (1D) symbologies (bar code formats), such as GS1-128, and 2D symbologies, such as GS1 DataMatrix and GS1 QR codes. GS1 bar codes not only encode data but also let you use a predefined list of *application identifiers* to define the meaning of that data. The GS1 standard defines the data format and the various kinds of data that it can be used to encode. Unlike older bar code standards, GS1 bar codes can have multiple data elements. Therefore, a single bar code scan can capture several types of product information, such as the batch and the expiration date.
 
 GS1 support in Supply Chain Management dramatically simplifies the scanning process in warehouses where pallets and containers are labeled by using bar codes in GS1 format. Warehouse workers can extract all the required information through a single scan of a GS1 bar code. By eliminating the need to do multiple scans and/or manually enter information, GS1 bar codes help reduce the time that is associated with tasks. At the same time, they also help improve accuracy.
 
-Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The application identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels will take a unified form.
+Logistics managers must set up the required list of application identifiers and associate each of them with the appropriate mobile device menu items. The application identifiers can then be used across warehouses as a global setting for moving and packing purposes. Therefore, all shipping labels take a unified form.
 
 Unless otherwise stated, this article uses the term *bar code* to refer to both linear (1D) bar codes and 2D bar codes.
 
 ## The GS1 bar code format
 
-The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the article. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) that are published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
+The GS1 General Specifications specify which symbologies can be used for GS1 bar codes and how to encode the data in the bar code. This section provides a short introduction to the article. For full details, see the [GS1 General Specifications](https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf) published by GS1. The GS1 specifications document is regularly updated, and the information that it provides is up to date with GS1 General Specifications release 22.0.
 
 GS1 bar codes use the following symbologies:
 
 - **Linear or 1D bar codes** – GS1-128 and GS1 DataBar
 - **2D bar codes** – GS1 DataMatrix, GS1 QR Code, and GS1 Dotcode
 
-Note that there are special mentions of GS1 in GS1-128, which is a special case of the ordinary Code-128 linear bar code, GS1 DataMatrix, and GS1 QR Code. The difference between the GS1 version and the non-GS1 version is the presence of a special character (FNC1) as the first character in the bar code data. The presence of an FNC1 character indicates that the data in the bar code should be interpreted according to the GS1 specification.
+GS1 is mentioned in GS1-128, which is a special case of the ordinary Code-128 linear bar code, GS1 DataMatrix, and GS1 QR Code. The difference between the GS1 version and the non-GS1 version is the presence of a special character (FNC1) as the first character in the bar code data. The presence of an FNC1 character indicates that the data in the bar code should be interpreted according to the GS1 specification.
 
-The data in the bar code itself consists of multiple data elements, each of which is identified by an application identifier at the start of the field. Usually, the data is also presented under the bar code in a human-readable format, where the application identifier is shown in parenthesis. Here is an example: `(01) 09521101530001 (17) 210119 (10) AB-123`. This bar code contains three elements:
+The data in the bar code itself consists of multiple data elements, each of which is identified by an application identifier at the start of the field. Usually, the data is also presented under the bar code in a human-readable format, where the application identifier is shown in parenthesis. Here's an example: `(01) 09521101530001 (17) 210119 (10) AB-123`. This bar code contains three elements:
 
 - **Application identifier 01** – The GS1 global trade item number (GTIN) of the item.
 - **Application identifier 17** – The expiration date.
 - **Application identifier 10** – The batch number.
 
-For each element, the data might have either a predefined length or a variable length. There is a fixed list of application identifiers that have predefined lengths. All other application identifiers have variable length, and the GS1 application identifier list specifies the maximum length and format of data. For example, application identifier 01 has a predefined length of 16 characters (two for the application identifier itself and then 14 for the GTIN), and application identifier 17 has a predefined length of eight characters (two for the application identifier itself and then six for the date). However, application identifier 10 has two numbers for the application identifier itself and then up to 20 alphanumeric characters.
+For each element, the data might have either a predefined length or a variable length. There's a fixed list of application identifiers that have predefined lengths. All other application identifiers have variable length, and the GS1 application identifier list specifies the maximum length and format of data. For example, application identifier 01 has a predefined length of 16 characters (two for the application identifier itself and then 14 for the GTIN), and application identifier 17 has a predefined length of eight characters (two for the application identifier itself and then six for the date). However, application identifier 10 has two numbers for the application identifier itself and then up to 20 alphanumeric characters.
 
-When elements are put together, if an element follows a variable length element, a separator character must be used. This separator can be either the special FNC1 character or the group separator character (a non-printable character that has ASCII code 29 and hexadecimal code 1D). The separator should not be used after the last element. Although the separator also should not be used after elements that have predefined length, its presence isn't a critical error.
+When elements are put together, if an element follows a variable length element, a separator character must be used. This separator can be either the special FNC1 character or the group separator character (a nonprintable character that has ASCII code 29 and hexadecimal code 1D). The separator shouldn't be used after the last element. Although the separator also shouldn't be used after elements that have predefined length, its presence isn't a critical error.
 
-In the bar code data from the previous example of a bar code that contains application identifiers 01, 17, and 10, the data in a Code-128, QR Code, or DataMatrix symbol will be encoded as `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123` (application identifiers are shown in bold). As a best practice, any element that has variable length should be put at the end, to eliminate the need for an additional group separator character. However, the bar code can also have a different order of elements, where the separator is mandatory. Here is an example: `<FNC1>`**`01`**`09521101530001`**`10`**`AB-123<GS>`**`17`**`210119`.
+In the bar code data from the previous example of a bar code that contains application identifiers 01, 17, and 10, the data in a Code-128, QR Code, or DataMatrix symbol will be encoded as `<FNC1>`**`01`**`09521101530001`**`17`**`210119`**`10`**`AB-123` (application identifiers are shown in bold). As a best practice, any element that has variable length should be put at the end, to eliminate the need for an extra group separator character. However, the bar code can also have a different order of elements, where the separator is mandatory. Here's an example: `<FNC1>`**`01`**`09521101530001`**`10`**`AB-123<GS>`**`17`**`210119`.
 
 ### Dates and decimal numbers
 
@@ -74,9 +73,9 @@ To scan GS1 bar codes, warehouse workers use a scanner that is built into or con
 For Supply Chain Management to correctly recognize and decode GS1 bar codes, the hardware scanner or supporting software must be configured to perform the following actions:
 
 - Add a prefix to the scanned bar codes, so that the system can recognize a GS1 bar code.
-- Convert the non-printable ASCII group separator character (ASCII code 29 or hexadecimal code 1D) to a printable character, such as a tilde (~).
+- Convert the nonprintable ASCII group separator character (ASCII code 29 or hexadecimal code 1D) to a printable character, such as a tilde (~).
 
-Although you can add any prefix to the scanned bar code, one option is to add an ISO/IEC 15424 symbology identifier, also known as an *AIM identifier*. This three-character identifier starts with `]`, then has one character that identifies the symbology that is used, and then has a number that is used as a further modifier. For example, the AIM identifier `]C1` specifies a Code 128 bar code (because of the character `C`), and the modifier `1` specifies that there is an FNC1 character in the first position of the data. On the other hand, `]C0` is a Code 128 bar code that has any other character as the first character of the data.
+Although you can add any prefix to the scanned bar code, one option is to add an ISO/IEC 15424 symbology identifier, also known as an *AIM identifier*. This three-character identifier starts with `]`, then has one character that identifies the symbology that is used, and then has a number that is used as a further modifier. For example, the AIM identifier `]C1` specifies a Code 128 bar code (because of the character `C`), and the modifier `1` specifies that there's an FNC1 character in the first position of the data. On the other hand, `]C0` is a Code 128 bar code that has any other character as the first character of the data.
 
 The following five symbology identifiers correspond to GS1 bar codes that have application identifier elements:
 
@@ -86,7 +85,7 @@ The following five symbology identifiers correspond to GS1 bar codes that have a
 - `]Q3` – QR Code (`Q`) Model 2 symbol with FNC1 in first position (`3`), also known as GS1 QR Code.
 - `]J1` – GS1 DotCode.
 
-If you use these identifiers, compatibility with non-GS1 bar codes requires that the scanners or scanning software be configured to remove any identifiers that don't correspond to the GS1 identifiers. For example, if you scan a "normal" Code 39 bar code, the prefix `]A0` will be added. Because the system won't understand this prefix as one of the GS1 prefixes, it will interpret it as a data and produce unexpected results.
+If you use these identifiers, compatibility with non-GS1 bar codes requires that the scanners or scanning software be configured to remove any identifiers that don't correspond to the GS1 identifiers. For example, if you scan a "normal" Code 39 bar code, the prefix `]A0` will be added. Because the system won't understand this prefix as one of the GS1 prefixes, it will interpret it as data and produce unexpected results.
 
 > [!NOTE]
 > For convenience, version 2.0.17.0 and later of the Warehouse Management mobile app will remove any AIM prefixes that aren't included in the previous list. This behavior supports cases where you can configure the scanner to add the AIM prefix but not to remove the unwanted prefixes.
@@ -103,12 +102,12 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 ## Turn on GS1 features for your system
 
-To use GS1 barcodes, the *Scan GS1 barcodes* feature must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Scan GS1 barcodes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use GS1 bar codes, the *Scan GS1 barcodes* feature must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Scan GS1 barcodes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature (as of Supply Chain Management version 10.0.32, this feature is on by default). This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
 
 - It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
-- It doesn't require that you to set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.
+- It doesn't require that you set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.
 - It lets you more easily configure decimal application identifiers by using the letter *n* to match any number. For example, you can configure just one application identifier (*310n*) instead of separate application identifiers (*3101*, *3102*, *3103*, and so on).
 - It fixes an issue where incorrectly encoded data is interpreted as field data.
 - It comes as a separate class that can be reused in other contexts and enables an extensibility point to be used to manipulate scanned data before the flow fields are filled in.
@@ -120,11 +119,15 @@ The **Warehouse management parameters** page provides a few settings that establ
 To set up global GS1 options, follow these steps.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
-1. On the **Bar codes** FastTab, set the following fields:
+1. On the **General** tab, on the **Bar codes** FastTab, set the following fields:
 
     - **FNC1 Character**, **Datamatrix character**, and **QR code character** – Specify characters that should be interpreted as a prefix for each type of GS1 bar code.
     - **Group separator** – Specify the character that replaces the ASCII group separator character.
     - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on for your system.
+    - **Unknown application identifier policy** – Select one of the following values to specify what the system should do if it encounters an unknown application identifier when it parses a GS1 bar code:
+
+        - *Error* – The system will report an error and won't scan any part of the bar code. To scan this type of bar code, you must add a matching entry in the GS1 application identifier table.
+        - *Skip the data element* – The system will continue to parse the bar code without reporting an error or a warning. The data from the unknown application identifier won't be available to the application for further processing.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.
@@ -212,7 +215,7 @@ To customize the generic GS1 setup, follow these steps.
 
 ## <a name="policies-for-menus"></a>Set up GS1 policies to be to mobile device menu items
 
-The purpose of the GS1 standard is to enable workers to load several values when they scan a single bar code one time. To achieve this purpose, logistics managers must set up GS1 policies that tell the system how to interpret multi-value bar codes. Later, you can assign policies to mobile device menu items to control how a bar code will be interpreted when workers scan it while they are using a specific menu item.
+The purpose of the GS1 standard is to enable workers to load several values when they scan a single bar code one time. To achieve this purpose, logistics managers must set up GS1 policies that tell the system how to interpret multi-value bar codes. Later, you can assign policies to mobile device menu items to control how a bar code will be interpreted when workers scan it while they're using a specific menu item.
 
 If no GS1 policy is assigned to a menu item, the system can capture only a single value. This value is applied to the mobile app input that is selected when the worker takes the scan, as specified by the generic GS1 setup. If a GS1 policy is assigned to the menu item, the system still uses the generic GS1 setup to map the first bar code value to the selected field. However, it can then capture additional field values, as specified by the applicable policy.
 
@@ -231,7 +234,7 @@ To load the standard application identifiers, follow these steps.
 ### Set up custom specific GS1 policies
 
 > [!WARNING]
-> Some GS1 policies might not work with every mobile flow that you use. When you configure custom GS1 policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow, In this way, you can determine whether the flow behaves as you expect.
+> Some GS1 policies might not work with every mobile flow that you use. When you configure custom GS1 policies, you must test the mobile device flow by using different pieces of information that are scanned at different points in the flow. In this way, you can determine whether the flow behaves as you expect.
 
 To set up and customize your GS1 policies, follow these steps.
 
@@ -245,12 +248,19 @@ To set up and customize your GS1 policies, follow these steps.
 
     - **Policy name** – Enter a name for the policy.
     - **Description** – Enter a short description of the policy.
+    - **Field value capturing method** – Select one of the following values to specify how the individual bar code values should be handled as part of the mobile device flow:
+
+        - *Process immediately* – The application identifier values will immediately be passed to the next mobile device step, even though the recorded values aren't required for capture as part of a later mobile device step. Depending on the recorded values, this value can cause unexpected mobile device flow processing.
+        - *Save as default* – The application identifier values will be stored throughout the whole mobile device menu item flow and will be used only in mobile device steps that require the defined fields. Therefore, the exact mobile device step field control names must be specified as part of the GS1 policy setup, to link the application identifier values from the bar codes to the Warehouse Management mobile app fields. For more information about how to find the correct field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
+
+    - **Auto submit** – This option is available only when the **Field value capturing method** field is set to *Save as default*. Set it to *Yes* to automatically submit the mobile device step if all the fields are set. 
 
 1. On the FastTab below the header, map field names to application identifiers as required for the current policy. Use the buttons on the toolbar to add or remove rows as you require. For each row, set the following fields:
 
-    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation.
+    - **Field** – Select or enter the mobile app input field that the incoming value should be assigned to. The value isn't the display name that workers see. Instead, it's the key name that is assigned to the field in the underlying code. The default setup provides a collection of fields that are likely to be useful, and includes intuitive key names for each field and matching programmed functionality. However, you might have to talk to your development partners to find the correct selections for your implementation. For more information about how to look up field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
     - **Application identifier** – Select the applicable application identifier, as defined on the **GS1 application identifiers** page. The identifier establishes how the bar code will be interpreted and stored as a value for the named field. After you select an application identifier, the **Description** field shows the description of it.
-    - **Sorting** – Each multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows are processed in. The row that has the lowest sorting value will be processed first.
+    - **Sorting** – This column is available only when the **Field value capturing method** field is set to *Process immediately*. Every multi-value bar code includes a series of application identifiers, each of which is followed by a value. The applicable GS1 policy identifies which application identifier is mapped to each database field. However, if a bar code uses the same application identifier more than once, the system uses the order in which application identifiers appear in the code to map them to fields. For rows that share an application identifier with one or more other rows, use this field to establish the order that the matching rows should be processed in. The row that has the lowest sorting value will be processed first.
+    - **Allow overwriting** – This column is available only when the **Field value capturing method** field is set to *Save as default*. Select the checkbox to save the application identifier value that comes from the bar code, even though a value already exists as part of the mobile device step. Only field values that are enabled for editing will be overwritten.
 
 > [!NOTE]
 > For bar codes that include more than one identical application identifier, you *must* use the **Sorting** field to establish the order of the fields.
@@ -287,7 +297,7 @@ This example applies to a system where the GS1 options are set up in the followi
     |---|---|---|
     | ItemId | 01 | GTIN |
 
-- On the **GS1 policy** page, there is policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
+- On the **GS1 policy** page, there's policy where the **Policy name** field is set to *Purchase receiving*. This policy includes the following lines.
 
     | Field | Application identifier | Description | Sorting |
     |---|---|---|---|
@@ -295,7 +305,7 @@ This example applies to a system where the GS1 options are set up in the followi
     | InventBatchId | 10 | Batch number | 0 |
     | Qty | 30 | Receiving quantity | 0 |
 
-- On the **Mobile device menu items** page, there is a menu item that is named *Purchase receiving*. Its **GS1 policy** field is set to *Purchase receiving*.
+- On the **Mobile device menu items** page, there's a menu item that is named *Purchase receiving*. Its **GS1 policy** field is set to *Purchase receiving*.
 
 After goods for a purchase order arrive at the warehouse, the worker follows these steps.
 
@@ -313,3 +323,21 @@ Because of the settings that are established for this example, the system parses
 | ExpDate | 17 | 220215 | The date format is YYMMDD. Therefore, the expiry date is February 15, 2022. |
 
 The receipt is then registered, and the relevant database values are entered after the single scan.
+
+> [!TIP]
+> If GS1 bar codes that contain multiple values don't work as part of a Warehouse management mobile app flow, check the following settings:
+>
+> - On the **GS1 generic setup** and **GS1 application identifiers** pages, make sure that the settings are aligned with the bar codes that you're using and with the GS1 policy that's assigned on the **Mobile device menu item** page.
+> - On the **GS1 policy** page, select the policy that you're having trouble with, and check the following settings:
+>
+>    - Set the **Field value capturing method** field to *Save as default*.
+>    - In the grid, make sure that all the field names are aligned with the step ID input control names for the actual mobile device. For more information about how to look up field names, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md). For some typical examples, see the table after this list.
+>
+> - On the **Warehouse management parameters** page, on the **General** tab, on the **Bar codes** FastTab, set the **Unknown application identifier policy** field to *Skip the data element*.
+>
+> The following table shows some typical examples where the step ID field mapping fails, so that a scanned GS1 bar code can't be processed.
+>
+> | Used field name | Correct field name  | Process                   |
+> |-----------------|---------------------|---------------------------|
+> | ItemId          | ProductConfirmation | Item confirmation step    |
+> | CatchWeight     | OutboundWeight      | Catch weight picking step |

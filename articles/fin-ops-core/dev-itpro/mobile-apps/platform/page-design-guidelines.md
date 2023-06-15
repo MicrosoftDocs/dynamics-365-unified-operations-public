@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-ms.custom: intro-internal
+ms.collection: get-started
 ---
 
 # Page design guidelines

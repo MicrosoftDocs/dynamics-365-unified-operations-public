@@ -4,7 +4,7 @@
 title: Create vendor payments by using a payment proposal
 description: This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
-ms.date: 04/04/2018
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,7 +44,7 @@ The payment proposal query contains various tabs, each of which has different op
 -   **Create payments without invoice preview** – If this option is set to **Yes**, payments will be created immediately on the **Vendor payments** page. The **Payment proposal** page will be skipped. Therefore, payments will be created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
 
 ## Advanced options
-- **Check vendor balance** – If this option is set to **Yes**, the system verifies that a vendor doesn’t have a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
+- **Check vendor balance** – If this option is set to **Yes**, the vendor is verified that there isn't a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
 - **Delete negative payments** – This option works differently, depending on whether payments are made for individual invoices or for the sum of invoices that meet the payment criteria. This behavior is defined on the method of payment.
 - **Payment for each invoice** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, only the invoice is selected for payment. The existing payment isn't settled against the invoice. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment. A payment is created for the payment, and a refund (negative payment) is created for the payment.
 - **Payment for sum of invoices** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount. The only exception occurs if the sum results in a refund. In this case, neither the invoice nor the payment is selected. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.
@@ -67,11 +66,11 @@ The payment proposal query contains various tabs, each of which has different op
 | 3075   | 1003    | June 15      | 250.00         | June 29  |                    | 0.00                 |
 | 3100   | 1004    | June 17      | 100.00         | July 17  | July 1             | 1.00                 |
 
-On July 1, April pays vendors. She uses a payment proposal to complete this task more efficiently.
+On July 1, April pays vendors and uses a payment proposal to complete this task more efficiently.
 
 ### Option 1: By cash discount
 
-April selects **Cash discount** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Cash discount** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1002, because the discount date of July 4 is in the range of payment dates.
 -   1004, because the discount date of July 1 is in the range of payment dates.
@@ -83,7 +82,7 @@ The following invoices aren't included in the proposal:
 
 ### Option 2: By due date
 
-April selects **Per due date** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Per due date** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1003, because the due date of June 29 is in the range of payment dates.
 
@@ -95,7 +94,7 @@ The following invoices aren't included in the proposal:
 
 ### Option 3: By due date and cash discount
 
-April selects **Due date and cash discount** as the proposal type. She enters a date range of June 26 to July 10. The following invoices are included in the proposal:
+April selects **Due date and cash discount** as the proposal type and enters a date range of June 26 to July 10. The following invoices are included in the proposal:
 
 -   1003, because the due date of June 29 is in the range of payment dates.
 -   1002, because the discount date of July 4 is in the range of payment dates.

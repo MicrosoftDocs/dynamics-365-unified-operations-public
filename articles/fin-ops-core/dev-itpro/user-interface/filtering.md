@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 28721
 ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
 ---
 

@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 # ms.search.industry: 
@@ -51,7 +50,7 @@ The following cash discount dates and amounts are available for this invoice.
 | 7/25/2020          | 0.00                 | 1,000.00                       |
 
 ## Payment on July 2
-On July 2, April wants to pay 300.00 against this invoice. She creates a one-off payment by using the **Payment journal** page in Accounts payable. She adds a line for vendor 3054 and enters a payment amount of **300.00**. April then opens the **Settle transactions** page, so that she can mark the invoice that will be settled. She updates the value in the **Amount to settle** field to **300.00** and notices that the value in the **Cash discount amount to take** field is changed to **6.12**. Because this payment is made in the first discount period, a discount of 2 percent is taken.
+On July 2, April wants to pay 300.00 against this invoice, and creates a one-off payment by using the **Payment journal** page in Accounts payable. April adds a line for vendor 3054 and enters a payment amount of **300.00**. April then opens the **Settle transactions** page, to mark the invoice that will be settled. April updates the value in the **Amount to settle** field to **300.00** and notices that the value in the **Cash discount amount to take** field is changed to **6.12**. Because this payment is made in the first discount period, a discount of 2 percent is taken.
 
 | Mark | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -67,7 +66,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -6.12     |
 
-Because a cash discount is available, April wants to change the payment amount so that the total settled amount is 300.00 for both the payment and the cash discount. She changes the value in the **Amount to settle** field to **294.00** and notices that the value in the **Cash discount amount to take** field is changed to **6.00**.
+Because a cash discount is available, April wants to change the payment amount so that the total settled amount is 300.00 for both the payment and the cash discount. April changes the value in the **Amount to settle** field to **294.00** and notices that the value in the **Cash discount amount to take** field is changed to **6.00**.
 
 | Mark | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency | Currency | Amount to settle |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -83,7 +82,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -6.00     |
 
-April posts the payment. On the **Vendor transactions** page, she can view the transactions. She sees that 300.00 has been applied to the invoice. This amount includes a discount of 6.00. Therefore, the remaining balance is 700.00.
+April posts the payment. On the **Vendor transactions** page, April sees that 300.00 has been applied to the invoice. This amount includes a discount of 6.00. Therefore, the remaining balance is 700.00.
 
 | Voucher    | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance | Currency |
 |------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -92,7 +91,7 @@ April posts the payment. On the **Vendor transactions** page, she can view the t
 | DISC-10060 | 7/2/2020  |         | 6.00                                 |                                       | 0.00    | USD      |
 
 ## Payment on July 8
-On July 8, April makes an additional payment against the invoice. To enter the amount, she opens the **Settle transactions** page and then clicks the **Cash discount** tab. She sees the dates and amounts for the two cash discounts that are available. Because this payment is made in the second discount period, a discount of 1 percent, or 5.00, is available. This amount is calculated as half the 1-percent discount on 1,000.00, or half of 10.00.
+On July 8, April makes an additional payment against the invoice. To enter the amount, April opens the **Settle transactions** page and then clicks the **Cash discount** tab. April sees the dates and amounts for the two cash discounts that are available. Because this payment is made in the second discount period, a discount of 1 percent, or 5.00, is available. This amount is calculated as half the 1-percent discount on 1,000.00, or half of 10.00.
 
 | Cash discount date | Cash discount amount | Amount in transaction currency |
 |--------------------|----------------------|--------------------------------|

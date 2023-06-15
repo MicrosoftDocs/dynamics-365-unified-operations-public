@@ -1,3 +1,4 @@
+items:
 - name: Development and administration for finance and operations apps
   items:
   - name: Development and administration for finance and operations apps
@@ -14,12 +15,12 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Platform updates for version 10.0.32 (March 2023)
-          href: get-started/whats-new-platform-updates-10-0-32.md
-        - name: Platform updates for version 10.0.31 (February 2023)
-          href: get-started/whats-new-platform-updates-10-0-31.md
-        - name: Platform updates for version 10.0.30 (November 2022)
-          href: get-started/whats-new-platform-updates-10-0-30.md
+        - name: Platform updates for version 10.0.35 (July 2023)
+          href: get-started/whats-new-platform-updates-10-0-35.md
+        - name: Platform updates for version 10.0.34 (June 2023)
+          href: get-started/whats-new-platform-updates-10-0-34.md 
+        - name: Platform updates for version 10.0.33 (April 2023)
+          href: get-started/whats-new-platform-updates-10-0-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -194,6 +195,40 @@
           href: data-entities/config-key-entities.md
         - name: Configuration data packages
           href: data-entities/configuration-data-packages.md
+        - name: Built-in entities
+          items:
+          - name: Import customers
+            items:
+              - name: Customer definitions entity
+                href: data-entities/entity-customer-definitions-customerbase.md
+              - name: Customers V3 entity
+                href: data-entities/entity-customers-v3-customerv3.md
+              - name: Customer details V2 entity
+                href: data-entities/entity-customer-details-v2-na.md
+          - name: Import products
+            items:
+            - name: Products V2 entity
+              href: data-entities/entity-products-v2-productsv2.md
+            - name: Released products V2 entity
+              href: data-entities/entity-released-products-v2-releasedproductv2.md
+          - name: Import sales orders
+            items:
+              - name: Sales order headers V2
+                href: data-entities/entity-sales-order-headers-v2-salesorderheaderv2.md
+              - name: Sales order lines V2
+                href: data-entities/entity-sales-order-lines-v2-salesorderline.md
+          - name: Import vendor invoices
+            items:
+              - name: Vendor invoice header entity
+                href: data-entities/entity-vendor-invoice-header-vendorinvoiceheader.md
+              - name: Vendor invoice line entity
+                href: data-entities/entity-vendor-invoice-line-vendorinvoiceline.md
+              - name: Vendor invoice document attachment V2 entity
+                href: data-entities/entity-vendor-invoice-document-attachment-v2-vendorinvoicedocumentattachment.md
+              - name: Vendor invoice charges entity
+                href: data-entities/entity-vendor-invoice-charges-vendorinvoiceheadercharge.md
+              - name: Vendor invoice line charges entity
+                href: data-entities/entity-vendor-invoice-line-charges-vendorinvoicelinecharge.md
       - name: Data import and export jobs
         items:
         - name: Data import and export jobs overview
@@ -318,6 +353,10 @@
         href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
       - name: Generate demo data using data packages
         href: data-entities/generate-demo-data-packages.md
+    - name: Validate package operations     
+      items:   
+      - name: Validate packages
+        href: deployment/validate-pack.md
     - name: Deployment
       items:
       - name: Deploy demo environments
@@ -332,24 +371,32 @@
             href: deployment/infrastructure-stack.md
           - name: Deploy a new environment
             href: deployment/deployenvironment-newinfrastructure.md
+          - name: Manage sandbox environments across implementation projects
+            href: deployment/manage-sandboxes-across-projects.md
+          - name: Delete a Production Finance and Operations apps environment
+            href: deployment/delete-production-environment.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
             href: deployment/maintenanceoperationsguide-newinfrastructure.md
           - name: Update an environment
             href: deployment/updateenvironment-newinfrastructure.md
-          - name: Migrate an environment
-            href: deployment/geo-to-geo-migrations.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
             href: deployment/plannedmaintenance-selfservice.md
           - name: Business continuity and disaster recovery
             href: sysadmin/business-continuity-disaster-recovery.md
+        - name: Finance and operations apps regional services
+          items:
+          - name: Available geographies
+            href: deployment/deployment-options-geo.md
+          - name: US Government Community Cloud (GCC)
+            href: deployment/us-gcc-deployment.md
+          - name: China Operated by 21Vianet
+            href: deployment/china-local-deployment.md
         - name: Complete the Azure Resource Manager onboarding process
           href: deployment/arm-onboarding.md
         - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
@@ -366,6 +413,14 @@
           href: deployment/Auto-Update-Commerce-Scale-Unit.md
         - name: Initialize Commerce Scale Unit (cloud)
           href: deployment/Initialize-Retail-Channels.md  
+        - name: Geo to Geo migration
+          items:
+          - name: Geo migration overview
+            href: deployment/geo-to-geo-migrations.md
+          - name: Finance and operations apps environment migration
+            href: deployment/environment-migration-process.md
+          - name: Lifecycle Services project migration manager
+            href: lifecycle-services/project-migration-manager.md
         - name: Migrate channels to a different Commerce Scale Unit
           href: deployment/Reassign-CSU.md
         - name: Retail data residency
@@ -476,34 +531,20 @@
           href: help/custom-help-overview.md
         - name: Preparing content for use with the Help pane
           href: help/preparing-content.md
-        - name: Deploying custom help to Azure
-          href: help/walkthrough-help-azure.md
+        - name: The ConvertHtmlToJson tool
+          href: help/custom-help-toolkit-ConvertHtmlToJson.md
+        - name: The HtmlLocaleChanger tool
+          href: help/custom-help-toolkit-HtmlLocaleChanger.md
+        - name: Convert Dynamics AX custom Help for use in Dynamics 365
+          href: help/migrate-dynamicsax2012.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
-        - name: Custom help toolkit
-          items:
-            - name: Overview
-              href: help/custom-help-toolkit.md
-            - name: The HTML From Repo Generator tool
-              href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
-            - name: The Convert HTML To JSON tool
-              href: help/custom-help-toolkit-ConvertHtmlToJson.md
-            - name: The HTML Locale Changer tool
-              href: help/custom-help-toolkit-HtmlLocaleChanger.md
-            - name: Convert Dynamics AX custom help for use in Dynamics 365
-              href: help/migrate-dynamicsax2012.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
         - name: Extend and collaborate on the help
+          href: help/contributor-guide.md      
+        - name: Contribute to the Help
           href: help/contributor-guide.md
-      - name: Finance and operations apps regional services
-        items:
-        - name: Local geographies
-          href: deployment/deployment-options-geo.md
-        - name: US Government Community Cloud (GCC)
-          href: deployment/us-gcc-deployment.md
-        - name: China Operated by 21Vianet
-          href: deployment/china-local-deployment.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
@@ -530,8 +571,14 @@
           href: migration-upgrade/vso-machine-renaming.md
         - name: Development system requirements
           href: dev-tools/development-system-requirements.md
-      - name: Version control, metadata search, and navigation
-        href: dev-tools/version-control-metadata-navigation.md
+      - name: X++ Application lifecycle management
+        items: 
+        - name: Version control, metadata search, and navigation
+          href: dev-tools/version-control-metadata-navigation.md
+        - name: Branching
+          href: dev-tools/branching.md
+        - name: X++ in Git
+          href: dev-tools/git-intro.md
       - name: Build automation using Azure
         items:
         - name: Build automation using Microsoft-hosted agents and Azure Pipelines
@@ -624,6 +671,8 @@
             href: dev-ref/application-explorer-aot-properties.md
           - name: SysSetupConfigAttribute attribute
             href: dev-tools/syssetupconfigattribute.md
+          - name: SysSetup
+            href: dev-tools/syssetup.md
         - name: X++ language reference
           items:
           - name: X++ language reference overview
@@ -912,6 +961,8 @@
             href: perf-test/concepts-creators.md
           - name: Queries in the acceptance test library
             href: perf-test/concepts-queries.md
+          - name: Public application tests
+            href: perf-test/public-application-tests.md
           - name: Specification classes
             href: perf-test/concepts-specifications.md
           - name: Acceptance test library code generation wizard
@@ -1078,6 +1129,14 @@
         href: power-platform/overview.md
       - name: Enabling the Power Platform integration
         href: power-platform/enable-power-platform-integration.md
+      - name: Environment lifecycle operations - Core concepts
+        href: power-platform/environment-lifecycle-core-concepts.md
+      - name: Power Platform integration scenarios
+        items: 
+        - name: Connect finance and operations apps with a new Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-new-dv.md
+        - name: Connect finance and operations apps with an existing Microsoft Dataverse instance
+          href: power-platform/environment-lifecycle-connect-finops-existing-dv.md
       - name: Authentication and authorization
         href: power-platform/authentication-and-authorization.md
       - name: Dual-write
@@ -1107,7 +1166,11 @@
                 - name: Enable table map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
             - name: Separated dual-write application orchestration package
-              href: data-entities/dual-write/separated-solutions.md
+              items:
+                - name: Separated dual-write application orchestration package
+                  href: data-entities/dual-write/separated-solutions.md
+                - name: Transition from dual-write application orchestration package to split packages
+                  href: data-entities/dual-write/separated-solutions-transition-guidance.md
             - name: Setup security roles and permissions
               href: data-entities/dual-write/security-roles.md
             - name: User-specified team owner
@@ -1602,7 +1665,7 @@
       - name: Get support for finance and operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
-        href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+        href: /power-platform/admin/support-overview?context=/dynamics365/context/ops
       - name: Get support for finance and operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
       - name: Set up technical support for finance and operations apps
@@ -1649,6 +1712,8 @@
           href: sysadmin/security-architecture.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
+        - name: Use customer-managed keys to control encryption keys for data at rest
+          href: sysadmin/customer-managed-keys.md
         - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
         - name: Out-of-box security reports
@@ -1656,7 +1721,7 @@
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
         - name: Block access by location with Azure AD Conditional Access
-          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
+          href: /power-platform/admin/restrict-access-online-trusted-ip-rules?context=/dynamics365/context/ops
         - name: Import users in bulk
           href: sysadmin/tasks/import-bulk-users.md
         - name: Set up segregation of duties
@@ -1741,11 +1806,11 @@
           href: migration-upgrade/analyze-code-upgrade.md
         - name: AX 2012 upgrade - Deploy a demo environment for analysis
           href: migration-upgrade/analysis-sandbox.md
-        - name: AX 2012 upgrade - Data upgrade in development environments
-          href: migration-upgrade/data-upgrade-2012.md
         - name: AX 2012 upgrade - Pre-upgrade checklist for data upgrade
           href: migration-upgrade/prepare-data-upgrade.md
-        - name: Upgrade from AX 2012 - Data upgrade in self-service environments
+        - name: AX 2012 upgrade - Data upgrade in development environments
+          href: migration-upgrade/data-upgrade-2012.md
+        - name: AX 2012 upgrade - Data upgrade in self-service environments
           href: migration-upgrade/data-upgrade-self-service.md
         - name: AX 2012 upgrade - On-premises environments
           href: migration-upgrade/on-prem-upgrade-2012.md
@@ -1785,6 +1850,8 @@
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitoring replication
+            href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
             href: migration-upgrade/migrate-doc-attachments-ax-2012.md
           - name: Clean up source data for upgrade
@@ -1853,8 +1920,6 @@
           href: migration-upgrade/download-hotfix-lcs.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
-        - name: Install metadata hotfixes in development environments
-          href: migration-upgrade/install-metadata-hotfix-package.md
         - name: Patch Reporting Services in one-box environments
           href: migration-upgrade/patch-reporting-service-environment.md
         - name: Update Visual Studio development tools
