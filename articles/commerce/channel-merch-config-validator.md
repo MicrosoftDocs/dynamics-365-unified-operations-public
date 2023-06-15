@@ -110,4 +110,4 @@ The following table describes the validation rules for the channel merchandising
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
