@@ -2289,6 +2289,8 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
+        - name: Review and accept changes to confirmed purchase orders
+          href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
         - name: Create and invoice an intercompany purchase order for internal use
