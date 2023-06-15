@@ -71,4 +71,4 @@ Currently, the system is limited to showing the aggregated product count for a g
 Currently, it's limited to show the aggregated product count for a given channel across all catalogs and all locales, in future versions we will look for opportunity to provide the published products count by each locale. We recommend you leverage 'Channel merchandising configuration validator' for common mistakes that may cause issues with locales specific product publishing where it can identify missing values (Product name, category name, attribute values or product description) for a specific locale. 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
