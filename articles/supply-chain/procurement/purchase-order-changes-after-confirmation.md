@@ -21,7 +21,7 @@ ms.custom: bap-template
 >
 > During this preview phase, the summarization of changes and the summarization of downstream impact are only available in environments hosted in North America and will render in English. All other functionality is available globally.
 
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.34 GA -->
 
 During the procurement planning process, any changes made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that will only have a low risk of downstream impact, which allows procurement managers to focus on high-impact changes so they can assess potential downstream order impacts and communicate directly with vendors.
 
@@ -109,7 +109,7 @@ The **Impacted downstream orders** tile gives a summary of the downstream impact
 
 In this view, you can analyze the changes from the perspective of downstream impact and identify the purchase order changes that are causing the impact. Then you can take action on those purchase orders.
 
-![Workspace showing filtering for most pressing downstream impact by purchase order changes](media/po-change-review-downstream-impact.png)
+[<img src="media/po-change-review-downstream-impact.png" alt="Workspace showing filtering for most pressing downstream impact by purchase order changes." title="Workspace showing filtering for most pressing downstream impact by purchase order changes" width="720" />](media/po-change-review-downstream-impact.png#lightbox)
 
 A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact (the requested date in the downstream order). This lats you identify the most eminent impact and take action by communicating with downstream stakeholders who might then reach out to impacted customers and replan the downstream orders.
 
