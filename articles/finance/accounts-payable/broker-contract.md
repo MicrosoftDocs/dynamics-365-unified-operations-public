@@ -4,7 +4,7 @@
 title: Broker contract management
 description: This article describes broker contract management by automating administrative tasks that comprise it.
 author: t-benebo
-ms.date: 08/17/2018
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: July 2017 update
 
 Broker contract management helps companies better manage their brokerage agreements by automating tasks that are involved in administering, tracking, and paying the fees that are due to brokers.
 
-This article provides a broad overview of the typical process for handling broker fees:
+This article provides an overview of the typical process for handling broker fees:
 
 - Registering details of the negotiated broker contract
 - Running the negotiated contracts through ongoing sales and generating broker claims
-- Approving the generated claims, so that they can be passed on to Accounts payable (A/P) for payment
+- Approving the generated claims, so that they can be passed to Accounts payable for payment
 - Handling situations for partial claim approval and differential accounting
 
 ## Audience and purpose
 
-The information in this article is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and A/P manager, who have the following responsibilities:
+The information in this article is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and Accounts payable manager, who have the following responsibilities:
 
 - Negotiating contracts with brokers
 - Managing staff that processes broker claims and makes fee payments
@@ -54,8 +54,7 @@ People in these roles are looking for ways to achieve these goals:
 
 A broker contract is a record of an agreement with a broker. It specifies the negotiated terms and conditions under which the brokerage company qualifies for a monetary reward in return for achieving preset sales targets.
 
-Broker contracts are registered on the **Broker contracts** page. To open the **Broker contracts** page, select **Accounts payable** \> **Broker and royalties** \> **Broker contracts**.
-
+Broker contracts are registered on the **Broker contracts** page. 
 
 ![Broker claims page.](./media/broker-contract-management-contract-page.png "Broker claims page")
 
@@ -77,7 +76,7 @@ The contract **Status** has to be **Approved** to be applied to sales orders tha
 
 ## Sell products that qualify for a broker commission and generate a claim
 
-When you create a sales order that has lines that fulfill the requirements of the broker contract, you can view the related information on the **Sales order** page by selecting **Sales order line** \> **View** \> **Broker commissions**.
+When you create a sales order that has lines that fulfill the requirements of the broker contract, you can view the related information on the **Sales order** page. 
 
 Because broker fee accruals are handled as a charge, you can also access the broker commission by opening the standard charges page from the sales order. Select the order line, and then select **Sales order line** \> **Financials** \> **Manage charges**.
 
@@ -90,15 +89,16 @@ The accrued broker fee posting can be viewed on the voucher transactions associa
 
 ## Review and process claims
 
-After claims are either fully or partially approved, the vendor invoice is created and posted, if posting is supported by the A/P policy. In this way, the vendor credit is passed to the regular payable processing.
+After claims are either fully or partially approved, the vendor invoice is created and posted, if posting is supported by the Accounts payable policy. In this way, the vendor credit is passed to the regular payable processing.
 
 You can view all the claims on the **Broker claims** page. For each fee, the **Qualified** field specifies the amount of the fee that, after it's approved, will be paid to vendor of brokerage services.
 
 ![Broker claims page.](./media/broker-contract-management-contract-page.png "Broker claims page")
 
-Note that the fields in the lower section of the page specify details about the originating sales invoice, such as the invoice number, invoice line net amount, and associated customer transactions.
+>[!Note] 
+>The fields in the lower section of the page specify details about the originating sales invoice, such as the invoice number, invoice line net amount, and associated customer transactions.
 
-To approve a claim, in the **Mark** column, select the check box for the line. Then, on the Action Pane, select **Approve**.
+To approve a claim, in the **Mark** column, select the checkbox for the line. On the Action Pane, select **Approve**.
 
 As a result of the approval, the following events will occur:
 
@@ -115,7 +115,7 @@ As a result of the approval, the following events will occur:
     
 On the **Broker claims** page, you can review the postings and documents associated with the claim, a vendor invoice number that was created for the broker. If the vendor invoice was posted (automatically or manually), on the **Invoices** tab, the **Date** and **Amount in transaction currency** fields contain the appropiate values. If the invoice is still pending, those fields are blank.    
 
-If the **Approved** field for the claim line contains the same amount as the **Qualified** field, whereas the **Difference** field contains 0, it means that the claim has no unsettled issues and can now be closed.
+If the **Approved** field for the claim line contains the same amount as the **Qualified** field, the **Difference** field contains 0, it means that the claim has no unsettled issues and can be closed.
 
 ## Partially process claims
 
