@@ -33,11 +33,10 @@ The *archive solution* lets you archive transactional data to *history tables* w
 
 Use the **Archive** workspace to create and work with your archives. It lets you do the following actions:
 
-- Set up and schedule archive jobs
-- Browse archives
-- Monitor the progress of running archive jobs
-- Review the archive history and logs
-- Reverse archives (for example, if you need to edit the data of an archived record)
+- Set up and schedule move to history jobs
+- Monitor the progress of running jobs
+- Review the move to history and logs
+- Reverse move to history (for example, if you need to edit the data of a history record)
 
 ## Next steps
 
