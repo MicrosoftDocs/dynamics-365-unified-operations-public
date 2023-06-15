@@ -24,7 +24,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizes to the finance and operations app only when it is a customer (`RelationshipType=Customer`) and vice versa. Synchronizing  the **Account** row as a prospect and supporting the prospect in an integrated quotation process, will require  a custom map to integrate the prospect data and customizations to business logic.
+> In Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is set to either *Prospect* or *Customer*. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, that record is synced to the finance and operations app only when it's a customer (`RelationshipType=Customer`) and vice versa. Synchronizing the **Account** row as a prospect and supporting the prospect in an integrated quotation process require a custom map to integrate the prospect data and customizations into business logic.
 
 ## Prerequisites and mapping setup
 
@@ -38,7 +38,7 @@ In Sales, go to **Settings \> Administration \> System settings \> Sales**, and 
 - The **Discount calculation method** column is set to **Line item**.
 
 > [!NOTE]
-> In Dynamics 365 Supply Chain Management an alternate approach to pricing on sales quotations and sales orders is available. In the alternate approach  Dynamics 365 Supply Chain Management becomes the price master and no pricing related calculations are performed in Dynamics 365 Sales for Sales orders and sales quotations. This approach takes effect when feature **Make Supply Chain Management price master when integrated with Dynamics 365 Sales** in enabled. It is recommended to enable this feature. Please note that per Microsoft lifecycle policy this feature is planned to become default enabled 6 months after release, and mandatory on, 6 months following default enabled. For more information on this feature see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
+> In Supply Chain Management, an alternative approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. This approach goes into effect when the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is enabled. We recommend that you enable this feature. Note that, per the Microsoft lifecycle policy, the plan is for this feature to become enabled by default six months after it's released, and then mandatory six months after it's enabled by default. For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
 
 ### Sites and warehouses
 
@@ -59,7 +59,7 @@ Sales quotations can be created in either Sales or Supply Chain Management. If y
 - The **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** columns aren't part of the default mappings. To map these columns, you must set up a value mapping that is specific to the data in the organizations that the table is synced between.
 
 > [!NOTE]
-> In Dynamics 365 Supply Chain Management version 10.0.34 it is possible to have the sales quotation lifecycle integrated between Dynamics 365 Sales and Supply Chain Management. Integrating sales quotation lifecycle takes effect when feature **Integrate Sales Quotation lifecycle with Dynamics 365 Sales** in enabled. When this feature is enabled, state and status transition throughout the lifecycle of a sales quotation is mapped between the two applications while applying a policy of ownership to control the available actions for a sales quotation when in either Dynamics 365 Sales or in Supply Chain Management. Please note that per Microsoft lifecycle policy this feature is planned to become default enabled 6 months after release, and mandatory on, 6 months following default enabled. For more information on this feature see [Add efficiency in Quote to Cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash.md). Also note that feature **Make Supply Chain Management price master when integrated with Dynamics 365 Sales** when enabled changes how calculations are performed for sales quotations in Dynamics 365 Sales for sales quotations and sales orders.
+> In Supply Chain Management version 10.0.34, the sales quotation lifecycle can be integrated between Sales and Supply Chain Management. The integration takes effect when the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is enabled. When this feature is enabled, state and status transitions throughout the lifecycle of a sales quotation are mapped between the two apps, and a policy of ownership is applied to control the actions that are available for a sales quotation while it's in either Sales or Supply Chain Management. Note that, per the Microsoft lifecycle policy, the plan is for this feature to become enabled by default six months after it's released, and then mandatory six months after it's enabled by default. For more information about this feature, see [Add efficiency in Quote to Cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash.md). Also note that when the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is enabled, it changes how calculations are done in Sales for sales quotations and sales orders.
 
 If you are also using the Field Service solution, make sure to re-enable the **Quote Line Quick Create** parameter. Re-enabling the parameter lets you continue creating quote lines using the quick create function.
 
@@ -93,7 +93,7 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 - **Sales:** Quantity = 3, per-line discount = (3 × $3.33) + $0.01 = $10.00
 
 > [!NOTE]
-> In Dynamics 365 Supply Chain Management an alternate approach to pricing on sales quotations and sales orders is available. In the alternate approach  Dynamics 365 Supply Chain Management becomes the price master and no pricing related calculations are performed in Dynamics 365 Sales for Sales orders and sales quotations. This approach takes effect when feature **Make Supply Chain Management price master when integrated with Dynamics 365 Sales** in enabled. Please note that per Microsoft lifecycle policy this feature is planned to become default enabled 6 months after release, and mandatory on, 6 months following default enabled. For more information on this feature see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
+> In Supply Chain Management, an alternative approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. This approach goes into effect when the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is enabled. Note that, per the Microsoft lifecycle policy, the plan is for this feature to become enabled by default six months after it's released, and then mandatory six months after it's enabled by default. For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
 
 ## Dual-write solution for Sales
 
@@ -103,7 +103,7 @@ New columns have been added to the **Order** table and appear on the page. Most 
 - The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
 
 > [!NOTE]
-> To support  new features introduced in Dynamics 365 Supply Chain Management version 10.0.34 a new dual write solution (version XXXX) for supply chain is released. This solution includes selective updates to the status integration of sales orders. When updating to the new Dual-Write Supply chain solution, some of the changes are in effect for the existing CDS Sales order headers (salesorders) entity while aditional changes are in effect with the Dynamics 365 Sales order headers (salesorders) entity. For more information on these changes included in the dual write solution see _New page_.
+> To support new features that are introduced in Supply Chain Management version 10.0.34, a new dual-write solution (version XXXX) for supply chain is released. This solution includes selective updates to the status integration of sales orders. When you update to the new Dual-write Supply Chain solution, some of the changes take effect for the existing *CDS Sales order headers* (*salesorders*) entity, whereas others take effect for the *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the changes that are included in the dual-write solution, see _New page_<!--Link needed-->.
 
 ## Invoices
 
@@ -132,19 +132,20 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 [Sales invoice lines V2](mapping-reference.md#117) | invoicedetails | |
 [Sales order origin codes](mapping-reference.md#186) | msdyn_salesorderorigins | |
-[Dynamics 365 Sales order headers]() | salesorders | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
-[Dynamics 365 Sales order lines]() | salesorderdetails | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
-[Dynamics 365 Sales quotation header]() | quotes | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
-[Dynamics 365 Sales quotation lines]() | quotedetails | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
-[Dynamics 365 Sales feature management states]() | msdyn_supplychainfeaturestate | Entity introduced with feature Add efficiency in Quote to Cash with Dynamics 365 Sales |
+[Dynamics 365 Sales order headers](mapping-reference.md#238) | salesorders | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+[Dynamics 365 Sales order lines](mapping-reference.md#239) | salesorderdetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+[Dynamics 365 Sales quotation header](mapping-reference.md#240) | quotes | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+[Dynamics 365 Sales quotation lines](mapping-reference.md#241) | quotedetails | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
+[Dynamics 365 Sales feature management states](mapping-reference.md#237) | msdyn_supplychainfeaturestate | This entity is introduced through the *Add efficiency in Quote to Cash with Dynamics 365 Sales* feature. |
 
 For information about price lists, see [Unified product experience](product-mapping.md).
 
-**Note** The five entities prefixed with Dynamics are explained in more detail in [How to enable Add efficiency in Quote to Cash with Dynamics 365 Sales](enable-efficiency-in-quote-to-cash.md)
+> [!NOTE]
+> For more information about the five entities that are prefixed with "Dynamics," see [How to enable Add efficiency in Quote to Cash with Dynamics 365 Sales](enable-efficiency-in-quote-to-cash.md).
 
 ## Limitations
 
-- Return orders are not supported. A return order is a sales order with sales order type **returned order**
+- Return orders aren't supported. A return order is a sales order that has a sales order type of **Returned order**.
 - Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
