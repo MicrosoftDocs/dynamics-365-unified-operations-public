@@ -84,7 +84,7 @@ Follow these steps to enable the required mappings in Supply Chain Management.
 1. In the **Table map version** dialog box, select one of the following versions, and then select **Save**:
 
     - *1.0.0.0* – Select this version if you're running Supply Chain Management version 10.0.32 or 10.0.33.
-    - *1.0.1.0* – Select this version if you're running Supply Chain Management version 10.0.34 or later. This version of the table map provides more features, but you will receive an error if you enable it for an unsupported version of Supply Chain Management.
+    - *1.0.1.0* – Select this version if you're running Supply Chain Management version 10.0.34 or later. This version of the table map provides more features, but you'll receive an error if you enable it for an unsupported version of Supply Chain Management.
 
 1. On the **Dual-write** page, find the following rows, and make sure that they show a **Status** value of *Running*. If any of them show a **Status** value of *Not running*, select them, and then select **Run** on the Action Pane.
 
