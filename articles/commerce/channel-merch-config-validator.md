@@ -35,9 +35,9 @@ The channel merchandising configuration validator provides a wide range of capab
 - **Deep linking** - After identifying invalid configurations, the configuration validator streamlines the correction process by creating deep links to specific headquarters forms, enabling you to quickly navigate to the sources of the issues and resolve them efficiently.
 - **Extensive rule set** - With a comprehensive set of over 40 distinct validation rules, the configuration validator offers a robust and reliable solution to identify and resolve configuration issues.
 
-## Create validation for a new channel
+## Run validation for a new channel
 
-To create validation for a new channel in headquarters, follow these steps.
+To run validation for a new channel in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **New**.
@@ -50,27 +50,27 @@ To create validation for a new channel in headquarters, follow these steps.
 1. Select **Show details** to load an additional grid with details of messages, errors and warnings that you can filter by issue type. From the **Show details** view you can directly navigate to the entity record to fix the necessary configuration.
 1. After fixing the necessary configurations across all entities, you can navigate back to the **Validation summary** view and select **Validate failed** to rerun validation for the previously failed rules. 
 
-## Create validation for all channels
+## Run validation for all channels
 
-To create validation for all channels in headquarters, follow these steps.
+To run validation for all channels in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Channel merchandising configuration validator**.
 1. Select **Create all**. This action creates a validation process for each channel. The channel grid becomes populated with the list of channels. 
 1. In channel grid, select the channels for which you would like to initiate the validation process. If you want to run validation for all channels, on the grid header, select the checkbox that selects all channels. 
 1. Select **Validate**. 
 
-## Rules
+## Validation rules
 
-The following table describes the rules for the channel merchandising configuration validator.
+The following table describes the validation rules for the channel merchandising configuration validator.
 
 | Rule ID | Entity | Rule description | Rule type | Effect of incorrect configuration|
 |--------|--------|--------|--------|--------|
-| AttribGroup-Ru-001 | Attribute group  | Attribute group display order is missing. | Information |  If attributes on a product are based of multiple attribute groups, then they will be ordered using default ordering of attributes. |
-| AttribGroup-Ru-002 | Attribute group  | AttributeGroup translation for Description and FriendlyName is missing. | Information | This will have an impact on headquarters users, when they have user preferences set to use language different than default system language. |
-| Attrib-Ru-001 | Attribute  | Attribute display order inside attribute group is missing. | Information | If attributes on a product are based of multiple attribute groups, then they will be ordered using default ordering of attributes. |
-| Attrib-Ru-002 | Attribute  | Attribute translation for Description and FriendlyName is missing.  | Error | If a channel is configured to render data in the language other than system default language (not to be confused with channel default language) then standard attributes (including refiners associated with those attributes) won't be rendered correctly. Also, this will have an impact on headquarters user, when they have user preferences set to use language different than default system language. |
-| Attrib-Ru-003 | Attribute  |Attribute enumeration translation for **Description** and/or **Friendly Name** is missing or empty. | Error | If a channel is configured to render data in the language other than the system default language (not to be confused with the channel default language), then list values-based attributes (including refiners associated with those attributes) won't be rendered correctly. Also, this will have an impact on headquarters users, when they have user preferences set to use language different than default system language. |
-| Attrib-Ru-004 | Attribute  |Attribute value translation for specified channel attribute override is missing. | Error |  If a channel is configured to render data in the language other than the system default language (not to be confused with the channel default language), then attribute values (including refiner values associated with those attributes) won't be rendered correctly. Also, this will have an impact on headquarters users when they have user preferences set to use a language different than the default system language. |
+| `AttribGroup-Ru-001` | Attribute group | Checks if the attribute group display order is missing. | Information |  If attributes on a product are based of multiple attribute groups, they will be ordered according to the default ordering of attributes. |
+| `AttribGroup-Ru-002` | Attribute group | Checks if the attribute group translations for description and friendly name values are missing. | Information | Missing translations for attribute group description and friendly name values have an impact on headquarters users who have their preferences set to use a language different than the default system language. |
+| `Attrib-Ru-001` | Attribute | Checks if the attribute display order inside each attribute group is missing. | Information | If attributes on a product are based on multiple attribute groups, they will be ordered according to the default ordering of attributes. |
+| `Attrib-Ru-002` | Attribute | Checks if the attribute translation for description and friendly name is missing. | Error | If a channel is configured to render data in a language other than the system default language (not to be confused with channel default language), then standard attributes (including any refiners associated with those attributes) won't be rendered correctly. Missing translations for attribute description and friendly name values have an impact on headquarters users who have their preferences set to use a language different than the default system language. |
+| `Attrib-Ru-003` | Attribute |Attribute enumeration translation for **Description** and/or **Friendly Name** is missing or empty. | Error | If a channel is configured to render data in the language other than the system default language (not to be confused with the channel default language), then list values-based attributes (including refiners associated with those attributes) won't be rendered correctly. Also, this will have an impact on headquarters users, when they have user preferences set to use language different than default system language. |
+| `Attrib-Ru-004` | Attribute  |Attribute value translation for specified channel attribute override is missing. | Error |  If a channel is configured to render data in the language other than the system default language (not to be confused with the channel default language), then attribute values (including refiner values associated with those attributes) won't be rendered correctly. Also, this will have an impact on headquarters users when they have user preferences set to use a language different than the default system language. |
 | Cata-Ru-001 | Catalog | Catalog target is business-to-business (B2B) and the customer type is business-to-consumer (B2C), both should be the same.  | Error | This is a mismatch between the types of channels associated with the catalog, B2B catalogs are only discoverable in B2B online channels. |
 | Cata-Ru-002 | Catalog | Catalog target is B2C and the customer type is B2B, both should be the same.  | Error | This is a mismatch between the types of channels associated with the catalog, B2B catalogs are only discoverable in B2B online channels. |
 | Cata-Ru-003 | Catalog | Catalog is expired. | Information | This suggests that there are expired catalogs associated with the channel, so they won't be discoverable in channels. |
