@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ms.topic: how-to
-ms.date: 06/14/2023
+ms.date: 06/16/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -27,19 +27,66 @@ During the procurement planning process, any changes made to confirmed purchase 
 
 This article describes the workspace where users can review and accept changes made by suppliers to *Confirmed* purchase orders based on the downstream impact of the changes made.
 
-## Prerequisites
+## Enable the feature for your system
 
-To use this feature, your system must meet the following requirements:
+This section describes the steps you must complete to enable the **Confirmed purchase orders with changes** workspace and/or related Copilot features for your system.
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
-- This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35, so you may need to update these versions as described later in this list.
-    - If you're running Supply Chain Management version 10.0.34, then you must upgrade the Application Suite to 10.25.1372 (or later), which is included in build number 10.0.1591.72 of finance and operations apps.
-    - If you're running Supply Chain Management version 10.0.35, then you must upgrade to the latest available build.
-- The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Steps 1 and 2 are required to enable the **Confirmed purchase orders with changes** workspace. You must complete these steps to use any of the features described in this article.
+- Steps 3 – 6 are only required if you also want to use the Copilot features (natural-language change summaries and communication drafts). You can skip these steps if you don't want to use these features.
+
+### Step 1: Upgrade Supply Chain Management to the required build
+
+You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+
+This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35. If you're running one of these versions, you must update your version to the builds described in the following list.
+
+- If you're running Supply Chain Management version 10.0.34, then you must upgrade the Application Suite to 10.25.1372 (or later), which is included in build number 10.0.1591.72 (or later) of finance and operations apps.
+- If you're running Supply Chain Management version 10.0.35, then you must upgrade the Application Suite to 10.26.1075 (or later), which is included in build number 10.0.1627.33  (or later) of finance and operations apps.
+
+### Step 2: Enable the workspace feature in feature management
+
+In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature named *Review changes to confirmed purchase orders based on downstream impact*.
+
+### Step 3: Upgrade the *Finance and Operations Virtual Entity* solution
+
+Follow these steps to upgrade the *Finance and Operations Virtual Entity* solution:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select the Power Platform environment that is connected to your Finance and Operations application and open the detail view.
+1. In the **Resources** box, select **Dynamics 365 apps**.
+1. Find the app called *Finance and Operations Virtual Entity*.
+1. If the status is *Installed*, then you're already running the latest version.
+1. If the status is *Update available*, then you must update the solution. Select the ellipsis button and choose **Update**. Accept the terms of service and then select **Update**.
+
+You can follow the status of the update. During the update, the status is *Installing*. On completion, the status changes to *Installed*.
+
+### Step 4: Enable Supply Chain Management to access your Dataverse environment
+
+Follow these steps to enable Supply Chain Management to access your Dataverse environment:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Select the Dataverse environment that is connected to your Supply Chain Management environment and open the detail view.
+1. Select the **Settings** menu in the menu bar.
+1. Navigate to **Product \> Features**.
+1. Set the **Finance and Operations in Dataverse** to *On*.
+
+### Step 5: Install the Copilot application in Supply Chain Management
+
+Follow these steps to install the Copilot application in your Supply Chain Management environment:
+
+1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
+1. Select **Get it now**.
+1. The deployment process opens the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that is connected to your Supply Chain Management environment to install the application.
+
+### Step 6: Enable the required security roles
+
+Users that should have access to the functionality must be assigned the *AIB Roles* security role in Dataverse.
+
+From the detail view of the environment, locate the **Access** box and select **Users** or **Teams**. Select the users or teams that should have access and assign the  *AIB Roles* security role to them.
 
 ## The Confirmed purchase orders with changes workspace
 
-To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirmed purchase orders with changes**. <!-- KFM: Confirm path. Is workspace name really different from the path name? -->
+To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirmed purchase orders with changes**.
 
 [<img src="media/po-change-review-highimpact.png" alt="Workspace showing high impact changes and downstream impact." title="Workspace showing high impact changes and downstream impact" width="720" />](media/po-change-review-highimpact.png#lightbox)
 
