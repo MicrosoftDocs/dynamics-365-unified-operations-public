@@ -72,7 +72,7 @@ Explicit consent must be granted for Dynamics 365 finance and operations to impe
 5. Set **Enable finance and operations user impersonation in Dataverse** to **On**.  
 
 >[!Note] 
->For more information, see Managed feature settings - Power Platform.
+>For more information, see [Managed feature settings](/power-platform/admin/settings-features.md) .
 
 ## Dataverse role assignment
 Users in Dataverse need to be assigned to the AIB role.
@@ -85,7 +85,7 @@ Users in Dataverse need to be assigned to the AIB role.
 6.	Use the **...** menu to add new members to this role.
 
 >[!Note] 
->For more information, see Security roles and privileges - Power Platform.
+>For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
 
 ## Enable Collections coordinator summary 
 To enable the **Collections coordinator summary**, go to:
