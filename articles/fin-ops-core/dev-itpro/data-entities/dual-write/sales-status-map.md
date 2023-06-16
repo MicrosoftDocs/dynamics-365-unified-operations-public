@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-06-25
 
 The columns that indicate sales order status have different enumeration values in Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Additional setup is required to map these columns in dual-write.
 
-## columns in Supply Chain Management
+## Columns in Supply Chain Management
 
 In Supply Chain Management, two columns reflect the status of the sales order. The columns that you must map are **Status** and **Document Status**.
 
@@ -78,6 +78,37 @@ The following table shows the mapping of **Processing Status** between Sales and
 | Partially Invoiced  | Fulfilled       | Delivered                         |
 | Invoiced            | Invoiced        | Invoiced                          |
 | Cancelled           | Cancelled       | Cancelled                         |
+
+## Mappings for the updated Dual-write Supply chain solution
+
+If you are using the updated Dual-write Supply chain solution, then the status map is updated as described in this section. These changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. For details about version requirements, see [Prerequisites](add-efficiency-in-quote-to-cash-enable.md#prerequisites).
+
+The following table shows the resulting status map if the map for the *CDS sales order headers* entity is running.
+
+| Processing Status   | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
+|---------------------|-----------------------------------|--------------------------------------------|-----------------|
+| Active              | Open Order                        | None                                       | Active          |
+| Confirmed           | Open Order                        | Confirmation                               | Active          |
+| Picked              | Open Order                        | Picking List                               | Active          |
+| Partially Delivered | Open Order                        | Packing Slip                               | Active          |
+| Partially Invoiced  | Open Order                        | Invoice                                    | Active          |
+| Delivered           | Delivered                         | Packing Slip                               | Fulfilled       |
+| Invoiced            | Invoiced                          | Invoice                                    | Invoiced        |
+| Cancelled           | Cancelled                         | Not applicable                             | Canceled        |
+
+If the map for the *Dynamics 365 Sales order headers* entity is running, an additional processing status (*Delivered and Partially Invoiced*) is introduced. The following stable shows the resulting status map.
+
+| Processing Status                 | Status in Supply Chain Management | Document Status in Supply Chain Management | Status in Sales |
+|-----------------------------------|-----------------------------------|--------------------------------------------|-----------------|
+| Active                            | Open Order                        | None                                       | Active          |
+| Confirmed                         | Open Order                        | Confirmation                               | Active          |
+| Picked                            | Open Order                        | Picking List                               | Active          |
+| Partially Delivered               | Open Order                        | Packing Slip                               | Active          |
+| Partially Invoiced                | Open Order                        | Invoice                                    | Active          |
+| Delivered                         | Delivered                         | Packing Slip                               | Fulfilled       |
+| Delivered and Partially Invoiced  | Delivered                         | Invoice                                    | Fulfilled       |
+| Invoiced                          | Invoiced                          | Invoice                                    | Invoiced        |
+| Cancelled                         | Cancelled                         | Not applicable                             | Canceled        |
 
 ## Setup
 
