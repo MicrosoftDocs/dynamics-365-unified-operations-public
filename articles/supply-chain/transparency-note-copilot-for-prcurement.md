@@ -12,7 +12,7 @@ ms.reviewer: kamaybac
 
 # Transparency notes for the Confirmed purchase orders with changes workspace
 
-This transparency note describes the AI impact of Dynamics 365 Supply Chain Management's **Transparency notes for the Confirmed purchase orders with changes** workspace.
+This transparency note describes the AI impact of Dynamics 365 Supply Chain Management's **Confirmed purchase orders with changes** workspace.
 
 ## What is the Confirmed purchase orders with changes workspace?
 
