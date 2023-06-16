@@ -59,6 +59,10 @@ Open the "Finance and Operations in Dataverse"
 
 ### 4.Install the application Copilot in Microsoft Dynamics 365 Supply Chain Management from market place
 
+Navigate to Marketplace and install the application [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview).
+Press on *Get it now*, and the deployment process will open [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/). 
+
+Select the Dataverse environment of your Finance and Operations to commence the installation.
 
 ### 5. The following security role must be enabled for application user in PPAC
 
