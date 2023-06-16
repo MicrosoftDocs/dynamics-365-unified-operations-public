@@ -74,6 +74,19 @@ Explicit consent must be granted for Dynamics 365 finance and operations to impe
 >[!Note] 
 >For more information, see Managed feature settings - Power Platform.
 
+## Dataverse role assignment
+Users in Dataverse need to be assigned to the AIB role.
+
+1.	In Power Platform admin center, select the Microsoft Power Platform environment where the above application was installed.
+2.	Select **Settings** in the top action pane.
+3.	Expand **Users and Permissions**.
+4.	Select **Security roles**. 
+5.	Find the AIB role
+6.	Use the **...** menu to add new members to this role.
+
+>[!Note] 
+>For more information, see Security roles and privileges - Power Platform.
+
 ## Enable Collections coordinator summary 
 To enable the **Collections coordinator summary**, go to:
 1. Go to **Feature management** workspace, on the **All** tab. 
