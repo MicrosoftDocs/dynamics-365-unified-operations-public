@@ -16,4 +16,4 @@ ms.reviewer: kamaybac
 
 [!INCLUDE[transparency-note-features](../includes/transparency-note-features.md)]
 
-- [Review changes to confirmed purchase orders based on downstream impact](transparency-note-review-purchass-order-changes-with-impact.md)
+- [Transparency notes for the Confirmed purchase orders with changes workspace](transparency-note-copilot-for-prcurement.md)
