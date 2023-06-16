@@ -19,33 +19,27 @@ ms.custom: bap-template
 
 <!--KFM: Preview until 10.0.34 GA -->
 
-To move data from live tables to history tables, the underlying history table structures for transactions must mirror the structure of its corresponding live table.
+Data can be moved from live tables to history tables only if the underlying history table structures for transactions mirror the structure of the corresponding live table.
 
 ## Add all custom fields to history tables through extension
 
-If you have custom fields added to live tables, you must extend your system's history table to include those fields. For more information, see [Add fields to tables through extension](../extensibility/add-field-extension.md).
+If you've added custom fields to live tables, you must extend your system's history table so that it includes those fields. For more information, see [Add fields to tables through extension](../extensibility/add-field-extension.md).
 
 ## Add tables to the archive scope
 
-Transaction tables can be added to the archive scope if they're related to the parent live table directly or via tables in its hierarchy chain.
+Transaction tables can be added to the archive scope if they're related to the parent live table either directly or via tables in its hierarchy chain.
 
-Create history table corresponding to the live table being added to the archive scope using the following conventions:
+Follow these conventions to create a history table that corresponds to a live table that's being added to the archive scope:
 
-1. Mirror all fields from the live table to the history table including all metadata properties on the live table. `SysRowVersion` and `SysDataState` tables are added by the system and are managed via table
-metadata properties. These columns don't need to be added to the history table.
-
-1. Don't mirror indexes from the live table to the history table. For most history tables, a clustered index on RecId column should be sufficient. Add additional columns to index based on query needs and to
-maintain table relations needs such as a foreign key index.
-
-1. Add the created history table add its corresponding live table to the archive scope. The archive scope is defined by the archive job configuration, which is managed by the corresponding archive type registered in process automation.
-
-1. Find archive type class that implements `ArchiveServiceICreateArchiveJob` interface. From this class, find the `ArchiveAutomationJobRequestCreator` class for the archive type. Create extension of `ArchiveAutomationJobRequestCreator` class to extend `createPostJobRequest()` method to add new tables in archive scope using chain of command (CoC) design pattern.
-
-1. In the extension class, see example below to add new tables to the archive scope by extending `createPostJobRequest()` method. Also refer to the original code to understand how archive contract is built to define the archive scope.
+1. Mirror all fields from the live table to the history table. These fields include all metadata properties on the live table. `SysRowVersion` and `SysDataState` tables are added by the system and managed via table metadata properties. These columns don't have to be added to the history table.
+1. Don't mirror indexes from the live table to the history table. For most history tables, a clustered index on the `RecId` column should suffice. Add additional columns to index based on query needs, and to maintain table relation needs such as a foreign key index.
+1. Add the created history table and its corresponding live table to the archive scope. The archive scope is defined by the archive job configuration. That configuration is managed by the corresponding archive type that's registered in process automation.
+1. Find the archive type class that implements the `ArchiveServiceICreateArchiveJob` interface. From this class, find the `ArchiveAutomationJobRequestCreator` class for the archive type. Create an extension of the `ArchiveAutomationJobRequestCreator` class. Extend the `createPostJobRequest()` method to add new tables in the archive scope by using the chain of command (CoC) design pattern.
+1. In the extension class, add new tables to the archive scope by extending the `createPostJobRequest()` method. See the example that follows. Also review the original code to learn how the archive contract is built to define the archive scope.
 
 ## Example: Extend the general ledger archive job request creator class to add an additional table
 
-The following code example shows how to extend the `LedgerArchiveAutomationJobRequestCreator` class to add an additional table to the archive scope.
+The following example shows how to extend the `LedgerArchiveAutomationJobRequestCreator` class to add an additional table to the archive scope.
 
 ```xpp
 [ExtensionOf(classStr(LedgerArchiveAutomationJobRequestCreator))]
