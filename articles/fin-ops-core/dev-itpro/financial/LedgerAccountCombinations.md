@@ -396,10 +396,11 @@ For example, an account structure has **MainAccount-Department** in one company 
 
 ### Versioning/date-effective data
 
-The dimension framework doesn't directly support versioning or date-effective data. The AX platform assigns new RecID's to the latest version row in date-effective tables. As the dimension framework takes reference to backing values by the **RecId** at the time of original entry, the introduction of a new record causes the system to no longer be able to join to the older versions as the date context is not persisted with the dimension data.
+The dimension framework doesn't directly support versioning or date-effective data. The platform assigns new RecID's to the latest version row in date-effective tables. As the dimension framework takes reference to backing values by the **RecId** at the time of original entry, the introduction of a new record causes the system to no longer be able to join to the older versions because the date context isn't persisted with the dimension data.
 
-The use of dimension data where the same backing entity record is used, and another joined table tracks historical revisions to itself in the owning module, the dimension framework won't be able to determine the difference since the **RecId** value of the backing entity won't differ between versions.  This effectively allows the dimension framework to always see the current version just like non-versioned tables.
-None of the dimension framework tables (such as dimensions, structures, rules, and constraints) support versioning internally. The previous versions are replaced with a new version, and no history is maintained.
+Using dimension data where the same backing entity record is used, and another joined table tracks historical revisions to itself in the owning module, the dimension framework won't be able to determine the difference because the **RecId** value of the backing entity won't differ between versions. This effectively allows the dimension framework to always see the current version just like non-versioned tables.
+
+None of the dimension framework tables, such as dimensions, structures, rules, and constraints support versioning internally. The previous versions are replaced with a new version, and no history is maintained.
 
 When a structure or rule is changed, if ledger account combinations have been saved on unposted transactions, the dimension framework creates new combinations and updates any foreign key references to them on unposted transaction tables. It doesn't change the original combinations, because those combinations might be referenced from posted transactions. The two combinations aren't linked in any way. There is no way to determine what a structure and its rules looked like before the change. Some information can be determined by the data that is stored in the combination. However, because blank values aren't stored, this data is incomplete and can't be used to reconstruct a previous version.
 
