@@ -24,7 +24,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> In Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is set to either *Prospect* or *Customer*. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, that record is synced to the finance and operations app only when it's a customer (`RelationshipType=Customer`) and vice versa. Synchronizing the **Account** row as a prospect and supporting the prospect in an integrated quotation process require a custom map to integrate the prospect data and customizations into business logic.
+> In Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is set to either *Prospect* or *Customer*. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified first as a prospect and then as a customer, that record is synced to the finance and operations app only when it's a customer (`RelationshipType=Customer`). Synchronizing the **Account** row as a prospect and supporting the prospect in an integrated quotation process require a custom map to integrate the prospect data and customizations into business logic.
 
 ## Prerequisites and mapping setup
 
@@ -103,7 +103,7 @@ New columns have been added to the **Order** table and appear on the page. Most 
 - The **Sales order status** value will remain **Active** to help ensure that changes from Supply Chain Management can flow to the sales order in Sales. To control this behavior, set the default **Statecode \[Status\]** value to **Active**.
 
 > [!NOTE]
-> To support new features that are introduced in Supply Chain Management version 10.0.34, a new dual-write solution (version XXXX) for supply chain is released. This solution includes selective updates to the status integration of sales orders. When you update to the new Dual-write Supply Chain solution, some of the changes take effect for the existing *CDS Sales order headers* (*salesorders*) entity, whereas others take effect for the *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the changes that are included in the dual-write solution, see _New page_<!--Link needed-->.
+> To support new features that are introduced in Supply Chain Management version 10.0.34, a new version of Dual-write Supply Chain solution has been released (for details about version requirements, see [Prerequisites](add-efficiency-in-quote-to-cash-enable.md#prerequisites)). The updated solution includes selective updates to the status integration of sales orders. When you update to the new Dual-write Supply Chain solution, some of the changes take effect for the existing *CDS Sales order headers* (*salesorders*) entity, whereas others take effect for the *Dynamics 365 Sales order headers* (*salesorders*) entity. For more information about the changes that are included in the dual-write solution, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
 
 ## Invoices
 
@@ -141,7 +141,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 For information about price lists, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> For more information about the five entities that are prefixed with "Dynamics," see [How to enable Add efficiency in Quote to Cash with Dynamics 365 Sales](enable-efficiency-in-quote-to-cash.md).
+> For more information about the five entities that are prefixed with "Dynamics," see [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
 
 ## Limitations
 

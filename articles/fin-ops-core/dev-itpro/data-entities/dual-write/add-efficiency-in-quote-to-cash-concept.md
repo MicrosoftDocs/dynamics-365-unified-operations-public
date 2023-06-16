@@ -34,7 +34,7 @@ Both Supply Chain Management and Sales store and show origin and ownership infor
 
 When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled, all sales quotations have an **Origin** value of *Supply Chain Management* and an **Ownership** value of *Based on origin*.
 
-When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is [enabled and fully configured](enable-efficiency-in-quote-to-cash.md), the **Origin** field works in the following way:
+When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is [enabled and fully configured](add-efficiency-in-quote-to-cash-enable.md), the **Origin** field works in the following way:
 
 - Quotations that are created in Supply Chain Management have an **Origin** value of *Supply Chain Management*.
 - Quotations that are created in Sales have an **Origin** value of *Dynamics 365 Sales*.
@@ -127,7 +127,7 @@ The process begins when a user creates a sales quotation in Sales. In Sales, the
 
 The following table summarizes the initial status values of the sales quotation in each system and the restrictions that apply.
 
-| | Sales (owner) | Supply Chain Management |
+| &nbsp; | Sales (owner) | Supply Chain Management |
 |---|---|---|
 | **Status** value | *Draft* | *Created* |
 | **Status reason** value | *In Progress* | Not applicable |
@@ -145,7 +145,7 @@ The quotation update is synced to Supply Chain Management, where the **Status** 
 
 The following table summarizes the status values of the sales quotation in each system and the restrictions that apply.
 
-| | Sales (owner) | Supply Chain Management |
+| &nbsp; | Sales (owner) | Supply Chain Management |
 |---|---|---|
 | **Status** value | *Active* | *Sent* |
 | **Status reason** value | *In Progress* | Not applicable |
@@ -162,7 +162,7 @@ The now-outdated quotation is synced to Supply Chain Management, where the **Sta
 
 The following table summarizes the status values of the now-outdated (revised) and new sales quotations in each system and the restrictions that apply.
 
-| | Revised quotation in Sales (owner) | New quotation in Sales (owner) | Revised quotation in Supply Chain Management | New quotation in Supply Chain Management |
+| &nbsp; | Revised quotation in Sales (owner) | New quotation in Sales (owner) | Revised quotation in Supply Chain Management | New quotation in Supply Chain Management |
 |---|---|---|---|---|
 | **Status** value | *Closed* | *Draft* | *Revised* | *Created* |
 | **Status reason** value | *Revised* | *In progress* | Not applicable | Not applicable |
@@ -220,5 +220,5 @@ The following table summarizes the status values and restrictions that apply in 
 
 ## Next steps
 
-- [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](enable-efficiency-in-quote-to-cash.md)
+- [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md)
 - [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md)

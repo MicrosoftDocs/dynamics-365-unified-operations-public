@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-06-25
 
 The columns that indicate sales order status have different enumeration values in Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Additional setup is required to map these columns in dual-write.
 
-## columns in Supply Chain Management
+## Columns in Supply Chain Management
 
 In Supply Chain Management, two columns reflect the status of the sales order. The columns that you must map are **Status** and **Document Status**.
 
@@ -79,7 +79,9 @@ The following table shows the mapping of **Processing Status** between Sales and
 | Invoiced            | Invoiced        | Invoiced                          |
 | Cancelled           | Cancelled       | Cancelled                         |
 
-Note that Dual-write Supply chain solution version XXXX<!--Update version information--> and Supply Chain Management version 10.0.32?<!--Confirm version number--> introduces changes to the status map. The changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. 
+## Mappings for the updated Dual-write Supply chain solution
+
+If you are using the updated Dual-write Supply chain solution, then the status map is updated as described in this section. These changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. For details about version requirements, see [Prerequisites](add-efficiency-in-quote-to-cash-enable.md#prerequisites).
 
 The following table shows the resulting status map if the map for the *CDS sales order headers* entity is running.
 
