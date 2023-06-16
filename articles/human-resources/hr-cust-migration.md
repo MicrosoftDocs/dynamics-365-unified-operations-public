@@ -47,7 +47,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 
  - Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
  - Create a new Dataverse environment by using the Power Platform admin center.
- - Copy the existing Dataverse environment, which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
+ - Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
 
 > [!NOTE]
 > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
@@ -84,7 +84,7 @@ After you've created a new Lifecycle Services project, follow these steps to set
 2. Complete the project settings. As part of this step, you should configure the SharePoint Online library, Azure DevOps, and Azure connections if they are required. For more information, see [Lifecycle Services (LCS) user guide](../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 > [!NOTE]
-> Customers can use an existing Azure DevOps project and the associated Personal Access Security Token. If an existing project is used, the configurations that are related to the project are automatically available and can be reviewed for accuracy.
+> Customers can use an existing Azure DevOps Project and the associated Personal Access Security Token. If an existing project is used, the configurations that are related to the project are automatically available and can be reviewed for accuracy.
 
 ### Migrate a Human Resources sandbox environment
 
@@ -238,6 +238,6 @@ To learn more about migration tooling, prerequisites, migration steps and consid
  
 #### Human Resources migration office hours
  
-As announced, the infrastructure for the standalone Human Resources is scheduled to be discontinued after December 31st, 2023. Customers might have questions regarding Human Resource migration. We invite you to office hours to discuss any questions. If you're interested to join office hours, email dyn365hrmigration@microsoft.com.
+As announced, the infrastructure for the standalone Human Resources is scheduled to be discontinued after December 31, 2023. Customers might have questions regarding Human Resource migration. We invite you to office hours to discuss any questions. If you're interested to join office hours, email dyn365hrmigration@microsoft.com.
  
 
