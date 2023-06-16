@@ -41,7 +41,9 @@ To create an Azure AD application for account manager sign-in, follow these step
     After you complete the registration, you're redirected to the Azure AD B2C app registrations page for the application that you created (for example, **Account Manager Employer Auth**).
 
 1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID).
-1. Select **Add an Application ID URI**. Click **Add** next to **Application ID URI**. Click **Save**.
+1. Select **Add an Application ID URI**.
+1. Next to **Application ID URI**, select **Add**.
+1. Select **Save**.
 1. Select **Add a scope**. 
 1. Enter a scope name, display name and description. It is recommended to include “user_impersonation” in the scope name.
 1. Select **Add scope**. 
