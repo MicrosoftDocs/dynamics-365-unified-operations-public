@@ -59,12 +59,16 @@ Open the "Finance and Operations in Dataverse"
 
 ### 4. The following security role must be enabled for application user in PPAC
 
+Users that shall have access to the functionality need to be assigned the *AIB Roles* security role in Dataverse.
 
-### 5.
+From the detail view of the environment click on *Users* in the box *Access*. Select the users that shall have access and assign the security role *AIB Roles*.
 
-### 6. Enable the feature in feature management 
+### 5.Install the application Copilot in Microsoft Dynamics 365 Supply Chain Management from market place
+
+
+### 6. Enable the feature in feature management
+
 The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
 
 ## The Confirmed purchase orders with changes workspace
 
