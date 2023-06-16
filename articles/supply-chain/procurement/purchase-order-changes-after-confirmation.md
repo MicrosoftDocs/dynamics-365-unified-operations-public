@@ -31,11 +31,40 @@ This article describes the workspace where users can review and accept changes m
 
 To use this feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
-- This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35, so you may need to update these versions as described later in this list.
-    - If you're running Supply Chain Management version 10.0.34, then you must upgrade the Application Suite to 10.25.1372 (or later), which is included in build number 10.0.1591.72 of finance and operations apps.
-    - If you're running Supply Chain Management version 10.0.35, then you must upgrade to the latest available build.
-- The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+### 1. Upgrade the product version
+
+You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+
+  This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35, so you may need to update these versions as described later in this list.
+
+- If you're running Supply Chain Management version 10.0.34, then you must upgrade the Application Suite to 10.25.1372 (or later), which is included in build number 10.0.1591.72 (or later) of finance and operations apps.
+- If you're running Supply Chain Management version 10.0.35, , then you must upgrade the Application Suite to 10.26.1075 (or later), which is included in build number 10.0.1627.33  (or later) of finance and operations apps.
+
+### 2. Upgrade *Finance and Operations Virtual Entity* solution in PPAC
+
+- In [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/), select the Microsoft Power Platform environment that is connected to your Finance and Operations application and open the *Detail view*.
+- In the *Resources* box click on *Dynamics 365 apps*.
+- Find the app *Finance and Operations Virtual Entity*.
+- If the status is *Installed* then you're already running the latest version. 
+- If the status is *Update available* then you must update the solution. Select the ellipsis button and choose *Update*. Accept the terms of service and then select *Update*.
+- You can check the status of the update. During the update the status is *Installing*. On completion, the status will change to *Installed*.
+
+### 3. In PPAC enable access of the Finance and Operations app to call into Dataverse
+
+In order for the application to call into Dataverse, you must enable the application to access Dataverse in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/). To do this, follow these steps:
+
+Open the "Finance and Operations in Dataverse"
+
+[<img src="media/ai-enable-dataverse-impersonation.png" alt="Screenshot showing impersonation enablement to Dataverse in PPAC." title="How to enable application access to Dataverse in PPAC." width="720" />](media/ai-enable-dataverse-impersonation.png#lightbox)
+
+### 4. The following security role must be enabled for application user in PPAC
+
+
+### 5.
+
+### 6. Enable the feature in feature management 
+The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
 
 ## The Confirmed purchase orders with changes workspace
 
