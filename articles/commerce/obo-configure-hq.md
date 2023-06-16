@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up and configure on behalf of (OBO) functionality
+title: Set up and configure on behalf of (OBO) functionality in headquarters
 description: This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 author: mariash529
 ms.date: 03/03/2023
@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Set up and configure on behalf of (OBO) functionality
+# Set up and configure on behalf of (OBO) functionality in headquarters
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -42,9 +42,14 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 
 1. Under **Server resource IDs**, select **Add**, and then set the following fields:
 
-    1. **Server Resource Id:** Enter `https://APPLICATIONIDUR`.
+    1. **Server Resource Id:** Enter `https://APPLICATIONIDURI`.For example, **api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**
     1. **Name:** Leave this field blank.
-
+       
+1. On the Action Pane, select **Save**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**
+1. In the left navigation menu, select job **1110 Global configuration**
+1. On the action pane, select **Run Now**
+   
 ## Create and configure a sales group
 
 Next, you must create and configure a sales group in headquarters. For information about how to create sales groups, see [Create a commission sales group for the worker](tasks/worker.md#create-a-commission-sales-group-for-the-worker).
