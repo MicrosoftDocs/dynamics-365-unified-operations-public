@@ -38,7 +38,7 @@ The rental company has had unfortunate events when customers rent cars using cre
 
 1.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
 2.  Open the FleetManagement solution. On the **File** menu, point to **Open**, and then click **Project/Solution**.
-3.  Browse to the desktop, and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+3.  Browse to the desktop, and then open the **FleetManagement** folder. If the solution file is not on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 4.  Select the file named **FleetManagement**. The file type listed is SLN File.
 5.  Click **Open**. Loading the solution may take some time.
 6.  Make the **FleetManagement** project the startup project. In **Solution Explorer**, right-click the **Fleet Management** project, and choose **Set as StartUp Project** in the context menu.

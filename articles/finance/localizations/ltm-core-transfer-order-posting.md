@@ -11,7 +11,6 @@ ms.custom: bap-template
 # Inventory transfer order for posting for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 When you post an inventory transfer order in an extended LATAM section, you can add the information that's required for Latin American countries.
 

@@ -2,9 +2,10 @@
 # required metadata
 
 title: General journal processing
-description: This article describes capabilities in Microsoft Dynamics 365 Finance that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
+description: This article describes capabilities in Microsoft Dynamics 365 Finance that help make general journal processing easier, and help ensure that correct data is captured and internal control isn't compromised.  
 author: kweekley
 ms.topic: article
+ms.date: 6/13/2023
 ms.prod: 
 ms.technology: 
 
@@ -35,13 +36,13 @@ This article describes capabilities that can help make general journal processin
 
 One of the most important areas to set up is journal names. It's a good idea to define specific journal names for each purpose, such as intercompany, accrual adjustment, and error correction. You can tailor each journal name to help make data entry for each purpose easy and secure. 
 
-On the **Journal names** page, you can set up the following elements:
+On the **Journal names** page, you can set up the following:
 
 -   **Workflow approval** – To increase internal control, define journal workflows that establish materiality limits for review and approval steps, based on criteria such as total debit amount. You set up workflows for the general journals on the **General ledger workflows** page.
 -   **Default values** – Select default values for offset accounts, currency, and financial dimensions.
 -   **Journal control** – You can set up restrictions on the company and account type, and also the segment values. 
 
-**Examples**
+## Examples
 
 A journal name can be used only for adjustments. In this case, you can specify that only the **Ledger** account type is valid across all companies. 
 
@@ -51,19 +52,19 @@ A journal name can be used only for a specific segment or for a range for main a
 
 [![Journal control segment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
-The **Automatic reversal** option is available in general journals. For example, you have an accrual adjustment where the actual document hasn't yet been processed, as shown in the following illustration.
+**Automatic reversal** is available in general journals. For example, you have an accrual adjustment where the actual document hasn't yet been processed, as shown in the following illustration.
 [![General journal reversing.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 The Microsoft Excel add-in for journal entry provides an additional level of automation and makes data entry easier. The **Open lines in Excel** action is available on the **General journal** and **Journal voucher** pages. 
 
 On the **Periodic journals** page, you can set up recurring journals to automate journal processing. 
 
-You can use voucher templates at any time. On the **General journals** page, the **Save** and **Select voucher template** actions are found on the **Journal voucher** page, under **Functions** for the voucher lines.
+You can use voucher templates at any time. On the **General journals** page, select a **Journal voucher** page, the **Save** and **Select voucher template** actions are available under **Functions** for the voucher lines.
 
-## Related setup
-The following setup isn't specific to general journals, but will help ensure that data entry is correct data and easy.
+### Related setup
+The following setup isn't specific to general journals, but helps ensure that data entry is correct data and easy.
 
-### Main account
+#### Main account
 
 The main account setup provides many options for general journal processing:
 
@@ -92,24 +93,24 @@ For more information, see the following topics:
 - [Post periodic journals](tasks/post-periodic-journals.md)
 - [Process ledger allocation journal](tasks/process-ledger-allocation-journal.md)
 
-## Global general journals
+### Global general journals
 The **Global general journal** allows entry of a journal into any legal entities defined in your environment without having to switch companies before creating the journal. At the top of the **Global general journal** page, the **New journal** button allows you to select the legal entity for the journal and then specify the journal you wish to enter data for. Clicking the lines for the created journal will open the standard journal lines page that is the same as opening it from the **General journal** page.  
 >[!NOTE] 
 >In Dynamics 365 Finance release 10.0.34, a new feature **Enable the Global general journal page to select multiple companies for posting** allows the selecting of mulitple journals for posting across any legal entities. The posting process will create a single batch job per each legal entity to complete the posting. 
 
-## Simulate posting
+### Simulate posting
 You can find **Simulate posting** on the **Validate** menu for most journals. When you validate a journal using the **Validate** function, the journal is tested for specific error conditions. If you use the **Simulate posting** function, all of the same processes that are run during posting are run without actually posting the journal. You can then review the posting messages that are displayed, fix any errors that you find, and then open the **Post** menu to post the journal. 
 
-**Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
+**Simulate posting** isn't available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
 
-## Journal unlock
+### Journal unlock
 A button is available on the journal page to unlock a journal that has a status of "locked by system" set to **Yes**. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal unlock button** on the **Feature management** page. 
 
-## Workflow recall 
+### Workflow recall 
 The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the **Resetting the workflow status for journals** feature on the **Feature management** page.
 
-## Delete journal lines
-In Dynamics 365 Finance version  10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process to be scheduled. This lets users to continue other work instead of waiting for the delete processing to complete. 
+### Delete journal lines
+In Dynamics 365 Finance version 10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process to be scheduled. This lets users to continue other work instead of waiting for the delete processing to complete. 
 
 To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function affects extensions on the **LedgerJournalTrans** table. It's **Delete** method. The set of lines are removed without calling each line's **Delete** method. 
 

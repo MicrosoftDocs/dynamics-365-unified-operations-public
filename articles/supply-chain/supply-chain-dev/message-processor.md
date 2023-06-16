@@ -29,15 +29,6 @@ You might use this framework, for example, to develop and manage custom integrat
 
 This article describes how to design your own custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types (including the predefined message types) by using the **Message processor messages** page.
 
-## Prerequisites
-
-To use the message processor, your system must meet the following requirements:
-
-- You must be running Dynamics 365 Supply Chain Management 10.0.29 or later.
-- At least one of the following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-    - *Manufacturing execution system integration* (As of Supply Chain Management version 10.0.29, this feature is on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
-    - *(Preview) Make finished goods physically available before posting to journals*
-
 ## <a name="message-processor-page"></a>Message processor messages page
 
 Use the **Message processor messages** page to view the list of incoming messages, view the message log, manually process messages, and troubleshoot issues.
@@ -56,6 +47,7 @@ You can use the fields at the top of the **Message processor messages** page to 
     - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
     - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
     - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
+    - *Dynamics 365 Sales Integration* – This queue holds messages that integrate with Dynamics 365 Sales. For more information about this feature and the messages that it might add to this queue, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md).
     - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
 
 - **Message state** – The state of the message. The following states exist:

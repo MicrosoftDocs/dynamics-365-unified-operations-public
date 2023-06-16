@@ -22,7 +22,7 @@ This article is an overview of the Fleet Management sample application.
 
 The Fleet Management sample application has been provided to showcase development and foundation capabilities. Fleet Management represents a solution that an ISV might create for a car-rental agency. Fleet Management data includes vehicles which are available for renting, and customers who can rent and return these vehicles. Employees can also run a maintenance workflow on these vehicles.
 
-For some tutorials, you will need to create the FleetManagement solution if it is not on your computer. The steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+For some tutorials, you will need to create the FleetManagement solution if it is not on your computer. The steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md).
 
 For some tutorials, you must download the Fleet Management tutorial code and other artifacts from <https://github.com/Microsoft/FMLab>.
 
@@ -49,7 +49,7 @@ The Fleet Management solution includes two separate projects: one for the base m
 
 [Download the FMLab sample code](https://github.com/Microsoft/FMLab)
 
-[Create the FleetManagement solution](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)
+[End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md)
 
 
 

@@ -4,7 +4,7 @@
 title: Create vendor payments by using a payment proposal
 description: This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
-ms.date: 04/04/2018
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ The payment proposal query contains various tabs, each of which has different op
 -   **Create payments without invoice preview** – If this option is set to **Yes**, payments will be created immediately on the **Vendor payments** page. The **Payment proposal** page will be skipped. Therefore, payments will be created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
 
 ## Advanced options
-- **Check vendor balance** – If this option is set to **Yes**, the system verifies that a vendor doesn’t have a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
+- **Check vendor balance** – If this option is set to **Yes**, the vendor is verified that there isn't a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
 - **Delete negative payments** – This option works differently, depending on whether payments are made for individual invoices or for the sum of invoices that meet the payment criteria. This behavior is defined on the method of payment.
 - **Payment for each invoice** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, only the invoice is selected for payment. The existing payment isn't settled against the invoice. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment. A payment is created for the payment, and a refund (negative payment) is created for the payment.
 - **Payment for sum of invoices** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount. The only exception occurs if the sum results in a refund. In this case, neither the invoice nor the payment is selected. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.
