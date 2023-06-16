@@ -692,6 +692,8 @@
             href: create-channel-hierarchy.md
           - name: Configure channel to use a channel navigation hierarchy 
             href: configure-channel-hierarchy.md
+          - name: Channel merchandising configuration validator
+            href: channel-merch-config-validator.md
         - name: Assortments
           items:
           - name: Assortment management
