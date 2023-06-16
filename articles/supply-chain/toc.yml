@@ -3753,6 +3753,12 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
+    - name: Responsible AI 
+      items:
+      - name: Overview
+        href: transparency-note.md
+      - name: Transparency notes for Copilot for procurement
+        href: transparency-note-copilot-for-prcurement.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
