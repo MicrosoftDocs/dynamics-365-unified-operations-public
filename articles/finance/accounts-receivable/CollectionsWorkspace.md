@@ -49,7 +49,7 @@ The selected customer data points displayed include:
  - **Credit remaining** displays the customer's remaining credit amount calculated during the **Age customer balances** periodic process
  - **Account status** displays the **Account status** from the Credit and collections tab on the customer record
 
-The **Open transactions** tab displays the customers' transactions that haven't been fully settled. Collections options on this page include **Change status**, **NSF payment**, **Write-off**, **Settle**, **Reprint** and **View collections** history. These are the same options available from the [View customer collections details](/tasks/review-collections-information.md#view-aged-customer-balances) page. The **Due date** column has been added for clarity on transactions. 
+The **Open transactions** tab displays the customers' transactions that haven't been fully settled. Collections options on this page include **Change status**, **NSF payment**, **Write-off**, **Settle**, **Reprint** and **View collections** history. These are the same options available from the [View customer collections details](/tasks/review-collections-information#view-aged-customer-balances) page. The **Due date** column has been added for clarity on transactions. 
 
 ## Customer timeline
 The **Customer timeline** displays posted invoices, payments received, collection letters sent and activities. The most recent transactions are first and are limited to the last year (365 days) of transactions. The information displayed depends on the type of transaction. Hover over any of the transactions to view more details. 
