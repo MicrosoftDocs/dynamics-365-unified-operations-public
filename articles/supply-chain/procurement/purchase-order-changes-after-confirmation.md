@@ -57,18 +57,21 @@ Open the "Finance and Operations in Dataverse"
 
 [<img src="media/ai-enable-dataverse-impersonation.png" alt="Screenshot showing impersonation enablement to Dataverse in PPAC." title="How to enable application access to Dataverse in PPAC." width="720" />](media/ai-enable-dataverse-impersonation.png#lightbox)
 
-### 4. The following security role must be enabled for application user in PPAC
+### 4.Install the application Copilot in Microsoft Dynamics 365 Supply Chain Management from market place
+
+
+### 5. The following security role must be enabled for application user in PPAC
 
 Users that shall have access to the functionality need to be assigned the *AIB Roles* security role in Dataverse.
 
 From the detail view of the environment click on *Users* or *Teams* in the box *Access*. Select the users or teams that shall have access and assign the security role *AIB Roles*.
 
-### 5.Install the application Copilot in Microsoft Dynamics 365 Supply Chain Management from market place
 
-
-### 6. Enable the feature in feature management
+### 6. Enable the workspace feature in feature management
 
 The feature that is named *Review changes to confirmed purchase orders based on downstream impact* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+The workspace can also be used without the steps 1-4, but then will miss the AI support such as summarization of changes and downstream impact.  
 
 ## The Confirmed purchase orders with changes workspace
 
