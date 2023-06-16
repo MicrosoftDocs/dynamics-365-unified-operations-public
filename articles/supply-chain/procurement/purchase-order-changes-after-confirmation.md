@@ -61,7 +61,7 @@ Open the "Finance and Operations in Dataverse"
 
 Users that shall have access to the functionality need to be assigned the *AIB Roles* security role in Dataverse.
 
-From the detail view of the environment click on *Users* in the box *Access*. Select the users that shall have access and assign the security role *AIB Roles*.
+From the detail view of the environment click on *Users* or *Teams* in the box *Access*. Select the users or teams that shall have access and assign the security role *AIB Roles*.
 
 ### 5.Install the application Copilot in Microsoft Dynamics 365 Supply Chain Management from market place
 
