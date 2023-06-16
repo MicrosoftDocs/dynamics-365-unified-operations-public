@@ -53,7 +53,10 @@ You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or la
 
 In order for the application to call into Dataverse, you must enable the application to access Dataverse in [Power Platform admin center (PPAC)](https://admin.powerplatform.microsoft.com/). To do this, follow these steps:
 
-Open the "Finance and Operations in Dataverse"
+1. Identify the Dataverse environment of your Finance and Operations application. And open the detail view.
+1. Click on the Settings menu in the menu bar t the top.
+1. Navigate to Product / Features
+1. Identify the setting *Finance and Operations in Dataverse* and enable it.
 
 [<img src="media/ai-enable-dataverse-impersonation.png" alt="Screenshot showing impersonation enablement to Dataverse in PPAC." title="How to enable application access to Dataverse in PPAC." width="720" />](media/ai-enable-dataverse-impersonation.png#lightbox)
 
@@ -69,7 +72,6 @@ Select the Dataverse environment of your Finance and Operations to commence the 
 Users that shall have access to the functionality need to be assigned the *AIB Roles* security role in Dataverse.
 
 From the detail view of the environment click on *Users* or *Teams* in the box *Access*. Select the users or teams that shall have access and assign the security role *AIB Roles*.
-
 
 ### 6. Enable the workspace feature in feature management
 
