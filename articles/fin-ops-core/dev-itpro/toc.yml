@@ -1232,11 +1232,17 @@ items:
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
             - name: Sync on-demand with the Supply Chain Management pricing engine
-              href: data-entities/dual-write/pricing-engine.md    
+              href: data-entities/dual-write/pricing-engine.md
+            - name: Quote to cash in dual-write
+              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+            - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-concept.md
+            - name: Enable extra efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md
+            - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md
             - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
               href: data-entities/dual-write/commerce-pricing.md
-            - name: Prospect to cash in dual-write
-              href: data-entities/dual-write/dual-write-prospect-to-cash.md             
             - name: Set up the mapping for the sales order status fields
               href: data-entities/dual-write/sales-status-map.md             
             - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
