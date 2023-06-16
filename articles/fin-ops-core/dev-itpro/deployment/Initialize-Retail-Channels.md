@@ -16,7 +16,6 @@ ms.search.validFrom: 2018-04-30
 # Initialize Commerce Scale Unit (cloud)
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This article explains how to initialize Commerce Scale Unit (CSU) (cloud) in Microsoft Dynamics 365 Commerce.
 
