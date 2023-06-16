@@ -50,7 +50,7 @@ To complete the following procedures and successfully configure the **Collection
  - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
 
 ## Configure Power Platform admin center
-1.	In the Power Platform admin center, select the Microsoft Power Platform environment to install the application. 
+1.	Use this link to find the the **Copilot in Microsoft Dynamics 365 Finance** solution in Partner center. https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92 
 2.	Select **Resources** > **Dynamics 365 installed apps**. 
 3.	Find **Finance and Operations Virtual entity**. The status should be **Update available**. Select the **...** and **Update**. 
 4.	Accept the terms of service and then select **Update**. 
