@@ -45,7 +45,7 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. Next to **Application ID URI**, select **Add**.
 1. Select **Save**.
 1. Select **Add a scope**. 
-1. Enter a scope name, display name and description. It is recommended to include “user_impersonation” in the scope name.
+1. Enter a scope name, a display name, and a description. It is recommended to include "user_impersonation" in the scope name.
 1. Select **Add scope**. 
 1. On the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
