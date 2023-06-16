@@ -28,20 +28,21 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Go to the directory that contains the Azure AD business-to-business (B2B) tenant that's being used for sign-in in headquarters.
 1. In the row of Azure services, select **Azure Active Directory**.
-1. On the **Manage** menu, select **App Registration**, and then select **New Registrations**.
+1. On the **Manage** menu, select **App Registration**, and then select **New Registration**.
 1. Enter a name for the application (for example, **Account Manager Employer Auth**).
-1. Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant) **.
 1. Under **Redirect URI**, select **Web**, and then, in the URL field, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain.
 
     > [!NOTE]
     > Use lowercase letters when you enter your tenant's name, even if the tenant is defined with uppercase letters in Azure AD B2C. For example, enter `https://fabrikam-online.b2clogin.com/fabrikam-online.onmicrosoft.com/oauth2/authresp`.
 
-1. Under **Permissions**, select **Grant admin consent to openid and offline access permissions**.
 1. Select **Register**.
 
     After you complete the registration, you're redirected to the Azure AD B2C app registrations page for the application that you created (for example, **Account Manager Employer Auth**).
 
 1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID).
+1. Select **Add an Application ID URI**. Click **Add** next to **Application ID URI**. Click **Save**.
+1. Click **Add a scope**. Add scope name, display name and description. It is recommended to include “user_impersonation” in the scope name. Click **Add scope**. 
 1. On the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
 1. In the **Description** field, enter a description of the client secret (for example, **clientsecret1**).
