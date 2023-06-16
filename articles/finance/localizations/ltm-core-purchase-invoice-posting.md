@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Purchase invoice posting for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can add the necessary information for Latin American countries when you post invoices of the following types in an extended LATAM section:
 
