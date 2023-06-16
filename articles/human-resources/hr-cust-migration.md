@@ -5,8 +5,8 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 05/17/2023
-ms.topic: article
+ms.date: 06/17/2023
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -231,3 +231,13 @@ This section outlines recommendations for migrating from the standalone infrastr
 - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you do the first migration. This refresh should include your Dataverse environment that is connected to the sandbox environment that you plan to migrate to.
 - We highly recommend that you use a service account when you deploy, migrate, and create your Lifecycle Services project.
 - Plan to upgrade the sandbox environment for UAT validation on the latest general availability (GA) release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).
+
+#### Human Resources migration TechTalk
+ 
+To learn more about migration tooling, prerequisites, migration steps and considerations, see this TechTalk [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
+ 
+#### Human Resources migration office hours
+ 
+As announced, the infrastructure for the standalone Human Resources is scheduled to be discontinued after December 31st, 2023. Customers might have questions regarding Human Resource migration. We invite you to office hours to discuss any questions. If you're interested to join office hours, email dyn365hrmigration@microsoft.com.
+ 
+
