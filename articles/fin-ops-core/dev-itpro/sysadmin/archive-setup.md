@@ -1,6 +1,6 @@
 ---
 title: Set up the archive solution
-description: This article describes how to set up your system to support archiving of various types of records.
+description: This article describes how to set up your system to support archiving of different types of records.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -19,25 +19,24 @@ ms.custom: bap-template
 
 <!--KFM: Preview until 10.0.34 GA -->
 
-## Install the archiving add-in from LCS add-in
+## <a name="install-addin"></a>Install the Archive add-in from Lifecycle Services
 
-To enable the archiving solution, start by installing the *Archive* add-in from Microsoft Dynamics Lifecycle Services (LCS). Follow these steps to install the add-in:
+Before you can enable the archive solution, you must install the *Archive* add-in from Microsoft Dynamics Lifecycle Services.
 
-1. Sign in to [LCS](https://lcs.dynamics.com/).
-1. Open your environment page.
-1. Open the **Power Platform integration** FastTab.
-1. Select **Install a new add-in**.
-1. From the list of add-ins select **(Preview) Archive**.
-1. Follow the instructions on your screen.
+1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
+1. Open the environment details page for your environment.
+1. On the **Power Platform integration** FastTab, select **Install a new add-in**.
+1. In the list of add-ins, select **(Preview) Archive**.
+1. Follow the on-screen instructions.
 
-## Enable the features you need
+## <a name="enable-features"></a>Enable the features that you need
 
-Once you have installed the *(Preview) Archive* add-in from LCS, you'll be able to enable the archiving features you need. Use the [**Feature management** workspace](../../fin-ops/get-started/feature-management/feature-management-overview.md) to enable the following features as needed:
+After you install the *(Preview) Archive* add-in from Lifecycle Services, you can enable the archiving features that you need. Use the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace to enable the following features as you require:
 
-- *(Preview) Archive* – Required for all of the following archiving scenarios. It provides basic archiving support and adds the **Archive** workspace.
-- *(Preview) Ledger archive automation* – Moves general ledger records to the relevant history tables. Once the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md)
-- *(Preview) Archive sales orders to history tables* – Required for archiving sales orders. This feature provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
-- *(Preview) Archive sales orders to history tables using archive service* – Required for archiving sales orders. This feature performs the moving of sales orders from day-to-day transaction tables to history tables. Once the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md)
+- *(Preview) Archive* – This feature is required for all archiving scenarios. It provides basic archiving support and adds the **Archive** workspace.
+- *(Preview) Ledger archive automation* – This feature moves general ledger records to the relevant history tables. After the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md).
+- *(Preview) Archive sales orders to history tables* – This feature is required for archiving of sales orders. It provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
+- *(Preview) Archive sales orders to history tables using archive service* – This feature is required for archiving of sales orders. It moves sales orders from day-to-day transaction tables to history tables. After the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 
 ## Next steps
 
