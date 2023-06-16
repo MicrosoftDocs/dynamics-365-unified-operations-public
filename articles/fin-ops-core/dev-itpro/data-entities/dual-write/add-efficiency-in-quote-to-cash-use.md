@@ -167,7 +167,7 @@ Before you can use asynchronous processing, the *Process Dynamics 365 Sales inte
 When the *Dynamics 365 Sales Integration message processor* batch job runs, the system processes only the *Dynamics 365 Sales Integration* message queue. Therefore, if you want to take advantage of asynchronous processing of integration-related events, follow these steps to schedule the batch job so that it runs regularly.
 
 1. Go to **Sales and Marketing \> Periodic tasks \> Dynamics 365 Sales Integration message processor**.
-1. In the **Dynamics 365 Sales integration message processor** dialog box, on the **Run in the background** FastTab, specify how, when, and how often messages in the *Dynamics 365 Sales Integration* queue should be processed. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. In the **Dynamics 365 Sales integration message processor** dialog box, on the **Run in the background** FastTab, specify how, when, and how often messages in the *Dynamics 365 Sales Integration* queue should be processed. The fields work just as they do for other types of [background jobs](../../sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to apply your settings and close the dialog box.
 
 ### Set message processor options

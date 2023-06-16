@@ -21,7 +21,7 @@ ms.custom: bap-template
 
 Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and later, this capability has been improved to provide a more seamless quotation process flow across the two systems. Therefore, it allows for fewer touch points, better efficiency, and improved transparency. To take advantage of these improvements, you must enable several new features in Supply Chain Management and make sure that you're using a qualifying version of the Dual-write Supply chain solution.
 
-For a conceptual overview that describes how the improved quote-to-cash system works and how the integrated system will behave, depending on the features that you enable, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash.md).
+For a conceptual overview that describes how the improved quote-to-cash system works and how the integrated system will behave, depending on the features that you enable, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
 
 > [!NOTE]
 > By default, all sales quotations that were created before the feature is enabled will have an **Origin** value of *Dynamics 365 Sales* in Dataverse and *Supply Chain Management* in Supply Chain Management. This initial misalignment of **Origin** values and the resulting ownership will be aligned when the sales quotation header is synced for the first time. If the first post-uptake synchronization is invoked from an update in Supply Chain Management, *Supply Chain Management* will be synced as the **Origin** value. If the first post-uptake synchronization is invoked from an update in Sales, *Dynamics 365 Sales* will be synced as the **Origin** value.
@@ -98,7 +98,7 @@ Follow these steps to enable the required mappings in Supply Chain Management.
 
 ## Step 3: Enable the features you need in Feature management
 
-Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed as required in the following table. Then use the workspace to turn on each optional feature that you want to use. For more information about what each feature does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).
+Use the [Feature management](../../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the feature that's listed as required in the following table. Then use the workspace to turn on each optional feature that you want to use. For more information about what each feature does and how to work with it, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-use.md).
 
 | Feature | Required or optional | Description |
 |---|---|---|
