@@ -72,7 +72,7 @@ Explicit consent must be granted for Dynamics 365 finance and operations to impe
 5. Set **Enable finance and operations user impersonation in Dataverse** to **On**.  
 
 >[!Note] 
->For more information, see [Managed feature settings](/power-platform/admin/settings-features.md) .
+>For more information, see [Managed feature settings](/power-platform/admin/settings-features) .
 
 ## Dataverse role assignment
 Users in Dataverse need to be assigned to the AIB role.
