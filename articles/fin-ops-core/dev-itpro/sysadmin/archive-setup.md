@@ -41,6 +41,5 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 ## Next steps
 
 - [Extend the archive solution to support custom tables and fields](archive-customizations.md)
-- [Work with the Archive workspace](archive-using.md)
 - [Archive sales orders](archive-sales-orders.md)
 - [Archive general ledger data](archive-general-ledger.md)

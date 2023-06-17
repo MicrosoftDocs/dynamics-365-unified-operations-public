@@ -56,7 +56,7 @@ To schedule archiving of sales orders, follow these steps.
     - **Company** – Select the legal entity (company) that you want to archive sales orders for.
 
 1. Select **Archive** to apply your settings and close the drop-down dialog box.
-1. On the **Create new process automation** page, on the **General** tab, you must set the **Name** field to define the name of the archive and the **Schedule time** field to define when the archive job should start to run. You can also specify how often the archive job should run. If you decide to set up multiple occurrences, you can set the **End time** field to limit the amount of time that an archive job runs during a day. Any archive job doesn't finish running within that time limit is paused and picked up during the next occurrence. You can also set up alerts as required.
+1. On the **Create new process automation** page, on the **General** tab, you must set the **Name** field to define the name of the archive and the **Schedule time** field to define when the archive job should start to run. You can also specify how often the archive job should run. If you decide to set up multiple occurrences, you can set the **End time** field to limit the amount of time that an archive job runs during a day. Any archive job that doesn't finish running within that time limit is paused and picked up during the next occurrence. You can also set up alerts as required.
 1. Select **Next** to continue.
 1. On the **Sales order archive automation** tab, set the following fields:
 
