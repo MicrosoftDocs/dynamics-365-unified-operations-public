@@ -153,10 +153,14 @@ For more information about how to set up registration categories and registratio
 
 ### Import ER configurations
 
-Open the **Electronic reporting** workspace, and import the following versions or later of these ER formats:
+Open the **Electronic reporting** workspace, and import the following ER configurations to prepare Finance to generate VAT return for Germany:
 
-   - VAT Declaration Excel (DE).version.101.16.12.xml
-   - VAT Declaration XML (DE).version.101.16.xml
+| Number | ER configuration name | Type | Description |
+|---|---|---|---|
+| **1** |**Tax declaration model** | **Model** | **A generic model for different tax declarations.** |
+| 2 | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
+| 3 | VAT Declaration XML (DE) | Format (exporting) | A VAT return in XML format for Germany. |
+| 4 | VAT Declaration Excel (DE) | Format (exporting) | A VAT return preview file in Microsoft Excel format for Germany. |
 
 ### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Set up application-specific parameters for VAT declaration fields
 
@@ -187,6 +191,26 @@ Follow these steps to define which sales tax codes generate which boxes on the V
 6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
 7. Select the **VAT declaration Excel (DE)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (DE)**.
 8. In the **State** field, select **Completed**.
+
+### <a name="set-up-application-specific-manufacture-id"></a>Set up \"Manufacture ID\" (HerstellerID) application-specific parameter for VAT Declaration XML (DE)
+
+If a company is registered in Germany, users can submit the VAT declaration via the web interface [Mein ELSTER](https://www.elster.de/eportal/login/softpse) or by using [ElsterFormular](https://www.elster.de/elsterweb/infoseite/elsterformular). Direct submission of VAT return in XML format to German tax office using ERIC software (Elster RIch Client) is not supported in Finance. 
+
+To automatically generate a VAT return in XML format which can be further submitted to German tax office using ERIC software (Elster RIch Client), you must set up a \"Manufacture ID\" (`HerstellerID`) application-specific parameter. This application-specific parameter is supported in VAT Declaration XML (DE) starting from version 101.23. Generated XML file cannot be successfully submitted to German tax office using ERIC software (Elster RIch Client) without `HerstellerID`.
+
+Follow these steps to define "Manufacture ID" (`HerstellerID`).
+
+1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
+2. Select the **VAT declaration XML (DE)** configuration, and then select **Configurations \> Application specific parameters setup**.
+3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **ReportParameters**.
+4. On the **Conditions** FastTab, set the following fields.
+
+    | Column                 | Description                                |
+    |------------------------|--------------------------------------------|
+    | Lookup result          | Select \"Manufacture ID\" (`HerstellerID`).  |
+    | Value                  | Specify a \"Manufacture ID\" (`HerstellerID`) of the software which is used for submission of VAT return in XML format to German tax office using ERIC software (Elster RIch Client). |
+
+5. In the **State** field, change the value to **Completed**.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
