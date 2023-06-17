@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.20
  
 # Sales order FAQs
 
+[!include [banner](../includes/banner.md)]
+
 This page addresses frequently asked questions that come up when working with sales orders in Dynamics 365 Supply Chain Management.
 
 ## Can I link a purchase order to a sales order to fulfill demand?

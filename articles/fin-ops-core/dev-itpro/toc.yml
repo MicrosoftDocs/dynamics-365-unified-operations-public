@@ -277,6 +277,18 @@ items:
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+      - name: Archive historical records
+        items:
+        - name: Archive solution overview
+          href: sysadmin/archive-overview.md
+        - name: Set up the archive solution
+          href: sysadmin/archive-setup.md
+        - name: Extend the archive solution to support custom tables and fields
+          href: sysadmin/archive-customizations.md
+        - name: Archive general ledger data
+          href: sysadmin/archive-general-ledger.md
+        - name: Archive sales orders
+          href: sysadmin/archive-sales-orders.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
