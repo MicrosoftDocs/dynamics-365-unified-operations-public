@@ -1,7 +1,7 @@
 ---
 title: Transparency notes for the Confirmed purchase orders with changes workspace
 description: This transparency note provides information about the AI technology used in the Confirmed purchase orders with changes workspace for Dynamics 365 Supply Chain Management, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/15/2023
+ms.date: 06/19/2023
 ms.custom: 
   - transparency-note
 ms.topic: article
