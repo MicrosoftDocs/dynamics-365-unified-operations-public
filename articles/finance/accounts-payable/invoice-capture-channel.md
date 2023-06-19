@@ -90,12 +90,12 @@ Here is an example of a payload.
 
 Admin can decide how they want to integrate the document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
 
-- **Yes** – The flow will be automatically generated, based on the flow setting.
+- **Yes** – The flow is automatically generated, based on the flow setting.
 - **No** – The user must integrate the received API and bind the current channel ID to the API parameter.
 
 #### With flow template
 
-When the **Use managed flow** option is set to **Yes**, the flow setting is enabled. The user will then select a flow template. The following templates are available:
+When the **Use managed flow** option is set to **Yes**, the flow setting is enabled. The user selects a flow template. The following templates are available:
 
 - Outlook.com
 - Microsoft Outlook 365
@@ -115,7 +115,7 @@ The following table describes the additional properties that the user must defin
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
 | **OneDrive** or **OneDrive for business** | Folder | The directory name. |
 
-When the channel is saved and **Use managed flow** option is set **Yes**, the flow will be automatically generated, and flow details pane will display. It allows for the following operations:
+When the channel is saved and **Use managed flow** option is set **Yes**, the flow is automatically generated, and flow details pane will display. It allows for the following operations:
 
 If the **Use managed flow** option is set **Yes**, the flow is automatically generated and turned on when the channel is saved.
 - Turn the flow on and off.
@@ -142,7 +142,7 @@ Various errors can appear:
 
     **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
 
-    **Solution:** Error messages will provide details, and **Generate flow** will generate temporary errors or the system-level fixes.
+    **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
 - "Turn on flow failed."
 
@@ -155,7 +155,7 @@ Various errors can appear:
 
 ### Without flow template
 
-When **Use managed flow** option is set **No**, the document receive API will be called without using the flow template. It is recommended that this option only be used by the admin. The channel ID must be filled in in the API payload. The channel ID can be found in the URL after it's saved.
+When **Use managed flow** option is set **No**, the document receive API will be called without using the flow template. It is recommended that this option only be used by the admin. The channel ID must be filled in the API payload. The channel ID can be found in the URL after it's saved.
 
 ## Create a new channel by using managed flow
 
@@ -173,4 +173,4 @@ When **Use managed flow** option is set **No**, the document receive API will be
 ## Deactivate and activate the channel:
 Admin can use the **Activate/Deactivate** button to decide whether the invoice document should be received from the channel. 
 
-If the channel is assigned as **the Channel for file upload** in **Setup system \> System preference** and set inactive, the file upload in Received file cannot be working. 
+If the channel is assigned as **the Channel for file upload** in **Setup system \> System preference** and set inactive, the file upload in the **Received file** will not work. 
