@@ -50,12 +50,12 @@ Invoice capture is generally available in Dynamics 365 finance version 10.0.33 a
 
 After **Invoice capture for Dynamics 365 Finance** is enabled, users can go to **Accounts Payable > Set up > Invoice capture**. 
 
-Before installing Invoice capture, complete the following set up in Invoice capture:
+Before installing Invoice capture, complete the following setup in Invoice capture:
 
 1.	In the **Synced legal entities**, select the legal entities to onboard. 
 2.	Select if an invoice attachment will be transferred with the invoice from Invoice capture.
 3.	Maintain the mapping relationship between invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
-In the current version, the following options are avilable: 
+In the current version, the following options are available: 
 
 | Invoice type in Invoice capture | Invoice framework in Dynamics 365 Finance | 
 |------|---------|
@@ -80,7 +80,7 @@ To install Invoice capture, follow this step.
 - In AppSource, select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you should see the solution installed in the selected environment in Power Apps.
 
 > [!NOTE]
-> After installation, please go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
+> After installation, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
 
 
 ## Upgrade the Invoice capture solution
@@ -103,8 +103,7 @@ If the invoice capture solution needs to be deleted, follow these steps:
 - Dynamics 365 Invoice capture Base
 
 > [!NOTE]
-> If the users want to only delete Invoice capture and keep the data, don't delete Dynamics 365 Invoice capture Base.
- 
+> To delete Invoice capture only and keep the data, don't delete Dynamics 365 Invoice capture Base.
 
 
 ### Non-integrated Power Platform environment
