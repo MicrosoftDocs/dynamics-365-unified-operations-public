@@ -45,7 +45,7 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
     1. **Server Resource Id:** Enter `https://APPLICATIONIDURI`.For example, **api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**
     1. **Name:** Leave this field blank.
   
-1. On the Action Pane,select **Save**.
+1. On the Action Pane,select **Save**.   
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**
 1. In the left navigation menu, select job **1110 Global configuration**
 1. On the action pane, select **Run Now**
@@ -69,6 +69,12 @@ To associate a sales group with a B2B buyer organization in headquarters, follow
 Any member of the specified sales group will now be able to work on behalf of any user in the selected customer B2B buyer organization.
 
 In the customer hierarchy that corresponds to this customer organization (**Retail and Commerce \> Customers \> Customer hierarchies**), the sales group should now be shown as a read-only value in the **Sales Groups** section.
+
+## Initialize Commerce Scheduler
+To complete synchronization of sales representatives, navigate to **Retail and Commerce \> Headquarters setup \> Commerce Scheduler \> Initialize Commerce Scheduler**.
+1. Set **Delete existing configuration** as **No**
+1. Set **Update subjobs only** as **No**
+1. Select **OK**. 
 
 ## Additional resources
 
