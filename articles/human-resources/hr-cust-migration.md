@@ -207,7 +207,7 @@ The environment state will show the deployment progress. The state will be chang
 11. Confirm that the status of the dual-write Human Resources app is **Enabled**.
 12. Select the dual-write Human Resources app, and then select **Install**.
 13. In the **Install dual-write Dynamics 365 Human Resources app** pane, select the appropriate environment to install the package in.
-14. Select checkbox to agree to the terms of service, and then select **Install**.
+14. Select the checkbox to agree to the terms of service, and then select **Install**.
 15. In the Dynamics 365 app environment, the status will be **Installing** while the installation is in progress. It will be updated to **Installed** when the installation is completed.
 
 ##### Review and apply a dual-write solution
@@ -234,10 +234,8 @@ This section outlines recommendations for migrating from the standalone infrastr
 
 #### Human Resources migration TechTalk
  
-To learn more about migration tooling, prerequisites, migration steps and considerations, see this TechTalk [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
+To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
  
 #### Human Resources migration office hours
  
-As announced, the infrastructure for the standalone Human Resources is scheduled to be discontinued after December 31, 2023. Customers might have questions regarding Human Resource migration. We invite you to office hours to discuss any questions. If you're interested to join office hours, email dyn365hrmigration@microsoft.com.
- 
-
+As has been announced, the infrastructure for the standalone Human Resources application is scheduled to be discontinued after December 31, 2023. Customers might have questions about Human Resources migration. We invite you to office hours to discuss any questions. If you're interested in joining office hours, email <dyn365hrmigration@microsoft.com>.
