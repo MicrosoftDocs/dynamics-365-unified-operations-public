@@ -40,7 +40,7 @@ For additional details, see [Copy customers by using shared number sequences](..
 
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
-The **Global transactions** button has been added to the customer page. This button lets you view all transactions for a customer across all legal entities. The **Customer transactions** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button has been added to the customer page. This button lets you view all transactions for a customer across all legal entities. The **Customer transactions** list page shows transactions only for the legal entities that the user has access to, based on their security settings.
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions.
 
@@ -52,7 +52,7 @@ For more information, see [Customer transaction list page](../../../finance/acco
 
 The **View settlements** button on the Action Pane provides quick access to the settlement history and more information about the whole settlement transaction. You can also show additional transactions that are related to the selected transaction, either because they were part of the same settlement or because they are payments that were created in the same payment journal.
 
-The **Global transactions** button has been added to the vendor page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transaction** list page shows transactions only for the legal entities that the user has access to, based on his or her security settings.
+The **Global transactions** button has been added to the vendor page. This button lets you view all transactions for a vendor across all legal entities. The **Vendor transaction** list page shows transactions only for the legal entities that the user has access to, based on their security settings.
 
 The filter for showing open transactions has been replaced with a new filter that lets you view more combinations of transactions. A **Hide currency revaluations** filter has also been added that lets you hide currency translation transactions.
 

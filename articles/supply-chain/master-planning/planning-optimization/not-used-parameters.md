@@ -2,7 +2,7 @@
 title: Parameters not used by Planning Optimization
 description: This article lists the parameters that Planning Optimization doesn't currently consider during its operation.
 author: t-benebo
-ms.date: 01/18/2023
+ms.date: 03/08/2023
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
@@ -27,27 +27,26 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **General** tab:
 
-  - **Current forecast plan** – Pending *Forecast* support.
-  - **Current static master plan** – Pending *Copy static to dynamic plan* support.
-  - **Current dynamic master plan** – Pending *Copy static to dynamic plan* support.
-  - **Copy the complete and updated static master plan to the dynamic master plan** – Pending *Copy static to dynamic plan* support.
-  - **Start time for calculated delays** – Pending *Calculated delays* support.
+  - **Current forecast plan** – Planning Optimization doesn't consider this parameter. Instead, create a master plan that specifies a forecast model.
+  - **Copy the complete and updated static master plan to the dynamic master plan** – Not supported in Planning Optimization. You can run each plan independently, but results won't be copied between them.
+  - **Start time for calculated delays** – Not supported in Planning Optimization.
   - **Use dynamic negative days** – Planning Optimization always uses the *Dynamic negative days* approach.
-  - **Today's date calendar** – Pending *Scheduling* support.
-  - **Use of cache** – The configuration of the Microsoft Azure subscription handles performance points.
-  - **Number of tasks in helper task bundle** – The Azure subscription configuration handles performance points.
-  - **Pre-processing: Automatically filter by items with direct demand** – The Azure subscription configuration handles performance points.
-  - **Post-processing: Automatically filter by items with direct demand** – The Azure subscription configuration handles performance points.
-  - **Number of orders in firming bundle** – The Azure subscription configuration handles performance points.
-  - **Number of threads** – The Azure subscription configuration handles performance points.
-  - **Planning process timeout in minutes** – The Azure subscription configuration handles performance points.
-  - **Scheduling start time** – Pending *Scheduling* support.
+  - **Today's date calendar** – Not supported in Planning Optimization. Planning Optimization always uses current time rounded to the next whole hour.
+  - **Use of cache** – This parameter isn't considered because Planning Optimization manages performance and scaling.  
+  - **Number of tasks in helper task bundle** – This parameter isn't considered because Planning Optimization manages performance and scaling.
+  - **Pre-processing: Automatically filter by items with direct demand** – Not supported in Planning Optimization.  
+  - **Post-processing: Automatically filter by items with direct demand** – Not supported in Planning Optimization.
+  - **Number of threads** – This parameter isn't considered because Planning Optimization manages performance and scaling.
+  - **Planning process timeout in minutes** – In Planning Optimization, there's a fixed timeout of 1 hour.
+  - **Scheduling start time** – This parameter isn't considered in Planning Optimization. With Planning Optimization, an explosion run is a run of the plan for the selected item(s).
 
 - **Planned orders** tab:
 
-  - **Receipt time** – Pending *Scheduling* support.
-  - **Production** – Pending *Scheduling* support.
-  - Fields in the **Project** section – Pending *Scheduling* support.
+  - **Receipt time** – Not supported in Planning Optimization. The receipt time exactly matches the demand time in Planning Optimization.
+
+- **Number sequences** tab:
+
+  - **Master scheduling planned order number** - Planning Optimization uses its own number sequence, which can't be selected, so this parameter isn't considered.
 
 ## Coverage groups page
 
@@ -56,23 +55,18 @@ Planning Optimization doesn't use the following parameters or options on the **C
 - **General** FastTab:
 
   - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
-  - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
-  - **Use the specified BOM or formula version** – Pending *Formula versions with Co/By product* support.
-  - **Use the specified route version** – Pending *Demand with specific BOM or route requirements defined* support.
-
 
 - **Other** FastTab:
 
-  - **Freeze time fence (days)** – *Freeze time fence* support isn't planned in Planning Optimization.
-  - **BOM explosion time fence (days)** – Pending *Scheduling* support.
-  - **Capacity scheduling time fence (days)** – Pending *Scheduling* support.
-  - **Approved requisition time fence (days)** – Pending *Requisition* support.
-  - **Forecast plan time fence** – Pending *Forecast* support.
+  - **Freeze time fence (days)** – Pending *Freeze time fence* support.
+  - **BOM explosion time fence (days)** – Not supported in Planning Optimization.
+  - **Capacity scheduling time fence (days)** – Not supported in Planning Optimization.
+  - **Forecast plan time fence** – Forecast plans aren't supported in Planning Optimization. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:
 
-  - **Calculated delays** – Pending *Calculated delays* support.
-  - **Calculate delays time fence (days)** – Pending *Calculated delays* support.
+  - **Calculated delays** – This parameter isn't considered because delays are always calculated for the coverage group.
+  - **Calculate delays time fence (days)** – This parameter isn't considered because delays are calculated for the **Coverage time fence (days)**.
 
 ## Item coverage page
 
@@ -80,17 +74,15 @@ Planning Optimization doesn't use the following parameters or options on the **I
 
 - **General** tab:
 
-  - **Planned order type** – Planning Optimization doesn't support the *Kanban* option, pending *Kanban* support.
-  - **Freeze time fence (days)** – *Freeze time fence* support isn't planned in Planning Optimization.
-  - **BOM explosion time fence (days)** – Pending *Scheduling* support.
-  - **Approved requisition time fence (days)** – Pending *Requisition* support.
+  - **Planned order type** – Planning Optimization doesn't support the *Kanban* option.
+  - **Freeze time fence (days)** – Pending *Freeze time fence* support.
+  - **BOM explosion time fence (days)** – Not supported in Planning Optimization.
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
-  - **Minimum periods** – Pending *Minimum inventory level* support.
-  - **Planning formula** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Minimum periods** – Not supported in Planning Optimization.
+  - **Planning formula** – Pending. *Planning items support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Default priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Current priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Date changed** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
 
 ## Master plans page
 
@@ -98,34 +90,29 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **General** FastTab:
 
-  - **Override on hand** – Pending *Consumption of on-hand inventory* support.
-  - **Include continuity plan** – Pending *Continuity scheduling* support.
-  - **Scheduling method** – Pending *Scheduling* support.
-  - **Finite property** – Pending *Scheduling* support.
-  - **Backward scheduling capacity time fence** – Pending *Scheduling* support.
-  - **Finite capacity** – Pending *Scheduling* support.
-  - **Finite capacity time fence** – Pending *Scheduling* support.
-  - **Capacity time fence for bottleneck resources** – This field will no longer be supported on Planning Optimization, as we detected that customers were not using it. 
+  - **Include continuity plan** – Not supported in Planning Optimization.
+  - **Backward scheduling capacity time fence** – Not supported in Planning Optimization.
+  - **Capacity time fence for bottleneck resources** – This field will no longer be supported in Planning Optimization because we detected that customers weren't using it.
   - **Planned orders** – Planning Optimization uses fixed number sequences.
   - **Session** – Planning Optimization uses fixed number sequences.
-  - **Continuity plan** – Planning Optimization uses fixed number sequences.
+  - **Continuity plan** – Not supported in Planning Optimization.
 
 - **Time fences in days** FastTab:
 
   - **Freeze** – *Freeze time fence* isn't yet supported in Planning Optimization.
-  - **Explosion** – Pending *Scheduling* support.
-  - **Forecast plan** – Pending additional *Forecast* support.
-  - **Continuity plan** – Pending *Continuity scheduling* support.
-  - **Calculated delays** – Pending additional *Calculated delays* support.
-  - **Sequencing** – Pending *Production* support.
+  - **Explosion** – Not supported in Planning Optimization.
+  - **Forecast plan** – Not supported in Planning Optimization.
+  - **Continuity plan** – Not supported in Planning Optimization.
+  - **Calculated delays** – This parameter isn't considered. Calculated delays are created for the **coverage time fence (days)**.
+  - **Capacity** - Not supported in Planning Optimization.
 
 - **Calculated delays** FastTab:
 
-  - **Ensure that the planned orders are not created prior to the master planning run date** – Pending *Calculated delays* support.
+  - **Ensure that the planned orders are not created prior to the master planning run date** – Not supported in Planning Optimization. Planning Optimization never creates planned orders in the past.
   - **Add the calculated delay to the requirement date** (in the **Planned purchase orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
   - **Add the calculated delay to the requirement date** (in the **Planned production orders** section) – Starting January 18, 2023, Planning Optimization supports this field.
   - **Add the calculated delay to the requirement date** (in the **Planned transfer** section) – Starting January 18, 2023, Planning Optimization supports this field.
-  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Starting January 18, 2023, Planning Optimization supports this field.
+  - **Add the calculated delay to the requirement date** (in the **Planned kanban** section) – Kanban isn't supported in Planning Optimization.
 
 - **Action message** FastTab:
 
@@ -145,11 +132,3 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 - **Engineer** FastTab:
 
   - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-
-
-
-  
-
-
- 

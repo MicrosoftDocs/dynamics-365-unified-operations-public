@@ -2,14 +2,14 @@
 title: Active Directory security groups
 description: This article provides information about the Active Directory security groups feature.
 author: peakerbl
-ms.date: 11/10/2022
+ms.date: 05/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: Peakerbl
 ms.search.validFrom: 2022-11-10
 ms.dyn365.ops.version: AX 7.0
 ---
@@ -26,15 +26,16 @@ Group-based role assignments are applied by using manual and automatic rule-base
 
 Before you enable the **Active Directory security groups** feature, it's important that you are aware of the following known limitations. Several of the limitations affect internal control and auditing.
 
-- Segregation of duty reporting doesn't consider these role assignments.
 - No database logging can be done for these role assignments.
 - Security and licensing reports don't include these role assignments.
+- Segregation of duties engine is not compatible with these role assignments.
 - Pages that show role assignments, the **Assign users to role** page, and the **Roles for selected user** FactBox don't include these role assignments.
 - External users aren't supported. They can't use JIT provisioning, and no roles can be assigned to them based on group memberships.
 - Workflows that depend on assigned roles don't consider these role assignments.
 - Disabling a group in system administration doesn't stop JIT provisioning or role assignment.
 - The **User Id** value of users that are created through JIT provisioning has a leading dollar sign ($) and numbers.
 - Publishing views to security roles doesn't consider the role assignments made to Active directory security groups. 
+- Legal entity assignments are applied to the entire Active directory security group. 
 
 Microsoft doesn't expect to address these known limitations until the group experience is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](/power-platform/admin/manage-group-teams).
 

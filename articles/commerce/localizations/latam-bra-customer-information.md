@@ -14,7 +14,6 @@ ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.industry: Retail
 ms.search.form: 
-manager: annbe
 ---
 # Manage customer information in POS for Brazil
 

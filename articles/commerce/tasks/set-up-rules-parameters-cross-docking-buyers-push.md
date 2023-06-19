@@ -5,7 +5,7 @@ title: Set up rules and parameters for cross docking and buyer's push
 description: This procedure demonstrates the steps to create Replenishment rules. 
 author: josaw1
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

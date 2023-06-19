@@ -2,7 +2,7 @@
 title: Retail software development kit (SDK) extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Commerce.
 author: josaw1
-ms.date: 02/25/2022
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 89803
 ms.assetid: 565d9e98-77eb-4495-987a-ad9e2de303cc
 ms.search.industry: Retail
 ---
@@ -20,6 +19,7 @@ ms.search.industry: Retail
 # Retail software development kit (SDK) extensibility samples
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 The Retail software development kit (SDK) includes extensibility samples. These samples are a good way to learn about different ways to customize Microsoft Dynamics 365 Commerce.
 

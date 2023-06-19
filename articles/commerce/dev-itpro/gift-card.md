@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 02/01/2023
+ms.date: 05/18/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -15,7 +15,6 @@ ms.search.validFrom: 2017-10-02
 # Support for external gift cards
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 
@@ -52,6 +51,10 @@ In the following example, if the first four digits of a card number are **6036**
 | Card number from   | 6000  |
 | Card number to     | 6999  |
 | Digits to identify | 4     |
+
+### Gift card item numbers
+
+The **Gift card item number** field values mentioned in the [Store setup](#store-setup), [Call center setup](#call-center-setup), and [Online store setup](#online-store-setup) sections below should differ from the ID values used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
 ### Payment methods
 
@@ -217,9 +220,11 @@ In the back office, on the **Payment services** page, configure the payment serv
 4. Select **New**.
 5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
 6. On the **General** FastTab, set the following fields:
-
     - In the **Operation name** field, select **Pay gift card**.
-    - In the **Connector name** field, select **TestConnector**.
+    - In the **Connector name** field, select **TestConnector**.  
+
+    > [!NOTE] 
+    > If the **Connector name** field is disabled, save the record, and then on the Action Pane, select **Electronic payment setup**. Select **+New** to add a payment type, configure the payment type, and then select **Save**. The connector field should now be selectable. 
 
 9. On the **Posting** FastTab, set the **Gift card item number** field to **0010**.
 10. Select **Save**.

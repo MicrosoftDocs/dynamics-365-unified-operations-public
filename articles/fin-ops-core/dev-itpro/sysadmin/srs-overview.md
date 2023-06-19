@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: Platform update 1
-ms.custom: 89071
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ms.search.form: SysDataSharingConfiguration
 ---

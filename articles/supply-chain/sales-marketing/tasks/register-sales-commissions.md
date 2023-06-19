@@ -5,7 +5,7 @@ title: Register sales commissions
 description: This article explains how sales commissions are calculated and registered. 
 author: Henrikan
 ms.date: 08/06/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

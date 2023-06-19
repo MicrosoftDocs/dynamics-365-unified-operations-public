@@ -45,17 +45,18 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Austria         |   September 2022         | 10.0.30HF         |    Cross border payments Austria EDIFACT-PAYMUL deprecation by banks in November 2022 and replacement by pain.001.001.09 format  |
-|      Brazil         |   June 2022         | 10.0.30HF         |    EFD ICMS IPI - version 3.0.9  |
-|      Brazil         |   August 2022         | 10.0.30         |    NF-e NT2021.004  v1.31 - Layout and validation rules updates  |
-|      Brazil         |   August 2022         | 10.0.30         |    EFD ICMS IPI - GP version 3.1.0  |
-|      Denmark         |   November 2022         | 10.0.29, 10.0.30, 10.0.31   |    DK VAT declaration preview report update for 2022  |
-|      Eastern Europe         |   July 2022         | 10.0.29         |    General ledger statement by main account  |
-|      Hungary         |   July 2022         | 10.0.30         |    VAT declaration in XML (2065A) and preview in Excel. Purchase invoices appendix in XML (2065M)  |
-|      Russia          |   June 2022     | 10.0.29    |  Import address data from the State Address Register (GAR)|
-|      Saudi Arabia      |   October 2022| 10.0.29 | Electronic invoicing in Saudi Arabia - Phase 2|
-|      Saudi Arabia      |   November 2022| 10.0.29HF, 10.0.30, 10.0.31HF | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
-|      Singapore      |   July 2022| 10.0.29 | IRAS Audit File (IAF) in TXT format |
+|      Brazil         |   February 2023         | 10.0.33HF         |    Record E115 of EFD ICMS IPI for SC becoming mandatory as of May 1, 2023  |
+|      Brazil         |   March 2023         | 10.0.32HF, 10.0.33HF, 10.0.34HF         |    Exclusion of ICMS from the PIS/COFINS CREDITS calculation base (MP 1.159/23, IN 2121/22)-sales tax  |
+|      Brazil         |   March 2023         | 10.0.32HF, 10.0.33HF, 10.0.34HF         |    Exclusion of ICMS from the PIS/COFINS CREDITS calculation base (MP 1.159/23, IN 2121/22)-withholding tax  |
+|      Denmark         |   November 2022         | 10.0.32   |    VAT declaration preview report update for 2022  |
+|      Germany         |   April 2023         | 10.0.32HF, 10.0.33HF, 10.0.34HF   |    VAT Declaration format changes Jan 2023  |
+|      Italy      |   October 2022| 10.0.32 | The new type of TD28 document to communicate the purchase of goods from San Marino |
+|      Italy      |   February 2023| 10.0.32HF, 10.0.33 | Unique Certification - 2023 in Dynamics 365 Finance |
+|      Italy      |   March 2023| 10.0.32HF, 10.0.33HF, 10.0.34 | VAT return 2023 - Dichiarazione Iva annuale 2023 |
+|      Italy      |   February 2023| 10.0.34 | Changes in the SEPA Payment tracings - Urgent Wire Transfers and Foreign Payments - Address and BIC fields |
+|      Japan      |   March 2023| 10.0.34 | New Qualified Invoice System requirements in Japan from October 1, 2023 |
+|      Poland      |   April 2023| 10.0.34 | Updates Payment terms in commercial transactions report (PL-00053) in accordance to D20222414L |
+|      Saudi Arabia      |   November 2022| 10.0.32 | Retail - Electronic invoicing in Saudi Arabia - Phase 2 |
 
 
 ## Additional resources

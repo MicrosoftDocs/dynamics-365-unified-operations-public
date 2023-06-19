@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Tax ID types for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Use this configuration to enter valid tax ID types in each country and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
 

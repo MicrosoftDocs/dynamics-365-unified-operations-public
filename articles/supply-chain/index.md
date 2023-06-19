@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
@@ -102,7 +102,7 @@ There are many articles about manufacturing and supply chain management on the [
 
 ## White papers
 
-- [Lean manufacturing: Capable to promise and kanban job scheduling](/dynamics/s-e/)
+- [Lean manufacturing: Capable to promise and kanban job scheduling](https://www.microsoft.com/download/details.aspx?id=101948)
 - [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## eLearning courses

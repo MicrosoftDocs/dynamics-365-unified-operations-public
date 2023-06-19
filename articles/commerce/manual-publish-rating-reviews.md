@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-manager: annbe
 ---
 
 # Enable manual publishing of ratings and reviews by a moderator

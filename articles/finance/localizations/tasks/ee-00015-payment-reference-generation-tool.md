@@ -3,7 +3,7 @@ title: EE-00015 Payment reference generation tool
 description: This procedure walks you through generating the payment references.
 author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

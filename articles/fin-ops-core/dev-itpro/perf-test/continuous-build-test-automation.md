@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 13171
 ms.assetid: 
 ---
 
@@ -44,7 +43,7 @@ For information about how to write custom test code or generate automated test c
 
 ### Choose a plan
 
-The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services) for your organization.
+The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/pricing/details/devops/azure-devops-services) for your organization.
 
 ### Set up Azure DevOps
 
