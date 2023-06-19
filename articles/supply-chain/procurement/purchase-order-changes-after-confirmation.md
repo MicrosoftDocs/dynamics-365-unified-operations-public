@@ -80,9 +80,9 @@ Follow these steps to install the Copilot application in your Supply Chain Manag
 
 ### Step 6: Enable the required security roles
 
-Users that should have access to the functionality must be assigned the *AIB Roles* security role in Dataverse.
+Users that should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
-From the detail view of the environment, locate the **Access** box and select **Users** or **Teams**. Select the users or teams that should have access and assign the  *AIB Roles* security role to them.
+From the detail view of the environment, locate the **Access** box and select **Users** or **Teams**. Select the users or teams that should have access and assign the  *AIB Roles* and *Finance and Operations AI* security roles to them.
 
 ## The Confirmed purchase orders with changes workspace
 
