@@ -78,18 +78,18 @@ A following [**message processing**](warehouse-message-processor-messages.md) wi
 > Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
 
 ##### Viewing and maintaining shipment order messages
-It is possible to both view and update shipment order messages in S365 SCM Warehouse-Only mode, which can be a quick way to test integrations as part of an implementation process. You can update the fields values which is not used as record keys (like the order header and line numbers) when a message is in a _Failed_ message state. The pages used to view and maintain the messages are:
+It is possible to both view and update shipment order messages in D365 SCM Warehouse-Only mode, which can be a quick way to test integrations as part of an implementation process.  When a message is in a _Failed_ message state you can update all field values, except the order header and line numbers. The pages used to view and maintain the messages are:
 
 - **Warehouse management > Inquiries and reports > Inbound shipment order messages**
 - **Warehouse management > Inquiries and reports > Outbound shipment order messages**
 
-The **Processing status** field can be used to monitor the progress of the shipment order messages. The the following states are available:
+The **Processing status** field can be used to monitor the progress of the shipment order messages. The following states are available:
 - _Receiving_ - The message is in the process of getting imported.
-- _Received_ - The message has been received and in a _Queued_ or _Canceled_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
+- _Received_ - The message has been received and in a _Queued_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
 - _Accepted_ - The message processor state is _Processed_ and thereby a shipment order has been created.  
 - _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of an edit saving.
 - _Draft_ - A copy of a message which can get updated. To reprocess the message you can move the message into the _Queued_ message state by using the **Queue** option.
-<!-- perlynne Canceled message state + ITem number edit! => ??? -->
+- _Canceled_ - The message has been canceled. You can resend a message (for the same order) from the external system.
 > [!TIP]
 >  By selecting the **Show old versions** option you can follow the manual message updates by using the _Replaced by message_ field value.
 
@@ -156,6 +156,9 @@ The **Warehouse management > Workspaces > Warehouse integration monitoring** pag
 - _Received_ - All quantities has been **Receiving completed**
 
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal purchase order document. No financial postings as part of the [**General ledger**](../../finance/general-ledger/general-ledger.md) will be used for this source document.
+
+On the _Inbound shipment order lines_ you can use the option **Update line > Delivery remainder** to write down the expected order line transaction quantities. Make sure to have the proper user role security privilege assigned for this process.
+
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the _Order number prefix/suffix_ options.
 
@@ -180,6 +183,8 @@ In case you are already knowledgeable about D365 SCM, you might find this docume
 
 In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
 
+On the _Onbound shipment order lines_ you can use the option **Update line > Delivery remainder** to write down the expected order line transaction quantities. Make sure to have the proper user role security privilege assigned for this process.
+
 ## Automatic release of outbound shipment orders
 
 To enable automatically release to warehouse you can use the **Warehouse management > Release to warehouse > Automatic release of outbound shipment orders** batch job process. Please refer to the [Release to warehouse](release-to-warehouse-process.md) topic to learn more.
@@ -192,11 +197,18 @@ The high-level process for inbound processing is as following:
 - External systems provides _Inbound shipment order_ messages
 - The messages get processed in _Supply Chain Warehouse-only mode_ and orders get created
 - Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during [message processing](../supply-chain-dev/message-processor.md) based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
-- Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes:
+- Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes which all requires inbound loads:
 
   - _License plate receiving (and put away)_
   - _Load item receiving (and put away)_
-  - _Mixed license plate receiving (and put away)_ for source document line identification method _Load item receiving_
+  - _Mixed license plate receiving (and put away)_ for source document line identification method:
+  
+   - _Load item receiving_
+   - _Inbound shipment order line receiving_ - when assigned to loads
+   - _Inbound shipment item receiving_ - when assigned to loads
+  
+  - _Inbound shipment order line receiving (and put away)_ when assigned to loads
+  - _Inbound shipment order item receiving (and put away)_ when assigned to loads
 
 - **Receiving completed** processes will follow related to a load which will update the load status to _Received_ and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
 - The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
@@ -305,7 +317,8 @@ The following high-level processes are not supported out-of-the-box related to a
 | [Owner dimension](../inventory/consignment.md#inventory-owners) values different from operating legal entity | It is not yet supported to import and process _shipment order lines_ and getting an **Owner** tracking dimension value different from the used company/legal entity |
 | Items enabled for [catch weight processing](catch-weight-processing.md) | Items enabled for catch weight processing is not supported as part of the _Inbound_ and _Outbound shipment orders_ processing |
 | Policies defined per vendor or customer accounts | The representation of **Vendor** and **Customers** is not used for the _Inbound and Outbound shipment orders_. Thereby it is not possible to use related order processing policies with this kind of setup. An example for this is the customer and vendor specific [**Product filters**](filters-and-filter-codes.md) |
-
+| Order line _Registration_ and _Pick_ update processing | _Inbound_ and _Outbound shipment order lines_ does not support the manual registration and un-registration process like other order types as for example _Purchase_, _Sales_, and _Transfer order lines_ |
+| [Item arrival journal](../inventory/arrival-overview.md) processing  | In current version the _Inbound shipment order lines_ can get processed via an _Item arrival journal_, but no _Load ID_ will get associated with the related inventory transactions. This means that you will not be able to use the out-of-the-box [Shipment receipt](#shipment-receipts) information, nor getting the [_Inbound shipment order status_](#inbound-shipment-orders) updated |
 
 # Example of using inbound and outbound shipment orders
 
@@ -469,9 +482,9 @@ Having the two documents imported into the [message queue](#inbound-outbound-shi
 
 ## What to do when a message processing is **Failed**?
 
-The [message processing](../supply-chain-dev/message-processor.md) will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into  reprocessing (**Queue** option) or **Cancel** the message. Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message.
+The [message processing](../supply-chain-dev/message-processor.md) will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into reprocessing (**Queue** option), **Cancel** the message, or manually [update the message](#viewing-and-maintaining-shipment-order-messages).
 > [!NOTE]
-> You can as well edit the _Failed_ messages in the [**inbound and outbound shipment order messages**](#inbound-and-outbound-shipment-order-messages) pages.
+> Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message..
 
 ## Why does my message not get processed, but stays in the _Queued_ state?
 
@@ -498,20 +511,19 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 - _Shipping clerk_ - Working with outbound processes
 - _Warehouse worker_ - Working with daily warehouse processes
 
-
 ## Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
 
 Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 <!-- perlynne
 
-- Cancel state message edit
 - Setup post in-/out packing slip + Message processor process automation...  ?
 - Detour Receiving complete
 - Enhanced inbound receiving process
-- Delivery remainder => 
 - OData value mapping (Item/Warehouse) counting + dispatch/advice notification
-- Unsupported: Registration/unregistration Picking/Unpicking on order lines
+- New mobile device menu items:
+    - Inbound shipment order line receiving (and put away)
+    - Inbound shipment order item receiving (and put away)
 
 ### Warehouse management initiation wizard
 ### Outbound configuration wizard
