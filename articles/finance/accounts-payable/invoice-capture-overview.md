@@ -4,7 +4,7 @@
 title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
-ms.date: 04/03/2023
+ms.date: 06/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -58,4 +58,4 @@ The following table shows the roles that are required to set up and use the Invo
 The role **InvoiceCaptureOperator** is required to be included in role settings to successfully execute the derivation, validation logic in Invoice capture and transfer the invoice to Dynamics 365 Finance. For touchless scenario, the role has to be added to the corresponding flow user in F&O side. 
 
 > [!NOTE]
-> Environment maker is required to be assigned to Accounts payable admin if he/she is in charge of the creation of the channels in Invoice capture.
+> Environment maker must be assigned to the Accounts payable admin if they create channels in Invoice capture.
