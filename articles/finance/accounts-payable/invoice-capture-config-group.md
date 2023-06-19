@@ -36,9 +36,9 @@ Administrators can manage the list of invoice fields and the manual review setti
 
 ## What is a configuration group?
 
-Invoices received from various suppliers are in different styles and resolutions. These invoices may require different confidence score thresholds to determine if further review is needed to confirm the recognized invoice context.
+Invoices that are received from various suppliers are in different styles and resolutions. These invoices might require different confidence score thresholds to determine whether further review is needed to confirm the recognized invoice context.
 
-Typically, invoices from a single supplier are in a consistent format with a specific type of invoice, such as a purchase order invoice or a cost invoice. There may be cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivations and mapping logic specific to each type of invoice to ensure accuracy and completeness of the invoice data.
+Typically, invoices from a single supplier are in a consistent format and are a specific type of invoice, such as a purchase order invoice or a cost invoice. However, in cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivations and mapping logic that are specific to each type of invoice to ensure accuracy and completeness of the invoice data.
 
 The configuration group incorporates all the necessary settings for the review process in Invoice capture.
 
@@ -46,23 +46,21 @@ The configuration group incorporates all the necessary settings for the review p
 
 After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
-Administrators can assign different configuration groups to different levels, such as vendor account, legal entity and system. After a vendor account and legal entity are determined, the application will check whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system will check on the legal entity level. If no configuration group is assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used. 
-
+Administrators can assign different configuration groups to different levels, such as the vendor account, legal entity, and system. After a vendor account and legal entity are determined, the application checks whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system checks the legal entity level. If no configuration group is assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used.
 
 ## Manage configuration groups
 
 To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
-To create a new configuration group, select a configuration group and click **Copy**. A new configuration group will be created by duplicating an existing group. The new configuration group will display in the **Configuration group** list view. The new configuration group has the same values as the original configuration group except the **Group name** and **Group description** fields. 
+To create a new configuration group, select a configuration group, and then select **Copy**. A new configuration group is created by duplicating the existing group. The new configuration group appears in the **Configuration group** list view. It has all the same values as the original configuration group except in the **Group name** and **Group description** fields.
 
 ### Define the confidence score
 
-Admin can define the quality standard for the invoice date recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. For more information about confidence score, see [confidence score](/azure/cognitive-services/language-service/question-answering/concepts/confidence-score.md). The confidence score on each recognized field indicates confidence about the accuracy for the returned result. The value range of confidence score in Invoice capture is interpreted from 0 to 100. A higher score means AI Builder has more confidence in the recognized result. Admin can configure the threshold of confidence scores to indicate different severity of message.
+Administrators can define the quality standard for the invoice date that's recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. For more information about confidence score, see [Confidence score](/azure/cognitive-services/language-service/question-answering/concepts/confidence-score.md). The confidence score on each recognized field indicates confidence about the accuracy of the returned result. The value range of confidence scores in Invoice capture is interpreted as a number from 0 (zero) through 100. A higher score indicates that AI Builder has more confidence in the recognized result. Administrators can configure the threshold of confidence scores to indicate different message severities.
 
 ### Define whether manual review is required before invoice creation
 
-Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). 
-In default configuration group, it can be defined that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice will be transferred from invoice capture to Dynamics 365 finance and operations. This parameter affects the touchless rate in the Invoice capture process. 
+Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations apps. This parameter affects the touchless rate in the Invoice capture process.
 
 ### Supported invoice types
 
@@ -83,5 +81,3 @@ The Accounts payable administrator can create a configuration group, select the 
 ### Define the control of invoice fields
 
 For each invoice type, different fields can be selected to appear in the side-by-side view, default fields can be added or removed, and fields can be set as mandatory.
-
-
