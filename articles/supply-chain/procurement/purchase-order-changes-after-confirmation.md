@@ -20,10 +20,14 @@ ms.custom: bap-template
 > Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > During this preview phase, the summarization of changes and the summarization of downstream impact are only available in environments hosted in North America and will render in English. All other functionality is available globally.
+>
+> To understand the capabilities and limitations of AI-powered and Copilot features in Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
 
 <!-- KFM: Preview until 10.0.34 GA -->
 
 During the procurement planning process, any changes made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that will only have a low risk of downstream impact, which allows procurement managers to focus on high-impact changes so they can assess potential downstream order impacts and communicate directly with vendors.
+
+This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use artificial intelligence to assist procurement managers with their daily procurement tasks.
 
 This article describes the workspace where users can review and accept changes made by suppliers to *Confirmed* purchase orders based on the downstream impact of the changes made.
 
