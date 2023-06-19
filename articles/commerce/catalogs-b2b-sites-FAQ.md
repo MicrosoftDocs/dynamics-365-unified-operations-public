@@ -55,9 +55,9 @@ No, a B2B shopper isn't allowed to purchase from the default assortment. That as
 As noted, if **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters, then it's mandatory to have at least one catalog associated with every customer hierarchy. And if B2B shopper is accessing a B2B catalog, that was previously accessible, confirm if the catalog is still valid and not expired or retracted by your organization. 
 
 ### Upon getting a 404 page, for expired or invalid catalog, a B2B shopper is not getting redirected to catalog-picker page? 
-As a site administrator, please make sure to select catalog picker page in Extension-->Route and Save & Publish the changes in Site builder. 
-![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/28311449/0c179087-7fd3-442d-9435-6708c7760ca7)
+As a site administrator, please make sure to select your 'catalog picker' page in' Extension-->Route and Save & Publish' the changes in Site builder. 
 
+![image](./media/Catalog-Picker-Route-Site-Extensions.png)
 
 ### Can marketing content be curated for a product that is specific to a catalog?
 
