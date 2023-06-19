@@ -84,11 +84,10 @@ It is possible to both view and update shipment order messages in S365 SCM Wareh
 - **Warehouse management > Inquiries and reports > Outbound shipment order messages**
 
 The **Processing status** field can be used to monitor the progress of the shipment order messages. The the following states are available:
-
-- _Received_ - The message has been received and in a _Queued_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
+- _Receiving_ - The message is in the process of getting imported.
+- _Received_ - The message has been received and in a _Queued_ or _Canceled_ [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
 - _Accepted_ - The message processor state is _Processed_ and thereby a shipment order has been created.  
 - _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of an edit saving.
-- _Canceled_ - The message has been canceled and will thereby not get evaluated.
 - _Draft_ - A copy of a message which can get updated. To reprocess the message you can move the message into the _Queued_ message state by using the **Queue** option.
 <!-- perlynne Canceled message state + ITem number edit! => ??? -->
 > [!TIP]
@@ -303,6 +302,10 @@ The following high-level processes are not supported out-of-the-box related to a
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
 | Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way than the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
+| [Owner dimension](../inventory/consignment.md#inventory-owners) values different from operating legal entity | It is not yet supported to import and process _shipment order lines_ and getting an **Owner** tracking dimension value different from the used company/legal entity |
+| Items enabled for [catch weight processing](catch-weight-processing.md) | Items enabled for catch weight processing is not supported as part of the _Inbound_ and _Outbound shipment orders_ processing |
+| Policies defined per vendor or customer accounts | The representation of **Vendor** and **Customers** is not used for the _Inbound and Outbound shipment orders_. Thereby it is not possible to use related order processing policies with this kind of setup. An example for this is the customer and vendor specific [**Product filters**](filters-and-filter-codes.md) |
+
 
 # Example of using inbound and outbound shipment orders
 
@@ -502,14 +505,13 @@ Unless you setup the _Released products_ with an **Item model group** enabled wi
 
 <!-- perlynne
 
-Update ..Cancel state message edit
-Setup post in-/out packing slip + Message processor process automation...  ?
-Detour Receiving complete
-Enhanced inbound receiving process
-
-Delivery remainder
-OData value mapping (Item/Warehouse) counting + dispatch/advice notification
-
+- Cancel state message edit
+- Setup post in-/out packing slip + Message processor process automation...  ?
+- Detour Receiving complete
+- Enhanced inbound receiving process
+- Delivery remainder => 
+- OData value mapping (Item/Warehouse) counting + dispatch/advice notification
+- Unsupported: Registration/unregistration Picking/Unpicking on order lines
 
 ### Warehouse management initiation wizard
 ### Outbound configuration wizard
