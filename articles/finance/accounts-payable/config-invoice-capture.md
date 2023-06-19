@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 05/12/2023
+ms.date: 06/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -48,16 +48,16 @@ Manage file filters lets administrators define additional filters for incoming i
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.  
 
-The file filter is quite flexible and can be applied on different channel levels. When the invoice document is received, it will first check the file filter on the channel level. If no file filter is assigned to the channel level, it will use the file filter on the system level. 
+The file filter is flexible and can be applied on different channel levels. When the invoice document is received, the file filter will be checked first on the channel level. If no file filter is assigned to the channel level, it will use the file filter on the system level. 
 
-**File filter settings**
+### File filter settings
 
-There are three settings need to be configured in the file filter:
+Configure the following setting in the file filter:
 
 1.	**Accepted file size**
-   Admin has to define the minimal accepted file size and maximum file size for the invoice document. The maximum file size cannot exceed 5MB.
+   Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size cannot exceed 5MB.
 2.	**Supported file types**
-   Admin has to select at least one of the following file types which are currently supported for AI Builder recognition service:
+   Select at least one of the following file types which are currently supported for AI Builder recognition service:
  -	PDF
  -	PNG
  -	JPG
@@ -65,7 +65,7 @@ There are three settings need to be configured in the file filter:
  -	TIF
  -	TIFF
 3.	**Supported file names**
-AP admin can filter out files that are not invoice-relevant by using file name rules. S/he can apply different rules on file names to accept files only when the name contains predefined strings or exclude files that contain the defined strings.
+Filter out files that aren't relevant to invoices using file name rules. Different rules can be applied to accept files only when the name contains predefined strings or exclude files that contain the defined strings.
 
 ## Definition of master data
 
