@@ -3758,7 +3758,7 @@
       - name: Overview
         href: transparency-note.md
       - name: Transparency notes for the Confirmed purchase orders with changes workspace
-        href: transparency-note-copilot-for-prcurement.md
+        href: transparency-note-confirmed-po-changes.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
