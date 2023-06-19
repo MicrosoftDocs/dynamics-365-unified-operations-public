@@ -2,7 +2,7 @@
 # required metadata
 
 title: Collections coordinator summary
-description: This topic shows how AI-generated text, Collections coordinator summary, displays on the Collections coordinator workspace. 
+description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
 ms.date: 06/04/2023
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -28,86 +28,103 @@ ms.dyn365.ops.version: 10.0.24
 ---
 # Collections coordinator summary
 
->[!Note] 
->Some or all of the functionality noted in this article is available as part of a preview release. The content and the functionality are subject to change. 
+> [!NOTE]
+> Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
-## Overview
-Enable the **Collections coordinator summary** feature to get an AI-generated summary of a customer’s account and revenue and use AI-generated reminder emails. This feature is powered by Azure OpenAI’s large language model and has been developed to reduce the time it takes to review collections details for your customers. The goals of this capability are to: 
- - provide customer account information 
- - help make better decisions about your customers 
- - increase efficiency by drafting a reminder email that can be edited and then sent to your customer
+Enable the **Collections coordinator summary** feature to get an AI-generated summary of a customer's account and revenue in the **Collections coordinator** workspace, and to send AI-generated reminder emails. This feature is powered by Microsoft Azure OpenAI's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers.
 
-## Version requirements
-Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 and later. 
+This feature has three purposes:
+
+- Provide customer account information.
+- Help you make better decisions about your customers.
+- Increase efficiency by drafting reminder emails that you can edit and then send to your customers.
+
+## Prerequisites
+
+### Version requirements
+
+Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 and later.
+
+### Location and language requirements
+
+Collections coordinator summary is currently supported only in the United States. It's available only to users who are configured to use United States English as their language in Finance.
+
+### Role requirements
+
+To complete the configuration procedures in the next section, you must have the following roles:
+
+- The **System administrator** and **System customizer** roles in Power Platform admin center.
+- The **System administrator** role in Finance.
+- The **Organization Admin** role, so that you can create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to you in the **Project security** role field in Lifecycle Services.
 
 ## Configure Collections coordinator summary
-This article describes how to configure **Collections coordinator summary**.
 
-**Collections coordinator summary** is currently supported in the United States. It is only available to users configured to use English-United States in Dynamics 365 Finance. The AI-generated text displays on the **Collections coordinator** workspace.
-To complete the following procedures and successfully configure the **Collections coordinator summary**, you must have the following privileges:
- - The **System administrator** and **System customizer** roles in Power Platform admin center
- - The **System administrator** role in Microsoft Dynamics 365 Finance
- - The **Organization Admin** role to create environments in Microsoft Dynamics Lifecycle Services. Additionally, the **Project owner** or **Environment manager** role must be assigned to the user in the **Project security** role field in Lifecycle Services.
+Follow the procedures in this section to configure Collections coordinator summary.
 
-## Configure Power Platform admin center
-1.	Use this link to find the the **Copilot in Microsoft Dynamics 365 Finance** solution in Partner center. https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92 
-2.	Select **Resources** > **Dynamics 365 installed apps**. 
-3.	Find **Finance and Operations Virtual entity**. The status should be **Update available**. Select the **...** and **Update**. 
-4.	Accept the terms of service and then select **Update**. 
-5.	You can check the status of the update. During the update, the status is **Installing**. On completion, the status will change to **Installed**
+### Configure Power Platform admin center
 
-## Install Copilot 
-1. In Partner Center, find the **Copilot in Microsoft Dynamics 365 Finance** solution. 
-2. Accept the terms and conditions and select **Install**. The **Copilot in Microsoft Dynamics 365 Finance** will be installed in the selected environment.
-3. Go to the environment page for the selected environment. 
-4. Select **Dynamics 365 apps** to check the status of the installation. The status is **Installing** and after completion, the status is **Installed**.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the left menu, select **Resources** \> **Dynamics 365 installed apps**.
+1. Select **Resources** \> **Dynamics 365 installed apps**.
+1. Find **Finance and Operations Virtual entity**. The status should be **Update available**.
+1. Select the ellipsis button (**&hellip;**), and then select **Update** on the menu.
+1. Accept the terms of service, and then select **Update**.
+1. You can check the status of the update. While the update is occurring, the status is **Installing**. After the update is completed, the status is changed to **Installed**.
 
-## Dataverse consent for user impersonation
-Explicit consent must be granted for Dynamics 365 finance and operations to impersonate Dataverse users. 
+### Install Copilot
 
-1. In Power Platform admin center, select the Microsoft Power Platform environment where the above application was installed.
-2. Select **Settings** in the top action pane.
-3. Expand **Product** and select **Features**. 
-4. Find **Finance and Operations in Dataverse**.
-5. Set **Enable finance and operations user impersonation in Dataverse** to **On**.  
+1. In Partner Center, go to the [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92) solution.
+1. Accept the terms and conditions, and then select **Install**. The Copilot solution is installed in the selected environment.
+1. Go to the environment page for the selected environment.
+1. Select **Dynamics 365 apps** to check the status of the installation. While the installation is occurring, the status is **Installing**. After the installation is completed, the status is changed to **Installed**.
 
->[!Note] 
->For more information, see [Managed feature settings](/power-platform/admin/settings-features) .
+### Grant Dataverse consent for user impersonation
 
-## Dataverse role assignment
-Users in Dataverse need to be assigned to the AIB role.
+You must grant explicit consent for Dynamics 365 finance and operations apps to impersonate Dataverse users.
 
-1.	In Power Platform admin center, select the Microsoft Power Platform environment where the above application was installed.
-2.	Select **Settings** in the top action pane.
-3.	Expand **Users and Permissions**.
-4.	Select **Security roles**. 
-5.	Find the AIB role
-6.	Use the **...** menu to add new members to this role.
+1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
+1. Select **Settings** at the top of the page.
+1. Expand **Product**, and select **Features**.
+1. Find **Finance and Operations in Dataverse**.
+1. Set the **Enable finance and operations user impersonation in Dataverse** option to **On**.
 
->[!Note] 
->For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
+> [!NOTE]
+> For more information, see [Managed feature settings](/power-platform/admin/settings-features).
 
-## Enable Collections coordinator summary 
-To enable the **Collections coordinator summary**, go to:
-1. Go to **Feature management** workspace, on the **All** tab. 
-2. Enter **(Preview) Collections coordinator summary**. 
-3. Select **Learn more** to learn more about the AI terms. 
-4. Select **Enable**. 
+### Assign roles to Dataverse users
 
->[!Note] 
->The **(Preview) Collections coordinator workspace** must also be enabled for this functionality to display this workspace.
+Users in Dataverse must be assigned the **AIB** role.
 
-## Summary text
-The AI-generated content appears below the data points on the **Collections coordinator** workspace as soon as a customer is selected in the **Customer account** field. Azure OpenAI is used to generate the results based on data in Dynamics 365 Finance and the provided prompts. All calculations are done in Dynamics 365 finance. The summary is based on the amounts for a customer’s payment history for the past year, outstanding debt amount and revenue year-to-date.
+1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
+1. Select **Settings** at the top of the page.
+1. Expand **Users and Permissions**, and select **Security roles**.
+1. Find the **AIB** role.
+1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 
-## Create reminder email
-Select **Create reminder email** to have an AI-generated email drafted in the format of a reminder letter. When selected, a dialog box displays the message **"A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?”**. Select **No** to close the dialog and return to the workspace. Select **Yes** to open your default email service with an email draft. Azure OpenAI services incorporates robust filters and safeguards to help prevent the generation of offensive, destructive or abusive content and will not be created using this feature.
+> [!NOTE]
+> For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
 
->[!Note] 
->The email is created using AI and Dynamics 365 Finance data and is a suggestion. It is your responsibility to review and edit the suggested content to make sure it’s complete, accurate and appropriate before sending your email.  
+### Enable Collections coordinator summary
 
+1. In Finance, open the **Feature management** workspace.
+1. On the **All** tab, search for and select **(Preview) Collections coordinator summary**.
+1. Select **Learn more** to learn more about the AI terms.
+1. Select **Enable**.
 
+> [!IMPORTANT]
+> The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator** workspace available.
 
+## View summary text
 
+As soon as a customer is selected in the **Customer account** field in the **Collections coordinator** workspace, the AI-generated content appears below the data points. Azure OpenAI is used to generate the results, based on data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer's payment history for the past year, outstanding debt amount, and year-to-date revenue.
 
+## Generate a reminder email
 
+To have AI generate a draft email in the form of a reminder letter, select **Create reminder email**. You receive the following message:
+
+> A reminder email will be created with AI. Make sure AI-generated content is complete, accurate, and appropriate before using. Do you want to create the email?
+
+To return to the **Collections coordinator** workspace without generating an email, select **No**. To generate and open a draft email in your default email service, select **Yes**. Azure OpenAI services incorporates robust filters and safeguards to help prevent offensive, destructive, or abusive content from being created by using this feature.
+
+> [!NOTE]
+> The email is generated by using AI and Finance data, and the content is a suggestion. It's your responsibility to review and edit the suggested content to ensure that it's complete, accurate, and appropriate before you send the email.
