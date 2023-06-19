@@ -212,15 +212,19 @@ The high-level process for inbound processing is as following:
 
 - **Receiving completed** processes will follow related to a load which will update the load status to _Received_ and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
 - The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
-- The _Inbound shipment orders_ get finalized by running the periodic back-ground process **Post shipment receipts**.
+- The _Inbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job.
 
 > [!NOTE] <!-- perlynne -->
 > The **Receiving completed** process requires load lines being fully received. Future plans exists for having automated process handling based on policy settings.
 
 ## <a name="shipment-receipts"></a> Shipment Receipts
-
+<!-- perlynne -->
 In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can follow the **Posting status** on the header data.
-The header will get from _Ready for posting_ into _Posted_ by processing the **Warehouse management > Periodic tasks > Post shipment receipts** batch job which will ensure the related inbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
+The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related inbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
+You can as well use **Warehouse management > Periodic tasks > Post shipment receipts** page to maintain the **Process automation background processes**.
+
+> [!NOTE]
+> Reversal of the receiving confirmation will be supported as long as the related inbound shipment order line transactions have not been finalized.
 
 # Outbound process
 
@@ -233,24 +237,29 @@ The high-level process for outbound processing is as following:
 - The outbound warehouse work get processed and the related outbound shipment order line transactions get updated to status _Picked_.
 - The loads get outbound ship confirmed which will create **Business events** and [**Shipment packing slip**](#shipment-packing-slips) data for the external systems.
 - The external systems read and uses the [**Shipment packing slip**](#shipment-packing-slips) data for further processing, like for example sales order invoicing in case of having sales orders associated to _outbound shipment orders_.
-- The _Outbound shipment orders_ get finalized by running the periodic back-ground process **Post shipment packing slips**.
+- The _Outbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job.
 
 > [!NOTE]
-> Reversal of shipment packing slips will be supported as long as the related outbound shipment order line transactions have not been finalized.
+> Reversal of the shipment confirmation will be supported as long as the related outbound shipment order line transactions have not been finalized.
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
 In the **Warehouse management > Inquiries and reports > Shipment packing slips** page you can view the detailed line transactions related to the shipped inventory and print out a report of the data via the **Preview/Print** option. You can control the printed inventory dimension values as part of the **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**.
-
+<!-- Perlynne -->
 The **Shipment packing slip** data is version controlled and you can follow the **Posting status** on the header data.
-The header will get from _Ready for posting_ into _Posted_ by processing the **Warehouse management > Periodic tasks > Post shipment packing slips** batch job which will ensure the related outbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
+The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related outbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
+You can as well use **Warehouse management > Periodic tasks > Post shipment packing slips** page to maintain the **Process automation background processes**.
 
 > [!NOTE]
 > In case of not having defined a language for the order the report will fall back to use the company specific language settings.
 
 # Inventory on-hand updates between the systems
 
+![SCM warehouse-only mode internal process](./media/internal-wom-process.png)
+
 The warehouse management module supports multiple inventory on-hand update processes using the [Counting journal](../inventory/inventory-journals.md#counting), you can read more about the cycle counting process [here](cycle-counting.md).
+
+
 As part of a journal posting process a [business event](#business-events) gets triggered and the integrated systems can read about the updates as part of the [counting journal entities](https://learn.microsoft.com/en-us/common-data-model/schema/core/operationscommon/entities/supplychain/inventoryandwarehousemanagement/inventinventorycountingjournallineentity). Here it is important only to act on the updated quantities not to get out of sync as part of the updates. Please refer to the scenario below related to this:
 
 **PREREQUSITE:**
