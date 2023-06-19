@@ -46,7 +46,7 @@ A **Default** channel is used to upload invoices into Invoice capture. The invoi
 
 “Document receive API”, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. This is used to receive the invoice documents. The admin follows the API standards and provides the correct input parameters to confirm that API is correctly called.
 
-Documents receive API must be integrated with a valid channel ID. If the document receiving API is called without a valid channel ID, the call will be invalid. The invoice document can't be captured and won't be displayed in the **Received files** list page.
+Documents receive API must be integrated with a valid channel ID. If the document receiving API is called without a valid channel ID, the call is invalid. The invoice document can't be captured and won't be displayed in the **Received files** list page.
 
 ### Input parameters
 
