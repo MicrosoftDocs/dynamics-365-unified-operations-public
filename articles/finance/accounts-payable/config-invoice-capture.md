@@ -42,14 +42,32 @@ After the Invoice capture solution is installed, default configurations for usin
 4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
 
-### Manage file filters (optional)
+## Manage file filters (optional)
 
 Manage file filters lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and appear in the **Received files (Pending)** list with status of **Canceled**. Clerks can review them and decide whether to void and obsolete the file. This behavior is different from the one defined in the flow behind the channel. In the flow, files that don't meet the criteria are not received. 
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.  
 
+The file filter is quite flexible and can be applied on different channel levels. When the invoice document is received, it will first check the file filter on the channel level. If no file filter is assigned to the channel level, it will use the file filter on the system level. 
 
-### Definition of master data
+**File filter settings**
+
+There are three settings need to be configured in the file filter:
+
+1.	**Accepted file size**
+   Admin has to define the minimal accepted file size and maximum file size for the invoice document. The maximum file size cannot exceed 5MB.
+2.	**Supported file types**
+   Admin has to select at least one of the following file types which are currently supported for AI Builder recognition service:
+ -	PDF
+ -	PNG
+ -	JPG
+ -	JPEG
+ -	TIF
+ -	TIFF
+3.	**Supported file names**
+AP admin can filter out files that are not invoice-relevant by using file name rules. S/he can apply different rules on file names to accept files only when the name contains predefined strings or exclude files that contain the defined strings.
+
+## Definition of master data
 
 Invoice capture processing requires two data types: legal entities and vendors.
 
@@ -57,8 +75,7 @@ Invoice capture processing requires two data types: legal entities and vendors.
 
 **Vendors** are individuals or organizations that supply goods or services to a business. In Dynamics 365 Finance, if a vendor provides services or product to multiple legal entities, a vendor account has to be created for each legal entity and business activity can be recorded. In Invoice capture, the vendor master data is used to automatically derive the vendor account and helps increase the touchless rate in invoice processing.
 
-
-#### Sync legal entities
+### Sync legal entities
 
 In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
@@ -68,7 +85,7 @@ In the **Manage legal entities** process, users can't manually create legal enti
 
 After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
-#### Sync vendors
+### Sync vendors
  In **Manage vendors**, there are three options to sync the vendor accounts:
  1. **Sync all** - all vendor accounts are synced. This will potentially cause a performance issue.
  2. **Sync by legal entity** - The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
