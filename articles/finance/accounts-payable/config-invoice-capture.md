@@ -44,20 +44,20 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## Manage file filters (optional)
 
-Manage file filters lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and appear in the **Received files (Pending)** list with status of **Canceled**. Clerks can review them and decide whether to void and obsolete the file. This behavior is different from the one defined in the flow behind the channel. In the flow, files that don't meet the criteria are not received. 
+**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received and appear in the **Received files (Pending)** list with status of **Canceled**. Clerks can review them and decide whether to void and obsolete the file. This behavior is different from the one defined in the flow behind the channel. In the flow, files that don't meet the criteria aren't received. 
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.  
 
-The file filter is flexible and can be applied on different channel levels. When the invoice document is received, the file filter will be checked first on the channel level. If no file filter is assigned to the channel level, it will use the file filter on the system level. 
+The file filter is flexible and can be applied on different channel levels. When the invoice document is received, the channel is checked first for a file filter. If no file filter is assigned to the channel level, it uses the file filter on the system level. 
 
 ### File filter settings
 
 Configure the following setting in the file filter:
 
 1.	**Accepted file size**
-   Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size cannot exceed 5MB.
+   Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size can't exceed 5 MB.
 2.	**Supported file types**
-   Select at least one of the following file types which are currently supported for AI Builder recognition service:
+   Select at least one of the following file types that are currently supported for AI Builder recognition service:
  -	PDF
  -	PNG
  -	JPG
