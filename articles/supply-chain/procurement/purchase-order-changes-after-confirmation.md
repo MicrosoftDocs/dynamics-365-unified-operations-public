@@ -21,7 +21,7 @@ ms.custom: bap-template
 >
 > During this preview phase, the summarization of changes and the summarization of downstream impact are only available in environments hosted in North America and will render in English. All other functionality is available globally.
 
-<!-- KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 During the procurement planning process, any changes made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that will only have a low risk of downstream impact, which allows procurement managers to focus on high-impact changes so they can assess potential downstream order impacts and communicate directly with vendors.
 
@@ -45,7 +45,7 @@ This feature was added in builds that came out after the initial release of 10.0
 
 ### Step 2: Enable the workspace feature in feature management
 
-In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature named *Review changes to confirmed purchase orders based on downstream impact*.
+In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature named *(Preview) Review changes to confirmed purchase orders based on downstream impact*.
 
 ### Step 3: Upgrade the *Finance and Operations Virtual Entity* solution
 

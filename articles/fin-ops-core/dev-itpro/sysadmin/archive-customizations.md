@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 Data can be moved from live tables to history tables only if the underlying history table structures for transactions mirror the structure of the corresponding live table.
 
