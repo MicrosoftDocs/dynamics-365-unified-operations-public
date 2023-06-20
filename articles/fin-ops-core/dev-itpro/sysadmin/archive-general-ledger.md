@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 General ledger data is typically one of the highest-volume sets of data in your finance and operations environment. You must be able to manage this data but also remain compliant with your data storage retention policies. This data is required for auditing, historical reporting, and analysis. However, historical data that's kept in your day-to-day working environment not only increases storage costs but also affects system performance and usability.
 

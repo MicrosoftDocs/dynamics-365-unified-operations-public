@@ -15,9 +15,6 @@ ms.custom: bap-template
 # Work with added efficiency in quote-to-cash with Dynamics 365 Sales
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how to work with the improved quote-to-cash features when you integrate with Microsoft Dynamics 365 Sales. It provides information about how the  enhanced features that you enable affect the behavior of the integrated system. For more information about how to enable these improvements for your system, see [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
 

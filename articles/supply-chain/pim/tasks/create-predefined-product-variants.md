@@ -108,9 +108,6 @@ To generate product variant suggestions when the *Variant suggestions page impro
 
 ## Set up variant-specific sales tax groups for sales and/or procurement
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.34 GA -->
-
 The *Apply sales tax group for product variants in sales and procurement* feature lets you assign variant-specific item sales tax groups both for sales and for procurement. The feature applies the following rules:
 
 - If a specific item sales tax group is assigned to a released product variant for sales, that group is used by default when a sales quotation or sales order line is created.
