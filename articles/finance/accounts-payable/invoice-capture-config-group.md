@@ -48,9 +48,7 @@ The configuration group incorporates all the necessary settings for the review p
 
 After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
-
-Admins can assign different configuration groups to different levels (vendor account, legal entity and system). After a vendor account and legal entity are determined, the application will check whether an existing configuration group is assigned to the vendor first. If no configuration group is found, the legal entity will be checked. If no configuration group is assigned to either the vendor and the legal entity, the configuration group that's specified in **System preferences** is used. 
-
+Administrators can assign different configuration groups to different levels, such as the vendor account, legal entity, and system. After a vendor account and legal entity are determined, the application checks whether an existing configuration group is assigned to the vendor. If no configuration group is found, the system checks the legal entity level. If no configuration group is assigned to the vendor or the legal entity, the configuration group that's specified in **System preferences** is used.
 
 ### Manage configuration groups
 
@@ -60,12 +58,11 @@ To create a new configuration group, select a configuration group, and then sele
 
 ### Define the confidence score
 
-Admins can define the quality standard for the invoice date recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. The confidence score on each recognized field indicates confidence about the accuracy for the returned result. For more information about confidence scores, see [Confidence score](/azure/applied-ai-services/form-recognizer/concept-accuracy-confidence). The range of confidence scores in Invoice capture is interpreted from 0 to 100. A higher score means AI Builder has more confidence in the recognized result. Admins can configure the threshold of confidence scores to indicate different severity of message. The low confidence message will display in the side-by-side viewer. 
+Administrators can define the quality standard for the invoice date that's recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. The confidence score on each recognized field indicates confidence about the accuracy for the returned result. For more information about confidence scores, see [Confidence score](/azure/applied-ai-services/form-recognizer/concept-accuracy-confidence). The confidence score on each recognized field indicates confidence about the accuracy of the returned result. The value range of confidence scores in Invoice capture is interpreted as a number from 0 (zero) through 100. A higher score indicates that AI Builder has more confidence in the recognized result. Administrators can configure the threshold of confidence scores to indicate different message severities. The low confidence message will display in the side-by-side viewer. 
 
 ### Define whether manual review is required before invoice creation
 
-Admins define if a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). 
-In the default configuration group, a manual review is only required when there are errors. If there are no errors during the Invoice capture process, the invoice will be automatically transferred from invoice capture to Dynamics 365 Finance and Operations. The parameter influences the touchless rate for invoice process in Invoice capture. 
+Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations apps. This parameter affects the touchless rate in the Invoice capture process.
 
 
 ### Supported invoice types
