@@ -44,7 +44,7 @@ Typically, invoices from a single supplier are in a consistent format and are a 
 
 The configuration group incorporates all the necessary settings for the review process in Invoice capture.
 
-## Default configuration group
+### Default configuration group
 
 After deployment, a default configuration group (**Default configuration**) is created. This configuration group can't be changed or deleted.
 
@@ -52,7 +52,7 @@ After deployment, a default configuration group (**Default configuration**) is c
 Admins can assign different configuration groups to different levels (vendor account, legal entity and system). After a vendor account and legal entity are determined, the application will check whether an existing configuration group is assigned to the vendor first. If no configuration group is found, the legal entity will be checked. If no configuration group is assigned to either the vendor and the legal entity, the configuration group that's specified in **System preferences** is used. 
 
 
-## Manage configuration groups
+### Manage configuration groups
 
 To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
