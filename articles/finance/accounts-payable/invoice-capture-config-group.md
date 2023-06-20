@@ -62,7 +62,7 @@ Administrators can define the quality standard for the invoice date that's recog
 
 ### Define whether manual review is required before invoice creation
 
-Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations apps. This parameter affects the touchless rate in the Invoice capture process.
+Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations. This parameter affects the touchless rate in the Invoice capture process.
 
 
 ### Supported invoice types
