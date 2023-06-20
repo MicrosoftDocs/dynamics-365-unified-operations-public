@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they might still be required for historical reporting, auditing, machine learning, and other purposes. However, a large volume of historical sales orders and sales order lines in your day-to-day working environment not only increases storage costs but also affects system performance and usability.
 
