@@ -4,7 +4,7 @@
 title: Costing versions overview
 description: This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
 author: JennySong-SH
-ms.date: 07/25/2019
+ms.date: 05/16/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
 
 A costing version can serve one or more purposes, depending on the data that the costing version contains. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs. A costing version can contain a set of standard cost records or a set of planned cost records that are based on the costing type that is assigned to the costing version.
+
+Learn more at [Glossary of terms in Dynamics 365 business processes](/dynamics365/guidance/business-processes/glossary#costing-methodology) and [Define product and service costing overview](/dynamics365/guidance/business-processes/product-service-define-cost-overview).  
 
 ## Costing versions for standard or planned costs
 ### Standard costs
