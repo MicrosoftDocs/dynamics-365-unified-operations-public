@@ -33,14 +33,6 @@ ms.dyn365.ops.version:
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Admins can manage the list of invoice fields and the manual review settings by using configuration groups. Users can assign the configuration groups to different legal entities or different vendors. All the legal entities in the same configuration group will display the same invoice fields and use the same manual review setting.
-
-## What is a configuration group?
-
-Invoices received from various suppliers are in different styles and resolutions. These invoices may require different confidence score thresholds to determine if further review is needed to confirm the recognized invoice context.
-
-Typically, invoices from a single supplier are in a consistent format with a specific type of invoice (a purchase order invoice or a cost invoice). There may be cases where a single supplier sends invoices of different types, it might be necessary to define separate display fields for each invoice type. The application applies different derivations and mapping logic specific to each invoice type to ensure accuracy and completeness of the invoice data. The mandatory flag helps Admins ensure values exist on the fields that require values. 
-=======
 Administrators can manage the list of invoice fields and the manual review settings by using configuration groups. Users can assign configurations to different legal entities or different vendors. All the legal entities in the same configuration group use the same invoice fields and manual review setting.
 
 ## What is a configuration group?
