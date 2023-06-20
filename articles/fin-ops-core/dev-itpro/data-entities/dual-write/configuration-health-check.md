@@ -27,45 +27,16 @@ This section provides step-by-step instructions on how to run the health check.
 
 The following are potential error codes that can result from the configuration health check, indentifying issues in your dual-write configuration.
 
-### Error code DWDVEV1001
-**Error Description**: Missing Dataverse APIHub connection, without ConnectionFix support
-
-**How to fix**: If possible relink dualwrite in order to create the APIHub connection again, or reach out to Microsoft support for enabling "AdhocConnectionCreationEnabled" flight for auto connection fix.
-
-### Error code DWFOEV1001
-**Error Description**: Missing AX APIHub connection without ConnectionFix support
-
-**How to fix**: If possible relink dualwrite in order to create the APIHub connection again, or reach out to Microsoft support for enabling "AdhocConnectionCreationEnabled" flight for auto connection fix
-
-### Error code DWDVEV1002
-**Error Description**: DataVerse deprecated connection is getting used for New Regions
-
-**How to fix**: Reach out to Microsoft support for enabling "UseCDS2Connector" flight in order to use the cds2 connector
-
-### Error code DWDVEV1003
-**Error Description**: Company mismatched between DualWrite and Dataverse
-
-**How to fix**: Make sure the dualwrite linked company (legal entity) should be present in Dataverse. Get the mismatch list from the dualwrite UI(in the validation error). If there is a mismatch then either remove the Legalentity mapping for the respective company or relink dualwrite to get the updated legal entity
-
-### Error code DWFOEV1003
-**Error Description**: Company mismatched between DualWrite and FO
-
-**How to fix**: Company mismatched between DualWrite and F&O. Make sure the dualwrite linked company (legal entity) should be present in F&O. Get the mismatch list from the dualwrite UI(in the validation error). If there is a mismatch then either remove the Legalentity mapping for the respective company or relink dualwrite to get the updated legal entity
-
-### Error code DWDVEV1004
-**Error Description**: Stale DualWrite Configuration present in DV
-
-**How to fix**: Please get the list of entity maps with the dualwrite configuration(from the validation error) and clean it up using these instructions
-
-### Error code DWFOEV1004
-**Error Description**: Stale DualWrite Configuration present in F&O
-
-**How to fix**: Please get the list of entity maps with the dualwrite configuration(from the validation error) and clean it up using these instructions
-
-### Error code DWFOEV1005
-**Error Description**: Missing AX APIHub connection
-
-**How to fix**: Reach out to Microsoft support for enabling "BypassApiHubConnector" flight. This is a case which adhocconnectioncreation can't fix
+| Error code | Description | How to fix |
+| ---------- | ----------- | ---------- |
+| DWDVEV1001 | Missing Dataverse APIHub connection, without ConnectionFix support | This error in indicating that the APIHub connection for Dataverse used by dual-write doesn't exist. The connection may have been deleted from the Power Apps maker portal. To fix this issue, reset dual-write following the instructions in the [Reset dual-write connections](./reset.md) documentation. |
+| DWFOEV1001 | Missing finance and operations apps APIHub connection without ConnectionFix support | This error in indicating that the APIHub connection for finance and operations apps that is getting used in dual-write doesn't exist. It may have been deleted from the Power Apps maker portal. To fix this issue, reset dual-write folliwng the instructions in the [Reset dual-write connections](./reset.md) documentation. |
+| DWDVEV1003 | Company mismatched between dual-write and Dataverse | The company (legal entity) linked to dual-write doesn't match the Dataverse company. There are two options for correcting this issue: <br><ol><li>Get the list of mismatched companies from the error message in the health check and remove the mismatched companies from the dual-write configuration, or</li><li>Reset the dual-write connection following the instructions in the [Reset dual-write connections](./reset.md) documentation. </li></ol>|
+| DWFOEV1003 | Company mismatched between dual-write and finance and operations apps | The company (legal entity) linked to dual-write doesn't match the legal entity in finance and operations apps. There are two options for correcting this issue: <br><ol><li>Get the list of mismatched companies from the error message in the health check and remove the mismatched companies from the dual-write configuration, or</li><li>Reset the dual-write connection following the instructions in the [Reset dual-write connections](./reset.md) documentation. </li></ol>|
+| DWDVEV1004 | Stale dual-write configuration present in Dataverse | When the dual-write link is removed between the finance and operations environment and Dataverse environment, there may be dual-write runtime configurations remaining in Dataverse. This error indicates that the stale configurations exist in the Dataverse environment. To resolve this error, follow the steps for cleaning up Dataverse configurations in the [Fix synchronization issues in an environment that has recently changed Dataverse environment](./dual-write-troubleshooting-live-sync#fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-dataverse-environment) section of the dual-write troubleshooting guide. |
+| DWFOEV1004 | Stale dual-write configuration present in finance and operations apps | When the dual-write link is removed between the finance and operations environment and Dataverse environment, there may be dual-write runtime configurations remaining in the finance and operations environment. This error indicates that teh stale configurations exist in the finance and operations environment. To resolve this error, follow the steps for cleaning up finance and operations apps configurations in the [Fix synchronization issues in an environment that has recently changed Dataverse environment](./dual-write-troubleshooting-live-sync#fix-synchronization-issues-in-an-environment-that-has-a-recently-changed-dataverse-environment) section of the dual-write troubleshooting guide. |
+| DWFOEV1006 | Default Team name mismatch for Dataverse and dual-write | Dual-write initial sync uses the default team of teh mapped or root business unit as the owner of the record to be imported. The expectation is that the name of the default team should be the same as that of the business unit. However, if the user changes the name of the default team after the dual-write link has been established, the data ingestion will fail with this error message. There are two options to resolve this error: <br><ol><li>Reset the dual-write connection following the instructions in the [Reset dual-write connections](./reset.md) documentation, or</li><li>Open a ticket with Microsoft Support to update the detail of the connection. In the ticket you will need to provide the **default team of the root business unit**, which you can find by running the queries in the [Assign security role to the default owning team](./security-roles#assign-security-role-to-the-default-owning-team) section of the dual-write setup guide. |
+| DWDVEV1007 | Default owning team is not present in company | This error indicates that a default owning team has not been selected for the specified company record. This can be updated directly on the company record in the Power Apps maker portal with the following steps: <br><ol><li>Open the [Power Apps maker portal](https://make.powerapps.com), and select the environment with the dual-write link to your finance and operations environment. </li><li>Open the **Tables** list. </li><li>Open the **Company** table. </li><li>If it is not already displayed, select to show the **Default owning team** column of the table. </li><li>Ensure a value has been selected in the **Default owning team** column for all companies that are selected to sync with dual-write maps.</li><li>When a default owning team has been set for all companies that are selected to sync for dual-write, ensure that the selected default owning teams have the appropriate security roles assigned. See [Security roles for users and teams](./security-roles#security-roles-for-users-and-teams) for more information.</li></ol> |
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
