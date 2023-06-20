@@ -63,7 +63,7 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 > [!NOTE]
 > - If you use **Independent sequence** property for all or some receipt types, please make sure include dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt ids.
 > - The reset date set in **Functionality profiles** isn't associated with a specific time zone. For example, if you select **January 1, 2020** as the reset date, POS devices in all time zones will reset the receipt back to "1" on January 1, 2020 local time.
-> - If you want the receipt masks to be changed together when the reset date arrives, follow the steps in [Make receipt masks change when the reset date arrive](#make-receipt-masks-change-when-the-reset-date-arrive) below. 
+> - If you want the receipt masks to be changed together when the reset date arrives, follow the steps in [Make receipt masks change when the reset date arrive](#make-receipt-masks-change-when-the-reset-date-arrives) below. 
 > - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
 
 ## Make receipt masks change when the reset date arrives
