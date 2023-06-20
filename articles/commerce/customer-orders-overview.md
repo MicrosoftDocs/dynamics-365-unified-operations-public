@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
 author: josaw1
-ms.date: 05/26/2023
+ms.date: 06/20/2023
 ms.topic: overview
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
@@ -163,6 +163,8 @@ Call center users can also disable the **Price locked** property for order lines
 
 ### Cancel a customer order
 
+To cancel a customer order, follow these steps.
+
 1. Select **Recall order**.
 2. Use **Search** to enter filters to find the order, and then select **Apply**.
 3. Select the order in the list of results, and then select **Cancel**. If the **Cancel** button is unavailable, the order is in a state where it can no longer be canceled.
@@ -170,7 +172,7 @@ Call center users can also disable the **Price locked** property for order lines
 5. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
 6. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
 
-If an order is partially cancelled and it is recalled in POS for editing, then prior to 10.0.36, the cancelled order lines were also displayed on the transaction and hence printed on the receipt of the edited order. However, with 10.0.36, these cancelled lines are hidden from POS and hence not printed on receipt. This is controlled by the feature "Hide cancelled order lines from POS" which is enabled by default in the Feature management, but users can disable it, if needed.
+In Commerce versions prior to 10.0.36, if an order is partially cancelled and it's recalled in POS for editing, then the cancelled order lines are also displayed on the transaction and printed on the receipt of the edited order. Starting with version 10.0.36, the cancelled lines are hidden from POS and not printed on receipt. This functionality is controlled by the **Hide cancelled order lines from POS** feature that is enabled by default in the feature management workspace starting in version 10.0.36. The feature can be disabled if necessary.
 
 ## Finalizing the customer order shipment or pickup from POS
 
