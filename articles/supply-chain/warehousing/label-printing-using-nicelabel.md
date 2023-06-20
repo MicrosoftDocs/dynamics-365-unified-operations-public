@@ -13,9 +13,6 @@ ms.custom: bap-template
 # Print labels using the Loftware NiceLabel label service solution
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how to set up and print labels in Microsoft Dynamics 365 Supply Chain Management by using the Loftware NiceLabel solution. It's one example that shows how to use the Supply Chain Management external service label printing feature. For general information about how this feature works, see [Print labels using an external service](label-printing-using-external-label-service.md).
 
