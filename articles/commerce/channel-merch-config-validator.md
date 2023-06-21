@@ -4,7 +4,7 @@
 title: Channel merchandising configuration validator
 description: This article describes how to use the channel merchandising configuration validator in Microsoft Dynamics 365 Commerce headquarters to find missing and invalid configurations for products, categories, and attributes by channel.
 author: ashishmsft
-ms.date: 06/16/2023
+ms.date: 06/21/2023
 ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace 
 audience: Application User, Developer, IT Pro
