@@ -692,6 +692,8 @@
             href: create-channel-hierarchy.md
           - name: Configure channel to use a channel navigation hierarchy 
             href: configure-channel-hierarchy.md
+          - name: Channel merchandising configuration validator
+            href: channel-merch-config-validator.md
         - name: Assortments
           items:
           - name: Assortment management
@@ -1380,6 +1382,8 @@
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
+        - name: View product search publishing status in headquarters
+          href: publish-status-headquarters.md
       - name: Reporting
         items:
         - name: Generate online channel reports
