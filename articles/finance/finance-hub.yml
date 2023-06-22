@@ -38,7 +38,7 @@ highlightedContent:
 
 additionalContent:
   sections:
-  - title: Implement 
+  - title: Administer 
     items:
     - title: Guidance
       links: 
@@ -56,24 +56,22 @@ additionalContent:
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Deploy Dynamics 365 Finance 
-    - title: Configure 
+    - title: Set up 
       links:
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/system-requirements?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Configure environment
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Configure organization administration 
+        text: Set up your organization
       - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
-        text: Configure reporting    
-  - title: Administer and develop 
-    items:
+        text: Get started with Financial reporting 
+      - url: dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
+        text: Upgrades, updates, and hotfixes   
     - title: Manage environments
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Manage environments
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
-        text: Manage users
-      - url: /dynamics365/dev-itpro/sysadmin/role-based-security
-        text: Manage roles
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
+        text: Dynamics Lifecycle services resources 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page
+        text: Continuous delivery 
+      - url: dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
+        text: Upgrades, updates, and hotfixes 
     - title: System administration  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
@@ -81,7 +79,9 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation
         text: Process automation
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
-        text: Batch processing overview     
+        text: Batch processing overview            
+  - title: Develop Finance 
+    items:     
     - title: Azure data lake  
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
@@ -130,14 +130,14 @@ additionalContent:
         text: Customize your environment
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
         text: Use Dual-write    
-    - title: Lifecycle services  
+    - title: Dynamics 365 Lifecycle Services  
       links:      
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide
-        text: Lifecycle services user guide
+        text: Lifecycle Services user guide
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configuration-manager-lcs
-        text: Configure Lifecycle services     
+        text: Configure Lifecycle Services     
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics  
-        text: Monitoring and diagnostics tools in Lifecycle services
+        text: Monitoring and diagnostics tools in Lifecycle Services
   - title: Use Finance
     items:
     - title: Organization administration
@@ -213,7 +213,7 @@ additionalContent:
       - url: /dynamics365/finance/asset-leasing/asset-leasing-quick-start
         text: Overview
       - url: /dynamics365/finance/asset-leasing/add-lease
-        text: Manage Asset leases
+        text: Manage asset leases
       - url: /dynamics365/finance/asset-leasing/set-up-lease-wrkflw
         text: Lease workflows
     - title: Reporting
