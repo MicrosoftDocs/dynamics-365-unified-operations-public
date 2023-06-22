@@ -487,7 +487,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
     - The system processes the created shipment using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label that has five lines and that is printed on the printer that is selected in the label template.
     - A new bill of lading ID is generated for the shipments. If you configured the number sequence extensions, the wave label IDs will follow the **SSCC-18** number format. 
 
-You can reprint these wave labels by going to **Warehouse management \> Inquiries and reports \> Wave label history**.
+You can reprint these wave labels by going to **Warehouse management \> Enquiries and reports \> Wave label history**.
 
 ## Scenario 3: Wave label printing for multi-tiered labels
 

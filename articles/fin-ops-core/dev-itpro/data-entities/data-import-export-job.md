@@ -72,9 +72,6 @@ You can add specific entities to an import or export job or select a template to
 ### Set the data format for the job
 When you select an entity, you must select the format of the data that will be exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are also other attributes, but these are the key ones to understand. The following table lists the valid combinations.
 
-> [!NOTE]
-> The Excel file format is not currently available in the Data management workspace for Government Community Cloud (GCC).
-
 | File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-NA-                     |

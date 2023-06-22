@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 21631
 ---
 
 # Regression Suite Automation Tool installation and configuration

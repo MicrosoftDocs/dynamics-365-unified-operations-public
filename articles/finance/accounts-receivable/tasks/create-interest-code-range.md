@@ -5,7 +5,7 @@ title: Create an interest code with a range
 description: Interest codes can be set up to calculate different interest amounts based on a range of values. 
 author: ShivamPandey-msft
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

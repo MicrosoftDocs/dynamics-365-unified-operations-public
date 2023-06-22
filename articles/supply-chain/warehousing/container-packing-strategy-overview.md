@@ -7,7 +7,7 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.region: Global
 ms.author: gfedorova
 ms.search.validFrom: 2021-06-11

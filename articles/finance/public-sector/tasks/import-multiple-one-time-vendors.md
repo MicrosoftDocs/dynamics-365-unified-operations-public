@@ -5,7 +5,7 @@ title: Import and create multiple one-time vendors and invoices in the public se
 description: This article provides information about how to simultaneously create an invoice and record for a new vendor when no purchase order is required.
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

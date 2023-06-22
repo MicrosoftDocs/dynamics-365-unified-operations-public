@@ -41,10 +41,6 @@ To enable the page caching feature for your site in Commerce site builder, follo
 
 You can disable page caching at any time by clearing the **Enable render caching** checkbox. In that case, any pages that were previously configured to use page caching will skip the caching and render the page for every request.
 
-The following illustration shows how to enable page caching in Commerce site builder.
-
-![Enabling page caching in Commerce site builder](media/page-caching-1.png)
-
 ### Configure page caching on a page
 
 Caching configurations are automatically available in Commerce site builder for any page that uses the default page module. To configure page caching for a specific page, select the page in site builder, and then select the **Default Page** module in the module hierarchy to open the module properties pane on the right. Then make sure that the **Cache page server-side** checkbox is selected in the properties pane.

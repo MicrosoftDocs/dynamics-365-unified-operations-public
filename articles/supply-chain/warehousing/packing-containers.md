@@ -3,7 +3,7 @@ title: Pack containers for shipment
 description: This article describes the packing process that lets you validate inventory items and pack them into containers.
 author: perlynne
 ms.date: 7/13/2022
-ms.topic: business-process
+ms.topic: how-to
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 audience: Application User
 ms.reviewer: kamaybac
@@ -232,7 +232,7 @@ Follow these steps to set up a packing profile.
 
 1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
-1. On the header of the new or selected profile, set the following fields:
+1. Make the following settings for your new or selected profile:
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.
@@ -241,6 +241,8 @@ Follow these steps to set up a packing profile.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
     - **Print container label at container creation** – Select this checkbox to automatically print a container label when a new container is created. For more information about how to set up your container label layouts, see [Container label layouts and printing](print-container-labels.md).
+    - **Prevent editing container ID** – Select this check box to prevent automatically assigned container IDs from being edited.
+    - **Prevent container creation without items to pack** – Select this checkbox to prevent containers from being created when there aren't any items to pack for a given shipment and packing location.
 
 ### Set up warehouse workers
 

@@ -16,6 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice.-->
 
 Organizations that have many companies (legal entities) and a large product portfolio (for example, large sales and distribution networks) often experience a high level of duplicated product data. The [cross-company data sharing capabilities](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md) of Microsoft Dynamics 365 Supply Chain Management let you share data about released products across multiple companies. In this way, you can reduce the volume of data that must be maintained and at the same time simplify the task of maintaining product master data.
 
@@ -288,6 +289,10 @@ When you enable single record sharing for products, it's important that you crea
 > A company that already has product records can never be made into a child company for single record sharing. Therefore, in most cases, you can set up product sharing only when you're setting up a new system.
 
 If you already have existing products in the system before you enable the single record sharing policies, they won't be shared.
+
+## Modifying policies
+
+It isn't possible to add more fields to a data sharing policy after it has been created and enabled. 
 
 ## More information about cross-company data sharing
 

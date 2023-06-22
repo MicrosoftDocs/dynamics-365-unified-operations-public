@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 02/03/2023
+ms.date: 06/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,6 @@ ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: 7.3.2
 ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-manager: annbe
 ---
 # Cash register functionality for France
 
@@ -26,7 +25,7 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10**:
+- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.27**):
 
     - Certificate category: B
     - Certificate number: 0498

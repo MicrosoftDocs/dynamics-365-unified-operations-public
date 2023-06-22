@@ -5,7 +5,7 @@ title: Calculate fixed asset depreciation across legal entities
 description: Fixed asset depreciation can be run across legal entities in a single step. 
 author: moaamer
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

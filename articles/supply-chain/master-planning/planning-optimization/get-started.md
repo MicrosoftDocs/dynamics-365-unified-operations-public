@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 01/27/2023
+ms.date: 05/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -20,7 +20,7 @@ Master planning in Supply Chain Management is provided by an external service ca
 
 ## Availability
 
-Planning Optimization is currently available in the following Azure geographies: United States, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+Planning Optimization is currently available in the following Azure geographies: United States, United States government cloud, Canada, Brazil, Europe, France, United Kingdom, Norway, Switzerland, Australia, Asia Pacific, Japan, United Arab Emirates, South Africa and India. If you try to install the add-in from another geographic region, then LCS will show a message that this geographic isn't supported. For more information about Azure geographies and the related regions, see [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 > [!NOTE]
 > Planning Optimization doesn't support on-premises deployments of Dynamics 365 Supply Chain Management.

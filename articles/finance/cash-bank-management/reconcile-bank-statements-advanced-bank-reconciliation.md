@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
 # ms.search.industry: 
@@ -75,6 +74,8 @@ On the **Bank reconciliation** page, click **Worksheet** to open the **Bank reco
 
 The **Bank reconciliation worksheet** page has four grids that contain transactions. The two upper grids show transactions from the bank statement and Operations that haven’t yet been matched. The two lower grids show matched transactions. The **Bank statement transaction details** tab shows details for the unmatched bank statement transaction that is selected in the upper grid. 
 
+You can enable additional filtering capabilities and a new grid for new transactions by turning on the **Advanced bank reconciliation improvement: enable filtering and provide separate grid for new transactions** feature.
+
 There are three ways to match or reconcile bank statement transactions:
 
 -   Match the transactions with Operations bank transactions.
@@ -89,17 +90,16 @@ Bank statement transaction reversals are matched by using the reconciliation wor
 
 Reversed Operations bank transactions must be reconciled by using the **Operations bank transactions** page. You can reconcile two Operations bank transactions together if the documents have the same bank account, document type, and payment reference, and if they have opposite amounts. You can also reconcile a single canceled check to prevent those transactions from appearing on the reconciliation worksheet. 
 
-If there are new bank-initiated transactions, such as interest, fees, and charges, that aren’t yet in Finance, you can add them to a journal that is associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then click **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. You will post transactions that are marked as **New** later, from the **Bank statement** page. 
+If there are new bank-initiated transactions, such as interest, fees, and charges, that aren’t yet in Finance, you can add them to a journal that's associated with the selected bank statement reconciliation. Select a bank statement transaction in the **Bank statement transactions** grid for unmatched transactions, and then select **Mark as new**. The status of the transaction is set to **New**, and the transaction is moved to the **Bank statement transactions** grid for matched transactions. Later, from the **Bank statement** page, post the transactions that are marked as **New**. If you turn on the **Enable posting of new transactions in bank reconciliation** feature, transactions that are marked as **New** can also be posted directly from the Bank reconciliation worksheet. For more feature enhancements, turn on the **New voucher and date for new transactions in the advanced bank reconciliation bank statement** feature.
 
 You can unmatch transactions that were incorrectly matched. Select the matched bank statement transaction, and then click **Unmatch**. All associated transactions are moved back to the upper grids for unmatched transactions, and the matched and unmatched total amounts are updated. 
 
-After completing your reconciliation process, you should mark the Bank reconciliation worksheet as reconciled.  This process will automatically post correction amounts using the accounts set on the **Bank transaction type** page.  The bank reconciliation for a statement can be marked as reconciled at any time, even if there are bank statement lines that have not yet been matched.  The unmatched transactions will automatically move to the next reconciliation worksheet as unmatched bank statement transactions to be reconciled.  Note that once a bank statement reconciliation has been marked as reconciled, it cannot be undone.  The reconciliation will no longer be editable and you will no longer have the ability to make updates to that reconciliation.
+After you complete the reconciliation process, mark the Bank reconciliation worksheet as reconciled. This process automatically posts correction amounts using the accounts set on the **Bank transaction type** page. The bank reconciliation for a statement can be marked as reconciled at any time, even if there are bank statement lines that haven't been matched. The unmatched transactions automatically move to the next reconciliation worksheet as unmatched bank statement transactions to be reconciled. After a bank statement reconciliation has been marked as reconciled, it can't be undone. The reconciliation isn't editable, and you don't have the ability to make updates to that reconciliation. You can turn on the **Enable bank reconciliation reversal even new transactions exist in posted bank statement** feature to reverse reconciliation. To improve process performance, turn on the **Enable batch mode for "Mark as reconciled" in advance bank reconciliation** feature.
 
 ## Post new transactions that are associated with the reconciliation
-Bank statement transactions that you marked as **New** on the reconciliation worksheet are posted on the **Bank statement** page. On the **Bank statement** page, select the statement ID to view the statement details. On the **Accounting** menu, you can use the **View distributions** and **View accounting** options to view details behind the new transactions and the associated ledger entries. Select the **Post** option to post the bank statement lines that are marked as **New** to the general ledger. Note that posting can be completed only one time per bank statement.
 
+Bank statement transactions that you marked as **New** on the reconciliation worksheet are posted on the **Bank statement** page. On the **Bank statement** page, select the statement ID to view the statement details. On the **Accounting** menu, you can use the **View distributions** and **View accounting** options to view details behind the new transactions and the associated ledger entries. Select the **Post** option to post the bank statement lines that are marked as **New** to the general ledger. Posting can be completed only one time per bank statement. To reverse a posted bank statement through a new transaction, turn on the **Reverse posted bank statement with new transactions** feature.
 
-
-
+To view the voucher of a new transaction on a **Bank statement** page, turn on the **Display vouchers in bank statement** feature.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

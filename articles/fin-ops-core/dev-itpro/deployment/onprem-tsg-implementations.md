@@ -21,7 +21,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 30
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Scripts for resolving issues in on-premises environments
@@ -192,7 +193,7 @@ else
 
 ## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform.
+The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform. This script should not be used from Application version 10.0.35 or later.
 
 ```powershell
 param (
@@ -287,7 +288,7 @@ try
     $mode   = [IO.Compression.ZipArchiveMode]::Update
     $zip    = New-Object IO.Compression.ZipArchive($stream, $mode)
 
-    ($zip.Entries | ? { $files -contains $_.FullName }) | % { $_.Delete() } | Write-Host
+    ($zip.Entries | ? { $files -contains $_.FullName }) | % { $_.Delete() } | Write-Output
 }
 catch
 {
@@ -364,7 +365,7 @@ $configJson.components = $updatedComponents
 
 $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
-Write-Host "Successfully updated the configuration for AOS gMSA execution."
+Write-Output "Successfully updated the configuration for AOS gMSA execution."
 ```
 
 ## <a name="enableDixf"></a>TSG\_EnableDixfService.ps1
@@ -429,7 +430,7 @@ $configJson.components = $updatedComponents
 
 $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
 
-Write-Host "Successfully updated the configuration and enabled DixfService."
+Write-Output "Successfully updated the configuration and enabled DixfService."
 ```
 
 

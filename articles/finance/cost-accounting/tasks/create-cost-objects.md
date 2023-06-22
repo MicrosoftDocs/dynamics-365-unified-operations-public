@@ -5,7 +5,7 @@ title: Create cost objects
 description: This procedure shows how to create cost objects by importing the cost center financial dimension into Cost accounting via a data connector. 
 author: twheeloc
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

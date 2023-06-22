@@ -5,7 +5,7 @@ title: Create accrual schemes
 description: This article explains how to create an accrual scheme. 
 author: aprilolson
 ms.date: 03/28/2023
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

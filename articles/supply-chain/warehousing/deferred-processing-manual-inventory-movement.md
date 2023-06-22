@@ -67,7 +67,7 @@ To use the *Deferred processing of manual inventory movement operation* process,
 
 ## Inquire about the warehouse app events
 
-You can view the event queue and event messages that the warehouse app generates by going to **Warehouse management \> Inquiries and reports \> Mobile device logs \> Warehouse app events**.
+You can view the event queue and event messages that the warehouse app generates by going to **Warehouse management \> Enquiries and reports \> Mobile device logs \> Warehouse app events**.
 
 The *Inventory movement* event messages will have a status of *Queued* when they are first created. This status indicates that the **Process warehouse app events** batch job will pick up the event messages and process them. When the status is updated to *Completed*, all the related events are deleted from the queue.
 

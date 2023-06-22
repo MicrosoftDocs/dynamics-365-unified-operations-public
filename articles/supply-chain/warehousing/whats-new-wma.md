@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/15/2023
+ms.date: 05/15/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -18,6 +18,47 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.1.9.0
+
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
+
+- Increased stability.
+- Improved narration and keyboard navigation for better accessibility.
+- The minimum timeout is now three minutes (down from five minutes).
+- Added a new color for highlighted fields (available across all themes).
+- Improved error message descriptions on the **New Connection** page.
+- Fixed an issue that could sometimes result in truncated labels on inquiry cards.
+- Increased text margins on the **Details** page to make labels easier to read.
+
+## Version 2.1.6.0
+
+This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
+
+- Added a new setting that lets workers specify the visibility and type of quantity spinner. Workers can choose to hide the spinner; always show the compact, non-scrolling spinner; or let the app select automatically. 
+- Added a search function to inquiry pages. Workers can now scan or type to search in all the fields and titles on the page. 
+- On custom pages, the app now focuses on the first non-filled text box instead of the first text box. 
+- Added a close button on all dialog pop-up pages. 
+- Added a back button on the **Settings**, **Alphanumeric** input, and **Numpad** pages. 
+- Fixed an issue where the camera scanner would read an extra unprintable character at the end of specific Code 128 barcodes. 
+- Improved narration and keyboard navigation for better accessibility. 
+
+## Version 2.1.1.0  
+
+### New features introduced in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- The app is now available for iOS devices. 
+- This version is compliant with regulations for European Union Data Boundary (EUDB) and sovereign clouds. 
+
+### New fixes and improvements in version 2.1.1.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability for installations deployed using Microsoft Intune. 
+- Fixed an issue where the app couldn't connect to the server when running on Android 4.4. 
+- Fixed an issue where the default sorting option of the **Work list** page would overwrite the sorting query specified on the server. 
 
 ## Version 2.0.42.0
 

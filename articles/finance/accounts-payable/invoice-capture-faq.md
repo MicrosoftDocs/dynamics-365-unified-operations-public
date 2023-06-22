@@ -4,8 +4,8 @@
 title: Invoice capture FAQ
 description: This article answers frequently asked questions about the Invoice capture solution.
 author: sunfzam
-ms.date: 02/05/2023
-ms.topic: overview
+ms.date: 04/11/2023
+ms.topic: faq
 ms.prod: 
 ms.technology: 
 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["13971", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 # ms.search.industry: 
@@ -69,7 +69,7 @@ If the item on the invoice line is a stock item, the PO must be linked with the 
 
 > Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...
 
-Support for using an invoice journal for Non-PO invoices will be available in a future release.
+Support for using an invoice journal for Non-PO invoices will be available in a future release.  
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
@@ -81,26 +81,22 @@ The **Total tax** field sums all the tax amounts on the invoices and transfers t
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
-Not in the current release. This capability is on our roadmap and will be available in a future release.
-
-### Is there a model localization to capture invoice structures for different countries and regions?
-
-The application can be extended to meet country/region-specific requirements.
+This capability is available in a version 1.0.1.x.
 
 ### Does Invoice capture support uploading multiple invoices at the same time?
 
-The current version supports uploading one document at a time. The capability to upload multiple invoices at the same time will be available in a future release.
+In Invoice capture version 1.0.1.0 and later, users can upload multiple invoices simultaneously.
 
 ### What languages of invoices are supported?
 
 The following languages are currently supported:
-
-- Dutch (Netherlands)
-- English (United States)
-- French (France)
-- German (Germany)
-- Italian (Italy)
-- Portuguese (Portugal)
-- Spanish (Spain)
+Current:
+-	English(en)
+-	Spanish (es)
+-	German (de)
+-	French (fr)
+-	Italian (it)
+-	Portuguese (pt)
+-	Dutch (de)
 
 More languages will be supported in a future release. If you want to share data with Microsoft to help make the model for your language ready more quickly, contact us.

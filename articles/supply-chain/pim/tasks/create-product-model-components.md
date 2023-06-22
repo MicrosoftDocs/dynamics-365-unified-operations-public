@@ -5,7 +5,7 @@ title: Create product model components
 description: Constraint-based product configuration models use components as building blocks to establish the product model structure. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

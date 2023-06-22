@@ -136,6 +136,9 @@ To get a security service token, follow these steps.
     }
     ```
 
+> [!NOTE]
+> The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be "https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token". If the 307 response status code is not acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
+
 > [!IMPORTANT]
 > When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
 
