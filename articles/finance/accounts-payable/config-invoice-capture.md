@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 05/12/2023
+ms.date: 06/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -42,14 +42,31 @@ After the Invoice capture solution is installed, default configurations for usin
 4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
 
-### Manage file filters (optional)
+## Manage file filters (optional)
 
-Manage file filters lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and appear in the **Received files (Pending)** list with status of **Canceled**. Clerks can review them and decide whether to void and obsolete the file. This behavior is different from the one defined in the flow behind the channel. In the flow, files that don't meet the criteria are not received. 
+**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. This behavior differs from the behavior that is defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
 
-After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.  
+After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.
 
+File filters are flexible and can be applied at different channel levels. When an invoice document is received, the channel is checked first for a file filter. If no file filter is assigned to the channel level, the file filter at the system level is used.
 
-### Definition of master data
+### File filter settings
+
+Configure the following settings in the file filter:
+
+1. **Accepted file size** – Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size can't exceed 5 megabytes (MB).
+2. **Supported file types** – Select at least one of the following file types that are currently supported for AI Builder recognition service:
+
+    - PDF
+    - PNG
+    - JPG
+    - JPEG
+    - TIF
+    - TIFF
+
+3. **Supported file names** – Use file name rules to filter out files that aren't relevant to invoices. Different rules can be applied to accept files only when the name contains predefined strings, or to exclude files that contain the defined strings.
+
+## Definition of master data
 
 Invoice capture processing requires two data types: legal entities and vendors.
 
@@ -57,8 +74,7 @@ Invoice capture processing requires two data types: legal entities and vendors.
 
 **Vendors** are individuals or organizations that supply goods or services to a business. In Dynamics 365 Finance, if a vendor provides services or product to multiple legal entities, a vendor account has to be created for each legal entity and business activity can be recorded. In Invoice capture, the vendor master data is used to automatically derive the vendor account and helps increase the touchless rate in invoice processing.
 
-
-#### Sync legal entities
+### Sync legal entities
 
 In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
@@ -68,7 +84,7 @@ In the **Manage legal entities** process, users can't manually create legal enti
 
 After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
-#### Sync vendors
+### Sync vendors
  In **Manage vendors**, there are three options to sync the vendor accounts:
  1. **Sync all** - all vendor accounts are synced. This will potentially cause a performance issue.
  2. **Sync by legal entity** - The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
