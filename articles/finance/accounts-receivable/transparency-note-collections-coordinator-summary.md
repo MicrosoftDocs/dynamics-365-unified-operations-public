@@ -1,5 +1,5 @@
 ---
-title: Collections coordinator summary: FAQ
+title: Collections coordinator summary FAQ
 description: This article answers some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 ms.date: 6/15/2023
 ms.custom: faq
