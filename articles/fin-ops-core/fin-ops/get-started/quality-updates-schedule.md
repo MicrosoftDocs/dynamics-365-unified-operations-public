@@ -31,7 +31,7 @@ For information about the maintenance windows for each region, see [What are the
 
 | Station | Regions |
 |---|---|
-| Station 1 | To be determined later |
+| Station 1 | Only for opted-in environments |
 | Station 2 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West |
 | Station 3 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia |
 | Station 4 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central |
