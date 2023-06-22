@@ -12,33 +12,25 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
+<!-- KFM: Is this really a sales/marketing feature? Seems more like product information management (like hazmat). -->
+
 # Advanced export control overview
 
-<!-- KFM: What is the name of this "feature"? Should it be capitalized? Is it a "solution" or a "feature" or an "app" or something else? "Advanced Export Control solution for Microsoft Finance and Operations Supply Chain" doesn't work (incorrect trademarks) -->
+The advanced export control solution provides the foundation for managing, tracking, and checking export compliance. You can use it both with and without Supply Chain Management.
 
-The Advanced Export Control solution for Microsoft Finance and Operations Supply Chain provides the foundation for managing, tracking, and checking export compliance. It can be used without Microsoft Finance and Operations Supply Chain as well.
-
-## Overview
-
-Export Control consists of five primary concepts.
+The solution implements five primary concepts:
 
 - Jurisdictions
-- Codes and Categories
+- Codes and categories
 - Restrictions
 - Exceptions
 - Licenses
 
-A jurisdiction is a set of codes, categories, restrictions, exceptions, and licenses. It represents a set of configuration that applies to incoming requests.
-
-A jurisdiction consists of a set of codes, often referred to as Export Control Classification Numbers or ECCNs. If the Export Control functionality is used for customs scenarios, then Harmonized System or HS codes may also be used. Codes may be linked to one or more control categories such as Missile Technology or National Security. The set of codes and categories is unique per jurisdiction.
-
-For a given jurisdiction a set of rules are provided which indicate when the jurisdiction is applicable. If the rule is configured as an error, then any activity matching the rule will be blocked for that jurisdiction unless an exception exists. A rule is usually a combination of a country, a transaction purpose, and a set of codes and categories.
-
-Exceptions are ways of allowing an activity even though a rule would otherwise block the action. Common types of exceptions are licenses, blanket exemptions, or corporate policies. Exceptions are defined the same way as rules, but also provide extra requirements when the exception is used such as messages to display to the user or text and licenses to print on documents.
-
 ## Jurisdictions
 
-An Export Control Jurisdiction (also referred to as an Export Control Jurisdiction) defines a set of classifications, together with rules as to which activities are allowed under which conditions. Examples of Export Control Jurisdictions include but are not limited to the following. They do not need to be dictated by a country or region, but can also be configured to control export activities based on a company's own policies.
+A jurisdiction is a set of codes, categories, restrictions, exceptions, and licenses. It represents a set of configurations that apply to incoming requests. Each jurisdiction is associated with a set of rules that indicate when the jurisdiction applies. If a rule is configured as an error, then any activity matching the rule will be blocked for that jurisdiction unless an exception exists. A rule is usually a combination of a country, a transaction purpose, and a set of codes and categories.
+
+The following list provides a set of examples of export control jurisdictions:
 
 - US International Traffic in Arms Regulation (ITAR)
 - The Wassenaar Arrangement
@@ -49,29 +41,30 @@ An Export Control Jurisdiction (also referred to as an Export Control Jurisdicti
 - Multilateral Export Controls
 - Sanctions
 
-## Codes and Categories
+Jurisdictions don't necessarily need to be based on countries or regions. They can also be configured to control export activities based on your company's own policies.
 
-An Export Control Jurisdiction is defined by a set of Export Control Classification Number (ECCN) codes, together with Control Categories. Each ECCN may be a member of zero or more control categories. And each control category may contain many ECCNs.
+## Codes and categories
 
-An example of an export control classification number is 7A994 as defined by the US Export Administration Regulations Export Control Jurisdiction. 7A994 applies to "Other navigation direction finding equipment, airborne communication equipment, all aircraft inertial navigation systems not controlled under 7A003 or 7A103, and other avionic equipment, including parts and components." Per the US EAR, ECCN 7A994 is a part of the Anti Terrorism (AT) control category.
+The codes that make up a jurisdiction are often referred to as Export Control Classification Numbers (ECCNs). If you use the export control functionality for customs scenarios, then Harmonized System (HS) codes may also be used. Codes can be linked to one or more control categories such as *Missile Technology* or *National Security*. The set of codes and categories is unique for each jurisdiction. Each ECCN may be a member of zero or more control categories, and each control category may contain many ECCNs.
 
-Since ECCNs and control categories are defined by Export Control Jurisdictions, the same ECCN may appear in more than one Export Control Jurisdiction. For this reason it is important to always specify which jurisdiction a code references. Harmonized System (HS) codes which are used primarily for customs tracking may also be used as codes to manage export controls related to customs.
+An example of an export control classification number is *7A994*, which is defined by the United States Export Administration Regulations (US EAR) export control jurisdiction. This classification number applies to "Other navigation direction finding equipment, airborne communication equipment, all aircraft inertial navigation systems not controlled under 7A003 or 7A103, and other avionic equipment, including parts and components." According to the US EAR, ECCN 7A994 is a part of the *Anti Terrorism (AT)* control category.
 
-Following is a sample configuration for the US EAR jurisdiction.
-![Sample Configuration](./CodesAndCategoriesScreenshot.png)
+Because ECCNs and control categories are defined by export control jurisdictions, the same ECCN may appear in more than one export control jurisdiction. For this reason, you must always specify which jurisdiction a code references. HS codes, which are used primarily for customs tracking, may also be used as codes to manage export controls related to customs.
 
 ## Restrictions
 
-Export Control Jurisdictions then define a set of restrictions under which export actions should be disallowed unless an exception exists. Often that is defined in terms of a commerce country chart, such as [this example](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file) from the US EAR. A restriction is a set of ECCNs and/or control categories, together with a country, transaction purpose, and other aspects.
+Each export control jurisdiction defines a set of restrictions under which export actions should be disallowed unless an exception exists. Often, restrictions are defined in terms of a commerce country chart, as seen in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). A restriction is a set of ECCNs and/or control categories, together with a country, transaction purpose, and other aspects.
 
-Following is a sample rule for the US EAR restrictions based on the country chart. Based on this rule, any order containing an item with an ECCN in the MT or NS control categories would not be allowed to be sold to Angola. When attempting to confirm an order containing one of these items, the error message "Action blocked by US EAR restrictions" would be shown to the user.
+The following screenshot shows a sample rule for the US EAR restrictions based on the country chart. Based on this rule, any order containing an item with an ECCN in the MT or NS control categories would not be allowed to be sold to Angola. If a user attempted to confirm an order containing one of these items to be shipped to Angola, they would see the error message "Action blocked by US EAR restrictions."
 
 [<img src="media/export-control-restriction.png" alt="Example rule for the US EAR restrictions." title="Example rule for the US EAR restrictions" width="720" />](media/export-control-restriction.png#lightbox)
 
 ## Exceptions
 
-Exceptions are defined the same way as restrictions, only they define which activities should _not_ be blocked even though there is a restriction. The most common types of exceptions are licenses, blanket exemptions, or company policies.
+Exceptions allow an action even though a restriction would otherwise block it. Common types of exceptions include licenses, blanket exemptions, and corporate policies. Exceptions are defined the same way as restrictions, but also provide extra requirements that apply when the exception is used, such as the need to display a message the user or to print text and licenses on documents.
 
-When an exception applies, additional information may also be provided. This includes a license number which can be referenced on reports or documents, as well as informational or warning messages to display to the user while working with the document.
+The following screenshot shows an example exception setup.
 
 [<img src="media/export-control-exception.png" alt="Example of an exception." title="Example of an exception" width="720" />](media/export-control-exception.png#lightbox)
+
+<!-- KFM: Seems like we are missing a description of *licenses*? -->

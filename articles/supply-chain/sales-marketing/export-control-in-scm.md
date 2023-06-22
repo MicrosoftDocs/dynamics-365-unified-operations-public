@@ -12,17 +12,12 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: What is the purpose of this topic? A better title is needed. Seems like an overview, but we already have an overview. -->
+<!-- KFM: I think we might be missing info on how to configure exceptions, requirements, rules. Maybe something about "licenses" (it's not clear what those are)? -->
 
 # New settings added by the advanced export control feature
 
 The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company), which means that each company can have have different export control behaviors and rules.
 
-## Configuring jurisdictions
-
-To configure which jurisdictions apply to each legal entity, go to **Product information management \> Setup \> Country of Origin \> Advanced export control configuration** and open the **Jurisdictions in use in this company** tab. If no jurisdictions are enabled, then Advanced Export Control is not enabled for that legal entity, and the simpler Dual Use Goods functionality will be visible. Once the first Advanced Export Control jurisdiction is enabled for a legal entity, then the Dual Use Goods functionality will be hidden on forms in that legal entity and Export Control functionality will be shown instead.
-
-[<img src="media/export-control-jurisdictions-in-use.png" alt="Jurisdictions in use." title="Jurisdictions in use" width="720" />](media/export-control-jurisdictions-in-use.png#lightbox)
 
 ## Global products
 

@@ -12,6 +12,8 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
+<!-- KFM: Is this information really intended for users? Seems like internal developer documentation. What can a user do with this info? -->
+
 # Rule evaluation
 
 Rules are defined primarily as data in the `msdyn_exportcontroljurisdiction`, `msdyn_exportcontrolrule`, and `msdyn_exportcontrollicense` tables.
@@ -21,6 +23,8 @@ Rules are defined primarily as data in the `msdyn_exportcontroljurisdiction`, `m
 Evaluations are performed per document line. The result is a set of matching restrictions, exceptions, and applicable licenses for each line. If no restrictions were found, then then set of exceptions and licenses will be empty.
 
 No document-level checks are performed, rather the document is considered blocked if there are any restrictions that do not have a matching exception.  The following pseudo-code illustrates how the restrictions, exceptions and licenses are considered.
+
+<!--KFM What language is the following code example? X++ ? -->
 
 ```
 foreach (Line in Request)
@@ -44,7 +48,7 @@ foreach (Line in Request)
 
 ## Evaluation of an individual rule
 
-The msdyn_exportcontrolrule table has a variety of fields such as sell to and ship to country, de minimis threshold, and transaction purpose. If a field is not set, then it has no impact on rule evaluation. The values from the line must match *all* rules that have a value set in order for the rule to apply.
+The `msdyn_exportcontrolrule` table has a variety of fields such as sell to and ship to country, de minimis threshold, and transaction purpose. If a field is not set, then it has no impact on rule evaluation. The values from the line must match *all* rules that have a value set in order for the rule to apply.
 
 Consider a line with the following values:
 
@@ -52,6 +56,8 @@ Consider a line with the following values:
 - Ship To Country = Mexico
 - Transaction Purpose = Return
 - De Minimis = 28%
+
+<!--KFM Must we use "De minimis" here? Can we use an English term instead? -->
 
 Rule Example 1:
 
