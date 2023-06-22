@@ -143,7 +143,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
         text: Number sequences overview
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
-        test: Global address book overview
+        text: Global address book overview
     - title: General ledger
       links:
       - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
