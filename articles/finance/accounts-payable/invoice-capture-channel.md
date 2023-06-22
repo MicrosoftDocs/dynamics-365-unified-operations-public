@@ -40,13 +40,13 @@ Customers receive supplier invoices from different external sources. Channels ar
 
 ## Default channel for file upload
 
-A **Default** channel is used to upload invoices into Invoice capture. The invoice can then viewed on the **Received files** list page. A new channel can be created to replace the default channel on the **System preference** page.
+A **Default** channel is used to upload invoices into Invoice capture. The invoice can then be viewed on the **Received files** list page. A new channel can be created to replace the **Default** channel on the **System preference** page.
 
-## What is “Document receive API”?
+## What is the Document receive API?
 
-“Document receive API”, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. This is used to receive the invoice documents. The admin follows the API standards and provides the correct input parameters to confirm that API is correctly called.
+The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. It's used to receive the invoice documents. Administrators follow the API standards and provide the correct input parameters to confirm that the API is correctly called.
 
-Documents receive API must be integrated with a valid channel ID. If the document receiving API is called without a valid channel ID, the call is invalid. The invoice document can't be captured and won't be displayed in the **Received files** list page.
+The Document receive API must be integrated with a valid channel ID. If it's called without a valid channel ID, the call is invalid. In this case, the invoice document can't be captured and doesn't appear on the **Received files** list page.
 
 ### Input parameters
 
@@ -86,16 +86,16 @@ Here is an example of a payload.
 { "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
     "SendFrom": "xxxx.xxx@contoso.com" }
 ```
-## Channel with/without flow template 
+## Channel with/without a flow template 
 
-Admin can decide how they want to integrate the document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
+Administrators can decide how they want to integrate the Document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
 
-- **Yes** – The flow is automatically generated, based on the flow setting.
+- **Yes** – The flow is automatically generated based on the flow setting.
 - **No** – The user must integrate the received API and bind the current channel ID to the API parameter.
 
-#### With flow template
+#### With a flow template
 
-When the **Use managed flow** option is set to **Yes**, the flow setting is enabled. The user selects a flow template. The following templates are available:
+If the **Use managed flow** option is set to **Yes**, the flow setting is enabled, and the user selects a flow template. The following templates are available:
 
 - Outlook.com
 - Microsoft Outlook 365
@@ -115,9 +115,8 @@ The following table describes the additional properties that the user must defin
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
 | **OneDrive** or **OneDrive for business** | Folder | The directory name. |
 
-When the channel is saved and **Use managed flow** option is set **Yes**, the flow is automatically generated, and flow details pane will display. It allows for the following operations:
+When the channel is saved, if the **Use managed flow** option is set **Yes**, the flow is automatically generated, and the flow details pane is shown. This pane allows for the following operations:
 
-If the **Use managed flow** option is set **Yes**, the flow is automatically generated and turned on when the channel is saved.
 - Turn the flow on and off.
 - Edit the flow, and either customize the flow or fix it.
 - View the running details of the flow and other flow-related information.
@@ -153,24 +152,24 @@ Various errors can appear:
 
     **Solution:** To help administrators access the flow editing UI, the message bar that shows the error message includes a **Fix it** button. If the message has already been closed, select **Edit** in the **Manage flow** pane to open the flow editing UI.
 
-### Without flow template
+### Without a flow template
 
-When **Use managed flow** option is set **No**, the document receive API will be called without using the flow template. It is recommended that this option only be used by the admin. The channel ID must be filled in the API payload. The channel ID can be found in the URL after it's saved.
+If the **Use managed flow** option is set **No**, the Document receive API is called without using a flow template. We recommend that only administrators use this approach. The channel ID must be specified in the API payload. The channel ID can be found in the URL after it's saved.
 
 ## Create a new channel by using managed flow
 
 1. In the navigation pane, select **Manage channels**.
 2. On the Action Pane, select **New**.
-3. Enter a name and description, set the **Use manage flow** option to **Yes**, and select a flow template.
+3. Enter a name and description, set the **Use managed flow** option to **Yes**, and select a flow template.
 4. Select **Save**. The new channel page appears.
 
     Creation of the flows will take some time.
 
     - If the flow is successfully generated and activated, the **Manage flow** status will be **On**.
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
-  
 
-## Deactivate and activate the channel:
-Admin can use the **Activate/Deactivate** button to decide whether the invoice document should be received from the channel. 
+## Deactivate and activate the channel
 
-If the channel is assigned as **the Channel for file upload** in **Setup system \> System preference** and set inactive, the file upload in the **Received file** will not work. 
+Administrators can use the **Activate**/**Deactivate** button to specify whether the invoice document should be received from the channel. 
+
+If the channel is assigned as the **Channel for file upload** at **Setup system \> System preference**, but it's deactivated, file upload on the **Received file** page doesn't work.
