@@ -54,7 +54,7 @@ We recommend that you check 24 hours after the installation of business performa
 
 ### How many years of data are available on reports?
 
-Business performance analytics has data for the current fiscal year plus the previous two years.
+Business performance analytics has data for the current fiscal year plus the previous three years.
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
