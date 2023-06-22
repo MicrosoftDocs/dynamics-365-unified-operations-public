@@ -1,17 +1,17 @@
 ---
-title: Transparency note for Collections coordinator summary
-description: This article is the transparency note that describes the AI impact of the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
+title: Collections coordinator summary: FAQ
+description: This article answers some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 ms.date: 6/15/2023
-ms.custom: transparency-note
+ms.custom: faq
 ms.topic: article
 author: JodiChristiansen
 ms.author: jchrist
 ms.reviewer: twheeloc
 ---
 
-# Transparency note for Collections coordinator summary
+# Collections coordinator summary: FAQ
 
-This transparency note describes the AI impact of the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
+This article answers some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 
 ## What is Collections coordinator summary?
 
