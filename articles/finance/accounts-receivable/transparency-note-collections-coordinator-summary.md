@@ -31,11 +31,9 @@ The feature has two intended uses:
 ## How was Collections coordinator summary evaluated? What metrics are used to measure performance?
 
 The AI-generated summary was evaluated based on the customer's existing Finance data, such as aged balances, overdue invoices, and payment history. All calculations are done in Finance, not through Azure OpenAI.
-
 All emails are based on Finance data, such as aged balances, overdue invoices, and payment history. They were verified against the same data during the testing process.
 
 ## What are the limitations of Collections coordinator summary? How can users minimize the impact of those limitations when they use the system?
-
 If the same customer exists in multiple legal entities in Finance, the data that's returned in the **Collections coordinator** workspace is based only on the legal entity that the collections coordinator is using. Therefore, the feature might not give a full picture of the customer's account across all entities.
 
 ## What operational factors and settings allow for effective and responsible use of the system?
