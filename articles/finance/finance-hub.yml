@@ -35,7 +35,6 @@ highlightedContent:
     - title: Troubleshoot
       itemType: reference
       url: /dynamics365/finance/finance-troubleshooting
-
 additionalContent:
   sections:
   - title: Administer Finance
@@ -59,7 +58,7 @@ additionalContent:
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
-        text: Dynamics Lifecycle services resources 
+        text: Dynamics Lifecycle Services resources 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page
         text: Continuous delivery 
       - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
@@ -122,14 +121,6 @@ additionalContent:
         text: Customize your environment
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
         text: Use Dual-write    
-    - title: Dynamics 365 Lifecycle Services  
-      links:      
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide
-        text: Lifecycle Services user guide
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/configuration-manager-lcs
-        text: Configure Lifecycle Services     
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/monitoring-diagnostics  
-        text: Monitoring and diagnostics tools in Lifecycle Services
   - title: Use Finance
     items:
     - title: Organization administration
