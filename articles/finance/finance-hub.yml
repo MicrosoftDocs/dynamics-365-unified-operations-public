@@ -39,14 +39,6 @@ additionalContent:
   sections:
   - title: Administer Finance
     items:
-    - title: Guidance
-      links: 
-      - url: /dynamics365/guidance/implementation-guide/overview 
-        text: Implementation guide
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Implementation FAQ   
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Security   
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
@@ -55,6 +47,14 @@ additionalContent:
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Deploy Dynamics 365 Finance  
+    - title: Guidance
+      links: 
+      - url: /dynamics365/guidance/implementation-guide/overview 
+        text: Implementation guide
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Implementation FAQ   
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Security   
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
