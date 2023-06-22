@@ -90,14 +90,6 @@ additionalContent:
         text: Export to Azure data lake in finance and operations
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/finance
         text: Data entities
-    - title: Developer reference
-      links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
-        text: API references
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
-        text: Mapping references
-      - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
-        text: Database movement API
     - title: Develop integration    
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
@@ -114,6 +106,14 @@ additionalContent:
         text: Dual-write overview 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
         text: Virual entities overview
+    - title: Developer reference
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
+        text: API references
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
+        text: Mapping references
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
+        text: Database movement API        
     - title: Develop the user interface  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
