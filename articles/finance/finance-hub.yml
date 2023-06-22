@@ -38,7 +38,7 @@ highlightedContent:
 
 additionalContent:
   sections:
-  - title: Administer 
+  - title: Administer Finance
     items:
     - title: Guidance
       links: 
@@ -55,22 +55,14 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Deploy Dynamics 365 Finance 
-    - title: Set up 
-      links:
-      - url: /dynamics365/fin-ops-core/fin-ops/get-started/system-requirements?context=%2Fdynamics365%2Fcontext%2Ffinance
-        text: Set up your organization
-      - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
-        text: Get started with Financial reporting 
-      - url: dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
-        text: Upgrades, updates, and hotfixes   
+        text: Deploy Dynamics 365 Finance  
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
         text: Dynamics Lifecycle services resources 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page
         text: Continuous delivery 
-      - url: dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
+      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
         text: Upgrades, updates, and hotfixes 
     - title: System administration  
       links: 
@@ -82,7 +74,7 @@ additionalContent:
         text: Batch processing overview            
   - title: Develop Finance 
     items:     
-    - title: Azure data lake  
+    - title: Azure Data Lake  
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
         text: Export to Azure Data Lake overview
@@ -147,7 +139,11 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
         text: Organizational hierarchies
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
-        text: Workflow system  
+        text: Workflow system 
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
+        text: Number sequences overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
+        test: Global address book overview
     - title: General ledger
       links:
       - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
