@@ -70,7 +70,19 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation
         text: Process automation
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
-        text: Batch processing overview            
+        text: Batch processing overview  
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+        text: Overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+        text: Organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+        text: Workflow system 
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
+        text: Number sequences overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
+        text: Global address book overview   
   - title: Develop Finance 
     items:     
     - title: Azure Data Lake  
@@ -131,18 +143,6 @@ additionalContent:
         text: Customize the Open in Microsoft Office menu       
   - title: Use Finance
     items:
-    - title: Organization administration
-      links:
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
-        text: Overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
-        text: Organizational hierarchies
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
-        text: Workflow system 
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
-        text: Number sequences overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
-        text: Global address book overview
     - title: General ledger
       links:
       - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
