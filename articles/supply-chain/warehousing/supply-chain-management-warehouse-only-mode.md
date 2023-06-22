@@ -546,8 +546,8 @@ Depending on your setup an inbound load will either automatically get created as
 - New mobile device menu items:
     - Inbound shipment order line receiving (and put away)
     - Inbound shipment order item receiving (and put away)
-    - Receiving completed
-    - 
+    - Receiving completed confirmation
+    
   https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
 
 - WIZARDS:
