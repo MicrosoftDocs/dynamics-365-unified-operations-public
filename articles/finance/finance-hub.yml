@@ -84,7 +84,7 @@ additionalContent:
     - title: Develop integration    
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
-        text: Integration between finance and operations and third party apps
+        text: Integration between finance and operations apps and third party apps
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api  
         text: Data management REST API
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
@@ -92,7 +92,7 @@ additionalContent:
     - title: Microsoft Power Platform integration
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
-        text: Integration between finance and operations and Power Platform overview
+        text: Integration between finance and operations apps and Power Platform overview
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview     
         text: Dual-write overview 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
@@ -120,7 +120,15 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/finance
         text: Customize your environment
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
-        text: Use Dual-write    
+        text: Use dual-write  
+    - title: Microsoft Office integration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
+        text: Overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
+        text: Configure and send email
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
+        text: Customize the Open in Microsoft Office menu       
   - title: Use Finance
     items:
     - title: Organization administration
@@ -151,6 +159,8 @@ additionalContent:
         text: Configure Accounts payable
       - url: /dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
         text: Invoice matching 
+      - url: /dynamics365/finance/accounts-payable/invoice-capture-overview
+        text: Invoice capture solution 
     - title: Accounts receivable
       links:
       - url: /dynamics365/finance/accounts-receivable/accounts-receivable
@@ -247,18 +257,9 @@ additionalContent:
         text: Available mobile workspaces
       - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace
         text: Publish mobile workspaces
-    - title: Microsoft Office integration
-      links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
-        text: Overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
-        text: Configure and send email
-      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
-        text: Customize the Open in Microsoft Office menu 
   - title: Related products
     items:
         # Card
-        
         - title: Dynamics 365 Commerce
           summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
           url: /dynamics365/commerce/
