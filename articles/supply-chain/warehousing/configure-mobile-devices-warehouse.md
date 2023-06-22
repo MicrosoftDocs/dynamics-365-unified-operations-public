@@ -72,7 +72,30 @@ You can set up a menu item that creates work for another worker after an initial
 <th>Description</th>
 </tr>
 <tr>
-<td rowspan="4">Inbound shipment order</td>
+<td rowspan="8">Inbound shipment order</td>
+<td>Inbound shipment order line receiving</td>
+<td>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and create put-away work for another worker.
+<p>Note that a load must exist for this process.</p>
+</td>
+</tr>
+<tr>
+<td>Inbound shipment order line receiving and put away</td>
+<td>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and put the items away. The same worker performs both actions.
+<p>Note that a load must exist for this process.</p>
+</td>
+</tr>
+<tr>
+<td>Inbound shipment order item receiving</td>
+<td>Register the receipt of a quantity of an item for a inbound shipment order by registering the order number and item number, and create put-away work for another worker.
+<p>Note that a load must exist for this process.</p>
+</td>
+</tr>
+<tr>
+<td>Inbound shipment order item receiving and put away</td>
+<td>Register the receipt of a quantity of an item for a inbound shipment order by registering the order number, and put the item away. The same worker performs both actions.
+<p>Note that a load must exist for this process.</p>
+</td>
+</tr>
 <td>License plate receiving</td>
 <td>Receive an inbound advance ship notice (ASN) by using the license plate ID.</td>
 </tr>

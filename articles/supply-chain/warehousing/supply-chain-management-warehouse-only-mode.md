@@ -157,7 +157,9 @@ The **Warehouse management > Workspaces > Warehouse integration monitoring** pag
 
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal purchase order document. No financial postings as part of the [**General ledger**](../../finance/general-ledger/general-ledger.md) will be used for this source document.
 
-On the _Inbound shipment order lines_ you can use the option **Update line > Delivery remainder** to write down the expected order line transaction quantities. Make sure to have the proper user role security privilege assigned for this process.
+> [!WARNING]
+> On the _Inbound shipment order lines_ you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities.
+> Make sure to have the proper user role security privilege assigned for this process, because this will (like the messages editing) allow for potential inconsistencies between the external systems and D365 SCM.
 
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the _Order number prefix/suffix_ options.
@@ -183,7 +185,9 @@ In case you are already knowledgeable about D365 SCM, you might find this docume
 
 In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
 
-On the _Onbound shipment order lines_ you can use the option **Update line > Delivery remainder** to write down the expected order line transaction quantities. Make sure to have the proper user role security privilege assigned for this process.
+> [!WARNING]
+> On the _Outbound shipment order lines_ you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities.
+> Make sure to have the proper user role security privilege assigned for this process, because this will (like the messages editing) allow for potential inconsistencies between the external systems and D365 SCM.
 
 ## Automatic release of outbound shipment orders
 
@@ -214,14 +218,16 @@ The high-level process for inbound processing is as following:
 - The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
 - The _Inbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job.
 
-> [!NOTE] <!-- perlynne -->
-> The **Receiving completed** process requires load lines being fully received. Future plans exists for having automated process handling based on policy settings.
+> [!NOTE] <!-- perlynne#1 -->
+> The **Receiving completed** process will have different behaviors depending on the **Delivery policy** assigned to the load.
+>
+> In case of wanting a manual process a [**detour**]( warehouse-app-detours.md) mobile device menu item for the _Complete receiving_ process can get defined as part of the inbound receiving flows.
 
 ## <a name="shipment-receipts"></a> Shipment Receipts
 <!-- perlynne -->
 In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can follow the **Posting status** on the header data.
 The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related inbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
-You can as well use **Warehouse management > Periodic tasks > Post shipment receipts** page to maintain the **Process automation background processes**.
+You can see all the _Background processes_ running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
 
 > [!NOTE]
 > Reversal of the receiving confirmation will be supported as long as the related inbound shipment order line transactions have not been finalized.
@@ -248,7 +254,7 @@ In the **Warehouse management > Inquiries and reports > Shipment packing slips**
 <!-- Perlynne -->
 The **Shipment packing slip** data is version controlled and you can follow the **Posting status** on the header data.
 The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related outbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
-You can as well use **Warehouse management > Periodic tasks > Post shipment packing slips** page to maintain the **Process automation background processes**.
+You can see all the _Background processes_ running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
 
 > [!NOTE]
 > In case of not having defined a language for the order the report will fall back to use the company specific language settings.
@@ -314,12 +320,13 @@ The following high-level processes are not supported out-of-the-box related to a
 
 |Process                          |Description                                       |
 |---------------------------------|--------------------------------------------------|
+| [Warehouse slotting](warehouse-slotting.md) processing | In current version is not yet support to include _Outbound shipment orders_ as part of the _Slotting templates_ |
 | Linked quality order processing | For other type of source documents like for example _Purchase orders_ it is possible to define [_Quality associations_](../inventory/quality-management-for-warehouses-processes.md#quality-associations) to control the triggering for automatic quality orders creation. This is not yet supported for _Inbound shipment orders_ |
 | Return order processing with disposition codes | When using the _Inbound shipment orders_ related to an inbound return process, it is not possible to use the same process as the [_Sales return orders_](sales-returns.md) which supports the use of _Return reason codes_ and _Disposition codes_ as part of the _Return order receiving (and put away)_ mobile device menu item flow |
 | Cross docking                   | The _Outbound shipment orders_ and _Inbound shipment orders_ cannot yet be used as part of the the [planned cross docking](planned-cross-docking.md) capability. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md). |
-| Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. Instead the _Load item (and put away)_ setup must be used </li> <li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
+| Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. You can use the_Inbound shipment order item receiving (and put away)_ and _Inbound shipment order line receiving (and put away)_ processes as long as the order lines are associated to a load.</li> <li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
-| Outbound load planning with release to warehouse from loads | In the first release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving |
+| Outbound load planning with release to warehouse from loads | In the current release of the **Supply Chain Management warehouse-only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving |
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
 | Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way than the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
@@ -524,19 +531,29 @@ The **Supply Chain Management Warehouse-Only Mode** is part of the larger Micros
 
 Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
+## Why can't I just **Receive complete** what I have partly inbound registered
+
+Depending on your setup an inbound load will either automatically get created as part of the _Inbound shipment order_ import, via _ASN_ import or via a manually process. The loads contains a [**Delivery policy**](#source-systems) which can control whether the partly receiving completion processes is allowed or not.   <!-- perlynne-- >
+
+
 <!-- perlynne
 
-- Setup post in-/out packing slip + Message processor process automation...  ?
-- Detour Receiving complete
-- Enhanced inbound receiving process
+- "Source systems" process automation setup enhancements
+- Detour Receiving complete - search for: perlynne#1
+- Enhanced inbound receiving process (policy to auto reduce)
+- Shipment packing slip Id
 - OData value mapping (Item/Warehouse) counting + dispatch/advice notification
 - New mobile device menu items:
     - Inbound shipment order line receiving (and put away)
     - Inbound shipment order item receiving (and put away)
+    - Receiving completed
+    - 
+  https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
 
-### Warehouse management initiation wizard
-### Outbound configuration wizard
-### Inbound configuration wizard
-https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/get-started-with-setting-up-module
-
+- WIZARDS:
+https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/get-started-with-setting-up-module (Main has been updated AFTER this branch!)
+... Don't make updates here!!!
+- Warehouse management initiation wizard
+- Inbound configuration wizard
+- Outbound configuration wizard
 -->
