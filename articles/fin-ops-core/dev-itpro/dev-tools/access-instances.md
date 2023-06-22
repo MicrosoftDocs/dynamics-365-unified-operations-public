@@ -131,7 +131,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 3. Select the **Ctrl+Alt+Delete** button on the toolbar. The VM receives most keyboard commands, but Ctrl+Alt+Delete isn't one of them. Therefore, you must use the button or a menu command.
 4. Sign in to the VM by using the following credentials:
 
-    - User name: **Administrator**
+    - User name: **localadmin**
     - Password: <strong>pass@word1</strong>
 
     > [!TIP]
