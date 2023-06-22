@@ -59,6 +59,7 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Container creation | Enable the container creation process. This process is typically part of the process of [packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Container closing | Enable the container closing process. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). For more information, see [Container label layouts and printing](print-container-labels.md). |
+| Receiving completed confirmation | Enable support for receiving clerks to indicate _Receiving completed_ for a load. |
 
 ## Configure menu items to create work for another worker or process
 
