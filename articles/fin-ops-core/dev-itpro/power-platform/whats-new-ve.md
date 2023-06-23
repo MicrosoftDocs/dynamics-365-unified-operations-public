@@ -13,7 +13,7 @@ ms.author: ramasri
 ms.search.validFrom: 2023-06-1
 ---
 
-# What's new or changed in Virtual Entities?
+# What's new or changed in Virtual Entity solution provider?
 
 [!include[banner](../includes/banner.md)]
 
