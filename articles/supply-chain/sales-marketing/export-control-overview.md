@@ -12,7 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: Is this really a sales/marketing feature? Seems more like product information management (like hazmat). -->
+<!-- KFM: Is this really a sales/marketing feature? Seems more like product information management (like hazmat and dual-use). -->
+
+<!-- KFM: We should maybe have a section about our architecture so we'll understand why we need Power Apps and Dataverse, and what benefits those may bring. -->
 
 # Advanced export control overview
 

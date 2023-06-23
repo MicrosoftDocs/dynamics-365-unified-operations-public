@@ -75,7 +75,7 @@ Rule Example 2:
 - De Minimis Threshold = (empty)
 - This rule evaluates to *false* because the sell to country of France is not in the list of values provided by the rule.
 
-A rule only applies if the ECCN for the line is one of the codes listed for the rule explicitly, or if the ECCN is part of one of the categories for the rule. A rule marked as *Apply to All Codes* will automatically evaluate to true regardless of what ECCN is included on the line. 
+A rule only applies if the ECCN for the line is one of the codes listed for the rule explicitly, or if the ECCN is part of one of the categories for the rule. A rule marked as *Apply to All Codes* will automatically evaluate to true regardless of what ECCN is included on the line.
 
 If an exception rule is marked as *Require License*, then it evaluates to true only if one or more licenses are found which match the line.
 
@@ -96,4 +96,4 @@ Following are various examples of PowerFx formulas for Export Control. For more 
 
 ## Overrides
 
-Export control checks may be overridden at a line code level. This allows overriding a failing export control check for one jurisdiction on one line of a document, while still enforcing checks on other lines. To override the export control check, pass **"msdyn_overridden": true** as a property of one of the line codes in the **msdyn_CheckExportControlLineCodes** collection. The export checks will still be evaluated, and any info or warning messages will still be shown. However, any error messages will be downgraded to warning messages and will not block the activity.
+Export control checks may be overridden at a line code level. This allows overriding a failing export control check for one jurisdiction on one line of a document, while still enforcing checks on other lines. To override the export control check, pass `"msdyn_overridden": true` as a property of one of the line codes in the `msdyn_CheckExportControlLineCodes` collection. The export checks will still be evaluated, and any info or warning messages will still be shown. However, any error messages will be downgraded to warning messages and will not block the activity.

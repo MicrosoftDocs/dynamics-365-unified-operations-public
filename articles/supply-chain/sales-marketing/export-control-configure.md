@@ -16,6 +16,8 @@ ms.custom: bap-template
 
 ## Prerequisites
 
+<!-- KFM: Seems like maybe SCM needs already to be linked to a Dataverse. Should we add this as a prerequisite?  -->
+
 ### Turn on the feature in Supply Chain Management
 
 To use advanced export control, your system must meet the following requirements:
@@ -25,13 +27,15 @@ To use advanced export control, your system must meet the following requirements
 
 ### Get the Advanced Export Control solution
 
-Install the Advanced Export Control solution for Supply Chain Management from Microsoft AppSource. For instructions, see [Microsoft Dynamics 365 Export Control App](https://appsource.microsoft.com/product/dynamics-365/mscrm.exportcontrol). <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? -->
+Install the Advanced Export Control solution for Supply Chain Management from Microsoft AppSource. For instructions, see [Microsoft Dynamics 365 Export Control App](https://appsource.microsoft.com/product/dynamics-365/mscrm.exportcontrol). <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? What is this and why do we need it?  -->
 
 ## Authentication and authorization
 
 The system makes export control checks using application user calls, which means they can be made regardless of which user is working with the document in Supply Chain Management. Supply Chain Management users don't need to be added to Dataverse nor given extra permissions. To support this service-to-service (S2S) authentication, an Azure Active Directory (Azure AD) application must be created for each environment. You must not share or reuse the Azure AD applications across different environments.
 
 ### Register a new Azure AD application in your Azure portal
+
+<!-- KFM: We should briefly mention why we need this. -->
 
 Follow these steps to create a new Azure AD application.
 
@@ -52,6 +56,8 @@ Follow these steps to create a new Azure AD application.
 
 ### Grant the application permissions in the Power Platform Admin Center
 
+<!-- KFM: We should briefly mention why we need this. -->
+
 Follow these steps to grant the application permissions in the Power Platform Admin Center.
 
 1. Sign in to your[Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
@@ -67,6 +73,8 @@ Follow these steps to grant the application permissions in the Power Platform Ad
 
 ## Enable the functionality and configure the application in Supply Chain Management
 
+<!-- KFM: We should briefly mention why we need this. -->
+
 Follow these steps to enable the functionality and configure the application in Supply Chain Management.
 
 1. Sign in to Supply Chain Management.
@@ -81,7 +89,7 @@ Follow these steps to enable the functionality and configure the application in 
 1. On the Action Pane, select **Save**. The system checks whether it can connect and that the appropriate solution is installed. If you receive any errors, then make sure the Advanced Export Control solution is successfully installed and that the specified Azure AD application has the *Export control application* security role in Dataverse.
 1. Select the **Synchronize country/region list** button to copy the existing list of country/region codes from Supply Chain Management to the Dataverse solution. This list will be used when defining rules. Any time you change the country/region code list, you must come back here and select this button again to sync the changes. The name of the countries will be synchronized using the language of the user who selects this button.
 
-## Configuring jurisdictions for each legal entity
+## Configure jurisdictions for each legal entity
 
 You must configure the set of jurisdictions that are available for each legal entity (company). For companies where no jurisdictions are enabled, advanced export control features won't be available on sales orders, items, or products. Instead, simpler [dual-use goods](../pim/dual-use.md) functionality will be provided. Once the first jurisdiction is enabled for a legal entity, then the dual-use goods functionality will be hidden on forms in that legal entity and advanced export control functionality will be shown instead.
 
