@@ -37,7 +37,7 @@ highlightedContent:
       url: /dynamics365/finance/finance-troubleshooting
 additionalContent:
   sections:
-  - title: Administer Finance
+  - title: Plan and implement Finance
     items:
     - title: Try/Buy/Deploy
       links: 
@@ -85,7 +85,7 @@ additionalContent:
         text: Global address book overview   
   - title: Develop Finance 
     items:     
-    - title: Azure Data Lake  
+    - title: Azure Data Lake integration 
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
         text: Export to Azure Data Lake overview
