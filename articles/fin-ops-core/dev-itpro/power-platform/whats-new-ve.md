@@ -27,7 +27,7 @@ The June release of F&O Virtual Entity Solution Changes in Release 2.8.7 contain
 |---|---|---|
 | Feature | You can access fields which expose aggregation results. Say for example: The onhand inventory of Surface Pro 128 GB is 10 in Site Chicago and 15 in Site Montana, it can be aggregated and exposed as 25. | General availability |
 | Feature | You can call Dataverse tables and APIs from Finance and Operations apps using IOrganizationService. | General availability |
-| Performance Improvement	| Improved the virtual entity metadata generation for finance and operations apps. | General availability |
+| Performance Improvement	| Improved the performance of virtual entity metadata generation process for finance and operations apps. | General availability |
 | Bug Fix | Corrected an issue where the translation of data being returned from finance and operations apps resulted in error "An item with the same key has already been added". | General availability |
 | Bug Fix | Fixed query expression for joins to CompanyInfoEntity and avoid SQL error. | General availability |
 
