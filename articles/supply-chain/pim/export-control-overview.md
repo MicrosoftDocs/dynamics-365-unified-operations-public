@@ -1,6 +1,6 @@
 ---
 title: Advanced export control overview
-description:
+description: Manage, track, and check export compliance with an advanced export control solution that implements five primary concepts (jurisdictions, codes and categories, restrictions, exceptions, and licenses).
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -69,4 +69,11 @@ The following screenshot shows an example exception setup.
 
 [<img src="media/export-control-exception.png" alt="Example of an exception." title="Example of an exception" width="720" />](media/export-control-exception.png#lightbox)
 
+## Licenses
+
 <!-- KFM: Seems like we are missing a description of *licenses*? -->
+
+## Next steps
+
+- [Enable and configure advanced export control](export-control-configure.md)
+- [Work with advanced export control in products and sales orders](export-control-use.md)

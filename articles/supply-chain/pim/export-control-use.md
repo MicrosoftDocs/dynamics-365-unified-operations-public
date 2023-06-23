@@ -1,6 +1,6 @@
 ---
-title: Work with advanced export controls
-description:
+title: Work with advanced export control in products and sales orders
+description: Learn how to work with advanced export control in products and sales orders.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 <!-- KFM: I think we might be missing info on how to configure exceptions, requirements, rules. Maybe something about "licenses" (it's not clear what those are)? -->
 
-# Work with advanced export controls
+# Work with advanced export control in products and sales orders
 
 The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company), which means that each company can have have different export control behaviors and rules.
 
@@ -50,7 +50,7 @@ To set up advanced export control for a released product, follow these steps:
 
     [<img src="media/export-control-item-jurisdictions.png" alt="Export control settings for released products." title="Export control settings for released products" width="720" />](media/export-control-item-jurisdictions.png#lightbox)
 
-1. Provided at least one jurisdiction is [enabled](export-control-configure.md) for your selected legal entity, the FastTab includes an **Export control codes** section (otherwise, simpler [dual-use goods](../pim/dual-use.md) functionality will shown here instead). The grid here lists each export control that applies to the current released product. Use the buttons on the toolbar to add and remove rows as needed. For each row, make the following settings:
+1. Provided at least one jurisdiction is [enabled](export-control-configure.md) for your selected legal entity, the FastTab includes an **Export control codes** section (otherwise, simpler [dual-use goods](dual-use.md) functionality will shown here instead). The grid here lists each export control that applies to the current released product. Use the buttons on the toolbar to add and remove rows as needed. For each row, make the following settings:
     - **Export control jurisdiction** – Select the jurisdiction where the current row applies. This list is filtered to only show the jurisdictions used in the currently selected legal entity.
     - **Export control classification** – Select the ECCN that applies for the current row. This establishes the set of export control rules that apply to the current product for the jurisdiction selected in this row.
     - **Third country region content percent** – <!-- KFM: Description needed -->
@@ -61,9 +61,7 @@ To set up advanced export control for a released product, follow these steps:
 
 ## Checking and enforcing export control rules for sales orders
 
-<!-- KFM: This section provides too many developer details, including APIs and technical field names. We may need a new topic about how to extend this functionality with "de minimis" calculations, etc. 
-
-Here, I think we should instead have explicit procedures for the following (maybe some could be combined): 
+<!-- KFM: Here, I think we should instead have explicit procedures for the following: 
 
 - How and when automatic checks occur and what can happen.
 - How to handle a sales order that includes items that require export control checks, including details such as:
@@ -74,20 +72,16 @@ Here, I think we should instead have explicit procedures for the following (mayb
 
  -->
 
-When advanced export control is enabled for a legal entity, an new button named **Check export control** will show up on sales orders. Clicking this button will perform an ad-hoc check to show the current export control status of this document. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Ad-hoc checks will not change license consumption, nor will the bye tracked in history.
+When advanced export control is enabled for a legal entity, an new button named **Check export control** will show up on sales orders. Select this button to check the current export control status of the current order. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Manual checks will not change license consumption, nor will they be tracked in history.
 
 [<img src="media/export-control-sales-order-check.png" alt="The Check export control dialog." title="The Check export control dialog" width="720" />](media/export-control-sales-order-check.png#lightbox)
 
 The sales order header has a tab to specify licenses per jurisdiction. Any licenses specified on the header are assumed to default to all lines of the document, though the license can be overridden at the line level. Licenses are only required to pass export control checks if restrictions and exceptions require a license. Blanket exemptions or corporate policies do not require licenses.
 
-During confirmation and similar posting steps, the history of export control checks is provided tracked. This can be accessed from the sales order header by clicking on the **Result** button which will show the details of the check performed at that time. This data is available for reference from reports and other processes in the COOExportControlSalesTableHistory table, which also provides helper methods to access common information.
-
-The document level *de minimis* threshold value is _not_ computed and will always be zero by default. To provide a computation of document-level *de minimis*, extend the COOValidateSalesTable::createRequest() API. <!-- KFM: What is *de minimis*"? -->
+During confirmation and similar posting steps, the history of export control checks is provided tracked. This can be accessed from the sales order header by clicking on the **Result** button which will show the details of the check performed at that time.
 
 [<img src="media/export-control-sales-order-header.png" alt="Export control settings for sales order headers." title="Export control settings for sales order headers" width="720" />](media/export-control-sales-order-header.png#lightbox)
 
 Sales order lines allow the license from the header to be overridden. This allows different lines to be related to different licenses. Lines also provide the ability to override the export control check. When a line is overridden, the export control check is still performed and tracked, but any failures will not block the document processing. The user who edited the override information is automatically tracked on the record. Auditing of this information can be performed using the standard [logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md) functionality for finance and operations apps.
-
- The SalesLine.QtyOrdered field is passed for quantity, and the SalesLine.LineAmount is passed for the value. No currency conversion is performed on these values. To override and pass different values, extend the COOValidateSalesTable::createRequest() method to update the values. The *de minimis* percentage from the associated item is passed for the line without calculation.
 
 [<img src="media/export-control-sales-order-line.png" alt="Export control settings for sales order lines." title="Export control settings for sales order lines" width="720" />](media/export-control-sales-order-line.png#lightbox)

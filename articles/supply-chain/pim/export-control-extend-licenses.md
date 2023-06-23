@@ -1,6 +1,6 @@
 ---
-title: Export control licenses
-description:
+title: Extend export control license functionality
+description: This article provides information that is useful for developers who are extending license functionality for implementing export controls
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -12,9 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: Is this information really intended for users? Seems like internal developer documentation. What can a user do with this info? -->
+# Extend export control license functionality
 
-# Export control licenses
+This article provides information that is useful for developers who are extending license functionality for implementing export controls.
 
 License information is stored in the `msdyn_exportcontrollicense` table. Tracking of licenses is provided only as it pertains to export control, and this should not be considered a general purpose license management subsystem.
 

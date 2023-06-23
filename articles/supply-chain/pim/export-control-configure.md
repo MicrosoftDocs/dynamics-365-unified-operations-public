@@ -1,6 +1,6 @@
 ---
 title: Enable and configure advanced export control
-description:
+description: Learn how to enable and configure advanced export control in Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -91,7 +91,7 @@ Follow these steps to enable the functionality and configure the application in 
 
 ## Configure jurisdictions for each legal entity
 
-You must configure the set of jurisdictions that are available for each legal entity (company). For companies where no jurisdictions are enabled, advanced export control features won't be available on sales orders, items, or products. Instead, simpler [dual-use goods](../pim/dual-use.md) functionality will be provided. Once the first jurisdiction is enabled for a legal entity, then the dual-use goods functionality will be hidden on forms in that legal entity and advanced export control functionality will be shown instead.
+You must configure the set of jurisdictions that are available for each legal entity (company). For companies where no jurisdictions are enabled, advanced export control features won't be available on sales orders, items, or products. Instead, simpler [dual-use goods](dual-use.md) functionality will be provided. Once the first jurisdiction is enabled for a legal entity, then the dual-use goods functionality will be hidden on forms in that legal entity and advanced export control functionality will be shown instead.
 
 Follow these steps to configure the jurisdictions for a legal entity.
 

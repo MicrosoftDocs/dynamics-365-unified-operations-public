@@ -1,6 +1,6 @@
 ---
-title: Rule evaluation
-description:
+title: Extend export control rules functionality
+description: This article provides information that is useful for developers who are extending rules functionality for implementing export controls
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -12,9 +12,10 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: Is this information really intended for users? Seems like internal developer documentation. What can a user do with this info? -->
+# Extend export control rules functionality
 
-# Rule evaluation
+This article provides information that is useful for developers who are extending rules functionality for implementing export controls.
+
 
 Rules are defined primarily as data in the `msdyn_exportcontroljurisdiction`, `msdyn_exportcontrolrule`, and `msdyn_exportcontrollicense` tables.
 
@@ -56,8 +57,6 @@ Consider a line with the following values:
 - Ship To Country = Mexico
 - Transaction Purpose = Return
 - De Minimis = 28%
-
-<!--KFM Must we use "De minimis" here? Can we use an English term instead? -->
 
 Rule Example 1:
 
