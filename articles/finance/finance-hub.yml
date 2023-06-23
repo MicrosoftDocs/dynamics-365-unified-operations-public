@@ -37,7 +37,7 @@ highlightedContent:
       url: /dynamics365/finance/finance-troubleshooting
 additionalContent:
   sections:
-  - title: Plan and implement Finance
+  - title: Plan and implement 
     items:
     - title: Try/Buy/Deploy
       links: 
@@ -83,7 +83,7 @@ additionalContent:
         text: Number sequences overview
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
         text: Global address book overview   
-  - title: Develop Finance 
+  - title: Develop  
     items:     
     - title: Azure Data Lake integration 
       links:
@@ -141,7 +141,7 @@ additionalContent:
         text: Configure and send email
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
         text: Customize the Open in Microsoft Office menu       
-  - title: Use Finance
+  - title: Use 
     items:
     - title: General ledger
       links:
