@@ -320,6 +320,11 @@ On the **Electronic customer invoices** page, you can perform the following acti
 > The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
 
 ![Electronic customer invoices page.](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
+### Move electronic invoices XML files to attachments
+
+As of Finance version **10.0.36**, you can move previously generated XML files of already existing electronic invoices to attachments and configure the system to automatically save generated XML files of new electronic invoice as attachements.
+
+To activate the capability to save XML files of electronic invoice as attachements, enable the **Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 ## <a id="additionalfunctionality"></a>Additional functionality that affects the XML file
 
