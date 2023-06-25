@@ -957,7 +957,9 @@
         - name: Define loyalty reward points   
           href: tasks/define-loyalty-reward-points.md 
         - name: Define loyalty schemes   
-          href: tasks/define-loyalty-schemes.md 
+          href: tasks/define-loyalty-schemes.md
+        - name: Define loyalty cards   
+          href: tasks/define-loyalty-cards.md 
         - name: Process adjustments of loyalty reward points   
           href: tasks/process-loyalty-reward-point-adjustments.md
     - name: Manage your financials
