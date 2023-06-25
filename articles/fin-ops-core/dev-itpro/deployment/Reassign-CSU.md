@@ -59,7 +59,9 @@ This procedure and the next procedure must be completed during the planned downt
 
 ### Migrate channels to a new CSU
 
-1. On the **Store details** page, set the **Live channel database** field to the destination CSU database.
+1. On the **Store details** page, set the **Live channel database** field to the destination CSU database.  
+Make sure that the selected new CSU database is in the same **database group** of
+ the old CSU database (You can find all database group settings in the form "Retail and Commerce > Headquarters setup > Commerce scheduler > Channel database group").
 2. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
 3. On the **Distribution schedule** page, run job **1070** (**Channel configuration job**) and job **1110** (**Global configuration job**). Select **Run now** for each job. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs are completed, your channels have been migrated to the new CSU.
 4. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs on the origin channel database are completed, you might lose transactions because of duplicate transaction numbers.
