@@ -54,13 +54,15 @@ Because of the hierarchy of feature switches, before you enable the **Enable edi
 - **Enable enhanced async customer creation**
 - **Enable asynchronous creation for customer addresses**
 
+After the feature's enabled, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job).
+
 For answers to common troubleshooting questions, see [Asynchronous customer creation mode FAQ](async-customer-mode-faq.md). 
 
-After you enable the previously mentioned features, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
+After you enable the previously mentioned features, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
 
 ### Customer creation in POS offline mode
 
-As was mentioned earlier, whenever the POS goes offline, the system automatically creates customers asynchronously, even if the async customer creation mode is disabled. Therefore, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
+As was mentioned earlier, whenever the POS goes offline, the system automatically creates customers asynchronously, even if the async customer creation mode is disabled. Therefore, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and channel requests** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
 
 > [!NOTE]
 > If the **Filter shared customer data tables** option is set to **Yes** on the **Commerce channel schema** page (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**), customer records aren't created in POS offline mode. For more information, see [Offline data exclusion](dev-itpro/implementation-considerations-cdx.md#offline-data-exclusion).
