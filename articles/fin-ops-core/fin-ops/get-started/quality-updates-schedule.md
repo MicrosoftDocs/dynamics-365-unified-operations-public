@@ -31,7 +31,7 @@ For information about the maintenance windows for each region, see [What are the
 
 | Station | Regions |
 |---|---|
-| Station 1 | To be determined later |
+| Station 1 | Only for opted-in environments |
 | Station 2 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West |
 | Station 3 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia |
 | Station 4 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central |
@@ -55,9 +55,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Completed |
 | 10.0.31 PQU-3 | April 14, 2023 | April 24, 2023 to May 28, 2023| Completed |
 | 10.0.32 PQU-1 | March 31, 2023 | April 10, 2023 to May 14, 2023| Completed |
-| 10.0.32 PQU-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| In-Progress |
+| 10.0.32 PQU-2 | April 28, 2023 | May 8, 2023 to June 11, 2023| Completed |
 | 10.0.32 PQU-3 | May 26, 2023 | June 5, 2023 to July 9, 2023| In-Progress |
-| 10.0.33 PQU-1 | April 28, 2023 | May 8, 2023 to June 11, 2023| In-Progress |
+| 10.0.33 PQU-1 | April 28, 2023 | May 8, 2023 to June 11, 2023| Completed |
 | 10.0.33 PQU-2 | May 26, 2023 | June 5, 2023 to July 9, 2023| In-Progress |
 | 10.0.33 PQU-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Not Started |
 | 10.0.34 PQU-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Not Started |
@@ -77,19 +77,6 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Only the onboarded productions environments will receive the updates, onboarded environments will receive explicit communication.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-2 train schedule
-
-**App version: 10.0.1515.98**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | May 8 to May 11, 2023 | NA |
-| Station 2 | May 15 to May 18, 2023 | May 27 to May 28, 2023 |
-| Station 3 | May 16 to May 19, 2023 | May 27 to May 28, 2023 |
-| Station 4 | May 22 to May 25, 2023 | June 3 to June 4, 2023 |
-| Station 5 | May 29 to June 1, 2023 | June 10 to June 11, 2023 |
-| Station 6 | May 30 to June 2, 2023 | June 10 to June 11, 2023 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.32 Release-3 train schedule
 
 **App version: 10.0.1515.111**
@@ -105,19 +92,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 [Build Details](quality-updates-build-details-10-0-32.md)
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.33 Release-1 train schedule
-
-**App version: 10.0.1549.63**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | May 8 to May 11, 2023 | NA |
-| Station 2 | May 15 to May 18, 2023 | May 27 to May 28, 2023 |
-| Station 3 | May 16 to May 19, 2023 | May 27 to May 28, 2023 |
-| Station 4 | May 22 to May 25, 2023 | June 3 to June 4, 2023 |
-| Station 5 | May 29 to June 1, 2023 | June 10 to June 11, 2023 |
-| Station 6 | May 30 to June 2, 2023 | June 10 to June 11, 2023 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.33 Release-2 train schedule
 
 **App version: 10.0.1549.86**
@@ -130,6 +104,19 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | June 19 to June 22, 2023 | July 1 to July 2, 2023 |
 | Station 5 | June 26 to June 29, 2023 | July 8 to July 9, 2023 |
 | Station 6 | June 27 to June 30, 2023 | July 8 to July 9, 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-1 train schedule
+
+**App version: 10.0.1591.76**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | July 3 to July 6, 2023 | NA |
+| Station 2 | July 10 to July 13, 2023 | July 22 to July 23, 2023 |
+| Station 3 | July 11 to July 14, 2023 | July 22 to July 23, 2023 |
+| Station 4 | July 17 to July 20, 2023 | July 29 to July 30, 2023 |
+| Station 5 | July 24 to July 27, 2023 | August 5 to August 6, 2023 |
+| Station 6 | June 25 to June 28, 2023 | August 5 to August 6, 2023 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
