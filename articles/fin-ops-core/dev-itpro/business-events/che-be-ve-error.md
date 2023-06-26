@@ -21,20 +21,17 @@ ms.author: ramasri
 
 # Cloud Hosted Environments are unable to use Business Events or Virtual Entities and Receive a 400 error
 
-Customer will receive the following error when attempting to setup a Business Event. This error can also occur elsewhere depending on what they are doing:
+While setting up business events or virtual entities on a cloud hosted environment, it is common to receive the following error message:
 
-Response Status code does not indicate success : 400 ({“error”:”invalid_client”,”error_description”;”Expected aud https://securityservice.operations365.dynamics.com  but found.”})
+    Response Status code does not indicate success : 400 ({“error”:”invalid_client”,”error_description”;”Expected aud https://securityservice.operations365.dynamics.com  but found.”})
 
-Cause:
-The overall problem is that CHE's and LBD environments don't use the Security Service, but we have removed the manual steps in our external docs - https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration#enable-the-integration-for-cloud-hosted-development-environments 
+The reason is, the cloud hosted environments and on-premise (aka LBD) environments don't use Security Service. Please follow these manual steps to get this setup.
 
-Workaround (full-steps):
-Create a new app registration in AAD. Save the Application client Id value.
-Under that new app registration create a new Secret. Save the Secret value.
-Go to Power Platform admin center > Environments > Settings > Users + Permissions > Application users > New App User. Create an app user for the Application Client ID from step 1 and give them appropriate role.
-Add App ID from step 1 in D365 FnO System Administration | Azure Active Directory Application.
-Run the script below to refresh the integration of Dataverse via PowerShell in remote desktop on the CHE Note: This needs to be done in an Admin PowerShell console
-Retry the process
+1. Create a new app registration in AAD. Save the Application client Id value.
+2. Under that new app registration create a new Secret. Save the Secret value.
+3. Go to Power Platform Admin Center > Environments > Settings > Users + Permissions > Application users > New App User. Create an app user for the Application Client ID from step 1 and give them appropriate role.
+4. Add App ID from step 1 in Dynamics 365 Finance and Operations System Administration > Azure Active Directory Application.
+5. Run the following PowerShell script in Admin PowerShell console to refresh the integration of Dataverse via PowerShell in remote desktop on the Cloud Hosted Environment or LBD environment.
 
 ```console
 
