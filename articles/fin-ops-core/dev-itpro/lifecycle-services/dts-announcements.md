@@ -26,6 +26,10 @@ ms.assetid:
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
+## DTS API release
+
+The DTS API is now available for DTS users. With the API, customers can perform Translation, Alignment, and Regeneration actions without the need to visit LCS. This release allows developers to create custom translation solutions, leveraging the capabilities of DTS. For more details, see [the documentation](dts-api-info.md).
+
 ## Incident update: DTS API failures impacting extension users
 
 The LCS team has identified the root cause of the problem. The necessary fixes will be rolled out in the next release, and we anticipate that the DTS API will be fully functional by April 15, 2023.
