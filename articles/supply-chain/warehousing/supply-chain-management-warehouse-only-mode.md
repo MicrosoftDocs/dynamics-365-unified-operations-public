@@ -23,7 +23,6 @@ ms.author: perlynne
 ms.search.validFrom: 2023-04-24
 ms.dyn365.ops.version: 10.0.36
 ---
-**_DRAFT DOCUMENTATION FOR:_**
 
 # Warehouse Management only mode
 
@@ -529,7 +528,11 @@ The **Warehouse Management only mode** is part of the larger Microsoft Dynamics 
 
 ## Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
 
-Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
+Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** and deselected _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
+
+## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing warehouse operations?
+
+Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** and deselected _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_the currency in the ledger_](../../finance/general-ledger/configure-ledger.md).
 
 ## Why can't I just **Receive complete** what I have partly inbound registered
 
