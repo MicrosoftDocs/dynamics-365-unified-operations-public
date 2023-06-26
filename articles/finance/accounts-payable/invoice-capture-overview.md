@@ -4,7 +4,7 @@
 title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
-ms.date: 04/03/2023
+ms.date: 06/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -52,8 +52,10 @@ The following table shows the roles that are required to set up and use the Invo
 |------|---------|---------|------------|
 | Administrator | <ul><li>Set up environments in Microsoft Power Platform.</li><li>Deploy solutions in Microsoft Power Platform.</li><li>Set up connections between Dynamics 365 and AI Builder.</li><li>Set up Azure Data Lake Storage locations.</li><li>Install Invoice capture.</li></ul> | <ul><li>Dynamics 365</li><li>Microsoft Power Platform</li><li>Azure Data Lake Storage</li></ul> | <ul><li>Dynamics 365 administrator</li><li>Power Platform administrator</li><li>Storage Blob data owner</li></ul> |
 | Environment maker | <ul><li>Create custom AI models, and create flows in Power Automate.</li></ul> | <ul><li>Microsoft Power Platform</li></ul> | <ul><li>Environment makers</li></ul> |
-| AP admin | <ul><li>Set up and configure Invoice capture.</li></ul> | <ul><li>Microsoft Power Platform</li></ul> | <ul><li>Accounts Payable admin</li></ul> |
-| AP clerk | <ul><li>Review and correct captured invoices in Invoice capture.</li></ul> | <ul><li>Invoice capture in Power Platform</li></ul> | <ul><li>Accounts payable clerk</li></ul> |
+| AP admin | <ul><li>Set up and configure Invoice capture.</li></ul> | <ul><li>Microsoft Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts Payable admin</li><li>InvoiceCaptureOperator</li></ul> |
+| AP clerk | <ul><li>Review and correct captured invoices in Invoice capture.</li></ul> | <ul><li>Invoice capture in Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts payable clerk</li><li>InvoiceCaptureOperator</li></ul> |
+
+The **InvoiceCaptureOperator** role must be included in the role settings to successfully run the derivation and validation logic in Invoice capture, and to transfer the invoice to Dynamics 365 Finance. For a touchless scenario, the role must be added to the corresponding flow user on the finance and operations apps side. 
 
 > [!NOTE]
-> The Environment maker role must be assigned to the Accounts payable admin if they create channels in Invoice capture.
+> The **Environment maker** role must be assigned to the Accounts payable administrator if they create channels in Invoice capture.

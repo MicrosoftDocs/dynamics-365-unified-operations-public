@@ -21,7 +21,7 @@ ms.custom: bap-template
 >
 > During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in North America, and they are shown only in English. All other functionality is globally available.
 
-<!-- KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Therefore, procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 
@@ -45,7 +45,7 @@ This feature was added in builds that came out after the initial release of vers
 
 ### Step 2: Enable the workspace feature in Feature management
 
-In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *Review changes to confirmed purchase orders based on downstream impact*.
+In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) Review changes to confirmed purchase orders based on downstream impact*.
 
 ### Step 3: Upgrade the Finance and Operations Virtual Entity solution
 
@@ -82,9 +82,9 @@ Follow these steps to install the Copilot application in your Supply Chain Manag
 
 ### Step 6: Enable the required security roles
 
-Users who should have access to the functionality must be assigned the *AIB Roles* security role in Dataverse.
+Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
-In the detail view of the environment, in the **Access** field, select **Users** or **Teams**. Select the users or teams that should have access, and assign the *AIB Roles* security role to them.
+In the detail view of the environment, in the **Access** field, select **Users** or **Teams**. Select the users or teams that should have access, and assign the *AIB Roles* and *Finance and Operations AI* security roles to them.
 
 ## The Confirmed purchase orders with changes workspace
 

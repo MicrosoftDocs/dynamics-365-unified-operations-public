@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--KFM: Preview until 10.0.34 GA -->
+<!--KFM: Preview until further notice -->
 
 ## <a name="install-addin"></a>Install the Archive add-in from Lifecycle Services
 
