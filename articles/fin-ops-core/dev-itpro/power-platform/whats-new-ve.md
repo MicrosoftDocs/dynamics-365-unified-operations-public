@@ -17,7 +17,7 @@ ms.search.validFrom: 2023-06-1
 
 [!include[banner](../includes/banner.md)]
 
-Virtual entity solution provider for finance and operations apps is an Appsource package which provides near-real-time interacion with finance and operations data on Power Platform. 
+[Virtual entity solution provider for finance and operations apps](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.finance_and_operations_virtual_entity?tab=Overview) is an Appsource package which provides near-real-time interacion with finance and operations data on Power Platform. 
 
 ## June 2023 release
 The June release of F&O Virtual Entity Solution Changes in Release 2.8.7 contains the following changes:
