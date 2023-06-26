@@ -50,11 +50,11 @@ additionalContent:
     - title: Guidance
       links: 
       - url: /dynamics365/guidance/implementation-guide/overview 
-        text: Implementation guide
+        text: Dynamics 365 implementation guidance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Security   
+        text: Role-based security   
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
@@ -114,7 +114,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
         text: API references
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
-        text: Mapping references
+        text: Dual-write mapping references
       - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
         text: Database movement API        
     - title: Develop the user interface  
@@ -127,12 +127,12 @@ additionalContent:
         text: Build extensible controls
     - title: Platform development 
       links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/
-        text: Develop your environment
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/finance
-        text: Customize your environment
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page?context=/dynamics365/context/finance
-        text: Use dual-write  
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
+        text: Develop and customize your environment
+      - url: dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
+        text: Deploy and access development environments
+      - url: dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+        text: Application stack and server architecture
     - title: Microsoft Office integration
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
