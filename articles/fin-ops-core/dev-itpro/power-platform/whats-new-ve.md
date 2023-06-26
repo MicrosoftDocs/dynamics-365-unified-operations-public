@@ -42,6 +42,6 @@ The June release of F&O Virtual Entity Solution Changes in Release 2.8.7 contain
 ### Data Archival changes
 | Type | Description | Status |
 |---|---|---|
-| | | General availability |
-| | | General availability |
+| Bug Fix | Improvements to authoration experience during development. | General availability |
+| Bug Fix | Retention flow has been disabled. | General availability |
 | Bug Fix | Null-reference exception occurs during virtual entity metadata creation. | General availability |
