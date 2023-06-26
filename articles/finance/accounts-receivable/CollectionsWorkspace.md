@@ -55,7 +55,7 @@ The following data points are shown for the selected customer:
 - **Credit remaining** – The customer's remaining credit amount. The value is calculated during the **Age customer balances** periodic process.
 - **Account status** – The account status. The value is taken from the **Account status** field on the **Credit and collections** tab of the customer record.
 
-The **Open transactions** tab shows the customer transactions that haven't been fully settled. Collections options on this page include **Change status**, **NSF payment**, **Write-off**, **Settle**, **Reprint**, and **View collections history**. These option are the same options that are available on the [View customer collections details](tasks/review-collections-information.md#view-aged-customer-balances) page. For clarity, the **Due date** column has been added for transactions.
+The **Open transactions** tab shows the customer transactions that haven't been fully settled. Collections options on this page include **Change status**, **NSF payment**, **Write-off**, **Settle**, **Reprint**, and **View collections history**. These options are the same options that are available on the [View customer collections details](tasks/review-collections-information.md#view-aged-customer-balances) page. For clarity, the **Due date** column has been added for transactions.
 
 ## Customer timeline
 
