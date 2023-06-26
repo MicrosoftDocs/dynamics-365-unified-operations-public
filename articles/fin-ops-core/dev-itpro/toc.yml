@@ -1320,6 +1320,8 @@ items:
         items:
         - name: Virtual entities overview
           href: power-platform/virtual-entities-overview.md
+        - name: What's new or changed in Virtual Entity solution provider package?
+          href: power-platform/whats-new-ve.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
