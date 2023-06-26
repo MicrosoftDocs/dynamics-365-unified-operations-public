@@ -25,8 +25,8 @@ The feature is powered by Azure Open AI's large language model and uses the cust
 
 The feature has two intended uses:
 
-- Summarize Finance customer data such as aged balances, overdue invoices, and payment history.
-- Based on this data, generate a draft email in reminder letter format.
+- Get an overview of a customer's Finance data such as aged balances, overdue invoices, and payment history and activities.
+- Based on this data, generate a draft email in reminder letter format as a recommendation for follow-up with the customer.
 
 ## How was Collections coordinator summary evaluated? What metrics are used to measure performance?
 
@@ -41,6 +41,8 @@ If the same customer exists in multiple legal entities in Finance, the data that
 Processing of the customer's data, such as aged balances, overdue invoices, and payment history, is configured by using the prompt inside Finance. The configuration can't be changed or modified.
 
 The AI-generated summary and email are generated inside Finance by using customer data such as aged balances, overdue invoices, and payment history. No text can be entered by the user and processed through Azure OpenAI. Only the customer's name and data that's found in Finance, such as aged balances, overdue invoices, and payment history, are processed through Azure OpenAI and returned as a summary or used to generate a draft email. You can edit the draft email before you send it.
+
+The AI-generated text and draft email options are optional and can be turned off or on in **Feature management** using the **Collections coordinatory summary**. 
 
 ## See also
 
