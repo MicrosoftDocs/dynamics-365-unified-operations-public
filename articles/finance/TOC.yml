@@ -5137,8 +5137,8 @@
     items:
     - name: Overview
       href: /finance/transparency-note.md 
-    - name: Transparency note for Collections coordinator summary
-      href: /accounts-receivable/collections-coordinator-summary.md              
+    - name: Collections coordinator summary FAQ
+      href: /accounts-receivable/collections-coordinator-summary-faq.md              
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 
