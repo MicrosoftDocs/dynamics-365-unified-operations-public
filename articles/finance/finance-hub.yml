@@ -129,9 +129,9 @@ additionalContent:
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
         text: Develop and customize your environment
-      - url: dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
         text: Deploy and access development environments
-      - url: dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
         text: Application stack and server architecture
     - title: Microsoft Office integration
       links:
