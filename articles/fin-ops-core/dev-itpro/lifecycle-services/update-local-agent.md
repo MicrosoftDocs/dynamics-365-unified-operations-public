@@ -38,7 +38,7 @@ This article explains how to update the local agent. The latest version of the l
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
-| 3.2.2               | This version fixes a bug with the local agent not being able to cleanup the workspace directory due to the directory containing files with very long paths. | June 2023 | Not applicable |
+| 3.2.2               | This version fixes a bug with the local agent not able to cleanup the workspace directory due to the directory containing files with very long paths. | June 2023 | Not applicable |
 | 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
 | 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation | March 2023 | Not applicable |
 | 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |June 2022 | Not applicable |
@@ -61,7 +61,7 @@ This article explains how to update the local agent. The latest version of the l
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
 ## What's new in local agent 3.2.2
-- This version fixes a bug with the local agent not being able to cleanup the workspace directory due to the directory containing files with very long paths.
+- This version fixes a bug with the local agent not able to cleanup the workspace directory due to the directory containing files with very long paths.
 
 ## What's new in local agent 3.2.1
 - This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage.
