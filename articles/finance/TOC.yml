@@ -566,6 +566,8 @@
           href: accounts-receivable/set-up-collections.md
         - name: Review collections information
           href: accounts-receivable/tasks/review-collections-information.md
+        - name: Collections coordinator workspace (preview)  
+          href: accounts-receivable/CollectionsWorkspace.md
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
         - name: Configure parameters for collections process automation 
