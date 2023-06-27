@@ -2,7 +2,7 @@
 title: Migrate channels to a different Commerce Scale Unit
 description: This article explains how to migrate a Microsoft Dynamics 365 Commerce channel to a different Commerce Scale Unit.
 author: jashanno
-ms.date: 11/17/2020
+ms.date: 06/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
+
 ---
 
 # Migrate channels to a different Commerce Scale Unit
@@ -59,14 +60,13 @@ This procedure and the next procedure must be completed during the planned downt
 
 ### Migrate channels to a new CSU
 
-1. On the **Store details** page, set the **Live channel database** field to the destination CSU database.  
-Please ensure that the modified CSU database is in the same **database group** as
- the original CSU database (You can find all database group settings in the form "Retail and Commerce > Headquarters setup > Commerce scheduler > Channel database group").
-1. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
-2. On the **Distribution schedule** page, run job **1070** (**Channel configuration job**) and job **1110** (**Global configuration job**). Select **Run now** for each job. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs are completed, your channels have been migrated to the new CSU.
-3. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs on the origin channel database are completed, you might lose transactions because of duplicate transaction numbers.
+To migrate channels to a new CSU, follow these steps.
 
-    If you're using Modern POS, close each POS device, reopen it, and sign in.
+1. On the **Store details** page, set the **Live channel database** field to the destination CSU database. Ensure that the modified CSU database is in the same database group as the original CSU database. You can find all database group settings on the **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group** form.
+1. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
+1. On the **Distribution schedule** page, select **Run now** for both the **Channel configuration job (1070)** and **Global configuration (1110)** jobs. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs have completed, your channels will be migrated to the new CSU.
+1. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs in the origin channel database have completed, you might lose transactions because of duplicate transaction numbers.
+1. If you're using Modern POS, close each POS device, reopen it, and then sign in.
 
 ## Post-migration
 
