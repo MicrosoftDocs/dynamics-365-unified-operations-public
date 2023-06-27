@@ -364,7 +364,7 @@ Make sure having the **Warehouse Management only mode** enabled as described in 
 
 ### Microsoft Entra ID applications
 
-In the **Microsoft Entra ID applications** page, assign the _Admin_ user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source.
+In the **Microsoft Entra ID applications** page, assign the _Admin_ user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source. In case you use the same user as part of the product master data import you must add more privileges related to product master data entities to the **_Warehouse System Integration Operator_** role.
 
 When posting entities via [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md), it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case the company (dataAreId) must get specified to complete the messages for the shipment orders.
 
@@ -540,7 +540,6 @@ Depending on your setup an inbound load will either automatically get created as
 
 
 <!-- perlynne
-
 - "Source systems" process automation setup enhancements
 - Detour Receiving complete - search for: perlynne#1
 - Enhanced inbound receiving process (policy to auto reduce)
