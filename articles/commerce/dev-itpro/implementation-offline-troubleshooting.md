@@ -4,7 +4,7 @@
 title: Commerce offline implementation troubleshooting
 description: This article provides an overview of troubleshooting for offline implementations of Microsoft Dynamics 365 Commerce.
 author: jashanno
-ms.date: 03/03/2023
+ms.date: 06/27/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
@@ -37,9 +37,9 @@ Note that all troubleshooting errors begin with **Microsoft\_Dynamics\_**. Howev
 | Error | Description |
 |-------|-------------|
 | Commerce\_Runtime\_AuthenticationFailed<br>Commerce\_Runtime\_AuthorizationFailed<br>Commerce\_Runtime\_WorkerNotFound<br>Commerce\_Runtime\_PartyNotFound<br>Commerce\_Runtime\_RetailStaffNotFound | A sign-in-related issue has occurred. This issue might occur because data isn't found or correctly configured in the offline database.<br>To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
-| Commerce\_Runtime\_ChannelEmployeeAddressBookNotFound<br>Commerce\_Runtime\_EmployeeNotOnStore | This issue might occur because the store's employee address books are not found or the worker is correctly mapped to the store in the offline database.<br>To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
+| Commerce\_Runtime\_ChannelEmployeeAddressBookNotFound<br>Commerce\_Runtime\_EmployeeNotOnStore | This issue might occur because the store's employee address books aren't found or the worker isn't correctly mapped to the store in the offline database.<br>To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_EmployeePositionAssignmentNotFound<br>Commerce\_Runtime\_EmployeePositionDetailNotFound | This issue might occur because the worker's position detail or assignment isn't found or valid in the offline database.<br>To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
-| Commerce\_Runtime\_EmployeePermissionGroupNotFound | This issue might occur because the worker's POS permission settings isn't found or correctly configured in the offline database.<br> To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
+| Commerce\_Runtime\_EmployeePermissionGroupNotFound | This issue might occur because the worker's POS permission settings aren't found or correctly configured in the offline database.<br> To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_AuthenticationMethodDisabled<br>Commerce\_Runtime\_ChannelConfigurationNotFound<br>Commerce\_Runtime\_ChannelNotPublished<br>Commerce\_Runtime\_ChannelRecordNotFound<br>Commerce\_Runtime\_EmployeePermissionContextNotFound<br>Commerce\_Runtime\_InvalidChannel<br>Commerce\_Runtime\_InvalidChannelConfiguration<br>Commerce\_Runtime\_StaffIdContextMissing<br>Commerce\_Runtime\_LocalDeviceAuthenticationFailed | Unable to switch to offline mode. The channel information is either unavailable or incorrectly configured. To fix this issue, run the **Channel configuration scheduler** job (by default, the **1070** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_CredentialsNotConfigured<br>Commerce\_Runtime\_CredentialsNotFound<br>Commerce\_Runtime\_InvalidAuthenticationCredentials<br>Commerce\_Runtime\_LocalLogonFailed<br>Commerce\_Runtime\_UserBlockedDueToTooManyFailedLogonAttempts | Unable to switch to offline mode. The user information is either unavailable or incorrectly configured.<br>To fix this issue, run the **Staff scheduler** job (by default, the **1060** scheduler job). Also, contact your system administrator. |
 | Commerce\_Runtime\_CriticalStorageError | To check the status of offline database permissions, size, and disk space, you can use the offline dashboard. |
