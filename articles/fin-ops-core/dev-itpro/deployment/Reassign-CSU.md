@@ -62,10 +62,10 @@ This procedure and the next procedure must be completed during the planned downt
 
 To migrate channels to a new CSU, follow these steps.
 
-1. On the **Store details** page, set the **Live channel database** field to the destination CSU database. Ensure that the modified CSU database is in the same database group as the original CSU database. You can find all database group settings on the **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group** form.
+1. On the **Store details** page, set the **Live channel database** field to the destination CSU database. Ensure that the modified CSU database is in the same database group as the original CSU database. You can find all database group settings on the **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group** form in headquarters.
 1. Set the **Channel profile** field to the channel profile that is associated with the destination CSU.
-1. On the **Distribution schedule** page, select **Run now** for both the **Channel configuration job (1070)** and **Global configuration (1110)** jobs. (For asynchronous processing, select **Create batch job** instead of **Run now**.) After the jobs have completed, your channels will be migrated to the new CSU.
-1. If you're using Cloud POS, you must use the URL of Cloud POS for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs in the origin channel database have completed, you might lose transactions because of duplicate transaction numbers.
+1. On the **Distribution schedule** page, for synchronous processing, select **Run now** for both the **Channel configuration job (1070)** and **Global configuration (1110)** jobs. For asynchronous processing, select **Create batch job** (instead of **Run now**). After the jobs have completed, your channels will be migrated to the new CSU.
+1. If you're using Cloud POS, you must use the Cloud POS URL for the new CSU and reactivate the POS device. If you reactivate the POS device before all P-jobs in the origin channel database have completed, you might lose transactions because of duplicate transaction numbers.
 1. If you're using Modern POS, close each POS device, reopen it, and then sign in.
 
 ## Post-migration
