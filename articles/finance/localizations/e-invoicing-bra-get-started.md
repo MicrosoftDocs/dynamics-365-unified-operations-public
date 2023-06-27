@@ -66,7 +66,7 @@ This section complements the **Country/region-specific configuration of Applicat
 
 Some of the parameters from the **Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the values to better fit your business operation needs before you deploy the Electronic invoicing feature to the Service environment.
 
-This section complements the **Country/region-specific configuration for Electronic invoicing feature** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This section complements the **Country-specific configuration for Electronic invoicing feature** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NFS-e ABRASF Curitiba (BR)** Electronic invoicing feature you created is selected.
