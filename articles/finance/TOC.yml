@@ -5140,7 +5140,7 @@
   - name: Responsible AI
     items:
     - name: Overview
-      href: finance/transparency-note.md 
+      href: ../finance/transparency-note.md 
     - name: Collections coordinator summary FAQ
       href: accounts-receivable/collections-coordinator-summary-faq.md              
   - name: Finance and operations apps development and administration 
