@@ -9,7 +9,7 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jashanno
+ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: 8
 
