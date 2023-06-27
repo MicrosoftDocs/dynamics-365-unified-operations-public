@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 01/23/2023
+ms.date: 06/27/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -53,9 +53,9 @@ No, a B2B shopper isn't allowed to purchase from the default assortment. That as
 
 ### Why is a B2B shopper getting 404 errors and no longer able to access categories or products pages?
 
-If the **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters, then it's required that at least one catalog is associated with every customer hierarchy. If a B2B shopper is trying to access a B2B catalog that was previously accessible, confirm that the catalog is still valid and hasn't expired or been retracted by your organization. 
+If the **Enable use of multiple catalogs on retails channels** feature is enabled in headquarters, then it's required that at least one catalog is associated with every customer hierarchy. If a B2B shopper is trying to access a B2B catalog that was previously accessible, confirm that the catalog is still valid and hasn't expired or been retracted by your organization. 
 
-### After getting a 404 error for an expired or invalid catalog, why is a B2B shopper is not being redirected to catalog picker page? 
+### After getting a 404 error for an expired or invalid catalog, why isn't a B2B shopper being redirected to the catalog picker page? 
 
 Ensure that your site administrator has selected your catalog picker page in site builder at **Extensions \> Catalog Picker Route**, and has selected **Save & Publish** to publish the change. 
 
