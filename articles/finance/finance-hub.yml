@@ -117,7 +117,7 @@ additionalContent:
         text: Dual-write mapping references
       - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
         text: Database movement API 
-      - url: /s/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference  
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference  
         text: X++ language reference
     - title: Develop the user interface  
       links: 
