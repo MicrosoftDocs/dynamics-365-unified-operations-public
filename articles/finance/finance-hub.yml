@@ -84,7 +84,15 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
         text: Global address book overview   
   - title: Develop  
-    items:     
+    items:   
+    - title: Platform development 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
+        text: Develop and customize your environment
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
+        text: Deploy and access development environments
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+        text: Application stack and server architecture
     - title: Azure Data Lake integration 
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
@@ -127,14 +135,6 @@ additionalContent:
         text: General form guidelines
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
         text: Build extensible controls
-    - title: Platform development 
-      links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
-        text: Develop and customize your environment
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
-        text: Deploy and access development environments
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
-        text: Application stack and server architecture
     - title: Microsoft Office integration
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
