@@ -51,7 +51,7 @@ Yes. As soon as a user selects a specific catalog, the whole shopping journey be
 
 No, a B2B shopper isn't allowed to purchase from the default assortment. That assortment is intended only for anonymous browsing. If a B2B shopper is missing catalog assignments (pending updates from their administration), they won't be able to see any catalogs that they can choose from, and no category hierarchy will be visible.
 
-### Why is a B2B shopper getting 404 errors and no longer able to access categories or products pages?
+### Why is a B2B shopper no longer able to access categories or products pages and getting 404 errors?
 
 If the **Enable use of multiple catalogs on retails channels** feature is enabled in headquarters, then it's required that at least one catalog is associated with every customer hierarchy. If a B2B shopper is trying to access a B2B catalog that was previously accessible, confirm that the catalog is still valid and hasn't expired or been retracted by your organization. 
 
