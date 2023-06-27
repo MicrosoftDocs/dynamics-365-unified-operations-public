@@ -78,7 +78,7 @@ This procedure walks you through how to set up Intrastat parameters and transfer
 13. Click the **Country/region properties** tab.
 14. Click **New**.
 15. In the **Country/region** field, enter or select a value. For example, select the value **FRA**.  
-16. In the **Intrastat code** field, enter the ISO code for the country.  For example, type **FR**.  
+16. In the **Intrastat code** field, enter the ISO code for the country/region.  For example, type **FR**.  
 17. In the **Country/region type** field, select **EU**.
 18. Click the Number sequences tab.
 
@@ -144,7 +144,7 @@ This procedure walks you through how to set up Intrastat parameters and transfer
 9. In the list, find and selected the transferred record.
 10. Click the **General** tab.
     
-Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
+Review transferred data, including country\region of destination/dispatch, country/region of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
 
 
 
