@@ -5,13 +5,14 @@
 title: Create Commerce catalogs for B2B sites
 description: This article describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 07/11/2022
+ms.date: 06/27/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
+
 ---
 
 # Create Commerce catalogs for B2B sites
@@ -20,13 +21,12 @@ ms.search.validFrom: 2022-02-28
 
 This article describes how to create Commerce product catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answers to frequently asked questions about Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
+> [!NOTE]
+> This article applies to Dynamics 365 Commerce version 10.0.27 and later releases. 
+
 You can use Commerce catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for each B2B online store, as shown in the following illustration.
 
 ![Commerce product catalogs preview.](./media/Commerce_Catalogs.png)
-
-> [!NOTE]
-> This article applies to Dynamics 365 Commerce version 10.0.27 and later releases. 
-> Once this feature is enabled, it's important requirement to have at least one catalog associated with every B2B Partner organization (Customer hierarchy), otherwise even successfully onboarded and signed-in B2B partners (website visitors) would not be able to find any categories or products and they shall see a message 'No catalogs found, please contact system administrator.'
 
 Commerce product catalogs let you define the following information:
 
@@ -43,8 +43,9 @@ Commerce product catalogs let you define the following information:
 - **Price groups** – You can configure prices and promotions that are specific to a given catalog. This capability is a core reason for defining a catalog for a B2B channel. Price groups for catalogs enable organizations to make products available to their intended B2B organizations and apply their preferred pricing and discounts. B2B customers who order from a configured catalog can benefit from special prices and promotions after they sign in to a Commerce B2B site. To configure catalog-specific prices, select **Price groups** on the **Catalogs** tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts that have been linked to the same price group will be applied when customers order from that catalog. (Advanced discounts include threshold, quantity, and mix and match discounts.) For more information about price groups, see [Price groups](price-management.md#price-groups).
 
 > [!NOTE]
-> This feature is available starting with the Dynamics 365 Commerce version 10.0.27 release. To configure catalog-specific configurations such as navigation hierarchy and customer hierarchy in Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels** feature, and then run the **1110 CDX** job. 
-> When you enable this feature, all the existing catalogs that are used for POS stores or a call center will be marked as **Catalog type = B2C** on the **Catalogs** page. Only existing and new catalogs that are marked as **Catalog type = B2C** are applicable to POS stores and a call center. 
+> - The **Enable use of multiple catalogs on retails channels** feature is available starting with the Commerce version 10.0.27 release. To configure catalog-specific configurations such as navigation hierarchy and customer hierarchy in Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels** feature, and then run the **1110 CDX** job. 
+> - When you enable this feature, all the existing catalogs that are used for POS stores or a call center will be marked as **Catalog type = B2C** on the **Catalogs** page. Only existing and new catalogs that are marked as **Catalog type = B2C** are applicable to POS stores and a call center.
+> - Once this feature is enabled, it's required to have at least one catalog associated with every B2B partner organization (customer hierarchy), otherwise even successfully onboarded and signed-in B2B partner site visitors won't be able to find any categories or products, and will see the message "No catalogs found, please contact system administrator". 
 
 ## B2B catalog process flow
 
