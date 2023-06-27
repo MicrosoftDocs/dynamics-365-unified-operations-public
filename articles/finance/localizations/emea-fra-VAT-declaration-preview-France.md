@@ -71,6 +71,7 @@ The VAT declaration preview in France contains the following information.
 | F6   | 0037 | Tax-free purchases | Operation lookup | TaxFreePurchases |
 | F7   | 0043 | Sales of goods or services by a taxable person who isn't established in France | Operation lookup | SalesByPersonNotEstablished |
 | F8   | 0039 | Regularizations | Operation lookup | NotTaxableRegularizations |
+| F9   | 0061 | Internal transactions carried out between members of a single taxable person | Operation lookup | InternalTransactionsAUMember |
 
 **SECTION B - VAT CALCULATION TO BE PAID**
 
@@ -95,8 +96,14 @@ The VAT declaration preview in France contains the following information.
 
 | Line | Box  | Description | Lookup | Lookup result |
 |------|------|-------------|--------|---------------|
-| 13   | 0900 | Old rates | Report field lookup | <p>VATDueOldRates</p><p>UseTaxOldRates (Line 20 is also affected.)</p> |
-| 14   | 0950 | Transactions that are taxable at a specific rate (The statement is made on note 3310 A.) | Report field lookup | <p>VATDueSpecificRate</p><p>UseTaxSpecificRate (Line 20 is also affected.)</p> |
+| T1   | 1120 | Transactions carried out in the DOM and taxable at the rate of 1.75% | Report field lookup | <p>VATDueSpecificRateDOM1_75</p><p>UseTaxSpecificRateDOM1_75 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_75</p> |
+| T2   | 1110 | Transactions carried out in the DOM and taxable at the rate of 1.05% | Report field lookup | <p>VATDueSpecificRateDOM1_05</p><p>UseTaxSpecificRateDOM1_05 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_05 (Line 19 is also affected.)</p> |
+| T3   | 1081 | Operations carried out in Corsica and taxable at the rate of 10% | Report field lookup | <p>VATDueSpecificRateCorse10</p><p>UseTaxSpecificRateCorse10 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse10 (Line 19 is also affected.)</p> |
+| T4   | 1050 | Operations carried out in Corsica and taxable at the rate of 2.1% | Report field lookup | <p>VATDueSpecificRateCorse2_1</p><p>UseTaxSpecificRateCorse2_1 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse2_1 (Line 19 is also affected.)</p> |
+| T5   | 1040 | Transactions carried out in Corsica and taxable at the rate of 0.9% | Report field lookup | <p>VATDueSpecificRateCorse0_9</p><p>UseTaxSpecificRateCorse0_9 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse0_9 (Line 19 is also affected.)</p> |
+| T6   | 1010 | Transactions carried out in mainland France at the rate of 2.1% | Report field lookup | <p>VATDueSpecificRateFrance2_1</p><p>UseTaxSpecificRateFrance2_1 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateFrance2_1 (Line 19 is also affected.)</p> |
+| T7   | 0990 | VAT deduction on copyright | Report field lookup | <p>VATDueSpecificRateCopyright</p><p>UseTaxSpecificRateCopyright (Line 20 is also affected.)</p> |
+| 13   | 0900 | Old rates | Report field lookup | <p>VATDueOldRates</p><p>UseTaxOldRates (Line 20 is also affected.)</p><p>UseTaxPropertyOldRates (Line 19 is also affected.)</p> |
 
 **Petroleum products**
 
