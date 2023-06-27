@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Message processor messages are used for processes that run asynchronously. For example, you can use a message processor message to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](packing-containers.md) or as part of the [Supply Chain Management warehouse-only mode](supply-chain-management-warehouse-only-mode) to create _Inbound and outbound shipment orders_.
+Message processor messages are used for processes that run asynchronously. For example, you can use a message processor message to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](packing-containers.md) or as part of the [Warehouse Management only mode](warehouse-management-only-mode) to create _Inbound and outbound shipment orders_.
 
 ## Example message type: Run packing slip for container
 

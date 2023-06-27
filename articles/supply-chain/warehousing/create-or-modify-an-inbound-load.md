@@ -43,7 +43,7 @@ To create an inbound load automatically by using an inbound shipment order, foll
 
 1. Go to **Warehouse management > Setup > Source systems**.
 2. Create or modify existing record for an integration making sure having the **Inbound shipment order policies** definition using **Load synchronization policy** = **Full synchronization**.
-3. [Import and process an inbound shipment order](supply-chain-management-warehouse-only-mode.md#simple-inbound-shipment-order-message-example) and an inbound load will be created automatically.
+3. [Import and process an inbound shipment order](warehouse-management-only-mode.md#simple-inbound-shipment-order-message-example) and an inbound load will be created automatically.
 
 ## Create an inbound load manually
 

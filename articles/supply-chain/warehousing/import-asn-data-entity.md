@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.19
 
 Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and additional information about it, such as the items and packaging.
 
-ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order and/or [inbound shipment order](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders) that was previously created.
+ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order and/or [inbound shipment order](warehouse-management-only-mode.md#inbound-shipment-orders) that was previously created.
 
 This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
@@ -39,7 +39,7 @@ You import inbound ASNs by using the _Inbound ASN V3_ and/or _Inbound ASN V5_ co
 
 The _Inbound ASN_ composite data entities are intended for asynchronous integration scenarios where for example XML file–based files imports can be used.
 > [!NOTE]
-> Only the _Inbound ASN V5_ data entity supports [inbound shipment orders](supply-chain-management-warehouse-only-mode.md#inbound-shipment-orders). In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders.
+> Only the _Inbound ASN V5_ data entity supports [inbound shipment orders](warehouse-management-only-mode.md#inbound-shipment-orders). In this version the type of order must be specified as part of the ASN data which can either be **InboundShipmentOrder** for inbound shipment orders, or **Purch** for purchase orders.
 
 > [!WARNING]
 > Please do not use the _Inbound ASN V5_ data entities - but use the **_Inbound ASN V5_**

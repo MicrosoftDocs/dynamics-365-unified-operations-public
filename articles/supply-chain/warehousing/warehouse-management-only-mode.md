@@ -101,7 +101,7 @@ A few master data entities will need to be recorded to be able to run your wareh
 
 To create the _shipment orders_ **Released products** must exist. You can read more about the support of importing product master data via the [**product data entities**](../pim/data-entities.md) and get an overview of the [**Product information management entities**](../../../../../common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview.md).
 
-As part of the creation of a _Released product_ you must assign an **Item model group**. Please make sure this model group gets enabled with an _Inventory model_ as **Non-valuated** which will eliminate the need for setting up any costing data for this product.
+As part of the creation of a _Released product_ you must assign an **Item model group**. Please make sure this model group gets enabled with an _Inventory model_ as **Non-valuated** with _Post physical inventory_ and _Post financial inventory_ cleared which will eliminate the need for setting up any costing data for this product.
 
 Besides the product master data you must at least have defined the [**Countries/regions**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process to create addresses. You will as well need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses.
 
@@ -311,7 +311,7 @@ The external system will get informed via business event and can read the shipme
 |A0001       |11 pcs      |11 pcs      |
 
 > [!NOTE] <!-- perlynne -->
-> When making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) for items being assigned to **Item model groups** not using _Inventory model_ as **Non-valuated** requires configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
+> To avoid configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) make sure your items are assigned to an **Item model group** using the _Inventory model_ **Non-valuated** with _Post physical inventory_ and _Post financial inventory_ cleared.
 
 # Unsupported processes
 <!-- perlynne -->
@@ -528,11 +528,11 @@ The **Warehouse Management only mode** is part of the larger Microsoft Dynamics 
 
 ## Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
 
-Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** and deselected _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
+Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
 ## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing warehouse operations?
 
-Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** and deselected _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_the currency in the ledger_](../../finance/general-ledger/configure-ledger.md).
+Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_the currency in the ledger_](../../finance/general-ledger/configure-ledger.md).
 
 ## Why can't I just **Receive complete** what I have partly inbound registered
 
