@@ -17,7 +17,7 @@ ms.search.validFrom: 2023-06-1
 
 [!include[banner](../includes/banner.md)]
 
-The [Virtual entity solution provider for finance and operations apps](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.finance_and_operations_virtual_entity?tab=Overview) is an Appsource package which provides near-real-time interaction with finance and operations data on the Microsoft Power Platform. 
+The [Virtual entity solution provider for finance and operations apps](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.finance_and_operations_virtual_entity?tab=Overview) is an AppSource package that provides near-real-time interaction with finance and operations data on the Microsoft Power Platform. 
 
 ## June 2023 release
 The June release of finance and operations Virtual Entity Solution Changes in Release 2.8.7 contains the following changes:
@@ -34,8 +34,8 @@ The June release of finance and operations Virtual Entity Solution Changes in Re
 ### Business Events changes
 | Type | Description | Status |
 |---|---|---|
-| Bug Fix | Filter endpoints with a missing or bad azure app id. | General availability |
-| Bug Fix | Handle sync failures in callbackregistration delete and proceed with delete to prevent orphaned records. | General availability |
+| Bug Fix | Filter endpoints with a missing or bad Azure app ID. | General availability |
+| Bug Fix | Handle sync failures in callback registration delete and proceed with delete to prevent orphaned records. | General availability |
 | Bug Fix | Ignore any Business Events Endpoints that are missing required fields. | General availability |
 | Bug Fix | Capture the original serialized event contract in the finance and operations Exception Log. | General availability |
 
