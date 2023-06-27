@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 06/27/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -54,7 +54,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 
 ### Whitepaper
 
-For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management)
+For more information, download the following white paper (written to support AX2012, but still applies for Dynamics 365 Supply Chain Management).
 
 - [Trade agreements](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
