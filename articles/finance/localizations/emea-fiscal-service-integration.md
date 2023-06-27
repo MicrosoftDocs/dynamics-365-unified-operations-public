@@ -21,7 +21,7 @@ ms.search.form: CashRegister_W
 
 In Austria, all cash payments should be signed by an external device or service, and they should be securely stored. In the Czech Republic, all cash payments should be sent to the government portal for a fiscal signature. In both countries, a cash receipt should be issued where the signature is printed.
 
-To support these country/region-specific requirements, Dynamics 365 Finance lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries/region or regions.
+To support these country/region-specific requirements, Dynamics 365 Finance lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.
 
 > [!NOTE]
 > It's assumed that the third-party fiscal service meets all other country/region-specific legal requirements about registered transactions. You're responsible for correctly setting up and administering the fiscal service.

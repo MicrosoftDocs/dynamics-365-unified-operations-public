@@ -144,7 +144,7 @@ This procedure walks you through how to set up Intrastat parameters and transfer
 9. In the list, find and selected the transferred record.
 10. Click the **General** tab.
     
-Review transferred data, including country\region of destination/dispatch, country/region of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
+Review transferred data, including country\region of destination/dispatch, country of origin, weight, quantity, quantity in additional units, commodity, transaction code, invoice amounts and statistical amounts. You can modify data if necessary.  
 
 
 
