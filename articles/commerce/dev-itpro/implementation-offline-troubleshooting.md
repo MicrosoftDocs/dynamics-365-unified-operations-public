@@ -10,7 +10,7 @@ audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: josaw
 ms.search.validFrom: 2022-12-29
 
 ---
