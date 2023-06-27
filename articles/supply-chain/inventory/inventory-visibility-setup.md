@@ -161,7 +161,7 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 
 If you get the following error when you try to enable Inventory Visibility integration batch job from Supply Chain Management, then you need change partition schema to two to prevent encountering an out of memory issue, which can result from having just one partition.
 
-> Cannot sync more than 50000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team (inventvisibilitysupp@microsoft.com) for more info.
+> Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team (inventvisibilitysupp@microsoft.com) for more info.
 
 If you don’t get this error, then you can ignore this section.
 
