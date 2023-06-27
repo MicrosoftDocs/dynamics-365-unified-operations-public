@@ -15,7 +15,7 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you're using your own data, before you start this guide you need to make sure that a Trade agreement journal name exists where the Default relation is set to "Price (sales)".
+This procedure shows you how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you're using your own data, before you start this guide, you must make sure that a trade agreement journal name exists where the **Default relation** is set to *Price (sales)*.
 
 ## Create and post a new trade agreement journal
 
@@ -24,10 +24,10 @@ This procedure shows you how to create a trade agreement where you register a ne
 3. In the **Name** field, select the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
 5. On **Action Pane**, select **Lines**.
-6. In the **Account code** field, select *Table*. In this example, you're updating the price for a specific customer, which means you need to choose *Table*. If you were updating the product's list price, you would select *All*, so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select *Group*. To select *Group*, you must have set up customer price groups.  
+6. In the **Party code type** field, select *Table*. In this example, you're updating the price for a specific customer, which means you must choose *Table*. If you were updating the product's list price, you would select *All*, so that the new price is valid for all customers. If you were differentiating prices among different customer segments, then you would select *Group*. To select *Group*, you must have set up customer price groups.  
 7. In the **Account selection** field, select the drop-down button to open the lookup.
 8. In the list, find and select the desired record.
-9. In the **Item code** field, select *Table*. When you're entering a trade agreement of type 'Price (sales)', you must only select 'Table' in the **Item code** field. This is because a price is an absolute value and can't be same for all products or a group of products.
+9. In the **Product code type** field, select *Table*. When you're entering a trade agreement of type *Price (sales)*, you must select *Table* in the **Product code type** field. This is because a price is an absolute value and can't be the same for all products or a group of products.
 10. In the **Item relation** field, select the drop-down button to open the lookup.
 11. In the list, select the product you want to include in the agreement. Make a note of which product you've selected.  
 12. In the **From** field, enter a minimum quantity.
