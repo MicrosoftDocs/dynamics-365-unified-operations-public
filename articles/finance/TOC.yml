@@ -396,6 +396,8 @@
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Customer payment insights (preview)
         href: accounts-receivable/payment-insights-overview.md
+      - name: Collections coordinator summary (preview)
+        href: accounts-receivable/CollectionsCoordinatorSummary.md
       - name: Accounts receivable posting
         href: general-ledger/accts-recvble-posting.md 
       - name: Customer posting profiles
