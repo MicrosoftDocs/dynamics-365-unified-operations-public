@@ -15,7 +15,7 @@ This article answers some frequently asked questions about the Collections coord
 
 ## What is Collections coordinator summary?
 
-Collections coordinator summary is a feature of Dynamics 365 that shows AI-generated summary text in the **Collections coordinator** workspace and generates a reminder letter that contains AI-generated text. As input, this feature uses your Finance data, such as aged balances, overdue invoices, and payment history. The first output is a summary of overdue amounts, overdue balances, and payment history that's shown in the workspace. The second output is an AI-generated email in the form of a collection letter.
+Collections coordinator summary is a feature of Dynamics 365 Finance that shows AI-generated summary text in the **Collections coordinator** workspace and generates a reminder letter that contains AI-generated text. As input, this feature uses your Finance data, such as aged balances, overdue invoices, and payment history. The first output is a summary of overdue amounts, overdue balances, and payment history that's shown in the workspace. The second output is an AI-generated email in the form of a collection letter.
 
 ## What are the system's capabilities?
 
