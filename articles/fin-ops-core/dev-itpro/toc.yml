@@ -1121,6 +1121,10 @@ items:
           href: lifecycle-services/dts-announcements.md
         - name: Dynamics 365 Translation Service overview
           href: lifecycle-services/translation-service-overview.md
+        - name: Dynamics 365 Translation Service API
+          href: lifecycle-services/dts-api-info.md
+        - name: Dynamics Lifecycle Services API - Authentication
+          href: lifecycle-services/lcs-aad-app-reg.md
         - name: Translate user interface files
           href: lifecycle-services/use-translation-service.md
         - name: Translate documentation files
