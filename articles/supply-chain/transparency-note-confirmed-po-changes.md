@@ -16,7 +16,7 @@ This transparency note describes the AI impact of Dynamics 365 Supply Chain Mana
 
 ## What is the Confirmed purchase orders with changes workspace?
 
-The **Confirmed purchase orders with changes** workspace makes it fast and easy for procurement professional to assess, manage, and follow up on changes made to purchase orders after they were confirmed. It uses Microsoft Dynamics 365 Copilot to generate natural-language change summaries and draft communications with vendors.
+The **Confirmed purchase orders with changes** workspace makes it fast and easy for procurement professional to assess, manage, and follow up on changes made to purchase orders after they were confirmed. It uses [Microsoft Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to generate natural-language change summaries and draft communications with vendors.
 
 This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use artificial intelligence to assist procurement managers with their daily procurement tasks.
 
