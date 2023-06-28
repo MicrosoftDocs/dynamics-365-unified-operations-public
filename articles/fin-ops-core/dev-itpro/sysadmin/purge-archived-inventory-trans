@@ -1,0 +1,77 @@
+---
+title: Purge archived inventory transactions
+description: This article describes how to purge archived inventory transactions. In this way, you help improve database performance but also keep the records available for historical reporting, auditing, machine learning, legal claims, and other purposes.
+author: Banluo
+ms.author: banluo
+ms.reviewer: kamaybac
+ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, InventTransArchiveForm
+ms.topic: how-to
+ms.date: 06/28/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
+---
+
+# Archive sales orders
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!--KFM: Preview until further notice -->
+
+[Archive inventory transactions](articles/supply-chain/inventory/archive-inventory-transactions.md) consolidates and compress the inventory transactions table (`InventTrans`) and archives the original records into table (`InventTransArchive`). This feature remission the data volume issue of table (`InventTrans`) and improve the system performance.
+
+New feature (Preview) Purge archived inventory transactions is released to replicate the records of table (`InventTransArchive`) to data lake and purge corresponding records from table (`InventTransArchive`) in Dynamics 365 Supply Chain Management. This purge activities release the database space of Dynamics 365 Supply Chain Management for performance optimization.
+
+## Prerequisites
+
+Before you can use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+- The data archive micro-service must be installed on your system from Microsoft Dynamics Lifecycle Services. For more information, see [Install the Archive add-in from Lifecycle Services](archive-setup.md#install-addin).
+- [Archive inventory transactions](archive-inventory-transactions) is applied to archive inventory transactions.
+- The following features must be turned on in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). For more information, see [Enable the features that you need](archive-setup.md#enable-features).
+
+    - *(Preview) Archive*
+    - *(Preview) Archive data to Dataverse managed data lake and purge*
+    - *(Preview) Purge archived inventory transactions*
+
+## <a name="archival-requirements"></a>Which archived inventory transactions can be purged and when
+
+Archived inventory transactions can be purged if all the following conditions are met:
+
+- The inventory transactions has been archived by Inventory transaction archive feature.
+- The ledger period that includes a related inventory transactions is either *closed* or *on hold*.
+- Inventory has been closed for the period that includes a related inventory transactions.
+
+## <a name="archival-requirements"></a>Things to consider before you purge inventory transactions
+
+- The **Reverse** function of Inventory transactions archive feature is not available to those purged inventory transaction records.
+- Un-purge activity is not available from data lake to Dynamics 365 Supply Chain Management.
+
+## Archive inventory transactions before purge
+For detail, see [Archive inventory transactions](articles/supply-chain/inventory/archive-inventory-transactions.md).
+
+## Schedule purge for archived inventory transactions
+
+To schedule purging of archived inventory transactions, follow these steps.
+
+1. Go to **System administration \> Workspaces \> Archive**.
+1. In the **Archive** workspace, select **Inventory transactions archive**.
+1. The **Inventory transactions archive** page appears and shows a list of archived process records.
+1. Select the archived inventory transactions bulk with status **Finish**.
+1. Click **Schedule purge** to schedule the job for purge.
+1. In the dialog box, verify the **From date** and **To date** of archived period to be purged. Select the date schedule the job for purge.
+1. Click **OK**.
+1. You receive a message that states that your inventory transactions purge job has been created. The archived records will be purged on the scheduled date.
+
+## Review purge history
+
+To review purge history, follow these steps.
+
+1. Go to **System administration \> Workspaces \> Archive**.
+1. In the **Archive** workspace, from **Inventory transaction archive**, the grid lists archived process records.
+1. Select the record which has been purged.
+1. Click **View purge history**.
+1. You can view the history of purge job.
+
