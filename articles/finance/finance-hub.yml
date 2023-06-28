@@ -143,6 +143,14 @@ additionalContent:
         text: Database movement API 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference  
         text: X++ language reference
+    - title: Developer tools 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/development-tools-overview?context=/dynamics365/context/ops
+        text: Development tools in Visual Studio
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation?context=/dynamics365/context/ops
+        text: Version control, metadata search, and navigation
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation?context=/dynamics365/context/ops
+        text: Build automation using Azure    
     - title: Develop the user interface  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
