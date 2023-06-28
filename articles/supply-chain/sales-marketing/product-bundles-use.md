@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Revenue recognition bundles
-description: This article describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items.
-author: bking
+title: Product bundles
+description: This article describes the product  bundle functionality replacing the revenue recognition bundle  capability in Accounts receivable. A product bundle comprises a parent item and multiple component items.
+author: Henrikan
 ms.date: 01/04/2023
 ms.topic: index-page
 ms.prod: 
@@ -14,39 +14,37 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: kmaybach
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: bking
-ms.search.validFrom: 2021-01-04
+ms.author: henrikan
+ms.search.validFrom: 2023-01-04
 ms.dyn365.ops.version: 10.0.7
 
 ---
 
-# Revenue recognition bundles
+# Product bundles
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. The parent item is entered on a sales order, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the packing slip, will list the component items. However, external documents will show only the parent item.
+This article describes the product bundle functionality. A product bundle comprises a parent item (product bundle item) and multiple component items. The parent item is entered on a sales order line, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the picking list and packing slip, will list the component items. However, external documents, sales order confirmation and sales invoice, will show only the parent item.
 
 > [!NOTE]
-> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support revenue recognition (including the bundle functionality). This also includes the Prospect to cash solution for Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Items that are configured to use revenue recognition should not be added to orders or transactions that are created in Commerce channels or in the Prospect to cash solution.
+> Microsoft Dynamics 365 Commerce  channels, such as online, point of sale (POS), and call centers, don't support product  bundle functionality. This also includes the Prospect to cash solution for Dynamics 365 Supply Chain Management and Dynamics 365 Sales. Items that are configured as product bundle should not be added to orders or transactions that are created in Commerce channels or in the Prospect to cash solution.
 
-To set up bundles, you must enter the configuration keys for revenue recognition. However, you can use bundles even if revenue recognition isn't set up. Likewise, you can use revenue recognition if bundles aren't set up. If revenue recognition is set up, the component items determine the revenue price and the revenue schedule that is used for revenue recognition or deferral when a sales order is invoiced.
+The setup for bundles uses the bill of materials (BOM) functionality. For information about how to set up a bundle item, see **Karl - please add correct link to the pdoproduct bundle setup md file**. If the parent item is flagged as a product bundle, it's treated differently than other BOM items. Here is a list of the differences:
 
-The setup for bundles uses the bill of materials (BOM) functionality. For information about how to set up a bundle item, see [Revenue recognition setup](revenue-recognition-setup.md). If the parent item is flagged as a bundle, it's treated differently than other BOM items. Here is a list of the differences:
-
-- Bundles must be exploded through sales order confirmation, by selecting **Confirm sales order** on the **Sell** tab of the Action Pane on the sales order page. Bundle items must never be exploded by selecting **BOM line** under **Explode** on the **Sales order line** menu on the **Sales order lines** FastTab. Otherwise, the item will be treated as a BOM, not as a bundle.
-- A sales order that contains a bundle item must be confirmed before the packing slip or invoice is created.
-- When a bundle is exploded through sales order confirmation, the parent item is canceled, and its unit price and discounts are allocated to the component items of the bundle.
-- The sum of the component items must always equal the price on the parent item. Therefore, there are limitations on the fields that can be updated or changed for component items. For example, the unit price can't be manually changed. It also can't be indirectly changed by making a new price agreement go into effect. To prevent a new price agreement, inventory dimensions can't be changed on the component items.
+- Product bundles must be exploded through sales order confirmation, by selecting **Confirm sales order** on the **Sell** tab of the Action Pane on the sales order page. Product bundle items must never be exploded by selecting **BOM line** under **Explode** on the **Sales order line** menu on the **Sales order lines** FastTab. Otherwise, the item will be treated as a BOM, not as a product bundle.
+- A sales order that contains a product bundle item must be confirmed before the picking list, packing slip or invoice is created.
+- When a product bundle is exploded through sales order confirmation, the parent item is canceled, and its unit price and discounts are allocated to the component items of the bundle.
+- The sum of the component items must always equal the price on the parent item. Therefore, there are limitations on the fields that can be updated or changed for component items. For example, the unit price can't be manually changed. It also can't be indirectly changed. To prevent scenarioes such ass searching and applying a new price , inventory dimensions can't be changed on the component items.
 - When an external-facing document such as the sales order confirmation or invoice is printed, the parent item is printed, not the component items.
 
-## Bundles on sales orders
+## Product bundles on sales orders
 
-The USMF demo company includes the following bundle setup. Note that all setup for revenue recognition, such as the setup of revenue schedules, has been removed from the items that are included in this scenario.
+The USMF demo company includes the following product bundle setup. 
 
 **Parent item:** Laptop bundle
 
@@ -66,11 +64,11 @@ A sales order is entered for customer US-004, Cave Wholesales. The only line tha
 
 [![Laptop bundle item on a sales order.](./media/bundle-01.png)](./media/bundle-01.png)
 
-Because the sales order contains a bundle, it must be confirmed. The confirmation dialog box shows the components of the bundle.
+Because the sales order contains a product bundle item, it must be confirmed. The confirmation dialog box shows the components of the product bundle.
 
 [![Confirm sales order dialog box that shows the component items.](./media/bundle-02.png)](./media/bundle-02.png)
 
-However, the printed confirmation report will show only the parent item of the bundle, because that report is the external-facing document for the customer.
+However, the printed confirmation report will show only the parent item of the product bundle, because that report is the external-facing document for the customer.
 
 [![Confirmation report that shows only the parent item.](./media/bundle-03.png)](./media/bundle-03.png)
 
@@ -88,7 +86,7 @@ The unit price from the line for the parent item is allocated to the components 
 
 The sum of the components must equal $2,300, and it does ($1,713.73 + $450.98 + $135.29 = $2,300).
 
-If changes are required for all component items, the parent item can be removed. In this case, the component items are also removed. The parent item can then be added again, and the required edits can be completed before the sales order is confirmed.
+If changes are required for all component items, the parent item can be removed. In this case, the component items are also removed. The parent item can then be added again, and the required edits can be completed before the sales order is confirmed. **hertil**
 
 [![Bundle item that includes changes to the component items.](./media/bundle-04.png)](./media/bundle-04.png)
 
