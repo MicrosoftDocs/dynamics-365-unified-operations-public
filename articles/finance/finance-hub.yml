@@ -45,8 +45,8 @@ additionalContent:
         text: Dynamics 365 implementation guidance
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
-      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
-        text: Role-based security
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security
     - title: Try/Buy/Deploy
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
