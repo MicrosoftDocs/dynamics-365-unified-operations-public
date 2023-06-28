@@ -73,7 +73,7 @@ additionalContent:
         text: Continuous delivery 
       - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
         text: Upgrades, updates, and hotfixes   
-   - title: System administration  
+    - title: System administration  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
         text: System administration overview
