@@ -68,7 +68,7 @@ public void ArrayMethod()
 
 ### Multiple array indexes
 
-Some languages, such as C++ and C\#, let you declare arrays that have more than one index. In other words, you can define "arrays of arrays." In X++, you can't directly create multiple array indexes because only one-dimensional arrays are supported. However, you can implement multiple indexes by using the method that is described in this section. For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country by dimension. There are 10 countries and three dimensions. In C++ and C\#, you declare the following array.
+Some languages, such as C++ and C\#, let you declare arrays that have more than one index. In other words, you can define "arrays of arrays." In X++, you can't directly create multiple array indexes because only one-dimensional arrays are supported. However, you can implement multiple indexes by using the method that is described in this section. For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country by dimension. There are 10 countries/regions and three dimensions. In C++ and C\#, you declare the following array.
 
 ```csharp
 // This is C# or C++ code, not X++ code.

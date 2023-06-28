@@ -313,7 +313,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="255">
-<p>Use of a tax-free service (from a Community taxable person and a third country taxable person)</p>
+<p>Use of a tax-free service (from a Community taxable person and another country/region taxable person)</p>
 </td>
 <td width="47">
 <p>17</p>
@@ -480,7 +480,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="302">
-<p>Obligation to pay tax on a service provided by a taxable person in a non - Community country</p>
+<p>Obligation to pay tax on a service provided by a taxable person in a non - Community country/region</p>
 </td>
 <td width="47">
 <p>27</p>
@@ -1050,7 +1050,7 @@ Use the following tables to determine how a lookup result that is preconfigured 
 </tr>
 <tr>
 <td width="293">
-<p>Amount tax deductible from tax paid on a service provided by a taxable person in a non-member country or in the Community or as a purchaser of a product in their own name</p>
+<p>Amount tax deductible from tax paid on a service provided by a taxable person in a non-member country/region or in the Community or as a purchaser of a product in their own name</p>
 </td>
 <td width="38">
 <p>67</p>
