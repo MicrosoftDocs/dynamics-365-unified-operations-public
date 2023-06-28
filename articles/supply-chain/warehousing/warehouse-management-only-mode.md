@@ -231,6 +231,9 @@ You can see all the _Background processes_ running as part of the [**System admi
 > [!NOTE]
 > Reversal of the receiving confirmation will be supported as long as the related inbound shipment order line transactions have not been finalized.
 
+> [!WARNING]
+> In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you most likely will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
+
 # Outbound process
 
 ![Warehouse Management only mode outbound process](./media/outbound-wom-process.png)
@@ -534,9 +537,20 @@ Unless you setup the _Released products_ with an **Item model group** enabled wi
 
 Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_the currency in the ledger_](../../finance/general-ledger/configure-ledger.md).
 
+
+## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
+
+Even though using _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup costing data for orders currently not supported by the _Warehouse Management only mode_. 
+
 ## Why can't I just **Receive complete** what I have partly inbound registered
 
 Depending on your setup an inbound load will either automatically get created as part of the _Inbound shipment order_ import, via _ASN_ import or via a manually process. The loads contains a [**Delivery policy**](#source-systems) which can control whether the partly receiving completion processes is allowed or not.
+
+
+## Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
+
+In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
+
 
 <!-- perlynne
 - "Source systems" process automation setup enhancements
