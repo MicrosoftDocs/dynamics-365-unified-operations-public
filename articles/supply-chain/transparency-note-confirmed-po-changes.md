@@ -54,5 +54,6 @@ When using the feature, follow these recommendations:
 ## See also
 
 - [Review and accept changes to confirmed purchase orders](procurement/purchase-order-changes-after-confirmation.md)
+- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
