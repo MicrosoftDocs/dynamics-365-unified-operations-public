@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define loyalty cards
-description: This procedure walks through how to define loyalty cards. 
+description: This article describes how to define loyalty cards in Microsoft Dynamics 365 Commerce. 
 author: chuzho
 ms.date: 06/28/2023
 ms.topic: article
@@ -18,7 +18,9 @@ ms.search.validFrom: 2023-06-25
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through how to define a loyalty card. A loyalty card entitles the card holder to participate in the loyalty programs that are assigned to the card. Loyalty cards can be issued anonymously, or they can be assigned to a specific customer. You can view the loyalty transactions for a specific card, and you can view a summary of loyalty points that have been accumulated on the card. You can issue loyalty cards from any channel. You can also manually adjust a loyalty card to upgrade the customer to a different tier, add loyalty points, or transfer the loyalty point balance from one card to another.
+This article describes how to define loyalty cards in Microsoft Dynamics 365 Commerce.
+
+A loyalty card entitles the card holder to participate in the loyalty programs that are assigned to the card. Loyalty cards can be issued anonymously, or they can be assigned to a specific customer. You can view the loyalty transactions for a specific card, and a summary of loyalty points that have accumulated on the card. You can issue loyalty cards from any channel. You can also manually adjust a loyalty card to upgrade the customer to a different tier, add loyalty points, or transfer the loyalty point balance from one card to another.
 
 To define loyalty cards in Commerce headquarters, follow these steps.
 
