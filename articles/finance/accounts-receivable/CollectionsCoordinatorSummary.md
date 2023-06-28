@@ -112,7 +112,7 @@ Users in Dataverse must be assigned the **AIB** role.
 1. Select **Enable**.
 
 > [!IMPORTANT]
-> The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator workspace** available. For more information, see [Collection coordinator workspace](collectionsworkspace.md)
+> The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator workspace** available. For more information, see [Collection coordinator workspace](collectionsworkspace.md).
 
 ## View summary text
 
