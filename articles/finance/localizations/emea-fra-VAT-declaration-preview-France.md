@@ -1,7 +1,7 @@
 ---
 title: VAT declaration (France)
 description: This article describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
@@ -150,11 +150,18 @@ The VAT declaration preview in France contains the following information.
 | 24   | 0710 | Of which deductible VAT on imports | Not applicable | <p>VATDeductionOtherGoodsServicesImports (Line 20 is also affected.)</p><p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 2E are also affected.)</p><p>UseTaxImportsOverseasStandard (Lines I3 and 20 are also affected.)</p><p>UseTaxImportsOverseasReduced (Lines I5 and 20 are also affected.)</p><p>UseTaxImportsFranceStandard (Lines I1 and 20 are also affected.)</p><p>UseTaxImportsFranceReduced (Lines I4 and 20 are also affected.)</p><p>UseTaxImportsFranceReduced2 (Lines I2 and 20 are also affected.)</p><p>UseTaxImportsPropertyFranceStandard (Lines I1 and 19 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced (Lines I4 and 19 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced2 (Lines I2 and 19 are also affected.)</p><p>UseTaxImportsPropertyOverseasStandard (Lines I3 and 19 are also affected.)</p><p>UseTaxImportsPropertyOverseasReduced (Lines I5 and 19 are also affected.)</p><p>UseTaxImportsPropertySpecificRate (Lines I6 and 19 are also affected.)</p><p>UseTaxImportsSpecificRate (Lines I6 and 20 are also affected.)</p> |
 | 2E   | 0711 | Of which deductible VAT on petroleum products | Not applicable | <p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 24 are also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p><p>VATDeductionOtherGoodsServicesPetroleum (Line 20 is also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p><p>UseTaxFrancePetroleumStandard (Lines 8A and 20 are also affected.)</p><p>UseTaxPetroleumStandard (Lines P1 and 20 are also affected.)</p><p>UseTaxPetroleumReduced (Lines P2 and 20 are also affected.)</p> |
 
-**CREDIT / TAX PAYABLE**
+**VAT due or VAT credit**
 
 | Line | Box  | Description | Lookup result |
 |------|------|-------------|---------------|
 | 25   | 0705 | VAT credit (line 23 – line 16) | Total: lines 23 – 16 |
+| TD   | 8900 | VAT due (line 16 – line 23) | Total: lines 16 – 23 |
+
+
+**CREDIT / TAX PAYABLE**
+
+| Line | Box  | Description | Lookup result |
+|------|------|-------------|---------------|
 | 26   | 8002 | Credit repayment that is requested | The user defines the value in a dialog box. |
 | AA   | 8005 | VAT credit that is transferred to the head company of the group | The user defines the value in a dialog box. |
 | 27   | 8003 | Credit to carry forward (line 25 – line 26 – line AA). This amount should be carried over to line 22 of the next return. | Total: lines 25 – 26 – AA |
