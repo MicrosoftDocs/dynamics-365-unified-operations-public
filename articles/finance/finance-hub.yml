@@ -150,7 +150,15 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation?context=/dynamics365/context/ops
         text: Version control, metadata search, and navigation
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation?context=/dynamics365/context/ops
-        text: Build automation using Azure    
+        text: Build automation using Azure   
+    - title: Extend and customize 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page?context=/dynamics365/context/ops
+        text: Extensibility overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap?context=/dynamics365/context/ops
+        text: Application extensibility roadmap
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/writing-extensible-code?context=/dynamics365/context/ops
+        text: Write extensible code       
     - title: Develop the user interface  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
