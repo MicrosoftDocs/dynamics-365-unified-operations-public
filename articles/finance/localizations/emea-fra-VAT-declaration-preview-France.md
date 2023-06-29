@@ -178,18 +178,20 @@ The VAT declaration preview in France contains the following information.
 |  Tax due - Z3: TICC  | 8122 | Amount of the additional payments of TICC to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICC) |
 |  Tax due - Z4: TOTAL  | - | Total amount of the additional payments of TIC to be made. This amount is recorded using the annual summary statement (ERA). | Total: Z1 + Z2 + Z3 |
 
-
-**CREDIT / TAX PAYABLE**
+**Determination of the amount to be paid and/or VAT and/or TIC credits**
 
 | Line | Box  | Description | Lookup result |
 |------|------|-------------|---------------|
 | 26   | 8002 | Credit repayment that is requested | The user defines the value in a dialog box. |
 | AA   | 8005 | VAT credit that is transferred to the head company of the group | The user defines the value in a dialog box. |
 | 27   | 8003 | Credit to carry forward (line 25 – line 26 – line AA). This amount should be carried over to line 22 of the next return. | Total: lines 25 – 26 – AA |
-| 28   | Not applicable | Total net VAT payable (line 16 – line 23) | Total: lines 16 – 23 |
+| Y5   | 8113 | Reimbursement of remaining TIC requested (report from line Y4). | Value from Y4 line |
+| Y6   | 8114 | TIC credit transferred to the group head company on the summary declaration 3310-CA3G (deferral of the line Y4). | Value from Y4 line |
+| X5   | 8103 | TIC credit charged to VAT (carried forward from line X4). | Value from X4 line |
+| 28   | - | Total net VAT payable (line TD – line X5) | Total: lines TD – X5 |
 | 29   | 9979 | Assimilated taxes | The user defines a value in a dialog box. |
 | AB   | 9991 | Total payable that is paid by the head company of the group on the summary declaration | The user defines a value in a dialog box. |
-| 32   | Not applicable | Total payable (line 28 + line 29 +line Z5 – line AB) | Total: lines 28 + 29 + Z5 – AB |
+| 32   | - | Total payable (line 28 + line 29 +line Z5 – line AB) | Total: lines 28 + 29 + Z5 – AB |
 
 ### Note about purchase reverse charge VAT
 
