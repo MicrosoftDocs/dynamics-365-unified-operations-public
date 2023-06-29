@@ -75,7 +75,7 @@ The channel type determines whether the scenario is interactive or silent.
 
 | Channel type | Scenario |
 |--------------|----------|
-| Direct | Interactive |
+| Direct | Interactive  |
 | Email | Silent |
 | API | Silent |
 | FileSystem | Silent |
