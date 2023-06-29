@@ -161,7 +161,7 @@ The VAT declaration preview in France contains the following information.
 | 28   | Not applicable | Total net VAT payable (line 16 – line 23) | Total: lines 16 – 23 |
 | 29   | 9979 | Assimilated taxes | The user defines a value in a dialog box. |
 | AB   | 9991 | Total payable that is paid by the head company of the group on the summary declaration | The user defines a value in a dialog box. |
-| 32   | Not applicable | Total payable (line 28 + line 29 – line AB) | Total: lines 28 + 29 – AB |
+| 32   | Not applicable | Total payable (line 28 + line 29 – line AB) | Total: lines 28 + 29 + Z5 – AB |
 
 ### Note about purchase reverse charge VAT
 
