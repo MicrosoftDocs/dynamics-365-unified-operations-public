@@ -26,6 +26,7 @@ While setting up business events or virtual entities on a cloud hosted environme
 ```console
 Response Status code does not indicate success : 400 ({“error”:”invalid_client”,”error_description”;”Expected aud https://securityservice.operations365.dynamics.com but found.”})
 ```
+
 The error occurs because cloud hosted environments and on-premises (also known as LBD) environments don't use Security Service. Follow these manual steps to get this setup.
 
 1. Create a new app registration in Azure Active Directory. Save the **Application client ID** value.
