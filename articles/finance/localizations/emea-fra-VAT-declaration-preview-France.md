@@ -311,8 +311,17 @@ Follow these steps to define which sales tax codes generate the amount in box 18
     | VAT credit transferred to the group head company on the summary declaration    | Enter the amount to export in line AA (box 8005) of the report. |
     | Assimilated taxes                                                              | Enter the amount to export in line 29 (box 9979) of the report. |
     | Total payable paid by the company head of the group on the summary declaration | Enter the amount to export in line AB (box 9991) of the report. |
+    | Recognized amount TICFE | Enter recognized amount of domestic consumption taxes (TIC) on electricity. |
+    | Recognized amount TICGN | Enter recognized amount of domestic consumption taxes (TIC) on natural gas. |
+    | Recognized amount TICC | Enter recognized amount of domestic consumption taxes (TIC) on coal. |
+    | Credit applied to the VAT (TICFE) | Enter credit applied to the VAT (TICFE) to export in line X1 of the report. |
+    | Credit applied to the VAT (TICGN) | Enter credit applied to the VAT (TICGN) to export in line X2 of the report. |
+    | Credit applied to the VAT (TICC) | Enter credit applied to the VAT (TICC) to export in line X3 of the report. |
+    | Tax due (TICFE) | Enter the amount of the additional payments of TICFE to export in line Z1 of the report. |
+    | Tax due (TICGN) | Enter the amount of the additional payments of TICGN to export in line Z2 of the report. |
+    | Tax due (TICC) | Enter the amount of the additional payments of TICC to export in line Z3 of the report. |
 
-5. Select **OK**, and review Excel report.
+6. Select **OK**, and review Excel report.
 
 ### <a name="settle-and-post-sales-tax"></a>Settle and post sales tax
 
