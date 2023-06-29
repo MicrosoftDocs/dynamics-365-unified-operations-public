@@ -174,7 +174,7 @@ In case you are already knowledgeable about D365 SCM, you might find this docume
 > [!NOTE]
 > The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the _Order number prefix/suffix_ options.
 
-# Outbound shipment orders
+## Outbound shipment orders
 
 **Warehouse management > Inquiries and reports > Outbound shipment orders** are documents that represents information about the requested product dispatch. The **Outbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed information about **Release status**, **Shipment status**, **inventory transactions**, as well as any associated **warehouse work**. The **Release status** and **Shipment status** gets as well maintained on the order header and can be used to follow the outbound progress of the orders. The following states are available for the **Release status**:
 
@@ -203,7 +203,7 @@ In the first release of the **Warehouse Management only mode** the outbound ship
 
 To enable automatically release to warehouse you can use the **Warehouse management > Release to warehouse > Automatic release of outbound shipment orders** batch job process. Please refer to the [Release to warehouse](release-to-warehouse-process.md) topic to learn more.
 
-# Inbound process
+## Inbound process
 
 ![Warehouse Management only mode inbound process](./media/inbound-wom-process.png)
 The high-level process for inbound processing is as following:
@@ -252,18 +252,18 @@ You can see all the _Background processes_ running as part of the [**System admi
 > [!WARNING]
 > In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you most likely will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
 
-# Outbound process
+## Outbound process
 
 ![Warehouse Management only mode outbound process](./media/outbound-wom-process.png)
 The high-level process for outbound processing is as following:
 
-- External system provides _Outbound shipment order_ messages
-- The messages gets processed in _D365 Warehouse Management only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the [message processing](../supply-chain-dev/message-processor.md) or will need to get processed manually or as part of the release process.
-- The orders gets released for further warehouse processing, either manually or automatically via the batch job **Automatic release of outbound shipment orders** and based on the [wave template](wave-templates.md) definitions warehouse work can get created and released immediately.
-- The outbound warehouse work get processed and the related outbound shipment order line transactions get updated to status _Picked_.
-- The loads get outbound ship confirmed which will create **Business events** and [**Shipment packing slip**](#shipment-packing-slips) data for the external systems.
-- The external systems read and uses the [**Shipment packing slip**](#shipment-packing-slips) data for further processing, like for example sales order invoicing in case of having sales orders associated to _outbound shipment orders_.
-- The _Outbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job.
+1. External system provides _Outbound shipment order_ messages
+2. The messages gets processed in _D365 Warehouse Management only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the [message processing](../supply-chain-dev/message-processor.md) or will need to get processed manually or as part of the release process.
+3. The orders gets released for further warehouse processing, either manually or automatically via the batch job **Automatic release of outbound shipment orders** and based on the [wave template](wave-templates.md) definitions warehouse work can get created and released immediately.
+4. The outbound warehouse work get processed and the related outbound shipment order line transactions get updated to status _Picked_.
+5. The loads get outbound ship confirmed which will create **Business events** and [**Shipment packing slip**](#shipment-packing-slips) data for the external systems.
+6. The external systems read and uses the [**Shipment packing slip**](#shipment-packing-slips) data for further processing, like for example sales order invoicing in case of having sales orders associated to _outbound shipment orders_.
+7. The _Outbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job.
 
 > [!NOTE]
 > Reversal of the shipment confirmation will be supported as long as the related outbound shipment order line transactions have not been finalized.
@@ -279,7 +279,7 @@ You can see all the _Background processes_ running as part of the [**System admi
 > [!NOTE]
 > In case of not having defined a language for the order the report will fall back to use the company specific language settings.
 
-# Inventory on-hand updates between the systems
+## Inventory on-hand updates between the systems
 
 ![Warehouse Management only mode - internal process](./media/internal-wom-process.png)
 
@@ -333,7 +333,7 @@ The external system will get informed via business event and can read the shipme
 > [!NOTE]
 > To avoid configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) make sure your items are assigned to an **Item model group** using the _Inventory model_ **Non-valuated** with _Post physical inventory_ and _Post financial inventory_ cleared.
 
-# Unsupported processes
+## Unsupported processes
 <!-- Slotting, QMS, x-docking, ... -->
 The following high-level processes are not supported out-of-the-box related to a integration to external systems.
 
@@ -343,7 +343,7 @@ The following high-level processes are not supported out-of-the-box related to a
 | Linked quality order processing | For other type of source documents like for example _Purchase orders_ it is possible to define [_Quality associations_](../inventory/quality-management-for-warehouses-processes.md#quality-associations) to control the triggering for automatic quality orders creation. This is not yet supported for _Inbound shipment orders_ |
 | Return order processing with disposition codes | When using the _Inbound shipment orders_ related to an inbound return process, it is not possible to use the same process as the [_Sales return orders_](sales-returns.md) which supports the use of _Return reason codes_ and _Disposition codes_ as part of the _Return order receiving (and put away)_ mobile device menu item flow |
 | Cross docking                   | The _Outbound shipment orders_ and _Inbound shipment orders_ cannot yet be used as part of the the [planned cross docking](planned-cross-docking.md) capability. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md). |
-| Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. You can use the _Inbound shipment order item receiving (and put away)_ and _Inbound shipment order line receiving (and put away)_ processes as long as the order lines are associated to a load.</li> <li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
+| Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. You can use the _Inbound shipment order item receiving (and put away)_ and _Inbound shipment order line receiving (and put away)_ processes as long as the order lines are associated to a load.</li><li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
 | Outbound load planning with release to warehouse from loads | In the current release of the **Warehouse Management only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving. This means that the D365 SCM **Transportation management** integration is not supported out-of-the-box  |
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
@@ -355,7 +355,7 @@ The following high-level processes are not supported out-of-the-box related to a
 | Order line _Registration_ and _Pick_ update processing | _Inbound_ and _Outbound shipment order lines_ does not support the manual registration and un-registration process like other order types as for example _Purchase_, _Sales_, and _Transfer order lines_ |
 | [Item arrival journal](../inventory/arrival-overview.md) processing  | In current version the _Inbound shipment order lines_ can get processed via an _Item arrival journal_, but no _Load ID_ will get associated with the related inventory transactions. This means that you will not be able to use the out-of-the-box [Shipment receipt](#shipment-receipts) information, nor getting the [_Inbound shipment order status_](#inbound-shipment-orders) updated |
 
-# Example of using inbound and outbound shipment orders
+## Example of using inbound and outbound shipment orders
 
 This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
@@ -376,24 +376,24 @@ The provided example data uses the process of not being depending on the default
 > [!NOTE]
 > To ease the messages processing [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) supports collections and environment variables that can be reused for all the requests, including the _Authorization_. You will in the following see the used variables within "{{" "}}" indications.
 
-## Prerequisites
+### Prerequisites
 
-### Feature enablement
+#### Feature enablement
 
 Make sure having the **Warehouse Management only mode** enabled as described in the [Feature management](#feature-management) section.
 
-### Microsoft Entra ID applications
+#### Microsoft Entra ID applications
 
 In the **Microsoft Entra ID applications** page, assign the _Admin_ user, or a user having authentication access to the integration messages, like the default **_Warehouse System Integration Operator_** role to the client that will be utilized for authentication while interacting with the D365 SCM environment from an external source. In case you use the same user as part of the product master data import you must add more privileges related to product master data entities to the **_Warehouse System Integration Operator_** role.
 
 When posting entities via [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md), it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case the company (dataAreId) must get specified to complete the messages for the shipment orders.
 
-### Source systems example
+#### Source systems example
 
 Make sure a record is created in the **Source systems** page, this will enable the full use of the capability.
 For this example define _Source system_ as **_ERP_**.
 
-### <a name=”number-sequences”></a>Number sequences
+#### <a name=”number-sequences”></a>Number sequences
 
 For the order import process the [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for _Outbound shipment orders_ and _Inbound shipment orders_ must be defined when not using the same order numbers as the external system provides in D365 SCM WMS. In general, make sure to define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** which includes the following additional number sequences:
 
@@ -407,9 +407,9 @@ For the order import process the [number sequences](../../fin-ops-core/fin-ops/o
 > [!TIP]
 > You can quickly enable all number sequences by using the **_Generate_** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) page.
 
-## Create shipment order messages
+### Create shipment order messages
 
-### <a name="simple-inbound-shipment-order-example"></a>Simple inbound shipment order message example
+#### <a name="simple-inbound-shipment-order-example"></a>Simple inbound shipment order message example
 
 For the inbound shipment order header message **InboundShipmentOrderMessages**, you must provide the following data as a minimum:
 
@@ -457,7 +457,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId
 > [!NOTE]
 > The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Microsoft Entra ID applications** user default company.
 
-### Simple outbound shipment order message example
+#### Simple outbound shipment order message example
 
 For the outbound shipment order header message **OutboundShipmentOrderMessages**, you must provide the following data as a minimum:
 
@@ -509,23 +509,23 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageI
 > [!NOTE]
 > The dataAreaId is used as part of the key to match up against the released header and line messages and must be specified. The suffix _?cross-company=true_ is only needed when having messages for a different company than the used **Microsoft Entra ID applications** user default company.
 
-## Message processor messages for shipment orders
+### Message processor messages for shipment orders
 
 Having the two documents imported into the [message queue](#inbound-outbound-shipment-order-messages) you now need to get them [processed](warehouse-message-processor-messages.md) and thereby getting the actual **Inbound and outbound shipment orders** created in the **Warehouse Management only mode** system.
 
-# Troubleshooting guides
+## Frequently asked questions
 
-## What to do when a message processing is **Failed**?
+### What to do when a message processing is **Failed**?
 
 The [message processing](../supply-chain-dev/message-processor.md) will retry three times before failing. Note that you can use [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to be notified about this. Follow the [view log](../supply-chain-dev/message-processor.md#view-message-log) information for the **Message processor messages** page and use the information to take the next appropriate action of either moving the message back into reprocessing (**Queue** option), **Cancel** the message, or manually [update the message](#viewing-and-maintaining-shipment-order-messages).
 > [!NOTE]
 > Typically, data updated must happen before it make sense trying to reprocess the _Failed_ message..
 
-## Why does my message not get processed, but stays in the _Queued_ state?
+### Why does my message not get processed, but stays in the _Queued_ state?
 
 In case you have multiple messages with dependencies (e.g. for same order number) which has **_Failed_**, you need to either correct the data and move the message back into **_Queued_** state for reprocessing or **_Cancel_** the depending messages beforehand.
 
-## Why do I need to provide a **Country/Region** field value for my outbound shipment order?
+### Why do I need to provide a **Country/Region** field value for my outbound shipment order?
 
 The _Outbound shipment order_ requires to create an address. For this to happen you must specify at least two field values the [countries/regions](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) and a _Name_. The _Country/Region_ value must match existing data in the [**Address setup**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information). You can use the following message fields to provide the data:
 
@@ -534,7 +534,7 @@ The _Outbound shipment order_ requires to create an address. For this to happen 
 - ReceiverName
 - ReceiverCountryRegionId
 
-## Why do I see all the modules and not only the needed for warehouse management processes?
+### Why do I see all the modules and not only the needed for warehouse management processes?
 
 The **Warehouse Management only mode** is part of the larger Microsoft Dynamics Supply Chain Management deployment and thereby enabling you to use all the integration points being part of this. To limit the access to processes you must assign [**roles**](../../fin-ops-core/dev-itpro/sysadmin/role-based-security) only related to warehouse management processes, this will limit the access to other areas of the product.
 
@@ -546,23 +546,23 @@ The **Warehouse Management only mode** is part of the larger Microsoft Dynamics 
 - _Shipping clerk_ - Working with outbound processes
 - _Warehouse worker_ - Working with daily warehouse processes
 
-## Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
+### Why do I get the error "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger." when posting a counting journal?
 
 Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md).
 
-## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing warehouse operations?
+### Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing warehouse operations?
 
 Unless you setup the _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup all the costing and general ledger setup data like the [_the currency in the ledger_](../../finance/general-ledger/configure-ledger.md).
 
-## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
+### Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
 
 Even though using _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup costing data for orders currently not supported by the _Warehouse Management only mode_.
 
-## Why can't I just **Receive complete** what I have partly inbound registered
+### Why can't I just **Receive complete** what I have partly inbound registered
 
 Depending on your setup an inbound load will either automatically get created as part of the _Inbound shipment order_ import, via _ASN_ import or via a manually process. In the current version the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must get triggered manually, but in future version it is planned to have a policy to define the process.
 <!-- Delivery policy -->
 
-## Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
+### Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
 
 In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
