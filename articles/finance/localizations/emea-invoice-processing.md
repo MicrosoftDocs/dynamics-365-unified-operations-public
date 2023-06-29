@@ -26,12 +26,12 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This article also provides information about how customer and vendor invoices are processed for these countries. 
+This article briefly describes some country/region-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This article also provides information about how customer and vendor invoices are processed for these countries/regions. 
 <table>
 <thead>
 <tr>
 <th>Scenario</th>
-<th>Countries</th>
+<th>Countries/regions</th>
 <th>Description of the functionality changes</th>
 </tr>
 </thead>

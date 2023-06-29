@@ -102,7 +102,7 @@ Set up the nature of the transaction according to the country's or region's requ
 
 For more information, see the [Transaction codes and miscellaneous charges](#transaction-codes-and-miscellaneous-charges) example later in this article.
 
-As of January 1, 2022, a unified system of two-digit transaction codes is used in EU countries.
+As of January 1, 2022, a unified system of two-digit transaction codes is used in EU countries/regions.
 
 1. Go to **Tax** \> **Setup** \> **Foreign trade** \> **Transaction codes**.
 2. Create the required transaction codes.
@@ -152,7 +152,7 @@ For example, in 2022, the following values should be reported in some countries/
 
 **Mandatory elements**
 
-The following values are reported in all countries from the next table:
+The following values are reported in all countries/regions from the next table:
 
 - **Direction** (flow)
 - **Commodity code**

@@ -429,16 +429,16 @@ To support this scenario, you must complete the following tasks:
 2. Find and select the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 3. Click **...** > **Reference model** to change the view so that you can view all the available reference models.
 4. Click **New** to add a new reference model.
-    -	**Name** - Country of origin
+    -	**Name** - Country/region of origin
     -	**Node type** - Model root
 5. Click **Add**.
 6. Highlight **Country of Origin**, click **New** to add new reference model.
-    -   **Name** - Countries of origin
+    -   **Name** - Countries/regions of origin
     -   **Node type** - Child of an active node
     -   **Item type** - Record list
 7. Click **Add**.
 8. Highlight **Countries of Origin**, click **New** to add new reference model.
-    -   **Name** - Country of origin
+    -   **Name** - Country/region of origin
     -   **Node type** - Child of an active node
     -   **Item type** - String
 9. Click **Add**.
