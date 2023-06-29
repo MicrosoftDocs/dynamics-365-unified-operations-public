@@ -53,7 +53,7 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
     |-----------------------|-------------|
     | Country document type | Set this option to **Yes** to specify that the tax ID type is at the country/region level, not at the state level. |
     | State document type   | Set this option to **Yes** to specify that the tax ID type is at the state level. |
-    | Foreign document type | Set this option to **Yes** to specify that the tax ID type can be selected in the countries//regions' address configurations for all foreign countries/regions. |
+    | Foreign document type | Set this option to **Yes** to specify that the tax ID type can be selected in the countries/regions' address configurations for all foreign countries/regions. |
 
 9. On the Action Pane, select **Save** to finish the configuration and save the record.
 
