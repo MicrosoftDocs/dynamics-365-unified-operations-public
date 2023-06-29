@@ -62,6 +62,8 @@ The following base sales prices are defined for the component items:
 
 A sales order is entered for customer US-004, Cave Wholesales. The only line that is entered is for the Laptop bundle item. The default unit price for the parent line can be taken from numerous places, such as the trade agreement or the base sales price. In this example, $2,300 was manually entered as the unit price.
 
+<!-- KFM: Create copies of each screenshot with new names. -->
+
 [![Laptop product bundle item on a sales order.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Because the sales order contains a product bundle item, it must be confirmed. The confirmation dialog box shows the components of the product bundle.
@@ -95,6 +97,8 @@ When the sales order is picked and packed, the documents will include only the c
 A product bundle must be shipped and invoiced as a full bundle. For example, if you change the quantity of item 1000 to 4, but you leave the quantity of the other component items at 5, the packing slip and invoice can't be posted.
 
 A partial amount can be shipped and invoiced only if the quantity is reduced for all components of the bundle. For example, a quantity of 5 of the Laptop product bundle item is entered on a sales order. After the sales order is confirmed, the three component items are shown on the sales order, and the quantity of each is 5. By default, during shipping and invoicing, the quantity will be set to 5 for each component. However, you can adjust the quantity down to 3 for all three component items. In this case, three full product bundles will be shipped and invoiced. The remaining two product bundle items (a quantity of 2 of each of the three component items) can be shipped and invoiced later.
+
+<!-- KFM: Create copies of each screenshot with new names. -->
 
 The final step is to invoice the sales order. During invoicing, the invoice dialog box will show the component items.
 
