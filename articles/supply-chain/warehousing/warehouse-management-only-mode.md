@@ -88,7 +88,8 @@ The **Processing status** field can be used to monitor the progress of the shipm
 - _Accepted_ - The message processor state is _Processed_ and thereby a shipment order has been created.  
 - _Failed_ - The message has been processed by the [message processor](../supply-chain-dev/message-processor.md) but had one or more errors. A copy of the message can get created as part of an edit saving.
 - _Draft_ - A copy of a message which can get updated. To reprocess the message you can move the message into the _Queued_ message state by using the **Queue** option.
-- (_Canceled_) - New planned state in version 10.0.37 instead of using the _Failed_ state for messages which has been canceled. You can resend a message (for the same order) from the external system.
+- (_Canceled_) - New planned state in future version instead of using the _Failed_ state for messages which has been canceled. You can resend a message (for the same order) from the external system.
+<!-- Canceled -->
 > [!TIP]
 >  By selecting the **Show old versions** option you can follow the manual message updates by using the _Replaced by message_ field value.
 
@@ -204,26 +205,34 @@ The high-level process for inbound processing is as following:
 
   - _License plate receiving (and put away)_
   - _Load item receiving (and put away)_
-  - _Mixed license plate receiving (and put away)_ for source document line identification method:
-  
-   - _Load item receiving_
-   - _Inbound shipment order line receiving_ - when assigned to loads
-   - _Inbound shipment item receiving_ - when assigned to loads
-  
+  - _Mixed license plate receiving (and put away)_ for source document line identification method **Load item receiving**
+  - _Inbound shipment order line receiving_ - when assigned to loads
+  - _Inbound shipment item receiving_ - when assigned to loads
   - _Inbound shipment order line receiving (and put away)_ when assigned to loads
   - _Inbound shipment order item receiving (and put away)_ when assigned to loads
 
-- **Receiving completed** processes will follow related to a load which will update the load status to _Received_ and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
-- The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_.
+- [**Receiving completed**](#receiving-completed) processes will follow related to a load which will update the load status to _Received_ and generate [**Shipment receipts**](#shipment-receipts) and trigger **Business event** for the external systems.
+
+- The external systems read and uses the [**Shipment receipts**](#shipment-receipts) data for further processing, like for example purchase order invoicing in case of having purchase orders associated to the _inbound shipment orders_ in the external system.
 - The _Inbound shipment orders_ get finalized by running the periodic back-ground [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job.
 
-> [!NOTE] <!-- perlynne#1 -->
-> The **Receiving completed** process will have different behaviors depending on the **Delivery policy** assigned to the load.
->
-> In case of wanting a manual process a [**detour**]( warehouse-app-detours.md) mobile device menu item for the _Complete receiving_ process can get defined as part of the inbound receiving flows.
+## Receiving completed
+
+The **Receiving completed** processes updates the load status to _Received_ and generates [**Shipment receipts**](#shipment-receipts) which trigger **Business event** for the external systems.
+
+You can trigger the **Receiving completed** manually from the load in the web client and/or via the **Receiving completed confirmation** _Warehouse Management mobile app_ mobile device menu item which easily can get added as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
+
+Depending on the setting **Capture receiving completed packing slip** as part of the **Warehouse management parameters - Loads** section it is possible to capture a _packing slip id_ and a _date_ for each of the shipments associated to the inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
+  - Never - Don't prompt for _packing slip id_ and date capturing
+  - Always - Prompt for _packing slip id_ and _date_ and only proceed when specified
+  - Optional - Prompt for the _packing slip id_ and _date_, but allow when not specified
+
+> [!NOTE]
+> In the current version the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must get triggered manually, but in future version it is planned to have a policy to define the process.
+<!-- Delivery policy -->
 
 ## <a name="shipment-receipts"></a> Shipment Receipts
-<!-- perlynne -->
+
 In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can follow the **Posting status** on the header data.
 The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment receipts** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related inbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
 You can see all the _Background processes_ running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
@@ -253,7 +262,7 @@ The high-level process for outbound processing is as following:
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
 In the **Warehouse management > Inquiries and reports > Shipment packing slips** page you can view the detailed line transactions related to the shipped inventory and print out a report of the data via the **Preview/Print** option. You can control the printed inventory dimension values as part of the **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**.
-<!-- Perlynne -->
+
 The **Shipment packing slip** data is version controlled and you can follow the **Posting status** on the header data.
 The header will get from _Ready for posting_ into _Posted_ as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) **Post shipment packing slips** job which automatically gets initialized as part of the [_source system_](#source-systems) setup where you as well can define the frequency of the processing of the batch job which will ensure the related outbound shipment order line transactions get into a finalized transaction state for the the warehouse management module.
 You can see all the _Background processes_ running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
@@ -313,11 +322,11 @@ The external system will get informed via business event and can read the shipme
 |------------|------------|------------|
 |A0001       |11 pcs      |11 pcs      |
 
-> [!NOTE] <!-- perlynne -->
+> [!NOTE]
 > To avoid configuration for the [_inventory postings_](../../finance/general-ledger/inventory-posting.md) and [_fiscal calendars_](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when making adjustments via the [**counting journal**](../inventory/tasks/define-inventory-counting-processes.md) make sure your items are assigned to an **Item model group** using the _Inventory model_ **Non-valuated** with _Post physical inventory_ and _Post financial inventory_ cleared.
 
 # Unsupported processes
-<!-- perlynne -->
+<!-- Slotting, QMS, x-docking, ... -->
 The following high-level processes are not supported out-of-the-box related to a integration to external systems.
 
 |Process                          |Description                                       |
@@ -544,31 +553,9 @@ Even though using _Released products_ with an **Item model group** enabled with 
 
 ## Why can't I just **Receive complete** what I have partly inbound registered
 
-Depending on your setup an inbound load will either automatically get created as part of the _Inbound shipment order_ import, via _ASN_ import or via a manually process. The loads contains a [**Delivery policy**](#source-systems) which can control whether the partly receiving completion processes is allowed or not.
-
+Depending on your setup an inbound load will either automatically get created as part of the _Inbound shipment order_ import, via _ASN_ import or via a manually process. In the current version the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must get triggered manually, but in future version it is planned to have a policy to define the process.
+<!-- Delivery policy -->
 
 ## Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
 
 In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
-
-
-<!-- perlynne
-- "Source systems" process automation setup enhancements
-- Detour Receiving complete - search for: perlynne#1
-- Enhanced inbound receiving process (policy to auto reduce)
-- Shipment packing slip Id
-- OData value mapping (Item/Warehouse) counting + dispatch/advice notification
-- New mobile device menu items:
-    - Inbound shipment order line receiving (and put away)
-    - Inbound shipment order item receiving (and put away)
-    - Receiving completed confirmation
-    
-  https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
-
-- WIZARDS:
-https://learn.microsoft.com/en-us/dynamics365/supply-chain/warehousing/get-started-with-setting-up-module (Main has been updated AFTER this branch!)
-... Don't make updates here!!!
-- Warehouse management initiation wizard
-- Inbound configuration wizard
-- Outbound configuration wizard
--->
