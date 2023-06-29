@@ -157,6 +157,27 @@ The VAT declaration preview in France contains the following information.
 | 25   | 0705 | VAT credit (line 23 – line 16) | Total: lines 23 – 16 |
 | TD   | 8900 | VAT due (line 16 – line 23) | Total: lines 16 – 23 |
 
+**Regularization of domestic consumption taxes (TIC)**
+
+| Line | Box  | Description | User input parameter |
+|------|------|-------------|---------------|
+|  Recognized credit: TICFE  | - | Domestic consumption taxes (TIC) on electricity | Recognized amount TICFE |
+|  Recognized credit: TICGN  | - | Domestic consumption taxes (TIC) on natural gas | Recognized amount TICGN |
+|  Recognized credit: TICC   | - | Domestic consumption taxes (TIC) on coal        | Recognized amount TICC |
+|  Recognized credit: TOTAL  | - | Total of recognized credit                      | Total of recognized credit: TICFE + TICGN + TICC |
+|  Credit applied to VAT (within the limit of the TD line) - X1: TICFE  | 8100 | Line X1 corresponds to the amount of TICFE, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICFE) |
+|  Credit applied to VAT (within the limit of the TD line) - X2: TICGN  | 8101 | Line X2 corresponds to the amount of TICGN, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICGN) |
+|  Credit applied to VAT (within the limit of the TD line) - X3: TICC  | 8102 | Line X3 corresponds to the amount of TICC, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICC) |
+|  Credit applied to VAT (within the limit of the TD line) - X4: TOTAL  | - | Line X4 is total of credit applied to VAT, recorded in column (a), charged to the amount of VAT due. | Total: X1 + X2 + X3) |
+|  Balance of credit to be repaid - Y1: TICFE  | 8110 | Line Y1 corresponds to the remainder of TICFE. | Calculated field: Recognized amount TICFE - Credit applied to the VAT (TICFE) |
+|  Balance of credit to be repaid - Y2: TICGN  | 8111 | Line Y2 corresponds to the remainder of TICGN. | Calculated field: Recognized amount TICGN - Credit applied to the VAT (TICGN) |
+|  Balance of credit to be repaid - Y3: TICC  | 8112 | Line Y3 corresponds to the remainder of TICC. | Calculated field: Recognized amount TICC - Credit applied to the VAT (TICC) |
+|  Balance of credit to be repaid - Y4: TOTAL  | - | Line Y4 is total of balance of credit to be repaid. | Total: Y1 + Y2 + Y3 |
+|  Tax due - Z1: TICFE  | 8120 | Amount of the additional payments of TICFE to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICFE) |
+|  Tax due - Z2: TICGN  | 8121 | Amount of the additional payments of TICGN to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICGN) |
+|  Tax due - Z3: TICC  | 8122 | Amount of the additional payments of TICC to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICC) |
+|  Tax due - Z4: TOTAL  | - | Total amount of the additional payments of TIC to be made. This amount is recorded using the annual summary statement (ERA). | Total: Z1 + Z2 + Z3 |
+
 
 **CREDIT / TAX PAYABLE**
 
@@ -168,7 +189,7 @@ The VAT declaration preview in France contains the following information.
 | 28   | Not applicable | Total net VAT payable (line 16 – line 23) | Total: lines 16 – 23 |
 | 29   | 9979 | Assimilated taxes | The user defines a value in a dialog box. |
 | AB   | 9991 | Total payable that is paid by the head company of the group on the summary declaration | The user defines a value in a dialog box. |
-| 32   | Not applicable | Total payable (line 28 + line 29 – line AB) | Total: lines 28 + 29 + Z5 – AB |
+| 32   | Not applicable | Total payable (line 28 + line 29 +line Z5 – line AB) | Total: lines 28 + 29 + Z5 – AB |
 
 ### Note about purchase reverse charge VAT
 
