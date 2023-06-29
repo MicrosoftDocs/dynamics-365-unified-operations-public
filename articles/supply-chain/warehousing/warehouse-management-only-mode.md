@@ -24,6 +24,16 @@ ms.search.validFrom: 2023-04-24
 ms.dyn365.ops.version: 10.0.36
 ---
 
+<!--
+How does this documentation gets generated?
+
+https://learn.microsoft.com/en-us/common-data-model/schema/core/operationscommon/entities/supplychain/wms/overview 
+
+
+Will it be OK to ref. to WHSInboundShipmentOrders and WHSOutboundShipmentOrders ????
+-->
+
+
 # Warehouse Management only mode
 
 Running your warehouse processes with the **Warehouse Management only mode** will provide several deployment options to support the actual business needs of running your [warehouse management](warehouse-management-overview.md) processes.
