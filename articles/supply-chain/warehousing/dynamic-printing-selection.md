@@ -91,6 +91,10 @@ Create a new mobile device menu item and set the **Mode** to _Indirect._ Set the
 
 Using this menu item, the user can scan the name of the printer that they want to use. The scanned printer will override the default label printer setup, for its specific printer stock type.
 
+## Printer selection process
+
+While executing the printing job, the system will first check if the work user that is executing it has overridden the printer with the printer stock type of the layout currently being printed. If so, then the overriding printer will be used. Otherwise, the system will then look into the default setup. First, any default label printer setup for the current location/zone will be considered, if one is specified in the flow (for example printing a container label in the packing station) and finally, any default label printer setup for the current user will be considered.
+
 ## Additional resources
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
