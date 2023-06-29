@@ -1175,6 +1175,8 @@ items:
               items:
                 - name: Enable dual-write for existing finance and operations apps
                   href: data-entities/dual-write/enable-dual-write.md
+                - name: Dual-write health check
+                  href: data-entities/dual-write/dual-write-health-check.md
                 - name: System requirements and prerequisites
                   href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: How to use the dual-write wizard to link your environments
