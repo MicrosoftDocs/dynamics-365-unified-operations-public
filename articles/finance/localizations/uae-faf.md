@@ -27,7 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
 
-This article includes country/specific-specific information about how to set up the Federal Tax Authority (FTA) Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
+This article includes country/region-specific information about how to set up the Federal Tax Authority (FTA) Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE).
 
 > [!NOTE]
 > The **FTA VAT Audit File (AE)** Electronic reporting (ER) format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**) is being deprecated and will no longer be supported. A new **FTA Tax Audit File - FAF in TXT (AE)** ER format that uses the **SAF-T General** model mapping can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md). For more information, see [Removed or deprecated features in Dynamics 365 Finance](../get-started/removed-deprecated-features-finance.md).
