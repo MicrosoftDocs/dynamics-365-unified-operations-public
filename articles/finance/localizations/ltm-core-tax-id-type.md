@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Use this configuration to enter valid tax ID types in each country and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
+Use this configuration to enter valid tax ID types in each country/region and identify the entities that the company operates with. These entities can include customers, vendors, contacts, banks, and employees.
 
 ## Prerequisites
 
@@ -51,9 +51,9 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
 
     | Field                 | Description |
     |-----------------------|-------------|
-    | Country document type | Set this option to **Yes** to specify that the tax ID type is at the country level, not at the state level. |
+    | Country document type | Set this option to **Yes** to specify that the tax ID type is at the country/region level, not at the state level. |
     | State document type   | Set this option to **Yes** to specify that the tax ID type is at the state level. |
-    | Foreign document type | Set this option to **Yes** to specify that the tax ID type can be selected in the countries' address configurations for all foreign countries. |
+    | Foreign document type | Set this option to **Yes** to specify that the tax ID type can be selected in the countries//regions' address configurations for all foreign countries/regions. |
 
 9. On the Action Pane, select **Save** to finish the configuration and save the record.
 
