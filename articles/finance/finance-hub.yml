@@ -55,7 +55,7 @@ additionalContent:
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Deploy Dynamics 365 Finance  
-  - title: Admimister and develop  
+  - title: Administer and develop  
     items:   
     - title: Platform development 
       links: 
@@ -68,7 +68,7 @@ additionalContent:
     - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
-        text: Dynamics Lifecycle Services resources 
+        text: Dynamics 365 Lifecycle Services resources 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page
         text: Continuous delivery 
       - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
