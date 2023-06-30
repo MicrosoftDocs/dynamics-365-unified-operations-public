@@ -43,6 +43,8 @@ additionalContent:
       links: 
       - url: /dynamics365/guidance/implementation-guide/overview 
         text: Dynamics 365 implementation guidance
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle
+        text: Implementation lifecycle management     
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
       - url: /dynamics365/guidance/implementation-guide/security
@@ -55,6 +57,14 @@ additionalContent:
         text: Buy Dynamics 365 Finance
       - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Deploy Dynamics 365 Finance  
+    - title: Set up
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=/dynamics365/context/supply-chain
+        text: Lifecycle Services (LCS) user guide
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=/dynamics365/context/supply-chain
+        text: Project onboarding 
+      - url:  /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live
+        text: Prepare for go-live     
   - title: Administer and develop  
     items:   
     - title: Platform development 
@@ -65,14 +75,24 @@ additionalContent:
         text: Deploy and access development environments
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
         text: Application stack and server architecture
-    - title: Manage environments
+       - title: Manage environments
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs
-        text: Dynamics 365 Lifecycle Services resources 
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page
-        text: Continuous delivery 
-      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page
-        text: Upgrades, updates, and hotfixes   
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
+        text: Dynamics 365 Lifecycle Services resources
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?context=/dynamics365/context/ops
+        text: Continuous delivery
+      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page?context=/dynamics365/context/ops
+        text: Upgrades, updates, and hotfixes     
+    - title: Manage data storage
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?context=/dynamics365/context/ops
+        text: Data management overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?context=/dynamics365/context/ops
+        text: Data import and export
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations?context=/dynamics365/context/ops
+        text: Database movement operations
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/ops
+        text: Data entities overview 
     - title: System administration  
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
@@ -84,7 +104,7 @@ additionalContent:
     - title: Organization administration
       links:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
-        text: Overview
+        text: Organization administration overview
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
         text: Organizational hierarchies
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
@@ -107,8 +127,6 @@ additionalContent:
         text: Export to Azure Data Lake overview
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
         text: Export to Azure Data Lake in finance and operations apps
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities
-        text: Data entities
     - title: Develop integration    
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
@@ -116,7 +134,9 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api  
         text: Data management REST API
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
-        text: Service endpoint overview  
+        text: Service endpoint overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/design-best-practices?context=/dynamics365/context/ops
+        text: Design principles and best practices for data entities    
     - title: Microsoft Power Platform integration
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
@@ -137,12 +157,12 @@ additionalContent:
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
         text: API references
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
-        text: Dual-write mapping references
-      - url: /dynamics365/fin-ops-core/dev-itpro/database/api/dbmovement-api-overview
-        text: Database movement API 
-      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference  
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference
         text: X++ language reference
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
+        text: Service endpoint overview 
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/odata
+        text: Open Data Protocol (OData) 
     - title: Developer tools 
       links: 
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/development-tools-overview?context=/dynamics365/context/ops
