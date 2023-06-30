@@ -490,7 +490,7 @@ After you update the status to be **Complete**, the configuration is ready for d
 5. Click **OK**.
 6. Save the configuration and close the designer.
 7. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-8. Enter a description such as **Add reference model for Country of Origin**, and then click **OK**.
+8. Enter a description such as **Add reference model for Country/region of Origin**, and then click **OK**.
 9. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
