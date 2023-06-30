@@ -52,40 +52,34 @@ The Document receive API must be integrated with a valid channel ID. If it's cal
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_FileSetId\_In | string | No | An optional parameter. |
-| vis\_ExternalDocumentReceiver\_FileName\_In | string | Yes | A file name with extension. |
-| vis\_ExternalDocumentReceiver\_FileContent\_In | string | Yes | A Base64-encoded file. |
-| vis\_ExternalDocumentReceiver\_ChannelType\_In | string | Yes | The channel type can be **Direct**, **Email**, **API**, or **FileSystem**. |
-| vis\_ExternalDocumentReceiver\_ChannelInfo\_In | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
-
-The channel type determines whether the scenario is interactive or silent.
-
-| Channel type | Scenario |
-|--------------|----------|
-| Direct | Interactive |
-| Email | Silent |
-| API | Silent |
-| FileSystem | Silent |
+| ChannelId | string | Yes | Channel id  |
+| FileName | string | Yes | A file name with extension. |
+| FileContent | string | Yes | A Base64-encoded file. |
+| FileSetId | string | No | An optional parameter. |
+| AdditionalInfo | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
 
 ### Output parameters
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_Data\_Out | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
+| Data | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
 
 ### Channel information
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| ChannelId | string | Yes | The identifier of the channel that must be bound. |
+| ChannelType | string | Yes | The channel type can be Direct, Email, API, or FileSystem. |
 | SendFrom | string | No | Additional information to track the sender. |
 
-Here is an example of a payload.
+The channel type determines whether the scenario is interactive or silent. 
 
-```json
-{ "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
-    "SendFrom": "xxxx.xxx@contoso.com" }
-```
+| Channel type | Scenario |
+|--------------|----------|
+| Direct | Interactive  |
+| Email | Silent |
+| API | Silent |
+| FileSystem | Silent |
+
 ## Channel with/without a flow template 
 
 Administrators can decide how they want to integrate the Document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
