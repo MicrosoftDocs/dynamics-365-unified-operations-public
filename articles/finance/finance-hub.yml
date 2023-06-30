@@ -134,7 +134,7 @@ additionalContent:
     - title: Microsoft Office integration
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
-        text: Overview
+        text: Office integration overview
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
         text: Configure and send email
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
