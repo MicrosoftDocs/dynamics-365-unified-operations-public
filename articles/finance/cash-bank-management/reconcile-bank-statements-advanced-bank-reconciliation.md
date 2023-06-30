@@ -104,11 +104,11 @@ To view the voucher of a new transaction on a **Bank statement** page, turn on t
 
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
-Feature **Generate customer and vendor payments from bank statement and reconciliation** is introduced in 10.0.36. This feature provides feature enhancement on bank statement and reconciliation worksheet. User can post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals will be automatically matched with the original bank statement lines in bank reconciliation worksheet. 
+The feature, **Generate customer and vendor payments from bank statement and reconciliation** is available with the release of version 10.0.36. This feature provides enhancements to the bank statement and reconciliation worksheet. You can post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet. 
 
-To use this feature, you should first configure the **default customer payment journal name** and **default vendor payment journal name** on **Reconciliation** fast tab on **bank account** setup form. Then select required bank statement lines on either bank statement form or bank reconciliation worksheet form, click **Generate payment journal** button to trigger the payment journal generation and posting.
+To use this feature, on the **Bank account** setup page, on the **Reconciliation** FastTab, configure the **Default customer payment journal name** and **Default vendor payment journal name**. Then, select the required bank statement lines on the **Bank statement** page or the **Bank reconciliation worksheet** page and select **Generate payment journal** to trigger the payment journal generation and posting.
 
 > [!NOTE]
-> Feature "Generate customer and vendor payments from bank statement and reconciliation" is under preview in 10.0.36. It is only available in sandbox environments.
+> The feature, **Generate customer and vendor payments from bank statement and reconciliation** is in preview in version 10.0.36 and is only available in sandbox environments.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
