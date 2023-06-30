@@ -102,4 +102,8 @@ Bank statement transactions that you marked as **New** on the reconciliation wor
 
 To view the voucher of a new transaction on a **Bank statement** page, turn on the **Display vouchers in bank statement** feature.
 
+## Post customer and vendor payment journals from bank statements and reconciliation worksheets
+
+Feature "Generate customer and vendor payments from bank statement and reconciliation" is introduced in 10.0.36. This feature provides feature enhancement on bank statement and reconciliation worksheet. User can post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals will be automatically matched with the original bank statement lines in bank reconciliation worksheet. 
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
