@@ -63,7 +63,7 @@ Before you begin, the following prerequisites must be configured:
     - Sales tax declaration for multiple VAT registrations
 
 > [!NOTE]
-> If you transfer between warehouses in different countries that have a tax registration, you must also enable the **Tax in transfer order** feature and configure the Tax Calculation service for tax in transfer orders. For more information, see [Tax feature support for transfer orders](tasks/tax-feature-support-for-transfer-order.md).
+> If you transfer between warehouses in different countries/regions that have a tax registration, you must also enable the **Tax in transfer order** feature and configure the Tax Calculation service for tax in transfer orders. For more information, see [Tax feature support for transfer orders](tasks/tax-feature-support-for-transfer-order.md).
 
 ## Activate feature for specific legal entity
 
@@ -79,7 +79,7 @@ Before you begin, the following prerequisites must be configured:
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
 
-    The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country/region (for example from Belgium to Belgium):
+    The following information applies to documents about movements of goods between European Union (EU) countries/regions, except movements within the same country/region (for example from Belgium to Belgium):
 
     - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
     - Documents are transferred to Intrastat.
@@ -157,7 +157,7 @@ For more information, see [Download ER configurations from the Global repository
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: the Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
+    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries/regions: the Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
 6. Select **Output** \> **Report**.
 7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
@@ -181,7 +181,7 @@ For more information, see [Download ER configurations from the Global repository
 3. On the **Report setup** FastTab, in the **EU sales list** section, set the **Excluded** option to **Yes** if tax transactions that have a selected sales tax code should **not** be transferred to the EU sales list.
 4. In the **Country/region type** section, in the **Country/region type** field, define the tax transaction type for VAT reporting: **EU**, **Domestic**, or **Third country**.
 
-    This setting is mandatory in some countries, such as the United Kingdom.
+    This setting is mandatory in some countries/regions, such as the United Kingdom.
 
     ![sales tax code.](media/Multipleid-image6.png)
 
@@ -198,7 +198,7 @@ All tax registrations have the same settings for EU sales list parameters.
 2. On the **EU sales list** tab, set up the parameters on the **Transfer** and **Rounding rules** FastTabs.
 
 > [!NOTE]
-> If one of your tax registrations is in Poland or Hungary (countries that report purchases in addition to sales), set the **Transfer purchases** option to **Yes**.
+> If one of your tax registrations is in Poland or Hungary (countries/regions that report purchases in addition to sales), set the **Transfer purchases** option to **Yes**.
 
 #### Set up EU sales list reporting formats
 

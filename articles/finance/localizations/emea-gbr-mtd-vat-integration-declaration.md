@@ -95,7 +95,7 @@ When the **Company tax registration in customer invoices** feature is enabled, t
 
 ## Sales tax groups
 
-Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country**, **Accounts receivable Domestic**, **Accounts receivable Third country**, **Reverse charge VAT**.
+Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country/region**, **Accounts receivable Domestic**, **Accounts receivable Third country/region**, **Reverse charge VAT**.
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 2. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
