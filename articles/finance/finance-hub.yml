@@ -29,7 +29,7 @@ highlightedContent:
       url: /dynamics365/finance/get-started/whats-new-home-page
     # Card
     - title: Training
-      itemType: training
+      itemType: training 
       url: /training/dynamics365/finance
     # Card
     - title: Troubleshoot
