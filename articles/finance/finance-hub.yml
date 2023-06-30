@@ -75,7 +75,7 @@ additionalContent:
         text: Deploy and access development environments
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
         text: Application stack and server architecture
-       - title: Manage environments
+    - title: Manage environments
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
         text: Dynamics 365 Lifecycle Services resources
