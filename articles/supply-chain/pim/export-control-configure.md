@@ -21,7 +21,7 @@ To use advanced export control, your system must meet the following requirements
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
 - The feature that is named *(Preview) Advanced export control configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Your Supply Chain Management environment must be [linked to a Dataverse environment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
-- You must install the advanced export control solution for Supply Chain Management from Microsoft AppSource. For instructions, see [Microsoft Dynamics 365 Export Control App](https://appsource.microsoft.com/product/dynamics-365/mscrm.exportcontrol). <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? What is this and why do we need it?  -->
+- You must install the advanced export control solution for Supply Chain Management from the Microsoft commercial marketplace. For instructions, see [Microsoft Dynamics 365 Export Control App](https://appsource.microsoft.com/product/dynamics-365/mscrm.exportcontrol). <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? What is this and why do we need it?  -->
 
 ## Authentication and authorization
 
@@ -40,11 +40,11 @@ Follow these steps to create a new Azure AD application.
     - **Redirect URI** – Leave blank.
 
 1. Select **Register**.
-1. A page opens showing details about your new app. Copy the **Application (client) ID** value to a temporary text file because you will need it later.
+1. A page opens showing details about your new app. Copy the **Application (client) ID** value to a temporary text file because you'll need it later.
 1. From the **Manage** list, select **Certificates & secrets**.
 1. The **Certificates & secrets** page opens. Select **New client secret**.
 1. The **Add a client secret** dialog opens. Enter a description and an expiration date and then select **Add**.
-1. You return to the **Certificates & secrets** page, which now shows a row with details about your new client secret. Copy the value in the **Value** column to a temporary text file because you will need it later and it will be hidden the next time you open this page.
+1. You return to the **Certificates & secrets** page, which now shows a row with details about your new client secret. Copy the value in the **Value** column to a temporary text file because you'll need it later and it will be hidden the next time you open this page.
 
 ### Grant the application permissions in the Power Platform Admin Center
 
