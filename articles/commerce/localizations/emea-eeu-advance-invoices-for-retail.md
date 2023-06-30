@@ -40,7 +40,7 @@ The following scenarios are supported:
 
 ### Enable the functionality for creating advance invoices
 
-You must enable the following features in the **Feature management** workspace:
+You must enable the following feature in the **Feature management** workspace:
 
 - Enable posting advance invoices from POS
 
