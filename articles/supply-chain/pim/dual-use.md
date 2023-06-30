@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-use goods
-description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
+description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country/region, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
