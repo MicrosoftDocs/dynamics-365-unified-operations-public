@@ -121,12 +121,6 @@ additionalContent:
         text: Create users
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles
         text: Assign users to security roles      
-    - title: Azure Data Lake integration 
-      links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
-        text: Export to Azure Data Lake overview
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
-        text: Export to Azure Data Lake in finance and operations apps
     - title: Develop integration    
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
@@ -136,15 +130,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
         text: Service endpoint overview
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/design-best-practices?context=/dynamics365/context/ops
-        text: Design principles and best practices for data entities    
-    - title: Microsoft Power Platform integration
-      links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview
-        text: Integration between finance and operations apps and Power Platform overview
-      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview     
-        text: Dual-write overview 
-      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview
-        text: Virual entities overview
+        text: Design principles and best practices for data entities 
     - title: Microsoft Office integration
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
@@ -152,7 +138,23 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
         text: Configure and send email
       - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
-        text: Customize the Open in Microsoft Office menu            
+        text: Customize the Open in Microsoft Office menu          
+    - title: Microsoft Power Platform integration
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview?context=/dynamics365/context/ops
+        text: Power Platform integration overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview?context=/dynamics365/context/ops
+        text: Dual-write overview 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview?context=/dynamics365/context/ops
+        text: Virtual entities overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
+        text: Dual-write mapping reference
+    - title: Azure Data Lake integration 
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
+        text: Export to Azure Data Lake overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
+        text: Export to Azure Data Lake in finance and operations apps             
     - title: Developer reference
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
