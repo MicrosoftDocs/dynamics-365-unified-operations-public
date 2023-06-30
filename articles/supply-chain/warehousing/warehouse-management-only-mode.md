@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehouse Management only mode
+title: Warehouse management only mode
 description: Run all supply chain warehouse operations in Microsoft Dynamics 365 Supply Chain Management as part of a dedicated ecosystem that easily integrates with other ERP and order management systems via inbound and outbound shipment orders.
 author: perlynne
 ms.date: 28/04/2023
@@ -32,36 +32,36 @@ https://learn.microsoft.com/en-us/common-data-model/schema/core/operationscommon
 Will it be OK to ref. to WHSInboundShipmentOrders and WHSOutboundShipmentOrders ????
 -->
 
-# Warehouse Management only mode
+# Warehouse management only mode
 
-Running your warehouse processes with the **Warehouse Management only mode** will provide several deployment options to support the actual business needs of running your [warehouse management](warehouse-management-overview.md) processes.
+Running your warehouse processes with the **Warehouse management only mode** will provide several deployment options to support the actual business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
 ![High level integrations](./media/high-level-integrations.png)
 
 One example being a dedicated LCS D365 cloud deployment only handling the warehouse operations and all integrations related to orders and financial processing handled outside this deployment. With this implementation concept it will only be needed to configure the processes around warehouse management as part of the D365 SCM cloud deployment.  
 
-![Warehouse Management only mode to ERP/Order system](./media/scm-wom-2-erp.png)
+![Warehouse management only mode to ERP/Order system](./media/scm-wom-2-erp.png)
 
 Another example is a more SCM integrated implementation methodology, having the warehouses enabled for D365 SCM processes like sales, purchase, production orders, etc. and at the same time handling warehouse operations for other ERP/order processing systems. With this type of implementation, the same warehouse instance can handle all the logistic warehouse processes, internal as well as external integrations.
 
-![Warehouse Management only mode to ERP/Order system](./media/scm-wms-scm-2-erp.png)
+![Warehouse management only mode to ERP/Order system](./media/scm-wms-scm-2-erp.png)
 
-And then everything between the two above example deployment options, which for example could be running a dedicated legal entity within an existing D365 SCM deployment which only handles the warehouse management processes for external systems. All-in-all you can use the **Warehouse Management only mode** exactly as needed.
+And then everything between the two above example deployment options, which for example could be running a dedicated legal entity within an existing D365 SCM deployment which only handles the warehouse management processes for external systems. All-in-all you can use the **Warehouse management only mode** exactly as needed.
 
 ## <a name="feature-management"></a>Feature management
 
-To use the **Warehouse Management only mode** capability, your system must meet the following requirements:
+To use the **Warehouse management only mode** capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
 
-- The feature that's named **(Preview) Warehouse Management only mode** must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named **(Preview) Warehouse management only mode** must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - With the feature enabled you can open the **Warehouse management > Setup > Warehouse management integration > Source systems** used to define the integration systems. To enable all the functionalities, you must at least insert one record into this entity.
 
 ## Data exchange
 
-Running **Warehouse Management only mode** requires integration to be defined between the ERP/Order systems and the Microsoft Dynamics 365 Supply Chain Management system.
+Running **Warehouse management only mode** requires integration to be defined between the ERP/Order systems and the Microsoft Dynamics 365 Supply Chain Management system.
 Integration between systems is a widespread challenge, but nevertheless of huge importance getting to work seamlessly.
-In general, three categories of interactions are needed for the **Warehouse Management only mode**:
+In general, three categories of interactions are needed for the **Warehouse management only mode**:
 
 - Document data (like purchase and sales orders)
 - Master data (like products)
@@ -79,14 +79,14 @@ With the introduction of these two new, lightweight inbound and outbound warehou
 The **inbound shipment order messages** and the **outbound shipment order messages** can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) shipment order message entities in a optimal manner.
 A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. It is recommended to process the messages as part of a periodic batch job triggered by the [**Message processor**](../supply-chain-dev/message-processor.md) page where you must use the **Shipment Orders** _Message queue_.
 
-![Warehouse Management only mode to ERP/Order system](./media/shipment-order-integrations.png)
+![Warehouse management only mode to ERP/Order system](./media/shipment-order-integrations.png)
 
 > [!NOTE]
 > Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
 
 ##### Viewing and maintaining shipment order messages
 
-It is possible to both view and update shipment order messages in D365 Warehouse Management only mode, which can be a quick way to test integrations as part of an implementation process.  When a message is in a _Failed_ message state you can update all field values, except the order header and line numbers. The pages used to view and maintain the messages are:
+It is possible to both view and update shipment order messages in D365 Warehouse management only mode, which can be a quick way to test integrations as part of an implementation process.  When a message is in a _Failed_ message state you can update all field values, except the order header and line numbers. The pages used to view and maintain the messages are:
 
 - **Warehouse management > Inquiries and reports > Inbound shipment order messages**
 - **Warehouse management > Inquiries and reports > Outbound shipment order messages**
@@ -147,7 +147,7 @@ As a minimum it is recommended to use the following  [**Business events**](../..
 
 ## <a name="source-systems"></a> Source systems
 
-The **Warehouse Management only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. This gets defined in the **Warehouse management > Setup > Warehouse management integration > Source systems** page and is a prerequisite to be able to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the inbound shipment.
+The **Warehouse management only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. This gets defined in the **Warehouse management > Setup > Warehouse management integration > Source systems** page and is a prerequisite to be able to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the inbound shipment.
 The **Source system** name must be identical with the name in the provided message before a message can be accepted getting imported into D365 SCM.
 Additional policy settings can be used as part of the **Source systems** page to control the shipment order import processes, for example it is possible to define **Message value mapping** for item and warehouse identifications and define if loads for inbound shipment orders automatically gets created as part of the **Inbound shipment order policies** definition.
 > [!NOTE]
@@ -193,7 +193,7 @@ And the following states are available for the **Shipment status**:
 
 In case you are already knowledgeable about D365 SCM, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the [**Source systems**](#source-systems) definitions you can trigger the reservation as part of the document import and even define to reject a shipment order which cannot get reserved partly or fully.
 
-In the first release of the **Warehouse Management only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
+In the first release of the **Warehouse management only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving.
 
 > [!WARNING]
 > On the _Outbound shipment order lines_ you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities.
@@ -205,13 +205,13 @@ To enable automatically release to warehouse you can use the **Warehouse managem
 
 ## Inbound process
 
-![Warehouse Management only mode inbound process](./media/inbound-wom-process.png)
+![Warehouse management only mode inbound process](./media/inbound-wom-process.png)
 The high-level process for inbound processing is as following:
 
 1. External systems provides _Inbound shipment order_ messages
-2. The messages get processed in _D365 Warehouse Management only mode_ and orders get created
+2. The messages get processed in _D365 Warehouse management only mode_ and orders get created
 3. Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during [message processing](../supply-chain-dev/message-processor.md) based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
-4. Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes which all requires inbound loads:
+4. Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse Management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes which all requires inbound loads:
     - _License plate receiving (and put away)_
     - _Load item receiving (and put away)_
     - _Mixed license plate receiving (and put away)_ for source document line identification method **Load item receiving**
@@ -228,7 +228,7 @@ The high-level process for inbound processing is as following:
 
 The **Receiving completed** processes updates the load status to _Received_ and generates [**Shipment receipts**](#shipment-receipts) which trigger **Business event** for the external systems.
 
-You can trigger the **Receiving completed** manually from the load in the web client and/or via the **Receiving completed confirmation** _Warehouse Management mobile app_ mobile device menu item which easily can get added as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
+You can trigger the **Receiving completed** manually from the load in the web client and/or via the **Receiving completed confirmation** _Warehouse management mobile app_ mobile device menu item which easily can get added as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 
 Depending on the setting **Capture receiving completed packing slip** as part of the **Warehouse management parameters - Loads** section it is possible to capture a _packing slip id_ and a _date_ for each of the shipments associated to the inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
 
@@ -250,15 +250,15 @@ You can see all the _Background processes_ running as part of the [**System admi
 > Reversal of the receiving confirmation will be supported as long as the related inbound shipment order line transactions have not been finalized.
 
 > [!WARNING]
-> In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you most likely will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
+> In case of enabling the Warehouse management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you most likely will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
 
 ## Outbound process
 
-![Warehouse Management only mode outbound process](./media/outbound-wom-process.png)
+![Warehouse management only mode outbound process](./media/outbound-wom-process.png)
 The high-level process for outbound processing is as following:
 
 1. External system provides _Outbound shipment order_ messages
-2. The messages gets processed in _D365 Warehouse Management only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the [message processing](../supply-chain-dev/message-processor.md) or will need to get processed manually or as part of the release process.
+2. The messages gets processed in _D365 Warehouse management only mode_ and orders gets created. Based on the [**Source system**](#source-systems) policies reservations will automatically be handled as part of the [message processing](../supply-chain-dev/message-processor.md) or will need to get processed manually or as part of the release process.
 3. The orders gets released for further warehouse processing, either manually or automatically via the batch job **Automatic release of outbound shipment orders** and based on the [wave template](wave-templates.md) definitions warehouse work can get created and released immediately.
 4. The outbound warehouse work get processed and the related outbound shipment order line transactions get updated to status _Picked_.
 5. The loads get outbound ship confirmed which will create **Business events** and [**Shipment packing slip**](#shipment-packing-slips) data for the external systems.
@@ -281,7 +281,7 @@ You can see all the _Background processes_ running as part of the [**System admi
 
 ## Inventory on-hand updates between the systems
 
-![Warehouse Management only mode - internal process](./media/internal-wom-process.png)
+![Warehouse management only mode - internal process](./media/internal-wom-process.png)
 
 The warehouse management module supports multiple inventory on-hand update processes using the [Counting journal](../inventory/inventory-journals.md#counting), you can read more about the cycle counting process [here](cycle-counting.md).
 
@@ -345,7 +345,7 @@ The following high-level processes are not supported out-of-the-box related to a
 | Cross docking                   | The _Outbound shipment orders_ and _Inbound shipment orders_ cannot yet be used as part of the the [planned cross docking](planned-cross-docking.md) capability. Same limitation applies for the [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md). |
 | Inbound Warehouse management mobile app flows | The Warehouse management mobile app flows against _Inbound shipment orders_ does not support the following processes in the same ways as the:<ul><li>[Goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), having the receiving process handled against a container</li> <li>Mobile device menu items configured like _Purchase/Transfer order item receiving (and put away)_ and _Purchase/Transfer order line receiving (and put away)_. You can use the _Inbound shipment order item receiving (and put away)_ and _Inbound shipment order line receiving (and put away)_ processes as long as the order lines are associated to a load.</li><li>_Report as finished (and put away)_ mobile device flow for production </li></ul> |
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report as finished via the Warehouse management mobile app are not supported in the same way against the _Inbound_ and _Outbound shipment orders_ |
-| Outbound load planning with release to warehouse from loads | In the current release of the **Warehouse Management only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving. This means that the D365 SCM **Transportation management** integration is not supported out-of-the-box  |
+| Outbound load planning with release to warehouse from loads | In the current release of the **Warehouse management only mode** the outbound shipment order lines do not out-of-the-box support getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process, this can only happen as part of the processing of the warehouse waving. This means that the D365 SCM **Transportation management** integration is not supported out-of-the-box  |
 | Creation of orders from warehouse app | The process of creating _Outbound shipment orders_ from the Warehouse management mobile app, similar to the _Create transfer order from license plates_ mobile device menu item is not supported |
 | Internal order processing information provided to external systems | When running D365 SCM and using the supported orders like transfer, sales, purchase, production, etc. all the related business process data will automatically get maintained with the D365 SCM instance, but no business events and related inbound and outbound on-hand information will get provided to external systems for these kind of processes. This means that if you for example create a transfer order and ship inventory out of one warehouse and receive it into another within D365 SCM you must use another way than the described for _inbound and outbound shipment orders_ to inform the external systems about the operations |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the _Allow reservation on demand order_ capability | _Outbound shipment order line_ transaction reservations does not support having reservations on inventory dimensions below the location in the reservation hierarchy, as supported for a _Sales order line_ transaction |
@@ -380,7 +380,7 @@ The provided example data uses the process of not being depending on the default
 
 #### Feature enablement
 
-Make sure having the **Warehouse Management only mode** enabled as described in the [Feature management](#feature-management) section.
+Make sure having the **Warehouse management only mode** enabled as described in the [Feature management](#feature-management) section.
 
 #### Microsoft Entra ID applications
 
@@ -511,7 +511,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageI
 
 ### Message processor messages for shipment orders
 
-Having the two documents imported into the [message queue](#inbound-outbound-shipment-order-messages) you now need to get them [processed](warehouse-message-processor-messages.md) and thereby getting the actual **Inbound and outbound shipment orders** created in the **Warehouse Management only mode** system.
+Having the two documents imported into the [message queue](#inbound-outbound-shipment-order-messages) you now need to get them [processed](warehouse-message-processor-messages.md) and thereby getting the actual **Inbound and outbound shipment orders** created in the **Warehouse management only mode** system.
 
 ## Frequently asked questions
 
@@ -536,7 +536,7 @@ The _Outbound shipment order_ requires to create an address. For this to happen 
 
 ### Why do I see all the modules and not only the needed for warehouse management processes?
 
-The **Warehouse Management only mode** is part of the larger Microsoft Dynamics Supply Chain Management deployment and thereby enabling you to use all the integration points being part of this. To limit the access to processes you must assign [**roles**](../../fin-ops-core/dev-itpro/sysadmin/role-based-security) only related to warehouse management processes, this will limit the access to other areas of the product.
+The **Warehouse management only mode** is part of the larger Microsoft Dynamics Supply Chain Management deployment and thereby enabling you to use all the integration points being part of this. To limit the access to processes you must assign [**roles**](../../fin-ops-core/dev-itpro/sysadmin/role-based-security) only related to warehouse management processes, this will limit the access to other areas of the product.
 
 - _Warehouse manager_ - Enables and reviews processes, maintains master data, and responds to inquiries
 - _Warehouse mobile device user_ - Used to access the Warehouse Mobile Devices Portal service
@@ -556,7 +556,7 @@ Unless you setup the _Released products_ with an **Item model group** enabled wi
 
 ### Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
 
-Even though using _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup costing data for orders currently not supported by the _Warehouse Management only mode_.
+Even though using _Released products_ with an **Item model group** enabled with an _Inventory model_ as **Non-valuated** with cleared _Post physical inventory_ and _Post financial inventory_ you will need to setup costing data for orders currently not supported by the _Warehouse management only mode_.
 
 ### Why can't I just **Receive complete** what I have partly inbound registered
 
@@ -565,4 +565,4 @@ Depending on your setup an inbound load will either automatically get created as
 
 ### Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
 
-In case of enabling the Warehouse Management only mode capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.
+In case of enabling the _Warehouse management only mode_ capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you will need to update the query for the batch job to exclude the inventory transaction updates for the _inbound shipment orders_. This can easily be done by adding the _Load details_ entity with a _NotExist_ join to the _Loads_ entity followed by a range definition for the _Reference_ field with _Criteria_ = Inbound shipment order.

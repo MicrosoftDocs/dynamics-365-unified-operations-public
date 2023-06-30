@@ -168,6 +168,7 @@ Follow these steps to open and complete the *Inbound configuration wizard*.
 
     - Your basic configuration must be set up on the **Warehouse management parameters** page. You can complete this configuration by running the *Warehouse management initiation wizard* as described in the previous section. Alternatively, you can complete it manually by going to **Warehouse management \> Setup \> Warehouse management parameters**.
     - Each warehouse that you want to set up by using this wizard must already exist as a record in the system, and the **Use warehouse management processes** option must be set to *Yes* for it. You can create warehouses and set the **Use warehouse management processes** option for each of them by going to **Warehouse management \> Setup \> Warehouse \> Warehouses**. Each warehouse must also be assigned to a site that exists as a record in the system. You can create sites by going to **Warehouse management \> Setup \> Warehouse \> Sites**.
+    - Each warehouse that you want to set up by using this wizard must already exist as a record in the system, and the **Use warehouse management processes** option must be set to *Yes* for it. You can create warehouses and set the **Use warehouse management processes** option for each of them by going to **Warehouse management \> Setup \> Warehouse \> Warehouses**. Each warehouse must also be assigned to a site that exists as a record in the system. You can create sites by going to **Warehouse management \> Setup \> Warehouse \> Sites**.
 
 1. Go to **Warehouse management \> Setup \> Wizards \> Inbound configuration wizard**.
 1. The first page of the *Inbound configuration wizard* is the **Welcome** page. It summarizes what the wizard will do. When you've finished reading the summary, select **Next** to continue.
@@ -178,7 +179,7 @@ Follow these steps to open and complete the *Inbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When having the [**Warehouse Management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Purchase orders_ or _Inbound shipment order_ for the following setup processes.
+1. When having the [**Warehouse management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Purchase orders_ or _Inbound shipment order_ for the following setup processes.
 1. The **Inbound setup** page opens. Use it to define names for different elements of the purchase or inbound shipment order process. Default values are suggested, but you can edit them as you require. Set the following fields:
 
     - **Purchase/inbound work class** – Specify the name of the work class for the receiving process. This value will be used in the work template.
@@ -221,7 +222,7 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When having the [**Warehouse Management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Sales orders_ or _Outbound shipment order_ for the following setup processes.
+1. When having the [**Warehouse management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Sales orders_ or _Outbound shipment order_ for the following setup processes.
 1. On the **General warehouse** page, use the following fields to define names for outbound processes. Default values are suggested, but you can edit them as you require.
 
     - **Sales/Outbound work template** – Specify the name of the work template for the shipping process.
