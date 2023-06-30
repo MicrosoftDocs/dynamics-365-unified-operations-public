@@ -2,13 +2,13 @@
 title: Advance invoices for Commerce for Eastern Europe
 description: This article explains how to set up advance notices for Commerce for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 10/23/2018
+ms.date: 06/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application user
 ms.reviewer: josaw
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.search.region: Czech Republic, Hungary, Poland
 ms.author: josaw
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
@@ -38,10 +38,16 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-### Turn on the functionality for creating advance invoices
+### Enable the functionality for creating advance invoices
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-2. On the **Customer orders** tab, on the **Order** FastTab, set the **Create advance invoice for deposit** option to **Yes**.
+You must enable the following features in the **Feature management** workspace:
+
+- Enable posting advance invoices from POS
+
+> [!IMPORTANT]
+> If you are using Commerce version 10.0.35 or earlier, you must follow [Deployment guidelines for Advance Invoice report printing](./emea-eeu-deployment.md) to configure extensions for channel components.
+
+You must then enable the **Create advance invoice for deposit** option on the **Order** FastTab of the **Customer orders** tab of the **Commerce parameters** page.
 
 ### Define the parameters for posting advance invoices
 
