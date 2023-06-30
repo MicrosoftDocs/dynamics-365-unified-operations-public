@@ -18,6 +18,9 @@ ms.search.validFrom: 2021-11-04
 
 [!include[banner](../includes/banner.md)]
 
+> [!NOTE]
+> The functionality that is described in this article is aimed to support the requirements of the Phase 1 of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the features that are aimed to support the requirements of the Phase 2 of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md).
+
 This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 
 In a store that is linked to a legal entity that has its primary address in Saudi Arabia, users can print a QR code on the receipt for a cash-and-carry or customer order sales transaction. The QR code contains the following information.
@@ -84,7 +87,7 @@ On the **Configuration parameters** tab of the Commerce parameters page, add the
 ### Enable CRT extensions
 
 > [!WARNING]
-> Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used with this localization functionality. You must use the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). (Microsoft plans to add support for localization functionality to the new independent packaging and extension model in later versions.)
+> This localization functionality cannot be used with the [new independent packaging and extension model](../dev-itpro/build-pipeline.md) and [Commerce software development kit (SDK)](../dev-itpro/retail-sdk/sdk-github.md). You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For information about the localization features for Saudi Arabia that are available in Commerce SDK, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md)
 
 #### Development environment
 
