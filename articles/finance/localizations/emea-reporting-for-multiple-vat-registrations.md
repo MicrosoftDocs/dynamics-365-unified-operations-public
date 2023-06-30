@@ -79,7 +79,7 @@ Before you begin, the following prerequisites must be configured:
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
 
-    The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country (for example from Belgium to Belgium):
+    The following information applies to documents about movements of goods between European Union (EU) countries, except movements within the same country/region (for example from Belgium to Belgium):
 
     - By default, the list code is **EU trade**, and it's transferred to the EU sales list.
     - Documents are transferred to Intrastat.
@@ -113,7 +113,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 #### <a name="electronic-reporting"></a>Set up Intrastat reporting formats
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country of your tax registration.
+2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country/region of your tax registration.
 3. In the **File format mapping** field, select the Electronic reporting (ER) format for Intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
 4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
 
@@ -124,7 +124,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 
     The following table shows the earliest ER format versions that you can select the format for.
 
-    | Release | Country | ER format |
+    | Release | Country/region | ER format |
     |---------|---------|-----------|
     | 10.0.19 | All | Intrastat model.version.16 |
     | 10.0.19 | Netherlands | Intrastat (NL).version.1.3 |
@@ -203,7 +203,7 @@ All tax registrations have the same settings for EU sales list parameters.
 #### Set up EU sales list reporting formats
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country of your tax registration.
+2. On the **EU sales list** tab, on the **Electronic reporting for countries/regions** FastTab, select EU sales list reporting formats for each country/region of your tax registration.
 3. In the **File format mapping** field, select the ER format for EU sales list report electronic format. For example, for Netherlands, select **EU Sales list (NL)**.
 4. In the **Report format mapping** field, select the ER format for printable report layout. For example, select either **EU sales list by rows report**, or **EU sales list by columns report**.
 5. In the **Report cash discount** field, select **Yes** if the selected country/region cash discount must be transferred to the EU sales list. Select **No** if the selected country/region cash discount must not be transferred to EU sales list. Leave the value set to **Default** if the value that's specified in the **Report cash discount** field on **Transfer** FastTab must be applied to the selected country/region.
@@ -253,7 +253,7 @@ All tax registrations have the same settings for EU sales list parameters.
 
     ![ESL report dialog box.](media/Multipleid-image14.png)
 
-12. The dialog box also contains country-specific fields that are required in the country-specific EU sales list report. Set these fields as required.
+12. The dialog box also contains country/region-specific fields that are required in the country/region-specific EU sales list report. Set these fields as required.
 13. Select **OK** to generate the report.
 
 ## <a name="vat-declaration"></a>VAT declaration reporting for multiple VAT registrations
@@ -261,16 +261,16 @@ All tax registrations have the same settings for EU sales list parameters.
 ### Set up for VAT declaration reporting 
 
 1. Go to **Tax &gt; Set up &gt; Parameters &gt; General ledger parameters**.
-2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country of your tax registration.
+2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, select the VAT reporting formats for each country/region of your tax registration.
 
     ![GL parameters.](media/Multipleid-image15.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific country, review the related article.
+    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific countries/regions, review the related article.
     
-    | Release | Country | ER format | Link to article |
+    | Release | Country/region | ER format | Link to article |
     |---------|---------|-----------|---------------|
     | 10.0.19 | All | Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138 | |
     | 10.0.13 | The Czech Republic | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |

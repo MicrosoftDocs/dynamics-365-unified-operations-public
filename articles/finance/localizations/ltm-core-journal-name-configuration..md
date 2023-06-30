@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-In the journal name configuration in the extended **LATAM** section, you can add the information that's required for Latin American countries. This extended configuration affects journal name posting.
+In the journal name configuration in the extended **LATAM** section, you can add the information that's required for Latin American countries/regions. This extended configuration affects journal name posting.
 
 ## Prerequisites
 

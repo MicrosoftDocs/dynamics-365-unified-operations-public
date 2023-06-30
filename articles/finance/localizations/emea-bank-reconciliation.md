@@ -1,6 +1,6 @@
 ---
 title: Bank statement and payment reconciliation for the EU
-description: This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
+description: This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions.
 author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
@@ -20,7 +20,7 @@ ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries. You can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
+This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries/regions. You can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
 
 -   Importing bank statements
 -   Importing payments

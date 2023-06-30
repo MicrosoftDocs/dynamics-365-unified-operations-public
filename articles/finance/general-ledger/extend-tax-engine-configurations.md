@@ -433,7 +433,7 @@ To support this scenario, you must complete the following tasks:
     -	**Node type** - Model root
 5. Click **Add**.
 6. Highlight **Country of Origin**, click **New** to add new reference model.
-    -   **Name** - Countries of origin
+    -   **Name** - Countries/regions of origin
     -   **Node type** - Child of an active node
     -   **Item type** - Record list
 7. Click **Add**.
