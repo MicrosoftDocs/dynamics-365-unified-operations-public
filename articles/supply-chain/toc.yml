@@ -2407,7 +2407,7 @@
             href: pim/export-control-overview.md
           - name: Enable and configure advanced export control
             href: pim/export-control-configure.md
-          - name: Work with advanced export control in products and sales orders
+          - name: Work with advanced export control for products and sales orders
             href: pim/export-control-use.md
           - name: Extend export control sales order functionality
             href: pim/export-control-extend-sales-orders.md

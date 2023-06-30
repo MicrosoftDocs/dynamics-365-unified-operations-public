@@ -12,15 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: Is this really a sales/marketing feature? Seems more like product information management (like hazmat and dual-use). -->
-
-<!-- KFM: We should maybe have a section about our architecture so we'll understand why we need Power Apps and Dataverse, and what benefits those may bring. -->
-
 # Advanced export control overview
 
-The advanced export control solution provides the foundation for managing, tracking, and checking export compliance. You can use it both with and without Supply Chain Management.
+Companies that trade internationally in goods that are subject to external regulations and internal policies need to keep track of many different rules and policies. The advanced export control solution lets you express these rules, including complex ones, using formulas similar to those in Microsoft Excel. The system ensures that the rules are honored throughout the sales and fulfillment process.
 
-The solution implements five primary concepts:
+Supply Chain Management lets you manage, track, and verify compliance with export control restrictions prior to confirming, picking, packing, shipping, and invoicing sales orders. You manage your export control policies using a native Microsoft Dataverse solution that interfaces directly with your Supply Chain Management instance. Supply Chain Management then enforces compliance with international trade regulations by consulting your export-control policies in real time. The Dataverse-based architecture means that many of the other systems you use can also access your export control rules thanks to the hundreds of connectors available for Dataverse.  Likewise, you can use the rich features of Microsoft Power Platform (like the [Microsoft Power Fx](/power-platform/power-fx/overview) language) to extend the solution, allowing your export control administrator to support complex scenarios using formulas like those in Microsoft Excel.
+
+The advanced export control solution provides the foundation for managing, tracking, and checking export compliance. You can use it both with and without Supply Chain Management. The solution implements five primary concepts:
 
 - Jurisdictions
 - Codes and categories
@@ -69,9 +67,13 @@ The following screenshot shows an example exception setup.
 
 [<img src="media/export-control-exception.png" alt="Example of an exception." title="Example of an exception" width="720" />](media/export-control-exception.png#lightbox)
 
+<!-- KFM: Seems like we are missing a description of *licenses*? 
+
 ## Licenses
 
-<!-- KFM: Seems like we are missing a description of *licenses*? -->
+** Description needed **
+
+-->
 
 ## Next steps
 

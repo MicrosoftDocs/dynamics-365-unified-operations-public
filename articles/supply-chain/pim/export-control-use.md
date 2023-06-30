@@ -1,6 +1,6 @@
 ---
-title: Work with advanced export control in products and sales orders
-description: Learn how to work with advanced export control in products and sales orders.
+title: Work with advanced export control for products and sales orders
+description: Learn how to work with advanced export control for products and sales orders.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -12,9 +12,9 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: I think we might be missing info on how to configure exceptions, requirements, rules. Maybe something about "licenses" (it's not clear what those are)? -->
+<!-- KFM: We are missing info on how to configure exceptions, requirements, rules, and licenses. Maybe we can link to existing documentation for the Dataverse app? -->
 
-# Work with advanced export control in products and sales orders
+# Work with advanced export control for products and sales orders
 
 The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company), which means that each company can have have different export control behaviors and rules.
 
@@ -61,7 +61,7 @@ To set up advanced export control for a released product, follow these steps:
 
 ## Checking and enforcing export control rules for sales orders
 
-<!-- KFM: Here, I think we should instead have explicit procedures for the following: 
+<!-- KFM: Here, I think we should instead have explicit procedures/sections for each of the following: 
 
 - How and when automatic checks occur and what can happen.
 - How to handle a sales order that includes items that require export control checks, including details such as:
@@ -72,13 +72,13 @@ To set up advanced export control for a released product, follow these steps:
 
  -->
 
-When advanced export control is enabled for a legal entity, an new button named **Check export control** will show up on sales orders. Select this button to check the current export control status of the current order. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Manual checks will not change license consumption, nor will they be tracked in history.
+When advanced export control is [enabled](export-control-configure.md) for a legal entity, an new button labeled **Check export control** is provided on the **Sell** tab of the Action Pane for sales orders. Select this button to check the current export control status of the current order. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Manual checks will not change license consumption, nor will they be tracked in history.
 
 [<img src="media/export-control-sales-order-check.png" alt="The Check export control dialog." title="The Check export control dialog" width="720" />](media/export-control-sales-order-check.png#lightbox)
 
 The sales order header has a tab to specify licenses per jurisdiction. Any licenses specified on the header are assumed to default to all lines of the document, though the license can be overridden at the line level. Licenses are only required to pass export control checks if restrictions and exceptions require a license. Blanket exemptions or corporate policies do not require licenses.
 
-During confirmation and similar posting steps, the history of export control checks is provided tracked. This can be accessed from the sales order header by clicking on the **Result** button which will show the details of the check performed at that time.
+During confirmation and similar posting steps, the system tracks the history of export control checks. You can view this history from the sales order header by selecting the **Result** button.
 
 [<img src="media/export-control-sales-order-header.png" alt="Export control settings for sales order headers." title="Export control settings for sales order headers" width="720" />](media/export-control-sales-order-header.png#lightbox)
 
