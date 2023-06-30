@@ -3,8 +3,8 @@
 
 title: Reconcile bank statements by using advanced bank reconciliation
 description: The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the reconciliation process.  
-author: angelad116
-ms.date: 06/22/2020
+author: EricWangChen
+ms.date: 06/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: BankReconciliationWorksheet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -104,11 +104,15 @@ To view the voucher of a new transaction on a **Bank statement** page, turn on t
 
 ## Post customer and vendor payment journals from bank statements and reconciliation worksheets
 
-The feature, **Generate customer and vendor payments from bank statement and reconciliation** is available with the release of version 10.0.36. This feature provides enhancements to the bank statement and reconciliation worksheet. You can post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet. 
+In version Dynamics 365 Finance version 10.0.36, the feature, **Generate customer and vendor payments from bank statement and reconciliation** is available. This feature enhances the bank statement and reconciliation worksheet. You can post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals are automatically matched with the original bank statement lines in the bank reconciliation worksheet. 
 
-To use this feature, on the **Bank account** setup page, on the **Reconciliation** FastTab, configure the **Default customer payment journal name** and **Default vendor payment journal name**. Then, select the required bank statement lines on the **Bank statement** page or the **Bank reconciliation worksheet** page and select **Generate payment journal** to trigger the payment journal generation and posting.
+To use this feature: 
+1. Go to the **Bank accounts** setup page, on the **Reconciliation** FastTab.
+2. Enter the **Default customer payment journal** and **Default vendor payment journal** names.
+3. On the **Bank statement** page or the **Bank reconciliation worksheet** page, select the required bank statement lines.
+4. Select **Generate payment journal** to generate and post the payment journal.
 
 > [!NOTE]
-> The feature, **Generate customer and vendor payments from bank statement and reconciliation** is in preview in version 10.0.36 and is only available in sandbox environments.
+> The **Generate customer and vendor payments from bank statement and reconciliation** feature is in preview in version 10.0.36 and is only in sandbox environments.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
