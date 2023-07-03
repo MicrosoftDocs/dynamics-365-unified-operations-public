@@ -49,13 +49,23 @@ In Dynamics AX 2012, cleanup routines are available in various modules. The foll
 | Path | Description |
 |------|-------------|
 | System administration \> Periodic tasks \> Notification clean up | <p>This cleanup routine is used to periodically delete records from the EventInbox and EventInboxData tables.</p><p>**Recommendation:** If you don't use alert functionality, turn off the alert from the batch job.</p> |
+| System administration \> Inquiries \> Users - Click Clean up | <p>Delete user logs older than a certain date. This rule has checked for logs over 3 month old. This log is a record of users logging in and out of the system.</p><p>1. Enter a value in the History limit (days) field to define a limit for the deletion. Only log information that is older than the given number of days is deleted. </p><p>2. Click Select to open the Select log cleanup criteria form, which is a version of the Inquiry form. </p><p>3. Select your cleanup criteria. Select a user or a range of users and, optionally, additional user information, such as date and time. for more information, see Inquiry (form). </p><p>4. Click OK to return to the User log cleanup form. </p><p>5. Click OK to perform the cleanup once, or click the Batch tab to define parameters to clean up the user log regularly. |
 | System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine lets you delete database logs as you require. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** Records that have been electronically signed can't be deleted from logs.</p> |
+| System administration \> Inquiries \> Database \> SQL statement trace log <p>Click Functions \> Clear log button</p>| <p>Delete the SQL statement trace log to recover database space. This is an all or nothing option. You can export the log before deleting to refer to later. This log is a record of queries over a certain time threshold or SQL errors used for troubleshooting purposes.</p> |
+| System administration \> Periodic \> Services and Application Integration Framework \> History. | <p>1. In the Display by field, select Document. 2. Select a document, and then click Clear document XML. 3. To clear all the versions of the XML document that exist in the system, click Clear all versions. 4. To clear all intermediate versions of the XML document, click Clear interim versions. for outbound documents, this action clears all versions except the version that has the highest version number. For inbound documents, this action clears all versions except the first version.</p><p>**Recommendation:** Clean-up all history over 1 year. </p>
 
 ### Data Import Export Framework
 
 | Path | Description |
 |------|-------------|
 | Data Import Export Framework \> Periodic \> Staging Cleanup | This cleanup routine cleans up staging data, based on the entity, processing group, or job ID. |
+
+### Organization administration
+
+| Path | Description |
+|------|-------------|
+| Organization administration \> Periodic \> Calendar cleanup | Use this form to specify the end date for deleting old working times. All old working hours up to, but not including, this date are deleted.|
+
 
 ### General ledger
 
@@ -112,12 +122,26 @@ In Dynamics AX 2012, cleanup routines are available in various modules. The foll
 | Production control \> Periodic tasks \> Clean up \> Archive future registrations | This cleanup routine is used to remove future registrations from the raw registrations table. |
 | Production control \> Periodic tasks \> Clean up \> Production journals cleanup | This cleanup routine is used to delete unused journals. |
 | Production control \> Periodic tasks \> Clean up \> Production orders cleanup | This cleanup routine is used to delete production orders that are ended. |
+| Production control \> Inquiries \> Registrations \> Raw registrations archive. | <p>Previously archived time registrations can be cleaned up. You can remove archived registrations by deleting them or exporting them to a file.</p><p>1. On the toolbar click the Clean up registrations button. </p><p>2. In the Cleanup mode field, select how you want to handle the old registrations: ◦ Select To file to move the registrations to an external file. ◦ Select Delete to permanently delete the registrations. </p><p>3. In the Maximum age field, enter the maximum age, in days, of registrations that are kept in the raw registrations table. For example, if you enter the number 20, all registrations that are more than 20 days old are archived according to your selection in the Cleanup mode field. </p><p>4. If you select To file in the Cleanup mode field, enter a file name, or select an existing file, in the File name field.</p>|
 
 ### Master planning
 
 | Path | Description |
 |------|-------------|
 | Master planning \> Periodic \> Plans \> Delete plan | Use the **Delete plan** process to delete the current scheduling results in the selected plan. Only the data (requirements and planned orders) are deleted, not the plan itself or the configuration of the plan. |
+
+### Project management and accounting
+
+| Path | Description |
+|------|-------------|
+| Project management and accounting \> Periodic \> Journals > Delete project journals. <p>In the Delete project journals form, click Select then in the ProjJournalCleanUp form, in the criteria field, select the journal(s) that you want to delete. Click OK.</p> | You can delete project journals from which transactions have been posted. By deleting these project journals, you can help make more system resources available.
+| Project management and accounting \> Periodic \> Quotations > Delete quotations. <p>In the Delete quotations form, click the Select button. if necessary, customize the query to match your needs. Click OK to transfer the quotations to the Delete quotations form. if the query transfers quotations that you do not want to delete, select them in the Delete quotations form and press ALT+F9. this removes the quotations from the list of quotations to be deleted. Click OK to delete the quotations that are listed in the Delete quotations form | Deleting unsent project quotations to recover database space. It is possible to create a filter to delete only selected quotations. note that it is not possible to delete "Sent" quotations, to delete a "Sent" qutation first update it to Lost or Cancelled.|
+
+### Human resources
+
+| Path | Description |
+|------|-------------|
+| Human resources \> Periodic \> Absence \> Delete absence journals. Choose one of the following actions: i) Click OK to delete all absence journals. ii) Click Select to select the employees to delete absence journals for. | Use the “Delete absence journals” process to delete all empty journals that have not been transferred for approval. the exceptions to this rule are empty journals that contain a period that is before a journal that contains planned, or future, absences. if planned absences exist in a future period but you still want to delete the journal, you can cancel approval and then repeat the delete journal procedure. |
 
 ## Manual cleanup
 
