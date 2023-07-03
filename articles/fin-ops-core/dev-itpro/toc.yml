@@ -290,7 +290,7 @@ items:
         - name: Archive sales orders
           href: sysadmin/archive-sales-orders.md
         - name: Purge archived inventory transactions
-          href: sysadmin/purge-archived-inventory-transactions.md
+          href: sysadmin/archive-purge-archived-inventory-trans.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview

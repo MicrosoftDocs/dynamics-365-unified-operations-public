@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!--KFM: Preview until further notice -->
 
-[Archive inventory transactions](articles/supply-chain/inventory/archive-inventory-transactions.md) consolidates and compress the inventory transactions table (`InventTrans`) and archives the original records into table (`InventTransArchive`). This feature remission the data volume issue of table (`InventTrans`) and improve the system performance.
+[Archive inventory transactions](articles/supply-chain/inventory/archive-inventory-transactions.md) consolidates and compresses the inventory transactions table (`InventTrans`) and archives the original records into the history table (`InventTransArchive`). This feature remission the data volume issue of table (`InventTrans`) and improve the system performance.
 
 New feature (Preview) Purge archived inventory transactions is released to replicate the records of table (`InventTransArchive`) to data lake and purge corresponding records from table (`InventTransArchive`) in Dynamics 365 Supply Chain Management. This purge activities release the database space of Dynamics 365 Supply Chain Management for performance optimization.
 
