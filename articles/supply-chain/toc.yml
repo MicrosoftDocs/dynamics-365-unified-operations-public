@@ -3369,7 +3369,7 @@
           href: transportation/tasks/set-up-carrier-fuel-index.md
         - name: Set up a transportation tender
           href: transportation/tasks/set-up-transportation-tender.md
-        - name: Rating Setup
+        - name: Set up Rates
           items:
           - name: Rating profiles
             href: transportation/tasks/setup-a-rating-profile.md
@@ -3381,7 +3381,7 @@
             href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
           - name: Set up accessorial assignments
             href: transportation/tasks/set-up-accessorial-assignments.md
-        - name: Routing Setup
+        - name: Set up Routes
           items:
           - name: Modes and methods
             href: transportation/transportation-management-modes-methods.md
@@ -3389,7 +3389,7 @@
             href: transportation/assign-shipments-to-segments.md
           - name: Set up transportation constraints for an item
             href: transportation/tasks/set-up-transportation-constraints-item.md
-      - name: Working with transportation management
+      - name: Work with transportation management
         items:
         - name: Plan freight transportation routes
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
@@ -3415,13 +3415,13 @@
           href: transportation/ltl-class.md
         - name: NMFC codes
           href: transportation/nmfc-codes.md
-        - name: Appointments scheduling
+        - name: Schedule Appointments
           items:
           - name: Set up an appointment for a load
             href: transportation/tasks/set-up-appointment-load.md
           - name: Register driver check-in and check-out for an appointment
             href: transportation/tasks/register-driver-check-check-out-appointment.md
-      - name: Freight reconciliation
+      - name: Reconcile freight
         items:
         - name: Set up automatic freight reconciliation
           href: transportation/tasks/set-up-automatic-freight-reconciliation.md
