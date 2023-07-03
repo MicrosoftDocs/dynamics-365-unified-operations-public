@@ -75,6 +75,7 @@ You must now set up the Raspberry Pi IoT simulator with simulated sensors and th
             cb(JSON.stringify({ value: 1, sensorId: 'AssetMaintenance' }), false);
             cb(JSON.stringify({ value: 1, sensorId: 'ProductionDelay' }), false);
             cb(JSON.stringify({ value: 20, sensorId: 'AssetDowntime' }), false);
+            cb(JSON.stringify({ value: 5, sensorId: 'AnomalyDetector' }), false);
         })
         .catch(function (err) {
             console.error('Failed to read out sensor data: ' + err);
