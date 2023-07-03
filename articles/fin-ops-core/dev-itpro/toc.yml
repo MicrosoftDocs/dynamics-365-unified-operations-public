@@ -200,7 +200,7 @@ items:
           - name: Import customers
             items:
               - name: Import customers with data entities
-                href: /dynamics365/guidance/resources/import-customers?toc=/dev-itpro/toc.json
+                href: /dynamics365/guidance/resources/import-customers?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Customer definitions entity
                 href: data-entities/entity-customer-definitions-customerbase.md
               - name: Customers V3 entity
@@ -210,7 +210,7 @@ items:
           - name: Import products
             items:
             - name: Import products with data entities
-              href: /dynamics365/guidance/resources/import-products?toc=/dev-itpro/toc.json
+              href: /dynamics365/guidance/resources/import-products?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
             - name: Products V2 entity
               href: data-entities/entity-products-v2-productsv2.md
             - name: Released products V2 entity
@@ -218,7 +218,7 @@ items:
           - name: Import sales orders
             items:
               - name: Import sales orders with data entities
-                href: /dynamics365/guidance/resources/import-sales-orders?toc=/dev-itpro/toc.json
+                href: /dynamics365/guidance/resources/import-sales-orders?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Sales order headers V2
                 href: data-entities/entity-sales-order-headers-v2-salesorderheaderv2.md
               - name: Sales order lines V2
@@ -226,7 +226,7 @@ items:
           - name: Import vendor invoices
             items:
               - name: Import vendor invoices with data entities
-                href: /dynamics365/guidance/resources/import-vendor-invoices?toc=/dev-itpro/toc.json
+                href: /dynamics365/guidance/resources/import-vendor-invoices?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Vendor invoice header entity
                 href: data-entities/entity-vendor-invoice-header-vendorinvoiceheader.md
               - name: Vendor invoice line entity
