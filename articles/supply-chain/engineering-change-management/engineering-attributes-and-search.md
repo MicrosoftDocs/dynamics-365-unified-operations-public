@@ -58,9 +58,9 @@ To view, create, or edit an engineering attribute, follow these steps.
 1. Select an existing attribute in the list pane, or select **New** on the Action Pane to create a new attribute.
 1. Set the following fields:
 
-    - **Name** – Enter a name for the attribute. This name appears only on the **Engineering attributes** page. Everywhere else in the system, the value of the **Friendly name** field is usually shown to identify the attribute.
+    - **Name** – Enter a name for the attribute. It must be unique. Everywhere in the system, both the value of the  **Name** and **Friendly name** are shown. You can decide to hide any of the columns. Note that **Name** is unique while **Friendly name** does not need to be, in other words, there could be two different attribute names with the same friendly name.
     - **Attribute type** – Select an attribute type that you defined in the previous section.
-    - **Friendly name** – Enter a name that will identify the attribute in the system (except on the **Engineering attributes** page). 
+    - **Friendly name** – Enter a name that will identify the attribute in the system (except on the **Engineering attributes** page). It does not need to be unique.
     - **Description** – Enter a description of the attribute.
     - **Help text** – Enter Help text that tells other users what the attribute is for.
     - **Default value** – Enter a default value for the attribute. The options that are presented depend on the attribute type that you selected.
