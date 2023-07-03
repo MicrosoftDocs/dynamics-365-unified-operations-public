@@ -3369,7 +3369,7 @@
           href: transportation/tasks/set-up-carrier-fuel-index.md
         - name: Set up a transportation tender
           href: transportation/tasks/set-up-transportation-tender.md
-        - name: Set up Rates
+        - name: Set up rates
           items:
           - name: Rating profiles
             href: transportation/tasks/setup-a-rating-profile.md
@@ -3381,7 +3381,7 @@
             href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
           - name: Set up accessorial assignments
             href: transportation/tasks/set-up-accessorial-assignments.md
-        - name: Set up Routes
+        - name: Set up routes
           items:
           - name: Modes and methods
             href: transportation/transportation-management-modes-methods.md
@@ -3415,7 +3415,7 @@
           href: transportation/ltl-class.md
         - name: NMFC codes
           href: transportation/nmfc-codes.md
-        - name: Schedule Appointments
+        - name: Schedule appointments
           items:
           - name: Set up an appointment for a load
             href: transportation/tasks/set-up-appointment-load.md
