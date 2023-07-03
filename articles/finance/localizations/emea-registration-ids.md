@@ -22,7 +22,7 @@ ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistr
 
 This article provides information about setting up and using registration IDs.
 
-Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This article provides an overview of the required settings and processing of supported registration types for parties in different European countries/regions. All countries/regions have their requirements for supporting various country-specific functionalities related to registration numbers provided by different state offices. Examples of registration numbers include, social security number (SSN), tax identification number (TIN), and European VAT identification (EU VAT ID). This feature provides unified framework for all countries in all regions taking into account country-specific requirements of some European countries. The following sections describe the overall flow of information that is used for setting up and processing registration IDs.
+Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This article provides an overview of the required settings and processing of supported registration types for parties in different European countries/regions. All countries/regions have their requirements for supporting various country/region-specific functionalities related to registration numbers provided by different state offices. Examples of registration numbers include, social security number (SSN), tax identification number (TIN), and European VAT identification (EU VAT ID). This feature provides unified framework for all countries in all regions taking into account country/region-specific requirements of some European countries. The following sections describe the overall flow of information that is used for setting up and processing registration IDs.
 
 ## Registration type creation
 Before you can enter registration ID, you must set up registration types for the different types of registration numbers that each party is subject to. Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**  page to create and manage registration types for vendors, customers, workers, and legal entities in different countries/regions.
@@ -37,7 +37,7 @@ Before you can enter registration ID, you must set up registration types for the
 | Format              | The validation format for the registration type.|
 | Can be updated      | Defines if the registration number for the registration type can be updated after it is entered.|
 | Unique              | Defines if the registration number for the registration type is unique. |
-| Primary for country | If a party is associated with one or more addresses in particular country and the registration ID is valid for all these addresses, you must designate one address as primary for the country. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country address. |
+| Primary for country | If a party is associated with one or more addresses in particular country and the registration ID is valid for all these addresses, you must designate one address as primary for the country/region. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country/region address. |
 
 ## Assign a registration type to a registration category
 Registration category is country/region registration identifier approved for using in particular country/region for tax, customs and other purposes. This category defines validation rules of particular registration ID (including check digits etc.) and inclusion registration ID in different reports. Use the page **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories** to assign registration type of particular country to supported registration category.
@@ -46,7 +46,7 @@ Registration category is country/region registration identifier approved for usi
 |-----------------------|----------------|
 | Registration type     | The registration type in particular country/region.|
 | Restricted to         | The kind of restriction applies to the tax registration type: None, Person, Organization.|
-| Registration category | The unique registration identifier approved for using in the country. The full list of supported categories is shown later in this article. |
+| Registration category | The unique registration identifier approved for using in the country/region. The full list of supported categories is shown later in this article. |
 
 ## Enter registration IDs for Global address book records
 

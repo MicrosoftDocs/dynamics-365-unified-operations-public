@@ -16,7 +16,7 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-Companies in France that are registered for value-added tax (VAT), and that trade with other European Union (EU) countries, must declare the exchange of goods and services to and from France. The Declaration d'exchanges de biens (Declaration of Trade in Goods, or DEB) is a combination of the EU Sales List and the Intrastat report. You must submit this report monthly for all intracommunity sales of goods.
+Companies in France that are registered for value-added tax (VAT), and that trade with other European Union (EU) countries/regions, must declare the exchange of goods and services to and from France. The Declaration d'exchanges de biens (Declaration of Trade in Goods, or DEB) is a combination of the EU Sales List and the Intrastat report. You must submit this report monthly for all intracommunity sales of goods.
 
 You can generate the DEB report in either of two electronic text file formats: SAISUNIC 330 or INTRACOM format.
 
@@ -217,7 +217,7 @@ You must set up the NGP codes and assign them to related products. The **NGP** f
 
 ### Intrastat journal
 
-Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries. For more information, see [Intrastat overview](emea-intrastat.md).
+Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries/regions. For more information, see [Intrastat overview](emea-intrastat.md).
 
 The **NGP** column is specific to France and shows the NGP code for the product. If the NGP isn't applicable to a product, **0** (zero) is shown. To adjust the NGP code, select the transaction, and then, on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
 
