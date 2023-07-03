@@ -5,13 +5,14 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 01/23/2023
+ms.date: 06/27/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
+
 ---
 
 # Commerce catalogs for B2B FAQ
@@ -42,13 +43,21 @@ However, if a situation arises where the same product belongs to multiple catalo
 
 Yes. A B2B shopper will be allowed to proceed to checkout only if all items in the cart are from valid catalogs. If any cart items are from expired or retracted catalogs, they will be removed, and the user will be notified.
 
-### During the shopping experience, are search and product discovery (including related and recommended product collections) catalog-specific?
+### During the shopping experience, are search and product discovery (including related and recommended product collections) catalog specific?
 
-Yes. As soon as a user selects a specific catalog, the whole shopping journey becomes catalog-specific. This journey includes product discovery experiences such as search suggestions, search results, category results, refiners, pricing, attributes, and recommended products (such as new, best-selling, trending, frequently bought together, and related products).
+Yes. As soon as a user selects a specific catalog, the whole shopping journey becomes catalog specific. This journey includes product discovery experiences such as search suggestions, search results, category results, refiners, pricing, attributes, and recommended products (such as new, best-selling, trending, frequently bought together, and related products).
 
 ### Can a B2B shopper purchase from the default assortment (catalogID=0)?
 
 No, a B2B shopper isn't allowed to purchase from the default assortment. That assortment is intended only for anonymous browsing. If a B2B shopper is missing catalog assignments (pending updates from their administration), they won't be able to see any catalogs that they can choose from, and no category hierarchy will be visible.
+
+### Why is a B2B shopper no longer able to access categories or products pages and getting 404 errors?
+
+If the **Enable use of multiple catalogs on retails channels** feature is enabled in headquarters, then it's required that at least one catalog is associated with every customer hierarchy. If a B2B shopper is trying to access a B2B catalog that was previously accessible, confirm that the catalog is still valid and hasn't expired or been retracted by your organization. 
+
+### After getting a 404 error for an expired or invalid catalog, why isn't a B2B shopper being redirected to the catalog picker page? 
+
+Ensure that your site administrator has selected your catalog picker page in site builder at **Extensions \> Catalog Picker Route**, and has selected **Save & Publish** to publish the change. 
 
 ### Can marketing content be curated for a product that is specific to a catalog?
 
@@ -58,7 +67,7 @@ Currently, product enrichment is supported only at the site and channel level. I
 
 Currently, Commerce catalogs are intended to work with B2B Online channels only.
 
-### A new customer was added to the customer hierarchy or a new hierarchy was associated with the catalog, but the catalog is not available to the user. Why?
+### A new customer was added to the customer hierarchy, or a new hierarchy was associated with the catalog, but the catalog is not available to the user. Why?
 
 Ensure that you ran **1010** jobs after you associated the new customer to an existing customer hierarchy, and when you created the new customer hierarchy. The catalogs associated with the customer hierarchy will only be visible after the **1010** job is completed successfully. If the catalog is also new, ensure that you ran the **1150** (catalog) job as well as  the **1010** jobs. As with any new catalog, allow some time for the data to sync to the channel and the search index. If a job has the status "Applied", that means that the data is being synced to channel database, but additional time is required for the data to sync to the search index. 
 
@@ -82,7 +91,7 @@ No. Catalog source codes are supported only for call center channels.
 
 ### When the B2B catalogs feature is enabled, do order templates show only items from the currently selected catalog? 
 
-Currently, order templates aren't catalog-aware. Therefore, when you access order templates, if the **B2B catalog** feature is enabled, only partial lines from the order template that are also part of the currently selected catalog are shown. To check for progress on the ability of catalogs and order templates to work together correctly, we recommend that you check the release notes for future updates. 
+Currently, order templates aren't catalog aware. Therefore, when you access order templates, if the **B2B catalog** feature is enabled, only partial lines from the order template that are also part of the currently selected catalog are shown. To check for progress on the ability of catalogs and order templates to work together correctly, we recommend that you check the release notes for future updates. 
 
 ### When the B2B catalogs feature is enabled, is the Buy it again option available for the order lines in the order history? 
 
