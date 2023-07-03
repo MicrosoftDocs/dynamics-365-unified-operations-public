@@ -19,7 +19,7 @@ ms.search.industry: Retail
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> You should only implement the steps that are described in this article if you are using Commerce version 10.0.35 or earlier. Starting with version 10.0.36, all required Commerce channel components for Advance Invoice report printing are enabled out of the box. If you are using Commerce version 10.0.35 or earlier and are migrating to Commerce version 10.0.36 or later, you must follow the steps in [Migrate to Commerce version 10.0.36 or later](#migrate-to-commerce-version-10036-or-later).
+> You should only implement the steps that are described in this article if you are using Commerce version 10.0.34 or earlier. Starting from version 10.0.35, all required Commerce channel components for Advance Invoice report printing are enabled out of the box. If you are using Commerce version 10.0.34 or earlier and are migrating to Commerce version 10.0.35 or later, you must follow the steps in [Migrate to Commerce version 10.0.35 or later](#migrate-to-commerce-version-10035-or-later).
 
 This article shows how to enable the Dynamics 365 Commerce localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Commerce components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Commerce for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
@@ -106,9 +106,9 @@ Follow these steps to create deployable packages that contain Commerce component
 3. Run **msbuild** for the Retail SDK to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Migrate to Commerce version 10.0.36 or later
+## Migrate to Commerce version 10.0.35 or later
 
-The steps described in this section are required if you are using Commerce version 10.0.35 or earlier and are migrating to version 10.0.36 or later. You must follow the steps below to correctly update your Commerce environment.
+The steps described in this section are required if you are using Commerce version 10.0.34 or earlier and are migrating to version 10.0.35 or later. You must follow the steps below to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
 1. Enable the [Advance invoice report printing feature](./emea-eeu-advance-invoices-for-retail.md#enable-the-functionality-for-creating-advance-invoices) in the Feature management workspace and distribute the changes to channels.
