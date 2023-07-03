@@ -17,11 +17,12 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
 
-![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
+![Sensor Data Intelligence architectural diagram.](media/sdi-architecture-2.svg "Sensor Data Intelligence architectural diagram")
 
 ## Prerequisites
 
@@ -62,6 +63,7 @@ Follow these steps to deploy the required resources on Azure.
     - **Region** – Select a region, ideally the region where your Supply Chain Management environment is deployed. Keep in mind that Azure regions have different pricing. You can view estimated costs for your region by using the [Sensor Data Intelligence price calculator](https://azure.com/e/c36c4947ebff4215b2e62590c2a24c68).
     - **Supply Chain Management environment URL** – Enter the URL for your Supply Chain Management environment.
     - **Reuse existing Azure IoT Hub** – Leave this checkbox cleared.
+    - **Deploy resources for Anomaly Detection scenario for Asset Managment** - Select this checkbox if, you want to use the [Anomaly Detection scenario](sdi-scenario-anomaly.md) in Asset Managment.
 
 1. Select **Next: Review + Create**.
 1. On the **Custom deployment** page, verify that the validation has passed, and then select **Create**.

@@ -51,9 +51,9 @@ Follow these steps to set up the *asset anomaly detection* scenario in Supply 
 
 12. On the **Anomaly detection parameters** page, define parameters that impact the number of notifications that you wish to receive:
 
-- **Sensitivity**: Enter a value between 0 and 99 to set the sensitivity of the anomaly detection. The higher the value, the more sensitive the system will be, which will result in more notifications.
-
-- **Max anomaly ratio:** Enter the maximum number anomaly alerts the sensor will generate per time period, as a factor between 0.01 and 0.5. The higher the value, the more notifications you will receive.
+    - **Sensitivity**: Enter a value between 0 and 99 to set the sensitivity of the anomaly detection. The higher the value, the more sensitive the system will be, which will result in more notifications.
+    
+    - **Max anomaly ratio:** Enter the maximum number anomaly alerts the sensor will generate per time period, as a factor between 0.01 and 0.5. The higher the value, the more notifications you will receive.
 
 13. Select **Next**.
 
@@ -69,27 +69,12 @@ To open the **Notification** page, go to **Asset management &gt; Inquiries &g
 
 The following illustration shows an example of an anomaly notification.
 
-\[Picture is coming\]
+:::image type="content" source="media/sdi-anomaly.png" alt-text="Notifications and time series":::
 
-## Include the anomaly detection to the Azure IoT solution 
 
-To enable anomaly detection, you must include the Azure Cognitive Services Anomaly Detector component to the Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
-
-![A picture containing text  screenshot  diagram  design Description automatically generated](media/image1.png)
-
-If you have not already deployed the solution,
-
-Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
-
-Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
-
-##  Defining the length of time series used for anomaly detection.
+## Defining the length of time series used for anomaly detection
 
 Going to Azure Stream Analytics resource called 'msdyn-iiot-sdi-asset-univariate-anomaly-detection-' and navigate to query.
-
-![](media/image2.png)
-
-![](media/image3.png)
 
 On line 48 the parameters of the SlidingWindow can be adjusted. The SlidingWindow aggregates sensor readings over a fixed period of time, in this example over 1000 seconds. So, 1000 previous sensor readings will be used to identify whether the current sensor reading is an anomaly.
 
@@ -101,64 +86,3 @@ Keep in mind that the length of time series that is used for anomaly detection s
 
 [Cognitive Services APIs Reference (microsoft.com)](https://westus2.dev.cognitive.microsoft.com/docs/services/AnomalyDetector/operations/post-timeseries-entire-detect)
 
-## XXX
-
-![image](media/image4.png)
-
-# Transparency note
-
----
-
-title: Transparency note for \[Feature\]
-
-description: This transparency note provides information about the AI technology used in \[Product\], along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-
-ms.date: \[Date\]
-
-ms.custom:
-
-\- transparency-note
-
-ms.topic: article
-
-author: \[Author\]
-
-ms.author: \[Author\]
-
-ms.reviewer: \[Reviewer\]
-
----
-
-\# Transparency note for \[Feature\]
-
-This transparency note describes the AI impact of \[Product\]'s \[Feature\] feature.
-
-\#\# What is \[Feature\]?
-
-\[Describe the system in plain English. What type of system is this? What does it do? At a high level, what does the system take as input? What kind of outputs does the system produce?\]
-
-\#\# What are the system's capabilities?
-
-\[Building on the previous question, provide semi-technical, high-level information on how the system offers functionality for various uses.\]
-
-\#\# What is the system's intended use?
-
-\[Explain intended use(s), as identified in your Impact Assessment.\]
-
-\#\# How was \[Feature\] evaluated? What metrics are used to measure performance?
-
-\[Provide evidence of system accuracy and performance as well as a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.\]
-
-\#\# What are the limitations of \[Feature\]? How can users minimize the impact of the \[Feature\] limitations when using the system?
-
-\[See Impact Assessment. Describe the known limitations of the system including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.\]
-
-\#\# What operational factors and settings allow for effective and responsible use of the system?
-
-\[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.\]
-
-\#\# See also
-
-\- \[Feature page\](\[Link\])
-
-\[!INCLUDE\[footer-include\](../includes/footer-banner.md)\]
