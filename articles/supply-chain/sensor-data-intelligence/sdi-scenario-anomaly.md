@@ -29,7 +29,7 @@ The anomaly detection scenario involves monitoring the behavior of a machine and
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
-- You must turn the feature on as described in [Turn on Sensor Data Intelligence for your system](sdi-enable-feature.md).
+- You must turn on the feature as described in [Turn on Sensor Data Intelligence for your system](sdi-enable-feature.md).
 - You must deploy an IoT solution on Azure and be sure to enable the **Deploy resources for Anomaly Detection scenario for Asset Management** option as described in [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).
 
 ## Prepare demo data for the anomaly detection scenario
@@ -59,7 +59,7 @@ Follow these steps to set up the *asset anomaly detection* scenario in Supply 
 1. On the **Anomaly detection parameters** page, define parameters that impact the number of notifications that you wish to receive:
 
     - **Sensitivity**: Enter a value between 0 and 99 to set the sensitivity of the anomaly detection. The higher the value, the more sensitive the system will be, which will result in more notifications.
-    - **Max anomaly ratio:** Enter the maximum number anomaly alerts the sensor will generate per time period, as a factor between 0.01 and 0.5. The higher the value, the more notifications you will receive.
+    - **Max anomaly ratio:** Enter the maximum number anomaly alerts the sensor will generate per time period, as a factor between 0.01 and 0.5. The higher the value, the more notifications you'll receive.
 
 1. Select **Next**.
 1. On the **Activate sensors** page, in the grid, select the sensor that you set up, and then select **Activate**. For each activated sensor in the grid, a check mark appears in the **Active** column.
@@ -77,7 +77,7 @@ The following illustration shows an example of an anomaly notification.
 
 The system applies a sliding window when detecting anomalies, which means that it considers the most-recent readings received over a fixed time period to identify whether the current sensor reading is an anomaly.
 
-To adjust the size of the window, go to the Azure Stream Analytics resource called *msdyn-iiot-sdi-asset-univariate-anomaly-detection-* and navigate to the query. On line 48, you can adjust the parameters of the `SlidingWindow`. Increasing this number will typically help the Anomaly Detection service to learn the pattern and detect anomalies more accurately.  The sliding window used for anomaly detection should be between 12 and 8640 seconds. The default value is 1000.
+To adjust the size of the window, go to the Azure Stream Analytics resource called *msdyn-iiot-sdi-asset-univariate-anomaly-detection-* and navigate to the query. On line 48, adjust the parameters of the `SlidingWindow` as needed. Increasing this number will typically help the Anomaly Detection service to learn the pattern and detect anomalies more accurately. The sliding window used for anomaly detection should be between 12 and 8640 seconds. The default value is 1000.
 
 For more information, see [Sliding Window (Azure Stream Analytics)](/stream-analytics-query/sliding-window-azure-stream-analytics)
 
