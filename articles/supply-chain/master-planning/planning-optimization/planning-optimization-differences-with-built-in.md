@@ -21,7 +21,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Feature | Current behavior in Planning Optimization |
 |---|---|
 | Forecasts for today's date | Forecasts for today's date aren't considered by Planning Optimization, though they were considered by the deprecated master planning engine. |
-| Catch weight products | Catch-weight products are considered usual products.|
+| Catch weight products | Catch-weight products are considered usual products. Planned orders do not include the CW requirement quantity field filled.|
 | Extensible dimensions | Extensible dimensions are not supported by Planning Optimization. When you use Planning Optimization, extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. We recommend that you use master planning where a forecast model is assigned to the master plan. |
@@ -41,6 +41,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
 | Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
 | Dimension-based configuration | Planning Optimization doesn't support dimension-based configured products. Planning Optimization won't explode bills of material for these products. |
+
 
 ## Additional resources
 
