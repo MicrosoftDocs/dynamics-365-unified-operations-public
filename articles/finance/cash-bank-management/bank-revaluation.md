@@ -103,7 +103,7 @@ Assuming the exchange rate between EUR and USD is 1:1.21 at the time point of re
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 700                             |
 | Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | -300                            |
 
-### Example 2 - Postive and negative balance on the dimensions
+#### Example 2 - Postive and negative balance on the dimensions
 
 The following table shows one positive balance and one negative balance in the transaction currency (EUR) for a foreign currency bank account in the USMF legal entity. The accounting currency is USD, and the reporting currency is USD. 
 
