@@ -41,7 +41,7 @@ For more information about how to consume Retail Server APIs in external applica
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | ProductIds | IEnumberable\<long\> | Required | |
-| DefaultWarehouseOnly | bool | Optional | If the value is **true**, only the online channel's default warehouse is queried. If the value is **false**, warehouses that are linked to the online channel's fulfillment group are queried. |
+| DefaultWarehouseOnly | bool | Optional | If the value is **true**, only the online channel's default warehouse is queried. If the value is **false**, warehouses that are linked to the online channel's fulfillment group, and have same legal entity with the online channel, are queried. |
 | SearchArea | SearchArea | Optional | The area to search for stores for pickup in the fulfillment groups. |
 | FilterByChannelFulfillmentGroup | bool | Optional | This parameter determines the fulfillment groups when **DefaultWarehouseOnly** is set to **false**. |
 | DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | <p>Filter warehouses by their supported delivery modes:</p><ul><li>**(0) All** – Find all warehouses. This value is the default value.</li><li>**(1) Shipping** – Find warehouses that are eligible for shipping.</li><li>**(2) Pickup** – Find warehouses that are eligible for pickup.</li></ul> |
@@ -219,7 +219,7 @@ For more information about how to consume Retail Server APIs in external applica
 |----|----|----|----|
 | RequestedDimensionTypeValue | (int) ProductDimensionType | Required | <p>The product dimension type to request and to aggregate inventory quantities by.</p><ul><li>**(1) Color** – The color dimension.</li><li>**(2) Configuration** – The configuration dimension.</li><li>**(3) Size** – The size dimension.</li><li>**(4) Style** – The style dimension.</li></ul> |
 | MatchingDimensionValues | ICollection\<ProductDimension\> | Optional | Aggregate only products that have matching dimension values. |
-| DefaultWarehouseOnly | bool | Optional | If the value is **true**, only the online channel's default warehouse is queried. If the value is **false**, warehouses that are linked to the online channel's fulfillment group are queried. |
+| DefaultWarehouseOnly | bool | Optional | If the value is **true**, only the online channel's default warehouse is queried. If the value is **false**, warehouses that are linked to the online channel's fulfillment group, and have same legal entity with the online channel, are queried. |
 | FilterByChannelFulfillmentGroup | bool | Optional | This parameter determines the fulfillment groups when **DefaultWarehouseOnly** is set to **false**. |
 | DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | <p>Filter warehouses by their supported delivery modes:</p><ul><li>**(0) All** – Find all warehouses. This value is the default value.</li><li>**(1) Shipping** – Find warehouses that are eligible for shipping.</li><li>**(2) Pickup** – Find warehouses that are eligible for pickup.</li></ul> |
 | CatalogId | long | Optional | The identifier of the catalog that the product belongs to. |
