@@ -45,7 +45,7 @@ You must enable the following feature in the **Feature management** workspace:
 - Enable posting advance invoices from POS
 
 > [!IMPORTANT]
-> If you are using Commerce version 10.0.34 or earlier, you must follow [Deployment guidelines for Advance Invoice report printing](./emea-eeu-deployment.md) to configure extensions for channel components.
+> This step is required only if you are using Commerce version 10.0.35 or later. If you are using Commerce version 10.0.34 or earlier, you must follow [Deployment guidelines for Advance Invoice report printing](./emea-eeu-deployment.md) to configure extensions for channel components.
 
 You must then enable the **Create advance invoice for deposit** option on the **Order** FastTab of the **Customer orders** tab of the **Commerce parameters** page.
 
