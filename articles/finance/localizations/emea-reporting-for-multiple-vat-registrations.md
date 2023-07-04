@@ -27,15 +27,15 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [The Czech Republic](emea-reporting-for-multiple-vat-registrations-cz.md)
 - [Denmark](emea-reporting-for-multiple-vat-registrations-dk.md)
 - [Finland](emea-reporting-for-multiple-vat-registrations-fi.md)
-- France
-- Germany
-- Netherlands
-- Norway
-- Poland
-- Spain
-- Sweden
-- Switzerland
-- United Kingdom
+- [France](emea-reporting-for-multiple-vat-registrations-fr.md)
+- [Germany](emea-reporting-for-multiple-vat-registrations-de.md)
+- [Netherlands](emea-reporting-for-multiple-vat-registrations-nl.md)
+- [Norway](emea-reporting-for-multiple-vat-registrations-no.md)
+- [Poland](emea-reporting-for-multiple-vat-registrations-pl.md)
+- [Spain](emea-reporting-for-multiple-vat-registrations-es.md)
+- [Sweden](emea-reporting-for-multiple-vat-registrations-se.md)
+- [Switzerland](emea-reporting-for-multiple-vat-registrations-ch.md)
+- [The United Kingdom](emea-reporting-for-multiple-vat-registrations-uk.md)
   
 The scope of reporting is limited to generation of the following reports:
 
