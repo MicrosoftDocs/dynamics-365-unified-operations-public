@@ -25,7 +25,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Austria](emea-reporting-for-multiple-vat-registrations-at.md)
 - [Belgium](emea-reporting-for-multiple-vat-registrations-be.md)
 - [The Czech Republic](emea-reporting-for-multiple-vat-registrations-cz.md)
-- Denmark
+- [Denmark](emea-reporting-for-multiple-vat-registrations-dk.md)
 - Finland
 - France
 - Germany
