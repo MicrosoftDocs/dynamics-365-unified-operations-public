@@ -22,9 +22,9 @@ ms.search.form:
 
 This article explains how to do reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries or regions: 
 
-- Austria
-- Belgium
-- The Czech Republic
+- [Austria](emea-reporting-for-multiple-vat-registrations-at.md)
+- [Belgium](emea-reporting-for-multiple-vat-registrations-be.md)
+- [The Czech Republic](emea-reporting-for-multiple-vat-registrations-cz.md)
 - Denmark
 - Finland
 - France
