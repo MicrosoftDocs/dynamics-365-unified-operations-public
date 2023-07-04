@@ -1729,9 +1729,11 @@
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: Austria reporting 
-              items: 
-              - name: VAT declaration
-                href: localizations/emea-aut-vat-declaration-austria.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-at.md
+            - name: Belgium reporting 
+              href: localizations/emea-reporting-for-multiple-vat-registrations-be.md
+            - name: the Czech Republic reporting
+              href: localizations/emea-reporting-for-multiple-vat-registrations-cz.md
             - name: Denmark reporting
               items: 
               - name: VAT declaration
