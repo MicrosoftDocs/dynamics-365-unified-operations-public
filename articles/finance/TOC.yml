@@ -1735,53 +1735,27 @@
             - name: The Czech Republic reporting
               href: localizations/emea-reporting-for-multiple-vat-registrations-cz.md
             - name: Denmark reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-cz.md
-            - name: Denmark reporting
               href: localizations/emea-reporting-for-multiple-vat-registrations-dk.md
             - name: Finland reporting 
-              items: 
-              - name: VAT declaration
-                href: localizations/emea-fin-vat-declaration-mult-tax-id.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-fi.md
             - name: France reporting
-              items: 
-              - name: VAT declaration
-                href: localizations/emea-fra-VAT-declaration-preview-France.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-fr.md
             - name: Germany reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-deu-vat-declaration-germany.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-de.md
             - name: Netherlands reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-nl-vat-declaration-netherlands.md
-              - name: EU sales list
-                href: localizations/emea-nl-eu-sales-list.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-nl.md
             - name: Norway reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-nor-vat-declaration.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-no.md
             - name: Poland reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-pol-vat-declaration.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-pl.md
             - name: Spain reporting
-              items:
-              - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-                href: localizations/emea-esp-sii-spain.md
-              - name: VAT declaration
-                href: localizations/emea-esp-vat-declaration-spain.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-es.md
             - name: Sweden reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-swe-VAT-declaration-Sweden.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-se.md
             - name: Switzerland reporting
-              items: 
-              - name: VAT declaration
-                href: localizations/emea-che-vat-declaration-switzerland.md
-            - name: United Kingdom reporting
-              items:
-              - name: VAT declaration
-                href: localizations/emea-gbr-vat-declaration.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations-ch.md
+            - name: The United Kingdom reporting
+              href: localizations/emea-reporting-for-multiple-vat-registrations-uk.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
