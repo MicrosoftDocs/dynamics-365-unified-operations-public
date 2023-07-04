@@ -8,13 +8,13 @@ ms.prod:
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
-ms.search.region: Czech Republic
+ms.search.region: Germany
 ms.author: egolub
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.13
 ---
 
-# Support for multiple VAT registration numbers in the reporting of the Czech Republic
+# Support for multiple VAT registration numbers in the reporting of Germany
 
 [!include [banner](../includes/banner.md)]
 
