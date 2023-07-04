@@ -26,7 +26,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Belgium](emea-reporting-for-multiple-vat-registrations-be.md)
 - [The Czech Republic](emea-reporting-for-multiple-vat-registrations-cz.md)
 - [Denmark](emea-reporting-for-multiple-vat-registrations-dk.md)
-- Finland
+- [Finland](emea-reporting-for-multiple-vat-registrations-fi.md)
 - France
 - Germany
 - Netherlands
@@ -284,6 +284,8 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
+    | 10.0.26 | Finland | VAT Declaration TXT (FI).version.112.9<br>VAT Declaration Excel (FI).version.112.9.6 | [VAT declaration (Finland)](emea-fin-vat-declaration.md) |
+    | 10.0.27 | Belgium | VAT Declaration XML (BE).version.120.46<br>VAT Declaration Excel (BE).version.120.46.47 | [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md) |
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
 
     > [!NOTE]
