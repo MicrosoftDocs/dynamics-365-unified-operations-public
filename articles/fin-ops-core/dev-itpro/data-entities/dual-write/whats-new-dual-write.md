@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
-author: RamaKrishnamoorthy
+author: jaredha
 ms.date: 05/20/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: ramasri
+ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -24,8 +24,9 @@ The July 2023 release of [Dual-write core solution 1.0.42.0](https://appsource.m
 
 | Feature | Description | Status |
 | ---|---|---|
-| Bug fix | Fix for Dataverse organizations connected to cloud hosted development environments
-
+| Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
+| Optimization | Minor improvements in token generation code for Full Trust Plugins | General availability |
+| Optimization | Added a custom exception (DualWritePluginInvalidExecutionException) to separate System exceptions from Application exceptions (InvalidPluginExecutionException) | General availability |
 
 ## June 2023 release
 
