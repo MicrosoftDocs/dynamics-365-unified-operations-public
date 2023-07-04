@@ -18,15 +18,15 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the regulatory reports in the Czech Republic available for legal entities using functionality for multiple value-added tax (VAT) registration numbers. 
+This article provides information about the regulatory reports in the Czech Republic available for legal entities using multiple value-added tax (VAT) registration numbers functionality. 
 For more information about **Multiple VAT registration numbers** functionality, prerequisites to be fulfilled before using it, and necessary setup, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md)
 
-For general information about reporting for multiple VAT registrations, [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md)
+For general information about reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md)
 
 When your legal entity is configured for reporting for multiple VAT registrations, the following reports are available to report in the Czech Republic:
 
-    | Report name     | Release | ER format, version                |
-    |-----------------|---------|-----------------------------------|
-    | [Intrastat](emea-cze-intrastat.md)       | 10.0.34 | Intrastat (CZ), version 24.6      |
-    | [EU sales list](emea-cze-eu-sales-list.md)   | 10.0.33 | EU Sales list (CZ), version 15.9  |
-    | [VAT declaration](emea-cze-vat-declaration-tax-declaration-model.md) | 10.0.13 | VAT declaration XML (CZ), version 64.66<br>VAT Control statement XML (CZ), version 64.66.65<br>VAT Declaration Excel (CZ), version 64.66.25 |
+| Report name     | Release | ER format, version                |
+|-----------------|---------|-----------------------------------|
+| [Intrastat](emea-cze-intrastat.md)       | 10.0.34 | Intrastat (CZ), version 24.6      |
+| [EU sales list](emea-cze-eu-sales-list.md)   | 10.0.33 | EU Sales list (CZ), version 15.9  |
+| [VAT declaration](emea-cze-vat-declaration-tax-declaration-model.md) | 10.0.13 | VAT declaration XML (CZ), version 64.66<br>VAT Control statement XML (CZ), version 64.66.65<br>VAT Declaration Excel (CZ), version 64.66.25 |
