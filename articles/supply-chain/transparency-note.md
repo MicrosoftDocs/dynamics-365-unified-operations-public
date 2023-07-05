@@ -1,6 +1,6 @@
 ---
 title: Transparency notes for Dynamics 365 Supply Chain Management
-description: Transparency notes provide information about the AI technology used in Dynamics 365 Supply Chain Management, along with key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: Transparency notes provide information about the AI technology that's used in Microsoft Dynamics 365 Supply Chain Management. They include key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 06/19/2023
 ms.custom: 
   - transparency-note
