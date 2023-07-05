@@ -325,7 +325,7 @@ On the **Electronic customer invoices** page, you can perform the following acti
 
 As of Finance version **10.0.36**, you can move previously generated XML files for existing electronic invoices to attachments and configure the system to automatically save the generated XML files for new electronic invoice as attachments. This functionality is available only for legal entities that have their primary address in Italy or Spain.
 
-To activate the capability to save XML files for electronic invoice as attachments, enable the **(Italy, Spain) Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To activate the capability to save XML files for electronic invoice as attachments, enable the **(Italy, Spain) Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 > [!NOTE]
 > After you enable the feature, the process of moving previously generated XML files for existing electronic invoices to attachments starts automatically. The electronic invoices are processed in batches of 10,000 records. The interval between batches is set to three hours.
