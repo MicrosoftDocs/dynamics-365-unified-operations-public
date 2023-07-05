@@ -4,15 +4,15 @@ description: This article gives an overview of cloud-powered search in Microsoft
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
+ms.assetid:
 ---
 
 # Cloud-powered search overview
@@ -29,6 +29,11 @@ The cloud-powered product discoverability in Commerce helps retailers continue t
 
 The Commerce search experience has improved capabilities to help retailers achieve better product discoverability. At the same time, these capabilities deliver the scalability and performance that are required for e-commerce traffic.
 
+## Prerequisites
+
+The cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**.
+![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## Browse and search
 
 Search relevance and performance are key factors in the omnichannel experience, because product discovery relies primarily on search functionality for information retrieval and content navigation. An effective and efficient browse and search experience helps increase conversion.
@@ -37,11 +42,11 @@ The following illustration shows an example of typical browse and search functio
 
 ![Search landing page.](./media/SearchLanding.png)
 
-## Faceted navigation and choice summary 
+## Faceted navigation and choice summary
 
-Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of the choices is shown. 
+Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of the choices is shown.
 
-By using faceted navigation, you can configure different refiners for different terms in a term set, without having to create additional pages. 
+By using faceted navigation, you can configure different refiners for different terms in a term set, without having to create additional pages.
 
 The following illustration shows an example where faceted navigation is used in a search.
 
@@ -63,9 +68,7 @@ Sort functionality enables customers to sort, search, and browse category result
 
 
 > [!NOTE]
-> These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
-![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
->Advanced sorting options like new, best-selling, and trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.  
+>Advanced sorting options like new, best-selling, and trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.
 
 
 ## Additional resources
