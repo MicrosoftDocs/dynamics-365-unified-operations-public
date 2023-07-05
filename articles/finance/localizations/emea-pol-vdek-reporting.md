@@ -82,6 +82,10 @@ The following table shows an example of sales tax reporting codes and their mapp
     ![Run processing dialog box](media/create-em.jpg)
 
 4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7 report for.
+
+- For **JPK-V7M** (if your company reports JPK-V7 monthly), select start and end dates of the month for which report must be generated.
+- For **JPK-V7K** (if your company reports JPK-V7 quarterly), select start and end dates of the first or second month of reporting quarter when you generate JPK-V7K report for first or second month of the quarter. To report JPK-V7K report for the full quarter, select first and last dates of the quarter in the From and To dates of Electronic message.
+
 5. On the **Message additional fields** FastTab, specify any additional values that are required for the declaration part of the JPK-V7 report.
 
     ![Message additional fields FastTab.](media/message-additional-fields.jpg)
