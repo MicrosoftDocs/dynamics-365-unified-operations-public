@@ -1,6 +1,6 @@
 ---
-title: JPK-V7M reporting
-description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+title: JPK-V7 reporting
+description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
 author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
@@ -9,31 +9,31 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: atrukawk
+ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
-# JPK-V7M reporting
+# JPK-V7 reporting
 
 [!include [banner](../includes/banner.md)]
 
-The JPK-V7M reporting process is predefined by the data entities that are delivered in the PL JPK_V7M EM setup.zip package. The following illustration shows an overview of the process.
+The JPK-V7 reporting process is predefined by the data entities that are delivered in the PL JPK_V7 EM setup.zip package. The following illustration shows an overview of the process.
 
 ![JPK_V7M reporting process flow](media/vdek-em-processing.jpg)
 
-The PL JPK_V7M EM setup.zip package provides a setup for the JPK-V7M processing that supports the process of JPK-V7M reporting. This setup consists of the following steps:
+The PL JPK_V7 EM setup.zip package provides a setup for the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing that supports the process of JPK-V7 reporting. This setup consists of the following steps:
 
-- **Tworzyć (Create):** Create an electronic message for JPK-V7M reporting.
-- **Wygeneruj plik (Generate file):** Generate an XML file in JPK-V7M format.
-- **Podgląd w programie Excel (Preview in Excel format):** Generate the JPK-V7M report in Microsoft Excel format for preview.
+- **Tworzyć (Create):** Create an electronic message for JPK-V7 reporting.
+- **Wygeneruj plik (Generate file):** Generate an XML file in JPK-V7 format.
+- **Podgląd w programie Excel (Preview in Excel format):** Generate the JPK-V7 report in Microsoft Excel format for preview.
 - **Zmień status (Change status):** Change the status of the electronic message.
 
-## Initial assumptions for the JPK-V7M report
+## Initial assumptions for the JPK-V7 report
 
-The implementation of the JPK-V7M report is based on the same example in the article, [Prepare for JPK-V7M reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
+The implementation of the JPK-V7 report is based on the same example in the article, [Prepare for JPK-V7 reporting](emea-pol-vdek-setup.md) for the JPK_VAT report. 
 For more information, see [Generate a SAF VAT sales and purchase register](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
-The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7M report.
+The following table shows an example of sales tax reporting codes and their mapping with **K_\*** elements of the JPK-V7 report.
 
 | Element name     | Element description | Sales tax reporting codes |
 |------------------|---------------------|---------------------------|
@@ -73,16 +73,16 @@ The following table shows an example of sales tax reporting codes and their mapp
 | K_46             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 1 of the VAT Act. | <p>30101, 30102</p><p>**Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**.</p> |
 | K_47             | The amount of input tax that arises from the correction of input tax that is referred to in article 89b, section 4 of the VAT Act. | <p>30201, 30202</p><p>**Note:** For the "Overdue" scenario, the amount can be collected for **K_43** or **K_41**.</p> |
 
-## Create an electronic message for JPK-V7M reporting
+## Create an electronic message for JPK-V7 reporting
 
 1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
-2. Select **JPK-V7M**, and then, on the **Messages** FastTab, select **New**.
+2. Select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly), and then, on the **Messages** FastTab, select **New**.
 3. In the **Run processing** dialog box, select **OK**.
 
     ![Run processing dialog box](media/create-em.jpg)
 
-4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7M report for.
-5. On the **Message additional fields** FastTab, specify any additional values that are required for the declaration part of the JPK-V7M report.
+4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7 report for.
+5. On the **Message additional fields** FastTab, specify any additional values that are required for the declaration part of the JPK-V7 report.
 
     ![Message additional fields FastTab.](media/message-additional-fields.jpg)
 
@@ -93,17 +93,20 @@ The following table shows an example of sales tax reporting codes and their mapp
 
 7. In the **Wersja schematu** additional field, specify which version of the XML Schema Definition (XSD) schema must be used to generate the report. Two values are allowed:
 
-    - **1** for JPK-V7M(1)
-    - **2** for JPK-V7M(2)
+    - **1** for JPK-V7M(1).
+    - **2** for JPK-V7M(2). In the **PL JPK-V7 EM setup v.7 ID584502.zip** package, this value is set as default value.
 
-   The **Wersja schematu** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Wersja schematu** additional field will get a value of **1** by default. Therefore, when you create a new electronic message, the **Wersja schematu** additional field will be set to **1**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Wersja schematu** additional field, and select a value in the list.
+   The **Wersja schematu** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7 EM setup v.7 ID584502.zip** package, the **Wersja schematu** additional field will get a value of **2** by default. Therefore, when you create a new electronic message, the **Wersja schematu** additional field will be set to **2**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Wersja schematu** additional field, and select a value in the list.
 
-8. In the **Sklad pliku** additional field, specify which content of JPK-V7M must be included in the report. Two values are allowed:
+8. In the **Sklad pliku** additional field, specify which content of JPK-V7 must be included in the report. Two values are allowed:
 
     - **Pelny plik XML** for the full XML file
     - **Tylko Ewidencja** for the **Ewidencja** node only
 
-    The **Sklad pliku** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Sklad pliku** additional field will get a value of **Pelny plik XML** by default. Therefore, when you create a new electronic message, the **Sklad pliku** additional field will be set to **Pelny plik XML**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Sklad pliku** additional field, and select a value in the list.
+    The **Sklad pliku** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Sklad pliku** additional field will get a value of **Pelny plik XML** by default. Therefore, when you create a new electronic message, the **Sklad pliku** additional field will be set to **Pelny plik XML**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Sklad pliku** additional field, and select a value in the list.
+
+> [!NOTE]
+> If your company reports JPK-V7 quarterly and uses **JPK-V7K** Electronic messaging processing, to generate XML file for first and second months of a quarter, you must select **Tylko Ewidencja** in **Sklad pliku** additional field. For the third month of a quarter, select **Pelny plik XML** in **Sklad pliku** additional field. According to the regulatory requirements to JPK-V7K, taxpayers in JPK-V7K for the first two months of the quarter should fill in `Naglówek`, `Podmiot1` and `Ewidencja` XML elements, and for the third month of the quarter JPK-V7K XML file should include `Naglówek`, `Podmiot1`, `Deklaracja`, `Ewidencja` XML elements, but the `Deklaracja` applies to data for the entire quarter, while the `Ewidencja` covers data only for the last month of the quarter.
 
 9. You can also specify manual values for the following additional fields that are related to elements of the declaration.
 
