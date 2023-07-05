@@ -28,6 +28,9 @@ The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7:
 - [Save the executable class parameters for Electronic messaging](#executable-class-parameters-vdek).
 - [Set up security roles for electronic message processing](#security-roles-vdek).
 - [Set up an office code for electronic message processing](#office-code-vdek).
+- [Set up an \"Sklad pliku\" (file composition) for electronic message processing](#sklad-pliku)
+- [Set up an \"Wariant JPK_VAT\" (variant JPK_VAT) for electronic message processing](#wariant-jpk-vat)
+- [Set up an \"Wersja schematu\" (schema version) for electronic message processing](#wersja-schematu)
 - [Set up sales tax codes and sales tax reporting codes](#sales-tax-reporting-codes-vdek).
 
 ## <a id="configurations-vdek"></a>Import and set up ER configurations
@@ -411,6 +414,33 @@ Follow these steps to enter an office code in the **KodUrzedu** additional field
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
 2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
+
+## <a id="sklad-pliku"></a>Set up an \"Sklad pliku\" (file composition) for electronic message processing
+
+Both **JPK-V7M** and **JPK-V7K** electronic message processing contain **Sklad pliku** additional field. This additional fields allows user to define composition of XML file to be generated:
+
+- **Pelny plik XML** - for the full XML file. The file contains complete elements, i.e. `Naglówek`, `Podmiot1`, `Deklaracja` and `Ewidencja`.
+- **Tylko Ewidencja** - for the Ewidencja node only. The file contains the following elements: `Naglówek`, `Podmiot1` and `Ewidencja`.
+
+Default value set up for **Sklad pliku** additional field in both **JPK-V7M** and **JPK-V7K** electronic message processing is **Pelny plik XML**.
+
+## <a id="wariant-jpk-vat"></a>Set up an \"Wariant JPK_VAT\" (variant JPK_VAT) for electronic message processing
+
+Both **JPK-V7M** and **JPK-V7K** electronic message processing contain **Wariant JPK_VAT** additional field. This additional fields allows user to define variant of XSD schema of XML file to be generated:
+
+| **Wariant JPK_VAT** | **Description PL** | **Description EN** | **Default value in EM processing** |
+|---------------------|--------------------|--------------------|------------------------------------|
+| **Miesięczny (Monthly)** | JPK_V7M - dla podatników, którzy rozliczają się miesięcznie | JPK_V7M - company reporting JPK-V7 monthly | Default for JPK-V7M |
+| **Kwartalny (Quarterly)** | JPK_V7K - dla podatników, którzy rozliczają się kwartalnie | JPK_V7M - company reporting JPK-V7 quarterly | Default for JPK-V7K |
+
+## <a id="wersja-schematu"></a>Set up an \"Wersja schematu\" (schema version) for electronic message processing
+
+Both **JPK-V7M** and **JPK-V7K** electronic message processing contain **Wersja schematu** additional field. This additional fields allows user to define version of XSD schema to be applied to XML file to be generated:
+
+- **1** - JPK-V7(1) - effective from October 1, 2020 (before 1 January 2022).
+- **2** - JPK-V7(2) - effective from 1 January 2022.
+
+Default value set up for **Wersja schematu** additional field in both **JPK-V7M** and **JPK-V7K** electronic message processing is **2**.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
 
