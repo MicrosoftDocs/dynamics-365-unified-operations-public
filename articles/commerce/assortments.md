@@ -4,8 +4,8 @@ description: This article explains the basic concepts of assortment management i
 author: josaw1
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Global
@@ -100,5 +100,7 @@ Consider the following implementation requirements as you plan and manage assort
 
 If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
 
+> [!NOTE]
+> When POS makes real-time calls to headquarters to retrieve product information and download it in the channel database, depending on the data size of product information such as the number of product variants, product attributes, and inventory dimensions, there might be performance issues on the real-time calls or saving the data to channel database. The performance issue will lead to Commerce Scale Unit API failures. In this case, you should add those products to the channel's assortment to avoid real-time calls.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
