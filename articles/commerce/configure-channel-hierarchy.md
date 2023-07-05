@@ -4,16 +4,16 @@ description: This article describes how to configure a channel to use a channel 
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+ms.custom:
+ms.assetid:
 ---
 # Configure a channel to use a channel navigation hierarchy
 
@@ -69,6 +69,13 @@ To publish changes, follow these steps.
 The following image shows how to publish channel updates.
 
 ![Publish channel updates.](media/configure-channel-hierarchy-3.png)
+
+## Configure the Distribution schedule job
+
+To push the changes to channel databases, follow these steps.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+1. Run the **1040** (**Products**) and **1150** (**Catalog**) jobs.
 
 ## Additional resources
 
