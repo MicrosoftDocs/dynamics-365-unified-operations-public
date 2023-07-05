@@ -29,7 +29,7 @@ Typically, you will need to search for products when you don't have the product 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | SearchCriteria | ProductSearchCriteria | Required | The product search criteria. |
-| SearchForItemIdViaBarcode | bool | Optional | Whether to match the keyword with bar codes and convert the keyword to item identifier. When you are using SQL full-text based search instead of [Cloud-powered search](https://learn.microsoft.com/en-us/dynamics365/commerce/cloud-powered-search-overview), this parameter also enables remote channel search. |
+| SearchForItemIdViaBarcode | bool | Optional | Whether to match the keyword with bar codes and convert the keyword to item identifier. When you are using SQL full-text based search instead of [Cloud-powered search](cloud-powered-search-overview.md), this parameter also enables remote channel search. |
 
 #### ProductSearchCriteria
 
