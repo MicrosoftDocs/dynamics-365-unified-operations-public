@@ -331,10 +331,10 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 
 ## <a id="import-data-entities-vdek"></a>Import a package of data entities that includes a predefined electronic message setup
 
-The process of setting up the Electronic messaging functionality for JPK-V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
+The process of setting up the Electronic messaging functionality for JPK-V7 reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7M EM setup.zip** in the list of data package files, and download it to your computer.
-2. After the **PL JPK_V7M EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7M report from, and then go to **Workspaces** \> **Data management**.
+1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7 EM setup.zip** in the list of data package files, and download it to your computer.
+2. After the **PL JPK_V7 EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7 report from, and then go to **Workspaces** \> **Data management**.
 
     Before you import setup data from the package of data entities, you must make sure that the data entities in your application are refreshed and synced.
 
@@ -346,15 +346,15 @@ The process of setting up the Electronic messaging functionality for JPK-V7M rep
 
 For more information about Data management, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-You must now import data from the **PL JPK_V7M EM setup.zip** file into the selected company.
+You must now import data from the **PL JPK_V7 EM setup.zip** file into the selected company.
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
 2. On the **Select entities** FastTab, select **Add file**.
-3. Select **Upload and add**, select the **PL JPK_V7M EM setup**.**zip** file on your computer, and upload it.
+3. Select **Upload and add**, select the **PL JPK_V7 EM setup**.**zip** file on your computer, and upload it.
 4. When entities from the package are listed in the grid, select **Close**.
 5. On the Action Pane, select **Import** to start to import data from the data entities.
 
-    ![PL JPK_V7M EM setup page](media/import-data-entities.jpg)
+    ![PL JPK_V7 EM setup page](media/import-data-entities.jpg)
 
 You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
 
@@ -362,6 +362,11 @@ You will receive a notification in **Messages**, or you can manually refresh the
 
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
+
+> [!NOTE]
+> As of version 7 of **PL JPK_V7 EM setup**.**zip** file, the package of data entities includes setup for two Electronic messaging processing:
+> - JPK-V7M: Monthly JPK-V7M declaration (Miesięczny Jednolity Plik Kontrolny VAT z deklaracją V7M)
+> - JPK-V7K: Quarterly JPK-V7K declaration (Kwartalny Jednolity Plik Kontrolny VAT z deklaracją V7K)
 
 ## <a id="general-ledger-parameters-vdek"></a>Set up General ledger parameters
 
@@ -375,10 +380,10 @@ To work with the Electronic messaging functionality, you must define related num
 
 ## <a id="executable-class-parameters-vdek"></a>Save the executable class parameters for Electronic messaging
 
-The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
+The JPK-V7 and JPK-V7K processing use the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
-2. Select the **Wygenerowanie JPK_V7M** executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
+2. Select the **Wygenerowanie JPK_V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
 
 In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see [Report RO and FP document types for retail operations](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations). A **Retail-specific sales marking** group of parameters is available only in legal entities that have a primary address in Poland.
 
@@ -386,25 +391,25 @@ The dialog box for the executable class includes the **Consider VAT report date 
 
 The dialog box for the executable class includes the **Settlement period** parameter. Use this parameter with the [**Multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) feature to collect VAT transactions in specific sales tax settlement periods. The **Settlement period** parameter is available as of Finance version 10.0.29.
 
-KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces the **Schema version** parameter. Use this parameter to specify that the additional field contains the version of the schema of JPK-V7M that must be reported. Select **Wersja schematu** as the value for this field.
+Use **Schema version** parameter to specify that the additional field contains the version of the schema of JPK-V7 that must be reported. Select **Wersja schematu** as the value for this field.
 
-The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7M in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
+The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7 in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
 
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
-Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
+Different groups of users might require access to the JPK-V7M or JPK-V7K processing. You can limit access to the processing, based on security groups that are defined in the system.
 
-Follow these steps to limit access to the JPK-V7M processing.
+Follow these steps to limit access to the JPK-V7M or JPK-V7K processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
-2. Select the **JPK-V7M** processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
+2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
 ## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
 Follow these steps to enter an office code in the **KodUrzedu** additional field.
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
-2. Select the **JPK-V7M** processing.
+2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
