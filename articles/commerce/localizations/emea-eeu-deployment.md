@@ -111,7 +111,7 @@ Follow these steps to create deployable packages that contain Commerce component
 The steps that are described in this section are required if you're using Commerce version 10.0.34 or earlier, and are migrating to version 10.0.35 or later. You must follow these steps to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
-1. Enable the [Advance invoice report printing feature](./emea-eeu-advance-invoices-for-retail.md#enable-the-functionality-for-creating-advance-invoices) in the **Feature management** workspace, and distribute the changes to channels.
+1. Enable the [Advance invoice report printing feature](./emea-eeu-advance-invoices-for-retail.md#enable-the-functionality-to-create-advance-invoices) in the **Feature management** workspace, and distribute the changes to channels.
 1. Update the Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy extensions:
 
     - Commerce runtime extensions in the commerceruntime.ext.config and CommerceRuntime.MPOSOffline.Ext.config files:
