@@ -24,7 +24,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 
 - [Austria](emea-reporting-for-multiple-vat-registrations-at.md)
 - [Belgium](emea-reporting-for-multiple-vat-registrations-be.md)
-- [The Czech Republic](emea-reporting-for-multiple-vat-registrations-cz.md)
+- [Czechia](emea-reporting-for-multiple-vat-registrations-cz.md)
 - [Denmark](emea-reporting-for-multiple-vat-registrations-dk.md)
 - [Finland](emea-reporting-for-multiple-vat-registrations-fi.md)
 - [France](emea-reporting-for-multiple-vat-registrations-fr.md)
@@ -35,7 +35,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Spain](emea-reporting-for-multiple-vat-registrations-es.md)
 - [Sweden](emea-reporting-for-multiple-vat-registrations-se.md)
 - [Switzerland](emea-reporting-for-multiple-vat-registrations-ch.md)
-- [The United Kingdom](emea-reporting-for-multiple-vat-registrations-uk.md)
+- [United Kingdom](emea-reporting-for-multiple-vat-registrations-uk.md)
   
 The scope of reporting is limited to generation of the following reports:
 
@@ -138,7 +138,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Denmark | Intrastat (DK).version.25.4 |
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
-    | 10.0.34 | The Czech Republic | Intrastat (CZ).version.24.6 |
+    | 10.0.34 | Czechia | Intrastat (CZ).version.24.6 |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -157,7 +157,7 @@ For more information, see [Download ER configurations from the Global repository
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: the Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
+    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czechia, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
 6. Select **Output** \> **Report**.
 7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
@@ -229,7 +229,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.23 | Denmark | EU Sales list (DK).version.13.4 |
     | 10.0.24 | Poland | EU Sales list (PL).version.14.7 |
     | 10.0.25 | Belgium | EU Sales list (BE).version.2.3 |
-    | 10.0.33 | The Czech Republic | EU Sales list (CZ).version.15.9 |
+    | 10.0.33 | Czechia | EU Sales list (CZ).version.15.9 |
 
 ### Transfer and report the EU sales list
 
@@ -273,7 +273,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | Release | Country | ER format | Link to article |
     |---------|---------|-----------|---------------|
     | 10.0.19 | All | Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138 | |
-    | 10.0.13 | The Czech Republic | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |
+    | 10.0.13 | Czechia | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |
     | 10.0.19 | Netherlands | VAT Declaration XML (NL).version.85.14<br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) |
     | 10.0.20 | France | VAT Declaration Excel (FR).version.85.15 | [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
     | 10.0.21 | United Kingdom | MTD VAT importing model mapping (UK).version.31.36<br>Tax declaration model mapping.version.95.158<br>VAT Declaration Excel (UK).version.32.30.16<br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md) |
