@@ -21,13 +21,13 @@ ms.custom: bap-template
 >
 > During this preview phase, the summarization of changes and the summarization of downstream impact are only available in environments hosted in North America and will render in English. All other functionality is available globally.
 >
-> To understand the capabilities and limitations of AI-powered and Copilot features in Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
 
 <!-- KFM: Preview until 10.0.34 GA -->
 
 During the procurement planning process, any changes made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that will only have a low risk of downstream impact, which allows procurement managers to focus on high-impact changes so they can assess potential downstream order impacts and communicate directly with vendors.
 
-This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use artificial intelligence to assist procurement managers with their daily procurement tasks.
+This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
 This article describes the workspace where users can review and accept changes made by suppliers to *Confirmed* purchase orders based on the downstream impact of the changes made.
 
@@ -40,7 +40,7 @@ This section describes the steps you must complete to enable the **Confirmed pur
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
-You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+You must be running Supply Chain Management 10.0.34 or later.
 
 This feature was added in builds that came out after the initial release of 10.0.34 and 10.0.35. If you're running one of these versions, you must update your version to the builds described in the following list.
 
@@ -146,7 +146,7 @@ The **High impact changes** tile gives an AI-generated, natural-language summary
 > [!NOTE]
 > Only direct downstream impacts are considered. Indirect downstream impacts, such as product work depending on other production work, aren't yet considered.
 
-From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update and send the message.
+From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
 
 [<img src="media/po-change-review-highimpact-one-selected.png" alt="Workspace showing one selected purchase order with changes and downstream impact." title="Workspace showing one selected purchase order with changes and downstream impact" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
 
