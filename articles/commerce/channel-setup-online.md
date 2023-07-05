@@ -4,16 +4,16 @@ description: This article describes how to create a new online channel in Micros
 author: samjarawan
 ms.date: 02/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+ms.custom:
+ms.assetid:
 ---
 # Set up an online channel
 
@@ -52,6 +52,9 @@ The following image shows an example online channel.
 
 ![Example online channel.](media/channel-setup-online-2.png)
 
+> [!NOTE]
+> You should be cautious about the side effect on changing the warehouse of a running online channel. Due to the data sync latency, the sales orders that are not checked out on e-commerce will still be fulfilled from the old warehouse, which will impact the inventory availability as well.
+
 ## Assign the channel to a Commerce Scale Unit
 
 Your new channel must be assigned to a Commerce Scale Unit. For instructions, see [Configure channels to use Commerce Scale Unit](../fin-ops-core/dev-itpro/deployment/initialize-retail-channels.md#configure-channels-to-use-csu).
@@ -89,7 +92,7 @@ The following image shows an example of a cash payment method.
 
 ### Set up modes of delivery
 
-You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
+You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.
 
 To change or add a mode of delivery, follow these steps.
 
