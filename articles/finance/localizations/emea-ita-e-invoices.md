@@ -322,12 +322,12 @@ On the **Electronic customer invoices** page, you can perform the following acti
 ![Electronic customer invoices page.](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
 ### Move electronic invoices XML files to attachments
 
-As of Finance version **10.0.36**, you can move previously generated XML files of already existing electronic invoices to attachments and configure the system to automatically save generated XML files of new electronic invoice as attachements.
+As of Finance version **10.0.36**, you can move previously generated XML files of already existing electronic invoices to attachments and configure the system to automatically save generated XML files of new electronic invoice as attachements. The  functionality is available only for legal entities with the primary address in Italy or Spain.
 
-To activate the capability to save XML files of electronic invoice as attachements, enable the **Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+To activate the capability to save XML files of electronic invoice as attachements, enable the **(Italy, Spain) Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
 > [!NOTE]
-> The process of moving of previously generated XML files of existing electronic invoices to attachments will automatically start right after enabling the feature. The electronic invoices will be processed in batches by 10,000 records. The interval between batches is set by default to 3 hours, but can be adjusted. 
+> The process of moving of previously generated XML files of existing electronic invoices to attachments will automatically start right after enabling the feature. The electronic invoices will be processed in batches by 10,000 records. The interval between batches is set to 3 hours. 
 
 ## <a id="additionalfunctionality"></a>Additional functionality that affects the XML file
 
