@@ -1,7 +1,7 @@
 ---
-title: Prepare for JPK-V7M reporting
-description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
-author: AdamTrukawka
+title: Prepare for JPK-V7 reporting
+description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
+author: liza-golub
 ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
@@ -9,17 +9,17 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: atrukawk
+ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
-# Prepare for JPK-V7M reporting
+# Prepare for JPK-V7 reporting
 
 [!include [banner](../includes/banner.md)]
 
-The solution that supports JPK-V7M reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach to setting up and supporting reporting processes.
+The solution that supports JPK-V7 reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach to setting up and supporting reporting processes.
 
-The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
+The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7:
 
 - [Import and set up Electronic reporting (ER) configurations](#configurations-vdek).
 - [Set up application-specific parameters](#application-specific-parameters-vdek).
@@ -32,14 +32,14 @@ The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
 
 ## <a id="configurations-vdek"></a>Import and set up ER configurations
 
-To prepare Finance for JPK-V7M reporting, you must import the following ER configurations.
+To prepare Finance for JPK-V7 reporting, you must import the following ER configurations.
 
 | ER configuration name             | Type | Description |
 |-----------------------------------|------|-------------|
 | Standard Audit File (SAF-T)       | Model | The common ER model for Standard Audit Files. |
 | Standard Audit File model mapping | Model mapping | The model mapping that defines data sources for Polish Standard Audit File (JPK) reports. |
-| JPK-V7M XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires to be periodically reported. |
-| JPK-V7M Excel format (PL)         | Format (exporting) | The Excel format for preview information that will be reported in XML format. |
+| JPK-V7 XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires to be periodically reported. |
+| JPK-V7 Excel format (PL)         | Format (exporting) | The Excel format for preview information that will be reported in XML format. |
 
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
 
@@ -52,7 +52,7 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## <a id="application-specific-parameters-vdek"></a>Set up application-specific parameters
 
-Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7M report. The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
+Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7 report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7 report. The JPK-V7 format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
@@ -71,7 +71,7 @@ The format includes the following lookup fields for setup.
 | PurchaseDocumentTypesSelector | A designation of the type of the purchase document | This lookup field is used to define the **MK**, **VAT_RR**, and **WEW** purchase document types. |
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7M XML format (PL)**.
+2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7 XML format (PL)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 
     ![Setup button in the Application specific parameters group on the Configurations tab](media/setup-app-spec-params.jpg)
