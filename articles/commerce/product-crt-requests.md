@@ -104,3 +104,5 @@ Input parameters:
 | MatchingSlotToComponentRelations | ReadOnlyCollection\<ComponentInSlotRelation\> | Optional | The components that must be available in the resultant products. |
 
 Response: `GetProductsServiceResponse` with a list of `SimpleProduct` inside.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
