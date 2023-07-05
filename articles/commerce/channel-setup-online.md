@@ -53,7 +53,7 @@ The following image shows an example online channel.
 ![Example online channel.](media/channel-setup-online-2.png)
 
 > [!NOTE]
-> You should be cautious about the side effect on changing the warehouse of a running online channel. Due to the data sync latency, the sales orders that are not checked out on e-commerce will still be fulfilled from the old warehouse, which will impact the inventory availability as well.
+> You should be cautious about the side effect on changing the warehouse of a running online channel. The carts that are not checked out on e-commerce, unless they are modified, they will still be fulfilled from the old warehouse, which will impact the inventory availability calculation.
 
 ## Assign the channel to a Commerce Scale Unit
 
