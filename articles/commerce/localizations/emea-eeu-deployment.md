@@ -2,7 +2,7 @@
 title: Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 description: This article describes how to build extensions of the Commerce components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
 author: josaw1
-ms.date: 06/30/2023
+ms.date: 07/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.search.industry: Retail
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> You should only implement the steps that are described in this article if you are using Commerce version 10.0.34 or earlier. Starting from version 10.0.35, all required Commerce channel components for Advance Invoice report printing are enabled out of the box. If you are using Commerce version 10.0.34 or earlier and are migrating to Commerce version 10.0.35 or later, you must follow the steps in [Migrate to Commerce version 10.0.35 or later](#migrate-to-commerce-version-10035-or-later).
+> You should only implement the steps that are described in this article if you are using Commerce version 10.0.34 or earlier. Starting from version 10.0.35, all required Commerce channel components for Advance Invoice report printing are enabled out-of-the-box. If you are using Commerce version 10.0.34 or earlier and are migrating to Commerce version 10.0.35 or later, follow the steps in the section, [Migrate to Commerce version 10.0.35 or later](#migrate-to-commerce-version-10035-or-later).
 
 This article shows how to enable the Dynamics 365 Commerce localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Commerce components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Commerce for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
