@@ -2,7 +2,7 @@
 title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 06/30/2023
+ms.date: 07/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-11-04
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> The functionality that is described in this article is aimed to support the requirements of the Phase 1 of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the features that are aimed to support the requirements of the Phase 2 of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md).
+> The functionality described in this article is meant to support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the features that are meant to support the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md).
 
 This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 
@@ -87,7 +87,7 @@ On the **Configuration parameters** tab of the Commerce parameters page, add the
 ### Enable CRT extensions
 
 > [!WARNING]
-> This localization functionality cannot be used with the [new independent packaging and extension model](../dev-itpro/build-pipeline.md) and [Commerce software development kit (SDK)](../dev-itpro/retail-sdk/sdk-github.md). You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For information about the localization features for Saudi Arabia that are available in Commerce SDK, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md)
+> This localization functionality can't be used with the [new independent packaging and extension model](../dev-itpro/build-pipeline.md) and [Commerce software development kit (SDK)](../dev-itpro/retail-sdk/sdk-github.md). You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For information about the localization features for Saudi Arabia that are available in Commerce SDK, see [Generate and submit simplified electronic invoices for Saudi Arabia](./emea-sau-simplified-e-invoices.md)
 
 #### Development environment
 
