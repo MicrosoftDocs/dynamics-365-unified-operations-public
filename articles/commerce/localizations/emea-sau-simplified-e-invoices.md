@@ -2,7 +2,7 @@
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 06/30/2023
+ms.date: 07/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.search.validFrom: 2022-11-21
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE]
-> The functionality that is described in this article is aimed to support the requirements of the Phase 2 of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features that were aimed to support the requirements of the Phase 1 of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](./emea-sau-qr-code.md). 
+> The functionality described in this article is meant to support the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features meant to support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](./emea-sau-qr-code.md). 
 
 This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. This article also provides guidelines for setting up the functionality.
 
