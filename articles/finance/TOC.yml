@@ -1728,34 +1728,36 @@
               href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
               href: localizations/emea-reporting-for-multiple-vat-registrations.md
-            - name: Austria reporting 
-              href: localizations/emea-reporting-for-multiple-vat-registrations-at.md
-            - name: Belgium reporting 
-              href: localizations/emea-reporting-for-multiple-vat-registrations-be.md
-            - name: The Czech Republic reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-cz.md
-            - name: Denmark reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-dk.md
-            - name: Finland reporting 
-              href: localizations/emea-reporting-for-multiple-vat-registrations-fi.md
-            - name: France reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-fr.md
-            - name: Germany reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-de.md
-            - name: Netherlands reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-nl.md
-            - name: Norway reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-no.md
-            - name: Poland reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-pl.md
-            - name: Spain reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-es.md
-            - name: Sweden reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-se.md
-            - name: Switzerland reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-ch.md
-            - name: The United Kingdom reporting
-              href: localizations/emea-reporting-for-multiple-vat-registrations-uk.md
+            - name: Supported reports for countries/regions
+              items: 
+              - name: Austria  
+                href: localizations/emea-reporting-for-multiple-vat-registrations-at.md
+              - name: Belgium  
+                href: localizations/emea-reporting-for-multiple-vat-registrations-be.md
+              - name: Czechia
+                href: localizations/emea-reporting-for-multiple-vat-registrations-cz.md
+              - name: Denmark 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-dk.md
+              - name: Finland  
+                href: localizations/emea-reporting-for-multiple-vat-registrations-fi.md
+              - name: France 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-fr.md
+              - name: Germany 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-de.md
+              - name: Netherlands 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-nl.md
+              - name: Norway 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-no.md
+              - name: Poland 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-pl.md
+              - name: Spain 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-es.md
+              - name: Sweden 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-se.md
+              - name: Switzerland 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-ch.md
+              - name: United Kingdom 
+                href: localizations/emea-reporting-for-multiple-vat-registrations-uk.md
           - name: Enable Tax Calculation for transfer order
             items: 
             - name: Tax feature support for transfer orders
