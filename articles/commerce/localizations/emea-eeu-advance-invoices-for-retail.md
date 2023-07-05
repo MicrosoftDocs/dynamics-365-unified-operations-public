@@ -2,7 +2,7 @@
 title: Advance invoices for Commerce for Eastern Europe
 description: This article explains how to set up advance notices for Commerce for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 06/30/2023
+ms.date: 07/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,16 +38,16 @@ The following scenarios are supported:
 
 ## Set up advance invoices
 
-### Enable the functionality for creating advance invoices
+### Enable the functionality to create advance invoices
 
 You must enable the following feature in the **Feature management** workspace:
 
 - Enable posting advance invoices from POS
 
 > [!IMPORTANT]
-> This step is required only if you are using Commerce version 10.0.35 or later. If you are using Commerce version 10.0.34 or earlier, you must follow [Deployment guidelines for Advance Invoice report printing](./emea-eeu-deployment.md) to configure extensions for channel components.
+> This step is required only if you are using Commerce version 10.0.35 or later. If you are using Commerce version 10.0.34 or earlier, follow the [Deployment guidelines for Advance Invoice report printing](./emea-eeu-deployment.md) to configure extensions for channel components.
 
-You must then enable the **Create advance invoice for deposit** option on the **Order** FastTab of the **Customer orders** tab of the **Commerce parameters** page.
+Then, on the **Commerce parameters** page, on the **Customer orders** tab, on the **Order** FastTab, enable the **Create advance invoice for deposit** option.
 
 ### Define the parameters for posting advance invoices
 
