@@ -29,7 +29,7 @@ As of Microsoft Dynamics 365 Finance version **10.0.29**, the JPK-V7M feature su
 Depending on periodicity of VAT return rporting obligation, company VAT registered in Poland may report JPK-V7 in one of the following format:
 
 - **JPK-V7M** - for taxpayers who are required to submit the VAT registers and declaration part monthly. Taxpayers are obliged to complete all JPK-V7M elements in the XML file, i.e. `Naglówek`, `Podmiot1`, `Deklaracja` and `Ewidencja`.
-- **JPK-V7K** - for taxpayers who are required to submit the VAT registers part monthly, and the declaration part quarterly. Taxpayers in JPK-V7K for the first two months of the quarter should fill in the following elements in the XML file, i.e.: `Naglówek`, `Podmiot1`, `Ewidencja`. But for the third month of the quarter should fill in all JPK-V7K elements in the XML file, i.e.: `Naglówek`, `Podmiot1`, `Deklaracja`, `Ewidencja`, but the `Deklaracja` applies to data for the entire quarter, while the `Ewidencja` covers data only for the last month of the quarter.
+- **JPK-V7K** - for taxpayers who are required to submit the VAT registers part monthly, and the declaration part quarterly. Taxpayers in JPK-V7K for the first two months of the quarter should fill in the following elements in the XML file, i.e.: `Naglówek`, `Podmiot1`, `Ewidencja`. But for the third month of the quarter should fill in all JPK-V7K elements in the XML file, i.e.: `Naglówek`, `Podmiot1`, `Deklaracja`, `Ewidencja`, but the `Deklaracja` applies to data for the entire quarter, while the `Ewidencja` covers data only for the last month of the quarter. **JPK-V7K** schema is supported as of Microsoft Dynamics 365 Finance version **10.0.36**.
 
 ## Prerequisites
 
