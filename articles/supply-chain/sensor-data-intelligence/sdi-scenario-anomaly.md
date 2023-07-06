@@ -34,7 +34,7 @@ To use this feature, your system must meet the following requirements:
 
 ## Prepare demo data for the anomaly detection scenario
 
-If you want to use a demo system to test the anomaly detection scenario, use a system where the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed, select the *USMF* legal entity (company), and prepare the additional demo data as described in this section. If you're using your own sensors and data, you can skip this section.
+If you want to use a demo system to test the anomaly detection scenario, use a system where the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Select the *USMF* legal entity (company), and prepare the additional demo data as described in this section. If you're using your own sensors and data, you can skip this section.
 
 If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
@@ -75,7 +75,7 @@ The following illustration shows an example of an anomaly notification.
 
 ## Define the amount of time that's used for anomaly detection
 
-To detects anomalies, the system applies a sliding window. In other words, it considers the most recent sensor readings that are received over a fixed period to determine whether the current sensor reading is an anomaly.
+To detect anomalies, the system applies a sliding window. In other words, it considers the most recent sensor readings that are received over a fixed period to determine whether the current sensor reading is an anomaly.
 
 To adjust the size of the window, go to the Azure Stream Analytics resource that's named *msdyn-iiot-sdi-asset-univariate-anomaly-detection-*, and then go to the query. On line 48, adjust the parameters of `SlidingWindow` as required. The sliding window that's used for anomaly detection should be between 12 and 8,640 seconds. Typically, a larger number will help the Anomaly Detection service learn the pattern and detect anomalies more accurately. The default window is 1,000 seconds.
 
