@@ -63,7 +63,7 @@ Follow these steps to deploy the required resources on Azure.
     - **Region** – Select a region, ideally the region where your Supply Chain Management environment is deployed. Keep in mind that Azure regions have different pricing. You can view estimated costs for your region by using the [Sensor Data Intelligence price calculator](https://azure.com/e/c36c4947ebff4215b2e62590c2a24c68).
     - **Supply Chain Management environment URL** – Enter the URL for your Supply Chain Management environment.
     - **Reuse existing Azure IoT Hub** – Leave this checkbox cleared.
-    - **Deploy resources for Anomaly Detection scenario for Asset Management** – Select this checkbox if you want to use the [Anomaly Detection scenario](sdi-scenario-anomaly.md).
+    - **Deploy resources for Anomaly Detection scenario for Asset Management** – Select this checkbox if you want to use the [anomaly detection scenario](sdi-scenario-anomaly.md).
 
 1. Select **Next: Review + Create**.
 1. On the **Custom deployment** page, verify that the validation has passed, and then select **Create**.
