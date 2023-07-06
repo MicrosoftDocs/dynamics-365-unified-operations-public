@@ -6,17 +6,17 @@ description: This article describes how to set up bar code mask characters, bar 
 author: BrianShook
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
-# ROBOTS: 
+# ROBOTS:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
@@ -73,6 +73,10 @@ As an example, to create a bar code mask with mask ID 'Product', you'd do the fo
 3. Provide a prefix to be used to easily identify the bar code. For example, '22'.
 4. Add a mask segment. The 'Product' mask segment will be selected.
 5. Provide a length for the product segment, for example, '10'. The length should match the length of a product ID commonly used in the store. The mask will be displayed as a preview in the **General** section under **Mask**.
+
+> [!NOTE]
+> If you are using number sequence to generate bar codes which has the bar code mask, since 10.0.32 the bar code prefix will only be inserted to the head after bar code is processed from the number sequence. As a result, you will need to make sure the length of number sequence's segments is less than or equal to the length of bar code mask's segments.
+> Additionally, if you are using bar code types such as EAN13, EAN8, UPCA, UPCE which have a check digit, you will need to make sure the length of number sequence's segments is less than the length of bar code mask's segments.
 
 ## Assign bar code masks to bar codes
 
