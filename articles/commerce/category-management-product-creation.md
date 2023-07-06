@@ -2,21 +2,21 @@
 # required metadata
 
 title: Manage product categories and products
-description: This article describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
+description: This article describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details.
 author: ashishmsft
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
-# ROBOTS: 
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+# ms.tgt_pltfrm:
+ms.custom:
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: global
 ms.search.industry: Retail
@@ -56,6 +56,9 @@ Additionally, in the enhanced product category structure, a merchandising manage
 You can use the new enhanced structure for product properties to select updated product properties that must be pushed to the associated products. On the **Commerce product hierarchy** page, on the Action Pane, select **Category**, and then select **Update products** to open the **Update products** dialog box.
 
 ![Update products dialog box.](media/NewUpdateProductsEnhancedView.PNG)
+
+> [!NOTE]
+> If you use "Schedule batch job" from the **Update products** dialog, you can find the log via **System administration \> Inquiries \> Batch jobs** form. Find the **Update products** batch job, then **Batch job history** menu, **Log** menu, click the top-right **Message details** button to see if any warning or error in the log.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
