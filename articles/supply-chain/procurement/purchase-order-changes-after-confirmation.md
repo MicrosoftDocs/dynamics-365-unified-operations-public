@@ -19,7 +19,7 @@ ms.custom: bap-template
 > [!IMPORTANT]
 > Some or all of the functionality that's described in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
-> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the US**, and they are shown only in English. All other functionality is globally available.
+> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
 
 <!--KFM: Preview until further notice -->
 
@@ -84,7 +84,7 @@ Follow these steps to install the Copilot application in your Supply Chain Manag
 1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
 1. Select **Get it now**.
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
-1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is *Installing*. After the installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed* and you can find details about the error in the **Notifications** field.
+1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is **Installing**. After the installation is complete, the status changes to **Installed**. If an error occurs, the status changes to **Failed** and you can find details about the error in the **Notifications** field.
 
 ### Step 6: Enable the required security roles
 
@@ -102,7 +102,7 @@ The workspace lists all previously confirmed purchase orders that have been chan
 
 At the top of the workspace, the three tiles summarize groups of changes to confirmed purchase orders and the related downstream impacts. 
 
-In preview the grouping is predefined and limited to pegged orders that have been created by planning.
+In preview, the grouping is predefined and limited to pegged orders that have been created by planning.
 
 - **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream orders that have been created by planning, also called pegged orders. A summary of changes is generated to help you review and validate the purchase orders.
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on pegged orders. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
