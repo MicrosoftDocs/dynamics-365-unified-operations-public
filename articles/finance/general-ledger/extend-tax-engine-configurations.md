@@ -361,7 +361,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 1. Go to **Tax document** > **Header** > **Lines**. Click the **Formulas** tab.
 2. Change any formulas that contain the **Base Amount**, **Line tax amount**, and **Tax amount included in price** measures, so that the formulas reflect UTGST. For example, change the **Tax amount inclusive** formula as shown here.
 
-   ![Tax amount inclusive formula.](media/gte-tax-amount-inclusive.png)
+   ![Tax amount inclusive formula.](media/gte-tax-amount-update-formula.png)
 	
 3. Save the tax document.
 4. Close the designer.
