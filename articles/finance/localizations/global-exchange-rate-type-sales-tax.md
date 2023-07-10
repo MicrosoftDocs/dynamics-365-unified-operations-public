@@ -78,4 +78,64 @@ For _Sales tax payable_ sales tax direction, the tax difference is posted with a
 
 ### Example
 
+Let’s review the scenario when a legal entity issues an invoice in a foreign currency (e.g., a Free text invoice 1100 USD, incl. VAT 10%), and you need to calculate VAT based on the special exchange rate.
+       
+   | Currency  |Curency code |
+|---|---|
+| Legal entity accounting currency | EUR |
+| Legal entity reporting currency | USD |
+| Tax code currency | PLN |
+| Transaction currency | USD |
+
+
+Exchange rates for business accounting purposes, set up in the **Ledger**:
+
+| Currency code |Exchange rate |
+|---|---|
+|EUR : USD| 1 : 1.09 |
+|EUR : PLN| 1 : 4.44 |
+|USD : PLN| 1 : 4.07 |
+
+Exchange rates for tax calculation purposes, set up in the **General ledger parameters**, **Sales tax** tab:
+
+| Currency code |Exchange rate |
+|---|---|
+|EUR : USD| 1 : 1.09 |
+|EUR : PLN| 1 : 4.46 |
+|USD : PLN| 1 : 4.06 |
+
+Review the calculated sales tax, click **Sales tax button** in **Free text invoice**:
+
+Screenshot
+
+In the **Temporary sales tax transactions**, you can review the exchange rates, amount origin and tax amounts in accounting currency, reporting currency and tax currency. These amounts are shown for both exchange rate types, the one that is set in the **Ledger** and the one set in the **General ledger parameters**.
+
+SCREENSHOT
+
+On the **Adjustment** tab you can adjust tax amounts in accounting currency and in tax currency.
+
+> [!NOTE]
+> In our example the reporting currency and transaction currency are the same (USD), thus the exchange rate for the reporting currency is not editable.
+> 
+
+On the **Subledger journal** page you can view amounts and accounts for the calculated sales tax difference. In our example, the exchange rate of currencies pair EUR-USD is different for the Accounting currency exchange rate type in the **Ledger** and **Sales tax payable exchange rate type** in the **General ledger parameters**.
+
+SCREENSHOTs with tax trans and subledger
+
+After document is posted, you can review the voucher and posted sales tax transactions. The tax difference is posted with a **Sales tax payable difference** tax direction. 
+
+> [!NOTE]
+> For this example purposes, to demo the postings, all the ledger accounts are different.
+> 
+> To reflect the tax difference on the sales tax payable and sales tax receivable tax accounts, you can pick them in the Sales tax payable difference and  Sales tax receivable difference, respectively.
+> 
+
+> [!NOTE]
+> In case tax currency differs from accounting and reporting currency, the tax difference amounts in tax currency are recorded in sales tax transaction only.
+> 
+> In voucher, the tax difference is recorded in accounting and reporting currency on ledger accounts that are set in sales tax code posting.
+> 
+
+
+
 
