@@ -1786,6 +1786,8 @@
               href: localizations/tasks/Tax-feature-support-for-transfer-order.md?context=/dynamics365/context/finance
             - name: Print tax information on transfer order documents
               href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?context=/dynamics365/context/finance
+          - name: Enable exchange rate types for sales tax
+            href: localizations/global-exchange-rate-type-sales-tax.md?context=/dynamics365/context/finance     
           - name: Extension
             items: 
             - name: Tax integration design
