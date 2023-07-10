@@ -60,8 +60,7 @@ Select exchange rate types in the **Sales tax receivable exchange rate type** an
 
 Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
 
-PostingAccountsSalesTaxTaxExchRate_3-1.PNG
-
+![PostingAccountsSalesTaxTaxExchRate.](media/PostingAccountsSalesTaxTaxExchRate_3-1.PNG)
 
 ## Overview
 
@@ -112,7 +111,7 @@ Exchange rates for tax calculation purposes, set up in the **General ledger para
 
 Review the calculated sales tax, click **Sales tax button** in **Free text invoice**:
 
-SalesTaxTransactionsTaxExchRate_4.PNG
+![SalesTaxTransactionsTaxExchRate.](media/SalesTaxTransactionsTaxExchRate_4.PNG)
 
 In the **Temporary sales tax transactions**, you can review the exchange rates, amount origin and tax amounts in accounting currency, reporting currency and tax currency. These amounts are shown for both exchange rate types, the one that is set in the **Ledger** and the one set in the **General ledger parameters**.
 
@@ -124,16 +123,16 @@ On the **Adjustment** tab you can adjust tax amounts in accounting currency and 
 
 On the **Subledger journal** page you can view amounts and accounts for the calculated sales tax difference. In our example, the exchange rate of currencies pair EUR-USD is different for the Accounting currency exchange rate type in the **Ledger** and **Sales tax payable exchange rate type** in the **General ledger parameters**.
 
-SalesTaxTransactionsTaxExchRate_4-1.PNG
+![SalesTaxTransactionsTaxExchRate.](media/SalesTaxTransactionsTaxExchRate_4-1.PNG)
 
-SalesTaxTransactionsTaxExchRateSubledger_4-2.PNG
-
+![SalesTaxTransactionsTaxExchRateSubledger.](media/SalesTaxTransactionsTaxExchRateSubledger_4-2.PNG)
 
 After document is posted, you can review the the posted sales tax transactions and voucher. The tax difference is posted with a **Sales tax payable difference** tax direction. 
 
-PostedSalesTaxTaxExchRate_5-1
+![PostedSalesTaxTaxExchRate.](media/PostedSalesTaxTaxExchRate_5-1.PNG)
 
-VoucherTaxExchRate_5-1.PNG
+![PVoucherTaxExchRate.](media/VoucherTaxExchRate_5-1.PNG)
+
 
 > [!NOTE]
 > For this example purposes, to demo the postings, all the ledger accounts are different.
