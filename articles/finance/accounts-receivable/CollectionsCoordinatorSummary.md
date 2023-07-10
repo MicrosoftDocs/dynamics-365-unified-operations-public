@@ -93,11 +93,13 @@ You must grant explicit consent for Dynamics 365 finance and operations apps to 
 
 ### Assign roles to Dataverse users
 
-Users in Dataverse must be assigned the **AIB** role.
+Users in Dataverse must be assigned the **Finance and Operations AI** role and the **AIB** role.
 
 1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
 1. Select **Settings** at the top of the page.
 1. Expand **Users and Permissions**, and select **Security roles**.
+1. Find the **Finance and Operations AI** role.
+1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 1. Find the **AIB** role.
 1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 
