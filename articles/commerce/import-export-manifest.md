@@ -44,30 +44,30 @@ The following table shows the schema for asset import and export operations.
 
 | Column name                          | Description |
 |--------------------------------------|-------------|
-| InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). |
-| MediaChannel                         | The name of the channel that the asset is exported from. |
+| InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field is required to be empty when importing new assets. |
+| MediaChannel                         | The name of the e-Commerce channel that the asset is exported from or needs to be imported to. |
 | MediaLocale                          | The locale of the asset. |
-| MediaType                            | The type of the asset. |
-| MediaVersion                         | The version number of the asset. |
-| MediaCategory                        | The Commerce media category. |
-| MediaSourceProvider                  | The external system that the asset is imported from. |
+| MediaType                            | The type of the asset, either Image, Video or File. |
+| MediaVersion                         | The version number of the asset. In combination with MediaVersionMismatchAction, user can control the import behavior in case the media asset has been modified between export and import. |
+| MediaCategory                        | The Commerce media category. Either None (default), Products, Categories, Customers, Workers, Catalogs, Size, Color or Style. |
+| MediaSourceProvider                  | The external system that the asset is imported from. This in combination with MediaSourceId is used to determine if the asset already exists in the system and should be updated. If MediaSourceProvider and MediaSourceId are not populated, InternalMediaId, MediaChannel and MediaLocale is used instead. |
 | MediaSourceId                        | The identifier in the external system. |
 | MediaReferenceUrl                    | The URL of the external provider (instead of `MediaImportPath`). |
-| MediaSourceIfExistsAction            | *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
-| MediaAction                          | *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
-| MediaCheckedOutAction                | *UseExisting* or *Overwrite*. |
-| MediaVersionMismatchAction           | *UseExisting* or *Overwrite*. |
-| MediaImportPath                      | Either the HTTP source URL or the file name. |
+| MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
+| MediaAction                          | Action that should be applied on the asset during the manifest import. *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
+| MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. *UseExisting* or *Overwrite*. |
+| MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. *UseExisting* or *Overwrite*. |
+| MediaImportPath                      | Either the HTTP source URL or the file name. Media asset will be imported from this location (either local file upload or system fetching the media asset binary from external publicly accessible web location). |
 | ImageAltText                         | Alt text for an image asset. |
 | MediaSearchTags                      | Keywords that describe the asset (comma separated). |
 | MediaCaption                         | The caption for a video asset. |
 | MediaDisplayName                     | The display name of the asset. The value must be unique within a site. |
 | MediaDescription                     | A description of a video asset. |
-| VideoCaptionImportPath               | The URL of the captions for a video asset. |
-| VideoThumbnailImportPath             | The URL of the thumbnail for a video asset. If none is specified, it's automatically generated. |
-| VideoTranscriptImportPath            | The URL of the transcript for a video asset. |
-| VideoAudioTrackImportPath            | The URL of the additional audio track for a video asset. |
-| VideoDescriptiveAudioTrackImportPath | The URL of the descriptive audio track for a video asset. |
+| VideoCaptionImportPath               | Publicly accessible http source URL of the captions for a video asset. |
+| VideoThumbnailImportPath             | Publicly accessible http source URL of the thumbnail for a video asset. If none is specified, it's automatically generated. |
+| VideoTranscriptImportPath            | Publicly accessible http source URL of the transcript for a video asset. |
+| VideoAudioTrackImportPath            | Publicly accessible http source URL of the additional audio track for a video asset. |
+| VideoDescriptiveAudioTrackImportPath | Publicly accessible http source URL of the descriptive audio track for a video asset. |
 | VideoPlaytime                        | The playtime of a video asset (in seconds). |
 | MediaCreatedOn                       | The date and time when the asset was created. |
 | MediaLastModifiedOn                  | The date and time when the asset was last modified. |
@@ -75,10 +75,10 @@ The following table shows the schema for asset import and export operations.
 | MediaPublishedOn                     | The date and time when the asset was published. |
 | MediaPublishedURL                    | The URL of the published asset. |
 | MediaPreviewURL                      | The preview URL for the asset (requires sign-in). |
-| ImageQuality                         | The quality of an image asset. |
+| ImageQuality                         | Estimated quality of an image asset. |
 | ImageWidth                           | The width of an image asset. |
 | ImageHeight                          | The height of an image asset. |
-| MediaChecksum                        | The hash of an image asset binary. |
+| MediaChecksum                        | The hash (checksum) of an image asset binary. |
 | MediaTitle                           | The title of a video asset. |
 | VideoSubtitle                        | The URL of the subtitles for a video asset. |
 | VideoMinimumAge                      | The minimum age for a video asset. |
@@ -87,6 +87,10 @@ The following table shows the schema for asset import and export operations.
 | ResultTime                           | The time when the current row was processed. |
 | ErrorCode                            | An error code. |
 | ResultDescription                    | A detailed description of the result (for example, an error description). |
+
+MediaSourceProvider and MediaSourceId can be used to indicate the external source and id of the media asset in e.g. external CMS. If MediaSourceProvider and MediaSourceId are provided, they are used to determine if the same assets have been imported earlier and should be updated. If they are not available, InternalMediaId, MediaChannel and MediaLocale are used to match media assets being imported to media assets already in the system.
+
+Most of the fields descibed above are optional in the manifest and they can be left out completely, including from the header.
 
 #### Mandatory fields for manifest import (for new assets)
 
@@ -107,7 +111,7 @@ The following table shows the schema for asset import and export operations.
 - MediaDisplayName
 - MediaTitle (for video assets)
 
-The columns in an import manifest can be in any order. Export manifests always contain all available fields for assets. (The available fields depend on the asset type.)
+The columns in an import manifest can be in any order as long as data is aligned with the header. Export manifests always contain all available fields for assets. (The available fields depend on the asset type.)
 
 The same manifest schema can be used for product media assignments. Product media assignment manifests must also include the mandatory fields of the base asset manifest. For information about product media assignments, see [Assign media to products and categories](assign-media-omnichannel.md).
 
@@ -119,14 +123,14 @@ The following table shows the schema extension for product media assignments.
 |-------------------------------------|-------------|
 | EntityType                          | The product assignment target for the current row (for example, *Master*, *Variant*, *DimensionMatrix*, or *Category*). |
 | EntityKey                           | A value that specifies what's used as the key for the assignment in the `EntityKeyValue` field (for example, *ProductNumber*, *RecordId*, or *CategoryID*). |
-| EntityKeyValue                      | The value of the key that's specified in `EntityKey`. |
-| EntityLocale                        | The locale of the product assignment. |
+| EntityKeyValue                      | The value of the key that's specified in `EntityKey`. For DimensionMatrix the dimensions are pipe separated and keys are separated from values using colon. |
+| EntityLocale                        | The locale of the product assignment (e.g. en-us, de-de or system_neutral for locale agnostic). |
 | CatalogNumber                       | The catalog number that the assignment is associated with. |
-| EntityChannel                       | The channel operating unit number (OUN) that's associated with the assignment. |
+| EntityChannel                       | The channel operating unit number (OUN) that's associated with the assignment. Has to be prefixed with “OUN” e.g. OUN007, OUN116 |
 | EntityAssignmentCurrentPublishState | The publish state of the assignment. |
-| EntityAssignmentAction              | *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
-| EntityCheckedOutAction              | *UseExisting* or *Overwrite*. |
-| EntityVersionMismatchAction         | *UseExisting* or *Overwrite*. |
+| EntityAssignmentAction              | Action that should be applied on the product media assignment during the manifest import. *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
+| EntityCheckedOutAction              | Import behavior if the product media assignment is checked out for editing. *UseExisting* or *Overwrite*. |
+| EntityVersionMismatchAction         | Import behavior if the existing product media assignment in the system has been updated (version differs) between the export and import of the manifest. *UseExisting* or *Overwrite*. |
 | MediaGroup                          | The media group of the asset (*Primary* or *Additional*). |
 | MediaPurpose                        | The purpose of the asset (free text). |
 | MediaDisplayOrder                   | The display order. |
