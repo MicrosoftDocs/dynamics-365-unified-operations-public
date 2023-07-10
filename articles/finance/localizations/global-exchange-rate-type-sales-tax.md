@@ -33,8 +33,8 @@ This functionality is available only for the legal entities with the enabled Tax
 
 In addition, enable the following features in the **Feature management** workspace:
 
-•	Date of VAT register [Tax point date (Date of VAT register)](emea-tax-point-date.md).
-•	Enable exchange rate types for sales tax
+ - Date of VAT register [Tax point date (Date of VAT register)](emea-tax-point-date.md).
+ - Enable exchange rate types for sales tax
 
 After enabling features, you might need to refresh the page to get the UI updated. 
 
@@ -47,19 +47,20 @@ It is recommended to enable this parameter in a new tax settlement period. Make 
 
 Once the functionality is enabled, you will receive a message: "By enabling this parameter, you are changing the tax calculation method for operations in foreign currency. Tax amounts will be converted directly from the transaction currency to the tax currency using the exchange rates set for the exchange rate types for sales tax. And the “Sales tax conversion” option will be disabled. Because this option controls how to convert tax amount from transaction currency to tax currency - via either Accounting currency or Reporting currency."
 
-GLParamenters_EnableExchangeRateType_1.JPG
+![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_1.JPG)
+
 
 Also, make sure that you run the “Recalculate tax” task(s) located on the “Sales tax codes” page under the “Recalculate tax” group: “Unposted transactions that use the selected taxes” and/or “All unposted transactions”. This procedure will help to update exchange rates for the calculated tax amounts for already created but not posted sales tax transactions.
 
-GLParamenters_EnableExchangeRateType_2.JPG
+![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_2.JPG)
 
 Select exchange rate types in the **Sales tax receivable exchange rate type** and **Sales tax payable exchange rate type**, that will be used for purchase and sales operations. If the fields remain blank, the exchange rate will be taken from the exchange rate type set on the **Ledger** page.
 
-GLParamenters_EnableExchangeRateType_3.JPG
+![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_3.JPG)
 
 Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
 
-PostingAccountsSalesTaxTaxExchRate_3-1.JPG
+PostingAccountsSalesTaxTaxExchRate_3-1.PNG
 
 
 ## Overview
