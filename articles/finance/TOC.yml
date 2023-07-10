@@ -2465,7 +2465,7 @@
             - name: VAT exchange rates
               href: localizations/emea-vat-exchange-rate.md
             - name: VAT reconciliation report
-              href: localizations/tasks/eur-00018-vat-reconciliation-report.md
+              href: localizations/emea-tax-reconciliation-report.md
             - name: VAT register transactions for Eastern Europe
               href: localizations/emea-vat-register-transactions.md
             - name: Tax point date (Date of VAT register)
@@ -2634,6 +2634,8 @@
             href: localizations/tasks/set-up-mandatory-payment-references.md
           - name: Update vendor invoice declarations and generate the report
             href: localizations/tasks/update-vendor-invoice-declarations-report.md
+          - name: Tax reconciliation report
+            href: localizations/emea-tax-reconciliation-report.md
         - name: India
           items:
           - name: India overview
@@ -3454,6 +3456,8 @@
             href: localizations/emea-nor-nets-import-format.md
           - name: VAT statement
             href: localizations/emea-nor-sales-tax-payment-report.md
+          - name: Tax reconciliation report
+            href: localizations/emea-tax-reconciliation-report.md
           - name: VAT return with direct submission to Altinn
             items: 
             - name: Overview of VAT return with direct submission to Altinn
