@@ -11,7 +11,7 @@ ms.reviewer: kfend
 ms.search.region: 
 ms.author: epodkolzina
 ms.search.validFrom: 
-ms.dyn365.ops.version: AX 10.0.36
+ms.dyn365.ops.version: AX 10.0.35
 ---
 
 # Exchange rate type for sales tax
@@ -47,15 +47,20 @@ It is recommended to enable this parameter in a new tax settlement period. Make 
 
 Once the functionality is enabled, you will receive a message: "By enabling this parameter, you are changing the tax calculation method for operations in foreign currency. Tax amounts will be converted directly from the transaction currency to the tax currency using the exchange rates set for the exchange rate types for sales tax. And the “Sales tax conversion” option will be disabled. Because this option controls how to convert tax amount from transaction currency to tax currency - via either Accounting currency or Reporting currency."
 
+GLParamenters_EnableExchangeRateType_1.JPG
+
 Also, make sure that you run the “Recalculate tax” task(s) located on the “Sales tax codes” page under the “Recalculate tax” group: “Unposted transactions that use the selected taxes” and/or “All unposted transactions”. This procedure will help to update exchange rates for the calculated tax amounts for already created but not posted sales tax transactions.
+
+GLParamenters_EnableExchangeRateType_2.JPG
 
 Select exchange rate types in the **Sales tax receivable exchange rate type** and **Sales tax payable exchange rate type**, that will be used for purchase and sales operations. If the fields remain blank, the exchange rate will be taken from the exchange rate type set on the **Ledger** page.
 
-SCREENSHOT
+GLParamenters_EnableExchangeRateType_3.JPG
 
 Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
 
-SCREENSHOT
+PostingAccountsSalesTaxTaxExchRate_3-1.JPG
+
 
 ## Overview
 
@@ -92,7 +97,7 @@ Exchange rates for business accounting purposes, set up in the **Ledger**:
 
 | Currency code |Exchange rate |
 |---|---|
-|EUR : USD| 1 : 1.09 |
+|USD : EUR| 1 : 0.92 |
 |EUR : PLN| 1 : 4.44 |
 |USD : PLN| 1 : 4.07 |
 
@@ -100,17 +105,15 @@ Exchange rates for tax calculation purposes, set up in the **General ledger para
 
 | Currency code |Exchange rate |
 |---|---|
-|EUR : USD| 1 : 1.09 |
+|USD : EUR| 1 : 0.93 |
 |EUR : PLN| 1 : 4.46 |
 |USD : PLN| 1 : 4.06 |
 
 Review the calculated sales tax, click **Sales tax button** in **Free text invoice**:
 
-Screenshot
+SalesTaxTransactionsTaxExchRate_4.PNG
 
 In the **Temporary sales tax transactions**, you can review the exchange rates, amount origin and tax amounts in accounting currency, reporting currency and tax currency. These amounts are shown for both exchange rate types, the one that is set in the **Ledger** and the one set in the **General ledger parameters**.
-
-SCREENSHOT
 
 On the **Adjustment** tab you can adjust tax amounts in accounting currency and in tax currency.
 
@@ -120,9 +123,16 @@ On the **Adjustment** tab you can adjust tax amounts in accounting currency and 
 
 On the **Subledger journal** page you can view amounts and accounts for the calculated sales tax difference. In our example, the exchange rate of currencies pair EUR-USD is different for the Accounting currency exchange rate type in the **Ledger** and **Sales tax payable exchange rate type** in the **General ledger parameters**.
 
-SCREENSHOTs with tax trans and subledger
+SalesTaxTransactionsTaxExchRate_4-1.PNG
 
-After document is posted, you can review the voucher and posted sales tax transactions. The tax difference is posted with a **Sales tax payable difference** tax direction. 
+SalesTaxTransactionsTaxExchRateSubledger_4-2.PNG
+
+
+After document is posted, you can review the the posted sales tax transactions and voucher. The tax difference is posted with a **Sales tax payable difference** tax direction. 
+
+PostedSalesTaxTaxExchRate_5-1
+
+VoucherTaxExchRate_5-1.PNG
 
 > [!NOTE]
 > For this example purposes, to demo the postings, all the ledger accounts are different.
