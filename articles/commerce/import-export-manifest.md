@@ -63,11 +63,11 @@ The following table shows the schema for asset import and export operations.
 | MediaCaption                         | The caption for a video asset. |
 | MediaDisplayName                     | The display name of the asset. The value must be unique within a site. |
 | MediaDescription                     | A description of a video asset. |
-| VideoCaptionImportPath               | Publicly accessible http source URL of the captions for a video asset. |
-| VideoThumbnailImportPath             | Publicly accessible http source URL of the thumbnail for a video asset. If none is specified, it's automatically generated. |
-| VideoTranscriptImportPath            | Publicly accessible http source URL of the transcript for a video asset. |
-| VideoAudioTrackImportPath            | Publicly accessible http source URL of the additional audio track for a video asset. |
-| VideoDescriptiveAudioTrackImportPath | Publicly accessible http source URL of the descriptive audio track for a video asset. |
+| VideoCaptionImportPath               | Publicly accessible HTTP source URL of the captions for a video asset. |
+| VideoThumbnailImportPath             | Publicly accessible HTTP source URL of the thumbnail for a video asset. If none is specified, it's automatically generated. |
+| VideoTranscriptImportPath            | Publicly accessible HTTP source URL of the transcript for a video asset. |
+| VideoAudioTrackImportPath            | Publicly accessible HTTP source URL of the additional audio track for a video asset. |
+| VideoDescriptiveAudioTrackImportPath | Publicly accessible HTTP source URL of the descriptive audio track for a video asset. |
 | VideoPlaytime                        | The playtime of a video asset (in seconds). |
 | MediaCreatedOn                       | The date and time when the asset was created. |
 | MediaLastModifiedOn                  | The date and time when the asset was last modified. |
@@ -88,9 +88,9 @@ The following table shows the schema for asset import and export operations.
 | ErrorCode                            | An error code. |
 | ResultDescription                    | A detailed description of the result (for example, an error description). |
 
-MediaSourceProvider and MediaSourceId can be used to indicate the external source and id of the media asset in e.g. external CMS. If MediaSourceProvider and MediaSourceId are provided, they are used to determine if the same assets have been imported earlier and should be updated. If they are not available, InternalMediaId, MediaChannel and MediaLocale are used to match media assets being imported to media assets already in the system.
+You can use `MediaSourceProvider` and `MediaSourceId` to indicate the external source and ID of the media asset (for example, an external CMS). If `MediaSourceProvider` and `MediaSourceId` values are provided, they're used to determine if the same assets have been imported earlier and should be updated. If `MediaSourceProvider` and `MediaSourceId` values aren't available, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used to match media assets being imported to media assets already present in the system.
 
-Most of the fields descibed above are optional in the manifest and they can be left out completely, including from the header.
+Most of the fields described above are optional in the manifest and can be left out completely, including from the header.
 
 #### Mandatory fields for manifest import (for new assets)
 
