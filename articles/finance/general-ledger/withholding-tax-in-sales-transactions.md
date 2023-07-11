@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax in sales transactions
-description: This article lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
+description: This article lists the steps for enabling the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default withholding tax group. 
 author: kailiang
 ms.date: 01/12/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Withholding tax in sales transactions
 
-This article lists the steps for avoiding the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page. 
+This article lists the steps for enabling the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page. 
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.
 
@@ -62,6 +62,8 @@ For items/services, which are liable to withholding tax, you can assign the defa
 Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page. 
 
 The default Withholding tax group and Item withholding tax group will be used as default entries on sales order lines when you create a new sales order.
+   > [!NOTE] 
+   > Starting 10.0.32, withholding tax group and Item withholding tax group fields are integrated into the lines on the **Free text invoice**. Withholding tax will be calculated and posted when free text invoices are settled.
 
 Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
 
