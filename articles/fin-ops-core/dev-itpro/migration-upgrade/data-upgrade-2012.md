@@ -82,6 +82,8 @@ After the database is restored, stop the following services:
 - Microsoft Dynamics Lifecycle Services Diagnostic Service
 - World wide web publishing service
 
+> [!NOTE]
+> Ensure these services remained stopped during the upgrade. Rebooting the server will start these again. 
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
 ```sql
@@ -100,17 +102,18 @@ Finally, rename the newly restored AX 2012 database **AXDB**.
 To get the latest data upgrade deployable package for a target environment that is running the latest update, download the latest binary updates from LCS Shared asset library.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
-2. Select the **Shared asset library** tile.
-3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-4. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
+1. Select the **Shared asset library** tile.
+1. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
+1. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
 
     For example, if you're upgrading to version 10.0.26, the package name will be **AX2012DataUpgrade-10.0.26**.
 
-5. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
-6. Select and hold (or right-click) the download, and then select **Properties**.
-7. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
-8. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
-9. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
+1. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
+1. Select and hold (or right-click) the download, and then select **Properties**.
+1. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
+1. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
+1. Ensure the services you stopped in the **Download and restore the backup to the customer-managed development environment** step above are still stopped. If these are running, you will get locking issues on the database. 
+1. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
 
     ```PowerShell
     .\AXUpdateInstaller.exe generate -runbookid="MajorVersionDataUpgrade-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="MajorVersionDataUpgrade-runbook.xml"
