@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.16
 
 # Withholding tax in sales transactions
 
-This article lists the steps for enablingto enable the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page. 
+This article lists the steps to enable the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page. 
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.
 
@@ -61,13 +61,13 @@ For items/services, which are liable to withholding tax, you can assign the defa
 
 Withholding tax groups and Item withholding tax groups can be assigned using the **Sales order** page. 
 
-The default Withholding tax group and Item withholding tax group will be used as default entries on sales order lines when you create a new sales order.
+The default Withholding tax group and Item withholding tax group is used as default entries on sales order lines when you create a new sales order.
    > [!NOTE] 
    > Starting in version 10.0.32, the **Withholding tax group** and **Item withholding tax group** fields are integrated into the lines on the **Free text invoice** page. Withholding tax is calculated and posted when free text invoices are settled.
 
-Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code, as well as the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
+Withholding tax is calculated and posted with **Customer payment journal**. You can manually adjust the applicable withholding tax code and the actual withholding tax amount in the **Withholding tax** tab on the **Settle transactions** page.
 
-The calculated withholding tax amount will be deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
+The calculated withholding tax amount is deducted from the customer payment and posted to the **Withholding tax offset** account in a related voucher.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
