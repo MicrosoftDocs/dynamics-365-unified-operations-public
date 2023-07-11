@@ -2,8 +2,10 @@
   items:
   - name: Dynamics 365 Finance
     items:
-    - name: Dynamics 365 Finance home page
+    - name: Dynamics 365 Finance documentation
       href: index.md
+    - name: Welcome to Dynamics 365 Finance
+      href: 
     - name: What's new or changed 
       items: 
       - name: What's new or changed in finance and operations apps
