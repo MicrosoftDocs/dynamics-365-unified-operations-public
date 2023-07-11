@@ -72,7 +72,7 @@ The temporary amount of withholding tax is available in the field **Adjusted wit
 ![Withholding tax is included on the purchase order.](media/withholding-tax-adjusted.png)
 
    > [!NOTE] 
-   > Starting 10.0.33, a new option **Estimate withholding tax amount on invoice** is added to the **General ledger parameters > Withholding tax** tab. Once enabled, a Withholding tax buttion will be available on purchase order and vendor invoice to estimate the withholding tax amount.
+   > Starting in version 10.0.33, a new option **Estimate withholding tax amount on invoice** is available on the **Withholding tax** tab of the **General ledger parameters** page. When you enable this option, a **Withholding tax** button is available on purchase orders and vendor invoices to estimate the withholding tax amount.
 
 
 Withholding tax is calculated on **Vendor payment journal**. You can manually adjust the applicable withholding tax codes as well as the actual withholding tax amounts in the **Withholding tax** tab on the **Settle transactions** page.
