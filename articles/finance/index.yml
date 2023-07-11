@@ -22,7 +22,7 @@ highlightedContent:
     # Card
     - title: Welcome to Dynamics 365 Finance
       itemType: get-started
-      url: /dynamics365/finance
+      url: /dynamics365/finance/index.md
     # Card
     - title: What's new
       itemType: whats-new
