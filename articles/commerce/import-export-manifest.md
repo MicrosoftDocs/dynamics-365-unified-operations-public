@@ -47,16 +47,16 @@ The following table shows the schema for asset import and export operations.
 | InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field must be empty when importing new assets. |
 | MediaChannel                         | The name of the e-commerce channel that the asset is exported from, or needs to be imported to. |
 | MediaLocale                          | The locale of the asset. |
-| MediaType                            | The type of the asset (**Image**, **Video**, or **File**). |
-| MediaVersion                         | The version number of the asset. In combination with MediaVersionMismatchAction, user can control the import behavior in case the media asset has been modified between export and import. |
-| MediaCategory                        | The Commerce media category. Either None (default), Products, Categories, Customers, Workers, Catalogs, Size, Color or Style. |
-| MediaSourceProvider                  | The external system that the asset is imported from. This in combination with MediaSourceId is used to determine if the asset already exists in the system and should be updated. If MediaSourceProvider and MediaSourceId are not populated, InternalMediaId, MediaChannel and MediaLocale is used instead. |
+| MediaType                            | The type of the asset. Possible values are *Image*, *Video*, and *File*. |
+| MediaVersion                         | The version number of the asset. In combination with MediaVersionMismatchAction, you can control import behavior in case the media asset has been modified between export and import. |
+| MediaCategory                        | The Commerce media category. Possible values are *None* (default), *Products*, *Categories*, *Customers*, *Workers*, *Catalogs*, *Size*, *Color*, and *Style*. |
+| MediaSourceProvider                  | The external system that the asset is imported from. In combination with `MediaSourceId`, this is used to determine if the asset already exists in the system and should be updated. If `MediaSourceProvider` and `MediaSourceId` are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` are used instead. |
 | MediaSourceId                        | The identifier in the external system. |
 | MediaReferenceUrl                    | The URL of the external provider (instead of `MediaImportPath`). |
-| MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
-| MediaAction                          | Action that should be applied on the asset during the manifest import. *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
-| MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. *UseExisting* or *Overwrite*. |
-| MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. *UseExisting* or *Overwrite*. |
+| MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. Possible values are *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
+| MediaAction                          | Action that should be applied on the asset during the manifest import. Possible values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
+| MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. Possible values are *UseExisting* or *Overwrite*. |
+| MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. Possible values are *UseExisting* or *Overwrite*. |
 | MediaImportPath                      | Either the HTTP source URL or the file name. Media asset will be imported from this location (either local file upload or system fetching the media asset binary from external publicly accessible web location). |
 | ImageAltText                         | Alt text for an image asset. |
 | MediaSearchTags                      | Keywords that describe the asset (comma separated). |
