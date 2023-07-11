@@ -296,7 +296,7 @@ additionalContent:
       - url: /dynamics365/finance/localizations/e-invoicing-service-overview
         text: Electronic invoicing
       - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
-        text: Tax calculation Service
+        text: Tax Calculation 
     - title: Mobile apps
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
