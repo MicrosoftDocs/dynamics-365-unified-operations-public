@@ -45,7 +45,7 @@ We recommend you enable this parameter in a new tax settlement period. Make sure
 
 After you enable the functionality, you will receive the message, "By enabling this parameter, you are changing the tax calculation method for operations in foreign currency. Tax amounts will be converted directly from the transaction currency to the tax currency using the exchange rates set for the exchange rate types for sales tax. And the “Sales tax conversion” option will be disabled. Because this option controls how to convert tax amount from transaction currency to tax currency - via either Accounting currency or Reporting currency."
 
-![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_1.JPG)
+![Enable exchange rate type dialog box.](media/GLParamenters_EnableExchangeRateType_1.JPG)
 
 
 Make sure that you run the **Recalculate tax** tasks located on the **Sales tax codes** page in the **Recalculate tax** group. Those tasks can include:
@@ -55,15 +55,15 @@ Make sure that you run the **Recalculate tax** tasks located on the **Sales tax 
 
 This procedure helps you update exchange rates for the calculated tax amounts for created but not posted sales tax transactions.
 
-![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_2.JPG)
+![Action required dialog box.](media/GLParamenters_EnableExchangeRateType_2.JPG)
 
 Select exchange rate types in the **Sales tax receivable exchange rate type** and **Sales tax payable exchange rate type**, that will be used for purchase and sales operations. If the fields remain blank, the exchange rate will be taken from the exchange rate type set on the **Ledger** page.
 
-![GeneralLedgerParameters_EnableExchangeRateType.](media/GLParamenters_EnableExchangeRateType_3.JPG)
+![General ledger parameters and the Exchange rate types field group.](media/GLParamenters_EnableExchangeRateType_3.JPG)
 
 Set up sales tax receivable and sales tax payable difference and difference offset accounts in the ledger posting groups at **Tax** > **Setup** > **Sales tax** > **Ledger posting groups**.
 
-![PostingAccountsSalesTaxTaxExchRate.](media/PostingAccountsSalesTaxTaxExchRate_3-1.PNG)
+![Ledger posting groups.](media/PostingAccountsSalesTaxTaxExchRate_3-1.PNG)
 
 ## Overview
 
@@ -113,7 +113,7 @@ Exchange rates for tax calculation purposes, set up on the **Sales tax** tab on 
 
 Review the calculated sales tax, and in the Free text invoice, select **Sales tax** as shown in the following graphic.
 
-![SalesTaxTransactionsTaxExchRate.](media/SalesTaxTransactionsTaxExchRate_4.PNG)
+![Sales tax transactions page Amount tab.](media/SalesTaxTransactionsTaxExchRate_4.PNG)
 
 On the **Temporary sales tax transactions** page, you can review the exchange rates, amount origin, and tax amounts in the accounting currency, reporting currency, and tax currency. These amounts are shown for both exchange rate types, the one that is set in the **Ledger** and the one set in the **General ledger parameters**.
 
@@ -124,7 +124,7 @@ On the **Adjustment** tab, you can adjust tax amounts in the accounting currency
 
 On the **Subledger journal** page you can view amounts and accounts for the calculated sales tax difference. In this example, the exchange rate of currencies pair EUR-USD is different for the **Accounting currency exchange rate type** in the **Ledger** and **Sales tax payable exchange rate type** in the **General ledger parameters**.
 
-![SalesTaxTransactionsTaxExchRate.](media/SalesTaxTransactionsTaxExchRate_4-1.PNG)
+![Sales tax transactions.](media/SalesTaxTransactionsTaxExchRate_4-1.PNG)
 
 ![SalesTaxTransactionsTaxExchRateSubledger.](media/SalesTaxTransactionsTaxExchRateSubledger_4-2.PNG)
 
