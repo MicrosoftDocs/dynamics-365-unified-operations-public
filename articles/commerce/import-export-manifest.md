@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 06/09/2023
+ms.date: 07/11/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -44,10 +44,10 @@ The following table shows the schema for asset import and export operations.
 
 | Column name                          | Description |
 |--------------------------------------|-------------|
-| InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field is required to be empty when importing new assets. |
-| MediaChannel                         | The name of the e-Commerce channel that the asset is exported from or needs to be imported to. |
+| InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field must be empty when importing new assets. |
+| MediaChannel                         | The name of the e-commerce channel that the asset is exported from, or needs to be imported to. |
 | MediaLocale                          | The locale of the asset. |
-| MediaType                            | The type of the asset, either Image, Video or File. |
+| MediaType                            | The type of the asset (**Image**, **Video**, or **File**). |
 | MediaVersion                         | The version number of the asset. In combination with MediaVersionMismatchAction, user can control the import behavior in case the media asset has been modified between export and import. |
 | MediaCategory                        | The Commerce media category. Either None (default), Products, Categories, Customers, Workers, Catalogs, Size, Color or Style. |
 | MediaSourceProvider                  | The external system that the asset is imported from. This in combination with MediaSourceId is used to determine if the asset already exists in the system and should be updated. If MediaSourceProvider and MediaSourceId are not populated, InternalMediaId, MediaChannel and MediaLocale is used instead. |
