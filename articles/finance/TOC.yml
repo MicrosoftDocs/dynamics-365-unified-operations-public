@@ -2,7 +2,9 @@
   items:
   - name: Dynamics 365 Finance
     items:
-    - name: Dynamics 365 Finance home page
+    - name: Dynamics 365 Finance documentation
+      href: index.yml
+    - name: Welcome to Dynamics 365 Finance
       href: index.md
     - name: What's new or changed 
       items: 

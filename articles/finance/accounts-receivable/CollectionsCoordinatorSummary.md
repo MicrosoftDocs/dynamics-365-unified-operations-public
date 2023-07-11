@@ -93,11 +93,13 @@ You must grant explicit consent for Dynamics 365 finance and operations apps to 
 
 ### Assign roles to Dataverse users
 
-Users in Dataverse must be assigned the **AIB** role.
+Users in Dataverse must be assigned the **Finance and Operations AI** role and the **AIB** role.
 
 1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
 1. Select **Settings** at the top of the page.
 1. Expand **Users and Permissions**, and select **Security roles**.
+1. Find the **Finance and Operations AI** role.
+1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 1. Find the **AIB** role.
 1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 
@@ -113,7 +115,7 @@ Users in Dataverse must be assigned the **AIB** role.
 
 > [!IMPORTANT]
 > The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator workspace** available. For more information, see [Collection coordinator workspace](collectionsworkspace.md).
-
+ 
 ## View summary text
 
 As soon as a customer is selected in the **Customer account** field in the **Collections coordinator** workspace, the AI-generated content appears below the data points. Azure OpenAI is used to generate the results, based on data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer's payment history for the past year, outstanding debt amount, and year-to-date revenue.

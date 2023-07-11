@@ -1,0 +1,325 @@
+### YamlMime:Hub
+
+title: Microsoft Dynamics 365 Finance documentation # < 60 chars
+summary: Discover how to make the most of Dynamics 365 Finance with online training courses, documentation, and videos covering product capabilities. Learn how to use Dynamics 365 Finance to monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Finance documentation
+  description: You can use Dynamics 365 Finance to manage invoices and payments, get payment authorizations, verify payment status, correct invoice or payment details, and regularly report on accounts.
+  ms.topic: hub-page # Required
+  author: twheeloc #Required; your GitHub user alias, with correct capitalization.
+  ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/05/2023 #Required; mm/dd/yyyy format.
+  hide_bc: true
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Welcome to Dynamics 365 Finance
+      itemType: get-started
+      url: /dynamics365/finance
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: /dynamics365/finance/get-started/whats-new-home-page
+    # Card
+    - title: Training
+      itemType: training 
+      url: /training/dynamics365/finance
+    # Card
+    - title: Troubleshoot
+      itemType: reference
+      url: /dynamics365/finance/finance-troubleshooting
+additionalContent:
+  sections:
+  - title: Implement 
+    items:
+    - title: Guidance
+      links: 
+      - url: /dynamics365/guidance/implementation-guide/overview 
+        text: Dynamics 365 implementation guidance
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle
+        text: Implementation lifecycle management     
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Implementation FAQ   
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security
+    - title: Try/Buy/Deploy
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Try Dynamics 365 Finance
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Buy Dynamics 365 Finance
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=%2Fdynamics365%2Fcontext%2Ffinance
+        text: Deploy Dynamics 365 Finance  
+    - title: Set up
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=/dynamics365/context/supply-chain
+        text: Lifecycle Services (LCS) user guide
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=/dynamics365/context/supply-chain
+        text: Project onboarding 
+      - url:  /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live
+        text: Prepare for go-live     
+  - title: Administer and develop  
+    items:   
+    - title: Platform development 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page
+        text: Develop and customize your environment
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances
+        text: Deploy and access development environments
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+        text: Application stack and server architecture
+    - title: Manage environments
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
+        text: Dynamics 365 Lifecycle Services resources
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?context=/dynamics365/context/ops
+        text: Continuous delivery
+      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page?context=/dynamics365/context/ops
+        text: Upgrades, updates, and hotfixes     
+    - title: Manage data storage
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?context=/dynamics365/context/ops
+        text: Data management overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?context=/dynamics365/context/ops
+        text: Data import and export
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations?context=/dynamics365/context/ops
+        text: Database movement operations
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/ops
+        text: Data entities overview 
+    - title: System administration  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page
+        text: System administration overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation
+        text: Process automation
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview
+        text: Batch processing overview  
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+        text: Organization administration overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+        text: Organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+        text: Workflow system 
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
+        text: Number sequences overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
+        text: Global address book overview    
+    - title: Manage user access
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Role-based security
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
+        text: Create users
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles
+        text: Assign users to security roles      
+    - title: Develop integration    
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview
+        text: Integration between finance and operations apps and third party apps
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api  
+        text: Data management REST API
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
+        text: Service endpoint overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/design-best-practices?context=/dynamics365/context/ops
+        text: Design principles and best practices for data entities 
+    - title: Microsoft Office integration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
+        text: Office integration overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
+        text: Configure and send email
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
+        text: Customize the Open in Microsoft Office menu          
+    - title: Microsoft Power Platform integration
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview?context=/dynamics365/context/ops
+        text: Power Platform integration overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview?context=/dynamics365/context/ops
+        text: Dual-write overview 
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/virtual-entities-overview?context=/dynamics365/context/ops
+        text: Virtual entities overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference
+        text: Dual-write mapping reference
+    - title: Azure Data Lake integration 
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
+        text: Export to Azure Data Lake overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
+        text: Export to Azure Data Lake in finance and operations apps             
+    - title: Developer reference
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference
+        text: API references
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference
+        text: X++ language reference
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page
+        text: Service endpoint overview 
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/odata
+        text: Open Data Protocol (OData) 
+    - title: Developer tools 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/development-tools-overview?context=/dynamics365/context/ops
+        text: Development tools in Visual Studio
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation?context=/dynamics365/context/ops
+        text: Version control, metadata search, and navigation
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation?context=/dynamics365/context/ops
+        text: Build automation using Azure   
+    - title: Extend and customize 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page?context=/dynamics365/context/ops
+        text: Extensibility overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap?context=/dynamics365/context/ops
+        text: Application extensibility roadmap
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/writing-extensible-code?context=/dynamics365/context/ops
+        text: Write extensible code       
+    - title: Develop the user interface  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page
+        text: User interface development 
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines
+        text: General form guidelines
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control
+        text: Build extensible controls    
+  - title: Use 
+    items:
+    - title: General ledger
+      links:
+      - url: /dynamics365/finance/general-ledger/plan-chart-of-accounts
+        text: Plan your chart of accounts
+      - url: /dynamics365/finance/general-ledger/main-account-types
+        text: Main account types
+      - url: /dynamics365/finance/general-ledger/financial-dimensions
+        text: Financial dimensions   
+    - title: Accounts payable
+      links:
+      - url: /dynamics365/finance/accounts-payable/accounts-payable
+        text: Overview
+      - url: /dynamics365/finance/accounts-payable/accounts-payable-overview
+        text: Configure Accounts payable
+      - url: /dynamics365/finance/accounts-payable/accounts-payable-invoice-matching
+        text: Invoice matching 
+      - url: /dynamics365/finance/accounts-payable/invoice-capture-overview
+        text: Invoice capture solution 
+    - title: Accounts receivable
+      links:
+      - url: /dynamics365/finance/accounts-receivable/accounts-receivable
+        text: Overview    
+      - url: /dynamics365/finance/accounts-receivable/subscription-billing-summary
+        text: Subscription billing
+      - url: /dynamics365/finance/cash-bank-management/tasks/customer-payment-overview
+        text: Customer payments
+      - url: /dynamics365/finance/accounts-receivable/cm-credit-and-collections-overview
+        text: Credit and collections
+    - title: Budgeting
+      links:
+      - url: /dynamics365/finance/budgeting/basic-budgeting-overview-configuration
+        text: Overview
+      - url: /dynamics365/finance/budgeting/budget-planning-overview-configuration
+        text: Budget planning
+      - url: /dynamics365/finance/budgeting/budget-control-overview-configuration
+        text: Budget control
+      - url: /dynamics365/finance/budgeting/position-forecasting
+        text: Postition forecasting
+    - title: Cash and bank management
+      links:
+      - url: /dynamics365/finance/cash-bank-management/cash-bank-management
+        text: Overview
+      - url: /dynamics365/finance/cash-bank-management/cash-flow-forecasting
+        text: Cash flow forecasting
+      - url: /dynamics365/finance/cash-bank-management/advanced-bank-reconciliation-overview
+        text: Advanced bank reconciliation
+    - title: Cost accounting
+      links:
+      - url: /dynamics365/finance/cost-accounting/cost-accounting-home-page
+        text: Overview
+      - url: /dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension
+        text: Map a cost element dimension
+      - url: /dynamics365/finance/cost-accounting/overhead-calculation
+        text: Overhead calculation
+    - title: Fixed assets
+      links:
+      - url: /dynamics365/finance/fixed-assets/fixed-assets
+        text: Overview
+      - url: /dynamics365/finance/fixed-assets/set-up-fixed-assets
+        text: Set up fixed assets
+      - url: /dynamics365/finance/fixed-assets/fixed-asset-depreciation-conventions
+        text: Depreciation conventions
+    - title: Asset leasing
+      links:
+      - url: /dynamics365/finance/asset-leasing/asset-leasing-quick-start
+        text: Overview
+      - url: /dynamics365/finance/asset-leasing/add-lease
+        text: Manage asset leases
+      - url: /dynamics365/finance/asset-leasing/set-up-lease-wrkflw
+        text: Lease workflows
+    - title: Reporting
+      links:
+      - url: /dynamics365/finance/general-ledger/financial-reporting-getting-started
+        text: Financial reporting
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page
+        text: Reporting and Power BI integrations
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting
+        text: Electronic reporting
+    - title: Finance insights
+      links:
+      - url: /dynamics365/finance/finance-insights/finance-insights-home-page
+        text: Overview
+      - url: /dynamics365/finance/finance-insights/configure-for-fin-insites
+        text: Configure Finance insights 
+      - url: /dynamics365/finance/finance-insights/payment-insights-overview
+        text: Customer payment predictions
+    - title: Public sector
+      links:
+      - url: /dynamics365/finance/public-sector/public-sector-functionality
+        text: Overview
+      - url: /dynamics365/finance/public-sector/plan-public-sector-functionality
+        text: Plan for public sector functionality
+      - url: /dynamics365/finance/public-sector/security-roles-public-sector
+        text: Security roles in the public sector
+    - title: Globalization studio
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lcs-solutions/country-region
+        text: Globalization resources
+      - url: /dynamics365/finance/localizations/globalization-services-overview
+        text: Globalization services
+      - url: /dynamics365/finance/localizations/rcs-overview
+        text: Regulatory configuration service
+      - url: /dynamics365/finance/localizations/e-invoicing-service-overview
+        text: Electronic invoicing
+      - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
+        text: Tax Calculation 
+    - title: Mobile apps
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
+        text: Overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
+        text: Available mobile workspaces
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace
+        text: Publish mobile workspaces
+  - title: Related products
+    items:
+        # Card
+        - title: Dynamics 365 Commerce
+          summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
+          url: /dynamics365/commerce/
+        - title: Dynamics 365 Project Operations
+          summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
+          url: /dynamics365/project-operations/
+        - title: Dynamics 365 Supply Chain Management
+          summary: Supply Chain Management allows you to provide the right services and products to your customers, manage relationships, drive targeted campaigns, and provide a great customer experience.
+          url: /dynamics365/supply-chain/
+        - title: Industry solutions
+          summary: Use industry-specific solutions that are built using Dynamics 365 and Microsoft Power Platform.
+          url: /dynamics365/industry/
+        - title: Microsoft Power Platform
+          summary: Build, automate workflows, analyze data, rapidly design, configure, and publish modern websites, and build intelligent bots with no-code interface using Power Platform products.
+          url: /power-platform/index
