@@ -24,7 +24,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 
 - Austria
 - Belgium
-- The Czechia
+- The Czech Republic
 - Denmark
 - Finland
 - France
@@ -157,7 +157,7 @@ For more information, see [Download ER configurations from the Global repository
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: The Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
+    > In the 10.0.19 and 10.0.20 releases, the Intrastat **Transfer** function has country/region-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: the Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
 6. Select **Output** \> **Report**.
 7. In the **Tax registration number** dialog box, select the tax registration number to generate the Intrastat report for, and then select **OK**.
@@ -284,8 +284,6 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
-    | 10.0.26 | Finland | VAT Declaration TXT (FI).version.112.9<br>VAT Declaration Excel (FI).version.112.9.6 | [VAT declaration (Finland)](emea-fin-vat-declaration.md) |
-    | 10.0.27 | Belgium | VAT Declaration XML (BE).version.120.46<br>VAT Declaration Excel (BE).version.120.46.47 | [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md) |
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
 
     > [!NOTE]
