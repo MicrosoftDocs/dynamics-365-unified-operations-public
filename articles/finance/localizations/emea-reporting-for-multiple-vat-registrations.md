@@ -35,7 +35,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - Spain
 - Sweden
 - Switzerland
-- The United Kingdom
+- United Kingdom
   
 The scope of reporting is limited to generation of the following reports:
 
