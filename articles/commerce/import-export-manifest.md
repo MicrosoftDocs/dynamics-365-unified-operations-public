@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 07/11/2023
+ms.date: 07/12/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -47,17 +47,17 @@ The following table shows the schema for asset import and export operations.
 | InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field must be empty when importing new assets. |
 | MediaChannel                         | The name of the e-commerce channel that the asset is exported from, or needs to be imported to. |
 | MediaLocale                          | The locale of the asset. |
-| MediaType                            | The type of the asset. Possible values are *Image*, *Video*, or *File*. |
+| MediaType                            | The type of the asset. Allowed field values are *Image*, *Video*, or *File*. |
 | MediaVersion                         | The version number of the asset. In combination with `MediaVersionMismatchAction`, you can control import behavior in case the media asset has been modified between export and import. |
-| MediaCategory                        | The Commerce media category. Possible values are *None* (default), *Products*, *Categories*, *Customers*, *Workers*, *Catalogs*, *Size*, *Color*, or *Style*. |
-| MediaSourceProvider                  | The external system that the asset is imported from. In combination with `MediaSourceId`, this is used to determine if the asset already exists in the system and should be updated. If `MediaSourceProvider` and `MediaSourceId` are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` are used instead. |
+| MediaCategory                        | The Commerce media category. Allowed field values are *None* (default), *Products*, *Categories*, *Customers*, *Workers*, *Catalogs*, *Size*, *Color*, or *Style*. |
+| MediaSourceProvider                  | The external system that the asset is imported from. In combination with `MediaSourceId`, this field is used to determine if the asset already exists in the system and if it should be updated. If `MediaSourceProvider` and `MediaSourceId` fields are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used instead. |
 | MediaSourceId                        | The identifier in the external system. |
 | MediaReferenceUrl                    | The URL of the external provider (instead of `MediaImportPath`). |
-| MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. Possible values are *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
-| MediaAction                          | Action that should be applied on the asset during the manifest import. Possible values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
-| MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. Possible values are *UseExisting* or *Overwrite*. |
-| MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. Possible values are *UseExisting* or *Overwrite*. |
-| MediaImportPath                      | Either the HTTP source URL or the file name. Media asset will be imported from this location (either local file upload or system fetching the media asset binary from publicly accessible external web location). |
+| MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. Allowed field values are *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
+| MediaAction                          | Action that should be applied to the asset during manifest import. Allowed field values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
+| MediaCheckedOutAction                | Import behavior if the existing media in the system is checked out for editing. Allowed field values are *UseExisting* or *Overwrite*. |
+| MediaVersionMismatchAction           | Import behavior if the existing media in the system has been updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
+| MediaImportPath                      | Either the HTTP source URL or the file name. Media asset(s) will be imported from this location, either via local file upload or the system fetching the media asset binary from a publicly accessible external web location). |
 | ImageAltText                         | Alt text for an image asset. |
 | MediaSearchTags                      | Keywords that describe the asset (comma separated). |
 | MediaCaption                         | The caption for a video asset. |
@@ -88,7 +88,7 @@ The following table shows the schema for asset import and export operations.
 | ErrorCode                            | An error code. |
 | ResultDescription                    | A detailed description of the result (for example, an error description). |
 
-You can use `MediaSourceProvider` and `MediaSourceId` to indicate the external source and ID of the media asset (for example, an external CMS). If `MediaSourceProvider` and `MediaSourceId` values are provided, they're used to determine if the same assets were imported earlier and should be updated. If `MediaSourceProvider` and `MediaSourceId` values aren't available, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used to match media assets being imported to media assets already present in the system.
+You can use the `MediaSourceProvider` and `MediaSourceId` fields to indicate the external source and ID of the media asset (for example, an external CMS). If `MediaSourceProvider` and `MediaSourceId` values are provided, they're used to determine if the same assets were imported earlier and should be updated. If `MediaSourceProvider` and `MediaSourceId` values aren't available, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used to match media assets being imported to media assets already present in the system.
 
 Most of the fields described above are optional in the manifest and can be left out completely, including from the header.
 
@@ -128,10 +128,10 @@ The following table shows the schema extension for product media assignments.
 | CatalogNumber                       | The catalog number that the assignment is associated with. |
 | EntityChannel                       | The channel operating unit number (OUN) that's associated with the assignment. Must be prefixed with "OUN" (for example, OUN007, OUN116, etc.) |
 | EntityAssignmentCurrentPublishState | The publish state of the assignment. |
-| EntityAssignmentAction              | Action that should be applied on the product media assignment during the manifest import. Possible values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
-| EntityCheckedOutAction              | Import behavior if the product media assignment is checked out for editing. Possible values are *UseExisting* or *Overwrite*. |
-| EntityVersionMismatchAction         | Import behavior if the existing product media assignment in the system has been updated (in other words, the version differs) between the export and import of the manifest. Possible values are *UseExisting* or *Overwrite*. |
-| MediaGroup                          | The media group of the asset. Possible values are *Primary* or *Additional*. |
+| EntityAssignmentAction              | Action that should be applied on the product media assignment during manifest import. Allowed field values are *PublishNow*, *Draft*, *Unpublish*, or *UnpublishAndDelete*. |
+| EntityCheckedOutAction              | Import behavior if the product media assignment is checked out for editing. Allowed field values are *UseExisting* or *Overwrite*. |
+| EntityVersionMismatchAction         | Import behavior if the existing product media assignment in the system has been updated (version differs) between the export and import of the manifest. Allowed field values are *UseExisting* or *Overwrite*. |
+| MediaGroup                          | The media group of the asset. Allowed field values are *Primary* or *Additional*. |
 | MediaPurpose                        | The purpose of the asset (free text). |
 | MediaDisplayOrder                   | The display order. |
 | SwatchGroup                         | The swatch group (for example, *Size* or *Style*). |
