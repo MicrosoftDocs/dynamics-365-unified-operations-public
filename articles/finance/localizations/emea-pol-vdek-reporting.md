@@ -2,7 +2,7 @@
 title: JPK-V7 reporting
 description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
 author: liza-golub
-ms.date: 03/21/2022
+ms.date: 07/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -83,8 +83,8 @@ The following table shows an example of sales tax reporting codes and their mapp
 
 4. A new electronic message is created. Enter a description, and specify the start and end dates of the period that you want to generate the JPK-V7 report for.
 
-- For **JPK-V7M** (if your company reports JPK-V7 monthly), select start and end dates of the month for which report must be generated.
-- For **JPK-V7K** (if your company reports JPK-V7 quarterly), select start and end dates of the first or second month of reporting quarter when you generate JPK-V7K report for first or second month of the quarter. To report JPK-V7K report for the full quarter, select first and last dates of the quarter in the From and To dates of Electronic message.
+- For **JPK-V7M** (if your company reports JPK-V7 monthly), select the start and end dates of the month for which the report must be generated.
+- For **JPK-V7K** (if your company reports JPK-V7 quarterly), select the start and end dates of the first or second month of the reporting quarter when you generate the JPK-V7K report for first or second month of the quarter. To report the JPK-V7K report for the full quarter, select the first and last dates of the quarter in the **From** and **To** dates of Electronic message.
 
 5. On the **Message additional fields** FastTab, specify any additional values that are required for the declaration part of the JPK-V7 report.
 
@@ -107,12 +107,12 @@ The following table shows an example of sales tax reporting codes and their mapp
     - **Pelny plik XML** for the full XML file
     - **Tylko Ewidencja** for the **Ewidencja** node only
 
-    The **Sklad pliku** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Sklad pliku** additional field will get a value of **Pelny plik XML** by default. Therefore, when you create a new electronic message, the **Sklad pliku** additional field will be set to **Pelny plik XML**. If you want to change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Sklad pliku** additional field, and select a value in the list.
+    The **Sklad pliku** additional field was introduced in the **PL JPK-V7M EM setup v.6 KB5007691**.zip package (version 6 or later of the package of data entities that includes a predefined electronic message setup). In the **PL JPK-V7M EM setup v.6 KB5007691** package, the **Sklad pliku** additional field gets a value of **Pelny plik XML** by default. Therefore, when you create a new electronic message, the **Sklad pliku** additional field is set to **Pelny plik XML**. To change the default value of this field, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**, select **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) on the left side of the page, and then, on the **Message additional fields** FastTab, find the **Sklad pliku** additional field, and select a value in the list.
 
 > [!NOTE]
-> If your company reports JPK-V7 quarterly and uses **JPK-V7K** Electronic messaging processing, to generate XML file for first and second months of a quarter, you must select **Tylko Ewidencja** in **Sklad pliku** additional field. For the third month of a quarter, select **Pelny plik XML** in **Sklad pliku** additional field. According to the regulatory requirements to JPK-V7K, taxpayers in JPK-V7K for the first two months of the quarter should fill in `Naglówek`, `Podmiot1` and `Ewidencja` XML elements, and for the third month of the quarter JPK-V7K XML file should include `Naglówek`, `Podmiot1`, `Deklaracja`, `Ewidencja` XML elements, but the `Deklaracja` applies to data for the entire quarter, while the `Ewidencja` covers data only for the last month of the quarter.
+> If your company reports JPK-V7 quarterly and uses **JPK-V7K** Electronic messaging processing, to generate XML file for first and second months of a quarter, you must select **Tylko Ewidencja** in the **Sklad pliku** additional field. For the third month of a quarter, select **Pelny plik XML** in the **Sklad pliku** additional field. According to the regulatory requirements to JPK-V7K, taxpayers in JPK-V7K for the first two months of the quarter should fill in `Naglówek`, `Podmiot1` and `Ewidencja` XML elements, and for the third month of the quarter JPK-V7K XML file should include `Naglówek`, `Podmiot1`, `Deklaracja`, `Ewidencja` XML elements. The `Deklaracja` applies to data for the entire quarter, while the `Ewidencja` covers data only for the last month of the quarter.
 
-9. In the **Wariant JPK_VAT** additional field, define variant of XSD schema of XML file to be generated. Two values are allowed:
+9. In the **Wariant JPK_VAT** additional field, define a variant of XSD schema of XML file to be generated. Two values are allowed:
 
 | **Wariant JPK_VAT** | **Description PL** | **Description EN** | **Default value in EM processing** |
 |---------------------|--------------------|--------------------|------------------------------------|
@@ -136,9 +136,9 @@ The **Wariant JPK_VAT** additional field was introduced in the **PL JPK-V7 EM se
     | P_61     | P_61 | A string (1..240) that must be used if **P_60** is used. The type of future tax liability. | Rodzaj przyszłego zobowiązania podatkowego |
     | P_ORDZU (*)  | P_ORDZU | A string explanation of the reasons for submitting a corrected VAT return. | Uzasadnienie przyczyn złożenia korekty |
 
-(*) According to regulatory documentation, the `P_ORDZU` field of JPK-V7 in XML format is described as character type limited to 3500 characters. Specify a short text (up to 60 characters) directly as a value of **P_ORDZU** additional field or in case when explanation of the reasons for submitting a corrected VAT return must be longer than 60 characters, select **Długa notatka (Long note)** from the drop-down list of available values and then attach the long text as an attachment of *Note* type to the electronic message:
+(*) According to regulatory documentation, the `P_ORDZU` field of JPK-V7 in XML format is described as character type limited to 3500 characters. Specify a short text (up to 60 characters) directly as a value of the **P_ORDZU** additional field. When an explanation of the reasons for submitting a corrected VAT return must be longer than 60 characters, select **Długa notatka (Long note)** from the drop-down list of available values and then attach the long text as an attachment of *Note* type to the electronic message:
 
-- Selected the Electronic message for which you want to add a long note, select the **Attachments** button (paper clip symbol) in the upper-right corner, select **New** > **Note**, and then enter information in the **Description** and **Notes** fields.
+- Select the Electronic message for which you want to add a long note, select **Attachments** in the upper-right corner, select **New** > **Note**, and then enter information in the **Description** and **Notes** fields.
 
 ## Generate the JPK-V7 report in Excel format for preview
 
