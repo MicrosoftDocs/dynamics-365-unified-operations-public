@@ -2,7 +2,7 @@
 title: POS inventory lookup with channel-side calculation
 description: This article describes how the POS inventory lookup operation works with channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 01/30/2023
+ms.date: 07/18/2023
 ms.topic: articlex
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -42,7 +42,7 @@ You must then sync the changes to the channels through the distribution schedule
 After the configuration is completed, the information that's provided about physically available inventory no longer uses a real-time service call when a user in the POS application uses the inventory lookup operation (standard and matrix views). Instead, data about physically available inventory for the current store and all the stores in the fulfillment group is calculated based on the last-known snapshot that was delivered to the channel database from Commerce headquarters. The snapshot value is further refined by the channel-side calculation to adjust the physically available value, based on additional sales or return transactions that exist for the selected product in the channel database but that weren't included in the last synced snapshot from the 1130 job.
 
 > [!NOTE]
-> Physically reserved value remains the same as the snapshot value, it will not be refined by the channel-side calculation.
+> The physically reserved value remains the same as the snapshot value, and won't be refined by the channel-side calculation.
 
 If the channel database doesn't contain transactional data for any of the warehouses or stores in the fulfillment group, it contains no additional transactions that can be factored into a recalculation of the value. Therefore, the best estimate of on-hand inventory that can be shown for those warehouses or stores is the data from the last-known Commerce headquarters snapshot.
 
