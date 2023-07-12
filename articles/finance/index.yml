@@ -43,7 +43,7 @@ additionalContent:
       links: 
       - url: /dynamics365/guidance/implementation-guide/overview 
         text: Dynamics 365 implementation guidance
-      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation lifecycle management     
       - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Implementation FAQ   
@@ -59,11 +59,11 @@ additionalContent:
         text: Deploy Dynamics 365 Finance  
     - title: Set up
       links: 
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=/dynamics365/context/supply-chain
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Lifecycle Services (LCS) user guide
-      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=/dynamics365/context/supply-chain
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Project onboarding 
-      - url:  /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Prepare for go-live     
   - title: Administer and develop  
     items:   
@@ -103,15 +103,15 @@ additionalContent:
         text: Batch processing overview  
     - title: Organization administration
       links:
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Organization administration overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Organizational hierarchies
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Workflow system 
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Number sequences overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Global address book overview    
     - title: Manage user access
       links:
@@ -133,11 +133,11 @@ additionalContent:
         text: Design principles and best practices for data entities 
     - title: Microsoft Office integration
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Office integration overview
-      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Configure and send email
-      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/customize-open-office-menu?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Customize the Open in Microsoft Office menu          
     - title: Microsoft Power Platform integration
       links: 
@@ -267,7 +267,7 @@ additionalContent:
         text: Financial reporting
       - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page
         text: Reporting and Power BI integrations
-      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Electronic reporting
     - title: Finance insights
       links:
@@ -299,11 +299,11 @@ additionalContent:
         text: Tax Calculation 
     - title: Mobile apps
       links:
-      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-app-home-page?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Overview
-      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Available mobile workspaces
-      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace
+      - url: /dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Publish mobile workspaces
   - title: Related products
     items:
