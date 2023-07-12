@@ -2,7 +2,7 @@
 title: Inventory availability APIs for e-commerce
 description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 01/30/2023
+ms.date: 07/18/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
