@@ -4,7 +4,7 @@
 title: Address books FAQ
 description: This article provides answers to frequently asked questions related to address books. 
 author: msftbrking 
-ms.date: 01/03/2023
+ms.date: 07/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
