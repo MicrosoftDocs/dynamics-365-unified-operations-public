@@ -1,28 +1,27 @@
 ---
 title: Assortment management
-description: This article explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
+description: This article explains the basic concepts of assortment management in Microsoft Dynamics 365 Commerce and provides implementation considerations for your project.
 author: josaw1
-ms.date: 03/12/2018
+ms.date: 07/18/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+
 ---
 
 # Assortment management
 
 [!include [banner](../includes/banner.md)]
 
-## Overview
+This article explains the basic concepts of assortment management in Microsoft Dynamics 365 Commerce and provides implementation considerations for your project.
 
 Dynamics 365 Commerce provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
 
-In Commerce, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
+In Commerce, an assortment is a mapping of one or more channels (or groups of channels, when using organization hierarchies) to one or more products (or groups of products, when using category hierarchies).
 
 The overall product mix of a channel is determined by the published assortments that are assigned to the channel. Therefore, you can configure multiple active assortments per channel.
 
@@ -101,6 +100,6 @@ Consider the following implementation requirements as you plan and manage assort
 If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
 
 > [!NOTE]
-> When POS makes real-time calls to headquarters to retrieve product information and download it in the channel database, depending on the data size of product information such as the number of product variants, product attributes, and inventory dimensions, there might be performance issues on the real-time calls or saving the data to channel database. The performance issue will lead to Commerce Scale Unit API failures. In this case, you should add those products to the channel's assortment to avoid real-time calls.
+> When POS makes real-time calls to headquarters to retrieve product information to download to the channel database, depending on the data size of product information such as the number of product variants, product attributes, and inventory dimensions, you might experience performance issues during real-time calls or when saving the data to the channel database. These performance issues will lead to Commerce Scale Unit (CSU) API failures. To avoid performance issues related to real-time calls, you should add products with large amounts of product information data to the channel's assortment.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
