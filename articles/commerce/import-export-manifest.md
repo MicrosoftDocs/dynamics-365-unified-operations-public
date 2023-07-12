@@ -45,12 +45,12 @@ The following table shows the schema for asset import and export operations.
 | Column name                          | Description |
 |--------------------------------------|-------------|
 | InternalMediaId                      | The identifier of the asset in the Commerce content management system (CMS). This field must be empty when importing new assets. |
-| MediaChannel                         | The name of the e-commerce channel that the asset is exported from, or needs to be imported to. |
+| MediaChannel                         | The name of the e-commerce channel from which the asset is exported, or to which the asset is imported. |
 | MediaLocale                          | The locale of the asset. |
 | MediaType                            | The type of the asset. Allowed field values are *Image*, *Video*, or *File*. |
-| MediaVersion                         | The version number of the asset. In combination with `MediaVersionMismatchAction`, you can control import behavior in case the media asset has been modified between export and import. |
+| MediaVersion                         | The version number of the asset. In combination with the `MediaVersionMismatchAction` field, you can control import behavior in case the media asset has been modified between export and import. |
 | MediaCategory                        | The Commerce media category. Allowed field values are *None* (default), *Products*, *Categories*, *Customers*, *Workers*, *Catalogs*, *Size*, *Color*, or *Style*. |
-| MediaSourceProvider                  | The external system that the asset is imported from. In combination with `MediaSourceId`, this field is used to determine if the asset already exists in the system and if it should be updated. If `MediaSourceProvider` and `MediaSourceId` fields are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used instead. |
+| MediaSourceProvider                  | The external system from which the asset is imported. In combination with the `MediaSourceId` field, this field is used to determine if the asset already exists in the system and if it should be updated. If `MediaSourceProvider` and `MediaSourceId` fields are not populated, `InternalMediaId`, `MediaChannel`, and `MediaLocale` values are used instead. |
 | MediaSourceId                        | The identifier in the external system. |
 | MediaReferenceUrl                    | The URL of the external provider (instead of `MediaImportPath`). |
 | MediaSourceIfExistsAction            | Import behavior if the media asset already exists in the system. Allowed field values are *UseExisting*, *Overwrite*, *TakeLatest*, or *KeepBoth*. |
