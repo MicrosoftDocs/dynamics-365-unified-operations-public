@@ -2,8 +2,10 @@
   items:
   - name: Dynamics 365 Finance
     items:
-    - name: Dynamics 365 Finance home page
-      href: index.md
+    - name: Dynamics 365 Finance documentation
+      href: index.yml
+    - name: Welcome to Dynamics 365 Finance
+      href: finance-welcome.md
     - name: What's new or changed 
       items: 
       - name: What's new or changed in finance and operations apps
@@ -566,6 +568,10 @@
           href: accounts-receivable/set-up-collections.md
         - name: Review collections information
           href: accounts-receivable/tasks/review-collections-information.md
+        - name: Collections coordinator workspace (preview)  
+          href: accounts-receivable/CollectionsWorkspace.md
+        - name: Collections coordinator summary (preview)
+          href: accounts-receivable/CollectionsCoordinatorSummary.md  
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
         - name: Configure parameters for collections process automation 
@@ -1666,6 +1672,8 @@
               href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
               href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic Invoicing for Indonesia
+              href: localizations/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
@@ -5131,6 +5139,12 @@
           href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
       - name: Settle transactions using CustTrans::settleTransaction
         href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
+  - name: Responsible AI
+    items:
+    - name: Overview
+      href: ../finance/transparency-note.md 
+    - name: Collections coordinator summary FAQ
+      href: accounts-receivable/collections-coordinator-summary-faq.md              
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 

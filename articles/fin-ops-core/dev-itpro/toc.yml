@@ -199,6 +199,8 @@ items:
           items:
           - name: Import customers
             items:
+              - name: Import customers with data entities
+                href: /dynamics365/guidance/resources/import-customers?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Customer definitions entity
                 href: data-entities/entity-customer-definitions-customerbase.md
               - name: Customers V3 entity
@@ -207,18 +209,24 @@ items:
                 href: data-entities/entity-customer-details-v2-na.md
           - name: Import products
             items:
+            - name: Import products with data entities
+              href: /dynamics365/guidance/resources/import-products?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
             - name: Products V2 entity
               href: data-entities/entity-products-v2-productsv2.md
             - name: Released products V2 entity
               href: data-entities/entity-released-products-v2-releasedproductv2.md
           - name: Import sales orders
             items:
+              - name: Import sales orders with data entities
+                href: /dynamics365/guidance/resources/import-sales-orders?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Sales order headers V2
                 href: data-entities/entity-sales-order-headers-v2-salesorderheaderv2.md
               - name: Sales order lines V2
                 href: data-entities/entity-sales-order-lines-v2-salesorderline.md
           - name: Import vendor invoices
             items:
+              - name: Import vendor invoices with data entities
+                href: /dynamics365/guidance/resources/import-vendor-invoices?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Vendor invoice header entity
                 href: data-entities/entity-vendor-invoice-header-vendorinvoiceheader.md
               - name: Vendor invoice line entity
@@ -277,6 +285,18 @@ items:
         href: user-interface/data-validation-workspace.md
       - name: Data management error descriptions
         href: data-entities/dm-error-descriptions.md  
+      - name: Archive historical records
+        items:
+        - name: Archive solution overview
+          href: sysadmin/archive-overview.md
+        - name: Set up the archive solution
+          href: sysadmin/archive-setup.md
+        - name: Extend the archive solution to support custom tables and fields
+          href: sysadmin/archive-customizations.md
+        - name: Archive general ledger data
+          href: sysadmin/archive-general-ledger.md
+        - name: Archive sales orders
+          href: sysadmin/archive-sales-orders.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
@@ -1109,6 +1129,10 @@ items:
           href: lifecycle-services/dts-announcements.md
         - name: Dynamics 365 Translation Service overview
           href: lifecycle-services/translation-service-overview.md
+        - name: Dynamics 365 Translation Service API
+          href: lifecycle-services/dts-api-info.md
+        - name: Dynamics Lifecycle Services API - Authentication
+          href: lifecycle-services/lcs-aad-app-reg.md
         - name: Translate user interface files
           href: lifecycle-services/use-translation-service.md
         - name: Translate documentation files
@@ -1167,6 +1191,8 @@ items:
               items:
                 - name: Enable dual-write for existing finance and operations apps
                   href: data-entities/dual-write/enable-dual-write.md
+                - name: Dual-write health check
+                  href: data-entities/dual-write/dual-write-health-check.md
                 - name: System requirements and prerequisites
                   href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: How to use the dual-write wizard to link your environments
@@ -1240,11 +1266,17 @@ items:
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
             - name: Sync on-demand with the Supply Chain Management pricing engine
-              href: data-entities/dual-write/pricing-engine.md    
+              href: data-entities/dual-write/pricing-engine.md
+            - name: Quote to cash in dual-write
+              href: data-entities/dual-write/dual-write-prospect-to-cash.md
+            - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-concept.md
+            - name: Enable extra efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md
+            - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
+              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md
             - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
               href: data-entities/dual-write/commerce-pricing.md
-            - name: Prospect to cash in dual-write
-              href: data-entities/dual-write/dual-write-prospect-to-cash.md             
             - name: Set up the mapping for the sales order status fields
               href: data-entities/dual-write/sales-status-map.md             
             - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
@@ -1310,6 +1342,8 @@ items:
         items:
         - name: Virtual entities overview
           href: power-platform/virtual-entities-overview.md
+        - name: What's new or changed in Virtual Entity solution provider package?
+          href: power-platform/whats-new-ve.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
@@ -2147,7 +2181,7 @@ items:
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/index.md
   - name: Dynamics 365 Finance 
-    href: ../../finance/index.md
+    href: ../../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources

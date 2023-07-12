@@ -4,7 +4,7 @@
 title: Manage channels in the Invoice capture solution
 description: This article provides information about how to manage channels in the Invoice capture solution.
 author: sunfzam
-ms.date: 04/05/2023
+ms.date: 06/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -40,20 +40,56 @@ Customers receive supplier invoices from different external sources. Channels ar
 
 ## Default channel for file upload
 
-A default channel is used to upload an invoice into Invoice capture. It can then be reviewed on the **Received files** page. New channels can be created to replace the default channel on the **System preference** page.
+A **Default** channel is used to upload invoices into Invoice capture. The invoice can then be viewed on the **Received files** list page. A new channel can be created to replace the **Default** channel on the **System preference** page.
 
-## Activate and deactivate a channel
+## What is the Document receive API?
 
-Administrators can use **Activate/Deactivate** to receive an invoice document from a channel. If a channel is assigned as the channel for file upload on the **System preference** page, but it's inactive, file upload on the **Received file** page won't work.
+The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. It's used to receive the invoice documents. Administrators follow the API standards and provide the correct input parameters to confirm that the API is correctly called.
 
-## Use managed flow
+The Document receive API must be integrated with a valid channel ID. If it's called without a valid channel ID, the call is invalid. In this case, the invoice document can't be captured and doesn't appear on the **Received files** list page.
 
-Administrators can decide how they want to integrate the document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
+### Input parameters
 
-- **Yes** – The flow will be automatically generated, based on the flow setting.
+| Parameter name | Type | Required | Description |
+|----------------|------|----------|-------------|
+| ChannelId | string | Yes | Channel id  |
+| FileName | string | Yes | A file name with extension. |
+| FileContent | string | Yes | A Base64-encoded file. |
+| FileSetId | string | No | An optional parameter. |
+| AdditionalInfo | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
+
+### Output parameters
+
+| Parameter name | Type | Required | Description |
+|----------------|------|----------|-------------|
+| Data | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
+
+### Channel information
+
+| Parameter name | Type | Required | Description |
+|----------------|------|----------|-------------|
+| ChannelType | string | Yes | The channel type can be Direct, Email, API, or FileSystem. |
+| SendFrom | string | No | Additional information to track the sender. |
+
+The channel type determines whether the scenario is interactive or silent. 
+
+| Channel type | Scenario |
+|--------------|----------|
+| Direct | Interactive  |
+| Email | Silent |
+| API | Silent |
+| FileSystem | Silent |
+
+## Channel with/without a flow template 
+
+Administrators can decide how they want to integrate the Document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
+
+- **Yes** – The flow is automatically generated based on the flow setting.
 - **No** – The user must integrate the received API and bind the current channel ID to the API parameter.
 
-When the **Use managed flow** option is set to **Yes**, the flow setting is enabled. The user will then select a flow template. The following templates are available:
+#### With a flow template
+
+If the **Use managed flow** option is set to **Yes**, the flow setting is enabled, and the user selects a flow template. The following templates are available:
 
 - Outlook.com
 - Microsoft Outlook 365
@@ -73,9 +109,7 @@ The following table describes the additional properties that the user must defin
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
 | **OneDrive** or **OneDrive for business** | Folder | The directory name. |
 
-If the **Use managed flow** option is set **Yes**, the flow is automatically generated and turned on when the channel is saved.
-
-If the flow is successfully generated, a custom control is available. The **Manage flow** pane allows for the following operations:
+When the channel is saved, if the **Use managed flow** option is set **Yes**, the flow is automatically generated, and the flow details pane is shown. This pane allows for the following operations:
 
 - Turn the flow on and off.
 - Edit the flow, and either customize the flow or fix it.
@@ -101,7 +135,7 @@ Various errors can appear:
 
     **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
 
-    **Solution:** Error messages will provide details, and **Generate flow** will generate temporary errors or the system-level fixes.
+    **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
 - "Turn on flow failed."
 
@@ -112,63 +146,24 @@ Various errors can appear:
 
     **Solution:** To help administrators access the flow editing UI, the message bar that shows the error message includes a **Fix it** button. If the message has already been closed, select **Edit** in the **Manage flow** pane to open the flow editing UI.
 
-### Use unmanaged flow
+### Without a flow template
 
-The **Use unmanaged flow** option on the **Channel** page should be used only by professional users. The document receive API should be manually integrated. The channel ID must be filled in in the API payload. The channel ID can be found in the URL after it's saved.
+If the **Use managed flow** option is set **No**, the Document receive API is called without using a flow template. We recommend that only administrators use this approach. The channel ID must be specified in the API payload. The channel ID can be found in the URL after it's saved.
 
-If the document receive API is called without a valid channel ID, the system treats the call as invalid. Therefore, the invoice file can't be captured and won't appear on the **Received files** page.
-
-#### Document receive API
-
-Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. 
-
-#### Input parameters
-
-| Parameter name | Type | Required | Description |
-|----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_FileSetId\_In | string | No | An optional parameter. |
-| vis\_ExternalDocumentReceiver\_FileName\_In | string | Yes | A file name with extension. |
-| vis\_ExternalDocumentReceiver\_FileContent\_In | string | Yes | A Base64-encoded file. |
-| vis\_ExternalDocumentReceiver\_ChannelType\_In | string | Yes | The channel type can be **Direct**, **Email**, **API**, or **FileSystem**. |
-| vis\_ExternalDocumentReceiver\_ChannelInfo\_In | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
-
-The channel type determines whether the scenario is interactive or silent.
-
-| Channel type | Scenario |
-|--------------|----------|
-| Direct | Interactive |
-| Email | Silent |
-| API | Silent |
-| FileSystem | Silent |
-
-#### Output parameters
-
-| Parameter name | Type | Required | Description |
-|----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_Data\_Out | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
-
-#### Channel information
-
-| Parameter name | Type | Required | Description |
-|----------------|------|----------|-------------|
-| ChannelId | string | Yes | The identifier of the channel that must be bound. |
-| SendFrom | string | No | Additional information to track the sender. |
-
-Here is an example of a payload.
-
-```json
-{ "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
-    "SendFrom": "xxxx.xxx@contoso.com" }
-```
-
-### Create a new channel by using managed flow
+## Create a new channel by using managed flow
 
 1. In the navigation pane, select **Manage channels**.
 2. On the Action Pane, select **New**.
-3. Enter a name and description, set the **Use manage flow** option to **Yes**, and select a flow template.
+3. Enter a name and description, set the **Use managed flow** option to **Yes**, and select a flow template.
 4. Select **Save**. The new channel page appears.
 
     Creation of the flows will take some time.
 
     - If the flow is successfully generated and activated, the **Manage flow** status will be **On**.
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
+
+## Deactivate and activate the channel
+
+Administrators can use the **Activate**/**Deactivate** button to specify whether the invoice document should be received from the channel. 
+
+If the channel is assigned as the **Channel for file upload** at **Setup system \> System preference**, but it's deactivated, file upload on the **Received file** page doesn't work.

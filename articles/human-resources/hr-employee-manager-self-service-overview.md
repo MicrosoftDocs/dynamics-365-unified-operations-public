@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 This article provides an overview of the Employee self service workspace.
 
-Employee self-service is the perfect gateway for employees to view essential company information. The Employee self service workspace bridges the gap between employees and HR, allowing employees the freedom to access and manage their data, time-off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR. 
+Employee self service is the perfect gateway for employees to view essential company information. The Employee self service workspace bridges the gap between employees and HR, allowing employees the freedom to access and manage their data, time-off, benefits, payroll, learning, and much more. Having a one-stop shop for employees saves time for both employees and HR. 
 
 My information is separated into three sections: Summary, My career information, Additional information.  
 
@@ -65,8 +65,6 @@ The **Next registered course** tile displays the next course that you're reg
 > If the **Course enhancements** feature is enabled, an employee's view shows a **Courses** card that includes courses that are overdue, courses that are due soon (within 10 days), and courses that are assigned. Employee can drill into assigned, open, and completed courses by selecting **View courses** on the **Courses** tile in **Employee self service**. For virtual courses only, employees can change the status to **Complete**.
 
 Depending on your organization's settings, your course registration might go through an approval process.
-
-The **Next Registered Course** displays the next course you're registered for. You can view and register for any open courses. All courses that are open for sign-up have a status of **Started**, and allow employees to self-register appear. Depending on your organization's settings, your course registration might go through an approval process.
 
 The **Certificates** tile displays the certificate and expiration date of the certificate expiring closest to the current date. You can update, add, or remove certificates. Depending on your organization's settings, certificate updates might go through an approval process.
 
