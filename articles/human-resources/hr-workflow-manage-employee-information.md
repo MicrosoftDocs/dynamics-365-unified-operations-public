@@ -4,7 +4,7 @@
 title: Use workflows to manage employee information
 description: This article explains how you can use workflows to manage employee information. 
 author: twheeloc
-ms.date: 11/03/2022
+ms.date: 07/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
