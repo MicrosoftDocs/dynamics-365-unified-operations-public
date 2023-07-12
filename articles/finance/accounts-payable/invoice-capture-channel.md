@@ -163,33 +163,35 @@ If the **Use managed flow** option is set **No**, the Document receive API is ca
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
 
 ## Create a new channel by using unmanaged flow
-A shared mailbox can be used by a group of people, like a support team, to receive and send email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. 
 
-In invoice capture, follow theese steps to create a channel that will use a shared mailbox to receive an email from the supplier:
-1.	Create a channel by clicking the **+ New** button. 
-2.	Enter a channel name. Set the **"Use Manage channel"** field to **No**.
-3.	Save and record the **channel id** from the browser url.
-4.	Log into Power Apps and select **Flow**.
-5.	Click **+ New flow**. Select **Automated cloud flow** from the dropdown list.
-6.	Enter a name for the flow. Select the trigger **When a new email arrives in a shared mailbox**. 
-7.	Click **Create** to create the power automated flow
-8.	Enter the shared mailbox address in **Original MailBox Address**.
-9.	Set **Only with Attachments** and **Include Attachments** fields to **Yes**. 
-10.	Add additional criterias to meet business requirements.
-11.	Click **+** to insert a new step.
-12.	Select **Add an action > Microsoft Dataverse**. Select **Perfom an unbound action**.
-13.	Click **...** and select **Rename** to enter a new name for the step.
-14.	In **Action name**, select **vis_ExternalDocumentReceiver**.
-15.	Update **channel id** to **ChannelId**.
-16.	In the **FileName** field, select **Attachments name**.
-17.	In the **FileContent** field, select **Attachment content**.
-18.	Select **... > Peek code**. Copy the value for **item/FileContent**. This looks like **@items('xxx')?['contentBytes']**. Wrap with string function **string(items('xxx')?['contentBytes'])** and paste the final value into the **Attachment content** field.
-19.	Fill **AdditionalInfo** with the following: 
+A shared mailbox lets a group of people, such as a support team, send and receive email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. 
 
-   	additionalInfo:{
-   	    "SendFrom": @{triggerOutputs()?['body/from']}
-   	}
+In Invoice capture, follow these steps to create a channel that will use a shared mailbox to receive email from the supplier.
 
+1. Select **New** to create a channel. 
+2. Enter a channel name, and set the **Use Manage channel** option to **No**.
+3. Save your changes, and record the **channel id** value from the URL in the browser's address bar.
+4. Sign in to Power Apps, and select **Flow**.
+5. Select **New flow**, and then select **Automated cloud flow** in the dropdown list.
+6. Enter a name for the flow, and select **When a new email arrives in a shared mailbox** as the trigger. 
+7. Select **Create** to create the automated flow.
+8. In the **Original MailBox Address** field, enter the address of the shared mailbox.
+9. Set the **Only with Attachments** and **Include Attachments** options to **Yes**. 
+10. Add other criteria to meet your business requirements.
+11. Select the plus sign (**\+**) to insert a new step.
+12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perfom an unbound action**.
+13. Select the ellipsis (**&hellip;**), and then select **Rename** to enter a new name for the step.
+14. In the **Action name** field, select **vis\_ExternalDocumentReceiver**.
+15. Update **channel id** to **ChannelId**.
+16. In the **FileName** field, select **Attachments name**.
+17. In the **FileContent** field, select **Attachment content**.
+18. Select the ellipsis (**&hellip;**), and then select **Peek code**.
+19. Copy the value for **item/FileContent**. This value looks like **@items('xxx')?\['contentBytes'\]**. Wrap the value in a string function so that it looks like **string(items('xxx')?\['contentBytes'\])**. Then paste the final value into the **Attachment content** field.
+20. In the **AdditionalInfo** field, enter the following value: 
+
+    additionalInfo:{<br>
+    &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
+    \}
 
 ## Deactivate and activate the channel
 
