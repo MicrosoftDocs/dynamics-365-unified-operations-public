@@ -29,3 +29,7 @@ When your legal entity is configured for reporting for multiple VAT registration
 | [Intrastat](emea-aut-intrastat.md) | 10.0.21 | Intrastat (AT), version 16.3 |
 | [EU sales list](emea-aut-eu-sales-list.md) | 10.0.21 | EU Sales list (AT), version 9.5 |
 | [VAT declaration](emea-aut-vat-declaration-austria.md) | 10.0.22 | VAT Declaration XML (AT), version 101.23<br>VAT Declaration Excel (AT), version 101.23.17 |
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
