@@ -446,7 +446,7 @@ In this example, a company in Germany must purchase 10 units of goods from a com
 ## List of country/region-specific articles
 The following table lists the available country/region-specific Intrastat articles.
 
-| Country          | Link      |
+| Country/region          | Link      |
 |------------------|-----------|
 | Austria          |[Austrian Intrastat](emea-aut-intrastat.md)| 
 | Belgium          |[Belgium Intrastat](emea-bel-intrastat.md)|

@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Austrian Intrastat declaration contains information about the trade of goods for reporting.
+You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries/regions. The Austrian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Austrian Intrastat declaration:
 
