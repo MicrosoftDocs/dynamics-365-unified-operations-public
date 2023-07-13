@@ -328,7 +328,7 @@
                   href: ../finance/localizations/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents receiving log
                   href: ../finance/localizations/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
-          - name: Country-specific scenarios
+          - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
               href: ../finance/localizations/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
@@ -1459,7 +1459,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/supply-chain
         - name: Configure model mappings
           items: 
-          - name: Configure country context dependent ER model mappings
+          - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
@@ -2467,7 +2467,7 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
-        - name: Country of origin
+        - name: Country/region of origin
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
@@ -3343,78 +3343,92 @@
       items:
       - name: Transportation management overview
         href: transportation/transportation-management-overview.md
-      - name: Transportation management engines
-        href: transportation/transportation-management-engines.md
-      - name: Create a new transportation management engine
-        href: transportation/create-new-transportation-management-engine.md
-      - name: Associate a fuel index with a carrier as an accessorial charge
-        href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
-      - name: USMCA certification of origin
-        href: transportation/usmca-certification-of-origin.md
-      - name: Assign shipments to related route segments
-        href: transportation/assign-shipments-to-segments.md
-      - name: Commercial invoices
-        href: transportation/commercial-invoice.md
-      - name: Create a bill of lading
-        href: transportation/create-bill-of-lading.md
-      - name: Plan freight transportation routes
-        href: transportation/plan-freight-transportation-routes-multiple-stops.md
-      - name: Plan loads using hub consolidation
+      - name: Transportation engines
         items:
-        - name: Plan loads using hub consolidation overview
-          href: transportation/plan-loads-hub-consolidation.md
-        - name: Plan loads and shipments using the Load planning workbench
-          href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
-      - name: Include container weight and volume on load
-        href: transportation/include-container-weight-volume-on-load.md
-      - name: Reconcile freight manually
-        href: transportation/tasks/reconcile-freight-manually.md
+        - name: Transportation management engines
+          href: transportation/transportation-management-engines.md
+        - name: Create a new transportation management engine
+          href: transportation/create-new-transportation-management-engine.md
+      - name: Set up transportation management
+        items:
+        - name: Set up shipping carriers
+          href: transportation/tasks/set-up-shipping-carriers.md
+        - name: Associate a fuel index with a carrier as an accessorial charge
+          href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+        - name: Carrier groups
+          href: transportation/tasks/carrier-groups.md
+        - name: Number sequences
+          href: transportation/transportation-management-number-sequence.md
+        - name: Status
+          href: transportation/transportation-management-status.md
+        - name: Zone master
+          href: transportation/transportation-management-zone-master.md
+        - name: Load templates
+          href: transportation/tasks/load-template.md
+        - name: Set up a carrier fuel index
+          href: transportation/tasks/set-up-carrier-fuel-index.md
+        - name: Set up a transportation tender
+          href: transportation/tasks/set-up-transportation-tender.md
+        - name: Set up rates
+          items:
+          - name: Rating profiles
+            href: transportation/tasks/setup-a-rating-profile.md
+          - name: Set up rate masters
+            href: transportation/tasks/set-up-rate-masters.md
+          - name: Miscellaneous charges
+            href: transportation/transportation-management-misc-charge.md
+          - name: Set up hub accessorial charges and accessorial masters
+            href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+          - name: Set up accessorial assignments
+            href: transportation/tasks/set-up-accessorial-assignments.md
+        - name: Set up routes
+          items:
+          - name: Modes and methods
+            href: transportation/transportation-management-modes-methods.md
+          - name: Assign shipments to related route segments
+            href: transportation/assign-shipments-to-segments.md
+          - name: Set up transportation constraints for an item
+            href: transportation/tasks/set-up-transportation-constraints-item.md
+      - name: Work with transportation management
+        items:
+        - name: Plan freight transportation routes
+          href: transportation/plan-freight-transportation-routes-multiple-stops.md
+        - name: Load building workbench
+          href: transportation/tasks/load-building-workbench.md
+        - name: Plan loads using hub consolidation
+          items:
+          - name: Plan loads using hub consolidation overview
+            href: transportation/plan-loads-hub-consolidation.md
+          - name: Plan loads and shipments using the Load planning workbench
+            href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+        - name: USMCA certification of origin
+          href: transportation/usmca-certification-of-origin.md
+        - name: Commercial invoices
+          href: transportation/commercial-invoice.md
+        - name: Create a bill of lading
+          href: transportation/create-bill-of-lading.md
+        - name: Include container weight and volume on load
+          href: transportation/include-container-weight-volume-on-load.md
+        - name: Discounts
+          href: transportation/transportation-management-discount.md
+        - name: LTL classes
+          href: transportation/ltl-class.md
+        - name: NMFC codes
+          href: transportation/nmfc-codes.md
+        - name: Schedule appointments
+          items:
+          - name: Set up an appointment for a load
+            href: transportation/tasks/set-up-appointment-load.md
+          - name: Register driver check-in and check-out for an appointment
+            href: transportation/tasks/register-driver-check-check-out-appointment.md
       - name: Reconcile freight
-        href: transportation/reconcile-freight-transportation-management.md
-      - name: Register driver check-in and check-out for an appointment
-        href: transportation/tasks/register-driver-check-check-out-appointment.md
-      - name: Discounts
-        href: transportation/transportation-management-discount.md
-      - name: Miscellaneous charges
-        href: transportation/transportation-management-misc-charge.md
-      - name: Modes and methods
-        href: transportation/transportation-management-modes-methods.md
-      - name: Number sequences
-        href: transportation/transportation-management-number-sequence.md
-      - name: Status
-        href: transportation/transportation-management-status.md
-      - name: Zone master
-        href: transportation/transportation-management-zone-master.md
-      - name: Carrier groups
-        href: transportation/tasks/carrier-groups.md
-      - name: Load building workbench
-        href: transportation/tasks/load-building-workbench.md
-      - name: Load templates
-        href: transportation/tasks/load-template.md
-      - name: Rating profiles
-        href: transportation/tasks/setup-a-rating-profile.md
-      - name: LTL classes
-        href: transportation/ltl-class.md
-      - name: NMFC codes
-        href: transportation/nmfc-codes.md
-      - name: Set up a carrier fuel index
-        href: transportation/tasks/set-up-carrier-fuel-index.md
-      - name: Set up a transportation tender
-        href: transportation/tasks/set-up-transportation-tender.md
-      - name: Set up accessorial assignments
-        href: transportation/tasks/set-up-accessorial-assignments.md
-      - name: Set up an appointment for a load
-        href: transportation/tasks/set-up-appointment-load.md
-      - name: Set up automatic freight reconciliation
-        href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-      - name: Set up hub accessorial charges and accessorial masters
-        href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
-      - name: Set up rate masters
-        href: transportation/tasks/set-up-rate-masters.md
-      - name: Set up shipping carriers
-        href: transportation/tasks/set-up-shipping-carriers.md
-      - name: Set up transportation constraints for an item
-        href: transportation/tasks/set-up-transportation-constraints-item.md
+        items:
+        - name: Set up automatic freight reconciliation
+          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+        - name: Reconcile freight manually
+          href: transportation/tasks/reconcile-freight-manually.md
+        - name: Reconcile freight
+          href: transportation/reconcile-freight-transportation-management.md
     - name: Landed cost
       items:
       - name: Landed cost module overview
@@ -3866,7 +3880,7 @@
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
-    href: ../finance/index.md
+    href: ../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources

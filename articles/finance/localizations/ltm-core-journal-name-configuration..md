@@ -19,7 +19,7 @@ In the journal name configuration in the extended **LATAM** section, you can add
 
 Before you can enable the LATAM configuration, the following prerequisites must be met:
 
-- Enable the **LATAM** globalization feature with a valid country.
+- Enable the **LATAM** globalization feature with a valid country/region.
 - Activate the **LATAM taxes** feature in the LATAM parameters.
 - Create at least one journal name.
 

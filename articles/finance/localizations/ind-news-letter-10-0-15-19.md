@@ -93,7 +93,7 @@ This fix supports the changes that are required to register invoices that are re
 
 - The primary address of the legal entity must be in India.
 - In the **Feature management** workspace, turn on the feature that is named **(India) Electronic invoice under the GST**. For more information, see [Feature management overview](/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
-- Configure your environment to use electronic invoicing. For more information, see [A country-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics 365 Finance](https://support.microsoft.com/topic/a-country-specific-hotfix-to-support-electronic-invoice-under-gst-for-india-in-microsoft-dynamics-365-finance-b557920d-93f9-1e6d-3af5-139efc3cb147).
+- Configure your environment to use electronic invoicing. For more information, see [A country/region-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics 365 Finance](https://support.microsoft.com/topic/a-country-specific-hotfix-to-support-electronic-invoice-under-gst-for-india-in-microsoft-dynamics-365-finance-b557920d-93f9-1e6d-3af5-139efc3cb147).
 - Import the following versions or later of these ET configurations:
 
     - Electronic messages framework model, version 34
