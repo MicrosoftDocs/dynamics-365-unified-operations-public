@@ -95,7 +95,7 @@ When the **Company tax registration in customer invoices** feature is enabled, t
 
 ## Sales tax groups
 
-Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country**, **Accounts receivable Domestic**, **Accounts receivable Third country**, **Reverse charge VAT**.
+Create sales tax groups for the different types of business operations that are applicable to your company. These operation types can include, for example, **Accounts payable Domestic**, **Accounts payable Third country/region**, **Accounts receivable Domestic**, **Accounts receivable Third country/region**, **Reverse charge VAT**.
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax groups**.
 2. Select **New** to create a record, and specify the parameters of the sales tax group. For more information, see [Set up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md).
@@ -119,7 +119,7 @@ Create sales tax groups for the different types of business operations that are 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 2. Select **New** to create a record, and specify the parameters of the sales tax code.
 3. In the **Sales tax currency** field, select **GBP**. For more information, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).
-4. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries.
+4. In the **Country/region** field, select the country/region type that the tax code will be used for. For sales tax codes used to post intra-community dispatches of goods from Northern Ireland to EU Member States, in **Country/Region type** field, select **EU**. For other operations, select **Domestic** or **Third** depending on whether the sales tax code will be used for posting domestic operations or operations with counterparties in other countries/regions.
 5. For reverse charge VAT operations, create two sales tax codes, one that has a negative rate and one that has a positive rate. For more information, see [Reverse charge mechanism for VAT/GST scheme](emea-reverse-charge.md). As of January 1, 2021, a “reverse charge” approach can be used for acquisitions that companies in Great Britain make from counterparties in the EU, and that can be accounted for as import VAT on a VAT Return. This accounting is also known as *postponed VAT accounting*. 
 6. Distribute the new sales tax codes into sales tax groups and item sales tax groups. Make sure that each sales tax code is added to an item sales tax group and a sales tax group, and that the required fields are set on the **Setup** FastTab of the **Sales tax groups** page. The required fields include:
 

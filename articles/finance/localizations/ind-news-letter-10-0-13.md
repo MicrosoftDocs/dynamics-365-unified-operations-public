@@ -39,7 +39,7 @@ On January 1, 2020, the Indian government made the electronic invoice (e-invoice
 
 #### Dynamics 365 Finance
 
-- For information about the update for Finance, see the following Knowledge Base (KB) article: [A country-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4554936).
+- For information about the update for Finance, see the following Knowledge Base (KB) article: [A country/region-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4554936).
 - The Electronic invoice under GST feature is supported in the following versions of Finance and later versions.
 
     | Finance version | App build number |
@@ -50,7 +50,7 @@ On January 1, 2020, the Indian government made the electronic invoice (e-invoice
 
 #### Dynamics AX 2012 R3
 
-- For information about the update for Dynamics AX 2012 R3, see the following KB article: [A country-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics AX 2012 R3](https://support.microsoft.com/help/4578809).
+- For information about the update for Dynamics AX 2012 R3, see the following KB article: [A country/region-specific hotfix to support Electronic invoice under GST for India in Microsoft Dynamics AX 2012 R3](https://support.microsoft.com/help/4578809).
 - [Download the package](https://download.microsoft.com/download/1/a/2/1a2b209f-6b27-49f8-9e43-4db8fce7ba74/DynamicsAX2012R3-KB4578809.EXE).
 
 ### TCS on sales of goods

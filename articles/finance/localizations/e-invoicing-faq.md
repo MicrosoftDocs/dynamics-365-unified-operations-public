@@ -58,7 +58,7 @@ The files attached to the electronic invoice are handled as embedded binary data
 
 Electronic Invoicing service is a microservice platform that will be globally available.
 
-Microsoft plans to publish the electronic invoice formats and integrations for the countries that are functionally localized by Microsoft. For more information, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
+Microsoft plans to publish the electronic invoice formats and integrations for the countries/regions that are functionally localized by Microsoft. For more information, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
 
 If the electronic invoicing format for your country/region isn't listed, the platform aims to support this scenario in the future. You can still benefit from the configuration capabilities Electronic invoicing has, and configure the electronic invoicing format by yourself, or you can work with a partner/ISV to configure those for your organization.
 
@@ -82,13 +82,13 @@ Integration with Electronic Invoicing service requires at least a Tier 2 virtual
 
 This can be achieved by configuration. To test invoice submission, you can connect to Finance or Supply Chain Management from a User Acceptance Test (UAT) environment and submit the test invoices. Electronic invoicing supports configuring test digital certificates, and in the case of e-invoices requiring digital approval, the setup of a URL from test web services published by the tax authorities.
 
-## Is there any documentation about the out-of-box country-specific Electronic Invoicing features?
+## Is there any documentation about the out-of-box country/region-specific Electronic Invoicing features?
 
 Yes. For information about the availability of Electronic Invoicing features and the formats they support, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
 
 ## Does the Electronic Invoicing service allow a legal entity in Finance or Supply Chain Management that is configured for a specific country to consume electronic invoicing features from different country/regions?
 
-Yes. The electronic invoicing features can be consumed to process business document submissions independent from the country of the legal entity, if the following is true:
+Yes. The electronic invoicing features can be consumed to process business document submissions independent from the country/region of the legal entity, if the following is true:
 
    - The business document being generated uses the appropriate document model mapping.
    - There's a match between the business document and applicability rules configured in the electronic invoicing feature.
@@ -123,9 +123,9 @@ Yes. However, it requires customizing the invoice model mapping and adding the n
 
 ## Does the Electronic Invoicing service support different web-service endpoints?
 
-Electronic Invoicing supports different web-services end points. You can use configurable integration with REST web services or a number of parametrized country-specific web service integrations. Different endpoints can be configured for the same web-services and APIs using different versions of configurations. For more information, see [List of parameters by action](e-invoicing-setup.md#list-of-parameters-by-action).
+Electronic Invoicing supports different web-services end points. You can use configurable integration with REST web services or a number of parametrized country/region-specific web service integrations. Different endpoints can be configured for the same web-services and APIs using different versions of configurations. For more information, see [List of parameters by action](e-invoicing-setup.md#list-of-parameters-by-action).
 
-## Is Electronic Invoicing integrated with the various invoice operators' APIs from the Nordic countries, or should that be handled on a case-by-case basis?
+## Is Electronic Invoicing integrated with the various invoice operators' APIs from the Nordic countries/regions, or should that be handled on a case-by-case basis?
 
 Microsoft continuously extends functional coverage to provide out-of-the box integrations by using the electronic invoicing features. For more information about the formats and integrations that are supported, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json#availability-of-electronic-invoicing-features).
 

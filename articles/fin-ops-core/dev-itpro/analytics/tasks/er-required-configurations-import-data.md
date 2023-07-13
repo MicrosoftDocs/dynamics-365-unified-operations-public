@@ -82,7 +82,7 @@ The steps in this subtask show you how a new format configuration can be created
 3. Click Expand/collapse.
 4. Click Expand/collapse.
 
-    The designed format represents the expected structure of the external file. This file must be in XML format and have the settlement root element. Each vendor's transaction is represented by the transaction element that is defined as having zero-to-many multiplicity. This means that the incoming file may contain anywhere from zero to multiple transactions. Nested elements of the 'transaction' element represent a single transaction's attributes. Note that all attributes, except country, are marked as mandatory, meaning that it is required to have them in the importing file.   
+    The designed format represents the expected structure of the external file. This file must be in XML format and have the settlement root element. Each vendor's transaction is represented by the transaction element that is defined as having zero-to-many multiplicity. This means that the incoming file may contain anywhere from zero to multiple transactions. Nested elements of the 'transaction' element represent a single transaction's attributes. Note that all attributes, except country/region, are marked as mandatory, meaning that it is required to have them in the importing file.   
 
 ## Review the settings of the format mapping to the data model
 1. Click Map format to model.
@@ -140,7 +140,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 5. In the tree, expand 'model: Data model 1099 Payments model'.
 6. In the tree, expand 'model: Data model 1099 Payments model\Transactions: Record list'.
 
-    Note that the designed model is presented here as a data source element. At runtime, it will contain the data that is imported from the external file. Several tables were added as data source elements to ensure that the imported data is compliant with the data of the current application, including whether the importing transaction vendor account is available in the system, whether the combination of the importing country and state codes exists, etc.  
+    Note that the designed model is presented here as a data source element. At runtime, it will contain the data that is imported from the external file. Several tables were added as data source elements to ensure that the imported data is compliant with the data of the current application, including whether the importing transaction vendor account is available in the system, whether the combination of the importing country/region and state codes exists, etc.  
 
 7. In the tree, select 'model: Data model 1099 Payments model\Transactions: Record list\$failed: Calculated field = IF(OR(ISEMPTY(model.Transactions.'$refs'.vendor), ISEMPTY(model.Transactions.'$refs'.vendor1099), ISEMPTY(model.Transactions.'$refs'.box1099), ISEMPTY(model.Transactions.'$refs'.country), ISEMPTY(model.Transactions.'$refs'.state), ISEMPTY(model.Transactions.'$refs'.location)), true, false): Boolean'.
 8. Click Edit.

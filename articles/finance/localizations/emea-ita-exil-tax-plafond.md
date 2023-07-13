@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Tax plafond is a tax exemption process available for companies, called *usual exporter*, of purchasing and importing goods and services without paying sales tax, within a limited value of their sales to foreign countries in the previous period. A company is a *usual exporter* if, during the previous year, 10 percent of its revenue value came from selling to a foreign country. The initial plafond amount and its validity dates are established at the beginning of the period. The company can buy without paying sales tax as long as the value of the purchases is less than the initial plafond amount.
+Tax plafond is a tax exemption process available for companies, called *usual exporter*, of purchasing and importing goods and services without paying sales tax, within a limited value of their sales to foreign countries/regions in the previous period. A company is a *usual exporter* if, during the previous year, 10 percent of its revenue value came from selling to a foreign country/region. The initial plafond amount and its validity dates are established at the beginning of the period. The company can buy without paying sales tax as long as the value of the purchases is less than the initial plafond amount.
 
 This article describes how to complete these tasks:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Print a sales invoice in the United Arab Emirates layout
-description: This article includes country-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
+description: This article includes country/region-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
 author: liza-golub
 ms.date: 06/07/2023
 ms.topic: overview
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Print a sales invoice in the United Arab Emirates layout
 
-This article includes country-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
+This article includes country/region-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
 
 In the UAE localization package, printouts for sales invoices and credit notes are included in the layout that's specified in the Federal Tax Authority (FTA) requirements for accounting systems.
 

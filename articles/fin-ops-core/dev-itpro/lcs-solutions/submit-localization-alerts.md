@@ -74,7 +74,7 @@ Use Issue search to identify whether a regulatory feature, that is related to th
             </tr>
             <tr>
                 <td>
-                <p>Country</p>
+                <p>Country/region</p>
                 </td>
                 <td>
                 <p>Select the country or region that the legislation applies to. </p>
