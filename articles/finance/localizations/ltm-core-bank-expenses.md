@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-You can post journals for bank expenses directly to the banks account reconciliations for Latin American countries.
+You can post journals for bank expenses directly to the banks account reconciliations for Latin American countries/regions.
 
 ## Prerequisites
 

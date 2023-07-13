@@ -94,10 +94,10 @@ For more information, see [Russia](../../../finance/localizations/russia.md).
 
 ## VAT reporting for the United Arab Emirates
 
-Standard sales tax functionality in Finance and Operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country-specific features are specific to the United Arab Emirates:
+Standard sales tax functionality in Finance and Operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country/region-specific features are specific to the United Arab Emirates:
 
 - Legal entity configuration has been extended with additional fields required in VAT reporting.
-- VAT reverse charge functionality has been enabled for UAE (ARE country context) to properly record taxable domestic operations within GCC territory.
+- VAT reverse charge functionality has been enabled for UAE (ARE country/region context) to properly record taxable domestic operations within GCC territory.
 - Additional sales, invoice, and credit notes print layouts have been added with additional columns and VAT summary information.
 - Sales Invoice and Credit notes for UAE now print in two languages, including a new ar-AE Arabic language for user interface.
 - VAT Return declaration report is printed to an electronic file format ready for uploading to e-TAX FTA portal.

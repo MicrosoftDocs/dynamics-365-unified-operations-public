@@ -40,7 +40,7 @@ This article provides a generic approach to setting up and generating the VAT st
 > Use the links in the following table to learn more about the new design of VAT declarations in the corresponding countries/regions.
 > 
 >
-> | Country/region        | Additional information                                                          |
+> | Country/region | Additional information                                                          |
 > |----------------|---------------------------------------------------------------------------------|
 > | Austria        | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)       |                                                                           
 > | Czech Republic | [VAT declaration (Czech Republic](emea-cze-vat-declaration-tax-declaration-model.md) |
@@ -266,11 +266,12 @@ You can use Electronic Reporting (ER) to configure statements and report, and to
 -   [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Localization requirements – Create a GER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
-## Country/region-specific resources for VAT statements
+
+## Countryspecific resources for VAT statements
 The VAT statement for each country/region must meet the requirements of the country/region’s legislation. There are predefined general models and formats of VAT statements for the countries/regions listed in the following table.
 
 
-| Country/region        | Additional information                                                          |
+| Country/region | Additional information                                                          |
 |----------------|---------------------------------------------------------------------------------|
 | Austria        | [VAT statement details for Austria](emea-aut-vat-statement-details.md)         |
 | Belgium        |                                                                                 |
