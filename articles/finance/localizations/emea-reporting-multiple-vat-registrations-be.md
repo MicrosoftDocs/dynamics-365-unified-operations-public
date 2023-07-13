@@ -29,3 +29,7 @@ When your legal entity is configured for reporting for multiple VAT registration
 | [Intrastat](emea-bel-intrastat.md)       | 10.0.25 | Intrastat (BE), version 2.9      |
 | [EU sales list](emea-bel-eu-sales-list.md)   | 10.0.25 | EU Sales list (BE), version 2.3  |
 | [VAT declaration](emea-bel-vat-declaration-belgium.md) | 10.0.27 | VAT Declaration XML (BE), version 120.46<br>VAT Declaration Excel (BE), version 120.46.47 |
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
