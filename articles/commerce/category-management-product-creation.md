@@ -2,36 +2,29 @@
 # required metadata
 
 title: Manage product categories and products
-description: This article describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details.
+description: This article describes how merchandising managers can use product categories in Microsoft Dynamics 365 Commerce to manage relationships between the product hierarchy and released product details.
 author: ashishmsft
-ms.date: 10/23/2017
+ms.date: 07/18/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
-ms.custom:
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+
 ---
 
 # Manage product categories and products
 
 [!include [banner](./includes/banner.md)]
 
-This article describes an enhanced way to manage product categories and products in Dynamics 365 Commerce. The enhancements let merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.
+This article describes how merchandising managers can use product categories in Microsoft Dynamics 365 Commerce to manage relationships between the product hierarchy and released product details.
 
-To learn more about how to manage product categories, in the **Category and product management** workspace, select the **Commerce product hierarchy** tile.
+Dynamics 365 Commerce allows merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.
+
+To learn more about how to manage product categories, in the **Category and product management** workspace of Commerce headquarters, select the **Commerce product hierarchy** tile.
 
 Notice the enhanced structure of the **Commerce product hierarchy** page that appears. In previous versions of the app, product properties were divided into *basic product properties* and *Retail product properties*, based on the scope of their applicability. Retail product properties are *global* in their scope of applicability. In other words, for a given product property, the same value is shared across all legal entities. By contrast, basic product properties are *legal entity–specific*. In other words, for a given basic product property, the value can differ across legal entities, depending on the individual business requirements of each legal entity.
 
@@ -58,7 +51,7 @@ You can use the new enhanced structure for product properties to select updated 
 ![Update products dialog box.](media/NewUpdateProductsEnhancedView.PNG)
 
 > [!NOTE]
-> If you use "Schedule batch job" from the **Update products** dialog, you can find the log via **System administration \> Inquiries \> Batch jobs** form. Find the **Update products** batch job, then **Batch job history** menu, **Log** menu, click the top-right **Message details** button to see if any warning or error in the log.
+> When you select **Schedule batch job** in the **Update products** dialog box, you can find the log on the **System administration \> Inquiries \> Batch jobs** form. For the **Update products** batch job, select **Batch job history \> Log**, and then select **Message details** on the top right to view the log and check if there are any warnings or errors.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
