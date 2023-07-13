@@ -28,9 +28,9 @@ The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7:
 - [Save the executable class parameters for Electronic messaging](#executable-class-parameters-vdek).
 - [Set up security roles for electronic message processing](#security-roles-vdek).
 - [Set up an office code for electronic message processing](#office-code-vdek).
-- [Set up an \"Sklad pliku\" (file composition) for electronic message processing](#sklad-pliku)
-- [Set up an \"Wariant JPK_VAT\" (variant JPK_VAT) for electronic message processing](#wariant-jpk-vat)
-- [Set up an \"Wersja schematu\" (schema version) for electronic message processing](#wersja-schematu)
+- [Set up a "Sklad pliku" (file composition) for electronic message processing](#sklad-pliku)
+- [Set up a "Wariant JPK_VAT" (variant JPK_VAT) for electronic message processing](#wariant-jpk-vat)
+- [Set up a "Wersja schematu" (schema version) for electronic message processing](#wersja-schematu)
 - [Set up sales tax codes and sales tax reporting codes](#sales-tax-reporting-codes-vdek).
 
 ## <a id="configurations-vdek"></a>Import and set up ER configurations
@@ -41,7 +41,7 @@ To prepare Finance for JPK-V7 reporting, you must import the following ER config
 |-----------------------------------|------|-------------|
 | Standard Audit File (SAF-T)       | Model | The common ER model for Standard Audit Files. |
 | Standard Audit File model mapping | Model mapping | The model mapping that defines data sources for Polish Standard Audit File (JPK) reports. |
-| JPK-V7 XML format (PL)           | Format (exporting) | The XML format that provides the file required by the Polish Ministry of Finance for periodic reporting. |
+| JPK-V7 XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires for periodic reporting. |
 | JPK-V7 Excel format (PL)         | Format (exporting) | The Excel format for preview information that's reported in XML format. |
 
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
@@ -353,7 +353,7 @@ You must now import data from the **PL JPK_V7 EM setup.zip** file into the selec
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
 2. On the **Select entities** FastTab, select **Add file**.
-3. Select **Upload and add**, select the **PL JPK_V7 EM setup**.**zip** file on your computer, and upload it.
+3. Select **Upload and add**, select the **PL JPK_V7 EM setup.zip** file on your computer, and upload it.
 4. When entities from the package are listed in the grid, select **Close**.
 5. On the Action Pane, select **Import** to start to import data from the data entities.
 
@@ -367,9 +367,10 @@ You will receive a notification in **Messages**, or you can manually refresh the
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
 
 > [!NOTE]
-> As of version 7 of **PL JPK_V7 EM setup**.**zip** file, the package of data entities includes setup for two Electronic messaging processing:
-> - JPK-V7M: Monthly JPK-V7M declaration (Miesięczny Jednolity Plik Kontrolny VAT z deklaracją V7M)
-> - JPK-V7K: Quarterly JPK-V7K declaration (Kwartalny Jednolity Plik Kontrolny VAT z deklaracją V7K)
+> As of version 7 of the **PL JPK_V7 EM setup.zip** file, the package of data entities includes setup for two types of Electronic messaging processing:
+>
+> - **JPK-V7M** – Monthly JPK-V7M declaration (Miesięczny Jednolity Plik Kontrolny VAT z deklaracją V7M)
+> - **JPK-V7K** – Quarterly JPK-V7K declaration (Kwartalny Jednolity Plik Kontrolny VAT z deklaracją V7K)
 
 ## <a id="general-ledger-parameters-vdek"></a>Set up General ledger parameters
 
@@ -383,7 +384,7 @@ To work with the Electronic messaging functionality, you must define related num
 
 ## <a id="executable-class-parameters-vdek"></a>Save the executable class parameters for Electronic messaging
 
-The JPK-V7 and JPK-V7K processing use the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
+Both the JPK-V7 processing and the JPK-V7K processing use the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
 2. Select the **Wygenerowanie JPK-V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
@@ -415,32 +416,32 @@ Follow these steps to enter an office code in the **KodUrzedu** additional field
 2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
 
-## <a id="sklad-pliku"></a>Set up an \"Sklad pliku\" (file composition) for electronic message processing
+## <a id="sklad-pliku"></a>Set up a "Sklad pliku" (file composition) for electronic message processing
 
-Both **JPK-V7M** and **JPK-V7K** electronic message processing contain the **Sklad pliku** additional field. Use this additional field to define the composition of the XML file you will generate:
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Sklad pliku** additional field. Use this additional field to define the composition of the XML file that you will generate:
 
-- **Pelny plik XML** - For the full XML file. The file contains complete elements, `Naglówek`, `Podmiot1`, `Deklaracja` and `Ewidencja`.
-- **Tylko Ewidencja** - For the Ewidencja node only. The file contains the following elements, `Naglówek`, `Podmiot1` and `Ewidencja`.
+- **Pelny plik XML** – For the full XML file. The file contains the complete set of elements: `Naglówek`, `Podmiot1`, `Deklaracja`, and `Ewidencja`.
+- **Tylko Ewidencja** – For the **Ewidencja** node only. The file contains the following elements: `Naglówek`, `Podmiot1`, and `Ewidencja`.
 
-The default value set up for the **Sklad pliku** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **Pelny plik XML**.
+The default value that is set for the **Sklad pliku** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **Pelny plik XML**.
 
-## <a id="wariant-jpk-vat"></a>Set up an \"Wariant JPK_VAT\" (variant JPK_VAT) for electronic message processing
+## <a id="wariant-jpk-vat"></a>Set up a "Wariant JPK_VAT" (variant JPK_VAT) for electronic message processing
 
-Both **JPK-V7M** and **JPK-V7K** electronic message processing contain the **Wariant JPK_VAT** additional field. Use this additional field to define the variant of the XSD schema of XML file you will generate:
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Wariant JPK_VAT** additional field. Use this additional field to define the variant of the XSD schema of the XML file that you will generate.
 
-| **Wariant JPK_VAT** | **Description PL** | **Description EN** | **Default value in EM processing** |
-|---------------------|--------------------|--------------------|------------------------------------|
-| **Miesięczny (Monthly)** | JPK_V7M - dla podatników, którzy rozliczają się miesięcznie | JPK_V7M - company reporting JPK-V7 monthly | Default for JPK-V7M |
-| **Kwartalny (Quarterly)** | JPK_V7K - dla podatników, którzy rozliczają się kwartalnie | JPK_V7M - company reporting JPK-V7 quarterly | Default for JPK-V7K |
+| Wariant JPK_VAT | Description (En) | Description (Pl) | Default value in EM processing |
+|-----------------|------------------|------------------|--------------------------------|
+| Miesięczny (Monthly) | JPK_V7M - company reporting JPK-V7 monthly | JPK_V7M - dla podatników, którzy rozliczają się miesięcznie | Default for JPK-V7M |
+| Kwartalny (Quarterly) | JPK_V7M - company reporting JPK-V7 quarterly | JPK_V7K - dla podatników, którzy rozliczają się kwartalnie | Default for JPK-V7K |
 
-## <a id="wersja-schematu"></a>Set up an \"Wersja schematu\" (schema version) for electronic message processing
+## <a id="wersja-schematu"></a>Set up a "Wersja schematu" (schema version) for electronic message processing
 
-Both **JPK-V7M** and **JPK-V7K** electronic message processing contain the **Wersja schematu** additional field. Use this additional field to define the version of the XSD schema to be applied to the XML file you will generate:
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Wersja schematu** additional field. Use this additional field to define the version of the XSD schema to apply to the XML file that you will generate:
 
-- **1** - JPK-V7(1) - Effective from October 1, 2020 (before 1 January 2022).
-- **2** - JPK-V7(2) - Effective from 1 January 2022.
+- **1** – JPK-V7(1) – Effective from October 1, 2020 (before January 1, 2022).
+- **2** – JPK-V7(2) – Effective from January 1, 2022.
 
-The default value set up for the **Wersja schematu** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **2**.
+The default value that is set for the **Wersja schematu** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **2**.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
 
