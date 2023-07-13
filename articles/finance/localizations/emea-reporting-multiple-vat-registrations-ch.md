@@ -2,7 +2,7 @@
 title: Support for multiple VAT registration numbers in reporting for Switzerland
 description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Switzerland.
 author: liza-golub
-ms.date: 7/11/2023
+ms.date: 7/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,3 +27,7 @@ When your legal entity is configured for reporting for multiple VAT registration
 | Report name     | Release | Electronic reporting (ER) format, version                |
 |-----------------|---------|----------------------------------------------------------|
 | [VAT declaration](emea-che-vat-declaration-switzerland.md) | 10.0.21 | VAT Declaration XML (CH), version 96.16<br>VAT Declaration Excel (CH), version 96.16.9 |
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
