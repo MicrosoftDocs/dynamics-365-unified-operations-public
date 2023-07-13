@@ -22,20 +22,20 @@ ms.search.form:
 
 This article explains how to do reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries or regions: 
 
-- [Austria](emea-reporting-for-multiple-vat-registrations-at.md)
-- [Belgium](emea-reporting-for-multiple-vat-registrations-be.md)
-- [Czechia](emea-reporting-for-multiple-vat-registrations-cz.md)
-- [Denmark](emea-reporting-for-multiple-vat-registrations-dk.md)
-- [Finland](emea-reporting-for-multiple-vat-registrations-fi.md)
-- [France](emea-reporting-for-multiple-vat-registrations-fr.md)
-- [Germany](emea-reporting-for-multiple-vat-registrations-de.md)
-- [Netherlands](emea-reporting-for-multiple-vat-registrations-nl.md)
-- [Norway](emea-reporting-for-multiple-vat-registrations-no.md)
-- [Poland](emea-reporting-for-multiple-vat-registrations-pl.md)
-- [Spain](emea-reporting-for-multiple-vat-registrations-es.md)
-- [Sweden](emea-reporting-for-multiple-vat-registrations-se.md)
-- [Switzerland](emea-reporting-for-multiple-vat-registrations-ch.md)
-- [United Kingdom](emea-reporting-for-multiple-vat-registrations-uk.md)
+- [Austria](emea-reporting-multiple-vat-registrations-at.md)
+- [Belgium](emea-reporting-multiple-vat-registrations-be.md)
+- [Czechia](emea-reporting-multiple-vat-registrations-cz.md)
+- [Denmark](emea-reporting-multiple-vat-registrations-dk.md)
+- [Finland](emea-reporting-multiple-vat-registrations-fi.md)
+- [France](emea-reporting-multiple-vat-registrations-fr.md)
+- [Germany](emea-reporting-multiple-vat-registrations-de.md)
+- [Netherlands](emea-reporting-multiple-vat-registrations-nl.md)
+- [Norway](emea-reporting-multiple-vat-registrations-no.md)
+- [Poland](emea-reporting-multiple-vat-registrations-pl.md)
+- [Spain](emea-reporting-multiple-vat-registrations-es.md)
+- [Sweden](emea-reporting-multiple-vat-registrations-se.md)
+- [Switzerland](emea-reporting-multiple-vat-registrations-ch.md)
+- [United Kingdom](emea-reporting-multiple-vat-registrations-uk.md)
   
 The scope of reporting is limited to generation of the following reports:
 
