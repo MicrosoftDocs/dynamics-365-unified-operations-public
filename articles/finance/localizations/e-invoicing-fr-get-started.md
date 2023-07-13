@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../includes/banner.md)]
 
-Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country-dependent in the Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](e-invoicing-get-started.md).
+Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in the Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](e-invoicing-get-started.md).
 
-## Country-specific configuration for the French Chorus Pro submission (FR) Electronic invoicing feature
+## Country/region-specific configuration for the French Chorus Pro submission (FR) Electronic invoicing feature
 
 Some steps are required to configure the **French Chorus Pro submission (FR)** Electronic invoicing feature. Some of the parameters from the configuration are published with default values. These values must be reviewed and updated so that they better reflect your business operations.
 
@@ -61,7 +61,7 @@ Before you begin the procedures in this article, complete the following prerequi
     5. Create a technical account for API access. For more information, see [Creation of a technical account for API access in production](https://communaute.chorus-pro.gouv.fr/documentation/creation-of-a-technical-account-for-an-api-access-in-production/).
     6. Copy the user ID of the technical account and the password. You will use this information in later steps.
 
-## Country-specific configuration of the application setup for the French Chorus Pro submission (FR) Electronic invoicing feature
+## Country/region-specific configuration of the application setup for the French Chorus Pro submission (FR) Electronic invoicing feature
 
 Some of the parameters from the **French Chorus Pro submission (FR)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review and update the default values as required, so that they better reflect your business operations.
 

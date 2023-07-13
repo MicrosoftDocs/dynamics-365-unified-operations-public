@@ -24,7 +24,7 @@ The following fields are included in the Austrian Intrastat declaration:
 - Statistical procedure
 - Product name
 - Partner country ISO code
-- Country of origin
+- Country/region of origin
 - Net mass
 - Additional unit
 - Mode of transport

@@ -74,7 +74,7 @@ The single online channel can be mapped to a single e-commerce site in site buil
 
 In this scenario, a single channel supports more than one language. Therefore, product names, descriptions, and attributes can be localized in Commerce headquarters. To provide a complete localized site experience, marketing content on the site can also be localized in Commerce site builder.
 
-The limitation of this scenario is that a single channel can be configured with only one currency, one legal entity, and one set of products and prices. This configuration works best for countries that have a single currency and multiple languages (for example, Canada, which has the English and French languages), a single legal entity, and a single set of products and prices.
+The limitation of this scenario is that a single channel can be configured with only one currency, one legal entity, and one set of products and prices. This configuration works best for countries/regions that have a single currency and multiple languages (for example, Canada, which has the English and French languages), a single legal entity, and a single set of products and prices.
 
 Each language in a channel can be configured with its own domain name. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and the `www.adventure-works-fr.ca` domain can be configured for the Canada French version. Alternatively, different languages in a channel can be configured in a single domain, and then a different path can be used for each language. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and then the `www.adventure-works.ca/fr` path can be used for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site, based on the user's location.
 
@@ -159,7 +159,7 @@ To add a new channel language, go to **Site settings \> Channels**, and select t
 
 ### Add and configure the site picker module
 
-After you've configured a site with multiple languages and or channels, you might want to add a language selector to the site page header, so that users can manually select their language or country. The module library [header module](author-header-module.md) has built-in support for users to select a language by using the [site picker module](site-selector.md). The site picker module can be added to the header module in the header fragment.
+After you've configured a site with multiple languages and or channels, you might want to add a language selector to the site page header, so that users can manually select their language or country/region. The module library [header module](author-header-module.md) has built-in support for users to select a language by using the [site picker module](site-selector.md). The site picker module can be added to the header module in the header fragment.
 
 For more information about how to add and configure the site picker module, see [Site picker module](site-selector.md).
 
