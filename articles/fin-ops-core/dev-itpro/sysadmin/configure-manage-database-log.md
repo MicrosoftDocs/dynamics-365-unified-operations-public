@@ -69,6 +69,7 @@ You can delete database logs as required. You can delete logs for specific table
 
 > [!NOTE]
 > Records that have been electronically signed can't be deleted from logs.
+> Admin is required to set up a job per company to clean up database logs.
 
 1. Go to **System administration** \> **Inquiries** \> **Database** \> **Database log**.
 2. Select **Clean up log**.

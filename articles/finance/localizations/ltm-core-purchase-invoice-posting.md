@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-You can add the necessary information for Latin American countries when you post invoices of the following types in an extended LATAM section:
+You can add the necessary information for Latin American countries/regions when you post invoices of the following types in an extended LATAM section:
 
 - Purchase orders
 - Invoice journals

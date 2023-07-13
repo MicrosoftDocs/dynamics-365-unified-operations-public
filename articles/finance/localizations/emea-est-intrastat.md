@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Estonian Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Estonian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Estonian Intrastat declaration. All the fields except **VAT number of trading partner** are included for both arrivals and dispatches. The **VAT number of trading partner** field is included only for dispatches.
 

@@ -22,20 +22,20 @@ ms.search.form:
 
 This article explains how to do reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries or regions: 
 
-- Austria
-- Belgium
-- The Czech Republic
-- Denmark
-- Finland
-- France
-- Germany
-- Netherlands
-- Norway
-- Poland
-- Spain
-- Sweden
-- Switzerland
-- United Kingdom
+- [Austria](emea-reporting-multiple-vat-registrations-at.md)
+- [Belgium](emea-reporting-multiple-vat-registrations-be.md)
+- [Czechia](emea-reporting-multiple-vat-registrations-cz.md)
+- [Denmark](emea-reporting-multiple-vat-registrations-dk.md)
+- [Finland](emea-reporting-multiple-vat-registrations-fi.md)
+- [France](emea-reporting-multiple-vat-registrations-fr.md)
+- [Germany](emea-reporting-multiple-vat-registrations-de.md)
+- [Netherlands](emea-reporting-multiple-vat-registrations-nl.md)
+- [Norway](emea-reporting-multiple-vat-registrations-no.md)
+- [Poland](emea-reporting-multiple-vat-registrations-pl.md)
+- [Spain](emea-reporting-multiple-vat-registrations-es.md)
+- [Sweden](emea-reporting-multiple-vat-registrations-se.md)
+- [Switzerland](emea-reporting-multiple-vat-registrations-ch.md)
+- [United Kingdom](emea-reporting-multiple-vat-registrations-uk.md)
   
 The scope of reporting is limited to generation of the following reports:
 
@@ -43,7 +43,7 @@ The scope of reporting is limited to generation of the following reports:
 - [EU sales list](#eu-sales-list)
 - [VAT declaration](#vat-declaration)
 
-For an overview of the functionality, view the following TechTalk session from September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
+For an overview of the functionality, view the following TechTalk session from September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/blogs/post/?postid=a366e6b4-d44c-4849-bdff-d77468e84aec).
 
 ## Prerequisites
 
@@ -138,7 +138,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Denmark | Intrastat (DK).version.25.4 |
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
-    | 10.0.34 | The Czech Republic | Intrastat (CZ).version.24.6 |
+    | 10.0.34 | Czechia | Intrastat (CZ).version.24.6 |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -229,7 +229,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.23 | Denmark | EU Sales list (DK).version.13.4 |
     | 10.0.24 | Poland | EU Sales list (PL).version.14.7 |
     | 10.0.25 | Belgium | EU Sales list (BE).version.2.3 |
-    | 10.0.33 | The Czech Republic | EU Sales list (CZ).version.15.9 |
+    | 10.0.33 | Czechia | EU Sales list (CZ).version.15.9 |
 
 ### Transfer and report the EU sales list
 
@@ -273,7 +273,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | Release | Country/region | ER format | Link to article |
     |---------|---------|-----------|---------------|
     | 10.0.19 | All | Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138 | |
-    | 10.0.13 | The Czech Republic | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |
+    | 10.0.13 | Czechia | VAT declaration XML (CZ).version.64.66<br>VAT Control statement XML (CZ).version.64.66.65<br>VAT Declaration Excel (CZ).version.64.66.25 | [VAT declaration (Czech Republic)](emea-cze-vat-declaration-tax-declaration-model.md) |
     | 10.0.19 | Netherlands | VAT Declaration XML (NL).version.85.14<br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) |
     | 10.0.20 | France | VAT Declaration Excel (FR).version.85.15 | [VAT declaration (France)](emea-fra-vat-declaration-preview-france.md) |
     | 10.0.21 | United Kingdom | MTD VAT importing model mapping (UK).version.31.36<br>Tax declaration model mapping.version.95.158<br>VAT Declaration Excel (UK).version.32.30.16<br>VAT Declaration JSON (UK).version.32.31 | [Prepare for integration with MRD for VAT](emea-gbr-mtd-vat-integration.md) |
@@ -284,6 +284,8 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
+    | 10.0.26 | Finland | VAT Declaration TXT (FI).version.112.9<br>VAT Declaration Excel (FI).version.112.9.6 | [VAT declaration (Finland)](emea-fin-vat-declaration.md) |
+    | 10.0.27 | Belgium | VAT Declaration XML (BE).version.120.46<br>VAT Declaration Excel (BE).version.120.46.47 | [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md) |
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
 
     > [!NOTE]
