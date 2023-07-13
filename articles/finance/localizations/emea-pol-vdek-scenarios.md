@@ -86,7 +86,7 @@ The following rules about reporting sales invoices for retail operations are bas
 
 ### Supported business user scenario in Finance
 
-To report the **RO** and **FP** document types for retail operations, use the following parameters in the **Retail-specific sales marking** group of parameters of the **Wygenerowanie JPK_V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) executing the **EMGenerateJPKVDEKReportController_PL** executable class (**Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**):
+To report the **RO** and **FP** document types for retail operations, use the following parameters in the **Retail-specific sales marking** group of parameters of the **Wygenerowanie JPK_V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) that runs the **EMGenerateJPKVDEKReportController_PL** executable class (**Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**):
 
 - The **Aggregate fiscal documents** checkbox activates **Criteria to collect customer invoices for aggregation (RO – summarized invoices)** records that are included to collect and aggregate fiscal receipts that must be reported as documents of the **RO** type.
 - The **Report retail POS invoices** checkbox collects retail invoices that have an invoice date in the reporting period and reports them as documents of the **FP** type.
@@ -98,7 +98,7 @@ By default, the **Aggregate fiscal documents** checkbox is cleared. In this case
 
 When the **Aggregate fiscal documents** checkbox is selected, domestic invoices that have a status of **Fiscal document** or **Fiscal document converted to invoice**, and that have a **Date of VAT register** value that falls in the reporting period, are reported as one aggregated document of the **RO** type for the reporting period. You define company-specific criteria of domestic fiscal documents that must be aggregated by using **Criteria to collect customer invoices for aggregation ("RO" - summarized invoices)** records.
 
-When the aggregated **RO** document is included in the report, it has following header fields.
+When the aggregated **RO** document is included in the report, it has the following header fields.
 
 | Reporting tag      | Value                                 |
 |--------------------|---------------------------------------|
