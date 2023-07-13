@@ -28,7 +28,7 @@ To make the QR-bill functionality available, you must turn on the following feat
 - (Switzerland) QR-bills
 
 > [!NOTE]
-> When you turn on the Swiss QR-bill functionality, it also becomes available to other countries. Depending on the address of the legal entity, those countries include Switzerland (CH), Germany (DE), Austria (AT), France (FR), and Italy (IT).
+> When you turn on the Swiss QR-bill functionality, it also becomes available to other countries/regions. Depending on the address of the legal entity, those countries/regions include Switzerland (CH), Germany (DE), Austria (AT), France (FR), and Italy (IT).
 
 ## Electronic reporting configurations
 
