@@ -115,8 +115,8 @@ When you import addresses, the **IsLocationOwner** field should be set to **Yes*
 
 For more information about how to change the location owner of an imported address, see [Managing location owners](./global-address-book-location-owner.md).
 
-## If the party type is Legal entity and customer type is organization, are these synchronized in the global address book in Customer experience?
-No, the gloable address book will not synchronize the two fields in Customer experience. V3 mapping only supports Organization, so the record doesn't reach Dataverse and no errors are displayed.
+## If the party type is Legal entity, Organization or Team, will the global address book synchronize the customer record in Customer experience?
+No, the gloable address book will not synchronize the two fields in Customer experience. V3 mapping only supports Organization, so the record doesn't reach Dataverse and no errors are displayed. A separate party record of type **Organization** needs to be created.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
