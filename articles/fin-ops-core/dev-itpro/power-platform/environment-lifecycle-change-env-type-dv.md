@@ -7,18 +7,12 @@ ms.date: 06/02/2023
 ms.topic: article
 ---
 
-# Reset and change the type of a connected Microsoft Dataverse environment
+# Change the type of a connected Microsoft Dataverse environment
 
 When the Power Platform Integration is enabled, the finance and operations apps  and the customer engagements apps environments are tightly connected. The administrators should look at these two platforms as a one single environment, with multiple apps. In this article, we highlight the environment lifecycle scenarios impacted by the Power Platform Integration.
 
 > [!IMPORTANT]
-> The Power Platform Integration is not affected by the environment lifecycle scenarios described in this article, besides when the environments are deleted.
-
-## Reset an environment from Power Platform admin center
-
-It is not possible to Reset a linked environment from Power Platform admin center, the Reset button is not available.
-
-:::image type="content" source="media/ppi-reset.png" alt-text="Reset option not available in Power Platform admin center." lightbox="media/ppi-reset.png":::
+> The Power Platform Integration is not affected by the environment lifecycle scenarios described in this article.
 
 ## Change the environment type from Power Platform admin center
 
@@ -34,5 +28,10 @@ Aspects to consider when changing the environment type:
 
 - **Production to sandbox**: The Dataverse environment becomes of type sandbox, while the linked finance and operations apps remains of type production. This configuration is not recommended. Since the Power Platform Integration link is irreversible, the customer cannot link the production finance and operations apps environment to another production Dataverse environment without deletion.
 
-> [!IMPORTANT]
-> It is highly **not recommended** to run production workloads in a sandbox environment. Sandbox environments do not benefit from the same level of SLAs as production ones.
+## Change the environment type from Lifecycle services
+
+It is not possible to change the environment type in Lifecycle services. Finance and operations apps environments have predefined types that cannot be changed.
+
+## Recommendations
+
+- It is **not recommended** to run production workloads in a sandbox environment. Sandbox environments do not benefit from the same level of SLAs as production ones.
