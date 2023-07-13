@@ -43,7 +43,7 @@ The scope of reporting is limited to generation of the following reports:
 - [EU sales list](#eu-sales-list)
 - [VAT declaration](#vat-declaration)
 
-For an overview of the functionality, view the following TechTalk session from September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/vat-reporting-for-multiple-tax-registrations-in-single-legal-entity-september-29-2021)
+For an overview of the functionality, view the following TechTalk session from September 29, 2021: [VAT Reporting for Multiple Tax Registrations in Single Legal Entity](https://community.dynamics.com/blogs/post/?postid=a366e6b4-d44c-4849-bdff-d77468e84aec).
 
 ## Prerequisites
 
