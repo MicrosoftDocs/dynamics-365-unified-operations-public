@@ -1662,7 +1662,7 @@
                 href: localizations/e-invoicing-submission-log.md?context=/dynamics365/context/finance
               - name: Work with the Electronic documents receiving log
                 href: localizations/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
-          - name: Country-specific scenarios
+          - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
               href: localizations/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
@@ -4663,7 +4663,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/finance
         - name: Configure model mappings
           items: 
-          - name: Configure country context dependent ER model mappings
+          - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/finance
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/finance

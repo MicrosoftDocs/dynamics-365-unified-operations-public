@@ -189,7 +189,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between the registration type and the registration category.
-3. For the **VAT ID** registration type of the **DEU** country, select the **VAT ID** registration category.
+3. For the **VAT ID** registration type of the **DEU** country/region, select the **VAT ID** registration category.
 
 #### Set up the customer's VAT registration number
 
