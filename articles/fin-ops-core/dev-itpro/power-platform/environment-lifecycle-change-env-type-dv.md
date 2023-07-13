@@ -7,7 +7,7 @@ ms.date: 06/02/2023
 ms.topic: article
 ---
 
-# Change the type of a connected Microsoft Dataverse environment
+# Change the type of connected environments
 
 When the Power Platform Integration is enabled, the finance and operations apps  and the customer engagements apps environments are tightly connected. The administrators should look at these two platforms as a one single environment, with multiple apps. In this article, we highlight the environment lifecycle scenarios impacted by the Power Platform Integration.
 

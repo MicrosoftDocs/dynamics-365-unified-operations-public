@@ -44,7 +44,7 @@ After all the steps above are completed, when the cloud-hosted environment is cr
 
 ### Step 5: [Optional] Finalize the setup in LCS
 
-Depending on your requirements (for example, if dual write is required), additional steps need needed to be done in LCS, in the environment page. <!--TODO add link to dual write>
+Depending on your requirements (for example, if dual write is required), additional steps need needed to be done in LCS, in the environment page. <!--TODO add link to dual write-->
 
 ## Recommendations
 
