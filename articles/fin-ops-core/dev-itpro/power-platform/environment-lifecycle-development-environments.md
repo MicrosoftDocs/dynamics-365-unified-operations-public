@@ -9,7 +9,7 @@ ms.topic: article
 
 # Setup developer cloud-hosted environments with Power Platform Integration
 
-Finance and operations apps have a rich development experience, as described in [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page). As part of this experience, cloud development environments can be provisioned in your Lifecycle Services (LCS) project. They are virtual machines to which a developer connects with Remote Desktop access to develop code through the Microsoft Visual Studio environment.
+Finance and operations apps have a rich development experience, as described in [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page). As part of this experience, cloud development environments can be provisioned in your Lifecycle Services (LCS) project. They're virtual machines to which a developer connects with Remote Desktop access to develop code through the Microsoft Visual Studio environment.
 
 Article [Deploy and access development environments](/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances) describes in detail the configuration steps for cloud hosted environments. This article highlights the steps to enable the Power Platform integration.
 
@@ -40,12 +40,12 @@ Once the Power Platform Integration is enabled, choose the correct [template](en
 
 ### Step 4: Deploy the environment
 
-After all the steps above are completed, when the cloud-hosted environment is created, a paired Dataverse environment will be deployed as well.
+After all the steps are completed, when the cloud-hosted environment is created, a paired Dataverse environment will be deployed as well.
 
 ### Step 5: [Optional] Finalize the setup in LCS
 
-Depending on your requirements (for example, if dual write is required), additional steps need needed to be done in LCS, in the environment page. <!--TODO add link to dual write-->
+Depending on your requirements (for example, if dual write is required), more steps have to be followed in LCS, in the environment page. <!--TODO add link to dual write-->
 
 ## Recommendations
 
-- If your cloud-hosted environment does not have the Power Platform integration enabled, but you are leveraging dual-write, you are working on an old setup that is not supported anymore. Deploy a new development environment with Power Platform integration enabled.
+- If your cloud-hosted environment does not have the Power Platform integration enabled, but you're using dual-write, you're working on an old setup that isn't supported anymore. Deploy a new development environment with Power Platform integration enabled.

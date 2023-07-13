@@ -26,7 +26,7 @@ The procedure to back up environments in [Power Platform](/power-platform/admin/
 
 In Power Platform, it's possible to restore a [system backup](/power-platform/admin/backup-restore-environments#restore-a-system-backup) or a [manual backup](/power-platform/admin/backup-restore-environments#manual-backups), which restores both code and database into the environment. See [Elements to pay attention after the restore and point-in-time restore are complete](environment-lifecycle-database-movements#elements-to-consider-before-and-after-database-and-environments-movements)
 
-## Copy environments
+### Copy environments
 
 In Power Platform, it's possible to [copy an environment](/power-platform/admin/copy-environment). See [Elements to pay attention after the copy in PPAC and database refresh in LCS are complete](environment-lifecycle-database-movements#elements-to-consider-before-and-after-database-and-environments-movements).
 
