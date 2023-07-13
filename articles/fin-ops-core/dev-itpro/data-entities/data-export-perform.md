@@ -1,3 +1,4 @@
+---
 title: Data entity export performance tips  
 description: This article provides tips about improving performance when exporting.
 author: gned  
@@ -9,7 +10,7 @@ ms.custom:
 
 ---
 
-# Data management overview
+# Data entity export performance tips  
 
 [!include [banner](../includes/banner.md)]
 
