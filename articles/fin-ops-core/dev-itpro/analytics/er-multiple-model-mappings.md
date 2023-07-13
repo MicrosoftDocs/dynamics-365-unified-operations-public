@@ -173,7 +173,7 @@ The **InvoiceProject Copy** model mapping of the **Project invoice model mapping
 ## See also
 
 - [Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
-- [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md)
+- [Configure country/region context dependent ER model mappings](er-country-dependent-model-mapping.md)
 - [Electronic reporting framework API changes](er-apis-app10-0-11.md)
 
 

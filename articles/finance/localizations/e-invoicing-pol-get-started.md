@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Before you begin the procedures in this article, complete the following prerequi
     - Project e-invoice (PL)
     - Advance e-invoice (PL)
 
-## Country-specific configuration for the Polish electronic invoice (PL) feature
+## Country/region-specific configuration for the Polish electronic invoice (PL) feature
 
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
@@ -74,7 +74,7 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the country-specific ER configurations that are required for Poland are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md).
+1. Make sure that the country/region-specific ER configurations that are required for Poland are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md).
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
