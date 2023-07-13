@@ -217,7 +217,7 @@ You must set up the NGP codes and assign them to related products. The **NGP** f
 
 ### Intrastat journal
 
-Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries/region. For more information, see [Intrastat overview](emea-intrastat.md).
+Go to **Tax** \> **Declarations** \> **Foreign trade** \> **Intrastat** to manage your transactions that are applicable to foreign trade with EU countries/regions. For more information, see [Intrastat overview](emea-intrastat.md).
 
 The **NGP** column is specific to France and shows the NGP code for the product. If the NGP isn't applicable to a product, **0** (zero) is shown. To adjust the NGP code, select the transaction, and then, on the **General** tab, in the **Codes** section, in the **NGP** field, select the required NGP code.
 

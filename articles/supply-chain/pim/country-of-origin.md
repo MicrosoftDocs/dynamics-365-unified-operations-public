@@ -34,7 +34,7 @@ Many organizations issue certificates to their vendors to ensure that products m
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.21, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Country of origin management feature* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Configure source and destination countries
+## Configure source and destination countries/regions
 
 Before you issue a certificate for a product, you must link the product to its destination country/region and its country/region of origin.
 
@@ -48,7 +48,7 @@ Before you issue a certificate for a product, you must link the product to its d
     | Destination country | Select the country/region that you're sending the product to. |
     | Origin country | Select the country that you're shipping the product from. |
 
-The purpose of this setup is to help you generate a bill of materials (BOM) report where you can include the country/region of origin for each part that source and destination countries are specified for. This report will help you get a holistic picture of where your parts come from and where they are going.
+The purpose of this setup is to help you generate a bill of materials (BOM) report where you can include the country/region of origin for each part that source and destination countries/regions are specified for. This report will help you get a holistic picture of where your parts come from and where they are going.
 
 ## Keep track of vendor certificates
 
@@ -76,7 +76,7 @@ To set up your certificate information, follow these steps.
 
 ## Include the country/region of origin on BOM reports
 
-When you generate a BOM report, you can include the country/region of origin for each part that you specified source and destination countries for on the **Country of origin rules** page.
+When you generate a BOM report, you can include the country/region of origin for each part that you specified source and destination countries/regions for on the **Country of origin rules** page.
 
 1. Go to **Product information management \> Products \> Released products**.
 1. Select or create a product to open its **Released product details** page.
