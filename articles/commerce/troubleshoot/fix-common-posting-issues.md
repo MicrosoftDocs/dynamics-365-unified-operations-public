@@ -9,8 +9,7 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2022-01-30
-ms.search.form: RetailStatementTable_SOCreateFailed, RetailStatementTable_InvoiceFailed, RetailStatementTable_PaymentPosted
-
+ms.search.form: RetailStatementTable_SOCreateFailed, RetailStatementTable_InvoiceFailed, RetailStatementTable_PaymentPosted, RetailStatementTable_Aggregated, RetailStatementTable_CustomerOrderCreated, RetailStatementTable_Invoiced
 ---
 
 # Fix common statement posting issues by editing transactions
