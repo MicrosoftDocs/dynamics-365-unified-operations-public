@@ -2,7 +2,7 @@
 title: Support for multiple VAT registration numbers in reporting for Austria
 description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Austria.
 author: liza-golub
-ms.date: 7/4/2023
+ms.date: 7/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
