@@ -50,7 +50,7 @@ For more information, see [Download ER configurations from the Global repository
 4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
 5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise).
 6. In the **Credit note** field, select the transaction code for the return of goods.
-7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report.
+7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country/region that is part of the EU, select **EU** in the **Country/region type** field, so that the country/region appears on your Intrastat report.
 
 ### Set up the product parameters for the Intrastat declaration
 
@@ -195,7 +195,7 @@ The following example shows how to set up Danish Intrastat and create the Intras
 13. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
 14. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Item code  | Partner country | Transaction type | Supplementary units | Net weight | Invoice value | Reference number | Item recipient's VAT number | Origin |
+    | Item code  | Partner country/region | Transaction type | Supplementary units | Net weight | Invoice value | Reference number | Item recipient's VAT number | Origin |
     |------------|-----------------|------------------|---------------------|------------|---------------|------------------|-----------------------------|--------|
     | 100 200 30 | DE              | 11               | 0                   | 16         | 2632          | 0000031          | DE9012                      | DNK    |
 
@@ -243,7 +243,7 @@ The following example shows how to set up Danish Intrastat and create the Intras
 13. Set the **Generate report** option to **Yes**. Then, in the **Report file name** field, enter the required name.
 14. Select **OK**, and review the report in text format that is generated. The following table shows the values for arrivals in the example report.
 
-    | Item code  | Partner country | Transaction type | Supplementary units | Net weight | Invoice value | Reference number |
+    | Item code  | Partner country/region | Transaction type | Supplementary units | Net weight | Invoice value | Reference number |
     |------------|-----------------|------------------|---------------------|------------|---------------|------------------|
     | 100 200 30 | DE              | 11               | 0                   | 30         | 965           | 0000041          |
 
