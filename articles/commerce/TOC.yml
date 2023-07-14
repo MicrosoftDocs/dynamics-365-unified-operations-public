@@ -724,8 +724,8 @@
             href: copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: import-export-manifest.md
-        - name: Consuming requests of Commerce runtime (CRT) Product service
-          href: product-crt-requests.md
+        - name: Consume Commerce runtime (CRT) Product service requests
+          href: crt-product-requests.md
       - name: Pricing and discounts
         items:
         - name: Discounts
