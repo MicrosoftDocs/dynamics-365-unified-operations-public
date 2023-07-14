@@ -30,7 +30,7 @@ The cloud-powered product discoverability in Commerce helps retailers continue t
 
 The Commerce search experience has improved capabilities to help retailers achieve better product discoverability. At the same time, these capabilities deliver the scalability and performance that are required for e-commerce traffic.
 
-## Prerequisites
+## Configure cloud-powered search capabilities
 
 Cloud-powered search capabilities are available starting in Commerce version 10.0.8. 
 
