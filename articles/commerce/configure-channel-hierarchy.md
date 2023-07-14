@@ -23,7 +23,7 @@ ms.assetid:
 
 This article describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 
-Channel navigation hierarchies organize products into categories so that the products can be browsed on an e-commerce site or at points of sale (POS). Retail and online channels must be configured with channel navigation hierarchies.
+Channel navigation hierarchies organize products into categories so that the products can be browsed on an e-commerce site or at the point of sale (POS). Retail and online channels must be configured with channel navigation hierarchies.
 
 ## Configure the channel
 
@@ -74,7 +74,7 @@ The following image shows how to publish channel updates.
 To configure the distribution schedule job to push changes to channel databases, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. Run the **1040** (**Products**) and **1150** (**Catalog**) jobs.
+1. Run the **1040 (Products)** and **1150 (Catalog)** jobs.
 
 ## Additional resources
 
