@@ -2,17 +2,16 @@
 title: Product collection modules
 description: This article provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
-ms.date: 05/18/2022
+ms.date: 07/18/2023
 ms.topic: overview
 ms.prod:
 ms.technology:
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.assetid:
+
 ---
 
 # Product collection modules
@@ -37,10 +36,8 @@ The following illustration shows the different types of product collections bein
 ![Example of the different types of product collections on an e-Commerce site.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type.
-
-> [!NOTE]
-> You should enable [Cloud-powered search](cloud-powered-search-overview.md) first to use product collection modules.
+> - Always use product collection modules to show a group of products of a similar type.
+> - Before you use product collection modules, you must first enable cloud-powered search in Commerce headquarters. For instructions on how to configure cloud-powered search, see [Configure cloud-powered search capabilities](cloud-powered-search-overview.md#configure-cloud-powered-search-capabilities).
 
 ## Product collection modules and types
 
