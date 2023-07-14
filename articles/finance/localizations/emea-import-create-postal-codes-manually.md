@@ -36,7 +36,7 @@ The import process lets you update the ZIP/postal codes for a specific country/r
 ## Import ZIP/postal codes
 You can use the **Import ZIP/postal codes** page to import new postal codes into Dynamics 365 Finance. When you import the codes, the existing ZIP or postal codes are replaced with the new format, and any new codes are added.
 
-For some countries, you must use the Data management framework to import codes, while for other countries only an upload file is required. Belgium, Netherlands, and Sweden require a file to upload.
+For some countries/regions, you must use the Data management framework to import codes, while for other countries/regions only an upload file is required. Belgium, Netherlands, and Sweden require a file to upload.
 
 > [!NOTE]
 > -   For Belgium, the official webpage from the Belgian Post provides an official list of the postcodes and the corresponding city names. The import supports html file format.

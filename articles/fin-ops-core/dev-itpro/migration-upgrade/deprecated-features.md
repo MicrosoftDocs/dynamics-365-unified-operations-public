@@ -371,7 +371,7 @@ Feature for creating templates for new profit tax registers. This feature create
 | **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
 ### Payroll and Human Resources for Russia
-Russian country specific module for managing staff administration information, timesheet details for employees, payroll accounting, and creating pay statements. 
+Russian country/region specific module for managing staff administration information, timesheet details for employees, payroll accounting, and creating pay statements. 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

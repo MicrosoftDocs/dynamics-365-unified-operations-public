@@ -19,7 +19,7 @@ ms.search.validFrom: 2017-06-20
 
 This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the concepts and terminology related to the process.
 
-The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored to specific countries and languages, but at the same time allowing for the maximum reuse of templates, pages, content, and media. You can also create a basic site and then expand into new markets by adding support for additional countries and languages over time.
+The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored to specific countries/regions and languages, but at the same time allowing for the maximum reuse of templates, pages, content, and media. You can also create a basic site and then expand into new markets by adding support for additional countries/regions and languages over time.
 
 ## Definitions
 
@@ -71,7 +71,7 @@ For more information about channels, see [Channels overview](channels-overview.m
 
 Out of the box, all Dynamics 365 Commerce e-commerce sites are configured to use a single online channel and a single language, regardless of whether you start with the Fabrikam demo site or create a new site from scratch.
 
-In this configuration, customers and partners typically develop all the assets that will be used across countries and languages. These assets include templates, pages, fragments, content, and media. All site content is developed in the first language you selected for your site, or if you're using the Fabrikam demo site, site content will be developed in English.
+In this configuration, customers and partners typically develop all the assets that will be used across countries/regions and languages. These assets include templates, pages, fragments, content, and media. All site content is developed in the first language you selected for your site, or if you're using the Fabrikam demo site, site content will be developed in English.
 
 ![Out of the box Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
 
@@ -118,7 +118,7 @@ The process for localizing the content of your pages and fragments is covered in
 
 ### Configure a new channel for your site
 
-Dynamics 365 Commerce e-commerce sites can serve experiences that are defined across multiple online channels that are configured in Commerce headquarters. A site uses multiple channels to show customers a unique configuration of payment methods, price groups, product hierarchies, assortments, and a set of products. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience that is associated with individual countries. However, this approach is a business decision that the customer makes. It isn't a requirement.
+Dynamics 365 Commerce e-commerce sites can serve experiences that are defined across multiple online channels that are configured in Commerce headquarters. A site uses multiple channels to show customers a unique configuration of payment methods, price groups, product hierarchies, assortments, and a set of products. A channel is typically used to configure these dimensions to suit the requirements and preferences for the experience that is associated with individual countries/regions. However, this approach is a business decision that the customer makes. It isn't a requirement.
 
 The prerequisites and tasks that are associated with setting up a channel (online store) are beyond the scope of this document. For more information about how to set up an online channel in Commerce headquarters, see [Channel setup basics](channels-overview.md#channel-setup-basics). For information about the steps and requirements specific to online channels, see [Set up an online channel](channel-setup-online.md).
 
