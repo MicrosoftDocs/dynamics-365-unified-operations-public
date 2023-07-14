@@ -1,6 +1,6 @@
 ---
-title: Consume requests of Commerce runtime (CRT) Product service
-description: This article describes how to consume requests of Commerce runtime (CRT) Product service to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
+title: Consume Commerce runtime (CRT) Product service requests
+description: This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 author: rickwyang
 ms.date: 07/18/2023
 ms.topic: article
@@ -12,11 +12,11 @@ ms.search.validFrom: 2023-07-05
 
 ---
 
-# Consume requests of Commerce runtime (CRT) Product service
+# Consume Commerce runtime (CRT) Product service requests
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to consume requests of Commerce runtime (CRT) Product service to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
+This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 
 Based on your business requirements, you might need to build your own Commerce runtime (CRT) extensions and consume requests of CRT services. When you are working with products, requests of CRT Product service will be required from your extension. For information on building CRT extensions, see [Commerce runtime (CRT) extensibility](dev-itpro/commerce-runtime-extensibility.md).
 
