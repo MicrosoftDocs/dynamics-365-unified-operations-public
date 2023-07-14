@@ -42,8 +42,8 @@ To configure cloud-powered search capabilities, follow these steps.
     ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
     1. If the **ProductSearch.UseAzureSearch** configuration parameter exists and is set to **true**, cloud-powered search capabilities have already been configured.
-    1. If the configuration parameter exists but is not set to **true**, set it to **true**.
-    1. If the configuration parameter isn't present, continue to the next step.
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter exists but isn't set to **true**, set it to **true**.
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter isn't present, continue to the next step.
 
 1. Select **New** to add the **ProductSearch.UseAzureSearch** configuration parameter. 
 1. Set the value of the **ProductSearch.UseAzureSearch** configuration parameter to **true**.
@@ -58,9 +58,9 @@ The following illustration shows an example of typical browse and search functio
 
 ## Faceted navigation and choice summary
 
-Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of the choices is shown.
+Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of their choices is shown.
 
-By using faceted navigation, you can configure different refiners for different terms in a term set, without having to create additional pages.
+By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages.
 
 The following illustration shows an example where faceted navigation is used in a search.
 
@@ -81,7 +81,7 @@ The following illustration shows an example where immersive autosuggest is being
 Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
 
 > [!NOTE]
-> Advanced sorting options like new, best-selling, and trending are available with Commerce SDK version version 9.35 and Dynamics 365 Commerce version 10.0.20.
+> Advanced sorting options like "new", "best-selling", and "trending" are available with Commerce SDK version version 9.35 and Dynamics 365 Commerce version 10.0.20.
 
 ## Additional resources
 
