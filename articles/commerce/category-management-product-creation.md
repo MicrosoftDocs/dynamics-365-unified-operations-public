@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage product categories and products
-description: This article describes how merchandising managers can use product categories in Microsoft Dynamics 365 Commerce to manage relationships between the product hierarchy and released product details.
+description: This article describes how merchandising managers can use product categories to manage relationships between the product hierarchies and released product details in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 07/18/2023
 ms.topic: article
@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-09-01
 
 [!include [banner](./includes/banner.md)]
 
-This article describes how merchandising managers can use product categories in Microsoft Dynamics 365 Commerce to manage relationships between the product hierarchy and released product details.
+This article describes how merchandising managers can use product categories to manage relationships between the product hierarchies and released product details in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce allows merchandising managers view a structure of product properties that is shared between the product hierarchy and released product details.
 
@@ -51,7 +51,7 @@ You can use the new enhanced structure for product properties to select updated 
 ![Update products dialog box.](media/NewUpdateProductsEnhancedView.PNG)
 
 > [!NOTE]
-> When you select **Schedule batch job** in the **Update products** dialog box, you can find the log on the **System administration \> Inquiries \> Batch jobs** form. For the **Update products** batch job, select **Batch job history \> Log**, and then select **Message details** on the top right to view the log and check if there are any warnings or errors.
+> When you select **Schedule batch job** in the **Update products** dialog box, you can find the log on the **System administration \> Inquiries \> Batch jobs** form. For the **Update products** batch job, select **Batch job history \> Log**, and then select **Message details** on the top right to view the log to check if there are any warnings or errors.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
