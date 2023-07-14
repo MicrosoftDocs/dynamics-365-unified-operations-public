@@ -1,37 +1,42 @@
 ---
-title: Consuming requests of Commerce runtime (CRT) Product service
-description: This article describes how to consume requests of Commerce runtime (CRT) Product service for searching products and retrieving product information in Microsoft Dynamics 365 Commerce.
+title: Consume requests of Commerce runtime (CRT) Product service
+description: This article describes how to consume requests of Commerce runtime (CRT) Product service to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 07/05/2023
+ms.date: 07/18/2023
 ms.topic: article
-audience: Developer, IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2023-07-05
+
 ---
 
-# Consuming requests of Commerce runtime (CRT) Product service
+# Consume requests of Commerce runtime (CRT) Product service
 
-Based on your business requirements, you might need to build your own Commerce runtime (CRT) extensions and consume requests of CRT services. When you are working with products, requests of Product service will be required from your extension. To build CRT extensions, please follow [Commerce runtime (CRT) extensibility](dev-itpro/commerce-runtime-extensibility.md).
+[!include [banner](includes/banner.md)]
 
-Product service consists of many requests and responses which are implemented differently. Consuming wrong requests can lead to performance issues in Commerce Scale Unit. In this article, we will provide a general guidance on consuming requests of Product service to search products or retrieving product information.
+This article describes how to consume requests of Commerce runtime (CRT) Product service to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 
-## Searching for products
+Based on your business requirements, you might need to build your own Commerce runtime (CRT) extensions and consume requests of CRT services. When you are working with products, requests of CRT Product service will be required from your extension. For information on building CRT extensions, see [Commerce runtime (CRT) extensibility](dev-itpro/commerce-runtime-extensibility.md).
 
-Typically, you will need to search for products when you don't have the product identifiers, i.e., product record identifier, or item identifier with product dimensions. You can search for products using keywords, categories, or product refiners. To search for products, `SearchProductsRequest` is recommended to use.
+CRT Product service consists of many requests and responses which are implemented differently. Consuming the wrong requests can lead to performance issues in Commerce Scale Unit (CSU). 
+
+## Search for products
+
+Typically, you will need to search for products when you don't have the product identifiers (also known as product record identifiers) or item identifiers with product dimensions. You can search for products using keywords, categories, or product refiners. To search for products, Microsoft recommends using the `SearchProductsRequest` request.
 
 > [!NOTE]
-> `ProductSearchRequest` and `ProductSearchServiceRequest` use different implementations that return more product information, but will consume more Commerce Scale Unit resources and lead to performance issues. We recommend to use alternative requests to retrieve product information.
+> `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information, but they can also consume more CSU resources that leads to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
-### Input parameters
+### SearchProductsRequest input parameters
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | SearchCriteria | ProductSearchCriteria | Required | The product search criteria. |
 | SearchForItemIdViaBarcode | bool | Optional | Whether to match the keyword with bar codes and convert the keyword to item identifier. When you are using SQL full-text based search instead of [Cloud-powered search](cloud-powered-search-overview.md), this parameter also enables remote channel search. |
 
-#### ProductSearchCriteria
+#### ProductSearchCriteria parameters
 
 Here are the commonly used parameters of `ProductSearchCriteria`.
 
@@ -42,18 +47,18 @@ Here are the commonly used parameters of `ProductSearchCriteria`.
 | CategoryIds | IList\<long\> | Optional | The category identifiers. |
 | Refinement | IList\<ProductRefinerValue\> | Optional | The refinements. |
 
-### Response
+### SearchProductsRequest response
 
-The response of `SearchProductsRequest` is a list of `ProductSearchResult` containing matching products.
+The response of a `SearchProductsRequest` request is a list of `ProductSearchResult` containing matching products.
 
-## Retrieving product information
+## Retrieve product information
 
-Unlike searching for products, you will need to retrieve detailed product information when you already have the product identifiers, i.e., product record identifier, or item identifier with product dimensions. To retrive product information, `GetProductsServiceRequest` is recommended to use.
+Unlike searching for products, you will need to retrieve detailed product information when you already have the product identifiers, i.e., product record identifier, or item identifier with product dimensions. To retrive product information, Microsoft recommends that you use the `GetProductsServiceRequest` request.
 
 > [!NOTE]
-> `GetProductServiceRequest` (note the Products/Product plural difference with `GetProductsServiceRequest`) uses a different implementation that return more product information, but will consume more Commerce Scale Unit resources and lead to performance issues. We recommend to use alternative requests to retrieve product information.
+> `GetProductServiceRequest` (note the Products/Product plural difference with `GetProductsServiceRequest`) uses a different implementation that returns more product information, but can also consume more CSU  resources and lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
-### Input parameters
+### GetProductsServiceRequest input parameters
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
@@ -65,22 +70,22 @@ Unlike searching for products, you will need to retrieve detailed product inform
 | CatalogId | long | Optional | The catalog identifier. Set to 0 if catalog feature is not used. |
 | InventoryLocationId | string | Optional | The warehouse to retrieve quantity limits of product behavior. |
 
-### Response
+### GetProductsServiceRequest response
 
-`GetProductsServiceResponse` with a list of `SimpleProduct` inside.
+The response of a `GetProductsServiceResponse` request is a list of `SimpleProduct` products.
 
-### Other requests to get specific product information
+## Other requests to get specific product information
 
-In some cases, you cannot get all product information for your business requirements by consuming `GetProductsServiceRequest`. Here are a few examples.
+In some cases, you can't get all product information for your business requirements by consuming `GetProductsServiceRequest`. Here are a few examples.
 
-#### Retrieving product attributes
+### Retrieve product attributes
 
-To retrieve product attributes, `GetProductAttributeValuesServiceRequest` is recommended to use.
+To retrieve product attributes, Microsoft recommends that you use the `GetProductAttributeValuesServiceRequest` request.
 
 > [!NOTE]
-> If your products are configured with high number of attributes, `GetProductAttributeValuesServiceRequest` will consume more Commerce Scale Unit resources. Be cautious when consuming this request, especially on the high-volume APIs because it might cause Commerce Scale Unit performance issues.
+> If your products are configured with high number of attributes, `GetProductAttributeValuesServiceRequest` can consume more CSU resources. Be cautious when consuming this request, especially on the high-volume APIs because it might cause CSU performance issues.
 
-Input parameters:
+#### GetProductAttributeValuesServiceRequest input parameters
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
@@ -88,13 +93,15 @@ Input parameters:
 | ProductId | long | Required | The product record identifier. |
 | CatalogId | long | Required | The catalog identifier. Set to 0 if catalog feature is not used. |
 
-Response: `GetProductAttributeValuesServiceResponse` with a list of `AttributeValue` inside.
+#### GetProductAttributeValuesServiceRequest response: 
 
-#### Retrieving product variants
+The response of a `GetProductAttributeValuesServiceRequest` request is a list of `AttributeValue` values.
 
-To retrieve product variants for product masters, `GetVariantProductsServiceRequest` is recommended to use.
+### Retrieve product variants
 
-Input parameters:
+To retrieve product variants for product masters, Microsoft recommends that you use the `GetVariantProductsServiceRequest` request.
+
+#### GetVariantProductsServiceRequest input parameters
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
@@ -103,6 +110,8 @@ Input parameters:
 | MatchingDimensionValues | ReadOnlyCollection\<ProductDimension\> | Optional | The product dimension values that must be available in the resultant products. |
 | MatchingSlotToComponentRelations | ReadOnlyCollection\<ComponentInSlotRelation\> | Optional | The components that must be available in the resultant products. |
 
-Response: `GetProductsServiceResponse` with a list of `SimpleProduct` inside.
+### GetVariantProductsServiceRequest response
+
+The response of a `GetProductsServiceResponse` request is a list of `SimpleProduct` products.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
