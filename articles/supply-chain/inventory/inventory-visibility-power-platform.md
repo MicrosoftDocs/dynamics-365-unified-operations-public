@@ -110,8 +110,10 @@ To enable the **Inventory summary** page and set the synchronization frequency, 
 
 > [!NOTE]
 > The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
->  When the settings of calculated measures are changed, the data in the *On-hand Invnetory* page will not be automatically updated until the related data of the products is modified.
-> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+>
+> When you change the settings for a calculated measure, data on the **On-hand inventory** page won't update automatically until the related product data is modified.
+>
+> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
 ## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
 
@@ -126,8 +128,10 @@ To view data on the **Preload the Inventory Visibility Summary** tab, you must
 
 > [!NOTE]
 > As with the *OnHandMostSpecificBackgroundService* feature, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
-> When the settings of calculated measures are changed, the data in the *OnHand Index Query Preload Results* page will not be automatically updated until the related data of the products is modified.
-> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+>
+> When you change the settings for a calculated measure, data on the **OnHand Index Query Preload Results** page won't update automatically until the related product data is modified.
+>
+> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
 ## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries
 
