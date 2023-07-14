@@ -305,7 +305,7 @@ When you post a sales order, free text invoice, credit note, return order, proje
 - **Purpose**: Select the option P01. If you don't select this option, you will get a rejection from PAC services.
 - **Incoterm**: Select the incoterm code established by the government in the catalog cIncoterm.
 - **Foreign trade**: Select this field to generate CFDI foreign trade complement.
-- **Source certificate**: The selection you make will depend on free trade agreements that the Mexican government has with different countries:
+- **Source certificate**: The selection you make will depend on free trade agreements that the Mexican government has with different countries/regions:
 
 	- **Unmarked (0)**: No certificate is required
 	- **Marked (1)**: Certificate is required 

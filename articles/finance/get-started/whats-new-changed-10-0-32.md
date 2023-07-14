@@ -132,7 +132,7 @@ The following table lists the features that are turned on by default in version 
 | Maturity date validation of posting payment journal with postdated check | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | (Brazil) Fix for improving performance of CNAB customer electronic payment | January 12, 2023 | Mandatory | Cash and Bank Management |
 | Undo settlement by selected data in both accounts - payable and receivable | January 12, 2023 | Mandatory | Cash and Bank Management |
-| ISO20022 payment functionalities for all countries | January 12, 2023 | Mandatory | Cash and Bank Management |
+| ISO20022 payment functionalities for all countries/regions | January 12, 2023 | Mandatory | Cash and Bank Management |
 | (Norway) Payment proposal dimension control improvement | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | ISO20022 include processed payments count to payment EndToEndId | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | (Belgium) CODA bank statement processing performance improvement | January 12, 2023 | Enabled by default | Cash and Bank Management |
@@ -188,7 +188,7 @@ For information about the bug fixes included in this update, sign in to Microsof
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 

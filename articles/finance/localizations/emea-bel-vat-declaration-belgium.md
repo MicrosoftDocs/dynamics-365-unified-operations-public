@@ -573,7 +573,7 @@ For example, for the following sales tax code:
 
 | Sales tax code | Percentage | Comment                                                                |
 |----------------|------------|------------------------------------------------------------------------|
-| ComGood-3      | 21         | Commercial goods that are imported from or exported to third countries |
+| ComGood-3      | 21         | Commercial goods that are imported from or exported to other countries/regions |
 
 You have the following setup of reporting codes.
 
@@ -601,7 +601,7 @@ For example, for the following sales tax code:
 
 | Sales tax code | Percentage | Comment                                                                                        |
 |----------------|------------|------------------------------------------------------------------------------------------------|
-| Service21      | 21         | Services and internally used goods that are traded within Belgium, the EU, and third countries |
+| Service21      | 21         | Services and internally used goods that are traded within Belgium, the EU, and other countries/regions |
 
 You have the following setup of reporting codes.
 

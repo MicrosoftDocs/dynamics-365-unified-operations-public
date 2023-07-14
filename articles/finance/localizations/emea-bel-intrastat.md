@@ -14,7 +14,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Belgium Intrastat declaration contains information about the trade of goods for reporting.
+You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries/regions. The Belgium Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Belgium Intrastat declaration.
 
@@ -341,7 +341,7 @@ To set up an address format that includes county information, follow these steps
 15. Set the **Extended report** option to **Yes**.
 16. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Record type | Partner country | Transaction code | Code of region of origin/destination | Commodity codes | Net mass | Invoice value | Country of origin | Customer's VAT number | Mode of transport | Delivery terms |
+    | Record type | Partner country/region | Transaction code | Code of region of origin/destination | Commodity codes | Net mass | Invoice value | Country/region of origin | Customer's VAT number | Mode of transport | Delivery terms |
     |-------------|-----------------|------------------|--------------------------------------|-----------------|----------|---------------|-------------------|-----------------------|-------------------|----------------|
     | 29          | DE              | 11               | 3                                    | 10020030        | 16       | 2632          | BE                | DE9012                | 3                 | CIF            |
 > [!NOTE]
@@ -390,7 +390,7 @@ To set up an address format that includes county information, follow these steps
 
 12. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Record type | Partner country | Transaction code | Code of region of origin/destination | Commodity codes | Net mass | Invoice value | Mode of transport | Delivery terms |
+    | Record type | Partner country/region | Transaction code | Code of region of origin/destination | Commodity codes | Net mass | Invoice value | Mode of transport | Delivery terms |
     |-------------|-----------------|------------------|--------------------------------------|-----------------|----------|---------------|-------------------|----------------|
     | 19          | DE              | 11               | 3                                    | 10020030        | 30       | 965           | 3                 | CIF            |
 

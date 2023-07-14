@@ -18,8 +18,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This article describes how to prepare Microsoft Dynamics 365 Finance to work with the Standard Audit File for Tax (SAF-T) report and generate the file in XML format according to the requirements for SAF-T in Denmark.
 
 > [!NOTE]

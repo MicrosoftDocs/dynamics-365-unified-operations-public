@@ -41,7 +41,7 @@ Starting in the Finance version 10.0.9 (April 2020 release), the user interface 
 
 [![Foreign trade parameters page, Import from Global repository FastTab.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
-Similar to the **Select format configuration** FastTab, the **Import from Global repository** FastTab shows only the ER formats that are applicable to the business process for which an ER format is selected in this lookup field. In this example, the generation of Intrastat declaration. The ER format is applicable for the company to which the user is currently signed in, depending on the company country context.
+Similar to the **Select format configuration** FastTab, the **Import from Global repository** FastTab shows only the ER formats that are applicable to the business process for which an ER format is selected in this lookup field. In this example, the generation of Intrastat declaration. The ER format is applicable for the company to which the user is currently signed in, depending on the company country/region context.
 
 When you select an ER format on the **Import from Global repository** FastTab, the selected ER format
 [configuration](general-electronic-reporting.md#Configuration) is imported from the GR to the current Finance instance.

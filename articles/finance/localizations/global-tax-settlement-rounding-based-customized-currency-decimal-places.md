@@ -38,7 +38,7 @@ Before you can use the **Tax settlement rounding based on the customized currenc
 
 ## Background
 
-Because of the high value of the currency in Gulf region countries, the **amount** data type is usually extended to three, four, or even more decimal places. (For information, see [Extending decimal point precision for selected data types](../../fin-ops-core/dev-itpro/extensibility/decimal-point-precision.md).) The tax settlement functionality at **Tax \> Declarations \> Sales tax \> Settle and post sales tax** must use the same precision for rounding. If the tax settlement doesn't use the same rounding precision as the customized currency, the tax settlement loses the accuracy of the amount. This loss causes a voucher imbalance.
+Because of the high value of the currency in Gulf countries/regions, the **amount** data type is usually extended to three, four, or even more decimal places. (For information, see [Extending decimal point precision for selected data types](../../fin-ops-core/dev-itpro/extensibility/decimal-point-precision.md).) The tax settlement functionality at **Tax \> Declarations \> Sales tax \> Settle and post sales tax** must use the same precision for rounding. If the tax settlement doesn't use the same rounding precision as the customized currency, the tax settlement loses the accuracy of the amount. This loss causes a voucher imbalance.
 
 ## Functionality
 

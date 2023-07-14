@@ -176,7 +176,7 @@ This article provides an example that shows how to post arrivals and dispatches 
 
 ### Purchase goods by using a purchase order
 
-This part of the example shows how to use a purchase order to purchase goods (items) from European Union (EU) countries.
+This part of the example shows how to use a purchase order to purchase goods (items) from European Union (EU) countries/regions.
 
 1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2.  On the Action Pane, select **New**.
@@ -203,7 +203,7 @@ This part of the example shows how to use a purchase order to purchase goods (it
 
 ### Purchase services by using a vendor invoice
 
-This part of the example shows how to use a vendor invoice to purchase services from EU countries.
+This part of the example shows how to use a vendor invoice to purchase services from EU countries/regions.
 
 1. Go to **Accounts payable** > **Invoices** > **Invoice journal**.
 2. On the Action Pane, select **New**.
@@ -271,7 +271,7 @@ This part of the example shows how to use a vendor invoice to purchase services 
 
 ### Sell goods by using a sales order
 
-This part of the example shows how to use a sales order to sell goods (items) to European Union (EU) countries.
+This part of the example shows how to use a sales order to sell goods (items) to European Union (EU) countries/regions.
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. On the Action Pane, select **New**.
@@ -303,7 +303,7 @@ This part of the example shows how to use a sales order to sell goods (items) to
 
 ### Return goods by using a credit note
 
-This part of the example shows how to use a credit note to return goods (items) from European Union (EU) countries.
+This part of the example shows how to use a credit note to return goods (items) from European Union (EU) countries/regions.
 
 1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
 2. On the Action Pane, select **New**.

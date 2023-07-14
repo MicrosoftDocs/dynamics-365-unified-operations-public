@@ -328,7 +328,7 @@
                   href: ../finance/localizations/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents receiving log
                   href: ../finance/localizations/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
-          - name: Country-specific scenarios
+          - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
               href: ../finance/localizations/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
@@ -1459,7 +1459,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/supply-chain
         - name: Configure model mappings
           items: 
-          - name: Configure country context dependent ER model mappings
+          - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/supply-chain
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/supply-chain
@@ -2467,7 +2467,7 @@
           href: pim/tasks/create-batch-attributes-product.md
         - name: Add an image to a product
           href: pim/tasks/add-image-product.md
-        - name: Country of origin
+        - name: Country/region of origin
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
@@ -3880,7 +3880,7 @@
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
-    href: ../finance/index.md
+    href: ../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
