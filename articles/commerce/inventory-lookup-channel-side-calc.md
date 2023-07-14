@@ -3,11 +3,11 @@ title: POS inventory lookup with channel-side calculation
 description: This article describes how the POS inventory lookup operation works with channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
 ms.date: 07/18/2023
-ms.topic: articlex
+ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: hhaines
+ms.author: josaw
 ms.search.validFrom: 2020-02-11
 
 ---
