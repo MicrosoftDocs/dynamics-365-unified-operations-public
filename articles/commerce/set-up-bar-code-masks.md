@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up barcode masks
-description: This article describes how to set up barcode mask characters, barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up barcode mask characters and barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 07/18/2023
 ms.topic: article
@@ -22,11 +22,11 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up barcode mask characters, barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
+This article describes how to set up barcode mask characters and barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
 
 ## Set up barcode mask characters
 
-Barcode masks are used to create barcodes and to quickly identify barcodes that are scanned into the point of sale (POS). Masks are comprised of characters which act as placeholders that indicate the format for the barcodes that will be created. To configure a barcode mask, you need to set up barcode mask characters. Go to **Retail and Commerce** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Mask characters**. Click **New** to create barcode mask characters. Mask characters can be created to indicate the following barcode data.
+Barcode masks are used to create barcodes and to quickly identify barcodes that are scanned into the point of sale (POS). Masks are comprised of characters which act as placeholders that indicate the format for the barcodes that will be created. To configure a barcode mask, you must set up barcode mask characters in Commerce headquarters. Go to **Retail and Commerce \> Inventory management \> Barcodes and labels \> Mask characters**, and then select **New** to create barcode mask characters. Mask characters can be created to indicate the following barcode data.
 
 | Field            | Description |
 |------------------|-------------|
@@ -51,22 +51,22 @@ Barcode masks are used to create barcodes and to quickly identify barcodes that 
 
 After barcode mask characters are specified for the necessary barcode masks, go to **Retail and Commerce** &gt; **Inventory management** &gt; **Barcodes and labels** &gt; **Barcode mask setup**. On this page, you can define barcode masks that use the previously specified characters. These barcode masks will be used when generating barcodes and will also help to identify barcodes scanned at the POS.
 
-1. Click **New** to create a new barcode mask.
+1. Select **New** to create a new barcode mask.
 2. Enter values in the **Mask ID** and **Description** fields, and then select a barcode mask type in the **Type** field.
 3. In the **General** section, select a value in the **Barcode standard** field, and then specify the barcode prefix, if one is required.
 4. In the **Barcode mask segment** section, add barcode segments that will be used in the barcode to be created.
 
-As an example, to create a barcode mask with mask ID 'Product', you'd do the following:
+For example, to create a barcode mask with mask ID "Product", you'd do the following:
 
-1. Create a new barcode mask and select type 'Product'.
-2. Select a barcode standard, for example, 'Code 39'.
-3. Provide a prefix to be used to easily identify the barcode. For example, '22'.
-4. Add a mask segment. The 'Product' mask segment will be selected.
-5. Provide a length for the product segment, for example, '10'. The length should match the length of a product ID commonly used in the store. The mask will be displayed as a preview in the **General** section under **Mask**.
+1. Create a new barcode mask and select type **Product**.
+2. Select a barcode standard (for example, **Code 39**).
+3. Provide a prefix to be used to easily identify the barcode (for example, "22").
+4. Add a mask segment. The **Product** mask segment will be selected.
+5. Provide a length for the product segment (for example, "10"). The length should match the length of a product ID commonly used in the store. The mask will be displayed as a preview in the **General** section under **Mask**.
 
 > [!NOTE]
-> - If you are using a number sequence to generate barcodes which have the barcode mask, since Commerce version 10.0.32 a barcode prefix is only inserted into the head after the barcode is processed from the number sequence. As a result, you must ensure that the length of the number sequence's segments is less than or equal to the length of barcode mask's segments.
-> - If you are using barcode types that have a check digit (for example, EAN13, EAN8, UPCA, and UPCE), you must ensure that the length of the number sequence's segments is less than the length of barcode mask's segments.
+> - If you are using a number sequence to generate barcodes which have the barcode mask, starting with Commerce version 10.0.32 a barcode prefix is only inserted into the head after the barcode is processed from the number sequence. As a result, you must ensure that the length of the number sequence's segments is less than or equal to the length of barcode mask's segments.
+> - If you are using barcode types that have a check digit (for example, "EAN13", "EAN8", "UPCA", and "UPCE"), you must ensure that the length of the number sequence's segments is less than the length of barcode mask's segments.
 
 ## Assign barcode masks to barcodes
 
