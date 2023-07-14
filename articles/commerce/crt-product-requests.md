@@ -97,7 +97,7 @@ The following table lists the input parameters of `GetProductAttributeValuesServ
 | ProductId | long | Required | The product record identifier. |
 | CatalogId | long | Required | The catalog identifier. Set to "0" if catalog feature isn't used. |
 
-#### GetProductAttributeValuesServiceRequest response: 
+#### GetProductAttributeValuesServiceRequest response 
 
 The response of a `GetProductAttributeValuesServiceRequest` request is a list of `AttributeValue` values.
 
