@@ -15,7 +15,6 @@ ms.search.validFrom: 2023-03-01
 # Copy omnichannel content between tenants
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This article describes how to copy content between tenants by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 

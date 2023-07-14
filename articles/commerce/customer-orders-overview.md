@@ -21,7 +21,6 @@ ms.search.validFrom: 2016-02-28
 # Customer orders in point of sale (POS)
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 

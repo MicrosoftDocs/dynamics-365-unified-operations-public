@@ -47,7 +47,7 @@ Follow these steps to add the codification that's provided by the fiscal authori
 5. In the **Tax application code** field, enter a value.
 6. Save your changes, and close the page.
 
-The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country tax ID that's provided by the fiscal authorities.
+The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country/region tax ID that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 2. On the **Country/region** tab, select **LATAM** \> **Country per Taxpayer Type identification**.

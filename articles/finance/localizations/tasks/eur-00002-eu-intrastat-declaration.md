@@ -32,7 +32,7 @@ This procedure was created using the demo data company DEMF.
 4. Click Open.
 5. Open Configuration name column filter.
 6. Apply a filter on the "Configuration name" field, with a value of "Intrastat (DE)", using the "begins with" filter operator.
-    * You should select the configuration name applicable for the country of your legal entity. This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.  
+    * You should select the configuration name applicable for the country/region of your legal entity. This procedure uses the German legal entity (DEMF) as an example, therefore "Intrastat (DE)" should be chosen.  
     * Click Import and then click Yes.  
 7. Open Configuration name column filter.
 8. Apply a filter on the "Configuration name" field, with a value of "intrastat report", using the "begins with" filter operator.

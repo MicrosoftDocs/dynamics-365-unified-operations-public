@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Swedish Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Swedish Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Swedish Intrastat declaration:
 

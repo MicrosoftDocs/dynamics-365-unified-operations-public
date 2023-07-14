@@ -77,7 +77,7 @@ When the sales invoice is posted, the settled advance invoice is reversed. The o
 
     | Field | Description |
     |-------|-------------|
-    | Posting profile | <p>*For Poland only:* Select the posting profile to use with advance invoicing.</p><p>**Important:** For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger. Therefore, you should leave this field blank for those countries, to prevent advance invoices from being posted to the general ledger.</p> |
+    | Posting profile | <p>*For Poland only:* Select the posting profile to use with advance invoicing.</p><p>**Important:** For the Czech Republic and Hungary, advance invoices aren't treated as accounting or tax documents, and they aren't posted to the general ledger. Therefore, you should leave this field blank for those countries/regions, to prevent advance invoices from being posted to the general ledger.</p> |
     | Offset account | Select the offset account. |
     | Sales tax group | Select the sales tax group to use when sales tax is calculated for advance invoicing. |
     | Reversal as correction | Select this checkbox if the reversal of an advance invoice should be considered a correction. |
