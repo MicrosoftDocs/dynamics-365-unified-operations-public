@@ -1728,9 +1728,7 @@
             items: 
             - name: Multiple VAT registration numbers
               href: localizations/emea-multiple-vat-registration-numbers.md
-            - name: Reporting for multiple VAT registrations
-              href: localizations/emea-reporting-for-multiple-vat-registrations.md
-            - name: Supported reports for countries/regions
+            - name: Austria reporting 
               items: 
               - name: Austria  
                 href: localizations/emea-reporting-multiple-vat-registrations-at.md
@@ -2469,7 +2467,7 @@
             - name: VAT exchange rates
               href: localizations/emea-vat-exchange-rate.md
             - name: VAT reconciliation report
-              href: localizations/tasks/eur-00018-vat-reconciliation-report.md
+              href: localizations/emea-tax-reconciliation-report.md
             - name: VAT register transactions for Eastern Europe
               href: localizations/emea-vat-register-transactions.md
             - name: Tax point date (Date of VAT register)
@@ -2638,6 +2636,8 @@
             href: localizations/tasks/set-up-mandatory-payment-references.md
           - name: Update vendor invoice declarations and generate the report
             href: localizations/tasks/update-vendor-invoice-declarations-report.md
+          - name: Tax reconciliation report
+            href: localizations/emea-tax-reconciliation-report.md
         - name: India
           items:
           - name: India overview
@@ -3458,6 +3458,8 @@
             href: localizations/emea-nor-nets-import-format.md
           - name: VAT statement
             href: localizations/emea-nor-sales-tax-payment-report.md
+          - name: Tax reconciliation report
+            href: localizations/emea-tax-reconciliation-report.md
           - name: VAT return with direct submission to Altinn
             items: 
             - name: Overview of VAT return with direct submission to Altinn
@@ -3520,15 +3522,15 @@
             href: localizations/emea-pol-split-ap-ar-exchange-difference.md
           - name: Set up and use PKWiU codes for Poland
             href: localizations/emea-pol-pkwiu-code.md  
-          - name:  VAT declaration with registers (JPK_V7M, VDEK)
+          - name:  VAT declaration with registers (JPK_V7, VDEK)
             items:
-            - name: VAT declaration with registers (JPK_V7M, VDEK) overview
+            - name: VAT declaration with registers (JPK_V7, VDEK) overview
               href: localizations/emea-pol-vdek.md
-            - name: Prepare for JPK-V7M reporting
+            - name: Prepare for JPK-V7 reporting
               href: localizations/emea-pol-vdek-setup.md
-            - name: JPK-V7M reporting
+            - name: JPK-V7 reporting
               href: localizations/emea-pol-vdek-reporting.md
-            - name: Details of specific business scenarios in the JPK-V7M report
+            - name: Details of specific business scenarios in the JPK-V7 report
               href: localizations/emea-pol-vdek-scenarios.md
           - name: Payment terms in commercial transactions report
             href: localizations/emea-pol-payment-terms-report.md

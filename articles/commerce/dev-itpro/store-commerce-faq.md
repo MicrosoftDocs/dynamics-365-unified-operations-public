@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
+
 ---
 
 # Store Commerce app FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article answers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce software development kit (SDK) migration.
 
@@ -67,7 +67,7 @@ Yes. For on-premises deployments, the new [Commerce SDK](retail-sdk/migrate-comm
 
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
 
-[Commerce SDK Tech Talk series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+[Commerce SDK Tech Talk series](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6)
 
 [POS extension overview](pos-extension/pos-extension-overview.md)
 

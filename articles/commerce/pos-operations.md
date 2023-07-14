@@ -15,12 +15,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 
 ms.assetid: 
 ms.search.industry: Retail
+
 ---
 
 # Online and offline point of sale (POS) operations
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. To make an operation available to be added to a button grid in button grid designer, it must first be marked as a user operation on the POS operations view in Commerce headquarters (**Retail and Commerce \> Channel Setup \> POS setup \> POS \> POS Operations**.)
 
