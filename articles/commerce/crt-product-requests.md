@@ -18,57 +18,59 @@ ms.search.validFrom: 2023-07-05
 
 This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 
-Based on your business requirements, you might need to build your own Commerce runtime (CRT) extensions and consume requests of CRT services. When you are working with products, requests of CRT Product service will be required from your extension. For information on building CRT extensions, see [Commerce runtime (CRT) extensibility](dev-itpro/commerce-runtime-extensibility.md).
+Based on your business requirements, you might need to build your own Commerce runtime (CRT) extensions and consume CRT Product service requests. When you are working with products, CRT Product service requests are required from your extension. For information on building CRT extensions, see [Commerce runtime (CRT) extensibility](dev-itpro/commerce-runtime-extensibility.md).
 
-CRT Product service consists of many requests and responses which are implemented differently. Consuming the wrong requests can lead to performance issues in Commerce Scale Unit (CSU). 
+The CRT Product service consists of many requests and responses which are implemented differently. Consuming the wrong requests can lead to performance issues in Commerce Scale Unit (CSU). 
 
 ## Search for products
 
-Typically, you will need to search for products when you don't have the product identifiers (also known as product record identifiers) or item identifiers with product dimensions. You can search for products using keywords, categories, or product refiners. To search for products, Microsoft recommends using the `SearchProductsRequest` request.
+Typically, you'll need to search for products when you don't have the product identifiers (also known as product record identifiers) or item identifiers with product dimensions. You can search for products using keywords, categories, or product refiners. To search for products, Microsoft recommends using the `SearchProductsRequest` request.
 
 > [!NOTE]
-> `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information, but they can also consume more CSU resources that leads to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
+> `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information, but they also consume more CSU resources, which can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
 ### SearchProductsRequest input parameters
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | SearchCriteria | ProductSearchCriteria | Required | The product search criteria. |
-| SearchForItemIdViaBarcode | bool | Optional | Whether to match the keyword with bar codes and convert the keyword to item identifier. When you are using SQL full-text based search instead of [Cloud-powered search](cloud-powered-search-overview.md), this parameter also enables remote channel search. |
+| SearchForItemIdViaBarcode | bool | Optional | Whether or not to match the keyword with barcodes and convert the keyword to an item identifier. When you are using SQL full-text based search instead of [Cloud-powered search](cloud-powered-search-overview.md), this parameter also enables remote channel search. |
 
 #### ProductSearchCriteria parameters
 
-Here are the commonly used parameters of `ProductSearchCriteria`.
+The following table lists commonly used parameters of `ProductSearchCriteria`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | Context | ProjectionDomain | Required | The search context contains channel identifier and catalog identifier. |
 | SearchCondition | string | Optional | The search keyword. |
 | CategoryIds | IList\<long\> | Optional | The category identifiers. |
-| Refinement | IList\<ProductRefinerValue\> | Optional | The refinements. |
+| Refinement | IList\<ProductRefinerValue\> | Optional | The search refinements. |
 
 ### SearchProductsRequest response
 
-The response of a `SearchProductsRequest` request is a list of `ProductSearchResult` containing matching products.
+The response of a `SearchProductsRequest` request is a list of `ProductSearchResult` matching products.
 
 ## Retrieve product information
 
-Unlike searching for products, you will need to retrieve detailed product information when you already have the product identifiers, i.e., product record identifier, or item identifier with product dimensions. To retrive product information, Microsoft recommends that you use the `GetProductsServiceRequest` request.
+Unlike when you search for products, when you retrieve product information you'll need product identifiers (such as product record identifiers, or item identifiers with product dimensions) to retrieve detailed product information. To retrieve product information, Microsoft recommends that you use the `GetProductsServiceRequest` request.
 
 > [!NOTE]
-> `GetProductServiceRequest` (note the Products/Product plural difference with `GetProductsServiceRequest`) uses a different implementation that returns more product information, but can also consume more CSU  resources and lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
+> `GetProductServiceRequest` (note the difference from `GetProductsServiceRequest`) uses a different implementation than `GetProductsServiceRequest` that returns more product information, but it also consumes more CSU  resources that can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
 ### GetProductsServiceRequest input parameters
+
+The following table lists the input parameters of `GetProductsServiceRequest`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | ChannelId | long | Required | The channel identifier. |
 | ProductIds | ReadOnlyCollection\<long\> | Optional | The product record identifiers to retrieve. |
 | ItemAndInventDimIdCombinations | ReadOnlyCollection\<ProductLookupClause\> | Optional | The item identifier and inventory dimension combinations to retrieve. |
-| SearchLocation | SearchLocation | Optional | Whether to retrieve products from other channels when they are not found in current channel. |
-| CalculatePrice | bool | Optional | Whether to calculate product prices. Disable it to improve performance if you don't need it. |
-| CatalogId | long | Optional | The catalog identifier. Set to 0 if catalog feature is not used. |
-| InventoryLocationId | string | Optional | The warehouse to retrieve quantity limits of product behavior. |
+| SearchLocation | SearchLocation | Optional | Whether to retrieve products from other channels when they aren't found in the current channel. |
+| CalculatePrice | bool | Optional | Whether or not to calculate product prices. Disable it (set to **false**) if you don't need it to improve performance. |
+| CatalogId | long | Optional | The catalog identifier. Set to "0" if the catalog feature isn't used. |
+| InventoryLocationId | string | Optional | The warehouse used to retrieve quantity limits of products. |
 
 ### GetProductsServiceRequest response
 
@@ -83,15 +85,17 @@ In some cases, you can't get all product information for your business requireme
 To retrieve product attributes, Microsoft recommends that you use the `GetProductAttributeValuesServiceRequest` request.
 
 > [!NOTE]
-> If your products are configured with high number of attributes, `GetProductAttributeValuesServiceRequest` can consume more CSU resources. Be cautious when consuming this request, especially on the high-volume APIs because it might cause CSU performance issues.
+> If your products are configured with high number of attributes, `GetProductAttributeValuesServiceRequest` can consume more CSU resources. Be cautious when consuming this request (especially with high-volume APIs) because it might cause CSU performance issues.
 
 #### GetProductAttributeValuesServiceRequest input parameters
+
+The following table lists the input parameters of `GetProductAttributeValuesServiceRequest`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
 | ChannelId | long | Required | The channel identifier. |
 | ProductId | long | Required | The product record identifier. |
-| CatalogId | long | Required | The catalog identifier. Set to 0 if catalog feature is not used. |
+| CatalogId | long | Required | The catalog identifier. Set to "0" if catalog feature isn't used. |
 
 #### GetProductAttributeValuesServiceRequest response: 
 
@@ -102,6 +106,8 @@ The response of a `GetProductAttributeValuesServiceRequest` request is a list of
 To retrieve product variants for product masters, Microsoft recommends that you use the `GetVariantProductsServiceRequest` request.
 
 #### GetVariantProductsServiceRequest input parameters
+
+The following table lists the input parameters of `GetVariantProductsServiceRequest`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
