@@ -3520,15 +3520,15 @@
             href: localizations/emea-pol-split-ap-ar-exchange-difference.md
           - name: Set up and use PKWiU codes for Poland
             href: localizations/emea-pol-pkwiu-code.md  
-          - name:  VAT declaration with registers (JPK_V7M, VDEK)
+          - name:  VAT declaration with registers (JPK_V7, VDEK)
             items:
-            - name: VAT declaration with registers (JPK_V7M, VDEK) overview
+            - name: VAT declaration with registers (JPK_V7, VDEK) overview
               href: localizations/emea-pol-vdek.md
-            - name: Prepare for JPK-V7M reporting
+            - name: Prepare for JPK-V7 reporting
               href: localizations/emea-pol-vdek-setup.md
-            - name: JPK-V7M reporting
+            - name: JPK-V7 reporting
               href: localizations/emea-pol-vdek-reporting.md
-            - name: Details of specific business scenarios in the JPK-V7M report
+            - name: Details of specific business scenarios in the JPK-V7 report
               href: localizations/emea-pol-vdek-scenarios.md
           - name: Payment terms in commercial transactions report
             href: localizations/emea-pol-payment-terms-report.md
