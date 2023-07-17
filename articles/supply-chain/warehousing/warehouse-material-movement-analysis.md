@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/09/2023
+ms.date: 07/18/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -106,7 +106,7 @@ To access the process from Supply Chain Management, follow these steps.
 1. Go to **Warehouse management \> Enquiries and reports \> Warehouse performance analysis \> Warehouse material movement analysis**.
 1. In the **Process name** field, select the name of the process to view. The list includes only processes that meet both the following conditions:
 
-    - The process is ready for analysis. (In other words, it has been deployed and analyzed in Power Automate Process mining.)
+    - The process is ready for analysis. (In other words, it has been deployed and analyzed in Power Automate Process Mining.)
     - The process is accessible to the current user. (In other words, it was created by or shared with the current user.)
 
 1. The Power BI report for your selected process is opened. You can interact with the report to view the process and analyze it in various ways.
