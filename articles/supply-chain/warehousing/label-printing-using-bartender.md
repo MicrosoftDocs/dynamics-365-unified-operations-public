@@ -112,7 +112,7 @@ Follow these steps to set up an external service definition.
         ```
 
         > [!IMPORTANT]
-        > Paste the body text exactly as it appears here. Indentation is important. Be sure to use four spaces to indent. For the NamedDataSources variables be sure to use six spaces to indent. Don't use tabs.
+        > Paste the body text exactly as it appears here. Indentation is important. Be sure to use four spaces to indent. For the `NamedDataSources` variables, be sure to use six spaces to indent. Don't use tabs.
 
 ### Set up an external service instance for printing through the Actions API
 
@@ -146,7 +146,7 @@ You can now create label printers and label layouts.
 >
 > - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer as it appears in the **Print** dialog box in BarTender Cloud, or as it's retrieved from the Printer API. Use the following format: *printer:workstation/printer*.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name has already been coded in the variable label template.
-> - When you create a variable-based label layout, **Variable name** in the **Data variables** grid cannot be the same as **Variable name** in the **System variables** grid.
+> - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
 ## Additional resources
 
