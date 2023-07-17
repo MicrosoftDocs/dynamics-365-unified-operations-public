@@ -29,12 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project migration manager
 
-[!INCLUDE[banner](../includes/preview-banner.md)]
-
 The Microsoft Dynamics Lifecycle Services Project migration manager lets you move your project data from one geography (or geo) to another geography that Lifecycle Services supports. This article describes the terminology and supported scenarios for this functionality, and provides answers to frequently asked questions.
-
-> [!NOTE]
-> Contact support for more information if you need to move your project data before this feature is generally available.
 
 ## Move projects to new geographies
 
@@ -73,6 +68,7 @@ The following table shows the data that can be transferred between instances and
 | Automated | Project users | Only project owners from the tenant that owns the source project are migrated to the target Lifecycle Services project. | 
 | Automated | Asset library | Only the last application or merged software deployable package asset that was applied to your sandbox or production environments is automatically migrated. |
 | Manual | Asset library | You'll be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
+| Manual | Shared asset library | The shared asset library will be different in each geo. For a package to be globally available, it will have to be uploaded to each geo's shared asset library. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They'll have the same environment IDs but are in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
 | Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project is locked but you'll still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Manual | Project users | Remaining users must be added manually by project owners. |
@@ -116,7 +112,7 @@ The Project migration manager performs several validations:
 
 ### Before the migration begins
 
-Emails are sent to all project owners to notify them that a migration has been scheduled. These emails include the date when the migration begins. During preview, emails might not be sent.
+Emails are sent to all project owners to notify them that a migration has been scheduled. These emails include the date when the migration begins. 
 
 Banners are shown across the source project to indicate that an upcoming migration has been scheduled.
 
@@ -134,7 +130,7 @@ The Lifecycle Services project and other information must be updated in the Sand
 
 ### After the migration
 
-After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. Make sure to update the release pipeline to newly created LCS project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
 You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
@@ -165,5 +161,9 @@ Your source project is unlocked, and you'll receive an email notification that t
 ### I'm currently a First Release customer. Will I still be a First Release customer after migration?
 
 First release is a program that only exists in the US-based public cloud instance of Lifecycle Services.  It isn't available in the other geographies at this time.  If you were previously part of the First Release program and are migrating to another geography, you won't be on the First Release program after migration.
+
+### Will LCS Project migration affect finance and operations apps add-ins?
+
+Since there are no changes to finance and operations apps environments nor Power Platform environments, LCS Project migration does not affect finance and operations apps add-ins.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
