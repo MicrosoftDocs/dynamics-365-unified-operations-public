@@ -23,7 +23,7 @@ This article describes how to integrate Supply Chain Management with BarTender C
 > [!IMPORTANT]
 > By enabling the external service integration, you affirm that you understand that the data handling, privacy, and compliance standards of the external service might not be the same as the standards that are provided by Dynamics 365 Supply Chain Management. To learn whether the external service meets your organization's security and privacy requirements, including requirements for the handling of personal data and geo-residency, consult the external service's documentation and terms. Your privacy is important to us. To learn more, read the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 >
-> The information in this article is for general informational purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you experience any issues or have any additional questions about the BarTender product, contact the [Seagull Scientific Customer Success Team](mailto:PSCustomerSuccessTeam@SeagullScientific.com), and they'll route you to the appropriate internal resource.
+> The information in this article is for general informational purposes only. Although we try to keep the information up to date and correct, Microsoft makes no representation or warranties of any kind, express or implied, about accuracy, reliability, or completeness with respect to the BarTender product. Seagull Scientific might change the functionality of the BarTender product at any time without notice. If you have any additional questions about the BarTender product, contact [Seagull Scientific](https://www.seagullscientific.com/support/microsoft-dynamics-365-scm/).
 
 ## Prerequisites
 
@@ -106,12 +106,13 @@ Follow these steps to set up an external service definition.
             Copies: $SystemVariables.Quantity$
             NamedDataSources:
         {{Row Table=LabelLayoutVariable
-            $LabelLayoutVariable.Variable$: $LabelLayoutVariable.Value$
+              $LabelLayoutVariable.Variable$: $LabelLayoutVariable.Value$
         }}
+
         ```
 
         > [!IMPORTANT]
-        > Paste the body text exactly as it appears here. Indentation is important. Be sure to use four spaces to indent. Don't use tabs.
+        > Paste the body text exactly as it appears here. Indentation is important. Be sure to use four spaces to indent. For the `NamedDataSources` variables, be sure to use six spaces to indent. Don't use tabs.
 
 ### Set up an external service instance for printing through the Actions API
 
@@ -145,6 +146,7 @@ You can now create label printers and label layouts.
 >
 > - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer as it appears in the **Print** dialog box in BarTender Cloud, or as it's retrieved from the Printer API. Use the following format: *printer:workstation/printer*.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label (including any folders, if the label file is stored in a folder). The BarTender Cloud REST API uses a Librarian path, but the beginning of the full Librarian name has already been coded in the variable label template.
+> - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
 ## Additional resources
 
