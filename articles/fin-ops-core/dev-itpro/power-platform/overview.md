@@ -28,6 +28,8 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include[banner](../includes/banner.md)]
 
+[Continouse fff](https://review.learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?branch=main)
+
 Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. Today, finance and operations apps are not managed by the Power Platform admin center. However, over time more and more management capabilities will be migrated from Microsoft Dynamics Lifecycle Services (LCS) over to the admin center. In the interim, customers will be able to unlock features, such as dual-write functionality, virtual entities, add-ins, and more via Microsoft Power Platform integration functionality in LCS.
 
 ## Getting started
