@@ -1729,7 +1729,7 @@
             - name: Multiple VAT registration numbers
               href: localizations/emea-multiple-vat-registration-numbers.md
             - name: Reporting for multiple VAT registrations
-              href: /localizations/emea-reporting-for-multiple-vat-registrations.md
+              href: localizations/emea-reporting-for-multiple-vat-registrations.md
             - name: Supported reports for countries/regions 
               items: 
               - name: Austria  
