@@ -1728,7 +1728,9 @@
             items: 
             - name: Multiple VAT registration numbers
               href: localizations/emea-multiple-vat-registration-numbers.md
-            - name: Austria reporting 
+            - name: Reporting for multiple VAT registrations
+              href: /localizations/emea-reporting-for-multiple-vat-registrations.md
+            - name: Supported reports for countries/regions 
               items: 
               - name: Austria  
                 href: localizations/emea-reporting-multiple-vat-registrations-at.md
