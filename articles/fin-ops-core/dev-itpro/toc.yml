@@ -19,8 +19,6 @@ items:
           href: get-started/whats-new-platform-updates-10-0-35.md
         - name: Platform updates for version 10.0.34 (June 2023)
           href: get-started/whats-new-platform-updates-10-0-34.md 
-        - name: Platform updates for version 10.0.33 (April 2023)
-          href: get-started/whats-new-platform-updates-10-0-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
