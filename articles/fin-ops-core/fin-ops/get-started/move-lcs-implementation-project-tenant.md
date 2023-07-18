@@ -116,7 +116,7 @@ Calls to web services are allowed only from the **home** tenant for the environm
 If you don't have a production environment deployed already on the old tenant, you can skip this section.
 
 > [!IMPORTANT]
-> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](../dev-itpro/deployment/environment-migration-process.md).
+> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
 
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a prerequisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
@@ -137,8 +137,8 @@ Before requesting the production environment, ensure that all prerequisites are 
 	**Environment region**
    	- Confirm that the target Production environment will be deployed to the same region whether the source Production environment is deployed.
    	  
-	> [!IMPORTANT]
-        > Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](../dev-itpro/deployment/environment-migration-process.md).
+> [!IMPORTANT]
+> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
 
 	**Testing**
 	- Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
