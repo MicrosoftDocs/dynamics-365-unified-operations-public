@@ -42,7 +42,7 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 4. Select the **region** where you want this environment to be deployed. 
 
     > [!NOTE]
-    > In May 2023, a change was introduced in the selection of available Azure Regions for finance and operations apps. For more information about which regions are available and what you must consider when you make a selection, see [Available geographies for Dynamics 365 finance and operations apps](deployment-options-geo.md).
+    > Starting from July 2023 customers can deploy Microsoft managed finance and operations environments to any region from any LCS instance (apart from US GCC and 21Vianet in China). Earlier it was only possible to deploy to regions which were data resident to the LCS endpoint itself, for example France LCS only allowed deployment in France geo.  For more information about which regions are available and what you must consider when you make a selection, see [Available geographies for Dynamics 365 finance and operations apps](deployment-options-geo.md).
 
 5. Select whether you want to load demo data in your environment or whether you want an empty database.
 6. Select the BPM library to use as the Getting started library in the product.
