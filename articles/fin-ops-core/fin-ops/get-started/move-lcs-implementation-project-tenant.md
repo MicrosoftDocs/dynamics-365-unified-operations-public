@@ -138,7 +138,7 @@ Before requesting the production environment, ensure that all prerequisites are 
   - Confirm that the target Production environment will be deployed to the same region whether the source Production environment is deployed.
    	  
   > [!IMPORTANT]
-  > Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](../../fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
+  > Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process).
 
   **Testing**
   - Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
