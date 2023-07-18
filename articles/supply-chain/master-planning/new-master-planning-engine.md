@@ -97,8 +97,6 @@ The following screenshot shows how the message looks.
 
 [<img src="media/exception-process-dialog.png" alt="The Exception process dialog." title="The Exception process dialog" width="720" />](media/exception-process-dialog.png#lightbox)
 
-<!-- Why are we being asked this question? Are we applying for an exception here? What happens now? Do we get more questions? -->
-
 If you haven't customized the master planning engine for this deployment, you must migrate to Planning Optimization. If you require some more time to test and migrate, select the time that you'll require. The system will automatically apply an exception for the selected time.
 
 If you do have customizations, you must move them to the existing extensibility point. For more information, see [Planning Optimization extensibility](planning-optimization/extensibility.md).
