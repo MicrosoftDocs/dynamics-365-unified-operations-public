@@ -26,7 +26,7 @@ The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.m
 | ---|---|---|
 | Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments (CHE) using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
 | Optimization | Improvements in token generation code for Full Trust Plugins | General availability |
-| Exception handling | Added a custom exception (DualWritePluginInvalidExecutionException) to separate plugin exceptions from application exceptions (InvalidPluginExecutionException) | General availability |
+| Exception handling | Added custom exceptions (DualWritePluginException and DualWriteApplicationException) to separate plugin exceptions from application exceptions | General availability |
 
 ## June 2023 release
 
