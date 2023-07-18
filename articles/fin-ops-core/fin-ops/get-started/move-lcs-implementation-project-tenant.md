@@ -115,6 +115,8 @@ Calls to web services are allowed only from the **home** tenant for the environm
 
 If you don't have a production environment deployed already on the old tenant, you can skip this section.
 
+[!IMPORTANT] Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in the different region, first it is required to move this environment to the same region where the target will be. Refer to this article to understand how this can be achieved - Finance and operations apps environment migration.
+
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a pre-requisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
 Before requesting the production environment, ensure that all pre-requisites are completed:
@@ -129,42 +131,42 @@ Before requesting the production environment, ensure that all pre-requisites are
 	- Confirm that the update schedules are set in the target LCS project (**LCS > Menu > Project settings > Update settings**).
 	- Confirm if you're using Azure Blob Storage for document attachments.
 	- Confirm that your project is identified as a tenant move in the Project Onboarding wizard.
-	
+	- Confirm that your deployable package is marked as a release candidate in the target LCS project.
+
+	**Environment region**
+   	- Confirm that the target Production environment will be deployed to the same region whether the source Production environment is deployed.
+   	  
+	[!IMPORTANT] Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in the different region, first 	it is required to move this environment to the same region where the target will be. Refer to this article to understand how this can be achieved - Finance and operations 	apps environment migration.
+
 	**Testing**
 	- Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target LCS project.
-	
+
 	**Code Management**
-	- Confirm that your deployable package is marked as a release candidate in the target LCS project.
+	- Share which environment version you plan to deploy your new production environment.
 	- List the ISV solutions you're using.
 	- Confirm which version your old production environment is running on.
 	- Confirm that non-standard code to be applied in the new production environment will be exactly the same as the non-standard code present in the old production environment in order to prevent database copy issues.
 	- Confirm if there were any non-typical actions taken on your old production environment, which need to be considered on the new production environment, like installation of a custom font or environment upscale.
-	
-	**Environment**
-	- Share which environment version you plan to deploy your new production environment.
+
+	**Cutover and timeline**
 	- Describe how you will conduct your cut over.
 	- Confirm the dates when the source LCS environments and project will be deallocated and deleted.
 	
-4. The Dynamics 365 FO Go-Live team will reply to you within two business days and a FastTrack Solution Architect will work with you on the assessment of the project readiness for production deployment.
-5. When the tenant move assessment is successfully completed, the FastTrack Solution Architect will approve your production request for deployment.
-6. Create the production deployment request on the new LCS project.
+5. The Dynamics 365 FO Go-Live team will reply to you within two business days and a FastTrack team will work with you on the assessment of the project readiness for production deployment.
+6. When the tenant move assessment is successfully completed, the FastTrack team will enable Production environment slot in LCS.
+7. Deploy Production environment in LCS.
 
 	- It's not possible to select the same name for the new production environment, as it's in use for your old production environment. You'll need to choose a new environment name so that a new URL will be generated.
 	- Make sure you select the same application version that is used by your current production environment.
 	- In the Production configuration wizard, select a generic user account, not a named user, as Environment Administrator.
 
-7. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
-8. Request to copy database and blob storage from the old production environment to the new production environment.
-
-	 - **Cloud deployment to self-service deployment**: [Submit a service request](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md) of type **Other** to request that the Microsoft Service Engineering team copy the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the service request.
+8. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
+9. Request to copy database and blob storage from the old production environment to the new production environment. Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the support ticket.
 	 
-	 - **Both projects (old and new) are self-service deployments**: Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include LCS IDs and environment IDs from source and target projects in the support ticket.
-	 
-	 
-	1. This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
-	2. After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you'll need to reimport all users from the new Azure Active Directory tenant. 
-	3. You'll need to validate the new production environment to ensure that all business processes are successful. 
-	4. If you encounter an issue after the migration, file a support ticket.
+	- This process will require interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the 	service request.
+ 	- After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you'll need to reimport all users from the new Azure Active Directory tenant. 
+	- You'll need to validate the new production environment to ensure that all business processes are successful. 
+	- If you encounter an issue after the migration, file a support ticket.
 
 ## Tear down the LCS project on the old tenant
 
