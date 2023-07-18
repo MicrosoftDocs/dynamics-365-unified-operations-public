@@ -8,7 +8,7 @@ ms.prod:
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
-ms.search.region: Poland
+ms.search.region: Australia, New Zealand
 ms.author: ilikond
 ms.search.validFrom: 2022-11-03
 ms.dyn365.ops.version: AX 10.0.37
@@ -27,8 +27,7 @@ This article provides information that will help you get started with Electronic
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- The legal entity must be registered as a taxpayer in Poland and must have a valid tax identification number (*Numer identyfikacji podatkowej*, or NIP).
-- A valid certificate for digital signing must be obtained from the appropriate authorities.
+- The legal entity must be registered as a taxpayer and must have a valid tax identification number.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -37,11 +36,6 @@ Before you begin the procedures in this article, complete the following prerequi
     - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
 
 - Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
-- Create certificates and secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md):
-
-    - The secret for the legal entity's tax identification number
-    - The secret that will contain the public key that is provided by the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef))
-    - The certificate for digital signing
 
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
