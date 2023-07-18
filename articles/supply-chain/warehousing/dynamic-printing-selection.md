@@ -95,14 +95,14 @@ Follow these steps to set up a default label printer for a specific worker and/o
 
 You can set up the Warehouse Management mobile app to allow workers to override the default printer assigned to them by using their mobile device to scan a new printer name. To do so, create a new mobile device menu item, set the **Mode** to *Indirect*, and set the **Activity code** to *Override label printer*.
 
-## Printer selection process
+## How the system selects a printer
 
-While executing a print job, the system identifies the printer to use in the following order:
+While executing a print job, the system uses the following sequence to identify which printer to use:
 
 1. If the current worker has overridden the printer with the printer stock type of the layout currently being printed, then it will use that printer (skip the rest of this list).
-1. If no overriding printer exists, then the system checks the default setup.
-    1. If a default label printer is set up for the current location or zone, and is specified in the flow (for example printing a container label in the packing station) then that printer will be used.
-    1. If no printer has yet been found, then the system will use the default label printer set up for the current user.
+1. If no overriding printer exists, then the system checks the default printer setup.
+    1. If a default label printer is set up for the current location or zone, and is specified in the flow (for example, when printing a container label from the packing station) then that printer will be used.
+    1. If no printer has yet been found, then the system will use the default label printer set up for the current user. <!-- KFM: What if there still isn't a printer for the current user? -->
 
 ## Additional resources
 
