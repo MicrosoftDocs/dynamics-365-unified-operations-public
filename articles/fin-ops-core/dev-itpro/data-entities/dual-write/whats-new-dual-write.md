@@ -20,13 +20,13 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## July 2023 release
 
-The July 2023 release of [Dual-write core solution 1.0.42.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
+The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
 
 | Feature | Description | Status |
 | ---|---|---|
-| Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
-| Optimization | Minor improvements in token generation code for Full Trust Plugins | General availability |
-| Exception handling | Added a custom exception (DualWritePluginInvalidExecutionException) to separate System exceptions from Application exceptions (InvalidPluginExecutionException) | General availability |
+| Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments (CHE) using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
+| Optimization | Improvements in token generation code for Full Trust Plugins | General availability |
+| Exception handling | Added a custom exception (DualWritePluginInvalidExecutionException) to separate plugin exceptions from application exceptions (InvalidPluginExecutionException) | General availability |
 
 ## June 2023 release
 
