@@ -27,9 +27,11 @@ The CRT Product service consists of many requests and responses which are implem
 Typically, you'll need to search for products when you don't have the product identifiers (also known as product record identifiers) or item identifiers with product dimensions. You can search for products using keywords, categories, or product refiners. To search for products, Microsoft recommends using the `SearchProductsRequest` request.
 
 > [!NOTE]
-> `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information, but they also consume more CSU resources, which can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
+> The `ProductSearchRequest` and `ProductSearchServiceRequest` requests use different implementations that return more product information, but they also consume more CSU resources, which can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
 ### SearchProductsRequest input parameters
+
+The following table lists commonly used input parameters of `SearchProductsRequest`.
 
 | Name | Type | Required/Optional | Description |
 |----|----|----|----|
@@ -53,10 +55,10 @@ The response of a `SearchProductsRequest` request is a list of `ProductSearchRes
 
 ## Retrieve product information
 
-Unlike when you search for products, when you retrieve product information you'll need product identifiers (such as product record identifiers, or item identifiers with product dimensions) to retrieve detailed product information. To retrieve product information, Microsoft recommends that you use the `GetProductsServiceRequest` request.
+Unlike when you search for products, when you retrieve product information you must use product identifiers (such as product record identifiers, or item identifiers with product dimensions) to retrieve detailed product information. To retrieve product information, Microsoft recommends that you use the `GetProductsServiceRequest` request.
 
 > [!NOTE]
-> `GetProductServiceRequest` (note the difference from `GetProductsServiceRequest`) uses a different implementation than `GetProductsServiceRequest` that returns more product information, but it also consumes more CSU  resources that can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
+> `GetProductServiceRequest` (different from `GetProductsServiceRequest`) uses a different implementation than `GetProductsServiceRequest` that returns more product information, but it also consumes more CSU  resources that can lead to performance issues. Microsoft recommends that you use alternative requests to retrieve product information.
 
 ### GetProductsServiceRequest input parameters
 
@@ -68,7 +70,7 @@ The following table lists the input parameters of `GetProductsServiceRequest`.
 | ProductIds | ReadOnlyCollection\<long\> | Optional | The product record identifiers to retrieve. |
 | ItemAndInventDimIdCombinations | ReadOnlyCollection\<ProductLookupClause\> | Optional | The item identifier and inventory dimension combinations to retrieve. |
 | SearchLocation | SearchLocation | Optional | Whether to retrieve products from other channels when they aren't found in the current channel. |
-| CalculatePrice | bool | Optional | Whether or not to calculate product prices. Disable it (set to **false**) if you don't need it to improve performance. |
+| CalculatePrice | bool | Optional | Whether or not to calculate product prices. Set it to **false** if you don't need it to improve performance. |
 | CatalogId | long | Optional | The catalog identifier. Set to "0" if the catalog feature isn't used. |
 | InventoryLocationId | string | Optional | The warehouse used to retrieve quantity limits of products. |
 
@@ -78,7 +80,7 @@ The response of a `GetProductsServiceResponse` request is a list of `SimpleProdu
 
 ## Other requests to get specific product information
 
-In some cases, you can't get all product information for your business requirements by consuming `GetProductsServiceRequest`. Here are a few examples.
+In some cases, you can't get all product information for your business requirements by consuming `GetProductsServiceRequest`. Here are a few examples of requests you should use for alternative scenarios.
 
 ### Retrieve product attributes
 
