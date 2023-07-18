@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 07/31/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -51,9 +51,14 @@ Follow these steps to create a container label layout.
 
     - **Label layout ID** – Enter *Container*.
     - **Description** – Enter *Container ID barcode*.
+    - **Definition type** – <!-- KFM: Description needed --> Select one of the following values:
+        - *ZPL* –  <!-- KFM: Description needed -->
+        - *Variables* –  <!-- KFM: Description needed -->
+        - *Variables (script)* – <!-- KFM: Description needed -->
     - **Label layout data source ID** – Leave this field blank if you'll use only container data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in a label layout are formatted.
+    - **Printer stock type** – Select a printer stock type. A *printer stock type* typically describes the paper type a specific printer uses. It is also used to specify the paper type that a specific label layout will be printed to. For more information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
 
 1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code that you can copy and paste for testing.
 

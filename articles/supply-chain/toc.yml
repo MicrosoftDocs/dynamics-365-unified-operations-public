@@ -3801,6 +3801,8 @@
             href: warehousing/print-container-labels.md
           - name: License plate label layouts and printing
             href: warehousing/print-license-plate-labels-using-label-layouts.md
+          - name: Enable license plate label printing
+            href: warehousing/tasks/license-plate-label-printing.md
           - name: Custom label layouts and printing
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
@@ -3811,8 +3813,8 @@
             href: warehousing/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
             href: warehousing/label-printing-using-bartender.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
+          - name: Dynamic printer selection
+            href: warehousing/dynamic-printing-selection.md
         - name: Auto-update shipments
           href: warehousing/auto-update-shipment.md
         - name: Create a location profile
