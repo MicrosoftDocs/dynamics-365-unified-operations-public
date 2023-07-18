@@ -116,7 +116,7 @@ Calls to web services are allowed only from the **home** tenant for the environm
 If you don't have a production environment deployed already on the old tenant, you can skip this section.
 
 > [!IMPORTANT]
-> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
+> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](../../fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
 
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a prerequisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
@@ -126,49 +126,49 @@ Before requesting the production environment, ensure that all prerequisites are 
 2. When the licenses are in place, upload a subscription estimator to the new Lifecycle Services project. It should match the subscription estimator that is active in the source Lifecycle Services project, and it must correctly reflect peak transaction volumes.
 3. Send an email to Dynamics 365 FO Go-Live (d365fogl\@microsoft.com) stating that your new Lifecycle Services project is ready for Microsoft to move your production database and Azure Blob Storage. To ensure that the process will run smoothly, provide the following details in the email. We suggest that copy the following list to your email, and then answer all of the information line by line.
 
-	**Lifecycle Services**
-	- Provide the Lifecycle Services IDs (number in the Lifecycle Services project URL) for source and target Lifecycle Services project.
-	- Confirm that the go-live date is set correctly in the target Lifecycle Services project.
-	- Confirm that the update schedules are set in the target Lifecycle Services project (**Lifecycle Services > Menu > Project settings > Update settings**).
-	- Confirm if you're using Azure Blob Storage for document attachments.
-	- Confirm that your project is identified as a tenant move in the Project Onboarding wizard.
-	- Confirm that your deployable package is marked as a release candidate in the target Lifecycle Services project.
-
-	**Environment region**
-   	- Confirm that the target Production environment will be deployed to the same region whether the source Production environment is deployed.
+  **Lifecycle Services**
+  - Provide the Lifecycle Services IDs (number in the Lifecycle Services project URL) for source and target Lifecycle Services project.
+  - Confirm that the go-live date is set correctly in the target Lifecycle Services project.
+  - Confirm that the update schedules are set in the target Lifecycle Services project (**Lifecycle Services > Menu > Project settings > Update settings**).
+  - Confirm if you're using Azure Blob Storage for document attachments.
+  - Confirm that your project is identified as a tenant move in the Project Onboarding wizard.
+  - Confirm that your deployable package is marked as a release candidate in the target Lifecycle Services project.
+  
+  **Environment region**
+  - Confirm that the target Production environment will be deployed to the same region whether the source Production environment is deployed.
    	  
-> [!IMPORTANT]
-> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
+  > [!IMPORTANT]
+  > Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](../../fin-ops-core/dev-itpro/deployment/environment-migration-process.md).
 
-	**Testing**
-	- Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
+  **Testing**
+  - Confirm that the smoke testing is completed on the sandbox environment (Tier-2 or higher) in the target Lifecycle Services project.
 
-	**Code Management**
-	- Share which environment version you plan to deploy your new production environment.
-	- List the ISV solutions you're using.
-	- Confirm which version your old production environment is running on.
-	- Confirm that nonstandard code to be applied in the new production environment will be exactly the same as the nonstandard code present in the old production environment in order to prevent database copy issues.
-	- Confirm if there were any non-typical actions taken on your old production environment, which need to be considered on the new production environment, like installation of a custom font or environment upscale.
+  **Code Management**
+  - Share which environment version you plan to deploy your new production environment.
+  - List the ISV solutions you're using.
+  - Confirm which version your old production environment is running on.
+  - Confirm that nonstandard code to be applied in the new production environment will be exactly the same as the nonstandard code present in the old production environment in order to prevent database copy issues.
+  - Confirm if there were any non-typical actions taken on your old production environment, which need to be considered on the new production environment, like installation of a custom font or environment upscale.
 
-	**Cutover and timeline**
-	- Describe how you'll conduct your cut over.
-	- Confirm the dates when the source Lifecycle Services environments and project will be deallocated and deleted.
+  **Cutover and timeline**
+  - Describe how you'll conduct your cut over.
+  - Confirm the dates when the source Lifecycle Services environments and project will be deallocated and deleted.
 	
 5. The Dynamics 365 FO Go-Live team will reply to you within two business days and a FastTrack team will work with you on the assessment of the project readiness for production deployment.
 6. When the tenant move assessment is successfully completed, the FastTrack team will enable Production environment slot in Lifecycle Services.
 7. Deploy Production environment in Lifecycle Services.
 
-	- It's not possible to select the same name for the new production environment, as it's in use for your old production environment. You need to choose a new environment name so that a new URL is generated.
-	- Make sure you select the same application version that is used by your current production environment.
-	- In the Production configuration wizard, select a generic user account, not a named user, as Environment Administrator.
+  - It's not possible to select the same name for the new production environment, as it's in use for your old production environment. You need to choose a new environment name so that a new URL is generated.
+  - Make sure you select the same application version that is used by your current production environment.
+  - In the Production configuration wizard, select a generic user account, not a named user, as Environment Administrator.
 
 8. After the production environment has been deployed, verify that source and target environments have exactly the same code, otherwise migration will fail. If necessary, deployable packages must be installed on the target production environment.
 9. Request to copy database and blob storage from the old production environment to the new production environment. Submit a **support ticket** requesting a copy of the database and blob storage, if applicable, from the old production environment to the new production environment. Be sure to include Lifecycle Services IDs and environment IDs from source and target projects in the support ticket.
 	 
-	- This process requires interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
- 	- After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you need to reimport all users from the new Azure Active Directory tenant. 
-	- You need to validate the new production environment to ensure that all business processes are successful. 
-	- If you encounter an issue after the migration, file a support ticket.
+  - This process requires interaction between Microsoft and the implementing project team. Ensure that you follow the email notifications or notifications directly in the service request.
+  - After Microsoft has completed the tenant migration activity and informed you to continue with the next steps, you need to reimport all users from the new Azure Active Directory tenant. 
+  - You need to validate the new production environment to ensure that all business processes are successful. 
+  - If you encounter an issue after the migration, file a support ticket.
 
 ## Tear down the Lifecycle Services project on the old tenant
 
