@@ -96,19 +96,20 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 ### Initiate the Go-live Readiness Review in the portal
 
-1. The project team decides who will be the key review participant from the **customer** organization. 
-2. A key review participant from the customer organization registers in the [Dynamics 365 Implementation Portal](https://aka.ms/D365ImplementationPortal) and provides required user details. 
-    > [!NOTE]
-    > This step must be completed by a customer team member and not the implementation partner team member. Key stakeholders from the customer organization who are participating in the review must be selected as Review participants in the portal.
+1. The project team decides who from the **customer** organisation will be the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be grnated only to the member of the customer organisation. Microsoft will grant access to this user and this user will manage access for other team mmembers. 
 
-3. A key review participant from the customer organization sends an email to d365fogl@microsoft.com and includes the following information:
+2. Project team sends an e-mail to d365fogl@microsoft.com and includes the following information:
 
-    - Confirmation that the project is ready to start the Go-live Readiness Review
-    - Confirmation of the LCS project ID or LCS project URL
-    - Confirmation that the previous step has been completed
+    - Confirmation that the project is ready to start the Go-live Readiness Review. Please carefully review prerequisites for the Go-live readiness review which are described in the earlier section of this article.
+    - Confirmation of the LCS project ID or LCS project URL.
+    - Confirmation of the planned Go-live date (when live operations will start in Production). Please make sure this date is reflected in the LCS correctly.
+    - Confirmation by when it is required to have Production environment deployed. Building a cutover plan allows to deptermine by which date environment should be available. 
+    - Confirmation who should be granted admin access for this project on Portal. It is required that admin access is granted to the member of the customer organsation (unless it is an internal implementation by the partner). 
+    - Please also indicate in the e-mail if it is an internal implementation for a partner organisation. 
 
-4. Microsoft grants the key review participant from the customer organization access to the project and confirms that this task has been completed by responding to the email.
-5. The key review participant adds the additional project team members and creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registred on portal can access this article. 
+3. Microsoft grants the key review participant from the customer organization admin access to the project and confirms that this task has been completed by responding to the email.
+4. The admin adds additional project team members.
+5. Project team creates the review in the portal by following the guidance in the [Portal Help article](https://experience.dynamics.com/FTimplementationportal/help/help-details-page/?id=a275750e-2ffb-eb11-94ef-0022482594cd&searchtxt=). All users who have registred on portal can access this article. 
 
 ### Submit the review
 
