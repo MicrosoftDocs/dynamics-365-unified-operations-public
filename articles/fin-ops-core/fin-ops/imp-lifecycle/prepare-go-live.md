@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
 author: alejandra-cabrales
-ms.date: 05/19/2023
+ms.date: 07/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,7 +96,7 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 ### Initiate the Go-live Readiness Review in the portal
 
-1. The project team decides who from the **customer** organization will be the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user will manage access for other team mmembers. 
+1. The project team decides who from the **customer** organization will be the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user will manage access for other team members. 
 
 2. Project team sends an e-mail to d365fogl@microsoft.com and includes the following information:
 
@@ -104,7 +104,7 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
    - Confirmation of the Lifecycle Services project ID or Lifecycle Services project URL.
    - Confirmation of the planned Go-live date (when live operations will start in Production). Make sure this date is reflected in the Lifecycle Services correctly.
    - Confirmation by when it's required to have Production environment deployed. Building a cutover plan allows to determine by which date environment should be available. 
-   - Confirmation who should be granted admin access for this project on Portal. It's required that admin access is granted to the member of the customer organsation (unless it's an internal implementation by the partner). 
+   - Confirmation who should be granted admin access for this project on Portal. It's required that admin access is granted to the member of the customer organization (unless it's an internal implementation by the partner). 
    - Indicate in the e-mail if it's an internal implementation for a partner organization. 
 
 3. Microsoft grants the key review participant from the customer organization admin access to the project and confirms that this task has been completed by responding to the email.
