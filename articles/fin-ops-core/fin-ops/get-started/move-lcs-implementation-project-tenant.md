@@ -116,7 +116,7 @@ Calls to web services are allowed only from the **home** tenant for the environm
 If you don't have a production environment deployed already on the old tenant, you can skip this section.
 
 > [!IMPORTANT]
-> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process).
+> Tenant migration can be done only if the **source and target Production environments are in the same region**. If the source is in a different region, it's required to move this environment to the same region where the target is. For more information about moving an environment, see [Finance and operations apps environment migration](/dynamics365/fin-ops-core/dev-itpro/deployment/environment-migration-process).
 
 If you already had a production environment deployed on the old tenant, Microsoft will move your database and Azure Blob storage from your old production environment to the new one. As a prerequisite, you must complete the additional steps below after you've finished moving all the sandbox environments and completed UAT. The process of moving a production environment to a new tenant requires a downtime.
 
