@@ -34,9 +34,7 @@ This feature is part of the *Procurement with Copilot* feature set, which is a g
 This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
 
 - Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
-- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts.
-
-    These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
