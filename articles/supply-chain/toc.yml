@@ -873,7 +873,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?context=/dynamics365/context/supply-chain
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
-      - name: Process advisor content
+      - name: Power Automate Process Mining content
         items:
         - name: Analyze warehouse material movement through process mining
           href: warehousing/warehouse-material-movement-analysis.md
