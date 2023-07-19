@@ -37,11 +37,13 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 - *(Preview) Ledger archive automation* – This feature moves general ledger records to the relevant history tables. After the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md).
 - *(Preview) Archive sales orders to history tables* – This feature is required for archiving of sales orders. It provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Archive sales orders to history tables using archive service* – This feature is required for archiving of sales orders. It moves sales orders from day-to-day transaction tables to history tables. After the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
-- *(Preview) Archive data to Dataverse managed data lake and purge* – <!-- KFM: Description needed -->
+- *(Preview) Archive data to Dataverse managed data lake and purge* – <!-- KFM: Description needed , platform piece that enables the movement-->
 - *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – <!-- KFM: Description needed -->
 - *(Preview) Purge archived inventory transactions* – <!-- KFM: Description needed -->
 
 ## Set up long term data retention
+
+<!-- KFM: Briefly describe what this is. -->
 
 ### <a name="app-registration"></a>Create an app registration in Azure
 
@@ -55,33 +57,33 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
     - **Name** – Enter a name.
     - **Supported account types** – Select *Accounts in this organizational directory only (Microsoft only - Single tenant)*.
 1. Select **Register**.
-1. The new app registration is opened. In the **Essentials** section, select **Add a certificate or secret**.
+1. The new app registration is opened. In the **Essentials** section, select **Add a certificate or secret**. <!-- KFM: Select Certificates & Secrets in navigator instead -->
 1. The **Certificates & secrets** page opens. Open the **Client secrets** tab and select **New client secret**.
 1. In the **Add a client secret** dialog box, make the following settings:
     - **Description** – Enter a short description for your new client secret (for example, *Supply Chain Management archive solution*).
     - **Expires** – Select an expiration date that meets your needs.
 1. Select **Add**.
 1. The **Certificates & secrets** tab now shows details about the new client secret. These details will be shown only once and will be hidden when the is page reloaded. Therefore, you must copy them now. Copy the **Value** value, and paste it into a text file. You'll need this value later when you [configure Supply Chain Management to connect to and use long term data retention](#scm-connect).
-
-<!-- KFM: I suspect we don't need the rest of this procedure. Please confirm... 
-
-1. On the navigation pane, under **Manage**, select **Authentication**.
-1. The **Authentication** page opens. Select **Add a platform**.
-1. In the **Configure platforms** dialog box, select the **Mobile and desktop applications** tile.
-1. In the **Configure Desktop + devices** dialog box, select the checkbox for each redirect URL that you want to use. (You can probably select all of them.) Then select **Configure**.
-1. On the **Overview** tab, copy the **Application (client) ID** and **Directory (tenant) ID** values, and paste them into the text file where you previously pasted the client secret value. You'll need all three of these values later.
-
--->
+1. Go to **Overview** and copy the values shown for **Display name** and **Application (client) ID** and paste them into a text file. You'll need these values later when you [configure Supply Chain Management to connect to and use long term data retention](#scm-connect).
 
 ### Enable long term data retention in Dataverse
 
 <!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from draft) -->
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Go to the **Setting** of your environments. <!-- KFM: Open **Environments** first? I don't have any. -->
+1. Go to **Environments** and open the environment associated with your Supply Chain Management environment.
+1. Select **Settings**.
 1. Expand **Products** and then select **Features**.
 1. Enable the feature called **Long term data retention in Dataverse (Preview)**.
-1. In the **Setting** under **Users + permissions**, create new application users (use the application created in the previous section) and then add the *System administrator* and *Bulk Archival Role* security roles. <!-- KFM: Much more detail is needed here. -->
+1. Select **Save**.
+1. Go back to the **Settings** page.
+1. Expand **Users + permissions** and then select **Application users**.
+1. Select **New app user**.
+1. The **Create a new app user** dialog opens. Select **Add an app**.
+1. The **Add an app from Azure Active Directory** dialog opens. Use the search form to find the app you registered in the [previous section](#app-registration) (search for the application **Display name**, which you should have copied during that procedure). Select the app registration and then select **Add**.
+1. Set **Business unit** to the name of the environment that you're working with.
+1. Select the **Edit** button for the **Security roles** field. Then use the Add security roles dialog to add the *System administrator* and *Bulk Archival Role* security roles.
+1. Select **Create** in the **Create a new app user** dialog.
 
 ### <a name="portal"></a>Make a portal in Power Apps
 

@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Update to include info about long term data retention -->
+
 Finance and operations apps generate business data on a regular cadence over time. On average, medium to upper-mid-market businesses accumulate over a terabyte of data in under five years. The data growth is directly proportional to the age of the business and the number of transactions that are made year over year.
 
 ## How the solution works
