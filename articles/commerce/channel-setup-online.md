@@ -2,19 +2,16 @@
 title: Set up an online channel
 description: This article describes how to create a new online channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/04/2022
+ms.date: 07/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+
 ---
+
 # Set up an online channel
 
 [!include [banner](includes/banner.md)]
@@ -51,6 +48,9 @@ The following image shows the creation of a new online channel.
 The following image shows an example online channel.
 
 ![Example online channel.](media/channel-setup-online-2.png)
+
+> [!NOTE]
+> You should be wary of the implications of changing the warehouse of a running online channel. E-commerce site carts that haven't yet been checked out (unless they are modified) will still be fulfilled from the old warehouse, which will impact the inventory availability calculation.
 
 ## Assign the channel to a Commerce Scale Unit
 
@@ -89,7 +89,7 @@ The following image shows an example of a cash payment method.
 
 ### Set up modes of delivery
 
-You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
+You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the action pane.
 
 To change or add a mode of delivery, follow these steps.
 
