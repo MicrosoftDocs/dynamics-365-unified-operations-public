@@ -57,7 +57,7 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
     - **Name** – Enter a name.
     - **Supported account types** – Select *Accounts in this organizational directory only (Microsoft only - Single tenant)*.
 1. Select **Register**.
-1. The new app registration is opened. In the **Essentials** section, select **Add a certificate or secret**. <!-- KFM: Select Certificates & Secrets in navigator instead -->
+1. Select **Certificates & Secrets** in navigation pane.
 1. The **Certificates & secrets** page opens. Open the **Client secrets** tab and select **New client secret**.
 1. In the **Add a client secret** dialog box, make the following settings:
     - **Description** – Enter a short description for your new client secret (for example, *Supply Chain Management archive solution*).
@@ -90,17 +90,15 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 <!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from draft) -->
 
 1. Sign in to the [Power Apps make portal](https://make.powerapps.com/). <!-- KFM: Right name for this? -->
-1. Select **Settings** (gear icon) to open a dialog box and then select the **Advanced settings**.
-1. Select the Filter icon. <!-- KFM: I don't see this... -->
-1. Filter for Available Finance and Operation Entities that contain the word *Archive* in the name.
-1. Result will show the `SalesOrderLineArchiveEnityt`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`.
-1. Select each entity record to set the **Visible** properties which make the entity available as a virtual entity in Dataverse.
-1. Repeat the previous step for each record.
+1. Select **Settings** (gear icon) to open a dialog box and then select **Advanced settings**.
+1. Select **Advanced find** (filter icon) in the top bar. The **Advanced find** dialog opens. Use it to search for Finance and Operation Entities that contain the word *Archive* in the name. The results should include `SalesOrderLineArchiveEntity`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`.
+1. Select the first of these three entities to open a dialog box. Then select the **Visible** and **Refresh** check boxes, which make the entity available as a virtual entity in Dataverse. Then select **Save and close**.
+1. Repeat the previous step for each of the other two entities.
 1. In the make portal, click on the Tables and then select All.
 1. Filter for the newly created virtual entities that contains the word *Archive* in the name.
 1. Then click per record and navigate to properties.
 1. In the advance option of the properties, select the **Track Changes** check box and the **Long Term Data retention** check box. The select **Save**.
-1. Repeat for each of the three entities (`SalesOrderLineArchiveEnityt`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`).
+1. Repeat for each of the three entities (`SalesOrderLineArchiveEntity`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`).
 
 ### <a name="scm-connect"></a> Configure Supply Chain Management to connect to and use long term data retention
 
