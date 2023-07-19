@@ -37,6 +37,8 @@ Before you can use this feature, your system must meet the following requirement
     - *(Preview) Archive*
     - *(Preview) Archive sales orders to history tables*
     - *(Preview) Archive sales orders to history tables using archive service*
+    - *(Preview) Archive data to Dataverse managed data lake and purge*
+    - *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge*
 
 ## <a name="archival-requirements"></a>Which sales orders can be archived and when
 
@@ -70,6 +72,10 @@ To schedule archiving of sales orders, follow these steps.
     > Only dates that meet the [archival requirements](#archival-requirements) are available for selection.
 
 1. Select **Finish**.
+
+## Move sales order history to long term data retention
+
+
 
 ## Review sales orders in the history tables
 

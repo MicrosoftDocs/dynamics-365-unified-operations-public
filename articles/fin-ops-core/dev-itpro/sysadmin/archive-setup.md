@@ -38,8 +38,8 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 - *(Preview) Archive sales orders to history tables* – This feature is required for archiving of sales orders. It provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Archive sales orders to history tables using archive service* – This feature is required for archiving of sales orders. It moves sales orders from day-to-day transaction tables to history tables. After the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Archive data to Dataverse managed data lake and purge* – Provides the archival framework to perform rules-based archiving of historical data. The archived records are removed from your day-to-day working environment and stored in your Dataverse managed data lake, thereby improving system performance and lowering operating costs while keeping your historical records available as read-only data for when you need them.
-- *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – Keeping a large volume of historical sales orders and lines in your day-to-day working environment not only results in increased storage costs, but also impacts system performance and usability. You can leverage the archival framework to perform rules-based archiving of historical sales orders and lines. The archived records are removed from your day-to-day working environment and stored in your Dataverse managed data lake, thereby improving system performance and lowering operating costs while keeping your historical sales records available as read-only data for when you need them. This feature performs the last step in the archival process, which is archiving from history tables to Dataverse managed data lake.
-- *(Preview) Purge archived inventory transactions* – This feature provides a capability to clear data from archived inventory transactions data, once they are successfully copied to data lake. Please make sure the schema of InventTransArchive and InventTransArchiveEntity is identical, or some data may be lost during synchronization to dataverse.
+- *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – Performs the last step in the archival process for sales orders, which is archiving from history tables to Dataverse managed data lake. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
+- *(Preview) Purge archived inventory transactions* – Performs the last step in the archival process for inventory transactions, which is archiving from history tables to Dataverse managed data lake. You must ensure the schema of InventTransArchive and InventTransArchiveEntity is identical, or some data may be lost during synchronization to dataverse.
 
 ## Set up long term data retention
 
@@ -114,22 +114,17 @@ Long term data retention is now fully set up for the required entities in Datave
 1. Make the following settings:
     - **Enable data archival to data lake** – Set to *Yes*.
     - **Linked Dataverse environment URL** – This is the URL for the linked Dataverse environment. It should already be filled in.
-    - **Azure application name** – Enter the **Display name** that you copied when you [created the app registration in Azure](#app-registration)
+    - **Azure application name** – Enter the **Display name** that you copied when you [created the app registration in Azure](#app-registration).
     - **Application ID** – Enter the **Application (client) ID**  that you copied when you [created the app registration in Azure](#app-registration).
     - **Application secret** – Enter the client secret **Value** that you copied when you [created the app registration in Azure](#app-registration).
 1. On the Action Pane, select **Save**.
+1. Repeat from step 2 for each legal entity where you want to enable long term data retention.
 1. Go to **System administration \> Setup \> Azure Active Directory applications**.
 1. On the Action Pane, select **New** to add a new row to the grid. Make the following settings for the new row:
     - **Client ID** – Enter the **Application (client) ID**  that you copied when you [created the app registration in Azure](#app-registration).
     - **Name** – Enter a name (for example, *Long term data retention*).
-    - **User ID** – Enter *Admin*.
-1. Repeat this procedure for each legal entity where you want to enable long term data retention.
-
-### Set up the scheduled task
-
-<!-- KFM: Briefly describe what we are about to do and why. Much more detail is needed here. -->
-
-1. Go to the **Archive** workspace and schedule move to history Schedule purge.
+    - **User ID** – Select *Admin*.
+1. On the Action Pane, select **Save**.
 
 ### Provide access to view data in long term data retention
 
