@@ -36,9 +36,6 @@ This article provides information about global withholding tax functionality and
 
 Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level. The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.
 
-> [!NOTE]
-> Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.
-
 ## Turn on global withholding tax
 
 1. In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.

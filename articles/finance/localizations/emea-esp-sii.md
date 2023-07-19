@@ -309,7 +309,7 @@ Value of the **IDType** additional field is reported in the **IDType** tag under
 By default, for counterparties outside of Spain, when **Registration ID** is not defined in the counterparty's master data, the system defines the following values for the **IDType** additional field:
 
 -   **02** – For EU counterparties
--   **04** – For third-country counterparties
+-   **04** – For third-country/region counterparties
 
 When **Registration ID** is defined on the counterparty's master data, system analyzes the following types of the **Registration ID**:
 

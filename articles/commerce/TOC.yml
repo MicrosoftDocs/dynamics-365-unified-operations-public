@@ -16,8 +16,6 @@
           href: get-started/whats-new-commerce-10-0-35.md
         - name: Commerce 10.0.34 (June 2023)
           href: get-started/whats-new-commerce-10-0-34.md
-        - name: Commerce 10.0.33 (April 2023)
-          href: get-started/whats-new-commerce-10-0-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -692,6 +690,8 @@
             href: create-channel-hierarchy.md
           - name: Configure channel to use a channel navigation hierarchy 
             href: configure-channel-hierarchy.md
+          - name: Channel merchandising configuration validator
+            href: channel-merch-config-validator.md
         - name: Assortments
           items:
           - name: Assortment management
@@ -1380,6 +1380,8 @@
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
+        - name: View product search publishing status in headquarters
+          href: publish-status-headquarters.md
       - name: Reporting
         items:
         - name: Generate online channel reports
@@ -1552,7 +1554,7 @@
             href: localizations/emea-eeu-advance-invoices-for-retail.md
           - name: Petty cash management for Commerce for Eastern Europe
             href: localizations/emea-eeu-petty-cash-for-retail.md
-          - name: Customer invoices and return sales orders in Eastern European countries
+          - name: Customer invoices and return sales orders in Eastern European countries/regions 
             href: localizations/emea-eeu-retail-invoices.md
           - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
             href: localizations/emea-eeu-deployment.md
@@ -2264,7 +2266,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/commerce
         - name: Configure model mappings
           items: 
-          - name: Configure country context dependent ER model mappings
+          - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
@@ -3125,6 +3127,6 @@
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
-    href: ../finance/index.md
+    href: ../finance/finance-welcome.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/index.md

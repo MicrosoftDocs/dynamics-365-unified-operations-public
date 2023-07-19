@@ -13,9 +13,6 @@ ms.custom: bap-template
 # Print labels using the Loftware NiceLabel label service solution
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how to set up and print labels in Microsoft Dynamics 365 Supply Chain Management by using the Loftware NiceLabel solution. It's one example that shows how to use the Supply Chain Management external service label printing feature. For general information about how this feature works, see [Print labels using an external service](label-printing-using-external-label-service.md).
 
@@ -302,8 +299,10 @@ Follow these steps to set up an external service instance for printing through t
 You can now create label printers and label layouts by using variables.
 
 > [!NOTE]
+>
 > - When you create label printers on the **Label printers** page in Supply Chain Management, in the **Label print service printer name** field, enter the name of the printer from the **Cloud printers** tab in NiceLabel Cloud Control Center.
 > - When you create a variable-based label layout on the **Label layout** page of Supply Chain Management, in the **System Variables** grid, include a row where the **Variable name** field is set to *LabelFile* and the **Value** field is set to the full path and file name of the label. To find the full path and file name, sign in to NiceLabel Control Center, and then, on the **Documents** tab, select the label file, and copy the full value of the **Path** field (under **File properties**).
+> - When you create a variable-based label layout, **Variable name** in the **Data variables** grid can't be the same as **Variable name** in the **System variables** grid.
 
 ## Additional resources
 

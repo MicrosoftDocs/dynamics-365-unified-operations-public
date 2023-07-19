@@ -13,13 +13,13 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-You can post journals for bank expenses directly to the banks account reconciliations for Latin American countries.
+You can post journals for bank expenses directly to the banks account reconciliations for Latin American countries/regions.
 
 ## Prerequisites
 
 Before you post a bank expense journal that has LATAM information, the following prerequisites must be met:
 
-- Enable the **LATAM** globalization feature with a valid country.
+- Enable the **LATAM** globalization feature with a valid country/region.
 - Go to **Organization administration** \> **Setup** \> **LATAM** \> **Bank Parameters – LATAM**, enable the use of bank expenses, and select a journal name to use.
 - Create a document class that's configured as a vendor invoice for the bank expenses.
 

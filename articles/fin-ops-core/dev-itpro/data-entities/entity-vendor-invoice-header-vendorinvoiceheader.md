@@ -35,7 +35,6 @@ Use the **Vendor invoice header** entity to create a vendor invoice header befor
 
 | Field | Description |
 |--|--|
-| HEADERREFERENCE | Specifies the primary key. This field is required. |
 | CURRENCY | The currency for the vendor invoice. |
 | CASHDISCOUNT | Deduction allowed by vendor from the invoice price. |
 | CASHDISCOUNTCODE | The cash discount that is offered. |
@@ -46,7 +45,6 @@ Use the **Vendor invoice header** entity to create a vendor invoice header befor
 | INVOICEACCOUNT | Specifies a foreign key to a **Vendor**. |
 | INVOICEDATE | Invoice date will be blank if not specified |
 | INVOICENUMBER | Specifies the vendor invoice document reference number. If VENDINVOICEINUSERECOVERENABLE is marked, then duplicate invoice numbers are allowed. This field is required. |
-| PURCHASEORDERNUMBER | Specifies a reference to a purchase order. |
 | SALESTAXGROUP | Specifies a foreign key to a **Sales tax group**. |
 | VENDORACCOUNT | Specifies a foreign key to a **Vendor**. |
 

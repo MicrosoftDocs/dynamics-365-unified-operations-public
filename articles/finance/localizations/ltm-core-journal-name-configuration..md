@@ -13,13 +13,13 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-In the journal name configuration in the extended **LATAM** section, you can add the information that's required for Latin American countries. This extended configuration affects journal name posting.
+In the journal name configuration in the extended **LATAM** section, you can add the information that's required for Latin American countries/regions. This extended configuration affects journal name posting.
 
 ## Prerequisites
 
 Before you can enable the LATAM configuration, the following prerequisites must be met:
 
-- Enable the **LATAM** globalization feature with a valid country.
+- Enable the **LATAM** globalization feature with a valid country/region.
 - Activate the **LATAM taxes** feature in the LATAM parameters.
 - Create at least one journal name.
 

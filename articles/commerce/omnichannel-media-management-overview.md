@@ -15,7 +15,6 @@ ms.search.validFrom: 2023-03-01
 # Omnichannel media management overview
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 

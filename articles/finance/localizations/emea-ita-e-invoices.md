@@ -198,7 +198,7 @@ To define specific reverse charge groups for specific products or categories, go
 
 Additionally, you should set up application-specific parameters that use these reverse charge groups.
 
-For more information about this functionality, see the "Reverse charge configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+For more information about this functionality, see the "Reverse charge configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### Automatically assigned Natura codes
 
@@ -240,7 +240,7 @@ If a required document type isn't listed, you can manually adjust the document t
 - Electronic document property definition
 - Invoice document type registration
 
-For more information, see the "Invoice types configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+For more information, see the "Invoice types configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### <a id="digitalcert"></a>Digital certificates
 
