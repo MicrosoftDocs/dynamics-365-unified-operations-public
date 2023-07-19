@@ -19,6 +19,9 @@ ms.custom: bap-template
 
 <!--KFM: Preview until further notice -->
 
+<!-- KFM: Update to include info about long term data retention. Add steps for purge, add feature management -->
+
+
 Over time, your company will probably generate and store a large volume of sales orders and sales order lines. Although these records aren't required for day-to-day operations, they might still be required for historical reporting, auditing, machine learning, and other purposes. However, a large volume of historical sales orders and sales order lines in your day-to-day working environment not only increases storage costs but also affects system performance and usability.
 
 To address these issues, you can use the archive solution for finance and operations apps to implement rule-based archiving of historical sales orders and sales order lines. During archiving, the system first moves records from the sales order headers database table (`SalesTable`) and the related sales order lines table (`SalesLine`) to the `SalesTableHistory` and `SalesLineHistory` tables, respectively. Administrators and other users can then view and validate the archived sales order records.
