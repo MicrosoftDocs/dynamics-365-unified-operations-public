@@ -53,18 +53,19 @@ Follow these steps to create a license plate label layout.
 
     - **Label layout ID** – Enter a name for the layout (for example, *License plate*).
     - **Description** – Enter a short description of the layout (for example, *License plate*).
-    - **Definition type** – Specify the method used to define the layout. Select one of the following values:
-        - *ZPL* – Define label layout using Zebra Programming Language (ZPL).
-        - *Variables* – Define a label layout for use with an external service (see also [Print labels using an external service](label-printing-using-external-label-service.md)). When you select this option, the **Printer text layout** FastTab provides tables for defining **System variables** and **Data variables**. Under **System variables**, set **LabelFile** to the path to the label design in the external system and **Quantity** to the number of labels to print. Under **Data variables**, define the values that will be sent from Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
-        - *Variables (script)* – Define a label layout for use with an external service using the script format (see also [Print labels using an external service](label-printing-using-external-label-service.md)). On the **Printer text layout** FastTab, define the label file, quantity and the values to be sent. For example:
+    - **Definition type** – Select the method that's used to define the label layout:
+
+        - *ZPL* – Define the label layout by using ZPL.
+        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Microsoft Dynamics 365 Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
 
             ```plaintext
             "filePath": "/Instant Print/GS1-128.nlbl", 
             "quantity": "1",
             "dataSources": [
             {
-              "GTIN of Contained Trade Items": "06183928726611",
-              "Product_name": "D365FO: $ItemName$"
+                "GTIN of Contained Trade Items": "06183928726611",
+                "Product_name": "D365FO: $ItemName$"
             }
             ]
             ```
@@ -72,9 +73,9 @@ Follow these steps to create a license plate label layout.
     - **Label layout data source ID** – Leave this field blank if you'll use only license plate data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
-    - **Printer stock type** – Select a printer stock type. A *printer stock type* typically describes the paper type a specific printer uses. It's also used to specify the paper type that a specific label layout will be printed to. For more information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
+    - **Printer stock type** – Select a *printer stock type*. A printer stock type typically describes the type of paper that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to. For information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
 
-1. On the **Printer text Layout** FastTab, enter your label code in a way that matches your selected **Definition type**. Here's an example of code that you can copy and paste for testing when **Definition type** is *ZPL*.
+1. On the **Printer text Layout** FastTab, enter label code in a way that's appropriate for the selected definition type. The following example shows code that you can copy and paste for testing if the **Definition type** field is set to *ZPL*.
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -99,8 +100,8 @@ Follow these steps to create a license plate label layout.
     >
     > 1. In the **Tables** list, select the table.
     > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
-    > 1. If the **Definition type** is *ZPL* or *Variables (script)*, then select **Insert at end of text** to add the field or method to the end of the code. As you require, move the new field or method to the place in the code where you want to use it.
-    > 1. If the **Definition type** is *Variables*, select a row in the **Data variables** table and then select **Insert field reference** to add the field or method as a field value.
+    > 1. If the **Definition type** field is set to *ZPL* or *Variables (script)*, select **Insert at end of text** to add the field or method to the end of the code. As you require, move the new field or method to the place in the code where you want to use it.
+    > 1. If the **Definition type** field is set to *Variables*, select a row in the **Data variables** table, and then select **Insert field reference** to add the field or method as a field value.
 
 1. On the Action Pane, select **Save**.
 
