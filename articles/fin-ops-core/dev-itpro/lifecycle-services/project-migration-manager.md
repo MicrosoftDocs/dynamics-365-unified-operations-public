@@ -68,7 +68,7 @@ The following table shows the data that can be transferred between instances and
 | Automated | Project users | Only project owners from the tenant that owns the source project are migrated to the target Lifecycle Services project. | 
 | Automated | Asset library | Only the last application or merged software deployable package asset that was applied to your sandbox or production environments is automatically migrated. |
 | Manual | Asset library | You'll be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
-| Manual | Shared asset library | The shared asset library will be different in each geo. For a package to be globally available, it will have to be uploaded to each geo's shared asset library. |
+| Manual | Shared asset library | The shared asset library is different in each geo. For a package to be globally available, it has to be uploaded to each geo's shared asset library. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager. They'll have the same environment IDs but are in a new project. If you must move your environment to a different region, follow the [Geo-to-geo migrations](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations) article.|
 | Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project is locked but you'll still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Manual | Project users | Remaining users must be added manually by project owners. |
@@ -120,7 +120,7 @@ You can cancel the migration at any time before it begins.
 
 ### During the migration
 
-A new Lifecycle Services project is created in the target geography.  This will provide you with a new LCS Project ID and URL.  The migration can take up to two hours depending on the size of the data that is automatically transferred.
+A new Lifecycle Services project is created in the target geography.  This will provide you with a new Lifecycle Services Project ID and URL.  The migration can take up to two hours depending on the size of the data that is automatically transferred.
 
 While the migration is in progress, a banner is shown across the source and target projects to indicate that they're participating in a migration. The projects are locked for changes until either the migration is successfully completed, or it fails and is rolled back.
 
@@ -130,7 +130,7 @@ The Lifecycle Services project and other information must be updated in the Sand
 
 ### After the migration
 
-After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. Make sure to update the release pipeline to newly created LCS project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed, you'll receive an email stating the success of the migration, or the reason for the failure. Upon successful migration, you should manually transfer any other assets and settings that weren't automatically transferred from the old project to the new project. Make sure to update the release pipeline to newly created Lifecycle Services project. In addition, you have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
 You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
@@ -162,8 +162,8 @@ Your source project is unlocked, and you'll receive an email notification that t
 
 First release is a program that only exists in the US-based public cloud instance of Lifecycle Services.  It isn't available in the other geographies at this time.  If you were previously part of the First Release program and are migrating to another geography, you won't be on the First Release program after migration.
 
-### Will LCS Project migration affect finance and operations apps add-ins?
+### Will Lifecycle Services Project migration affect finance and operations apps add-ins?
 
-Since there are no changes to finance and operations apps environments nor Power Platform environments, LCS Project migration does not affect finance and operations apps add-ins.
+Because there aren't changes to finance and operations apps environments or the Power Platform environments, Lifecycle Services Project migration doesn't affect finance and operations apps add-ins.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
