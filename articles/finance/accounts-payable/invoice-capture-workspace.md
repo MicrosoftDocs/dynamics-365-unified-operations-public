@@ -4,7 +4,7 @@
 title: Invoice capture solution workspace
 description: This article provides information about the Invoice capture solution workspace.
 author: sunfzam
-ms.date: 06/19/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Invoice capture solution workspace
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Invoice capture, when an invoice is successfully recognized by AI Builder and mapped to invoice fields, it can be automatically updated and validated according to rules before it's converted to a vendor invoice in Microsoft Dynamics 365 Finance. If the invoice isn't complete, or if the confidence score of the invoice recognition isn't high enough, manual intervention is required to review and correct the invoice.
 
