@@ -19,6 +19,23 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.12.0
+
+### New authentication method added in version 2.1.12.0
+
+The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+
+### New fixes and improvements in version 2.1.12.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Fixed an issue that prevented quantity values from being displayed when the quantity spinner was hidden. Now, when the spinner is hidden, the quantity is displayed as read-only, and users can scan or use the numpad to change it. 
+- The decimal separator shown by the mobile app now matches the culture (language) specified for the user account that the app is using to sign in to Supply Chain Management rather than the culture set for the local device. 
+- Fixed an issue where the read-only quantity spinner would display an incorrect value after the page was resized. 
+- Fixed an issue where the compact (small) quantity spinner would initially show an incorrect value. 
+- Added the ability to collect telemetry data about the Wi-Fi strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)). 
+- Added several accessibility improvements. 
+
 ## Version 2.1.9.0
 
 This version of the Warehouse Management mobile app introduces the following new features, fixes, and improvements: 
