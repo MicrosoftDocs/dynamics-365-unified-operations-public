@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 06/19/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Configure the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 After the Invoice capture solution is installed, default configurations for using it are provided. These default configurations might not fully meet the customer's requirements. In Invoice capture, configurations can be found in **System preference**.
 
