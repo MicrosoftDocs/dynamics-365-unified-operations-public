@@ -1,25 +1,25 @@
 ---
-title: Prepare for JPK-V7M reporting
-description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
-author: AdamTrukawka
-ms.date: 10/15/2021
+title: Prepare for JPK-V7 reporting
+description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland.
+author: liza-golub
+ms.date: 07/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: atrukawk
+ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
-# Prepare for JPK-V7M reporting
+# Prepare for JPK-V7 reporting
 
 [!include [banner](../includes/banner.md)]
 
-The solution that supports JPK-V7M reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach to setting up and supporting reporting processes.
+The solution that supports JPK-V7 reporting is based on the [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. This functionality provides a flexible approach to setting up and supporting reporting processes.
 
-The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
+The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7:
 
 - [Import and set up Electronic reporting (ER) configurations](#configurations-vdek).
 - [Set up application-specific parameters](#application-specific-parameters-vdek).
@@ -28,18 +28,21 @@ The following tasks prepare Microsoft Dynamics 365 Finance to report a JPK-V7M:
 - [Save the executable class parameters for Electronic messaging](#executable-class-parameters-vdek).
 - [Set up security roles for electronic message processing](#security-roles-vdek).
 - [Set up an office code for electronic message processing](#office-code-vdek).
+- [Set up a "Sklad pliku" (file composition) for electronic message processing](#sklad-pliku)
+- [Set up a "Wariant JPK_VAT" (variant JPK_VAT) for electronic message processing](#wariant-jpk-vat)
+- [Set up a "Wersja schematu" (schema version) for electronic message processing](#wersja-schematu)
 - [Set up sales tax codes and sales tax reporting codes](#sales-tax-reporting-codes-vdek).
 
 ## <a id="configurations-vdek"></a>Import and set up ER configurations
 
-To prepare Finance for JPK-V7M reporting, you must import the following ER configurations.
+To prepare Finance for JPK-V7 reporting, you must import the following ER configurations.
 
 | ER configuration name             | Type | Description |
 |-----------------------------------|------|-------------|
 | Standard Audit File (SAF-T)       | Model | The common ER model for Standard Audit Files. |
 | Standard Audit File model mapping | Model mapping | The model mapping that defines data sources for Polish Standard Audit File (JPK) reports. |
-| JPK-V7M XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires to be periodically reported. |
-| JPK-V7M Excel format (PL)         | Format (exporting) | The Excel format for preview information that will be reported in XML format. |
+| JPK-V7 XML format (PL)           | Format (exporting) | The XML format that provides the file that the Polish Ministry of Finance requires for periodic reporting. |
+| JPK-V7 Excel format (PL)         | Format (exporting) | The Excel format for preview information that's reported in XML format. |
 
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to find the KB article by number.
 
@@ -52,7 +55,7 @@ For more information about how to download ER configurations from the Microsoft 
 
 ## <a id="application-specific-parameters-vdek"></a>Set up application-specific parameters
 
-Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7M report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7M report. The JPK-V7M format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
+Depending on the tax transaction data, the values of some elements (markers) in the JPK-V7 report can be defined for reporting purposes. There must be enough transactional data to define values for these elements. Therefore, set up enough sales tax codes, sales tax groups, and item sales tax groups to differentiate tax transactions for all the parameters (elements) that are introduced in the JPK-V7 report. The JPK-V7 format includes application-specific parameters (fields) that can be used to define values for these elements in the report.
 
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
@@ -71,7 +74,7 @@ The format includes the following lookup fields for setup.
 | PurchaseDocumentTypesSelector | A designation of the type of the purchase document | This lookup field is used to define the **MK**, **VAT_RR**, and **WEW** purchase document types. |
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7M XML format (PL)**.
+2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **JPK-V7 XML format (PL)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 
     ![Setup button in the Application specific parameters group on the Configurations tab](media/setup-app-spec-params.jpg)
@@ -141,18 +144,18 @@ The following table shows the lookup results (designations) for **ProceduralMark
 
 | Name           | Label (En) | Label (Pl) | Description (En) | Description (Pl) |
 |----------------|------------|------------|------------------|------------------|
-| SW (*only for reporting periods before July 1, 2021*) | Mail order sale | Sprzedaży wysyłkowej | Delivery as part of a mail order sale from the territory of the country, as referred to in article 23 of the VAT Act | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
+| SW (*only for reporting periods before July 1, 2021*) | Mail order sale | Sprzedaży wysyłkowej | Delivery as part of a mail order sale from the territory of the country/region, as referred to in article 23 of the VAT Act | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
 | EE  (*only for reporting periods before January 1, 2022*) | Telecommunications | Usług telekomunikacyjnych | The provision of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the VAT Act | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
 | TP             | Links between the buyer and the supplier | Istniejące powiązania między nabywcą a dokonującym | Existing links between the buyer and the supplier of goods or the provider of services, as referred to in article 32, section 2, point 1 of the VAT Act. There is an exception for the case of supplies of goods and the provision of services where the relationship between the purchaser and the supplying service provider arises solely from a link with the State Treasury or local authorities or their associations. | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy. Z wyjątkiem sytuacji, gdy przypadku dostaw towarów oraz świadczenia usług, gdy powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą wynikają wyłącznie z powiązania ze Skarbem Państwa lub jednostkami samorządu terytorialnego lub ich związkami. |
 | TT_WNT         | Intra-community acquisition as part of a three-party transaction | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej | The intra-community acquisition of goods by the second-most-taxable person as part of a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
-| TT_D           | Delivery of goods outside Poland as part of a three-party transaction | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | The supply of goods outside the territory of the country by the second VAT payer in a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
+| TT_D           | Delivery of goods outside Poland as part of a three-party transaction | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | The supply of goods outside the territory of the country/region by the second VAT payer in a three-party transaction, under the simplified procedure that is referred to in section XII, chapter 8 of the VAT Act | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
 | I_42           | Customs procedure 42 (import) | Procedury celnej 42 (import) | The intra-community supply of goods after they are imported under customs procedure 42 (import) | Wewnątrzwspólnotowa dostawa towarów następująca po imporcie tych towarów w ramach procedury celnej 42 (import) |
 | I_63           | Customs procedure 63 (import) | Procedury celnej 63(import) | The intra-community supply of goods after they are imported under customs procedure 63 (import) | Wewnątrzwspólnotowa dostawa towarów następująca po imporcie tych towarów w ramach procedury celnej 63 (import) |
 | B_SPV          | Transfer by article 8a, paragraph 1 of the VAT Act | Transfer z art. 8a ust. 1 ustawy | The transfer of a single-purpose voucher that is done by a taxpayer who is acting on their own behalf, and that is taxed in accordance with article 8a, paragraph 1 of the VAT Act | Transfer bonu jednego przeznaczenia dokonany przez podatnika działającego we własnym imieniu, opodatkowany zgodnie z art. 8a ust. 1 ustawy |
 | B_SPV_DOSTAWA  | Goods and services that the single-purpose voucher is related to (article 8a, paragraph 4 of the VAT Act) | Dostawa towarów oraz świadczenie usług (art. 8a ust. 4 ustawy) | The supply of goods and the provision of services, where the single-purpose voucher is related to a taxable person who issued the voucher in accordance with article 8a, paragraph 4 of the VAT Act | Dostawa towarów oraz świadczenie usług, których dotyczy bon jednego przeznaczenia na rzecz podatnika, który wyemitował bon zgodnie z art. 8a ust. 4 ustawy |
 | B_MPV_PROWIZJA | Brokering services for multi-purpose vouchers | Usług pośrednictwa o transferu bonu różnego przeznaczenia | The provision of brokering and other services that are related to the transfer of multi-purpose vouchers that are taxed in accordance with article 8b, paragraph 2 of the VAT Act | Świadczenie usług pośrednictwa oraz innych usług dotyczących transferu bonu różnego przeznaczenia, opodatkowane zgodnie z art. 8b ust. 2 ustawy |
-| WSTO_EE | Intra-community distance selling of goods | Wewnątrzwspólnotowej sprzedaży na odległość towarów | Intra-community distance sales of goods that, at the time when their dispatch or transport begins, are within the territory of the country, and the supply of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the Act to non-taxable persons who are established or have their permanent address or place of residence in the territory of a Member State other than the territory of the country. | Wewnątrzwspólnotowej sprzedaży na odległość towarów, które w momencie rozpoczęcia ich wysyłki lub transportu znajdują się na terytorium kraju, oraz świadczenia usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy, na rzecz podmiotów niebędących podatnikami, posiadających siedzibę, stałe miejsce zamieszkania lub miejsce pobytu na terytorium państwa członkowskiego innym niż terytorium kraju |
-| IED | Delivery of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | The supply of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act by a taxable person who facilitates that supply but doesn't benefit from the special scheme that is referred to in chapter 6a or 9 of section XII of the Act or in the corresponding regulations for which the place of supply is within the territory of the country. | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
+| WSTO_EE | Intra-community distance selling of goods | Wewnątrzwspólnotowej sprzedaży na odległość towarów | Intra-community distance sales of goods that, at the time when their dispatch or transport begins, are within the territory of the country/region, and the supply of telecommunications, broadcasting, and electronic services that are referred to in article 28k of the Act to non-taxable persons who are established or have their permanent address or place of residence in the territory of a Member State other than the territory of the country/region. | Wewnątrzwspólnotowej sprzedaży na odległość towarów, które w momencie rozpoczęcia ich wysyłki lub transportu znajdują się na terytorium kraju, oraz świadczenia usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy, na rzecz podmiotów niebędących podatnikami, posiadających siedzibę, stałe miejsce zamieszkania lub miejsce pobytu na terytorium państwa członkowskiego innym niż terytorium kraju |
+| IED | Delivery of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | The supply of goods that are referred to in article 7a, paragraphs 1 and 2 of the Act by a taxable person who facilitates that supply but doesn't benefit from the special scheme that is referred to in chapter 6a or 9 of section XII of the Act or in the corresponding regulations for which the place of supply is within the territory of the country/region. | Dostawy towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
 | Inne           | Other | | | |
 
 > [!NOTE]
@@ -331,10 +334,10 @@ The following table shows the lookup results for **PurchaseDocumentTypesSelector
 
 ## <a id="import-data-entities-vdek"></a>Import a package of data entities that includes a predefined electronic message setup
 
-The process of setting up the Electronic messaging functionality for JPK-V7M reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
+The process of setting up the Electronic messaging functionality for JPK-V7 reporting has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables.
 
-1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7M EM setup.zip** in the list of data package files, and download it to your computer.
-2. After the **PL JPK_V7M EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7M report from, and then go to **Workspaces** \> **Data management**.
+1. In [LCS](https://lcs.dynamics.com/v2), in the Shared asset library, select the **Data package** asset type. Then find **PL JPK_V7 EM setup.zip** in the list of data package files, and download it to your computer.
+2. After the **PL JPK_V7 EM setup.zip** file has been downloaded, open Finance, select the company that you will generate the JPK-V7 report from, and then go to **Workspaces** \> **Data management**.
 
     Before you import setup data from the package of data entities, you must make sure that the data entities in your application are refreshed and synced.
 
@@ -346,15 +349,15 @@ The process of setting up the Electronic messaging functionality for JPK-V7M rep
 
 For more information about Data management, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
-You must now import data from the **PL JPK_V7M EM setup.zip** file into the selected company.
+You must now import data from the **PL JPK_V7 EM setup.zip** file into the selected company.
 
 1. In the **Data management** workspace, select **Import**, set the **Source data format** field to **Package**, and create a new importing project by selecting **New** on the Action Pane.
 2. On the **Select entities** FastTab, select **Add file**.
-3. Select **Upload and add**, select the **PL JPK_V7M EM setup**.**zip** file on your computer, and upload it.
+3. Select **Upload and add**, select the **PL JPK_V7 EM setup.zip** file on your computer, and upload it.
 4. When entities from the package are listed in the grid, select **Close**.
 5. On the Action Pane, select **Import** to start to import data from the data entities.
 
-    ![PL JPK_V7M EM setup page](media/import-data-entities.jpg)
+    ![PL JPK_V7 EM setup page](media/import-data-entities.jpg)
 
 You will receive a notification in **Messages**, or you can manually refresh the page to view the progress of the data import. When the import process is completed, the **Execution summary** page shows the results.
 
@@ -362,6 +365,12 @@ You will receive a notification in **Messages**, or you can manually refresh the
 
 > [!IMPORTANT]
 > Some records in the data entities in the package include a link to ER configurations. Therefore, be sure to import ER configurations into Finance before you start to import the data entities package.
+
+> [!NOTE]
+> As of version 7 of the **PL JPK_V7 EM setup.zip** file, the package of data entities includes setup for two types of Electronic messaging processing:
+>
+> - **JPK-V7M** – Monthly JPK-V7M declaration (Miesięczny Jednolity Plik Kontrolny VAT z deklaracją V7M)
+> - **JPK-V7K** – Quarterly JPK-V7K declaration (Kwartalny Jednolity Plik Kontrolny VAT z deklaracją V7K)
 
 ## <a id="general-ledger-parameters-vdek"></a>Set up General ledger parameters
 
@@ -375,10 +384,10 @@ To work with the Electronic messaging functionality, you must define related num
 
 ## <a id="executable-class-parameters-vdek"></a>Save the executable class parameters for Electronic messaging
 
-The JPK-V7M processing uses the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
+Both the JPK-V7 processing and the JPK-V7K processing use the **EMGenerateJPKVDEKReportController_PL** executable class to initiate data collection for the report data provider and further report generation. Before you use this class for the first time, you must save its parameters.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**.
-2. Select the **Wygenerowanie JPK_V7M** executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
+2. Select the **Wygenerowanie JPK-V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) executable class (which is set to call **EMGenerateJPKVDEKReportController_PL**), and then, on the Action Pane, select **Parameters**. In the **Generate Polish JPK_VDEK report** dialog box, select **OK**.
 
 In the dialog box for the executable class, the **Retail-specific sales marking** group of parameters is used for retail-specific scenarios. For more information about how to report **RO** and **FP** document types for retail operations, see [Report RO and FP document types for retail operations](emea-pol-vdek-scenarios.md#report-ro-and-fp-document-types-for-retail-operations). A **Retail-specific sales marking** group of parameters is available only in legal entities that have a primary address in Poland.
 
@@ -386,26 +395,53 @@ The dialog box for the executable class includes the **Consider VAT report date 
 
 The dialog box for the executable class includes the **Settlement period** parameter. Use this parameter with the [**Multiple VAT registration numbers**](emea-multiple-vat-registration-numbers.md) feature to collect VAT transactions in specific sales tax settlement periods. The **Settlement period** parameter is available as of Finance version 10.0.29.
 
-KB5007691 ("Poland: Jednolitego Pliku Kontrolnego VDEK (JPK-V7M, VDEK) January 2022 changes in Dynamics 365 Finance") introduces the **Schema version** parameter. Use this parameter to specify that the additional field contains the version of the schema of JPK-V7M that must be reported. Select **Wersja schematu** as the value for this field.
+Use the **Schema version** parameter to specify that the additional field contains the version of the schema of JPK-V7 that must be reported. Select **Wersja schematu** as the value for this field.
 
-The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7M in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
+The dialog box for the executable class includes the **Report in accounting currency** parameter. By default, the amounts on the report are represented in the sales tax code currency. Use this parameter to report amounts in JPK-V7 in the accounting currency. The **Report in accounting currency** parameter is available as of Finance version 10.0.29.
 
 ## <a id="security-roles-vdek"></a>Set up security roles for electronic message processing
 
-Different groups of users might require access to the JPK-V7M processing. You can limit access to the processing, based on security groups that are defined in the system.
+Different groups of users might require access to the JPK-V7M or JPK-V7K processing. You can limit access to the processing, based on security groups that are defined in the system.
 
-Follow these steps to limit access to the JPK-V7M processing.
+Follow these steps to limit access to the JPK-V7M or JPK-V7K processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
-2. Select the **JPK-V7M** processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
+2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
 
 ## <a id="office-code-vdek"></a>Set up an office code for electronic message processing
 
 Follow these steps to enter an office code in the **KodUrzedu** additional field.
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
-2. Select the **JPK-V7M** processing.
+2. Select the **JPK-V7M** (if your company reports JPK-V7 monthly) or **JPK-V7K** (if your company reports JPK-V7 quarterly) processing.
 3. On the **Additional field** FastTab, select the **KodUrzedu** additional field, and then, in the **Default value** field, specify the office code that should be reported in the **\<KodUrzedu\>** element of the report.
+
+## <a id="sklad-pliku"></a>Set up a "Sklad pliku" (file composition) for electronic message processing
+
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Sklad pliku** additional field. Use this additional field to define the composition of the XML file that you will generate:
+
+- **Pelny plik XML** – For the full XML file. The file contains the complete set of elements: `Naglówek`, `Podmiot1`, `Deklaracja`, and `Ewidencja`.
+- **Tylko Ewidencja** – For the **Ewidencja** node only. The file contains the following elements: `Naglówek`, `Podmiot1`, and `Ewidencja`.
+
+The default value that is set for the **Sklad pliku** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **Pelny plik XML**.
+
+## <a id="wariant-jpk-vat"></a>Set up a "Wariant JPK_VAT" (variant JPK_VAT) for electronic message processing
+
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Wariant JPK_VAT** additional field. Use this additional field to define the variant of the XSD schema of the XML file that you will generate.
+
+| Wariant JPK_VAT | Description (En) | Description (Pl) | Default value in EM processing |
+|-----------------|------------------|------------------|--------------------------------|
+| Miesięczny (Monthly) | JPK_V7M - company reporting JPK-V7 monthly | JPK_V7M - dla podatników, którzy rozliczają się miesięcznie | Default for JPK-V7M |
+| Kwartalny (Quarterly) | JPK_V7M - company reporting JPK-V7 quarterly | JPK_V7K - dla podatników, którzy rozliczają się kwartalnie | Default for JPK-V7K |
+
+## <a id="wersja-schematu"></a>Set up a "Wersja schematu" (schema version) for electronic message processing
+
+Both the **JPK-V7M** electronic message processing and the **JPK-V7K** electronic message processing contain the **Wersja schematu** additional field. Use this additional field to define the version of the XSD schema to apply to the XML file that you will generate:
+
+- **1** – JPK-V7(1) – Effective from October 1, 2020 (before January 1, 2022).
+- **2** – JPK-V7(2) – Effective from January 1, 2022.
+
+The default value that is set for the **Wersja schematu** additional field in the **JPK-V7M** and **JPK-V7K** electronic message processing is **2**.
 
 ## <a id="sales-tax-reporting-codes-vdek"></a>Set up sales tax codes and sales tax reporting codes
 

@@ -18,7 +18,7 @@ ms.custom: bap-template
 
 This article describes how to create and print a commercial invoice when you use transportation management processes (TMS).
 
-A commercial invoice is required for the export and import clearance process. It's used for customs, the calculation of tariffs, and the declaration of international commercial terms. Commercial invoices aren't usually required for shipments between European Union (EU) countries, but only between EU countries and non-EU countries. A few countries require that the commercial invoice be on a specific form. However, for most countries, either the seller version or the exporter version is acceptable, provided that all the pertinent information is included.
+A commercial invoice is required for the export and import clearance process. It's used for customs, the calculation of tariffs, and the declaration of international commercial terms. Commercial invoices aren't usually required for shipments between European Union (EU) countries/regions, but only between EU countries/regions and non-EU countries/regions. A few countries/regions require that the commercial invoice be on a specific form. However, for most countries/regions, either the seller version or the exporter version is acceptable, provided that all the pertinent information is included.
 
 You can print the commercial invoice for a single shipment from the **All shipments** list page or the **Shipment details** page.
 

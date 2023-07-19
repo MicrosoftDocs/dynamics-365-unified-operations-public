@@ -38,11 +38,11 @@ Follow these steps to generate a report by using the ER format configuration tha
 1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 2. In the dialog box for the report, specify the required parameters, and then select **OK**.
 
-## Country-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
+## Country/region-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
 
-The following table provides information about country-specific regulatory features that are supported by the **Standard Audit File for Tax (SAF-T) electronic report** feature.
+The following table provides information about country/region-specific regulatory features that are supported by the **Standard Audit File for Tax (SAF-T) electronic report** feature.
 
-| Country   | Feature name |
+| Country/region   | Feature name |
 |-----------|--------------|
 | The United Arab Emirates | [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
 | Denmark                  | [Standard Audit File for Tax (SAF-T) for Denmark](../localizations/emea-dnk-saf-t.md) |

@@ -38,7 +38,7 @@ This article provides scenarios that are applicable from an implementation persp
 
 ### Customer table schema
 
-| Field name     | Field label     | Country context |
+| Field name     | Field label     | Country/region context |
 |----------------|-----------------|-----------------|
 | CustNum        | Customer number |                 |
 | CustName       | Customer name   |                 |
@@ -54,7 +54,7 @@ This article provides scenarios that are applicable from an implementation persp
 
 ### Sample entity
 
-| Field name     | Country context |
+| Field name     | Country/region context |
 |----------------|-----------------|
 | CustomerNumber |                 |
 | CustomerName   |                 |

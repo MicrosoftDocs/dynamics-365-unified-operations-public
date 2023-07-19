@@ -22,7 +22,7 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 
 
-This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ### Prerequisites
 
@@ -47,7 +47,7 @@ Before you begin the procedures in this article, complete the following prerequi
     - Project e-invoice (SA)
     - Retail fiscal document format (for Retail-specific scenarios, if required)
 
-## Country-specific configuration for the Saudi Arabian Zatca submission (SA) Electronic invoicing feature
+## Country/region-specific configuration for the Saudi Arabian Zatca submission (SA) Electronic invoicing feature
 
 > [!NOTE]
 > The configuration steps in this section are described for **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. This assumes that the [onboarding](#onboarding) process is completed and the Production Cryptographic Stamp Identifier (PCSID) is obtained. If you are in the middle of the onboarding process and only the Compliance Cryptographic Stamp Identifier (CCSID) is received, do the same configuration steps for the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature. 
@@ -117,7 +117,7 @@ When tax invoices are cleared, ZATCA generates a QR code that contains the digit
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Fiscal transaction document** table names. 
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.

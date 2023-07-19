@@ -24,6 +24,7 @@ This article provides links to documentation resources for Iceland.
 - [Set up an invoice declaration for vendors](tasks/set-up-invoice-declaration-vendors.md)
 - [Set up mandatory payment references](tasks/set-up-mandatory-payment-references.md)
 - [Update vendor invoice declarations and generate the report](tasks/update-vendor-invoice-declarations-report.md)
+- [Tax reconciliation report](emea-tax-reconciliation-report.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -34,7 +34,7 @@ The *USMCA certification of origin document* contains the minimum data elements 
 
 You can print the document for a single shipment from the **All shipments** list page or from the **Shipment details** page.
 
-The document is only accessible when the country on the primary address for the legal entity is the United States.
+The document is only accessible when the country/region on the primary address for the legal entity is the United States.
 
 Depending on the document print selection, the document can be pre-filled with data from your system. It is possible to change or add data to the printed document by exporting the printed document to an editable format, such as Microsoft Word. After export, you can apply any required changes before a declaration is made.
 
