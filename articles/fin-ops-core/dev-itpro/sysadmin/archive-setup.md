@@ -89,16 +89,20 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 
 <!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from draft) -->
 
-1. Sign in to the [Power Apps make portal](https://make.powerapps.com/). <!-- KFM: Right name for this? -->
+1. Sign in to the [Power Apps make portal](https://make.powerapps.com/).
 1. Select **Settings** (gear icon) to open a dialog box and then select **Advanced settings**.
 1. Select **Advanced find** (filter icon) in the top bar. The **Advanced find** dialog opens. Use it to search for Finance and Operation Entities that contain the word *Archive* in the name. The results should include `SalesOrderLineArchiveEntity`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`.
 1. Select the first of these three entities to open a dialog box. Then select the **Visible** and **Refresh** check boxes, which make the entity available as a virtual entity in Dataverse. Then select **Save and close**.
 1. Repeat the previous step for each of the other two entities.
-1. In the make portal, click on the Tables and then select All.
-1. Filter for the newly created virtual entities that contains the word *Archive* in the name.
-1. Then click per record and navigate to properties.
-1. In the advance option of the properties, select the **Track Changes** check box and the **Long Term Data retention** check box. The select **Save**.
-1. Repeat for each of the three entities (`SalesOrderLineArchiveEntity`, `SalesOrderHeaderArchiveEntity`, and `InventTransArchiveEntity`).
+1. Select **Results** in the **Advanced find** dialog and confirm that the three entities now show a value of *Yes* in the **Visible** column. Then close the dialog.
+1. In the make portal, on the navigation pane, select **Tables** to open the **Tables** page and then open the **All** tab.
+1. In the search field, enter "(mserp)" and press return. The search results should now show the following three tables: *Archived sales order line (mserp)*, *Archived sales order header (mserp)*, and *Archived inventory transaction (mserp)*.
+1. Select *Archived sales order line (mserp)* and then select **Properties**. The **Edit table** dialog opens. Expand **Advanced options** and mark the **Track changes** and **Enable long term retention** check boxes. Then select **Save**.
+1. Repeat the previous step for the *Archived sales order header (mserp)* table.
+1. Repeat the previous step for the *Archived inventory transaction* table.
+
+> [!NOTE]
+> We must edit the tables in the suggested order because of their parent/child relationships. You'll get an error if you try to set them up in a different order
 
 ### <a name="scm-connect"></a> Configure Supply Chain Management to connect to and use long term data retention
 
