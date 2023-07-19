@@ -1,46 +1,42 @@
 ---
-title: Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool
-description: This article explains how to use the Upgrade analyzer tool to plan upgrade from Dynamics AX 2012.
-author: laneswenka
-ms.date: 01/31/2018
+title: Upgrade from AX 2012 - Plan by using the Upgrade Analysis Report
+description: This article explains how to use the Upgrade Analysis Report to plan your upgrade from Dynamics AX 2012.
+author: ttreen
+ms.date: 07/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: laswenka
-ms.search.validFrom: 2017-05-31
-ms.dyn365.ops.version: Platform update 8
+ms.author: ttreen
+ms.search.validFrom: 2023-07-18
+ms.dyn365.ops.version: Platform update 54
 ms.custom: 106163
 ms.assetid: 
 ---
 
-# Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool
+# Upgrade from AX 2012 - Plan by using the Upgrade Analysis Report
 
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
-[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
+This article explains how to use the Upgrade Analysis Report to plan your upgrade from Microsoft Dynamics AX 2012. The report script is run against an AX 2012 database and parses tables for application setup and data volumes. It provides feedback on deprecated features, application settings, database settings and table space savings. 
 
-This article explains how to use the Upgrade analyzer tool to plan your upgrade from Microsoft Dynamics AX 2012. This tool is run against an AX 2012 environment and identifies data that you should clean up in AX 2012 to help reduce the subscription cost for finance and operations apps. The tool also suggests SQL configuration optimizations that can help speed up the upgrade processes. Additionally, the tool warns you if any features that you use in AX 2012 are obsolete in the current version. Therefore, you can plan ways to replace or work around those features.
+Space saving observations provide you with clean up routines in AX 2012 to help reduce the subscription cost for finance and operations apps. SQL configuration optimizations are also suggested, that can help speed up the upgrade processes. Additionally, the tool warns you if any features that you use in AX 2012 are obsolete in the current version. Therefore, you can plan ways to replace or work around those features.
 
-Upgrade analyzer gathers data from your AX 2012 environment as part of the regular System diagnostic service in Dynamics Lifecycle Services (LCS). For an overview of the System diagnostic service, and for information about how data is collected and pushed back into the cloud so that you can consume it through LCS, see [System diagnostics in Lifecycle Services (LCS)](/dynamicsax-2012/appuser-itpro/system-diagnostics-lifecycle-services-lcs).
+## Download
 
-You can view the results of the System diagnostic service in a Microsoft Power BI report in LCS. The report presents a list of tasks that you should complete in the AX 2012 environment.
+The Upgrade Analysis Report script (UpgradeAnalysisReport.SQL) can be downloaded from here: [Upgrade Analysis Report](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/AX2012DataUpgrade/UpgradeAnalysisReport.SQL)
 
-To access the Upgrade analyzer report, go to https://diag.lcs.dynamics.com/UpgradeAnalysisReport/Report/"ProjectID" (Replace "ProjectID" with your current project ID, which is an integer that can be found in the URL of your current LCS project).
+## Running
 
-The following illustration shows an overview of the procedure for using Upgrade analyzer.
-
-![Upgrade analyzer process.](media/upgradeAnalyzerProcess.png)
-
-If you already use the System diagnostic service in your AX 2012 environment, you must configure a new instance of the service on a machine that differs from the existing machine.
-
-For information about how to configure the System diagnostic service in your AX 2012 environment, see [Install and run System diagnostics](/dynamicsax-2012/appuser-itpro/install-run-system-diagnostics).
-
-Within a few minutes after you configure the System diagnostic service, the AX 2012 environment will appear in your LCS project.
-
+1. Open SQL Management Studio and open the Upgrade Analysis Report script **UpgradeAnalysisReport.SQL** in a new query window.
+2. Change the database connection to your AX2012 business data database, e.g. MicrosoftDynamicsAX.
+   > [!NOTE]
+   > The script requires the model store database for some cross checks against object data. However, the script is not directly executed against the model store.
+3. Execute the script.
+4. Save or copy and paste the results in a spreadsheet.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
