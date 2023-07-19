@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Manage channels in the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article explains what a channel is and provides information about how to manage channels in the Invoice capture solution.
 
