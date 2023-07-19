@@ -92,6 +92,17 @@ policies before access to the record is allowed.
 
 XDS is not supported for financial dimensions and using XDS with financial dimension data will result in corruption of the data.
 
+## Bypassing XDS policy
+
+There is a new role ‘XDSDataAccessPolicyBypassRole’ to bypass XDS policy.
+If a user is assigned with the role ‘XDSDataAccessPolicyBypassRole’ then this user will bypass any supplemental extensible data security (XDS) policies and their data access will be purely role-based.
+
+For example, [Create a simple security policy](create-simple-security-policy.md).
+
+Assume an XDS policy is created with Query “XDSQCustGroup10” and is assigned to a role say ‘X’. 
+When a ‘User1’ is assigned with the role ‘X’, the ‘User1’ can see Customer group:10 in all customers page.  
+If the ‘User1’ is assigned with ‘XDSDataAccessPolicyBypassRole’ along with role ‘X’, then the filter will not be applied as the XDS policy is bypassed with the role ‘XDSDataAccessPolicyBypassRole’. ‘User1’ will then be able to see all the groups.
+
 ## Additional resources
 
 For information about how to debug policies, create more advanced policies, including
