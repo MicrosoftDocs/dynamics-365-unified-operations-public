@@ -4,7 +4,7 @@
 title: Documents pending accounting
 description: This article describes how to use the functionality on the Documents pending accounting page.
 author: ryanCCarlson2
-ms.date: 09/02/2022
+ms.date: 07/19/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
