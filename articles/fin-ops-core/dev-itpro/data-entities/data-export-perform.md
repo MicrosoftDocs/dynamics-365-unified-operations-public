@@ -1,7 +1,7 @@
 ---
 title: Data entity export performance tips
 description: This article provides tips that can help improve performance during export.
-author: gned
+author: lwheel
 ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
@@ -14,9 +14,9 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides tips that can help improve performance during export.
+When setting up a data export, you should consider the below recommendations.
 
-## Don't use computed columns that have joins
+## Avoid computed columns that have JOINS
 
 Computed columns should not have joins. Instead, add all the tables that are required for the computation as data sources.
 
@@ -35,7 +35,7 @@ To test whether a computation is causing slowness, follow these steps.
 1. Run the command, and record the time that's required to return all data.
 1. Comment out the computed column formula, run the command again, and record the time that's required to return all data. If the required time is more than one to two seconds faster without the computation, the computation is causing slowness.
 
-## Don't implement postLoad
+## Avoid implementing postLoad when possible
 
 Don't implement `postLoad`, because it forces the export to go through staging.
 
@@ -62,13 +62,13 @@ For an example of what **not** to do, consider the `BIExchangeRateView` view. At
 
 Analyze the indexes that exist on any custom tables that you join. Is there an index for the table that includes the columns that you filter by or join on? SQL Server must create a query plan for queries that use your data entity. In this query plan, SQL Server does the filters and joins from your data entity definition. Look at the joins, and compare them with the table indexes if either the join or the table is custom. If there isn't already an index on the table that includes the columns that you filter by or join on, add one to test whether SQL Server can return data more quickly. If the index doesn't improve the execution time for the view, remove it. If you find an index that helps, add it to the table metadata for your table.
 
-## Don't use data entities or views as data sources
+## Avoid using data entities or views as data sources
 
 Avoid using other data entities or views as data sources. To make an entity faster, you must limit the number of joins, the number of computations that it does, and the number of columns that it returns.
 
 Even if another data entity has some of the values that you want, it might include joins that you don't need or computation formulas that you don't use. Instead of using that other entity, add the same tables that it has to your entity, and join them in the way the other entity joins them. Leave out the data sources for any tables that your export doesn't need.
 
-## Minimize the number of columns
+## Minimize the number of columns for SELECT operation from the data entity
 
 The fewer columns are included in the `select` operation from the data entity, the faster the data can be transferred to the destination.
 
@@ -89,12 +89,13 @@ Over time, the amount of data in staging tables that are used to export entities
 
 If the row count in a staging table is over 20 million, the table's data must be reduced. From the **Data management** workspace, you can schedule a batch data cleanup job that looks for and removes staging data that's related to old imports or exports. When you schedule this job, increase the number of hours that it's allowed to run, and run it daily. The default value of two hours per day often isn't enough. Six or eight hours work better. The job stops when it runs out of data to remove.
 
-## Don't add custom or customized entities in production until you test them with your data in your sandbox
+## Do not add custom or customized entities in production until you test them with your data in your sandbox
 
 Sometimes, performance issue don't show up in development environments because of the amount of data. However, they do show up when you test with actual data in your sandbox environment. Therefore, always test the export of new entities in your sandbox. If the export process is slow, improve it before you deploy the entities to production.
 
-## Don't schedule processes that read from your destination tables for the same times that you export to those tables
+## Prevent blocking of your destination tables during export
 
+It is important that you do not schedule processes that read from your destination tables for the same times that you export to those tables.
 Export to database must make changes to the data for the destination tables. Before it runs a full export, it runs commands to remove the data for the company that it's exporting and to remove older versions of records that were exported for incremental export. These commands can be slowed down if another process is using the entity data at the same time. Therefore, try to schedule exports for times when reports aren't running against the same entity tables in your destination database.
 
 It isn't always obvious whether another process is using the same tables as your export. If you have a slow export to database, query for blocking on your destination database. In the Azure portal, check whether your database is hitting database transaction unit (DTU) limits.
