@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 This article describes how to use the functionality on the **Documents pending accounting** page.
 
-In Microsoft Dynamics 365 Finance 10.0.30, the **Enhanced performance for source document accounting framework** feature is available. This feature improves the posting processes for source document–enabled document postings, starting with the posting process for free text invoices.
+In Microsoft Dynamics 365 Finance 10.0.30, the **Enhanced performance for source document accounting framework** feature is available and starting with 10.0.36 the feature is now on by default. This feature improves the posting processes for source document–enabled document postings, starting with the posting process for free text invoices.
 
 When this feature is enabled, posting of the subledger document is done separately from the accounting generation or *journalization* process that creates the full accounting detail that is transferred to the general ledger. For example, in the free text invoice posting process, the customer invoice in the **Accounts receivable** module is recorded before the full accounting is generated. This enhanced performance feature enables customer invoices to be recorded more quickly while accounting generation is delayed.
 
