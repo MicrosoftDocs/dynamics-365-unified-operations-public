@@ -5,7 +5,7 @@ description: This article provides information about business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 05/15/2023
+ms.date: 07/15/2023
 ms.topic: welcome
 ms.prod: 
 ms.technology:
