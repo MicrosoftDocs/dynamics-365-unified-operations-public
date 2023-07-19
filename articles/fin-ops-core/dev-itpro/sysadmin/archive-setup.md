@@ -47,7 +47,7 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 
 ### <a name="app-registration"></a>Create an app registration in Azure
 
-<!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from another topic) -->
+To enable Supply Chain Management to authenticate with Dataverse, you must create an app registration in Azure Active Directory. To do so, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. From the **Home** page, go to **Azure Active Directory**.
@@ -68,7 +68,7 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 
 ### Enable long term data retention in Dataverse
 
-<!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from draft) -->
+By default, long term data retention is turned off in Dataverse. Follow these steps to turn it on.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
 1. Go to **Environments** and open the environment associated with your Supply Chain Management environment.
@@ -85,9 +85,9 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 1. Select the **Edit** button for the **Security roles** field. Then use the Add security roles dialog to add the *System administrator* and *Bulk Archival Role* security roles.
 1. Select **Create** in the **Create a new app user** dialog.
 
-### <a name="portal"></a>Make a portal in Power Apps
+### <a name="portal"></a>Enable long term data retention for the required entities in Dataverse
 
-<!-- KFM: Briefly describe what we are about to do and why. Confirm each of the following steps (copied from draft) -->
+You must enable long term data retention on each of the data entities that needs it. To do so, follow these steps:
 
 1. Sign in to the [Power Apps make portal](https://make.powerapps.com/).
 1. Select **Settings** (gear icon) to open a dialog box and then select **Advanced settings**.
@@ -99,10 +99,10 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 1. In the search field, enter "(mserp)" and press return. The search results should now show the following three tables: *Archived sales order line (mserp)*, *Archived sales order header (mserp)*, and *Archived inventory transaction (mserp)*.
 1. Select *Archived sales order line (mserp)* and then select **Properties**. The **Edit table** dialog opens. Expand **Advanced options** and mark the **Track changes** and **Enable long term retention** check boxes. Then select **Save**.
 1. Repeat the previous step for the *Archived sales order header (mserp)* table.
-1. Repeat the previous step for the *Archived inventory transaction* table.
+1. Repeat the previous step for the *Archived inventory transaction (mserp)* table.
 
-> [!NOTE]
-> We must edit the tables in the suggested order because of their parent/child relationships. You'll get an error if you try to set them up in a different order
+    > [!NOTE]
+    > Your must edit the tables in the suggested order because of their parent/child relationships. You'll get an error if you try to set them up in a different order
 
 ### <a name="scm-connect"></a> Configure Supply Chain Management to connect to and use long term data retention
 
