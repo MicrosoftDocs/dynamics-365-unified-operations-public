@@ -1,27 +1,23 @@
 ---
 title: Reset receipt numbers
-description: This article describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
+description: This article describes how to reset receipt numbers used for various actions on a desired date in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 06/20/2023
+ms.date: 07/31/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2020-01-14
-ms.dyn365.ops.version: Application update 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail, Commerce
-ms.search.form: 
 
 ---
 
 # Reset receipt numbers 
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+This article describes how to reset receipt numbers used for various actions on a desired date (for example, the fiscal year or calendar year) in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. Due to these limitations, we recommend that you do not use this feature in production while we work to fix these issues in a future release. 
