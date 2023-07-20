@@ -24,7 +24,7 @@ ms.assetid:
 
 This article explains how to use the Upgrade analysis report to plan your upgrade from Microsoft Dynamics AX 2012. The report script is run against an AX 2012 database and parses tables for application setup and data volumes. It provides feedback on deprecated features, application settings, database settings and table space savings. 
 
-Space saving observations provide clean up routines in AX 2012 to help reduce the subscription cost for finance and operations apps. SQL configuration optimizations suggestions can help speed up the upgrade processes. Additionally, the tool warns if any AX 2012 features are obsolete in the current version. You can plan ways to replace or work around those features.
+Space saving observations provide clean up routines in AX 2012 to help reduce the subscription cost for finance and operations apps. SQL configuration optimizations suggestions can help speed up the upgrade processes. Additionally, the report warns if any AX 2012 features are obsolete in the current version. You can plan ways to replace or work around those features.
 
 ## Download
 
