@@ -1832,7 +1832,7 @@ items:
         items:
         - name: Upgrade from AX 2012 to finance and operations
           href: migration-upgrade/upgrade-overview-2012.md
-        - name: AX 2012 upgrade - Plan using the Upgrade analyzer tool
+        - name: AX 2012 upgrade - Plan using the Upgrade analysis report
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012 upgrade – Estimate effort using the Code upgrade service
           href: migration-upgrade/analyze-code-upgrade.md
