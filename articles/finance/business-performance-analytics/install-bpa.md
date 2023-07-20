@@ -22,7 +22,13 @@ ms.custom:
 This article describes how to install business performance analytics. The administrator who completed the configuration steps should sign in.    
 
 >[!NOTE]
->For the public preview, Microsoft will email a link after you join the preview group.
+>These [steps(configure-bpa.md)] must be completed for installation: 
+>   1. [Configure Microsoft Power Platform Integration(configure-bpa#configure-microsoft-power-platform.md)]
+>   2. [Configure the Azure AD tenant(configure-bpa#configure-the-azure-ad-tenant.md)]
+>   3. [Enable Power Apps users(configure-bpa#power-app-users.md)]
+>   4. [Setup required configurations in D365 Finance(configure-bpa#required-configurations-in-dynamics-365-finance.md)]
+>   5. [Setup required configurations in Power Platform Admin Center(configure-bpa#required-configurations-in-power-platform-admin-center.md)]
+>   6. Request [install link(https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2V_9HFL4cRGtih_PMMDw1dUMFZHOUlUNlpVN1c4V1VJM0RNNlk2UkQ1MC4u)]
 
 ## Install the business performance analytics app
 
