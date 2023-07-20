@@ -14,7 +14,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Netherlands Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Netherlands Intrastat declaration contains information about the trade of goods for reporting.
 
 The following table lists the fields that are included on the Intrastat report. Some of the fields are available on arrivals while others are available on dispatches. If the field is available, we have indicated that it's included. If it's not available, we have indicated that it's not included. When there is a fixed field value, the value is provided in the table.
 
@@ -76,7 +76,7 @@ You also have to create VAT ID registration types for all the countries or regio
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create new link between registration type and registration category.
 3. For the registration type for the VAT ID, select the **VAT ID** registration category.
-4. Repeat steps 2 through 3 for the other countries' registration types that you created earlier.
+4. Repeat steps 2 through 3 for the other countries/regions' registration types that you created earlier.
 
 #### Set up a VAT ID of data provider for your company
 

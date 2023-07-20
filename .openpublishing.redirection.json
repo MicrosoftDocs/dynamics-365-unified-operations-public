@@ -19865,6 +19865,11 @@
       "source_path": "articles/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/subcontracting.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/manage-subcontract-work-production",
+      "redirect_document_id": "false"
     }
   ]
 }

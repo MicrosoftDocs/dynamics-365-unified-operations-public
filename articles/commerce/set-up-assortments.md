@@ -2,19 +2,16 @@
 title: Set up assortments
 description: This article describes what an assortment is and explains how to set up assortments in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 07/18/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
-ms.search.industry: Retail
 ms.search.form: RetailAssortmentDetails
+
 ---
 
 # Set up assortments
@@ -34,7 +31,7 @@ Before you can set up an assortment and assign it to a commerce channel, you mus
 | Task                              | Description |
 |-----------------------------------|-------------|
 | Set up a channel.          | Channels represent a brick-and-mortar store, an online store, or an online marketplace. You must set up at least one channel and configure the options for the store. Assortments are assigned to stores to identify the products that a particular store carries. |
-| Create an organization hierarchy. | After you set up the commerce channels for your organization, you must configure an organization hierarchy that represents the organizational structure of your channels. An organization hierarchy can be used for assortments, replenishment, and reporting. By adding your channels to an organization hierarchy, you can assign assortments to groups of stores. Instead of assigning the assortment individually to each store, you assign the assortment to the high-level organization node. Then, whenever a new channel is added to the high-level organization node, that channel automatically inherits any assortments that were assigned to the higher-level organization node. You can assign assortments only to channels that are included in an organization hierarchy that is assigned the **Commerce assortment** purpose. |
+| Create an organization hierarchy. | After you set up the commerce channels for your organization, you must configure an organization hierarchy that represents the organizational structure of your channels. An organization hierarchy can be used for assortments, replenishment, and reporting. By adding your channels to an organization hierarchy, you can assign assortments to groups of stores. Instead of assigning the assortment individually to each store, you assign the assortment to the high-level organization node. Then, whenever a new channel is added to the high-level organization node, that channel automatically inherits any assortments that were assigned to the higher-level organization node. You can assign assortments only to channels that are included in an organization hierarchy that is assigned the **Retail assortment** purpose. |
 | Define products.                  | Before you can add products to an assortment, you must add them in Commerce. You can add products manually, or you can import them from a vendor. After you add the products, you must release them to a legal entity. Only products that have been released to a legal entity can be made available to your channels. Products that haven't yet been released to a legal entity can be added to an assortment, and the assortment can be approved. However, until the products have been released to a legal entity, they can't be made available to the channels. |
 | Set up a category hierarchy.      | When you create your commerce products, you can group and categorize them by using the category hierarchy feature. You can create one core hierarchy to group and categorize all products that you distribute through your channels. You can also create separate, supplemental category hierarchies to group or categorize your products for special purposes, such as promotions or assortments. By using category hierarchies, you can assign all the products in a specific category to an assortment. Any products that are added to the category that is included in the assortment are automatically included in the assortment. Then, the next time that the commerce assortment scheduler is run, these products become available to the channels that the assortment is assigned to. |
 

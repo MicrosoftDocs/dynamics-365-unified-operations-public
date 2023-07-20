@@ -16,7 +16,7 @@ This article provides a description of the Latin America (LATAM) parameter confi
 ## Prerequisites
 
 - The Global LATAM taxes feature must be enabled.
-- The company must be in a country that supports the LATAM localization.
+- The company must be in a country/region that supports the LATAM localization.
 
 ## Set up previous LATAM configurations
 
@@ -51,9 +51,9 @@ This article provides a description of the Latin America (LATAM) parameter confi
 
     | Field                                                         | Description |
     |---------------------------------------------------------------|-------------|
-    | Enable value creation in third-party dimension                | Automatically create a third-party dimension code of the country tax ID number for the client or vendor that's assigned in a transaction. |
-    | Name                                                          | Select the dimension that's used to replicate the third-party country tax ID number. |
-    | Enable allocation of third-party dimension in customer/vendor | When the vendor or customer LATAM information is completed, the country tax ID number is assigned in the selected third-party dimension. |
+    | Enable value creation in third-party dimension                | Automatically create a third-party dimension code of the country/region tax ID number for the client or vendor that's assigned in a transaction. |
+    | Name                                                          | Select the dimension that's used to replicate the third-party country/region tax ID number. |
+    | Enable allocation of third-party dimension in customer/vendor | When the vendor or customer LATAM information is completed, the country/region tax ID number is assigned in the selected third-party dimension. |
     | Inherit dimension to journal lines                            | Replicate the third-party dimension information of the client or vendor on the voucher header on the other lines of the journal. Include values, if they're blank. |
 
 7. On the **Concepts and Notes** tab, enter information together with the labels that are required in the following master records: vendors, legal entities, bank groups, contacts, and employees.

@@ -308,8 +308,8 @@ You can create custom lookups to show data options when an enum or relationship 
 7.  Verify that the change was successful. In the browser, go to **Fleet Management** &gt; **Customers** &gt; **Customer**.
 8.  Select **Open in** **Microsoft Office** &gt; **Open in Excel** &gt; **Fleet Management Customers**.
 9.  Open the workbook that is generated.
-10. Select a **Country** value.
-11. Change the **Country** value for a customer.
+10. Select a **Country/region** value.
+11. Change the **Country/region** value for a customer.
 12. Publish the change.
 13. Change the value back, and publish that change.
 

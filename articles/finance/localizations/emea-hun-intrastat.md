@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries. The Hungarian Intrastat declaration contains information about the trade of goods for reporting.
+You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries/regions. The Hungarian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Hungarian Intrastat declaration. All the fields except **VAT number of trading partner** are included on both arrivals and dispatches. The **VAT number of trading partner** field is included only on dispatches.
 
@@ -189,7 +189,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 
 1. Go to **Organization administration** > **Global address book** > **Registration types** > **Registration categories**.
 2. On the Action Pane, select **New** to create a link between the registration type and the registration category.
-3. For the **VAT ID** registration type of the **DEU** country, select the **VAT ID** registration category.
+3. For the **VAT ID** registration type of the **DEU** country/region, select the **VAT ID** registration category.
 
 #### Set up the customer's VAT registration number
 

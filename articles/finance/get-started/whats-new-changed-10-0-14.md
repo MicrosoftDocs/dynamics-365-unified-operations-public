@@ -67,7 +67,7 @@ Dynamics 365 Finance 10.0.14 includes platform updates. To learn more, see [Plat
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=488609&dbType=3&qc=8251e8e1d5e2386de850599926c1adc3fec8e2ba25308036d22cdfe0a1c28fc7).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 2 plan
 

@@ -51,7 +51,7 @@ The table browser form is designed for developers to quickly create and edit tes
 
 ## Deployment option (on-premises)
 
-Some organizations are not ready to store their company's mission critical data in the cloud. This requirement, in many cases, is due to industry regulations, country or geographic cloud adoption, recent data center investments, or an organization's enterprise standards. For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.
+Some organizations are not ready to store their company's mission critical data in the cloud. This requirement, in many cases, is due to industry regulations, country/region or geographic cloud adoption, recent data center investments, or an organization's enterprise standards. For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.
 
 This deployment option supports running your business processes on-premises, supporting local transactions and storage of local business data, without replication of your business data to the Microsoft cloud. In these cases, the typical replication of business data in the Microsoft cloud (referenced in the cloud and edge scenario) is simply switched off.
 

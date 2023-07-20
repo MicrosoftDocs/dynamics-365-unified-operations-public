@@ -63,11 +63,11 @@ The following security privileges are available for electronic messages.
 | View electronic messages     | This privilege gives read-only access to the EM functionality. If you have this privilege, you can view the electronic messaging settings and messages. However, you can't set up or run anything. | This privilege is included in the **Inquire into sales tax transaction status** security duty. That duty, in turn, is included in the following security roles:<ul><li>Collections manager</li><li>Accounts receivable clerk</li><li>Accounts receivable manager</li><li>Tax accountant</li><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Sales manager</li><li>Accounts payable clerk</li></ul> |
 | Operate electronic messages  | This privilege gives access only to the **Electronic messages** and **Electronic message items** pages. If you have this privilege, you can run all the processing that is called from those pages. | This privilege is included in the **Operate electronic messages** security duty. That duty, in turn, is included in the **Electronic messages operator** security role. |
 
-## Country-specific regulatory features supported by the EM functionality
+## Country/region-specific regulatory features supported by the EM functionality
 
-The following table provides information about some country-specific regulatory features that are supported by the EM functionality.
+The following table provides information about some country/region-specific regulatory features that are supported by the EM functionality.
 
-| Country     | Feature name | Feature demo recording |
+| Country/region     | Feature name | Feature demo recording |
 |-------------|--------------|------------------------|
 | Spain       | [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Hungary     | [Online invoicing system](../localizations/emea-hun-online-invoicing.md) | |

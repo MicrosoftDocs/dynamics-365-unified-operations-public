@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
-author: RamaKrishnamoorthy
+author: jaredha
 ms.date: 05/20/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: ramasri
+ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -17,6 +17,16 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## July 2023 release
+
+The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
+
+| Feature | Description | Status |
+| ---|---|---|
+| Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments (CHE) using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
+| Optimization | Improvements in token generation code for Full Trust Plugins | General availability |
+| Exception handling | Added custom exceptions (DualWritePluginException and DualWriteApplicationException) to separate plugin exceptions from application exceptions | General availability |
 
 ## June 2023 release
 
