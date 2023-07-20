@@ -6,7 +6,7 @@ description: This article describes how to install business performance analytic
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 05/24/2023
+ms.date: 07/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -22,7 +22,7 @@ ms.custom:
 This article describes how to install business performance analytics. The administrator who completed the configuration steps should sign in.    
 
 >[!NOTE]
->These [steps(configure-bpa.md)] must be completed for installation: 
+>Complete the following [steps(configure-bpa.md)] for installation: 
 >   1. [Configure Microsoft Power Platform Integration(configure-bpa#configure-microsoft-power-platform.md)]
 >   2. [Configure the Azure AD tenant(configure-bpa#configure-the-azure-ad-tenant.md)]
 >   3. [Enable Power Apps users(configure-bpa#power-app-users.md)]
