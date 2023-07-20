@@ -33,6 +33,8 @@ Nevertheless, from a user perspective, the movement of data occurs as a single p
 > [!NOTE]
 > Data in the history tables can't be edited.
 
+Data stored in the history tables is still contained in your fiance and operations apps database, which can result in extra storage costs. To save on storage costs, you can move the data from the history tables to a Dataverse managed Data Lake for long term data retention. The archive solution can be integrated with your Dataverse environment and provides tools that make it easy to move data from the history tables to the Data Lake. After the data is moved to Dataverse, it's no longer available in your finance and operations apps database, but you'll still be able to review it using tools provided by Dataverse.
+
 ## The Archive workspace
 
 Use the **Archive** workspace (**System administration \> Workspaces \> Archive**) to create and work with your archives. From the **Archive** workspace, you can perform the following actions:
@@ -41,6 +43,7 @@ Use the **Archive** workspace (**System administration \> Workspaces \> Archive*
 - Monitor the progress of running jobs.
 - Review the move to history and logs.
 - Reverse the move to history (for example, if you must edit the data of a history record).
+- Move data from the history tables to a Dataverse managed Data Lake for long term data retention.
 
 ## Next steps
 
