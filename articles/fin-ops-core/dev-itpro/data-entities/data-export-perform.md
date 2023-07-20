@@ -1,7 +1,7 @@
 ---
 title: Data entity export performance tips
 description: This article provides tips that can help improve performance during export.
-author: lwheel
+author: gned
 ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-When setting up a data export, you should consider the below recommendations.
+When setting up a data export, consider the below recommendations.
 
 ## Avoid computed columns that have JOINS
 
@@ -89,13 +89,13 @@ Over time, the amount of data in staging tables that are used to export entities
 
 If the row count in a staging table is over 20 million, the table's data must be reduced. From the **Data management** workspace, you can schedule a batch data cleanup job that looks for and removes staging data that's related to old imports or exports. When you schedule this job, increase the number of hours that it's allowed to run, and run it daily. The default value of two hours per day often isn't enough. Six or eight hours work better. The job stops when it runs out of data to remove.
 
-## Do not add custom or customized entities in production until you test them with your data in your sandbox
+## Don't add custom or customized entities in production until you test them with your data in your sandbox
 
 Sometimes, performance issue don't show up in development environments because of the amount of data. However, they do show up when you test with actual data in your sandbox environment. Therefore, always test the export of new entities in your sandbox. If the export process is slow, improve it before you deploy the entities to production.
 
 ## Prevent blocking of your destination tables during export
 
-It is important that you do not schedule processes that read from your destination tables for the same times that you export to those tables.
+It's important that you don't schedule processes that read from the destination tables for the same times that you export to those tables.
 Export to database must make changes to the data for the destination tables. Before it runs a full export, it runs commands to remove the data for the company that it's exporting and to remove older versions of records that were exported for incremental export. These commands can be slowed down if another process is using the entity data at the same time. Therefore, try to schedule exports for times when reports aren't running against the same entity tables in your destination database.
 
 It isn't always obvious whether another process is using the same tables as your export. If you have a slow export to database, query for blocking on your destination database. In the Azure portal, check whether your database is hitting database transaction unit (DTU) limits.
