@@ -4,7 +4,7 @@
 title: Enter the GTIN code for a product
 description: GTIN codes are assigned by the GS1 organization. 
 author: t-benebo
-ms.date: 08/29/2018
+ms.date: 07/20/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -27,20 +27,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-GTIN codes are assigned by the GS1 organization. In this example, you will enter a code for product number M0001 in demo data company USMF.
+A Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product. GTIN codes are assigned by the GS1 organization.
+
+To assign GTIN codes to a product, follow these steps.
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Expand the **Product image** FactBox.
-1. In the list, find and select the desired record.
-1. On the Action Pane, select **Manage inventory**.
-1. Select **GTIN codes**.
-1. Select **New**.
-1. In the list, mark the selected row.
-1. In the **Unit** field, enter or select a value.
-1. In the **GTIN code** field, select an option.
-1. In the **GTIN field**, type a value.
-1. Close the page.
-
-
+1. Select a product in the grid.
+1. On the Action Pane, open the **Manage inventory** tab and select **GTIN codes**.
+1. Use the Action Pane buttons to add or remove rows as needed.
+1. Make the following settings for a new or selected row:
+    - **Unit** – Select a unit of measure.
+    - **GTIN code** – Select the GTIN standard you're using.
+    - **GTIN** – Enter the GTIN code for the product.
+    - *Other dimensions* – Enter values in the other dimension columns as needed. To control which dimensions are shown, select **Display dimensions** on the Action Pane.
+1. On the Action Pane, select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
