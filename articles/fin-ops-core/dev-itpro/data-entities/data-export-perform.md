@@ -1,7 +1,7 @@
 ---
 title: Data entity export performance tips
 description: This article provides tips that can help improve performance during export.
-author: gned
+author: pnghub
 ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
