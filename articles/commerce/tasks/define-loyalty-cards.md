@@ -4,7 +4,7 @@
 title: Define loyalty cards
 description: This article describes how to define loyalty cards in Microsoft Dynamics 365 Commerce.
 author: chuzho
-ms.date: 06/29/2023
+ms.date: 07/31/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
