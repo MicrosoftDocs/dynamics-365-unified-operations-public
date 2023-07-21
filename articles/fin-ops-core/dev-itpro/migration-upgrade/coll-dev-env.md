@@ -21,11 +21,11 @@ ms.search.form: 2022-04-08
 
 **SQL_Latin1_General_CP1_CI_AS** is the only supported database collation in Dynamics 365 finance and operations. For self-service environments, the **Data migration toolkit** handles this collation conversion as part of the SQL replication process. However, for development environments (Tier 1 Cloud Hosted Environments), the database collation must be changed prior to running the data upgrade. This article details the steps you must complete to change the collation.
 
-For details on SQL database collations, see: [Collation and Unicode support](../../sql/relational-databases/collations/collation-and-unicode-support.md?view=sql-server-ver16)
+For details on SQL database collations, see: [Collation and Unicode support](/sql/relational-databases/collations/collation-and-unicode-support)
 
 ## Database collation change procedure
-Database collation can only be changed by reconstructing the entire database. The [SQLPackage tool](../../sql/tools/sqlpackage/sqlpackage.md?view=sql-server-ver16) is used for this process.
-1. Download and install **SQLPackage**, see: [Download and install SqlPackage](../../sql/tools/sqlpackage/sqlpackage-download.md?view=sql-server-ver16)
+Database collation can only be changed by reconstructing the entire database. The [SQLPackage tool](/sql/tools/sqlpackage/sqlpackage) is used for this process.
+1. Download and install **SQLPackage**, see: [Download and install SqlPackage](/sql/tools/sqlpackage/sqlpackage-download)
 2. Export the AX 2012 database you're upgrading to a **\*.bacpac** file. Open an **Command Prompt** as **Admin**, and run the following (edit source server name, source database name and target file as needed).
    ```
    SqlPackage.exe /Action:Export /SourceServerName:localhost /SourceDatabaseName:MicrosoftDynamicsAX /TargetFile:"C:\Temp\MicrosoftDynamicsAX.bacpac" /Properties:CommandTimeout=1200 /Properties:VerifyFullTextDocumentTypesSupported=False
