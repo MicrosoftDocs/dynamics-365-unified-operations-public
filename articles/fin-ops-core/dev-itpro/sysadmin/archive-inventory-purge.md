@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!--KFM: Preview until further notice -->
 
-The *[Inventory transaction archive](../../../supply-chain/inventory/archive-inventory-transactions.md)* feature consolidates and compresses the inventory transactions table (`InventTrans`) and archives the original records into a related history table (`InventTransArchive`). By moving old data that you probably don't have to access very often to the history table (`InventTransArchive`), this feature helps improve the performance of the main table (`InventTrans`).
+The [Inventory transaction archive](../../../supply-chain/inventory/archive-inventory-transactions.md) feature consolidates and compresses the inventory transactions table (`InventTrans`) and archives the original records into a related history table (`InventTransArchive`). By moving old data that you probably don't have to access very often to the history table (`InventTransArchive`), this feature helps improve the performance of the main table (`InventTrans`).
 
 After your old inventory transactions are moved to the history table, you can help lower your data storage costs and further improve system performance by moving the data to a Microsoft Dataverse–managed data lake for long-term data retention. After the move, the records remain available for historical reporting, auditing, machine learning, legal claims, and other purposes.
 
@@ -33,7 +33,7 @@ Before you can use this feature, your system must meet the following requirement
 
 - You must be running Supply Chain Management 10.0.34 or later.
 - The data archive microservice must be installed on your system from Microsoft Dynamics Lifecycle Services. For more information, see [Install the Archive add-in from Lifecycle Services](archive-setup.md#install-addin).
-- You must have already [moved the relevant inventory transactions](archive-inventory-transactions) to the history table.
+- You must have already [moved the relevant inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md) to the history table.
 - The following features must be turned on in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). For more information, see [Enable the features that you need](archive-setup.md#enable-features).
 
     - *(Preview) Archive*
@@ -57,7 +57,7 @@ Consider the following issues before you move inventory transactions to long-ter
 
 ## Move inventory transactions to the history table before you move them to long-term data retention
 
-You must move your inventory transactions to the history table before you can move them to long-term data retention. For more information, see [Archive inventory transactions](articles/supply-chain/inventory/archive-inventory-transactions.md).
+You must move your inventory transactions to the history table before you can move them to long-term data retention. For more information, see [Archive inventory transactions](../../../supply-chain/inventory/archive-inventory-transactions.md).
 
 ## Schedule the move of inventory transactions to long-term data retention
 
