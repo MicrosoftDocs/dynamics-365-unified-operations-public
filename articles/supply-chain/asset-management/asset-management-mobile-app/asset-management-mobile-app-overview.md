@@ -27,7 +27,7 @@ To use the app, you must have a fully implemented setup of Asset Management in y
 
 The following video shows how the Asset Management mobile app supports various business roles in common asset management scenarios.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/{ID}]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjF]
 
 The following illustration shows an example of a list of jobs for a work order in the Asset Management mobile app.
 
