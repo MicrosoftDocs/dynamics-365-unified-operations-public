@@ -25,6 +25,10 @@ The Asset Management mobile app provides the following capabilities for workers 
 
 To use the app, you must have a fully implemented setup of Asset Management in your Supply Chain Management environment.
 
+The following video shows how the Asset Management mobile app supports various business roles in common asset management scenarios.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjF]
+
 The following illustration shows an example of a list of jobs for a work order in the Asset Management mobile app.
 
 [<img src="media/mobile-app-in-phone.png" alt="Job list for a work order in the Asset Management mobile app." title="Job list for a work order in the Asset Management mobile app" width="250" />](media/mobile-app-in-phone.png#lightbox)
