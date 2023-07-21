@@ -4,7 +4,7 @@
 title: Invoice capture received files
 description: This article explains how to collect invoice files from different sources in Invoice capture.
 author: sunfzam
-ms.date: 04/04/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Invoice capture received files
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 

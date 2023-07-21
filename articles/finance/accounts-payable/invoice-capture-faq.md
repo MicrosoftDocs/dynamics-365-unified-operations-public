@@ -4,7 +4,7 @@
 title: Invoice capture FAQ
 description: This article answers frequently asked questions about the Invoice capture solution.
 author: sunfzam
-ms.date: 04/11/2023
+ms.date: 07/11/2023
 ms.topic: faq
 ms.prod: 
 ms.technology: 
@@ -29,9 +29,7 @@ ms.dyn365.ops.version:
 
 # Invoice capture FAQ
 
-
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital invoice images.
 
