@@ -1,5 +1,5 @@
 ---
-title: Move inventory transactions from history to long term data retention
+title: Move inventory transactions history to long term data retention
 description: This article describes how to move old inventory transactions from the inventory transaction history table to a Dataverse managed Data Lake for long term data retention. This helps lower storage costs and improve database performance while keeping the records available for historical reporting, auditing, machine learning, legal claims, and other purposes.
 author: Banluo
 ms.author: banluo
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Move inventory transactions from history to long term data retention
+# Move inventory transactions history to long term data retention
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
