@@ -22,7 +22,7 @@ This article answers frequently asked questions about business performance analy
 
 ### How do I sign up for the public preview of business performance analytics?
 
-We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback. Please follow the process described here to sign up for Public preview [Install-bpa](https://learn.microsoft.com/en-us/dynamics365/finance/business-performance-analytics/install-bpa#install-the-business-performance-analytics-app).
+We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback. To sign up for the public preview, follow these [steps](install-bpa.md#install-the-business-performance-analytics-app).
 
 ### What's the estimated time that's required to set up business performance analytics?
 
