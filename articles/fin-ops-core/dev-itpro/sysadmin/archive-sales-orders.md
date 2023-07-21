@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, SalesOrderArchiveProcessAutomationCriteriaForm, SalesOrderArchiveForm
 ms.topic: how-to
-ms.date: 06/13/2023
+ms.date: 07/21/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -80,6 +80,8 @@ The **Archive** workspace shows your full archiving history. Each row in the gri
 
 ## Move sales order history to long term data retention
 
+After moving your old sales order records to the history table, you can lower your data storage costs and further improve system performance by moving the data to a Dataverse managed Data Lake for long term data retention. The action of moving data from a history table to long term data retention is also called *purging* (because the data is purged from Supply Chain Management). Purging is a permanent action that can't be reversed.
+
 To schedule the moving of sales orders from the history table in your fiance and operations apps database to the Dataverse managed Data Lake for long term data retention, follow these steps.
 
 1. Go to **System administration \> Workspaces \> Archive**.
@@ -93,4 +95,4 @@ To schedule the moving of sales orders from the history table in your fiance and
 
 ## View sales orders in the Dataverse managed Data Lake
 
-To view sales orders in the Dataverse managed Data Lake, you must use tools provided by Dataverse. Your system administrator or IT department may have created a Dataverse application that will help you browse the old orders, so you should start by asking them for help. For more information about how to create a Dataverse application, see [Set up the archive solution](archive-setup.md).
+To view sales orders in the Dataverse managed Data Lake, you must use tools provided by Dataverse. Your system administrator or IT department may have created a Dataverse application that will help you browse the old orders, so you should start by asking them for help. For more information about how to create a Dataverse application for this purpose, see [Set up the archive solution](archive-setup.md).
