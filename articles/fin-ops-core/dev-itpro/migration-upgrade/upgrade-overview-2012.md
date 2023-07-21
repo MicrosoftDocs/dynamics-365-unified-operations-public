@@ -65,14 +65,19 @@ To sign up for a preview subscription, see [Sign up for preview subscriptions](.
 ### Append the upgrade methodology
 In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is specifically for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
-### Run the upgrade analyzer
-The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
+### Run the upgrade analysis report
+The upgrade analysis report is run against your AX 2012 database and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
 
 - **Data cleanup** – This process helps you identify data that you can remove without causing loss of functionality. The tool identifies various types of data that you can reduce by running a cleanup process. For each type of data, an explanation is given about the impact of the cleanup. You then decide whether to run the cleanup process. Part of the cost of your subscription is based on database size. Therefore, by reducing the size, you reduce that component of the subscription cost and also help reduce the time that is required for the upgrade go-live process. A smaller database helps guarantee a faster upgrade.
-- **SQL configuration** – This process reviews the SQL configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
+- **Database Settings** – The rules in this section of the report review the datbase configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
+- **Application Settings** – Rules identify settings in your application that need adjusting, fixing or reconfiguration in order to upgrade.
 - **Deprecated features** – This process identifies features that you're currently using, but that aren't available in finance and operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
 
-Additionally, as part of this step, you must install a pre-upgrade checklist in your AX 2012 environment. You can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to finance and operations. 
+The output of the upgrade analysis report becomes the workstream in the upgrade project plan for your AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analysis report](upgrade-analyzer-tool.md).
+
+### Pre-Upgrade Checklist
+
+As part the upgrade, you must install a pre-upgrade checklist in your AX 2012 environment in order for the data upgrade to run. You can use this checklist to enter data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to finance and operations. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
    
@@ -81,7 +86,7 @@ Additionally, as part of this step, you must install a pre-upgrade checklist in 
    
 - If upgrading from AX 2012 R2, install [KB 4048614](https://go.microsoft.com/fwlink/?linkid=869025).
 
-The output of the upgrade analyzer tool becomes the workstream in the upgrade project plan for your AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](upgrade-analyzer-tool.md).
+
 
 ### Run the Code upgrade estimation tools
 This step takes your code from AX 2012, converts it to the new format, and provides feedback about conflicts that a developer must resolve later. This step forms the basis for the estimate of the cost of your code upgrade.
