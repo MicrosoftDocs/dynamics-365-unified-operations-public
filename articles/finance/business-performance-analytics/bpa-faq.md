@@ -22,7 +22,7 @@ This article answers frequently asked questions about business performance analy
 
 ### How do I sign up for the public preview of business performance analytics?
 
-We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. 
+We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback. To sign up for public preview, follow the steps listed [here](install-bpa.md#install-the-business-performance-analytics-app).
 
 ### What's the estimated time that's required to set up business performance analytics?
 
