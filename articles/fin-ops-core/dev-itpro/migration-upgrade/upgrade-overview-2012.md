@@ -36,7 +36,7 @@ Finance and operations apps provide an upgrade path that customers who currently
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
 
 > [!IMPORTANT]
-> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren’t sure whether your system can be upgraded, run the Upgrade analyzer tool. 
+> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren't sure whether your system can be upgraded, run the Upgrade analyzer tool. 
 
 > Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
 
@@ -66,18 +66,18 @@ To sign up for a preview subscription, see [Sign up for preview subscriptions](.
 In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is specifically for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
 ### Run the upgrade analysis report
-The upgrade analysis report is run against your AX 2012 database and identifies tasks to do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
+The upgrade analysis report is run against your AX 2012 database and identifies tasks to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
 
 - **Data cleanup** – This process helps you identify data that you can remove without causing loss of functionality. The tool identifies various types of data that you can reduce by running a cleanup process. For each type of data, an explanation is given about the impact of the cleanup. You then decide whether to run the cleanup process. Part of the cost of your subscription is based on database size. Therefore, by reducing the size, you reduce that component of the subscription cost and also help reduce the time that is required for the upgrade go-live process. A smaller database helps guarantee a faster upgrade.
-- **Database settings** – This section of the report reviews the datbase configuration and recommends optimizations. By making sure that SQL performs optimally, this helps reduce the time required for the upgrade go-live process.
-- **Application settings** – This section identifies settings that need adjusting, fixing or reconfiguration to upgrade.
+- **Database settings** – This section of the report reviews the database configuration and recommends optimizations. By making sure that SQL performs optimally, this section helps reduce the time that's required for the upgrade go-live process.
+- **Application settings** – This section identifies settings that must be adjusted, fixed, or reconfigured to upgrade.
 - **Deprecated features** – This process identifies features that you're currently using, but that aren't available in finance and operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
 
 The output of the upgrade analysis report becomes the upgrade project plan for the AX 2012 system administrators. For more information, see [Upgrade from AX 2012 - Plan by using the Upgrade analysis report](upgrade-analyzer-tool.md).
 
 ### Pre-upgrade checklist
 
-As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, a pre-upgrade checklist task is to provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user. Each user will need sign into Dynamics 365 finance and operations. 
+As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, one pre-upgrade checklist task is to provide the Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user. Each user will have to sign in to Dynamics 365 finance and operations apps. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
    
@@ -96,7 +96,7 @@ The output of this step represents the workstream in the upgrade project plan fo
 For more information, see [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](analyze-code-upgrade.md).
 
 ### Deploy a demo environment
-Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in finance and operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you’re still using a public preview project and haven't yet purchased a subscription.
+Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in finance and operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you're still using a public preview project and haven't yet purchased a subscription.
 
 > [!IMPORTANT]
 > It is recommended that before you run the upgrade, that you apply the latest **Quality update** for the Dynamics 365 version you are using.
@@ -138,7 +138,7 @@ Complete the tasks that were planned during the code upgrade estimation step of 
 From this point onward, code changes in AX 2012 should be frozen. Only emergency code changes should be allowed in AX 2012. If a change is made, it must be ported manually to the new code base.
 
 ### Develop new code
-Complete the tasks from the fit gap analysis that was performed during the “Deploy a demo environment” step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
+Complete the tasks from the fit gap analysis that was performed during the "Deploy a demo environment" step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
 
 ### Data compression
 For larger databases, we recommend compressing the largest tables. Tables in Dynamics 365 Finance are typically compressed with PAGE or ROW compression. Compressing beforehand can help with the upgrade process and reduces the need for the table to be compressed as part of an automated backend process once upgraded. For more information, see [Compress tables in Microsoft Dynamics AX 2012 environments](compress-tables-ax-2012.md).
@@ -171,7 +171,7 @@ For details, see [Upgrade from AX 2012 - Data upgrade in development environment
 > If you are using Commerce functionality and in-store components as part of the AX 2012 R3 upgrade, we recommend that you review the Dynamics 365 Commerce [Phased rollout (N-1) installation, configuration, and cutover guide](../../../commerce/dev-itpro/n-1-installation-configuration.md). For development environments, the user will need to initialize retail parameters, reinitialize the CDX schedule, and then after applying the data upgrade package, the latest quality updates and channel extensions will need to be applied to the environment. 
 
 ### Data upgrade (sandbox environments)
-When data upgrade in a development environment completes, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+When data upgrade in a development environment is completed, you must perform data upgrade in a sandbox environment. For more information about sandbox deployment, see [Self-service deployment overview](../deployment/infrastructure-stack.md). The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
 
 > [!IMPORTANT]
 > Ensure that you have completed a successful upgrade in the development environment with the same application version and customizations, before you attempt to run the upgrade in sandbox. 
@@ -213,7 +213,7 @@ Depending on code quality, issue remediation and retesting might require several
 For details, see [Upgrade from AX 2012 - Functional test passes](upgrade-functional-validation.md).
 
 ### Pre go-live checklist
-The pre go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (under \<module\>\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
+The pre go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (under \<module\>\\Setup). This restriction on configuration changes is merely procedural. The Microsoft Dynamics AX system administrators just agree to put changes of this type on hold at this point.
 
 We recommend that you also freeze code changes in the finance and operations code base. No further changes should be allowed unless they have been evaluated and have been shown not to block go-live.  
 
