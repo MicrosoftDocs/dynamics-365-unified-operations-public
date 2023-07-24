@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
+<!-- KFM: Add deprecation notice and link to new bundle feature? What about related topics that include "rev-rec" in the name and/link to these topics? -->
+
 This article describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. The parent item is entered on a sales order, so that order entry is more efficient. However, it's then exploded into the component items. Internal documents, such as the packing slip, will list the component items. However, external documents will show only the parent item.
 
 > [!NOTE]

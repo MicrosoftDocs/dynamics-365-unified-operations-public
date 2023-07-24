@@ -3013,6 +3013,14 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Product bundles
+        items:
+        - name: Product bundles overview
+          href: sales-marketing/product-bundles-overview.md
+        - name: Enable and set up product bundles
+          href: sales-marketing/product-bundles-setup.md
+        - name: Sell product bundles
+          href: sales-marketing/product-bundles-use.md
       - name: Intercompany trade
         items:
         - name: Set up intercompany trade
