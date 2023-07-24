@@ -46,9 +46,12 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
     ![Example of the Employee sign-in button on the Sign-in page for a business partner user.](media/obo-sign-in-experience.png)
 
 1. On the next page, select the business buyer organization that you want to work on behalf of.
-1. Select the buyer that you want to work on behalf of.
 
     ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners.png)
+
+1. On the next page, select the buyer that you want to work on behalf of.
+    
+    ![Example of the Select a Business Partner User page.](media/obo-select-business-partner-user.png).
 
 After this procedure is completed, you (as the account manager) now represent the buyer that you selected, and have full access to their account information, pricing, catalog information, and discounts. You can add items to the cart and create an order. Completed orders are easily distinguished from regular orders, because they're prefixed with the account manager's name.
 
