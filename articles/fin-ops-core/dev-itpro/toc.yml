@@ -295,6 +295,8 @@ items:
           href: sysadmin/archive-general-ledger.md
         - name: Archive sales orders
           href: sysadmin/archive-sales-orders.md
+        - name: Move inventory transactions history to long-term data retention
+          href: sysadmin/archive-inventory-purge.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
