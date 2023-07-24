@@ -101,7 +101,20 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 3 | July 11 to July 14, 2023 | July 22 to July 23, 2023 |
 | Station 4 | July 17 to July 20, 2023 | July 29 to July 30, 2023 |
 | Station 5 | July 24 to July 27, 2023 | August 5 to August 6, 2023 |
-| Station 6 | June 25 to June 28, 2023 | August 5 to August 6, 2023 |
+| Station 6 | July 25 to July 28, 2023 | August 5 to August 6, 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-1 train schedule
+
+**App version: 10.0.1591.100**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | July 31 to August 3, 2023 | NA |
+| Station 2 | August 7 to August 10, 2023 | August 19 to August 20, 2023 |
+| Station 3 | August 8 to August 11, 2023 | August 19 to August 20, 2023 |
+| Station 4 | August 14 to August 17, 2023 | August 26 to August 27, 2023 |
+| Station 5 | August 21 to August 24, 2023 | September 2 to September 3, 2023 |
+| Station 6 | August 22 to August 25, 2023 | September 2 to September 3, 2023 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
