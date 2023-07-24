@@ -28,7 +28,9 @@ The following illustrations show how printing through the DRA compares to printi
 
 For more information about the document routing framework, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md).
 
-For an example that shows how to set up this feature for a specific third-party label printing service (in this case, Loftware NiceLabel), see [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md).
+For an example that shows how to set up this feature for Loftware NiceLabel third-party label printing service, see [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md).
+
+For an example that shows how to set up this feature for Seagull Scientific BarTender third-party label printing service, see [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md).
 
 ## Prerequisites
 
@@ -237,4 +239,4 @@ Follow these steps to review the request log that's generated while labels are p
 - [Label Layouts](print-license-plate-labels-using-label-layouts.md)
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 - [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md)
-- [Print labels using the BarTender label service solution](label-printing-using-bartender.md)
+- [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md)
