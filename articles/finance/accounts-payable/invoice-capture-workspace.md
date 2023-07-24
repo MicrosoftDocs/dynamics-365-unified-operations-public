@@ -62,6 +62,31 @@ Users can update the legal entity, vendor account, and invoice type by selecting
 - The invoice header card shows the header fields that are set as visible through configuration groups. The fields that are shown depend on the selected invoice type.
 - The invoice lines card shows the grid for invoice lines. The line fields are customized through configuration groups. This card is hidden if the invoice type is **Header-only**. A maximum of five invoice lines are shown per page. Users can navigate through the pages by using the left and right arrow buttons in the lower-right corner of the interface.
 
+## Captured invoice status
+- **In Processing** (No action is required)
+
+  Invoice has been successfully captured and is currently applying pre-processing and validation. 
+
+- **Captured** (Action: Classify invoice, Start review, Void)
+
+  Exceptions occurs during pre-processing and validation step. Invoice needs to be corrected by manual intervention.
+
+- **In Review** (Action: Classify invoice, Complete review, Void)
+
+  The invoice is being reviewed and corrected by AP clerk in side-by-side viewer.
+
+- **Verified** (Action: Transfer, Classify invoice, Start review, Void)
+
+  The invoice has been reviewed but not yet transferred. 
+
+- **Transferred** (Action: Open invoice in Dynamics 365 Finance)
+
+  The invoice has been successfully transferred to Dynamics 365 Finance. 
+
+- **Voided** (Action: Obsolete)
+
+  This status indicates that the invoice is no longer needed and can be considered obsolete. By clciking the Obsolete button, both captured invoice and recived file will be permanently deleted from Dataverse.
+
 ## Navigate to the side-by-side viewer
 
 In Dynamics 365 Finance, you can open the side-by-side viewer from two places:
