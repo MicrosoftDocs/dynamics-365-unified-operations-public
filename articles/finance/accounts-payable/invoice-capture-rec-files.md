@@ -37,7 +37,7 @@ In most cases, the **Received files** process is automatic and doesn't require m
 
 The **Manage file** filter can be used to apply different filter settings on the received invoice files. Invoice files that violate the filter rules won't be processed. On the **Received files** page, users can decide whether invoices can be included again when they're valid.
 
-## Views in receoved files
+## Views in received files
 
 The **Received file (pending)** page shows incoming files that violate filter rules.
 
@@ -51,26 +51,12 @@ The **Received file (captured)** page shows all files that have been successfull
 - Select an invoice, and then select **View captured invoice** to view invoices in a side-by-side viewer, where users can review the invoice status and make corrections.
 - Select **Download** to download the original invoice file.
 
-## Status in received files
-- **Waiting** (No action is required)
-
-  Invoice has been captured by the Power Automate Flow and waiting for the file validation.
-
-- **Processing** (Action: Retry)
-
-  Invoice is passing through the file validation by applying the file filter rules or in the progress of recognition after passing the filter validation.
-
-- **Cancelled** (Action: Retry or Void)
-
-  Exception happens during file validation or calling recognitive service is failed.
-
-- **Captured** (Action: View captured invoice )
-
-  The form recognizer result is successfully persisted in captured invoice staging.
-  
-- **Voided** (Action: Obsolete)
-
-  When invoice is not needed anymore, it can be set voided by clicking “Voided” button. The invoice in “Voided” status can be deleted permanently from the Dataverse by clicking “Obsoleted” button.
+## Received files status's 
+- **Waiting** (No action is required) - The invoice has been captured by Power Automate flow and is waiting for the file validation.
+- **Processing** (Action: Retry) - The invoice is being validated by applying the file filter rules or in the progress of recognition after passing the filter validation.
+- **Cancelled** (Action: Retry or Void) - An exception during file validation or calling recognitive service failed.
+- **Captured** (Action: View captured invoice ) - The form recognizer result has been moved to captured invoice staging.  
+- **Voided** (Action: Obsolete) - When the invoice isn't needed, click **Voided**. The invoice with a **Voided** status can be deleted permanently from the Dataverse by clicking **Obsoleted**.
 
 ## Upload invoice files
 
