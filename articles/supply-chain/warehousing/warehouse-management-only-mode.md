@@ -135,6 +135,7 @@ Non-exhaustive list:
 | WHSShipmentOrderMessageChangedStatusBusinessEvent | Status update for shipment order message |
 | WHSShipmentPackingSlipJournalModifiedBusinessEvent| Shipment packing slips updated           |
 | WHSShipmentReceivingJournalModifiedBusinessEvent  | Shipment receipts updated                |
+| SysMessageProcessorMessageProcessedBusinessEvent  | Message processor message fail           |
 | WhsWaveExecutedBusinessEvent                      | Wave executed                            |
 
 As a minimum it is recommended to use the following  [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md):
