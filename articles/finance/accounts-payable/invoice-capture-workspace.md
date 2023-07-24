@@ -62,13 +62,16 @@ Users can update the legal entity, vendor account, and invoice type by selecting
 - The invoice header card shows the header fields that are set as visible through configuration groups. The fields that are shown depend on the selected invoice type.
 - The invoice lines card shows the grid for invoice lines. The line fields are customized through configuration groups. This card is hidden if the invoice type is **Header-only**. A maximum of five invoice lines are shown per page. Users can navigate through the pages by using the left and right arrow buttons in the lower-right corner of the interface.
 
-## Captured invoice status
-- **In Processing** (No action is required) - The invoice has been successfully captured and is currently in pre-processing and validation. 
-- **Captured** (Action: **Classify invoice**, **Start review**, or **Void**) - Exceptions occurs during the pre-processing and validation steps. The invoice needs manual intervention to be corrected.
-- **In Review** (Action: **Classify invoice**, **Complete review**, or **Void**) - The invoice is being reviewed and corrected in the side-by-side viewer.
-- **Verified** (Action: **Transfer**, **Classify invoice**, **Start review**, or **Void**) - The invoice has been reviewed but not transferred.
-- **Transferred** (Action: Open invoice in Dynamics 365 Finance) - The invoice was successfully transferred to Dynamics 365 Finance. 
-- **Voided** (Action: **Obsolete**) - The invoice is no longer needed and is obsolete. Click **Obsolete**, both captured invoices and received files will be permanently deleted from Dataverse.
+## Captured invoice statuses
+
+| Status | Description | Action |
+|---|---|---|
+| In Processing | The invoice has been successfully captured and is currently in pre-processing and validation. | No action is required. |
+| Captured | Exceptions occurred during the pre-processing and validation steps. Manual intervention is required to correct the invoice. | Select **Classify invoice**, **Start review**, or **Void**. |
+| In Review | The invoice is being reviewed and corrected in the side-by-side viewer. | Select **Classify invoice**, **Complete review**, or **Void**. |
+| Verified | The invoice has been reviewed but not transferred. | Select **Transfer**, **Classify invoice**, **Start review**, or **Void**. |
+| Transferred | The invoice was successfully transferred to Dynamics 365 Finance. | Open the invoice in Dynamics 365 Finance. |
+| Voided | The invoice is no longer needed and is obsolete. | <p>Select **Obsolete**.</p><p>When you select **Obsolete**, both captured invoices and received files are permanently deleted from Dataverse.</p> |
 
 ## Navigate to the side-by-side viewer
 
