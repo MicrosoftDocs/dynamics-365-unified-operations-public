@@ -37,104 +37,117 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 - *(Preview) Ledger archive automation* – This feature moves general ledger records to the relevant history tables. After the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md).
 - *(Preview) Archive sales orders to history tables* – This feature is required for archiving of sales orders. It provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Archive sales orders to history tables using archive service* – This feature is required for archiving of sales orders. It moves sales orders from day-to-day transaction tables to history tables. After the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
-- *(Preview) Archive data to Dataverse managed data lake and purge* – Provides the archival framework to perform rules-based archiving of historical data. The archived records are removed from your day-to-day working environment and stored in your Dataverse managed data lake, thereby improving system performance and lowering operating costs while keeping your historical records available as read-only data for when you need them.
-- *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – Performs the last step in the archival process for sales orders, which is archiving from history tables to Dataverse managed data lake. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
-- *(Preview) Purge archived inventory transactions* – Performs the last step in the archival process for inventory transactions, which is archiving from history tables to Dataverse managed data lake. You must ensure the schema of `InventTransArchive` and `InventTransArchiveEntity` is identical, or some data may be lost during synchronization to Dataverse. For more information about how to use this feature, see [Archive sales orders](archive-inventory-purge.md).
+- *(Preview) Archive data to Dataverse managed data lake and purge* – This feature provides the archival framework to do rules-based archiving of historical data. The archived records are removed from your day-to-day working environment and stored in your Dataverse-managed data lake. In this way, the feature helps improve system performance and lower operating costs while it also keeps your historical records so that they're available (as read-only data) when you need them.
+- *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – This feature completes the last step in the archival process for sales orders: archiving data from history tables to your Dataverse-managed data lake. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
+- *(Preview) Purge archived inventory transactions* – This feature completes the last step in the archival process for inventory transactions: archiving data from history tables to your Dataverse-managed data lake. You must ensure that the schema of `InventTransArchive` and the schema of `InventTransArchiveEntity` are identical. Otherwise, some data might be lost during synchronization to Dataverse. For more information about how to use this feature, see [Archive sales orders](archive-inventory-purge.md).
 
-## Set up long term data retention
+## Set up long-term data retention
 
-After moving your old records to the history table, you can lower your data storage costs and further improve system performance by moving the data to a Dataverse managed Data Lake for long term data retention. The action of moving data from a history table to long term data retention is also called *purging* (because the data is purged from Supply Chain Management). Purging is a permanent action that can't be reversed. If you'd like to make use of long term data retention, then you must complete each of the procedures provided in the following subsections.
+After you move your old records to the history table, you can help lower your data storage costs and further improve system performance by moving the data to a Dataverse-managed data lake for long-term data retention. The action of moving data from a history table to long-term data retention is also known as *purging*, because the data is purged from Dynamics 365 Supply Chain Management. Purging is a permanent action that can't be reversed. To use long-term data retention, you must complete the procedure in each of the following subsections.
 
 ### <a name="app-registration"></a>Create an app registration in Azure
 
-To enable Supply Chain Management to authenticate with Dataverse, you must create an app registration in Azure Active Directory. To do so, follow these steps:
+To enable Supply Chain Management to authenticate with Dataverse, you must create an app registration in Azure Active Directory (Azure AD).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. From the **Home** page, go to **Azure Active Directory**.
 1. On the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:
+
     - **Name** – Enter a name.
     - **Supported account types** – Select *Accounts in this organizational directory only (Microsoft only - Single tenant)*.
+
 1. Select **Register**.
 1. On the navigation pane, select **Certificates & Secrets**.
-1. The **Certificates & secrets** page opens. Open the **Client secrets** tab and select **New client secret**.
-1. In the **Add a client secret** dialog box, make the following settings:
-    - **Description** – Enter a short description for your new client secret (for example, *Supply Chain Management archive solution*).
+1. On the **Certificates & secrets** page, on the **Client secrets** tab, select **New client secret**.
+1. In the **Add a client secret** dialog box, set the following fields:
+
+    - **Description** – Enter a short description of your new client secret (for example, *Supply Chain Management archive solution*).
     - **Expires** – Select an expiration date that meets your needs.
+
 1. Select **Add**.
-1. The **Certificates & secrets** tab now shows details about the new client secret. These details will be shown only once and will be hidden when the is page reloaded. Therefore, you must copy them now. Copy the **Value** value, and paste it into a text file. You'll need this value later when you [configure Supply Chain Management to connect to and use long term data retention](#scm-connect).
-1. On the navigation pane, select **Overview**. Copy the values shown for **Display name** and **Application (client) ID** and paste them into a text file. You'll need these values later when you [configure Supply Chain Management to connect to and use long term data retention](#scm-connect).
+1. The **Certificates & secrets** tab now shows details about the new client secret. These details will be shown only once and will be hidden when the page is reloaded. Therefore, you must copy them now. Copy the **Value** value, and paste it into a text file. You'll need this value later when you [configure Supply Chain Management to connect to and use long-term data retention](#scm-connect).
+1. On the navigation pane, select **Overview**. Copy the **Display name** and **Application (client) ID** values, and paste them into a text file. You'll need these values later when you [configure Supply Chain Management to connect to and use long-term data retention](#scm-connect).
 
-### Enable long term data retention in Dataverse
+### Enable long-term data retention in Dataverse
 
-By default, long term data retention is turned off in Dataverse. Follow these steps to turn it on.
+By default, long-term data retention is turned off in Dataverse. Follow these steps to turn it on.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. On the navigation pane, select **Environments**. Then open the environment associated with your Supply Chain Management environment.
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. On the navigation pane, select **Environments**. Then open the environment that's associated with your Supply Chain Management environment.
 1. Select **Settings**.
-1. Expand **Products** and then select **Features**.
-1. Enable the feature called **Long term data retention in Dataverse (Preview)**.
+1. Expand **Products**, and then select **Features**.
+1. Enable the feature that's named *Long term data retention in Dataverse (Preview)*.
 1. Select **Save**.
 1. Go back to the **Settings** page.
-1. Expand **Users + permissions** and then select **Application users**.
+1. Expand **Users \+ permissions**, and then select **Application users**.
 1. Select **New app user**.
-1. The **Create a new app user** dialog opens. Select **Add an app**.
-1. The **Add an app from Azure Active Directory** dialog opens. Use the search form to find the app you registered in the [previous section](#app-registration) (search for the application **Display name**, which you should have copied during that procedure). Select the app registration and then select **Add**.
-1. Set **Business unit** to the name of the environment that you're working with.
-1. Select the **Edit** button for the **Security roles** field. Then use the **Add security roles** dialog to add the *System administrator* and *Bulk Archival Role* security roles.
-1. Select **Create** in the **Create a new app user** dialog.
+1. In the **Create a new app user** dialog box, select **Add an app**.
+1. In the **Add an app from Azure Active Directory** dialog box, use the search form to find the app that you registered in the [previous section](#app-registration). (Search for the application by the **Display name** value that you copied during that procedure.) Select the app registration, and then select **Add**.
+1. Set the **Business unit** field to the name of the environment that you're working with.
+1. Select the **Edit** button for the **Security roles** field. Then use the **Add security roles** dialog box to add the *System administrator* and *Bulk Archival Role* security roles.
+1. In the **Create a new app user** dialog box, select **Create**.
 
-### <a name="portal"></a>Enable long term data retention for the required entities in Dataverse
+### <a name="portal"></a>Enable long-term data retention for the required entities in Dataverse
 
-After you have turned on the long term data retention feature for Dataverse, you must enable it for each of the data entities that needs it. To do so, follow these steps:
+After you've turned on the long-term data retention feature for Dataverse, you must enable it for each data entity that needs it.
 
-1. Sign in to the [Power Apps make portal](https://make.powerapps.com/).
-1. Select **Settings** (gear icon) in the top bar to open a dialog box and then select **Advanced settings**.
-1. Select **Advanced find** (filter icon) in the top bar. The **Advanced find** dialog opens. Use it to search for finance and operation entities that contain the word *Archive* in the name. The results should include the following entities:
+1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/).
+1. Select the **Settings** button (gear symbol) on the top bar, and then select **Advanced settings**.
+1. Select the **Advanced find** button (filter symbol) on the top bar. Then use the **Advanced find** dialog box to search for finance and operations entities that contain the word *Archive* in the name. The results should include the following entities:
+
     - *SalesOrderLineArchiveEntity*
     - *SalesOrderHeaderArchiveEntity*
     - *InventTransArchiveEntity*
-1. Select the first of these three entities to open a dialog box. Then select the **Visible** and **Refresh** check boxes, which will make the entity available as a virtual entity in Dataverse. Then select **Save and close**.
+
+1. Select the first of the three entities. In the dialog box that appears, select the **Visible** and **Refresh** checkboxes to make the entity available as a virtual entity in Dataverse. Then select **Save and close**.
 1. Repeat the previous step for each of the other two entities.
-1. Select **Results** in the **Advanced find** dialog and confirm that the three entities now show a value of *Yes* in the **Visible** column. Then close the dialog.
-1. In the make portal, on the navigation pane, select **Tables** to open the **Tables** page and then open the **All** tab.
-1. In the search field, enter "(mserp)" and press return. The search results should now show the following three tables:
+1. In the **Advanced find** dialog box, select **Results**, and confirm that the three entities now show a value of *Yes* in the **Visible** column.
+1. Close the **Advanced find** dialog box.
+1. In the maker portal, on the navigation pane, select **Tables**.
+1. On the **Tables** page, on the **All** tab, in the search field, enter **(mserp)**. The search results should show the following three tables:
+
     - *Archived sales order line (mserp)*
     - *Archived sales order header (mserp)*
     - *Archived inventory transaction (mserp)*
-1. Select *Archived sales order line (mserp)* and then select **Properties**. The **Edit table** dialog opens. Expand **Advanced options** and mark the **Track changes** and **Enable long term retention** check boxes. Then select **Save**.
-1. Repeat the previous step for the *Archived sales order header (mserp)* table.
-1. Repeat the previous step for the *Archived inventory transaction (mserp)* table.
 
-    > [!NOTE]
-    > Your must edit the tables in the suggested order because of their parent/child relationships. You'll get an error if you try to set them up in a different order.
+1. Select the *Archived sales order line (mserp)* table, and then select **Properties**. In the **Edit table** dialog box, expand **Advanced options**, and select the **Track changes** and **Enable long term retention** checkboxes. Then select **Save**.
+1. Repeat the previous step for the *Archived sales order header (mserp)* table and then for the *Archived inventory transaction (mserp)* table.
 
-### <a name="scm-connect"></a> Configure Supply Chain Management to connect to and use long term data retention
+    > [!IMPORTANT]
+    > Because of the parent/child relationships between the three tables, you must edit them in the order that's described here. Otherwise, you receive an error.
 
-Long term data retention is now fully set up for the required entities in Dataverse. The next step is to configure Supply Chain Management to connect to Dataverse and use it for long term data retention. To do so, follow these steps:
+### <a name="scm-connect"></a>Configure Supply Chain Management to connect to and use long-term data retention
+
+Long-term data retention is now fully set up for the required entities in Dataverse. The next step is to configure Supply Chain Management to connect to Dataverse and use it for long-term data retention.
 
 1. Sign in to Supply Chain Management.
-1. Use the company picker to choose a legal entity that you want to set up archiving for.
+1. Use the company picker to select a legal entity where you want to enable long-term data retention.
 1. Go to **System administration \> Setup \> Archive parameters**.
-1. Make the following settings:
-    - **Enable data archival to data lake** – Set to *Yes*.
-    - **Linked Dataverse environment URL** – This is the URL for the linked Dataverse environment. It should already be filled in.
-    - **Azure application name** – Enter the **Display name** that you copied when you [created the app registration in Azure](#app-registration).
-    - **Application ID** – Enter the **Application (client) ID**  that you copied when you [created the app registration in Azure](#app-registration).
-    - **Application secret** – Enter the client secret **Value** that you copied when you [created the app registration in Azure](#app-registration).
+1. Set the following fields:
+
+    - **Enable data archival to data lake** – Set this option to *Yes*.
+    - **Azure application name** – Enter the **Display name** value that you copied when you [created the app registration in Azure](#app-registration).
+    - **Application ID** – Enter the **Application (client) ID** value that you copied when you [created the app registration in Azure](#app-registration).
+    - **Application secret** – Enter the client secret **Value** value that you copied when you [created the app registration in Azure](#app-registration).
+
+    The **Linked Dataverse environment URL** field should already be set to the URL of the linked Dataverse environment.
+
 1. On the Action Pane, select **Save**.
-1. Repeat from step 2 for each legal entity where you want to enable long term data retention.
+1. Repeat steps 2 through 5 for each additional legal entity where you want to enable long-term data retention.
 1. Go to **System administration \> Setup \> Azure Active Directory applications**.
-1. On the Action Pane, select **New** to add a new row to the grid. Make the following settings for the new row:
-    - **Client ID** – Enter the **Application (client) ID**  that you copied when you [created the app registration in Azure](#app-registration).
+1. On the Action Pane, select **New** to add a row to the grid. Then set the following fields for the new row:
+
+    - **Client ID** – Enter the **Application (client) ID** value that you copied when you [created the app registration in Azure](#app-registration).
     - **Name** – Enter a name (for example, *Long term data retention*).
     - **User ID** – Select *Admin*.
+
 1. On the Action Pane, select **Save**.
 
-### Provide access to view data in long term data retention
+### Provide access to view data in long-term data retention
 
-To allow administrators and/or auditors to view the data in long term data retention, create an app in Dataverse that queries the data using the virtual entities that you set up earlier in the [Make a portal in Power Apps](#portal) section. For instructions, see [View long term retained data](/power-apps/maker/data-platform/data-retention-view).
+To enable administrators and/or auditors to view the data in long-term data retention, create an app in Dataverse that queries the data by using the virtual entities that you set up in the [Enable long-term data retention for the required entities in Dataverse](#portal) section. For instructions, see [View long term retained data](/power-apps/maker/data-platform/data-retention-view).
 
 ## Next steps
 
