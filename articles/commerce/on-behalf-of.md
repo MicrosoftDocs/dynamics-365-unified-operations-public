@@ -24,7 +24,7 @@ This article describes how to enable on behalf of (OBO) functionality for Micros
 > [!NOTE]
 > OBO functionality is available in Dynamics 365 Commerce version 10.0.33 and later.
 
-OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer.
+OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer. Activity license is required for each representative. 
 
 ## Prerequisites
 
