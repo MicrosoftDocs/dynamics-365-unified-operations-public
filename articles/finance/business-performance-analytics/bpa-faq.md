@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 07/19/2023
+ms.date: 07/25/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -188,7 +188,7 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### Is there any cost to install and use business performance analytics during public preview?
 
-No. The data is restricted to the current fiscal year plus the previous two years.
+No. The data is restricted to the current fiscal year plus the previous three fiscal years.
 
 ### How do I know when a new release of business performance analytics is available?
 
