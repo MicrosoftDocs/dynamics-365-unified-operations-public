@@ -128,12 +128,12 @@ Due to volatility of financial tables, it's also recommended that lock escalatio
 
 #### Tax Engine
 
-By default, sales tax amounts on journal lines are calculated when tax-related fields are updated. Although this behavior helps users see tax amounts calculated in real time, it can also affect performance for large journals with significant number of lines. The **Delayed tax calculation feature** lets you delay tax calculation on journals and therefore helps assure optimal performance. When this feature is turned on, tax amounts are calculated only when a user presses **Sales Tax** or posts the journal.
+By default, the sales tax amounts on journal lines are calculated when tax-related fields are updated. Although this behavior helps users see tax amounts calculated in real time, it can also affect performance for large journals with significant number of lines. The **Delayed tax calculation feature** delays the tax calculation on journals and therefore helps assure optimal performance. When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.
 
-For more information about this feature, see [Enable delayed tax calculation on journals](../../finance/general-ledger/enable-delayed-tax-calculation.md).
+For more information, see [Enable delayed tax calculation on journals](../../finance/general-ledger/enable-delayed-tax-calculation.md).
 
 #### Configuration keys
 
-To assure optimal performance, only necessary configuration keys should be enabled in your environment. If you do not use, for example, budget or public sector features, configuration keys can be disabled for these scenarios.
+To assure optimal performance, only necessary configuration keys should be enabled in your environment. If you don't use, for example, budget or public sector features, configuration keys can be disabled for these scenarios.
 
-See [License codes and configuration keys](../../fin-ops-core/dev-itpro/sysadmin/license-codes-configuration-keys-report.md) for more details.
+For more information, see [License codes and configuration keys](../../fin-ops-core/dev-itpro/sysadmin/license-codes-configuration-keys-report.md).
