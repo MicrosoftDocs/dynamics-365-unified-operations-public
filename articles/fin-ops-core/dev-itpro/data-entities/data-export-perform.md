@@ -5,7 +5,7 @@ author: gned
 ms.author: gned
 ms.reviewer: twheeloc
 ms.topic: conceptual
-ms.date: 7/13/2023
+ms.date: 7/25/2023
 ms.custom:
 
 ---
@@ -14,7 +14,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-When setting up a data export, consider the below recommendations.
+This article provides tips that can help improve performance during export.
 
 ## Avoid computed columns that have JOINS
 
