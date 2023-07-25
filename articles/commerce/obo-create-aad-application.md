@@ -67,7 +67,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter the OpenID profile Azure B2B Application ID URI (for example, `https://APPLICATIONIDURI`). This URI should match the application ID URI of the Azure B2B Azure AD application.
+1. In the **Scope** field, enter the **OpenID profile Azure B2B Application ID URI** (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). This URI should match the application ID URI of the Azure B2B Azure AD application.
 1. In the **Response Mode** field, select **form\_post**.
 1. In the **Response Type** field, select **code**.
 1. Under **Identity provider claims mapping**, select the following claims:
