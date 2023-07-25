@@ -59,7 +59,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. Go to the directory that contains your Azure AD B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
-1. In the **Name** field, enter **Account Manager B2B Sign-in**.
+1. In the **Name** field, enter **Account Manager B2B Sign-in**. This exact name is required and cannot be modified. 
 1. In the **Metadata URL** field, enter the URL of the Azure B2B OpenID Connect Configuration document. For example, enter `https://login.microsoftonline.com/<TENANTID>/v2.0/.well-known/openid-configuration`, where `<TENANTID>` is your tenant ID.
 
     > [!NOTE]
@@ -86,7 +86,7 @@ To add the Azure identity provider to a user flow, follow these steps.
 
 1. In your Azure AD B2C tenant, select **User flows**.
 1. Select the user flow that you want to add the identity provider to.
-1. Under the **Custom identity providers**, select the identity provider that you added (for example, **Account Manager B2B Sign-in**).
+1. Under the **Custom identity providers**, select the identity provider that you added (**Account Manager B2B Sign-in**).
 1. Select **Save**.
 
 ## Additional resources
