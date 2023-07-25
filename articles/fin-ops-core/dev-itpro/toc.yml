@@ -245,6 +245,8 @@ items:
           href: data-entities/tips-tricks-import-general-journal-entity.md
         - name: Optimizing data migration for finance and operations apps
           href: sysadmin/optimize-data-migration.md
+        - name: Improve data export performance
+          href: data-entities/data-export-perform.md
       - name: Development for data entities
         items:
         - name: Design principles and best practices for data entities
