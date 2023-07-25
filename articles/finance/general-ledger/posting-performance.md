@@ -4,7 +4,7 @@
 title: General journal posting performance 
 description: The article suggests ways to troubleshoot performance issues when you post general journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
-ms.date: 05/24/2023
+ms.date: 07/24/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -118,13 +118,13 @@ If you use the **Lines limit** feature, it's important that you consider the ave
 
 There are several other indicators that might be impacting general journal posting performance. Below are a few which should be considered carefully.
 
-#### Database Logging / SQL Change tracking
+#### Database logging and SQL change tracking
 
-In general, SQL Change Tracking is not recommended for highly volatile (high volumes of Inserts, Updates and Deletes) database tables. Some financial journal tables such as LedgerJournalTrans are among the most volatile tables within Dynamics 365 for Finance. In addition, some financial journal tables are considered work tables and are not preferable candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
+In general, SQL change tracking isn't recommended for highly volatile (high volume of inserts, updates and deletes) database tables. Some financial journal tables, such as LedgerJournalTrans, are among the most volatile tables within Dynamics 365 Finance. In addition, some financial journal tables are considered work tables and aren't candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
 
-Find more details at [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
-Due to volatility of financial tables, it is also recommended that lock escalation of both the table and indexes for LedgerJournalTrans and its related tables be turned off. On Production environment we have automatic checks that attempt to disable lock escalation if it is enabled on this table. However, these checks are not running on Development or UAT environments. If you are experiencing slow performance, it is suggested that this setting is verified and lock escalation is disabled.
+Due to volatility of financial tables, it's also recommended that lock escalation of both the table and indexes for LedgerJournalTrans and its related tables be turned off. In production environments, we have automatic checks that attempt to disable lock escalation if it's enabled on this table. However, these checks don't run on development or UAT environments. If you are experiencing slow performance, it's suggested that this setting is verified and lock escalation is disabled.
 
 #### Tax Engine
 
