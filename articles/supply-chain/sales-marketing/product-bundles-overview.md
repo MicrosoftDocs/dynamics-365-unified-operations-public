@@ -31,4 +31,4 @@ This product bundle feature replaces the [previous bundle feature](../../finance
 ## Next steps
 
 - [Enable and set up product bundles](product-bundles-setup.md)
-- [Sell product bundles](product-bundles-use.md)
+- [Sell and allocate product bundles](product-bundles-use.md)
