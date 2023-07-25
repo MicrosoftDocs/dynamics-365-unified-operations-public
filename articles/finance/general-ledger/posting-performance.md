@@ -114,13 +114,13 @@ If you use the **Lines limit** feature, it's important that you consider the ave
 | 150,000       | 150,000       | 10,000      | No                  | 1                         |
 
 
-### Other areas to consider for journal performance
+### Additional areas to consider for journal performance
 
-There are several other indicators that might be impacting general journal posting performance. Below are a few which should be considered carefully.
+There are other indicators that might be impacting general journal posting performance. Below are some additional areas to consider.
 
 #### Database logging and SQL change tracking
 
-In general, SQL change tracking isn't recommended for highly volatile (high volume of inserts, updates and deletes) database tables. Some financial journal tables, such as LedgerJournalTrans, are among the most volatile tables within Dynamics 365 Finance. In addition, some financial journal tables are considered work tables and aren't candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
+SQL change tracking isn't recommended for highly volatile (high volume of inserts, updates and deletes) database tables. Some financial journal tables, such as LedgerJournalTrans, are among the most volatile tables within Dynamics 365 Finance. In addition, some financial journal tables are considered work tables and aren't candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
 
 For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
