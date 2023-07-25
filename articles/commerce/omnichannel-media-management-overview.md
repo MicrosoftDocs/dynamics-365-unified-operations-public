@@ -22,6 +22,9 @@ Commerce version 10.0.35 introduced an integrated solution for managing merchand
 
 The omnichannel media management solution integrates media management capabilities into the Commerce headquarters merchandising flow and introduces a new omnichannel content workspace in Commerce site builder. Currently, to use all omnichannel media management capabilities that are introduced as of Commerce version 10.0.35, you must opt in by using feature flags. New implementations activate these capabilities by default. However, for existing solutions, you can opt in on your preferred timeline by following the migration steps. Through these media management capabilities, Dynamics 365 Commerce offers a more flexible native solution for managing merchandising media.
 
+### Video: omnichannel media management feature overview
+[!VIDEO https://www.microsoft.com/videoplayer/embed/RW18350]
+
 ## Omnichannel media management prerequisites and configuration
 
 To enable the omnichannel media management features that are introduced in Commerce version 10.0.35, you use multiple sequential feature switches that allow for staged rollouts to the new data model and workflows. User experiences such as e-commerce websites and point of sale (POS) can still use the legacy data model. However, media and assignments are migrated and configured by using the new product media assignment workflows.
