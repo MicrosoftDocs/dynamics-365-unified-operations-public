@@ -112,3 +112,28 @@ If you use the **Lines limit** feature, it's important that you consider the ave
 | 150,000       | ~500          | 10,000      | Yes                 | 15                        |
 | 150,000       | ~50,000       | 10,000      | Yes                 | 3                         |
 | 150,000       | 150,000       | 10,000      | No                  | 1                         |
+
+
+### Other areas to consider for journal performance
+
+There are several other indicators that might be impacting general journal posting performance. Below are a few which should be considered carefully.
+
+#### Database Logging / SQL Change tracking
+
+In general, SQL Change Tracking is not recommended for highly volatile (high volumes of Inserts, Updates and Deletes) database tables. Some financial journal tables such as LedgerJournalTrans are among the most volatile tables within Dynamics 365 for Finance. In addition, some financial journal tables are considered work tables and are not preferable candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
+
+Find more details at [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
+
+Due to volatility of financial tables, it is also recommended that lock escalation of both the table and indexes for LedgerJournalTrans and its related tables be turned off. On Production environment we have automatic checks that attempt to disable lock escalation if it is enabled on this table. However, these checks are not running on Development or UAT environments. If you are experiencing slow performance, it is suggested that this setting is verified and lock escalation is disabled.
+
+#### Tax Engine
+
+By default, sales tax amounts on journal lines are calculated when tax-related fields are updated. Although this behavior helps users see tax amounts calculated in real time, it can also affect performance for large journals with significant number of lines. The **Delayed tax calculation feature** lets you delay tax calculation on journals and therefore helps assure optimal performance. When this feature is turned on, tax amounts are calculated only when a user presses **Sales Tax** or posts the journal.
+
+For more information about this feature, see [Enable delayed tax calculation on journals](../../finance/general-ledger/enable-delayed-tax-calculation.md).
+
+#### Configuration keys
+
+To assure optimal performance, only necessary configuration keys should be enabled in your environment. If you do not use, for example, budget or public sector features, configuration keys can be disabled for these scenarios.
+
+See [License codes and configuration keys](../../fin-ops-core/dev-itpro/sysadmin/license-codes-configuration-keys-report.md) for more details.
