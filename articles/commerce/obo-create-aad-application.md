@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
 ---
 
-# Create and configure an Azure AD application for account manager sign-in
+# Create and configure an Azure AD application for account manager sign-in in Azure B2B Tenant
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
