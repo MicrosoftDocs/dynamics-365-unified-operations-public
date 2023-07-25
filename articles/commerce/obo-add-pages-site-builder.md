@@ -61,6 +61,9 @@ To create a business partner selection page, follow the same steps that you used
 
 ## Modify a B2B sign-in page so that it includes an Employee sign-in button
 
+> [!NOTE]
+> This section is applicable only for **built-in policies with injected contents based custom UI**. If you are using **built-in policies with generic module custom UI (or with the Azure B2C UI)**, please ignore this section.
+> 
 To modify a B2B sign-in page so that it includes an employee sign-in button, follow these steps.
 
 1. Go to **Pages**, and select the site's B2B sign-in page.
