@@ -136,6 +136,9 @@ Follow these steps to enable licensing for your solution.
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but is not limited to users. |
+    | SignatureVersion| Optional: This is used to define the hashing algorithm to be used for license generation. Value 1 defines SHA1. Value 2 defines SHA256. Default value is 2. IMPORTANT: SHA1 is on deprecation part   so, this would be redundant, and it is recommended to use this parameter with value 2. Once SHA1 is deprecated [target 10.0.40], ISV Licensing would only work with SHA256 (value 2). |
+    | UseLegacyCryptoServiceProvider| Optional: This option specifies whether to use older CryptoServiceProvider or not. If generating license key fails, this option allows users to fallback on the older version of ISV License generation. Default value is 0 and should only be used to provide a fallback mechanism in case of an error with the default value. This parameter is available from 10.0.36 onwards. |
+        
 
     Here is an example.
  
@@ -144,7 +147,7 @@ Follow these steps to enable licensing for your solution.
     ``` 
 
 
-3.  Import the license into the target environment.
+4.  Import the license into the target environment.
 
     > [!NOTE]
     > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
@@ -166,11 +169,11 @@ Follow these steps to enable licensing for your solution.
     C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
-4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
+5.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
     ![ISVConfigurationKey1 configuration key enabled on the License configuration page.](media/isv_license_configuration_page.png)
 
-5.  In non-production installations, you must start the database synchronization process from Visual Studio.
+6.  In non-production installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 
