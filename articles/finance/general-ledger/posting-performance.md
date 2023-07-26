@@ -113,27 +113,26 @@ If you use the **Lines limit** feature, it's important that you consider the ave
 | 150,000       | ~50,000       | 10,000      | Yes                 | 3                         |
 | 150,000       | 150,000       | 10,000      | No                  | 1                         |
 
-
 ### Additional areas to consider for journal performance
 
-There are other indicators that might be impacting general journal posting performance. Below are some additional areas to consider.
+Other factors can affect the performance of general journal posting. This section describes some additional areas that you should consider.
 
 #### Database logging and SQL change tracking
 
-SQL change tracking isn't recommended for highly volatile (high volume of inserts, updates and deletes) database tables. Some financial journal tables, such as LedgerJournalTrans, are among the most volatile tables within Dynamics 365 Finance. In addition, some financial journal tables are considered work tables and aren't candidates for change tracking. When change tracking is enabled on these entities, it can create triggers and have performance impact.
+SQL change tracking isn't recommended for highly volatile database tables (that is, tables that have a high volume of insertions, updates, and deletions). Some financial journal tables, such as `LedgerJournalTrans`, are among the most volatile tables in Dynamics 365 Finance. In addition, some financial journal tables are considered work tables and therefore aren't candidates for change tracking. If change tracking is enabled on these entities, it can create triggers and affect performance.
 
 For more information, see [Configure database logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md).
 
-Due to volatility of financial tables, it's also recommended that lock escalation of both the table and indexes for LedgerJournalTrans and its related tables be turned off. In production environments, we have automatic checks that attempt to disable lock escalation if it's enabled on this table. However, these checks don't run on development or UAT environments. If you are experiencing slow performance, it's suggested that this setting is verified and lock escalation is disabled.
+Because of the volatility of financial tables, we recommend that you turn off lock escalation for both the table and the indexes for `LedgerJournalTrans` and its related tables. In production environments, automatic checks try to disable lock escalation if it's enabled for this table. However, these checks don't run in development or user acceptance testing (UAT) environments. If you experience slow performance, we recommend that you verify this setting and disable lock escalation.
 
 #### Tax Engine
 
-By default, the sales tax amounts on journal lines are calculated when tax-related fields are updated. Although this behavior helps users see tax amounts calculated in real time, it can also affect performance for large journals with significant number of lines. The **Delayed tax calculation feature** delays the tax calculation on journals and therefore helps assure optimal performance. When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.
+By default, the sales tax amounts on journal lines are calculated when tax-related fields are updated. Although this behavior helps users see tax amounts calculated in real time, it can also affect performance for large journals that have a significant number of lines. The **Delayed tax calculation** feature delays the tax calculation on journals and therefore helps ensure optimal performance. When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.
 
 For more information, see [Enable delayed tax calculation on journals](../../finance/general-ledger/enable-delayed-tax-calculation.md).
 
 #### Configuration keys
 
-To assure optimal performance, only necessary configuration keys should be enabled in your environment. If you don't use, for example, budget or public sector features, configuration keys can be disabled for these scenarios.
+To ensure optimal performance, you should enable only necessary configuration keys in your environment. For example, if you don't use budget or public sector features, you can disable the configuration keys for those scenarios.
 
 For more information, see [License codes and configuration keys](../../fin-ops-core/dev-itpro/sysadmin/license-codes-configuration-keys-report.md).
