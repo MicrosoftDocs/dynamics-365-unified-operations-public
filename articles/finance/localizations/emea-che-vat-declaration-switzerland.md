@@ -1,7 +1,7 @@
 ---
 title: VAT declaration (Switzerland)
 description: This article provides information about how to set up and generate a value-added tax declaration for Switzerland.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Switzerland
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.custom: 264584
@@ -59,7 +59,7 @@ The VAT declaration in Switzerland contains the following information.
 | 302  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a standard rate.          | Report field lookup | SuppliesStandardRate                                                                                                                                      |
 | 312  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a reduced rate.           | Report field lookup | SuppliesReducedRate                                                                                                                                       |
 | 342  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate                                                                                                                                  |
-| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax</br> UseTaxAcquisitionTax (This result is also reported in full on line 400.)</br> Non-deductible tax amount, if any is reported on line 415 |
+| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax</br> UseTaxAcquisitionTax (This result is also reported in full on line 400.)</br> UseTaxInvestmentsAquisitionTax (This result is also reported in full on line 405.)</br> Non-deductible tax amount, if any is reported on line 415 |
 | 301  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a standard rate.       | Report field lookup | SuppliesOldStandardRate                                                                                                                                   |
 | 311  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a reduced rate.        | Report field lookup | SuppliesOldReducedRate                                                                                                                                    |
 | 341  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at an accommodation rate. | Report field lookup | SuppliesAccomodationOldRate                                                                                                                               |
@@ -71,7 +71,7 @@ The VAT declaration in Switzerland contains the following information.
 | Line | XML element                 | Description                                                                                                                                                         | Lookup              | Lookup result                                                                                                                                    |
 |------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | 400  | inputTaxMaterialAndServices | Input tax on the cost of materials and supplies of services.                                                                                                        | Report field lookup | InputTaxMaterialAndServices (reported in full)</br> UseTaxAcquisitionTax (reported in full)</br> Non-deductible tax amount, if any is reported on line 415 |
-| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full)</br> Non-deductible tax amount, if any is reported on line 415                                                 |
+| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full)</br> UseTaxInvestmentsAquisitionTax (reported in full)</br> Non-deductible tax amount, if any is reported on line 415                                                 |
 | 410  | subsequentInputTaxDeduction | De-taxation (article 32). You should enclose a detailed list.                                                                                                       | Report field lookup | SubsequentInputTaxDeduction                                                                                                                      |
 | 415  | inputTaxCorrections         | Correction of the input tax deduction, both mixed use (article 30) and own use (article 31).                                                                        | Report field lookup | InputTaxCorrections (reported in full but with the sign inverted)</br>Also non-deductible tax amount of transactions from lines 400, 405 is reported here                                                                                 |
 | 420  | inputTaxReductions          | Reduction of the input tax deduction: the flow of funds that aren't deemed to be in consideration, such as subsidies and tourist charges (article 33, paragraph 2). | Report field lookup | InputTaxReductions (reported in full with the sign inverted)                                                                                     |
@@ -106,7 +106,7 @@ You then associate the codes with lookup results in the following way:
 
 In this case, amounts that use the **VAT_S_RC** sales tax code will be reflected on line 382. Amounts that use the **InVAT_S_RC** sales tax code will be reflected on line 400 with full amount, and on line 415 with the non-deductible amount.
 
-For more information about how to configure reverse charge VAT, see [Reverse charges]emea-reverse-charge.md).
+For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
 ## Configure system parameters
 
