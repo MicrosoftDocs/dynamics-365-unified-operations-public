@@ -54,17 +54,21 @@ The VAT declaration in Switzerland contains the following information.
 
 **Tax due**
 
-| Line | XML element                           | Description                                                 | Lookup              | Lookup result                                                                                                                                             |
-|------|---------------------------------------|-------------------------------------------------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 302  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a standard rate.          | Report field lookup | SuppliesStandardRate                                                                                                                                      |
-| 312  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a reduced rate.           | Report field lookup | SuppliesReducedRate                                                                                                                                       |
-| 342  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate                                                                                                                                  |
+| Line | XML element                           | Description                                                 | Lookup              | Lookup result        |
+|------|---------------------------------------|-------------------------------------------------------------|---------------------|----------------------|
+| 303  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at a standard rate.          | Report field lookup | SuppliesStandardRate2024 |
+| 313  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at a reduced rate.           | Report field lookup | SuppliesReducedRate2024  |
+| 343  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate2024 |
+| 383  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2024.          | Report field lookup | SuppliesAcquisitionTax2024</br> UseTaxAcquisitionTax2024 (This result is also reported in full on line 400.)</br> UseTaxInvestmentsAquisitionTax2024 (This result is also reported in full on line 405.)</br> Non-deductible tax amount, if any is reported on line 415. |
+| 302  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a standard rate.          | Report field lookup | SuppliesStandardRate |
+| 312  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a reduced rate.           | Report field lookup | SuppliesReducedRate  |
+| 342  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate |
 | 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax</br> UseTaxAcquisitionTax (This result is also reported in full on line 400.)</br> UseTaxInvestmentsAquisitionTax (This result is also reported in full on line 405.)</br> Non-deductible tax amount, if any is reported on line 415 |
-| 301  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a standard rate.       | Report field lookup | SuppliesOldStandardRate                                                                                                                                   |
-| 311  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a reduced rate.        | Report field lookup | SuppliesOldReducedRate                                                                                                                                    |
-| 341  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at an accommodation rate. | Report field lookup | SuppliesAccomodationOldRate                                                                                                                               |
-| 381  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies up to December 31, 2017        | Report field lookup | SuppliesAcquisitionTaxOldRate                                                                                                                             |
-| 399  | Not applicable                        | Total amount of tax due (Lines 301 through 382).            | Total               | 302 + 312 + 342 + 382 + 301 + 311 + 341 + 381                                                                                                             |
+| 301  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a standard rate. This field is discontinued from January 1, 2024. | Report field lookup | SuppliesOldStandardRate\[DISCONTINUED\] |
+| 311  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a reduced rate. This field is discontinued from January 1, 2024.        | Report field lookup | SuppliesOldReducedRate\[DISCONTINUED\]  |
+| 341  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at an accommodation rate. This field is discontinued from January 1, 2024. | Report field lookup | SuppliesAccomodationOldRate\[DISCONTINUED\] |
+| 381  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies up to December 31, 2017.  This field is discontinued from January 1, 2024. | Report field lookup | SuppliesAcquisitionTaxOldRate\[DISCONTINUED\] |
+| 399  | Not applicable                        | Total amount of tax due (Lines 301 through 382).            | Total               | 302 + 312 + 342 + 382 + 303 + 313 + 343 + 383 |
 
 **Input tax**
 
