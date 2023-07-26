@@ -51,12 +51,15 @@ The **Received file (captured)** page shows all files that have been successfull
 - Select an invoice, and then select **View captured invoice** to view invoices in a side-by-side viewer, where users can review the invoice status and make corrections.
 - Select **Download** to download the original invoice file.
 
-## Received files status's 
-- **Waiting** (No action is required) - The invoice has been captured by Power Automate flow and is waiting for the file validation.
-- **Processing** (Action: Retry) - The invoice is being validated by applying the file filter rules or in the progress of recognition after passing the filter validation.
-- **Cancelled** (Action: Retry or Void) - An exception during file validation or calling recognitive service failed.
-- **Captured** (Action: View captured invoice ) - The form recognizer result has been moved to captured invoice staging.  
-- **Voided** (Action: Obsolete) - When the invoice isn't needed, click **Voided**. The invoice with a **Voided** status can be deleted permanently from the Dataverse by clicking **Obsoleted**.
+## Received file statuses
+
+| Status | Description | Action |
+|---|---|---|
+| Waiting | The invoice has been captured by a Power Automate flow and is awaiting file validation. | No action is required. |
+| Processing | File filter rules are being applied to validate the invoice, or the invoice has passed filter validation and is being recognized. | **Retry** |
+| Cancelled | An exception occurred during file validation, or the call to the recognitive service failed. | **Retry** or **Void** |
+| Captured | The form recognizer result has been moved to captured invoice staging. | **View captured invoice** |
+| Voided | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
 
 ## Upload invoice files
 
