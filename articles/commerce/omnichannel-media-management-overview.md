@@ -33,6 +33,9 @@ When the new media assignments are staged, you can use feature switches to updat
 
 To configure omnichannel media management features in your Commerce environments, follow these steps.
 
+> [!NOTE]
+    > Always run and validate the following steps in your dev and/or UAT environment first before promoting to a production environment.
+
 1. In site builder, go to **Tenant settings \> Features**, set the **Omnichannel content** feature flag to **On**, and then select **Save and publish**. These actions make all omnichannel content authoring controls visible in site builder.
 1. In headquarters, go to **Workspaces \> Feature management**.
 1. In the upper right, select **Check for updates**.
@@ -56,6 +59,19 @@ To configure omnichannel media management features in your Commerce environments
 1. In the search results, select **Enable omnichannel media assignments for CSU media locations**, and then select **Enable now**. This action changes how CSU delivers product media from the legacy data to the version 10.0.35 product media data model. This feature switch can be disabled if you must revert to the old data model.
 1. Search for and open the **Distribution schedules** page from the headquarters search control. Then run the **1110 (Global configuration)** job to push the feature flag settings to CSU.
 1. For any e-commerce channels, open site builder, and go to each site's **Site settings \> Extensions** controls. Select the **Enable omnichannel media management** feature switch until a check mark appears, and then select **Save and publish**.
+    > [!NOTE]
+    > If you do not see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, then you will need to do the following:
+    > 1. Read the documentation on how to [update your site's app.settings.json file](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates#update-the-appsettingsjson-file)
+    > 2. Add the following to your appsettings.json file:
+    >    ```javascript
+    >    "OmniChannelMedia":{
+    >        "friendlyName": "Enable omni channel media management",
+    >        "description": "This switch changes the default rendering behavior for product and category media. Once enabled, media assignments made in the omni channel workspace will be used instead of the legacy filename-based product and category image rendering behavior",
+    >        "type": "boolean",
+    >        "default": false,
+    >        "group": "General"}   
+    >    ```
+1. If you have an existing custom e-commerce deployment, you will need to update and re-deploy your site's e-commerce modules to leverage new features such as 'additional media' and 'product videos'.
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
