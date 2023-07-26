@@ -143,7 +143,7 @@ For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysa
 
 ### Reporting
 
-After the cash flow forecast is calculated, you must refresh the associated entity information for analytical reporting. On the **Entity store** page, select the **LedgerCovLiquidityMeasurement aggregate** measurement, and then click **Refresh**.
+After the cash flow forecast is calculated, you must refresh the associated entity information for analytical reporting. On the **Entity store** page, select the **LedgerCovLiquidityMeasurementV2 aggregate** measurement, and then click **Refresh**.
 
 There are two workspaces that contain cash flow forecasting data. One workspace has data for all companies, and the other workspace has data only for the current company.
 
