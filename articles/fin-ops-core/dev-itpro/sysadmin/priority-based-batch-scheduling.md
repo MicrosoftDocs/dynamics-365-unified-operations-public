@@ -34,8 +34,9 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 
 > [!IMPORTANT]
 > - This feature is available with version 10.0.25.
-> - This feature is enabled by default for all new instances with version 10.0.28.
-> - This feature will be enabled by default for all existing instances with version 10.0.29.
+> - This feature is enabled by default for all new instances with version 10.0.28 (PU 52).
+> - This feature will be enabled by default for all existing instances with version 10.0.36 (PU 60).
+> - This feature will be required for all instances starting with version 10.0.38 (PU 62).
 
 A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. 
 
@@ -168,7 +169,7 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - If there are larger workloads, we recommend breaking them down into smaller workloads or tasks so that they execute and complete in ten minutes or less.
 - SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
-- When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
+- When debugging batches in UAT by connecting to a development machine, you will have to disable the rest of the batch server by running the following script to ensure that all the batches are running on the development machine. 
 
     ```
     UPDATE ssc
@@ -194,6 +195,10 @@ As a best practice, we recommend that you do not assign a high or critical prior
 ## Batch concurrency
 
 In Platform update 58, you can turn on the **(Preview) Batch concurrency control** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). This feature lets you set a limit on the number of tasks that can run concurrently in a specific batch job. Therefore, it helps you prioritize your batch jobs and optimize the use of your resources. For example, by limiting the number of tasks for a low-priority batch job, you can avoid overloading the system and affecting the performance of other, higher-priority batch jobs.
+
+> [!IMPORTANT]
+> - This feature is available with version 10.0.34 (PU 58).
+> - This feature is enabled by default for all new instances with version 10.0.40  (PU 64).
 
 ### Prerequisites
 
