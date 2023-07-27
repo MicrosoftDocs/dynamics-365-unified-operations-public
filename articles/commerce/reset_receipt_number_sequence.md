@@ -1,21 +1,16 @@
 ---
+
 title: Reset receipt numbers
 description: This article describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2020-01-14
-ms.dyn365.ops.version: Application update 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail, Commerce
-ms.search.form: 
+
 ---
 
 # Reset receipt numbers 
@@ -78,7 +73,8 @@ To enable synchronization of number sequence data at app launch, do the followin
 2. Enable the **Retrieve the latest number sequence data** option in the **Receipt number synchronization** section. 
 3. Go to **Retail and Commerce \> Retail and Commerce ID > Distribution schedule**  and run job **1070** (Channel configuration).  
 
-> [!NOTE] When this setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
+> [!NOTE]
+> When this setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
 
 
 
