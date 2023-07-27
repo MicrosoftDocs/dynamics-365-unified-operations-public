@@ -246,7 +246,7 @@ During activation, when prompted to enter the Azure AD password with multiple op
 
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
 
-[Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
+[Commerce SDK Tech Talk Series](https://community.dynamics.com/blogs/post/?postid=a7ae4e0b-3af0-48a0-8943-9ee9d0f941c6)
 
 [Store Commerce Extensions Overview](pos-extension/pos-extension-overview.md)
 
