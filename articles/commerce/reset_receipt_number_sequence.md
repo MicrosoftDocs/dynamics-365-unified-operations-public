@@ -1,6 +1,6 @@
 ---
 title: Reset receipt numbers
-description: This article describes how to reset receipt numbers used for various actions on a desired date in Microsoft Dynamics 365 Commerce.
+description: This article describes how to reset receipt numbers used for various actions on a specific date in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/31/2023
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-01-14
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article describes how to reset receipt numbers used for various actions on a desired date (for example, the fiscal year or calendar year) in Microsoft Dynamics 365 Commerce.
+This article describes how to reset receipt numbers used for various actions on a specific date (for example, the end of the fiscal year or calendar year) in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. Due to these limitations, we recommend that you do not use this feature in production while we work to fix these issues in a future release. 
@@ -57,18 +57,18 @@ When the reset date arrives, the receipt number is reset for the first transacti
 You can use the **Clear reset date** functionality to clear future reset dates. However, if the reset date occurred in the past, it can't be undone. Therefore, the reset will still occur for all registers where the reset hasn't yet occurred.
 
 > [!NOTE]
-> - If you use **Independent sequence** property for all or some receipt types, please make sure include dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt ids.
+> - If you use the **Independent sequence** property for some or all receipt types, ensure that you include dynamic date characters (for example, "ddd", "MM", "DD", and "YY") to help prevent duplicate receipt IDs.
 > - The reset date set in **Functionality profiles** isn't associated with a specific time zone. For example, if you select **January 1, 2020** as the reset date, POS devices in all time zones will reset the receipt back to "1" on January 1, 2020 local time.
 > - If you want the receipt masks to be changed together when the reset date arrives, follow the steps in [Make receipt masks change when the reset date arrive](#make-receipt-masks-change-when-the-reset-date-arrives) below. 
 > - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
 
 ## Make receipt masks change when the reset date arrives
 
-To make receipt masks change when the reset date arrives, follow these steps.
+To make receipt masks change when the reset date arrives in headquarters, follow these steps.
 
-1. In **Functionality profiles**, set the reset date (for example, "January 1, 2020") before reset date (for example, one week before).
+1. In **Functionality profiles**, set the reset date to a date before the actual reset date (for example, one week before).
 1. Run the **1070 (Channel configuration)** job.
-1. When the reset date arrives, before opening the store, in **Functionality profiles**, set the receipt masks to what you want.
+1. When the reset date arrives, before opening the store, in **Functionality profiles**, set the receipt masks as desired.
 1. Run the **1090 (Registers)** job.
 1. After you finish configuring all these settings, ensure that you relaunch POS to update this new configuration to POS devices. 
 1. When you've completed the steps above, open POS and start creating new orders. POS will now create orders using new receipt masks with the receipt ID reset.
