@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 description: This article explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base.
 author: LaneSwenka
-ms.date: 01/31/2018
+ms.date: 07/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -57,14 +57,15 @@ The output of the Code upgrade service is designed to be consumed by a developer
 ## Details
 The code upgrade service operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch that will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete, you can synchronize your developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
-Dynamics 365 for Finance and Operations does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see the [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for finance and operations doesn't allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see [Extensibility](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
 
 ## Process
 ### Export your AX 2012 model store
-> [!NOTE] You will need to have the AX 2012 Management utilities installed on the environmnet you wish to export the model store from. For details see: [Install management utilities](https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/install-management-utilities)
+>[!NOTE]
+>You will need to have the AX 2012 Management utilities installed on the environmnet you wish to export the model store from. For more information, see: [Install management utilities](../dynamicsax-2012/appuser-itpro/install-management-utilities.md).
 
 To export the model store, follow these steps:
-1. Open the **Microsoft Dynamics AX 2012 Management Shell**, this is located under **Administrative Tools**
+1. Open **Microsoft Dynamics AX 2012 Management Shell**, this is located under **Administrative Tools**
 2. Run the following command to export the model store, adjust paths as needed:
    ```
    axutil exportstore /file:C:\Temp\AX2012R3CU12ModelStore
@@ -79,60 +80,62 @@ For the code upgrade service to recognize your source code, your Azure DevOps pr
 You can create new folders directly in the Azure DevOps web interface under **Repos**.
  
 > [!NOTE]
-> - Folder names are case sensitive, that is, you must use Main and not MAIN, or the code upgrade service will not recognize the folder.
+> - Folder names are case sensitive. 
 > - Azure DevOps projects use Git version control by default. You will need to add a TFVC repository.
->     1. Go to Project settings, then Repositories.
->     2. Select New repository.
->     3. In the Type field, select TFVC, and then click Create.
+>     1. Go to **Project settings**, then **Repositories**.
+>     2. Select **New repository**.
+>     3. In the **Type** field, select **TFVC**, and click **Create**.
 
 ### Create a personal access token
 To connect to an Azure DevOps project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in Azure DevOps. If you have already configured your LCS project to connect to your Azure DevOps project, you can skip this section.
 
 1. Sign in to visualstudio.com and locate your Azure DevOps project.
-2. In the top-right corner, click on the **User settings**, and select **Personal access tokens**.
-3. Select **New Token** to create a new personal access token, and set the following:
-   - Name: <Enter in an appropriate name, e.g. CodeUpgrade>
-   - Organization: <set this to organization, this should be the default>
-   - Expiration: <Set this to your desired date>
-   - Scopes: Full access
+2. Click **User settings**, select **Personal access tokens**.
+3. Select **New token** to create a new personal access token, and set the following:
+   - **Name** - Enter an appropriate name
+   - **Organization** - This should default to organization
+   - **Expiration** - Enter a date
+   - **Scopes** - Set to full access
 4. Click **Create** 
 5. Copy the **CodeUpgrade token** to your clipboard. 
 > [!NOTE]
-> You will not be able to find the token details after this step is completed, so be sure that you have copied the token before navigating away from this page.
+> You won't be able to find the token details after this step is completed. Confirm that the token code is copied before navigating away from this page.
 
 ### Configure your Lifecycle Services project to connect to Azure DevOps
-1. In your LCS project, go to the **Project settings** tile, select **Azure DevOps**, and then select the **Setup Azure DevOps** button. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your Azure DevOps project, you can skip this section. 
-2. **nter the site** for your Azure DevOps organization and the access token created earlier, and then select **Continue**.
-3. **Select the project** within your Azure DevOps organization that you want to connect to, and select **Continue**. 
-4. On the **Review and save** page, select **Save**.
+1. In your LCS project, go to the **Project settings** tile, select **Azure DevOps**.
+2. Click **Setup Azure DevOps**. This configuration is needed by many LCS tools, if you have already configured LCS to connect to your Azure DevOps project, you can skip this section. 
+3. **Enter the site** for your Azure DevOps organization and the access token created earlier. Select **Continue**.
+4. **Select the project** within your Azure DevOps organization that you want to connect to. Select **Continue**. 
+5. On the **Review and save** page, select **Save**.
 
 ### Execute the code upgrade tile
 
 1. In your LCS project, select the **Code upgrade** tile. 
-2. In the bottom-left corner of the screen, select **Add**, and then fill in the following:
-   - Name: Enter a name for the code upgrade, e.g. AX2012Upgrade
-   - Description: Fill in your own description
-   - Version you are upgrading from: Microsoft Dynamics AX 2012
-   - Release you are upgrading to: Dynamics 365 for Finance and Operations 10.0
-   - Estimation Only: If this check box is selected, the tool only generates a report and does not check in or create a new code branch in Azure DevOps for you. You should use this option if you want to evaluate the potential size of the work involved in upgrading before you commit to the actual upgrade.
-3. Click **Create**
-4. In the bottom-left corner of the screen, select **Add files**, the **File upload** form will show. Set the following:
-   - File Type: ModelStore.zip file
-   - Browse: Browse for your exported compressed model store file you created in the steps above.
+2. Select **Add** and enter: 
+   - **Name** - Enter a name for the code upgrade
+   - **Description** - Enter a description
+   - **Version you are upgrading from** - Microsoft Dynamics AX 2012
+   - **Release you are upgrading to** - Dynamics 365 for finance and operations 
+   - **Estimation only** - Select this check box to generate a report and doesn't check in or create a new code branch in Azure DevOps. Use this option if you want to evaluate the potential size of the work involved in upgrading before you commit to the actual upgrade.
+3. Click **Create**.
+4. Select **Add files**, the **File upload** page will display. Set the following:
+   - **File Type** - ModelStore.zip file
+   - **Browse** - Browse for the exported compressed model store file created in the steps above.
    - Click **Upload**
-6. Once the file is uploaded it will show on the Code Upgrade Service file upload form, select (check) the zip file, and select **Analyze code** in the bottom-right corner. The code upgrade process will start. This process typically takes 40 to 60 minutes for a large solution to complete.
-7. Return to the **Code upgrade** tile in LCS to view the results by clicking on the name of your analysis.
-8. The code upgrade service creates a new branch and checks in the upgraded code to your Azure DevOps project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. 
+6. After the file is uploaded, it will diplay on the **Code upgrade service file upload** page, select the zip file.
+7. Select **Analyze code**. The code upgrade process starts and typically takes 40 to 60 minutes for a large solution to complete.
+8. Return to the **Code upgrade** tile in LCS to view the results by clicking on the name of your analysis.
+9. The code upgrade service creates a new branch and checks in the upgraded code to your Azure DevOps project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. 
 > [!NOTE]
-> If you selected **Estimation Only** then no code will be uploaded into Azure Dev Ops
+> If **Estimation only** is selected, no code is uploaded into Azure Dev Ops.
 
 ### Merge Releases back into Trunk\\Main
 
-Once the upgraded code in Releases\\\<version number\> compiles successfully and you have completed your code migration and testing, you are ready to merge this branch back into Trunk\\Main. 
+After the upgraded code in Releases\\\<version number\> compiles successfully, and you have completed your code migration and testing, the branch can be merged into Trunk\\Main. 
 
-To merge, on your development environment in Visual Studio complete the following:
-1. Open the Source control explorer pane 
-2. Right-click on the **Releases\\\<version number\>** branch
-3. In the context menu go to **Branching and Merging**, and then on the submenu select **Merge**.
+To merge, on your development environment in Visual Studio, complete the following:
+1. Open the Source control explorer pane. 
+2. Right-click on the **Releases\\\<version number\>** branch.
+3. In the context menu, go to **Branching and merging**, select **Merge**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
