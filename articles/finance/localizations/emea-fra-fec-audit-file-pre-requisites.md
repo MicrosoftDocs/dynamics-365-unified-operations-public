@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for generating an FEC audit file in France
 description: This article describes the prerequisites that must be set up before you can generate a compliant Fichier des écritures comptables (FEC) audit file in France.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 05/10/2021
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: France
-ms.author: atrukawk
+ms.author: egolub
 ---
 
 # Prerequisites to generate an FEC audit file in France
@@ -19,6 +19,12 @@ To generate a compliant Fichier des écritures comptables (FEC) audit file in Mi
 - Set up number sequences for vouchers. Each voucher series must contain a piece of text that will be considered a value for the **JournalCode** field in the FEC audit report. For example, define the voucher series for vendor invoice journals as **FRSIFACF-\#\#\#\#\#\#\#\#** to get the value **FRSIFACF** in the **JournalCode** field in the FEC.
 
 - The **Continuous** field must be set to **Yes** for number sequences that are used for invoice numbers and for general ledger transactions for vouchers. This setting accommodates article 100 of BOI-CF-IOR-60-40-20. The numbering in the **EcritureNum** field must increase over time, and it should not include any break. The numbering must be either unique throughout the file or specific to each journal. (The original French text states, "La numérotation dans le champ «EcritureNum» doit être croissante dans le temps et ne pas comporter de rupture. Cette numérotation peut être unique sur l'ensemble du fichier ou être propre à chaque journal."). For more information about set up and use chronological numbers for invoices and vouchers, see [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md).
+
+> [!NOTE]
+> We recommend to enable **(France) Number sequences setup for FEC Missing numbers justification** feature in **Feature management**. This feature enables user to specify number sequences on **Number sequences setup for FEC Missing numbers justification** FastTab of **Ledger** tab on **General ledger** > **Ledger setup** > **General ledger parameters** page to be analyzed during **FEC Missing numbers justification** report generation. Prefix segments information of different number sequences must not intersect. When this feature is disabled, the **FEC Missing numbers justification** report analyses all the possible number sequences used for vouchers numbering with an assumption, that prefix segments information of the number sequences is composed of alphabetic characters and does not include any numbers. Use this feature to execute **FEC Missing numbers justification** report generation for specific number sequence or in case there are numerical symbols in prefix segments information of the Number sequences used for vouchers numbering.
+>
+> We recommend using number sequences that have different formats with Alphanumeric segment containing incrementing numbers without incrementing letters and with total value of Alphanumeric segment(s) less than 9,223,372,036,854,775,808 (int64). Setting up identical format for different number sequences or not fulfilling the mentioned recommendation to Alphanumeric segment may prevent possiblity to generate [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC.  
+
 - The value of the **Limited number of open fiscal years** field in **General ledger parameters** must not be more than **2**. This field limits the total number of fiscal years that can be open at the same time. Article 921-4 of the General Accounting Plan (Principes généraux) states that a closing procedure must be executed no later than the end of the next period.
 - The chart of accounts that is used by the legal entity that the FEC is generated from must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français"). Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be included in the FEC.
 - Use a posting profile for all customer and supplier balance accounts. These main accounts start with **41** and **40**. The **Do not allow manual entry** parameter must be enabled for them.
