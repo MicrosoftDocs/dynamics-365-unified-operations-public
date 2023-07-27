@@ -136,8 +136,20 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 <td>The Chromium engine is used to render the UI.</td>
 <td>The UWP app rendering framework is used to render the UI.</td>
 </tr>
+<tr>
+<th scope="row">Deployment modes</th>
+<td>In-app, hybrid.<br />
+    See the Hybrid deployment section above for more information.</td>
+<td>In-app.</td>
+</tr>
+<tr>
+<th scope="row">Full screen mode</th>
+<td>Yes - press Alt-Enter to enter and exit full screen mode. </td>
+<td>Yes - press F11 to enter and exit full screen mode.</td>
+</tr>
 </tbody>
 </table>
+
 
 ## Setup and installation
 

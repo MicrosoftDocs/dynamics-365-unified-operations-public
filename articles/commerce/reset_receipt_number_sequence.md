@@ -27,6 +27,8 @@ ms.search.form:
 
 Retailers generate receipt numbers for various actions in the store, such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on these receipt formats. For example, these regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of the year. Microsoft Dynamics 365 Commerce makes the process of managing receipt numbers very flexible, to help retailers meet regulatory requirements. This article explains how to use the functionality for resetting receipt numbers.
 
+## Define receipt formats
+
 In Commerce, receipt formats can be alphanumeric. You can put both static content and dynamic content in them. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
 
 | Characters | Description |
@@ -39,6 +41,8 @@ In Commerce, receipt formats can be alphanumeric. You can put both static conten
 | DD         | The characters **DD** are used for the two-digit day of the month. For example, on January 15, the format **DD** shows "15" on the receipt. |
 | YY         | The characters **YY** are used for the two-digit year. For example, in any month during the year 2020, the format **YY** shows "20" on the receipt. |
 | \#         | A number sign (**\#**) is used for sequential numbering. For example, the format **####** shows "0001," "0002," "0003," and so on, on the receipt. |
+
+## Reset sequential receipt numbering
 
 You can reset the sequential numbering of the receipt on a specific date. Then, for the first transaction that occurs after 12:00 AM on the selected reset date, the system resets the receipt's number sequence to 1. You can also specify whether the reset occurs only one time, or whether it recurs every year. If yearly recurrence is specified, the reset automatically occurs every year until the retailer chooses to stop it. 
 
@@ -63,5 +67,19 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 > - The reset date set in **Functionality profiles** isn't associated with a specific time zone. For example, if you select **January 1, 2020** as the reset date, POS devices in all time zones will reset the receipt back to "1" on January 1, 2020 local time.
 > - If you want the receipt masks to be changed together when the reset date arrives, you must first set the reset date in **Functionality profiles** (for example, "January 1, 2020"). When the reset date arrives, before you create orders you must set the receipt masks to what you want in **Functionality profiles**, and then sync data to both the CSU and offline databases. After you finish configuring all these settings, POS will start creating orders using new receipt masks with the receipt ID reset.
 > - Depending on the reset date that you select, and the receipt format, you might have duplicate receipt numbers. Although the point of sale (POS) system can handle these situations, they increase the amount of time that is required to process returns, because sales associates must select among the duplicate receipts. Other complications that are related to data cleanup can occur if the duplicate receipts weren't a planned consequence. Therefore, we recommend that you use dynamic date characters (for example, **ddd**, **MM**, **DD**, and **YY**) to help prevent duplicate receipt numbers after a reset.
+
+## **Force synchronization of number sequence data at app launch**
+
+Organizations who have strict requirements for receipt ID uniqueness can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit whenever point of sale is initialized. This guarantees that the point of sale will always have the most current number sequence before any transactions are executed. 
+
+To enable synchronization of number sequence data at app launch, do the following:
+
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select the functionality profile used by the store(s) you wish to enable this feature for.
+2. Enable the **Retrieve the latest number sequence data** option in the **Receipt number synchronization** section. 
+3. Go to **Retail and Commerce \> Retail and Commerce ID > Distribution schedule**  and run job **1070** (Channel configuration).  
+
+> [!NOTE] When this setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
+
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

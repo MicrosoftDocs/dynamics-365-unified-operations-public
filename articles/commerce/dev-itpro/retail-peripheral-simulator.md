@@ -24,7 +24,9 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetails
 
 The peripheral simulator is a utility that Microsoft provides as part of Microsoft Dynamics 365 Commerce and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
-The virtual peripheral simulator is provided primarily to support testing of scenarios that usually require physical POS peripheral devices. The POS simulator is used to test the compatibility of physical peripheral devices without having to deploy the POS client.
+**Virtual peripheral simulator:** The virtual peripheral simulator is provided primarily to support testing of scenarios that usually require physical POS peripheral devices. It's also useful for diagnosing peripheral problems. If a peripheral is not functioning correctly when physically connected but does function correctly when configured as a virtual peripheral, the issue is probably being caused by the physical device or the manufacturer-provided device driver. In these cases, we recommend you contact the manufacturer to resolve the issue. 
+
+**POS simulator:** The POS simulator is used to test the compatibility of physical peripheral devices without having to deploy the POS client.
 
 ## Install the peripheral simulator
 

@@ -94,13 +94,15 @@ For more information about device activation, see [Activate Store Commerce using
 
 The following table compares the capabilities of the Store Commerce app across Windows, Android, and iOS platforms.
 
-| Feature                                                                               | Windows | Android | iOS |
-| ------------------------------------------------------------------------------------- | ------- | ------- | --- |
-| Dedicated hardware station                                                            | Yes     | Yes     | Yes |
-| Shared hardware station                                                               | Yes     | Yes     | Yes |
-| Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes |
-| OLE for Point of Sale (OPOS) peripherals through a local hardware station             | Yes     | No      | No  |
-| Offline mode                                                                          | Yes     | No      | No  |
+| Feature                                                      | Windows | Android | iOS  |
+| ------------------------------------------------------------ | ------- | ------- | ---- |
+| Dedicated hardware station                                   | Yes     | Yes     | Yes  |
+| Shared hardware station                                      | Yes     | Yes     | Yes  |
+| Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes  |
+| OLE for Point of Sale (OPOS) peripherals through a local hardware station | Yes     | No      | No   |
+| Offline mode                                                 | Yes     | No      | No   |
+| [Adyen cloud architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | Yes  |
+| [Adyen local architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | No   |
 
 ## Additional resources
 

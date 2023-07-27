@@ -97,11 +97,11 @@ If the self-service component will use a server certificate, it's critical that 
 This section lists the supported operating systems for each Commerce self-service installer.
 
 > [!WARNING]
-> The Windows 7 operating system isn't supported for anything except security-related fixes. Therefore, although Commerce components might work on Windows 7, there will be no bug fixes that are specifically related to supporting this operating system.
+> The Windows 7 and Windows 8 operating systems aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, no bug fixes or other technical support will be provided.
 
 #### Store Commerce
 
-- Store Commerce and Modern POS is supported on the following operating systems:
+- Store Commerce app for Windows is supported on the x64 versions of following operating systems:
 
     - Windows 11 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions.)
     - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
@@ -112,13 +112,9 @@ This section lists the supported operating systems for each Commerce self-servic
     > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 
-- We recommend that you don't use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- iOS support requires iOS version 11 or later.
-- Android support requires Android version 6.0 or later.
-- Windows Server 2019 is supported.
-- We don't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- iOS support requires iOS version 16 or later.
-- Android support requires Android version 7.0 or later.
+- Store Commerce for Android requires Android version 7.10 or later.
+- Store Commerce for iOS requires iOS version 16 or later.
+- We don't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, shared hardware station or self-hosted Commerce Scale Unit).
 
 
 > [!NOTE]
@@ -140,7 +136,7 @@ This section lists the supported operating systems for each Commerce self-servic
 Remember that performance testing is crucial to the successful use of Commerce self-service components. Across all components, the following bare-minimum system is supported for the purpose of testing functionality:
 
 - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core.
-- 3 GB of RAM.
+- 4 GB of RAM.
 - Internet access and enough network throughput to handle the flow of requests and responses. (Note that this requirement is at both a computer level and a network level.)
 - Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
 - At least 10 percent of disk space is available. (We recommend that you've no less than 10 GB of available disk space when SQL Server is used.)
