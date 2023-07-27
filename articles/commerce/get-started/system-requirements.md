@@ -6,22 +6,11 @@ description: This article lists the system requirements for cloud deployments fo
 author: jashanno 
 ms.date: 02/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.search.industry: retail 
-ms.author: jashanno
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 
 ---
 
