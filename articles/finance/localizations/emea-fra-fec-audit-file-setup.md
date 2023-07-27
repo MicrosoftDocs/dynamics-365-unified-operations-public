@@ -2,7 +2,7 @@
 title: Prepare your environment to generate an FEC
 description: This article explains how to prepare your Microsoft Dynamics 365 Finance environment to generate a Fichier des écritures comptables (FEC) audit file.
 author: liza-golub
-ms.date: 06/20/2022
+ms.date: 07/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,13 +38,14 @@ Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you mus
 
 ## Prepare your environment to generate a Missing numbers justification annex of FEC
 
-As of Finance version 10.0.33, you can set up specific number sequences to generate the [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC for. 
+As of Finance version 10.0.33, you can set up specific number sequences to generate the [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC. 
 
-1. In the **Feature management** workspace, on the **All** tab, find and select **(France) Number sequences setup for FEC Missing numbers justification** feature in the feature list, select **Enable now**.
+1. In the **Feature management** workspace, on the **All** tab, find and select the feature **(France) Number sequences setup for FEC Missing numbers justification**, and then select **Enable now**.
 
-This feature enables user to specify number sequences on **Number sequences setup for FEC Missing numbers justification** FastTab of **Ledger** tab on **General ledger** > **Ledger setup** > **General ledger parameters** page to be analyzed during **FEC Missing numbers justification** report generation. Prefix segments information of different number sequences must not intersect. When this feature is disabled, the **FEC Missing numbers justification** report analyses all the possible number sequences used for vouchers numbering with an assumption, that prefix segments information of the number sequences is composed of alphabetic characters and does not include any numbers. Use this feature to execute **FEC Missing numbers justification** report generation for specific number sequence or in case there are numerical symbols in prefix segments information of the Number sequences used for vouchers numbering.
+This feature allows you to specify number sequences on the **Number sequences setup for FEC Missing numbers justification** FastTab of the **Ledger** tab on the **General ledger parameters** page. The number sequences are analyzed when the **FEC Missing numbers justification** report is generated. Prefix segment information of different number sequences must not intersect. When this feature isn't enabled, the **FEC Missing numbers justification** report analyzes all the possible number sequences used for vouchers numbering with the assumption that the prefix segment information of the number sequences is composed of alphabetic characters and doesn't include numbers. Use this feature to generate the **FEC Missing numbers justification** report for specific number sequences or if there are numerical symbols in prefix segments information of the number sequences used for vouchers numbering.
 
-2. Go to **General ledger** > **Ledger setup** > **General ledger parameters** page, on **Number sequences setup for FEC Missing numbers justification** FastTab of **Ledger** tab specify number sequences to be analyzed during **FEC Missing numbers justification** report generation.
+2. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+3. On the **Number sequences setup for FEC Missing numbers justification** FastTab of the **Ledger** tab, specify the number sequences to be analyzed when the **FEC Missing numbers justification** report is generated.
 
 > [!NOTE]
-> We recommend using number sequences that have different formats with Alphanumeric segment containing incrementing numbers without incrementing letters and with total value of Alphanumeric segment(s) less than 9,223,372,036,854,775,808 (int64). Setting up identical format for different number sequences or not fulfilling the mentioned recommendation to Alphanumeric segment may prevent possiblity to generate [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC.  
+> We recommend using number sequences that have different formats with alphanumeric segments that contain incrementing numbers without incrementing letters and with a total value of alphanumeric segments less than 9,223,372,036,854,775,808 (int64). Setting up identical formats for different number sequences or not fulfilling the mentioned recommendation to Alphanumeric segment might prevent you from being able to generate the [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC.  
