@@ -78,4 +78,4 @@ To enable synchronization of number sequence data at app launch, do the followin
 
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
