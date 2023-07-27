@@ -60,6 +60,13 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+
+## Features turned on by default in this release
+
+The following table lists the features that are turned on by default in version 10.0.36. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+
+| Feature name | Feature state | Module |
+|--------------|---------------|--------|
 |Financial tags|	On by default|	General ledger|
 |(Italy) Fiscal journal page numbering improvements|	Mandatory|	General ledger|
 |Journal reversal no longer requires consecutive number sequence	|Mandatory	|General ledger|
@@ -67,3 +74,22 @@ The following table lists the feature enhancements that are included in this rel
 |Amount details from **General journal account** entry are displayed on the **Trial balance with transactional detail** report	|Mandatory|	General ledger|
 |Awareness between ledger settlement and year-end close|	On by default|	General ledger|
 |Add a date filter when viewing unsettled ledger transactions|	Mandatory|	General ledger|
+|New voucher and date for new transactions in the advanced bank reconciliation bank statement| On by default| Cash and bank management|
+|Ability to post detailed vendor and customer payments, but summarize amounts to bank account| On by default| Cash and bank management|
+|Time zone for importing bank statements using Electronic reporting| On by default| Cash and bank management|
+
+
+## Features removed from Feature management
+
+The following table lists the features that have been removed from Feature management in  version 10.0.36.
+
+| Feature name |  Feature state | Module |
+|--------------|---------------|--------|
+|Reverse reconciled advanced bank reconciliation|The related functionality is enabled out of the box.| Cash and bank management |
+|Reverse posted bank statement|The related functionality is enabled out of the box.| Cash and bank management |
+|Revert to simple bank reconciliation from advanced bank reconciliation|The related functionality is enabled out of the box.| Cash and bank management |
+|Turn off set based updates for customer settlement cash discount date|The related functionality is enabled out of the box.| Accounts Receivable |
+|Enable remove open transactions of zero amount from settlement when marking transactions|The related functionality is enabled out of the box.| Cash and bank management |
+|Identification information for Bank accounts located in Japan|The related functionality is enabled out of the box.| Cash and bank management |
+|Vendor payment proposal automation|The related functionality is enabled out of the box.| Accounts payable|
+
