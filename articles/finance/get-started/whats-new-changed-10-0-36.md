@@ -52,6 +52,7 @@ The following table lists the features that are included in this release. We mig
 |Cash and bank management|Bank foreign currency revaluation enhancements|Prior to this feature, the bank foreign currency revaluation process considered every financial dimension value when calculating the gain or loss. This feature allows your organization to select to use all or none of the financial dimensions when calculating the gain or loss. In addition, this feature changes the calculation logic. The calculation will first calculate the balance of the bank account, either with all financial dimensions or no financial dimensions, and then calculate the unrealized gain or loss per ledger account.  <p>**IMPORTANT:** This feature can't be disabled after it's been enabled. <p> |Feature management|
 |Cash and bank management|Accounts payable and accounts receivable foreign currency revaluation performance improvement by splitting into even batches.|This feature improves the performance of the foreign currency revaluation by splitting large batches into even batches to avoid large batches from a certain vendor or customer.|Feature management|
 |Cash and bank management|Use the time zone option on bank statement import page for BAI2 format bank statement id generation.|If a bank statement format uses time stamp to generate bank statement id, this feature uses the time zone option on bank statement import page instead of the user option.|Feature management|
+|General ledger|	Post foreign currency realized gains/losses for ledger settlements|	This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances usability to the Ledger settlement process by reducing the effort needed to mark vouchers.|	Feature management|
 
 ## Feature enhancements included in this release
 
@@ -59,3 +60,10 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+|Financial tags|	On by default|	General ledger|
+|(Italy) Fiscal journal page numbering improvements|	Mandatory|	General ledger|
+|Journal reversal no longer requires consecutive number sequence	|Mandatory	|General ledger|
+|Allow edits to internal data on general ledger vouchers	|Mandatory	|General ledger|
+|Amount details from **General journal account** entry are displayed on the **Trial balance with transactional detail** report	|Mandatory|	General ledger|
+|Awareness between ledger settlement and year-end close|	On by default|	General ledger|
+|Add a date filter when viewing unsettled ledger transactions|	Mandatory|	General ledger|
