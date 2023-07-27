@@ -28,14 +28,14 @@ This article provides information about the new or changed features in Microsoft
 
 ## Dynamics Translation Service Connector Release
 
-The Dynamics 365 Translation Service Connector is now available. It integrates with the Power Platform, enabling users to access DTS directly from a flow or app. This connector calls the DTS API on its user's behalf, saving them a trip to the website.
+The Dynamics 365 Translation Service Connector is now available. Because the connector integrates with the Power Platform, you can access DTS directly from a flow or app. This connector calls the DTS API on its user's behalf, saving them a trip to the website.
 
 The following functionality is supported:
 - Translate user interface (UI) files
 - Regenerate translation requests
 - Creating translation memory (TM) files
 
-Documentation is available [here]( https://learn.microsoft.com/connectors/dynamicstranslations). 
+To learn more, see [Dynamics translation service](/connectors/dynamicstranslations/). 
 
 ## DTS API release
 
