@@ -103,7 +103,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | July 24 to July 27, 2023 | August 5 to August 6, 2023 |
 | Station 6 | July 25 to July 28, 2023 | August 5 to August 6, 2023 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-1 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-2 train schedule
 
 **App version: 10.0.1591.100**
 
