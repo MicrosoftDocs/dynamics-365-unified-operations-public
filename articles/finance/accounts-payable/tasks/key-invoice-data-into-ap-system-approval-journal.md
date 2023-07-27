@@ -39,7 +39,12 @@ This article explains how to use the invoice register to create invoices and the
 7. In the **Description** field, type a value.
 8. In the **Credit** field, enter a number.
 9. In the **Approved by** field, select an approver from the drop-down menu.
-10. Select **Post**.
+
+   When feature **"Vendor Invoice Register Approved Feature"** is enabled, AP clerk can decide whether "Approved by" is mandatory or not during invoice register by setting the parameter **Approved by** under **Accounts payable parameters \> Invoice > Invoice register**.
+   - If it is set as **"Required"**, the value of "Approved by" has to be filled before posting the invoice register journal.
+   - If it is set as **"Optional"**, the invoice register journal cannot be posted without the assignment of **"Approved by"**.
+   
+11. Select **Post**.
 
 ## Approve an invoice
 1. In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice approval**.
