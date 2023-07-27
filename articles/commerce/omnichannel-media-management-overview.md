@@ -62,16 +62,17 @@ To configure omnichannel media management features in your Commerce environments
     > [!NOTE]
     > If you do not see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, then you will need to do the following:
     > 1. Read the documentation on how to [update your site's app.settings.json file](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates#update-the-appsettingsjson-file)
-    > 2. Add the following to your appsettings.json file:
+    > 2. Add the following to your app.settings.json file:
     >    ```javascript
     >    "OmniChannelMedia":{
     >        "friendlyName": "Enable omni channel media management",
     >        "description": "This switch changes the default rendering behavior for product and category media. Once enabled, media assignments made in the omni channel workspace will be used instead of the legacy filename-based product and category image rendering behavior",
     >        "type": "boolean",
     >        "default": false,
-    >        "group": "General"}   
+    >        "group": "General"
+    >        }   
     >    ```
-1. If you have an existing custom e-commerce deployment, you will need to update and re-deploy your site's e-commerce modules to leverage new features such as 'additional media' and 'product videos'.
+1. If you have an existing custom e-commerce deployment, you will need to update and re-deploy your site's e-commerce modules and data actions to leverage new omnichannel media scenarios such as 'additional media' and 'product videos'.  Refer to [this article](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates#pull-updates) for instructions on how to pull the latest module library dependencies into your development environment.
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
