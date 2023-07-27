@@ -4,7 +4,7 @@
 title: Key invoice data into accounts payable using an approval journal
 description: This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts. 
 author: abruer
-ms.date: 02/11/2023
+ms.date: 07/27/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -40,9 +40,9 @@ This article explains how to use the invoice register to create invoices and the
 8. In the **Credit** field, enter a number.
 9. In the **Approved by** field, select an approver from the drop-down menu.
 
-   When feature **"Vendor Invoice Register Approved Feature"** is enabled, AP clerk can decide whether "Approved by" is mandatory or not during invoice register by setting the parameter **Approved by** under **Accounts payable parameters \> Invoice > Invoice register**.
-   - If it is set as **"Required"**, the value of "Approved by" has to be filled before posting the invoice register journal.
-   - If it is set as **"Optional"**, the invoice register journal cannot be posted without the assignment of **"Approved by"**.
+When the **"Vendor invoice register approved** feature is enabled, the AP clerk can decide if **Approved by** is mandatory. Go to **Accounts payable parameters \> Invoice > Invoice register** and set the **Approved by** field.
+   - **Required** - **Approved by** field is required before posting the invoice register journal.
+   - **Optional** - The invoice register journal can be posted without approval.
    
 11. Select **Post**.
 
