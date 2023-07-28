@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Translation Service API 
-description: This article explains how to access and use the Dynamics 365 Translation Service API
+title: Dynamics 365 Translation Service API
+description: This article explains how to access and use the Microsoft Dynamics 365 Translation Service API.
 author: joshsantana
 ms.date: 07/27/2023
 ms.topic: article
@@ -12,14 +12,16 @@ ms.search.region: Global
 ms.author: joshsantana
 ms.search.validFrom: 2023-03-22
 ---
+# Dynamics 365 Translation Service API
 
-The Dynamics 365 Translation Service connector integrates with the Power Platform which allows you to access DTS directly from a flow or app. This connector calls the DTS API on your behalf, saving you a trip to the website.
+The Microsoft Dynamics 365 Translation Service Connector integrates with Microsoft Power Platform. Therefore, you can access Dynamics Translation Service (DTS) directly from a flow or app. This connector calls the DTS API on your behalf, saving you a trip to the website.
 
 The following functionality is supported:
-- Translate user interface (UI) files
-- Regenerate translation requests
-- Creating translation memory (TM) files
 
-Documentation is available [here]( https://learn.microsoft.com/connectors/dynamicstranslations). 
+- Translate user interface (UI) files.
+- Regenerate translation requests.
+- Create translation memory (TM) files.
+
+Documentation is available at [Dynamics Translation Service](https://learn.microsoft.com/connectors/dynamicstranslations).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
