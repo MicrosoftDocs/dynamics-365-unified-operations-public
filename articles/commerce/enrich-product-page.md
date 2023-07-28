@@ -1,8 +1,8 @@
 ---
-title: Customize a product page
-description: This article describes how to customize a product page in Microsoft Dynamics 365 Commerce.
+title: Customize product detail pages (PDPs)
+description: This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/14/2020
+ms.date: 07/28/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,17 +17,19 @@ ms.assetid:
 
 ---
 
-# Customize a product page
+# Customize product detail pages (PDPs)
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to customize a product page in Microsoft Dynamics 365 Commerce.
+This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as customizing the product page.
+By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product, and page controls (for example, an add to cart button) that site visitors use to select and purchase the product. 
+
+You can customize PDPs by supplementing them with information from the Commerce Scale Unit (CSU) such as additional images or product-specific text.
 
 In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
-### Video: custom product pages overview
+The following video provides an overview of PDP and category page customization rusing site builder.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1863o]
 
