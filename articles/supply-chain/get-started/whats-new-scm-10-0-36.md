@@ -33,9 +33,9 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Sell and price multiple items as a bundle](dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/sell-price-multiple-items-as-bundle) | [Product bundles overview](../sales-marketing/product-bundles-overview.md) | Feature management:<br>*Product bundles*  |
-| Manufacturing and asset management | [Over pick materials for production orders and batch orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/over-pick-materials-production-orders-batch-orders) | *Coming soon* | Enabled by default |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | *Coming soon* | Feature management:<br>*(Preview) Advanced export control configuration*  |
-| Warehouse management | Operate warehouses connected to external order management systems | *Coming soon* | Feature management:<br>*(Preview) Warehouse management only mode* <!-- KFM: Currently hidden on release plan. Says it's for 10.0.36, but shows date of October. Include this? --> |
+| Warehouse management | Dynamic printer selection | [Dynamic printer selection](../warehousing/dynamic-printing-selection.md) | Enabled by default |
+| Warehouse management | Operate warehouses connected to external order management systems | *Coming soon* | Feature management:<br>*(Preview) Warehouse management only mode* |
 
 ## Feature enhancements included in this release
 
@@ -45,7 +45,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Master planning | Allows to create Planned order setting Purchase quantity instead of Requirement quantity | Lets you create a planned order by setting the purchase quantity instead of the requirement quantity. <!--KFM: Feature name and description are the same. --> |
+| Master planning | Allows to create Planned order setting Purchase quantity instead of Requirement quantity | Lets you create a planned order by setting the purchase quantity instead of the requirement quantity. |
 | Master planning | Average daily usage for distribution scenarios | Ensures that average daily usage (ADU) is based on actual sales order dates and quantities. This can be especially useful in distribution scenarios or when transitioning from material requirements planning (MRP) to Demand Driven Material Requirements Planning (DDMRP). It calculates the ADU based on sales order dates and quantities and manufacturing consumption across the distribution network, disregarding transfer orders. |
 | Master planning | (Preview) Exclude specific sales orders or sales order lines in Planning Optimization | Adds a parameter that lets you choose not to create supply for a sales order or a specific line when using Planning Optimization. This lets you keep an order unplanned, which can be useful for orders that require a review or approval process. |
 | Master planning | Forecast demand plan import service | Adds support for using multiple threads when importing forecast demand plan lines. |
