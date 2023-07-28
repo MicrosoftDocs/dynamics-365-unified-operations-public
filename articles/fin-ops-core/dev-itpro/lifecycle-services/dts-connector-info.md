@@ -22,6 +22,6 @@ The following functionality is supported:
 - Regenerate translation requests.
 - Create translation memory (TM) files.
 
-Documentation is available at [Dynamics Translation Service](https://learn.microsoft.com/connectors/dynamicstranslations).
+Documentation is available at [Dynamics Translation Service](/connectors/dynamicstranslations).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
