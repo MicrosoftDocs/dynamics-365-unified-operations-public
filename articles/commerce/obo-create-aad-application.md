@@ -34,13 +34,13 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. Under **Redirect URI**, select **Web**, and then, in the URL field, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain.
 
     > [!NOTE]
-    > Use lowercase letters when you enter your tenant's name, even if the tenant is defined with uppercase letters in Azure AD B2C. For example, enter `https://fabrikam-online.b2clogin.com/fabrikam-online.onmicrosoft.com/oauth2/authresp`.
+    > Use lowercase letters when you enter your tenant's name, even if the tenant is defined with uppercase letters in Azure AD B2C. For example, enter `https://adventure-works.b2clogin.com/adventure-works.onmicrosoft.com/oauth2/authresp`.
 
 1. Select **Register**.
 
 After you complete the registration, locate the application that you created (for example, **Account Manager Employer Auth**).
 
-1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID).
+1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID). For example, **88760a037-ea1e-4e04-8e50-0a8dfcb4eb50**
 1. In the **Essentials** section, click **Add an Application ID URI**
 1. Click **Add a scope**
 1. Application ID URI will be generated for you. Click **Save and continue**
@@ -73,11 +73,11 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter the **openID profile Azure-B2B-Application-ID-URI/user_impersonation** where **Azure-B2B-Applicatio-ID-URI** of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation".
+1. In the **Scope** field, enter the **openID profile <Azure-B2B-Application-ID-URI>/user_impersonation** where **<Azure-B2B-Application-ID-URI>** is the ID of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation". 
 1. In the **Response Mode** field, select **form\_post**.
 1. In the **Response Type** field, select **code**.
 1. Under **Identity provider claims mapping**, select the following claims:
-
+ 
     1. For **User ID**, select **sub**.
     1. For **Display name**, select **name**.
     1. For **Given name**, select **given\_name**.
