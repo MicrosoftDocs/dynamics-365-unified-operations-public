@@ -23,26 +23,26 @@ This article describes how to set up and configure on behalf of (OBO) functional
 
 ## Add identity providers to Commerce shared parameters
 
-First, you must add the identity provider or providers that you [created](obo-create-aad-application.md) for the Azure Active Directory (Azure AD) business-to-consumer (B2C) application to Commerce shared parameters in Commerce headquarters.
+First, you must add to Commerce shared parameters in Commerce headquarters the identity provider that you [created](obo-create-aad-application.md)
 
 To add identity providers to Commerce shared parameters in headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters \> Identity Providers**.
 1. Under **Identity providers**, select **Add**, and then set the following fields:
 
-    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>`.
+    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>`, where your TENANTID is the ID of AAD B2B Tenant.
     1. **Type:** Select **Azure Active Directory**.
-    1. **Name:** Enter a name that describes the identity provider.
+    1. **Name:** Enter any name
 
 1. Under **Relying parties**, select **Add**, and then set the following fields:
 
-    1. **ClientID:** Enter the client ID of Azure AD B2C application.
+    1. **ClientID:** Enter the client ID of Azure AD B2B application, for example, **8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**
     1. **Type:** Select **Confidential**.
     1. **User Type:** Select **Worker**.
 
 1. Under **Server resource IDs**, select **Add**, and then set the following fields:
 
-    1. **Server Resource Id:** Enter `https://APPLICATIONIDURI`.For example, **api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**
+    1. **Server Resource Id:** Enter `https://APPLICATIONIDURI`.For example, **api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**, where the APPLICATIONIDURI is the ID of the Azure AD B2B Application
     1. **Name:** Leave this field blank.
   
 1. On the Action Pane,select **Save**.   
