@@ -87,3 +87,37 @@ The following table lists the features that have been removed from Feature manag
 |Identification information for Bank accounts located in Japan|The related functionality is enabled out of the box.| Cash and bank management |
 |Vendor payment proposal automation|The related functionality is enabled out of the box.| Accounts payable|
 
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Finance version 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=805875).
+
+### Regulatory updates
+
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
+
+### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+
+### Removed and deprecated features
+
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
