@@ -54,12 +54,6 @@ The following table lists the features that are included in this release. We mig
 |Cash and bank management|Use the time zone option on bank statement import page for BAI2 format bank statement id generation.|If a bank statement format uses time stamp to generate bank statement id, this feature uses the time zone option on bank statement import page instead of the user option.|Feature management|
 |General ledger|	Post foreign currency realized gains/losses for ledger settlements|	This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances usability to the Ledger settlement process by reducing the effort needed to mark vouchers.|	Feature management|
 
-## Feature enhancements included in this release
-
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-finance).
-
-| Feature area | Feature name | More information |
-|--------------|--------------|------------------|
 
 ## Features turned on by default in this release
 
@@ -81,7 +75,7 @@ The following table lists the features that are turned on by default in version 
 
 ## Features removed from Feature management
 
-The following table lists the features that have been removed from Feature management in  version 10.0.36.
+The following table lists the features that have been removed from Feature management in version 10.0.36.
 
 | Feature name |  Feature state | Module |
 |--------------|---------------|--------|
