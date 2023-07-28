@@ -4,16 +4,11 @@ description: This article describes the publish groups feature in Microsoft Dyna
 author: phinneyridge
 ms.date: 07/28/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
-ms.dyn365.ops.version: Release 10.0.8
-ms.search.industry: 
-ms.search.form: 
 
 ---
 
