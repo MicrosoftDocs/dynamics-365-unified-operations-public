@@ -20,8 +20,6 @@ ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 
 [!include [banner](../includes/banner.md)]
 
-## Overview
-
 This article describes how to set up and generate a value-added tax (VAT) declaration for Switzerland in the official XML format (eCH-0217 eMWST standard). It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
@@ -47,7 +45,7 @@ The VAT declaration in Switzerland contains the following information.
 | 230            | suppliesExemptFromTax         | Supplies that are provided in Swiss territory that is exempt from the tax without credit (article 21), and where the option for taxation according to article 22 hasn't been exercised.                                                                                   | Turnover lookup | SuppliesExemptFromTax                                                                                                                            |
 | 235            | reductionOfConsideration      | Reduction of consideration, such as discounts and rebates.                                                                                                                                                                                                                | Turnover lookup | ReductionOfConsideration                                                                                                                         |
 | 280            | variousDeduction              | Miscellaneous, such as land value and purchase prices in the event of margin taxation.                                                                                                                                                                                    | Turnover lookup | VariousDeduction                                                                                                                                 |
-| 289            | Not applicable                | Total lines220 through280.                                                                                                                                                                                                                                                | Total           | 220 + 221 + 225 + 230 + 235 + 280                                                                                                                |
+| 289            | Not applicable                | Total lines 220 through 280.                                                                                                                                                                                                                                                | Total           | 220 + 221 + 225 + 230 + 235 + 280                                                                                                                |
 | 299            | Not applicable                | Taxable turnover (Line 200 minus Line 289).                                                                                                                                                                                                                               | Total           | 200 – 289                                                                                                                                        |
 
 **SECTION II - TAX CALCULATION**
@@ -59,25 +57,25 @@ The VAT declaration in Switzerland contains the following information.
 | 303  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at a standard rate.          | Report field lookup | SuppliesStandardRate2024 |
 | 313  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at a reduced rate.           | Report field lookup | SuppliesReducedRate2024  |
 | 343  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2024, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate2024 |
-| 383  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2024.          | Report field lookup | SuppliesAcquisitionTax2024</br> UseTaxAcquisitionTax2024 (This result is also reported in full on line 400.)</br> UseTaxInvestmentsAquisitionTax2024 (This result is also reported in full on line 405.)</br> Non-deductible tax amount, if any is reported on line 415. |
+| 383  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2024.          | Report field lookup | SuppliesAcquisitionTax2024<br>UseTaxAcquisitionTax2024 (This result is also reported in full on line 400.)<br>UseTaxInvestmentsAquisitionTax2024 (This result is also reported in full on line 405.)<br>Non-deductible tax amount, if any is reported on line 415 |
 | 302  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a standard rate.          | Report field lookup | SuppliesStandardRate |
 | 312  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at a reduced rate.           | Report field lookup | SuppliesReducedRate  |
 | 342  | supplierTaxRate / tax rate tax amount | Supplies from January 1, 2018, at an accommodation rate.    | Report field lookup | SuppliesAccomodationRate |
-| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018           | Report field lookup | SuppliesAcquisitionTax</br> UseTaxAcquisitionTax (This result is also reported in full on line 400.)</br> UseTaxInvestmentsAquisitionTax (This result is also reported in full on line 405.)</br> Non-deductible tax amount, if any is reported on line 415 |
+| 382  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies from January 1, 2018.          | Report field lookup | SuppliesAcquisitionTax<br>UseTaxAcquisitionTax (This result is also reported in full on line 400.)<br>UseTaxInvestmentsAquisitionTax (This result is also reported in full on line 405.)<br>Non-deductible tax amount, if any is reported on line 415 |
 | 301  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a standard rate. This field is discontinued from January 1, 2024. | Report field lookup | SuppliesOldStandardRate\[DISCONTINUED\] |
 | 311  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at a reduced rate. This field is discontinued from January 1, 2024.        | Report field lookup | SuppliesOldReducedRate\[DISCONTINUED\]  |
 | 341  | supplierTaxRate / tax rate tax amount | Supplies up to December 31, 2017, at an accommodation rate. This field is discontinued from January 1, 2024. | Report field lookup | SuppliesAccomodationOldRate\[DISCONTINUED\] |
-| 381  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies up to December 31, 2017.  This field is discontinued from January 1, 2024. | Report field lookup | SuppliesAcquisitionTaxOldRate\[DISCONTINUED\] |
+| 381  | acquisitionTax / tax rate tax amount  | Acquisition tax for supplies up to December 31, 2017. This field is discontinued from January 1, 2024. | Report field lookup | SuppliesAcquisitionTaxOldRate\[DISCONTINUED\] |
 | 399  | Not applicable                        | Total amount of tax due (Lines 301 through 382).            | Total               | 302 + 312 + 342 + 382 + 303 + 313 + 343 + 383 |
 
 **Input tax**
 
 | Line | XML element                 | Description                                                                                                                                                         | Lookup              | Lookup result                                                                                                                                    |
 |------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| 400  | inputTaxMaterialAndServices | Input tax on the cost of materials and supplies of services.                                                                                                        | Report field lookup | InputTaxMaterialAndServices (reported in full)</br> UseTaxAcquisitionTax (reported in full)</br> Non-deductible tax amount, if any is reported on line 415 |
-| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full)</br> UseTaxInvestmentsAquisitionTax (reported in full)</br> Non-deductible tax amount, if any is reported on line 415                                                 |
+| 400  | inputTaxMaterialAndServices | Input tax on the cost of materials and supplies of services.                                                                                                        | Report field lookup | InputTaxMaterialAndServices (reported in full)<br> UseTaxAcquisitionTax (reported in full)<br> Non-deductible tax amount, if any is reported on line 415 |
+| 405  | inputTaxInvestments         | Input tax on investments and other operating costs.                                                                                                                 | Report field lookup | InputTaxInvestments (reported in full)<br>UseTaxInvestmentsAquisitionTax (reported in full)<br>Non-deductible tax amount, if any is reported on line 415                                                 |
 | 410  | subsequentInputTaxDeduction | De-taxation (article 32). You should enclose a detailed list.                                                                                                       | Report field lookup | SubsequentInputTaxDeduction                                                                                                                      |
-| 415  | inputTaxCorrections         | Correction of the input tax deduction, both mixed use (article 30) and own use (article 31).                                                                        | Report field lookup | InputTaxCorrections (reported in full but with the sign inverted)</br>Also non-deductible tax amount of transactions from lines 400, 405 is reported here                                                                                 |
+| 415  | inputTaxCorrections         | Correction of the input tax deduction, both mixed use (article 30) and own use (article 31).                                                                        | Report field lookup | InputTaxCorrections (reported in full but with the sign inverted)<br>Also non-deductible tax amount of transactions from lines 400, 405 is reported here                                                                                 |
 | 420  | inputTaxReductions          | Reduction of the input tax deduction: the flow of funds that aren't deemed to be in consideration, such as subsidies and tourist charges (article 33, paragraph 2). | Report field lookup | InputTaxReductions (reported in full with the sign inverted)                                                                                     |
 | 479  | Not applicable              | Total lines 400 through 420.                                                                                                                                        | Total               | 400 + 405 + 410 – 415 – 420                                                                                                                      |
 | 500  | Not applicable              | The amount that is payable.                                                                                                                                         | Total               | 399 – 479, if 399-479 is positive                                                                                                                |
@@ -135,7 +133,7 @@ Open the **Electronic reporting** workspace, and import the following versions o
 - VAT Declaration XML (CH) version 96.16
 - VAT Declaration Excel (CH) version 96.16.9
 
-### <a name="set-up-application-specific-parameters-for-vat-declaration-fields">Set up application-specific parameters for VAT declaration fields</a>
+### <a name="set-up-application-specific-parameters-for-vat-declaration-fields"></a>Set up application-specific parameters for VAT declaration fields
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
@@ -155,14 +153,14 @@ Follow these steps to define which sales tax codes generate which boxes in secti
    |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | Lookup result          | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.                                                                                         |
    | Tax code               | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box.   |
-   | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available: <br>- **Purchase**<br>- **PurchaseExempt** (tax-exempt purchase) <br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge) <br>- **Sales** <br>- **SalesExempt** (tax-exempt sale) <br>- **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge) <br>- **Use tax** <br> For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).|
+   | Transaction classifier | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p> |
 
 
 
    > [!NOTE]
    > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section I, associate with the **Other** lookup result.
 
-   ![Application specific parameters page for Turnover lookup;Application specific parameters page for Turnover lookup](media/f99d7ff6529a58623732e112cf864230.png)
+   ![Application specific parameters page for Turnover lookup.](media/f99d7ff6529a58623732e112cf864230.png)
 
 #### Set up Report field lookup
 
@@ -174,7 +172,7 @@ Follow these steps to define which sales tax codes generate which boxes in secti
    > [!NOTE]
    > Be sure to associate all sales tax codes with lookup results. If any sales tax codes should not generate values in section II, associate them with the **Other** lookup result.
 
-   ![Application specific parameters page for Report field lookup;Application specific parameters page for Report field lookup](media/b440aab1d394fb9e98f12aed5d96582d.png)
+   ![Application specific parameters page for Report field lookup.](media/b440aab1d394fb9e98f12aed5d96582d.png)
 
 #### Set up Other cash flow lookup
 
@@ -186,12 +184,12 @@ Follow these steps to define which sales tax codes generate the amount in sectio
    > [!NOTE]
    > As the last line in the setup, create a line where you associate the **\*Not blank\*** value of the tax code with the **Other** lookup result. This line indicates that all other sales tax codes that aren't defined in previous rows don't generate amounts in section III.
 
-   ![Application specific parameters page for Other cash flow lookup](media/2ddd539a62e69bc03c346fb8c90e6299.png)
+   ![Application specific parameters page for Other cash flow lookup.](media/2ddd539a62e69bc03c346fb8c90e6299.png)
 
- 3. In the **State** field, change the value to **Completed**.
- 4. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
- 5. Select the **VAT declaration Excel (CH)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CH)**.
- 6. In the **State** field, select **Completed**.
+3. In the **State** field, change the value to **Completed**.
+4. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
+5. Select the **VAT declaration Excel (CH)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CH)**.
+6. In the **State** field, select **Completed**.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
@@ -240,12 +238,12 @@ The data package contains electronic message settings that are used to generate 
    | Field                     | Description                                    |
    |---------------------------|------------------------------------------------|
    | Settlement period         | Select the settlement period.                  |
-   | Sales tax payment version | Select one of the following values: <br>- **Original**: Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>- **Corrections**: Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period. <br> - **Total list**: Generate a report for all the sales tax transactions for the period, including the original and all corrections.            |
+   | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original**: Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections**: Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list**: Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul>            |
    | From date                 | Select the start date of the reporting period. |
 
 3. Select **OK**, and review the Excel report.
 
-### <a name="settle-and-post-sales-tax"> Settle and post sales tax</a>
+### <a name="settle-and-post-sales-tax"></a>Settle and post sales tax
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
 2. Set the following fields.
@@ -253,7 +251,7 @@ The data package contains electronic message settings that are used to generate 
    | Field                     | Description                                    |
    |---------------------------|------------------------------------------------|
    | Settlement period         | Select the settlement period.                  |
-   | Sales tax payment version | Select one of the following values: <br> - **Original**: Generate the original sales tax payment for the settlement period. <br> - **Latest corrections**: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.          |
+   | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original**: Generate the original sales tax payment for the settlement period.</li><li>**Latest corrections**: Generate a correction sales tax payment after the original sales tax payment for the settlement period was created.</li></ul>         |
    | From date                 | Select the start date of the reporting period. |
 
 3. Select **OK**.
@@ -288,10 +286,10 @@ The following procedure applies to the example electronic message processing tha
 9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
 10. In the **Electronic reporting parameters** dialog box, set the following fields, and then select **OK**.
 
-      | **Field**               | **Description**    |
+      | Field                   | Description         |
       |-------------------------|---------------------|
       | Settlement period       | Select the settlement period. If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments. |
-      | Tax declaration version | Select one of the following values: <br>-**Original**: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated. <br>-**Corrections**: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period. <br>- **Total list**: Generate a report for all sales tax transactions for the period, including the original and all corrections.               |
+      | Tax declaration version | <p>Select one of the following values:</p><ul><li>**Original**: Generate a report for sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections**: Generate a report for sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list**: Generate a report for all sales tax transactions for the period, including the original and all corrections.</li></ul>               |
     
     If you selected **Collect data** in step 5, you can disregard this field. The report will be generated for the sales tax transactions that are included in the collected sales tax payments.
 
@@ -300,7 +298,7 @@ The following procedure applies to the example electronic message processing tha
 13. To generate a VAT declaration in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
 14. In the **Electronic reporting parameters** dialog box, set the fields as described earlier in this procedure, and then select **OK**.
 
-## <a name="run-a-vat-declaration-for-multiple-legal-entities">Run a VAT declaration for multiple legal entities</a>
+## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a>Run a VAT declaration for multiple legal entities
 
 To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
