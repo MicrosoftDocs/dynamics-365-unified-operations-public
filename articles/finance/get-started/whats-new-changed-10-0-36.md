@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.36 (September 2023)
+title: What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.36 preview release.
 author: twheeloc
 ms.date: 07/28/2023
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.36
 
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.36 (September 2023)
+# What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,8 +36,8 @@ ms.dyn365.ops.version: 10.0.36
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.36. This version has a build number of 10.0.XXXX and is available on the following schedule:
 
 - **Preview of release:** July 2023
-- **General availability of release (self-update):** August 2023
-- **General availability of release (auto-update):** September 2023
+- **General availability of release (self-update):** September 2023
+- **General availability of release (auto-update):** October 2023
 
 ## Features included in this release
 
