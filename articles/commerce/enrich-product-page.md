@@ -14,6 +14,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
 ms.assetid: 
+
 ---
 
 # Customize a product page
@@ -24,9 +25,10 @@ This article describes how to customize a product page in Microsoft Dynamics 365
 
 By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as customizing the product page.
 
-In many cases, you will want to use specific additional content for your products. When you go to the **Products** tab in **site builder**, you will see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
+In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
 ### Video: custom product pages overview
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1863o]
 
 ## Customize a product page
@@ -38,13 +40,14 @@ To customize a product page, follow these steps.
 1. Select any product that doesn't have a customized product page.
 1. On the Action Pane, select **Customize product page**.
 1. Select a template for your custom product page, and then select **OK**.
->[NOTE!]
->To make a template automatically show up in the list that appears when the **Customize product page** button is pressed, add the tag "product" to the desired product page template.  Alternately, if you want to see all templates when choosing one for your custom product page, clear the filter at the top of the template picker modal by clicking the **X** next to the "product" tag filter.
 
-6. Edit your new custom product page by adding and configuring marketing modules and content to the page.
-1. When finished, click **Save**, and then select **Finish editing**.
+    > [!NOTE]
+    > To make a template automatically show up in the list that appears when the **Customize product page** button is selected, add the tag "product" to the desired product page template. Alternately, if you want to see all templates when choosing one for your custom product page, clear the filter at the top of the template picker modal by selecting the **X** next to the "product" tag filter.
+
+1. Edit your new custom product page by adding and configuring marketing modules and content to the page.
+1. When finished, select **Save**, and then select **Finish editing**.
 1. Select **Preview** to preview the preview the new product page in a browser or to send to test on a mobile device. When you've finished, close the preview tab to return to the authoring tool.
-1. Select **Publish** to make your page live on your website.
+1. Select **Publish** to publish your page.
 
 ## Additional resources
 
