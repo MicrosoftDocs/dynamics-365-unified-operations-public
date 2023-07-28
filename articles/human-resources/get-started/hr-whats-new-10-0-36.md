@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources 10.0.36 (September 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.36 preview release.
 author: twheeloc
-ms.date: 07/23/2023
+ms.date: 07/28/2023
 ms.topic: faq
 ms.prod: 
 ms.technology: 
