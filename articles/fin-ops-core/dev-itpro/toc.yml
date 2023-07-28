@@ -1149,6 +1149,8 @@ items:
           href: lifecycle-services/dts-visual-studio.md
         - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
+        - name: Dynamics 365 Translation Service Connector
+          href: lifecycle-services/dts-connector-info.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
