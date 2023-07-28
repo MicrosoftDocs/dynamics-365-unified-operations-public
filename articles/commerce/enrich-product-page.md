@@ -22,7 +22,7 @@ ms.assetid:
 
 This article describes how to customize a product page in Microsoft Dynamics 365 Commerce.
 
-By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as customizeing the product page.
+By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as customizing the product page.
 
 In many cases, you will want to use specific additional content for your products. When you go to the **Products** tab in **site builder**, you will see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
