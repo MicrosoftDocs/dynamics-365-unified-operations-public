@@ -1,15 +1,15 @@
 ---
 title: Prepare your environment to generate an FEC
 description: This article explains how to prepare your Microsoft Dynamics 365 Finance environment to generate a Fichier des écritures comptables (FEC) audit file.
-author: AdamTrukawka
-ms.date: 06/20/2022
+author: liza-golub
+ms.date: 07/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: France
-ms.author: atrukawk
+ms.author: egolub
 ---
 
 # Prepare your environment to generate an FEC
@@ -35,3 +35,17 @@ Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you mus
 
 > [!NOTE]
 > If you introduce a customization to the FEC ER configurations, and you don't use the **Ledger transactions export** field on the **General ledger parameters** page to predefine the format that must be used to generate FEC, we recommend that you use the *derive* function to create a customized ER format from the **FEC audit file (FR)** format in the **Electronic reporting** workspace. In this way, the new custom format will be a child configuration of **FEC audit file (FR)**. For more information about how to create a custom format, see [Create a custom format](../../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md).
+
+## Prepare your environment to generate a Missing numbers justification annex of FEC
+
+As of Finance version 10.0.33, you can set up specific number sequences to generate the [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC.
+
+1. In the **Feature management** workspace, on the **All** tab, find and select the **(France) Number sequences setup for FEC Missing numbers justification** feature, and then select **Enable now**.
+
+    Use this feature to generate the **FEC Missing numbers justification** report for specific number sequences or if numerical symbols are included in the prefix segment information of the number sequences that are used for voucher numbering. When the feature is enabled, you can specify number sequences on the **Number sequences setup for FEC Missing numbers justification** FastTab on the **Ledger** tab of the **General ledger parameters** page. The number sequences are then analyzed when the **FEC Missing numbers justification** report is generated. The prefix segment information of different number sequences must not intersect. When the feature isn't enabled, the **FEC Missing numbers justification** report analyzes all the possible number sequences that are used for voucher numbering. The assumption is that the prefix segment information of the number sequences consists of alphabetic characters and doesn't include numerical symbols.
+
+2. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+3. On the **Ledger** tab, on the **Number sequences setup for FEC Missing numbers justification** FastTab, specify the number sequences that should be analyzed when the **FEC Missing numbers justification** report is generated.
+
+> [!NOTE]
+> We recommend that you set up different formats for different number sequences. Each format should have alphanumeric segments that contain incrementing numbers but not incrementing letters, and the total value of alphanumeric segments should be less than 9,223,372,036,854,775,808 (int64). If you set up identical formats for different number sequences, or if you don't follow the preceding recommendations for alphanumeric segments, you might not be able to generate the [Missing numbers justification annex](emea-fra-fec-audit-file-structure.md#missing-numbers-justification) of FEC.  
