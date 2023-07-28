@@ -22,8 +22,8 @@ This article describes how to configure the menu items that warehouse workers us
 > This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
 
 - Process an inquiry or perform an activity, such as printing a label, generating license plate numbers, starting a production order, or quickly looking up information about items in a location.
-- Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
-- Perform work that was created by another process (existing work), such as put-away work that was created when an item was received for a purchase order.
+- Create work that will be performed through another process. For example, receiving an item for a purchase order can create putaway work for another worker.
+- Perform work that was created by another process (existing work), such as putaway work that was created when an item was received for a purchase order.
 
 To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
@@ -59,11 +59,11 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Container creation | Enable the container creation process. This process is typically part of the process of [packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Container closing | Enable the container closing process. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). For more information, see [Container label layouts and printing](print-container-labels.md). |
-| Receiving completed confirmation | Enable support for receiving clerks to indicate _Receiving completed_ for a load. |
+| Receiving completed confirmation | Enable support for receiving clerks to indicate *Receiving completed* for a load. |
 
 ## Configure menu items to create work for another worker or process
 
-You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, put-away work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
+You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, putaway work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
 
 <table>
 <tbody>
@@ -75,26 +75,26 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="8">Inbound shipment order</td>
 <td>Inbound shipment order line receiving</td>
-<td>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and create put-away work for another worker.
-<p>Note that a load must exist for this process.</p>
+<td>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and create putaway work for another worker.
+<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order line receiving and put away</td>
 <td>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and put the items away. The same worker performs both actions.
-<p>Note that a load must exist for this process.</p>
+<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order item receiving</td>
-<td>Register the receipt of a quantity of an item for a inbound shipment order by registering the order number and item number, and create put-away work for another worker.
-<p>Note that a load must exist for this process.</p>
+<td>Register the receipt of a quantity of an item for a inbound shipment order by registering the order number and item number, and create putaway work for another worker.
+<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order item receiving and put away</td>
 <td>Register the receipt of a quantity of an item for a inbound shipment order by registering the order number, and put the item away. The same worker performs both actions.
-<p>Note that a load must exist for this process.</p>
+<p>A load must exist for this process.</p>
 </td>
 </tr>
 <td>License plate receiving</td>
@@ -106,7 +106,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Load item receiving</td>
-<td>Register the receipt of a quantity for a load by using the load ID, and create put-away work for another worker. The item number and product dimensions match the receipt to the order lines.</td>
+<td>Register the receipt of a quantity for a load by using the load ID, and create putaway work for another worker. The item number and product dimensions match the receipt to the order lines.</td>
 </tr>
 <tr>
 <td>Load item receiving and put away</td>
@@ -115,7 +115,7 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="8">Purchase order</td>
 <td>Purchase order line receiving</td>
-<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create put-away work for another worker.</td>
+<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Purchase order line receiving and put away</td>
@@ -123,7 +123,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Purchase order item receiving</td>
-<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number and item number, and create put-away work for another worker.</td>
+<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number and item number, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Purchase order item receiving and put away</td>
@@ -139,7 +139,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Load item receiving</td>
-<td>Register the receipt of a quantity for a load by using the load ID, and create put-away work for another worker. The item number and product dimensions match the receipt to the purchase order lines.</td>
+<td>Register the receipt of a quantity for a load by using the load ID, and create putaway work for another worker. The item number and product dimensions match the receipt to the purchase order lines.</td>
 </tr>
 <tr>
 <td>Load item receiving and put away</td>
@@ -148,7 +148,7 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="2">Return order</td>
 <td>Return order receiving</td>
-<td>Register the receipt of a quantity of an item by registering the RMA number, and create put-away work for another worker.</td>
+<td>Register the receipt of a quantity of an item by registering the RMA number, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Return order receiving and put away</td>
@@ -157,7 +157,7 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="6">Transfer order</td>
 <td>Transfer order item receiving</td>
-<td>Register the receipt of a quantity of an item, and create put-away work for another worker.
+<td>Register the receipt of a quantity of an item, and create putaway work for another worker.
 <strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr>
@@ -167,7 +167,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Transfer order line receiving</td>
-<td>Register the receipt of a quantity of an item, and create put-away work for another worker.</td>
+<td>Register the receipt of a quantity of an item, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Transfer order line receiving and put away</td>
@@ -184,7 +184,7 @@ You can set up a menu item that creates work for another worker after an initial
 <tr>
 <td rowspan="4">Production</td>
 <td>Report as finished</td>
-<td>Register a quantity of a finished item that has been finished for a production, and create put-away work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
+<td>Register a quantity of a finished item that has been finished for a production, and create putaway work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
 </tr>
 <tr>
 <td>Report as finished and put away</td>
@@ -192,7 +192,7 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 <tr>
 <td>Kanban</td>
-<td>Indicate that a kanban is completed, and create put-away work for another worker.</td>
+<td>Indicate that a kanban is completed, and create putaway work for another worker.</td>
 </tr>
 <tr>
 <td>Kanban put away</td>
@@ -314,7 +314,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Anchoring</td>
-<td>Select this option to let workers specify a location that overrides the suggested staging or loading location. All the remaining put-away work is directed to the new location. This option is useful when, for example, a worker who must put items for order 1 in a staging location by Dock 1 can't, because a previous load hasn't cleared the location. Instead of waiting for the Dock 1 staging location to become available, the worker can decide to use the staging location for Dock 2. In this case, the worker overrides the suggested staging location. The put location for all remaining items for the work order is then updated to the Dock 2 staging location. If you select this option, you must set the <strong>Anchor by</strong> field.</td>
+<td>Select this option to let workers specify a location that overrides the suggested staging or loading location. All the remaining putaway work is directed to the new location. This option is useful when, for example, a worker who must put items for order 1 in a staging location by Dock 1 can't, because a previous load hasn't cleared the location. Instead of waiting for the Dock 1 staging location to become available, the worker can decide to use the staging location for Dock 2. In this case, the worker overrides the suggested staging location. The put location for all remaining items for the work order is then updated to the Dock 2 staging location. If you select this option, you must set the <strong>Anchor by</strong> field.</td>
 </tr>
 <tr class="odd">
 <td>Anchor by</td>
@@ -370,7 +370,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Group put away</td>
-<td>Select this option to group the put-away work. This option is available when the work was grouped either by the worker or by Supply Chain Management. When the worker has finished all the picking work in the group, put-away work is created for the same group.</td>
+<td>Select this option to group the putaway work. This option is available when the work was grouped either by the worker or by Supply Chain Management. When the worker has finished all the picking work in the group, putaway work is created for the same group.</td>
 </tr>
 <tr class="even">
 <td>Inventory adjustment types</td>
@@ -423,7 +423,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Work template code</td>
-<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don&#39;t select a work template, Supply Chain Management assigns a template, based on query criteria. For more information about work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
+<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the putaway work will be generated based on the work template. If you don&#39;t select a work template, Supply Chain Management assigns a template, based on query criteria. For more information about work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
 <tr class="even">
 <td>Show work line list</td>
 <td>Select an option for how workers will be able to view and interact with the lines for the currently selected picking work. For more information about this option, see <a href="pick-line-overview.md">Set up a mobile device menu item to provide a pick line overview</a>.</td>

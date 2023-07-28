@@ -183,7 +183,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
-| Supply Chain Management development | [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md) |
+| Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)

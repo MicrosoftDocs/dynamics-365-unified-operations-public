@@ -297,7 +297,7 @@ The external system and the D365 SCM WMS on-hand is in sync:
 
 **WHEN1:**
 
-D365 SCM WMS receives item number A0001 10 pcs against an inbound shipment order without _Receiving completed_ processing and thereby not informing the external system about this yet!
+D365 SCM WMS receives item number A0001 10 pcs against an inbound shipment order without *Receiving completed* processing and thereby not informing the external system about this yet!
 
 **THEN1:**
 
