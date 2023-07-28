@@ -34,7 +34,7 @@ When the new media assignments are staged, you can use feature switches to updat
 To configure omnichannel media management features in your Commerce environments, follow these steps.
 
 > [!NOTE]
-    > Always run and validate the following steps in your dev and/or UAT environment first before promoting to a production environment.
+> Always run and validate the following steps in your dev and/or UAT environment first before promoting to a production environment.
 
 1. In site builder, go to **Tenant settings \> Features**, set the **Omnichannel content** feature flag to **On**, and then select **Save and publish**. These actions make all omnichannel content authoring controls visible in site builder.
 1. In headquarters, go to **Workspaces \> Feature management**.
@@ -61,7 +61,7 @@ To configure omnichannel media management features in your Commerce environments
 1. For any e-commerce channels, open site builder, and go to each site's **Site settings \> Extensions** controls. Select the **Enable omnichannel media management** feature switch until a check mark appears, and then select **Save and publish**.
     > [!NOTE]
     > If you do not see the **Enable omnichannel media management** feature switch under a site's **Site settings \> Extensions**, then you will need to do the following:
-    > 1. Read the documentation on how to [update your site's app.settings.json file](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates#update-the-appsettingsjson-file)
+    > 1. Read the documentation on how to [update your site's app.settings.json file](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
     > 2. Add the following to your app.settings.json file:
     >    ```javascript
     >    "OmniChannelMedia":{
@@ -72,7 +72,7 @@ To configure omnichannel media management features in your Commerce environments
     >        "group": "General"
     >        }   
     >    ```
-1. If you have an existing custom e-commerce deployment, you will need to update and re-deploy your site's e-commerce modules and data actions to leverage new omnichannel media scenarios such as 'additional media' and 'product videos'.  Refer to [this article](https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/sdk-updates#pull-updates) for instructions on how to pull the latest module library dependencies into your development environment.
+1. If you have an existing custom e-commerce deployment, you will need to update and re-deploy your site's e-commerce modules and data actions to leverage new omnichannel media scenarios such as 'additional media' and 'product videos'. Refer to [this article](e-commerce-extensibility/sdk-updates.md#pull-updates) for instructions on how to pull the latest module library dependencies into your development environment.
 
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
