@@ -45,15 +45,14 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-|Cash and bank management|Enable check number validation|This feature enables the **Allow check number validation** feature in Cash and bank management to validate check numbers when users generates a payment. With the parameter turned on, the check number is validated to see if it exceeds the defined interval with last check number. Users can set up the check number interval. If the check number exceeds the defined interval with last check number, user needs to confirm before proceeding to avoid entering wrong check number manually. It also validates that there is not a character in the check number.|Feature management|
-|Cash and bank management|Generate customer and vendor payments from bank statements and reconciliation.|This feature enhances the bank statement and reconciliation worksheet. Users can generate and post customer and vendor payment journals from selected bank statement lines directly. The posted customer and vendor payment journals are automatically matched with the original bank statement lines. This is a preview feature available in sandbox environments in version Dynamics 365 Finance 10.0.36.|Feature management|
-|Cash and bank management|Improved advanced bank reconciliation by enabling group conditions in reconciliation matching rules.|In advanced bank reconciliation, grouping conditions are available in the reconciliation matching rules setup to match bank statement lines with bank documents in a many to many way.|Feature management|
-|Cash and bank management|Automatic importing bank statement from a SharePoint folder.|This feature imports bank statement files from a SharePoint folder and allows users to set up recurrence rules to import the files periodically.|Feature management|
-|Cash and bank management|Bank foreign currency revaluation enhancements|Prior to this feature, the bank foreign currency revaluation process considered every financial dimension value when calculating the gain or loss. This feature allows your organization to select to use all or none of the financial dimensions when calculating the gain or loss. In addition, this feature changes the calculation logic. The calculation will first calculate the balance of the bank account, either with all financial dimensions or no financial dimensions, and then calculate the unrealized gain or loss per ledger account.  <p>**IMPORTANT:** This feature can't be disabled after it's been enabled. <p> |Feature management|
-|Cash and bank management|Accounts payable and accounts receivable foreign currency revaluation performance improvement by splitting into even batches.|This feature improves the performance of the foreign currency revaluation by splitting large batches into even batches to avoid large batches from a certain vendor or customer.|Feature management|
-|Cash and bank management|Use the time zone option on bank statement import page for BAI2 format bank statement id generation.|If a bank statement format uses time stamp to generate bank statement id, this feature uses the time zone option on bank statement import page instead of the user option.|Feature management|
-|General ledger|	Post foreign currency realized gains/losses for ledger settlements|	This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances usability to the Ledger settlement process by reducing the effort needed to mark vouchers.|	Feature management|
-
+| Cash and bank management | Enable check number validation | This feature enables the **Allow check number validation** feature in Cash and bank management to validate check numbers when users generate a payment. When the parameter is turned on, the check number is validated to determine whether it exceeds the defined interval from last check number. Users can set up the check number interval. If the check number exceeds the defined interval from the last check number, the user must confirm before they proceed, to avoid manually entering the wrong check number. The feature also validates that there's no character in the check number. | Feature management |
+| Cash and bank management | Generate customer and vendor payments from bank statements and reconciliation | This feature enhances the bank statement and reconciliation worksheet. Users can generate and post customer and vendor payment journals directly from selected bank statement lines. The posted customer and vendor payment journals are automatically matched with the original bank statement lines. This feature is a preview feature and is available in sandbox environments in Finance version 10.0.36. | Feature management |
+| Cash and bank management | Improved advanced bank reconciliation by enabling group conditions in reconciliation matching rules | In advanced bank reconciliation, grouping conditions are available in the reconciliation matching rules setup, so that bank statement lines can be matched with bank documents in a many-to-many manner. | Feature management |
+| Cash and bank management | Automatic importing bank statement from a SharePoint folder | This feature imports bank statement files from a SharePoint folder and lets users set up recurrence rules to periodically import the files. | Feature management |
+| Cash and bank management | Bank foreign currency revaluation enhancements | <p>Before this feature, the bank foreign currency revaluation process considered every financial dimension value when the gain or loss was calculated. This feature lets your organization select to use all or none of the financial dimensions when the gain or loss is calculated. In addition, this feature changes the calculation logic. The calculation first calculates the balance of the bank account, with either all financial dimensions or no financial dimensions. It then calculates the unrealized gain or loss per ledger account.</p><p>**Important:** This feature can't be disabled after it's been enabled.</p> | Feature management |
+| Cash and bank management | Accounts payable and accounts receivable foreign currency revaluation performance improvement by splitting into even batches | This feature improves the performance of foreign currency revaluation by splitting large batches into even batches to prevent large batches from a specific vendor or customer. | Feature management |
+| Cash and bank management | Use the time zone option on bank statement import page for BAI2 format bank statement id generation | If a bank statement format uses time stamps to generate bank statement IDs, this feature uses the time zone option on the bank statement import page instead of the user option. | Feature management |
+| General ledger | Post foreign currency realized gains/losses for ledger settlements | This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances the usability of the ledger settlement process by reducing the effort that's required to mark vouchers. | Feature management |
 
 ## Features turned on by default in this release
 
@@ -61,37 +60,36 @@ The following table lists the features that are turned on by default in version 
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
-|Financial tags|	On by default|	General ledger|
-|(Italy) Fiscal journal page numbering improvements|	Mandatory|	General ledger|
-|Journal reversal no longer requires consecutive number sequence	|Mandatory	|General ledger|
-|Allow edits to internal data on general ledger vouchers	|Mandatory	|General ledger|
-|Amount details from **General journal account** entry are displayed on the **Trial balance with transactional detail** report	|Mandatory|	General ledger|
-|Awareness between ledger settlement and year-end close|	On by default|	General ledger|
-|Add a date filter when viewing unsettled ledger transactions|	Mandatory|	General ledger|
-|New voucher and date for new transactions in the advanced bank reconciliation bank statement| On by default| Cash and bank management|
-|Ability to post detailed vendor and customer payments, but summarize amounts to bank account| On by default| Cash and bank management|
-|Time zone for importing bank statements using Electronic reporting| On by default| Cash and bank management|
-
+| Financial tags | On by default | General ledger |
+| (Italy) Fiscal journal page numbering improvements | Mandatory | General ledger |
+| Journal reversal no longer requires consecutive number sequence | Mandatory | General ledger |
+| Allow edits to internal data on general ledger vouchers | Mandatory | General ledger |
+| Amount details from **General journal account** entry are displayed on the **Trial balance with transactional detail** report | Mandatory | General ledger |
+| Awareness between ledger settlement and year-end close | On by default | General ledger |
+| Add a date filter when viewing unsettled ledger transactions | Mandatory | General ledger |
+| New voucher and date for new transactions in the advanced bank reconciliation bank statement | On by default | Cash and bank management |
+| Ability to post detailed vendor and customer payments, but summarize amounts to bank account | On by default | Cash and bank management |
+| Time zone for importing bank statements using Electronic reporting | On by default | Cash and bank management |
 
 ## Features removed from Feature management
 
 The following table lists the features that have been removed from Feature management in version 10.0.36.
 
-| Feature name |  Feature state | Module |
+| Feature name | Feature state | Module |
 |--------------|---------------|--------|
-|Reverse reconciled advanced bank reconciliation|The related functionality is enabled out of the box.| Cash and bank management |
-|Reverse posted bank statement|The related functionality is enabled out of the box.| Cash and bank management |
-|Revert to simple bank reconciliation from advanced bank reconciliation|The related functionality is enabled out of the box.| Cash and bank management |
-|Turn off set based updates for customer settlement cash discount date|The related functionality is enabled out of the box.| Accounts Receivable |
-|Enable remove open transactions of zero amount from settlement when marking transactions|The related functionality is enabled out of the box.| Cash and bank management |
-|Identification information for Bank accounts located in Japan|The related functionality is enabled out of the box.| Cash and bank management |
-|Vendor payment proposal automation|The related functionality is enabled out of the box.| Accounts payable|
+| Reverse reconciled advanced bank reconciliation | The related functionality is enabled out of the box. | Cash and bank management |
+| Reverse posted bank statement | The related functionality is enabled out of the box. | Cash and bank management |
+| Revert to simple bank reconciliation from advanced bank reconciliation | The related functionality is enabled out of the box. | Cash and bank management |
+| Turn off set based updates for customer settlement cash discount date | The related functionality is enabled out of the box. | Accounts Receivable |
+| Enable remove open transactions of zero amount from settlement when marking transactions | The related functionality is enabled out of the box. | Cash and bank management |
+| Identification information for Bank accounts located in Japan | The related functionality is enabled out of the box. | Cash and bank management |
+| Vendor payment proposal automation | The related functionality is enabled out of the box. | Accounts payable |
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.34 includes platform updates. To learn more, see [Platform updates for version 10.0.34 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-34.md).
+Dynamics 365 Finance version 10.0.36 includes platform updates. To learn more, see [Platform updates for version 10.0.36 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-36.md)
 
 ### Bug fixes
 
@@ -119,5 +117,3 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-
