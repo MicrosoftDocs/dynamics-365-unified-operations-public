@@ -191,7 +191,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import task count** field, enter the count of import tasks. This must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
 ## Job history clean up 
-The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
+By default, job history entries and related staging table data that are older than 90 days will be automatically deleted. The job history clean-up functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
 
 -   All staging tables
 
@@ -209,7 +209,7 @@ The job history clean-up functionality in data management must be used to schedu
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The **Execution history cleanup** feature must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
+The **Execution history cleanup** feature can be accessed from **Data management \> Job history cleanup**.
 
 ### Scheduling parameters
 
@@ -225,7 +225,7 @@ moving window thereby, always leaving the history for the specified number of da
 -   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch set up.
 
 > [!NOTE]
-> If records in the staging tables are not cleaned up completely, ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours. In order to continue cleanup of any remaining staging records, the job must be scheduled to run periodically.
+> If the Job history cleanup feature is not used, execution history older than 90 days will still be [automatically deleted](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours.
 
 ## Job history clean up and archival 
 The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
