@@ -47,11 +47,11 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
 
 1. On the next page, select the business buyer organization that you want to work on behalf of.
 
-    ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners.png)
+    ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners-org.png) 
 
 1. On the next page, select the buyer that you want to work on behalf of.
     
-    ![Example of the Select a Business Partner User page.](media/obo-select-business-partner-user.png).
+    ![Example of the Select a Business Partner User page.](media/obo-select-business-partners-users.png).
 
 After this procedure is completed, you (as the account manager) now represent the buyer that you selected, and have full access to their account information, pricing, catalog information, and discounts. You can add items to the cart and create an order. Completed orders are easily distinguished from regular orders, because they're prefixed with the account manager's name.
 
@@ -63,7 +63,7 @@ You can also create a template for the buyer to use later. We recommend that you
 > - The only method of payment that's provided is **On Account**.
 > - Account managers have access to view a buyer's invoices, but they can't pay invoices.
 > - Account managers can create a new order template for the buyer. The order template won't have an additional identifier to indicate that the template was created by the account manager.
-> - Currently, the [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature isn't supported. To use the OBO functionality, you must turn that feature off.
+> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported with Catalogs starting 10.0.35 release. 
 > - Any custom extensions that affect customer hierarchies or sales groups might have to be modified to support OBO functionality. Any extensions that retrieve values directly from the user context on an e-commerce site might also have to be modified.
 
 ## Additional resources
