@@ -103,7 +103,7 @@ The following table lists the features that have been removed from Feature manag
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
-|Filter active positions |The related functionality is enabled out of the box. | Personnel Management| 
+|Filter active positions |The related functionality is enabled out of the box. | Personnel management| 
 |Managers can view performance-related information for extended reports |The related functionality is enabled out of the box.| Manager self service |
 |Future dated worker transfer with cross-company compensation| The related functionality is enabled out of the box. |Compensation |
 |Human resources user experience enhancements| The related functionality is enabled out of the box.| Human resources | 
