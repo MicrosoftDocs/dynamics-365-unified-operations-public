@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Human Resources 10.0.36 (October 20
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.36 preview release.
 author: twheeloc
 ms.date: 07/28/2023
-ms.topic: faq
+ms.topic: whats-new
 ms.prod: 
 ms.technology: 
 
@@ -67,6 +67,41 @@ The following table lists the features that are turned on by default or are now 
 |Worker header control| |On by default |Personnel Management |
 |Years of service calculation| |Mandatory |Personnel Management| 
 |Workflow experience enhancements| |Mandatory |Personnel Management| 
+|Set job description on the **Position** and **Forecast position** pages be read-only|	7/22/2023|	On by default|	Human Resources|
+|Absence manager to manage leave|	7/22/2023|	Mandatory	|Human Resources|
+|Configure required attachment for leave requests|	7/22/2023|	Mandatory|	Human Resources|
+|Cross company leave view	|7/22/2023	|Mandatory|	Human Resources|
+|Leave accrual auditing	|7/22/2023|	Mandatory|	Human Resources|
+|Leave accrual deletion	|7/22/2023	|Mandatory	|Human Resources|
+|Leave accrual for a single company or a single plan	|7/22/2023|	Mandatory|	Human Resources|
+|Leave accrual holiday corrections	|7/22/2023	|Mandatory|	Human Resources|
+|Leave accrual rounding	|7/22/2023|	Mandatory|	Human Resources|
+|Leave accrual transaction auditing	|7/22/2023|	Mandatory|	Human Resources|
+|Leave and absence calendar	|7/22/2023|	Mandatory|	Human Resources|
+|Leave and absence calendar enhancements	|7/22/2023|	Mandatory	|Human Resources|
+|Leave balance view enhancements	|7/22/2023	|Mandatory	|Human Resources|
+|Leave request workflow experience enhancements	|7/22/2023|	Mandatory|	Human Resources|
+|Update time off enhancements (Leave)	|7/22/2023|	Mandatory|	Human Resources|
+|Use an employee's FTE for accruals (Leave)|	7/22/2023|	Mandatory|	Human Resources|
+|Inclusion of weekends and holidays for leave and absence|	7/22/2023|	Released|	Human Resources|
+|Hide leave balances	|7/22/2023|	Released|	Human Resources|
+|Absence manager to manage leave of absence requests|	7/22/2023|	Released|	Human Resources|
+|View all workers without employment|	7/22/2023|	Mandatory|	Human Resources|
+|Worker header control	|7/22/2023|	On by default|	Human Resources|
+|Payroll integration|	7/22/2023|	Mandatory|	Human Resources|
+|Years of service calculation|7/22/2023|	Mandatory	|Human Resources|
+|Advanced address maintenance|	7/23/2023|	On by default	|Global Address Book|
+|Enable translation for the Country/Region component of the Russian address format	|7/23/2023|	Mandatory	|Global Address Book|
+|Disable Russian address format validation	|7/23/2023|	Mandatory	|Global Address Book|
+|(Russia) Import addresses from the State Address Register (GAR)	|7/23/2023|	On by default	|Global Address Book (Tax)|
+|**Benefits bulk update** page redesign|	7/23/2023|	Moved from Preview to Generally available|	Human Resources|
+|Cross company compensation view	|7/23/2023|	On by default|	Human Resources|
+|Recruiting process management	|7/23/2023|	On by default	|Human Resources|
+|Custom links in Manager self service	|7/23/2023|	Mandatory|	Human Resources|
+|Allow proration of benefit plan contributions	|7/23/2023|	Moved from Preview to Generally available|	Human Resources|
+|Benefits compare selections	|7/23/2023|	Moved from Preview to Generally available|	Human Resources|
+
+
 
 ## Features removed from Feature management
 
