@@ -33,13 +33,14 @@ The following table lists the features that are included in this release. We mig
 | Inventory management | [Enable real-time inventory with Inventory Visibility](/dynamics365/release-plan/2023wave2/commerce/dynamics365-commerce/enable-real-time-inventory-commerce-inventory-visibility) |  This feature enables native integration between Commerce and Inventory Visibility (IV), a Dynamics 365 Supply Chain Management microservice. Customers who are licensed for both Supply Chain Management and Commerce will have the option to enable Inventory Visibility as the inventory data provider to serve commerce scenarios. On-hand inventory can be queried, reserved, and adjusted in real-time. Organizations can also configure additional inventory data sources and define custom on-hand inventory calculation formulas to fit specific business needs. | IT Pro opt-in |
 | Loyalty  |  Define loyalty cards   |  [Define loyalty cards](../tasks/define-loyalty-cards.md)  |  |
 |  Orders  | Prompt customer contact details during asynchronous order cancellation  |  If the asynchronous order cancellation feature is enabled, the store associates can be prompted to verify the customer contact information when canceling an order. This verification ensures that if there are any problems in canceling the order, the customer can be reached using the verified contact details.<p>[Customer orders in point of sale (POS)](../customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode)  |  IT Pro opt-in   |
+|   Payments   |   Google Pay on Adyen (Fix with Standard Google Pay Button)  |  Commerce now offers a dedicated "Google Pay" module to offer an alternate Google Pay solution for regular (non-express) payment in the online cart checkout process. This module uses the direct Google Pay API approach, differing from the Iframe structure used by the common payment module. This new module addresses browser limitations from Google and will support direct express checkout experiences in future iterations.<p>[Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md)  |  Developer opt-in   |
 | Receipts |  Reset receipt numbers used for various actions on a specific date.  |  [Reset receipt numbers](../reset_receipt_number_sequence.md)  |  IT Pro opt-in   |
 
 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
 Microsoft Dynamics 365 Commerce version 10.0.36 includes platform updates. To learn more, see [Platform updates for version 10.0.36 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-36.md). 
   
