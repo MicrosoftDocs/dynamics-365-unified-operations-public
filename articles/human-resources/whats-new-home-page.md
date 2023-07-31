@@ -47,7 +47,7 @@ Learn more about what's new or changed in recent releases in the links in the fo
 | 10.0.35 |  10.0.1627   | July 2023    |[What's new or changed in Dynamics 365 Human Resources 10.0.35 (July 2023)](get-started/hr-whats-new-10-0-35.md)|
 | 10.0.34 |  10.0.1591   | June 2023    |[What's new or changed in Dynamics 365 Human Resources 10.0.34 (June 2023)](get-started/hr-whats-new-10-0-34.md)|
 | 10.0.33 |  10.0.1549   | April 2023    |[What's new or changed in Dynamics 365 Human Resources 10.0.33 (April 2023)](get-started/hr-whats-new-10-0-33.md)|
-| 10.0.32 |  10.0.1515   | March 2023    |[What's new or changed in Dynamics 365 Human Resources 10.0.32 (March 2023)](get-started/hr-whats-new-10-0-32.md)|
+| 10.0.32 |  10.0.1515   | March 2023    |[What's new or changed in Dynamics 365 Human Resources 10.0.32 (March 2023)](get-started/hr-whats-new-changed-10-0-32.md)|
 | 10.0.31 |  10.0.1406 | February 2023  | [What's new or changed in Dynamics 365 Human Resources 10.0.31](get-started/whats-new-changed-10-0-31.md) |
 | 10.0.30 |  10.0.1362   | November 2022 | [What's new or changed in Dynamics 365 Human Resources 10.0.30](get-started/whats-new-changed-10-0-30.md) |
 
