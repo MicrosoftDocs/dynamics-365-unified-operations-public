@@ -1741,6 +1741,8 @@
           href: inventory/inventory-visibility-allocation.md
         - name: Inventory Visibility on-hand change schedule and available to promise
           href: inventory/inventory-visibility-available-to-promise.md
+        - name: Inventory Visibility Power BI dashboard
+          href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
