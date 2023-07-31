@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.36 of finance and operations apps (October 2023)
 description: This article lists the features that are included in the platform updates for version 10.0.36 of finance and operations apps.
 author: johnmichalak
-ms.date: 07/25/2023
+ms.date: 07/31/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-10-14
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.36 of finance and operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.36 of finance and operations apps. This version has a build number of 7.0.7036 and is available on the following schedule:
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
@@ -41,7 +41,7 @@ This section will contain a table that lists the enhancements that are included 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=831854).
 
 ### Dynamics 365: 2023 release wave 1 plan
 
