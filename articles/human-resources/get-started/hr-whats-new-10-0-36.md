@@ -62,7 +62,7 @@ The following table lists the features that are turned on by default or are now 
 |Recruiting process management | July 23, 2023 | On by default | Human Resources |
 |Custom links in Manager self service | July 23, 2023 | Mandatory | Human Resources |
 |Allow proration of benefit plan contributions | July 23, 2023 | Moved from Preview to Generally available | Human Resources |
-|Benefits Compare Selections | July 23, 2023 | Moved from preview to GA | Human Resources |
+|Benefits Compare Selections | July 23, 2023 | Moved from Preview to Generally available | Human Resources |
 |View all workers without employment|  | Mandatory| Personnel Management| 
 |Worker header control| |On by default |Personnel Management |
 |Years of service calculation| |Mandatory |Personnel Management| 
