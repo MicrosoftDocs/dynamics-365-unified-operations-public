@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "articles/commerce/personalization-gdpr.md",
-      "redirect_url": "/dynamics365/commerce/personalization-opt-out",
+      "redirect_url": "opt-out-personalization",
       "redirect_document_id": "false"
     },
     {
