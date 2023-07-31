@@ -32,7 +32,7 @@ The Feature management experience provides a workspace where you can view a list
 For more information, see [Feature management overview](feature-management/feature-management-overview.md).
 
 ## Data management job history clean up
-[Job history clean-up functionality](../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up) in Data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the existing staging table clean-up functionality, which is now deprecated.
+[Job history clean-up functionality](../../dev-itpro/data-entities/data-import-export-job.md#job-history-cleanup) in Data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the existing staging table clean-up functionality, which is now deprecated.
 
 ## Business events catalog security
 [Role-based security](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) can be now applied to individual business events in the business event catalog. When this security is enabled and configured, users will be able to only view and subscribe to business events to which their roles have access. This security also applies to integration scenarios, such as Microsoft Flow.
