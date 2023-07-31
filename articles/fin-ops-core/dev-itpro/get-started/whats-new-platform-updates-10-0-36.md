@@ -37,7 +37,7 @@ This section will contain a table that lists the enhancements that are included 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+|Data Management|Job history cleanup| By default, job history entries and related staging table data that are older than 90 days will be automatically deleted. The Job history cleanup feature in Data management can be used to create a Job history cleanup batch job with a lower value configured for job history retention.|On by default|
 
 ### Bug fixes
 
