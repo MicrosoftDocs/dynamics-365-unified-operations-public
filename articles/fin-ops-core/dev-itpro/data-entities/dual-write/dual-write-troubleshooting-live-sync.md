@@ -359,7 +359,7 @@ To resolve this issue:
 - The system administrator can enable the configuration keys for all fields on the entity, or
 - Create a new entity that includes only fields covered by enabled configuration keys, and create a new dual-write map for the new data entity.
 
-See [Configuration keys and data entities](../config-key-entities) for more information on enabling configuration keys and how they affect data entities.
+See [Configuration keys and data entities](../config-key-entities.md) for more information on enabling configuration keys and how they affect data entities.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
