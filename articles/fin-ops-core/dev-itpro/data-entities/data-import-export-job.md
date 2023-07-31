@@ -3,8 +3,8 @@
 
 title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
-author: peakerbl
-ms.date: 08/26/2022
+author: pnghub
+ms.date: 08/01/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
+To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean-up, or convert data before you move it.
 
 > [!NOTE]
 > This article assumes that you are familiar with [data entities](data-entities.md).
@@ -46,7 +46,7 @@ Here are the steps to import or export data.
     - Define the project category.
     - Identify the entities to import or export.
     - Set the data format for the job.
-    - Sequence the entities, so that they are processed in logical groups and in an order that makes sense.
+    - Sequence the entities, so that they're processed in logical groups and in an order that makes sense.
     - Determine whether to use staging tables.
 
 2. Validate that the source data and target data are mapped correctly.
@@ -55,10 +55,10 @@ Here are the steps to import or export data.
 5. Validate that the job ran as expected by reviewing the job history.
 6. Clean up the staging tables.
 
-The remaining sections of this article provide more details about each step of the process.
+The remaining sections of this article provide more information about each step of the process.
 
 > [!NOTE]
-> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.
+> In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that aren't run in a batch.
 
 ## Create an import or export job
 A data import or export job can be run one time or many times.
@@ -79,10 +79,10 @@ When you select an entity, you must select the format of the data that will be e
 | Delimited, fixed width | Comma, semicolon, tab, vertical bar, colon | \-NA-                     |
 
 > [!NOTE]
-> It is important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
+> It's important to select the correct value for **Row delimiter**, **Column delimiter**, and **Text qualifier**, if the **File format** option is set to **Delimited**. Make sure that your data doesn't contain the character used as delimiter or qualifier, as this may result in errors during import and export.
 
 > [!NOTE]
-> For XML-based file formats, make sure to only use legal characters. For more details about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
+> For XML-based file formats, make sure to only use legal characters. For more information about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
 
 Use Unicode instead of a specific code page to import or export data. This will help provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
 
@@ -95,7 +95,7 @@ Use Unicode instead of a specific code page to import or export data. This will 
 | 65000	    | Unicode (UTF-7)             |
 | 65001     | Unicode (UTF-8)             |
 
-For more details about Code pages, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers/).
+For more information about Code pages, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers/).
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 
@@ -138,17 +138,17 @@ You can generate a mapping on the page by selecting **Generate source mapping**.
 ![Data mapping.](./media/dixf-map.png)
 
 ## Verify the security for your import or export job
-Access to the **Data management** workspace can be restricted, so that non-administrator users can access only specific data jobs. Access to a data job implies full access to the execution history of that job and access to the staging tables. Therefore, you must make sure that appropriate access controls are in place when you create a data job.
+Access to the **Data management** workspace can be restricted, so that nonadministrator users can access only specific data jobs. Access to a data job implies full access to the execution history of that job and access to the staging tables. Therefore, you must make sure that appropriate access controls are in place when you create a data job.
 
 ### Secure a job by roles and users
 Use the **Applicable roles** menu to restrict the job to one or more security roles. Only users in those roles will have access to the job.
 
-You can also restrict a job to specific users. When you secure a job by users instead of roles, there is more control if multiple users are assigned to a role.
+You can also restrict a job to specific users. When you secure a job by users instead of roles, there's more control if multiple users are assigned to a role.
 
 ### Secure a job by legal entity
 Data jobs are global in nature. Therefore, if a data job was created and used in a legal entity, the job will be visible in other legal entities in the system. This default behavior might be preferred in some application scenarios. For example, an organization that imports invoices by using data entities might provide a centralized invoice processing team that is responsible for managing invoice errors for all divisions in the organization. In this scenario, it’s useful for the centralized invoice processing team to have access to invoice import jobs from all legal entities. Therefore, the default behavior meets the requirement from a legal entity perspective.
 
-However, an organization might want to have invoice processing teams per legal entity. In this case, a team in a legal entity should have access only to the invoice import job in its own legal entity. To meet this requirement, you can configure legal entity–based access control on the data jobs by using the **Applicable legal entities** menu inside the data job. After the configuration is done, users can see only jobs that are available in the legal entity that they are currently signed in to. To see jobs from another legal entity, users must switch to that legal entity.
+However, an organization might want to have invoice processing teams per legal entity. In this case, a team in a legal entity should have access only to the invoice import job in its own legal entity. To meet this requirement, you can configure legal entity–based access control on the data jobs by using the **Applicable legal entities** menu inside the data job. After the configuration is done, users can see only jobs that are available in the legal entity that they're currently signed in to. To see jobs from another legal entity, users must switch to that legal entity.
 
 A job can be secured by roles, users, and legal entity at the same time.
 
@@ -190,7 +190,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2500 with a task count of 4 will mean, each thread will process 2500 records.
     - In the **Import task count** field, enter the count of import tasks. This must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
-## Job history clean up 
+## Job history cleanup 
 By default, job history entries and related staging table data that are older than 90 days will be automatically deleted. The job history clean-up functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
 
 -   All staging tables
@@ -209,38 +209,38 @@ By default, job history entries and related staging table data that are older th
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The **Execution history cleanup** feature can be accessed from **Data management \> Job history cleanup**.
+The **Execution history cleanup** feature is accessed from **Data management \> Job history cleanup**.
 
 ### Scheduling parameters
 
 When scheduling the clean-up process, the following parameters must be specified to define the clean-up criteria.
 
 -   **Number of days to retain history** – This setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the clean-up job is scheduled as a recurring batch job, this setting will act like a continuously
-moving window thereby, always leaving the history for the specified number of days intact while deleting the rest. The default is 7 days.
+moving window thereby, always leaving the history for the specified number of days intact while deleting the rest. The default is seven days.
 
--   **Number of hours to execute the job** – Depending on the amount of history to be cleaned up, the total execution time for the clean-up job can vary from a few minutes to a few hours. This parameter must be set to the number of hours that the job will execute. After the clean-up job has executed for the specified number of hours, the job will exit and will resume the clean up the next time it is run based on the recurrence schedule.
+-   **Number of hours to execute the job** – Depending on the amount of history to be cleaned up, the total execution time for the clean-up job can vary from a few minutes to a few hours. This parameter must be set to the number of hours that the job will execute. After the clean-up job has executed for the specified number of hours, the job will exit and will resume the cleanup the next time it's run based on the recurrence schedule.
 
-    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence, with oldest being first for the cleanup of related execution history. It will stop picking up new execution ID’s for cleanup when the remaining execution duration is within the last 10% of the specified duration. In some cases, it will be expected that the clean-up job will continue beyond the specified max time. This will largely depend on the number of records to be deleted for the current execution ID that was started before the 10% threshold was reached. The cleanup that was started must be completed to ensure data integrity, which means that cleanup will continue despite exceeding the specified limit. When this is complete, new execution ID’s are not picked up and the clean-up job completes. The remaining execution history that was not cleaned up due to lack of enough execution time, will be picked up the next time the clean-up job is scheduled. The default and minimum value for this setting is set to 2 hours.
+    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence, with oldest being first for the cleanup of related execution history. It will stop picking up new execution ID’s for cleanup when the remaining execution duration is within the last 10% of the specified duration. In some cases, it will be expected that the clean-up job will continue beyond the specified max time. This will largely depend on the number of records to be deleted for the current execution ID that was started before the 10% threshold was reached. The cleanup that was started must be completed to ensure data integrity, which means that cleanup will continue despite exceeding the specified limit. When this is complete, new execution ID’s are not picked up and the clean-up job completes. The remaining execution history that wasn't cleaned up due to lack of enough execution time, will be picked up the next time the clean-up job is scheduled. The default and minimum value for this setting is set to 2 hours.
 
--   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch set up.
+-   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch setup.
 
 > [!NOTE]
-> If the Job history cleanup feature is not used, execution history older than 90 days will still be [automatically deleted](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cleanuproutines#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any clean up execution the job will only clean up as many execution ID's as is possible within the provided maximum hours.
+> If the Job history cleanup feature is not used, execution history older than 90 days is still [automatically deleted](../sysadmin/cleanuproutines.md#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any cleanup execution the job will only clean up as many execution IDs as is possible within the provided maximum hours.
 
-## Job history clean up and archival 
-The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
+## Job history cleanup and archival 
+The job history cleanup and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
 
-One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent seven days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
-The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
+The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for seven days in the blob during which time it can be downloaded. The default longevity of seven days for the archived file can be changed to a maximum of 90 days in the parameters.
 
 ### Changing the default settings
-This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging cleanup feature must also be turned on in feature management.
 
 To change the default setting for the longevity of the archived file, go to the data management workspace and select **Job history cleanup**. Set **Days to retain package in blob** to a value between 7 and 90 (inclusive). This will take effect on the archives that are created after this change was made.
 
 ### Downloading the archived package
-This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging clean up feature must also be turned on in feature management.
+This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging cleanup feature must also be turned on in feature management.
 
 To download the archived execution history, go to the data management workspace and select **Job history cleanup**. Select **Package backup history** to open the history form. This form shows the list of all archived packages. An archive can be selected and downloaded by selecting **Download package**. The downloaded package will be in the DIXF package format and contain the following files:
 
