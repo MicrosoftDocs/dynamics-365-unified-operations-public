@@ -1,5 +1,5 @@
 ---
-title: The anomaly detection scenario
+title: Anomaly detection scenario
 description: This article describes the anomaly detection scenario, where an alert is generated if abnormal patterns or deviations from a machine's usual behavior are detected.
 author: johanhoffmann
 ms.author: johanho
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# The anomaly detection scenario
+# Anomaly detection scenario
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

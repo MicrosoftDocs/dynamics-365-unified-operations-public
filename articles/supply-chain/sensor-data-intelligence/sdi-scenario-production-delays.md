@@ -1,5 +1,5 @@
 ---
-title: The production delays scenario
+title: Production delays scenario
 description: This article describes the production delays scenario, which generates a notification if production throughput falls below a specific threshold value.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# The production delays scenario
+# Production delays scenario
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

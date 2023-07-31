@@ -1759,17 +1759,17 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: The anomaly detection scenario
+        - name: Anomaly detection scenario
           href: sensor-data-intelligence/sdi-scenario-anomaly.md
-        - name: The asset downtime scenario
+        - name: Asset downtime scenario
           href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
-        - name: The asset maintenance scenario
+        - name: Asset maintenance scenario
           href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
-        - name: The machine status scenario
+        - name: Machine status scenario
           href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
-        - name: The product quality scenario
+        - name: Product quality scenario
           href: sensor-data-intelligence/sdi-scenario-product-quality.md
-        - name: The production delays scenario
+        - name: Production delays scenario
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
