@@ -200,7 +200,9 @@ With the Commerce version 10.0.35 release, asynchronous customer orders can be c
 > [!NOTE]
 > The **Enable asynchronous order cancellation** feature is currently marked as a preview feature because it hasn't yet been validated against localization features. 
 
-The asynchronous order cancellation experience is the same as the experience for cancelling an existing customer order. However, even though a store associate cancels the order and refunds the deposit to the customer, the original order is cancelled only after it has been created in headquarters. To ensure that the system automatically cancels the original order once it has been created in headquarters, you must run the batch jobs mentioned below at predefined intervals.
+The experience to cancel an asynchronous order is almost same as the experience for cancelling an existing customer order. The only difference from user experience perspective is that while cancelling an asynchronous order, the store associates can be prompted with the customer's primary contact details to validate these details from the customer. If any modification is required for the customer details, then the store associate can open the customer record from the transaction screen and modify the data as needed. This is helpful because while cancelling the order asynchronously, even though the cancellation action successful on POS and customer deposit is refunded, the original order is cancelled only after it has been created in headquarters. Thus, in case there is a problem in cancelling the order, then the customer can be reached using the validated information. This prompt for customer information can be enabled starting 10.0.36 release, by using the configuration "Prompt for phone number and email for asynchronous order cancellation" on the POS functionality profile form.
+
+To ensure that the system automatically cancels the original order once it has been created in headquarters, you must run the batch jobs mentioned below at predefined intervals.
 
 To create and schedule the batch jobs that ensure that **Enable asynchronous order cancellation** feature works correctly, follow these steps.
 
