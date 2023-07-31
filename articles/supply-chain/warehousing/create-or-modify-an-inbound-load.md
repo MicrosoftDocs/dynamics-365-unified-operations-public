@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Create or modify an inbound load
 description: This topic explains how to create or modify an inbound load.
 author: perlynne
-ms.date: 25/05/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: 2023-05-25
-ms.dyn365.ops.version: 10.0.36
+ms.reviewer: kamaybac
+ms.search.form: WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSParameters
+ms.topic: how-to
+ms.date: 08/01/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Create or modify an inbound load
 
-This topic explains how to create or modify an inbound load. You can use a purchase order or a inbound shipment order to create an inbound load automatically or manually. You can also modify an existing inbound load by for example adding more lines or updating the quantities.
+This topic explains how to create or modify an inbound load. You can use a purchase order or a inbound shipment order to create an inbound load automatically or manually. You can also modify an existing inbound load by, for example, adding more lines or updating the quantities.
 
-In case of wanting to use the inbound load process with transportation planning you can read more in the [Transportation management overview](../transportation/transportation-management-overview.md) section.
+For more information about how to use the inbound load process with transportation planning, see [Transportation management overview](../transportation/transportation-management-overview.md).
 
 ## Create an inbound load automatically via purchase orders
 
-To create an inbound load automatically by using a purchase order, follow these steps:
+To create an inbound load automatically from a purchase order, follow these steps:
 
 1. Go to **Warehouse management > Setup > Warehouse management parameters**.
 2. Go to **Loads**, and then enable the **Automatically create at purchase order entry** setting.
