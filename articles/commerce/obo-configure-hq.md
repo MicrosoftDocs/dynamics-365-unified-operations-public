@@ -23,7 +23,7 @@ This article describes how to set up and configure on behalf of (OBO) functional
 
 ## Add identity providers to Commerce shared parameters
 
-First, you must add to Commerce shared parameters in Commerce headquarters the identity provider that you [created](obo-create-aad-application.md)
+First, you must add to Commerce shared parameters in Commerce headquarters the identity provider that you have created in the previous [step](obo-create-aad-application.md).
 
 To add identity providers to Commerce shared parameters in headquarters, follow these steps.
 
