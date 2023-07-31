@@ -349,5 +349,18 @@ After you update the methods, follow these steps.
 2. Stop all the dual-write maps on the **smmContactPersonCDSV2Entity** and **CustCustomerV3Entity** entities.
 3. Start the maps. You should see fewer records in the **smmContactPersonCDSV2Entity** and **CustCustomerV3Entity** entities and the **BusinessEventsDefinition** table, and performance might marginally improve.
 
+## Live sync fails when configuration keys for the entity are disabled
+
+**Required role to fix the issue:** System admin
+
+The live sync for a table mapping may fail if configuration keys associated with fields on the entity are disabled. For example, the `Customers V3` entity may fail to sync if the Retail configuration key is disabled. The `Customers V3` entity includes fields from the `RetailCustTable`, which must have the Retail configuration key enabled to enable the fields, making them available for the entity. All configuration keys for fields included in an entity must be enabled for the entity to be available for dual-write live sync operations.
+
+To resolve this issue: 
+- The system administrator can enable the configuration keys for all fields on the entity, or
+- Create a new entity that includes only fields covered by enabled configuration keys, and create a new dual-write map for the new data entity.
+
+See [Configuration keys and data entities](../config-key-entities) for more information on enabling configuration keys and how they affect data entities.
+
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
