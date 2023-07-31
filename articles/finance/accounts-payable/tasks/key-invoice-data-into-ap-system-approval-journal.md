@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.
+This article explains how to use the invoice register to create invoices and then use the approval journal to update the expense accounts.  
 
 ## Create and post and invoice
 1. In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice register**.
