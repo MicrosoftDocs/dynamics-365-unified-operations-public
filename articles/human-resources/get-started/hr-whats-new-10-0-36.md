@@ -86,10 +86,6 @@ The following table lists the features that are turned on by default or are now 
 |Inclusion of weekends and holidays for leave and absence|	July 22, 2023 |	Released|	Human Resources|
 |Hide leave balances	|July 22, 2023 |	Released|	Human Resources|
 |Absence manager to manage leave of absence requests|	July 22, 2023 |	Released|	Human Resources|
-|View all workers without employment|	July 22, 2023 |	Mandatory|	Human Resources|
-|Worker header control	|July 22, 2023 |	On by default|	Human Resources|
-|Payroll integration|	July 22, 2023 |	Mandatory|	Human Resources|
-|Years of service calculation|July 22, 2023 |	Mandatory	|Human Resources|
 |Advanced address maintenance|	July 23, 2023 |	On by default	|Global Address Book|
 |Enable translation for the Country/Region component of the Russian address format	|July 23, 2023|	Mandatory	|Global Address Book|
 |Disable Russian address format validation	|July 23, 2023|	Mandatory	|Global Address Book|
