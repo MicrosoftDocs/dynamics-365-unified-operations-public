@@ -4,7 +4,7 @@
 title: Bank foreign currency revaluation 
 description: This article provides an overview of the process of bank foreign currency revaluation. It includes information about setup, running the process, the calculation for the process, and reversal of revaluation transactions.
 author: ericwangchen
-ms.date: 06/05/2023
+ms.date: 07/31/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -95,7 +95,7 @@ The following table shows three ending balances in the transaction currency (EUR
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | 20,000               | 23,500               | 1.175                   |
 | Bank - EUR   | 003                   | Not applicable        | Not applicable        | 30,000               | 36,600               | 1.22                    |
 
-Assuming the exchange rate between EUR and USD is 1:1.21 at the time point of revaluation date, then the gain/loss is calcualted as
+Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The gain/loss is calculated as follows:
 
 | Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
@@ -112,7 +112,7 @@ The following table shows one positive balance and one negative balance in the t
 | Bank - EUR   | 001                   | Not applicable        | Not applicable        | 10,000               | 12,000               | 1.2                    |
 | Bank - EUR   | 002                   | Not applicable        | Not applicable        | -9,000               | -10,800              | 1.2                    |
 
-Assuming the exchange rate between EUR and USD is 1:1.21 at the time point of revaluation date, then the gain/loss is calcualted as
+Assuming the exchange rate between EUR and USD is 1:1.21 on the revaluation date. The gain/loss is calculated as follows:
 
 | Main account | Financial dimension 1 | Financial dimension 2 | Financial dimension 3 | Ending balance - EUR | Ending balance - USD | Foreign exchange gain/loss -USD |
 | ------------ | --------------------- | --------------------- | --------------------- | -------------------- | -------------------- | ------------------------------- |
