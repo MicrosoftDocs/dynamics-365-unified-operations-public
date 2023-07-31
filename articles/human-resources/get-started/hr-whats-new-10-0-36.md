@@ -63,6 +63,22 @@ The following table lists the features that are turned on by default or are now 
 | Custom links in Manager self service | July 23, 2023 | Mandatory | Human Resources |
 | Allow proration of benefit plan contributions | July 23, 2023 | Moved from preview to GA | Human Resources |
 | Benefits Compare Selections | July 23, 2023 | Moved from preview to GA | Human Resources |
+| View all workers without employments|  | Mandatory| Personnel Management| 
+|Worker header control| |On by default |Personnel Management |
+|Years of service calculation| |Mandatory |Personnel Management| 
+|Workflow experience enhancements| |Mandatory |Personnel Management| 
+
+## Features removed from Feature management
+
+The following table lists the features that have been removed from Feature management in version 10.0.36.
+
+| Feature name | Feature state | Module |
+|--------------|---------------|--------|
+|Filter active positions |The related functionality is enabled out of the box. | Personnel Management| 
+|Managers can view performance-related information for extended reports |The related functionality is enabled out of the box.| Manager self service |
+|Future dated worker transfer with cross-company compensation| The related functionality is enabled out of the box. |Compensation |
+|Human resources user experience enhancements| The related functionality is enabled out of the box.| Human resources | 
+
 
 ## Additional resources
 
