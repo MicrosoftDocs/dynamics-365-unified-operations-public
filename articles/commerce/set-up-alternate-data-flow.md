@@ -4,7 +4,7 @@
 title: Set up an alternate dataflow for recommendations
 description: This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 09/08/2022
+ms.date: 04/21/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
