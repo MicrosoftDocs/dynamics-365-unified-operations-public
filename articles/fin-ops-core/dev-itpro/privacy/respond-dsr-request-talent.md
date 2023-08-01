@@ -1,6 +1,6 @@
 ---
 title: Respond to requests for personal data in Human Resources
-description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
+description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under.
 author: shielasogge
 ms.date: 02/28/2023
 ms.topic: article
@@ -19,19 +19,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article can help both businesses that use Microsoft Dynamics 365 Human Resources, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [General Data Protection Regulation overview](./gdpr-guide.md).
+This article can help both businesses that use Microsoft Dynamics 365 Human Resources, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the related resources that Microsoft provides, see [Privacy overview](./privacy-guide.md).
 
-For Human Resources, Microsoft acts as a processor. As a data processor, Human Resources provides processes and features that let you comply with your GDPR obligations as a data controller.
+For Human Resources, Microsoft acts as a processor. As a data processor, Human Resources provides processes and features that let you comply with your obligations as a data controller.
 
 ## Rights
 
-Data subjects have the following rights under the GDPR, and a data controller might take any of the actions that are listed under each right in response to a DSR request. 
+Data subjects have the following rights, and a data controller might take any of the actions that are listed under each right in response to a DSR request. 
 
 ### Right to view
 
-+ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](gdpr-person-search-report.md) article.  
++ Use the Person search report to find and collect personal data that is subject to a DSR request. For information about using this report, see the [Person search report](privacy-person-search-report.md) article.  
 + Use advanced search and filters to find specific personal data and export that data by using the Microsoft Office Export functionality.
-+ Extend the Person search report by adding an existing entity. For information that can help you extend the report, see [Extend the Person search report](gdpr-extend-person-search-report.md).
++ Extend the Person search report by adding an existing entity. For information that can help you extend the report, see [Extend the Person search report](privacy-extend-person-search-report.md).
 
 ### Right to modify\*
 
@@ -102,7 +102,7 @@ Compensation isn't assigned to contractors. Therefore, those steps can be skippe
 
 
 ## Additional resources
-You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the privacy laws and regulations on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/privacy/default.aspx).
 
 
 
