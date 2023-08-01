@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer orders in point of sale (POS)
-description: This article provides information about customer orders in point of sale (POS). Customer orders are also known as special orders. The article includes a discussion of related parameters and transaction flows.
+description: This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
 ms.date: 08/01/2023
 ms.topic: article
@@ -22,9 +22,9 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](includes/banner.md)]
 
-This article provides information about how to create and manage customer orders in the point of sale (POS) app. Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
+This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS). Customer orders can be used to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them. 
 
-In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
+In an omnichannel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
 - A customer wants products to be delivered to a specific address on a specific date.
 - A customer wants to pick up products from a store or location that differs from the store or location where the customer purchased those products.
@@ -33,22 +33,18 @@ In an omni-channel commerce world, many retailers provide the option of customer
 Retailers can use customer orders to minimize lost sales that stock outages might otherwise cause, because the merchandise can be delivered or picked up at a different time or place.
 
 ## Set up customer orders
-Before you try to use customer order functionality in POS, make sure that you complete all the required configurations in Commerce headquarters.
+
+Before you try to use customer order functionality in POS, ensure that you complete all the required configurations in Commerce headquarters.
 
 ### Configure modes of delivery
 
 To use customer orders, you must configure modes of delivery that the store channel can use. You must define at least one mode of delivery that can be used when order lines are shipped to a customer from a store. You must also define at least one pickup mode of delivery that can be used when order lines are picked up from the store. Modes of delivery are defined on the **Modes of delivery** page in headquarters. For more information about how to set up modes of delivery for Commerce channels, see [Define delivery modes](./configure-call-center-delivery.md#define-delivery-modes).
-
-![Modes of delivery page.](media/customer-order-modes-of-delivery.png)
-
 
 ### Set up fulfillment groups
 
 Some stores or warehouse locations might not be able to fulfill customer orders. By configuring fulfillment groups, an organization can specify which stores and warehouse locations are shown as options to users who create customer orders in POS. Fulfillment groups are configured on the **Fulfillment groups** page. Organizations can create as many fulfillment groups as they require. After a fulfillment group is defined, link it to a store by selecting **Fulfillment group assignment** from the **Set up** tab on the Action Pane of the **Stores** page.
 
 In Commerce version 10.0.12 and later, organizations can define whether the warehouse or warehouse and store combinations that are defined in fulfillment groups can be used for shipping, for pickup, or for both shipping and pickup. This allows for added flexibility for the business to determine which warehouses can be selected when creating a customer order for items to ship vs. which stores can be selected when creating a customer order for items to pick up. To use these configuration options, turn on the **Ability to specify locations as "Shipping" or "Pickup" enabled within Fulfillment group** feature. If a warehouse that's linked to a fulfillment group isn't a store, it can be configured only as a shipping location. It can't be used when orders for pickup are configured in POS.
-
-![Fulfillment groups page.](media/customer-order-fulfillment-group.png)
 
 ### Configure channel settings
 
@@ -59,8 +55,6 @@ When you work with customer orders in POS, you must consider some of the setting
 - **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
 - **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
 - **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
-
-![Store channel setup on the Stores page.](media/customer-order-all-stores.png)
 
 ### Set up customer order parameters
 
@@ -78,9 +72,7 @@ Before you try to create customer orders in POS, you must configure the appropri
      > [!NOTE]
      > When advanced auto charges features aren't enabled, it is recommended that you create a dedicated charge code for cancellation charges instead of reusing the shipping charge code, since the latter may result in unexpected behavior when the system selects the sales tax group for the charge. It is also recommended that you choose a cancellation charge code name and description that makes it clear to cashiers that the cancellation charge code is only to be used for cancellations.
 - **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users will be prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an Accounts receivable charge code that will be applied to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
-- **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omni-channel advanced auto charges](./omni-auto-charges.md).
-
-![Customer orders tab on the Commerce parameters page.](media/customer-order-parameters.png)
+- **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can be used to calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omnichannel advanced auto charges](./omni-auto-charges.md).
 
 ### Update transaction screen layouts in POS
 
@@ -104,6 +96,8 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 
 ### Create a customer order for products that will be shipped to the customer
 
+To create a customer order for products that will be shipped to the customer, follow these steps.
+
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
 3. Select **Ship selected** or **Ship all** to ship the products to an address on the customer account.
@@ -114,6 +108,8 @@ Make sure that the POS [screen layout](./pos-screen-layouts.md) is configured to
 8. If the full order total wasn't paid, enter a credit card that will be captured for the balance that is due on the order when it's invoiced.
 
 ### Create a customer order for products that the customer will pick up
+
+To create a customer order for products that the customer will pick up, follow these steps.
 
 1. On the POS transaction screen, add a customer to the transaction.
 2. Add products to the cart.
