@@ -77,7 +77,7 @@ For example, customers who are currently on version 10.0.30 can pause updates to
 
 Customers can pause up to three consecutive updates across the following components:
 
-- Store Commerce app for Windows, Android and iOS
+- Store Commerce app for Windows, Android, and iOS
 - Sealed Commerce Scale Unit (self-hosted)
 - Sealed Hardware station
 
@@ -85,8 +85,8 @@ Customers can pause up to three consecutive updates across the following compone
 
 Customers can pause up to seven consecutive updates across the following components:
 
-- Commerce scale unit (self-hosted)
-- MPOS and Hybrid apps
+- Commerce Scale Unit (self-hosted)
+- Modern point of sale (MPOS) and hybrid apps
 - Hardware station
 
 For example, customers who are currently on version 10.0.30 can pause updates for the released versions 10.0.31, 10.0.32, 10.0.33, 10.0.34, 10.0.35, 10.0.36 and 10.0.37. However, they must then update to version 10.0.38. In this scenario, after version 10.0.38 becomes available, version 10.0.30 is no longer supported.
