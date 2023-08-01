@@ -70,11 +70,11 @@ For data that resides in Finance but does not exist in Human Resources, link the
 
 ## Sometimes when I import employees, they go into inactive workers in Finance. Why?
 
-You may get this error if employees don’t have an active employment detail record in Human Resources. To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
+You may get this error if employees don’t have an active employment detail record in Human Resources. To resolve this error, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
 
 ## If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?
 
-Data sync follows the execution schedule. The integration will pick up a record if any field in the record changes regardless if the field is part of integration mapping.
+Data sync follows the execution schedule. The integration picks up a record if any field in the record changes regardless if the field is part of integration mapping.
 
 ## How can I send only active worker changes and not the terminated records?
 
@@ -84,14 +84,14 @@ With the use of "Advanced query", you can filter and reshape source data before 
 
 ## Can I specify which fields to send to Finance for a specific entity?
 
-Fields can be added or removed from the integration task. Not all data fields that exist on the Dataverse table will be populated from Human Resources.
-Additional data can be populated via Power Apps.
+Fields can be added or removed from the integration task. Not all data fields that exist on the Dataverse table are populated from Human Resources.
+More data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## I set up integration as a batch job, but Human Resources lost connection to the destination system. How can I send the same set of changes to the destination system?
 
-No special setup is required for exception handling. The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries. However, it doesn’t allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
+No special setup is required for exception handling. The Data Integrator automatically catches and reports errors that occur at the source and destination and allows manual retries. However, it doesn’t allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
 
 ## Can I set up bi-directional integration?
 
@@ -99,9 +99,9 @@ No, integration is currently one-way (Human Resources to finance and operations)
 
 ## Can I allow record deletion as part of my integration?
 
-No, Data Integrator will not capture deleted records for data transfer. Only data creation and updates (UPSERT) are currently included.
+No, Data Integrator doesn't capture deleted records for data transfer. Only data creation and updates (UPSERT) are currently included.
 
-## Can I rerun the errored execution? If so, will it send a full file or only the changes?
+## Can I rerun the errored execution? If so, does it send a full file or only the changes?
 
 The first run of Data Integrator is always a full run. Subsequent runs are based on change tracking. When an error run is executed, it extracts the records in scope of the run and sends out the most recent changes from Dataverse.
 
@@ -109,15 +109,15 @@ The first run of Data Integrator is always a full run. Subsequent runs are based
 
 Check the setup of your integration keys, make any required changes to the setup, then refresh the entities in the project.
 
-When the default template is used, the integration keys will be automatically imported. This issue may occur when new tasks are added to the existing template.
+When the default template is used, the integration keys are automatically imported. This issue may occur when new tasks are added to the existing template.
 
 ## If I have N number of legal entities where workers have employments, do I need to create a mapping for each of them?
 
-Yes, for each legal entity in Finance, you'll need a separate integration project in the data integration.
+Yes, for each legal entity in Finance, you need a separate integration project in the data integration.
 
-## I need to transfer data that is not part of the default template provided by Microsoft. Can I do this?
+## Can I transfer data that isn't part of the default template provided by Microsoft?
 
-Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Dataverse tables. The entity must be in Dataverse for it to be included in the template. 
+Yes, fields can be added to or removed from the existing template. The template can be modified to include more data from other Dataverse tables. The entity must be in Dataverse for it to be included in the template. 
 
 ## I just created new Finance and Human Resources environments, and I'm getting the error "The data value violates integrity constraints." Why?
 
@@ -128,9 +128,9 @@ Reasons for this error can include:
 - The data transfer has null values for fields that are required in finance and operations. Verify the data that is in Dataverse and meets the requirements of Finance and
 Operations.
 
-## If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?
+## If there are execution errors and the Employee ID didn't sync, how do I find the history job that has the failed employee record?
 
-Data Integrator will create multiple projects in Finance. The relationship between the Data Integrator task and the Finance project is one to one.
+Data Integrator creates multiple projects in Finance. The relationship between the Data Integrator task and the Finance project is one to one.
 
 Trace the time from the Data Integrator execution history and look for the index -1 project in Finance. If the task number is 9 in Data Integrator, the index in Finance is 8.
 
@@ -153,7 +153,7 @@ sync and can be verified in Power Apps by looking at the data within the data ta
 
 ![Data in Dataverse.](media/DataInCDS.png)
 
-If the data is not appearing as expected in Dataverse, verify that the entity is supported in the integration. To include additional data in Dataverse, a change will be required on the Microsoft side.
+If the data is not appearing as expected in Dataverse, verify that the entity is supported in the integration. To include more data in Dataverse, a change is required on the Microsoft side.
 
 If the entity is supported and the data is available in Dataverse, verify the mapping is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during the execution of the batch jobs. For more information about Data Management, see [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
@@ -178,7 +178,7 @@ Refresh the data entities in Finance by going to **Data management \> Framework 
 
 ![Missing field mapping.](media/MissingFieldMapping.png)
 
-## Additional resources
+## More resources
 
 - Data Integrator (DI): 
 
