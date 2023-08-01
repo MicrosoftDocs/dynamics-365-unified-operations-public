@@ -51,7 +51,7 @@ For finance and operations apps, Microsoft acts as a processor. As a data proces
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
-![Data flow from customers.](../media/gdpr-customers-controller-processor.jpg)
+![Data flow from customers.](../media/privacy-customers-controller-processor.jpg)
 
 When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
 
