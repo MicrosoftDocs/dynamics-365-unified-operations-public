@@ -1,6 +1,6 @@
 ---
 title: Respond to requests for personal data in Human Resources
-description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under.
+description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data.
 author: shielasogge
 ms.date: 02/28/2023
 ms.topic: article
