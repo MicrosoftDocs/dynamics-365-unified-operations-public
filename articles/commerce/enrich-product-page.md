@@ -23,9 +23,9 @@ ms.assetid:
 
 This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
-By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product, and page controls (for example, an add to cart button) that site visitors use to select and purchase the product. 
+By default, your Dynamics 365 Commerce e-commerce site uses a generic PDP to display product data. This PDP includes basic information about the product and page controls that allow site visitors to select and purchase the product. 
 
-You can customize PDPs by supplementing them with information from the Commerce Scale Unit (CSU), such as additional images or product-specific text.
+You can customize PDPs by adding information from the Commerce Scale Unit (CSU), such as additional images or product-specific text.
 
 In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
