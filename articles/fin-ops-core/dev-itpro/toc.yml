@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.36 (October 2023)
+          href: get-started/whats-new-platform-updates-10-0-36.md
         - name: Platform updates for version 10.0.35 (July 2023)
           href: get-started/whats-new-platform-updates-10-0-35.md
         - name: Platform updates for version 10.0.34 (June 2023)
@@ -1149,6 +1151,8 @@ items:
           href: lifecycle-services/dts-visual-studio.md
         - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
+        - name: Dynamics 365 Translation Service Connector
+          href: lifecycle-services/dts-connector-info.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview

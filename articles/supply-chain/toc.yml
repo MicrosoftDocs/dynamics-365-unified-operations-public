@@ -1759,15 +1759,17 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: The asset downtime scenario
+        - name: Anomaly detection scenario
+          href: sensor-data-intelligence/sdi-scenario-anomaly.md
+        - name: Asset downtime scenario
           href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
-        - name: The asset maintenance scenario
+        - name: Asset maintenance scenario
           href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
-        - name: The machine status scenario
+        - name: Machine status scenario
           href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
-        - name: The product quality scenario
+        - name: Product quality scenario
           href: sensor-data-intelligence/sdi-scenario-product-quality.md
-        - name: The production delays scenario
+        - name: Production delays scenario
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
@@ -3013,6 +3015,14 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Product bundles
+        items:
+        - name: Product bundles overview
+          href: sales-marketing/product-bundles-overview.md
+        - name: Enable and set up product bundles
+          href: sales-marketing/product-bundles-setup.md
+        - name: Sell and allocate product bundles
+          href: sales-marketing/product-bundles-use.md
       - name: Intercompany trade
         items:
         - name: Set up intercompany trade
@@ -3815,6 +3825,8 @@
             href: warehousing/print-container-labels.md
           - name: License plate label layouts and printing
             href: warehousing/print-license-plate-labels-using-label-layouts.md
+          - name: Enable license plate label printing
+            href: warehousing/tasks/license-plate-label-printing.md
           - name: Custom label layouts and printing
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
@@ -3825,8 +3837,8 @@
             href: warehousing/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
             href: warehousing/label-printing-using-bartender.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
+          - name: Dynamic printer selection
+            href: warehousing/dynamic-printing-selection.md
         - name: Auto-update shipments
           href: warehousing/auto-update-shipment.md
         - name: Create a location profile

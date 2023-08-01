@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.36 (October 2023)
+          href: get-started/whats-new-commerce-10-0-36.md
         - name: Commerce 10.0.35 (July 2023)
           href: get-started/whats-new-commerce-10-0-35.md
         - name: Commerce 10.0.34 (June 2023)
@@ -954,11 +956,13 @@
           href: set-up-customer-loyalty-program.md
         - name: Define loyalty programs
           href: tasks/define-loyalty-programs.md
-        - name: Define loyalty reward points
-          href: tasks/define-loyalty-reward-points.md
-        - name: Define loyalty schemes
+        - name: Define loyalty reward points   
+          href: tasks/define-loyalty-reward-points.md 
+        - name: Define loyalty schemes   
           href: tasks/define-loyalty-schemes.md
-        - name: Process adjustments of loyalty reward points
+        - name: Define loyalty cards   
+          href: tasks/define-loyalty-cards.md 
+        - name: Process adjustments of loyalty reward points   
           href: tasks/process-loyalty-reward-point-adjustments.md
     - name: Manage your financials
       items:
