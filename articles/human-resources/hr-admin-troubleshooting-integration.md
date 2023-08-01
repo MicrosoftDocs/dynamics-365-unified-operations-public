@@ -186,8 +186,6 @@ Refresh the data entities in Finance by going to **Data management \> Framework 
 
   - [Data Integrator error management and troubleshooting](/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
-
 - Data Management:
 
   - [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
