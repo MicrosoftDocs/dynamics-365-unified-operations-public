@@ -43,7 +43,7 @@ This article explains how to use the invoice register to create invoices and the
     When the **Vendor invoice register approved** feature is enabled, the AP clerk can decide whether the **Approved by** field is mandatory. Go to **Accounts payable parameters \> Invoice \> Invoice register**, and set the **Approved by** field to one of the following values:
 
     - **Required** – The **Approved by** field must be set before the invoice register journal can be posted.
-    - **Optional** – The invoice register journal can be posted without approval.
+    - **Optional** – The invoice register journal can be posted without approval. 
 
 10. Select **Post**.
 
