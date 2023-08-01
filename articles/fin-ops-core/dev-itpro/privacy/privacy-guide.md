@@ -246,7 +246,7 @@ The controller can make DSR requests regarding telemetry data by using the [Micr
 
 Finance and operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
-![Data model for the Global address book.](../media/gdpr-address-data-model.jpg)
+![Data model for the Global address book.](../media/privacy-address-data-model.jpg)
 
 ### Each person is a type of party
 
@@ -327,7 +327,7 @@ As you use finance and operations apps, you might find that you generate or coll
 <Link to form that prints the full inventory>
 -->
 
-![Solution explorer showing the AssetClassification field in the properties.](../media/gdpr-asset-classification-detail-invent-section.jpg)
+![Solution explorer showing the AssetClassification field in the properties.](../media/privacy-asset-classification-detail-invent-section.jpg)
 
 ## Age Gating: Preventing minors from using the service
 
@@ -353,15 +353,15 @@ Privacy laws and regulations specifu that systems must stop processing a minor's
 
 In the **About** box, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
 
-![Solution explorer showing the asset.](../media/gdpr-privacy-01-w-note.jpg)
+![Solution explorer showing the asset.](../media/privacy-privacy-01-w-note.jpg)
 
 On the **System parameters** page, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
 
-![System parameters where you add a link to your organization's privacy statement.](../media/gdpr-privacy-02.jpg)
+![System parameters where you add a link to your organization's privacy statement.](../media/privacy-privacy-02.jpg)
 
 When you've completed your entries in the system parameters, the link to your organization's privacy notice will appear in the **About** box, as show in the following illustration.
 
-![Modified About box with a link to an organization's privacy notice.](../media/gdpr-privacy-03-w-note.jpg)
+![Modified About box with a link to an organization's privacy notice.](../media/privacy-privacy-03-w-note.jpg)
 
 ## Clarification of the scope of this content
 
