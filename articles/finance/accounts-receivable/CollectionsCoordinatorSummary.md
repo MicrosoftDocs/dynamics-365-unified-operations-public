@@ -43,7 +43,7 @@ This feature has three purposes:
 
 ### Version requirements
 
-Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 and later.
+Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 (10.0.1591.107) and version 10.0.35 (10.0.1627.70) or later.
 
 ### Location and language requirements
 
@@ -105,6 +105,16 @@ Users in Dataverse must be assigned the **Finance and Operations AI** role and t
 
 > [!NOTE]
 > For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
+
+### Enable SQL change tracking in Lifecycle Services
+
+1. In Lifecycle Services, find your environment and select Full details.
+2. Select the Maintain and then **Enable maintenance mode**.
+3. Login to Finance and Operations
+4. Go to System administration > Setup > License configuration
+5. On the Configuration keys tab, mark **SQL row version change tracking (Preview)**
+6. Save changes.
+7. In Lifecycle Services, select Maintain and then **Exit Maintenance mode**. 
 
 ### Enable Collections coordinator summary
 
