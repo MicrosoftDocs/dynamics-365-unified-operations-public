@@ -24,7 +24,7 @@ The omnichannel media management solution integrates media management capabiliti
 
 The following video provides an overview of the omnichannel media management feature.
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RW18350]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18350]
 
 ## Omnichannel media management prerequisites and configuration
 
