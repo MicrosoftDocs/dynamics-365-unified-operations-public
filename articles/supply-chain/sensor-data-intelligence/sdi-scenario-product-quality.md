@@ -1,5 +1,5 @@
 ---
-title: The product quality scenario
+title: Product quality scenario
 description: This article provides information about the product quality scenario. This scenario uses a sensor to measure the quality of a product batch and generates an alert if a measurement falls outside a defined threshold.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# The product quality scenario
+# Product quality scenario
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
