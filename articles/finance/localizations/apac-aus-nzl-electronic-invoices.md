@@ -83,13 +83,10 @@ The primary address of the legal entity must be in Australia or New Zealand.
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
 
-> [!NOTE]
-> Make sure that the following mandatory address elements are defined: country/region code, ZIP/postal code, city, and building number.
-
 #### Enter a legal entity's tax registration number
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. This number will be used as the seller's tax identification number (NIP).
+2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. 
 
 ### Configure customer data
 
@@ -98,13 +95,10 @@ The primary address of the legal entity must be in Australia or New Zealand.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
 
-> [!NOTE]
-> For addresses in Poland, make sure that the following mandatory elements are defined: country/region code, ZIP/postal code, city, and building number. For foreign addresses, make sure that at least the following mandatory elements are defined: country/region code and city.
-
 #### Enter a customer's tax registration number
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. This number will be used as the buyer's tax identification number (NIP).
+2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. 
 
 ### Configure...
 
