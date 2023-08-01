@@ -1,6 +1,6 @@
 ---
-title: Customize product detail pages (PDPs)
-description: This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
+title: Customize product detail pages
+description: This article describes how to customize product detail pages in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 08/01/2023
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 
 ---
 
-# Customize product detail pages (PDPs)
+# Customize product detail pages
 
 [!include [banner](includes/banner.md)]
 
@@ -29,7 +29,7 @@ You can customize PDPs by supplementing them with information from the Commerce 
 
 In many cases, you'll want to use specific additional content for your products. When you go to the **Products** tab in Commerce site builder, you'll see a list of products from the currently selected channel. You can preview product pages by selecting a product name in the list.
 
-The following video provides an overview of PDP and category page customization rusing site builder.
+The following video provides an overview of PDP and category page customization using site builder.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1863o]
 
