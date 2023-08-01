@@ -64,15 +64,15 @@ Templates are the starting point. You can create your own template, but a templa
 
 Financial dimensions aren’t currently in Dataverse and as a result aren’t part of the default template. This entity is planned, but currently no release timeline is available.
 
-For data that resides in Finance but does not exist in Human Resources, link the two systems together by using **Configure Links** in Human Resources.
+For data that resides in Finance but doesn't exist in Human Resources, link the two systems together by using **Configure Links** in Human Resources.
 
 ![Map financial dimensions.](media/MapFinancialDimensions.png)
 
 ## Sometimes when I import employees, they go into inactive workers in Finance. Why?
 
-You may get this error if employees don’t have an active employment detail record in Human Resources. To resolve this error, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
+You may get this error if employees don’t have an active employment detail record in Human Resources. To resolve this error, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there's an active employment detail record.
 
-## If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?
+## If I select to map only a subset of fields, will updates made to non-mapped fields trigger a sync?
 
 Data sync follows the execution schedule. The integration picks up a record if any field in the record changes regardless if the field is part of integration mapping.
 
@@ -95,7 +95,7 @@ No special setup is required for exception handling. The Data Integrator automat
 
 ## Can I set up bi-directional integration?
 
-No, integration is currently one-way (Human Resources to finance and operations). However, there is a default template available to send data from Human Resources to Finance.
+No, integration is currently one-way (Human Resources to finance and operations). However, there's a default template available to send data from Human Resources to Finance.
 
 ## Can I allow record deletion as part of my integration?
 
@@ -111,7 +111,7 @@ Check the setup of your integration keys, make any required changes to the setup
 
 When the default template is used, the integration keys are automatically imported. This issue may occur when new tasks are added to the existing template.
 
-## If I have N number of legal entities where workers have employments, do I need to create a mapping for each of them?
+## If I have N number of legal entities where workers have employment, do I need to create a mapping for each of them?
 
 Yes, for each legal entity in Finance, you need a separate integration project in the data integration.
 
@@ -134,7 +134,7 @@ Data Integrator creates multiple projects in Finance. The relationship between t
 
 Trace the time from the Data Integrator execution history and look for the index -1 project in Finance. If the task number is 9 in Data Integrator, the index in Finance is 8.
 
-1. Capture the task index from Data Integrator (in this example it is "9").
+1. Capture the task index from Data Integrator (in this example it's "9").
 
     ![Capture task index from Data Integrator.](media/CaptureTaskIndex.png)
 
@@ -146,14 +146,14 @@ Trace the time from the Data Integrator execution history and look for the index
 
     ![Identify index.](media/IdentifyIndex.png)
 
-## After integrating Human Resources and Finance, I don’t see my Human Resources data in Finance. What do I do?
+## After I integrate Human Resources and Finance, I don’t see my Human Resources data in Finance. What do I do?
 
 The integration to Finance is a two-step process. First, verify that the Human Resources data is updated and available in Dataverse. This is a near real-time
 sync and can be verified in Power Apps by looking at the data within the data tables.
 
 ![Data in Dataverse.](media/DataInCDS.png)
 
-If the data is not appearing as expected in Dataverse, verify that the entity is supported in the integration. To include more data in Dataverse, a change is required on the Microsoft side.
+If the data isn't appearing as expected in Dataverse, verify that the entity is supported in the integration. To include more data in Dataverse, a change is required on the Microsoft side.
 
 If the entity is supported and the data is available in Dataverse, verify the mapping is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during the execution of the batch jobs. For more information about Data Management, see [Data management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
@@ -162,15 +162,15 @@ verify the data management jobs have successfully run. Errors may occur during t
 
 The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Dataverse to finance and operations.
 
-During implementation of Human Resources, verify that the number sequences are not the same in Human Resources and Finance. Validate that all number sequences are not identical where data may be maintained in both systems.
+During implementation of Human Resources, verify that the number sequences aren't the same in Human Resources and Finance. Validate that all number sequences aren't identical where data may be maintained in both systems.
 
-## When creating my connection set, I am unable to see the connection in the Connection drop-down list. What do I do?
+## When I create my connection set, I'm unable to see the connection in the Connection drop-down list. What do I do?
 
-Make sure when creating your connections, you choose Dynamics 365 Finance and Dataverse.
+Make sure when you create your connections, you choose Dynamics 365 Finance and Dataverse.
 
-## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?
+## When I sync employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' isn't found in the related table 'Employment'.” What should I do?
 
-Ensure that you are mapping to the correct legal entities. Legal entity syncing is not part of the default template, so it is expected that each legal entity that is present in Human Resources and Dataverse is also present in Finance. Also, make sure that you are selecting the correct legal entities for the associated Connection Set.
+Ensure that you're mapping to the correct legal entities. Legal entity syncing isn't part of the default template, so it's expected that each legal entity that is present in Human Resources and Dataverse is also present in Finance. Also, make sure that you're selecting the correct legal entities for the associated Connection Set.
 
 ## After setting up my project, the field mapping for Finance appears to be empty. What should I do?
 
