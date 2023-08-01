@@ -55,7 +55,7 @@ Some of the parameters from the **Electronic invoicing for Australia and New Zea
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 
   > [!NOTE]
-  > The **Electronic invoicing for Australia and New Zealand** electronic invoicing feature is provided by Microsoft ready to use. No additional configuration required. If you need to apply some changes then refer the following article for more details how to configure invoicing features [Work with feature setups](e-invoicing-feature-setup.md). For example, you can filter specific legal entities to be processed in applicability rules. By default the feature is applicable to all legal entities with primary addresses in Australia or New Zealand.
+  > The **Electronic invoicing for Australia and New Zealand** electronic invoicing feature is provided by Microsoft ready to use. No additional configuration required. If you need to apply some changes then refer to the following article for more details how to configure invoicing features [Work with feature setups](e-invoicing-feature-setup.md). For example, you can filter specific legal entities to be processed in applicability rules. By default the feature is applicable to all legal entities with primary addresses in Australia or New Zealand.
 
 3. The copy of the feature is always created as a **Draft** version. You need to complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md), regardless whether you did some changes or not.
 
@@ -64,34 +64,17 @@ Some of the parameters from the **Electronic invoicing for Australia and New Zea
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the country/region-specific ER configurations that are required for Poland are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md).
+1. Make sure that the country/region-specific Electronic Reporting configurations for Document context and Documents model mapping that are required for Australia or New Zealand are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Advance invoice** table names.
+3. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. For the **Customer Invoice journal** table name, select **Response types**.
-6. Create a response type that has the same name that was defined for the related variable of the **To client** type in the corresponding feature setups in RCS. Enter the following values:
-
-    - In the **Submission status** field, select **Pending**.
-    - In the **Model mapping** field, select **KSeF response data import format (PL)**.
-
-7. Repeat steps 5 through 6 for the **Project invoice** and **Advance invoice** electronic documents.
-8. In the **Feature management** workspace, the **Export channels for electronic invoicing integration** feature must be enabled. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-9. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-10. <a id="ExportChannel"></a>Select **Create configuration**, and then, in the drop-down dialog box, select the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
-11. Open the derived configuration for editing in the designer, and select **Map model to datasource**.
-12. Open the **DataChannel** definition for editing in designer. In the **Data sources** tree, expand the **$Context\_Channel** container.
-13. In the **Value** field, select **Edit**, and enter the data channel name. The value is the name of the data channel that is configured in the **Export channel** section for the **Submit batch** feature setup in RCS.
-14. Save your changes, and complete the derived configuration.
-15. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-16. <a id="channel"></a>On the **Integration channels** tab, add a channel that has the same name that was used in step 13.
-17. In the **Company** column, enter a required legal entity code. In the **Document context** column, refer to the derived configuration.
-18. Save your changes, and close the page.
+5. Save your changes, and close the page.
 
 ## Finance business data configuration
 
 ### Prerequisites
 
-The primary address of the legal entity must be in Poland.
+The primary address of the legal entity must be in Australia or New Zealand.
 
 ### Configure legal entity data
 
