@@ -21,8 +21,9 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. PEPPOL...
-It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). Once configured, the system will allow you to **generate** XML file of electronic invoices in PEPPOL format with Australian and New Zealand extension.
+
+
 
 ## Prerequisites
 
@@ -45,12 +46,14 @@ Before you begin the procedures in this article, complete the following prerequi
     - Peppol Project Invoice AU-NZ
     - Peppol Project Credit Note AU-NZ
 
-## Country/region-specific configuration for the Polish electronic invoice (PL) feature
+## Country/region-specific configuration for the Electronic invoicing for Australia and New Zealand feature
 
 Some of the parameters from the **Electronic invoicing for Australia and New Zealand** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
 1. Import the latest version of the **Electronic invoicing for Australia and New Zealand** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
+
+
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **Submit batch** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **(Preview) KSeF send batch to e-invoice system** action.
