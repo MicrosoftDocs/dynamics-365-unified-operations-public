@@ -59,6 +59,7 @@ Some of the parameters from the **Electronic invoicing for Australia and New Zea
 
 3. The copy of the feature is always created as a **Draft** version. You need to complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md), regardless whether you did some changes or not.
 
+
 ## Finance configuration
 
 Some additional parameters must be configured directly in Finance.
