@@ -25,7 +25,8 @@ This article provides information that will help you get started with Electronic
 
 Once configured, the system will allow you to **generate** XML files of electronic invoices in PEPPOL format with Australian and New Zealand extension.
 
-
+> [!NOTE]
+> This article describes electronic invoicing approach implemented using Invoicing service which is applicable only to **cloud** deployments of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. For **on-prem** deployments please refer to [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md).
 
 ## Prerequisites
 
