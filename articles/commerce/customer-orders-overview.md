@@ -167,7 +167,7 @@ To cancel a customer order, follow these steps.
 5. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that were paid exceed the cancellation charge, refund payments might be due.
 6. To exit the cancellation process without saving any changes, you can use the **Void transaction** operation.
 
-In Commerce versions prior to 10.0.36, if an order is partially canceled and it's recalled in POS for editing, then the canceled order lines are also displayed on the transaction and printed on the receipt of the edited order. Starting with Commerce version 10.0.36, the canceled lines are hidden from POS and aren't printed on the receipt. This functionality is controlled by the **Hide canceled order lines from POS** feature, which is enabled by default in the feature management workspace starting in version 10.0.36. The feature can be disabled if necessary.
+In Commerce versions prior to 10.0.36, if an order is partially canceled and it's recalled in POS for editing, then the canceled order lines are also displayed on the transaction and printed on the receipt of the edited order. With Commerce version 10.0.36 and later, the canceled lines are hidden from POS and aren't printed on the receipt. This functionality is controlled by the **Hide canceled order lines from POS** feature, which is enabled by default in the feature management workspace starting in version 10.0.36. The feature can be disabled if necessary.
 
 ## Finalizing the customer order shipment or pickup from POS
 
