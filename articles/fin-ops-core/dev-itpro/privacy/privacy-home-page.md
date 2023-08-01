@@ -1,8 +1,8 @@
 ---
-title: Respond to GDPR data requests resources
-description: This article provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
+title: Respond to privacy data requests resources
+description: This article provides links to information that can help you respond to a data rights request.
 author: josaw1
-ms.date: 07/23/2019
+ms.date: 08/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,31 +15,31 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
 ---
 
-# Respond to GDPR data requests resources
+# Respond to privacy data requests resources
 
 [!include [banner](../includes/banner.md)]
 
-This article provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, and Microsoft Dynamics AX 2012. 
+This article provides links to information that can help you respond to a request for private information as a customer using Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, and Microsoft Dynamics AX 2012. 
 
 Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This article points to content that will help you complete those tasks.
 
 ## Overview
 
-- [General Data Protection Regulation overview](gdpr-guide.md)
-- [Person search report](gdpr-person-search-report.md)
-- [Extend the Person search report](gdpr-extend-person-search-report.md)
-- [Manage access to sensitive data](gdpr-auditing-sensitive-data.md)
+- [Privacy overview](privacy-guide.md)
+- [Person search report](privacy-person-search-report.md)
+- [Extend the Person search report](privacy-extend-person-search-report.md)
+- [Manage access to sensitive data](privacy-auditing-sensitive-data.md)
 
 
 ## Product-specific considerations
 
-- [Respond to requests for personal data in AX 2012](gdpr-ax2012.md)
+- [Respond to requests for personal data in AX 2012](privacy-ax2012.md)
 - [Respond to requests for personal data in Human Resources](respond-dsr-request-talent.md)
-- [General Data Protection Regulation overview](gdpr-guide.md)
-- [GDPR data requests for Lifecycle Services (LCS)](gdpr-lcs.md)
+- [General Data Protection Regulation overview](privacy-guide.md)
+- [Privacy data requests for Lifecycle Services (LCS)](privacy-lcs.md)
 
 ## Compliance Manager
-Compliance Manager is a cross–Microsoft Cloud services solution designed to help organizations meet complex compliance obligations like the GDPR. It performs a real-time risk assessment that reflects your compliance posture against data protection regulations when using Microsoft Cloud services, along with recommended actions and step-by-step guidance.
+Compliance Manager is a cross–Microsoft Cloud services solution designed to help organizations meet complex compliance obligations. It performs a real-time risk assessment that reflects your compliance posture against data protection regulations when using Microsoft Cloud services, along with recommended actions and step-by-step guidance.
 
 ### Compliance Manager
 You can try Compliance Manager yourself by visiting [https://aka.ms/compliancemanager](https://aka.ms/compliancemanager).
@@ -57,12 +57,10 @@ There are a number of resources to help you learn more about Compliance Manager 
 
 - [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
 
-- [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsoft Secure, September 2017)
-
 
 ## Additional resources
 
-For more information about the GDPR and the actions that your organization might need to take in response to a request for data, visit the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers).
+For more information about the privacy laws and regulations and the actions that your organization might need to take in response to a request for data, visit the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77b002ad-06f7-4a9b-8493-e18e2cb0577f&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

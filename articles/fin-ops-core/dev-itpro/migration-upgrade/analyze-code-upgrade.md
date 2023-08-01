@@ -66,7 +66,7 @@ Dynamics 365 finance and operations apps don't allow for customization via overl
 ### Export your AX 2012 model store
 
 > [!NOTE]
-> The AX 2012 Management utilities must be installed in the environment that you want to export the model store from. For more information, see [Install management utilities](../../dynamicsax-2012/appuser-itpro/install-management-utilities.md).
+> The AX 2012 Management utilities must be installed in the environment that you want to export the model store from. 
 
 To export the model store, follow these steps.
 

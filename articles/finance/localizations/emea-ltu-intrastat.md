@@ -292,7 +292,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 9. In the **Contact number/address** field, enter jodi@contoso.com.
 10. Select the **Primary** option.
 11. In the **Type** field, select **URL**.
-12. In the **Contact number/address** field, enter http://eu.contoso.com and then select the **Primary** option.
+12. In the **Contact number/address** field, enter https://eu.contoso.com and then select the **Primary** option.
 
 ### Set up VAT IDs
 
@@ -478,7 +478,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | Sender's phone                                                          | +49 123 456 789                                   |
     | Sender's email                                                          | jodi@contoso.com                                  |
     | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | http://eu.contoso.com                             |
+    | Sender's URL                                                            | https://eu.contoso.com                             |
     | Contact person's name                                                   | Manish Chopra                                     |
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |
@@ -571,7 +571,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | Sender's phone                                                          | +49 123 456 789                                   |
     | Sender's email                                                          | jodi@contoso.com                                  |
     | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | http://eu.contoso.com                             |
+    | Sender's URL                                                            | https://eu.contoso.com                             |
     | Contact person's name                                                   | Manish Chopra                                     |
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |

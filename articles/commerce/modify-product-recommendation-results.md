@@ -67,19 +67,19 @@ The "Best selling" product list has one parameter that can be changed:
 1.    In the list of shared parameters, select **Recommendation lists**.
 1.    Select the list add or remove products from.
 1.    To add products to the table, select **Add line.** 
-1.    Under the Product column, search for a product by **Name** or **Product number.**
+1. Under the Product column, search for a product by **Name** or **Product number.**
 
-    ![Example of searching for a product on the New product list.](./media/examplenewlistconfiguration1.png)
+   ![Example of searching for a product on the New product list.](./media/examplenewlistconfiguration1.png)
 
-1.    Under the Line type column, select one of two options:
-    -    **Include** – forces a product to the front of the list
-    -    **Exclude** – removes a product from appearing in the list
+1. Under the Line type column, select one of two options:
+   - **Include** – forces a product to the front of the list
+   - **Exclude** – removes a product from appearing in the list
     
     ![Example of Including or Excluding a product from the New product list.](./media/examplenewlistconfiguration2.png)
 
-1.    Changing the **Display order** will change the order that products marked **include** will appear in the list.
-    - If two products have the same **display order** value, then the final order of those two results may differ from the back office.
-1.    To remove products from the table: select the line to remove and select **Remove**.
+1. Changing the **Display order** will change the order that products marked **include** will appear in the list.
+   - If two products have the same **display order** value, then the final order of those two results may differ from the back office.
+1. To remove products from the table: select the line to remove and select **Remove**.
 
 
 ### For "People also like" or "Frequently bought together" lists
