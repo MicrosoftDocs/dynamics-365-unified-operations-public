@@ -2,9 +2,9 @@
 # required metadata 
  
 title: Set up company bank accounts for ISO20022 credit transfers
-description: This procedure shows how to set up company-specific bank account information that is required for payment file generation. 
+description: This article explains how to set up company-specific bank account information that's required to generate file payments. 
 author: mrolecki
-ms.date: 08/29/2018
+ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -27,30 +27,21 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to set up company-specific bank account information that is required for payment file generation. You set up information required to generate ISO 20022 credit transfer format but depending on the format there might be other information required, such as the Company ID or the Sort code. 
-
-The demo data company used to create this procedure is DEMF.
-
-This is the second procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
-
+This article explains how to set up company-specific bank account information that's required to generate payment files. You set up information required to generate ISO 20022 credit transfer format but depending on the format, there might be other information required. This could include the **Company ID** or the **Sort code**. 
 
 ## Set up IBAN and SWIFT code
-1. Go to Cash and bank management > Bank accounts.
-2. Use the Quick Filter to filter on the Bank account field with a value of 'DEMF OPER'.
-3. Click DEMF OPER to open bank account details.
-4. Click Edit.
-5. Expand the Additional identification section.
-6. In the IBAN field, type 'DE89370400440532013000'.
-7. In the SWIFT code field, type 'DEUTDEFF'.
-    * Note that SWIFT\BIC is not required for many payment formats, however it is recommended to have it registered for a bank account.  
-8. Click Save.
+1. Go to **Cash and bank management** > **Bank accounts**.
+2. Use the **Quick Filter** to filter on the **Bank account** field.
+3. Select and double-click a record to open the bank account details.
+4. Select **Edit**.
+5. In the **Additional identification** section, enter a value in the **IBAN** field.
+6. In the **SWIFT code** field, enter a value. A SWIFT\BIC isn't required for many payment formats, however we recommend that it's registered for a bank account.  
+7. Select **Save**.
 
 ## Set up bank account for the legal entity
-1. Go to Organization administration > Organizations > Legal entities.
-2. Click Edit.
-3. Expand the Bank account information section.
-4. In the Bank account field, enter or select a value.
-5. Click Save.
+1. Go to **Organization administration** > **Organizations** > **Legal entities** and then select **Edit**.
+2. In the **Bank account information** section, in the **Bank account** field, enter or select a value.
+3. Select **Save**.
 
 
 
