@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-, NotInToc
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

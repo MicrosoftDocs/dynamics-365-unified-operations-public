@@ -68,26 +68,24 @@ You can also download a template from LCS and import it for versions 7.1 or late
 
 To use the Person search report, you must complete these tasks.
 
-1.    From the System administration menu, open the Person search list page, and create a new search.
+1. From the System administration menu, open the Person search list page, and create a new search.
 
-    ![Person search list page.](../media/privacy-person-search-list-page.png)
+   ![Person search list page.](../media/privacy-person-search-list-page.png)
 
-2.  The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
+2. The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
 
-    ![Define search.](../media/privacy-define-search.png)
+   ![Define search.](../media/privacy-define-search.png)
 
-3.  Run the search to show the results.
+3. Run the search to show the results.
+4. Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
 
-4.  Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
+   ![Review search results.](../media/privacy-review-search-results.png)
 
-    ![Review search results.](../media/privacy-review-search-results.png)
-
-5.  Select **Process report**, and then select the Person search template.
+5. Select **Process report**, and then select the Person search template.
 
     ![Process report.](../media/privacy-process-report.png)
 
-6.  Select **OK**. A data package is generated.
-
+6. Select **OK**. A data package is generated.
 7. When the package has been generated, export it to your selected data format. 
 
 > [!NOTE]
