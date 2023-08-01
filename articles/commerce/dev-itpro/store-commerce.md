@@ -128,7 +128,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes, but doesn't support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
+<td>Yes, but doesn't support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, see <a href="../retail-peripherals-overview.md">Commerce peripherals</a>.</td>
 <td>Yes</td>
 </tr>
 <tr>
@@ -139,13 +139,13 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 <tr>
 <th scope="row">Deployment modes</th>
 <td>In-app, hybrid.<br />
-    See the Hybrid deployment section above for more information.</td>
+    For more information, see <a href="#hybrid-deployment">Hybrid deployment</a> above.</td>
 <td>In-app.</td>
 </tr>
 <tr>
 <th scope="row">Full screen mode</th>
-<td>Yes - press Alt-Enter to enter and exit full screen mode. </td>
-<td>Yes - press F11 to enter and exit full screen mode.</td>
+<td>Yes - Press Alt-Enter to enter and exit full screen mode. </td>
+<td>Yes - Press F11 to enter and exit full screen mode.</td>
 </tr>
 </tbody>
 </table>
