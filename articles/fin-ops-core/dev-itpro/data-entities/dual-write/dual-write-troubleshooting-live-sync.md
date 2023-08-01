@@ -2,10 +2,10 @@
 title: Troubleshoot live synchronization issues
 description: This article provides troubleshooting information that can help you fix issues with live synchronization.
 author: RamaKrishnamoorthy
-ms.date: 08/19/2021
+ms.date: 08/01/2023
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
@@ -36,14 +36,14 @@ To fix the issue, follow the steps in [System requirements and prerequisites](re
 
 You might receive the following error message when you try to save table data in a finance and operations app:
 
-*Cannot save the changes to the database. Unit of Work can not commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
+*Cannot save the changes to the database. Unit of Work cannot commit transaction. Unable to write data to entity uoms. Writes to UnitOfMeasureEntity failed with error message Unable to sync with entity uoms.*
 
 To fix the issue, make sure that prerequisite reference data exists in both the finance and operations app and Dataverse. For example, if a customer record belongs to a specific customer group, make sure that the customer group record exists in Dataverse.
 
 If data exists in both places, and you've confirmed that the issue isn't data related, follow these steps.
 
 1. Open the **DualWriteProjectConfigurationEntity** entity by using the Excel add-in. To use the add-in, enable design mode in the finance and operations Excel add-in, and add **DualWriteProjectConfigurationEntity** to a worksheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
-2. Select and delete the records that have issues in the dual-write map and project. There will be two records for every dual-write mapping.
+2. Select and delete the records that have issues in the dual-write map and project. There are two records for every dual-write mapping.
 3. Publish the changes by using the Excel add-in. This step is important because it deletes the records from the entity and underlying tables.
 
 ## Handle read or write privilege errors when you create data in a finance and operations app
@@ -90,7 +90,7 @@ To fix the issue, you must complete steps in both Dataverse and the finance and 
 1. In the finance and operations app, follow these steps:
 
     1. Open the **DualWriteProjectConfigurationEntity** entity by using the Excel add-in. To use the add-in, enable design mode in the finance and operations Excel add-in, and add **DualWriteProjectConfigurationEntity** to a worksheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
-    2. Select and delete the records that have issues in the dual-write map and project. There will be two records for every dual-write mapping.
+    2. Select and delete the records that have issues in the dual-write map and project. There are two records for every dual-write mapping.
     3. Publish the changes by using the Excel add-in. This step is important because it deletes the records from the entity and underlying tables.
     4. To help prevent errors when you relink the finance and operations or Dataverse environments, make sure that no dual-write configurations remain.
 
@@ -106,7 +106,7 @@ To fix the issue, you must complete steps in both Dataverse and the finance and 
 3. In the finance and operations app, follow these steps:
 
     1. Open the **DualWriteProjectConfigurationEntity** entity by using the Excel add-in. To use the add-in, enable design mode in the finance and operations Excel add-in, and add **DualWriteProjectConfigurationEntity** to a worksheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
-    2. Select and delete the records that have issues in the dual-write map and project. There will be two records for every dual-write mapping.
+    2. Select and delete the records that have issues in the dual-write map and project. There are two records for every dual-write mapping.
     3. Publish the changes by using the Excel add-in. This step is important because it deletes the records from the entity and underlying tables.
     4. To help prevent errors when you relink the finance and operations or Dataverse environments, make sure that no dual-write configurations remain.
 
@@ -196,16 +196,16 @@ Before you start to fix the issue, review the following prerequisites:
 + Make sure that your custom changes are written in a single transaction scope.
 + Business events and the dual-write framework don't handle `doinsert()`, `doUpdate()`, and `recordset()` operations, or records where `skipBusinessEvents(true)` is marked. If your code is inside these functions, dual-write won't be triggered.
 + Business events must be registered for the data source that is mapped. Some data sources might use an outer join and might be marked as read only in finance and operations apps. These data sources aren't tracked.
-+ Changes will be triggered only if the modifications are on the mapped fields. Unmapped field modifications won't trigger dual-write.
++ Changes are triggered only if the modifications are on the mapped fields. Unmapped field modifications won't trigger dual-write.
 + Make sure that filter evaluations provide a valid result.
 
 ### Troubleshooting steps
 
-1. Review field mappings on the dual-write admin page. If a field isn't mapped from finance and operations apps to Dataverse, it won't be tracked. For example, in the following illustration, the **Description**  field is tracked from Dataverse, but not from finance and operations apps. No changes to that field inside finance and operations apps will be tracked.
+1. Review field mappings on the dual-write admin page. If a field isn't mapped from finance and operations apps to Dataverse, it won't be tracked. For example, in the following illustration, the **Description**  field is tracked from Dataverse, but not from finance and operations apps. No changes to that field inside finance and operations apps are tracked.
 
     ![Tracked field.](media/live-sync-troubleshooting-1.png)
 
-2. Determine whether the data source is tracked in the business events definition. For example, in the following illustration, no field from the **DefaultDimensionDAVs** table and underlying tables will be tracked for changes. Data sources that use an outer join and that are marked as read only aren't tracked.
+2. Determine whether the data source is tracked in the business events definition. For example, in the following illustration, no field from the **DefaultDimensionDAVs** table and underlying tables are tracked for changes. Data sources that use an outer join and that are marked as read only aren't tracked.
 
     ![Field that isn't tracked.](media/live-sync-troubleshooting-2.png)
 
@@ -217,7 +217,7 @@ Before you start to fix the issue, review the following prerequisites:
 
 In finance and operations apps, there is an update to the address for a contact record, but the address change isn't synced to Dataverse. This scenario occurs because no record in the **BusinessEventsDefinition** table has the combination of the affected table and the entity. Specifically, the **LogisticsPostalAddress** table isn't the direct data source for the **smmContactpersonCDSV2Entity** entity. The **smmContactpersonCDSV2Entity** entity has **smmContactPersonV2Entity** as the data source, and **smmContactPersonV2Entity**, in turn, has **LogisticsPostalAddressBaseEntity** as the data source. The **LogisticsPostalAddress** table is the data source for **LogisticsPostalAddressBaseEntity**.
 
-A similar situation can occur in some non-standard patterns, such as cases where the table that is being modified in finance and operations apps isn't obviously linked to the entity that contains it. For example, the primary address data is computed on the **smmContactPersonCDSV2Entity** entity. The dual-write framework tries to determine how a change to an underlying table is mapped back to entities. Usually, this approach is sufficient. However, in some cases, the link is so complex that you must be specific. You must make sure that the **RecId** of the related table is directly available on the entity. Then add a static method to monitor the table for changes.
+A similar situation can occur in some nonstandard patterns, such as cases where the table that is being modified in finance and operations apps isn't linked to the entity that contains it. For example, the primary address data is computed on the **smmContactPersonCDSV2Entity** entity. The dual-write framework tries to determine how a change to an underlying table is mapped back to entities. Usually, this approach is sufficient. However, in some cases, the link is so complex that you must be specific. You must make sure that the **RecId** of the related table is directly available on the entity. Then add a static method to monitor the table for changes.
 
 For an example, review the **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** method. **CustCustomerV3entity** and **VendVendorV2Entity** have been modified to handle this situation.
 
@@ -249,7 +249,7 @@ To fix the issue, follow these steps.
 
 For any transaction, a finance and operations app creates data in a batch and sends it as a batch to Dataverse. If two records are created as part of the same transaction, and they reference each other, you might receive an error message that resembles the following example in the finance and operations app:
 
-*Unable to write data to entity aaa_fundingsources. Unable to lookup ebecsfs_contracts with values {PC00...}. Unable to lookup aaa_fundingsources with values {PC00...}. Writes to aaa_fundingsources failed with error message Exception message: The remote server returned an error: (400) Bad Request.*
+*Unable to write data to entity aaa_fundingsources. Unable to look up ebecsfs_contracts with values {PC00...}. Unable to look up aaa_fundingsources with values {PC00...}. Writes to aaa_fundingsources failed with error message Exception message: The remote server returned an error: (400) Bad Request.*
 
 To fix the issue, create entity relationships in the finance and operations app to indicate that the two entities are related to each other, and that the related records are handled in the same transaction.
 
@@ -295,7 +295,7 @@ You might receive the following error message when you try to create a new custo
 
 *Cannot update a party's type from 'DirOrganization' to 'DirPerson', a delete of the existing party followed by an insert with the new type should be performed instead.*
 
-In Dataverse, there is a number sequence on the **msdyn_party** table. When an account is created in Dataverse, a new party is created (for example **Party-001** of the **Organization** type). This data is sent to the finance and operations app. If the Dataverse environment is reset, or the finance and operations environment is linked to a different Dataverse environment, and then a new contact record is created in Dataverse, a new party value that starts with **Party-001** is created. This time, the party record that is created will be **Party-001** of the **Person** type. When this data is synced, finance and operations apps show the preceding error message, because party record **Party-001** of the **Organization** type already exists.
+In Dataverse, there is a number sequence on the **msdyn_party** table. When an account is created in Dataverse, a new party is created (for example **Party-001** of the **Organization** type). This data is sent to the finance and operations app. If the Dataverse environment is reset, or the finance and operations environment is linked to a different Dataverse environment, and then a new contact record is created in Dataverse, a new party value that starts with **Party-001** is created. This time, the party record that is created is **Party-001** of the **Person** type. When this data is synced, finance and operations apps show the preceding error message, because party record **Party-001** of the **Organization** type already exists.
 
 To fix the issue, change the automatic number sequence for the **msdyn_partynumber** field of the **msdyn_party** table in Dataverse to a different automatic number sequence.
 
@@ -303,7 +303,7 @@ To fix the issue, change the automatic number sequence for the **msdyn_partynumb
 
 You might be able to marginally improve the performance of live synchronization for customers and contacts by customizing the **getEntityDataSourceToFieldMapping** method (in the **CustCustomerV3Entity** entity) method and the **getEntityDataSourceToFieldMapping** method (in the **smmContactPersonCDSV2Entity** entity). These customizations reduce the number of records in the **BusinessEventsDefinition** table. This reduction in the number of records, in turn, reduces the number of events that are raised.
 
-The **getEntityDataSourceToFieldMapping** method in the **CustCustomerV3Entity** entity makes sure that an update of the customer's electronic address or postal address triggers business events, so that the updated data will be sent to Dataverse. If you don't use all the fields and don't need the information in dual-write, comment out the appropriate lines in the method. Every tracked field and table that is added in this method adds a record in the **BusinessEventsDefinition** table for the combination of the tracked table and tracked entity.
+The **getEntityDataSourceToFieldMapping** method in the **CustCustomerV3Entity** entity makes sure that an update of the customer's electronic address or postal address triggers business events, so that the updated data is sent to Dataverse. If you don't use all the fields and don't need the information in dual-write, comment out the appropriate lines in the method. Every tracked field and table that is added in this method adds a record in the **BusinessEventsDefinition** table for the combination of the tracked table and tracked entity.
 
 ```xpp
 public static container getEntityDataSourceToFieldMapping(container mapping)
@@ -322,7 +322,7 @@ public static container getEntityDataSourceToFieldMapping(container mapping)
 }
 ```
 
-In a similar manner, the **getEntityDataSourceToFieldMapping** method in the **smmContactPersonCDSV2Entity** entity makes sure that any update of the contact's electronic address or postal address triggers business events, so that the updated data will be sent to Dataverse. In the method, you can comment out the lines for any fields that you don't use.
+In a similar manner, the **getEntityDataSourceToFieldMapping** method in the **smmContactPersonCDSV2Entity** entity makes sure that any update of the contact's electronic address or postal address triggers business events, so that the updated data is sent to Dataverse. In the method, you can comment out the lines for any fields that you don't use.
 
 ```xpp
 public static container getEntityDataSourceToFieldMapping(container mapping)
@@ -353,13 +353,13 @@ After you update the methods, follow these steps.
 
 **Required role to fix the issue:** System admin
 
-The live sync for a table mapping may fail if configuration keys associated with fields on the entity are disabled. For example, the `Customers V3` entity may fail to sync if the Retail configuration key is disabled. The `Customers V3` entity includes fields from the `RetailCustTable`, which must have the Retail configuration key enabled to enable the fields, making them available for the entity. All configuration keys for fields included in an entity must be enabled for the entity to be available for dual-write live sync operations.
+The live sync for a table mapping may fail if the configuration keys associated with the fields on the entity are disabled. For example, the `Customers V3` entity may fail to sync if the Retail configuration key is disabled. The `Customers V3` entity includes fields from the `RetailCustTable`, which must have the Retail configuration key enabled to enable the fields, making them available for the entity. All configuration keys for fields included in an entity must be enabled for the entity to be available for dual-write live sync operations.
 
-To resolve this issue: 
-- The system administrator can enable the configuration keys for all fields on the entity, or
+To resolve this issue, use one of the following methods. 
+- The system administrator can enable the configuration keys for all fields on the entity.
 - Create a new entity that includes only fields covered by enabled configuration keys, and create a new dual-write map for the new data entity.
 
-See [Configuration keys and data entities](../config-key-entities.md) for more information on enabling configuration keys and how they affect data entities.
+For more information, see [Configuration keys and data entities](../config-key-entities.md) for more information on enabling configuration keys and how they affect data entities.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
