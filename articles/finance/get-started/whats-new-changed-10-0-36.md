@@ -53,6 +53,7 @@ The following table lists the features that are included in this release. We mig
 | Cash and bank management | Accounts payable and accounts receivable foreign currency revaluation performance improvement by splitting into even batches | This feature improves the performance of foreign currency revaluation by splitting large batches into even batches to prevent large batches from a specific vendor or customer. | Feature management |
 | Cash and bank management | Use the time zone option on bank statement import page for BAI2 format bank statement id generation | If a bank statement format uses time stamps to generate bank statement IDs, this feature uses the time zone option on the bank statement import page instead of the user option. | Feature management |
 | General ledger | Post foreign currency realized gains/losses for ledger settlements | This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances the usability of the ledger settlement process by reducing the effort that's required to mark vouchers. | Feature management |
+|General ledger|Financial tags for Sales order documents	|This feature adds Financial tags to the sales order, packing slip and customer invoice documents. |	Feature management|
 
 ## Features turned on by default in this release
 
