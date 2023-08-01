@@ -4,7 +4,7 @@
 title: Audit trail and edit logs for accounting software
 description: This article provides information about the new Indian tax legislation guidelines for accounting software.
 author: EricWangChen
-ms.date: 02/18/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,7 @@ Companies that use Finance to maintain books of accounts are fully compliant wit
 
 #### Other data
 
-- **User log** – System administrators can use the **User log** page to keep an audit log of users who have signed in to the system. Users can help protect an organization's data by tracking logging information. For more information, see [Manage access to sensitive data](../../fin-ops-core/dev-itpro/gdpr/gdpr-auditing-sensitive-data.md).
+- **User log** – System administrators can use the **User log** page to keep an audit log of users who have signed in to the system. Users can help protect an organization's data by tracking logging information. For more information, see [Manage access to sensitive data](../../fin-ops-core/dev-itpro/privacy/privacy-auditing-sensitive-data.md).
 
     ![User log page.](media/user-log-page.png)
 

@@ -20,25 +20,25 @@ ms.custom: bap-template
 > Some or all of the functionality that's described in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
+>
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
 
 <!--KFM: Preview until further notice -->
 
 During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Therefore, procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 
-This article describes the **Confirmed purchase orders with changes** workspace where users can review and accept changes that suppliers make to confirmed purchase orders, based on the downstream impact of the changes.
+This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
 ## Enable the feature for your system
 
 This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
 
 - Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
-- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts.
-
-    These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
-You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+You must be running Supply Chain Management 10.0.34 or later.
 
 This feature was added in builds that came out after the initial release of versions 10.0.34 and 10.0.35. If you're running one of those versions, you must update your version as described here:
 
@@ -152,7 +152,7 @@ The **High impact changes** tile provides an AI-generated, natural-language summ
 > [!NOTE]
 > Only direct downstream impacts are considered. Indirect downstream impacts, such as product work that depends on other production work, aren't yet considered.
 
-From this view, you can contact a vendor via email or Microsoft Teams. The system uses the contact details of the vendor contact person to generate proposed message text and add it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
+From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
 
 [<img src="media/po-change-review-highimpact-one-selected.png" alt="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected." title="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
 

@@ -4,7 +4,7 @@
 title: Invoice capture solution dashboard
 description: This article describes the Invoice capture solution dashboard.
 author: sunfzam
-ms.date: 10/15/2022
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Invoice capture solution dashboard
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Invoice capture, the dashboard includes charts that provide an overview of invoices that have been imported. These charts can help the Accounts Payable (AP) manager analyze the performance of the invoice generation process. The AP manager can view the status of the invoice generation process and, by applying different filters, can also view details.
 

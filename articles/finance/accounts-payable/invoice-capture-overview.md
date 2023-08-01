@@ -4,7 +4,7 @@
 title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
-ms.date: 06/19/2023
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images.
 

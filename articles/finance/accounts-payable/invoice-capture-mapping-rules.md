@@ -4,7 +4,7 @@
 title: Invoice capture solution mapping rules
 description: This article provides information about the setup of mapping rules in the Invoice capture solution.
 author: sunfzam
-ms.date: 09/25/2022
+ms.date: 07/19/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Invoice capture solution mapping rules
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Mapping rules bring basic master data from Microsoft Dynamics 365 Finance or the enterprise resource planning (ERP) system. After mapping rules are set up, the information that is required to create vendor invoices in Finance is derived. When mapping rules are used, the Accounts payable (AP) clerk will check the status instead of manually filling in all the missing field values.
 

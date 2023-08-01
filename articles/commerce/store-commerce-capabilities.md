@@ -216,5 +216,4 @@ This article provides an overview of the Store Commerce app capabilities.
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, accessibility, the General Data Protection Regulation (GDPR), the European Union (EU) Data Boundary, and so on. | | |
-
+| Microsoft standards | The Store Commerce app meets Microsoft standards for security, privacy, and accessibility and various privacy laws and regulations. | | |
