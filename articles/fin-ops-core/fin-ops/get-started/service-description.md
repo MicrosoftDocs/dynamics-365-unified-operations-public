@@ -118,9 +118,9 @@ Finance and operations apps are served from several Azure regions around the wor
 - Customers that have operations in China should review [Azure China Playbook](/azure/china/) and [Finance and operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
 - Customers that have operations in Russia should review the [Russian personal data localization law](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
-### General Data Protection Regulation (GDPR)
+### Privacy laws and regulations
 
-For finance and operations apps, Microsoft acts as a processor. As a data processor, finance and operations provides processes and features that help customers comply with GDPR obligations as a data controller. For more information, refer to [GDPR Overview](../../dev-itpro/gdpr/gdpr-guide.md).
+For finance and operations apps, Microsoft acts as a processor. As a data processor, finance and operations provides processes and features that help customers comply with privacy obligations as a data controller. For more information, see [Privacy overview](../../dev-itpro/privacy/privacy-guide.md).
 
 ## Environment and data management
 
