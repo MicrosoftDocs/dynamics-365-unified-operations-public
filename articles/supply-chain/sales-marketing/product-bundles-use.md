@@ -15,6 +15,7 @@ ms.custom: bap-template
 # Sell and allocate product bundles
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article describes how to work with product bundles on sales orders and related documents, and explains how bundle item prices are allocated to each bundle component.
 

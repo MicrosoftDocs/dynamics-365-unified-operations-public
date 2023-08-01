@@ -23,6 +23,10 @@ This article explains how to set up your system to dynamically select a printer 
 
 When dynamic printer selection is used, and a worker requests printing, the system selects a printer based on the current work user, warehouse, location, and/or zone. The warehouse manager can set up default printers for each work user, warehouse, location, and/or zone.
 
+## Prerequisites
+
+This feature requires Supply Chain Management version 10.0.36 or higher.
+
 ## Basic printing and label layout setup
 
 Before you can set up dynamic printer selection, you must configure your printers and labels in the system, as summarized in the following subsections.

@@ -17,6 +17,10 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+## Prerequisites
+
+This feature requires Supply Chain Management version 10.0.36 or higher.
+
 ## Turn on the Product bundle feature for your system
 
 To make product bundle functionality available, you must turn it on for your system.
