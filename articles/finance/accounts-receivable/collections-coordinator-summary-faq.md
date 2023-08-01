@@ -46,4 +46,4 @@ The AI-generated text and draft email options are optional and can be turned off
 
 ## See also
 
-- [Collections coordinator summary](accounts-receivable/CollectionsCoordinatorSummary.md)
+- [Collections coordinator summary](tasks/CollectionsCoordinatorSummary.md)
