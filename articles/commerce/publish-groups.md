@@ -2,7 +2,7 @@
 title: Work with publish groups
 description: This article describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 07/28/2023
+ms.date: 08/01/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -26,7 +26,7 @@ Authors can preview updates in a staged publish group without affecting the live
 
 Companies can incur costs from slow or invalidated content rollouts that don't go smoothly. Publish groups help guarantee that launches are organized, validated, and published on time. Whether they are large or small, publish groups provide a valuable toolset that helps authors organize and simplify ongoing site update tasks.
 
-The following video provides and overview of the publish group feature.
+The following video provides an overview of the publish group feature.
 
 [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjZ]
 
