@@ -2,19 +2,16 @@
 title: Work with publish groups
 description: This article describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 10/09/2020
+ms.date: 08/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
-ms.dyn365.ops.version: Release 10.0.8
-ms.search.industry: 
-ms.search.form: 
+
 ---
+
 # Work with publish groups
 
 [!include [banner](includes/banner.md)]
@@ -29,6 +26,10 @@ Authors can preview updates in a staged publish group without affecting the live
 
 Companies can incur costs from slow or invalidated content rollouts that don't go smoothly. Publish groups help guarantee that launches are organized, validated, and published on time. Whether they are large or small, publish groups provide a valuable toolset that helps authors organize and simplify ongoing site update tasks.
 
+The following video provides an overview of the publish group feature.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjZ]
+
 ## When to use publish groups
 
 You can use publish groups whenever you must stage and publish multiple documents together. For example, if your website updates content every season, you can create publish groups for these seasonal marketing motions. Your "Autumn Seasonal Update" publish group might contain new seasonal images, fragments that have seasonal marketing messages, pages that include seasonal product collections, or other seasonal website updates.
@@ -37,9 +38,12 @@ An advantage of publish groups is that you can stage multiple updates in paralle
 
 ## Turn on the publish groups feature
 
-The publish groups feature is optional and must be turned for your site.
+For some legacy environments, you must manually turn on the publish groups feature in site builder for each site.
 
-To turn on the publish groups feature for your site in the Commerce authoring tools, follow these steps.
+> [!NOTE]
+> The publish groups feature is turned on by default for new site builder deployments. 
+
+To turn on the publish groups feature for legacy sites in site builder, follow these steps.
 
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Under **Site Settings**, select **Features**.
