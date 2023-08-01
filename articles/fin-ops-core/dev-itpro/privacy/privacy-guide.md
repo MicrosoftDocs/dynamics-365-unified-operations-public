@@ -1,6 +1,6 @@
 ---
-title: General Data Protection Regulation overview
-description: This article provides information about the user log functionality in finance and operations.
+title: Privacy overview
+description: This article provides information about the user log functionality in finance and operations apps.
 author: ToddLefor
 ms.date: 07/23/2019
 ms.topic: overview
@@ -15,20 +15,19 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
 ---
 
-# General Data Protection Regulation overview
+# Privacy overview
 
 [!include [banner](../includes/banner.md)]
 
-## Overview of the GDPR
 
-The European Union's General Data Protection Regulation (GDPR) sets a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). The GDPR governs the handling and use of personal data of EU citizens and residents. Enforcement of the GDPR begins May 25, 2018, and there are significant consequences for non-compliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
+The privacy laws and regulations of the European Union set a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). Privacy governs the handling and use of personal data of EU citizens and residents. Enforcement begins May 25, 2018, and there are significant consequences for non-compliance. For more information about the regulation, see the [European Union site](https://europa.eu/).
 
 > [!NOTE]
 > For information about the scope and coverage of this documentation, see [Clarification of the scope of this content](#clarification-of-the-scope-of-this-content) section at the end of this article.
 >
-> Before utilizing any product features in support of your GDPR compliance efforts, please ensure that you have applied all of the related hotfixes.
+> Before utilizing any product features in support of your compliance efforts, please ensure that you have applied all of the related hotfixes.
 
-The GDPR gives EU citizens specific data subject rights (DSRs) that let them perform the following actions:
+EU citizens have specific data subject rights (DSRs) that let them perform the following actions:
 
 + View their personal data.
 + Correct errors in their personal data.
@@ -36,19 +35,19 @@ The GDPR gives EU citizens specific data subject rights (DSRs) that let them per
 + Object to processing of their personal data.
 + Export their personal data.
 
-The GDPR defines personal data in the following way in article 4 of [the regulation](https://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf) (organizations do not have personal data):
+Personal data is defined in the following way of [the regulation](https://data.consilium.europa.eu/doc/document/ST-5419-2016-INIT/en/pdf) (organizations do not have personal data):
 
 > (1) 'personal data' means any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
 
-To determine responsibilities for compliance, the GDPR identifies the following roles:
+To determine responsibilities for compliance,  the following roles are identified:
 
-+ **Data controller** – The controller controls personal data and determines how it's used. The responsibilities of the controller include but are not limited to collecting, maintaining, directing actions, protecting, modifying and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the process for GDPR requests and carrying out a GDPR request rests with the controller.
-+ **Data processor** – The processor provides services to, and processes data on behalf of, the data controller. The processor performs actions on behalf of the controller. The processor makes it possible for the controller to be GDPR compliant, but has no ownership of the data and does not respond directly to DSR requests.
++ **Data controller** – The controller controls personal data and determines how it's used. The responsibilities of the controller include but are not limited to collecting, maintaining, directing actions, protecting, modifying and deleting personal data. The controller either adds users to the system, grants access to the system, and collects data from data subjects, or has employees who complete these tasks on the company's behalf. The burden of understanding the request process and carrying out the request rests with the controller.
++ **Data processor** – The processor provides services to, and processes data on behalf of, the data controller. The processor performs actions on behalf of the controller. The processor makes it possible for the controller to be compliant, but has no ownership of the data and doesn't respond directly to DSR requests.
 + **Data subject** – A data subject is a natural person whose personal information is being used.
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
 + **C2** – C2 is C1's customer.
 
-For finance and operations apps, Microsoft acts as a processor. As a data processor, finance and operations provides processes and features that help you comply with your GDPR obligations as a data controller.
+For finance and operations apps, Microsoft acts as a processor. As a data processor, finance and operations provides processes and features that help you comply with your obligations as a data controller.
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
@@ -118,7 +117,7 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 </tr>
 <tr class="odd">
 <td>
-<p><strong>Your employee – GDPR administrator</strong></p>
+<p><strong>Your employee – privacy administrator</strong></p>
 </td>
 <td>
 <ul>
@@ -176,7 +175,7 @@ An organization might decide to take any of the following actions in response to
 
 The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities, or extending the provided entities.
 
-If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./gdpr-extend-person-search-report.md).
+If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
 
 ### Right to correct\* \**
 
@@ -192,7 +191,7 @@ When data is located, use in-product features to correct the data where the prod
 
 \*You might find that some data that qualifies as personal data can't be modified directly. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications.
 
-\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations doesn't allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\** As an enterprise resource planning system, finance and operations doesn't allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ### Right to be forgotten\*
@@ -203,7 +202,7 @@ An organization might decide to take any of the following actions in response to
 + Anonymize the personal data where the product enables that action directly.
 + Author a customization to erase/modify the personal data.
 
-\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\* As an enterprise resource planning system, finance and operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 ### Right to port
 
@@ -216,9 +215,9 @@ An organization might decide to take any of the following actions in response to
 
 The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the LCS site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities.
 
-If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./gdpr-extend-person-search-report.md).
+If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./privacy-extend-person-search-report.md).
 
-The controller may, at their sole discretion choose to redact certain types of information that may fall outside of the scope of data that must be returned to the data subject as defined within the GDPR.
+The controller may, at their sole discretion choose to redact certain types of information that may fall outside of the scope of data that must be returned to the data subject as defined within privacy laws and regulations.
 
 ## Right to restrict
 
@@ -226,7 +225,7 @@ An organization might decide to take the following action in response to a DSR r
 
 + Remove the customer from, for example, a marketing campaign.
 
-\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations does not allow for restricted processing of certain business or transactional data, and will not endorse nor provide functionality for the restriction of processing of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\* As an enterprise resource planning system, finance and operations does not allow for restricted processing of certain business or transactional data, and will not endorse nor provide functionality for the restriction of processing of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ## Controller considerations
@@ -285,7 +284,7 @@ Some organizations conduct their activities only through business-to-business re
 
 ## Additional notes that apply to requests for data
 
-+ Data in Management Reporter and in Microsoft Power BI presentations is generated from the information that is entered in various financial documents and then transferred to those applications for reporting purposes. Any request for data should be fulfilled from the financial documents by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Management Reporter or Power BI to fulfill a GDPR request unless you have made customizations that have altered the base functionality.
++ Data in Management Reporter and in Microsoft Power BI presentations is generated from the information that is entered in various financial documents and then transferred to those applications for reporting purposes. Any request for data should be fulfilled from the financial documents by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Management Reporter or Power BI to fulfill a privacy request unless you have made customizations that have altered the base functionality.
 + Personal data that is included in documents or attachments might also need to be returned to the data subject, independent of any reporting.
 + If a master record has transactional data associated with it, it can't be deleted.
 + Similarly, transactions that have been posted or completed can't be deleted.
@@ -346,7 +345,7 @@ We will restrict access to our software and systems by using a sign-in age gate.
 
 ### How will age gating work?
 
-The GDPR specifies that systems must stop processing a minor's personal data if that minor doesn't have parental consent. Note that consent can be given and then withdrawn. Therefore, a user might have access to the system one day but not the next.
+Privacy laws and regulations specifu that systems must stop processing a minor's personal data if that minor doesn't have parental consent. Note that consent can be given and then withdrawn. Therefore, a user might have access to the system one day but not the next.
 
 ## Privacy notices and user subject rights
 
@@ -366,8 +365,8 @@ When you've completed your entries in the system parameters, the link to your or
 
 ## Clarification of the scope of this content
 
-+ This documentation is a commentary on the GDPR, as Microsoft interprets it, as of the publication date. We have spent a lot of time with the GDPR and believe that we have been thoughtful about its intent and meaning. But the application of the GDPR is highly fact-specific, and not all aspects and interpretations of the GDPR are well-settled.
-+ This documentation is provided for informational purposes only, and should not be relied upon as legal advice or to determine how the GDPR might apply to you and your organization. We encourage you to work with a legally qualified professional to discuss the GDPR, how it applies specifically to your organization, and how to best ensure compliance.
++ This documentation is a commentary on privacy laws and regulations, as Microsoft interprets them, as of the publication date. We believe that we have been thoughtful about the intent and meaning of privacy. But the application is highly fact-specific, and not all aspects and interpretations are well-settled.
++ This documentation is provided for informational purposes only, and should not be relied upon as legal advice or to determine how the privacy laws and regulations might apply to you and your organization. We encourage you to work with a legally qualified professional to discuss privacy, how it applies specifically to your organization, and how to best ensure compliance.
 + MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY AS TO THE INFORMATION PROVIDED IN THIS PRESENTATION. This documentation is provided "as is." Information and views expressed in this documentation, including URL and other Internet website references, may change without notice.
 + This documentation does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this presentation for your internal, reference purposes only.
 
