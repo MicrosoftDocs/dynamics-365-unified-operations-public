@@ -37,7 +37,7 @@ The log entries of users who have access to data that's been declared to be sens
 > This feature is available in version 8.0. This feature is available for Dynamics AX 2012 R3 (via KB 4074643)
 
 ## Additional resources
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
 ### Disclaimer
 (c)2018 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.

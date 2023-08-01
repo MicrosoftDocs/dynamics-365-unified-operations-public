@@ -6,7 +6,7 @@ ms.author: gfedorova
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource, WHSDocumentRouting
 ms.topic: how-to
-ms.date: 01/17/2022
+ms.date: 07/31/2023
 ms.custom: bap-template
 ---
 
@@ -53,11 +53,29 @@ Follow these steps to create a license plate label layout.
 
     - **Label layout ID** – Enter a name for the layout (for example, *License plate*).
     - **Description** – Enter a short description of the layout (for example, *License plate*).
+    - **Definition type** – Select the method that's used to define the label layout:
+
+        - *ZPL* – Define the label layout by using ZPL.
+        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Microsoft Dynamics 365 Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
+
+            ```plaintext
+            "filePath": "/Instant Print/GS1-128.nlbl", 
+            "quantity": "1",
+            "dataSources": [
+            {
+                "GTIN of Contained Trade Items": "06183928726611",
+                "Product_name": "D365FO: $ItemName$"
+            }
+            ]
+            ```
+
     - **Label layout data source ID** – Leave this field blank if you'll use only license plate data. If you must include data from other tables, select a label layout data source that has the required joins. For more information about how to set up and use a label layout data source, see the next section in this article.
     - **Enable label template support** – Leave this option set to *No* for now. (When it's set to *Yes*, you can add header, row, and footer elements to your layout, as described later in this article.)
     - **Date, time, and number format** – Select the language to use when date, time, and number values that are shown in the label layout are formatted.
+    - **Printer stock type** – Select a *printer stock type*. A printer stock type typically describes the type of paper that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to. For information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
 
-1. On the **Printer text Layout** FastTab, enter your label code. Here's an example of code that you can copy and paste for testing.
+1. On the **Printer text Layout** FastTab, enter label code in a way that's appropriate for the selected definition type. The following example shows code that you can copy and paste for testing if the **Definition type** field is set to *ZPL*.
 
     ``` ZPL
     CT~~CD,~CC^~CT~
@@ -80,10 +98,10 @@ Follow these steps to create a license plate label layout.
     > [!NOTE]
     > While you're customizing the label code on the **Printer text layout** FastTab, you can add valid field and method names by following these steps:
     >
-    > 1. If the **Tables** list is shown, select the table. (The **Tables** list is shown only when a value is selected in the **Label layout data source ID** field.)
+    > 1. In the **Tables** list, select the table.
     > 1. Depending on the type of item that you want to add, select either the **Fields** tab or the **Methods** tab, and then select the name of the field or method to add.
-    > 1. Select **Insert at end of text** to add the field or method to the end of the code.
-    > 1. As you require, move the new field or method to the place in the code where you want to use it.
+    > 1. If the **Definition type** field is set to *ZPL* or *Variables (script)*, select **Insert at end of text** to add the field or method to the end of the code. As you require, move the new field or method to the place in the code where you want to use it.
+    > 1. If the **Definition type** field is set to *Variables*, select a row in the **Data variables** table, and then select **Insert field reference** to add the field or method as a field value.
 
 1. On the Action Pane, select **Save**.
 
@@ -196,7 +214,7 @@ To specify the license plate label layouts that are used and where they're print
 
 1. On the **Document routing printers** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 
-    - **Name** – Select an appropriate ZPL printer. For more information, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md).
+    - **Name** – Select an appropriate ZPL printer. For more information, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md).
     - **Label layout ID** – Select the label layout to use. The example label layout ID value that was suggested earlier in this article was *License plate*.
 
 ## Automatically print labels when purchase orders are received by using the mobile app
