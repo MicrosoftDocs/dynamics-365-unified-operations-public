@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview 
-This article offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [General Data Protection Regulation overview](./gdpr-guide.md).
+This article offers information for complying with requests for data under the General Data Protection Regulation (GDPR) if the request requires accessing data in Microsoft Lifecycle services (LCS). For general information about this regulation and the resources Microsoft is providing to support compliance with it, see [Privacy overview](./privacy-guide.md).
 
 ## User management 
 
