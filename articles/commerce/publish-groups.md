@@ -28,7 +28,7 @@ Companies can incur costs from slow or invalidated content rollouts that don't g
 
 The following video provides an overview of the publish group feature.
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjZ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW17VjZ]
 
 ## When to use publish groups
 
