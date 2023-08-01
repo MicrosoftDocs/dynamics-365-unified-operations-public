@@ -23,7 +23,7 @@ ms.search.form:
 
 This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). 
 
-Once configured, the system will allow you to **generate** XML file of electronic invoices in PEPPOL format with Australian and New Zealand extension.
+Once configured, the system will allow you to **generate** XML files of electronic invoices in PEPPOL format with Australian and New Zealand extension.
 
 
 
@@ -54,23 +54,10 @@ Some of the parameters from the **Electronic invoicing for Australia and New Zea
 1. Import the latest version of the **Electronic invoicing for Australia and New Zealand** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 
-> [!NOTE]
-> The **Electronic invoicing for Australia and New Zealand** electronic invoicing feature is provided by Microsoft ready to use. No additional configuration required. If you need to apply some changes then refer the following article for more details how to configure invoicing features [Work with feature setups](e-invoicing-feature-setup). For example, you can filter specific legal entities to be processed in applicability rules. By default the feature is applicable to all legal entities with primary addresses in Australia or New Zealand.
+  > [!NOTE]
+  > The **Electronic invoicing for Australia and New Zealand** electronic invoicing feature is provided by Microsoft ready to use. No additional configuration required. If you need to apply some changes then refer the following article for more details how to configure invoicing features [Work with feature setups](e-invoicing-feature-setup.md). For example, you can filter specific legal entities to be processed in applicability rules. By default the feature is applicable to all legal entities with primary addresses in Australia or New Zealand.
 
-3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Submit batch** feature setup, and then select **Edit**.
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **(Preview) KSeF send batch to e-invoice system** action.
-6. In the **Parameters** section, select **Client ID**, and then select the name of the secret that you previously created for the legal entity's tax identification number.
-7. Select **Certificate name**, and then select the name of the digital certificate that you created.
-8. Select **Public key**, and then select the name of the secret that you created for the public key.
-9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
-10. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
-11. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
-12. Select **Save**, and close the page.
-13. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
-14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
-15. Select **Save** (if you made any changes), and close the page.
-16. Repeat steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+3. The copy of the feature is always created as a **Draft** version. You need to complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](e-invoicing-complete-publish-deploy-globalization-feature.md), regardless whether you did some changes or not.
 
 ## Finance configuration
 
