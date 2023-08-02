@@ -47,7 +47,7 @@ The following table describes the buttons that are available on the **Voyage edi
 | Button | Description |
 |---|---|
 | Edit voyage header | Open a page that you can update voyage header detail informations. |
-| Setup | In the dropdown menu, you have the option to select the specific type of transaction or site data that you want to display in the form. |
+| Setup | Open a dropdown menu, you have the option to select the specific type of transaction or site data that you want to display in the form. |
 | Generate data | Generate transaction data in the **inbound orders** table.  |
 | Display dimensions | Select the inventory dimensions that should be shown. |
 
