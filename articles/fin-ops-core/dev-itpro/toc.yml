@@ -1898,6 +1898,8 @@ items:
             href: migration-upgrade/clean-up-source-data-upgrade.md
           - name: Compress tables in Dynamics AX 2012 environments
             href: migration-upgrade/compress-tables-ax-2012.md
+          - name: Change the database collation for development environments
+            href: migration-upgrade/coll-dev-env.md
       - name: Migrate data from AX 2009
         items:
         - name: Migrate data from AX 2009 to finance and operations
