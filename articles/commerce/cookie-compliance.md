@@ -2,7 +2,7 @@
 title: Cookie compliance
 description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/04/2023
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.assetid:
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 
-Privacy is an important factor when tracking technologies that affect e-Commerce customers. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
+Privacy is an important factor when tracking technologies that affect e-commerce customers. Because of privacy laws and regulations, electronic privacy guidelines must be considered for any site that is active today. Because many e-commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-commerce site.
 
 To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.
 
@@ -58,18 +58,19 @@ The following table shows the current reference list of cookies placed by Dynami
 | `_msdyn365___can_`                            | Stores customer account number when using on behalf of (OBO) business-to-business (B2B) functionality.      | Session |
 | `_msdyn365___catalogid_`                            | Stores the customer catalog ID selection.      | Session |
 
+
 If a site user selects any social media links within a site, the cookies in the following table will also be tracked on their browser.
 
 
 | Domain                      | Cookie               | Description                                                  | Source                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | `UserMatchHistory`         | LinkedIn Ads ID syncing                                      | LinkedIn Feed and Insight tag                                |
-| .linkedin.com               | `li_sugr`                  | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country |
+| .linkedin.com               | `li_sugr`                  | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a designated country/region |
 | .linkedin.com               | `BizographicsOptOut`       | Determines opt-out status for third-party tracking.              | LinkedIn guest controls and industry opt-out pages           |
 | .linkedin.com               | `_guid`                    | Browser identifier for Google Ads.                            | LinkedIn Feed                                                |
 | .linkedin.com               | `li_oatml`                 | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
 | Various first-party domains | `li_fat_id`                | Member indirect identifier for conversion tracking, retargeting, and analytics. | LinkedIn Ads and Insight tags                                |
-| .adsymptotic.com            | `U`                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a Designated Country |
+| .adsymptotic.com            | `U`                        | Browser identifier                                           | LinkedIn Insight tag if IP address isn't in a Designated Country/region |
 | .linkedin.com                | `bcookie`                  | Browser ID cookie                                            | Requests to LinkedIn                                         |
 | .linkedin.com                | `bscookie`                 | Secure browser cookie                                        | Requests to LinkedIn                                         |
 | .linkedin.com               | `lang`                     | Sets default locale and language.                                 | Requests to LinkedIn                                         |

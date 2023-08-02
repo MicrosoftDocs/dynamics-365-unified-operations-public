@@ -97,6 +97,7 @@ The following table lists the transactions supported in the corresponding versio
 
 | Version | Transactions |
 |---------|--------------|
+| 10.0.36 | Invoice register<br> Invoice approval<br> Invoice pool |
 | 10.0.29 | Periodic journals |
 | 10.0.28 | Vendor payment journal<br> Customer payment journal | 
 | 10.0.26 | General journals<br> Vendor invoice journal |

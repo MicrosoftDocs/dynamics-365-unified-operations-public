@@ -17,7 +17,6 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -67,7 +66,7 @@ Updates are applied as deployable packages on an environment. A deployable packa
 - **Search for and download an update**
   In LCS, you can search for an update using [Issue search in Lifecycle Services (LCS)](issue-search-lcs.md) or the [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md). Because the steps to prepare an update differ based on the update type, after the update is downloaded, use the following list to determine how to proceed with preparation.
   - Platform update: Platform updates are cumulative and binary. This means that they can be applied directly to an environment. After the update is downloaded, it can be automatically applied to an environment by uploading it to the Asset Library.
-  - Application hotfixes: Application hotfixes are code changes. After the application hotfix is downloaded, it must be applied on a dev environment to generate a deployable package. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md) and [Install metadata hotfixes in development environments](../migration-upgrade/install-metadata-hotfix-package.md).
+  - Application hotfixes: Application hotfixes are code changes. After the application hotfix is downloaded, it must be applied on a dev environment to generate a deployable package. For more information, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md) and [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
   - Application customizations: These are customizations that ISV or partners create. These are deployable packages that are uploaded to the Asset Library and can be applied from there.
 - **Apply an update**
   Use the information in the article, [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md), to walk through the steps for applying a deployable package. The update package can be a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.

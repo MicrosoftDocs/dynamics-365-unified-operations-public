@@ -12,7 +12,7 @@ ms.search.region: global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 58941,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.form: ERWorkspace
 ---
@@ -140,7 +140,7 @@ Required **LCS project**, **File system**, and **Regulatory Configuration Servic
 
 ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. 
 
-To become familiar with the details of this scenario, play the **ER Design domain specific data model** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+To become familiar with the details of this scenario, review the article, [Design domain specific data model](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### Translating data model content
 
@@ -153,7 +153,7 @@ Data model content (labels and descriptions) can be translated into other langua
 
 ER provides a model mapping designer that lets users map data models that they have designed to specific application data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. 
 
-To become familiar with the details of this scenario, play the **ER Define model mapping and select data sources** and **ER Map data model to selected data sources** task guides (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+To become familiar with the details of this scenario, review the articles, [Define ER model mappings and select data sources for them](tasks/er-define-model-mapping-select-data-sources-2016-11.md) and [Map data model to selected data sources](tasks/er-map-data-model-selected-data-sources-2016-11.md).
 
 ### Configuring data model mappings for incoming documents
 
@@ -163,25 +163,23 @@ ER provides a model mapping designer that lets users map data models that they h
 
 ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance. 
 
-To become familiar with the details of this scenario, play the **ER Map data model to selected data sources** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+To become familiar with the details of this scenario, review the article  [Map data model to selected data sources](tasks/er-map-data-model-selected-data-sources-2016-11.md).
 
 ### Building a format that uses a data model as a base
 
 ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source. 
 
-To become familiar with the details of this scenario, play the **ER Design domain specific format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
-
 ### Building a configuration to generate electronic documents in OPENXML worksheet format
 
 The ER format designer can be used to build an electronic document in OPENXML worksheet format. 
 
-To become familiar with the details of this scenario, play the **ER Create a configuration for reports in OPENXML format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process). As part of the task guide step for importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) Excel file as a template.
+To become familiar with the details of this scenario, review the [Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md). As a part of importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) Excel file as a template.
 
 ### Building a configuration to generate electronic documents in a Word document format
 
 The ER format designer can be used to build an electronic document in a Word document format. This format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
 
-To become familiar with the details of this scenario, play the ER Design a configuration for generating reports in Microsoft WORD format task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
+To become familiar with the details of this scenario, review the article, [Design a new ER configuration to generate reports in Microsoft WORD format](er-design-configuration-word.md). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
 
 - [Template of Payment Report (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
 - [Bounded template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
@@ -190,7 +188,7 @@ To become familiar with the details of this scenario, play the ER Design a confi
 
 The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. 
 
-To become familiar with the details of this scenario, play the Create required ER configurations to import data from an external file task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). Use the following files to play this guide:
+To become familiar with the details of this scenario, see [Create required configurations to import data from an external file](Create required configurations to import data from an external file.md). Use the following files to complete the steps in this article:
 
 - [ER data model configuration (1099model.xml)](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)
 - [ER format configuration (1099format.xml)](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)
@@ -199,31 +197,31 @@ To become familiar with the details of this scenario, play the Create required E
 
 ### Storing a designed format component in a format configuration
 
-ER can store a designed format together with the configured data mappings as a format configuration of the current instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration). To become familiar with the details of this scenario, play the **ER Design domain specific format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER can store a designed format together with the configured data mappings as a format configuration of the current instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration). 
 
 ### Configuring Finance to start to use a created format internally
 
 The application can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment.
 
-To become familiar with the details of this scenario, play the **ER Use format to generate electronic document for payments** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+To become familiar with the details of this scenario, see [Generate electronic documents for payments using a format configuration](tasks/er-electronic-payments.md).
 
 ## Handling ER components
 
 ### Publishing an ER component in LCS to offer it externally (localization)
 
-The owner of a component (model or format) that has been created can use ER to publish the completed version of the component to LCS. A repository of the **LCS project** type for the current ER configuration provider is required. When the status of the completed version of a component is changed from **COMPLETED** to **SHARED**, that version is published in LCS. When a component has been published to LCS, the owner of that component becomes a provider of the service to support the component. For example, if the format component is designed to generate an electronic document that is legally required (for example, in accordance with a localization scenario), it's assumed that the format will be kept compliant with legislative changes, and that the provider will issue new versions of the component whenever new legislative requirements arise. To become familiar with the details of this scenario, play the **ER Upload a configuration into Lifecycle Services** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+The owner of a component (model or format) that has been created can use ER to publish the completed version of the component to LCS. A repository of the **LCS project** type for the current ER configuration provider is required. When the status of the completed version of a component is changed from **COMPLETED** to **SHARED**, that version is published in LCS. When a component has been published to LCS, the owner of that component becomes a provider of the service to support the component. For example, if the format component is designed to generate an electronic document that is legally required (for example, in accordance with a localization scenario), it's assumed that the format will be kept compliant with legislative changes, and that the provider will issue new versions of the component whenever new legislative requirements arise. To become familiar with the details of this scenario, see, [Upload a configuration into Lifecycle Services](tasks/er-upload-configuration-into-lifecycle-services.md).
 
 ### Importing an ER component from LCS to use it internally
 
-ER lets you import ER components from LCS to the current instance. A repository of the **LCS project** type is required. When an ER component has been imported from LCS to the current instance, the owner of the instance becomes a consumer of the service that is provided by the owner (author) of the imported component. For example, if a format component is designed to generate a specific electronic document from the application in a country/region-specific format (localization scenario), it's assumed that the service consumer will be able to obtain any updates that are made to that format, to keep it compliant with legislative requirements. To become familiar with the details of this scenario, play the **ER Import a configuration from Lifecycle Services** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER lets you import ER components from LCS to the current instance. A repository of the **LCS project** type is required. When an ER component has been imported from LCS to the current instance, the owner of the instance becomes a consumer of the service that is provided by the owner (author) of the imported component. For example, if a format component is designed to generate a specific electronic document from the application in a country/region-specific format (localization scenario), it's assumed that the service consumer will be able to obtain any updates that are made to that format, to keep it compliant with legislative requirements. To become familiar with the details of this scenario, see [Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md).
 
 ### Building a format selecting another format as a base (customization)
 
-ER lets you create (derive) a new component from the current version of a component (base) that was imported from LCS. For example, a user wants to derive a new format to implement some special requirements for an electronic document (such as an additional field or an extensive description) to support a customization scenario. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of it** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER lets you create (derive) a new component from the current version of a component (base) that was imported from LCS. For example, a user wants to derive a new format to implement some special requirements for an electronic document (such as an additional field or an extensive description) to support a customization scenario. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
 ### Upgrading a format selecting a new version of base format (rebase)
 
-ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
+ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, see [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md).
 
 ## <a name="list-of-configurations"></a>List of ER configurations that have been released in Finance
 

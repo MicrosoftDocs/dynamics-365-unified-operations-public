@@ -280,7 +280,7 @@ If an attachment stored in Azure Blob storage is accidentally deleted, it cannot
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
-Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
+Record attachment information is stored in the DocuRef and DocuValue tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuValue record. The DocuValue record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
 
 ### Can attachments be stored in the database?
 

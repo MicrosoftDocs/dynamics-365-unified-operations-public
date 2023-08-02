@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: ["260624", "intro-internal"]
+ms.custom: ["260624"]
+ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -48,7 +49,7 @@ Human Resources connects people and operations data to help you optimize workfor
 
 ## Dynamics 365 Finance
 
-For information about Dynamics 365 Finance, see [Finance home page](../finance/index.md).
+For information about Dynamics 365 Finance, see [Finance home page](../finance/index.yml).
 
 ## Additional resources
 

@@ -43,10 +43,10 @@ The following prerequisites must be met before you can set up taxpayer types for
     | Mandatory country identification number | Set this option to **Yes** to make the **Country identification number** field required in the entity configuration. |
     | Mandatory state identification number   | Set this option to **Yes** to make the **State identification number** field required in the entity configuration. |
 
-5. In the **Document types** grid, add the tax Id types that are associated with the taxpayer type according to the country's legislation.
+5. In the **Document types** grid, add the tax Id types that are associated with the taxpayer type according to the country/regions's legislation.
 
     > [!NOTE]
-    > This configuration and the tax ID type configuration in the country address book will let you filter or directly assign the tax ID type in the customer or vendor record.
+    > This configuration and the tax ID type configuration in the country/region address book will let you filter or directly assign the tax ID type in the customer or vendor record.
 
 6. In the **Document class letter** grid, select the IDs that the taxpayer type uses in transactions.
 7. Select **Save**.

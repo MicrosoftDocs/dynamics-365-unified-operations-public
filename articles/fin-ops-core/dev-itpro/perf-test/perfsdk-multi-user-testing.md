@@ -5,7 +5,7 @@ author: kennysaelen
 ms.date: 06/04/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: kesaelen
 ms.search.validFrom: 2016-02-28
@@ -18,8 +18,8 @@ ms.dyn365.ops.version: AX 10.0.0
 
 This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 
-> [!IMPORTANT]
-> Visual Studio 2019 will be the last version of Visual Studio that includes web performance and load testing features. If you're using the Visual Studio and Test Controller/Test Agent for on-premises load testing, Visual Studio 2019 will be the last version. You can continue to use it until the end of the support cycle. For more information, see [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
+  > [!IMPORTANT]
+  > Visual Studio 2019 is the last version of Visual Studio that includes web performance and load testing features and will be deprecated in the future. We suggest using Apache JMeter for performance testing. For more information, see [JMeter](https://jmeter.apache.org/).
 
 ## Prerequisites
 

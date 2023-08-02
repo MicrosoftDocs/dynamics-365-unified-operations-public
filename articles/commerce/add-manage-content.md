@@ -1,20 +1,19 @@
 ---
+
 title: Ways to add content
 description: This article provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
-ms.date: 10/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/01/2023
+ms.topic: article 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.search.industry: 
-ms.search.form: 
+
 ---
+
 # Ways to add content
 
 [!include [banner](includes/banner.md)]
@@ -22,6 +21,10 @@ ms.search.form:
 This article provides an overview and links to documentation about how to manage content using the Microsoft Dynamics 365 Commerce site builder web authoring toolset.
 
 There are many ways to change the look, feel, and content of your site. Depending on the required level of customization, many of these changes can be implemented by non-developers within site builder, the web authoring toolset included with Dynamics 365 Commerce. Site builder enables you to build templates, select themes, and select and configure modules without writing any code. By contrast, development skills are required to create a new theme or module, because the e-Commerce software development kit (SDK) and the Microsoft Dynamics Lifecycle Services (LCS) deployment workflow must be used.
+
+The following video provides an overview of site builder content management. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1834A]
 
 The following articles are good jumping off points to start understanding how to add and manage site content. Most of the articles listed focus on areas of your site that don't require a developer. Some address basic content editing, while others focus on site administrator tasks. Each of these articles will denote specific tasks might require SDK work. Each article assumes that you have already provisioned a site and been granted access to the site builder toolset for your site.
 

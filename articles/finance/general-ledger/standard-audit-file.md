@@ -38,14 +38,16 @@ Follow these steps to generate a report by using the ER format configuration tha
 1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 2. In the dialog box for the report, specify the required parameters, and then select **OK**.
 
-## Country-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
+## Country/region-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
 
-The following table provides information about country-specific regulatory features that are supported by the **Standard Audit File for Tax (SAF-T) electronic report** feature.
+The following table provides information about country/region-specific regulatory features that are supported by the **Standard Audit File for Tax (SAF-T) electronic report** feature.
 
-| Country   | Feature name |
+| Country/region   | Feature name |
 |-----------|--------------|
-| Lithuania | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
-| Norway    | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
-| Singapore | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
+| The United Arab Emirates | [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md) |
+| Denmark                  | [Standard Audit File for Tax (SAF-T) for Denmark](../localizations/emea-dnk-saf-t.md) |
+| Lithuania                | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
+| Norway                   | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
+| Singapore                | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

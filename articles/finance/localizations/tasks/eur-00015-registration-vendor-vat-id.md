@@ -37,7 +37,7 @@ Before you can complete this procedure you must set up VAT IDs. This procedure a
     * For example, enter ITA.  
 12. In the Country/region field, enter or select a value.
     * For example, select ITA.  
-13. Select Yes in the Primary for country field.
+13. Select Yes in the Primary for country/region field.
 14. Click Save.
 15. Click the Overview tab.
 16. Click Add.

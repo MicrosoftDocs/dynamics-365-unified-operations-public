@@ -25,7 +25,7 @@ To complete these steps, you must first complete the steps in the "Create a conf
 ## Select format configuration for customization
 1. Go to Organization administration > Workspaces > Electronic reporting.
 
-    In this example, sample company Litware, Inc. (https://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.    Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country.  
+    In this example, sample company Litware, Inc. (https://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country/region. Sample company Proseware, Inc. (https://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country/region.  
 2. Click Reporting configurations.
 3. Click Show filters.
 4. Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator.
@@ -38,7 +38,7 @@ To complete these steps, you must first complete the steps in the "Create a conf
     The version of the format with the status of Completed will be used by Proseware, Inc. for customization.  
 
 ## Create a new configuration for your custom format of electronic document
-Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription. Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements. Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.  
+Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription. Proseware, Inc. wants to start using this as a standard for their country/region but some customization is required to support specific regional requirements. Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country/region-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.  
 
 To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.  
 
@@ -115,8 +115,8 @@ Change the status of the designed format configuration from Draft to Completed t
 ## Test the customized format to generate payment files
 Complete the steps in the "Use created format to generate electronic documents for payments" procedure in a parallel finance and operations session. Select the BACS (UK fictitious custom) format in electronic payment method parameters. Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.  
 
-## Update the existing country-specific configuration
-Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document. Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.  
+## Update the existing country/region-specific configuration
+Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country/region requirements for managing the format of the electronic document. Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.  
 
 In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations' LCS repository. In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.  
 
@@ -127,14 +127,14 @@ In real service provision related processes, each new version of BACS (UK fictit
 5. In the tree, expand 'Payments (simplified model)'.
 6. In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.
 
-    The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.  
+    The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country/region-specific requirements.  
 
 ## Localize the base format of the electronic document
-Assume that there are new country-specific requirements to be supported by Litware, Inc.:  
+Assume that there are new country/region-specific requirements to be supported by Litware, Inc.:  
 
 - A value for the creditor's bank SWIFT code in each payment transaction.
 - A limit of 100 characters for the length of text for the vendor's name in a generating file.  
-- New country-specific requirements  
+- New country/region-specific requirements  
 - Select the draft version of the desired configuration to introduce required changes.  
 
 
@@ -180,7 +180,7 @@ Change the status of the updated base format configuration from Draft to Complet
 
 ## Change the base version for the custom format configuration
 
-Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements. Proseware, Inc. wants to start using it as a standard for the country.  
+Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country/region-specific requirements. Proseware, Inc. wants to start using it as a standard for the country/region.  
 
 To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom). Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.  
 
@@ -207,13 +207,13 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
 ## Resolve rebase conflicts
 1. Click Designer.
     
-    Note that changes to the vendor's name text length limit couldn't be resolved automatically. Therefore, this is presented in a conflicts list. For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).  - Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).  - Keep your own (custom) value (60 in our case).  Click Apply base value to apply a country-specific limit of 100 characters for vendor's name text length.  
+    Note that changes to the vendor's name text length limit couldn't be resolved automatically. Therefore, this is presented in a conflicts list. For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).  - Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).  - Keep your own (custom) value (60 in our case).  Click Apply base value to apply a country/region-specific limit of 100 characters for vendor's name text length.  
 
     Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.  
 
 2. Click Apply base value.
 
-    Click Apply base value to apply the country-specific limit of 100 characters for vendor names.  
+    Click Apply base value to apply the country/region-specific limit of 100 characters for vendor names.  
 
 3. Click Save.
 
@@ -233,7 +233,7 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
     Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.  
 
 ## Test the customized format for payment files generation
-Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel finance and operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
+Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel finance and operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country/region requirements.  
 
 
 

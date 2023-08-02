@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
@@ -57,7 +57,7 @@ Select a feature area to learn more about it.
 
 ## Dynamics 365 Finance
 
-For information on Dynamics 365 Finance, go to the [Finance home page](../finance/index.md).
+For information on Dynamics 365 Finance, go to the [Finance home page](../finance/index.yml).
 
 ## Videos
 

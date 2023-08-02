@@ -29,7 +29,7 @@ The information here applies to all European countries/regions. The task was cre
 5. In the Country/region field, enter or select a value DEU
 6. Select Yes in the Unique field.
     * Select this check box to verify if the VAT ID is unique.  
-7. Select Yes in the Primary for country field.
+7. Select Yes in the Primary for country/region field.
     * Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.  
 8. Click Create.
 9. Click Add.
@@ -38,7 +38,7 @@ The information here applies to all European countries/regions. The task was cre
     * When you enter a registration ID of this type for the selected country/region, the registration ID will be verified against this format.  
 12. Select the Unique check box.
     * Select this check box to verify if the VAT ID is unique.  
-13. Select the Primary for country check box.
+13. Select the Primary for country/region check box.
     * Select this check box if the VAT ID should be effective for all addresses belonging to the specified country/region.  
 14. Click Save.
 15. Go to Organization administration > Global address book > Registration types > Registration categories.

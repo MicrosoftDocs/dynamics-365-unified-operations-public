@@ -2,10 +2,9 @@
 title: Separated Dual-write Application Orchestration package
 description: The Dual-write Application Orchestration package is no longer a single package but has been separated into smaller packages. This article explains the solutions and maps that each package contains, and its dependency on other packages.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 05/04/2023
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: sericks
 ms.custom: "separate-solution"
 ms.search.region: global
 ms.author: ramasri
@@ -33,11 +32,13 @@ Previously, the Dual-write Application Orchestration package was a single packag
 - Currency Exchange Rates
 - Field Service Common
 
-Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations be upgraded.
+Because it was a single package, this package created an "all or nothing" situation for customers. However, Microsoft has now separated it into smaller packages. Therefore, customers can select just the packages for the solutions that they require. For example, if you're a Microsoft Dynamics 365 Supply Chain Management customer, and don't require integration with Dynamics 365 Human Resources, notes, and asset management, you can exclude those solutions from the solutions that are installed. Because the underlying solution names, publisher, and map versions remain the same, this change is non-breaking. Existing installations can be upgraded.
 
 ![Separated package.](media/separated-package-1.png)
 
 This article explains the solutions and maps that each package contains, and its dependency on other packages.
+
+For step-by-step instructions that show how to transition to split packages, see [Transition from the Dual-write Application Orchestration package to split packages](separated-solutions-transition-guidance.md).
 
 ## Dual-write Application Core
 

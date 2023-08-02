@@ -1,7 +1,7 @@
 ---
 title: VAT declaration (France)
 description: This article describes how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
@@ -71,6 +71,7 @@ The VAT declaration preview in France contains the following information.
 | F6   | 0037 | Tax-free purchases | Operation lookup | TaxFreePurchases |
 | F7   | 0043 | Sales of goods or services by a taxable person who isn't established in France | Operation lookup | SalesByPersonNotEstablished |
 | F8   | 0039 | Regularizations | Operation lookup | NotTaxableRegularizations |
+| F9   | 0061 | Internal transactions carried out between members of a single taxable person | Operation lookup | InternalTransactionsAUMember |
 
 **SECTION B - VAT CALCULATION TO BE PAID**
 
@@ -95,8 +96,14 @@ The VAT declaration preview in France contains the following information.
 
 | Line | Box  | Description | Lookup | Lookup result |
 |------|------|-------------|--------|---------------|
-| 13   | 0900 | Old rates | Report field lookup | <p>VATDueOldRates</p><p>UseTaxOldRates (Line 20 is also affected.)</p> |
-| 14   | 0950 | Transactions that are taxable at a specific rate (The statement is made on note 3310 A.) | Report field lookup | <p>VATDueSpecificRate</p><p>UseTaxSpecificRate (Line 20 is also affected.)</p> |
+| T1   | 1120 | Transactions carried out in the DOM and taxable at the rate of 1.75% | Report field lookup | <p>VATDueSpecificRateDOM1_75</p><p>UseTaxSpecificRateDOM1_75 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_75</p> |
+| T2   | 1110 | Transactions carried out in the DOM and taxable at the rate of 1.05% | Report field lookup | <p>VATDueSpecificRateDOM1_05</p><p>UseTaxSpecificRateDOM1_05 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_05 (Line 19 is also affected.)</p> |
+| T3   | 1081 | Operations carried out in Corsica and taxable at the rate of 10% | Report field lookup | <p>VATDueSpecificRateCorse10</p><p>UseTaxSpecificRateCorse10 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse10 (Line 19 is also affected.)</p> |
+| T4   | 1050 | Operations carried out in Corsica and taxable at the rate of 2.1% | Report field lookup | <p>VATDueSpecificRateCorse2_1</p><p>UseTaxSpecificRateCorse2_1 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse2_1 (Line 19 is also affected.)</p> |
+| T5   | 1040 | Transactions carried out in Corsica and taxable at the rate of 0.9% | Report field lookup | <p>VATDueSpecificRateCorse0_9</p><p>UseTaxSpecificRateCorse0_9 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateCorse0_9 (Line 19 is also affected.)</p> |
+| T6   | 1010 | Transactions carried out in mainland France at the rate of 2.1% | Report field lookup | <p>VATDueSpecificRateFrance2_1</p><p>UseTaxSpecificRateFrance2_1 (Line 20 is also affected.)</p><p>UseTaxPropertySpecificRateFrance2_1 (Line 19 is also affected.)</p> |
+| T7   | 0990 | VAT deduction on copyright | Report field lookup | <p>VATDueSpecificRateCopyright</p><p>UseTaxSpecificRateCopyright (Line 20 is also affected.)</p> |
+| 13   | 0900 | Old rates | Report field lookup | <p>VATDueOldRates</p><p>UseTaxOldRates (Line 20 is also affected.)</p><p>UseTaxPropertyOldRates (Line 19 is also affected.)</p> |
 
 **Petroleum products**
 
@@ -125,7 +132,7 @@ The VAT declaration preview in France contains the following information.
 | 15   | 0600 | (including VAT on imported products excluding petroleum products) | Report field lookup | VATDeductedToBeReturnedImports |
 | 5B   | 0602 | Amounts that must be added, including holiday deposits (expressed in euros) | Report field lookup | VATCorrectionAmountToBeAdded |
 | 16   | Not applicable | Total gross VAT due (lines 08 through 5B) | Total | Total of tax amount of lines 08 + 09 + 9B + 10 + 11 + 13 + 14 + P1 + P2 + I1 + I2 + I3 + I4 + I5 + I6 + 15 + 5B |
-| 7C   | 0046 | Including VAT on imports that benefit from the reverse charge scheme | Total | Total of tax amount of lines I1 + I2 + I3 + I4 + I5 + I6 |
+| 7C   | 0046 | Including VAT on imports that benefit from the reverse charge scheme | Total | Total of tax amount of lines I1 + I2 + I3 + I5 + I6 + T1 + T2 + T3 + T4 + T5 + T6 + T7 |
 | 17   | 0035 | Including VAT on intra-community acquisitions | Operation lookup | EUPurchase (Line B2 is also affected.) |
 | 18   | 0038 | Including VAT on transactions to Monaco | Monaco lookup | Monaco |
 
@@ -133,28 +140,58 @@ The VAT declaration preview in France contains the following information.
 
 | Line | Box  | Description | Lookup | Lookup result |
 |------|------|-------------|--------|---------------|
-| 19   | 0703 | Property that constitutes capital assets | Report field lookup | VATDeductionPropertyCapitalAssets |
-| 20   | 0702 | Other goods and services | Report field lookup | <p>VATDeductionOtherGoodsServices</p><p>VATDeductionOtherGoodsServicesImports (Line 24 is also affected.)</p><p>VATDeductionOtherGoodsServicesPetroleum (Line 2E is also affected.)</p><p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 24 and 2E are also affected.)</p><p>UseTaxFranceStandard (Line 08 is also affected.)</p><p>UseTaxFrancePetroleumStandard (Lines P1 and 2E are also affected.)</p><p>UseTaxFranceReduced (Line 09 is also affected.)</p><p>UseTaxFranceReduced2 (Line P2 is also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 2E are also affected.)</p><p>UseTaxOverseasStandard (Line 10 is also affected.)</p><p>UseTaxOverseasReduced (Line 11 is also affected.)</p><p>UseTaxOldRates (Line 13 is also affected.)</p><p>UseTaxSpecificRate (Line 14 is also affected.)</p><p>UseTaxPetroleumStandard (Lines P1 and 2E are also affected.)</p><p>UseTaxPetroleumReduced (Lines P2 and 2E are also affected.)</p><p>UseTaxImportsOverseasStandard (Lines I3 and 24 are also affected.)</p><p>UseTaxImportsFranceReduced (Lines I4 and 24 are also affected.)</p><p>UseTaxImportsOverseasReduced (Lines I5 and 24 are also affected.)</p><p>UseTaxImportsSpecificRate (Lines I6 and 24 are also affected.)</p> |
+| 19   | 0703 | Property that constitutes capital assets | Report field lookup | <p>VATDeductionPropertyCapitalAssets</p><p>UseTaxImportsPropertyFranceStandard (Lines I1, 24 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced (Lines I4, 24 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced2 (Lines I2, 24 are also affected.)</p><p>UseTaxImportsPropertyOverseasStandard (Lines I3, 24 are also affected.)</p><p>UseTaxImportsPropertyOverseasReduced (Lines I5, 24 are also affected.)</p><p>UseTaxImportsPropertySpecificRate (Lines I6, 24 are also affected.)</p><p>UseTaxPropertyFranceStandard (Line 08 is also affected.)</p><p>UseTaxPropertyFranceReduced (Line 09 is also affected.)</p><p>UseTaxPropertyFranceReduced2 (Line 9B is also affected.)</p><p>UseTaxPropertyOverseasStandard (Line 10 is also affected.)</p><p>UseTaxPropertyOverseasReduced (Line 11 is also affected.)</p><p>UseTaxPropertyOldRates (Line 13 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_75 (Line T1 is also affected.)</p><p>UseTaxPropertySpecificRateDOM1_05 (Line T2 is also affected.)</p><p>UseTaxPropertySpecificRateCorse10 (Line T3 is also affected.)</p><p>UseTaxPropertySpecificRateCorse2_1 (Line T4 is also affected.)</p><p>UseTaxPropertySpecificRateCorse0_9 (Line T5 is also affected.)</p><p>UseTaxPropertySpecificRateFrance2_1 (Line T6 is also affected.)</p>|
+| 20   | 0702 | Other goods and services | Report field lookup | <p>VATDeductionOtherGoodsServices</p><p>VATDeductionOtherGoodsServicesImports (Line 24 is also affected.)</p><p>VATDeductionOtherGoodsServicesPetroleum (Line 2E is also affected.)</p><p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 24 and 2E are also affected.)</p><p>UseTaxFranceStandard (Line 08 is also affected.)/p><p>UseTaxFrancePetroleumStandard (Lines P1 and 2E are also affected.)</p><p>UseTaxFranceReduced (Line 09 is also affected.)</p><p>UseTaxFranceReduced2 (Line P2 is also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 2E are also affected.)</p><p>UseTaxOverseasStandard (Line 10 is also affected.)</p><p>UseTaxOverseasReduced (Line 11 is also affected.)</p><p>UseTaxOldRates (Line 13 is also affected.)</p><p>UseTaxSpecificRate (Line 14 is also affected.)</p><p>UseTaxPetroleumStandard (Lines P1 and 2E are also affected.)</p><p>UseTaxPetroleumReduced (Lines P2 and 2E are also affected.)</p><p>UseTaxImportsOverseasStandard (Lines I3 and 24 are also affected.)</p><p>UseTaxImportsFranceReduced (Lines I4 and 24 are also affected.)</p><p>UseTaxImportsOverseasReduced (Lines I5 and 24 are also affected.)</p><p>UseTaxImportsSpecificRate (Lines I6 and 24 are also affected.)</p> |
 | 21   | 0059 | Other VAT that must be deducted | Report field lookup | VATDeductionTaxableRegularizations |
 | 22   | 8001 | Credit that was carried forward and that appeared on line 27 of the previous statement | Not applicable | The user defines the value in a dialog box. |
 | 2C   | 0603 | Amounts that must be charged, including holiday deposits (expressed in euros) | Report field lookup | VATDeductionAmountsToBeCharged |
 | 22A  | Not applicable | The single tax coefficient that is applicable for the period, if it differs | Not applicable | The user defines the value in a dialog box. |
 | 23   | Not applicable | Total deductible VAT (lines 19 through 2C) | Not applicable | Total of lines 19 + 20 + 21 + 22 + 2C |
-| 24   | 0710 | Of which deductible VAT on imports | Not applicable | <p>VATDeductionOtherGoodsServicesImports (Line 20 is also affected.)</p><p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 2E are also affected.)</p><p>UseTaxImportsOverseasStandard (Lines I3 and 20 are also affected.)</p><p>UseTaxImportsFranceReduced (Lines I4 and 20 are also affected.)</p><p>UseTaxImportsOverseasReduced (Lines I5 and 20 are also affected.)</p><p>UseTaxImportsSpecificRate (Lines I6 and 20 are also affected.)</p> |
+| 24   | 0710 | Of which deductible VAT on imports | Not applicable | <p>VATDeductionOtherGoodsServicesImports (Line 20 is also affected.)</p><p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 2E are also affected.)</p><p>UseTaxImportsOverseasStandard (Lines I3 and 20 are also affected.)</p><p>UseTaxImportsOverseasReduced (Lines I5 and 20 are also affected.)</p><p>UseTaxImportsFranceStandard (Lines I1 and 20 are also affected.)</p><p>UseTaxImportsFranceReduced (Lines I4 and 20 are also affected.)</p><p>UseTaxImportsFranceReduced2 (Lines I2 and 20 are also affected.)</p><p>UseTaxImportsPropertyFranceStandard (Lines I1 and 19 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced (Lines I4 and 19 are also affected.)</p><p>UseTaxImportsPropertyFranceReduced2 (Lines I2 and 19 are also affected.)</p><p>UseTaxImportsPropertyOverseasStandard (Lines I3 and 19 are also affected.)</p><p>UseTaxImportsPropertyOverseasReduced (Lines I5 and 19 are also affected.)</p><p>UseTaxImportsPropertySpecificRate (Lines I6 and 19 are also affected.)</p><p>UseTaxImportsSpecificRate (Lines I6 and 20 are also affected.)</p> |
 | 2E   | 0711 | Of which deductible VAT on petroleum products | Not applicable | <p>VATDeductionOtherGoodsServicesImportPetroleum (Lines 20 and 24 are also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p><p>VATDeductionOtherGoodsServicesPetroleum (Line 20 is also affected.)</p><p>UseTaxFrancePetroleumReduced (Lines 9C and 20 are also affected.)</p><p>UseTaxFrancePetroleumStandard (Lines 8A and 20 are also affected.)</p><p>UseTaxPetroleumStandard (Lines P1 and 20 are also affected.)</p><p>UseTaxPetroleumReduced (Lines P2 and 20 are also affected.)</p> |
 
-**CREDIT / TAX PAYABLE**
+**VAT due or VAT credit**
 
 | Line | Box  | Description | Lookup result |
 |------|------|-------------|---------------|
 | 25   | 0705 | VAT credit (line 23 – line 16) | Total: lines 23 – 16 |
+| TD   | 8900 | VAT due (line 16 – line 23) | Total: lines 16 – 23 |
+
+**Regularization of domestic consumption taxes (TIC)**
+
+| Line | Box  | Description | User input parameter |
+|------|------|-------------|---------------|
+|  Recognized credit: TICFE  | - | Domestic consumption taxes (TIC) on electricity | Recognized amount TICFE |
+|  Recognized credit: TICGN  | - | Domestic consumption taxes (TIC) on natural gas | Recognized amount TICGN |
+|  Recognized credit: TICC   | - | Domestic consumption taxes (TIC) on coal        | Recognized amount TICC |
+|  Recognized credit: TOTAL  | - | Total of recognized credit                      | Total of recognized credit: TICFE + TICGN + TICC |
+|  Credit applied to VAT (within the limit of the TD line) - X1: TICFE  | 8100 | Line X1 corresponds to the amount of TICFE, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICFE) |
+|  Credit applied to VAT (within the limit of the TD line) - X2: TICGN  | 8101 | Line X2 corresponds to the amount of TICGN, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICGN) |
+|  Credit applied to VAT (within the limit of the TD line) - X3: TICC  | 8102 | Line X3 corresponds to the amount of TICC, recorded in column (a), charged to the amount of VAT due. | Credit applied to the VAT (TICC) |
+|  Credit applied to VAT (within the limit of the TD line) - X4: TOTAL  | - | Line X4 is total of credit applied to VAT, recorded in column (a), charged to the amount of VAT due. | Total: X1 + X2 + X3) |
+|  Balance of credit to be repaid - Y1: TICFE  | 8110 | Line Y1 corresponds to the remainder of TICFE. | Calculated field: Recognized amount TICFE - Credit applied to the VAT (TICFE) |
+|  Balance of credit to be repaid - Y2: TICGN  | 8111 | Line Y2 corresponds to the remainder of TICGN. | Calculated field: Recognized amount TICGN - Credit applied to the VAT (TICGN) |
+|  Balance of credit to be repaid - Y3: TICC  | 8112 | Line Y3 corresponds to the remainder of TICC. | Calculated field: Recognized amount TICC - Credit applied to the VAT (TICC) |
+|  Balance of credit to be repaid - Y4: TOTAL  | - | Line Y4 is total of balance of credit to be repaid. | Total: Y1 + Y2 + Y3 |
+|  Tax due - Z1: TICFE  | 8120 | Amount of the additional payments of TICFE to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICFE) |
+|  Tax due - Z2: TICGN  | 8121 | Amount of the additional payments of TICGN to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICGN) |
+|  Tax due - Z3: TICC  | 8122 | Amount of the additional payments of TICC to be made. This amount is recorded using the annual summary statement (ERA). | Tax due (TICC) |
+|  Tax due - Z4: TOTAL  | - | Total amount of the additional payments of TIC to be made. This amount is recorded using the annual summary statement (ERA). | Total: Z1 + Z2 + Z3 |
+
+**Determination of the amount to be paid and/or VAT and/or TIC credits**
+
+| Line | Box  | Description | Lookup result |
+|------|------|-------------|---------------|
 | 26   | 8002 | Credit repayment that is requested | The user defines the value in a dialog box. |
 | AA   | 8005 | VAT credit that is transferred to the head company of the group | The user defines the value in a dialog box. |
 | 27   | 8003 | Credit to carry forward (line 25 – line 26 – line AA). This amount should be carried over to line 22 of the next return. | Total: lines 25 – 26 – AA |
-| 28   | Not applicable | Total net VAT payable (line 16 – line 23) | Total: lines 16 – 23 |
+| Y5   | 8113 | Reimbursement of remaining TIC requested (report from line Y4). | Value from Y4 line |
+| Y6   | 8114 | TIC credit transferred to the group head company on the summary declaration 3310-CA3G (deferral of the line Y4). | Value from Y4 line |
+| X5   | 8103 | TIC credit charged to VAT (carried forward from line X4). | Value from X4 line |
+| 28   | - | Total net VAT payable (line TD – line X5) | Total: lines TD – X5 |
 | 29   | 9979 | Assimilated taxes | The user defines a value in a dialog box. |
 | AB   | 9991 | Total payable that is paid by the head company of the group on the summary declaration | The user defines a value in a dialog box. |
-| 32   | Not applicable | Total payable (line 28 + line 29 – line AB) | Total: lines 28 + 29 – AB |
+| 32   | - | Total payable (line 28 + line 29 +line Z5 – line AB) | Total: lines 28 + 29 + Z5 – AB |
 
 ### Note about purchase reverse charge VAT
 
@@ -274,8 +311,17 @@ Follow these steps to define which sales tax codes generate the amount in box 18
     | VAT credit transferred to the group head company on the summary declaration    | Enter the amount to export in line AA (box 8005) of the report. |
     | Assimilated taxes                                                              | Enter the amount to export in line 29 (box 9979) of the report. |
     | Total payable paid by the company head of the group on the summary declaration | Enter the amount to export in line AB (box 9991) of the report. |
+    | Recognized amount TICFE | Enter recognized amount of domestic consumption taxes (TIC) on electricity. |
+    | Recognized amount TICGN | Enter recognized amount of domestic consumption taxes (TIC) on natural gas. |
+    | Recognized amount TICC | Enter recognized amount of domestic consumption taxes (TIC) on coal. |
+    | Credit applied to the VAT (TICFE) | Enter credit applied to the VAT (TICFE) to export in line X1 of the report. |
+    | Credit applied to the VAT (TICGN) | Enter credit applied to the VAT (TICGN) to export in line X2 of the report. |
+    | Credit applied to the VAT (TICC) | Enter credit applied to the VAT (TICC) to export in line X3 of the report. |
+    | Tax due (TICFE) | Enter the amount of the additional payments of TICFE to export in line Z1 of the report. |
+    | Tax due (TICGN) | Enter the amount of the additional payments of TICGN to export in line Z2 of the report. |
+    | Tax due (TICC) | Enter the amount of the additional payments of TICC to export in line Z3 of the report. |
 
-5. Select **OK**, and review Excel report.
+6. Select **OK**, and review Excel report.
 
 ### <a name="settle-and-post-sales-tax"></a>Settle and post sales tax
 

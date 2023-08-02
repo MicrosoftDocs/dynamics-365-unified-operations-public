@@ -2,7 +2,7 @@
 title: Finance troubleshooting and FAQs
 description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Finance
 author: Livbjerg
-ms.date: 02/24/2023
+ms.date: 05/24/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -52,6 +52,7 @@ General ledger
 - [How do I set up balancing financial dimensions?](general-ledger/set-up-balance-dimensions.md)
 - [Open financial journal templates in Office](general-ledger/open-fincl-jrnls-in-office.md)
 - [Default financial dimensions on financial journals](general-ledger/dimension-default-values.md)
+- [General journal posting performance](general-ledger/posting-performance.md)
 
 Finance insights
 

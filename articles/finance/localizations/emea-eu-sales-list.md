@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 # ms.search.industry: 
 ms.author: epopov
@@ -45,7 +44,7 @@ You can complete the following tasks for EU Sales list reporting:
 
 -   Collect information about intra-community trade transactions. An intra-community trade transaction can be a sales invoice, free text invoice, project invoice, or vendor invoice. A transaction is identified based on the country/region of the counterparty. Intra-community trade transactions of different types are collected into the EU Sales list table, where they are represented in the common form. Each record of the ESL table represents single transaction and consists of the VAT identifier of a counterparty and the total value of goods and services that were supplied.
 -   (Optional) Preview the **EU Sales list** report. You can preview and validate the **EU Sales list** report for a given period in the form of a Microsoft Excel workbook.
--   Generate the **EU Sales list** report. The **EU Sales list** report is generated in the form of an electronic file of a particular format that is specific to each member state of the EU. In general, an **EU Sales list** report contains basic information about the reporting party and the values of supplies of goods and services. The information is grouped by the country and VAT identifier of a counterparty.
+-   Generate the **EU Sales list** report. The **EU Sales list** report is generated in the form of an electronic file of a particular format that is specific to each member state of the EU. In general, an **EU Sales list** report contains basic information about the reporting party and the values of supplies of goods and services. The information is grouped by the country/region and VAT identifier of a counterparty.
 -   Close the EU Sales list reporting period. After the **EU Sales list** report is generated and submitted to authorities, you can mark the records of the ESL table as **Closed**. These transactions won't be included in additional reports.
 
 ## Prerequisites
@@ -164,9 +163,9 @@ You can generate an **EU Sales list** report by using the **Reporting** function
 
 When you've completed the reporting process for a specific period (for example, when tax authorities have accepted the **EU Sales list** report), you can mark the ESL records that are included on the report for the period by setting the **Reporting status** value to **Closed**. To set this status, use the **Mark as closed** function on the **EU Sales list** page. If you revert the closing of the period, you can mark ESL records by setting the **Reporting status** value to **Included**. These records can then be included on an **EU Sales list** report again. To set this status, use the **Mark as** **included** function on the **EU Sales list** page.
 
-## List of country-specific topics
+## List of country/region-specific topics
 
-| Country          | Link      |
+| Country/region   | Link      |
 |------------------|-----------|
 | Austria          | [EU Sales list for Austria](emea-aut-eu-sales-list.md)| 
 | Belgium          |[EU sales list for Belgium](emea-bel-eu-sales-list.md)|

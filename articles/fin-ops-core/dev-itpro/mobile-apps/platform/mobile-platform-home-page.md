@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ---
 

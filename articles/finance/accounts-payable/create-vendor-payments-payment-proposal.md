@@ -4,7 +4,7 @@
 title: Create vendor payments by using a payment proposal
 description: This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
 author: abruer
-ms.date: 04/04/2018
+ms.date: 06/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 # ms.search.industry: 
@@ -45,7 +44,7 @@ The payment proposal query contains various tabs, each of which has different op
 -   **Create payments without invoice preview** – If this option is set to **Yes**, payments will be created immediately on the **Vendor payments** page. The **Payment proposal** page will be skipped. Therefore, payments will be created more quickly. Payments can still be modified from the **Vendor payments** page. Alternatively, you can return to the **Payment proposal** page by using the **Edit invoices for select payment** button.
 
 ## Advanced options
-- **Check vendor balance** – If this option is set to **Yes**, the system verifies that a vendor doesn’t have a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
+- **Check vendor balance** – If this option is set to **Yes**, the vendor is verified that there isn't a debit balance before any invoice is paid. If a vendor does have a debit balance, no payment is created. For example, the vendor might have credit memos, or payments that have been posted but haven't been settled yet. In these cases, the vendor should not be paid. Instead, the credit memos or payments should be settled against the outstanding invoices.
 - **Delete negative payments** – This option works differently, depending on whether payments are made for individual invoices or for the sum of invoices that meet the payment criteria. This behavior is defined on the method of payment.
 - **Payment for each invoice** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, only the invoice is selected for payment. The existing payment isn't settled against the invoice. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment. A payment is created for the payment, and a refund (negative payment) is created for the payment.
 - **Payment for sum of invoices** – If the **Delete negative payments** option is set to **Yes**, and an unsettled invoice and payment exist for a vendor, both the unsettled invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount. The only exception occurs if the sum results in a refund. In this case, neither the invoice nor the payment is selected. If the **Delete negative payments** option is set to **No**, and an invoice and a payment aren't settled, both the invoice and the payment are selected for payment, and the amounts are added together to produce the total payment amount.
@@ -105,14 +104,14 @@ The following invoices aren't included in the proposal:
 
 -   1001, because the discount date of June 29 has already expired, so this invoice is no longer eligible for the cash discount, and the due date of July 15 is also outside the date range.
 
-## Country specific considerations
+## Country/Region specific considerations
 ### Norway
 
 #### Dimension control
 
-Dimension control allows you to control grouping of generated lines by payment proposal and set default dimensions based on financial dimensions used for the applied invoices. Under Norwegian country context for each method of payment there is financial dimension tab where you can activate dimension control as well as enable grouping for each dimension. Possible options are:
+Dimension control allows you to control grouping of generated lines by payment proposal and set default dimensions based on financial dimensions used for the applied invoices. Under Norwegian country/region context for each method of payment there is financial dimension tab where you can activate dimension control as well as enable grouping for each dimension. Possible options are:
 
--   **Dimension control** field is disabled. The payment proposal behaves as for any other country.
+-   **Dimension control** field is disabled. The payment proposal behaves as for any other country/region.
 -   **Dimension control** field is activated without further defining the dimensions. The payment proposal will be created without taking dimensions into consideration. The created transaction inherits no dimensions from the applied entry.
 -   **Dimension control** field is activated and the further dimensions are enabled. Now you define how the dimensions will be copied to the journal. For example: • Select the **BusinessUnit** check box to create a payment proposal per business unit for the method of payment, • Select the **CostCenter** check box to create a payment proposal per cost center for the method of payment
 
@@ -121,7 +120,7 @@ Dimension control allows you to control grouping of generated lines by payment p
 
 #### Bank account selection
 
-You can define a standard debiting payment account per method of payment regardless country context. This will be set in payment lines generated by a proposal. With the bank account feature, you can define multiple debiting bank accounts managed by dimension and currency or a combination of these to use different debiting bank accounts, depending on each combination. You can set up these combinations in **Methods of payments** page by using the **Bank accounts** button available for each method of payment with **Posting account type** = **Bank**.
+You can define a standard debiting payment account per method of payment regardless country/region context. This will be set in payment lines generated by a proposal. With the bank account feature, you can define multiple debiting bank accounts managed by dimension and currency or a combination of these to use different debiting bank accounts, depending on each combination. You can set up these combinations in **Methods of payments** page by using the **Bank accounts** button available for each method of payment with **Posting account type** = **Bank**.
 
 
 
