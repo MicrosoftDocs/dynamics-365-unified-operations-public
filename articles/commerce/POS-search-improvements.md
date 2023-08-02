@@ -6,24 +6,12 @@ description: This article provides an overview of improvements that have been ma
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application user
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
-ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Retail April 2017 update
 
 ---
 
@@ -70,8 +58,8 @@ A local product search searches in the following product properties:
 
 ![Product suggestions.](./media/Productsuggestions.png "Product suggestions")
 
-## Customer search
+## Additional resources
 
-See [Customer search](customer-search.md)
+[Customer search](customer-search.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
