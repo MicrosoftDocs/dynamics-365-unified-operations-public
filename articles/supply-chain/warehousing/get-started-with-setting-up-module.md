@@ -179,7 +179,7 @@ Follow these steps to open and complete the *Inbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When [Warehouse management only mode](warehouse-management-only-mode.md) is enabled, a **Work order type** section will be the next where you can define *Purchase orders* or *Inbound shipment order* for the following setup processes.
+1. When [Warehouse management only mode](warehouse-management-only-mode.md) is enabled, a **Work order type** section will be the next where you can define *Purchase orders* or *Inbound shipment order* for the following setup processes. <!--KFM: I don't see this in the UI. What are we describing here? -->
 1. The **Inbound setup** page opens. Use it to define names for different elements of the purchase or inbound shipment order process. Default values are suggested, but you can edit them as you require. Set the following fields:
 
     - **Purchase/Inbound work class** – Specify the name of the work class for the receiving process. This value will be used in the work template.
@@ -222,7 +222,7 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When [Warehouse management only mode](warehouse-management-only-mode.md) is enabled, a **Work order type** section will be the next where you can define *Sales orders* or *Outbound shipment order* for the following setup processes.
+1. When [Warehouse management only mode](warehouse-management-only-mode.md) is enabled, a **Work order type** section will be the next where you can define *Sales orders* or *Outbound shipment order* for the following setup processes. <!--KFM: I don't see this in the UI. What are we describing here? -->
 1. On the **General warehouse** page, use the following fields to define names for outbound processes. Default values are suggested, but you can edit them as you require.
 
     - **Sales/Outbound work template** – Specify the name of the work template for the shipping process.

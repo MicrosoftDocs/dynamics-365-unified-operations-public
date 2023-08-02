@@ -1,27 +1,14 @@
 ---
-# required metadata
-
 title: Warehouse management only mode
 description: Run all supply chain warehouse operations in Microsoft Dynamics 365 Supply Chain Management as part of a dedicated ecosystem that easily integrates with other ERP and order management systems via inbound and outbound shipment orders.
 author: perlynne
-ms.date: 28/04/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
-
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
-ms.search.validFrom: 2023-04-24
-ms.dyn365.ops.version: 10.0.36
+ms.reviewer: kamaybac
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.topic: how-to
+ms.date: 08/02/2023
+audience: Application User
+ms.search.region: Global
 ---
 
 <!--
@@ -40,11 +27,11 @@ Running your warehouse processes with the **Warehouse management only mode** wil
 
 One example being a dedicated LCS D365 cloud deployment only handling the warehouse operations and all integrations related to orders and financial processing handled outside this deployment. With this implementation concept it will only be needed to configure the processes around warehouse management as part of the D365 SCM cloud deployment.  
 
-![Warehouse management only mode to ERP/Order system](./media/scm-wom-2-erp.png)
+![Warehouse management only mode to ERP/Order system, example 1](./media/scm-wom-2-erp.png)
 
 Another example is a more SCM integrated implementation methodology, having the warehouses enabled for D365 SCM processes like sales, purchase, production orders, etc. and at the same time handling warehouse operations for other ERP/order processing systems. With this type of implementation, the same warehouse instance can handle all the logistic warehouse processes, internal as well as external integrations.
 
-![Warehouse management only mode to ERP/Order system](./media/scm-wms-scm-2-erp.png)
+![Warehouse management only mode to ERP/Order system, example 2](./media/scm-wms-scm-2-erp.png)
 
 And then everything between the two above example deployment options, which for example could be running a dedicated legal entity within an existing D365 SCM deployment which only handles the warehouse management processes for external systems. All-in-all you can use the **Warehouse management only mode** exactly as needed.
 
@@ -76,10 +63,10 @@ With the introduction of these two new, lightweight inbound and outbound warehou
 
 #### <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
 
-The **inbound shipment order messages** and the **outbound shipment order messages** can be imported via a [**Dataverse integration**](../../../../power-platform/admin/data-integrator.md) or directly integrated with the [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) shipment order message entities in a optimal manner.
+The **inbound shipment order messages** and the **outbound shipment order messages** can be imported via a [**Dataverse integration**](/power-platform/admin/data-integrator.md) or directly integrated with the [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) shipment order message entities in a optimal manner.
 A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the D365 SCM inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. It is recommended to process the messages as part of a periodic batch job triggered by the [**Message processor**](../supply-chain-dev/message-processor.md) page where you must use the **Shipment Orders** _Message queue_.
 
-![Warehouse management only mode to ERP/Order system](./media/shipment-order-integrations.png)
+![Message processing diagram](./media/shipment-order-integrations.png)
 
 > [!NOTE]
 > Having the shipment order line field data related to the released products in the [**D365 SCM product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
@@ -114,7 +101,7 @@ To create the _shipment orders_ **Released products** must exist. You can read m
 
 As part of the creation of a _Released product_ you must assign an **Item model group**. Please make sure this model group gets enabled with an _Inventory model_ as **Non-valuated** with _Post physical inventory_ and _Post financial inventory_ cleared which will eliminate the need for setting up any costing data for this product.
 
-Besides the product master data you must at least have defined the [**Countries/regions**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) which will be used for the outbound shipment order import process to create addresses. You will as well need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses.
+Besides the product master data you must at least have defined the [**Countries/regions**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) which will be used for the outbound shipment order import process to create addresses. You will as well need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses.
 
 > [!NOTE]
 > Depending on the [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) and the use of the address fields in the order messages you might need to create additional data before the order messages can get imported. Example could be the state and county combinations.
@@ -128,15 +115,16 @@ External systems will have many different business process requests for the ware
 The D365 SCM warehouse management system can be setup to provide [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) to keep the external systems informed about the progress and actions going on. With this setup the external systems don’t need to keep polling for information which might not have changed since the last request of information, but instead only need to act when getting informed.
 Several out-of-the-box [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md) are supported for warehouse integration:
 Non-exhaustive list:
-| Business event ID                                 | Description                              |
-|---------------------------------------------------|------------------------------------------|
-| InventCountingJournalPostedBusinessEvent          | Counting journal posted                  |
-| WHSOutboundNotificationCreatedBusinessEvent       | Outbound warehouse notification created  |
+
+| Business event ID | Description |
+|---|---|
+| InventCountingJournalPostedBusinessEvent | Counting journal posted |
+| WHSOutboundNotificationCreatedBusinessEvent | Outbound warehouse notification created |
 | WHSShipmentOrderMessageChangedStatusBusinessEvent | Status update for shipment order message |
-| WHSShipmentPackingSlipJournalModifiedBusinessEvent| Shipment packing slips updated           |
-| WHSShipmentReceivingJournalModifiedBusinessEvent  | Shipment receipts updated                |
-| SysMessageProcessorMessageProcessedBusinessEvent  | Message processor message fail           |
-| WhsWaveExecutedBusinessEvent                      | Wave executed                            |
+| WHSShipmentPackingSlipJournalModifiedBusinessEvent | Shipment packing slips updated |
+| WHSShipmentReceivingJournalModifiedBusinessEvent | Shipment receipts updated |
+| SysMessageProcessorMessageProcessedBusinessEvent | Message processor message fail |
+| WhsWaveExecutedBusinessEvent | Wave executed |
 
 As a minimum it is recommended to use the following  [**Business events**](../../fin-ops-core/dev-itpro/business-events/home-page.md):
 
@@ -160,7 +148,7 @@ Additional policy settings can be used as part of the **Source systems** page to
 
 The **Warehouse management > Workspaces > Warehouse integration monitoring** page provides an overview of the warehouse integration messages and an easy way to navigate to the related areas, for example to the [**System administration > Message processor > Message processor messages**](warehouse-message-processor-messages.md) page.
 
-# Inbound shipment orders
+## Inbound shipment orders
 
 **Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represents information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal SCM warehouse representation’ of the available shipment orders in a **Header** and **Lines** view. For each of the lines it is possible to view detailed information about the **Receiving status**, **inventory transactions**, as well as any associated **warehouse work**. The **Receiving status** gets as well maintained on the order header and can be used to follow the inbound progress of the orders. The following **Receiving status** values are available:
 
@@ -213,8 +201,8 @@ The high-level process for inbound processing is as following:
 
 1. External systems provides _Inbound shipment order_ messages
 2. The messages get processed in _D365 Warehouse management only mode_ and orders get created
-3. Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity), or automatically during [message processing](../supply-chain-dev/message-processor.md) based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
-4. Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse Management mobile app**](configure-mobile-devices-warehouse#configure-menu-items-to-create-work-for-another-worker-or-process) processes which all requires inbound loads:
+3. Inbound loads gets created manually via [**Inbound load planning workbench**](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually), via [**ASN**](import-asn-data-entity.md), or automatically during [message processing](../supply-chain-dev/message-processor.md) based on the [**Source systems** - **Inbound shipment order policy**](#source-systems) definition.
+4. Inventory receiving gets processed and the inbound shipment order transactions get _Registered_ via one of the currently supported [**Warehouse Management mobile app**](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) processes which all requires inbound loads:
     - _License plate receiving (and put away)_
     - _Load item receiving (and put away)_
     - _Mixed license plate receiving (and put away)_ for source document line identification method **Load item receiving**
@@ -293,6 +281,7 @@ As part of a journal posting process a [business event](#business-events) gets t
 **PREREQUSITE:**
 
 The external system and the D365 SCM WMS on-hand is in sync:
+
 |Item number |ERP on-hand |WMS on-hand |
 |------------|------------|------------|
 |A0001       |0 pcs       |0 pcs       |
@@ -304,6 +293,7 @@ D365 SCM WMS receives item number A0001 10 pcs against an inbound shipment order
 **THEN1:**
 
 The external system and D365 SCM WMS is out of sync:
+
 |Item number |ERP on-hand |WMS on-hand |
 |------------|------------|------------|
 |A0001       |0 pcs       |10 pcs      |
@@ -311,6 +301,7 @@ The external system and D365 SCM WMS is out of sync:
 **WHEN2:**
 
 In D365 SCM WMS an on-hand adjustment (Counting journal) get posted for A0001 adding 1 pcs more on-hand:
+
 |Item number |ERP on-hand |WMS on-hand |
 |------------|------------|------------|
 |A0001       |0 pcs       |11 pcs      |
@@ -318,6 +309,7 @@ In D365 SCM WMS an on-hand adjustment (Counting journal) get posted for A0001 ad
 **THEN2:**
 
 The external system will get informed via business event that an adjustment has happened and as part of this process the reading of the journal posting going from 10 pcs. to 11 pcs. in the WMS, it is important the external system only consider the updated quantity of 1 pcs:
+
 |Item number |ERP on-hand |WMS on-hand |
 |------------|------------|------------|
 |A0001       |1 pcs       |11 pcs      |
@@ -329,6 +321,7 @@ D365 SCM WMS will process a **Receiving completed** process related to the recei
 **THEN3:**
 
 The external system will get informed via business event and can read the shipment receipts information and update on-hand with an additional 10 pcs.
+
 |Item number |ERP on-hand |WMS on-hand |
 |------------|------------|------------|
 |A0001       |11 pcs      |11 pcs      |
@@ -360,7 +353,7 @@ The following high-level processes are not supported out-of-the-box related to a
 
 ## Example of using inbound and outbound shipment orders
 
-This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
+This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout the examples are running on the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
 To create inbound and outbound shipment orders, a message entity needs to be posted using [Odata](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message then needs to be processed by the [**Message processor**](../supply-chain-dev/message-processor.md) in D365 SCM which will create the orders in the warehouse system.
 The same message structure logic applies for both the inbound and outbound shipment order messages which are:
