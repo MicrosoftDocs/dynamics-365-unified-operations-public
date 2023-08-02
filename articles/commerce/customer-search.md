@@ -37,7 +37,7 @@ The customer ID isn't shown for customers queried from other legal entities, bec
 
 ![Global customer search.](./media/Globalcustomersearch.png "Global customer search")
 
-### Additional local customer search capabilities
+## Additional local customer search capabilities
 
 When the user searches for a phone number, the system ignores special characters (such as spaces, hyphens, and brackets) that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **1234567890**, or by entering the first few numbers of the phone number.
 
@@ -96,10 +96,11 @@ The following list shows the how the cloud-powered customer search functionality
 - New customers created in POS are sent to the Azure search index from the Commerce Scale Unit and are immediately searchable across any store. However, if the Async customer creation feature is turned on, new customer records will not be published to the Azure search index from the Commerce Scale Unit and will not be searchable from POS until the customer information is synced with Commerce headquarters and customer IDs are generated for Async customers. The **1010_CustomerSearch** job will then be able to send the Async customer records to the Azure search index. On average, it will be around 30 minutes before newly created Async customers can be searched on POS. This estimate assumes that the **1010_CustomerSearch**, **P-job**, and **Synchronize customers and business partners from async mode** jobs are scheduled to run every 15 minutes.
 - Cloud-powered search also searches for the secondary emails and phone numbers of customers, but currently customer search results only display the primary phone number and primary email address of customers. At first glance it may seem that irrelevant search results have been returned, but checking the secondary email and phone number of a customer in search results can help verify if the searched-for keyword resulted in a customer match. To avoid such confusion, there are plans to improve the search results page to make it easy for users to understand why a search result was returned.
 - The requirement of searching using at least 4 characters in a global search ("Search all stores") is not applicable to this service.
+- The 1010_CustomerSearch job isn't automatically executed for customer records that are imported from an external system. You must run the 1010_CustomerSearch job so that the imported customer records can be searched.
 
 > [!NOTE]
-> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
+> The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is not available in the following regions:
 > - Brazil
 > - India
-> 
-> 1010_CustomerSearch job won't be automatically executed for customer records which are imported from external system. The user needs to run 1010_CustomerSearch job so that the imported customer records can be searched.
+
+
