@@ -21,19 +21,22 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand... 
+This article provides information about how to configure and issue customer electronic invoices using Australian and New Zealand extension of the [PEPPOL](https://docs.peppol.eu/poacc/billing/3.0/) format specification.
 
-Once configured, the system will allow you to **generate** XML files of electronic invoices in PEPPOL format with Australian and New Zealand extension.
+## Prerequisites
 
-
-the [Finance business data configuration](apac-aus-nzl-electronic-invoices.md#finance-business-data-configuration) chapter of the **Get started with Electronic invoicing for Australia and New Zealand** article.
-
-Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+1. The primary address of the legal entity must be in Australia and New Zealand.
+2. Unchek Features....
+3. Disable Integration...
+4. Do configuration steps described in the [Finance business data configuration](apac-aus-nzl-electronic-invoices.md#finance-business-data-configuration) chapter of the **Get started with Electronic invoicing for Australia and New Zealand** article.
+5. Make sure that the following Electronic reporting format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
  - Peppol Sales Invoice AU-NZ
  - Peppol Sales Credit Note AU-NZ
  - Peppol Project Invoice AU-NZ
  - Peppol Project Credit Note AU-NZ
+
+## Additional configuration steps 
 
 ### Reference the imported ER format configurations
 
