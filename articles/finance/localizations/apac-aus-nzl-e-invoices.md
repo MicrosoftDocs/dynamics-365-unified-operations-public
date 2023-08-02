@@ -87,4 +87,9 @@ You can set up ER destinations for electronic invoice formats. In this case, out
 For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 
+## Additional resources
+
+- [Forced electronic invoices generation](emea-eur-forced-einvoices.md)
+- [Supported standards for electronic invoicing](emea-oioubl-standards-electronic-invoicing.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
