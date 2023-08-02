@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer search
-description: This article describes customer search in Microsoft Dynamics 365 Commerce.
+description: This article describes the customer search functionality in Microsoft Dynamics 365 Commerce.
 author: shajain
 ms.date: 08/02/2023
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This article describes customer search in Microsoft Dynamics 365 Commerce.
+This article describes the customer search functionality in Microsoft Dynamics 365 Commerce.
 
 Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. The search algorithm matches the search terms against the values that are present in the following customer properties:
 
@@ -73,7 +73,7 @@ To help prevent unexpected performances issues, this configuration is hidden beh
 
 ## Cloud-powered customer search
 
-Public preview of the customer search capability using the Azure Cognitive Search service has been released as part of the Commerce 10.0.18 release. In addition to performance improvements, users of the service also benefit from rich refinement and improved relevance capabilities. The performance improvements are especially evident when the global search feature ("Search all stores") of the POS is used. This is because search results are fetched from the Azure search index instead of queried from the data in Commerce headquarters. 
+Public preview of the customer search capability using the Azure Cognitive Search service was released as part of the Commerce 10.0.18 release. In addition to performance improvements, users of the service also benefit from rich refinement and improved relevance capabilities. The performance improvements are especially evident when the global search feature ("Search all stores") of the POS is used, because search results are fetched from the Azure search index instead of queried from the data in Commerce headquarters. 
 
 ### Enable the cloud-powered search feature
 
