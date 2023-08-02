@@ -88,3 +88,5 @@ The following list shows the how the cloud-powered customer search functionality
 > The customer search capability using the Azure Cognitive Search service is available in limited regions for preview. The customer search capability is *not* available in the following regions:
 > - Brazil
 > - India
+> 
+> 1010_CustomerSearch job won't be automatically executed for customer records which are imported from external system. The user needs to run 1010_CustomerSearch job so that the imported customer records can be searched.
