@@ -159,6 +159,8 @@ When you've completed all the required configuration steps, you can generate ele
 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
+![Submission log](media/apac_aus_nzl_einvoice_log.jpg)
+
 ## Additional resources
 
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
