@@ -1,3 +1,6 @@
+---
+# required metadata
+
 title: Customer search
 description: This article describes customer search in Microsoft Dynamics 365 Commerce.
 author: shajain
@@ -8,6 +11,8 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2017-06-20
+
+---
 
 # Customer search
 
