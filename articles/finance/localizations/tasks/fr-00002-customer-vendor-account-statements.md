@@ -3,7 +3,7 @@
  
 title: FR-00002 Customer and vendor account statements
 description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
-author: EvgenyPopovMBS
+author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
-ms.author: epopov
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
