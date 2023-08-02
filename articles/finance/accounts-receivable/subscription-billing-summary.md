@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +36,7 @@ The solution has three modules that can be used independently. Alternatively, al
 
 - **Recurring contract billing** – This module enables recurring billing and price management to provide control over pricing and billing parameters, contract renewal, and consolidated invoicing.
 - **Revenue and expense deferrals** – This module eliminates manual processes and dependency on external systems by managing revenue and enabling real-time insight into monthly recurring revenue.
-- **Multi-element revenue allocation** – This module helps with revenue compliance by handling pricing and revenue allocation across multiple items.
+- **Multiple element revenue allocation** – This module helps with revenue compliance by handling pricing and revenue allocation across multiple items.
 
 For more information about subscription billing, see [Subscription billing Power BI content](sub-bill-power-bi.md).
 

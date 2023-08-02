@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 03/09/2023
+ms.date: 08/01/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -42,27 +42,9 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
-
-# [10.0.27](#tab/10-0-27)
-### Dynamics 365 Retail POS version 10.0.27
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_73p6 | adyen_v1_75p13 |
-
-# [10.0.28](#tab/10-0-28)
-### Dynamics 365 Retail POS version 10.0.28
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_73p6 | adyen_v1_75p22 |
-
-# [10.0.29](#tab/10-0-29)
-### Dynamics 365 Retail POS version 10.0.29
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_71p16 | adyen_v1_78p6 |
 
 # [10.0.30](#tab/10-0-30)
 ### Dynamics 365 Retail POS version 10.0.30
@@ -81,6 +63,24 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_84p1 | adyen_v1_86p3 |
+
+# [10.0.33](#tab/10-0-33)
+### Dynamics 365 Retail POS version 10.0.33
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_86p3 | adyen_v1_88p3 |
+
+# [10.0.34](#tab/10-0-34)
+### Dynamics 365 Retail POS version 10.0.34
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_88p3 | adyen_v1_89p6 |
+
+# [10.0.35](#tab/10-0-35)
+### Dynamics 365 Retail POS version 10.0.35
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_89p6 | adyen_v1_91p2 |
 
 ---
 
@@ -153,8 +153,15 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 | Scheme | Card present | Card not present |
 |---|---|---|
-| Alipay | Support will be added in a future release. | No |
-| WeChat | Support will be added in a future release. | No |
+| PayPal (via Adyen Connector) | No | No |
+| Google Pay | No | No |
+| Apple Pay | Yes | Yes |
+| Klarna | No | No |
+| Affirm | No | No |
+| Afterpay | No | No |
+| Alipay | No | No |
+| WeChat | No | No |
+
 
 #### Supported card present input methods
 | Input method | Supported | Notes |
@@ -166,11 +173,11 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Manual Entry through Payment Terminal. | ✔ | Supports manual entry of credit, debit, and gift cards with pin entry. | 
 
 
-#### Supported card present countries
+#### Supported card present countries/regions
 
-The following countries have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+The following countries/regions have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
-| Country | Supported |
+| Country/region | Supported |
 | --- | :-: |
 | Australia | ✔ |
 | Austria | ✔ |
@@ -204,11 +211,11 @@ The following countries have Commerce components available and card present supp
 | United States | ✔ |
 | Brazil | Future release |
 
-#### Supported card not present countries
+#### Supported card not present countries/regions
 
-The following countries are supported by Adyen for card not present transactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+The following countries/regions are supported by Adyen for card not present transactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country/region. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
 
-| Country | 
+| Country/region | 
 | --- |
 | Argentina |
 | Armenia |

@@ -111,14 +111,14 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | Mandatory |  Accounts payable |
 | (Eastern Europe) Allow the use of common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | On by default |  Accounts payable/Accounts receivable |
 | Advanced notes management  |  7/18/2022 | On by default |  Accounts payable/Accounts receivable |
-| ISO20022 payment functionalities for all countries |  7/13/2022 | On by default |  Accounts payable/Accounts receivable |
+| ISO20022 payment functionalities for all countries/regions |  7/13/2022 | On by default |  Accounts payable/Accounts receivable |
 | Update payment journal with dispute performance feature | 8/1/2022  |Mandatory | Accounts receivable |
 | Calculate a Free text invoice charge from line amount | 8/1/2022  | Mandatory | Accounts receivable |
-| Use free text invoice language for expanded country description  |  8/1/2022   | Mandatory  | Accounts receivable |
+| Use free text invoice language for expanded country/region description  |  8/1/2022   | Mandatory  | Accounts receivable |
 | NF-e XML move as attachment  |  7/18/2022   | On by default  | Accounts receivable |
 | (Mexico) Enable posting of CFDI invoices with zero total amount  |  7/18/2022   | On by default  | Accounts receivable |
 | Forced electronic invoices generations  |  7/18/2022   | On by default  | Accounts receivable |
-| Use FTI report layout defined at print management settings under AE country context  |  7/18/2022   | On by default  | Accounts receivable |
+| Use FTI report layout defined at print management settings under AE country/region context  |  7/18/2022   | On by default  | Accounts receivable |
 | (Italy) Intent letters - invoicing of usual exporters  |  7/18/2022   | On by default  | Accounts receivable |
 | Invoice issue deadline availability  |  7/18/2022   | On by default  | Accounts receivable |
 | Display referenced documents on the Accounts Receivable Electronic Invoices page   |  7/18/2022   | On by default  | Accounts receivable |
@@ -194,7 +194,7 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 

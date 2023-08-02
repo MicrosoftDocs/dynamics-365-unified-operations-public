@@ -4,7 +4,7 @@
 title: Ledger settlement inquiry
 description: This article describes the Ledger settlement inquiry window  
 author: kweekley
-ms.date: 12/15/2022
+ms.date: 05/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This article describes the **Ledger settlement inquiry** window that can be used to view settled, unsettled, or both settled and unsettled ledger transactions for a 
-fiscal period.
+fiscal period. The **Status** column will display the settlement status as of the **To date** provided on the **Date range** section of the page.
 
 ## View ledger settlement transactions
 1.	Go to **General ledger > Inquiries and reports > Ledger settlement inquiry**.
@@ -65,7 +64,7 @@ the original transaction date (12/30/2021) and 1/2/2022.
 If there is no original transaction date, the transaction date is used instead.
 -   **(Other transactional information)** – Additional columns show information such as the voucher number, the description, and debit and credit amounts in all three 
 currencies (transaction, accounting, and reporting).
--   **Status** – This value is either **Settled** or **Not settled**.
+-   **Status** – This value is either **Settled** or **Not settled**. The value is determined based on the state as of the **To date**. 
 -   **Settlement ID** – The ID that is assigned to the settled transactions.
 
 [![Ledger settlement inquiry page](./media/Inquiry1.png)](./media/Inquiry1.png)

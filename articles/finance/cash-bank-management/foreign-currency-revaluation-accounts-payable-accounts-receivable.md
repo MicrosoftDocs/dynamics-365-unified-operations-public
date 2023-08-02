@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 # ms.search.industry: 
@@ -54,7 +53,7 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **Standard** – Foreign currency revaluation jobs are posted, regardless of whether the result is a profit or a loss.
     -   **Minimum** – Foreign currency revaluation jobs are posted only if the result is a loss.
     -   **Invoice date** – Foreign currency revaluation jobs use the original exchange rate of the transactions, which are revalued to their original value in the accounting currency. The effect of any prior foreign currency revaluation is canceled.
--   **Considered date** – The date when all transactions that have open (not settled) amounts on that date are found. Foreign currency amounts are revalued by using the exchange rates that are entered on the **Currency exchange rates** page for the considered date. When foreign currency amounts are revalued on a considered date, this date becomes the last foreign currency revaluation date for the transactions that are adjusted. If you run foreign currency revaluation for a considered date that is earlier than the last foreign currency revaluation date on transactions that have already been adjusted, the periodic job doesn't adjust transactions that are open on the earlier considered date, but that have a more recent last foreign currency revaluation date.
+-   **Considered date** – The date when all transactions that have open (not settled) amounts on that date are found. Foreign currency amounts are revalued by using the exchange rates that are entered on the **Currency exchange rates** page for the considered date. When foreign currency amounts are revalued on a considered date, this date becomes the last foreign currency revaluation date for the transactions that are adjusted. If you run foreign currency revaluation for a considered date that's earlier than the last foreign currency revaluation date on transactions that have already been adjusted, the periodic job doesn't adjust transactions that are open on the earlier considered date, but that have a more recent last foreign currency revaluation date. If you run foreign currency revaluation for a considered date that's later than the settlement date of an invoice, the invoice is considered open (not settled) on the considered date and is involved in the foreign currency revaluation.
 -   **Date of rate** – The date that determines the exchange rate that is used in the foreign currency revaluation.
 -   **Use posting profile from** – The posting profile that is used to enter the default main account for Accounts receivable or Accounts payable for the accounting entries of the  foreign currency revaluation transactions:
     -   **Posting** – The posting profile of the customer transaction is used.
@@ -65,9 +64,7 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **Table** – The financial dimensions of the customer account or vendor account are posted on the foreign currency revaluation transactions.
     -   **Posting** – The financial dimensions of the transaction that is being revalued are posted on the foreign currency revaluation transactions. By default, the financial dimensions from the original transaction's AR/AP ledger account will be used for the revaluation transaction's AR/AP main account, and the financial dimensions from the original transaction's expense/asset/revenue ledger account will be used for the revaluation transaction's unrealized gain/loss main account.
 
-
-
-
-
+> [!NOTE]
+> Exchange gain or loss isn't aggregated. At the time of settlement, the unrealized gain or loss for each open transaction should be reversed to recalculate any realized gain or loss. If the total gain or loss is posted to the general ledger, it isn't possible to reverse per transaction.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

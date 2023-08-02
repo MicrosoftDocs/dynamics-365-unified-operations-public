@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["19661", "intro-internal"]
+ms.collection: get-started
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 ms.search.region: Global
 ms.search.industry: Public sector

@@ -9,7 +9,7 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.custom: 16201, "intro-internal"
+ms.collection: get-started
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 ---

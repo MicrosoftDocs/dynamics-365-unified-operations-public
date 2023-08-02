@@ -33,7 +33,7 @@ Once created, make note of the **Application (client) ID**.
 
 ## Run the setup script
 
-After you sign in with the **Administrator** account, right-click the desktop shortcut **Generate Self-Signed Certificates**, and select **Run as administrator**. When the script prompts for the application ID, provide the **Application (client) ID** created in Azure Active Directory.
+After you sign in with the **localadmin** account, right-click the desktop shortcut **Generate Self-Signed Certificates**, and select **Run as administrator**. When the script prompts for the application ID, provide the **Application (client) ID** created in Azure Active Directory.
 
 When the script finishes, the environment is ready for use. At this time, you can run the Admin Provisioning tool to set the administrator account, permissions, and tenant. Make sure that the email provided is for the Azure Active Directory tenant in which the application registration was created.
 

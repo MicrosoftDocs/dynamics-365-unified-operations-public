@@ -2,7 +2,7 @@
 title: Enable personalized product recommendations
 description: This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/18/2020
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,7 +54,7 @@ To turn on personalization, follow these steps.
 
 In addition to allowing for personalization of existing machine-generated lists, the recommendations service allows for personalization of the product discovery experience both online and at the POS.
 
-After personalization is turned on, retailers can show shoppers personalized "Picks for you" lists online or "Recommended for customer" lists on POS terminals. Additionally, retailers can apply personalization to existing product recommendation lists and provide General Data Protection Regulation (GDPR) opt-out experiences for authenticated users. If you turn off personalization, you also turn off these features.
+After personalization is turned on, retailers can show shoppers personalized "Picks for you" lists online or "Recommended for customer" lists on POS terminals. Additionally, retailers can apply personalization to existing product recommendation lists and provide privacy controls (opt-out experiences) for authenticated users. If you turn off personalization, you also turn off these features.
 
 ### Online "Picks for you" lists
 
@@ -108,7 +108,7 @@ To apply personalization to an existing recommendation list in the Commerce site
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Add product recommendations on POS](product.md)
 

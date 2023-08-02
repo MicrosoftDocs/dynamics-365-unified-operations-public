@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 10274
 ms.search.region: Austria, Denmark, Italy, Norway, Spain, France, Belgium, Netherlands
 ms.search.industry: 
 ms.author: mrolecki
@@ -31,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article explains the level of coverage that exists for electronic invoicing for Europe. 
 
-Implementation and adoption of European Union-wide electronic invoicing is regulated [Council Directive 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), which affects all EU member states. Companies that want to benefit from electronic invoicing must submit sales order invoices, free text invoices, project invoices, sales order credit notes, and project invoice credit notes as .xml files to the government or other trading parties that mandate use of electronic invoicing. These .xml files must comply with certain standards. The country-specific requirements and their implementation may differ across EU member states but commonly they are using Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) in different versions with customizations as well as [PEPPOL](https://www.peppol.eu) specifications and access points for validation and transportation. The primary advantage of UBL is that business documents can be standardized for different purposes. Because UBL is a flexible, international standard that supports many business requirements, these business documents can be exchanged across national borders.
+Implementation and adoption of European Union-wide electronic invoicing is regulated [Council Directive 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF), which affects all EU member states. Companies that want to benefit from electronic invoicing must submit sales order invoices, free text invoices, project invoices, sales order credit notes, and project invoice credit notes as .xml files to the government or other trading parties that mandate use of electronic invoicing. These .xml files must comply with certain standards. The country/region-specific requirements and their implementation may differ across EU member states but commonly they are using Universal Business Language ([UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl)) in different versions with customizations as well as [PEPPOL](https://www.peppol.eu) specifications and access points for validation and transportation. The primary advantage of UBL is that business documents can be standardized for different purposes. Because UBL is a flexible, international standard that supports many business requirements, these business documents can be exchanged across national borders.
 
 ## Electronic invoice formats currently available in Dynamics 365 Finance
 
-The following country-specific formats of electronic invoices are available:
+The following country/region-specific formats of electronic invoices are available:
 
 -   OIOUBL v.2.02 for Denmark
 -   EHF v.3.0 for Norway
@@ -96,10 +95,10 @@ The **Invoice model** data model, invoice model mapping, and country/region-spec
 -   Sales invoice (FI)
 -   Project invoice (FI)
 
-The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
+The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country/region to country/region. Because the requirements, as well as supported countries/regions and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 
 ## Electronic invoice configuration
-The setup and specifics of electronic invoices depend on the country/region that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country-specific topics:
+The setup and specifics of electronic invoices depend on the country/region that it's implemented for. For more information about how to set up and use customer electronic invoices, see the related country/region-specific topics:
 
 - [Italy](emea-ita-e-invoices.md)
 - [Norway](emea-nor-e-invoices.md)

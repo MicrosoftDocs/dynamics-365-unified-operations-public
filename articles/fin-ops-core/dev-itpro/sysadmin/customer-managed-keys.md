@@ -6,14 +6,14 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 02/01/2023
+ms.date: 07/19/2023
 ms.custom: bap-template
+
 ---
 
 # Use customer-managed keys to control encryption keys for data at rest
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Microsoft services adhere to data privacy and compliance requirements when they secure customer data by encrypting data at rest. This practice secures the data from being exposed if a copy of the database is stolen. When data encryption at rest is used, any stolen database data is protected from being restored to a different server without the encryption key.
 
@@ -24,10 +24,9 @@ This article explains how to set up CMKs to control encryption keys for data at 
 > [!IMPORTANT]
 >
 > - The CMK feature is provided through Microsoft Power Platform. It applies to environments that run one or more finance and operations apps that are integrated with Microsoft Power Platform. It also applies to all environment-specific resources, including SQL databases and Azure storage accounts. (For more information, see [Enable the Microsoft Power Platform integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).)
-> - The preview version of CMKs is available at no cost. When CMKs become generally available, a cost will be associated with environments where they're enabled.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that Microsoft customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not yet be available in your region.
 > - CMK policy enforcement doesn't include cloud-hosted environments because these environments are deployed in customer-managed subscriptions. For more information on best practices for securing cloud-hosted environment, see [Secure one-box development environments](../../dev-itpro/dev-tools/secure-developer-vm.md).
+> - Refer to [Licensing requirements for customer managed key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key).
 
 ## Enable CMKs
 
@@ -62,11 +61,12 @@ Lifecycle Services might provide several add-ins for finance and operations envi
 
 ## CMK support across finance and operations apps
 
-Not all finance and operations apps support CMK policies in the preview. The following table describes the CMK support status of each app.
+Not all finance and operations apps support CMK policies. The following table describes the CMK support status of each app.
 
 | App | Status |
 | --- | --- |
 | Dynamics 365 Supply Chain Management | Finance and operations environments that are provisioned under Dynamics 365 Supply Chain Management support CMKs for the encryption of all environment-specific resources at rest. |
 | Dynamics 365 Human Resources | <p>Dynamics 365 Human Resources installations that are provisioned via a finance and operations environment support CMKs for all environment-specific resources.</p><p>The Human Resources stand-alone app doesn't support CMKs. To enable the use of CMKs, you must first use migration tooling to migrate your stand-alone Human Resources environment to a finance and operations environment.</p> |
 | Dynamics 365 Finance | <p>Finance and operations environments that are provisioned under Dynamics 365 Finance support CMKs for all environment-specific resources.</p><p>**Note:** If you use [RCS](../../../finance/localizations/rcs-overview.md) to complement your Dynamics 365 Finance environment, data that's managed under RCS environments doesn't currently support CMKs. Support for CMKs is expected in late 2023, when RCS functionality becomes available for finance and operations apps.</p> |
+| Dynamics 365 Commerce | <p>Finance and operations environments that are provisioned under Dynamics 365 Commerce support CMKs for all environment-specific resources except the e-commerce content management system (CMS) and recommendations. CMK support for the e-commerce CMS is expected to be enabled in the future.</p><p>CMK cannot be applied to [Commerce Scale Units](../deployment/Initialize-Retail-Channels.md), [e-commerce](../../../commerce/deploy-ecommerce-site.md), and [ratings and reviews](../../../commerce/ratings-reviews-overview.md) components that are located in a geo different from the finance and operations environment for which CMK is enabled.</p>|
 | Microsoft Dynamics Lifecycle Services | <p>Data that you store in Lifecycle Services (such as file assets, methodologies, task recorder data, and any other project metadata) won't be encrypted by using CMKs.</p><p>CMK support for Lifecycle Services metadata is expected sometime in the future.</p> |

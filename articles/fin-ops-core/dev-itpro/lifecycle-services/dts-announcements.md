@@ -26,6 +26,22 @@ ms.assetid:
 
 This article provides information about the new or changed features in Microsoft Dynamics Translation Service (DTS).
 
+## Dynamics 365 Translation Service Connector release
+
+The Dynamics 365 Translation Service Connector is now available. Because this connector integrates with Microsoft Power Platform, you can access DTS directly from a flow or app. The connector calls the DTS API on the user's behalf, saving them a trip to the website.
+
+The following functionality is supported:
+
+- Translate user interface (UI) files.
+- Regenerate translation requests.
+- Create translation memory (TM) files.
+
+To learn more, see [Dynamics Translation Service](/connectors/dynamicstranslations/).
+
+## DTS API release
+
+The DTS API is now available for DTS users. With the API, customers can perform Translation, Alignment, and Regeneration actions without the need to visit LCS. This release allows developers to create custom translation solutions, leveraging the capabilities of DTS. For more details, see [the documentation](dts-api-info.md).
+
 ## Incident update: DTS API failures impacting extension users
 
 The LCS team has identified the root cause of the problem. The necessary fixes will be rolled out in the next release, and we anticipate that the DTS API will be fully functional by April 15, 2023.
@@ -64,6 +80,3 @@ The following features are included in the Visual Studio extension release:
 - **Align** – Create XLIFF translation memories (TMs) from previously translated label resource files.
 
 To download the Visual Studio extension, go to [Dynamics 365 Translation Service Visual Studio extension on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=dts-publisher.dts-vs-ext&ssr=false#overview). For more details about it, see [Dynamics 365 Translation Service Visual Studio extension](dts-visual-studio.md).
-
-
-

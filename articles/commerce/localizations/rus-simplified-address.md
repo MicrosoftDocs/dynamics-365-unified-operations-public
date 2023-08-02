@@ -38,7 +38,7 @@ Users can create and edit simplified addresses in Commerce POS for Russia. The s
 
 Full (that is, non-simplified) Russian addresses that are created in Commerce headquarters according to the address format configuration can be viewed in the POS. However, they can't be edited there. Cashiers who try to edit non-simplified Russian addresses receive a warning message, and the change is blocked.
 
-In the POS, the read-only **Address** field always shows the full address string, regardless of whether an address is simplified. This address string corresponds to the **Address** field in Commerce headquarters and is built according to the country's address format. In other words, the address string contains all the fields from the country's address format.
+In the POS, the read-only **Address** field always shows the full address string, regardless of whether an address is simplified. This address string corresponds to the **Address** field in Commerce headquarters and is built according to the country/region's address format. In other words, the address string contains all the fields from the country/region's address format.
 
 For more information, see [Russian address formats and import from FIAS](../../finance/localizations/rus-russian-address-format-and-import-from-fias.md).
 

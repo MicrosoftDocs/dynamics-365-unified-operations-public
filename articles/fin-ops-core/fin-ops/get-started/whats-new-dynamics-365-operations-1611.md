@@ -302,7 +302,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 </thead>
 <tbody>
 <tr>
-<td>Localizations are available for 18 additional countries:
+<td>Localizations are available for 18 additional countries/regions:
 <ul>
 <li>Austria</li>
 <li>Belgium</li>
@@ -323,7 +323,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 <li>Switzerland</li>
 <li>Thailand</li>
 </ul>
-<p>The following countries also require the Retail localization. The Retail localization for these countries hasn't been completed and is planned only for H1 CY2017:</p>
+<p>The following countries/regions also require the Retail localization. The Retail localization for these countries/regions hasn't been completed and is planned only for H1 CY2017:</p>
 <ul>
 <li>Brazil</li>
 <li>Czech Republic</li>
@@ -336,7 +336,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 <li>Sweden</li>
 </ul>
 </td>
-<td>Dynamics 365 for Operations is available in 18 additional countries. As part of our effort to make localization easier and more configurable, regulatory electronic reporting features have been converted to Electronic reporting (ER) configurations, and some regulatory Microsoft SQL Server Reporting Services (SSRS) reports have been converted to ER configurations that use Excel templates. These converted features are specifically mentioned later in this table.</td>
+<td>Dynamics 365 for Operations is available in 18 additional countries/regions. As part of our effort to make localization easier and more configurable, regulatory electronic reporting features have been converted to Electronic reporting (ER) configurations, and some regulatory Microsoft SQL Server Reporting Services (SSRS) reports have been converted to ER configurations that use Excel templates. These converted features are specifically mentioned later in this table.</td>
 </tr>
 <tr>
 <td>Japan – Group fixed assets when you print the form 26 and its appended tables.</td>

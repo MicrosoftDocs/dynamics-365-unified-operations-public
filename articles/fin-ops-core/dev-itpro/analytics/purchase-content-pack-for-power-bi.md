@@ -43,9 +43,9 @@ The following sections provide an overview of the visualizations.
 ### Purchase by vendor report page
 **Charts**
 - Top 10 vendors by purchase (stacked bar chart)
-- Total purchase by vendor group / country / name (pie chart)
-- Purchase by vendor group / country / name (column chart)
-- Average purchase by vendor group / country / name (column chart)
+- Total purchase by vendor group / country/region / name (pie chart)
+- Purchase by vendor group / country/region / name (column chart)
+- Average purchase by vendor group / country/region / name (column chart)
 
 **Tiles**
 - Total purchase
@@ -94,7 +94,7 @@ This page shows purchases this year and last year, and growth by procurement cat
 **Charts**
 - Purchase by city
 - Purchase YOY growth %
-- Purchase by country
+- Purchase by country/region
 
 **Example**
 <img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">

@@ -7,7 +7,6 @@ ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 65501
 ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28

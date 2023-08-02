@@ -18,7 +18,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This article includes country-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
+This article includes country/region-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
 Beginning January 2020, all companies in Norway are required by the Norwegian Tax Administration to provide SAF-T Financial data. This requirement is in accordance with version 1.4 of the documentation, which was published on July 8, 2019, and version 1.3 of the technical documentation, which was published on March 23, 2018, in the form of an XML report. The publication of these pieces of documentation coincided with version 1.1 of the "Norwegian SAF-T Financial data" XML Schema Definition (XSD) schema that was developed by the SAF-T Working group, Skatteetaten, and based on "OECD Standard Audit File - Taxation 2.00," which was modified on February 2, 2018.
 
@@ -165,6 +165,8 @@ Here is an explanation of the parts of this file name:
 
 - **SAF-T Financial** states the SAF-T type of file.
 - **999999999** represents the organization number that belongs to the owner of the data.
+        -If the Organization number is missing or the output XML file does not containt <RegistrationNumber>NA</RegistrationNumber>
+        -Navigate to Org administration > Organizations > Legal entities- Select your legal entity > Bank account information and assign the Org number to Routing code field
 - **20160401235911** represents the date and time when the file was created. (A 24-hour clock is used for the time.)
 - **1\_12** represents file 1 out of 12 total files in the export (that is, in the same selection).
 

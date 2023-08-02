@@ -304,7 +304,7 @@ In the **Format** column, you can specify a field format. In addition to **NU**a
 </tr>
 <tr>
 <td>
-<p><strong>Birth city or foreign country</strong>, <strong>Birth county</strong>, <strong>Birth date</strong>, <strong>Gender</strong>, <strong>First name</strong>, <strong>Last name</strong>, and <strong>Telephone</strong></p>
+<p><strong>Birth city or foreign country/region</strong>, <strong>Birth county</strong>, <strong>Birth date</strong>, <strong>Gender</strong>, <strong>First name</strong>, <strong>Last name</strong>, and <strong>Telephone</strong></p>
 </td>
 <td>
 <p>Enter additional information about declarer.</p>

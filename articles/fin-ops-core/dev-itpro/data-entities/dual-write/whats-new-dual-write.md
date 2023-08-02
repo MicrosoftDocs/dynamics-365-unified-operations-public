@@ -1,13 +1,13 @@
 ---
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
-author: RamaKrishnamoorthy
-ms.date: 03/20/2023
+author: jaredha
+ms.date: 05/20/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: ramasri
+ms.author: jaredha
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.8
 ---
@@ -17,6 +17,48 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## July 2023 release
+
+The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
+
+| Feature | Description | Status |
+| ---|---|---|
+| Bug fix | Fix for Dataverse organizations connected to finance and operations cloud hosted development environments (CHE) using Full Trust Plugins with FinOpsConnectors for token generation. | General availability |
+| Optimization | Improvements in token generation code for Full Trust Plugins | General availability |
+| Exception handling | Added custom exceptions (DualWritePluginException and DualWriteApplicationException) to separate plugin exceptions from application exceptions | General availability |
+
+## June 2023 release
+
+The June release of Dual-write Global Address Book solution 3.5.1.91 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | CRM workflow performance fix to add an additional check on update calls. | General availability |
+| Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance issues. | General availability |
+|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	General availability
+
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365GABExtended | Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.87 | 3.5.1.91 |
+
+## May 2023 release
+
+The May release of the Dual-write Global Address Book solution 3.5.1.87 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contact for **Customer**, **Vendor**, and **Associate organizations** tab fix. | General availability |
+| Bug fix | "Object reference not set to an instance of an object" error when the party postal address is updated. | General availability |
+| Bug fix | **Add existing** button in the subgrid for multiple entities. | General availability |
+| Bug fix | **County** field isn't correctly moved to the customer address in customer engagement apps when it's set in finance and operations apps. | General availability |
 
 ## March 2023 release 
 

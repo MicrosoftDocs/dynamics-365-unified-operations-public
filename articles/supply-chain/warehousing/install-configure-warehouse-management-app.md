@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
-ms.date: 03/07/2023
+ms.date: 06/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -28,18 +28,18 @@ The Warehouse Management mobile app is available for both Windows and Google And
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
 - Android 4.4 or later
-- iOS 8.0 or later
+- iOS 13.0 or later
 
 ### External URLs required by the app
 
 For the Warehouse Management mobile app to function correctly, your internal network must allow it to access the following external URLs:
 
-- *.microsoft.com
-- *.microsoftonline.com
+- \*.microsoft.com
+- \*.microsoftonline.com
 - login.windows.net
-- *.appcenter.ms
-- *.ces.microsoftcloud.com
-- *.onyx.azure.net
+- \*.appcenter.ms
+- \*.ces.microsoftcloud.com
+- \*.onyx.azure.net
 - play.google.com
 - itunes.apple.com
 
@@ -65,46 +65,85 @@ The easiest way to install the app on a single device is to install it from an a
 
 As an alternative to installing from an app store, you can instead download the app from the Microsoft App Center. The App Center provides installable packages that you can sideload. In addition to the current version, the App Center also lets you download previous versions and may provide preview versions with upcoming features that you can try out. To download current, previous, or preview versions of the Warehouse Management mobile app from Microsoft App Center, use one of the following links:
 
-- **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)  
+- **Windows (UWP):** [Warehouse Management (Windows)](https://aka.ms/wma-windows-official-release)
+
     For instructions about how to install a downloaded package on a Windows device and then set up the required certificates, see [Install a Build from App Center](/appcenter/distribution/installation).
-- **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)  
+
+- **Android:** [Warehouse Management (Android)](https://aka.ms/wma-android-official-release)
+
     A few extra steps might be required to install it. For details, see [Testing Android Apps](/appcenter/distribution/testers/testing-android).
+
 - **iOS:** The iOS version of the app is only available through App Store.
 
 For information about how to install a build downloaded from the App Center, see [Install a build](/appcenter/distribution/installation).
 
 The Warehouse Management mobile app isn't available in app stores in China. However, downloading it from Microsoft App Center and using it along with Dynamics 365 Supply Chain Management operated by 21Vianet in China is officially supported.
 
-## <a name="create-service"></a>Create a web service application in Azure Active Directory
+## <a name="authenticate"></a>Decide which authentication methods you'll use
 
-To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure Active Directory (Azure AD). The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
+Because the Warehouse Management mobile app has read/write access to some of your Supply Chain Management data, each device must be authenticated with Supply Chain Management. The app supports several authentication methods, which are described in the following subsections. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
+
+After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. If a device is lost or compromised, you can revoke its authentication by following the steps in the [Remove access for a lost or compromised device](#revoke) section.
+
+### Authenticate by using a certificate or client secret
+
+Authentication with Azure Active Directory (Azure AD) provides a secure way of authenticating a mobile device with Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code.
+
+Each device should have its own unique certificate or client secret.
+
+Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
+
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
+
+### <a name="authenticate-devicecode"></a>Authenticate users by using the device code flow
+
+When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for an Azure AD user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Azure AD user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Azure AD user account.
+
+Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
+
+- You should create a unique Azure AD user account for each device or user. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities.*
+- If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
+- The device code flow isn't fully supported by mobile mass deployment (MSM) systems such as Intune.
+
+> [!IMPORTANT]
+> All Azure AD accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.
+
+## <a name="create-service"></a>Create a web service application in Azure AD
+
+To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Azure AD. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
 
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
-1. In the Azure portal, in the left navigation pane, select **Azure Active Directory**.
-
-    ![Azure Active Directory.](media/app-connect-azure-aad.png "Azure Active Directory")
-
-1. Make sure that you're working with the instance of Azure AD that is used by Supply Chain Management.
+1. In the Azure portal, on the left navigation pane, select **Azure Active Directory**.
+1. Make sure that you're working with the instance of Azure AD that's used by Supply Chain Management.
 1. In the **Manage** list, select **App registrations**.
-
-    ![App registrations.](media/app-connect-azure-register.png "App registrations")
-
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-
-    ![Register an application wizard.](media/app-connect-azure-register-wizard.png "Register an application wizard")
-
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
+1. If you want to use [certificates or client secrets](#authenticate-devicecode) to authenticate devices, complete the following steps. If you want to use the device code flow instead, skip this step.
 
-    ![Application (client) ID.](media/app-connect-azure-app-id.png "Application (client) ID")
+    1. In the **Manage** list, select **Certificate & secrets**.
+    1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
 
-1. In the **Manage** list, select **Certificate & secrets**. Then select one of the following buttons, depending on how you want to configure the app for authentication. (For more information, see the [Authenticate by using a certificate or client secret](#authenticate) section later in this article.)
+        - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
+        - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
-    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be automated more completely. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that is shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
-    - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
+1. If you want to use the [device code flow](#authenticate-devicecode) to authenticate devices, complete the following steps to set it up and grant the required API permissions. If you want to use certificates or client secrets instead, skip this step.
 
-    ![Certificate & secrets.](media/app-connect-azure-authentication.png "Certificate & secrets")
+    1. In the **Manage** list, select **Authentication**.
+    1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+    1. In the **Manage** list, select **API permissions**.
+    1. Select **Add a permission**.
+    1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
+    1. On the left navigation pane, select **Azure Active Directory**.
+    1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select the **All applications** tab.
+    1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
+    1. In the **Manage** list, select **Properties**.
+    1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
+    1. In the **Manage** list, select **Users and groups**.
+    1. On the toolbar, select **Add user/group**.
+    1. On the **Add Assignment** page, select the link under the **Users** heading.
+    1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
 
 For more information about how to set up web service applications in Azure AD, see the following resources:
 
@@ -139,19 +178,7 @@ To enable Supply Chain Management to use your Azure AD application, follow these
 > [!TIP]
 > One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Azure Active Directory applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
 >
-> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that is mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
-
-## <a name="authenticate"></a>Authenticate by using a certificate or client secret
-
-Authentication with Azure AD provides a secure way of connecting a mobile device to Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code, as described later in this article.
-
-Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use non-exportable certificates.
-
-You must make the certificate available locally on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices if you're using Intune, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
-
-## Configure the Warehouse Management mobile app for cloud and edge scale units
-
-A few extra steps are required if you plan to run the Warehouse Management mobile app against a cloud or edge scale unit. For instructions, see [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
+> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## Configure the application by importing connection settings
 
@@ -163,17 +190,17 @@ You can import connection settings from either a file or a QR code. For both app
 
 | Parameter | Description |
 |---|---|
-| ConnectionName | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-| ActiveDirectoryClientAppId | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section. |
-| ActiveDirectoryResource | Specify the root URL of Supply Chain Management. |
-| ActiveDirectoryTenant | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
-| Company | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| ConnectionType | (Optional) Specify whether the connection setting should use a certificate or a client secret to connect to an environment. Valid values are *"certificate"* and *"clientsecret"*. The default value is *"certificate"*.<p>**Note:** Client secrets can't be imported.</p> |
-| IsEditable | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are *"true"* and *"false"*. The default value is *"true"*. |
-| IsDefault | (Optional) Specify whether the connection is the default connection. A connection that is set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are *"true"* and *"false"*. The default value is *"false"*. |
-| CertificateThumbprint | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
+| `ConnectionName` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
+| `ActiveDirectoryClientAppId` | Specify the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure AD](#create-service) section. |
+| `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
+| `ActiveDirectoryTenant` | Specify the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
+| `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
+| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are `"certificate"`, `"clientsecret"`, and `"devicecode"`. The default value is `"certificate"`.</p><p>**Note:** Client secrets can't be imported.</p> |
+| `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
+| `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
+| `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
 
-The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named *"ConnectionList"* in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces ({}) and separated by commas, and the array must be enclosed in brackets (\[\]).
+The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
 
 ```json
 {
@@ -198,6 +225,16 @@ The following example shows a valid connection settings file that contains two c
             "IsEditable": true,
             "IsDefaultConnection": false,
             "ConnectionType": "clientsecret"
+        },
+        {
+            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
+            "ConnectionName": "Connection3",
+            "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
+            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
+            "Company": "USMF",
+            "IsEditable": true,
+            "IsDefaultConnection": false,
+            "ConnectionType": "devicecode"
         }
     ]
 }
@@ -209,7 +246,7 @@ You can either save the information as a JSON file or generate a QR code that ha
 
 Typically, you'll use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
 
-Every time that the app is started, it reimports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
+Every time that the app is started, it re-imports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
 
 You can't remove a connection by using the connection settings file.
 
@@ -229,13 +266,7 @@ Usually, the paths are automatically created after the first run of the app. How
 Follow these steps to import connection settings from a file or a QR code.
 
 1. Start the Warehouse Management mobile app on your mobile device. The first time that you start the app, a welcome message is shown. Select **Select a connection**.
-
-    ![Welcome message.](media/app-configure-welcome-screen.png "Welcome message")
-
 1. If you're importing the connection settings from a file, and the default name and location were used when the file was saved, the app might already have found the file. In this case, skip ahead to step 4. Otherwise, select **Set up connection**, and then continue to step 3.
-
-    ![Set up connection.](media/app-configure-set-up-connection.png "Set up connection")
-
 1. In the **Connection setup** dialog box, select **Add from file** or **Add from QR code**, depending on how you want to import the settings:
 
     - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
@@ -244,10 +275,7 @@ Follow these steps to import connection settings from a file or a QR code.
     ![Connection setup menu.](media/app-configure-connection-setup-flyout.png "Connection setup menu")
 
 1. When the connection settings are successfully loaded, the selected connection is shown.
-
-    ![Connection settings loaded.](media/app-configure-select-connection.png "Connection settings loaded")
-
-1. Do one of the following steps to select the authentication certificate, depending on which type of device that you're using.
+1. Complete one of the following steps to select the authentication certificate, depending on which type of device that you're using.
 
     - If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
@@ -258,8 +286,6 @@ Follow these steps to import connection settings from a file or a QR code.
         ![Connection setup menu on iOS.](media/app-configure-connection-setup-ios.png "Connection setup menu on iOS")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
-
-    ![Sign-in page.](media/app-configure-sign-in-page.png "Sign-in page")
 
 ## <a name="config-manually"></a>Manually configure the application
 
@@ -281,11 +307,11 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Enter the following information:
 
-    - **Use client secret** – Set this option to _Yes_ to use a client secret to authenticate with Supply Chain Management. Set it to _No_ to use a certificate for authentication. (For more information, see the [Create a web service application in Azure Active Directory](#create-service) section earlier in this article.)
+    - **Authentication method** – Set this option to *Client secret* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see the [Create a web service application in Azure AD](#create-service) section.)
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
-    - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
-    - **Active directory client secret** – This field is available only when the **Use client secret** option is set to _Yes_. Enter the client secret that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
-    - **Active directory certificate thumbprint** – This field is available only for Windows devices and only when the **Use client secret** option is set to _No_. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure Active Directory](#create-service) section.
+    - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure AD](#create-service) section.
+    - **Active directory client secret** – This field is available only when the **Use client secret** option is set to *Yes*. Enter the client secret that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure AD](#create-service) section.
+    - **Active directory certificate thumbprint** – This field is available only for Windows devices and only when the **Use client secret** option is set to *No*. Enter the certificate thumbprint that you made a note of while you were setting up Azure AD in the [Create a web service application in Azure AD](#create-service) section.
     - **Active directory resource** – Specify the root URL of Supply Chain Management.
 
         > [!IMPORTANT]
@@ -300,17 +326,23 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
 
 1. Select the **Save** button in the upper-right corner of the page.
-1. If you're using a certificate for authentication, do one of the following steps:
+1. If you're using a certificate for authentication, complete one of the following steps:
+
     - For Android devices, select the certificate when prompted.
     - For iOS devices, follow the instructions given in step 5 in the [Import the connection settings](#config) section.
+
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
-## Remove access for a device
+## <a name="revoke"></a>Remove access for a lost or compromised device
 
-If a device is lost or compromised, you must remove access to Supply Chain Management for it. The following steps describe the recommended process for removing access.
+If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management.
+
+### Remove access for a device that authenticates by using a certificate or client secret
+
+The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
 
 1. Go to **System administration \> Setup \> Azure Active Directory applications**.
-1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that is used for the device, because you'll need it later.
+1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that's used for the device, because you'll need it later.
 
     If you've registered only one client ID, and multiple devices use the same client ID, you must push out new connection settings to those devices. Otherwise, they'll lose access.
 
@@ -321,10 +353,24 @@ If a device is lost or compromised, you must remove access to Supply Chain Manag
 1. On the toolbar, select **Delete**.
 1. In the confirmation message that appears, select **Yes**.
 
+### Remove access for a device that authenticates by using the device code flow
+
+When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Azure AD to revoke access for that device if it's ever lost or compromised. By disabling the user in Azure AD, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Azure AD user per device.
+
+To disable a user in Azure AD, follow these steps.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. On the left navigation pane, select **Azure Active Directory**, and ensure that you're in the correct directory.
+1. In the **Manage** list, select **Users**.
+1. Find the user who is associated with the device code, and select the name to open the user's profile.
+1. On the toolbar, select **Revoke sessions** to revoke the user's sessions.
+
+> [!NOTE]
+> Depending on how you set up your authentication system, you might also want to change the user's password or completely disable the user account.
+
 ## Additional resources
 
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
-- [Configure the Warehouse Management mobile app for cloud and edge scale units](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

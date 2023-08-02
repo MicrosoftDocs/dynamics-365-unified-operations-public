@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 21391
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail

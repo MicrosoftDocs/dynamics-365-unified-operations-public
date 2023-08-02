@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 56171
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 ms.search.region: Global
 # ms.search.industry: 
@@ -42,7 +41,7 @@ To view available updates:
 
 ## Types of updates
 
-- **Binary updates** are pre-compiled and cumulative. Every subsequent binary update includes all previous updates. These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.
+- **Binary updates** are precompiled and cumulative. Every subsequent binary update includes all previous updates. These updates don't have to be compiled in a development environment, and they can be applied directly to a nondevelopment environment from LCS.
         
     If you're running an environment that has Commerce functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under the SDK packaging. For Microsoft Dynamics 365 Commerce, all updates, even updates for application models, are released as binary updates.    
     
@@ -50,25 +49,25 @@ To view available updates:
     For all versions of Commerce and finance and operations apps that are version 8.1 and later, all updates, including updates for application models, are released as binary updates.
 
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, X++ updates must be compiled in a developer environment and merged with any customizations. X++ updates apply only to version 8.0 and earlier. 
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a nondevelopment environment, X++ updates must be compiled in a developer environment and merged with any customizations. X++ updates apply only to version 8.0 and earlier. 
 
 ## Update option by product and version
-Based on your product and version, you will have different update options from Lifecycle Services.  
+Based on your product and version, you have different update options from Lifecycle Services.  
 
 
 
 ### Finance and operations apps
 - **Application version 8.1 and later (One Version)** - All updates for version 8.1 and later will have the One Version service update experience. It will be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
 
-     Based on your environment version and the [service update availability](../../fin-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
+     Based on your environment version and the [service update availability](../../fin-ops/get-started/public-preview-releases.md), you have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
 
     You may see one or more of the following update options. 
 
    | Update        | Description           | Availability  |
    | ------------- |-------------| -----|
-   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you will have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than 2 versions of the current service update. You will have to apply the latest service update to stay current. |
-   | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for auto-update.<br><br>Only the designated sandbox or production environment will be auto-updated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
-   | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update will be made generally available for self-deployment approximately 2 weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
+   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than two versions of the current service update. You have to apply the latest service update to stay current. |
+   | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for autoupdate.<br><br>Only the designated sandbox or production environment will be autoupdated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
+   | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update is made generally available for self-deployment approximately two weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
 
 - **Application version 7.3 with Platform update 4 and later** - This release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the **Platform binary updates** tile is available to provide the platform updates as a cumulative update.
  
@@ -83,7 +82,7 @@ Based on your product and version, you will have different update options from L
 
 - **Application version 7.1, 7.2, 8.0, or earlier (except version 7.3) with Platform update 32 and earlier** - The product versions noted here are out of service.  No new X++ updates are available. You can apply the X++ updates that have been released previously but no new X++ update will be published to LCS. 
 
-    Also, a platform update will not be available starting with **Platform update 33**. This means that you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
+    Also, a platform update won't be available starting with **Platform update 33**. This means that you won't be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
 > [!NOTE]
 > If you are on a release that is noted above, you need to upgrade as soon as possible. 
@@ -99,7 +98,7 @@ To download binary updates, follow these steps in LCS.
 2. On the **Binary updates** page, select **Save package**.
    
    > [!NOTE]
-   > You will not be able to select Knowledge Base (KB) articles to be saved because binary updates will automatically save all KBs in an update package.        
+   > You won't be able to select Knowledge Base (KB) articles to be saved because binary updates will automatically save all KBs in an update package.        
    
    ![Save Binary Package.](./media/ReviewAndSaveBinaryPackage.jpg)
 
@@ -130,7 +129,7 @@ To download X++ updates, follow these steps in LCS.
 
 ## Additional resources
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
-- [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

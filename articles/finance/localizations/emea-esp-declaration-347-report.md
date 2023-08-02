@@ -178,16 +178,16 @@ Consider an example in the **DEMF** legal entity.
 ### Customer transactions
 
 1.  Go to **Accounts receivable** \> **Customers** \> **All customers**, and select customer **DE-010**.
-2.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396364B**.
+2.  On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396364B**.
 3.  Select **Save**, and close page.
 4.  Select customer **DE-011**.
-5.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396365B**.
+5.  On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396365B**.
 6.  Select **Save**, and close page.
 7.  Select customer **DE-012**.
-8.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396366B**.
+8.  On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **01396366B**.
 9.  Select **Save**, and close page.
 10. Select customer **DE-014**.
-11. On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, verify that the **Tax exempt number** field is set to **DE9801**.
+11. On the **Address** FastTab, verify that **DEU** is set as the country/region, and then, on the **Invoice and Delivery** FastTab, verify that the **Tax exempt number** field is set to **DE9801**.
 12. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**, create the following four invoices, and then post them.
 
 | **Invoice** | **Customer** | **Date**          | **Delivery address** | **Amount** |
@@ -210,10 +210,10 @@ Consider an example in the **DEMF** legal entity.
 ### Vendor transactions
 
 1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select vendor **DE-001**.
-2.  On the **Address** FastTab, set **ESP** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
+2.  On the **Address** FastTab, set **ESP** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **03566243B**.
 3.  Select **Save**, and close page.
 4.  Select vendor **DE-01001**.
-5.  On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE124363748**.
+5.  On the **Address** FastTab, verify that **DEU** is set as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE124363748**.
 6.  Go to **Accounts payable** \> **Invoices** \> **Invoice journal**, create the following two invoices, and then post them.
 
 | **Invoice** | **Vendor** | **Date**         | **Vendor address** | **Amount** |

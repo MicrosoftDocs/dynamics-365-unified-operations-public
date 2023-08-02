@@ -18,7 +18,7 @@ audience: Application User
 ms.reviewer: kfend
 # 
 # ms.tgt_pltfrm: 
-ms.custom: ["15721", "intro-internal"]
+ms.collection: get-started
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,9 +35,6 @@ ms.dyn365.ops.version: AX 10.0.16
 This article provides information about global withholding tax functionality and explains how to set it up. The new functionality is available in version 10.0.17 and later.
 
 Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level. The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.
-
-> [!NOTE]
-> Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.
 
 ## Turn on global withholding tax
 

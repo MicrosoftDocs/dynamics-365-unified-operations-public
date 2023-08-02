@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27791
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ---
 
@@ -75,7 +74,7 @@ Use Issue search to identify whether a regulatory feature, that is related to th
             </tr>
             <tr>
                 <td>
-                <p>Country</p>
+                <p>Country/region</p>
                 </td>
                 <td>
                 <p>Select the country or region that the legislation applies to. </p>

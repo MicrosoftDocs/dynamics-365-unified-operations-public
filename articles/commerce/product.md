@@ -4,7 +4,7 @@
 title: Add product recommendations on POS
 description: This article describes using product recommendations on a point of sale (POS) device.
 author: bebeale
-ms.date: 02/03/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -76,7 +76,7 @@ To set up product recommendations, confirm that you've completed the provisionin
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 

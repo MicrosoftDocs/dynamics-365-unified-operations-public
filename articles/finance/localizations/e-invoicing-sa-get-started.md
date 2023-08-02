@@ -12,7 +12,7 @@ ms.search.region: Saudi Arabia
 ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: AX 10.0.21
-ms.custom: intro-internal
+ms.collection: get-started
 ms.assetid: 
 ms.search.form: 
 ---
@@ -22,7 +22,7 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 
 
-This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia. This article guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ### Prerequisites
 
@@ -40,14 +40,17 @@ Before you begin the procedures in this article, complete the following prerequi
 - In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 - Enable the **CustomerPaymentMethodEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 - Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see [Create a connected application](e-invoicing-connected-applications.md#create-a-connected-application).
-- Import the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature into RCS from the Global repository. For more information, see [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
+- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing features into RCS from the Global repository. For more information, see [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Sales e-invoice (SA)
     - Project e-invoice (SA)
     - Retail fiscal document format (for Retail-specific scenarios, if required)
 
-## Country-specific configuration for the Saudi Arabian Zatca submission (SA) Electronic invoicing feature
+## Country/region-specific configuration for the Saudi Arabian Zatca submission (SA) Electronic invoicing feature
+
+> [!NOTE]
+> The configuration steps in this section are described for **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. This assumes that the [onboarding](#onboarding) process is completed and the Production Cryptographic Stamp Identifier (PCSID) is obtained. If you are in the middle of the onboarding process and only the Compliance Cryptographic Stamp Identifier (CCSID) is received, do the same configuration steps for the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature. 
 
 Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
@@ -76,6 +79,10 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
 
 13. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile, and then select the draft version of the **Saudi Arabian Zatca submission (SA)** electronic invoicing feature. 
 14. On the **Setups** menu, select the **Sales invoice** feature setup, and then select **Edit**.
+   
+   > [!NOTE]
+   > Select the **Tax invoice compliance check** feature setup for the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
+   
 15. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Get next number sequence value** action. 
 16. In the **Parameters** section, in the **Value** field, select the number sequence that you created in step 12.
 17. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
@@ -96,9 +103,13 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** electron
     7. Select the **Secret name** name.
     8. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process. 
 
-19. Repeat steps 13 through 17 for the **Project invoice** and **Retail simplified invoice** feature setup. 
-19. Complete, publish, and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service environment. For more information, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
-20. Deploy the **Saudi Arabian Zatca submission (SA)** feature to the connected application. For more information, see [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
+19. Repeat steps 13 through 17 for the **Project invoice** and **Retail simplified invoice** feature setups. 
+
+    > [!NOTE]
+    > Repeat steps 13 through 17 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups to set up the electronic invoicing feature, **Saudi Arabian ZATCA compliance check (SA)**.
+   
+20. Complete, publish, and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service environment. For more information, see [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
+21. Deploy the **Saudi Arabian Zatca submission (SA)** feature to the connected application. For more information, see [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application).
 
 ## Finance configuration
 
@@ -106,7 +117,7 @@ When tax invoices are cleared, ZATCA generates a QR code that contains the digit
 
 Follow these steps to complete the configuration.
 
-1. Make sure that the country-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
+1. Make sure that the country/region-specific ER configurations that are required for Saudi Arabia are imported. For more information, see [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Project invoice** and **Fiscal transaction document** table names. 
 4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.

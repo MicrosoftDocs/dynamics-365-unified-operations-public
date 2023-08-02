@@ -29,7 +29,7 @@ For example, a customer in Canada requests a site URL that is associated with a 
 
 ## How it works
 
-When geo detection and redirection are enabled for a site, and a customer requests a site URL, the country that is detected for the customer and the URL that they requested are used to determine whether that URL is mapped to the country where the customer is. The mapping between URLs and countries is defined on the **Channels** page under **Site settings** in Commerce site builder. 
+When geo detection and redirection are enabled for a site, and a customer requests a site URL, the country/region that is detected for the customer and the URL that they requested are used to determine whether that URL is mapped to the country/region where the customer is. The mapping between URLs and countries/regions is defined on the **Channels** page under **Site settings** in Commerce site builder. 
 
 If the request URL doesn't match any URL that is mapped to the customer's country, the list of one or more URLs that are mapped to that country is returned in the response. The country/region picker compares each URL in that list to the URLs that have been configured in the country/region module. For every exact match that is found, the country/region picker renders the display heading, subheading, and image for that URL, and hyperlinks those elements by using the URL.
 
