@@ -3,7 +3,7 @@
  
 title: MY-00007 Self-billed invoices
 description: This article explains how to create and print a vendor self-billed invoice. 
-author: EvgenyPopovMBS
+author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: Malaysia
 # ms.search.industry: 
-ms.author: epopov
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
