@@ -48,15 +48,14 @@ This article provides information about how to configure and issue customer elec
     - **Project invoice:** Peppol Project Invoice AU-NZ
     - **Project credit note:** Peppol Project Credit Note AU-NZ
 
-![Formats for electronic documents.](media/emea-nor-ger-configs.jpg)
+    ![Formats for electronic documents.](media/apac_aus_nzl_einvoice_configs.jpg)
 
 ### Configure customer parameters
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Invoice and delivery** FastTab, set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice.
+3. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if necessary.
 
-![Customer parameters.](media/emea-nor-ger-customer.jpg)
 
 ## Export customer electronic invoices
 
