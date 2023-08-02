@@ -21,9 +21,8 @@ This article describes the Data import/export framework parameters and options f
 
 In Dynamics 365 finance and operations, go to **Data Management** > **Framework parameters**. 
 
-
-On the **Bring your own database** tab, the following parameter is available:
--   **Enable all company export** - If you require export to Bring your own database for all companies, select the **Export across all companies** option.
+On the **Bring your own database** tab, the **Enable all company export** following parameter is available:
+  **Enable all company export** - Select **Yes** to export all companies. 
 
 On the **Compatibility options** tab, the following parameters are available:
 -   **Enable header for fixed width file**:
