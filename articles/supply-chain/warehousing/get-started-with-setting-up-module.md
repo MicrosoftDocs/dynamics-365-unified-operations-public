@@ -151,7 +151,7 @@ Follow these steps to open and complete the *Warehouse management initiation wiz
 
 ## Inbound configuration wizard
 
-The *Inbound configuration wizard* provides a step-by-step guide that will help you set up inbound operations for one or more warehouses. After you complete this wizard, settings will be in place that will let you receive purchases and or inbound shipment orders. Use this wizard for new legal entities or new warehouses where you must configure basic inbound flows. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
+The *Inbound configuration wizard* provides a step-by-step guide that will help you set up inbound operations for one or more warehouses. After you complete this wizard, settings will be in place that will let you receive purchases. Use this wizard for new legal entities or new warehouses where you must configure basic inbound flows. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
 
 The following table summarizes the configurations that the wizard does.
 
@@ -159,15 +159,14 @@ The following table summarizes the configurations that the wizard does.
 | --- | --- | --- |
 | Locations | Create | <p>Locations are used to identify where items are stored, picked from, and put to in the warehouse. The wizard will create a receiving location for each warehouse that you select at the start of the wizard, and will use the name and location profile that you specify in the wizard.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other locations by going to **Warehouse management \> Setup \> Warehouse \> Locations**.</p> |
 | Work classes | Create | <p>Work classes are used to direct and/or limit the types of work order lines that a warehouse worker can process on a mobile device. The wizard will create a single work class and use the name that you specify.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work classes by going to **Warehouse management \> Setup \> Work \> Work classes**.</p> |
-| Location directives | Create | <p>Location directives are used to identify pick and put locations for inventory movement. The wizard will create a put location directive for each warehouse that you select at the start of the wizard. It will name each location directive by prefixing the name that you specify in the wizard with the name of the warehouse where the location directive applies. Each location directive that's created will have a work order type of *Purchase orders* and/or *Inbound shipment order*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other location directives by going to **Warehouse management \> Setup \> Location directives**.</p><p>For more information, see [Work with location directives](create-location-directive.md).</p> |
-| Work templates | Create | <p>Work templates are used to create warehouse work at different points in the system. The wizard will create a work template and use the name that you specify in the wizard. The work template will have a work order type of *Purchase orders* and/or *Inbound shipment order*.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
+| Location directives | Create | <p>Location directives are used to identify pick and put locations for inventory movement. The wizard will create a put location directive for each warehouse that you select at the start of the wizard. It will name each location directive by prefixing the name that you specify in the wizard with the name of the warehouse where the location directive applies. Each location directive that's created will have a work order type of *Purchase orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other location directives by going to **Warehouse management \> Setup \> Location directives**.</p><p>For more information, see [Work with location directives](create-location-directive.md).</p> |
+| Work templates | Create | <p>Work templates are used to create warehouse work at different points in the system. The wizard will create a work template and use the name that you specify in the wizard. The work template will have a work order type of *Purchase orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit this and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
 
 Follow these steps to open and complete the *Inbound configuration wizard*.
 
 1. Before you open the wizard, make sure that the following prerequisites are in place. (They should already be in place if you run the wizard when you're instructed to do so in the default task list that was described earlier in this article.)
 
     - Your basic configuration must be set up on the **Warehouse management parameters** page. You can complete this configuration by running the *Warehouse management initiation wizard* as described in the previous section. Alternatively, you can complete it manually by going to **Warehouse management \> Setup \> Warehouse management parameters**.
-    - Each warehouse that you want to set up by using this wizard must already exist as a record in the system, and the **Use warehouse management processes** option must be set to *Yes* for it. You can create warehouses and set the **Use warehouse management processes** option for each of them by going to **Warehouse management \> Setup \> Warehouse \> Warehouses**. Each warehouse must also be assigned to a site that exists as a record in the system. You can create sites by going to **Warehouse management \> Setup \> Warehouse \> Sites**.
     - Each warehouse that you want to set up by using this wizard must already exist as a record in the system, and the **Use warehouse management processes** option must be set to *Yes* for it. You can create warehouses and set the **Use warehouse management processes** option for each of them by going to **Warehouse management \> Setup \> Warehouse \> Warehouses**. Each warehouse must also be assigned to a site that exists as a record in the system. You can create sites by going to **Warehouse management \> Setup \> Warehouse \> Sites**.
 
 1. Go to **Warehouse management \> Setup \> Wizards \> Inbound configuration wizard**.
@@ -179,12 +178,11 @@ Follow these steps to open and complete the *Inbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When having the [**Warehouse management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Purchase orders_ or _Inbound shipment order_ for the following setup processes.
-1. The **Inbound setup** page opens. Use it to define names for different elements of the purchase or inbound shipment order process. Default values are suggested, but you can edit them as you require. Set the following fields:
+1. The **Inbound setup** page opens. Use it to define names for different elements of the purchase process. Default values are suggested, but you can edit them as you require. Set the following fields:
 
-    - **Purchase/inbound work class** – Specify the name of the work class for the receiving process. This value will be used in the work template.
-    - **Purchase/Inbound work template** – Specify the name of the work template for the receiving process.
-    - **Purchase/Inbound put location directive** – Specify the name of the put location directive for the receiving process.
+    - **Purchase work class** – Specify the name of the work class for the receiving process. This value will be used in the work template.
+    - **Purchase work template** – Specify the name of the work template for the receiving process.
+    - **Purchase put location directive** – Specify the name of the put location directive for the receiving process.
     - **Receiving location** – Specify the name of the receiving location.
     - **Location profile** – Select the location profile that should be assigned to the selected receiving location.
 
@@ -193,7 +191,7 @@ Follow these steps to open and complete the *Inbound configuration wizard*.
 
 ## Outbound configuration wizard
 
-The *Outbound configuration wizard* provides a step-by-step guide that will help you set up outbound operations for one or more warehouses. After you complete this wizard, settings will be in place that will let you ship sales and/or outbound shipment orders. Use this wizard for new legal entities or new warehouses where you must configure basic outbound flows. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
+The *Outbound configuration wizard* provides a step-by-step guide that will help you set up outbound operations for one or more warehouses. After you complete this wizard, settings will be in place that will let you ship sales. Use this wizard for new legal entities or new warehouses where you must configure basic outbound flows. The default task list that was described earlier in this article includes steps for setting up the prerequisites for this wizard. It also includes a step that indicates when you should run this wizard. We recommend that you run the wizard when you're instructed to do so in the default task list.
 
 The following table summarizes the configurations that the wizard does.
 
@@ -202,9 +200,9 @@ The following table summarizes the configurations that the wizard does.
 | Locations | Create | <p>Locations are used to identify where items are stored, picked from, and put to in the warehouse. The wizard will create several locations for each warehouse that you select at the start of the wizard, and will use the names that you specify in the wizard. It will associate each location with the relevant warehouse.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other locations by going to **Warehouse management \> Setup \> Warehouse \> Locations**.</p> |
 | Directive codes | Create | <p>Directive codes are used as a link between the work templates and the location directives. The wizard will create several directive codes and use the names that you specify in the wizard.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other directive codes by going to **Warehouse management \> Setup \> Directive codes**.</p> |
 | Work classes | Create | <p>Work classes are used to direct and/or limit the types of work order lines that a warehouse worker can process on a mobile device. The wizard will create several work classes and use the names that you specify in the wizard.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other work classes by going to **Warehouse management \> Setup \> Work \> Work classes**.</p> |
-| Location directives | Create | <p>Location directives are used to identify pick and put locations for inventory movement. The wizard will create pick and put location directives for each warehouse that you select at the start of the wizard. It will name each location directive by prefixing the name that you specify in the wizard with the name of the warehouse where the location directive applies. Each location directive that's created will have a work order type of *Sales orders* and/or *Outbound shipment order*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other location directives by going to **Warehouse management \> Setup \> Location directives**.</p><p>For more information, see [Work with location directives](create-location-directive.md).</p> |
+| Location directives | Create | <p>Location directives are used to identify pick and put locations for inventory movement. The wizard will create pick and put location directives for each warehouse that you select at the start of the wizard. It will name each location directive by prefixing the name that you specify in the wizard with the name of the warehouse where the location directive applies. Each location directive that's created will have a work order type of *Sales orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other location directives by going to **Warehouse management \> Setup \> Location directives**.</p><p>For more information, see [Work with location directives](create-location-directive.md).</p> |
 | Wave templates | Create | <p>Wave templates are used to define the wave execution process and set up criteria for when waves are created, run, and released. The wizard will create a wave template for each warehouse that you select at the start of the wizard. It will name each wave template by prefixing the name that you specify in the wizard with the name of the warehouse where the wave template applies. Each wave template that's created will have a wave template type of *Shipping*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other wave templates by going to **Warehouse management \> Setup \> Waves \> Wave templates**.</p> |
-| Work templates | Create | <p>Work templates are used to create warehouse work at different points in the system. The wizard will create a work template for each warehouse that you select at the start of the wizard. It will name each work template by prefixing the name that you specify in the wizard with the name of the warehouse where the work template applies. Each work template that's created will have a work order type of *Sales orders* and/or *Outbound shipment order*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
+| Work templates | Create | <p>Work templates are used to create warehouse work at different points in the system. The wizard will create a work template for each warehouse that you select at the start of the wizard. It will name each work template by prefixing the name that you specify in the wizard with the name of the warehouse where the work template applies. Each work template that's created will have a work order type of *Sales orders*.</p><p>After you complete the wizard, you can add, remove, and/or edit these and other work templates by going to **Warehouse management \> Setup \> Work \> Work templates**.</p> |
 
 Follow these steps to open and complete the *Outbound configuration wizard*.
 
@@ -222,12 +220,11 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - *Warehouse* – The wizard will configure the warehouses that are selected in the grid. Only warehouses where the **Use warehouse management processes** option is set to *Yes* are listed. Select the checkbox for each warehouse that you want to set up by using the wizard.
 
 1. Select **Next** to continue.
-1. When having the [**Warehouse management only mode**](warehouse-management-only-mode.md) enabled a **Work order type section** will be the next where you can define _Sales orders_ or _Outbound shipment order_ for the following setup processes.
-1. On the **General warehouse** page, use the following fields to define names for outbound processes. Default values are suggested, but you can edit them as you require.
+1. On the **General warehouse** page, use the following fields to define names for sales processes. Default values are suggested, but you can edit them as you require.
 
-    - **Sales/Outbound work template** – Specify the name of the work template for the shipping process.
+    - **Sales work template** – Specify the name of the work template for the shipping process.
     - **Shipping wave template** – Specify the name of the wave template for the shipping process.
-    - **Sales/Outbound pick location directive** – Specify the name of the pick location directive for the shipping process.
+    - **Sales pick location directive** – Specify the name of the pick location directive for the shipping process.
 
 1. Select **Next** to continue.
 1. On the **Staging area** page, use the following fields to specify whether you'll use a staging area in your outbound processes and, if you will, to set up the feature. You might have to use the feature if you pick your items and then put them in a staging location where all lines of an order are held. In the staging area, items can be packed, relabeled, or loaded onto a delivery truck, and then sent out the door. Default values are suggested, but you can edit them as you require.
@@ -235,8 +232,8 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - **Use staging area** – Select this checkbox if you'll use a staging area. If you clear this checkbox, no staging area will be set up, and all the other fields on the page will be unavailable.
     - **Location** – Specify the name of the staging location.
     - **Directive code** – Specify the name of the directive code for the shipping process. This value will be used in the shipping work template and location directive to link them together.
-    - **Sales/outbound work class** – Specify the name of the work class for the shipping process. This value will be used in the work template.
-    - **Sales/Outbound put location directive** – Specify the name of the put location directive for the shipping process.
+    - **Sales work class** – Specify the name of the work class for the shipping process. This value will be used in the work template.
+    - **Sales put location directive** – Specify the name of the put location directive for the shipping process.
 
 1. Select **Next** to continue.
 1. On the **Packing preference** page, use the following fields to specify whether you'll use packing functionality in your outbound processes, and if you will, to set up the feature. You might have to use the feature if you pack items before you ship them. Default values are suggested, but you can edit them as you require.
@@ -245,9 +242,9 @@ Follow these steps to open and complete the *Outbound configuration wizard*.
     - **Manually pack items through Pack station** – Select this checkbox if you want to use manual packing. Then set the following fields:
 
         - **Directive code** – Specify the name of the directive code.
-        - **Sales/Outbound work class** – Specify name to use for the work class.
+        - **Sales work class** – Specify name to use for the sales work class.
         - **Pack location** – Specify the name of the packing location.
-        - **Sales/Outbound put location directive** – Specify the name of the put location directive for the packing process.
+        - **Sales put location directive** – Specify the name of the put location directive for the packing process.
 
     - **Pack items through wave containerization** – Select this checkbox if you want to use automatic packing through wave containerization. Then set the following fields:
 

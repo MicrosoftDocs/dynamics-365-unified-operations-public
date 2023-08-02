@@ -149,8 +149,10 @@ As a minimum it is recommended to use the following  [**Business events**](../..
 ## <a name="source-systems"></a> Source systems
 
 The **Warehouse management only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. This gets defined in the **Warehouse management > Setup > Warehouse management integration > Source systems** page and is a prerequisite to be able to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the inbound shipment.
+
 The **Source system** name must be identical with the name in the provided message before a message can be accepted getting imported into D365 SCM.
 Additional policy settings can be used as part of the **Source systems** page to control the shipment order import processes, for example it is possible to define **Message value mapping** for item and warehouse identifications and define if loads for inbound shipment orders automatically gets created as part of the **Inbound shipment order policies** definition.
+
 > [!NOTE]
 > When mapping the items to [**Bar codes**](../pim/tasks/create-bar-code-product.md) remember to enable the _Scanning_ setting for the bar codes. For product variants it is only the "ItemNumber" field being used from the order line messages when using **Message value mapping** for the items.
 

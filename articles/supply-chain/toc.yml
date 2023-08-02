@@ -3483,6 +3483,8 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
+        - name: Create or modify an inbound load
+          href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
