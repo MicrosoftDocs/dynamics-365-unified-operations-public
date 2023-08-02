@@ -1,8 +1,8 @@
 ---
 title: Accounting basis electronic report (Regnskab Basis) for Denmark
-description: This article explains how to set up and generate the Accounting basis electronic report (Regnskab Basis) for legal entities that have a primary address in Denmark.
+description: This article explains how to set up and generate the Accounting basis electronic report (Regnskab Basis) for legal entities with a primary address in Denmark.
 author: liza-golub
-ms.date: 07/21/2023
+ms.date: 08/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -57,7 +57,7 @@ Import the most recent versions of the configurations. The version description u
 ### <a name="satt"></a>Select the Accounting electronic report format in General ledger parameters
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-2. On the **Electronic reporting** FastTab of **Ledger** tab, in the **Accounting electronic report** field, select **Accounting Basis (Regnskab Basis) CSV (DK)**.
+2. On the **Ledger** tab, on the **Electronic reporting** FastTab, in the **Accounting electronic report** field, select **Accounting Basis (Regnskab Basis) CSV (DK)**.
 
 ### <a name="coa"></a> Configure a standard chart of accounts (Standardkontoplan)
 
