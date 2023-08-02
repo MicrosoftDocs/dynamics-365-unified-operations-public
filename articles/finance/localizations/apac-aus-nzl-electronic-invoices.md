@@ -157,7 +157,9 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 When you've completed all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
+You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and select a required **Document type**.
+
+To download the XML files of electronic invoices for successfully processed invoices got to **Electronic document** > **Download file** menu.
 
 ![Submission log](media/apac_aus_nzl_einvoice_log.jpg)
 
