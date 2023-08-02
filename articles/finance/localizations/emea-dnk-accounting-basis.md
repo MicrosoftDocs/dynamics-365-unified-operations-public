@@ -43,9 +43,9 @@ For more information about how to download ER configurations, see [Download ER c
 
 | ER configuration name       | Type          | Version | Description |
 |-----------------------------|---------------|---------|-------------|
-| Standard Audit File (SAF-T) | Model         | 168     | The common data model for different audit reports. |
-| SAF-T General model mapping | Model mapping | 168.368 | The model mapping that provides general data source mapping. |
-| Accounting Basis (Regnskab Basis) CSV (DK) | Format | 168.7  | The CSC format that represents the Accounting basis electronic report in accordance with the requirements for Denmark. |
+| Standard Audit File (SAF-T) | Model         | 173     | The common data model for different audit reports. |
+| SAF-T General model mapping | Model mapping | 173.373 | The model mapping that provides general data source mapping. |
+| Accounting Basis (Regnskab Basis) CSV (DK) | Format | 173.9  | The CSC format that represents the Accounting basis electronic report in accordance with the requirements for Denmark. |
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
@@ -86,3 +86,7 @@ Use the [consolidation account groups and additional consolidation accounts](../
     When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 4. Select **OK** to generate the report.
+
+### Special symbols in the value of text fields
+
+A semicolon (;) is a special symbol in the Accounting Basis electronic report. If it's used in the value of text field of the report, it's replaced with a blank space.
