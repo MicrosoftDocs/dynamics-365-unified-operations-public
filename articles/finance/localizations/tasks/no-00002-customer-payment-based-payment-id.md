@@ -3,7 +3,7 @@
  
 title: NO-00002 Customer payment based on payment ID
 description: This article explains how to set up and maintain Norwegian payment IDs. 
-author: EvgenyPopovMBS
+author: kfend
 ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: Norway
 # ms.search.industry: 
-ms.author: epopov
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
