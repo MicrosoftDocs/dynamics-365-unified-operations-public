@@ -25,7 +25,7 @@ In Dynamics 365 finance and operations, go to **Data Management** > **Framework 
 On the **Bring your own database** tab, the following parameter is available:
 -   **Enable all company export** - If you require export to Bring your own database for all companies, select the **Export across all companies** option.
 
- On the **Compatibility options** tab, the following parameters are available:
+On the **Compatibility options** tab, the following parameters are available:
 -   **Enable header for fixed width file**:
     -   select **No** if the exported file doesn't contain headers.
     -   select **Yes** if the exported file contains headers.  
