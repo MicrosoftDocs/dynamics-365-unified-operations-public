@@ -2,9 +2,9 @@
 # required metadata 
  
 title: Import ISO20022 credit transfer configuration
-description: This procedure shows how to import a vendor payment electronic reporting configuration. 
+description: This article explains how to import a vendor payment electronic reporting configuration. 
 author: mrolecki
-ms.date: 08/29/2018
+ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -27,23 +27,20 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to import a vendor payment electronic reporting configuration. The German ISO 20022 credit transfer format is used as an example. This procedure can be used for other available electronic reporting format. 
+Complete the steps in this article to import a vendor payment electronic reporting configuration. The German ISO 20022 credit transfer format is used as an example. These steps can be used for other available electronic reporting formats. This article was created using the demo data company DEMF but you can use any demo data company to complete this task.
 
-This task was created using the demo data company DEMF but you can use any demo data company to complete this task.
+1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
+2. In the list of available configuration providers, select **Microsoft**.
+3. Select **Set active**.
+4. Select **Repositories** > **Open**.
+5. Select **Show filters**.
+6. Apply the following filters: In the **Configuration name** field, enter a filter value of **"ISO20022 Credit transfer (DE)"** using the **"begins with"** filter operator. Alternatively, you can find the configuration in the list, select it, and then move it to the **Import** task.  
+7. Select **Import**.
 
-This is the first of five tasks, that together illustrate the vendor payment process using electronic reporting configurations. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
-
-1. Go to Organization administration > Workspaces > Electronic reporting.
-2. In the list of available configuration providers, select Microsoft.
-3. Click Set active.
-4. Click Repositories.
-5. Click Open.
-6. Click Show filters.
-7. Apply the following filters: Enter a filter value of "ISO20022 Credit transfer (DE)" on the "Configuration name" field using the "begins with" filter operator
-    * Alternatively, you can find the configuration in the list, select it, and then move it to the Import task.  
-8. Click Import.
-    * If the Import button is not available, it means that the configuration has  already been imported.  
-9. Click Yes.
+   > [!NOTE]
+   > If the **Import** button isn't available, the configuration has already been imported.
+   
+8. Select **Yes**.
 
 
 
