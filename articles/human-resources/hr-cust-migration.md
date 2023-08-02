@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 06/17/2023
+ms.date: 08/02/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -42,7 +42,7 @@ As has been announced, the infrastructure for the standalone Human Resources app
 
 #### Human Resources migration TechTalk
  
-To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://youtu.be/IUl_ePVpZGU)
+To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://youtu.be/IUl_ePVpZGU).
 
 
 ## Prerequisites
