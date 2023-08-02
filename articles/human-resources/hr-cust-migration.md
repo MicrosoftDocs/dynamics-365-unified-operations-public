@@ -42,7 +42,7 @@ As has been announced, the infrastructure for the standalone Human Resources app
 
 #### Human Resources migration TechTalk
  
-To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://youtu.be/IUl_ePVpZGU).
+To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
 
 
 ## Prerequisites
