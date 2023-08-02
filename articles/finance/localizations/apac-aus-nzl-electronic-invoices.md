@@ -101,9 +101,57 @@ The primary address of the legal entity must be in Australia or New Zealand.
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. 
 
-### Configure...
+### Units of measure configuration
 
-You can .
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2. Select a unit ID in the list, and then select **External codes**.
+3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
+4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade.
+
+### Sales tax codes configuration
+
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification.
+
+### Customer requisition
+
+When you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter a customer requisition. You can also add an optional customer reference.
+
+#### Free text invoices
+
+1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+2. Create a new invoice, or select an existing invoice.
+3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+
+#### Sales orders
+
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
+2. Create a new sales order, or select an existing sales order. 
+3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+
+#### Project invoices
+
+1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
+2. Create a new project contract, or select an existing project contract.
+3. On **Funding sources** FastTab, select or create a funding source of the **Customer** type, and then select **Details**.
+
+    ![Funding sources.](media/emea-nor-ger-proj-contracts.jpg)
+
+4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract. Alternatively, you can enter project-specific values in the corresponding fields on the **E-invoice** FastTab.
+
+    ![Project references.](media/emea-nor-ger-proj-refs.jpg)
+
+5. To enter customer requisition and reference values directly on the project invoice proposal, follow these steps:
+
+    1. Go to **Project management and accounting** \> **Projects invoices** \> **Project invoice proposals**.
+    2. Create a new invoice proposal, or select an existing invoice proposal.
+    3. On the **Invoice proposal header** FastTab, in the **e-Invoice** section, enter values in **Customer requisition** and **Customer reference** fields.
+
+    ![Project proposal.](media/emea-nor-ger-proj-prop.jpg)
+
+
 
 ## Issue electronic invoices
 
