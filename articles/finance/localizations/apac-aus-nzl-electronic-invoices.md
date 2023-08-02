@@ -79,27 +79,20 @@ The primary address of the legal entity must be in Australia or New Zealand.
 
 ### Configure legal entity data
 
-#### Enter a legal entity's address
+Go to **Organization administration** \> **Organizations** \> **Legal entities**, select a legal entity, and configure the following parameters.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Addresses** FastTab, add a valid primary address for the legal entity.
-
-#### Enter a legal entity's tax registration number
-
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-2. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. 
+1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
+2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. 
 
 ### Configure customer data
 
-#### Enter a customer's address
+Go to **Accounts receivable** \> **Customers** \> **All customers**, select a customer, and configure the following parameters.
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, on the **Addresses** FastTab, add a valid address for the customer.
-
-#### Enter a customer's tax registration number
-
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-2. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer. 
+1. On the **Addresses** FastTab, add a valid address for the customer.
+2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
+3. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+    > [!NOTE]
+    > All available contact persons must already be defined for this customer.
 
 ### Units of measure configuration
 
