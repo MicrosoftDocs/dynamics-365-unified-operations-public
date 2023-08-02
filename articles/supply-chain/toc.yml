@@ -3521,7 +3521,7 @@
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
-        - name: Import inbound ASNs through the V3 data entity
+        - name: Import inbound ASNs through data entities
           href: warehousing/import-asn-data-entity.md
         - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
