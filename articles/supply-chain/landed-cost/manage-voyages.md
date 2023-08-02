@@ -40,6 +40,17 @@ The following table describes the buttons that are available directly on the Act
 | Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. |
 | Voyage costs | Open the **Voyage costs** page, where you can view and add voyage costs to all goods in the voyage. When voyage costs are manually added to the voyage, they are automatically added to the **Costs inquiry** page and apportioned to each good according to the method that is specified on the **Voyage costs** page. |
 
+### Buttons on the Voyage editor form
+
+The following table describes the buttons that are available on the **Voyage editor** form . 
+
+| Button | Description |
+|---|---|
+| Edit voyage header | Open a page that you can update voyage header detail informations. |
+| Setup | In the dropdown menu, you have the option to select the specific type of transaction or site data that you want to display in the form. |
+| Generate data | Generate transaction data in the **inbound orders** table.  |
+| Display dimensions | Select the inventory dimensions that should be shown. |
+
 ### Buttons on the Voyage tab
 
 The following table describes the buttons that are available on the **Voyage** tab of the Action Pane. This tab is available only when you're working in the list view of the **All voyages** page.
