@@ -83,7 +83,7 @@ This article provides an overview of the Store Commerce app capabilities.
 | Customer management | Create, edit, and manage customer accounts. Customer accounts can be managed in async mode to avoid real-time processing. | [Management](customer-mgmt-stores.md) | |
 | Customer attributes | The Customer attributes framework enables additional customer related data to be captured based on business requirements. | [Attributes](dev-itpro/customer-attributes.md) | |
 | Customer details page | A rich customer details page provides an omni-channel view of the customer's interactions across all channels. These interactions include purchases, wish lists, and loyalty points. | | |
-| Cloud-powered customer search | Search customers by name, telephone number, email address, loyalty card, address, and so on. | [Cloud powered search](pos-search-improvements.md#customer-search) | |
+| Cloud-powered customer search | Search customers by name, telephone number, email address, loyalty card, address, and so on. | [Cloud powered search](customer-search.md) | |
 | Loyalty and rewards | Customers can join loyalty programs, and earn and redeem loyalty points across channels. | [Loyalty](set-up-customer-loyalty-program.md) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5c2wW) |
 | Clienteling | Manage key customers by using a client book, and track activities and notes on the customer profile. Dynamics 365 Customer Insights integration lets store employees get cues about the next best action for each customer. | [Clienteling](clienteling-overview.md#activities-and-notes) | [Video](https://www.microsoft.com/en-us/videoplayer/embed/RE5bMSP) |
 
