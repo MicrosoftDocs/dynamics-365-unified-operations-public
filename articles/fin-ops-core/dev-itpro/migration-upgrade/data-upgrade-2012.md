@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in development environments
 description: This article explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest finance and operations development environment.
 author: laneswenka
-ms.date: 06/03/2023
+ms.date: 08/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ Ensure that you've completed the preupgrade checklist in AX 2012. For more infor
 Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
 
 > [!NOTE]
-> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If your database is a different collation, please follow the steps here: [Change the database collation for development environments](coll-dev-env.md). 
+> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If your database is a different collation, follow these steps: [Change the database collation for development environments](coll-dev-env.md). 
 
 ### Upload the backup to Azure Storage
 
