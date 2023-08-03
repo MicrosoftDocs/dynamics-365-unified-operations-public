@@ -52,15 +52,15 @@ To begin reading and writing resources on behalf of a user, enable the **Public 
 
 To request a bearer token for username and password, send a POST request via HTTP to Azure AD with a username and password payload.
 
-  ```HTTP
+```HTTP
   Content-Type: application/x-www-form-urlencoded
   Host: login.microsoftonline.com
   Accept: application/json
   POST https://login.microsoftonline.com/YOUR_TENANT.COM/oauth2/v2.0/token
   BODY:
   client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://lcsapi.lcs.dynamics.com//.default&username={USER_EMAIL_ADDRESS}&password={PASSWORD}&grant_type=password
-  ```
-    The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
+```
+The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
 
   ```JSON
   {

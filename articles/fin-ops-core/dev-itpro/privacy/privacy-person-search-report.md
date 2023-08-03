@@ -51,53 +51,45 @@ The Person template contains a list of the entities that will be used to downloa
 6. Click  **Load selected**.
 
 You can also download a template from LCS and import it for versions 7.1 or later. To do so, complete the following steps.
-1.	Log in to LCS.
-2.	Click the **Shared asset library** tile.
-3.	Select the **Data package asset** type.
-4.	Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
-5.	Open the **Data Management** workspace.
-6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
-7.	Click on the **Templates** tile.
-8.	Create a new template called **Person search**.
-9.	Click **Import template**.
-10.	Browse to the template and click **Upload**.
-11.	Click **OK** to import the template.
+1.    Log in to LCS.
+2.    Click the **Shared asset library** tile.
+3.    Select the **Data package asset** type.
+4.    Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
+5.    Open the **Data Management** workspace.
+6.    If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
+7.    Click on the **Templates** tile.
+8.    Create a new template called **Person search**.
+9.    Click **Import template**.
+10.    Browse to the template and click **Upload**.
+11.    Click **OK** to import the template.
 
 
 ## Generate a person search
 
 To use the Person search report, you must complete these tasks.
 
-1.	From the System administration menu, open the Person search list page, and create a new search.
+1. From the System administration menu, open the Person search list page, and create a new search.
 
-    ![Person search list page.](../media/gdpr-person-search-list-page.png)
+   ![Person search list page.](../media/privacy-person-search-list-page.png)
 
-2.  The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
+2. The search gives you three options: you can search by ID, by name, or by address. Add the type of search that you want.
 
-    ![Define search.](../media/gdpr-define-search.png)
+   ![Define search.](../media/privacy-define-search.png)
 
-3.  Run the search to show the results.
+3. Run the search to show the results.
+4. Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
 
-4.  Verify that the results are valid. Clear any selections that return information that you don't want to include on the report.
+   ![Review search results.](../media/privacy-review-search-results.png)
 
-    ![Review search results.](../media/gdpr-review-search-results.png)
+5. Select **Process report**, and then select the Person search template.
 
-5.  Select **Process report**, and then select the Person search template.
+    ![Process report.](../media/privacy-process-report.png)
 
-    ![Process report.](../media/gdpr-process-report.png)
-
-6.  Select **OK**. A data package is generated.
-
+6. Select **OK**. A data package is generated.
 7. When the package has been generated, export it to your selected data format. 
 
 > [!NOTE]
 > Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
-
-
-## Additional resources
-
-You can learn more about the GDPR on the [European Union's website](https://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) and in [General Data Protection Regulation overview](./gdpr-guide.md).
-
 
 ### Disclaimer
 (c)2019 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes. 

@@ -14,14 +14,14 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
-        - name: Finance 10.0.35 (July)
+        - name: Finance 10.0.36 (October)
+          href: get-started/whats-new-changed-10-0-36.md  
+        - name: Finance 10.0.35 (August)
           href: get-started/whats-new-changed-10-0-35.md
-        - name: Finance 10.0.34 (June)  
+        - name: Finance 10.0.34 (July)  
           href: get-started/whats-new-changed-10-0-34.md
         - name: Finance 10.0.33 (April)  
           href: get-started/whats-new-changed-changed-10-0-33.md
-        - name: Finance 10.0.32 (March) 
-          href: get-started/whats-new-changed-10-0-32.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -2306,6 +2306,8 @@
             href: localizations/emea-dnk-vat-declaration-denmark.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/emea-dnk-saf-t.md
+          - name: Accounting basis (Regnskab Basis) electronic report for Denmark
+            href: localizations/emea-dnk-accounting-basis.md
         - name: Egypt
           items: 
           - name: Egypt overview

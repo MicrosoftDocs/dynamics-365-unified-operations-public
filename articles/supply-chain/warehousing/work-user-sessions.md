@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management \> Periodic tasks \> Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
+The whole time that a [warehouse worker user](manage-warehouse-workers.md) is using the [Warehouse Management mobile app](install-configure-warehouse-management-app.md), the system maintains a *work user session* for that user. You can view the details of each active work user session by going to **Warehouse management \> Periodic tasks \> Work user sessions**. For each session, the **Work user sessions** page shows associated **User name**, **User ID**, **Login date and time**, and **Last user action date and time** values, together with a detailed history of XML communication messages and logged errors.
 
 > [!NOTE]
 > If no historical data appears on the **Work user sessions** page, a cleanup job, such as [Work user session log cleanup](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md#warehouse-management), might be running.
