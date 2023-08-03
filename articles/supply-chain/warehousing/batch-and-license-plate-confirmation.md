@@ -1,57 +1,46 @@
 ---
-# required metadata
-
-title: Batch, serial and license plate confirmation
-description: This article describes how to set up and apply batch, serial and license plate confirmation from a mobile device.
+title: Batch, serial, and license plate confirmation
+description: This article describes how to set up and apply batch, serial, and license plate confirmation from a mobile device.
 author: adesypri
-ms.date: 03/08/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSRFAutoConfirm
-audience: Application User
-# ms.devlang: 
+ms.author: adesypri
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 269384
+ms.search.form: WHSRFAutoConfirm
+ms.topic: how-to
+ms.date: 08/03/2023
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: bap-template
 ---
 
-# Batch, serial and license plate confirmation
+# Batch, serial, and license plate confirmation
 
 [!include [banner](../includes/banner.md)]
 
-Batch confirmation allows you to confirm that the correct batch is being picked from the mobile device. On the initial pick of work for *Batch-above\[location\]* items only, where batch-above indicates that batch is placed higher than location in the search hierarchy, you must verify that the batch that is picked matches the batch on the work line.
+Batch confirmation allows workers using a mobile device to confirm that the correct batch is being picked. For *Batch-above\[location\]* items (where batch-above indicates that batch is placed higher than location in the search hierarchy) the worker must verify that the batch that is picked matches the batch on the work line.
 
-Serial confirmation allows you to confirm that the correct serial number is being picked from the mobile device. On the initial pick of work for *Serial-above\[location\]* items only, where the serial-above indicates that serial is placed higher than location in the search hierarchy, you must verify that the serial that is picked matches the serial on the work line.
+Serial confirmation allows workers using a mobile device to confirm that the correct serial number is being picked. For *Serial-above\[location\]* items (where the serial-above indicates that serial is placed higher than location in the search hierarchy) the worker must verify that the serial that is picked matches the serial on the work line.
 
-License plate confirmation allows you to confirm that the correct license plate is being picked from the mobile device. When picking work from a stage location, you must verify that the license plate that is picked matches the license plate that is associated with the work. If the work is started by scanning a license plate, this confirmation step will be skipped.
+License plate confirmation allows workers using a mobile device to confirm that the correct license plate is being picked. When picking work from a stage location, the worker must verify that the license plate that is picked matches the license plate that is associated with the work. If the work is started by scanning a license plate, this confirmation step is skipped.
 
 ## Where it applies
 
 Confirmation applies in the following scenarios:
 
-- Batch confirmation applies to the initial picks of work for batch above-items.
-- Serial confirmation applies to the initial picks of work for serial above-items.
+- Batch confirmation applies to the initial pick work for *Batch-above\[location\]* items.
+- Serial confirmation applies to the initial pick work for *Serial-above\[location\]* items.
 - License plate confirmation applies to picks from stage locations.
 
 > [!IMPORTANT]
 > Replenishment is not supported for license plate confirmation. When executing replenishment work, no license plate confirmation step is created.
 
-## Set up batch, serial and license plate confirmation
+## Set up batch, serial, and license plate confirmation
 
-You can configure batch, serial and license plate confirmation from the mobile device menu items.
+You can configure batch, serial and license plate confirmation from the **Mobile device menu items** page.
 
-1. From the mobile device menu items, enter the work confirmation setup.  
-1. Select the option for either batch, serial or license plate confirmation. All options are available for work type picks that do not have automatic confirmation enabled.  
-
+1. Open the **Mobile device menu items** page.
+1. On the list pane, select the menu item that you want to set up.
+1. On the Action Pane, select **Work confirmation setup**.
+1. The **Work confirmation setup** page opens.
+1. Use the buttons on the Action Pane to add rows for each work type as required. For rows with a **Work type** of *Pick*, select the check box for each type of confirmation that should be required by the current menu item. You can only select these confirmation options for rows that don't have **Auto confirm** enabled.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
