@@ -17,16 +17,17 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-## <a name="feature-management"></a>Feature management
+## <a name="feature-management"></a>Turn on warehouse only mode
 
 To use the **Warehouse management only mode** capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
 
 - The feature that's named **(Preview) Warehouse management only mode** must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- With the feature enabled you can open the **Warehouse management > Setup > Warehouse management integration > Source systems** used to define the integration systems. To enable all the functionalities, you must at least insert one record into this entity.
 
-## <a name="source-systems"></a> Source systems
+## <a name="source-systems"></a>Configure you source systems
+
+With the feature enabled you can open the **Warehouse management > Setup > Warehouse management integration > Source systems** used to define the integration systems. To enable all the functionalities, you must at least insert one record into this entity.
 
 The **Warehouse management only mode** shipment order integration must be configured with information about the source systems going to provide inbound and outbound order messages. You can make this configuration on the **Warehouse management > Setup > Warehouse management integration > Source systems** page, and this configuration is required to make it possible to view the **Inbound shipment orders** and **Outbound shipment orders** and the related processes around the inbound shipment.
 
@@ -39,4 +40,6 @@ The **Source system** name must be identical with the name in the provided messa
 
 To enable automatic release to warehouse, you can use the **Warehouse management > Release to warehouse > Automatic release of outbound shipment orders** batch job process. For more information, see [Release to warehouse](release-to-warehouse-process.md).
 
-<!-- KFM: Add something about setting up sync of master/product data? Refer to data topic. -->
+## Set up master data and business events
+
+<!-- KFM: Add a short summary about setting up sync of master/product data. Refer to data topic. -->

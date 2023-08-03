@@ -17,6 +17,12 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+Businesses can take advantage of the core warehouse management (WMS) functionality offered by Dynamics 365 Supply Chain Management while continuing to leverage their existing investments in third-party ERP and order-management systems. Regardless of which ordering or ERP systems you have in place, you can now rapidly deploy our advanced WMS without having to set up or maintain areas of Supply Chain Management that you don't need. Then you'll be ready to benefit from advanced WMS features such as automation integration, carrier integration, the Warehouse Management mobile app, and more.
+
+The integration of Supply Chain Management WMS functionality with external ERP and ordering systems is made possible by new, lightweight source documents dedicated to inbound and outbound shipment  orders. These new documents focus exclusively on warehouse management and are therefore able to replace multiple types of previously used documents (such as sales orders, purchase orders, transfer orders, and more) from a pure warehouse-management perspective.
+
+## Deployment options
+
 *Warehouse management only mode* provides several deployment options to support the actual business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
 ![High level integrations](./media/high-level-integrations.png)
