@@ -149,12 +149,13 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
-#### Supported wallets
+#### Digital Wallet Support Status
+The following are popular digital wallets and status of current support for those wallets by the Dynamics 365 Commerce payment connectors for Adyen. **Card present** relates to POS transactions, and **Card not present** relates to Call Center and Online channel transactions. 
 
 | Scheme | Card present | Card not present |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
-| Google Pay | No | No |
+| Google Pay | Yes | Yes |
 | Apple Pay | Yes | Yes |
 | Klarna | No | No |
 | Affirm | No | No |
