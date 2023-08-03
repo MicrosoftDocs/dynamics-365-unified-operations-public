@@ -420,7 +420,7 @@
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Configure Azure Active Directory authentication for POS sign-in
             href: aad-pos-logon.md
-          - name: Product and customer search in the POS
+          - name: Product search in the POS
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
