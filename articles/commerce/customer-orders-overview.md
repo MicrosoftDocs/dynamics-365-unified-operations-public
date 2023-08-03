@@ -175,7 +175,7 @@ After an order is created, the items are picked up by the customer from a store 
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created in POS in either synchronous mode or asynchronous mode. Microsoft recommends that you use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. Microsoft recommends to **use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.**
 
 ### Enable customer orders to be created in asynchronous mode
 
