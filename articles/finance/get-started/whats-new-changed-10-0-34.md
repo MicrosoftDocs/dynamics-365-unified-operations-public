@@ -38,7 +38,7 @@ on the following schedule:
 
 - **Preview of release:** April 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** July 2023
+- **General availability of release (auto-update):** June 2023
 
 ## Features included in this release
 
