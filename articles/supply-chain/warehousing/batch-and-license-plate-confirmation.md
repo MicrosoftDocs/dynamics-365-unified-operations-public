@@ -37,7 +37,7 @@ Confirmation applies in the following scenarios:
 
 You can configure batch, serial and license plate confirmation from the **Mobile device menu items** page.
 
-1. Open the **Mobile device menu items** page.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the list pane, select the menu item that you want to set up.
 1. On the Action Pane, select **Work confirmation setup**.
 1. The **Work confirmation setup** page opens.
