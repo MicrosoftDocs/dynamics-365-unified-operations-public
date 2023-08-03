@@ -55,6 +55,14 @@ The following table lists the features that are included in this release. We mig
 | General ledger | Post foreign currency realized gains/losses for ledger settlements | This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances the usability of the ledger settlement process by reducing the effort that's required to mark vouchers. | Feature management |
 |General ledger|Financial tags for Sales order documents	|This feature adds Financial tags to the sales order, packing slip and customer invoice documents. |	Feature management|
 
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-finance).
+
+| Feature area | Feature name | More information |
+|--------------|--------------|------------------|
+| General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
+
 ## Features turned on by default in this release
 
 The following table lists the features that are turned on by default in version 10.0.36. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
