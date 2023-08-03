@@ -45,22 +45,22 @@ On the **Compatibility options** tab, the following parameters are available:
 - **Entity names in non uppercase**:
 
     - Select **No** to show entity names in uppercase letters.
-    - Select **Yes** to show entity names in non-uppercase letters.
+    - Select **Yes** to show entity names in lowercase letters.
 
 - **Attribute names in non uppercase (applies to simple entities only)**:
 
     - Select **No** to show attribute names in uppercase letters.
-    - Select **Yes** to show attribute names in non-uppercase letters. Create a new data project by adding the entity, or remove the entity and add it back to the data project. The exported file shows the attribute names in non-uppercase letters.
+    - Select **Yes** to show attribute names in lowercase letters. Create a new data project by adding the entity, or remove the entity and add it back to the data project. The exported file shows the attribute names in non-uppercase letters.
 
 - **Attribute names in non uppercase for initial mapping (applies to simple entities only)**:
 
     - Select **No** to show Attribute(column) names in uppercase letters. The initial mapping is generated for all entities when you select **Refresh entity list**.
-    - Select **Yes** to show Attribute(column) names in non-uppercase letters. Then refresh the entity list.
+    - Select **Yes** to show Attribute(column) names in lowercase letters. Then refresh the entity list.
 
-    To update attribute names for simple entities to non-uppercase letters, follow these steps.
+    To update attribute names for simple entities to lowercase letters, follow these steps.
 
     1. Set the **Attribute names in non uppercase for initial mapping (applies to simple entities only)** parameter to **Yes**.
-    2. Select **Refresh the entity list**. On the **Modify target mapping** page, the data is shown in non-uppercase letters.
+    2. Select **Refresh the entity list**. On the **Modify target mapping** page, the data is shown in lowercase letters.
     3. Create a new data project by adding an entity, or remove the entity and add it back to the data project. The exported file shows attribute names in lowercase letters.
 
 - **Data project and job compatibility**:
