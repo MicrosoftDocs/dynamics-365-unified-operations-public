@@ -3561,7 +3561,7 @@
             href: warehousing/over-picking-for-sales-and-transfer-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Batch and license plate confirmation
+          - name: Batch, serial, and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
