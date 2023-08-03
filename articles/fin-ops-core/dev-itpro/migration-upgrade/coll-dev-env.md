@@ -4,7 +4,7 @@
 title: Change the database collation for development environments
 description: This article describes how to change the database collation for development environments.
 author: ttreen 
-ms.date: 07/26/2023
+ms.date: 08/03/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: twheeloc
