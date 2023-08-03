@@ -899,7 +899,7 @@ For details about Retail upgrade and N-1 support, see [Overview of upgrade and N
 
 Batch confirmation and license plate confirmation has been added to this release of Finance and Operations. With this enhancement, using a mobile device, you can confirm that the correct batch or license plate is being picked.
 
-In previous versions, batch and license plate confirmation for items was not supported. For more information, see [Batch, serial, and license plate confirmation](../../../supply-chain/warehousing/batch-and-license-plate-confirmation.md).
+In previous versions, batch and license plate confirmation for items was not supported. For more information, see [Batch and license plate confirmation](../../../supply-chain/warehousing/batch-and-license-plate-confirmation.md).
 
 ### Consignment inventory
 

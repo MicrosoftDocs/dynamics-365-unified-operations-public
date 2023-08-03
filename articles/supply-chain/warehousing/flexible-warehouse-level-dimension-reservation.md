@@ -864,6 +864,6 @@ The following tables provide an overview that shows how the system handles order
 - [Batch numbers in Warehouse management](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Pick oldest batch on a mobile device](pick-oldest-batch.md)
-- [Batch, serial, and license plate confirmation](batch-and-license-plate-confirmation.md)
+- [Batch and license plate confirmation](batch-and-license-plate-confirmation.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
