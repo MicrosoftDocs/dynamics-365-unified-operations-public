@@ -37,7 +37,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Features included in this release
 
@@ -61,6 +61,7 @@ The following table lists the features that are turned on by default in version 
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
+| Enable consumption of "Original document is credit note" property from tax transaction in VAT declaration reporting | On by default | Tax |
 | Financial tags | On by default | General ledger |
 | (Italy) Fiscal journal page numbering improvements | Mandatory | General ledger |
 | Journal reversal no longer requires consecutive number sequence | Mandatory | General ledger |
