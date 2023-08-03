@@ -2306,6 +2306,8 @@
             href: localizations/emea-dnk-vat-declaration-denmark.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/emea-dnk-saf-t.md
+          - name: Accounting basis (Regnskab Basis) electronic report for Denmark
+            href: localizations/emea-dnk-accounting-basis.md
         - name: Egypt
           items: 
           - name: Egypt overview

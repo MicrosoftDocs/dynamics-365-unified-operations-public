@@ -46,6 +46,7 @@ This article provides links to documentation resources for Denmark.
 - [Danish Intrastat](emea-dnk-intrastat.md)
 - [VAT declaration](emea-dnk-vat-declaration-denmark.md)
 - [Standard Audit File for Tax (SAF-T) for Denmark](emea-dnk-saf-t.md)
+- [Accounting basis (Regnskab Basis) electronic report for Denmark](emea-dnk-accounting-basis.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
