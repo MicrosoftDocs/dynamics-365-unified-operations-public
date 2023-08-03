@@ -37,7 +37,7 @@ To change the database collation, you must reconstruct the whole database. Use t
 1. Use archiving software such as 7 Zip or WinZip to open the exported **\*.bacpac** file.
 1. Extract the **model.xml** file from the **\*.bacpac** archive, and copy it to the same folder.
 1. In your preferred editing tool, open the extracted **model.xml** file for editing.
-1. In the **model.xml** file, find the following property.
+1. In the **model.xml** file, find the following property (collation stated maybe different).
 
     ```XML
     <Property Value="Danish_Norwegian_CI_AS" Name="Collation"/>
