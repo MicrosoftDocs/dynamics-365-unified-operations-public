@@ -49,7 +49,7 @@ For the latest regulatory update plans, refer to the following table.
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](emea-che-vat-declaration-switzerland.md) - 2024 |
 | Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |
 | Poland | July 2023 | 10.0.36 | [VAT declaration - JPK-V7](emea-pol-vdek.md) - supplementary package based on ideas |
-| United Arab Emirates | June 2023 | 10.0.36 | [FTA VAT Audit File (AE)](uae-faf.md) redesign to "SAF-T General model mapping" and [SAF-T feature](./general-ledger/standard-audit-file.md) |
+| United Arab Emirates | June 2023 | 10.0.36 | [FTA VAT Audit File (AE)](uae-faf.md) redesign to "SAF-T General model mapping" and [SAF-T feature](../general-ledger/standard-audit-file.md) |
 | France | June 2023 | 10.0.36 | [VAT declaration](emea-fra-vat-declaration-preview-france.md) - 2023 |
 | Italy | June 2023 | 10.0.35HF, 10.0.36 | [Modello 770](emea-ita-modello770.md) - 2023 |
 | Denmark | May 2023 | 10.0.35 | [Standard Audit File for Tax (SAF-T) for Denmark](emea-dnk-saf-t.md) |
