@@ -41,6 +41,6 @@ You can configure batch, serial and license plate confirmation from the **Mobile
 1. On the list pane, select the menu item that you want to set up.
 1. On the Action Pane, select **Work confirmation setup**.
 1. The **Work confirmation setup** page opens.
-1. Use the buttons on the Action Pane to add rows for each work type as required. For rows with a **Work type** of *Pick*, select the check box for each type of confirmation that should be required by the current menu item. You can only select these confirmation options for rows that don't have **Auto confirm** enabled.  
+1. Use the buttons on the Action Pane to add rows for each work type as required. For rows with a **Work type** of *Pick*, select the check box for each type of confirmation that should be required by the current menu item. You can only select the batch, serial, and license plate confirmation options for rows that don't have **Auto confirm** enabled.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
