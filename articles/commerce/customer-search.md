@@ -4,7 +4,7 @@
 title: Customer search
 description: This article describes customer search capabilities in Microsoft Dynamics 365 Commerce.
 author: shajain
-ms.date: 08/02/2023
+ms.date: 08/03/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
