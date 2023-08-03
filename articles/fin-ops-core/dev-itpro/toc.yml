@@ -241,6 +241,8 @@ items:
         items:
         - name: Data import and export jobs overview
           href: data-entities/data-import-export-job.md
+        - name: Data import and export parameters 
+          href: data-entities/data-para.md
         - name: Synchronize date and time in import jobs
           href: data-entities/data-synchronize-date-and-time.md
         - name: Importing vouchers using the General journal entity
