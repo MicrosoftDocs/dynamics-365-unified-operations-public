@@ -37,7 +37,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Features included in this release
 
