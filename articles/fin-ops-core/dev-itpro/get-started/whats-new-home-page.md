@@ -24,8 +24,8 @@ To see what's new or changed in the Platform updates for finance and operations 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Platform updates for 10.0.36 | 7.0.7036 | October 2023    | [Platform updates for version 10.0.36 of finance and operations apps](whats-new-platform-updates-10-0-36.md)  |
-| Platform updates for 10.0.35 | 7.0.6972 | July 2023    | [Platform updates for version 10.0.35 of finance and operations apps](whats-new-platform-updates-10-0-35.md)  |
-| Platform updates for 10.0.34 | 7.0.6931 | June 2023    | [Platform updates for version 10.0.34 of finance and operations apps](whats-new-platform-updates-10-0-34.md)  |
+| Platform updates for 10.0.35 | 7.0.6972 | August 2023    | [Platform updates for version 10.0.35 of finance and operations apps](whats-new-platform-updates-10-0-35.md)  |
+| Platform updates for 10.0.34 | 7.0.6931 | July 2023    | [Platform updates for version 10.0.34 of finance and operations apps](whats-new-platform-updates-10-0-34.md)  |
 | Platform updates for 10.0.33 | 7.0.6861 | April 2023    | [Platform updates for version 10.0.33 of finance and operations apps](whats-new-platform-updates-10-0-33.md)  |
 | Platform updates for 10.0.32 | 7.0.6801 | March 2023    | [Platform updates for version 10.0.32 of finance and operations apps](whats-new-platform-updates-10-0-32.md)  |
 | Platform updates for 10.0.31 | 7.0.6651 | February 2023    | [Platform updates for version 10.0.31 of finance and operations apps](whats-new-platform-updates-10-0-31.md)  |
