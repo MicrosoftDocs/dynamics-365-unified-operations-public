@@ -25,7 +25,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 
 
 
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, make sure that the country/region context for the DEMF company is BEL (Belgium).
 
 
 ## Set up foreign trade parameters

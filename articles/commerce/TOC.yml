@@ -12,12 +12,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.36 (October 2023)
+          href: get-started/whats-new-commerce-10-0-36.md
         - name: Commerce 10.0.35 (July 2023)
           href: get-started/whats-new-commerce-10-0-35.md
         - name: Commerce 10.0.34 (June 2023)
           href: get-started/whats-new-commerce-10-0-34.md
-        - name: Commerce 10.0.33 (April 2023)
-          href: get-started/whats-new-commerce-10-0-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -36,7 +36,7 @@
         href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/commerce
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
-      - name: One Version service updates 
+      - name: One Version service updates
         items:
         - name: One Version service updates overview
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/commerce
@@ -75,7 +75,7 @@
         - name: Delivering ISV solutions using One Version
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?context=/dynamics365/context/commerce
         - name: Create and automate user acceptance tests
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/commerce   
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/commerce
       - name: Set up a Dynamics 365 Commerce sandbox environment
         items:
         - name: Provision a Dynamics 365 Commerce sandbox environment
@@ -123,7 +123,7 @@
         - name: Connect the Help system
           href: ../fin-ops-core/fin-ops/get-started/help-connect.md?context=/dynamics365/context/commerce
         - name: Custom help overview
-          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/commerce    
+          href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/commerce
         - name: View and export field descriptions
           href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?context=/dynamics365/context/commerce
         - name: Task recorder
@@ -133,7 +133,7 @@
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
       - name: Learning catalog
-        items: 
+        items:
         - name: Learning catalog home page
           href: ./get-started/learning-catalog.md
         - name: Business decision makers
@@ -184,7 +184,7 @@
           href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?context=/dynamics365/context/commerce
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/commerce
-        - name: Embed canvas apps from Power Apps 
+        - name: Embed canvas apps from Power Apps
           href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?context=/dynamics365/context/commerce
         - name: Embed third-party apps
           href: ../fin-ops-core/fin-ops/get-started/embed-website.md?context=/dynamics365/context/commerce
@@ -207,7 +207,7 @@
         - name: Onboard an implementation project
           href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/commerce
         - name: Environment planning
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/commerce   
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/commerce
         - name: Prepare for go-live
           href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/commerce
         - name: Go-live FAQ
@@ -215,17 +215,17 @@
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
         - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce    
+          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce
         - name: Geo-to-geo migrations
-          href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce      
+          href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce
         - name: Move licenses between agreement types
-          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce 
+          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce
         - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce 
+          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce
         - name: Move LCS implementation projects from on-premises to cloud
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/commerce 
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/commerce
         - name: Multiple LCS projects and production environments on one Azure AD tenant
-          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce  
+          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce
         - name: Implement finance and operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
         - name: Set up new environments, Azure DevOps, and branches for projects
@@ -320,10 +320,10 @@
           href: dev-itpro/overview-upgrade-n-minus1.md
         - name: Phased Rollout (N-1) installation, configuration, and cutover guide
           href: dev-itpro/n-1-installation-configuration.md
-    - name: Set up your channels 
+    - name: Set up your channels
       items:
       - name: Channels overview
-        href: channels-overview.md   
+        href: channels-overview.md
       - name: Channel prerequisites
         items:
         - name: Channel setup prerequisites
@@ -337,7 +337,7 @@
             - name: Plan your organizational hierarchy
               href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?context=/dynamics365/context/commerce
             - name: Create legal entities
-              href: channels-legal-entities.md   
+              href: channels-legal-entities.md
             - name: Set up organization hierarchies
               href: channels-org-hierarchies.md
             - name: Create an operating unit
@@ -346,14 +346,14 @@
               href: tasks/design-relationships-between-organizational-units.md
           - name: Warehouse setup
             href: channels-setup-warehouse.md
-          - name: Sales tax setup 
+          - name: Sales tax setup
             items:
             - name: Sales tax overview
               href: ../finance/general-ledger/indirect-taxes-overview.md?context=/dynamics365/context/commerce
             - name: Sales tax calculation methods
-              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?context=/dynamics365/context/commerce  
-            - name: Sales tax assignment and overrides   
-              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?context=/dynamics365/context/commerce  
+              href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?context=/dynamics365/context/commerce
+            - name: Sales tax assignment and overrides
+              href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?context=/dynamics365/context/commerce
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?context=/dynamics365/context/commerce
             - name: Calculation of tax exemption
@@ -362,9 +362,9 @@
               href: sales-tax-config.md
             - name: Hide tax breakup information in order summaries
               href: hide-taxes-breakup.md
-          - name: Set up an email notification profile 
+          - name: Set up an email notification profile
             href: email-notification-profiles.md
-          - name: Number sequences 
+          - name: Number sequences
             items:
             - name: Number sequences overview
               href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
@@ -372,29 +372,29 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
             - name: Set up number sequence using a wizard
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
-          - name: Set up a default customer and address book 
+          - name: Set up a default customer and address book
             href: default-customer.md
         - name: Retail channel prerequisites
           items:
-          - name: Info codes and info code groups   
-            href: info-codes-retail.md      
-          - name: Create a commerce functionality profile    
-            href: retail-functionality-profile.md   
-          - name: Create a new address book     
+          - name: Info codes and info code groups
+            href: info-codes-retail.md
+          - name: Create a commerce functionality profile
+            href: retail-functionality-profile.md
+          - name: Create a new address book
             href: new-address-book.md
           - name: Screen layout overview
             href: pos-screen-layouts.md
-        - name: Online channel prerequisites 
+        - name: Online channel prerequisites
           items:
           - name: Create an online functionality profile
-            href: online-functionality-profile.md 
-      - name: Set up a retail channel 
-        items: 
+            href: online-functionality-profile.md
+      - name: Set up a retail channel
+        items:
         - name: Set up a retail channel
-          href: channel-setup-retail.md  
-        - name: Configure retail workers 
+          href: channel-setup-retail.md
+        - name: Configure retail workers
           href: tasks/worker.md
-        - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce 
+        - name: Modern Point of Sale (MPOS), Cloud POS, and Store Commerce
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
@@ -474,7 +474,7 @@
               href: pos-image.md
             - name: Open URL in POS
               href: open-url-in-pos.md
-          - name: Payments 
+          - name: Payments
             items:
             - name: Gift cards
               items:
@@ -498,27 +498,27 @@
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: set-up-activation-accounts-validate-devices-hq.md
-          - name: Create financial dimensions for POS registers and configure dimension values on registers 
+          - name: Create financial dimensions for POS registers and configure dimension values on registers
             href: tasks/create-financial-dimensions-pos.md
-          - name: Create POS permissions group 
+          - name: Create POS permissions group
             href: tasks/create-pos-permission-groups.md
-          - name: Create POS visual profiles 
+          - name: Create POS visual profiles
             href: tasks/create-pos-visual-profile-2016-02.md
-        - name: Configure and install Retail hardware station 
+        - name: Configure and install Retail hardware station
           href: retail-hardware-station-configuration-installation.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
           - name: Send email receipts from Store Commerce
-            href: email-receipts.md 
+            href: email-receipts.md
           - name: Reset receipt numbers
             href: reset_receipt_number_sequence.md
           - name: Embed processor credit card receipts in customer receipts
             href: dev-itpro/embed-cc-receipt.md
-        - name: Create functionality profiles for sales representatives 
+        - name: Create functionality profiles for sales representatives
           href: tasks/configure-functionality-profile-sales-representative.md
-        - name: Create financial dimensions for retail channels and configure values on stores 
+        - name: Create financial dimensions for retail channels and configure values on stores
           href: tasks/create-financial-dimensions-retail-channels.md
         - name: Set up number sequences for retail statements
           href: retail-statements-number-sequences.md
@@ -532,49 +532,49 @@
         items:
         - name: Call center sales functionality
           href: call-center-functionality.md
-        - name: Set up a call center channel  
+        - name: Set up a call center channel
           href: channel-setup-callcenter.md
-        - name: Call center catalogs 
+        - name: Call center catalogs
           href: call-center-catalogs.md
         - name: Set up call center order processing options
           href: set-up-order-processing-options.md
         - name: Configure call center delivery modes and charges
           href: configure-call-center-delivery.md
-        - name: Set up and work with fraud alerts 
+        - name: Set up and work with fraud alerts
           href: set-up-fraud-alerts.md
-      - name: Additional channel configuration 
+      - name: Additional channel configuration
         items:
-        - name: Add a channel to an organization hierarchy  
+        - name: Add a channel to an organization hierarchy
           href: channel-add-to-org-hierarchy.md
-        - name: Advanced auto charges 
+        - name: Advanced auto charges
           items:
-          - name: Configure and use advanced auto charges 
+          - name: Configure and use advanced auto charges
             href: omni-auto-charges.md
           - name: Enable and configure auto charges by channel
             href: auto-charges-by-channel.md
           - name: Prorate header charges to matching sales lines
-            href: pro-rate-charges-matching-lines.md 
+            href: pro-rate-charges-matching-lines.md
         - name: Manage continuity programs
           items:
-          - name: Set up continuity programs for call centers 
+          - name: Set up continuity programs for call centers
             href: set-up-continuity-program.md
           - name: Define continuity schedules
             href: tasks/define-continuity-schedules.md
-        - name: Retail store management 
+        - name: Retail store management
           items:
           - name: Create and change store hours
             href: dev-itpro/store-hours.md
           - name: Commerce Scale Unit
             href: dev-itpro/retail-store-system-begin.md
-        - name: Call center management 
+        - name: Call center management
           items:
           - name: Configure and work with call center order holds
             href: work-with-order-holds.md
         - name: Payments
           items:
-          - name: Payment methods 
+          - name: Payment methods
             href: payment-methods.md
-          - name: Payment methods in call centers 
+          - name: Payment methods in call centers
             href: work-with-payments.md
           - name: Refund payment processing in call centers
             href: call-center-refund-payments.md
@@ -589,7 +589,7 @@
           - name: Configure credit card processing
             href: tasks/configure-credit-card-processing.md
           - name: Skip "change due" dialog box in POS
-            href: dev-itpro/skip-change-due.md 
+            href: dev-itpro/skip-change-due.md
           - name: Dynamics 365 Payment Connector for Adyen
             items:
             - name: Dynamics 365 Payment Connector for Adyen overview
@@ -612,13 +612,13 @@
             href: pos-multi-hws.md
           - name: Seamless offline switch for gift card and credit memo operations
             href: dev-itpro/seamless-offline-improvements.md
-          - name: Set up pay invoice scenarios 
+          - name: Set up pay invoice scenarios
             href: payinvoice.md
           - name: Prepayments in Dynamics 365 Commerce
             href: dev-itpro/prepayments-commerce.md
-          - name: Duplicate payments prevention 
+          - name: Duplicate payments prevention
             href: duplicate-payment-protection.md
-          - name: Omni-channel payments overview 
+          - name: Omni-channel payments overview
             href: omni-channel-payments.md
           - name: Multiple available payment methods for in-store pickup
             href: dev-itpro/multiple-payments-pickup.md
@@ -636,7 +636,7 @@
             href: dev-itpro/enhanced-sca.md
           - name: Configure express payments for PayPal
             href: dev-itpro/express-payments-paypal.md
-          - name: Payments FAQ 
+          - name: Payments FAQ
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
           items:
@@ -650,47 +650,47 @@
           href: dev-itpro/pickup-timeslots.md
         - name: Configure product dimension values to appear as swatches
           href: dev-itpro/dimensions-swatch.md
-    - name: Merchandising your products and services  
+    - name: Merchandising your products and services
       items:
-      - name: Categories, products, and assortments 
+      - name: Categories, products, and assortments
         items:
-        - name: Product information overview 
+        - name: Product information overview
           href: ../supply-chain/pim/product-information.md?context=/dynamics365/context/commerce
-        - name: Set up retail products 
+        - name: Set up retail products
           href: set-up-retail-products.md
-        - name: Product hierarchy 
+        - name: Product hierarchy
           items:
-          - name: Commerce hierarchies 
+          - name: Commerce hierarchies
             href: retail-hierarchies.md
-          - name: Create a new product hierarchy 
+          - name: Create a new product hierarchy
             href: create-product-hierarchy.md
-          - name: Manage product categories and products 
+          - name: Manage product categories and products
             href: category-management-product-creation.md
-          - name: Change the sort order for merchandising entities 
+          - name: Change the sort order for merchandising entities
             href: custom-order-categories-nav-retail-prod-hierarchy.md
-        - name: Product dimensions 
+        - name: Product dimensions
           items:
-          - name: Product dimensions 
+          - name: Product dimensions
             href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
-          - name: Create a variant group 
+          - name: Create a variant group
             href: create-variant-group.md
         - name: Create a new product
           items:
           - name: Create a new product in Commerce
             href: create-new-product-commerce.md
-          - name: Manage product categories and products 
+          - name: Manage product categories and products
             href: category-management-product-creation.md
-        - name: Product attributes 
+        - name: Product attributes
           items:
-          - name: Attributes and attribute groups 
+          - name: Attributes and attribute groups
             href: attribute-attributegroups-lifecycle.md
-          - name: Define channel attributes 
+          - name: Define channel attributes
             href: tasks/define-channel-attributes.md
-        - name: Channel hierarchies 
+        - name: Channel hierarchies
           items:
           - name: Create a channel navigation hierarchy
             href: create-channel-hierarchy.md
-          - name: Configure channel to use a channel navigation hierarchy 
+          - name: Configure channel to use a channel navigation hierarchy
             href: configure-channel-hierarchy.md
           - name: Channel merchandising configuration validator
             href: channel-merch-config-validator.md
@@ -698,15 +698,15 @@
           items:
           - name: Assortment management
             href: assortments.md
-          - name: Set up assortments 
+          - name: Set up assortments
             href: set-up-assortments.md
           - name: Manage assortments
             href: tasks/manage-assortments-2016-11.md
-        - name: Bar codes 
+        - name: Bar codes
           items:
-          - name: Set up bar codes 
+          - name: Set up bar codes
             href: set-up-bar-codes.md
-          - name: Set up bar code masks 
+          - name: Set up bar code masks
             href: set-up-bar-code-masks.md
         - name: Warranties
           items:
@@ -724,33 +724,35 @@
             href: copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: import-export-manifest.md
-      - name: Pricing and discounts 
+        - name: Consume Commerce runtime (CRT) Product service requests
+          href: crt-product-requests.md
+      - name: Pricing and discounts
         items:
         - name: Discounts
-          href: retail-discounts-overview.md 
-        - name: Sales price management 
+          href: retail-discounts-overview.md
+        - name: Sales price management
           href: price-management.md
-        - name: Price adjustments and discounts 
+        - name: Price adjustments and discounts
           href: price-adjustments-discounts.md
-        - name: Apply multiple discounts to a product 
+        - name: Apply multiple discounts to a product
           href: apply-multiple-retail-discounts.md
-        - name: Determine the optimal combination of overlapping discounts 
+        - name: Determine the optimal combination of overlapping discounts
           href: optimal-combination-overlapping-discounts.md
-        - name: Define channel-specific discounts 
+        - name: Define channel-specific discounts
           href: define-channel-specific-discounts.md
-        - name: Tender-based discounts 
+        - name: Tender-based discounts
           href: tender_based_discounts.md
-        - name: Shipping discount 
+        - name: Shipping discount
           href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
-        - name: Coupons  
+        - name: Coupons
           href: coupons.md
         - name: Pricing settings
           href: price-settings.md
-        - name: Price reports 
+        - name: Price reports
           href: price-report.md
-        - name: Create channel-specific trade agreements 
+        - name: Create channel-specific trade agreements
           href: tasks/base-price-trade-agreements.md
         - name: Create trade agreements using category pricing rules
           href: tasks/category-pricing-rules-trade-agreements.md
@@ -762,12 +764,12 @@
           href: pricing-apis.md
         - name: Price change tracking
           href: price-change-tracking.md
-      - name: Recommendations 
+      - name: Recommendations
         items:
-        - name: Product recommendations overview 
-          href: product-recommendations.md 
-        - name: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment 
-          href: enable-ADLS-environment.md 
+        - name: Product recommendations overview
+          href: product-recommendations.md
+        - name: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
+          href: enable-ADLS-environment.md
         - name: Enable product recommendations
           href: enable-product-recommendations.md
         - name: Set up an alternate dataflow
@@ -776,7 +778,7 @@
           items:
           - name: Enable personalized recommendations
             href: personalized-recommendations.md
-          - name: Opt out of personalized recommendations 
+          - name: Opt out of personalized recommendations
             href: opt-out-personalization.md
         - name: Enable "shop similar looks" recommendations
           href: shop-similar-looks.md
@@ -788,23 +790,23 @@
             href: product.md
           - name: Add recommendations to the transaction screen
             href: add-recommendations-control-pos-screen.md
-        - name: Adjust AI-ML-based product recommendation results 
+        - name: Adjust AI-ML-based product recommendation results
           href: modify-product-recommendation-results.md
-        - name: Manually create curated product recommendations  
+        - name: Manually create curated product recommendations
           href: create-editorial-recommendation-lists.md
-        - name: Create recommendations using demo data 
+        - name: Create recommendations using demo data
           href: product-recommendations-demo-data.md
         - name: Product recommendations FAQ
           href: faq-recommendations.md
-      - name: Ratings and reviews 
+      - name: Ratings and reviews
         items:
         - name: Ratings and reviews overview
-          href: ratings-reviews-overview.md 
-        - name: Opt in to use ratings and reviews  
+          href: ratings-reviews-overview.md
+        - name: Opt in to use ratings and reviews
           href: opt-in-ratings-reviews.md
-        - name: Manage ratings and reviews 
+        - name: Manage ratings and reviews
           href: manage-reviews.md
-        - name: Configure ratings and reviews 
+        - name: Configure ratings and reviews
           href: configure-ratings-reviews.md
         - name: Sync product ratings
           href: sync-product-ratings.md
@@ -886,21 +888,21 @@
           href: order-lookup-guest.md
         - name: Improve the performance of Commerce order search
           href: improve-order-search.md
-      - name: Sales orders   
+      - name: Sales orders
         items:
-        - name: Create call center orders 
+        - name: Create call center orders
           href: tasks/create-call-center-orders.md
         - name: Customize transactional emails by mode of delivery
           href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
-      - name: Distributed order management   
+      - name: Distributed order management
         items:
         - name: DOM overview
           href: dom.md
         - name: Cost configuration
           href: cost.md
-      - name: Order fulfillment and processing 
+      - name: Order fulfillment and processing
         items:
         - name: Store order fulfillment
           href: order-fulfillment-overview.md
@@ -929,10 +931,10 @@
         - name: Restrict payment methods for returns without a receipt
           href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
-          href: multireturn.md 
+          href: multireturn.md
         - name: Create and update a returns and refunds policy for a channel
           href: refund_policy_returns.md
-    - name: Manage your customers  
+    - name: Manage your customers
       items:
       - name: Customer management in stores
         href: customer-mgmt-stores.md
@@ -947,17 +949,19 @@
       - name: Clienteling
         items:
         - name: Clienteling overview
-          href: clienteling-overview.md 
-      - name: Loyalty 
+          href: clienteling-overview.md
+      - name: Loyalty
         items:
-        - name: Loyalty overview  
+        - name: Loyalty overview
           href: set-up-customer-loyalty-program.md
-        - name: Define loyalty programs   
+        - name: Define loyalty programs
           href: tasks/define-loyalty-programs.md
         - name: Define loyalty reward points   
           href: tasks/define-loyalty-reward-points.md 
         - name: Define loyalty schemes   
-          href: tasks/define-loyalty-schemes.md 
+          href: tasks/define-loyalty-schemes.md
+        - name: Define loyalty cards   
+          href: tasks/define-loyalty-cards.md 
         - name: Process adjustments of loyalty reward points   
           href: tasks/process-loyalty-reward-point-adjustments.md
     - name: Manage your financials
@@ -966,7 +970,7 @@
         href: retail-statements.md
       - name: Commerce posting parameters
         href: commerce-posting-parameters.md
-      - name: Validate store transactions for statement calculation 
+      - name: Validate store transactions for statement calculation
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
@@ -982,27 +986,27 @@
           href: create-excel-edit.md
         - name: Add fields to an Excel workbook to edit retail transactions
           href: add-fields-excel.md
-      - name: Trickle feed-based order creation for retail store transactions 
+      - name: Trickle feed-based order creation for retail store transactions
         href: trickle-feed.md
-      - name: Create, calculate, and post statements for a retail store 
+      - name: Create, calculate, and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Financial reconciliation in retail stores
         href: fin-recon.md
-      - name: Improvements to statement posting functionality 
+      - name: Improvements to statement posting functionality
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
         href: batch.md
-      - name: Configure payment method settings that affect retail statements 
+      - name: Configure payment method settings that affect retail statements
         href: tasks/payment-configurations-retail-statements.md
-      - name: Configure and run a job to calculate statements 
+      - name: Configure and run a job to calculate statements
         href: tasks/run-job-calculate-statements.md
-      - name: Configure and run a job to post statements 
+      - name: Configure and run a job to post statements
         href: tasks/run-job-post-statements.md
       - name: Configure store settings that affect retail statements
         href: tasks/store-configurations-retail-statements.md
-      - name: Posting of online sales and payments 
+      - name: Posting of online sales and payments
         href: tasks/posting-online-sales-payments.md
-    - name: Manage worker tasks 
+    - name: Manage worker tasks
       items:
       - name: Task management overview
         href: task-mgmt-overview.md
@@ -1030,7 +1034,7 @@
           href: map-stores-existing-teams.md
         - name: Commerce and Teams integration FAQ
           href: teams-integration-faq.md
-    - name: Manage your e-commerce site 
+    - name: Manage your e-commerce site
       items:
       - name: E-commerce site overview
         href: online-store-overview.md
@@ -1041,7 +1045,7 @@
         - name: Configure your domain name
           href: configure-your-domain-name.md
         - name: Deploy a new e-commerce tenant
-          href: deploy-ecommerce-site.md          
+          href: deploy-ecommerce-site.md
         - name: Create an e-commerce site
           href: create-ecommerce-site.md
         - name: Copy an e-commerce site
@@ -1122,7 +1126,7 @@
           href: dimension-settings.md
         - name: Enable and activate e-commerce maintenance mode
           href: enable-maintenance-mode.md
-      - name: Manage your site content 
+      - name: Manage your site content
         items:
         - name: Ways to add content
           href: add-manage-content.md
@@ -1139,7 +1143,7 @@
         - name: Brand your site and add store details
           items:
           - name: Add a logo
-            href: add-logo.md 
+            href: add-logo.md
           - name: Select a site theme
             href: select-site-theme.md
           - name: Work with CSS override files
@@ -1182,7 +1186,7 @@
             href: manage-seo-metadata.md
           - name: Save, preview, and publish a page
             href: save-preview-publish-page.md
-          - name: Enrich a product page
+          - name: Customize product detail pages
             href: enrich-product-page.md
           - name: Enrich a category landing page
             href: enrich-category-page.md
@@ -1217,7 +1221,7 @@
         - name: Upload files other than images and videos
           href: dam-upload-files.md
         - name: Crop images
-          href: dam-crop-images.md 
+          href: dam-crop-images.md
         - name: Customize image focal points
           href: dam-custom-focal-point.md
         - name: Upload and serve static files
@@ -1235,7 +1239,7 @@
         - name: Replace user IDs associated with tracked content changes
           href: replace-IDs-tracked-changes.md
       - name: Module library
-        items: 
+        items:
         - name: Module library overview
           href: starter-kit-overview.md
         - name: Container modules
@@ -1250,14 +1254,14 @@
             href: iframe-module.md
         - name: Marketing modules
           items:
-          - name: Promo banner module 
+          - name: Promo banner module
             href: add-alert.md
           - name: Carousel module
             href: add-carousel.md
           - name: Text block module
             href: add-content-rich-block.md
           - name: Content block module
-            href: add-hero-module.md 
+            href: add-hero-module.md
           - name: Video player module
             href: add-video-player.md
           - name: Active image module
@@ -1317,7 +1321,7 @@
           - name: Check-in for pickup module
             href: check-in-pickup-module.md
           - name: Order details module
-            href: order-confirmation-module.md 
+            href: order-confirmation-module.md
           - name: Gift card module
             href: add-giftcard.md
           - name: Order lookup module
@@ -1411,7 +1415,7 @@
         - name: Promote a variation and complete an experiment
           href: experimentation-review-complete.md
         - name: Review the status of an experiment
-          href: experimentation-status.md       
+          href: experimentation-status.md
       - name: Error handling
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
@@ -1420,9 +1424,9 @@
         items:
         - name: Integrate Customer Voice into e-commerce site pages
           href: customer-voice-integration.md
-    - name: Fraud protection 
+    - name: Fraud protection
       items:
-      - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce 
+      - name: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
         href: dev-itpro/DFP.md
     - name: B2B e-commerce
       items:
@@ -1433,7 +1437,7 @@
       - name: Manage business partner users on B2B e-commerce sites
         href: b2b/manage-b2b-users.md
       - name: Manage business partner users on B2B e-commerce sites using Dynamics 365 Sales
-        href: b2b/prospect-management-sales.md        
+        href: b2b/prospect-management-sales.md
       - name: Place B2B website orders quickly
         href: b2b/quick-bulk-orders.md
       - name: Invoice management for B2B e-commerce websites
@@ -1503,13 +1507,13 @@
         - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
           href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/commerce
         - name: Download ER configurations to Commerce
-          items: 
+          items:
           - name: Download configurations from RCS
             href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/commerce
           - name: Import configurations from RCS
             href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
           - name: Global repository (GR)
-            items: 
+            items:
             - name: Import configurations from GR
               href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/commerce
             - name: Import updated versions of ER configurations
@@ -1518,7 +1522,7 @@
               href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
             - name: Upload configurations to GR
               href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
-            - name: Share configurations in GR  
+            - name: Share configurations in GR
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
             - name: Discontinue configurations in the RCS Global repository
               href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
@@ -1535,28 +1539,28 @@
         - name: Set up and deploy Commerce localization for Brazil
           href: localizations/latam-bra-deployment.md
         - name: NFC-e fiscal document functionality in Commerce POS for Brazil
-          href: localizations/latam-bra-nfce.md 
+          href: localizations/latam-bra-nfce.md
         - name: Manage customer information in POS for Brazil
-          href: localizations/latam-bra-customer-information.md     
+          href: localizations/latam-bra-customer-information.md
         - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
-          href: localizations/latam-bra-nfce-cancel-return.md 
+          href: localizations/latam-bra-nfce-cancel-return.md
         - name: Postponed registration of NFC-e documents issued in offline contingency mode
-          href: localizations/latam-bra-nfce-contingency-mode.md          
-        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters 
+          href: localizations/latam-bra-nfce-contingency-mode.md
+        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters
           href: localizations/latam-bra-retail-statements.md
-        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil 
-          href: localizations/latam-bra-cf-e-sat.md       
-        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil 
-          href: localizations/latam-bra-adyen.md          
+        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
+          href: localizations/latam-bra-cf-e-sat.md
+        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
+          href: localizations/latam-bra-adyen.md
       - name: Eastern Europe
-        items: 
+        items:
         - name: Common
           items:
           - name: Advance invoices for Commerce for Eastern Europe
             href: localizations/emea-eeu-advance-invoices-for-retail.md
           - name: Petty cash management for Commerce for Eastern Europe
             href: localizations/emea-eeu-petty-cash-for-retail.md
-          - name: Customer invoices and return sales orders in Eastern European countries
+          - name: Customer invoices and return sales orders in Eastern European countries/regions 
             href: localizations/emea-eeu-retail-invoices.md
           - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
             href: localizations/emea-eeu-deployment.md
@@ -1609,7 +1613,7 @@
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
-          href: localizations/emea-ita-customer-information.md 
+          href: localizations/emea-ita-customer-information.md
         - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
           href: localizations/emea-ita-fpi-sample-sdk.md
       - name: Mexico
@@ -1633,13 +1637,13 @@
         - name: Set up Commerce localization for Russia
           href: localizations/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
-          href: localizations/rus-commerce-prepayments.md          
+          href: localizations/rus-commerce-prepayments.md
         - name: Simplified customer address format in Commerce POS for Russia
           href: localizations/rus-simplified-address.md
         - name: Fiscal printer integration sample for Russia
           href: localizations/rus-fpi-sample.md
         - name: Customer information management for Russia
-          href: localizations/rus-customer-information.md 
+          href: localizations/rus-customer-information.md
       - name: Saudi Arabia
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
@@ -1686,7 +1690,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?context=/dynamics365/context/commerce
         - name: Power BI Embedded integration
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?context=/dynamics365/context/commerce
-        - name: Customize embedded reports in Analytical workspaces 
+        - name: Customize embedded reports in Analytical workspaces
           href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?context=/dynamics365/context/commerce
       - name: Document reporting and printing
         items:
@@ -1709,11 +1713,11 @@
           - name: Document generation, publishing, and printing in on-premises deployments
             href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?context=/dynamics365/context/commerce
           - name: Run the Document Routing Agent as a Windows service
-            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?context=/dynamics365/context/commerce
         - name: Available SQL Server Reporting Services reports
           href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?context=/dynamics365/context/commerce
         - name: Install report design templates
-          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/commerce  
+          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?context=/dynamics365/context/commerce
       - name: Power user management tools
         items:
         - name: Power BI integration with Entity store
@@ -1735,7 +1739,7 @@
         - name: Add financial dimensions to aggregate measurements
           href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?context=/dynamics365/context/commerce
         - name: Create analytical reports using Power BI Desktop
-          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/commerce 
+          href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?context=/dynamics365/context/commerce
         - name: Add analytics to workspaces by using Power BI Embedded
           href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?context=/dynamics365/context/commerce
         - name: Help secure analytical workspaces and reports using Power BI Embedded
@@ -1765,18 +1769,18 @@
         - name: Define the dependency of ER configurations on other components
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?context=/dynamics365/context/commerce
         - name: Prepare components of the Electronic reporting solution
-          items: 
+          items:
           - name: Design domain specific data model
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?context=/dynamics365/context/commerce
           - name: Prepare application specific metadata
-            items: 
+            items:
             - name: Prepare application metadata in ER to be used in RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?context=/dynamics365/context/commerce
             - name: Access application metadata in RCS by using ER configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?context=/dynamics365/context/commerce
             - name: Access application metadata in RCS by using connected applications
               href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?context=/dynamics365/context/commerce
-            - name: Define model mappings and select data sources 
+            - name: Define model mappings and select data sources
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?context=/dynamics365/context/commerce
             - name: Map data model to selected data sources
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?context=/dynamics365/context/commerce
@@ -1791,33 +1795,33 @@
             - name: Generate electronic documents for payments using a format configuration
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?context=/dynamics365/context/commerce
           - name: Upgrade your format by adopting a new base version of that format
-            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/commerce  
+            href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?context=/dynamics365/context/commerce
       - name: Formula designers in ER
         items:
         - name: Formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/commerce  
+          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?context=/dynamics365/context/commerce
         - name: Advanced formula designer
-          href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/commerce  
+          href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?context=/dynamics365/context/commerce
       - name: Formula language and functions
         items:
         - name: Formula language
-          href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/commerce  
+          href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?context=/dynamics365/context/commerce
         - name: Supported data types for ER formulas
           items:
-          - name: Primitive data types 
+          - name: Primitive data types
             href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?context=/dynamics365/context/commerce
           - name: Composite data types
             href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?context=/dynamics365/context/commerce
         - name: Functions
           items:
-          - name: Container 
-            items: 
+          - name: Container
+            items:
             - name: Container functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?context=/dynamics365/context/commerce
             - name: Base64StringToContainer
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?context=/dynamics365/context/commerce
-          - name: Date and time 
-            items: 
+          - name: Date and time
+            items:
             - name: Date and time functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?context=/dynamics365/context/commerce
             - name: AddDays
@@ -1852,8 +1856,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?context=/dynamics365/context/commerce
             - name: WeekNum
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?context=/dynamics365/context/commerce
-          - name: List 
-            items: 
+          - name: List
+            items:
             - name: List functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?context=/dynamics365/context/commerce
             - name: AllItems
@@ -1903,7 +1907,7 @@
             - name: Where
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-where.md?context=/dynamics365/context/commerce
           - name: Logical
-            items: 
+            items:
             - name: Logical functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-logical.md?context=/dynamics365/context/commerce
             - name: And
@@ -1927,7 +1931,7 @@
             - name: ValueInLarge
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?context=/dynamics365/context/commerce
           - name: Mathematical
-            items: 
+            items:
             - name: Mathematical functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-mathematical.md?context=/dynamics365/context/commerce
             - name: Abs
@@ -1941,7 +1945,7 @@
             - name: RoundUp
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-mathematical-roundup.md?context=/dynamics365/context/commerce
           - name: Records
-            items: 
+            items:
             - name: Record functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-record.md?context=/dynamics365/context/commerce
             - name: EmptyRecord
@@ -1949,7 +1953,7 @@
             - name: NullContainer
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-record-nullcontainer.md?context=/dynamics365/context/commerce
           - name: Text
-            items: 
+            items:
             - name: Text functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-text.md?context=/dynamics365/context/commerce
             - name: Char
@@ -1995,7 +1999,7 @@
             - name: Upper
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-upper.md?context=/dynamics365/context/commerce
           - name: Data collection
-            items: 
+            items:
             - name: Data collection functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-data-collection.md?context=/dynamics365/context/commerce
             - name: CollectedList
@@ -2011,7 +2015,7 @@
             - name: SumIFs
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-datacollection-sumifs.md?context=/dynamics365/context/commerce
           - name: Other
-            items: 
+            items:
             - name: Other (business domain–specific) functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-other.md?context=/dynamics365/context/commerce
             - name: CH_Bank_Mod_10
@@ -2041,7 +2045,7 @@
             - name: TableName2ID
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-tablename2id.md?context=/dynamics365/context/commerce
           - name: Type conversion
-            items: 
+            items:
             - name: Type conversion functions
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-type-conversion.md?context=/dynamics365/context/commerce
             - name: "Type: Int64Value"
@@ -2079,15 +2083,15 @@
             - name: "Text: Text"
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?context=/dynamics365/context/commerce
       - name: Design ER formats to generate outbound documents in various formats
-        items: 
+        items:
         - name: Design a configuration for generating reports in OPENXML format
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?context=/dynamics365/context/commerce
         - name: Design configurations to generate outgoing documents in Excel format
           items:
           - name: Design a configuration for generating documents in Excel format
-            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?context=/dynamics365/context/commerce
           - name: Modify ER formats by reapplying Excel templates
-            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/commerce            
+            href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?context=/dynamics365/context/commerce
           - name: Dynamically add columns to Excel reports as horizontally expandable ranges
             items:
             - name: Design formats to dynamically add columns to Excel reports
@@ -2095,7 +2099,7 @@
             - name: Run formats to dynamically add columns to Excel reports
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?context=/dynamics365/context/commerce
           - name: Design an ER format to paginate generated documents in Excel
-            href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?context=/dynamics365/context/commerce
           - name: Design an ER format to keep rows together on the same Excel page
             href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?context=/dynamics365/context/commerce
         - name: Design configurations to generate reports in Word format
@@ -2113,7 +2117,7 @@
           - name: Embed images and shapes in documents that you generate
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?context=/dynamics365/context/commerce
           - name: Example of embedding images and shapes
-            items: 
+            items:
             - name: Design configurations to generate reports in Office formats that have embedded images
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?context=/dynamics365/context/commerce
             - name: Review configurations to generate reports in Office formats that have embedded images
@@ -2141,7 +2145,7 @@
         - name: Generate documents that have application data
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?context=/dynamics365/context/commerce
       - name: Import data from incoming files by using ER solutions
-        items: 
+        items:
         - name: Parse incoming documents in different formats
           href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?context=/dynamics365/context/commerce
         - name: Configure data import from manually selected files
@@ -2174,16 +2178,16 @@
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?context=/dynamics365/context/commerce
         - name: Regulatory configuration service (RCS)
           items:
-          - name: Regulatory configuration service (RCS) overview 
+          - name: Regulatory configuration service (RCS) overview
             href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/commerce
           - name: Download ER configurations to Commerce
-            items: 
+            items:
             - name: Download configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?context=/dynamics365/context/commerce
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?context=/dynamics365/context/commerce
           - name: Global repository (GR)
-            items: 
+            items:
             - name: Import configurations from GR
               href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?context=/dynamics365/context/commerce
             - name: Import updated versions of ER configurations
@@ -2192,12 +2196,12 @@
               href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
             - name: Upload configurations to GR
               href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
-            - name: Share configurations in GR  
+            - name: Share configurations in GR
               href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
             - name: Discontinue configurations in the RCS Global repository
               href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
       - name: Quick start guides
-        items: 
+        items:
         - name: Adjust an ER format to generate a custom electronic document
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?context=/dynamics365/context/commerce
         - name: Design a new ER solution to print a custom report
@@ -2205,11 +2209,11 @@
         - name: Adjust an ER solution to generate a custom electronic document
           href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?context=/dynamics365/context/commerce
       - name: Tutorials
-        items: 
+        items:
         - name: Learn how to use data sources
-          items: 
+          items:
           - name: Use JOIN to get data from multiple tables
-            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?context=/dynamics365/context/commerce
           - name: Use RAW XML to add content
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?context=/dynamics365/context/commerce
           - name: Support parameterized calls of CALCULATED FIELD data sources
@@ -2253,29 +2257,29 @@
             - name: Modify and run formats to use Document management files
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?context=/dynamics365/context/commerce
           - name: Use BARCODE to generate barcode images
-            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?context=/dynamics365/context/commerce
           - name: Configure LOOKUP data sources to use ER application-specific parameters
-            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?context=/dynamics365/context/commerce
           - name: Use DATA COLLECTION data sources in ER formats
-            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?context=/dynamics365/context/commerce
           - name: Use USER INPUT PARAMETER data sources to specify parameters for a report that you want to generate
-            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/commerce 
+            href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?context=/dynamics365/context/commerce
           - name: Debug data sources
             href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?context=/dynamics365/context/commerce
         - name: Configure data models
-          items: 
+          items:
           - name: Support parameterized calls of ER data models
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/commerce
         - name: Configure model mappings
           items: 
-          - name: Configure country context dependent ER model mappings
+          - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?context=/dynamics365/context/commerce
           - name: Manage several derived mappings for a single model root
             href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?context=/dynamics365/context/commerce
         - name: Configure formats
-          items: 
+          items:
           - name: Select model definitions when you create formats
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?context=/dynamics365/context/commerce
           - name: Configure ER formats to use parameters that are specified per legal entity
@@ -2283,7 +2287,7 @@
           - name: Set up the parameters of an ER format per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?context=/dynamics365/context/commerce
           - name: Defer execution of ER format elements
-            items: 
+            items:
             - name: Defer execution of a sequence element
               href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?context=/dynamics365/context/commerce
             - name: Defer execution of an XML element
@@ -2297,13 +2301,13 @@
         - name: Relative path in data bindings
           href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?context=/dynamics365/context/commerce
       - name: Use ER solutions in Commerce
-        items: 
+        items:
         - name: Configure the framework
-          items: 
+          items:
           - name: Configure the Electronic reporting framework
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?context=/dynamics365/context/commerce
           - name: Back up and recover ER templates
-            items: 
+            items:
             - name: Backup storage of ER templates
               href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?context=/dynamics365/context/commerce
             - name: ER migration cleanup
@@ -2311,7 +2315,7 @@
           - name: Create configuration provides and mark them as active
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?context=/dynamics365/context/commerce
         - name: Destinations
-          items: 
+          items:
           - name: Destinations overview
             href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?context=/dynamics365/context/commerce
           - name: Destination types
@@ -2337,7 +2341,7 @@
         - name: Set up a reference to an ER format
           href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?context=/dynamics365/context/commerce
         - name: Automatically validate generated reports
-          items: 
+          items:
           - name: Trace generated report results and compare them with baseline values
             href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
           - name: Improve tracing the results of generated ER reports to compare with baseline values
@@ -2345,13 +2349,13 @@
           - name: Automate testing with ER
             href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?context=/dynamics365/context/commerce
         - name: Automate business processes by using Electronic reporting configurations
-          items: 
+          items:
           - name: Configure ER to pull data into Power BI
             href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?context=/dynamics365/context/commerce
           - name: Generate printable free text invoice (FTI) forms
             href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?context=/dynamics365/context/commerce
         - name: Design efficient ER solutions
-          items: 
+          items:
           - name: Trace execution of ER formats to troubleshoot performance issues
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?context=/dynamics365/context/commerce
           - name: Troubleshoot performance issues in ER configurations
@@ -2364,14 +2368,14 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?context=/dynamics365/context/commerce
           - name: New document user interface in BDM
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?context=/dynamics365/context/commerce
-          - name: Edit business document templates in BDM 
+          - name: Edit business document templates in BDM
             items:
             - name: Add new fields to a business document template in Microsoft Excel
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?context=/dynamics365/context/commerce
             - name: Update the structure of a business document template
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?context=/dynamics365/context/commerce
       - name: ER framework API
-        items: 
+        items:
         - name: Extend the list of built-in functions
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?context=/dynamics365/context/commerce
         - name: API changes
@@ -2390,7 +2394,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?context=/dynamics365/context/commerce
           - name: Application update 10.0.25
             href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?context=/dynamics365/context/commerce
-        - name: Specify a custom storage location for generated documents 
+        - name: Specify a custom storage location for generated documents
           items:
           - name: Subscribe to an event to request a response from subscribing handler
             href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?context=/dynamics365/context/commerce
@@ -2603,7 +2607,7 @@
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/commerce
     - name: Development
-      items:   
+      items:
       - name: Cross-solution
         items:
         - name: Commerce SDK overview
@@ -2729,7 +2733,7 @@
           - name: Local development environment
             href: dev-itpro/setup-local-dev-env.md
         - name: APIs and reference
-          items: 
+          items:
           - name: View POS extension package information
             href: dev-itpro/view-pos-extension-package-details.md
           - name: POS APIs
@@ -2789,7 +2793,7 @@
           - name: Create an MPOS extension package
             href: dev-itpro/pos-extension/mpos-extension-packaging.md
           - name: Code signing an MPOS (MSIX) extension package
-            href: dev-itpro/pos-extension/mpos-extension-signing.md 
+            href: dev-itpro/pos-extension/mpos-extension-signing.md
           - name: Create a Cloud POS extension package
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
@@ -2803,7 +2807,7 @@
           - name: E-commerce architectural overview
             href: e-commerce-extensibility/architectural-overview.md
           - name: E-commerce components
-            href: e-commerce-extensibility/ecommerce-components.md   
+            href: e-commerce-extensibility/ecommerce-components.md
           - name: Get started with e-commerce online extensibility development
             href: e-commerce-extensibility/sdk-getting-started.md
           - name: System requirements
@@ -2835,7 +2839,7 @@
             - name: Module mock file
               href: e-commerce-extensibility/module-mock-file.md
             - name: Module test file
-              href: e-commerce-extensibility/module-test-file.md 
+              href: e-commerce-extensibility/module-test-file.md
             - name: Module props.autogenerated.ts file
               href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
             - name: Module configuration presets
@@ -2845,15 +2849,15 @@
           - name: Modules
             items:
             - name: Create a new module
-              href: e-commerce-extensibility/create-new-module.md 
+              href: e-commerce-extensibility/create-new-module.md
             - name: Add module configuration fields
               href: e-commerce-extensibility/add-module-config-fields.md
             - name: Preview and debug modules
-              href: e-commerce-extensibility/test-module.md 
+              href: e-commerce-extensibility/test-module.md
             - name: Test modules with module mocks
               href: e-commerce-extensibility/test-module-mock.md
             - name: Test modules by using page mocks
-              href: e-commerce-extensibility/test-page-mock.md 
+              href: e-commerce-extensibility/test-page-mock.md
             - name: Container modules
               href: e-commerce-extensibility/container-modules.md
             - name: Create a layout container module
@@ -2913,11 +2917,11 @@
               - name: Batch data actions
                 href: e-commerce-extensibility/batch-data-actions.md
               - name: Observable data actions
-                href: e-commerce-extensibility/create-observable-data-action.md 
+                href: e-commerce-extensibility/create-observable-data-action.md
               - name: Share state across modules
                 href: e-commerce-extensibility/share-state-across-modules.md
               - name: Data action cache settings
-                href: e-commerce-extensibility/data-action-cache-settings.md          
+                href: e-commerce-extensibility/data-action-cache-settings.md
               - name: Call server-side data actions with AJAX
                 href: e-commerce-extensibility/data-actions-with-ajax.md
           - name: Themes
@@ -2939,7 +2943,7 @@
           - name: Connectors
             items:
             - name: Configure and enable connectors
-              href: e-commerce-extensibility/connectors.md   
+              href: e-commerce-extensibility/connectors.md
         - name: Extend existing functionality
           items:
           - name: Modules
@@ -2974,7 +2978,7 @@
             href: e-commerce-extensibility/sdk-updates.md
           - name: Set up Azure DevOps code sharing and create a build pipeline
             href: e-commerce-extensibility/set-up-code-sharing-build-pipeline.md
-        - name: Best practices, performance, and FAQ   
+        - name: Best practices, performance, and FAQ
           items:
           - name: Best practices for Dynamics 365 Commerce development
             href: e-commerce-extensibility/best-practices-dev.md
@@ -3003,7 +3007,7 @@
       - name: Commerce headquarters
         items:
         - name: CDX package extension
-          items:       
+          items:
           - name: Extend customer CDX package to add custom data
             href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
@@ -3047,11 +3051,11 @@
           - name: Sign MPOS appx with a code signing certificate
             href: dev-itpro/pos-app-signing-certificate.md
           - name: Set up POS hybrid app on Android and iOS
-            href: dev-itpro/hybridapp.md  
+            href: dev-itpro/hybridapp.md
           - name: Create and apply branding to the Retail Experience app
             href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
-      items: 
+      items:
       - name: Store Commerce
         items:
         - name: Setup and installation issues
@@ -3126,9 +3130,9 @@
           href: troubleshoot/inventory-errors-posting.md
         - name: Fix common posting issues by editing transactions
           href: troubleshoot/fix-common-posting-issues.md
-  - name: Finance and operations apps development and administration 
+  - name: Finance and operations apps development and administration
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
-    href: ../finance/index.md
-  - name: Dynamics 365 Supply Chain Management 
+    href: ../finance/finance-welcome.md
+  - name: Dynamics 365 Supply Chain Management
     href: ../supply-chain/index.md

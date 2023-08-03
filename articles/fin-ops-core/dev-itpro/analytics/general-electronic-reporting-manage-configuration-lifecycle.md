@@ -24,7 +24,7 @@ This article describes how to manage the lifecycle of [Electronic reporting](gen
 
 ## Overview
 
-Electronic reporting (ER) is an engine that supports statutory required and country-specific electronic documents. In general, ER assumes an ability to perform the following tasks for a single electronic document. For more details, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
+Electronic reporting (ER) is an engine that supports statutory required and country/region-specific electronic documents. In general, ER assumes an ability to perform the following tasks for a single electronic document. For more details, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
 
 - Design a template for an electronic document:
 

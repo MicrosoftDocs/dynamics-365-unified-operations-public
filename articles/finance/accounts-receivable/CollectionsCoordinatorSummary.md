@@ -4,7 +4,7 @@
 title: Collections coordinator summary
 description: This article describes how the Collections coordinator summary feature shows AI-generated text in the Collections coordinator workspace.
 author: JodiChristiansen
-ms.date: 06/27/2023
+ms.date: 08/02/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ This feature has three purposes:
 
 ### Version requirements
 
-Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 and later.
+Collections coordinator summary requires the latest hotfix on Dynamics 365 Finance version 10.0.34 (10.0.1591.107) and version 10.0.35 (10.0.1627.70) and later.
 
 ### Location and language requirements
 
@@ -93,16 +93,28 @@ You must grant explicit consent for Dynamics 365 finance and operations apps to 
 
 ### Assign roles to Dataverse users
 
-Users in Dataverse must be assigned the **AIB** role.
+Users in Dataverse must be assigned the **Finance and Operations AI** role and the **AIB** role.
 
 1. In Power Platform admin center, select the Microsoft Power Platform environment where you installed the Copilot solution.
 1. Select **Settings** at the top of the page.
 1. Expand **Users and Permissions**, and select **Security roles**.
+1. Find the **Finance and Operations AI** role.
+1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 1. Find the **AIB** role.
 1. Use the ellipsis button (**&hellip;**) to add new members to the role.
 
 > [!NOTE]
 > For more information, see [Security roles and privileges](/power-platform/admin/security-roles-privileges?wt.mc_id=ppac_inproduct_settings).
+
+### Enable SQL change tracking in Lifecycle Services
+
+1. In Lifecycle Services, find your environment and select **Full details**.
+2. Select **Maintain** and **Enable maintenance mode**.
+3. Log into Dynamics 365 finance and operations.
+4. Go to **System administration > Setup > License configuration**.
+5. On the **Configuration keys** tab, mark **SQL row version change tracking (Preview)**
+6. Save changes.
+7. In Lifecycle Services, select **Maintain** and **Exit Maintenance mode**. 
 
 ### Enable Collections coordinator summary
 
@@ -113,7 +125,7 @@ Users in Dataverse must be assigned the **AIB** role.
 
 > [!IMPORTANT]
 > The **(Preview) Collections coordinator workspace** feature must also be enabled. This feature makes the **Collections coordinator workspace** available. For more information, see [Collection coordinator workspace](collectionsworkspace.md).
-
+ 
 ## View summary text
 
 As soon as a customer is selected in the **Customer account** field in the **Collections coordinator** workspace, the AI-generated content appears below the data points. Azure OpenAI is used to generate the results, based on data in Finance and the provided prompts. All calculations are done in Finance. The summary is based on the amounts for the selected customer's payment history for the past year, outstanding debt amount, and year-to-date revenue.

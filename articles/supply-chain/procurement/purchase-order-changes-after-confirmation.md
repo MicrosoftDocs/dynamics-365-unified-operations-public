@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ms.topic: how-to
-ms.date: 06/19/2023
+ms.date: 07/06/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -19,24 +19,26 @@ ms.custom: bap-template
 > [!IMPORTANT]
 > Some or all of the functionality that's described in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
-> During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in North America, and they are shown only in English. All other functionality is globally available.
+> **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
+>
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
 
 <!--KFM: Preview until further notice -->
 
 During procurement planning, any changes that are made to confirmed purchase orders can have a significant impact on downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Therefore, procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 
-This article describes the **Confirmed purchase orders with changes** workspace where users can review and accept changes that suppliers make to confirmed purchase orders, based on the downstream impact of the changes.
+This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
 ## Enable the feature for your system
 
-This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and/or related Copilot features for your system.
+This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
 
-- Steps 1 and 2 are required to enable the **Confirmed purchase orders with changes** workspace. You must complete these steps to use any of the features that are described in this article.
-- Steps 3 through 6 are required only if you also want to use the Copilot features (natural-language change summaries and communication drafts). Otherwise, you can skip these steps.
+- Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
+- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
-You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.34 or later.
+You must be running Supply Chain Management 10.0.34 or later.
 
 This feature was added in builds that came out after the initial release of versions 10.0.34 and 10.0.35. If you're running one of those versions, you must update your version as described here:
 
@@ -74,11 +76,15 @@ Follow these steps to enable Supply Chain Management to access your Dataverse en
 
 ### Step 5: Install the Copilot application in Supply Chain Management
 
+> [!NOTE]
+> During this preview phase, the Copilot application can only be insalled for environments that are hosted in the US.
+
 Follow these steps to install the Copilot application in your Supply Chain Management environment.
 
 1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
 1. Select **Get it now**.
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
+1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is **Installing**. After the installation is complete, the status changes to **Installed**. If an error occurs, the status changes to **Failed** and you can find details about the error in the **Notifications** field.
 
 ### Step 6: Enable the required security roles
 
@@ -94,11 +100,13 @@ To open the workspace, go to **Procurement and sourcing \> Workspaces \> Confirm
 
 The workspace lists all previously confirmed purchase orders that have been changed since confirmation. It helps the review process by identifying potential impacts on production work, service work orders, and sales orders.
 
-At the top of the workspace, the following tiles summarize the changed confirmed purchase orders and the related downstream impacts:
+At the top of the workspace, the three tiles summarize groups of changes to confirmed purchase orders and the related downstream impacts. 
 
-- **Low impact changes** – This tile highlights purchase orders that have a low risk of downstream impact (in other words, purchase orders that have no downstream orders allocated to them). A summary of changes is generated to help you review and validate the purchase orders.
-- **High impact changes** – This tile highlights purchase orders that have known downstream impacts. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
-- **Impacted downstream orders** – This tile summarizes impacts by the number and type of orders, and it shows the purchase order changes that cause each impact. This information helps you review potential downstream impacts based on the latest master planning run.
+In preview, the grouping is predefined and limited to pegged orders that have been created by planning.
+
+- **Low impact changes** – This tile highlights changes to purchase orders that have no known impact on downstream orders that have been created by planning, also called pegged orders. A summary of changes is generated to help you review and validate the purchase orders.
+- **High impact changes** – This tile highlights purchase orders that have known downstream impacts on pegged orders. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
+- **Impacted downstream orders** – This tile summarizes impacts on pegged orders by the number and type of orders, and it shows the purchase order changes that cause each impact. This information helps you review potential downstream impacts based on the latest master planning run.
 
 Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed delivery dates, and so on.
 
@@ -144,7 +152,7 @@ The **High impact changes** tile provides an AI-generated, natural-language summ
 > [!NOTE]
 > Only direct downstream impacts are considered. Indirect downstream impacts, such as product work that depends on other production work, aren't yet considered.
 
-From this view, you can contact a vendor via email or Microsoft Teams. The system uses the contact details of the vendor contact person to generate proposed message text and add it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
+From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
 
 [<img src="media/po-change-review-highimpact-one-selected.png" alt="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected." title="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
 

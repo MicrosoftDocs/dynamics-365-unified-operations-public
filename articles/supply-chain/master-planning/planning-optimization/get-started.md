@@ -115,6 +115,9 @@ Follow these steps to set a company to use the deprecated master planning engine
 1. Use the company picker to choose the company (legal entity) that you want to set up.
 1. Go to **Master planning \> Setup \> Planning Optimization parameters**.
 1. Open the **Company information** tab.
+
+    [<img src="media/exclude-company-from-po.png" alt="Screenshot of the Company information tab." title="Screenshot of the Company information tab" width="350" />](media/exclude-company-from-po.png#lightbox)
+
 1. Set **Exclude company from running Planning Optimization** to one of the following values
     - *Yes* – Use the deprecated master planning engine for this company.
     - *No* – Use Planning Optimization for this company.

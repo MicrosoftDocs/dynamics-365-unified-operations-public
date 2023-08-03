@@ -4,7 +4,7 @@
 title: Manage channels in the Invoice capture solution
 description: This article provides information about how to manage channels in the Invoice capture solution.
 author: sunfzam
-ms.date: 06/19/2023
+ms.date: 07/12/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,6 @@ ms.dyn365.ops.version:
 # Manage channels in the Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This article explains what a channel is and provides information about how to manage channels in the Invoice capture solution.
 
@@ -52,40 +51,34 @@ The Document receive API must be integrated with a valid channel ID. If it's cal
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_FileSetId\_In | string | No | An optional parameter. |
-| vis\_ExternalDocumentReceiver\_FileName\_In | string | Yes | A file name with extension. |
-| vis\_ExternalDocumentReceiver\_FileContent\_In | string | Yes | A Base64-encoded file. |
-| vis\_ExternalDocumentReceiver\_ChannelType\_In | string | Yes | The channel type can be **Direct**, **Email**, **API**, or **FileSystem**. |
-| vis\_ExternalDocumentReceiver\_ChannelInfo\_In | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
-
-The channel type determines whether the scenario is interactive or silent.
-
-| Channel type | Scenario |
-|--------------|----------|
-| Direct | Interactive |
-| Email | Silent |
-| API | Silent |
-| FileSystem | Silent |
+| ChannelId | string | Yes | Channel id  |
+| FileName | string | Yes | A file name with extension. |
+| FileContent | string | Yes | A Base64-encoded file. |
+| FileSetId | string | No | An optional parameter. |
+| AdditionalInfo | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
 
 ### Output parameters
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| vis\_ExternalDocumentReceiver\_Data\_Out | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
+| Data | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
 
 ### Channel information
 
 | Parameter name | Type | Required | Description |
 |----------------|------|----------|-------------|
-| ChannelId | string | Yes | The identifier of the channel that must be bound. |
+| ChannelType | string | Yes | The channel type can be Direct, Email, API, or FileSystem. |
 | SendFrom | string | No | Additional information to track the sender. |
 
-Here is an example of a payload.
+The channel type determines whether the scenario is interactive or silent. 
 
-```json
-{ "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
-    "SendFrom": "xxxx.xxx@contoso.com" }
-```
+| Channel type | Scenario |
+|--------------|----------|
+| Direct | Interactive  |
+| Email | Silent |
+| API | Silent |
+| FileSystem | Silent |
+
 ## Channel with/without a flow template 
 
 Administrators can decide how they want to integrate the Document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
@@ -167,6 +160,37 @@ If the **Use managed flow** option is set **No**, the Document receive API is ca
 
     - If the flow is successfully generated and activated, the **Manage flow** status will be **On**.
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
+
+## Create a new channel by using unmanaged flow
+
+A shared mailbox lets a group of people, such as a support team, send and receive email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. 
+
+In Invoice capture, follow these steps to create a channel that will use a shared mailbox to receive email from the supplier.
+
+1. Select **New** to create a channel. 
+2. Enter a channel name, and set the **Use Manage channel** option to **No**.
+3. Save your changes, and record the **channel id** value from the URL in the browser's address bar.
+4. Sign in to Power Apps, and select **Flow**.
+5. Select **New flow**, and then select **Automated cloud flow** in the dropdown list.
+6. Enter a name for the flow, and select **When a new email arrives in a shared mailbox** as the trigger. 
+7. Select **Create** to create the automated flow.
+8. In the **Original MailBox Address** field, enter the address of the shared mailbox.
+9. Set the **Only with Attachments** and **Include Attachments** options to **Yes**. 
+10. Add other criteria to meet your business requirements.
+11. Select the plus sign (**\+**) to insert a new step.
+12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perfom an unbound action**.
+13. Select the ellipsis (**&hellip;**), and then select **Rename** to enter a new name for the step.
+14. In the **Action name** field, select **vis\_ExternalDocumentReceiver**.
+15. Update **channel id** to **ChannelId**.
+16. In the **FileName** field, select **Attachments name**.
+17. In the **FileContent** field, select **Attachment content**.
+18. Select the ellipsis (**&hellip;**), and then select **Peek code**.
+19. Copy the value for **item/FileContent**. This value looks like **@items('xxx')?\['contentBytes'\]**. Wrap the value in a string function so that it looks like **string(items('xxx')?\['contentBytes'\])**. Then paste the final value into the **Attachment content** field.
+20. In the **AdditionalInfo** field, enter the following value: 
+
+    additionalInfo:{<br>
+    &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
+    \}
 
 ## Deactivate and activate the channel
 

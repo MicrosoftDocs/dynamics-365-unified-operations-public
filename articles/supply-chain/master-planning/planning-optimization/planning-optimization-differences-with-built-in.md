@@ -21,7 +21,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Feature | Current behavior in Planning Optimization |
 |---|---|
 | Forecasts for today's date | Forecasts for today's date aren't considered by Planning Optimization, though they were considered by the deprecated master planning engine. |
-| Catch weight products | Catch-weight products are considered usual products.|
+| Catch weight products | Catch-weight products are considered usual products. Planned orders don't include a value for the catch-weight requirement quantity.|
 | Extensible dimensions | Extensible dimensions are not supported by Planning Optimization. When you use Planning Optimization, extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. We recommend that you use master planning where a forecast model is assigned to the master plan. |
@@ -40,7 +40,7 @@ Planning Optimization results might differ from results from the deprecated mast
 | Copy static to dynamic plan | Planning Optimization doesn't copy static plans to dynamic plans, regardless of the setting on the **Master planning parameters** page. In general, this operation is less relevant because of the speed and complete regeneration that Planning Optimization provides. If two or more plans are used, master planning should be triggered for each plan. |
 | Negative days | Planning Optimization always uses dynamic negative days, regardless of the setting of **Use dynamic negative days** on the **Master planning parameters**. The **Use dynamic negative days** setting on the **Master planning parameters** page has no effect on this behavior. For more information on negative days see [Delay tolerance (negative days)](delay-tolerance.md) |
 | Planned orders in the past | Planning Optimization never plans orders in the past, regardless of the **Requested date** setting. If you do set a **Requested date** that's in the past, the system will keep your setting, but will set the **Required date** to *Today*. |
-| Product dimensions | Planning Optimization supports the following product dimensions: Color, Size, Style, Version, and Configuration; the following storage dimensions: Site, Warehouse, and Location; the following tracking dimensions: Serial and Batch; and the following extensible dimensions: InventDim1 to InventDim12. Dimensions not mentioned here aren't supported by Planning Optimization. |
+| Dimension-based configuration | Planning Optimization doesn't support dimension-based configured products. Planning Optimization won't explode bills of material for these products. |
 
 ## Additional resources
 

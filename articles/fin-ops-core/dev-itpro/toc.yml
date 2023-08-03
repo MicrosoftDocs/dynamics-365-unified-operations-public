@@ -15,12 +15,12 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.36 (October 2023)
+          href: get-started/whats-new-platform-updates-10-0-36.md
         - name: Platform updates for version 10.0.35 (July 2023)
           href: get-started/whats-new-platform-updates-10-0-35.md
         - name: Platform updates for version 10.0.34 (June 2023)
           href: get-started/whats-new-platform-updates-10-0-34.md 
-        - name: Platform updates for version 10.0.33 (April 2023)
-          href: get-started/whats-new-platform-updates-10-0-33.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -199,6 +199,8 @@ items:
           items:
           - name: Import customers
             items:
+              - name: Import customers with data entities
+                href: /dynamics365/guidance/resources/import-customers?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Customer definitions entity
                 href: data-entities/entity-customer-definitions-customerbase.md
               - name: Customers V3 entity
@@ -207,18 +209,24 @@ items:
                 href: data-entities/entity-customer-details-v2-na.md
           - name: Import products
             items:
+            - name: Import products with data entities
+              href: /dynamics365/guidance/resources/import-products?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
             - name: Products V2 entity
               href: data-entities/entity-products-v2-productsv2.md
             - name: Released products V2 entity
               href: data-entities/entity-released-products-v2-releasedproductv2.md
           - name: Import sales orders
             items:
+              - name: Import sales orders with data entities
+                href: /dynamics365/guidance/resources/import-sales-orders?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Sales order headers V2
                 href: data-entities/entity-sales-order-headers-v2-salesorderheaderv2.md
               - name: Sales order lines V2
                 href: data-entities/entity-sales-order-lines-v2-salesorderline.md
           - name: Import vendor invoices
             items:
+              - name: Import vendor invoices with data entities
+                href: /dynamics365/guidance/resources/import-vendor-invoices?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
               - name: Vendor invoice header entity
                 href: data-entities/entity-vendor-invoice-header-vendorinvoiceheader.md
               - name: Vendor invoice line entity
@@ -239,6 +247,8 @@ items:
           href: data-entities/tips-tricks-import-general-journal-entity.md
         - name: Optimizing data migration for finance and operations apps
           href: sysadmin/optimize-data-migration.md
+        - name: Improve data export performance
+          href: data-entities/data-export-perform.md
       - name: Development for data entities
         items:
         - name: Design principles and best practices for data entities
@@ -289,6 +299,8 @@ items:
           href: sysadmin/archive-general-ledger.md
         - name: Archive sales orders
           href: sysadmin/archive-sales-orders.md
+        - name: Move inventory transactions history to long-term data retention
+          href: sysadmin/archive-inventory-purge.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
@@ -1139,6 +1151,8 @@ items:
           href: lifecycle-services/dts-visual-studio.md
         - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
+        - name: Dynamics 365 Translation Service Connector
+          href: lifecycle-services/dts-connector-info.md
     - name: Microsoft Power Platform integration
       items:
       - name: Overview
@@ -1175,6 +1189,8 @@ items:
               items:
                 - name: Enable dual-write for existing finance and operations apps
                   href: data-entities/dual-write/enable-dual-write.md
+                - name: Dual-write health check
+                  href: data-entities/dual-write/dual-write-health-check.md
                 - name: System requirements and prerequisites
                   href: data-entities/dual-write/requirements-and-prerequisites.md
                 - name: How to use the dual-write wizard to link your environments
@@ -1324,6 +1340,8 @@ items:
         items:
         - name: Virtual entities overview
           href: power-platform/virtual-entities-overview.md
+        - name: What's new or changed in Virtual Entity solution provider package?
+          href: power-platform/whats-new-ve.md
         - name: Entity modeling
           href: power-platform/entity-modeling.md
         - name: Application lifecycle management
@@ -1822,7 +1840,7 @@ items:
         items:
         - name: Upgrade from AX 2012 to finance and operations
           href: migration-upgrade/upgrade-overview-2012.md
-        - name: AX 2012 upgrade - Plan using the Upgrade analyzer tool
+        - name: AX 2012 upgrade - Plan using the Upgrade analysis report
           href: migration-upgrade/upgrade-analyzer-tool.md
         - name: AX 2012 upgrade – Estimate effort using the Code upgrade service
           href: migration-upgrade/analyze-code-upgrade.md
@@ -1880,6 +1898,8 @@ items:
             href: migration-upgrade/clean-up-source-data-upgrade.md
           - name: Compress tables in Dynamics AX 2012 environments
             href: migration-upgrade/compress-tables-ax-2012.md
+          - name: Change the database collation for development environments
+            href: migration-upgrade/coll-dev-env.md
       - name: Migrate data from AX 2009
         items:
         - name: Migrate data from AX 2009 to finance and operations
@@ -2161,7 +2181,7 @@ items:
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/index.md
   - name: Dynamics 365 Finance 
-    href: ../../finance/index.md
+    href: ../../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources
