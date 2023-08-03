@@ -37,19 +37,8 @@ The following table describes the buttons that are available directly on the Act
 |---|---|
 | New | [Create a voyage](/training/modules/work-with-landed-cost-supply-chain-management/create-voyage). |
 | Delete | Delete the current voyage. Only voyages that have a voyage status of *Confirmed* can be deleted. After a voyage leaves port and processes goods in transit, it can no longer be deleted. |
-| Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. |
+| Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. For more information about the **Voyage editor**, see [Manage shipping containers](manage-shipping-containers.md). |
 | Voyage costs | Open the **Voyage costs** page, where you can view and add voyage costs to all goods in the voyage. When voyage costs are manually added to the voyage, they are automatically added to the **Costs inquiry** page and apportioned to each good according to the method that is specified on the **Voyage costs** page. |
-
-### Buttons on the Voyage editor form
-
-The following table describes the buttons that are available on the **Voyage editor** form . 
-
-| Button | Description |
-|---|---|
-| Edit voyage header | Open a page that you can update voyage header detail informations. |
-| Setup | Open a dropdown menu, you have the option to select the specific type of transaction or site data that you want to display in the form. |
-| Generate data | Generate transaction data in the **inbound orders** table.  |
-| Display dimensions | Select the inventory dimensions that should be shown. |
 
 ### Buttons on the Voyage tab
 
