@@ -3,7 +3,7 @@
 
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
 description: This article explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to estimate the tasks and effort that are required in order to upgrade a code base.
-author: ThomasTreen
+author: ttreen
 ms.date: 07/27/2023
 ms.topic: article
 ms.prod: 
@@ -124,10 +124,10 @@ To connect to an Azure DevOps project, Lifecycle Services is authenticated by us
 
 ### Run the Code Upgrade
 
-1. In your Lifecycle Services project, select the **Code upgrade** from the drop-down menu (Implmentation and On-Premises projects), or the **Code Upgrade Tile** (Other D365 project types).
+1. In your Lifecycle Services project, select **Code upgrade** from the drop-down menu or the **Code Upgrade Tile**.
 
 > [!NOTE]
-> Within LCS the **Code upgrade** is only available in the Unites States region **(lcs.dyncamics.com)**. If your project is in another region, you will need to create a temporary D365 Finance and Operations project in **lcs.dynamics.com** and run the code upgrade from there. Once you have completed the code upgrade, you can delete the temporary project should you wish. For details on the regions see: [Available geographies for Dynamics 365 finance and operations apps](../deployment/deployment-options-geo.md) 
+> In Lifecycl Services, the **Code upgrade** is only available in the Unites States region. If your project is in another region, create a temporary Dynamics 365 finance and operations project in **lcs.dynamics.com** and run the code upgrade. After you have completed the code upgrade, you can delete the temporary project. For more information about regions, see [Available geographies for Dynamics 365 finance and operations apps](../deployment/deployment-options-geo.md). 
 
 2. Select **Add**, and set the following fields:
 
