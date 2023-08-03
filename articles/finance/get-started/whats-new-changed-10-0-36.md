@@ -61,7 +61,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-| General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
+| General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or on a setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
 
 ## Features turned on by default in this release
 
