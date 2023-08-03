@@ -942,6 +942,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Customer search
+        href: customer-search.md
       - name: Audit synchronization of customer operations
         href: audit-async-customer-operations.md
       - name: Asynchronous customer creation mode FAQ
