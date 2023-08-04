@@ -4,12 +4,12 @@
 title: Create returns in POS
 description: This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 04/27/2022
+ms.date: 08/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro 
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: hhaines
+ms.author: josaw
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
 
@@ -53,23 +53,22 @@ For each line that has a **Returning now** quantity, the user must select a retu
 
 After the return quantity and reason code have been set for each item that must be returned, the user can select the **Return** operation on the POS app bar to proceed with the processing. The POS transaction page appears, where the returnable items that were selected on the previous page have been added to the cart. The **Returning now** quantities for the items appear as negative-quantity lines on the transaction, and the total refund is calculated.
 
-The unified return processing experience has an user experience issue which becomes evident when there are more than one items to return in the transaction. To mitigate those issues, with 10.0.36, the users can enable a new feature **“Improved user experience for POS returns”**, which makes the return products grid a multiselect grid and hence the users can select and unselect the returnable products by selecting or unselecting the return line. Additionally, with this feature, the system automatically pops up the return reason dialog so that the user does not have to spend additional clicks in opening the return reason dialog and closing it. This feature also introduces a new configuration **“Skip sales invoice selection during returns”** in the POS functionality profile which, if enabled, combines all the returnable products from the order, irrespective of the invoice with which they were fulfilled. This also saves multiple clicks as the cashiers do not have to select the right invoice to return the item. 
-These improvements have been back ported to 10.0.33 – 10.0.35, but the partner needs to enable these via config files in sandbox/dev/test environments and contact Microsoft for enabling in production. For internal environments, modify bin\CommerceRuntime.config file under the retail server physical path and add **FeatureState.Dynamics.AX.Application.RetailUnifiedReturnUXImprovementFeature" value="true"** and **FeatureState.Dynamics.AX.Application.RetailSkipInvoiceSelectionDuringReturnFlight" value="true".** If you don’t want to skip the invoice selection view, then don’t add the second setting in the config file. 
+When there is more than one item to return in a transaction, unified return processing can cause some user experience issues. To mitigate these issues, starting with Commerce version 10.0.36 you can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and deselect returnable products, and automatically brings up the return reason dialog box to reduce the number of user steps taken to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration  in the POS functionality profile, which when enabled combines all returnable products from an order, irrespective of the invoice with which they were fulfilled. This feature saves cashiers from having to make multiple clicks becuase they don't have to select the correct invoice to return an item. 
 
-
+The **Improved user experience for POS returns** feature improvements have been back ported to Commerce versions 10.0.33 through 10.0.35, but you must enable these via config files in sandbox/dev/test environments and then contact Microsoft to enable them in production. For internal environments, modify the bin\CommerceRuntime.config file under the retail server physical path to add `"FeatureState.Dynamics.AX.Application.RetailUnifiedReturnUXImprovementFeature" value="true"` and `"FeatureState.Dynamics.AX.Application.RetailSkipInvoiceSelectionDuringReturnFlight" value="true". If you don't want to skip the invoice selection view, don't add the second setting to the config file. 
 
 ## Other return options in POS
 
-Users can add lines to a return transaction if they are creating an exchange order. Users can also add more ad-hoc return items to a return transaction by using the **Return product** operation for a selected positive-quantity sales line that has been added.
+Users can add lines to a return transaction if they are creating an exchange order. Users can also add more return items to a return transaction by using the **Return product** operation for a selected positive-quantity sales line that has been added.
 
 > [!NOTE]
-> The **Return product** operation in POS doesn't provide any validation against any original transaction and allows any product to be returned. Therefore, we recommend that only authorized users be allowed to perform this operation, or that a manager override be required if this operation is used.
+> The **Return product** operation in POS doesn't provide any validation against any original transaction and allows any product to be returned. Microsoft recommends that only authorized users are allowed to perform this operation, or that a manager override is required when using this operation.
 
 When the **Unified return processing experience in POS** feature is turned on, users can also use the **Show journal** operation in POS to initiate a return for a cash-and-carry transaction or a customer order. They can then select a transaction in the journal and then select the **Return** operation on the POS app bar. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** operation.
 
 Users can also use the **Recall order** operation in POS to search for and recall customer orders. (This operation can't be used for cash-and-carry transactions). In this case, after a customer order is selected, the **Return** operation on the POS app bar can be used to initiate a return for the customer order. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** or **Show journal** operation.
 
-If a refund is due at checkout, organizations can configure [refund payment policies](refund_policy_returns.md) that limit the payment methods that can be used to refund customers. If the original transaction was paid by using a credit card, depending on the payment processor and the system configuration, users might have the option to [issue a refund to the original card](dev-itpro/linked-refunds.md). In this case, the refund can be processed without requiring that the customer swipe their credit card again. The original payment token is used to issue the refund.
+If a refund is due at checkout, you can configure [refund payment policies](refund_policy_returns.md) that limit the payment methods that are used to refund customers. If the original transaction was paid by using a credit card, depending on the payment processor and the system configuration, users might have the option to [issue a refund to the original card](dev-itpro/linked-refunds.md). In this case, the refund can be processed without requiring that the customer swipe their credit card again because the original payment token is used to issue the refund.
 
 ## Return orders are posted to Commerce headquarters as sales orders 
 
