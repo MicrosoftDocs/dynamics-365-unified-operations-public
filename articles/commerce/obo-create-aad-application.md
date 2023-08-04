@@ -40,6 +40,8 @@ To create an Azure AD application for account manager sign-in, follow these step
 
 ![Registration of the AAD B2B application](media/obo-register-application2.png)
 
+## Configure an Azure AD application for account manager sign-in in Azure B2B Tenant
+
 After you complete the registration, locate the application that you created (for example, **Account Manager Application**).
 
 1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID). For example, **88760a037-ea1e-4e04-8e50-0a8dfcb4eb50**
@@ -60,6 +62,8 @@ After you complete the registration, locate the application that you created (fo
     > [!IMPORTANT]
     > The secret value is never shown again after you leave the **Certificates & secrets** page. Therefore, be sure to copy it.
 
+![Example of adding a scope](media/obo-add-scope2.png) 
+
 ## Configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site
 
 To configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site, follow these steps.
@@ -77,10 +81,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. In the **Client secret** field, enter the client secret that you copied earlier.
 1. In the **Scope** field, enter the **openid profile <Azure-B2B-Application-ID-URI>/user_impersonation** where **<Azure-B2B-Application-ID-URI>** is the ID of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation". (In other words, the scope field should be `openid profile <scope-name>`, where `<scope-name>` is the name of the scope created in step 8 in the section above. 
 1. In the **Response Mode** field, select **form\_post**.
-1. In the **Response Type** field, select **code**.
-2. 
-![Example of adding a scope - part 1](media/obo-add-scope-part1.png)
-   
+1. In the **Response Type** field, select **code**.   
 1. Under **Identity provider claims mapping**, select the following claims:
  
     1. For **User ID**, select **sub**.
@@ -88,10 +89,10 @@ To configure an identity provider in your Azure B2C tenant for account manager s
     1. For **Given name**, select **given\_name**.
     1. For **Surname**, select **family\_name**.
     1. For **Email**, select **email**.
-
-![Example of adding a scope - part 2](media/obo-add-scope-part2.png)
-
 1. Select **Save**.
+
+![Creating IDP - part 1](media/obo-configure-custom-IDP2.png)
+![Creating IDP - part 2](media/obo-configure-IDP-part2.png)
 
 ## Add the Azure identity provider to a user flow
 
