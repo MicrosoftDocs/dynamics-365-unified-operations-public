@@ -34,7 +34,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 - **Preview of release:** March 2022
 - **General availability of release (self-update):** April 2022
-- **General availability of release (auto-update):** May 2022
+- **General availability of release (auto-update):** April 2022
 
 
 ## Features included in this release
