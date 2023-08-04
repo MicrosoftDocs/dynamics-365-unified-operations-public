@@ -35,7 +35,7 @@ This article lists features that are new or changed for Dynamics 365 Human Resou
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Feature enhancements included in this release
 
