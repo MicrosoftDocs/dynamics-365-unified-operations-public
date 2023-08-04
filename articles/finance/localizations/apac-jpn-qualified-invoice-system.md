@@ -63,14 +63,15 @@ To work with registration numbers, you need to:
 - Link the registration type to the “Qualified invoice issuer” registration category.
 - Add your company’s registration number to its primary address in Japan.
 
-For more information, see [Registration IDs](/dynamics365/finance/localizations/emea-registration-ids). This framework is extended to provide the possibility to maintain the qualified invoice issuer registration numbers of the company and its counterparties, that is, vendors and customers. The qualified invoice issuer number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
+> [!NOTE]
+> For more information, see [Registration IDs](/dynamics365/finance/localizations/emea-registration-ids). This framework is extended to provide the possibility to maintain the qualified invoice issuer registration numbers of the company and its counterparties, that is, vendors and customers. The qualified invoice issuer number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
 
 ## Setting up Sales tax for JCT
 In order to work with the company's and its counterparties' "Qualified invoice issuer" (QII) registration numbers, the following steps should be performed:
 To work with consumption taxes, you need to:
 - Create different sales tax codes for standard rate and reduced rate.
 - Create different sales tax codes for purchases from qualified and non-qualified vendors. You can use the same sales tax codes for purchases from qualified vendors and for sales.
-- Set up all sales tax codes with these settings: Tax type, Origin = Percentage of net amount, Marginal base = Net amount of invoice balance, Calculation method = Whole amount, Rounding precision = 1.00, Rounding method = Normal, Print = Print code, Print code = */<JCT rate/>*%.
+- Set up all sales tax codes with these settings: Tax type, Origin = Percentage of net amount, Marginal base = Net amount of invoice balance, Calculation method = Whole amount, Rounding precision = 1.00, Rounding method = Normal, Print = Print code, Print code = *\<JCT rate\>*%.
 - Set up transitional periods for purchase tax credit using non-deductible percentage in sales tax code values.
 - Set up sales tax groups for JCT: one for qualified vendors and another one for non-qualified vendors.
 - Set up item sales tax groups for standard rate and reduced rate.
@@ -81,8 +82,8 @@ To work with consumption taxes, you need to:
 Go to **Accounts receivable -> Setup -> Forms -> Form setup** and make configuration as follows:
 1. **General** tab -> **Sales tax specification = Registration currency**
 1. **General** tab -> **Print management** button:
-    i. **Customer invoice** -> Original: **Report format = SalesInvoice.Report_JP**
-    ii. **Free text invoice** -> Original: **Report format = FreeTextInvoice.Report_JP**
+    * **Customer invoice** -> Original: **Report format = SalesInvoice.Report_JP**
+    * **Free text invoice** -> Original: **Report format = FreeTextInvoice.Report_JP**
 1. **Invoice** tab -> **Print tax exempt number on invoice = Yes**
 1. **Invoice** tab -> **Print qualified invoice issuer number on invoice = Yes**
 1. **Free text invoice** tab -> **Print tax exempt number on invoice = Yes**
