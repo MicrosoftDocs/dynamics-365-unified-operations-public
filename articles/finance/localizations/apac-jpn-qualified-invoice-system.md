@@ -34,11 +34,11 @@ Qualified Invoice System is a new system for issuing and reporting invoices with
 Dynamics 365 Finance localization for Japan has extended its invoicing functionality in Accounts payable and Accounts receivable to cover the new system requirements. This article explains how this system works and how to set it up in Finance.
 The invoicing functionality in Finance helps you comply with the new system requirements in Japan. It also lets you use e-invoicing to follow the local standards and global trends. You can use Finance to:
 - Maintain the qualified invoice issuer registration numbers of your company and your vendors and customers. You can use a different registration number for your company if it is not the primary address, but it is in Japan and it is the primary address for the country.
-- Print your company’s registration number on customer invoices, including sales invoices and free text invoices, including consolidated invoices.
+- Print your company’s registration number on customer invoices, including sales invoices and free text invoices.
 - Calculate and round consumption taxes per tax rate on the invoice level. You can round the total tax amount for all invoice lines using the Rounding by field in the sales tax group.
 - Print the total invoice amount and tax amounts by tax rate on customer invoices.
 - Apply transitional measures for input tax credit for purchases from non-qualified vendors.
-- Use consolidated invoices for monthly billing. You can print the sales tax section by tax rate on all invoices, including consolidated invoices. For more information, see [Consolidated invoice](/dynamics365/finance/localizations/apac-jpn-consolidate-invoices).
+- Print the company’s registration number and sales tax section by tax rate on consolidated invoices. For more information, see [Consolidated invoice](/dynamics365/finance/localizations/apac-jpn-consolidate-invoices).
 
 The following scenarios are supported by this system:
 - Sales invoice and credit note.
