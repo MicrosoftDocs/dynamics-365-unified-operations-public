@@ -45,7 +45,9 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
     1. **Server Resource Id:** Enter `https://APPLICATIONIDURI`.For example, **api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50**, where the APPLICATIONIDURI is the ID of the Azure AD B2B Application
     1. **Name:** Leave this field blank.
   
-1. On the Action Pane,select **Save**.   
+1. On the Action Pane,select **Save**.
+ ![Example of the Identity Provider Configuration in Commerce Shared Parameters](media/obo-commerce-shared-param.png) 
+
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**
 1. In the left navigation menu, select job **1110 Global configuration**
 1. On the action pane, select **Run Now**
