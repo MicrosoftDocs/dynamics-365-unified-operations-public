@@ -58,6 +58,4 @@ The test results will contain a table that shows the status of compatible and no
 | Commerce runtime (CRT) | NET Standard 2.0 | Version 10.0.23 or later |
 
 #### Migrate extensions to support CSU Core
-To run in CSU Core, extensions that were built by using the Retail SDK must be built using NET Standard 2.0 as target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core. If you are using commerce SDK, extension is already built to be compatible with CSU Core.
-
-In addition, its also highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce.sdk.md). Commrce SDK is build on  NET Standard 2.0 and supported on CSU core.
+To run in CSU Core, extensions that were built by using the Retail SDK must be built using NET Standard 2.0 as target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core. Therefore, its highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce.sdk.md). Commerce SDK is build on  NET Standard 2.0 and supported on CSU core. If you are on Commerce SDK, extensions are built to be compatible with CSU Core.
