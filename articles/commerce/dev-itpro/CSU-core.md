@@ -32,7 +32,7 @@ CSU Core provides the following benefits:
 
 ## CSU Core release plan
 
-CSU Core is available for new deployments as of the Dynamics 365 Commerce version 10.0.22 release. As of the Commerce version 10.0.22 release, all new deployments will use it by default. On-premises or CSU self-hosted installers will use the same CSU Core platform that is built by using ASP.NET core and that runs on .NET Core.
+CSU Core is available for new deployments as of the Dynamics 365 Commerce version 10.0.22 release. As of the Commerce version 10.0.22 release, all new deployments use it by default. On-premises or CSU self-hosted installers use the same CSU Core platform that is built by using ASP.NET core and that runs on .NET Core.
 
 ## Deploy or migrate to CSU Core
 
@@ -48,7 +48,7 @@ You can validate that your extensions are compatible with CSU core by running an
 
 `https://<MyRetailServerURL>/healthcheck?testname=extensions`
 
-The test results will contain a table that shows the status of compatible and non-compatible extensions.
+The test results will contain a table that shows the status of compatible and incompatible extensions.
 
 #### Extension target framework
 
@@ -58,5 +58,5 @@ The test results will contain a table that shows the status of compatible and no
 | Commerce runtime (CRT) | .NET Standard 2.0 | Version 10.0.23 or later |
 
 #### Migrate extensions to support CSU Core
-To run in CSU Core, extensions that were built by using the Retail SDK must be built using .NET Standard 2.0 as the target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are using the Retail SDK, it is highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Commerce SDK supports CSU core out of the box.
+To run in CSU Core, extensions that were built by using the Retail SDK must be built using .NET Standard 2.0 as the target framework. The CSU Core runtime is built by using the ASP.NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are using the Retail SDK, it is highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Commerce SDK supports CSU core out of the box.
 
