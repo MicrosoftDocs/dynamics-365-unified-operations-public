@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/01/2023
+ms.date: 08/08/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -142,6 +142,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 \*Interac and Union Pay recurring card tokens aren't provided by Adyen, so they can't be supported for card not present transactions.
 
 #### Supported gift cards
+
 | Scheme | Card present | Card not present |
 |---|:-:|---|
 | Givex | ✔ | ✔ |
@@ -149,10 +150,13 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
-#### Digital Wallet Support Status
-The following are popular digital wallets and status of current support for those wallets by the Dynamics 365 Commerce payment connectors for Adyen. **Card present** relates to POS transactions, and **Card not present** relates to Call Center and Online channel transactions. 
+#### Digital wallet support status
 
-| Scheme | Card present | Card not present |
+The following table lists popular digital wallets and the current support status of those wallets by the Dynamics 365 Commerce Payment Connector for Adyen. 
+
+**Card present support** is for POS transactions, and **Card not present support** is for call center and online channel transactions. 
+
+| Scheme | Card present support | Card not present support |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
 | Google Pay | Yes | Yes |
@@ -163,8 +167,8 @@ The following are popular digital wallets and status of current support for thos
 | Alipay | No | No |
 | WeChat | No | No |
 
-
 #### Supported card present input methods
+
 | Input method | Supported | Notes |
 |---|:-:|---|
 | Dip | ✔ | |
