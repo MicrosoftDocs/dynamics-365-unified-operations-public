@@ -30,7 +30,7 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. In the row of Azure services, select **Azure Active Directory**.
 1. On the **Manage** menu, select **App Registration**, and then select **New Registration**.
 1. Enter a name for the application (for example, **Account Manager Employer Auth**).
-1. Under **Supported account types**, select **Accounts in this organizational directory only (<YOUR-TENANT-NAME> only - Single tenant)**.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (YOUR-TENANT-NAME only - Single tenant)**.
 1. Under **Redirect URI**, select **Web**, and then, in the URL field, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain.
 
     > [!NOTE]
@@ -79,7 +79,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter the **openid profile <Azure-B2B-Application-ID-URI>/user_impersonation** where **<Azure-B2B-Application-ID-URI>** is the ID of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation". (In other words, the scope field should be `openid profile <scope-name>`, where `<scope-name>` is the name of the scope created in step 8 in the section above. 
+1. In the **Scope** field, enter the **openid profile Azure-B2B-Application-ID-URI/user_impersonation** where **Azure-B2B-Application-ID-URI** is the ID of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation". (In other words, the scope field should be `openid profile <scope-name>`, where `<scope-name>` is the name of the scope created in step 8 in the section above. 
 1. In the **Response Mode** field, select **form\_post**.
 1. In the **Response Type** field, select **code**.   
 1. Under **Identity provider claims mapping**, select the following claims:
