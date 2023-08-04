@@ -63,9 +63,9 @@ In the first release of the **Warehouse management only mode**, the outbound shi
 > On the *Outbound shipment order lines* you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities.
 > Make sure to have the proper user role security privilege assigned for this process, because this will (like the messages editing) allow for potential inconsistencies between the external systems and Supply Chain Management.
 
-## Receiving completed
+## <a name="receiving-completed"></a>Receiving completed
 
-The **Receiving completed** process updates the load status to *Received* and generates [**Shipment receipts**](#shipment-receipts) which trigger **Business event** for the external systems.
+The *Receiving completed* process updates the load status to *Received* and generates [**Shipment receipts**](#shipment-receipts) which trigger a **Business event** for the external systems.
 
 You can trigger the **Receiving completed** manually from the load in the web client and/or via the **Receiving completed confirmation** *Warehouse management mobile app* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 

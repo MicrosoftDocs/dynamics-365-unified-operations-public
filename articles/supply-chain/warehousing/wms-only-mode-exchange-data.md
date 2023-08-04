@@ -37,7 +37,9 @@ The **inbound shipment order messages** and the **outbound shipment order messag
 
 A following [**message processing**](warehouse-message-processor-messages.md) will validate the import process by ensuing consistent data between the systems, both when it comes to the master data like products, but also the order progress status alignments, making the Supply Chain Management inbound/outbound shipment orders actionable for the warehouse management processes, by not allowing creation or updating of invalid/unsupported order data. We recommend that you process the messages as part of a periodic batch job triggered by the [**Message processor**](../supply-chain-dev/message-processor.md) page where you must use the **Shipment Orders** *Message queue*.
 
-![Message processing diagram](./media/shipment-order-integrations.png)
+This following image shows how the message processor fits into an integrated system.
+
+:::image type="content" source="media/wms-only-shipment-order-integrations.svg" alt-text="Message processing diagram." lightbox="media/wms-only-shipment-order-integrations.svg":::
 
 > [!NOTE]
 > Having the shipment order line field data related to the released products in the [**Supply Chain Management product information management module**](../pim/product-information.md) requires the products to be created before the system can accept the shipment order messages.
@@ -83,7 +85,9 @@ As a minimum, we recommend that you use the following  [**Business events**](../
 
 ## Inventory on-hand updates between the systems
 
-![Warehouse management only mode - internal process](./media/internal-wom-process.png)
+The following illustration shows the internal processes used for warehouse management only mode.
+
+:::image type="content" source="media/wms-only-internal-wom-process.svg" alt-text="Warehouse management only mode internal process." lightbox="media/wms-only-internal-wom-process.svg":::
 
 The Warehouse management module supports multiple inventory on-hand update processes using the [Counting journal](../inventory/inventory-journals.md#counting). For more information about the counting process, see [Cycle counting](cycle-counting.md).
 
