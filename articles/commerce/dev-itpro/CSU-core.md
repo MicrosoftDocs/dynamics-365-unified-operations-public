@@ -2,7 +2,7 @@
 title: Introduction to Commerce Scale Unit (CSU) Core
 description: This article provides an introduction to Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/27/2022
+ms.date: 08/04/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -58,5 +58,5 @@ The test results will contain a table that shows the status of compatible and no
 | Commerce runtime (CRT) | .NET Standard 2.0 | Version 10.0.23 or later |
 
 #### Migrate extensions to support CSU Core
-To run in CSU Core, extensions that were built by using the Retail SDK must be built using .NET Standard 2.0 as the target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are using the Retail SDK, it is highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce.sdk.md). Commerce SDK supports CSU core out of the box.
+To run in CSU Core, extensions that were built by using the Retail SDK must be built using .NET Standard 2.0 as the target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are using the Retail SDK, it is highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce-sdk.md). Commerce SDK supports CSU core out of the box.
 
