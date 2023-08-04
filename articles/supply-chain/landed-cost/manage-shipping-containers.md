@@ -41,6 +41,7 @@ You create a shipping container by opening or creating the voyage where you will
     - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
 
 1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
+1. On the Action Pane, select **Generate data** to refresh the list of orders shown in the **Inbound orders** FastTab based on your current filter settings. (Each time you change the filter settings, you must select this button to update the inbound orders list.)
 1. The **Inbound orders** FastTab shows all the qualifying purchase orders that match your filter settings. Select an inbound order to include in the new shipping container.
 1. On the **Lines to select** FastTab, select the checkbox for each purchase order line that you want to include in the new shipping container.
 1. Repeat steps 2 through 4 until you've found and selected all the order lines that you want to include in the new shipping container.
@@ -72,8 +73,8 @@ The following table describes the buttons that are available on the Action Pane 
 |---|---|
 | Edit voyage header | Opens the **Edit voyage** dialog, where you can view and update header information for the current voyage. |
 | Setup | Opens a drop-down dialog where you can choose which transaction types and sites to show on the page. |
-| Generate data | Generate transaction data for the grid on the **Inbound orders** FastTab.  |
-| Display dimensions | Select the inventory dimensions that should be shown in the grid on the **Lines to select** FastTab. |
+| Generate data | Updates the list of orders shown in the **Inbound orders** FastTab based on the current filter settings. You must select this button to update the inbound orders list each time you change the filter settings. |
+| Display dimensions | Opens a dialog where you can select the inventory dimensions that should be shown in the grid on the **Lines to select** FastTab. |
 
 ## View shipping container lists and details
 
