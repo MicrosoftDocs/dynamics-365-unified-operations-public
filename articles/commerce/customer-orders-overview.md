@@ -4,7 +4,7 @@
 title: Customer orders in point of sale (POS)
 description: This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 08/01/2023
+ms.date: 08/04/2023
 ms.topic: article
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User, Developer, IT Pro
@@ -175,7 +175,10 @@ After an order is created, the items are picked up by the customer from a store 
 
 ## Asynchronous transaction flow for customer orders
 
-Customer orders can be created in POS in either synchronous mode or asynchronous mode. Microsoft recommends to **use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.**
+Customer orders can be created in POS in either synchronous mode or asynchronous mode. 
+
+> [!IMPORTANT]
+> Microsoft recommends that you use the asynchronous order creation mode, because it's much more performant than synchronous order creation mode and provides a better user experience.
 
 ### Enable customer orders to be created in asynchronous mode
 
