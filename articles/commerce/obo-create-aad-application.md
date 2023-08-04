@@ -47,17 +47,17 @@ After you complete the registration, locate the application that you created (fo
 1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID). For example, **88760a037-ea1e-4e04-8e50-0a8dfcb4eb50**
 1. In the **Essentials** section, click **Add an Application ID URI**
 1. Click **Add a scope**
-1. Application ID URI will be generated for you. Click **Save and continue**
+1. Application ID URI is generated for you. Click **Save and continue**
 1. For **Scope** Name, select **user_impersonation**
-1. For **Admin consent display name**, select **obo user impersonation**
-1. For **Admin consent discription**, select **obo user impersonation**
+1. For **Admin consent display name**, select **'obo user impersonation'** or any other name
+1. For **Admin consent description**, select **'obo user impersonation'** or any other description
 1. Click **Save**
 1. On the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
 1. In the **Description** field, enter a description of the client secret (for example, **clientsecret1**).
 1. Under **Expires**, select the duration that the secret is valid for.
 1. Select **Add**.
-1. Copy and save the secret value. You'll use it as the application secret in your client application code.
+1. Copy and save the secret value to be used later. 
 
     > [!IMPORTANT]
     > The secret value is never shown again after you leave the **Certificates & secrets** page. Therefore, be sure to copy it.
