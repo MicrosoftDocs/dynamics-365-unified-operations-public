@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.36 (September 2023)
+title: Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.36. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.36 (September 2023)
+# Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -21,7 +21,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Features included in this release
 
@@ -77,7 +77,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.36 includes platform updates. To learn more, see [Platform updates for version 10.0.36 of Finance and Operations apps (September 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-36.md) <!--KFM: Confirm link -->.
+Microsoft Dynamics 365 Supply Chain Management 10.0.36 includes platform updates. To learn more, see [Platform updates for version 10.0.36 of Finance and Operations apps (October 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-36.md).
 
 ### Bug fixes
 
