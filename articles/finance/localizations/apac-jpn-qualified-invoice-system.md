@@ -20,7 +20,7 @@ ms.reviewer: kfend
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: 
+ms.author: ankviklis 
 ms.search.validFrom: 2023-08-11
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Qualified Invoice System in Japan: This is a new system for issuing and reporting invoices with consumption tax information in Japan. It starts from October 2023 and aims to improve the accuracy and transparency of the tax regime. Taxpayers must issue and receive qualified invoices that have certain information, such as the registration number, the tax rate, and the tax amount by rate. They must also report these invoices electronically to the tax authorities. To claim input tax credits, taxpayers must receive and report qualified invoices from their suppliers, unless there are some exceptions. The system is similar to the VAT or GST systems in other countries, such as the EU or Australia. It also supports e-invoicing using the Peppol standard.
+Qualified Invoice System is a new system for issuing and reporting invoices with consumption tax information in Japan. It starts from October 2023 and aims to improve the accuracy and transparency of the tax regime. Taxpayers must issue and receive qualified invoices that have certain information, such as the registration number, the tax rate, and the tax amount by rate. They must also report these invoices electronically to the tax authorities. To claim input tax credits, taxpayers must receive and report qualified invoices from their suppliers, unless there are some exceptions. The system is similar to the VAT or GST systems in other countries, such as the EU or Australia. It also supports e-invoicing using the Peppol standard.
 Dynamics 365 Finance localization for Japan has extended its invoicing functionality in Accounts payable and Accounts receivable to cover the new system requirements. This article explains how this system works and how to set it up in Finance.
 The invoicing functionality in Finance helps you comply with the new system requirements in Japan. It also lets you use e-invoicing to follow the local standards and global trends. You can use Finance to:
 - Maintain the qualified invoice issuer registration numbers of your company and your vendors and customers. You can use a different registration number for your company if it is not the primary address, but it is in Japan and it is the primary address for the country.
@@ -63,7 +63,7 @@ To work with registration numbers, you need to:
 - Link the registration type to the “Qualified invoice issuer” registration category.
 - Add your company’s registration number to its primary address in Japan.
 
-For more information, see [Registration IDs](/dynamics365/finance/localizations/emea-registration-ids). This framework is extended to provide the possibility to maintain the qualified invoice issuer registration numbers of the company and its counterparties, that is, vendors and customers. The qualified invoice issuer number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices and free text invoices. 
+For more information, see [Registration IDs](/dynamics365/finance/localizations/emea-registration-ids). This framework is extended to provide the possibility to maintain the qualified invoice issuer registration numbers of the company and its counterparties, that is, vendors and customers. The qualified invoice issuer number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
 
 ## Setting up Sales tax for JCT
 In order to work with the company's and its counterparties' "Qualified invoice issuer" (QII) registration numbers, the following steps should be performed:
@@ -77,16 +77,17 @@ To work with consumption taxes, you need to:
 - Specify sales tax groups on vendor and customer records: one vendor as qualified and another one as non-qualified.
 - Specify item sales tax groups on items: two for standard rate and another two for reduced rate.
 
-## Setting up Invoices in Account Receivable
-In Accounts receivable -> Form setup:
-1. General -> Sales tax specification = Registration currency
-1. Invoice -> Print tax exempt number on invoice = Yes
-1. Invoice -> Print qualified invoice issuer number on invoice = Yes
-1. Free text invoice -> Print tax exempt number on invoice = Yes
-1. Free text invoice -> Print qualified invoice issuer number on invoice = Yes
-1. Print management:
-	i. Customer invoice -> Original: Report format = SalesInvoice.Report_JP
-	ii. Free text invoice -> Original: Report format = FreeTextInvoice.Report_JP
+## Setting up Invoices layouts in Account Receivable
+Go to **Accounts receivable -> Setup -> Forms -> Form setup** and make configuration as follows:
+1. **General** tab -> **Sales tax specification = Registration currency**
+1. **General** tab -> **Print management** button:
+    i. **Customer invoice** -> Original: **Report format = SalesInvoice.Report_JP**
+    ii. **Free text invoice** -> Original: **Report format = FreeTextInvoice.Report_JP**
+1. **Invoice** tab -> **Print tax exempt number on invoice = Yes**
+1. **Invoice** tab -> **Print qualified invoice issuer number on invoice = Yes**
+1. **Free text invoice** tab -> **Print tax exempt number on invoice = Yes**
+1. **Free text invoice** tab -> **Print qualified invoice issuer number on invoice = Yes**
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
