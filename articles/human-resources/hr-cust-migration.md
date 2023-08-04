@@ -5,8 +5,8 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 05/17/2023
-ms.topic: article
+ms.date: 08/02/2023
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
@@ -35,6 +35,16 @@ ms.dyn365.ops.version: Human Resources
 
 Customer migration is a "lift-and-shift migration" (movement) of a customer database to the finance and operations infrastructure. Automated migration tooling is used for it. The result is a new finance and operations environment that uses the customer's Human Resources database.
 
+
+#### Human Resources migration office hours
+ 
+As has been announced, the infrastructure for the standalone Human Resources application is scheduled to be discontinued after December 31, 2023. Customers might have questions about Human Resources migration. We invite you to office hours to discuss any questions. If you're interested in joining office hours, email <dyn365hrmigration@microsoft.com>.
+
+#### Human Resources migration TechTalk
+ 
+To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
+
+
 ## Prerequisites
 
 ### User access and permissions
@@ -47,7 +57,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 
  - Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
  - Create a new Dataverse environment by using the Power Platform admin center.
- - Copy the existing Dataverse environment, which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
+ - Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
 
 > [!NOTE]
 > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
@@ -84,7 +94,7 @@ After you've created a new Lifecycle Services project, follow these steps to set
 2. Complete the project settings. As part of this step, you should configure the SharePoint Online library, Azure DevOps, and Azure connections if they are required. For more information, see [Lifecycle Services (LCS) user guide](../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 > [!NOTE]
-> Customers can use an existing Azure DevOps project and the associated Personal Access Security Token. If an existing project is used, the configurations that are related to the project are automatically available and can be reviewed for accuracy.
+> Customers can use an existing Azure DevOps Project and the associated Personal Access Security Token. If an existing project is used, the configurations that are related to the project are automatically available and can be reviewed for accuracy.
 
 ### Migrate a Human Resources sandbox environment
 
@@ -207,7 +217,7 @@ The environment state will show the deployment progress. The state will be chang
 11. Confirm that the status of the dual-write Human Resources app is **Enabled**.
 12. Select the dual-write Human Resources app, and then select **Install**.
 13. In the **Install dual-write Dynamics 365 Human Resources app** pane, select the appropriate environment to install the package in.
-14. Select checkbox to agree to the terms of service, and then select **Install**.
+14. Select the checkbox to agree to the terms of service, and then select **Install**.
 15. In the Dynamics 365 app environment, the status will be **Installing** while the installation is in progress. It will be updated to **Installed** when the installation is completed.
 
 ##### Review and apply a dual-write solution
@@ -231,3 +241,4 @@ This section outlines recommendations for migrating from the standalone infrastr
 - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you do the first migration. This refresh should include your Dataverse environment that is connected to the sandbox environment that you plan to migrate to.
 - We highly recommend that you use a service account when you deploy, migrate, and create your Lifecycle Services project.
 - Plan to upgrade the sandbox environment for UAT validation on the latest general availability (GA) release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).
+

@@ -23,6 +23,7 @@ To see what's new or changed in the Platform updates for finance and operations 
 
 | **Version**        | **Build number** | **Auto-update availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Platform updates for 10.0.36 | 7.0.7036 | September 2023    | [Platform updates for version 10.0.36 of finance and operations apps](whats-new-platform-updates-10-0-36.md)  |
 | Platform updates for 10.0.35 | 7.0.6972 | July 2023    | [Platform updates for version 10.0.35 of finance and operations apps](whats-new-platform-updates-10-0-35.md)  |
 | Platform updates for 10.0.34 | 7.0.6931 | June 2023    | [Platform updates for version 10.0.34 of finance and operations apps](whats-new-platform-updates-10-0-34.md)  |
 | Platform updates for 10.0.33 | 7.0.6861 | April 2023    | [Platform updates for version 10.0.33 of finance and operations apps](whats-new-platform-updates-10-0-33.md)  |
@@ -30,9 +31,9 @@ To see what's new or changed in the Platform updates for finance and operations 
 | Platform updates for 10.0.31 | 7.0.6651 | February 2023    | [Platform updates for version 10.0.31 of finance and operations apps](whats-new-platform-updates-10-0-31.md)  |
 | Platform updates for 10.0.30 | 7.0.6592 | November 2022    | [Platform updates for version 10.0.30 of finance and operations apps](whats-new-platform-updates-10-0-30.md)  |
 | Platform updates for 10.0.29 | 7.0.6545 | September 2022    | [Platform updates for version 10.0.29 of finance and operations apps](whats-new-platform-updates-10-0-29.md)  |
-| Platform updates for 10.0.28 | 7.0.6441 | August 2022    | [Platform updates for version 10.0.28 of finance and operations apps](whats-new-platform-updates-10-0-28.md)  |
+| Platform updates for 10.0.28 | 7.0.6441 | July 2022    | [Platform updates for version 10.0.28 of finance and operations apps](whats-new-platform-updates-10-0-28.md)  |
 | Platform updates for 10.0.27 | 7.0.6395 | July 2022    | [Platform updates for version 10.0.27 of finance and operations apps](whats-new-platform-updates-10-0-27.md)  |
-| Platform updates for 10.0.26 | 7.0.6354 | May 2022    | [Platform updates for version 10.0.26 of finance and operations apps](whats-new-platform-updates-10-0-26.md)  |
+| Platform updates for 10.0.26 | 7.0.6354 | April 2022    | [Platform updates for version 10.0.26 of finance and operations apps](whats-new-platform-updates-10-0-26.md)  |
 | Platform updates for 10.0.25 | 7.0.6316 | April 2022    | [Platform updates for version 10.0.25 of finance and operations apps](whats-new-platform-updates-10-0-25.md)  |
 | Platform updates for 10.0.24 | 7.0.6253 | February 2022    | [Platform updates for version 10.0.24 of finance and operations apps](whats-new-platform-updates-10-0-24.md)  |
 | Platform updates for 10.0.23 | 7.0.6206 | January 2022    | [Platform updates for version 10.0.23 of finance and operations apps](whats-new-platform-updates-10-0-23.md)  |

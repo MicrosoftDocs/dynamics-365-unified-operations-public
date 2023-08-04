@@ -13,9 +13,6 @@ ms.custom: bap-template
 # Print labels using an external service
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.34 GA -->
 
 This article describes how to set up and print labels by using an external service. This feature enables direct interaction between Microsoft Dynamics 365 Supply Chain Management and third-party solutions by providing a framework for communicating via HTTP APIs, without requiring the [Document Routing Agent (DRA)](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). You can design and print different types of labels by using third-party labeling products, such as [Seagull Scientific BarTender®](label-printing-using-bartender.md) and [Loftware NiceLabel](label-printing-using-nicelabel.md).
 
@@ -31,7 +28,9 @@ The following illustrations show how printing through the DRA compares to printi
 
 For more information about the document routing framework, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md).
 
-For an example that shows how to set up this feature for a specific third-party label printing service (in this case, Loftware NiceLabel), see [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md).
+For an example that shows how to set up this feature for the Loftware NiceLabel third-party label printing service, see [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md).
+
+For an example that shows how to set up this feature for the Seagull Scientific BarTender third-party label printing service, see [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md).
 
 ## Prerequisites
 
@@ -160,6 +159,7 @@ Use the following procedure to link a printer with the external print service.
         - *Document routing agent/Hybrid* – Connect to a DRA printer, or use the DRA as a fallback for the external service if the service can't print the label.
 
     - **Printer name** – Enter or select the printer name. This value represents an internal Supply Chain Management printer name. If the printer is already configured as a DRA printer, you can select its name in the lookup dialog box. To set up an external service, you must specify the printer name. That name must not already be used for a DRA printer. When you enter a name for an external service printer, we recommend that you use a prefix or another method to keep the names of external service printers separate from printers that you might register through the DRA in the future.
+    - **Printer stock type** – Select a *printer stock type*. A printer stock type typically describes the type of paper that a specific printer uses. It's also used to specify the type of paper that a specific label layout should be printed to. For information about how to set up printer stock types, see [Set up printer stock types](dynamic-printing-selection.md#stock-type).
     - **Batch print** – Select this checkbox to enable the system to send multiple labels to the selected printer as a single batch job. Clear this checkbox to send one label at a time. Batch jobs will print labels all at once, without being interrupted by other print jobs.
     - **Maximum file size** – If you enabled batch printing for the printer, enter the maximum size, in megabytes, for batch files that are sent to it. The value must be more than 0 (zero). Batches that exceed the maximum size will be split into smaller batches before they're sent. A large file size will let you include more labels in each batch. However, large batches might take a long time to be printed and therefore delay other jobs. Alternatively, they might fail if they exceed the memory capacity of your printer. To find the maximum supported value, see your printer's specifications.
     - **Label print service instance** – Select the service instance to use. The example service instance value that was suggested earlier in this article was *External*.
@@ -240,4 +240,4 @@ Follow these steps to review the request log that's generated while labels are p
 - [Label Layouts](print-license-plate-labels-using-label-layouts.md)
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 - [Print labels using the Loftware NiceLabel label service solution](label-printing-using-nicelabel.md)
-- [Print labels using the BarTender label service solution](label-printing-using-bartender.md)
+- [Print labels using the Seagull Scientific BarTender label service solution](label-printing-using-bartender.md)

@@ -1,27 +1,26 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.35 (July 2023)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.35. 
 author: kamaybac
 ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 03/03/2023
+ms.date: 05/26/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.35 (July 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** July 2023
-- **General availability of release (auto-update):** August 2023
+- **General availability of release (auto-update):** July 2023
 
 ## Features included in this release
 
@@ -29,7 +28,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Planning | [Plan for manufacturing with Planning Optimization](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/plan-manufacturing-planning-optimization) | *Coming soon* | Enabled by default |
+| Planning | [Plan for manufacturing with Planning Optimization](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/plan-manufacturing-planning-optimization) | Planning Optimization now supports many manufacturing planning features that were previously only supported by the deprecated planning engine. This means that most manufacturers can now move to Planning Optimization to start taking advantage of its significant performance improvements and other benefits. | Enabled by default |
 | Warehouse management | [Capture multiple GS1 label segments simultaneously](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/capture-multiple-gs1-label-segments-simultaneously) | [GS1 bar codes](../warehousing/gs1-barcodes.md) | Enabled by default |
 | Warehouse management | Optimize location directive queries | [Optimize location directive queries](../warehousing/location-directives-optimize.md) | Enabled by default |
 | Warehouse management | [Optimize warehouse management implementation and maintenance](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/optimize-warehouse-management-implementation-maintenance) | <p>[Get started with setting up the Warehouse management module](../warehousing/get-started-with-setting-up-module.md)<p>[Print labels using an external service](../warehousing/label-printing-using-external-label-service.md)</p><p>[Print labels using the Loftware NiceLabel label service solution](../warehousing/label-printing-using-nicelabel.md)</p><p>[Print labels using the Seagull Scientific BarTender label service solution](../warehousing/label-printing-using-bartender.md)</p><p>[Warehouse groups](../warehousing/warehouse-groups.md)</p><p>[Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md)</p><p>[Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)</p><p>[Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)</p> | Enabled by default |
@@ -64,7 +63,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (July 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (August 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
 
 ### Bug fixes
 

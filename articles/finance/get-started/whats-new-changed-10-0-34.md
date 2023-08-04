@@ -38,7 +38,7 @@ on the following schedule:
 
 - **Preview of release:** April 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** July 2023
+- **General availability of release (auto-update):** June 2023
 
 ## Features included in this release
 
@@ -73,7 +73,7 @@ For information about the bug fixes included in this update, sign in to Microsof
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 

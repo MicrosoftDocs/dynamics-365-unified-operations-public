@@ -115,7 +115,7 @@ This example can be done in the **DEMF** legal entity.
 ### Create and post customer transactions
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select customer **DE-010**.
-2. On the **Address** FastTab, set **HUN** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU11651273**.
+2. On the **Address** FastTab, set **HUN** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU11651273**.
 3. Select **Save**.
 4. Go to **Accounts receivable** \> **Orders** \> **All sales orders**, create the following order, and then generate an invoice.
 
@@ -143,10 +143,10 @@ This example can be done in the **DEMF** legal entity.
 ### Create and post vendor transactions
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select vendor **DE-001**.
-2. On the **Address** FastTab, set **HUN** as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU34532985**.
+2. On the **Address** FastTab, set **HUN** as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **HU34532985**.
 3. Select **Save**, and close page.
 4. Select vendor **DE-01001**.
-5. On the **Address** FastTab, verify that **DEU** is set as the country, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE192873939**.
+5. On the **Address** FastTab, verify that **DEU** is set as the country/region, and then, on the **Invoice and Delivery** FastTab, set the **Tax exempt number** field to **DE192873939**.
 
 6. Go to **Accounts payable \> Invoices \> Invoice journal**, create the following two invoices, and then post them.
 

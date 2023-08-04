@@ -59,7 +59,7 @@ The VAT declaration in Denmark contains the following information.
 | Box B - supply of goods - to be reported to "EU-sales without VAT"/DK VIES. The value without VAT of intra-Union supply of goods                                                                                                           | Tax base            | **SalesGoodsEU**                                |
 | Box B - supplies - not to be reported to "EU-sales without VAT"/DK VIES. The value without VAT of certain intra-Union supplies, for instance of installation, assembly, distance sales, and new means of transport to non-taxable persons. | Tax base            | **SalesInstallationAssemblyEtcEU**              |
 | Box B - supply of services. The value without VAT of intra-Union supply of services for which the purchaser is liable to pay the VAT as reverse charge - must also be reported to "EU-sales without VAT"/DK VIES.                          | Tax base            | **SalesServicesEU**                             |
-| Box C - other supplies. Value of supply of other goods and services that are supplied without VAT in the territory of Denmark, to other EU Member States, and to third countries or third territories.                                     | Tax base            | **OtherSuppliesWithoutVAT**                     |
+| Box C - other supplies. Value of supply of other goods and services that are supplied without VAT in the territory of Denmark, to other EU Member States, and to other countries/regions or territories.                                     | Tax base            | **OtherSuppliesWithoutVAT**                     |
 
 #### Purchase reverse charge VAT
 

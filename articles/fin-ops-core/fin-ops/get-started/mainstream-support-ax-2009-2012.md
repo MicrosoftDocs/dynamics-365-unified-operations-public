@@ -69,7 +69,7 @@ No, there is no difference.
 
 If a hotfix is needed for a part of the system where Microsoft does not provide the source code and it is not a security bug, the hotfix will not be provided.
 
-### Can I access information about upcoming legislation changes in supported countries?
+### Can I access information about upcoming legislation changes in supported countries/regions?
 
 Yes, all legislation changes regardless of source (such as vendors, Microsoft research, or the localization community) are stored in the Lifecycle Service (LCS) alerting project. To access the LCS alerting project, follow these steps:
 1. **Sign up**: Send an email request to join the localization community (under NDA) at DynRegW@microsoft.com.

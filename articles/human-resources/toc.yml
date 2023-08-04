@@ -27,6 +27,8 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.36 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-36.md   
         - name: Human Resources 10.0.35 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-35.md                      
         - name: Human Resources 10.0.34 (merged infrastructure)          
@@ -1074,7 +1076,7 @@ items:
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
-    href: ../finance/index.md
+    href: ../finance/index.yml
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/index.md
   - name: Dynamics 365 Commerce

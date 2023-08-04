@@ -1,0 +1,5 @@
+An AI system includes not only the technology, but also the people who use it, the people who are affected by it, and the environment that it's deployed in. Creating a system that's suitable for its intended purpose requires an understanding of how the technology works, what its capabilities and limitations are, and how the best performance can be achieved.
+
+Microsoft transparency notes are intended to help you understand how AI technology works, the choices that system owners can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use transparency notes when you develop or deploy your own system, or you can share them with the people who will use or be affected by your system.
+
+Transparency notes are part of a broader effort to put Microsoft AI principles into practice. For more information, see [Responsible AI principles from Microsoft](https://www.microsoft.com/ai/responsible-ai).

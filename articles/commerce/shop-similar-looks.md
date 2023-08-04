@@ -2,7 +2,7 @@
 title: Enable ""shop similar looks"" recommendations
 description: This article describes how to enable ""shop similar looks"" product recommendations in Microsoft Dynamics 365 Commerce.
 author: bebeale
-ms.date: 08/06/2020
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 

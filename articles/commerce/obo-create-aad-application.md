@@ -4,7 +4,7 @@
 title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 03/03/2023
+ms.date: 06/16/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -28,7 +28,7 @@ To create an Azure AD application for account manager sign-in, follow these step
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Go to the directory that contains the Azure AD business-to-business (B2B) tenant that's being used for sign-in in headquarters.
 1. In the row of Azure services, select **Azure Active Directory**.
-1. On the **Manage** menu, select **App Registration**, and then select **New Registrations**.
+1. On the **Manage** menu, select **App Registration**, and then select **New Registration**.
 1. Enter a name for the application (for example, **Account Manager Employer Auth**).
 1. Under **Supported account types**, select **Accounts in this organizational directory only (<YOUR-TENANT-NAME> only - Single tenant)**.
 1. Under **Redirect URI**, select **Web**, and then, in the URL field, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain.

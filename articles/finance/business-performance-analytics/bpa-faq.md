@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 05/24/2023
+ms.date: 07/25/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -22,11 +22,11 @@ This article answers frequently asked questions about business performance analy
 
 ### How do I sign up for the public preview of business performance analytics?
 
-We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback about transaction volumes. Our initial focus is on customers who have transaction volumes in the millions, but fewer than 10 million rows. 
+We're implementing a public preview to ensure that we can provide a successful experience for our customers and obtain valuable feedback. To sign up for public preview, follow the steps listed [here](install-bpa.md#install-the-business-performance-analytics-app).
 
 ### What's the estimated time that's required to set up business performance analytics?
 
-The setup of business performance analytics takes about 30 minutes. However, it takes 12 to 24 hours for data to be available on reports.
+The setup of business performance analytics takes about 30 minutes. However, it takes up to 24 hours for data to be available on reports.
 
 ### I received an error during the installation of business performance analytics. How do I fix it?
 
@@ -46,7 +46,7 @@ The following errors are likely to occur if another operation is in progress dur
 
 ### When will data be available in reports after the business performance analytics is installed for the first time?
 
-Data will be available within 12 to 24 hours after installation is completed.
+Data will be available after 24 hours after installation is completed.
 
 ### When will data be available on reports?
 
@@ -54,7 +54,7 @@ We recommend that you check 24 hours after the installation of business performa
 
 ### How many years of data are available on reports?
 
-Business performance analytics has data for the current fiscal year plus the previous two years.
+Business performance analytics has data for the current fiscal year plus the previous three years.
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
@@ -188,7 +188,7 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### Is there any cost to install and use business performance analytics during public preview?
 
-No. The data is restricted to the current fiscal year plus the previous two years.
+No. The data is restricted to the current fiscal year plus the previous three fiscal years.
 
 ### How do I know when a new release of business performance analytics is available?
 

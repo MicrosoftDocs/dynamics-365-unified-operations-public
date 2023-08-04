@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 04/04/2023
+ms.date: 06/04/2023
 ms.custom: bap-template
 audience: Application User
 ---
@@ -37,9 +37,22 @@ There's currently no timeline for full removal of the deprecated built-in planni
 
 ## New deployments
 
-Planning Optimization is the standard master planning engine for all new cloud deployments. If you're setting up a new deployment that requires functionality that isn't currently supported by Planning Optimization, you can request an exception that will allow you to use the deprecated master planning engine instead.
+Planning Optimization is now the standard master planning engine and must be used for all new cloud deployments. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
 
-Starting with Supply Chain Management version 10.0.32, if you're rolling out new companies (legal entities) for an implementation that you're still developing before going live, you must use Planning Optimization for the new companies. However, you can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. Therefore, Microsoft will now grant exceptions on a per-company basis. For instructions on how to set a company to continue to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
+## Adding a new legal entity to an existing environment
+
+When you add a new legal entity (company) to an existing environment, that company must use Planning Optimization. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any newly added legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
+
+You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/get-started.md#exclude-po).
+
+> [!NOTE]
+> Remember that you must still move each legal entity to Planning Optimization once they are supported.
+
+## If you use kanban or are going live very soon and need time to test Planning Optimization
+
+All new deployments and legal entities must use Planning Optimization from the beginning. However, if you have been preparing a new deployment for some time, and the functionality you needed wasn't yet supported by Planning Optimization while you were developing it, then you can still go live using the deprecated master planning engine for that deployment until you've had enough time to install and test Planning Optimization on it.
+
+Planning Optimization doesn't yet support kanban, so if you need to use kanban, then you can go live using the deprecated planning engine for now. You should still plan to move to Planning Optimization as soon as kanban is supported.
 
 ## Existing deployments
 
@@ -74,11 +87,15 @@ As of Supply Chain Management version 10.0.32, the process of evaluating your sy
 
 If the system detects that all the relevant features that you're using are supported by Planning Optimization, but you're still running the deprecated planning engine, it will ask you to migrate. The next time that you manually run master planning, the system will show the following message:
 
-> You are supported to use the non-deprecated and faster master planning (Planning Optimization). For more information, see [Get started with master planning](planning-optimization/get-started.md#install-enable-po)
+> You are supported to use the non-deprecated and faster master planning (Planning Optimization). More information about it on: https://go.microsoft.com/fwlink/?link=2220161.
 >
 > We need you to provide some information regarding master planning.
 >
 > Do you have customizations on the master planning engine?
+
+The following screenshot shows how the message looks.
+
+[<img src="media/exception-process-dialog.png" alt="The Exception process dialog." title="The Exception process dialog" width="720" />](media/exception-process-dialog.png#lightbox)
 
 If you haven't customized the master planning engine for this deployment, you must migrate to Planning Optimization. If you require some more time to test and migrate, select the time that you'll require. The system will automatically apply an exception for the selected time.
 

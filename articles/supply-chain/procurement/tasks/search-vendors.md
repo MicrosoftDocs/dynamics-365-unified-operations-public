@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Learn how to search for vendors based on specific criteria. This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country. You can run this procedure in demo data company USMF, or on your own data. This task would usually be carried out by a procurement professional.
+Learn how to search for vendors based on specific criteria. This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country/region. You can run this procedure in demo data company USMF, or on your own data. This task would usually be carried out by a procurement professional.
 
 1. Go to Procurement and sourcing > Vendors > Vendor search.
 2. Click on the Plus icon to open the Procurement category selection page.  

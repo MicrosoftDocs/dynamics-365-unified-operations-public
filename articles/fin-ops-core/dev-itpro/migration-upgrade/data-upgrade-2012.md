@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in development environments
 description: This article explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest finance and operations development environment.
 author: laneswenka
-ms.date: 06/03/2022
+ms.date: 08/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 106163
 ms.assetid: 
@@ -38,9 +38,9 @@ This is an exciting moment in the upgrade project. The output of this task provi
 Before you run this process in a shared sandbox environment, we recommend that you run it in a development environment. There are two reasons for this approach:
 
 - It provides local data that developers can write and test their custom data upgrade scripts against.
-- It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. However, larger sandbox environments don't allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
+- It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
-We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the issues it identifies before running data upgrade - this will help ensure that your data upgrade is quicker and easier.
+We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the identified issues before running data upgrade. This helps ensure that your data upgrade is quicker and easier.
 
 ## End-to-end data upgrade process
 
@@ -48,29 +48,29 @@ We strongly recommend that you run the [Upgrade analyzer](upgrade-analyzer-tool.
 
 ### Prerequisites
 
-Ensure that you've completed the pre-upgrade checklist in AX 2012. For more information, see [Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
+Ensure that you've completed the preupgrade checklist in AX 2012. For more information, see [Preupgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It is recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
 
 
 ### Back up your AX 2012 database
 
-To back up your AX 2012 database, use the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
+Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
 
 > [!NOTE]
-> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If you're using a different collation, contact Microsoft Support for assistance. 
+> The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If your database is a different collation, follow these steps: [Change the database collation for development environments](coll-dev-env.md). 
 
 ### Upload the backup to Azure Storage
 
-If your developer environment is hosted as a VM locally or in Azure, you will need to transfer the 2012 database backup to it. With a local VM you may be able to transfer the file directly across the network (if you have configured the virtual network to allow that) but for an Azure hosted VM we recommend that you upload your backup to Azure Storage (using your own secure file transfer service or SFTP is also a valid option). You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then download it in your development environment.
+If your developer environment is hosted as a VM locally or in Azure, you need to transfer the 2012 database backup to it. With a local VM, you may be able to transfer the file directly across the network if the virtual network allows. For an Azure hosted VM, we recommend that you upload your backup to Azure Storage using your own secure file transfer service or SFTP. You would need to provide your own Azure storage account for this. There are free tools to help you to move files between Azure storage, from a command line you can use [Azcopy](/azure/storage/storage-use-azcopy), or for a GUI experience you can use [Microsoft Azure storage explorer](https://storageexplorer.com/). Use one of these tools to first upload the backup from your on-premises environment to Azure storage and then download it in your development environment.
 
 ### Download and restore the backup to the customer-managed development environment
 
 > [!NOTE]
 > Developer environments are only supported as customer-managed, [cloud-hosted environments](../dev-tools/access-instances.md). By using cloud-hosted environments, you can increase the drive space so that it meets your own specifications.
 
-When you restore the backup to the new development environment, don't overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. In addition, because the upgrade process is very disk intensive, you might want to consider using premium storage to deploy the cloud-hosted environment, to help improve performance and timing.
+When you restore the backup to the new development environment, don't overwrite the existing AXDB database. Instead, restore the AX 2012 database next to the original databases. The upgrade process is very disk intensive, consider using premium storage to deploy the cloud-hosted environment to help improve performance and timing.
 
 To speed up the database restore process, you can change the SQL Server service account to the **BuiltIn\\Admin** user. Details about that user account are available on the environment page in Microsoft Dynamics Lifecycle Services (LCS). The restore process can then use instant file initialization. For more information, see [Database Instant File Initialization](/sql/relational-databases/databases/database-instant-file-initialization).
 
@@ -82,6 +82,8 @@ After the database is restored, stop the following services:
 - Microsoft Dynamics Lifecycle Services Diagnostic Service
 - World wide web publishing service
 
+> [!NOTE]
+> Ensure these services remained stopped during the upgrade. Rebooting the server will start these again. 
 
 Next, rename the original AXDB database **AXDB_orig**. This database might be useful as reference later, when you develop code.
 ```sql
@@ -100,17 +102,18 @@ Finally, rename the newly restored AX 2012 database **AXDB**.
 To get the latest data upgrade deployable package for a target environment that is running the latest update, download the latest binary updates from LCS Shared asset library.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/).
-2. Select the **Shared asset library** tile.
-3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
-4. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
+1. Select the **Shared asset library** tile.
+1. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
+1. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
 
     For example, if you're upgrading to version 10.0.26, the package name will be **AX2012DataUpgrade-10.0.26**.
 
-5. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
-6. Select and hold (or right-click) the download, and then select **Properties**.
-7. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
-8. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
-9. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
+1. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
+1. Select and hold (or right-click) the download, and then select **Properties**.
+1. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
+1. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
+1. Ensure the services you stopped in the **Download and restore the backup to the customer-managed development environment** step above are still stopped. If these are running, you will get locking issues on the database. 
+1. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
 
     ```PowerShell
     .\AXUpdateInstaller.exe generate -runbookid="MajorVersionDataUpgrade-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="MajorVersionDataUpgrade-runbook.xml"
@@ -123,7 +126,7 @@ To get the latest data upgrade deployable package for a target environment that 
 
 ### Monitoring the data upgrade
 
-The deployable package has a single runbook step that processes the whole upgrade. However, this step consists of the following sub-steps that are run in the background:
+The deployable package has a single runbook step that processes the whole upgrade. This step consists of the following substeps that are run in the background:
 
 - **PreReqs** – This step patches the SQL dictionary, applies SQL sequences instead of system sequences, modifies user info and system variables, does database synchronization of system tables, and does additive synchronization of new tables.
 - **PreSync** – This step invokes the first set of upgrade jobs via batch processing, mostly to disable unique indexes.
@@ -198,7 +201,7 @@ If the data upgrade runbook fails, you can retry the last step by using the **-r
 
 ### Review the runbook logs
 
-Logs are located in a sub-folder under the deployable package. Drill into the logs folder to find the logs for the runbook step that you're on, and review errors.
+Logs are located in a subfolder under the deployable package. Drill into the logs folder to find the logs for the runbook step that you're on, and review errors.
 
 ### View details about a PreSync or PostSync upgrade job
 

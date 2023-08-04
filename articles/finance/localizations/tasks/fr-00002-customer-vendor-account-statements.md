@@ -3,8 +3,8 @@
  
 title: FR-00002 Customer and vendor account statements
 description: You can print accounts statements for customers and vendors that display information for a time period that you select. 
-author: EvgenyPopovMBS
-ms.date: 08/29/2018
+author: kfend
+ms.date: 08/01/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: France
 # ms.search.industry: 
-ms.author: epopov
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,28 +27,21 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-You can print accounts statements for customers and vendors that display information for a time period that you select.
-
-This procedure was created using the demo data company FRSI. 
-
-This functionality is available for legal entities whose primary address is in France.
-
-
-
+You can print accounts statements for customers and vendors that display information for a time period that you select. This functionality is available for legal entities whose primary address is in France.
 
 ## Print the customer account statement report
-1. Go to Accounts receivable > Inquiries and reports > Customers > Customer account statement report - France.
-2. In the From date field, enter a date.
-3. In the To date field, enter a date.
-4. In the Assessment date field, enter a date.
-5. Click OK.
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Customers** > **Customer account statement report - France**.
+2. In the **From date** field, enter a date.
+3. In the **To date** field, enter a date.
+4. In the **Assessment date** field, enter a date.
+5. Select **OK**.
 
 ## Print the vendor account statement report
-1. Go to Accounts payable > Inquiries and reports > Vendor reports > Account statement.
-2. In the From date field, enter a date.
-3. In the To date field, enter a date.
-4. In the Assessment date field, enter a date.
-5. Click OK.
+1. Go to **Accounts payable** > **Inquiries and reports** > **Vendor reports** > **Account statement**.
+2. In the **From date** field, enter a date.
+3. In the **To date** field, enter a date.
+4. In the **Assessment date** field, enter a date.
+5. Select **OK**.
 
 
 

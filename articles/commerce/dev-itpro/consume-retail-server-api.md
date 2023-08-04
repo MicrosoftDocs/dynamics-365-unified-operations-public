@@ -87,7 +87,7 @@ When registration is completed, the Azure portal shows the **Overview** pane for
 
 The client secret is also known as an *application password*. It's a string value that your app can use instead of a certificate to identity itself.
 
-1. In the Azure portal, in **App registrations**, select your application (App registered for the Retail server).
+1. In the Azure portal, in **App registrations**, select your application (App registered for the client).
 2. Select **Certificates & secrets** &gt; **New client secret**.
 3. Add a description for your client secret.
 4. Select a duration.

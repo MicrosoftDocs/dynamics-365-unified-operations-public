@@ -55,7 +55,7 @@ In this release of Finance and Operations, numerous enhancements have been made 
 In this release of Finance and Operations, a new parameter is added to the **Tax setup parameters** page, which allows user to choose based on which currency the tax should be calculated for Import/Export Order. By default, the **Transaction currency** allows you to choose which currency the tax should be calculated for an import/export order. By default, the **Transaction currency** is the same as the original system behavior. If you choose **Accounting currency**, the system will calculate the tax based on the assessable value in accounting currency.
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country/region, type of feature, and release.
 
 ## Additional resources
 

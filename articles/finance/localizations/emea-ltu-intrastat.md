@@ -15,7 +15,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Lithuanian Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Lithuanian Intrastat declaration. All the fields except **VAT number of trading partner** are included on both arrivals and dispatches. The **VAT number of trading partner** field is included only on dispatches.
 
@@ -292,7 +292,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 9. In the **Contact number/address** field, enter jodi@contoso.com.
 10. Select the **Primary** option.
 11. In the **Type** field, select **URL**.
-12. In the **Contact number/address** field, enter http://eu.contoso.com and then select the **Primary** option.
+12. In the **Contact number/address** field, enter the URL and then select the **Primary** option.
 
 ### Set up VAT IDs
 
@@ -390,7 +390,7 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
 10. On the **Contact information** FastTab, in the **Telephone** field, enter **425-555-5068.**
 11. In the **Fax** field, enter **425-555-5068.**
 12. In the **Email** field, enter authority@email.com.
-13. In the **Internet address** field, enter http://eu.authority.com.
+13. In the **Internet address** field, enter the URL.
 
 ### Set up foreign trade parameters
 
@@ -472,13 +472,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | The receiver's phone                                                    | 425-555-5068                                      |
     | The receiver's email                                                    | authority@email.com                               |
     | The receiver's fax                                                      | 425-555-5068                                      |
-    | The receiver's URL                                                      | http://eu.authority.com                           |
+    | The receiver's URL                                                      | URL                           |
     | Sender's VAT code                                                       | 1234567890                                        |
     | Sender's address                                                        | Ukmerges Street 120 Vilnius, VL LT-00001 LTU      |
     | Sender's phone                                                          | +49 123 456 789                                   |
     | Sender's email                                                          | jodi@contoso.com                                  |
     | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | http://eu.contoso.com                             |
+    | Sender's URL                                                            | URL                           |
     | Contact person's name                                                   | Manish Chopra                                     |
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |
@@ -565,13 +565,13 @@ This example shows how to post arrivals and dispatches for Intrastat by using th
     | The receiver's phone                                                    | 425-555-5068                                      |
     | The receiver's email                                                    | authority@email.com                               |
     | The receiver's fax                                                      | 425-555-5068                                      |
-    | The receiver's URL                                                      | http://eu.authority.com                           |
+    | The receiver's URL                                                      | URL                           |
     | Sender's VAT code                                                       | 1234567890                                        |
     | Sender's address                                                        | Ukmerges Street 120 Vilnius, VL LT-00001 LTU      |
     | Sender's phone                                                          | +49 123 456 789                                   |
     | Sender's email                                                          | jodi@contoso.com                                  |
     | Sender's fax                                                            | 425-555-5013                                      |
-    | Sender's URL                                                            | http://eu.contoso.com                             |
+    | Sender's URL                                                            | URL                             |
     | Contact person's name                                                   | Manish Chopra                                     |
     | Contact person's phone                                                  | 425-555-5049                                      |
     | Contact person's fax                                                    | 425-555-5049                                      |

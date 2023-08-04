@@ -4,7 +4,7 @@
 title: Monitoring and telemetry using Application Insights
 description: This article explains how to use, set up, and configure the Application Insights integration for finance and operations apps.
 author: LaneSwenka
-ms.date: 10/19/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -93,7 +93,7 @@ All the telemetry and events that are entered in Application Insights have the f
     > [!NOTE] 
     > This field is enabled only if **User sessions** telemetry is configured.
 
-- **client\_IP** – Application Insights always sets this field to **0.0.0.0** for compliance with the General Data Protection Regulation (GDPR). The Internet Protocol (IP) address that's provided is used to set the **client\_City**, **client\_StateOrProvince**, and **client\_CountryOrRegion** fields.
+- **client\_IP** – Application Insights always sets this field to **0.0.0.0** for compliance with privacy laws and regulations. The Internet Protocol (IP) address that's provided is used to set the **client\_City**, **client\_StateOrProvince**, and **client\_CountryOrRegion** fields.
 - **message** – This field is used to capture the error message that's shown to the user, in the user's local language, and the X++ stack trace where the error for failure-type telemetry originated.
 - **Custom properties – LegalEntity** – This field is set to the legal entity code where the telemetry originated.
 - **Custom properties – BatchJobId** – This field is set to the record ID of the batch job that resulted in the telemetry.

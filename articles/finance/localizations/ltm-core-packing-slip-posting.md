@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-You can add the information that's required for Latin American countries when you post a packing slip in an extended **LATAM** section. The information can be added to a sales order packing slip, a purchase order packing slip, and a packing slip from a project.
+You can add the information that's required for Latin American countries/regions when you post a packing slip in an extended **LATAM** section. The information can be added to a sales order packing slip, a purchase order packing slip, and a packing slip from a project.
 
 ## Prerequisites
 
