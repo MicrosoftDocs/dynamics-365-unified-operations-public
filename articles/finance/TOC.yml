@@ -3144,6 +3144,8 @@
             href: localizations/tasks/configure-main-accounts-asset-retirement.md
           - name: Consumption tax report
             href: localizations/apac-jpn-consumption-tax-report.md
+          - name: Qualified Invoice System
+            href: localizations/apac-jpn-qualified-invoice-system.md            
           - name: Consolidated invoices
             href: localizations/apac-jpn-consolidate-invoices.md
           - name: Create a fixed asset with additional depreciation
