@@ -40,7 +40,7 @@ CSU Core offers highly performant headless commerce APIs and the benefits of .NE
 
 ### Extensions
 
-If you plan to create extensions for headless commerce, it must be built by using NET Standard 2.0 as the target framework.
+If you plan to create extensions for headless commerce, it must be built by using .NET Standard 2.0 as the target framework.
 
 #### Validate your extension compatibility with CSU Core
 
@@ -54,9 +54,9 @@ The test results will contain a table that shows the status of compatible and no
 
 | Extension component | Extension project target framework | Commerce SDK |
 |--- | --- | --- |
-| Headless commerce APIs | NET Standard 2.0 | Version 10.0.23 or later |
-| Commerce runtime (CRT) | NET Standard 2.0 | Version 10.0.23 or later |
+| Headless commerce APIs | .NET Standard 2.0 | Version 10.0.23 or later |
+| Commerce runtime (CRT) | .NET Standard 2.0 | Version 10.0.23 or later |
 
 #### Migrate extensions to support CSU Core
-To run in CSU Core, extensions that were built by using the Retail SDK must be built using NET Standard 2.0 as target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are on Retail SDK, its highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce.sdk.md). Commerce SDK supports CSU core out of the box.
+To run in CSU Core, extensions that were built by using the Retail SDK must be built using .NET Standard 2.0 as the target framework. The CSU Core runtime is built by using the ASP .NET Core and .NET Core. Therefore, extensions that were created by using the legacy .NET framework and Retail SDK packages won't run in CSU Core.  If you are using the Retail SDK, it is highly recommended that you [Migrate the Retail SDK extensions to Commerce SDK](retail-sdk/migrate-commerce.sdk.md). Commerce SDK supports CSU core out of the box.
 
