@@ -3,7 +3,7 @@
 title: Human Resources Migration go-live readiness review
 description: This page provides guidance on how to prepare for a go-live with Dynamics 365 Human Resources.
 author: Priyanka
-ms.date: 10/13/2020
+ms.date: 8/5/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,9 +21,9 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: raprofit
-ms.search.validFrom: 2020-10-13
+ms.search.validFrom: 2023-8-5
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Prepare for Human Resources go-live
+# Human Resources Migration go-live readiness review
