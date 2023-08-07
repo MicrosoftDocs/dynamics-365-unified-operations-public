@@ -36,6 +36,8 @@
         href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/commerce
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
+      - name: Deploy a demo environment
+        href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
       - name: One Version service updates
         items:
         - name: One Version service updates overview
