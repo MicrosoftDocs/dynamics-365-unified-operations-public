@@ -15,6 +15,7 @@ ms.custom: bap-template
 # Analyze warehouse material movement through process mining
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The Microsoft Power Automate Process Mining feature offers *task mining* and *process mining* capabilities to help you better understand your business processes, so that you can optimize them. Dynamics 365 Supply Chain Management offers a *Warehouse material movement analysis* template for the Power Automate Process Mining. This template can be used to create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. It helps find inefficiencies that can be removed to improve the performance of the warehouse.
 
