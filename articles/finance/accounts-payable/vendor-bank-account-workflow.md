@@ -38,7 +38,7 @@ To set up the vendor bank approval workflow feature, follow these steps.
 
         - *Allow changes without approval* – The data entity will update values for all fields without processing the changes through the workflow.
         - *Reject changes* – The data entity will never update values for protected fields. The import will fail if it includes updates for protected fields.
-        - *Create change proposals* – The data entity will update values for non-protected fields, and it will add new values for protected fields as proposed changes. The data entity will then automatically start the workflow as required.
+        - *Create change proposals* – The data entity will update values for non-protected fields, and it will add new values for protected fields as proposed changes. The data entity will not automatically start the workflow, and you will need to submit the proposed changes as required.
 
 1. In the list of vendor bank account fields, select the **IsEnabled** checkbox for each field that requires approval.
 1. On the Action Pane, select **Save**.
