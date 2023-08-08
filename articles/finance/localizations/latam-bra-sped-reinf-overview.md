@@ -29,32 +29,41 @@ Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events thro
 
 ## Support scope
 
-- **Supported SPED-Reinf versions:** 1.4 and 1.5.1.
-- **Supported product versions:** Microsoft Dynamics AX 2012 R3 and Dynamics 365 Finance.
-- Electronic power of attorney (procuração eletronica) isn't supported.
+- **Supported SPED-REINF versions:** 1.4 and 1.5.1, 2.1.2(2.1.2 only in Dynamics 365).
+- **Supported product versions:** Dynamics 365 Finance.
+-   Electronic power of attorney (procuração eletronica) is not supported.
 
 ## Table of events
 
-| Event | Description | Event type | Supported |
-|---|---|---|---|
-| R-1000 | Taxpayer information | Initial | Yes |
-| R-1070 | Administrative and Judicial process | When a process is in place | Yes |
-| R-2010 | Acquired services | Periodic event | Yes |
-| R-2020 | Provided services | Periodic event | Yes |
-| R-2030 | Amounts received by sport associations | Periodic event | No |
-| R-2040 | Amounts paid to sport associations | Periodic event | No |
-| R-2050 | Trade of rural production by rural legal entities or agribusiness | Periodic event | No |
-| R-2055 | Acquisition from agriculture vendor | Periodic event | Yes |
-| R-2060 | INSS-CPRB assessment | Periodic event | Yes |
-| R-2098 | Reopening of periodic | Periodic event | Yes |
-| R-2099 | Closing | Periodic event | Yes |
-| R-3010 | Sport shows revenue | Non-periodic event | No |
-| R-5001 | Consolidated tax calculation basis by taxpayer | Non-periodic event | No |
-| R-5011 | Consolidated base and tax amount | Non-periodic event | Yes |
-| R-9000 | Deletion | Non-periodic event | Yes |
+| **Event** | **Description**                                                   | **Event type**             | **Supported** |
+|-----------|-------------------------------------------------------------------|----------------------------|---------------|
+| R-1000    | Taxpayer information                                              | Initial                    | Yes           |
+| R-1050    | Table of linked entities                                          | When a process is in place | Yes           |
+| R-1070    | Administrative and Judicial process                               | When a process is in place | Yes           |
+| R-2010    | Acquired services                                                 | Periodic event             | Yes           |
+| R-2020    | Provided services                                                 | Periodic event             | Yes           |
+| R-2030    | Amounts received by sport associations                            | Periodic event             | No            |
+| R-2040    | Amounts paid to sport associations                                | Periodic event             | No            |
+| R-2050    | Trade of rural production by rural legal entities or agribusiness | Periodic event             | No            |
+| R-2055    | Acquisition from agriculture vendor                               | Periodic event             | Yes           |
+| R-2060    | INSS-CPRB assessment                                              | Periodic event             | Yes           |
+| R-2098    | Reopening of periodic                                             | Periodic event             | Yes           |
+| R-2099    | Closing                                                           | Periodic event             | Yes           |
+| R-4010    | Payments/credits to individual beneficiaries                      | Periodic event             | Yes           |
+| R-4020    | Payment/credits and legal entity beneficiary                      | Periodic event             | Yes           |
+| R-4040    | Payment/credit to unidentified beneficiaries                      | Periodic event             | Yes           |
+| R-4080    | Withholding on Receipt: Known as auto-withhold                    | Periodic event             | Yes           |
+| R-4099    | Closing/Reopening of periodic events series R-4000                | Periodic event             | Yes           |
+| R-3010    | Sport shows revenue                                               | Non-periodic event         | No            |
+| R-5001    | Consolidated tax calculation basis by taxpayer                    | Non-periodic event         | No            |
+| R-5011    | Consolidated base and tax amount                                  | Non-periodic event         | No            |
+| R-9000    | Deletion                                                          | Non-periodic event         | Yes           |
+| R-9005    | Bases and taxes, withholdings                                     |                            |               |
+| R-        | Consolidation of withholdings                                     |                            |               |
 
 > [!NOTE]
 > Events R-2010 and R-2020 are supported for National Registry of Legal Entities (CNPJ) third parties. Event R-5011 is used to inquire about the status of closing event R-2099.
+> Events R-9005and R-9015 are considered the totalizers and they are not delivered by taxpayers, but by the Federal Revenue as the return of the bases to the taxpayers.
 
 Only taxpayers that comply with SPED-ECD are supported.
 
@@ -64,7 +73,16 @@ Only taxpayers that comply with SPED-ECD are supported.
 - Manual bookkeeping is required for the payment for settlement of the Social Security contribution on gross revenue (CPRB) amount that is due.
 - Payment of the CPRB amount that is due is out of scope.
 
-To generate and submit the related events to the tax authority, follow these steps.
+To generate events for R-4000 records, the parameters required for the related registrations are as follows:
+
+-   Individual Supplier Registration
+-   Legal Entity Registration
+-   Unidentified Beneficiary
+-   Purchase Order Receipts (it is necessary to configure the payment journal as per item 3 of this manual)
+-   General ledger with emphasis on Income Tax (IRRF)
+-   Service item registration with the "Income code" field
+
+For each event, there is a specific table provided by Brazilian Tax Authority, which contains the Income Nature Codes. In this case, the client will need to analyze which code best fits each event.
 
 1. [Set up electronic message functionality](latam-bra-sped-reinf-electronic-messages.md). 
 2. [Set up fiscal books](latam-bra-sped-reinf-setup-fiscal-books.md).
