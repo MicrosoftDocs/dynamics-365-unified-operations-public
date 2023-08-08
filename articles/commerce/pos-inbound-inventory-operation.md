@@ -53,8 +53,9 @@ The inbound inventory document list has three tabs:
 
 When you view documents on any of the tabs, the **Status** field helps you understand the stage that the document is in.
 
-- **Draft** – The transfer order document has only been saved locally to the store's channel database. No information about the transfer order request has yet been submitted to headquarters.
-- **Requested** – The purchase order or transfer order has been created in headquarters, and is fully open. No receipts have yet been processed against the document. For documents of the purchase order document type, receiving can begin at any time while the status is **Requested**.
+- **Draft** – The purchase order or transfer order document has only been saved locally to the store’s channel database. No information about the purchase order or transfer order request has been submitted to Commerce Headquarters.
+- **Created** - The purchase order request has been created in Commerce Headquarters, but not yet confirmed.
+- **Requested** – The purchase order or transfer order has been created in Commerce Headquarters and is fully open. No receipts have yet been processed against the document. For a purchase order, receiving can begin at any time while it’s in such status.
 - **Partially shipped** – The transfer order document has one or more lines or partial line quantities that have been posted as shipped by the outbound warehouse. These shipped lines are available to be received through the inbound operation.
 - **Fully shipped** – The transfer order has had all its lines and full line quantities posted as shipped by the outbound warehouse. The whole document is available to be received through the inbound operation.
 - **Partially received** – Some of the lines or line quantities on the purchase order or transfer order document have been received by the store, but some lines remain open.
@@ -66,9 +67,9 @@ When you view documents on any of the tabs, the **Status** field helps you under
 
 When you select a document line in the list, a **Details** pane appears. This pane shows additional information about the document, such as shipment and date information. A progress bar shows how many items must still be processed. If the document wasn't successfully processed to headquarters, the **Details** pane also shows error messages that are related to the failure.
 
-In the document list page view, you can select **Order details** on the app bar to view the document details. You can also activate receipt processing on eligible document lines.
+In the document list view, you can select **Order details** on the app bar to view the document details. You can also activate receipt processing on eligible document lines.
 
-In the document list page view, you can also create a new inbound transfer order request for a store. The documents remain in **Draft** status, and they can be adjusted or deleted until they are submitted to headquarters for processing. After the transfer order lines are submitted to headquarters, they can no longer be changed from the POS application.
+In the document list view, you can also create a new purchase order or inbound transfer order request for a store. The documents remain in **Draft** status and can be adjusted or deleted until they are submitted to Commerce Headquarters for processing.
 
 ## Receiving process
 
@@ -160,9 +161,29 @@ When users complete a purchase order receipt, they are prompted to enter a value
 
 When asynchronous document processing is used, the receipt is submitted through an asynchronous document framework. The time that it takes for the document to be posted depends on the size of the document (the number of lines) and the general processing traffic that is occurring on the server. Typically, this process occurs in a matter of seconds. If document posting fails, the user is notified through the **Inbound operation** document list, where the document status will be updated to **Processing failed**. The user can then select the failed document in POS to view the error messages and the reason for the failure in the **Details** pane. A failed document remains unposted and requires that the user return to the document lines by selecting **Order details** in POS. The user must then update the document with corrections, based on the errors. After a document is corrected, the user can try again to process it by selecting **Finish fulfillment** on the app bar.
 
-## Create an inbound transfer order
+## Create purchase order
 
-From POS, users can create new transfer order documents. To begin the process, select **New** on the app bar while you're in the main **Inbound operation** document list. You're then prompted to select a **Transfer from** warehouse or store that will provide the inventory to your store location. The values are limited to the selection that is defined in the configuration of the store's fulfillment group. In an inbound transfer request, your current store will always be the **Transfer to** warehouse for the transfer order. That value can't be changed.
+From POS, users can create new purchase order requests. To use this feature, please ensure the **Ability to create purchase order request in POS** feature is enabled in the Feature management workspace, and the **Allow create purchase order** permission is enabled in the user’s POS permission group.
+
+To begin the creation process, in the document list view, click **Create new** on the app bar, in the prompted dialog, select **New purchase order**, then choose a vendor that you want the purchase order to be shipped from. You can search a specific vendor by entering the vendor account ID or vendor name. Your current store will always be the **Ship to** warehouse for the to-be-created purchase order, which cannot be modified. You can specify the **Accounting date** and **Delivery date** as needed. You can also add a note that will be stored together with the purchase order header as an attachment to the document in Commerce Headquarters.
+
+> [!NOTE]
+> You cannot create purchase orders from POS if purchase order [change management workflow](https://learn.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce Headquarters. In that case, the purchase orders can only be created in HQ and must go through approval workflow.
+
+> [!NOTE]
+> You must run **1220 (Vendors)** distribution schedule job to sync the predefined vendor master data from Commerce Headquarters to channel databases, to use the vendor selection function. Also, intercompany vendor cannot be selected during purchase order creation from POS. 
+
+After the header information is created, you can add products to the purchase order request. To start the process of adding items and requested quantities, select **Add product**. In the prompted dialog, enter product number, select product variant (if applicable), and then specify the quantity. If you have barcode scanning device, you can simply scan the product barcodes to streamline the process. In the **Details** pane, you can also add a line specific note, which will be stored as a line attachment in Commerce Headquarters.
+
+After lines are entered on the purchase order request, you must select **Save** to save the document changes locally or select **Submit request** to send the request to Commerce Headquarters for further processing. If a document is saved locally, it can be found on the **Draft** tab of the document list view. While a document is in the **Draft** status, you can edit it by selecting **Edit**. You can add, update, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Draft** tab.
+
+After the draft document is successfully submitted to Commerce Headquarters, it appears on the **Active** tab of the document list view and has a status of **Created**. For purchase orders in such status, regardless of where (POS or HQ) the document was initially created, as long as the purchase order [change management workflow](https://learn.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is not enabled, users in the recipient store of the purchase order can edit the document by adding, updating or deleting lines as you require. You must resubmit the updated document to put the modification into effect. 
+
+From POS, users can also confirm purchase order requests to indicate commitment from vendors to deliver the goods as requested in the purchase orders. To use this feature, please ensure the **Ability to create purchase order request in POS** feature is enabled in the Feature management workspace, and the **Allow confirm purchase order** permission is enabled in the user’s POS permission group. Only purchase order in **Created** status can be confirmed. To confirm a purchase order, select the order in the document list view, click **View details** to open its document details view, and then select **Confirm order** on the app bar. After a purchase order is confirmed, its status is updated from **Created** to **Requested** and is ready for receiving as next step.
+
+## Create inbound transfer order
+
+From POS, users can create new transfer order documents. To begin the process, in the document list view, click **Create new** on the app bar, in the prompted dialog, select **New transfer order**, and then select a **Transfer from** warehouse or store that will provide the inventory to your store location. The values are limited to the selection that is defined in the configuration of the store's fulfillment group. In an inbound transfer request, your current store will always be the **Transfer to** warehouse for the transfer order. That value can't be changed.
 
 You can enter values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as you require. You can also add a note that will be stored together with the transfer order header, as an attachment to the document in Commerce Headquarters.
 
@@ -170,7 +191,7 @@ After the header information is created, you can add products to the transfer or
 
 After lines are entered on the inbound transfer order, you must select **Save** to save the document changes locally or **Submit request** to submit the order details to Commerce Headquarters for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. You should select **Save** only if you aren't ready to commit the request to Commerce Headquarters for processing.
 
-If a document is saved locally, it can be found on the **Drafts** tab of the **Inbound operation** document list. While a document is in **Draft** status, you can edit it by selecting **Edit**. You can update, add, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Drafts** tab.
+If a document is saved locally, it can be found on the **Draft** tab of the **Inbound operation** document list. While a document is in **Draft** status, you can edit it by selecting **Edit**. You can update, add, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Draft** tab.
 
 After the draft document is successfully submitted to Commerce Headquarters, it appears on the **Active** tab and has a status of **Requested**. At this point, users in the inbound store or warehouse can no longer edit the requested inbound transfer order document. Only users in the outbound warehouse can edit the document, by selecting **Outbound operation** in the POS application. The editing lock ensures that no conflicts occur because an inbound requestor changes the transfer order at the same time that the outbound shipper is actively picking and shipping the order. If changes are required from the inbound store or warehouse after the transfer order has been submitted, the outbound shipper should be contacted and asked to enter the changes.
 
