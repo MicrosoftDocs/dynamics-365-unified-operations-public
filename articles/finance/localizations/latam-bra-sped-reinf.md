@@ -194,9 +194,9 @@ Event R-1050 is used to report information about linked entities. This record pr
 1. Go to **Organization administration** > **Organizations** > **Fiscal establishments** > **Fiscal establishments**.
 2. On the **Fiscal establishment relations** tab, add any needed related information.
 
-Repro step – Add process.
+### Repro step
 
-Select **New **and set the following fields   
+1. Select **New** and set the following fields   
   ![Description automatically generated.](media/bra-Description-generated21.png)
 
 ## Event R-1070 – Administrative and judicial process
