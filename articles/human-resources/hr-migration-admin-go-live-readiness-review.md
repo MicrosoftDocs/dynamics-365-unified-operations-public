@@ -92,7 +92,7 @@ In addition, copy the following list into the email, and fill in the following i
 - Have all dual-write flows been tested and have the acceptance criteria been met at expected peak load?
 - Are you using managed solutions to follow application lifecycle management (ALM) best practices for your Dataverse (formerly CDS) custom entities and extensions?
 - Are notifications set up to alert users about any dual-write failures?
-- Confirm that you have read and understood the limitations for implementing dual-write: [System requirements for dual-write document](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req).
+- Confirm that you have read and understood the limitations for implementing dual-write: [System requirements for dual-write document](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
   
  #### Production Support and Maintenance 
 - Does the project team have a plan in place for regular production environment monitoring and maintenance routine?
@@ -105,6 +105,6 @@ In addition, copy the following list into the email, and fill in the following i
 
 ## See also
 
-[Dynamics 365 Human Resources customer migration](hr-cust-migration)
+[Dynamics 365 Human Resources customer migration](./hr-cust-migration)
 
-[Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live)
+[Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md)
