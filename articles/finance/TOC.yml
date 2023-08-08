@@ -5134,7 +5134,7 @@
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 
-    href: ../supply-chain/index.md
+    href: ../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
