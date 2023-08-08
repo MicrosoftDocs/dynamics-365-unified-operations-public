@@ -55,7 +55,7 @@ You create a shipping container by opening or creating the voyage where you will
 1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
 
     > [!NOTE]
-    > The **Run in the background** tab is available only if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
+    > The **Run in the background** tab is available only if the *Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
     >
     > Background processing won't be activated if the transfer quantity is less than the total quantity of the related purchase order line.
 

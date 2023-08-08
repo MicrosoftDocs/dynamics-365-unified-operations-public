@@ -69,22 +69,15 @@ The table also lists features that were previously in public preview but have ch
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
-| Cost management | Cost calculation level | Mandatory |
-| Cost management | Enable user-defined batch number setup for inventory closing reverse | Mandatory |
-| Cost management | Inventory aging report storage | Mandatory |
-| Cost management | Enable shipping container creation and update in batch mode | Generally available |
-| Cost management | Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages | Generally available |
-| Cost management | Generate data manually on voyage editor | Generally available |
-| Cost management | Performance improvements for post receipt function in Landed Cost | Generally available |
-| Inventory management | Inventory on-hand report data cleanup | Mandatory |
-| Inventory management | Using unit of measure and unit quantity in inventory journals | Mandatory |
-| Inventory management | Enable intercompany on-hand to only show nonzero on-hand quantity | On by default |
-| Inventory management | Enable warehouse items in Inventory Visibility | On by default |
-| Inventory management | Inventory Visibility integration | On by default |
-| Master planning | Azure Machine Learning Service for demand forecasting | Mandatory |
-| Master planning | Group transactions in Planning Optimization | Mandatory |
-| Master planning | Infinite capacity scheduling for Planning Optimization | Mandatory |
-| Master planning | Make-to-order supply automation | Mandatory |
+| Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | Mandatory |
+| Cost management | [Enable user-defined batch number setup for inventory closing reverse](../../finance/get-started/whats-new-changed-10-0-20.md) | Mandatory |
+| Cost management | [Inventory aging report storage](../cost-management/inventory-aging-report-storage.md) | Mandatory |
+| Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | Mandatory |
+| Inventory management | [Enable intercompany on-hand to only show nonzero on-hand quantity](whats-new-scm-10-0-28.md) | On by default |
+| Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | Mandatory |
+| Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | Mandatory |
+| Master planning | [Infinite capacity scheduling for Planning Optimization](../master-planning/planning-optimization/infinite-capacity-planning.md) | Mandatory |
+| Master planning | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Mandatory |
 | Master planning | Priority driven MRP support for Planning Optimization | Mandatory |
 | Master planning | CTP for Planning Optimization | On by default |
 | Master planning | DDMRP for Planning Optimization | On by default |
@@ -150,6 +143,10 @@ The table also lists features that were previously in public preview but have ch
 | Transportation management | Allow unmatching of freight bills from freight invoice lines without a posted vendor invoice journal | Mandatory |
 | Transportation management | Landed cost | On by default |
 | Transportation management | Assign shipments to related route segments | Generally available |
+| Transportation management | [Enable shipping container creation and update in batch mode](../landed-cost/landed-cost-enable.md) | Generally available |
+| Transportation management | [Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages](../landed-cost/landed-cost-enable.md) | Generally available |
+| Transportation management | [Generate data manually on voyage editor](../landed-cost/landed-cost-enable.md) | Generally available |
+| Transportation management | [Performance improvements for post receipt function in Landed Cost](../landed-cost/landed-cost-enable.md) | Generally available |
 | Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | Mandatory |
 | Warehouse management | Enhanced parser for GS1 barcodes | Mandatory |
 | Warehouse management | Evaluate work header breaks before work header maximums during work creation | Mandatory |
