@@ -22,7 +22,6 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: prsinha
 ms.search.validFrom: 2023-8-7
 ms.dyn365.ops.version: Human Resources
 
@@ -103,8 +102,6 @@ In addition, copy the following list into the email, and fill in the following i
    
 4. After all critical risks have been addressed and the review has been completed, Microsoft will enable the production environment in the Lifecycle Services project. The customer/partner can then deplay the production environment.
 
-## See also
-
-[Dynamics 365 Human Resources customer migration](./hr-cust-migration)
-
+For more information, see: 
+[Dynamics 365 Human Resources customer migration](./hr-cust-migration.md)
 [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md)
