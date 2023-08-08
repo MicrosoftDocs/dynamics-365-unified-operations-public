@@ -19,7 +19,7 @@ items:
         href: hr-migration-issues.md
       - name: Human Resources customer merge 
         href: hr-customer-merge.md 
-      - name: Human Resources migration Go-Live Readiness Review process 
+      - name: Human Resources migration go-live readiness review 
         href: hr-migration-admin-go-live-readiness-review.md
     - name: What's new or changed
       items:
