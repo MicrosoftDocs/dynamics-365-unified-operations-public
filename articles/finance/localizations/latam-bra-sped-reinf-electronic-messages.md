@@ -128,16 +128,17 @@ Before a message is delivered, set up XML schema validation to help prevent reje
     - Re-Verify (Re-Validar)
     - Cancel-Verify (Exclusão-Validar)
 
-3.  Click **on** the (Clips) icon to attach the SCHEMAS of the events (XSD) made available by the SPED-REINF.  
+3.  Select the attachment icon to attach the SCHEMAS of the events (XSD) made available by the SPED-REINF.  
     ![Processing Actions.](media/bra-processing-actions21.png)
 
-4.  New &gt; File &gt; Add all schemas.  
+4.  Select **New** > **File** > **Add all schemas**.  
     ![Add Schema.](media/bra-add-schema21.png)
 
-5. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, select the **Populate** (**Incluir**) action, and then, in the **Populate records action** field, select **Registrar transacões**.
-
+5. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions** and select **Populate** (**Incluir**).
+6. In the **Populate records action** field, select **Registrar transacões**.
+ 
     ![Message processing actions page.](media/bra-message-processing-actions21.png)
 
-6. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates for issuing and inquiring about events.
+7. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates to issue and inquire about events.
 
     ![Web services settings page.](media/bra-web-service-settings21.png)
