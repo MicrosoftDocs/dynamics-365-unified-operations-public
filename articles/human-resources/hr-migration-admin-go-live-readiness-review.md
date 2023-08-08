@@ -2,7 +2,7 @@
 
 title: Human Resources migration go-live readiness review
 description: This page provides guidance on go-live readiness review for Dynamics 365 Human Resources migration to finance and operations infrastructure.
-author: Priyanka Sinha
+author: priyankasinha77
 ms.date: 8/7/2023
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: prsinha
+ms.author: prsinha@microsoft.com
 ms.search.validFrom: 2023-8-7
 ms.dyn365.ops.version: Human Resources
 
@@ -34,7 +34,7 @@ This article describes the Go-Live Readiness review steps for Dynamics 365 Human
 
 ## Human Resources migration go-live readiness review process
 
-**1**. Before requesting the production environment, ensure that all prerequisites called out in [Prerequisites for migrating a Human Resources production environment](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-cust-migration#prerequisites-1) are completed.
+**1**. Before requesting the production environment, ensure that all prerequisites called out in [Prerequisites for migrating a Human Resources production environment](https://learn.microsoft.com/dynamics365/human-resources/hr-cust-migration#prerequisites-1) are completed.
 
 **2**. Send an email to Dynamics 365 FO Go-Live (d365fogl@microsoft.com) with subject "**[Customer name]: Human Resources migration go-live readiness review**".
    
@@ -92,7 +92,7 @@ Additionally, copy the following list to your email, and then answer all of the 
 - Have all dual-write flows been tested and have the acceptance criteria been met at expected peak load?
 - Are you using managed solutions to follow application lifecycle management (ALM) best practices for your Dataverse (formerly CDS) custom entities and extensions
 - Are notifications set up to alert users about any dual-write failures?
-- Please confirm that you have read and understood the limitations for implementing dual-write in [System requirements for dual-write document](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req).
+- Please confirm that you have read and understood the limitations for implementing dual-write in [System requirements for dual-write document](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req).
   
  #### Production Support and Maintenance 
 - Does the project team have a plan in place for regular Production environment monitoring and maintenance routine?
@@ -105,8 +105,6 @@ Additionally, copy the following list to your email, and then answer all of the 
 
 ## See also
 
-[Dynamics 365 Human Resources customer migration](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-cust-migration)
+[Dynamics 365 Human Resources customer migration](https://learn.microsoft.com/dynamics365/human-resources/hr-cust-migration)
 
-[Prepare for go-live](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live)
-
-[Go-live FAQ](hr-admin-go-live-faq.md)
+[Prepare for go-live](https://learn.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live)
