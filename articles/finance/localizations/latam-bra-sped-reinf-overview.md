@@ -31,7 +31,7 @@ Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events thro
 
 - **Supported SPED-REINF versions:** 1.4 and 1.5.1, 2.1.2(2.1.2 only in Dynamics 365).
 - **Supported product versions:** Dynamics 365 Finance.
--   Electronic power of attorney (procuração eletronica) is not supported.
+-   Electronic power of attorney (procuração eletronica) isn't supported.
 
 ## Table of events
 
@@ -63,7 +63,7 @@ Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events thro
 
 > [!NOTE]
 > Events R-2010 and R-2020 are supported for National Registry of Legal Entities (CNPJ) third parties. Event R-5011 is used to inquire about the status of closing event R-2099.
-> Events R-9005and R-9015 are considered the totalizers and they are not delivered by taxpayers, but by the Federal Revenue as the return of the bases to the taxpayers.
+> Events R-9005and R-9015 are considered the totalizers and aren't delivered by taxpayers. Intest, they are delivered by the Federal Revenue as the return of the bases to the taxpayers.
 
 Only taxpayers that comply with SPED-ECD are supported.
 
@@ -78,11 +78,11 @@ To generate events for R-4000 records, the parameters required for the related r
 -   Individual Supplier Registration
 -   Legal Entity Registration
 -   Unidentified Beneficiary
--   Purchase Order Receipts (it is necessary to configure the payment journal as per item 3 of this manual)
+-   Purchase Order Receipts (it's necessary to configure the payment journal as per item three of this manual)
 -   General ledger with emphasis on Income Tax (IRRF)
--   Service item registration with the "Income code" field
+-   Service item registration with the **Income code** field
 
-For each event, there is a specific table provided by Brazilian Tax Authority, which contains the Income Nature Codes. In this case, the client will need to analyze which code best fits each event.
+For each event, there's a specific table provided by Brazilian Tax Authority, which contains the Income Nature Codes. In this case, the client must analyze which code best fits each event.
 
 1. [Set up electronic message functionality](latam-bra-sped-reinf-electronic-messages.md). 
 2. [Set up fiscal books](latam-bra-sped-reinf-setup-fiscal-books.md).
