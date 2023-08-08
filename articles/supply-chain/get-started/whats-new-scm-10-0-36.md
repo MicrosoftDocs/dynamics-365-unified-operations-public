@@ -68,7 +68,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Procurement and sourcing | [Review and accept changes to confirmed purchase orders](../procurement/purchase-order-changes-after-confirmation.md) |
-| Responsible AI | [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md) |
+| Responsible AI | [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md) |
 | Warehouse management | [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
 | Warehouse management | [Optimize location directive queries](../warehousing/location-directives-optimize.md) |
 | Warehouse management | [Warehouse Mobile app accessibility features](../warehousing/warehouse-app-accessibility.md) |
