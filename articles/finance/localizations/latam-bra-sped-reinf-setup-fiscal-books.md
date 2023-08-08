@@ -27,27 +27,35 @@ The service type table represents table 06. The tax authorities have established
 2. Select **New**.
 3. Enter a classification code that has been established by the tax authorities, and then enter a description.
 
-    ![Service types page.](media/bra-service-type-setup.png)
+    ![Service types page.](media/bra-service-type-setup21.png)
 
 4. After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**, and then, for each service, assign the related service type.
+
+## Income classification setup
+
+After the list of service types is created, they must be assigned to service codes and with yield Income code, provided in the SPED REINF manual released by the Tax Authority.
+
+Go to Inventory management \> Setup **\>** Fiscal information **\>** Service code**, and then for each service, assign the related service type** and **Income code.**  
+ ![Income Classification Setup.](media/bra-income-classification-setup21.png)
+<img src="media/image3.jpg" style="width:6.67847in;height:2.29236in" alt="A screenshot of a computer Description automatically generated" />
 
 ## Set up tax classification codes
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **Tax classification codes**.
 2. Enter the available classification types.
 
-![Tax classification codes page.](media/bra-tax-classification-codes.png)
+![Tax classification codes page.](media/bra-tax-classification-codes21.png)
 
 This information is assigned to the fiscal organization and can be found on the **General** FastTab of the **Fiscal organization** page (**Fiscal books \> Setup \> Fiscal organization**).
 
-![Fiscal organization page.](media/bra-fiscal-organization-setup.png)
+![Fiscal organization page.](media/bra-fiscal-organization-setup21.png)
 
 ## Set up codes explanation suspension
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **Codes explanation suspension**.
 2. Set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned on the **Administrative and judicial process** page (**Fiscal books** \> **Periodic** \> **SPED Reinf** \> **Administrative and judicial process**).
 
-![Codes explanation suspension page.](media/bra-codes-explanation-suspension.png)
+![Codes explanation suspension page.](media/bra-codes-explanation-suspension21.png)
 
 ## Set up acquisition type determination
 
@@ -67,6 +75,76 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **GILRAT tax codes** or **SENAR tax codes**.
 2. Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to **Other**. The amount of these taxes is used in the **vlrRatDescPR** and **vlrSenarDesc** tags for event R-2055.
+
+## Fiscal books parameters Setup
+
+1.  Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
+2.  On the **General** tab \> select **SPED REINF version**
+
+![Number Sequence.](media/bra-sped-parameters21.png)
+
+3.  Select the environment type and the status of the fiscal organization.
+4.  Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
+5.  On the **Number sequences** tab, set up the number sequence for events.  
+
+![Number Sequence.](media/bra-number-sequence21.png)
+
+***Note:  
+**If the number sequences were not initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. You can then configure the related number sequence:*
+
+- ***Area:** Fiscal books*
+
+- ***Reference:** SPED-REINF event ID*
+
+## Vendor Setup – Events R-2055,R-4010, R-4020 and R-4040
+
+Event R-2055 Setup
+
+1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2.  Select a vendor.
+
+3.  On the **Fiscal information** tab, set up **REINF taxation over payroll**. This new attribute determines the type of taxation because this information is required in the **indOpcCP** tag for event R-2055.
+
+## Event R-4010 Person Vendor Setup  
+
+
+1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to **Person**".  
+
+![New Person.](media/bra-new_vendor21.png)
+
+## Event R-4020 Legal Entity Vendor Setup  
+
+1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to "**Organization**".  
+
+![New Organisation.](media/bra-new_org21.png)
+
+## Event R-4040 Unidentified Beneficiary Vendor**
+
+1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to "**Organization or Person**."  
+    >   
+    > Option Fiscal information \> Unidentified beneficiary="**Yes**".  
+
+![Beneficiary.](media/bra-beneficiary21.png)
+
+## Customer Setup – Event R-4080
+
+## Event R-4080 Withholding tax on receipt (auto-withholding) Customer**
+
+In the customer registration, the "Withholding tax" field must be filled in with the information provided on the menu. After configuring this, new invoices should be issued, and new events generated.
+
+1.  Go to Accounts receivable \> Customers \> All customers \> Select the Customer \> Fiscal Information tab \> Withholding tax option \> **Customer contribution type**:
+
+    -   Federal government foundation or agency
+    -   Federal government administration
+    -   Legal entity
+    -   Cooperative
+    -   Machine or vehicle manufacturer
+    -   "***OTHER**"* option will <u>not be considered in the event.</u>
+
+Select the appropriated option in field "Withholding tax."
+
+![Withholding ax.](media/bra-withholding-tax21.png)
+
 
 ## Vendor setup
 
