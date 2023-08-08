@@ -2,7 +2,7 @@
 title: SPED-Reinf events
 description: This article explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
 author: AdamTrukawka
-ms.date: 05/03/2021
+ms.date: 08/07/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -74,35 +74,34 @@ The process to generate each event includes the following steps.
 
 1. Use an electronic message to create, validate, and deliver the event or batch of events through electronic message items.
 2. The tax authority web service receives the batch and validates its contents.
-3. The web service returns the result of processing. If the events or batch of events is successfully received, a receiving protocol is returned. Otherwise, an error message is shown. In that case, the taxpayer can fix the errors and resubmit the event through a new batch.
+3. The web service returns the result of processing. If the events or batches of events are successfully received, a receiving protocol is returned. Otherwise, an error message is shown. In that case, the taxpayer can fix the errors and resubmit the event through a new batch.
 
-![General process.](media/bra-general-process.png)
+![General process.](media/bra-general-process21.png)
 
 The events are transmitted to tax authorities using Electronic message functionality. This functionality establishes a two-way, automated, and instantaneous relationship between the government web services and the taxpayer.
 
 The following illustrations show the actions that are performed, and the status of message items that causes each event to be approved or rejected when it's delivered for the first time (Insertion), updated (Amendment/Update), and canceled or deleted (Cancel/Delete).
 
-![Flow actions.](media/bra-flow-actions.png)
+![Flow actions.](media/bra-flow-actions21.png)
 
 ### Actions
 
 **Insertion**
+Key difference is the Consultar Protocolo Step, which conform with 2.1.2 REST API use.
 
-This flow is used to deliver any event for the first time.
+*Note:  
+1. As you can see, before we had "Send", now it's "Send Reinf 2.1 Events".*
+2. We have now added 2 extras due to API changes. We have "Query Protocol" and "Import Response".*
 
-![Insertion.](media/bra-insertion-flow.png)
+![Insertion.](media/bra-insertion-flow21.png)
 
 **Amendment/Update**
 
-![Update.](media/bra-amendment-update-flow.png)
+![Update.](media/bra-amendment-update-flow21.png)
 
 **Cancel/Delete**
 
-![Cancel.](media/bra-cancel-delete-flow.png)
-
-**Inquire event 5011 (from event R-2099)**
-
-![Inquire event 5011.](media/bra-inquire-event-5011.png)
+![Cancel.](media/bra-cancel-delete-flow21.png)
 
 ## Booking period
 
@@ -115,8 +114,13 @@ Before you start to generate these events, book all fiscal documents in the rela
     - Select **R-2010**, and then select **Update** to collect all incoming fiscal documents where the model is **SE** and the tax type is **INSS**.
     - Select **R-2020**, and then select **Update** to collect all outgoing fiscal documents where the model is **SE** and the tax type is **INSS**.
     - Select **R-2055**, and then select **Update** to collect all incoming and outgoing fiscal documents that have SENAR or GILRAT taxes.
+    - Select **R-4010**, and then select **Update** to collect all incoming fiscal documents (invoices and journal entries) from Person Vendors.
+    - Select **R-4020**, and then select **Update** to collect all incoming fiscal documents from Organization Vendors.
+    - Select **R-4040**, and then select **Update** to collect all incoming Journal entries from Unidentified Beneficiary.
+    - Select **R-4080**, and then select **Update** to collect all outgoing fiscal documents that are eligible for auto-withholding.
 
 4. Select **Inquire** to view the fiscal documents that are included in the related event.
+![Cancel.](media/bra-inquire-21.png)
 5. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**, because the status of events is managed and controlled by this action.
 
 > [!NOTE]
@@ -138,33 +142,35 @@ Because communications can fail for technical reasons, such as a time-out or an 
 2. On the Action Pane, select **Run processing**, and then, in the **Run processing** dialog box, in the **Processing** field, select **SPED Reinf**.
 3. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Incluir**.
 
-    ![Run processing.](media/bra-run-processing.png)
+    ![Run processing.](media/bra-run-processing21.png)
 
 4. Select **OK** to confirm the settings.
 
     A message item of **Informações do contribuinte** type is created, and the status of the message item is set to **Anexado**.
 
-    ![Electronic message items insertion.](media/bra-electronic-message-items-insertion.png)
+    ![Electronic message items insertion.](media/bra-electronic-message-items-insertion21.png)
 
 5. Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 6. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Parâmetros adicionais** to update the related information in additional fields.
 
-    ![Run processing additional parameters.](media/bra-run-processing-additional-parameters.png)
+    ![Run processing additional parameters.](media/bra-run-processing-additional-parameters21.png)
 
-    ![Preparation items.](media/bra-preparation-items.png)
+    ![Preparation items.](media/bra-preparation-items21.png)
 
 7. Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Preparado**.
 
-    ![Electronic message items status.](media/bra-electronic-message-items-status.png)
+    ![Electronic message items status.](media/bra-electronic-message-items-status21.png)
 
 8. Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 9. Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Gerar** to generate the XML.
 10. Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
-    ![Generate reports.](media/bra-generate-reports.png)
+    ![Generate reports.](media/bra-generate-reports21.png)
+    ![Generate reports preparations.](media/bra-generate-reports-preparations21.png)
 
 11. Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 12. Repeat these steps until you've completed all the actions in the Insertion flow.
+  ![Generated report.](media/bra-generated-report21.png)
 
 ### Repro step – Amendment 
 
@@ -181,6 +187,17 @@ Any differences between the information in the last event and the current inform
 
 If, for any reason, the taxpayer wants to cancel or exclude an event that has been accepted, select **Cancel**, and confirm the operation. The status of the event will be updated to **Excluded**. Complete all the actions in the Cancel/Delete flow.
 
+## Event R-1050 – Table of linked entities
+
+Event R-1050 is used to report information about linked entities. This record will provide information about entities connected to the taxpayer, such as FCI (Investment Fund) and/or SCP (Limited Partnership). It covers additional descriptive information about the legal entities submitting their declarations via REINF.
+
+1.  Go to Organization administration &gt; Organizations &gt;Fiscal establishments &gt; Fiscal establishments &gt; Fiscal establishment relations tab &gt; and include all related information.
+
+Repro step – Add process.
+
+Select New and set the following fields.     
+  ![Description automatically generated.](media/bra-Description-generated21.png)
+
 ## Event R-1070 – Administrative and judicial process
 
 Event R-1070 is used to report information about the administrative and lawsuits process to the tax authority.
@@ -195,13 +212,13 @@ Besides the typical information that identifies the taxpayer and the event, even
 - Suspension information
 - Complementary information about the proceedings
 
-Before event R-1070 can be delivered, create the related process, and include all related information.
+Before the event R-1070 can be delivered, create the related process, and include all related information.
 
 ### Repro step – Create process
 
 1. Go to **Fiscal books** \> **Periodic** \> **SPED Reinf** \> **Administrative and judicial process**.
 
-    ![Administrative judicial process.](media/bra-administrative-judicial-process.png)
+    ![Administrative judicial process.](media/bra-administrative-judicial-process21.png)
 
 2. Select **New**, and set the following fields.
 
@@ -245,7 +262,7 @@ Only service and retained INSS tax type must be selected to generate this event 
 - The fiscal document model is **SE**.
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 
-    ![Brazilian taxes.](media/bra-brazilian-taxes.png)
+    ![Brazilian taxes.](media/bra-brazilian-taxes21.png)
 
 > [!NOTE]
 > Never use the **INSS-CPRB** tax type.
@@ -291,6 +308,7 @@ Generation of this event requires the adoption of new semantics for handling eve
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 - The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** check box is selected), and GILRAT or SENAR taxes are identified.
 
+    ![Brazilian taxes.](media/bra-other-brazilian-taxes21.png)
 ## Event R-2060 – INSS CPRB
 
 Periodic event R-2060 is used to send information about the tax assessment of the withholding for social security to the SPED-Reinf when the fiscal organization has chosen to calculate the social security based on the gross revenue instead of the payroll.
@@ -343,7 +361,7 @@ You can delete an existing INSS-CPRB tax assessment if the status is **Opened**.
 
 **Fiscal documents and non-fiscal operations**
 
-When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations that are part of the tax calculation.
+When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations (Journals) that are part of the tax calculation.
 
 **Tax transactions**
 
@@ -351,7 +369,7 @@ When INSS-CPRB taxes are assessed, you can view the tax transactions details tha
 
 **Adjustment**
 
-You can enter additional adjustment transactions to adjust (increase or decrease) the amount of INSS-CPRB that is calculated. You configure the adjustment codes at **Fiscal books** \> **Setup** \> **Tax adjustment codes** \> **INSS-CPRB adjustments codes table**.
+You can enter into additional adjustment transactions to adjust (increase or decrease) the amount of INSS-CPRB that is calculated. You configure the adjustment codes at **Fiscal books** \> **Setup** \> **Tax adjustment codes** \> **INSS-CPRB adjustments codes table**.
 
 1. Select **Adjustment** to add an adjustment transaction that will decrease or increase the tax amount (debit) that is calculated.
 2. Select the adjustment code.
@@ -396,18 +414,114 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 1. Reopen the INSS-CPRB tax assessment, even if you don't assess INSS-CPRB tax.
 2. Follow the steps that are described for event R-1000 to insert, update, or cancel the related event.
 
-**Inquire event 5011**
+## R-4010 Payments/credits to individual beneficiaries
 
-1. After R-2090 is delivered to the government, and its status is updated to **Pending Response** (**Pendente resposta**), select **Run processing**, and then select **SPED Reinf**.
-2. Set the **Choose action** field to **Enable**, select **Gerar** to generate the XML message, and then select **OK** to confirm the action.
+R-4010 - Payments/Credits to Individual Beneficiaries: In this record, taxpayers will report payments and credits made for non-employment service contracts with individuals, for the purpose of withholding income tax (IR). There will be one event for each beneficiary record. Information related to IR on labor will be submitted through eSocial.
 
-    After the message item is created, the **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Consulta Gerada**.
+Repro step
 
-3. Select **Run processing**, and then select **SPED Reinf**.
-4. Set the **Choose action** field to **Enable**, and then select **Enviar consulta** to deliver the related inquiry to the tax authorities.
-5. Select **OK** to confirm the action. The **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Consulta Enviada**.
-6. Select **Run processing**, and then select **SPED Reinf**.
-7. Set the **Choose action** field to **Enable**, and then select **Obter consulta resposta** to get the approval from the tax authority, and to get the final protocol number, so that you can close the SPED-Reinf period.
-8. Select **OK** to confirm the action. The **Evento de fechamento** message item type is updated, and the status of the message item is updated to **Aceito**.
+-   Transaction via General Journal
+
+The R-4010 event should be entered only with the parameters of **Vendor** x **Ledger**.
+
+1.  Go to General Ledger &gt; Journal entries &gt; General journals &gt; New.
+2.  Go to the Lines &gt; Fill in the information:
+3.  Account type = "**Vendor**"
+4.  Select Account
+5.  Enter a Description
+6.  Enter a Credit
+7.  Offset account type="**Ledger**"
+8.  Offset account &gt; add **FiscalEstablishment**
+9.  Enter Item sales tax group
+10. Enter Sales tax group
+11. Enter an Income code
+
+    ![Brazilian taxes in journal.](media/bra-other-journal-voucher21.png)
+
+12. Post transaction via Purchase Order
+    1.  Go to Accounts payable &gt; Purchase orders &gt; All purchase orders
+    2.  Select New
+    3.  Select Vendor account &gt; Type="**Person**"
+    4.  Select Site and Warehouse
+
+**Add a purchase order line**
+
+1.  Select Purchase line
+2.  In the Item number field
+    1.  Order lines are created for products and services by specifying an item number.
+    2.  Add the items and sales tax group.
+    3.  Fiscal information tab &gt; check for a Service Code entered (when is item=**Service**).
+3.  Purchase tab &gt; Actions &gt; Confirm.
+4.  Invoice tab &gt; Generate &gt; Invoice.
+5.  Vendor invoice tab &gt; Check the information about Document model, Number, Series, and invoice dates.
+6.  Click on POST.
+
+Afterwards the Purchase Order related fiscal document will be available to be synchronized into the booking period to be submitted.
+
+## R-4020 Payments/credits to legal entity beneficiaries.
+
+R-4020 - Payments/Credits to Legal Entity Beneficiaries: In this EFD REINF record, there will be one event for each beneficiary record, declaring payments/credits related to payments for services provided by legal entities.
+
+Repro step
+
+1.  General journal transaction: The journal entry process should follow the same steps as in process **R-4010**. The participant should be a legal entity.
+2.  Purchase order Transaction: The purchase order entry process should follow the same steps as in process **R-4010**. The participant should be a legal entity.
+
+Afterwards the Purchase Order related fiscal document will be available to be synchronized into the booking period to be submitted.
+
+## R-4040 Payments/credits to unidentified beneficiaries
+
+R-4040 - Payments/Credits to Unidentified Beneficiaries: The R-4040 event will report payments where the beneficiary cannot be identified, such as situations where no fiscal document is issued.
+
+Repro step
+
+1.  General journal transaction: The journal entry process should follow the same steps as in process **R-4010**. The participant should be a legal entity.
+Afterwards the Purchase Order related fiscal document will be available to be synchronized into the booking period to be submitted.
+
+## R-4080 Auto Withholding
+
+R-4080 - Withholding on Receipt: Known as self-withholding, this operation primarily occurs in conditioning processes, such as in advertising agencies, card operators, and travel agencies. These activities are specified in the legislation and perform their own withholding. The transmission will be done by the recipients of the income, not the payers.
+
+Repro step
+
+-   Sales order Transaction
+
+Below is an example of how to create a sales order entry.
+
+1.  Go to Accounts receivable &gt; Orders &gt; All sales orders
+2.  Select New
+3.  Select Customer account &gt; Type="**Organization**"
+4.  Select Site and Warehouse.
+
+**Add a sales order line**
+
+7.  Select Sales line
+8.  In the Item number field
+    1.  Order lines are created for products and services by specifying an item number.
+    2.  Add the items and sales tax group.
+    3.  Fiscal information tab &gt; check for a Service Code entered (when is item=**Service**).
+9.  Invoice tab &gt; Generate &gt; Invoice.
+10. Posting invoice tab &gt; Check the information about Fiscal Document type, Number, Series, and invoice dates.
+11. Click on OK.
+
+Afterwards the Sales Order related fiscal document will be available to be synchronized into the booking period to be submitted.
+
+## R-4099 - Closure/reopening of R-4000 series events
+
+R-4099 - Closure/Reopening of Periodic Events in the R-4000 series: This event is transmitted after all periodic event records have been closed, or it can be used to reopen a period of a specific record.
+
+Repro step
+
+To generate the closure event, follow these steps within the Fiscal Books Module:
+
+1.  Go to Fiscal books &gt; Common &gt; Booking period &gt; select the period &gt; click on **R-4098 (Reopen)** and **R-4099 (Closure)**
+
+    ![Events 4098.](media/bra-other-events21.png)
+
+## Event sending FLOW
+
+Send events R-1000 / R-1050 / R-1070 / R-2010 / R-2020 / R-2055 / R-2060 / R-2099 / R-4000
+
+1.  Go to Tax &gt; Inquiries and reports &gt; Electronic messages &gt; Electronic message items &gt; Run processing button &gt; Processing SPED REINF &gt; *Action: Incluir, Parametros adicionais, Gerar, Validar, Enviar Eventos do REINF 2.1, Obter resposta, Importar resposta
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
