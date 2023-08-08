@@ -1,9 +1,9 @@
 # required metadata
 
-title: Human Resources Migration go-live readiness review
-description: This page provides guidance on how to prepare for a go-live with Dynamics 365 Human Resources.
+title: Human Resources migration go-live readiness review
+description: This page provides guidance on Go-Live readiness review for Dynamics 365 Human Resources migration to finance and operations infrastructure.
 author: Priyanka Sinha
-ms.date: 8/5/2023
+ms.date: 8/7/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,33 +21,33 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: prsinha
-ms.search.validFrom: 2023-8-5
+ms.search.validFrom: 2023-8-7
 ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Human Resources Migration go-live readiness review
+# Human Resources migration Go-Live Readiness Review
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This article describes the Go-Live readiness review steps for Dynamics 365 Human Resources migration project.
+This article describes the Go-Live Readiness review steps for Dynamics 365 Human Resources migration to finance and operations infrastructure.
 
 ## Human Resources migration Go-Live Readiness Review process
 
 1. Before requesting the production environment, ensure that all prerequisites called out in [Prerequisites for migrating a Human Resources production environment](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-cust-migration#prerequisites-1) are completed.
-1. Send an email to Dynamics 365 FO Go-Live (d365fogl@microsoft.com) with subject "[Customer name]: Human Resources Migration Go-live Readiness review".
+2. Send an email to Dynamics 365 FO Go-Live (d365fogl@microsoft.com) with subject "**[Customer name]: Human Resources Migration Go-live Readiness review**".
+   
 To ensure that the process will run smoothly, provide the following details in the email,
-- Customer: <Contoso International>
-- Key customer contact(s) e-mail(s) and role(s): <contoso.user@contoso.com>, <job title>
-- Partner: <Partner Organization>, <MPN ID>
-- Migration LCS project URL: <https://lcs.dynamics.com/V2/ProjectOverview/1234567>
-- Go-Live date (live transactions):
-- Date when Production will be requested: 
+  - Customer name:
+  - Key customer contact(s) e-mail(s) and role(s): 
+  - Partner: 
+  - Migration LCS project URL:
+  - Go-Live date (live transactions):
+  - Date when Production will be requested: 
 
 Additionally, copy the following list to your email, and then answer all of the information line by line.
 
 ### LCS
-
 - Is the Go-Live milestone date in LCS methodology matching the planned Go-Live date? Please make sure that Go-Live date in LCS in reflecting the real Go-Live   plans when users will start live operations in Production.
 - Are you using a generic account as the environment’s administrator?
 - Have the customer key stakeholders been added to the LCS project?
@@ -63,7 +63,7 @@ Additionally, copy the following list to your email, and then answer all of the 
 ### Cutover
 - Do you have a cutover plan that contains activity duration, responsibilities, dependencies, and a roll-back plan, signed off by the business?
 - Please confirm that you are aware that migration to environments will always be on the latest generally available (GA) version. Depending on your migration and testing plan, if your migration validation for sandbox environments was on a different version, we recommend that you validate a sandbox migration on the same version as your production environment.
-- Please confirm that you are aware that all remaining standalone Human Resources environments will automatically be deleted ten days after the successful migration of the production environment to the finance and operations infrastructure. https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-cust-migration#post-migration-considerations
+- Please confirm that you are aware that all remaining standalone Human Resources environments will automatically be deleted ten days after the successful migration of the production environment to the finance and operations infrastructure. 
 
 ### Continuous Updates
 - Is the team familiar with the Continuous Updates policy?
@@ -98,9 +98,14 @@ Additionally, copy the following list to your email, and then answer all of the 
 - Is the project team familiar with the LCS environment monitoring and diagnostics tool?
 - Has the project team defined post Go-live issue resolution and escalation process?
 
+3. When answers have been provided to all the questions, the Dynamics 365 FO Go-Live team will reply to you within two business days and a FastTrack team will work with you on the assessment of the project readiness for production deployment and will share the potential risks, best practices, and recommendations for a successful go-live of the project.
+   
+5. When all critical risks have been addressed, and the review has been completed, Microsoft enables the production environment slot in the Lifecycle Services project. The customer/partner can then trigger the production environment deployment.
 
 ## See also
 
 [Dynamics 365 Human Resources customer migration](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-cust-migration)
+
 [Prepare for go-live](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live)
+
 [Go-live FAQ](hr-admin-go-live-faq.md)
