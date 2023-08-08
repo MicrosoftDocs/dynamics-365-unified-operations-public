@@ -19926,6 +19926,16 @@
       "source_path": "articles/supply-chain/production-control/subcontracting.md",
       "redirect_url": "/dynamics365/supply-chain/production-control/manage-subcontract-work-production",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/transparency-note-confirmed-po-changes.md",
+      "redirect_url": "/dynamics365/supply-chain/faq-confirmed-po-changes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/transparency-note.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": "false"
     }
   ]
 }

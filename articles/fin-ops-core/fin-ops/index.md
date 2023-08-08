@@ -86,7 +86,7 @@ Much of this content also applies to the related products: Dynamics 365 Commerce
 
 </td>
 <td>
-<h3><a href="../../supply-chain/index.md">Supply chain management</a></h3>
+<h3><a href="../../supply-chain/supply-chain-management-welcome.md">Supply chain management</a></h3>
 <p><a href="../../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
 <p><a href="../../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
 <p><a href="../../supply-chain/master-planning/master-plans.md">Master planning</a></p>
