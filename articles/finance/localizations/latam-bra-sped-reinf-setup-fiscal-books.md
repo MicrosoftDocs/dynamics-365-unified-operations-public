@@ -33,11 +33,12 @@ The service type table represents table 06. The tax authorities have established
 
 ## Income classification setup
 
-After the list of service types is created, they must be assigned to service codes and with yield Income code, provided in the SPED REINF manual released by the Tax Authority.
+After you create the list of service types, assign them to service codes and includ the yield Income code provided in the SPED REINF manual released by the Tax Authority.
 
-Go to Inventory management \> Setup **\>** Fiscal information **\>** Service code**, and then for each service, assign the related service type** and **Income code.**  
- ![Income Classification Setup.](media/bra-income-classification-setup21.png)
-<img src="media/image3.jpg" style="width:6.67847in;height:2.29236in" alt="A screenshot of a computer Description automatically generated" />
+1. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**
+2. For each service, assign the related service type and income code.
+ 
+     ![Income Classification Setup.](media/bra-income-classification-setup21.png)
 
 ## Set up tax classification codes
 
@@ -79,71 +80,65 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 ## Fiscal books parameters Setup
 
 1.  Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
-2.  On the **General** tab \> select **SPED REINF version**
+2.  On the **General** tab, select **SPED REINF version**
 
-![Number Sequence.](media/bra-sped-parameters21.png)
+    ![Number Sequence.](media/bra-sped-parameters21.png)
 
 3.  Select the environment type and the status of the fiscal organization.
 4.  Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
 5.  On the **Number sequences** tab, set up the number sequence for events.  
 
-![Number Sequence.](media/bra-number-sequence21.png)
+    ![Number Sequence.](media/bra-number-sequence21.png)
 
-***Note:  
-**If the number sequences were not initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. You can then configure the related number sequence:*
-
-- ***Area:** Fiscal books*
-
-- ***Reference:** SPED-REINF event ID*
+> [!NOTE] 
+> If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. Then configure the related number sequence:
+>    - **Area**: Fiscal books
+>    - **Reference**: SPED-REINF event ID
 
 ## Vendor Setup – Events R-2055,R-4010, R-4020 and R-4040
 
-Event R-2055 Setup
-
-1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-2.  Select a vendor.
-
-3.  On the **Fiscal information** tab, set up **REINF taxation over payroll**. This new attribute determines the type of taxation because this information is required in the **indOpcCP** tag for event R-2055.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors** and select a vendor.
+2. On the **Fiscal information** tab, set up **REINF taxation over payroll**. This new attribute determines the type of taxation because this information is required in the **indOpcCP** tag for event R-2055.
 
 ## Event R-4010 Person Vendor Setup  
 
+1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2.  In the **Type** field, select **Person**.  
 
-1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to **Person**".  
-
-![New Person.](media/bra-new_vendor21.png)
+    ![New Person.](media/bra-new_vendor21.png)
 
 ## Event R-4020 Legal Entity Vendor Setup  
 
-1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to "**Organization**".  
+1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2.  In the **Type** field, select **Organization**.  
 
-![New Organisation.](media/bra-new_org21.png)
+    ![New Organisation.](media/bra-new_org21.png)
 
-## Event R-4040 Unidentified Beneficiary Vendor**
+## Event R-4040 Unidentified Beneficiary Vendor
 
-1.  Go to **Accounts payable \> Vendors \> All vendors \>** the **Type** field needs to be set to "**Organization or Person**."  
-    >   
-    > Option Fiscal information \> Unidentified beneficiary="**Yes**".  
+1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2.  In the **Type** field, select **Organization** or **Person**.
+3.  Set the **Unidentified beneficiary** slider to **Yes**.  
 
-![Beneficiary.](media/bra-beneficiary21.png)
+    ![Beneficiary.](media/bra-beneficiary21.png)
 
-## Customer Setup – Event R-4080
+## Event R-4080 Withholding tax on receipt (auto-withholding) Customer
 
-## Event R-4080 Withholding tax on receipt (auto-withholding) Customer**
+In the customer registration, the **Withholding tax** field must be filled in with the provided information. After this information is configured, new invoices should be issued, and new events generated.
 
-In the customer registration, the "Withholding tax" field must be filled in with the information provided on the menu. After configuring this, new invoices should be issued, and new events generated.
+1.  Go to **Accounts receivable** \> **Customers** \> **All customers** \> **Select the Customer**.
+2.  On the **Fiscal Information** tab, select **Withholding tax** \> **Customer contribution type** and then select one of the following options:
 
-1.  Go to Accounts receivable \> Customers \> All customers \> Select the Customer \> Fiscal Information tab \> Withholding tax option \> **Customer contribution type**:
+    - Federal government foundation or agency
+    - Federal government administration
+    - Legal entity
+    - Cooperative
+    - Machine or vehicle manufacturer
+    - OTHER - This option isn't considered in the event
 
-    -   Federal government foundation or agency
-    -   Federal government administration
-    -   Legal entity
-    -   Cooperative
-    -   Machine or vehicle manufacturer
-    -   "***OTHER**"* option will <u>not be considered in the event.</u>
+3. In the **Withholding tax** field, select a value.
 
-Select the appropriated option in field "Withholding tax."
-
-![Withholding ax.](media/bra-withholding-tax21.png)
+    ![Withholding ax.](media/bra-withholding-tax21.png)
 
 
 ## Vendor setup
