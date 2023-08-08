@@ -43,5 +43,5 @@ Supervisors should familiarize themselves with the options available to configur
 
 ## See also
 
-- [The anomaly detection scenario](sensor-data-intelligence/sdi-scenario-anomaly.md)
+- [Anomaly detection scenario](sensor-data-intelligence/sdi-scenario-anomaly.md)
 - [What is Anomaly Detector?](/azure/ai-services/anomaly-detector/overview)
