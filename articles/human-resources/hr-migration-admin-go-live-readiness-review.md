@@ -75,7 +75,7 @@ Additionally, copy the following list to your email, and then answer all of the 
 - Are integrations in scope?
 
 > [!NOTE]
-> If yes, continue and complete below section. If No, go to the next section.
+> If YES, continue and complete below section. If NO, go to the next section.
 
 - Have you tested both happy path and edge cases for each integration?
 - Have all integrations in scope for the Go-live been signed off by the customer? If no, please share what is pending and what is the timeline for getting sign-off.
@@ -84,7 +84,7 @@ Additionally, copy the following list to your email, and then answer all of the 
 - Does the solution contain any dual-write integrations to run processes across Dynamics 365 applications?
 
 > [!NOTE]
-> If yes, continue and complete below section. If No, go to the next section.
+> If YES, continue and complete below section. If NO, go to the next section.
 
 - Are you planning to integrate two finance and operations environments?
 - Are both finance and operations environments in the same Azure tenant and in the same Azure region?
