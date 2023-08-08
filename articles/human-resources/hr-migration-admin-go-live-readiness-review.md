@@ -1,11 +1,10 @@
+---
 # required metadata
 
 title: Human Resources migration go-live readiness review
 description: This page provides guidance on go-live readiness review for Dynamics 365 Human Resources migration to finance and operations infrastructure.
----
 author: priyankasinha77
 ms.author: prsinha
----
 ms.date: 8/7/2023
 ms.topic: article
 ms.prod: 
