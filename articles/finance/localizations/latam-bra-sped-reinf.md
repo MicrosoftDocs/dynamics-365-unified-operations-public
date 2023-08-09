@@ -97,11 +97,11 @@ The key difference is the Consultar Protocolo Step, which conform with 2.1.2 RES
 
 **Amendment/Update**
 
-![Update.](media/bra-amendment-update-flow21.png)
+![Update insertion action.](media/bra-amendment-update-flow21.png)
 
 **Cancel/Delete**
 
-![Cancel.](media/bra-cancel-delete-flow21.png)
+![Cancel or delete insertion action.](media/bra-cancel-delete-flow21.png)
 
 ## Booking period
 
@@ -120,7 +120,8 @@ Before you start to generate these events, book all fiscal documents in the rela
     - Select **R-4080**, and then select **Update** to collect all outgoing fiscal documents that are eligible for auto-withholding.
 
 4. Select **Inquire** to view the fiscal documents that are included in the related event.
-![Cancel.](media/bra-inquire-21.png)
+![Fiscal document inquiry.](media/bra-inquire-21.png)
+
 5. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**, because the status of events is managed and controlled by this action.
 
 > [!NOTE]
@@ -263,7 +264,7 @@ Only service and retained INSS tax type must be selected to generate this event 
 - The fiscal document model is **SE**.
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 
-    ![Brazilian taxes.](media/bra-brazilian-taxes21.png)
+    ![Brazilian taxes, Retained tax/to recuperate check box.](media/bra-brazilian-taxes21.png)
 
 > [!NOTE]
 > Never use the **INSS-CPRB** tax type.
@@ -309,7 +310,7 @@ Generation of this event requires the adoption of new semantics for handling eve
 - The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
 - The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** check box is selected), and GILRAT or SENAR taxes are identified.
 
-    ![Brazilian taxes.](media/bra-other-brazilian-taxes21.png)
+    ![Tax type Other.](media/bra-other-brazilian-taxes21.png)
 ## Event R-2060 – INSS CPRB
 
 Periodic event R-2060 is used to send information about the tax assessment of the withholding for social security to the SPED-Reinf when the fiscal organization has chosen to calculate the social security based on the gross revenue instead of the payroll.
