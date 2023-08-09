@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean-up, or convert data before you move it.
+To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, cleanup, or convert data before you move it.
 
 > [!NOTE]
 > This article assumes that you are familiar with [data entities](data-entities.md).
@@ -191,7 +191,7 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Import task count** field, enter the count of import tasks. This must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
 
 ## Job history cleanup 
-By default, job history entries and related staging table data that are older than 90 days will be automatically deleted. The job history clean-up functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
+By default, job history entries and related staging table data that are older than 90 days are automatically deleted. The job history cleanup functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table cleanup functionality, which is now deprecated. The following tables will be cleaned up by the cleanup process.
 
 -   All staging tables
 
@@ -213,26 +213,26 @@ The **Execution history cleanup** feature is accessed from **Data management \> 
 
 ### Scheduling parameters
 
-When scheduling the clean-up process, the following parameters must be specified to define the clean-up criteria.
+When scheduling the cleanup process, the following parameters must be specified to define the cleanup criteria.
 
--   **Number of days to retain history** – This setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the clean-up job is scheduled as a recurring batch job, this setting will act like a continuously
+-   **Number of days to retain history** – This setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the cleanup job is scheduled as a recurring batch job, this setting will act like a continuously
 moving window thereby, always leaving the history for the specified number of days intact while deleting the rest. The default is seven days.
 
--   **Number of hours to execute the job** – Depending on the amount of history to be cleaned up, the total execution time for the clean-up job can vary from a few minutes to a few hours. This parameter must be set to the number of hours that the job will execute. After the clean-up job has executed for the specified number of hours, the job will exit and will resume the cleanup the next time it's run based on the recurrence schedule.
+-   **Number of hours to execute the job** – Depending on the amount of history to be cleaned up, the total execution time for the cleanup job can vary from a few minutes to a few hours. This parameter must be set to the number of hours that the job will execute. After the cleanup job has executed for the specified number of hours, the job will exit and will resume the cleanup the next time it's run based on the recurrence schedule.
 
-    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence, with oldest being first for the cleanup of related execution history. It will stop picking up new execution ID’s for cleanup when the remaining execution duration is within the last 10% of the specified duration. In some cases, it will be expected that the clean-up job will continue beyond the specified max time. This will largely depend on the number of records to be deleted for the current execution ID that was started before the 10% threshold was reached. The cleanup that was started must be completed to ensure data integrity, which means that cleanup will continue despite exceeding the specified limit. When this is complete, new execution ID’s are not picked up and the clean-up job completes. The remaining execution history that wasn't cleaned up due to lack of enough execution time, will be picked up the next time the clean-up job is scheduled. The default and minimum value for this setting is set to 2 hours.
+    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The cleanup logic goes through one job execution ID at a time in a chronologically arranged sequence, with oldest being first for the cleanup of related execution history. It will stop picking up new execution ID’s for cleanup when the remaining execution duration is within the last 10% of the specified duration. In some cases, it will be expected that the cleanup job will continue beyond the specified max time. This will largely depend on the number of records to be deleted for the current execution ID that was started before the 10% threshold was reached. The cleanup that was started must be completed to ensure data integrity, which means that cleanup will continue despite exceeding the specified limit. When this is complete, new execution ID’s are not picked up and the cleanup job completes. The remaining execution history that wasn't cleaned up due to lack of enough execution time, will be picked up the next time the cleanup job is scheduled. The default and minimum value for this setting is set to 2 hours.
 
--   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch setup.
+-   **Recurring batch** – The cleanup job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch setup.
 
 > [!NOTE]
 > If the Job history cleanup feature is not used, execution history older than 90 days is still [automatically deleted](../sysadmin/cleanuproutines.md#data-management). Job history cleanup can be run in addition to this automatic deletion. Ensure that the cleanup job is scheduled to run in recurrence. As explained above, in any cleanup execution the job will only clean up as many execution IDs as is possible within the provided maximum hours.
 
 ## Job history cleanup and archival 
-The job history cleanup and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
+The job history cleanup and archival functionality replaces the previous versions of the cleanup functionality. This section will explain these new capabilities.
 
-One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent seven days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the cleanup batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent seven days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
-The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for seven days in the blob during which time it can be downloaded. The default longevity of seven days for the archived file can be changed to a maximum of 90 days in the parameters.
+The second change in the cleanup process is the archival of the purged execution history. The cleanup job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for seven days in the blob during which time it can be downloaded. The default longevity of seven days for the archived file can be changed to a maximum of 90 days in the parameters.
 
 ### Changing the default settings
 This functionality is currently in preview and must be explicitly turned on by enabling the flight DMFEnableExecutionHistoryCleanupSystemJob. The staging cleanup feature must also be turned on in feature management.
