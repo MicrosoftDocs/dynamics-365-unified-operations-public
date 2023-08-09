@@ -58,10 +58,8 @@ For more information, see [Extensible data security policies](extensible-data-se
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 
-## Auditing
-Auditing of user sign in and sign out is enabled, which means that the system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
-
-A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).
+## Auditing user logins
+A system administrator or security administrator can access the user logins logs. For more information, see [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/user-logins)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
