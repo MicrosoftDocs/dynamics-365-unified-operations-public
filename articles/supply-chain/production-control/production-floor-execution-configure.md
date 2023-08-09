@@ -110,9 +110,7 @@ There are two versions of this feature. One supports items that *are not* enable
 
 Workers can use the production floor execution interface to report progress on batch orders for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. A formula can also be defined to have formula lines for ingredients that are defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used to track the number of boxes and the inventory quantity is used to track the weight of the boxes.
 
-To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- *Report on catch weight items from the production floor execution interface*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Report on catch weight items from the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### The "My day" dialog
 
@@ -124,7 +122,7 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Production teams in the production floor execution interface* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Production teams in the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Additional configuration in the production floor execution interface
 
@@ -138,23 +136,19 @@ This feature adds settings for the following functionality to the **Configure pr
 
 Information about how to use the settings is provided later in this article.
 
-To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- *Additional configuration on the production floor execution interface*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Additional configuration on the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Enable the my jobs tab
 
 The **My jobs** tab lets workers easily view all unstarted and unfinished jobs that are assigned specifically to them. It's useful in companies where jobs are sometimes or always assigned to specific workers (human resources) instead of other types of resources (such as machines).
 
-To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- *My jobs tab on the production floor execution interface*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *My jobs tab on the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Enable use of a numpad on the sign-in page
 
 This feature lets admins add a numpad control to the sign-in page for the production floor execution interface. Workers can then sign in by using the numpad to enter their badge ID or personal number.
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Enable use of a numpad in the sign-in page* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Enable use of a numpad in the sign-in page* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Work with production floor execution configurations
 

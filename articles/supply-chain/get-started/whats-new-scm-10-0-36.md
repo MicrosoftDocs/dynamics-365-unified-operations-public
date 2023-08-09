@@ -72,97 +72,86 @@ The table also lists features that were previously in public preview but have ch
 | Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | Mandatory |
 | Cost management | [Enable user-defined batch number setup for inventory closing reverse](../../finance/get-started/whats-new-changed-10-0-20.md) | Mandatory |
 | Cost management | [Inventory aging report storage](../cost-management/inventory-aging-report-storage.md) | Mandatory |
+| Engineering Change Management | [Engineering Change Management](../engineering-change-management/product-engineering-overview.md) | Mandatory |
+| Engineering Change Management | [Manage changes to formulas and their ingredients](../engineering-change-management/product-engineering-overview.md) | Mandatory |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | Mandatory |
 | Inventory management | [Enable intercompany on-hand to only show nonzero on-hand quantity](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | Mandatory |
 | Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | Mandatory |
 | Master planning | [Infinite capacity scheduling for Planning Optimization](../master-planning/planning-optimization/infinite-capacity-planning.md) | Mandatory |
 | Master planning | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Mandatory |
-| Master planning | Priority driven MRP support for Planning Optimization | Mandatory |
-| Master planning | CTP for Planning Optimization | On by default |
-| Master planning | DDMRP for Planning Optimization | On by default |
-| Master planning | Consider inventory lead time when creating a planned transfer order | On by default |
-| Master planning | Process manufacturing support for Planning Optimization | On by default |
-| Master planning | Restart and resume logic for the forecast generation batch process | On by default |
-| Master planning | Source products and materials from multiple vendors using Planning Optimization. | On by default |
-| Master planning | Forecast demand plan import service | Generally available |
-| Master planning | Average daily usage for distribution scenarios | Generally available |
+| Master planning | [Priority driven MRP support for Planning Optimization](../master-planning/planning-optimization/priority-based-planning.md) | Mandatory |
+| Master planning | [CTP for Planning Optimization](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | On by default |
+| Master planning | [DDMRP for Planning Optimization](../master-planning/planning-optimization/ddmrp-overview.md) | On by default |
+| Master planning | [Process manufacturing support for Planning Optimization](whats-new-scm-10-0-33.md) | On by default |
+| Master planning | [Restart and resume logic for the forecast generation batch process](whats-new-scm-10-0-31.md) | On by default |
+| Master planning | [Source products and materials from multiple vendors using Planning Optimization](../master-planning/source-from-multiple-vendors.md) | On by default |
 | Procurement and sourcing | Add Quantity ordered field to the Posting product receipt page | Mandatory |
 | Procurement and sourcing | Charges setup with site and warehouse | Mandatory |
 | Procurement and sourcing | Check unit precision for not-stocked items | Mandatory |
-| Procurement and sourcing | Consolidate multiple purchase requisitions into a single purchase order by accounting date | Mandatory |
-| Procurement and sourcing | Enable resetting procurement related workflows | Mandatory |
-| Procurement and sourcing | Limit the number of purchase order lines per batch task | Mandatory |
-| Procurement and sourcing | Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices | Mandatory |
-| Procurement and sourcing | Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow | Mandatory |
-| Procurement and sourcing | Prevent updates to intercompany sales order line requested dates in header to lines update scenario when derived | Mandatory |
-| Procurement and sourcing | Purchasing card processing | Mandatory |
+| Procurement and sourcing | [Consolidate multiple purchase requisitions into a single purchase order by accounting date](whats-new-scm-10-0-25.md) | Mandatory |
+| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Mandatory |
+| Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | Mandatory |
+| Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Mandatory |
+| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | Mandatory |
 | Procurement and sourcing | RFQ reference link added to PO | Mandatory |
-| Procurement and sourcing | Sealed bidding for RFQs | Mandatory |
-| Procurement and sourcing | Synchronize tracking dimensions on intercompany sales and purchase order lines | Mandatory |
-| Procurement and sourcing | Update prices and discounts entered manually for intercompany | Mandatory |
-| Procurement and sourcing | Assess supply risks to prevent supply chain disruptions | On by default |
-| Procurement and sourcing | Display legacy default RFQ reply field settings | On by default |
+| Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | Mandatory |
+| Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | Mandatory |
+| Procurement and sourcing | [Assess supply risks to prevent supply chain disruptions](../procurement/supply-risk-assessment-overview.md) | On by default |
+| Procurement and sourcing | [Display legacy default RFQ reply field settings](whats-new-scm-10-0-25.md) | On by default |
 | Procurement and sourcing | Purchase agreement matching policy | On by default |
 | Procurement and sourcing | Purchase order delivery date | On by default |
-| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | On by default |
-| Procurement and sourcing | Purchase order workflow submission and approval performance enhancement | Generally available |
-| Procurement and sourcing | Auto-create direct delivery intercompany orders originating from purchase order creation | Generally available |
-| Procurement and sourcing | Unit of measure for line level charges | Generally available |
-| Product information management | Clean up product attribute values | Mandatory |
-| Product information management | Engineering Change Management | Mandatory |
-| Product information management | Manage changes to formulas and their ingredients | Mandatory |
-| Product information management | Populate product attribute values | Mandatory |
-| Product information management | Display product info in user's language. | On by default |
-| Production control | Auto-picking of warehouse enabled materials for auto-posted picking lists | Mandatory |
-| Production control | Copy generic routes | Mandatory |
-| Production control | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor | Mandatory |
-| Production control | My jobs tab on the production floor execution interface | Mandatory |
-| Production control | Production teams in the production floor execution interface | Mandatory |
-| Production control | Update related resource requirements when a route operation is changed | Mandatory |
-| Production control | Additional configuration on the production floor execution interface | On by default |
-| Production control | Enable use of a numpad in the sign-in page | On by default |
-| Production control | Improved user experience for the Report progress dialog in the Job Card Device | On by default |
-| Production control | On-hand information in production orders to release page | On by default |
-| Production control | Report on catch weight items from the production floor execution interface | On by default |
-| Production control | Make finished goods physically available before posting to journals | Generally available |
-| Rebate management | Rebate management | Mandatory |
-| Rebate management | Cancel posted rebate provision with a posting date | On by default |
-| Rebate management | Enable auto negative tier in Rebate management | On by default |
-| Rebate management | Rebate management sold-to customers posting | On by default |
-| Sales and marketing | Calculate line net amount on import | Mandatory |
-| Sales and marketing | Calculate sales totals using multiple threads | Mandatory |
-| Sales and marketing | Default broker contract tax information on vendor invoice lines | Mandatory |
-| Sales and marketing | Adjusting reverse match for a settlement process | On by default |
-| Sales and marketing | Integrate Sales Quotation lifecycle with Dynamics 365 Sales | On by default |
-| Sales and marketing | Process Dynamics 365 Sales integration related events | On by default |
-| Sales and marketing | Sales order details performance enhancement | On by default |
-| Sales and marketing | Sales quotation details performance enhancement | On by default |
-| Sales and marketing | Settle customer payment deductions using the matching invoice | On by default |
-| Sales and marketing | Sales history cleanup performance improvements | Generally available |
+| Procurement and sourcing | [Purchase order workflow submission and approval performance enhancement](whats-new-scm-10-0-32.md) | Generally available |
+| Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | Mandatory |
+| Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | Mandatory |
+| Product information management | [Product dimension version](../pim/product-dimensions.md#version-dim) | Mandatory |
+| Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Mandatory |
+| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [My jobs tab on the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
+| Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
+| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Additional configuration on the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
+| Production control | [Enable use of a numpad in the sign-in page](../production-control/production-floor-execution-configure.md) | On by default |
+| Production control | [Improved user experience for the Report progress dialog in the Job Card Device](../production-control/report-finished-job-device.md) | On by default |
+| Production control | [On-hand information in production orders to release page](whats-new-scm-10-0-30.md) | On by default |
+| Production control | [Report on catch weight items from the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
+| Production control | [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md) | Generally available |
+| Rebate management | [Rebate management](../rebate-management/rebate-management-overview.md) | Mandatory |
+| Sales and marketing | [Calculate line net amount on import](../sales-marketing/calc-line-net-amounts-import.md) | Mandatory |
+| Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | Mandatory |
+| Sales and marketing | [Default broker contract tax information on vendor invoice lines](whats-new-scm-10-0-27.md) | Mandatory |
+| Sales and marketing | [Prevent updates to intercompany sales order line requested dates in header to lines update scenario when derived](whats-new-scm-10-0-32.md) | Mandatory |
+| Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md) | Mandatory |
+| Sales and marketing | [Adjusting reverse match for a settlement process](whats-new-scm-10-0-34.md) | On by default |
+| Sales and marketing | [Settle customer payment deductions using the matching invoice](whats-new-scm-10-0-31.md) | On by default |
+| Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) | Generally available |
+| Sales and marketing | Unit of measure for line level charges | Generally available |
+| Shared AP and AR | Cancel posted rebate provision with a posting date | On by default |
+| Shared AP and AR | Enable auto negative tier in Rebate management | On by default |
+| Shared AP and AR | [Rebate management sold-to customers posting](whats-new-scm-10-0-34.md) | On by default |
 | Transportation management | Allow unmatching of freight bills from freight invoice lines without a posted vendor invoice journal | Mandatory |
 | Transportation management | Landed cost | On by default |
-| Transportation management | Assign shipments to related route segments | Generally available |
+| Transportation management | [Assign shipments to related route segments](../transportation/assign-shipments-to-segments.md) | Generally available |
 | Transportation management | [Enable shipping container creation and update in batch mode](../landed-cost/landed-cost-enable.md) | Generally available |
 | Transportation management | [Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages](../landed-cost/landed-cost-enable.md) | Generally available |
 | Transportation management | [Generate data manually on voyage editor](../landed-cost/landed-cost-enable.md) | Generally available |
 | Transportation management | [Performance improvements for post receipt function in Landed Cost](../landed-cost/landed-cost-enable.md) | Generally available |
 | Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | Mandatory |
-| Warehouse management | Enhanced parser for GS1 barcodes | Mandatory |
+| Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | Mandatory |
 | Warehouse management | Evaluate work header breaks before work header maximums during work creation | Mandatory |
 | Warehouse management | Goods in Transit Receiving and Put away | Mandatory |
 | Warehouse management | Include Confirmed ship and Confirmed receipt dates into date filters on Load planning workbench | Mandatory |
-| Warehouse management | License plate receiving enhancements | Mandatory |
+| Warehouse management | [License plate receiving enhancements](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | License plate validation on source document lines | Mandatory |
 | Warehouse management | Line reservation enhancements for the batch number reservation form feature | Mandatory |
-| Warehouse management | Over receipt of load quantities | Mandatory |
-| Warehouse management | Packing work for packing stations | Mandatory |
-| Warehouse management | Parent license plates cannot be target license plates | Mandatory |
+| Warehouse management | [Over receipt of load quantities](../warehousing/inbound-load-handling.md) | Mandatory |
+| Warehouse management | [Packing work for packing stations](../warehousing/packing-work.md) | Mandatory |
+| Warehouse management | <!-- KFM: Continue here. --> Parent license plates cannot be target license plates | Mandatory |
 | Warehouse management | Pick line grouping | Mandatory |
 | Warehouse management | Post on-hand adjustments using configurable reason codes connected to offset accounts | Mandatory |
 | Warehouse management | Purchase order quantity left to load calculation using registered quantities | Mandatory |
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | Mandatory |
-| Warehouse management | Work policy enhancements for inbound work | Mandatory |
+| Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | Mandatory |
 | Warehouse management | Auto-submit detour steps for the Warehouse Management mobile app | On by default |
 | Warehouse management | Catch weight product processing with warehouse management | On by default |
 | Warehouse management | Hazardous materials enhancements | On by default |

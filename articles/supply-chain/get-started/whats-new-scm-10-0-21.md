@@ -89,7 +89,7 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
 | License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
 | A new button to Stop break has been added to the Job Card Terminal page | 9/1/2021 | 2/19/2020 | On by default | Production control |
-| Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
+| Enable partial receipt of subcontracted items and fix an issue with the  calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
 | Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
 | Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
 | Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
