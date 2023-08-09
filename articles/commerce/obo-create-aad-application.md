@@ -4,7 +4,7 @@
 title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 06/16/2023
+ms.date: 08/09/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -21,9 +21,9 @@ ms.dyn365.ops.version: 10.0.33
 
 This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of functionality (OBO) in Microsoft Dynamics 365 Commerce.
 
-## Create an Azure AD application for account manager sign-in in Azure B2B Tenant
+## Create an Azure AD application for account manager sign-in in the Azure B2B tenant
 
-To create an Azure AD application for account manager sign-in, follow these steps.
+To create an Azure AD application for account manager sign-in in the Azure business-to-business (B2B) tenant, follow these steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Go to the directory that contains the Azure AD business-to-business (B2B) tenant that's being used for sign-in in headquarters.
@@ -40,22 +40,22 @@ To create an Azure AD application for account manager sign-in, follow these step
 
 ![Registration of the AAD B2B application](media/obo-register-application2.png)
 
-## Configure an Azure AD application for account manager sign-in in Azure B2B Tenant
+## Configure an Azure AD application for account manager sign-in in the Azure B2B tenant
 
 After you complete the registration, locate the application that you created (for example, **Account Manager Application**).
 
-1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID). For example, **88760a037-ea1e-4e04-8e50-0a8dfcb4eb50**
-1. In the **Essentials** section, click **Add an Application ID URI**
-1. Click **Add a scope**
-1. Application ID URI is generated for you. Click **Save and continue**
-1. For **Scope** Name, select **user_impersonation**
-1. For **Admin consent display name**, select **'obo user impersonation'** or any other name
-1. For **Admin consent description**, select **'obo user impersonation'** or any other description
-1. Click **Save**
+1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID) (for example, "88760a037-ea1e-4e04-8e50-0a8dfcb4eb50").
+1. In the **Essentials** section, select **Add an Application ID URI**.
+1. Select **Add a scope**. An application ID URI is generated for you.
+1. Select **Save and continue**.
+1. For **Scope**, select **user_impersonation**.
+1. For **Admin consent display name**, select **obo user impersonation**, or enter any other name.
+1. For **Admin consent description**, select **obo user impersonation**, or enter any other description.
+1. Select **Save**.
 1. On the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
-1. In the **Description** field, enter a description of the client secret (for example, **clientsecret1**).
-1. Under **Expires**, select the duration that the secret is valid for.
+1. In the **Description** field, enter a description of the client secret (for example, "clientsecret1").
+1. Under **Expires**, select the duration for which the secret is valid.
 1. Select **Add**.
 1. Copy and save the secret value to be used later. 
 
@@ -71,15 +71,15 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. Go to the directory that contains your Azure AD B2C tenant. On the top menu, select the **Directory + subscription** filter, and then select the directory that contains your Azure AD B2C tenant.
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
-1. In the **Name** field, enter **Account Manager B2B Sign-in**. This exact name is required and cannot be modified. 
-1. In the **Metadata URL** field, enter the URL of the Azure B2B OpenID Connect Configuration document. For example, enter `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Azure AD B2B tenant. 
+1. In the **Name** field, enter "Account Manager B2B Sign-in". This exact name is required and can't be modified. 
+1. In the **Metadata URL** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where <TENANT-ID> is the ID of your Azure AD B2B tenant). 
 
-    > [!NOTE]
-    > The URL must use HTTPS.
+    > [!IMPORTANT]
+    > The OIDC configuration document URL must use HTTPS.
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter the **openid profile Azure-B2B-Application-ID-URI/user_impersonation** where **Azure-B2B-Application-ID-URI** is the ID of the Azure B2B Azure AD application. For example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation". (In other words, the scope field should be `openid profile <scope-name>`, where `<scope-name>` is the name of the scope created in step 8 in the section above. 
+1. In the **Scope** field, enter "openid profile <Azure-B2B-Application-ID-URI>/user_impersonation", where <Azure-B2B-Application-ID-URI> is the ID of the Azure B2B Azure AD application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile <scope-name>", where `<scope-name>` is the name of the scope created in step 8 of the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
 1. In the **Response Mode** field, select **form\_post**.
 1. In the **Response Type** field, select **code**.   
 1. Under **Identity provider claims mapping**, select the following claims:
@@ -100,7 +100,7 @@ To add the Azure identity provider to a user flow, follow these steps.
 
 1. In your Azure AD B2C tenant, select **User flows**.
 1. Select the user flow that you want to add the identity provider to.
-1. Under the **Custom identity providers**, select the identity provider that you added in the previous section (**Account Manager B2B Sign-in**).
+1. Under the **Custom identity providers**, select the identity provider that you added in the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
 1. Select **Save**.
 
 ## Additional resources
