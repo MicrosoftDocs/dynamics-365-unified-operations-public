@@ -2306,7 +2306,7 @@
             items:
             - name: VAT declaration overview
               href: localizations/emea-dnk-vat-declaration-denmark.md
-            - name:Preview VAT declaration in Excel format
+            - name: Preview VAT declaration in Excel format
               href: localizations/emea-dnk-vat-declaration-preview.md
             - name: Submit VAT return in XML to the Danish Tax Agency
               href: localizations/emea-dnk-vat-declaration-submission.md
