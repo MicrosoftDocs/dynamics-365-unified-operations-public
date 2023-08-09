@@ -3,8 +3,8 @@
 
 title: Extensible data security policies 
 description: This article provides an overview of Extensible Data Security (XDS) policies in finance and operations apps.
-author: Peakerbl
-ms.date: 03/29/2022
+author: pnghub
+ms.date: 08/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,13 +14,13 @@ ms.technology:
 ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: gned
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
 
@@ -94,14 +94,14 @@ XDS is not supported for financial dimensions and using XDS with financial dimen
 
 ## Bypassing XDS policy
 
-There is a new role ‘XDSDataAccessPolicyBypassRole’ to bypass XDS policy.
-If a user is assigned with the role ‘XDSDataAccessPolicyBypassRole’ then this user will bypass any supplemental extensible data security (XDS) policies and their data access will be purely role-based.
+There is a new role **XDSDataAccessPolicyBypassRole** to bypass XDS policy.
+If a user is assigned with the role **XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access will be purely role-based.
 
 For example, [Create a simple security policy](create-simple-security-policy.md).
 
-Assume an XDS policy is created with Query “XDSQCustGroup10” and is assigned to a role say ‘X’. 
-When a ‘User1’ is assigned with the role ‘X’, the ‘User1’ can see Customer group:10 in all customers page.  
-If the ‘User1’ is assigned with ‘XDSDataAccessPolicyBypassRole’ along with role ‘X’, then the filter will not be applied as the XDS policy is bypassed with the role ‘XDSDataAccessPolicyBypassRole’. ‘User1’ will then be able to see all the groups.
+Assume an XDS policy is created with Query **XDSQCustGroup10** and is assigned to a role, for example, role **X**. 
+When a **User1** is assigned with the role **X**, **User1** can see the **Customer group:10** in the **All customers** page.  
+If **User1** is assigned to the **XDSDataAccessPolicyBypassRole** role,  along with role **X**, then the filter isn't applied because the XDS policy is bypassed because of the role **XDSDataAccessPolicyBypassRole**. **User1** is able to see all the groups.
 
 ## Additional resources
 
