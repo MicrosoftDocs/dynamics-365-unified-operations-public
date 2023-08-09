@@ -42,26 +42,26 @@ be accessible from the restricted tables.
     customer, the **CustTrans** would be an example of a constrained table.
 
 -   **Primary table**: Used to secure the content of the related constrained
-    table. In the example below, the **CustTable** table would be the primary table.
+    table. In the following example, the **CustTable** table would be the primary table.
     The primary table must have an explicit relationship to the constrained tables.
 
 -   **Policy query**: Used to secure the constrained tables content using a range
     condition on the primary table contents. Only records that are included in
-    the range will be accessible. The range can, for example, be based on a
+    the range are accessible. The range can, for example, be based on a
     specific value for Customer.
 
 -   **Context** – Controls the conditions under which a policy is applicable.
     Two main types of contexts are available:
 
     -   **Role context**: Based on the roles that the user is assigned. There are
-        two sub-options for role context:
+        two suboptions for role context:
 
         -   **RoleName** – Indicates that the security policy is only applied to
             the application user assigned to the role equal to the value of
             RoleName.
 
         -   **RoleProperty** – This value is used in combination with the
-            **ContextString** property to specify multiple user roles context. It is
+            **ContextString** property to specify multiple user roles context. It's
             applied when the Context String value defined in the **Role Property**
             field for the policy is the same as the **ContextString** field value
             for the assigned user roles.
@@ -86,16 +86,16 @@ extensible data security policies" section in [Developing Extensible Data Securi
 2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper).
 
 When two or more security policies apply, the intersection (not the union) of
-the records that are included by each policy are the only records that can be
+the records included by each policy are the only records that can be
 accessed. This means that a record must satisfy all the applicable security
 policies before access to the record is allowed.
 
-XDS is not supported for financial dimensions and using XDS with financial dimension data will result in corruption of the data.
+XDS isn't supported for financial dimensions and using XDS with financial dimension data results in corruption of the data.
 
 ## Bypassing XDS policy
 
-There is a new role **XDSDataAccessPolicyBypassRole** to bypass XDS policy.
-If a user is assigned with the role **XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access will be purely role-based.
+A new role **XDSDataAccessPolicyBypassRole** bypasses the XDS policy.
+If a user is assigned with the role **XDSDataAccessPolicyBypassRole**, then this user bypasses any supplemental extensible data security (XDS) policies and their data access are purely role-based.
 
 For example, [Create a simple security policy](create-simple-security-policy.md).
 
