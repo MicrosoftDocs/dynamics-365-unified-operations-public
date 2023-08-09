@@ -87,13 +87,15 @@ The following illustrations show the actions that are performed, and the status 
 ### Actions
 
 **Insertion**
-The key difference is the Consultar Protocolo Step, which conform with 2.1.2 REST API use.
+
+The main difference is the Consultar Protocolo step, which conforms with 2.1.2 REST API use.
 
 > [!NOTE]
 > **Send** has become **Send Reinf 2.1 Events**.
-> Due to API changes, two extras have been added, **Query Protocol** **Import Response**.
+>
+> Because of API changes, two extras have been added: **Query Protocol** and **Import Response**.
 
-![Insertion.](media/bra-insertion-flow21.png)
+![Insertion action.](media/bra-insertion-flow21.png)
 
 **Amendment/Update**
 
@@ -114,13 +116,14 @@ Before you start to generate these events, book all fiscal documents in the rela
     - Select **R-2010**, and then select **Update** to collect all incoming fiscal documents where the model is **SE** and the tax type is **INSS**.
     - Select **R-2020**, and then select **Update** to collect all outgoing fiscal documents where the model is **SE** and the tax type is **INSS**.
     - Select **R-2055**, and then select **Update** to collect all incoming and outgoing fiscal documents that have SENAR or GILRAT taxes.
-    - Select **R-4010**, and then select **Update** to collect all incoming fiscal documents (invoices and journal entries) from Person Vendors.
-    - Select **R-4020**, and then select **Update** to collect all incoming fiscal documents from Organization Vendors.
-    - Select **R-4040**, and then select **Update** to collect all incoming Journal entries from an Unidentified Beneficiary.
-    - Select **R-4080**, and then select **Update** to collect all outgoing fiscal documents that are eligible for auto-withholding.
+    - Select **R-4010**, and then select **Update** to collect all incoming fiscal documents (invoices and journal entries) from Person Vendors.
+    - Select **R-4020**, and then select **Update** to collect all incoming fiscal documents from Organization Vendors.
+    - Select **R-4040**, and then select **Update** to collect all incoming journal entries from an Unidentified Beneficiary.
+    - Select **R-4080**, and then select **Update** to collect all outgoing fiscal documents that are eligible for auto-withholding.
 
 4. Select **Inquire** to view the fiscal documents that are included in the related event.
-![Fiscal document inquiry.](media/bra-inquire-21.png)
+
+    ![Fiscal document inquiry.](media/bra-inquire-21.png)
 
 5. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**, because the status of events is managed and controlled by this action.
 
@@ -167,11 +170,13 @@ Because communications can fail for technical reasons, such as a time-out or an 
 10. Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
     ![Generate reports.](media/bra-generate-reports21.png)
+
     ![Generate reports preparations.](media/bra-generate-reports-preparations21.png)
 
 11. Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 12. Repeat these steps until you've completed all the actions in the Insertion flow.
-  ![Generated report.](media/bra-generated-report21.png)
+
+    ![Generated report.](media/bra-generated-report21.png)
 
 ### Repro step – Amendment 
 
@@ -190,15 +195,16 @@ If, for any reason, the taxpayer wants to cancel or exclude an event that has be
 
 ## Event R-1050 – Table of linked entities
 
-Event R-1050 is used to report information about linked entities. This record provides information about entities that are connected to the taxpayer, such as FCI (Investment Fund) or SCP (Limited Partnership). The record also covers additional descriptive information about the legal entities submitting their declarations by using REINF.
+Event R-1050 is used to report information about linked entities. This record provides information about entities that are connected to the taxpayer, such as FCI (Investment Fund) or SCP (Limited Partnership). It also covers additional descriptive information about the legal entities that are using REINF to submit their declarations.
 
-1. Go to **Organization administration** > **Organizations** > **Fiscal establishments** > **Fiscal establishments**.
-2. On the **Fiscal establishment relations** tab, add any needed related information.
+1. Go to **Organization administration** \> **Organizations** \> **Fiscal establishments** \> **Fiscal establishments**.
+2. On the **Fiscal establishment relations** tab, add any related information that is required.
 
 ### Repro step
 
-1. Select **New** and set the following fields   
-  ![Description automatically generated.](media/bra-Description-generated21.png)
+- Select **New**, and set the following fields:
+
+    ![Fiscal establishments page.](media/bra-Description-generated21.png)
 
 ## Event R-1070 – Administrative and judicial process
 
@@ -262,9 +268,9 @@ Only service and retained INSS tax type must be selected to generate this event 
 - The fiscal documents are booked and synced in the related period and fiscal establishment.
 - The fiscal documents have a status of **Approved** or **Canceled**.
 - The fiscal document model is **SE**.
-- The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
+- The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** option is set to **Yes**).
 
-    ![Brazilian taxes, Retained tax/to recuperate check box.](media/bra-brazilian-taxes21.png)
+    ![Retained tax/to recuperate option set to Yes in the Brazilian taxes section.](media/bra-brazilian-taxes21.png)
 
 > [!NOTE]
 > Never use the **INSS-CPRB** tax type.
@@ -307,10 +313,11 @@ Generation of this event requires the adoption of new semantics for handling eve
 - The fiscal documents are booked and synced in the related period and fiscal establishment.
 - The fiscal documents have a status of **Approved** or **Canceled**.
 - The fiscal document model is **04** or **55**. 
-- The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** check box is selected).
-- The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** check box is selected), and GILRAT or SENAR taxes are identified.
+- The tax type is **INSS**, and it's retained (that is, the **Retained tax/to recuperate** option is set to **Yes**).
+- The tax type is **Other**, it's retained (that is, the **Retained tax/to recuperate** option is set to **Yes**), and GILRAT or SENAR taxes are identified.
 
     ![Tax type Other.](media/bra-other-brazilian-taxes21.png)
+
 ## Event R-2060 – INSS CPRB
 
 Periodic event R-2060 is used to send information about the tax assessment of the withholding for social security to the SPED-Reinf when the fiscal organization has chosen to calculate the social security based on the gross revenue instead of the payroll.
@@ -363,7 +370,7 @@ You can delete an existing INSS-CPRB tax assessment if the status is **Opened**.
 
 **Fiscal documents and non-fiscal operations**
 
-When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations (Journals) that are part of the tax calculation.
+When INSS-CPRB taxes are assessed, the taxable amount of the fiscal document is considered and classified during the assessment process. You can view the related fiscal documents and non-fiscal operations (journals) that are part of the tax calculation.
 
 **Tax transactions**
 
@@ -418,107 +425,107 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 
 ## R-4010 Payments/credits to individual beneficiaries
 
-R-4010 - Payments/Credits to Individual Beneficiaries: In this record, taxpayers will report payments and credits made for non-employment service contracts with individuals, for the purpose of withholding income tax (IR). There will be one event for each beneficiary record. Information related to IR on labor will be submitted through eSocial.
+**R-4010 - Payments/Credits to Individual Beneficiaries:** In this record, taxpayers will report payments and credits that are made for non-employment service contracts with individuals for the purpose of withholding income tax (IR). There will be one event for each beneficiary record. Information that is related to IR on labor will be submitted through eSocial.
 
 ### Repro step
 
--   Transaction by using the General Journal
+- Transaction by using the general journal.
 
 The R-4010 event should be entered only with the parameters of **Vendor** x **Ledger**.
 
-1. Go to **General Ledger** > **Journal entries** **&gt;** **General journals** > **New**.
-2. Select **Lines** and in the **Account type** field, select **Vendor**.
-3. Select an account and enter a description for the journal.
-4. Enter a credit and in the **Offset account type** field, select **Ledger**.
-5. Offset account &gt; add **FiscalEstablishment**
+1. Go to **General Ledger** \> **Journal entries** \> **General journals**, and select **New**.
+2. Select **Lines**, and then, in the **Account type** field, select **Vendor**.
+3. Select an account, and enter a description of the journal.
+4. Enter a credit, and then, in the **Offset account type** field, select **Ledger**.
+5. Offset account &gt; add **FiscalEstablishment**.
 6. In the **Item sales tax group** field, select a value.
 7. In the **Sales tax group** field, select a value.
 8. In the **Income code** field, select a code.
 
-    ![Brazilian taxes in journal.](media/bra-other-journal-voucher21.png)
+    ![Brazilian taxes in the journal.](media/bra-other-journal-voucher21.png)
 
-9. Post transaction using a purchase order by going to **Accounts payable** > **Purchase orders** > **All purchase orders** and select **New**.
-10. Select Vendor account and in the **Type** field, select **Person**.
+9. Post the transaction by using a purchase order. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**, and select **New**.
+10. Select a vendor account, and then, in the **Type** field, select **Person**.
 11. Select a site and a warehouse.
 
 **Add a purchase order line**
 
-1. Select a purchase line, and in the **Item number** field, select an item number. Order lines are created for products and services by specifying an item number.
+1. Select a purchase line, and then, in the **Item number** field, select an item number. You create order lines for products and services by specifying an item number.
 2. Add the item and the sales tax group.
-3. On the **Fiscal information** tab, if the value in the **Item** field is **Service**, verify that a service code has been added.
-4. On the **Purchase** tab, select **Actions** > **Confirm**.
-5. On the **Invoice** tab, select **Generate** > **Invoice**.
+3. On the **Fiscal information** tab, if the **Item** field is set to **Service**, verify that a service code has been added.
+4. On the **Purchase** tab, select **Actions** \> **Confirm**.
+5. On the **Invoice** tab, select **Generate** \> **Invoice**.
 6. On the **Vendor invoice** tab, review the information in the **Document model**, **Number**, **Series**, and invoice dates fields.
 7. Select **Post**.
 
-After, the Purchase Order related fiscal document is available to be synchronized into the booking period for submission.
+After you complete these steps, the purchase order–related fiscal document is available to be synchronized into the booking period for submission.
 
-## R-4020 Payments/credits to legal entity beneficiaries.
+## R-4020 Payments/credits to legal entity beneficiaries
 
-R-4020 - Payments/Credits to Legal Entity Beneficiaries: In this EFD REINF record, there is one event for each beneficiary record, declaring payments/credits related to payments for services provided by legal entities.
+**R-4020 - Payments/Credits to Legal Entity Beneficiaries:** In this EFD REINF record, there is one event for each beneficiary record, declaring payments/credits that are related to payments for services that legal entities provide.
 
 ### Repro step
 
-- For a General journal transaction, follow the steps in the process, **R-4010**. The participant should be a legal entity.
-- For a Purchase order transaction, follow the steps in the process. **R-4010**. The participant should be a legal entity. After, the Purchase order related fiscal document is available to be synchronized into the booking period for submission.
+- For a general journal transaction, follow the steps in the **R-4010** process. The participant should be a legal entity.
+- For a purchase order transaction, follow the steps in the **R-4010** process. The participant should be a legal entity. After you complete these steps, the purchase order–related fiscal document is available to be synchronized into the booking period for submission.
 
 ## R-4040 Payments/credits to unidentified beneficiaries
 
-R-4040 - Payments/Credits to Unidentified Beneficiaries: The R-4040 event reports payments where the beneficiary can't be identified, such as situations where no fiscal document is issued.
+**R-4040 - Payments/Credits to Unidentified Beneficiaries:** The R-4040 event reports payments where the beneficiary can't be identified, such as situations where no fiscal document is issued.
 
 ### Repro step
 
-For a General journal transaction, follow the steps in the process, **R-4010**. The participant should be a legal entity. After you complete the steps, the Purchase order related fiscal document is available to be synchronized into the booking period for submission.
+- For a general journal transaction, follow the steps in the **R-4010** process. The participant should be a legal entity. After you complete the steps, the purchase order–related fiscal document is available to be synchronized into the booking period for submission.
 
 ## R-4080 Auto Withholding
 
-R-4080 - Withholding on Receipt. Known as self-withholding, this operation primarily occurs in conditioning processes, such as in advertising agencies, card operators, and travel agencies. These activities are specified in the legislation and perform their own withholding. The transmission is done by the recipients of the income, not the payers.
+**R-4080 - Withholding on Receipt:** Also known as self-withholding, this operation primarily occurs in conditioning processes, such as in advertising agencies, card operators, and travel agencies. These activities are specified in the legislation and perform their own withholding. The transmission is done by the recipients of the income, not by the payers.
 
 ### Repro step
 
--   Sales order Transaction
+- Sales order transaction
 
-The following steps are an example of how to create a sales order entry.
+The following steps provide an example that shows how to create a sales order entry.
 
-1.  Go to **Accounts receivable** > **Orders** > **All sales orders** and select **New**.
-2.  Select a Customer account and in the **Type** field, select **Organization**.
-3.  Select a site and a warehouse.
-4.  Select **Sales line**.
-5.  In the **Item number** field, select an item number. Order lines are created for products and services by specifying an item number.
-6.  Add the items and sales tax group.
-7.  On the **Fiscal information** tab, if the item = **Service**, check for a Service Code.
-8.  On the **Invoice** tab, select **Generate** > **Invoice**.
+1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**, and select **New**.
+2. Select a customer account, and then, in the **Type** field, select **Organization**.
+3. Select a site and a warehouse.
+4. Select **Sales line**.
+5. In the **Item number** field, select an item number. You create order lines for products and services by specifying an item number.
+6. Add the items and sales tax group.
+7. On the **Fiscal information** tab, if the **Item** field is set to **Service**, verify that a service code has been added.
+8. On the **Invoice** tab, select **Generate** \> **Invoice**.
 9. On the **Posting invoice** tab, review the information in the **Fiscal Document type**, **Number**, **Series**, and invoice dates fields.
 10. Select **OK**.
 
-After, the Sales Order related fiscal document is available to be synchronized into the booking period for submission.
+After you complete these steps, the sales order–related fiscal document is available to be synchronized into the booking period for submission.
 
-## R-4099 - Closure/reopening of R-4000 series events
+## R-4099 Closure/reopening of R-4000 series events
 
-R-4099 - Closure/Reopening of Periodic Events in the R-4000 series. This event is transmitted after all periodic event records have been closed, or it can be used to reopen a period of a specific record.
+**R-4099 - Closure/Reopening of Periodic Events in the R-4000 series:** This event is transmitted after all periodic event records have been closed. It can also be used to reopen a period of a specific record.
 
 ### Repro step
 
 To generate the closure event, follow these steps.
 
-1. Go to **Fiscal books** > **Common** > **Booking period** and select the period.
-2. Select **R-4098 (Reopen)** and **R-4099 (Closure)**
+1. Go to **Fiscal books** \> **Common** \> **Booking period**, and select the period.
+2. Select **R-4098** (**Reopen**) and **R-4099** (**Closure**).
 
-    ![Events 4098.](media/bra-other-events21.png)
+![Events R-4098 and R-4099 on the Booking period page.](media/bra-other-events21.png)
 
 ## Event sending FLOW
 
-Send events R-1000 / R-1050 / R-1070 / R-2010 / R-2020 / R-2055 / R-2060 / R-2099 / R-4000
+Send events R-1000 / R-1050 / R-1070 / R-2010 / R-2020 / R-2055 / R-2060 / R-2099 / R-4000.
 
-1. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
-2. Select **Processing** > **Processing SPED REINF** and then select one of the following:
+1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**.
+2. Select **Processing** \> **Processing SPED REINF**, and then select one of the following options:
 
-    - **Incluir**
-    - **Parametros adicionais**
-    - **Gerar**
-    - **Validar**
-    - **Enviar Eventos do REINF 2.1**
-    - **Obter resposta**
-    - **Importar resposta**
+    - Incluir
+    - Parametros adicionais
+    - Gerar
+    - Validar
+    - Enviar Eventos do REINF 2.1
+    - Obter resposta
+    - Importar resposta
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
