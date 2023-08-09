@@ -47,9 +47,6 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
     1. **Name:** Leave this field blank.
   
 1. On the action pane, select **Save**.
-    
-    ![Example of the Identity Provider Configuration in Commerce Shared Parameters in HQ](media/obo-commerce-shared-param3.png) 
-
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
 1. In the left navigation menu, select the **1110 Global configuration** job.
 1. On the action pane, select **Run Now**.
