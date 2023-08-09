@@ -17,9 +17,9 @@ ms.search.validFrom:
 
 This article describes how to set up the value-added tax (VAT) declaration for Denmark, preview it in Microsoft Excel and submit to the Danish Tax Agency (Skattestyrelsen).
 
-As of version 10.0.37 of Finance you submit directly your VAT return in XML format to the Danish Tax Agency (Skattestyrelsen).
+As of version 10.0.37 of Finance direct submission of VAT return in XML format to the Danish Tax Agency (Skattestyrelsen) is supported.
 
-The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and for companies that report as a [VAT group](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
+The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and [collect tax data from several legal entities to one VAT declaration](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
 
 For more information about how to prepare a VAT return with direct submission to Danish Tax Agency, see [Submit VAT return in XML to the Danish Tax Agency](emea-dnk-vat-declaration-submission.md)
 
