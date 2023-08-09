@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/08/2023
+ms.date: 08/10/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -152,7 +152,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Digital wallet support status
 
-The following table lists popular digital wallets and the current support status of those wallets by the Dynamics 365 Commerce Payment Connector for Adyen. 
+The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. 
 
 **Card present support** is for POS transactions, and **Card not present support** is for call center and online channel transactions. 
 
