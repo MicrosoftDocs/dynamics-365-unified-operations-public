@@ -49,6 +49,9 @@ Open the **Electronic reporting** workspace, and import the following ER configu
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
+> [!NOTE]
+> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping** under **Tax declaration model**.
+
 ## <a name="set-up-application-specific-parameters"></a> Set up application-specific parameters for VAT declaration fields
 
 > [!NOTE]
