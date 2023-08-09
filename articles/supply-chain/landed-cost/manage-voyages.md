@@ -186,8 +186,8 @@ The following table describes the buttons that are available on the Action Pane 
 | Button | Description |
 |---|---|
 | Edit voyage header | Opens the **Edit voyage** dialog, where you can view and update header information for the current voyage. These settings are also available on **General** FastTab of the **Header** view of the voyage details page. For a description of these fields, see [Header view of the voyage details page](#header-view). |
-| Setup | Opens a drop-down dialog where you can choose which transaction types and sites to show on the page. These criteria are combined with those in the **Filters** FastTab to control which orders are listed on the **Inbound orders** FastTab. |
-| Generate data | Updates the list of orders shown in the **Inbound orders** FastTab based on the current **Filters** and **Setup** settings. You must select this button to update the inbound orders list each time you change these settings. |
+| Setup | Opens a drop-down dialog where you can choose which transaction types and sites to show on the page. These criteria are combined with those on the **Filters** FastTab to control which orders are listed on the **Inbound orders** FastTab. |
+| Generate data | Updates the list of orders shown on the **Inbound orders** FastTab based on the current **Filters** and **Setup** settings. You must select this button to update the inbound orders list each time you change these settings. |
 | Display dimensions | Opens a dialog where you can select the inventory dimensions that should be shown in the grid on the **Lines to select** FastTab. |
 
 ### The Filters FastTab
@@ -196,15 +196,15 @@ Use the **Filters** FastTab to set criteria to control which purchase and transf
 
 ### The Inbound orders FastTab
 
-The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set in the **Filters** FastTab and the **Setup** drop-down dialog. Select an order listed here to view the lines that are associated with that order in the **Lines to select** FastTab. Some orders may be listed several times if they include lines with different delivery dates.
+The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set on the **Filters** FastTab and the **Setup** drop-down dialog. Select an order listed here to view the lines that are associated with that order on the **Lines to select** FastTab. Some orders may be listed several times if they include lines with different delivery dates.
 
 ### The Lines to select FastTab
 
-The **Lines to select** FastTab lists the lines that are associated with the order and delivery date that you selected in the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, then select **Add to staging list** from the toolbar to make them available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
+The **Lines to select** FastTab lists the lines that are associated with the order and delivery date that you selected on the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, then select **Add to staging list** from the toolbar to make them available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
 
 ### The Other dates FastTab
 
-The **Other dates** FastTab lists lines that are associated with the order that you selected in the **Inbound orders** FastTab, but which have different delivery dates from the row you selected. These lines are for information only, and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date in the **Inbound orders** FastTab, which will make those lines available on the **Lines to select** FastTab.
+The **Other dates** FastTab lists lines that are associated with the order that you selected on the **Inbound orders** FastTab, but which have different delivery dates from the row you selected. These lines are for information only, and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date on the **Inbound orders** FastTab, which will make those lines available on the **Lines to select** FastTab.
 
 ## Voyage update periodic tasks
 
