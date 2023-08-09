@@ -78,6 +78,8 @@ Follow these steps to define which sales tax codes generate which boxes on the V
 
 5. In the **State** field, change the value to **Completed**.
 
+If you plan to submit VAT return directly to the Danish Tax Agency from Finance, export completed setup of application-specific parameters for **VAT declaration Excel (DK)** configuration as XML file and then import this file for **VAT declaration XML (DK)** configuration. Change the value in the **State** field to **Completed** for **VAT declaration XML (DK)** configuration.
+
 ## Set up the VAT statement format mapping for preview in Excel
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports.** feature in the list, and then select **Enable now**.
