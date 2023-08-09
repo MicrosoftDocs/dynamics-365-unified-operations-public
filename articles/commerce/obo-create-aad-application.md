@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
+
 ---
 
 # Create and configure an Azure AD application for account manager sign-in 
@@ -72,14 +73,14 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 1. In the upper-left corner of the Azure portal, select **All services** , and then search for and select **Azure AD B2C**.
 1. Select **Identity providers**, and then select **New OpenID Connect provider**.
 1. In the **Name** field, enter "Account Manager B2B Sign-in". This exact name is required and can't be modified. 
-1. In the **Metadata URL** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where <TENANT-ID> is the ID of your Azure AD B2B tenant). 
+1. In the **Metadata URL** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Azure AD B2B tenant). 
 
     > [!IMPORTANT]
     > The OIDC configuration document URL must use HTTPS.
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter "openid profile <Azure-B2B-Application-ID-URI>/user_impersonation", where <Azure-B2B-Application-ID-URI> is the ID of the Azure B2B Azure AD application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile <scope-name>", where `<scope-name>` is the name of the scope created in step 8 of the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
+1. In the **Scope** field, enter "openid profile `<Azure-B2B-Application-ID-URI>`/user_impersonation", where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Azure AD application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile `<scope-name>`", where `<scope-name>` is the name of the scope created in step 8 of the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
 1. In the **Response Mode** field, select **form\_post**.
 1. In the **Response Type** field, select **code**.   
 1. Under **Identity provider claims mapping**, select the following claims:
