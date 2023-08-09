@@ -82,13 +82,13 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 1.  Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
 2.  On the **General** tab, select **SPED REINF version**
 
-    ![Number Sequence.](media/bra-sped-parameters21.png)
+    ![SPED REINF parameters page.](media/bra-sped-parameters21.png)
 
 3.  Select the environment type and the status of the fiscal organization.
 4.  Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
 5.  On the **Number sequences** tab, set up the number sequence for events.  
 
-    ![Number Sequence.](media/bra-number-sequence21.png)
+    ![Fiscal books parameters.](media/bra-number-sequence21.png)
 
 > [!NOTE] 
 > If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. Then configure the related number sequence:
