@@ -40,7 +40,7 @@ Not all standard entities have been optimized for data migration. Some entities 
 
 Begin the optimization phase by using a subset of the data. For example, if you must import one million records, consider starting with 1,000 records, then increase the number to 10,000 records, and then increase it to 100,000 records.
 
-After you've identified the entities that you will use, you should go through the following sections to explore opportunities for optimization.
+After you've identified the entities that to use, you should go through the following sections to explore opportunities for optimization.
 
 ## Disable change tracking
 
@@ -56,14 +56,14 @@ Follow these steps to verify that an entity supports set-based processing.
 1. In the **Data management** workspace, select the **Data entities** tile.
 2. On the **Target entities** page, find the entity in the grid, and review the value in the **Set-based processing** column.
 
-For an example that shows how set-based processing can be enabled for the **General Journal** entity, see [Best practices for importing vouchers by using the General journal entity](../data-entities/tips-tricks-import-general-journal-entity.md). Not all entities support set-based processing. For example, if you try to enable support set-based processing for the **Customer definitions** (**CustCustomerBaseEntity**) entity and save your change, you will receive the following warning message:
+For an example that shows how set-based processing can be enabled for the **General Journal** entity, see [Best practices for importing vouchers by using the General journal entity](../data-entities/tips-tricks-import-general-journal-entity.md). Not all entities support set-based processing. For example, if you try to enable support set-based processing for the **Customer definitions** (**CustCustomerBaseEntity**) entity and save your change, you receive the following warning message:
 
 > Set operations not supported for 'Customer definitions' entity.
 
 Here are some important considerations if you must create an entity that allows for set-based processing:
 
 * The data sources can't be read-only.
-* The [**ValidTimeStateEnabled**](../dev-tools/date-effectivity.md) property of the data entity view the must be set to **No**.
+* The [**ValidTimeStateEnabled**](../dev-tools/date-effectivity.md) property of the data entity view must be set to **No**.
 * All tables on the data sources must have **TableType** property set to **Regular**.
 * The property [**QueryType**](../dev-ref/application-explorer-aot-properties.md#query-properties-1) on the used **Query** can't be set to **Union**.
 * The main data source can't prevent data from being saved across companies. However, embedded data sources allow it.
@@ -71,7 +71,7 @@ Here are some important considerations if you must create an entity that allows 
 
 ## Create a data migration batch group
 
-During cutover, run the data migration while there is little or no other activity. It can be helpful to configure and use a batch group where most or all compute nodes are assigned.
+During cutover, run the data migration while there's little or no other activity. It can be helpful to configure and use a batch group where most or all compute nodes are assigned.
 
 You can configure a batch group on the **Batch group** page (**System administration \> Setup \> Batch group**).
 
@@ -81,11 +81,11 @@ In Platform update 31, the new [priority-based batch scheduling](priority-based-
 
 ## Configure the maximum number of batch threads
 
-To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **8**. You can increase the value to **12** or **16**. However, you should not set the field to a value that is more than 16 unless you do significant performance testing.
+To better use parallelism and multithreading, you can configure the maximum number of batch threads per instance of Application Object Server (AOS) by setting the **Maximum batch threads** field on the **Server configuration** page (**System administration \> Setup \> Server configuration**). Be careful about changing the value of this field. A value that is too high can have negative performance implications. Currently, the default value is **8**. You can increase the value to **12** or **16**. However, you shouldn't set the field to a value that is more than 16 unless you do significant performance testing.
 
 ## Import in batch mode
 
-Whenever you run an import job, make sure that it's run in batch mode. Otherwise, a single thread will be used to run the job. In this case, the system won't be able to take full advantage of these optimization configurations.
+Whenever you run an import job, make sure that it's run in batch mode. Otherwise, a single thread is used to run the job. In this case, the system isn't able to take full advantage of these optimization configurations.
 
 ## Clean staging tables
 
@@ -101,7 +101,7 @@ Before you run a data migration job that involves a large volume of data, consid
 
 ## Clean the data
 
-The time that is spent on validations and error reporting will increase the total time of the migration. Consider this fact when you import a high volume of invalid or inconsistent data. We recommend that you try to fix and reduce errors that are related to data quality. In this way, you help prevent unnecessary executions of validation and error handling.
+The time that is spent on validations and error reporting increases the total time of the migration. Consider this fact when you import a high volume of invalid or inconsistent data. We recommend that you try to fix and reduce errors that are related to data quality. In this way, you help prevent unnecessary executions of validation and error handling.
 
 ## Configurations to test during test runs of data migration
 
@@ -121,15 +121,15 @@ This value determines the number of records to be processed per thread. [By modi
 
 #### Import task count
 
-This field defines the number of threads that will be used for the data migration job for a specific entity. For example, the **Maximum batch threads** field for each server is set to **8**, and four servers are assigned to the data migration batch group. In this case, the total maximum value of the **Import task count** field is **32** (= 8 × 4).
+This field defines the number of threads that's used for the data migration job for a specific entity. For example, the **Maximum batch threads** field for each server is set to **8**, and four servers are assigned to the data migration batch group. In this case, the total maximum value of the **Import task count** field is **32** (= 8 × 4).
 
-If a data entity doesn't support multithreading, you receive an error message when you try to configure the entity. Here is an example:
+If a data entity doesn't support multithreading, you receive an error message when you try to configure the entity. For example:
 
 > Custom sequence is defined for the entity 'Customers V3', more than one task is not supported.
 
 ### Validations
 
-Validation logic for record insertions or updates might have been incorporated into the system, or there might be validation of individual fields. If the data migration is mature enough, the time that is spent on imports can be significantly reduced by disabling this validation, if it can be disabled.
+Validation logic for record insertions or updates might have been incorporated into the system, or there might be validation of individual fields. If the data migration is mature enough, the time that is spent on imports can be reduced by disabling this validation, if it can be disabled.
 
 Follow these steps to change the settings for each entity.
 
@@ -139,11 +139,11 @@ Follow these steps to change the settings for each entity.
 
 #### Run business validations
 
-If this check box is selected, the system will run any logic that is written into the **validateWrite()** method on the table. It will also run any related event handlers.
+If this check box is selected, the system runs any logic that is written into the **validateWrite()** method on the table. It also runs any related event handlers.
 
 #### Run business logic in insert or update method
 
-If this check box is selected, the system will run any logic that is written into the **insert()** or **update()** method on the table. It will also run any related event handlers.
+If this check box is selected, the system runs any logic that is written into the **insert()** or **update()** method on the table. It also runs any related event handlers.
 
 #### Call the validateField method on the target
 
@@ -151,13 +151,13 @@ Follow these steps to run field validation.
 
 1. In the **Data management** workspace, select the **Data entities** tile.
 2. On the **Target entities** page, select the entity in the grid, and then, on the Action Pane, select **Modify target mapping**.
-3. On the **Map staging to target** page, select the **Call validate Field method** check box for the field that validation should be run for. The **validateField(FieldId p1)** method will then be called for that field.
+3. On the **Map staging to target** page, select the **Call validate Field method** check box for the field that validation should be run for. The **validateField(FieldId p1)** method is then called for that field.
 
 ### Recommendations for optimizing data migration performance
 
 Here are some general recommendations about the approach that you should use to optimize the performance of data migration:
 
-* Break up large files into smaller chunks. This approach gives the SQL optimizer time to determine whether a new query plan will be optimal.
+* Break up large files into smaller chunks. This approach gives the SQL optimizer time to determine whether a new query plan is optimal.
 * Test performance in an appropriate Tier-2 or higher environment.
 * Test performance in a mock cutover before go-live.
 
