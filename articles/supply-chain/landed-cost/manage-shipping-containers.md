@@ -65,17 +65,6 @@ You create a shipping container by opening or creating the voyage where you will
 > [!NOTE]
 > If a container already exists for your selected voyage, you can add new purchase order lines to it by selecting **Add to new existing shipping container** on the **Add staging list or shipping container** page.
 
-### Action Pane buttons on the Voyage editor page
-
-The following table describes the buttons that are available on the Action Pane of the **Voyage editor** page.
-
-| Button | Description |
-|---|---|
-| Edit voyage header | Opens the **Edit voyage** dialog, where you can view and update header information for the current voyage. |
-| Setup | Opens a drop-down dialog where you can choose which transaction types and sites to show on the page. |
-| Generate data | Updates the list of orders shown in the **Inbound orders** FastTab based on the current filter settings. You must select this button to update the inbound orders list each time you change the filter settings. |
-| Display dimensions | Opens a dialog where you can select the inventory dimensions that should be shown in the grid on the **Lines to select** FastTab. |
-
 ## View shipping container lists and details
 
 To view and process goods through the shipping container page, go to **Landed cost \> Shipping containers \> All shipping containers**. The **All shipping containers** page shows a list of all available shipping containers. You can use the buttons on the Action Pane to delete and manage shipping containers. Select any shipping container in the list to view its details on the **Shipping containers** page.
