@@ -62,7 +62,7 @@ You can also create a template for the buyer to use later. We recommend that you
 > - The only method of payment that's provided is **On Account**.
 > - Account managers have access to view a buyer's invoices, but they can't pay invoices.
 > - Account managers can create a new order template for the buyer. The order template won't have an additional identifier to indicate that the template was created by the account manager.
-> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported for Commerce version 10.0.35 and later. 
+> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported starting with Commerce version 10.0.35. 
 > - Any custom extensions that affect customer hierarchies or sales groups might have to be modified to support OBO functionality. Any extensions that retrieve values directly from the user context on an e-commerce site might also have to be modified.
 
 ## Additional resources
