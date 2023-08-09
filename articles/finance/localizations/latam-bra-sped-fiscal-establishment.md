@@ -30,11 +30,11 @@ SPED Reinf events: R-4010, R-4020 and R-4040 require a fiscal establishment be d
 
 4.  Go to **General Ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures** and select the line for which you want to configure the account structure.
 5.  Select **Edit** and make any necessary changes to the account structure.  
-    ![Preparation items parameters.](media/bra-acc-structure.png)
+    ![Edit button for account structure changes.](media/bra-acc-structure.png)
 
 6.  While editing an account structure, select **Add segment** and then add **Fiscal Establishment**.
 7.  Select **Activate** and add the dimensions separator.  
-    ![Preparation items parameters.](media/bra-add-segment.png)
+    ![Adding a segment to the account structure.](media/bra-add-segment.png)
 
 After the **Fiscal Establishment** is configured as a dimension, it's available for selection in the **Financial dimensions** of a journal line.
     ![Preparation items parameters.](media/bra-sel-dim.png)
