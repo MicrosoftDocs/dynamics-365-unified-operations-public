@@ -78,7 +78,7 @@ Follow these steps to define which sales tax codes generate which boxes on the V
 
 5. In the **State** field, change the value to **Completed**.
 
-## Set up the VAT reporting format for preview amounts in Excel
+## Set up the VAT statement format mapping for preview in Excel
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports.** feature in the list, and then select **Enable now**.
 2. Go to **General ledger** > **Setup** > **General ledger parameters**.
