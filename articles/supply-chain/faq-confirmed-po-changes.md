@@ -20,17 +20,17 @@ The **Confirmed purchase orders with changes** workspace helps procurement profe
 
 This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
-## What are the system's capabilities?
+## What are capabilities of the Confirmed purchase orders with changes workspace?
 
-The system takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *Text-davinci-003* generative AI model to generate the natural-language content.
+The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *Text-davinci-003* generative AI model to generate the natural-language content.
 
-## What is the system's intended use?
+## What is the intended use of the Confirmed purchase orders with changes workspace?
 
 The **Confirmed purchase orders with changes** workspace is intended to help procurement professional review changes to confirmed purchase orders and mitigate the downstream impacts. It supports a workflow where the purchaser first reviews and reconfirms changed purchase orders that have little or no downstream impact. It then provides tools to help the purchaser assess and mitigate the impact of changes that have significant downstream impact.
 
 Messaging text that Copilot generates isn't intended to be used without manual review or supervision.
 
-## How was the feature evaluated? What metrics are used to measure performance?
+## How was the Confirmed purchase orders with changes workspace evaluated? What metrics are used to measure performance?
 
 The **Confirmed purchase orders with changes** workspace underwent substantial testing before it was released. It relies on user feedback to report inappropriate content.
 
@@ -38,13 +38,13 @@ If you encounter inappropriate generated content, report it to Microsoft by usin
 
 Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations of the feature? How can users minimize the impact of its limitations when they use the system?
+## What are the limitations of the Confirmed purchase orders with changes workspace? How can users minimize the impact of its limitations when they use it?
 
 The **Confirmed purchase orders with changes** workspace uses Copilot to generate a summary of impact and proposed communication content.
 
 The generated content should never be used without manual review or supervision.
 
-## What operational factors and settings allow for effective and responsible use of the system?
+## What operational factors and settings allow for effective and responsible use of the Confirmed purchase orders with changes workspace?
 
 When you use the feature, follow these recommendations:
 
