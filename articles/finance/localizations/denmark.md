@@ -44,7 +44,7 @@ This article provides links to documentation resources for Denmark.
 - [Set up OIOUBL electronic invoicing](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Set up payment slip format](tasks/set-up-payment-slip-format.md)
 - [Danish Intrastat](emea-dnk-intrastat.md)
-- [VAT declaration]()
+- VAT declaration
   - [VAT declaration overview](emea-dnk-vat-declaration-denmark.md)
   - [Preview VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md)
   - [Submit VAT return in XML to the Danish Tax Agency](emea-dnk-vat-declaration-submission.md)
