@@ -31,14 +31,14 @@ The service type table represents table 06. The tax authorities have established
 
 4. After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**, and then, for each service, assign the related service type.
 
-## Income classification setup
+## Set up the income classification
 
-After you create the list of service types, assign them to service codes and includ the yield Income code provided in the SPED REINF manual released by the Tax Authority.
+After you create the list of service types, assign them to service codes. Include the yield income code that is provided in the SPED REINF manual that is released by the tax authority.
 
-1. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**
+1. Go to **Inventory management** \> **Setup** \> **Fiscal information** \> **Service code**.
 2. For each service, assign the related service type and income code.
  
-     ![Income Classification Setup.](media/bra-income-classification-setup21.png)
+![Income classification setup on the Service code page.](media/bra-income-classification-setup21.png)
 
 ## Set up tax classification codes
 
@@ -71,81 +71,82 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 
 ## Set up GILRAT and SENAR taxes
 
-**GILRAT**: The tax contribution of the degree of incidence of Labor disability resulting from occupational environmental risks.
-**SENAR**: The tax contribution related to rural production.
+**GILRAT:** The tax contribution of the degree of incidence of Labor disability resulting from occupational environmental risks.
+
+**SENAR:** The tax contribution related to rural production.
 
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **GILRAT tax codes** or **SENAR tax codes**.
 2. Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to **Other**. The amount of these taxes is used in the **vlrRatDescPR** and **vlrSenarDesc** tags for event R-2055.
 
-## Fiscal books parameters Setup
+## Set up Fiscal books parameters
 
-1.  Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
-2.  On the **General** tab, select **SPED REINF version**
+1. Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
+2. On the **General** tab, select the SPED REINF version.
+3. Select the environment type and the status of the fiscal organization.
 
-    ![SPED REINF parameters page.](media/bra-sped-parameters21.png)
+    ![Parameters set on the General tab of the SPED Reinf parameters page.](media/bra-sped-parameters21.png)
 
-3.  Select the environment type and the status of the fiscal organization.
-4.  Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
-5.  On the **Number sequences** tab, set up the number sequence for events.  
+4. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters**.
+5. On the **Number sequences** tab, set up the number sequence for events.
 
-    ![Fiscal books parameters.](media/bra-number-sequence21.png)
+    ![Number sequence set up on the Number sequences tab of the Fiscal books parameters page.](media/bra-number-sequence21.png)
 
 > [!NOTE] 
-> If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. Then configure the related number sequence:
->    - **Area**: Fiscal books
->    - **Reference**: SPED-REINF event ID
+> If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To open the wizard, go to **Organization administration** \> **Number sequences** \> **Number sequences**, and select **Generate**. Then configure the related number sequence:
+>
+> - **Area:** Fiscal books
+> - **Reference:** SPED-REINF event ID
 
-## Vendor Setup – Events R-2055,R-4010, R-4020 and R-4040
+## Vendor setup – Events R-2055, R-4010, R-4020, and R-4040
 
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors** and select a vendor.
-2. On the **Fiscal information** tab, set up **REINF taxation over payroll**. This new attribute determines the type of taxation because this information is required in the **indOpcCP** tag for event R-2055.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
+2. On the **Fiscal information** tab, set the **REINF taxation over payroll** attribute. This new attribute determines the type of taxation, because this information is required in the **indOpcCP** tag for event R-2055.
 
-## Event R-4010 Person Vendor Setup  
+## Event R-4010 Person Vendor setup
 
-1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-2.  In the **Type** field, select **Person**.  
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2. In the **Type** field, select **Person**.
 
-    ![New Person.](media/bra-new_vendor21.png)
+![New Person Vendor.](media/bra-new_vendor21.png)
 
-## Event R-4020 Legal Entity Vendor Setup  
+## Event R-4020 Legal Entity Vendor setup
 
-1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-2.  In the **Type** field, select **Organization**.  
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2. In the **Type** field, select **Organization**.
 
-    ![New Organisation.](media/bra-new_org21.png)
+![New Organization Vendor.](media/bra-new_org21.png)
 
-## Event R-4040 Unidentified Beneficiary Vendor
+## Event R-4040 Unidentified Beneficiary Vendor setup
 
-1.  Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-2.  In the **Type** field, select **Organization** or **Person**.
-3.  Set the **Unidentified beneficiary** slider to **Yes**.  
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+2. In the **Type** field, select **Organization** or **Person**.
+3. Set the **Unidentified beneficiary** option to **Yes**.
 
-    ![Beneficiary.](media/bra-beneficiary21.png)
+![New Unidentified Beneficiary Vendor.](media/bra-beneficiary21.png)
 
-## Event R-4080 Withholding tax on receipt (auto-withholding) Customer
+## Event R-4080 Withholding tax on receipt (auto-withholding) Customer setup
 
-In the customer registration, the **Withholding tax** field must be filled in with the provided information. After this information is configured, new invoices should be issued, and new events generated.
+In the customer registration, the **Withholding tax** field must be filled in with the provided information. After this information is configured, new invoices should be issued, and new events should be generated.
 
-1.  Go to **Accounts receivable** \> **Customers** \> **All customers** \> **Select the Customer**.
-2.  On the **Fiscal Information** tab, select **Withholding tax** \> **Customer contribution type** and then select one of the following options:
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select the customer.
+2. On the **Fiscal information** tab, select **Withholding tax** \> **Customer contribution type**, and then select one of the following options:
 
-    - Federal government foundation or agency
-    - Federal government administration
-    - Legal entity
-    - Cooperative
-    - Machine or vehicle manufacturer
-    - OTHER - This option isn't considered in the event
+    - **Federal government foundation or agency**
+    - **Federal government administration**
+    - **Legal entity**
+    - **Cooperative**
+    - **Machine or vehicle manufacturer**
+    - **OTHER** – This option isn't considered in the event.
 
 3. In the **Withholding tax** field, select a value.
 
-    ![Withholding ax.](media/bra-withholding-tax21.png)
-
+![Withholding tax setup.](media/bra-withholding-tax21.png)
 
 ## Vendor setup
 
 - Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 - Select a vendor.
-- On the **Fiscal information** tab, set up  **Reinf taxation over payroll**. This new attribute determines the type of taxation, because this information is required in the **indOpcCP** tag for event R-2055.
+- On the **Fiscal information** tab, set up **Reinf taxation over payroll**. This new attribute determines the type of taxation, because this information is required in the **indOpcCP** tag for event R-2055.
 
 ## Set up Fiscal books parameters
 
