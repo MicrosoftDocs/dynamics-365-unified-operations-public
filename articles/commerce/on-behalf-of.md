@@ -24,7 +24,7 @@ This article describes how to enable on behalf of (OBO) functionality for Micros
 > [!NOTE]
 > OBO functionality is available in Dynamics 365 Commerce version 10.0.33 and later.
 
-OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer. Activity license is required for each representative. 
+OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer. Each representative must have an activity license. 
 
 ## Prerequisites
 
@@ -45,11 +45,11 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
 
     ![Example of the Employee sign-in button on the Sign-in page for a business partner user.](media/obo-sign-in-experience.png)
 
-1. On the next page, select the business buyer organization that you want to work on behalf of.
+1. On the next page, search for and select the business buyer organization that you want to work on behalf of.
 
     ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners-org-new.png)
 
-1. On the next page, select the buyer that you want to work on behalf of.
+1. On the next page, search for and select the buyer that you want to work on behalf of.
 
      ![Example of the Select a Business Partner User page.](media/obo-select-business-partners-users4.png).
 
@@ -59,11 +59,10 @@ You can also create a template for the buyer to use later. We recommend that you
 
 > [!NOTE]
 > The OBO experience differs from the regular B2B site experience in the following ways:
->
 > - The only method of payment that's provided is **On Account**.
 > - Account managers have access to view a buyer's invoices, but they can't pay invoices.
 > - Account managers can create a new order template for the buyer. The order template won't have an additional identifier to indicate that the template was created by the account manager.
-> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported with Catalogs starting 10.0.35 release. 
+> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported for Commerce version 10.0.35 and later. 
 > - Any custom extensions that affect customer hierarchies or sales groups might have to be modified to support OBO functionality. Any extensions that retrieve values directly from the user context on an e-commerce site might also have to be modified.
 
 ## Additional resources
