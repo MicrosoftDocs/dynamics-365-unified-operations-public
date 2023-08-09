@@ -15,67 +15,83 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up the value-added tax (VAT) declaration for Denmark and preview it in Microsoft Excel.
+This article describes how to prepare your Finance to generate VAT return in XML format and submit it to the Danish Tax Agency.
 
-To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each box on the advance VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the advance VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
+## Prerequisites
 
-For Denmark, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters) section later in this article.
+To automatically generate the VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
+Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration.
+For more information about structure of VAT declaration of Denmark and lookup results for boxes of VAT declaration, see [Overview of VAT declaration of Denmark](emea-dnk-vat-declaration-denmark.md) section.
 
-In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
+Before you start to prepare your Finance for direct submission of VAT return in XML to the Danish Tax Agency, complete the setup necessary for [Preview VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
+To submit your VAT return directly to the Danish Tax Agency you need to contact the Danish Tax Agency (Skattestyrelsen) at `momsapi@sktst.dk` and provide your CVR number. You can also see more here: [skat.dk/momsapi](https://skat.dk/data.aspx?oid=2234574) (Danish). From the Danish Tax Agency you will get access the test environment (endpoints and certificates) and you will also get a short guide on what you need to do to get access to the production environment.
 
+### Set up Azure Key Vault for certificate storage
 
-## Configure system parameters
+certificates obtained from the Danish Tax Agency to submit your VAT return must be stored in your Azure Key Vault storage.
 
-To generate a VAT declaration, you must configure the VAT number.
+To set up Azure Key Vault for certificate storage, follow these steps:
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
-2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Denmark, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Denmark, and that uses the **VAT Id** registration category.
-5. In the **Registration number** field, enter the tax number.
-6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+1. Go to **System administration** > **Setup** > **System parameters**.
+2. On the **General** tab, set the **Use advanced certificate store** option to **Yes**.
+3. Upload the certificate to KeyVault.
+4. Go to **System administration** > **Setup** > **Key Vault parameters**.
+5. Select **New** and set the **Name** and **Description** fields.
+6. On the **General** FastTab, set the following fields:
 
-For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
+    - **Key Vault URL**: Enter the default Azure Key Vault URL.
+    - **Key Vault client**: Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with Key Vault storage for authentication.
+    - **Key Vault secret key**: Enter a secret key that is associated with the Azure AD application that's used for authentication to Key Vault storage.
 
-## Set up a VAT declaration preview for Denmark
+7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the the Danish Tax Agency server and client certificates.
 
-### Import ER configurations
+    ![Key vault parameters.](media/Key-vault-parameters-dk.png)
 
-Open the **Electronic reporting** workspace, and import the **VAT Declaration Excel (DK)** ER format.
-
-For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-
-### <a name="set-up-application-specific-parameters"></a>Set up application-specific parameters for VAT declaration fields
-
-> [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
-
-To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
-
-Follow these steps to define which sales tax codes generate which boxes on the VAT declaration.
+For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
 
 ## Set up electronic messages
 
 ### Download and import the data package that has example settings for electronic messages
 
-The data package contains electronic message settings that are used to preview the VAT declaration in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
+The data package contains settings of electronic message functionality that enables the following scenario in your Finance.
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **DK VAT declaration package**. The downloaded file is named **DK VAT declaration package.zip**.
+#### Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
+
+    ![Preview VAT declaration in Excel.](media/em-processing-preview-dk.png)
+
+#### Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
+
+    ![Request information about VAT obligation periods.](media/em-processing-calendar-dk.png)
+
+#### Generate VAT return electronic file and submit it to Skattestyrelsen
+
+    ![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
+
+For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
+
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EM Denmark VAT package**. The downloaded file is named **EM Denmark VAT package.zip**.
 2. In Finance, in the **Data management** workspace, select **Import**.
 3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
 4. On the **Selected entities** FastTab, select **Add file**.
 5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
 6. Select **Close**.
 7. After the data entities are uploaded, on the Action Pane, select **Import**.
+
+    ![Import the data package that has example settings for electronic messages.](media/em-package-dk.png)
+
 8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported (**DK VAT declaration**).
 
-### Configure electronic messages
+### Define a sales tax settlement period
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-2. Select the line for **DK Populate VAT return records**, and then select **Edit query**.
+2. Select the line for **DK VAT collect sales tax payment records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+
+### Save the executable class parameters for Electronic messaging
+
+
 
 ## Generate a VAT declaration from electronic messages
 
@@ -110,7 +126,7 @@ Follow these steps to set up electronic messages to collect data from multiple l
 1. Go to **Workspaces** > **Feature management**.
 2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
 3. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-4. On the **Populate records action** page, select the line for **DK Populate VAT return records**.
+4. On the **Populate records action** page, select the line for **DK VAT collect sales tax payment records**.
 
    In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
