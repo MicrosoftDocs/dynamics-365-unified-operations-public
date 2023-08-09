@@ -1,0 +1,254 @@
+### YamlMime:Hub
+
+title: Microsoft Dynamics 365 Human Resources documentation # < 60 chars
+summary: Discover how how to make the most of Dynamics 365 Human Resources with training, documentation, and videos covering product capabilities. Learn how to use Human Resources to connect people and operations data to help optimize workforce costs and take care of your employees.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Human Resources documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: You can use Dynamics 365 Human Resources to connect people and operations data to help optimize workforce costs and take care of your employees.  
+  ms.topic: hub-page # Required
+  author: twheeloc #Required; your GitHub user alias, with correct capitalization.
+  ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/13/2023 #Required; mm/dd/yyyy format.
+  hide_bc: true
+  
+  # highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Get started
+      itemType: get-started
+      url: /dynamics365/human-resources/
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: /dynamics365/human-resources/whats-new-home-page
+    # Card
+    - title: Training
+      itemType: training
+      url: /training/paths/learn-fundamentals-microsoft-dynamics-365-human-resources/
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support
+      
+additionalContent:
+  sections:
+  - title: Implement 
+    items:
+    - title: Guidance
+      links: 
+      - url: /dynamics365/guidance/implementation-guide/overview 
+        text: Dynamics 365 implementation guidance
+      - url: /dynamics365/human-resources/hr-admin-database-logging
+        text: Adoption framework
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security
+    - title: Try/Buy/Deploy
+      links: 
+      - url: /dynamics365/human-resources/hr-admin-setup-provision-fo
+        text: Try Human Resources
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=%2Fdynamics365%2Fcontext%2Ffinance#step-three-buy-and-manage-a-subscription
+        text: Buy Human Resources
+      - url: /dynamics365/human-resources/hr-admin-setup-provision-fo#deploy-human-resources-environments
+        text: Deploy Human Resources
+    - title: Set up 
+      links:
+      - url: /dynamics365/human-resources/hr-setup-parameters
+        text: Set up Human resources parameters
+      - url: /dynamics365/human-resources/hr-admin-troubleshooting-reporting
+        text: Set up reporting 
+      - url: /dynamics365/human-resources/hr-workflow-manage-employee-information
+        text: Set up Human resources workflows
+  - title: Administer and develop 
+    items:
+    - title: Platform development
+      links:
+      - url: /dynamics365/human-resources/hr-developer-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-developer-custom-fields
+        text: Custom fields
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture
+        text: Application stack and server architecture
+    - title: System administration
+      links: 
+      - url: /dynamics365/human-resources/hr-admin-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-admin-system-requirements
+        text: System requirements
+      - url: /dynamics365/human-resources/hr-admin-integration-common-data-service
+        text: Use Dataverse
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page
+        text: Overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies
+        text: Organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system
+        text: Workflow system 
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview
+        text: Number sequences overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book
+        text: Global address book overview        
+    - title: Develop integration
+      links:
+      - url: /dynamics365/human-resources/hr-admin-integration-choose-technology
+        text: Choose data integration technology
+      - url: /dynamics365/human-resources/data-entity
+        text: Data entities 
+      - url: /dynamics365/human-resources/hr-admin-integration-common-data-service   
+        text: Configure Dataverse integration     
+      - url: /dynamics365/human-resources/hr-developer-overview
+        text: API references
+      - url: /dynamics365/human-resources/hr-dataverse-integration
+        text: Mapping references
+    - title: Microsoft Office integration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration-tutorial?context=%2Fdynamics365%2Fcontext%2Fhuman-resources
+        text: Overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/use-excel-add-in?context=%2Fdynamics365%2Fcontext%2Fhuman-resources
+        text: Update entity data with Excel
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting?context=%2Fdynamics365%2Fcontext%2Fhuman-resources  
+        text: Troubleshoot the Office integration
+    - title: Manage user access
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security
+        text: Role-based security
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
+        text: Create users
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles
+        text: Assign users to security roles
+    - title: Human Resources infrastructure merge
+      links:
+      - url: /dynamics365/human-resources/hr-infrastructure-merge
+        text: Human Resources infrastructure merge
+      - url: /dynamics365/human-resources/hr-cust-migration
+        text: Human Resources customer migration
+      - url: /dynamics365/human-resources/hr-infrastructure-merge-faq
+        text: Human Resources infrastructure merge FAQ
+      - url: /dynamics365/human-resources/customer-migration
+        text: Human Resources customer migration FAQ      
+    - title: Human Resources business events
+      links:
+      - url: /dynamics365/human-resources/business-events-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-configure-batch-bus-events
+        text: Configure batch-based business events
+      - url: /dynamics365/human-resources/hr-power-auto-temp-bus-events
+        text: Power Automate template-based business events
+      - url: /dynamics365/human-resources/bus-event-use-case
+        text: Use cases for Human resources business events
+  - title: Use 
+    items:
+    - title: Employee self service
+      links: 
+      - url: /dynamics365/human-resources/hr-employee-manager-self-service-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-employee-manager-self-service-custom-links
+        text: Create custom links in Manager self service
+      - url: /dynamics365/human-resources/hr-employee-manager-self-service-edit-personal-information
+        text: Update personal information
+    - title: Personnel management
+      links:
+      - url: /dynamics365/human-resources/hr-personnel-departments-jobs-positions
+        text: Organize your workforce
+      - url: /dynamics365/human-resources/hr-personnel-personnel-management-workspace
+        text: Personnel management workspace
+      - url: /dynamics365/human-resources/hr-personnel-jobs
+        text: Set up the components of a job
+      - url: /dynamics365//human-resources/hr-personnel-define-jobs
+        text: Define new jobs
+    - title: Task management
+      links:
+      - url: /dynamics365//human-resources/hr-task-mgmt
+        text: Overview
+      - url: /dynamics365/human-resources/hr-task-update
+        text: Set up tasks in Task management      
+    - title: Leave and absence
+      links:
+      - url: /dynamics365/human-resources/hr-leave-and-absence-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-leave-and-absence-parameters
+        text: Configure leave and absence 
+      - url: /dynamics365/human-resources/hr-employee-self-service-request-leave-of-absence
+        text: Request a leave of absence
+    - title: Benefits
+      links:
+      - url: /dynamics365/human-resources/hr-benefits-manage-program
+        text: Define and manage a benefits program
+      - url: /dynamics365/human-resources/hr-benefits-eligibility-process
+        text: Benefit eligibility process
+      - url: /dynamics365/human-resources/hr-benefits-create
+        text: Create a new benefit
+    - title: Benefits management
+      links:
+      - url: /dynamics365/human-resources/hr-benefits-management-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-benefits-management-workspace
+        text: Benefits management workspace
+      - url: /dynamics365/human-resources/hr-benefits-setup-parameters-per-company
+        text: Configure Benefits management
+    - title: Compensation management
+      links:
+      - url: /dynamics365/human-resources/hr-compensation-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-compensation-grids
+        text: Set up compensation grids
+      - url: /dynamics365/human-resources/hr-compensation-structure
+        text: Develop a compensation structure
+    - title: Employee development
+      links:
+      - url: /dynamics365/human-resources/hr-develop-performance-management-overview
+        text: Performance management overview
+      - url: /dynamics365/human-resources/hr-develop-create-performance-review
+        text: Performance reviews        
+      - url: /dynamics365//human-resources/hr-develop-skills
+        text: Configure skills
+    - title: Learning
+      links:
+      - url: /dynamics365//human-resources/hr-course-overview
+        text: Overview
+      - url: /dynamics365/human-resources/hr-learning-courses
+        text: Create a course
+      - url: /dynamics365/human-resources/hr-learning-questionnaires
+        text: Questionnaires
+    - title: Workflow system
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=%2Fdynamics365%2Fhuman-resources%2Ftoc.json
+        text: Overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-system-architecture?toc=%2Fdynamics365%2Fhuman-resources%2Ftoc.json
+        text: Workflow system architecture
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-elements?toc=%2Fdynamics365%2Fhuman-resources%2Ftoc.json
+        text: Workflow elements
+    - title: Workplace safety and compliance (United States)
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification
+        text: Form I-9 verification
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification
+        text: Verify employment eligibility
+      - url: /dynamics365/fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada
+        text: Comply with the Americans with Disabilities Act (ADA)
+    
+  - title: Related products
+    items:
+        # Card
+        
+        - title: Dynamics 365 Commerce
+          summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
+          url: /dynamics365/commerce/
+        - title: Dynamics 365 Project Operations
+          summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
+          url: /dynamics365/project-operations/
+        - title: Dynamics 365 Supply Chain Management
+          summary: Supply Chain Management allows you to provide the right services and products to your customers, manage relationships, drive targeted campaigns, and provide a great customer experience.
+          url: /dynamics365/supply-chain/
+        - title: Industry solutions
+          summary: Use industry-specific solutions that are built using Dynamics 365 and Microsoft Power Platform.
+          url: /dynamics365/industry/
+        - title: Microsoft Power Platform
+          summary: Build, automate workflows, analyze data, rapidly design, configure, and publish modern websites, and build intelligent bots with no-code interface using Power Platform products.
+          url: /power-platform/index
