@@ -1,6 +1,6 @@
 ---
-title: Enable the Fiscal establishment dimension
-description: This article explains how to set up the Fiscal establishment dimension for the SPED-Reinf.
+title: Enable the Fiscal Establishment dimension
+description: This article explains how to set up the Fiscal Establishment dimension for the SPED-Reinf.
 author: AdamTrukawka
 ms.date: 08/07/2023
 ms.topic: article
@@ -15,29 +15,35 @@ ms.dyn365.ops.version: 8.1
 ms.search.form: 
 ---
 
-# Enable the Fiscal establishment dimension
+# Enable the Fiscal Establishment dimension
 
 [!include [banner](../includes/banner.md)]
-  
-SPED Reinf events: R-4010, R-4020 and R-4040 require a fiscal establishment be determined for non fiscal operations posted through a journal. Therefore, it's necessary to enable a **Fiscal establishment** dimension, and select it in the lines of a journal. Follow these steps to enable fiscal establishment as a dimension:
 
-1.  Go to **General Ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimensions** to add and configure the new dimension, **Fiscal Establishment**. Set the new dimension as **Active**.
-    ![Fiscal Dimensions.](media/bra-fiscal-dimenssions.png)
+SPED-Reinf events R-4010, R-4020, and R-4040 require that a fiscal establishment is determined for non-fiscal operations that are posted through a journal. Therefore, you must enable fiscal establishment as a dimension and select it on the lines of a journal.
 
-2.  Go to **General Ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension**.
-3.  In the list, find and select the **Fiscal Establishment** dimension and use the left arrow to add it to the **Available Financial Dimensions** list.
-    ![Fiscal Establishment.](media/bra-fiscal-establishment.png)
+Follow these steps to enable fiscal establishment as a dimension.
 
-4.  Go to **General Ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures** and select the line for which you want to configure the account structure.
-5.  Select **Edit** and make any necessary changes to the account structure.  
-    ![Edit button for account structure changes.](media/bra-acc-structure.png)
+1. Go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimensions** to add and configure the new dimension, **Fiscal Establishment**. Set the new dimension as **Active**.
 
-6.  While editing an account structure, select **Add segment** and then add **Fiscal Establishment**.
-7.  Select **Activate** and add the dimensions separator.  
+    ![New dimension on the Fiscal dimensions page.](media/bra-fiscal-dimenssions.png)
+
+2. Go to **General ledger** \> **Chart of accounts** \> **Dimensions** \> **Financial dimension sets**.
+3. In the list, find and select the **Fiscal Establishment** dimension, and then select the left arrow to add it to the **Available financial dimensions** list.
+
+    ![Adding the new dimension to the Available financial dimensions list on the Fiscal dimension sets page.](media/bra-fiscal-establishment.png)
+
+4. Go to **General ledger** \> **Chart of accounts** \> **Structures** \> **Configure account structures**, and select the line that you want to configure the account structure for.
+5. Select **Edit**, and make any necessary changes to the account structure.
+
+    ![Edit button on the Account structures page.](media/bra-acc-structure.png)
+
+6. While you're editing the account structure, select **Add segment**, and add **Fiscal Establishment**.
+7. Select **Activate**, and add the dimension separator.
+
     ![Adding a segment to the account structure.](media/bra-add-segment.png)
 
-After the **Fiscal Establishment** is configured as a dimension, it's available for selection in the **Financial dimensions** of a journal line.
-    ![Preparation items parameters.](media/bra-sel-dim.png)
+After the **Fiscal Establishment** dimension is configured, it's available for selection among the financial dimensions for a journal line.
 
+![Financial dimensions being selected for a journal line.](media/bra-sel-dim.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
