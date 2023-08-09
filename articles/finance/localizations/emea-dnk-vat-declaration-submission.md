@@ -27,7 +27,7 @@ Before you start to prepare your Finance for direct submission of VAT return in 
 
 To submit your VAT return directly to the Danish Tax Agency you need to contact the Danish Tax Agency (Skattestyrelsen) at `momsapi@sktst.dk` and provide your CVR number. You can also see more here: [skat.dk/momsapi](https://skat.dk/data.aspx?oid=2234574) (Danish). From the Danish Tax Agency you will get access the test environment (endpoints and certificates) and you will also get a short guide on what you need to do to get access to the production environment.
 
-### Set up Azure Key Vault for certificate storage
+## Set up Azure Key Vault for certificate storage
 
 certificates obtained from the Danish Tax Agency to submit your VAT return must be stored in your Azure Key Vault storage.
 
@@ -69,6 +69,8 @@ The data package contains settings of electronic message functionality that enab
     ![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
 
 For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
+
+To import the data package that contains settings of electronic message functionality that enable the listed scenario in your Microsoft Dynamics 365 Finance follow these steps.
 
 1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EM Denmark VAT package**. The downloaded file is named **EM Denmark VAT package.zip**.
 2. In Finance, in the **Data management** workspace, select **Import**.
