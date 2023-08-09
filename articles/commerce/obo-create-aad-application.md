@@ -31,7 +31,7 @@ To create an Azure AD application for account manager sign-in in the Azure busin
 1. In the row of Azure services, select **Azure Active Directory**.
 1. On the **Manage** menu, select **App Registration**, and then select **New Registration**.
 1. Enter a name for the application (for example, **Account Manager Employer Auth**).
-1. Under **Supported account types**, select **Accounts in this organizational directory only (`<YOUR-TENANT-NAME>` only - Single tenant)**.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (`<YOUR-TENANT-NAME>` only - Single tenant)**, where `<YOUR-TENANT-NAME>` is the name of your tenant.
 1. Under **Redirect URI**, select **Web**, and then, in the URL field, enter `https://<your-tenant-name>.b2clogin.com/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-tenant-name>` is the name of your tenant. If you use a custom domain, enter `https://<your-domain-name>/<your-tenant-name>.onmicrosoft.com/oauth2/authresp`, where `<your-domain-name>` is your custom domain.
 
     > [!NOTE]
@@ -44,7 +44,7 @@ To create an Azure AD application for account manager sign-in in the Azure busin
 After you complete the registration, locate the application that you created (for example, **Account Manager Application**).
 
 1. In the **Essentials** section, copy and save the **Application (Client) ID** value. This value is a globally unique identifier (GUID) (for example, "88760a037-ea1e-4e04-8e50-0a8dfcb4eb50").
-1. In the **Essentials** section, select **Add an Application ID URI**.
+1. Select **Add an Application ID URI**.
 1. Select **Add a scope**. An application ID URI is generated for you.
 1. Select **Save and continue**.
 1. For **Scope name**, enter "user_impersonation".
@@ -54,9 +54,9 @@ After you complete the registration, locate the application that you created (fo
 1. On the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
 1. In the **Description** field, enter a description of the client secret (for example, "clientsecret1").
-1. Under **Expires**, select the duration for which the secret is valid.
+1. Under **Expires**, select the date when the secret expires.
 1. Select **Add**.
-1. Copy and save the secret value to be used later. 
+1. Copy and save the secret value to use later. 
 
     > [!IMPORTANT]
     > The secret value is never shown again after you leave the **Certificates & secrets** page. Therefore, be sure to copy it.
@@ -76,7 +76,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter "openid profile `<Azure-B2B-Application-ID-URI>`/user_impersonation", where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Azure AD application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile `<scope-name>`", where `<scope-name>` is the name of the scope created in step 8 of the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
+1. In the **Scope** field, enter "openid profile `<Azure-B2B-Application-ID-URI>`/user_impersonation", where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Azure AD application (for example, "openid profile api://88760a037-ea1e-4e04-8e50-0a8dfcb4eb50/user_impersonation"). The **Scope** field format must be "openid profile `<scope-name>`", where `<scope-name>` is the scope name you created in the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure. 
 1. In the **Response type** field, select **code**.
 1. In the **Response mode** field, select **form\_post**.  
 1. Under **Identity provider claims mapping**, select the following claims:
