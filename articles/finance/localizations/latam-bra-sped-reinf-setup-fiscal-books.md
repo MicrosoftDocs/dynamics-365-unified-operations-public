@@ -78,7 +78,7 @@ This setup is used to determine the agriculture acquisition type of incoming fis
 1. Go to **Fiscal books** \> **Setup** \> **SPED Reinf** \> **GILRAT tax codes** or **SENAR tax codes**.
 2. Identify the sales tax codes that are used to represent GILRAT and SENAR taxes. In the definition of the sales tax codes, the tax type should be set to **Other**. The amount of these taxes is used in the **vlrRatDescPR** and **vlrSenarDesc** tags for event R-2055.
 
-## Set up Fiscal books parameters
+## Set up SPED REINF and Fiscal books parameters
 
 1. Go to **Fiscal books** \> **Tax statements parameters** \> **SPED REINF** \> **SPED REINF parameters**.
 2. On the **General** tab, select the SPED REINF version.
