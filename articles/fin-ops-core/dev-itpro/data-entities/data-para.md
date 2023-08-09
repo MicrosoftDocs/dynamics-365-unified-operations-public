@@ -25,11 +25,11 @@ On the **Bring your own database** tab, the following parameter is available:
     - Select **No** to export only selected companies.
     - Select **Yes** to export all companies.
 
-On the **Compatibility options** tab, the following parameters are available under **Flat file compatability options**:
+On the **Compatibility options** tab > **Flat file compatability options**, the following parameters are available:
 
 - **Enable header for fixed width file**:
 
-    - Select **No** if the exported file is not required to contain headers.
+    - Select **No** if the exported file isn't required to contain headers.
     - Select **Yes** if the exported file is required to contain headers.
 
 - **Validate file format with file extension**:
@@ -37,7 +37,7 @@ On the **Compatibility options** tab, the following parameters are available und
     - Select **No** if files should always be added to the project when there's a mismatch between the file types.
     - Select **Yes** if files should not be added to the project when there's a mismatch between the file types.
 
-On the **Compatibility options** tab, the following parameters are available under **XML file compatability options**:
+On the **Compatibility options** tab > **XML file compatability options**, the following parameters are available:
 - **Full export**:
     - Select **No** to export empty fields with null values. Here's an example: `<AmountCur/>`
     - Select **Yes** to export empty fields with default values. Here's an example: `<AmountCur>0.0000</AmountCur>`
@@ -62,7 +62,7 @@ On the **Compatibility options** tab, the following parameters are available und
     2. Select **Refresh the entity list**. On the **Modify target mapping** page, the data is shown in non uppercase letters.
     3. Create a new data project by adding an entity, or remove the entity and add it back to the data project. The exported file shows attribute names in non uppercase letters.
 
-On the **Compatibility options** tab, the following parameters are available under **Data project and job compatibility option**:
+On the **Compatibility options** tab > **Data project and job compatibility option**, the following parameters are available:
 - **Ensure unique execution id**:
 
     - Select **No** to use the same execution ID for multiple export requests that are sent in parallel.
@@ -78,7 +78,7 @@ On the **Compatibility options** tab, the following parameters are available und
     - Select **No** if import should fail with a mapping error when multiple, parallel, import requests are sent.
     - Select **Yes** to avoid mapping errors during parallel import requests.
 
-On the **Compatibility options** tab, the following parameter is available under **Recurring integrations compatibility**:
+On the **Compatibility options** tab > **Recurring integrations compatibility**, the following parameter is available:
 - **Skip reprocessing in process recurring integration messages**:
   
     - Select **No** to automatically update the status of stuck messages from **Processing** to **Queued** during the next execution.
