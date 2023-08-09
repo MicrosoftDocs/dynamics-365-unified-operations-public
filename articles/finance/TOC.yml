@@ -2303,7 +2303,13 @@
           - name: Danish Intrastat
             href: localizations/emea-dnk-intrastat.md
           - name: VAT declaration
-            href: localizations/emea-dnk-vat-declaration-denmark.md
+            items:
+            - name: VAT declaration overview
+              href: localizations/emea-dnk-vat-declaration-denmark.md
+            - name:Preview VAT declaration in Excel format
+              href: localizations/emea-dnk-vat-declaration-preview.md
+            - name: Submit VAT return in XML to the Danish Tax Agency
+              href: localizations/emea-dnk-vat-declaration-submission.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/emea-dnk-saf-t.md
           - name: Accounting basis (Regnskab Basis) electronic report for Denmark
