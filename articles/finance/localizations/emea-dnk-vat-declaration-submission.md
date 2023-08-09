@@ -111,6 +111,8 @@ Before you use these classes for the first time, you must save its parameters.
 
 3. Select **OK** button on a dialog page of each executable class to save specified parameters.
 
+![Save the executable class parameters for Electronic messaging.](media/exec-class-parameters-dk.png)
+
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 
 Different groups of users might require access to the **DK VAT return** processing. You can limit access to the processing, based on security groups that are defined in the system.
