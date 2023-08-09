@@ -58,15 +58,15 @@ The data package contains settings of electronic message functionality that enab
 
 #### Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
 
-    ![Preview VAT declaration in Excel.](media/em-processing-preview-dk.png)
+![Preview VAT declaration in Excel.](media/em-processing-preview-dk.png)
 
 #### Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
 
-    ![Request information about VAT obligation periods.](media/em-processing-calendar-dk.png)
+![Request information about VAT obligation periods.](media/em-processing-calendar-dk.png)
 
 #### Generate VAT return electronic file and submit it to Skattestyrelsen
 
-    ![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
+![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
 
 For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
@@ -82,7 +82,7 @@ To import the data package that contains settings of electronic message function
 
     ![Import the data package that has example settings for electronic messages.](media/em-package-dk.png)
 
-8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported (**DK VAT declaration**).
+8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported - **DK VAT return**.
 
 ### Define a sales tax settlement period
 
@@ -93,7 +93,44 @@ To import the data package that contains settings of electronic message function
 
 ### Save the executable class parameters for Electronic messaging
 
+**DK VAT return** Electronic message processing uses three executable classes. These executable classes enable connection to the three Web Services of the the Danish Tax Agency.
 
+- `VirksomhedKalenderHent` - *Company Calendar Download*: return dates for which the legal entity has to submit VAT Returns by. These dates are required, when submitting VAT Returns.
+- `ModtagMomsangivelseForeloebig` - *Receive Provisional VAT declaration*: submit a draft of the VAT Returns to skat.dk with all the fields you need to fill in. The Web Service returns a deep link to skat.dk, where the legal entity can access the submitted VAT Returns and approve it.
+- `MomsangivelseKvitteringHent` - *VAT declaration Receipt Download*: provide a receipt for the VAT Returns given that the legal entity has approved it. This service also includes payment information on how to pay any outstanding balance.
+
+Before you use these classes for the first time, you must save its parameters.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings** and specify the following parameters of the executable classes by using **Parameters** button on the Action pane.
+
+| Executable class | Description | Parameters |
+|------------------|-------------|------------|
+| DK VAT calendar request | Retrieves company calendar information. |  **-Service url**: specify an `https` address of an endpoint of `VirksomhedKalenderHent` Web service provided by the Danish Tax Agency </br>**-Client certificate**: select a client certificate stored in your Azure Key Vault</br> **-Server certificate:**  select a server certificate stored in your Azure Key Vault </br>**-Request timeout:** enter a suitable request timeout value in seconds. If left at 0, it defaults to 60 seconds. </br> **-Transaction identifier additional field:** select **DK VAT transaction identifier**</br>**-Tax registration number additional field:** select **Tax registration number** |
+| DK VAT return submission | Sends VAT return to the Danish VAT return APIs. |  **-Service url**: specify an `https` address of an endpoint of `ModtagMomsangivelseForeloebig` Web service provided by the Danish Tax Agency </br>**-Client certificate**: select a client certificate stored in your Azure Key Vault</br> **-Server certificate:**  select a server certificate stored in your Azure Key Vault </br>**-Request timeout:** enter a suitable request timeout value in seconds. If left at 0, it defaults to 60 seconds. </br> **-Transaction identifier additional field:** select **DK VAT transaction identifier**</br>**-Tax registration number additional field:** select **Tax registration number** |
+| DK VAT return receipt request | Retrieves VAT receipt information from the Danish Tax Agency. |  **-Service url**: specify an `https` address of an endpoint of `MomsangivelseKvitteringHent` Web service provided by the Danish Tax Agency </br>**-Client certificate**: select a client certificate stored in your Azure Key Vault</br> **-Server certificate:**  select a server certificate stored in your Azure Key Vault </br>**-Request timeout:** enter a suitable request timeout value in seconds. If left at 0, it defaults to 60 seconds. </br> **-Transaction identifier additional field:** select **DK VAT transaction identifier**</br>**-Tax registration number additional field:** select **Tax registration number** |
+
+3. Select **OK** button on a dialog page of each executable class to save specified parameters.
+
+### <a id="security-roles"></a>Set up security roles for electronic message processing
+
+Different groups of users might require access to the **DK VAT return** processing. You can limit access to the processing, based on security groups that are defined in the system.
+
+Follow these steps to limit access to the **DK VAT return** processing.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+2. Select the **DK VAT return** processing, and then, on the **Security roles** FastTab, add the security groups that must work with it. If no security group is defined for the processing, only a system admin can see it on the **Electronic messages** page.
+
+### Set up Tax registration number
+
+The **EM Denmark VAT package** setup file provides the **Tax registration number** additional field for **DK VAT return** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the **DK VAT return** EM processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+
+Follow these steps to define the VAT registration number that the **DK VAT return** EM processing must use to submit VAT returns.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **DK VAT return** EM processing.
+2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return.
+3. Save your changes.
+
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** EM processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 ## Generate a VAT declaration from electronic messages
 
