@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -36,7 +36,7 @@ For each inbound load, your system should already include a related purchase ord
 
 The following illustration shows the typical flow for handling inbound loads that have purchase order quantities when they arrive at your warehouse.
 
-![The inbound load handling process.](media/inbound-process.png "The inbound load handling process")
+![The inbound load handling process.](media/inbound-process.svg "The inbound load handling process")
 
 1. **The vendor confirms the purchase order.**
 
@@ -53,6 +53,10 @@ The following illustration shows the typical flow for handling inbound loads tha
 1. **The load arrives at the warehouse, and workers register quantities.**
 
     When a truckload arrives at the warehouse receiving dock, warehouse workers register the load quantities. When the **Warehouse management** module is used, workers do the registration by using mobile devices. For more information, see [Product receipt against purchase orders - registration](../procurement/product-receipt-against-purchase-orders.md#registration) and the [Register item quantities that arrive on an inbound load](#register-item-quantities-arriving) section.
+
+1. **The load gets updated as receive completed.**
+
+    With the warehouse management parameter setting _Load receiving completed confirmation policy for purchase orders_ enabled, the load gets [**Receiving completed**](#receive-complete-confirm) updated.
 
 1. **Registered load quantities are posted against purchase orders.**
 
@@ -146,10 +150,17 @@ When registration is completed on the mobile device, the _Quantity receipt regis
 When the warehouse worker has completed the put-away work, the system records and tracks the result by updating updates several entities, as summarized in the following table.
 
 | Entity | Updates | Note |
-|---|---|---|
+|--------|---------|------|
 | Load | <p>The following fields are updated:</p><ul><li>The <b>Load status</b> value is changed to <i>In process</i>.</li><li>The <b>Work status</b> value is changed to <i>100.00% of work completed</i>.</li></ul> | The **Load status** value is changed to _In process_ when the worker starts the put-away task for at least one line of put-away work. |
 | Inventory transactions of work that associated quantities have been put away for | The **Receipt** and **Location** fields, and other relevant fields, are updated to reflect the movement from the receiving location to the storage location. | The **Receipt state** value of the purchase order inventory transaction remains _Registered_. |
-| Warehouse put-away | The **Work status** value is changed to _Closed_. | |
+| Warehouse put-away | The **Work status** value is changed to _Closed_. |    |
+
+## <a name="receive-complete-confirm"></a>Receive complete load
+
+To indicate that nothing more will get registered against a specific load the **Receiving completed** process gets run via the web client _Load_ or _Inbound load planning workbench_ pages or via the warehouse management mobile device menu item _Receiving completed confirmation_.
+Besides updating the _Load receiving completed date and time_ field on the selected load it is possible, depending on Warehouse management parameter _Capture receiving completed packing slip_, to record a _packing slip Id and a document date during this process.
+> [!NOTE]
+> You can use the _Load receiving completed date and time_ field as filter criteria for the following **Update product receipts** cost update process and in case the _Capture receiving completed packing slip_ policy is used the purchase order product receipt process can use the recorded Packing slip Id as part of this process.
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 
