@@ -81,12 +81,6 @@ According to legal and business practice perspectives, the following approach is
 - Issue an (non-qualified) invoice for each delivery and then issue a consolidated/monthly invoice. Treat the consolidated/monthly invoice as a qualified invoice. This implies recalculation of taxes for the consolidated invoice and application of rounding to the total consolidated invoice tax amount per tax code, including posting tax adjustments. 
 - The common business practice is to use tax-exclusive pricing. 
 
-### Glossary
-
-	**JCT** - Japan Consumption Tax
-	**QIS** - Qualified Invoice System
-	**QII** - Qualified Invoice Issuer
-
 ### Limitations
 The following are not covered by this system in Finance:
 - It is possible for a company to configure sales tax codes so that two or more sales tax codes with the same tax rate are never used in one and the same consolidated vendor or customer invoice.
@@ -101,16 +95,16 @@ The following are not covered by this system in Finance:
 The following changes must be made within the scope of this feature:
 1. Consolidated invoice creation and processing (both AP and AR): 
 
-	a. Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
-	b. Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
-	c. Allow manual adjustment of the calculated consolidated tax (AP only). 
-	d. Add Post operation to post the tax adjustment per sales tax code. 
-	e. Print consolidated invoice (AR only). 
-	f. Add Reverse operation to reverse posted tax adjustments per sales tax code.
+    a. Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
+    b. Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
+    c. Allow manual adjustment of the calculated consolidated tax (AP only). 
+    d. Add Post operation to post the tax adjustment per sales tax code. 
+    e. Print consolidated invoice (AR only). 
+    f. Add Reverse operation to reverse posted tax adjustments per sales tax code.
 
 2. Consolidated tax calculation (both Accounts Receivable and Accounts Payable): 
-	a. Sum up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice. 
-	b. Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
+    a. Sum up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice. 
+    b. Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
 
 Vendor invoices posted via vendor invoice journal are not supported in the vendor consolidated invoice functionality and will not be included in this feature.
 
