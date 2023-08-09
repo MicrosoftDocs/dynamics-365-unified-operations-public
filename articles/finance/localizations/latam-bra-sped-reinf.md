@@ -429,9 +429,9 @@ After periodic events R-2010, R-2010, and R-2060 are closed through an event R-2
 
 ### Repro step
 
-- Transaction by using the general journal.
+Create a transaction by using the general journal.
 
-The R-4010 event should be entered only with the parameters of **Vendor** x **Ledger**.
+The R-4010 event should be entered only with the parameters of **Vendor** and **Ledger**.
 
 1. Go to **General Ledger** \> **Journal entries** \> **General journals**, and select **New**.
 2. Select **Lines**, and then, in the **Account type** field, select **Vendor**.
@@ -483,7 +483,7 @@ After you complete these steps, the purchase order–related fiscal document is 
 
 ### Repro step
 
-- Sales order transaction
+Create a sales order transaction
 
 The following steps provide an example that shows how to create a sales order entry.
 
@@ -513,9 +513,9 @@ To generate the closure event, follow these steps.
 
 ![Events R-4098 and R-4099 on the Booking period page.](media/bra-other-events21.png)
 
-## Event sending FLOW
+## Event sending flow
 
-Send events R-1000 / R-1050 / R-1070 / R-2010 / R-2020 / R-2055 / R-2060 / R-2099 / R-4000.
+Send events R-1000, R-1050, R-1070R-2010, R-2020, R-2055, R-2060, R-2099, and R-4000.
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic message items**.
 2. Select **Processing** \> **Processing SPED REINF**, and then select one of the following options:
