@@ -95,8 +95,8 @@ The following are not covered by this system in Finance:
 The following changes must be made within the scope of this feature:
 1. Consolidated invoice creation and processing (both AP and AR): 
 
-    a. Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
-    b. Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
++ a. Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
++ b. Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
     c. Allow manual adjustment of the calculated consolidated tax (AP only). 
     d. Add Post operation to post the tax adjustment per sales tax code. 
     e. Print consolidated invoice (AR only). 
