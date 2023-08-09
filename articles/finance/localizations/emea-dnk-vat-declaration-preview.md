@@ -17,13 +17,11 @@ ms.search.validFrom:
 
 This article describes how to set up the value-added tax (VAT) declaration for Denmark and preview it in Microsoft Excel.
 
-To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each box on the advance VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the advance VAT declaration, associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
+## Prerequisites
 
-For Denmark, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters) section later in this article.
-
-In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
-
-
+To automatically generate the VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
+Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration.
+For more information about structure of VAT declaration of Denmark and lookup results for boxes of VAT declaration, see [Overview of VAT declaration of Denmark](emea-dnk-vat-declaration-denmark.md) section.
 
 ## Configure system parameters
 
@@ -38,15 +36,20 @@ To generate a VAT declaration, you must configure the VAT number.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
 
-## Set up a VAT declaration preview for Denmark
+## Import ER configurations
 
-### Import ER configurations
+Open the **Electronic reporting** workspace, and import the following ER configurations.
 
-Open the **Electronic reporting** workspace, and import the **VAT Declaration Excel (DK)** ER format.
+| Number | ER configuration name | Type | Description |
+|---|---|---|---|
+| **1** |**Tax declaration model** | **Model** | **A generic model for different tax declarations.** |
+| 2 | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
+| 3 | VAT Declaration Excel (DK) | Format (exporting) | A VAT return in Microsoft Excel format for preview. |
+| 4 | VAT Declaration XML (DK) | Format (exporting) | A VAT return in XML format for submission to the Danish Tax Agency. Import this format if you want to submit VAT return directly from Finance. |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-### <a name="set-up-application-specific-parameters"></a>Set up application-specific parameters for VAT declaration fields
+## <a name="set-up-application-specific-parameters"></a> Set up application-specific parameters for VAT declaration fields
 
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
@@ -75,7 +78,7 @@ Follow these steps to define which sales tax codes generate which boxes on the V
 
 5. In the **State** field, change the value to **Completed**.
 
-### Set up the VAT reporting format for preview amounts in Excel
+## Set up the VAT reporting format for preview amounts in Excel
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports.** feature in the list, and then select **Enable now**.
 2. Go to **General ledger** > **Setup** > **General ledger parameters**.
