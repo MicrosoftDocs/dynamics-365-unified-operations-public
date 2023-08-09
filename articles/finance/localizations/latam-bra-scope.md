@@ -88,6 +88,7 @@ The following sections list the features that are specific to Brazil.
 ### Master data
 
 - Tax identifiers for legal entities and fiscal establishments:
+
     - CNPJ/CPF
     - IE
     - CCM
@@ -102,6 +103,7 @@ The following sections list the features that are specific to Brazil.
     - NIT
     - INSS-CEI
     - CNAE 
+
 - Item tax characteristics:
 
     - Fiscal classification code and exception
@@ -110,7 +112,6 @@ The following sections list the features that are specific to Brazil.
 
 - CFOP table 
 - Vendor new fields for non-unknown beneficiary suppliers and for registering dependents of natural persons (SPED REINF 2.1.2) 
-
 
 ### Taxes
 
@@ -137,11 +138,11 @@ The following sections list the features that are specific to Brazil.
     - 3-Others 
 
 - Tax credit based on taxation mode 
-- ICMS base reduction  
+- ICMS base reduction
 - ICMS tax substitution with calculation based only on markup for outbound fiscal documents 
 - Simplified ICMS tax substitution 
 - Independent configuration for ICMS base reduction and tax substitution 
-- IPI tax on teh final user 
+- IPI tax on the final user 
 - ICMS for use and consumption 
 - ICMS, POS, and COFINS tax discounts for sales to SUFRAMA
 - ICMS difference over sales in final consumer (DIFAL) only for simplified base
@@ -173,7 +174,7 @@ The following sections list the features that are specific to Brazil.
 - Fiscal documents with referenced processes 
 - Multiple processes referenced by fiscal document texts 
 - Tax adjustments during receipt of inbound fiscal documents 
-- Electronic fiscal document XML adn DANFE received from a POP3 (Post Office Protocol version 3) email account 
+- Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account 
 - Validation of electronic fiscal document access key in SEFAZ 
 - Archiving of electronic fiscal document XML together with the posted received fiscal document 
 - Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order 
@@ -181,7 +182,6 @@ The following sections list the features that are specific to Brazil.
 ### Purchase return
 
 - Issuing fiscal document for vendor returns
-
 
 ### Sell
 
@@ -202,7 +202,7 @@ The following sections list the features that are specific to Brazil.
     - For end users
     - For customers in SUFRAMA
     - (IPI, ICMS) Tax and price complementary fiscal documents
-      
+
 - Referenced fiscal documents 
 - Fiscal document with referenced processes 
 - Multiple processes referenced by fiscal document texts 
@@ -339,8 +339,8 @@ The following sections list the features that are specific to Brazil.
     - Inventory models 3 and 7
     - CIAP control report
     - ISS Report model 51 (delivering services)
-    -  ISS Report model 56 (acquiring services)
-    -  ECF daily operations report (Mapa Resumo)
+    - ISS Report model 56 (acquiring services)
+    - ECF daily operations report (Mapa Resumo)
 
 - Tax assessments
 - Generate the tax assessment and payment of the following taxes:
@@ -353,13 +353,13 @@ The following sections list the features that are specific to Brazil.
 - Generate the tax assessment and payment of the following taxes:
 
     - INSS CPRB
-      
+
 - Generate the tax assessment and payment of the following taxes:
 
     - PIS and COFINS regime Cumulative
-    - PIS and COFINS regime Npn-Cumulative
+    - PIS and COFINS regime Non-Cumulative
     - Both
-    
+
 - CIAP control and manual registration of ICMS installments 
 
 ### SPED Fiscal (ICMS, IPI)
@@ -373,10 +373,10 @@ The following sections list the features that are specific to Brazil.
     - Block E: E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990
     - Block G: G001-G110-G125-G126-G130-G140-G990
     - Block H: H001-H005-H010-H020-H030-H990.
-    
-      > [!NOTE]
-      > H005 and related records are only supported for reason code = 01, 05 for RS state and 06.
-      
+
+        > [!NOTE]
+        > H005 and related records are only supported for reason code = 01, 05 for RS state and 06.
+
     - Block K: K001-K100-K200-K220-K230-K235-K260-K265-K270-K275-K280-K290-K291-K292-K990
     - Block 1: 1001-1010-1250-12251990
     - Block 1900-1910-1920-1921-1923-1926-1990 only for Rio Grande do Sul state 
@@ -453,11 +453,9 @@ The following sections list the features that are specific to Brazil.
 
 - Generating GIA São Paulo state text files in accordance with [version 08.00 (01/02/2013)](http://www.fazenda.sp.gov.br/download/download_gia.shtm). 
 
-
 ### GIA-ST Nacional
 
 - Generating GIA-ST text files in accordance with [version 3.1](http://www.fazenda.sp.gov.br/download/downloadgiast.shtm).
-
 
 ### SPED Accounting
 
