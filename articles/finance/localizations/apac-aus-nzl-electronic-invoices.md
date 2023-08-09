@@ -47,6 +47,8 @@ Before you begin the procedures in this article, complete the following prerequi
     - Peppol Sales Credit Note AU-NZ
     - Peppol Project Invoice AU-NZ
     - Peppol Project Credit Note AU-NZ
+> [!NOTE]
+> These formats are based on the respective **Peppol** format configurations which are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
 ## Country/region-specific configuration for the Electronic invoicing for Australia and New Zealand feature
 
