@@ -2,7 +2,7 @@
 title: SPED-Reinf (Brazil)
 description: This article provides information about how you can use Fiscal books and the electronic message framework to set up SPED-Reinf events.
 author: AdamTrukawka
-ms.date: 04/09/2021
+ms.date: 08/09/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events thro
 | R-5011 | Consolidated base and tax amount                                  | Non-periodic event         | No        |
 | R-9000 | Deletion                                                          | Non-periodic event         | Yes       |
 | R-9005 | Bases and taxes, withholdings                                     |                            |           |
-| R-     | Consolidation of withholdings                                     |                            |           |
+| R-9015 | Consolidation of withholdings                                     |                            |           |
 
 > [!NOTE]
 > Events R-2010 and R-2020 are supported for National Registry of Legal Entities (CNPJ) third parties. Event R-5011 is used to inquire about the status of closing event R-2099.
@@ -78,7 +78,7 @@ To generate events for R-4000 records, the following parameters are required for
 - Individual Supplier Registration
 - Legal Entity Registration
 - Unidentified Beneficiary
-- Purchase Order Receipts (The payment journal must be configured according to item 3 of this manual.)
+- Purchase Order Receipts 
 - General ledger with emphasis on Income Tax (IRRF)
 - Service item registration with the **Income code** field
 
