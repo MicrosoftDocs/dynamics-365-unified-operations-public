@@ -26,7 +26,7 @@ This article provides information about how to configure and issue customer elec
 ## Prerequisites
 
 1. The primary address of the legal entity must be in Australia and New Zealand.
-2. Make sure that Service Integration is disabled ............
+2. Make sure that the **Electronic invoicing integration** feature disabled in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 3. Do configuration steps described in the [Finance business data configuration](apac-aus-nzl-electronic-invoices.md#finance-business-data-configuration) chapter of the **Get started with Electronic invoicing for Australia and New Zealand** article.
 4. Make sure that the following Electronic reporting format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
