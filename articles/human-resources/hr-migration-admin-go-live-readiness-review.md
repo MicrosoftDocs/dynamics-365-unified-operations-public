@@ -103,5 +103,5 @@ In addition, copy the following list into the email, and fill in the following i
 4. After all critical risks have been addressed and the review has been completed, Microsoft will enable the production environment in the Lifecycle Services project. The customer/partner can then deplay the production environment.
 
 For more information, see: 
-[Dynamics 365 Human Resources customer migration](./hr-cust-migration.md)
-[Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md)
+ - [Dynamics 365 Human Resources customer migration](./hr-cust-migration.md)
+ - [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md)
