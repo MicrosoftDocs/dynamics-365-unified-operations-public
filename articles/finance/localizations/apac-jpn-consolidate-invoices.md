@@ -92,19 +92,19 @@ The following are not covered by this system in Finance:
 - Only accounting currency is supported.
 
 ### Scope
-The following changes must be made within the scope of this feature:
-1. Consolidated invoice creation and processing (both AP and AR): 
+The following changes have been introduced within the scope of this feature:
+1. Consolidated invoice creation and processing (both Accounts Receivable and Accounts Payable): 
 
-+ a. Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
-+ b. Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
-    c. Allow manual adjustment of the calculated consolidated tax (AP only). 
-    d. Add Post operation to post the tax adjustment per sales tax code. 
-    e. Print consolidated invoice (AR only). 
-    f. Add Reverse operation to reverse posted tax adjustments per sales tax code.
++ Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
++ Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
++ Allow manual adjustment of the calculated consolidated tax (Accounts Payable only). 
++ Add Post operation to post the tax adjustment per sales tax code. 
++ Print consolidated invoice (Accounts Receivable only). 
++ Add Reverse operation to reverse posted tax adjustments per sales tax code.
 
 2. Consolidated tax calculation (both Accounts Receivable and Accounts Payable): 
-    a. Sum up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice. 
-    b. Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
++ Sum up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice. 
++ Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
 
 Vendor invoices posted via vendor invoice journal are not supported in the vendor consolidated invoice functionality and will not be included in this feature.
 
@@ -125,6 +125,7 @@ To set up this feature, follow these steps:
 1. Specify journal names to post consolidated tax adjustments.
 
 ### Scenarios
+
 #### Consolidated Invoice issued to a Customer
 To create a customer payment journal, open the Customer Payment Journal page, create a new customer payment journal, and click Lines. Create a new payment journal line for the customer and click Settle Transactions. On the Settle Transaction dialog page, click Consolidated Invoice -> Select. In the Select Consolidated Invoices dialog, select the newly created consolidated invoice and click OK.
 
