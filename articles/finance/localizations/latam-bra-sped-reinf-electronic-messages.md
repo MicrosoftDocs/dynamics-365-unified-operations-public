@@ -23,17 +23,17 @@ Before you issue SPED-Reinf events to the government website, use the predefined
 
 ## Import the configuration from the data entity
 
-To set up electronic message functionality for communication of SPED-Reinf events, use the predefined configuration that is available in Microsoft Dynamics Lifecycle Services (LCS).
+To set up electronic message functionality for communication of SPED-Reinf events, use the predefined configuration that is available in Microsoft Dynamics Lifecycle Services.
 
-1. Sign in to [LCS](https://lcs.dynamics.com).
+1. Sign in to [Lifecycle Services](https://lcs.dynamics.com).
 2. Select the **Shared asset library** tile.
-3.  Select **Data package** as the asset type, and then select the package for the SPED-REINF event communication data entities. (The file name is **SPEDREINF\_EMSettings Layout 2.1.2.zip**.)
+3. Select **Data package** as the asset type, and then select the package for the SPED-REINF event communication data entities. (The file name is **SPEDREINF\_EMSettings Layout 2.1.2.zip**.)
 4. Save the file in the location where data entities should be stored.
 5. Sign in to Finance, and go to **Workspaces** \> **Data management**.
 6. Select the **Import** tile.
 7. Enter a description and a name to identify the job, such as **SpedReinf**.
 8. In the **Source data format** field, select **Package**.
-9. Select **Upload**, and then select the file that you saved from LCS (**SPEDReinf_EMSettings Layout 2.1.2.zip**).
+9. Select **Upload**, and then select the file that you saved from Lifecycle Services (**SPEDReinf_EMSettings Layout 2.1.2.zip**).
 10. Select **Save**, and wait until all data entities are shown on the page.
 11. Select **Import**.
 
@@ -128,17 +128,19 @@ Before a message is delivered, set up XML schema validation to help prevent reje
     - Re-Verify (Re-Validar)
     - Cancel-Verify (Exclusão-Validar)
 
-3.  Select the attachment icon to attach the SCHEMAS of the events (XSD) made available by the SPED-REINF.  
-    ![Processing Actions.](media/bra-processing-actions21.png)
+3. Select the **Attachments** button (paper clip symbol) to attach the schemas of the events (XSD) that are made available by the SPED-Reinf.
 
-4.  Select **New** > **File** > **Add all schemas**.  
-    ![Add Schema.](media/bra-add-schema21.png)
+    ![Attachments button on the Message processing actions page.](media/bra-processing-actions21.png)
 
-5. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions** and select **Populate** (**Incluir**).
+4. Select **New** \> **File** \> **Add all schemas**.
+
+    ![Adding schemas.](media/bra-add-schema21.png)
+
+5. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **Populate** (**Incluir**).
 6. In the **Populate records action** field, select **Registrar transacões**.
  
-    ![Message processing actions page.](media/bra-message-processing-actions21.png)
+    ![Populate records action field set on the Message processing actions page.](media/bra-message-processing-actions21.png)
 
 7. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web service settings**, and set up a web services connection and certificates to issue and inquire about events.
 
-    ![Web services settings page.](media/bra-web-service-settings21.png)
+    ![Web services connection and certificates set up on the Web services settings page.](media/bra-web-service-settings21.png)
