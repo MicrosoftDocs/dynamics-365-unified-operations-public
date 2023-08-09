@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
+
 ---
 
 # Set up and configure on behalf of (OBO) functionality in headquarters
@@ -30,7 +31,7 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce Shared parameters \> Identity Providers**.
 1. Under **Identity providers**, select **Add**, and then set the following fields:
 
-    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>`, where <TENANTID> is the ID of your Azure Active Directory (Azure AD) business-to-business (B2B) tenant.
+    1. **Issuer:** Enter `https://sts.windows.net/<TENANTID>`, where `<TENANTID>` is the ID of your Azure Active Directory (Azure AD) business-to-business (B2B) tenant.
     1. **Type:** Select **Azure Active Directory**.
     1. **Name:** Enter a name for the identity provider.
 
@@ -42,7 +43,7 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 
 1. Under **Server resource IDs**, select **Add**, and then set the following fields:
 
-    1. **Server Resource Id:** Enter `https://<APPLICATIONIDURI>`, where <APPLICATIONIDURI> is the ID of the Azure AD B2B application (for example, "api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50".)
+    1. **Server Resource Id:** Enter `https://<APPLICATIONIDURI>`, where `<APPLICATIONIDURI>` is the ID of the Azure AD B2B application (for example, "api://8ff0a037-ea1e-4e04-8220-0a8dfcb4db50".)
     1. **Name:** Leave this field blank.
   
 1. On the action pane, select **Save**.
