@@ -4,7 +4,7 @@
 title: Create and modify B2B pages for on behalf of (OBO) functionality
 description: This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder.
 author: mariash529
-ms.date: 03/03/2023
+ms.date: 08/09/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-27
 ms.dyn365.ops.version: 10.0.33
+
 ---
 
 # Create and modify B2B pages for on behalf of (OBO) functionality
@@ -62,8 +63,8 @@ To create a business partner selection page, follow the same steps that you used
 ## Modify a B2B sign-in page so that it includes an Employee sign-in button
 
 > [!NOTE]
-> This section is applicable only for **built-in policies with injected contents based custom UI**. If you are using **built-in policies with generic module custom UI (or with the Azure B2C UI)**, please ignore this section.
-> 
+> This section is only applicable for built-in policies with an injected contents-based custom user interface (UI). If you're using built-in policies with a generic module custom UI, or with the Azure business-to-consumer (B2C) UI, you can ignore this section.
+ 
 To modify a B2B sign-in page so that it includes an employee sign-in button, follow these steps.
 
 1. Go to **Pages**, and select the site's B2B sign-in page.
