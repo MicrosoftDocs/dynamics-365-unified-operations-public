@@ -92,6 +92,9 @@ For more information about device activation, see [Activate Store Commerce using
 
 ## Feature parity with Store Commerce for Windows
 
+> [!IMPORTANT]
+> Note that Store Commerce for iOS with a Local Network architecture set up is not currently supported with the **Dynamics 365 Payment Connector for Adyen**. The Adyen Connector does support Store Commerce for iOS with the Cloud architecture setup.
+
 The following table compares the capabilities of the Store Commerce app across Windows, Android, and iOS platforms.
 
 | Feature                                                                               | Windows | Android | iOS |
