@@ -26,7 +26,7 @@ This article provides information about how to configure and issue customer elec
 ## Prerequisites
 
 1. The primary address of the legal entity must be in Australia or in New Zealand.
-2. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+2. Make sure that the latest versions of the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Peppol Sales Invoice AU-NZ
     - Peppol Sales Credit Note AU-NZ
@@ -35,6 +35,8 @@ This article provides information about how to configure and issue customer elec
 
 > [!NOTE]
 > These formats are based on the respective **Peppol** format configurations which are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
+
+## Configure parameters
 
 ### Reference the imported ER format configurations
 
