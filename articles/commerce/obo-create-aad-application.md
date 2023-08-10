@@ -39,6 +39,8 @@ To create an Azure AD application for account manager sign-in in the Azure busin
 
 1. Select **Register**.
 
+![Registration of the Azure AD B2B application](media/obo-register-application2.png)
+
 ## Configure an Azure AD application for account manager sign-in in the Azure B2B tenant
 
 After you complete the registration, locate the application that you created (for example, **Account Manager Application**).
@@ -60,6 +62,8 @@ After you complete the registration, locate the application that you created (fo
 
     > [!IMPORTANT]
     > The secret value is never shown again after you leave the **Certificates & secrets** page. Therefore, be sure to copy it.
+
+![Example of adding a scope](media/obo-add-scope2.png) 
 
 ## Configure an identity provider in your Azure B2C tenant for account manager sign-in to a B2B site
 
@@ -87,6 +91,9 @@ To configure an identity provider in your Azure B2C tenant for account manager s
     1. For **Surname**, select **family\_name**.
     1. For **Email**, select **email**.
 1. Select **Save**.
+
+![Configure custom IDP - screen 1](media/obo-configure-custom-IDP2.png)
+![Configure custom IDP - screen 2](media/obo-configure-IDP-part2.png)
 
 ## Add the Azure identity provider to a user flow
 
