@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/01/2023
+ms.date: 08/10/2023
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -42,7 +42,7 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
 
@@ -142,6 +142,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 \*Interac and Union Pay recurring card tokens aren't provided by Adyen, so they can't be supported for card not present transactions.
 
 #### Supported gift cards
+
 | Scheme | Card present | Card not present |
 |---|:-:|---|
 | Givex | ✔ | ✔ |
@@ -149,12 +150,14 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
-#### Supported wallets
+#### Digital wallet support status
 
-| Scheme | Card present | Card not present |
+The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. The "Card present support" column is for POS transactions, and the "Card not present support" column is for call center and online channel transactions. 
+
+| Scheme | Card present support | Card not present support |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
-| Google Pay | No | No |
+| Google Pay | Yes | Yes |
 | Apple Pay | Yes | Yes |
 | Klarna | No | No |
 | Affirm | No | No |
@@ -162,8 +165,8 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Alipay | No | No |
 | WeChat | No | No |
 
-
 #### Supported card present input methods
+
 | Input method | Supported | Notes |
 |---|:-:|---|
 | Dip | ✔ | |
