@@ -74,14 +74,16 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**, select a cu
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade.
+4. In **Value** section, in **Value** field, enter the external code that should be used as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
+    > [!NOTE]
+    > For the scenarios where no specific units of measure are assumed the default value **EA** (each) will be used.
 
 ### Sales tax codes configuration
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
 ### Customer requisition
 
