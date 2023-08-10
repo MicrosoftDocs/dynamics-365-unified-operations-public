@@ -3,7 +3,7 @@ items:
   items:
   - name: Dynamics 365 Human Resources
     items:
-    - name: Dynamics 365 Human Resources
+    - name: Dynamics 365 Human Resources documentation
       href: index.yml
     - name: Welcome to Dynamics 365 Human Resources 
       href: welcome.md  
