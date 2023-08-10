@@ -4,7 +4,7 @@
 title: Price change tracking
 description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 06/01/2023
+ms.date: 08/10/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -37,7 +37,7 @@ To configure the price change tracking feature in Commerce headquarters, follow 
 1. On the **Prices and discounts** tab, add the legal entities that you want to enable price change tracking for, and then select **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule job.
 
-After organizations that use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that the [environment initialization process](enable-configure-retail-functionality.md) has been completed, and run the **1020 (Prices and discounts)** distribution schedule job after your environment is upgraded. 
+After organizations that use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that you [initialize the base configuration data for Commerce scheduler](dev-itpro/CDX-Best-Practices.md#update-configurations), and then run the **1020 (Prices and discounts)** distribution schedule job after you upgrade your environment. 
 
 To disable price change tracking for a specific legal entity, in headquarters, remove the legal entity from the price change tracking setting in Commerce shared parameters (**Retail and Commerce \> Headquarters setup > Parameters \> Commerce shared parameters**). The removed legal entities won't automatically be added again, even if cloud-powered product search is enabled for them. If you remove all legal entities, you effectively disable the whole price change tracking feature.
 
@@ -86,7 +86,7 @@ When you make large-scale changes (for example, bulk data migration), Microsoft 
 
 [Cloud-powered search overview](cloud-powered-search-overview.md)
 
-[Initialize seed data in new Commerce environments](enable-configure-retail-functionality.md)
+[Commerce Data Exchange best practices](dev-itpro/cdx-best-practices.md)
 
 [Data management overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
 
