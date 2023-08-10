@@ -39,7 +39,7 @@ The following table describes the buttons that are available directly on the Act
 |---|---|
 | New | [Create a voyage](/training/modules/work-with-landed-cost-supply-chain-management/create-voyage). |
 | Delete | Delete the current voyage. Only voyages that have a voyage status of *Confirmed* can be deleted. After a voyage leaves port and processes goods in transit, it can no longer be deleted. |
-| Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. For more information about the **Voyage editor**, see [The Voyage editor page](#voyage-editor). |
+| Voyage editor | Open the **Voyage editor** page, where you can add or remove purchase lines for the voyage, create new containers, and modify details of the voyage itself. For more information about the **Voyage editor** page, see [The Voyage editor page](#voyage-editor) later in this article. |
 | Voyage costs | Open the **Voyage costs** page, where you can view and add voyage costs to all goods in the voyage. When voyage costs are manually added to the voyage, they're automatically added to the **Costs inquiry** page and apportioned to each good according to the method that is specified on the **Voyage costs** page. |
 
 #### Buttons on the Voyage tab
@@ -172,12 +172,12 @@ The following table describes the fields that are available on the **Other** Fas
 
 ## <a name="voyage-editor"></a>The Voyage editor page
 
-Use the **Voyage editor** page to create voyages, create containers for a voyage, and choose the purchase order and/or transfer order lines to include in each container. To open the **Voyage editor**, follow one of these steps:
+Use the **Voyage editor** page to create voyages, create containers for a voyage, and select the purchase order and/or transfer order lines to include in each container. To open the **Voyage editor** page, follow one of these steps:
 
 - Go to **Landed cost \> Voyages \> All voyages**. To create a new voyage, select **New** on the Action Pane, fill in the **Create voyage** dialog box as needed, and then select **OK**. To edit an existing voyage, select it, and then select **Voyage editor** on the Action Pane. In both cases, the **Voyage editor** page is opened and shows the new or selected voyage.
 - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
 
-For details about how to use the **Voyage editor** page to create and populate containers for voyages, see [Manage shipping containers](manage-shipping-containers.md). The following subsections provide an overview of the settings available on this page.
+For information about how to use the **Voyage editor** page to create and populate containers for voyages, see [Manage shipping containers](manage-shipping-containers.md). The following subsections provide an overview of the settings that are available on this page.
 
 ### Action Pane buttons on the Voyage editor page
 
@@ -185,32 +185,32 @@ The following table describes the buttons that are available on the Action Pane 
 
 | Button | Description |
 |---|---|
-| Edit voyage header | Opens the **Edit voyage** dialog, where you can view and update header information for the current voyage. These settings are also available on **General** FastTab of the **Header** view of the voyage details page. For a description of these fields, see [Header view of the voyage details page](#header-view). |
-| Setup | Opens a drop-down dialog where you can choose which transaction types and sites to show on the page. These criteria are combined with those on the **Filters** FastTab to control which orders are listed on the **Inbound orders** FastTab. |
-| Generate data | Updates the list of orders shown on the **Inbound orders** FastTab based on the current **Filters** and **Setup** settings. You must select this button to update the inbound orders list each time you change these settings. |
-| Display dimensions | Opens a dialog where you can select the inventory dimensions that should be shown in the grid on the **Lines to select** FastTab. |
+| Edit voyage header | Open the **Edit voyage** dialog box, where you can view and update header information for the current voyage. These settings are also available on the **General** FastTab in the **Header** view of the voyage details page. For a description of these fields, see [Header view of the voyage details page](#header-view) earlier in this article. |
+| Setup | Open a drop-down dialog box where you can select the transaction types and sites to show on the page. These criteria are combined with the criteria on the **Filters** FastTab to control which orders are listed on the **Inbound orders** FastTab. |
+| Generate data | Update the list of orders on the **Inbound orders** FastTab, based on the current **Filters** and **Setup** settings. You must select this button to update the inbound orders list each time that you change these settings. |
+| Display dimensions | Open a dialog box where you can select the inventory dimensions that are shown in the grid on the **Lines to select** FastTab. |
 
 ### The Filters FastTab
 
-Use the **Filters** FastTab to set criteria to control which purchase and transfer orders are shown on the **Inbound orders** FastTab. The criteria you enter here are combined with those provided in the **Setup** drop-down dialog available on the Action Pane. Each time you change the **Filters** or **Setup** settings, you must select **Generate data** on the Action Pane to update the **Inbound orders** FastTab.
+Use the **Filters** FastTab to set criteria that control which purchase and transfer orders are shown on the **Inbound orders** FastTab. The criteria that you enter here are combined with the criteria that are provided in the **Setup** drop-down dialog box on the Action Pane. Each time that you change the **Filters** or **Setup** settings, you must select **Generate data** on the Action Pane to update the **Inbound orders** FastTab.
 
 ### The Inbound orders FastTab
 
-The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set on the **Filters** FastTab and the **Setup** drop-down dialog. Select an order listed here to view the lines that are associated with that order on the **Lines to select** FastTab. Some orders may be listed several times if they include lines with different delivery dates.
+The **Inbound orders** FastTab lists the purchase and transfer orders that meet the criteria that you set on the **Filters** FastTab and in the **Setup** drop-down dialog box. Select an order that's listed here to view the lines that are associated with that order on the **Lines to select** FastTab. Some orders might be listed several times if they include lines that have different delivery dates.
 
 ### The Lines to select FastTab
 
-The **Lines to select** FastTab lists the lines that are associated with the order and delivery date that you selected on the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, then select **Add to staging list** from the toolbar to make them available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
+The **Lines to select** FastTab lists the lines that are associated with the order and delivery date that you selected on the **Inbound orders** FastTab. Select the lines that you want to include in a new or existing container for the current voyage, and then select **Add to staging list** on the toolbar to make those lines available for container assignment. Select **View staging list** to open a page where you can actually assign the lines to new or existing containers. For more information about this process, see [Manage shipping containers](manage-shipping-containers.md).
 
 ### The Other dates FastTab
 
-The **Other dates** FastTab lists lines that are associated with the order that you selected on the **Inbound orders** FastTab, but which have different delivery dates from the row you selected. These lines are for information only, and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date on the **Inbound orders** FastTab, which will make those lines available on the **Lines to select** FastTab.
+The **Other dates** FastTab lists lines that are associated with the order that you selected on the **Inbound orders** FastTab, but that have different delivery dates than the selected row. These lines are for information only and can't be added to the staging list from here. To add these lines to the staging list, select the appropriate order and delivery date on the **Inbound orders** FastTab. Those lines then become available on the **Lines to select** FastTab.
 
 ## Voyage update periodic tasks
 
 The **Landed cost** module includes several voyage-related periodic tasks that can bulk-update several aspects of voyages. To run or schedule these periodic tasks, go to **Landed cost \> Periodic tasks \> Voyage updates**, and then select one of the following task types:
 
-- **Documents received** – This task lets you set **Documents received** to *Yes* for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
-- **In transit** – This task lets you set the **Voyage status** field to the in-transit status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
-- **Ready for costing** – This task lets you set the **Voyage status** field to the ready for costing status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. You'll typically set up this task to run on a regular schedule.
-- **Costed**  – This task lets you set the **Voyage status** field to the costed status that is established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time, provided that they have been costed but haven't yet been updated on the voyage. You'll typically set up this task to run on a regular schedule.
+- **Documents received** – This task lets you set the **Documents received** option to *Yes* for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
+- **In transit** – This task lets you set the **Voyage status** field to the in-transit status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. Use the **Filter** settings to define the set of voyages that you want to update.
+- **Ready for costing** – This task lets you set the **Voyage status** field to the ready for costing status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time. You'll typically set up this task to run on a regular schedule.
+- **Costed** – This task lets you set the **Voyage status** field to the costed status that's established on the **[Landed cost parameters](landed-cost-parameters.md)** page for several voyages at the same time, provided that they have been costed but haven't yet been updated on the voyage. You'll typically set up this task to run on a regular schedule.
