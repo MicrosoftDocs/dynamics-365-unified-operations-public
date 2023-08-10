@@ -128,10 +128,10 @@ For instructions on enabling a shared hardware station, see [Configure a new Ret
 
 The Adyen payment connector can be configured to communicate with devices via the local network or through Adyen's cloud backend. For environments with unreliable internet service, or where offline mode is required, the **Local** architecture configuration should be used. For environments with strong internet connections, or if a static IP address can't be assigned to the payment terminal, the **Cloud** architecture configuration may work best.
 
-##### EFT service for local network communication
-
 > [!IMPORTANT]
 > The Dynamics 365 Payment Connector for Adyen doesn't currently support Store Commerce for iOS with local network or cloud architecture configurations.
+
+##### EFT service for local network communication
 
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
 1. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
