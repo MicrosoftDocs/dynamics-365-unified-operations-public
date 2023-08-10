@@ -124,8 +124,11 @@ In Application Insights, telemetry from the Warehouse Management mobile app is l
 | Event ID | Area | Name | Supply Chain Management version | Mobile app version |
 |---|---|---|---|---|
 | WHS000006 | Mobile application frontend | Warehouse.MobileApp.ClientRoundTrip | 10.0.29 | 2.0.28 |
+| WHS000030 | Mobile application frontend | Warehouse.MobileApp.FailedServerInvoke | 10.0.29 | 2.1.14 |
+| WHS000031 | Mobile application frontend | Warehouse.MobileApp.ServiceInvokeException | 10.0.29 | 2.1.14 |
 
-The following table lists the telemetry data that's logged as custom dimensions on each event. It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app that are required to generate each dimension.
+
+The following table lists the telemetry data that's logged as custom dimensions on each event. (Not all this data is logged for all events.) It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app that are required to generate each dimension.
 
 | Name | Description | Supply Chain Management version | Mobile app version |
 |---|---|---|---|
@@ -147,6 +150,13 @@ The following table lists the telemetry data that's logged as custom dimensions 
 | `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 | 2.0.28 |
 | `serverAadTenantId` | The Azure AD tenant ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
 | `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
+| `lastKnownWMSLocation` | The last WMSLocation captured in the mobile app flows. | 10.0.29 | 2.1.14 |
+| `requestNextPageTimeInMilliseconds` | Information about the total time taken to request the neext page from the server.  | 10.0.29 | 2.1.14 |
+| `serverInvokeErrorMessage` | Contains the exception message when a generic exception is thrown.  | 10.0.29 | 2.1.14 |
+| `serviceInvokeExceptionCategory` | Contains information about the type of an exception thrown by the server.  | 10.0.29 | 2.1.14 |
+| `numberOfRetries` | The number of times the mobile app tried to request the next page after an exception occured.  | 10.0.29 | 2.1.14 |
+| `connectionType` | The number of times the mobile app tried to request the next page after an exception occured.  | 10.0.29 | 2.1.14 |
+
 
 ## View telemetry data in Application Insights
 
