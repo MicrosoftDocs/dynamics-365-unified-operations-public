@@ -18,13 +18,12 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Azure Active Directory (Azure AD) app
+This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Azure Active Directory (Azure AD) app.
 
 By default, Store Commerce for web points to a registered first-party Microsoft app in Azure Active Directory (Azure AD). Therefore, you can use Store Commerce for web without having to make any changes in Azure AD. However, you might want to point your instance of Store Commerce for web to a custom Azure AD app that you control. This article explains how to configure Store Commerce for web to use a custom Azure AD app. 
 
 > [!NOTE] 
 > This article only applies to self-hosted Commerce Scale Unit (CSU) installations or development using a self-hosted CSU. 
-
 
 ## Set up a custom Retail Server app in Azure AD
 
