@@ -177,4 +177,4 @@ This situation usually occurs when an item with issue margin is sold from a ware
 
 - **If on-hand supply exists in WH13** – On WH11, the margin will be applied between the sales order date and the transfer order received date. However, on WH13, the date of the transfer order shipment will be the same as the received date because there is on-hand supply, so no issue margin will be applied.
 
-- **If on-hand supply doesn't exist in WH13** – If there is no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the issue margin is applied between the transfer order receive date and the purchase order received date.
+- **If on-hand supply doesn't exist in WH13** – If there is no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the issue margin is applied between the transfer order received date and the purchase order received date.
