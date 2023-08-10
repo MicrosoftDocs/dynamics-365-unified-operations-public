@@ -2092,6 +2092,8 @@
               href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
             - name: Events
               href: localizations/latam-bra-sped-reinf.md
+            - name: Enable the Fiscal Establishment dimension
+              href: localizations/latam-bra-sped-fiscal-establishment.md
           - name: SPED fiscal resolution 13/2019 RJ
             href: localizations/latam-bra-resolution-13-2019-RJ.md
           - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
