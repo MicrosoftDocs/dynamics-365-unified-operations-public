@@ -129,6 +129,9 @@ The Adyen payment connector can be configured to communicate with devices via th
 
 ##### EFT service for local network communication
 
+> [!IMPORTANT]
+> Note that Store Commerce for iOS with a Local Network architecture set up is not currently supported with the **Dynamics 365 Payment Connector for Adyen**. The Adyen Connector does support Store Commerce for iOS with the Cloud architecture setup.
+
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
 1. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
 1. In the **Connector properties** section, enter the following information.
