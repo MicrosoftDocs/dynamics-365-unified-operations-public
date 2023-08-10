@@ -2,7 +2,7 @@
 title: SPED-Reinf events
 description: This article explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
 author: AdamTrukawka
-ms.date: 08/07/2023
+ms.date: 08/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -202,9 +202,11 @@ Event R-1050 is used to report information about linked entities. This record pr
 
 ### Repro step
 
-- Select **New**, and set the following fields:
+1. Go to **Organization administration** > **Organizations** > **Fiscal establishments** > **Fiscal establishments**.
+2. On the **Fiscal establishment relations** tab, add any needed related information.
+3. Select **New** to add the new field **SP01**, and add the apropriate fiscal establishment relations.
 
-    ![Fiscal establishments page.](media/bra-Description-generated21.png)
+   ![Fiscal establishments page.](media/bra-Description-generated21.png)
 
 ## Event R-1070 – Administrative and judicial process
 
@@ -437,7 +439,7 @@ The R-4010 event should be entered only with the parameters of **Vendor** and **
 2. Select **Lines**, and then, in the **Account type** field, select **Vendor**.
 3. Select an account, and enter a description of the journal.
 4. Enter a credit, and then, in the **Offset account type** field, select **Ledger**.
-5. Offset account &gt; add **FiscalEstablishment**.
+5. In the **Offset account** field, select **FiscalEstablishment**.
 6. In the **Item sales tax group** field, select a value.
 7. In the **Sales tax group** field, select a value.
 8. In the **Income code** field, select a code.
