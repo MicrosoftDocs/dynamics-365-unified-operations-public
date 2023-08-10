@@ -152,7 +152,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Digital wallet support status
 
-The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. "Card present support" is for POS transactions, and "Card not present support" is for call center and online channel transactions. 
+The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. The "Card present support" column is for POS transactions, and the "Card not present support" column is for call center and online channel transactions. 
 
 | Scheme | Card present support | Card not present support |
 |---|---|---|
