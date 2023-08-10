@@ -6,11 +6,6 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/human-resources/index.md",
-      "redirect_url": "welcome",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/ISV-success.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription",
       "redirect_document_id": "false"
