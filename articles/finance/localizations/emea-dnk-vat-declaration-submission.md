@@ -146,7 +146,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
 When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-vat-declaration) section later in this article.
 
-The following procedures applie to the **DK VAT return** EM processing example that you imported earlier from the LCS Shared asset library. This processing supports the following scenarios:
+The following procedures apply to the **DK VAT return** EM processing example that you imported earlier from the LCS Shared asset library. This processing supports the following scenarios:
 
 - Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
 - Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
