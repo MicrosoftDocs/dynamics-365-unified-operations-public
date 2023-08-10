@@ -142,29 +142,58 @@ Follow these steps to define the VAT registration number that the **DK VAT retur
 
 If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** EM processing, the system retrieves it from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
-## Generate a VAT declaration from electronic messages
+## Generate a VAT declaration from electronic messages and submit it to the Danish Tax Agency
 
 When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#run-vat-declaration) section later in this article.
 
-The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
+The following procedures applie to the **DK VAT return** EM processing example that you imported earlier from the LCS Shared asset library. This processing supports the following scenarios:
+
+- Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
+- Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
+- Generate VAT return electronic file and submit it to Skattestyrelsen
+
+### Preview VAT declaration in Excel without collecting Sales tax payments
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
-2. In the left pane, select **DK VAT declaration**.
-3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+2. In the left pane, select **DK VAT return**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **DK VAT create preview in Excel** in the **Action** filed and click **OK**. A new message in **DK VAT new preview** status is created.
 4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
-
-   > [!NOTE]
-   > Steps 5 through 7 are optional.
-
-5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle-and-post-sales-tax) section earlier in this article. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
-6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
-7. Optional: Select **Original document** to review the sales tax payments or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
-8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
-9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
-10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-vat-excel) section earlier in this article, and then select **OK**.
+5. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **DK VAT preview declaration** in the **Action** field, and then select **OK**.
+6. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel](emea-dnk-vat-declaration-preview.md#preview-vat-excel) section earlier in this article, and then select **OK**.
 11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel document.
 
-## <a name="run-vat-declaration"></a>Run a VAT declaration for multiple legal entities
+### Request information about VAT obligation periods from Skattestyrelsen
+
+1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+2. In the left pane, select **DK VAT return**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **DK VAT create calendar request** in the **Action** filed and click **OK**. A new message in **DK VAT new calendar request** status is created.
+4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
+5. Select **Send report**, in the **Run processing** dialog box, select **DK VAT calendar request** in the **Action** field, and then select **OK**. Request is sent to the Danish Tax Agency and response with information about obligation periods is attached to the electronic message in HTML format.
+6. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the information from the response in your browser.
+
+### Generate VAT return electronic file and submit it to Skattestyrelsen
+
+1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+2. In the left pane, select **DK VAT return**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **DK VAT create VAT return for submission** in the **Action** filed and click **OK**. A new message in **DK VAT new VAT return submission** status is created.
+4. Select the message line that is created, enter a description, and then specify the start and end dates for the declaration.
+5. On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](emea-dnk-vat-declaration-preview.md#settle-and-post-sales-tax) section earlier in this article.
+6. On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+7. Optional: Select **Original document** to review the sales tax payments or select **Delete** to exclude sales tax payments from processing. 
+8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **DK VAT ready to generate VAT return** in the **Action** field, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
+9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **DK VAT preview VAT declaration in Excel**, and then select **OK**.
+10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel](emea-dnk-vat-declaration-preview.md#preview-vat-excel) section earlier in this article, and then select **OK**.
+11. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel document.
+12. Select **Generate report**. To generate the VAT return in XML format that can be further submitted to the Danish Tax Agency, in the **Run processing** dialog box, select **DK VAT generate XML file for submission**, and then select **OK**.
+13. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel](emea-dnk-vat-declaration-preview.md#preview-vat-excel) section earlier in this article, and then select **OK**.
+14. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel document.
+15. Select **Send report** to submit VAT return in XML format to the Danish Tax Agency, in the **Run processing** dialog box, select **DK VAT submit VAT return** in the **Action** field and click **OK**. As a result of this action your VAT return is transferred to the Danish Tax Agency. In response, the Danish Tax Agency sends a link that you must use to approve your VAT return.
+16. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then use attached link to approve your VAT return.
+17. When VAT return is approved, on the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **DK VAT return approved** in the **Action** field, and then select **OK**. Verify that the message status is changed to **DK VAT return approved**.
+18. For approved VAT return you can request a receipt information from the the Danish Tax Agency. Select **Send report**, in the **Run processing** dialog box, select **DK VAT receipt request** in the **Action** field and click **OK**. As a result, request for receipt is sent to the Danish Tax Agency and response is attached to the electronic message as HTML file.
+19. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the information from the response in your browser.
+
+## <a name="run-vat-declaration"></a> Generate a VAT declaration for multiple legal entities
 
 To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
