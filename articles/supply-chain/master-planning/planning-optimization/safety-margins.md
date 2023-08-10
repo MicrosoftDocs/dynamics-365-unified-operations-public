@@ -171,7 +171,7 @@ For example, an item has lead time of one day and a receipt margin of three days
 
 ## Issue margin and on-hand
 
-It can sometimes occur that the issue margin isn't applied to an order when on-hand supply exists for the item. The reason for this is that the on-hand supply doesn't have a date, so it isn't possible to apply the issue margin.
+It can sometimes occur that issue margin isn't applied to an order when on-hand supply exists for an item. The reason for this is that the on-hand supply doesn't have a date, so it isn't possible to apply the issue margin.
 
 This situation usually occurs when an item with issue margin is sold from a warehouse (for example WH11) that is replenished by a transfer order from another warehouse (for example WH13). In this case, one of the following situations could apply:
 
