@@ -2,12 +2,12 @@
 title: Inbound inventory operation in POS
 description: This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 01/30/2023
+ms.date: 09/01/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: hhaines
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
 
 ---
@@ -168,7 +168,7 @@ From POS, users can create new purchase order requests. To use this feature, ple
 To begin the creation process, in the document list view, click **Create new** on the app bar, in the prompted dialog, select **New purchase order**, then choose a vendor that you want the purchase order to be shipped from. You can search a specific vendor by entering the vendor account ID or vendor name. Your current store will always be the **Ship to** warehouse for the to-be-created purchase order, which cannot be modified. You can specify the **Accounting date** and **Delivery date** as needed. You can also add a note that will be stored together with the purchase order header as an attachment to the document in Commerce Headquarters.
 
 > [!NOTE]
-> You cannot create purchase orders from POS if purchase order [change management workflow](https://learn.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce Headquarters. In that case, the purchase orders can only be created in HQ and must go through approval workflow.
+> You cannot create purchase orders from POS if purchase order [change management workflow](/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in Commerce Headquarters. In that case, the purchase orders can only be created in HQ and must go through approval workflow.
 
 > [!NOTE]
 > You must run **1220 (Vendors)** distribution schedule job to sync the predefined vendor master data from Commerce Headquarters to channel databases, to use the vendor selection function. Also, intercompany vendor cannot be selected during purchase order creation from POS. 
@@ -177,7 +177,7 @@ After the header information is created, you can add products to the purchase or
 
 After lines are entered on the purchase order request, you must select **Save** to save the document changes locally or select **Submit request** to send the request to Commerce Headquarters for further processing. If a document is saved locally, it can be found on the **Draft** tab of the document list view. While a document is in the **Draft** status, you can edit it by selecting **Edit**. You can add, update, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Draft** tab.
 
-After the draft document is successfully submitted to Commerce Headquarters, it appears on the **Active** tab of the document list view and has a status of **Created**. For purchase orders in such status, regardless of where (POS or HQ) the document was initially created, as long as the purchase order [change management workflow](https://learn.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is not enabled, users in the recipient store of the purchase order can edit the document by adding, updating or deleting lines as you require. You must resubmit the updated document to put the modification into effect. 
+After the draft document is successfully submitted to Commerce Headquarters, it appears on the **Active** tab of the document list view and has a status of **Created**. For purchase orders in such status, regardless of where (POS or HQ) the document was initially created, as long as the purchase order [change management workflow](/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is not enabled, users in the recipient store of the purchase order can edit the document by adding, updating or deleting lines as you require. You must resubmit the updated document to put the modification into effect. 
 
 From POS, users can also confirm purchase order requests to indicate commitment from vendors to deliver the goods as requested in the purchase orders. To use this feature, please ensure the **Ability to create purchase order request in POS** feature is enabled in the Feature management workspace, and the **Allow confirm purchase order** permission is enabled in the user’s POS permission group. Only purchase order in **Created** status can be confirmed. To confirm a purchase order, select the order in the document list view, click **View details** to open its document details view, and then select **Confirm order** on the app bar. After a purchase order is confirmed, its status is updated from **Created** to **Requested** and is ready for receiving as next step.
 
