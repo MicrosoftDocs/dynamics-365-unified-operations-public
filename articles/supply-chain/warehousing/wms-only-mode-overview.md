@@ -1,6 +1,6 @@
 ---
 title: Warehouse management only mode overview
-description: XXXX
+description: Warehouse management only mode lets you take advantage of the core warehouse management (WMS) functionality offered by Dynamics 365 Supply Chain Management while continuing to leverage your existing investments in third-party ERP and order-management systems.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -16,6 +16,8 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!-- KFM: Preview until further notice -->
 
 *Warehouse management only mode* lets you take advantage of the core warehouse management (WMS) functionality offered by Dynamics 365 Supply Chain Management while continuing to leverage your existing investments in third-party ERP and order-management systems. Regardless of which ordering or ERP systems you have in place, you can now rapidly deploy our advanced WMS without having to set up or maintain areas of Supply Chain Management that you don't need. Then you'll be ready to benefit from advanced WMS features such as automation integration, carrier integration, the Warehouse Management mobile app, and more.
 

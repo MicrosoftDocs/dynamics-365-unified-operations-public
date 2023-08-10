@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout, the examples are running on the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
 To create inbound and outbound shipment orders, a message entity needs to be posted using [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message then needs to be processed by the [**Message processor**](../supply-chain-dev/message-processor.md) in Supply Chain Management, which will create the orders in the warehouse system.
