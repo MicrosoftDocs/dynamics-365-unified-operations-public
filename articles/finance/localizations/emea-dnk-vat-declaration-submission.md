@@ -52,17 +52,25 @@ For more information about how to set up Key Vault parameters, see [Set up the 
 
 ## Set up electronic messages
 
+### Enable \[EM\] Executable class action type feature
+
+To submit your VAT return directly to the Danish Tax Agency from Finance, you must enable **\[EM\] Executable class action type** feature in **Feature management**.
+
+1. Go to **Workspaces** \> **Feature management**.
+2. On the **All** tab, find and select the **\[EM\] Executable class action type** feature in the list.
+3. Select **Enable now**.
+
 ### Download and import the data package that has example settings for electronic messages
 
 The data package contains settings of electronic message functionality that enables the following scenario in your Finance.
 
 #### Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
 
-![Preview VAT declaration in Excel.](media/em-processing-preview-dk.png)
+<p align="center"><img src="media/em-processing-preview-dk.png" /></p>
 
 #### Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
 
-![Request information about VAT obligation periods.](media/em-processing-calendar-dk.png)
+<p align="center"><img src="media/em-processing-calendar-dk.png" /></p>
 
 #### Generate VAT return electronic file and submit it to Skattestyrelsen
 
