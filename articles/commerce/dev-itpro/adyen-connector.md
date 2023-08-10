@@ -42,7 +42,7 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
 
@@ -152,9 +152,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 
 #### Digital wallet support status
 
-The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. 
-
-**Card present support** is for POS transactions, and **Card not present support** is for call center and online channel transactions. 
+The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. "Card present support" is for POS transactions, and "Card not present support" is for call center and online channel transactions. 
 
 | Scheme | Card present support | Card not present support |
 |---|---|---|
