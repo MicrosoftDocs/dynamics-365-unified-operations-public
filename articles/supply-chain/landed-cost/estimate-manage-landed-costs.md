@@ -106,7 +106,7 @@ The top of the **Cost estimates** page shows the settings that were used to gene
 
 ### Settings and buttons on the Lines FastTab
 
-The **Lines** FastTab lists each item that is included in the current estimate. The following table describes the field that are available for each row.
+The **Lines** FastTab lists each item that is included in the current estimate. The following table describes the fields that are available for each row.
 
 | Field | Description |
 |---|---|
@@ -167,7 +167,7 @@ To run the periodic task, follow these steps.
 1. Select **OK** to run the task.
 
 > [!NOTE]
-> This periodic task will only execute successfully provided the following information is available:
+> This periodic task will run successfully only if the following information is available:
 >
 > - Each relevant product must have a **Gross depth**, **Gross width**, and **Gross height** defined.
 > - Each relevant vendor must have a **From port** defined.
@@ -178,16 +178,16 @@ To run the periodic task, follow these steps.
 
 <!-- KFM: Preview until further notice -->
 
-This feature enables landed costs to be included in the accounting distribution of purchased product receipts, which makes it easier for you to identify and track these costs. This feature doesn't affect the product receipt accounting logic that's used in other places in Microsoft Dynamics 365 Supply Chain Management.
+This feature enables landed costs to be included in the accounting distribution of purchased product receipts. Therefore, you can more easily identify and track those costs. This feature doesn't affect the product receipt accounting logic that's used in other places in Microsoft Dynamics 365 Supply Chain Management.
 
 ### Prerequisites
 
-To use this feature, you must be running Supply Chain Management 10.0.34 or higher and the *(Preview) Source document and accounting distribution support for Landed Cost* feature must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, you must be running Supply Chain Management 10.0.34 or later, and the *(Preview) Source document and accounting distribution support for Landed Cost* feature must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### View landed costs in the accounting distribution of product receipts
 
 When a product receipt is posted against a purchase order, Landed cost creates a source document line for each landed cost amount. The amount from Landed cost is shown on the **Account distributions** page, which is available from the product receipt.
 
-The following screenshot shows an example of accounting distributions that include landed costs.
+The following illustration shows an example of accounting distributions that include landed costs.
 
 [<img src="media/accounting-distributions.png" alt="Example of accounting distributions that include landed costs." title="Example of accounting distributions that include landed costs" width="720" />](media/accounting-distributions.png#lightbox)
