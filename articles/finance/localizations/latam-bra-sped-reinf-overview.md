@@ -58,8 +58,8 @@ Microsoft Dynamics 365 Finance supports the generation of SPED-Reinf events thro
 | R-5001 | Consolidated tax calculation basis by taxpayer                    | Non-periodic event         | No        |
 | R-5011 | Consolidated base and tax amount                                  | Non-periodic event         | No        |
 | R-9000 | Deletion                                                          | Non-periodic event         | Yes       |
-| R-9005 | Bases and taxes, withholdings                                     |                            |           |
-| R-9015 | Consolidation of withholdings                                     |                            |           |
+| R-9005 | Bases and taxes, withholdings                                     | Non-periodic event         | No        |
+| R-9015 | Consolidation of withholdings                                     | Non-periodic event         | Yes       |
 
 > [!NOTE]
 > Events R-2010 and R-2020 are supported for National Registry of Legal Entities (CNPJ) third parties. Event R-5011 is used to inquire about the status of closing event R-2099.
