@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 04/26/2023
+ms.date: 08/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,6 +15,7 @@ ms.dyn365.ops.version: AX 7.0.1
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.industry: Retail
+
 ---
 
 # Set up Dynamics 365 Payment Connector for Adyen
@@ -125,12 +126,12 @@ For instructions on enabling a shared hardware station, see [Configure a new Ret
 
 #### EFT service
 
-The Adyen payment connector can be configured to communicate with devices via the local network or through Adyen's cloud backend. For environments with unreliable internet service, or where offline mode is required, the **Local** setup should be used. For environments with strong internet connections, or if a static IP address can't be assigned to the payment terminal, the **Cloud** architecture may work best.
+The Adyen payment connector can be configured to communicate with devices via the local network or through Adyen's cloud backend. For environments with unreliable internet service, or where offline mode is required, the **Local** architecture configuration should be used. For environments with strong internet connections, or if a static IP address can't be assigned to the payment terminal, the **Cloud** architecture configuration may work best.
 
 ##### EFT service for local network communication
 
 > [!IMPORTANT]
-> Note that Store Commerce for iOS with a Local Network architecture set up is not currently supported with the **Dynamics 365 Payment Connector for Adyen**. The Adyen Connector does support Store Commerce for iOS with the Cloud architecture setup.
+> The Dynamics 365 Payment Connector for Adyen doesn't currently support Store Commerce for iOS with local network or cloud architecture configurations.
 
 1. On the **EFT service** FastTab, in the **EFT Service** field, select **Payment Connector**.
 1. On the **Connectors** tab, select **New**, and then, in the **Connector** field, select **Dynamics 365 Payment Connector for Adyen**. Make sure that the value in the **Sequence number** field is lower than the value for all other connectors.
