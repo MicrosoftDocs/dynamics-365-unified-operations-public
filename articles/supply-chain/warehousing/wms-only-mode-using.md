@@ -23,7 +23,7 @@ ms.custom: bap-template
 
 The **Warehouse management > Workspaces > Warehouse integration monitoring** page provides an overview of the warehouse integration messages and an easy way to navigate to the related areas, for example to the [**System administration > Message processor > Message processor messages**](warehouse-message-processor-messages.md) page.
 
-## Review inbound shipment orders
+## <a name="inbound-shipment-orders"></a>Review inbound shipment orders
 
 **Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represent information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal Supply Chain Management warehouse representation' of the available shipment orders in a **Header** and **Lines** view. For each of the lines, you can view detailed information about the **Receiving status**, **inventory transactions**, and any associated **warehouse work**. The **Receiving status** gets as well maintained on the order header and can be used to follow the inbound progress of the orders. The following **Receiving status** values are available:
 

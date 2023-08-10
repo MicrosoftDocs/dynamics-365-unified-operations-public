@@ -44,16 +44,16 @@ This following image shows how the message processor fits into an integrated sys
 > [!NOTE]
 > For shipment order lines to be correctly matched to specific released products in the Supply Chain Management [Product information management module**](../pim/product-information.md), product records must be created in Supply Chain Management. This data must be available in Supply Chain Management before the system can accept shipment order messages. <!--KFM: Do we really need this note here? Seems to be repeated in the next section. Maybe move this info down to there... -->
 
-## <a name="master-date"></a>Master data
+## <a name="master-data"></a>Master and reference data
 
-To enable consistent communication, several types of master data must be synchronized and available to both systems. One way to import the required master data to Supply Chain Management is to use its [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following master data is required:
+To enable consistent communication, several types of master and reference data must be synchronized and available to both systems. One way to import the required master data to Supply Chain Management is to use its [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types master and reference data are required:
 
 - **Released products** – This data is required for creating inbound and outbound shipment orders. For more information, see [Product data entities](../pim/data-entities.md) and [Overview of ProductInformationManagement](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
 
 - **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management, so you must have at least one group available. Each group that you will use with Warehouse only mode must have the following settings, which will eliminate the need to set up any costing data for these products:
     - **Inventory model** – Set to *Non-valuated*
-    - **Post physical inventory** – Turned off.
-    - **Post financial inventory** – Turned off.
+    - **Post physical inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
+    - **Post financial inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
 
 - **Countries/regions** – Each [country/region](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) where you do business must be defined in Supply Chain Management. These records are used in outbound shipment orders to create addresses. You'll also need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses. Depending on your [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) and the way you use address fields in  order messages, you might need to create additional data before you'll be able to import order messages (for example, to support state and county combinations).
 
@@ -63,7 +63,7 @@ External systems can have many different business process requests for the wareh
 
 Business events keep external systems informed about the progress and actions going on in Supply Chain Management. With this setup, the external systems don't need to keep polling for information that might not have changed since the last request, but instead only need to react when informed.
 
-Several out-of-the-box business events are supported for warehouse integration. The following table lists several (but not all) of them. <!-- KFM: How can the reader learn about the rest of them? -->
+Several out-of-the-box business events are supported for warehouse integration. The following table lists several (but not all) of them.
 
 | Business event ID | Description |
 |---|---|
