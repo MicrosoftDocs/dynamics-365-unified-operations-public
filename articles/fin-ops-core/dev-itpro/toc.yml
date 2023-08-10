@@ -2187,5 +2187,5 @@ items:
   - name: Dynamics 365 Commerce
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources
-    href: ../../human-resources/index.md
+    href: ../../human-resources/index.yml
 
