@@ -171,6 +171,8 @@ The following procedures apply to the **DK VAT return** EM processing example th
 5. Select **Send report**, in the **Run processing** dialog box, select **DK VAT calendar request** in the **Action** field, and then select **OK**. Request is sent to the Danish Tax Agency and response with information about obligation periods is attached to the electronic message in HTML format.
 6. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file. Review the information from the response in your browser.
 
+![Request information about VAT obligation periods from Skattestyrelsen.](media/dk-e-vat-calendar.png)
+
 ### Generate VAT return electronic file and submit it to Skattestyrelsen
 
 1. Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
