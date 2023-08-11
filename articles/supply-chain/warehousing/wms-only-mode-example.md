@@ -1,6 +1,6 @@
 ---
 title: Example of using inbound and outbound shipment orders
-description: XXXX
+description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-This section provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout, the examples are running on the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
+This article provides an example scenario that shows how to create inbound and outbound shipment orders. To ease a tryout, the examples are running on the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) for the **USMF** legal entity.
 
 To create inbound and outbound shipment orders, a message entity needs to be posted using [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message then needs to be processed by the [**Message processor**](../supply-chain-dev/message-processor.md) in Supply Chain Management, which will create the orders in the warehouse system.
 
@@ -41,25 +41,27 @@ The provided example data uses the process of not being depending on the default
 
 ## Prerequisites
 
-### Feature enablement
+### Enable sample data
 
-Make sure having the **Warehouse management only mode** enabled as described in the [Feature management](#feature-management) section.
+To work through the example scenarios that are described in this article, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the *USMF* legal entity (company) before you begin.
 
 ### Microsoft Entra ID applications
 
-In the **Microsoft Entra ID applications** page, assign the *Admin* user, or a user having authentication access to the integration messages, like the default ***Warehouse System Integration Operator*** role to the client that is used for authentication while interacting with the Supply Chain Management environment from an external source. In case you use the same user as part of the product master data import you must add more privileges related to product master data entities to the ***Warehouse System Integration Operator*** role.
+On the **Microsoft Entra ID applications** page, assign the *Admin* user, or a user having authentication access to the integration messages, like the default *Warehouse System Integration Operator* role to the client that is used for authentication while interacting with the Supply Chain Management environment from an external source. If you use the same user as part of the product master data import, you must add more privileges related to product master data entities to the *Warehouse System Integration Operator* role.
 
-When posting entities via [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md), it's important to ensure that either the user's default company matches the company in which the entity will be posted or to specify the company (dataAreaId), in the request payload messages. In any case, the company (dataAreId) must get specified to complete the messages for the shipment orders.
+When posting entities via [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md), you must ensure that either the user's default company matches the company to which the entity will be posted or that the company (`dataAreaId`) is specified in the request payload messages. Either way, the company (`dataAreId`) must be specified to complete shipment order messages.
 
-### Source systems example
+### Set up at least one source system
 
-Make sure a record is created in the **Source systems** page, this enables the full use of the capability.
+You must have at least one record listed on the **Source systems** page. This example scenario assumes you have a source system set up with **Source system** set to *ERP*.
 
-For this example, define *Source system* as ***ERP***.
+For more information, see [Configure you source systems](wms-only-mode-setup.md#source-systems).
 
-### <a name=”number-sequences”></a>Number sequences
+### <a name=”number-sequences”></a>Set up number sequences
 
-For the order import process, the [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders* must be defined when not using the same order numbers as the external system provides in Supply Chain Management WMS. In general, make sure to define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** which includes the following extra number sequences:
+For the order import process, [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders* must be defined if Supply Chain Management isn't using the same order numbers as the external system. 
+
+Go to **Warehouse management > Setup > Warehouse management parameters > Number sequences** and set up the following number sequences, if they aren't already set up:
 
 - Outbound shipment order
 - Inbound shipment order
@@ -69,7 +71,7 @@ For the order import process, the [number sequences](../../fin-ops-core/fin-ops/
 - Load line inventory pick
 
 > [!TIP]
-> You can quickly enable all number sequences by using the ***Generate*** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) page.
+> You can quickly enable all number sequences by selecting **Generate** option <!--KFM: On Action Pane? -->. For more information, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 ## Create shipment order messages
 
