@@ -80,13 +80,13 @@ For more information about how to work with electronic messaging and create your
 
 To import the data package that contains settings of electronic message functionality that enable the listed scenario in your Microsoft Dynamics 365 Finance follow these steps.
 
-1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **EM Denmark VAT package**. The downloaded file is named **EM Denmark VAT package.zip**.
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **DK VAT return - Skattestyrelsen EM package**. The downloaded file is named **DK VAT return - Skattestyrelsen EM package v\#.zip**.
 2. In Finance, in the **Data management** workspace, select **Import**.
 3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
 4. On the **Selected entities** FastTab, select **Add file**.
 5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
 6. Select **Close**.
-7. After the data entities are uploaded, on the Action Pane, select **Import**.
+7. After the data entities are uploaded, on the Action Pane, select **Import** or **Import all**.
 
     ![Import the data package that has example settings for electronic messages.](media/em-package-dk.png)
 
@@ -132,7 +132,7 @@ Follow these steps to limit access to the **DK VAT return** processing.
 
 ### Set up Tax registration number
 
-The **EM Denmark VAT package** setup file provides the **Tax registration number** additional field for **DK VAT return** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the **DK VAT return** EM processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+The **DK VAT return - Skattestyrelsen EM package** setup file provides the **Tax registration number** additional field for **DK VAT return** EM processing. This field enables a VAT registration number that is independent of the legal entity's primary address and registration ID to be defined for the company that must report VAT returns by using the **DK VAT return** EM processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
 
 Follow these steps to define the VAT registration number that the **DK VAT return** EM processing must use to submit VAT returns.
 
