@@ -21,7 +21,7 @@ ms.custom:
 
 This article describes how to install business performance analytics. The administrator who completed the configuration steps should sign in.    
 
-## Install the business performance analytics app
+## Install business performance analytics 
 
 Before installing business performance analytics, complete the following [steps](configure-bpa.md): 
 1. [Configure Microsoft Power Platform](configure-bpa.md#configure-microsoft-power-platform)
@@ -46,7 +46,7 @@ To install business performance analytics, follow these steps.
 
 To access reports in business performance analytics, follow these steps. 
 
-1. Go to the [Maker portal](https://make.preview.powerapps.com/)->  of environment where business performance analytics is installed.
+1. Go to the [Maker portal](https://make.preview.powerapps.com/) of environment where business performance analytics is installed.
 2. Select **Apps** to open business performance analytics.
 3. The available reports will be displayed. 
 4. For more information about setting up security, see [Set up security in business performance analytics](set-up-security.md).
