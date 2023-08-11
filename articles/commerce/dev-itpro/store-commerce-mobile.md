@@ -4,7 +4,7 @@
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg 
-ms.date: 05/03/2023
+ms.date: 08/10/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -91,6 +91,9 @@ To activate a device on a Store Commerce mobile app, follow these steps.
 For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 
 ## Feature parity with Store Commerce for Windows
+
+> [!IMPORTANT]
+> The Dynamics 365 Payment Connector for Adyen doesn't currently support Store Commerce for iOS with local network or cloud architecture configurations.
 
 The following table compares the capabilities of the Store Commerce app across Windows, Android, and iOS platforms.
 
