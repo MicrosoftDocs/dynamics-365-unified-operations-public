@@ -110,7 +110,7 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 ## Export customer electronic invoices
 
-### Send e-invoices
+### Generate e-invoices
 
 When an invoice is posted, you can generate an electronic invoice by selecting **Send** \> **Original** for the selected invoice.
 
