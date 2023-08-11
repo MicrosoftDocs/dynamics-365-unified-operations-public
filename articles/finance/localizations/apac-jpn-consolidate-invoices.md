@@ -64,20 +64,16 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 ## Qualified consolidated invoices
 The primary goal of this feature is to support consolidated monthly invoices for Japan as qualified invoices: changes are introduced in relation to the Qualified Invoice System (QIS) for Japan.
 
-For more information on the requirements of the Qualified Invoice System (QIS) for Japan, see ....
+For more information on the requirements of the Qualified Invoice System (QIS) for Japan, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
 
-The following are significant QIS requirements that impact consolidated invoices:
+To support the QIS requirements that impact consolidated invoices, the following capabilities have been introduced:
 
 - Calculate and round off Japan Consumption Tax (JCT) once per qualified invoice and tax rate.
 - Print the Qualified Invoice Issuer (QII) number of the company on a qualified invoice.
 - Print a total tax breakdown, including total invoice and total tax amounts per tax rate, on a qualified invoice.
 
-Consolidated/monthly invoicing is a widely accepted business practice in Japan, where businesses issue monthly invoices to their customers. A consolidated invoice summarizes all deliveries to a customer over a month and sets payment terms/dates. The customer then pays against the consolidated invoice.
-
-Dynamics 365 Finance has Japan-specific functionality to support this business practice. A consolidated invoice is a collection of customer invoices posted during a month. There is a printed form of a consolidated invoice, and it is possible to settle customer payments against consolidated invoices. Similar functionality also exists for the Account payable side.
-
 ### Assumptions
-According to legal and business practice perspectives, the following approach is wide-used in in Japan:
+According to legal and business practice perspectives, the following approach is wide-used in Japan:
 - Issue an (non-qualified) invoice for each delivery and then issue a consolidated/monthly invoice. Treat the consolidated/monthly invoice as a qualified invoice. This implies recalculation of taxes for the consolidated invoice and application of rounding to the total consolidated invoice tax amount per tax code, including posting tax adjustments. 
 - The common business practice is to use tax-exclusive pricing. 
 
@@ -89,7 +85,7 @@ The following are not covered by this system in Finance:
 - Tax-inclusive scenarios are not supported because the common business practice is to use tax-exclusive pricing. 
 - Only consolidation of sales invoices is supported. Free text invoices and project invoices cannot be consolidated.
 - Financial dimensions can only be populated from vendor/customer accounts.
-- Only accounting currency is supported.
+- Only company's accounting currency is supported.
 
 ### Scope
 The following changes have been introduced within the scope of this feature:
@@ -116,12 +112,12 @@ To set up this feature, follow these steps:
 1. Enable the “Enable tax adjustment on consolidated invoice for Japan” feature in Feature Management.
 1. Configure a registration type for QII registration for Japan and link it to the “Qualified Invoice Issuer” registration category.
 1. Add a QII registration number to the primary address of the legal entity that is in Japan.
-1. Set up sales tax codes for JCT, including separate sales tax codes for standard rate (10%) and reduced rate (8%), as well as separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers.
+1. Set up sales tax codes for JCT, including separate sales tax codes for standard rate and reduced rate, as well as separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers.
 1. Set up sales tax groups for JCT, one for qualified invoice issuers and another one for non-qualified invoice issuers.
-1. Set up item sales tax groups for JCT 10% and JCT 8%.
+1. Set up item sales tax groups for JCT standard and reduced rates.
 1. Specify sales tax groups on vendor master records, one vendor as QII, and another one as non-QII.
-1. Specify item sales tax groups for purchases and for sales on items: two for JCT 10% and another two for JCT 8%.
-1. Create charges codes for AP and AR with JCT 8%.
+1. Specify item sales tax groups for purchases and for sales on items: two for JCT standard rate and another two for JCT reduced rate.
+1. Create charges codes for Accounts Payable and Accounts Receivable with JCT standartd and reduced rates.
 1. Specify journal names to post consolidated tax adjustments.
 
 ### Scenarios
