@@ -66,7 +66,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Stocked product</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line.</li>
-<li>The <strong>Main account</strong> field when Purchase expenditure for product is selected on the <strong>Posting</strong> page.</li>
+<li>The <strong>Main account</strong> field when Purchase expenditure for product is selected on the <strong>Posting</strong> page under Cost management > Ledger integration policies setup > Posting > Purchase order.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
@@ -77,7 +77,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>A procurement category or a product that is not stocked</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</li>
-<li>The <strong>Main account</strong> field when Purchase expenditure for expense is selected on the <strong>Posting</strong> page.</li>
+<li>The <strong>Main account</strong> field when Purchase expenditure for expense is selected on the <strong>Posting</strong> page under Cost management > Ledger integration policies setup > Posting > Purchase order.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
