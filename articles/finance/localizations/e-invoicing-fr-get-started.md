@@ -151,6 +151,22 @@ You can enable Siret numbers and service code validation before you post and inv
 > [!NOTE]
 > To create a new submission report instead of customizing a default report, use the **DocumentSubmitted** model name and the **SubmittedInvoice** mapping name for the integration point.
 
+To obtain the latest processing details of invoice from Chorus pro into submission log, you must configure the response types in Finance.
+
+Follow these steps to complete the configuration.
+1. Go to Organization administration > Setup > Electronic document parameters.
+2. In the Electronic document section, add records for the Customer Invoice journal, Project invoice tables.
+3. For each table name, set the Document context and Electronic document model mapping fields in accordance with Set up [Electronic invoicing parameters](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-set-up-parameters#set-up-electronic-document-parameters)
+4. For the Customer Invoice journal table name, select Response types.
+5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+    a. In the Submission status field, select Pending.
+    b. In the Data entity name field, select Sales invoice Chorus Pro entity.
+    c. In the Model mapping field, select Chorus Pro invoice response data.
+6. Create another response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+    a. In the Submission status field, select Pending update actions execution.
+    b. In the Data entity name field, select Sales invoice Chorus Pro entity.
+    c. In the Model mapping field, select Chorus Pro invoice response data.
+
 ## Issue electronic invoices
 
 After you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
