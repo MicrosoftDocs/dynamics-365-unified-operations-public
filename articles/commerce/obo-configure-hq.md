@@ -18,7 +18,6 @@ ms.dyn365.ops.version: 10.0.33
 # Set up and configure on behalf of (OBO) functionality in headquarters
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 
