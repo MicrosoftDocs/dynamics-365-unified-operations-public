@@ -193,6 +193,10 @@ In Invoice capture, follow these steps to create a channel that will use a share
     additionalInfo:{<br>
     &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
     \}
+    
+## Assign legal entity on the channel
+
+Admin has the capability to designate distinct channels for various legal entities. By assigning the appropriate legal entity to the corresponding channel, the system will automatically determine the legal entity when the document is received via the channel. When the preprocessing is being applied within invoice capture, the legal entity value will be automatically assigned without applying additional derivation logic. Moreover, it's important to note that security control will not only be imposed on the captured invoice list but also on the list of received files.
 
 ## Deactivate and activate the channel
 
