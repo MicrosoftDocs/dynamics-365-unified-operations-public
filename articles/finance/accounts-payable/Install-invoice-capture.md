@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 07/19/2023
+ms.date: 08/14/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -52,7 +52,7 @@ Before you install Invoice capture, complete the following setup in Invoice capt
 
 1. In the **Synced legal entities** list, select the legal entities to onboard.
 
-   By default, the option 'Sync all vendors' will be enabled. This signifies that any changes or additions to vendors within onboarded legal entities will be synchronized from D365 F&O to Invoice Capture in real-time. However, manual initiation of vendor synchronization is necessary for each individual legal entity to avoid potential failure due to the virtual entity bottleneck with larger data volume.
+   By default, the option **Sync all vendors** is enabled. This option synchronizes any changes or additions to vendors within onboarded legal entities from Dynamics 365 finance and operations to Invoice capture in real-time. Manual vendor synchronization is needed for each individual legal entity to avoid potential failure due to a virtual entity bottleneck with larger data volume.
    
 3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
 4. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
