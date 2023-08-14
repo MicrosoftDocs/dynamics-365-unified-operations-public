@@ -92,6 +92,7 @@ If the **Use managed flow** option is set to **Yes**, the flow setting is enable
 
 - Outlook.com
 - Microsoft Outlook 365
+- Microsoft Outlook 365 Shared Mailbox
 - SharePoint
 - OneDrive
 - OneDrive for business
@@ -103,6 +104,7 @@ The following table describes the additional properties that the user must defin
 | Flow template | Property | Description |
 |---------------|----------|-------------|
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
+| **Microsoft Outlook 365 Shared Mailbox** | Mailbox address and Folder | The mailbox address is the Shared mailbox address. The default folder is **Inbox**. |
 | **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
 | | Library | The name of the SharePoint library. |
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
