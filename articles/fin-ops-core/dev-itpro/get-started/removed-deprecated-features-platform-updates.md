@@ -37,6 +37,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Feature deprecation effective January 2024
+
+### System Admin > Inquiries > User Log 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The **Inquiries** > **User Log** is a legacy page that was built for the older client/server architecture. The information on this page is not always accurate and can be misleading. |
+| **Replaced by another feature?**   | In Microsoft Dynamics 365 finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../lifecycle-services/user-logins.md). |
+| **Product areas affected**         | System Administration  |
+| **Deployment option**              | All |
+| **Status**                         | The User Log page will be removed by Jan 12 2024 (10.0.38/PU62) |
+
 ## Feature deprecation effective July 2023
 
 ### Non-Azure AD external user sign-in 
