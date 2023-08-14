@@ -4,7 +4,7 @@
 title: Manage channels in the Invoice capture solution
 description: This article provides information about how to manage channels in the Invoice capture solution.
 author: sunfzam
-ms.date: 07/12/2023
+ms.date: 08/12/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -92,7 +92,7 @@ If the **Use managed flow** option is set to **Yes**, the flow setting is enable
 
 - Outlook.com
 - Microsoft Outlook 365
-- Microsoft Outlook 365 Shared Mailbox
+- Microsoft Outlook 365 shared mailbox
 - SharePoint
 - OneDrive
 - OneDrive for business
@@ -104,7 +104,7 @@ The following table describes the additional properties that the user must defin
 | Flow template | Property | Description |
 |---------------|----------|-------------|
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
-| **Microsoft Outlook 365 Shared Mailbox** | Mailbox address and Folder | The mailbox address is the Shared mailbox address. The default folder is **Inbox**. |
+| **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address and the default folder is **Inbox**. |
 | **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
 | | Library | The name of the SharePoint library. |
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
@@ -196,7 +196,7 @@ In Invoice capture, follow these steps to create a channel that will use a share
     
 ## Assign legal entity on the channel
 
-Admin has the capability to designate distinct channels for various legal entities. By assigning the appropriate legal entity to the corresponding channel, the system will automatically determine the legal entity when the document is received via the channel. When the preprocessing is being applied within invoice capture, the legal entity value will be automatically assigned without applying additional derivation logic. Moreover, it's important to note that security control will not only be imposed on the captured invoice list but also on the list of received files.
+Administrators can designate distinct channels for various legal entities. By assigning the appropriate legal entity to the corresponding channel, the legal entity is automatically determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control isn't applied to the lists of captured invoices and received files.
 
 ## Deactivate and activate the channel
 
