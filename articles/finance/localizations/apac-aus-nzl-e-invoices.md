@@ -1,8 +1,8 @@
 ---
 title: Customer electronic invoices in Australia and New Zealand
-description: This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
+description: This article explains how to get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 07/18/2023
+ms.date: 08/14/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -11,7 +11,7 @@ ms.reviewer: kfend
 ms.search.region: Australia, New Zealand
 ms.author: ilikond
 ms.search.validFrom: 2022-11-03
-ms.dyn365.ops.version: AX 10.0.37
+ms.dyn365.ops.version: AX 10.0.36
 ms.custom: 574542
 ms.assetid: 
 ms.search.form: 
@@ -25,8 +25,10 @@ This article provides information about how to configure and issue customer elec
 
 ## Prerequisites
 
-1. The primary address of the legal entity must be in Australia or in New Zealand.
-2. Make sure that the latest versions of the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+Before you complete the tasks in this article, the following prerequisites must be met. 
+
+- The primary address of the legal entity must be in Australia or in New Zealand.
+- The latest versions of the following Electronic reporting (ER) format configurations must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Peppol Sales Invoice AU-NZ
     - Peppol Sales Credit Note AU-NZ
@@ -34,7 +36,7 @@ This article provides information about how to configure and issue customer elec
     - Peppol Project Credit Note AU-NZ
 
 > [!NOTE]
-> These formats are based on the respective **Peppol** format configurations which are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
+> The ER formats are based on the respective **Peppol** format configurations which are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
 ## Configure parameters
 
@@ -52,31 +54,30 @@ This article provides information about how to configure and issue customer elec
 
 ### Configure legal entity data
 
-Go to **Organization administration** \> **Organizations** \> **Legal entities**, select a legal entity, and configure the following parameters.
-
-1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
-2. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. 
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities** and select a legal entity.
+2. On the **Addresses** FastTab, add a valid primary address for the legal entity.
+3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity. 
 
 ### Configure customer data
 
-Go to **Accounts receivable** \> **Customers** \> **All customers**, select a customer, and configure the following parameters.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers** and select a customer.
+2. On the **Addresses** FastTab, add a valid address for the customer.
+3. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
+4. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+5. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if necessary.
+6. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
 
-1. On the **Addresses** FastTab, add a valid address for the customer.
-2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-3. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-4. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if necessary.
-5. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
-    > [!NOTE]
+   > [!NOTE]
     > All available contact persons must already be defined for this customer.
 
 ### Units of measure configuration
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit ID in the list, and then select **External codes**.
+2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
+4. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
     > [!NOTE]
-    > For the scenarios where no specific units of measure are assumed the default value **EA** (each) will be used.
+    > For the scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
 
 ### Sales tax codes configuration
 
@@ -127,13 +128,13 @@ To inquire about the XML files of electronic invoices that have been generated, 
 
 3. Select **Open** to download the file that contains the electronic invoice.
 
-If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error message.
+If generating the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
 
 ![Message details.](media/emea-nor-ger-einvoice-log.jpg)
 
 ### Send e-invoices to ER destinations
 
-You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices will automatically be sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
+You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices are automatically sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
 
 For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
