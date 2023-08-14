@@ -25,6 +25,8 @@ By using a flexible data inquiry process, workers can easily look up the require
 
 For example, in the purchase order receiving flow, a purchase order number is required to match arriving inventory. As part of this process, you can easily configure menu items to provide a card list view of the relevant purchase order numbers. In this way, you can continue the receiving flow by using a quick point-to-select approach. This article provides example scenarios, but the functionality can also be used within any or all your Warehouse Management mobile app flows.
 
+One of the examples below will use the _work user session query range utility tool_ by filtering the current worker warehouse, but besides filtering on a warehouse Id this tool as well supports for filtering data for the current warehouse worker _(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWorkUserId())_ and as well enabling the option to show the results immediately without user confirmation of the filter.
+
 ## Turn on the data inquiry flow feature and its prerequisites
 
 Before you can use the functionality that is described in this article, you must complete the following procedure to turn on the required features.
@@ -54,10 +56,12 @@ Before you can use the functionality that is described in this article, you must
 
 ## Example scenarios
 
-This article uses example scenarios to show how you can use the *Warehouse management app data inquiry flow* feature to improve the purchase receipt flow. The scenarios use the standard sample data, which includes a flow that is named *Purchase receive*. This flow starts by prompting workers to identify a purchase order number that they will receive against. To help workers more easily identify the purchase order, you will enhance the first page of the flow by adding the following new query options as [detours](warehouse-app-detours.md):
+This article uses example scenarios to show how you can use the *Warehouse management app data inquiry flow* feature to improve the purchase receipt flow. The scenarios use the standard sample data, which includes a flow that is named *Purchase receive*.
+
+ This flow starts by prompting workers to identify a purchase order number that they will receive against. To help workers more easily identify the purchase order, you will enhance the first page of the flow by adding the following new query options as [detours](warehouse-app-detours.md):
 
 - **Look up POs by vendor** – Open a page that prompts workers to enter a vendor name or part of a vendor name. Wildcard characters can be used. For example, if a worker is expecting an inbound delivery today from a vendor that includes *Tailspin* in its name, they can enter **Tail\*** to view a set of cards for open purchase orders that include this text. Every card has several fields that provide information about each purchase order. In addition to the vendor's name, you can design the cards so that they show the vendor account number, delivery date, and document status.
-- **Look up POs for today** – Open a page that doesn't prompt workers to enter data but instead shows preconfigured filters (such as today's date). The page then shows a set of cards that match the filter. Workers proceed by selecting a card for the purchase order that they want to register inventory items against.
+- **Look up POs for today** – Open a page that doesn't prompt workers to enter data, but shows a set of cards that match the 'hardcoded' filter. Workers proceed by selecting a card for the purchase order that they want to register inventory items against. This process will be enabled with the option **Show filter page** as _Only when filters can be changed_ and thereby the user will be shown the results immediately.
 - **Look up POs by item** – Open a page that prompts workers to scan the bar code of any item in the arrived inventory. The flow then lists all open purchase orders that contain lines for the scanned item number. To cover situations where a bar code can't be read, you can add another detour lookup to this page that lets workers search for item numbers within a specific purchase order.
 
 In each case, the worker identifies a purchase order by selecting a card and is then returned to the first page, which shows the selected purchase order number. The worker can then continue the inbound inventory item registration flow.
@@ -87,6 +91,7 @@ Create the **Look up POs by vendor** menu item by following these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *PurchTable* (You want to look up purchase order numbers from this table.)
+    - **Show filter page:** *Only when filters can be changed* (Filter will be shown here due to the _Vendor name_.)
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the purchase orders table).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
@@ -96,6 +101,9 @@ Create the **Look up POs by vendor** menu item by following these steps.
     | Purchase orders | Purchase orders | Purchase order status | Open order |
     | Purchase orders | Purchase orders | Delivery date | (dayRange(-10,10)) |
     | Purchase orders | Purchase orders | Vendor name | |
+
+> [!TIP]
+> In this example the filtering does not include any warehouse criteria and will thereby include open purchase orders for all warehouses within the current legal entity. You can include the _Warehouse_ field as part of the query to limit the search results for the current work user session warehouse by inserting **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** into the criteria. Note that this as well will work for joined tables like for example the _Inventory dimensions_.
 
 1. Select **OK**.
 
@@ -134,14 +142,19 @@ Create the **Look up POs for today** menu item by following these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *PurchTable* (You want to look up purchase order numbers from this table.)
+    - **Show filter page:** *Only when filters can be changed* (Show results immediately.)
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the purchase orders table).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
 
     | Table | Derived table | Field | Criteria |
     |---|---|---|---|
-    | Purchase order | Purchase order | Purchase order status | Open order |
-    | Purchase order | Purchase order | Delivery date | (Day(0)) |
+    | Purchase order | Purchase order | Purchase order status  | Open order |
+    | Purchase order | Purchase order | Confirmed receipt date | (Day(0))   |
+    | Purchase order | Purchase order | Warehouse              | (WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse()) |
+
+> [!NOTE]
+> In this example the filtering includes the _Warehouse_ field as part of the query to limit the search results. Keeping the _Criteria_ value empty for the _Warehouse_ will result in auto filling of the current worker warehouse and allowing the user to update the value as part of the filter display. By inserting criteria **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** the application will automatically display the result without filter confirmation.
 
 1. Select **OK**.
 
@@ -179,6 +192,7 @@ Create the **Look up POs by item** menu item by following these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *PurchLine* (You want to look up purchase order numbers based on item number via the line data.)
+    - **Show filter page:** *Only when filters can be changed* (Filter will be shown here due to the _Item number_.)
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the purchase order lines table, but you can use any of the values that are related to the header by joining to the *PurchTable*).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
@@ -188,6 +202,9 @@ Create the **Look up POs by item** menu item by following these steps.
     | Purchase order lines | Purchase order lines | Line status | Open order |
     | Purchase order lines | Purchase order lines | Delivery date | (dayRange(-10,10)) |
     | Purchase order lines | Purchase order lines | Item number | |
+
+> [!TIP]
+> In this example the filtering does not include any warehouse criteria and will thereby include open purchase order lines for all warehouses within the current legal entity. You can join to the _Inventory dimensions_ table and include the _Warehouse_ field as part of the query to limit the search results for the current work user session warehouse by inserting **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** into the criteria.
 
 1. Select **OK**.
 
