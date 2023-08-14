@@ -159,13 +159,13 @@ Follow these steps to complete the configuration.
 3. For each table name, set the Document context and Electronic document model mapping fields in accordance with Set up [Electronic invoicing parameters](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/e-invoicing-set-up-parameters#set-up-electronic-document-parameters)
 4. For the Customer Invoice journal table name, select Response types.
 5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
-    a. In the Submission status field, select Pending.
-    b. In the Data entity name field, select Sales invoice Chorus Pro entity.
-    c. In the Model mapping field, select Chorus Pro invoice response data.
-6. Create another response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
-    a. In the Submission status field, select Pending update actions execution.
-    b. In the Data entity name field, select Sales invoice Chorus Pro entity.
-    c. In the Model mapping field, select Chorus Pro invoice response data.
+    1. In the Submission status field, select Pending.
+    2. In the Data entity name field, select Sales invoice Chorus Pro entity.
+    3. In the Model mapping field, select Chorus Pro invoice response data.
+7. Create another response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+    1. In the Submission status field, select Pending update actions execution.
+    2. In the Data entity name field, select Sales invoice Chorus Pro entity.
+    3. In the Model mapping field, select Chorus Pro invoice response data.
 
 ## Issue electronic invoices
 
