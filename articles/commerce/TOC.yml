@@ -3056,8 +3056,6 @@
             href: dev-itpro/pos-app-signing-certificate.md
           - name: Set up POS hybrid app on Android and iOS
             href: dev-itpro/hybridapp.md
-          - name: Create and apply branding to the Retail Experience app
-            href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
       items:
       - name: Store Commerce
