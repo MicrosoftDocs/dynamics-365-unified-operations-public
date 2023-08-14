@@ -59,7 +59,7 @@ For more information, see [Extensible data security policies](extensible-data-se
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 
 ## Auditing user logins
-A system administrator or security administrator can access the user logins logs. For more information, see [https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/user-logins)
+A system administrator or security administrator can access the user logins logs. For more information, see [../lifecycle-services/user-logins.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
