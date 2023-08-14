@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 33
 This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
@@ -43,7 +43,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The **Inquiries** > **User Log** is a legacy page that was built for the older client/server architecture. The information on this page is not always accurate and can be misleading. |
+| **Reason for deprecation/removal** | The **Inquiries** > **User Log** is a legacy page that was built for the older client/server architecture. The information on this page isn't always accurate and can be misleading. |
 | **Replaced by another feature?**   | In Microsoft Dynamics 365 finance and operations apps, this information is captured in telemetry and Lifecycle Services has details. For more information, see [Track user sign-ins](../lifecycle-services/user-logins.md). |
 | **Product areas affected**         | System Administration  |
 | **Deployment option**              | All |
@@ -55,7 +55,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. For more information, see [Security alert: common or tenanted passthrough tokens alert](/identity/microsoft-identity-platform/first-party-alert/passthrough?branch=main/). |
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. For more information, see [Security alert: common or tenanted passthrough tokens alert](https://review.learn.microsoft.com/identity/microsoft-identity-platform/first-party-alert/passthrough?branch=main). |
 | **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We will share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -112,7 +112,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating the finance and operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
+| **Reason for deprecation/removal** | We're deprecating the finance and operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
 | **Replaced by another feature?**   | Yes, mobile experiences over finance and operations app data can be built with Power Platform integration. See the [blog post](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) and [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -162,7 +162,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
+| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This won't require any manual intervention.|
 | **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
@@ -172,7 +172,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This won't require any manual intervention. |
 | **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
@@ -232,7 +232,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention.|
+| **Reason for deprecation/removal** | All activities and monitoring will be performed internally, by the platform, through automation. This won't require any manual intervention.|
 | **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL reports: Current DTU, Current DTU Details, Get Lock Details, List of Current Plan Guide, Get List of Query ID’s, Get the SQL query plan for a given Plan ID, Get query plans and execution status, Get throttle config, Get wait stats, List most expensive queries |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
@@ -242,7 +242,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This will not require any manual intervention. |
+| **Reason for deprecation/removal** | We're deprecating some SQL actions in LCS. All activities and monitoring will be performed internally, by the platform, through automation. This won't require any manual intervention. |
 | **Replaced by another feature?**   | Yes, there's now an automated system, which renders these capabilities obsolete. |
 | **Product areas affected**         | SQL actions: Create a plan guide to force Plan ID, Create a plan guide to add table hints, Remove Plan guide, Disable/Enable page locks and lock escalation, Update statistics on a table, Rebuild Index, Create Index |
 | **Deployment option**              | Cloud deployment: Affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
@@ -285,7 +285,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools will not install on Visual Studio 2015. There is no impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Status**                         | Deprecated: Upon updating, the previous X++ tools will be removed from Visual Studio 2015, and the updated tools won't install on Visual Studio 2015. There isn't an impact on hosted builds. For build virtual machines, the build pipeline (build definition) needs to be manually updated to change the dependency from MSBuild 14.0 (Visual Studio 2015) to MSBuild 15.0 (Visual Studio 2017) as described in [Update a legacy pipeline in Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### User avatar 
 
@@ -326,7 +326,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Metadata hotfixes are no longer supported with the [One Version](../../fin-ops/get-started/one-version.md) service updates that were introduced in July 2018 with version 8.1. |
-| **Replaced by another feature?**   | Individual metadata hotfixes are not available for supported versions. Cumulative quality updates are applied instead. |
+| **Replaced by another feature?**   | Individual metadata hotfixes aren't available for supported versions. Cumulative quality updates are applied instead. |
 | **Product areas affected**         | Visual Studio add-ins |
 | **Deployment option**              | Development virtual machines |
 | **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
@@ -338,7 +338,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page is not always accurate, which can be confusing and misleading. |
+| **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page isn't always accurate, which can be confusing and misleading. |
 | **Replaced by another feature?**   | We will provide a new page in a future update.|
 | **Product areas affected**         | System Administration |
 | **Deployment option**              | All |
@@ -421,7 +421,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | Visual Studio 2017 will replace Visual Studio 2015 as the deployed and required version. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Virtual machines deployed on version 10.0.13 (Platform update 37) or later contain Visual Studio 2017. Version 10.0.16 (Platform update 40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 will not be able to update to version 10.0.17 (Platform update 41). |
+| **Status**                         | Virtual machines deployed on version 10.0.13 (Platform update 37) or later contain Visual Studio 2017. Version 10.0.16 (Platform update 40) is the final release with support for Visual Studio 2015. Virtual machines with only Visual Studio 2015 won't be able to update to version 10.0.17 (Platform update 41). |
 
 ### Field groups containing invalid field references
 
@@ -459,7 +459,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Navigation URLs embedded in documents rendered by the service may contain sensitive business data. We are removing support for embedded drill-through links in documents as a security precaution to further protect customer's data. Users will also benefit from improved performance while interactively producing documents as a result of this change.  |
+| **Reason for deprecation/removal** | Navigation URLs embedded in documents rendered by the service may contain sensitive business data. We're removing support for embedded drill-through links in documents as a security precaution to further protect customer's data. Users will also benefit from improved performance while interactively producing documents as a result of this change.  |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Reporting |
 | **Deployment option**              | All |
