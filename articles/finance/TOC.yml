@@ -1920,6 +1920,8 @@
             href: localizations/tasks/set-up-reason-codes-australia-bas.md
           - name: Payment times reporting schema
             href: localizations/apac-aus-payment-times-report.md
+          - name: Customer electronic invoices
+            href: localizations/apac-aus-nzl-e-invoices.md
         - name: Austria
           items:
           - name: Austria overview
@@ -3450,6 +3452,8 @@
           items: 
           - name: GST declaration form GST101A for New Zealand (NZ-00003)
             href: localizations/apac-nzl-gst-declaration.md
+          - name: Customer electronic invoices 
+            href: localizations/apac-aus-nzl-e-invoices.md
         - name: Norway
           items:
           - name: Norway overview
