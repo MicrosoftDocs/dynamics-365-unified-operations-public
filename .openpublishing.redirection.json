@@ -16,7 +16,12 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/fin-ops-core/dev-itpro/gdpr",
+      "source_path": "articles//dev-itpro/create-retail-experience-app",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/store-commerce",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy",
       "redirect_document_id": "false"
     },
