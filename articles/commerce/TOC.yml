@@ -1466,7 +1466,7 @@
           href: obo-create-aad-application.md
         - name: Create and modify B2B pages for on behalf of functionality (OBO)
           href: obo-add-pages-site-builder.md
-        - name: Set up and configure on behalf of functionality (OBO)
+        - name: Set up and configure on behalf of functionality (OBO) in headquarters
           href: obo-configure-hq.md
     - name: Monitoring and analysis
       items:

@@ -29,7 +29,7 @@ The following setup needs to be completed for data to display in **Vendor paymen
 2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
 3. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
 4. Define exchange rates between transaction currencies and accounting currency, and accounting currency and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-5. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasureV2** aggregate measurement.
+5. Go to **System administration > Setup > Entity Store** to refresh the latest version of **Vendor payment measure** aggregate measurement. For example, **Vendor payment measure V3** as of August 2023.
 
 ## My work view
 
