@@ -51,8 +51,11 @@ After the **Invoice capture for Dynamics 365 Finance** feature is enabled, users
 Before you install Invoice capture, complete the following setup in Invoice capture.
 
 1. In the **Synced legal entities** list, select the legal entities to onboard.
-2. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
-3. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
+
+   By default, the option 'Sync all vendors' will be enabled. This signifies that any changes or additions to vendors within onboarded legal entities will be synchronized from D365 F&O to Invoice Capture in real-time. However, manual initiation of vendor synchronization is necessary for each individual legal entity to avoid potential failure due to the virtual entity bottleneck with larger data volume.
+   
+3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
+4. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
     In the current version, the following options are available.
 
