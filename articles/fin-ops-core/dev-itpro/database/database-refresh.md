@@ -60,6 +60,7 @@ The information in this section lists certain elements of the database that aren
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * All users except the admin will be set to **Disabled** status.
+* Dimension log and cache status tables including DIMENSIONHASHMESSAGELOG, DIMENSIONDATAINTEGRITYLOG, DIMENSIONVALUERENAMEAUDIT, DIMENSIONVALUEDELETEAUDIT, DIMENSIONATTRIBUTEVALUECOMBINATIONSTATUS, DIMENSIONATTRIBUTEVALUEGROUPSTATUS, DIMENSIONDATAENTITYSFKCACHE, DIMENSIONREFERENCES. 
 
 #### When refreshing from sandbox environment to production environment
 This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
