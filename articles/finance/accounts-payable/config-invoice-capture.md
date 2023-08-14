@@ -43,7 +43,7 @@ After the Invoice capture solution is installed, default configurations for usin
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
 4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
-6. **Auto invoice cleanup** - Select this option if you want to enable the daily job to automatically clean up the transferred invoices and voided invoices longer than 180 days.
+6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices longer than 180 days every day.
 
 ## Manage file filters (optional)
 
