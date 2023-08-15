@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 07/19/2023
+ms.date: 08/15/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
