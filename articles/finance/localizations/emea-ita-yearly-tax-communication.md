@@ -500,7 +500,7 @@ The following table provides an example of the structure of the yearly VAT decla
 </tr>
 <tr>
 <td>
-<p>Section 1 - Total amount of purchases carried out in the national territory of intracommunity purchases and imports</p>
+<p>Section 1 - Total amount of purchases carried out in the national/regional territory of intracommunity purchases and imports</p>
 </td>
 <td>
 <p>VF001001-VF022001</p>

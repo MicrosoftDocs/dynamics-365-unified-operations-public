@@ -23,7 +23,7 @@ This article gives an overview of CF-e (Cupom Fiscal eletrônico) fiscal documen
 
 A CF-e is an electronic fiscal document that is generated to register the sale of goods to a customer in São Paulo state. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
 
-Commerce functionality for Brazil supports the CF-e model 59 format for Brazilian retailers. The CF-e model 59 format is a standard for retail electronic fiscal documents within the borders of São Paulo state, together with the national standard NFC-e (Nota Fiscal do Consumidor eletrônica) model 65 format. For more information about the NCF-e format, see [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md).
+Commerce functionality for Brazil supports the CF-e model 59 format for Brazilian retailers. The CF-e model 59 format is a standard for retail electronic fiscal documents within the borders of São Paulo state, together with the national/regional standard NFC-e (Nota Fiscal do Consumidor eletrônica) model 65 format. For more information about the NCF-e format, see [NFC-e fiscal document functionality in Commerce POS for Brazil](latam-bra-nfce.md).
 
 Registration of electronic fiscal documents for retail sales in an integrated SAT device is one of the fiscal registration methods that are available to retailers in São Paulo state. This feature includes the generation of CF-e electronic fiscal documents (CF-e model 59 format) for sales transactions in POS and registration of the electronic fiscal documents in a SAT fiscal device. For more information, see [About SAT](https://portal.fazenda.sp.gov.br/servicos/sat).
 
