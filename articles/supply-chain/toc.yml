@@ -3719,10 +3719,10 @@
             href: warehousing/mhax.md
       - name: The Warehouse Management mobile app
         items:
+        - name: What's new or changed in the Warehouse Management mobile app
+          href: warehousing/whats-new-wma.md
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in the Warehouse Management mobile app
-            href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Mass deploy the Warehouse Management mobile app
