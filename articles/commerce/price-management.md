@@ -98,7 +98,7 @@ However, the pricing priority feature lets the retailer create a pricing priorit
 
 Let's look at an example where store prices override other prices.
 
-A national retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
+A national/regional retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
 
 For this example, we will drill into the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
 
