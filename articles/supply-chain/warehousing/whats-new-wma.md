@@ -21,19 +21,17 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## Version 2.1.14.0
 
-### New fixes and improvements in version 2.1.14.0
-
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
 
--	Increased stability.
--	Fixed an issue that prevented text from being pasted into the Work list page search bar when running on Microsoft Windows.
--	Fixed an issue that caused the Work list page to sort data incorrectly for some cultures.
--	Fixed an issue that caused the default page design to switch to a custom design when a button wasn't placed as the last control.
--	Fixed an issue that caused the app to focus on the wrong page element, thereby opening a details page and preventing further scanning.
--	Fixed an issue that affected the way submit buttons work when certain accessibility features were enabled.
--	Fixed an issue that prevented connections from being removed.
--	Added telemetry that enables the app to log failures to connect to AppInsights.
--	Improved localization for some languages.
+- Increased stability.
+- Fixed an issue that prevented text from being pasted into the **Work list** page search bar when running on Microsoft Windows.
+- Fixed an issue that caused the **Work list** page to sort data incorrectly for some cultures.
+- Fixed an issue that caused the default page design to switch to a custom design when a button wasn't placed as the last control.
+- Fixed an issue that caused the app to focus on the wrong page element, thereby opening a details page and preventing further scanning.
+- Fixed an issue that affected the way submit buttons work when certain accessibility features were enabled.
+- Fixed an issue that prevented connections from being removed.
+- Added [telemetry](application-insights-monitor-usage-performance.md) that enables the app to log failures to connect to Application Insights.
+- Improved localization for some languages.
 
 ## Version 2.1.12.0
 
