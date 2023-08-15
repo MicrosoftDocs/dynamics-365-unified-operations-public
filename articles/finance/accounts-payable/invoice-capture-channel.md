@@ -132,13 +132,13 @@ The flow is generated based on the selected template and preset required paramet
 
 Various errors can appear:
 
-- "Generate flow failed."
+- "Generate flow failed"
 
     **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
 
     **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
-- "Turn on flow failed."
+- "Turn on flow failed"
 
     **Cause:** There are multiple reasons why a flow might fail when it's turned on:
 
@@ -196,7 +196,7 @@ In Invoice capture, follow these steps to create a channel that will use a share
     
 ## Assign legal entity on the channel
 
-Administrators can designate distinct channels for various legal entities. By assigning the appropriate legal entity to the corresponding channel, the legal entity is automatically determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control isn't applied to the lists of captured invoices and received files.
+Administrators can designate distinct channels for various legal entities. After assigning the appropriate legal entity to the corresponding channel, the legal entity will be determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control isn't applied to the lists of captured invoices and received files.
 
 ## Deactivate and activate the channel
 
