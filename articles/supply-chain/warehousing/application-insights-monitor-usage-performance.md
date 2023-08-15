@@ -149,15 +149,15 @@ The following table lists the telemetry data that can be logged as custom dimens
 | `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 | 2.0.28 |
 | `serverAadTenantId` | The Azure AD tenant ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
 | `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
-| `lastKnownWMSLocation` | The last WMSLocation captured in the mobile app flows. | 10.0.29 | 2.1.14 |
+| `lastKnownWMSLocation` | The last WMS location captured in the mobile app flows. | 10.0.29 | 2.1.14 |
 | `networkConnectionProfiles` | Information about the type of connection the device is using. | 10.0.29 | 2.1.14 |
-| `networkAccess` | Information about states of the connection to the internet. | 10.0.29 | 2.1.14 |
+| `networkAccess` | Information about the state of the internet connection. | 10.0.29 | 2.1.14 |
 | `wifiSignalStrength` | Information about Wi-Fi signal strength, if applied. | 10.0.29 | 2.1.14 |
 | `requestNextPageTimeInMilliseconds` | Information about the total time taken to request the next page from the server. | 10.0.29 | 2.1.14 |
-| `serverInvokeErrorMessage` | Contains the exception message when a generic exception is thrown. | 10.0.29 | 2.1.14 |
-| `serviceInvokeExceptionCategory` | Contains information about the type of an exception thrown by the server. | 10.0.29 | 2.1.14 |
+| `serverInvokeErrorMessage` | The exception message when a generic exception is thrown. | 10.0.29 | 2.1.14 |
+| `serviceInvokeExceptionCategory` | Information about the type of an exception thrown by the server. | 10.0.29 | 2.1.14 |
 | `numberOfRetries` | The number of times the mobile app tried to request the next page after an exception occurred. | 10.0.29 | 2.1.14 |
-| `connectionType` | The type of authentication connection used. | 10.0.29 | 2.1.14 |
+| `connectionType` | Information about the type of authentication connection used. | 10.0.29 | 2.1.14 |
 
 ## View telemetry data in Application Insights
 
