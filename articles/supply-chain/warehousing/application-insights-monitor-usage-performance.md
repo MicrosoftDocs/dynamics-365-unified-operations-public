@@ -154,10 +154,10 @@ The following table lists the telemetry data that can be logged as custom dimens
 | `networkAccess` | Information about states of the connection to the internet. | 10.0.29 | 2.1.14 |
 | `wifiSignalStrength` | Information about Wi-Fi signal strength, if applied. | 10.0.29 | 2.1.14 |
 | `requestNextPageTimeInMilliseconds` | Information about the total time taken to request the next page from the server. | 10.0.29 | 2.1.14 |
-| `serverInvokeErrorMessage` | Contains the exception message when a generic exception is thrown.  | 10.0.29 | 2.1.14 |
-| `serviceInvokeExceptionCategory` | Contains information about the type of an exception thrown by the server.  | 10.0.29 | 2.1.14 |
-| `numberOfRetries` | The number of times the mobile app tried to request the next page after an exception occurred.  | 10.0.29 | 2.1.14 |
-| `connectionType` | Describe the used type of authentication connection type.  | 10.0.29 | 2.1.14 |
+| `serverInvokeErrorMessage` | Contains the exception message when a generic exception is thrown. | 10.0.29 | 2.1.14 |
+| `serviceInvokeExceptionCategory` | Contains information about the type of an exception thrown by the server. | 10.0.29 | 2.1.14 |
+| `numberOfRetries` | The number of times the mobile app tried to request the next page after an exception occurred. | 10.0.29 | 2.1.14 |
+| `connectionType` | The type of authentication connection used. | 10.0.29 | 2.1.14 |
 
 ## View telemetry data in Application Insights
 
