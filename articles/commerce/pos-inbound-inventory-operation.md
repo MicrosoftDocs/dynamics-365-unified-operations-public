@@ -165,7 +165,7 @@ When asynchronous document processing is used, the receipt is submitted through 
 
 Users can create new purchase order requests from POS. To use this feature, ensure the **Ability to create purchase order request in POS** feature is enabled in the **Feature management** workspace, and the **Allow create purchase order** permission setting is enabled in the user's POS permission group.
 
-To start the creation process, in the document list view, on the action pane, select **Create new**. In the dialog box, select **New purchase order**, then select a vendor from which you want the purchase order to be shipped. You can search for a specific vendor by entering the vendor account ID or vendor name. Your current store will always be the **Ship to** warehouse for the to-be-created purchase order, and this location can't be modified. Specify the **Accounting date** and **Delivery date** as needed. You can also add a note that will be stored together with the purchase order header as an attachment to the document in headquarters.
+To start the creation process, in the document list view, on the action pane, select **Create new**. In the dialog box that appears, select **New purchase order**, then select a vendor from which you want the purchase order to be shipped. You can search for a specific vendor by entering the vendor account ID or vendor name. Your current store will always be the **Ship to** warehouse for the to-be-created purchase order, and this location can't be modified. Specify the **Accounting date** and **Delivery date** as needed. You can also add a note that will be stored together with the purchase order header as an attachment to the document in headquarters.
 
 > [!NOTE]
 > - You can't create purchase orders from POS if the purchase order [change management workflow](/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in headquarters. In that case, the purchase orders can only be created in headquarters and must go through the approval workflow.
@@ -181,9 +181,9 @@ From POS, users can also confirm purchase order requests to indicate commitment 
 
 ## Create inbound transfer orders
 
-From POS, users can create new transfer order documents. To begin the process, in the document list view, click **Create new** on the app bar, in the prompted dialog, select **New transfer order**, and then select a **Transfer from** warehouse or store that will provide the inventory to your store location. The values are limited to the selection that is defined in the configuration of the store's fulfillment group. In an inbound transfer request, your current store will always be the **Transfer to** warehouse for the transfer order. That value can't be changed.
+Users can create new inbound transfer order documents from POS. To start the process, in the document list view, on the action pane, select **Create new**. In the dialog box that appears, select **New transfer order**, and then select a **Transfer from** warehouse or store that will provide the inventory to your store location. The **Transfer from** values are limited to the selection that is defined in the configuration of the store's fulfillment group. In an inbound transfer request, your current store will always be the **Transfer to** warehouse for the transfer order. The **Transfer to** value can't be changed.
 
-You can enter values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as you require. You can also add a note that will be stored together with the transfer order header, as an attachment to the document in headquarters.
+Enter values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. You can also add a note that will be stored together with the transfer order header, as an attachment to the document in headquarters.
 
 After the header information is created, you can add products to the transfer order. To start the process of adding items and requested quantities, select **Add product**. In the **Details** pane, you can also add a line-specific note to the journal lines. These notes will be stored as a line attachment.
 
