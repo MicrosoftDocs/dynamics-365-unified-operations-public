@@ -61,14 +61,14 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 | INV003         | May 18, 2012 | June 10, 2012     | July 31, 2012 |
 | INV004         | June 8, 2012 | June 10, 2012     | July 31, 2012 |
 
-## Qualified consolidated invoices
+## Tax adjustment on consolidated invoice
 The primary goal of this feature is to support consolidated monthly invoices for Japan as qualified invoices: changes are introduced in relation to the Qualified Invoice System (QIS) for Japan.
 
-For more information on the requirements of the Qualified Invoice System (QIS) for Japan, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
+For more information on the Qualified Invoice System (QIS) for Japan, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
 
 To support the QIS requirements that impact consolidated invoices, the following capabilities have been introduced:
 
-- Calculate and round off Japan Consumption Tax (JCT) once per qualified invoice and tax rate.
+- Adjust (calculate and round off) Japan Consumption Tax (JCT) once per qualified invoice and tax rate.
 - Print the Qualified Invoice Issuer (QII) number of the company on a qualified invoice.
 - Print a total tax breakdown, including total invoice and total tax amounts per tax rate, on a qualified invoice.
 
@@ -99,7 +99,7 @@ The following changes have been introduced within the scope of this feature:
 + Add Reverse operation to reverse posted tax adjustments per sales tax code.
 
 2. Consolidated tax calculation (both Accounts Receivable and Accounts Payable): 
-+ Sum up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice. 
++ Consolidated consumption tax is calculated and adjusted on the consolidated invoice level in Accounts payable and Accounts receivable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
 + Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
 
 Vendor invoices posted via vendor invoice journal are not supported in the vendor consolidated invoice functionality and will not be included in this feature.
@@ -112,18 +112,21 @@ To set up this feature, follow these steps:
 1. Enable the “Enable tax adjustment on consolidated invoice for Japan” feature in Feature Management.
 1. Configure a registration type for QII registration for Japan and link it to the “Qualified Invoice Issuer” registration category.
 1. Add a QII registration number to the primary address of the legal entity that is in Japan.
-1. Set up non-deductible tax expense account in ledger posting group.
-1. Set up sales tax codes for JCT, including separate sales tax codes for standard rate and reduced rate, as well as separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers.
-1. Configure transitional periods for purchase tax credit for purchases from non-qualified invoice issuers using non-deductible percentage in sales tax code values.
 > [!NOTE]
-> All sales tax codes must have corresponding Tax type, Origin = Percentage of net amount, Marginal base = Net amount of invoice balance, Calculation method = Whole amount, Rounding precision = 1.00, Rounding method = Normal, Print = Print code, Print code = \<JCT rate\>%
-
+> For more information, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
+1. Go to Tax > Setup > Sales tax > Ledger posting groups and configure **Nondeductible tax expense** account to post consolidated tax adjustments.
+1. Set up sales tax codes for JCT:
+- Add separate sales tax codes for standard and reduced rates
+- Add separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers. The sales tax codes for purchases from qualified invoice issuers can also be used for sales.
+> [!NOTE]
+> All sales tax codes must have appropriate **Tax type**, **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**, **Rounding precision = 1.00**, **Rounding method = Normal**, **Print = Print code**, **Print code = \<JCT rate\>%**.
+1. Configure transitional periods for purchase tax credit for purchases from non-qualified invoice issuers using non-deductible percentage in sales tax code values.
 1. Set up sales tax groups for JCT, one for qualified invoice issuers and another one for non-qualified invoice issuers.
 1. Set up item sales tax groups for JCT standard and reduced rates.
-1. Specify sales tax groups on vendor master records, one vendor as QII, and another one as non-QII.
 1. Specify the sales tax group for qualified invoice issuers on customer maser records. Specify Prices include sales tax = No for the customer.
+1. Specify sales tax groups on vendor master records, one vendor as QII, and another one as non-QII.
 1. Specify item sales tax groups for purchases and for sales on items: two for JCT standard rate and another two for JCT reduced rate.
-1. Create charges codes for Accounts Payable and Accounts Receivable with JCT standartd and reduced rates.
+1. Create charges codes for Accounts Receivable and Accounts Payable with JCT standartd and reduced rates.
 1. Specify journal names to post consolidated tax adjustments.
 
 ### Scenarios
