@@ -83,16 +83,15 @@ The following are not covered by this system in Finance:
 - Only specific sales tax calculation parameters are supported.
 - Sales tax code parameters do not change during the invoicing period.
 - Tax-inclusive scenarios are not supported because the common business practice is to use tax-exclusive pricing. 
-- Only consolidation of sales invoices is supported. Free text invoices and project invoices cannot be consolidated.
+- Only consolidation of sales and ourchase invoices is supported. Free text invoices and project invoices cannot be consolidated.
 - Financial dimensions can only be populated from vendor/customer accounts.
 - Only company's accounting currency is supported.
 
 ### Scope
 The following changes have been introduced within the scope of this feature:
 1. Consolidated invoice creation and processing (both Accounts Receivable and Accounts Payable): 
-
-+ Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices. 
-+ Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
+    * Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices.
+    + Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
 + Allow manual adjustment of the calculated consolidated tax (Accounts Payable only). 
 + Add Post operation to post the tax adjustment per sales tax code. 
 + Print consolidated invoice (Accounts Receivable only). 
@@ -119,7 +118,7 @@ To set up this feature, follow these steps:
 - Add separate sales tax codes for standard and reduced rates
 - Add separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers. The sales tax codes for purchases from qualified invoice issuers can also be used for sales.
 > [!NOTE]
-> All sales tax codes must have appropriate **Tax type**, **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**, **Rounding precision = 1.00**, **Rounding method = Normal**, **Print = Print code**, **Print code = \<JCT rate\>%**.
+> Specific sales tax calculation parameters should be configured as follows. All sales tax codes must have appropriate **Tax type**, **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**, **Rounding precision = 1.00**, **Rounding method = Normal**, **Print = Print code**, **Print code = \<JCT rate\>%**.
 1. Configure transitional periods for purchase tax credit for purchases from non-qualified invoice issuers using non-deductible percentage in sales tax code values.
 1. Set up sales tax groups for JCT, one for qualified invoice issuers and another one for non-qualified invoice issuers.
 1. Set up item sales tax groups for JCT standard and reduced rates.
