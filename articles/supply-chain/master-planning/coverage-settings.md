@@ -49,6 +49,19 @@ Each replenishment method is assigned one of the following coverage codes:
 - **Priority** – A strategy that allows you to replenish buffers for a product according to its minimum, reorder point, and maximum stock quantities. Whenever the projected on-hand inventory falls below the reorder point quantity, it will be replenished to its maximum quantity. For replenishing, priority (not date) is considered, which ensures that the most urgent orders are replenished first. For more information, see [Priority-based planning](planning-optimization/priority-based-planning.md).
 - **Decoupling point** – The coverage code that identifies a product as a decoupling point (buffer) according to the Demand Driven Material Requirements Planning (DDMRP) methodology. DDMRP is a specific planning and execution methodology. To specify that a product is a decoupling point, open its **Item coverage** page and, under **Use specific settings**, set **Coverage code** to a coverage group that has coverage code of *Decoupling point*. For more information about the DDMRP methodology, see [Demand Driven Material Requirements Planning (DDMRP) overview](planning-optimization/ddmrp-overview.md).
 
+## Use required BOM/formula version and/or route
+
+If your business is make-to-order, you can setup your coverage group to use the required BOM/formula version and/or route that you specify in the demand, for example in the sales order line.
+If you do not specify the BOM/formula version/route, the active will be closen when creating supply (a planned production order) for it. 
+
+To set that the specified BOM or formula version must be used when creating a planned production order for fulfilling a demand, set the parameter **Use the specified BOM or formula version to Yes**. 
+To set that the specified route must be used when creating a planned production order for fulfilling a demand, set the parameter **Use specified route** to Yes. 
+
+Note, a planned production order will always be created for the specified BOM/formula version/route if the parameter has been set to yes, even if there is existing supply (on-hand or a production order with the same or other BOM/formula version/route). 
+
+From release 10.0.38, a new feature **Prioritize existing supply over required BOM or formula version or route** is introduced. 
+This new functionality is applicable when the Use the specified BOM or formula version or route is set to Yes. A new parameter is introduced in the coverage group to indicate if existing supply (e.g. on-hand) should be prioritized over the required BOM/route. When setting this parameter to Yes if existing supply (e.g. on-hand) should be used for fulfilling the item demand if available. Set to No if the a planned production order for the specified BOM/route should be created to supply the item, even if there is available existing supply.
+
 ## Additional resources
 
 - [Master plans overview](master-plans.md)
