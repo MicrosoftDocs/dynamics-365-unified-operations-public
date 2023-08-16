@@ -1,8 +1,8 @@
 ---
 title: Archive tax transactions data
 description: This article describes how to archive tax transactions data. In this way, you help improve database performance but also keep the records available for historical reporting, auditing, machine learning, legal claims, and other purposes.
-author: epodkolz
-ms.author: epodkolz
+author: epodkolzina
+ms.author: epodkolzina
 ms.reviewer:
 ms.search.form: ArchiveWorkspace, ProcessScheduleSeriesWizard, TimelineDialog, ArchiveMessageLogDialog, ArchiveReversalDialog, TaxTransHistory
 ms.topic:
@@ -55,7 +55,7 @@ To schedule archiving of tax transactions, follow these steps.
 6.	On the **Tax archive automation parameters** you can see a list of record collections that are ready for archiving. 
 
 > [!NOTE]
-> Tax archive automation utilizes the same conditions of data readiness for archiving as described in [Archive general ledger data](archive-general-ledger.md#archival-requirements), [Archival requirements](#archival-requirements). 
+> Tax archive automation utilizes the same conditions of data readiness for archiving as described in [Archive general ledger data](archive-general-ledger.md#archival-requirements). 
 
 7.	Select the record collection that you want to archive, and then select **Finish**.
    
