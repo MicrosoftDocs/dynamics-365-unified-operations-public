@@ -58,10 +58,34 @@ If you want to automatically release outbound shipment orders to the warehouse, 
 
 For more information about the release to warehouse process, see [Release to warehouse](release-to-warehouse-process.md).
 
-## Set up master data and business events
+## <a name=”number-sequences”></a>Set up number sequences
 
-<!-- KFM: Add a short summary about setting up sync of master/product data. Refer to data topic. -->
+If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences**, which includes the following extra number sequences:
+
+- Outbound shipment order
+- Inbound shipment order
+- Shipment packing slip
+- Shipment receipt
+- Warehouse outbound notification ID
+- Load line inventory pick
+
+> [!TIP]
+> You can quickly enable all number sequences by using the **Generate** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) page.
 
 ## Set up mobile device menu items
 
-<!-- KFM: Explain what is needed to set up the required mobile device menu items for receiving inventory (list processes) -->
+To enable warehouse workers to use the Warehouse Management mobile app to register inbound shipment transactions, you must set up one or more mobile device menu items that use one following [processes](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) (each of which requires an inbound load): <!--KFM: Should we call these processes or flows? -->
+
+- *License plate receiving (and put away)*
+- *Load item receiving (and put away)*
+- *Mixed license plate receiving (and put away)* (for source document line identification method **Load item receiving**)
+- *Inbound shipment order line receiving* (when assigned to loads)
+- *Inbound shipment item receiving* (when assigned to loads)
+- *Inbound shipment order line receiving (and put away)* (when assigned to loads)
+- *Inbound shipment order item receiving (and put away)* (when assigned to loads)
+
+For more information, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+
+## Set up master data and business events
+
+To enable Supply Chain Management to exchange meaningful information with an external system, some master and reference data must be synchronized between the two system (such as released products, item model groups, and countries/regions). You must also set up business events to manage the exchange of information between the two systems. For details about this, see [Exchange data between systems](wms-only-mode-exchange-data.md).

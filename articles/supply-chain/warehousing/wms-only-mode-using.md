@@ -21,54 +21,81 @@ ms.custom: bap-template
 
 ## Monitor the integration
 
-The **Warehouse management > Workspaces > Warehouse integration monitoring** page provides an overview of the warehouse integration messages and an easy way to navigate to the related areas, for example to the [**System administration > Message processor > Message processor messages**](warehouse-message-processor-messages.md) page.
+To monitor the integration between the external systems and Supply Chain Management, go to **Warehouse management > Workspaces > Warehouse integration monitoring** page. From here, you can do the following:
+
+- Get an overview of integration messages
+- Navigate to pages with related information and functionality, such as the [Message processor messages](warehouse-message-processor-messages.md) page.
 
 ## <a name="inbound-shipment-orders"></a>Review inbound shipment orders
 
-**Warehouse management > Inquiries and reports > Inbound shipment orders** are documents that represent information about the expected product receipts. The **Inbound shipment orders** page contains an ‘internal Supply Chain Management warehouse representation' of the available shipment orders in a **Header** and **Lines** view. For each of the lines, you can view detailed information about the **Receiving status**, **inventory transactions**, and any associated **warehouse work**. The **Receiving status** gets as well maintained on the order header and can be used to follow the inbound progress of the orders. The following **Receiving status** values are available:
+To review your inbound shipment orders, go to **Warehouse management > Inquiries and reports > Inbound shipment orders**. The documents listed here provide information about the expected product receipts. The **Inbound shipment orders** page provides a **Header** and **Lines** view of the available shipment orders as seen from Supply Chain Management. For each of the lines, you can view detailed information about the **Receiving status**, **Inventory transactions**, and associated **Warehouse work**. You can also view and edit the **Receiving status** on the order header and use it to follow the inbound progress of the orders. 
 
-- *Open* – No quantities has been **Receiving completed**
-- *Partially received* – Partly quantities has been **Receiving completed**
-- *Received* – All quantities has been **Receiving completed**
+The following **Receiving status** values are available:
 
-If you're already familiar with Supply Chain Management, you might find this document comparable with a minimal purchase order document. No financial postings as part of the [**General ledger**](../../finance/general-ledger/general-ledger.md) will be used for this source document.
+- *Open* – No quantities have been fully received.
+- *Partially received* – Some, but not all, quantities have been fully received.
+- *Received* – All quantities have been fully received.
+
+If you're already familiar with Supply Chain Management, you might recognize this document as being similar to a simplified purchase order. However, inbound shipment orders won't make any financial postings for the [general ledger](../../finance/general-ledger/general-ledger.md).
 
 > [!WARNING]
 > On the *Inbound shipment order lines* you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities. Make sure to have the proper user role security privilege assigned for this process, because this will (like the messages editing) allow for potential inconsistencies between the external systems and Supply Chain Management.
 
 > [!NOTE]
-> The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
+> The internal inbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
 
 ## Review outbound shipment orders
 
-**Warehouse management > Inquiries and reports > Outbound shipment orders** are documents that represent information about the requested product dispatch. The **Outbound shipment orders** page contains an ‘internal Supply Chain Management warehouse representation' of the available shipment orders in a **Header** and **Lines** view. For each of the lines, you can view detailed information about **Release status**, **Shipment status**, **inventory transactions**, and any associated **warehouse work**. The **Release status** and **Shipment status** gets as well maintained on the order header and can be used to follow the outbound progress of the orders. The following states are available for the **Release status**:
+To view documents with information about products requested for dispatch, go to **Warehouse management > Inquiries and reports > Outbound shipment orders**. The **Outbound shipment orders** page provides a **Header** and **Lines** view of the available shipment orders as seen from Supply Chain Management. For each of the lines, you can view detailed information about **Release status**, **Shipment status**, **Inventory transactions**, and associated **Warehouse work**. You can also view and edit the **Release status** and **Shipment status** on the order header and use it to follow the outbound progress of the orders.
 
-- *Open* – No quantities has been [released to warehouse](release-to-warehouse-process.md)
-- *Partially released* – Partly quantities has been [released to warehouse](release-to-warehouse-process.md)
-- *Released* – All quantities has been [released to warehouse](release-to-warehouse-process.md)
+The following **Release status** values are available:
 
-And the following states are available for the **Shipment status**:
+- *Open* – No quantities have been [released to warehouse](release-to-warehouse-process.md).
+- *Partially released* – Some, but not all, quantities have been [released to warehouse](release-to-warehouse-process.md).
+- *Released* – All quantities have been [released to warehouse](release-to-warehouse-process.md).
 
-- *Open* – No quantities has been shipped confirmed
-- *Partially shipped* – Partly quantities has been shipped confirmed
-- *Shipped* – All quantities has been shipped confirmed
+The following **Shipment status** values are available:
+
+- *Open* – No quantities have been shipped confirmed.
+- *Partially shipped* – Some, but not all, quantities have been shipped confirmed.
+- *Shipped* – All quantities have been shipped confirmed.
 
 > [!NOTE]
 > The internal outbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
 
-If you're already familiar with Supply Chain Management, you might find this document comparable with a minimal sales order document having some of the same **Reservation** and [**Release to warehouse**](release-to-warehouse-process.md) processes. As part of the [**Source systems**](#source-systems) definitions, you can trigger the reservation as part of the document import and even define to reject a shipment order that can't be partly or fully reserved.
+If you're already familiar with Supply Chain Management, you might recognize this document as being similar to a simplified sales order that uses some of the same reservation and [release to warehouse](release-to-warehouse-process.md) processes. Use the [Source systems](wms-only-mode-setup.md#source-systems) settings to control whether to trigger reservations automatically when importing documents and/or to automatically reject shipment orders that can't be partly or fully reserved.
 
-In the first release of the **Warehouse management only mode**, the outbound shipment order lines don't provide out-of-the-box support for getting associated with loads before the [**Release to warehouse**](release-to-warehouse-process.md) process. This association can only occur as part of the processing of the warehouse waving.
+In the current release, outbound shipment order lines don't provide out-of-the-box support for being associated with loads before they are [released to warehouse](release-to-warehouse-process.md). This association can only occur during the warehouse waving process.
 
 > [!WARNING]
-> On the *Outbound shipment order lines* you can use the option **Update line > Delivery remainder** to update expected order line transaction quantities.
-> Make sure to have the proper user role security privilege assigned for this process, because this will (like the messages editing) allow for potential inconsistencies between the external systems and Supply Chain Management.
+> On outbound shipment order lines, you can use the **Update line > Delivery remainder** option to update expected order line transaction quantities. Make sure that you have the proper user role security privilege assigned for this process, because (as with message editing) this allows for potential inconsistencies between the external systems and Supply Chain Management. <!--KFM: Clarify this sentence. What are the "proper user roles". It this the right terminology? How does "this" allow for inconsistencies? I generally don't get it. -->
+
+## Inbound process
+
+The following illustration highlights the various elements of the inbound process.
+
+:::image type="content" source="media/wms-only-inbound-wom-process.svg" alt-text="Warehouse management only mode inbound process." lightbox="media/wms-only-inbound-wom-process.svg":::
+
+Here's a high-level description of the inbound process:
+
+1. An external system submits an *inbound shipment order* message to Supply Chian Management.
+1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. Inbound loads are created in one of three ways (as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management):
+    - Manually, using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
+    - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
+    - Automatically during [message processing](../supply-chain-dev/message-processor.md)
+1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
+1. Supply Chian Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
+1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
+1. Supply Chian Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ## <a name="receiving-completed"></a>Receiving completed
 
-The *Receiving completed* process updates the load status to *Received* and generates [**Shipment receipts**](#shipment-receipts) which trigger a **Business event** for the external systems.
+The *receiving completed* process updates the load status to *Received* and generates [shipment receipts](#shipment-receipts), which trigger a business event for the external systems.
 
-You can trigger the **Receiving completed** manually from the load in the web client and/or via the **Receiving completed confirmation** *Warehouse management mobile app* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
+You can trigger the receiving completed process manually from the load using either the web client or the Warehouse Management mobile app
+
+and/or via the **Receiving completed confirmation** *Warehouse Management mobile app* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 
 Depending on the setting **Capture receiving completed packing slip**, as part of the **Warehouse management parameters - Loads** section, it's possible to capture a *packing slip ID* and a *date* for each of the shipments associated to the inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
 
@@ -93,6 +120,29 @@ You can see all the *Background processes* running as part of the [**System admi
 
 > [!WARNING]
 > If you are enabling the Warehouse management only mode capability and already are running a periodic *Update product receipts* batch job for loads associated with purchase orders, you probably need to update the query for the batch job to exclude the inventory transaction updates for the *inbound shipment orders*. You can do this by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the *Reference* field with *Criteria* = Inbound shipment order.
+
+## Outbound process
+
+The following illustration highlights the various elements of the outbound process.
+
+:::image type="content" source="media/wms-only-outbound-wom-process.svg" alt-text="Warehouse management only mode outbound process." lightbox="media/wms-only-outbound-wom-process.svg":::
+
+Here's a high-level description of the outbound process:
+
+1. An external system submits an *outbound shipment order* messages.
+1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. Inventory reservations are created in one of two ways (as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management):
+    - Automatically, by the [message processor](../supply-chain-dev/message-processor.md)
+    - Manually, as part of the release process
+1. The orders is released for further warehouse processing, either manually or automatically (by running the *Automatic release of outbound shipment orders* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)).
+1. Depending on how your [wave template](wave-templates.md) definitions are set up, warehouse work may be created and released immediately.
+1. The outbound warehouse work is processed and the status of the related outbound shipment order line transactions are updated *Picked*.
+1. The loads are outbound ship confirmed, which results in *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) being created for the external system.
+1. The external system reads the shipment packing slip and uses its data for further processing (such as for sales order invoicing for sales orders that are associated with outbound shipment orders).
+1. Supply Chian Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
+> [!NOTE]
+> You'll be able to reverse the shipment confirmation until the related outbound shipment order line transactions is finalized, but not thereafter.
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
