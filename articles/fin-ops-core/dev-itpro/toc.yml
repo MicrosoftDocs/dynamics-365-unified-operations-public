@@ -303,6 +303,8 @@ items:
           href: sysadmin/archive-sales-orders.md
         - name: Move inventory transactions history to long-term data retention
           href: sysadmin/archive-inventory-purge.md
+        - name: Archive tax transactions
+          href: sysadmin/archive-tax-transactions.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
