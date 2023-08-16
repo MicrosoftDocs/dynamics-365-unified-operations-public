@@ -253,6 +253,9 @@ You must reinstall the LocalAgent in the following situations:
 
 ## Update your current deployment configuration
 
+> [!NOTE]
+> This is only necessary with local agent 3.2.2 and older. If you are using local agent 3.2.3 or later, you can skip this step.
+
 Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job may fail. This manual update must be done just this one time.
 
 1. Open the configuration file 'config.json' on your agent file share. This will be in a share similar to the following: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the orchestrator database.
