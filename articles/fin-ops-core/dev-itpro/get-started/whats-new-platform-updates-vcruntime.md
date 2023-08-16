@@ -1,6 +1,6 @@
 ---
-title: New VC++ runtime requirements for Cloud-Hosted Environments running versions 10.0.36 or later
-description: This article lists new prerequisite requirements for Cloud-Hosted Environments running versions 10.0.36 or later.
+title: New VC++ runtime requirement for cloud-hosted environments running version 10.0.36 or later
+description: This article describes the new prerequisite for cloud-hosted environments that run version 10.0.36 or later.
 author: mnordick
 ms.date: 08/11/2023
 ms.topic: conceptual
@@ -13,26 +13,29 @@ ms.custom: bap-template
 
 ---
 
-#  New VC++ runtime requirement for Cloud-Hosted Environments running versions 10.0.36+
+#  New VC++ runtime requirement for cloud-hosted environments running version 10.0.36 or later
 
 [!include [banner](../includes/banner.md)]
 
-This article lists new prerequisite requirements for Cloud-Hosted Environments (CHEs) running versions 10.0.36 or later.
+This article describes the new prerequisite for cloud-hosted environments that run version 10.0.36 or later.
 
-## Update Cloud-Hosted Environments to the latest VC++ runtime.
+## Update cloud-hosted environments to the latest VC++ runtime
 
-Developer Cloud-Hosted Environments, also known as Onebox environments, as of version 10.0.36 requires an updated VC++ runtime installed as a prerequisite for new service updates. All newly deployed environments automatically have this new prerequisite installed, but existing environments require manual installation. To download the new runtime, see [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
+As of version 10.0.36, an updated Microsoft Visual C++ (VC++) runtime must be installed in developer cloud-hosted environments (also known as Onebox environments) as a prerequisite for new service updates. This new runtime is automatically installed in all newly deployed environments. However, existing environments require manual installation. To download the new runtime, go to [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
 
 > [!IMPORTANT]
-> After installing the new VC++ runtime, you must perform a machine reboot prior to applying the service update. This is required for the service update to install successfully.
+> After you install the new VC++ runtime, you must restart the machine before you apply the service update. Otherwise, the service update isn't successfully installed.
 
 ## Frequently asked questions
 
-### Can I update the VC++ runtime on Cloud-Hosted Environments currently running versions prior to 10.0.36?
-Yes. The new VC++ runtime can be safely applied to any pre-existing environment not yet running 10.0.36. It's recommended to apply the update prior to applying the 10.0.36 or greater service update.
+### Can I update the VC++ runtime in cloud-hosted environments that currently run versions earlier than 10.0.36?
 
-### Do I need to install this component for every new Cloud-Hosted Environment that I provision?
-No. All newly provisioned environments have the updated VC++ runtime installed by default.
+Yes. You can safely apply the new VC++ runtime to any pre-existing environment that doesn't yet run version 10.0.36. We recommend that you apply the update before you apply the version 10.0.36 or later service update.
 
-### Are any other actions necessary after the VC++ runtime update is installed?
-Yes. The virtual machine requires a reboot to take effect.
+### Do I have to install this component for every new cloud-hosted environment that I provision?
+
+No. By default, the updated VC++ runtime is installed in all newly provisioned environments.
+
+### Are any other actions required after the VC++ runtime update is installed?
+
+Yes. You must restart the virtual machine before the update takes effect.
