@@ -16,7 +16,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
@@ -62,7 +62,7 @@ This article explains how to update the local agent. The latest version of the l
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
 
 ## What's new in local agent 3.2.3
-- This version fixes a bug where the topology.xml was being cached and not updated from LCS.
+- This version fixes a bug where the topology.xml was being cached and not updated from Lifecycle Services.
 - Removes the need to update the config.json after a certificate rotation.
 - Enforces an encrypted communication between the local agent and the SQL database.
 
