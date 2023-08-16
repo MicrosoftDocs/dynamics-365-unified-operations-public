@@ -21,7 +21,7 @@ This article describes the new prerequisite for cloud-hosted environments that r
 
 ## Update cloud-hosted environments to the latest VC++ runtime
 
-As of version 10.0.36, an updated Microsoft Visual C++ (VC++) runtime must be installed in developer cloud-hosted environments (also known as Onebox environments) as a prerequisite for new service updates. This new runtime is automatically installed in all newly deployed environments. However, existing environments require manual installation. To download the new runtime, go to [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
+As of version 10.0.36, an updated Microsoft Visual C++ (VC++) runtime must be installed in developer cloud-hosted environments (also known as OneBox environments) as a prerequisite for new service updates. This new runtime is automatically installed in all newly deployed environments. However, existing environments require manual installation. To download the new runtime, go to [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
 
 > [!IMPORTANT]
 > After you install the new VC++ runtime, you must restart the machine before you apply the service update. Otherwise, the service update isn't successfully installed.
