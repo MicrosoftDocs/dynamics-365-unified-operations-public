@@ -4,7 +4,7 @@
 title: Certificate rotation
 description: This article explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: faix
-ms.date: 01/11/2023
+ms.date: 08/16/2023
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
@@ -31,12 +31,12 @@ search.app:
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this article, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this article, you learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!WARNING]
 > The certificate rotation process should be initiated well before the certificates expire. This is very important for the Data Encryption certificate, which could cause data loss for encrypted fields. For more information, see [After certificate rotation](#aftercertrotation). 
 > 
-> Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
+> Old certificates must remain in place until the certificate rotation process is complete, removing them in advance causes the rotation process to fail.
 >
 > The certificate rotation process should not be carried out on Service Fabric clusters running 7.0.x and 7.1.x. 
 >
@@ -72,7 +72,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     After you've generated the certificates, run the following command.
 
     ```powershell
-    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    # Exports certificates into a directory VMs\<VMName>. All certs are written to the infrastructure\Certs folder.
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
@@ -85,7 +85,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
         ```
 
-    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they will automatically copy the content to the target VMs), and then run the following script. Perform this step as an administrator.
+    2. Copy the contents of each `infrastructure\VMs<VMName>` folder into the corresponding VM (if remoting scripts are used, they automatically copy the content to the target VMs), and then run the following script. Perform this step as an administrator.
 
         ```powershell
         # If remoting, only execute
@@ -111,7 +111,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-1. Run the following PowerShell command so that you have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu41.md#deploy).
+1. Run the following PowerShell command so that you have values that can be used in Lifecycle Services later. For more information, see [Deploy your on-premises environment from Lifecycle Services](setup-deploy-on-premises-pu41.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -125,7 +125,7 @@ To make the certificate rotation process easier, Microsoft highly recommends tha
 
 #### Service Fabric with certificates that aren't expired
 
-No further action is required on the Service Fabric cluster. Service Fabric will automatically detect the new certificates. You should proceed with [Update the LocalAgent certificates](#update-the-localagent-certificates). 
+No further action is required on the Service Fabric cluster. Service Fabric automatically detects the new certificates. You should proceed with [Update the LocalAgent certificates](#update-the-localagent-certificates). 
 
 If you've changed the certificate common name, you must upgrade your Service Fabric cluster configuration.
 
@@ -146,9 +146,9 @@ If you've changed the certificate common name, you must upgrade your Service Fab
 
 #### Service Fabric with certificates that are expired
 
-If your cluster is not available after 10 minutes from when you finished provisioning the new certificates to all of the nodes, consider restarting the nodes where the Service Fabric service is not started.
+If your cluster is not available after 10 minutes from when you finished provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service is not started.
 
-If you have changed the certificate common name (subject name), then the Service Fabric cluster will not start up. If you can't generate new certificates with the previous common name, you will need to cleanup and recreate the cluster.
+If you have changed the certificate common name (subject name), then the Service Fabric cluster won't start up. If you can't generate new certificates with the previous common name, you need to cleanup and recreate the cluster.
 
 #### Service Fabric with restricted certificate issuers
 
@@ -237,7 +237,7 @@ You must reinstall the LocalAgent in the following situations:
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Follow the steps in [Configure LCS connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
+1. Follow the steps in [Configure Lifecycle Services connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
 
     > [!NOTE] 
     > If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
@@ -249,7 +249,7 @@ You must reinstall the LocalAgent in the following situations:
     - Tenant service principle certificate thumbprint
 
     > [!IMPORTANT]
-    > Do **not** create a new connector in LCS. Update the configuration of your existing connector and download the settings file again.
+    > Do **not** create a new connector in Lifecycle Services. Update the configuration of your existing connector and download the settings file again.
 
 ## Update your current deployment configuration
 
@@ -258,14 +258,14 @@ You must reinstall the LocalAgent in the following situations:
 
 Because you've updated your certificates, the configuration file that is present in your environment is outdated and must be manually updated. Otherwise, the clean-up job may fail. This manual update must be done just this one time.
 
-1. Open the configuration file 'config.json' on your agent file share. This will be in a share similar to the following: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the orchestrator database.
+1. Open the configuration file 'config.json' on your agent file share. This is in a share similar to the following: \\\\fileserver\agent\wp\environmentID\StandaloneSetup-123456. You can find the location of this file by running the following SQL statement on the orchestrator database.
 
     ```sql
     select Location from DeploymentInstanceArtifact where AssetId='config.json' and DeploymentInstanceId = 'LCSENVIRONMENTID'
     ```
 
     > [!NOTE]
-    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in LCS (this is the GUID value associated with your environment).
+    > Replace **LCSENVIRONMENTID** with the ID of your environment. You can obtain this ID from the page for your environment in Lifecycle Services (this is the GUID value associated with your environment).
 
     The beginning of the file should resemble the following example.
 
@@ -324,14 +324,14 @@ Alternatively, if you also want to rotate the existing credentials, follow these
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Encrypt
     ```
 
-## Update deployment settings in LCS
+## Update deployment settings in Lifecycle Services
 
 > [!NOTE]
 > The Client, Data Signing, and Encipherment certificates will only be replaced.
 >
 > Before you continue, you need to make a backup of the local Dynamics database.
 
-1. In LCS, select the "Full Details" link for the environment where you want to change the certificates.
+1. In Lifecycle Services, select the "Full Details" link for the environment where you want to change the certificates.
 
 2. Select **Maintain** and then select **Update Settings**.
 
@@ -345,15 +345,15 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 4. Select **Prepare**.
 
-5. After downloading and preparation is complete, the **Update environment** button will display.
+5. After downloading and preparation is complete, the **Update environment** button displays.
 
     ![Update environment button.](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. Select **Update environment** to start updating your environment.
 
-7. During the update, the environment will be unavailable.
+7. During the update, the environment is unavailable.
 
-8. After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer. The names of the thumbprints in Service Fabric Explorer might differ from the names in LCS. However, the values should be the same.
+8. After the environment is successfully updated with the new certificates, you can view the new thumbprints in Service Fabric Cluster Explorer. The names of the thumbprints in Service Fabric Explorer might differ from the names in Lifecycle Services. However, the values should be the same.
 
     Here is an example of how the name of the same thumbprint might differ.
 
@@ -385,7 +385,7 @@ This procedure should be completed after a successful certificate rotation or be
 
 This certificate is used to encrypt data that is stored in the database. By default, specific fields are encrypted by using this certificate. You can check those fields in [Document the values of encrypted fields](../database/dbmovement-scenario-goldenconfig.md#document-the-values-of-encrypted-fields). However, you can use our API to encrypt other fields as you require. 
 
-In Platform update 33 and later, the **Encrypted data rotation system job** batch job uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job will run for two hours each day until all the data has been re-encrypted. To enable the batch job, you must enable a flight and a configuration key. Run the following commands against your business database (for example, AXDB).
+In Platform update 33 and later, the **Encrypted data rotation system job** batch job uses the newly rotated certificate to re-encrypt data. This batch job crawls through your data to re-encrypt all the encrypted data by using the new certificate. The job runs for two hours each day until all the data has been re-encrypted. To enable the batch job, you must enable a flight and a configuration key. Run the following commands against your business database (for example, AXDB).
 
 ```sql
 IF (EXISTS(SELECT * FROM SYSFLIGHTING WHERE [FLIGHTNAME] = 'EnableEncryptedDataCrawlerRotationTask'))
@@ -399,7 +399,7 @@ ELSE
     INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-After the commands have been run, restart your AOS nodes from Service Fabric Explorer. AOS will detect the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
+After the commands have been run, restart your AOS nodes from Service Fabric Explorer. AOS detects the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
 > Make sure that the old data encryption certificate isn't removed before all encrypted data has been re-encrypted, and that it hasn't expired. Otherwise, data might be lost.
@@ -413,7 +413,7 @@ After you generate the updated Service Fabric cluster configuration, run the fol
 Connect-ServiceFabricCluster
 
 # Get path of ClusterConfig.json for following command
-# Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you will receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
+# Note that after running the following command, you need to manually cancel using the red button (Stop Operation) in Windows PowerShell ISE or Ctrl+C in Windows PowerShell. Otherwise, you receive the following notification, "Start-ServiceFabricClusterConfigurationUpgrade : Operation timed out.". Be aware that the upgrade will proceed.
 Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath ClusterConfig.json
 
 # If you are using a single Microsoft SQL Server Reporting Services node, use UpgradeReplicaSetCheckTimeout to skip PreUpgradeSafetyCheck check, otherwise it will timeout
@@ -433,7 +433,7 @@ Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
 
 ## <a name="appendix-b"></a>Appendix B
 
-Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration will ease future certificate rotation operations as the Service Fabric cluster will automatically switch to using new certificates once they are available in the machine. Service Fabric will not accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
+Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they are available in the machine. Service Fabric won't accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
 
 1. Run the following script to generate an updated cluster configuration file.
 
