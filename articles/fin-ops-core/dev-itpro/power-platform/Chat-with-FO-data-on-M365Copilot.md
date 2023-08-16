@@ -34,12 +34,17 @@ With a M365 copilot license, an authorized user can enter into a natural languag
 Data residing inside tables are referred as structured data. Data present in a static document like word, pdf, publicly available contents etc. are referred as unstructured data. M365 Copilot supports data inquiry against both structured and unstructured data. However, for this release the F&O scope is limited to structured data only.
 
 ## What are the supported customer scenarios?
-Finance scenario - <embed the recording>
-Supply Chain scenario - <embed the recording>
+Finance scenario 
+
+![Inquire collection status on M365 Copilot](media/Inquire-collection-status.mp4)
+
+Supply Chain scenario
+
+![Inquire onhand inventory on M365 Copilot](media/Inquire-onhand-inventory.mp4)
 
 ## What is happening behind the scenes?
 User question is translated into a FetchXML query and executed against F&O database through virtual entities. The results are summarized and responded to the user. Here is the architecture that works behind the scenes.
-<include the detailed architecture diagram>
+![Structured data access architecture](media/FO-StructuredData-Architecture.png)
 
 ## Are we limited to the supported scenarios?
 No, we are not limited to the above supported scenarios. Think of these scenarios as patterns which M365 Copilot can process. All F&O entities which follow these pattern can be enabled for copilot as they are supported by virtual entities.  Here is the list of entities eligible for virtualization - <include link to santhosh's spreadsheet list>
