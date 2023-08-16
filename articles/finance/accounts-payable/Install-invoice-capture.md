@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 07/19/2023
+ms.date: 08/14/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -51,8 +51,11 @@ After the **Invoice capture for Dynamics 365 Finance** feature is enabled, users
 Before you install Invoice capture, complete the following setup in Invoice capture.
 
 1. In the **Synced legal entities** list, select the legal entities to onboard.
-2. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
-3. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
+
+   By default, the option **Sync all vendors** is enabled. This option synchronizes any changes or additions to vendors within onboarded legal entities from Dynamics 365 finance and operations to Invoice capture in real-time. Manual vendor synchronization is needed for each individual legal entity to avoid potential failure due to a virtual entity bottleneck with larger data volume.
+   
+3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
+4. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
     In the current version, the following options are available.
 
@@ -96,11 +99,11 @@ If you must delete the Invoice capture solution, follow these steps.
 
     1. Dynamics 365 Invoice capture - FNO Integration
     2. Dynamics 365 Invoice capture - Application
-    3. Dynamics 365 Invoice capture Solution Anchor
+    3. Dynamics 365 Invoice capture Solution anchor
     4. Dynamics 365 Invoice capture - Controls
     5. Dynamics 365 Invoice capture - Backend
     6. Dynamics 365 Invoice capture Base
 
 > [!NOTE]
-> To delete Invoice capture but keep the data, don't delete the Dynamics 365 Invoice capture Base solution.
+> To delete Invoice capture but keep the data, don't delete the Dynamics 365 Invoice capture base solution.
 
