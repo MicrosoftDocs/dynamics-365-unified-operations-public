@@ -4,7 +4,7 @@
 title: Manage channels in the Invoice capture solution
 description: This article provides information about how to manage channels in the Invoice capture solution.
 author: sunfzam
-ms.date: 07/12/2023
+ms.date: 08/12/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -92,6 +92,7 @@ If the **Use managed flow** option is set to **Yes**, the flow setting is enable
 
 - Outlook.com
 - Microsoft Outlook 365
+- Microsoft Outlook 365 shared mailbox
 - SharePoint
 - OneDrive
 - OneDrive for business
@@ -103,6 +104,7 @@ The following table describes the additional properties that the user must defin
 | Flow template | Property | Description |
 |---------------|----------|-------------|
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
+| **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address and the default folder is **Inbox**. |
 | **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
 | | Library | The name of the SharePoint library. |
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
@@ -130,13 +132,13 @@ The flow is generated based on the selected template and preset required paramet
 
 Various errors can appear:
 
-- "Generate flow failed."
+- "Generate flow failed"
 
     **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
 
     **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
-- "Turn on flow failed."
+- "Turn on flow failed"
 
     **Cause:** There are multiple reasons why a flow might fail when it's turned on:
 
@@ -191,6 +193,10 @@ In Invoice capture, follow these steps to create a channel that will use a share
     additionalInfo:{<br>
     &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
     \}
+    
+## Assign legal entity on the channel
+
+Administrators can designate distinct channels for various legal entities. After assigning the appropriate legal entity to the corresponding channel, the legal entity will be determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control isn't applied to the lists of captured invoices and received files.
 
 ## Deactivate and activate the channel
 
