@@ -146,9 +146,9 @@ If you've changed the certificate common name, you must upgrade your Service Fab
 
 #### Service Fabric with certificates that are expired
 
-If your cluster is not available after 10 minutes from when you finished provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service is not started.
+If your cluster isn't available after 10 minutes from when you finished provisioning the new certificates to all nodes, consider restarting the nodes where the Service Fabric service isn't started.
 
-If you have changed the certificate common name (subject name), then the Service Fabric cluster won't start up. If you can't generate new certificates with the previous common name, you need to cleanup and recreate the cluster.
+If you have changed the certificate common name (subject name), then the Service Fabric cluster won't start up. If you can't generate new certificates with the previous common name, you need to clean up and recreate the cluster.
 
 #### Service Fabric with restricted certificate issuers
 
@@ -365,7 +365,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu41.md#setupsql).
 
-2. Check to be sure that the Active Directory Federation Service (ADFS) certificate has not expired.
+2. Check to be sure that the Active Directory Federation Service (ADFS) certificate hasn't expired.
 
 ## <a name="cleanupoldsfcerts"></a>Clean up old Service Fabric certificates
 
@@ -399,7 +399,7 @@ ELSE
     INSERT INTO SECURITYCONFIG ([KEY_], [VALUE]) VALUES ('EnableEncryptedDataRotation', 'True')
 ```
 
-After the commands have been run, restart your AOS nodes from Service Fabric Explorer. AOS detects the new configuration and schedule the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
+After the commands have been run, restart your AOS nodes from Service Fabric Explorer. AOS detects the new configuration and schedules the batch job to run during off hours. After the batch job has been created, the schedule can be modified from the user interface.
 
 > [!WARNING]
 > Make sure that the old data encryption certificate isn't removed before all encrypted data has been re-encrypted, and that it hasn't expired. Otherwise, data might be lost.
@@ -429,11 +429,11 @@ Update-ServiceFabricClusterUpgrade -UpgradeReplicaSetCheckTimeoutSec 30
 ```
 
 > [!NOTE] 
-> You might receive the following error message: "Upgrading from two different certificates to two different certificates is not allowed." This message indicates that you didn't clean up old Service Fabric certificates during the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section earlier in this article, and then repeat the steps in this section.
+> You might receive the following error message: "Upgrading from two different certificates to two different certificates isn't allowed." This message indicates that you didn't clean up old Service Fabric certificates during the previous certificate rotation exercise. In this case, see the [Clean up old Service Fabric certificates](certificate-rotation-on-prem.md#cleanupoldsfcerts) section earlier in this article, and then repeat the steps in this section.
 
 ## <a name="appendix-b"></a>Appendix B
 
-Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they are available in the machine. Service Fabric won't accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
+Using certificate common names instead of thumbprints to describe your Service Fabric cluster configuration eases future certificate rotation operations as the Service Fabric cluster automatically switches to using new certificates once they're available in the machine. Service Fabric won't accept any certificate however, the certificate that is provided must match the subject name that is defined in the Service Fabric cluster. Additionally, the issuer of the certificate must match the issuer that is also specified in the configuration. For more information on how Service Fabric uses common names, see [Common name-based certificate validation declarations](/azure/service-fabric/cluster-security-certificates#common-name-based-certificate-validation-declarations). For more information on how to secure standalone Service Fabric clusters [Secure a standalone cluster on Windows by using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security)
 
 1. Run the following script to generate an updated cluster configuration file.
 
@@ -442,12 +442,12 @@ Using certificate common names instead of thumbprints to describe your Service F
     ```
 
     > [!NOTE]
-    > In some cases, customers may choose to not restrict the issuer of the certificates in the Service Fabric cluster configuration. While this is not recommended, it can be achieved by using the following command.
+    > In some cases, customers may choose to not restrict the issuer of the certificates in the Service Fabric cluster configuration. While this isn't recommended, it can be achieved by using the following command.
     >
     > ```powershell
     > .\Update-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpgradeToCommonNames -DoNotRestrictCertificateIssuers
     > ```
 
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) above.
+1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
