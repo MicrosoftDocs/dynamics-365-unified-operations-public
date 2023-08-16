@@ -90,16 +90,16 @@ The following are not covered by this system in Finance:
 ### Scope
 The following changes have been introduced within the scope of this feature:
 1. Consolidated invoice creation and processing (both Accounts Receivable and Accounts Payable): 
-    * Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices.
+    + Split consolidated invoices per transaction currency. Add transaction currency as a default filter when creating consolidated invoices.
     + Modify the Confirm operation to validate sales tax transaction properties, calculate the consolidated invoice tax and tax adjustment per sales tax code, and display the consolidated invoice tax and tax adjustments. 
-+ Allow manual adjustment of the calculated consolidated tax (Accounts Payable only). 
-+ Add Post operation to post the tax adjustment per sales tax code. 
-+ Print consolidated invoice (Accounts Receivable only). 
-+ Add Reverse operation to reverse posted tax adjustments per sales tax code.
+    + Allow manual adjustment of the calculated consolidated tax (Accounts Payable only). 
+    + Add Post operation to post the tax adjustment per sales tax code. 
+    + Print consolidated invoice (Accounts Receivable only). 
+    + Add Reverse operation to reverse posted tax adjustments per sales tax code.
 
 2. Consolidated tax calculation (both Accounts Receivable and Accounts Payable): 
-+ Consolidated consumption tax is calculated and adjusted on the consolidated invoice level in Accounts payable and Accounts receivable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
-+ Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
+    + Consolidated consumption tax is calculated and adjusted on the consolidated invoice level in Accounts payable and Accounts receivable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
+    + Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
 
 Vendor invoices posted via vendor invoice journal are not supported in the vendor consolidated invoice functionality and will not be included in this feature.
 
@@ -113,10 +113,10 @@ To set up this feature, follow these steps:
 1. Add a QII registration number to the primary address of the legal entity that is in Japan.
 > [!NOTE]
 > For more information, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
-1. Go to Tax > Setup > Sales tax > Ledger posting groups and configure **Nondeductible tax expense** account to post consolidated tax adjustments.
+1. Go to **Tax -> Setup -> Sales tax -> Ledger posting groups** and configure **Nondeductible tax expense** account to post consolidated tax adjustments.
 1. Set up sales tax codes for JCT:
-- Add separate sales tax codes for standard and reduced rates
-- Add separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers. The sales tax codes for purchases from qualified invoice issuers can also be used for sales.
+    - Add separate sales tax codes for standard and reduced rates
+    - Add separate sales tax codes for purchases from qualified invoice issuers and non-qualified invoice issuers. The sales tax codes for purchases from qualified invoice issuers can also be used for sales.
 > [!NOTE]
 > Specific sales tax calculation parameters should be configured as follows. All sales tax codes must have appropriate **Tax type**, **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**, **Rounding precision = 1.00**, **Rounding method = Normal**, **Print = Print code**, **Print code = \<JCT rate\>%**.
 1. Configure transitional periods for purchase tax credit for purchases from non-qualified invoice issuers using non-deductible percentage in sales tax code values.
@@ -132,19 +132,20 @@ To set up this feature, follow these steps:
 
 #### Consolidated Invoice issued to a Customer
 To issue a consolidated invoice to a customer, follow these steps:
-1. Open the Accpounts Receivable Consolidated invoice page and click New. Specify the last day of the last month as Execution date and Consolidation date. Add the customer account to the filter. Click OK.
-1. Resulting consolidated invoice willl include all invoices posted previously in the specified period.
-1. Click Consolidated invoice -> Confirm. Invoice status must be changed to Confirmed. Consolidated taxes and tax adjustments should be calculated, and unposted tax transactions should be created.
-1. Click Consolidated invoice -> Sales tax. The Sales tax transactions dialog page must open (similar to the action for the Sales tax button on the Free text invoice page). The page should display unposted sales tax transactions for the tax adjustments for the consolidated invoice. The Overview tab should contain additional fields for Consolidated amount origin, Consolidated posted sales tax, and Actual consolidated sales tax.
-1. Manual adjustment of calculated consolidated taxes is not needed for AR consolidated invoices.
-1. On the Consolidated invoice page,  click Consolidated invoice -> Post. Sales tax adjustments and a corresponding customer transaction should be posted. The posting date should be the Consolidation date of the consolidated invoice. The total amount of sales tax adjustment should be added to "Invoice amount during consolidation", "Sales tax", "and Total invoice amount" of the consolidated invoice. A consolidated invoice history record should be created. The consolidated invoice should be marked as Posted.
-1. On the Consolidated invoice page, by clicking the Consolidated invoice -> Sales tax menu for a posted consolidated invoice, it is possible to review posted sales tax transactions for the last consolidated invoice history record, including Consolidated amount origin, Consolidated posted sales tax, and Actual consolidated sales tax).
-1. On the Consolidated invoice page, click Consolidated invoice -> Print -> Consolidated invoice. The printed consolidated invoice should contain the qualified invoice issuer number of the legal entity. The printed sales tax specification should include both original sales tax from included invoices and sales tax adjustments posted for the consolidated invoice (its last posted history record - the one that is Reversing = No, Reversed = No).
-1. Click Consolidated invoice -> History.  The Consolidated invoice history page display the history of posting of the consolidated invoice (similar to the transfer order history page), including the posting date, voucher, etc. It is possible to review the voucher, the posted sales tax transactions, and the customer transaction for the history record by clicking corresponding menu items on the page.
-1. Open the Customer payment journal page. Create a new customer payment journal and click Lines. Create a new payment journal line for the customer.
-1. Click Settle transactions. On the Settle transaction dialog page, click Consolidated invoice -> Select. In the Select consolidated invoices dialog, select the newly created consolidated invoice and click OK. Only open customer transactions that correspond to the customer invoices included in the consolidated invoice should be displayed on the Settle transaction page. In addition, the customer transaction that is posted for the last consolidated invoice history record should also be displayed and available for settlement.
-1. Go back to the Consolidated invoice page, select the consolidated invoice posted previously, and click Consolidated invoice -> History. On the Consolidated invoice history page, select a record that is Reversing = No, Reversed = No, and click Reverse. Reversing sales tax adjustments and a corresponding customer transaction should be posted. The total amount of sales tax adjustments being reversed should be subtracted from "Invoice amount during consolidation", "Sales tax", "and Total invoice amount" of the consolidated invoice. A reversing consolidated invoice history record should be created and marked as Reversing (similar to inventory closing records). The reversed consolidated invoice history record should be marked as Reversed. If the customer transaction that corresponds to the reversed consolidated invoice history record is already settled, the settlement should be reversed. The customer transaction should be settled against the customer transaction that corresponds to the reversing consolidated invoice history record. The consolidated invoice should be un-marked as Posted.
-1. It is then possible to Reopen the consolidated invoice and edit its contents (add or remove invoices to be included in it).
+1. Go to **Accounts Receivable -> Periodic tasks -> Consolidated invoice** page and click **New**. Specify the required **Execution date** and **Consolidation date**. Add the **Customer account** to the filter, if needed. Click **OK**.
+1. Resulting consolidated invoice willl include all invoices posted previously in the specified period and in line with the filter criteria.
+1. Check the data and click on the **Consolidated invoice -> Confirm** button. Invoice status will change to Confirmed. Consolidated taxes and tax adjustments will be calculated and unposted tax transactions created.
+1. Click **Consolidated invoice -> Sales tax**. The Sales tax transactions dialog page will open. The page displays unposted sales tax transactions for the tax adjustments for the consolidated invoice. The Overview tab should contain additional fields for Consolidated amount origin, Consolidated posted sales tax, and Actual consolidated sales tax.
+1. Manual adjustment of calculated consolidated taxes is not needed for Accounts Receivable consolidated invoices.
+1. On the **Consolidated invoice page**,  click **Post**. Sales tax adjustments and a corresponding customer transaction are posted. The posting date is the Consolidation date of the consolidated invoice. The total amount of sales tax adjustment should be added to "Invoice amount during consolidation", "Sales tax", "and Total invoice amount" of the consolidated invoice. A consolidated invoice history record is created. The consolidated invoice is marked as Posted.
+1. On the **Consolidated invoice page**, by clicking the **Sales tax** menu for the posted consolidated invoice, it is possible to review posted sales tax transactions for the last consolidated invoice history record, including Consolidated amount origin, Consolidated posted sales tax, and Actual consolidated sales tax).
+1. Click **Print** under the **Consolidated invoice** tab. The printed consolidated invoice does not contain the qualified invoice issuer number of the legal entity. The printed sales tax specification includes both original sales tax from included invoices and sales tax adjustments posted for the consolidated invoice (its last posted history record - the one that is Reversing = No, Reversed = No).
+1. Click **Consolidated invoice -> History**.  The Consolidated invoice history page displays the history of posting of the consolidated invoice (similar to the transfer order history page), including the posting date, voucher, etc. It is possible to review the voucher, the posted sales tax transactions, and the customer transaction for the history record by clicking corresponding menu items on the page.
+1. Go to **Accounts Receivable -> Payments -> Customer payment journal** page. Create a new customer payment journal and click **Lines**. Create a new payment journal line for the customer.
+1. Click **Settle transactions**. On the Settle transaction dialog page, click **Consolidated invoice -> Select**. In the Select consolidated invoices dialog, select the newly created consolidated invoice **Consolidation ID** and click OK. Only open customer transactions that correspond to the customer invoices included in the consolidated invoice are displayed on the Settle transaction page. In addition, the customer transaction that is posted for the last consolidated invoice history record is also displayed and available for settlement.
+> [!NOTE]
+> - Consolidated invoice reversal can be performed in the following way. Go back to the **Consolidated invoice page**, select the consolidated invoice posted previously, and click **Consolidated invoice -> History**. On the Consolidated invoice history page, select a record that is Reversing = No, Reversed = No, and click Reverse.Reversing sales tax adjustments and a corresponding customer transaction are posted. The total amount of sales tax adjustments being reversed is subtracted from "Invoice amount during consolidation", "Sales tax", "and Total invoice amount" of the consolidated invoice. A reversing consolidated invoice history record is created and marked as Reversing. The reversed consolidated invoice history record is marked as Reversed. If the customer transaction that corresponds to the reversed consolidated invoice history record is already settled, the settlement is reversed. The customer transaction is settled against the customer transaction that corresponds to the reversing consolidated invoice history record. The consolidated invoice is un-marked as Posted.
+> - It is then possible to **Reopen** the consolidated invoice and edit its contents (add or remove invoices to be included in it).
 
 #### Consolidated Invoice from a Vendor that is a Qualified Invoice Issuer
 To create a consolidated invoice from a vendor that is a qualified invoice issuer, follow these steps:
