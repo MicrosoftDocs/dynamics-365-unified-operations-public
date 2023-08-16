@@ -59,7 +59,12 @@ Ownership change events are logged in a table in Supply Chain Management. This t
 
 ## Make Supply Chain Management the price master
 
-When the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), Supply Chain Management becomes the price master for calculations for sales quotations and sales orders. Therefore, the following changes occur when this feature is enabled:
+When the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), Supply Chain Management becomes the price master for calculations for sales quotations and sales orders. 
+
+> [!NOTE]
+> From version 10.0.37 onwards, enabling the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature will add an additonal parameter 'Make Supply Chain Management price master' in Accounts receivable\>Accounts receivable parameters\>Dynamics 365 Sales integration tab. From version 10.0.37 it is the parameter setting that determines if the functionality takes effect. When set to 'Yes', the functionality takes effect.
+
+Therefore, the following changes occur when this feature is enabled:
 
 - When a quotation or sales order is created in Sales, if a price list exists in Sales, the price from that price list is used.
 - Sales behaves as though its **Use system price calculation** option is set to *No*.
@@ -83,6 +88,9 @@ When the *Make Supply Chain Management price master when integrated with Dynamic
 ## Calculate and push prices, discounts, and totals from Supply Chain Management to Sales
 
 After you update a sales quotation or sales order in Supply Chain Management, it's important that you push the updated prices, discounts, and totals to Sales. Before you can use this capability, the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* feature must be [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md).
+
+> [!NOTE]
+> From version 10.0.37 onwards, enabling the *Calculate and push prices, discounts and totals for selective sales orders and sales quotations when integrated to Dynamics 365 Sales* feature will add an additonal parameter 'Calculate and push prices' in Accounts receivable\>Accounts receivable parameters\>Dynamics 365 Sales integration tab. From version 10.0.37 it is the parameter setting that determines if the functionality takes effect. When set to 'Yes', the functionality takes effect.
 
 We recommend that you also enable and configure the *Process sales quotation related events* feature, so that you can process the calculations in the background. For more information, see the [Process events related to Sales integration](#process-events) section.
 
@@ -140,7 +148,12 @@ To set up this scheduled task, go to **Sales and marketing \> Accounts receivabl
 
 Because of differences in the data models of the two systems, sales orders that are created from the sales quotation process in Sales don't have the same data as sales orders that are created from the sales quotation process in Supply Chain Management. For sales orders that are created from the sales quotation process in Sales, a small set of data is carried over from the sales quotation. However, when the sales order is synced from Sales to Supply Chain Management, Supply Chain Management might initialize some field values (such as financial dimensions) without using the standard Supply Chain Management logic. Although this behavior might be appropriate in some scenarios, it isn't appropriate in other scenarios.
 
-To control this behavior, either [enable or disable](add-efficiency-in-quote-to-cash-enable.md) the *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* feature in Supply Chain Management. The system then works in one of the following ways, depending on whether the feature is enabled or disabled:
+To control this behavior, either [enable or disable](add-efficiency-in-quote-to-cash-enable.md) the *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* feature in Supply Chain Management. 
+
+> [!NOTE]
+> From version 10.0.37 onwards, enabling the *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365 Sales* feature will add an additonal parameter 'Copy quotation data to sales orders' in Accounts receivable\>Accounts receivable parameters\>Dynamics 365 Sales integration tab. From version 10.0.37 it is the parameter setting that determines if the functionality takes effect. When set to 'Yes', the functionality takes effect.
+
+The system then works in one of the following ways, depending on whether the feature is enabled or disabled:
 
 - **If the feature is enabled:** Every sales order in Supply Chain Management carries over field values from its related sales quotations in Supply Chain Management, regardless of ownership.
 - **If the feature is disabled:** Sales orders in Supply Chain Management don't carry over related sales quotation field values when ownership lies with Sales. Instead, those field values are initialized.
@@ -158,6 +171,9 @@ When the *Process sales quotation related events* feature is [enabled in Supply 
 The previous sections of this article describe several features that support asynchronous processing of events that are related to the integration with Sales. When you use asynchronous processing, users don't have to wait until processing is completed each time that they make a relevant request. Instead, they can continue to work on other tasks, and the system will process requests when it has time to do so. These features work by adding messages to the *message processor queue*. You can monitor the progress of these messages by using the **Message processor messages** page. This page provides insight into queued, failed, and processed messages. It also supports error handling, manual processing, cancellation, and requeuing of messages.
 
 Before you can use asynchronous processing, the *Process Dynamics 365 Sales integration related events* feature must be [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md).
+
+> [!NOTE]
+> From version 10.0.37 onwards, enabling the *Process Dynamics 365 Sales integration related events* feature will add an additonal parameter 'Use message processor' in Accounts receivable\>Accounts receivable parameters\>Dynamics 365 Sales integration tab. From version 10.0.37 it is the parameter setting that determines if the functionality takes effect. When set to 'Yes', the functionality takes effect.
 
 ### Set up a batch job to process the Dynamics 365 Sales Integration message queue
 
