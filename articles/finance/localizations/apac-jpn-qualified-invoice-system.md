@@ -71,6 +71,7 @@ In order to work with the company's and its counterparties' "Qualified invoice i
 To work with consumption taxes, you need to:
 - Create different sales tax codes for standard rate and reduced rate.
 - Create different sales tax codes for purchases from qualified and non-qualified vendors. You can use the same sales tax codes for purchases from qualified vendors and for sales.
+- Turn on "Round deductible tax amount first" in the sales tax codes for transitional measure regarding purchases from tax exempt companies: deductible portion of the tax needs to be calculated first.
 - Set up all sales tax codes with these settings: Tax type, Origin = Percentage of net amount, Marginal base = Net amount of invoice balance, Calculation method = Whole amount, Rounding precision = 1.00, Rounding method = Normal, Print = Print code, Print code = *\<JCT rate\>*%.
 - Set up transitional periods for purchase tax credit using non-deductible percentage in sales tax code values.
 - Set up sales tax groups for JCT: one for qualified vendors and another one for non-qualified vendors.
