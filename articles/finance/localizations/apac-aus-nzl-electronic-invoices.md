@@ -23,7 +23,7 @@ ms.search.form:
 
 This article provides information that will help you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). 
 
-Once configured, the system will allow you to **generate** XML files of electronic invoices in PEPPOL format with Australian and New Zealand extension.
+Once configured, the system will allow you to **generate** XML files of electronic invoices using [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification with Australian and New Zealand extension.
 
 > [!NOTE]
 > This article describes electronic invoicing approach implemented using Invoicing service which is applicable only to **cloud** deployments of Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. For **on-prem** deployments please refer to [Customer electronic invoices in Australia and New Zealand](apac-aus-nzl-e-invoices.md).
@@ -108,14 +108,16 @@ Go to **Accounts receivable** \> **Customers** \> **All customers**, select a cu
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the units of measure code for international trade.
+4. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
+    > [!NOTE]
+    > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
 
 ### Sales tax codes configuration
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code you selected in step 2.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the official codification.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
 ### Customer requisition
 
