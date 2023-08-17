@@ -30,15 +30,15 @@ search.app:
 
 [!include[banner](../includes/banner.md)]
 
-This article explains add an SSIS Node(s) in your existing on-premises environment. SSIS only nodes were introduced in 10.0.32 (Platform Update 56), and are used by the Data Management Framework.
+This article explains add an SSIS Node(s) in your existing on-premises environment. SSIS only nodes were introduced in 10.0.32 (Platform Update 56) and are used by the Data Management Framework.
 
 ## Installation steps
-1. Ensure your environment is on version 10.0.32 (Platform Update 56) or higher.
+1. Ensure your environment is on version 10.0.32 (Platform update 56) or higher.
 2. Download and extract the latest setup scripts from Lifecycle Services - [Download the infrastructure scripts](./obtain-infrascripts-onprem.md#download-the-infrastructure-scripts).
    > [!IMPORTANT]
    > The scripts must be run from a computer that's in the same domain as the on-premises infrastructure.
 3. Follow the steps here to update from your old infrastructure scripts - [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
-4. In the ConfigTemplate.xml file, within the SSISNodeType section, add edit and modify for you SSIS node(s) as needed, check the disabled parameter is false:
+4. In the ConfigTemplate.xml file, within the SSISNodeType section, modify the SSIS node(s) as needed. Confirm the disabled parameter is false:
    ```XML
    <NodeType name="SSISNodeType" primary="false" namePrefix="SSIS" purpose="SSIS" disabled="false">
       <!-- Do not place hasSSIS on this node type. -->
@@ -48,22 +48,22 @@ This article explains add an SSIS Node(s) in your existing on-premises environme
       </VMList>
    </NodeType>
    ```
-5. Create the DIXF GMSA account – see this section [Step 8. Create gMSAs](./setup-deploy-on-premises-latest.md#setupgMSA). Use option 1 to just create the new DIXF GMSA:
-6. Setup a new file share for DIXF. Edit the File Share section for the new DIXF file share – Follow steps in section [Step 9. Set up file storage](./setup-deploy-on-premises-latest.md#setupfile).
+5. Create the DIXF GMSA account – see [Step 8. Create gMSAs](./setup-deploy-on-premises-latest.md#setupgMSA). Use option 1 to just create the new DIXF GMSA.
+6. Set up a new file share for DIXF. Edit the file share section for the new DIXF file share. Follow these steps [Step 9. Set up file storage](./setup-deploy-on-premises-latest.md#setupfile).
    > [!NOTE]
-   > In the ConfigTemplate.xml file set the disabled property to True  for any existing file shares. You only want the DIXF one to be created. 
+   > In the ConfigTemplate.xml file set the disabled property to **True** for any existing file shares.  
 
-7. Install SSIS on the nodes required – see this section [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupssis).
-8. Open an Admin PowerShell and change to the Infrastructure Scripts folder, and run the following:
+7. Install SSIS on the nodes required. For more information, see [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupssis).
+8. Open an Admin PowerShell and change to the Infrastructure scripts folder, and run the following script:
    ```PowerShell
    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
 9. Follow the steps in [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms)
-10. Update Service Fabric to the latest version, before adding the new node. Follow the steps in this document [](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
-11. If this is the first time, you’re adding in a DIXF node, you need to add in the node type to the existing Service Fabric cluster. To do this, on one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
+10. Update Service fabric to the latest version, before adding the new node. For more information, see [Update fabric cluser](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
+11. If this is the first time you’re adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
 
-#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
 Connect-ServiceFabricCluster 
 
 Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
@@ -150,28 +150,29 @@ Update the Service Fabric cluster to add in the new node type:
 Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath C:\Temp\ClusterConfig.json
 
 
-12.	Add in the new DIXF Node. Follow these steps below:
+12.	Add in the new DIXF Node. Follow the steps below:
 
-a)	In Service Fabric Explorer, select Cluster, and make a note of the Microsoft Service Fabric cluster version, e.g. 9.1.XXXX.XXXX
-b)	On one of the orchestrator nodes, open File Explorer. On the View tab, in the Show/hide group, make sure that the **File name extensions** and **Hidden items** checkboxes are selected.
-c)	Expand drive C, and then drill down into the following folder. (Note that the bold parts of the path will vary, depending on the node name and setup.)
+a)	In Service Fabric Explorer, select **Cluster**. Note the Microsoft service fabric cluster version.
+b)	On one of the orchestrator nodes, open File explorer. On the **View** tab, in the **Show/hide** group, confirm the **File name extensions** and **Hidden items** checkboxes are selected.
+c)	Expand drive C, and then drill down into the following folder. (The path will vary depending on the node name and setup.)
 d)	C:\ProgramData\SF\ORCH1\Fabric\work\Applications\__FabricSystem\_App4294967295\work\Store\131811633624852852
-e)	In the folder, you should see a list of folders for various versions of Service Fabric.
-f)	Open the folder that has the same name as the version of Microsoft Service Fabric cluster that you made a note of earlier.
-g)	In the folder, you should see a .cab file.
-h)	Copy the .cab file to C:\Temp, and rename the copied file MicrosoftAzureServiceFabric.cab. (If you don't have a Temp folder, create it.)
-i)	Open a PowerShell Command Prompt windows as an admin.
-j)	Run the following command to connect to your Service Fabric cluster. (Edit the command as you require.)
+e)	In the folder, there's a list of folders for various versions of Service fabric.
+f)	Open the folder that has the same name as the version of Microsoft service fabric cluster noted earlier.
+g)	In the folder, locate the .cab file.
+h)	Copy the .cab file to C:\Temp, and rename the copied file MicrosoftAzureServiceFabric.cab.
+i)	Open a PowerShell command prompt window as admin.
+j)	Run the following command to connect to your Service fabric cluster. (Edit the command as needed.)
 
-#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address
+#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
 Connect-ServiceFabricCluster 
 
-k)	Run the following command to add the node. Before you run it, make the required edits to the NodeName, IPAddress, UpgradeDomain, and FaultDomain parameters. (If you're replacing an existing server, you should have made a note of the values earlier.)
+k)	Before running the following command to add the node, update the NodeName, IPAddress, UpgradeDomain, and FaultDomain parameters. 
 
 Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQDN "10.179.108.22" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
 Repeat the step above for any additional DIXF Nodes.
 
-13.	Add in the pre-deployment script for enabling the DIXF Service. If you don’t have the base pre-deployment script you’ll need to setup that, and then also enable the script “TSG_EnableGMSAForAOS.ps1”. Also, in the main pre-deployment script, you need to uncomment out the line for the DIXF script, and ensure you have the DIXF share you created in the previous step set. See: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/onprem-tsg-implementations 
-14.	Finally, log into LCS and select the project and environment. From the Maintain menu, select Update Settings. Do not make any changes, and click Prepare. Once the config it downloaded, you can then click Update in LCS to complete the process. 
+13.	Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set.
+  For more information, see [On prem implementations](/deployment/onprem-tsg-implementations). 
+14.	Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process. 
 
 
