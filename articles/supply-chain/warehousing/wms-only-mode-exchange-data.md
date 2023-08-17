@@ -27,7 +27,7 @@ Warehouse management only mode requires integration to be set up between externa
 
 Many different integration methodologies can be used for these three categories. This article describes the recommended integration process.
 
-## Document data
+## <a name="inbound-outbound-shipment-order-messages"></a>Inbound and outbound shipment order messages
 
 You can use the inbound and outbound shipment order messages to inform Supply Chain Management about which physical inventory to receive and ship. These messages include both header and lines data.
 
@@ -50,7 +50,7 @@ To enable consistent communication, several types of master and reference data m
 
 - **Released products** – This data is required for creating inbound and outbound shipment orders. For more information, see [Product data entities](../pim/data-entities.md) and [Overview of ProductInformationManagement](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
 
-- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management, so you must have at least one group available. Each group that you will use with Warehouse only mode must have the following settings, which will eliminate the need to set up any costing data for these products:
+- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management, so you must have at least one group available. Each group that you will use with Warehouse management only mode must have the following settings, which will eliminate the need to set up any costing data for these products:
     - **Inventory model** – Set to *Non-valuated*
     - **Post physical inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
     - **Post financial inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).

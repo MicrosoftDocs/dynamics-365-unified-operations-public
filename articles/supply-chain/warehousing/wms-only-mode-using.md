@@ -61,7 +61,7 @@ The following **Shipment status** values are available:
 - *Shipped* – All quantities have been shipped confirmed.
 
 > [!NOTE]
-> The internal outbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](#number-sequences) for the order. To ensuring unique numbers across external systems you can consider using the *Order number prefix/suffix* options.
+> The internal outbound shipment order number must be unique. You can define to use the external order numbers as internal numbers and thereby not needing to use a [number sequence](wms-only-mode-setup.md#number-sequences) for the order. To ensure unique numbers across external systems, consider using the **Order number prefix/suffix** options.
 
 If you're already familiar with Supply Chain Management, you might recognize this document as being similar to a simplified sales order that uses some of the same reservation and [release to warehouse](release-to-warehouse-process.md) processes. Use the [Source systems](wms-only-mode-setup.md#source-systems) settings to control whether to trigger reservations automatically when importing documents and/or to automatically reject shipment orders that can't be partly or fully reserved.
 
@@ -89,37 +89,34 @@ Here's a high-level description of the inbound process:
 1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
 1. Supply Chian Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
-## <a name="receiving-completed"></a>Receiving completed
+## <a name="receiving-completed"></a>The receiving completed process
 
 The *receiving completed* process updates the load status to *Received* and generates [shipment receipts](#shipment-receipts), which trigger a business event for the external systems.
 
-You can trigger the receiving completed process manually from the load using either the web client or the Warehouse Management mobile app
+Workers can trigger the receiving completed process manually from the load using either the web client or the Warehouse Management mobile app. To enable workers to use the Warehouse Management mobile app, set up a *Receiving completed confirmation* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 
-and/or via the **Receiving completed confirmation** *Warehouse Management mobile app* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
+<!--KFM: This isn't clear. Where are these settings? --> Depending on the setting **Capture receiving completed packing slip**, as part of the **Warehouse management parameters - Loads** section, it's possible to capture a *packing slip ID* and a *date* for each of the shipments associated with an inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
 
-Depending on the setting **Capture receiving completed packing slip**, as part of the **Warehouse management parameters - Loads** section, it's possible to capture a *packing slip ID* and a *date* for each of the shipments associated to the inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
-
-- Never – Don't prompt for *packing slip ID* and date capturing
-- Always – Prompt for *packing slip ID* and *date* and only proceed when specified
-- Optional – Prompt for the *packing slip ID* and *date*, but allow when not specified
-
-<!-- Delivery policy -->
-> [!NOTE]
-> In the current version the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must get triggered manually, but in future version it is planned to have a policy to define the process.
-
-## <a name="shipment-receipts"></a> Shipment Receipts
-
-In the **Warehouse management > Inquiries and reports > Shipment receipts** page you can view the detailed line transactions related to the received inventory. The data is version controlled and you can follow the **Posting status** on the header data.
-
-The header is moved from *Ready for posting* to *Posted* as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) *Post shipment receipts* job, which is automatically  initialized as part of the [source system](#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that the related inbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
-
-You can see all the *Background processes* running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
+- *Never* – Don't prompt for packing slip ID and date.
+- *Always* – Prompt for packing slip ID and date and only proceed when they are specified.
+- *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
-> Reversal of the receiving confirmation will be supported as long as the related inbound shipment order line transactions have not been finalized.
+> In the current version, load line quantities must be fulfilled according to over-delivery and under-delivery settings and *Receiving completed* must be triggered manually.
+
+## <a name="shipment-receipts"></a>Shipment receipts
+
+Go to **Warehouse management > Inquiries and reports > Shipment receipts** to view the detailed line transactions related to received inventory. The data is version controlled and you can follow the **Posting status** on the header.
+
+The header status is moved from *Ready for posting* to *Posted* as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) *Post shipment receipts* job, which is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that the related inbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
+
+To see all of the background processes that you have running, go to [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
+> [!NOTE]
+> You can reverse receiving confirmations provided the related inbound shipment order line transactions have not yet been finalized.
 
 > [!WARNING]
-> If you are enabling the Warehouse management only mode capability and already are running a periodic *Update product receipts* batch job for loads associated with purchase orders, you probably need to update the query for the batch job to exclude the inventory transaction updates for the *inbound shipment orders*. You can do this by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the *Reference* field with *Criteria* = Inbound shipment order.
+> If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads associated with purchase orders, you probably need to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. You can do this by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the **Reference** field with *Criteria = Inbound shipment order*.
 
 ## Outbound process
 
@@ -146,36 +143,35 @@ Here's a high-level description of the outbound process:
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
-In the **Warehouse management > Inquiries and reports > Shipment packing slips** page you can view the detailed line transactions related to the shipped inventory and print a report of the data via the **Preview/Print** option. You can control the printed inventory dimension values as part of the **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**.
+Go to **Warehouse management > Inquiries and reports > Shipment packing slips** to view detailed line transactions related to shipped inventory and print a report using the **Preview/Print** option. You can control the printed inventory dimension values by going to **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**. <!--KFM: Clarify this path -->
 
-The **Shipment packing slip** data is version controlled and you can follow the **Posting status** on the header data.
+Shipment packing slip data is version controlled and you can follow the **Posting status** on the header. The **Posting status** changes from *Ready for posting* to *Posted* as part of the *Post shipment packing slips* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job, which is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that related outbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
 
-The header is changed from *Ready for posting* to *Posted* as part of the [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) *Post shipment packing slips* job, which is automatically initialized as part of the [source system](#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that the related outbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
-
-You can see all the *Background processes* running as part of the [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) page.
+To see all of the background processes that you have running, go to [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 > [!NOTE]
-> In case of not having defined a language for the order the report will fall back to use the company specific language settings.
+> If no language is defined for an order, the report will fall back to use the company specific language settings.
 
-## Viewing and maintaining shipment order messages
+## <a name="maintain-messages"></a>Viewing and maintaining shipment order messages
 
-It's possible to both view and update shipment order messages in Supply Chain Management Warehouse management only mode, which can be a quick way to test integrations as part of an implementation process.  When a message is in a *Failed* message state you can update all field values, except the order header and line numbers. The pages used to view and maintain the messages are:
+In Warehouse management only mode, you can both view and update shipment order messages, which can be a quick way to test integrations during the implementation process.  When a message is in a *Failed* message state, you can update all field values except the order header and line numbers. Go to one of the following pages to view and maintain the messages:
 
 - **Warehouse management > Inquiries and reports > Inbound shipment order messages**
 - **Warehouse management > Inquiries and reports > Outbound shipment order messages**
 
-The **Processing status** field can be used to monitor the progress of the shipment order messages. The following states are available:
+Use the **Processing status** field to monitor the progress of each shipment order message. The following **Processing status** values are available:
 
 - *Receiving* – The message is in the process of getting imported.
-- *Received* – The message has been received and in a *Queued* [message processor](../supply-chain-dev/message-processor.md) state, ready to be picked up for processing.
-- *Accepted* – The message processor state is *Processed* and thereby a shipment order has been created.  
-- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) has processed the message but one or more errors occurred. A copy of the message can get created as part of an edit saving.
-- *Draft* – A copy of a message that can get updated. To reprocess the message, you can move the message into the *Queued* message state by using the **Queue** option.
+- *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md), ready to be picked up for processing.
+- *Accepted* – The message processor state is *Processed* and therefore a shipment order has been created.  
+- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message but one or more errors occurred. You can create a copy of the message when you save it after editing.
+- *Draft* – The message is a copy that can get updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
+
+<!-- 
 - (*Canceled*) – New planned state in future version instead of using the *Failed* state for messages that have been canceled. You can resend a message (for the same order) from the external system.
-<!-- Canceled -->
+ -->
 > [!TIP]
-> By selecting the **Show old versions** option you can follow the manual message updates by using the *Replaced by message* field value.
+> Select the **Show old versions** option to follow manual message updates based on the **Replaced by message** field value.
 
 > [!WARNING]
-> Making manual message field updates in production environments might result in data inconsistency between the external source system and Supply Chain Management. As an example you will be able to change an *item number* to a value which will be unknown to the related external system. This type of update will most likely cause problems as part of the further progress information flows and might not be possible to get corrected as well in the back-end external system. Make sure to have the proper user role security privilege assigned for this process.
-
+> Making manual message field updates in production environments can result in data inconsistency between the external source system and Supply Chain Management. For example, you might change an **Item number** to a value that isn't known to the external system. This type of update will probably cause problems in progress information flows and it might even be impossible to correct it in the external system. Make sure to have the proper user role security privilege assigned for this process. <!--KFM: This last sentence doesn't seem to fit here. What do we mean? -->

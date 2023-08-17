@@ -23,7 +23,7 @@ ms.custom:
 
 <!-- KFM: Preview until further notice -->
 
-## <a name="feature-management"></a>Turn on warehouse only mode
+## <a name="feature-management"></a>Turn on Warehouse management only mode
 
 To use the **Warehouse management only mode** capability, your system must meet the following requirements:
 
@@ -32,7 +32,7 @@ To use the **Warehouse management only mode** capability, your system must meet 
 
 ## <a name="source-systems"></a>Configure you source systems
 
-Use the **Source systems** page to set up each external system that you want to integrate with using Warehouse management only mode. To use Warehouse only mode, you must have at least one record here. To set up a source system, follow these steps:
+Use the **Source systems** page to set up each external system that you want to integrate with using Warehouse management only mode. To use Warehouse management only mode, you must have at least one record here. To set up a source system, follow these steps:
 
 1. Go to **Warehouse management > Setup > Warehouse management integration > Source systems**.
 1. Do one of the following steps:
@@ -58,9 +58,11 @@ If you want to automatically release outbound shipment orders to the warehouse, 
 
 For more information about the release to warehouse process, see [Release to warehouse](release-to-warehouse-process.md).
 
-## <a name=”number-sequences”></a>Set up number sequences
+## <a name="number-sequences"></a>Set up number sequences
 
-If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences**, which includes the following extra number sequences:
+<!--KFM: I moved this here from the example topic. Was I right to do this? -->
+
+If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** page, which includes the following extra number sequences:
 
 - Outbound shipment order
 - Inbound shipment order
@@ -74,11 +76,11 @@ If the external system provides order numbers that aren't the same as those used
 
 ## Set up mobile device menu items
 
-To enable warehouse workers to use the Warehouse Management mobile app to register inbound shipment transactions, you must set up one or more mobile device menu items that use one following [processes](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) (each of which requires an inbound load): <!--KFM: Should we call these processes or flows? -->
+To enable warehouse workers to use the Warehouse Management mobile app to register inbound shipment transactions, you must set up one or more mobile device menu items that use one following [processes](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) (each of which requires an inbound load): <!-- KFM: I copied this here. Please confirm. -->
 
 - *License plate receiving (and put away)*
 - *Load item receiving (and put away)*
-- *Mixed license plate receiving (and put away)* (for source document line identification method **Load item receiving**)
+- *Mixed license plate receiving (and put away)* (for the source document line identification method *Load item receiving*)
 - *Inbound shipment order line receiving* (when assigned to loads)
 - *Inbound shipment item receiving* (when assigned to loads)
 - *Inbound shipment order line receiving (and put away)* (when assigned to loads)
