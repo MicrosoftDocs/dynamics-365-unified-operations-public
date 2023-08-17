@@ -30,7 +30,7 @@ search.app:
 
 [!include[banner](../includes/banner.md)]
 
-This article explains add an SSIS node in an existing on-premises environment. SSIS nodes were introduced in version 10.0.32 (Platform Update 56) and are used by Data management framework.
+This article explains how to add an SSIS node in an existing on-premises environment. SSIS nodes were introduced in version 10.0.32 (Platform Update 56) and are used by Data management framework.
 
 ## Installation steps
 1. Confirm your environment is on version 10.0.32 (Platform update 56) or higher.
