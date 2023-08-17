@@ -17,7 +17,7 @@
     },
     {
       "source_path": "articles/commerce/index.md",
-      "redirect_url": "welcome",
+      "redirect_url": "commerce-welcome",
       "redirect_document_id": "false"
     },
     {
