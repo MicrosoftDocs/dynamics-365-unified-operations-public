@@ -19,6 +19,26 @@ ms.search.validFrom: 2023-06-1
 
 The [Virtual Entity solution provider for finance and operations apps](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance_and_operations_virtual_entity) is a Microsoft AppSource package that provides near-real-time interaction with finance and operations apps data on Microsoft Power Platform.
 
+## July 2023 release
+
+The July release of Finance and Operations Virtual Entity Solution Changes in Release 2.8.8 contains the following changes.
+
+### Virtual entity changes
+
+| Type | Description | Status |
+|---|---|---|
+| Bug fix | Create F&O virtual entity OData actions using a unique name, to avoid naming conflicts. Action names will now include the entity name, i.e., "mserp_<entity name>_<action name>", to ensure uniqueness. | General availability |
+| Bug fix | Fixed error "An item with the same key has already been added". | General availability |
+| Bug fix | Solution supports .cab files instead of .zip files | General availability |
+| Bug fix | Removed "preview" from change tracking labels. | General availability |
+| Bug fix | Improved performance when importing a solution that contains virtual entities, by caching entity metadata results. | General availability |
+
+### Data archival changes
+
+| Type | Description | Status |
+|---|---|---|
+| Bug fix | Introduced translation logic for LTR operation. | General availability |
+
 ## June 2023 release
 
 The June release of Finance and Operations Virtual Entity Solution Changes in Release 2.8.7 contains the following changes.
