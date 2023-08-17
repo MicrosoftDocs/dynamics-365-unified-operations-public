@@ -17,7 +17,7 @@
     },
     {
       "source_path": "articles/commerce/index.md",
-      "redirect_url": "commerce-welcome",
+      "redirect_url": "/dynamics365/commerce/commerce-welcome",
       "redirect_document_id": "false"
     },
     {
