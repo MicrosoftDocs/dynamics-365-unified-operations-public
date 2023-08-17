@@ -62,89 +62,80 @@ This article explains add an SSIS node in an existing on-premises environment. S
 9. Follow [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms).
 10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](./azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
 11. If this is the first time adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
+```PowerShell
+<#
+SAMPLE CODE NOTICE
 
-#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
-Connect-ServiceFabricCluster 
+THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+#>
 
-Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
+Param(
+    # Path to the fileshare where the config.json is located for your deployment
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $ClusterConfigFilePath,
 
-   Open the config file exported above and find the “NodeTypes” section. At the end of the MRType section, add in the SSISNode as follows (highlighted):
+    # Just test if section is not there
+    [Switch] $Test
+)
 
-   Before:
+#requires -Version 5
+$ErrorActionPreference = 'Stop'
+$InformationPreference = 'Continue'
+Import-Module "$PSScriptRoot\D365FO-OP" -Force
 
+$SectionToAdd = '{
+    "name": "SSISNodeType",
+    "clientConnectionEndpointPort": "19000",
+    "clusterConnectionEndpointPort": "19001",
+    "leaseDriverEndpointPort": "19002",
+    "serviceConnectionEndpointPort": "19003",
+    "httpGatewayEndpointPort": "19080",
+    "reverseProxyEndpointPort": "19081",
+    "applicationPorts": {
+        "startPort": "20001",
+        "endPort": "20031"
+    },
+    "ephemeralPorts": {
+        "startPort": "49152",
+        "endPort": "65535"
+    },
+    "isPrimary": false,
+    "placementProperties": {
+        "HasSSIS": "True"
+    }
+}'
+
+$ClusterConfigFile = Get-Content -Path $ClusterConfigFilePath -Raw
+$ClusterConfigObject = $ClusterConfigFile | ConvertFrom-Json
+$SSISNodeType = $ClusterConfigObject.properties.nodeTypes | Where-Object { $_.name -eq "SSISNodeType" }
+
+if (-not $SSISNodeType) 
 {
-                     "AllowStatefulWorkloads": true,
-                     "Name": "MRType",
-                     "PlacementProperties": {
-                       "IsMREnabled": "True"
-                     },
-                     "ClientConnectionEndpointPort": 19000,
-                     "HttpGatewayEndpointPort": 19080,
-                     "ReverseProxyEndpointPort": 19081,
-                     "LeaseDriverEndpointPort": 19002,
-                     "ClusterConnectionEndpointPort": 19001,
-                     "ServiceConnectionEndpointPort": 19003,
-                     "ApplicationPorts": {
-                       "StartPort": 20001,
-                       "EndPort": 20031
-                     },
-                     "IsPrimary": false
-              }
-       ],
+    if(-not $Test)
+    {
+        $NewNodeType = $SectionToAdd | ConvertFrom-Json
+        $ClusterConfigObject.properties.nodeTypes += $NewNodeType
+        Update-D365FOClusterConfigurationVersion -ConfigJson $ClusterConfigObject -Minor
+        Save-D365FOJsonToFile -JsonObject $ClusterConfigObject -FilePath $ClusterConfigFilePath
+        Write-Host "SSISNodeType added to file '$ClusterConfigFilePath'"
+    }
+    else
+    {
+        Write-Host "SSISNodeType does not exists."
+    }
+} 
+else 
+{
+    Write-Host "SSISNodeType already exists."
+}
 
-   After:
 
-              {
-                     "AllowStatefulWorkloads": true,
-                     "Name": "MRType",
-                     "PlacementProperties": {
-                       "IsMREnabled": "True"
-                     },
-                     "ClientConnectionEndpointPort": 19000,
-                     "HttpGatewayEndpointPort": 19080,
-                     "ReverseProxyEndpointPort": 19081,
-                     "LeaseDriverEndpointPort": 19002,
-                     "ClusterConnectionEndpointPort": 19001,
-                     "ServiceConnectionEndpointPort": 19003,
-                     "ApplicationPorts": {
-                       "StartPort": 20001,
-                       "EndPort": 20031
-                     },
-                     "IsPrimary": false
-              },
-              {
-                     "name":  "SSISNodeType",
-                     "clientConnectionEndpointPort":  "19000",
-                     "clusterConnectionEndpointPort":  "19001",
-                     "leaseDriverEndpointPort":  "19002",
-                     "serviceConnectionEndpointPort":  "19003",
-                     "httpGatewayEndpointPort":  "19080",
-                     "reverseProxyEndpointPort":  "19081",
-                     "applicationPorts":  {
-                                                         "startPort":  "20001",
-                                                         "endPort":  "20031"
-                                                  },
-                     "ephemeralPorts":  {
-                                                       "startPort":  "49152",
-                                                       "endPort":  "65535"
-                                                },
-                     "isPrimary":  false,
-                     "placementProperties":  {
-                                                              "HasSSIS":  "True"
-                                                       }
-              }
-       ],
-
-                Edit the ClusterConfigurationVersion version in the config to increase the value, example:
-
-                From:
-
-                "ClusterConfigurationVersion": "2.0.10"
-
-                To:
-
-                "ClusterConfigurationVersion": "2.0.11"
-
+```
 Update the Service Fabric cluster to add in the new node type:
 
 Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath C:\Temp\ClusterConfig.json
