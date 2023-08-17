@@ -11,6 +11,7 @@ ms.topic: faq
 ms.prod: 
 ms.technology:
 ms.custom:
+audience: Application User
 
 ---
 # Business performance analytics FAQ
