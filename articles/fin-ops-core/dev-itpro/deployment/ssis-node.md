@@ -26,7 +26,7 @@ search.app:
   - financeandoperationsonprem-docs
 ---
 
-# Add an SSIS Node
+# Add a SSIS node
 
 [!include[banner](../includes/banner.md)]
 
