@@ -60,7 +60,7 @@ This article explains how to add an SSIS node in an existing on-premises environ
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
 9. Follow [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms).
-10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](../../azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
+10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server)
 11. If this is the first time adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
 ```PowerShell
 <#
