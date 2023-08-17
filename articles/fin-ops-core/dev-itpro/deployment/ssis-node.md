@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: Add a SSIS Node to an existing environment
-description: This article explains how to add a SSIS node in an on-premises environment.
+title: Add an SSIS Node to an existing environment
+description: This article explains how to add an SSIS node in an on-premises environment.
 author: ttreen
 ms.date: 08/17/2023
 ms.topic: article
@@ -26,18 +26,18 @@ search.app:
   - financeandoperationsonprem-docs
 ---
 
-# Add a SSIS node
+# Add an SSIS node
 
 [!include[banner](../includes/banner.md)]
 
-This article explains add a SSIS node in an existing on-premises environment. SSIS nodes were introduced in version 10.0.32 (Platform Update 56) and are used by Data management framework.
+This article explains add an SSIS node in an existing on-premises environment. SSIS nodes were introduced in version 10.0.32 (Platform Update 56) and are used by Data management framework.
 
 ## Installation steps
 1. Confirm your environment is on version 10.0.32 (Platform update 56) or higher.
-2. Download and extract the latest setup scripts from Lifecycle Services - [Download the infrastructure scripts](./obtain-infrascripts-onprem.md#download-the-infrastructure-scripts).
+2. Download and extract the latest setup scripts from Lifecycle Services [Download the infrastructure scripts](./obtain-infrascripts-onprem.md#download-the-infrastructure-scripts).
    > [!IMPORTANT]
    > The scripts must be run from a computer on the same domain as the on-premises infrastructure.
-3. Update the infrastructure scripts - [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
+3. Update the infrastructure scripts. For more information, see [Update the infrastructure scripts](./obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 4. In the ConfigTemplate.xml file, in the SSISNodeType section, modify the SSIS node(s). Confirm the disabled parameter is false:
    ```XML
    <NodeType name="SSISNodeType" primary="false" namePrefix="SSIS" purpose="SSIS" disabled="false">
@@ -48,7 +48,7 @@ This article explains add a SSIS node in an existing on-premises environment. SS
       </VMList>
    </NodeType>
    ```
-5. Create the DIXF GMSA account. For more information, see [Step 8. Create gMSAs](./setup-deploy-on-premises-latest.md#setupgMSA). Option 1 will create just the new DIXF GMSA.
+5. Create the DIXF GMSA account. For more information, see [Step 8. Create gMSAs](./setup-deploy-on-premises-latest.md#setupgMSA). Option 1 creates just the new DIXF GMSA.
 6. Set up and edit a new file share for DIXF. For more information, see [Step 9. Set up file storage](./setup-deploy-on-premises-latest.md#setupfile).
    > [!NOTE]
    > In the ConfigTemplate.xml file, set the disabled property to **True** for any existing file shares.  
@@ -60,7 +60,7 @@ This article explains add a SSIS node in an existing on-premises environment. SS
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
 9. Follow [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms).
-10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluser](./azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
+10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](./azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
 11. If this is the first time adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
 
 #Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
@@ -68,7 +68,7 @@ Connect-ServiceFabricCluster
 
 Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
 
-   Open the config file you just exported above and find the “NodeTypes” section. At the end of the MRType section add in the new SSISNode as follows (highlighted):
+   Open the config file exported above and find the “NodeTypes” section. At the end of the MRType section, add in the SSISNode as follows (highlighted):
 
    Before:
 
@@ -154,11 +154,11 @@ Start-ServiceFabricClusterConfigurationUpgrade -ClusterConfigPath C:\Temp\Cluste
 
 a)	In Service fabric explorer, select **Cluster**. Note the Microsoft service fabric cluster version.
 b)	On one of the orchestrator nodes, open File explorer. On the **View** tab, in the **Show/hide** group, confirm the **File name extensions** and **Hidden items** checkboxes are selected.
-c)	Expand drive C, and drill down into the following folder: (The path will vary depending on the node name and setup.)
+c)	Expand drive C, and drill down into the following folder: (The path varies depending on the node name and setup.)
 C:\ProgramData\SF\ORCH1\Fabric\work\Applications\__FabricSystem\_App4294967295\work\Store\131811633624852852
 d)	There's a list of folders for various versions of Service fabric.
 e)	Open the folder with the same name as the version of Microsoft service fabric cluster noted earlier.
-f)	Locate and copcy the .cab file to C:\Temp. Rename the copied file MicrosoftAzureServiceFabric.cab.
+f)	Locate and copy the .cab file to C:\Temp. Rename the copied file MicrosoftAzureServiceFabric.cab.
 g)	Open a PowerShell command prompt window as admin.
 h)	Run the following command to connect to your Service fabric cluster. (Edit the command as needed.)
 
@@ -171,7 +171,7 @@ Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQD
 Repeat the step above for any additional DIXF Nodes.
 
 13.	Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set.
-  For more information, see [On prem implementations](./deployment/onprem-tsg-implementations.md). 
+  For more information, see [On-premises implementations](./deployment/onprem-tsg-implementations.md). 
 14.	Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process. 
 
 
