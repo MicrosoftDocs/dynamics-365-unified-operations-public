@@ -60,7 +60,7 @@ This article explains add an SSIS Node(s) in your existing on-premises environme
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
 9. Follow the steps in [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms)
-10. Update Service fabric to the latest version, before adding the new node. For more information, see [Update fabric cluser](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
+10. Update Service fabric to the latest version, before adding the new node. For more information, see [Update fabric cluser](./azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
 11. If this is the first time you’re adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
 
 #Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
@@ -68,9 +68,9 @@ Connect-ServiceFabricCluster
 
 Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
 
-                Open the config file you just exported above and find the “NodeTypes” section. At the end of the MRType section add in the new SSISNode as follows (highlighted):
+   Open the config file you just exported above and find the “NodeTypes” section. At the end of the MRType section add in the new SSISNode as follows (highlighted):
 
-                Before:
+   Before:
 
 {
                      "AllowStatefulWorkloads": true,
@@ -92,7 +92,7 @@ Get-ServiceFabricClusterConfiguration > C:\Temp\ClusterConfig.json
               }
        ],
 
-                After:
+   After:
 
               {
                      "AllowStatefulWorkloads": true,
@@ -172,7 +172,7 @@ Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQD
 Repeat the step above for any additional DIXF Nodes.
 
 13.	Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set.
-  For more information, see [On prem implementations](/deployment/onprem-tsg-implementations). 
+  For more information, see [On prem implementations](./deployment/onprem-tsg-implementations.md). 
 14.	Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process. 
 
 
