@@ -16,6 +16,11 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/index.md",
+      "redirect_url": "welcome",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/dev-itpro/create-retail-experience-app.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/store-commerce",
       "redirect_document_id": "false"
