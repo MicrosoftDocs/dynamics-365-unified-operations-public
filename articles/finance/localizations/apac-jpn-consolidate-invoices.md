@@ -154,8 +154,8 @@ Before you can complete this scenario, you must have posted purchase invoices fr
 1. Go to **Accounts Payable -> Periodic tasks -> Consolidated invoice** page and click **New**. 
 1. Specify the required **Execution date** and **Consolidation date**. Add the **Vendor account** to the filter to select QII vendor(s). Click **OK**.
 1. Resulting consolidated invoice willl include all invoices posted previously in the specified period and in line with the filter criteria.
-1. Check the data and click on the **Consolidated invoice -> Confirm** button to change the invoice status to Confirmed, calculate consolidated taxes and tax adjustments, and create unposted tax transactions.
-1. Click **Consolidated Invoice -> Sales Tax** to open the **Temporary sales tax transactions** dialog page, which displays unposted sales tax transactions for the tax adjustments for the consolidated invoice.
+1. Check the data and click on the **Consolidated invoice -> Confirm** button to change the invoice status to Confirmed and calculate consolidated taxes.
+1. Click **Consolidated Invoice -> Sales Tax** to open the **Temporary sales tax transactions** dialog page, which displays sales tax transactions to adjust
 1. On the **Adjustment** tab, adjust **Actual consolidated tax amount** according to figures in the consolidated invoice from the vendor, 
 then click **Apply actual amounts** to apply adjusted actual sales tax amounts or **Reset actual from calculated amounts** to reset the adjustment. Click **OK**.
 1. On the Consolidated Invoice page, click **Consolidated Invoice -> Post** to post sales tax adjustments and a corresponding vendor transaction.
