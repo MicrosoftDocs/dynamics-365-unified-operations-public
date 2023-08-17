@@ -10,6 +10,7 @@ ms.date: 04/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
+audience: Application User
 ---
 
 # Create and edit business performance analytics reports
