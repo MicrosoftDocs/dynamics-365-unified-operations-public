@@ -60,7 +60,7 @@ This article explains add an SSIS node in an existing on-premises environment. S
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
 9. Follow [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms).
-10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](./azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
+10. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](../azure/service-fabric/service-fabric-cluster-upgrade-windows-server.md)
 11. If this is the first time adding in a DIXF node, add the node type to the existing Service fabric cluster. On one of the Orchestrator nodes, open an Admin PowerShell prompt and run the following commands:
 ```PowerShell
 <#
@@ -162,7 +162,7 @@ Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQD
 Repeat the step above for any additional DIXF Nodes.
 
 13.	Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set.
-  For more information, see [On-premises implementations](./deployment/onprem-tsg-implementations.md). 
+  For more information, see [On-premises implementations](../deployment/onprem-tsg-implementations.md). 
 14.	Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process. 
 
 
