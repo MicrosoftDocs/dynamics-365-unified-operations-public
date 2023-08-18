@@ -32,12 +32,12 @@ The same message structure logic applies for both the inbound and outbound shipm
     - Order line *n*
 - Complete
 
-This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) to create simple orders with minimal payload.
+This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders with minimal payload.
 
 The provided example data uses a process that doesn't depend on the default company for authorizing users, which means the messages must include a `dataAreaId` value.
 
 > [!NOTE]
-> To ease messages processing, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated with "{{" and "}}".
+> To ease messages processing, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated with "{{" and "}}".
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ For the inbound shipment order header message `InboundShipmentOrderMessages`, yo
 - `OrderNumber` = IO1
 - `ReceivingWarehouseId` = 51
 
-When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like this:
+When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like this:
 
 ``` JSON  example
 POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
@@ -116,7 +116,7 @@ For the outbound shipment order header message `OutboundShipmentOrderMessages`, 
 - `ConsigneeName` or `ReceiverName` = Microsoft  
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId` = USA
 
-When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like this:
+When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like this:
 
 ``` JSON
 POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages

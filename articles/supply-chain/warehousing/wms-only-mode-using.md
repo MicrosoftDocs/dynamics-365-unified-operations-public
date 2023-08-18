@@ -1,6 +1,6 @@
 ---
 title: Work with warehouse management only mode in Supply Chain Management
-description: XXXX
+description: This topic describes how to use Warehouse only mode to accomplish day-to-day warehousing tasks.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -86,7 +86,7 @@ Here's a high-level description of the inbound process:
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
-1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
+1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipts) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
 1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ## <a name="receiving-completed"></a>The receiving completed process

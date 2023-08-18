@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.19
 
 Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and additional information about it, such as the items and packaging.
 
-ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order or [inbound shipment order](warehouse-management-only-mode.md#inbound-shipment-orders) that was previously created.
+ASNs can help warehouse workers learn what is arriving when. Therefore, they can prepare. In addition, warehouse workers can use ASNs to match the details of a shipment to the related purchase order or [inbound shipment order](wms-only-mode-overview.md) that was previously created.
 
 This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
@@ -40,10 +40,7 @@ You import inbound ASNs by using the *Inbound ASN V3* and/or *Inbound ASN V5* co
 The *Inbound ASN* composite data entities are intended for asynchronous integration scenarios where, for example, XML file–based imports can be used.
 
 > [!NOTE]
-> Only the *Inbound ASN V5* data entity supports [inbound shipment orders](warehouse-management-only-mode.md#inbound-shipment-orders). The type of order must be specified as part of the ASN data, which can either be *InboundShipmentOrder* for inbound shipment orders, or *Purch* for purchase orders.
-
-> [!WARNING]
-> Don't use the *Inbound ASN V5* data entities. Use only the *Inbound ASN V5* entity. <!--KFM: what do we mean by this? Do we mean "don't use **V3* entities"? -->
+> Only the *Inbound ASN V5* data entity supports [inbound shipment orders](wms-only-mode-overview.md). The type of order must be specified as part of the ASN data, which can either be *InboundShipmentOrder* for inbound shipment orders, or *Purch* for purchase orders.
 
 ## XML format for importing V3 ASNs
 

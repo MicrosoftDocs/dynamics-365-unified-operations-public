@@ -1,10 +1,10 @@
 ---
 title: Warehouse management only mode frequently asked questions
-description: XXXX
+description: This article provides answers to frequently asked questions about warehouse management only mode.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.search.form:
 ms.topic: faq
 ms.date: 08/03/2023
 audience: Application User
@@ -32,7 +32,7 @@ If you have multiple messages with dependencies that are in the *Failed* state (
 
 ## Why do I need to provide a Country/Region field value for my outbound shipment order?
 
-Outbound shipment orders need to be able to create a shipping address. For this to happen, you must specify at least two field values: the [**Country/Region**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information) and a **Name**. The **Country/Region** value must match existing data in the [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup#set-up-countryregion-information). You can use the following message fields to provide the data:
+Outbound shipment orders need to be able to create a shipping address. For this to happen, you must specify at least two field values: the [**Country/Region**](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) and a **Name**. The **Country/Region** value must match existing data in the [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information). You can use the following message fields to provide the data:
 
 - `ConsigneeName`
 - `ConsigneeCountryRegionId`
@@ -43,7 +43,7 @@ See also [Master and reference data](wms-only-mode-exchange-data.md#master-data)
 
 ## Why does Supply Chain Management show all the modules instead of just those related to warehouse management?
 
-Warehouse management only mode is part of a larger Supply Chain Management deployment and thereby enables you to use all the integration points. To limit a user's access to other modules, you must only assign those [security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security) that are related to warehouse management processes. The relevant roles are:
+Warehouse management only mode is part of a larger Supply Chain Management deployment and thereby enables you to use all the integration points. To limit a user's access to other modules, you must only assign those [security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md) that are related to warehouse management processes. The relevant roles are:
 
 - *Warehouse manager* – Enable and review processes, maintain master data, and respond to inquiries.
 - *Warehouse mobile device user* – Access the *Warehouse Mobile Devices Portal* service.

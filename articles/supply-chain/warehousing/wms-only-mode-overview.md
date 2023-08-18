@@ -4,7 +4,7 @@ description: Warehouse management only mode lets you take advantage of the core 
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
+ms.search.form:
 ms.topic: overview
 ms.date: 08/03/2023
 audience: Application User
@@ -50,7 +50,7 @@ Here's a high-level description of the inbound process:
 1. Inbound loads are created manually, automatically, or by import (depending on your configuration)
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions
 1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
-1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
+1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipts) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
 1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-using.md)

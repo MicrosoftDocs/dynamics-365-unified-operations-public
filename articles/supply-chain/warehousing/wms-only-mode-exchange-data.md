@@ -33,7 +33,7 @@ You can use the inbound and outbound shipment order messages to inform Supply Ch
 
 Messages between systems are exchanged using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents normally used by Supply Chain Management (such as sales orders, purchase orders, transfer orders, and so on). This will, for example, simplify integration with ERP and order management systems and make Supply Chain Management warehouse management functionality available to a wide variety of external ERP and order management systems.
 
-Inbound shipment order and outbound shipment order messages can be exchanged using [Dataverse](/power-platform/admin/data-integrator.md) or through [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) using shipment order message entities.
+Inbound shipment order and outbound shipment order messages can be exchanged using [Dataverse](/power-platform/admin/data-integrator) or through [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) using shipment order message entities.
 
 Supply Chain Management queues the incoming documents and then processes them using the [message processor](warehouse-message-processor-messages.md), which ensures consistent data between the systems, both when it comes to master data (like products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job triggered by the [message processor](../supply-chain-dev/message-processor.md) using the *Shipment orders* message queue.
 

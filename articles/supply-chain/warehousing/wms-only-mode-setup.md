@@ -54,7 +54,7 @@ For more information about the release to warehouse process, see [Release to war
 
 ## <a name="number-sequences"></a>Set up number sequences
 
-If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** page, which includes the following extra number sequences, which are added for Warehouse Management only mode:
+If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** page, which includes the following extra number sequences, which are added for Warehouse Management only mode:
 
 - Outbound shipment order
 - Inbound shipment order
@@ -64,7 +64,7 @@ If the external system provides order numbers that aren't the same as those used
 - Load line inventory pick
 
 > [!TIP]
-> You can quickly enable all number sequences by using the **Generate** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) page.
+> You can quickly enable all number sequences by using the **Generate** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) page.
 
 ## Set up mobile device menu items
 

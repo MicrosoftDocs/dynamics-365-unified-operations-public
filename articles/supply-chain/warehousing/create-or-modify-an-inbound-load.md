@@ -39,7 +39,7 @@ To set your system to create inbound loads automatically for new inbound shipmen
 1. For your new or selected source system, expand the **Inbound shipment order policies** FastTab. The grid here might have several rows to establish policies for each of several order types and/or accounts, or you might have just one row that applies to all types and accounts. Use the FastTab toolbar to add or remove rows in the grid as needed.
 1. For each row where you'd like to automatically create inbound loads, set **Load synchronization policy** to *Full synchronization*.
 
-Now, an inbound load is created automatically each time you [import and process an inbound shipment order](warehouse-management-only-mode.md#simple-inbound-shipment-order-example) for the relevant source system, order type, and account.
+Now, an inbound load is created automatically each time you [import and process an inbound shipment order](wms-only-mode-overview.md) for the relevant source system, order type, and account.
 
 ## <a name="create-an-inbound-load-manually"></a>Create an inbound load manually from order lines
 
