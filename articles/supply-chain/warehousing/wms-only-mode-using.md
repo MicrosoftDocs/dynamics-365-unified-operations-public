@@ -68,7 +68,7 @@ If you're already familiar with Supply Chain Management, you might recognize thi
 In the current release, outbound shipment order lines don't provide out-of-the-box support for being associated with loads before they are [released to warehouse](release-to-warehouse-process.md). This association can only occur during the warehouse waving process.
 
 > [!WARNING]
-> On outbound shipment order lines, you can use the **Update line > Delivery remainder** option to update expected order line transaction quantities. Make sure that you have the proper user role security privilege assigned for this process, because (as with message editing) this allows for potential inconsistencies between the external systems and Supply Chain Management. <!--KFM: Clarify this sentence. What are the "proper user roles". It this the right terminology? How does "this" allow for inconsistencies? I generally don't get it. -->
+> On outbound shipment order lines, you can use the **Update line > Delivery remainder** option to update expected order line transaction quantities. Make sure that you have the proper user role security privilege assigned for this process, because (as with message editing) this allows for potential inconsistencies between the external systems and Supply Chain Management.
 
 ## Inbound process
 
@@ -95,7 +95,7 @@ The *receiving completed* process updates the load status to *Received* and gene
 
 Workers can trigger the receiving completed process manually from the load using either the web client or the Warehouse Management mobile app. To enable workers to use the Warehouse Management mobile app, set up a *Receiving completed confirmation* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 
-<!--KFM: This isn't clear. Where are these settings? --> Depending on the setting **Capture receiving completed packing slip**, as part of the **Warehouse management parameters - Loads** section, it's possible to capture a *packing slip ID* and a *date* for each of the shipments associated with an inbound load. The following settings are supported for the **Capture receiving completed packing slip**:
+You can choose whether or not workers should capture a packing slip ID and date for each shipment associated with an inbound load. To set this up, go to the, **Warehouse management parameters** and open the **Loads** tab. The choose one of the following settings for the **Capture receiving completed packing slip** field:
 
 - *Never* – Don't prompt for packing slip ID and date.
 - *Always* – Prompt for packing slip ID and date and only proceed when they are specified.
@@ -170,6 +170,7 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 <!-- 
 - (*Canceled*) – New planned state in future version instead of using the *Failed* state for messages that have been canceled. You can resend a message (for the same order) from the external system.
  -->
+
 > [!TIP]
 > Select the **Show old versions** option to follow manual message updates based on the **Replaced by message** field value.
 
