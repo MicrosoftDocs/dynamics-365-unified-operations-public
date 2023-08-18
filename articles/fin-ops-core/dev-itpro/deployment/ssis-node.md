@@ -212,33 +212,34 @@ if ($UpdateNodeTypes)
     Write-Host "NodeTypes reviewed and updated as needed"
 }
 ```
-1. Open Windows PowerShell in elevated mode, change the directory to the Infrastructure folder in your file share, and run the following commands. This will add in any new node types to the service fabric template file **ClusterConfig.json**
+12. Open Windows PowerShell in elevated mode, change the directory to the Infrastructure folder in your file share, and run the following commands. This will add in any new node types to the service fabric template file **ClusterConfig.json**
 ```PowerShell
 .\UpdateNodeTypes.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -UpdateNodeTypes
 ```
-1. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
-1. Add the new DIXF Node and follow these steps:
-a)	In Service fabric explorer, select **Cluster**. Note the Microsoft service fabric cluster version.
-b)	On one of the orchestrator nodes, open File explorer. On the **View** tab, in the **Show/hide** group, confirm the **File name extensions** and **Hidden items** checkboxes are selected.
-c)	Expand drive C, and drill down into the following folder: (The path varies depending on the node name and setup.)
-C:\ProgramData\SF\ORCH1\Fabric\work\Applications\__FabricSystem\_App4294967295\work\Store\131811633624852852
-d)	There's a list of folders for various versions of Service fabric.
-e)	Open the folder with the same name as the version of Microsoft service fabric cluster noted earlier.
-f)	Locate and copy the .cab file to C:\Temp. Rename the copied file MicrosoftAzureServiceFabric.cab.
-g)	Open a PowerShell command prompt window as admin.
-h)	Run the following command to connect to your Service fabric cluster. (Edit the command as needed.)
-
-#Connect to Service Fabric Cluster. Replace 123 with server/star thumbprint and use appropriate IP address.
-Connect-ServiceFabricCluster 
-
-i)	Before running the following command to add the node, update the NodeName, IPAddress, UpgradeDomain, and FaultDomain parameters. 
-
-Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQDN "10.179.108.22" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
-Repeat the step above for any additional DIXF Nodes.
-
-13.	Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set.
-  For more information, see [On-premises implementations](../deployment/onprem-tsg-implementations.md). 
-14.	Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process.
+13. Apply the updated configuration to your Service Fabric cluster by using the information in [Appendix A](#appendix-a) later in this article.
+14. Add the new DIXF Node and follow these steps:
+   - In Service fabric explorer, select **Cluster**. Note the Microsoft service fabric cluster version.
+   - On one of the orchestrator nodes, open File explorer. On the **View** tab, in the **Show/hide** group, confirm the **File name extensions** and **Hidden items** checkboxes are selected.
+   - Expand drive C, and drill down into the following folder: (The path varies depending on the node name and setup.), see example below:
+   ```
+   C:\ProgramData\SF\ORCH1\Fabric\work\Applications\__FabricSystem\_App4294967295\work\Store\131811633624852852
+   ```
+   - There's a list of folders for various versions of Service fabric.
+   - Open the folder with the same name as the version of Microsoft service fabric cluster noted earlier.
+   - Locate and copy the .cab file to C:\Temp. Rename the copied file MicrosoftAzureServiceFabric.cab.
+   - Open a PowerShell command prompt window as admin.
+   - Run the following command to connect to your Service fabric cluster. (Edit the command as needed.)
+   ```PowerShell
+   #Connect to Service Fabric Cluster. 
+   Connect-ServiceFabricCluster 
+   ```
+   - Before running the following command to add the node, update the NodeName, IPAddress, UpgradeDomain, and FaultDomain parameters. 
+   ```PowerShell
+   Add-ServiceFabricNode -NodeName "SSIS1" -NodeType "SSISNodeType" -IpAddressOrFQDN "10.179.108.22" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
+   ```
+   - Repeat the step above for any additional DIXF Nodes.
+1. Add in the predeployment script for enabling the DIXF Service. If you don’t have the base predeployment script, set up the script, and enable the script “TSG_EnableGMSAForAOS.ps1”. In the main predeployment script, uncomment out the line for the DIXF script, and confirm the DIXF share you created in the previous step is set. For more information, see [On-premises implementations](../deployment/onprem-tsg-implementations.md). 
+1. Log into LCS, select the project and environment. **Maintain** > **Update settings**. Click **Prepare**. After the config it downloaded, click **Update** in LCS to complete the process.
 
 ## <a name="appendix-a"></a>Appendix A
 After you generate the updated Service Fabric cluster configuration, run the following PowerShell commands to apply the upgrade to your Service Fabric cluster.
