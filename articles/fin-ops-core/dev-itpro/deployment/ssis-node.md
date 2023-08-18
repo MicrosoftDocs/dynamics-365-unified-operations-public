@@ -59,7 +59,7 @@ This article explains how to add an SSIS node in an existing on-premises environ
    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
    ```
-1. Follow [Step 12. Set up SSIS](./setup-deploy-on-premises-latest.md#setupvms).
+1. Setup the new VMS, follow [Step 14. Set up VMs](./setup-deploy-on-premises-latest.md#setupvms).
 1. Before adding the new node, update Service fabric to the latest version. For more information, see [Update fabric cluster](/azure/service-fabric/service-fabric-cluster-upgrade-windows-server)
 1. Copy the contents from the following PowerShell script, and save this into you Infrastructure scripts folder as **UpdateNodeTypes.ps1** 
 ```PowerShell
