@@ -65,12 +65,12 @@ For general information, see [Sales tax overview](../general-ledger/indirect-tax
 - Create different **sales tax codes** for purchases from **qualified and non-qualified vendors**. You can use the same sales tax codes for purchases from qualified vendors and for sales.
 - Turn on **Round deductible tax amount first** in the sales tax codes to ensure correct rounding in purchase invoices from non-qualified suppliers.
 - Set up all sales tax codes with these settings: **Tax type** (*Standard for QIIs and Reduced for non-QIIs*), **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**. Also configure **rounding** as required.
-- Set up **transitional periods** for purchase tax credit using non-deductible percentage in **sales tax code values** as follows:
-    - add a separate row for every period and enter **From / To dates** accordingly,
-	- fill in the **tax rate** for the periods,
-	- specify the **non deductible %** for the periods.
-- Set up **sales tax groups for JCT**: different groups for **qualified vendors** and for **non-qualified vendors**.
-- Set up **item sales tax groups** for the **standard rate** and the **reduced rate**.
+- Set up transitional periods for purchase tax credit using non-deductible percentage in **sales tax code values** as follows:
+    - add a separate row for every period and enter **From / To date** accordingly,
+	- fill in the **tax rate** in **Value** field,
+	- specify **Non deductible %** for the periods.
+- Set up **Sales tax groups for JCT**: different groups for **qualified vendors** and for **non-qualified vendors**.
+- Set up **Item sales tax groups** for the **standard rate** and the **reduced rate**.
 - Specify sales tax groups on vendor and customer records: different groups for qualified vendors and for non-qualified vendors.
 - Specify item sales tax groups on items: for the standard rate and for the reduced rate.
 
