@@ -45,13 +45,13 @@ The following illustration highlights the various elements of the inbound proces
 
 Here's a high-level description of the inbound process:
 
-1. An external system submits an *inbound shipment order* message to Supply Chian Management.
-1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. An external system submits an *inbound shipment order* message to Supply Chain Management.
+1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. Inbound loads are created manually, automatically, or by import (depending on your configuration)
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions
-1. Supply Chian Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
+1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
 1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
-1. Supply Chian Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-using.md)
 
@@ -63,15 +63,15 @@ The following illustration highlights the various elements of the outbound proce
 
 Here's a high-level description of the outbound process:
 
-1. An external system submits an *outbound shipment order* messages.
-1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. An external system submits an *outbound shipment order* message.
+1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. Inventory reservations are created manually or automatically (depending on your configuration).
-1. The orders is released for further warehouse processing, either manually or automatically.
+1. The orders are released for further warehouse processing, either manually or automatically.
 1. Depending on how your [wave template](wave-templates.md) definitions are set up, warehouse work may be created and released immediately.
 1. The outbound warehouse work is processed and the status of the related outbound shipment order line transactions are updated *Picked*.
 1. The loads are outbound ship confirmed, which results in *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) being created for the external system.
 1. The external system reads the shipment packing slip and uses its data for further processing (such as for sales order invoicing for sales orders that are associated with outbound shipment orders).
-1. Supply Chian Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+1. Supply Chain Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 For a more detailed description of this process and the related processes, see [Work with warehouse management only mode in Supply Chain Management](wms-only-mode-using.md)
 
@@ -89,7 +89,7 @@ The following high-level processes aren't supported out-of-the-box when Supply C
 | Production flows | Production order, batch order, and kanban processing, including material consumption and report-as-finished via the Warehouse Management mobile app aren't supported by the inbound shipment orders and outbound shipment orders. |
 | Outbound load planning with release to warehouse from loads | The current release of the Warehouse management only mode doesn't provide out-of-the-box support for associating outbound shipment order lines with loads before the [release to warehouse](release-to-warehouse-process.md) process. This association can only be made when processing warehouse waves. Therefore, Supply Chain Management Transportation management integration isn't supported out-of-the-box. |
 | Creation of orders from warehouse app | The process of creating outbound shipment orders from the Warehouse Management mobile app (similar to the *Create transfer order from license plates* process for mobile devices) isn't supported. |
-| Internal order processing information provided to external systems | When you are using the supported orders in Supply Chain Management (such as transfer, sales, purchase, production, and so on), all the related business process data are automatically maintained within Supply Chain Management, but no business events or related inbound and outbound on-hand information will be provided to external systems for these kinds of processes. This means that if you, for example, create a transfer order and ship inventory out of one warehouse and receive it into another within Supply Chain Management, you must use a method different from the one described for inbound shipment orders and outbound shipment orders to inform the external systems about the operations. |
+| Internal order processing information provided to external systems | When you're using the supported orders in Supply Chain Management (such as transfer, sales, purchase, production, and so on), all the related business process data are automatically maintained within Supply Chain Management, but no business events or related inbound and outbound on-hand information will be provided to external systems for these kinds of processes. This means that if you, for example, create a transfer order and ship inventory out of one warehouse and receive it into another within Supply Chain Management, you must use a method different from the one described for inbound shipment orders and outbound shipment orders to inform the external systems about the operations. |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the *allow reservation on demand order* capability | *Outbound shipment order line* transaction reservations don't support having reservations on inventory dimensions below the location in the reservation hierarchy (these are supported for *Sales order line* transactions). |
 | [Owner dimension](../inventory/consignment.md#inventory-owners) values different from operating legal entity | It isn't yet supported to import and process shipment order lines where the *Owner* tracking dimension value is different from the used legal entity (company).  |
 | Items enabled for [catch weight processing](catch-weight-processing.md) | Items enabled for catch weight processing aren't supported for inbound shipping orders or outbound shipping orders. |

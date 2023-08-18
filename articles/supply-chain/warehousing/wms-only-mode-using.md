@@ -65,12 +65,12 @@ The following **Shipment status** values are available:
 
 If you're already familiar with Supply Chain Management, you might recognize this document as being similar to a simplified sales order that uses some of the same reservation and [release to warehouse](release-to-warehouse-process.md) processes. Use the [Source systems](wms-only-mode-setup.md#source-systems) settings to control whether to trigger reservations automatically when importing documents and/or to automatically reject shipment orders that can't be partly or fully reserved.
 
-In the current release, outbound shipment order lines don't provide out-of-the-box support for being associated with loads before they are [released to warehouse](release-to-warehouse-process.md). This association can only occur during the warehouse waving process.
+In the current release, outbound shipment order lines don't provide out-of-the-box support for being associated with loads before they're [released to warehouse](release-to-warehouse-process.md). This association can only occur during the warehouse waving process.
 
 > [!WARNING]
 > On outbound shipment order lines, you can use the **Update line > Delivery remainder** option to update expected order line transaction quantities. Make sure that you have the proper user role security privilege assigned for this process, because (as with message editing) this allows for potential inconsistencies between the external systems and Supply Chain Management.
 
-## Inbound process
+## The inbound process
 
 The following illustration highlights the various elements of the inbound process.
 
@@ -78,16 +78,16 @@ The following illustration highlights the various elements of the inbound proces
 
 Here's a high-level description of the inbound process:
 
-1. An external system submits an *inbound shipment order* message to Supply Chian Management.
-1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. An external system submits an *inbound shipment order* message to Supply Chain Management.
+1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. Inbound loads are created in one of three ways (as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management):
     - Manually, using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
-1. Supply Chian Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
+1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes related for each relevant load. These processes update the load status to *Received* and generate [shipment receipts](wms-only-mode-using.md#shipment-receipts) and trigger *business events** for the external systems.
 1. The external systems read and uses the [shipment receipts](wms-only-mode-using.md#shipment-receipt) data for further processing, such as purchase order invoicing if you have purchase orders associated with the inbound shipment orders in the external system.
-1. Supply Chian Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+1. Supply Chain Management finalizes the inbound shipment orders by running the *Post shipment receipts* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 ## <a name="receiving-completed"></a>The receiving completed process
 
@@ -95,10 +95,10 @@ The *receiving completed* process updates the load status to *Received* and gene
 
 Workers can trigger the receiving completed process manually from the load using either the web client or the Warehouse Management mobile app. To enable workers to use the Warehouse Management mobile app, set up a *Receiving completed confirmation* mobile device menu item, which you can add as part of a [detour](warehouse-app-detours.md) within the inbound receiving flows.
 
-You can choose whether or not workers should capture a packing slip ID and date for each shipment associated with an inbound load. To set this up, go to the, **Warehouse management parameters** and open the **Loads** tab. The choose one of the following settings for the **Capture receiving completed packing slip** field:
+You can choose whether or not workers should capture a packing slip ID and date for each shipment associated with an inbound load. To set this up, go to the, **Warehouse management parameters** and open the **Loads** tab. Then choose one of the following settings for the **Capture receiving completed packing slip** field:
 
 - *Never* – Don't prompt for packing slip ID and date.
-- *Always* – Prompt for packing slip ID and date and only proceed when they are specified.
+- *Always* – Prompt for packing slip ID and date and only proceed when they're specified.
 - *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ To see all of the background processes that you have running, go to [**System ad
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads associated with purchase orders, you probably need to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. You can do this by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the **Reference** field with *Criteria = Inbound shipment order*.
 
-## Outbound process
+## The outbound process
 
 The following illustration highlights the various elements of the outbound process.
 
@@ -127,25 +127,25 @@ The following illustration highlights the various elements of the outbound proce
 Here's a high-level description of the outbound process:
 
 1. An external system submits an *outbound shipment order* messages.
-1. Supply Chian Management processes the message in Warehouse management only mode and creates orders.
+1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. Inventory reservations are created in one of two ways (as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management):
     - Automatically, by the [message processor](../supply-chain-dev/message-processor.md)
     - Manually, as part of the release process
-1. The orders is released for further warehouse processing, either manually or automatically (by running the *Automatic release of outbound shipment orders* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)).
+1. The orders are released for further warehouse processing, either manually or automatically (by running the *Automatic release of outbound shipment orders* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md)).
 1. Depending on how your [wave template](wave-templates.md) definitions are set up, warehouse work may be created and released immediately.
 1. The outbound warehouse work is processed and the status of the related outbound shipment order line transactions are updated *Picked*.
 1. The loads are outbound ship confirmed, which results in *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) being created for the external system.
 1. The external system reads the shipment packing slip and uses its data for further processing (such as for sales order invoicing for sales orders that are associated with outbound shipment orders).
-1. Supply Chian Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+1. Supply Chain Management finalizes the outbound shipment order by running the *Post shipment packing slips* [batch job](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 > [!NOTE]
 > You'll be able to reverse the shipment confirmation until the related outbound shipment order line transactions is finalized, but not thereafter.
 
 ## <a name="shipment-packing-slips"></a>Shipment packing slips
 
-Go to **Warehouse management > Inquiries and reports > Shipment packing slips** to view detailed line transactions related to shipped inventory and print a report using the **Preview/Print** option. You can control the printed inventory dimension values by going to **Warehouse management > Setup > Warehouse management parameters - Reports - Shipment packing slip**. <!--KFM: Clarify this path -->
+Go to **Warehouse management > Inquiries and reports > Shipment packing slips** to view detailed line transactions related to shipped inventory and print a report using the **Preview/Print** option. To control the printed inventory dimension values, go to **Warehouse management > Setup > Warehouse management parameters**, open the **Reports** tab and select an option for **Shipment packing slip**.
 
-Shipment packing slip data is version controlled and you can follow the **Posting status** on the header. The **Posting status** changes from *Ready for posting* to *Posted* as part of the *Post shipment packing slips* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job, which is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that related outbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
+Shipment packing slip data is version-controlled, and you can follow the **Posting status** in the header. The **Posting status** changes from *Ready for posting* to *Posted* as part of the *Post shipment packing slips* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job, which is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The source system setup also lets you schedule the batch job, which ensures that related outbound shipment order line transactions are moved to a finalized transaction state for the Warehouse management module.
 
 To see all of the background processes that you have running, go to [**System administration > Setup > Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
@@ -175,4 +175,4 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 > Select the **Show old versions** option to follow manual message updates based on the **Replaced by message** field value.
 
 > [!WARNING]
-> Making manual message field updates in production environments can result in data inconsistency between the external source system and Supply Chain Management. For example, you might change an **Item number** to a value that isn't known to the external system. This type of update will probably cause problems in progress information flows and it might even be impossible to correct it in the external system. Make sure to have the proper user role security privilege assigned for this process. <!--KFM: This last sentence doesn't seem to fit here. What do we mean? -->
+> Making manual message field updates in production environments can result in data inconsistency between the external source system and Supply Chain Management. For example, you might change an **Item number** to a value that isn't known to the external system. This type of update will probably cause problems in progress information flows and it might even be impossible to correct it in the external system. We recommend that you use user roles and security privileges to restrict access to this functionality to as few people as possible.

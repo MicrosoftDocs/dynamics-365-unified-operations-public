@@ -39,10 +39,10 @@ Use the **Source systems** page to set up each external system that you want to 
     - To create a new record, select **New** on the Action Pane.
     - To edit an existing record, select it on the list pane and then select **Edit** on the Action Pane.
     - To delete an existing record, select it on the list pane and then select **Delete** on the Action Pane.
-1. In the header of your new or selected record, enter a **Source system** name. The source system must include a this name in each message that it sends to Supply Chain Management, and it must match exactly the value specified here.
+1. In the header of your new or selected record, enter a **Source system** name. The source system must include this name in each message that it sends to Supply Chain Management, and it must match exactly the value specified here.
 1. Make other settings as needed to control the shipment order import processes. Tooltip help is provided for each field (hover your mouse pointer over a label to see it).
 1. On the Action Pane, select **Save**.
-1. On the Action pane, select **Message value mapping** to open a dialog where you can define how items and warehouses are uniquely identified in incoming documents. You can also choose whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. Select **OK** when you are done making settings here.
+1. On the Action pane, select **Message value mapping** to open a dialog where you can define how items and warehouses are uniquely identified in incoming documents. You can also choose whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. Select **OK** when you're done making settings here.
 
 ## Set up automatic release of outbound shipment orders
 
@@ -54,9 +54,7 @@ For more information about the release to warehouse process, see [Release to war
 
 ## <a name="number-sequences"></a>Set up number sequences
 
-<!--KFM: I moved this here from the example topic. Was I right to do this? -->
-
-If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** page, which includes the following extra number sequences:
+If the external system provides order numbers that aren't the same as those used in Supply Chain Management, you must set up [number sequences](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview) for *Outbound shipment orders* and *Inbound shipment orders*. Define all the number sequences associated with the **Warehouse management > Setup > Warehouse management parameters > Number sequences** page, which includes the following extra number sequences, which are added for Warehouse Management only mode:
 
 - Outbound shipment order
 - Inbound shipment order
@@ -70,7 +68,7 @@ If the external system provides order numbers that aren't the same as those used
 
 ## Set up mobile device menu items
 
-To enable warehouse workers to use the Warehouse Management mobile app to register inbound shipment transactions, you must set up one or more mobile device menu items that use one following [processes](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) (each of which requires an inbound load): <!-- KFM: I copied this here. Please confirm. -->
+To enable warehouse workers to use the Warehouse Management mobile app to register inbound shipment transactions, you must set up one or more mobile device menu items that use one following [processes](configure-mobile-devices-warehouse.md#configure-menu-items-to-create-work-for-another-worker-or-process) (each of which requires an inbound load):
 
 - *License plate receiving (and put away)*
 - *Load item receiving (and put away)*
@@ -84,4 +82,4 @@ For more information, see [Set up mobile devices for warehouse work](configure-m
 
 ## Set up master data and business events
 
-To enable Supply Chain Management to exchange meaningful information with an external system, some master and reference data must be synchronized between the two system (such as released products, item model groups, and countries/regions). You must also set up business events to manage the exchange of information between the two systems. For details about this, see [Exchange data between systems](wms-only-mode-exchange-data.md).
+To enable Supply Chain Management to exchange meaningful information with an external system, some master and reference data must be synchronized between the two systems (such as released products, item model groups, and countries/regions). You must also set up business events to manage the exchange of information between the two systems. For details about this, see [Exchange data between systems](wms-only-mode-exchange-data.md).

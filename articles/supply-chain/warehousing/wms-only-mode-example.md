@@ -21,7 +21,7 @@ ms.custom: bap-template
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders. It uses the standard sample data associated with the *USMF* example legal entity.
 
-To create inbound and outbound shipment orders, a message must be posted using [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. That message must then be processed by the [message processor](../supply-chain-dev/message-processor.md) in Supply Chain Management, which will create the orders in the warehouse system.
+To create inbound and outbound shipment orders, a message must be posted using [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) requests. The [message processor](../supply-chain-dev/message-processor.md) in Supply Chain Management then processes the message, which creates the orders in the warehouse system.
 
 The same message structure logic applies for both the inbound and outbound shipment order messages. The structure is as follows:
 
@@ -50,8 +50,6 @@ Before you can work through this example using a Supply Chain Management environ
 
 ## Set up authentication for this example
 
-<!--KFM: Move or include this in the setup topic? -->
-
 On the **Microsoft Entra ID applications** page, assign the *Admin* user (or a user having authentication access to the integration messages, like the default *Warehouse System Integration Operator* role) to the client that is used for authentication while interacting with the Supply Chain Management environment from an external source. If you use the same user as part of the product master data import, you must add more privileges related to product master data entities to the *Warehouse System Integration Operator* role.
 
 When posting entities via [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md), you must ensure that either the user's default company matches the company to which the entity will be posted or that the company (`dataAreaId`) is specified in the request payload messages. Either way, the company (`dataAreId`) must be specified to complete shipment order messages.
@@ -68,7 +66,7 @@ For the inbound shipment order header message `InboundShipmentOrderMessages`, yo
 - `OrderNumber` = IO1
 - `ReceivingWarehouseId` = 51
 
-Using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message will look like this:
+When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `InboundShipmentOrderMessages` message looks like this:
 
 ``` JSON  example
 POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages
@@ -97,7 +95,7 @@ POST {{EnvironmentUrl}}/data/InboundShipmentOrderLineMessages
 }
 ```
 
-Post a *complete* message for the header and lines to commit the messages.  he complete message will look something like this:
+Post a *complete* message for the header and lines to commit the messages. The complete message looks something like this:
 
 ``` JSON
 POST {{EnvironmentUrl}}/data/InboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true
@@ -118,7 +116,7 @@ For the outbound shipment order header message `OutboundShipmentOrderMessages`, 
 - `ConsigneeName` or `ReceiverName` = Microsoft  
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId` = USA
 
-Using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message will look like this:
+When using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test#query-odata-by-using-postman) with variables, the `OutboundShipmentOrderMessages` message looks like this:
 
 ``` JSON
 POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages
@@ -149,7 +147,7 @@ POST {{EnvironmentUrl}}/data/OutboundShipmentOrderLineMessages
 }
 ```
 
-Post a *complete* message for the header to commit the messages. The complete message will look something like this:
+Post a *complete* message for the header to commit the messages. The complete message looks something like this:
 
 ``` JSON
 POST {{EnvironmentUrl}}/data/OutboundShipmentOrderMessages(MessageId='{{MessageId}}', dataAreaId='{{dataAreaId}}',SourceSystemId='{{SourceSystem}}', OrderNumber='{{OrderNumber}}')/Microsoft.Dynamics.DataEntities.Complete?cross-company=true

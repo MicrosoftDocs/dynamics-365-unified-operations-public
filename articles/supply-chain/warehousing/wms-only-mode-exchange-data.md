@@ -1,6 +1,6 @@
 ---
 title: Exchange data between systems
-description: This topic describes how to exchange data and business events between systems in Warehouse management only mode.
+description: This article describes how to exchange data and business events between systems in Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
@@ -35,7 +35,7 @@ Messages between systems are exchanged using lightweight *inbound shipment order
 
 Inbound shipment order and outbound shipment order messages can be exchanged using [Dataverse](/power-platform/admin/data-integrator.md) or through [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) using shipment order message entities.
 
-Incoming documents are queued and then processed by the Supply Chain Management [message processor](warehouse-message-processor-messages.md), which ensures consistent data between the systems, both when it comes to master data (like products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job triggered by the [message processor](../supply-chain-dev/message-processor.md) using the *Shipment orders* message queue.
+Supply Chain Management queues the incoming documents and then processes them using the [message processor](warehouse-message-processor-messages.md), which ensures consistent data between the systems, both when it comes to master data (like products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job triggered by the [message processor](../supply-chain-dev/message-processor.md) using the *Shipment orders* message queue.
 
 This following image shows how the message processor fits into an integrated system.
 
@@ -47,10 +47,10 @@ To enable consistent communication, several types of master and reference data m
 
 - **Released products** – This data is required for creating inbound and outbound shipment orders. For more information about how to import product information, see [Product data entities](../pim/data-entities.md) and [Overview of ProductInformationManagement](/common-data-model/schema/core/operationscommon/entities/supplychain/productinformationmanagement/overview).
 
-- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management, so you must have at least one group available. Each group that you will use with Warehouse management only mode must have the following settings, which will eliminate the need to set up any costing data for these products:
+- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management, so you must have at least one group available. Each group that you'll use with Warehouse management only mode must have the following settings, which will eliminate the need to set up any costing data for these products:
     - **Inventory model** – Set to *Non-valuated*
-    - **Post physical inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
-    - **Post financial inventory** – Turned off. You you can ony choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
+    - **Post physical inventory** – Turned off. You you can only choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
+    - **Post financial inventory** – Turned off. You you can only choose this option provided you already set up at least one [source system record](wms-only-mode-setup.md).
 
 - **Countries/regions** – Each [country/region](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-countryregion-information) where you do business must be defined in Supply Chain Management. These records are used in outbound shipment orders to create addresses. You'll also need this data to [create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md) for the warehouses. Depending on your [address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) and the way you use address fields in  order messages, you might need to create additional data before you'll be able to import order messages (for example, to support state and county combinations).
 

@@ -39,7 +39,7 @@ Outbound shipment orders need to be able to create a shipping address. For this 
 - `ReceiverName`
 - `ReceiverCountryRegionId`
 
-See also see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+See also [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why does Supply Chain Management show all the modules instead of just those related to warehouse management?
 
@@ -59,17 +59,16 @@ Usually, Supply Chain Management requires that you configure several costing and
 
 ## Why do I get the error "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form." when processing warehouse operations?
 
-Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [leger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features, and associating those item model groups with the relevant released products. For details, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [ledger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features, and associating those item model groups with the relevant released products. For details, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
-## Why do I get the error "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
+## Why do I get the error "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form." when processing different order types?
 
-Warehouse management only mode only uses two types of documents: *inbound shipment orders* and *outbound shipment orders*. All other types of documents (such as *sales orders* or *purchase orders*) can only be processed provided that you have configured the required costing and general ledger options, regardless of your [item model group setup](wms-only-mode-exchange-data.md#master-data).
+Warehouse management only mode uses just two types of documents: *inbound shipment orders* and *outbound shipment orders*. All other types of documents (such as *sales orders* or *purchase orders*) can only be processed if you have configured the required costing and general ledger options, regardless of your [item model group setup](wms-only-mode-exchange-data.md#master-data).
 
 ## Why can't I just **Receive complete** what I have partly inbound registered
 
-Depending on your setup an inbound load will either automatically get created as part of the *Inbound shipment order* import, via *ASN* import or via a manual process. In the current version the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must be triggered manually.
-<!-- Delivery policy -->
+Depending on your setup an inbound load will either automatically get created as part of the inbound shipment order import, via ASN import, or via a manual process. In the current version, the load line quantities must be fulfilled according to over-/under-delivery settings and the **Receiving completed** must be triggered manually.
 
-## Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing **Update product receipts** process?
+## Why do I see the error "Unable to update product receipt for a load with inbound shipment order lines" for my existing "Update product receipts" process?
 
-In case of enabling the *Warehouse management only mode* capability and already running a periodic **Update product receipts** batch job for loads associated with purchase orders, you'll need to update the query for the batch job to exclude the inventory transaction updates for the *inbound shipment orders*. This can easily be done by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the *Reference* field with *Criteria* = Inbound shipment order.
+If you enable *Warehouse management only mode* and are already running a periodic *Update product receipts* batch job for loads associated with purchase orders, you'll need to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. You can do this by adding the *Load details* entity with a *NotExist* join to the *Loads* entity followed by a range definition for the *Reference* field with **Criteria** = *Inbound shipment order*.
