@@ -40,7 +40,7 @@ You import inbound ASNs by using the *Inbound ASN V3* and/or *Inbound ASN V5* co
 The *Inbound ASN* composite data entities are intended for asynchronous integration scenarios where, for example, XML file–based imports can be used.
 
 > [!NOTE]
-> Only the *Inbound ASN V5* data entity supports [inbound shipment orders](wms-only-mode-overview.md). The type of order must be specified as part of the ASN data, which can either be *InboundShipmentOrder* for inbound shipment orders, or *Purch* for purchase orders.
+> Only the *Inbound ASN V5* data entity supports [inbound shipment orders](wms-only-mode-overview.md). The type of order must be specified as part of the ASN data, which can be either *InboundShipmentOrder* for inbound shipment orders or *Purch* for purchase orders.
 
 ## XML format for importing V3 ASNs
 
@@ -133,10 +133,10 @@ The following example shows an XML file for importing vendor shipments for multi
 
 ## Example of using the Inbound ASN V5 entity
 
-This section provides an example of an ASN XML import file for inbound shipment orders for use with the *Inbound ASN V5* entity.
+This section provides an example of an ASN XML import file for inbound shipment orders that can be used with the *Inbound ASN V5* entity.
 
 > [!NOTE]
-> The *Inbound ASN V5* entity supports the `MODULE` attribute for both the `WHSInboundLoadPackingStructureEntity` and the `WHSInboundLoadPackingStructureLineV5Entity` elements. This attribute can be used for both purchase orders (`MODULE="Purch"`) and inbound shipment orders (`MODULE="InboundShipmentOrder"`).
+> The *Inbound ASN V5* entity supports the `MODULE` attribute for both the `WHSInboundLoadPackingStructureEntity` element and the `WHSInboundLoadPackingStructureLineV5Entity` element. This attribute can be used for both purchase orders (`MODULE="Purch"`) and inbound shipment orders (`MODULE="InboundShipmentOrder"`).
 
 The following example shows an XML file for importing shipments for an inbound shipment order that doesn't include case details.
 
