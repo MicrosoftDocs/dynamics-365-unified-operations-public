@@ -66,7 +66,7 @@ For general information, see [Sales tax overview](../general-ledger/indirect-tax
 - Turn on **Round deductible tax amount first** in the sales tax codes to ensure correct rounding in purchase invoices from non-qualified suppliers.
 - Set up all sales tax codes with these settings: **Tax type** (*Standard for QIIs and Reduced for non-QIIs*), **Origin = Percentage of net amount**, **Marginal base = Net amount of invoice balance**, **Calculation method = Whole amount**. Also configure **rounding** as required.
 - Set up transitional periods for purchase tax credit using non-deductible percentage in **sales tax code values** as follows:
-    - add a separate row for every period and enter **From / To date** accordingly,
+    - add a separate row for every transition period and enter **From / To date** accordingly,
 	- fill in the **tax rate** in **Value** field,
 	- specify **Non deductible %** for the periods.
 - Set up **Sales tax groups for JCT**: different groups for **qualified vendors** and for **non-qualified vendors**.
