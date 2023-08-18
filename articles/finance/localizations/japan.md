@@ -89,8 +89,8 @@ This article includes information and links to resources that can help you set u
 -  [Input journal in T account form](tasks/jp-00005-input-journal-t-account-form-japan.md)
 
 ## Invoicing
--  [Configure consolidated invoice parameters and setup for accounts payable](tasks/consolidated-invoice-parameters-setup-accounts-payable.md)
 -  [Qualified Invoice System](apac-jpn-qualified-invoice-system.md)
+-  [Configure consolidated invoice parameters and setup for accounts payable](tasks/consolidated-invoice-parameters-setup-accounts-payable.md)
 -  [Consolidated invoices](apac-jpn-consolidate-invoices.md)
 -  [Create and confirm a customer consolidated invoice](tasks/create-confirm-customer-consolidated-invoice.md)
 -  [Create and confirm a vendor consolidated invoice](tasks/create-confirm-vendor-consolidated-invoice.md)
