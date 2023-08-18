@@ -21,7 +21,7 @@ To use advanced export control, your system must meet the following requirements
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
 - The feature that is named *(Preview) Advanced export control configuration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - Your Supply Chain Management environment must be [linked to a Dataverse environment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
-- You must install the advanced export control solution for Supply Chain Management from the Microsoft commercial marketplace. For instructions, see [Microsoft Dynamics 365 Export Control App](https://appsource.microsoft.com/product/dynamics-365/mscrm.exportcontrol). <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? What is this and why do we need it?  -->
+- You must install the advanced export control solution for Supply Chain Management from the Microsoft Power Platfomr Admin Center, see [Microsoft Dynamics 365 Export Control App]((https://admin.powerplatform.microsoft.com). Select your environment and under **Install app** choose **Dynamics 365 Export Control**. <!-- KFM: Link doesn't work. Will there be instructions here? Where are we installing this, Dataverse or SCM? What is this and why do we need it? Beatriz: this has now changed, now we will be publishing from power platform admin center, removed the link from appsource -->
 
 ## Authentication and authorization
 
@@ -68,10 +68,10 @@ Follow these steps to enable the functionality and configure the application in 
 1. Sign in to Supply Chain Management.
 1. Go to **Product information management \> Setup \> Product compliance \> Country of Origin \> (Preview) Advanced export control configuration**.
 1. On the **General** tab, make the following settings:
-    - **Advanced export control functionality enabled** – Set to *Yes*. <!--KFM: Explain what this setting means. -->
-    - **Validate data in Dataverse** – Set to *Yes*. <!--KFM: Explain what this setting means. What if I don't set this? -->
+    - **Advanced export control functionality enabled** – Set to *Yes* to use the functionality described in this page. <!--KFM: Explain what this setting means. -->
+    - **Validate data in Dataverse** – Set to *Yes*. It ensures that the sales orders and shipments are checked for the rules established in the dataverse app to confirm if it is allowed to sell or ship according to the rules and exceptions.<!--KFM: Explain what this setting means. What if I don't set this? -->
     - **Track sales order check history** – <!--KFM: Description needed. -->
-    - **Linked Dataverse environment URL** – <!--KFM: Description needed. -->
+    - **Linked Dataverse environment URL** – URL of the environment in dataverse where the Advanced export control solution containing the rules is hold. <!--KFM: Description needed. done -->
     - **Application ID** – Paste the application ID for your new app, which you should have copied when you registered the app in your Azure portal.
     - **Application secret** – Paste the client secret for your new app, which you should have copied when you registered the app in your Azure portal.
 1. On the Action Pane, select **Save**. The system checks whether it can connect and that the appropriate solution is installed. If you receive any errors, then make sure the Advanced Export Control solution is successfully installed and that the specified Azure AD application has the *Export control application* security role in Dataverse.
