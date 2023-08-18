@@ -1,28 +1,26 @@
 ---
-title: Payments Workspace in Headquarters
-description: This article provides an overview of the new Payments Workspace in Headquarters for Microsoft Dynamics 365 Commerce.
+title: Payments workspace in Commerce headquarters
+description: This article describes the Payments workspace in Microsoft Dynamics 365 Commerce headquarters.
 author: BrianShook
-ms.date: 08/15/2023
+ms.date: 09/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2023-08-15
-ms.dyn365.ops.version: 10.0.37
-ms.search.industry: Retail
+
 ---
-# Payment workspace in Headquarters
+
+# Payments workspace in Commerce headquarters
 
 [!include[banner](../includes/banner.md)]
 
-This article provides an overview of the new Payment workspace in Headquarters for Microsoft Dynamics 365 Commerce.
+This article describes the Payments workspace in Microsoft Dynamics 365 Commerce headquarters.
 
-Dynamics 365 Finance and Operations includes a collection of workspaces to assist users with pages containing common tasks, links, tiles, and more. These workspaces provide easier or aggregated views to perform their jobs more efficiently. In 10.0.37, Commerce has now added a **Payment workspace** to assist in payment connector and payment method configuration views for a one-stop view of common configurations for payment processing. The **Payment workspace** includes common channel and environment payment configuration views as well as common links to easily navigate to Headquarter payment configuration pages. This workspace assists in configuring, diagnosing configuration issues, and navigating through to the multiple pages within Headquarters in which common payment configurations occur.
+Dynamics 365 Commerce headquarters includes a collection of workspaces to assist users with pages containing common tasks, links, tiles, and more. These workspaces provide easier or aggregated views to perform their jobs more efficiently. In 10.0.37, Commerce has now added a **Payment workspace** to assist in payment connector and payment method configuration views for a one-stop view of common configurations for payment processing. The **Payment workspace** includes common channel and environment payment configuration views as well as common links to easily navigate to Headquarter payment configuration pages. This workspace assists in configuring, diagnosing configuration issues, and navigating through to the multiple pages within Headquarters in which common payment configurations occur.
 
-## The Payment Workspace View
+## The Payment workspace View
 
 The **Payment workspace** can be found in the Headquarters' menu under the **Workspaces** section. It can also be navigated to using the **Retail and Commerce > Channels > Payment workspace** path in Headquarters **Modules** menu section. 
 
@@ -38,7 +36,7 @@ In the **Payment workspace**, the main section for **Payment configurations** in
 
 Details displayed are relevant to the configurations set per the Organizational Legal Entity set in the top-right context of Headquarters (or 'cmp' parameter in the Headquarters URL set in the browser navigational toolbar). No sensitive data, such as merchant security keys, are included in the column options. 
 
-#### About the Grid View
+#### About the grid view
 
 The workspace grid views follow common workspace view capabilities. Views allow for grid column adjustments and saved view arrangements. Data in the views can be exported, columns can be inserted, frozen, or hidden. Organizing views allow workers to quickly assess common configuration details relevant to their assigned coverage or for coordinating with IT Admins for support cases.
 
