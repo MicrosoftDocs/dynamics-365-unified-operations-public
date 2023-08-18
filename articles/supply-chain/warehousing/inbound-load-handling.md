@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warehouse handling of inbound loads for purchase orders
+title: Warehouse handling of inbound loads for purchase and inbound shipment orders
 description: This article describes the warehouse handling process for inbound loads for purchase and inbound shipment orders.
 author: Mirzaab
 ms.date: 03/21/2020
@@ -30,21 +30,21 @@ ms.dyn365.ops.version: 10.0.10
 
 This article describes the warehouse handling process for inbound loads.
 
-Each inbound load can get associated to one or more order line quantities and your system might also contain transportation plans. For more information about how to create and manage inbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
+Each inbound load can be associated with one or more order line quantities, and your system might also contain transportation plans. For more information about how to create and manage inbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
 
 ## Overview: How inbound loads are created, registered, and received
 
-The following high-level illustration shows an example flow for handling inbound loads for a purchase order. Note that in case the purchase order originates for another ERP system than Microsoft Dynamics 365 Supply Chain Management the purchase order will get represented by a _Inbound shipment order_ in the warehouse management module.
+The following high-level illustration shows an example flow for handling inbound loads for a purchase order. Note that if the purchase order originates in an enterprise resource planning (ERP) system other than Microsoft Dynamics 365 Supply Chain Management, it's represented by an _inbound shipment order_ in the **Warehouse management** module.
 
 ![The inbound load handling process.](media/inbound-process.png "The inbound load handling process")
 
 1. **The vendor confirms the purchase order.**
 
-    The process begins when a purchase order is entered into the system and then delivered to a vendor, who confirms the order. The purchase order/Inbound shipment order must exist before you can create an inbound load record. However, you can create the inbound load even if the order hasn't been confirmed. For more information, see [Approve and confirm purchase orders](../procurement/purchase-order-approval-confirmation.md).
+    The process begins when a purchase order is entered into the system and then delivered to a vendor, who confirms the order. The purchase order/inbound shipment order must exist before you can create an inbound load record. However, you can create the inbound load even if the order hasn't been confirmed. For more information, see [Approve and confirm purchase orders](../procurement/purchase-order-approval-confirmation.md).
 
 1. **An inbound load record is created to plan the arrival and its contents.**
 
-    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually, and depending on setup the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
+    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually. Depending on setup, the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
 
 1. **The vendor confirms load dispatch.**
 
@@ -60,23 +60,22 @@ The following high-level illustration shows an example flow for handling inbound
 
 ## <a name="register-item-quantities-arriving"></a>Register item quantities that arrive on an inbound load
 
-Microsoft Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products via loads. Therefore, you can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using the Warehouse management mobile app when an inbound load arrives at the warehouse.
-First, warehouse workers must register the item quantities that are included in the load shipment. This workflow is available only if the following items are present in the system:
+Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products via loads. Therefore, you can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using the Warehouse management mobile app when an inbound load arrives at the warehouse. First, warehouse workers must register the item quantities that are included in the load shipment. This workflow is available only if the following items are present in the system:
 
 - **An inbound load record that describes the item quantities that are expected in the shipment**
 
-    Typically, the vendor confirms the inbound load record before the shipment arrives at the warehouse. Therefore, the load has a status of _Shipped_. However, warehouse workers can also register items quantities for loads that have a status of _Open_ or _Received_ depending on setup option.
+    Typically, the vendor confirms the inbound load record before the shipment arrives at the warehouse. Therefore, the load has a status of _Shipped_. However, warehouse workers can also register items quantities for loads that have a status of _Open_ or _Received_, depending on the setup option.
 
 - **A Warehouse management mobile app that is configured to support load receiving and all related [warehouse setup enabled](get-started-with-setting-up-module.md)**
 
     The [Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) for mobile devices supports the following receiving work creation processes:
 
-  - License plate receiving (and put away)
-  - Load item receiving (and put away)
-  - Mixed license plate receiving (and put away), where the **Source document line identification method** field for the mobile device menu item is set to _Load item receiving_. For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md).
+    - License plate receiving (and putaway)
+    - Load item receiving (and putaway)
+    - Mixed license plate receiving (and putaway), where the **Source document line identification method** field for the mobile device menu item is set to _Load item receiving_. For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md).
 
-  > [!NOTE]
-  > In a typical receiving flow the system will generate inbound warehouse work to take quantities that are registered in the receiving location and put them away in the regular storage locations. When using mobile device menu item processes with _put away_, the worker who registered the load quantity will also be instructed by the device to do the put away work as part of the receiving task. By contrast, for the other flows considered as a "two-step" process - typically the movement of the inbound inventory will get processed by another warehouse worker. But many different configuration option exists to control the flow. In some cases it might not make sense to create warehouse work, here the [**work policies**](warehouse-work-policies.md) can get configured not to create inbound warehouse work, in other scenarios it might make sense to include a [inspection/quality process](../inventory/quality-management-for-warehouses-processes.md).
+    > [!NOTE]
+    > In a typical receiving flow, the system generates inbound warehouse work to take quantities that are registered in the receiving location and put them away in the regular storage locations. When mobile device menu item processes with _put away_ are used, the device instructs the worker who registered the load quantity to do the putaway work as part of the receiving task. By contrast, for the other flows that are considered "two-step" processes, the movement of the inbound inventory is typically processed by another warehouse worker. However, many different configuration options exist to control the flow. In some cases, it might not make sense to create warehouse work. In these cases, the [work policies](warehouse-work-policies.md) can be configured so that they don't create inbound warehouse work. In other cases, it might make sense to include an [inspection/quality process](../inventory/quality-management-for-warehouses-processes.md).
 
 ### Handle discrepancies during registration of inbound load quantities
 
@@ -92,8 +91,8 @@ Over-receiving occurs when a load arrives, and the item quantities exceed the ex
 
 Use the **Load over receipt** field for the relevant mobile device menu items to control what occurs when a warehouse worker tries to register an overdelivery. This field is available for mobile device menu items that use the following types of work creation processes:
 
-- Load item receiving (and put away)
-- Mixed license plate receiving (and put away) for **Source document line identification method** field set to _Load item receiving_
+- Load item receiving (and putaway)
+- Mixed license plate receiving (and putaway), where the **Source document line identification method** field is set to _Load item receiving_
 
 The following table explains the options that are available for the **Load over receipt** field.
 
