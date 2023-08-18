@@ -87,7 +87,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
         > [!NOTE]
         > If the answer is "Yes," answer the below question in this section. Otherwise, move on to the next section.
         
-    - If yes, have all dual-write scenarios and flows been tested after migration, and have the acceptance criteria been met at the expected peak load? If not, what's still pending, and what's the timeline for sign-off?
+    - Have all dual-write scenarios and flows been tested after migration, and have the acceptance criteria been met at the expected peak load? If not, what's still pending, and what's the timeline for sign-off?
   
     **Production support and maintenance**
 
