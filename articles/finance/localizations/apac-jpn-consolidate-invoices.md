@@ -77,10 +77,16 @@ To support the QIS requirements that impact consolidated invoices, the following
 - Reverse operation to reverse posted tax adjustments per sales tax code.
 
 ### Calculating the consolidated tax for a consolidated invoice
-After you create a consolidated invoice on the **Consolidated invoice** page and open the **Sales tax** form, the following amounts are calculated (both Accounts Receivable and Accounts Payable):
-+ Consolidated consumption tax is calculated and adjusted on the consolidated invoice level in Accounts payable and Accounts receivable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
+After you create and post a customer consolidated invoice, the following amounts are calculated:
++ Consolidated consumption tax is calculated and adjusted on the consolidated invoice level in Accounts receivable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
 + Consolidated tax = Amount origin \* Value/100. Round off according to the rule in the sales tax code.
-+ Tax adjustment including non-deductible part are posted to an expense / capitalizing account.
++ Tax adjustment are posted in case of a difference.
++ Posted tax adjustment can be settled against invoice payments. 
+
+After you create and post a consolidated invoice from vendor, the following amounts are calculated:
++ Consolidated consumption tax is calculated on the consolidated invoice level in Accounts payable: summing up posted sales tax transactions per sales tax code for all invoices included in the consolidated invoice.
++ Consolidated tax = Amount origin \* Value/100.
++ If applicable, manually entered tax adjustment including non-deductible part are posted to an expense / capitalizing account.
 + Posted tax adjustment can be settled against invoice payments. 
 
 ### Assumptions and Limitations
@@ -98,7 +104,7 @@ The main considerations for this functionality in Finance are as follows:
 - Only invpoices in company's accounting currency are included in a consolidated invoice.
 
 > [!NOTE]
-> In case when the limited functionality of the **Tax adjustment on consolidated invoice** doesn't fit with the specific requirements, please consider use of the standard functionality of Summary orders.
+> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with the specific requirements, please consider use of the standard functionality of Summary orders.
 > For more information, see [Consolidate sales orders or packing slips for posting](/dynamics365/finance/accounts-receivable/configure-customer-invoices#consolidate-sales-orders-or-packing-slips-for-posting/)
 
 ### Setup
@@ -135,8 +141,7 @@ To create a consolidated invoice from a vendor, follow these steps:
 1. Resulting consolidated invoice willl include all invoices posted previously in the specified period and in line with the filter criteria.
 1. Check the data and click on the **Consolidated invoice -> Confirm** button to change the invoice status to Confirmed and calculate consolidated taxes.
 1. Click **Consolidated Invoice -> Sales Tax** to open the **Temporary sales tax transactions** dialog page, which displays sales tax transactions to adjust
-1. On the **Adjustment** tab, adjust **Actual consolidated tax amount** according to figures in the consolidated invoice from the vendor, 
-then click **Apply actual amounts** to apply adjusted actual sales tax amounts or **Reset actual from calculated amounts** to reset the adjustment. Click **OK**.
+1. On the **Adjustment** tab, adjust **Actual consolidated tax amount** according to figures in the consolidated invoice from the vendor, then click **Apply actual amounts** to apply adjusted actual sales tax amounts or **Reset actual from calculated amounts** to reset the adjustment. Click **OK**.
 1. On the Consolidated Invoice page, click **Consolidated Invoice -> Post** to post sales tax adjustments and a corresponding vendor transaction.
 1. Click **Consolidated invoice -> History**.  The Consolidated invoice history page displays the history of posting of the consolidated invoice, including the posting date, voucher, reversal, etc.
 

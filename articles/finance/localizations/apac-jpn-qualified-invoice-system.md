@@ -44,7 +44,7 @@ This article explains how to configure and use it in Finance. The invoicing func
 - Calculate and round consolidated tax per tax code on the consolidated invoice level.
 - Print the company’s registration number and sales tax amounts by tax code on customer consolidated invoices. For more information, see [Consolidated invoice](/dynamics365/finance/localizations/apac-jpn-consolidate-invoices).
 
-## Assumptions and limitations
+## Assumptions and Limitations
 The main considerations for this functionality in Finance are as follows:
 - To accurately calculate, round, and print taxes on invoices and consolidated invoices, it is recommended to use only one sales tax code for each tax rate. For example, instead of having two sales tax codes with a 10% rate on one invoice, you should use just one. This will ensure consistency and accuracy in your tax calculations and output.
 - Transitional measures for input tax credit for non-qualified vendors can be supported by splitting the tax amount into deductible and non-deductible parts when you register a purchase invoice, and by posting the non-deductible part to an expense / capitalizing account. You can use the non-deductible percentage in sales tax code values for this.
