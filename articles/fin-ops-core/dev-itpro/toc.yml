@@ -483,6 +483,8 @@ items:
             href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Environment operations
           items:
+          - name: Add an SSIS node
+            href: deployment/ssis-node.md        
           - name: Apply updates to an on-premises deployment
             href: deployment/apply-updates-on-premises.md
           - name: Certificate rotation
