@@ -91,7 +91,7 @@ After you create and post a consolidated invoice from vendor, the following amou
 
 ### Assumptions and Limitations
 The main considerations for this functionality in Finance are as follows:
-- Specific sales tax calculation parameters should be configured as follows (for more infpormation, see [Setting up Sales tax for JCT](apac-jpn-qualified-invoice-system#setting-up-sales-tax-for-jct.md):
+- Sales tax calculation parameters should be configured as follows (for more infpormation, see [Setting up Sales tax for JCT](apac-jpn-qualified-invoice-system#setting-up-sales-tax-for-jct.md):
     - All sales tax codes must have appropriate **Tax type** (*Standard and/or Reduced*), 
 	- **Origin = Percentage of net amount**, 
 	- **Marginal base = Net amount of invoice balance**, 
@@ -104,7 +104,7 @@ The main considerations for this functionality in Finance are as follows:
 - Only invpoices in company's accounting currency are included in a consolidated invoice.
 
 > [!NOTE]
-> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with the specific requirements, please consider use of the standard functionality of Summary orders.
+> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with one or another the specific requirement, please consider use of the standard functionality of Summary orders.
 > For more information, see [Consolidate sales orders or packing slips for posting](/dynamics365/finance/accounts-receivable/configure-customer-invoices#consolidate-sales-orders-or-packing-slips-for-posting/)
 
 ### Setup
@@ -131,7 +131,14 @@ Before you can complete this scenario, you must have posted sales invoices to cu
 1. Click **Settle transactions**. On the Settle transaction dialog page, click **Consolidated invoice -> Select**. In the Select consolidated invoices dialog, select the newly created consolidated invoice **Consolidation ID** and click OK. Only open customer transactions that correspond to the customer invoices included in the consolidated invoice are displayed on the Settle transaction page. In addition, the customer transaction that is posted for the consolidated invoice is also displayed and available for settlement.
 
 #### Reversal of customer consolidated invoices with tax adjustment
-In case you need to edit a posted consolidated invpioce due to missed invoices or, vice versa, exgtra invoices added by mistake, a consolidated invoice reversal can be performed in the following way. Go back to the **Consolidated invoice** page, select the consolidated invoice posted previously, and click **Reverse**. On the Reversal transactions dialog, specify the desired values for *Use existing dates for reversal*, *Reversal date* and *Reason comment*, and click **Reverse**. Reversing sales tax adjustments and a corresponding customer transactions are posted. The total amount of sales tax adjustments being reversed is subtracted from "Invoice amount during consolidation", "Sales tax", and "Total invoice amount" of the consolidated invoice. The reversed consolidated invoice history record is ceated and marked as Reversed. If the customer transaction that corresponds to the reversed consolidated invoice history record is already settled, the settlement is reversed. The customer transaction is settled against the customer transaction that corresponds to the reversing consolidated invoice history record. The consolidated invoice is un-marked as Posted. It is then possible to **Reopen** the consolidated invoice and edit its content (add or remove invoices to be included in it).
+In case you need to edit a posted consolidated invpioce due to missed invoices or, vice versa, extra invoices added by mistake, a consolidated invoice reversal can be performed in the following way. 
+1. Go back to the **Consolidated invoice** page, select the consolidated invoice posted previously, and click **Reverse**. 
+1. On the Reversal transactions dialog, specify the desired values for *Use existing dates for reversal*, *Reversal date* and *Reason comment*, and click **Reverse**. 
+1. Reversing sales tax adjustments and a corresponding customer transactions are posted. 
+1. The total amount of sales tax adjustments being reversed is subtracted from "Invoice amount during consolidation", "Sales tax", and "Total invoice amount" of the consolidated invoice.
+1. The reversed consolidated invoice history record is marked as Reversed. 
+ 
+The customer transaction is settled against the customer transaction that corresponds to the reversing consolidated invoice history record. The consolidated invoice is un-marked as Posted. It is then possible to **Reopen** the consolidated invoice and edit its content (add or remove invoices to be included in it).
 
 #### Consolidated invoices from vendors
 Before you can complete this scenario, you must have posted purchase invoices from vendors that are Qualified Invoice Issuers. 
