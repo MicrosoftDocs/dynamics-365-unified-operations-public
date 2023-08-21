@@ -104,7 +104,7 @@ The main considerations for this functionality in Finance are as follows:
 - Only invpoices in company's accounting currency are included in a consolidated invoice.
 
 > [!NOTE]
-> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with one or another the specific requirement, please consider use of the standard functionality of Summary orders.
+> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with one or another the specific requirement, please consider use of the Summary orders functionality.
 > For more information, see [Consolidate sales orders or packing slips for posting](/dynamics365/finance/accounts-receivable/configure-customer-invoices#consolidate-sales-orders-or-packing-slips-for-posting/)
 
 ### Setup
@@ -135,10 +135,10 @@ In case you need to edit a posted consolidated invpioce due to missed invoices o
 1. Go back to the **Consolidated invoice** page, select the consolidated invoice posted previously, and click **Reverse**. 
 1. On the Reversal transactions dialog, specify the desired values for *Use existing dates for reversal*, *Reversal date* and *Reason comment*, and click **Reverse**. 
 1. Reversing sales tax adjustments and a corresponding customer transactions are posted. 
-1. The total amount of sales tax adjustments being reversed is subtracted from "Invoice amount during consolidation", "Sales tax", and "Total invoice amount" of the consolidated invoice.
+1. The total amount of sales tax adjustments being reversed is subtracted from *Invoice amount during consolidation*, *Sales tax*, and *Total invoice amount* of the consolidated invoice.
 1. The reversed consolidated invoice history record is marked as Reversed. 
- 
-The customer transaction is settled against the customer transaction that corresponds to the reversing consolidated invoice history record. The consolidated invoice is un-marked as Posted. It is then possible to **Reopen** the consolidated invoice and edit its content (add or remove invoices to be included in it).
+1. The customer transaction is settled against the customer transaction that corresponds to the reversing consolidated invoice history record. 
+1. The consolidated invoice is un-marked as Posted. It is then possible to **Reopen** the consolidated invoice and edit its content (add or remove invoices to be included in it).
 
 #### Consolidated invoices from vendors
 Before you can complete this scenario, you must have posted purchase invoices from vendors that are Qualified Invoice Issuers. 
