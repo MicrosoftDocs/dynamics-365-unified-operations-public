@@ -41,7 +41,7 @@ The following list provides a set of examples of export control jurisdictions:
 - Multilateral Export Controls
 - Sanctions
 
-Jurisdictions don't necessarily need to be based on countries or regions. They can also be configured to control export activities based on your company's own policies.
+Jurisdictions don't necessarily need to be based on countries/regions. They can also be configured to control export activities based on your company's own policies.
 
 ## Codes and categories
 
@@ -53,27 +53,23 @@ Because ECCNs and control categories are defined by export control jurisdictions
 
 ## Restrictions
 
-Each export control jurisdiction defines a set of restrictions under which export actions should be disallowed unless an exception exists. Often, restrictions are defined in terms of a commerce country chart, as seen in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). A restriction is a set of ECCNs and/or control categories, together with a country, transaction purpose, and other aspects.
+Each export control jurisdiction defines a set of restrictions under which export actions should be disallowed unless an exception exists. Often, restrictions are defined in terms of a commerce country/region chart, as seen in [this downloadable example from the US EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2253-supplement-no-1-to-part-738-commerce-country-chart/file). A restriction is a set of ECCNs and/or control categories, together with a country, transaction purpose, and other aspects.
 
-The following screenshot shows a sample rule for the US EAR restrictions based on the country chart. Based on this rule, any order containing an item with an ECCN in the MT or NS control categories would not be allowed to be sold to Angola. If a user attempted to confirm an order containing one of these items to be shipped to Angola, they would see the error message "Action blocked by US EAR restrictions."
+The following screenshot shows a sample rule for the US EAR restrictions based on the country chart. Based on this rule, the system wouldn't allow any order containing an item with an ECCN in the MT or NS control categories to be sold to Angola. If a user attempted to confirm an order containing one of these items to be shipped to Angola, they would see the error message "Action blocked by US EAR restrictions."
 
 [<img src="media/export-control-restriction.png" alt="Example rule for the US EAR restrictions." title="Example rule for the US EAR restrictions" width="720" />](media/export-control-restriction.png#lightbox)
 
 ## Exceptions
 
-Exceptions allow an action even though a restriction would otherwise block it. Common types of exceptions include licenses, blanket exemptions, and corporate policies. Exceptions are defined the same way as restrictions, but also provide extra requirements that apply when the exception is used, such as the need to display a message the user or to print text and licenses on documents.
+Exceptions allow an action even though a restriction would otherwise block it. Common types of exceptions include blanket exemptions, and corporate policies. Exceptions are defined the same way as restrictions, but also provide extra requirements that apply when the exception is used, such as the need to display a message to the user or to print text and licenses on documents.
 
 The following screenshot shows an example exception setup.
 
 [<img src="media/export-control-exception.png" alt="Example of an exception." title="Example of an exception" width="720" />](media/export-control-exception.png#lightbox)
 
-<!-- KFM: Seems like we are missing a description of *licenses*? 
-
 ## Licenses
 
-** Description needed **
-
--->
+Licenses are issues by authorities to provide specific permissions that allow a company to trade restricted items, or a set of restricted items, in a specific context. It's a common practice to specify the license under which an item can be traded for each specific transaction.
 
 ## Next steps
 

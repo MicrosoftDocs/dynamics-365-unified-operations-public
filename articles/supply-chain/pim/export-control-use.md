@@ -12,11 +12,20 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-<!-- KFM: We are missing info on how to configure exceptions, requirements, rules, and licenses. Maybe we can link to existing documentation for the Dataverse app? -->
-
 # Work with advanced export control for products and sales orders
 
-The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company), which means that each company can have have different export control behaviors and rules.
+The advanced export control feature lets you apply export control rules to sales orders. Individual jurisdictions can be enabled or disabled for each legal entity (company), which means that each company can have different export control behaviors and rules.
+
+## Set up jurisdictions, codes, restrictions, exceptions, and licenses
+
+To define the export controls that apply to the items you trade, set up the required *export control jurisdictions* in Dataverse, and then configure the *codes*, *restrictions*, *exceptions*, and *licenses* that apply for each jurisdiction (for more information about these terms, see [Advanced export control overview](export-control-overview.md)).
+
+1. Open the [Microsoft Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+1. Select your environment.
+1. On the **Details** tile, select the link under **Environment URL** to open your Dataverse environment.
+1. In Dataverse, select **Export control jurisdictions** from the left navigation pane.
+1. A list of existing export control jurisdictions is shown. Use the toolbar buttons to add or remove jurisdictions as needed. Select a jurisdiction to open its details page.
+1. Use the jurisdiction details page to define the jurisdiction and add or remove codes, restrictions, exceptions, and licenses as needed.
 
 ## Assign export control classifications for global products
 
@@ -33,13 +42,12 @@ To set up advanced export control for a product or product master, follow these 
 1. The grid lists each export control that applies to the current product. Use the buttons on the toolbar to add and remove rows as needed. For each row, make the following settings:
     - **Export control jurisdiction** – Select the jurisdiction where the current row applies. This list shows all available jurisdictions, not just those enabled for the currently selected legal entity, because global products can be released to various legal entities.
     - **Export control classification** – Select the ECCN that applies for the current row. This establishes the set of export control rules that apply to the current product for the jurisdiction selected in this row.
-    - **Third country region content percent** – <!-- KFM: Description needed -->
 
 1. On the Action Pane, select **Save**.
 
 ## Assign export control classifications for released products
 
-When you create a released product based on a global product, the **Advanced export control configuration** settings for the global product become default export-control values for that released product. If the export control settings for a global product are changed after releasing the product, those new settings won't be updated on the related released product unless the product is re-released. Released products are associated with a specific legal entity, so only the ECCNs for jurisdictions enabled for that legal entity will be inherited from the global product.
+When you create a released product based on a global product, the **Advanced export control configuration** settings for the global product become default export-control values for that released product. If the export control settings for a global product are changed after releasing the product, those new settings won't be updated on the related released product unless the product is re-released. Released products are associated with a specific legal entity, so only the ECCNs for jurisdictions enabled for that legal entity are inherited from the global product.
 
 To set up advanced export control for a released product, follow these steps:
 
@@ -50,38 +58,24 @@ To set up advanced export control for a released product, follow these steps:
 
     [<img src="media/export-control-item-jurisdictions.png" alt="Export control settings for released products." title="Export control settings for released products" width="720" />](media/export-control-item-jurisdictions.png#lightbox)
 
-1. Provided at least one jurisdiction is [enabled](export-control-configure.md) for your selected legal entity, the FastTab includes an **Export control codes** section (otherwise, simpler [dual-use goods](dual-use.md) functionality will shown here instead). The grid here lists each export control that applies to the current released product. Use the buttons on the toolbar to add and remove rows as needed. For each row, make the following settings:
+1. Provided at least one jurisdiction is [enabled](export-control-configure.md) for your selected legal entity, the FastTab includes an **Export control codes** section (otherwise, simpler [dual-use goods](dual-use.md) functionality is shown here instead). The grid here lists each export control that applies to the current released product. Use the buttons on the toolbar to add and remove rows as needed. For each row, make the following settings:
     - **Export control jurisdiction** – Select the jurisdiction where the current row applies. This list is filtered to only show the jurisdictions used in the currently selected legal entity.
     - **Export control classification** – Select the ECCN that applies for the current row. This establishes the set of export control rules that apply to the current product for the jurisdiction selected in this row.
-    - **Third country region content percent** – <!-- KFM: Description needed -->
-
-    <!-- KFM: If other settings here are especially relevant for this functionality, we should describe them too (e.g., origin settings) -->
 
 1. On the Action Pane, select **Save**.
 
 ## Checking and enforcing export control rules for sales orders
 
-<!-- KFM: Here, I think we should instead have explicit procedures/sections for each of the following: 
-
-- How and when automatic checks occur and what can happen.
-- How to handle a sales order that includes items that require export control checks, including details such as:
-    - How to do a manual check and interpret the results.
-    - How to assign licenses to headers and lines, and what this means.
-    - How to manually override the check.
-- How to see the history of checks for an SO.
-
- -->
-
-When advanced export control is [enabled](export-control-configure.md) for a legal entity, an new button labeled **Check export control** is provided on the **Sell** tab of the Action Pane for sales orders. Select this button to check the current export control status of the current order. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Manual checks will not change license consumption, nor will they be tracked in history.
+When advanced export control is [enabled](export-control-configure.md) for a legal entity, a button labeled **Check export control** is provided on the **Sell** tab of the Action Pane for sales orders. Select this button to check the current export control status of the current order. During confirmation, picking, packing, shipping, and invoicing, the same check will be performed. License quantity will only be consumed and history will only be tracked during confirmation and similar steps. Manual checks won't change license consumption, nor will they be tracked in history.
 
 [<img src="media/export-control-sales-order-check.png" alt="The Check export control dialog." title="The Check export control dialog" width="720" />](media/export-control-sales-order-check.png#lightbox)
 
-The sales order header has a tab to specify licenses per jurisdiction. Any licenses specified on the header are assumed to default to all lines of the document, though the license can be overridden at the line level. Licenses are only required to pass export control checks if restrictions and exceptions require a license. Blanket exemptions or corporate policies do not require licenses.
+The sales order header has a tab to specify licenses per jurisdiction. Any licenses specified on the header are assumed to default to all lines of the document, though the license can be overridden at the line level. Licenses are only required to pass export control checks if restrictions and exceptions require a license. Blanket exemptions or corporate policies don't require licenses.
 
 During confirmation and similar posting steps, the system tracks the history of export control checks. You can view this history from the sales order header by selecting the **Result** button.
 
 [<img src="media/export-control-sales-order-header.png" alt="Export control settings for sales order headers." title="Export control settings for sales order headers" width="720" />](media/export-control-sales-order-header.png#lightbox)
 
-Sales order lines allow the license from the header to be overridden. This allows different lines to be related to different licenses. Lines also provide the ability to override the export control check. When a line is overridden, the export control check is still performed and tracked, but any failures will not block the document processing. The user who edited the override information is automatically tracked on the record. Auditing of this information can be performed using the standard [logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md) functionality for finance and operations apps.
+Sales order lines allow the license from the header to be overridden. This allows different lines to be related to different licenses. Lines also allow you to override the export control check. When a line is overridden, the export control check is still performed and tracked, but any failures won't block the document processing. The user who edited the override information is automatically tracked on the record. Auditing of this information can be performed using the standard [logging](../../fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log.md) functionality for finance and operations apps.
 
 [<img src="media/export-control-sales-order-line.png" alt="Export control settings for sales order lines." title="Export control settings for sales order lines" width="720" />](media/export-control-sales-order-line.png#lightbox)

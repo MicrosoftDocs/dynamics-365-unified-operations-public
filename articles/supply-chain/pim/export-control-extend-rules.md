@@ -61,7 +61,7 @@ Rule Example 1:
 - Ship to country/region = Mexico, Canada
 - Transaction purpose = (empty)
 - De minimis threshold = 25%
-- This rule evaluates to *true* because only the ship to country/region and de minimis values are evaluated. Because 28% is greater than the 25% threshold and the ship to country is Mexico, the rule evaluates to true.
+- This rule evaluates to *true* because only the ship to country/region and de minimis values are evaluated. Because 28% is greater than the 25% threshold and the ship to country/region is Mexico, the rule evaluates to true.
 
 Rule Example 2:
 
@@ -79,7 +79,7 @@ License evaluation works in the same way. Fields that are left empty are ignored
 
 ## Power Fx Formulas
 
-[Power Fx formulas](/power-platform/power-fx/overview) allow complex rules to be expressed for scenarios that aren't simple references to countries or purposes. Like other fields of rules, if a Power Fx formula isn't provided, then it has no impact on the rule evaluation. The document object being evaluated is passed to the rule and can be used in formulas for comparison.
+[Power Fx formulas](/power-platform/power-fx/overview) allow complex rules to be expressed for scenarios that aren't simple references to countries/regions or purposes. Like other fields of rules, if a Power Fx formula isn't provided, then it has no impact on the rule evaluation. The document object being evaluated is passed to the rule and can be used in formulas for comparison.
 
 Following are various examples of Power Fx formulas for Export Control. For more information, see the [Formula reference](/power-platform/power-fx/formula-reference)
 
