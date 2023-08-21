@@ -136,35 +136,33 @@ The table also lists features that were previously in public preview but have ch
 | Transportation management | [Enable split vendor invoice journal line per cost type code and voyage id from multiple voyages](../landed-cost/landed-cost-enable.md) | Generally available |
 | Transportation management | [Generate data manually on voyage editor](../landed-cost/landed-cost-enable.md) | Generally available |
 | Transportation management | [Performance improvements for post receipt function in Landed Cost](../landed-cost/landed-cost-enable.md) | Generally available |
+| Warehouse management | [Catch weight product processing with warehouse management](../warehousing/catch-weight-processing.md) | Mandatory |
 | Warehouse management | Change the error to a warning when releasing a load where sufficient quantity isn't available | Mandatory |
 | Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | Mandatory |
 | Warehouse management | Evaluate work header breaks before work header maximums during work creation | Mandatory |
 | Warehouse management | Goods in Transit Receiving and Put away | Mandatory |
+| Warehouse management | Hazardous materials enhancements | Mandatory |
 | Warehouse management | Include Confirmed ship and Confirmed receipt dates into date filters on Load planning workbench | Mandatory |
+| Warehouse management | [Inventory status changes for catch weight products](../warehousing/catch-weight-processing.md) | Mandatory |
 | Warehouse management | [License plate receiving enhancements](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md) | Mandatory |
 | Warehouse management | License plate validation on source document lines | Mandatory |
 | Warehouse management | Line reservation enhancements for the batch number reservation form feature | Mandatory |
+| Warehouse management | [Location directive scopes](../warehousing/create-location-directive.md) | Mandatory |
+| Warehouse management | [Multiple product receipt postings per load](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Over receipt of load quantities](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Packing work for packing stations](../warehousing/packing-work.md) | Mandatory |
-| Warehouse management | <!-- KFM: Continue here. --> Parent license plates cannot be target license plates | Mandatory |
-| Warehouse management | Pick line grouping | Mandatory |
-| Warehouse management | Post on-hand adjustments using configurable reason codes connected to offset accounts | Mandatory |
+| Warehouse management | Parent license plates cannot be target license plates | Mandatory |
+| Warehouse management | [Pick line grouping](../warehousing/pick-line-grouping.md) | Mandatory |
+| Warehouse management | [Post on-hand adjustments using configurable reason codes connected to offset accounts](../warehousing/reason-codes-for-counting-journals.md) | Mandatory |
 | Warehouse management | Purchase order quantity left to load calculation using registered quantities | Mandatory |
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | Mandatory |
+| Warehouse management | [Use existing catch weight tags when reporting production orders as finished](../warehousing/catch-weight-processing.md) | Mandatory |
 | Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | Mandatory |
-| Warehouse management | Auto-submit detour steps for the Warehouse Management mobile app | On by default |
-| Warehouse management | Catch weight product processing with warehouse management | On by default |
-| Warehouse management | Hazardous materials enhancements | On by default |
-| Warehouse management | Inventory status changes for catch weight products | On by default |
-| Warehouse management | Item consolidation location utilization | On by default |
-| Warehouse management | Location directive scopes | On by default |
-| Warehouse management | Multi-level detours for the Warehouse Management mobile app | On by default |
-| Warehouse management | Multiple product receipt postings per load | On by default |
-| Warehouse management | Options for updating the mode of delivery for sales order lines when creating loads | On by default |
+| Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
+| Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | Options for validating ingredient batch expiration dates | On by default |
-| Warehouse management | Pack containers using the Warehouse Management mobile app | On by default |
-| Warehouse management | Use existing catch weight tags when reporting production orders as finished | On by default |
-| Warehouse management | Warehouse-specific inventory transactions | Generally available |
+| Warehouse management | [Pack containers using the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | On by default |
+| Warehouse management | Warehouse-specific inventory transactions | Mandatory |
 
 ## New and updated documentation resources
 

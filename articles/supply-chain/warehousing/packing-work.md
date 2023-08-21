@@ -28,7 +28,7 @@ For more information about how to set up and use the container packing process, 
 If your system doesn't already include the features that are described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features in the following order. Both features are part of the **Warehouse management** module.
 
 1. *Confirm and transfer* (As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
-1. *Packing work for packing stations* (As of Supply Chain Management version 10.0.32, this feature is on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
+1. *Packing work for packing stations* (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
 
 ## Set up a location for packing work
 

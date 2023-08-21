@@ -60,7 +60,7 @@ You can use the license plate receiving process without creating work. If you de
 > - You must define at least one location for a work policy in the **Inventory locations** section. You can't specify the same location for multiple work policies.
 > - The **Print label** option for Warehousing mobile device menu items won't print a license plate label without work creation.
 
-To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
+To make this functionality available on your system, you must turn on the *License plate receiving enhancements* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.
 
 ### Receive inventory on a location that doesn't track license plates
 
