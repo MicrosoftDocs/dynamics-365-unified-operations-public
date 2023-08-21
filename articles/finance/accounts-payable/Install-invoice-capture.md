@@ -46,13 +46,10 @@ Before you can install the Invoice capture solution, the following prerequisites
 
 Invoice capture (1.1.0.1) is generally available in Dynamics 365 Finance version 10.0.33 and later.
 
-The minimal version D365 Finance version has to meet the followings before installing Invoice capture (1.1.0.9):
+The following Dynamics 365 Finance versions are required before installing Invoice capture (1.1.0.9):
 
-- 10.0.35 10.0.1627.86 +
-- 10.0.34 10.0.1591.124 +
-
-If it doesn't meet the required version, the upgrade will be blocked.
-
+- Dynamics 365 Finance 10.0.35 10.0.1627.86 or later
+- Dynamics 365 Finance 10.0.34 10.0.1591.124 or later
 
 After the **Invoice capture for Dynamics 365 Finance** feature is enabled, users can go to **Accounts payable \> Set up \> Invoice capture**.
 
