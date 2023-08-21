@@ -46,14 +46,17 @@ Data residing inside tables are referred as structured data. Data present in a s
 
 Finance scenario 
 
-Inquire collection status on Microsoft 365 Copilot (media/Inquire-collection-status.mp4)
+**Video** Inquire collection status on Microsoft 365 Copilot media/Inquire-collection-status.mp4
 
 Supply Chain scenario
 
-Inquire onhand inventory on Microsoft 365 Copilot(media/Inquire-onhand-inventory.mp4)
+**Video** Inquire onhand inventory on Microsoft 365 Copilot media/Inquire-onhand-inventory.mp4
 
 ## What is happening behind the scenes?
-The user's question is translated into a FetchXML query and executed against finance and operations database through virtual entities. The results are summarized and responded to the user. Here's the architecture that works behind the scenes.
+The user's question is translated into a FetchXML query and executed against finance and operations database through virtual entities. The results are summarized and responded to the user. The following graphic shows the architecture that works behind the scenes.
+
+[A graphic image that shows the data flow between finance and operations apps and Microsoft 365 Copilot](media
+/finops-structured-data-architecture.png)
 
 ## Are we limited to the supported customer scenarios?
 No, we aren't limited to the supported customer scenarios. Think of these scenarios as patterns which Microsoft 365 Copilot can process. All finance and operations entities that follow these patterns can be enabled for Copilot as they're supported by virtual entities.  Here's the list of entities eligible for virtualization.
@@ -65,21 +68,23 @@ For this you need finance and operations version 10.0.35 PU59 (10.0.1627.75) or 
 
 If you wish to try built-in scenarios, install two appsource packages namely – <finance package link> and <supply chain package link>. 
 
-If you wish to try your entities, [enable them as virtual entities](../power-platform/enable-virtual-entities.md). 
+If you want to try your entities, enable them as virtual entities. For more information on enabling virtual entities, see [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md). 
 
 Configure the following properties at the entity level.
-+	ChangeTrackingEnabled=1
-+	CanEnableSyncToExternalSearchIndex=1
-+	SyncToExternalSearchIndex=1
+
+* ChangeTrackingEnabled=1
+*	CanEnableSyncToExternalSearchIndex=1
+*	SyncToExternalSearchIndex=1
 
 Configure the following properties at the entity field level:
-+	IsSearchable=1
+
+*	IsSearchable=1
 
 
 ## Best practices 
 While chatting with Microsoft 365 Copilot, follow these best practices: 
-1.	If your question is about a customer, then use "customer" keyword in your question. For example, instead of asking "what is the amount due for forest wholesales?", you should be asking "what is the amount due for customer forest wholesales?". 
-1.	In case you want the results to be displayed in table format, use the keyword "in table format.". For example, "what is the availability of surface pro 128 GB? Give me the details by site, warehouse and color in table format.
-1.	If you remember the name or label associated with the given data inside finance and operations apps, use that name while searching. This makes the search easy. For example, what customer owe is displayed in finance and operations forms under "balance due" column. So, instead of asking "how much the customer forest wholesales owe?", you can ask "what is the outstanding balance of customer forest wholesales?".
+*	If your question is about a customer, then use the **customer** keyword in your question. For example, instead of asking "what is the amount due for forest wholesales?", ask "what is the amount due for customer forest wholesales?". 
+*	In case you want the results to be displayed in table format, use the **in table format** keyword." For example, ask "what is the availability of surface pro 128 GB? Give me the details by site, warehouse and color in table format."
+*	If you remember the name or label associated with the given data inside finance and operations apps, use that name while searching. This makes the search easy. For example, what customers owe is displayed in finance and operations forms in the **Balance due** column. So, instead of asking "how much does the customer forest wholesales owe?", ask "what is the outstanding balance of customer forest wholesales?"
 
 
