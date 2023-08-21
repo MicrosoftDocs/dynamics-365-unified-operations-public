@@ -33,9 +33,15 @@ ms.dyn365.ops.version:
 
 This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital invoice images.
 
-### Why do I receive an "OCR Process failed" error message in Received files?
+### Why do I get the error “The required minimal D365 Finance version doesn’t meet.” during invoice upgrade or installation? 
+Please make sure both the released version and quality build version match the following: 
+- 10.0.35 10.0.1627.86 + 
+- 10.0.34 10.0.1591.124 +
+  
+If it doesn’t match the required version and quality build, the installation or upgrade will be blocked.  
 
-The most common reason for this error is that you don't have an AI Builder license. You can fix the issue by requesting a trial version. To request a trial AI Builder license, go to the [Microsoft Power Apps maker portal](https://make.powerapps.com/), and select **AI Builder/Explorer**.
+### Why do I receive an error message "There's insufficient capacity for your current invoice capture license plan." in Received files? 
+You have consumed up the entitled credit and need to subscribe the **Electronic Invoicing** to gain additional batches of the transactions. You could contact the MS account team or partner CSP to purchase the license.  
 
 ### What if invoices that are received are in an unsupported format (for example, they're Word documents)?
 
@@ -55,46 +61,28 @@ The number is limited by the performance throttling of Microsoft Power Platform.
 
 ### How can I extend the default AI Builder model so that it recognizes invoices that have a more complex format, to help increase the confidence score and the touchless rate?
 
-A custom model can be built on the top of the prebuilt model. This custom model will contain most of the capability of the prebuilt model. The customer will have to provide additional training about the invoices that have exceptional layouts.
+We recommend that customers use the **custom prebuilt model** which is built on top of prebuilt model within Invoice capture. Customers can make some additional enhancements by training the model with additional invoice samples. The custom prebuilt model is owned by the AI Builder team, which is still in preview phase. The complete function will be ready when the integration part is done after the custom prebuilt model is in GA.  
 
 ### Does Invoice capture support PO invoices and Non-PO invoices? Does it support an invoice journal for Non-PO invoices?
 
-If an invoice isn't associated with a purchase order (PO), it's treated as a Non-PO invoice. Only service items or procurement categories are allowed on the invoice lines.
+It contains three invoice types within Invoice capture, PO invoice, header-only invoice and cost invoice.  
 
-If an invoice is associated with one or more POs, it's treated as a PO invoice. Both stock items and non-stock items are allowed on the invoice lines.
+PO invoice and header-only are the invoices which are associated with purchase order. It can be only mapped to “vendor invoice” in D365 Finance.  
 
-If the item on the invoice line is a stock item, the PO must be linked with the invoice line by the PO and line numbers. Otherwise, the following error message will be shown during the transfer of the invoice:
-
-> Write validation failed for table row of type 'VendorInvoiceLineEntity'. Infolog: Warning: The item's inventory model policy must be not stocked.; Warning: The item's inventory model policy must be not stocked...
-
-Support for using an invoice journal for Non-PO invoices will be available in a future release.  
+Cost invoice is the invoice which has no association with purchase order, which is treated as Non-PO invoice. It can be mapped to the vendor invoice or invoice journal. When it is mapped to the vendor invoice, only service items or procurement categories are allowed on the invoice lines. When it is mapped to the invoice journal, only the header invoice will be considered during the invoice transfer.  
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
-Yes, continuous learning capabilities are available in the latest public preview version. Invoice capture will learn from the correction of a previous invoice. Then, the next time that a similar invoice is captured, Invoice capture will apply what it has learned to derive the entities. Some work is still in progress to increase continuous learning capabilities so that the Accounts payable (AP) clerk's review effort is reduced and the touchless rate is increased.
-
-### What happens to the tax on an invoice in Invoice capture?
-
-The **Total tax** field sums all the tax amounts on the invoices and transfers the total amount to Dynamics 365 Finance. When invoice validation is enabled, the amount will be compared to the sales tax on the associated PO to ensure the correctness of the invoice.
+Yes, continuous learning capabilities are available, which can learn from the decision made by AP clerk in the previous invoice to automatically derive the entities for the next coming invoice. Once the invoice is reviewed and transferred, the mapping between entities and invoice context will be recorded. The entities such as legal entities, vendor accounts, invoice type, items, procurement category, currency code will be automatically derived for the next coming invoice with the same context. This can increase the touchless rate of invoice processing. 
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
-This capability is available in a version 1.0.1.x.
+Yes, invoice capture will use the external item number maintained in the D365 Finance to derive the item number.  
 
 ### Does Invoice capture support uploading multiple invoices at the same time?
 
-In Invoice capture version 1.0.1.0 and later, users can upload multiple invoices simultaneously.
+Yes, users can upload multiple invoices (maximal 20 files) simultaneously in Manage received files.  
 
 ### What languages of invoices are supported?
 
-The following languages are currently supported:
-Current:
--	English(en)
--	Spanish (es)
--	German (de)
--	French (fr)
--	Italian (it)
--	Portuguese (pt)
--	Dutch (de)
-
-More languages will be supported in a future release. If you want to share data with Microsoft to help make the model for your language ready more quickly, contact us.
+The complete list of supported languages is shown in the [Document Intelligence page](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/concept-invoice?view=doc-intel-3.1.0#supported-languages-and-locales)
