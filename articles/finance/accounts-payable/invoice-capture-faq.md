@@ -33,8 +33,8 @@ ms.dyn365.ops.version:
 
 This article answers frequently asked questions about the Invoice capture solution. The Invoice capture solution automatically creates vendor invoices from digital invoice images.
 
-### Why do I get the error “The required minimal D365 Finance version isn’t met” while upgrade or installing invoice capture? 
-Confirm the Dynamics 365 Finance versions are the following:  
+### Why do I get the error “The required minimal Dynamics 365 Finance version isn’t met” while upgrading or installing Invoice capture? 
+The following versions of Dynamics 365 Finance versions are supported:  
 - Dynamics 365 Finance version 10.0.35 10.0.1627.86 or later 
 - Dynamics 365 Finance version 10.0.34 10.0.1591.124 or later
 
@@ -60,7 +60,7 @@ The number is limited by the performance throttling of Microsoft Power Platform.
 
 ### How can I extend the default AI Builder model so that it recognizes invoices that have a more complex format, to help increase the confidence score and the touchless rate?
 
-We recommend that customers use the **Custom prebuilt model** which is built on top of a prebuilt model within Invoice capture. Customers can add additional enhancements to the model by training the model with additional invoice samples. The custom prebuilt model is in preview and additional functions will be available in a future release.  
+We recommend that customers use the **Custom prebuilt model** which is built on top of a prebuilt model within Invoice capture. Customers can add enhancements to the model by training the model with additional invoice samples. The custom prebuilt model is in preview and additional functions will be available in a future release.  
 
 ### Does Invoice capture support PO invoices and Non-PO invoices? Does it support an invoice journal for Non-PO invoices?
 
@@ -71,11 +71,11 @@ Invoice capture supports three invoice types:
 
 If an invoice is associated with one or more POs or is a header-only PO, it's treated as a PO invoice. These documents are mapped to a **Vendor invoice** in Dynamics 365 Finance.  
 
-If an invoice isn't associated with any PO, it is treated as a Non-PO invoice. A non-PO invoice can be mapped to a vendor invoice or invoice journal. When it is mapped to a vendor invoice, only service items or procurement categories are allowed on the invoice lines. When it is mapped to an invoice journal, only the header invoice will be considered during the invoice transfer.  
+If an invoice isn't associated with any PO, it's treated as a Non-PO invoice. A non-PO invoice can be mapped to a vendor invoice or invoice journal. When it's mapped to a vendor invoice, only service items or procurement categories are allowed on the invoice lines. When it's mapped to an invoice journal, only the header invoice is considered during the invoice transfer.  
 
 ### Does Invoice capture learn from changes that are made to an invoice if the invoice wasn't correctly processed or it was changed by the AP clerk?
 
-Yes, continuous learning capabilities are available. Invoice capture will learn from corrections made by the Accounts payable (AP) clerk of a previous invoice. The next time a similar invoice is captured, Invoice will apply what it as leared to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context will be recorded. The entities such as legal entities, vendor accounts, invoice type, items, procurement category, currency code will be automatically derived for the next time a similar invoice is captured. This can increase the touchless rate of invoice processing. 
+Yes, continuous learning capabilities are available. Invoice capture learns from corrections made by the Accounts payable (AP) clerk of a previous invoice. The next time a similar invoice is captured, Invoice will apply what it as learned to derive the entities. After the invoice is reviewed and transferred, the mapping between entities and invoice context will be recorded. The entities such as legal entities, vendor accounts, invoice type, items, procurement category, currency code will be automatically derived for the next time a similar invoice is captured. This can increase the touchless rate of invoice processing. 
 
 ### Can I extend the item mapping rule to map between an external item number and an internal item number?
 
@@ -87,4 +87,4 @@ Yes, users can upload multiple invoices (Maximum of 20 files) simultaneously.
 
 ### What languages of invoices are supported?
 
-For a complete list of supported languages, see [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice?view=doc-intel-3.1.0#supported-languages-and-locales).
+For a complete list of supported languages, see [Document intelligence page](/azure/ai-services/document-intelligence/concept-invoice?view=doc-intel-3.1.0.md#supported-languages-and-locales).
