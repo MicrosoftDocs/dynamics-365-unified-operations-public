@@ -122,4 +122,8 @@ If the private preview software is installed, it must be removed from your envir
 
 After the private preview is removed, you'll see the **Monitoring and telemetry** feature in the **Feature management** workspace. None of setup or configurations from the private preview are changed when you enable this feature, because the schema names are identical in the public preview. Therefore, no data is lost when you remove the private preview version.
 
+## Telemetry Data Usage
+
+Please review this document [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap.md) for details on daily cap setting for Application Insights.
+
 [!include [banner](../includes/banner.md)]
