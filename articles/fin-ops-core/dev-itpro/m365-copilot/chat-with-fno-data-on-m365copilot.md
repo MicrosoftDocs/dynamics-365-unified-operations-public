@@ -40,7 +40,7 @@ With a Microsoft 365 Copilot license, an authorized user can enter into a natura
 Microsoft 365 Copilot summarizes the information spread across emails, chats, and documents, and reconciles it with the relevant data residing inside finance and operations apps. The reconciled summary is presented as the response to the user.  
 
 ## What types of data are supported? 
-Data residing inside tables are referred as structured data. Data present in a static document like word, pdf, and publicly available contents, are referred as unstructured data. Microsoft 365 Copilot supports data inquiry against both structured and unstructured data. However, for this release, the finance and operations scope is limited to structured data only.
+Data residing inside tables are referred as structured data. Data present in a static document like word, pdf, and publicly available contents, are referred as unstructured data. Microsoft 365 Copilot supports data inquiry against both structured and unstructured data. For this release, the finance and operations scope is limited to structured data only.
 
 ## What are the supported customer scenarios?
 
@@ -59,12 +59,13 @@ The user's question is translated into a FetchXML query and executed against fin
 /finops-structured-data-architecture.png)
 
 ## Are we limited to the supported customer scenarios?
-No, we aren't limited to the supported customer scenarios. Think of these scenarios as patterns which Microsoft 365 Copilot can process. All finance and operations entities that follow these patterns can be enabled for Copilot and are supported by virtual entities.  Here's the list of entities eligible for virtualization.
+No, we aren't limited to the supported customer scenarios. Think of these scenarios as patterns which Microsoft 365 Copilot can process. All finance and operations entities that follow these patterns can be enabled for Copilot and support virtual entities.  Here's the list of entities eligible for virtualization.
 
 However, the language translation support for preview is “en-us”. 
 
 ## How can I set up Microsoft 365 Copilot for my finance and operations data?
-Before you cen set up Microsoft 365 Copilot for your finance and operatiosn date you need the following:
+
+Before you can set up Microsoft 365 Copilot for your finance and operations data, you need to have the following software versions installed:
 
 - Finance and operations version 10.0.35 PU59 (10.0.1627.75) or later.
 - Dataverse version 9.2 or later, and finance and operations virtual entity solution provider version 2.8.7 or later. 
