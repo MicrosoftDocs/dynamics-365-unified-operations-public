@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: josaw1
-ms.date: 05/05/2023
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -138,14 +138,13 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 </tr>
 <tr>
 <th scope="row">Deployment modes</th>
-<td>In-app, hybrid.<br />
-    For more information, see <a href="#hybrid-deployment">Hybrid deployment</a> above.</td>
+<td>In-app, hybrid.</br>For more information, see <a href="#hybrid-deployment">Hybrid deployment</a>.</td>
 <td>In-app.</td>
 </tr>
 <tr>
 <th scope="row">Full screen mode</th>
-<td>Yes - Press Alt-Enter to enter and exit full screen mode. </td>
-<td>Yes - Press F11 to enter and exit full screen mode.</td>
+<td>Yes. Select Alt+Enter to enter and exit full screen mode.</td>
+<td>Yes. Select F11 to enter and exit full screen mode.</td>
 </tr>
 </tbody>
 </table>
