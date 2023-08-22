@@ -162,7 +162,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | Options for validating ingredient batch expiration dates | On by default |
 | Warehouse management | [Pack containers using the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | On by default |
-| Warehouse management | Warehouse-specific inventory transactions | Mandatory |
+| Warehouse management | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Mandatory |
 
 ## New and updated documentation resources
 
