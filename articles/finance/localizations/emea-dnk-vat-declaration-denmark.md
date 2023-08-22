@@ -1,8 +1,8 @@
 ---
-title: VAT declaration (Denmark)
+title: VAT declaration of Denmark overview
 description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Denmark.
 author: liza-golub
-ms.date: 03/10/2022
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
@@ -11,33 +11,33 @@ ms.author: egolub
 ms.search.validFrom: 
 ---
 
-# Overview of VAT declaration of Denmark
+# VAT declaration of Denmark overview
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up the value-added tax (VAT) declaration for Denmark, preview it in Microsoft Excel and submit to the Danish Tax Agency (Skattestyrelsen).
+This article describes how to set up the value-added tax (VAT) declaration for Denmark, preview it in Microsoft Excel, and then submit it to the Danish Tax Agency (Skattestyrelsen).
 
-As of version 10.0.37 of Finance direct submission of VAT return in XML format to the Danish Tax Agency (Skattestyrelsen) is supported.
+As of version 10.0.37 of Dynamics 365 Finance, direct submission of VAT return in XML format to the Danish Tax Agency (Skattestyrelsen) is supported.
 
-The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and [collect tax data from several legal entities to one VAT declaration](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
+The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md) and [collecting tax data from several legal entities to one VAT declaration](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
 
-For more information about how to prepare a VAT return with direct submission to Danish Tax Agency, see [Submit VAT return in XML to the Danish Tax Agency](emea-dnk-vat-declaration-submission.md)
+For more information about how to prepare a VAT return with direct submission to the Danish Tax Agency, see [Submit VAT return in XML to the Danish Tax Agency](emea-dnk-vat-declaration-submission.md)
 
-## Privacy notice
+## Sharing customer data
 
-When you enable Finance to interoperate with the Danish Tax Agency VAT application programming interface (API), both customer content and personal data will be shared with the Danish Tax Agency as part of the submission of your VAT declaration. To learn more about the kinds of information that are included in your submission, you can view the Danish Tax Agency [requirements](https://go.microsoft.com/fwlink/?linkid=2244145). A system administrator can disable the interoperation with the Danish Tax Agency web service in Finance by going to **Tax** \> **Setup** \> **Electronic Messages**.
+When you enable Finance to interoperate with the Danish Tax Agency VAT application programming interface (API), both customer content and personal data is shared with the Danish Tax Agency as part of the submission of your VAT declaration. To learn more about the kinds of information that are included in your submission, view the Danish Tax Agency [requirements](https://go.microsoft.com/fwlink/?linkid=2244145). A system administrator can disable the interoperation with the Danish Tax Agency web service in Finance by going to **Tax** \> **Setup** \> **Electronic Messages**.
 
 Your privacy is important to us. To learn more, read our [Privacy notice](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## VAT declaration overview
+## VAT declaration 
 
-The structure of data reported in VAT declaration in Excel and XML format is the same. Excel format serves to preview the amounts that are calculated to be reported to the Danish Tax Agency in XML format. 
-To automatically generate the VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
+The structure of data reported in VAT declaration in Excel and XML format is the same. An Excel format serves to preview the amounts that are calculated for reporting to the Danish Tax Agency in XML format. 
+To automatically generate the VAT declaration in Excel or XML format, create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
 Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result for the boxes on the VAT declaration.
 
-For Denmark, you must configure **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters) section later in this article.
+For Denmark, you must configure the **Report field lookup**. For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up-application-specific-parameters) section later in this article.
 
-In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific box of the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the box of the VAT declaration.
+In the following table, the **Lookup result** column shows the lookup result that's preconfigured for a specific box of the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the box of the VAT declaration.
 
 The VAT declaration in Denmark contains the following information.
 
@@ -75,7 +75,7 @@ The VAT declaration in Denmark contains the following information.
 | Box B - supply of services. The value without VAT of intra-Union supply of services for which the purchaser is liable to pay the VAT as reverse charge - must also be reported to "EU-sales without VAT"/DK VIES.                          | Tax base            | **SalesServicesEU**                             |
 | Box C - other supplies. Value of supply of other goods and services that are supplied without VAT in the territory of Denmark, to other EU Member States, and to other countries/regions or territories.                                     | Tax base            | **OtherSuppliesWithoutVAT**                     |
 
-## Note about purchase reverse charge VAT
+## Purchase reverse charge VAT
 
 If you configure sales tax codes to post incoming reverse charge VAT by using use tax, associate your sales tax codes with the lookup result of **Report field lookup** that contains "UseTax" in the name.
 
