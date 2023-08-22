@@ -47,7 +47,7 @@ Buyers on B2B websites often order specific items together. For example, if you'
 
 You can create new order templates by going to **My account \> Manage order templates** and selecting **Create an order template**. Another way to create a new order template is to navigate to a product details page (PDP) for an item, select a variant (if applicable), and then select **Add to order template**. This action opens the **Add to order template** view, where you can select **Create new** to create a new order template. 
 
-As of Commerce version 10.0.37, order templates support catalogs so that when the catalog feature is enabled, each order template line saves the corresponding catalog information. When users add one or more lines from the order template to their shopping cart, the cart lines get the correct catalog information from the order template lines. Also, the **Synchronize order templates** batch job that syncs order template information from the channel database to headquarters is available to use. 
+As of Commerce version 10.0.37, order templates support catalogs. When the catalog feature is enabled, each order template line saves the corresponding catalog information. When users add one or more lines from the order template to their shopping cart, the cart lines get the correct catalog information from the order template lines. Also, the **Synchronize order templates** batch job that syncs order template information from the channel database to headquarters is available to use. 
 
 > [!NOTE]
 > Microsoft recommends that you run the **Synchronize order templates** job at regular intervals (for example, once per day) so that order template information is synced to headquarters. 
