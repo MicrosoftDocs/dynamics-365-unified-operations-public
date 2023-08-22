@@ -65,13 +65,13 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
     - Acknowledge the following:
-        - Migrations to new environments will always be on the latest generally available (GA) release. Depending on your migration and testing plan, if the validation in the sandbox environment was done using a different version, we strongly recommend that you perform a regression validation using the release that your production environment will be in. You can find details about the release timeline for each release [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
-    - All standalone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure and this has been considered in your rollback strategy.
+        - Migrations to new environments will always be on the latest generally available (GA) release. Depending on your migration and testing plan, if the validation in the sandbox environment was done using a different version, we strongly recommend that you perform a regression validation using the release that your production environment will be in. For more information about the timeline for each release, see [Public preview release](/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
+    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure and this has been considered in your rollback strategy.
     - Human Resources migrated environments will be placed in the same region as the source standalone Human Resources environments. If there is requirement of geo to geo migration for the Lifecycle Services or environments, that would be a separate process and must be done once Human Resources sandbox and production migration is completed.
 
     **Continuous updates**
 
-    - In standalone Human Resources, updates are managed by Microsoft with defined schedule. However, in finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview?context=%2Fdynamics365%2Fcontext%2Fcommerce).
+    - In stand-alone Human Resources, updates are managed by Microsoft with defined schedule. However, in finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview?context=%2Fdynamics365%2Fcontext%2Fcommerce).
     
    
     **Integrations**
