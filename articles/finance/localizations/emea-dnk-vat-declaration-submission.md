@@ -1,8 +1,8 @@
 ---
-title: Submit VAT return in XML to the Danish Tax Agency
-description: This article describes how to set up, generate a value-added tax (VAT) declaration for Denmark in XML format and submit it to the Danish Tax Agency.
+title: Submit a VAT return in XML to the Danish Tax Agency
+description: This article describes how to set up, generate, and submit a value-added tax (VAT) declaration for Denmark in XML format.
 author: liza-golub
-ms.date: 03/10/2022
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
@@ -15,29 +15,29 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to prepare your Finance to generate VAT return in XML format and submit it to the Danish Tax Agency.
+This article describes how to prepare your Dynamics 365 Finance environment to generate a VAT return in XML format and submit it to the Danish Tax Agency.
 
 ## Prerequisites
 
-To automatically generate the VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
+To automatically generate the VAT declaration in Excel or XML format, you must first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
 Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration.
 For more information about structure of VAT declaration of Denmark and lookup results for boxes of VAT declaration, see [Overview of VAT declaration of Denmark](emea-dnk-vat-declaration-denmark.md) section.
 
-Before you start to prepare your Finance for direct submission of VAT return in XML to the Danish Tax Agency, complete the setup necessary for [Preview VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
+Before you start to prepare your Finance environment for direct submission of VAT returns in XML to the Danish Tax Agency, complete the setup necessary for [Preview VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
-To submit your VAT return directly to the Danish Tax Agency you need to contact the Danish Tax Agency (Skattestyrelsen) at `momsapi@sktst.dk` and provide your CVR number. You can also see more here: [skat.dk/momsapi](https://skat.dk/data.aspx?oid=2234574) (Danish). From the Danish Tax Agency you will get access the test environment (endpoints and certificates) and you will also get a short guide on what you need to do to get access to the production environment.
+To submit your VAT return directly to the Danish Tax Agency, contact the Danish Tax Agency (Skattestyrelsen) at `momsapi@sktst.dk` and provide your CVR number. You can also learn more at [skat.dk/momsapi](https://skat.dk/data.aspx?oid=2234574) (Danish). From the Danish Tax Agency you will get access the test environment (endpoints and certificates) and a short guide on what you need to do to get access to the production environment.
 
 ## Set up Azure Key Vault for certificate storage
 
-certificates obtained from the Danish Tax Agency to submit your VAT return must be stored in your Azure Key Vault storage.
+Certificates you obtain from the Danish Tax Agency to submit your VAT return must be stored in your Azure Key Vault storage.
 
 To set up Azure Key Vault for certificate storage, follow these steps:
 
 1. Go to **System administration** > **Setup** > **System parameters**.
-2. On the **General** tab, set the **Use advanced certificate store** option to **Yes**.
+2. On the **General** tab, set **Use advanced certificate store** to **Yes**.
 3. Upload the certificate to KeyVault.
 4. Go to **System administration** > **Setup** > **Key Vault parameters**.
-5. Select **New** and set the **Name** and **Description** fields.
+5. Select **New** and enter values in the **Name** and **Description** fields.
 6. On the **General** FastTab, set the following fields:
 
     - **Key Vault URL**: Enter the default Azure Key Vault URL.
@@ -60,7 +60,7 @@ To submit your VAT return directly to the Danish Tax Agency from Finance, you mu
 2. On the **All** tab, find and select the **\[EM\] Executable class action type** feature in the list.
 3. Select **Enable now**.
 
-### Download and import the data package that has example settings for electronic messages
+### Get the data package with example settings for electronic messages
 
 The data package contains settings of electronic message functionality that enables the following scenario in your Finance.
 
