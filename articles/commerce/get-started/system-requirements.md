@@ -85,7 +85,7 @@ If the self-service component will use a server certificate, it's critical that 
 This section lists the supported operating systems for each Commerce self-service installer.
 
 > [!WARNING]
-> The Windows 7 and Windows 8 operating systems aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, no bug fixes or other technical support is provided.
+> The Windows 7 and Windows 8 operating systems aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, no bug fix or other technical support is provided.
 
 #### Store Commerce
 
@@ -95,6 +95,7 @@ This section lists the supported operating systems for each Commerce self-servic
     - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
     - Windows Server 2022 (Standard, Essentials.) 
     - Windows Server 2019 (Standard, Essentials) with the latest available updates.
+
 
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro aren't recommended, except as part of a domain so that Windows updates can be appropriately scheduled.
