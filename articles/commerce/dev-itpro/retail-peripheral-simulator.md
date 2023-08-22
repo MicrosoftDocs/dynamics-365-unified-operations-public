@@ -2,16 +2,13 @@
 title: Peripheral simulator for Commerce
 description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 02/02/2023
+ms.date: 08/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: brshoo
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: July 2017 update
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.industry: Retail
@@ -25,8 +22,8 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetails
 
 The peripheral simulator is a utility that Microsoft provides as part of Microsoft Dynamics 365 Commerce and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
-- **Virtual peripheral simulator** - The virtual peripheral simulator is provided to primarily support testing of scenarios that usually require physical POS peripheral devices. It's also useful for diagnosing peripheral problems. If a peripheral isn't functioning correctly when physically connected but does function correctly when configured as a virtual peripheral, the issue is probably caused by the physical device or the manufacturer-provided device driver. In these cases, Microsoft recommends that you contact the manufacturer to resolve the issue. 
-- **POS simulator** - The POS simulator is used to test the compatibility of physical peripheral devices without having to deploy the POS client.
+- **Virtual peripheral simulator** - The virtual peripheral simulator primarily supports the testing of scenarios that usually require physical POS peripheral devices, and is also useful for diagnosing peripheral problems. If a peripheral isn't functioning correctly when physically connected but does function correctly when configured as a virtual peripheral, the issue is probably caused by the physical device or the manufacturer-provided device driver. In these cases, Microsoft recommends that you contact the manufacturer to resolve the issue. 
+- **POS simulator** - The POS simulator tests the compatibility of physical peripheral devices without having to deploy the POS client.
 
 ## Install the peripheral simulator
 
