@@ -1,8 +1,8 @@
 ---
-title: Preview VAT declaration in Excel format
-description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Denmark in Excel format.
+title: Preview VAT declaration in Microsoft Excel format
+description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Denmark in Microsoft Excel format.
 author: liza-golub
-ms.date: 03/10/2022
+ms.date: 08/22/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
@@ -11,7 +11,7 @@ ms.author: egolub
 ms.search.validFrom: 
 ---
 
-# Preview VAT declaration in Excel format
+# Preview VAT declaration in Microsoft Excel format
 
 [!include [banner](../includes/banner.md)]
 
@@ -21,7 +21,7 @@ This article describes how to set up the value-added tax (VAT) declaration for D
 
 To automatically generate the VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of VAT declaration. 
 Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration.
-For more information about structure of VAT declaration of Denmark and lookup results for boxes of VAT declaration, see [Overview of VAT declaration of Denmark](emea-dnk-vat-declaration-denmark.md) section.
+For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of VAT declaration, see [Overview of VAT declaration of Denmark](emea-dnk-vat-declaration-denmark.md) section.
 
 ## Configure system parameters
 
@@ -30,7 +30,7 @@ To generate a VAT declaration, you must configure the VAT number.
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Denmark, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Denmark, and that uses the **VAT Id** registration category.
+4. In the **Registration type** field, select the registration type that's dedicated to Denmark, and that uses the **VAT ID** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
@@ -41,47 +41,47 @@ For more information about how to set up registration categories and registratio
 Open the **Electronic reporting** workspace, and import the following ER configurations.
 
 | Number | ER configuration name | Type | Description |
-|---|---|---|---|
-| **1** |**Tax declaration model** | **Model** | **A generic model for different tax declarations.** |
-| 2 | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
-| 3 | VAT Declaration Excel (DK) | Format (exporting) | A VAT return in Microsoft Excel format for preview. |
-| 4 | VAT Declaration XML (DK) | Format (exporting) | A VAT return in XML format for submission to the Danish Tax Agency. Import this format if you want to submit VAT return directly from Finance. |
+|--------|-----------------------|------|-------------|
+|  1     |  Tax declaration model | Model | A generic model for different tax declarations. |
+|  2     | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
+|  3     | VAT Declaration Excel (DK) | Format (exporting) | A VAT return in Microsoft Excel format for preview. |
+|  4     | VAT Declaration XML (DK) | Format (exporting) | A VAT return in XML format for submission to the Danish Tax Agency. Import this format to submit VAT returns directly from Finance. |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 > [!NOTE]
-> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping** under **Tax declaration model**.
+> After all the ER configurations from the preceding table are imported, under the **Tax declaration model**, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping***.
 
 ## <a name="set-up-application-specific-parameters"></a> Set up application-specific parameters for VAT declaration fields
 
 > [!NOTE]
-> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+> We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature isn't enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 To automatically generate a VAT declaration, associate sales tax codes in the application and lookup results in the ER configuration.
 
-Follow these steps to define which sales tax codes generate which boxes on the VAT declaration.
+Follow these steps to define which sales tax codes generate specific boxes on the VAT declaration.
 
 1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
-2. Select the **VAT declaration Excel (DK)** configuration, and then select **Configurations \> Application specific parameters setup**.
+2. Select the **VAT declaration Excel (DK)** configuration, and then select **Configurations** \> **Application specific parameters setup**.
 3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
     | Field                  | Description                                                                                                                                                                                                                                                                                                          |
     |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Lookup result          | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article.                                                                                               |
-    | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
-    | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</br>-   **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>-   **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>-   **Sales**</br>-   **SalesExempt** (tax-exempt sale)</br>-   **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>-   **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value. |
+    | Tax code               | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate declaration box. We recommend that you separate sales tax codes so that one sales tax code generates amounts in only one declaration box. |
+    | Transaction classifier | If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</br>- **Purchase**</br>-   **PurchaseExempt** (tax-exempt purchase)</br>- **PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</br>- **Sales**</br>- **SalesExempt** (tax-exempt sale)</br>- **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</br>- **Use tax**. </br>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</br>Be sure to create two lines for each sales tax code: one line that has the transaction classifier value and one line that has the transaction classifier for credit note value. |
 
 
     > [!NOTE]
-    > Associate all sales tax codes with lookup results. If any sales tax codes should not generate values on the VAT declaration, associate them with the **Other** lookup result.
+    > Associate all sales tax codes with lookup results. If any sales tax codes shouldn't generate values on the VAT declaration, associate them with the **Other** lookup result.
 
     ![Application specific parameters page.](media/7db74920fad66a0db7fad60758698cc0.png)
 
 
 5. In the **State** field, change the value to **Completed**.
 
-If you plan to submit VAT return directly to the Danish Tax Agency from Finance, export completed setup of application-specific parameters for **VAT declaration Excel (DK)** configuration as XML file and then import this file for **VAT declaration XML (DK)** configuration. Change the value in the **State** field to **Completed** for **VAT declaration XML (DK)** configuration.
+If you plan to submit VAT return directly to the Danish Tax Agency from Finance, export the completed setup of application-specific parameters for **VAT declaration Excel (DK)** configuration as an XML file and then import this file for **VAT declaration XML (DK)** configuration. Change the value in the **State** field to **Completed** for **VAT declaration XML (DK)** configuration.
 
 ## Set up the VAT statement format mapping for preview in Excel
 
@@ -129,9 +129,9 @@ If you're configuring the VAT declaration in a legal entity that has [multiple V
 
 1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
 2. Select **Print report**, and then select **OK**.
-3. Review the Excel file that is generated for the selected sales tax payment line.
+3. Review the Excel file that's generated for the selected sales tax payment line.
 
 > [!NOTE]
-> The report is generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
+> The report's generated only for the selected line of the sales tax payment. If you must generate, for example, a corrective declaration that contains all corrections for the period, or a replacement declaration that contains original data and all corrections, use the **Report sales tax for settlement period** periodic task.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
