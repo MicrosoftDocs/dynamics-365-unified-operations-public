@@ -5,7 +5,7 @@ title: Human Resources migration go-live readiness review
 description: This article provides guidance about the go-live readiness review for Microsoft Dynamics 365 Human Resources migration to the finance and operations infrastructure.
 author: priyankasinha77
 ms.author: prsinha
-ms.date: 8/7/2023
+ms.date: 8/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,13 +64,14 @@ This article describes the steps of the go-live readiness review for Microsoft D
     **Cutover**
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
-    - Please acknowledge your understanding that migrations to new environments will always be on the latest generally available (GA) release. Depending on your migration and testing plan, if the validation in the sandbox environment was done using a different version, we strongly recommend that you perform a regression validation using the release that your production environment will be in. You can find details about the release timeline for each release [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
-    - Please acknowledge your understanding that all standalone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the Finance and Operations infrastructure. And this has been considered in your rollback strategy.
-    - Please acknowledge your understanding that the Human Resources migrated environments will be placed in the same region as the source standalone Human Resources environments. If there is requirement of geo to geo migration for the Lifecycle Services or environments, that would be a separate process and must be done once Human Resources sandbox and production migration is completed.
+    - Acknowledge the following:
+        - Migrations to new environments will always be on the latest generally available (GA) release. Depending on your migration and testing plan, if the validation in the sandbox environment was done using a different version, we strongly recommend that you perform a regression validation using the release that your production environment will be in. You can find details about the release timeline for each release [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-releases#targeted-release-schedule-dates-subject-to-change).
+    - All standalone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure and this has been considered in your rollback strategy.
+    - Human Resources migrated environments will be placed in the same region as the source standalone Human Resources environments. If there is requirement of geo to geo migration for the Lifecycle Services or environments, that would be a separate process and must be done once Human Resources sandbox and production migration is completed.
 
     **Continuous updates**
 
-    - In standalone Human Resources, updates are managed by Microsoft with defined schedule. However, in Finance and Operations infrastructure, customer need to maintain application updates as per Microsoft One version policy. Please confirm you understand the continuous update policy for Finance and Operations which is documented [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview?context=%2Fdynamics365%2Fcontext%2Fcommerce).
+    - In standalone Human Resources, updates are managed by Microsoft with defined schedule. However, in finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](/fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview?context=%2Fdynamics365%2Fcontext%2Fcommerce).
     
    
     **Integrations**
@@ -78,7 +79,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
     - Are integrations in scope?
 
         > [!NOTE]
-        > If the answer is "Yes," answer the below question in this section. Otherwise, move on to the next section.
+        > If the answer is "Yes," answer the question below in this section. Otherwise, move on to the next section.
 
     - Have you tested both the happy path and edge cases for each integration and signed off on all integrations that are in scope for go-live? If not, what's still pending, and what's the timeline for sign-off?
 
@@ -87,7 +88,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
     - Does the solution contain any dual-write integrations that are used to run processes across Dynamics 365 applications?
       
         > [!NOTE]
-        > If the answer is "Yes," answer the below question in this section. Otherwise, move on to the next section.
+        > If the answer is "Yes," answer the question below in this section. Otherwise, move on to the next section.
         
     - Have all dual-write scenarios and flows been tested after migration, and have the acceptance criteria been met at the expected peak load? If not, what's still pending, and what's the timeline for sign-off?
   
