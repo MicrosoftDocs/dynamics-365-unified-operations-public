@@ -35,7 +35,7 @@ With a Microsoft 365 Copilot license, an authorized user can enter into a natura
 
 * What is the overdue balance for the customer forest wholesales?
 * Summarize the collection status.
-* What is the on-hand inventory for product Southridge Video Laptop16 M1601 in Silver color?
+* What is the on-hand inventory for product Southridge Video Laptop 16 M1601 in Silver color?
 
 Microsoft 365 Copilot summarizes the information spread across emails, chats, and documents, and reconciles it with the relevant data residing inside finance and operations apps. The reconciled summary is presented as the response to the user.  
 
@@ -50,7 +50,7 @@ Finance scenario
 
 Supply Chain scenario
 
-**Video** Inquire onhand inventory on Microsoft 365 Copilot media/Inquire-onhand-inventory.mp4
+**Video** Inquire on hand inventory on Microsoft 365 Copilot media/Inquire-onhand-inventory.mp4
 
 ## What is happening behind the scenes?
 The user's question is translated into a FetchXML query and executed against finance and operations database through virtual entities. The results are summarized and responded to the user. The following graphic shows the architecture that works behind the scenes.
@@ -59,14 +59,17 @@ The user's question is translated into a FetchXML query and executed against fin
 /finops-structured-data-architecture.png)
 
 ## Are we limited to the supported customer scenarios?
-No, we aren't limited to the supported customer scenarios. Think of these scenarios as patterns which Microsoft 365 Copilot can process. All finance and operations entities that follow these patterns can be enabled for Copilot as they're supported by virtual entities.  Here's the list of entities eligible for virtualization.
+No, we aren't limited to the supported customer scenarios. Think of these scenarios as patterns which Microsoft 365 Copilot can process. All finance and operations entities that follow these patterns can be enabled for Copilot and are supported by virtual entities.  Here's the list of entities eligible for virtualization.
 
 However, the language translation support for preview is “en-us”. 
 
 ## How can I set up Microsoft 365 Copilot for my finance and operations data?
-For this you need finance and operations version 10.0.35 PU59 (10.0.1627.75) or above and Dataverse version 9.2 or above and finance and operations virtual entity solution provider version 2.8.7 or above. 
+Before you cen set up Microsoft 365 Copilot for your finance and operatiosn date you need the following:
 
-If you wish to try built-in scenarios, install two appsource packages:
+- Finance and operations version 10.0.35 PU59 (10.0.1627.75) or later.
+- Dataverse version 9.2 or later, and finance and operations virtual entity solution provider version 2.8.7 or later. 
+
+If you wish to try built-in scenarios, install two app source packages:
 - Finance package: [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92&tab=DetailsAndSupport)
 - Supply chain package 
 
@@ -87,6 +90,6 @@ Configure the following properties at the entity field level:
 While chatting with Microsoft 365 Copilot, follow these best practices: 
 *	If your question is about a customer, then use the **customer** keyword in your question. For example, instead of asking "what is the amount due for forest wholesales?", ask "what is the amount due for customer forest wholesales?". 
 *	In case you want the results to be displayed in table format, use the **in table format** keyword." For example, ask "what is the availability of surface pro 128 GB? Give me the details by site, warehouse and color in table format."
-*	If you remember the name or label associated with the given data inside finance and operations apps, use that name while searching. This makes the search easy. For example, what customers owe is displayed in finance and operations forms in the **Balance due** column. So, instead of asking "how much does the customer forest wholesales owe?", ask "what is the outstanding balance of customer forest wholesales?"
+*	If you remember the name or label associated with the given data inside finance and operations apps, use that name while searching to make the search easy. For example, what customers owe is displayed in finance and operations forms in the **Balance due** column. So, instead of asking "how much does the customer forest wholesales owe?", ask "what is the outstanding balance of customer forest wholesales?"
 
 
