@@ -3,7 +3,7 @@
 title: Reset receipt numbers
 description: This article describes how to reset receipt numbers used for various actions on a specific date in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 07/31/2023
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -44,7 +44,7 @@ In Commerce, receipt formats can be alphanumeric. You can put both static conten
 
 You can reset the sequential numbering of the receipt on a specific date. Then, for the first transaction that occurs after 12:00 AM on the selected reset date, the system resets the receipt's number sequence to 1. You can also specify whether the reset occurs only one time, or whether it recurs every year. If yearly recurrence is specified, the reset automatically occurs every year until the retailer chooses to stop it. 
 
-To turn on the reset in headquarters, follow these steps.
+To turn on the reset in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. On the **Receipt numbering** FastTab, select **Reset number reset date**.
@@ -69,16 +69,16 @@ You can use the **Clear reset date** functionality to clear future reset dates. 
 
 ## Force synchronization of number sequence data at app launch
 
-Organizations who have strict requirements for receipt ID uniqueness can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit whenever point of sale is initialized. This guarantees that the point of sale will always have the most current number sequence before any transactions are executed. 
+Organizations that have strict requirements for receipt ID uniqueness can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit whenever POS is initialized. This guarantees that the POS will always have the most current number sequence before any transactions are executed. 
 
-To enable synchronization of number sequence data at app launch, do the following:
+To enable synchronization of number sequence data at app launch, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select the functionality profile used by the store(s) you wish to enable this feature for.
-2. Enable the **Retrieve the latest number sequence data** option in the **Receipt number synchronization** section. 
-3. Go to **Retail and Commerce \> Retail and Commerce ID > Distribution schedule**  and run job **1070** (Channel configuration).  
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**, and then select the functionality profile used by the store(s) for which you want to enable the feature.
+2. In the **Receipt number synchronization** section, enable the **Retrieve the latest number sequence data** setting. 
+3. Go to **Retail and Commerce \> Retail and Commerce ID > Distribution schedule**, and then run the **1070 (Channel configuration)** job.  
 
 > [!NOTE]
-> When this setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
+> When the **Retrieve the latest number sequence data** setting is enabled, the first sign-in following app launch may take longer than usual and the Commerce Scale Unit (CSU) will incur some additional load.
 
 ## Make receipt masks change when the reset date arrives
 
