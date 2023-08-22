@@ -4,7 +4,7 @@
 title: Human Resources customer migration FAQ
 description: This article answers frequently asked questions about the migration of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: twheeloc
-ms.date: 07/06/2022
+ms.date: 08/22/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
