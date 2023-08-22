@@ -116,7 +116,6 @@ The table also lists features that were previously in public preview but have ch
 | Production control | [On-hand information in production orders to release page](whats-new-scm-10-0-30.md) | On by default |
 | Production control | [Report on catch weight items from the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md) | Generally available |
-| Rebate management | [Rebate management](../rebate-management/rebate-management-overview.md) | Mandatory |
 | Sales and marketing | [Calculate line net amount on import](../sales-marketing/calc-line-net-amounts-import.md) | Mandatory |
 | Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | Mandatory |
 | Sales and marketing | [Default broker contract tax information on vendor invoice lines](whats-new-scm-10-0-27.md) | Mandatory |
@@ -126,6 +125,7 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Settle customer payment deductions using the matching invoice](whats-new-scm-10-0-31.md) | On by default |
 | Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) | Generally available |
 | Sales and marketing | Unit of measure for line level charges | Generally available |
+| Shared AP and AR | [Rebate management](../rebate-management/rebate-management-overview.md) | Mandatory |
 | Shared AP and AR | Cancel posted rebate provision with a posting date | On by default |
 | Shared AP and AR | Enable auto negative tier in Rebate management | On by default |
 | Shared AP and AR | [Rebate management sold-to customers posting](whats-new-scm-10-0-34.md) | On by default |
@@ -157,12 +157,12 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Purchase order quantity left to load calculation using registered quantities | Mandatory |
 | Warehouse management | Sales order packing slip corrections/cancellation transaction status change | Mandatory |
 | Warehouse management | [Use existing catch weight tags when reporting production orders as finished](../warehousing/catch-weight-processing.md) | Mandatory |
+| Warehouse management | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Mandatory |
 | Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | Mandatory |
 | Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | Options for validating ingredient batch expiration dates | On by default |
 | Warehouse management | [Pack containers using the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | On by default |
-| Warehouse management | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Mandatory |
 
 ## New and updated documentation resources
 
