@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Supply Chain Management home page
+title: Welcome to Dynamics 365 Supply Chain Management
 description: This page provides a list of the help articles and other resources for Supply Chain Management features.   
 author: kamaybac
 ms.date: 09/15/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Supply Chain Management home page
+# Welcome to Dynamics 365 Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 

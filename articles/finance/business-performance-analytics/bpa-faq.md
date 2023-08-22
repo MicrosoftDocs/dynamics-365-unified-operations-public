@@ -11,6 +11,7 @@ ms.topic: faq
 ms.prod: 
 ms.technology:
 ms.custom:
+audience: Application User
 
 ---
 # Business performance analytics FAQ
@@ -74,7 +75,7 @@ Option one:
 3. Paste the below JavaScript code to start uninstall process.
 
 UninstallBPA JavaScript
-
+```
 // Get the current org URL
 const ORG = window.location.hostname;
 const WEB_API = `https://${ORG}/api/data/v9.2`;
@@ -146,6 +147,7 @@ let start = async () => {
 };
 
 start();
+```
 
 ### Uninstall business performance analytics
 

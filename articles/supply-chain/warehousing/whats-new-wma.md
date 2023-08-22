@@ -2,7 +2,7 @@
 title: What's new or changed in the Warehouse Management mobile app
 description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 07/19/2023
+ms.date: 08/15/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -18,6 +18,20 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.1.14.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:  
+
+- Increased stability.
+- Fixed an issue that prevented text from being pasted into the **Work list** page search bar when running on Microsoft Windows.
+- Fixed an issue that caused the **Work list** page to sort data incorrectly for some cultures.
+- Fixed an issue that caused the default page design to switch to a custom design when a button wasn't placed as the last control.
+- Fixed an issue that caused the app to focus on the wrong page element, thereby opening a details page and preventing further scanning.
+- Fixed an issue that affected the way submit buttons work when certain accessibility features were enabled.
+- Fixed an issue that prevented connections from being removed.
+- Added [telemetry](application-insights-monitor-usage-performance.md) that enables the app to log failures to connect to Application Insights.
+- Improved localization for some languages.
 
 ## Version 2.1.12.0
 
