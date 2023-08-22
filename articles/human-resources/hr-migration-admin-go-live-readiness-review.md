@@ -51,7 +51,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     **Lifecycle Services**
 
-    - Have the analysis, design and develop, and test phases in Lifecycle Services methodology been completed so a production environment can be requested?
+    - In Lifecycle Services, have the analysis, design and develop, and test phases been completed so a production environment can be requested?
     - Are you using a generic account as the environment's administrator?
     - Have the customer's key stakeholders been added to the Lifecycle Services project?
     - Confirm that the final version of the subscription estimator was uploaded into the Lifecycle Services project and marked as active.
@@ -64,10 +64,10 @@ This article describes the steps of the go-live readiness review for Microsoft D
     **Cutover**
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
-    - Acknowledge the following:
-        - Migrations to new environments will be on the latest generally available (GA) release. If validation in the sandbox environment was done using a different version, it's strongly recommended that a regression validation using the release that your production environment be preformed. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
-    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure. This has been considered in your rollback strategy.
-    - Human Resources migrated environments are placed in the same region as the source standalone Human Resources environments. If there's requirement of geo to geo migration for Lifecycle Services or environments, that is a separate process and is done after Human Resources sandbox and production migration are completed.
+    - Acknowledge the following conditions:
+        - Migrations to new environments are on the latest generally available (GA) release. If validation in the sandbox environment was done using a different version, it's recommended that a regression validation using the release that your production environment be performed. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure. This is in your rollback strategy.
+    - Human Resources migrated environments are placed in the same region as the source standalone Human Resources environments. If a geo to geo migration for Lifecycle Services or environments is needed, that will be completed after the migrations are finished.
 
     **Continuous updates**
 
