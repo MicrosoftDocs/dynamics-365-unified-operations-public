@@ -2,7 +2,7 @@
 title: Configure a channel to use a channel navigation hierarchy
 description: This article describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/18/2023
+ms.date: 09/01/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -73,7 +73,7 @@ The following image shows how to publish channel updates.
 
 To configure the distribution schedule job to push changes to channel databases, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedules**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedules**.
 1. Run the **1040 (Products)** and **1150 (Catalog)** jobs.
 
 ## Additional resources
