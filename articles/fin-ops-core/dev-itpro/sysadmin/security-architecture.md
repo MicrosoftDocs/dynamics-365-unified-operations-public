@@ -3,8 +3,8 @@
 
 title: Security architecture
 description: This article provides an overview of the security architecture of finance and operations.
-author: Peakerbl
-ms.date: 11/20/2020
+author: pnghub 
+ms.date: 08/14/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,12 +15,12 @@ ms.search.form: SysSecConfiguration, SysUserGroupInfo, SysSecRoleExcludeUsers
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: peakerbl
+ms.author: gned
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -38,14 +38,14 @@ When you understand the security architecture, you can more easily customize sec
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 
 
-Microsoft Azure Active Directory (AAD) is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid AAD account in an authorized tenant.
+Microsoft Azure Active Directory is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid Azure Active Directory account in an authorized tenant.
 
 ## Authorization
 Authorization is the control of access to finance and operations applications. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the finance and operations client. 
 
 Individual security permissions are combined into privileges, and privileges are combined into duties. The administrator grants security roles access to the program by assigning duties and privileges to those roles. 
 
-Context-based security controls access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The authorization subsystem detects the access at run time, when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps to ensure that there is no over-permissioning, and the developer gets the access that was intended. 
+Context-based security controls access to securable objects. When a privilege is associated with an entry point (such as a menu item or a service operation), a level of access, such as **Read** or **Delete**, is specified. The authorization subsystem detects the access at run time when that entry point is accessed, and applies the specified level of access to the securable object that the entry point leads to. This functionality helps to ensure that there isn't any over-permissioning, and the developer gets the access that was intended. 
 
 For more information, see [Role-based security](role-based-security.md).
 
@@ -58,10 +58,8 @@ For more information, see [Extensible data security policies](extensible-data-se
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
 
-## Auditing
-Auditing of user sign in and sign out is enabled, which means that the system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
-
-A system administrator or security administrator can access the audit logs by going to  the **User log** page (**System administration** > **Inquiries** > **User log**).
+## Auditing user logins
+A system administrator or security administrator can access the user logins logs. For more information, see [Track user sign-ins](../lifecycle-services/user-logins.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

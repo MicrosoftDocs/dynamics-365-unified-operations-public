@@ -24,7 +24,7 @@ Finance and operations apps provides many self-service support options and suppo
 
 
 - [Finance and operations application documentation](../../fin-ops/index.md)
-- [Help resources for Supply Chain Management](../../../supply-chain/index.md)
+- [Supply Chain Management documentation](../../../supply-chain/index.yml)
 - [Finance and operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn training](/training/)

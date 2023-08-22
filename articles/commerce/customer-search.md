@@ -20,7 +20,9 @@ ms.search.validFrom: 2017-06-20
 
 This article describes customer search capabilities in Microsoft Dynamics 365 Commerce.
 
-Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. The search algorithm matches the search terms against the values that are present in the following customer properties:
+Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. Employees can search for customers who are associated with the current store or any other store in the company. Employees can also search for customers who are associated with a different company in the parent organization.  
+
+The search algorithm matches the search terms against the values that are present in the following customer properties:
 
 - Name
 - Email address

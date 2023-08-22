@@ -45,7 +45,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-| Austria, Bahrain, Belgium, Czechia, Denmark, Egypt, Finland, France, Germany, Hungary, Indonesia, Malaysia, Netherlands, New Zealand, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom | July 2023 | 10.0.33HF, 10.0.34HF, 10.0.35HF, 10.0.36 | [Tax declaration model mapping update](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=819950&dbType=3&qc=8f64cac76f77df0328c110150b0ba0875154bb6f6bda44a38c5af33202fb172f) |
+| Denmark | August 2023 | 10.0.37 | [Accounting basis (Regnskab Basis) electronic report for Denmark](emea-dnk-accounting-basis.md) |
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](emea-che-vat-declaration-switzerland.md) - 2024 |
 | Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |
 | Poland | July 2023 | 10.0.36 | [VAT declaration - JPK-V7](emea-pol-vdek.md) - supplementary package based on ideas |

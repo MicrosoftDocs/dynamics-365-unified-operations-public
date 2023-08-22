@@ -1,30 +1,29 @@
 ---
-
 # required metadata
 
 title: Enable on behalf of (OBO) functionality
 description: This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: mariash529
-ms.date: 03/03/2023
+ms.date: 08/09/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chriffin
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2023-02-28
+
 ---
 
 # Enable on behalf of (OBO) functionality
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 
 > [!NOTE]
 > OBO functionality is available in Dynamics 365 Commerce version 10.0.33 and later.
 
-OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer.
+OBO functionality enables a retailer representative such an account manager to sign in to a B2B e-commerce website and select a B2B buyer organization and a buyer that they want to work on behalf of. The representative can then view the same products, prices, promotions, and discount experiences as the buyer, and can add items to a cart and place orders on behalf of the buyer. Each representative must have an activity license. 
 
 ## Prerequisites
 
@@ -45,10 +44,13 @@ To sign in to a B2B site by using OBO functionality, follow these steps.
 
     ![Example of the Employee sign-in button on the Sign-in page for a business partner user.](media/obo-sign-in-experience.png)
 
-1. On the next page, select the business buyer organization that you want to work on behalf of.
-1. Select the buyer that you want to work on behalf of.
+1. On the next page, search for and select the business buyer organization that you want to work on behalf of.
 
-    ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners.png)
+    ![Example of the Select a Business Partner Organization page.](media/obo-select-business-partners-org-new.png)
+
+1. On the next page, search for and select the buyer that you want to work on behalf of.
+
+     ![Example of the Select a Business Partner User page.](media/obo-select-business-partners-users4.png).
 
 After this procedure is completed, you (as the account manager) now represent the buyer that you selected, and have full access to their account information, pricing, catalog information, and discounts. You can add items to the cart and create an order. Completed orders are easily distinguished from regular orders, because they're prefixed with the account manager's name.
 
@@ -56,11 +58,10 @@ You can also create a template for the buyer to use later. We recommend that you
 
 > [!NOTE]
 > The OBO experience differs from the regular B2B site experience in the following ways:
->
 > - The only method of payment that's provided is **On Account**.
 > - Account managers have access to view a buyer's invoices, but they can't pay invoices.
 > - Account managers can create a new order template for the buyer. The order template won't have an additional identifier to indicate that the template was created by the account manager.
-> - Currently, the [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature isn't supported. To use the OBO functionality, you must turn that feature off.
+> - The [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md) feature is supported starting with Commerce version 10.0.35. 
 > - Any custom extensions that affect customer hierarchies or sales groups might have to be modified to support OBO functionality. Any extensions that retrieve values directly from the user context on an e-commerce site might also have to be modified.
 
 ## Additional resources

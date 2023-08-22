@@ -93,7 +93,7 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 #### Dynamics 365 Supply Chain Management
 
-[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to help you manage your products throughout the supply chain lifecycle, from production, to inventory and warehouse, to transportation and distribution. For more information, see [Help resources for Supply Chain Management](../supply-chain/index.md).
+[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to help you manage your products throughout the supply chain lifecycle, from production, to inventory and warehouse, to transportation and distribution. For more information, see [Supply Chain Management documentation](../supply-chain/index.yml).
 
 #### Dynamics 365 Finance
 
