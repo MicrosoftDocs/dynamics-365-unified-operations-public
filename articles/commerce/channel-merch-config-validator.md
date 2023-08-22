@@ -4,7 +4,7 @@
 title: Channel merchandising configuration validator
 description: This article describes how to use the channel merchandising configuration validator in Microsoft Dynamics 365 Commerce headquarters to find missing and invalid configurations for products, categories, and attributes by channel.
 author: ashishmsft
-ms.date: 06/21/2023
+ms.date: 09/01/2023
 ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace
 audience: Application User, Developer, IT Pro
@@ -92,7 +92,7 @@ The following table describes the validation rules that are run for the channel 
 | Prod-Ru-002 | Product dimensions | This rule checks whether the translation for the master product style value is missing. | Error | If the translation for the master product style value is missing for the languages that are configured for the channel, style options appear blank, and users might not be able to select the correct style value for their variant selection. |
 | Prod-Ru-003 | Product dimensions | This rule checks whether the translation for the master product size value is missing. | Error | If the translation for the master product size value is missing for the languages that are configured for the channel, size options appear blank, and users might not be able to select the correct size value for their variant selection. |
 | Prod-Ru-004 | Product dimensions | This rule checks whether the translation for the master product configuration value is missing. | Error | If the translation for the master product configuration value is missing for the languages that are configured for the channel, configuration options appear blank, and users might not be able to select the correct configuration value for their variant selection.|
-| Prod-Ru-005 | Product assortments | This rule checks whether the product isn't active in any assortments. | Error | If products are not active in any assortments that are associated with the channel, they don't show up in Commerce channels. |
+| Prod-Ru-005 | Product assortments | This rule checks whether the product isn't active in any assortments. | Error | If products aren't active in any assortments that are associated with the channel, they don't show up in Commerce channels. |
 | Prod-Ru-006 | Product assortments | This rule checks whether the product is excluded from any assortments. | Warning | If a product is excluded in at least one assortment that's associated with the channel, it isn't discoverable in Commerce channels. |
 | Prod-Ru-007 | Product and product masters | This rule checks whether the translation for the product name is missing. | Error | If the translation for the product name is missing, and the channel is configured to support languages other than the default system language, the product isn't rendered correctly in product browsing results in Commerce channels. |
 | Prod-Ru-008 | Product and product masters | This rule checks whether the product isn't categorized. | Error | If a product is part of an assortment and released to the legal entity that's associated with the channel, but it isn't associated with a category in the navigation hierarchy, it isn't discoverable in product browsing results. |
