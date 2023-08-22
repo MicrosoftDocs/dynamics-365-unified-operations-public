@@ -138,7 +138,7 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 </tr>
 <tr>
 <th scope="row">Deployment modes</th>
-<td>In-app, hybrid.</br>For more information, see <a href="#hybrid-deployment">Hybrid deployment</a>.</td>
+<td>In-app, hybrid. For more information, see <a href="#hybrid-deployment">Hybrid deployment</a>.</td>
 <td>In-app.</td>
 </tr>
 <tr>
