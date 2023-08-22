@@ -73,7 +73,7 @@ For example, customers who are currently on version 10.0.30 can pause updates to
 
 ### In-store components
 
-Customers can pause up to three consecutive updates across the following components:
+Customers can pause up to three consecutive updates across the following components.
 
 - Store Commerce app for Windows, Android, and iOS
 - Sealed Commerce Scale Unit (self-hosted)
@@ -81,7 +81,7 @@ Customers can pause up to three consecutive updates across the following compone
 
 ### Legacy in-store components
 
-Customers can pause up to seven consecutive updates across the following components:
+Customers can pause up to seven consecutive updates across the following components.
 
 - Commerce Scale Unit (self-hosted)
 - Modern point of sale (MPOS) and hybrid apps
