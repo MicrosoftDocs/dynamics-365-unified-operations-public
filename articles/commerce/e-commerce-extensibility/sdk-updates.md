@@ -2,7 +2,7 @@
 title: SDK and module library kit updates
 description: This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 07/14/2023
+ms.date: 08/18/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -73,7 +73,7 @@ The following table maps module library versions to Commerce Scale Unit versions
 | 10.0.32 | 9.42.x |
 | 10.0.33 | 9.43.x |
 | 10.0.34 | 9.44.x |
-| 10.0.34 | 9.45.x |
+| 10.0.35 | 9.45.x |
 
 ## Pull updates
 

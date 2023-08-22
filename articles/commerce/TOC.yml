@@ -36,6 +36,8 @@
         href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/commerce
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
+      - name: Deploy a demo environment
+        href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
       - name: One Version service updates
         items:
         - name: One Version service updates overview
@@ -1464,7 +1466,7 @@
           href: obo-create-aad-application.md
         - name: Create and modify B2B pages for on behalf of functionality (OBO)
           href: obo-add-pages-site-builder.md
-        - name: Set up and configure on behalf of functionality (OBO)
+        - name: Set up and configure on behalf of functionality (OBO) in headquarters
           href: obo-configure-hq.md
     - name: Monitoring and analysis
       items:
@@ -3054,8 +3056,6 @@
             href: dev-itpro/pos-app-signing-certificate.md
           - name: Set up POS hybrid app on Android and iOS
             href: dev-itpro/hybridapp.md
-          - name: Create and apply branding to the Retail Experience app
-            href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
       items:
       - name: Store Commerce
@@ -3137,4 +3137,4 @@
   - name: Dynamics 365 Finance
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Supply Chain Management
-    href: ../supply-chain/index.md
+    href: ../supply-chain/supply-chain-management-welcome.md

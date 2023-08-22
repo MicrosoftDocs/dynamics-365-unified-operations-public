@@ -80,7 +80,7 @@ Supply chain management functionality covers parts of the procure-to-pay process
    - Invoicing
    - Paying for the goods and services your organization purchases 
     
-For information about the capabilities for managing purchases, inventory, and manufacturing, see the [Supply Chain Management home page](../supply-chain/index.md).
+For information about the capabilities for managing purchases, inventory, and manufacturing, see [Welcome to Dynamics 365 Supply Chain Management](../supply-chain/supply-chain-management-welcome.md).
 
 ## eLearning courses
 

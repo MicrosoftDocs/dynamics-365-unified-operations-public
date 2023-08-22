@@ -4,7 +4,7 @@
 title: Revenue recognition setup 
 description: This article describes the setup options for Revenue recognition, and their implications.
 author: bking
-ms.date: 04/28/2022
+ms.date: 08/16/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -28,7 +28,10 @@ ms.dyn365.ops.version: 8.0.4
 # Revenue recognition setup
 [!include [banner](../includes/banner.md)]
 
-A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This article describes the setup options and their implications.
+>[!NOTE]
+>This functionality will be deprecated October 2023, new users should use subscription billing.
+
+This article describes the setup options and their implications for the **Revenue recognition** module.
 
 > [!NOTE]
 > The Revenue recognition feature is now enabled by default through Feature management. If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.

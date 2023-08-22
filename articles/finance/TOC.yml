@@ -1920,6 +1920,8 @@
             href: localizations/tasks/set-up-reason-codes-australia-bas.md
           - name: Payment times reporting schema
             href: localizations/apac-aus-payment-times-report.md
+          - name: Customer electronic invoices
+            href: localizations/apac-aus-nzl-e-invoices.md
         - name: Austria
           items:
           - name: Austria overview
@@ -2092,6 +2094,8 @@
               href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
             - name: Events
               href: localizations/latam-bra-sped-reinf.md
+            - name: Enable the Fiscal Establishment dimension
+              href: localizations/latam-bra-sped-fiscal-establishment.md
           - name: SPED fiscal resolution 13/2019 RJ
             href: localizations/latam-bra-resolution-13-2019-RJ.md
           - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
@@ -3450,6 +3454,8 @@
           items: 
           - name: GST declaration form GST101A for New Zealand (NZ-00003)
             href: localizations/apac-nzl-gst-declaration.md
+          - name: Customer electronic invoices 
+            href: localizations/apac-aus-nzl-e-invoices.md
         - name: Norway
           items:
           - name: Norway overview
@@ -5134,8 +5140,8 @@
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 
-    href: ../supply-chain/index.md
+    href: ../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Commerce
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
-    href: ../human-resources/index.md
+    href: ../human-resources/index.yml

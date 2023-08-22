@@ -21,7 +21,7 @@ ms.custom: bap-template
 >
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
 >
-> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
 
 <!--KFM: Preview until further notice -->
 
