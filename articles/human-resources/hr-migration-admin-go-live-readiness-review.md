@@ -51,7 +51,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     **Lifecycle Services**
 
-    - Have the analysis, design and develop, and test phases in the Lifecycle Services methodology been completed to request a production environment?
+    - Have the analysis, design and develop, and test phases in Lifecycle Services methodology been completed so a production environment can be requested?
     - Are you using a generic account as the environment's administrator?
     - Have the customer's key stakeholders been added to the Lifecycle Services project?
     - Confirm that the final version of the subscription estimator was uploaded into the Lifecycle Services project and marked as active.
@@ -65,13 +65,13 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
     - Acknowledge the following:
-        - Migrations to new environments will always be on the latest generally available (GA) release. Depending on your migration and testing plan, if the validation in the sandbox environment was done using a different version, we strongly recommend that you perform a regression validation using the release that your production environment will be in. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
-    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure and this has been considered in your rollback strategy.
-    - Human Resources migrated environments will be placed in the same region as the source standalone Human Resources environments. If there is requirement of geo to geo migration for the Lifecycle Services or environments, that would be a separate process and must be done once Human Resources sandbox and production migration is completed.
+        - Migrations to new environments will be on the latest generally available (GA) release. If validation in the sandbox environment was done using a different version, it's strongly recommended that a regression validation using the release that your production environment be preformed. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure. This has been considered in your rollback strategy.
+    - Human Resources migrated environments are placed in the same region as the source standalone Human Resources environments. If there's requirement of geo to geo migration for Lifecycle Services or environments, that is a separate process and is done after Human Resources sandbox and production migration are completed.
 
     **Continuous updates**
 
-    - In stand-alone Human Resources, updates are managed by Microsoft with defined schedule. However, in finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+    - In stand-alone Human Resources, updates are managed by Microsoft with a defined schedule. However, in the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
     
    
     **Integrations**
