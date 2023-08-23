@@ -51,7 +51,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     **Lifecycle Services**
 
-    - In Lifecycle Services, have the analysis, design and develop, and test phases been completed so a production environment can be requested?
+    - Have the analysis, design and develop, and test phases been completed in Lifecycle Services, so that a production environment can be requested?
     - Are you using a generic account as the environment's administrator?
     - Have the customer's key stakeholders been added to the Lifecycle Services project?
     - Confirm that the final version of the subscription estimator was uploaded into the Lifecycle Services project and marked as active.
@@ -65,33 +65,34 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
     - Acknowledge the following conditions:
-        - Migrations to new environments are on the latest generally available (GA) release. If validation in the sandbox environment was done using a different version, it's recommended that a regression validation using the release that your production environment be performed. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
-    - All stand-alone Human Resources environments will automatically be deleted 10 days after the successful migration of the production environment to the finance and operations infrastructure. This is in your rollback strategy.
-    - Human Resources migrated environments are placed in the same region as the source standalone Human Resources environments. If a geo to geo migration for Lifecycle Services or environments is needed, that will be completed after the migrations are finished.
+
+        - Migrations to new environments are on the latest generally available (GA) release. If validation in the sandbox environment was done by using a different version, we recommend that you perform a regression validation by using the release that your production environment uses. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+
+    - All stand-alone Human Resources environments will automatically be deleted 10 days after the production environment is successfully migrated to the finance and operations infrastructure. This fact is in your rollback strategy.
+    - Human Resources migrated environments are put in the same region as the source stand-alone Human Resources environments. If a geo-to-geo migration for Lifecycle Services or environments is required, it will be done after the migrations are completed.
 
     **Continuous updates**
 
-    - In stand-alone Human Resources, updates are managed by Microsoft with a defined schedule. However, in the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm you understand the continuous update policy for finance and operations. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
-    
-   
+    - In stand-alone Human Resources, updates are managed by Microsoft on a defined schedule. However, in the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm that you understand the continuous update policy for finance and operations apps. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+
     **Integrations**
 
     - Are integrations in scope?
 
         > [!NOTE]
-        > If the answer is "Yes," answer the question below in this section. Otherwise, move on to the next section.
+        > If the answer is "Yes," answer the next question in this section. Otherwise, move on to the next section.
 
-    - Have you tested both the happy path and edge cases for each integration and signed off on all integrations that are in scope for go-live? If not, what's still pending, and what's the timeline for sign-off?
+    - Have you tested both the happy path and edge cases for each integration, and have you signed off on all integrations that are in scope for go-live? If not, what's still pending, and what's the timeline for sign-off?
 
     **Dual-write**
 
     - Does the solution contain any dual-write integrations that are used to run processes across Dynamics 365 applications?
-      
+
         > [!NOTE]
-        > If the answer is "Yes," answer the question below in this section. Otherwise, move on to the next section.
-        
+        > If the answer is "Yes," answer the next question in this section. Otherwise, move on to the next section.
+
     - Have all dual-write scenarios and flows been tested after migration, and have the acceptance criteria been met at the expected peak load? If not, what's still pending, and what's the timeline for sign-off?
-  
+
     **Production support and maintenance**
 
     - Does the project team have a plan in place for regular, monitoring and maintenance of the production environment?
