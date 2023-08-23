@@ -207,7 +207,7 @@ Field values on the **General** FastTab of the **Premium codes** page define the
 <tr>
 <td>Active interval &gt; New</td>
 <td>Enter the first and last dates that a premium code can be used.
-<blockquote>[!IMPORTANT] Active intervals can&#39;t overlap. Therefore, if an existing interval for the selected premium code is active on the date that a new interval takes effect, the existing interval is automatically expired on that date. Likewise, if you change the date when an existing interval starts or ends, any existing intervals that are active during the new interval are expired to prevent the intervals from overlapping.</blockquote>
+[!IMPORTANT] Active intervals can&#39;t overlap. Therefore, if an existing interval for the selected premium code is active on the date that a new interval takes effect, the existing interval is automatically expired on that date. Likewise, if you change the date when an existing interval starts or ends, any existing intervals that are active during the new interval are expired to prevent the intervals from overlapping.
 </td>
 </tr>
 </tbody>
