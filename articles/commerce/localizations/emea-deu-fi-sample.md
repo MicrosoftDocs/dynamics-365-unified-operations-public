@@ -127,7 +127,7 @@ The fiscal integration framework doesn't support sales quotations. Therefore, th
 
 ## Set up Commerce for Germany
 
-This section describes the Commerce settings that are specific to and recommended for Germany. For more setup information, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for Germany. For more setup information, see [Commerce home page](../welcome.md).
 
 To use the functionality that is specific to Germany, you must specify the following settings.
 

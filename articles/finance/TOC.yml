@@ -5142,6 +5142,6 @@
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Commerce
-    href: ../commerce/index.md
+    href: ../commerce/welcome.md
   - name: Dynamics 365 Human Resources
     href: ../human-resources/index.yml

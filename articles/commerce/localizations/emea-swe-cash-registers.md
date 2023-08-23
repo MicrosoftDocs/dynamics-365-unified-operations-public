@@ -27,7 +27,7 @@ This article provides an overview of the cash register functionality that is ava
 
 ### Common POS features
 
-To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../welcome.md).
 
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
@@ -70,7 +70,7 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 
 ## Setting up Commerce for Sweden
 
-This section describes the settings that are specific to and recommended for Sweden. For more information, see [Commerce home page](../index.md).
+This section describes the settings that are specific to and recommended for Sweden. For more information, see [Commerce home page](../welcome.md).
 
 To use the Sweden-specific functionality, you must complete these tasks:
 
