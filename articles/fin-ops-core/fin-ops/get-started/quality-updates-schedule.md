@@ -63,7 +63,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.34 PQU-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Completed |
 | 10.0.34 PQU-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| In-Progress |
 | 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Not Started |
-| 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Not Started |
+| 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| In-Progress |
 | 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Not Started |
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
 | 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
@@ -75,7 +75,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 > [!Note]
-> Only the onboarded productions environments will receive the updates, onboarded environments will receive explicit communication.
+> Any new Finance and Operations environment that is provisioned after August 17th, 2023 will automatically be signed up to receive PQUs per the schedule as applicable.
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.33 Release-3 train schedule
 
@@ -89,19 +89,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | August 7 to August 10, 2023 | August 19 to August 20, 2023  |
 | Station 5 | August 14 to August 17, 2023 | August 26 to August 27, 2023  |
 | Station 6 | August 15 to August 18, 2023 | August 26 to August 27, 2023  |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-1 train schedule
-
-**App version: 10.0.1591.76**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | July 3 to July 6, 2023 | NA |
-| Station 2 | July 10 to July 13, 2023 | July 22 to July 23, 2023 |
-| Station 3 | July 11 to July 14, 2023 | July 22 to July 23, 2023 |
-| Station 4 | July 17 to July 20, 2023 | July 29 to July 30, 2023 |
-| Station 5 | July 24 to July 27, 2023 | August 5 to August 6, 2023 |
-| Station 6 | July 25 to July 28, 2023 | August 5 to August 6, 2023 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-2 train schedule
 
