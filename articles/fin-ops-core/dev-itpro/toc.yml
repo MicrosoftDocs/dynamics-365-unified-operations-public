@@ -1021,8 +1021,6 @@ items:
         items:
         - name: Respond to GDPR data requests resources
           href: gdpr/gdpr-home-page.md
-        - name: Asset classifications
-          href: gdpr/gdpr-asset-classification-values.md
         - name: Person search report
           href: gdpr/gdpr-person-search-report.md
         - name: Extend the Person search report
