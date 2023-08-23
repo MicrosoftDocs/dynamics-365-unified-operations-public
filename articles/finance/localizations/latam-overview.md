@@ -24,9 +24,9 @@ Some of the functionality referred in this article may not be available for the 
 | Costa Rica |Available | September 2023 / 10.0.36  |
 | Nicaragua  | Available| September 2023 / 10.0.36  |
 | Panama  | Available| September 2023 / 10.0.36  |
-| Colombia |  Available|  2023 wave 2 |
-| Paraguay | Available  | 2023 wave 2 |
-| Uruguay | Available |2023 wave 2  |
+| Colombia |  September 2023 / 10.0.36 |  2023 wave 2 |
+| Paraguay | September 2023 / 10.0.36  | 2023 wave 2 |
+| Uruguay | September 2023 / 10.0.36 |2023 wave 2  |
 | Guatemala | October 2023 / 10.0.37 | 2023 Wave 2   |
 | Ecuador | February 2024 / 10.0.38 | 2024 Wave 1   |
 | Bolivia |February 2024 / 10.0.38 | 2024 Wave 1   |
