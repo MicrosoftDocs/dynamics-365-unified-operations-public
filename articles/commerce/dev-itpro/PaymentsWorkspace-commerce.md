@@ -1,5 +1,5 @@
 ---
-title: Payments workspace in Commerce headquarters
+title: Payments workspace
 description: This article describes the Payments workspace in Microsoft Dynamics 365 Commerce headquarters.
 author: BrianShook
 ms.date: 09/01/2023
@@ -12,9 +12,10 @@ ms.search.validFrom: 2023-08-15
 
 ---
 
-# Payments workspace in Commerce headquarters
+# Payments workspace
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
 This article describes the **Payments** workspace in Microsoft Dynamics 365 Commerce headquarters.
 
