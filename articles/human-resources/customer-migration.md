@@ -187,4 +187,7 @@ All customers are required to migrate their standalone environment(s) by Decembe
 ## What happens to customers that don't migrate before the deadline? 
 The infrastructure for the standalone application is scheduled to be turned off by December 31, 2023. As a result, environments that aren't migrated will no longer be available.  
 
+## What happens to DMF project during the migration?
+The DMF import and export project will be migrated to the finance and operations infrastructure. However, it's important to note that certain data entities have been enhanced in the new infrastructure. It is recommended to confirm the existence of the necessary fields within the data entity in the new infrastructure. Remove unavailable field in mapping or re-add impacted data entity in the project to mitigate the issue.
+
 
