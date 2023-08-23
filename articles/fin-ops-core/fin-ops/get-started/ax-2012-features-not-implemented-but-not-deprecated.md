@@ -138,7 +138,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
-<blockquote>[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
+[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
