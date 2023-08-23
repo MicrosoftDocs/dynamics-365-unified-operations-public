@@ -126,7 +126,7 @@ We have recently added or significantly updated the following help articles. The
 | Master planning | [View plan history and planning logs](../master-planning/planning-optimization/plan-history-logs.md) |
 | Warehouse management | [Container packing strategies](../warehousing/container-packing-strategy-overview.md) |
 | Warehouse management | [Cycle counting example scenarios](../warehousing/cycle-counting-scenarios.md) |
-| Warehouse management | [Import inbound ASNs through the V3 data entity](../warehousing/import-asn-data-entity.md) |
+| Warehouse management | [Import inbound ASNs through data entities](../warehousing/import-asn-data-entity.md) |
 | Warehouse management | [Over-picking for sales orders and transfer orders](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Warehouse management | [Schedule wave label printing during wave](../warehousing/configure-task-based-wave-label-printing.md) |
 | Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md) |
