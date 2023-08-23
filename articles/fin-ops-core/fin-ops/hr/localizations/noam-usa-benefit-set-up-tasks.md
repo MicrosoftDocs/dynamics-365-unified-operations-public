@@ -180,7 +180,7 @@ Deductions and contributions for the selected benefit plan are included in payro
 <tr>
 <td>Deduction priority</td>
 <td>Enter a number to specify where this deduction should be made in the sequence of applicable deductions. The lower the deduction priority number that you enter, the higher the deduction priority. The lowest deduction priority number that you can enter is 0 (zero). When amounts are deducted from pay statements, the deductions start with the benefit that has the lowest deduction priority number. When multiple benefits have the same number, the deductions for those benefits are made in alphabetical order. 
-<blockquote>[!IMPORTANT] Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="noam-usa-garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>. </blockquote>
+[!IMPORTANT] Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="noam-usa-garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>. 
 <p>By default, the value in this field is entered on the <strong>Maintain benefits</strong> page when a worker is enrolled in a benefit. You can change the value for a worker at the time of enrollment or at any other time. If you change the default value, existing benefit assignments don't change. You must change those values individually.</p></td>
 </tr>
 <tr>
@@ -271,7 +271,7 @@ Use the data in your own table to set up the contribution calculation rate table
 <li><strong>Fixed percent</strong> – The employer's contribution is calculated by multiplying the employer contribution rate by the employee's earnings. For example, the rate for the worker's deduction is 0.03, and the rate for the employer's contribution is 0.02. In this case, the amount of the employer's contribution is 0.02, or 2 percent of the employee's earnings. For this option, the worker deduction amount and the employer contribution amount are calculated separately.</li>
 <li><strong>Percent of employee</strong> – The employer's contribution is calculated by multiplying the employer contribution rate by the worker deduction rate. For example, the worker deduction rate is 0.03, and the employer contribution rate is 0.5. In this case, the amount of the employer's contribution is 0.03 × 0.5 = 0.015, or 1.5 percent of the employee's earnings.</li>
 </ul>
-<blockquote>[!NOTE] The worker deduction rate and employer contribution rate are determined by the rate table that you define on the <strong>Contribution calculation rates</strong> page and then assign to the benefit on the <strong>Benefits</strong> page.</blockquote>
+[!NOTE] The worker deduction rate and employer contribution rate are determined by the rate table that you define on the <strong>Contribution calculation rates</strong> page and then assign to the benefit on the <strong>Benefits</strong> page.
 </td>
 </tr>
 </tbody>
