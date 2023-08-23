@@ -2935,7 +2935,7 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn on the Rebate management module for your system
+        - name: Turn the Rebate management module on or off
           href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
@@ -3519,11 +3519,13 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
+        - name: Create or modify an inbound load
+          href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
-        - name: Import inbound ASNs through the V3 data entity
+        - name: Import inbound ASNs through data entities
           href: warehousing/import-asn-data-entity.md
         - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
@@ -3883,6 +3885,20 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
+      - name: Warehouse management only mode
+        items:
+        - name: Warehouse management only mode overview
+          href: warehousing/wms-only-mode-overview.md
+        - name: Enable and configure warehouse management only mode
+          href: warehousing/wms-only-mode-setup.md
+        - name: Exchange data between systems
+          href: warehousing/wms-only-mode-exchange-data.md
+        - name: Work with warehouse management only mode in Supply Chain Management
+          href: warehousing/wms-only-mode-using.md
+        - name: Example of using inbound and outbound shipment orders
+          href: warehousing/wms-only-mode-example.md
+        - name: Warehouse management only mode frequently asked questions
+          href: warehousing/wms-only-mode-faq.md
     - name: Responsible AI 
       items:
       - name: Overview
@@ -3897,7 +3913,7 @@
         href: transportation/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
-      - name: Create and process custom message queues and message types
+      - name: Create and process message queues and message types
         href: supply-chain-dev/message-processor.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
