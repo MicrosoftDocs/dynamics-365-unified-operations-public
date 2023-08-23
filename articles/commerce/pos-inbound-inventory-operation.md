@@ -2,7 +2,7 @@
 title: Inbound inventory operation in POS
 description: This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 09/01/2023
+ms.date: 08/23/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -15,6 +15,7 @@ ms.search.validFrom: 2017-06-20
 # Inbound inventory operation in POS
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 
@@ -69,31 +70,31 @@ When you select a document line in the list, a **Details** pane appears. This pa
 
 In the document list view, you can select **Order details** on the app bar to view the document details. You can also activate receipt processing on eligible document lines.
 
-In the document list view, you can also create a new purchase order or inbound transfer order request for a store. The documents remain in **Draft** status and can be adjusted or deleted until they are submitted to headquarters for processing.
+In the document list view, you can also create a new purchase order or inbound transfer order request for a store. The documents remain in **Draft** status and can be adjusted or deleted until they're submitted to headquarters for processing.
 
 ## Receiving process
 
 After you select a purchase order or transfer order document on the **Active** tab, you can select **Order details** to begin the receiving process.
 
-By default, the **Receiving now** view is shown. This view is optimized for bar code scanning. It can be used to build a list of the items that have been scanned, so that those items can be received. To begin the receiving process, you can start to scan item bar codes.
+By default, the **Receiving now** view is shown. This view is optimized for barcode scanning. It can be used to build a list of the items that have been scanned, so that those items can be received. To begin the receiving process, you can start to scan item barcodes.
 
-As item bar codes are scanned in the **Receiving now** view, the application validates the items against the selected purchase or transfer order document, to make sure that each scanned item matches a valid item on the document. In the **Receiving now** view, each scan of a bar code is assumed to represent the receipt of a quantity of one unit, unless a quantity is embedded in the bar code. You can repeatedly scan bar codes in this view to build a list of all the items and quantities for the receipt.
+As item barcodes are scanned in the **Receiving now** view, the application validates the items against the selected purchase or transfer order document, to make sure that each scanned item matches a valid item on the document. In the **Receiving now** view, each scan of a barcode is assumed to represent the receipt of a quantity of one unit, unless a quantity is embedded in the barcode. You can repeatedly scan barcodes in this view to build a list of all the items and quantities for the receipt.
 
 ### Example scenario
 
-A user receives a purchase order that contains 10 units of bar code 5657900266. The user can scan that bar code 10 times to update the **Receiving now** field by one unit per scan. When the user has completed the scans, the **Receiving now** field for the item's line will show that a quantity of 10 was received.
+A user receives a purchase order that contains 10 units of barcode 5657900266. The user can scan that barcode 10 times to update the **Receiving now** field by one unit per scan. After the user completes the scans, the **Receiving now** field for the item's line shows that a quantity of 10 was received.
 
-Alternatively, in a scenario where the item quantity is large, the user might prefer to manually enter the quantity instead of scanning the bar code for each item that is received. In this case, the user can scan the bar code one time to add the item to the **Receiving now** list. The user can then select the associated line in the **Receiving now** view and then, in the **Details** pane that appears on the right side of the page, update the **Receiving quantity** field for the item.
+Alternatively, in a scenario where the item quantity is large, the user might prefer to manually enter the quantity instead of scanning the barcode for each item that is received. In this case, the user can scan the barcode one time to add the item to the **Receiving now** list. The user can then select the associated line in the **Receiving now** view and then, in the **Details** pane that appears on the right side of the page, update the **Receiving quantity** field for the item.
 
-Although the **Receiving now** view is optimized for bar code scanning, users can also select **Receive product** on the app bar, and then enter the item ID or bar code data via a dialog box. After the item that was entered is validated, the user is prompted to enter the receipt quantity.
+Although the **Receiving now** view is optimized for barcode scanning, users can also select **Receive product** on the app bar, and then enter the item ID or barcode data via a dialog box. After the item that was entered is validated, the user is prompted to enter the receipt quantity.
 
-The **Receiving now** view provides a focused way for users to see which products they are receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines in the list and then, in the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan bar codes, or they can use the **Receive product** function to enter the item ID or bar code, and data about the received quantity, without first having to select the matching item line in the list.
+The **Receiving now** view provides a focused way for users to see which products they're receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines in the list and then, in the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan barcodes, or they can use the **Receive product** function to enter the item ID or barcode, and data about the received quantity, without first having to select the matching item line in the list.
 
 ### Over-receiving validations
 
 Validations occur during the receiving process for the document lines. They include validations for over-delivery. If a user tries to receive more inventory than was ordered on a purchase order, but either over-delivery isn't configured or the amount that is received exceeds the over-delivery tolerance that is configured for the purchase order line, the user receives an error and isn't allowed to receive the excess quantity.
 
-Over-receiving isn't permitted for transfer order documents. Users will always receive errors if they try to receive more than was shipped for the transfer order line.
+Over-receiving isn't permitted for transfer order documents. Users always receive errors if they try to receive more than was shipped for the transfer order line.
 
 ### Close purchase order lines
 
@@ -105,13 +106,13 @@ Underdelivery tolerance percentages for a purchase order line can be predefined 
 
 After an organization completes the purchase order underdelivery configurations, POS users will see a new **Close remaining quantity** option in the **Details** pane when an inbound purchase order line is selected in the **Inbound inventory** operation. If the user closes the remaining quantity, POS performs a validation to verify whether the quantity being closed is within the underdelivery tolerance percentage defined on the purchase order line. If the underdelivery tolerance is exceeded, an error message is displayed and the user won’t be able to close the remaining quantity until the previously received quantity plus the **Receiving now** quantity meets or exceeds the minimal quantity that needs to be received based on the underdelivery tolerance percentage. 
 
-With the **Close remaining quantity** option turned on for a purchase order line, when a user completes the receipt by executing the **Finish receiving** action, a closure request is also sent to headquarters, and any unreceived quantity of the order line is canceled. At this point the line is considered fully received. 
+With the **Close remaining quantity** option turned on for a purchase order line, when a user completes the receipt by executing the **Finish receiving** action, a closure request is also sent to headquarters, and any unreceived quantity of the order line is canceled. At this point, the line is considered fully received. 
 
 ### Receiving location-controlled items
 
 If the items that are being received are location-controlled, users can select the location where they want to receive the items during the receiving process. We recommend that you configure a default receiving location for your store warehouse, to make this process more efficient. Even if a default location is configured, users can override the receiving location on selected lines as they require.
 
-The operation respects the **Blank receipt allowed** configuration on the **Location** storage dimension and doesn't require that a location dimension be entered if blank receipt is configured. If blank receipt locations aren't allowed for an item, the POS application shows an error and requires that a location be entered before the receipt can be posted.
+The operation respects the **Blank receipt allowed** configuration on the **Location** storage dimension, and doesn't require that a location dimension is entered if blank receipts are allowed. If blank receipt locations aren't allowed for an item, the POS application shows an error and requires that a location be entered before the receipt can be posted.
 
 ### Receive all
 
@@ -119,15 +120,15 @@ As you require, you can select **Receive all** on the app bar to quickly update 
 
 ### Receipt of unplanned items on purchase orders
 
-In Commerce version 10.0.14 and later, users can receive a product that was not originally on the purchase order. This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
+In Commerce version 10.0.14 and later, users can receive a product that wasn't originally on the purchase order. This feature only works for purchase order receiving. It's not possible to receive items against transfer orders when the items weren't previously ordered and shipped from the outbound warehouse.
 
-Users can't add new products to the purchase order during POS receiving if the [purchase order change management workflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) is enabled in headquarters. To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving fails if the change management workflow is enabled. If change management is enabled for all purchase orders or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
+Users can't add new products to the purchase order during POS receiving if the [purchase order change management workflow](../supply-chain/procurement/purchase-order-approval-confirmation.md) is enabled in headquarters. To enable change management, all changes to a purchase order must first be approved before receiving is allowed. Because this process allows a receiver to add new lines to the purchase order, receiving fails if the change management workflow is enabled. If change management is enabled for all purchase orders, or for the vendor linked to the purchase order actively being received in POS, the user can't add new products to the purchase order during receiving in POS.
 
 The functionality that enables adding lines can't be used as a workaround for receiving additional quantities of products already on the purchase order. Over-receiving is managed through the standard [over-receiving](#over-receiving-validations) settings for the product line on the purchase order.
 
 When a user is receiving with the **Inbound operation** in POS, if the user scans or keys a product barcode or product number that is recognized as a valid item but isn't recognized as an item on the current purchase order, the user receives a message prompting them to add the item to the purchase order. If the user adds the item to the purchase order, the quantity entered in **Receiving now** is considered the ordered quantity for the purchase order line.
 
-When the purchase order receipt is complete and submitted to headquarters for processing, the added lines are created on the purchase order master document. On the purchase order line in headquarters, there will be an **Added by POS** flag on the **General** tab of the purchase order line. The **Added by POS** flag indicates that the purchase order line was added by the POS receiving process and was not a line that was on the purchase order prior to receiving.
+When the purchase order receipt is complete and submitted to headquarters for processing, the added lines are created on the purchase order master document. On the purchase order line in headquarters, there is an **Added by POS** flag on the **General** tab of the purchase order line. The **Added by POS** flag indicates that the purchase order line was added by the POS receiving process and wasn't a line that was on the purchase order prior to receiving.
 
 ### Cancel receiving
 
@@ -137,7 +138,7 @@ You should use the **Cancel receiving** function on the app bar only if you want
 
 If you're receiving inventory, you can use the **Pause receiving** function if you want to take a break from the receiving process. For example, you might want to perform another operation from the POS, such as ringing up a customer sale, or delay posting of the receipt.
 
-When you select **Pause receiving**, the document's status is changed to **Paused**. Therefore, users will know that data has been entered for the document, but the document hasn't yet been committed. When you're ready to resume the receiving process, select the paused document, and then select **Order details**. Any **Receiving now** quantities that were previously saved are retained and can be viewed from the **Full order list** view.
+When you select **Pause receiving**, the document's status is changed to **Paused**. Users know that data has been entered for the document, but that the document hasn't yet been committed. When you're ready to resume the receiving process, select the paused document, and then select **Order details**. Any **Receiving now** quantities that were previously saved are retained and can be viewed from the **Full order list** view.
 
 ### Review
 
@@ -149,7 +150,7 @@ The **Review** function validates the following issues in an inbound document:
 - **Under-receiving** – The **Receiving now** quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in headquarters.
 - **Serial number** – The serial number isn't provided or validated for a serialized item that requires a serial number to be registered in inventory.
 - **Location not set** – The location isn't specified for a location-controlled item where a blank location isn't allowed.
-- **Deleted lines** – The order has lines deleted by a headquarters user that is not known to the POS application.
+- **Deleted lines** – The order has lines deleted by a headquarters user that isn't known to the POS application.
 
 Set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory** to have the validation executed automatically when **Finish receiving** is selected.
 
@@ -157,7 +158,7 @@ Set the **Enable automatic validation** parameter to **Yes** in **Commerce param
 
 When you've finished entering all the **Receiving now** quantities for products, you must select **Finish receiving** on the action pane to process the receipt.
 
-If **Review** functionality is configured, when users complete a purchase order receipt, they are prompted to enter a value in the **Receipt number** field. Typically, this value is equivalent to the identifier of the vendor packing slip. The **Receipt number** data will be stored in the product receipt journal in headquarters. Receipt numbers aren't captured for transfer order receipts.
+If **Review** functionality is configured, when users complete a purchase order receipt, they're prompted to enter a value in the **Receipt number** field. Typically, this value is equivalent to the identifier of the vendor packing slip. The **Receipt number** data is stored in the product receipt journal in headquarters. Receipt numbers aren't captured for transfer order receipts.
 
 When asynchronous document processing is used, the receipt is submitted through an asynchronous document framework. The time that it takes for the document to be posted depends on the size of the document (the number of lines) and the general processing traffic that is occurring on the server. Typically, this process occurs in a matter of seconds. If document posting fails, the user is notified through the **Inbound operation** document list, where the document status will be updated to **Processing failed**. The user can then select the failed document in POS to view the error messages and the reason for the failure in the **Details** pane. A failed document remains unposted and requires that the user return to the document lines by selecting **Order details** in POS. The user must then update the document with corrections, based on the errors. After a document is corrected, the user can try again to process it by selecting **Finish fulfillment** on the app bar.
 
@@ -165,7 +166,7 @@ When asynchronous document processing is used, the receipt is submitted through 
 
 Users can create new purchase order requests from POS. To use this feature, ensure the **Ability to create purchase order request in POS** feature is enabled in the **Feature management** workspace, and the **Allow create purchase order** permission setting is enabled in the user's POS permission group.
 
-To start the creation process, on the action pane of the document list view, select **Create new**. In the dialog box that appears, select **New purchase order**, then select a vendor from which you want the purchase order to be shipped. You can search for a specific vendor by entering the vendor account ID or vendor name. Your current store will always be the **Ship to** warehouse for the to-be-created purchase order, and this location can't be modified. Specify the **Accounting date** and **Delivery date** as needed. You can also add a note that will be stored together with the purchase order header as an attachment to the document in headquarters.
+To start the creation process, on the action pane of the document list view, select **Create new**. In the dialog box that appears, select **New purchase order**, then select a vendor from which you want the purchase order to be shipped. You can search for a specific vendor by entering the vendor account ID or vendor name. Your current store is always the **Ship to** warehouse for the to-be-created purchase order, and this location can't be modified. Specify the **Accounting date** and **Delivery date** as needed. You can also add a note that is stored together with the purchase order header as an attachment to the document in headquarters.
 
 > [!NOTE]
 > - You can't create purchase orders from POS if the [purchase order change management workflow](/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) is enabled in headquarters. In that case, the purchase orders can only be created in headquarters and must go through the approval workflow.
@@ -183,9 +184,9 @@ From POS, users can also confirm purchase order requests to indicate commitment 
 
 Users can create new inbound transfer order documents from POS. To start the process, on the action pane of the document list view, select **Create new**. In the dialog box that appears, select **New transfer order**, and then select a **Transfer from** warehouse or store that provides the inventory to your store location. The **Transfer from** values are limited to the selection that's defined in the configuration of the store's fulfillment group. In an inbound transfer request, your current store will always be the **Transfer to** warehouse for the transfer order. The **Transfer to** value can't be changed.
 
-Enter values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. You can also add a note that will be stored together with the transfer order header as an attachment to the document in headquarters.
+Enter values in the **Ship date**, **Receive date**, and **Mode of delivery** fields as needed. You can also add a note that is stored together with the transfer order header as an attachment to the document in headquarters.
 
-After the header information is created, you can add products to the transfer order. To start the process of adding items and requested quantities, select **Add product**. In the **Details** pane, you can also add a line-specific note to the journal lines. These notes will be stored as a line attachment.
+After the header information is created, you can add products to the transfer order. To start the process of adding items and requested quantities, select **Add product**. In the **Details** pane, you can also add a line-specific note to the journal lines. These notes are stored as a line attachment.
 
 After lines are entered on the inbound transfer order, you must select **Save** to save the document changes locally or **Submit request** to submit the order details to headquarters for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. You should only select **Save** if you aren't ready to commit the request to headquarters for processing.
 
