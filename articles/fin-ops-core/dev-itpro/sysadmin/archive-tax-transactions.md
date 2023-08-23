@@ -56,7 +56,7 @@ To schedule archiving of tax transactions, follow these steps.
 6.	On the **Tax archive automation parameters**, view the list of record collections that are ready for archiving. 
 
 > [!NOTE]
-> Tax archive automation utilizes the same conditions of data readiness for archiving as described in [Archive general ledger data](archive-general-ledger.md#archival-requirements). 
+> The **Archive status** is _Ready_ when all periods in fiscal year are _permanently_ closed. 
 
 7.	Select the record collection that you want to archive, and then select **Finish**.
    
