@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | Manufacturing and asset management | [Detect spikes and deviations in sensor data](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/detect-spikes-deviations-sensor-data) | [Anomaly detection scenario](../sensor-data-intelligence/sdi-scenario-anomaly.md) | Enabled by default |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | *Coming soon* | Feature management:<br>*(Preview) Advanced export control configuration*  |
 | Warehouse management | Dynamic printer selection | [Dynamic printer selection](../warehousing/dynamic-printing-selection.md) | Enabled by default |
-| Warehouse management | Operate warehouses connected to external order management systems | *Coming soon* | Feature management:<br>*(Preview) Warehouse management only mode* |
+| Warehouse management | Operate warehouses connected to external order management systems | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
 
 ## Feature enhancements included in this release
 
