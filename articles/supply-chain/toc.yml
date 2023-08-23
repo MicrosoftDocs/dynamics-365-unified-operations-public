@@ -2935,7 +2935,7 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn on the Rebate management module for your system
+        - name: Turn the Rebate management module on or off
           href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
