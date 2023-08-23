@@ -4,7 +4,7 @@ description: This article gives an overview of the transportation management fun
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
-ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
+ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 ms.topic: overview
 ms.date: 12/13/2022
 audience: Application User
