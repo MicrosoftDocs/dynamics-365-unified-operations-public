@@ -170,7 +170,7 @@ Follow these steps to specify who the manual task should be assigned to.
     </ol>
     </li>
     </ol>
-    <blockquote>[!NOTE] This option is used for only a few workflows, such as Case management.</blockquote>
+    [!NOTE] This option is used for only a few workflows, such as Case management.
     </td>
     </tr>
     </tbody>
