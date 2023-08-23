@@ -21,7 +21,7 @@ This article describes the **Payments** workspace in Microsoft Dynamics 365 Comm
 
 Dynamics 365 Commerce headquarters includes a collection of workspaces to assist users with pages that include common tasks, links, and tiles. These workspaces provide aggregated views that help users perform their jobs more efficiently. 
 
-Starting in Commerce version 10.0.37, a **Payments** workspace has been added to provide combined views of common payment connector and payment method processing configurations in one place. In addition to common channel and environment payment configuration views, the **Payments** workspace includes links so users can easily navigate to headquarters payment configuration pages. 
+Starting in Commerce version 10.0.37, a **Payments** workspace has been added to Commerce headquarters to provide combined views of common payment connector and payment method processing configurations in one place. In addition to common channel and environment payment configuration views, the **Payments** workspace includes links for users to easily navigate to headquarters payment configuration pages. 
 
 <!--This workspace assists in configuring, diagnosing configuration issues, and navigating through to the multiple pages within headquarters in which common payment configurations occur.-->
 
@@ -41,18 +41,18 @@ In the **Payments** workspace, the main section for **Payment configurations** i
 
 The details displayed are relevant to the configurations of the organizational legal entity set in the top-right context of headquarters (or 'cmp' parameter in the headquarters URL set in the browser navigational toolbar). No sensitive data (such as merchant security keys) is included in the column options. 
 
-#### About the grid view
+### Workspace grid view
 
-The workspace grid views follow common workspace view capabilities, such as allowing for grid column adjustments and saved view arrangements. Data in the views can be exported, and columns can be inserted, frozen, or hidden. Organizing views allows users to quickly assess common configuration details relevant to their assigned coverage, and coordinating with IT administrators for support cases as needed.
+The workspace grid views have common workspace view capabilities, such as allowing for grid column adjustments and saved view arrangements. Data in the views can be exported, and columns can be inserted, frozen, or hidden. Organizing views allows users to quickly assess common configuration details relevant to their assigned coverage, and coordinate with IT administrators for support cases as needed.
 
-Values listed within the view grid are not directly editable from the grid. Users must still set or edit values from the specific configuration pages. Some column values include quick links to their contextually relevant configuration pages within headquarters. Where available, hovering over the value in the grid view will display the link underlined with a tooltip to **Click to follow the link**. 
+Values listed within the view grid are not directly editable from the grid. Users must still set or edit values from the respective area configuration pages. Some column values include quick links to their contextually relevant configuration pages within headquarters. Where available, hovering over a value in the grid view displays an underlined link (or links) with a **Click to follow the link** tooltip. 
 
 Examples include:
 
-- **All call centers** (links to **Payment service**) 
-- **Online stores** (links to **Name**, **Payment method link**)
-- **All stores** (links to **Store number**, **Register number**, **Hardware profile**)
-- **Card types** (links to **Card ID**)
+- **All call centers** - Links to **Payment service**. 
+- **Online stores** - Links to **Name**, **Payment method link**.
+- **All stores** - Links to **Store number**, **Register number**, **Hardware profile**.
+- **Card types** - Links to **Card ID**.
 
 ### Links
 
