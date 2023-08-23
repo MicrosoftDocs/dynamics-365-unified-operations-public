@@ -19941,11 +19941,6 @@
       "source_path": "articles/supply-chain/transparency-note.md",
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
       "redirect_document_id": "false"
-    },
-    {
-      "source_path": "articles/commerce/index.md",
-      "redirect_url": "/dynamics365/commerce/welcome",
-      "redirect_document_id": "false"
     }
   ]
 }
