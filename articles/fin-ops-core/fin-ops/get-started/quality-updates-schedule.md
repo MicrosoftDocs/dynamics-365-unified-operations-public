@@ -4,7 +4,7 @@ description: This article provides the release schedule for proactive quality up
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 08/23/2023
 ms.custom: bap-template
 audience: Application User, Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -75,7 +75,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 > [!Note]
-> Any new Finance and Operations environment that is provisioned after August 17th, 2023 will automatically be signed up to receive PQUs per the schedule as applicable.
+> Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.33 Release-3 train schedule
 
