@@ -102,7 +102,7 @@ Yes, saved views will be migrated to the merged infrastructure.
 ## Will features that are enabled in Dynamics 365 Human Resources automatically be available after the infrastructure merge?
 
 - For customers who use the **Human Resources** module, features that are available only in Dynamics 365 Human Resources will be managed through Feature management. Usually, these features won't be enabled by default. Any features that must be enabled by default will be documented.
-- For customers who use Dynamics 365 Human Resources, features will be available in the infrastructure. Any features that aren't available will be documented. Every Feature management key that is enabled in the current Dynamics 365 Human Resources environment will be enabled in the merged infrastructure. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- For customers who use Dynamics 365 Human Resources, features will be available in the infrastructure. Any features that aren't available will be documented. Every Feature management key that is enabled in the current Dynamics 365 Human Resources environment will be enabled in the merged infrastructure. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## What happens to BYOD databases during the migration?
 
