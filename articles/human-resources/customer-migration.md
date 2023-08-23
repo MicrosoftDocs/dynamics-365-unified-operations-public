@@ -4,7 +4,7 @@
 title: Human Resources customer migration FAQ
 description: This article answers frequently asked questions about the migration of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: twheeloc
-ms.date: 07/06/2022
+ms.date: 08/23/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -187,7 +187,7 @@ All customers are required to migrate their standalone environment(s) by Decembe
 ## What happens to customers that don't migrate before the deadline? 
 The infrastructure for the standalone application is scheduled to be turned off by December 31, 2023. As a result, environments that aren't migrated will no longer be available.  
 
-## What happens to DMF project during the migration?
-The DMF import and export project will be migrated to the finance and operations infrastructure. However, it's important to note that certain data entities have been enhanced in the new infrastructure. It is recommended to confirm the existence of the necessary fields within the data entity in the new infrastructure. Remove unavailable field in mapping or re-add impacted data entity in the project to mitigate the issue.
+## What happens to the Data Import Export Framework (DMF) project during the migration?
+The DMF import and export project is migrated to the finance and operations infrastructure. Note that certain data entities have been enhanced in the new infrastructure. It's recommended to confirm the necessary fields are found in the data entity in the new infrastructure. Remove unavailable fields in mapping or re-add impacted data entity in the project to mitigate the issue.
 
 
