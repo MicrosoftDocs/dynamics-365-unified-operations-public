@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 ms.search.region: Global
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains the actions that each participant in a workflow approval process can take.
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 ms.search.region: Global
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the architecture of the workflow system.
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 1
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article points you to a report that lists the available workflow types.
 

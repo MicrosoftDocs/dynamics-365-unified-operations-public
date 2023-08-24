@@ -8,7 +8,7 @@ author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 ms.author: raprofit
@@ -20,7 +20,7 @@ ms.search.validFrom: 2021-06-24
 [!include[banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 You can set up dynamic expenditure reviewers to route expenditures for review, based on either the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine who the expenditure should be routed to.
 

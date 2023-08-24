@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
@@ -21,7 +21,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.
 
