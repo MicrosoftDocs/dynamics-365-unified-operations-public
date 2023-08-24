@@ -61,7 +61,7 @@ If your environment has a linking mismatch, LCS shows a warning that resembles t
 If you receive this warning, try one of the following solutions:
 
 - If your LCS environment has never been set up for Power Platform integration, you can connect to the Dataverse instance that is configured in dual-write by following the instructions in this article.
-- If your LCS environment is already set up for Power Platform integration, you should unlink dual-write and reconnect it to the one specified by LCS using the [Scenario: Reset or change linking](relink-environments.md#scenario-reset-or-change-linking).
+- If your LCS environment is already set up for Power Platform integration, you should reset your dual-write connection to the one specified by LCS using the [Reset dual-write connections](/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/reset).
 
 In the past a manual support ticket option was available, but that was before option 1 above existed.  Microsoft no longer supports manual relinking requests via Support tickets.
 
