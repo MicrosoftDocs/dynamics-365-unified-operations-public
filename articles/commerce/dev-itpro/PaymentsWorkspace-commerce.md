@@ -1,6 +1,6 @@
 ---
-title: Payments workspace
-description: This article describes the Payments workspace in Microsoft Dynamics 365 Commerce headquarters.
+title: Payment workspace
+description: This article describes the Payment workspace in Microsoft Dynamics 365 Commerce headquarters.
 author: BrianShook
 ms.date: 09/01/2023
 ms.topic: article
@@ -12,16 +12,16 @@ ms.search.validFrom: 2023-08-15
 
 ---
 
-# Payments workspace
+# Payment workspace
 
 [!include[banner](../includes/banner.md)]
 [!include[banner](../includes/preview-banner.md)]
 
-This article describes the **Payments** workspace in Microsoft Dynamics 365 Commerce headquarters.
+This article describes the **Payment** workspace in Microsoft Dynamics 365 Commerce headquarters.
 
 Dynamics 365 Commerce headquarters includes a collection of workspaces to assist users with pages that include common tasks, links, and tiles. These workspaces provide aggregated views that help users perform their jobs more efficiently. 
 
-Starting in Commerce version 10.0.37, a **Payments** workspace has been added to Commerce headquarters to provide combined views of common payment connector and payment method processing configurations in one place. In addition to common channel and environment payment configuration views, the **Payments** workspace includes links for users to easily navigate to headquarters payment configuration pages. 
+Starting in Commerce version 10.0.37, a **Payment** workspace has been added to Commerce headquarters to provide combined views of common payment connector and payment method processing configurations in one place. In addition to common channel and environment payment configuration views, the **Payment** workspace includes links for users to easily navigate to headquarters payment configuration pages. 
 
 <!--This workspace assists in configuring, diagnosing configuration issues, and navigating through to the multiple pages within headquarters in which common payment configurations occur.-->
 
@@ -31,7 +31,7 @@ You can access the **Payment** workspace via the headquarters menu under the **W
 
 ### Payment configurations
 
-In the **Payments** workspace, the main section for **Payment configurations** includes numerous view tabs which populate the grid view with relevant data. These views are:
+In the **Payment** workspace, the main section for **Payment configurations** includes numerous view tabs which populate the grid view with relevant data. These views are:
 
 - **All call centers** - Displays all the payment service payment connectors configurations as set up in **Accounts receivable \> Payments setup \> Payment services**, which apply to all the call center channels in the environment associated with the legal entity. 
 - **Online stores** - Displays all online channel payment connector configurations as set up in the **Retail and Commerce \> Channels \> Online stores** payment accounts. All configured online channel payment connector details are listed in this view.
@@ -39,7 +39,7 @@ In the **Payments** workspace, the main section for **Payment configurations** i
 - **Card types** - Displays all card type items configured for the legal entity, as well as any bin-range variations that are set per card type.
 - **Available connectors** - Displays a simple list of all payment connectors configured in the environment that can be used for **Processor payment mapping methods**.  
 
-The details displayed are relevant to the configurations of the organizational legal entity set in the top-right context of headquarters (or 'cmp' parameter in the headquarters URL set in the browser navigational toolbar). No sensitive data (such as merchant security keys) is included in the column options. 
+The details displayed are relevant to the configurations of the organizational legal entity selected in the drop-down list on the top-right in headquarters. No sensitive data (such as merchant security keys) is included in the column options. 
 
 ### Workspace grid view
 
