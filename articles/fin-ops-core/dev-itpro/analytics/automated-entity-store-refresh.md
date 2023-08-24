@@ -21,7 +21,7 @@ ms.search.form: AutomatedEntityStoreRefresh
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 ## Overview
 
