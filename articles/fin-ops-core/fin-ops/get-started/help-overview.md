@@ -22,7 +22,7 @@ ms.search.form: SystemParameters
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
