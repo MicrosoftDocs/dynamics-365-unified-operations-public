@@ -3723,6 +3723,8 @@
         items:
         - name: What's new or changed in the Warehouse Management mobile app
           href: warehousing/whats-new-wma.md
+        - name: Warehouse Mobile app accessibility features
+          href: warehousing/warehouse-app-accessibility.md
         - name: Install, set up, and use mobile devices
           items:
           - name: Install and connect the Warehouse Management mobile app
@@ -3767,8 +3769,8 @@
           href: warehousing/mobile-device-parameters.md
         - name: Mobile device user accounts
           href: warehousing/mobile-device-work-users.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
+        - name: Warehouse mobile device workspace
+          href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
