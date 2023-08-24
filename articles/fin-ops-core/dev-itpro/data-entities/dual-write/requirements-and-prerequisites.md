@@ -12,6 +12,9 @@ ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+<!--TODO  Remove this page -->
+<!-- andreea 20230824: moved the regions section into the main article, all the rest looks obsolete -->
+
 # System requirements and prerequisites
 
 [!include [banner](../../includes/banner.md)]

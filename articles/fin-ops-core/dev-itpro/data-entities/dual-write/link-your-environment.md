@@ -12,6 +12,8 @@ ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+<!--TODO  Remove this page -->
+
 # Use the dual-write wizard to link your environments
 
 [!include [banner](../../includes/banner.md)]

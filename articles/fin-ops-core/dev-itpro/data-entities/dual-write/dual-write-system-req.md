@@ -16,6 +16,28 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+## What regions are available?
+
+Currently, we support dual-write in the following regions:
+
++ Asia
++ Australia
++ Brazil
++ Canada
++ Europe
++ France
++ Germany
++ India
++ Japan
++ South America
++ Switzerland
++ United Arab Emirates
++ United Kingdom
++ United States
+
+> [!NOTE]
+> There are currently no plans to support more regions.
+
 The setup of a dual-write connection has the following requirements:
 
 + finance and operations apps that have build version 10.0.9 (10.0.383.20013) (Quality update) and platform update 33 or later

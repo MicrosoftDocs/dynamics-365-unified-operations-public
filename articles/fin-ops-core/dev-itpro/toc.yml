@@ -1189,6 +1189,7 @@ items:
               href: data-entities/dual-write/connection-setup.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
+            #--TODO ungroup this (a lot of the articles are removed) 
             - name: Enable dual-write for existing finance and operations apps
               items:
                 - name: Enable dual-write for existing finance and operations apps
