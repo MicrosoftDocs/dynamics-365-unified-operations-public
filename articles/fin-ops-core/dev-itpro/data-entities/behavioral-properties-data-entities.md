@@ -127,14 +127,12 @@ At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are a
 <td>Auto, No, Yes</td>
 <td>Auto</td>
 <td><ul>
-<li><strong>Auto:</strong> The property is inherited from the underlying table field.
-<blockquote>[!NOTE] The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.</blockquote>
+<li><strong>Auto:</strong> The property is inherited from the underlying table field. <strong>Note</strong> The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.
 </li>
 <li><strong>No:</strong> Users aren't allowed to modify the data for this field in a new record.</li>
 <li><strong>Yes:</strong> Users are allowed to modify the data for this field for a new record.</li>
 </ul>
-This behavior is enforced for all consumers – X++, OData, and so on.
-<blockquote>[!IMPORTANT] The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
+This behavior is enforced for all consumers – X++, OData, and so on. <strong>Important</strong> The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
 </tr>
 <tr>
 <td>Behavior</td>
@@ -155,6 +153,10 @@ This behavior is enforced for all consumers – X++, OData, and so on.
 </tr>
 </tbody>
 </table>
+
+|Makrdown |Table |Test|
+|---------|------|----|
+|can      |I     |use <br><br>>[!NOTE]<br>>notes?|
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
