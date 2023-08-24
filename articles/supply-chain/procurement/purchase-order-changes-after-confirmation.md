@@ -34,7 +34,7 @@ This feature is part of the *Procurement with Copilot* feature set, which is a g
 This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
 
 - Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
-- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+- Steps 3 through 6 enable the support by Copilot for this workspace that provides, for example, natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
@@ -51,7 +51,7 @@ In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-m
 
 ### <a name="enable-sql-key"></a>Step 3: Enable the SQL row version change tracking license key
 
-Follow these steps to make sure the **Sql row version change tracking (Preview)** license key is enabled for your system. If the key isn't enabled, you'll get an error when you try to install the Copilot application in the Power platform admin center.
+Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it if necessary. If the key isn't enabled, you'll get an error when you try to install the Copilot application in the Power Platform admin center.
 
 1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, scroll down the **Sql row version change tracking (Preview)** key. If the key is already enabled, then skip the rest of this procedure. If it isn't enabled, then continue to the next step.
