@@ -15,8 +15,6 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
-
 
 
 You can set up a dual-write connection between a finance and operations environment and a Dataverse environment.
