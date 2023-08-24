@@ -74,7 +74,7 @@ The **Warehouse mobile devices** workspace lets you see information about each d
     - *Auto* – This is the initial value assigned to new devices until the system has enough information to determine the correct license state.
     - *License required* – The device needs a license that hasn't yet been acquired. This value is usually assigned automatically the first time a shared work user signs into it.
     - *Licensed* – The device is licensed. Select this value to indicate that you have acquired the needed license(s) for this device.
-    - *Block share usage* – The device doesn't require a device license. This applies only to devices that are used either by exactly one shared work user (who has a user license) or only by Supply Chain Management users (who don't require a user or device license to use the mobile app). This setting prevents all other shared work users from signing in to the device.
+    - *Block share usage* – The device doesn't require a device license. This applies only to devices that are used by exactly one shared work user (who has a user license) and/or only by Supply Chain Management users (who don't require a user or device license to use the mobile app). This setting prevents all other shared work users from signing in to the device.
 
 ## <a name="delete-devices"></a>Remove a device
 
