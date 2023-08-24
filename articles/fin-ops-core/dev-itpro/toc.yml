@@ -17,7 +17,7 @@ items:
           href: get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
-        - name: Platform updates for version 10.0.36 (October 2023)
+        - name: Platform updates for version 10.0.36 (September 2023)
           href: get-started/whats-new-platform-updates-10-0-36.md
         - name: Platform updates for version 10.0.35 (August 2023)
           href: get-started/whats-new-platform-updates-10-0-35.md
