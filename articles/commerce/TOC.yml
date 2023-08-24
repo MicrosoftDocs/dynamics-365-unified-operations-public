@@ -582,6 +582,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Payment workspace
+            href: dev-itpro/payment-workspace.md
           - name: Manage payment authorizations
             href: dev-itpro/manage-payment-authorizations.md
           - name: Limit payment token usage
