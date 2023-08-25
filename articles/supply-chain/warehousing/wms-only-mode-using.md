@@ -170,9 +170,7 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
 - *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after editing.
 - *Draft* – The message is a copy that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
-<!-- 
-- (*Canceled*) – New planned state in future version instead of using the *Failed* state for messages that have been canceled. You can resend a message (for the same order) from the external system.
--->
+- *Canceled* – The message has been manually canceled.
 
 > [!TIP]
 > Select **Show old versions** to follow manual message updates based on the value of the **Replaced by message** field.

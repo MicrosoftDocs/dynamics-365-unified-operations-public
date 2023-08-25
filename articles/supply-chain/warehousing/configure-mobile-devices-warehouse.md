@@ -78,25 +78,21 @@ You can set up a menu item that creates work for another worker after an initial
 <td rowspan="8">Inbound shipment order</td>
 <td>Inbound shipment order line receiving</td>
 <td><p>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and create putaway work for another worker.</p>
-<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order line receiving and put away</td>
 <td><p>Register the receipt of a quantity of an item by using the inbound shipment order number and line number, and put the items away. The same worker performs both actions.</p>
-<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order item receiving</td>
 <td><p>Register the receipt of a quantity of an item for an inbound shipment order by registering the order number and item number, and create putaway work for another worker.</p>
-<p>A load must exist for this process.</p>
 </td>
 </tr>
 <tr>
 <td>Inbound shipment order item receiving and put away</td>
 <td><p>Register the receipt of a quantity of an item for an inbound shipment order by registering the order number, and put the item away. The same worker performs both actions.</p>
-<p>A load must exist for this process.</p>
 </td>
 </tr>
 <td>License plate receiving</td>
@@ -237,6 +233,9 @@ You can set up a menu item that creates work for another worker after an initial
 </tr>
 </tbody>
 </table>
+
+> [!NOTE]
+> You can as well use mobile device menu items like for example [_Mixed license plate receiving (and putaway)_](mixed-license-plate-receiving.md) which can get configured to use some of the above process flows imbedded in the process.
 
 ## Configure menu items to process existing work
 In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to **Work**, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available. The option can be chosen under the **Directed by** field in the **Mobile device menu items** page. 

@@ -46,6 +46,12 @@ Use the **Source systems** page to set up each external system that you want to 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Message value mapping** to open a dialog box where you can define how items and warehouses are uniquely identified in incoming documents. You can also specify whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. When you've finished configuring settings in the dialog box, select **OK**.
 
+### Background processes  
+As part of the [Source system](#source-systems) creation process the following [automations background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) will automatically get created:
+- Post shipment packing slips - Used for the outbound shipment order finalization process (the repeat interval will default to 10 min. when setting the _Shipment packing slips posting delay_ to 1 day)
+- Post shipment receipts - Used for the inbound shipment order finalization process (the repeat interval will default to 10 min. when setting the _Shipment receipts posting delay_ to 1 day)
+- Process shipment order messages - Used for the message processing of the inbound and outbound shipment orders (the repeat interval defaults to 1 min.)
+
 ## Set up automatic release of outbound shipment orders
 
 *Release to warehouse* is the process of making inventory ready for dispatch processing. When you release an order to the warehouse, the system creates load lines and shipments. If automatic wave processing is set up, loads and required work are also created.

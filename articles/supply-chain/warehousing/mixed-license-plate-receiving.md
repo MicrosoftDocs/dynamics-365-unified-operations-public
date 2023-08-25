@@ -44,12 +44,23 @@ Mixed license plate receiving is a mobile device receiving flow to register and 
 ## How to set up mixed license plate receiving
 Mixed license plate receiving is set up as a mobile device menu item.
 
-You need to create a new menu item with mode work that does not use existing work and use one of the following methods:
+You need to create a new menu item with mode work that does not use existing work and use one of the following _Work creation processes_:
 
 - Mixed license plate receiving
 - Mixed license plate receiving and put away
 
-The options to identify the source document lines are purchase order item, purchase order line, return order, transfer order item, and transfer order line. These options can change the receiving order on a single license plate. The last option is by load item. You can add multiple items to a license plate, but you cannot switch between multiple loads.
+The options to identify the source document lines are:
 
+- Purchase order item receiving
+- Purchase order line receiving
+- Transfer order item receiving
+- Transfer order line receiving
+- Inbound shipment order item receiving
+- Inbound shipment order line receiving
+- Return order receiving
+- Load item receiving
+
+> [!NOTE]
+> You can add multiple items to a license plate for all the source document line identification methods, but for the _Load item receiving_ you cannot change the selected load like you can change the receiving order on a single license plate during the receiving process for all the other source document line identification methods.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

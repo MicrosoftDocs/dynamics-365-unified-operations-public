@@ -98,6 +98,7 @@ To set up a container build template, follow these steps.
       - **Sales allocation line** ─ Pack allocation lines that are created for sales orders.
       - **Transfer allocation line** ─ Pack allocation lines that are created for transfer orders.
       - **Container** ─ Pack a container that was already created by the containerization process. For example, this is used for nesting containers.
+      - **Outbound order allocation line** ─ Pack allocation lines that are created for [outbound shipment orders](wms-only-mode-exchange-data.md#inbound-outbound-shipment-order-messages).
 
         > [!NOTE]
         > To use nesting containers, you must make the containerization method repeatable. For more information, see [Wave templates](wave-templates.md).

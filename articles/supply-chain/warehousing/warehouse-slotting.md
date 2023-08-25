@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.9
 # Warehouse slotting
 
 [!include [banner](../includes/banner.md)]
-
+<!--In current version no "...slotting" features exists - suggest this and next section gets updated!-->
 Several warehouse slotting features are available to help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 
 The *Warehouse slotting feature* lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
@@ -121,7 +121,7 @@ Next, you must set up the template header, slotting specifications, and location
     - **Demand type:** *Sales order*
 
         > [!NOTE]
-        > Currently, *Sales orders* and *Transfer orders* are the only demand types that are supported. You can select *Transfer orders* only if the *Warehouse Slotting for transfer orders* feature is turned on.
+        > Currently, *Sales orders*, *Transfer orders*, and *Outbound shipment orders* are the only demand types that are supported. You can select *Transfer orders* only if the *Warehouse Slotting for transfer orders* feature is turned on. <!-- in current version TO-feature does no longer exists... suggest we remove this and DON'T add WOM-feature comment --->
 
     - **Demand strategy:** _Ordered_
 

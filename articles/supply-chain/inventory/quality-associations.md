@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality associations
-description: This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, and production processes.
+description: This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, inbound shipment order, and production processes.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, and production processes.
+This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, inbound shipment order, and production processes.
 
 A quality association defines all the following information for a quality order that is generated:
 
@@ -154,6 +154,13 @@ To work with quality associations, go to **Inventory management \> Setup \> Qual
 <td>Invoice</td>
 </tr>
 <tr>
+<td>Inbound shipment order</td>
+<td>Registration</td>
+<td>Not applicable</td>
+<td>None</td>
+<td>Specific ID, Group, or All only</td>
+</tr>
+<tr>
 <td rowspan="8">Production</td>
 <td rowspan="3">Registration</td>
 <td rowspan="3">Not applicable</td>
@@ -258,6 +265,13 @@ The following table provides more information about how quality orders can be ge
 <td>A manually generated quality order that refers to a purchase order can use information in a quality association record, such as the test sampling plan.</td>
 </tr>
 <tr>
+<td>Inbound shipment order</td>
+<td>As part of the registration process (warehouse receiving)</td>
+<td>As part of the registration process (warehouse receiving)</td>
+<td>The requirement for a quality order can reflect a specific site, item, or consigner, or a combination of these conditions.</td>
+<td>A manually generated quality order that refers to an inbound shipment order can use information in a quality association record, such as the test sampling plan.</td>
+</tr>
+<tr>
 <td>Quarantine order</td>
 <td>Before or after the quarantine order is reported as finished or ended</td>
 <td>Quality orders that require destructive tests can't be generated. It's assumed that the quarantine order functionality handles the disposition of the material that is destroyed.</td>
@@ -295,6 +309,9 @@ The following table provides more information about how quality orders can be ge
 </tbody>
 </table>
 </div>
+
+> [!NOTE]
+> When filtering the _Quality associations_ for the reference type _Inbound shipment order_ with _Account codes_ you must create **Consigners** or **Consigner groups** upfront.
 
 ## Examples of automatic generation of quality orders
 
