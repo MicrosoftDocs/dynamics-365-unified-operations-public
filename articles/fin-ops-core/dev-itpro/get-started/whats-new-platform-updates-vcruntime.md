@@ -21,7 +21,7 @@ This article describes the new prerequisite for cloud-hosted environments or VHD
 
 ## Update cloud-hosted environments to the latest VC++ runtime
 
-As of version 10.0.36, an updated Microsoft Visual C++ (VC++) runtime must be installed in developer cloud-hosted environments (also known as OneBox environments) or VHD images as a prerequisite for new service updates. This new runtime is automatically installed in all newly deployed cloud hosted environments. However, existing environments and VHD imagages require manual installation. To download the new runtime, go to [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
+As of version 10.0.36, an updated Microsoft Visual C++ (VC++) runtime must be installed in developer cloud-hosted environments (also known as OneBox environments) or VHD images as a prerequisite for new service updates. This new runtime is automatically installed in all newly deployed cloud-hosted environments. However, existing environments and VHD images require manual installation. To download the new runtime, go to [VC++ runtime download](https://aka.ms/vs/17/release/VC_redist.x64.exe).
 
 > [!IMPORTANT]
 > After you install the new VC++ runtime, you must restart the machine before you apply the service update. Otherwise, the service update isn't successfully installed.
@@ -38,7 +38,7 @@ No. By default, the updated VC++ runtime is installed in all newly provisioned e
 
 ### Do I have to install this component on the VHD Image?
 
-Yes. The VHD image downloads, up to and including the 10.0.32 verion, do not have this VC++ runtime installed. 
+Yes. The VHD image downloads, through Dynamics 365 version 10.0.32, don't have this VC++ runtime installed. 
 
 ### Are any other actions required after the VC++ runtime update is installed?
 
