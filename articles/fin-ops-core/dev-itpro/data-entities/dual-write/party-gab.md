@@ -2,7 +2,7 @@
 title: Party and global address book
 description: This article describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 06/22/2023
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: twheeloc
