@@ -69,16 +69,22 @@ Several out-of-box business events are supported for warehouse integration. The 
 | Business event ID | Description |
 |---|---|
 | `InventCountingJournalPostedBusinessEvent` | Counting journal posted |
+| `WHSSourceSystemInventoryOnhandReportBusinessEvent` | Source system on-hand inventory report created |
 | `WHSOutboundNotificationCreatedBusinessEvent` | Outbound warehouse notification created |
-| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Status update for shipment order message |
-| `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slips updated |
+| `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Shipment order message status updated |
+| `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slip updated |
+| `WHSShipmentPackingSlipJournalFailedBusinessEvent` | Shipment packing slips update failed |
 | `WHSShipmentReceivingJournalModifiedBusinessEvent` | Shipment receipts updated |
-| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failure |
+| `WHSShipmentReceivingJournalFailedBusinessEvent` | Shipment receipts update failed |
+| `SysMessageProcessorMessageProcessedBusinessEvent` | Message processor message failed |
 | `WhsWaveExecutedBusinessEvent` | Wave executed |
+| `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
+
 
 At a minimum, we recommend that you use the following business events:
 
 - `InventCountingJournalPostedBusinessEvent` – This event announces that an on-hand inventory adjustment has occurred and indicates where detailed information about the update can be found.
+- `WHSSourceSystemInventoryOnhandReportBusinessEvent` - This event announces that an on-hand inventory report has been generated and indicates where detailed information about the update can be found.
 - `WHSShipmentPackingSlipJournalModifiedBusinessEvent` – This event announces that an outbound shipment confirmation process has occurred and indicates where the detailed dispatch advice data can be found. (This data can be used for a sales invoicing process, for example.)
 - `WHSShipmentReceivingJournalModifiedBusinessEvent` – This event announces that an inbound receiving completion process has occurred and indicates where the detailed receiving advice data can be found. (This data can be used for a purchase order invoicing process, for example.)
 
@@ -134,3 +140,14 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 > [!NOTE]
 > Make sure that each of your items is assigned to an item model group that's configured as described in the [Master data](#master-data) section. In this way, you don't have configure [inventory postings](../../finance/general-ledger/inventory-posting.md) and [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md) when you make adjustments via the [counting journal](../inventory/tasks/define-inventory-counting-processes.md).
+
+## Inventory on-hand reconciliation
+
+The warehouse management only mode can generate data for an inventory on-hand reconciliation process via the **Warehouse management > Inquiries and reports > Create source system on-hand inventory report**
+
+To create the header and line data you must define a _Source system_ and a _As of date_ and select the level of inventory dimensions the report must get generated for.
+The external system will get informed about the available data via the business event  `WHSSourceSystemInventoryOnhandReportBusinessEvent` and can read the data via the entities  `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines`.
+
+> [!TIP]
+> When running the **Create source system on-hand inventory report** as a _Recurrence_ batch job processing (for example ones a day) the "As of date" will get overridden and thereby you will get the data generated based on the current processing date. This means that if you as part of the definition of the recurrence set the _Start date_ equal to yesterday and having the _Repeat after specified interval_ equal 1 per day, the batch job will every day automatically generate inventory on-data from the past day.
+
