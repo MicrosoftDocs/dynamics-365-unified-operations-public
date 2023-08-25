@@ -21,6 +21,9 @@ ms.dyn365.ops.version: AX 10.0.20
 
 This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
+> [!NOTE]
+> The solution for direct integration with SDI supports digital signing of documents using separately stored certificate files only. Qualified digital signature which requires additional hardware involvement or online connection to certification service providers is not supported.
+
 ## Prerequisites
 
 Before you complete the steps in this article, the following prerequisites must be met:
