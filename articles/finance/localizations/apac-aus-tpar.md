@@ -53,14 +53,18 @@ Before you generate the TPAR report, collect the data that's necessary for the r
 
    ![Create new TPAR report](media/apac-au-tpar-create.png)
 
-4. To start collecting data for the report, select **New** in report versions. Then select **Collect data** in **Operations** menu. 
-![Collect payee data](media/apac-au-tpar-collect-data.png)
-7. In the report provide vendors selection criteria following TPAR reporting requirements. You can decide choosing vendors by dedicated posting profile and/or Vendor group. You can also decide if the process of collecting data should be run as a batch processing. 
-8. Once data are collected there will be created a report version. The report version will change status from **New** to **Populated**. Select **Payees** to review collected data.
-![Payees collected data](media/apac-au-tpar-payees.png)
-9. In that view you can review Gross amount paid to vendors with GST and Withholding tax information. 
->[!NOTE]
->Information about “Statement by supplier” should be provided on the TPAR when a contractor does not quote an ABN and provides a valid reason for not doing so. A Statement by supplier is a form that a contractor can complete and give to the payer if they are not required to have an ABN or they are an individual under 18 years of age and the payment does not exceed $350 per week.
-9. After all collected data are validated and approved you can choose to either generate testing version of the report to submit to ATO and validate on Business Portal or Production version for final submission. After that select button **TPAR** to start process of preparation the TPAR a text file with data in format ready for submission to ATO. 
-10. Once the report is submitted and accepted at ATO online portal, you may reflect that fact by changing status of the report in **Operations** to **Sent**.
-11. If you need to make amendments to your report after sending it, due to changes in transactions, you can add a **New** version of the report. This will generate a text file that will be recognized as an amendment by the ATO.
+4. Select **New** in the report versions to begin collecting data for the report. Then select **Operations** > **Collect data**. 
+5. In the report, provide the vendor's selection criteria following the TPAR reporting requirements. You can select vendors based on their posting profile or Vendor group. You can also decide if the process of collecting data should be run as a batch processing. 
+6. After the data is collected, a report version is created. The report version changes the status from **New** to **Populated**. Select **Payees** to review the collected data.
+
+   ![Payees collected data](media/apac-au-tpar-payees.png)
+
+  Use this view to review the gross amount paid to vendors with GST and Withholding tax information. 
+
+   >[!NOTE]
+   > Information about **Statement by supplier** should be provided on the TPAR when a contractor doesn't quote an ABN and provides a valid reason for not doing so. A statement by the supplier is a form that a contractor can complete and give to the payer if they aren't required to have an ABN or they're an individual under 18 years of age and the payment doesn't exceed $350 per week.
+
+7. After all the collected data is validated and approved, select to generate a testing version of the report to submit to ATO and validate on Business Portal or Production version for final submission.
+8.  Next, select **TPAR** to start preparing the TPAR as a text file with data in a format that's ready for submission to the ATO. 
+9. After you submit the report and it's accepted in the ATO online portal, the status of the report in **Operations** is updated to **Sent**.
+10. To make changes to your report after sending it, you can add a new version of the report. A new version generates a text file that's recognized as an amendment by the ATO.
