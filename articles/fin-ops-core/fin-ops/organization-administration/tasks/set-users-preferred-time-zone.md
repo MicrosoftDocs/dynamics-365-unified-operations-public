@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysUserManagement, SysUserSetup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 The following article explains how a user in the System Administrator role can set the time zone for a user.
 
