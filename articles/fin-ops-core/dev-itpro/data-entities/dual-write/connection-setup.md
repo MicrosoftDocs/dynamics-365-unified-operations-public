@@ -100,7 +100,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 The setup of a dual-write connection between an existing instance of a finance and operations app and a new instance of a customer engagement app occurs using LCS power platform integration setup.
 
-1. Follow [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md) to establish the linking using LCS.
+1. Follow [Connect finance and operations apps with a new Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv) to establish the linking using LCS.
 2. A dual-write connection is established for all legal entities. You can remove legal entities from Dual write workspace within Finance and Operations apps if you do not wish to synchronise the data for a specific company.
 3. Run the **Initial sync** functionality for the tables that you want to sync data for.
 
@@ -110,7 +110,7 @@ For links to an example and an alternative approach, see the [Example](#example)
 
 The setup of a dual-write connection between an existing instance of a finance and operations app and an existing instance of a customer engagement app occurs in the Finance and Operation environment.
 
-1. Follow [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md) to establish the linking using LCS.
+1. Follow [Connect finance and operations apps with an existing Microsoft Dataverse instance](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv) to establish the linking using LCS.
 2. A dual-write connection is established for all legal entities. You can remove legal entities from Dual write workspace within Finance and Operations apps if you do not wish to synchronise the data for a specific company.
 3. To sync the existing Dataverse data to the finance and operations app, [bootstrap](bootstrap-company-data.md) the Dataverse data by using a three-letter ISO company code.
 4. Run the **Initial sync** functionality for the tables that you want to sync data for.
