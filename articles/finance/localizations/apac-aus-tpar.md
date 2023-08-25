@@ -19,7 +19,7 @@ ms.search.form:
 
 This article explains how to set up, create, and generate the Taxable Payments Annual Report (TPAR) that is required by the Australian Tax Office.
 
-The Taxable Payments Annual Report (TPAR) is a report that some businesses and government entities in Australia must lodge with the Australian Taxation Office (ATO) by 28 August each year. The purpose of a TPAR is to report payments made to contractors or subcontractors for certain services, such as building and construction, cleaning, courier, road freight, IT, security, investigation, or surveillance. The ATO uses this information to identify contractors who haven't met their tax obligations, such as not reporting all their income or not registering for GST. A TPAR also helps contractors to verify the income they report in their tax returns. The TPAR report provides information about the total payment amount to a contractor, including any GST, and their details such as name, ABN, address and phone number. You can lodge your TPAR online using the Business Portal.
+The Taxable Payments Annual Report (TPAR) is a report that some businesses and government entities in Australia must provide to the Australian Taxation Office (ATO) by 28 August each year. The purpose of a TPAR is to report payments made to contractors or subcontractors for certain services, such as building and construction, cleaning, courier, road freight, IT, security, investigation, or surveillance. The ATO uses this information to identify contractors who haven't met their tax obligations, such as not reporting all their income or not registering for GST. A TPAR also helps contractors to verify the income they report in their tax returns. The TPAR report provides information about the total payment amount to a contractor, including any GST, and their details such as name, ABN, address and phone number. You can lodge your TPAR online using the Business Portal.
 
 ## General configuration
 
@@ -48,12 +48,12 @@ For more information about how to import ER configurations, see [Download Electr
 Before you generate the TPAR report, collect the data that's necessary for the report. This process is created similarly to payment times reporting. The process collects all payments in the reporting period for a specific group of vendors. You can run the process in real time, or you can schedule it to run in the background through batch processing.
 
 1. Go to **Accounts payable** > **Periodic tasks** > **Taxable payments annual report** and select **New**.
-3. In the **From date** and **To date** fields, enter values to determine the reporting period.
-4. In the **Run type** field, select a value. If you are testing report data, select **Test**. In case you want to generate report got lodging to ATO choose **Production** option. 
+2. In the **From date** and **To date** fields, enter values to determine the reporting period.
+3. In the **Run type** field, select a value. If you are testing report data, select **Test**. To generate a report to send to the ATO, select **Production**. 
 
    ![Create new TPAR report](media/apac-au-tpar-create.png)
 
-6. To start collecting data for the report, select **New** in report versions. Then select **Collect data** in **Operations** menu. 
+4. To start collecting data for the report, select **New** in report versions. Then select **Collect data** in **Operations** menu. 
 ![Collect payee data](media/apac-au-tpar-collect-data.png)
 7. In the report provide vendors selection criteria following TPAR reporting requirements. You can decide choosing vendors by dedicated posting profile and/or Vendor group. You can also decide if the process of collecting data should be run as a batch processing. 
 8. Once data are collected there will be created a report version. The report version will change status from **New** to **Populated**. Select **Payees** to review collected data.
