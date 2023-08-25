@@ -35,7 +35,7 @@ highlightedContent:
     # Card
     - title: Troubleshoot
       itemType: concept
-      url: troubleshoot/troubleshooting-home-page.md
+      url: /troubleshoot/dynamics-365/commerce/welcome-commerce
       
 additionalContent: 
   sections:
