@@ -26,7 +26,7 @@ For more information about the Commerce localization for Russia, see [Russian lo
 
 ## Enable Russia-specific Commerce functionality
 
-This section describes how to configure Commerce headquarters settings that are specific to and recommended for Russia. For more information, see the [Commerce home page](../index.md).
+This section describes how to configure Commerce headquarters settings that are specific to and recommended for Russia. For more information, see the [Commerce home page](../welcome.md).
 
 To configure Commerce headquarters settings to enable and use Russia-specific functionality, follow these steps.
 
@@ -114,7 +114,7 @@ To set up charges that can be applied to customer order cancellation operations 
 
 ## Additional resources
 
-[Commerce home page](../index.md)
+[Commerce home page](../welcome.md)
 
 [Russian localization scope](../../finance/localizations/russia.md)
 

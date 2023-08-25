@@ -36,7 +36,7 @@ When you return a customer order, a return order and a refund payment journal ar
 
 ## Additional resources
 
-[Commerce home page](../index.md)
+[Commerce home page](../welcome.md)
 
 [Russian localization scope](../../finance/localizations/russia.md)
 
