@@ -21,11 +21,11 @@ This article explains how to set up, create, and generate the Taxable Payments A
 
 The Taxable Payments Annual Report (TPAR) is a report that some businesses and government entities in Australia must lodge with the Australian Taxation Office (ATO) by 28 August each year. The purpose of a TPAR is to report payments made to contractors or subcontractors for certain services, such as building and construction, cleaning, courier, road freight, IT, security, investigation, or surveillance. The ATO uses this information to identify contractors who haven't met their tax obligations, such as not reporting all their income or not registering for GST. A TPAR also helps contractors to verify the income they report in their tax returns. The TPAR report provides information about the total payment amount to a contractor, including any GST, and their details such as name, ABN, address and phone number. You can lodge your TPAR online using the Business Portal.
 
-# General configuration
+## General configuration
 
 Before you generate the TPAR report, you must have a complete setup of Legal Entity Company information and Vendor information in areas of company name, address, ABN number and contact person. Additionally, to generate a final report, you must and import the required electronic configurations.
 
-## Create a contact person for your company
+### Create a contact person for your company
 The TPAR report requires providing information to company contact person responsible for information in the report. To set up contact information that will be reported in TPAR, follow these steps.
 
 1. Go to **Sales and marketing** > **Relationships** > **Contacts** > **All contacts**.
@@ -34,7 +34,7 @@ The TPAR report requires providing information to company contact person respons
 
    ![Create contact for company.](media/apac-au-tpar-contact-person.png)
 
-## Import electronic configurations
+### Import electronic configurations
 In Dynamics 365 Finance, import the following components of these Electronic reporting (ER) configurations from the Global repository in the latest available version:
 
 - Payment model
@@ -43,7 +43,7 @@ In Dynamics 365 Finance, import the following components of these Electronic rep
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
-# Prepare the Taxable Payments Annual Report
+## Prepare the Taxable Payments Annual Report
 
 Before you generate the TPAR report, collect the data that's necessary for the report. This process is created similarly to payment times reporting. The process collects all payments in the reporting period for a specific group of vendors. You can run the process in real time, or you can schedule it to run in the background through batch processing.
 
