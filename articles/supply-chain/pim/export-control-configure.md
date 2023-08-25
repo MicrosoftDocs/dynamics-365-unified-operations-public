@@ -62,7 +62,7 @@ Follow these steps to grant the application permissions in Power Platform admin 
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Go to **Environments**, and select your environment.
-1. On the page for the selected environment opens, in the **Access** section, under **Users**, select **See all**.
+1. On the page for the selected environment, in the **Access** section, under **Users**, select **See all**.
 1. On the **Users** page, select the **app users list** link.
 1. On the **Application users** page, on the toolbar, select **New app user**.
 1. In the **Create a new app user** dialog box, select **Add an app**.
