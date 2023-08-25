@@ -2,7 +2,7 @@
 title: New VC++ runtime requirement for cloud-hosted environments running version 10.0.36 or later
 description: This article describes the new prerequisite for cloud-hosted environments that run version 10.0.36 or later.
 author: mnordick
-ms.date: 08/11/2023
+ms.date: 08/25/2023
 ms.topic: conceptual
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
