@@ -18,9 +18,9 @@ ms.search.validFrom: 2020-05-29
 
 This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 
-To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
+To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the EFR (Electronic Fiscal Register solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
 
-Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
+Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/de).
 
 ## Scenarios
 
@@ -113,7 +113,7 @@ The **Close shift** operation is also registered as a non-fiscal operation in th
 All transactions must be signed by a TSE to ensure their integrity, authenticity, and completeness, and to help prevent manipulation of recorded data.
 
 > [!WARNING]
-> Only a certified TSE can be used. For information about the types and models of TSEs that are supported in the EFR solution, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website. For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/at/kontakt).
+> Only a certified TSE can be used. For information about the types and models of TSEs that are supported in the EFR solution, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website. For information about how to choose and obtain a TSE, contact [EFSTA](https://www.efsta.eu/at).
 
 Regulations in Germany require support for the DSFinV-K export. The DSFinV-K export can be triggered in the EFR solution. For more information about the DSFinV-K export, see the "EFR Guide \[DE\]" document that is published on the [EFSTA documentation](https://public.efsta.net/efr/) website.
 
@@ -127,7 +127,7 @@ The fiscal integration framework doesn't support sales quotations. Therefore, th
 
 ## Set up Commerce for Germany
 
-This section describes the Commerce settings that are specific to and recommended for Germany. For more setup information, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for Germany. For more setup information, see [Commerce home page](../welcome.md).
 
 To use the functionality that is specific to Germany, you must specify the following settings.
 
