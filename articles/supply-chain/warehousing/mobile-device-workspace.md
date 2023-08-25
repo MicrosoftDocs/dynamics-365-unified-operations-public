@@ -15,6 +15,9 @@ ms.custom: bap-template
 # Warehouse mobile device workspace
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!--KFM: preview until 10.0.37 GA -->
 
 The **Warehouse mobile devices** workspace lets you monitor the health and license status of all handheld devices being used in your warehouses.
 
