@@ -21,7 +21,7 @@ This article describes the **Payment** workspace in Microsoft Dynamics 365 Comme
 
 Dynamics 365 Commerce headquarters includes a collection of workspaces to assist users with pages that include common tasks, links, and tiles. These workspaces provide aggregated views that help users perform their jobs more efficiently. 
 
-Starting with Commerce version 10.0.37, a **Payment** workspace has been added to Commerce headquarters that provides combined views of common payment connector and payment method processing configurations in one place. The **Payment** workspace helps users diagnose configuration issues, and includes links for users to easily navigate to headquarters payment configuration pages. 
+In Commerce version 10.0.37, a **Payment** workspace has been added to Commerce headquarters that provides combined views of common payment connector and payment method processing configurations in one place. The **Payment** workspace helps users diagnose configuration issues, and includes links for users to easily navigate to headquarters payment configuration pages. 
 
 ## The Payment workspace view
 
