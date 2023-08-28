@@ -24,7 +24,7 @@ All license checks occur at the document line level. A single document can conta
 
 The document date is compared against the license's valid-from and valid-to dates, if they're provided. To perform the check based on the current date instead of the document date, either use a Power Fx rule or pass the current date in the document that's being analyzed. The **Expected export date** field of the license has no impact and is provided only for reference. However, it can be referenced from Power Fx rules.
 
-A license can be provided at either the document level or the line level. A document-level license is assumed to be used by default on all lines. It's overridden if a license is provided on a specific line.
+A license can be provided at either the document level or the line level. The assumption is that a document-level license is by default on all lines. It's overridden if a license is provided on a specific line.
 
 ## License lines and consumption
 
@@ -36,7 +36,7 @@ The following three properties on the export control check call control how lice
 - `"msdyn_ExportControlSourceDocument": "SO1347134"`
 - `"msdyn_DecrementLicenseQuantity": true`
 
-Consumption is tracked in the `msdyn_exportcontrollicenselineconsumption` table. The `SourceApplication` and `SourceDocument` fields are used to reference which incoming document from an external system has consumed the quantity or value. If you specify *true* for `msdyn_DecrementLicenseQuantity`, rows are written in the `msdyn_exportcontrollicenselineconsumption` table, and future license checks will be blocked if no quantity or value remains for that line. If the same `SourceApplication` and `SourceDocument` values are passed in again with `DecrementLicenseQuantity`, all existing decrements for that document are deleted and then re-created with the updated quantities and values. Therefore, if a sales order is updated, and a different quantity (either larger or smaller) must be reserved, all the existing values can be updated just be sending in the sales order a second time.
+Consumption is tracked in the `msdyn_exportcontrollicenselineconsumption` table. The `SourceApplication` and `SourceDocument` fields are used to reference which incoming document from an external system has consumed the quantity or value. If you specify *true* for `msdyn_DecrementLicenseQuantity`, rows are written in the `msdyn_exportcontrollicenselineconsumption` table, and future license checks will be blocked if no quantity or value remains for that line. If the same `SourceApplication` and `SourceDocument` values are passed in again with `DecrementLicenseQuantity`, all existing decrements for that document are deleted and then re-created with the updated quantities and values. Therefore, if a sales order is updated, and a different quantity (either larger or smaller) must be reserved, all the existing values can be updated just by sending in the sales order a second time.
 
 The consumed quantity and value are calculated as rollup fields on the license line. If no total quantity or value is provided, export control checks aren't blocked for that license line. Instead, total consumed quantity and total consumed value continue to accrue. The line value is a standard Dataverse currency field. For more information about currency fields and exchange rates, see [Using currency columns](/power-apps/maker/data-platform/types-of-fields#using-currency-columns).
 
