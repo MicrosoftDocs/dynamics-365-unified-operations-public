@@ -21,7 +21,7 @@ ms.custom: bap-template
 
 The **Warehouse mobile devices** workspace lets you monitor the health and license status of all handheld devices that are used in your warehouses.
 
-The first time that a user signs in to the Warehouse Management mobile app on a new device, the system collects information about that device and adds it to the **Warehouse mobile devices** workspace. The system then continuously monitors the status of each device to make sure that it's running a supported operation system and the latest version of the mobile app. Devices remain listed in the workspace until they're [manually deleted](delete-devices).
+The first time that a user signs in to the Warehouse Management mobile app on a new device, the system collects information about that device and adds it to the **Warehouse mobile devices** workspace. The system then continuously monitors the status of each device to make sure that it's running a supported operation system and the latest version of the mobile app. Devices remain listed in the workspace until they're [manually deleted](#delete-devices).
 
 The **Warehouse mobile devices** workspace also helps you confirm that you're in compliance with [licensing requirements](#licenses) by showing how many devices you're running and letting you assign a device license status to each device. However, the system doesn't enforce licensing requirements. Your organization is responsible for ensuring that you've acquired the correct number of licenses for your devices.
 
