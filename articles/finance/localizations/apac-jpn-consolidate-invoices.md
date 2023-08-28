@@ -76,11 +76,11 @@ To support the QIS requirements that impact consolidated invoices, the following
 
 ### Calculating the consolidated tax for a consolidated invoice
 After creating and posting a customer consolidated invoice, the consolidated consumption tax is calculated and adjusted at the consolidated invoice level in Accounts Receivable and Accounts Payable as follows:
-+ The posted sales tax transactions for each sales tax code for all invoices included in the consolidated invoice are summed up (in transaction currency) for the following::
++ The posted sales tax transactions for each sales tax code for all invoices included in the consolidated invoice are summed up (in transaction currency) for the following:
     + Amount origin
 	+ Actual sales tax amount
 	+ Actual nondeductible sales tax
-+ The consolidated tax is calculated as the sum of the amount origin multiplied by the the sales tax code rate/100. This calculation is performed for each sales tax code, including nondeductible amounts, and rounded off according to the rule in the sales tax code.
++ The consolidated tax is calculated as the sum of the amount origin multiplied by the the sales tax code rate value/100. This calculation is performed for each sales tax code, including nondeductible amounts, and rounded off according to the rule in the sales tax code.
 + The tax difference is calculated as the consolidated tax minus the sum of the actual sales tax amount. If there is a difference per sales tax code, a tax adjustment is posted through a general ledger journal with customer or vendor transactions, accordingly.
 + Posted transactions offset to the tax adjustment can be settled against invoice payments.
 
@@ -89,7 +89,7 @@ After creating and posting a customer consolidated invoice, the consolidated con
 
 ### Assumptions and limitations
 The main considerations for this functionality in Finance are as follows:
-- Sales tax calculation parameters should be configured as follows (for more infpormation, see [Setting up Sales tax for JCT](apac-jpn-qualified-invoice-system#setting-up-sales-tax-for-jct.md):
+- Sales tax calculation parameters should be configured as follows (for more infpormation, see [Setting up Sales tax for JCT](apac-jpn-qualified-invoice-system#setting-up-sales-tax-for-jct.md)):
     - All sales tax codes must have appropriate **Tax type** (*Standard or Reduced*), 
 	- **Origin = Percentage of net amount**, 
 	- **Marginal base = Net amount of invoice balance**, 
@@ -102,7 +102,7 @@ The main considerations for this functionality in Finance are as follows:
 - Only invoices in company's accounting currency are included in a consolidated invoice.
 
 > [!NOTE]
-> In case when the limited **Tax adjustment on consolidated invoice** functionality doesn't fit with one or another the specific requirement, please consider use of the Summary orders functionality.
+> In case when the **Tax adjustment on consolidated invoice** functionality doesn't fit with one or another the specific requirement, please consider use of the Summary invoice functionality.
 > For more information, see [Consolidate sales orders or packing slips for posting](/dynamics365/finance/accounts-receivable/configure-customer-invoices#consolidate-sales-orders-or-packing-slips-for-posting/)
 
 ### Setup
