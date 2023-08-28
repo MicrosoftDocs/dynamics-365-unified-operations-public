@@ -214,7 +214,7 @@ Create the **Look up POs by item** menu item by following these steps.
     | Purchase order lines | Purchase order lines | Item number | |
 
     > [!TIP]
-    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. You can join to the *Inventory dimensions* table and include the *Warehouse* field as part of the query to limit the search results for the current worker's warehouse by inserting *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())* into the **Criteria**.
+    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. You can join to the *Inventory dimensions* table and include the *Warehouse* field as part of the query to limit the search results for the current worker's warehouse by inserting *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())* into the **Criteria**. See also [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 
