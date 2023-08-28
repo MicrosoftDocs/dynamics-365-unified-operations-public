@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.37 (November 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.37 preview release.
 author: twheeloc
-ms.date: 07/28/2023
+ms.date: 08/28/2023
 ms.topic: faq
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
 ms.search.validFrom: 2022-09-02
-ms.dyn365.ops.version: 10.0.36
+ms.dyn365.ops.version: 10.0.37
 
 ---
 
@@ -58,7 +58,7 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in version 10.0.36. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/
+The following table lists the features that are turned on by default in version 10.0.37. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/
 get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change 
 ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless 
 they are determined to be essential.
