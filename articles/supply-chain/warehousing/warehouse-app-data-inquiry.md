@@ -21,11 +21,9 @@ ms.dyn365.ops.version: 10.0.29
 
 By providing bar code scanning capability, the Warehouse Management mobile app gives you an easy and accurate way to capture data as part of your warehouse processes. However, bar codes are sometimes damaged and become unreadable, or the required data information might not exist as a bar code in your business process flows. In these cases, manual entry of the data can take a long time and can even cause incorrect data to be captured. The results can be reduced effectivity and a lower service level.
 
-By using a flexible data inquiry process, workers can easily look up the required information as part of the embedded Warehouse Management mobile app flows and apply filtering options so that only the relevant data is shown. Therefore, manual selection is faster and more accurate.
+When you use a flexible data inquiry process, workers can easily look up the required information as part of the embedded Warehouse Management mobile app flows and apply filtering options so that only the relevant data is shown. Therefore, manual selection is faster and more accurate.
 
 For example, in the purchase order receiving flow, a purchase order number is required to match arriving inventory. As part of this process, you can easily configure menu items to provide a card list view of the relevant purchase order numbers. In this way, you can continue the receiving flow by using a quick point-to-select approach. This article provides example scenarios, but the functionality can also be used within any or all your Warehouse Management mobile app flows.
-
-One of the examples below will use the _work user session query range utility tool_ by filtering the current worker warehouse, but besides filtering on a warehouse Id this tool as well supports for filtering data for the current warehouse worker _(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWorkUserId())_ and as well enabling the option to show the results immediately without user confirmation of the filter.
 
 ## Turn on the data inquiry flow feature and its prerequisites
 
@@ -54,14 +52,26 @@ Before you can use the functionality that is described in this article, you must
 
     This feature is the one that is described in this article. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.
 
+## <a name="session-query"></a>The work user session query range utility tool
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+This feature requires Supply Chain Management version 10.0.37 or later.
+
+Supply Chain Management includes a *work user session query range utility tool*, which adds the following functionality for setting up queries to help workers find specific records using the Warehouse Management mobile app:
+
+- **Filter records by warehouse** – Lets you set up queries that use the worker's current warehouse as a value. You can use this value as a criterion both for range filters (on the **Range** tab of the standard query designer) and for joins (on the **Joins** tab). This is useful, for example, to return a list of purchase orders expected to arrive at the warehouse where the worker is currently working. To use this feature, open the query designer and, on the **Range** or **Joins** tab, set up a row that uses a **Criteria** of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*. An example of how to use this functionality is provided later in this article.
+- **Filter records by app user** – Lets you set up queries that use the current worker's worker ID as a value. You can use this value as a criterion both for range filters (on the **Range** tab of the standard query designer) and for joins (on the **Joins** tab). To use this feature, open the query designer and, on the **Range** or **Joins** tab, set up a row that uses a **Criteria** of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWorkUserId())*.
+- **Show or hide filters in the mobile app** – This feature lets you choose whether to show a page with filter values during a data inquiry flow for mobile device menu items. When you're using the **Mobile device menu items** page to set up a mobile device menu item where this feature is relevant, you'll find a **Show filters page** setting, which lets you choose whether to show the filters *Always* or *Only when filters can be changed*.
+
 ## Example scenarios
 
 This article uses example scenarios to show how you can use the *Warehouse management app data inquiry flow* feature to improve the purchase receipt flow. The scenarios use the standard sample data, which includes a flow that is named *Purchase receive*.
 
- This flow starts by prompting workers to identify a purchase order number that they will receive against. To help workers more easily identify the purchase order, you will enhance the first page of the flow by adding the following new query options as [detours](warehouse-app-detours.md):
+This flow starts by prompting workers to identify a purchase order number that they will receive against. To help workers more easily identify the purchase order, you will enhance the first page of the flow by adding the following new query options as [detours](warehouse-app-detours.md):
 
 - **Look up POs by vendor** – Open a page that prompts workers to enter a vendor name or part of a vendor name. Wildcard characters can be used. For example, if a worker is expecting an inbound delivery today from a vendor that includes *Tailspin* in its name, they can enter **Tail\*** to view a set of cards for open purchase orders that include this text. Every card has several fields that provide information about each purchase order. In addition to the vendor's name, you can design the cards so that they show the vendor account number, delivery date, and document status.
-- **Look up POs for today** – Open a page that doesn't prompt workers to enter data, but shows a set of cards that match the 'hardcoded' filter. Workers proceed by selecting a card for the purchase order that they want to register inventory items against. This process will be enabled with the option **Show filter page** as _Only when filters can be changed_ and thereby the user will be shown the results immediately.
+- **Look up POs for today** – Open a page that doesn't prompt workers to enter data, but shows a set of cards that match the "hardcoded" filter. Workers proceed by selecting a card for the purchase order that they want to register inventory items against. This process is enabled with the option **Show filter page** set to *Only when filters can be changed*, which means the app shows results immediately (without showing the filters page).
 - **Look up POs by item** – Open a page that prompts workers to scan the bar code of any item in the arrived inventory. The flow then lists all open purchase orders that contain lines for the scanned item number. To cover situations where a bar code can't be read, you can add another detour lookup to this page that lets workers search for item numbers within a specific purchase order.
 
 In each case, the worker identifies a purchase order by selecting a card and is then returned to the first page, which shows the selected purchase order number. The worker can then continue the inbound inventory item registration flow.
@@ -91,7 +101,7 @@ Create the **Look up POs by vendor** menu item by following these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *PurchTable* (You want to look up purchase order numbers from this table.)
-    - **Show filter page:** *Only when filters can be changed* (Filter will be shown here due to the _Vendor name_.)
+    - **Show filter page:** *Only when filters can be changed* (Filters will be shown due to the *Vendor name*.)
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the purchase orders table).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
@@ -102,8 +112,8 @@ Create the **Look up POs by vendor** menu item by following these steps.
     | Purchase orders | Purchase orders | Delivery date | (dayRange(-10,10)) |
     | Purchase orders | Purchase orders | Vendor name | |
 
-> [!TIP]
-> In this example the filtering does not include any warehouse criteria and will thereby include open purchase orders for all warehouses within the current legal entity. You can include the _Warehouse_ field as part of the query to limit the search results for the current work user session warehouse by inserting **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** into the criteria. Note that this as well will work for joined tables like for example the _Inventory dimensions_.
+    > [!TIP]
+    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. To limit the search results to only find purchase orders for the current worker's warehouse, add a query line with **Field** set to *Warehouse* and **Criteria** set to *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*. You could also use this value for joined tables such as the *Inventory dimensions*. See also [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 
@@ -153,8 +163,8 @@ Create the **Look up POs for today** menu item by following these steps.
     | Purchase order | Purchase order | Confirmed receipt date | (Day(0))   |
     | Purchase order | Purchase order | Warehouse              | (WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse()) |
 
-> [!NOTE]
-> In this example the filtering includes the _Warehouse_ field as part of the query to limit the search results. Keeping the _Criteria_ value empty for the _Warehouse_ will result in auto filling of the current worker warehouse and allowing the user to update the value as part of the filter display. By inserting criteria **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** the application will automatically display the result without filter confirmation.
+    > [!NOTE]
+    > In this example, the query filters search results by warehouse because it includes a line with the *Warehouse* field. If you set this line with a blank value for **Criteria**, the system will show a filter page that automatically displays the worker's current warehouse and allows the worker to update the value as needed. If you set this line to have a **Criteria** value of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*, the application can automatically use this value without showing it to the worker for confirmation. See also [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 
@@ -192,7 +202,7 @@ Create the **Look up POs by item** menu item by following these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *PurchLine* (You want to look up purchase order numbers based on item number via the line data.)
-    - **Show filter page:** *Only when filters can be changed* (Filter will be shown here due to the _Item number_.)
+    - **Show filter page:** *Only when filters can be changed* (Filters will be shown due to the *Item number*.)
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the purchase order lines table, but you can use any of the values that are related to the header by joining to the *PurchTable*).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
@@ -203,8 +213,8 @@ Create the **Look up POs by item** menu item by following these steps.
     | Purchase order lines | Purchase order lines | Delivery date | (dayRange(-10,10)) |
     | Purchase order lines | Purchase order lines | Item number | |
 
-> [!TIP]
-> In this example the filtering does not include any warehouse criteria and will thereby include open purchase order lines for all warehouses within the current legal entity. You can join to the _Inventory dimensions_ table and include the _Warehouse_ field as part of the query to limit the search results for the current work user session warehouse by inserting **(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())** into the criteria.
+    > [!TIP]
+    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. You can join to the *Inventory dimensions* table and include the *Warehouse* field as part of the query to limit the search results for the current worker's warehouse by inserting *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())* into the **Criteria**.
 
 1. Select **OK**.
 
