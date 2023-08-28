@@ -41,6 +41,7 @@ You create a shipping container by opening or creating the voyage where you will
     - Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**. Select the purchase order to create a voyage and container for, and then, on the Action Pane, on the **Purchase** tab, in the **Landed cost** group, select **Create new voyage**. Fill in the **Create voyage** dialog box as needed, and then select **OK** to open the **Voyage editor** page.
 
 1. Use the filters at the top of the **Voyage editor** page to find the inbound order that you want to create the shipping container for. If you created the voyage from the **All purchase orders** page, the purchase order that you selected there will already be selected in the filter here. However, you can adjust the filters as you want.
+1. On the Action Pane, select **Generate data** to update the list of orders on the **Inbound orders** FastTab, based on your current filter settings. (Each time that you change the filter settings, you must select **Generate data** to update the inbound order list.)
 1. The **Inbound orders** FastTab shows all the qualifying purchase orders that match your filter settings. Select an inbound order to include in the new shipping container.
 1. On the **Lines to select** FastTab, select the checkbox for each purchase order line that you want to include in the new shipping container.
 1. Repeat steps 2 through 4 until you've found and selected all the order lines that you want to include in the new shipping container.
@@ -55,7 +56,7 @@ You create a shipping container by opening or creating the voyage where you will
 1. If you want to create the shipping container in batch mode, on the **Run in the background** tab, set the **Batch processing** option to *Yes*. If your container includes a large number of lines, batch mode can help improve performance.
 
     > [!NOTE]
-    > The **Run in the background** tab is available only if the *(Preview) Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
+    > The **Run in the background** tab is available only if the *Enable shipping container creation and update in batch mode* feature is turned on for your system. For information about how to turn this feature on or off, see [Turn on the Landed cost module and related features for your system](landed-cost-enable.md).)
     >
     > Background processing won't be activated if the transfer quantity is less than the total quantity of the related purchase order line.
 

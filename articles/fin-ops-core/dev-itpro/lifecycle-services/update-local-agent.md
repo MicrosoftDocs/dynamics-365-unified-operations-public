@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 06/26/2023
+ms.date: 08/15/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -16,7 +16,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.assetid: 
 ms.search.region: Global
@@ -31,13 +31,14 @@ search.app:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to update the local agent. The latest version of the local agent is version 3.2.2, which was released in June 2023.
+This article explains how to update the local agent. The latest version of the local agent is version 3.2.3, which was released in August 2023.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | Release Date | Expiration date |
 |---------------------|------------|--------------|-----------------|
+| 3.2.3               | This version fixes a few bugs and removes the need for manually updating the config.json after a certificate rotation.| August 2023 | Not applicable |
 | 3.2.2               | This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths. | June 2023 | Not applicable |
 | 3.2.1               | This version fixes some bugs with the local agent not being able to download artifacts correctly from Azure Storage. Upgrades the Azure Storage libraries. | June 2023 | Not applicable |
 | 3.2.0               | This version upgrades the Service Fabric SDK, upgrades the Azure Storage libraries, introduces file hash validation | March 2023 | Not applicable |
@@ -59,6 +60,11 @@ This article explains how to update the local agent. The latest version of the l
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
+
+## What's new in local agent 3.2.3
+- This version fixes a bug where the topology.xml was being cached and not updated from Lifecycle Services.
+- Removes the need to update the config.json after a certificate rotation.
+- Enforces an encrypted communication between the local agent and the SQL database.
 
 ## What's new in local agent 3.2.2
 - This version fixes a bug with the local agent not able to clean up the workspace directory due to the directory containing files with long paths.

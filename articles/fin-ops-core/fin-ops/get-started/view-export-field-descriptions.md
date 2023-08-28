@@ -21,7 +21,7 @@ ms.search.form: FieldDescriptions
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 

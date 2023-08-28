@@ -21,7 +21,7 @@ ms.custom: bap-template
 >
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
 >
-> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Transparency notes for Dynamics 365 Supply Chain Management](../transparency-note.md).
+> To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
 
 <!--KFM: Preview until further notice -->
 
@@ -34,7 +34,7 @@ This feature is part of the *Procurement with Copilot* feature set, which is a g
 This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
 
 - Steps 1 and 2 enable the **Confirmed purchase orders with changes** workspace.
-- Steps 3 through 6 enable the support by Copilot for this workspace that provides for example natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+- Steps 3 through 6 enable the support by Copilot for this workspace that provides, for example, natural-language change summaries and communication drafts. These steps require that your environment is enabled for Power Platform integration. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Step 1: Upgrade Supply Chain Management to the required build
 
@@ -49,7 +49,17 @@ This feature was added in builds that came out after the initial release of vers
 
 In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) Review changes to confirmed purchase orders based on downstream impact*.
 
-### Step 3: Upgrade the Finance and Operations Virtual Entity solution
+### <a name="enable-sql-key"></a>Step 3: Enable the SQL row version change tracking license key
+
+Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it if necessary. If the key isn't enabled, you'll get an error when you try to install the Copilot application in the Power Platform admin center.
+
+1. Go to **System administration \> Setup \> License configuration**.
+1. On the **Configuration keys** tab, scroll down the **Sql row version change tracking (Preview)** key. If the key is already enabled, then skip the rest of this procedure. If it isn't enabled, then continue to the next step.
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Return to the **License configuration** and enable the **Sql row version change tracking (Preview)** key.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+### Step 4: Upgrade the Finance and Operations Virtual Entity solution
 
 Follow these steps to upgrade the *Finance and Operations Virtual Entity* solution.
 
@@ -64,7 +74,7 @@ Follow these steps to upgrade the *Finance and Operations Virtual Entity* soluti
 
 You can follow the status of the update. During the update, the status is *Installing*. After the update is completed, the status changes to *Installed*.
 
-### Step 4: Enable Supply Chain Management to access your Dataverse environment
+### Step 5: Enable Supply Chain Management to access your Dataverse environment
 
 Follow these steps to enable Supply Chain Management to access your Dataverse environment.
 
@@ -74,19 +84,23 @@ Follow these steps to enable Supply Chain Management to access your Dataverse en
 1. Go to **Product \> Features**.
 1. Set the **Finance and Operations in Dataverse** option to *On*.
 
-### Step 5: Install the Copilot application in Supply Chain Management
+### Step 6: Install the Copilot application in Supply Chain Management
 
 > [!NOTE]
-> During this preview phase, the Copilot application can only be insalled for environments that are hosted in the US.
+> During this preview phase, the Copilot application can only be installed for environments that are hosted in the US.
 
 Follow these steps to install the Copilot application in your Supply Chain Management environment.
 
 1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
 1. Select **Get it now**.
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
+
+    > [!IMPORTANT]
+    > **Troubleshooting:** You may see the following error message while installing the Copilot application in the Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you see this error, follow the instructions given in [Step 3: Enable the SQL row version change tracking license key](#enable-sql-key).
+
 1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is **Installing**. After the installation is complete, the status changes to **Installed**. If an error occurs, the status changes to **Failed** and you can find details about the error in the **Notifications** field.
 
-### Step 6: Enable the required security roles
+### Step 7: Enable the required security roles
 
 Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
@@ -154,7 +168,7 @@ The **High impact changes** tile provides an AI-generated, natural-language summ
 
 From this view, you can reach out to a vendor using email or Microsoft Teams. Using the contact details of the vendor contact person, the system generates a proposed message text and adds it to a new email message or Microsoft Teams chat. You can then review, update, and send the message.
 
-[<img src="media/po-change-review-highimpact-one-selected.png" alt="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected." title="Screenshot of the Confirmed purchase orders with changes worskapce, where one purchase order that has changes and downstream impact is selected" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
+[<img src="media/po-change-review-highimpact-one-selected.png" alt="Screenshot of the Confirmed purchase orders with changes workspace, where one purchase order that has changes and downstream impact is selected." title="Screenshot of the Confirmed purchase orders with changes workspace, where one purchase order that has changes and downstream impact is selected" width="720" />](media/po-change-review-highimpact-one-selected.png#lightbox)
 
 After you've communicated with the vendor, you can update the order further and then send it back to the vendor for confirmation. Alternatively, you might cancel the order and plan for alternative supply.
 
@@ -166,7 +180,7 @@ The **Impacted downstream orders** tile provides a summary of the downstream imp
 
 In this view, you can analyze the changes from the perspective of downstream impact and identify the purchase order changes that are causing the impact. You can then take action on those purchase orders.
 
-[<img src="media/po-change-review-downstream-impact.png" alt="Screenshot of the Confirmed purchase orders with changes worskapce, where filtering is applied to show the most pressing downstream impact by purchase order changes." title="Screenshot of the Confirmed purchase orders with changes worskapce, where filtering is applied to show the most pressing downstream impact by purchase order changes" width="720" />](media/po-change-review-downstream-impact.png#lightbox)
+[<img src="media/po-change-review-downstream-impact.png" alt="Screenshot of the Confirmed purchase orders with changes workspace, where filtering is applied to show the most pressing downstream impact by purchase order changes." title="Screenshot of the Confirmed purchase orders with changes workspace, where filtering is applied to show the most pressing downstream impact by purchase order changes" width="720" />](media/po-change-review-downstream-impact.png#lightbox)
 
 A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact (the requested date in the downstream order). You can then take action by communicating with downstream stakeholders. Those stakeholders might, in turn, contact affected customers and replan the downstream orders.
 

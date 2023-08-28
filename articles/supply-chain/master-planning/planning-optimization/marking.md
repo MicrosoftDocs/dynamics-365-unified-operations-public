@@ -55,6 +55,6 @@ When you firm a planned order, the **Firming** dialog box provides an **Update m
 To set the default marking option for your system, go to **Master planning \> Setup \> Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
 
 > [!NOTE]
-> The *Single level standard* and *Single level extended* options are available only if the *Make-to-order supply automation* feature is enabled on your system. For more information about this feature and how to enable it, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
+> The *Single level standard* and *Single level extended* options are available only if the *Make-to-order supply automation* feature is enabled on your system. (As of Supply Chain Management version 10.0.32, *Make-to-order supply automation* is turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) For more information about this feature and how to enable it, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -39,10 +39,10 @@ Before you can pack containers by using the Warehouse Management mobile app, you
 
 1. Go to **System administration \> Workspaces \> Feature management**, and turn on the following features in the order that they're listed in here. (All four features are listed as part of the *Warehouse management* module.) For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-    1. *Multi-level detours for the Warehouse Management mobile app* (For more information about this feature, see [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).)
-    1. *Auto-submit detour steps for the Warehouse Management mobile app* (For more information about this feature, see [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).)
+    1. *Multi-level detours for the Warehouse Management mobile app*<br>As of Supply Chain Management version 10.0.36, this feature is turned on by default. For more information about this feature, see [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).
+    1. *Auto-submit detour steps for the Warehouse Management mobile app*<br>As of Supply Chain Management version 10.0.36, this feature is turned on by default. For more information about this feature, see [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).
     1. *Warehouse management app data inquiry flow* (For more information about this feature, see [Query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md).)
-    1. *Pack containers using the Warehouse Management mobile app* (This feature is the one that is described in this article.)
+    1. *Pack containers using the Warehouse Management mobile app* (This feature is the one that is described in this article.) As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, and then, on the Action Pane, select **Create default setup** to update the field names in the Warehouse Management mobile app. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**, and then, on the Action Pane, select **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.

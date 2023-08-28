@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-asset-classification-values.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
       "redirect_url": "/dynamics365/finance",
       "redirect_document_id": "false"
@@ -16,7 +21,12 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/fin-ops-core/dev-itpro/gdpr",
+      "source_path": "articles/commerce/dev-itpro/create-retail-experience-app.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/store-commerce",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/gdpr.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy",
       "redirect_document_id": "false"
     },
@@ -19925,6 +19935,16 @@
     {
       "source_path": "articles/supply-chain/production-control/subcontracting.md",
       "redirect_url": "/dynamics365/supply-chain/production-control/manage-subcontract-work-production",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/transparency-note-confirmed-po-changes.md",
+      "redirect_url": "/dynamics365/supply-chain/faq-confirmed-po-changes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/transparency-note.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
       "redirect_document_id": "false"
     }
   ]

@@ -2,8 +2,10 @@
   items:
   - name: Dynamics 365 Supply Chain Management
     items:
-    - name: Dynamics 365 Supply Chain Management home page
-      href: index.md
+    - name: Supply Chain Management documentation
+      href: index.yml
+    - name: Welcome to Dynamics 365 Supply Chain Management
+      href: supply-chain-management-welcome.md
     - name: What's new or changed
       items: 
       - name: What's new or changed in finance and operations apps
@@ -955,6 +957,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/supply-chain
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/supply-chain
       - name: Configurations
         items:
         - name: Create configurations
@@ -2931,7 +2935,7 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn on the Rebate management module for your system
+        - name: Turn the Rebate management module on or off
           href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
@@ -3515,11 +3519,13 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
+        - name: Create or modify an inbound load
+          href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
-        - name: Import inbound ASNs through the V3 data entity
+        - name: Import inbound ASNs through data entities
           href: warehousing/import-asn-data-entity.md
         - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
@@ -3715,10 +3721,10 @@
             href: warehousing/mhax.md
       - name: The Warehouse Management mobile app
         items:
+        - name: What's new or changed in the Warehouse Management mobile app
+          href: warehousing/whats-new-wma.md
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in the Warehouse Management mobile app
-            href: warehousing/whats-new-wma.md
           - name: Install and connect the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Mass deploy the Warehouse Management mobile app
@@ -3879,12 +3885,26 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
+      - name: Warehouse management only mode
+        items:
+        - name: Warehouse management only mode overview
+          href: warehousing/wms-only-mode-overview.md
+        - name: Enable and configure warehouse management only mode
+          href: warehousing/wms-only-mode-setup.md
+        - name: Exchange data between systems
+          href: warehousing/wms-only-mode-exchange-data.md
+        - name: Work with warehouse management only mode in Supply Chain Management
+          href: warehousing/wms-only-mode-using.md
+        - name: Example of using inbound and outbound shipment orders
+          href: warehousing/wms-only-mode-example.md
+        - name: Warehouse management only mode frequently asked questions
+          href: warehousing/wms-only-mode-faq.md
     - name: Responsible AI 
       items:
       - name: Overview
-        href: transparency-note.md
-      - name: Transparency notes for the Confirmed purchase orders with changes workspace
-        href: transparency-note-confirmed-po-changes.md
+        href: responsible-ai-overview.md
+      - name: FAQ for the Confirmed purchase orders with changes workspace
+        href: faq-confirmed-po-changes.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
@@ -3893,13 +3913,13 @@
         href: transportation/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
-      - name: Create and process custom message queues and message types
+      - name: Create and process message queues and message types
         href: supply-chain-dev/message-processor.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
-    href: ../commerce/index.md
+    href: ../commerce/welcome.md
   - name: Dynamics 365 Human Resources
-    href: ../human-resources/index.md
+    href: ../human-resources/index.yml

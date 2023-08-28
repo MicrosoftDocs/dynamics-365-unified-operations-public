@@ -20,9 +20,11 @@ Container labels provide information about a container and the related shipment 
 
 As for [license plate labels](document-routing-layout-for-license-plates.md), the Zebra Programming Language (ZPL) is used to create label layouts for container labels.
 
-## Turn on the container label printing functionality
+## Turn container label printing functionality on or off
 
-Container label functionality is provided by default in Microsoft Supply Chain Management version 10.0.32. In version 10.0.31, you must enable the *Pack containers using the Warehouse Management mobile app* feature in order to use the container label printing functionality. (For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the *Pack containers using the Warehouse Management mobile app* feature and turn it on or off.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Pack containers using the Warehouse Management mobile app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+
+For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 

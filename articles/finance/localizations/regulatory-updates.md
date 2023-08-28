@@ -45,7 +45,7 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-| Denmark | August 2023 | 10.0.36 | [Accounting basis (Regnskab Basis) electronic report for Denmark](emea-dnk-accounting-basis.md) |
+| Denmark | August 2023 | 10.0.37 | [Accounting basis (Regnskab Basis) electronic report for Denmark](emea-dnk-accounting-basis.md) |
 | Switzerland | July 2023 | 10.0.36 | [VAT declaration](emea-che-vat-declaration-switzerland.md) - 2024 |
 | Poland | July 2023 | 10.0.36 | [SAF VAT Invoices - JPK-FA](emea-pol-standard-audit-file-saf.md#jpk-fa) project advance invoice handling |
 | Poland | July 2023 | 10.0.36 | [VAT declaration - JPK-V7](emea-pol-vdek.md) - supplementary package based on ideas |

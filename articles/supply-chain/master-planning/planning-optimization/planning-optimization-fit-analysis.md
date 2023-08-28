@@ -64,7 +64,7 @@ The following table shows the various results that can be shown after a fit anal
 | Kanban | Items with default order type kanban: *\#* | Currently, a default order type that is set to kanban will be ignored when Planning Optimization is enabled. The kanban default order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2024 |
 | Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. For more information, see [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
 | Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
-| Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
+| Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36). | Supported |
 | Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 2 |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
@@ -73,8 +73,8 @@ The following table shows the various results that can be shown after a fit anal
 | Production | BOMs with subcontracting: *\#* | This feature is now supported. | Supported |
 | Production | BOMs without a site: *\#* | This feature is now supported. For more information, see [Production planning](production-planning.md) | Supported |
 | Production | Demand with specific BOM or route requirements defined: *\#* | This feature is now supported. | Supported |
-| Production | Formula versions with Co/By products: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
-| Production | Formula versions with yield: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
+| Production | Formula versions with Co/By products: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36). | Supported |
+| Production | Formula versions with yield: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36). | Supported |
 | Production | Plans including sequencing: *\#* | This feature is now supported. | Supported |
 | Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is now supported. | Supported |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
@@ -87,7 +87,7 @@ The following table shows the various results that can be shown after a fit anal
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For more information, see [Safety margins](safety-margins.md) |  Supported |
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is now supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
-| Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | Planning Optimization doesn't yet support custom dimensions, so they won't be taken into account during planning. | 2023 release wave 2 |
+| Custom inventory dimensions | Tracking dimension groups with one or more custom inventory dimensions: *\#* | This is now supported for all versions of Supply Chain Management. No set up is required. | Supported |
 
 ## Additional resources
 
