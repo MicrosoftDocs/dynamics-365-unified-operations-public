@@ -80,11 +80,11 @@ To enable warehouse workers to use the Warehouse Management mobile app to regist
 
 - *License plate receiving (and put away)*
 - *Load item receiving (and put away)*
-- *Mixed license plate receiving (and put away)* (for the *Load item receiving* source document line identification method)
-- *Inbound shipment order line receiving* (when assigned to loads)
-- *Inbound shipment item receiving* (when assigned to loads)
-- *Inbound shipment order line receiving (and put away)* (when assigned to loads)
-- *Inbound shipment order item receiving (and put away)* (when assigned to loads)
+- *Mixed license plate receiving (and put away)*
+- *Inbound shipment order line receiving*
+- *Inbound shipment item receiving*
+- *Inbound shipment order line receiving (and put away)*
+- *Inbound shipment order item receiving (and put away)*
 
 For more information, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 

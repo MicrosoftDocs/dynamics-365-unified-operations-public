@@ -80,11 +80,12 @@ Here's a high-level description of the inbound process:
 
 1. An external system submits an *inbound shipment order* message to Supply Chain Management.
 1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inbound loads are created in one of three ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
+1. Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
     - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
+    - Automatically during the Warehouse Management mobile app receiving process
 
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-using.md#shipment-receipts), and trigger *business events* for the external systems.
@@ -104,7 +105,7 @@ You can specify whether workers should capture a packing slip ID and date for ea
 - *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
-> In the current version, load line quantities must be fulfilled according to over-delivery and under-delivery settings, and the *receiving completed* process must be manually triggered.
+> Depending on your setup at **Warehouse management > Setup > Warehouse management integration > Source systems - Inbound shipment order policies**, an inbound load is automatically created as part of the inbound shipment order import, via advanced shipping notice (ASN) import, via a manual process, or as part of the Warehouse Management mobile app receiving process. When creating load data as part of the inbound shipment order message processing you can use the **Delivery policy** to control if the load quantities gets adjusted to the received quantities or the received quantities must match the load line qualities as part of the *receiving completed* process.
 
 ## <a name="shipment-receipts"></a>Shipment receipts
 

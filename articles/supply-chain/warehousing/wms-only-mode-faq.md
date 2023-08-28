@@ -67,7 +67,8 @@ Warehouse management only mode uses just two types of documents: *inbound shipme
 
 ## Why can't I just Receive complete what I have partly inbound registered?
 
-Depending on your setup, an inbound load is automatically created as part of the inbound shipment order import, via advanced shipping notice (ASN) import, or via a manual process. In the current version, the load line quantities must be fulfilled according to over-delivery and under-delivery settings, and *receiving completed* must be manually triggered.
+Depending on your setup at **Warehouse management > Setup > Warehouse management integration > Source systems - Inbound shipment order policies**, an inbound load is automatically created as part of the inbound shipment order import, via advanced shipping notice (ASN) import, via a manual process, or as part of the Warehouse Management mobile app receiving process.
+When creating load data as part of the inbound shipment order message processing you can use the **Delivery policy** to control if the load quantities gets adjusted to the received quantities or the received quantities must match the load line qualities as part of the *receiving completed* process.
 
 ## Why do I receive the following error for my existing Update product receipts process: "Unable to update product receipt for a load with inbound shipment order lines"?
 
