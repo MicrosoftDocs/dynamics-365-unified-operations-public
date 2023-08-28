@@ -31,11 +31,14 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
+Supervisors can make a material availability check on work orders. This process is relevant for organizations that want to check if material for the work orders are available before workers start working on the work orders. Consider following scenario. A supervisor is responsible for all corrective maintenance on a manufacturing site. As a standard procedure, the supervisor will check all new work orders of type corrective, before releasing the orders to the maintenance workers. As part of this check, the supervisor will check that the required materials for the orders are available, preventing that workers are not starting up maintenance work where the necessary spare part are available.
 
+## How does the material availability check work?
 
-Supervisors can make a material availability check on work orders. This process is relevant for organizations that want to check if material for the work orders are available before workers start working on the work orders. Consider following scenario. A supervisor is responsible for all corrective maintenance on a manufacturing site. 
+The check is using the planning optimization, to calculate how material for work orders are covered in inventory. The planning optimization is using the material demand from work orders to calculate how the material are covered in inventory. The material demand for work orders are 
 
-As a standard procedure, the supervisor will check all new work orders of type corrective, before releasing the orders to the maintenance workers. As part of this check, the supervisor will check that the required materials for the orders are available, preventing that workers are not starting up maintenance work where the necessary sparepart are available. 
+Supervisors can setup a default forecast for material needed for the maintenance of assets. These default forecasts are setup. You can read more about how to setup default materials for work orders in this article: **Maintenance job type defaults**. When a work order is created, the 
+The material availability check is based on the result of the last version of the master plan. 
 
 
 Each morning the supervisor will check all the new work ordres that have been generated 
