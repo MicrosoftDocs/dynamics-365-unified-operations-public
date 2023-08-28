@@ -62,17 +62,42 @@ To submit your VAT return directly to the Danish Tax Agency from Finance, you mu
 
 ### Get the data package with example settings for electronic messages
 
-The data package contains settings of electronic message functionality that enables the following scenario in your Finance.
+The data package contains settings of electronic message functionality that enables the following three scenarios in your Finance.
 
-#### Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
+#### Scenario 1: Preview VAT declaration in Excel without collecting Sales tax payments (for any open period with any From and To dates)
+
+This scenario is composed of two actions:
+
+- \"DK VAT create preview in Excel\": this action creates a new electronic message that allows to further generate a VAT declaration in Excel format for a period specified.
+- \"DK VAT preview declaration\": this action allows to generate a VAT declaration in Excel format for a period specified as **From date** and **To date** of the electronic message by running an ER format specified for this action (by default, **VAT Declaration Excel (DK)**).
 
 <p align="center"><img src="media/em-processing-preview-dk.png" /></p>
 
-#### Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
+#### Scenario 2: Request information about VAT obligation periods from Skattestyrelsen for the period specified in electronic message
+
+This scenario is composed of two actions:
+
+- \"DK VAT create calendar request\": this action creates a new electronic message that allows to further generate and send a request about VAT obligation periods (calendar) of the legal entity to Skattestyrelsen for a period specified.
+- \"DK VAT calendar request\": this action allows to send a request about VAT obligation periods of the legal entity directly to Skattestyrelsen for a period specified as **From date** and **To date** of the electronic message by running [`EMVATSendCalendar_DK` executable class](#calendar-request). Received response from Skattestyrelsen can be observed in HTML format as an attachment to the electronic message. 
 
 <p align="center"><img src="media/em-processing-calendar-dk.png" /></p>
 
-#### Generate a VAT return electronic file and submit it to Skattestyrelsen
+#### Scenario 3: Generate a VAT return electronic file and submit it to Skattestyrelsen
+
+This scenario is composed of the steps described in the table below.
+
+| Action | Description |
+|--------|-------------|
+| DK VAT create VAT return for submission | This action creates a new electronic message that allows to further generate and send a VAT return of the legal entity to Skattestyrelsen for a period specified. |
+| DK VAT collect sales tax payment records | This action runs [**DK VAT collect sales tax payment records** populate records action](#populate-records) to collect those sales tax payment transactions that must be included into the VAT return. |
+| DK VAT ready to generate VAT return | This action changes the status of the electronic message to **Ready to generate** that enables further generation of an electronic file for VAT return. |
+| DK VAT Not ready to generate VAT return | This action changes the status of the electronic message back to **DK VAT new VAT return submission** that enables to collect sales tax payment records again. |
+| DK VAT preview VAT declaration in Excel | This action allows to generate a VAT declaration in Excel format based on collected sales tax payment transactions for selected electronic message by running an ER format specified for this action (by default, **VAT Declaration Excel (DK)**). |
+| DK VAT generate XML file for submission |  This action allows to generate a VAT return in XML format based on collected sales tax payment transactions for selected electronic message by running an ER format specified for this action (by default, **VAT Declaration XML (DK)**). | 
+| DK VAT submit VAT return | This action sends generated VAT return in XML format to Skattestyrelsen by running [`EMVATSendReturnController_DK` executable class](#return-submission) , receives a link for the further approval of the informat that was sent. Received link is attached in HTML file to the electronic message. |
+| DK VAT return approved | This action changes the status of the electronic message to **DK VAT return approved** that enables to retrieve a receipt information from Skattestyrelsen. |
+| DK VAT receipt request | This action allows to send a request about receipt for the previously approved period directly from Skattestyrelsen by running [`EMVATSendReceiptController_DK` executable class](#receipt-request). Received response from Skattestyrelsen can be observed in HTML format as an attachment to the electronic message.
+
 
 ![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
 
@@ -86,18 +111,17 @@ To import the data package that contains the settings of electronic message func
 4. On the **Selected entities** FastTab, select **Add file**.
 5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the file that you downloaded from LCS.
 6. Select **Close**.
-7. After the data entities are uploaded, on the Action Pane, select **Import** or **Import all**.
+7. After the data entities are uploaded, on the Action Pane, select **Import** or **Import now**.
 
     ![Import the data package that has example settings for electronic messages.](media/em-package-dk.png)
 
 8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported, **DK VAT return**.
 
-### Define a sales tax settlement period
+### <a id="populate-records"></a> Define a sales tax settlement period
 
 1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
 2. Select the line for **DK VAT collect sales tax payment records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
-4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ### Save the executable class parameters for Electronic messaging
 
@@ -113,9 +137,9 @@ Before you use these classes for the first time, you must save the parameters.
 
 | Executable class | Description | Parameters |
 |------------------|-------------|------------|
-| DK VAT calendar request | Retrieves company calendar information. |  **- Service url** - Specify the `https` address of an endpoint of `VirksomhedKalenderHent` Web service provided by the Danish Tax Agency. </br> **- Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **- Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **- Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Select **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
-| DK VAT return submission | Sends VAT return to the Danish VAT return APIs. |  **-Service url** - Specify the `https` address of an endpoint of `ModtagMomsangivelseForeloebig` Web service provided by the Danish Tax Agency. </br> **-Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **-Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **-Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Sselect **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
-| DK VAT return receipt request | Retrieves VAT receipt information from the Danish Tax Agency. |  **-Service url** - Specify the `https` address of an endpoint of `MomsangivelseKvitteringHent` Web service provided by the Danish Tax Agency. </br> **-Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **-Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **-Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Select **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
+| <a id="calendar-request"></a> DK VAT calendar request | Retrieves company calendar information. |  **- Service url** - Specify the `https` address of an endpoint of `VirksomhedKalenderHent` Web service provided by the Danish Tax Agency. </br> **- Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **- Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **- Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Select **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
+|<a id="return-submission"></a> DK VAT return submission | Sends VAT return to the Danish VAT return APIs. |  **-Service url** - Specify the `https` address of an endpoint of `ModtagMomsangivelseForeloebig` Web service provided by the Danish Tax Agency. </br> **-Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **-Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **-Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Sselect **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
+| <a id="receipt-request"></a>DK VAT return receipt request | Retrieves VAT receipt information from the Danish Tax Agency. |  **-Service url** - Specify the `https` address of an endpoint of `MomsangivelseKvitteringHent` Web service provided by the Danish Tax Agency. </br> **-Client certificate** - Select a client certificate stored in your Azure Key Vault.</br> **-Server certificate** - Select a server certificate stored in your Azure Key Vault. </br> **-Request timeout** - Enter a suitable request timeout value in seconds. If left at zero (0), the value defaults to 60 seconds. </br> **-Transaction identifier additional field** - Select **DK VAT transaction identifier**.</br> **-Tax registration number additional field** - Select **Tax registration number**. |
 
 3. Select **OK** on the dialog page of each executable class to save specified parameters.
 
