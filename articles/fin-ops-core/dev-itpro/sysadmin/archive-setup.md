@@ -37,10 +37,14 @@ After you install the *(Preview) Archive* add-in from Lifecycle Services, you ca
 - *(Preview) Ledger archive automation* – This feature moves general ledger records to the relevant history tables. After the data is copied to the history tables, the matching data from the day-to-day general ledger tables is purged. For more information about how to use this feature, see [Archive general ledger data](archive-general-ledger.md).
 - *(Preview) Archive sales orders to history tables* – This feature is required for archiving of sales orders. It provides a framework for moving sales orders from day-to-day transaction tables to local history tables. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Archive sales orders to history tables using archive service* – This feature is required for archiving of sales orders. It moves sales orders from day-to-day transaction tables to history tables. After the data is copied to the history tables, the matching data from the day-to-day transaction tables is purged. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
+
+<!--
 - *(Preview) Archive data to Dataverse managed data lake and purge* – This feature provides the archival framework to do rules-based archiving of historical data. The archived records are removed from your day-to-day working environment and stored in your Dataverse-managed data lake. In this way, the feature helps improve system performance and lower operating costs while it also keeps your historical records so that they're available (as read-only data) when you need them.
 - *(Preview) Archive sales order from history tables to Dataverse managed data lake and purge* – This feature completes the last step in the archival process for sales orders: archiving data from history tables to your Dataverse-managed data lake. For more information about how to use this feature, see [Archive sales orders](archive-sales-orders.md).
 - *(Preview) Purge archived inventory transactions* – This feature completes the last step in the archival process for inventory transactions: archiving data from history tables to your Dataverse-managed data lake. You must ensure that the schema of `InventTransArchive` and the schema of `InventTransArchiveEntity` are identical. Otherwise, some data might be lost during synchronization to Dataverse. For more information about how to use this feature, see [Move inventory transactions history to long-term data retention](archive-inventory-purge.md).
+-->
 
+<!--
 ## Set up long-term data retention
 
 After you move your old records to the history table, you can help lower your data storage costs and further improve system performance by moving the data to a Dataverse-managed data lake for long-term data retention. The action of moving data from a history table to long-term data retention is also known as *purging*, because the data is purged from Dynamics 365 Supply Chain Management. Purging is a permanent action that can't be reversed. To use long-term data retention, you must complete the procedure in each of the following subsections.
@@ -148,6 +152,8 @@ Long-term data retention is now fully set up for the required entities in Datave
 ### Provide access to view data in long-term data retention
 
 To enable administrators and/or auditors to view the data in long-term data retention, create an app in Dataverse that queries the data by using the virtual entities that you set up in the [Enable long-term data retention for the required entities in Dataverse](#portal) section. For instructions, see [View long term retained data](/power-apps/maker/data-platform/data-retention-view).
+
+-->
 
 ## Next steps
 
