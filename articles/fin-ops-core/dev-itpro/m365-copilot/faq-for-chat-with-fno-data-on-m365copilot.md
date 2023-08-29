@@ -4,7 +4,7 @@
 title: Chat with finance and operations data on Microsoft 365 Copilot
 description: This article explains how to chat with finance and operations data with Microsoft 365 Copilot using virtual entities in Microsoft Dataverse.
 author: ramasri
-ms.date: 08/15/2023
+ms.date: 09/09/2023
 ms.topic: article
 ms.prod:
 ms.technology: 
