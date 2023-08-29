@@ -30,7 +30,6 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | *Coming soon* | Enabled by default |
-| Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
 | Inventory and logistics | [Sell and price multiple items as a bundle](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/sell-price-multiple-items-as-bundle) | [Product bundles overview](../sales-marketing/product-bundles-overview.md) | Feature management:<br>*Product bundles*  |
 | Manufacturing and asset management | [Detect spikes and deviations in sensor data](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/detect-spikes-deviations-sensor-data) | [Anomaly detection scenario](../sensor-data-intelligence/sdi-scenario-anomaly.md) | Enabled by default |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | [Advanced export control overview](../pim/export-control-overview.md) | Feature management:<br>*(Preview) Advanced export control configuration*  |
@@ -39,7 +38,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -97,9 +96,12 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | Mandatory |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | Mandatory |
 | Procurement and sourcing | [Assess supply risks to prevent supply chain disruptions](../procurement/supply-risk-assessment-overview.md) | On by default |
+| Procurement and sourcing | [Check purchase order expenditure reviewers setup before enabling workflow](whats-new-scm-10-0-35.md) | On by default |
 | Procurement and sourcing | [Display legacy default RFQ reply field settings](whats-new-scm-10-0-25.md) | On by default |
 | Procurement and sourcing | Purchase agreement matching policy | On by default |
 | Procurement and sourcing | Purchase order delivery date | On by default |
+| Procurement and sourcing | Request for quotation amendment and cancellation email framework options | On by default |
+| Procurement and sourcing | [Review changes to confirmed purchase orders based on downstream impact](../procurement/purchase-order-changes-after-confirmation.md) | On by default |
 | Procurement and sourcing | [Purchase order workflow submission and approval performance enhancement](whats-new-scm-10-0-32.md) | Generally available |
 | Product information management | [Clean up product attribute values](whats-new-scm-10-0-26.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | Mandatory |
@@ -185,11 +187,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.36 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.36, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=831854&dbType=3&qc=bffd63612a8f998d04f4f14d6d456f17d1f6038819d1225f612e2fd0f5c59e17).
 
-### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan](/dynamics365/release-plan/2023wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 
