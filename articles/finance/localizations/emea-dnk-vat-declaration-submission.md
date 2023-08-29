@@ -69,7 +69,7 @@ The data package contains settings of electronic message functionality that enab
 This scenario is composed of two actions:
 
 - **DK VAT create preview in Excel**: this action creates a new electronic message and allows to further generate a VAT declaration in Excel format for a period specified.
-- **DK VAT preview declaration**: this action allows to generate a VAT declaration in Excel format for the period specified as **From date** and **To date** of the electronic message by running an ER format specified for this action (by default, **VAT Declaration Excel (DK)**).
+- **DK VAT preview declaration**: this action allows to generate a VAT declaration in Excel format for the period specified as **From date** and **To date** of the electronic message by running an ER format specified for this action (by default, **VAT Declaration Excel (DK)**). Generated report is attached to the electronic message.
 
 <p align="center"><img src="media/em-processing-preview-dk.png" /></p>
 
@@ -88,7 +88,7 @@ This scenario is composed of the steps described in the table below.
 
 | Action | Description |
 |--------|-------------|
-| **DK VAT create VAT return for submission** | This action creates a new electronic message that allows to further generate and send a VAT return of the legal entity to Skattestyrelsen for a period specified. |
+| **DK VAT create VAT return for submission** | This action creates a new electronic message and allows to further generate and send a VAT return of the legal entity to Skattestyrelsen for a period specified. |
 | **DK VAT collect sales tax payment records** | This action runs [**DK VAT collect sales tax payment records** populate records action](#populate-records) to collect those sales tax payment transactions that must be included into the VAT return. |
 | **DK VAT ready to generate VAT return** | This action changes the status of the electronic message to **Ready to generate** that enables further generation of an electronic file for VAT return. |
 | **DK VAT Not ready to generate VAT return** | This action changes the status of the electronic message back to **DK VAT new VAT return submission** that enables to collect sales tax payment records again. |
@@ -96,7 +96,7 @@ This scenario is composed of the steps described in the table below.
 | **DK VAT generate XML file for submission** |  This action allows to generate a VAT return in XML format based on collected sales tax payment transactions for selected electronic message by running an ER format specified for this action (by default, **VAT Declaration XML (DK)**). | 
 | **DK VAT submit VAT return** | This action sends generated VAT return in XML format to Skattestyrelsen by running [`EMVATSendReturnController_DK` executable class](#return-submission) , receives a link for the further approval of the informat that was sent. Received link is attached in HTML file to the electronic message. |
 | **DK VAT return approved** | This action changes the status of the electronic message to **DK VAT return approved** that enables to retrieve a receipt information from Skattestyrelsen. |
-| **DK VAT receipt request** | This action allows to send a request about receipt for the previously approved period directly from Skattestyrelsen by running [`EMVATSendReceiptController_DK` executable class](#receipt-request). Received response from Skattestyrelsen can be observed in HTML format as an attachment to the electronic message.
+| **DK VAT receipt request** | This action allows to send a request about receipt for the previously approved period directly from Skattestyrelsen by running [`EMVATSendReceiptController_DK` executable class](#receipt-request). Received response from Skattestyrelsen can be observed in internet browser as HTML file attached to the electronic message. |
 
 
 ![Generate VAT return electronic file and submit it to Skattestyrelsen.](media/em-processing-submission-dk.png)
