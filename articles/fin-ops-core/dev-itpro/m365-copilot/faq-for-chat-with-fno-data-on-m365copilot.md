@@ -46,11 +46,11 @@ Data residing inside tables are referred as structured data. Data present in a s
 
 Finance scenario - Inquire collection status on Microsoft 365 Copilot
 
-[!VIDEO 2ea4ece0-c783-4410-8042-55569c5bb9f1] 
+>[!VIDEO 2ea4ece0-c783-4410-8042-55569c5bb9f1] 
 
 Supply Chain scenario - Inquire on hand inventory on Microsoft 365 Copilot
 
-[!VIDEO 7f051a6f-0d45-41b4-b4c7-cd5d4166b38d] 
+>[!VIDEO 7f051a6f-0d45-41b4-b4c7-cd5d4166b38d] 
 
 ## What is happening behind the scenes?
 The user's question is translated into a FetchXML query and executed against finance and operations database through virtual entities. The results are summarized and responded to the user. The following graphic shows the architecture that works behind the scenes.
