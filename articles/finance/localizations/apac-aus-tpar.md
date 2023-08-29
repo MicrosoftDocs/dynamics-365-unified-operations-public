@@ -2,7 +2,7 @@
 title: Taxable Payments Annual Report
 description: This article explains how to set up and generate the Taxable Payments Annual Report (TPAR).
 author: AdamTrukawka
-ms.date: 08/25/2023
+ms.date: 08/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ A TPAR requires that you provide information to the company contact person who i
 
 ### Import Electronic reporting configurations
 
-In Microsoft Dynamics 365 Finance, import the following components of the latest available version of these Electronic reporting (ER) configurations from the Global repository:
+In Microsoft Dynamics 365 Finance, import the latest available version of these Electronic reporting (ER) configurations from the Global repository:
 
 - Payment model
 - TPAR model mapping (AU)
