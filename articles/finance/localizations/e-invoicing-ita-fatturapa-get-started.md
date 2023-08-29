@@ -32,7 +32,7 @@ Before you complete the steps in this article, the following prerequisites must 
 - Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 - Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 3 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
 - Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
-- Optionally, you can use Digital signature certificate for non-qualified signatures only.
+- *Optionally*, you can use Digital signature certificate for non-qualified signatures only.
 
 ## Country/region-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
@@ -57,7 +57,7 @@ This section complements the [Country/region-specific configuration of applicati
     - **CAentrate.cer** (or **CAEntratetest.cer** in the case of a test environment)
     - **CAActalisOV.cer** (in the case of a production environment)
     - Client identity certificate (Usually, this certificate is generated while the user performs registration of the SDICoop service channel, and it's named SDI-12345678901, where 12345678901 is a company VAT number.)
-    - Certificate for digital signature (This certificate is required for the PA flow.)
+    - Certificate for digital signature (*Optionally*).
 
     For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
 
@@ -148,7 +148,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 2. On the **Setups** tab, select **Sales invoices**, and then select **Edit**.
 3. In the **Processing pipeline** section, go through the actions, and set all the required fields:
 
-    - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate (only for **PA** flow setups).
+    - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate (*Optionally*).
     - For the **Submit** action, add a value to the **URL address** and **Certificates** fields. The value of the **Certificates** field is a chain of certificates that was added in one of the previous sections (**SDIChainProd** or **SDIChainTest**).
     - For the **Generate format** action, in the **Configuration user input parameters** section, select the **ProgressivoInvioUIP** parameter, change its **Data type** value to **sequence**, and then, in the **Value** field, select one of the available values.
 
@@ -158,7 +158,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 5. Select **Validate** to ensure that all required fields have been set.
 6. Save your changes, and close the page.
 7. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
-8. Repeat steps 3 through 6 for project invoices and for **PA** setups.
+8. Repeat steps 3 through 6 for project invoices setups.
 
 ### Configure the processing pipeline for import
 
