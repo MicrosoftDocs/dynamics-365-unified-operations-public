@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: COOExportControlParameters
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 08/29/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
