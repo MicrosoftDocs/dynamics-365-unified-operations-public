@@ -2477,6 +2477,20 @@
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
+        - name: Advanced export control
+          items:
+          - name: Advanced export control overview
+            href: pim/export-control-overview.md
+          - name: Enable and configure advanced export control
+            href: pim/export-control-configure.md
+          - name: Work with advanced export control for products and sales orders
+            href: pim/export-control-use.md
+          - name: Extend export control sales order functionality
+            href: pim/export-control-extend-sales-orders.md
+          - name: Extend export control rules functionality
+            href: pim/export-control-extend-rules.md
+          - name: Extend export control license functionality
+            href: pim/export-control-extend-licenses.md
         - name: Hazardous materials
           items:
           - name: Hazardous materials overview
