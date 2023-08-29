@@ -55,6 +55,7 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+|Cash and bank management|Import bank statement|Bank statement importing for ISO20022 camt053.001.08 version is supported in 10.0.37. User can import the latest Advanced bank reconciliation statement configuration ABR Camt.053 format version 3.13 for this feature enhancement.|
 
 ## Features turned on by default in this release
 
