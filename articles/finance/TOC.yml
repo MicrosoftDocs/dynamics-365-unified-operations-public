@@ -1922,6 +1922,8 @@
             href: localizations/apac-aus-payment-times-report.md
           - name: Customer electronic invoices
             href: localizations/apac-aus-nzl-e-invoices.md
+          - name: Taxable Payments Annual Report
+            href: localizations/apac-aus-tpar.md
         - name: Austria
           items:
           - name: Austria overview
