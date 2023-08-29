@@ -1,6 +1,6 @@
 ---
 title: Tax and legal attributes for Latin America
-description: This topic provides information about the document class type configuration for Latin America. 
+description: This article provides information about the document class type configuration for Latin America. 
 author: Fhernandez0088
 ms.date: 08/29/2023
 ms.topic: Article
@@ -8,52 +8,39 @@ ms.reviewer: kfend
 ms.author: v-federicohe 
 ms.custom: bap-template
 ---
+
 # Tax and legal attributes for Latin America
-This article provides information about how to add tax and legal information that will be useful to comply company and fiscal legislation.
-The attributes that can be configured in this section includes tax identification in different levels, taxpayer classification per country, and different customizable concepts that can be filed manually.
-This section will be available in:
-* Legal entity
 
-![Legal entity](./media/ltm-Legal-entities.jpg)
+[!include [banner](../includes/banner.md)]
 
-* Customer
+This article provides information about how to add the tax and legal information that you can use to comply with company and fiscal legislation. The attributes you can configure in includes tax identification in different levels, taxpayer classification per country, and different customizable concepts that can be filed manually.
+The fields for this information are located on the **LATAM** FastTab on the following pages:
 
-![Customer](./media/ltm-Customers.jpg)
-  
-* Vendor
+  - **Legal entity**
+  - **Customer**
+  - **Vendor**
+  - **Bank groups**
+  - **Employee**
+  - **Shipping carriers**
 
-![Vendor](./media/ltm-Vendors.jpg)
-  
-* Bank group
-
-![Bank group](./media/ltm-Bank-groups.jpg)
-  
-* Employee
-
-![Employee](./media/ltm-Employees.jpg)
-
-* Contact
-
-![Contact](./media/ltm-Contacts.jpg)
-  
-* Shipping carriers
-
-![Shipping carriers](./media/ltm-Shipping-carriers.jpg)
+The field information is also availalbe on the **LATAM** tab, on the Action Pane, of the **Contact** page. 
 
 ## Prerequisites
-To enable the **LATAM tax and legal** section first enable the LATAM Globalization feature and a country specific feature.
-Then set the company address in a LATAM country where the globalization feature is enabled.	
+To enable the **LATAM tax and legal** functionality, first enable the **LATAM Globalization** feature and one other country-specific feature.
+Next, set the company address in a LATAM country where the globalization feature is enabled.	
 
 ## Set up the LATAM tax and legal information
-1. Go to one of the configuration forms that has the LATAM section enabled:
-* **Organization administration > Organizations > Legal entities**
-* **Accounts receivable > Customers > All customers**
-* **Accounts payable > Vendors > All vendors**
-* **Warehouse management > Setup > Shipping > Shipping carriers**
-* **Cash and bank management > Setup > Bank groups**
-* **Human resources > Workers > Employees**
-* **Sales and marketing > Relationships >Contacts >All contacts**
-2. In the LATAM section complete the following fields:
+1. Go to one of the configuration pages where the LATAM functionality is enabled:
+
+  - **Organization administration** > **Organizations** > **Legal entities**
+  - **Accounts receivable** > **Customers** > **All customers**
+  - **Accounts payable** > **Vendors** > **All vendors**
+  - **Warehouse management** > **Setup** > Shipping > **Shipping carriers**
+  - **Cash and bank management** > **Setup** > **Bank groups**
+  - **Human resources** > **Workers** > **Employees**
+  - **Sales and marketing** > **Relationships** > **Contacts** > **All contacts**
+
+2. In the LATAM section, complete the following fields:
 
 | Field                         | Description                                                                                                                                                                                     |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,3 +55,5 @@ Then set the company address in a LATAM country where the globalization feature 
 | Activities start date         | Complete with the company commercial activity starting date, usually stipulated in the company statute. This field will be only available in the legal entity form.                             |
 | Concepts and notes            | Complete the fields with the rest of information required, the labels can be customized in LATAM parameters.                                                                                    |
 
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
