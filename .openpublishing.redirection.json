@@ -19946,6 +19946,11 @@
       "source_path": "articles/supply-chain/transparency-note.md",
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-inventory-purge.md",
+      "redirect_url": "/dynamics365/supply-chain/inventory/archive-inventory-transactions",
+      "redirect_document_id": "false"
     }
   ]
 }
