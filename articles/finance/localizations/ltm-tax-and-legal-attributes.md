@@ -17,11 +17,28 @@ This section will be available in:
 ![Legal entity](./media/ltm-Legal-entities.jpg)
 
 * Customer
+
+![Customer](./media/ltm-Customers.jpg)
+  
 * Vendor
+
+![Vendor](./media/ltm-Vendors.jpg)
+  
 * Bank group
+
+![Bank group](./media/ltm-Bank-groups.jpg)
+  
 * Employee
+
+![Employee](./media/ltm-Employees.jpg)
+
 * Contact
+
+![Contact](./media/ltm-Contacts.jpg)
+  
 * Shipping carriers
+
+![Shipping carriers](./media/ltm-Shipping-carriers.jpg)
 
 ## Prerequisites
 To enable the **LATAM tax and legal** section first enable the LATAM Globalization feature and a country specific feature.
