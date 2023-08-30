@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: General journal posting performance 
-description: The article suggests ways to troubleshoot performance issues when you post general journals. For example, you can adjust the number sequence setup and limit journal lines.
+title: Financial journal posting performance 
+description: The article suggests ways to troubleshoot performance issues when you post financial journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
-ms.date: 07/24/2023
+ms.date: 08/24/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -25,11 +25,11 @@ ms.dyn365.ops.version: 10.0.28
 
 ---
 
-# General journal posting performance
+# Financial journal posting performance
 
 [!include [banner](../includes/banner.md)]
 
-The article suggests ways to troubleshoot performance issues when you post general journals. These issues might be caused by the following factors:
+The article suggests ways to troubleshoot performance issues when you post financial journals. These issues might be caused by the following factors:
 
 - The number sequence setup
 - The number of lines per journal
@@ -38,11 +38,11 @@ The article suggests ways to troubleshoot performance issues when you post gener
 
 ## Symptom
 
-General journal posting seems slower than you expect.
+Financial journal posting seems slower than you expect.
 
 ## Resolution
 
-Microsoft Dynamics 365 Finance supports journals that have a large number of lines. However, the configuration of the **Finance** module and journal posting can create situations where general journal posting seem slower than customers expect.
+Microsoft Dynamics 365 Finance supports journals that have a large number of lines. However, the configuration of the **Finance** module and journal posting can create situations where financial journal posting seems slower than customers expect.
 
 ### Number sequences and journal performance
 
@@ -50,7 +50,7 @@ The number sequence, and the retrieval of numbers in it, can affect the performa
 
 In some countries/regions or industries, a continuous number sequence for ledger vouchers is a regulatory requirement. However, in many jurisdictions, continuous voucher numbers aren't a regulatory requirement.
 
-When general journal posting becomes a performance bottleneck, we recommend that you use a noncontinuous number sequence and enable preallocation for the voucher number sequence.
+When financial journal posting becomes a performance bottleneck, we recommend that you use a noncontinuous number sequence and enable preallocation for the voucher number sequence.
 
 On the **Number sequences** page, you can enable preallocation when a noncontinuous number sequence is used. You can specify how many numbers should be requested from the database and stored in memory. After all the preallocated numbers are used, new numbers are requested from the database.
 
@@ -91,6 +91,8 @@ For example, a journal has 150,000 lines that must be posted. If you don't confi
 
 If you manually split the journal into 15 journals, each of which has 10,000 lines, the journals can be manually run in parallel by using a batch. It can be tedious work to manually split journals. However, in many cases, Dynamics 365 Finance can automatically split the journal.
 
+For more information, see 
+
 #### Lines limit
 
 The **Lines limit** value on a journal enables parallel processing when journals are posted in a batch. The **Lines limit** field defines the minimum number of lines to move to a new journal. Those lines are then processed in parallel.
@@ -98,9 +100,7 @@ The **Lines limit** value on a journal enables parallel processing when journals
 Splitting a journal works best for vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal that it was split from. The **Lines limit** field can be set for a journal name. The value is then used by default for all journals that are created that have that journal name.
 
 > [!NOTE]
-> We recommend that you start the **Lines limit** value at 1,000 and then test specific workloads until you find the optimal number.
->
-> When the **Lines Limit** feature is used, any document attachment or workflow on the original journal isn't copied to the additional journals that are created during posting. Users must pay attention to the **Original Journal No.** value for document and workflow references.
+> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with threshold value of 1000 lines per journal. Journals with lines more than 1000 will post as part of the batch job and will be split into 1000 lines per journal. For more information about journal auto-split feature, see <<link of the new documentation about Auto-split of large financial journals >>.   
 
 #### Voucher size
 
