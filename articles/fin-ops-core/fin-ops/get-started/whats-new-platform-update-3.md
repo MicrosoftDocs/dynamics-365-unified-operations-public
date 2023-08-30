@@ -54,7 +54,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 <li>Corresponding form adaptor models</li>
 </ul>
 Locking the platform paves the way for seamless servicing and continuous update of the Dynamics 365 for Operations platform. If you overlay any of the platform models, you will not be able to upgrade to this release. You will need to refactor your code to use metadata and code extensions. For a tutorial about how to use extensions for customization, see <a href="../../dev-itpro/extensibility/customize-model-elements-extensions.md">Customize model elements using extensions</a>. You can also refer to <a href="../../dev-itpro/extensibility/customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>, which is a general article on customizations.
-[!NOTE] Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.
+<strong>NOTE: </strong>Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.
 </td>
 </tr>
 <tr>
