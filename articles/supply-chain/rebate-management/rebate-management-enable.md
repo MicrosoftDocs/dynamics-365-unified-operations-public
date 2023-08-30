@@ -1,6 +1,6 @@
 ---
-title: Turn on the Rebate management module for your system
-description: This article describes how to turn on the Rebate management module for your system.
+title: Turn the Rebate management module on or off
+description: This article describes how to turn the Rebate management module on or off.
 author: sherry-zheng
 ms.date: 08/02/2021
 ms.topic: article
@@ -13,11 +13,8 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Turn on the Rebate management module for your system
+# Turn the Rebate management module on or off
 
 [!include [banner](../includes/banner.md)]
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on as needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Shared AP and AR*
-- **Feature name:** *Rebate management*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Rebate management* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.

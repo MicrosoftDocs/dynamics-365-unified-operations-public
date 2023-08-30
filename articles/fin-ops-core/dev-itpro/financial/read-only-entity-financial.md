@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 273653
 ms.assetid: 119610df-3975-43ce-830b-84fe58266321
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 
 In this article, we describe how to build an entity for registered transactions that are registered. 
