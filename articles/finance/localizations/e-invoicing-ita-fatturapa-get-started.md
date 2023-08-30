@@ -22,7 +22,7 @@ ms.dyn365.ops.version: AX 10.0.20
 This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 > [!NOTE]
-> The solution for direct integration with SDI supports digital signing of documents using separately stored certificate files only. Qualified digital signature which requires additional hardware involvement or online connection to certification service providers is not supported.
+> The solution for direct integration with SDI supports only digital signing of documents using separately stored certificate files which can be uploaded to the **Key Vault**. Qualified digital signature which requires additional hardware involvement or online connection to certification service providers is not supported.
 
 ## Prerequisites
 
@@ -91,45 +91,6 @@ The following procedures must be completed for all Electronic reporting (ER) for
 5. Align the formula to the payment methods that are configured in the Finance app.
 6. Save your changes, close the formula designer, and then select **OK**.
 
-#### Add a user input parameter for the ProgressivoInvio value
-
-1. On the **Electronic invoicing features** page, on the **Mapping** tab, select **Add root**.
-2. Select **General\\User input parameter**. 
-3. Enter a name for the new parameter (for example, **ProgressivoInvioUIP**), and then select **OK**.
-
-#### Change formula for the file name
-
-1. On the **Electronic invoicing features** page, on the **Mapping** tab, select **Edit filename**.
-
-    > [!NOTE]
-    > Make sure that the root element of the format is selected in the left part of the page.
-
-2. In the formula designer, paste the following formula for the file name. This formula contains a link to the parameter that you previously added. If the name of the parameter is different, align the formula accordingly.
-
-    ```vb
-    IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.CountryISOCode,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.CountryRegionId)&
-    IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.FiscalCode,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.TaxExemptNumber)
-    & "_"
-    & RIGHT(FORMAT("0000%1", ProgressivoInvioUIP), 5)
-    & ".xml"
-    ```
-
-3. Save your changes, and close the formula designer.
-
-#### Bind ProgressivoInvio value
-
-1. In the format designer, go to the next node of the format in the left part of the page: 
-
-    XMLHeader\\p:FatturaElettronica\\FatturaElettronicaHeader\\DatiTrasmissione\\ProgressivoInvio\\String
-
-2. On the **Mapping** tab, select the **ProgressivoInvioUIP** parameter that you previously added.
-3. Select **Bind**.
-4. Save your changes, and close the page.
-
 ### Set up application-specific parameters
 
 1. On the **Electronic invoicing features** page, select the feature to edit.
@@ -184,52 +145,6 @@ The following procedures must be completed for all Electronic reporting (ER) for
 2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 3. Select **Repositories** \> **Global** \> **Open**.
 4. Select and import the **Customer invoice context model** (version 54 or later), **Invoice model mapping**, and **Vendor invoice import (IT)** configurations.
-
-    > [!NOTE]
-    > Version 52 of the **Customer invoice context model** configuration requires Dynamics 365 Finance version 10.0.32. If you have an earlier version of the app, see the next section.
-
-#### Align the customer invoice context model
-
-This procedure must be completed only for Finance versions that are earlier than 10.0.32.
-
-1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
-2. Select **Repositories** \> **Global** \> **Open**.
-3. Select and import **Customer invoice context model** (version 50).
-4. In the **Electronic reporting** workspace, in the **Configuration providers** section, mark your company's configuration provider as active, and then select **Reporting configurations**.
-5. Select **Customer invoice context model**, and then select **Create configuration**.
-6. Select **Derive from Name: Customer invoice context, Microsoft** to create a derived configuration.
-7. In the **Draft** version, select **Designer**.
-8. In the **Data model** tree, select **Map model to datasource**.
-9. In the **Definitions** tree, select **CustomerInvoice**, and then select **Designer**.
-10. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
-11. Specify the following formula.
-
-    ```vb
-    IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
-    & IF('$Context_ISOCode'.Value = "IT",
-       IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 6, " PA", ""),
-       "")
-    ```
-
-12. Save your changes, close the designer page, and then select **OK**.
-13. Save your changes, and close the **Model mapping designer** page.
-14. In the **Definitions** tree, select **ProjectInvoice**, and then select **Designer**.
-15. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
-16. Specify the following formula.
-
-    ```vb
-    IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
-    & IF('$Context_ISOCode'.Value = "IT",
-      IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 6, " PA", ""),
-      "")
-    ```
-
-17. Save your changes, close the designer page, and then select **OK**.
-18. Save your changes, and close the **Model mapping designer** page.
-19. On the **Reporting configurations** page, select the **Draft** version of the configuration, and then select **Change status** \> **Complete**.
-18. Use this derived configuration instead of **Customer invoice context model** in the next sections.
-
-After you upgrade your Finance environment to version 10.0.32, we recommend that you import and use **Customer invoice context model** version 54 or later.
 
 #### Configure Electronic document parameters
 
