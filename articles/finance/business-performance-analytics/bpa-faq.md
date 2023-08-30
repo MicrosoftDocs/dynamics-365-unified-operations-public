@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 07/25/2023
+ms.date: 08/30/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -70,12 +70,12 @@ There are two options available to uninstall business performance analytics.
 
 Option one:
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by using Microsoft Dataverse admin credentials. 
-2. Select the specific environment where you want to trigger the uninstallation.
-3. Click on the Environment URL provided in the details. This will redirect you to the Dataverse environment login page.
-4. Open the developer console by either pressing **Ctrl+Shift+I** or by going to **More tools**, selecting **Developer tools**, and then clicking on the **Console** tab.
-5. Paste the following JavaScript code into the console to initiate the uninstallation process.
-6. Please be patient, as the uninstallation process typically takes around 15-20 minutes to complete successfully. You will see a message in the console stating "BPA Solutions removed successfully" when it's done.
+1. Sign into [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Microsoft Dataverse admin credentials. 
+2. Select the environment where you want to uninstall.
+3. Click on the Environment URL provided in the details. This redirects you to the Dataverse environment login page.
+4. Open the developer console by either pressing **Ctrl+Shift+I** or go to **More tools**, select **Developer tools** and **Console** tab.
+5. Paste the following JavaScript code into the console to start the uninstallation process.
+6. The approximate time that's required to delete all the solutions is 20 minutes. Y If the operation is successful, you receive the following message: "BPA Solutions removed successfully".
    
 Uninstall BPA
 ```
