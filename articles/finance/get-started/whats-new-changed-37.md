@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-|Accounts payable|Default option for field "Approved by" in Invoice register|This feature allows admin to control the mandatory status of the "Approved by" field within the Invoice register. The field can be set as optional when formal approval is not required within the Invoice register's business process.|
+|Accounts payable|Default option for **Approved by** field in the **Invoice register**|This feature allows administrators control the mandatory status of the **Approved by** field on the **Invoice register**. The field can be set as optional when formal approval isn't required within the Invoice register's business process.|
 
 
 ## Feature enhancements included in this release
@@ -55,8 +55,8 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|Cash and bank management|Import bank statement|Bank statement importing for ISO20022 camt053.001.08 version is supported in 10.0.37. User can import the latest Advanced bank reconciliation statement configuration ABR Camt.053 format version 3.13 for this feature enhancement.|
-|Accounts payable|Match the detail for vendor invoices|The functionality has been enhanced in version 10.0.37 to enhance invoice validation on different invoice amount fields. This enhancement provides specific control over the round-off amount.|
+|Cash and bank management|Import bank statement|Bank statement importing for ISO20022 camt053.001.08 version is supported in Dynamics 365 Finance version 10.0.37. Users can import the latest Advanced bank reconciliation statement configuration ABR Camt.053 format version 3.13.|
+|Accounts payable|Match the detail for vendor invoices|In Dynamics 365 Finance version 10.0.37, invoice validation is available on different invoice amount fields. This enhancement provides specific control over the round-off amount.|
 
 ## Features turned on by default in this release
 
