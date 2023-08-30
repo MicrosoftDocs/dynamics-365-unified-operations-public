@@ -73,6 +73,8 @@ The table also lists features that were previously in public preview but have ch
 | Engineering Change Management | [Engineering Change Management](../engineering-change-management/product-engineering-overview.md) | Mandatory |
 | Engineering Change Management | [Manage changes to formulas and their ingredients](../engineering-change-management/product-engineering-overview.md) | Mandatory |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | Mandatory |
+| Inventory management | [(India) For transfer price rules, ignore location when "From warehouse code" is set to "All"](whats-new-scm-10-0-28.md) | Mandatory |
+| Inventory management | Cascade transfer order header date change to lines | On by default |
 | Inventory management | [Enable intercompany on-hand to only show nonzero on-hand quantity](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | Mandatory |
 | Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | Mandatory |
@@ -123,9 +125,10 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Prevent updates to intercompany sales order line requested dates in header to lines update scenario when derived](whats-new-scm-10-0-32.md) | Mandatory |
 | Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md) | Mandatory |
 | Sales and marketing | [Adjusting reverse match for a settlement process](whats-new-scm-10-0-34.md) | On by default |
+| Sales and marketing | [Keep existing sorting on intercompany sales lines when updating them](whats-new-scm-10-0-35.md) | On by default |
 | Sales and marketing | [Settle customer payment deductions using the matching invoice](whats-new-scm-10-0-31.md) | On by default |
+| Sales and marketing | Stop creation of source document header and line records related to sales packing slip posting | On by default |
 | Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) | Generally available |
-| Sales and marketing | Unit of measure for line level charges | Generally available |
 | Shared AP and AR | [Rebate management](../rebate-management/rebate-management-overview.md) | Mandatory |
 | Shared AP and AR | Cancel posted rebate provision with a posting date | On by default |
 | Shared AP and AR | Enable auto negative tier in Rebate management | On by default |
@@ -149,6 +152,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | License plate validation on source document lines | Mandatory |
 | Warehouse management | Line reservation enhancements for the batch number reservation form feature | Mandatory |
 | Warehouse management | [Location directive scopes](../warehousing/create-location-directive.md) | Mandatory |
+| Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | Mandatory |
 | Warehouse management | [Multiple product receipt postings per load](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Over receipt of load quantities](../warehousing/inbound-load-handling.md) | Mandatory |
 | Warehouse management | [Packing work for packing stations](../warehousing/packing-work.md) | Mandatory |
@@ -161,7 +165,6 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) | Mandatory |
 | Warehouse management | [Work policy enhancements for inbound work](../warehousing/warehouse-work-policies.md) | Mandatory |
 | Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
-| Warehouse management | [Multi-level detours for the Warehouse Management mobile app](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | Options for validating ingredient batch expiration dates | On by default |
 | Warehouse management | [Pack containers using the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md) | On by default |
 
