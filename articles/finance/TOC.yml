@@ -1188,8 +1188,10 @@
             href: general-ledger/allow-edits-internal-data-gl-vouchers.md
           - name: View a related intercompany voucher from a journal
             href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-          - name: Publish journal lines and documents from Excel
+          - name: Publish journal lines and documents from Excel      
             href: general-ledger/open-lines-excel-journals-documents.md
+          - name: Automatic split of financial journals
+            href: general-ledger/auto-split-journal.md
           - name: Create ledger accrual transactions
             href: general-ledger/tasks/create-ledger-accrual-transactions.md
           - name: One voucher
