@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Commerce 10.0.37 (November 2023)
+title: Preview of Dynamics 365 Commerce 10.0.37 (November 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.37. 
 author: josaw1
 ms.date: 08/01/2023
