@@ -56,13 +56,13 @@ You must specify payroll details and add them to a position before you can gener
 <tr>
 <td>Work cycle</td>
 <td>For non-exempt positions only, select the work cycle that specifies the work periods for the position. Some earnings, such as the regular-rate-of-pay premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods instead of pay periods. For exempt positions, leave this field blank.
-[!IMPORTANT] For workers who have more than one position, make sure that all positions that are assigned to the worker have the same work cycle.
+<strong>IMPORTANT: </strong>For workers who have more than one position, make sure that all positions that are assigned to the worker have the same work cycle.
 </td>
 </tr>
 <tr>
 <td>Paid by</td>
 <td>Select the legal entity that is responsible for making the payroll payments for this position. The legal entity that is responsible for paying for the position must be assigned to the position before you can assign worker tax codes to workers.
-[!NOTE] You can use the <strong>Worker</strong> page to assign default tax codes for each position.
+<strong>NOTE: </strong>You can use the <strong>Worker</strong> page to assign default tax codes for each position.
 </td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ This set of selections is typically used for hourly workers.</li>
 <ul>
 <li>A default earning code is required.</li>
 <li>The worker is paid the standard position salary amount for each pay period, and a single line is included on the earnings statement. This line has the date of the last day in the pay period.
-[!NOTE] If earnings statement lines were entered manually before the earnings were generated, the salary might be split across multiple lines. The total of the manually entered lines and the single generated line is always the standard salary amount.
+<strong>NOTE: </strong>If earnings statement lines were entered manually before the earnings were generated, the salary might be split across multiple lines. The total of the manually entered lines and the single generated line is always the standard salary amount.
 </li>
 </ul>
 This set of selections is typically used for salaried workers.</li>
@@ -199,7 +199,7 @@ The following table show the information that you must enter on the **Payroll** 
 <li>If you select <strong>Benefit</strong>, the deduction amount and basis for the worker are updated automatically when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page.</li>
 <li>If you select <strong>Custom</strong>, the deduction amount and basis for the worker aren't changed when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page. Select this option when the contribution for a worker is specific to that worker. For example, after a rate change, contribution amounts might be grandfathered in for some workers.</li>
 </ul>
-[!NOTE] For contributions, the default value of the <strong>Rate source</strong> field is <strong>Benefit</strong>.
+<strong>NOTE: </strong>For contributions, the default value of the <strong>Rate source</strong> field is <strong>Benefit</strong>.
 </td>
 </tr>
 <tr>
@@ -215,15 +215,15 @@ The following tables show the information that you must enter on the **Payroll l
 
 | Field        | Description |
 |--------------|-------------|
-| Limit amount | The maximum amount that can be deducted from a worker's pay for the selected benefit. If there is no maximum amount, leave this field blank.[!IMPORTANT] The **Remaining** field shows the amount that can be deducted for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
-| Limit period | The period that the deduction limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative deductions for the benefit reach 1,200.00, no additional deductions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period.[!NOTE] The limit period is based on the calendar. |
+| Limit amount | The maximum amount that can be deducted from a worker's pay for the selected benefit. If there is no maximum amount, leave this field blank.<strong>IMPORTANT: </strong>The **Remaining** field shows the amount that can be deducted for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
+| Limit period | The period that the deduction limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative deductions for the benefit reach 1,200.00, no additional deductions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period.<strong>NOTE: </strong>The limit period is based on the calendar. |
 
 **Contributions**
 
 | Field        | Description |
 |--------------|-------------|
-| Limit amount | The maximum amount that the employer can contribute for the selected benefit. If there is no maximum amount, leave this field blank.[!IMPORTANT] The **Remaining** field shows the amount that can be contributed for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
-| Limit period | The period that the contribution limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative contributions for the benefit reach 1,200.00, no additional contributions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period.[!NOTE] The limit period is based on the calendar. |
+| Limit amount | The maximum amount that the employer can contribute for the selected benefit. If there is no maximum amount, leave this field blank.<strong>IMPORTANT: </strong>The **Remaining** field shows the amount that can be contributed for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
+| Limit period | The period that the contribution limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative contributions for the benefit reach 1,200.00, no additional contributions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period.<strong>NOTE: </strong>The limit period is based on the calendar. |
 
 ## Additional resources
 
