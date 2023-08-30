@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SystemDate   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 This article explains how to change the date for a session. By default, the current date is used when entering and posting journal entries or source documents. You can change the date that is used for your current session. Use this feature to back-date journal entries or source documents, as necessary.
 

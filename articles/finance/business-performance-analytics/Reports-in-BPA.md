@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.prod: 
 ms.technology:
 ms.custom:
-
+audience: Application User
 ---
 
 # Reports in business performance analytics

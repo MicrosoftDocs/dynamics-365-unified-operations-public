@@ -89,7 +89,7 @@ The following table lists the features that are turned on by default in 10.0.21.
 | Improvements to the Approve and Transfer jobs dialogs | 9/1/2021 | 10/11/2019 | On by default | Production control |
 | License plate for reporting as finished added to the Job Card Device | 9/1/2021 | 8/31/2019 | On by default | Production control |
 | A new button to Stop break has been added to the Job Card Terminal page | 9/1/2021 | 2/19/2020 | On by default | Production control |
-| Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
+| Enable partial receipt of subcontracted items and fix an issue with the  calculation of scrap for BOM lines of type Vendor. | 9/1/2021 | 11/11/2019 | On by default | Production control |
 | Saved views for production control | 9/1/2021 | 8/17/2020 | On by default | Production control |
 | Dynamics 365 Guides for Manufacturing | 9/1/2021 | 7/13/2020 | On by default | Production control |
 | Production floor execution | 9/1/2021 | 9/30/2020 | On by default | Production control |
@@ -126,7 +126,7 @@ We have recently added or significantly updated the following help articles. The
 | Master planning | [View plan history and planning logs](../master-planning/planning-optimization/plan-history-logs.md) |
 | Warehouse management | [Container packing strategies](../warehousing/container-packing-strategy-overview.md) |
 | Warehouse management | [Cycle counting example scenarios](../warehousing/cycle-counting-scenarios.md) |
-| Warehouse management | [Import inbound ASNs through the V3 data entity](../warehousing/import-asn-data-entity.md) |
+| Warehouse management | [Import inbound ASNs through data entities](../warehousing/import-asn-data-entity.md) |
 | Warehouse management | [Over-picking for sales orders and transfer orders](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Warehouse management | [Schedule wave label printing during wave](../warehousing/configure-task-based-wave-label-printing.md) |
 | Warehouse management | [What's new or changed in the Warehouse Management mobile app](../warehousing/whats-new-wma.md) |
