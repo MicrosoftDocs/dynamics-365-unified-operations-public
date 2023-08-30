@@ -1,4 +1,4 @@
-![image](https://github.com/Saisang/Dynamics-365-Operations/assets/15976645/b4356a6e-4b1b-4f8c-a0e2-98caa26be04e)---
+---
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 description: This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
