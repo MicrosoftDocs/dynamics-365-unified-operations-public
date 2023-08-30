@@ -2,7 +2,7 @@
 title: Tax and legal attributes for Latin America
 description: This article provides information about the document class type configuration for Latin America. 
 author: Fhernandez0088
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe 
@@ -30,7 +30,7 @@ To enable the **LATAM tax and legal** functionality, first enable the **LATAM Gl
 Next, set the company address in a LATAM country where the globalization feature is enabled.	
 
 ## Set up the LATAM tax and legal information
-1. Go to one of the configuration pages where the LATAM functionality is enabled:
+1. Open one of the following pages that have the LATAM functionality enabled:
 
   - **Organization administration** > **Organizations** > **Legal entities**
   - **Accounts receivable** > **Customers** > **All customers**
@@ -44,16 +44,17 @@ Next, set the company address in a LATAM country where the globalization feature
 
 | Field                         | Description                                                                                                                                                                                     |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customer/Vendor set           | Select a customer/vendor set created that contains the document classes that will be used by the customer/vendor. This field will be only available in customer and vendor configuration forms. |
-| Taxpayer type                 | Select taxpayer type created that match the company classification.                                                                                                                             |
-| Based in Country              | Select the country where the company is located.                                                                                                                                                |
-| Country document type         | This drop-down field will only allow you to select country tax ID types added to the country LATAM configuration selected in the previous field.                                                |
-| Country identification number | Complete this field with the company Tax ID number.                                                                                                                                             |
-| Jurisdiction registered       | This drop-down field will only allow you to select a state or province.                                                                                                                         |
-| State document type           | This drop-down field allows you to select the document types for the company added in the taxpayer configuration in a State/Province level.                                                    |
-| State identification number    | Complete this field with the company Tax ID number for the State/Province.                                                                                                                      |
-| Activities start date         | Complete with the company commercial activity starting date, usually stipulated in the company statute. This field will be only available in the legal entity form.                             |
-| Concepts and notes            | Complete the fields with the rest of information required, the labels can be customized in LATAM parameters.                                                                                    |
+| Customer/Vendor set           | Select a customer/vendor set that contains the document classes that will be used by the customer/vendor. This field is only available on customer and vendor pages. |
+| Taxpayer type                 | Select the taxpayer type that matches the company classification.     |
+| Based in Country              | Select the country where the company is located.         |
+| Country document type         | Select the country tax ID types added to the country LATAM configuration that you selected in the **Based in Country** field.     |
+| Country identification number | Enter the company Tax ID number.    |
+| Jurisdiction registered       | Select a state or province.              |
+| State document type           | Select the document types for the company added in the taxpayer configuration in a State/Province level.                |
+| State identification number   | Enter the company Tax ID number for the State/Province.     |
+| Activities start date         | Enter the company commercial activity start date. This date is usually stipulated in the company statute. This field is only available on the **Legal entities** page.     |
+
+3. Enter any remaining necessary field information. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
