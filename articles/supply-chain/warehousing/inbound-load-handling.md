@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Warehouse handling of inbound loads for purchase and inbound shipment orders
 description: This article describes the warehouse handling process for inbound loads for purchase and inbound shipment orders.
-author: Mirzaab
-ms.date: 03/21/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder
-audience: Application User
-# ms.devlang: 
+author: perlynne
+ms.author: perlynne
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder
+ms.topic: how-to
+ms.date: 08/30/2023
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mirzaab
-ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: 10.0.10
+ms.custom: bap-template
 ---
 
 # Warehouse handling of inbound loads for purchase and inbound shipment orders
@@ -36,7 +24,7 @@ Each inbound load can be associated with one or more order line quantities, and 
 
 The following high-level illustration shows an example flow for handling inbound loads for a purchase order. Note that if the purchase order originates in an enterprise resource planning (ERP) system other than Microsoft Dynamics 365 Supply Chain Management, it's represented by an _inbound shipment order_ in the **Warehouse management** module.
 
-![The inbound load handling process.](media/inbound-process.svg "The inbound load handling process")
+:::image type="content" source="media/inbound-process.svg" alt-text="The inbound load handling process." lightbox="media/inbound-process.svg":::
 
 1. **The vendor confirms the purchase order.**
 
@@ -44,7 +32,7 @@ The following high-level illustration shows an example flow for handling inbound
 
 1. **An inbound load record is created to plan the arrival and its contents.**
 
-    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and put-away work. Loads can be created either automatically or manually. Depending on setup, the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
+    The inbound load record represents a vendor shipment of one or more orders. The load is expected to arrive at the warehouse as one physical transportation unit (such as a truckload). The inbound load record is used for planning purposes and lets the logistics coordinator track the load's progress from the vendor. It's also used to register order line quantities and manage progress through warehouse operations, such as arrival and putaway work. Loads can be created either automatically or manually. Depending on setup, the automatic creation can be done directly based on the order data or advanced shipment notice (ASN) from the vendor. For more information, see [Create or modify an inbound load](create-or-modify-an-inbound-load.md).
 
 1. **The vendor confirms load dispatch.**
 
@@ -54,9 +42,9 @@ The following high-level illustration shows an example flow for handling inbound
 
     When a truckload arrives at the warehouse receiving dock, warehouse workers register the load quantities. When the **Warehouse management** module is used, workers do the registration by using mobile devices. For more information, see [Product receipt against purchase orders - registration](../procurement/product-receipt-against-purchase-orders.md#registration) and the [Register item quantities that arrive on an inbound load](#register-item-quantities-arriving) section.
 
-1. **The load gets updated as receive completed.**
+1. **The load is updated as receive completed.**
 
-    With the warehouse management parameter setting _Load receiving completed confirmation policy for purchase orders_ enabled, the load gets [**Receiving completed**](#receive-complete-confirm) updated.
+    If the warehouse management parameter setting **Load receiving completed confirmation policy for purchase orders** is enabled, the load is updated to [_Receiving completed_](#receive-complete-confirm).
 
 1. **Registered load quantities are posted against purchase orders.**
 
@@ -111,22 +99,24 @@ The following table explains the options that are available for the **Load over 
 
 ### Put away the registered quantities
 
-When registration is completed on the mobile device, the _Quantity receipt registration_ action updates the inventory and warehouse records to indicate that the quantities are now in the receiving dock location and available for reservation. However, a company's warehouse operations typically require that the quantities be moved from the receiving dock to the regular warehouse storage, so that the subsequent picking processes can occur. Instructions for the put-away are captured in the put-away work that is automatically generated when the inbound load is registered as received.
+When registration is completed on the mobile device, the _Quantity receipt registration_ action updates the inventory and warehouse records to indicate that the quantities are now in the receiving dock location and available for reservation. However, a company's warehouse operations typically require that the quantities be moved from the receiving dock to the regular warehouse storage, so that the subsequent picking processes can occur. Instructions for the putaway are captured in the putaway work that is automatically generated when the inbound load is registered as received.
 
-When the warehouse worker has completed the put-away work, the system records and tracks the result by updating updates several entities, as summarized in the following table.
+When the warehouse worker has completed the putaway work, the system records and tracks the result by updating updates several entities, as summarized in the following table.
 
 | Entity | Updates | Note |
 |--------|---------|------|
-| Load | <p>The following fields are updated:</p><ul><li>The <b>Load status</b> value is changed to <i>In process</i>.</li><li>The <b>Work status</b> value is changed to <i>100.00% of work completed</i>.</li></ul> | The **Load status** value is changed to _In process_ when the worker starts the put-away task for at least one line of put-away work. |
+| Load | <p>The following fields are updated:</p><ul><li>The <b>Load status</b> value is changed to <i>In process</i>.</li><li>The <b>Work status</b> value is changed to <i>100.00% of work completed</i>.</li></ul> | The **Load status** value is changed to _In process_ when the worker starts the putaway task for at least one line of putaway work. |
 | Inventory transactions of work that associated quantities have been put away for | The **Receipt** and **Location** fields, and other relevant fields, are updated to reflect the movement from the receiving location to the storage location. | The **Receipt state** value of the purchase order inventory transaction remains _Registered_. |
-| Warehouse put-away | The **Work status** value is changed to _Closed_. |    |
+| Warehouse putaway | The **Work status** value is changed to _Closed_. |    |
 
 ## <a name="receive-complete-confirm"></a>Receive complete load
 
-To indicate that nothing more will get registered against a specific load the **Receiving completed** process gets run via the web client _Load_ or _Inbound load planning workbench_ pages or via the warehouse management mobile device menu item _Receiving completed confirmation_.
-Besides updating the _Load receiving completed date and time_ field on the selected load it is possible, depending on Warehouse management parameter _Capture receiving completed packing slip_, to record a _packing slip Id and a document date during this process.
+To indicate that nothing more will be registered against a specific load, you can run the _Receiving completed_ process. Users can do this from the web client using the **Load** or **Inbound load planning workbench** page. Workers using the  Warehouse Management mobile app can do it using a menu item set up with an **Activity code** of _Receiving completed confirmation_.
+
+In addition to updating the **Load receiving completed date and time** field on a selected load, it may also be possible (or required) to record a packing slip ID and document date during this process (depending how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
+
 > [!NOTE]
-> You can use the _Load receiving completed date and time_ field as filter criteria for the following **Update product receipts** cost update process and in case the _Capture receiving completed packing slip_ policy is used the purchase order product receipt process can use the recorded Packing slip Id as part of this process.
+> You can use the **Load receiving completed date and time** field value as filter criteria for the subsequent _Update product receipts_ cost update process. Also, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process may be able to use the recorded packing slip ID as part of the _Update product receipts_ process.
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 
