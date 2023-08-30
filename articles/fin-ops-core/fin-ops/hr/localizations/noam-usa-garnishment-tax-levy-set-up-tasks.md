@@ -179,7 +179,7 @@ On the **Payroll details** FastTab, enter the following information.
 <li>Gross up</li>
 </ul>
 <p>Deductions for the garnishment or tax levy are included in payroll runs of the selected type.</p>
-[!IMPORTANT] Many states have laws that specify how garnishments for child support are handled when a worker receives a lump-sum payment, such as a bonus, severance pay, or a vacation payout. The laws vary, but they typically include a provision that the state must be notified before a lump-sum payment is made. The state then gives the employer specific instructions about whether to calculate the garnishment and how to calculate it. In some cases, the whole lump-sum payment is subject to garnishment.
+<strong>IMPORTANT: </strong>Many states have laws that specify how garnishments for child support are handled when a worker receives a lump-sum payment, such as a bonus, severance pay, or a vacation payout. The laws vary, but they typically include a provision that the state must be notified before a lump-sum payment is made. The state then gives the employer specific instructions about whether to calculate the garnishment and how to calculate it. In some cases, the whole lump-sum payment is subject to garnishment.
 </td>
 </tr>
 <tr>
