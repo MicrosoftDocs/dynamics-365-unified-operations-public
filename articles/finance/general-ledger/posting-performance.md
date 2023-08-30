@@ -100,7 +100,7 @@ The **Lines limit** value on a journal enables parallel processing when journals
 Splitting a journal works best for vouchers that have a smaller number of lines. A voucher can't be split across journals. The **Original journal No.** field on a journal indicates the journal that it was split from. The **Lines limit** field can be set for a journal name. The value is then used by default for all journals that are created that have that journal name.
 
 > [!NOTE]
-> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with threshold value of 1000 lines per journal. Journals with lines more than 1000 will post as part of the batch job and will be split into 1000 lines per journal. For more information about journal auto-split feature, see <<link of the new documentation about Auto-split of large financial journals >>.   
+> In Dynamics 365 Finance version 10.0.36, financial journals supports auto-split of large journals with threshold value of 1000 lines per journal. Journals with lines more than 1000 will post as part of the batch job and will be split into 1000 lines per journal. For more information, see [Autosplit of large financial journals](auto-split-journal).   
 
 #### Voucher size
 
