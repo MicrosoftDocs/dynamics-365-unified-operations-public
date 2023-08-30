@@ -44,57 +44,68 @@ The material availability check is performed in a separate page for a selected r
 
 ## Check material availability for work orders
 
-1. Go to **Asset management** > **Setup** > **Work orders** > **Maintenance downtime reason codes**.
+This procedure shows how a supervisor can work with the material availability check
 
-2. Select **New**.
+1. Go to **Asset management** > **Work orders** > **All work orders** 
 
-3. In the **Maintenance downtime reason code** field, enter an ID for the maintenance downtime reason code.
+1. Use the filter field to select the range of work orders you with to check for material availability
 
-4. In the **Name** field, enter a name.
+1. Select **Material availability check** in the action pane to open the material availability page.
 
-5. Select the **KPI include** check box if the reason code should be included in calculations of key performance indicators (KPIs) for the asset. In general, planned production stops should not be included in KPI calculations, because they don't affect expected performance.
+[!NOTE] The **Material availability check** page is divided in two sections. The upper section shows the work orders. The lower section shows journal lines relating each work order. 
 
-6. Select **Save**.
+1. Select the first work order in the upper grid. Validate if the order has a checkmark in the column **journal lines**. If the work order doesn't have any journal lines, you can choose one of the following methods to do create them:
+ 
+    - **Create the journal lines from a forecast**
+        1. Select a work order in the upper section, and select **Forecast** from the toolbar to open the **Work order maintenance forecast** page. Open the **Items** FastTab and check if there are any item forecast lines for the order. If there are no lines, you can add them by selecting **Add**, **Add spare parts** or **Add BOM items** from the toolbar.
+        > [!TIP] 
+        > You can setup the system to automatically generate item forecast lines on the work order by setting up default forecasts in the **Maintenance job type defaults** page.
+        1. Close the **Work order maintenance forecast** page to return to the **Work order material availability check** page.
+        1. Select **Copy journals from forecast** from the toolbar to open the **Copy from forecast** dialog and set the **Item** field to **Yes**
+        1. Select **OK** in the dialog.
+        1. Verify that the work order now has a journal line, by checking there is a checkmark in the column **Journal lines created**
+    - **Create the journal from the **Work order journals** page
+        1. Select a work order in the upper section, and select **Journals** to open the **Work order journals** page. 
+        1. In the **Items** FastTab add a line in the grid.
 
-The illustration below shows an example of the **Maintenance downtime reason codes** page.
+1. After you have verified that the work order has journal lines, run the material availability check by selecting **Material availability check** from the toolbar.
 
-![Figure 1.](media/15-work-orders.png)
+> [!NOTE]
+> You can mulit-select work orders for the material availability check.
 
-After you've created the maintenance downtime reason codes that you want to use, you can create maintenance downtime registrations for work orders and assets.
+
+1.  The **Material availability check** dialog opens. Make the following settings:
+
+    - **Run mode** - Select the type of check you want to conduct. Choose between the two values:
+        - *Master planning + Availability check* - The check will first run master planning for the products relating to the work orders, and then based on the master planning result, run a material availability check for the orders. The result of the check is used to indicate for the supervisor if material are fully available or not or only partly available for the orders. 
+        - *Availability check only* - The check is run based on the data from the latest version of the master planning.
+    - **Plan** - Select which named master plan should be used when running master planning. Normally the master plan representing the dynamics master plan will be used.
+
+    > [!TIP] 
+    > For this procedure, choose the value *Master planning + Availability check*
+
+1. Select **OK** to run the check
+
+1. in the upper section of the **Work order material availability** page, verify the material availability status of the work order by the icon shown in the **Ready to be released** field. The icons used have the following description:
+
+    :::image type="content" source="media/MatAvail - unknown.png" alt-text=""::: test test
+    - The check cannot be conducted for this work order, because there is not material demand. Make sure there is a journal line for the order.
+
+    :::image type="icon" source="media/MatAvail - checkmark.png" border="false":::
+    - The check has been conduced and all materials for the work order are fully available
+    
+    :::image type="icon" source="media/MatAvail - Warning.png" border="false":::
+    - Some of the materials or all of the materials for the work order are not available. 
+
+1. In the lower section of the **Work order material availability** page, verify the material availability status of the each material for the work order by the icon shown in the **Material availability** field. The icons used have the following description:
+
+    :::image type="icon" source="media/MatAvail - checkmark.png" border="false":::
+    - The check has been conduced and the material is fully available. In this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, equals the quantity in the **On-hand settled** field.  
+    
+    :::image type="icon" source="media/MatAvail - Warning.png" border="false":::
+    - The check has been conduced and the material is fully available. In this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, is not fully settled against on-hand inventory, which is the quantity shown in the **On-hand settled** field, but fully or partially settled against on-hand quantity, planned order quantity, or ordered quantity. 
 
 
-## Create maintenance downtime registrations
-
-1. Click **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
-
-2. Select the work order, and then, on the **Work order** tab, in the **Asset** group, select **Maintenance downtime**.
-
-3. Select **New**.
-
-4. In the **From** and **To** fields, define the date and time interval for the maintenance downtime registration.
-
->[!NOTE]
->When you leave the **To** field, the duration in hours is automatically inserted in the **Duration** field.
-
-5. In the **maintenance downtime reason code** field, select a reason code.
-
-6. Repeat steps 3 through 5 to add more registrations.
-
-7. Select **Save**.
-
-The illustration below shows an example of maintenance downtime registration.
-
-![Figure 2.](media/16-work-orders.png)
-
-The calendar that is used to calculate a maintenance downtime registration depends on your selection in the setup of assets and parameters. If a resource is selected on an asset in the **Resource** field on the **Fixed asset** FastTab of the **All assets** page, the calendar that is set up for the associated resource group is used, as shown in the following illustration.
-
-![Figure 3.](media/17-work-orders.png)
-
-If no resource is selected on the asset, the standard calendar that is selected on the **Asset management parameters** page is used, as shown in the following illustration.
-
-![Figure 4.](media/18-work-orders.png)
-
-To see an overview of all maintenance downtime registrations, click **Asset management** > **Inquiries** > **Maintenance downtime**.
 
 >[!NOTE]
 >All calendars that are used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.
