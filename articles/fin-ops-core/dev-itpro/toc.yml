@@ -2180,6 +2180,12 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: user-interface/task-recorder-training-docs.md
+    - name: Responsible AI FAQs
+      items:
+      - name: Responsible AI FAQS for Dynamics 365 Platform
+        href: responsible-ai/responsible-ai-overview.md
+      - name: FAQ for Chat with finance and operations data on Microsoft 365 Copilot
+        href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 
@@ -2188,9 +2194,4 @@ items:
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../../human-resources/index.yml
-  - name: Responsible AI FAQs
-    items:
-    - name: Responsible AI FAQS for Dynamics 365 Platform
-      href: responsible-ai/responsible-ai-overview.md
-    - name: FAQ for Chat with finance and operations data on Microsoft 365 Copilot
-      href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
+
