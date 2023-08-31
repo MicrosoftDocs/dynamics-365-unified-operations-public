@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.37
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Dynamics 365 Human Resources version 10.0.36. This version has a build number of 10.0.1695 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.37. This version has a build number of 10.0.1695 and is available on the following schedule:
 
 - **Preview of release:** September 2023
 - **General availability of release (self-update):** October 2023
@@ -44,22 +44,16 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
 
-
-
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, 
-they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-finance).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-finance).
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in version 10.0.37. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/
-get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change 
-ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless 
-they are determined to be essential.
+The following table lists the features that are turned on by default in version 10.0.37. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
