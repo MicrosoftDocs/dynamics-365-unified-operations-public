@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: MCRBrokerCommission, MCRRoyaltyContractLineInfoPart, PdsRebatePayment 
-audience: IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
