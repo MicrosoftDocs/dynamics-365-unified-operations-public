@@ -30,7 +30,7 @@ Beginning January 2020, all companies in Norway are required by the Norwegian Ta
 To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, complete the following setup tasks:
 
 1. [Import Electronic reporting (ER) configurations](#import).
-2. [Set up the tax registration information of the company](#registration-number).
+2. [Set up the tax registration numbers of the company](#registration-number).
 3. [Set up the ER format on the **General ledgers parameters** page](#parameters).
 4. [Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes](#sales).
 5. [Associate main accounts with Norwegian standard accounts or Income statement (Næringslivskoder)](#main).
@@ -53,7 +53,7 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
 
-### <a name="registration-number"></a>Set up the tax registration information of the company
+### <a name="registration-number"></a>Set up the tax registration numbers of the company
 
 As of version 175.119 of **SAF-T Format (NO)** ER format, `TaxRegistration` node under `Header > Company` of the report represents VAT registration numbers of the company that are actule in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity that is associated with the VAT ID registration category. `TaxVerificationDate` field of the report represents the expiration date of the tax registration number in case the number expired during the reporting period. To configure the VAT number complete the following steps.
 
