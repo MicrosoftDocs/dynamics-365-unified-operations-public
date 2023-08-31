@@ -129,9 +129,9 @@ Find detailed description for both of the supported options below. If option (1)
 
 #### Option (1): Associate main accounts used in Finance with Norwegian standard accounts using **Additional consolidation accounts**
 
-1. Create a [consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). Value from **Consolidation account group** field of **Consolidation account groups** page is used in `GroupingCategory` field of the report.
+1. Create a [consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). Value from **Consolidation account group** field of **Consolidation account groups** page is used in `GroupingCategory` field of the report when **Use grouping category** parameter of the report is switched on.
 
-2. [Add accounts to the consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in SAF-T.
+2. [Add accounts to the consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the `StandardAccountID` element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node when **Use grouping category** parameter of the report is switched off.  When **Use grouping category** parameter of the report is switched on, value of **Consolidation account** field is reported in `GroupingCode` field of the report. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in SAF-T.
 
 For mor information about **Additional consolidation accounts**, see [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md).
 
