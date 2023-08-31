@@ -4,7 +4,6 @@ description: This article answers some frequently asked questions about the Coll
 ms.date: 6/15/2023
 ms.custom: faq
 ms.topic: article
-audience: Application User
 author: JodiChristiansen
 ms.author: jchrist
 ms.reviewer: twheeloc
