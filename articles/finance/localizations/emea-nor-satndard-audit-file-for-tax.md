@@ -52,8 +52,6 @@ Import the most recent versions of the configurations. The version description u
 
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
->
-> ![Default for model mapping option set to Yes.](media/nor-saf-default-model-mapping.jpg)
 
 ### <a name="registration-number"></a>Set up the tax registration information of the company
 
