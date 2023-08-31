@@ -3563,8 +3563,10 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
-          - name: Over picking for sales orders and transfer orders
+          - name: Over-picking for sales orders and transfer orders
             href: warehousing/over-picking-for-sales-and-transfer-orders.md
+          - name: Over-pick materials for production and batch orders
+            href: warehousing/over-pick-materials-for-production-and-batch-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
           - name: Batch and license plate confirmation
