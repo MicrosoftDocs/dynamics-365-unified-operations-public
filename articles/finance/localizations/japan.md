@@ -125,7 +125,7 @@ This article includes information and links to resources that can help you set u
 - [Inquiry on deductible expenses](tasks/inquiry-deductible-expenses.md)
 - [Progressive withholding tax](apac-jpn-progressive-withholding-tax-calculation.md)
 - [Set up master data for inclusion of deductible expenses for multiple posting layers](tasks/set-up-master-data-inclusion.md)
-- [Qualified Invoice System - Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#setting-up-sales-tax-for-jct)
+- [Qualified Invoice System - Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct)
 
 ### Consumption tax report
 
