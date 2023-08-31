@@ -5,7 +5,6 @@ author: GalynaFedorova
 ms.author: gfedorova
 ms.reviewer: kamaybac
 ms.search.form: VendBankAccount
-audience: Application User
 ms.topic: how-to
 ms.date: 02/15/2023
 ms.custom: bap-template
