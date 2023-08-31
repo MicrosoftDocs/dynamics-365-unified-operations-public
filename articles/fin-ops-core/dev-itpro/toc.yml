@@ -2188,4 +2188,9 @@ items:
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../../human-resources/index.yml
-
+  - name: Responsible AI FAQs
+    items:
+    - name: Responsible AI FAQS for Dynamics 365 Platform
+      href: responsible-ai/responsible-ai-overview.md
+    - name: FAQ for Chat with finance and operations data on Microsoft 365 Copilot
+      href: faq-for-chat-with-fno-data-on-m365copilot.md
