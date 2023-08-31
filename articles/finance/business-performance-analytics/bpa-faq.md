@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 07/25/2023
+ms.date: 08/30/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -70,11 +70,14 @@ There are two options available to uninstall business performance analytics.
 
 Option one:
 
-1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
-2. Click Ctrl+Shift+I to open the developer console or go to **More tools**, select **Developer tools** and **Console** tab.
-3. Paste the below JavaScript code to start uninstall process.
-
-UninstallBPA JavaScript
+1. Sign into [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Microsoft Dataverse admin credentials. 
+2. Select the environment where you want to uninstall.
+3. Click on the Environment URL provided in the details. This redirects you to the Dataverse environment login page.
+4. Open the developer console by either pressing **Ctrl+Shift+I** or go to **More tools**, select **Developer tools** and **Console** tab.
+5. Paste the following JavaScript code into the console to start the uninstallation process.
+6. The approximate time that's required to delete all the solutions is 20 minutes. Y If the operation is successful, you receive the following message: "BPA Solutions removed successfully".
+   
+Uninstall BPA
 ```
 // Get the current org URL
 const ORG = window.location.hostname;
