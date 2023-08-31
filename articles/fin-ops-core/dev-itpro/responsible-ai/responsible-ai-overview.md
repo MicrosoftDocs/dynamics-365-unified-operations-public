@@ -15,5 +15,4 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[responsible-ai-features](../includes/responsible-ai-features.md)]
 
-- [[Feature]]([Link])
-- [[Feature]]([Link])
+- [Chat with finance and operations data on Microsoft 365 Copilot](faq-for-chat-with-fno-data-on-m365copilot.md)
