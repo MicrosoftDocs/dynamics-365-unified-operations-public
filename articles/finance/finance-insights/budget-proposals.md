@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
