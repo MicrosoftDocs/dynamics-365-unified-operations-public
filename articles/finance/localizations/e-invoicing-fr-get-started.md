@@ -167,6 +167,9 @@ Follow these steps to complete the configuration.
     2. In the Data entity name field, select Sales invoice Chorus Pro entity.
     3. In the Model mapping field, select Chorus Pro invoice response data.
 
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/121176021/f979a59d-b98d-46ff-921f-1c7f70c4cc8a)
+
+
 ## Issue electronic invoices
 
 After you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
