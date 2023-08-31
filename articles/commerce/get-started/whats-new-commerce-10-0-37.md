@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.37
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.37. This version has a build number of 10.0.1725 and is available on the following schedule:
 
 - **Preview of release:** September 2023
-- **General availability of release (self-update):** November 2023
+- **General availability of release (self-update):** October 2023
 - **General availability of release (auto-update):** November 2023
 
 ## Features included in this release
