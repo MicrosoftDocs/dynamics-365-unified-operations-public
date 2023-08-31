@@ -30,13 +30,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Feature area | Feature | More information | Enabled by |
-| Feature area | Feature | More information | Enabled by |
-| Feature area | Feature | More information | Enabled by |
-| Feature area | Feature | More information | Enabled by |
-| Feature area | Feature | More information | Enabled by |
-
-
+| Payments | Aggregated payments workspace in Commerce headquarters | An aggregated **Payments** workspace was added to headquarters workspaces to simplify analysis of payment configurations and comparison of settings across your legal entity. The new workspace provides options to review all call centers, online stores, and retail stores, and provides a view of various payment connector settings.You can adjust and save columns in the grid per saved view, and you can print from the workspace. Payment-related quick links were also added so you can quickly navigate to key configuration pages in Commerce headquarters. | Default |
 
 ## Additional resources
 
