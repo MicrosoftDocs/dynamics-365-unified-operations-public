@@ -42,7 +42,7 @@ The localization of Microsoft Dynamics 365 Finance for Japan has extended the in
 - Print the total invoice amount and tax amounts by tax code on customer invoices.
 - Calculate non-deductible tax to apply transitional measures for input tax credits for purchases from non-qualified vendors.
 - Calculate and round consolidated tax per tax code at the consolidated invoice level.
-- Print the company's registration number and sales tax amounts by tax code on customer consolidated invoices. For more information, see [Consolidated invoices for Japan](/dynamics365/finance/localizations/apac-jpn-consolidate-invoices.md).
+- Print the company's registration number and sales tax amounts by tax code on customer consolidated invoices. For more information, see [Consolidated invoices for Japan](apac-jpn-consolidate-invoices.md).
 
 ## Considerations
 
@@ -65,7 +65,7 @@ To use QII registration numbers, you must complete these tasks.
 3. Add your company's registration number to its primary address in Japan.
 
 > [!NOTE]
-> For more information, see [Registration IDs](/dynamics365/finance/localizations/emea-registration-ids.md). The framework is extended so that you can maintain the QII registration numbers of your company and its counterparties (that is, vendors and customers). The QII number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
+> For more information, see [Registration IDs](emea-registration-ids.md). The framework is extended so that you can maintain the QII registration numbers of your company and its counterparties (that is, vendors and customers). The QII number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
 
 ## Set up sales tax for JCT
 
