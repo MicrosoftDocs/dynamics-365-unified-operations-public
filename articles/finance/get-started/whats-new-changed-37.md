@@ -57,6 +57,12 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 |--------------|--------------|------------------|
 |Cash and bank management|Import bank statement|Bank statement importing for ISO20022 camt053.001.08 version is supported in Dynamics 365 Finance version 10.0.37. Users can import the latest Advanced bank reconciliation statement configuration ABR Camt.053 format version 3.13.|
 |Accounts payable|Match the detail for vendor invoices|In Dynamics 365 Finance version 10.0.37, invoice validation is available on different invoice amount fields. This enhancement provides specific control over the round-off amount.|
+|Cash and bank management|	ISO20022 Credit Transfer|	The Generic Credit Transfer payment format is supported for the ISO20022 pain.001.001.09 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 version 43.73.|
+|Cash and bank management|	ISO20022 Direct Debit	|The Generic Direct Debit payment format is supported for the ISO20022 pain.008.001.08 version. Users can generate the latest Direct Debit configuration, ISO20022 Direct debit 2019 version 12.38.|
+|Cash and bank management|	ISO20022 Credit Transfer format for Italy|The Italian Credit Transfer payment format is supported for the CBI 00.04.01 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 (IT) version 43.73.18.|
+|Cash and bank management|	ISO20022 Direct Debit format for Italy|The Italian Direct Debit payment format is supported for the CBI 00.01.01 version. Users can generate the latest Direct Debit configuration, ISO20022 Direct debit 2019 (IT) version 12.38.14.|
+|Cash and bank management|	ISO20022 Credit Transfer format for Norway|	The Norwegian Credit Transfer payment format for the ISO20022 pain.001.001.09 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 (NO) version 43.73.28.|
+
 
 ## Features turned on by default in this release
 
