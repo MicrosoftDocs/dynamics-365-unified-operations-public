@@ -65,7 +65,7 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 
 ## Tax adjustment on consolidated invoice
 
-The primary purpose of this feature is to support consolidated monthly invoices for Japan as qualified invoices. Changes are introduced in relation to the Qualified Invoice System (QIS) for Japan. For more information, see [Qualified Invoice System](apac-jpn-qualified-invoice-system.md).
+The primary purpose of this feature is to support consolidated monthly invoices for Japan as qualified invoices. Changes are introduced in relation to the Qualified Invoice System (QIS) for Japan. For more information, see [Qualified Invoice System in Japan](apac-jpn-qualified-invoice-system.md).
 
 To support the QIS requirements that affect consolidated invoices, the following capabilities have been introduced (in both Accounts receivable and Accounts payable):
 
@@ -99,7 +99,7 @@ After you create and post a customer consolidated invoice, the consolidated cons
 
 Here are the main considerations for this functionality in Microsoft Dynamics 365 Finance:
 
-- Sales tax calculation parameters should be configured in the following way. For more information, see [Set up sales tax for JCT](apac-jpn-qualified-invoice-system#setting-up-sales-tax-for-jct.md).
+- Sales tax calculation parameters should be configured in the following way. For more information, see [Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct).
 
     - All sales tax codes have an appropriate value for the **Tax type** field (**Standard** or **Reduced**).
     - The **Origin** field is set to **Percentage of net amount**.
@@ -114,7 +114,7 @@ Here are the main considerations for this functionality in Microsoft Dynamics 36
 - Only invoices in the company's accounting currency are included in a consolidated invoice.
 
 > [!NOTE]
-> If the **Tax adjustment on consolidated invoice** functionality doesn't meet any of your specific requirements, consider using the **Summary invoice** functionality instead. For more information, see [Consolidate sales orders or packing slips for posting](/dynamics365/finance/accounts-receivable/configure-customer-invoices.md#consolidate-sales-orders-or-packing-slips-for-posting/).
+> If the **Tax adjustment on consolidated invoice** functionality doesn't meet any of your specific requirements, consider using the **Summary invoice** functionality instead. For more information, see [Consolidate sales orders or packing slips for posting](../accounts-receivable/configure-customer-invoices.md#consolidate-sales-orders-or-packing-slips-for-posting).
 
 ### Setup
 
