@@ -20,6 +20,7 @@ ms.assetid:
 # Configure a channel to use a channel navigation hierarchy
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 
