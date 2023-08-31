@@ -2193,4 +2193,4 @@ items:
     - name: Responsible AI FAQS for Dynamics 365 Platform
       href: responsible-ai/responsible-ai-overview.md
     - name: FAQ for Chat with finance and operations data on Microsoft 365 Copilot
-      href: faq-for-chat-with-fno-data-on-m365copilot.md
+      href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
