@@ -94,6 +94,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **App version: 10.0.1591.137**
 
+**Platform version: 7.0.6931.156**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | September 11 to September 14, 2023 | NA |
