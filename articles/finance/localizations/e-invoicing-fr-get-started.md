@@ -151,28 +151,27 @@ You can enable Siret numbers and service code validation before you post and inv
 > [!NOTE]
 > To create a new submission report instead of customizing a default report, use the **DocumentSubmitted** model name and the **SubmittedInvoice** mapping name for the integration point.
 
-To obtain the latest processing details of the invoice from Chorus pro into the submission log, you must configure the response types in Finance.
+To obtain the latest processing details for the invoice from Chorus Pro in the submission log, you must configure the response types in Finance.
 
 Follow these steps to complete the configuration.
 
-1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
-2. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** tables.
-3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in the [Electronic invoicing parameters](e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters)
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+2. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
+3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 4. In the **Customer Invoice journal** table name field, select **Response types**.
-5. Create a new response type with the same name that was defined for the related variable in the corresponding feature setups in RCS.
-    
+5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+
     1. In the **Submission status** field, select **Pending**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
     3. In the **Model mapping** field, select **Chorus Pro invoice response data**.
 
-6. Create another response type with the same name that was defined for the related variable in the corresponding feature setups in RCS.
-    
+6. Create another new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+
     1. In the **Submission status** field, select **Pending update actions execution**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
     3. In the **Model mapping** field, select **Chorus Pro invoice response data**.
 
-    ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/121176021/f979a59d-b98d-46ff-921f-1c7f70c4cc8a)
-
+    ![New response types created on the Document updates for response types page.](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/121176021/f979a59d-b98d-46ff-921f-1c7f70c4cc8a)
 
 ## Issue electronic invoices
 
