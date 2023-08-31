@@ -60,8 +60,11 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 |Cash and bank management|	ISO20022 Credit Transfer|	The Generic Credit Transfer payment format is supported for the ISO20022 pain.001.001.09 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 version 43.73.|
 |Cash and bank management|	ISO20022 Direct Debit	|The Generic Direct Debit payment format is supported for the ISO20022 pain.008.001.08 version. Users can generate the latest Direct Debit configuration, ISO20022 Direct debit 2019 version 12.38.|
 |Cash and bank management|	ISO20022 Credit Transfer format for Italy|The Italian Credit Transfer payment format is supported for the CBI 00.04.01 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 (IT) version 43.73.18.|
-|Cash and bank management|	ISO20022 Direct Debit format for Italy|The Italian Direct Debit payment format is supported for the CBI 00.01.01 version. Users can generate the latest Direct Debit configuration, ISO20022 Direct debit 2019 (IT) version 12.38.14.|
+|Cash and bank management|	ISO20022 Direct Debit format for Italy|The Italian direct debit payment format is supported for the CBI 00.01.01 version. Users can generate the latest Direct Debit configuration, ISO20022 Direct debit 2019 (IT) version 12.38.14.|
 |Cash and bank management|	ISO20022 Credit Transfer format for Norway|	The Norwegian Credit Transfer payment format for the ISO20022 pain.001.001.09 version. Users can generate the latest Credit Transfer configuration, ISO20022 Credit transfer 2019 (NO) version 43.73.28.|
+|Accounts payable localization	|Apply prepayments to vendor invoices|	Automatically apply prepayments to vendor invoices is available for Italy. This update enables access **Apply prepayment** in the Italian country/region. Additional feature enhancements for Italy include:
+-	The **Apply prepayment** no longer requires the **Sales tax group** and **Item sales tax group** fields to be set up on the invoice line during posting. 
+-	The prepayment transaction results are recorded in the Italian sales tax book section.|
 
 
 ## Features turned on by default in this release
