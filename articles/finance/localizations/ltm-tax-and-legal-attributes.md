@@ -1,6 +1,6 @@
 ---
 title: Tax and legal attributes for Latin America
-description: This article provides information about the document class type configuration for Latin America. 
+description: This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation.
 author: Fhernandez0088
 ms.date: 08/30/2023
 ms.topic: Article
