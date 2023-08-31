@@ -44,7 +44,7 @@ Microsoft Dynamics 365 Commerce version 10.0.35 includes platform updates. To le
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.35, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=X).
+For information about the bug fixes included in each of the updates that are part of version 10.0.35, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=817204&dbType=3&qc=31515199fa35fbda929b42fcfa31225e2c30e55eef262c4f917d98d8cc57d42d).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 
