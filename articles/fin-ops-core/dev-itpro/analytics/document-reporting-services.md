@@ -86,7 +86,7 @@ The process for developing a report in the current version is easier than it is 
 <li>In Visual Studio, add the report to a menu item, and set the menu item as a startup object.</li>
 <li>Use the AOT to deploy the report to the report server.</li>
 <li>Press Ctrl+F5 to verify the report in the application.
-<blockquote>[!NOTE] There is no longer a separate preview of the report design from the model editor.</blockquote>
+<strong>NOTE: </strong>There is no longer a separate preview of the report design from the model editor.
 </li>
 <li>When the whole solution is completed, deploy it to the cloud in one package.</li>
 </ol></td>

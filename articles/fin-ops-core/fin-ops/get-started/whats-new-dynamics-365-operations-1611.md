@@ -93,7 +93,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 </tr>
 <tr>
 <td>Create reports by using Excel.
-<blockquote>[!NOTE] You must run Microsoft Excel 2016.</blockquote>
+<strong>NOTE: </strong> You must run Microsoft Excel 2016.
 </td>
 <td>You can export Cost accounting data directly to Excel through data entities and use Microsoft PivotTable to create reports.</td>
 </tr>
