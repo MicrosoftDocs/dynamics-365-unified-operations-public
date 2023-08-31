@@ -80,9 +80,9 @@ Planning Optimization doesn't use the following parameters or options on the **I
   - **Fulfill minimum** – Planning Optimization doesn't support the *Today's date*, *First issue*, and *Coverage time fence* options. It always uses the *Today's date + procurement time* option.
   - **Minimum periods** – Not supported in Planning Optimization.
   - **Planning formula** – Pending. *Planning items support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Default priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Current priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Date changed** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Default priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+  - **Current priority** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+  - **Date changed** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
 
 ## Master plans page
 
@@ -120,10 +120,10 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **Sequencing** FastTab:
 
-  - **Sequence planned orders after master planning** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Bucket type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Period type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-  - **Number of buckets in the campaign cycle** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Sequence planned orders after master planning** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+  - **Bucket type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+  - **Period type** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+  - **Number of buckets in the campaign cycle** –  Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
 
 ## Released product details page
 
@@ -131,4 +131,4 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 
 - **Engineer** FastTab:
 
-  - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).

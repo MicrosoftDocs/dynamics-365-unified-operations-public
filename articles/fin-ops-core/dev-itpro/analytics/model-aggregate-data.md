@@ -172,7 +172,7 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
 
     | Property            | Value |
     |---------------------|-------|
-    | Dimension Name      | Date\_<blockquote>[!NOTE] If you select the Dimension Name in the wrong order, it will reset the other values you already set.</blockquote> |
+    | Dimension Name      | Date\_ **NOTE:**  If you select the Dimension Name in the wrong order, it will reset the other values you already set. |
     |  Name               | TransactionDate |
     | Use table relations | No |
     | Tags                | RolePlayingDate; Fleet |

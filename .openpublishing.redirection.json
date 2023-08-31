@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-asset-classification-values.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/data-entities/dual-write/extended-session-timeout.md",
       "redirect_url": "/dynamics365/finance",
       "redirect_document_id": "false"
@@ -19940,6 +19945,11 @@
     {
       "source_path": "articles/supply-chain/transparency-note.md",
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-inventory-purge.md",
+      "redirect_url": "/dynamics365/supply-chain/inventory/archive-inventory-transactions",
       "redirect_document_id": "false"
     }
   ]

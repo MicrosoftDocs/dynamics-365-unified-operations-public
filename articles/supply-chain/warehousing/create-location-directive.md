@@ -56,10 +56,7 @@ The *Location directive scopes* feature gives you more freedom when you design l
 
 When it's enabled, the **Scope** option supersedes the **Multiple SKU** option and is 100-percent compatible with existing configurations.
 
-To use this feature, you must turn it on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on or off. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Location directive scopes*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Location directive scopes* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Work order types for location directives
 

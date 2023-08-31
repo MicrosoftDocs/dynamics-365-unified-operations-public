@@ -23,7 +23,7 @@ This article provides an overview of the localization of Microsoft Dynamics 365 
 
 Because laws and regulations vary in the way that they affect organizations, Commerce doesn't address all laws, regulations, or commercial requirements in Russia. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
-To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
+To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../welcome.md).
 
 ## Capabilities of Commerce localization for Russia
 

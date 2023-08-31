@@ -53,7 +53,7 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
 
 ## Set up Commerce for Saudi Arabia
 
-This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../welcome.md).
 
 As a prerequisite, you should complete the setup of the electronic invoicing functionality for Saudi Arabia, including the configuration of the Electronic invoicing service. For more information, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 

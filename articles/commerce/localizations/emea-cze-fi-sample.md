@@ -73,7 +73,7 @@ The fiscal registration service supports only scenarios where sales tax is inclu
 
 ## Set up Commerce for the Czech Republic
 
-This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Commerce home page](../welcome.md).
 
 To use the Czech-specific functionality, you must specify the following settings.
 
