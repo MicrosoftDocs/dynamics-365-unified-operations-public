@@ -56,13 +56,13 @@ You must specify payroll details and add them to a position before you can gener
 <tr>
 <td>Work cycle</td>
 <td>For non-exempt positions only, select the work cycle that specifies the work periods for the position. Some earnings, such as the regular-rate-of-pay premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods instead of pay periods. For exempt positions, leave this field blank.
-<blockquote>[!IMPORTANT] For workers who have more than one position, make sure that all positions that are assigned to the worker have the same work cycle.</blockquote>
+<strong>IMPORTANT: </strong>For workers who have more than one position, make sure that all positions that are assigned to the worker have the same work cycle.
 </td>
 </tr>
 <tr>
 <td>Paid by</td>
 <td>Select the legal entity that is responsible for making the payroll payments for this position. The legal entity that is responsible for paying for the position must be assigned to the position before you can assign worker tax codes to workers.
-<blockquote>[!NOTE] You can use the <strong>Worker</strong> page to assign default tax codes for each position.</blockquote>
+<strong>NOTE: </strong>You can use the <strong>Worker</strong> page to assign default tax codes for each position.
 </td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ This set of selections is typically used for hourly workers.</li>
 <ul>
 <li>A default earning code is required.</li>
 <li>The worker is paid the standard position salary amount for each pay period, and a single line is included on the earnings statement. This line has the date of the last day in the pay period.
-<blockquote>[!NOTE] If earnings statement lines were entered manually before the earnings were generated, the salary might be split across multiple lines. The total of the manually entered lines and the single generated line is always the standard salary amount.</blockquote>
+<strong>NOTE: </strong>If earnings statement lines were entered manually before the earnings were generated, the salary might be split across multiple lines. The total of the manually entered lines and the single generated line is always the standard salary amount.
 </li>
 </ul>
 This set of selections is typically used for salaried workers.</li>
@@ -199,7 +199,7 @@ The following table show the information that you must enter on the **Payroll** 
 <li>If you select <strong>Benefit</strong>, the deduction amount and basis for the worker are updated automatically when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page.</li>
 <li>If you select <strong>Custom</strong>, the deduction amount and basis for the worker aren't changed when you click <strong>Update benefit rates</strong> on the <strong>Benefits</strong> page. Select this option when the contribution for a worker is specific to that worker. For example, after a rate change, contribution amounts might be grandfathered in for some workers.</li>
 </ul>
-<blockquote>[!NOTE] For contributions, the default value of the <strong>Rate source</strong> field is <strong>Benefit</strong>.</blockquote>
+<strong>NOTE: </strong>For contributions, the default value of the <strong>Rate source</strong> field is <strong>Benefit</strong>.
 </td>
 </tr>
 <tr>

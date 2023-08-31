@@ -106,7 +106,7 @@ This field is available only for tax levies, and only when the limit method is <
 <tr>
 <td>Administrative fee</td>
 <td>Enter the amount to reduce the deduction for the garnishment by if the deduction for the garnishment plus the deduction for the administrative fee exceeds the worker's disposable income limit. This field doesn't cause the administrative fee to be deducted. Instead, it sets the amount that the garnishment deduction should be reduced by. To deduct the administrative fee, you must create a benefit for the administrative fee and then assign that benefit to the worker.
-<blockquote>[!IMPORTANT] The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</blcockquote>
+<strong>IMPORTANT: </strong>The amount in this field must be the same as the amount in the <strong>Amount or rate</strong> field for the administrative fee benefit that you assign to the worker.</blcockquote>
 </td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@ This field is available only for tax levies, and only when the limit method is <
 <li><strong>Equal</strong> – The deduction is divided so that each garnishment receives an equal amount.</li>
 <li><strong>First in</strong> – The garnishments are satisfied in the order in which the worker enrolled in them. This option is typically used for tax levies.</li>
 </ul>
-<blockquote>[!IMPORTANT] If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules, and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.</blockquote></td>
+<strong>IMPORTANT: </strong>If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules, and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.</td>
 </tr>
 </tbody>
 </table>
@@ -145,7 +145,7 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 <tr>
 <td>Type</td>
 <td>Specify the garnishment type.
-<blockquote>[!IMPORTANT] When a worker is enrolled in more than one type of garnishment, you must add the <strong>Combined garnishments</strong> type in addition to the types that the worker is enrolled in. The <strong>Combined garnishments</strong> type helps ensure that the garnishment amounts are adjusted correctly, based on the selected disposable income definition and any rules that apply across garnishment types. The disposable income definition and maximum withholding percentage are the only fields that are used by the <strong>Combined garnishments</strong> type. All other fields are for your information only.</blockquote>
+<strong>IMPORTANT: </strong>When a worker is enrolled in more than one type of garnishment, you must add the <strong>Combined garnishments</strong> type in addition to the types that the worker is enrolled in. The <strong>Combined garnishments</strong> type helps ensure that the garnishment amounts are adjusted correctly, based on the selected disposable income definition and any rules that apply across garnishment types. The disposable income definition and maximum withholding percentage are the only fields that are used by the <strong>Combined garnishments</strong> type. All other fields are for your information only.
 </td>
 </tr>
 <tr>
@@ -177,7 +177,7 @@ Set up each garnishment type only one time for each worker. When a worker has mo
 <li><strong>Equal</strong> – The deduction is divided so that each garnishment receives an equal amount.</li>
 <li><strong>First in</strong> – The garnishments are satisfied in the order in which the worker enrolled in them. This option is typically used for tax levies.</li>
 </ul>
-<blockquote>[!IMPORTANT] If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three support orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.</blockquote>
+<strong>IMPORTANT: </strong>If the court order doesn't specify which method to use, check with your legal advisors for clarification. Typically, if the orders have the same type but are from different states, the laws in the state where the worker works apply. For example, a worker who is located in Washington has three support orders: two from California and one from Idaho. The rules for Washington apply to all three orders. However, if this worker has two support orders from California and a creditor garnishment from Idaho, the support orders use the California rules and the creditor garnishment uses the Idaho rules. If it isn't clear which method you should use, check with your legal advisors.
 </td>
 </tr>
 <tr>

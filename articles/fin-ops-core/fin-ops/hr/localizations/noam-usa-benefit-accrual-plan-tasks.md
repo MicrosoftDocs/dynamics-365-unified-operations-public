@@ -120,7 +120,7 @@ To set up the benefit accrual plans, enter the following information on the **Be
 <tr>
 <td>Frequency</td>
 <td>The payroll calculation frequency that includes the pay periods when the number of hours in the <strong>Amount or rate</strong> field is added to the plan balance.
-<blockquote>[!NOTE] This field is available only when the accrual rate basis is <strong>Fixed amount by payroll frequency</strong>.</blockquote>
+<strong>NOTE: </strong>This field is available only when the accrual rate basis is <strong>Fixed amount by payroll frequency</strong>.
 </td>
 </tr>
 <tr>
@@ -132,12 +132,12 @@ To set up the benefit accrual plans, enter the following information on the **Be
 <li><strong>Annual plan start date</strong></li>
 <li><strong>Custom date</strong> – A date that is specified for this plan.</li>
 </ul>
-<blockquote>[!NOTE] This field is available only when the accrual rate basis is <strong>Fixed amount by date</strong>.</blockquote></td>
+<strong>NOTE: </strong>This field is available only when the accrual rate basis is <strong>Fixed amount by date</strong>.</td>
 </tr>
 <tr>
 <td>Custom accrual date</td>
 <td>The month and date each year when the number of hours in the <strong>Amount or rate</strong> field is added to the plan balance.
-<blockquote>[!NOTE] This field is available only when the accrual rate basis is <strong>Fixed amount by date</strong> and the accrual date is <strong>Custom date</strong>.</blockquote>
+<strong>NOTE: </strong>This field is available only when the accrual rate basis is <strong>Fixed amount by date</strong> and the accrual date is <strong>Custom date</strong>.
 </td>
 </tr>
 </tbody>
