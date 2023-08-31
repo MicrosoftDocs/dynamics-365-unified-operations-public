@@ -118,13 +118,13 @@ In addition to updating the **Load receiving completed date and time** field on 
 > [!NOTE]
 > You can use the **Load receiving completed date and time** field value as filter criteria for the subsequent *Update product receipts* cost update process. Also, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process may be able to use the recorded packing slip ID as part of the *Update product receipts* process.
 
-Follow these steps to choose whether the system automatically updates loads to *Receiving completed* after they are registered.
+Follow these steps to choose how loads related to purchase orders will be finalized.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 1. Open the **Loads** tab.
 1. Set **Load receiving completed confirmation policy for purchase orders** one of the following values:
-    - *Disabled* – After inventory has been received in the warehouse and marked as *Registered*, the system will wait until a user manually assigns a product receipt number. The system then updates the relevant purchase documents, updates cost, and sets the load to *Receiving completed*.
-    - *Enabled* – After inventory has been received in the warehouse and marked as *Registered*, the system will automatically update the relevant purchase documents, update the cost, and set the load to *Receiving completed*. This setting removes the manual step of assigning a product receipt number.
+    - *Disabled* – Loads won't indicate whether inbound receiving is complete. With this setting, you run the risk that a periodic *Update product receipts* cost update process triggered from a load could get run in the middle of an inbound registration process.
+    - *Enabled* – After the *Receiving completed* process is run, loads are updated with a **Load receiving completed date and time** value (and related shipments are assigned a **Packing slip ID**). The periodic *Update product receipts* cost update process therefore checks for these values to make sure it only processes loads that have been completely received.
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 
