@@ -136,11 +136,14 @@ Use services.msc to restart the services that you stopped earlier:
 - Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
-## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (CHE, LBD and VHD) through SQL Server Management Studio 
+
+> [!NOTE]
+> The following steps are designed for Cloud Hosted Environments (CHE Tier 1 Dev), downloadable VHD images, and LBD On-Premises.
 
 Before getting started, be sure that all users close Report designer and exit the Financial reporting area.
 
-1. On the database used for Financial reporting, which is named ManagementReporter within SQL Server, which is also referred to as MRDB, execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
+1. On the database used for Financial reporting (CHE & VHD - ManagementReporter or MRDB; LBD - FinancialReporting), execute the following script. which was last updated April 9, 2020: Reset Datamart Begin.txt
 
     ```sql
 	------------------------------------------------------------------------------------------
@@ -541,7 +544,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	END CATCH
 	
 
-2. (Optional) On the MRDB, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
+2. (Optional) On the database used for Financial reporting, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
 > [!NOTE]
 > Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
 
@@ -601,7 +604,7 @@ END
 ```
 
 
-4. On the MRDB, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
+4. On the database used for Financial reporting, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
 
 
 
