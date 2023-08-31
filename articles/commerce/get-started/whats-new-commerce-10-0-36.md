@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.36. 
 author: josaw1
-ms.date: 08/01/2023
+ms.date: 08/31/2023
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -34,7 +34,9 @@ The following table lists the features that are included in this release. We mig
 | Loyalty  |  Define loyalty cards   |  Specify loyalty card type and options for loyalty cards.<p>[Define loyalty cards](../tasks/define-loyalty-cards.md)  |  |
 |  Orders  | Prompt customer contact details during asynchronous order cancellation  |  If the asynchronous order cancellation feature is enabled, the store associates can be prompted to verify the customer contact information when canceling an order. This verification ensures that if there are any problems in canceling the order, the customer can be reached using the verified contact details.<p>[Customer orders in point of sale (POS)](../customer-orders-overview.md#enable-customer-orders-to-be-created-in-asynchronous-mode)  |  IT Pro opt-in   |
 |   Payments   |   Google Pay on Adyen (Fix with Standard Google Pay Button)  |  Commerce now offers a dedicated "Google Pay" module to offer an alternate Google Pay solution for regular (non-express) payment in the online cart checkout process. This module uses the direct Google Pay API approach, differing from the Iframe structure used by the common payment module. This new module addresses browser limitations from Google and will support direct express checkout experiences in future iterations.<p>[Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md)  |  Developer opt-in   |
-| Point of sale (POS) |  Reset receipt numbers  |  Organizations that have strict requirements for unique receipt IDs can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit (CSU) whenever POS is initialized. This action guarantees that the POS will always have the most current number sequence before any transactions are executed.<p>[Reset receipt numbers](../reset_receipt_number_sequence.md)  |  Admin/maker    |
+| Point of sale (POS) |  [Reset receipt numbers](../reset_receipt_number_sequence.md#force-synchronization-of-number-sequence-data-at-app-launch) |  Organizations that have strict requirements for unique receipt IDs can enable automatic synchronization of number sequence data. When enabled, the latest number sequence data is retrieved from the Commerce Scale Unit (CSU) whenever POS is initialized. This action guarantees that the POS will always have the most current number sequence before any transactions are executed.<p>[Reset receipt numbers](../reset_receipt_number_sequence.md)  |  Admin/maker    |
+|  Point of sale (POS) | POS UX improvements  | POS now has improvements to the user interface to match current Microsoft design practices. Updates include rounded corners on tiles and buttons, drop shadows and rollover elevation on product and category cards, and an updated **Logout** screen.   | By default  |
+|  Point of sale (POS) | Bar code scanning performance improvements | Product data is now cached in POS when you add products to the cart, resulting in an a significant performance improvement. POS makes a Commerce Scale Unit (CSU) call in the background for product data older than one hour to ensure that the cache contains the latest data.   | By default<p><p>To disable this functionality for your organization, submit a service request.  |
 
 
 
