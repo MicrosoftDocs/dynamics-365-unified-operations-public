@@ -2,7 +2,7 @@
 title: Reset the Financial reporting data mart
 description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
-ms.date: 04/01/2021
+ms.date: 09/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -546,7 +546,7 @@ Before getting started, be sure that all users close Report designer and exit th
 
 2. (Optional) On the database used for Financial reporting, execute the following script, which was last updated February 25, 2020: ResetUsersAndCompanies.txt
 > [!NOTE]
-> Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step is not required in most cases.
+> Do not run this script unless you need to delete all users and companies. This script will remove user references from previously generated reports, and remove users from their assigned security groups. This step isn't required in most cases.
 
 ```sql
 -- Attempt to delete integrated users
