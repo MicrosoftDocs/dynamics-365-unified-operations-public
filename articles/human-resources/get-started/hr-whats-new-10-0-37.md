@@ -43,9 +43,9 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|Leave and absence|Configure multiple leave types on a single leave plan	| This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](../hr-leave-and-absence-plans.md)|
-|Leave and absence |Configure leave units per leave type	|This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. This feature enables the units for each leave type can be set to either **Hours** or **Day**. For more information, see [Configure leave](../hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type).| 
-|Leave and absence |Open ended leave|	This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40.| 
+| Leave and absence | Configure multiple leave types on a single leave plan | This feature will become mandatory by Dynamics 365 Human Resources version 10.0.40. Additional features depend on this feature and must be reviewed by the HR administrator or administrators beforehand. For more information, see [Leave and absence plans](../hr-leave-and-absence-plans.md). |
+| Leave and absence | Configure leave units per leave type | This feature will become mandatory by Dynamics 365 Human Resources version 10.0.40. It enables the units for each leave type to be set to either **Hours** or **Day**. For more information, see [Configure leave](../hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type). | 
+| Leave and absence | Open ended leave | This feature will become mandatory by Dynamics 365 Human Resources version 10.0.40. | 
 
 ## Additional resources
 
@@ -56,4 +56,3 @@ Dynamics 365 Human Resources version 10.0.37 includes platform updates. To learn
 ### Bug fixes
 
 For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
-
