@@ -1,7 +1,7 @@
 ---
 title: Electronic invoicing for Australia and New Zealand
 description: This article provides information to help you get started with Electronic invoicing for Australia and New Zealand in Microsoft Dynamics 365 Finance.
-author: ikondratenko
+author: ilikond
 ms.date: 09/01/2023
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Australia, New Zealand
-ms.author: ilikond
+ms.author: ikondratenko
 ms.search.validFrom: 2023-09-01
 ms.dyn365.ops.version: AX 10.0.37
 ms.custom: 574542
