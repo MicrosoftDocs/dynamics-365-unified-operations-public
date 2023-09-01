@@ -20,6 +20,7 @@ ms.search.form:
 # Set up Electronic invoicing parameters 
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 The process of submitting electronic documents to the Electronic invoicing service requires that a message be generated in your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment in a unified structure that corresponds to the structure of the Electronic reporting (ER) invoice model and metadata that is known as *context*. For more information, see [Electronic invoicing overview](e-invoicing-service-overview.md).
 
