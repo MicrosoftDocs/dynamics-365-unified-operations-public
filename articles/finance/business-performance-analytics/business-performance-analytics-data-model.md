@@ -17,7 +17,7 @@ audience: Application User
 # Business performance analytics data model
 We begin the documentation of the data model with a bus matrix. A Bus Matrix is a roadmap for business data. Business data can be defined by value chains like Record to Report or Order to Cash. The Bus Matrix organizes, connects, and simplifies data, helping users navigate and understand their data efficiently.
 
-##Record to Report (R2R): 
+## Record to Report (R2R): 
 This process encompasses the journey from data collection to the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
 
 | Business process                | Fact                  | Grain                                      | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
@@ -26,7 +26,7 @@ This process encompasses the journey from data collection to the final financial
 | Budget transactions             | BudgetFact            | 1 row per account entry per ledger account |                     | x               | x                    | x      | x                | x                      |                 |
 | Budget reservation transactions | BudgetReservationFact | 1 row per reservation transaction          | x                   |                 | x                    | x      | x                | x                      |                 |
 
-##Procure to Pay (P2P): 
+## Procure to Pay (P2P): 
 This value chain covers the complete cycle from the procurement of goods and services to the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
 
 | Business Process          | Fact                        | Grain                                        | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
@@ -45,7 +45,7 @@ This value chain covers the complete cycle from the procurement of goods and ser
 | Purchase Distribution     | PurchaseDistributionFact    | 1 row per term                               | x                 | x                    |         |            |          |                    |                  |                        |             |            | x         | x         |                          | x                  |                |
 | Purchase Subledger        | PurchaseSubledgerFact       | 1 line per posted accounting event (voucher) | x                 | x                    | x       |            |          |                    | x                | x                      | x           | x          |           | x         |                          | x                  |                |
 
-##Order to Cash (O2C): 
+## Order to Cash (O2C): 
 This process involves everything from receiving a customer order to collecting payment. It's vital for revenue management, customer satisfaction, and cash flow optimization.
 
 | Business process        | Fact                     | Grain                                             | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
