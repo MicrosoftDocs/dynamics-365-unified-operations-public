@@ -12,14 +12,14 @@ ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
 ---
 
-# Set up direct integration of Italian FatturaPA with SDI
+# Direct integration of Italian electronic invoices with SDI
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps enabling generation of electronic invoices in Italy specific **FatturaPA** format and exchange electronic invoices with Italian Revenue Agency’s e-invoicing exchange system **SDI** (Sistema di Interscambio). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 > [!NOTE]
 > The solution for direct integration with SDI supports only digital signing of documents using separately stored certificate files which can be uploaded to the **Key Vault**. Qualified digital signature which requires additional hardware involvement or online connection to certification service providers is not supported.
@@ -40,7 +40,7 @@ Complete the following procedures before you deploy the application setup to you
 
 This section complements the [Country/region-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
 
-### <a name="ProgressivoInvio">Create a new number sequence for ProgressivoInvio</a>
+### <a name="ProgressivoInvio"></a>Create a new number sequence for ProgressivoInvio
 
 1. Sign in to RCS.
 2. In the **Globalization feature** workspace, select **Environment setup**, and then select **Service environments**.
