@@ -55,7 +55,7 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="registration-number"></a> Set up the tax registration numbers of the company
 
-As of version 175.119 of **SAF-T Format (NO)** ER format, `TaxRegistration` node under `Header > Company` of the report represents VAT registration numbers of the company that are actule in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity. `TaxVerificationDate` field of the `TaxRegistration` node represents the expiration date of the **Registration ID** in case the number expiration date is within the reporting period. To configure the **Registration ID** to be reported in `TaxRegistration` node, complete the following steps.
+As of version 175.119 of **SAF-T Format (NO)** ER format, `TaxRegistration` node under `Header > Company` of the report represents VAT registration numbers of the company that are actual in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity. `TaxVerificationDate` field of the `TaxRegistration` node represents the expiration date of the **Registration ID** in case the number expiration date is within the reporting period. To configure the **Registration ID** to be reported in `TaxRegistration` node, complete the following steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
@@ -119,13 +119,13 @@ As the documentation explains, in Norwegian SAF-T Financial data, main accounts 
 
 As of version 175.119 of **SAF-T Format (NO)** ER format, two options of how to associate main accounts used in Finance with Norwegian standard accounts or or Income statement are supported. You can use any one of them depending on your company's setup and preferences:
 
-(1) Associate main accounts used in Finance with Norwegian standard accounts or Income statement using **Additional consolidation accounts**. This option allows to associate main accounts used in Finance with Income statement (Grouping Category and Grouping Code) .
+(1) Associate main accounts used in Finance with Norwegian standard accounts or Income statement using **Additional consolidation accounts**. This option allows to associate main accounts used in Finance with Income statement (Grouping Category and Grouping Code).
 
 (2) Associate main accounts used in Finance with Norwegian standard accounts using **Application specific parameters** of the ER format. This option supports Norwegian standard accounts only.
 
 Find detailed description for both of the supported options below. If option (1) is used than option (2) is not considered by the report. If for some of the main accounts that are used in Finance there is no value associated in application-specific parameters of the ER format or **Additional consolidation accounts**, user will get a warning message with information about missing mapping for it when generating the report.
 
-#### Option (1): Associate main accounts used in Finance with Norwegian standard accounts using **Additional consolidation accounts**
+#### Option (1): Associate main accounts used in Finance with Norwegian standard accounts or or Income statement using **Additional consolidation accounts**
 
 1. Create a [consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). Value from **Consolidation account group** field of **Consolidation account groups** page is used in `GroupingCategory` field of the report when **Use grouping category** parameter of the report is switched on.
 
