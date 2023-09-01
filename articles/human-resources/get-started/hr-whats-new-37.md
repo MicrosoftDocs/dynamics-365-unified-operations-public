@@ -31,18 +31,11 @@ ms.dyn365.ops.version: 10.0.37
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.37. This version has a build number of 10.0.1695 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.37. This version has a build number of 10.0.1725 and is available on the following schedule:
 
 - **Preview of release:** September 2023
 - **General availability of release (self-update):** October 2023
 - **General availability of release (auto-update):** November 2023
-
-## Features included in this release
-
-The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
-
-| Feature area | Feature | More information | Enabled by |
-|--------------|---------|------------------|------------|
 
 ## Feature enhancements included in this release
 
@@ -50,10 +43,17 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
+|Leave and absence|Configure multiple leave types on a single leave plan	| In Dynamics 365 Human Resources version 10.0.40, this feature will be mandatory. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](hr-leave-and-absence-plans.md)|
+|Leave and absence |Configure leave units per leave type	|In Dynamics 365 Human Resources version 10.0.40, this feature will be mandatory. This feature enables the units for each leave type can be set to either **Hours** or **Day**. For more information, see [Configure leave](hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type).| 
+|Leave and absence |Open ended leave|	In Dynamics 365 Human Resources version 10.0.40, this feature will be mandatory.| 
 
-## Features turned on by default in this release
+## Additional resources
 
-The following table lists the features that are turned on by default in version 10.0.37. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+### Platform updates for finance and operations apps
 
-| Feature name | Feature state | Module |
-|--------------|---------------|--------|
+Dynamics 365 Human Resources version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
+
