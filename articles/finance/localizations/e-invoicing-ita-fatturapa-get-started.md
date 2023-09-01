@@ -40,7 +40,7 @@ Complete the following procedures before you deploy the application setup to you
 
 This section complements the [Country/region-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
 
-### Create a new number sequence for ProgressivoInvio
+### <a name="ProgressivoInvio">Create a new number sequence for ProgressivoInvio</a>
 
 1. Sign in to RCS.
 2. In the **Globalization feature** workspace, select **Environment setup**, and then select **Service environments**.
@@ -109,9 +109,9 @@ The following procedures must be completed for all Electronic reporting (ER) for
 2. On the **Setups** tab, select **Sales invoices**, and then select **Edit**.
 3. In the **Processing pipeline** section, go through the actions, and set all the required fields:
 
+    - For the **Get next number sequence value** action, in the **Parameters** section, select the **Number sequence** parameter, and then, in the **Value** field, select previously defined number sequence for [**ProgressivoInvio**](#ProgressivoInvio).
+    - For the **Submit** action, add a value to the **URL address** and **Certificates** fields, in **Parameters** section. The value of the **Certificates** field is a chain of certificates that was added in one of the previous sections (**SDIChainProd** or **SDIChainTest**).
     - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate (*Optionally*).
-    - For the **Submit** action, add a value to the **URL address** and **Certificates** fields. The value of the **Certificates** field is a chain of certificates that was added in one of the previous sections (**SDIChainProd** or **SDIChainTest**).
-    - For the **Generate format** action, in the **Configuration user input parameters** section, select the **ProgressivoInvioUIP** parameter, change its **Data type** value to **sequence**, and then, in the **Value** field, select one of the available values.
 
 4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
     - Review the **LegalEntityID** clause and update with the correct value from your legal entity.
