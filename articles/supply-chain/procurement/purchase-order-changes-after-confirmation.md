@@ -47,7 +47,7 @@ This feature was added in builds that came out after the initial release of vers
 
 ### Step 2: Enable the workspace feature in Feature management
 
-In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) Review changes to confirmed purchase orders based on downstream impact*.
+In the [**Feature management**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *Review changes to confirmed purchase orders based on downstream impact*.
 
 ### <a name="enable-sql-key"></a>Step 3: Enable the SQL row version change tracking license key
 

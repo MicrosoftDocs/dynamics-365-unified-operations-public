@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer, IT Pro
+audience: Application user, Developer
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
