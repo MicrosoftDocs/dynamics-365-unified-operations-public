@@ -43,8 +43,8 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|Leave and absence|Configure multiple leave types on a single leave plan	| This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](/hr-leave-and-absence-plans.md)|
-|Leave and absence |Configure leave units per leave type	|This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. This feature enables the units for each leave type can be set to either **Hours** or **Day**. For more information, see [Configure leave](/hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type).| 
+|Leave and absence|Configure multiple leave types on a single leave plan	| This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](/hr-leave-and-absence-plans)|
+|Leave and absence |Configure leave units per leave type	|This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40. This feature enables the units for each leave type can be set to either **Hours** or **Day**. For more information, see [Configure leave](/hr-leave-and-absence-types#configure-leave-units-hoursdays-per-leave-type).| 
 |Leave and absence |Open ended leave|	This feature will be mandatory by the Dynamics 365 Human Resources version 10.0.40.| 
 
 ## Additional resources
