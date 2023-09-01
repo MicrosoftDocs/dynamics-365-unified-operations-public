@@ -81,6 +81,9 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 
 By default, after the orders are successfully synced, they are put in a hold status, based on the hold code that is defined in the Commerce parameters. The hold on the orders must be removed before the orders can be processed further for fulfillment or other operations.
 
+## Preventing a transaction from being processed by order synchronizer
+There are situations where you do not want certain transactions to be picked up by the order synchronizer job because you might have already created corresponding orders manually. Thus, to prevent the "Synchronize Orders" job from picking certain transactions for processing, you can edit the transactions and set the property "Entry Status" as "Voided" for such transactions. The synchronize orders job will skip such transactions from processing.
+
 ## Additional resources
 
 [Edit and audit cash and carry and cash management transactions](edit-cash-trans.md)
