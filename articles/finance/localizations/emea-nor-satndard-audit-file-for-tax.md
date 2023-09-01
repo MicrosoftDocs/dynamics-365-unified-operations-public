@@ -198,9 +198,9 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
 6. Select **Include zero lines** to include documents with zero amount to the report.
   
-8. In the **Consolidation account group** select the **Consolidation account group** name that you created and set up for [Norwegian standard accounts or Income statement](#main).
+8. This option is availabel as of Finance version 10.0.37. In the **Consolidation account group** select the **Consolidation account group** name that you created and set up for [Norwegian standard accounts or Income statement](#main).
 
-9. Select the **Use grouping category** check box to force generation of `GroupingCategory` and `GroupingCode` nodes instead of `StandardAccountID` in` GeneralLedgerAccounts` node. Value for `GroupingCategory` field will be copied from **Consolidation account group** name, so selecting a **Consolidation account group** is mandatory when using this option.
+9. This option is availabel as of Finance version 10.0.37. Select the **Use grouping category** check box to force generation of `GroupingCategory` and `GroupingCode` nodes instead of `StandardAccountID` in` GeneralLedgerAccounts` node. Value for `GroupingCategory` field will be copied from **Consolidation account group** name, so selecting a **Consolidation account group** is mandatory when using this option.
 
 You can also apply filters for the **Main accounts** and **General journal entry** fields by using **Records to include** FastTab in the dialog box for the report.
 
@@ -251,6 +251,8 @@ After the report is generated, if more than one XML file is generated, the user 
 ### \<AnalysisType\> and \<AnalysisTypeDescription\> nodes
 
 The SAF-T report for Norway must include information about the **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers that are used for further specification of transaction data. In Finance, **Financial dimensions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimensions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
+
+As of version 175.119 of **SAF-T Format (NO)** ER format, **Journal type** enumerated list of values is included as an additional data source for **AnalysisTypeTable**. Thus, **AnalysisTypeTable** under the **MasterFiles** node of the report includes all the values of **LedgerPostingType** enum in Finance represented with  **Bilagsart** value on `AnalysisTypeDescription` field, and each general journal account entry reported in `GeneralLedgerEntries > Journal > Transaction > Line` node of SAF-T is reported including information from  **LedgerPostingType** value of `GeneralJournalAccountEntry` table represented in `Analysis` node.
 
 ### <a name="one-voucher"></a>SAF-T report and One voucher
 
