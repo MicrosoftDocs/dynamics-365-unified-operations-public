@@ -36,7 +36,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 5. [Associate main accounts with Norwegian standard accounts or Income statement (Næringslivskoder)](#main).
 6. [Enable features in Feature management](#features).
 
-### <a name="import"></a>Import Electronic reporting (ER) configurations
+### <a name="import"></a> Import Electronic reporting (ER) configurations
 
 In Finance, import the following Electronic reporting (ER) configurations from the Global repository.
 
@@ -53,7 +53,7 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
 
-### <a name="registration-number"></a>Set up the tax registration numbers of the company
+### <a name="registration-number"></a> Set up the tax registration numbers of the company
 
 As of version 175.119 of **SAF-T Format (NO)** ER format, `TaxRegistration` node under `Header > Company` of the report represents VAT registration numbers of the company that are actule in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity. `TaxVerificationDate` field of the `TaxRegistration` node represents the expiration date of the **Registration ID** in case the number expiration date is within the reporting period. To configure the **Registration ID** to be reported in `TaxRegistration` node, complete the following steps.
 
@@ -68,7 +68,7 @@ For more information about how to set up registration categories and registratio
 
 If the VAT registration number isn't specified in the **Registration IDs** of the legal entity, the system retrieves value from **Tax registration number** field on the **Tax registration** FastTab of the legal entity properties page.
 
-### <a name="parameters"></a>Set up the ER format 
+### <a name="parameters"></a> Set up the ER format 
 
 1. In Finance, go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **SAF-T Format (NO)**.
@@ -80,7 +80,7 @@ If the VAT registration number isn't specified in the **Registration IDs** of th
 >
 > To run the **SAF-T Format (NO)** ER configuration, you must *clear* the **Use common menu item** checkbox. Select the **Use common menu item** checkbox only if you plan to use an ER configuration that can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on the Finance app side.
 
-### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) codes
+### <a name="sales"></a> Associate sales tax codes with Norwegian standard value-added tax (VAT) codes
 
 As the documentation explains, in Norwegian SAF-T Financial data, sales tax codes that are used in Finance must be associated with Norwegian standard VAT tax codes (`StandardTaxCode`) for the purpose of SAF-T reporting. The Norwegian standard VAT tax codes are available at <https://github.com/Skatteetaten/saf-t>.
 
@@ -113,7 +113,7 @@ Find detailed description for both of the supported options below. If option (1)
 
     ![Setup Standard tax code for the selected Sales tax code.](media/not-saf-external-codes-tax.png)
 
-### <a name="main"></a>Associate main accounts used in Finance with Norwegian standard accounts or Income statement (Næringslivskoder)
+### <a name="main"></a> Associate main accounts used in Finance with Norwegian standard accounts or Income statement (Næringslivskoder)
 
 As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts or Income statement (Næringslivskoder) for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
