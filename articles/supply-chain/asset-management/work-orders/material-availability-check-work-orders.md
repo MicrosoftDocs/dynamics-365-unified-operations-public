@@ -1,10 +1,10 @@
 ---
-title: Maintenance availability check for work orders
-description: This article describes how supervisors can conduct a material availability check on maintenance work orders.
+title: Material availability check for work orders
+description: This article describes how supervisors can check whether all the required materials are available for one or more maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: EntAssetWorkOrderMaterialAvailability, EntAssetWorkOrderTable
 ms.topic: how-to
 ms.date: 09/01/2023
 audience: Application User
@@ -15,6 +15,9 @@ ms.custom: bap-template
 # Material availability check for work orders
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+
+<!--KFM: Preview until 10.0.37 GA -->
 
 Supervisors can make a material availability check on work orders. This process is relevant for organizations that want to confirm that all of the required spare parts are available before workers start maintenance work. For example, a supervisor might be responsible for all corrective maintenance on a manufacturing site. As a standard procedure, the supervisor checks whether all materials required for each work order are available before releasing them to maintenance workers for processing.
 
@@ -74,7 +77,7 @@ Follow these steps to check material availability for work orders.
 
 1. Select **OK** to run the check.
 
-1. The **Work orders** section of the **Work order material availability** page now indicates the material availability status of each selected work order using one of the following icons in the **Ready to be released** column.
+1. The **Work orders** section of the **Work order material availability** page now indicates the material availability status of each selected work order by showing one of the following icons in the **Ready to be released** column:
 
     | Icon | Description |
     | --- | --- |
@@ -82,27 +85,33 @@ Follow these steps to check material availability for work orders.
     | :::image type="icon" source="media/material-check-available.png" border="false"::: | All materials for the work order are fully available. |
     | :::image type="icon" source="media/material-check-warning.png" border="false"::: | Some or all of the materials for the work order aren't available. |
 
-1. In the lower section of the **Work order material availability** page, verify the material availability status of the each material for the work order by the icon shown in the **Material availability** field. The icons used have the following description:
+1. Select a work order in the **Work orders** section. The **On-hand inventory** section now indicates the availability of each material for the selected work order by showing one of the following icons in the **Material availability** column:
 
-    :::image type="icon" source="media/MatAvail - checkmark.png" border="false":::
-    - The check has been conduced and the material is fully available. In this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, equals the quantity in the **On-hand settled** field.  
-    
-    :::image type="icon" source="media/MatAvail - Warning.png" border="false":::
-    - The check has been conduced and the material is fully available. In this status, the **Requested quantity** is not fully covered by the **On-hand quantity**, but is instead covered by the **planned order quantity** or the **Ordered quantity** or a combination of those. 
+    | Icon | Description |
+    | --- | --- |
+    | :::image type="icon" source="media/material-check-available.png" border="false"::: | The required material is fully available. For material in this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, equals the quantity in the **On-hand settled** field. |
+    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. In this status, the **Requested quantity** is not fully covered by the **On-hand quantity**, but is instead covered by a combination of the **On-hand quantity**, **Planned order settled** quantity, and/or **Ordered settled** quantity. <!--KFM: I edited both field names and math of this final sentence. Please confirm. -->
 
->[!TIP]
->In the toolbar under the **Inventory** menu item, you can open the **Explosion** page to get more details about how the demand for the requested quantity is covered.
+    > [!TIP]
+    > To get more information about how the demand for the requested quantity is covered, select **Inventory \> Explosion** from the **On-hand inventory** section toolbar.
 
-1. Use the **Material availability** field to filter on the work orders. You have the following options:
-    - **All** - Show all work orders
-    - **Upcoming** - Show work order where all materials are not available
-    - **Available** - Only show work orders where all materials are available.
+1. Your material availability check is now complete. If you like, you can now update the state of orders that are ready to be worked on by maintenance workers, as described in the next section
 
-    For this procedure, select **Available** to show work orders where all material is available. The supervisor can now change the work order state on those work orders where all material is available. The new state can then indicate that the orders are ready to be worked on by maintenance workers.
+## Update a work order state
 
-1. Select **Update work order state** from the toolbar to open the **Update work order state** dialog. 
+Once you have confirmed that all materials are available for a work order, you can update the work order state to indicate that the order is ready to be worked on by maintenance workers. To do so, follow these steps:
+
+1. If you aren't already there, open the **Material availability check** page, as described in the previous section.
+1. To get help finding the work orders you're looking for, you can use **Material availability** field to filter the work orders in the **Work orders** section. Select one of the following options:
+    - *All* - Show all work orders
+    - *Upcoming** - Only show work orders where some or all materials are not available
+    - *Available* - Only show work orders where all materials are available. These orders are ready to be worked on by maintenance workers.
+
+    For this procedure, select *Available* to show the work orders where all materials are available. You can now change the work order state of these orders to indicate that they are ready to be worked on by maintenance workers.
+
+1. In the **Work orders** section, select one or more orders that you want to update.
+1. Select **Update work order state** from the toolbar to open the **Update work order state** dialog.
 1. Select the next work order state for the selected work orders.
 1. Select **OK** to confirm.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
