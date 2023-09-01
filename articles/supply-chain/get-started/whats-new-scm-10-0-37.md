@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.37. This version has a build number of 10.0.1695 <!-- KFM: Get new build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.37. This version has a build number of 10.0.1725 and is available on the following schedule:
 
 - **Preview of release:** September 2023
 - **General availability of release (self-update):** October 2023
@@ -31,7 +31,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Asset management | Material availability check on maintenance work orders | *Coming soon* |  Feature management:<br>*(Preview) Material availability check on maintenance work orders* |
 | Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
-| Manufacturing and asset management | [Over-pick materials for production orders and batch orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/over-pick-materials-production-orders-batch-orders) | *Coming soon* | Feature management:<br>*Over-pick materials for production orders and batch orders* |
+| Manufacturing and asset management | [Over-pick materials for production orders and batch orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/over-pick-materials-production-orders-batch-orders) | [Over-pick materials for production and batch orders](../warehousing/over-pick-materials-for-production-and-batch-orders.md) | Feature management:<br>*Over-pick materials for production orders and batch orders* |
 | Warehouse management | Auto add shipments to waves | *Coming soon* | Enabled by default |
 | Warehouse management | [Automatically update documents when receiving purchase orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/automatically-update-documents-when-receiving-purchase-orders) | [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md) | Enabled by default |
 | Warehouse management | Confirm serial numbers during picking | [Batch, serial, and license plate confirmation](../warehousing/batch-and-license-plate-confirmation.md) | Enabled by default |
@@ -58,9 +58,13 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of Finance and Operations apps (November 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md). <!-- KFM: Confirm link -->
 
+<!-- KFM: Get new link 
+
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](#)<!-- KFM: Get new link -->.
+For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](#).
+
+-->
 
 ### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan
 
