@@ -36,7 +36,7 @@ This article includes lists of resources that can help you do the following:
 - Learn how to use country/region specific functionality.
 
 ### Developing localized solutions
-The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are creating a solution for a country that Microsoft does not support.
+The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are creating a solution for a country/region that Microsoft does not support.
 -   [Separation of localization models](separate-localization-models.md)
 -   [Apply country/region context](apply-country-context.md)
 -   [Regulatory certification information in feature titles](regulatory-certifications.md)

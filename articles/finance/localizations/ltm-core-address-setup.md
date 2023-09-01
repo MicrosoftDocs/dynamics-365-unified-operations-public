@@ -13,7 +13,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Each Latin American country has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
+Each Latin American country/region has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Follow these steps to associate a tax ID with a country or region on the **Addre
 4. If the selected country or region is foreign, make sure that the **Foreign country/region** checkbox is selected.
 
     > [!IMPORTANT]
-    > By default, the **Foreign country/region** checkbox is selected. Make sure that it's cleared for the base country.
+    > By default, the **Foreign country/region** checkbox is selected. Make sure that it's cleared for the base country/region.
 
 5. In the **Allowed country/region document types** section, select **New**.
 6. In the list, select a tax identification ID.
