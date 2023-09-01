@@ -11,6 +11,9 @@ ms.custom: bap-template
 
 # Latin America overview
 
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 In Latin America (LATAM), Microsoft Dynamics 365 Finance previously supported out-of-box localizations for Brazil and Mexico. Then, in 2023 release wave 1, Microsoft delivered out-of-box localizations for more countries/regions in Latin America. In future release waves, we will continue to extend the scope of supported countries/regions in Latin America to address the needs of multiple global and local customers. Eventually, we will deliver out-of-box localizations for a total of 16 LATAM countries/regions.
 
 Tax compliance requirements are complex and change frequently. Companies are looking for more out-of-box geographic coverage and tax compliance automation from Microsoft. By releasing localizations for additional LATAM countries/regions, we significantly extend our country/region support. We also give customers more consistent out-of-box regulatory compliance coverage in multiple areas, including tax reporting and electronic invoicing.
