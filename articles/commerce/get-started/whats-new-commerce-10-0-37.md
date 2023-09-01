@@ -2,13 +2,13 @@
 title: Preview of Dynamics 365 Commerce 10.0.37 (November 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.37. 
 author: josaw1
-ms.date: 08/01/2023
+ms.date: 09/01/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
-ms.search.validFrom: 2023-07-31
+ms.search.validFrom: 2023-09-01
 ms.dyn365.ops.version: 10.0.37
 
 ---
@@ -41,7 +41,7 @@ Microsoft Dynamics 365 Commerce version 10.0.37 includes platform updates. To le
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=X).
+For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 2 plan
 
