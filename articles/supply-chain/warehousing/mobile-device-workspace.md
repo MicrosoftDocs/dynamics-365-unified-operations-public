@@ -6,7 +6,7 @@ ms.author: mfp
 ms.reviewer: kamaybac
 ms.search.form: WHSMobileDeviceWorkspace, WHSMobileDevice
 ms.topic: how-to
-ms.date: 10/01/2023
+ms.date: 09/01/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
