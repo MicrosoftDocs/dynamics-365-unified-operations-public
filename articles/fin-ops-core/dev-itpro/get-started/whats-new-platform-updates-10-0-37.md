@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.37 of finance and operations apps (November 2023)
 description: This article lists the features that are included in the platform updates for version 10.0.37 of finance and operations apps.
 author: johnmichalak
-ms.date: 07/31/2023
+ms.date: 09/01/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -41,7 +41,7 @@ This section will contain a table that lists the enhancements that are included 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=nnnnn).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
 
 ### Dynamics 365: 2023 release wave 1 plan
 
