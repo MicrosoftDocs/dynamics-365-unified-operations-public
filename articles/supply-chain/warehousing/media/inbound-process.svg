@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1244.9144"
+   height="157.3764"
+   overflow="hidden"
+   version="1.1"
+   id="svg61"
+   sodipodi:docname="inbound-process.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.5960938"
+     inkscape:cx="620.57758"
+     inkscape:cy="99.931473"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61" />
+  <defs
+     id="defs33">
+    <linearGradient
+       x1="108"
+       y1="317"
+       x2="108"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill0">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop1" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       x1="215.5"
+       y1="341"
+       x2="215.5"
+       y2="379"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill1">
+      <stop
+         offset="0"
+         stop-color="#B5BFC9"
+         id="stop4" />
+      <stop
+         offset="0.5"
+         stop-color="#A9B6C2"
+         id="stop5" />
+      <stop
+         offset="1"
+         stop-color="#94A2AD"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       x1="321"
+       y1="317"
+       x2="321"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill2">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop7" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop8" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop9" />
+    </linearGradient>
+    <linearGradient
+       x1="428"
+       y1="341"
+       x2="428"
+       y2="379"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill3">
+      <stop
+         offset="0"
+         stop-color="#B5BFC9"
+         id="stop10" />
+      <stop
+         offset="0.5"
+         stop-color="#A9B6C2"
+         id="stop11" />
+      <stop
+         offset="1"
+         stop-color="#94A2AD"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       x1="534"
+       y1="317"
+       x2="534"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill4">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop13" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop14" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop15" />
+    </linearGradient>
+    <linearGradient
+       x1="641"
+       y1="341"
+       x2="641"
+       y2="379"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill5">
+      <stop
+         offset="0"
+         stop-color="#B5BFC9"
+         id="stop16" />
+      <stop
+         offset="0.5"
+         stop-color="#A9B6C2"
+         id="stop17" />
+      <stop
+         offset="1"
+         stop-color="#94A2AD"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       x1="746"
+       y1="317"
+       x2="746"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill6">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop19" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop20" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop21" />
+    </linearGradient>
+    <linearGradient
+       x1="853.5"
+       y1="341"
+       x2="853.5"
+       y2="379"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill7">
+      <stop
+         offset="0"
+         stop-color="#B5BFC9"
+         id="stop22" />
+      <stop
+         offset="0.5"
+         stop-color="#A9B6C2"
+         id="stop23" />
+      <stop
+         offset="1"
+         stop-color="#94A2AD"
+         id="stop24" />
+    </linearGradient>
+    <linearGradient
+       x1="959"
+       y1="317"
+       x2="959"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill8">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop25" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop26" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop27" />
+    </linearGradient>
+    <linearGradient
+       x1="1066"
+       y1="341"
+       x2="1066"
+       y2="379"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill9">
+      <stop
+         offset="0"
+         stop-color="#B5BFC9"
+         id="stop28" />
+      <stop
+         offset="0.5"
+         stop-color="#A9B6C2"
+         id="stop29" />
+      <stop
+         offset="1"
+         stop-color="#94A2AD"
+         id="stop30" />
+    </linearGradient>
+    <linearGradient
+       x1="1172"
+       y1="317"
+       x2="1172"
+       y2="403"
+       gradientUnits="userSpaceOnUse"
+       spreadMethod="reflect"
+       id="fill10">
+      <stop
+         offset="0"
+         stop-color="#497491"
+         id="stop31" />
+      <stop
+         offset="0.5"
+         stop-color="#106287"
+         id="stop32" />
+      <stop
+         offset="1"
+         stop-color="#08587C"
+         id="stop33" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g61"
+     transform="translate(-19.422418,-260.00979)">
+    <rect
+       x="0"
+       y="0"
+       width="1280"
+       height="720"
+       fill="#ffffff"
+       id="rect33" />
+    <path
+       d="m 32,325.6 c 0,-4.75 3.8504,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 H 40.6 c -4.7496,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill0)"
+       fill-rule="evenodd"
+       id="path33"
+       style="fill:url(#fill0)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(51.3916,355)"
+       id="text33">Vendor</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(103.725,355)"
+       id="text34">confirms</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(42.9916,373)"
+       id="text35">the purchase order</text>
+    <path
+       d="m 199,348.6 h 16.5 V 341 l 16.5,19 -16.5,19 v -7.6 H 199 Z"
+       fill="url(#fill1)"
+       fill-rule="evenodd"
+       id="path35"
+       style="fill:url(#fill1)" />
+    <path
+       d="m 245,325.6 c 0,-4.75 3.85,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 H 253.6 c -4.75,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill2)"
+       fill-rule="evenodd"
+       id="path36"
+       style="fill:url(#fill2)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(259.768,347)"
+       id="text36">Load</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(297.348,347)"
+       id="text37">is created to</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(255.075,365)"
+       id="text38">plan the arrival and</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(280.355,382)"
+       id="text39">its contents</text>
+    <path
+       d="m 412,348.6 h 16 V 341 l 16,19 -16,19 v -7.6 h -16 z"
+       fill="url(#fill3)"
+       fill-rule="evenodd"
+       id="path39"
+       style="fill:url(#fill3)" />
+    <path
+       d="m 458,325.6 c 0,-4.75 3.85,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 H 466.6 c -4.75,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill4)"
+       fill-rule="evenodd"
+       id="path40"
+       style="fill:url(#fill4)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(476.762,355)"
+       id="text40">Vendor</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(529.095,355)"
+       id="text41">confirms</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(486.702,373)"
+       id="text42">load dispatch</text>
+    <path
+       d="m 625,348.6 h 16 V 341 l 16,19 -16,19 v -7.6 h -16 z"
+       fill="url(#fill5)"
+       fill-rule="evenodd"
+       id="path42"
+       style="fill:url(#fill5)" />
+    <path
+       d="m 670,325.6 c 0,-4.75 3.85,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 H 678.6 c -4.75,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill6)"
+       fill-rule="evenodd"
+       id="path43"
+       style="fill:url(#fill6)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(688.002,347)"
+       id="text43">Load</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(728.835,347)"
+       id="text44">arrives</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(778.395,347)"
+       id="text45">and</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(679.368,365)"
+       id="text46">warehouse workers</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(684.162,382)"
+       id="text47">register quantities</text>
+    <path
+       d="m 837,348.6 h 16.5 V 341 l 16.5,19 -16.5,19 v -7.6 H 837 Z"
+       fill="url(#fill7)"
+       fill-rule="evenodd"
+       id="path47"
+       style="fill:url(#fill7)" />
+    <path
+       d="m 883,325.6 c 0,-4.75 3.85,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 H 891.6 c -4.75,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill8)"
+       fill-rule="evenodd"
+       id="path48"
+       style="fill:url(#fill8)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(925.828,347)"
+       id="text48">Receiving</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(921.562,365)"
+       id="text49">completed</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(914.682,382)"
+       id="text50">confirmation</text>
+    <path
+       d="m 1050,348.6 h 16 V 341 l 16,19 -16,19 v -7.6 h -16 z"
+       fill="url(#fill9)"
+       fill-rule="evenodd"
+       id="path50"
+       style="fill:url(#fill9)" />
+    <path
+       d="m 1096,325.6 c 0,-4.75 3.85,-8.6 8.6,-8.6 h 134.8 c 4.75,0 8.6,3.85 8.6,8.6 v 68.8 c 0,4.75 -3.85,8.6 -8.6,8.6 h -134.8 c -4.75,0 -8.6,-3.85 -8.6,-8.6 z"
+       fill="url(#fill10)"
+       fill-rule="evenodd"
+       id="path51"
+       style="fill:url(#fill10)" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(1118.14,338)"
+       id="text51">Registered</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(1194.81,338)"
+       id="text52">load</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(1124.34,356)"
+       id="text53">quantities are</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(1121.03,373)"
+       id="text54">posted against</text>
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="16px"
+       transform="translate(1115.43,391)"
+       id="text55">purchase orders</text>
+    <path
+       d="m 32,291 c 0,-8.284 6.7157,-15 15,-15 8.2843,0 15,6.716 15,15 0,8.284 -6.7157,15 -15,15 -8.2843,0 -15,-6.716 -15,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path55" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(42,296)"
+       id="text56">1</text>
+    <path
+       d="m 245,291 c 0,-8.284 6.716,-15 15,-15 8.284,0 15,6.716 15,15 0,8.284 -6.716,15 -15,15 -8.284,0 -15,-6.716 -15,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path56" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(255.149,296)"
+       id="text57">2</text>
+    <path
+       d="m 458,291 c 0,-8.284 6.492,-15 14.5,-15 8.008,0 14.5,6.716 14.5,15 0,8.284 -6.492,15 -14.5,15 -8.008,0 -14.5,-6.716 -14.5,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path57" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(467.669,296)"
+       id="text58">3</text>
+    <path
+       d="m 671,291 c 0,-8.284 6.492,-15 14.5,-15 8.008,0 14.5,6.716 14.5,15 0,8.284 -6.492,15 -14.5,15 -8.008,0 -14.5,-6.716 -14.5,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path58" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(680.504,296)"
+       id="text59">4</text>
+    <path
+       d="m 884,291 c 0,-8.284 6.492,-15 14.5,-15 8.008,0 14.5,6.716 14.5,15 0,8.284 -6.492,15 -14.5,15 -8.008,0 -14.5,-6.716 -14.5,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path59" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(893.338,296)"
+       id="text60">5</text>
+    <path
+       d="m 1096,291 c 0,-8.284 6.72,-15 15,-15 8.28,0 15,6.716 15,15 0,8.284 -6.72,15 -15,15 -8.28,0 -15,-6.716 -15,-15 z"
+       fill="#156082"
+       fill-rule="evenodd"
+       id="path60" />
+    <text
+       fill="#ffffff"
+       font-family="Aptos, Aptos_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(1106.01,296)"
+       id="text61">6</text>
+  </g>
+</svg>
