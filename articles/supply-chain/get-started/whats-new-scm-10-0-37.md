@@ -58,13 +58,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of Finance and Operations apps (November 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md). <!-- KFM: Confirm link -->
 
-<!-- KFM: Get new link 
-
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](#).
-
--->
+For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
 
 ### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 2 plan
 
