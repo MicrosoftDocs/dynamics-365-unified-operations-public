@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.37 (November)
+          href: get-started/whats-new-changed-10-0-37.md
         - name: Finance 10.0.36 (October)
           href: get-started/whats-new-changed-10-0-36.md  
         - name: Finance 10.0.35 (August)
@@ -2309,7 +2311,13 @@
           - name: Danish Intrastat
             href: localizations/emea-dnk-intrastat.md
           - name: VAT declaration
-            href: localizations/emea-dnk-vat-declaration-denmark.md
+            items:
+            - name: VAT declaration overview
+              href: localizations/emea-dnk-vat-declaration-denmark.md
+            - name: Preview VAT declaration in Excel format
+              href: localizations/emea-dnk-vat-declaration-preview.md
+            - name: Submit VAT return in XML to the Danish Tax Agency
+              href: localizations/emea-dnk-vat-declaration-submission.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/emea-dnk-saf-t.md
           - name: Accounting basis (Regnskab Basis) electronic report for Denmark
@@ -3150,6 +3158,8 @@
             href: localizations/tasks/configure-main-accounts-asset-retirement.md
           - name: Consumption tax report
             href: localizations/apac-jpn-consumption-tax-report.md
+          - name: Qualified Invoice System
+            href: localizations/apac-jpn-qualified-invoice-system.md            
           - name: Consolidated invoices
             href: localizations/apac-jpn-consolidate-invoices.md
           - name: Create a fixed asset with additional depreciation
@@ -3298,6 +3308,8 @@
             href: localizations/ltm-core-tax-id-type.md
           - name: Tax application for Latin America
             href: localizations/ltm-core-tax-application.md
+          - name: Tax and legal attributes for Latin America
+            href: localizations/ltm-tax-legal-attributes.md
           - name: Document classes for Latin America
             href: localizations/ltm-core-document-class.md
           - name: Document class types for Latin America
