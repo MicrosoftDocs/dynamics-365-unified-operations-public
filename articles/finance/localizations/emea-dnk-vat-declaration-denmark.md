@@ -14,6 +14,7 @@ ms.search.validFrom:
 # VAT declaration of Denmark overview
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to set up the value-added tax (VAT) declaration for Denmark, preview it in Microsoft Excel, and then submit it to the Danish Tax Agency (Skattestyrelsen).
 
