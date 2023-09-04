@@ -17,9 +17,16 @@ ms.custom: bap-template
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-<!--KFM: Preview until 10.0.37 GA -->
+<!--KFM: Preview until further notice -->
 
 Supervisors can make a material availability check on work orders. This process is relevant for organizations that want to confirm that all of the required spare parts are available before workers start maintenance work. For example, a supervisor might be responsible for all corrective maintenance on a manufacturing site. As a standard procedure, the supervisor checks whether all materials required for each work order are available before releasing them to maintenance workers for processing.
+
+## Prerequisites
+
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.37 or later.
+- The feature that is named *(Preview) Material availability check on maintenance work orders* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## How the material availability check works
 
@@ -43,7 +50,7 @@ Follow these steps to check material availability for work orders.
 1. Select a work order in the upper grid. Check whether the order shows a checkmark in the **journal lines** column. If not, choose *one* of the following methods to create the journal lines:
 
     - **Create the journal lines from a forecast:**
-        1. Select **Forecast** from the toolbar to open the **Work order maintenance forecast** page. 
+        1. Select **Forecast** from the toolbar to open the **Work order maintenance forecast** page.
         1. Expand the **Items** FastTab and check whether there are any item forecast lines for the order. If there are no lines, you can add them by selecting **Add**, **Add spare parts** or **Add BOM items** from the toolbar.
             > [!TIP]
             > You can set up the system to automatically generate item forecast lines for work orders by setting up default forecasts on the **Maintenance job type defaults** page.
@@ -70,10 +77,10 @@ Follow these steps to check material availability for work orders.
     - **Run mode** – Select the type of check you want to conduct. Choose one of the following settings:
         - *Master planning + Availability check* – The check runs master planning for the products relating to the work orders and then runs a material availability check for the orders based on the master planning result.
         - *Availability check only* – The check is run based on data from the latest version of the master planning.
-    - **Plan** – Select the master plan to use when running master planning. Normally the master plan representing the dynamics master plan will be used. <!--KFM: Anything to say about the other two fields here? **Planning method** and **Number of threads**. -->
+    - **Plan** – Select the master plan to use when running master planning. Normally the master plan representing the dynamics master plan will be used.
 
     > [!TIP]
-    > For this procedure, choose the value *Master planning + Availability check* <!--KFM: What do we mean by "this procedure"? Do this every time, or just do this when exploring/demoing? -->
+    > If you're just exploring the feature for now (for example using [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md)), then select *Master planning + Availability check*.
 
 1. Select **OK** to run the check.
 
@@ -90,7 +97,7 @@ Follow these steps to check material availability for work orders.
     | Icon | Description |
     | --- | --- |
     | :::image type="icon" source="media/material-check-available.png" border="false"::: | The required material is fully available. For material in this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, equals the quantity in the **On-hand settled** field. |
-    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. In this status, the **Requested quantity** is not fully covered by the **On-hand quantity**, but is instead covered by a combination of the **On-hand quantity**, **Planned order settled** quantity, and/or **Ordered settled** quantity. <!--KFM: I edited both field names and math of this final sentence. Please confirm. -->
+    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. In this status, the **Requested quantity** is not fully covered by the **On-hand settled**, but is instead covered by a combination of the **On-hand settled**, **Planned order settled** quantity, and/or **Order settled** quantity.
 
     > [!TIP]
     > To get more information about how the demand for the requested quantity is covered, select **Inventory \> Explosion** from the **On-hand inventory** section toolbar.
@@ -104,7 +111,7 @@ Once you have confirmed that all materials are available for a work order, you c
 1. If you aren't already there, open the **Material availability check** page, as described in the previous section.
 1. To get help finding the work orders you're looking for, you can use **Material availability** field to filter the work orders in the **Work orders** section. Select one of the following options:
     - *All* - Show all work orders
-    - *Upcoming** - Only show work orders where some or all materials are not available
+    - *Upcoming* - Only show work orders where some or all materials are not available
     - *Available* - Only show work orders where all materials are available. These orders are ready to be worked on by maintenance workers.
 
     For this procedure, select *Available* to show the work orders where all materials are available. You can now change the work order state of these orders to indicate that they are ready to be worked on by maintenance workers.
