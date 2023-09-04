@@ -89,7 +89,7 @@ To set up minimum order per vendor rules, follow these steps.
     - **Vendor account** – Select the vendor that the rule applies to.
     - **Item number** – Select the item that the rule applies to.
     - **Minimum** – Enter the minimum purchase per order for the specified combination of a vendor and an item.
-    - **Unit** – Select the unit of measure that applies to the **Minimum** value.
+    - **Unit** – Purchase unit of the item, it is the unit of measure that applies to the **Minimum** value. It is cannot be changed.
 
 1. On the Action Pane, select **Save**.
 
