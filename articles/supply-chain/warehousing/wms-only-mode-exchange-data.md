@@ -33,7 +33,7 @@ You can use inbound and outbound shipment order messages to inform Supply Chain 
 
 Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
 
-Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator) or through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process and for example use the `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity`.
+Inbound and outbound shipment order messages can be exchanged by using [Dataverse](/power-platform/admin/data-integrator) or through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities and/or by using the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process (for example, using the `Inbound shipment order messages composite entity` and `Outbound shipment order messages composite entity`).
 
 Supply Chain Management queues the incoming documents and then processes them by using the [message processor](warehouse-message-processor-messages.md). This approach ensures consistent data between the systems: both master data (such as products) and order progress status. Supply Chain Management inbound and outbound shipment orders are therefore prevented from creating or updating invalid or unsupported order data. We recommend that you process the messages as part of a periodic batch job that the [message processor](../supply-chain-dev/message-processor.md) triggers by using the *Shipment orders* message queue.
 
@@ -143,11 +143,11 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 ## Inventory on-hand reconciliation
 
-The warehouse management only mode can generate data for an inventory on-hand reconciliation process via the **Warehouse management > Inquiries and reports > Create source system on-hand inventory report**
+Warehouse management only mode can generate data for an inventory on-hand reconciliation process when you create a **Create source system on-hand inventory report** (available at **Warehouse management > Inquiries and reports > Create source system on-hand inventory report**). <!--KFM: I don't see this in the UI. Where is it? -->
 
-To create the header and line data you must define a _Source system_ and a _As of date_ and select the level of inventory dimensions the report must get generated for.
-The external system will get informed about the available data via the business event  `WHSSourceSystemInventoryOnhandReportBusinessEvent` and can read the data via the entities  `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines`.
+To create the header and line data you must define a **Source system** and a **As of date** and select the level of inventory dimensions the report should be generated for.
+
+The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event and can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
 
 > [!TIP]
-> When running the **Create source system on-hand inventory report** as a _Recurrence_ batch job processing (for example ones a day) the "As of date" will get overridden and thereby you will get the data generated based on the current processing date. This means that if you as part of the definition of the recurrence set the _Start date_ equal to yesterday and having the _Repeat after specified interval_ equal 1 per day, the batch job will every day automatically generate inventory on-data from the past day.
-
+> If you run **Create source system on-hand inventory report** as a recurring batch job (for example once a day), the **As of date** will be ignored and data will be generated based on the current processing date. Therefore, if you set the **Start date** to yesterday and set **Repeat after specified interval** to *1 per day*, then every day, the batch job will automatically generate inventory on-hand data for the previous day.
