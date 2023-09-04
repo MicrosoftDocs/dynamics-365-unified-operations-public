@@ -42,7 +42,7 @@ Follow these steps to check material availability for work orders.
 
 1. Use the **Filter** field and column-header filters to select the range of work orders you want to check for material availability. All orders shown on the page will be checked.
 
-1. On the Paction pane, open the **Work Order** tab and select **Material availability check** to open the **Material availability check** page.
+1. On the Action pane, open the **Work Order** tab and select **Material availability check** to open the **Material availability check** page.
 
     > [!TIP]
     >The **Material availability check** page is divided into two sections. The **Work orders** section shows the work orders. The **On-hand inventory** section shows journal lines relating to the selected work order.
@@ -58,14 +58,14 @@ Follow these steps to check material availability for work orders.
         1. Select **Copy journals from forecast** from the toolbar to open the **Copy from forecast** dialog and set the **Item** field to **Yes**
         1. Select **OK** in the dialog.
         1. Select the **Refresh** button at the top of the page.
-        1. Verify that the work order now has a journal line by confirming that there is a checkmark in the **Journal lines created** column.
+        1. Verify that the work order now has a journal line by confirming that there's a checkmark in the **Journal lines created** column.
 
     - **Create the journal from the Work order journals page:**
         1. Select **Journals** from the toolbar to open the **Work order journals** page.
-        1. In the **Items** FastTab add a line in the grid.
+        1. In the Items FastTab, add a line in the grid.
         1. Close the **Work order journals** page to return to the **Work order material availability check** page.
         1. Select the **Refresh** button at the top of the page.
-        1. Verify that the work order now has a journal line by confirming that there is a checkmark in the **Journal lines created** column.
+        1. Verify that the work order now has a journal line by confirming that there's a checkmark in the **Journal lines created** column.
 
 1. After you have verified that the work order has journal lines, run the material availability check by selecting **Material availability check** from the toolbar.
 
@@ -77,7 +77,7 @@ Follow these steps to check material availability for work orders.
     - **Run mode** – Select the type of check you want to conduct. Choose one of the following settings:
         - *Master planning + Availability check* – The check runs master planning for the products relating to the work orders and then runs a material availability check for the orders based on the master planning result.
         - *Availability check only* – The check is run based on data from the latest version of the master planning.
-    - **Plan** – Select the master plan to use when running master planning. Normally the master plan representing the dynamics master plan will be used.
+    - **Plan** – Select the master plan to use when running master planning. Normally, the master plan representing the dynamics master plan should be used.
 
     > [!TIP]
     > If you're just exploring the feature for now (for example using [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md)), then select *Master planning + Availability check*.
@@ -88,7 +88,7 @@ Follow these steps to check material availability for work orders.
 
     | Icon | Description |
     | --- | --- |
-    | :::image type="icon" source="media/material-check-unknown.png" border="false"::: | The check couldn't be run for this work order because there is no material demand for it. Make sure there is a journal line for the order. |
+    | :::image type="icon" source="media/material-check-unknown.png" border="false"::: | The check couldn't be run for this work order because there's no material demand for it. Make sure there's a journal line for the order. |
     | :::image type="icon" source="media/material-check-available.png" border="false"::: | All materials for the work order are fully available. |
     | :::image type="icon" source="media/material-check-warning.png" border="false"::: | Some or all of the materials for the work order aren't available. |
 
@@ -97,7 +97,7 @@ Follow these steps to check material availability for work orders.
     | Icon | Description |
     | --- | --- |
     | :::image type="icon" source="media/material-check-available.png" border="false"::: | The required material is fully available. For material in this status, the quantity in the **Requested quantity** field, which is the quantity requested by the work order, equals the quantity in the **On-hand settled** field. |
-    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. In this status, the **Requested quantity** is not fully covered by the **On-hand settled**, but is instead covered by a combination of the **On-hand settled**, **Planned order settled** quantity, and/or **Order settled** quantity.
+    | :::image type="icon" source="media/material-check-warning.png" border="false"::: | The required material is unavailable or only partially available. In this status, the **Requested quantity** isn't fully covered by the **On-hand settled**, but is instead covered by a combination of the **On-hand settled**, **Planned order settled** quantity, and/or **Order settled** quantity.
 
     > [!TIP]
     > To get more information about how the demand for the requested quantity is covered, select **Inventory \> Explosion** from the **On-hand inventory** section toolbar.
@@ -111,10 +111,10 @@ Once you have confirmed that all materials are available for a work order, you c
 1. If you aren't already there, open the **Material availability check** page, as described in the previous section.
 1. To get help finding the work orders you're looking for, you can use **Material availability** field to filter the work orders in the **Work orders** section. Select one of the following options:
     - *All* - Show all work orders
-    - *Upcoming* - Only show work orders where some or all materials are not available
+    - *Upcoming* - Only show work orders where some or all materials aren't available
     - *Available* - Only show work orders where all materials are available. These orders are ready to be worked on by maintenance workers.
 
-    For this procedure, select *Available* to show the work orders where all materials are available. You can now change the work order state of these orders to indicate that they are ready to be worked on by maintenance workers.
+    For this procedure, select *Available* to show the work orders where all materials are available. You can now change the work order state of these orders to indicate that they're ready to be worked on by maintenance workers.
 
 1. In the **Work orders** section, select one or more orders that you want to update.
 1. Select **Update work order state** from the toolbar to open the **Update work order state** dialog.
