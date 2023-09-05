@@ -4,7 +4,7 @@ description: This article provides information that will help you get started wi
 author: gionoder
 ms.date: 03/06/2023
 ms.topic: article
-audience: Application User, Developer
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: gionoder
