@@ -105,10 +105,10 @@ You can specify whether workers should capture a packing slip ID and date for ea
 - *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
-> Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management > Setup > Warehouse management integration > Source systems**), inbound loads may be created in any of the following ways:
+> Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**), inbound loads might be created in any of the following ways:
 >
-> - Automatically, when importing an inbound shipment order
-> - Automatically, when importing an advanced shipping notice (ASN)
+> - Automatically, when an inbound shipment order is imported
+> - Automatically, when an ASN is imported
 > - Via a manual process
 > - As part of the Warehouse Management mobile app receiving process
 >
@@ -176,7 +176,7 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Receiving* – The message is in the process of being imported.
 - *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
-- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after editing.
+- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
 - *Draft* – The message is a copy that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
 - *Canceled* – The message has been manually canceled.
 
