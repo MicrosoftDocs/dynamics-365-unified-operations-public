@@ -29,15 +29,12 @@ Both Supply Chain Management and Sales store and show origin and ownership infor
     - *Dynamics 365 Sales* – The quotation is processed through its lifecycle from Sales.
     - *Supply Chain Management* – The quotation is processed through its lifecycle from Supply Chain Management.
 
-When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is disabled, all sales quotations have an **Origin** value of *Supply Chain Management* and an **Ownership** value of *Based on origin*.
+When **Integrate quotation lifecycles** functionality is [disabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), all sales quotations have an **Origin** value of *Supply Chain Management* and an **Ownership** value of *Based on origin*.
 
-When the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature is [enabled and fully configured](add-efficiency-in-quote-to-cash-enable.md), the **Origin** field works in the following way:
+When **Integrate quotation lifecycles** functionality is [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), the **Origin** field works in the following way:
 
 - Quotations that are created in Supply Chain Management have an **Origin** value of *Supply Chain Management*.
 - Quotations that are created in Sales have an **Origin** value of *Dynamics 365 Sales*.
-
-> [!NOTE]
-> From version 10.0.37 onwards, enabling the *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* feature will add an additonal parameter 'Integrate quotation lifecycle' in Accounts receivable\>Accounts receivable parameters\>Dynamics 365 Sales integration tab. From version 10.0.37 it is the parameter setting that determines if the functionality takes effect. When set to 'Yes', the functionality takes effect. 
 
 ### View origin and ownership information in Supply Chain Management
 
