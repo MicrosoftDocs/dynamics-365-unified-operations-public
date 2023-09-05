@@ -67,10 +67,10 @@ Warehouse management only mode uses just two types of documents: *inbound shipme
 
 ## Why can't I just Receive complete what I have partly inbound registered?
 
-Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management > Setup > Warehouse management integration > Source systems**), inbound loads may be created in any of the following ways:
+Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**), inbound loads might be created in any of the following ways:
 
-- Automatically, when importing an inbound shipment order
-- Automatically, when importing an advanced shipping notice (ASN)
+- Automatically, when an inbound shipment order is imported
+- Automatically, when an advanced shipping notice (ASN) is imported
 - Via a manual process
 - As part of the Warehouse Management mobile app receiving process
 
