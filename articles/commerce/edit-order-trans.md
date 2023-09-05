@@ -2,20 +2,17 @@
 title: Edit and audit online order and asynchronous customer order transactions
 description: This article describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 10/21/2022
+ms.date: 09/05/2023
 ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.custom: 
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
-ms.search.industry: Retail
+
 ---
+
 # Edit and audit online order and asynchronous customer order transactions
 
 [!include [banner](../includes/banner.md)]
@@ -80,6 +77,10 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 1. After you've made and published your changes, select **Synchronize order** to immediately start the synchronization process. Alternatively, you can wait for the synchronization process that is running in batch mode to process the transaction.
 
 By default, after the orders are successfully synced, they are put in a hold status, based on the hold code that is defined in the Commerce parameters. The hold on the orders must be removed before the orders can be processed further for fulfillment or other operations.
+
+## Prevent a transaction from being processed by the order synchronizer
+
+There are situations where you don't want certain transactions to be picked up by the **Synchronize orders** job because you've already manually created the corresponding orders. To prevent the **Synchronize orders** job from picking up certain transactions for processing, edit the transactions and set the **Entry Status** property to **Voided** for those transactions. The **Synchronize orders** job will then skip the transactions.
 
 ## Additional resources
 
