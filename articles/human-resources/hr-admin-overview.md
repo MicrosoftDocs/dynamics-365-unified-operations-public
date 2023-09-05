@@ -42,6 +42,7 @@ This article provides a list of the help topics and other resources to set up, m
 2.	Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For addtional information, see the table below:  
 |Workspace name	|Measurement name|
 |-------------|-----------------|
+
 |Personnel management|Workforce|
 |Employee development|Workforce|
 |Compensation management|Workforce|
