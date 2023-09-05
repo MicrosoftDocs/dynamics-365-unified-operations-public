@@ -141,7 +141,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 For information about price lists, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> For more information about the five entities that are prefixed with "Dynamics," see [Enable extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
+> For more information about the five entities that are prefixed with "Dynamics," see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
 
 ## Limitations
 

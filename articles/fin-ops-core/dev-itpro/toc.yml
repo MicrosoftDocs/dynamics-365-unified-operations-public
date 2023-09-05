@@ -1271,7 +1271,7 @@ items:
               href: data-entities/dual-write/dual-write-prospect-to-cash.md
             - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
               href: data-entities/dual-write/add-efficiency-in-quote-to-cash-concept.md
-            - name: Enable extra efficiency in quote-to-cash with Dynamics 365 Sales
+            - name: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
               href: data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md
             - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
               href: data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md
