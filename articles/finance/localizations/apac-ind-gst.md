@@ -6,7 +6,7 @@ ms.date: 05/20/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: India
 ms.author: wangchen
