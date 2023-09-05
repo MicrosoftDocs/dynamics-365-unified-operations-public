@@ -50,7 +50,7 @@ You need to create a new menu item with mode work that does not use existing wor
 - Mixed license plate receiving
 - Mixed license plate receiving and put away
 
-The options to identify the source document lines are:
+The following options for identifying the source document lines are available:
 
 - Purchase order item receiving
 - Purchase order line receiving
@@ -62,6 +62,6 @@ The options to identify the source document lines are:
 - Load item receiving
 
 > [!NOTE]
-> You can add multiple items to a license plate for all source document line identification methods, but for the *Load item receiving* method, you can't change the selected load like you can change the receiving order on a single license plate during the receiving process for all the other source document line identification methods.
+> You can add multiple items to a license plate for all the source document line identification methods. However, although you can change the receiving order on a single license plate during the receiving process for all the other methods, you can't change the selected load for the *Load item receiving* method.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
