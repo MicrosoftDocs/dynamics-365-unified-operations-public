@@ -143,11 +143,11 @@ Supply Chain Management runs a *receiving completed* process that's related to t
 
 ## Inventory on-hand reconciliation
 
-Warehouse management only mode can generate data for an inventory on-hand reconciliation process when you create a **Create source system on-hand inventory report** (available at **Warehouse management > Inquiries and reports > Create source system on-hand inventory report**). <!--KFM: I don't see this in the UI. Where is it? -->
+Warehouse management only mode can generate data for an inventory on-hand reconciliation process when you create a **Create source system on-hand inventory report** (available at **Warehouse management > Inquiries and reports > Create source system on-hand inventory report**).
 
-To create the header and line data you must define a **Source system** and a **As of date** and select the level of inventory dimensions the report should be generated for.
+To create the header and line data you must specify **Source system** and **As of date** values and select the level of inventory dimensions the report should be generated for.
 
 The external system will be informed about the available data via the `WHSSourceSystemInventoryOnhandReportBusinessEvent` business event and can read the data via the `WarehouseInventoryOnhandReports` and `WarehouseInventoryOnhandReportLines` data entities.
 
 > [!TIP]
-> If you run **Create source system on-hand inventory report** as a recurring batch job (for example once a day), the **As of date** will be ignored and data will be generated based on the current processing date. Therefore, if you set the **Start date** to yesterday and set **Repeat after specified interval** to *1 per day*, then every day, the batch job will automatically generate inventory on-hand data for the previous day.
+> If you run **Create source system on-hand inventory report** as a recurring batch job (for example once a day), the **As of date** will be ignored and data will be generated based on the current processing date. Therefore, if you set up the recurrence with a **Start date** of yesterday and set it to run once per day, then every day, the batch job will automatically generate inventory on-hand data for the previous day.
