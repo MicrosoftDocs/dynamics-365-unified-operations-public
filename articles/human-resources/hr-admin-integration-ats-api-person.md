@@ -159,7 +159,7 @@ This entity provides the personal information for the individual who is the cand
 | **Full Primary Address**<br>mshr_fullprimaryaddress<br>*String* | Read/write<br>Optional | The person’s full primary address, a concatenation of the primary address fields. |
 | **Address City**<br>mshr_addresscity<br>*String* | Read/write<br>Optional | The city of the person’s primary address. Set up in mshr_logisticsaddresscityentity entity. |
 | **Address Country Region**<br>mshr_addresscountryregionid<br>*String* | Read/write<br>Optional | The country/region of the person’s primary address. Valid values in the mshr_logisticsaddresscountryregionentity entity. |
-| **Address Country Region ISO Code**<br>mshr_addresscountryregionisocode<br>*String* | Read/write<br>Optional | The ISO code of the country of the person’s primary address. |
+| **Address Country Region ISO Code**<br>mshr_addresscountryregionisocode<br>*String* | Read/write<br>Optional | The ISO code of the country/region of the person’s primary address. |
 | **Address County**<br>mshr_addresscounty<br>*String* | Read/write<br>Optional | The county of the person’s primary address. Set up in mshr_logisticsaddresscountyentity entity. |
 | **Address District Name**<br>mshr_addressdistrictname<br>*String* | Read/write<br>Optional | The district of the person’s primary address. Set up in mshr_logisticsaddressdistrictentity entity. |
 | **Address Latitude**<br>mshr_addresslatitude<br>*Decimal* | Read/write<br>Optional | The latitude of the person’s primary address. |

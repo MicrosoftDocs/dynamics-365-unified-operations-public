@@ -34,7 +34,7 @@ To print intra-community VAT on a purchase invoice, enable the **Print EU sales 
 To print purchase invoices and intra-community invoices that have intra-community VAT amounts, on the vendor invoice page, on the **Process** tab, select **Print setup** &gt; **Print options**. In the **Print options** dialog box, enable the **Print invoice** and **Print intra-community invoice** options.
 
 > [!NOTE]
-> A vendor’s country must be set up as EU member state. To do this, go to **Tax** \> **Setup** \> **Foreign trade \> Foreign trade parameters Country/region properties tab**).
+> A vendor’s country/region must be set up as EU member state. To do this, go to **Tax** \> **Setup** \> **Foreign trade \> Foreign trade parameters Country/region properties tab**).
 
 ## Reviewing posted intracommunity VAT amounts
 To review the intra-community VAT amounts that have been posted, run the Posted sales tax query (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Posted sales tax**). On the **Posted sales tax** page, on the **General** tab, if the **Intra-community VAT** check box is selected, the tax transaction is an intra-community VAT transaction. Spanish VAT books must be set up so that posted payable and receivable VAT transactions are reflected in the appropriate sections. To set up Spanish VAT books, go to **Tax** \> **Setup** \> **Sales tax** \> **Spanish VAT books**. For more information, see [Report 340 for Spain](emea-esp-report-340.md).
