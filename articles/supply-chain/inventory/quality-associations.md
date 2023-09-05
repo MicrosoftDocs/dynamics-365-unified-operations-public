@@ -311,7 +311,7 @@ The following table provides more information about how quality orders can be ge
 </div>
 
 > [!NOTE]
-> When filtering quality associations for the reference type *Inbound shipment order* with account codes, you must create consigners or consigner groups upfront. <!--KFM: This might be fine, but I'm not sure what we mean by "upfront" and the the term "consigner" appears nowhere else in our docs and I don't know what we mean by that. -->
+> When filtering quality associations for the reference type *Inbound shipment order* with an **Account code** of *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
 
 ## Examples of automatic generation of quality orders
 

@@ -112,7 +112,7 @@ You can specify whether workers should capture a packing slip ID and date for ea
 > - Via a manual process
 > - As part of the Warehouse Management mobile app receiving process
 >
-> When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line qualities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm). <!--KFM: Please confirm this edit -->
+> When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## <a name="shipment-receipts"></a>Shipment receipts
 
