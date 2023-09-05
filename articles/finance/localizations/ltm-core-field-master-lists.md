@@ -1,0 +1,33 @@
+---
+title: Field master list configuration for Latin America
+description: This topic provides information about the basic initial configurations for a Chilean company. 
+author: Fhernandez0088
+ms.date: 09/05/2023
+ms.topic: Article
+ms.reviewer: kfend
+ms.author: v-federicohe
+ms.custom: bap-template
+---
+# Field master list configuration for Latin America
+You can customize lists of elements to be used in the LATAM section of transaction posting forms. These lists are used to comply with required information for transactions when that information consists of a list of options that the user must select.
+
+## Prerequisites
+Enable the LATAM Globalization feature for the country address set in the **Legal entity**.
+
+## Set up a field list for Latin America
+1. Go to **Organization administration > Setup > LATAM > Fields master List**.
+2. Select **New** to create a new list. The lists are limited to 10, they will appear sequentially when created and can be selected by the user.
+3. In the **General** section complete the **Name** field with the description of the list.
+4. In the **Reference code** section select **New** to create an element on the list.
+5. Complete the **Reference code** field with the code provided by the fiscal authority.
+6. Complete the **Description** field.
+
+## Add the fiscal codification provided by the fiscal authorities
+You can use **Tax application** option to add this codification.
+1. Go to **Organization administration > Setup > LATAM > Fields master List**.
+2. Select an element from a list.
+3. Select the **Tax application** button on the action pane.
+4. Select **New** to add a line to the grid.
+5. In the **Tax application Id.** field select a value from the list.
+6. In the **Tax application code field** type the code with which the fiscal authority identifies the document class type.
+7. Select **Save**.
