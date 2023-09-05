@@ -31,7 +31,7 @@ Several warehouse slotting features are available to help warehouse managers int
 
 The *Warehouse slotting* feature lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
 
-The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items that are required for the transfer orders after they are released to warehouse.
+The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items that are required for the transfer orders after they are released to the warehouse.
 
 The *Warehouse slotting allocation enhancements* feature adds an option for the template lines that are used by the *Warehouse slotting* feature. The option enables the system to consider existing on-hand inventory at a target location. Therefore, fewer replenishments might be generated for slotting.
 
