@@ -71,8 +71,8 @@ Before you can set up Microsoft 365 Copilot for your finance and operations data
 - Dataverse version 9.2 or later, and finance and operations virtual entity solution provider version 2.8.7 or later. 
 
 If you wish to try built-in scenarios, install two app source packages:
-- Finance package: [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92&tab=DetailsAndSupport)
-- Supply chain package 
+- Finance package: [Copilot in Microsoft Dynamics 365 Finance](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-financeai-preview?flightCodes=9b882e82e59c4f35a1b0a5368d42ea92&tab=DetailsAndSupport).
+- Supply chain package: [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview).
 
 If you want to try your entities, enable them as virtual entities. For more information on enabling virtual entities, see [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md). 
 
