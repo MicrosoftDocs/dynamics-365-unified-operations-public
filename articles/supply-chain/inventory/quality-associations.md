@@ -311,7 +311,7 @@ The following table provides more information about how quality orders can be ge
 </div>
 
 > [!NOTE]
-> When filtering quality associations for the reference type *Inbound shipment order* with an **Account code** of *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
+> When you filter quality associations for the *Inbound shipment order* reference type, and the **Account code** value is *Table* or *Group*, you must create consigners (for *Table*) or consigner groups (for *Group*) beforehand.
 
 ## Examples of automatic generation of quality orders
 
