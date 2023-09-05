@@ -17,8 +17,8 @@ audience: Application User
 # Business performance analytics data model
 A businesss matrix is a roadmap for business data. Business data can be defined by value chains like record to report or order to cash. The business matrix organizes, connects, and simplifies data, helping users navigate and understand their data efficiently.
 
-## Record to Report (R2R): 
-This process encompasses the process from data collection to the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
+## Record to report: 
+Record to report encompasses the process from data collection to the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
 
 | Business process  | Fact    | Grain    | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
 | ------------- | --------- | ---------- | ------------------- | --------------- | -------------------- | ------ | ---------------- | ---------------------- | --------------- |
@@ -26,8 +26,8 @@ This process encompasses the process from data collection to the final financial
 | Budget transactions | BudgetFact | one row per account entry per ledger account |     | x               | x    | x   | x    | x                |                 |
 | Budget reservation transactions | BudgetReservationFact | one row per reservation transaction  | x      |        | x  | x      | x             | x           |                 |
 
-## Procure to Pay (P2P): 
-This value chain covers the complete cycle from the procurement of goods and services to the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
+## Procure to pay: 
+Procure to pay covers the complete cycle from the procurement of goods and services to the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
 
 | Business process  | Fact   | Grain   | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
 | -------- | ----- | ----- | ----- | --------- | ------- | ---------- | -------- | ------ | ----- | ---------- | -------- | ---------- | --------- | --------- | ----- | ---------- | -------------- |
@@ -45,8 +45,8 @@ This value chain covers the complete cycle from the procurement of goods and ser
 | Purchase distribution  | PurchaseDistributionFact | One row per term  | x    | x  |  |  |  |  |  |   |     |    | x         | x         |    | x                                  |                |
 | Purchase subledger    | PurchaseSubledgerFact     | One line per posted accounting event (voucher) | x | x | x  | |  | | x | x | x | x | | x |           | x                      |                |
 
-## Order to Cash (O2C): 
-This process involves receiving a customer order to collecting payment. It's vital for revenue management, customer satisfaction, and cash flow optimization.
+## Order to cash: 
+Order to cash process involves receiving a customer order to collecting payment. It's vital for revenue management, customer satisfaction, and cash flow optimization.
 
 | Business process | Fact   | Grain   | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
 | -------- | ----------- | ------- | ---------- | ------ | --------- | ------- | - | ----- | ----- | ---------- | ---------- | ------- | ------ | ------- | ---- | ------------- | --------- | ----------- |
