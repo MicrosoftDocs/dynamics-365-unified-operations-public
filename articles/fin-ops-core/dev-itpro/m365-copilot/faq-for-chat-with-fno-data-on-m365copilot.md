@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Chat with finance and operations data on Microsoft 365 Copilot
+title: FAQ for chat with finance and operations data on Microsoft 365 Copilot
 description: This article explains how to chat with finance and operations data with Microsoft 365 Copilot using virtual entities in Microsoft Dataverse.
 author: ramasri
 ms.date: 09/09/2023
@@ -24,7 +24,7 @@ ms.search.validFrom: 09/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# Chat with finance and operations data on Microsoft 365 Copilot 
+# FAQ for chat with finance and operations data on Microsoft 365 Copilot 
 
 [!include[banner](../includes/banner.md)]
 
