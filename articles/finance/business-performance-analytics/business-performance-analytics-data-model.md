@@ -1,7 +1,7 @@
 ---
 
 title: Business performance analytics data model
-description: This article provides information about business performance analytics data model.
+description: This article provides information about the business performance analytics data model.
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
@@ -15,52 +15,56 @@ audience: Application User
 ---
 
 # Business performance analytics data model
-A businesss matrix is a roadmap for business data. Business data can be defined by value chains like record to report or order to cash. The business matrix organizes, connects, and simplifies data, helping users navigate and understand their data efficiently.
 
-## Record to report: 
-Record to report encompasses the process from data collection to the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
+A business matrix is a roadmap for business data. Business data can be defined by value chains such as *record to report* or *order to cash*. The business matrix organizes, connects, and simplifies data. In this way, it helps users efficiently navigate and understand their data.
 
-| Business process  | Fact    | Grain    | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
-| ------------- | --------- | ---------- | ------------------- | --------------- | -------------------- | ------ | ---------------- | ---------------------- | --------------- |
-| General Ledger transactions | GeneralLedgerFact| one row per account entry per ledger account | x       | x   | x   | x    | x    | x                      | x               |
-| Budget transactions | BudgetFact | one row per account entry per ledger account |     | x               | x    | x   | x    | x                |                 |
-| Budget reservation transactions | BudgetReservationFact | one row per reservation transaction  | x      |        | x  | x      | x             | x           |                 |
+## Record to report
 
-## Procure to pay: 
-Procure to pay covers the complete cycle from the procurement of goods and services to the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
+*Record to report* covers the process from data collection through the final financial report. It ensures that business events are accurately recorded, processed, and summarized into financial statements and management reports.
 
-| Business process  | Fact   | Grain   | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
-| -------- | ----- | ----- | ----- | --------- | ------- | ---------- | -------- | ------ | ----- | ---------- | -------- | ---------- | --------- | --------- | ----- | ---------- | -------------- |
-| Purchase requisition  | PurchaseRequisitionFact | One row per requisition line   | x    | x   |  | x   | x | x  | x  | | x    | x     | x   | x   |                  |            |                |
-| Purchase order |   |    |      |    |       |     |    |     |      |     |             |            |           |           |                                       |            |                |
-|                      | PurchaseOrderFact | One row per PO line  | x    | x  |   | x<br>      | x   | x    | x     |      | x    | x    | x         | x      |        | x          |                |
-| Product receipt      | ProductReceiptFact | One row per receipt line  | x  | x  |  | x   | x   | x  | x  |    | x  | | x         | x         |                      |             |                |
-| Purchase invoices |  |   |    |    |    |    |     |     |         |     |             |            |           |           |                                       |             |                |
-|                      | PurchaseInvoiceFact  | One row per invoice line item  | x  | x  | x  | x  | x  | x  | x  |   | x    | x          | x         | x         |     | x         |                |
-| Purchase invoice matching | PurchaseInvoiceMatchingFact |One row per invoice line matched to PO| x | x | x | x | x | x |  |  | x  |  | x   | x         |          |               |                |
-| Purchase payments | PurchasePaymentFact  | One row per payment | x  | x | x<br>   |   |   |  | x |   | x   |   | x     | x         |                   | x                        | x              |
-| Purchase payment matching | PurchasePaymentMatchingFact | One row per payment matched to invoice| x | x  |  |  |   |   | x   |  | x  |   | x  | x    |   | x                      |                |
-| Expense requisition | ExpenseRequisitionFact | One row per requisition line | x | x | | |  | | x  |  | x   | x      | x         |           |       |                             |                |
-|  Expense report | ExpenseReportFact | One row per expense | x  | x   |   |   |  |   | x |  | x  | x   | x         | x         |              | x                                  |                |
-| Purchase distribution  | PurchaseDistributionFact | One row per term  | x    | x  |  |  |  |  |  |   |     |    | x         | x         |    | x                                  |                |
-| Purchase subledger    | PurchaseSubledgerFact     | One line per posted accounting event (voucher) | x | x | x  | |  | | x | x | x | x | | x |           | x                      |                |
+| Business process | Fact | Grain | Accounting Date Dim | CalendarDateDim | Reporting dimensions | Ledger | Reference Number | General ledger account | SubledgerNumber |
+|---|---|---|---|---|---|---|---|---|---|
+| General Ledger transactions | GeneralLedgerFact| One row per account entry per ledger account | X | X | X | X | X | X | X |
+| Budget transactions | BudgetFact | One row per account entry per ledger account | | X | X | X | X | X | |
+| Budget reservation transactions | BudgetReservationFact | One row per reservation transaction | X | | X | X | X | X | |
 
-## Order to cash: 
-Order to cash process involves receiving a customer order to collecting payment. It's vital for revenue management, customer satisfaction, and cash flow optimization.
+## Procure to pay
 
-| Business process | Fact   | Grain   | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
-| -------- | ----------- | ------- | ---------- | ------ | --------- | ------- | - | ----- | ----- | ---------- | ---------- | ------- | ------ | ------- | ---- | ------------- | --------- | ----------- |
-| Sales order | SalesOrderFact  | One row per sales order line  |   |   | x  |   | x  | x  | x    | x    | x   | x    | x      | x     | x                  |               |           |                 |
-| Service order | ServiceOrderFact | One row per sales order line |  |  | x  |   | x  |    | x    | x    | x   | x    | x      |       | x                  |               | x         |                 |
-| Picking slip  | PickingSlipFact | One row per item picked   |      |  | x  |   | x  |    | x    | x    |     |      |        | x     |                    |               | x         | x               |
-| Packing slip  | PackingSlipFact | One row per item on packing slip | x | | x | | x  |    | x    | x    |     | x    |        | x     | x                  | x             |           | x               |
-| Sales contract billing | SalesContractBillingFact| One row per sales billing line per contract period | | | x | | x | | x | x | x | | x  | x  |           |               |           |                 |
-| Deferred revenue| DeferredRevenueFact | One row per revenue line billed per contract period | x | | x |  |  |   |   |   |  |   |  |  |                    |               |           |                 |
-| Sales invoice | SalesInvoiceFact | One row per sales invoice line | x | | x | | x | | x | x | x | x |           | x                  | x                  | x             |           |                 |
-| Sales returns | SalesReturnsFact | One row per order line returned|   | | x | | x | | x | x |   | x |           | x                  |                    | x             |           |                 |
-| Sales payments| SalesPaymentFact | One row per payment          | x | x | x | | x | x | x |  |  | x | x         |                    | x                  |               |           |                 |
-| Sales payments matching | SalesPaymentMatchingFact | One row per payment matched to invoice| x | | x | | x |    | x     |   |   | x  |    |  | x          |               |           |                 |
-| Sales subledger| SalesSubledgerFact| One row per posted accounting event (voucher)       | x   | | x | |   |    | x     |   |   | x  | x  |  | x          |               |           |                 |
-| Sales distribution| SalesDistributionFact  | One row per term                            |     | |   | |   |    |       |   |   |    |    |  |            |               |           |                 |
-| Bank reconciliation | BankRegisterFact     | One row per bank transaction                | x | x | x | | x |    |       |   |   |    |    |  | x          |               |           |                 |
-| Bank reconciliation| BankStatementFact     | One row per bank statement transaction      |   | x | x | | x |    |       |   |   |    |    |  | x          |               |           |                 |
+*Procure to pay* covers the complete cycle from the procurement of goods and services through the payment of vendors. It's crucial for managing costs, ensuring timely payments, and maintaining good vendor relationships.
+
+| Business process | Fact | Grain | AccountingDateDim | Reporting Dimensions | DateDim | ProductDim | AssetDim | StorageLocationDim | PostalAddressDim | ReportingDimensionsDim | PartyDimDim | ProjectDim | NumberDim | LedgerDim | GeneralLedgerAccountDim2 | SubledgerNumberDim | BankAccountDim |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Purchase requisition | PurchaseRequisitionFact | One row per requisition line | X | X | | X | X | X | X | | X | X | X | X | | | |
+| Purchase order | | | | | | | | | | | | | | | | | |
+| | PurchaseOrderFact | One row per purchase order (PO) line | X | X | | X | X | X | X | | X | X | X | X | | X | |
+| Product receipt | ProductReceiptFact | One row per receipt line | X | X | | X | X | X | X | | X | | X | X | | | |
+| Purchase invoices | | | | | | | | | | | | | | | | | |
+| | PurchaseInvoiceFact | One row per invoice line item | X | X | X | X | X | X | X | | X | X | X | X | | X | |
+| Purchase invoice matching | PurchaseInvoiceMatchingFact | One row per invoice line that's matched to a PO | X | X | X | X | X | X | | | X | | X | X | | | |
+| Purchase payments | PurchasePaymentFact | One row per payment | X | X | X | | | | X | | X | | X | X | | X | X |
+| Purchase payment matching | PurchasePaymentMatchingFact | One row per payment that's matched to an invoice | X | X | | | | | X | | X | | X | X | | X | |
+| Expense requisition | ExpenseRequisitionFact | One row per requisition line | X | X | | | | | X | | X | X | X | | | | |
+| Expense report | ExpenseReportFact | One row per expense | X | X | | | | | X | | X | X | X | X | | X | |
+| Purchase distribution | PurchaseDistributionFact | One row per term | X | X | | | | | | | | | X | X | | X | |
+| Purchase subledger | PurchaseSubledgerFact | One line per posted accounting event (voucher) | X | X | X | | | | X | X | X | X | | X | | X | |
+
+## Order to cash
+
+*Order to cash* covers the process from the receipt of a customer order through payment collection. It's crucial for managing revenue, ensuring customer satisfaction, and optimizing cash flow.
+
+| Business process | Fact | Grain | AccountingDateDim | BankAccountDim | LedgerDim | DateDim | NumberDim (RPD) | PartyDim | BuyingPartyDim | ProductDim | ProjectDim | PotalAddressDim | ReportingDimensionsDim | StorageLocationDim | SubledgerNumberDim | SalesCategory | WorkerDim | DeliveryModeDim |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Sales order | SalesOrderFact | One row per sales order line | | | X | | X | X | X | X | X | X | X | X | X | | | |
+| Service order | ServiceOrderFact | One row per sales order line | | | X | | X | | X | X | X | X | X | | X | | X | |
+| Picking slip | PickingSlipFact | One row per picked item | | | X | | X | | X | X | | | | X | | | X | X |
+| Packing slip | PackingSlipFact | One row per item on a packing slip | X | | X | | X | | X | X | | X | | X | X | X | | X |
+| Sales contract billing | SalesContractBillingFact| One row per sales billing line per contract period | | | X | | X | | X | X | X | | X | X | | | | |
+| Deferred revenue| DeferredRevenueFact | One row per billed revenue line per contract period | X | | X | | | | | | | | | | | | | |
+| Sales invoice | SalesInvoiceFact | One row per sales invoice line | X | | X | | X | | X | X | X | X | | X | X | X | | |
+| Sales returns | SalesReturnsFact | One row per returned order line | | | X | | X | | X | X | | X | | X | | X | | |
+| Sales payments| SalesPaymentFact | One row per payment | X | X | X | | X | X | X | | | X | X | | X | | | |
+| Sales payments matching | SalesPaymentMatchingFact | One row per payment that's matched to an invoice | X | | X | | X | | X | | | X | | | X | | | |
+| Sales subledger| SalesSubledgerFact| One row per posted accounting event (voucher) | X | | X | | | | X | | | X | X | | X | | | |
+| Sales distribution| SalesDistributionFact | One row per term | | | | | | | | | | | | | | | | |
+| Bank reconciliation | BankRegisterFact | One row per bank transaction | X | X | X | | X | | | | | | | | X | | | |
+| Bank reconciliation| BankStatementFact | One row per bank statement transaction | | X | X | | X | | | | | | | | X | | | |
