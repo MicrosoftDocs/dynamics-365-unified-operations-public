@@ -37,6 +37,20 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Feature deprecation effective February 2024
+
+### ISV Licenses generated using SHA1 algorithm (signatureversion 1)  
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The SHA1 algorithm has been widely recognized as vulnerable to security breaches due to its susceptibility to collision attacks. To address this security requirement, imports for ISV licenses that are generated using the SHA1 cryptographic algorithm are longer supported. |
+| **Replaced by another feature?**   | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. 
+
+Migrating to SHA256 is straightforward: You need to use signatureversion:2 or keep this field empty while generating license using AxUtil tool and it will generate a new license using SHA256. For more information, see [Independent software vendor (ISV) licensing](../dev-tools/isv-licensing.md). |
+| **Product areas affected**         | System Administration  |
+| **Deployment option**              | All |
+| **Status**                         | Support for SHA1 will be removed by February 2024 (10.0.39/PU63) |
+
 ## Feature deprecation effective January 2024
 
 ### System Admin > Inquiries > User Log 
