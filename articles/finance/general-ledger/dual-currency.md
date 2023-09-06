@@ -164,7 +164,7 @@ In addition, major changes have been made to the depreciation process. These cha
 
     | Transaction type | Transaction amount | Exchange rate | Accounting currency amount | Exchange rate                                                       | Reporting currency amount |
     |------------------|--------------------|---------------|----------------------------|---------------------------------------------------------------------|---------------------------|
-    | Depreciation     | 50,000 USD         | 1.0           | 50,000 USD                 | 2.5<blockquote>[!NOTE] Although this exchange rate is shown, it isn't used to translate to the reporting currency.</blockquote> | 20,000 EUR                |
+    | Depreciation     | 50,000 USD         | 1.0           | 50,000 USD                 | 2.5 **NOTE:**  Although this exchange rate is shown, it isn't used to translate to the reporting currency. | 20,000 EUR                |
 
     When the depreciation proposal is run, it calculates both the accounting currency amount and the reporting currency amount by using the depreciation method. The amounts are then used in the accounting entry in the general ledger. No translation is done to determine the reporting currency amount.
 

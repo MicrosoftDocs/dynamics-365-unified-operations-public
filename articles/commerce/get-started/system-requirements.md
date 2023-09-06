@@ -3,25 +3,14 @@
 
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This article lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
-author: jashanno 
-ms.date: 02/02/2023
+author: stuharg 
+ms.date: 08/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-ms.search.industry: retail 
-ms.author: jashanno
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 
 ---
 
@@ -88,38 +77,32 @@ If the self-service component will use an SQL database, we highly recommend that
 If the self-service component will use a server certificate, it's critical that you manage certificates for expiration. By default, certificates expire after one calendar year (365 days). Self-service components that use a server certificate include Hardware station or Commerce Scale Unit (self-hosted).
 
 > [!NOTE]
-> The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
->
-> The supported versions of the .NET Framework have been updated. Self-service client-side components such as Commerce Scale Unit - Self hosted, Store Commerce app, and Hardware Station require that the .NET Framework version 6.0 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
+> - The legacy Commerce Scale Unit (self-hosted) self-service component uses Azure Service to Service authentication. It's critical that you manage both the generated Azure web application keys (formerly called *secrets*) and the server certificate for expiration. By default, a certificate and a generated Azure web application key expire after one calendar year (365 days).
+> - The supported versions of the .NET Framework have been updated. Self-service client-side components such as Commerce Scale Unit - Self hosted, Store Commerce app, and Hardware Station require that the .NET Framework version 6.0 or later be installed. For installation instructions, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers). For the sealed installers, we recommend that you always have the latest version of the .NET Framework installed on the target computer.
 
 ### Supported operating systems
 
 This section lists the supported operating systems for each Commerce self-service installer.
 
 > [!WARNING]
-> The Windows 7 operating system isn't supported for anything except security-related fixes. Therefore, although Commerce components might work on Windows 7, there will be no bug fixes that are specifically related to supporting this operating system.
+> The Windows 7 and Windows 8 operating systems aren't supported for anything except security-related fixes. Although Commerce components might work on these operating systems, no bug fix or other technical support is provided.
 
 #### Store Commerce
 
-- Store Commerce and Modern POS is supported on the following operating systems:
+- Store Commerce app for Windows is supported on the x64 versions of following operating systems:
 
     - Windows 11 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions.)
     - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC editions) with the latest available updates.
     - Windows Server 2022 (Standard, Essentials.) 
     - Windows Server 2019 (Standard, Essentials) with the latest available updates.
 
+
     > [!NOTE]
-    > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
+    > Windows 10 Pro and Windows 11 Pro aren't recommended, except as part of a domain so that Windows updates can be appropriately scheduled.
 
-
-- We recommend that you don't use Modern POS on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- iOS support requires iOS version 11 or later.
-- Android support requires Android version 6.0 or later.
-- Windows Server 2019 is supported.
-- We don't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, Hardware station or Commerce Scale Unit \[self-hosted\]).
-- iOS support requires iOS version 16 or later.
-- Android support requires Android version 7.0 or later.
-
+- Store Commerce for Android requires Android version 7.10 or later.
+- Store Commerce for iOS requires iOS version 16 or later.
+- Microsoft doesn't recommend that you use the Store Commerce app on the same computer as another self-service component (for example, a shared hardware station or self-hosted Commerce Scale Unit).
 
 > [!NOTE]
 > If an offline database will be used, the computer must meet all system requirements for SQL Server. Additionally, the system must have at least 15 gigabytes (GB) of available disk space. However, we recommend a minimum of 25 GB of available disk space.
@@ -140,7 +123,7 @@ This section lists the supported operating systems for each Commerce self-servic
 Remember that performance testing is crucial to the successful use of Commerce self-service components. Across all components, the following bare-minimum system is supported for the purpose of testing functionality:
 
 - Dual-core processor that runs at no less than 2 gigahertz (GHz) per core.
-- 3 GB of RAM.
+- 4 GB of RAM.
 - Internet access and enough network throughput to handle the flow of requests and responses. (Note that this requirement is at both a computer level and a network level.)
 - Component-specific system requirements, such as requirements for SQL Server and Internet Information Services (IIS).
 - At least 10 percent of disk space is available. (We recommend that you've no less than 10 GB of available disk space when SQL Server is used.)

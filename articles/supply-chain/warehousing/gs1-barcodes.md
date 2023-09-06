@@ -104,7 +104,7 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 To use GS1 bar codes, the *Scan GS1 barcodes* feature must be turned on for your system. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Scan GS1 barcodes* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature (as of Supply Chain Management version 10.0.32, this feature is on by default). This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
+If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature. (As of Supply Chain Management version 10.0.32, this feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.) This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
 
 - It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
 - It doesn't require that you set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.

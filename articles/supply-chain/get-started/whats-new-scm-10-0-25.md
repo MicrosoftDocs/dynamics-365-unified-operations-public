@@ -106,7 +106,7 @@ The table also lists features that were previously in public preview, but have c
 | Production control | Improved production catch weight quantity picking | Generally available |
 | Production control | A new button to Stop break has been added to the Job Card Terminal page | Mandatory |
 | Production control | [Enable automatic generation of license plate number when reporting as finished in the job card device](../production-control/production-floor-execution-configure.md) | Mandatory |
-| Production control | Enable partial receipt of subcontracted items and fix an issue with the calculation of scrap for BOM lines of type Vendor | Mandatory |
+| Production control | Enable partial receipt of subcontracted items and fix an issue with the  calculation of scrap for BOM lines of type Vendor | Mandatory |
 | Production control | [Feature for locking job card device and job card terminal so that they can be sanitized](../production-control/production-floor-execution-configure.md) | Mandatory |
 | Production control | Improvements to the Approve and Transfer jobs dialogs | Mandatory |
 | Production control | [License plate for reporting as finished added to the Job Card Device](../production-control/production-floor-execution-configure.md) | Mandatory |

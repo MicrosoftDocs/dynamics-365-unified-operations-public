@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
@@ -19,7 +19,7 @@ ms.search.form: OMLegalEntity, DefaultDashboard
 [!include [banner](../../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. The demo data company used to create this procedure is USMF.
 

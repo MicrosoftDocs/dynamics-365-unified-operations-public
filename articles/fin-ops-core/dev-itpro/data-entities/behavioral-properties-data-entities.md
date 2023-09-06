@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity. Your choices affect the behavior of the entity. In the following table, the first column lists the properties that are discussed in this article. The top row lists the levels where the property is found in the entity designer. The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.
 
@@ -128,13 +128,13 @@ At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are a
 <td>Auto</td>
 <td><ul>
 <li><strong>Auto:</strong> The property is inherited from the underlying table field.
-<blockquote>[!NOTE] The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.</blockquote>
+<strong>Note:</strong>  The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.
 </li>
 <li><strong>No:</strong> Users aren't allowed to modify the data for this field in a new record.</li>
 <li><strong>Yes:</strong> Users are allowed to modify the data for this field for a new record.</li>
 </ul>
 This behavior is enforced for all consumers – X++, OData, and so on.
-<blockquote>[!IMPORTANT] The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
+<strong>Important:</strong>  The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
 </tr>
 <tr>
 <td>Behavior</td>
@@ -151,7 +151,7 @@ This behavior is enforced for all consumers – X++, OData, and so on.
 <td>Auto, No, Yes</td>
 <td>Auto</td>
 <td><strong>Auto:</strong> The property is inherited from the underlying table field. This behavior is enforced for all consumers – X++, OData, and so on.
-<blockquote>[!IMPORTANT] The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
+<strong>Important:</strong>  The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
 </tr>
 </tbody>
 </table>

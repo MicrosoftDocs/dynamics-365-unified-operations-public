@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Commerce home page
+title: Welcome to Dynamics 365 Commerce
 description: Home page for Dynamics 365 Commerce.
-author: bebeale
+author: josaw
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Commerce home page
+# Welcome to Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 

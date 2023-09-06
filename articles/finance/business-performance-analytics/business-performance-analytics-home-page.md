@@ -11,6 +11,7 @@ ms.prod:
 ms.technology:
 ms.custom:
 ms.search.form: business-performance-analytics
+audience: Application User
 ---
 
 # About business performance analytics

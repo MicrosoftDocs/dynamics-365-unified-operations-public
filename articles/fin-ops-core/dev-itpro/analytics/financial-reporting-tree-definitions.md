@@ -75,9 +75,9 @@ To create a reporting tree definition, follow these steps.
 
     | Section                          | Description |
     |----------------------------------|-------------|
-    | Reporting dimension segmentation | Use the **Split Segments** and **Combine Segments** buttons to change the number and length of segments.<blockquote>[!NOTE] You can combine only segments that you've split. To combine multiple dimensions, use wildcard characters in your dimension values.</blockquote> |
+    | Reporting dimension segmentation | Use the **Split Segments** and **Combine Segments** buttons to change the number and length of segments. **NOTE:**  You can combine only segments that you've split. To combine multiple dimensions, use wildcard characters in your dimension values. |
     | Include/Character position       | This section lists the dimensions that are defined in the financial data and shows the number of characters in the longest value that is defined for each dimension. Select the check box for a dimension to include that dimension in the reporting tree hierarchy. |
-    | Segment hierarchy and ranges     | This section shows the dimension hierarchy. You can move the dimensions in the list to change their reporting order. In the **From Dimension** and **To Dimension** fields, you can specify a range of values in each dimension. If you don't specify a range, all dimension values are inserted into the reporting tree.<blockquote>[!NOTE] If you're using more than one dimension, only dimension combinations that have been posted to are returned in the results.</blockquote> |
+    | Segment hierarchy and ranges     | This section shows the dimension hierarchy. You can move the dimensions in the list to change their reporting order. In the **From Dimension** and **To Dimension** fields, you can specify a range of values in each dimension. If you don't specify a range, all dimension values are inserted into the reporting tree. **NOTE:**  If you're using more than one dimension, only dimension combinations that have been posted to are returned in the results. |
 
     For an illustration that shows an example of the **Insert Reporting Units from Dimensions** dialog box, see the "Example of the Insert Reporting Units from Dimensions dialog box" section later in this article.
 

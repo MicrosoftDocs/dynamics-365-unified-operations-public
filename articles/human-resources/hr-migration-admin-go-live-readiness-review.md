@@ -5,7 +5,7 @@ title: Human Resources migration go-live readiness review
 description: This article provides guidance about the go-live readiness review for Microsoft Dynamics 365 Human Resources migration to the finance and operations infrastructure.
 author: priyankasinha77
 ms.author: prsinha
-ms.date: 8/7/2023
+ms.date: 8/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
 ## Human Resources migration go-live readiness review process
 
-1. Before you request a production environment, complete the [prerequisites for migrating a Human Resources production environment](hr-cust-migration.md#prerequisites).
+1. Before you request a production environment, complete the [prerequisites for migrating a Human Resources production environment](hr-cust-migration.md#prerequisites-1).
 2. Send an email to <d365fogl@microsoft.com>. Use the following subject line: **\<*Customer name*\>: Human Resources migration go-live readiness review**. (Replace **\<*Customer name*\>** with the name of the customer.)
 
     In the body of the email, provide the following information:
@@ -51,55 +51,46 @@ This article describes the steps of the go-live readiness review for Microsoft D
 
     **Lifecycle Services**
 
-    - Does the go-live milestone date in the Lifecycle Services methodology match the planned go-live date? Confirm that the go-live date in Lifecycle Services reflects the actual go-live date when users start to work in production.
+    - Have the analysis, design and develop, and test phases been completed in Lifecycle Services, so that a production environment can be requested?
     - Are you using a generic account as the environment's administrator?
     - Have the customer's key stakeholders been added to the Lifecycle Services project?
-    - Have the analysis, design and develop, and test phases in the Lifecycle Services methodology been completed to request a production environment?
     - Confirm that the final version of the subscription estimator was uploaded into the Lifecycle Services project and marked as active.
 
     **User acceptance testing (UAT)**
 
-    - Provide the start date and end date of the UAT in the migrated sandbox environment.
-    - Which environment was UAT performed on? 
+    - Has the customer approved and signed off on the migration solution to confirm that it meets their business needs? If not, what's still pending, and what's the timeline for sign-off?
     - Confirm that user training or change management has been completed.
-    - Has the customer approved and signed off on the whole solution to confirm that it meets their business needs? If not, what's still pending, and what's the timeline for sign-off?
 
     **Cutover**
 
     - Do you have a cutover plan that includes the activity duration, responsibilities, dependencies, and a roll-back plan, and has the business signed off on it?
-    - Confirm that migration to environments will always be on the latest generally available (GA) version. Depending on your migration and testing plan, if your migration validation for sandbox environments was done on a different version, we recommend that you validate a sandbox migration on the same version as your production environment.
-    - Confirm that all remaining standalone Human Resources environments will automatically be deleted 10 days after successful migration of the production environment to the finance and operations infrastructure. 
+    - Acknowledge the following conditions:
+
+        - Migrations to new environments are on the latest generally available (GA) release. If validation in the sandbox environment was done by using a different version, we recommend that you perform a regression validation by using the release that your production environment uses. For more information about the timeline for each release, see [Public preview release](../fin-ops-core/fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+        - All stand-alone Human Resources environments will automatically be deleted 10 days after the production environment is successfully migrated to the finance and operations infrastructure. This fact is in your rollback strategy.
+        - Human Resources migrated environments are put in the same region as the source stand-alone Human Resources environments. If a geo-to-geo migration for Lifecycle Services or environments is required, it will be done after the migrations are completed.
 
     **Continuous updates**
 
-    - Is the team familiar with the continuous updates policy?
-    - Have you reviewed the continuous updates settings in your Lifecycle Services project and made any required adjustments?
-    - Briefly describe your organization's plan for continuous updates.
+    - In stand-alone Human Resources, updates are managed by Microsoft on a defined schedule. However, in the finance and operations infrastructure, customers maintain application updates per Microsoft One version policy. Confirm that you understand the continuous update policy for finance and operations apps. For more information, see [One version overview](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
     **Integrations**
 
     - Are integrations in scope?
 
         > [!NOTE]
-        > If the answer is "Yes," answer the remaining questions in this section. Otherwise, move on to the next section.
+        > If the answer is "Yes," answer the next question in this section. Otherwise, move on to the next section.
 
-    - Have you tested both the happy path and edge cases for each integration?
-    - Has the customer signed off on all integrations that are in scope for go-live? If not, what's still pending, and what's the timeline for sign-off?
+    - Have you tested both the happy path and edge cases for each integration, and have you signed off on all integrations that are in scope for go-live? If not, what's still pending, and what's the timeline for sign-off?
 
     **Dual-write**
 
     - Does the solution contain any dual-write integrations that are used to run processes across Dynamics 365 applications?
 
         > [!NOTE]
-        > If the answer is "Yes," answer the remaining questions in this section. Otherwise, move on to the next section.
+        > If the answer is "Yes," answer the next question in this section. Otherwise, move on to the next section.
 
-    - Are you planning to integrate two finance and operations environments?
-    - Are both finance and operations environments in the same Azure tenant and in the same Azure region?
-    - Are you planning to have multiple instances of Dataverse (formerly named Common Data Service) or multiple instances of finance and operations apps?
-    - Have all dual-write flows been tested, and have the acceptance criteria been met at the expected peak load?
-    - Are you using managed solutions to follow Application Lifecycle Management (ALM) best practices for your Dataverse custom entities and extensions?
-    - Are notifications set up to alert users about any dual-write failures?
-    - Confirm that you've read and understood the limitations for implementing dual-write in [System requirements for dual-write document](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+    - Have all dual-write scenarios and flows been tested after migration, and have the acceptance criteria been met at the expected peak load? If not, what's still pending, and what's the timeline for sign-off?
 
     **Production support and maintenance**
 

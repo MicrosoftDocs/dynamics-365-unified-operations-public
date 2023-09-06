@@ -101,7 +101,7 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 #### Dynamics 365 Human Resources
 
-[Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/) lets businesses get a comprehensive view of their employee resources and manage them in a unified way. It provides integrated experiences from the hiring process through workforce planning and employee time management. For more information, see [Dynamics 365 Human Resources help resources](./index.md).
+[Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/) lets businesses get a comprehensive view of their employee resources and manage them in a unified way. It provides integrated experiences from the hiring process through workforce planning and employee time management. For more information, see [Dynamics 365 Human Resources help resources](./welcome.md).
 
 ### Commerce Scale Unit
 

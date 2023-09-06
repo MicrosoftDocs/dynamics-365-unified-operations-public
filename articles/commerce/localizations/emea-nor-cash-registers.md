@@ -23,7 +23,7 @@ This article provides an overview of the cash register functionality that is ava
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../welcome.md).
 
 The following POS localization features that were previously implemented and made available to customers in all countries or regions can now be used specifically for Norway:
 
@@ -102,7 +102,7 @@ The SAF-T Cash Register format is implemented at Headquarters by using [Electron
 
 ## Setting up Commerce for Norway
 
-This section describes the settings that are specific to and recommended for Norway. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the settings that are specific to and recommended for Norway. For more information, see [Help resources for Dynamics 365 Retail](../welcome.md).
 
 To use the Norway-specific functionality, you must complete these tasks:
 

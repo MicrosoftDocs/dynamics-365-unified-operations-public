@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the properties for a manual task.
 
@@ -170,7 +170,7 @@ Follow these steps to specify who the manual task should be assigned to.
     </ol>
     </li>
     </ol>
-    <blockquote>[!NOTE] This option is used for only a few workflows, such as Case management.</blockquote>
+    <strong>NOTE: </strong>This option is used for only a few workflows, such as Case management.
     </td>
     </tr>
     </tbody>

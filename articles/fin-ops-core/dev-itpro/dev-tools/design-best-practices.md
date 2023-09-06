@@ -5,7 +5,7 @@ author: peakerbl
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
@@ -18,7 +18,7 @@ ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 

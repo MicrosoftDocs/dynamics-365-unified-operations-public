@@ -22,7 +22,7 @@ This article describes the scope of the Microsoft Dynamics 365 Commerce function
 
 Commerce doesn't address all laws, regulations, or commercial requirements in Brazil. Laws and regulations vary in the way that they affect organizations. For more information, see the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
-To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../index.md).
+To learn about point of sale (POS) features that are available to customers in all countries or regions, see the [Commerce home page](../welcome.md).
 
 ## Capabilities of the Commerce localization for Brazil
 
