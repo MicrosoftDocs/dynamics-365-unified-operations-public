@@ -35,7 +35,7 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 
 To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create and delete Power Virtual Agents bots](/power-virtual-agents/authoring-first-bot).
 
-After you configure the chatbot, follow the procedures below to obtain the bot ID and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
+After you configure the chatbot, follow the procedures below to obtain the bot ID, and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
 
 ### Find the bot ID of a Power Virtual Agent
 
@@ -44,8 +44,8 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
 1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL.
-1. Open a new browser tab and navigate to the `Token Endpoint`. A JSON result will be displayed. Copy the value of `token` property. The value is a JWT token.
-1. Decode the JWT token. In the decoded result, the `BOT ID` can be find in the `bot` field.
+1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT token.
+1. Decode the JWT token. In the decoded result, the **bot ID** is found in the **bot** field.
 
 :::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
 
