@@ -198,7 +198,8 @@ The environment state will show the deployment progress. The state will be chang
 - If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
-- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure. 
+- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
+- If Power BI is needed in the migrated finance and operations environment, complete these steps [Administration overview](hr-admin-overview.md). 
 
 #### Dual-write integration
 

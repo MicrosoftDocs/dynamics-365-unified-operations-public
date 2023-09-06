@@ -62,10 +62,8 @@ After the validation is completed, details can be found on the **Environment his
 This validation can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
 
 ### Releases
-This feature is in preview and available only in LCS Sandbox environments in the following regions:
- - United States
- - Switzerland
- - France
- - South Africa
+This feature is available in LCS Sandbox environments in all regions. 
+This feature is available in LCS Production environments in all regions except Sovereign clouds.
+
 
 
