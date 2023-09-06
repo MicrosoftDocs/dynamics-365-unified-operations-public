@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: FinancialReports
 # ROBOTS: 
-audience: IT Pro, Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
