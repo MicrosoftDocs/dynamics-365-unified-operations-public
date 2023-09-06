@@ -43,9 +43,15 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
-1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL value (for example, `https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/<bot ID GUID>/directline/token?api-version=2022-03-01-preview`). The bot ID is the GUID between **/bots/** and **/directline/** in the token endpoint URL.
+1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL.
+1. Open a new browser tab and navigate to the `Token Endpoint`. A JSON result will be displayed. Copy the value of `token` property. The value is a JWT token.
+1. Decode the JWT token. In the decoded result, the `BOT ID` can be find in the `bot` field.
 
 :::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
+
+:::image type="content" source="media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
+
+:::image type="content" source="media/chat-module-pva-directlinetoken-decoded.png" alt-text="Direct line token result decoded":::
 
 > [!NOTE]
 > The bot ID differs from the bot app ID.
