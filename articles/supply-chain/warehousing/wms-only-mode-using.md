@@ -80,11 +80,12 @@ Here's a high-level description of the inbound process:
 
 1. An external system submits an *inbound shipment order* message to Supply Chain Management.
 1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
-1. Inbound loads are created in one of three ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
+1. Inbound loads are created in one of four ways, as established by the [Source systems](wms-only-mode-setup.md#source-systems) settings in Supply Chain Management:
 
     - Manually, by using the [Inbound load planning workbench](create-or-modify-an-inbound-load.md#create-an-inbound-load-manually)
     - By importing [advanced shipping notices (ASNs)](import-asn-data-entity.md)
     - Automatically during [message processing](../supply-chain-dev/message-processor.md)
+    - Automatically during the Warehouse Management mobile app receiving process
 
 1. A warehouse worker using the Warehouse Management mobile app to *register* the inbound shipment transactions.
 1. Supply Chain Management runs [receiving completed](wms-only-mode-using.md#receiving-completed) processes that are related to each relevant load. These processes update the load status to *Received*, generate [shipment receipts](wms-only-mode-using.md#shipment-receipts), and trigger *business events* for the external systems.
@@ -104,7 +105,14 @@ You can specify whether workers should capture a packing slip ID and date for ea
 - *Optional* – Prompt for the packing slip ID and date, but allow the worker to proceed without specifying them.
 
 > [!NOTE]
-> In the current version, load line quantities must be fulfilled according to over-delivery and under-delivery settings, and the *receiving completed* process must be manually triggered.
+> Depending on your setup on the **Inbound shipment order policies** FastTab of the **Source systems** page (**Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**), inbound loads might be created in any of the following ways:
+>
+> - Automatically, when an inbound shipment order is imported
+> - Automatically, when an ASN is imported
+> - Via a manual process
+> - As part of the Warehouse Management mobile app receiving process
+>
+> When the system creates load data as a result of processing an inbound shipment order message, the delivery policy controls whether load quantities are adjusted to the received quantities, or whether the received quantities must match the load line quantities, as part of the [*Receiving completed* process](inbound-load-handling.md#receive-complete-confirm).
 
 ## <a name="shipment-receipts"></a>Shipment receipts
 
@@ -168,11 +176,9 @@ Use the **Processing status** field to monitor the progress of each shipment ord
 - *Receiving* – The message is in the process of being imported.
 - *Received* – The message has been received and is in a *Queued* state in the [message processor](../supply-chain-dev/message-processor.md). It's now ready to be picked up for processing.
 - *Accepted* – The message processor state is *Processed*. Therefore, a shipment order has been created.
-- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after editing.
+- *Failed* – The [message processor](../supply-chain-dev/message-processor.md) processed the message, but one or more errors occurred. You can create a copy of the message when you save it after you edit it.
 - *Draft* – The message is a copy that can be updated. To reprocess the message, move it into the *Queued* message state by selecting the **Queue** option.
-<!-- 
-- (*Canceled*) – New planned state in future version instead of using the *Failed* state for messages that have been canceled. You can resend a message (for the same order) from the external system.
--->
+- *Canceled* – The message has been manually canceled.
 
 > [!TIP]
 > Select **Show old versions** to follow manual message updates based on the value of the **Replaced by message** field.
