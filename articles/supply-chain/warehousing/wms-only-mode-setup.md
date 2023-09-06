@@ -46,6 +46,14 @@ Use the **Source systems** page to set up each external system that you want to 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select **Message value mapping** to open a dialog box where you can define how items and warehouses are uniquely identified in incoming documents. You can also specify whether loads for inbound shipment orders are automatically created as part of the setup on the **Inbound shipment order policies** FastTab. Tooltip help is provided for each field. When you've finished configuring settings in the dialog box, select **OK**.
 
+### Background processes
+
+As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:
+
+- **Post shipment packing slips** – This process is used for the outbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to 1 day.)
+- **Post shipment receipts** – This process is used for the inbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to 1 day.)
+- **Process shipment order messages** – This process is used for processing inbound and outbound shipment order messages. (By default, the repeat interval is 1 minute.)
+
 ## Set up automatic release of outbound shipment orders
 
 *Release to warehouse* is the process of making inventory ready for dispatch processing. When you release an order to the warehouse, the system creates load lines and shipments. If automatic wave processing is set up, loads and required work are also created.
@@ -74,11 +82,11 @@ To enable warehouse workers to use the Warehouse Management mobile app to regist
 
 - *License plate receiving (and put away)*
 - *Load item receiving (and put away)*
-- *Mixed license plate receiving (and put away)* (for the *Load item receiving* source document line identification method)
-- *Inbound shipment order line receiving* (when assigned to loads)
-- *Inbound shipment item receiving* (when assigned to loads)
-- *Inbound shipment order line receiving (and put away)* (when assigned to loads)
-- *Inbound shipment order item receiving (and put away)* (when assigned to loads)
+- *Mixed license plate receiving (and put away)*
+- *Inbound shipment order line receiving*
+- *Inbound shipment item receiving*
+- *Inbound shipment order line receiving (and put away)*
+- *Inbound shipment order item receiving (and put away)*
 
 For more information, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
 
