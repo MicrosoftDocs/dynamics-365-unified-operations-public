@@ -199,7 +199,7 @@ When **Use message processor** functionality is [enabled in Supply Chain Managem
 | Create sales quotation journal | **Use message processor** | This message type creates the sales quotation journal. |
 | Create sales quotation confirmation journal | **Use message processor** | This message type creates the sales quotation confirmation journal. |
 | Link sales order and sales quotation | **Use message processor** | This message type is created in response to a confirmation event. It updates the sales quotation/sales order relationship. |
-| Copy sales quotation data to sales order | *Copy Supply Chain Management sales quotation data to sales orders synced from Dynamics 365* | This message type copies Supply Chain Management sales quotation data to sales orders that are synced from Sales. |
+| Copy sales quotation data to sales order | **Copy quotation data to sales orders** | This message type copies Supply Chain Management sales quotation data to sales orders that are synced from Sales. |
 
 > [!NOTE]
 > *Create sales quotation confirmation journal* and *Link sales order and sales quotation* messages are interrelated, in that *Link sales order and sales quotation* depends on successful processing of *Create sales quotation confirmation journal*. Together, the two messages serve the same purpose as the **Confirm** action when a sales quotation is won in Supply Chain Management.
