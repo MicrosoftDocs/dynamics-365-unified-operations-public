@@ -264,7 +264,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 ## Feature deprecation effective May 2021
 
-### Globalization portal in Lifecycle Services Lifecycle Services
+### Globalization portal in Lifecycle Services
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
