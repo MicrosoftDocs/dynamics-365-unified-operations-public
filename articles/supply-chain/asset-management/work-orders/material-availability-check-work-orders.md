@@ -110,7 +110,7 @@ The material availability check is now completed. If you want, you can now updat
 
 ## Update a work order state
 
-After you've confirmed that all materials are available for a work order, you can update the work order state to indicate that the order is ready to be worked on by maintenance workers.
+After you've confirmed that all materials are available for a work order, you can update the work order state. In this way, you can indicate that the order is now ready to be worked on by maintenance workers.
 
 1. If the **Work order material availability check** page isn't already open, open it as described in the previous section.
 1. If you need help finding the work orders that you're looking for, use the **Material availability** field to filter the work orders in the **Work orders** section. Select one of the following options:
