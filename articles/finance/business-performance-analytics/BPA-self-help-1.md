@@ -24,7 +24,7 @@ audience: Application User
 Error Code ERR00001 occurs when the BPA_SelfHelp_Log table registers an issue. When the accounting dates in the General journal entries table in Dynamics 365 Finance don't align with corresponding fiscal
 calendar in the ledger. This mismatch causes transactions in the generalledgerfact to be linked to an accounting date key of -1, which affects the accuracy of your reports. 
 
-## Resolution  
+### Resolution  
 To address this error, include calendar years/periods from the minAccountingDate to the maxAccountingDate for the relevant Fiscal calendars. Fiscal calendar, minAccountingDate, and maxAccountingDate are located in the BPA_SelfHelp_Log table, specifically under the LogDetails column. 
 
 See the sample record below to understand how to extract these details: 
@@ -36,8 +36,8 @@ Follow the steps below in Dynamics 365 Finance to add a new fiscal year:
 2. Select the relevant calendar from the dropdown list.
 3. Click **+ New Year** to create a new fiscal year. 
 
->[!NOTE]
->Adding a new year in the past isn’t possible, this can only be done for future years. If transactions were posted in 2014 and the calendar starts in 2015, adding a new year to the existing fiscal calendar isn’t possible. The alternative solution is create a new calendar, generate the necessary years, and then associate it with your ledger. 
+>[!IMPORTANT]
+> Adding a new year in the past isn’t possible, this can only be done for future years. If there are transactions posted in a year before the calendar's starting year, a new year can't be created within the existing fiscal calendar.  
 
 After the fix is complete, these transactions will map to appropriate accounting date key. 
  
