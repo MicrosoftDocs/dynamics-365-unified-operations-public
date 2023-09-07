@@ -120,8 +120,8 @@ The following table shows the schema extension for product media assignments.
 
 | Column name                         | Description |
 |-------------------------------------|-------------|
-| EntityType                          | The product assignment target for the current row (for example, *Master*, *Variant*, *DimensionMatrix*, or *Category*). |
-| EntityKey                           | A value that specifies what's used as the key for the assignment in the `EntityKeyValue` field (for example, *ProductNumber*, *RecordId*, or *CategoryID*). |
+| EntityType                          | The product assignment target for the current row. Supported values `Product\|Master`, `Product\|Variant`, `Product\|DimensionMatrix`, `Product\|Master\|Swatch`. |
+| EntityKey                           | A value that specifies what's used as the key for the assignment in the `EntityKeyValue` field. Supported values `EntityId`, `EntityId\|DimensionMatrix`, `EntityId\|SwatchType\|SwatchId`. |
 | EntityKeyValue                      | The value of the key that's specified in `EntityKey`. For `DimensionMatrix`, the dimensions are pipe delimited and the keys are separated from the values using colons. |
 | EntityLocale                        | The locale of the product assignment (for example, "en-us", "de-de", or "system_neutral" for locale agnostic). |
 | CatalogNumber                       | The catalog number that the assignment is associated with. |
