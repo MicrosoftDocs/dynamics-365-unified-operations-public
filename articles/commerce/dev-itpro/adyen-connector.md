@@ -197,7 +197,7 @@ The following countries/regions have Commerce components available and card pres
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
-| Japan | Future release |
+| Japan | ✔ |
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
@@ -212,7 +212,7 @@ The following countries/regions have Commerce components available and card pres
 | Switzerland | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
-| Brazil | Future release |
+| Brazil | ✔ |
 
 #### Supported card not present countries/regions
 
