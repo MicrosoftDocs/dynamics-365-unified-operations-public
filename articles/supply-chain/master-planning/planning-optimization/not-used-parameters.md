@@ -132,3 +132,14 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 - **Engineer** FastTab:
 
   - **Production type** – Supported in version 10.0.33 and later. The feature *Process Manufacturing support for Planning Optimization* must be enabled in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36).
+ 
+## Scheduling parameters page
+
+Planning Optimization doesn't use the following parameters or options on the **Scheduling parameters** page:
+
+- **Schedule timeout enabled** – In Planning Optimization, schedule timeout is always enabled.
+- **Maximum scheduling time per sequence** – The value is not considered in Planning Optimization, there's a fixed maximum timeout per sequence of 10 seconds.
+- **Schedule optimization timeout enabled** – In Planning Optimization, schedule optimization timeout is disabled by default.
+- **Optimization attempts timeout** - In Planning Optimization, schedule optimization timeout is disabled by default.
+- **Keep production unit** - Not supported in Planning Optimization.
+- **Keep warehouse from resource** - Not supported in Planning Optimization.
