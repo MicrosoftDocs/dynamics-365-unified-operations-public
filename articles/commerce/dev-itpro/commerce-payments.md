@@ -5,7 +5,7 @@ description: This article describes the omni-channel Commerce order payments fea
 author: ravimeda
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: raeda
