@@ -24,7 +24,6 @@ Error code ERR00005 is logged in the BPA_SelfHelp_Log table when the total of va
  - In the accountingcurrencyamount column of the generaljournalaccountentry table isn't zero for a specific combination of ledger.id and gje.journalnumber.
  - In the reportingcurrencyamount column of the generaljournalaccountentry table isn't zero for the same combination of ledger.id and gje.journalnumber. 
 
->[!NOTE]
->This information is provided for your awareness only and no action is required.
+This warning is for information only and no action is required.
 
 This warning highlights instances where the total values in certain columns don't balance to zero within specific ledger and journal number combinations. This might not indicate an error that needs immediate attention. Consider this information as part of your overall financial data assessment. 
