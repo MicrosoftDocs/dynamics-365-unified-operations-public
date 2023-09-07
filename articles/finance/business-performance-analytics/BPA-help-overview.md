@@ -31,6 +31,7 @@ Go to Maker portal (https://make.preview.powerapps.com/) **Tables > All**. Use t
 ## Understanding BPA_SelfHelp_Logs  
 
 |Sno |Column name|Description |
+|-----|--------|--------|
 |1 |LogCode |This will be unique code for each error or warning. |
 |2 |LogName |This will be description for each error or warning. |
 |3| LogType |This field can have 2 values:<ul><li> **Error** means that you need to take action to fix issue this issue. 
