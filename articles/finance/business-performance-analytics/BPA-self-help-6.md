@@ -25,7 +25,6 @@ ERR00006 occurs in the BPA_SelfHelp_Log table when there is no budget created in
 Sample Record: 
 BudgetFact is empty due to one or more missing inputs ['mserp_budgettransactionlinebientity', 'mserp_budgettransactionheaderbientity'] 
 
->[!NOTE]
->This information is provided for your awareness only and no action is required.
+This is information only and no action is required.
 
-This warning indicates the absence of a budget in your system, which leads to a lack of budget data for your reports. It's not an issue that requires immediate attention. Consider this information as part of your overall financial data assessment.
+This warning indicates there's no budget in Dynamics 365 Finance and no budget data available for reports. It's not an issue that requires immediate attention. Consider this information as part of your overall financial data assessment.
