@@ -14,7 +14,7 @@ ms.search.form: business-performance-analytics
 audience: Application User
 ---
 
-# Business performance analytics error - Missing fiscal calendar for GL error
+# Business performance analytics error - Missing fiscal calendar for general ledger 
 
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
