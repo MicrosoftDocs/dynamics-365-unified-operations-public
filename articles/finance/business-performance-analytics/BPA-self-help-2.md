@@ -25,7 +25,7 @@ Error Code ERR00002 occurs when the BPA_SelfHelp_Log table registers an issue. W
 ### Resolution
 To address this error, include calendar years/periods from the minBudgetTransactionDate to the maxBudgetTransactionDate for the relevant Fiscal calendars. Fiscal calendar, minBudgetTransactionDate, and maxBudgetTransactionDate are located in the BPA_SelfHelp_Log table. You can locate these details in the LogDetails column.  
 
-See the sample record below to understand how to extract these details:
+See the following sample record:
 
 1 records in BudgetTransactionLine have TransactionDate outside of the Fiscal Calendar - [Row(b9d140ec-7227-4942-b20f-b0e0a3012d41_mserp_calendarid='Fiscal', fiscalCalendarStartDate='2014-01-01 00:00:00', fiscalCalendarEndDate='2025-12-31 00:00:00', cae61f4c-c088-4bc4-b600-c5bd07f1af3d_mserp_name='USMF', minBudgetTransactionDate='2026-01-01 00:00:00', maxBudgetTransactionDate='2026-02-01 00:00:00')] 
 
@@ -35,7 +35,7 @@ See the sample record below to understand how to extract these details:
 1. In Dynamics 365 Finance, go to **General ledger > Calendars > Fiscal calendar**.
 2. From the dropdown menu, select the fiscal calendar that requires the addition of a new year. This should be the same calendar that corresponds to the reported issue.
 3. Within the chosen fiscal calendar, click **+ New year**.
-4. Enter the details for the new fiscal year. Specify the relevant information, such as the fiscal year's starting and ending dates. In this case, make sure the new fiscal year includes the months of January and February (as mentioned in the minBudgetTransactionDate and maxBudgetTransactionDate).
+4. Enter the details for the new fiscal year. Enter the relevant information, such as the fiscal year's starting and ending dates. In this case, confirm the new fiscal year includes the months of January and February (as mentioned in the minBudgetTransactionDate and maxBudgetTransactionDate).
 5. Confirm that the date range for the new fiscal year accurately covers the required periods.
 6. Save the new fiscal year entry. 
 
@@ -46,6 +46,6 @@ There are two options to fix fiscal calendar issues:
 1. Create a new calendar
 2. Keep the current calendar
 
-Keeping the current calendar might lead to transactions that don't match your reporting periods, causing reporting problems and making historical comparisons difficult. You might need to make adjustments that can complicate audits. Consider how much the misaligned data will affect reporting and costs. Work with experts and teams to make the best choice for your organization's needs. When the fix is successfully implemented, transactions that were previously misaligned will now map to the appropriate accounting date key, ensuring accurate financial processing and reporting. 
+Keeping the current calendar might lead to transactions that don't match your reporting periods, causing reporting problems and making historical comparisons difficult. You might need to make adjustments that can complicate audits. When the fix is successfully implemented, transactions that were previously misaligned will now map to the appropriate accounting date key, ensuring accurate financial processing and reporting. 
 
 After completing these steps, a new fiscal year will be added to the relevant calendar and resolve issues related to misaligned transaction dates. 
