@@ -20,7 +20,7 @@ audience: Application User
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 ## Missing fiscal calendar for budget: Error code: ERR00002 [Type: Error] 
-Error Code ERR00002 occurs when the BPA_SelfHelp_Log table registers an issue. When the transaction dates in Budget transaction lines within Dynamics 365 Finance don't align with the respective fiscal calendar in the ledger. This misalignment results in the transaction within the Budget being linked to an accounting date key of -1. 
+Error Code ERR00002 occurs when the BPA_SelfHelp_Log table registers an issue. When the transaction dates in Budget transaction lines within Dynamics 365 Finance don't align with the respective fiscal calendar in the ledger. This misalignment results in the transaction in the Budget fact being linked to -1. 
 
 ### Resolution
 To address this error, include calendar years/periods from the minBudgetTransactionDate to the maxBudgetTransactionDate for the relevant Fiscal calendars. Fiscal calendar, minBudgetTransactionDate, and maxBudgetTransactionDate are located in the BPA_SelfHelp_Log table. You can locate these details in the LogDetails column.  
