@@ -4,7 +4,7 @@ description: This article explains how to set up a self-hosted Microsoft Visual 
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
