@@ -20,7 +20,7 @@ audience: Application User
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
 ## Missing budget data: Error Code: ERR00006  [Type: Warning] 
-ERR00006 occurs in the BPA_SelfHelp_Log table when there is no budget created in Dynamics 365 Finance. This leads to the lack of budget data available for reports. 
+ERR00006 occurs in the BPA_SelfHelp_Log table when there is no budget created in Dynamics 365 Finance and there's no budget data available for reports. 
 
 Sample Record: 
 BudgetFact is empty due to one or more missing inputs ['mserp_budgettransactionlinebientity', 'mserp_budgettransactionheaderbientity'] 
