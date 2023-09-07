@@ -7,7 +7,7 @@ description: This article provides answers to frequently asked questions about M
 author: ashishmsft
 ms.date: 06/27/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
