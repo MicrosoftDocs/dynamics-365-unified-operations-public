@@ -6,7 +6,7 @@ description: This article describes how to set up Apple Pay with Adyen in Micros
 author: BrianShook
 ms.date: 04/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
