@@ -1,6 +1,6 @@
 ---
 
-title: Business performance analytics self help - Missing Budget data:
+title: Business performance analytics self help - Missing budget data
 description: This article provides information about common errors in business performance analytics.
 author: jinniew
 ms.author: jiwo
@@ -14,24 +14,18 @@ ms.search.form: business-performance-analytics
 audience: Application User
 ---
 
-# Business performance analytics self help error
+# Business performance analytics self help error - Missing budget data
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate
-> in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-## Missing Budget data: Error Code: ERR00006  [Type: Warning] 
-
-Description: Error Code ERR00006 appears in the BPA_SelfHelp_Log table when there is no budget created in D365 Finance. This leads to the lack of budget data available for reports. 
-
- 
+## Missing budget data: Error Code: ERR00006  [Type: Warning] 
+ERR00006 occurs in the BPA_SelfHelp_Log table when there is no budget created in Dynamics 365 Finance. This leads to the lack of budget data available for reports. 
 
 Sample Record: 
-
 BudgetFact is empty due to one or more missing inputs ['mserp_budgettransactionlinebientity', 'mserp_budgettransactionheaderbientity'] 
 
- 
+>[!NOTE]
+>This information is provided for your awareness only and no action is required.
 
-Resolution Steps: 
-
-Please be aware that this information is provided for your knowledge only. There is no need for you to take any action in response to this matter. This warning indicates the absence of a budget in your system, which consequently leads to a lack of budget data for your reports. However, it's not necessarily an issue that requires immediate attention. Simply consider this information as part of your understanding of your system's data situation. 
+This warning indicates the absence of a budget in your system, which leads to a lack of budget data for your reports. It's not an issue that requires immediate attention. Consider this information as part of your overall financial data assessment.
