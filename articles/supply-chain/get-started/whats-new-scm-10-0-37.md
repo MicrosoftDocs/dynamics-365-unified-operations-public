@@ -29,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Asset management | Material availability check on maintenance work orders | *Coming soon* |  Feature management:<br>*(Preview) Material availability check on maintenance work orders* |
+| Asset management | Material availability check on maintenance work orders | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md) |  Feature management:<br>*(Preview) Material availability check on maintenance work orders* |
 | Inventory and logistics | [Integrate Inventory Visibility with Dynamics 365 Commerce](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/integrate-inventory-visibility-dynamics-365-commerce) | *Coming soon* | Enabled by default |
 | Manufacturing and asset management | [Over-pick materials for production orders and batch orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/over-pick-materials-production-orders-batch-orders) | [Over-pick materials for production and batch orders](../warehousing/over-pick-materials-for-production-and-batch-orders.md) | Feature management:<br>*Over-pick materials for production orders and batch orders* |
 | Warehouse management | Auto add shipments to waves | *Coming soon* | Enabled by default |
@@ -50,13 +50,13 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | Reset the inventory journal workflow which status is unrecoverable | Lets you change the status of an inventory journal workflow from *Unrecoverable* to *Cancelled*, which then allows you to edit the workflow as needed. This feature is turned on by default. |
 | Production control | Leverage production order defaults in manufacturing execution system integration | Enables the configuration set up on the **Production order defaults** page to apply when [integrating with external manufacturing execution systems (MES)](../production-control/mes-integration.md). |
 | Sales and marketing | (Preview) Pricing management - Allow applying adjustments to standard trade agreements | Allows sales managers to choose whether or not to apply adjustments to standard trade agreements. |
-| Sales and marketing | (Preview) Skip Completion for pricing management enhanced orders | When this feature is enabled, you no longer need to select **Complete** to proceed with a a sales order that uses Pricing management features. However, you still need to select **Recalculate** to update outdated sales line prices. Funds aren't supported for sales orders where the user opted to skip order completion. | 
+| Sales and marketing | (Preview) Skip Completion for pricing management enhanced orders | When this feature is enabled, you no longer need to select **Complete** to proceed with a a sales order that uses Pricing management features. However, you still need to select **Recalculate** to update outdated sales line prices. Funds aren't supported for sales orders where the user opted to skip order completion. |
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of Finance and Operations apps (November 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of Finance and Operations apps (November 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md).
 
 ### Bug fixes
 
