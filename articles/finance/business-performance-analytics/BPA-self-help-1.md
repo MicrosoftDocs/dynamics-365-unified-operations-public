@@ -27,11 +27,11 @@ calendar in the ledger. This mismatch causes transactions in the generalledgerfa
 ### Resolution  
 To address this error, include calendar years/periods from the minAccountingDate to the maxAccountingDate for the relevant Fiscal calendars. Fiscal calendar, minAccountingDate, and maxAccountingDate are located in the BPA_SelfHelp_Log table, specifically under the LogDetails column. 
 
-See the sample record below to understand how to extract these details: 
+See the following example record: 
 1 records in GeneralJournalEntry have AccountingDate outside of the Fiscal Calendar - [Row(a67d3eda-1b93-48dd-b561-a87120983889_mserp_calendarid='Fiscal', fiscalCalendarStartDate='2014-01-01 00:00:00', fiscal
 CalendarEndDate='2025-12-31 00:00:00', 76f242a5-15cf-416c-89ef-3c1590107d7d_mserp_name='USMF', minAccountingDate='2026-01-15 00:00:00', maxAccountingDate='2026-02-15 00:00:00')]” 
 
-Follow the steps below in Dynamics 365 Finance to add a new fiscal year: 
+Follow these steps in Dynamics 365 Finance to add a new fiscal year: 
 1. Go to **General ledger > Calendars > Fiscal calendar**.
 2. Select the relevant calendar from the dropdown list.
 3. Click **+ New Year** to create a new fiscal year. 
