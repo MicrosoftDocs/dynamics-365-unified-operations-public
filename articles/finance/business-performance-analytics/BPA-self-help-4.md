@@ -1,6 +1,6 @@
 ---
 
-title: Business performance analytics self help - Missing Missing Journal Entries:
+title: Business performance analytics self help - Missing journal entries
 description: This article provides information about common errors in business performance analytics.
 author: jinniew
 ms.author: jiwo
@@ -17,24 +17,14 @@ audience: Application User
 # Business performance analytics self help error
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate
-> in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-## Missing Journal Entries: Error Code: ERR00004 – [Type:Warning] 
+## Missing journal entries: Error code: ERR00004 – [Type:Warning] 
+Error Code ERR00004 occures in the BPA_SelfHelp_Log table when the Recid column in the generaljournalaccountentry.generaljournalentry of Dynamics 365 Finance isn't found in the recid column of the generaljournalentry table. These records are excluded and aren't transferred to Fact tables. Certain Microsoft reports might display empty or incomplete data. In such cases, you might need to create modified versions of these reports to address the gaps and ensure accurate reporting.  
 
-Description: Error Code ERR00004 is logged in the BPA_SelfHelp_Log table when the Recid column in the generaljournalaccountentry.generaljournalentry of D365 Finance is not found in the recid column of the generaljournalentry table. These records are being excluded and won't be transferred to Fact tables. Certain pre-written Microsoft reports might show empty or incomplete data, prompting you to consider duplicating and modifying these reports. 
-
-Resolution Steps: 
-
-No immediate action is required. This issue might stem from data synchronization delays. We recommend observing the next 2-3 BPA runs to see if the error resolves itself. If the problem persists, follow these steps: 
-
-Verify Entries in General Journal Entry Table: 
-
-Confirm whether the entries exist in the General journal entry table in D365 Finance. If they are present in the source, proceed to the next step. 
-
-Contact Microsoft Support: 
-
-If the issue persists and the entries are indeed in the source, it's recommended to raise a support ticket with the Microsoft team for further assistance. 
+No immediate action is required as this might be a delay in data synchronization. It's recommended to observe the next coouple of business business analytics runs to see if the error resolves. 
+If the problem persists, follow these steps: 
+1. Confirm that the entries are in General journal entry table in Dynamics 365 Finance. If the records are in the table, contact the Microsoft support team for further assistance. 
 
 Sample record 
 
