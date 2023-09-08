@@ -2,7 +2,7 @@
 # required metadata
 
 title: FAQ for chat with finance and operations data on Microsoft 365 Copilot
-description: This article answers frequently asked questions about how to chat with finance and operations data on Microsoft 365 Copilot by using virtual entities in Dataverse.
+description: This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 author: ramasri
 ms.date: 09/09/2023
 ms.topic: article
@@ -24,11 +24,11 @@ ms.search.validFrom: 09/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# FAQ for chat with finance and operations data on Microsoft 365 Copilot
+# FAQ for chat with finance and operations data by using Microsoft 365 Copilot
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to chat with finance and operations data on Microsoft 365 Copilot by using virtual entities in Dataverse.
+This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 
 A Microsoft 365 Copilot license enables authorized users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
 
@@ -44,11 +44,11 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 ## What are the supported customer scenarios?
 
-**Dynamics 365 Finance scenario – Inquire about collection status on Microsoft 365 Copilot**
+**Dynamics 365 Finance scenario – Inquire about collection status by using Microsoft 365 Copilot**
 
 > [!VIDEO 2ea4ece0-c783-4410-8042-55569c5bb9f1]
 
-**Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory on Microsoft 365 Copilot**
+**Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory by using Microsoft 365 Copilot**
 
 > [!VIDEO 7f051a6f-0d45-41b4-b4c7-cd5d4166b38d]
 
@@ -94,4 +94,4 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
 
 - If your question is about a customer, use the keyword "customer" in your question. For example, don't ask, "What is the amount due for Forest Wholesales?" Instead, ask, "What is the amount due for customer Forest Wholesales?"
 - If you want the results to be shown in table format, use the key phrase "in table format" in your question. For example, ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
-- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, the amount that customers owe is shown in the **Balance due** column on pages in finance and operations apps. Therefore, don't ask, "How much does customer Forest Wholesales owe?" Instead, ask, "What is the outstanding balance of customer Forest Wholesales?"
+- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, the amount that customers owe is shown in the **Balance due** column on pages in finance and operations apps. Therefore, don't ask, "How much does customer Forest Wholesales owe?" Instead, ask, "What is the balance due of customer Forest Wholesales?"
