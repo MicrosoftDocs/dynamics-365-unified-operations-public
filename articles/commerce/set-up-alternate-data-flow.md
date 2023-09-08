@@ -6,7 +6,7 @@ description: This article describes how to configure an environment by using an 
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: bebeale
