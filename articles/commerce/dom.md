@@ -6,7 +6,7 @@ description: This article describes the distributed order management (DOM) funct
 author: josaw1
 ms.date: 11/16/2022
 ms.topic: index-page
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: Global
