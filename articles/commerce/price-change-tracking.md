@@ -6,7 +6,7 @@ description: This article describes the price change tracking feature in Microso
 author: boycez
 ms.date: 08/10/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: boycez
