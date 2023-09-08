@@ -54,7 +54,7 @@ This section complements the [Country/region-specific configuration of applicati
 3. Select **Key Vault parameters**.
 4. Add links to the following certificates:
 
-    - **CAentrate.cer** (or **CAEntratetest.cer** in the case of a test environment)
+    - **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     - **CAActalisOV.cer** (in the case of a production environment)
     - Client identity certificate (Usually, this certificate is generated while the user performs registration of the SDICoop service channel, and it's named SDI-12345678901, where 12345678901 is a company VAT number.)
     - Certificate for digital signature (*Optionally*).
@@ -64,7 +64,7 @@ This section complements the [Country/region-specific configuration of applicati
 5. Select **Chain of certificates**.
 6. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**), and then, in the **Certificates** section, add the following certificates in the order that they're listed in here:
 
-    1. **CAentrate.cer** (or **CAEntratetest.cer** in the case of a test environment)
+    1. **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     2. **CAActalisOV.cer** (in the case of a production environment)
     3. Client identity certificate
 
@@ -388,16 +388,17 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
+19. Open **Configuration Editor**, select **system.webServer** and then **serverRuntime**. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 Mb.
+20. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
-20. Create the following folders to store logs and files:
+21. Create the following folders to store logs and files:
 
     - **C:\\Logs\\** – Store log files here. These files can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
     - **C:\\Files\\** – Store all the response files here.
 
-21. In File Explorer, grant **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** if you're using the default pool) access to the **Logs** and **Files** folders.
+22. In File Explorer, grant **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** if you're using the default pool) access to the **Logs** and **Files** folders.
 
     1. Select and hold (or right-click) one of the folders, and then select **Properties**.
     2. In the **Properties** dialog box, on the **Security** tab, select **Edit**.
