@@ -6,7 +6,7 @@ description: This article explains how to configure Microsoft Dynamics 365 Comme
 author: boycez
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: boycez
