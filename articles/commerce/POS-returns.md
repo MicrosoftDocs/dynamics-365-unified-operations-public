@@ -6,7 +6,7 @@ description: This article describes how to initiate returns for cash-and-carry t
 author: hhainesms
 ms.date: 08/04/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro 
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
