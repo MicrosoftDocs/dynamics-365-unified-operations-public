@@ -4,7 +4,7 @@ description: This article provides an overview of the fiscal integration sample 
 author: EvgenyPopovMBS
 ms.date: 10/04/2022
 ms.topic: article
-audience: Application User
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
