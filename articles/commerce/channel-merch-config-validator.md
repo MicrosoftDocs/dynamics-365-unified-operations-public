@@ -7,7 +7,7 @@ author: ashishmsft
 ms.date: 09/01/2023
 ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
