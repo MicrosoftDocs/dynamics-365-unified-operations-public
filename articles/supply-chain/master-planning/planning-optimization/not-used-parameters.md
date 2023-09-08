@@ -138,8 +138,8 @@ Planning Optimization doesn't use the following parameter option on the **Releas
 Planning Optimization doesn't use the following parameters or options on the **Scheduling parameters** page:
 
 - **Schedule timeout enabled** – In Planning Optimization, schedule timeout is always enabled.
-- **Maximum scheduling time per sequence** – The value is not considered in Planning Optimization.
-- **Schedule optimization timeout enabled** – The value is not considered in Planning Optimization.
-- **Optimization attempts timeout** - The value is not considered in Planning Optimization.
+- **Maximum scheduling time per sequence** – The value isn't considered in Planning Optimization.
+- **Schedule optimization timeout enabled** – This parameter isn't considered in Planning Optimization.
+- **Optimization attempts timeout** - The value isn't considered in Planning Optimization.
 - **Keep production unit** - Not supported in Planning Optimization.
 - **Keep warehouse from resource** - Not supported in Planning Optimization.
