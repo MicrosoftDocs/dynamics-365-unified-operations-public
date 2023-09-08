@@ -6,7 +6,7 @@ description: This article describes how to enable on behalf of (OBO) functionali
 author: mariash529
 ms.date: 08/09/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chriffin
 ms.search.region: Global
 ms.author: mashneer
