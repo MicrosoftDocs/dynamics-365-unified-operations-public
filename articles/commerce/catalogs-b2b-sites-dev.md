@@ -7,7 +7,7 @@ description: This article describes the extensibility impact of the Commerce cat
 author: ashishmsft
 ms.date: 07/11/2022
 ms.topic: article
-audience: Application User
+audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
