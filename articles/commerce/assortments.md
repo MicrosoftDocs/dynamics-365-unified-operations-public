@@ -4,7 +4,7 @@ description: This article explains the basic concepts of assortment management i
 author: josaw1
 ms.date: 07/18/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
