@@ -2,7 +2,7 @@
 title: Bulk import and export digital assets using manifests
 description: This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 07/12/2023
+ms.date: 09/08/2023
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -120,8 +120,8 @@ The following table shows the schema extension for product media assignments.
 
 | Column name                         | Description |
 |-------------------------------------|-------------|
-| EntityType                          | The product assignment target for the current row. Supported values `Product\|Master`, `Product\|Variant`, `Product\|DimensionMatrix`, `Product\|Master\|Swatch`. |
-| EntityKey                           | A value that specifies what's used as the key for the assignment in the `EntityKeyValue` field. Supported values `EntityId`, `EntityId\|DimensionMatrix`, `EntityId\|SwatchType\|SwatchId`. |
+| EntityType                          | The product assignment target for the current row. Supported values are `Product\|Master`, `Product\|Variant`, `Product\|DimensionMatrix`, and `Product\|Master\|Swatch`. |
+| EntityKey                           | A value that specifies what's used as the key for the assignment in the `EntityKeyValue` field. Supported values are `EntityId`, and `EntityId\|DimensionMatrix`, `EntityId\|SwatchType\|SwatchId`. |
 | EntityKeyValue                      | The value of the key that's specified in `EntityKey`. For `DimensionMatrix`, the dimensions are pipe delimited and the keys are separated from the values using colons. |
 | EntityLocale                        | The locale of the product assignment (for example, "en-us", "de-de", or "system_neutral" for locale agnostic). |
 | CatalogNumber                       | The catalog number that the assignment is associated with. |
