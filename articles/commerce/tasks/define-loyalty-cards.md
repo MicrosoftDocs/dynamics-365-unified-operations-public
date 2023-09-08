@@ -6,7 +6,7 @@ description: This article describes how to define loyalty cards in Microsoft Dyn
 author: chuzho
 ms.date: 07/31/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: chuzho
