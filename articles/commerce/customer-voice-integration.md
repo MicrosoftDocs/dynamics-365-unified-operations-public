@@ -6,7 +6,7 @@ description: This article describes how to integrate Microsoft Dynamics 365 Cust
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
