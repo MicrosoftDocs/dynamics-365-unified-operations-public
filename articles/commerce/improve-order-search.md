@@ -4,7 +4,7 @@ description: This article explains how to help improve the performance of Commer
 author: ashishMSFT
 ms.date: 01/03/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
