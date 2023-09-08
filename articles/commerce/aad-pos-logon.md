@@ -49,7 +49,7 @@ To associate Azure AD accounts with POS users in Commerce headquarters, follow t
 	
 1. Go to **Retail and Commerce > Employees > Workers** and open a worker record.
 1. On the Action Pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 
-1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**.
+1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**. Please notice, now it only support full text search, you need input the full email address. If you want to search by Name or Alias, you need switch to **Filter using columns**, then you could enter partial name or alias to search.
 1. Select the Azure AD account that is returned, then select **OK**.
 
 After the configuration steps above, the **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
