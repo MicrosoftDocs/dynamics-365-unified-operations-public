@@ -6,7 +6,7 @@ description: This article describes the parameters that are specific to the post
 author: analpert
 ms.date: 04/27/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: analpert
