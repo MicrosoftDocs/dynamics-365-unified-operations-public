@@ -4,7 +4,7 @@ description: This article provides guidance about how to enable the cash registe
 author: EvgenyPopovMBS
 ms.date: 10/04/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
