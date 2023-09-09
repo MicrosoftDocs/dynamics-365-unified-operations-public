@@ -1,6 +1,6 @@
 ---
-title: Tables supported for duplicate record data sharing
-description: This article describes the tables supported for duplicate record data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
+title: Tables supported for duplicate and master record data sharing
+description: This article describes the tables supported for duplicate and master record data sharing. These are mechanisms for sharing reference and group data among companies in a deployment.
 author: RamaKrishnamoorthy
 ms.date: 01/23/2023
 ms.topic: article
@@ -17,28 +17,35 @@ ms.search.form: SysDataSharingConfiguration
 ---
 
 # Tables supported for duplicate record data sharing
-This article describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
+This list describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**
 
 | **Table object Name**        | **Table description (Label)**   |
 |------------------------------|---------------------------------|
 | AssetCondition               | Fixed asset condition           |
+| AssetBookTable               | Fixed asset book setup          |
+| AssetGroup                   | Fixed asset groups              |
+| AssetLedger                  | Fixed asset posting profile     |
+| AssetLedgerAccounts          | Fixed asset posting profile     |
 | BankCentralBankPurpose       | Payment purpose codes           |
 | BankChequeLayout             | Check layout                    |
 | BankGroup                    | Bank groups                     |
 | BankParameters               | Bank parameters                 |
 | BankTransType                | Bank transaction type           |
+| CashDisc                     | Cash discount                   |
 | CompanyNAFCode               | NAF codes                       |
 | CredManAccountStatusTable    | Account statuses                |
 | CredManCollectionsGroupTable | Collection groups               |
 | CredManGroup                 | Credit management groups        |
 | CredManReasonTable           | Reason table                    |
 | CustBankAccount              | Customer bank accounts          |
+| CustCollectionLetterLine     | Collection letter lines         |
 | CustCollectionLetterTable    | Collection letter setup         |
 | CustDefaultLocation          | Customer default locations      |
 | CustGroup                    | Customer groups                 |
 | CustLedger                   | Customer posting profiles       |
+| CustLedgerAccounts           | Customer ledger accounts        |
 | CustPaymModeTable            | Methods of payment – customers  |
 | CustStaticsGroup             | Statistics group                |
 | CustTable                    | Customers                       |
@@ -55,7 +62,8 @@ This article describes the tables supported for duplicate record data sharing. D
 | Tax1099Fields                | 1099 fields                     |
 | VendExceptionGroup           | Vendor exception groups         |
 | VendLedger                   | Vendor posting profile          |
-| VendPriceToleranceGroup      | Vendor price tolerance groups   |
+| VendLedger                   | Vendor posting profile          |
+| VendLedgerAccounts           | Vendor ledger accounts          |
 
 **Tax**
 
@@ -65,6 +73,7 @@ This article describes the tables supported for duplicate record data sharing. D
 | TaxAuthorityAddressRegistration | Authority registration number |
 | TaxGroupHeading                 | Sales tax group description   |
 | TaxItemGroupHeading             | Item sales tax group          |
+| TaxLedgerAccountGroup           | Ledger posting groups         |
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
 
@@ -88,6 +97,7 @@ This article describes the tables supported for duplicate record data sharing. D
 | InventCountingReasonCodePolicy               | Counting reason code policies                          |
 | InventFiscalLIFOGroup                        | Fiscal LIFO reporting group                            |
 | InventItemGroup                              | Item groups                                            |
+| InventItemGroupForm                          | Item groups                                            |
 | InventItemPriceToleranceGroup                | Item price tolerance groups                            |
 | InventJournalName                            | Inventory journal names                                |
 | InventLocationInventCountingReasonCodePolicy | Inventory counting reason code policy for warehouse    |
@@ -394,6 +404,7 @@ It might be possible to add additional tables for master company data sharing po
 | TaxItemGroupHeading             | Item sales tax group          |
 | TaxParameters                   | Sales tax parameters          |
 | TaxPeriodHead                   | Sales tax period description  |
+| TaxWithholdTable                | Withholding tax codes         |
 
 **Dynamics 365 Supply Chain Management**
 
