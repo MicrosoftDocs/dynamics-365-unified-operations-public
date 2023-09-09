@@ -6,7 +6,7 @@ description: This article provides an overview of new clienteling capabilities t
 author: bebeale
 ms.date: 11/16/2022
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: josaw
 ms.custom: ["260624"]
 ms.collection: get-started

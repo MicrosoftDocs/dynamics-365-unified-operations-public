@@ -6,7 +6,7 @@ description: This article provides an overview of the Microsoft Dynamics 365 Pay
 author: rassadi
 ms.date: 09/07/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c

@@ -6,7 +6,7 @@ description: This article describes the asynchronous customer creation mode in M
 author: gvrmohanreddy
 ms.date: 10/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: xiaomgao

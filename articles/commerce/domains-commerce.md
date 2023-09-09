@@ -5,7 +5,7 @@ description: This article describes how domains are handled in Microsoft Dynamic
 author: BrianShook
 ms.date: 03/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo

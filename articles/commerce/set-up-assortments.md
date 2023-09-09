@@ -4,7 +4,7 @@ description: This article describes what an assortment is and explains how to se
 author: josaw1
 ms.date: 07/18/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw

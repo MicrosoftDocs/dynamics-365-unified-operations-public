@@ -6,7 +6,7 @@ description: This article describes the feature that limits how payment tokens a
 author: BrianShook
 ms.date: 10/20/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo

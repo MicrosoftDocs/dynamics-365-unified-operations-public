@@ -6,7 +6,7 @@ description: This article describes the proactive chat parameters of Commerce ch
 author: gvrmohanreddy
 ms.date: 10/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv

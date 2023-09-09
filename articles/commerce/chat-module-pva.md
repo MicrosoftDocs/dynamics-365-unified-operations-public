@@ -6,7 +6,7 @@ description: This article describes the Commerce Chat with Power Virtual Agents 
 author: josaw1
 ms.date: 04/04/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

@@ -4,7 +4,7 @@ description: This article lists the capabilities available in on-premises deploy
 author: ShalabhjainMSFT
 ms.date: 12/13/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain

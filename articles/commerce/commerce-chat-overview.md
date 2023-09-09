@@ -6,7 +6,7 @@ description: This article provides an overview of the Commerce chat features tha
 author: gvrmohanreddy
 ms.date: 10/18/2022
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv

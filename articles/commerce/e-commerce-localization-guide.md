@@ -6,7 +6,7 @@ description: This article describes how to localize a Microsoft Dynamics 365 Com
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
