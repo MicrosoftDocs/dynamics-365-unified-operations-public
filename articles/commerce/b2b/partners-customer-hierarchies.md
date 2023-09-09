@@ -10,7 +10,7 @@ ms.prod:
 ms.technology: 
 # optional metadata
 ms.search.form: RetailOperations
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgriffin
 #

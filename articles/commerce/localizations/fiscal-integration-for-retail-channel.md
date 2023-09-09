@@ -4,7 +4,7 @@ description: This article provides an overview of the fiscal integration capabil
 author: EvgenyPopovMBS
 ms.date: 12/06/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

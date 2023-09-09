@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: Category, Retail product hierarchy, Navigation hierarchy
 # ROBOTS: 
-audience: Application User, Merchandising manager, Catalog manager
+audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 

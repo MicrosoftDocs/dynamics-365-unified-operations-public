@@ -6,7 +6,7 @@ description: This article describes how to handle customer information in Retail
 author: EvgenyPopovMBS
 ms.date: 08/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Poland
 ms.author: josaw

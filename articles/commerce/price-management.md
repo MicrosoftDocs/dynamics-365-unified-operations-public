@@ -6,7 +6,7 @@ description: This article describes the concepts for creating and managing sales
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain

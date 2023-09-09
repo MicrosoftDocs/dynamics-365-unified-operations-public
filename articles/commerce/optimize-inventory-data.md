@@ -4,7 +4,7 @@ description: This article describes how to configure batch jobs to optimize chan
 author: hhainesms
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines

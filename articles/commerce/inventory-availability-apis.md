@@ -4,7 +4,7 @@ description: This article describes the inventory availability APIs for e-commer
 author: rickwyang
 ms.date: 07/18/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: wenxyang

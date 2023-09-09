@@ -6,7 +6,7 @@ description: This article describes various pricing APIs that are provided by th
 author: boycez
 ms.date: 03/20/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: boycez

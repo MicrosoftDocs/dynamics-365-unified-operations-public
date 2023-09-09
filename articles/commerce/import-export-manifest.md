@@ -4,7 +4,7 @@ description: This article describes how to bulk import and export digital assets
 author: psimolin
 ms.date: 09/08/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin

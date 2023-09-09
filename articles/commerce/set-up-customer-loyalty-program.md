@@ -4,7 +4,7 @@ description: This article describes the loyalty capabilities within Dynamics 365
 author: josaw1
 ms.date: 02/03/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
