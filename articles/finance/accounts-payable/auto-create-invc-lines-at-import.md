@@ -61,3 +61,17 @@ All product receipts must belong to the same vendor account on the invoice heade
 If lines are successfully generated, the following message is logged in the vendor invoice automation history: "Automatically create invoice lines: Succeeded."
 
 If lines don't generate, the following error message is logged: "Automatically create invoice lines: Failed."
+
+# Import prepayment invoice
+
+The prepayment invoice can be imported directly via data entity **Vendor invoice header** when the parameter **Automatically create invoice lines** is enabled.
+- **HeaderOnlyImport** – This field must be set to **Yes** to generate lines for prepayment invoice.
+- **PurchIdRange** - This field must be filled by the **purchase order number** which has already set the prepayment amount.
+- **VENDORINVOICETYPE** - This field shall be filled by value **"VendorAdvance"** to represent it is a prepayment invoice.
+- **IMPORTEDAMOUNT** - This field shall be filled by the **amount** on the prepayment invoice.
+
+The import of prepayment invoice is not accpeted when:
+- The prepayment invoice has already been generated without settlement under the purchase order.
+
+
+
