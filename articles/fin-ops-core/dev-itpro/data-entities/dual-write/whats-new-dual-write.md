@@ -18,6 +18,35 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## August 2023
+
+Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
+
+> [!NOTE]
+> Beginning with this release we will use a new naming convention for version numbers of the dual-write core solution. The format of the version number will be **1.0.YYMMW.versionNumber**, where "YYMMW" are the calendar year, month, and week in which the version build is created. The "versionNumber" is **0** by default. With this change we also introduce a more consistent cadence in version rollouts for the dual-write core solution.
+
+| Feature | Description | Status |
+| ---|---|---|
+| Bug fix | Fix for reported bug in Authentication for the dual-write core plugin. | General availability |
+
+In addition to the above fixes, the following new objects are also included in the dual-write core solution in this release. These objects are related to the asynchronous processing for dual-write, which is a feature coming in a future release. The complete feature is not yet available. These new objects are added to the environment in this release, but are non-functional until the full asynchronous processing feature is available.
+
+| Display name | Name | Type |
+| --- | --- | --- |
+| AsyncDataEnqueueOperation | AsyncDataEnqueueOperation | Custom API |
+| DataSyncAction | DataSyncAction | Custom API |
+| DataSyncEntityOperation | DataSyncEntityOperation | Custom API |
+| DataSyncExecutionRequest | DataSyncExecutionRequest | Custom API Request Parameter |
+| DataSyncExecutionResponse | DataSyncExecutionResponse | Custom API Response Property |
+| DataSyncPayload | DataSyncPayload | Custom API Request Parameter |
+| Dual Write Async Execution Partition Map Status | msdyn_dualwriteasyncexecutionpartitionmapstatus | Table |
+| Dual Write Async Processing Range | msdyn_dualwriteasyncprocessingrange | Table |
+| msdyn_datasyncexecutionerror | msdyn_datasyncexecutionerror | Table |
+| msdyn_datasyncexecutionsummary | msdyn_datasyncexecutionsummary | Table |
+| msdyn_datasyncexecutionsummary_elastic | msdyn_datasyncexecutionsummary_elastic | Table |
+| TriggerDataSyncAction | TriggerDataSyncAction | Custom API |
+
+
 ## July 2023 release
 
 The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
@@ -62,7 +91,7 @@ The May release of the Dual-write Global Address Book solution 3.5.1.87 contains
 
 ## March 2023 release 
 
-The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid march.
+The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid March.
 
 | Feature | Description | Status |
 |---|---|---|
