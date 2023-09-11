@@ -6,17 +6,17 @@ description: This article describes the types of documents that you can use to m
 author: BrianShook
 ms.date: 01/12/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
@@ -41,7 +41,7 @@ The Commerce applications running on CSU don't support the following product dim
 The Commerce applications running on CSU do not support the following tracking dimensions:
 - Owner dimension
 
-- The point of sale (POS) application can offer limited support for the following dimensions. POS may automatically enter some of the dimensions in inventory transactions, based on the configuration of the warehouse or store setup. POS won't fully support the dimensions in the way that they are supported if a sales transaction is manually entered in Commerce headquarters, however. 
+- The point of sale (POS) application can offer limited support for the following dimensions. POS may automatically enter some of the dimensions in inventory transactions, based on the configuration of the warehouse or store setup. POS won't fully support the dimensions in the way that they are supported if a sales transaction is manually entered in Commerce headquarters, however.
 
 - **Warehouse Location** – When they use the new [Inbound operation](./pos-inbound-inventory-operation.md) and [Outbound operation](./pos-outbound-inventory-operation.md) POS operations, users can select a warehouse inventory location to receive items into or ship outbound transfer order items out of. If they use the obsolete **Picking and receiving** operation, limited location management support is available for receiving and shipping outbound transfers. That support is available only if the **Use warehouse management process** option has been turned on for the item and the store warehouse. An inventory location can't currently be used with the **Stock count** operation or the **Inventory lookup** operation.
 
@@ -58,9 +58,12 @@ The Commerce applications running on CSU do not support the following tracking d
 >
 > If items are configured in a way that isn't supported by the Commerce applications and appropriate testing isn't done, data failures that aren't easily corrected or may not be able to be corrected at all, may occur.
 
+> [!NOTE]
+> Store inventory management operations including Inbound, Outbound, Stock Count, Adjustment and Movement, they are optimized for barcode scanning. You can scan barcodes to add, receive, and ship products. However, as of today, the unit of measure configured on the barcodes is not supported in these operations, the product's inventory unit of measure will be instead with the barcodes' quantity.
+
 ## Purchase orders
 
-Purchase orders are created in Commerce headquarters. If a store warehouse is included in the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](./pos-inbound-inventory-operation.md) operation in POS. 
+Purchase orders are created in Commerce headquarters. If a store warehouse is included in the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](./pos-inbound-inventory-operation.md) operation in POS.
 
 ## Transfer orders
 

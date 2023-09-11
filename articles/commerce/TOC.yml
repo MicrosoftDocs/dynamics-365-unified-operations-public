@@ -846,6 +846,8 @@
             href: channel-side-calculation-faq.md
           - name: Inventory-aware product listing
             href: inventory-aware-product-listing.md
+          - name: Order checkouts with inventory availability
+            href: order-checkouts-with-inventory-availability.md
         - name: Store inventory
           items:
           - name: Store inventory management
@@ -966,13 +968,13 @@
           href: set-up-customer-loyalty-program.md
         - name: Define loyalty programs
           href: tasks/define-loyalty-programs.md
-        - name: Define loyalty reward points   
-          href: tasks/define-loyalty-reward-points.md 
-        - name: Define loyalty schemes   
+        - name: Define loyalty reward points
+          href: tasks/define-loyalty-reward-points.md
+        - name: Define loyalty schemes
           href: tasks/define-loyalty-schemes.md
-        - name: Define loyalty cards   
-          href: tasks/define-loyalty-cards.md 
-        - name: Process adjustments of loyalty reward points   
+        - name: Define loyalty cards
+          href: tasks/define-loyalty-cards.md
+        - name: Process adjustments of loyalty reward points
           href: tasks/process-loyalty-reward-point-adjustments.md
     - name: Manage your financials
       items:
@@ -1570,7 +1572,7 @@
             href: localizations/emea-eeu-advance-invoices-for-retail.md
           - name: Petty cash management for Commerce for Eastern Europe
             href: localizations/emea-eeu-petty-cash-for-retail.md
-          - name: Customer invoices and return sales orders in Eastern European countries/regions 
+          - name: Customer invoices and return sales orders in Eastern European countries/regions
             href: localizations/emea-eeu-retail-invoices.md
           - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
             href: localizations/emea-eeu-deployment.md
@@ -2281,7 +2283,7 @@
           - name: Support parameterized calls of ER data models
             href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?context=/dynamics365/context/commerce
         - name: Configure model mappings
-          items: 
+          items:
           - name: Configure country/region context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?context=/dynamics365/context/commerce
           - name: Manage ER model mapping in separate ER configurations

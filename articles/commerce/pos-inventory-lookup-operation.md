@@ -40,6 +40,8 @@ The list view of locations includes all stores and warehouses that are configure
 > [!NOTE]
 > Make sure your current store is included in the associated fulfillment groups.
 
+The "Current store quantity" section in above example image, is the "available physical" quantity of the product in the store of current POS device. It will not change as you select different entries in the list view.
+
 The following actions are available on the POS app bar:
 
 - **Sort** – This action lets the POS user sort the data in the list view based on various criteria. Location-based sorting is the default sort option.
@@ -80,7 +82,7 @@ In the matrix view, each cell represents an individual variant, and displays an 
 | **0** (zero)                             | A variant has been released to the selected location, but the item isn't available at the selected location. You can perform additional actions in the cell. |
 | **n/a**, or an inactive cell              | A variant hasn't been released to the selected location, and you can't perform additional actions in the cell. |
 
-The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use. 
+The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use.
 
 The following actions are available in the matrix view cell:
 
