@@ -49,7 +49,7 @@ To use Azure AD as the POS authentication method, you must associate Azure AD ac
 To associate Azure AD accounts with POS users in Commerce headquarters, follow these steps.
 	
 1. Go to **Retail and Commerce \> Employees \> Workers** and open a worker record.
-1. On the action pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 
+1. On the Action Pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 
 1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**. You must enter the full email address. If you want to search by name or alias, switch to **Filter using columns** to enter a partial name or alias.
 1. Select the Azure AD account that is returned, then select **OK**.
 
