@@ -24,11 +24,8 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 ### Operating system requirements
 
-The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
+You can check if your device is running a supported version on the [Mobile device workspace](mobile-device-workspace.md).
 
-- Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
-- Android 4.4 or later
-- iOS 13.0 or later
 
 ### External URLs required by the app
 
