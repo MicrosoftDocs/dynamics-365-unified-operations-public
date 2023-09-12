@@ -2,7 +2,7 @@
 title: Configure Azure Active Directory authentication for POS sign-in
 description: This article explains how to configure Azure Active Directory as the authentication method in Microsoft Dynamics 365 Commerce point of sale.
 author: boycezhu
-ms.date: 01/30/2023
+ms.date: 09/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,6 +12,7 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.11
+
 ---
 
 # Configure Azure Active Directory authentication for POS sign-in
@@ -47,9 +48,9 @@ To use Azure AD as the POS authentication method, you must associate Azure AD ac
 
 To associate Azure AD accounts with POS users in Commerce headquarters, follow these steps.
 	
-1. Go to **Retail and Commerce > Employees > Workers** and open a worker record.
-1. On the Action Pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 
-1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**. Please notice, now it only support full text search, you need input the full email address. If you want to search by Name or Alias, you need switch to **Filter using columns**, then you could enter partial name or alias to search.
+1. Go to **Retail and Commerce \> Employees \> Workers** and open a worker record.
+1. On the action pane, select the **Commerce** tab, then under **External identity** select **Associate existing identity**. 
+1. In the **Use existing external identity** dialog box, select **Search using email**, enter an Azure AD email address, and then select **Search**. You must enter the full email address. If you want to search by name or alias, switch to **Filter using columns** to enter a partial name or alias.
 1. Select the Azure AD account that is returned, then select **OK**.
 
 After the configuration steps above, the **Alias**, **UPN**, and **External sub identifier** fields on the **Commerce** tab of the worker's details page will be filled in.
