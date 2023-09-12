@@ -4,23 +4,14 @@
 title: Store inventory management
 description: This article describes the types of documents that you can use to manage inventory.
 author: BrianShook
-ms.date: 01/12/2021
+ms.date: 09/12/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: Application User
-# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: hhaines
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
