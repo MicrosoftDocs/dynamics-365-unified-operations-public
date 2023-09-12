@@ -846,8 +846,8 @@
             href: channel-side-calculation-faq.md
           - name: Inventory-aware product listing
             href: inventory-aware-product-listing.md
-          - name: Order checkouts with inventory availability
-            href: order-checkouts-with-inventory-availability.md
+          - name: Configure inventory availability checks for cart and checkout actions
+            href: inventory-availability-checks.md
         - name: Store inventory
           items:
           - name: Store inventory management
