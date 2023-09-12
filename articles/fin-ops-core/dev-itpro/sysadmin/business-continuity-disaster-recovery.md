@@ -44,7 +44,7 @@ If a failover occurs, the applicable service will work in limited mode. Update m
 When Microsoft determines that the primary region is back online and fully operational, it will notify customers and switch the environments back so that they work out of the primary region. Users who are connected to the systems will experience a brief interruption of up to a few minutes, and the batch service might be unavailable for up to 25 minutes. The service, including all non-production instances, will be fully restored. There will be no data loss during the failback process.
 
 > [!IMPORTANT]
-> While the environment is operating out of the secondary region, the finance and operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. If Financial Reporting is critical for a customer during the disaster, the customer can request restoration of the service to Microsoft through a support ticket.
+> While the environment is operating out of the secondary region, the finance and operations app environment will have reduced functionality. Financial Reporting and Power BI reporting won't be available. 
 >
 > Additionally, there might be service degradation of non-production instances. Deployments of new non-production environments might be blocked.
 
