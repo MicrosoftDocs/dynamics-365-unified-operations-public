@@ -1,6 +1,6 @@
 ---
 title: Order checkouts with inventory availability
-description: This article describes how perform order checkouts work with inventory availability in Microsoft Dynamics 365 Commerce.
+description: This article describes how to perform order checkouts work with inventory availability in Microsoft Dynamics 365 Commerce.
 author: rickwyang
 ms.date: 09/12/2023
 ms.topic: article
@@ -28,8 +28,8 @@ When the **Enable stock check in app** setting is turned off, Commerce doesn't p
 
 ## Order checkouts on POS
 
-On POS, there is no inventory availability check when a customer adds a product to the cart, or when an order is checked out. Store employees can use the [POS inventory lookup](pos-inventory-lookup-operation.md) operation to check product availability before orders are checked out.
+On POS, there's no inventory availability check when a customer adds a product to the cart, or when an order is checked out. Store employees can use the [POS inventory lookup](pos-inventory-lookup-operation.md) operation to check product availability before orders are checked out.
 
-If your business require automatic an inventory availability check from the system on POS, Microsoft recommends that you build your own customizations.
+If your business requires automatic an inventory availability check from the system on POS, Microsoft recommends that you build your own customizations.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
