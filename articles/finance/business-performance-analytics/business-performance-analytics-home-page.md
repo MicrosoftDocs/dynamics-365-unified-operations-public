@@ -19,11 +19,22 @@ audience: Application User
 > [!NOTE]
 > The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
 
-Business performance analytics is a powerful tool for gaining insights from data in a user-friendly and comprehensive way across multiple business processes. It delivers insights to all users, regardless of their technical ability, simplifying the process of making informed decisions and enabling finance professionals to focus on strategic initiatives.
+## Turn data into action to improve business performance 
 
-Creating a hyper-connected enterprise through an intuitive dimensional data model and empowering people with self-service analytics enables reporting in a more holistic way, providing a unified and accessible view across multiple systems of record. This is achieved by unifying data, simplifying reporting, and adopting self-service analytics. This solution streamlines financial reporting and shortens cycle times, allowing finance teams to focus on strategic initiatives. It also enhances the growth potential of Dynamics 365 Finance capabilities by leveraging unified data for AI and machine learning to improve financial performance and protect organizations from risk.
+Finance departments are grappling with an array of data-related and tool-based difficulties that significantly hinder their productivity, accuracy, and capacity to lead strategic initiatives. Saddled with desperate and outdated data and siloed tools that necessitate slow and laborious manual processes for its extraction and integration to generate business insights.  
 
-## Prerequisites
+Once the data is gathered, their analytical tools are often complex - requiring data science proficiencies or too simple and rigid - restricted by outdated ERP interfaces and lack of modern features like machine learning and AI. These factors constrain the discovery of valuable insights and opportunities to improve business performance. 
+
+To support agile decision-making finance leaders need to solve data challenges and ensure robust and timely insights are readily available at the point of decision-making to drive action. Our aim with business performance analytics is to solve this challenge.  
+
+### The transformative power of business performance analytics 
+
+Business performance analytics transforms how finance departments manage complex data and utilize it for informed decision-making. Our solution helps Finance lay a foundation for integrating AI and other advanced capabilities, with the vision of providing an all-encompassing view of business processes and systems delivered in real-time through easy-to-use tools. Customers can seamlessly consolidate data from Dynamics 365 across finance, sales, supply chain, human resources, and project operations, as well as from third-party ERPs, P2P systems, and contracts. This integrated data model enables faster data refresh and greater automation, reducing manual tasks and IT dependence while optimizing decision-making processes. 
+
+### Impactful outcomes with advanced analytics 
+Business performance analytics allows finance teams to access comprehensive and timely data easily. This streamlines routine financial reporting and task automation and significantly reduces cycle times. With streamlined data management and enhanced accessibility, finance teams can save significant time, unlocking opportunities for increased automation, heightened productivity, and greater accuracy. Consequently, finance teams can leverage their efficiency gains to shift focus from their routine reporting to optimizing business models and planning for the future. 
+
+### Prerequisites
 
 Business performance analytics has the following prerequisites:
 
