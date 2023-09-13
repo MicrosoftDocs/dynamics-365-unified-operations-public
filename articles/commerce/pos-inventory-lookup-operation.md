@@ -37,8 +37,7 @@ The list view of locations includes all stores and warehouses that are configure
 
 ![Inventory lookup operation list view.](media/inventory-lookup-list-view.png)
 
-
-The **Current store quantity** value in the image above is the available physical quantity of the product in the store associated with the POS device. This value won't change when you select different entries in the list view.
+The **Current store quantity** value in the preceding image is the available physical quantity of the product in the store that is associated with the POS device. This value won't change when you select different entries in the list view.
 
 > [!NOTE]
 > Ensure that your current store is included in the associated fulfillment groups.
