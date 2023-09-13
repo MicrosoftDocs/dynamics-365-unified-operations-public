@@ -60,8 +60,8 @@ As of version 175.119 of the **SAF-T Format (NO)** ER format, the **TaxRegistrat
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
-3. Select or create the address in Denmark, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that's dedicated to Denmark, and that uses the **VAT ID** registration category.
+3. Select or create the address in Norway, and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that's dedicated to Norway, and that uses the **VAT ID** registration category.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
