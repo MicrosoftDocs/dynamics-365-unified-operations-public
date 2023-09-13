@@ -101,6 +101,13 @@ Tables that are automatically added when a policy is enabled or updated won't be
 
 Tables that include country/region specific fields and/or logic need to be carefully considered. It might be required to use sharing policies per country/region for certain tables to avoid configuration conflicts. Country/region specific fields will only be viable/editable for companies in that country/region, but updates for these fields might trigger conflicts with companies in other country regions.
 
+### Cross company data sharing consistency checker
+In Platform update 61, functionality for a consistency check was added. The consistency check should be run, when setting up data sharing, to resolve configuration issues. The consistency check will drop any "orphaned" fields in a table that has no corresponding configuration. It enables quick detection and fixes to any inconsistencies in the policy.
+1.	Go to System administration > Setup > Configure cross-company data sharing.
+2.	On the Configure cross-company data sharing page, select Consistency check
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/29776190/d07896d1-885b-49be-ae76-c99916fdc071)
+
+
 ### Additional considerations
 
 - Composite tables must be shared in the same policy. If not, a message will inform users to add additional tables during enable and update to secure this.  
