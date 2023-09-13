@@ -2,7 +2,7 @@
 title: Set up direct integration of Italian FatturaPA with SDI
 description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: gionoder
-ms.date: 03/06/2023
+ms.date: 09/13/2023
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -19,10 +19,10 @@ ms.dyn365.ops.version: AX 10.0.20
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps enabling generation of electronic invoices in Italy specific **FatturaPA** format and exchange electronic invoices with Italian Revenue Agency’s e-invoicing exchange system **SDI** (Sistema di Interscambio). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. This article guides you through the configuration steps to enable generating electronic invoices in the Italy-specific format, **FatturaPA** and exchange electronic invoices with the Italian Revenue Agency’s e-invoicing exchange system, **SDI** (Sistema di Interscambio). These steps complement the steps that are described in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 > [!NOTE]
-> The solution for direct integration with SDI supports only digital signing of documents using separately stored certificate files which can be uploaded to the **Key Vault**. Qualified digital signature which requires additional hardware involvement or online connection to certification service providers is not supported.
+> The solution for direct integration with SDI only supports digital signing of documents using separately stored certificate files which can be uploaded to the **Key Vault**. Qualified digital signatures, which requires additional hardware involvement or online connection to certification service providers isn't supported.
 
 ## Prerequisites
 
@@ -31,8 +31,8 @@ Before you complete the steps in this article, the following prerequisites must 
 - Obtain SDICoop service channel accreditation in the Exchange system (SDI) government portal.
 - Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 - Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 3 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
-- Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
-- *Optionally*, you can use Digital signature certificate for non-qualified signatures only.
+- Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the article, "Get started with Electronic invoicing service administration".
+- Optionally, you can use the Digital signature certificate for non-qualified signatures only.
 
 ## Country/region-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
@@ -57,7 +57,7 @@ This section complements the [Country/region-specific configuration of applicati
     - **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     - **CAActalisOV.cer** (in the case of a production environment)
     - Client identity certificate (Usually, this certificate is generated while the user performs registration of the SDICoop service channel, and it's named SDI-12345678901, where 12345678901 is a company VAT number.)
-    - Certificate for digital signature (*Optionally*).
+    - Certificate for digital signature (Optional).
 
     For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
 
@@ -107,11 +107,11 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 1. On the **Electronic invoicing features** page, select the feature to edit.
 2. On the **Setups** tab, select **Sales invoices**, and then select **Edit**.
-3. In the **Processing pipeline** section, go through the actions, and set all the required fields:
+3. In the **Processing pipeline** section, go through the actions, and set the required fields:
 
-    - For the **Get next number sequence value** action, in the **Parameters** section, select the **Number sequence** parameter, and then, in the **Value** field, select previously defined number sequence for [**ProgressivoInvio**](#ProgressivoInvio).
-    - For the **Submit** action, add a value to the **URL address** and **Certificates** fields, in **Parameters** section. The value of the **Certificates** field is a chain of certificates that was added in one of the previous sections (**SDIChainProd** or **SDIChainTest**).
-    - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate (*Optionally*).
+    - **Get next number sequence value** action - In the **Parameters** section, select the **Number sequence** parameter, and then, in the **Value** field, select the previously defined number sequence for [**ProgressivoInvio**](#ProgressivoInvio).
+    - **Submit** action - In the **Parameters** section, in the **URL address** field and **Certificates** field, enter or select a value. The value in the **Certificates** field is a chain of certificates that was added in a previous section (**SDIChainProd** or **SDIChainTest**).
+    - **Sign document** action - In the **Certificate name** field, specify the Digital signature certificate (Optional).
 
 4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
     - Review the **LegalEntityID** clause and update with the correct value from your legal entity.
@@ -388,7 +388,7 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. Open **Configuration Editor**, select **system.webServer** and then **serverRuntime**. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 Mb.
+19. Open the **Configuration Editor**, select **system.webServer** > **serverRuntime**. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 Mb.
 20. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
