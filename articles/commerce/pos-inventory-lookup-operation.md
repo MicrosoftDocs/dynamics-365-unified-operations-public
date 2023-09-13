@@ -2,7 +2,7 @@
 title: Inventory lookup operation in POS
 description: This article describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses.
 author: boycezhu
-ms.date: 01/30/2023
+ms.date: 09/13/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -37,8 +37,10 @@ The list view of locations includes all stores and warehouses that are configure
 
 ![Inventory lookup operation list view.](media/inventory-lookup-list-view.png)
 
+The **Current store quantity** value in the preceding image is the available physical quantity of the product in the store that is associated with the POS device. This value won't change when you select different entries in the list view.
+
 > [!NOTE]
-> Make sure your current store is included in the associated fulfillment groups.
+> Ensure that your current store is included in the associated fulfillment groups.
 
 The following actions are available on the POS app bar:
 
@@ -80,7 +82,7 @@ In the matrix view, each cell represents an individual variant, and displays an 
 | **0** (zero)                             | A variant has been released to the selected location, but the item isn't available at the selected location. You can perform additional actions in the cell. |
 | **n/a**, or an inactive cell              | A variant hasn't been released to the selected location, and you can't perform additional actions in the cell. |
 
-The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use. 
+The display order of the dimension values in the matrix view is based on the dimension display order configuration in Commerce headquarters. You can change the dimension display order configuration by selecting a new dimension to use.
 
 The following actions are available in the matrix view cell:
 

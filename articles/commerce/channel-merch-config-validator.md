@@ -4,7 +4,7 @@
 title: Channel merchandising configuration validator
 description: This article describes how to use the channel merchandising configuration validator in Microsoft Dynamics 365 Commerce headquarters to find missing and invalid configurations for products, categories, and attributes by channel.
 author: ashishmsft
-ms.date: 09/01/2023
+ms.date: 09/13/2023
 ms.topic: article
 ms.search.form: RetailCommerceValidatorWorkSpace
 audience: IT Pro
@@ -82,6 +82,7 @@ The following table describes the validation rules that are run for the channel 
 | Cate-Ru-002 | Channel navigation hierarchy | This rule checks whether the category display order isn't specified. | Warning | If the category display order isn't specified, the categories are sorted in a default manner (for example, alphabetically). |
 | Cate-Ru-003 | Channel navigation hierarchy | This rule checks whether the category translation is missing. | Error | Categories that are missing translations don't appear in the navigation hierarchy module on e-commerce sites, or on the category tile in POS. |
 | Channel-Ru-001 | Channel navigation hierarchy | This rule checks whether the channel category hierarchy is missing. | Error | If the channel category hierarchy is missing, no categories are shown on the e-commerce site or POS channels for product browsing. |
+| Channel-Ru-002 (Commerce version 10.0.37 and later) | Cloud search configuration | This rule checks whether the cloud search configuration is enabled for online channels. | Error | Cloud search is mandatory for online channels. If cloud search isn't enabled, the product discovery experience is blocked on the e-commerce site. |
 | Hierarchy-Ru-002 | Channel navigation hierarchy | This rule checks whether the channel category hierarchy isn't assigned to a navigation role. | Error | If the navigation role is removed from the category hierarchy after it's associated with a channel, no categories or products are discoverable in the channel. |
 | KitComp-Ru-001 | Kits and kit components | This rule checks whether the kit component isn't released in the legal entity. | Error | If the components of the kit haven't been released to the legal entity that's associated with the channel, the kit isn't discoverable in the POS. |
 | KitComp-Ru-002 | Kits and kit components | This rule checks whether the kit and kit components are part of the same assortment. | Warning | If the kit and kit components (including substitute components) aren't part of the same assortment, kit selling doesn't work correctly in POS. The kit and kit components must be part of the same assortment. |
