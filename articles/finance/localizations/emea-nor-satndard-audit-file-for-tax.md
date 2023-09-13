@@ -2,7 +2,7 @@
 title: Standard Audit File for Tax (SAF-T) for Norway
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 author: AdamTrukawka
-ms.date: 06/20/2022
+ms.date: 09/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,6 +17,7 @@ ms.dyn365.ops.version:
 # Standard Audit File for Tax (SAF-T) for Norway
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article includes country/region-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
@@ -53,9 +54,9 @@ Import the most recent versions of the configurations. The version description u
 > [!NOTE]
 > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **SAF-T Financial data model mapping** configuration.
 
-### <a name="registration-number"></a> Set up the tax registration numbers of the company
+### <a name="registration-number"></a> Set up the company tax registration numbers
 
-As of version 175.119 of **SAF-T Format (NO)** ER format, `TaxRegistration` node under `Header > Company` of the report represents VAT registration numbers of the company that are actual in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity. `TaxVerificationDate` field of the `TaxRegistration` node represents the expiration date of the **Registration ID** in case the number expiration date is within the reporting period. To configure the **Registration ID** to be reported in `TaxRegistration` node, complete the following steps.
+As of version 175.119 of **SAF-T Format (NO)** ER format, the **TaxRegistration** node under **Header** > **Company** of the report represents VAT registration numbers of the company that are actual in respect to the reporting period of the report from the **Registration IDs** that are defined in the properties of the legal entity. The **TaxVerificationDate** field of the **TaxRegistration** node represents the expiration date of the **Registration ID** where the number expiration date is within the reporting period. To configure the **Registration ID** to be reported in the **TaxRegistration** node, complete the following steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
@@ -82,54 +83,54 @@ If the VAT registration number isn't specified in the **Registration IDs** of th
 
 ### <a name="sales"></a> Associate sales tax codes with Norwegian standard value-added tax (VAT) codes
 
-As the documentation explains, in Norwegian SAF-T Financial data, sales tax codes that are used in Finance must be associated with Norwegian standard VAT tax codes (`StandardTaxCode`) for the purpose of SAF-T reporting. The Norwegian standard VAT tax codes are available at <https://github.com/Skatteetaten/saf-t>.
+As the documentation explains, in Norwegian SAF-T Financial data, sales tax codes that are used in Finance must be associated with Norwegian standard VAT tax codes (**StandardTaxCode**) for the purpose of SAF-T reporting. The Norwegian standard VAT tax codes are available at <https://github.com/Skatteetaten/saf-t>.
 
-As of version 175.119 of **SAF-T Format (NO)** ER format, two options of how to set up Norwegian standard VAT codes are supported. You can use any one of them depending on your company's setup and preferences:
+As of version 175.119 of **SAF-T Format (NO)** ER format, you can use one of two options to set up Norwegian standard VAT codes. Select one option based on your company's setup and preferences:
 
-(1) Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using **Application specific parameters** of the ER format.
+(1) Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using the **Application specific parameters** of the ER format.
 
-(2) Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using **External codes** functionality.
+(2) Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using the **External codes** functionality.
 
-Find detailed description for both of the supported options below. If option (1) is used than option (2) is not considered by the report. If for some of the sales tax codes that are used in Finance there is no value associated in application-specific parameters of the ER format or **External codes** functionality, user will get a warning message with information about missing mapping for it when generating the report.
+If you use option (1), option (2) isn't considered by the report. If, for some of the sales tax codes that are used in Finance, there's no value associated in application-specific parameters of the ER format or **External codes** functionality, you will get a warning message with information about the missing mapping when you generate the report.
 
 #### Option (1): Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using **Application specific parameters** of the ER format.
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
-2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and select **SAF-T Format (NO)**.
+2. On the **Configurations** page, expand **Standard Audit File (SAF-T)**, and then select **SAF-T Format (NO)**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
-5. On the **Lookups** FastTab, select **StandardTaxCodes_Lookup** lookup, and define appropriate conditions for it.
+5. On the **Lookups** FastTab, select **StandardTaxCodes_Lookup** lookup, and define the appropriate conditions.
 6. On the **Conditions** FastTab, define which tax codes must correspond to a specific lookup result.
-7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
+7. When you've finished setting up conditions, in the **State** field, select **Completed** and then save the configuration.
    
 #### Option (2): Associate sales tax codes that are used in Finance with Norwegian standard VAT codes using **External codes** functionality.
 
-1. In Finance, go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
 2. On the **Sales tax code** page, select the **Sales tax code** record, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 
     ![External codes button on the Action Pane of the Sales tax code page.](media/nor-saf-standard-tax-codes.jpg)
 
-3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
+3. On the **External codes** page, specify the Norwegian standard VAT tax codes that should be used for the selected sales tax code record for the purpose of SAF-T reporting.
+4. On the **External codes** page, in the **Overview** section, in the **Code** field, select the identifier for the external code definition and enter a standard tax code that corresponds to the selected **Sales tax code** in **Value** field in **Value** section.
 
     ![Setup Standard tax code for the selected Sales tax code.](media/not-saf-external-codes-tax.png)
 
 ### <a name="main"></a> Associate main accounts used in Finance with Norwegian standard accounts or Income statement (Næringslivskoder)
 
-As the documentation explains, in Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts or Income statement (Næringslivskoder) for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
+In Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts or Income statement (Næringslivskoder) for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
 As of version 175.119 of **SAF-T Format (NO)** ER format, two options of how to associate main accounts used in Finance with Norwegian standard accounts or or Income statement are supported. You can use any one of them depending on your company's setup and preferences:
 
-(1) Associate main accounts used in Finance with Norwegian standard accounts or Income statement using **Additional consolidation accounts**. This option allows to associate main accounts used in Finance with Income statement (Grouping Category and Grouping Code).
+(1) Associate main accounts used in Finance with Norwegian standard accounts or Income statement using **Additional consolidation accounts**. Use this option to associate main accounts used in Finance with an Income statement (Grouping Category and Grouping Code).
 
 (2) Associate main accounts used in Finance with Norwegian standard accounts using **Application specific parameters** of the ER format. This option supports Norwegian standard accounts only.
 
-Find detailed description for both of the supported options below. If option (1) is used than option (2) is not considered by the report. If for some of the main accounts that are used in Finance there is no value associated in application-specific parameters of the ER format or **Additional consolidation accounts**, user will get a warning message with information about missing mapping for it when generating the report.
+If option (1) is used, then option (2) isn't considered by the report. If, for some of the main accounts that are used in Finance, there's no value associated in application-specific parameters of the ER format or **Additional consolidation accounts**, you will get a warning message with information about the missing mapping when you generate the report.
 
 #### Option (1): Associate main accounts used in Finance with Norwegian standard accounts or or Income statement using **Additional consolidation accounts**
 
-1. Create a [consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). Value from **Consolidation account group** field of **Consolidation account groups** page is used in `GroupingCategory` field of the report when **Use grouping category** parameter of the report is switched on.
-
-2. [Add accounts to the consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the `StandardAccountID` element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node when **Use grouping category** parameter of the report is switched off.  When **Use grouping category** parameter of the report is switched on, value of **Consolidation account** field is reported in `GroupingCode` field of the report. In the **Consolidation account name** field, optionally specify the standard account name or description. This value isn't used in SAF-T.
+1. Create a [consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). The value from the **Consolidation account group** field of **Consolidation account groups** page is used in the **GroupingCategory** field of the report if the **Use grouping category** parameter of the report is switched on.
+2. [Add accounts to the consolidation account group](../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. This value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node when the **Use grouping category** parameter of the report is switched off.  When the **Use grouping category** parameter of the report is switched on, the value of **Consolidation account** field is reported in the **GroupingCode** field of the report. Optionally, in the **Consolidation account name** field, you can specify the standard account name or description. This value isn't used in SAF-T.
 
 For mor information about **Additional consolidation accounts**, see [Consolidation account groups and additional consolidation accounts](../budgeting/consolidation-account-groups-consolidation-accounts.md).
 
@@ -138,9 +139,9 @@ For mor information about **Additional consolidation accounts**, see [Consolidat
 > [!NOTE]
 > We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
 
-To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
+To associate the **Main accounts** that are used in Finance with Norwegian standard accounts using the **Application specific parameters**, complete the following steps:
 
-1. Open the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** electronic reporting format. 
+1. In the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** electronic reporting format. 
 2. Make sure that the company you are working in is the company for which you want to set up the **Application specific parameters**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
@@ -148,9 +149,9 @@ To associate **Main accounts** that are used in Finance with Norwegian standard 
 6. Select the value, **NA** as the last condition in the list. It must be set to **\*Not blank\*** in **Main account** column. Verify the value in the **Line** column that **NA** is the last condition in the table.
 7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-![Standard account field on the Main accounts page.](media/nor-saf-standard-main-accounts-appsppar.jpg)
+   ![Standard account field on the Main accounts page.](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
-You can easily export the setup of application-specific parameters from one version of a report and import it into another version by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
+You can easily export the setup of application-specific parameters from one version of a report and import it into another by selecting **Export** or **Import** on the Action Pane. You can also export the setup from one report and import it into the same report in another company if the Main accounts are the same in both companies.
 
 > [!NOTE]
 > We recommend that you enable the feature, **Use application specific parameters from previous versions of ER formats** in the **Feature management** workspace. When this feature is enabled, parameters that are configured for the earlier version of an ER format automatically become applicable for the later version of the same format. If this feature is not enabled, you must configure application-specific parameters explicitly for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace starting in Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
@@ -196,11 +197,8 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
     Where *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* represents the document currency.
 
-6. Select **Include zero lines** to include documents with zero amount to the report.
-  
-8. This option is availabel as of Finance version 10.0.37. In the **Consolidation account group** select the **Consolidation account group** name that you created and set up for [Norwegian standard accounts or Income statement](#main).
-
-9. This option is availabel as of Finance version 10.0.37. Select the **Use grouping category** check box to force generation of `GroupingCategory` and `GroupingCode` nodes instead of `StandardAccountID` in` GeneralLedgerAccounts` node. Value for `GroupingCategory` field will be copied from **Consolidation account group** name, so selecting a **Consolidation account group** is mandatory when using this option.
+6. Select **Include zero lines** to include documents with zero amount to the report. This option is available as of Finance version 10.0.37. In the **Consolidation account group** select the **Consolidation account group** name that you created and set up for [Norwegian standard accounts or Income statement](#main).
+7. Select the **Use grouping category** check box to force generation of `GroupingCategory` and `GroupingCode` nodes instead of `StandardAccountID` in` GeneralLedgerAccounts` node. This option is available as of Finance version 10.0.37. The value for the **GroupingCategory** field is copied from the **Consolidation account group** name, so selecting a **Consolidation account group** is mandatory for this option.
 
 You can also apply filters for the **Main accounts** and **General journal entry** fields by using **Records to include** FastTab in the dialog box for the report.
 
@@ -252,7 +250,7 @@ After the report is generated, if more than one XML file is generated, the user 
 
 The SAF-T report for Norway must include information about the **AnalysisTypeTable** under the **MasterFiles** node of the report. **AnalysisTypeTable** must represent a table with the analysis code identifiers that are used for further specification of transaction data. In Finance, **Financial dimensions** is the data source for the **AnalysisTypeTable** node. When you set up **Financial dimensions** in your legal entity, use the **ReportColumnName** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisType\> node. Use the **Dimension name** field of the **Financial dimension** data source for the value that will be reported in the \<AnalysisTypeDescription\> node.
 
-As of version 175.119 of **SAF-T Format (NO)** ER format, **Journal type** enumerated list of values is included as an additional data source for **AnalysisTypeTable**. Thus, **AnalysisTypeTable** under the **MasterFiles** node of the report includes all the values of **LedgerPostingType** enum in Finance represented with  **Bilagsart** value on `AnalysisTypeDescription` field, and each general journal account entry reported in `GeneralLedgerEntries > Journal > Transaction > Line` node of SAF-T is reported including information from  **LedgerPostingType** value of `GeneralJournalAccountEntry` table represented in `Analysis` node.
+As of version 175.119 of **SAF-T Format (NO)** ER format, the **Journal type** enumerated list of values is included as an additional data source for **AnalysisTypeTable**. **AnalysisTypeTable**, which is under the **MasterFiles** node of the report includes all the values of **LedgerPostingType** enum in Finance represented with the **Bilagsart** value on the **AnalysisTypeDescription** field. Each general journal account entry reported in the **GeneralLedgerEntries** > **Journal** > **Transaction** > **Line** node of SAF-T is reported including information from  **LedgerPostingType** value of the **GeneralJournalAccountEntry** table represented in the **Analysis** node.
 
 ### <a name="one-voucher"></a>SAF-T report and One voucher
 
