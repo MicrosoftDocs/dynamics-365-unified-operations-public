@@ -4,7 +4,7 @@
 title: Store inventory management
 description: This article describes the types of documents that you can use to manage inventory.
 author: BrianShook
-ms.date: 09/12/2023
+ms.date: 09/13/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
