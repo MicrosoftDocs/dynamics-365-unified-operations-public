@@ -18,7 +18,7 @@ ms.search.validFrom: 2023-01-01
 
 This article describes how to enable inventory availability checks for add to cart and order checkout actions in Microsoft Dynamics 365 Commerce.
 
-To avoid overselling, some retailers require inventory availability checks during add to cart and order checkout actions. However, many other retailers want to oversell products. Commerce allows you to enable or disable inventory availability checks for your e-commerce site.
+To avoid overselling, some retailers require inventory availability checks during add to cart and order checkout actions. However, many other retailers want to oversell products. Commerce lets you enable or disable inventory availability checks for your e-commerce site.
 
 ## Configure inventory availability checks for e-commerce sites
 
@@ -27,7 +27,7 @@ When the **Enable stock check in app** setting in Commerce site builder (**Site 
 When the **Enable stock check in app** setting is turned off, Commerce doesn't perform an inventory availability check during add to cart and order checkout actions.
 
 > [!NOTE]
-> - On point of sale (POS), there's no inventory availability check functionality for when a customer adds a product to the cart, or when an order is checked out. Store employees can use the [POS inventory lookup](pos-inventory-lookup-operation.md) operation to manually check product availability before orders are checked out.
-> - If your business requires an automatic inventory availability check on POS, Microsoft recommends that you build your own customizations.
+> - In point of sale (POS), there's no inventory availability check functionality for when a customer adds a product to the cart, or when an order is checked out. Store employees can use the [POS inventory lookup](pos-inventory-lookup-operation.md) operation to manually check product availability before orders are checked out.
+> - If your business requires an automatic inventory availability check in POS, Microsoft recommends that you build your own customizations.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
