@@ -2,7 +2,7 @@
 title: Inventory lookup operation in POS
 description: This article describes how to use the inventory lookup operation in Dynamics 365 Commerce point of sale (POS) to view the on-hand inventory availability of products across stores and warehouses.
 author: boycezhu
-ms.date: 09/12/2023
+ms.date: 09/13/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
