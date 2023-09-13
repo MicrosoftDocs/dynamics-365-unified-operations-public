@@ -54,7 +54,7 @@
       ],
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/ops-bc/toc.json",
-      "uhfHeaderId": "MSDocsHeader-Dynamics365",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365-Finance",
       "brand": "dyn-ops",
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
