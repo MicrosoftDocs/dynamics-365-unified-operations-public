@@ -39,8 +39,8 @@ Viewed from left to right, the first and most important factor needed to accurat
 
 As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:
 
-- **Transactions** – Typically transactions have certain peaks throughout the day/week. This mostly depends on the transaction type. Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.
-- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data. An accurate concurrent user definition means that:
+- **Transactions** – Depending on the type, transactions yypically transactions have certain peaks throughout the day/week. Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.
+- **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You can't get reliable sizing estimates based on the number of concurrent users. If this number is the only data you have available, estimate an approximate number, and then revisit when you have more data. An accurate concurrent user definition means that:
 
     - Named users are not concurrent users.
     - Concurrent users are always a subset of named users. 
@@ -52,7 +52,7 @@ As you understand the load that impacts your infrastructure, you also need to un
     - Working transactions/inquiries at the time of counting.
     - Not an idle session.
 
-- **Data composition** – This is mostly about how your system will be set up and configured. For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be. Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.
+- **Data composition** – Primarily, how your system is set up and configured. For example, how many legal entities you have, how many items, how many BOM levels, and how complex your security setup is. Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.
 - **Extensions** – Customizations can be simple or complex. The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed. For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs. This is even more critical when the extensions are not coded according to best practices for performance and scalability.
 - **Reporting and analytics** – These factors typically include running heavy queries against the various databases in the system. Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
