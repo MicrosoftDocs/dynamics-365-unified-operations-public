@@ -6,7 +6,7 @@ ms.author: rashmim
 ms.topic: article
 ms.date: 04/05/2023
 ms.custom: bap-template
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
