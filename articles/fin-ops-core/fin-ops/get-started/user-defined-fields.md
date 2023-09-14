@@ -181,6 +181,10 @@ For performance and technical reasons, only tables that meet the following condi
 
 Custom fields can only be managed through the user interface and can't be referenced by code. 
 
+### Can I transfer custom fields to fields in a specific table while preserving the values?
+
+Custom field data can be transferred to a new field on a specific table. Use the custom [X++ scripts](../../dev-itpro/deployment/run-custom-scripts.md) to get and map the corresponding data from a custom field using the **SysCustomFieldPicklist**, **SysCustomFieldPickListValues** classes.
+
 ### How can I move custom fields between environments? 
 
 The current recommendation for moving custom fields between environments is to manually re-create the custom fields in the target environment. To see the full list of custom fields on a particular table:
