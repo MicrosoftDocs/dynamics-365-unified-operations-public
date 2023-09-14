@@ -2,7 +2,7 @@
 title: Set up direct integration of Italian FatturaPA with SDI
 description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: gionoder
-ms.date: 03/06/2023
+ms.date: 09/13/2023
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -12,14 +12,17 @@ ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
 ---
 
-# Set up direct integration of Italian FatturaPA with SDI
+# Direct integration of Italian electronic invoices with SDI
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This article provides information that will help you to get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps to enable the generation of electronic invoices in the Italy-specific format, **FatturaPA**, and to exchange electronic invoices with the Italian Revenue Agency's e-invoicing exchange system, SDI (Sistema di Interscambio). These steps complement the steps that are described in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+
+> [!NOTE]
+> The solution for direct integration with SDI supports digital signing of documents only through separately stored certificate files that can be uploaded to the key vault. The solution doesn't support the use of qualified digital signatures, which require additional hardware involvement or an online connection to certification service providers.
 
 ## Prerequisites
 
@@ -28,7 +31,8 @@ Before you complete the steps in this article, the following prerequisites must 
 - Obtain SDICoop service channel accreditation in the Exchange system (SDI) government portal.
 - Complete the steps in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 - Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 3 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
-- Add links from the required certificates to the service environment. The required certificates include the Digital signature certificate, Certificate authority (CA) certificate, and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
+- Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the article, "Get started with Electronic invoicing service administration."
+- Optional: You can use the Digital signature certificate only for non-qualified signatures.
 
 ## Country/region-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
@@ -36,7 +40,7 @@ Complete the following procedures before you deploy the application setup to you
 
 This section complements the [Country/region-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
 
-### Create a new number sequence for ProgressivoInvio
+### <a name="ProgressivoInvio"></a>Create a new number sequence for ProgressivoInvio
 
 1. Sign in to RCS.
 2. In the **Globalization feature** workspace, select **Environment setup**, and then select **Service environments**.
@@ -50,17 +54,17 @@ This section complements the [Country/region-specific configuration of applicati
 3. Select **Key Vault parameters**.
 4. Add links to the following certificates:
 
-    - **CAentrate.cer** (or **CAEntratetest.cer** in the case of a test environment)
+    - **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     - **CAActalisOV.cer** (in the case of a production environment)
     - Client identity certificate (Usually, this certificate is generated while the user performs registration of the SDICoop service channel, and it's named SDI-12345678901, where 12345678901 is a company VAT number.)
-    - Certificate for digital signature (This certificate is required for the PA flow.)
+    - Certificate for digital signature (Optional)
 
     For more information, see the [Create a digital certificate secret](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
 
 5. Select **Chain of certificates**.
 6. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**), and then, in the **Certificates** section, add the following certificates in the order that they're listed in here:
 
-    1. **CAentrate.cer** (or **CAEntratetest.cer** in the case of a test environment)
+    1. **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     2. **CAActalisOV.cer** (in the case of a production environment)
     3. Client identity certificate
 
@@ -87,45 +91,6 @@ The following procedures must be completed for all Electronic reporting (ER) for
 5. Align the formula to the payment methods that are configured in the Finance app.
 6. Save your changes, close the formula designer, and then select **OK**.
 
-#### Add a user input parameter for the ProgressivoInvio value
-
-1. On the **Electronic invoicing features** page, on the **Mapping** tab, select **Add root**.
-2. Select **General\\User input parameter**. 
-3. Enter a name for the new parameter (for example, **ProgressivoInvioUIP**), and then select **OK**.
-
-#### Change formula for the file name
-
-1. On the **Electronic invoicing features** page, on the **Mapping** tab, select **Edit filename**.
-
-    > [!NOTE]
-    > Make sure that the root element of the format is selected in the left part of the page.
-
-2. In the formula designer, paste the following formula for the file name. This formula contains a link to the parameter that you previously added. If the name of the parameter is different, align the formula accordingly.
-
-    ```vb
-    IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.CountryISOCode,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.CountryRegionId)&
-    IF(Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.IsFilingForSameLegalEntity,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.CompanyInformation.FiscalCode,
-      Invoice.InvoiceBase.CountrySpecificData.EInvoiceParameters_IT.TransmitterInformation.TaxExemptNumber)
-    & "_"
-    & RIGHT(FORMAT("0000%1", ProgressivoInvioUIP), 5)
-    & ".xml"
-    ```
-
-3. Save your changes, and close the formula designer.
-
-#### Bind ProgressivoInvio value
-
-1. In the format designer, go to the next node of the format in the left part of the page: 
-
-    XMLHeader\\p:FatturaElettronica\\FatturaElettronicaHeader\\DatiTrasmissione\\ProgressivoInvio\\String
-
-2. On the **Mapping** tab, select the **ProgressivoInvioUIP** parameter that you previously added.
-3. Select **Bind**.
-4. Save your changes, and close the page.
-
 ### Set up application-specific parameters
 
 1. On the **Electronic invoicing features** page, select the feature to edit.
@@ -142,11 +107,11 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 1. On the **Electronic invoicing features** page, select the feature to edit.
 2. On the **Setups** tab, select **Sales invoices**, and then select **Edit**.
-3. In the **Processing pipeline** section, go through the actions, and set all the required fields:
+3. In the **Processing pipeline** section, go through the actions, and set the required fields:
 
-    - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate (only for **PA** flow setups).
-    - For the **Submit** action, add a value to the **URL address** and **Certificates** fields. The value of the **Certificates** field is a chain of certificates that was added in one of the previous sections (**SDIChainProd** or **SDIChainTest**).
-    - For the **Generate format** action, in the **Configuration user input parameters** section, select the **ProgressivoInvioUIP** parameter, change its **Data type** value to **sequence**, and then, in the **Value** field, select one of the available values.
+    - **Get next number sequence value** action – In the **Parameters** section, select the **Number sequence** parameter, and then, in the **Value** field, select the previously defined number sequence for [**ProgressivoInvio**](#ProgressivoInvio).
+    - **Submit** action – In the **Parameters** section, in the **URL address** and **Certificates** fields, enter or select a value. The value in the **Certificates** field is a chain of certificates that was added in a previous section (**SDIChainProd** or **SDIChainTest**).
+    - **Sign document** action – In the **Certificate name** field, specify the Digital signature certificate (Optional).
 
 4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
     - Review the **LegalEntityID** clause and update with the correct value from your legal entity.
@@ -154,7 +119,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 5. Select **Validate** to ensure that all required fields have been set.
 6. Save your changes, and close the page.
 7. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
-8. Repeat steps 3 through 6 for project invoices and for **PA** setups.
+8. Repeat steps 3 through 6 for project invoice setups.
 
 ### Configure the processing pipeline for import
 
@@ -180,52 +145,6 @@ The following procedures must be completed for all Electronic reporting (ER) for
 2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
 3. Select **Repositories** \> **Global** \> **Open**.
 4. Select and import the **Customer invoice context model** (version 54 or later), **Invoice model mapping**, and **Vendor invoice import (IT)** configurations.
-
-    > [!NOTE]
-    > Version 52 of the **Customer invoice context model** configuration requires Dynamics 365 Finance version 10.0.32. If you have an earlier version of the app, see the next section.
-
-#### Align the customer invoice context model
-
-This procedure must be completed only for Finance versions that are earlier than 10.0.32.
-
-1. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
-2. Select **Repositories** \> **Global** \> **Open**.
-3. Select and import **Customer invoice context model** (version 50).
-4. In the **Electronic reporting** workspace, in the **Configuration providers** section, mark your company's configuration provider as active, and then select **Reporting configurations**.
-5. Select **Customer invoice context model**, and then select **Create configuration**.
-6. Select **Derive from Name: Customer invoice context, Microsoft** to create a derived configuration.
-7. In the **Draft** version, select **Designer**.
-8. In the **Data model** tree, select **Map model to datasource**.
-9. In the **Definitions** tree, select **CustomerInvoice**, and then select **Designer**.
-10. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
-11. Specify the following formula.
-
-    ```vb
-    IF(CustInvoiceJour.'creditNote()', "Customer credit note", "Customer invoice")
-    & IF('$Context_ISOCode'.Value = "IT",
-       IF(LEN(CustInvoiceJour.'>Relations'.InvoiceAccount.AuthorityOffice_IT) = 6, " PA", ""),
-       "")
-    ```
-
-12. Save your changes, close the designer page, and then select **OK**.
-13. Save your changes, and close the **Model mapping designer** page.
-14. In the **Definitions** tree, select **ProjectInvoice**, and then select **Designer**.
-15. In the **Data sources** tree, select **$Context\_DocumentType\\Value**, select **Edit**, and then select **Edit formula**.
-16. Specify the following formula.
-
-    ```vb
-    IF(ProjInvoiceJour.'isCreditNote_CZ()', "Project credit note", "Project invoice")
-    & IF('$Context_ISOCode'.Value = "IT",
-      IF(LEN(ProjInvoiceJour.'>Relations'.CustTable.AuthorityOffice_IT) = 6, " PA", ""),
-      "")
-    ```
-
-17. Save your changes, close the designer page, and then select **OK**.
-18. Save your changes, and close the **Model mapping designer** page.
-19. On the **Reporting configurations** page, select the **Draft** version of the configuration, and then select **Change status** \> **Complete**.
-18. Use this derived configuration instead of **Customer invoice context model** in the next sections.
-
-After you upgrade your Finance environment to version 10.0.32, we recommend that you import and use **Customer invoice context model** version 54 or later.
 
 #### Configure Electronic document parameters
 
@@ -469,16 +388,17 @@ Follow these steps on the machine where the proxy service is hosted.
     ![Configuring SSL Settings.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
 18. Open **Directory Browsing**, and select **Enable**.
-19. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear or you may get a server error, such as 403 - Forbidden. This step is needed to ensure that the **serverDNS** is accessible and not hidden by a firewall or something else.
+19. Open the Configuration Editor, and select **system.webServer** \> **serverRuntime**. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 megabits.
+20. In any web browser, go to **serverDNS/TrasmissioneFatture.svc**. A standard page about the service must appear, or you might receive a server error, such as "403 - Forbidden." This step is required to ensure that **serverDNS** is accessible and isn't hidden by a firewall or something else.
 
     ![Checking the service in a browser.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
-20. Create the following folders to store logs and files:
+21. Create the following folders to store logs and files:
 
     - **C:\\Logs\\** – Store log files here. These files can be viewed by [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
     - **C:\\Files\\** – Store all the response files here.
 
-21. In File Explorer, grant **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** if you're using the default pool) access to the **Logs** and **Files** folders.
+22. In File Explorer, grant **NETWORK SERVICE** and **IIS AppPool\\SdiAppPool** (or **IIS AppPool\\DefaultAppPool** if you're using the default pool) access to the **Logs** and **Files** folders.
 
     1. Select and hold (or right-click) one of the folders, and then select **Properties**.
     2. In the **Properties** dialog box, on the **Security** tab, select **Edit**.
