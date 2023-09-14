@@ -39,14 +39,14 @@ Viewed from left to right, the first and most important factor needed to accurat
 
 As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:
 
-- **Transactions** – Depending on the type, transactions yypically transactions have certain peaks throughout the day/week. Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.
+- **Transactions** – Depending on the type, transactions typically have certain peaks throughout the day/week. Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.
 - **Number of concurrent users** – The number of concurrent users is the second most important sizing factor. You can't get reliable sizing estimates based on the number of concurrent users. If this number is the only data you have available, estimate an approximate number, and then revisit when you have more data. An accurate concurrent user definition means that:
 
     - Named users are not concurrent users.
     - Concurrent users are always a subset of named users. 
     - Peak workload defines the maximum concurrency for sizing.
 
-    Criteria for concurrent users is that the user meets all the following criteria:
+    Criteria for concurrent users are that the user meets all the following criteria:
 
     - Logged on.
     - Working transactions/inquiries at the time of counting.
