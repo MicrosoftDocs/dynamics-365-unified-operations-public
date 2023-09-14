@@ -181,6 +181,18 @@ For performance and technical reasons, only tables that meet the following condi
 
 Custom fields can only be managed through the user interface and can't be referenced by code. 
 
+### Can I transfer the custom field to the table as an extension field while preserving the values?
+
+Custom field data can be transferred to the table as extension fields. Use the custom [X++ scripts](../../dev-itpro/deployment/run-custom-scripts.md) to get and map the corresponding data from a custom field:
+
+1. Get a field name of the custom field.
+2. Use the `.getFieldValue(_fieldName)` method to get a value on the source table.
+
+Also, you can use the `TableExtensionManagerFactory::CreateExtensionManager()` extension manager to create the `.GetRuntimeExtension(_tableName, SysCustomFieldConstants::ExtensionName)` extension build object on the **Microsoft.Dynamics.Ax.Xpp.MetadataExtensions** library to get more information about the type/metadata of the extension field.
+
+> [!NOTE]
+> Exclude records with default values from your query when transferring data for all records between a custom field and a new extension field. Use the [update statement](../../dev-itpro/dev-ref/sysda#update-statement) of the SysDa framework for better performance.
+
 ### How can I move custom fields between environments? 
 
 The current recommendation for moving custom fields between environments is to manually re-create the custom fields in the target environment. To see the full list of custom fields on a particular table:
