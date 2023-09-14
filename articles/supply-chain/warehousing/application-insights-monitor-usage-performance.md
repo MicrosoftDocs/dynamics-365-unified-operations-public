@@ -28,7 +28,7 @@ Before you can collect and analyze Warehouse Management telemetry data, the foll
 
 ## View telemetry data in Power BI
 
-The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. The downloadable reports and instructions for how to set them up are available in the [Supply Chain Management telemetry GitHub repository](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
+The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. The downloadable reports and instructions for how to set them up are available in the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
 
 ## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
 
