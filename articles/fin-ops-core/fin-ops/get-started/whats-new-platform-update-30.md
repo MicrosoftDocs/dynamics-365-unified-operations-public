@@ -24,8 +24,8 @@ This article describes features that are new or changed for Platform update 30 f
 ## Readable date time format for dateTime fields in business event payload
 When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](../../dev-itpro/business-events/business-events-dev-doc.md).
 
-## Hide fields much faster in personalization mode
-Hiding fields in personalization mode is now **significantly** faster. Instead of waiting for confirmation from the system that a selected control can be hidden, this check is now being done asynchronously which allows users to hide controls as fast as they can click them. This same optimization has also been applied for skipping controls, locking fields, and adding fields as FastTab summary fields.   
+## Hide fields faster in personalization mode
+Hiding fields in personalization mode is now **significantly** faster. Instead of waiting for confirmation from the system that a selected control can be hidden, this check is now being done asynchronously, which allows users to hide controls as fast as they can click them. This same optimization has also been applied for skipping controls, locking fields, and adding fields as FastTab summary fields.   
 
 ## Extensibility enhancements
 The following enhanced extensibility capabilities have been added in Platform update 30:
@@ -37,12 +37,12 @@ The following enhanced extensibility capabilities have been added in Platform up
 - Improve use of the SysPlugin pattern from X++ by adding better support for multiple key values and key values of different types (Ref# 330178).
 
 ## Feature Class property added into metamodel to support metadata association with features defined for Feature Management
-A **Feature Class** property has been added into the metamodel and can be seen on multiple types in the Application Explorer in Visual Studio. This property is a lookup that points at features defined for Feature Management. This property has no effect currently, but in the future developers will use this property to ensure that pieces of metadata are only visible to users when the corresponding feature has been enabled in the Feature Management workspace. Currently, if the **Feature Class** property is set to a value, it will result in a build warning so the developer is aware that it won't have any effect. The new property is visible on a few types including Menus and MenuItems, but will eventually be visible on Forms, Form Controls, and other types.
+A **Feature Class** property has been added into the metamodel and can be seen on multiple types in the Application Explorer in Visual Studio. This property is a lookup that points at features defined for Feature Management. This property currently has no effect. In the future, developers will use this property to ensure that pieces of metadata are only visible to users when the corresponding feature has been enabled in the Feature Management workspace. Currently, if the **Feature Class** property is set to a value, it results in a build warning so the developer is aware that it won't have any effect. The new property is visible on a few types including Menus and MenuItems, but will eventually be visible on Forms, Form Controls, and other types.
 In the future, the first metadata types to get **Feature Class** property support will be Menus and MenuItems which will allow developers to only have those menu options available when the corresponding feature has been enabled. The runtime support for Menus and MenuItems is scheduled to be delivered in Platform Update 31.
 Currently, the Feature Class property and the FeatureStateProvider API can be used to reference an existing feature in Feature Management, but additional features cannot be defined. That support is likely to be enabled once the **Feature Class** property work is complete. 
 
 ## New license types support associating users with a license
-New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
+New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they are be added as a system user. If a license is not associated with a user, then they recieve a brief warning.
 
 
 ## Additional resources
@@ -61,9 +61,9 @@ The [Removed or deprecated features for finance and operations](../../dev-itpro/
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
