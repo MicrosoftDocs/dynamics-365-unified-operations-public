@@ -77,7 +77,7 @@
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsSCM"
         },
-        "talent/": {
+        "human-resources/": {
           "folder_relative_path_in_docset": ".",
           "depot_name": "MSDN.d365OpsHR"
         }
