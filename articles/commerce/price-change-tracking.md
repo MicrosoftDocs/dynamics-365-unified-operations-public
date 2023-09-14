@@ -86,26 +86,26 @@ When you make large-scale changes (for example, bulk data migration), Microsoft 
 
 ### Specify batch group for price change tracking batch jobs
 
-The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, it is recommended to specify a batch group following the steps below:
+The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, Microsoft recommends that you specify a batch group following the steps below.
 
-1. Re-use an existing batch group or [create a batch group](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/create-a-batch-group)
-2. Go to **Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters > Prices and discounts**
-3. Under **Backend tasks**, specify the batch group which will be used to run pricing batch jobs. It is recommended to dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
+1. Reuse an existing batch group or [create a batch group](/dynamicsax-2012/appuser-itpro/create-a-batch-group).
+2. Go to **Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters > Prices and discounts**.
+3. Under **Backend tasks**, specify the batch group which will be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
 
 For information on the the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
 
 ### Usage patterns not suitable for feature enablement
 
-The price change tracking feature is enabled by default for Azure Search configured legal entities. It is efficient when tracking occasional changes based on stable settings, so the following usage patterns are not recommended for feature enablement.
+The price change tracking feature is enabled by default for Azure Search configured legal entities. The feature is efficient when tracking occasional changes based on stable settings, so the following usage patterns aren't recommended for feature enablement.
 
 - Large-scale changes (for example, bulk data migration).
 - Highly frequent update of pricing or product data (for example, more than one line per second).
 
-For such cases, it is recommended to temporarily disable the feature by removing **ALL** legal entities from **Price change tracking** grid in **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**y, and then restart AOS. After the data changes are done, to reenabled the feature for desired legal entities, add them back to the grid and restart AOS. If restarting AOS isn't practical, please make sure the aforementioned batch group for pricing processing is properly setup, so the pricing jobs generated would not impact processing of other system batch tasks.
+For such cases, it's recommended that you temporarily disable the feature by removing all legal entities from the **Price change tracking** grid in **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**, and then restart AOS. After the data changes are complete, to reenable the feature for desired legal entities, add them back to the grid, and then restart AOS. If restarting AOS isn't practical, ensure that the aforementioned batch group for pricing processing is set up correctly so the pricing jobs generated won't impact processing of other system batch tasks.
 
 ### Cross-company entity change tracking
 
-The following tables are cross-company entities, and modifying them will trigger change tracking, even if the legal entity where changes are made is not set up for change tracking:
+The following tables are cross-company entities that trigger change tracking if modified, even if the legal entity where the changes are made isn't set up for change tracking.
 
 - RetailGroupMemberLine
 - RetailChannelTable
