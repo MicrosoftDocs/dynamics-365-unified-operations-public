@@ -6,7 +6,7 @@ ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
