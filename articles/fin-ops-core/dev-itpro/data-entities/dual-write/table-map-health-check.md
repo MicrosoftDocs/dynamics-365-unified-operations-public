@@ -85,10 +85,20 @@ The error message is, "Entity: has {} data sources which aren't being tracked fo
 
 If there are many data sources which aren't being used for tracking in the actual live sync from finance and operations apps, then there's a possibility that entity performance can affect live sync. To optimize the tracked tables, use the method getEntityRecordIdsImpactedByTableChange.
 
+## Error 2000
+The error message is, "FnO Entity {} fields {} defined as Integration key attributes are not configured as mandatory."
+
+It's recommended that fields included as integration key attributes are required fields for data entry in the application, ensuring that a value is always entered in the field. When this error occurs, the recommended action is to configure the fields to be required to avoid initial sync and live sync issues. See [Personalize the user experience](../../fin-ops/get-started/personalize-user-experience.md) for more information on designating fields are required using the personalization feature.
+
 ## Error 5000
 The error message is, "Synchronous plugins are registered for data management events for entity accounts. These can impact initial sync and live sync import performance into Dataverse. For best performance, please change the plugins to asynchronous processing. List of registered plugins {}."
 
 Synchronous plugins on a Dataverse entity can affect live sync and intial sync performance as it adds to the transaction load. The recommended approach is to either turn off the plugins or make these plugins async if you are facing slow load times in initial sync or live sync for a particular entity.
+
+## Error 5100
+The error message is, "Integration Key {IntegrationKeyDetails] is not defined as one of alternate keys in Dataverse for table {EntityName}."
+
+
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
