@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 01/30/2023
+ms.date: 09/14/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -26,7 +26,21 @@ Before you can collect and analyze Warehouse Management telemetry data, the foll
 - **Warehouse Management mobile app version** – Telemetry with Application Insights requires Warehouse Management mobile app version 2.0.28 or later. Additional telemetry features require later versions of the app. See the tables later in this article for details about which features require which versions of Supply Chain Management and the Warehouse Management mobile app.
 - **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 
-## Available telemetry for Supply Chain Management tenants
+## View telemetry data in Power BI
+
+The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. The downloadable reports and instructions for how to set them up are available in the [Supply Chain Management telemetry GitHub repository](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
+
+## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
+
+For more examples of how to work with KQL, plus answers to frequently asked questions, and tips about using Supply Chain Management telemetry with Excel, Power Automate, Power BI, PowerShell, and more, see the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry).
+
+## Available telemetry
+
+The following subsections provide detailed descriptions of the warehousing telemetry data that Supply Chain Management logs in Application Insights. This information can help you design your own custom Power BI reports and to explore the data directly in Application Insights.
+
+<!-- KFM: You mentioned that this same info is also included in the GitHub repo. I couldn't find it, but if so, we should probably just link there instead of repeating the info here. Please let me know. -->
+
+### Available telemetry for Supply Chain Management tenants
 
 In Application Insights, telemetry from Supply Chain Management tenants is logged as custom events. The following table lists the events that are currently available. It also shows the minimum version of Supply Chain Management that's required to generate each event.
 
@@ -117,7 +131,7 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `workTemplateCode` | The work template code that was used in the work creation process. | 10.0.32 |
 | `workType` | The work type of the work line that was used during the work creation process (for example, "pick" or "put"). | 10.0.31 |
 
-## Available telemetry for the Warehouse Management mobile app
+### Available telemetry for the Warehouse Management mobile app
 
 In Application Insights, telemetry from the Warehouse Management mobile app is logged as custom events on each server call. The following table lists the events that are currently available. It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app required to generate each event.
 
@@ -161,7 +175,7 @@ The following table lists the telemetry data that can be logged as custom dimens
 
 ## View telemetry data in Application Insights
 
-Telemetry is stored in Azure Monitor Logs in the *customEvents* table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). For more information, see [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
+As an alternative to Power BI, you can view your telemetry data directly in Application Insights. Telemetry is stored in Azure Monitor Logs in the *customEvents* table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). For more information, see [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 
 As a simple example, follow these steps.
 
@@ -175,10 +189,6 @@ As a simple example, follow these steps.
     | take 100
     | sort by timestamp desc
     ```
-
-## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
-
-For more examples of how to work with KQL, plus answers to frequently asked questions, and tips about using Supply Chain Management telemetry with Excel, Power Automate, Power BI, PowerShell, and more, see the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry).
 
 ## Set up alerts on telemetry events
 
