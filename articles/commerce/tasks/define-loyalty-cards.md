@@ -39,4 +39,5 @@ To define loyalty cards in Commerce headquarters, follow these steps.
 1. To adjust points for the card, select **Card adjustments**.
 1. To view all earn, redeem, and adjust transactions that have occurred for the card, select **Card transactions**.
 
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
