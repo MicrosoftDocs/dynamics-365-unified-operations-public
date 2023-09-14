@@ -4,7 +4,7 @@
 title: Price change tracking
 description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 08/10/2023
+ms.date: 09/30/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -82,6 +82,41 @@ For customer environments where pricing or product data is updated very frequent
 
 When you make large-scale changes (for example, bulk data migration), Microsoft recommends that you temporarily remove all legal entities from the price change tracking setting before the changes. Then add them back after the changes are completed. In this way, the system mitigates the performance impact by making a one-time full refresh instead of tracking every single line change.
 
+## Guidance for feature adoption
+
+### Specify batch group for price change tracking batch jobs
+
+The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, it is recommended to specify a batch group following the steps below:
+
+1. Re-use an existing batch group or [create a batch group](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/create-a-batch-group)
+2. Go to **Retail and Commerce > Headquarters setup > Parameters > Commerce shared parameters > Prices and discounts**
+3. Under **Backend tasks**, specify the batch group which will be used to run pricing batch jobs. It is recommended to dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
+
+For information on the the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
+
+### Usage patterns not suitable for feature enablement
+
+The price change tracking feature is enabled by default for Azure Search configured legal entities. It is efficient when tracking occasional changes based on stable settings, so the following usage patterns are not recommended for feature enablement.
+
+- Large-scale changes (for example, bulk data migration).
+- Highly frequent update of pricing or product data (for example, more than one line per second).
+
+For such cases, it is recommended to temporarily disable the feature by removing **ALL** legal entities from **Price change tracking** grid in **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**y, and then restart AOS. After the data changes are done, to reenabled the feature for desired legal entities, add them back to the grid and restart AOS. If restarting AOS isn't practical, please make sure the aforementioned batch group for pricing processing is properly setup, so the pricing jobs generated would not impact processing of other system batch tasks.
+
+### Cross-company entity change tracking
+
+The following tables are cross-company entities, and modifying them will trigger change tracking, even if the legal entity where changes are made is not set up for change tracking:
+
+- RetailGroupMemberLine
+- RetailChannelTable
+- RetailCatalogPriceGroup
+- RetailChannelPriceGroup
+- EcoResProductCategory
+
+## Troubleshooting
+
+For information on trouibleshooting price change tracking, see [Price change tracking troubleshooting](price-change-tracking.md). <!-- Support site link target TBD -->
+
 ## Additional resources
 
 [Cloud-powered search overview](cloud-powered-search-overview.md)
@@ -89,5 +124,7 @@ When you make large-scale changes (for example, bulk data migration), Microsoft 
 [Commerce Data Exchange best practices](dev-itpro/cdx-best-practices.md)
 
 [Data management overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+
+[Price change tracking troubleshooting](price-change-tracking.md) <!-- Support site link target TBD -->
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
