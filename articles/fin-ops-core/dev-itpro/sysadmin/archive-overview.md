@@ -15,4 +15,4 @@ ms.custom: bap-template
 # The archive solution is currently paused for new customers
 
 > [!IMPORTANT]
-> The archive solution is currently paused for new customers as the architecture is undergoing enhancements. We are actively working on a new design which provides customers with added flexibility in managing transactional data and reducing the amount of storage space used.
+> The archive solution is currently paused for new customers because the architecture is undergoing enhancements. We are actively working on a new design that will provide more flexibility for managing transactional data and reduce the amount of storage space used.
