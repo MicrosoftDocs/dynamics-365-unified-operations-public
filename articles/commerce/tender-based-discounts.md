@@ -6,7 +6,7 @@ description: This article describes tender-based discount functionality that let
 author: bebeale
 ms.date: 08/19/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain

@@ -6,7 +6,7 @@ description: This article describes out-of-box integrations that are available b
 author: BrianShook
 ms.date: 01/30/2023 
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c

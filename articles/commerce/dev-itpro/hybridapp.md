@@ -4,7 +4,7 @@ description: This article shows how to set up the POS hybrid app on Android and 
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw

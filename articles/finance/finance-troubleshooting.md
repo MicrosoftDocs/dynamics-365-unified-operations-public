@@ -32,6 +32,17 @@ Accounts payable
 
 - [Invoice automation exception processing](accounts-payable/vendor-invoice-automation.md#exception-processing)
 
+Business performance analytics
+ - [Business performance analytics self-help overview](business-performance-analytics/BPA-help-overview.md)
+ - [Missing fiscal calendar for general ledger](business-performance-analytics/BPA-self-help-1.md)
+ - [Missing fiscal calendar for budget](business-performance-analytics/BPA-self-help-2.md)
+ - [Missing main account in budget](business-performance-analytics/BPA-self-help-3.md)
+ - [Missing journal entries](business-performance-analytics/BPA-self-help-4.md)
+ - [Mismatch between debits and credits](business-performance-analytics/BPA-self-help-5.md)
+ - [Missing budget data](business-performance-analytics/BPA-self-help-6.md)
+ - [Missing budget transaction header](business-performance-analytics/BPA-self-help-7.md)
+
+
 Budgeting
 
 - [Position budgeting troubleshooting](budgeting/position-budgeting-set-up-issues.md)

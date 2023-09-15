@@ -4,7 +4,7 @@ description: This article describes how to configure Service-to-Service authenti
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv

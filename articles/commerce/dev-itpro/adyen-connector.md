@@ -4,9 +4,9 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/10/2023
+ms.date: 09/07/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -46,12 +46,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ---
 
-# [10.0.30](#tab/10-0-30)
-### Dynamics 365 Retail POS version 10.0.30
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_71p16 | adyen_v1_78p6 |
-
 # [10.0.31](#tab/10-0-31)
 ### Dynamics 365 Retail POS version 10.0.31
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -81,6 +75,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_89p6 | adyen_v1_91p2 |
+
+# [10.0.36](#tab/10-0-36)
+### Dynamics 365 Retail POS version 10.0.36
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_91p2 | adyen_v1_91p15 |
 
 ---
 
@@ -197,7 +197,7 @@ The following countries/regions have Commerce components available and card pres
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
-| Japan | Future release |
+| Japan | ✔ |
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
@@ -212,7 +212,7 @@ The following countries/regions have Commerce components available and card pres
 | Switzerland | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
-| Brazil | Future release |
+| Brazil | ✔ |
 
 #### Supported card not present countries/regions
 

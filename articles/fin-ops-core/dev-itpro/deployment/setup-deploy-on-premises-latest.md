@@ -648,7 +648,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 1. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test the **ClusterConfig.json** file.
 
     ```powershell
-    .\TestConfiguration.ps1 -ClusterConfigFilePath .\clusterConfig.json
+    .\TestConfiguration.ps1 -ClusterConfigFilePath .\ClusterConfig.json
     ```
 
 1. If the test is successful, run the following command to deploy the cluster.

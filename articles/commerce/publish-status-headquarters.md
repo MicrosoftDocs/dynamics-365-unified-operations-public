@@ -6,7 +6,7 @@ description: This article describes the capability to view product search publis
 author: ashishmsft
 ms.date: 06/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw

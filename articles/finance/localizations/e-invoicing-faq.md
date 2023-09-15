@@ -86,7 +86,7 @@ This can be achieved by configuration. To test invoice submission, you can conne
 
 Yes. For information about the availability of Electronic Invoicing features and the formats they support, see [Availability of electronic invoicing features](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
 
-## Does the Electronic Invoicing service allow a legal entity in Finance or Supply Chain Management that is configured for a specific country to consume electronic invoicing features from different country/regions?
+## Does the Electronic Invoicing service allow a legal entity in Finance or Supply Chain Management that is configured for a specific country/region to consume electronic invoicing features from different countries/regions?
 
 Yes. The electronic invoicing features can be consumed to process business document submissions independent from the country/region of the legal entity, if the following is true:
 

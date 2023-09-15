@@ -4,7 +4,7 @@ description: This article describes the delayed price calculation capability tha
 author: boycezhu
 ms.date: 09/09/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: boycez

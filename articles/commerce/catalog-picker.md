@@ -7,7 +7,7 @@ description: This article covers catalog picker modules and describes how to add
 author: ashishmsft
 ms.date: 07/11/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw

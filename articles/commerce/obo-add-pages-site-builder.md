@@ -6,7 +6,7 @@ description: This article describes how to create pages for on behalf of (OBO) f
 author: mariash529
 ms.date: 08/09/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: mashneer

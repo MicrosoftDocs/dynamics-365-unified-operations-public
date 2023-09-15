@@ -6,7 +6,7 @@ description: This article provides an overview of improvements that have been ma
 author: ShalabhjainMSFT
 ms.date: 08/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.custom: 141393
 ms.search.region: Global

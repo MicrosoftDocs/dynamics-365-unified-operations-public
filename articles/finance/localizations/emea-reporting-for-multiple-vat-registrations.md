@@ -77,7 +77,7 @@ Before you begin, the following prerequisites must be configured:
 ## Set up country/region properties for multiple VAT registrations
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
-2. On the **Country/region properties** tab, set up the following country types: **EU**, **EFTA**, or **Third country/region**.
+2. On the **Country/region properties** tab, set up the following country/region types: **EU**, **EFTA**, or **Third country/region**.
 
     The following information applies to documents about movements of goods between European Union (EU) countries/regions, except movements within the same country/region (for example from Belgium to Belgium):
 

@@ -35,14 +35,6 @@ A tile for the **Globalization features** workspace should now  appear on the ma
 
 1. In the **Globalization features** workspace, in the **Related settings** section, select **Electronic reporting parameters**.
 2. The first time you set up the parameters, you will be prompted to connect to Life Cycle Services (LCS). Select **Click here to connect to Lifecycle Services**, and after the connection is established, select **OK**.
-
-    > [!IMPORTANT]
-    > In countries or regions where the data residence is enforced, and if your RCS was provisioned in a region different where LCS is provisioned, you may receive the following connection error message in RCS: “No HTTP resource was found that matches the request URI”. Select **OK**. You may receive another error message in RCS: "Failed to generate the user token for Dynamics Lifecycle services on behalf on user (). Please contact your system administrator."
-    >  
-    > This happens because LCS is a global service and is provisioned in a US region. Because of the data residence policy, the RCS from your current region is unable to connect to LCS. Under these circunstances, there are 2 possible solutions:
-    > - Delete RCS from your current region and recreate it in US region.
-    > - Ignore the errors and continue with Electronic invoicing setup. These errors have no impact on the Electronic invoicing functionality.
-
 3. On the **Electronic Invoicing** tab, in the **Service endpoint URI** field, enter the appropriate service endpoint for your Microsoft Azure geography, as shown in the following table.
 
     | Datacenter Azure geography | Service endpoint URI |

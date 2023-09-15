@@ -4,7 +4,7 @@ description: This article answers frequently asked questions (FAQ) about the cha
 author: rickwyang
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: wenxyang

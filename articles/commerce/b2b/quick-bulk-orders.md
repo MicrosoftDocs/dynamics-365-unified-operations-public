@@ -2,11 +2,11 @@
 title: Place B2B website orders quickly
 description: This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 author: ShalabhjainMSFT
-ms.date: 04/26/2023
+ms.date: 09/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
@@ -14,11 +14,13 @@ ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
 ms.search.industry: retail
 ms.search.form: RetailOperations
+
 ---
 
 # Place B2B website orders quickly
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
 
@@ -45,6 +47,11 @@ The following illustration shows an example of quick order entry where the "ente
 Buyers on B2B websites often order specific items together. For example, if you're placing orders for a construction site, you might want to order shirts, jackets, pants, shoes, and hats together. If you're placing orders for a hospital where doctors, nurses, and cleaning staff have different uniforms, you might want to group each uniform type together for easier ordering. For these types of scenarios, Commerce B2B sites enable order templates to be created. Site users can create any number of custom templates and then order all or some of the items from those templates as they require. 
 
 You can create new order templates by going to **My account \> Manage order templates** and selecting **Create an order template**. Another way to create a new order template is to navigate to a product details page (PDP) for an item, select a variant (if applicable), and then select **Add to order template**. This action opens the **Add to order template** view, where you can select **Create new** to create a new order template. 
+
+As of Commerce version 10.0.37, order templates support catalogs. When the catalog feature is enabled, each order template line saves the corresponding catalog information. When users add one or more lines from the order template to their shopping cart, the cart lines get the correct catalog information from the order template lines. Also, the **Synchronize order templates** batch job that syncs order template information from the channel database to headquarters is available to use. 
+
+> [!NOTE]
+> Microsoft recommends that you run the **Synchronize order templates** job at regular intervals (for example, once per day) so that order template information is synced to headquarters. 
 
 The following illustration shows an example of an order template.
 

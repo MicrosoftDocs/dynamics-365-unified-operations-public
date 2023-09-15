@@ -6,7 +6,7 @@ description: This article is a deployment guide that shows how to enable the Mic
 author: EvgenyPopovMBS
 ms.date: 08/23/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

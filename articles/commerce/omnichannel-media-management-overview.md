@@ -4,7 +4,7 @@ description: This article provides an overview of omnichannel media management i
 author: phinneyridge
 ms.date: 08/01/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman
