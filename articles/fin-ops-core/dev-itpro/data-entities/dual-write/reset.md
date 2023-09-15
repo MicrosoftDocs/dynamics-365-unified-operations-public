@@ -4,7 +4,7 @@ description: This article describes the reset button functionality of dual-write
 author: ramasri
 ms.date: 12/20/2022
 ms.topic: article
-audience: Administrator
+audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
