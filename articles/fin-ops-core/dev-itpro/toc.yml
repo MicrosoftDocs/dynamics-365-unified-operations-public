@@ -293,7 +293,7 @@ items:
         href: data-entities/dm-error-descriptions.md  
       - name: Archive historical records
         items:
-        - name: The archive solution is currently paused for new customers
+        - name: The archive solution preview is currently paused
           href: sysadmin/archive-overview.md
     - name: Azure Data Lake
       items: 

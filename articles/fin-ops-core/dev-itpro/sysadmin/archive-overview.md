@@ -1,6 +1,6 @@
 ---
-title: The archive solution is currently paused for new customers
-description: The archive solution is currently paused for new customers.
+title: The archive solution preview is currently paused
+description: The archive solution preview is currently paused.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# The archive solution is currently paused for new customers
+# The archive solution preview is currently paused
 
 > [!IMPORTANT]
-> The archive solution is currently paused for new customers because the architecture is undergoing enhancements. We are actively working on a new design that will provide more flexibility for managing transactional data and reduce the amount of storage space used.
+> The archive solution preview is currently paused because the architecture is undergoing enhancements. We are actively working on a new design that will provide more flexibility for managing transactional data and reduce the amount of storage space used.
