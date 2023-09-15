@@ -4,7 +4,7 @@
 title: Service update availability
 description: This article provides information about the different release options.
 author: hmahl
-ms.date: 03/02/2023
+ms.date: 09/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
