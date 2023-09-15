@@ -16,7 +16,6 @@ ms.search.validFrom: 2020-01-14
 # Reset receipt numbers 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to reset receipt numbers used for various actions on a specific date (for example, the end of the fiscal year or calendar year) in Microsoft Dynamics 365 Commerce.
 
