@@ -4,9 +4,9 @@ description: This article describes how to enable extra efficiency in quote-to-c
 author: henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: DataManagementWorkspace, CustParameters
 ms.topic: how-to
-ms.date: 05/01/2023
+ms.date: 09/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -135,7 +135,7 @@ To open the configuration settings, follow these steps:
 | **Message processor** | **Create quotation confirmation journal in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Determines whether the message processor creates quotation confirmation journals asynchronously. Enabling this parameter improves performance when a quotation is won in Dynamics 365 Sales. <br><br>For more information about this setting, see [Set message processor options](add-efficiency-in-quote-to-cash-use.md#processor-options). |
 | **Message processor** | **Copy quotation data to sales order in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Determines whether the message processor copies quotation data to sales orders asynchronously. Enabling this parameter improves performance when a quotation is won in Dynamics 365 Sales.<br><br>For more information about this functionality, see [Copy Supply Chain Management sales quotation data to sales orders synced from Sales](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data). |
 | **Message processor** | **Calculate and push prices and totals in batch** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Determines whether the messages processor runs the *Push price and totals*, *Calculate sales order totals for Sales*, and *Calculate sales quotation totals for Sales* processes asynchronously. Enabling this parameter will improve performance. <br><br>For more information about this functionality, see [Choose whether to process and push totals synchronously or asynchronously](add-efficiency-in-quote-to-cash-use.md#synch-async). |
-| **Sales quotation** | **Default ownership** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales* | Sets the owner of the sales quotations (Supply Chain Management or Sales). <br><br>For more information about this functionality, see [Set the default ownership for all sales quotations](add-efficiency-in-quote-to-cash-use.md#default-ownership). |
+| **Sales quotation** | **Default ownership** | *Integrate Sales Quotation lifecycle with Dynamics 365 Sales*<br><br>*Set default ownership for sales quotations when integrated with Dynamics 365 Sales*	 | Sets the owner of the sales quotations (Supply Chain Management or Sales). <br><br>For more information about this functionality, see [Set the default ownership for all sales quotations](add-efficiency-in-quote-to-cash-use.md#default-ownership). |
 
 ## Troubleshooting
 

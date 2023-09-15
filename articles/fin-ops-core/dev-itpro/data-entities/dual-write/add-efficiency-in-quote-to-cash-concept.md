@@ -29,9 +29,7 @@ Both Supply Chain Management and Sales store and show origin and ownership infor
     - *Dynamics 365 Sales* – The quotation is processed through its lifecycle from Sales.
     - *Supply Chain Management* – The quotation is processed through its lifecycle from Supply Chain Management.
 
-When **Integrate quotation lifecycles** functionality is [disabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), all sales quotations have an **Origin** value of *Supply Chain Management* and an **Ownership** value of *Based on origin*.
-
-When **Integrate quotation lifecycles** functionality is [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), the **Origin** field works in the following way:
+When **Integrate quotation lifecycles** functionality is [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), the **Origin** and **Ownership** fields become visible for quotations and the **Origin** field works in the following way:
 
 - Quotations that are created in Supply Chain Management have an **Origin** value of *Supply Chain Management*.
 - Quotations that are created in Sales have an **Origin** value of *Dynamics 365 Sales*.
