@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 # ROBOTS: 
-audience: Application User
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
