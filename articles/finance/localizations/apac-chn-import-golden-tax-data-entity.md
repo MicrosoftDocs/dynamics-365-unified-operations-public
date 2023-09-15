@@ -6,7 +6,7 @@ ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: China (PRC)
 ms.author: mrolecki
