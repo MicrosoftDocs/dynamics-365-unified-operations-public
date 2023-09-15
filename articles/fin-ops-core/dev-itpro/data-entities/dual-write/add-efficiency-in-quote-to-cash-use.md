@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: CustParameters, SalesQuotationTable, SalesQuotationTable, SalesTableListPage, SalesTable, SysMessageProcessorMessage
 ms.topic: how-to
-ms.date: 09/152023
+ms.date: 09/15/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
