@@ -1,11 +1,11 @@
 ---
 title: Dynamics 365 Commerce troubleshooting and FAQs
-description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Commerce.
+description: This article provides links to troubleshooting resources and frequently asked question articles for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 09/07/2023
+ms.date: 09/15/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgri
+audience: Application User
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-07-12
@@ -16,7 +16,7 @@ ms.search.validFrom: 2022-07-12
 
 [!include [banner](../includes/banner.md)]
 
-This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Commerce.
+This article provides links to troubleshooting resources and frequently asked question articles for Microsoft Dynamics 365 Commerce.
 
 ## Troubleshooting articles
 
