@@ -13,7 +13,7 @@ ms.topic: whats-new
 # ROBOTS: 
 ms.reviewer: twheeloc
 ms.author: edupont
-audience: Developer, IT Pro
+audience: Application User
 ms.custom: bap-template
 ms.collection: get-started
 ms.search.region: Global
