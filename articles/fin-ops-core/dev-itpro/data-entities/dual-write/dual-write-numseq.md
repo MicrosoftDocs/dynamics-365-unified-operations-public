@@ -4,7 +4,7 @@ description: This article explains how to configure number sequences in finance 
 author: ramasri
 ms.date: 02/21/2023
 ms.topic: article
-audience: Developer, Application User, IT Pro
+audience: Developer
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
