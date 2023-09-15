@@ -7,7 +7,7 @@ ms.reviewer: kamaybac
 ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ms.topic: how-to
 ms.date: 11/02/2022
-audience: IT Pro, Developer
+audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
