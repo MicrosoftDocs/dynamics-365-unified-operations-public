@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: NumberSequenceTableListPage, NumberSequenceConfiguration
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
