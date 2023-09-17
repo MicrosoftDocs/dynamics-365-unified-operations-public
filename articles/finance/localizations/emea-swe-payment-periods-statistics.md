@@ -100,7 +100,8 @@ You may also choose to use those filters to prepare separate report for groups o
 
 In the result of calculation statistics the system will calculate all data required for reporting. You may verify calculations in provided data for the form for each vendor size category. In the **Vendor invoices** form you may navigate through all transactions considered in the statistics calculation. For each transaction you may navigate to settlement and original documents and payments using menu **View Settlements**. 
 
->[!Note] In the **Vendor invoices** form there are hidden fields which you may add to the form by choosing form customization options. You may also choose to export data from the form to excel spreadsheet for further analysis. 
+   >[!Note]
+   >In the **Vendor invoices** form there are hidden fields which you may add to the form by choosing form customization options. You may also choose to export data from the form to excel spreadsheet for further analysis. 
 
 # Reporting to Swedish Companies Registration Office
 At the moment of the first release of this report the Swedish Companies Registration Office requires filing by entering manually the report in the Bolagsverket e-service. Therefore, navigate to the reporting area in the e-service and fill in the required statistics in the office forms online.
