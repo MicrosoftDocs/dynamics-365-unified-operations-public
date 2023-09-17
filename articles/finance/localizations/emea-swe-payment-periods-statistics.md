@@ -64,11 +64,12 @@ The downloaded file from SCRO (Bolagsverket) e-service must be imported to Dynam
 
 ![Statistics of vendors payment periods import file.](media/emea-swe-pay-period-Import-file.png)
 
->[!NOTE] The processing and matching vendors size category can take significant time depending on number of vendor records in a legal entity. Therefore, you may choose batch processing for this task. To enable batch mode for this task there is required activation of optional Electronic Reporting feature. Therefore, navigate to **Feature management** and activate feature **Run ER import of manually uploaded documents in batch**
+   >[!NOTE]
+   > The processing and matching vendors size category can take significant time depending on number of vendor records in a legal entity. Therefore, you may choose batch processing for this task. To enable batch mode for this task there is required activation of optional Electronic Reporting feature. Therefore, navigate to **Feature management** and activate feature **Run ER import of manually uploaded documents in batch**
 
->[!NOTE] Troubleshooting
-> 1.	The SCRO data file is provided as a CSV file in the Bolagsverket e-service. Most antivirus services may interrupt downloading the file or saving and processing the downloaded file. It needs to be assured that file is downloaded completely and not corrupted. Verify size of downloaded file with information provided by SCRO. In the reporting period of the year 2023 the file size was approximately 120MB.
-> 2.	In case of any complication with importing and matching file you may search for vendor at the Bolagsverket e-service and manually add record for your vendor and its size category in the **Vendor Size Category** form.
+   >[!NOTE] Troubleshooting
+   > 1.	The SCRO data file is provided as a CSV file in the Bolagsverket e-service. Most antivirus services may interrupt downloading the file or saving and processing the downloaded file. It needs to be assured that file is downloaded completely and not corrupted. Verify size of downloaded file with information provided by SCRO. In the reporting period of the year 2023 the file size was approximately 120MB.
+   > 2.	In case of any complication with importing and matching file you may search for vendor at the Bolagsverket e-service and manually add record for your vendor and its size category in the **Vendor Size Category** form.
 
 # Calculate vendor payment statistics
 
