@@ -12,7 +12,6 @@ ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 79334
 ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
 ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
 ---

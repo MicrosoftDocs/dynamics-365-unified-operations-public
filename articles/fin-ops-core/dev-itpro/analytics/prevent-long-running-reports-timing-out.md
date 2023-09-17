@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 20521
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
 ---
 

@@ -3,7 +3,7 @@ title: Calculate tax on purchase quotations (Brazil)
 description: You can create a purchase request for quotation (RFQ), and when you enter the vendor reply, you can enter applicable fiscal information.
 author: AdamTrukawka
 ms.date: 06/28/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

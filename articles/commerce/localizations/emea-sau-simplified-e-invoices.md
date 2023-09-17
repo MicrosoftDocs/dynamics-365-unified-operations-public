@@ -2,7 +2,7 @@
 title: Generate and submit simplified electronic invoices for Saudi Arabia
 description: This article explains the functionality and setup of simplified electronic invoices that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 02/03/2023
+ms.date: 07/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,6 +17,9 @@ ms.search.validFrom: 2022-11-21
 # Generate and submit simplified electronic invoices for Saudi Arabia
 
 [!include[banner](../includes/banner.md)]
+
+> [!NOTE]
+> The functionality described in this article is meant to support the Phase 2 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia. For information about the legacy features meant to support the Phase 1 requirements of the E-invoicing implementation in the Kingdom of Saudi Arabia, see [Generate QR codes and print them on receipts for Saudi Arabia](./emea-sau-qr-code.md). 
 
 This article provides an overview of the functionality for simplified electronic invoices (e-invoices) that are available for Saudi Arabia in Microsoft Dynamics 365 Commerce. This article also provides guidelines for setting up the functionality.
 
@@ -50,7 +53,7 @@ The high-level, end-to-end process flow in Commerce for Saudi Arabia is as follo
 
 ## Set up Commerce for Saudi Arabia
 
-This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../welcome.md).
 
 As a prerequisite, you should complete the setup of the electronic invoicing functionality for Saudi Arabia, including the configuration of the Electronic invoicing service. For more information, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 

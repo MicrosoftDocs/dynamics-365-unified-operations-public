@@ -5,7 +5,7 @@ title: View related intercompany voucher from journal
 description: The related voucher window shows the voucher from the offset company when posting an intercompany transaction from the general journal. 
 author: aprilolson
 ms.date: 05/5/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

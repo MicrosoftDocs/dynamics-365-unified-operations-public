@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 

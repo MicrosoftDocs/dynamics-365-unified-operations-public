@@ -75,6 +75,7 @@ You must now set up the Raspberry Pi IoT simulator with simulated sensors and th
             cb(JSON.stringify({ value: 1, sensorId: 'AssetMaintenance' }), false);
             cb(JSON.stringify({ value: 1, sensorId: 'ProductionDelay' }), false);
             cb(JSON.stringify({ value: 20, sensorId: 'AssetDowntime' }), false);
+            cb(JSON.stringify({ value: 5, sensorId: 'AnomalyDetector' }), false);
         })
         .catch(function (err) {
             console.error('Failed to read out sensor data: ' + err);
@@ -83,7 +84,7 @@ You must now set up the Raspberry Pi IoT simulator with simulated sensors and th
     ```
 
     > [!IMPORTANT]
-    > The sensors IDs that are defined in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs that you will specify later for the scenarios in Supply Chain Management. The preceding example code uses human-readable sensor IDs. However, in an actual scenario, the sensor IDs will be globally unique identifier (GUID) values that are provided by the sensor manufacturer. The human-readable sensor IDs that are used in this example code are also used in the examples in [The product quality scenario](sdi-scenario-product-quality.md), [The asset maintenance scenario](sdi-scenario-asset-maintenance.md), [The production delays scenario](sdi-scenario-production-delays.md), and [The machine status scenario](sdi-scenario-equipment-downtime.md)). Therefore, use this code if you will work through those scenarios.
+    > The sensors IDs that are defined in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs that you will specify later for the scenarios in Supply Chain Management. The preceding example code uses human-readable sensor IDs. However, in an actual scenario, the sensor IDs will be globally unique identifier (GUID) values that are provided by the sensor manufacturer. The human-readable sensor IDs that are used in this example code are also used in the examples for the [product quality scenario](sdi-scenario-product-quality.md), [asset maintenance scenario](sdi-scenario-asset-maintenance.md), [production delays scenario](sdi-scenario-production-delays.md), [anomaly detection scenario](sdi-scenario-anomaly.md), [asset downtime scenario](sdi-scenario-asset-downtime.md), and [machine status scenario](sdi-scenario-equipment-downtime.md)). Therefore, use this code if you will work through those scenarios.
 
 ## Edit the interval for sending sensor signals
 

@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence for Microsoft Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor. It's an updated, renamed version of the *IoT Intelligence* feature that was previously available for Supply Chain Management.
@@ -34,6 +35,7 @@ Sensor Data Intelligence enables several types of functionality, each of which i
 
 | Scenario | Description |
 |---|---|
+| [Anomaly detection](sdi-scenario-anomaly.md) | Detect anomalies in sensor readings for machine assets, and notify supervisors when anomalies occur. |
 | [Asset downtime](sdi-scenario-asset-downtime.md) | Accurately track the efficiency of machine assets by using sensor data to track machine downtime. |
 | [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets. |
 | [Machine status](sdi-scenario-equipment-downtime.md) | Ensure operation efficiency by using sensor readings to notify planners about machine outages and provide options for mitigating potential delays. |

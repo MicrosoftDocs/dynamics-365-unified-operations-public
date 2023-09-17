@@ -3,7 +3,7 @@ title: Manage fiscal document text in procurement documents (Brazil)
 description: Set up fiscal document source text.
 author: AdamTrukawka
 ms.date: 06/24/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

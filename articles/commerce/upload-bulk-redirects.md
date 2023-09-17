@@ -2,7 +2,7 @@
 title: Upload URL redirects in bulk
 description: This article describes how to implement URL redirects in bulk by uploading a redirect comma-separate values (CSV) file in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/05/2020
+ms.date: 05/16/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ https://www.contoso.com/news, https://www.fabrikam.com/updates, 301
 > - **No header is allowed in the CSV file**: The first or topmost row must start with the first redirect row.
 > - **There must be no circular entries**: The source URL in a row must not be used as the target URL in the same row. You must also avoid implementations where a target URL is linked back as a source URL, either in a different row of the CSV file or in a DNS redirect.
 > - **Source and target URLs must be in valid URL format**: No spaces or invalid characters can be used in URLs.
-> - **No query string URLs are supported**: Commerce won't run query strings that are provided as source or target URLs.
+> - **Source query string URLs are not supported**: Commerce won't run source query strings, but destination query string parameters can be used. 
 > - **The CSV file must be in valid CSV format**: The CSV file must have comma-separated values, a separate line for each redirect, and valid file formatting, and it must have no header.
 
 ## Upload a redirect CSV file

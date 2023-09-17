@@ -20,7 +20,7 @@ ms.search.form:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how and when to use modules in Microsoft Dynamics 365 Commerce.
+This article describes how and when to use modules in Microsoft Dynamics 365 Commerce site builder.
 
 Modules are logical building blocks that make up your page structure, and they have various purposes and scopes. Some modules are high-level containers, and their only purpose is to hold and organize other modules (child modules). Other modules, such as a simple image placement module, have a very specific purpose. Other modules, such as a carousel module, fall somewhere between those two categories.
 

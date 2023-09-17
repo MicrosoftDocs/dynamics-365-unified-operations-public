@@ -62,7 +62,7 @@ For more information, see [VAT declaration (Russia)](../../../finance/localizati
 This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/rus-sales-books-purchase-books.md).
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country/region, type of feature, and release.
 
 ## Extensibility enhancements
 

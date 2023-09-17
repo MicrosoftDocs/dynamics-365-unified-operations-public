@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2017-11-22
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 24411
 ---
 
 # Extend POS views to add custom columns and app bar buttons

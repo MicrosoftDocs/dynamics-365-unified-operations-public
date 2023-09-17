@@ -14,7 +14,7 @@ ms.search.validFrom:
 
 [!include[banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Polish Intrastat declaration contains information about the trade of goods for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Polish Intrastat declaration contains information about the trade of goods for reporting.
 
 The following fields are included in the Polish Intrastat declaration. All of the fields are included on arrivals and dispatches except for **RodzajTransportu** (the transport mode) and **KrajPochodzenia** (the country or region of origin) which aren't included on dispatches, and **IdKontrahenta** (the customer's foreign VAT number) which isn't included on arrivals.
 

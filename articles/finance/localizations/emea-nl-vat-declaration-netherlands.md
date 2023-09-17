@@ -166,7 +166,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p><strong>3</strong></p>
 </td>
 <td width="265">
-<p><strong>Goods and services to/in foreign countries</strong></p>
+<p><strong>Goods and services to/in foreign countries/regions</strong></p>
 </td>
 <td width="104">
 <p>&nbsp;</p>
@@ -180,7 +180,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p>3a</p>
 </td>
 <td width="265">
-<p>Supplies to non-EU countries (export)</p>
+<p>Supplies to non-EU countries/regions (export)</p>
 </td>
 <td width="104">
 <p>SuppliesToCountriesOutsideTheEC</p>
@@ -194,7 +194,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p>3b</p>
 </td>
 <td width="265">
-<p>Supplies/services to EU countries</p>
+<p>Supplies/services to EU countries/regions</p>
 </td>
 <td width="104">
 <p>SuppliesToCountriesWithinTheEC</p>
@@ -236,7 +236,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p>4a</p>
 </td>
 <td width="265">
-<p>Supplies/services from non-EU countries</p>
+<p>Supplies/services from non-EU countries/regions</p>
 </td>
 <td width="104">
 <p>SuppliesFromCountriesOutsideTheEC</p>
@@ -252,7 +252,7 @@ The VAT declaration format in Netherlands contains the following information.
 <p>4b</p>
 </td>
 <td width="265">
-<p>Supplies/services from EU countries</p>
+<p>Supplies/services from EU countries/regions</p>
 </td>
 <td width="104">
 <p>SuppliesFromCountriesWithinTheEC</p>

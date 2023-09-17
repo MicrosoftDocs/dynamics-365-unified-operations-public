@@ -5,7 +5,7 @@ title: Ship orders as direct deliveries
 description: This article demonstrates how to create a direct delivery for a sales order. 
 author: Henrikan  
 ms.date: 07/11/2019  
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

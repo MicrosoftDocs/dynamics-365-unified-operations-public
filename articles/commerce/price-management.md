@@ -6,7 +6,7 @@ description: This article describes the concepts for creating and managing sales
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
@@ -17,7 +17,6 @@ ms.search.validFrom: 2018-03-30
 # Retail sales price management
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides information about the process of creating and managing sales prices in Dynamics 365 Commerce. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 
@@ -99,7 +98,7 @@ However, the pricing priority feature lets the retailer create a pricing priorit
 
 Let's look at an example where store prices override other prices.
 
-A national retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
+A national/regional retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
 
 For this example, we will drill into the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
 

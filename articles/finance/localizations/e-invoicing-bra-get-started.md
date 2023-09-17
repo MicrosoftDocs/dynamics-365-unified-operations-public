@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: gionoder
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.custom: 97423,  ""intro-internal
+ms.collection: get-started
 ms.assetid: 
 ms.search.form: 
 ---
@@ -21,13 +21,13 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Brazil. The article guides you through the configuration steps that are country-dependent in Regulatory Configuration Services (RCS), and complement the steps described in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information that will help you get started with Electronic invoicing for Brazil. The article guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS), and complement the steps described in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-## Country-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature
+## Country/region-specific configuration for Brazilian NF-e (BR) Electronic invoicing feature
 
 Some of the parameters from the **Brazilian NF-e (BR) Electronic invoicing feature** are published with default values. Review the values and if necessary, update the values to better reflect your business operation before you deploy the Electronic invoicing feature to the Service environment.
 
-This section complements the **Country-specific configuration for Electronic invoicing feature** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This section complements the **Country/region-specific configuration for Electronic invoicing feature** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature you created is selected.
@@ -42,11 +42,11 @@ This section complements the **Country-specific configuration for Electronic inv
 11. Select **Save** and close the page.
 12. To deploy the Electronic invoicing feature to the Service environment, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-## Country-specific configuration of application setup for Brazilian NF-e (BR) Electronic invoicing feature
+## Country/region-specific configuration of application setup for Brazilian NF-e (BR) Electronic invoicing feature
 
 Complete these steps before you deploy the application setup to your Finance or Supply Chain Management connected application.
 
-This section complements the **Country-specific configuration of Application setup** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This section complements the **Country/region-specific configuration of Application setup** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NF-e (BR)** Electronic invoicing feature is selected.
@@ -62,7 +62,7 @@ This section complements the **Country-specific configuration of Application set
 12. In the **Model mapping** field, select **Response data import** with **(Preview) NF-e response data import format (BR)**, and then select **Save**.
 13. To deploy the application setup to the Finance or Supply Chain connected application, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-## Country-specific configuration for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
+## Country/region-specific configuration for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
 Some of the parameters from the **Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature** are published with default values. Review and, if necessary, update the values to better fit your business operation needs before you deploy the Electronic invoicing feature to the Service environment.
 
@@ -87,11 +87,11 @@ This section complements the **Country-specific configuration for Electronic inv
 17. Select **Save** and then close the page.
 18. To deploy the Electronic invoicing feature to the Service environment, see [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
-## Country-specific configuration of application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
+## Country/region-specific configuration of application setup for Brazilian NFS-e ABRASF Curitiba (BR) Electronic invoicing feature
 
 Complete these steps before you deploy the application setup to your Finance or Supply Chain Management connected application.
 
-This section complements the **Country-specific configuration of application setup** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This section complements the **Country/region-specific configuration of application setup** section in the article, [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 1. In RCS, in the **Features** section of the **Globalization feature** workspace, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing Features** page, verify that the **Brazilian NFS-e ABRASF Curitiba (BR)** Electronic invoicing feature is selected.
@@ -115,7 +115,7 @@ This section complements the **Country-specific configuration of application set
 Enabling the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features may require sending limited data, including the organization tax registration ID. This data is transmitted to third-party agencies authorized by the tax authority for the purpose of sending electronic invoices to this tax authority in the predefined format required for integration with the government’s web service. As an administrator, you can enable or turn off the **NF-e Federal - Brazilian electronic invoice (BR)** and the **NFS-e - Brazilian service (city) electronic invoice** features. The following steps show how to do this: 
 
 1. Go to **Organization administration** > **Setup** > **Electronic document parameters**. 
-2. On the **Features** tab, select the row that contains the **NF-e Federal - Brazilian electronic invoice (BR)** or the **NFS-e - Brazilian service (city) electronic invoice** feature, and select the feature. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country-specific feature documentation for more information.
+2. On the **Features** tab, select the row that contains the **NF-e Federal - Brazilian electronic invoice (BR)** or the **NFS-e - Brazilian service (city) electronic invoice** feature, and select the feature. Data imported from these external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). Consult the Privacy notice sections in country/region-specific feature documentation for more information.
 
 ## Additional resources
 

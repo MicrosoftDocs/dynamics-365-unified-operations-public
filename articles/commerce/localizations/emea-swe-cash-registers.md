@@ -2,7 +2,7 @@
 title: Cash register functionality for Sweden
 description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
-ms.date: 02/03/2023
+ms.date: 04/05/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ This article provides an overview of the cash register functionality that is ava
 
 ### Common POS features
 
-To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+To learn about common POS features that are available to customers in all countries or regions, see [Commerce home page](../welcome.md).
 
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
@@ -70,7 +70,7 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 
 ## Setting up Commerce for Sweden
 
-This section describes the settings that are specific to and recommended for Sweden. For more information, see [Commerce home page](../index.md).
+This section describes the settings that are specific to and recommended for Sweden. For more information, see [Commerce home page](../welcome.md).
 
 To use the Sweden-specific functionality, you must complete these tasks:
 
@@ -102,11 +102,17 @@ You must specify the following general settings for Sweden.
     - Select the **Prices include sales tax** check box.
     - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
     - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.
+    
+    > [!NOTE]
+    > If you use the control unit integration sample for Sweden, make sure that the length of the **Tax identification number (TIN)** doesn't exceed 10 characters, as it's limited by the control unit driver.
 
 3. Set up POS functionality profiles:
 
     - On the **Functions** FastTab, select the **Audit** and **Prohibit mixing sales and returns in one receipt** check boxes.
     - On the **Receipt numbering** FastTab, set up receipt numbering. Create or update records for the **Sale** and **Return** receipt transaction types. Set the formats so that they include only numeric characters. Clear the **Independent sequence** check box in both records.
+   
+   > [!NOTE]
+    > If you use the control unit integration sample for Sweden, make sure that the length of the receipt number doesn't exceed 12 characters, as it's limited by the control unit driver.
 
 4. Update POS permissions groups and individual permission settings for store workers. Set the **Allow printing receipt copy** permission to an appropriate value:
 

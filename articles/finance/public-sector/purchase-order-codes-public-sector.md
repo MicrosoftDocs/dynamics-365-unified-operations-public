@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27291
 ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df
 ms.search.industry: Public sector
 ms.search.form: ConfirmingPOCodes, PurchTableListPage

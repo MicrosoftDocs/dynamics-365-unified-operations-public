@@ -6,7 +6,7 @@ ms.date: 06/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
 ms.author: atrukawk
@@ -25,7 +25,7 @@ This article provides information about the EU sales list report for the Czech R
     - Tax authority ID
     - Company's tax registration number
     - Taxpayer type identification
-    - Company country name
+    - Company country/region name
     - Name and title of a natural person
     - Company name
     - Company name appendix

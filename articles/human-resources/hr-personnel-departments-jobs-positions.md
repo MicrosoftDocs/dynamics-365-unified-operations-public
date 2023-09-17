@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 # ms.search.industry: 
@@ -107,7 +106,7 @@ When you assign a worker to a position, you fill that position. You can assign w
 ### Reporting relationships
 Positions are important elements of the lower level of an organization hierarchy. On the **Position** page, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A” reports to position “Accounting Supervisor”. Ana Bowman is assigned to position “Accounting Supervisor” and Felix Henderson is assigned to position “Accountant-A”. This means that Felix Henderson reports to Ana Bowman. 
 
-If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Olivia Wilson is a general manager at Adventure Works and is assigned to the “General Manager” position. Olivia manages the development of a product that is used to clean widgets. Olivia requires an accountant to help with the finances for developing the product. Therefore, she has recruited Felix Henderson to be the accountant. Felix reports directly to Ana Bowman, but also works with Olivia Wilson on his work related to the finances for developing the widget cleaner. 
+If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Olivia Wilson is a general manager at Adventure Works and is assigned to the “General Manager” position. Olivia manages the development of a product that is used to clean widgets. Olivia requires an accountant to help with the finances for developing the product. Therefore, Olivia has recruited Felix Henderson to be the accountant. Felix reports directly to Ana Bowman, but also works with Olivia Wilson on work related to the finances for developing the widget cleaner. 
 
 For the previous example, you would complete the following tasks to set up the working relationship between Felix Henderson and Ana Bowman:
 1.  Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.

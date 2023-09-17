@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +36,7 @@ Transport management lets you divide geographic locations into zones. Dividing l
 - **Optimize load planning** – By consolidating loads by zones.
 - **Optimize route planning** – By assigning specific route plans to specific zones.
 
-You define zones based on the metadata field values (such as country, zip code range, or carrier service) that qualify each zone. Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.
+You define zones based on the metadata field values (such as country/region, zip code range, or carrier service) that qualify each zone. Zone definitions aren't required if your transportation pricing doesn't employ a zone concept.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

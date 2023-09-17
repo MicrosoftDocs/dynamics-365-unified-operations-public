@@ -4,11 +4,11 @@
 title: One Version service updates overview
 description: This article gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
-ms.date: 05/21/2019
+ms.date: 03/02/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
+ms.custom: bap-template
 # optional metadata
 
 # ms.search.form: 
@@ -65,7 +65,7 @@ Additionally, a notification email will be sent five days in advance, and a noti
 
 After notifications have been sent, Microsoft will apply the update (**auto update**) during the designated maintenance window. After this operation is completed, a notification email will be sent to indicate the status of the update. Customers will also be able to **self-update** by using the standard update experience in LCS. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md). 
 
-Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments early. To sign up for the First release program, go to [https://experience.dynamics.com](https://experience.dynamics.com).
+Customers who participate in the First release program will have an opportunity to update their sandbox environment and other environments before general availability. To sign up for the First release program, go to [https://aka.ms/FirstReleaseFnO](https://aka.ms/FirstReleaseFnO).
 
 Customers will also be able to **self-update** by using the standard update experience in LCS, as shown in the following illustration.
 

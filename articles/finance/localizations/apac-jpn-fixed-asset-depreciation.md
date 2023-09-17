@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 10294
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: wangchen
@@ -76,11 +75,12 @@ The catch-up rule for depreciation provides an effective way to allocate annual 
 ## How do I calculate a depreciation expense by using the catchup rule?
 The depreciation expense for each month is calculated and posted in the next month. The following factors are used to calculate the monthly depreciation expense:
 
--   The total depreciation expense that has been incurred since the beginning of the year: Annual depreciation expense × (Position of the current month in the fiscal year ÷ 12) = 100,000 JPY
--   Total depreciation expense that has been posted from January through the current month
--   Depreciation expense that is posted for the current month: Total depreciation expense that has been incurred since the beginning of the year – Total depreciation expense that has been posted from January through the current month = 100,000 JPY
+- The total depreciation expense that has been incurred since the beginning of the year: Annual depreciation expense × (Position of the current month in the fiscal year ÷ 12) = 100,000 JPY
+- The total depreciation expense that has been posted from the beginning period of the fiscal year through the current month
+- The depreciation expense that's posted for the current month: Total depreciation expense that has been incurred since the beginning of the year 
+- The total depreciation expense that has been posted from the beginning period of the fiscal year through the current month = 100,000 JPY
 
-The following formula is used to calculate the monthly depreciation: Annual depreciation expense × (Position of the current month in the fiscal year ÷ Total number of months in the calendar year) – Total depreciation expense that has been posted from January through the current month This calculation method helps guarantee that the total monthly depreciation expense equals the annual depreciation expense of the asset.
+The following formula is used to calculate the monthly depreciation: Annual depreciation expense × (Position of the current month in the fiscal year ÷ Total number of months in the calendar year) – Total depreciation expense that has been posted from January through the current month. This calculation method helps guarantee that the total monthly depreciation expense equals the annual depreciation expense of the asset.
 
 ## Can I change the depreciation profile of a fixed asset after the depreciation for the asset has been posted?
 Yes. You can change the depreciation profile of a fixed asset even after you've posted the depreciation for the asset. The following table shows the depreciation method changes that are allowed.

@@ -5,7 +5,7 @@ title: Create a mass hire project
 description: This procedure walks through the process of setting up a mass hire project. 
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -4,7 +4,7 @@
 title: Create charges codes
 description: This article explains how to configure charges codes for both Accounts payable and Accounts receivable. 
 author: rachel-profitt
-ms.date: 12/03/2021
+ms.date: 03/23/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 

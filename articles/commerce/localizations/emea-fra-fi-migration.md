@@ -14,7 +14,6 @@ ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-manager: annbe
 ---
 # Migrate from legacy Commerce functionality for France
 

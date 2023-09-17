@@ -5,7 +5,7 @@ title: Create and post a project invoice for a public sector customer
 description: This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -35,7 +35,7 @@ This task was created using the demo data company USMF with the country/region o
 
 
 
-This is the sixth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
+This is the sixth procedure out of six illustrating end to end process of generating e-invoices using electronic reporting configurations. It is based on OIOUBL e-invoice example which is common for Denmark, Austria and Norway. In order to find minor differences for other country/region specific e-Invoice implementations, like Spanish or Italian, please refer to available WIKI articles.
 
 
 

@@ -15,10 +15,10 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
-ms.custom: ["96283", "intro-internal"]
+ms.collection: get-started
 ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 # ms.search.industry: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how you can use the data management framework to manage data entities and data entity packages in finance and operations.
 

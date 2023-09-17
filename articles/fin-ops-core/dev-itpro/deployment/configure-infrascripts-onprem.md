@@ -25,7 +25,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom:
 ms.dyn365.ops.version: 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Configure the infrastructure scripts for your Finance + Operations (on-premises) deployment

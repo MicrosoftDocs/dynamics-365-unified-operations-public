@@ -3,7 +3,7 @@ title: Generate documents that have application data
 description: To complete the steps in this procedure, you must first complete the procedure, ""ER Generate documents with application data update (Part 4 - Modify format)"".
 author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
@@ -25,7 +25,7 @@ The steps in this procedure explain how to design Electronic reporting (ER) conf
 
 
 
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, make sure that the country context for the DEMF company is BEL (Belgium).
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. These steps can be completed using the DEMF dataset. Before you begin, make sure that the country/region context for the DEMF company is BEL (Belgium).
 
 
 ## Set up foreign trade parameters

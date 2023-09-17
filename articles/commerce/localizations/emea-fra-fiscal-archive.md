@@ -14,7 +14,6 @@ ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.17
 ms.search.industry: Retail
 ms.search.form: RetailGrandTotalJournalTable
-manager: annbe
 ---
 # Fiscal archive for France
 

@@ -5,7 +5,7 @@ title: Set up a work template for purchase orders
 description: This article describes how to set up a simple work template to be used when putting away received items. 
 author: Mirzaab
 ms.date: 08/08/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

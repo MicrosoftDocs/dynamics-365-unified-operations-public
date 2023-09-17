@@ -71,6 +71,9 @@ Select the **Posting type** option if the ledger debit and credit transactions m
 
 Select the **Financial dimensions** option if the ledger debit and credit transactions must have the same financial dimensions to be matched during the automatic ledger settlement process. When this option is selected, the criteria for financial dimension values must be selected in the **Available financial dimensions** list. The **Available financial dimensions** list doesn't contain the main account dimension, because it's automatically required as part of the match criteria.
 
+### Financial tags
+When the **Financial tags** feature has been enabled in the **Feature management** workspace, you can select **Financial tags** as match criteria. Select the **Financial tags** option if the ledger debit and credit transactions must have the same financial tags values to be matched during the automatic ledger settlement process. When this option is selected, the criteria for financial tags values must be selected in the **Available financial tags** list.
+
 ## View the results of a ledger settlement automation
 
 After the ledger settlement automation series is created, the occurrences for each ledger settlement are shown in the process automation weekly view. Additionally, the status of each occurrence is shown. The following statuses are used:

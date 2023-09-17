@@ -5,7 +5,7 @@ title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 author: t-benebo
 ms.date: 07/01/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

@@ -299,7 +299,7 @@ The order that a compound expression is evaluated in can be important. For examp
 |------------------------------------------------------------------|------------------------------|
 | Unary                                                            | `- ~ !`                      |
 | Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `* / % DIV << >> & ^ `       |
-| Additive, bitwise inclusive **OR**                               | `+ –`                        |
+| Additive, bitwise inclusive **OR**                               | `+ - |`                     |
 | Relational, equality                                             | `< <= == != > >= like as is` |
 | Logical (**AND**, **OR**)                                        | `&&` `||`                    |
 | Conditional                                                      | `? :`                        |

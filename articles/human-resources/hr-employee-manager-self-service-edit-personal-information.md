@@ -4,7 +4,7 @@
 title: Edit personal information
 description: This article describes how to edit personal information in Employee and Manager self service.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 05/25/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
@@ -78,6 +77,8 @@ Parameters set on the **Global address book parameters** page determine which ro
     - To edit a number, select **Edit**. Edit the fields as necessary and select **Save**.
 
 7. To change the methods by which you're paid, select the **My payment information** tab. This tab is only available if payment methods are enabled in the **Human Resources parameters** page. HR can enable **Bank draft**, **Cash**, **Check**, **Electronic payment**, or **Other**. HR can also disable electronic payment validation (used for US Payroll), and bank account and routing number validation.
+
+    **My bank information** will be updated when bank account disbursement is configured for the bank account. After this configuration is completed, the bank information will be shown. Employees can add new bank information and make edits.
 
 8. To change the image that displays in Human Resources for your profile, select the **Image** tab. Depending on your organization's settings, images might be routed for approval.
 

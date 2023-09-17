@@ -3,7 +3,7 @@ title: JP-00005 Input journal in T account form (Japan)
 description: In Japan, the T-account format is commonly used to input journal entries.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

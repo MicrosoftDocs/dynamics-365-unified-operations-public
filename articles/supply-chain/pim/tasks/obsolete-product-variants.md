@@ -5,7 +5,7 @@ title: Find obsolete product variants
 description: This procedure shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. 
 author: t-benebo 
 ms.date: 12/05/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

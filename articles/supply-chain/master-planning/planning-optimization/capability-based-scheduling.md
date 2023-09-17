@@ -21,7 +21,7 @@ By specifying resource requirements for an operation of a production route, you 
 
 ## Turn the capability-based scheduling feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 For more information about this feature, see [Scheduling with infinite capacity](infinite-capacity-planning.md).
 
@@ -38,7 +38,7 @@ To assign capabilities to an operation resource, use the **Capabilities** FastTa
 - **Effective** – Specify the first date when the resource or capability assignment applies. During scheduling, the system won't use a resource or capability that has an expired capability assignment, even if that resource otherwise satisfies the requirements.
 - **Expiration** – Specify the last date when the resource or capability assignment applies. During scheduling, the system won't use a resource or capability that has an expired capability assignment, even if that resource otherwise satisfies the requirements.
 - **Level** – Specify the level of proficiency that the resource must have for the capability. Then, if you specify a **Minimum level needed** value for the resource or capability requirement, the scheduling engine considers the level of proficiency during resource selection. The system selects only resources that have the required capability at a level that equals or exceeds the minimum level that is specified in the resource requirement.
-- **Priority** – This field isn't yet supported by Planning Optimization. However, if you're using the deprecated master planning engine, you can use the **Priority** field in the resource or capability assignment to define the resource priority. Then, if *Priority* is selected in the **Primary resource selection** field on the **Scheduling parameters** page, the system first selects the resource that has the highest priority (that is, the lowest numeric value in the **Priority** field) during scheduling.
+- **Priority** – Set a priority for the resource or capability. Then, if *Priority* is selected in the **Primary resource selection** field on the **Scheduling parameters** page, the system first selects the resource that has the highest priority (that is, the lowest numeric value in the **Priority** field) during scheduling.
 
 ## Example
 

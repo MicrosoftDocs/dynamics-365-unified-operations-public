@@ -41,7 +41,7 @@ The Dynamics 365 for Operations development tools and runtime platform now suppo
 
 ## Development and customization – Extending the Country Region Codes property
 
-The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries based on the current legal entity's primary address. The **Country Region Codes** property is editable on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
+The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries/regions based on the current legal entity's primary address. The **Country Region Codes** property is editable on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
 
 A developer can specify additional country/region codes in their extension. The effective country/regions associated with an element will be the union of all codes from the baseline element and all its extensions.
 

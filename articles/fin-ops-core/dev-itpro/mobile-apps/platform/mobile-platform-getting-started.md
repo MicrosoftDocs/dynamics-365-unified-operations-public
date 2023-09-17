@@ -12,7 +12,8 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-ms.custom: 255544,  ""intro-internal
+ms.custom: 255544
+ms.collection: get-started
 ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ---
 

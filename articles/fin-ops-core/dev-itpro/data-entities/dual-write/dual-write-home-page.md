@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Dual-write home page

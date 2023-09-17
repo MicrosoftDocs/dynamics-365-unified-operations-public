@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
@@ -64,6 +64,7 @@ The following table lists the feature enhancements that are included in this rel
 | General ledger | Ability to automatically settle ledger accounts based on date tolerance criteria | The **Automate ledger settlements** feature has been enhanced to let you define date tolerance matching criteria. The date criteria are used if the dates of the ledger settlement debit and credit transactions should be considered during the automatic ledger settlements process. You can choose to enter the number of days of variance for the debit and credit transactions dates. The variance is calculated as the number of days between the debit and credit transaction dates, searching before and after the selected transaction date. These additional criteria can help improve the success rate of the automated settlement matching. |
 | General ledger | Ability to view the Payment reference information for Ledger settlement accounts | Payment reference information can now be viewed on the **Ledger settlements** page. This information can help accounting staff find matching debits and credits. |
 | General ledger | Review cross-year settlements | A new inquiry lets you identify, unsettle, and resettle ledger transactions that are settled across fiscal years. To view the information, open the **Ledger settlements** page (**General ledger \> Periodic tasks \> Ledger settlements \> Review cross-year settlements**). This feature has been backported to version 10.0.29 and is available in the 10.0.29 release or later of Dynamics 365 Finance. |
+| General ledger | Financial tags | Financial tags are user-defined fields that are used to track additional information about accounting entries that's required for analytics or processes such as ledger settlement. Up to 20 financial tags can be defined to track information such as customer names or purchase order numbers. Financial tags are an alternative to financial dimensions. The **Allow edits to internal data on general ledger vouchers** feature is enhanced so that financial tag values can be edited on posted transactions, and so that the changes are tracked. This release supports the ability to define financial tags, which can be entered on vouchers in the general journal and global general journal. Additional journals and documents will add financial tags in later releases. | 
 | Subscription billing | Renew automatically for revenue split billing schedule lines | Billing schedules where lines are marked for revenue split can now be marked for automatic renewal. |
 | Subscription billing | OData entity for termination of billing schedule | An Open Data Protocol (OData) entity has been added to enable the termination of billing schedules. |
 | Subscription billing | Mass termination removal | This feature lets users remove terminations by using the Mass termination process. |
@@ -131,7 +132,7 @@ The following table lists the features that are turned on by default in version 
 | Maturity date validation of posting payment journal with postdated check | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | (Brazil) Fix for improving performance of CNAB customer electronic payment | January 12, 2023 | Mandatory | Cash and Bank Management |
 | Undo settlement by selected data in both accounts - payable and receivable | January 12, 2023 | Mandatory | Cash and Bank Management |
-| ISO20022 payment functionalities for all countries | January 12, 2023 | Mandatory | Cash and Bank Management |
+| ISO20022 payment functionalities for all countries/regions | January 12, 2023 | Mandatory | Cash and Bank Management |
 | (Norway) Payment proposal dimension control improvement | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | ISO20022 include processed payments count to payment EndToEndId | January 12, 2023 | Enabled by default | Cash and Bank Management |
 | (Belgium) CODA bank statement processing performance improvement | January 12, 2023 | Enabled by default | Cash and Bank Management |
@@ -187,7 +188,7 @@ For information about the bug fixes included in this update, sign in to Microsof
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2023 release wave 1 plan
 

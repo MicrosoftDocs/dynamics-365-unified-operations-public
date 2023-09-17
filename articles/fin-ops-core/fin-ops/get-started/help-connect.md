@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 16141
 ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.form: SystemParameters
 ---
@@ -22,7 +21,7 @@ ms.search.form: SystemParameters
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 In this article, you will find an overview of the components of the Help system for finance and operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The article also explains how to connect these components and provides a summary of the process for creating custom Help.
 

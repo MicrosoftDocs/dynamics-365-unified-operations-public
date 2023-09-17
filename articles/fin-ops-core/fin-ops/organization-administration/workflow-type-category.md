@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
@@ -20,7 +20,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 When you create a workflow type, you must assign it to a workflow category. The workflow category determines whether the workflow type is available in a specific module. If an appropriate workflow category doesn't already exist, you must create it.
 

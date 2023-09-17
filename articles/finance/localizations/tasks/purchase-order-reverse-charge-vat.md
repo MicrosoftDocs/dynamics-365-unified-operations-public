@@ -3,7 +3,7 @@ title: GB-00002 Create a purchase order that includes items subject to reverse c
 description: This task walks you through creating a purchase order that includes items subject to reverse charge VAT for the United Kingdom.
 author: EricWangChen
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

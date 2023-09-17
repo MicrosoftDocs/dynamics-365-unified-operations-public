@@ -74,7 +74,7 @@ Maintaining tax setup parameters (such as tax rates and non-deductible percentag
 
 Sales tax code is a mandatory setup for GTE to integrate with Finance and Operations. Previously, GTE created the sales tax code with the same name as the tax component when synchronizing the tax configuration, and it used the accounting currency for the auto-create sales tax codes.
 
-Companies with multiple tax registration across the world need to maintain different tax currencies for tax components used in different countries. With the release of this feature, users can do the following.
+Companies with multiple tax registration across the world need to maintain different tax currencies for tax components used in different countries/regions. With the release of this feature, users can do the following.
 
 - Maintain the sales tax code in tax setup.
 - Map the tax component to the sales tax code in lookup tables.
@@ -170,7 +170,7 @@ The following tax registers are available:
 
 Basic localization in the following two areas is available:
 - Correspondence of accounts for all new general ledger postings.
-- Functional coexistence of process industries features and Russian country context.
+- Functional coexistence of process industries features and Russian country/region context.
 
 ## Additional resources
 
@@ -178,7 +178,7 @@ Basic localization in the following two areas is available:
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country/region, type of feature, and release.
 
 ### Platform update 24
 Microsoft Dynamics 365 Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).

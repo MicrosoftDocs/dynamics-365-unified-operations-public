@@ -3,7 +3,7 @@ title: Create a record template to facilitate data entry
 description: This article demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record.
 author: peakerbl
 ms.date: 07/29/2019
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

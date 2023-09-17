@@ -4,7 +4,7 @@
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: JennySong-SH
-ms.date: 04/25/2018
+ms.date: 05/16/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -43,7 +43,10 @@ You can define cost policies in the following areas:
 
 For example, you can define which inventory valuation methods, such as [FIFO](fifo-physical-value-marking.md), [Weighted average](weighted-average-physical-value-marking.md), [Standard cost](prerequisites-standard-costs.md), or [Moving average](moving-average.md) that you want to apply to products in the [Item model group](../inventory/reserve-inventory-quantities.md) in Inventory accounting.
 
-You can access Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, key performance indicators (KPIs), and detection of deviation. 
+You can access Inventory accounting and Manufacturing accounting from the **Cost administration** and **Cost analysis** workspaces. These workspaces provide a comprehensive overview of the current status, key performance indicators (KPIs), and detection of deviation.  
+
+> [!TIP]
+> Are you new to inventory costing? Check out the following resources: [Glossary of terms in Dynamics 365 business processes](/dynamics365/guidance/business-processes/glossary#costing-methodology) and [Define product and service costing overview](/dynamics365/guidance/business-processes/product-service-define-cost-overview).  
 
 Manufacturing accounting lets you handle [Job order costing](production-order-cost-analysis.md) in production orders and batch orders, as well as [Backflush costing](backflush-costing.md) in lean manufacturing.
 

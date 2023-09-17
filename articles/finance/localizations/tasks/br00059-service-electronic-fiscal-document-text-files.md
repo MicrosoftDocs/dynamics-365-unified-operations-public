@@ -3,7 +3,7 @@ title: Service electronic fiscal document using text files (Brazil)
 description: After a sales invoice for a service is issued in São Paulo city, you can generate the RPS (Recibo Provisorio de Serviço) for a given service fiscal document that has been posted.
 author: AdamTrukawka
 ms.date: 06/27/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

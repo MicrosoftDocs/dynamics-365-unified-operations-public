@@ -6,13 +6,12 @@ ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-manager: anayash
 ---
 
 # Client-Bank interface and reconciliation procedure

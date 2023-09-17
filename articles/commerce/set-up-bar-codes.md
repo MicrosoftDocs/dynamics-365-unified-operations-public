@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 15971
 ms.assetid: 6b4b2ac2-0344-41aa-8818-62c30017d5ac
 ms.search.industry: Retail
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup

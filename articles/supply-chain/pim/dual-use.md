@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-use goods
-description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
+description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country/region, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-Dual-use goods are typically items that have both civilian and military applications. For example, a chemical might be used as either a fertilizer or an explosive. Many countries have special regulations that apply to the export, import, and transportation of dual-use goods. Therefore, it's important that companies that are involved in the international trade of dual-use goods keep track of the various policies and certificates.
+Dual-use goods are typically items that have both civilian and military applications. For example, a chemical might be used as either a fertilizer or an explosive. Many countries/regions have special regulations that apply to the export, import, and transportation of dual-use goods. Therefore, it's important that companies that are involved in the international trade of dual-use goods keep track of the various policies and certificates.
 
-The dual-use feature helps companies keep track of products that are identified as dual-use goods, stores certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders. It helps ensure that, when your products are shipped, they always include up-to-date certifications.
+The dual-use feature helps companies keep track of products that are identified as dual-use goods, stores certificate numbers for each relevant product and destination country/region, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders. It helps ensure that, when your products are shipped, they always include up-to-date certifications.
 
 Consider the following scenario:
 
@@ -41,27 +41,27 @@ Consider the following scenario:
 5. When you confirm the sales order, the system determines the following information:
 
     1. Does the order include any products that are dual-use goods?
-    2. If the order includes dual-use goods, does the destination country require dual-use certificates?
-    3. If the country requires dual-use certificates, does a valid certificate exist for each dual-use good for the destination country?
+    2. If the order includes dual-use goods, does the destination country/region require dual-use certificates?
+    3. If the country/region requires dual-use certificates, does a valid certificate exist for each dual-use good for the destination country/region?
 
 6. The order includes product X-100, the product is being shipped to France, and a French certificate exists for the product. However, the certificate has expired. Therefore, you receive the following warning message: "Dual use certificates for one or more dual-use items in this sales order aren't valid. Do you want to proceed with the confirmation?"
 
 This article explains how to configure all the settings that are required to set up dual-use goods and support this scenario.
 
-## Define dual-use requirements for each relevant country
+## Define dual-use requirements for each relevant country/region
 
-Different countries have different requirements for dual-use goods. You use the **Dual use country setup** page to keep track of the countries that do and don't require a certificate. The information that you specify here is checked when you create sales orders, and you will be reminded to provide the required certifications.
+Different countries/regions have different requirements for dual-use goods. You use the **Dual use country setup** page to keep track of the countries/regions that do and don't require a certificate. The information that you specify here is checked when you create sales orders, and you will be reminded to provide the required certifications.
 
-To set up the information about dual-use requirements for different countries, follow these steps.
+To set up the information about dual-use requirements for different countries/regions, follow these steps.
 
 1. Go to **Product information management \> Setup \> Product compliance \> Dual use products \> Dual use country setup**.
-2. Select an existing country setup to edit it, or select **New** on the Action Pane to create a new country setup.
-3. Set the following values for the selected or new country setup.
+2. Select an existing country/region setup to edit it, or select **New** on the Action Pane to create a new country/region setup.
+3. Set the following values for the selected or new country/region setup.
 
     | Field | Description |
     |---|---|
-    | Country/region | Select the country that you're tracking requirements for. |
-    | Certificate Required | Select this check box for countries that require a certification for dual-use goods. Clear it for countries that don't require this certification. |
+    | Country/region | Select the country/region that you're tracking requirements for. |
+    | Certificate Required | Select this check box for countries/regions that require a certification for dual-use goods. Clear it for countries/regions that don't require this certification. |
 
 ## Create dual-use categories
 
@@ -94,13 +94,13 @@ To identify a product as a dual-use good and apply a dual-use category to it, fo
 > The system makes the following dual-use checks when it generates a sales confirmation:
 >
 > 1. Does the order include any dual-use goods?
-> 1. If so, does the destination country require dual-use certificates?
-> 1. If so, do certificates exist for each dual-use good for the destination country, and are those certificates valid for the confirmed ship dates?
+> 1. If so, does the destination country/region require dual-use certificates?
+> 1. If so, do certificates exist for each dual-use good for the destination country/region, and are those certificates valid for the confirmed ship dates?
 > 1. If the answers to questions 1 and 2 are "Yes" and the answer to question 3 is "No", then the system shows a warning to inform the user that dual-use certificates are missing for one or more dual-use goods in the sales order. The user should probably obtain the required certificates and try again, but could instead overrule the warning and proceed with the sales confirmation if they wish.
 
 ## Set up dual-use certificates
 
-You use the **Dual use certificates** page to set up and manage the required dual-use certificates for each product and country. You can track each certificate's details, such as the country and the dates of validity. You can also set options to specify where this information should be printed. For example, the information can be printed on the invoice, packing slip, and/or sales order. This setup is checked when you create a sales order.
+You use the **Dual use certificates** page to set up and manage the required dual-use certificates for each product and country/region. You can track each certificate's details, such as the country/region and the dates of validity. You can also set options to specify where this information should be printed. For example, the information can be printed on the invoice, packing slip, and/or sales order. This setup is checked when you create a sales order.
 
 1. Go to **Product information management \> Setup \> Product compliance \> Dual use products \> Dual use certificates**.
 2. Select an existing certificate to edit it, or select **New** on the Action Pane to create a new certificate.
@@ -113,9 +113,9 @@ You use the **Dual use certificates** page to set up and manage the required dua
     | Certificate number | The number that appears on the certificate that is issued to the vendor or customer. |
     | Effective | Select the first date when the current certificate is valid.|
     | Expiration | Select the last date when the current certificate is valid. |
-    | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country during the specified date range. |
-    | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country during the specified date range. |
-    | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country during the specified date range. |
+    | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country/region during the specified date range. |
+    | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country/region during the specified date range. |
+    | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country/region during the specified date range. |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

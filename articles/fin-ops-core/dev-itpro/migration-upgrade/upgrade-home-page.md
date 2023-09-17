@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Upgrades, updates, and hotfixes resources
@@ -58,7 +58,6 @@ If you are applying updates to an on-premises version of finance and operations,
 
 - [Download updates from Lifecycle Services (LCS)](download-hotfix-lcs.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
-- [Install metadata hotfixes in development environments](install-metadata-hotfix-package.md)
 - [Patch SQL Server Reporting Services (SSRS) in one-box environments](patch-reporting-service-environment.md)
 - [Update the Visual Studio development tools](../dev-tools/update-development-tools.md)
 

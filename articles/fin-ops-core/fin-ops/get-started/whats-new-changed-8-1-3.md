@@ -56,8 +56,8 @@ You can settle the amount remaining from settlement activity by applying that am
 
 You can now configure an Electronic reporting (ER) format to parse incoming files in JSON format. You can then set up ER mappings that specify how information from JSON files is used to update application data.
 
-### Electronic reporting: Support country context-specific ER model mappings
-You can specify a country context for ER model mapping. You can also manage multiple country-specific mappings for a single ER data model. This allows you to isolate country-specific logic of data access in a single ER model mapping. Depending on the legal entity's primary address, the appropriate country/region-specific model mapping will be used when an ER format is used to generate an electronic document. 
+### Electronic reporting: Support country/region context-specific ER model mappings
+You can specify a country/region context for ER model mapping. You can also manage multiple country/region-specific mappings for a single ER data model. This allows you to isolate country/region-specific logic of data access in a single ER model mapping. Depending on the legal entity's primary address, the appropriate country/region-specific model mapping will be used when an ER format is used to generate an electronic document. 
 
 ## Russian-specific features
 This release contains the following features for Russia.

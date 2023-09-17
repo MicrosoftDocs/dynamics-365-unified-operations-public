@@ -4,7 +4,7 @@
 title: Set up and process recurring invoices
 description: This article explains how to set up and process recurring invoices. You can use recurring invoices if you must invoice customers for the same amount on a regular basis.
 author: ShivamPandey-msft
-ms.date: 08/22/2017
+ms.date: 03/22/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,9 +15,8 @@ ms.search.form: CustInvoiceTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 14011
 ms.assetid: 9cc37003-adf1-413d-b2b2-2badcf512e3b
 ms.search.region: Global
 # ms.search.industry: 
@@ -62,7 +61,7 @@ After recurring invoices are generated, the invoice recurrence IDs appear in a p
 
 ## Print recurring free text invoices
 
-After recurring invoices are posted, you can print the invoices from the free text invoice list page. You can print the invoices that are selected, or you can select a range of invoices to print.
+After recurring invoices are posted, you can print the invoices from the **Free text invoice list** page. You can print the invoices that are selected, or you can select a range of invoices to print.
 
 
 

@@ -5,7 +5,7 @@ title: Count inventory in a warehouse
 description: This article describes the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
 author: yufeihuang
 ms.date: 07/09/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

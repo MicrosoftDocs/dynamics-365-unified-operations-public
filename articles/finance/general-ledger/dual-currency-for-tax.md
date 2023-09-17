@@ -48,7 +48,7 @@ For more information about dual currency, please refer to [Dual currency](dual-c
 As a consequence of support for dual currencies, two new features are available in feature management: 
 
 - Sales tax conversion (new in version 10.0.13)
-- Enter financial dimensions in the realized currency adjustment profit/loss accounts for sales tax settlement (new in version 10.0.17)
+- Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement (new in version 10.0.17)
 
 Dual currency support for sales taxes ensures that taxes are accurately calculated in the tax currency, and that the sales tax settlement balance is accurately calculated in both the accounting currency and the reporting currency.
 

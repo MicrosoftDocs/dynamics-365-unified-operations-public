@@ -6,9 +6,10 @@ description: This article explains the concepts that are related to Commerce per
 author: BrianShook
 ms.date: 09/08/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: josaw
-ms.custom: ["268444", "intro-internal"]
+ms.custom: ["268444"]
+ms.collection: get-started
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-11-30

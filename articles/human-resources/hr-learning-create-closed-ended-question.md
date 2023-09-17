@@ -5,7 +5,7 @@ title: Create a closed-ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

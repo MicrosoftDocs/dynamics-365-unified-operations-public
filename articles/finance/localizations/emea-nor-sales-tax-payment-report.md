@@ -18,7 +18,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](emea-vat-reporting.md).
+This article includes country/region-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 > [!NOTE]
 > As part of the modernization of VAT systems, the Norwegian Tax Administration introduced a new format for VAT return reporting for periods that start on or after January 1, 2022. VAT returns for periods before that date, and corrections to those VAT returns, must be reported in the format that is described in this article. For more information about the new VAT return format, see [VAT return with direct submission to Altinn](emea-nor-vat-return.md).

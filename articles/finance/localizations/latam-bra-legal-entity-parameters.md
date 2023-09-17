@@ -48,7 +48,7 @@ A fiscal establishment is a physical location of a legal entity, such as a subsi
 | **CNPJ/CPF** | Enter the taxpayer registration number, or Cadastro Nacional da Pessoa Jurídica (CNPJ)/Cadastro de Pessoas Físicas (CPF), of the legal entity.    |
 | **CCM**      | Enter the municipal registration number, or Cadastro de contribuinte mobiliário (CCM), of the legal entity.                                       |
 | **IE**       | Enter the state registration number, or Inscrição Estadual (IE), of the legal entity.                                                             |
-| **CNAE**     | Enter the national classification code, or Classificação Nacional de Atividades Econômicas (CNAE), for the economic activity of the legal entity. |
+| **CNAE**     | Enter the national/regional classification code, or Classificação Nacional de Atividades Econômicas (CNAE), for the economic activity of the legal entity. |
 
 ### Closed warehouse
 
@@ -144,7 +144,7 @@ After a Brazilian legal entity is created, and a fiscal establishment is created
 | **CNPJ/CPF** | The taxpayer registration number (CNPJ/CPF) of the legal entity.                       |
 | **CCM**      | The municipal registration number (CCM) of the legal entity.                           |
 | **IE**       | The state registration number (IE) of the legal entity.                                |
-| **CNAE**     | The national classification code (CNAE) for the economic activity of the legal entity. |
+| **CNAE**     | The national/regional classification code (CNAE) for the economic activity of the legal entity. |
 
 ## Brazilian parameters
 Use the information in the following tables to set up parameters on the **Brazilian parameters** page.

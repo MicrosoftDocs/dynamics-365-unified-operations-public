@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 19681
 ms.assetid: c99b2aeb-4ac2-4abe-b8b9-786b664c103d
 ms.search.industry: Public sector
 ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage

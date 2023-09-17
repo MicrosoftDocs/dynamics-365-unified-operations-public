@@ -5,7 +5,7 @@ title: Create a sales tax payment
 description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
 author: twheeloc
 ms.date: 01/04/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

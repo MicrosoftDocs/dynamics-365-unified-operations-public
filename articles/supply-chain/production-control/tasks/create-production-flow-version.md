@@ -5,7 +5,7 @@ title: Create a production flow version
 description: This procedure focuses on creating a new production flow version. 
 author: johanhoffmann
 ms.date: 11/03/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

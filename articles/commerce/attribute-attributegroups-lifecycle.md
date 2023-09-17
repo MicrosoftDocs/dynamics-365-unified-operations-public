@@ -6,7 +6,7 @@ description: This article describes how to manage attributes and attribute group
 author: ashishmsft
 ms.date: 08/31/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail

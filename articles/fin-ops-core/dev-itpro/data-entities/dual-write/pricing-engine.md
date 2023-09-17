@@ -15,9 +15,12 @@ ms.search.validFrom: 2020-01-06
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts. The pricing engine uses complex rules to determine the best price for a given quotation or order. When you use dual-write, you use either static pricing or the pricing engine from Supply Chain Management on the **Quote** and **Order** pages in Microsoft Dynamics 365 Sales.
+Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts. This pricing engine uses complex rules to determine the best price for a given quotation or order. When it's integrated with Dynamics 365 Sales, you can choose whether all price-related calculations are done in Supply Chain Management and then synced to Sales, or whether Sales does selective price-related calculations for quotations and sales orders. You control the behavior by setting the **Use system pricing calculation** option in Sales, at **Settings \> Administration \> System settings \> Sales**. When this option is set to *No*, Supply Chain Management is responsible for all pricing calculations. When it's set to *Yes*, part of the Sales pricing calculation logic is also applied. In the examples later in this article, the **Use system pricing calculation** option is set to *Yes*.
 
-## Use the pricing engine from Supply Chain Management in Sales
+> [!NOTE]
+> In Supply Chain Management version 10.0.34, an alternative approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. This approach goes into effect when the *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* feature is enabled. Note that, per the Microsoft lifecycle policy, the plan is for this feature to become enabled by default six months after it's released, and then mandatory six months after it's enabled by default. For more information about this feature, see [Add efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-concept.md).
+
+## Use the pricing engine from Supply Chain Management in Sales with Use system pricing calculation equal Yes
 
 1. In Sales, go to **Sales \> Orders**.
 1. Select **New** to create a new order, or select an existing order in the **My Orders** list.

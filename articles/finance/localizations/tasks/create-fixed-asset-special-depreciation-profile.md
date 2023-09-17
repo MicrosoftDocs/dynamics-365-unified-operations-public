@@ -3,7 +3,7 @@ title: Create a fixed asset with special depreciation profile
 description: In Japan, you can post a special depreciation amount to a fixed asset, under certain conditions. Use this procedure to learn how to create a fixed asset with special depreciation profile.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

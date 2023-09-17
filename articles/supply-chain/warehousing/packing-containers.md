@@ -3,7 +3,7 @@ title: Pack containers for shipment
 description: This article describes the packing process that lets you validate inventory items and pack them into containers.
 author: perlynne
 ms.date: 7/13/2022
-ms.topic: business-process
+ms.topic: how-to
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 audience: Application User
 ms.reviewer: kamaybac
@@ -199,7 +199,7 @@ Follow these steps to set up a container packing policy.
         Shipment manifesting should be enabled if you're required to complete a manifest for the whole shipment that is packed at the packing station. It's typically used when one consolidated manifest is required even though the shipment consists of multiple containers or container groups.
 
     - **Print packing slip** – Set this option to *Yes* to automatically print the packing slip as part of the shipment manifest. The packing slip can also be printed on demand.
-    - **Print packing slip asynchronously** – This option is available only when the **Print packing slip** option is set to *Yes*. Set this option to *Yes* to process sales packing slips asynchronously by using the message processor. In this case, the system will queue sales packing slip postings to the message processors by using messages of the *Run packing slip for container* type to the *Warehouse* queue. This setting requires that you also set the **Packing slip posting parameters ID** field. For more information about how to set up and use the message processor, and how to schedule the batch job that's required to process the messages, see [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md).
+    - **Print packing slip asynchronously** – This option is available only when the **Print packing slip** option is set to *Yes*. Set this option to *Yes* to process sales packing slips asynchronously by using the message processor. In this case, the system will queue sales packing slip postings to the message processors by using messages of the *Run packing slip for container* type to the *Warehouse* queue. This setting requires that you also set the **Packing slip posting parameters ID** field. For more information about how to set up and use the message processor, and how to schedule the batch job that's required to process the messages, see [Create and process message queues and message types](../supply-chain-dev/message-processor.md).
     - **Packing slip posting parameters ID** – This setting applies when the **Print packing slip asynchronously** option is set to *Yes*. You must define at least one set of parameter settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Packing \> Packing slip posting parameters**) and select the ID for the set of settings that you want to use here. The parameter settings will be used when the last container for a shipment is closed. Warehouse workers won't be prompted to confirm the values. If you're using the [*Container closing*](warehouse-app-packing-containers.md) process for the Warehouse Management mobile app, this process will be the only one that's supported for automatic posting of packing slips.
 
 ### Set up container types
@@ -232,7 +232,7 @@ Follow these steps to set up a packing profile.
 
 1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
 1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
-1. On the header of the new or selected profile, set the following fields:
+1. Make the following settings for your new or selected profile:
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.
@@ -241,6 +241,8 @@ Follow these steps to set up a packing profile.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
     - **Print container label at container creation** – Select this checkbox to automatically print a container label when a new container is created. For more information about how to set up your container label layouts, see [Container label layouts and printing](print-container-labels.md).
+    - **Prevent editing container ID** – Select this check box to prevent automatically assigned container IDs from being edited.
+    - **Prevent container creation without items to pack** – Select this checkbox to prevent containers from being created when there aren't any items to pack for a given shipment and packing location.
 
 ### Set up warehouse workers
 

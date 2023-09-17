@@ -17,7 +17,8 @@ audience: Application User
 # ms.devlang:
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:
-ms.custom: ["274363", "intro-internal"]
+ms.custom: ["274363"]
+ms.collection: get-started
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
@@ -103,11 +104,11 @@ Sammy can view the following information:
 
 ### Update journals
 
-To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then click **Journals** &gt; **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To update the purchase order product receipt for the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, he clicks **Journals** &gt; **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
+To register one or more order lines that are due to be processed, Sammy can select the lines in the overview grid or in the line grid, and then click **Journals** &gt; **Show arrivals from receipts**. The item arrival headers that match the lines are shown. To update the purchase order product receipt for the registered items, Sammy can access the item arrival journal headers that are ready for update. To access these item arrival journal headers, Sammy clicks **Journals** &gt; **Product receipt ready journals**. All the header lines that are ready for product receipt update in the specified warehouse range are shown. (The header lines that are shown aren't related to the day interval).
 
 ### Start an arrival registration
 
-By selecting multiple lines on the **Arrival overview** page, Sammy can start an arrival of more than one receipt reference. When he selects a line from the receipts overview, the corresponding line details are selected. If a quantity for registration exists, the **Start arrival** button is available. Sammy can use two methods to start the arrival registration:
+By selecting multiple lines on the **Arrival overview** page, Sammy can start an arrival of more than one receipt reference. When Sammy selects a line from the receipts overview, the corresponding line details are selected. If a quantity for registration exists, the **Start arrival** button is available. Sammy can use two methods to start the arrival registration:
 
 -   To filter the page so that it shows only records that meet specific criteria, in the **Vendor reference** field, scan a reference number from a vendor, such as the bar code for a delivery note.
 -   In the overview part or the details part of the **Arrival overview** page, manually select or cancel the selection of records for arrival registration. Then, when Sammy clicks **Start arrival**, the selected records are automatically created in an item arrival journal. The records include line information, and all unique field information is assigned.

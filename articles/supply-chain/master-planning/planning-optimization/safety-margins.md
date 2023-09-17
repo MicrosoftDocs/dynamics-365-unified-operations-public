@@ -169,4 +169,12 @@ For example, an item has lead time of one day and a receipt margin of three days
 
 ![Delay calculation example.](media/safety-margins-delays.png)
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## Issue margin and on-hand
+
+It can sometimes occur that issue margin isn't applied to an order when on-hand supply exists for an item. The reason for this is that the on-hand supply doesn't have a date, so it isn't possible to apply the issue margin.
+
+This situation usually occurs when an item with issue margin is sold from a warehouse (for example WH11) that is replenished by a transfer order from another warehouse (for example WH13). In this case, one of the following situations could apply:
+
+- **If on-hand supply exists in WH13** – On WH11, the margin will be applied between the sales order date and the transfer order receipt date. However, on WH13, the date of the transfer order shipment will be the same as the receipt date because there is on-hand supply, so no issue margin will be applied.
+
+- **If on-hand supply doesn't exist in WH13** – If there is no on-hand supply, and WH13 is to be replenished by other means (such as a purchase order), then the issue margin is applied between the transfer order receipt date and the purchase order receipt date.

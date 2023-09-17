@@ -225,7 +225,7 @@ Work is now completed.
 
 #### On-hand by location
 
-1. Go to **Warehouse management \> Inquiries and reports \> On-hand by location**.
+1. Go to **Warehouse management \> Enquiries and reports \> On-hand by location**.
 1. Set the following values:
 
     - **Site:** *6*

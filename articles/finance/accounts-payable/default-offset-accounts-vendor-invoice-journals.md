@@ -2,7 +2,7 @@
 title: Default offset accounts for vendor invoice and invoice approval journals
 description: This article will help you decide where you should assign default accounts for invoice journals.
 author: abruer
-ms.date: 01/12/2018
+ms.date: 06/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 62093
 ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 ms.search.form: LedgerJournalTable
 ---
@@ -81,7 +80,7 @@ Use the following table to help decide where you should assign default accounts 
 <td><strong>Journal header</strong> – Set up a default offset account for a journal as a default entry on the journal voucher pages. Note that you can&#39;t specify default offset accounts on the journal header if the journal type of the journal names is <strong>Invoice register</strong> or <strong>Approval</strong>.</td>
 <td>Journal entries in the journal</td>
 <td>The default offset account for a journal is used as the default entry on the journal voucher pages.</td>
-<td>Use this option to help speed up data entry if most entries in a journal have the same offset account.</td>
+<td>Use this option to speed up data entry if most entries in a journal have the same offset account.</td>
 </tr>
 </tbody>
 </table>

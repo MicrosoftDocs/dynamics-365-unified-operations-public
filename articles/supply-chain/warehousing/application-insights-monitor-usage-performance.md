@@ -58,6 +58,8 @@ In Application Insights, telemetry from Supply Chain Management tenants is logge
 | WHS000025 | Replenishment | Warehouse.RunDemandReplenishment | 10.0.32 |
 | WHS000026 | Replenishment | Warehouse.ImmediateReplenishment | 10.0.32 |
 | WHS000027 | Release to warehouse | Warehouse.WarehouseRelease.CreateShipments | 10.0.32 |
+| WHS000028 | Wave creation | Warehouse.WaveCreated | 10.0.33 |
+| WHS000029 | Wave creation | Warehouse.WaveStatusChanged | 10.0.33 |
 
 The following table lists the telemetry data that's logged as custom dimensions. (Not all this data is logged for all events.) The table also shows the minimum version of Supply Chain Management that's required to log each dimension.
 
@@ -105,6 +107,8 @@ The following table lists the telemetry data that's logged as custom dimensions.
 | `workCreationLogMessage` | The message that was logged during a process (such as work creation or wave allocation). | 10.0.31 |
 | `workCreationLogTransactionTime` | A timestamp that indicates when the work creation log was created. | 10.0.31 |
 | `workCreationNumber` | The work creation number that was used for the work creation process. | 10.0.31 |
+| `WaveStatusCurrent` | The status of the current wave. | 10.0.33 |
+| `waveStatusPrevious` | The status of the previous wave. | 10.0.33 |
 | `WorkExecuteMode` | The work processing mode for the Warehouse Management mobile device app flow. | 10.0.31 |
 | `WorkExecuteStep` | The work processing step for the Warehouse Management mobile device app flow. | 10.0.31 |
 | `WorkId` | The work ID that was processed. | 10.0.32 |
@@ -120,18 +124,24 @@ In Application Insights, telemetry from the Warehouse Management mobile app is l
 | Event ID | Area | Name | Supply Chain Management version | Mobile app version |
 |---|---|---|---|---|
 | WHS000006 | Mobile application frontend | Warehouse.MobileApp.ClientRoundTrip | 10.0.29 | 2.0.28 |
+| WHS000030 | Mobile application frontend | Warehouse.MobileApp.FailedServerInvoke | 10.0.29 | 2.1.14 |
+| WHS000031 | Mobile application frontend | Warehouse.MobileApp.ServiceInvokeException | 10.0.29 | 2.1.14 |
 
-The following table lists the telemetry data that's logged as custom dimensions on each event. It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app that are required to generate each dimension.
+The following table lists the telemetry data that can be logged as custom dimensions on each event (not all this data is logged for all events). It also shows the minimum versions of Supply Chain Management and the Warehouse Management mobile app that are required to generate each dimension.
 
 | Name | Description | Supply Chain Management version | Mobile app version |
 |---|---|---|---|
 | `activityId` | The GUID of the server request activity ID. | 10.0.29 | 2.0.35 |
 | `activityGraph` | A constant that provides information about the place of the call in the activity hierarchy. The value "Warehouse.MobileApp.Interaction" will always be logged. | 10.0.29 | 2.0.35 |
+| `appVersion` | The version of the app that performs the call. | 10.0.33 | 2.0.43 |
 | `backendProcessingTime` | Information about the processing time of the request on the server. | 10.0.29 | 2.0.28 |
 | `batteryLevel` | Information about the device's battery level. | 10.0.29 | 2.0.28 |
 | `batterySession` | Information about the battery session of the device. If the device is charging, the telemetry logs it as such. Otherwise, it logs a GUID that represents an on-battery session. Every time that the device charges, the GUID for the on-battery session is changed. | 10.0.29 | 2.0.28 |
 | `batteryState` | Information about the charging status of the device. For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). | 10.0.29 | 2.0.28 |
 | `deviceId` | The GUID of the device that performs the call. | 10.0.29 | 2.0.28 |
+| `deviceBrand` | The brand of the device that performs the call. | 10.0.33 | 2.0.43 |
+| `deviceModel` | The model of the device that performs the call. | 10.0.33 | 2.0.43 |
+| `devicePlatform` | The computing platform of the device that performs the call. | 10.0.33 | 2.0.43 |
 | `eventid` | A constant that identifies the telemetry that's emitted by the Warehouse Management mobile app. This information helps you distinguish mobile app data from other warehousing telemetry events that are emitted from Supply Chain Management. | 10.0.29 | 2.0.33 |
 | `isEnergySaverTurnedOn` | Information about the energy saver status of the device. | 10.0.29 | 2.0.28 |
 | `powerSource` | Information about the power source of the device. For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). | 10.0.29 | 2.0.28 |
@@ -139,6 +149,15 @@ The following table lists the telemetry data that's logged as custom dimensions 
 | `roundTripLatencyDurationInMilliseconds` | Information about the total time of a server call, from the request to the response. | 10.0.29 | 2.0.28 |
 | `serverAadTenantId` | The Azure AD tenant ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
 | `serverEnvironmentId` | The environment ID of the connected Supply Chain Management environment. | 10.0.29 | 2.0.33 |
+| `lastKnownWMSLocation` | The last WMS location captured in the mobile app flows. | 10.0.29 | 2.1.14 |
+| `networkConnectionProfiles` | Information about the type of connection the device is using. | 10.0.29 | 2.1.14 |
+| `networkAccess` | Information about the state of the internet connection. | 10.0.29 | 2.1.14 |
+| `wifiSignalStrength` | Information about Wi-Fi signal strength, if applied. | 10.0.29 | 2.1.14 |
+| `requestNextPageTimeInMilliseconds` | Information about the total time taken to request the next page from the server. | 10.0.29 | 2.1.14 |
+| `serverInvokeErrorMessage` | The exception message when a generic exception is thrown. | 10.0.29 | 2.1.14 |
+| `serviceInvokeExceptionCategory` | Information about the type of an exception thrown by the server. | 10.0.29 | 2.1.14 |
+| `numberOfRetries` | The number of times the mobile app tried to request the next page after an exception occurred. | 10.0.29 | 2.1.14 |
+| `connectionType` | Information about the type of authentication connection used. | 10.0.29 | 2.1.14 |
 
 ## View telemetry data in Application Insights
 

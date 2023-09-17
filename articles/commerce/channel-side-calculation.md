@@ -4,7 +4,7 @@ description: This article describes how to configure channel-side inventory calc
 author: hhainesms
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
@@ -14,7 +14,6 @@ ms.search.validFrom: 2020-02-11
 # Configure channel-side inventory calculation
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to configure channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
 

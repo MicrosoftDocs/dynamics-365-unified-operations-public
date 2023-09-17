@@ -17,7 +17,6 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 21881
 ms.assetid: 26793616-9b3f-41f5-8500-6983769c51d8
 ms.search.region: Global
 # ms.search.industry: 
@@ -139,7 +138,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <tr>
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td>Currently, you must enter the payment format specifications manually. In a future update, you will be able to select payment format specifications in a list. The following payment specifications are currently supported per payment format.
-<blockquote>[!NOTE] Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.</blockquote>
+<strong>NOTE: </strong>Values for these supported payment specifications are used as payment specification parameters on the <strong>Payment specification</strong> page for a selected method of payment.
 <p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
@@ -538,7 +537,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>[Russia] Localization of Process Industries solution</td>
-<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional coexistence of Process Industries features and Russian country context (no issues when both Process Industries and Russian country context are enabled).</td>
+<td>Basic localization in two areas: correspondence of accounts for all new general ledger postings, and functional coexistence of Process Industries features and Russian country/region context (no issues when both Process Industries and Russian country/region context are enabled).</td>
 <td>Implemented in version 10.0.1</td>
 </tr>
 <tr>

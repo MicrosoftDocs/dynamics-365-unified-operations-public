@@ -3,7 +3,7 @@ title: Import customer payment with JBA file format
 description: This article explains how to import EFT files with a JBA format.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

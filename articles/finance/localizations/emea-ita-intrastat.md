@@ -18,7 +18,7 @@ ms.search.validFrom:
 
 ## Overview
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. Italian Intrastat contains information about the trade of goods and services for monthly or quarterly reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. Italian Intrastat contains information about the trade of goods and services for monthly or quarterly reporting.
 
 The following table shows the fields that appear on the Italian Intrastat declaration.
 
@@ -652,7 +652,7 @@ Follow these steps to set up Italian-specific options so that you can work with 
 
     - **Party country/region**: Select the country/region code.
     - **Intrastat code**: Enter the two-digit Intrastat code.
-    - **Currency**: Specify the national currency of the country or region. If the vendor is based in an EU country that doesn't use the euro, invoice amounts will be reported in both the vendor's currency and euros. For example, if the vendor is based in Denmark, the reported amounts for the import declaration will be in both Danish kroner (DKK) and euros (EUR).
+    - **Currency**: Specify the national currency of the country or region. If the vendor is based in an EU country/region that doesn't use the euro, invoice amounts will be reported in both the vendor's currency and euros. For example, if the vendor is based in Denmark, the reported amounts for the import declaration will be in both Danish kroner (DKK) and euros (EUR).
     - **Country/region type**: Select the country's or region's type in relation to your organization. For the Intrastat journal, only countries or regions of the **EU** and **Special domestic** type will be transferred.
 
     > [!NOTE]
@@ -697,7 +697,7 @@ When you work with the vendor invoice journal, it's crucial that you consider so
 
 ## Intrastat journal
 
-You use the Intrastat journal to manage information about trade among EU countries.
+You use the Intrastat journal to manage information about trade among EU countries/regions.
 
 To open the Intrastat journal, go to **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **Intrastat**. The following information is shown for each transaction:
 

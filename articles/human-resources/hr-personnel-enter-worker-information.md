@@ -5,7 +5,7 @@ title: Enter worker information
 description: After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired. 
 author: twheeloc
 ms.date: 10/28/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

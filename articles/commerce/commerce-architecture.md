@@ -93,15 +93,15 @@ The Dynamics 365 Commerce application, which is often referred to as the Commerc
 
 #### Dynamics 365 Supply Chain Management
 
-[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to help you manage your products throughout the supply chain lifecycle, from production, to inventory and warehouse, to transportation and distribution. For more information, see [Help resources for Supply Chain Management](../supply-chain/index.md).
+[Dynamics 365 Supply Chain Management](https://dynamics.microsoft.com/supply-chain-management/overview/) provides functionality to help you manage your products throughout the supply chain lifecycle, from production, to inventory and warehouse, to transportation and distribution. For more information, see [Supply Chain Management documentation](../supply-chain/index.yml).
 
 #### Dynamics 365 Finance
 
-[Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) provides functionality to automatically manage your global finances. For customers of the Dynamics 365 Commerce application, Dynamics 365 Finance offers an integrated experience for managing stores and e-commerce financial statements alongside the rest of their operations. For more information, see [Dynamics 365 Finance help resources](../finance/index.md).
+[Dynamics 365 Finance](https://dynamics.microsoft.com/finance/overview/) provides functionality to automatically manage your global finances. For customers of the Dynamics 365 Commerce application, Dynamics 365 Finance offers an integrated experience for managing stores and e-commerce financial statements alongside the rest of their operations. For more information, see [Dynamics 365 Finance help resources](../finance/index.yml).
 
 #### Dynamics 365 Human Resources
 
-[Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/) lets businesses get a comprehensive view of their employee resources and manage them in a unified way. It provides integrated experiences from the hiring process through workforce planning and employee time management. For more information, see [Dynamics 365 Human Resources help resources](./index.md).
+[Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/) lets businesses get a comprehensive view of their employee resources and manage them in a unified way. It provides integrated experiences from the hiring process through workforce planning and employee time management. For more information, see [Dynamics 365 Human Resources help resources](./welcome.md).
 
 ### Commerce Scale Unit
 
@@ -139,7 +139,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-[Dynamics 365 Customer Insights](/ai/customer-insights/overview) helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](./clienteling-overview.md#integration-with-dynamics-365-customer-insights).
+Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](./clienteling-overview.md#integration-with-dynamics-365-customer-insights).
 
 #### Azure cognitive search
 

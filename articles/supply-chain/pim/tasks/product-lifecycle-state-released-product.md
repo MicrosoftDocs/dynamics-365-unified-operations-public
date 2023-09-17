@@ -5,7 +5,7 @@ title: Assign a product lifecycle state to a released product
 description: This procedure shows how to assign a product lifecycle state to a released product. 
 author: t-benebo
 ms.date: 12/05/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

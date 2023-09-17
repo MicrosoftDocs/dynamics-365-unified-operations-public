@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to configure the various properties of a workflow.
 

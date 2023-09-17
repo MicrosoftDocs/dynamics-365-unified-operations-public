@@ -15,9 +15,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the action search functionality. Action search will help you find and run actions on a page.
 

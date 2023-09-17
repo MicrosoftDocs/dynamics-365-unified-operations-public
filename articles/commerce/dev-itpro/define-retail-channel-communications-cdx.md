@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 27021
 ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
 ms.search.industry: Retail
 ---

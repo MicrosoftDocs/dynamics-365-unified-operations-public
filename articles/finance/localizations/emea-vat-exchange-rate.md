@@ -12,7 +12,8 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 272703,  ""intro-internal
+ms.custom: 272703
+ms.collection: get-started
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 ---

@@ -42,7 +42,6 @@ This article includes information and links to resources that can help you set u
 -   [GB/T 24589-2010 export](apac-chn-gbt-24589-2010.md)
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: China report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/China.html)
 - [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

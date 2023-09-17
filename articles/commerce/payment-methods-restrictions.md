@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.industry: Retail
 ms.search.form: RetailTenderTypeTable

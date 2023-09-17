@@ -15,9 +15,8 @@ ms.search.form: OfficeAppParameters, SysEmailParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 72263
 ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ms.search.region: Global
 # ms.search.industry: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 
 This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.

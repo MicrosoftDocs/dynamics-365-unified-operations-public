@@ -341,7 +341,7 @@ Information about prerequisites is used to automatically recognize and import to
 
 **New built-in functions** – We introduced several new functions that can be used in ER expressions. This enables customers to configure required business logic: support necessary data types transformation to align incoming information with structure of application data, generate QR codes to present them in generated documents as images, etc.
 
-**Electronic reporting features as configurations** – We continued moving electronic reporting features of the application to ER framework, to simplify further customization of these features by our partners and customers and allow for easy upgrade in case of regulatory changes. More than 170 features for 34 released countries have been ported to ER configurations, including all payment formats to handle outgoing and incoming messages and all formats for electronic invoices.
+**Electronic reporting features as configurations** – We continued moving electronic reporting features of the application to ER framework, to simplify further customization of these features by our partners and customers and allow for easy upgrade in case of regulatory changes. More than 170 features for 34 released countries/regions have been ported to ER configurations, including all payment formats to handle outgoing and incoming messages and all formats for electronic invoices.
 
 ### Global coverage – Languages
 

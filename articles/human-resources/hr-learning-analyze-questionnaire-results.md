@@ -5,7 +5,7 @@ title: Analyzing questionnaire results
 description: Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. 
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

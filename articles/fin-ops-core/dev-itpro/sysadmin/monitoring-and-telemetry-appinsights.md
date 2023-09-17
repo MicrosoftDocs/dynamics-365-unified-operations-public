@@ -4,7 +4,7 @@
 title: Monitoring and telemetry using Application Insights
 description: This article explains how to use, set up, and configure the Application Insights integration for finance and operations apps.
 author: LaneSwenka
-ms.date: 10/19/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -93,7 +93,7 @@ All the telemetry and events that are entered in Application Insights have the f
     > [!NOTE] 
     > This field is enabled only if **User sessions** telemetry is configured.
 
-- **client\_IP** – Application Insights always sets this field to **0.0.0.0** for compliance with the General Data Protection Regulation (GDPR). The Internet Protocol (IP) address that's provided is used to set the **client\_City**, **client\_StateOrProvince**, and **client\_CountryOrRegion** fields.
+- **client\_IP** – Application Insights always sets this field to **0.0.0.0** for compliance with privacy laws and regulations. The Internet Protocol (IP) address that's provided is used to set the **client\_City**, **client\_StateOrProvince**, and **client\_CountryOrRegion** fields.
 - **message** – This field is used to capture the error message that's shown to the user, in the user's local language, and the X++ stack trace where the error for failure-type telemetry originated.
 - **Custom properties – LegalEntity** – This field is set to the legal entity code where the telemetry originated.
 - **Custom properties – BatchJobId** – This field is set to the record ID of the batch job that resulted in the telemetry.
@@ -121,5 +121,9 @@ After the feature is enabled, you must configure the parameters.
 If the private preview software is installed, it must be removed from your environment through Lifecycle Services. You can bundle this process into your next regularly scheduled package deployment by following the steps in [Uninstall a package](/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
 
 After the private preview is removed, you'll see the **Monitoring and telemetry** feature in the **Feature management** workspace. None of setup or configurations from the private preview are changed when you enable this feature, because the schema names are identical in the public preview. Therefore, no data is lost when you remove the private preview version.
+
+## Telemetry data usage
+
+For more information about the daily cap setting for Application insights, see [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
 [!include [banner](../includes/banner.md)]

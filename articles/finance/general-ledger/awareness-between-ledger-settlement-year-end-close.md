@@ -160,7 +160,7 @@ When transaction details are kept, the original detailed transactions aren't aff
 
 Some fields from the original transactions must change in the opening balance detailed transactions. The date of opening balance transactions is always the first day of the next fiscal year. The journal number must change, and the voucher number changes to the value that was entered in the year-end close dialog box.
 
-Information from the original transactions can be found on the **Ledger settlement** page. Each detailed opening balance transaction shows the **Original transaction date** column in the grid. This column can help you match transactions in the new fiscal year. You can select **View original voucher** to drill back to the full original voucher.
+Information from the original transactions can be found on the **Ledger settlement** page. Each detailed opening balance transaction shows the **Original transaction date** column in the grid. This column can help you match transactions in the new fiscal year. In Microsoft Dynamics 365 Finance version 10.0.33, you can view the **Original document** and **Original document date** columns. You can select **View original voucher** to drill back to the full original voucher.
 
 ## <a name="settle-transactions"></a>Settle transactions
 To settle ledger transactions, follow these steps.

@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-Section 194Q of the Income Tax Act was recently introduced vide the Finance Act, 2021. Section 194Q states, “It is provided for TDS by the person responsible for paying any sum to any resident for purchase of goods. The rate of TDS is kept very low at 0.1%. The tax is only required to be deducted by that person (i.e. ―buyer) whose total sales, gross receipts, or turnover from the business carried on by him exceed ten crore rupees during the financial year immediately preceding the financial year in which the purchase of goods is carried out. Tax is required to be deducted by such person if the purchase of goods by him from the seller is of the value or aggregate of such value exceeding fifty lakh rupees in the previous year.”
+Section 194Q of the Income Tax Act was recently introduced vide the Finance Act, 2021. Section 194Q states, “It is provided for TDS by the person responsible for paying any sum to any resident for purchase of goods. The rate of TDS is kept very low at 0.1%. The tax is only required to be deducted by that person (i.e. ―buyer) whose total sales, gross receipts, or turnover from the business carried on by them exceed ten crore rupees during the financial year immediately preceding the financial year in which the purchase of goods is carried out. Tax is required to be deducted by such person if the purchase of goods by them from the seller is of the value or aggregate of such value exceeding fifty lakh rupees in the previous year.”
 
 The proposed date of applicability for section 194Q is July 1, 2021.
 

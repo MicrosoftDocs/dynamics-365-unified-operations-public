@@ -15,9 +15,8 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 79223
 ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 ms.search.region: Global
 # ms.search.industry: 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Learn about creating Open in Office experiences for Excel and Word.
 

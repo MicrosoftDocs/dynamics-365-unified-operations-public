@@ -24,6 +24,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments

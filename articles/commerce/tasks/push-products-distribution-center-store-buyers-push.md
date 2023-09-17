@@ -5,7 +5,7 @@ title: Push products from distribution center to store using buyer's push
 description: This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. 
 author: BrianShook
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

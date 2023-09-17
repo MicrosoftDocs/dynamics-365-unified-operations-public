@@ -26,12 +26,12 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article briefly describes some country-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries affect the invoicing process. This article also provides information about how customer and vendor invoices are processed for these countries. 
+This article briefly describes some country/region-specific scenarios, such as intra-community value-added tax (VAT) and deferred tax. Legal requirements for some European countries/regions affect the invoicing process. This article also provides information about how customer and vendor invoices are processed for these countries/regions. 
 <table>
 <thead>
 <tr>
 <th>Scenario</th>
-<th>Countries</th>
+<th>Countries/regions</th>
 <th>Description of the functionality changes</th>
 </tr>
 </thead>
@@ -40,7 +40,7 @@ This article briefly describes some country-specific scenarios, such as intra-co
 <td>Accounts receivable and Accounts payable dates for VAT</td>
 <td>Czech Republic, Poland</td>
 <td>
-<p>When goods are purchased from European Union (EU) countries, there is an obligation of self-assessment of VAT:</p>
+<p>When goods are purchased from European Union (EU) countries/regions, there is an obligation of self-assessment of VAT:</p>
 <ul>
 <li>The output VAT must be paid in a VAT period where the invoice was issued (document date).</li>
 <li>The input VAT can’t be deducted before the document receipt (VAT register date).</li>
@@ -60,7 +60,7 @@ This article briefly describes some country-specific scenarios, such as intra-co
 </tr>
 <tr>
 <td>Modify a sales document date.</td>
-<td>All Eastern European countries</td>
+<td>All Eastern European countries/regions</td>
 <td><p>You can modify the <strong>Document date</strong> field on a project invoice. This date appears on the printed invoice.</p>
 <p>There is also a <strong>Document date</strong> field on the <strong>Posting invoice</strong> and <strong>Free text invoice</strong> pages. After you post an invoice, the document date appears on the invoice header.</p>
 </td>
@@ -70,9 +70,9 @@ This article briefly describes some country-specific scenarios, such as intra-co
 <td>Poland, Hungary, Czech Republic, Italy</td>
 <td>
 <p>Legislation provides different rules for selecting valid exchange rates for business transactions. In the <strong>Exchange rate date</strong> field on the <strong>Accounts receivable parameters</strong> and <strong>Accounts payable parameters</strong> pages, you can select the date that should be used for amounts in the accounting currency calculation on purchase and sales documents. During data entry, the system retrieves the exchange rate for the transaction, based on this parameter.</p>
-<blockquote>[!NOTE]<br>For Italy, this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters, a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   </blockquote>
-<blockquote><br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.</blockquote>
-  <blockquote><br>For Poland, in the <strong>Accounts receivable</strong> module, an additional <strong>Automatic date determination</strong> value of this parameter is available. When selected, the system automatically selects the earliest date from the invoice posting date, sales date, and payment dates.</blockquote>
+<strong>NOTE:</strong><br>For Italy, this functionality is only applicable in the Accounts payable module. In the Accounts payable parameters, a user can select <strong>Posting date</strong> or <strong>Document date</strong> in the <strong>Exchange rate date</strong> field.   
+<br>When you set the <strong>Exchange rate date</strong> field to <strong>Document date (for EU trade only)</strong>, the system uses the sales tax group. For the sales tax group, there is a <strong>EU trade</strong> parameter on the <strong>General</strong> tab. If the <strong>EU trade</strong> option is set to <strong>Yes</strong> for the sales tax group, and if this sales tax group exists on the header of the document, the system retrieves the exchange rate based on the document date. If the <strong>EU trade</strong> option is set to <strong>No</strong> for this sales tax group, the system retrieves the exchange rate based on the posting date of the document.
+  <br>For Poland, in the <strong>Accounts receivable</strong> module, an additional <strong>Automatic date determination</strong> value of this parameter is available. When selected, the system automatically selects the earliest date from the invoice posting date, sales date, and payment dates.
 </td>
 </tr>
 <tr>

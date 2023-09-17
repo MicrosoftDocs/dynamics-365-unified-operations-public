@@ -5,7 +5,7 @@ title: Generate German audit file
 description: This procedure walks you through generating a German audit file. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

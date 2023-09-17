@@ -5,7 +5,7 @@ title: Create and assign a cost allocation policy to a cost control unit
 description: Use this procedure to create and assign a cost allocation policy and the corresponding rules to a cost control unit. 
 author: twheeloc
 ms.date: 06/28/2017
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

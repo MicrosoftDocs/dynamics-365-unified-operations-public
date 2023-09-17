@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 27831
 ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 ---
 

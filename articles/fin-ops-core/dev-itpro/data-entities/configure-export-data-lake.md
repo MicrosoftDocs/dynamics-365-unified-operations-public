@@ -17,7 +17,6 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 96283
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: Platform Update 33
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** add-in is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, and Japan regions. If your finance and operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+> The **Export to Data Lake** add-in is generally available in the United States, Canada, United Kingdom (UK South), Europe (West Europe, North Europe), South East Asia, East Asia, Australia, India, and Japan regions. If your finance and operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [preview Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
 >
 > The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. However, you can prototype the feature in a Tier-1 (developer) environment by using [GitHub tools](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Analytics/AzureDataFactoryARMTemplates/SQLToADLSFullExport/ReadmeV2.md). These tools let you export data from your Tier-1 or sandbox environment into a data lake in the same format that is exported by the feature. 
 
@@ -186,7 +185,8 @@ You will notice the secret created in the list of secrets.
 2. In **Settings**, select **Access configuration**.
 3. Then **go to access policies** and **create** to create a new policy.
 4. In the **Secret permissions** fields, select **Get** and **List**.
-5. In the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
+5. In the **Key permissions** fields, select **Get**.
+6. In the **Select principal** field, locate and select the application, **Microsoft Dynamics ERP Microservices**, and then click **Select**. 
 
     > [!NOTE]
     > If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
@@ -241,7 +241,7 @@ In some cases, add-in installation might show a status of **Installation failed*
 | **AppidUserError**: Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found. | The application ID (**app-id**) that is provided in the key vault can't be found in Azure AD. Validate the application ID by following the steps in [Configure export to Azure Data Lake - Create Application](#createapplication). You might have to contact the system administrator or the administrator who configured Azure resources. |
 | **AppSecretUserError**: Failed to access data lake with given Application ID and Application secret. | The application ID (**app-id**) and application secret (**app-secret**) that are provided can't be used to access the storage account. Validate the application ID and application secret by following the steps in [Configure export to Azure Data Lake - Create Application](#createapplication). Next, verify that the application has the required access to the storage account. For more information, see [Configure export to Azure Data Lake - Grant access](#grantaccess). You might have to contact the system administrator or the administrator who configured Azure resources. |
 | **StorageNameUserError**: Failed to access the storage account using the storage name provided in the key vault. | The storage account that is provided in the key vault can't be found, or it isn't valid. Verify that the correct storage account name is entered in the key vault by following the steps in [Configure export to Azure Data Lake - Add secrets](#addsecrets). Verify that you've provided the correct secret name for the storage account by following the steps in [Configure export to Azure Data Lake Add secrets](#addsecrets). |
-| **KeyVaultUserError**: Failed to access the key vault or the key vault secrets. | The service can't access the key vault or the secrets in it. Verify that your Azure subscription hasn't expired. Verify that you've created the service principal by following the steps in [Configure export to Azure Data Lake - Create service principal](#createServicePrincipal). Verify that the key vault contains all the required secrets by following the steps in [Configure export to Azure Data Lake - Add secrets](#addsecrets). Verify that you've provided the correct key vault URI in the configuration steps in [Configure export to Azure Data Lake - Install add-in](#installaddin). |
+| **KeyVaultUserError**: Failed to access the key vault or the key vault secrets. | The service can't access the key vault or the secrets in it. Verify that your Azure subscription hasn't expired. Verify that you've created the service principal by following the steps in [Configure export to Azure Data Lake - Create service principal](#createServicePrincipal). Verify that the key vault contains all the required secrets by following the steps in [Configure export to Azure Data Lake - Add secrets](#addsecrets). Verify that you've provided the correct key vault URI in the configuration steps in [Configure export to Azure Data Lake - Install add-in](#installaddin). Also ensure you have granted Get Key permissions as per [Authorize the application to read secrets in the key vault](#authorize).
 | **TenantIdUserError**: Failed to locate the Azure Tenant ID for the environment. | Verify that you've provided the correct Azure tenant ID by following the steps in [Configure export to Azure Data Lake - Install add-in](#installaddin). |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

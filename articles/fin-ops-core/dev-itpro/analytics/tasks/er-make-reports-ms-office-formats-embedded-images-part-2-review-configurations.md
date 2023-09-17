@@ -3,7 +3,7 @@ title: Review configurations to generate reports in Office format that have embe
 description: This article describes how to design reporting configurations to generate electronic documents that contain embedded images. (Part 1 - Set up parameters).
 author: kfend
 ms.date: 06/13/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

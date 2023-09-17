@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Commerce 10.0.28 (July 2022)
+title: What's new or changed in Dynamics 365 Commerce 10.0.28 (August 2022)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.28. 
 author: josaw1
 ms.date: 01/10/2023
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.28
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.28 (July 2022)
+# What's new or changed in Dynamics 365 Commerce 10.0.28 (August 2022)
 
 [!include [banner](../includes/banner.md)]
 

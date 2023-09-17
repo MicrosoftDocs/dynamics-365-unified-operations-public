@@ -108,7 +108,7 @@ Before sales quotations are synchronized, it's important that you update the fol
 
 #### QuoteHeader
 
-- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. In the value map, you can define a default value that is used if the value is left blank. Just leave the left side blank, and set the right side to the desired country or region. In this way, you don't have to type the country or region for national orders.
+- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. In the value map, you can define a default value that is used if the value is left blank. Just leave the left side blank, and set the right side to the desired country or region. In this way, you don't have to type the country or region for national/regional orders.
 
     The template value is a value map where several countries or regions are mapped, and where a blank value equals a value of **US**.
 

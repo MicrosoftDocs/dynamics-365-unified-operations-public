@@ -5,7 +5,7 @@ title: Update vendor invoice declarations and generate the report
 description: This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
+This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. The demo data company used to create this procedure is DEMF with the country/region of legal entity primary address updated to Iceland.
 
 
 ## Post a vendor invoice

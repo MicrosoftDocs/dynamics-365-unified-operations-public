@@ -7,12 +7,11 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.form: SysHelpSetup
 ---
@@ -22,7 +21,7 @@ ms.search.form: SysHelpSetup
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 

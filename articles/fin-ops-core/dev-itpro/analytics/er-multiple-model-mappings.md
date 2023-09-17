@@ -3,7 +3,7 @@ title: Manage several derived mappings for a single model root
 description: This article explains how to manage several derived mappings that were configured for a single model root.
 author: kfend
 ms.date: 01/04/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
@@ -173,7 +173,7 @@ The **InvoiceProject Copy** model mapping of the **Project invoice model mapping
 ## See also
 
 - [Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
-- [Configure country context dependent ER model mappings](er-country-dependent-model-mapping.md)
+- [Configure country/region context dependent ER model mappings](er-country-dependent-model-mapping.md)
 - [Electronic reporting framework API changes](er-apis-app10-0-11.md)
 
 

@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
 <!-- KFM: Preview until further notice -->
 
 ## Video instructions

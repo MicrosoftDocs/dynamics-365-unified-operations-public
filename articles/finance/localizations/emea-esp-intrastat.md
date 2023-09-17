@@ -14,7 +14,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries. The Spanish Intrastat declaration contains information about the trade of goods that you can use for reporting.
+The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/region. The Spanish Intrastat declaration contains information about the trade of goods that you can use for reporting.
 
 The following fields are included on the Spanish Intrastat declaration.
 

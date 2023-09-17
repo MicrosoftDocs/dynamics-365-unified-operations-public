@@ -13,7 +13,6 @@ ms.author: josaw
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.18
 ms.search.industry: Retail
-manager: annbe
 ---
 
 # Postponed registration of NFC-e documents issued in offline contingency mode

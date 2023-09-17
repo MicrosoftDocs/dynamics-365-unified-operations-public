@@ -2,7 +2,7 @@
 title: Personal information requests for Estonia
 description: This article provides information about personal information requests for Estonia.
 author: AdamTrukawka
-ms.date: 03/26/2018
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ All companies must gather data about employees, customers, and vendors, and also
 
 ## Additional resources
 
-- [Resources for responding to a GDPR data request](../../fin-ops-core/dev-itpro/gdpr/gdpr-home-page.md)
+- [Resources for responding to a personal data request](../../fin-ops-core/dev-itpro/privacy/privacy-home-page.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

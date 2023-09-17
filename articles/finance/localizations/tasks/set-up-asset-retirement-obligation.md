@@ -3,7 +3,7 @@ title: Set up asset retirement obligation documents and enter ARO amount on a fi
 description: For Japan, an asset retirement obligation (ARO) document identifies one type of asset retirement obligation.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

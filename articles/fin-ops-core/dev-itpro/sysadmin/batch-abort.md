@@ -17,7 +17,6 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
-ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 

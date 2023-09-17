@@ -22,7 +22,9 @@ ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: osfaixat
 ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Platform update 8 
+ms.dyn365.ops.version: Platform update 8
+search.app:
+  - financeandoperationsonprem-docs 
 ---
 
 # Configure proxies for on-premises environments

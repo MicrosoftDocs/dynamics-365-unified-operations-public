@@ -5,7 +5,7 @@ title: Journalize posted journal entries
 description: This procedure shows how to journalize posted journal entries. 
 author: aprilolson
 ms.date: 03/09/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

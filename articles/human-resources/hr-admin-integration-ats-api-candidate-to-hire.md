@@ -100,7 +100,7 @@ When you create an internal candidate record (a candidate for the position who a
 | **Last Name**<br>mshr_lastname<br>String | Read/write<br>Optional | Candidate last name. |
 | **Gender**<br>mshr_gender<br>mshr_hcmpersongender option set | Read/write<br>Optional | The candidate’s gender. |
 | **Birth Date**<br>mshr_birthdate<br>Datetime | Read/write<br>Optional | The candidate’s birth date. |
-| **Citizenship Country Code**<br>mshr_citizenshipcountrycode<br>String | Read/write<br>Optional | Specifies the country where the candidate has citizenship. Valid country codes are in mshr_logisticaddresscountryregionentity. |
+| **Citizenship Country Code**<br>mshr_citizenshipcountrycode<br>String | Read/write<br>Optional | Specifies the country/region where the candidate has citizenship. Valid country codes are in mshr_logisticaddresscountryregionentity. |
 | **Veteran Status ID**<br>mshr_veteranstatusid<br>String | Read/write<br>Optional | Indicates the veteran status of the candidate. |
 | **Veteran Status ID Value**<br>_mshr_fk_veteranstatus_id_value<br>GUID | Read-only<br>Optional<br>Foreign key: mshr_hcmveteranstatusentityid of mshr_hcmveteranstatusentity | System-generated unique identifier for the veteran status entity record. |
 | **Military Service Start Date**<br>mshr_militaryservicestartdate<br>Datetime | Read/write<br>Optional | The start date of the candidate’s military service. |

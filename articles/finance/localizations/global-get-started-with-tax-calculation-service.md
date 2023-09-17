@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.form: TaxIntegrationTaxServiceParameters
 ---
 

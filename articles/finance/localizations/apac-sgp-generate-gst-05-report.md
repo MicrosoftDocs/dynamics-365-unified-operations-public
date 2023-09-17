@@ -12,7 +12,6 @@ ms.search.region: Singapore
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 12831
 ms.assetid: 90ea6084-920a-4174-8b3e-9b7b96aed0b4
 ms.search.form: TaxAuthority
 ---

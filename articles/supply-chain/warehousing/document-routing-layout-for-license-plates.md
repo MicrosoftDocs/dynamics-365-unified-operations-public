@@ -28,11 +28,11 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create layouts for license plate, container, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
+This article describes how to create layouts for license plate, container, custom, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
 
 Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
-The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](print-license-plate-labels-using-label-layouts.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
+The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](print-license-plate-labels-using-label-layouts.md), [container labels](print-container-labels.md), [custom labels](custom-label-layouts-and-printing.md), and [wave labels](configure-wave-label-printing.md).
 
 You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
@@ -52,9 +52,9 @@ You can print highly complex labels, provided that the printing device can inter
 
 As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value. Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
-To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
+To see the values that will be printed, go to **Warehouse management \> Enquiries and reports \> License plate labels**.
 
-## Turn on this feature for your system
+## Turn this feature on or off
 
 If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
@@ -144,6 +144,7 @@ For more information about how to set up and print labels, see the following art
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)
+- [Custom label layouts and printing](custom-label-layouts-and-printing.md)
 - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

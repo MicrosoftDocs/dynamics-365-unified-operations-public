@@ -18,14 +18,14 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peterfriis
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Set up on-premises projects in Lifecycle Services (LCS)
 

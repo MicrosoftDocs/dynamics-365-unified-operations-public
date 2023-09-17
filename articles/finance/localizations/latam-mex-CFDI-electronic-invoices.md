@@ -12,7 +12,6 @@ ms.search.region: Mexico
 ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 29791
 ms.assetid: b6861a2c-c132-48a2-97b5-9cb1020e0512
 ms.search.form: EInvoiceCFDIJour_MX, EInvoiceCFDIPACTable_MX, EInvoiceParameters_MX, SalesTable, SalesTablePostings
 ---

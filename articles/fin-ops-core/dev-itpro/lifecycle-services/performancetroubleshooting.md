@@ -4,7 +4,7 @@
 title: Performance troubleshooting using tools in Lifecycle Services (LCS)
 description: This article describes tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues.
 author: laneswenka
-ms.date: 10/06/2021
+ms.date: 03/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
@@ -49,10 +49,6 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
     > To help guarantee that the query results are returned instantaneously, most of the queries are run synchronously. However, if there is an ongoing performance issue, synchronous query execution might cause a time-out error. To address this issue, a new **Use Fast Query** option has been added. By default, this option is turned on for most queries. If you receive a time-out error after you run a query, turn the **Use Fast Query** option off, and then try to run the query again. The query will now run asynchronously.
 
 - **Actions** – Shows a list of predefined actions that should be taken to mitigate issues in the sandbox and production environments. Examples of actions include terminating a blocking statement. Any time that an action is performed, the environment history for an environment will show a record for the action performed. A history record is created only for actions and not when queries are executed. 
-
-- **Performance Metrics** – Shows the most expensive queries that were run in the system during the selected period, based on logical I/O, execution count, duration, CPU time, and wait count. This data is queried from the SQL query store. The data is retained for 30 days, and the tool runs its data collection every day at a random time between midnight and 4 AM in the time zone in which your environment is hosted. The last run date and time is visible from your environment details page in Lifecycle Services, under the **Monitoring** tab in the **Last run** field. To use the tool, select a period during the last 30 days. When the query results appear, select the bar in the duration chart to highlight where the query falls based on other metrics. On the **Statement** tab, you can either view the query or download the query execution plan. This feature is not available in self-service environments.
-
-- **Index Analysis** – Shows aggregated index and table information, based on user scans, user seeks, user updates, and row count. Like performance metrics, this tool shows the trend for the selected index along with additional table metrics. This feature is not available in self-service environments.
 
 - **Queries** tab and **Actions** tab – For details about the queries that are shown on the **Queries** and **Actions** tabs, see the [Query cookbook](querycookbook.md).
 

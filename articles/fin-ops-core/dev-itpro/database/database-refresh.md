@@ -44,10 +44,10 @@ With the goal of providing Data Application Lifecycle Management (also referred 
 1. Visit your target sandbox on the **Environment Details** page, and click the **Maintain** \> **Move database** menu option.
 2. Select the **Refresh database** option and choose your source environment.
 3. Note the warnings and review the list of data elements that aren't copied from the source environment.
-4. The refresh operation will begin immediately.
+4. The refresh operation begins immediately.
 
 ### Refresh operation failed
-If there is a failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization, that is present in the target sandbox, cannot complete a database synchronization with the newly refreshed data.
+If there is a failure, the option to perform a rollback is available.  By selecting the **Rollback** option after the operation has initially failed, your target sandbox environment is restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization that is present in the target sandbox can't complete a database synchronization with the newly refreshed data.
 
 To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
 
@@ -59,7 +59,8 @@ The information in this section lists certain elements of the database that aren
 * Email addresses in the LogisticsElectronicAddress table.
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-* All users except the admin will be set to **Disabled** status.
+* All users except the admin are set to **Disabled** status.
+* Dimension log and cache status tables including DIMENSIONHASHMESSAGELOG, DIMENSIONDATAINTEGRITYLOG, DIMENSIONVALUERENAMEAUDIT, DIMENSIONVALUEDELETEAUDIT, DIMENSIONATTRIBUTEVALUECOMBINATIONSTATUS, DIMENSIONATTRIBUTEVALUEGROUPSTATUS, DIMENSIONDATAENTITYSFKCACHE, DIMENSIONREFERENCES. 
 
 #### When refreshing from sandbox environment to production environment
 This is also referred to as [Golden configuration promotion](dbmovement-scenario-goldenconfig.md).
@@ -71,18 +72,18 @@ This is also referred to as [Golden configuration promotion](dbmovement-scenario
 * All files stored in Azure blob storage. This includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
 * All batch jobs are set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
-* All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
-* [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
+* All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
+* [Maintenance mode](../sysadmin/maintenance-mode.md) settings are disabled even if it was enabled in source.
 * Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
-* Any [change-tracking on entities](../data-entities/entity-change-track.md) will be disabled.
+* Any [change-tracking on entities](../data-entities/entity-change-track.md) are disabled.
 * [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 
 Some of these elements aren't copied because they're environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
 ### Environment administrator
-The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this will be, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment will be that of the Environment Administrator.
+The System Administrator account in the target environment (UserId of 'Admin') is reset to the value found in the web.config file on the target.  This should be the same value as that of the Administrator from Lifecycle Services.  To preview which account this is, visit your target sandbox **Environment Details** page in LCS.  The value of the **Environment Administrator** field that was selected when the environment was first deployed is updated to be the System Administrator in the transactional database. This also means that the tenant of the environment is that of the Environment Administrator.
 
-If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
+If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account to be used, you need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
 
 An environment can't be refreshed from one tenant to another. This restriction applies even to .onmicrosoft.com tenants. You should make sure that the admin accounts in the source and target environments are from the same tenant domain.
 
@@ -90,13 +91,13 @@ An environment can't be refreshed from one tenant to another. This restriction a
 Here is the list of requirements and conditions of operation for a database refresh:
 
 - A refresh performs a delete operation on the original target database.
-- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
-- The refresh will affect only the application and Financial Reporting databases.
--  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
-- All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
+- The target environment is available until the database copy has reached the target server. After that point, the environment is offline until the refresh process is completed.
+- The refresh affects only the application and Financial Reporting databases.
+-  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and remains in their current state. 
+- All users except the Admin user and other internal service user accounts are unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
-- All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
-- Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
+- All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This ensures there are no orphaned files in Azure storage from either system. This is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
+- Any user with a role of Project owner or Environment manager in LCS has access to the SQL and machine credentials for all nonproduction environments.
 - The databases must be hosted in the same Azure geographic region, unless the databases are Spartan-managed.  Databases are Spartan-managed when you see 'spartan' as part of the fully qualified SQL server address.
 - The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
@@ -132,11 +133,11 @@ For customers that use version 8.0 or earlier:
 3. Verify that the error has been resolved.
 
 ### Incompatible application versions between source and target environments
-The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment arn't the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.
+The database refresh process (self-service or via service request) cannot be completed if the Application release of your source and target environment aren't the same. This is because the data upgrade process is not executed by database movement operations such as refresh, and data loss can occur.
 
 When upgrading your sandbox UAT environment to a newer Application version (for example, 7.3 to 8.1), be sure to perform the database refresh action prior to starting the upgrade. After your sandbox is upgraded to the newer version, you cannot restore an older production environment database in to the sandbox UAT environment.
 
-Conversely, if your production environment is newer than your target sandbox, you will need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
+Conversely, if your production environment is newer than your target sandbox, you need to either upgrade the target sandbox prior to the refresh or simply deallocate, delete, and redeploy prior to performing the refresh.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

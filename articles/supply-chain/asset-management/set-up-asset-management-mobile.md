@@ -27,7 +27,8 @@ ms.dyn365.ops.version: 10.0.17
 
 # Set up the Asset management mobile workspace
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations (Dynamics 365) mobile app to run an **Asset management** mobile workspace that workers can use to perform asset management tasks.
 

@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ---
 

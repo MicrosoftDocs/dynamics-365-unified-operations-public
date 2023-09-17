@@ -4,7 +4,7 @@
 title: Accounting distributions and journal entries for vendor invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: sunfzam
-ms.date: 02/18/2022
+ms.date: 08/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 # ms.search.industry: 
@@ -67,7 +66,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>Stocked product</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line.</li>
-<li>The <strong>Main account</strong> field when Purchase expenditure for product is selected on the <strong>Posting</strong> page.</li>
+<li>The <strong>Main account</strong> field when Purchase expenditure for product is selected on the <strong>Posting</strong> page. <strong>Cost management > Ledger integration policies setup > Posting > Purchase order</strong>.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>
@@ -78,7 +77,7 @@ When you enter a vendor invoice, each amount will be distributed as follows.
 <td>A procurement category or a product that is not stocked</td>
 <td><ol>
 <li>The accounting distribution for the purchase order line, if the vendor invoice line references a purchase order line.</li>
-<li>The <strong>Main account</strong> field when Purchase expenditure for expense is selected on the <strong>Posting</strong> page.</li>
+<li>The <strong>Main account</strong> field when Purchase expenditure for expense is selected on the <strong>Posting</strong> page. <strong>Cost management > Ledger integration policies setup > Posting > Purchase order</strong>.</li>
 </ol></td>
 <td><ol>
 <li>If the invoice line references a purchase order line, use the account distribution for the purchase order line.</li>

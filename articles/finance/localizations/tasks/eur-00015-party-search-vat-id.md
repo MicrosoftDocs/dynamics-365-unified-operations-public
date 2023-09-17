@@ -3,7 +3,7 @@ title: EUR-00015 Party search using VAT ID
 description: This procedure shows how to complete a party search using a registration ID.
 author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

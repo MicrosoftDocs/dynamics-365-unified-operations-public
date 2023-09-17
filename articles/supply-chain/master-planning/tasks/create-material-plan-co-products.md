@@ -5,7 +5,7 @@ title: Create a material plan for co products
 description: The production planner plans the material requirements for items that are formula co-products. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

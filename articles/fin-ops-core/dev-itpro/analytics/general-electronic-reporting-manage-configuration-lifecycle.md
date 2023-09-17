@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 ---
@@ -25,7 +24,7 @@ This article describes how to manage the lifecycle of [Electronic reporting](gen
 
 ## Overview
 
-Electronic reporting (ER) is an engine that supports statutory required and country-specific electronic documents. In general, ER assumes an ability to perform the following tasks for a single electronic document. For more details, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
+Electronic reporting (ER) is an engine that supports statutory required and country/region-specific electronic documents. In general, ER assumes an ability to perform the following tasks for a single electronic document. For more details, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
 
 - Design a template for an electronic document:
 

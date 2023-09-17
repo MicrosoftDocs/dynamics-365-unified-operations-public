@@ -2,19 +2,19 @@
 title: Troubleshoot on-premises deployments
 description: This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
-ms.date: 06/07/2022
+ms.date: 05/04/2023
 ms.topic: article
 ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-ms.custom: 60373
 ms.assetid: 
 ms.service: 
+search.app:
+  - financeandoperationsonprem-docs
 ---
 # Troubleshoot on-premises deployments
 
@@ -910,48 +910,37 @@ On the AD FS machine, in Server Manager, go to **Tools** \> **AD FS Management**
 
 On the AD FS machine, in Event Viewer, go to **Applications and Services Logs** \> **AD FS** \> **Admin**, and make a note of any errors.
 
-### Fiddler
+### Microsoft Edge developer tools
 
-Fiddler can be used for additional debugging. For in-depth information about Fiddler, see [AD FS 2.0: How to Use Fiddler Web Debugger to Analyze a WS-Federation Passive Sign-In](https://social.technet.microsoft.com/wiki/contents/articles/3286.ad-fs-2-0-how-to-use-fiddler-web-debugger-to-analyze-a-ws-federation-passive-sign-in.aspx) and [Cracking the AD FS Token from another AD FS Claims Provider](/archive/blogs/tangent_thoughts/cracking-the-ad-fs-token-from-another-ad-fs-claims-provider).
+The developer tools that are shipped with Microsoft Edge can be helpful when debugging network requests between a client and the AOS server.
 
 The following sections provide focused debugging steps for claims that are returned to Microsoft Dynamics.
 
-#### Repo/capture
+#### Capture
 
-1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
-2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
-3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
-4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
-5. Sign in by using the USERINFO.NETWORKALIAS account and password.
-6. After you're signed in, stop Fiddler from capturing traffic.
+1. Open Microsoft Edge, and then open an **InPrivate** window (the shortcut key is Ctrl + Shift + N).
+1. Open the **Microsoft Edge developer tools** (the shortcut key is Ctrl + Shift + I)
+1. Navigate to the **Network** tab. You can verify that traffic is being captured by looking at the lower part of the tool.
+1. In the **Network** tab make sure you have **Preserve Log** and **Disable Cache** checked.
+1. Open finance and operations apps (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
+1. Sign in by using the USERINFO.NETWORKALIAS account and password.
+1. After you're signed in, stop recording the network log (the shortcut key is Ctrl + E).
 
 #### Analyze
 
-In the right pane of Fiddler, notice that a horizontal divider separates the request from the response. Unlike a network trace, where you typically get one frame for a request and another frame for a response, Fiddler provides one frame that contains both the request and the response.
+Once you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. Foreach request that gets sent you will be able to view the full request as well as the full response.
 
-1. In Fiddler, in the upper-right corner, select **Inspectors** \> **Raw**.
-2. In the lower-right corner, select **Cookies**.
-3. Do a search for **MSISAuth**.
-4. Select the row that has a result of **200** for the AD FS host.
-5. Look above the row that you just selected to find a row that has a result of **302**. Select the row.
-
-    You should see the AD FS URL, host, user name, and password. 
-
-    > [!IMPORTANT]
-    > For privacy, you might have to scrub personally identifiable information.
-
-    ![Personally identifiable information.](media/Scrub-PII.png)
-
-6. Select the next row that has a result of **302**. The URL should be **.../namespaces/AXSF/**.
-7. Find the code line that is shown on that row. 
-
-    ![Code line.](media/Note-the-code.png)
-
-8. Copy the value of code line after the equal sign (=).
-9. Go to <https://www.base64decode.org/>, and paste the code that you just copied.
-9. In the **Source charset** field, select **ASCII**.
-10. Select **Decode**.
-11. Copy the results, and follow these steps:
+1. In the network log look for the POST request that gets sent to Finance +Operations after having successfully authenticated through AD FS.
+    ![Network log.](media/NetworkLogOnpremADFS.png)
+1. Select the request, and then select **Payload**.
+1. In the payload find the id_token parameter and copy the value.
+> [!NOTE]
+> Only copy the value of the id_token parameter. Don't copy the entire payload.
+> Copy the value of the id_token parameter after the colon sign (:).
+> ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
+1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
+1. Paste the value of the id_token parameter in the **Encoded JWT Token** field, and it will be automatically decoded.
+1. Check the results in the Payload: Data and Claims section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
     - Make sure that the **unique_name** value is the Active Directory user that is being tested.
@@ -1324,7 +1313,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-latest#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](setup-deploy-on-premises-latest.md#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 

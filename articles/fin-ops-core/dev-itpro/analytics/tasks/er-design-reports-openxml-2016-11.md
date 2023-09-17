@@ -3,7 +3,7 @@ title: ER Design a configuration for generating reports in OPENXML format (Novem
 description: This article describes how to create a new Electronic reporting configuration that contains a template for generating electronic documents in OPENXML format.
 author: kfend
 ms.date: 04/23/2021
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ---
 # Get started with e-commerce online extensibility development

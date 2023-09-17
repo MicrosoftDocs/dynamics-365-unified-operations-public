@@ -59,8 +59,8 @@ Sales invoice 2 has a total of $2,000 and doesn't have deferred revenue.
 
 | Type | Account | Amount |
 |---|---|---|
-| Debit | Accounts receivable | 3,000.00 |
-| Credit | Revenue | 3,000.00 |
+| Debit | Accounts receivable | 2,000.00 |
+| Credit | Revenue | 2,000.00 |
 
 **Balance sheet method totals for sales invoice 1 and 2 combined**
 

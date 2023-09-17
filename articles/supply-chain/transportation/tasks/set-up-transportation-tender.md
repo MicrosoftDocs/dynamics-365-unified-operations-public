@@ -5,7 +5,7 @@ title: Set up a transportation tender
 description: This procedure shows how to set up a transportation tender. 
 author: Weijiesa
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

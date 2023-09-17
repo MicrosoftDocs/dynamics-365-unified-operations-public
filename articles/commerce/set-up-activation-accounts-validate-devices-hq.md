@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 20471
 ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
 ms.search.industry: Retail
 ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission

@@ -3,7 +3,7 @@ title: Electronic payment management for vendor payments (Brazil)
 description: You can make electronic payments by transferring files between a legal entity and a bank.
 author: AdamTrukawka
 ms.date: 06/27/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

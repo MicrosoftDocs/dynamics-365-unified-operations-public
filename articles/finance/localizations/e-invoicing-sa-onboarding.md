@@ -40,7 +40,7 @@ The onboarding process consists of two steps:
 ### Obtain a CCSID
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
-2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**.
+2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**. The OTP code is only valid for one hour after it's generated. Make sure that it's used within that time frame.
 3. Select the number of one-time password (OTP) codes to generate. The number depends on the number of e-invoicing generation units (devices) that will be used.
 4. Save the generated OTP codes so that you can use them in later steps.
 5. Prepare a configuration file for the certificate signing request. This configuration file should be in the form of a plain text file that contains the following data.
@@ -78,7 +78,7 @@ The onboarding process consists of two steps:
     ```
 
 6. Save the file to the same location as the on boarding script with the name, **csr_config.txt**.
-6. In the configuration file, update the **emailAddress** value and the following specific data.
+7. In the configuration file, update the **emailAddress** value and the following specific data.
 
     | Code              | Description | Specification |
     |-------------------|-------------|---------------|
@@ -92,15 +92,24 @@ The onboarding process consists of two steps:
     | registeredAddress | The address of the branch or location where the device or solution unit is primarily situated. | Free text |
     | businessCategory  | The industry or sector that the device or solution will generate invoices for. | Free text |
 
-7. Run the [onboarding script](#script) that is provided later in this article. Specify the OTP and configuration file as input parameters. Here is an example:
+    > [!NOTE]
+    > The values for **CN** and **certificateTemplateName** in the config file are different when you use the simulation portal. 
+    >
+    > In the simulation portal:
+    > - **CN** - PREZATCA-Code-Signing
+    > - **certificateTemplateName** - ASN1:PRINTABLESTRING:PREZATCA-Code-Signing
+    > 
+    > For any other case, use the values as instructed above.
+
+8. Run the [onboarding script](#script) that is provided later in this article. Specify the OTP and configuration file as input parameters. Here is an example:
 
     `.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -password 123`
 
     > [!NOTE]
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
-8. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
-9. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+9. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
+10. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 
@@ -108,7 +117,7 @@ After you obtain Compliance CSID using the PowerShell script, ZATCA requires you
 
 Ensure that all types of sample invoices that were configured in the Certificate Signing Request (CSR) configuration file are successfully submitted to ZATCA. Use the standard process for issuing electronic invoices. For more details, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md) steps using the Compliance CSID you obtained.
+Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country/region-specific Configuration section](e-invoicing-sa-get-started.md) steps using the Compliance CSID you obtained.
 
 After the compliance checks are successfully complete, use the PowerShell script to obtain Production CSID (refer on-boarding script).
 

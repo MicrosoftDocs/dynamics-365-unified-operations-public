@@ -5,7 +5,7 @@ title: Associate a fuel index with a carrier as an accessorial charge
 description: This guide shows how to create an accessorial assignment, carrier accessorial charge, accessorial master for fuel surcharge, and associate a carrier fuel index with a carrier. 
 author: Weijiesa
 ms.date: 11/14/2016
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

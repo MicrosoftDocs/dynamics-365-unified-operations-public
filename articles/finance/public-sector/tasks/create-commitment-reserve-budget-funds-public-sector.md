@@ -5,7 +5,7 @@ title: Create a commitment to reserve budget funds for the public sector
 description: Commitments are budget control source documents used by public sector entities in France. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

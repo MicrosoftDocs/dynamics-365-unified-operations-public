@@ -3,7 +3,7 @@ title: Create and transfer transactions to the BLWI (Belgium)
 description: This procedure walks you through creating BLWI report for Belgium.
 author: AdamTrukawka
 ms.date: 07/12/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User
@@ -21,7 +21,7 @@ This procedure walks you through creating BLWI report for Belgium. This procedur
 
 To create and transfer transaction to the BLWI it is necessary previously to set up Belgisch Luxemburgs Wissel Instituut (BLWI) information.
 
-Customer/vendor transactions marked with one of the chosen payment purpose codes with customer/vendor primary address is in the country different from the country of legal entity are included in BLWI report.
+Customer/vendor transactions marked with one of the chosen payment purpose codes with customer/vendor primary address is in the country/region different from the country/region of legal entity are included in BLWI report.
 
 1. Go to Tax > Declarations > Foreign trade > BLWI.
 2. Click Transfer.

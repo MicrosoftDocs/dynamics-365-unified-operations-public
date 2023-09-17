@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Document class letter for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 You can create the letter codes that are part of the fiscal documents configuration which is used in transactions with third parties.
 

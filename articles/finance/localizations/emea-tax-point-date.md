@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 10.0.6
 
 The **tax point date** for a transaction is the date on which the transaction occurs for VAT purposes. Use the **Date of VAT register** feature when the tax point date is different from the transaction date and it must be noted. To specify the tax point date, use the **Date of VAT register** field.
 
-The **Date of VAT register** field is shared globally and can be enabled in legal entities with a primary address in any country.
+The **Date of VAT register** field is shared globally and can be enabled in legal entities with a primary address in any country/region.
 
 ## Activate the Date of VAT register feature
 

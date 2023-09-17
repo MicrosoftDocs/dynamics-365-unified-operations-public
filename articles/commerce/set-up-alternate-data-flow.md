@@ -4,9 +4,9 @@
 title: Set up an alternate dataflow for recommendations
 description: This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 09/08/2022
+ms.date: 04/21/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: bebeale
@@ -381,7 +381,7 @@ To debug the error, follow these steps.
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Add product recommendations on POS](product.md)
 

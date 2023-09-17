@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 56551,  ""intro-internal
+ms.collection: get-started
 ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ---
 

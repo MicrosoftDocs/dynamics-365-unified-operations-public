@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-04-30 
 ms.dyn365.ops.version: Platform update 36 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Configure Batch-only and Interactive-only AOS nodes in on-premises deployments

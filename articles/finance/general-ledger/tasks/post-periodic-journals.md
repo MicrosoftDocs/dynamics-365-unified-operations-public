@@ -4,8 +4,8 @@
 title: Post periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. 
 author: aprilolson
-ms.date: 11/21/2022
-ms.topic: business-process 
+ms.date: 03/21/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. When you create the periodic journal, you specify the period interval for the recurrence, such as days or months. This task guide will create a periodic journal with a monthly recurrence.
 
-1. Go to **Navigation pane > Modules > General ledger > Periodic tasks > Periodic journals**.
+1. Go to **General ledger > Periodic tasks > Periodic journals**.
 2. Click **New**.
 3. In the **Name** field, enter or select a value.
 4. In the list, click the link in the selected row.
-5. In the **Description** field, type a value. The description will be the name of the Periodic journal when retrieved later so make sure to give it a relevant name.
+5. In the **Description** field, type a value. The description will be the name of the **Periodic journal** when retrieved later so make sure to give it a relevant name.
 6. On the **Action pane**, click **Lines**. A periodic journal will typically include several journal lines. This task guide will however only add one line.
 7. In the **Date** field, enter a date. The **Date** field contains the posting date for the next transfer to the daily journal. For journals that will be retrieved each month, it's recommended to use the date in the month when it will be posted. This is typically the first or last date in the period. Using the **Empty date** field, is possible to leave the **Date** field blank and give a date when the journal is retrieved. The field will be updated to the next recurring date when transactions are retrieved. 
 8. In the **Account** field, specify the desired values.
@@ -45,7 +45,7 @@ Periodic journals are sometimes called recurring journals because the amount, te
 14. In the **Number of units** field, enter **1**.
 15. In the **Last date** field, enter a date. Entering last date in the preceding period will prevent that the recurring journal by mistake is created in the wrong starting period. Last date will later on be updated each time the periodic journal is retrieved. 
 16. Click **Save**.
-17. Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.
+17. Go to **General ledger > Journal entries > General journals**.
 18. Click **New**.
 19. In the **Name** field, enter or select a value.
 20. In the list, find and select the desired record.

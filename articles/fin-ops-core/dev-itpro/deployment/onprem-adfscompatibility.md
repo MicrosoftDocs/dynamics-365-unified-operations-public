@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2019-07-31 
 ms.dyn365.ops.version: Platform update 28 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # AD FS Microsoft 365 compatibility

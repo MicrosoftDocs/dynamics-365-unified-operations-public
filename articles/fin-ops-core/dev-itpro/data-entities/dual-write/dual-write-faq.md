@@ -128,9 +128,11 @@ You can make Dataverse custom tables company-specific by adding a many-to-one (N
 
 To enable table maps for dual-write, you must define an alternate key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the finance and operations app. For more information, see [Criteria for linking tables](enable-entity-map.md#criteria-for-linking).
 
-### Can I merge records in customer engagement apps while using dual-write?
+### Can I merge accounts in customer engagement apps and party records in finance and operations apps while using dual-write?
 
-No, finance and operations apps do not permit the merging of records. Because of this, the merge functionality in customer engagement apps will not execute when a dual-write mapping is present on a table.
+No, there's no parity between the merging functionalities in finance and operations apps and customer engagement apps. As a result, when a dual-write mapping is present on a table: 
++ Merging accounts in customer engagement apps won't execute.
++ Merging party records in finance and operations apps may result in data mismatch.
 
 ### Is there a document about best practices for table usage? Should I use Customers V2, Customers V3, or Customer Details? What is the difference between these tables, and what is the use case for each?
 

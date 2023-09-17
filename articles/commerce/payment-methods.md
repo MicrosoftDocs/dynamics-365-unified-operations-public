@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 15831
 ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.industry: Retail
 ms.search.form: RetailTenderTypeTable
@@ -38,9 +37,45 @@ Retailers can accept various types of payment in exchange for the products and s
 To set up payment methods, you must complete the following tasks.
 
 1. Set up payment methods for an organization. Create the payment methods that are accepted by the whole organization.
-2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers.
+2. Create organization-wide card types and card numbers. If credit cards or debit cards are accepted, you must create one payment method for cards, and then create the organization-wide card types and card numbers. For more information, see [Card types](#card-types) below.
 3. Set up store payment method. Associate payment methods with each store, and then enter the store-specific settings for each payment method.
 4. Set up card payment methods for stores. For any card payment methods that the store accepts, complete the card setup.
+
+## Card types
+
+To configure card types for your environment in Commerce headquarters, follow these steps:
+
+1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
+1. In the **Electronic payment types** section, select **New**.
+1. Enter **ID**, **Electronic payment name**, **Type**, and **Issuer** values for the record.
+
+Next, the mapping parameters for the record must be set to associate the card type to the payment method used in a transaction for Dynamics financial reporting. Two mapping methods are available:
+ - **Processor mapping** - This mapping method is only available when the **Enhanced wallet support and payment improvements** feature is already enabled. This mapping method is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. For more information about setting up processor mapping, see [Processor payment method mapping](wallets.md#processor-payment-method-mapping).
+ - **Card numbers** - This is a card bin range listing used to match the card number used during payment to the card type for processing and reporting in the system. 
+
+The system uses the card numbers mapping method to check a **Card number from** value at the beginning of the number provided, to the **Card number to** value within the set length of the **Digits to identify** value.  
+
+The following table represents an example set of card numbers mappings, but isn't an official prescribed set of values from Microsoft (as values can change by issuers). Your payment gateway service can further advise you on recommended mappings to use. In many cases, a smaller range (1 or 2 digits) is less complex to implement and may catch broader card scenarios.
+
+| Card ID   | Card number from | Card number to | Digits to identify |
+| --------- | ---------------- | -------------- | ------------------ |
+| AMEXPRESS | 37               | 37             | 2                  |
+| DISCOVER  | 60               | 69             | 2                  |
+| EUROCARD  | 4511             | 4512           | 4                  |
+| EXTGIFT   | 6                | 6              | 1                  |
+| GIFTCARD  | 9                | 9              | 1                  |
+| LOYALTY   | 100000           | 200000         | 6                  |
+| MAESTRO   | 56               | 56             | 2                  |
+| MAESTRO   | 6                | 6              | 1                  |
+| MASTER    | 5                | 5              | 1                  |
+| VISA      | 4                | 4              | 1                  |
+| VISA      | 4507             | 4508           | 4                  |
+| VISAELEC  | 5802             | 5803           | 4                  |
+
+> [!NOTE]
+> When you use the processor mapping mapping method, the card numbers mapping method is used as a backup if the processor mapping is unable to make a match. If neither mapping method makes a match, you can set a default value for each store in the **Electronic Payments: Default for unmapped processor payments** field on the **General** tab. If neither mapping method makes a match and a default value isn't set, the system protectively declines the authorization attempt.
+
+When creating or updating card number mapping in the system, be sure to run the **1070** (Channel configuration) and **1110** (Global configuration) distribution schedule jobs. Allow 15 minutes after these jobs have completed for the system to update the Retail Server cache, and for the changes take effect.
 
 ## Handle change tendering for payment methods
 

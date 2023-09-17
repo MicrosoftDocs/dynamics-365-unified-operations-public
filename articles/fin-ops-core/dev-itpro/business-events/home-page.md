@@ -4,7 +4,7 @@
 title: Business events overview
 description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
 author: jaredha
-ms.date: 07/15/2022
+ms.date: 03/31/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events.
+Business events provide a mechanism that lets external systems receive notifications from finance and operations apps. In this way, business actions can be performed in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
@@ -35,7 +35,7 @@ A business action that a user performs can be either a workflow action or a non-
 
 ## Prerequisites
 
-Business events can be consumed using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
+Business events can be consumed using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events.
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
@@ -88,6 +88,16 @@ The business events framework has two primary settings that can affect performan
 
     - By increasing the number, you produce fewer bundles and reduce the ability to distribute the events to parallel threads.
     - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you will cause unnecessary parallelization on small bundles.
+
+### Event Grid settings
+
+The **Event Grid settings** tab provides options that apply to business event endpoints with an endpoint type of **Azure Event Grid**.
+
+The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint will be a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
+
+### HTTPS settings
+
+The **HTTP timeout (milliseconds)** toggle controls how long the default HTTPS adapter will wait before timing out a request to an endpoint. The default timeout period is 10 seconds. Entering a value of **0** in the field is an indicator to use the default timeout period.
 
 ## Activating business events
 
@@ -204,7 +214,7 @@ Role-based security for business events must be enabled via Feature management.
 
 ### Subscribe to business events from service
 
-Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, which is described below. The organizational assignments that are done, if any, as part of role-based security is honored in the context of business events by letting users to only subscribe
+Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, as described below. The organizational assignments that are done, if any, as part of role-based security are honored in the context of business events by letting users to only subscribe
 to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Power Automate or Logic Apps.
 
 ### Backward compatibility

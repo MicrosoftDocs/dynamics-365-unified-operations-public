@@ -5,7 +5,7 @@ title: Create a product master
 description: Create a product master for the predefined variants. 
 author: t-benebo
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

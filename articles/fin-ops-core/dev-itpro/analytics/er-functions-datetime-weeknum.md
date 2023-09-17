@@ -11,7 +11,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
-ms.custom: 58771
 ms.assetid: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
@@ -48,7 +47,7 @@ The resulting numeric value.
 
 The week of the year is calculated based on the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard, if this standard has been adopted by a country or region that the locale is provided for at runtime. Otherwise, the calculation is based on country/region-specific national standards.
 
-If an unsupported [culture](#arguments) code is provided as an argument of the `WEEKNUM` function at runtime, an exception is thrown. If the blank string is provided as a culture code, the English country-neutral calendar is used to calculate the week number.
+If an unsupported [culture](#arguments) code is provided as an argument of the `WEEKNUM` function at runtime, an exception is thrown. If the blank string is provided as a culture code, the English country/region-neutral calendar is used to calculate the week number.
 
 ## Examples
 

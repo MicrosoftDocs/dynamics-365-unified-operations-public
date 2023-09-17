@@ -46,7 +46,7 @@ Before you set up the system, we recommend that you define a strategy for workin
 
 ## Turn the reason code features on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up reason codes
 

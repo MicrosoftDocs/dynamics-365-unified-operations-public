@@ -4,7 +4,7 @@ description: This article describes how to copy an existing e-commerce site with
 author: josaw1
 ms.date: 06/03/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

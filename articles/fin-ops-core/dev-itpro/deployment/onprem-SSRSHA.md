@@ -23,6 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2021-03-21
 ms.dyn365.ops.version: 10.0.17
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes

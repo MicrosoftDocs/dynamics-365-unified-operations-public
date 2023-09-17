@@ -12,9 +12,8 @@ ms.custom: bap-template
 # Address setup for Latin America
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-Each Latin American country has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
+Each Latin American country/region has a tax identification ID to identify its taxpayers. This article explains how to associate the tax identification ID with each country or region, state or province, and county by using the LATAM extension from the **Address setup** page.
 
 ## Prerequisites
 
@@ -33,7 +32,7 @@ Follow these steps to associate a tax ID with a country or region on the **Addre
 4. If the selected country or region is foreign, make sure that the **Foreign country/region** checkbox is selected.
 
     > [!IMPORTANT]
-    > By default, the **Foreign country/region** checkbox is selected. Make sure that it's cleared for the base country.
+    > By default, the **Foreign country/region** checkbox is selected. Make sure that it's cleared for the base country/region.
 
 5. In the **Allowed country/region document types** section, select **New**.
 6. In the list, select a tax identification ID.
@@ -48,7 +47,7 @@ Follow these steps to add the codification that's provided by the fiscal authori
 5. In the **Tax application code** field, enter a value.
 6. Save your changes, and close the page.
 
-The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country tax ID that's provided by the fiscal authorities.
+The following procedure applies only to organizations with a primary address in Argentina. You might have to add a country/region tax ID that's provided by the fiscal authorities.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 2. On the **Country/region** tab, select **LATAM** \> **Country per Taxpayer Type identification**.

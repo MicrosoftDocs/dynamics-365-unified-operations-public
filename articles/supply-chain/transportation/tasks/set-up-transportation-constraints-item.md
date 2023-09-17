@@ -5,7 +5,7 @@ title: Set up transportation constraints for an item
 description: This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub. 
 author: Weijiesa
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

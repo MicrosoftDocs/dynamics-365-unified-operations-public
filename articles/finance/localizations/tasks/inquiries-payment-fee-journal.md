@@ -3,7 +3,7 @@ title: Inquiries of payment fee on journal
 description: This task walks you through viewing a payment fee summary for a journal.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

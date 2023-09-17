@@ -17,7 +17,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["25511", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 # ms.search.industry: 

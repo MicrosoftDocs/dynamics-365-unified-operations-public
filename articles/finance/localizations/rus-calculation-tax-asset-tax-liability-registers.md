@@ -6,13 +6,12 @@ ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
 ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-manager: anayash
 ---
 
 # Calculation of tax asset and tax liability registers

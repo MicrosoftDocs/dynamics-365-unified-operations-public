@@ -3,7 +3,7 @@ title: Generate reports in Office format that have embedded images
 description: This article describes how to design Electronic reporting (ER) configurations to generate electronic documents in Excel and Word containing embedded images.
 author: kfend
 ms.date: 06/13/2017
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

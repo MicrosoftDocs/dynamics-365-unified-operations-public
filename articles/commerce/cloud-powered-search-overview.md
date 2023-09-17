@@ -2,17 +2,18 @@
 title: Cloud-powered search overview
 description: This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 02/28/2022
+ms.date: 07/18/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.assetid: 
+ms.assetid:
+
 ---
 
 # Cloud-powered search overview
@@ -29,6 +30,24 @@ The cloud-powered product discoverability in Commerce helps retailers continue t
 
 The Commerce search experience has improved capabilities to help retailers achieve better product discoverability. At the same time, these capabilities deliver the scalability and performance that are required for e-commerce traffic.
 
+## Configure cloud-powered search capabilities
+
+Cloud-powered search capabilities are available starting in Commerce version 10.0.8. 
+
+To configure cloud-powered search capabilities, follow these steps.
+
+1. In Commerce headquarters, go to **Commerce Parameters \> Configuration Parameters**.
+1. Under **Set up the configuration parameters**, check that an entry exists for **ProductSearch.UseAzureSearch**, and that its value is set to **true**, as shown in the following example image. 
+ 
+    ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter exists and is set to **true**, cloud-powered search capabilities have already been configured.
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter exists but isn't set to **true**, set it to **true**.
+    1. If the **ProductSearch.UseAzureSearch** configuration parameter isn't present, continue to the next step.
+
+1. Select **New** to add the **ProductSearch.UseAzureSearch** configuration parameter. 
+1. Set the value of the **ProductSearch.UseAzureSearch** configuration parameter to **true**.
+
 ## Browse and search
 
 Search relevance and performance are key factors in the omnichannel experience, because product discovery relies primarily on search functionality for information retrieval and content navigation. An effective and efficient browse and search experience helps increase conversion.
@@ -37,11 +56,11 @@ The following illustration shows an example of typical browse and search functio
 
 ![Search landing page.](./media/SearchLanding.png)
 
-## Faceted navigation and choice summary 
+## Faceted navigation and choice summary
 
-Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of the choices is shown. 
+Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of their choices is shown.
 
-By using faceted navigation, you can configure different refiners for different terms in a term set, without having to create additional pages. 
+By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages.
 
 The following illustration shows an example where faceted navigation is used in a search.
 
@@ -61,12 +80,8 @@ The following illustration shows an example where immersive autosuggest is being
 
 Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
 
-
 > [!NOTE]
-> These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
-![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
->Advanced sorting options like new, best-selling, and trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.  
-
+> Advanced sorting options like "new", "best-selling", and "trending" are available with Commerce SDK version version 9.35 and Dynamics 365 Commerce version 10.0.20.
 
 ## Additional resources
 

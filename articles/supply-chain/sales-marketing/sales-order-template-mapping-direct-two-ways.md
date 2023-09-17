@@ -162,7 +162,7 @@ If you also use work order integration, you need to set up the sales origin. The
 
 ### Setup in the Sales Orders (Sales to Supply Chain Management) - Direct Data integration project
 
-- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. You can make blank a default value in the value map to avoid having to type country for national orders. Set the left side to 'Blank', and set the right side to the desired country or region.
+- Make sure that the required mapping exists for **Shipto\_country** to **DeliveryAddressCountryRegionISOCode**. You can make blank a default value in the value map to avoid having to type country for national/regional orders. Set the left side to 'Blank', and set the right side to the desired country or region.
 
     The template value is a value map where several countries or regions are mapped, and where 'Blank' = US.
 

@@ -4,7 +4,7 @@
 title: Enable product recommendations
 description: This article explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
-ms.date: 09/08/2022
+ms.date: 04/21/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -111,7 +111,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
 
-[Opt out of personalized recommendations](personalization-gdpr.md)
+[Opt out of personalized recommendations](opt-out-personalization.md)
 
 [Add product recommendations on POS](product.md)
 

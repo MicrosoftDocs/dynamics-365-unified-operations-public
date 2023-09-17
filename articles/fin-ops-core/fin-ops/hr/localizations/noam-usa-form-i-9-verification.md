@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 15611
 ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
 ms.search.region: USA
 # ms.search.industry: 

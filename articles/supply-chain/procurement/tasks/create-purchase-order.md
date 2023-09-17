@@ -5,7 +5,7 @@ title: Create a purchase order
 description: This article shows you how to create a purchase order manually. 
 author: GalynaFedorova
 ms.date: 07/18/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

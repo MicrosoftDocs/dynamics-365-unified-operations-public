@@ -93,7 +93,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 </tr>
 <tr>
 <td>Create reports by using Excel.
-<blockquote>[!NOTE] You must run Microsoft Excel 2016.</blockquote>
+<strong>NOTE: </strong> You must run Microsoft Excel 2016.
 </td>
 <td>You can export Cost accounting data directly to Excel through data entities and use Microsoft PivotTable to create reports.</td>
 </tr>
@@ -104,7 +104,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 
 | What you can do | Why this is important |
 |-----------------|-----------------------|
-| Reassign terminated employee credit card transactions. | Sometimes, when an employee is terminated, his or her Active Directory Domain Services (AD DS) account is disabled when active credit card transactions that must be expensed are imported. Previously, you couldn't assign a delegate for expense entry or attach the credit card transactions to an expense report. You can now use the **Credit card transactions** page to reassign the employee for any credit card transaction where the associated employee has been terminated. After you reassign the credit card transaction, the transaction can be selected for an expense report and paid through the regular process for expense report reimbursement. |
+| Reassign terminated employee credit card transactions. | Sometimes, when an employee is terminated, their Active Directory Domain Services (AD DS) account is disabled when active credit card transactions that must be expensed are imported. Previously, you couldn't assign a delegate for expense entry or attach the credit card transactions to an expense report. You can now use the **Credit card transactions** page to reassign the employee for any credit card transaction where the associated employee has been terminated. After you reassign the credit card transaction, the transaction can be selected for an expense report and paid through the regular process for expense report reimbursement. |
 | Change the expense credit card information for pending and past employees. | You can change Expense management credit card information for pending workers and past workers. Previously, you could change the expense credit card information only if the worker is an active employee. |
 | Copy an expense report. | You can now copy an existing expense when you create a new expense on the same expense report. You can copy an expense report and all the associated non–credit card expenses to a new expense report. You must still perform any required itemizations and attach required receipts, based on defined expense policies and categories. You can add credit card transactions to the expense report by selecting to add unreconciled expenses. |
 | Bulk-edit expenses. | Some credit card transactions might not be mapped to an expense category, or they might be incorrectly mapped when they are imported. In this case, employees must manually change the associated expense category. When you manage the unreconciled expenses, you can now bulk-edit the expense category for the selected expenses. Additionally, when you manage selected expenses for a specific expense report, you can bulk-edit the project and the additional information. |
@@ -302,7 +302,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 </thead>
 <tbody>
 <tr>
-<td>Localizations are available for 18 additional countries:
+<td>Localizations are available for 18 additional countries/regions:
 <ul>
 <li>Austria</li>
 <li>Belgium</li>
@@ -323,7 +323,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 <li>Switzerland</li>
 <li>Thailand</li>
 </ul>
-<p>The following countries also require the Retail localization. The Retail localization for these countries hasn't been completed and is planned only for H1 CY2017:</p>
+<p>The following countries/regions also require the Retail localization. The Retail localization for these countries/regions hasn't been completed and is planned only for H1 CY2017:</p>
 <ul>
 <li>Brazil</li>
 <li>Czech Republic</li>
@@ -336,7 +336,7 @@ This article describes features that are either new or changed in Dynamics 365 f
 <li>Sweden</li>
 </ul>
 </td>
-<td>Dynamics 365 for Operations is available in 18 additional countries. As part of our effort to make localization easier and more configurable, regulatory electronic reporting features have been converted to Electronic reporting (ER) configurations, and some regulatory Microsoft SQL Server Reporting Services (SSRS) reports have been converted to ER configurations that use Excel templates. These converted features are specifically mentioned later in this table.</td>
+<td>Dynamics 365 for Operations is available in 18 additional countries/regions. As part of our effort to make localization easier and more configurable, regulatory electronic reporting features have been converted to Electronic reporting (ER) configurations, and some regulatory Microsoft SQL Server Reporting Services (SSRS) reports have been converted to ER configurations that use Excel templates. These converted features are specifically mentioned later in this table.</td>
 </tr>
 <tr>
 <td>Japan – Group fixed assets when you print the form 26 and its appended tables.</td>
@@ -807,7 +807,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 
 | What you can do | Why this is important |
 |-----------------|-----------------------|
-| As a vendor, you can store raw materials at the customer's warehouse. As a customer, you can postpone the actual purchase until the raw materials are required for production. | Keeping an inventory of raw materials can involve serious cost. By using consignment inventory, a vendor can store raw materials at the customer's warehouse. The customer can then postpone the actual purchase until the raw materials are required for production. Raw materials are ordered and received by using a consignment replenishment order. This replenishment order records physical transactions but doesn't affect the general ledger. To distinguish between customer-owned inventory items and vendor-owned inventory items, you can use the Owner inventory dimension. The change of ownership for inventory is handled by a journal process that handles the transfer of ownership for raw materials from the vendor-owned inventory to the customer-owned inventory. This process triggers the creation of a purchase order and a product receipt.<blockquote>[!NOTE] This feature is limited to inbound consignment of raw materials for production. It isn't integrated with Warehouse management (WHS) and Transportation management (TMS).</blockquote> |
+| As a vendor, you can store raw materials at the customer's warehouse. As a customer, you can postpone the actual purchase until the raw materials are required for production. | Keeping an inventory of raw materials can involve serious cost. By using consignment inventory, a vendor can store raw materials at the customer's warehouse. The customer can then postpone the actual purchase until the raw materials are required for production. Raw materials are ordered and received by using a consignment replenishment order. This replenishment order records physical transactions but doesn't affect the general ledger. To distinguish between customer-owned inventory items and vendor-owned inventory items, you can use the Owner inventory dimension. The change of ownership for inventory is handled by a journal process that handles the transfer of ownership for raw materials from the vendor-owned inventory to the customer-owned inventory. This process triggers the creation of a purchase order and a product receipt. **NOTE:**  This feature is limited to inbound consignment of raw materials for production. It isn't integrated with Warehouse management (WHS) and Transportation management (TMS). |
 | As a vendor, get information about the amount of consigned inventory that is transferred to the customer. | To bill a customer, the vendor requires information about the raw materials that were purchased from the consignment inventory and the date of purchase. The vendor can also monitor the on-hand inventory at the customer site by using the vendor collaboration interface. |
 | Move vendor-owned inventory by using a transfer journal. | To track the physical position of the vendor-owned inventory, you must be able to record the position in the system. By using use a transfer journal, you can record the physical movement of inventory, such as the movement from one location in a warehouse to another location in that warehouse. |
 | Adjust vendor-owned inventory by using a counting journal. | It's important that you keep the system on-hand inventory in sync with the actual physical inventory. The vendor-owned inventory can be adjusted in and out by using counting processes such as quantity adjustment and counting journal processes. |
@@ -819,7 +819,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 |-----------------|-----------------------|
 | Enable vendors to respond to each purchase order line and suggest changes. | In some cases, vendors want to accept some purchase order lines but reject others. Vendors can now individually manage purchase order lines. Each line can be rejected, accepted, or accepted with changes. For example, vendors can change the delivery date, split the delivery and quantity, or suggest an alternative item. |
 | Enable vendors to manage contact person information. | Vendors can maintain contact person information for their company. This information includes names, email addresses, and phone numbers. Access to this feature is granted through a dedicated security role. |
-| Share documents that are related to purchase orders with vendors. | When you must share a document with a vendor, such as a document about requirements, it's convenient to link the document to the relevant purchase order. The vendor can then share notes and attachments with the customer by linking the document to his or her response to the purchase order. Document management is the underlying supporting framework, and only notes and attachments that are classified as "external" can be shared with vendors. |
+| Share documents that are related to purchase orders with vendors. | When you must share a document with a vendor, such as a document about requirements, it's convenient to link the document to the relevant purchase order. The vendor can then share notes and attachments with the customer by linking the document to their response to the purchase order. Document management is the underlying supporting framework, and only notes and attachments that are classified as "external" can be shared with vendors. |
 | Provision new vendor users. | If your vendors use the vendor collaboration interface, they have a seamless way to request new user accounts when new contacts require access to vendor collaboration. Procurement professionals can submit a request for a user account for a contact person at the vendor organization. A vendor contact person who is already a vendor collaboration user can also submit this type of request. This request eventually creates a new user in Dynamics 365 for Operations that has vendor-specific security roles. It also facilitates a request to the Microsoft Azure B2B portal to provision the user with a new Azure Active Directory (Azure AD) user account. Vendors can also request that specific vendor user accounts be inactivated, or that security roles be modified. |
 | Find out more about support for vendor collaboration in Dynamics 365 for Operations. | For more information about vendor collaboration, see [Vendor collaboration with external vendors](../../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md), [Vendor collaboration with customers](../../../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md), [Manage vendor collaboration users](../../../supply-chain/procurement/manage-vendor-collaboration-users.md), [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md), and [Vendor collaboration invoicing workspace](../../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). |
 

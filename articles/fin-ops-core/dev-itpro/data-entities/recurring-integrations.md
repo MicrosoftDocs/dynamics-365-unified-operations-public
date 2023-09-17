@@ -17,7 +17,6 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 24821
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 # ms.search.industry: 
@@ -154,7 +153,7 @@ POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB9
 > Until a message is successfully acknowledged, the same message will become available to dequeue every 30 minutes. In cases when a message is being dequeued more than one time, the dequeue response will send the last dequeued date time. This will be blank for the first dequeue of a message. It is important to ensure that a message is successfully acknowledged to prevent a repeated download of the same message. When an acknowledgement fails, having re-try logic to acknowledge the failure is recommended.
 
 ### API for getting message status
-The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
+The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the [enqueue process](#api-for-import-enqueue) is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
 
 **Example**
 

@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["20931", "intro-internal"]
+ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse

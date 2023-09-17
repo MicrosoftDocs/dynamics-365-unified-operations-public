@@ -21,7 +21,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
-- **General availability of release (auto-update):** October 2022
+- **General availability of release (auto-update):** September 2022
 
 ## Features included in this release
 
@@ -32,13 +32,13 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | [Inventory Visibility support for WMS items](../inventory/inventory-visibility-whs-support.md) | Enabled by default |
 | Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | [Use the Inventory Visibility app](../inventory/inventory-visibility-power-platform.md) | Enabled by service configuration |
 | Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Feature management:<br>*Make-to-order supply automation* |
-| Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
+| Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*DDMRP for Planning Optimization* |
 | Production control | [Make finished goods physically available before posting to journals](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md) | Feature management:<br>*(Preview) Make finished goods physically available before posting to journals* |
 | Warehouse management | [Look up relevant data within the warehouse mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/look-up-relevant-data-within-warehouse-mobile-app) | [Query data using Warehouse Management mobile app detours](../warehousing/warehouse-app-data-inquiry.md) | Feature management:<br>*Warehouse management app data inquiry flow* |
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 

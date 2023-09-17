@@ -5,7 +5,7 @@ title: Set up a fund in the public sector
 description: Fund types must be created before you set up funds. 
 author: twheeloc
 ms.date: 02/14/2022
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

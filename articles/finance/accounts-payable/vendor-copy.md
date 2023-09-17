@@ -4,7 +4,7 @@
 title: Copy vendors by using shared number sequences
 description: This article explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.
 author: sunfzam
-ms.date: 08/24/2018
+ms.date: 06/13/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -49,9 +49,9 @@ If you're creating a new vendor, you can continue to fill in all the fields as y
 
 To copy a vendor, in the **Name** field, enter one or more characters that represent the vendor that you're looking for. A search dialog box shows a list of parties that might represent the vendor that you're looking for. When you select one of the parties, additional information appears on the right side of the dialog box:
 
-- The **General** tab shows the party's phone number and address.
-- The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.
-- **Tax registration ID** tab shows the tax registration IDs that are assigned to the party.
+- The **General** tab displays the party's phone number and address.
+- The **Roles** tab displays the roles that the selected party can have and the legal entity where it has each role.
+- **Tax registration ID** tab displays the tax registration IDs that are assigned to the party.
 
 You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity. When you find a party that meets these criteria, follow these steps.
 
@@ -61,7 +61,7 @@ You can copy a party only if it has a vendor role, and if it has that role in a 
 
 ## Validation
 
-When you copy a vendor, the new vendor information will tried to be saved . Validations are run to verify that the data that was copied is good. You receive an error message for every validation that fails. The error messages explain what information must be updated. The copy of the vendor can't be saved until you fix all the validation errors.
+When you copy a vendor, the new vendor information will tried to be saved. Validations are run to verify that the data that was copied is good. You receive an error message for every validation that fails. The error messages explain what information must be updated. The copy of the vendor can't be saved until you fix all the validation errors.
 
 ## Copy a vendor by using the Tax exempt number search feature
 

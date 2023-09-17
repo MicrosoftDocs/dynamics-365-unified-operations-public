@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
 # ms.search.industry: 
@@ -39,7 +38,7 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 3. Select **Global**, and then select **Open**.
 4. If a connection to the repository must be established, select the blue link in the dialog box.
 5. In the configuration list, find **Advanced bank reconciliation statement model \> ABR BAI2 format**.
-6. Select the **BAI2** format.
+6. Select the **ABR BAI2 format**.
 7. On the **Versions** FastTab, select the latest version, and then select **Import**.
 
 >[!NOTE]

@@ -5,7 +5,7 @@ title: Create ledger accrual transactions
 description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes. 
 author: aprilolson
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

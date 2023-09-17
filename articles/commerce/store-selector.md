@@ -15,7 +15,6 @@ ms.dyn365.ops.version:
 ms.custom: 
 ms.assetid: 
 ms.search.industry: 
-manager: annbe
 ---
 
 # Store selector module

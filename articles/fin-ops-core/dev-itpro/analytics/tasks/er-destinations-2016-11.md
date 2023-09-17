@@ -3,7 +3,7 @@ title: ER Configure destinations
 description: This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

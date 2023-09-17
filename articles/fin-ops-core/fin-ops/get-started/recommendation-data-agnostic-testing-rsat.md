@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.custom: 21761
 ---
 
 # Data agnostic testing using the Regression Suite Automation Tool

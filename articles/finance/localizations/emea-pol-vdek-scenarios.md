@@ -1,7 +1,7 @@
 ---
-title: Details of specific business scenarios in the JPK-V7M report
-description: This article explains details of specific business scenarios in the JPK-V7M report in Poland.
-author: AdamTrukawka
+title: Details of specific business scenarios in the JPK-V7 report
+description: This article explains details of specific business scenarios in the JPK-V7 report in Poland.
+author: liza-golub
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
@@ -9,19 +9,19 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
-ms.author: atrukawk
+ms.author: egolub
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
-# Details of specific business scenarios in the JPK-V7M report
+# Details of specific business scenarios in the JPK-V7 report
 
 [!include [banner](../includes/banner.md)]
 
-This article explains details of specific business scenarios in the JPK-V7M report in Poland.
+This article explains details of specific business scenarios in the JPK-V7 report in Poland.
 
 ## Reporting of overdue customer invoices
 
-JPK-V7M report in Microsoft Dynamics 365 Finance supports reporting of overdue customer invoices when the local Polish [Overdue debt VAT](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) feature is used.
+JPK-V7 report in Microsoft Dynamics 365 Finance supports reporting of overdue customer invoices when the local Polish [Overdue debt VAT](emea-pol-sales-tax-reports.md#allowance-for-bad-debts) feature is used.
 
 ### Business requirement
 
@@ -45,7 +45,7 @@ When there is an overdue customer invoice, the invoice that is issued to a custo
 
     Moreover, the base amount and tax amount from this invoice (internal document) are included and reported in the **P_68** and **P_69** elements of the declaration part of the report.
 
-3. If the invoice is paid after both stage 1 and stage 2 have occurred, the company must again apply the **Overdue debt VAT** periodic task in the period when the invoice was paid. The resulting tax transactions are reflected in the JPK-V7M report. The following information is included:
+3. If the invoice is paid after both stage 1 and stage 2 have occurred, the company must again apply the **Overdue debt VAT** periodic task in the period when the invoice was paid. The resulting tax transactions are reflected in the JPK-V7 report. The following information is included:
 
     - All customer information from the original invoice that was posted in stage 1 is included.
     - Amounts are reported in the same **K_\*** elements as in the original invoice, but they have a positive sign.
@@ -59,7 +59,7 @@ When there is an overdue customer invoice, the invoice that is issued to a custo
 
 ## Report RO and FP document types for retail operations
 
-The JPK-V7M report in Finance supports reporting of the **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag) 
+The JPK-V7 report in Finance supports reporting of the **RO** (Internal summary document) type (**\<TypDokumentu\>** tag under the **\<SprzedazWiersz\>** tag) 
 for retail operations when the [Supplementary invoices for retail sales for Poland](emea-pol-vdek.md) feature is used.
 
 ### Business requirements
@@ -68,7 +68,7 @@ The following rules about reporting sales invoices for retail operations are bas
 
 - All fiscal receipts that are printed and given to the customers must be aggregated and reported as documents of the **RO** type (summarized invoice). Sales to non-domestic customers must be excluded from aggregation and reported as normal invoices (without a document type marker). Aggregation should be done for the reporting period. Sales documents that are reported as documents of the **RO** type (summarized invoice) aren't subject to **GTU** markers. Domestic sales that are aggregated for reporting as taxable documents of the **RO** type must also be reported as separate taxable documents of the **FP** type if the customer requested an invoice for those sales. Invoices that are marked as documents of the **FP** type must be excluded from totals in both **SprzedazCtrl** and all related **P_\*** values of the declaration part. Sales documents that are reported as documents of the **FP** type are subject to **GTU** markers.
 
-### Initial assumptions for the reporting of fiscal documents in a JPK-V7M
+### Initial assumptions for the reporting of fiscal documents in a JPK-V7
 
 - All the documents that come from the point of sale (POS) are fiscalized.
 - Information about fiscal receipts that are processed at the POS is correctly reflected in the following system database tables:
@@ -86,7 +86,7 @@ The following rules about reporting sales invoices for retail operations are bas
 
 ### Supported business user scenario in Finance
 
-To report the **RO** and **FP** document types for retail operations, use the following parameters in the **Retail-specific sales marking** group of parameters of the **Wygenerowanie JPK_V7M** (**EMGenerateJPKVDEKReportController_PL**) executable class (**Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**):
+To report the **RO** and **FP** document types for retail operations, use the following parameters in the **Retail-specific sales marking** group of parameters of the **Wygenerowanie JPK_V7M** (if your company reports JPK-V7 monthly) or **Wygenerowanie JPK-V7K** (if your company reports JPK-V7 quarterly) that runs the **EMGenerateJPKVDEKReportController_PL** executable class (**Tax** \> **Setup** \> **Electronic messaging** \> **Executable class settings**):
 
 - The **Aggregate fiscal documents** checkbox activates **Criteria to collect customer invoices for aggregation (RO – summarized invoices)** records that are included to collect and aggregate fiscal receipts that must be reported as documents of the **RO** type.
 - The **Report retail POS invoices** checkbox collects retail invoices that have an invoice date in the reporting period and reports them as documents of the **FP** type.
@@ -98,7 +98,7 @@ By default, the **Aggregate fiscal documents** checkbox is cleared. In this case
 
 When the **Aggregate fiscal documents** checkbox is selected, domestic invoices that have a status of **Fiscal document** or **Fiscal document converted to invoice**, and that have a **Date of VAT register** value that falls in the reporting period, are reported as one aggregated document of the **RO** type for the reporting period. You define company-specific criteria of domestic fiscal documents that must be aggregated by using **Criteria to collect customer invoices for aggregation ("RO" - summarized invoices)** records.
 
-When the aggregated **RO** document is included in the report, it has following header fields.
+When the aggregated **RO** document is included in the report, it has the following header fields.
 
 | Reporting tag      | Value                                 |
 |--------------------|---------------------------------------|
@@ -154,15 +154,15 @@ During preprocessing, these invoices are treated as standard invoices. The only 
 
 ## Report invoices from counterparties in different countries or regions that have identical NIP numbers 
 
-The data structure in the JPK_V7M report collects the first International Organization for Standardization (ISO) country/region code that is found from the Tax exempt numbers table and posted in the Tax transactions table. Use different tax-exempt numbers for counterparties from different countries or regions. To differentiate identical tax-exempt numbers from different countries or regions during setup, use a prefix that includes an ISO country/region code. The first two letters of the ISO country/region code will be omitted during reporting in the **NrDostawcy** tag.
+The data structure in the JPK_V7 report collects the first International Organization for Standardization (ISO) country/region code that is found from the Tax exempt numbers table and posted in the Tax transactions table. Use different tax-exempt numbers for counterparties from different countries or regions. To differentiate identical tax-exempt numbers from different countries or regions during setup, use a prefix that includes an ISO country/region code. The first two letters of the ISO country/region code will be omitted during reporting in the **NrDostawcy** tag.
 
 ## Split payment (MPP) marker
 
-The JPK-V7M report supports reporting of the **MPP** marker for both sales registers and purchase registers for reporting periods before July 1, 2021. The **MPP** marker isn't required for periods after July 1, 2021.
+The JPK-V7 report supports reporting of the **MPP** marker for both sales registers and purchase registers for reporting periods before July 1, 2021. The **MPP** marker isn't required for periods after July 1, 2021.
 
 If a company performs operations that a split payment procedure must be applied to, the **Split payment** feature must be used.
 
-When the **Split payment** feature is used, you don't have to complete any specific setup to report the **MPP** marker in a JPK-V7M. The following algorithm is used to identify the **MPP** marker:
+When the **Split payment** feature is used, you don't have to complete any specific setup to report the **MPP** marker in a JPK-V7. The following algorithm is used to identify the **MPP** marker:
 
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the customer transaction that is related to a sales invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.
 - The system provides a check of the **Split payment** and **Voluntary split payment** parameters of the vendor transaction that is related to a vendor invoice. If the **Split payment** parameter is selected, and the **Voluntary split payment** parameter is cleared, the related invoice will be reported with the **MPP** marker.

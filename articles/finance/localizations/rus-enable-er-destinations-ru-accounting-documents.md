@@ -51,7 +51,7 @@ Follow these steps to configure ER destinations for accounting documents.
 > [!TIP]
 > If you don't want to get a zip folder together with the generated document, create a line for the **Zip** component, and leave the **Settings** field blank. If you don't create this line, you will always get a zip folder together with the document, in addition to the configured ER destinations for that document.
 >
-> To show the file on the screen, select the **Convert to PDF** checkbox for the line. If you don't select this checkbox, make sure that you've installed Office online. For more information, see [Use the PDF conversion option](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#use-the-pdf-conversion-option).
+> To show the file on the screen, select the **Convert to PDF** checkbox for the line. If you don't select this checkbox, make sure that you've installed Office online. For more information, see [Use the PDF conversion option](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md#ConvertToPDF).
 
 
 If you enable **File** destination setting to store the document as a file on SharePoint, each time that you generate a document, a new file will be created and stored.

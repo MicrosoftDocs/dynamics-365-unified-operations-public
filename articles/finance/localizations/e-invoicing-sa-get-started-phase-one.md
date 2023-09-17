@@ -30,11 +30,11 @@ Before you complete the steps in this article, the following prerequisites must 
 - Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see [Create a connected application](e-invoicing-get-started-service-administration.md#create-a-connected-application).
 - Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
 
-## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
+## Country/region-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
 Before you deploy the application setup to your connected Finance or Supply Chain Management application, complete the following procedure.
 
-This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
+This section complements the [Country/region-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
 
 1. In RCS, in the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing features** page, verify that the **Saudi Arabian electronic invoice (SA)** Electronic invoicing feature is selected.

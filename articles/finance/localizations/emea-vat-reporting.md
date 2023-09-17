@@ -1,6 +1,6 @@
 ---
 title: VAT reporting for Europe
-description: This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
+description: This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries/regions.
 author: mrolecki
 ms.date: 03/24/2022
 ms.topic: article
@@ -20,7 +20,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 
 [!include [banner](../includes/banner.md)]
 
-This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
+This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries/regions.
 
 This article provides a generic approach to setting up and generating the VAT statement. This approach is common for users in legal entities in the following countries/regions:
 
@@ -37,10 +37,10 @@ This article provides a generic approach to setting up and generating the VAT st
 
 > [!IMPORTANT]
 > Features described in this article for Austria, Czech Republic, Germany, Netherlands, and Sweden are deprecated. For more information, see [Removed and deprecated features](../get-started/removed-deprecated-features-finance.md).
-> Use the links in the following table to learn more about the new design of VAT declarations in the corresponding countries.
+> Use the links in the following table to learn more about the new design of VAT declarations in the corresponding countries/regions.
 > 
 >
-> | Country        | Additional information                                                          |
+> | Country/region | Additional information                                                          |
 > |----------------|---------------------------------------------------------------------------------|
 > | Austria        | [VAT declaration (Austria)](emea-aut-vat-declaration-austria.md)       |                                                                           
 > | Czech Republic | [VAT declaration (Czech Republic](emea-cze-vat-declaration-tax-declaration-model.md) |
@@ -266,11 +266,12 @@ You can use Electronic Reporting (ER) to configure statements and report, and to
 -   [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 -   [Localization requirements – Create a GER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md)
 
+
 ## Countryspecific resources for VAT statements
-The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.
+The VAT statement for each country/region must meet the requirements of the country/region’s legislation. There are predefined general models and formats of VAT statements for the countries/regions listed in the following table.
 
 
-| Country        | Additional information                                                          |
+| Country/region | Additional information                                                          |
 |----------------|---------------------------------------------------------------------------------|
 | Austria        | [VAT statement details for Austria](emea-aut-vat-statement-details.md)         |
 | Belgium        |                                                                                 |

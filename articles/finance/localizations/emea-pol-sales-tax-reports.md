@@ -172,7 +172,7 @@ Select <strong>Accounts receivable</strong> &gt; <strong>Customer details</stron
 <ul>
 <li>On the general journal, periodic journal, slip journal, or expense journal page, select <strong>Lines</strong>.</li>
 </ul></td>
-<td>Review the <strong>Invoice</strong> or <strong>Payment</strong> tab.<blockquote>[!NOTE]<br>For the expense journal, the <strong>Offset type account</strong> field should be set to <strong>Vendor</strong>.</blockquote></td>
+<td>Review the <strong>Invoice</strong> or <strong>Payment</strong> tab.<strong>NOTE:</strong><br>For the expense journal, the <strong>Offset type account</strong> field should be set to <strong>Vendor</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Sales order

@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.custom: 27141,  ""intro-internal
+ms.collection: get-started
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.form: DefaultDashboard
 ---

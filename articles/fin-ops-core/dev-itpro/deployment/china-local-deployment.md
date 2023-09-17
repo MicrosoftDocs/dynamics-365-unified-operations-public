@@ -31,17 +31,17 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 online services that are operated by 21Vianet are designed to comply with regulatory requirements in China. They are a physically separated instance of cloud services that's operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., which is located in mainland China. This deployment option meets the demands of customers who prefer to use online services that are provided by a local company that stores their data inside China. These services are subject to Chinese laws.
+Microsoft Dynamics 365 online services that are operated by 21Vianet are designed to comply with regulatory requirements in China. They are a physically separated instance of cloud services that's operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"). This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., which is located in China. This deployment option meets the demands of customers who prefer to use online services that are provided by a local company that stores their data inside China. These services are subject to Chinese laws.
 
 ## Data residency
 
-Finance and operations apps that are operated by 21Vianet support data residency in mainland China. This deployment option serves customers in regulated industries and commercial organizations that do business with entities in mainland China that require local data residency. All required services and related data are deployed in the corresponding data centers of the geography. These services and data include Microsoft Dynamics Lifecycle Services, telemetry, databases, and environments. Customer data doesn't leave the geographic boundary.
+Finance and operations apps that are operated by 21Vianet support data residency in China. This deployment option serves customers in regulated industries and commercial organizations that do business with entities in China that require local data residency. All required services and related data are deployed in the corresponding data centers of the geography. These services and data include Microsoft Dynamics Lifecycle Services, telemetry, databases, and environments. Customer data doesn't leave the geographic boundary.
 
 ## Compliance
 
-Customers in China can choose 21Vianet's sovereign cloud deployment offering, but they can also deploy to the public cloud offering that's managed by Microsoft. The Microsoft-managed public cloud offering is globally connected over the public internet and has data centers outside mainland China. One advantage of choosing this public cloud offering is that if the customer purchases Azure, Dynamics 365, and Microsoft 365, these products and services can coexist on the same Azure Active Directory (Azure AD) tenant.
+Customers in China can choose 21Vianet's sovereign cloud deployment offering, but they can also deploy to the public cloud offering that's managed by Microsoft. The Microsoft-managed public cloud offering is globally connected over the public internet and has data centers outside China. One advantage of choosing this public cloud offering is that if the customer purchases Azure, Dynamics 365, and Microsoft 365, these products and services can coexist on the same Azure Active Directory (Azure AD) tenant.
 
-The final choice of a deployment option depends on the customer's assessment of how it should operate to meet regulatory requirements in mainland China. Customers who are wondering how to be compliant should ask their internal compliance team to review the regulatory requirements for the industry that they belong to and the mode of operation in mainland China. In this way, they can determine whether they must deploy a separate instance through 21Vianet or whether they can use a global cloud deployment option.
+The final choice of a deployment option depends on the customer's assessment of how it should operate to meet regulatory requirements in China. Customers who are wondering how to be compliant should ask their internal compliance team to review the regulatory requirements for the industry that they belong to and the mode of operation in China. In this way, they can determine whether they must deploy a separate instance through 21Vianet or whether they can use a global cloud deployment option.
 
 ## Licensing
 
@@ -49,7 +49,7 @@ Licenses for Dynamics 365 online services that are operated by 21Vianet can't be
 
 ## Feature availability
 
-Microsoft strives to maintain functional parity between our commercially available service and finance and operations apps that are operated by 21Vianet in mainland China. However, there are notable exceptions to functional parity. These exceptions are affected by the availability of dependent services or partner solutions, market priorities, or compliance regulations.
+Microsoft strives to maintain functional parity between our commercially available service and finance and operations apps that are operated by 21Vianet in China. However, there are notable exceptions to functional parity. These exceptions are affected by the availability of dependent services or partner solutions, market priorities, or compliance regulations.
 
 Some features won't be available for Dynamics 365 online services that are operated by 21Vianet in China. For detailed information about feature availability, see the "China (21-V)" column in [Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac).
 

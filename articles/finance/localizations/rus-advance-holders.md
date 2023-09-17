@@ -12,7 +12,7 @@ ms.search.region: Russia
 ms.author: mrolecki
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 ---
 

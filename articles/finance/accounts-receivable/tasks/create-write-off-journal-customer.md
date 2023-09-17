@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Create a write-off journal for a customer
-description: This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page. 
+description: This task guide will show you how to set up the parameters for write-offs and then write off transactions. 
 author: ShivamPandey-msft
-ms.date: 07/01/2019
-ms.topic: business-process 
+ms.date: 05/23/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -27,16 +27,16 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page. This task uses the USMF demo company.
+This task guide will show you how to set up the parameters for write-offs and then write off transactions from the **Collections**, **Open customer invoices**, and the **Customer** pages. This task uses the USMF demo company.
 
 
 ## Set up the write off parameters
-1. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters**.
+1. Go to **Credit and collections > Setup > Accounts receivable parameters**.
 2. Click the **Collections** tab.
 3. Expand or collapse the **Write-off** section.
     - The **Write-off journal** is the general journal that will hold the write-off transactions that you create.  
     - You can attach a reason code to every write-off. You can override this default at the time of the write-off.  
-    - Set the **Separate sales tax** to Yes if you want to separate the sales tax from the original transaction in the write-off.  
+    - Set the **Separate sales tax** to **Yes** if you want to separate the sales tax from the original transaction in the write-off.  
 4. Close the page.
 5. Go to **Credit and collections > Setup > Customer posting profiles**. The write-off account will be used as the expense account or reserve adjustment in the general journal.
 6. Close the page.
@@ -48,7 +48,7 @@ This task guide will show you how to set up the parameters for write-offs and th
 4. Click **Write off**.
 5. Click **OK**.
 6. Close the page.
-7. Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.
+7. Go to **General ledger > Journal entries > General journals**.
 8. Select the journal batch number for the journal that contains your write-off. One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
 9. Close the page.
 

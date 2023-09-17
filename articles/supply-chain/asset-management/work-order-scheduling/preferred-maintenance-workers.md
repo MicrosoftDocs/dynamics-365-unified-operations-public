@@ -59,7 +59,7 @@ The more selections you make for the same record, the more specific your setup w
 
 4. Repeat step 2 to create a new record. Make the required selections, depending on the detail level for the preferred worker or worker group. 
 
-    *Example:* In the screenshot below, in the sixth record, the maintenance worker Shawn Richardson is selected as preferred worker. He will automatically be selected during scheduling of a work order that includes the asset "CH-BP1-03-02 and the maintenance job type "Facility assessment", if he is available at the scheduled time.
+    *Example:* In the screenshot below, in the sixth record, the maintenance worker Shawn Richardson is selected as preferred worker. Shawn will automatically be selected during scheduling of a work order that includes the asset "CH-BP1-03-02 and the maintenance job type "Facility assessment", if Shawn is available at the scheduled time.
 
     > [!NOTE]
     > Generally, when a preferred maintenance worker is selected during work order scheduling, Asset Management goes through all **Preferred maintenance workers** records to check for a possible match, always checking the most specific combination first. If no match is found, the "default" record with a selection in either the **Preferred maintenance worker group** field or the **Preferred maintenance worker** field is used.

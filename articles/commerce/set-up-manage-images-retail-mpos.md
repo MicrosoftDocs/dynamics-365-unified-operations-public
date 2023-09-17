@@ -12,7 +12,6 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.industry: Retail
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,

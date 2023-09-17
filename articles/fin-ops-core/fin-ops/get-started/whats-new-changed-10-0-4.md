@@ -36,7 +36,7 @@ Similar to the Budget analysis inquiry, you can now use the new **Budget analysi
 For more information, see [Budget analysis report](../../../finance/public-sector/budget-analysis-report.md).
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country/region, type of feature, and release.
 
 ## Additional resources
 

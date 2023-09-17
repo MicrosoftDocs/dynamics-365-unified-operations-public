@@ -2,7 +2,7 @@
 title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This article explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: josaw1
-ms.date: 08/14/2020
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 This article explains what has changed in the 10.0.11 release of the Retail software development kit (SDK), how to migrate it to Visual Studio 2017, and how to update an extension project reference library to NuGet.
 

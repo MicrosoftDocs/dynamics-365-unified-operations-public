@@ -5,7 +5,7 @@ title: Create a vendor account and attach the invoice declaration category
 description: This procedure walks you through creating a vendor with configuration for an invoice declaration. 
 author: mrolecki
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through creating a vendor with configuration for an invoice declaration. The demo data company used to create this procedure is DEMF with the country of legal entity primary address updated to Iceland.
+This procedure walks you through creating a vendor with configuration for an invoice declaration. The demo data company used to create this procedure is DEMF with the country/region of legal entity primary address updated to Iceland.
 
 
 ## Create a vendor

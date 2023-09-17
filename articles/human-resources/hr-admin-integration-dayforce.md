@@ -282,7 +282,7 @@ Employees may be assigned specific earnings at a given frequency of payment and 
 - Payment Method
 - Economic Region (required)
 - Employee Benefits ID
-- National ID Number (required)
+- National/Regional ID Number (required)
 - Military Service Number
 - Shift ID (required)
 - Tax Number (required)

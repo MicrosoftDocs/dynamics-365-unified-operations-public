@@ -4,7 +4,7 @@ description: This article provides guidelines for deploying the fiscal printer i
 author: EvgenyPopovMBS
 ms.date: 08/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

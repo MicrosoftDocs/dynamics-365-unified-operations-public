@@ -11,7 +11,6 @@ ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-ms.custom: 44351
 ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 ---
 

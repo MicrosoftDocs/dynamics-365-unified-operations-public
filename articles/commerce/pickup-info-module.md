@@ -6,7 +6,7 @@ ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: anupamar

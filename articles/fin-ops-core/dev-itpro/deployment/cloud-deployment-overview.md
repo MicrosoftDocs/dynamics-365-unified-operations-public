@@ -17,7 +17,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: ["60373", "intro-internal"]
+ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -156,22 +156,6 @@ Finance and operations apps can be deployed into a subset of Microsoft Azure dat
 > - [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](deployment-options-geo.md)
 > - [Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)](us-gcc-deployment.md)
 > - [Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China](china-local-deployment.md)
-
-### Upcoming changes to region availability
-Dynamics 365 solutions consist of a collection of multiple services. Looking across Dynamics 365 applications, the Power Platform and the Azure services that they both depend on, the required matrix of services is quite large and growing. We've locked on a strategy of selecting a subset of data center regions across the globe to simplify ensuring that we've availability of the full portfolio of required services. Our plan is to optimize to have minimal latency between the component services of a solution and as a result, we're focused on having the full portfolio of services available in each of the designated data centers.
-
-Additionally, the finance and operations architecture is being enhanced to build on self-service for greater elasticity, stronger reliability, and more seamless maintenance. Customers gain material efficiency by having deeper self-service deployments in fewer data centers. This transition also benefits from selecting a subset of Azure regions. To that effect, the regional availability of finance and operations apps will now be <strong>limited to East US, West US, and Central US in North America </strong> for all new projects. For a list of the latest supported regions, see the following articles:
-
-- [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](deployment-options-geo.md)
-- [Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)](us-gcc-deployment.md)
-- [Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China](china-local-deployment.md)
-
-Support for East US2, West US2, West Central US, North Central US, and South Central US will continue to be available for projects and environments that currently have their data stored in those regions on Microsoft-managed environments. 
-
-> [!Note]
-> Microsoft will work with customers to move them to an appropriate data center beginning October 19, 2020. This will happen in a phased approach. Select customers will receive advance notification before we migrate them to a supported region.
-
-If there are other customer workloads that are't part of the Dynamics 365 or Power Platform family that also require proximity to the Dynamics 365 and Power Platform services, Microsoft will work with customers to coordinate a plan for the overall migration. For more information, see [Cloud deployment overview: Frequently asked questions](cloud-deployment-overview.md#frequently-asked-questions).
 
 ## Frequently asked questions
 

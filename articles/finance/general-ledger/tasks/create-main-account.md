@@ -4,8 +4,8 @@
 title: Create a main account
 description: This procedures walks through how to add a main account to an existing chart of accounts. 
 author: aprilolson
-ms.date: 07/11/2019
-ms.topic: business-process 
+ms.date: 03/29/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedures walks through how to add a main account to an existing chart of accounts. This recording uses the USMF demo company.  
 
-1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Accounts > Main accounts**.
+1. Go to **General ledger > Chart of accounts > Accounts > Main accounts**.
 2. Click **New**.
 3. In the **Main account** field, type a value.
 4. In the **Name** field, type a value.
@@ -44,7 +44,7 @@ This procedures walks through how to add a main account to an existing chart of 
 13. In the list, select the Legal entity.
 14. Click **Add**.
 15. In the list, mark the selected row.
-16. Check or uncheck the **Suspended** checkbox.
+16. Select or clear the **Suspended** checkbox.
 17. Expand the **Financial reporting** section.
 18. In the **Exchange rate type** field, click the drop-down button to open the lookup.
 19. In the list, select the **Exchange rate type for the account**.

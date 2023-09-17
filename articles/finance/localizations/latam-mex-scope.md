@@ -25,7 +25,7 @@ Dynamics 365 Finance helps organizations run their business operations and also 
 
 However, Finance doesn't address all laws, regulations, or commercial requirements in Mexico, because laws and regulations vary in the way that they affect organizations. For example, regulatory features that Microsoft creates that are made generally available out-of-the-box for Finance in Mexico, don't typically include functionality that supports the following, except as noted in this article:
 
-- National Standards
+- National/Regional Standards
 - Payroll
 - Industry-specific regulations
 - Vertical regulations 
@@ -58,7 +58,7 @@ This article describes the strategy and scope of specific requirements that Micr
 - Local accounting rules
 - Local regulatory and statutory reporting
 
-**National Standards** refer to feature requirements in software that are related primarily to banking practices (such as payment methods, payment formats, and bank statements) and less frequently to commercial documents (such as electronic fiscal documents). National Standards are local requirements that aren't required by law or regulation, but that are widely adopted within a geographic region and critical to the sale of licenses for business management software in that geographic region.
+**National/Regional Standards** refer to feature requirements in software that are related primarily to banking practices (such as payment methods, payment formats, and bank statements) and less frequently to commercial documents (such as electronic fiscal documents). National/Regional Standards are local requirements that aren't required by law or regulation, but that are widely adopted within a geographic region and critical to the sale of licenses for business management software in that geographic region.
 
 | Abbreviation | Description |
 |--------------|-------------|
@@ -79,7 +79,7 @@ In general, the Microsoft strategy for addressing the tax, financial, accounting
 - Implement the federal tax requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section later in this article.
 - Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the information that is specified in this article.
 - Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Finance.
-- Apply National Standards and competitive features in the localization, as Microsoft, at its sole discretion, determines them to be necessary or appropriate, based on business needs in the region.
+- Apply National/Regional Standards and competitive features in the localization, as Microsoft, at its sole discretion, determines them to be necessary or appropriate, based on business needs in the region.
 - Don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city levels.
 - Exclude municipal requirements, except for the municipal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section.
 

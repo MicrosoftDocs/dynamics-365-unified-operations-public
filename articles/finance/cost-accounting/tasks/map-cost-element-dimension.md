@@ -4,8 +4,8 @@
 title: Map a cost element dimension
 description: A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity. 
 author: twheeloc
-ms.date: 06/28/2017
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -31,7 +31,7 @@ A cost controller can use this procedure to map a cost element dimension to a co
 
 1. Go to **Cost accounting > Dimensions > Cost element dimensions**.
 2. In the list, find and select the desired record.
-    * For this example, select Cost elements.  
+    * For this example, select **Cost elements**.  
 3. Click **Dimension mappings**.
 4. Click **Configure mappings** from this dimension.
 5. Click **New**.

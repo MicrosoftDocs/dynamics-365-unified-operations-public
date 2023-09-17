@@ -110,11 +110,7 @@ Find the right online training, in person workshops, and events for your role as
 
     [Core development concepts](learning-catalog-developer.md#core-development-concepts)
 
-    [Servicing](learning-catalog-developer.md#servicing)
-
     [Migration and upgrade](learning-catalog-developer.md#migration-and-upgrade)
-
-    [Testing](learning-catalog-developer.md#testing)
 
     [Exam](learning-catalog-developer.md#exam)
 

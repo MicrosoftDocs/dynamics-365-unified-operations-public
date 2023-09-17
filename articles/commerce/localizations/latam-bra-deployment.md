@@ -26,7 +26,7 @@ The extensions that are described in this article were developed based on the fi
 
 ## Enable Brazil-specific Commerce functionality
 
-This section describes how to configure Commerce headquarters settings that are specific to and recommended for Brazil. For more information, see the [Commerce home page](../index.md).
+This section describes how to configure Commerce headquarters settings that are specific to and recommended for Brazil. For more information, see the [Commerce home page](../welcome.md).
 
 To enable and use the Brazil-specific functionality, you must configure the following settings in Commerce headquarters.
 

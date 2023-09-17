@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
@@ -80,7 +80,7 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 
 ### Regulatory updates
 
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release.
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 

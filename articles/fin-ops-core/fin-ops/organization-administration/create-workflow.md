@@ -15,9 +15,10 @@ ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: ["195583", "intro-internal"]
+ms.custom: ["195583"]
+ms.collection: get-started
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +33,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to create a workflow.
 

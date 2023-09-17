@@ -4,8 +4,8 @@
 title: Enter an addition to a fixed asset
 description: This procedure shows how to add an addition to an existing fixed asset. 
 author: moaamer
-ms.date: 07/22/2019
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetTable, AssetAddition   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -31,7 +31,7 @@ This procedure shows how to add an addition to an existing fixed asset. The purp
 
 The procedure uses the Accountant role and demo data for the USMF legal entity.
 
-1. In the Navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
+1. Go to **Fixed assets > Fixed assets > Fixed assets**.
 2. In the list, find and select the fixed asset for the addition.
 3. In the list, click the link in the selected row.
 4. On the Action Pane, click **Fixed asset**.
@@ -44,7 +44,7 @@ The procedure uses the Accountant role and demo data for the USMF legal entity.
 11. Click the **General** tab.
 
     * Set **Increases service life** to **Yes** if the addition increases the service life of the asset.  
-    * This field is informational only. To increase the service life, modify the Service life on the Value models and/or Depreciation books for the asset.  
+    * This field is informational only. To increase the service life, modify the **Service life** on the **Value models** and/or **Depreciation books** for the asset.  
 
 
 

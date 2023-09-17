@@ -12,7 +12,8 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 265694,  ""intro-internal
+ms.custom: 265694
+ms.collection: get-started
 ms.assetid: 0095a7cf-8cc9-41f6-bf00-b59868fa6ea2
 ms.search.form: PowerBIPbixDeployForm
 ---

@@ -4,7 +4,7 @@ description: This article describes the capabilities and configurations of an as
 author: hhainesms
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: hhaines
@@ -15,7 +15,6 @@ ms.search.validFrom: 2017-06-20
 # Commerce asynchronous document framework
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the capabilities and configurations of an asynchronous document framework in Microsoft Dynamics 365 Commerce.
 

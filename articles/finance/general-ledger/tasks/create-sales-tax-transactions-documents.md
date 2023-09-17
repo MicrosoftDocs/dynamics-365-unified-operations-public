@@ -5,7 +5,7 @@ title: Create sales tax transactions on documents
 description: Sales tax on documents is calculated by providing a Sales tax group and an Item sales tax group on document lines. 
 author: twheeloc
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

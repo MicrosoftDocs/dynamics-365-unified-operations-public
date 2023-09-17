@@ -4,7 +4,7 @@
 title: Cash flow forecasting
 description: This article provides an overview of the cash flow forecasting process. It also explains how cash flow forecasting is integrated with other modules in the system.
 author: angelad116
-ms.date: 02/16/2022
+ms.date: 07/31/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  LedgerCovParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -143,7 +143,7 @@ For more information, see [Process automation](../../fin-ops-core/dev-itpro/sysa
 
 ### Reporting
 
-After the cash flow forecast is calculated, you must refresh the associated entity information for analytical reporting. On the **Entity store** page, select the **LedgerCovLiquidityMeasurement aggregate** measurement, and then click **Refresh**.
+After the cash flow forecast is calculated, you must refresh the associated entity information for analytical reporting. On the **Entity store** page, select the **LedgerCovLiquidityMeasurementV2 aggregate** measurement, and then click **Refresh**.
 
 There are two workspaces that contain cash flow forecasting data. One workspace has data for all companies, and the other workspace has data only for the current company.
 

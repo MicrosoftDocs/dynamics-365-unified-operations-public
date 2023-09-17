@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.form: FieldDescriptions
 ---
@@ -22,7 +21,7 @@ ms.search.form: FieldDescriptions
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 

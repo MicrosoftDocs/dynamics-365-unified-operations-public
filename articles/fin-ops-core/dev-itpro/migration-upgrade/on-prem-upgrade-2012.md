@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-06-30 
 ms.dyn365.ops.version: 10.0.0
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)

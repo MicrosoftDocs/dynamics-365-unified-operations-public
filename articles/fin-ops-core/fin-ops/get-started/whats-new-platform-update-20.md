@@ -151,7 +151,7 @@ For more information, see [Data task automation](../../dev-itpro/data-entities/d
 Platform update 20 includes the following extensibility enhancements:
 
 - Enable changing a form to use a custom pattern that includes a form extension. This allows ISVs to add tabs and other form parts that don't fit the original pattern. Developers now have actions to **Set pattern to custom** and **Restore original pattern**.
-- Allow an extension to change **TableField.AssetClassification** so that General Data Protection Regulation (GDPR) data classification information can be provided.
+- Allow an extension to change **TableField.AssetClassification** so that data classification information can be provided to comply with various privacy laws and regulations.
 - Enable form extension methods to call methods and controls that are added by using other extensions. For example, now when a form has a button and methods added by extension, future extensions to that form will be able to call the new button and methods.
 - Add query object support for set-based update statements by using an update\_recordset method.
 - Allow a query extension to add a root data source to a union query.

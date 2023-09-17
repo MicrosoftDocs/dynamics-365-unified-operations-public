@@ -3,7 +3,7 @@ title: Inquiry on deductible expenses
 description: This task walks you through running a query on deductible expenses.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

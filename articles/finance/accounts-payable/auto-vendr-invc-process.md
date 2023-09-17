@@ -85,7 +85,5 @@ The **Invoice received date** value indicates the date when the company received
 
 The **Imported invoice amount** and **Imported sales tax amount** values for vendor invoices can be provided in the vendor invoices import file. Typically, these values are from an invoice that was scanned by an outside provider and included in the import file. As the invoice is processed in Accounts payable, the values will be calculated based on the invoice data. The invoice can be posted only if the imported values match the calculated values. Matching values ensure that the invoice accurately reflects the amount that is due to the vendor. If your organization allows imported invoices to be submitted to the workflow system automatically, you can optionally require that the imported totals match the calculated totals before the invoice can be submitted to the workflow system.
 
-## Vendor invoice automation - Resume automation processing for multiple invoices
-When an imported invoice isn’t submitted successfully to workflow through the automated process, it will be removed from further automated processing. An accounts payable clerk can review and edit the invoice before the automated process resubmits it to workflow. When a failure reason can be resolved by the same fix for multiple invoices, you can restart the automated process on the **Resume automated invoice processing** page. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

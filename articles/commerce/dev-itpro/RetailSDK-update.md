@@ -2,7 +2,7 @@
 title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK.
 author: josaw1
-ms.date: 01/30/2023
+ms.date: 05/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -12,13 +12,13 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-ms.custom: 68673
 ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ---
 
 # Upgrade the Retail channel extension to the latest Retail SDK
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 This article provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this article doesn’t provide detailed instructions of every step in the process. This article is applicable for Dynamics 365 Commerce and Dynamics 365 Finance.
 

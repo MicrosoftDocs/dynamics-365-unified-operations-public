@@ -4,7 +4,7 @@ description: This article provides an overview of the fiscal integration sample 
 author: EvgenyPopovMBS
 ms.date: 10/04/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
@@ -73,7 +73,7 @@ The fiscal registration service supports only scenarios where sales tax is inclu
 
 ## Set up Commerce for the Czech Republic
 
-This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for the Czech Republic. For more information, see [Commerce home page](../welcome.md).
 
 To use the Czech-specific functionality, you must specify the following settings.
 

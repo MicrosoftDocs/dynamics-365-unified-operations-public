@@ -17,7 +17,6 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: 25341
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: Platform update 13
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 

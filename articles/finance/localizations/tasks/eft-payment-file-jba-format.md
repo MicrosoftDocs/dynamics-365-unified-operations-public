@@ -3,7 +3,7 @@ title: Generate EFT payment file with JBA format
 description: This article explains how to generate an EFT file with the JBA format.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

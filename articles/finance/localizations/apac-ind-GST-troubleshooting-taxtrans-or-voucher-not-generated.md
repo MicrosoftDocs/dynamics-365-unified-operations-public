@@ -4,7 +4,6 @@
 title: TaxTrans or voucher isn't generated
 description: This article provides troubleshooting information to help resolve this issue when TaxTrans or voucher isn't generated.
 author: shaoling
-manager: beya
 ms.date: 04/30/2021
 ms.topic: article
 ms.prod: 

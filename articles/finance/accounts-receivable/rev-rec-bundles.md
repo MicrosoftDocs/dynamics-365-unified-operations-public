@@ -4,7 +4,7 @@
 title: Revenue recognition bundles
 description: This article describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items.
 author: bking
-ms.date: 01/04/2021
+ms.date: 01/04/2023
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -76,7 +76,7 @@ However, the printed confirmation report will show only the parent item of the b
 
 After the sales order is confirmed, the parent item is still shown on the sales order, but its status has been changed to **Canceled**. Additionally, the net amount is tracked in the **Bundle net amount** field. This amount is required to print the invoice, because the invoice shows the parent item, not the component items.
 
-The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that is presented to the customer on the printed invoice. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and Warehouse can't be changed, because those changes might trigger a price change, based on a trade agreement.
+The sum of the component items must equal the **Bundle net amount** value of the parent item, because that value is the amount that is presented to the customer on the printed invoice. To ensure that the invoice matches the amounts that are posted to the general ledger, edits to the component items are limited. For example, the site and warehouse can't be changed, because those changes might trigger a price change, based on a trade agreement.
 
 The unit price from the line for the parent item is allocated to the components in the following manner:
 

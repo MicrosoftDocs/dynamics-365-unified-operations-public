@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: 15191
 ms.assetid: 89a918e8-59a4-4711-a2e9-b41989ddd0f1
 ms.search.region: Global
 # ms.search.industry: 

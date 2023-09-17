@@ -198,7 +198,7 @@ To define specific reverse charge groups for specific products or categories, go
 
 Additionally, you should set up application-specific parameters that use these reverse charge groups.
 
-For more information about this functionality, see the "Reverse charge configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+For more information about this functionality, see the "Reverse charge configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### Automatically assigned Natura codes
 
@@ -240,7 +240,7 @@ If a required document type isn't listed, you can manually adjust the document t
 - Electronic document property definition
 - Invoice document type registration
 
-For more information, see the "Invoice types configuration" section in [A country-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
+For more information, see the "Invoice types configuration" section in [A country/region-specific hotfix to support changes in "FatturaPA" format of Italian electronic invoices in Microsoft Dynamics 365 Finance](https://support.microsoft.com/help/4569342/a-country-specific-hotfix-to-support-changes-in-fatturapa-format-of-it).
 
 ### <a id="digitalcert"></a>Digital certificates
 
@@ -320,6 +320,15 @@ On the **Electronic customer invoices** page, you can perform the following acti
 > The **Electronic invoices** page (**Project management and accounting** \> **Project invoices** \> **E-invoices** \> **Electronic invoices**) resembles the **Electronic customer invoices** page and has the same functions.
 
 ![Electronic customer invoices page.](media/emea-ita-electronic-invocies-electronic-customer-invoices.png)
+
+### Move electronic invoices XML files to attachments
+
+As of Finance version **10.0.36**, you can move previously generated XML files for existing electronic invoices to attachments and configure the system to automatically save the generated XML files for new electronic invoice as attachments. This functionality is available only for legal entities that have their primary address in Italy or Spain.
+
+To activate the capability to save XML files for electronic invoice as attachments, enable the **(Italy, Spain) Move electronic invoices XML file to attachments** feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
+
+> [!NOTE]
+> After you enable the feature, the process of moving previously generated XML files for existing electronic invoices to attachments starts automatically. The electronic invoices are processed in batches of 10,000 records. The interval between batches is set to three hours.
 
 ## <a id="additionalfunctionality"></a>Additional functionality that affects the XML file
 

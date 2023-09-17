@@ -17,7 +17,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
 # ms.search.industry: 

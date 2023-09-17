@@ -5,7 +5,7 @@ title: Set up an item arrival overview profile
 description: This article focuses on the setup of an arrival overview profile. 
 author: yufeihuang
 ms.date: 07/30/2019
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: yufeihuang

@@ -3,7 +3,7 @@ title: Settle customer consolidated invoices by using settle transactions
 description: This article provides information about payments that are made and settled against consolidated invoices.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -3,7 +3,7 @@ title: Configure accelerated depreciation parameters and posting profiles
 description: For Japan, the accelerated depreciation is calculated based on Rate factor, Rate threshold and Calculation method.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

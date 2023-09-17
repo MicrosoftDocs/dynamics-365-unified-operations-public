@@ -23,7 +23,8 @@ ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2020-03-31 
 ms.dyn365.ops.version: Platform update 33 
-
+search.app:
+  - financeandoperationsonprem-docs
 ---
 
 # Reuse the same AD FS instance for multiple environments

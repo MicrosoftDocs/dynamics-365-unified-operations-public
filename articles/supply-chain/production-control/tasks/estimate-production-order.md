@@ -5,7 +5,7 @@ title: Estimate a production order
 description: You can run this procedure by using the USMF demo data company or your own data set.
 author: johanhoffmann
 ms.date: 11/11/2016
-ms.topic: business-process
+ms.topic: how-to
 ms.prod:  
 ms.technology:  
 

@@ -522,7 +522,7 @@ To determine a company's accounting currency, follow these steps.
 
 ### Example for currency display and currency filter cells
 
-A user has made the following currency selections in her column definition:
+A user has made the following currency selections in their column definition:
 
 - **Currency filter:** Yen
 - **Currency display:** Accounting currency from Ledger (U.S. dollars)

@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.custom: 27621
 ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
 ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 ---

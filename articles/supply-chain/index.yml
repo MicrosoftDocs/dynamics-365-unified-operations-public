@@ -1,0 +1,414 @@
+### YamlMime:Hub
+
+title: Microsoft Dynamics 365 Supply Chain Management documentation # < 60 chars
+summary: Discover how to make the most of Dynamics 365 Supply Chain Management with training, docs, and videos covering product capabilities and how-to articles. Learn how to build an adaptable, resilient supply chain that automatically reacts to challenges using real-time visibility, agile planning, and advanced insights.
+# brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
+brand: dynamics
+
+metadata:
+  title: Dynamics 365 Supply Chain Management documentation
+  description: Discover how to make the most of Dynamics 365 Supply Chain Management with training, docs, and videos covering product capabilities and how-to articles. Learn how to build an adaptable, resilient supply chain that automatically reacts to challenges using real-time visibility, agile planning, and advanced insights.
+  ms.topic: hub-page # Required
+  author: kamaybac #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kamaybac #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/06/2023 #Required; mm/dd/yyyy format.
+  hide_bc: true
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Welcome to Dynamics 365 Supply Chain Management
+      itemType: get-started
+      url: supply-chain-management-welcome.md
+    # Card
+    - title: What's new
+      itemType: whats-new
+      url: /dynamics365/supply-chain/get-started/whats-new-home-page
+    # Card
+    - title: Training
+      itemType: training
+      url: /dynamics365/supply-chain/get-started/learning-catalog
+    # Card
+    - title: Troubleshoot
+      itemType: concept
+      url: /dynamics365/supply-chain/supply-chain-management-troubleshooting
+
+additionalContent:
+  sections:
+  - title: Implement 
+    items:
+    - title: Guidance
+      links:
+      - url: /dynamics365/guidance/implementation-guide/overview
+        text: Dynamics 365 implementation guidance
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle?context=/dynamics365/context/supply-chain
+        text: Implementation lifecycle management
+      - url: /dynamics365/fin-ops-core/fin-ops/imp-lifecycle/go-live-faq?context=/dynamics365/context/supply-chain
+        text: Implementation FAQ
+      - url: /dynamics365/guidance/implementation-guide/security
+        text: Security strategy
+    - title: Try/Buy/Deploy
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/deploy-demo-environment?context=/dynamics365/context/supply-chain
+        text: Try Dynamics 365 Supply Chain Management
+      - url: /dynamics365/fin-ops-core/fin-ops/get-started/before-you-buy?context=/dynamics365/context/supply-chain
+        text: Buy Dynamics 365 Supply Chain Management
+      - url: /dynamics365/fin-ops-core/dev-itpro/deployment/choose-deployment-type?context=/dynamics365/context/supply-chain
+        text: Deploy Dynamics 365 Supply Chain Management
+    - title: Set up
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide?context=/dynamics365/context/supply-chain
+        text: Lifecycle Services (LCS) user guide
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding?context=/dynamics365/context/supply-chain
+        text: Project onboarding
+      - url: /dynamics365/supply-chain/warehousing/get-started-with-setting-up-module
+        text: Set up the Warehouse management module
+  - title: Administer and develop 
+    items:
+    - title: Manage environments
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs?context=/dynamics365/context/ops
+        text: Dynamics 365 Lifecycle Services resources
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/continuous-delivery-home-page?context=/dynamics365/context/ops
+        text: Continuous delivery
+      - url: /dynamics365/fin-ops-core/dev-itpro/migration-upgrade/upgrade-home-page?context=/dynamics365/context/ops
+        text: Upgrades, updates, and hotfixes
+    - title: Manage data storage
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages?context=/dynamics365/context/ops
+        text: Data management overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?context=/dynamics365/context/ops
+        text: Data import and export
+      - url: /dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations?context=/dynamics365/context/ops
+        text: Database movement operations
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities?context=/dynamics365/context/ops
+        text: Data entities overview
+    - title: System administration  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/system-administration-home-page?context=/dynamics365/context/ops
+        text: System administration overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation?context=/dynamics365/context/ops
+        text: Process automation
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview?context=/dynamics365/context/ops
+        text: Batch processing overview
+    - title: Organization administration
+      links:
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organization-administration-home-page?context=/dynamics365/context/supply-chain
+        text: Organization administration overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies?context=/dynamics365/context/supply-chain
+        text: Organizational hierarchies
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?context=/dynamics365/context/supply-chain
+        text: Workflow system
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?context=/dynamics365/context/supply-chain
+        text: Number sequences overview
+      - url: /dynamics365/fin-ops-core/fin-ops/organization-administration/overview-global-address-book?context=/dynamics365/context/supply-chain
+        text: Global address book overview
+    - title: Manage user access
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security?context=/dynamics365/context/ops
+        text: Role-based security
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users?context=/dynamics365/context/ops
+        text: Create users
+      - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles?context=/dynamics365/context/ops
+        text: Assign users to security roles
+    - title: Integrate with other products
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/office-integration/office-integration?context=/dynamics365/context/supply-chain
+        text: Microsoft Office
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page?context=/dynamics365/context/supply-chain
+        text: Microsoft Power BI
+      - url: /dynamics365/fin-ops-core/dev-itpro/power-platform/overview?context=/dynamics365/context/ops
+        text: Microsoft Power Platform
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview?context=/dynamics365/context/ops
+        text: Microsoft Azure Data Lake
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview?context=/dynamics365/context/ops
+        text: Third-party apps
+    - title: Develop integration
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview?context=/dynamics365/context/ops
+        text: Integration between finance and operations apps and third party apps
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api?context=/dynamics365/context/ops
+        text: Data management REST API
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page?context=/dynamics365/context/ops
+        text: Service endpoint overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview?context=/dynamics365/context/ops
+        text: Dual-write overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/design-best-practices?context=/dynamics365/context/ops
+        text: Design principles and best practices for data entities
+    - title: Platform development 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page?context=/dynamics365/context/ops
+        text: Develop and customize your environment
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances?context=/dynamics365/context/ops
+        text: Deploy and access development environments
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/application-stack-server-architecture?context=/dynamics365/context/ops
+        text: Application stack and server architecture
+    - title: Extend and customize 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-home-page?context=/dynamics365/context/ops
+        text: Extensibility overview
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap?context=/dynamics365/context/ops
+        text: Application extensibility roadmap
+      - url: /dynamics365/fin-ops-core/dev-itpro/extensibility/writing-extensible-code?context=/dynamics365/context/ops
+        text: Write extensible code
+      - url: /dynamics365/supply-chain/production-control/mes-integration
+        text: Integrate with third-party manufacturing execution systems
+      - url: /dynamics365/supply-chain/warehousing/process-guide-framework
+        text: Extend warehouse mobile processes
+    - title: Developer reference
+      links:
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference?context=/dynamics365/context/ops
+        text: API references
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference?context=/dynamics365/context/ops
+        text: X++ language reference
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/odata?context=/dynamics365/context/ops
+        text: Open Data Protocol (OData)
+      - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/mapping-reference?context=/dynamics365/context/ops
+        text: Dual-write mapping reference
+    - title: Developer tools 
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/development-tools-overview?context=/dynamics365/context/ops
+        text: Development tools in Visual Studio
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/version-control-metadata-navigation?context=/dynamics365/context/ops
+        text: Version control, metadata search, and navigation
+      - url: /dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation?context=/dynamics365/context/ops
+        text: Build automation using Azure
+    - title: Develop the user interface  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/user-interface-development-home-page?context=/dynamics365/context/ops
+        text: User interface development home
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/general-form-guidelines?context=/dynamics365/context/ops
+        text: General form guidelines
+      - url: /dynamics365/fin-ops-core/dev-itpro/user-interface/build-extensible-control?context=/dynamics365/context/ops
+        text: Build extensible controls
+  - title: Use
+    items:
+    - title: Warehouse management
+      links: 
+      - url: /dynamics365/supply-chain/warehousing/warehouse-management-overview
+        text: Warehouse management overview
+      - url: /dynamics365/supply-chain/warehousing/warehouse-configuration
+        text: Warehouse configuration overview
+      - url: /dynamics365/supply-chain/warehousing/inbound-load-handling
+        text: Warehouse handling of inbound loads for purchase orders
+      - url: /dynamics365/supply-chain/warehousing/release-to-warehouse-process
+        text: Release outbound orders to the warehouse
+      - url: /dynamics365/supply-chain/warehousing/cycle-counting
+        text: Cycle counting
+    - title: Warehouse Management mobile app
+      links: 
+      - url: /dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app
+        text: Install and connect the mobile app
+      - url: /dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
+        text: Set up mobile devices for warehouse work
+      - url: /dynamics365/supply-chain/warehousing/mobile-device-work-users
+        text: Mobile device user accounts
+      - url: /dynamics365/supply-chain/warehousing/mobile-device-user-settings
+        text: Mobile device user settings
+    - title: Inventory management  
+      links: 
+      - url: /dynamics365/supply-chain/inventory/arrival-overview
+        text: Inbound operations
+      - url: /dynamics365/supply-chain/inventory/quality-management-processes
+        text: Quality assurance
+      - url: /dynamics365/supply-chain/inventory/inventory-journals
+        text: Inventory activities
+      - url: /dynamics365/supply-chain/inventory/outbound-process
+        text: Outbound operations
+      - url: /dynamics365/supply-chain/inventory/inventory-visibility
+        text: Inventory Visibility service
+    - title: Transportation management
+      links: 
+      - url: /dynamics365/supply-chain/transportation/transportation-management-overview
+        text: Transportation management overview
+      - url: /dynamics365/supply-chain/transportation/transportation-management-engines
+        text: Transportation management engines
+      - url: /dynamics365/supply-chain/transportation/plan-freight-transportation-routes-multiple-stops
+        text: Plan freight transportation routes
+      - url: /dynamics365/supply-chain/transportation/tasks/load-building-workbench
+        text: The load building workbench
+      - url: /dynamics365/supply-chain/transportation/reconcile-freight-transportation-management
+        text: Reconcile freight
+    - title: Landed cost
+      links: 
+      - url: /dynamics365/supply-chain/landed-cost/landed-cost-overview
+        text: Landed cost overview
+      - url: /dynamics365/supply-chain/landed-cost/manage-voyages
+        text: Manage voyages
+      - url: /dynamics365/supply-chain/landed-cost/inbound-tracking
+        text: Track inbound voyages and shipping container journeys
+      - url: /dynamics365/supply-chain/landed-cost/estimate-manage-landed-costs
+        text: Estimate and manage landed costs
+      - url: /dynamics365/supply-chain/landed-cost/landed-cost-reports
+        text: Landed cost reports
+    - title: Product information management
+      links: 
+      - url: /dynamics365/supply-chain/pim/product-information
+        text: Product information overview
+      - url: /dynamics365/supply-chain/pim/build-product-configuration-model
+        text: Product configuration
+      - url: /dynamics365/supply-chain/pim/product-lifecycle
+        text: Product lifecycle states
+      - url: /dynamics365/supply-chain/pim/hazmat-overview
+        text: Hazardous materials
+      - url: /dynamics365/supply-chain/production-control/bill-of-material-bom
+        text: Bills of materials and formulas
+    - title: Engineering change management
+      links: 
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-scenarios
+        text: Engineering change management feature walkthrough
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-org-data-ownership-rules
+        text: Engineering companies and data ownership rules
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-versions-product-category
+        text: Engineering versions and engineering product categories
+      - url: /dynamics365/supply-chain/engineering-change-management/engineering-change-management
+        text: Manage changes to engineering products
+      - url: /dynamics365/supply-chain/engineering-change-management/manage-formula-changes
+        text: Manage changes in formulas and their ingredients
+    - title: Procurement and sourcing
+      links: 
+      - url: /dynamics365/supply-chain/procurement/procurement-sourcing
+        text: Procurement and sourcing home page
+      - url: /dynamics365/supply-chain/procurement/procurement-sourcing-overview
+        text: Procurement and sourcing overview
+      - url: /dynamics365/supply-chain/procurement/request-quotations
+        text: Requests for quotation (RFQs)
+      - url: /dynamics365/supply-chain/procurement/purchase-order-overview
+        text: Purchase orders
+      - url: /dynamics365/supply-chain/procurement/supply-risk-assessment-overview
+        text: Supply risk assessment
+    - title: Master planning  
+      links: 
+      - url: /dynamics365/supply-chain/master-planning/master-planning-home-page
+        text: Master planning home page
+      - url: /dynamics365/supply-chain/master-planning/master-plans
+        text: Set up master plans
+      - url: /dynamics365/supply-chain/master-planning/planning-optimization/ddmrp-overview
+        text: Demand Driven Material Requirements Planning (DDMRP)
+      - url: /dynamics365/supply-chain/master-planning/inventory-forecast
+        text: Inventory forecasts
+      - url: /dynamics365/supply-chain/master-planning/maintain-planned-orders
+        text: Manage planned orders
+    - title: Manufacturing and production
+      links: 
+      - url: /dynamics365/supply-chain/production-control/production-process-overview
+        text: Production process overview
+      - url: /dynamics365/supply-chain/production-control/bill-of-material-bom
+        text: Bills of materials and formulas
+      - url: /dynamics365/supply-chain/production-control/lean-manufacturing-overview
+        text: Lean manufacturing
+      - url: /dynamics365/supply-chain/warehousing/catch-weight-processing
+        text: Catch weight product processing with warehouse management
+      - url: /dynamics365/supply-chain/production-control/production-floor-execution-use
+        text: How workers use the production floor execution interface
+    - title: Asset management 
+      links: 
+      - url: /dynamics365/supply-chain/asset-management/objects/introduction-to-objects
+        text: Assets
+      - url: /dynamics365/supply-chain/asset-management/manage-maintenance-requests/maintenance-request-overview
+        text: Maintenance requests
+      - url: /dynamics365/supply-chain/asset-management/work-orders/introduction-to-work-orders
+        text: Work orders
+      - url: /dynamics365/supply-chain/asset-management/asset-management-mobile-app/asset-management-mobile-app-overview
+        text: The Asset Management mobile app
+      - url: /dynamics365/supply-chain/sensor-data-intelligence/sdi-home-page
+        text: Sensor Data Intelligence
+    - title: Service management
+      links: 
+      - url: /dynamics365/supply-chain/service-management/service-management-home-page
+        text: Service management overview
+      - url: /dynamics365/supply-chain/service-management/service-tasks
+        text: Service tasks
+      - url: /dynamics365/supply-chain/service-management/service-objects
+        text: Service objects
+      - url: /dynamics365/supply-chain/service-management/fulfill-service-agreements-overview
+        text: Fulfill service agreements
+      - url: /dynamics365/supply-chain/service-management/service-orders
+        text: Service orders
+    - title: Sales and marketing
+      links: 
+      - url: /dynamics365/supply-chain/sales-marketing/overview-sales-marketing
+        text: Sales and marketing overview
+      - url: /dynamics365/supply-chain/sales-marketing/delivery-dates-available-promise-calculations
+        text: Order promising
+      - url: /dynamics365/supply-chain/sales-marketing/sales-agreements
+        text: Sales agreements
+      - url: /dynamics365/supply-chain/warehousing/sales-returns
+        text: Sales returns
+      - url: /dynamics365/supply-chain/sales-marketing/customer-portal-overview
+        text: Customer portal
+    - title: Pricing management  
+      links: 
+      - url: /dynamics365/supply-chain/pricing-management/pricing-management-overview
+        text: Pricing management overview
+      - url: /dynamics365/supply-chain/pricing-management/price-attributes-overview
+        text: Price attributes
+      - url: /dynamics365/supply-chain/pricing-management/price-component-code
+        text: Price component codes
+      - url: /dynamics365/supply-chain/pricing-management/price-structure-overview
+        text: Price structures
+      - url: /dynamics365/supply-chain/pricing-management/discounts
+        text: Discounts
+    - title: Rebate management
+      links: 
+      - url: /dynamics365/supply-chain/rebate-management/rebate-management-overview
+        text: Rebate management overview
+      - url: /dynamics365/supply-chain/rebate-management/rebate-management-deals
+        text: Rebate deals
+      - url: /dynamics365/supply-chain/rebate-management/process-review-post
+        text: Process, review, and post rebates
+      - url: /dynamics365/supply-chain/rebate-management/deduction-workbench
+        text: Manage deductions
+    - title: Cost accounting
+      links:
+      - url: /dynamics365/finance/cost-accounting/cost-accounting-home-page?context=/dynamics365/context/supply-chain
+        text: Cost accounting overview
+      - url: /dynamics365/finance/cost-accounting/tasks/map-cost-element-dimension?context=/dynamics365/context/supply-chain
+        text: Map a cost element dimension
+      - url: /dynamics365/finance/cost-accounting/overhead-calculation?context=/dynamics365/context/supply-chain
+        text: Overhead calculation
+    - title: Cost management  
+      links: 
+      - url: /dynamics365/supply-chain/cost-management/cost-management-home-page
+        text: Cost management overview
+      - url: /dynamics365/supply-chain/cost-management/inventory-costing-faq
+        text: Inventory costing FAQ
+      - url: /dynamics365/supply-chain/cost-management/standard-cost-conversion-overview
+        text: Standard cost conversion overview
+      - url: /dynamics365/supply-chain/cost-management/costing-versions
+        text: Costing versions overview
+      - url: /dynamics365/supply-chain/global-inventory-accounting/global-inventory-accounting-home
+        text: Global Inventory Accounting
+    - title: Reporting  
+      links: 
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/information-access-reporting?context=/dynamics365/context/supply-chain
+        text: Information access and reporting
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/bi-reporting-home-page?context=/dynamics365/context/supply-chain
+        text: Reporting and analytics with Power BI
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting?context=/dynamics365/context/supply-chain
+        text: Electronic reporting (ER)
+      - url: /dynamics365/fin-ops-core/dev-itpro/analytics/er-overview-components?context=/dynamics365/context/supply-chain
+        text: Electronic reporting components
+  - title: Related products
+    items:
+        - title: Dynamics 365 Finance
+          summary: Monitor your global financial operations in real time, predict outcomes, and make data-driven decisions to drive business agility and growth.
+          url: /dynamics365/finance/
+        - title: Dynamics 365 Commerce
+          summary: Dynamics 365 Commerce delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences.
+          url: /dynamics365/commerce/
+        - title: Microsoft Supply Chain Center
+          summary: Microsoft Supply Chain Center is a secure, enterprise-grade solution that unlocks supply chain resiliency.
+          url: /supply-chain-platform/supply-chain-center/
+        - title: Microsoft Dynamics 365 Intelligent Order Management
+          summary: Intelligent Order Management is a suite of capabilities to help your organization coordinate, standardize, and optimize orders captured in a mix of channels and systems through a single point of order orchestration.
+          url: https://learn.microsoft.com/dynamics365/intelligent-order-management/
+        - title: Microsoft Power Platform
+          summary: Build, automate workflows, analyze data, rapidly design, configure, and publish modern websites, and build intelligent bots with no-code interface using Power Platform products.
+          url: /power-platform/index
+        - title: Dynamics 365 Project Operations
+          summary: Project Operations connects sales, resourcing, project management, and finance teams in a single application to win more deals, accelerate project delivery, and maximize profitability.
+          url: /dynamics365/project-operations/

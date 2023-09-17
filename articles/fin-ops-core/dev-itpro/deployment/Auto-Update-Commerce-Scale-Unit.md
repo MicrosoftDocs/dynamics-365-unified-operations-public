@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
-manager: tonyafehr
 ---
 
 # Auto-update for Commerce Scale Unit (cloud)

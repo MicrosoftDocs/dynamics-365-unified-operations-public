@@ -5,7 +5,7 @@ title: Validate a production flow and version
 description: This procedure shows how to create a new production flow and a first version for lean manufacturing. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  

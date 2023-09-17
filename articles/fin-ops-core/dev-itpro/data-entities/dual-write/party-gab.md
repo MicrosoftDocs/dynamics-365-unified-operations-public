@@ -2,10 +2,10 @@
 title: Party and global address book
 description: This article describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 08/02/2022
+ms.date: 08/22/2023
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-02-22
 
 
 
-*Party* and *global address book* are concepts in finance and operations applications. A party can be an organization or a person. It's convenient to globally store and manage properties of a party, such as the name, language, contacts, and addresses. Then, when a property value is changed in one place, the change is reflected in all places where the party is involved.
+**Party** and **Global address book** are concepts in finance and operations applications. A party can be an organization or a person. It's convenient to globally store and manage properties of a party, such as the name, language, contacts, and addresses. Then, when a property value is changed in one place, the change is reflected in all places where the party is involved.
 
 ## Party
 
@@ -251,9 +251,13 @@ During the lead qualification process, you can provide both a business phone num
 
 > [!NOTE]
 > The `CDS Contacts V2 (contacts)` map is the map that you stopped in step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
->
-> If the party and global address book solution is installed, you must disable the plugin named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. If you uninstall the party and global address book solution, then you must re-enable the plugin.
->
+>  
+> If the party and global address book solution is installed, you must disable the plugin named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. 
+> If the supply chain dual write solution version is 2.3.4.203 or later, the plugin will be disabled by plugin owners.
+> If the supply chain dual write solution version is 2.3.4.203 or earlier, disable the plugin by contacting support.
+> If you uninstalled the party and global address book solution, then you must re-enable the plugin.
+> To re-enable the plugin, contact support. 
+> 
 > The `msdyn_*partynumber` field (a single line text field) that is included in the **Account**, **Contact** and **Vendor** tables should not be used going forward. The label name has a prefix of **(Deprecated)** for clarity. Instead, use the **msdyn_partyid** field. The field is a lookup to the **msdyn_party** table.
 >
 > Table Name | Old field | New field

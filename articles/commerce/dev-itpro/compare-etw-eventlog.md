@@ -6,7 +6,7 @@ description: This article compares the functionality of the legacy Event Tracing
 author: stuharg
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.search.region: global
 ms.author: stuharg
 ms.reviewer: v-chgriffin
@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-12-30
 # Comparison of ETW and EventLog logger functionality
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article compares the functionality of the legacy Event Tracing for Windows (ETW) logger and the EventLog logger in Microsoft Dynamics 365 Commerce.
 

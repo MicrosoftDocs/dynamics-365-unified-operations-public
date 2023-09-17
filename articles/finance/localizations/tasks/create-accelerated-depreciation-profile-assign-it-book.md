@@ -3,7 +3,7 @@ title: Create accelerated depreciation profile and assign it to book
 description: For Japan, accelerated depreciation requires configuration of a depreciation profile, just like other depreciation methods.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

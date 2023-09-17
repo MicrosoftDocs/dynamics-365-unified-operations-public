@@ -194,7 +194,7 @@ The following key dimensions are used as filters to slice the aggregate measurem
 | Category hierarchies (Assigned to role Cost management) | Category hierarchy, Category level              |
 | Legal entities                                          | Legal entity names                              |
 | Fiscal calendars                                        | Fiscal calendar, Year, Quarter, Period, Month   |
-| Site                                                    | ID, Name, Address, State, Country               |
+| Site                                                    | ID, Name, Address, State, Country/Region               |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

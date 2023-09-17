@@ -13,7 +13,6 @@ ms.custom: bap-template
 # Vendor bank account workflow
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The vendor bank approval workflow ensures that bank data that suppliers submit is secure, financially compliant, and protected against fraud. This feature helps reduce the risk of fraud by detecting and preventing unapproved changes. Businesses can evaluate and approve any incoming changes to a supplier's bank account information, and can confirm that the provided bank details meet their organization's standards and policies.
 
@@ -39,7 +38,7 @@ To set up the vendor bank approval workflow feature, follow these steps.
 
         - *Allow changes without approval* – The data entity will update values for all fields without processing the changes through the workflow.
         - *Reject changes* – The data entity will never update values for protected fields. The import will fail if it includes updates for protected fields.
-        - *Create change proposals* – The data entity will update values for non-protected fields, and it will add new values for protected fields as proposed changes. The data entity will then automatically start the workflow as required.
+        - *Create change proposals* – The data entity will update values for non-protected fields, and it will add new values for protected fields as proposed changes. The data entity will not automatically start the workflow, and you will need to submit the proposed changes as required.
 
 1. In the list of vendor bank account fields, select the **IsEnabled** checkbox for each field that requires approval.
 1. On the Action Pane, select **Save**.

@@ -4,7 +4,6 @@
 title: Activating the setoff rule takes longer than expected
 description: This article provides troubleshooting information to help speed up the activation process for setoff rules. 
 author: shaoling
-manager: beya
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 

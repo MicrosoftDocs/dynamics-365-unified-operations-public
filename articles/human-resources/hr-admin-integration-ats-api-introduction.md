@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

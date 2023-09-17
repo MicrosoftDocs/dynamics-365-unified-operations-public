@@ -4,7 +4,7 @@ description: This article provides guidelines for setting up the fiscal integrat
 author: EvgenyPopovMBS
 ms.date: 02/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

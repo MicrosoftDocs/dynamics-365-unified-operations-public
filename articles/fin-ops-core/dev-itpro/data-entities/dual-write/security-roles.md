@@ -10,7 +10,7 @@ ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2023-01-03
 ms.dyn365.ops.version: F&O 10.0.30 PU54
-ms.custom: "intro-internal"
+ms.collection: get-started
 ---
 
 # Set up dual-write security roles and permissions
@@ -25,32 +25,12 @@ All Microsoft Dataverse users should be added to the **dual-write runtime user**
 
 In Dataverse, each business unit has a default owning team that uses the same name as the business unit. Global tables are associated with the root business unit. The default team of the root business unit should be assigned to a security role that gives read permissions to all Dataverse tables that participate in dual-write. For information about how to set up the security role, see [Manage the security roles of a team](/power-platform/admin/manage-teams#manage-the-security-roles-of-a-team). 
 
-To find the root business unit and default teams, follow these steps.
+To find the default team for the root business unit, follow these steps.
 
 1. In a web browser, sign in to the Dataverse or customer engagement apps environment (for example, `https://[environment].dynamics.com`). Replace **\[environment\]** with your environment's name.
 2. Open a new browser tab, and enter the following URL.
 
-    `https://[environment].dynamics.com/api/data/v9.0/businessunits?$select=name,businessunitid&$filter=_parentbusinessunitid_value%20eq%20null`
-
-    The result will resemble the following example.
-
-    ```
-    {
-        "@odata.context": "https://???.dynamics.com/api/data/v9.0/$metadata#businessunits(name,businessunitid)",
-        "value": [
-            {
-                "@odata.etag": "W/\"...\"",
-                "name": "[***]",
-                "businessunitid": "????????-????-????-????????"
-            }
-        ]
-    }
-    ```
-
-3. Find the **businessunitid** property, and record the value.
-4. Open a new browser tab, and enter the following URL. Replace **\[businessunitid\]** with the value that you recorded in step 3.
-
-    `https://???.dynamics.com/api/data/v9.0/teams?$select=name,teamid&$filter=_businessunitid_value%20eq%20[businessunitid]%20and%20isdefault%20eq%20true`
+    `https://[environment].dynamics.com/api/data/v9.0/teams?$filter=isdefault eq true and businessunitid/_parentbusinessunitid_value eq null&$select=name`
 
     The result will resemble the following example.
 

@@ -3,7 +3,7 @@ title: Set up a customer and sales order to be target of consolidated invoice
 description: In Japan, the customers usually use consolidated invoices for all transactions.
 author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process
+ms.topic: how-to
 ms.prod: 
 ms.technology: 
 audience: Application User

@@ -4,8 +4,8 @@
 title: Process collection letters
 description: This article shows how to create, print, and post collection letters. 
 author: ShivamPandey-msft
-ms.date: 07/01/2019
-ms.topic: business-process 
+ms.date: 03/28/2023
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustPosting, CustCollectionLetterNote   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: 8.1.3
 This article shows how to create, print, and post collection letters. This task uses the USMF demo company.
 
 ## Set up a collection letter sequence on the posting profile
-1. Go to **Navigation pane > Modules > Credit and collections > Setup > Customer posting profiles**.
+1. Go to **Credit and collections > Setup > Customer posting profiles**.
 2. Click **Edit**.
 3. Select a collection letter sequence from the drop-down list. If you do not want to generate collection letters for transactions using this posting profile, leave the field blank.  
 4. Expand the **Table restrictions** tab to change the way that collection letters are processed. If this field is set to **Yes**, then collection letters will be created for this posting profile.  
 
 ## Create collection letters
-1. Go to **Navigation pane > Modules > Credit and collections > Collection letter > Create collection letters**.
+1. Go to **Credit and collections > Collection letter > Create collection letters**.
 2. Select the transaction types for which you will collect letters. All of the open transactions for these types will be included in the calculation.  
 3. In the **Collection letter** field, select an option.
 4. In the **Collection letter date** field, enter the date of the collection letter.
@@ -48,12 +48,12 @@ This article shows how to create, print, and post collection letters. This task 
 
 6. Expand the **Records to include** section.
 7. Select **Filter**.
-8. In the **Criteria** field, enter a Customer ID. For example, enter 'US-001'.
+8. In the **Criteria** field, enter a **Customer ID**. For example, enter 'US-001'.
 9. Select **OK**.
 10. Select **OK**.
 
 ## Print collection letters
-1. Go to **navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**.
+1. Go to **Credit and collections > Collection letter > Review and process collection letters**.
 2. In the **Status** field, select **Created**.
 3. In the **Printed** field, select **Not printed**.
 4. Select **Print**.
@@ -78,17 +78,17 @@ Each collection letter is also associated with a collection letter code. The col
 Collection letters can also be set up at the customer level. In this case, the collection letter code for each transaction is tracked, but collection letter processing will be based on a single collection letter level that is stored for the customer. The single collection letter will contain all the transactions that are overdue for the customer. Because the grace days are now tracked at the customer level, the next collection letter won't be sent until the number of grace days has passed for the next collection letter in the sequence, even though transactions became overdue after the last collection letter was sent. This option helps reduce the number of collection letters that you must send to each customer.
 
 ### Set up the customer to control collection letters at the customer level
-1.  Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters** and select the **Collections** tab. 
+1.  Go to **Credit and collections > Setup > Accounts receivable parameters** and select the **Collections** tab. 
 2.  Change the value of **Create collection letter per** to **Customer**. 
-3.  Go to **navigation pane > Modules > Credit and collections > Collection letter > Review and process collection letters**. Only one collection letter will be generated for a customer with all the overdue transactions.
+3.  Go to **Credit and collections > Collection letter > Review and process collection letters**. Only one collection letter will be generated for a customer with all the overdue transactions.
 
 ## Ignore payments and credit memos when calculating the collection letter code
 If you include payments and credit memos in the transactions that will be included in the collection letters, you may have payments or credit memos that will trigger a collection letter. You can control how payments and credit memos control the collection letter code by changing the value of the **Ignore payments and credit memos when calculating the collection letter code** parameter. 
 
 To ignore payments and credit memos when calculating the collection letter code, do the following.
 
-1. Go to **Navigation pane > Modules > Credit and collections > Setup > Accounts receivable parameters** and click the **Collections** tab. 
-2. Change the value of **Ignore payments and credit memos when calculating the collection letter code** to **Yes**.
+1. Go to **Credit and collections > Setup > Accounts receivable parameters** and click the **Collections** tab. 
+2. Select **Yes** in the **Ignore payments and credit memos when calculating the collection letter code** field.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

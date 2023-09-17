@@ -5,7 +5,7 @@ title: Create a formula by copying from an existing formula
 description: This procedure shows how to quickly create a new formula by copying from an existing formula. 
 author: johanhoffmann
 ms.date: 08/29/2018
-ms.topic: business-process 
+ms.topic: how-to 
 ms.prod:  
 ms.technology:  
  
