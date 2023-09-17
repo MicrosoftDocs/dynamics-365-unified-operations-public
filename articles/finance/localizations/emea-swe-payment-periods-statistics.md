@@ -19,7 +19,7 @@ ms.search.form:
 
 This article explains how to set up and generate Statistics of vendor payments periods required in Sweden.
 
-# Introduction
+## Introduction
 
 Starting from March 1, 2022, a new regulation has been implemented in Sweden that mandates large companies, specifically those with more than 249 employees, to report their payment terms with subcontractors to the Swedish Companies Registration Office (Bolagsverket). This initiative is designed to counteract the trend of extending payment terms and aims to foster growth among smaller Swedish companies by creating the best possible conditions for them to develop and grow.
 
@@ -27,7 +27,7 @@ The information that these companies are required to report includes the average
 
 The large companies must then report payment terms statistics for the period from July 1 of the previous year through June 30 of the current year. The company must then submit the information by the end of September. For more information contact Swedish Companies Registration Office or visit their e-service portal at [www.bolagsverket.se](https://www.bolagsverket.se).
 
-# General Configuration
+## General Configuration
 Before you generate the report with statistics of vendor payment periods, you must ensure about complete setup following steps. 
 
 ## Import electronic configurations
@@ -42,7 +42,7 @@ Compare imported configurations in Reporting configurations in the Electronic Re
 
 For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 
-# Create reporting period and import SCRO vendor size definition data
+## Create reporting period and import SCRO vendor size definition data
 The definition of size of Swedish based companies is published every year by the Swedish Companies Registration Office (Bolagsverket) in the e-service. The SCRO publish a file with all small companies under 250 employees in scope for the vendor payment periods reporting. 
 
 In order to configure the **Statistics of vendor payment periods** report in Dynamics 365 Finance the reporting company must obtain that file by accessing the SCRO e-service using for accessing their registered business credentials.
@@ -71,7 +71,7 @@ The downloaded file from SCRO (Bolagsverket) e-service must be imported to Dynam
    > 1.	The SCRO data file is provided as a CSV file in the Bolagsverket e-service. Most antivirus services may interrupt downloading the file or saving and processing the downloaded file. It needs to be assured that file is downloaded completely and not corrupted. Verify size of downloaded file with information provided by SCRO. In the reporting period of the year 2023 the file size was approximately 120MB.
    > 2.	In case of any complication with importing and matching file you may search for vendor at the Bolagsverket e-service and manually add record for your vendor and its size category in the **Vendor Size Category** form.
 
-# Calculate vendor payment statistics
+## Calculate vendor payment statistics
 
 After the vendors size category classification of your vendors have been configured, you may run calculation of statistics. The Swedish Companies Registration Office (Bolagsverket) is interested in following statistical information for each size category of small vendor companies:
 -	The average agreed payment term,
@@ -103,5 +103,5 @@ In the result of calculation statistics the system will calculate all data requi
    >[!Note]
    >In the **Vendor invoices** form there are hidden fields which you may add to the form by choosing form customization options. You may also choose to export data from the form to excel spreadsheet for further analysis. 
 
-# Reporting to Swedish Companies Registration Office
+## Reporting to Swedish Companies Registration Office
 At the moment of the first release of this report the Swedish Companies Registration Office requires filing by entering manually the report in the Bolagsverket e-service. Therefore, navigate to the reporting area in the e-service and fill in the required statistics in the office forms online.
