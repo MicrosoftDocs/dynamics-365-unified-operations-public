@@ -4,7 +4,7 @@ description: This article provides information about how to check inventory avai
 author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
