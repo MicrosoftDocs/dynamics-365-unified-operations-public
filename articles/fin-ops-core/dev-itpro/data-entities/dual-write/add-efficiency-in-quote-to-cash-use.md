@@ -142,14 +142,14 @@ To set up this scheduled task, go to **Sales and marketing \> Accounts receivabl
 
 Because of differences in the data models of the two systems, sales orders that are created from the sales quotation process in Sales don't have the same data as sales orders that are created from the sales quotation process in Supply Chain Management. For sales orders that are created from the sales quotation process in Sales, a small set of data is carried over from the sales quotation. However, when the sales order is synced from Sales to Supply Chain Management, Supply Chain Management might initialize some field values (such as financial dimensions) without using the standard Supply Chain Management logic. Although this behavior might be appropriate in some scenarios, it isn't appropriate in other scenarios.
 
-To control this behavior, either [enable or disable](add-efficiency-in-quote-to-cash-enable.md) the **Copy quotation data to sales orders** functionality in Supply Chain Management.
+To control this behavior, either [enable or disable](add-efficiency-in-quote-to-cash-enable.md) **Copy quotation data to sales orders** functionality in Supply Chain Management.
 
 The system then works in one of the following ways, depending on whether the functionality is enabled or disabled:
 
 - **If the functionality is enabled:** Every sales order in Supply Chain Management carries over field values from its related sales quotations in Supply Chain Management, regardless of ownership.
 - **If the functionality is disabled:** Sales orders in Supply Chain Management don't carry over related sales quotation field values when ownership lies with Sales. Instead, those field values are initialized.
 
-When both the **Use message processor** and **Copy quotation data to sales orders** functionalities are [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), you can choose whether quotation information is copied in real time upon order creation or through the message processor. Follow these steps to set this option.
+When both **Use message processor** and **Copy quotation data to sales orders** functionalities are [enabled in Supply Chain Management](add-efficiency-in-quote-to-cash-enable.md), you can specify whether quotation information is copied in real time upon order creation or through the message processor. Follow these steps to set this option.
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. On the **Dynamics 365 Sales integration** tab, set the **Copy quotation data to sales order in batch** option to *No* to copy quotation information in real time upon order creation. Set it to *Yes* to copy quotation information asynchronously.
@@ -192,8 +192,8 @@ When **Use message processor** functionality is [enabled in Supply Chain Managem
 
 | Message type | Required functionality | Description |
 |---|---|---|
-| Calculate and push prices and totals for sales quotation | **Calculate and push prices** | This message type does a full recalculation of prices, discounts, and totals for sales quotation and pushes the results to Sales. |
-| Calculate and push prices and totals for sales order | **Calculate and push prices** | This message type does a full recalculation of prices, discounts, and totals for sales order and pushes the results to Sales. |
+| Calculate and push prices and totals for sales quotation | **Calculate and push prices** | This message type does a full recalculation of prices, discounts, and totals for sales quotations, and pushes the results to Sales. |
+| Calculate and push prices and totals for sales order | **Calculate and push prices** | This message type does a full recalculation of prices, discounts, and totals for sales orders, and pushes the results to Sales. |
 | Calculate and push totals for sales order | **Calculate and push prices** | This message type calculates and pushes totals for sales orders. |
 | Calculate and push totals for sales quotation | **Calculate and push prices** | This message type calculates and pushes totals for sales quotations. |
 | Create sales quotation journal | **Use message processor** | This message type creates the sales quotation journal. |
