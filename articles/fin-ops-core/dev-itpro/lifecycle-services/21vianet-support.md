@@ -6,7 +6,7 @@ ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Developer, Application user
+audience: Application user
 ms.reviewer: kfend
 ms.search.region: China (PRC)
 ms.author: kfend
