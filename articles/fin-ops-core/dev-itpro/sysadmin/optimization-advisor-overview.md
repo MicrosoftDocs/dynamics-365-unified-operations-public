@@ -6,7 +6,7 @@ ms.date: 07/23/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: global
 ms.author: kamaybac
