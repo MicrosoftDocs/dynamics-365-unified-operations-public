@@ -4,7 +4,7 @@ description: This article provides troubleshooting information that can help you
 author: RamaKrishnamoorthy
 ms.date: 08/01/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: ramasri
