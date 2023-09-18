@@ -16,7 +16,7 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](../deprecated-master-planning-overview.md) until they are ready to be migrated, but you must obtain a special exception from Microsoft to do so (see also [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
+Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they are ready to be migrated, but you must obtain a special exception from Microsoft to do so (see also [Migration to Planning Optimization for master planning](new-master-planning-engine.md)).
 
 Follow these steps to set a company to use the deprecated master planning engine on an environment that is otherwise enabled to use Planning Optimization:
 
