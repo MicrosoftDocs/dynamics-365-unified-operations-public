@@ -32,7 +32,7 @@ The fastest and easiest way to get started viewing your warehousing telemetry is
 
 ## Technical details of all available telemetry data
 
-In Application Insights, telemetry data from Supply Chain Management tenants and the Warehouse Management mobile app is logged as custom events. Technical details of all custom events and all data that could be logged for each event are available in the Supply Chain Management telemetry repository on GitHub. This information can help you to design your own custom Power BI reports and to explore the data directly in Application Insights. The following sample query files list all of the available event IDs, field names, and version requirements:
+In Application Insights, telemetry data from Supply Chain Management tenants and the Warehouse Management mobile app are logged as custom events. Technical details of all custom events and all data that could be logged for each event are available in the Supply Chain Management telemetry repository on GitHub. This information can help you to design your own custom Power BI reports and to explore the data directly in Application Insights. The following sample query files list all of the available event IDs, field names, and version requirements:
 
 - For Supply Chain Management tenant telemetry details, see the [WarehouseManagement.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseManagement.kql).
 - For Warehouse Management mobile app telemetry details, see the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
