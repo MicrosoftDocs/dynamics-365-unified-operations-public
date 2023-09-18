@@ -81,7 +81,8 @@ The main purpose of installing the Planning Optimization add-in is to connect th
 
 After you've installed the Planning Optimization Add-in for your environment, you must enable it in Supply Chain Management before you can start using it.
 
-### Enable Planning Optimization for your environment
+> [!NOTE]
+> You can continue to use the deprecated master planning engine for one or more previously created companies (until you're ready to migrate them) even while using Planning Optimization for the others. For instructions on how to set a company to use the deprecated master planning engine, see [Continue to use deprecated master planning for some companies](planning-optimization/continue-using-deprecated-planning.md).
 
 To configure your system to use the Planning Optimization Add-in for master planning, follow these steps:
 
@@ -105,23 +106,5 @@ To configure your system to use the Planning Optimization Add-in for master plan
 
 > [!NOTE]
 > If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to *Yes*, those jobs will fail.
-
-### <a name="exclude-po"></a>Continue to use deprecated master planning for some companies
-
-Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](../deprecated-master-planning-overview.md) until they are ready to be migrated, but you must obtain a special exception from Microsoft to do so (see also [Migration to Planning Optimization for master planning](../new-master-planning-engine.md)).
-
-Follow these steps to set a company to use the deprecated master planning engine on an environment that is otherwise enabled to use Planning Optimization:
-
-1. Use the company picker to choose the company (legal entity) that you want to set up.
-1. Go to **Master planning \> Setup \> Planning Optimization parameters**.
-1. Open the **Company information** tab.
-
-    [<img src="media/exclude-company-from-po.png" alt="Screenshot of the Company information tab." title="Screenshot of the Company information tab" width="350" />](media/exclude-company-from-po.png#lightbox)
-
-1. Set **Exclude company from running Planning Optimization** to one of the following values
-    - *Yes* – Use the deprecated master planning engine for this company.
-    - *No* – Use Planning Optimization for this company.
-1. Select **Save** on the Action Pane.
-1. Repeat this procedure for each company you want to set up.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
