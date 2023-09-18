@@ -19948,8 +19948,33 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-customizations.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-general-ledger.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-inventory-purge.md",
-      "redirect_url": "/dynamics365/supply-chain/inventory/archive-inventory-transactions",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-sales-orders.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-setup.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-tax-transactions.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
       "redirect_document_id": "false"
     }
   ]
