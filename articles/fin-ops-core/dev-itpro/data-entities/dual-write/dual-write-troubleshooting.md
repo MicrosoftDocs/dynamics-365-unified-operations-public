@@ -36,13 +36,12 @@ To turn on the trace log, follow these steps.
 
 1.	Log on to Dynamics 365, and then select **Settings** in the top navigation bar. On the Systems page, click **Administration**.
 2.	On the Administration page, click **System Settings**.
-3.	Select the **Customization** tab and plug-in, and then in the custom work flow activity tracing section change the dropdown to **All**. 
-This will trace all activities and provides a comprehensive set of data for the teams who must review potential issues.
+3.	Select the **Customization** tab and plug-in, and then in the custom work flow activity tracing section change the dropdown to **All**. All activities are traced and a comprehensive set of data is provided to the teams who must review potential issues.
 
 > [!NOTE]
 > Setting the dropdown to **Exception** will only provide trace information when exceptions (errors) occur.
 
-Once enabled, the plug-in trace logs will continue to be collected until they are manually turned off by returning to this location and selecting **Off**.
+After the plug-in is enabled, trace logs continue to be collected until they're manually turned off by returning to this location and selecting **Off**.
 
 ### View the trace log
 To view the trace log, follow these steps.
@@ -50,7 +49,7 @@ To view the trace log, follow these steps.
 1. On the Dynamics 365 Settings page, select **Settings** in the top navigation bar. 
 2. Select **Plugin Trace Log** in the **Customizations** section of the page.
 3. You can find entries in the list of trace logs, based on Type Name and/or Message Name.
-4. Open the desired entry to view the full log. The Message Block in the Execution section will provide available information for the plug-in. 
+4. Open the desired entry to view the full log. The Message Block in the Execution section provides available information for the plug-in. 
 If available, exception details will also be provided. 
 
 You can copy the contents of the trace logs and paste them into another application like Notepad or other tools to view logs or text files 
@@ -62,13 +61,13 @@ to more easily see all the content.
 
 Dual-write errors that originate in Dataverse can appear in the finance and operations app. To enable verbose logging for the errors, following these steps:
 
-1. For all project configurations in finance and operations app there is a flag **IsDebugMode** on the **DualWriteProjectConfiguration** table.
+1. For all project configurations in finance and operations apps, there is a flag **IsDebugMode** on the **DualWriteProjectConfiguration** table.
 2. Open the **DualWriteProjectConfiguration** using the Excel addin. To use the addin, enable design mode in the finance and operations Excel addin and add the **DualWriteProjectConfiguration** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
 3. Set **IsDebugMode** to **Yes** on the project.
 4. Run the scenario that is generating errors.
 5. The verbose logs are stored in the **DualWriteErrorLog** table.
-6. To lookup data on table browser use the following link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, replacing `999` as needed.
-7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), which is available for platform updates 37 and later. If you have this fix installed then the debug mode will capture more logs.  
+6. To look up data on table browser use the following link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, replacing `999` as needed.
+7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), which is available for platform updates 37 and later. If you have this fix installed. the debug mode captures more logs.  
 
 ## Check synchronization errors on the virtual machine for the finance and operations app
 
@@ -99,9 +98,7 @@ In Devtools, you see an error in the console logs:
 >(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:91130 ) at hs
 >(https://dataintegrator.trafficmanager.net/bundle.eed39124e62c58ef34d2.js:37:90151 )
 
-The UI uses browser 'session storage' to store some property values for loading the home page. For this to work, 
-third-party cookies need to be allowed in the browser for the site. The error is indicative of the UI not 
-being able to access the session storage. There can be two scenarios in which this issue is encountered:
+The UI uses browser 'session storage' to store some property values for loading the home page, so third-party cookies need to be allowed in the browser for the site. The error is indicative of the UI not being able to access the session storage. There can be two scenarios in which this issue is encountered:
 
 1.	You are opening the UI in incognito mode of Edge/Chrome and third-party cookies in incognito are blocked.
 2.	You have blocked third-party cookies altogether in Edge/Chrome.
@@ -112,7 +109,7 @@ Third-party cookies need to be allowed in browser settings.
 ### Google Chrome browser
 1st Option:
 1.	Go to settings by entering chrome://settings/ in the address bar, and then navigate to Privacy and Security -> Cookies and other site data.
-2.	Select 'Allow all cookies'. If you do not wish to do this, go for the second option.
+2.	Select 'Allow all cookies'. If you don't want to allow all cookies, use the second option.
 
 2nd Option:
 1.	Go to settings by entering chrome://settings/ in the address bar, and then navigate to Privacy and Security -> Cookies and other site data.
@@ -137,7 +134,7 @@ You can now link a new environment.
 
 ## Unable to view the sales order line Information form 
 
-When you create a sales order in Dynamics 365 Sales, clicking on **+ Add products** might redirect you to the Dynamics 365 Project Operations order line form. There is no way from that form to view the sales order line **Information** form. The option for **Information** does not appear in the dropdown below **New Order Line**. This happens because Project Operations has been installed in your environment.
+When you create a sales order in Dynamics 365 Sales, clicking on **+ Add products** might redirect you to the Dynamics 365 Project Operations order line form. There is no way from that form to view the sales order line **Information** form. The option for **Information** doesn't appear in the dropdown below **New Order Line**. The option is missing because Project Operations has been installed in your environment.
 
 To re-enable the **Information** form option, follow these steps:
 
@@ -148,13 +145,13 @@ To re-enable the **Information** form option, follow these steps:
 
 ## How to ensure data integration is using the most current finance and operations schema
 
-You may face data issues in your data integration if the most up-to-date schema is not being used. The following steps will help you refresh the entity list in finance and operations apps and the entities in the Data integrator.
+You may face data issues in your data integration if the most up-to-date schema is not being used. The following steps help you refresh the entity list in finance and operations apps and the entities in the Data integrator.
 
 ### Refresh entity list in finance and operations environment
 1.	Log on to your finance and operations environment.
 2.	Select **Data management**.
 3.	Inside Data management, select **Framework parameters**.
-4.	On the **Data import/export framework parameters** page, select the **Entity settings** tab, and select **Refresh entity list**. This may 
+4.	On the **Data import/export framework parameters** page, select the **Entity settings** tab, and select **Refresh entity list**. The list might
 take more than 30 minutes to refresh, depending on the number of entities involved.
 5.	Navigate to **Data management** and select **Data entities** to validate that the expected entities are listed. If the expected entities 
 are not listed, validate that the entities appear in your finance and operations environment and restore the missing entities, as needed.
