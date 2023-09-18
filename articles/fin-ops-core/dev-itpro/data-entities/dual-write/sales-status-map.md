@@ -4,7 +4,7 @@ description: This article explains how to set up the sales order status columns 
 author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: damadipa
