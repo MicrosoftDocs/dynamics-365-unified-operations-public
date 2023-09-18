@@ -21,18 +21,19 @@ audience: Application User
 
 ## Turn data into action to improve business performance 
 
-Finance departments are grappling with an array of data-related and tool-based difficulties that significantly hinder their productivity, accuracy, and capacity to lead strategic initiatives. Saddled with desperate and outdated data and siloed tools that necessitate slow and laborious manual processes for its extraction and integration to generate business insights.  
+Finance departments are grappling with an array of data-related and tool-based difficulties that significantly hinder their productivity, accuracy, and capacity to lead strategic initiatives. They are saddled with outdated data and siloed tools that require slow and laborious manual processes to extract and integrate that data so that business insights can be generated.
 
-Once the data is gathered, their analytical tools are often complex - requiring data science proficiencies or too simple and rigid - restricted by outdated ERP interfaces and lack of modern features like machine learning and AI. These factors constrain the discovery of valuable insights and opportunities to improve business performance. 
+After data is gathered, the analytical tools are often complex and require data science proficiencies. Alternatively, they are too simple and rigid, limited by outdated enterprise resource planning (ERP) interfaces and a lack of modern features such as machine learning and AI. These factors inhibit the discovery of valuable insights and opportunities to improve business performance. 
 
-To support agile decision-making finance leaders need to solve data challenges and ensure robust and timely insights are readily available at the point of decision-making to drive action. Our aim with business performance analytics is to solve this challenge.  
+To support agile decision making, finance leaders must solve data challenges and ensure that robust and timely insights are readily available at the point of decision making to drive action. The purpose of business performance analytics is to help them achieve these goals.
 
-### The transformative power of business performance analytics 
+### The transformative power of business performance analytics
 
-Business performance analytics transforms how finance departments manage complex data and utilize it for informed decision-making. Our solution helps Finance lay a foundation for integrating AI and other advanced capabilities, with the vision of providing an all-encompassing view of business processes and systems delivered in real-time through easy-to-use tools. Customers can seamlessly consolidate data from Dynamics 365 across finance, sales, supply chain, human resources, and project operations, as well as from third-party ERPs, P2P systems, and contracts. This integrated data model enables faster data refresh and greater automation, reducing manual tasks and IT dependence while optimizing decision-making processes. 
+Business performance analytics transforms how finance departments manage complex data and use it for informed decision making. Our solution helps Finance lay a foundation for the integration of AI and other advanced capabilities. The goal is to deliver an all-encompassing view of business processes and systems in real time, through easy-to-use tools. Customers can seamlessly consolidate data from Microsoft Dynamics 365, across Finance, Sales, Supply Chain Management, Human Resources, and Project Operations, and also from third-party ERP systems, P2P systems, and contracts. This integrated data model enables faster data updates and more automation. Therefore, it reduces manual tasks and IT dependence at the same time that it optimizes decision making processes.
 
-### Impactful outcomes with advanced analytics 
-Business performance analytics allows finance teams to access comprehensive and timely data easily. This streamlines routine financial reporting and task automation and significantly reduces cycle times. With streamlined data management and enhanced accessibility, finance teams can save significant time, unlocking opportunities for increased automation, heightened productivity, and greater accuracy. Consequently, finance teams can leverage their efficiency gains to shift focus from their routine reporting to optimizing business models and planning for the future. 
+### Impactful outcomes with advanced analytics
+
+Business performance analytics lets finance teams easily access comprehensive and timely data. In this way, it streamlines routine financial reporting and task automation, and significantly reduces cycle times. Through streamlined data management and enhanced accessibility, finance teams can save significant time and unlock opportunities for increased automation, productivity, and accuracy. By taking advantage of their efficiency gains, they can shift their focus from their routine reporting to optimizing business models and planning for the future.
 
 ### Prerequisites
 
@@ -42,7 +43,7 @@ Business performance analytics has the following prerequisites:
 - Version requirements
 - Set up business performance analytics
 - Use business performance analytics
-- FAQ's
+- FAQs
 
 ### System requirements
 
@@ -56,7 +57,7 @@ Business performance analytics requires Dynamics 365 Finance version 10.0.35 and
 
 ### Set up business performance analytics environment
 
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
+Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
 
 ### Install business performance analytics
 
