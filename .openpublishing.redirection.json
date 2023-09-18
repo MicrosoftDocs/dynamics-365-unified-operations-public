@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "articles/commerce/troubleshoot/customer-record-not-appearing.md",
       "redirect_url": "/troubleshoot/dynamics-365/commerce/commerce-headquarters-operations/customer-record-not-appearing",
       "redirect_document_id": "false"
@@ -141,7 +142,7 @@
     },
     {
       "source_path": "articles/commerce/troubleshoot/products-categories-unavailable.md",
-      "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/missing-products-categories/products-categories-unavailable",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/products-categories-unavailable",
       "redirect_document_id": "false"
     },
 
