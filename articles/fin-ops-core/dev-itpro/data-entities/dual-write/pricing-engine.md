@@ -4,7 +4,7 @@ description: This article describes how to use the pricing engine in Microsoft D
 author: RamaKrishnamoorthy
 ms.date: 03/10/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
