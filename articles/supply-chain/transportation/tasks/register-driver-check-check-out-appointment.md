@@ -46,18 +46,18 @@ This procedure shows how to register a driver check-in and a driver check-out. T
 2. Click OK.
 
 ## Appointment status
-The appointment status varies based on the actual driver check-in and check-out times in comparison to the predefined deadline, accurately reflecting the current circumstances.
+The status for appointments are varies based on the actual driver check-in and check-out times in comparison to the predefined deadline, accurately reflecting the current circumstances.
 
-| Appointment status| Description |
-|---|---|
+| Status| Description |
+|---------|---------|
+| <p>Waiting</p> |Driver not check-in, the remain left time does not exceed the scheduled deadline. |  
 | <p>Checked In</p> | Driver checked-in but not check-out, the remain left time does not exceed the scheduled deadline. |
-| <p>In progress</p> | Trailer already dropped. |
-| <p>Complete</p> | Driver check-in and check-out processes are successfully executed and concluded ahead of schedule. |
+| <p>Dropped Tailor</p> | Driver checked-in with enable 'Dropped tarilor' toggle. |
+| <p>Completed</p> | Driver check-in and check-out processes are successfully executed and concluded ahead of schedule. |
 | <p>Completed Late</p> | Driver check-in and check-out processes are successfully executed, but the complete time exceed the scheduled deadline. |
-| <p>Late warning</p> | Driver checked-in, the remaining time small than the Alert interval value. To setup Alert interval, go to **Transportation Management > Setup > Transportation Management parameters > General** , Fast tab: Driver check-in and check out. |
-| <p>Late check in</p> | Driver checked-in, the remaining time does not exceed the scheduled deadline. |
-| <p>Pending</p> | Driver not checked-in, the remaining time does not exceed the scheduled deadline. |
+| <p>Check out warning</p> | Driver checked-in but not check-out, the remaining time small than the Alert interval value.  To setup Alert interval, go to **Transportation Management > Setup > Transportation Management parameters > General** , Fast tab: Driver check-in and check out.|
 | <p>Late on check in</p> | Driver not checked-in, the remaining time has exceed the scheduled deadline. |
+| <p>Late on check out</p> |Driver checked-in but not check-out, the remaining time has exceed the scheduled deadline. |
 
 
 
