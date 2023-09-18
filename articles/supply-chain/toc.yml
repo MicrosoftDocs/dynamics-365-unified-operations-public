@@ -1973,6 +1973,8 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
+          - name: Continue to use deprecated master planning for some companies
+            href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
           - name: Differences between Planning Optimization and the deprecated master planning engine
