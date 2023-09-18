@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -86,8 +86,9 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </table>  
 
 > [!NOTE]
-> If you are running into issues from too many emails being sent in a short period of time, it is recommended you utilize the **Email throttling** feature mentioned in the **Configuration tab** section above. If that doesn't resolve the issue, you may consider adding the appropriate IP addresses from the [outbound IP safe list](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentFAQ#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment) to your DNS SPF record authorizing F&O to send emails from your domain. 
+> If you are running into issues from too many emails being sent in a short period of time, it is recommended you utilize the **Email throttling** feature mentioned in the **Configuration tab** section above. If that doesn't resolve the issue, you may consider adding the appropriate IP addresses from the [outbound IP safe list] to your DNS SPF record authorizing Dynamics 365 finance and operations to send emails from your domain. For more information, see [Outbound IP safe list](../../dev-itpro/deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
 
+ 
 #### Authentication
 
 <table>
