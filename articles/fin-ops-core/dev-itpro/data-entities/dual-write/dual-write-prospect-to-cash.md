@@ -4,7 +4,7 @@ description: This article provides information about Quote-to-cash in dual-write
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
