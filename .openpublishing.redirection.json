@@ -1,5 +1,150 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/commerce/troubleshoot/customer-record-not-appearing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/commerce-headquarters-operations/customer-record-not-appearing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/summary-taxes-custom-modules-10.0.27.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/commerce-headquarters-operations/summary-taxes-custom-modules-10.0.27",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/email-not-sent-when-new-customer-created.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/customer-accounts-loyalty/email-not-sent-when-new-customer-created",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/set-up-dev-environment-debugging.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/development-sdks/set-up-dev-environment-debugging",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/items-without-inventory-checked-out.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ecommerce-storefront/items-without-inventory-checked-out",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/pickup-store-link-missing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ecommerce-storefront/pickup-store-link-missing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/pickup-store-missing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ecommerce-storefront/pickup-store-missing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/restrict-access-storefront.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ecommerce-storefront/restrict-access-storefront",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/sign-in-redirects-back.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ecommerce-storefront/sign-in-redirects-back",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/fix-common-posting-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/financial-statements/fix-common-posting-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/z-report-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/financial-statements/z-report-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/inventory-errors-posting.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/financial-statements/inventory-errors-posting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/synchronization-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/order-management/synchronization-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/payment-type-credit-card-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/order-management/payment-type-credit-card-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/tax-miscalculated-online-order.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/order-management/tax-miscalculated-online-order",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/credit-card-entry-form-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/credit-card-entry-form-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/payments-auto-settled.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/payments-auto-settled",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/refund-declined.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/refund-declined",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/refund-miscalculated-partial-return.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/refund-miscalculated-partial-return",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/next-payment-link-not-appearing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/next-payment-link-not-appearing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/adyen-support.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/payments/adyen-support",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/store-commerce-extensions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-extensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/store-commerce-performance.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/store-commerce-setup-installation.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-setup-installation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/store-commerce-sign-in.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/point-of-sale/store-commerce-sign-in",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/hide-ratings-refiner.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/ratings-reviews/hide-ratings-refiner",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/security-group-site-builder.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/security-group-site-builder",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/missing-products-categories.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/missing-products-categories",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/troubleshoot/products-categories-unavailable.md",
+      "redirect_url": "/troubleshoot/dynamics-365/commerce/site-builder-content-management/missing-products-categories/products-categories-unavailable",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-asset-classification-values.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/privacy/privacy-home-page",
