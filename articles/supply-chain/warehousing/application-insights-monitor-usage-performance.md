@@ -30,16 +30,12 @@ Before you can collect and analyze Warehouse Management telemetry data, the foll
 
 The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. The downloadable reports and instructions for how to set them up are available in the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
 
-## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
-
-For more examples of how to work with KQL, plus answers to frequently asked questions, and tips about using Supply Chain Management telemetry with Excel, Power Automate, Power BI, PowerShell, and more, see the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry).
-
 ## Technical details of all available telemetry data
 
 In Application Insights, telemetry data from Supply Chain Management tenants and the Warehouse Management mobile app is logged as custom events. Technical details of all custom events and all data that could be logged for each event are available in the Supply Chain Management telemetry repository on GitHub. This information can help you to design your own custom Power BI reports and to explore the data directly in Application Insights. The following sample query files list all of the available event IDs, field names, and version requirements:
 
 - For Supply Chain Management tenant telemetry details, see the [WarehouseManagement.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseManagement.kql).
-- For Warehouse Management app telemetry details, see the the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
+- For Warehouse Management mobile app telemetry details, see the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
 
 ## View telemetry data in Application Insights
 
@@ -57,6 +53,10 @@ As a simple example, follow these steps.
     | take 100
     | sort by timestamp desc
     ```
+
+## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
+
+For more examples of how to work with KQL, plus answers to frequently asked questions, and tips about using Supply Chain Management telemetry with Excel, Power Automate, Power BI, PowerShell, and more, see the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry).
 
 ## Set up alerts on telemetry events
 
