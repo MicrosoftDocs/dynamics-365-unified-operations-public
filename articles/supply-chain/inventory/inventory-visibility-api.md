@@ -47,6 +47,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with Product Search](inventory-visibility-allocation.md#query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](inventory-visibility-allocation.md#Exact_query_with_product_search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
@@ -683,7 +685,6 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
-
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
@@ -772,7 +773,150 @@ The following example shows how to query all products in multiple sites and loca
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
+
 ```
+## Query with Product Search
+With embedded product search capability, belwo two APIs are enhanced to fetch current on-hand inventory data by query with product attribute.
+
+
+### ProductAttributeQuery contract
+
+~~~ Example
+{
+    "productFilter": {
+        "logicalOperator": "And",
+        "conditions": [
+            {
+                "conditionOperator": "IsExactly",
+                "productnumber": [
+                    "A0001"
+                ],
+            },
+        ],
+        "subfilters": [
+            {
+                "logicalOperator": "And",
+                "conditions": [
+                    {
+                        "conditionOperator": "BeginsWith",
+                        "productSearchName": [
+                            "boy"
+                        ]
+                    },
+                    {
+                        "conditionOperator": "IsExactly",
+                        "attributeName": "ProductType",
+                        "productType": [
+                            "Item"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "attributeFilter": {
+        "logicalOperator": "Or",
+        "conditions": [
+            {
+                "attributeName": "Weight Limit PoundDomain",
+                "attributeArea": " ProductAttribute",
+                "attributeValues": [
+                    "391"
+                ],
+                "conditionOperator": "LessEqual"
+            }
+        ],
+        "subFilters": [
+            {
+                "logicalOperator": "And",
+                "conditions": [
+                    {
+                        "attributeName": "Weight Limit PoundDomain",
+                        "attributeArea": " ProductAttribute",
+                        "attributeValues": [
+                            "391"
+                        ],
+                        "conditionOperator": "LessEqual"
+                    },
+                    {
+                        "attributeName": "Color",
+                        "attributeArea": " DimensionAttribute",
+                        "attributeValues": [
+                            "Black"
+                        ],
+                        "conditionOperator": "IsExactly"
+                    }
+                ]
+            }
+        ]
+    },
+}
+~~~
+
+| Field ID | Description |
+|---|---|
+| `logicalOperator` | Contain values: And, Or, logicalOperator is used to connect multiple conditions or condition and subFilters. Note that subFilters is actually a new productFilter or attributeFilter object which means you can have subFilter inside subFilter. |
+| `conditionOperator` | Contain values: IsExactly, IsNot, Contains, DoesNotContain, BeginsWith, IsOneOf, GreaterEqual, LessEqual, Between. |
+| `ProductFilter`  |Use to filter product by product related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, `purchaseUnitSymbol` to fit your business needs. |
+| `AttributeFilter`   |Filter product by attribute related information. | 
+| `attributeArea` | Contain values: ProductAttribute, DimensionAttribute, BatchAttribute |
+
+
+### <a name="Query_with_product_search"></a>Query with Product Search
+
+~~~ Txt
+Path:
+    /api/environment/{environmentId}/onhand/productsearch/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+{
+   productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+~~~
+
+### <a name="Exact_query_with_product_search"></a>Exact query with Product Search
+
+~~~ Txt
+Path:
+    /api/environment/{environmentId}/onhand/productsearch/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+{
+   productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+~~~
+
 
 ## Available to promise
 
