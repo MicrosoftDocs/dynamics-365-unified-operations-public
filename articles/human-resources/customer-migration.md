@@ -192,4 +192,7 @@ The DMF import and export project is migrated to the finance and operations infr
 ## What steps are needed to configure Power BI after migration to the finance and operaations infrastructure?
 Yes, follow the steps here: [Dynamics 365 Human Resources customer migration to the finance and operations infrastructure](hr-cust-migration.md#post-migration-considerations).
 
+## How to configure integration from Human Resources to finance?
+If you're configuring integration with finance, see [Dynamics 365 Human Resources customer migration](hr-cust-migration.md#post-migration-considerations).
+
 
