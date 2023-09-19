@@ -4,7 +4,7 @@ description: This article describes the integration of company data between fina
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

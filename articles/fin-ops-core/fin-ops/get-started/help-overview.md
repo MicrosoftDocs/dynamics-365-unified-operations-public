@@ -6,7 +6,7 @@ ms.date: 04/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: edupont
 ms.search.region: Global
 ms.author: edupont

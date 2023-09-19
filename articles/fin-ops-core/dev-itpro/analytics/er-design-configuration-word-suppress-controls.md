@@ -6,7 +6,7 @@ ms.date: 02/11/2021
 ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

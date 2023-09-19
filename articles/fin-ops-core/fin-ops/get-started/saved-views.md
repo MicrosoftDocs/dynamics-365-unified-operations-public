@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DefaultDashboard
-audience: Application User, IT Pro
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 

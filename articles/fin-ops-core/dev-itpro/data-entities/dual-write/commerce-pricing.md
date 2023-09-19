@@ -4,7 +4,7 @@ description: This article describes how to use the Microsoft Dynamics 365 Commer
 author: ShalabhjainMSFT
 ms.date: 11/19/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: v-chgri
 ms.search.region: global
 ms.author: shajain

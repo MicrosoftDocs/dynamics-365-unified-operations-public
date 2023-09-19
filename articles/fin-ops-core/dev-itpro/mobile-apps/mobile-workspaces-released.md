@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 

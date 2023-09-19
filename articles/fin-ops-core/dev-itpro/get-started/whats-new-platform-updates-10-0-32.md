@@ -6,7 +6,7 @@ description: This article lists the features that are included in the platform u
 author: twheeloc
 ms.date: 01/27/2023
 ms.topic: article
-audience: Developer, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks

@@ -4,7 +4,7 @@ description: This article provides information that can help you fix issues that
 author: RamaKrishnamoorthy
 ms.date: 08/10/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

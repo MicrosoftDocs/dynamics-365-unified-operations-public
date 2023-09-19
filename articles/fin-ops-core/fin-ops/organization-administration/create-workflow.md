@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 

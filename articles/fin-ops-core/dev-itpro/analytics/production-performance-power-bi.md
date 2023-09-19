@@ -6,7 +6,7 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir

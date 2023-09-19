@@ -4,7 +4,7 @@ description: This article describes the integration of note data in dual-write.
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
