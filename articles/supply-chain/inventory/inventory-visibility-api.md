@@ -780,6 +780,9 @@ With embedded product search capability, belwo two Inventory visibility APIs are
  - [Query by using the post method](#query-with-post-method)
  - [Exact query by using the post method](#exact-query-with-post-method) 
 
+>![Note]
+> When post IV query with product search,  we use the new request parameter ‘productSearch’ (a ProductAttributeQuery object inside) to find/filter productIds, so the original 'productid' request parameter in the request body will be removed in the new APIs.
+
 ### ProductAttributeQuery contract
 ProductAttributeQuery contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for developers to understand, interact with, and build applications that consume the API. 
 
@@ -882,7 +885,6 @@ Body:
         dimensionDataSource: string, # Optional
         filters: {
             organizationId: string[],
-            productId: string[],
             siteId: string[],
             locationId: string[],
             [dimensionKey:string]: string[],
@@ -890,6 +892,35 @@ Body:
         groupByValues: string[],
         returnNegative: boolean,
     }
+~~~
+
+The following example shows sample body content.
+
+~~~JSON
+{
+"productSearch": {
+        "productFilter": {
+            "logicalOperator": "And",
+            "conditions": [
+                {
+                    "conditionOperator": "isexactly",
+                    "productname": [
+                        "HDMI 6' Cables"
+                    ],
+                },
+            ],
+        },
+    },
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["usmf"],
+        "siteId": ["1"],
+        "locationId": ["11","12","13"],
+        "colorId": ["red"]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ~~~
 
 ### <a name="Exact_query_with_product_search"></a>Exact query with Product Search
@@ -910,13 +941,43 @@ Body:
         dimensionDataSource: string, # Optional
         filters: {
             organizationId: string[],
-            productId: string[],
             dimensions: string[],
             values: string[][],
         },
         groupByValues: string[],
         returnNegative: boolean,
     }
+~~~
+
+The following example shows sample body content.
+
+~~~JSON
+{
+    "productSearch": {
+        "productFilter": {
+            "logicalOperator": "And",
+            "conditions": [
+                {
+                    "conditionOperator": "isexactly",
+                    "productname": [
+                        "HDMI 6' Cables"
+                    ],
+                },
+            ],
+        },
+    },
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ~~~
 
 
