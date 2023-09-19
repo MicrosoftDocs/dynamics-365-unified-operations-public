@@ -2,7 +2,7 @@
 title: Price change tracking troubleshooting guide 
 description: This article describes common issues for price change tracking in Microsoft Dynamics 365 Commerce, and provides guidance and troubleshooting steps to help system users and partners mitigate the issues.
 author: leshe
-ms.date: 09/13/2023
+ms.date: 09/19/2023
 ms.topic: Troubleshooting
 audience: Application User, Developer, IT Pro
 ms.reviewer: 
@@ -28,7 +28,7 @@ Common symptoms of price change tracking issues are:
 
 The mitigation usually contains 2 parts: stop creating more batch jobs and clear existing batch jobs.
 
-### Mitigation step 1. Stop creating more batch jobs
+### Stop creating more batch jobs
 
 To stop creating more batch jobs, follow these steps.
 
@@ -38,7 +38,7 @@ To stop creating more batch jobs, follow these steps.
 
 In general, Microsoft recommends that you [specify a batch group for price change tracking batch jobs](/dynamics365/commerce/troubleshoot/price-change-tracking#specify-batch-group-for-price-change-tracking-batch-jobs) prior to enabling the price change tracking feature so that the impact of the price change tracking batch jobs is limited within given AOS instances, instead of blocking the default batch job pool.
 
-### Mitigation step 2. Stop and clear existing batch jobs 
+### Stop and clear existing batch jobs 
 
 To stop and clear existing batch jobs, run the following script in the Commerce headquarters database.
 
@@ -58,4 +58,4 @@ delete from BATCHJOB where CAPTION like '%Price change%' and status = 3 --error
 
 ## Additional resources
 
-[Price change tracking](../price-change-tracking.md)
+<!--[Price change tracking](../price-change-tracking.md)-->
