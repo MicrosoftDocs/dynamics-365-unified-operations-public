@@ -38,7 +38,7 @@ No, the Asset Management mobile app doesn't currently support offline mode.
 
 ## Is there multi-language support?
 
-Yes, the Asset Management mobile app is available in all the same languages that Dynamics 365 is, except for right-to-left (RTL) languages. We are awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
+Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. We are awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
@@ -46,7 +46,7 @@ The [Asset Management Viva Engage (Yammer) group](https://www.yammer.com/dynamic
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
-If the issue reproduces from a computer, restart the app and [capture a HAR-file to share with Microsoft support](https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file). Before sharing the HAR-file with anyone, make sure to redact secrets from it using a tool such as [Google's HAR analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
+If the issue reproduces from a computer, restart the app and [capture an HAR file to share with Microsoft support](/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file). Before sharing the HAR file with anyone, make sure to redact secrets from it using a tool such as the [Google HAR analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
 
 ## Are there any known issues affecting the release of the Asset Management mobile app?
 
