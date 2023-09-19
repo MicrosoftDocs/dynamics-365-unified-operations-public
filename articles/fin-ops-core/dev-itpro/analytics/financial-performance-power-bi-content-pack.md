@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
