@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: BudgetTrackingWorkspace 
-audience: Application user
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
