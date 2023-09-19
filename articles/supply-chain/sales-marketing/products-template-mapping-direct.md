@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: 
-audience: Application User, IT Pro
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
