@@ -4,7 +4,7 @@ description: This article describes error codes for the table map health check.
 author: RamaKrishnamoorthy
 ms.date: 05/31/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

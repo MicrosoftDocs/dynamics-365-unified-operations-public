@@ -4,7 +4,7 @@ description: This article describes how to switch vendor data integration betwee
 author: RamaKrishnamoorthy 
 ms.date: 09/20/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri

@@ -4,7 +4,7 @@ description: This article describes the scenarios that are supported for dual-wr
 author: RamaKrishnamoorthy
 ms.date: 06/28/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

@@ -6,7 +6,7 @@ description: This article explains new changes that have been introduced for the
 author: matapg007
 ms.date: 12/19/2022
 ms.topic: article
-audience: ADeveloper, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: matgupta

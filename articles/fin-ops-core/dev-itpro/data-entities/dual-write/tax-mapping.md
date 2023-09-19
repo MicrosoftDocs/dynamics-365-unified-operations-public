@@ -4,7 +4,7 @@ description: This article describes the integration of tax data between finance 
 author: josaw
 ms.date: 09/06/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: josaw

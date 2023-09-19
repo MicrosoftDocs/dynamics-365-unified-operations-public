@@ -4,7 +4,7 @@ description: This article describes vendor data integration between finance and 
 author: RamaKrishnamoorthy 
 ms.date: 07/15/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri

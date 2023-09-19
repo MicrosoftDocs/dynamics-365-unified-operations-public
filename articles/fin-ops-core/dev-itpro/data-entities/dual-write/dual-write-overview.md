@@ -4,7 +4,7 @@ description: This article provides an overview dual-write, which provides near-r
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: overview
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

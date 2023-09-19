@@ -5,7 +5,7 @@ author: kfend
 ms.date: 04/01/2021
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
