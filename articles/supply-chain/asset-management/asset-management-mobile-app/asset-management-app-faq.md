@@ -46,11 +46,17 @@ The [Asset Management Viva Engage (Yammer) group](https://www.yammer.com/dynamic
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
-If the issue reproduces from a computer, restart the app and [capture an HAR file to share with Microsoft support](/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file). Before sharing the HAR file with anyone, make sure to redact secrets from it using a tool such as the [Google HAR analyzer](https://toolbox.googleapps.com/apps/har_analyzer/).
+If you see the error message "Error when trying to retrieve data from the network", follow these steps to diagnose and solve the issue:
+
+1. Run the Asset Management app in a browser as described in [Run an app in a web browser](/power-apps/user/run-app-browser).
+1. If you see the same error while running in a browser, set up your browser to [capture a HAR file](/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file) and then reload the tab where the app is running.
+1. Use a tool such as the [Google HAR analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) to redact all secrets from the HAR file.
+1. Contact Microsoft Support and share the redacted HAR file with them.
+1. Microsoft Support will help you diagnose and solve the issue.
 
 ## Are there any known issues affecting the release of the Asset Management mobile app?
 
-Yes. The Asset Management mobile app has a few known issues that we expect to correct in an upcoming release. The following subsections describe the known issues.
+Yes, the Asset Management mobile app has a few known issues that we expect to correct in an upcoming release. The following subsections describe them.
 
 ### Limited file-type support for attachments
 
