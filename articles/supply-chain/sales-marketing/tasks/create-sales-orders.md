@@ -11,8 +11,8 @@ ms.technology:
  
 # optional metadata 
  
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals   
-audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
+audience: Application User
 # ms.devlang:  
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm:  
