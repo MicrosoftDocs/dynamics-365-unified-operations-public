@@ -1,12 +1,12 @@
 ---
 title: Trace generated report results and compare them with baseline values
-description: This article explains how you can compare the results of generated Electronic reporting (ER) reports with baseline report values.
+description: This article explains how to compare the results of generated Electronic reporting (ER) reports with baseline report values.
 author: kfend
 ms.date: 06/17/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
