@@ -6,7 +6,7 @@ ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: global
 ms.author: filatovm
