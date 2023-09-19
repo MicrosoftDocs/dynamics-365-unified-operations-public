@@ -4,7 +4,7 @@
 title: Configure integration with Finance
 description: This article describes the integration between Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: twheeloc  
-ms.date: 08/19/2021
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -262,5 +262,24 @@ The location ID used for worker address isn't part of a number sequence. When in
 The following illustration shows an example of a template mapping in Data Integrator. 
 
 ![Template Mapping.](./media/IntegrationMapping.png)
+
+## Migration considerations
+As part of the migration from Human Resources to Finance, the dual-write maps are also supported.
+
+The following table can be used for the equivalent map from data integrator map to dual-write map.
+
+|Data integrator map|	Dual write map |
+|------------------|-----------------|
+|Job functions to Compensation job function|	Compensation job function (cdm_jobfunctions)
+|Departments to operating Unit	|Department V2 (cdm_departments)
+|Job types to compensation job type|	Compensation job type (cdm_jobtypes)
+|Jobs to jobs	|Jobs dual-write (cdm_jobs)
+|Position types to position type	|Position type (cdm_positiontypes)
+|<ul><li>Job positions to base position</li><li>Job positions to position details</li><li>Job positions to position durations</li><li>Job positions to position hierarchies</li></ul>	|Job positions dual-write (cdm_jobpositions)|
+|Workers to worker|	Worker (cdm_workers)|
+|<ul><li>Employments to employment</li><li>Employments to employment detail</li></ul>|	Employment per company (cdm_employments)|
+|Position worker assignment to position worker assignments	|Position worker assignments V2 (cdm_positionworkerassignmentmaps)|
+|Worker addresses to worker postal address V2	|Worker postal addresses dual-write (cdm_workeraddresss)|
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
