@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: ERBDWorkspace, ERBDParameters
 # ROBOTS: 
-audience: Application User
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
