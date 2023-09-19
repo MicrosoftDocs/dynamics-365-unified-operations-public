@@ -57,31 +57,15 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     *App version is up to date*
 
-    *Dual Write is supported on finance and operations app environments with Platform Update PU 33 (App version 10.0.9) or above*
-
-2. Install the dual-write core solution.
-
-    The dual-write core solution contains metadata for your table maps and must be installed in your environments.
-
-    1. In Power Apps, in the left pane, select **Solutions**.
-    2. Select **Open AppSource**.
-    3. Select the **Dual Write Core** solution.
-    4. Follow the prompts to import the solution.
-
-    ![Installing the dual-write core solution.](media/dual-write-core-solution.png)
-
-    **Related health check result:**
-
-    *The dual-write core solution was found*
-
-    *The dual-write core solution contains metadata for your table maps and must be installed in the environment*
+    *Dual Write is supported on finance and operations app environments with Platform Update PU 33 (App version 10.0.9) or later*
 
 3. Grant Dataverse access so that it can connect to a finance and operations app.
 
     1. Open your instance of the finance and operations app, search and navigate to Azure Active Directory applications.
 
     2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
-    3. Repeat the previous two steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
+    3. On the new row for the client, select an application user that is enabled and has the appropriate privileges for dual-write data management.
+    4. Repeat the previous three steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
     When you've finished, follow these steps to refresh the list of tables:
 
@@ -96,7 +80,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 4. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
-    + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse that will be configured for dual-write.
+    + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse configured for dual-write.
 
         + 00000015-0000-0000-c000-000000000000
         + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
@@ -125,7 +109,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
 
 5. Provide app consent in the tenant.
-   For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
+   For dual-write core solution version 1.0.16.0 or later, this step is no longer needed.
 
     **Related health check result:**<br>
     *Apps in tenant*<br>
@@ -133,26 +117,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b*
 
-6. Make sure that the dual-write plug-ins are enabled.
-
-    This step isn't required, because the plug-ins should be enabled as part of the process of installing the dual-write core solution. However, if the health check fails, follow these steps to manually enable the dual-write plug-ins:
-
-    1. Download the [Plug-in Registration Tool](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PluginRegistrationTool).
-
-        In the Plugin Registration Tool, there should be two plug-in assemblies that are associated with dual-write: **DualWriteRegistration.Plugins** and **DualWriteRuntime.Plugins**. These assemblies have plug-in steps that must be enabled, in order, before dual-write can be used. To view the plug-in steps, expand a plug-in assembly and its plug-in types. All the steps that belong to the dual-write plug-in assemblies should be enabled.
-
-    2. To enable a step, select and hold the step (or right-click it), and then select **Enable**. If no **Enable** option is available, only a **Disable** option, the step has already been enabled and doesn't have to be changed.
-
-        ![Using the Plug-in Registration Tool.](media/plugin-registration-tool.png)
-
-    > [!NOTE]
-    > If the dual-write plug-in assemblies can't be found, import the latest version of the dual-write core solution.
-
-    **Related health check result:**<br>
-    *The dual-write registration and runtime plugins are enabled*<br>
-    *To ensure listening into CRUD operations on the Dataverse, the dual-write plugins need to be enabled*
-
-7. Install the **Dual-write application orchestration solutions**.
+7. Install **Dual-write application solutions**.
 
     In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover master data scenarios like
     
@@ -161,13 +126,13 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     + On-demand functions like pricing, inventory, ATP dates.
     + Reference data for ledger, tax, payment terms, and schedules etc.
 
-Follow the [prerequisites instructions](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it. 
+    Follow the [prerequisites instructions](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it. 
      
-Dual-write framework is extensible and accommodates customer-centric business data exchange through a few more clicks.
+    The dual-write framework is extensible and accommodates customer-centric business data exchange through a few more clicks.
     
-> [!NOTE]
-> You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
-> It may take a few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
+    > [!NOTE]
+    > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
+    > It may take a few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 
@@ -182,7 +147,7 @@ Dual-write framework is extensible and accommodates customer-centric business da
 
 **For dual-write core solution lower than version 1.0.16.0 only**
 
-1. In step 3b above, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
+1. In step 3b, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
 2. Add app consent in the tenant:
 
     1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.
