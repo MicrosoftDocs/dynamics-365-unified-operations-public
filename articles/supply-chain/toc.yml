@@ -1737,6 +1737,8 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
+        - name: Configure product search service
+          href: inventory/product-search-setup.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
