@@ -776,10 +776,12 @@ The following example shows how to query all products in multiple sites and loca
 
 ```
 ## Query with Product Search
-With embedded product search capability, belwo two APIs are enhanced to fetch current on-hand inventory data by query with product attribute.
-
+With embedded product search capability, belwo two Inventory visibility APIs are enhanced with product search capabilities.
+ - [Query by using the post method](#query-with-post-method)
+ - [Exact query by using the post method](#exact-query-with-post-method) 
 
 ### ProductAttributeQuery contract
+ProductAttributeQuery contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for developers to understand, interact with, and build applications that consume the API. 
 
 ~~~ Example
 {
