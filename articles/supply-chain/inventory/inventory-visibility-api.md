@@ -776,15 +776,19 @@ The following example shows how to query all products in multiple sites and loca
 
 ```
 ## Query with Product Search
-With embedded product search capability, belwo two Inventory visibility APIs are enhanced with product search capabilities.
+With embedded product search capability, belwo two Inventory visibility APIs are enhanced to new APIs with product search capabilities.
  - [Query by using the post method](#query-with-post-method)
  - [Exact query by using the post method](#exact-query-with-post-method) 
 
 >![Note]
-> When post IV query with product search,  we use the new request parameter ‘productSearch’ (a ProductAttributeQuery object inside) to find/filter productIds, so the original 'productid' request parameter in the request body will be removed in the new APIs.
+> When post Inventory Visibility query with product search,  we use the new request parameter ‘productSearch’ (a ProductAttributeQuery object inside) to find/filter productIds, so the original 'productid' request parameter in the request body will be removed in the new APIs.
 
-### ProductAttributeQuery contract
-ProductAttributeQuery contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for developers to understand, interact with, and build applications that consume the API. 
+> [!IMPORTANT]
+> You need to make sure the product search service is successfuly enabled piror to call the new APIs. Details information please refer to : [Product Search Setup](product-search-setup.md).
+
+
+### ProducSearch contract
+ProductSearch contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for users to understand, interact with, and build applications that consume the IV APIs in certain scenarios.
 
 ~~~ Example
 {
