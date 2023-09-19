@@ -23,15 +23,14 @@ This article describes how to create pages for on behalf of (OBO) functionality 
 
 To enable OBO functionality in site builder, you must complete the following three procedures, as described in this article:
 
-- [Create a new page for selecting a business partner organization](#create-a-business-partner-organization-selection-page).
-- [Create a new page for selecting a business partner](#create-a-business-partner-selection-page).
+- [Create a new page for selecting a business partner organization and a business partner](##create-a-business-partner-selection-page).
 - [Modify a B2B sign-in page so that it includes a button that the account manager can use to sign-in](#modify-a-b2b-sign-in-page-so-that-it-includes-an-employee-sign-in-button).
 
 You might also want to complete the following optional procedure:
 
 - [Modify the word "For" in the header](#modify-the-word-for-in-the-header-optional)
 
-## Create a business partner organization selection page
+## Create a business partner organization and a business partner user selection page
 
 To create a business partner organization selection page in Commerce site builder, follow these steps.
 
@@ -42,7 +41,7 @@ To create a business partner organization selection page in Commerce site builde
 1. Under **Review and finish**, review the page configuration. If you must edit the page information, select **Back**. If the page information is correct, select **Create page**. 
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **business-partners** module, and then select **OK**.
-1. In the property pane for the module, edit the module properties. For example, enter **Select a Business Partner Organization** as the heading.
+1. In the property pane for the module, edit the module properties. For example, enter **Select a Business Partner** as the heading.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
@@ -54,10 +53,6 @@ To configure a route for the business partner page, follow these steps.
 1. Under **Business partner selection**, select **Add a link**.
 1. In the **Add a link** dialog box, select the business partner organization that you created, and the select **Apply**.
 1. Select **Save and publish**.
-
-## Create a business partner selection page
-
-To create a business partner selection page, follow the same steps that you used to create the business partner organization page, and use the same **business-partner** module. In the property pane for the container, specify a different heading (for example, **Select a Business Partner**).
 
 ## Modify a B2B sign-in page so that it includes an Employee sign-in button
 
