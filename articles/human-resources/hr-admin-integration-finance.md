@@ -271,15 +271,15 @@ The following table can be used for the equivalent map from data integrator map 
 |Data integrator map|	Dual write map |
 |------------------|-----------------|
 |Job functions to Compensation job function|	Compensation job function (cdm_jobfunctions)
-|Departments to operating Unit	|Department V2 (cdm_departments)
-|Job types to compensation job type|	Compensation job type (cdm_jobtypes)
-|Jobs to jobs	|Jobs dual-write (cdm_jobs)
-|Position types to position type	|Position type (cdm_positiontypes)
-|<ul><li>Job positions to base position</li><li>Job positions to position details</li><li>Job positions to position durations</li><li>Job positions to position hierarchies</li></ul>	|Job positions dual-write (cdm_jobpositions)|
-|Workers to worker|	Worker (cdm_workers)|
-|<ul><li>Employments to employment</li><li>Employments to employment detail</li></ul>|	Employment per company (cdm_employments)|
-|Position worker assignment to position worker assignments	|Position worker assignments V2 (cdm_positionworkerassignmentmaps)|
-|Worker addresses to worker postal address V2	|Worker postal addresses dual-write (cdm_workeraddresss)|
+|Departments to Operating unit	|Department V2 (cdm_departments)
+|Job types to Compensation job type|	Compensation job type (cdm_jobtypes)
+|Jobs to Jobs	|Jobs dual-write (cdm_jobs)
+|Position types to Position type	|Position type (cdm_positiontypes)
+|<ul><li>Job positions to Base position</li><li>Job positions to Position details</li><li>Job positions to Position durations</li><li>Job positions to Position hierarchies</li></ul>	|Job positions dual-write (cdm_jobpositions)|
+|Workers to Worker|	Worker (cdm_workers)|
+|<ul><li>Employments to Employment</li><li>Employments to Employment detail</li></ul>|	Employment per company (cdm_employments)|
+|Position worker assignment to Position worker assignments	|Position worker assignments V2 (cdm_positionworkerassignmentmaps)|
+|Worker addresses to Worker postal address V2	|Worker postal addresses dual-write (cdm_workeraddresss)|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
