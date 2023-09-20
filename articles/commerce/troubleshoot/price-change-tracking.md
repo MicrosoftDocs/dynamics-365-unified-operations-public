@@ -26,7 +26,10 @@ Common symptoms of price change tracking issues are:
 
 ## Mitigations
 
-The mitigation for price change tracking issues usually contains two parts: stop creating more batch jobs and clear existing batch jobs.
+The mitigation for price change tracking issues usually consists of two parts:
+
+- Stop creating more batch jobs.
+- Clear existing batch jobs.
 
 ### Stop creating more batch jobs
 
@@ -36,7 +39,7 @@ To stop creating more batch jobs, follow these steps.
 1. Under **Price change tracking**, remove all legal entities from the grid, and then select **Save**.
 1. Restart Application Object Server (AOS).
 
-In general, Microsoft recommends that you [specify a batch group for price change tracking batch jobs](/dynamics365/commerce/troubleshoot/price-change-tracking#specify-batch-group-for-price-change-tracking-batch-jobs) prior to enabling the price change tracking feature so that the impact of the price change tracking batch jobs is limited within given AOS instances, instead of blocking the default batch job pool.
+In general, Microsoft recommends that you [specify a batch group for price change tracking batch jobs](/dynamics365/commerce/troubleshoot/price-change-tracking#specify-batch-group-for-price-change-tracking-batch-jobs) prior to enabling the price change tracking feature. This action limits the impact of the price change tracking batch jobs to within given AOS instances, instead of blocking the default batch job pool.
 
 ### Stop and clear existing batch jobs 
 
