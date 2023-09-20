@@ -37,7 +37,7 @@ This article is intended for customers who have signed up for the current versio
 
 ## Lifecycle Services workspace for the current versions of the finance and operations apps
 
-When you sign up for the current versions of finance and operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at the preferred [Lifecycle Services endpoint](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo#supported-geographies-and-endpoints) using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
+When you sign up for the current versions of finance and operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at the preferred [Lifecycle Services endpoint](../deployment/deployment-options-geo#supported-geographies-and-endpoints.md) using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
 
 -   Enabled features, based on the offer that you selected
 -   Environments that are deployed and managed by Microsoft
