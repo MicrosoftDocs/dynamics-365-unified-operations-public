@@ -3907,7 +3907,9 @@
           - name: Swedish Intrastat
             href: localizations/emea-swe-intrastat.md
           - name: EU sales list
-            href: localizations/emea-swe-eu-sales-list.md          
+            href: localizations/emea-swe-eu-sales-list.md      
+          - name: Report statistics of vendor payment periods
+            href: localizations/emea-swe-payment-periods-statistics.md
         - name: Switzerland
           items:
           - name: Switzerland overview
