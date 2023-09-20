@@ -17,16 +17,16 @@ ms.search.validFrom: 2023-09-13
 
 This article describes common issues for price change tracking in Microsoft Dynamics 365 Commerce, and provides guidance and troubleshooting steps to help system users and partners mitigate the issues.
 
-
 ## Symptoms
 
 Common symptoms of price change tracking issues are:
-1. The price change tracking batch job takes too long
-2. Too many price change tracking batch jobs are triggered and waiting in queue
+
+- The price change tracking batch job takes too long.
+- Too many price change tracking batch jobs are triggered and waiting in queue.
 
 ## Mitigations
 
-The mitigation usually contains 2 parts: stop creating more batch jobs and clear existing batch jobs.
+The mitigation for price change tracking issues usually contains two parts: stop creating more batch jobs and clear existing batch jobs.
 
 ### Stop creating more batch jobs
 
