@@ -39,6 +39,8 @@ Customers will be able to take up to 7 service updates per year and are required
 > Service updates will not be provided during the months of January, March, June, September, and December. 
 
 ### Targeted release schedule (dates subject to change)
+> [!NOTE]
+> There are important changes coming to the service update release schedule. Details on the changes and updated schedule dates will be made available by end of September 2023.
 
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
