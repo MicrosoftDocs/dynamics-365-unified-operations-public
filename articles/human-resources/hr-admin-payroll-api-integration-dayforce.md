@@ -1,7 +1,6 @@
 ---
 
 # required metadata
-
 title: API based Payroll integration with Ceridian Dayforce
 description: This article describes the API based Payroll integration API
 Author: TulsiJhaveri
@@ -62,7 +61,7 @@ Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It
 For more information about installing virtual tables, see [Install virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) and 
 [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables)
 
-After the virtual tables are installed, generate the virtual tables for the data to pass to Dayforce. The Dayforce people connector pulls data from the tables listed below, to ensure that Dayforce can execute a proper payroll. For additional information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities).
+After the virtual tables are installed, generate the virtual tables for the data to pass to Dayforce. The Dayforce people connector pulls data from the tables listed below, to ensure that Dayforce can execute a proper payroll. For additional information, see [Enable Microsoft Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 Go to: **Dataverse integration** > **Virtual tables**
 
@@ -149,7 +148,7 @@ To connect the Microsoft Dynamics 365 Human Resources environment to Ceridian's 
 
 The customer Microsoft tenant controls all activity in the customer’s Microsoft environment including controlling security and access to all the Microsoft applications. Enabling the Dayforce People Connector on the tenant enables the connector to communicate with the necessary Microsoft applications used in this integration.
 
-- Go to:  https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6817703f-e5b3-4eec-b11f-ba6367f1b156&response_type=id_token&redirect_uri=https://developersdev.dayforce.com/Dev/Microsoft-to-Dayforce-Connector.aspx&scope=openid&response_mode=fragment&state=12345&nonce=678910
+- Go to (https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6817703f-e5b3-4eec-b11f-ba6367f1b156&response_type=id_token&redirect_uri=https://developersdev.dayforce.com/Dev/Microsoft-to-Dayforce-Connector.aspx&scope=openid&response_mode=fragment&state=12345&nonce=678910)
 - Enable the URL for the company
   ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/129548753/520495b3-fcab-41d0-a3bb-1e3032d3ae1c)
 
@@ -167,9 +166,9 @@ The Dayforce People Connector will need to be added to your specific Dataverse.
 
 For more information, see: 
 
-[Authentication and authorization](../../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization#security-roles-in-microsoft-power-platform)
-[Security roles and privileges](../../power-platform/admin/security-roles-privileges)
-[Configure user security](../../power-platform/admin/database-security#predefined-security-%20roles)
+[Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization#security-roles-in-microsoft-power-platform)
+[Security roles and privileges](../power-platform/admin/security-roles-privileges)
+[Configure user security](../power-platform/admin/database-security#predefined-security-%20roles)
 
 ### Add the Dayforce People Connector to the Human Rresources environment
 
@@ -185,5 +184,5 @@ For more information, see:
 > In order for employees to be integrated to Dayforce, they need to be enabled for ready to pay. Employees not marked as ready to pay will not be picked up.
 
 Ceridian’s Dayforce people connector integration uses Microsoft’s ready to pay feature that ensures a complete, valid employee profile has been created prior to being picked up and processed.
-For more information, see [Ready to pay](human-resources/hr-compensation-payroll.md).
+For more information, see [Ready to pay](/hr-compensation-payroll.md).
 
