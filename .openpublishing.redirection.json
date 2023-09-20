@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "articles/finance/localizations/tax-engine-trouble-shooting.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/tax/troubleshoot-tax-engine-gte-issues",
       "redirect_document_id": "false"
@@ -95,7 +96,7 @@
       "redirect_document_id": "false"
     },
     {
-      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md",
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-setoff-rule-error-transactions-on-voucher-not balance.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-setoff-rule-error-transactions-on-voucher-not-balance",
       "redirect_document_id": "false"
     },
