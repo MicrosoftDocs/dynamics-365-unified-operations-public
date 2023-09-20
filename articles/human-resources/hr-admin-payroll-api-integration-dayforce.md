@@ -3,7 +3,7 @@
 
 title: API based Payroll integration with Ceridian Dayforce
 description: This article describes the API based Payroll integration API
-Author: TulsiJhaveri 
+author: TulsiJhaveri 
 ms.author: tulsijhaveri
 ms.date: 09/15/2023
 ms.topic: how-to
@@ -121,7 +121,7 @@ Go to: **Dataverse integration** > **Virtual tables**
 
 ### Track changes
 
-The **Change tracking** feature feature in Microsoft Dataverse provides a way to keep the data synchronized in an efficient manner by detecting what data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md).
+The **Change tracking** feature feature in Microsoft Dataverse provides a way to keep the data synchronized in an efficient manner by detecting what data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](../../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md).
 
 To enable change tracking:
 1. Go to **System administration** > **Data management** > **Data entities**.
@@ -168,9 +168,9 @@ The Dayforce People Connector will need to be added to your specific Dataverse.
 
 For more information, see: 
 
-[Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization#security-roles-in-microsoft-power-platform.md)
-[Security roles and privileges](../power-platform/admin/security-roles-privileges.md)
-[Configure user security](../power-platform/admin/database-security.md#predefined-security-%20roles)
+[Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization.md#security-roles-in-microsoft-power-platform)
+[Security roles and privileges](../../power-platform/admin/security-roles-privileges.md)
+[Configure user security](../../power-platform/admin/database-security.md#predefined-security-%20roles)
 
 ### Add the Dayforce People Connector to the Human Rresources environment
 
