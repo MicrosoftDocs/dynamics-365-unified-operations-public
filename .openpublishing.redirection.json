@@ -1,5 +1,135 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/finance/localizations/tax-engine-trouble-shooting.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/troubleshoot-tax-engine-gte-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tcs-troubleshooting-failed-access-tax-service.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/tcs-troubleshooting-failed-access-tax-service",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tcs-troubleshooting-enable-debug-mode.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/tcs-troubleshooting-enable-debug-mode",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tcs-troubleshooting-no-matching-result.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/tcs-troubleshooting-no-matching-result",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/tcs-troubleshooting-tax-code-cannot-be-determined",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-field-value-taxtrans-incorrect",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-tax-not-calculated-amount-zero",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-tax-calculation-bad-performance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-taxtrans-record-not-generated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/general-ledger/sales-tax-troubleshooting-voucher-not-generated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/sales-tax-troubleshooting-voucher-not-generated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-setoff-rule-activate-take-long-time.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-setoff-rule-activate-take-long-time",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-default-value-in-tax-information-not-expected.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-default-value-in-tax-information-not-expected",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-field-value-incorrect-gstr-report-result.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-field-value-incorrect-gstr-report-result",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-invoice-journal-wrong.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-invoice-journal-wrong",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-open-designer-current-used-tax-configuration.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-open-designer-current-used-tax-configuration",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-ledger-account-voucher-wrong.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-ledger-account-voucher-wrong",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-records-fields-not-showing-gstr-report.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-records-fields-not-showing-gstr-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-setoff-rule-error-transactions-on-voucher-not-balance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-tax-amount-wrong-after-calculation.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-tax-amount-wrong-after-calculation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-tax-configuration-errors.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-tax-configuration-errors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-tax-not-calculated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-tax-not-calculated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-taxtrans-or-voucher-not-generated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-taxtrans-or-voucher-not-generated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-ind-gst-troubleshooting-tax-transaction-id-incorrect.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/tax/apac-ind-gst-troubleshooting-tax-transaction-id-incorrect",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/budgeting/position-budgeting-set-up-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/finance/budgeting/position-budgeting-set-up-issues",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/commerce/troubleshoot/customer-record-not-appearing.md",
       "redirect_url": "/troubleshoot/dynamics-365/commerce/commerce-headquarters-operations/customer-record-not-appearing",
