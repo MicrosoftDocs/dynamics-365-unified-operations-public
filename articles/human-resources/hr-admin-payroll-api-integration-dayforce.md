@@ -1,13 +1,14 @@
 ---
-
 # required metadata
+
 title: API based Payroll integration with Ceridian Dayforce
 description: This article describes the API based Payroll integration API
-Author: TulsiJhaveri
+Author: TulsiJhaveri 
 ms.author: tulsijhaveri
 ms.date: 09/15/2023
 ms.topic: how-to
 ms.custom: 
+
 ---
 
 # API based Payroll integration with Ceridian Dayforce
@@ -35,7 +36,8 @@ Before using the Dynamics 365 Human Resources payroll integration, set up the fo
 > Ensure that the financial dimension item(s) in the selected list are in the correct order. The connector looks at the financial dimension position that has been provided from the selected list in the Myintegration Portal.
 > Collaborate with Ceridian to determine which Financial dimensions should be enabled to align with the Dayforce site (location).
 
-For more information, see [Configure Human Resources Parameters](overview.md).
+For more information, see [Configure Human resources parameters](hr-setup-parameters.md).
+
 ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/129548753/8fe8abab-0c24-4dfd-8110-ae2abd5dfae2)
 
 ## API Setup
@@ -56,7 +58,7 @@ Enable the following features in **Feature management** to allow Microsoft APIs 
 
 ## Virtual tables
 
-Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. For more information on Dataverse vitual tables, see [Configure Dataverse virtual tables](/hr-admin-integration-common-data-service-virtual-entities.md).
+Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. For more information on Dataverse vitual tables, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
 
 For more information about installing virtual tables, see [Install virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) and 
 [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables)
@@ -119,7 +121,7 @@ Go to: **Dataverse integration** > **Virtual tables**
 
 ### Track changes
 
-The **Change tracking** feature feature in Microsoft Dataverse provides a way to keep the data synchronized in an efficient manner by detecting what data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](../../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
+The **Change tracking** feature feature in Microsoft Dataverse provides a way to keep the data synchronized in an efficient manner by detecting what data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md).
 
 To enable change tracking:
 1. Go to **System administration** > **Data management** > **Data entities**.
@@ -166,9 +168,9 @@ The Dayforce People Connector will need to be added to your specific Dataverse.
 
 For more information, see: 
 
-[Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization#security-roles-in-microsoft-power-platform)
-[Security roles and privileges](../power-platform/admin/security-roles-privileges)
-[Configure user security](../power-platform/admin/database-security#predefined-security-%20roles)
+[Authentication and authorization](../fin-ops-core/dev-itpro/power-platform/authentication-and-authorization#security-roles-in-microsoft-power-platform.md)
+[Security roles and privileges](../power-platform/admin/security-roles-privileges.md)
+[Configure user security](../power-platform/admin/database-security.md#predefined-security-%20roles)
 
 ### Add the Dayforce People Connector to the Human Rresources environment
 
@@ -184,5 +186,5 @@ For more information, see:
 > In order for employees to be integrated to Dayforce, they need to be enabled for ready to pay. Employees not marked as ready to pay will not be picked up.
 
 Ceridian’s Dayforce people connector integration uses Microsoft’s ready to pay feature that ensures a complete, valid employee profile has been created prior to being picked up and processed.
-For more information, see [Ready to pay](/hr-compensation-payroll.md).
+For more information, see [Ready to pay](hr-compensation-payroll.md).
 
