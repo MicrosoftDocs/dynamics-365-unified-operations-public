@@ -172,9 +172,6 @@ For more information, see:
 
 1. In Human Resources, go to: **Azure Active Directory Application** > **New**.
 2. Add the Ceridian Dayforce payroll connector with Client ID: 6817703f-e5b3-4eec-b11f-ba6367f1b156 and User ID: DFAPIConnector. 
-
-![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/129548753/5fe3d568-c993-4447-b7ab-960fb082e236)
-
       
 ## Ready to Pay
 
