@@ -47,8 +47,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with Product Search](inventory-visibility-allocation.md#query_with_product_search) |
-| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](inventory-visibility-allocation.md#Exact_query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with Product Search](#query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](#Exact_query_with_product_search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
