@@ -23,7 +23,7 @@ Starting with Supply Chain Management version 10.0.32, it's possible allow some 
 Starting with release 10.0.32, you must install the Planning optimization add-in before you can enable planning processes, even if you plan to use the deprecated master planning engine. If the company where you want to use deprecated master planning has planning processes disabled, follow these steps to enable them:
 
 1. Make sure Planning Optimization is installed and enabled as described in [Get started with master planning](planning-optimization/get-started.md).
-1. Make sure Planning Optimization is enabled on **Planning Optimization parameters** page.
+1. Make sure Planning Optimization is enabled on the **Planning Optimization parameters** page.
 1. Enable planning processes for the relevant company by setting **Disable all planning processes** to *No*, on the **Master planning parameters** page.
 
 ## Excluding companies from using Planning Optimization and continue to use deprecated master planning
