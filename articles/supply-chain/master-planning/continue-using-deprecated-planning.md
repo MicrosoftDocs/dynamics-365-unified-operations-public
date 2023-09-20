@@ -1,6 +1,6 @@
 ---
 title: Continue to use deprecated master planning for some companies
-description: This article explains how to continue using the deprecated master planning engine for some companies until they are ready to be migrated. 
+description: This article explains how to continue using the deprecated master planning engine for some companies until they're ready to be migrated. 
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -16,14 +16,15 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
-Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they are ready to be migrated.
+Starting with Supply Chain Management version 10.0.32, it's possible allow some companies (legal entities) to run Planning Optimization while others continue to use the [deprecated master planning engine](deprecated-master-planning-overview.md) until they're ready to be migrated.
 
-## Company with disabled planning processes
+## Companies where planning processes are disabled
 
-If the company you wish to use deprecated master planning for, has the planning processes disabled, you need to ensure that Planning Optimization is installed and enabled on **Planning Optimization parameters** page.
-Starting with release 10.0.32, is mandatory to install the Planning optimization add-in before enabling Planning Processes even if you plan to use the deprecated master planning engine.
+Starting with release 10.0.32, you must install the Planning optimization add-in before you can enable planning processes, even if you plan to use the deprecated master planning engine. If the company where you want to use deprecated master planning has planning processes disabled, follow these steps to enable them:
 
-After installing and enabling Planning Optimization, planning processes can be enabled for this company by setting the parameter **Disable all planning processes** to **No**, on the **Master planning parameters** page.
+1. Make sure Planning Optimization is installed and enabled as described in [Get started with master planning](planning-optimization/get-started.md).
+1. Make sure Planning Optimization is enabled on **Planning Optimization parameters** page.
+1. Enable planning processes for the relevant company by setting **Disable all planning processes** to *No*, on the **Master planning parameters** page.
 
 ## Excluding companies from using Planning Optimization and continue to use deprecated master planning
 
