@@ -56,12 +56,12 @@ Enable the following features in **Feature management** to allow Microsoft APIs 
 
 ## Virtual tables
 
-Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. For more information on Dataverse virtual tables, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
+Dynamics 365 Human Resources is a virtual data source in Microsoft Dataverse. It provides full create, read, update, and delete (CRUD) operations from Dataverse and Microsoft Power Platform. For more information about Dataverse virtual tables, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md).
 
 For more information about installing virtual tables, see [Install virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app) and 
 [Generate virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#generate-virtual-tables)
 
-After the virtual tables are installed, generate the virtual tables for the data to pass to Dayforce. The Dayforce people connector pulls data from the following tables to ensure that Dayforce can execute a proper payroll. For more information, see [Enable Microsoft Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
+After the virtual tables are installed, generate the virtual tables for the data to pass to Dayforce. The Dayforce people connector pulls data from the following tables to ensure that Dayforce can process payroll. For more information, see [Enable Microsoft Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 Go to: **Dataverse integration** > **Virtual tables**
 
@@ -119,7 +119,7 @@ Go to: **Dataverse integration** > **Virtual tables**
 
 ### Track changes
 
-The **Change tracking** feature in Microsoft Dataverse provides a way to keep the data synchronized in an efficient manner by detecting what data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
+The **Change tracking** feature in Microsoft Dataverse detects data has changed since the data was initially extracted or last synchronized. For more information, see [change tracking](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
 
 To enable change tracking:
 1. Go to **System administration** > **Data management** > **Data entities**.
@@ -132,21 +132,21 @@ To enable change tracking:
 2. Enter the **User ID**, **User name**, **User email** and **Role** (Use the previously created API Dayforce Connector Role).
 
 > [!NOTE]
-> The username and password is required for the set up of the MyIntegration portal in Ceridian Dayforce.
+> The username and password is required for the set up of the MyIntegration portal in Dayforce.
 
 ## Enable the connection
 
 > [!IMPORTANT] 
 > Following section requires a user with full administrative security access to the Microsoft dataverse and Azure tenant and the rights to consent on behalf of the company (Tenant) to allow access to the Microsoft Dynamics 365 HR APIs. 
 
-To connect the Microsoft Dynamics 365 Human Resources environment to Ceridian's Dayforce Payroll, the complete the following steps:
+To connect the Microsoft Dynamics 365 Human Resources environment to Ceridian's Dayforce payroll, the complete the following steps:
 
-1.	Add the Dayforce payroll connector application to the Tenant.
+1.	Add the Dayforce payroll connector application to the tenant.
 2.	Configure an API role for the Dataverse environment.
 
 ### Enable the Dayforce people connector application on the customer tenant
 
-The customer Microsoft tenant controls all activity in the customer’s Microsoft environment including controlling security and access to all the Microsoft applications. Enabling the Dayforce People Connector on the tenant allows the connector to communicate with the necessary Microsoft applications used in this integration.
+The customer Microsoft tenant controls all activity in the customer’s Microsoft environment including security and access to all the Microsoft applications. Enabling the Dayforce People Connector on the tenant allows the connector to communicate with the necessary Microsoft applications used in this integration.
 
 1. Go to (https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6817703f-e5b3-4eec-b11f-ba6367f1b156&response_type=id_token&redirect_uri=https://developersdev.dayforce.com/Dev/Microsoft-to-Dayforce-Connector.aspx&scope=openid&response_mode=fragment&state=12345&nonce=678910).
 2. Enable the URL for the company.
@@ -176,8 +176,8 @@ For more information, see:
 ## Ready to Pay
 
 > [!IMPORTANT]
-> In order for employees to be integrated to Dayforce, they need to be enabled for ready to pay. Employees not marked as ready to pay will not be picked up.
+> In order for employees to be integrated to Dayforce, they need to be **Ready to pay**. Employees not marked as **Ready to pay** will not be picked up.
 
-Ceridian’s Dayforce people connector integration uses Microsoft’s ready to pay feature that ensures a complete, valid employee profile has been created prior to being picked up and processed.
+Ceridian’s Dayforce people connector integration uses Microsoft’s ready to pay feature to ensure a complete, valid employee profile has been created prior to processing payroll.
 For more information, see [Ready to pay](hr-compensation-payroll.md).
 
