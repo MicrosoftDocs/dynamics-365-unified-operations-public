@@ -2,7 +2,7 @@
 title: Price change tracking troubleshooting guide 
 description: This article describes common issues for price change tracking in Microsoft Dynamics 365 Commerce, and provides guidance and troubleshooting steps to help system users and partners mitigate the issues.
 author: leshe
-ms.date: 09/19/2023
+ms.date: 09/20/2023
 ms.topic: Troubleshooting
 audience: Application User, Developer, IT Pro
 ms.reviewer: 
@@ -32,7 +32,7 @@ The mitigation for price change tracking issues usually contains two parts: stop
 
 To stop creating more batch jobs, follow these steps.
 
-1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**
+1. In Commerece headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.
 1. Under **Price change tracking**, remove all legal entities from the grid, and then select **Save**.
 1. Restart Application Object Server (AOS).
 
@@ -40,7 +40,7 @@ In general, Microsoft recommends that you [specify a batch group for price chang
 
 ### Stop and clear existing batch jobs 
 
-To stop and clear existing batch jobs, run the following script in the Commerce headquarters database.
+To stop and clear existing batch jobs, run the following SQL script in the Commerce headquarters database.
 
 ```sql
 -- find the existing executing jobs
