@@ -267,18 +267,12 @@ Follow these steps to import connection settings from a file or a QR code.
     - If you're importing the connection settings from a file, select **Add from file**, browse to the file on your local device, and select it. If you select a custom location, the app will store it and automatically use it the next time.
     - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera is started, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
-    ![Connection setup menu.](media/app-configure-connection-setup-flyout.png "Connection setup menu")
-
 1. When the connection settings are successfully loaded, the selected connection is shown.
 1. Complete one of the following steps to select the authentication certificate, depending on which type of device that you're using.
 
     - If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
 
-        ![Select certificate prompt on an Android device.](media/app-configure-select-certificate.png "Select certificate prompt on an Android device")
-
     - If you're using an iOS device and are using a certificate for authentication, select **Edit connection settings** and then select **Select certificate**. On the page that opens, select **Select certificate** to open a file browser and select your certificate file. The app then shows a **Certificate is selected** confirmation. Enter the certificate password and select **Import certificate**. Finally, save the connection settings.
-
-        ![Connection setup menu on iOS.](media/app-configure-connection-setup-ios.png "Connection setup menu on iOS")
 
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
@@ -290,15 +284,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
 1. If the app is started in **Demo mode**, select **Connection settings**. If the **Sign-in** page appears when the app is started, select **Change connection**.
 1. Select **Set up connection**.
 
-    ![Set up connection.](media/app-configure-set-up-connection.png "Set up connection")
-
-1. Select **Input manually**.
-
-    ![Connection setup menu.](media/app-configure-connection-setup-flyout.png "Connection setup menu")
-
-    The **New Connection** page appears and shows the settings that are required to manually enter the connection details.
-
-    ![Manual connection fields.](media/app-configure-input-manually.png "Manual connection fields")
+1. Select **Input manually**. The **New Connection** page appears and shows the settings that are required to manually enter the connection details.
 
 1. Enter the following information:
 
