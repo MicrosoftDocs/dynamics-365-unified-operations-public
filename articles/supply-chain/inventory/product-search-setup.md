@@ -2,10 +2,17 @@ This article describes how to configure Product Search service using the Invento
 
 # Feature introduction
 
-The product search solution support attribute-based search, and this feature enabling efficient and user-friendly product discovery. 
+The product search feature enables users to search for products and on hand information based on specific attributes such as size, color, and more, resulting in improved efficiency, and competitive advantage.
+
+- **Time Savings**: Users can quickly find products meeting their exact requirements, eliminating the need for extensive browsing. This improves their system use experience and saves valuable time.
+- **Higher Confidence**: Attribute-based search ensures users get precisely what they are looking for, leading to increased confidence in their operstions.
+- **Increased Product Visibility**: Attribute-based search can highlight less commonly searched for, but potentially relevant, products. This exposes users to a broader range of options they might not have considered.
+
+This feature is accessible through the Inventory Visibility WebUI as well as the API approach.
+For further information about the API, see : [Create one allocate event](inventory-visibility-api.md#query-with-product-search) 
+
 
 ## Configure Product Search service
-
 
 1. Install and update Inventory Visibility add-in in your environment.
 
@@ -56,7 +63,8 @@ Assign the following roles.
 ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/102585421/4b789e91-a193-4da0-b12a-e7a41d57847f)
 
 
-!Note: For more how to setup dual-write security roles: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/security-roles
-
+>![Note]:
+> For more how to setup dual-write security roles: https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/security-roles
+>
 
 
