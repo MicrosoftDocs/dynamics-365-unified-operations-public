@@ -11,16 +11,16 @@ ms.custom: bap-template
 
 # Edit the properties connected environments
 
-When Microsoft Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article describes how editing the properties of an environment is impacted by Power Platform Integration.
+When Microsoft Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article describes how Power Platform Integration impacts editing the properties of an environment.
 
 > [!IMPORTANT]
-> Power Platform Integration is not affected by the environment lifecycle scenarios described in this article.
+> Power Platform Integration isn't affected by the environment lifecycle scenarios described in this article.
 
 ## Edit the properties of an environment using Power Platform admin center
 
-Administrators can edit the properties of an environment in Power Platform Admin center when there is no link with a finance and operations app. Most of these actions are still possible, except:
+Administrators can edit the properties of an environment in Power Platform Admin center when there isn't a link with a finance and operations app. Most of these actions are still possible, except:
 
-- **URL**: Microsoft Dataverse environments linked to finance and operations apps  the URL cannot be updated anymore, an error is thrown:
+- **URL**: Microsoft Dataverse environments linked to finance and operations apps the URL can't be updated anymore, an error is thrown:
 
 :::image type="content" source="media/ppi-edit-URL.png" alt-text="Screenshot of editing the URL of a linked Dataverse environment." lightbox="media/ppi-edit-URL.png":::
 
