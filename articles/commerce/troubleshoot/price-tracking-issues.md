@@ -19,7 +19,7 @@ This article provides troubleshooting guidance that can help resolve common pric
 
 ## Symptoms
 
-The Commerce price change tracking feature triggers batch jobs to run in the background. Common symptoms of issues with price change tracking are:
+The Commerce price change tracking feature triggers batch jobs that run in the background. Common symptoms of issues with price change tracking are:
 
 - The price change tracking batch job takes too long.
 - Too many price change tracking batch jobs are triggered and waiting in the queue.
@@ -29,7 +29,7 @@ The Commerce price change tracking feature triggers batch jobs to run in the bac
 The mitigation for price change tracking issues usually consists of two parts:
 
 - Stop creating more batch jobs.
-- Clear existing batch jobs.
+- Stop and clear existing batch jobs.
 
 ### Stop creating more batch jobs
 
