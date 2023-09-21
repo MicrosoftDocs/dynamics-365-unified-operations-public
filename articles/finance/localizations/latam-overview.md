@@ -27,7 +27,7 @@ Some of the functionality that's referred to in this article might not yet be av
 | Chile and cross-LATAM features | Available | October 2023 / 10.0.37 |
 | Costa Rica | Available | October 2023 / 10.0.37 |
 | Nicaragua | Available | October 2023 / 10.0.37 |
-| Panama | Available | October 2023 / 10.0.376 |
+| Panama | Available | October 2023 / 10.0.37 |
 | Colombia | October 2023 / 10.0.37 | 2023 wave 2 |
 | Paraguay | October 2023 / 10.0.37 | 2023 wave 2 |
 | Uruguay | October 2023 / 10.0.37 | 2023 wave 2 |
