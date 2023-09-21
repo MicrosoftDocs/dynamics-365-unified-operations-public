@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Setup developer cloud-hosted environments with Power Platform Integration
 
-Finance and operations apps have a rich development experience, as described in [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page). As part of this experience, cloud development environments can be provisioned in your Lifecycle Services project. They're virtual machines to which a developer connects with Remote Desktop access to develop code through the Microsoft Visual Studio environment.
+Finance and operations apps have a rich development experience, as described in [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page). As part of this experience, cloud development environments can be provisioned in your Lifecycle Services project. Cloud development environments are virtual machines to which a developer connects with Remote Desktop access to develop code through the Microsoft Visual Studio environment.
 
 This article highlights the steps to enable the Power Platform integration. For information about the configuration steps for cloud hosted environments, see [Deploy and access development environments](/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances). 
 
