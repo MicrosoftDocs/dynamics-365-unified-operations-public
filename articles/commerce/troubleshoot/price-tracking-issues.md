@@ -1,8 +1,8 @@
 ---
-title: Price change tracking troubleshooting guide 
+title: Price change tracking issues
 description: This article provides troubleshooting guidance that can help resolve common price change tracking issues in Microsoft Dynamics 365 Commerce.
 author: leshe
-ms.date: 09/20/2023
+ms.date: 09/21/2023
 ms.topic: Troubleshooting
 audience: Application User
 ms.reviewer: josaw
@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-09-13
 ---
 
 
-# Price change tracking troubleshooting
+# Price change tracking issues
 
 This article provides troubleshooting guidance that can help resolve common price change tracking issues in Microsoft Dynamics 365 Commerce.
 
