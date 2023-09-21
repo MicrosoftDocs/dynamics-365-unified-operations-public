@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Set up legal entity and tax information
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity and the tax information for a company in Chile who is using the LATAM features available in Dynamics 365 Finance. A legal entity represents the company and contains the tax and legal attributes required for the rest of the LATAM configuration.
 
@@ -25,12 +25,12 @@ Before you begin, go to the **Feature management** workspace and verify that the
 
 ## Set up tax information
 
-1. [Create a document class letter](ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations. 
+1. [Create a document class letter](../ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations. 
 2. Go to **Organization administration** > **Setup** > **LATAM** > **Tax ID type**.
 3. Select **New** and in the **Overview** section, in the **Tax ID type** field, enter **RUT** (Registro unico tributario).
-4. In the **Format** field, enter **XXXXXXXX-X**. For more information, see [Tax ID types](ltm-core-tax-id-type.md).
+4. In the **Format** field, enter **XXXXXXXX-X**. For more information, see [Tax ID types](../ltm-core-tax-id-type.md).
 5. Return to the **Legal entities** page and select the legal entity you created earlier. On the **Address** tab, add the tax ID type **RUT**. 
-6. Create a taxpayer type that represents organizations “Persona juridica” and add the tax ID type created and the document class letter created. For more information, see [Tax payer type](/ltm-core-taxpayer-type.md).
+6. Create a taxpayer type that represents organizations “Persona juridica” and add the tax ID type created and the document class letter created. For more information, see [Tax payer type](../ltm-core-taxpayer-type.md).
 7. Configure the entity LATAM Tax and legal information:
     * Taxpayer type: select “Persona juridica” represents an organization.
     * Based in country/region: Chile.
@@ -44,4 +44,4 @@ You will find similar structure for customers and vendor LATAM configuration.
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
