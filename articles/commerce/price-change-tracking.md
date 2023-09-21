@@ -113,7 +113,7 @@ When you make large-scale changes (for example, bulk data migration), Microsoft 
 
 ## Troubleshooting
 
-For information on troubleshooting price change tracking, see [Price change tracking issues](/troubleshoot/dynamics-365/commerce/pricing-discounts-taxes/price-tracking-issues).
+For information on troubleshooting price change tracking issues, see [Price change tracking issues](/troubleshoot/dynamics-365/commerce/pricing-discounts-taxes/price-tracking-issues).
 
 ## Additional resources
 
@@ -123,6 +123,6 @@ For information on troubleshooting price change tracking, see [Price change trac
 
 [Data management overview](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
 
-[Price change tracking troubleshooting](price-change-tracking.md) <!-- Support site link target TBD -->
+[Price change tracking troubleshooting](/troubleshoot/dynamics-365/commerce/pricing-discounts-taxes/price-tracking-issues)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
