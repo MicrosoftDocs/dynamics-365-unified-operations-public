@@ -19,12 +19,12 @@ This article provides troubleshooting guidance that can help resolve common pric
 
 ## Symptoms
 
-The Commerce price change tracking feature triggers batch jobs that run in the background. Common symptoms of issues with price change tracking are:
+The Commerce price change tracking feature triggers batch jobs that run in the background. Symptoms of common issues with price change tracking are:
 
 - The price change tracking batch job takes too long.
 - Too many price change tracking batch jobs are triggered and waiting in the queue.
 
-## Mitigations
+## Mitigation
 
 The mitigation for price change tracking issues usually consists of two parts:
 
@@ -61,4 +61,4 @@ delete from BATCHJOB where CAPTION like '%Price change%' and status = 3 --error
 
 ## Additional resources
 
-<!--[Price change tracking](../price-change-tracking.md)-->
+[Price change tracking](/dynamics365/commerce/price-change-tracking)
