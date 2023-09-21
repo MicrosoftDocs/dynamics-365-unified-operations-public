@@ -64,8 +64,7 @@ After the validation is completed, details can be found on the **Environment his
 This validation can be used to detect typical failures that occur during the pre-servicing phase of a deployment. For more information, see [Pre-servicing and post-servicing](../lifecycle-services/pre-post-servicing.md#common-failures).
 
 ### Releases
-This feature is available in Sandbox environments in all regions. 
-This feature is available in Production environments in all regions except Sovereign clouds.
+This feature is available in both sandbox and production environments in all regions. 
 
 
 
