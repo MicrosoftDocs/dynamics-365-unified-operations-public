@@ -4,12 +4,14 @@ description: This article explains how to delete environments when finance and o
 author: abunduc-ms
 ms.author: abunduc
 ms.date: 06/02/2023
-ms.topic: article
+ms.topic: how-to
+ms.reviewer: johnmichalak
+ms.custom: bap-template
 ---
 
 # Delete environments when Power Platform Integration is enabled
 
-When the Power Platform Integration is enabled, the finance and operations apps  and the customer engagements apps environments are tightly connected. The administrators should look at these two platforms as a one single environment, with multiple apps. In this article, we highlight how to delete environments.
+When the Microsoft Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article explains how to delete environments.
 
 ## Delete an environment from Power Platform admin center
 
