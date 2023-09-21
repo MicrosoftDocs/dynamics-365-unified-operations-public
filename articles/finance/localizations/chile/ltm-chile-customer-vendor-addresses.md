@@ -9,7 +9,7 @@ ms.author: v-federicohe
 ms.custom: bap-template
 ---
 
-# Chilean company initial configuration
+# Create customer and vendor records with an address in Chile
 
 The Latin American customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
