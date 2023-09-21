@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Change the type of connected environments
 
-When Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article highlights the environment lifecycle scenarios that are affected by Power Platform Integration.
+When Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article describes the environment lifecycle scenarios that are affected by Power Platform Integration.
 
 > [!IMPORTANT]
 > The Power Platform Integration isn't affected by the environment lifecycle scenarios described in this article.
