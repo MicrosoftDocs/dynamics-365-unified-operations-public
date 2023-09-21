@@ -10,14 +10,14 @@ ms.reviewer: johnmichalak
 
 # Change the type of connected environments
 
-When Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article highlights the environment lifecycle scenarios that are affected by Power Platform Integration.
+When Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. The environment lifecycle scenarios that are affected by Power Platform Integration are highlighted by the article.
 
 > [!IMPORTANT]
-> The Power Platform Integration is not affected by the environment lifecycle scenarios described in this article.
+> The Power Platform Integration isn't affected by the environment lifecycle scenarios described in this article.
 
 ## Change the environment type using Power Platform admin center
 
-It is possible to [convert a Power Platform admin center environment](/power-platform/admin/switch-environment) from sandbox environment to a production environment or from a production environment to a sandbox environment. However, it **isn't recommended** for linked environments because this option is not available for finance and operations apps.
+It's possible to [convert a Power Platform admin center environment](/power-platform/admin/switch-environment) from sandbox environment to a production environment or from a production environment to a sandbox environment. However, it **isn't recommended** for linked environments because this option isn't available for finance and operations apps.
 
 The following sections contain aspects to consider when changing the environment type.
 
@@ -30,7 +30,7 @@ To link your Dataverse environment to a production finance and operations enviro
 1. Deploy the finance and operations production environment without enabling the Power Platform Integration.
 1. Refresh the database from the finance and operations environment linked to the production Dataverse environment. For more information, see [Refresh the database](/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
 1. Delete the finance and operations sandbox environment to remove the link with the production Dataverse environment.
-1. Link the production finance and operations apps environment to the production dataverse environment by following the steps in [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
+1. Link the production finance and operations apps environment to the production Dataverse environment by following the steps in [Connect finance and operations apps with an existing Microsoft Dataverse instance](environment-lifecycle-connect-finops-existing-dv.md).
 
 ### Production to sandbox
 
@@ -38,8 +38,8 @@ In this scenario, the Dataverse environment becomes a sandbox environment, while
 
 ## Change the environment type using Lifecycle services
 
-It isn'tt possible to change the environment type in Lifecycle services. Finance and operations apps environments have predefined types that cannot be changed.
+It isn't possible to change the environment type in Lifecycle services. Finance and operations apps environments have predefined types that can't be changed.
 
 ## Recommendations
 
-It **isn't recommended** to run production workloads in a sandbox environment. Sandbox environments do not benefit from the same level of SLAs as production environments.
+It **isn't recommended** to run production workloads in a sandbox environment. Sandbox environments don't benefit from the same level of SLAs as production environments.
