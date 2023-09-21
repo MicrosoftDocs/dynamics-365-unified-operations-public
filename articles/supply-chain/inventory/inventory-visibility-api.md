@@ -48,7 +48,7 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with Product Search](#query_with_product_search) |
-| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](#Exact_query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](#exact-query-with-product-search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
@@ -776,7 +776,7 @@ The following example shows how to query all products in multiple sites and loca
 
 ```
 ## Query with Product Search
-With embedded product search capability, belwo two Inventory visibility APIs are enhanced to new APIs with product search capabilities.
+With embedded product search capability, belwo two Inventory visibility on hand query APIs are enhanced to new APIs with product search capabilities.
  - [Query by using the post method](#query-with-post-method)
  - [Exact query by using the post method](#exact-query-with-post-method) 
 
