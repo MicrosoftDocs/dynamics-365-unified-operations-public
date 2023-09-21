@@ -34,7 +34,7 @@ In Deployment settings window, navigate to **Power Platform Integration** tab an
 
 ### Step 2: Configure the Power Platform Integration
 
-Once the Power Platform Integration is enabled, choose the correct [template](environment-lifecycle-connect-finops-new-dv#step-2-configure-dataverse-by-using-a-template) and environment type and *Agree*.
+Once the Power Platform Integration is enabled, choose the correct [template](environment-lifecycle-connect-finops-new-dv.md#step-2-configure-dataverse-by-using-a-template) and environment type and *Agree*.
 
 :::image type="content" source="media/ppi-dev-configure-ppi.png" alt-text="Configure Power Platform integration." lightbox="media/ppi-dev-configure-ppi.png":::
 
