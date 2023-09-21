@@ -101,6 +101,7 @@ To add the Azure identity provider to a user flow, follow these steps.
 1. In your Azure AD B2C tenant, select **User flows**.
 1. Select the user flow that you want to add the identity provider to.
 1. Under the **Custom identity providers**, select the identity provider that you added in the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
+1. In Application Claims, select “Identity Provider Access Token”, "Identity Provider", "Email address", "Given Name" and "Surname".
 1. Select **Save**.
 
 ## Additional resources
