@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: FinancialReports
 # ROBOTS: 
-audience: IT Pro, Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
@@ -54,4 +54,4 @@ If the enhancement is turned on, the retained earnings in the reporting currency
 | Summed exchange rate in the reporting currency on 12/31/XXXX when the enhancement is turned on (d). | EUR      | 110.00 | 167.50 | 257.50 | 288.75 |
 
 
-For more information, see [Set up for Retained earnings](/general-ledger/financial-reporting-currency-capability.md#setup-for-retained-earnings).
+For more information, see [Set up for Retained earnings](financial-reporting-currency-capability.md#setup-for-retained-earnings).

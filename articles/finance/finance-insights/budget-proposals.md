@@ -3,7 +3,7 @@
 
 title: Budget proposals
 description: This article describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
-author: panolte
+author: ShivamPandey-msft
 ms.date: 07/16/2021
 ms.topic: article
 ms.prod: 
@@ -12,14 +12,14 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: panolte
+ms.author: shpandey
 ms.search.validFrom: 2020-05-31 
 ms.dyn365.ops.version: 10.0.4
 ---

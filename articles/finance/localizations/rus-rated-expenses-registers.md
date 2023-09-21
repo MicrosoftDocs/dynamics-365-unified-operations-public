@@ -6,7 +6,7 @@ ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
 ms.author: atrukawk
@@ -17,8 +17,6 @@ ms.dyn365.ops.version:
 # Rated expenses registers
 
 [!include [banner](../includes/banner.md)]
-
-## Overview
 
 Some types of expenses are reported differently in accounting and tax accounting. These expenses include rated expenses, of which only a part within the established standard is accepted for tax accounting in the current period. The remaining part can be accepted for tax accounting in subsequent tax periods. In accounting, these expenses are considered at the same time.
 

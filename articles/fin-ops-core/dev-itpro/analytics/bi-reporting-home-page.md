@@ -6,7 +6,7 @@ ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: sericks

@@ -6,7 +6,7 @@ ms.date: 05/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Application User
+audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
 ms.author: atrukawk

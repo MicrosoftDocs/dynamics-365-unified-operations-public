@@ -4,7 +4,7 @@ description: This article explains how to set up a dual-write connection from Mi
 author: laneswenka
 ms.date: 05/16/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: laswenka

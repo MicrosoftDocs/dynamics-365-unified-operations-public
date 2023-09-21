@@ -20,8 +20,6 @@
           href: get-started/whats-new-scm-10-0-36.md
         - name: Supply Chain Management 10.0.35 (August 2023)
           href: get-started/whats-new-scm-10-0-35.md
-        - name: Supply Chain Management 10.0.34 (July 2023)
-          href: get-started/whats-new-scm-10-0-34.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1751,6 +1749,8 @@
           href: inventory/inventory-visibility-allocation.md
         - name: Inventory Visibility on-hand change schedule and available to promise
           href: inventory/inventory-visibility-available-to-promise.md
+        - name: Inventory Visibility Power BI dashboard
+          href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
@@ -1973,6 +1973,8 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
+          - name: Continue to use deprecated master planning for some companies
+            href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
           - name: Differences between Planning Optimization and the deprecated master planning engine

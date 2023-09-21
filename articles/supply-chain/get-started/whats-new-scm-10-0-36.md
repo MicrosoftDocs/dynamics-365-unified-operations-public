@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.36. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,12 +12,11 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.36. This version has a build number of 10.0.1695 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.36. This version has a build number of 10.0.1695 and is available on the following schedule:
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
@@ -29,7 +28,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | [Inventory Visibility Power BI dashboard](../inventory/inventory-visibility-dashboard.md) | Enabled by default |
 | Inventory and logistics | [Sell and price multiple items as a bundle](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/sell-price-multiple-items-as-bundle) | [Product bundles overview](../sales-marketing/product-bundles-overview.md) | Feature management:<br>*Product bundles*  |
 | Manufacturing and asset management | [Detect spikes and deviations in sensor data](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/detect-spikes-deviations-sensor-data) | [Anomaly detection scenario](../sensor-data-intelligence/sdi-scenario-anomaly.md) | Enabled by default |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | [Advanced export control overview](../pim/export-control-overview.md) | Feature management:<br>*(Preview) Advanced export control configuration*  |
@@ -52,7 +51,6 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Master planning | (Preview) Strict safety stock pegging for Planning Optimization | Gives you the option of directly pegging safety stock as demand against the planned order created for it. On the **Coverage groups** page, this feature adds a new parameter called **Strict safety stock pegging**, which lets you choose one of the following options for each coverage group:<ul><li>*No*: Safety stock is considered the least important of type of demand, so whenever a planned order is created for safety stock, all other demand will be prioritized, which lets you provide a higher service level for your customers. This is how the system always behaved in previous versions. </li><li>*Yes*: The system will apply strict safety stock pegging. When a planned order is created for fulfilling safety stock, it will always be pegged against safety stock, without allowing any other demand to be pegged against it (except when using a **Coverage code** of *Period*). This can provide better visibility in some scenarios, such as when you're using a high number of negative days.</li></ul> |
 | Procurement and sourcing | Show only delivery addresses for workers when creating category-based purchase requisition lines | Improves privacy of workers by adding an option that will prevent users from seeing workers' home addresses when creating category- based requisition lines and purchase requisition lines. Instead, only addresses marked with a **Purpose** of *Delivery* will be shown. Addresses marked for both home and delivery purposes will be available, but users won't be able to see that the address is also a home address. The option is available on the **Procurement and sourcing** page, on the **Purchase requisition** tab. |
 | Procurement and sourcing | (Preview) Supplier requested and confirmed shipment dates | Enables you to do the following:<ul><li>Determine the supplier's shipping calendar on the vendor and its subsequent default to the relevant document</li><li>Determine the delivery transport days from the supplier to the receiving point</li><li>Enhance the purchasing process through the incorporation of new requested and confirmed ship dates</li><li>Consider the supplier's shipping calendar and transport days for the automatic calculation of supplier ship dates.</li></ul> |
-| Sales and marketing | (Preview) Archive sales order from history tables to Dataverse managed data lake and purge | Performs the last step in the archival process, which is archiving from history tables to Dataverse managed data lake. |
 | Sales and marketing | Auto-create direct delivery intercompany orders originating from purchase order creation | Automates the creation of both an intercompany direct delivery sales order and an intercompany direct delivery purchase order when a purchase order in another legal entity is created. When this feature is disabled, the creation of the intercompany direct delivery purchase order is deferred until the intercompany direct delivery sales is opened in the sales order details page. When this feature is enabled, the intercompany direct delivery purchase order is created without having to open the intercompany direct delivery sales order from the sales order details form. This feature applies when both **Create Intercompany orders** and **Direct delivery** are set to *Yes* on an intercompany sales order. |
 | Sales and marketing | Copy customer reference and requisition to purchase order line when created from sales order line | When a purchase order line is created from a sales order line, this feature copies the customer reference and requisition values from the sales order line to the purchase order line. If one or both values aren't specified for the sales order line, then the feature copies values from the sales order header instead. |
 | Sales and marketing | Stop creation of source document header and line records related to sales packing slip posting | Stops unused source document header and source document line records from being created when posting sales order packing slips. This feature is turned on by default. |

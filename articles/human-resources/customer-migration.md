@@ -190,6 +190,6 @@ The infrastructure for the standalone application is scheduled to be turned off 
 The DMF import and export project is migrated to the finance and operations infrastructure. Note that certain data entities have been enhanced in the new infrastructure. It's recommended to confirm the necessary fields are found in the data entity in the new infrastructure. Remove unavailable fields in mapping or re-add impacted data entity in the project to mitigate the issue.
 
 ## What steps are needed to configure Power BI after migration to the finance and operaations infrastructure?
-Yes, follow the steps here: [Dynamics 365 Human Resources customer migration to the finance and operations infrastructure](/hr-cust-migration.md#post-migration-considerations).
+Yes, follow the steps here: [Dynamics 365 Human Resources customer migration to the finance and operations infrastructure](hr-cust-migration.md#post-migration-considerations).
 
 

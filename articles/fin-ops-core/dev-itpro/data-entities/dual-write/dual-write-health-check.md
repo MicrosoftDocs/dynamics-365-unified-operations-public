@@ -4,7 +4,7 @@ description: This article describes the dual-write configuration health check, i
 author: jaredha
 ms.date: 06/30/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: 
 ms.search.region: global
 ms.author: jaredha

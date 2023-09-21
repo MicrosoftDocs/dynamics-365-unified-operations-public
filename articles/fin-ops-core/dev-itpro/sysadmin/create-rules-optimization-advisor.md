@@ -6,7 +6,7 @@ ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: global
 ms.author: kamaybac

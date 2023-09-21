@@ -15,9 +15,6 @@ ms.custom: bap-template
 # Dynamic printer selection
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until 10.0.36 GA -->
 
 This article explains how to set up your system to dynamically select a printer when [license plate labels](print-license-plate-labels-using-label-layouts.md) and [container labels](print-container-labels.md) are printed.
 

@@ -7,7 +7,7 @@ description: This article describes how to use expenditure reviewers to dynamica
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.search.region: Global

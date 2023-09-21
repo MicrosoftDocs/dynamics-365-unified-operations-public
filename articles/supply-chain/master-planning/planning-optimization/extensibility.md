@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: ReqCreatePlanWorkspace
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 

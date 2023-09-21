@@ -3304,6 +3304,8 @@
             href: localizations/latam-overview.md
           - name: Latin America parameters
             href: localizations/ltm-core-latam-parameters.md
+          - name: Field list configuration for Latin America
+            href: localizations/ltm-core-field-master-lists.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
@@ -3907,7 +3909,9 @@
           - name: Swedish Intrastat
             href: localizations/emea-swe-intrastat.md
           - name: EU sales list
-            href: localizations/emea-swe-eu-sales-list.md          
+            href: localizations/emea-swe-eu-sales-list.md      
+          - name: Report statistics of vendor payment periods
+            href: localizations/emea-swe-payment-periods-statistics.md
         - name: Switzerland
           items:
           - name: Switzerland overview
