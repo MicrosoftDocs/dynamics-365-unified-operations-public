@@ -4,8 +4,9 @@ description: This article explains how to perform database and environment movem
 author: abunduc-ms
 ms.author: abunduc
 ms.date: 06/02/2023
-ms.topic: article
+ms.topic: conceptual
 ms.reviewer: johnmichalak
+ms.custom: bap-template
 ---
 
 # Database and environment movements when Power Platform Integration is enabled
