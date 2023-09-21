@@ -790,31 +790,25 @@ With embedded product search capability, belwo two Inventory visibility APIs are
 ### ProducSearch contract
 ProductSearch contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for users to understand, interact with, and build applications that consume the IV APIs in certain scenarios.
 
+The following example shows sample contract.
+
 ~~~ Example
 {
     "productFilter": {
         "logicalOperator": "And",
         "conditions": [
             {
-                "conditionOperator": "IsExactly",
-                "productnumber": [
-                    "A0001"
+                "conditionOperator": "Contains",
+                "productName": [
+                    "Deluxe"
                 ],
             },
         ],
         "subfilters": [
             {
-                "logicalOperator": "And",
                 "conditions": [
                     {
-                        "conditionOperator": "BeginsWith",
-                        "productSearchName": [
-                            "boy"
-                        ]
-                    },
-                    {
                         "conditionOperator": "IsExactly",
-                        "attributeName": "ProductType",
                         "productType": [
                             "Item"
                         ]
@@ -827,39 +821,33 @@ ProductSearch contract is used to define the rules for communication with Produc
         "logicalOperator": "Or",
         "conditions": [
             {
-                "attributeName": "Weight Limit PoundDomain",
+                "attributeName": "Weight Limit",
+                "attributeTypeName":"PoundDomain",
                 "attributeArea": " ProductAttribute",
                 "attributeValues": [
-                    "391"
+                    "370"
                 ],
-                "conditionOperator": "LessEqual"
+                "conditionOperator": "GreaterEqual"
             }
         ],
         "subFilters": [
             {
-                "logicalOperator": "And",
                 "conditions": [
                     {
-                        "attributeName": "Weight Limit PoundDomain",
+                        "attributeName": "Weight Limit",
+                        "attributeTypeName":"PoundDomain",
                         "attributeArea": " ProductAttribute",
                         "attributeValues": [
-                            "391"
+                            "330"
                         ],
                         "conditionOperator": "LessEqual"
-                    },
-                    {
-                        "attributeName": "Color",
-                        "attributeArea": " DimensionAttribute",
-                        "attributeValues": [
-                            "Black"
-                        ],
-                        "conditionOperator": "IsExactly"
                     }
                 ]
             }
         ]
     },
 }
+
 ~~~
 
 | Field ID | Description |
@@ -902,30 +890,114 @@ The following example shows sample body content.
 
 ~~~JSON
 {
-"productSearch": {
+    "productSearch": {
         "productFilter": {
-            "logicalOperator": "And",
             "conditions": [
                 {
-                    "conditionOperator": "isexactly",
-                    "productname": [
-                        "HDMI 6' Cables"
+                    "conditionOperator": "contains",
+                    "productName": [
+                        "speaker cable"
                     ],
                 },
             ],
         },
     },
-    "dimensionDataSource": "pos",
-    "filters": {
-        "organizationId": ["usmf"],
-        "siteId": ["1"],
-        "locationId": ["11","12","13"],
-        "colorId": ["red"]
+    "returnNegative": true, 
+    "filters": 
+    {
+        "organizationId": ["usmf"], 
+        "siteId": ["1"], 
+        "locationId": ["13"],
     },
-    "groupByValues": ["colorId", "sizeId"],
-    "returnNegative": true
+    "groupByValues": ["colorid"],
 }
 ~~~
+
+The following example shows a successful response.
+
+~~~
+[
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "White",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 20,
+                "onorder": 5,
+                "ordered": 20,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 20,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 20,
+                "total on order": 5,
+                "availabletoreserve": 20,
+                "totalavailable": 20,
+                "totalordered": 20,
+                "totalonorder": 5
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    },
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "Black",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 3,
+                "ordered": 3,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 3,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 3,
+                "availabletoreserve": 3,
+                "totalavailable": 3,
+                "totalordered": 3
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    }
+]
+
+~~~
+
 
 ### <a name="Exact_query_with_product_search"></a>Exact query with Product Search
 
@@ -959,31 +1031,72 @@ The following example shows sample body content.
 {
     "productSearch": {
         "productFilter": {
-            "logicalOperator": "And",
             "conditions": [
                 {
-                    "conditionOperator": "isexactly",
-                    "productname": [
-                        "HDMI 6' Cables"
+                    "conditionOperator": "contains",
+                    "productName": [
+                        "speaker cable"
                     ],
                 },
             ],
         },
     },
-    "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["SCM_IV"],
-        "dimensions": ["siteId", "locationId", "colorId"],
+        "organizationId": ["usmf"],
+        "dimensions": ["siteId", "locationId", "colorid"],
         "values" : [
-            ["iv_postman_site", "iv_postman_location", "red"],
-            ["iv_postman_site", "iv_postman_location", "blue"],
+            ["1", "13", "Black"],
         ]
     },
-    "groupByValues": ["colorId", "sizeId"],
+    "groupByValues": [],
     "returnNegative": true
 }
 ~~~
 
+The following example shows a successful response.
+
+~~~
+[
+    {
+        "productId": "M0030",
+        "dimensions": {
+            "ColorId": "Black",
+            "siteid": "1",
+            "locationid": "13"
+        },
+        "quantities": {
+            "fno": {
+                "arrived": 0,
+                "availordered": 3,
+                "ordered": 3,
+                "physicalinvent": 0,
+                "reservordered": 0,
+                "reservphysical": 0,
+                "orderedsum": 3,
+                "softreserved": 0
+            },
+            "iv": {
+                "ordered": 0,
+                "softreserved": 0,
+                "softreservphysical": 0,
+                "softreservordered": 0,
+                "total ordered": 3,
+                "availabletoreserve": 3,
+                "totalavailable": 3,
+                "totalordered": 3
+            },
+            "pos": {
+                "inbound": 0,
+                "outbound": 0
+            },
+            "@iv": {
+                "@allocated": 0
+            }
+        }
+    }
+]
+
+~~~
 
 ## Available to promise
 
