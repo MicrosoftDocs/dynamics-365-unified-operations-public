@@ -4,8 +4,9 @@ description: This article explains how to change the type of a Microsoft Dataver
 author: abunduc-ms
 ms.author: abunduc
 ms.date: 06/02/2023
-ms.topic: article
+ms.topic: conceptual
 ms.reviewer: johnmichalak
+ms.custom: bap-template
 ---
 
 # Change the type of connected environments
