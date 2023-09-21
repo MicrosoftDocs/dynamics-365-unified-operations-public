@@ -80,7 +80,9 @@ To initialize the Commerce scheduler to complete the synchronization of sales re
 1. Set **Delete existing configuration** to **No**.
 1. Set **Update subjobs only** to **No**.
 1. Select **OK**. 
-
+1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
+1. In the left navigation menu, select the **1060** job.
+1. On the action pane, select **Run Now**.
 ## Additional resources
 
 [Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
