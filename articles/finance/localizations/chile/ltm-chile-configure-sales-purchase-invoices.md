@@ -10,11 +10,11 @@ ms.custom: bap-template
 ---
 
 # Configure sales and purchase invoices
-Because 
+
 
 ## Sales invoices
 
-It is important to configure the following forms that will allow you to use them in sales transactions later. The sales invoices are primarily represented yhrough the **Document class** feature.
+It is important to configure the following forms that will allow you to use them in sales transactions later. The sales invoices are primarily represented through the **Document class** feature.
 1. Create the document class types that represents the fiscal documents that will be used in future transactions (invoices, credit notes, debit notes, packing slips). (See [Document class type for Latin America](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/ltm-core-document-class-type) article)
 2. Create at least one sales point to be used in the document classes numeration.
 3. Create the document classes required for the commercial activity according to the normative that represent the document emitted by the company: 
