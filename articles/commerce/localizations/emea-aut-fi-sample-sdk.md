@@ -4,7 +4,7 @@ description: This article provides guidelines for deploying the fiscal integrati
 author: EvgenyPopovMBS
 ms.date: 08/17/2022
 ms.topic: article
-audience: Application User
+audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
