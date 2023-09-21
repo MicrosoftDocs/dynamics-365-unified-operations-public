@@ -9,7 +9,7 @@ The product search feature enables users to search for products and on hand info
 - **Increased Product Visibility**: Attribute-based search can highlight less commonly searched for, but potentially relevant, products. This exposes users to a broader range of options they might not have considered.
 
 This feature is accessible through the Inventory Visibility WebUI as well as the API approach.
-For further information about the API, see : [Create one allocate event](inventory-visibility-api.md#query-with-product-search) 
+For further information about the API, see : [Query with product search](inventory-visibility-api.md#query-with-product-search) 
 
 
 ## Configure Product Search service
