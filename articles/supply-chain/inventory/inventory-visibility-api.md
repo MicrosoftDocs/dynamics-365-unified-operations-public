@@ -859,7 +859,7 @@ The following example shows sample contract.
 | `attributeArea` | Contain values: ProductAttribute, DimensionAttribute, BatchAttribute |
 
 
-### Query with Product Search
+### <a name="query_with_product_search"></a>Query with Product Search
 
 ~~~ Txt
 Path:
@@ -999,7 +999,7 @@ The following example shows a successful response.
 ~~~
 
 
-### Exact query with Product Search
+### <a name="Exact_query_with_product_search"></a>Exact query with Product Search
 
 ~~~ Txt
 Path:
