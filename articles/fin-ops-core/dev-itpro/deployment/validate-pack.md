@@ -4,7 +4,7 @@
 title: Validate a package in Lifecycle Services
 description: This article explains how to validate a package in Microsoft Dynamics Lifecycle Services before you apply it to a self-service cloud environment.
 author: kumarnaresh
-ms.date: 07/08/2023
+ms.date: 09/21/2023
 ms.topic: how-to
 ms.prod: 
 ms.technology: 
