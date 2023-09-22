@@ -66,8 +66,8 @@ To configure account managers in headquarters, follow these steps.
 
 1. Go to **Human Resources \> Workers \> Employees**. 
 1. Select an account to be configured (for example, `user@adventure-works.com`). 
-1. Select **Commerce**, select **Associate existing identity**, search for the account's email address (for example, `user@adventure-works.com`), and then select the account.
-1. Select **OK**
+1. Select **Commerce**, select **Associate existing identity**, search for the email address associated with the account, and then select the account.
+1. Select **OK**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
 1. In the left navigation pane, select the **1060** job.
 1. On the action pane, select **Run Now**.
@@ -83,12 +83,13 @@ Create a sales group of one or more account managers. For OBO functionality to w
 To associate a sales group with a B2B buyer organization in headquarters, follow these steps.
 
 1. Go to **Sales and Marketing \> Customers \> All customers**.
-1. Find the customer of the **Organization** type that must be managed by the sales group that you created (for example, **Contoso B2B**), and then select its name or account number.
-1. On the **Sales order defaults** FastTab, under **Sales group**, enter the sales group ID of the sales group that you created.
-1. On the Action Pane, select **Save**.
+1. Find the customer of type **Organization** that must be managed by the sales group that you created (for example, "Contoso B2B"), and then select its name or account number.
 
-> [!NOTE]
-> The customer of **Organization** type must have an address book specified in the **Address book** field.
+    > [!NOTE]
+    > The customer of type **Organization** must have an address book specified in the **Address book** field.
+
+1. On the **Sales order defaults** FastTab, under **Sales group**, enter the sales group ID of the sales group that you created.
+1. On the action pane, select **Save**.
 
 Any member of the specified sales group will now be able to work on behalf of any user in the selected customer B2B buyer organization.
 
