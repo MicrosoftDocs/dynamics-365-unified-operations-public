@@ -4,7 +4,7 @@
 title: Create and modify B2B pages for on behalf of (OBO) functionality
 description: This article describes how to create pages for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce site builder.
 author: mariash529
-ms.date: 08/09/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
