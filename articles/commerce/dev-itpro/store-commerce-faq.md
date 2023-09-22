@@ -2,14 +2,13 @@
 title: Store Commerce app FAQ
 description: This article answers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce SDK migration.
 author: josaw1
-ms.date: 05/26/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
-ms.dyn365.ops.version: AX 10.0.25
 
 ---
 
@@ -60,6 +59,10 @@ Existing deployments that use the Retail SDK and MPOS will remain functional aft
 ### Does the Commerce SDK apply to on-premises deployments too?
 
 Yes. For on-premises deployments, the new [Commerce SDK](retail-sdk/migrate-commerce-sdk.md) enables sealed base installers where extensions are deployed via a dedicated installer that contains only extensions.
+
+### Where does Store Commerce write event logs to?
+
+You can find Store Commerce for Windows event logs in the Event Viewer under the path **Windows Logs \> Application**.    
 
 ## Additional resources
 
