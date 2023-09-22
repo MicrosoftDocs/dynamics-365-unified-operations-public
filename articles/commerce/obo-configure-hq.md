@@ -4,7 +4,7 @@
 title: Set up and configure on behalf of (OBO) functionality in headquarters
 description: This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 author: mariash529
-ms.date: 08/09/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -54,19 +54,22 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
 1. On the action pane, select **Run Now**.
 
 ## Create and configure a sales group
-This section describes how to associate account managers who use On Behalf Of functionality with B2B organizations. 
+
+This section describes how to associate account managers who use OBO functionality with B2B organizations. 
 
 ### Configure account managers in headquarters
 
 > [!NOTE]
-> This step can be skipped for account managers that already use AAD sign-in in POS devices.
+> The following procedure can be skipped for account managers who already use Azure AD sign-in on POS devices.
 
-1. Go to **Human Resources \> Workers \> Employees** 
-1. Select an account to be configured (for example, "user@adventure-works.com") 
-1. Select menu **Commerce**, select **Associate existing identity** and select the account by searching by email(user@adventure-works.com).
-2. Select **OK**
+To configure account managers in headquarters, follow these steps.
+
+1. Go to **Human Resources \> Workers \> Employees**. 
+1. Select an account to be configured (for example, `user@adventure-works.com`). 
+1. Select **Commerce**, select **Associate existing identity**, search for the account's email address (for example, `user@adventure-works.com`), and then select the account.
+1. Select **OK**
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
-1. In the left navigation menu, select the **1060** job.
+1. In the left navigation pane, select the **1060** job.
 1. On the action pane, select **Run Now**.
 
 ## Create a sales group containing account managers
@@ -85,7 +88,7 @@ To associate a sales group with a B2B buyer organization in headquarters, follow
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> The customer of type organization must have an address book specified in the field **Address book**
+> The customer of **Organization** type must have an address book specified in the **Address book** field.
 
 Any member of the specified sales group will now be able to work on behalf of any user in the selected customer B2B buyer organization.
 
@@ -100,7 +103,7 @@ To complete the synchronization of sales representatives in headquarters, follow
 1. Set **Update subjobs only** to **No**.
 1. Select **OK**. 
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
-1. In the left navigation menu, select the **1060** job.
+1. In the left navigation pane, select the **1060** job.
 1. On the action pane, select **Run Now**.
    
 ## Additional resources
