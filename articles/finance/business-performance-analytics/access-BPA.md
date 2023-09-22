@@ -18,6 +18,8 @@ audience: Application User
 
 [!include [banner](../includes/banner.md)]
 
+This article explains how to access business performance analytics.
+
 ## Access business performance analytics as an administrator 
 
 After business performance analytics has been installed, there are a number of ways to access the app:  
