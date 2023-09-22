@@ -2,7 +2,7 @@
 title: Store Commerce app FAQ
 description: This article answers frequently asked questions about the Microsoft Dynamics 365 Commerce Store Commerce app and Commerce SDK migration.
 author: josaw1
-ms.date: 09/21/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -62,7 +62,7 @@ Yes. For on-premises deployments, the new [Commerce SDK](retail-sdk/migrate-comm
 
 ### Where does Store Commerce write event logs to?
 
-The event logs for Store Commerce for Windows can be found in the Event Viewer under the path **Windows Logs \> Application**.    
+You can find Store Commerce for Windows event logs in the Event Viewer under the path **Windows Logs \> Application**.    
 
 ## Additional resources
 
