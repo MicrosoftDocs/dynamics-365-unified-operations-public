@@ -23,7 +23,7 @@ This article describes how to create pages for on behalf of (OBO) functionality 
 
 To enable OBO functionality in site builder, you must complete the following three procedures, as described in this article:
 
-- [Create a new page for selecting a business partner organization and a business partner](##create-a-business-partner-selection-page).
+- [Create a new page for selecting a business partner organization and a business partner](#create-a-business-partner-organization-and-a-business-partner-user-selection-page).
 - [Modify a B2B sign-in page so that it includes a button that the account manager can use to sign-in](#modify-a-b2b-sign-in-page-so-that-it-includes-an-employee-sign-in-button).
 
 You might also want to complete the following optional procedure:
