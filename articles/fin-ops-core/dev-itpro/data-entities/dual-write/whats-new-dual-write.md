@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 05/20/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -70,12 +70,12 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 The June 2023 release of the Dual-write Supply Chain solution contains the following changes.
 | Feature | Description | Status |
 |---|---|---|
-| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-concept) | General availability |
-| Feature | [Set the default ownership for all sales quotations.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#default-ownership) | General availability |
-| Feature	| [Change ownership for a sales quotation.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#change-ownership-for-a-sales-quotation)	| General availability |
-| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#push-to-sales)	| General availability |
-| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#copy-quotation-data)	| General availability |
-| Feature	| [Process events related to Sales integration.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#process-events)	| General availability |
+| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](add-efficiency-in-quote-to-cash-concept.md) | General availability |
+| Feature | [Set the default ownership for all sales quotations.](add-efficiency-in-quote-to-cash-use.md#default-ownership) | General availability |
+| Feature	| [Change ownership for a sales quotation.](add-efficiency-in-quote-to-cash-use.md#change-ownership-for-a-sales-quotation)	| General availability |
+| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](add-efficiency-in-quote-to-cash-use.md#push-to-sales)	| General availability |
+| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data)	| General availability |
+| Feature	| [Process events related to Sales integration.](add-efficiency-in-quote-to-cash-use.md#process-events)	| General availability |
 
 ### Solution details
 
