@@ -66,8 +66,7 @@ To configure account managers in headquarters, follow these steps.
 
 1. Go to **Human Resources \> Workers \> Employees**. 
 1. Select an account to be configured (for example, `user@adventure-works.com`). 
-1. Select **Commerce**, select **Associate existing identity**, search for the email address associated with the account, and then select the account.
-1. Select **OK**.
+1. Select **Commerce**, select **Associate existing identity**, search for the email address associated with the account, select the account, and then select **OK**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
 1. In the left navigation pane, select the **1060** job.
 1. On the action pane, select **Run Now**.
