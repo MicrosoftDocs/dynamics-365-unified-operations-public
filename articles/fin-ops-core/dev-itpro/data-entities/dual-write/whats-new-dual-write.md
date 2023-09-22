@@ -65,8 +65,17 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 |---|---|---|
 | Bug fix | CRM workflow performance fix to add another check on update calls. | General availability |
 | Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance issues. | General availability |
-|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	General availability
+|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	| General availability
 
+The June 2023 release of the Dual-write Supply Chain solution contains the following changes.
+| Feature | Description | Status |
+|---|---|---|
+| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-concept) | General availability |
+| Feature | [Set the default ownership for all sales quotations.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#default-ownership) | General availability |
+| Feature	| [Change ownership for a sales quotation.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#change-ownership-for-a-sales-quotation)	| General availability |
+| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#push-to-sales)	| General availability |
+| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#copy-quotation-data)	| General availability |
+| Feature	| [Process events related to Sales integration.](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use#process-events)	| General availability |
 
 ### Solution details
 
@@ -77,6 +86,9 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 | Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.87 | 3.5.1.91 |
 | Dynamics365GABPartyAnchor |Yes | 3.5.1.87 | 3.5.1.91 |
 | Dynamics365GABPartyCommon | Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365SupplyChainExtended | Yes | 2.3.4.99 | 2.3.4.203 |
+| msdyn_Dynamics365SupplyChainExtendedMaps | Yes | 2.3.4.99 | 2.3.4.203 |
+| msdyn_Dynamics365SupplyChainExtendedAnchor | Yes | 2.3.4.99 | 2.3.4.203 |
 
 ## May 2023 release
 
