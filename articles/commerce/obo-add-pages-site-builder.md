@@ -41,7 +41,7 @@ To create a business partner organization selection page in Commerce site builde
 1. Under **Review and finish**, review the page configuration. If you must edit the page information, select **Back**. If the page information is correct, select **Create page**. 
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **business-partners** module, and then select **OK**.
-1. In the property pane for the module, edit the module properties. For example, enter **Select a Business Partner** as the heading.
+1. In the property pane for the module, edit the module properties. For example, enter "Select a Business Partner" as the heading.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
@@ -65,7 +65,7 @@ To modify a B2B sign-in page so that it includes an employee sign-in button, fol
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Sign in** module, and then select **OK**. The system will name this second sign-in module **Sign in 1**.
 1. In the property pane for the module, under **Sign-in heading**, select **Heading**.
-1. In the **Heading** dialog box, enter **Employee sign-in**, and then select **OK**.
+1. In the **Heading** dialog box, enter "Employee sign-in", and then select **OK**.
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
