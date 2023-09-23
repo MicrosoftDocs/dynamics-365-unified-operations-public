@@ -48,15 +48,33 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 > [!VIDEO 2ea4ece0-c783-4410-8042-55569c5bb9f1]
 
+Possible questions:
+1. What is the amount due for customer Forest Wholesales?
+2. When was Forest Wholesale's last payment amount and date? 
+3. How many open invoices does customer Forest Wholesale have?
+4. What is the credit limit for Forest Wholesale?
+5. What is the credit limit remaining for Forest Wholesales? 
+6. Does Forest Wholesales have any disputed invoices? How many? 
+7. How many open invoices does Forest Wholesales have and What is the open order balance for Forest Wholesales?*
+8. What is the open order balance for Forest Wholesales?
+
 **Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory by using Microsoft 365 Copilot**
 
 > [!VIDEO 7f051a6f-0d45-41b4-b4c7-cd5d4166b38d]
+
+Possible questions:
+1. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+2. What is the availability of Southridge Video Laptop16 M1601 in Silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+3. What is the inventory availability for Southridge Video Laptop16 in silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+4. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central for stores, warehouse Chicago inventory in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+5. What colors do you have for Laptop15 M1501 other than Red in site Central, warehouse Chicago in company Contoso Retail USA?  Give me the details by product name, site, warehouse, color, available quantity. 
+6. Do we have red Laptop16 M1601 in warehouses other than Chicago within the site Central in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 
 ## What is happening behind the scenes?
 
 The user's question is translated into a FetchXML query and run against the finance and operations database through virtual entities. The results are summarized and presented as the response to the user. The following illustration shows the architecture that works behind the scenes.
 
-![Diagram that shows the data flow between finance and operations apps and Microsoft 365 Copilot.](media/finops-structured-data-architecture.png)
+![Diagram that shows the data flow between finance and operations apps and Microsoft 365 Copilot.](media/M365-Data-Flow.png)
 
 ## Are we limited to the supported customer scenarios?
 
@@ -95,3 +113,33 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
 - If your question is about a customer, use the keyword "customer" in your question. For example, don't ask, "What is the amount due for Forest Wholesales?" Instead, ask, "What is the amount due for customer Forest Wholesales?"
 - If you want the results to be shown in table format, use the key phrase "in table format" in your question. For example, ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
 - If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, the amount that customers owe is shown in the **Balance due** column on pages in finance and operations apps. Therefore, don't ask, "How much does customer Forest Wholesales owe?" Instead, ask, "What is the balance due of customer Forest Wholesales?"
+- If you have access to multiple companies, add "list results by company" to you questions. Alternatively, you can add "in company…" at the end of your question. 
+
+  Examples: 
+
+    + What is the availability for Laptop15 M1501? List the result by company.    
+    + What is the availability for Laptop15 M1501 in company Contoso Retail USA?
+
+- To inquire collection status details, please use the following keywords whenever possible to guide the copilot to route your question to Finance: 
+ 
+    "collections status", "payment date", "overdue", "amount due", "open invoices", "remaining credit", "credit balance", "discount", "credit limit", "disputed invoices", "order balance", "outstanding invoice", "invoice amount", "last payment"
+
+ - To inquire on-hand inventory stock availability details, please use the following keywords whenever possible to guide the copilot to route your question to Supply Chain: 
+ 
+    "product availability", "inventory availability", "color", "site", "warehouse", "inventory", "stock", "item", "product", "available quantity", "price", "selling price" 
+
+- Use letter casing correctly:
+    + Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
+    + If you are unsure about the spelling about a string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and may not be spell checked. 
+
+- Use precise terms for concepts with multiple ways of referencing.
+    + Company can be referred to using company name or company code:
+      + What is the inventory availability of Xbox in company Bank of House?
+      + What is the inventory availability of Xbox in company code BOH?
+    + Product can be referred to using product name or item number:
+      + What is the inventory availability of Xbox in company Bank of House?
+      + What is the inventory availability of item number xb001 in company Bank of House?
+    + Customer can be referred to by customer name or customer account number:
+      + What is the amount due for customer Laminar Hospitals?
+      + What is the amount due for customer account 208705?
+
