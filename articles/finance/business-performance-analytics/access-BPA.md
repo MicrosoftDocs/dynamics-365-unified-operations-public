@@ -25,7 +25,7 @@ This article explains how to access business performance analytics.
 After business performance analytics is installed, there are several ways to access the app:
 
 - In [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to the environment where you installed the app, and find the environment URL.
-- In Power Platform maker portal, go to **Apps**, and find and select **Business performance analytics**.
+- In the Power Platform maker portal, go to **Apps**, and find and select **Business performance analytics**.
 
 ### Access business performance analytics from finance and operations apps
 
