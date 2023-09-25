@@ -684,7 +684,7 @@ WIP	Work in process
 ## Custom account categories
 
 Custom account categories are not currently supported by the CFO Overview workspace. Alternatively, a PowerBI report could be created and published to a workspace. 
-For more information, see [Connect to the services used with Power BI](../../power-bi/service-connect-to-microsoft-dynamics-ax.md).
+For more information, see [Connect to the services used with Power BI](/power-bi/service-connect-to-microsoft-dynamics-ax).
 
 
 - [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
