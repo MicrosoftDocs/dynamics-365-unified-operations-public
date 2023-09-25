@@ -4,7 +4,7 @@
 title: Financial analysis
 description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-ms.date: 09/24/2021
+ms.date: 09/24/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -683,13 +683,9 @@ WIP	Work in process
 
 ## Custom account categories
 
-Custom account categories are not currently supported by the CFO Overview workspace. Alternatively, a PowerBI report could be created and published to a workspace. Please reference links below on how to do this; 
+Custom account categories are not currently supported by the CFO Overview workspace. Alternatively, a PowerBI report could be created and published to a workspace. 
+For more information, see [Connect to the services used with Power BI](../../power-bi/service-connect-to-microsoft-dynamics-ax).
 
-https://docs.microsoft.com/en-us/power-bi/service-connect-to-microsoft-dynamics-ax
-https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/deploy-power-bi-embedded-service-for-dynamics-365-for-operations/
-
-
-- [Accessing Analytical Workspaces and Reports on 1-box environment](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
 - [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
