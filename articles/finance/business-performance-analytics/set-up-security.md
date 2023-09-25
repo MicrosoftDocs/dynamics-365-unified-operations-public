@@ -6,7 +6,7 @@ description: This article explains how to set up security for business performan
 author: jkhaira7
 ms.author: jkhaira
 ms.reviewer: twheeloc 
-ms.date: 04/20/2023
+ms.date: 09/20/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology:
@@ -143,11 +143,3 @@ To set up users, follow these steps.
 4. Assign at least one role and one dimension group to the user. To make this user a business performance analytics admin, select **App administrator**.
 5. Select **Save**.
 
-## Share business performance analytics with users
-
-To share the business performance analytics app with users, confirm that those users are set up as business performance analytics users in the app, and that their security is set up.
-
-1. In business performance analytics, select **Business performance analytics (preview)** in the upper-left corner.
-2. The dialog box that appears includes a **Published apps** list. Find **Business performance analytics (preview)** in the list, select the three dots, and then select **Manage roles**.
-3. Expand **App URL suffix**, and enter a name to use in the custom URL that you share with users of the business performance analytics app.
-4. Copy the URL that's generated, and share it with users to enable them to access to the app.
