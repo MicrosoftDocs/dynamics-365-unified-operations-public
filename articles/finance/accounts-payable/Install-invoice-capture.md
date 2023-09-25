@@ -111,4 +111,5 @@ If you must delete the Invoice capture solution, follow these steps.
 
 > [!NOTE]
 > To delete Invoice capture but keep the data, don't delete the Dynamics 365 Invoice capture base solution.
+> If you are still using the preview version (1.0.0.x), please migrate to the General Availability (GA) version as it will be deprecated by the end of 2023 Sep. It is mandatory to remove the solution "Dynamics 365 Invoice capture Base" before installing the GA version and it normally takes around 10 to 15 minutes to complete the uninstallation. 
 
