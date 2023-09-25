@@ -68,6 +68,7 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 |Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	| General availability
 
 The June 2023 release of the Dual-write Supply Chain solution contains the following changes.
+
 | Feature | Description | Status |
 |---|---|---|
 | Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](add-efficiency-in-quote-to-cash-concept.md) | General availability |
