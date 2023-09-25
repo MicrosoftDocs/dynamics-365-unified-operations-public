@@ -1,3 +1,4 @@
+
 - name: Dynamics 365
   tocHref: /dynamics365/
   topicHref: /dynamics365/index
@@ -5,6 +6,7 @@
   - name: Dynamics 365 Finance
     tocHref: /dynamics365/finance/
     topicHref: /dynamics365/finance/index
+    items:
      - name: What's new or changed
        tocHref: /dynamics365/finance/whats-new-new-home-page/
        topicHref: /dynamics365/finance/get-started/whats-new-home-page
