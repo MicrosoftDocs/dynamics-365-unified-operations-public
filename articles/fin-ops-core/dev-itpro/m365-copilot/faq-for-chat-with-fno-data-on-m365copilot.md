@@ -50,13 +50,13 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 Example questions:
 1. What is the amount due for customer Forest Wholesales?
-2. When was Forest Wholesale's last payment amount and date? 
-3. How many open invoices does customer Forest Wholesale have?
-4. What is the credit limit for Forest Wholesale?
-5. What is the credit limit remaining for Forest Wholesales? 
-6. Does Forest Wholesales have any disputed invoices? How many? 
-7. How many open invoices does Forest Wholesales have and What is the open order balance for Forest Wholesales?*
-8. What is the open order balance for Forest Wholesales?
+1. When was Forest Wholesales' last payment amount and date? 
+1. How many open invoices does customer Forest Wholesales have?
+1. What is the credit limit for Forest Wholesales?
+1. What is the credit limit remaining for Forest Wholesales? 
+1. Does Forest Wholesales have any disputed invoices? How many? 
+1. How many open invoices does Forest Wholesales have and What is the open order balance for Forest Wholesales?*
+1. What is the open order balance for Forest Wholesales?
 
 **Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory by using Microsoft 365 Copilot**
 
@@ -64,11 +64,11 @@ Example questions:
 
 Example questions:
 1. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-2. What is the availability of Southridge Video Laptop16 M1601 in Silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-3. What is the inventory availability for Southridge Video Laptop16 in silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-4. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central for stores, warehouse Chicago inventory in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-5. What colors do you have for Laptop15 M1501 other than Red in site Central, warehouse Chicago in company Contoso Retail USA?  Give me the details by product name, site, warehouse, color, available quantity. 
-6. Do we have red Laptop16 M1601 in warehouses other than Chicago within the site Central in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+1. What is the availability of Southridge Video Laptop16 M1601 in Silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+1. What is the inventory availability for Southridge Video Laptop16 in silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+1. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central for stores, warehouse Chicago inventory in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+1. What colors do you have for Laptop15 M1501 other than Red in site Central, warehouse Chicago in company Contoso Retail USA?  Give me the details by product name, site, warehouse, color, available quantity. 
+1. Do we have red Laptop16 M1601 in warehouses other than Chicago within the site Central in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 
 ## What is happening behind the scenes?
 
@@ -120,7 +120,7 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
     + What is the availability for Laptop15 M1501? List the result by company.    
     + What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 
-- To inquire collection status details, please use the following keywords whenever possible to guide the copilot to route your question to Finance: 
+- To inquire collection status details, use the following keywords whenever possible to guide the copilot to route your question to Finance: 
 
 | Keywords | &nbsp; |
 |----------|--------|
@@ -154,7 +154,7 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
     + Product can be referred to using product name or item number:
       + What is the inventory availability of Xbox in company Bank of House?
       + What is the inventory availability of item number xb001 in company Bank of House?
-    + Customer can be referred to by customer name or customer account number:
+    + Customer can be referred to using customer name or customer account number:
       + What is the amount due for customer Laminar Hospitals?
       + What is the amount due for customer account 208705?
 
