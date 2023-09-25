@@ -132,7 +132,7 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
 | order balance | outstanding invoice|
 | invoice amount | last payment |
 
- - To inquire on-hand inventory stock availability details, please use the following keywords whenever possible to guide the copilot to route your question to Supply Chain: 
+ - To inquire on-hand inventory stock availability details, use the following keywords whenever possible to guide the copilot to route your question to Supply Chain: 
  
 | Keywords | &nbsp; |
 |----------|--------|
