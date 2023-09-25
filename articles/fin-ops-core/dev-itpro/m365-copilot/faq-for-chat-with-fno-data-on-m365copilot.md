@@ -40,7 +40,7 @@ Microsoft 365 Copilot summarizes the information that's spread across emails, ch
 
 ## What types of data are supported?
 
-Data that resides inside tables is referred to as *structured data*. Data that's present in static documents, such Word files, PDF files, and publicly available content, is referred to as *unstructured data*. Microsoft 365 Copilot supports data inquiries against both structured and unstructured data. For this release, the finance and operations scope is limited to structured data only.
+Data that resides inside tables is referred to as *structured data*. Data that's present in static documents, such Word files, PDF files, and publicly available content, is referred to as *unstructured data*. Microsoft 365 Copilot supports data inquiries against both structured and unstructured data. For this release, the scope for finance and operations apps is limited to structured data only.
 
 ## What are the supported customer scenarios?
 
@@ -113,7 +113,7 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
 - If your question is about a customer, use the keyword "customer" in your question. For example, don't ask, "What is the amount due for Forest Wholesales?" Instead, ask, "What is the amount due for customer Forest Wholesales?"
 - If you want the results to be shown in table format, use the key phrase "in table format" in your question. For example, ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
 - If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, the amount that customers owe is shown in the **Balance due** column on pages in finance and operations apps. Therefore, don't ask, "How much does customer Forest Wholesales owe?" Instead, ask, "What is the balance due of customer Forest Wholesales?"
-- If you have access to multiple companies, add "list results by company" to you questions. Alternatively, you can add "in company…" at the end of your question. 
+- If you have access to multiple companies, add "list results by company" to your questions. Alternatively, you can add "in company…" at the end of your question. 
 
   Examples: 
 
