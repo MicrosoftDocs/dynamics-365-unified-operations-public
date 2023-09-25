@@ -186,7 +186,7 @@ Custom fields can only be managed through the user interface and can't be refere
 Custom field data can be transferred to the table as extension fields. 
 To use the custom [X++ scripts](../../dev-itpro/deployment/run-custom-scripts.md) to get and map the corresponding data from a custom field, follow these steps:
 
-1. Get a field name of the custom field.
+1. Get the field name of the custom field.
 2. Use the `.getFieldValue(_fieldName)` method to get a value on the source table.
 
 You can use the `TableExtensionManagerFactory::CreateExtensionManager()` extension manager to create the `.GetRuntimeExtension(_tableName, SysCustomFieldConstants::ExtensionName)` extension build object on the **Microsoft.Dynamics.Ax.Xpp.MetadataExtensions** library to get more information about the type/metadata of the extension field.
