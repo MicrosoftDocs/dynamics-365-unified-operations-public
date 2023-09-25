@@ -4,7 +4,7 @@
 title: Financial analysis
 description: Financial analysis uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
-ms.date: 08/24/2021
+ms.date: 09/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
