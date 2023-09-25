@@ -4,7 +4,7 @@
 title: Create and work with custom fields
 description: This article shows you how to create custom fields through the user interface to tailor the application to fit your business.
 author: jasongre
-ms.date: 12/15/2022
+ms.date: 09/15/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
