@@ -4,7 +4,7 @@
 title: Ledger settlements
 description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: kweekley
-ms.date: 07/14/2023
+ms.date: 09/14/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -65,7 +65,7 @@ To settle ledger transactions, follow these steps.
 1. Go to **General ledger** \> **Periodic tasks** \> **Ledger settlements**.
 2. Set the filters at the top of the page:
 
-    - Select a date range. Alternatively, select a date interval code to automatically fill in the date range. We don't recommend that you do ledger settlement for transactions that cross fiscal years. When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be done within a fiscal year.
+    - Select a date range. Alternatively, select a date interval code to automatically fill in the date range. We don't recommend that you do ledger settlement for transactions that cross fiscal years. When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be completed within a fiscal year.
     - When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be done for transactions in a single main account and the main account is a required filter.
     - Change the posting layer as required. You can't settle transactions that are in different posting layers.
     - To show the main account and dimensions separately, select a financial dimension set.
