@@ -192,7 +192,7 @@ To use the custom [X++ scripts](../../dev-itpro/deployment/run-custom-scripts.md
 You can use the `TableExtensionManagerFactory::CreateExtensionManager()` extension manager to create the `.GetRuntimeExtension(_tableName, SysCustomFieldConstants::ExtensionName)` extension build object on the **Microsoft.Dynamics.Ax.Xpp.MetadataExtensions** library to get more information about the type/metadata of the extension field.
 
 > [!NOTE]
-> Exclude records with default values from your query when transferring data for all records between a custom field and a new extension field. Use the [update statement](../../dev-itpro/dev-ref/sysda#update-statement) of the SysDa framework for better performance.
+> Exclude records with default values from your query when transferring data for all records between a custom field and a new extension field. Use the [update statement](../../dev-itpro/dev-ref/sysda.md#update-statement) of the SysDa framework for better performance.
 
 ### How can I move custom fields between environments? 
 
