@@ -4,7 +4,7 @@
 title: Financial tags 
 description: This article describes financial tags.
 author: kweekley
-ms.date: 01/23/2023
+ms.date: 09/23/2023
 ms.topic: article
 ems.prod: 
 ms.technology: 
@@ -30,18 +30,29 @@ After transactions are posted, it's common for organizations to require visibili
 
 The **Financial tags** (tags) feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. Those fields are then stored on the accounting entries that are created for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions or Vendor transactions table.
 
-Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. This release supports the capability to define up to 20 user-defined tags and to enter tag values on the following journals (and corresponding Open Data Protocol \[OData\] and Data management entities):
+Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. In each new release, tags will be implemented in additional journals, documents, and processes. Starting in the 10.0.37 release, the following journals and transactions have added support for Financial tags:
 
-- General journal
-- Global general journal
+•	General journal
+•	Global general journal
+•	Allocation journal
+•	Fixed asset journal
+•	All asset leasing journals
+•	Periodic journal
+•	Reporting currency adjustment journal
+•	Customer payment journal
+•	Vendor payment journal
+•	Invoice journal (vendor)
+•	Global invoice journal (vendor)
+•	Invoice register
+•	Sales order documents (Sales order, packing slip and customer invoice)
+    o	Support for tags on sales order documents is available by selecting the **Enable financial tags for sales order invoicing** feature within Feature management.
 
-In each new release, tags will be implemented in additional journals, documents, and processes.
 
 ## Setup
 
 To use the functionality, you must enable the **Financial tags** feature in the **Feature management** workspace. The feature can be disabled at any time. If the feature is enabled but later disabled, any values that were entered for financial tags on transactions will be maintained in the database. However, they'll no longer be visible on any transactions or in inquiries in Dynamics 365 Finance.
 
-The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but they still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that are entered on transactions. The delimiter can't be changed after it's defined.
+The experience of entering tags on transactions resembles the experience of entering a ledger account by using financial dimensions. Tags don't use the same control as a ledger account, but they still require a delimiter between the tag values. You should define the tag delimiter before you define any financial tags. On the **General ledger parameters** page, select **Financial tags**, and specify the delimiter. The delimiter that you specify must not be used in any tag values that are entered on transactions. For example, if the delimiter is defined as “-” (a dash), the customer name entered as the tag value can't contain a dash. The delimiter can't be changed after it's defined.
 
 After the feature is enabled, each legal entity can define up to 20 financial tags. Tags are legal entity–specific. You can use the **Financial tag configuration** and **Financial tags custom list value** entities to import the tags for each legal entity. Therefore, you can quickly and easily define the same initial setup in multiple legal entities.
 
@@ -77,7 +88,7 @@ When you enter journals, you can define tag values on the journal batch header. 
 
 [![Financial tags entered on the journal batch header.](./media/Financial-tag1.png)](./media/Financial-tag1.png)
 
-### Default values
+### Default values for journals
 
 Tag values that you enter in a journal are entered as default values in the following way:
 
@@ -96,7 +107,25 @@ Tag values that you enter in a journal are entered as default values in the foll
 
 [![Financial tag values on journal lines.](./media/Tag-line2.png)](./media/Tag-line2.png)
 
-Tag values from master data are never used as default values. For example, there's no capability to define default tag values on customers or vendors. In addition, tag values from the transaction itself aren't automatically entered as default values. For example, a tag was created to track the customer name. If a transaction contains a customer, the tag value won't be entered as the customer name by default. The value must be manually entered or imported.
+Default tag values don't exist on master data and aren't available default values. For example, there's no capability to define default tag values on customers or vendors. In addition, properties of a transaction itself aren't automatically entered as default values. For example, a tag was created to track the customer name. If a transaction contains a customer, the customer's name will not default as the customer tag value. The value must be manually entered or imported.
+
+### Default values for documents
+
+Just as with journals, tag values will not default from master data because master data doesn’t contain default tag values. Most documents, such as sales orders, will follow a general defaulting order as follows: 
+•	Tag values can be defined on the header of the document 
+•	Tag values from the header default to the lines of the document
+•	Tag values from the lines of the document default to the accounting distributions (if the document is a source document and supports accounting distributions)
+
+For the accounting entries created, the tag values will default as follows:
+•	Not source documents
+    o	The tag values for the summary account, such as Accounts payable or Accounts receivable, will default from the header. 
+    o	All other accounts, such as the expense, revenue, tax, discounts will default with the tag values from the lines.
+•	Source documents
+    o	The tag values for the summary account, such as Accounts payable or Accounts receivable, will default from either the header or the accounting distributions, depending on the General ledger parameters used for summary accounts. Go to **General ledger** > **Ledger setup** > **General ledger parameters**. The tag values will default following the same logic as the financial dimension values for the summary account. 
+    o	All other accounts, such as the expense, revenue, tax, discounts, etc will default with the tag values from the accounting distributions. 
+
+If a document has downstream documents, the tags from the parent document will be used for the child documents. For example, the tag values from the sales order header and lines will be used for the accounting created for the packing slip and customer invoice using the same logic as previously described. 
+
 
 ### Validation
 
