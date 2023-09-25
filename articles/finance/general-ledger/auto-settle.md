@@ -2,7 +2,7 @@
 title: Automate ledger settlements
 description: This article provides information about the Automate ledger settlements process.
 author: abruer
-ms.date: 1/19/2023
+ms.date: 9/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
