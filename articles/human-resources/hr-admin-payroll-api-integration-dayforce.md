@@ -129,6 +129,59 @@ To enable change tracking, follow these steps.
 1. Go to **System administration** \> **Data management** \> **Data entities**.
 2. Search for the **target** entity.
 3. Turn on **Tracking changes**.
+**Track changes**
+
+Turn on Tracking Changes as appropriate, for the following:
+
+| **Target**** Entity **|** Change ****Tracking** |
+| --- | --- |
+| DirPersonNameHistoricalEntity | Alltables |
+| HcmCompFixedEmplEntity | Alltables |
+| HcmCompFixedPlanTableEntity | Alltables |
+| HcmCompVarPlanTableEntity | Alltables |
+| HcmEmployeeEntity | Alltables |
+| HcmEmployeeV2Entity | Alltables |
+| HcmEmploymentDetailEntity | Alltables |
+| HcmEmploymentEmployeeEntity | Alltables |
+| HcmEmploymentEntity | Alltables |
+| HcmEmploymentTypeEntity | Alltables |
+| HcmEmploymentV2Entity | Alltables |
+| HcmIdentificationTypeEntity | Alltables |
+| HcmJobBaseEntity | Alltables |
+| HcmJobCompensationEntity | Alltables |
+| HcmJobDetailEntity | Alltables |
+| HcmJobEntity | Primarytable |
+| HcmJobFamilyEntity | Alltables |
+| HcmJobFunctionEntity | Alltables |
+| HcmJobTaskEntity | Alltables |
+| HcmJobTypeEntity | Alltables |
+| HcmLaborUnionEntity | Alltables |
+| HcmPersonDetailsEntity | Alltables |
+| HcmPersonIdentificationNumberEntity | Alltables |
+| HcmPositionBaseEntity | Alltables |
+| HcmPositionDefaultDimensionEntity | Alltables |
+| HcmPositionDetailEntity | Alltables |
+| HcmPositionEntity | Primarytable |
+| HcmPositionHierarchyEntity | Alltables |
+| HcmPositionHierarchyTypeEntity | Alltables |
+| HcmPositionTypeEntity | Alltables |
+| hcmPositionUnionAgreementEntity | Alltables |
+| HcmPositionV2Entity | Alltables |
+| HcmPositionWorkerAssignmentEntity | Primarytable |
+| HcmPositionWorkerAssignmentV2Entity | Primarytable |
+| HcmUnionsEntity | Alltables |
+| HcmVariableCompensationTypeEntity | Alltables |
+| HcmWorkerBankAccountEntity | Alltables |
+| HcmWorkerBaseEntity | Custom |
+| HcmWorkerEntity | Custom |
+| HcmWorkerPayrollInfoEntity | Alltables |
+| PayrollBankAccountDisbursementEntity | Primarytable |
+| PayrollEmployeeEntity | Primarytable |
+| PayrollFixedCompensationPlanEntity | Alltables |
+| PayrollPositionDetailsEntity | Alltables |
+| PayrollPositionEntity | Alltables |
+| PayrollPositionJobEntity | Alltables |
+| PayrollWorkerAddressCurrentEntity | Alltables |
 
 ## Add a Dayforce Connector user in the Human Resources environment
 
