@@ -12,7 +12,7 @@
        topicHref: /dynamics365/finance/get-started/whats-new-home-page
      - name: Get started
        tocHref: /dynamics365/finance/get-started/
-       topicHref: /dynamics365/finance/get-started/service-description
+       topicHref: /dynamics365/fin-ops-core/fin-ops/get-started/service-description
      - name: Finance troubleshooting and FAQ's
        tocHref: /dynamics365/finance/finance-troubleshooting/
        topicHref: /dynamics365/finance/finance-troubleshooting
