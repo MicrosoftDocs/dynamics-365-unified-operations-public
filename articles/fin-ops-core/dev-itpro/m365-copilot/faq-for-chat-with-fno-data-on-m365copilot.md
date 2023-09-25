@@ -48,7 +48,7 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 > [!VIDEO 2ea4ece0-c783-4410-8042-55569c5bb9f1]
 
-Possible questions:
+Example questions:
 1. What is the amount due for customer Forest Wholesales?
 2. When was Forest Wholesale's last payment amount and date? 
 3. How many open invoices does customer Forest Wholesale have?
@@ -62,7 +62,7 @@ Possible questions:
 
 > [!VIDEO 7f051a6f-0d45-41b4-b4c7-cd5d4166b38d]
 
-Possible questions:
+Example questions:
 1. I need 6 Southridge Video Laptop16 M1601 in Silver color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 2. What is the availability of Southridge Video Laptop16 M1601 in Silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 3. What is the inventory availability for Southridge Video Laptop16 in silver color in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
@@ -121,16 +121,31 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
     + What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 
 - To inquire collection status details, please use the following keywords whenever possible to guide the copilot to route your question to Finance: 
- 
-    "collections status", "payment date", "overdue", "amount due", "open invoices", "remaining credit", "credit balance", "discount", "credit limit", "disputed invoices", "order balance", "outstanding invoice", "invoice amount", "last payment"
+
+| Keywords | &nbsp; |
+|----------|--------|
+| collections status | payment date |
+| overdue | amount due | 
+| open invoices | remaining credit | 
+| credit balance | discount |
+| credit limit | disputed invoices |
+| order balance | outstanding invoice|
+| invoice amount | last payment |
 
  - To inquire on-hand inventory stock availability details, please use the following keywords whenever possible to guide the copilot to route your question to Supply Chain: 
  
-    "product availability", "inventory availability", "color", "site", "warehouse", "inventory", "stock", "item", "product", "available quantity", "price", "selling price" 
+| Keywords | &nbsp; |
+|----------|--------|
+| product availability | inventory availability|
+| color | site |
+| warehouse | inventory | 
+| stock | item | 
+| product | available quantity | 
+| price | selling price | 
 
 - Use letter casing correctly:
     + Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
-    + If you are unsure about the spelling about a string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and may not be spell checked. 
+    + If you're unsure about the spelling of string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and may not be spell checked. 
 
 - Use precise terms for concepts with multiple ways of referencing.
     + Company can be referred to using company name or company code:
