@@ -180,4 +180,4 @@ Here are some examples:
 
 ## Action messages
 
-Note action messages will not be given for coverage codes with priority based planning.
+The system doesn't generate action messages for coverage codes with priority-based planning.
