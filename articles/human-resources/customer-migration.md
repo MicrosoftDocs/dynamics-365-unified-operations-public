@@ -57,6 +57,9 @@ For up-to-date information, regularly check the [Release plans](/dynamics365/rel
 - Customers who choose to keep their Dynamics 365 Human Resources environment separate from their existing finance and operations app environment will have to continue to integrate the environments to make the data available in both environments.
 - Customers can continue to use the Data Integrator to copy data between the two environments. Customers who merge data into a single environment after the migration will no longer have to integrate the data, because all data will be in a single database.
 
+>[!NOTE]
+> For customers using the [native data integration template](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-finance) to integrate Human resources (standalone) with Dynamics 365 Finance, the native out of the box template will need to be replaced by a custom data integration. Customers may be able to use the [template mappings](https://learn.microsoft.com/en-us/dynamics365/human-resources/hr-admin-integration-finance#template-mappings) available that were provided in the native integration template.
+
 ## Will customer ISV solutions automatically be migrated?
 
 The migration experience for each independent software vendor (ISV) solution will vary, depending on the integration method of the solution. Microsoft will work closely with ISVs to help provide a smooth transition to the finance and operations infrastructure. Many ISV solutions are built on Dataverse by using capabilities of Microsoft Power Platform. These solutions depend on the Dataverse integration between the Dynamics 365 Human Resources environment and the Dataverse environment. The Dataverse integration is being deprecated as part of the infrastructure merge. In the finance and operations infrastructure, new dual-write maps are planned to replace the functionality of the Dataverse integration.
