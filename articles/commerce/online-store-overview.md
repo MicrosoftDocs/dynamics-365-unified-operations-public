@@ -45,7 +45,7 @@ After an online store is set up, it can be associated with the Dynamics 365 Comm
 
 ## Deploy a new e-commerce tenant
 
-During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
+During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](dev-itpro/domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
 
 ## Initialize your e-commerce site
 
@@ -92,7 +92,7 @@ For information about how to manage your site settings, see the following articl
 
 - [Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
 - [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
-- [Manage Content Security Policy (CSP)](manage-csp.md)
+- [Manage Content Security Policy (CSP)](dev-itpro/manage-csp.md)
 - [Select a site theme](select-site-theme.md)
 
 ## Manage site content

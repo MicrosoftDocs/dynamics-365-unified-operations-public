@@ -71,9 +71,9 @@ Standard financial reports are provided that use the default main account catego
 
 To learn more, see the following topics:
 
-- [Financial reporting](financial-reporting-intro.md)
-- [Generate financial reports](generate-financial-report.md)
-- [Financial report components](financial-report-components.md)
+- [Financial reporting](../../fin-ops/analytics/financial-reporting-intro.md)
+- [Generate financial reports](../../fin-ops/analytics/generate-financial-report.md)
+- [Financial report components](../../fin-ops/analytics/financial-report-components.md)
 
 ## Technical reference reports
 The following reports provide reference information about the objects:

@@ -43,8 +43,8 @@ The following considerations must be taken when you choose on-premises as a depl
 
 - Regulatory and compliance needs that are not available in the cloud certifications.
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management.
-- [Comparison of cloud and on-premises features](cloud-prem-comparison.md).
-- [System requirements for on-premises deployments](system-requirements-on-prem.md).
+- [Comparison of cloud and on-premises features](../../dev-itpro/get-started/cloud-prem-comparison.md).
+- [System requirements for on-premises deployments](../../dev-itpro/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
 > On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
@@ -67,7 +67,7 @@ A Microsoft Cloud Solution Provider can work closely with you to understand the 
 
 ### Buy through a Dynamics partner (on-premises)
 
-You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
+You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](../../dev-itpro/get-started/purchase-on-premises.md).
 
 ### Buy through volume licensing (cloud or on-premises)
 

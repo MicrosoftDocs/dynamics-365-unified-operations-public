@@ -91,9 +91,9 @@ Many tasks can be run as part of batch jobs. For example, batch jobs can include
 - [Batch processing and batch servers](batch-server-overview.md)
 
 ## Optimization advisor
-- [Optimization advisor overview](optimization-advisor-overview.md)
+- [Optimization advisor overview](../../fin-ops/sysadmin/optimization-advisor-overview.md)
 - [Optimization advisor (video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
-- [Create rules for Optimization advisor](create-rules-optimization-advisor.md)
+- [Create rules for Optimization advisor](../../fin-ops/sysadmin/create-rules-optimization-advisor.md)
 
 ## Office integration
 The integration with Microsoft Office provides a set of productive, collaborative, and integrated user experiences that take advantage of the Microsoft Office suite. This functionality can help your organization become more efficient and effective.
@@ -116,7 +116,7 @@ The finance and operations mobile app enables your organization to make its busi
 ## Process Automation
 The process automation framework allows administrators to view and create automated processes that will be scheduled with the batch server.  The added layer of visibility of scheduled work is presented in a calendar view that can be extended for use in application areas to allow non-system administrator users to view work that impacts their area. 
 
-- [Process Automation home page](process-automation.md)
+- [Process Automation home page](../../fin-ops/sysadmin/process-automation.md)
 
 ## General administration
 - [Demo data overview](../../fin-ops/get-started/demo-data.md)

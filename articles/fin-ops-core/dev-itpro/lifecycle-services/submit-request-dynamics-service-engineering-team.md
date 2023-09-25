@@ -37,7 +37,7 @@ A service request is a ticket that you use to request that the Dynamics Service 
 > [!NOTE]
 > Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
-> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services (LCS)](lcs-support.md).
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../../fin-ops/lcs/lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 

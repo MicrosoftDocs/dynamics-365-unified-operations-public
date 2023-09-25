@@ -70,7 +70,7 @@ The following steps describe the process for creating a custom field and placing
 
 9. Leaving the **Create new field** dialog box will return you to the **Insert fields** dialog box. Any custom fields that were just added will be automatically marked in the field list to be inserted into the page.
 10. Click **Insert** to insert the marked fields into the selected region of the page.
-11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
+11. **Optional:** Enable **Move** mode from the personalization toolbar to move the new fields to their desired location in the selected region. See [Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md) for more information about how to use the various personalization capabilities to optimize a form for your personal usage.
 
 > [!WARNING]
 > The ability to enter values in a custom field added to a page is dependent on whether the table associated with the custom field is editable or read only. When the associated table is read only, all fields linked to that table, including any custom fields, will also be read only.
@@ -80,7 +80,7 @@ The following steps describe the process for creating a custom field and placing
 
 After you've created a custom field and exposed it on a page, you might want to provide this updated page view that includes the new field to other users in the system. This can be accomplished in two different ways using the personalization capabilities of the product:
 
-- The recommended route is to **publish a [saved view](saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature isn't enabled, the system administrator can apply the personalization to the desired users from the **Personalization** page. For more information, see [Personalize the user experience](personalize-user-experience.md).
+- The recommended route is to **publish a [saved view](../../dev-itpro/get-started/saved-views.md)** with the custom field added to the page to the appropriate set of users. If the saved views feature isn't enabled, the system administrator can apply the personalization to the desired users from the **Personalization** page. For more information, see [Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md).
 - Alternatively, you can export your changes (called *personalizations*), send them to one or more users, and have each of those users import your changes. The **Manage** option on the personalization toolbar enables you to export and import personalizations.
 
 ## Managing custom fields

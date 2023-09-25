@@ -88,10 +88,10 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | Charges setup with site and warehouse | Mandatory |
 | Procurement and sourcing | Check unit precision for not-stocked items | Mandatory |
 | Procurement and sourcing | [Consolidate multiple purchase requisitions into a single purchase order by accounting date](whats-new-scm-10-0-25.md) | Mandatory |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Mandatory |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | Mandatory |
 | Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Mandatory |
-| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | Mandatory |
+| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
 | Procurement and sourcing | RFQ reference link added to PO | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | Mandatory |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | Mandatory |
@@ -107,10 +107,10 @@ The table also lists features that were previously in public preview but have ch
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | Mandatory |
 | Product information management | [Product dimension version](../pim/product-dimensions.md#version-dim) | Mandatory |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Mandatory |
-| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Copy generic routes](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [My jobs tab on the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
 | Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
-| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Update related resource requirements when a route operation is changed](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [Additional configuration on the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Enable use of a numpad in the sign-in page](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Improved user experience for the Report progress dialog in the Job Card Device](../production-control/report-finished-job-device.md) | On by default |
