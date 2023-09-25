@@ -177,3 +177,7 @@ Here are some examples:
 
 - A user changes the planning priority for an intercompany sales order line from 20 to 30. This change is reflected on the linked intercompany purchase order line.
 - A user changes the planning priority for an intercompany purchase order line from 40 to 50. This change is reflected on the linked intercompany sales order line.
+
+## Action messages
+
+The system doesn't generate action messages for coverage codes with priority-based planning.
