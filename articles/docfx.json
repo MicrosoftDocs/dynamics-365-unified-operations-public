@@ -95,6 +95,14 @@
           "Global"
         ]
       },
+      "uhfHeaderId":{
+        "finance/**/*.md": "MSDocsHeader-Dynamics365-Finance",
+        "supply-chain/**/*.md": "MSDocsHeader-Dynamics365",
+        "commerce/**/*.md": "MSDocsHeader-Dynamics365",
+        "human-resources/**/*.md":"MSDocsHeader-Dynamics365",
+        "talent/**/*.md": "MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365"
+      },
       "search.app": {
         "finance/**/*.md": [
           "FinanceAndOperations",
