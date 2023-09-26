@@ -47,11 +47,11 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT token.
 1. Decode the JWT token. In the decoded result, the **bot ID** is found in the **bot** field.
 
-:::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
+:::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
 
-:::image type="content" source="media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
+:::image type="content" source="../media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
 
-:::image type="content" source="media/chat-module-pva-directlinetoken-decoded.png" alt-text="Direct line token result decoded":::
+:::image type="content" source="../media/chat-module-pva-directlinetoken-decoded.png" alt-text="Direct line token result decoded":::
 
 > [!NOTE]
 > The bot ID differs from the bot app ID.
@@ -66,7 +66,7 @@ To find the tenant ID of a Power Virtual Agent in the Power Virtual Agents web a
 1. Select **Advanced**.
 1. Select the copy symbol to copy the **Tenant ID** value.
 
-:::image type="content" source="media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Power Virtual Agent":::
+:::image type="content" source="../media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Power Virtual Agent":::
 
 ## Configure your e-commerce site 
 
