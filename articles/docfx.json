@@ -204,6 +204,7 @@
       },
       "breadcrumb_path": {
         "commerce/**/*.md": "/dynamics365/commerce-bc/toc.json",
+        "finance/**/*.md": "/dynamics365/finance-bc/toc.json",
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
       },
       "ms.service": {
