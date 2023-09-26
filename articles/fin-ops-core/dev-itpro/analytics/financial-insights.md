@@ -42,7 +42,7 @@ ms.dyn365.ops.version: 7.3
 > - **Page** – A tab in a single .pbix file. Each page can contain one or more visuals.
 > - **Visual** – A single source of data, such as a card, KPI, chart, graph, matrix, or financial statement. A page that has a financial statement as a visual can have no other visuals, because of the size of the data that is being reported on.
 
-The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
+The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for the current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
 
 - [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)
 
@@ -100,9 +100,9 @@ The following comparison chart will help differentiate the two options:
 | **Print reports**                                        | Yes                                                               | No |
 | **Export to Excel**                                      | Yes                                                               | Limited Exports raw data to Excel, not a formatted report |
 | **Support reporting hierarchy/Organization hierarchy**   | Yes                                                               | No |
-| **Report on subledger data**                             | Yes Limited to only vendor, customer                              | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc. |
-| **Reporting Currency**                                   | Yes Accounting currency and translate to reporting currency       | No Accounting currency only |
-| **Security**                                             | Yes Adheres to Finance reporting tree security | Limited View reports for all companies (regardless of finance and operations security) or only active company |
+| **Report on subledger data**                             | Yes. Limited to only vendor, customer.                              | Yes. Vendor, customer, vendor/customer groups, vendor/customer addresses, etc. |
+| **Reporting Currency**                                   | Yes. Accounting currency and translate to reporting currency.       | No. Accounting currency only. |
+| **Security**                                             | Yes. Adheres to Finance reporting tree security. | Limited View reports for all companies (regardless of finance and operations security) or only active company |
 | **Support different Chart of accounts and fiscal years** | Yes                                                               | No |
 | **report on external data**                              | No                                                                | No |
 | **Support consolidations**                               | Yes                                                               | Limited Can report on multiple companies but use accounting currency only |
@@ -128,7 +128,7 @@ Users can filter the report by using the **Filter** pane on the left. This pane 
 - **Report-level filters** – These filters are applied to all visuals on all pages (tabs).
 - **Page-level filters** – These filters are applied to all visuals on the active tab. These filters are applied on top of the report-level filters.
 - **Visual-level filters** – These filters are applied only to the selected visual. These filters are applied on top of the page level filters.
-- **Drill-through filter** – This filter filters from a “source” visual that is applied to the current visual when you drill through from the source visual to the current visual.
+- **Drill-through filter** – This filter filters from a "source" visual that is applied to the current visual when you drill through from the source visual to the current visual.
 
 ![Filter options.](./media/filter.png)
 
@@ -216,7 +216,7 @@ Optional fields for filtering:
 
 If you don't expand down far enough on a row, the drill-down doesn't work. For example, if you expand down only to the main account category, you can't drill down into the ASE on the balance, because the main account is a required field for filtering in the ASE.
 
-If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE. Therefore, you might see a difference in your numbers. For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't be included as a filter in the ASE.
+If you expand down too far on a row, the additional filters on the financial statements aren't sent to the ASE. Therefore, you might see a difference in your numbers. For example, if you expand down to the country or region on the rows of the Income statement by region financial statement, the country or region isn't included as a filter in the ASE.
 
 > [!NOTE]
 > You can drill further down on the financial statement rows or columns than the ASE currently supports for filtering. Therefore, in some situations, the sum of detailed transactions in the ASE won't match the balance that you're drilling back on. This functionality will continue to be enhanced in the future.
@@ -244,71 +244,49 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 The information in the following resources isn't required in order to enable the embedded reports for the **Financial analysis** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
+- [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 ## Breakdown of account categories by page and visual
 
 ### Account categories used by page and visual
-| Page / Tab                         | Visual title              | Account Type Filters                          | Account Category Filters                                             |
-| ---------------------------------- | ------------------------- | --------------------------------------------- | ----------------------------------------------- |
-| Financial overview                 | Current ratio             |                                               | DIVIDE('Transaction detail'[Current assets], 'Transaction detail'[Current liabilities])      |
-|                                    | Working capital           |                                               | 'Transaction detail'[Current assets] - 'Transaction detail'[Current liabilities]             |
-|                                    | Gross margin              |                                               | 'Transaction detail'[Total revenue] - 'Transaction detail'[Cost of goods sold]           |
-|                                    | Debt to total assets      |                                               | DIVIDE('Transaction detail'[Current liabilities],'Transaction detail'[Total assets])      |
-|                                    | Cost of goods sold        |                                               | 'Transaction detail'[Cost of goods sold]                                     |
-|                                    | EBIT                      |                                               | 'Transaction detail'[Total revenue] - 'Transaction detail'[Total operating expenses] + 'Transaction detail'[Additional earnings]                   |
-|                                    | Revenue                   |                                               | 'Transaction detail'[Total revenue]                          |
-|                                    | Trial balance             | Revenue, expense, asset, liability, or equity | None                                                                          |
-|                                    | Cashflow                  |                                               | Requires LedgerCovLiquidityMeasurement                               |
-|                                    | Expenses                  |                                               | 'Transaction detail'[Total expenses] and Budget expenses = CALCULATE(SUM('Budget'[Accounting currency amount]), 'Budget'[Amount type] = "Expense") |
-| Revenue and expense insights       | Revenue                   |                                               | 'Transaction detail'[Total revenue]                                              |
-|                                    | Expenses                  |                                               | 'Transaction detail'[Total expenses]                          |
-|                                    | Gross margin              |                                               | 'Transaction detail'[Total revenue] - 'Transaction detail'[Cost of goods sold]             |
-|                                    | Gross margin %            |                                               | DIVIDE('Transaction detail'[Gross margin], 'Transaction detail'[Total revenue])         |
-|                                    | Net income                |                                               | 'Transaction detail'[Total revenue] - 'Transaction detail'[Total expenses]                  |
-|                                    | EBIT                      |                                               | 'Transaction detail'[Total revenue] - 'Transaction detail'[Total operating expenses] + 'Transaction detail'[Additional earnings]                   |
-|                                    | Revenue by region         | None                                          | 'Transaction detail'[Subledger Total revenue]                                |
-|                                    | Revenue and expenses      | None                                          | 'Transaction detail'[Total expenses] for previous year and 'Transaction detail'[Total revenue]  |
-|                                    | Expenses by category      | None                                          | 'Transaction detail'[Total expenses]                                                      |
-|                                    | Expenses by region        | None                                          | 'Transaction detail'[Subledger Total expenses]                                       |
-| Subledger insights                 | Multiple                  | None                                          | None                                                                               |
-| Trial balance                      |                           | None                                          | None                                                                                |
-| Balance sheet                      |                           | Revenue, expense, asset, liability, or equity | None                                                                                |
-| Income statement by region         |                           | Revenue or expense                            | None                                                                   |
-| Income statement actuals vs budget |                           | Revenue or expense                            | None                                                                           |
-| Income statement with variances    |                           | Revenue or expense                            | None                                                                          |
-| 12-month trend income statement    |                           | Revenue or expense                            | None                                                                              |
-| Expenses three year trend          | Expenses three year trend | Expense                                       | None after Dynamics 365 Finance version 10.0.37. The list below list is for earlier versions.  |
-|                                    |                           |                                               | COGS - Cost of goods sold                                                  |
-|                                    |                           |                                               | SELLEXP - Selling expense                                                        |
-|                                    |                           |                                               | ADMINEXP - Administrative expense                                           |
-|                                    |                           |                                               | MANUEXP - Manufacturing expense                                                |
-|                                    |                           |                                               | TANDEEXP - Travel and entertainment expense                        |
-|                                    |                           |                                               | PROJEXP - Project operation expense                                                  |
-|                                    |                           |                                               | SALARYEXP - Salaries expense                                                    |
-|                                    |                           |                                               | OTHEREMPEXP - Other employee expense                                   |
-|                                    |                           |                                               | INTEXP - Interest expense                                                         |
-|                                    |                           |                                               | TAXEXP - Tax expense                                                           |
-|                                    |                           |                                               | DEPREXP - Depreciation expense                                                   |
-|                                    |                           |                                               | INCTAXEXP - Income tax expense                                                   |
-|                                    |                           |                                               | OTHEREXP - Other expense                                                       |
-| Expenses by vendor                 | Expenses by vendor        | Expense                                       | None after Dynamics 365 Finance version 10.0.37. The list below list is for earlier versions. Uses 'Transaction detail'[Subledger Actual operating].                                                                                                                          |
-|                                    |                           |                                               | COGS - Cost of goods sold                                                       |
-|                                    |                           |                                               | SELLEXP - Selling expense                                                    |
-|                                    |                           |                                               | ADMINEXP - Administrative expense                                              |
-|                                    |                           |                                               | MANUEXP - Manufacturing expense                                                  |
-|                                    |                           |                                               | TANDEEXP - Travel and entertainment expense                                      |
-|                                    |                           |                                               | PROJEXP - Project operation expense                                             |
-|                                    |                           |                                               | SALARYEXP - Salaries expense                                                   |
-|                                    |                           |                                               | OTHEREMPEXP - Other employee expenses                                          |
-|                                    |                           |                                               | INTEXP - Interest expense                                                      |
-|                                    |                           |                                               | TAXEXP - Tax expense                                                          |
-|                                    |                           |                                               | DEPREXP - Depreciation expense                                                  |
-|                                    |                           |                                               | INCTAXEXP - Income tax expense                                                   |
-|                                    |                           |                                               | OTHEREXP - Other expenses                                                                    |
-| Sales by customer                  | Sales by customer         | Revenue                                       | Sales (Uses 'Transaction detail'[Subledger Actuals credits positive])               |
 
-### Measures used in previous table
+| Page or tab                        | Visual title              | Account type filters                          | Account category filters |
+| ---------------------------------- | ------------------------- | --------------------------------------------- | ------------------------ |
+| Financial overview                 | Current ratio             |                                               | DIVIDE('Transaction detail'[Current assets], 'Transaction detail'[Current liabilities]) |
+|                                    | Working capital           |                                               | 'Transaction detail'[Current assets] – 'Transaction detail'[Current liabilities] |
+|                                    | Gross margin              |                                               | 'Transaction detail'[Total revenue] – 'Transaction detail'[Cost of goods sold] |
+|                                    | Debt to total assets      |                                               | DIVIDE('Transaction detail'[Current liabilities], 'Transaction detail'[Total assets]) |
+|                                    | Cost of goods sold        |                                               | 'Transaction detail'[Cost of goods sold] |
+|                                    | EBIT                      |                                               | 'Transaction detail'[Total revenue] – 'Transaction detail'[Total operating expenses] + 'Transaction detail'[Additional earnings] |
+|                                    | Revenue                   |                                               | 'Transaction detail'[Total revenue] |
+|                                    | Trial balance             | Revenue, expense, asset, liability, or equity | None |
+|                                    | Cashflow                  |                                               | Requires LedgerCovLiquidityMeasurement |
+|                                    | Expenses                  |                                               | 'Transaction detail'[Total expenses] and Budget expenses = CALCULATE(SUM('Budget'[Accounting currency amount]), 'Budget'[Amount type] = "Expense") |
+| Revenue and expense insights       | Revenue                   |                                               | 'Transaction detail'[Total revenue] |
+|                                    | Expenses                  |                                               | 'Transaction detail'[Total expenses] |
+|                                    | Gross margin              |                                               | 'Transaction detail'[Total revenue] – 'Transaction detail'[Cost of goods sold] |
+|                                    | Gross margin %            |                                               | DIVIDE('Transaction detail'[Gross margin], 'Transaction detail'[Total revenue]) |
+|                                    | Net income                |                                               | 'Transaction detail'[Total revenue] – 'Transaction detail'[Total expenses] |
+|                                    | EBIT                      |                                               | 'Transaction detail'[Total revenue] – 'Transaction detail'[Total operating expenses] + 'Transaction detail'[Additional earnings] |
+|                                    | Revenue by region         | None                                          | 'Transaction detail'[Subledger Total revenue] |
+|                                    | Revenue and expenses      | None                                          | 'Transaction detail'[Total expenses] for previous year and 'Transaction detail'[Total revenue] |
+|                                    | Expenses by category      | None                                          | 'Transaction detail'[Total expenses] |
+|                                    | Expenses by region        | None                                          | 'Transaction detail'[Subledger Total expenses] |
+| Subledger insights                 | Multiple                  | None                                          | None |
+| Trial balance                      |                           | None                                          | None |
+| Balance sheet                      |                           | Revenue, expense, asset, liability, or equity | None |
+| Income statement by region         |                           | Revenue or expense                            | None |
+| Income statement actuals vs budget |                           | Revenue or expense                            | None |
+| Income statement with variances    |                           | Revenue or expense                            | None |
+| 12-month trend income statement    |                           | Revenue or expense                            | None |
+| Expenses three year trend          | Expenses three year trend | Expense                                       | <p>None after Dynamics 365 Finance version 10.0.37. The following list is for earlier versions:</p><ul><li>COGS – Cost of goods sold</li><li>SELLEXP – Selling expense</li><li>ADMINEXP – Administrative expense</li><li>MANUEXP – Manufacturing expense</li><li>TANDEEXP – Travel and entertainment expense</li><li>PROJEXP – Project operation expense</li><li>SALARYEXP – Salaries expense</li><li>OTHEREMPEXP – Other employee expense</li><li>INTEXP – Interest expense</li><li>TAXEXP – Tax expense</li><li>DEPREXP – Depreciation expense</li><li>INCTAXEXP – Income tax expense</li><li>OTHEREXP – Other expense</li></ul> |
+| Expenses by vendor                 | Expenses by vendor        | Expense                                       | <p>None after Dynamics 365 Finance version 10.0.37. The following list is for earlier versions. Uses 'Transaction detail'[Subledger Actual operating].</p><ul><li>COGS – Cost of goods sold</li><li>SELLEXP – Selling expense</li><li>ADMINEXP – Administrative expense</li><li>MANUEXP – Manufacturing expense</li><li>TANDEEXP – Travel and entertainment expense</li><li>PROJEXP – Project operation expense</li><li>SALARYEXP – Salaries expense</li><li>OTHEREMPEXP – Other employee expenses</li><li>INTEXP – Interest expense</li><li>TAXEXP – Tax expense</li><li>DEPREXP – Depreciation expense</li><li>INCTAXEXP – Income tax expense</li><li>OTHEREXP – Other expenses</li></ul> |
+| Sales by customer                  | Sales by customer         | Revenue                                       | Sales (Uses 'Transaction detail'[Subledger Actuals credits positive]) |
+
+### Measures used in the previous table
+
 #### 'Transaction detail'[Current assets]
+
 ```
 Current assets = 
 CALCULATE (
@@ -327,36 +305,42 @@ CALCULATE (
             "OTHERCA" }
 )
 ```
+
 #### 'Transaction detail'[Current liabilities]
+
 ```
 Current liabilities = 
 CALCULATE(
-	'Transaction detail'[Actuals credits positive], (changed in 10.0.26)
-	'Account category'[Account category name] 
-		IN { 
-			"AP",
-			"NOTESPAY",
-			"CURRENTMATLTD",
-			"TAXPAY",
-			"INTPAY",
-			"DIVPAY",
-			"LEASEPAY",
-			"SINKPAY",
-			"CURLIAB", (added in 10.0.26)
-			"OTHERCURLIA",
-			"LONGTERMDEBT" }
+    'Transaction detail'[Actuals credits positive], (changed in 10.0.26)
+    'Account category'[Account category name] 
+        IN { 
+            "AP",
+            "NOTESPAY",
+            "CURRENTMATLTD",
+            "TAXPAY",
+            "INTPAY",
+            "DIVPAY",
+            "LEASEPAY",
+            "SINKPAY",
+            "CURLIAB", (added in 10.0.26)
+            "OTHERCURLIA",
+            "LONGTERMDEBT" }
 )
 ```
+
 #### 'Transaction detail'[Cost of goods sold]
+
 ```
 Cost of goods sold = 
 CALCULATE
 (
-	'Transaction detail'[Actual operating],
-	'Account category'[Account category name] = "COGS"
+    'Transaction detail'[Actual operating],
+    'Account category'[Account category name] = "COGS"
 )
 ```
+
 #### 'Transaction detail'[Total assets]
+
 ```
 // After version 10.0.37:
 Total assets =
@@ -369,26 +353,28 @@ CALCULATE (
 Total assets = 
 CALCULATE
 (
-	'Transaction detail'[Actual operating],
-	'Account category'[Account category name] 
-		IN { 
-			"CASH", 
-			"CASHEQUIV", 
-			"SHORTTERMINVEST", 
-			"AR", 
-			"INV", 
-			"NOTESREC",
-			"WIP",
-			"PREPAIDEXP",
-			"OTHERCA",
-			"LONGTERMINVEST",
-			"PPE",
-			"ACCUDEP",
-			"INTANASSET",
-			"OTHERASSET" }
+    'Transaction detail'[Actual operating],
+    'Account category'[Account category name] 
+        IN { 
+            "CASH", 
+            "CASHEQUIV", 
+            "SHORTTERMINVEST", 
+            "AR", 
+            "INV", 
+            "NOTESREC",
+            "WIP",
+            "PREPAIDEXP",
+            "OTHERCA",
+            "LONGTERMINVEST",
+            "PPE",
+            "ACCUDEP",
+            "INTANASSET",
+            "OTHERASSET" }
 )
 ```
+
 #### 'Transaction detail'[Total operating expenses]
+
 ```
 Total operating expenses = 
 CALCULATE
@@ -411,7 +397,9 @@ CALCULATE
             "CHRNOTUSEWORKCAP" }
 )
 ```
+
 #### 'Transaction detail'[Total expenses]
+
 ```
 // After version 10.0.37:
 Total expenses =
@@ -434,7 +422,9 @@ CALCULATE
     }
 )
 ```
+
 #### 'Transaction detail'[Total revenue]
+
 ```
 // After version 10.0.37:
 Total Revenue =
@@ -446,15 +436,17 @@ CALCULATE (
 // Before version 10.0.37:
 Total revenue = 
 CALCULATE(
-	'Transaction detail'[Actual operating],
-	'Account category'[Account category name] 
-		IN {
-			"SALES", 
-			"OTHERINC", 
-			"SALESRETDIS" }
+    'Transaction detail'[Actual operating],
+    'Account category'[Account category name] 
+        IN {
+            "SALES", 
+            "OTHERINC", 
+            "SALESRETDIS" }
 )
 ```
+
 #### 'Transaction detail'[Additional earnings]
+
 ```
 Additional earnings = 
 CALCULATE (
@@ -467,16 +459,17 @@ IN {
 )
 ```
 
-
 > [!NOTE]
-> The following measures were added or updated in 10.0.37.
->
+> The following measures were added or updated in version 10.0.37.
 
 #### 'Transaction detail'[Actuals]
+
 ```
 Actuals = CALCULATE(-sum('General ledger attributes'[PRIMARYAMOUNT]), 'General ledger attributes'[ISCREDIT] = "Yes") + CALCULATE(sum('General ledger attributes'[PRIMARYAMOUNT]), 'General ledger attributes'[ISCREDIT] = "No")
 ```
+
 #### 'Transaction detail'[Subledger Total revenue]
+
 ```
 Subledger Total revenue =
 CALCULATE (
@@ -484,7 +477,9 @@ CALCULATE (
     'Account'[Account type] = "Revenue"
 )
 ```
+
 #### 'Transaction detail'[Subledger Total expenses]
+
 ```
 Subledger Total expenses =
 CALCULATE (
@@ -492,7 +487,9 @@ CALCULATE (
     'Account'[Account type] = "Expense"
 )
 ```
+
 #### 'Transaction detail'[Subledger Actual operating]
+
 ```
 Subledger Actual operating =
 CALCULATE (
@@ -500,195 +497,194 @@ CALCULATE (
     'General ledger attributes'[Transaction Type] = "RegularOperating"
 )
 ```
+
 #### 'Transaction detail'[Subledger Actuals credits positive]
+
 ```
 Subledger Actuals credits positive =
 CALCULATE ('Transaction detail'[Subledger Actuals], Account[Account typical balance] = "Debit" )
         - CALCULATE ( 'Transaction detail'[Subledger Actuals], Account[Account typical balance] = "Credit")
 ```
+
 #### 'Transaction detail'[Subledger Actuals]
+
 ```
 Subledger Actuals = SUM('Transaction detail'[ACCOUNTINGCURRENCYAMOUNT])
 ```
 
 ### Account category description by name table
-Use this to find the long form name of the account category.
-```
-Account category name	Account category description
-ACCUDEP	Accumulated depreciation
-ADDPAIDINCAPCOM	Additional paid in capital â€“ Common
-ADDPAIDINCAPPREF	Additional paid in capital â€“ Preferred
-ADMINEXP	Administrative expense
-AMORTATIVOS	Amortização de ativos
-AMORTINTAGASSET	Amortization of intangible assets
-AP	Accounts payable
-AR	Accounts receivable
-ATIVOSFIXOS	Ativos fixos
-ATIVOSINTANG	Ativos intangiveis
-ATIVOSLP	Ativos a long prazo
-CAIXA	Caixa
-CAPITAL	Capital
-CASH	Cash
-CASHEQUIV	Cash equivalents
-CHRNOTUSEWORKCAP	Charges not using working capital
-COGS	Cost of goods sold
-COMMONDIV	Common dividends
-COMMONSTOCK	Common stock
-CONSOLIDACAO	Consolidação
-CONSOLIDATIONS	Consolidations
-CP	Contas a pagar
-CPV	Custo de produtos vendidos
-CR	Contas a receber
-CREDITOSLP	Creditos de longo prazo
-CURASS	Current assets
-CURLIAB	Current liabilities
-CURRENTMATLTD	Current maturities on long-term debt
-CUSTSERV	Custo de prestação de serviço
-DEPACUM	Depreciação acumulada
-DEPREXP	Depreciation expense
-DESPADMIN	Despesas administrativas
-DESPDEPREC	Despesas depreciação
-DESPFIN	Despesas financeiras
-DESPIMP	Despesas de impostos
-DESPPROD	Despesas de produção
-DESPPROJ	Despesas de projetos
-DESPSAL	Despesas de salários
-DESPVENDAS	Despesas de vendas
-DIVPAY	Dividends payable
-ENCUMBRANCE	Encumbrance
-EST	Estoque
-ESTATISTICAS	Contas estatisticas
-EXIGIVELLP	Exigivel longo prazo
-EXP	Expense
-GAINLOSSASSET	Gain or loss on asset disposal
-IMPPAGAR	Impostos a pagar
-IMPRECUP	Impostos a recuperar
-INCTAXEXP	Income Tax Expense
-India COA	IN COA
-India COA import	Import IN COA
-INTANASSET	Intangible assets
-INTEXP	Interest expense
-INTPAY	Interest payable
-INV	Inventory
-INVEST	Investimentos
-INVESTLP	Investimentos de longo prazo
-Japanese	Japanese import
-JURPAGAR	Juros a pagar
-LEASEPAY	Leases payable (current)
-LONGTERMDEBT	Long-term debt
-LONGTERMINVEST	Long-term investments
-LUCPERD	Lucros e perdas
-MANUEXP	Manufacturing expense
-NONCURASS	Non-current assets
-NONCURLIAB	Non-current liabilities
-NOTESPAY	Notes payable
-NOTESREC	Notes receivables
-OTHERASSET	Other assets
-OTHERCA	Other current assets
-OTHERCURLIA	Other current liabilities
-OTHEREMPEXP	Other employee expenses
-OTHEREXP	Other expenses
-OTHERINC	Other income
-OUTATIVOS	Outros ativos
-OUTCP	Outras contas a pagar
-OUTDDESPEMP	Outras despesas com empregados
-OUTDESP	Outras despesas
-OUTPASSIVOS	Outros passivos
-OUTREC	Outras receitas
-PERDASDIV	Perdas diversas
-PERDASGANHOS	Perdas e ganhos de ativos
-PPE	Property plant and equipment
-PRE-ENCUMBRANCE	Pre-encumbrance
-PREFERREDDIV	Preferred dividends
-PREFERREDSTOCK	Preferred stock
-PREPAIDEXP	Prepaid expenses
-PROD	Trabalho em progresso
-PROJEXP	Project operation expense
-RETEARN	Retained earnings
-RETVENDAS	Retorno de vendas e descontos
-REV	Revenue
-REVNOTPRODWORKCAP	Revenues not producing working capital
-SALARYEXP	Salaries expense
-SALERETDIS	Sales returns and discounts
-SALES	Sales
-SALESRETDIS	Sales return discount
-SELLEXP	Selling expense
-SHAREFUND	Shareholders funds
-SHORTTERMINVEST	Short-term investments
-SINKPAY	Sinking Fund payable (Current)
-STATISTICAL	Statistical accounts
-TANDEEXP	Travel and entertainment expenses
-TAXEXP	Tax expense
-TAXPAY	Taxes payable
-TAXREC	Tax receivable
-TotalAccounts	Total accounts
-TREASTOCK	Treasury stock
-VENDAS	Vendas
-VIAGEM	Viagem
-WIP	Work in process
-その他の流動負債	その他の流動負債
-その他の流動資産	その他の流動資産
-その他の資本剰余金	その他の資本剰余金
-仮払消費税	仮払消費税
-任意積立金	任意積立金
-出資金	出資金
-前受収益	前受収益
-前受金	前受金
-前受金 - その他流動資産	前受金 - その他流動資産
-前払費用	前払費用
-受取手形	受取手形
-土地	土地
-売掛金	売掛金
-工具器具備品	工具器具備品
-建物	建物
-建設仮勘定	建設仮勘定
-引当金（流動性のもの）	引当金（流動性のもの）
-当期未処分利益	当期未処分利益
-投資固定資産	投資固定資産
-投資有価証券	投資有価証券
-支払手形	支払手形
-新株引受権付社債	新株引受権付社債
-有価証券	有価証券
-未収入金	未収入金
-未収収益 - その他流動資産	未収収益 - その他流動資産
-未払金	未払金
-棚卸資産	棚卸資産
-構築物	構築物
-機械および装置	機械および装置
-法令上の引当金	法令上の引当金
-法定準備金	法定準備金
-減価償却累計額	減価償却累計額
-無形固定資産	無形固定資産
-特別修繕引当金	特別修繕引当金
-現金および預金	現金および預金
-短期借入金	短期借入金
-短期貸付金	短期貸付金
-社債	社債
-繰延資産	繰延資産
-船舶航空機	船舶航空機
-買掛金	買掛金
-貸倒引当金	貸倒引当金
-資本	資本
-車両運搬具	車両運搬具
-転換社債	転換社債
-退職給与引当金	退職給与引当金
-長期借入金	長期借入金
-長期前払費用	長期前払費用
-長期未払金	長期未払金
-長期貸付金	長期貸付金
-長期預り金	長期預り金
-預け金	預け金
-預り金	預り金
-```
+
+Use the following table to find the long form name of an account category.
+
+| Account category name | Account category description |
+|-----------------------|------------------------------|
+| ACCUDEP | Accumulated depreciation |
+| ADDPAIDINCAPCOM | Additional paid in capital - Common |
+| ADDPAIDINCAPPREF | Additional paid in capital - Preferred |
+| ADMINEXP | Administrative expense |
+| AMORTATIVOS | Amortização de ativos |
+| AMORTINTAGASSET | Amortization of intangible assets |
+| AP | Accounts payable |
+| AR | Accounts receivable |
+| ATIVOSFIXOS | Ativos fixos |
+| ATIVOSINTANG | Ativos intangiveis |
+| ATIVOSLP | Ativos a long prazo |
+| CAIXA | Caixa |
+| CAPITAL | Capital |
+| CASH | Cash |
+| CASHEQUIV | Cash equivalents |
+| CHRNOTUSEWORKCAP | Charges not using working capital |
+| COGS | Cost of goods sold |
+| COMMONDIV | Common dividends |
+| COMMONSTOCK | Common stock |
+| CONSOLIDACAO | Consolidação |
+| CONSOLIDATIONS | Consolidations |
+| CP | Contas a pagar |
+| CPV | Custo de produtos vendidos |
+| CR | Contas a receber |
+| CREDITOSLP | Creditos de longo prazo |
+| CURASS | Current assets |
+| CURLIAB | Current liabilities |
+| CURRENTMATLTD | Current maturities on long-term debt |
+| CUSTSERV | Custo de prestação de serviço |
+| DEPACUM | Depreciação acumulada |
+| DEPREXP | Depreciation expense |
+| DESPADMIN | Despesas administrativas |
+| DESPDEPREC | Despesas depreciação |
+| DESPFIN | Despesas financeiras |
+| DESPIMP | Despesas de impostos |
+| DESPPROD | Despesas de produção |
+| DESPPROJ | Despesas de projetos |
+| DESPSAL | Despesas de salários |
+| DESPVENDAS | Despesas de vendas |
+| DIVPAY | Dividends payable |
+| ENCUMBRANCE | Encumbrance |
+| EST | Estoque |
+| ESTATISTICAS | Contas estatisticas |
+| EXIGIVELLP | Exigivel longo prazo |
+| EXP | Expense |
+| GAINLOSSASSET | Gain or loss on asset disposal |
+| IMPPAGAR | Impostos a pagar |
+| IMPRECUP | Impostos a recuperar |
+| INCTAXEXP | Income Tax Expense |
+| India COA | IN COA |
+| India COA import | Import IN COA |
+| INTANASSET | Intangible assets |
+| INTEXP | Interest expense |
+| INTPAY | Interest payable |
+| INV | Inventory |
+| INVEST | Investimentos |
+| INVESTLP | Investimentos de longo prazo |
+| Japanese | Japanese import |
+| JURPAGAR | Juros a pagar |
+| LEASEPAY | Leases payable (current) |
+| LONGTERMDEBT | Long-term debt |
+| LONGTERMINVEST | Long-term investments |
+| LUCPERD | Lucros e perdas |
+| MANUEXP | Manufacturing expense |
+| NONCURASS | Non-current assets |
+| NONCURLIAB | Non-current liabilities |
+| NOTESPAY | Notes payable |
+| NOTESREC | Notes receivables |
+| OTHERASSET | Other assets |
+| OTHERCA | Other current assets |
+| OTHERCURLIA | Other current liabilities |
+| OTHEREMPEXP | Other employee expenses |
+| OTHEREXP | Other expenses |
+| OTHERINC | Other income |
+| OUTATIVOS | Outros ativos |
+| OUTCP | Outras contas a pagar |
+| OUTDDESPEMP | Outras despesas com empregados |
+| OUTDESP | Outras despesas |
+| OUTPASSIVOS | Outros passivos |
+| OUTREC | Outras receitas |
+| PERDASDIV | Perdas diversas |
+| PERDASGANHOS | Perdas e ganhos de ativos |
+| PPE | Property plant and equipment |
+| PRE-ENCUMBRANCE | Pre-encumbrance |
+| PREFERREDDIV | Preferred dividends |
+| PREFERREDSTOCK | Preferred stock |
+| PREPAIDEXP | Prepaid expenses |
+| PROD | Trabalho em progresso |
+| PROJEXP | Project operation expense |
+| RETEARN | Retained earnings |
+| RETVENDAS | Retorno de vendas e descontos |
+| REV | Revenue |
+| REVNOTPRODWORKCAP | Revenues not producing working capital |
+| SALARYEXP | Salaries expense |
+| SALERETDIS | Sales returns and discounts |
+| SALES | Sales |
+| SALESRETDIS | Sales return discount |
+| SELLEXP | Selling expense |
+| SHAREFUND | Shareholders funds |
+| SHORTTERMINVEST | Short-term investments |
+| SINKPAY | Sinking Fund payable (Current) |
+| STATISTICAL | Statistical accounts |
+| TANDEEXP | Travel and entertainment expenses |
+| TAXEXP | Tax expense |
+| TAXPAY | Taxes payable |
+| TAXREC | Tax receivable |
+| TotalAccounts | Total accounts |
+| TREASTOCK | Treasury stock |
+| VENDAS | Vendas |
+| VIAGEM | Viagem |
+| WIP | Work in process |
+| その他の流動負債 | その他の流動負債 |
+| その他の流動資産 | その他の流動資産 |
+| その他の資本剰余金 | その他の資本剰余金 |
+| 仮払消費税 | 仮払消費税 |
+| 任意積立金 | 任意積立金 |
+| 出資金 | 出資金 |
+| 前受収益 | 前受収益 |
+| 前受金 | 前受金 |
+| 前受金 - その他流動資産 | 前受金 - その他流動資産 |
+| 前払費用 | 前払費用 |
+| 受取手形 | 受取手形 |
+| 土地 | 土地 |
+| 売掛金 | 売掛金 |
+| 工具器具備品 | 工具器具備品 |
+| 建物 | 建物 |
+| 建設仮勘定 | 建設仮勘定 |
+| 引当金（流動性のもの） | 引当金（流動性のもの） |
+| 当期未処分利益 | 当期未処分利益 |
+| 投資固定資産 | 投資固定資産 |
+| 投資有価証券 | 投資有価証券 |
+| 支払手形 | 支払手形 |
+| 新株引受権付社債 | 新株引受権付社債 |
+| 有価証券 | 有価証券 |
+| 未収入金 | 未収入金 |
+| 未収収益 - その他流動資産 | 未収収益 - その他流動資産 |
+| 未払金 | 未払金 |
+| 棚卸資産 | 棚卸資産 |
+| 構築物 | 構築物 |
+| 機械および装置 | 機械および装置 |
+| 法令上の引当金 | 法令上の引当金 |
+| 法定準備金 | 法定準備金 |
+| 減価償却累計額 | 減価償却累計額 |
+| 無形固定資産 | 無形固定資産 |
+| 特別修繕引当金 | 特別修繕引当金 |
+| 現金および預金 | 現金および預金 |
+| 短期借入金 | 短期借入金 |
+| 短期貸付金 | 短期貸付金 |
+| 社債 | 社債 |
+| 繰延資産 | 繰延資産 |
+| 船舶航空機 | 船舶航空機 |
+| 買掛金 | 買掛金 |
+| 貸倒引当金 | 貸倒引当金 |
+| 資本 | 資本 |
+| 車両運搬具 | 車両運搬具 |
+| 転換社債 | 転換社債 |
+| 退職給与引当金 | 退職給与引当金 |
+| 長期借入金 | 長期借入金 |
+| 長期前払費用 | 長期前払費用 |
+| 長期未払金 | 長期未払金 |
+| 長期貸付金 | 長期貸付金 |
+| 長期預り金 | 長期預り金 |
+| 預け金 | 預け金 |
+| 預り金 | 預り金 |
 
 ## Custom account categories
 
-Custom account categories are not currently supported by the CFO Overview workspace. Alternatively, a PowerBI report could be created and published to a workspace. 
-For more information, see [Connect to the services used with Power BI](/power-bi/service-connect-to-microsoft-dynamics-ax).
-
-
-- [Add analytics to workspaces by using Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
-
+The **CFO Overview** workspace doesn't currently support custom account categories. As an alternative, you can create a Power BI report and publish it to a workspace. For more information, see [Connect to the services used with Power BI](/power-bi/service-connect-to-microsoft-dynamics-ax).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
