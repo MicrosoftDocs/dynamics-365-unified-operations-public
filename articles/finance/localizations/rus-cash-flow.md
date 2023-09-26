@@ -61,7 +61,7 @@ The following table shows the stages of payment that a treasurer deals with duri
 </tr>
 <tr>
 <td>The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast.
-<blockquote><strong>Important:</strong> The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.</blockquote>
+<strong>Important:</strong> The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.
 </td>
 <td>
 <ul>

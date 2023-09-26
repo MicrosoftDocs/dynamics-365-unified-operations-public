@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 

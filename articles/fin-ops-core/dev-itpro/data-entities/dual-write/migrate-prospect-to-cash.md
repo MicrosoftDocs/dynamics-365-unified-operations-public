@@ -4,7 +4,7 @@ description: This article describes how to migrate Prospect to Cash data from Da
 author: RamaKrishnamoorthy
 ms.date: 02/01/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

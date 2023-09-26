@@ -4,7 +4,7 @@ description: This article describes how a company can use Microsoft Dynamics 365
 author: hhainesms
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines

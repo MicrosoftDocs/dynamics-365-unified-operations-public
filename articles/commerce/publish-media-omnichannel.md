@@ -4,7 +4,7 @@ description: This article describes how to publish media assignments by using om
 author: phinneyridge
 ms.date: 06/09/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: niholman

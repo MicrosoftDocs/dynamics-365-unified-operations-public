@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
-        - name: Supply Chain Management 10.0.36 (August 2023)
+        - name: Supply Chain Management 10.0.37 (November 2023)
+          href: get-started/whats-new-scm-10-0-37.md
+        - name: Supply Chain Management 10.0.36 (October 2023)
           href: get-started/whats-new-scm-10-0-36.md
-        - name: Supply Chain Management 10.0.35 (July 2023)
+        - name: Supply Chain Management 10.0.35 (August 2023)
           href: get-started/whats-new-scm-10-0-35.md
-        - name: Supply Chain Management 10.0.34 (June 2023)
-          href: get-started/whats-new-scm-10-0-34.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -509,6 +509,8 @@
           href: asset-management/work-orders/maintenance-forecasts.md
         - name: Procurement
           href: asset-management/work-orders/procurement.md
+        - name: Material availability check for work orders
+          href: asset-management/work-orders/material-availability-check-work-orders.md
         - name: Manual update of asset counters
           href: asset-management/work-orders/manual-update-of-asset-counters.md
         - name: Automatic update of asset counters
@@ -1747,6 +1749,8 @@
           href: inventory/inventory-visibility-allocation.md
         - name: Inventory Visibility on-hand change schedule and available to promise
           href: inventory/inventory-visibility-available-to-promise.md
+        - name: Inventory Visibility Power BI dashboard
+          href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
@@ -1969,6 +1973,8 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
+          - name: Continue to use deprecated master planning for some companies
+            href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
           - name: Differences between Planning Optimization and the deprecated master planning engine
@@ -2477,6 +2483,20 @@
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
+        - name: Advanced export control
+          items:
+          - name: Advanced export control overview
+            href: pim/export-control-overview.md
+          - name: Enable and configure advanced export control
+            href: pim/export-control-configure.md
+          - name: Work with advanced export control for products and sales orders
+            href: pim/export-control-use.md
+          - name: Extend export control sales order functionality
+            href: pim/export-control-extend-sales-orders.md
+          - name: Extend export control rules functionality
+            href: pim/export-control-extend-rules.md
+          - name: Extend export control license functionality
+            href: pim/export-control-extend-licenses.md
         - name: Hazardous materials
           items:
           - name: Hazardous materials overview
@@ -3563,11 +3583,13 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
-          - name: Over picking for sales orders and transfer orders
+          - name: Over-picking for sales orders and transfer orders
             href: warehousing/over-picking-for-sales-and-transfer-orders.md
+          - name: Over-pick materials for production and batch orders
+            href: warehousing/over-pick-materials-for-production-and-batch-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Batch and license plate confirmation
+          - name: Batch, serial, and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
@@ -3723,6 +3745,8 @@
         items:
         - name: What's new or changed in the Warehouse Management mobile app
           href: warehousing/whats-new-wma.md
+        - name: Warehouse Mobile app accessibility features
+          href: warehousing/warehouse-app-accessibility.md
         - name: Install, set up, and use mobile devices
           items:
           - name: Install and connect the Warehouse Management mobile app
@@ -3767,8 +3791,8 @@
           href: warehousing/mobile-device-parameters.md
         - name: Mobile device user accounts
           href: warehousing/mobile-device-work-users.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
+        - name: Warehouse mobile devices workspace
+          href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing

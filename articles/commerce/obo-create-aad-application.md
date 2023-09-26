@@ -4,9 +4,9 @@
 title: Create and configure an Azure AD application for account manager sign-in
 description: This article describes how to create and configure an Azure Active Directory (Azure AD) application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 08/09/2023
+ms.date: 09/22/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: mashneer
@@ -101,6 +101,7 @@ To add the Azure identity provider to a user flow, follow these steps.
 1. In your Azure AD B2C tenant, select **User flows**.
 1. Select the user flow that you want to add the identity provider to.
 1. Under the **Custom identity providers**, select the identity provider that you added in the [Create an Azure AD application for account manager sign-in in the Azure B2B tenant](#create-an-azure-ad-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
+1. In **Application Claims**, select **Identity Provider Access Token**, **Identity Provider**, **Email address**, **Given Name**, and **Surname**.
 1. Select **Save**.
 
 ## Additional resources

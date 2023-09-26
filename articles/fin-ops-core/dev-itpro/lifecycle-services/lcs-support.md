@@ -6,7 +6,7 @@ ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: IT Pro, Developer, Application user
+audience: Application user
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: emoos

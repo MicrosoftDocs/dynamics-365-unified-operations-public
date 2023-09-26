@@ -7,7 +7,7 @@ description: This article describes how to create Commerce catalogs for Microsof
 author: ashishmsft
 ms.date: 06/27/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw

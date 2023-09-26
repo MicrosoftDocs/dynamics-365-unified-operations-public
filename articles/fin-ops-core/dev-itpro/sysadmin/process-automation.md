@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: ProcessScheduleSeries
-audience: Application User, Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 

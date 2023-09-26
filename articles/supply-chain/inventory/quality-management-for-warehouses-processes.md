@@ -121,7 +121,7 @@ The value of the **Test group** field for the quality associations is also a fac
 
 #### Reference types
 
-When the **Reference type** value is *Purchase*, and the **Applicable warehouse type** value is *Quality management for warehouse processes only*, the **Event type** field on the **Process** FastTab must be set to *Registration*. *Registration* is the only supported event type for the *Purchase* reference type when you are using the *Quality management for warehouse processes* feature.
+When the **Reference type** value is *Purchase*, and the **Applicable warehouse type** value is *Quality management for warehouse processes only*, the **Event type** field on the **Process** FastTab must be set to *Registration*. *Registration* is the only supported event type for the *Purchase* and *Inbound shipment order* reference types when you're using the *Quality management for warehouse processes* feature.
 
 #### Quality processing policy
 
@@ -166,10 +166,10 @@ The **Break count by item** option controls whether the license plate count is e
 
 The value of the **Per nth license plate** field controls how often quality orders are created in relation to the number of items that are registered. For example, a value of *3* will send every third item to quality control, starting with the first item. The value must be more than 0 (zero).
 
-While workers receive items by using the Warehouse Management mobile app, the system validates whether a quality association is set up for each incoming item. If a quality association is set up, the system uses the item sampling record that is configured for that quality association to determine how it will create quality orders, quality item sampling work, and purchase order work.
+While workers receive items by using the Warehouse Management mobile app, the system validates whether a quality association is set up for each incoming item. If a quality association is set up, the system uses the item sampling record that is configured for that quality association to determine how it will create quality orders, quality item sampling work, and order work.
 
 > [!NOTE]
-> When receipt registration is done in the web client (by using the small registration page or the item arrival journal for purchase order lines), no quality item sampling work or purchase order work will be created, regardless of the setup. Instead, for items that match a quality association, the referenced item sampling will be used to control the creation of quality orders only.
+> When receipt registration is done in the web client (by using the small registration page or the item arrival journal), no quality item sampling work or order work will be created, regardless of the setup. Instead, for items that match a quality association, the referenced item sampling will be used to control the creation of quality orders only.
 
 ## Examples of automatic generation of quality orders
 
@@ -297,7 +297,7 @@ To work through this scenario, you must prepare your system in the following way
 
 - Make sure that demo data is installed on the system, and select the **USMF** legal entity.
 - Turn on the *Quality management for warehouse processes* feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (as of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off).
-- Configure warehouse 51 to use the *Quality management for warehouse processes* feature by following theses steps:
+- Configure warehouse 51 to use the *Quality management for warehouse processes* feature by following these steps:
 
     1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
     1. Select warehouse 51.

@@ -6,7 +6,7 @@ description: This article provides the service description for finance and opera
 author: tomhig
 ms.date: 04/27/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb

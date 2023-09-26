@@ -4,7 +4,7 @@ description: This article describes how to change the number of decimal places t
 author: RamaKrishnamoorthy
 ms.date: 12/08/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

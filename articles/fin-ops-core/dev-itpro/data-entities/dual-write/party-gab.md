@@ -4,7 +4,7 @@ description: This article describes the Party and global address book functional
 author: RamaKrishnamoorthy
 ms.date: 08/22/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri

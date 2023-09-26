@@ -40,7 +40,7 @@ Before you can enter registration ID, you must set up registration types for the
 | Primary for country | If a party is associated with one or more addresses in particular country and the registration ID is valid for all these addresses, you must designate one address as primary for the country/region. You can only register one ID as primary. Defines if the registration number can be entered only for primary for country/region address. |
 
 ## Assign a registration type to a registration category
-Registration category is country/region registration identifier approved for using in particular country/region for tax, customs and other purposes. This category defines validation rules of particular registration ID (including check digits etc.) and inclusion registration ID in different reports. Use the page **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories** to assign registration type of particular country to supported registration category.
+Registration category is country/region registration identifier approved for using in particular country/region for tax, customs and other purposes. This category defines validation rules of particular registration ID (including check digits etc.) and inclusion registration ID in different reports. Use the page **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories** to assign registration type of particular country/region to supported registration category.
 
 | Field            | Description|
 |-----------------------|----------------|

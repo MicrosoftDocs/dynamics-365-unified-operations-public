@@ -6,7 +6,7 @@ description: This article provides guidelines for deploying the control unit int
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

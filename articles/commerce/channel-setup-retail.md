@@ -4,7 +4,7 @@ description: This article describes how to create a new retail channel in Micros
 author: samjarawan
 ms.date: 08/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar

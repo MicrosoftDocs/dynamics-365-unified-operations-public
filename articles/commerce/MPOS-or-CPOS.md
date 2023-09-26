@@ -4,7 +4,7 @@ description: This article explains the key differences between the Store Commerc
 author: josaw1
 ms.date: 04/26/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw

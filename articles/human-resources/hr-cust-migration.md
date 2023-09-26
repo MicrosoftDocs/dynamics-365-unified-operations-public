@@ -55,9 +55,9 @@ To learn more about migration tooling, prerequisites, migration steps, and consi
 
 ### Dataverse environment backup (Sandbox)
 
- - Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
- - Create a new Dataverse environment by using the Power Platform admin center.
- - Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
+- Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
+- Create a new Dataverse environment by using the Power Platform admin center.
+- Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
 
 > [!NOTE]
 > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
@@ -198,7 +198,9 @@ The environment state will show the deployment progress. The state will be chang
 - If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
-- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure. 
+- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
+- If Power BI is needed in the migrated finance and operations environment, complete the steps in [Administration overview](hr-admin-overview.md).
+- If you're configuring integration with finance and operations apps, see [Migration considerations](hr-admin-integration-finance.md#migration-considerations).
 
 #### Dual-write integration
 

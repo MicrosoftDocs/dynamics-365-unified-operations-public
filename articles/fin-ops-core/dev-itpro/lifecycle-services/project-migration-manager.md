@@ -75,7 +75,7 @@ The following table shows the data that can be transferred between instances and
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics are generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
 | Not supported | Globalization | Regulatory alerts aren't transferable between projects. |
-| Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
+| Not supported | Code upgrade | Code upgrade data can't be exported. This feature is only supported in US-based public cloud instance of Lifecycle Services. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
 | Not supported | Environment history | History isn't transferred for environments. It starts new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
 

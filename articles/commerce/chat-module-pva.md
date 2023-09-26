@@ -6,7 +6,7 @@ description: This article describes the Commerce Chat with Power Virtual Agents 
 author: josaw1
 ms.date: 04/04/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
@@ -35,7 +35,7 @@ The Commerce Chat with Power Virtual Agents feature helps businesses achieve the
 
 To use the Commerce Chat with Power Virtual Agents feature, you must first create a Power Virtual Agents chatbot for your e-commerce website. For instructions, see [Create and delete Power Virtual Agents bots](/power-virtual-agents/authoring-first-bot).
 
-After you configure the chatbot, follow the procedures below to obtain the bot ID and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
+After you configure the chatbot, follow the procedures below to obtain the bot ID, and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
 
 ### Find the bot ID of a Power Virtual Agent
 
@@ -43,9 +43,15 @@ To find the bot ID of a Power Virtual Agent in the Power Virtual Agents web app,
 
 1. In the left navigation menu, select **Settings \> Channels**.
 1. Select **Mobile app**.
-1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL value (for example, `https://environment-id.04.environment.api.powerplatform.com/powervirtualagents/bots/<bot ID GUID>/directline/token?api-version=2022-03-01-preview`). The bot ID is the GUID between **/bots/** and **/directline/** in the token endpoint URL.
+1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL.
+1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT token.
+1. Decode the JWT token. In the decoded result, the **bot ID** is found in the **bot** field.
 
 :::image type="content" source="media/chat-module-pva-botid.png" alt-text="Find bot ID of a Power Virtual Agent":::
+
+:::image type="content" source="media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
+
+:::image type="content" source="media/chat-module-pva-directlinetoken-decoded.png" alt-text="Direct line token result decoded":::
 
 > [!NOTE]
 > The bot ID differs from the bot app ID.

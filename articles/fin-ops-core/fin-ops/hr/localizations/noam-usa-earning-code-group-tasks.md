@@ -102,16 +102,16 @@ Each earning type should have a unique earning code. The following information i
 <td>Select a payment run type for this earning code. When you generate pay statements, you select a run type for each payment run. Earning codes that are included in the selected payment run type are processed in that payment run. The following options are available:
 <ul>
 <li><strong>Primary</strong> – Include this earning code only in primary payment runs, such as weekly or biweekly runs. These runs are used for earnings such as regular pay, holiday pay, or vacation pay.
-<blockquote>[!TIP] An earning code of the <strong>Primary</strong> type can be used in only one payment run in each pay period. This restriction can cause issues if, for example, you make a mistake that you must correct in the same payment run. Earning codes of the <strong>Primary and additional</strong> type can be used more than one time in a pay period. Therefore, you should consider selecting <strong>Primary and additional</strong> instead of <strong>Primary</strong> for the earning codes that will be used for your primary payment runs.</blockquote>
+[!TIP] An earning code of the <strong>Primary</strong> type can be used in only one payment run in each pay period. This restriction can cause issues if, for example, you make a mistake that you must correct in the same payment run. Earning codes of the <strong>Primary and additional</strong> type can be used more than one time in a pay period. Therefore, you should consider selecting <strong>Primary and additional</strong> instead of <strong>Primary</strong> for the earning codes that will be used for your primary payment runs.
 </li>
 <li><strong>Additional</strong> – Include this earning code only in additional payment runs, such as runs that are used for bonuses or travel reimbursement.</li>
 <li><strong>Primary and additional</strong> – Include this earning code in both primary and additional payment runs.
-<blockquote>[!TIP] When you select this payment run type, the earning code is processed in the first payment run in the pay period that is either primary or additional. You can't reserve or hold the earning code for a specific run type.</blockquote>
+[!TIP] When you select this payment run type, the earning code is processed in the first payment run in the pay period that is either primary or additional. You can't reserve or hold the earning code for a specific run type.
 </li>
 <li><strong>Gross up</strong> – Include this earning code in gross-up payment runs, which are most often used for awards or reimbursements where the worker should receive a specific amount after taxes. If you select this option, you must select an earning code in the <strong>Gross up earning code</strong> field. The earning codes that are available in that field have a payment run type of <strong>Automatic</strong>.</li>
 <li><strong>Automatic</strong> – Use this earning code in gross-up payment runs. Gross-up payment runs use earning codes of two payment run types: <strong>Gross up</strong> and <strong>Automatic</strong>. The earning code of the <strong>Gross up</strong> payment run type is used for the earning that must be grossed up. (This earning is often an award or a reimbursement.) The earning code of the <strong>Automatic</strong> payment run type is used for the earnings that cover the taxes, so that the final amount of the gross up earning is correct. Earning lines that use earning codes of the <strong>Automatic</strong> payment run type are generated automatically when gross-up earning codes are processed.</li>
 </ul>
-<blockquote>[!NOTE] When you select <strong>Gross up</strong> or <strong>Automatic</strong>, the <strong>Tax method</strong>, <strong>Base earnings component</strong>, <strong>Rate basis</strong>, and <strong>Unit of measure</strong> fields are set to predefined values that can't be changed.</blockquote>
+<strong>NOTE: </strong>When you select <strong>Gross up</strong> or <strong>Automatic</strong>, the <strong>Tax method</strong>, <strong>Base earnings component</strong>, <strong>Rate basis</strong>, and <strong>Unit of measure</strong> fields are set to predefined values that can't be changed.
 </td>
 </tr>
 <tr>
@@ -157,7 +157,7 @@ The following information is entered on the **General** tab.
 <li>When the rate basis is <strong>Hourly</strong>, <strong>Pay period</strong>, <strong>Monthly</strong>, or <strong>Annually</strong>, this field is used together with the <strong>Rate basis</strong> field to determine the earnings amount. The rate basis method determines the appropriate compensation rate for workers. Workers who have different hourly rates can use the same hourly earning code, because the correct hourly rate is calculated for each worker and position. For example, if the compensation rate is $24,000 per year, and the worker's pay cycle is monthly, select <strong>Pay period</strong> as the rate basis, and enter a multiplier of <strong>1</strong>. The generated earnings will be $2,000.</li>
 <li>For information about the value that you should use when the rate basis is <strong>Hours of earnings</strong>, <strong>Percent of earnings</strong>, or <strong>Regular rate of pay</strong>, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
 </ul>
-<blockquote>[!NOTE] This field is ignored when retroactive earning codes are calculated.</blockquote>
+<strong>NOTE: </strong>This field is ignored when retroactive earning codes are calculated.
 </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@ For information about how to use earning code groups to generate premium earning
 <tr>
 <td>Retroactive earning</td>
 <td>If you select this option, this earning code is set up as a retroactive earning code. This field isn't available if <strong>Gross up</strong> or <strong>Automatic</strong> is selected in the <strong>Include in payment run type</strong> field. When a retroactive earning code is created, the <strong>Rate basis</strong>, <strong>Productive</strong>, <strong>Unit of measure</strong>, and <strong>Amount or multiplier</strong> fields are set to predefined values that can't be changed.
-<blockquote>[!NOTE] If you select this option and then clear it, the <strong>Rate basis</strong> field is set to <strong>Flat amount</strong>.</blockquote>
+<strong>NOTE: </strong>If you select this option and then clear it, the <strong>Rate basis</strong> field is set to <strong>Flat amount</strong>.
 </td>
 </tr>
 <tr>
@@ -192,7 +192,7 @@ For information about how to use earning code groups to generate premium earning
 <tr>
 <td>Retroactive earning code</td>
 <td>This field is used to associate a non-retroactive earning code with an earning code that will retroactively adjust the processed earning lines that use this code.
-<blockquote>[!NOTE] This field is optional. It's available only if the <strong>Retroactive earning</strong> option is cleared.</blockquote>
+<strong>NOTE: </strong>This field is optional. It's available only if the <strong>Retroactive earning</strong> option is cleared.
 </td>
 </tr>
 <tr>
@@ -202,7 +202,7 @@ For information about how to use earning code groups to generate premium earning
 <tr>
 <td>Allow editing of earning statement rates</td>
 <td>Select this option to let users change the rate on earning statement lines that are generated by using this earning code. If you plan to enter beginning balances during the initial payroll setup, select this option for all earning codes when you create them. After you enter the beginning balances, you can clear this option to prevent rates from being changed during typical payroll processing.
-<blockquote>[!NOTE] If a salary line is generated by using an automated process, the rate on that line can't be changed, even if this option is selected. If you manually add a salary line, you can change the rate on the line if this option is selected.</blockquote>
+<strong>NOTE: </strong>If a salary line is generated by using an automated process, the rate on that line can't be changed, even if this option is selected. If you manually add a salary line, you can change the rate on the line if this option is selected.
 </td>
 </tr>
 <tr>
@@ -223,10 +223,10 @@ The following information is entered on the **Accounting** tab. This tab stores 
 | Field                        | Description |
 |------------------------------|-------------|
 | Legal entity                 | The legal entity for the dimension template, default dimensions, accounting rules, and project category that are used together with the earning code. |
-| Project category             | The project category that the earnings are charged to, if the earnings are charged to a project category.<blockquote>[!NOTE] If the **Unit of measure** field is set to **Hours** for this earning code, this list is limited to project categories that bill hourly. Otherwise, the list contains only projects that are billed as expenses.</blockquote> |
-| Distribution template        | The template that is used to determine the default dimension values and percentages for earning distributions. This information can be changed on individual earning lines.<blockquote>[!NOTE] If you select a template in this field, this setting overrides the template that is assigned to the position when you create earnings statement lines.</blockquote> |
-| Default financial dimensions | The default financial dimensions for the main account. When you select a financial dimension value, the **Where the %1 dimension is used** field group shows where the dimension is used in account structures and advanced rule structures.<blockquote>[!NOTE] The dimension values from the earning code and the position are added to the earning line and can be changed. When a value for the same dimension is specified for both the earning code and the position, the dimension value for the earning code is used.</blockquote> |
-| Posting rules                | The accounting rules that are applied when earnings that are generated for this earning code are posted. The main account for distributions is based on the department, job, and worker selections for each posting rule.<blockquote>[!NOTE] The main account can't be changed on the earning lines.</blockquote> |
+| Project category             | The project category that the earnings are charged to, if the earnings are charged to a project category. **NOTE:**  If the **Unit of measure** field is set to **Hours** for this earning code, this list is limited to project categories that bill hourly. Otherwise, the list contains only projects that are billed as expenses. |
+| Distribution template        | The template that is used to determine the default dimension values and percentages for earning distributions. This information can be changed on individual earning lines. **NOTE:**  If you select a template in this field, this setting overrides the template that is assigned to the position when you create earnings statement lines. |
+| Default financial dimensions | The default financial dimensions for the main account. When you select a financial dimension value, the **Where the %1 dimension is used** field group shows where the dimension is used in account structures and advanced rule structures. **NOTE:**  The dimension values from the earning code and the position are added to the earning line and can be changed. When a value for the same dimension is specified for both the earning code and the position, the dimension value for the earning code is used. |
+| Posting rules                | The accounting rules that are applied when earnings that are generated for this earning code are posted. The main account for distributions is based on the department, job, and worker selections for each posting rule. **NOTE:**  The main account can't be changed on the earning lines. |
 
 The following information is entered on the **Reporting** tab. This tab contains tax-related information that is required by the Internal Revenue Service (IRS).
 

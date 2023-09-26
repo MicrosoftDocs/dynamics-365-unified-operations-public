@@ -4,7 +4,7 @@ description: This article provides additional information on how to set your bus
 author: BrianShook
 ms.date: 05/24/2023
 ms.topic: article 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo

@@ -17,12 +17,12 @@ items:
           href: get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.37 (November 2023)
+          href: get-started/whats-new-platform-updates-10-0-37.md
         - name: Platform updates for version 10.0.36 (September 2023)
           href: get-started/whats-new-platform-updates-10-0-36.md
         - name: Platform updates for version 10.0.35 (August 2023)
           href: get-started/whats-new-platform-updates-10-0-35.md
-        - name: Platform updates for version 10.0.34 (July 2023)
-          href: get-started/whats-new-platform-updates-10-0-34.md 
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -293,18 +293,8 @@ items:
         href: data-entities/dm-error-descriptions.md  
       - name: Archive historical records
         items:
-        - name: Archive solution overview
+        - name: The archive solution preview is currently paused
           href: sysadmin/archive-overview.md
-        - name: Set up the archive solution
-          href: sysadmin/archive-setup.md
-        - name: Extend the archive solution to support custom tables and fields
-          href: sysadmin/archive-customizations.md
-        - name: Archive general ledger data
-          href: sysadmin/archive-general-ledger.md
-        - name: Archive sales orders
-          href: sysadmin/archive-sales-orders.md
-        - name: Move inventory transactions history to long-term data retention
-          href: sysadmin/archive-inventory-purge.md
     - name: Azure Data Lake
       items: 
       - name: Export to Azure Data Lake overview
@@ -1267,20 +1257,22 @@ items:
                 href: data-entities/dual-write/ledger-mapping.md            
               - name: Integrated tax master
                 href: data-entities/dual-write/tax-mapping.md
-            - name: Sync on-demand with the Supply Chain Management pricing engine
-              href: data-entities/dual-write/pricing-engine.md
-            - name: Quote to cash in dual-write
-              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-            - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
-              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-concept.md
-            - name: Enable extra efficiency in quote-to-cash with Dynamics 365 Sales
-              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md
-            - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
-              href: data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md
-            - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
-              href: data-entities/dual-write/commerce-pricing.md
-            - name: Set up the mapping for the sales order status fields
-              href: data-entities/dual-write/sales-status-map.md             
+            - name: Quote-to-cash with Dynamics 365 Sales
+              items:
+              - name: Quote-to-cash in dual-write
+                href: data-entities/dual-write/dual-write-prospect-to-cash.md
+              - name: Add efficiency in quote-to-cash with Dynamics 365 Sales
+                href: data-entities/dual-write/add-efficiency-in-quote-to-cash-concept.md
+              - name: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
+                href: data-entities/dual-write/add-efficiency-in-quote-to-cash-enable.md
+              - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
+                href: data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md
+              - name: Sync on-demand with the Supply Chain Management pricing engine
+                href: data-entities/dual-write/pricing-engine.md
+              - name: Use Dynamics 365 Commerce pricing engine with Dynamics 365 Sales
+                href: data-entities/dual-write/commerce-pricing.md
+              - name: Set up the mapping for the sales order status fields
+                href: data-entities/dual-write/sales-status-map.md             
             - name: Filter intercompany orders to avoid synchronizing Orders and OrderLines
               href: data-entities/dual-write/filtering-intercompany-orders.md 
             - name: Integrate procurement in Supply Chain Management with Field Service
@@ -2182,6 +2174,12 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: user-interface/task-recorder-training-docs.md
+  - name: Responsible AI FAQs
+    items:
+    - name: Responsible AI FAQS for Dynamics 365 Platform
+      href: responsible-ai/responsible-ai-overview.md
+    - name: FAQ for chat with finance and operations data on Microsoft 365 Copilot
+      href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 #ms.search.form:
-audience: IT Pro, Application User
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.suite: 

@@ -31,6 +31,8 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.37 (merged infrastructure)          
+          href: ./get-started/hr-whats-new-10-0-37.md  
         - name: Human Resources 10.0.36 (merged infrastructure)          
           href: ./get-started/hr-whats-new-10-0-36.md   
         - name: Human Resources 10.0.35 (merged infrastructure)          
@@ -1077,6 +1079,10 @@ items:
             href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
           - name: Benefit employee plan status
             href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
+      - name: API payroll integration partners
+        items:
+          - name: API payroll integration with Dayforce
+            href: hr-admin-payroll-api-integration-dayforce.md
   - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

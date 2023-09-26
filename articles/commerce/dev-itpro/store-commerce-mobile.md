@@ -6,7 +6,7 @@ description: This article describes how to get started using the Microsoft Dynam
 author: stuharg
 ms.date: 08/22/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg

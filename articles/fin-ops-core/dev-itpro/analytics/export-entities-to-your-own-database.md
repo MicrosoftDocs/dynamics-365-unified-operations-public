@@ -166,7 +166,7 @@ You can create a data project that has multiple entities. You can schedule this 
 
 #### Exporting data across companies
 
-Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BOYD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
+Jobs that are executed in batch can also be used to export data across companies. This requires that the **Enable all company export** option is enabled under **Data import/export framework parameters > Bring your own database**. Concurrent exports for the same entity to the BYOD database may cause high DTU usage and can result in data loss for incremental exports. To avoid this risk, starting in version 10.0.16, all execution across companies will be sequential per company. This means that jobs with a high number of entities and companies take longer to run.
 
 To reduce the overall export times, consider the following:
 

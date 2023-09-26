@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Finance home page           
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.37 (November)
+          href: get-started/whats-new-changed-10-0-37.md
         - name: Finance 10.0.36 (October)
           href: get-started/whats-new-changed-10-0-36.md  
         - name: Finance 10.0.35 (August)
@@ -1188,8 +1190,10 @@
             href: general-ledger/allow-edits-internal-data-gl-vouchers.md
           - name: View a related intercompany voucher from a journal
             href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-          - name: Publish journal lines and documents from Excel
+          - name: Publish journal lines and documents from Excel      
             href: general-ledger/open-lines-excel-journals-documents.md
+          - name: Automatic split of financial journals
+            href: general-ledger/auto-split-journal.md
           - name: Create ledger accrual transactions
             href: general-ledger/tasks/create-ledger-accrual-transactions.md
           - name: One voucher
@@ -1922,6 +1926,8 @@
             href: localizations/apac-aus-payment-times-report.md
           - name: Customer electronic invoices
             href: localizations/apac-aus-nzl-e-invoices.md
+          - name: Taxable Payments Annual Report
+            href: localizations/apac-aus-tpar.md
         - name: Austria
           items:
           - name: Austria overview
@@ -2307,7 +2313,13 @@
           - name: Danish Intrastat
             href: localizations/emea-dnk-intrastat.md
           - name: VAT declaration
-            href: localizations/emea-dnk-vat-declaration-denmark.md
+            items:
+            - name: VAT declaration overview
+              href: localizations/emea-dnk-vat-declaration-denmark.md
+            - name: Preview VAT declaration in Excel format
+              href: localizations/emea-dnk-vat-declaration-preview.md
+            - name: Submit VAT return in XML to the Danish Tax Agency
+              href: localizations/emea-dnk-vat-declaration-submission.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/emea-dnk-saf-t.md
           - name: Accounting basis (Regnskab Basis) electronic report for Denmark
@@ -3148,6 +3160,8 @@
             href: localizations/tasks/configure-main-accounts-asset-retirement.md
           - name: Consumption tax report
             href: localizations/apac-jpn-consumption-tax-report.md
+          - name: Qualified Invoice System
+            href: localizations/apac-jpn-qualified-invoice-system.md            
           - name: Consolidated invoices
             href: localizations/apac-jpn-consolidate-invoices.md
           - name: Create a fixed asset with additional depreciation
@@ -3290,12 +3304,16 @@
             href: localizations/latam-overview.md
           - name: Latin America parameters
             href: localizations/ltm-core-latam-parameters.md
+          - name: Field list configuration for Latin America
+            href: localizations/ltm-core-field-master-lists.md
           - name: Taxpayer types for Latin America
             href: localizations/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
             href: localizations/ltm-core-tax-id-type.md
           - name: Tax application for Latin America
             href: localizations/ltm-core-tax-application.md
+          - name: Tax and legal attributes for Latin America
+            href: localizations/ltm-tax-legal-attributes.md
           - name: Document classes for Latin America
             href: localizations/ltm-core-document-class.md
           - name: Document class types for Latin America
@@ -3891,7 +3909,9 @@
           - name: Swedish Intrastat
             href: localizations/emea-swe-intrastat.md
           - name: EU sales list
-            href: localizations/emea-swe-eu-sales-list.md          
+            href: localizations/emea-swe-eu-sales-list.md      
+          - name: Report statistics of vendor payment periods
+            href: localizations/emea-swe-payment-periods-statistics.md
         - name: Switzerland
           items:
           - name: Switzerland overview
@@ -4145,7 +4165,9 @@
         href: business-performance-analytics/configure-BPA.md
       - name: Install business performance analytics
         href: business-performance-analytics/install-bpa.md
-      - name: Set up security in business performance analytics
+      - name: Business performance analytics data model
+        href: business-performance-analytics/business-performance-analytics-data-model.md
+      - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md
       - name: Business performance analytics FAQ 
         href: business-performance-analytics/bpa-faq.md

@@ -58,7 +58,7 @@ For more information, see [Download ER configurations from the Global repository
 1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select the product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select a commodity code.
-4. In the **Origin** section, in the **Country/region** field, select the product's country of origin.
+4. In the **Origin** section, in the **Country/region** field, select the product's country/region of origin.
 5. On the **Manage inventory** FastTab, in the **Net weight** field, enter the product's weight in kilograms.
 6. Set up the transport method.
     1. Go to **Tax** > **Setup** > **Foreign trade** > **Transport method**.
@@ -205,7 +205,7 @@ The following example shows how to set up Austrian Intrastat and create the Intr
 14. In the **Direction** field select **Dispatches**.
 15. Select **OK**, and review the report in text format that is generated. The following table shows the values in the example report.
 
-    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner country ISO code | Country of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
+    | Commodity code | Transaction code | Statistical procedure | Product name    | Partner country ISO code | Country/Region of origin | Net mass | Additional unit | Mode of transport | Invoice amount | Statistical value |
     |----------------|------------------|-----------------------|-----------------|--------------------------|-------------------|----------|-----------------|-------------------|----------------|-------------------|
     | 10020030       | 1                | 31710                 | MidRangeSpeaker | IT                       | AT                | 50       |                 | 3                 | 2632           | 2632              |
 

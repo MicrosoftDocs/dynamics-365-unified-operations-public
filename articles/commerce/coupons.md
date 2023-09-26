@@ -6,7 +6,7 @@ description: This article provides an overview of coupon-related capabilities in
 author: boycez
 ms.date: 09/06/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

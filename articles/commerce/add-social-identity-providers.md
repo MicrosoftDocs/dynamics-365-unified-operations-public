@@ -4,7 +4,7 @@ description: This article describes how to add social identity providers in the 
 author: BrianShook
 ms.date: 11/15/2022
 ms.topic: article 
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo

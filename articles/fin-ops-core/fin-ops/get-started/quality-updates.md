@@ -6,7 +6,7 @@ description: This article provides information about proactive quality updates (
 author: rashmansur
 ms.date: 04/05/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: rashmim

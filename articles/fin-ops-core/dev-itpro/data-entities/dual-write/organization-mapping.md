@@ -4,7 +4,7 @@ description: This article describes the integration of organizational data betwe
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

@@ -175,18 +175,23 @@ Microsoft is still defining what tools and resources will be available from Fast
 For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge](hr-infrastructure-merge.md#licensing).
 
 ## Who needs to migrate? 
-All customers on the standalone Human Resources infrastructure must migrate.  
+All customers on the standalone Human Resources infrastructure must migrate.
 
 ## How long does it take to migrate using automated tooling? 
-The migration using the automated tooling may take approximately three to four hours. However, the preparation, testing and validation time required for your organization are dependent on your business processes, integrations, and complexity.  
+The migration using the automated tooling may take approximately three to four hours. However, the preparation, testing and validation time required for your organization are dependent on your business processes, integrations, and complexity.
 
-## What is the deadline for migrating?  
-All customers are required to migrate their standalone environment(s) by December 31, 2023.   
+## What is the deadline for migrating?
+All customers are required to migrate their standalone environment(s) by December 31, 2023. 
 
 ## What happens to customers that don't migrate before the deadline? 
-The infrastructure for the standalone application is scheduled to be turned off by December 31, 2023. As a result, environments that aren't migrated will no longer be available.  
+The infrastructure for the standalone application is scheduled to be turned off by December 31, 2023. As a result, environments that aren't migrated will no longer be available.
 
 ## What happens to the Data Import Export Framework (DMF) project during the migration?
 The DMF import and export project is migrated to the finance and operations infrastructure. Note that certain data entities have been enhanced in the new infrastructure. It's recommended to confirm the necessary fields are found in the data entity in the new infrastructure. Remove unavailable fields in mapping or re-add impacted data entity in the project to mitigate the issue.
 
+## What steps are needed to configure Power BI after migration to the finance and operations infrastructure?
+Yes, follow the steps here: [Dynamics 365 Human Resources customer migration to the finance and operations infrastructure](hr-cust-migration.md#post-migration-considerations).
 
+## How do I configure integration from Human Resources to Finance?
+
+If you're configuring integration with Finance, see [Post-migration considerations](hr-cust-migration.md#post-migration-considerations).

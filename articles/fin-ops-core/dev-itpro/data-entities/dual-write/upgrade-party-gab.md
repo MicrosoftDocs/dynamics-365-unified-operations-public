@@ -4,7 +4,7 @@ description: This article describes how to upgrade dual-write data to the party 
 author: RamaKrishnamoorthy
 ms.date: 06/22/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri

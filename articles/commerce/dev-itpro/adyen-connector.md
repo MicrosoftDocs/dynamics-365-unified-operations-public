@@ -6,7 +6,7 @@ description: This article provides an overview of the Microsoft Dynamics 365 Pay
 author: rassadi
 ms.date: 09/26/2023
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
@@ -87,6 +87,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_91p15 | adyen_v1_94p4 |
+
 ---
 
 > [!NOTE]

@@ -4,7 +4,7 @@ description: This article explains how to set up and configure the Microsoft Dyn
 author: josaw1
 ms.date: 08/22/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

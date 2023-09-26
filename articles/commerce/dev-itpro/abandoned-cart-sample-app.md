@@ -6,7 +6,7 @@ description: This article describes how to customize the Microsoft Dynamics 365 
 author: bicyclingfool
 ms.date: 02/25/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
