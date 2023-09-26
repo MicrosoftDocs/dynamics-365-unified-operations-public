@@ -128,60 +128,60 @@ To enable change tracking, follow these steps.
 
 1. Go to **System administration** \> **Data management** \> **Data entities**.
 2. Search for the **target** entity.
-3. Turn on **Tracking changes**.
-**Track changes**
+3. Turn on **Track changes**.
 
-Turn on Tracking Changes as appropriate, for the following:
 
-| **Target**** Entity **|** Change ****Tracking** |
+Turn on **Track changes** as appropriate, for the following:
+
+| **Target entity**|**Change tracking** |
 | --- | --- |
-| DirPersonNameHistoricalEntity | Alltables |
-| HcmCompFixedEmplEntity | Alltables |
-| HcmCompFixedPlanTableEntity | Alltables |
-| HcmCompVarPlanTableEntity | Alltables |
-| HcmEmployeeEntity | Alltables |
-| HcmEmployeeV2Entity | Alltables |
-| HcmEmploymentDetailEntity | Alltables |
-| HcmEmploymentEmployeeEntity | Alltables |
-| HcmEmploymentEntity | Alltables |
-| HcmEmploymentTypeEntity | Alltables |
-| HcmEmploymentV2Entity | Alltables |
-| HcmIdentificationTypeEntity | Alltables |
-| HcmJobBaseEntity | Alltables |
-| HcmJobCompensationEntity | Alltables |
-| HcmJobDetailEntity | Alltables |
-| HcmJobEntity | Primarytable |
-| HcmJobFamilyEntity | Alltables |
-| HcmJobFunctionEntity | Alltables |
-| HcmJobTaskEntity | Alltables |
-| HcmJobTypeEntity | Alltables |
-| HcmLaborUnionEntity | Alltables |
-| HcmPersonDetailsEntity | Alltables |
-| HcmPersonIdentificationNumberEntity | Alltables |
-| HcmPositionBaseEntity | Alltables |
-| HcmPositionDefaultDimensionEntity | Alltables |
-| HcmPositionDetailEntity | Alltables |
-| HcmPositionEntity | Primarytable |
-| HcmPositionHierarchyEntity | Alltables |
-| HcmPositionHierarchyTypeEntity | Alltables |
-| HcmPositionTypeEntity | Alltables |
-| hcmPositionUnionAgreementEntity | Alltables |
-| HcmPositionV2Entity | Alltables |
-| HcmPositionWorkerAssignmentEntity | Primarytable |
-| HcmPositionWorkerAssignmentV2Entity | Primarytable |
-| HcmUnionsEntity | Alltables |
-| HcmVariableCompensationTypeEntity | Alltables |
-| HcmWorkerBankAccountEntity | Alltables |
+| DirPersonNameHistoricalEntity | All tables |
+| HcmCompFixedEmplEntity | All tables |
+| HcmCompFixedPlanTableEntity | All tables |
+| HcmCompVarPlanTableEntity | All tables |
+| HcmEmployeeEntity | All tables |
+| HcmEmployeeV2Entity | All tables |
+| HcmEmploymentDetailEntity | All tables |
+| HcmEmploymentEmployeeEntity | All tables |
+| HcmEmploymentEntity | All tables |
+| HcmEmploymentTypeEntity | All tables |
+| HcmEmploymentV2Entity | Al ltables |
+| HcmIdentificationTypeEntity | All tables |
+| HcmJobBaseEntity | All tables |
+| HcmJobCompensationEntity | All tables |
+| HcmJobDetailEntity | All tables |
+| HcmJobEntity | Primary table |
+| HcmJobFamilyEntity | All tables |
+| HcmJobFunctionEntity | All tables |
+| HcmJobTaskEntity | All tables |
+| HcmJobTypeEntity | All tables |
+| HcmLaborUnionEntity | All tables |
+| HcmPersonDetailsEntity | All tables |
+| HcmPersonIdentificationNumberEntity | All tables |
+| HcmPositionBaseEntity | All tables |
+| HcmPositionDefaultDimensionEntity | All tables |
+| HcmPositionDetailEntity | All tables |
+| HcmPositionEntity | Primary table |
+| HcmPositionHierarchyEntity | All tables |
+| HcmPositionHierarchyTypeEntity | All tables |
+| HcmPositionTypeEntity | All tables |
+| hcmPositionUnionAgreementEntity | All tables |
+| HcmPositionV2Entity | All tables |
+| HcmPositionWorkerAssignmentEntity | Primary table |
+| HcmPositionWorkerAssignmentV2Entity | Primary table |
+| HcmUnionsEntity | All tables |
+| HcmVariableCompensationTypeEntity | All tables |
+| HcmWorkerBankAccountEntity | All tables |
 | HcmWorkerBaseEntity | Custom |
 | HcmWorkerEntity | Custom |
-| HcmWorkerPayrollInfoEntity | Alltables |
-| PayrollBankAccountDisbursementEntity | Primarytable |
-| PayrollEmployeeEntity | Primarytable |
-| PayrollFixedCompensationPlanEntity | Alltables |
-| PayrollPositionDetailsEntity | Alltables |
-| PayrollPositionEntity | Alltables |
-| PayrollPositionJobEntity | Alltables |
-| PayrollWorkerAddressCurrentEntity | Alltables |
+| HcmWorkerPayrollInfoEntity | All tables |
+| PayrollBankAccountDisbursementEntity | Primar ytable |
+| PayrollEmployeeEntity | Primary table |
+| PayrollFixedCompensationPlanEntity | All tables |
+| PayrollPositionDetailsEntity | All tables |
+| PayrollPositionEntity | All tables |
+| PayrollPositionJobEntity | All tables |
+| PayrollWorkerAddressCurrentEntity | All tables |
 
 ## Add a Dayforce Connector user in the Human Resources environment
 
