@@ -65,10 +65,13 @@ You must configure components for inbound and outbound warehouse process workflo
 - Simple cross docking
 
 ## Additional resources
+
 ### What's new and in development
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
 
 ### Blogs
+
 You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
 
 
