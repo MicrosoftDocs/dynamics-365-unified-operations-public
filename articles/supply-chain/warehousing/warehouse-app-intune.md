@@ -26,7 +26,7 @@ To use an MDM solution to deploy the Warehouse Management mobile app and the rel
 
 - Warehouse Management mobile app version 2.0.41.0 or later (This version number applies to all mobile platforms.)
 - A valid store account for each mobile platform that you'll support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple ID](https://appleid.apple.com/sign-in))
-- [Azure Active Directory (Azure AD)](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Azure AD Premium P2 license)
+- [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Microsoft Entra ID Premium P2 license)
 - [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) (the Intune website)
 - [Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-overview) installed on a dedicated Windows PC
 - [PowerShell](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
@@ -203,9 +203,9 @@ The following subsections guide you through the process of creating the required
 
 Obtain a self-signed PFX certificate (.pfx file) either through the Windows Server Certificate Authority (see [Install the Certification Authority](/windows-server/networking/core-network-guide/cncg/server-certs/install-the-certification-authority)) or by using PowerShell (see [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate)). Regardless of the source, when you export the certificate, be sure to include the private key and protect it through a password.
 
-#### Create an app registration for PFXImport PowerShell in Azure AD
+#### Create an app registration for PFXImport PowerShell in Microsoft Entra ID
 
-Follow these steps to create an app registration for PFXImport PowerShell in Azure AD.
+Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
 1. From the **Home** page, go to **Manage Azure Active Directory**.
@@ -258,7 +258,7 @@ Follow these steps to set up your dedicated Certificate Connector machine.
 1. On the **Certificate connectors** tab, on the toolbar, select **Add**.
 1. In the **Install the certificate connector** dialog box, select the certificate connector link to download the *IntuneCertificateConnector.exe* file. This file is an installer for the Certificate Connector.
 1. Transfer the *IntuneCertificateConnector.exe* file to the designated Certificate Connector machine. Then run the file, and follow the on-screen instructions. During the installation process, be sure to select the **PKCS imported certificates** checkbox.
-1. Sign in to your Azure AD account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
+1. Sign in to your Microsoft Entra ID account as an admin user. If the Certificate Connector was successfully installed, there will be a green check mark on the **Endpoint Manager** page. For more information, see [Install the Certificate Connector for Microsoft Intune](/mem/intune/protect/certificate-connector-install).
 
 #### Import your PFX certificate into the Certificate Connector
 
