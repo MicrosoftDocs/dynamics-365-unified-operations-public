@@ -25,22 +25,22 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It’s also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights. 
-- Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. 
+- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It’s also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
+- Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
 ### New fixes and improvements in version 2.1.5.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
-- Increased stability. 
-- Fixed an issue that prevented iOS users from signing in using the Device Code authentication method. 
-- Updated the terms and conditions to address legal compliance issues. 
-- Updated translations to provide an improved experience for international users. 
-- Updated labels in all languages to reflect the change from Azure Active Directory to Microsoft Entra ID. 
-- Updated the receive-returns icon to match the new blind receiving flow, which enhances visual consistency. 
-- Fixed a bug that opened multiple screens for entering quantity after a scan button was selected from an error dialog. 
-- Fixed the switching behavior when changing from the default page design to a custom design while running the Short pick with manual relocation workflow. 
-- Fixed a crash issue that could occur when sorting the Work List page. 
+- Increased stability.
+- Fixed an issue that prevented iOS users from signing in using the Device Code authentication method.
+- Updated the terms and conditions to address legal compliance issues.
+- Updated translations to provide an improved experience for international users.
+- Updated labels in all languages to reflect the change from Azure Active Directory to Microsoft Entra ID.
+- Updated the receive-returns icon to match the new blind receiving flow, which enhances visual consistency.
+- Fixed a bug that opened multiple screens for entering quantity after a scan button was selected from an error dialog.
+- Fixed the switching behavior when changing from the default page design to a custom design while running the *Short pick with manual relocation* workflow.
+- Fixed a crash issue that could occur when sorting the **Work list** page.
 
 ## Version 2.1.14.0
 
