@@ -4,7 +4,7 @@
 title: Finance insights home page
 description: Finance insights provides configurable and extensible models to help you accurately and intelligently predict your company's cash flow, predict when you will receive payment for outstanding receivables, and generate a budget proposal that can speed up your budgeting process. All these features are based on intelligent machine learning models.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
