@@ -49,6 +49,7 @@ To learn more about the Human Resources infrastructure merge, see [Merging of HR
 
 ## Value and benefits of the infrastructure merge
 
+
 What is the Dynamics 365 Human Resources infrastructure merge?
 
 There are currently two separate sets of HR capabilities on two different infrastructures in Dynamics 365:
