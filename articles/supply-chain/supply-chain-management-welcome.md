@@ -35,7 +35,7 @@ This article provides a list of the help articles and other resources in Dynamic
 
 ## What's new and in development
 
-Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features are released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
 
 ## Core concepts and tasks
 
