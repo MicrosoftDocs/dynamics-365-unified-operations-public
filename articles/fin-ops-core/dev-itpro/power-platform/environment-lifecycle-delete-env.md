@@ -1,6 +1,6 @@
 ---
 title: Delete environments when Power Platform Integration is enabled
-description: This article explains how to delete environments when finance and operations apps are integrated with Power Platform
+description: This article explains how to delete environments when finance and operations apps are integrated with Microsoft Power Platform.
 author: abunduc-ms
 ms.author: abunduc
 ms.date: 06/02/2023
@@ -11,18 +11,20 @@ ms.custom: bap-template
 
 # Delete environments when Power Platform Integration is enabled
 
-When the Microsoft Power Platform Integration is enabled, the finance and operations apps and the customer engagements apps environments are tightly connected. Administrators should look at these two platforms as a one environment with multiple apps. This article describes the options for deleting environments.
+When Microsoft Power Platform Integration is enabled, the finance and operations apps environment and the customer engagements apps environment are tightly connected. Administrators should regard these two platforms as one environment that has multiple apps. This article describes the options for deleting environments.
 
-## Delete an environment using the Power Platform admin center
+## Delete an environment by using Power Platform admin center
 
-It is not possible to delete a linked environment using the Power Platform admin center. If you attempt to delete a linked environment using the Power Platform admin center, you see the following error:
+You can't use Power Platform admin center to delete a linked environment. If you try, you receive the following error message:
 
-:::image type="content" source="media/ppi-delete-ppac.png" alt-text="Screenshot of the error message when you delete an environment using the Power Platform admin center." lightbox="media/ppi-delete-ppac.png":::
+> Delete cannot be performed on Power Platform environments that are linked to Finance and Operations environments. Please use Lifecycle Services to perform this operation.
 
-## Delete an environment using Lifecycle Services
+:::image type="content" source="media/ppi-delete-ppac.png" alt-text="Screenshot of the error message for an attempt to delete an environment by using Power Platform admin center." lightbox="media/ppi-delete-ppac.png":::
 
-The Lifecycle Services portal can be used to delete a finance and operations apps environment. The process is not changed.
+## Delete an environment by using Lifecycle Services
+
+You can use Microsoft Dynamics Lifecycle Services to delete a finance and operations apps environment. The process doesn't change.
 
 ## Recommendations
 
-- When the finance and operations apps environment is deleted, the linked Microsoft Dataverse environment **isn't** automatically deleted. However, the link is removed and the environment can be deleted using [Power Platform admin center](/power-platform/admin/delete-environment).
+- When the finance and operations apps environment is deleted, the linked Dataverse environment is **not** automatically deleted. However, the link is removed, and you can then delete the environment by using [Power Platform admin center](/power-platform/admin/delete-environment).
