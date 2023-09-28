@@ -48,7 +48,7 @@ To add a new domain to the supported host names list in LCS, follow these steps.
 1. In the **Add supported custom domain** dialog box, for **New custom domain**, enter the full domain name (for example, `www.contoso.com`).
 1. Select **Add** to add the domain to the supported host names list.
 
-You can view the list of supported host names under the **e-Commerce \> System Information \> Supported custom domains**.
+You can view the list of supported host names in LCS under **e-Commerce \> System Information \> Supported custom domains**.
 
 ## Commerce-generated URLs
 
