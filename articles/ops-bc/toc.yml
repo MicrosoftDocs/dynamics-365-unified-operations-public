@@ -6,9 +6,9 @@
   - name: Dynamics 365 Finance
     tocHref: /dynamics365/finance/
     topicHref: /dynamics365/finance/index
-  - name: Dynamics 365 Finance
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/fin-ops-core/
-    topicHref: /dynamics365/finance/index
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
   - name: Dynamics 365 Commerce
     tocHref: /dynamics365/commerce/
     topicHref: /dynamics365/commerce/index
@@ -22,6 +22,6 @@
   tocHref: /power-platform/
   topicHref: /dynamics365/index
   items:
-    - name: Development & administration for finance and operations
+    - name: Development and administration for finance and operations apps
       tocHref: /power-platform/admin
       topicHref: /dynamics365/unified-operations/dev-itpro/

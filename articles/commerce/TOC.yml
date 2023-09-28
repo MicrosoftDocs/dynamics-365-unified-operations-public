@@ -3066,9 +3066,11 @@
             href: dev-itpro/hybridapp.md
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
-  - name: Finance and operations apps development and administration
+  - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Supply Chain Management
     href: ../supply-chain/supply-chain-management-welcome.md
+  - name: Dynamics 365 Human Resources
+    href: ../human-resources/welcome.md
