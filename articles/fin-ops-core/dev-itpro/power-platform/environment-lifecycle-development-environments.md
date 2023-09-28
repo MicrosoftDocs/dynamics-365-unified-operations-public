@@ -22,31 +22,16 @@ Because of the architecture differences between cloud-hosted development environ
 > [!NOTE]
 > Lifecycle Services add-ins can't be installed on cloud-hosted environments. They're applicable only to sandbox and production environments.
 
-### Step 1: Access advanced settings
+To enable Power Platform integration, follow these steps.
 
-During deployment of a cloud-hosted environment, select **Advanced settings** to access the Power Platform Integration setup.
-
-:::image type="content" source="media/ppi-dev-advanced-settings.png" alt-text="Screenshot that shows the button used to access advanced settings for development environments." lightbox="media/ppi-dev-advanced-settings.png":::
-
-### Step 2: Enable Power Platform Integration
-
-On the **Deployment settings** page, on the **Power Platform Integration** tab, change the setting of the **Configure Power Platform Environment** option from *No* to *Yes*.
-
-:::image type="content" source="media/ppi-dev-enable-ppi.png" alt-text="Screenshot that shows the option used to enable Power Platform Integration." lightbox="media/ppi-dev-enable-ppi.png":::
-
-### Step 3: Configure Power Platform Integration
-
-After Power Platform Integration is enabled, select the correct [template](environment-lifecycle-connect-finops-new-dv.md#step-2-configure-dataverse-by-using-a-template) and environment type, and then select the *Agree* checkbox.
-
-:::image type="content" source="media/ppi-dev-configure-ppi.png" alt-text="Screenshot that shows the fields used to configure Power Platform Integration." lightbox="media/ppi-dev-configure-ppi.png":::
-
-### Step 4: Deploy the environment
-
-After the previous steps are completed, and the cloud-hosted environment is created, a paired Dataverse environment is deployed.
-
-### Step 5 (Optional): Finalize the setup in Lifecycle Services
-
-Depending on your requirements (for example, if dual-write is required), you must follow more steps on the environment page in Lifecycle Services. <!--TODO add link to dual write-->
+1. During deployment of a cloud-hosted environment, select **Advanced settings** to access the Power Platform Integration setup.
+   :::image type="content" source="media/ppi-dev-advanced-settings.png" alt-text="Screenshot that shows the button used to access advanced settings for development environments." lightbox="media/ppi-dev-advanced-settings.png":::
+1. On the **Deployment settings** page, on the **Power Platform Integration** tab, change the setting of the **Configure Power Platform Environment** option from *No* to *Yes*.
+   :::image type="content" source="media/ppi-dev-enable-ppi.png" alt-text="Screenshot that shows the option used to enable Power Platform Integration." lightbox="media/ppi-dev-enable-ppi.png":::
+1. After Power Platform Integration is enabled, select the correct [template](environment-lifecycle-connect-finops-new-dv.md#step-2-configure-dataverse-by-using-a-template) and environment type, and then select the *Agree* checkbox.
+   :::image type="content" source="media/ppi-dev-configure-ppi.png" alt-text="Screenshot that shows the fields used to configure Power Platform Integration." lightbox="media/ppi-dev-configure-ppi.png":::
+1. After the previous steps are completed, and the cloud-hosted environment is created, a paired Dataverse environment is deployed.
+1. (Optional): Finalize the setup in Lifecycle Services. Depending on your requirements (for example, if dual-write is required), you must follow more steps on the environment page in Lifecycle Services. For more information, see [Dual-write setup from Lifecycle Services](../data-entities/dual-write/lcs-setup.md).
 
 ## Recommendations
 
