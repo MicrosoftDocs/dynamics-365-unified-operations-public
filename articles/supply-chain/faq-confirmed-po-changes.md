@@ -12,7 +12,7 @@ ms.reviewer: kamaybac
 
 # FAQ for the Confirmed purchase orders with changes workspace
 
-This transparency note describes the AI impact of the **Confirmed purchase orders with changes** workspace in Microsoft Dynamics 365 Supply Chain Management.
+This FAQ provides answers to frequently asked questions about the AI technology that's used in the **Confirmed purchase orders with changes** workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 ## What is the Confirmed purchase orders with changes workspace?
 
