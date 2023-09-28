@@ -1,7 +1,7 @@
 ---
 
-title: Reset receipt numbers
-description: This article describes the functionality for defining and resetting receipt numbers in Microsoft Dynamics 365 Commerce.
+title: Configure and manage receipt numbers
+description: This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 09/28/2023
 ms.topic: article
@@ -17,13 +17,13 @@ ms.search.validFrom: 2020-01-14
 
 [!include [banner](includes/banner.md)]
 
-This article describes the functionality for defining and resetting receipt numbers in Microsoft Dynamics 365 Commerce.
+This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 
 Retailers generate receipt numbers for various actions in their stores such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on receipt formats. For example, regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of each year. Dynamics 365 Commerce helps retailers meet regulatory requirements by making the process of managing receipt numbers very flexible.
 
 ## Define receipt number formats
 
-Receipt numbering formats can be composed of both static content and dynamic content. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
+Receipt numbering formats are composed of both static content and dynamic content. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
 
 | Characters | Description |
 |------------|-------------|
