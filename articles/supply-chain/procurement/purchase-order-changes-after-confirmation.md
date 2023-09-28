@@ -186,4 +186,4 @@ A good way to focus on the most pressing downstream impact is to sort and filter
 
 ## See also
 
-- [FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
