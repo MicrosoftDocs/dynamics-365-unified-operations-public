@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/21/2023
+ms.date: 09/28/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -35,18 +35,20 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 ![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
-### Adding supported host names
+### Add supported host names
 
-Additional **Supported host names** can be added to an environment in LCS after the initial environment provisioning. To add a new domain:
+You can add additional supported host names to an environment in LCS after the initial environment provisioning. 
 
-- Navigate to your environment in LCS, and under **Environment Features > Commerce**, click **Manage**
-- Click on the **e-Commerce** selector to open the e-Commerce view
-- Click the **Add custom domain** button
-- When the **Add supported custom domain** window opens, add the full domain in the **New custom domain** input (Example - www.contoso.com)
-- Click **Add** to add the domain to the supported host names list
+To add a new domain to the supported host names list in LCS, follow these steps.
 
-The domain will now be included in the supported host names list.  In the LCS e-Commerce section of your environment, you can also view the list of supported host names under the **System Information** section as shown in the **Supported custom domains** displayed values.
+1. Navigate to your environment in LCS.
+1. Go to **Environment Features \> Commerce**, and then select **Manage**.
+1. Select **e-Commerce**.
+1. Select **Add custom domain**.
+1. In the **Add supported custom domain** dialog box, for **New custom domain**, enter the full domain name (for example, `www.contoso.com`).
+1. Select **Add** to add the domain to the supported host names list.
 
+You can view the list of supported host names under the **e-Commerce \> System Information \> Supported custom domains**.
 
 ## Commerce-generated URLs
 
