@@ -518,7 +518,7 @@
             href: receipt-templates-printing.md
           - name: Send email receipts from Store Commerce
             href: email-receipts.md
-          - name: Reset receipt numbers
+          - name: Configure and manage receipt numbers
             href: reset_receipt_number_sequence.md
           - name: Embed processor credit card receipts in customer receipts
             href: dev-itpro/embed-cc-receipt.md
