@@ -128,7 +128,60 @@ To enable change tracking, follow these steps.
 
 1. Go to **System administration** \> **Data management** \> **Data entities**.
 2. Search for the **target** entity.
-3. Turn on **Tracking changes**.
+3. Turn on **Track changes**.
+
+
+Turn on **Track changes** as appropriate, for the following:
+
+| **Target entity**|**Change tracking** |
+| --- | --- |
+| DirPersonNameHistoricalEntity | All tables |
+| HcmCompFixedEmplEntity | All tables |
+| HcmCompFixedPlanTableEntity | All tables |
+| HcmCompVarPlanTableEntity | All tables |
+| HcmEmployeeEntity | All tables |
+| HcmEmployeeV2Entity | All tables |
+| HcmEmploymentDetailEntity | All tables |
+| HcmEmploymentEmployeeEntity | All tables |
+| HcmEmploymentEntity | All tables |
+| HcmEmploymentTypeEntity | All tables |
+| HcmEmploymentV2Entity | Al ltables |
+| HcmIdentificationTypeEntity | All tables |
+| HcmJobBaseEntity | All tables |
+| HcmJobCompensationEntity | All tables |
+| HcmJobDetailEntity | All tables |
+| HcmJobEntity | Primary table |
+| HcmJobFamilyEntity | All tables |
+| HcmJobFunctionEntity | All tables |
+| HcmJobTaskEntity | All tables |
+| HcmJobTypeEntity | All tables |
+| HcmLaborUnionEntity | All tables |
+| HcmPersonDetailsEntity | All tables |
+| HcmPersonIdentificationNumberEntity | All tables |
+| HcmPositionBaseEntity | All tables |
+| HcmPositionDefaultDimensionEntity | All tables |
+| HcmPositionDetailEntity | All tables |
+| HcmPositionEntity | Primary table |
+| HcmPositionHierarchyEntity | All tables |
+| HcmPositionHierarchyTypeEntity | All tables |
+| HcmPositionTypeEntity | All tables |
+| hcmPositionUnionAgreementEntity | All tables |
+| HcmPositionV2Entity | All tables |
+| HcmPositionWorkerAssignmentEntity | Primary table |
+| HcmPositionWorkerAssignmentV2Entity | Primary table |
+| HcmUnionsEntity | All tables |
+| HcmVariableCompensationTypeEntity | All tables |
+| HcmWorkerBankAccountEntity | All tables |
+| HcmWorkerBaseEntity | Custom |
+| HcmWorkerEntity | Custom |
+| HcmWorkerPayrollInfoEntity | All tables |
+| PayrollBankAccountDisbursementEntity | Primar ytable |
+| PayrollEmployeeEntity | Primary table |
+| PayrollFixedCompensationPlanEntity | All tables |
+| PayrollPositionDetailsEntity | All tables |
+| PayrollPositionEntity | All tables |
+| PayrollPositionJobEntity | All tables |
+| PayrollWorkerAddressCurrentEntity | All tables |
 
 Turn on Tracking Changes, as appropriate, for the following:
 
