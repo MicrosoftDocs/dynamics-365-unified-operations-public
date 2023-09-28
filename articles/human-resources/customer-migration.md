@@ -4,7 +4,7 @@
 title: Human Resources customer migration FAQ
 description: This article answers frequently asked questions about the migration of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: twheeloc
-ms.date: 08/23/2023
+ms.date: 09/23/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -56,6 +56,9 @@ For up-to-date information, regularly check the [Release plans](/dynamics365/rel
 - Customers who have both Dynamics 365 Human Resources and other finance and operations infrastructure environments that are currently integrated will have to continue to integrate the two environments after the merge.
 - Customers who choose to keep their Dynamics 365 Human Resources environment separate from their existing finance and operations app environment will have to continue to integrate the environments to make the data available in both environments.
 - Customers can continue to use the Data Integrator to copy data between the two environments. Customers who merge data into a single environment after the migration will no longer have to integrate the data, because all data will be in a single database.
+
+>[!NOTE]
+> Customers using the [native data integration template](hr-admin-integration-finance.md) to integrate Human resources (standalone) with Dynamics 365 Finance, the native out of the box template needs to be replaced by a custom data integration. Customers may be able to use the [template mappings](hr-admin-integration-finance.md#template-mappings) available that were provided in the native integration template.
 
 ## Will customer ISV solutions automatically be migrated?
 
