@@ -95,7 +95,8 @@ Follow these steps to confirm that all the demo data that is required for the sc
     - **Title:** *Spot Counting*
     - **Mode:** *Work*
     - **Use existing work:** *No*
-    - **Work creation process:** *Spot cycle counting* (This value indicates that the worker can count items in a warehouse location at any time, without having previously created cycle counting work. To do spot cycle counting in a location, the worker enters the location ID. The cycle counting work will be created after the worker enters the location ID. If there is already an exiting open cycle counting work for the given location, than that work will be used for spot cycle counting.)
+    - **Work creation process:** *Spot cycle counting* (This value indicates that the worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, then the system creates a new work record for spot cycle counting. If open cycle counting work does exist for the location, then the existing work record will be used for spot cycle counting.
+)
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 1. In the list pane, select the record that is named *Inventory*. If no existing record has this name, create it. Confirm that the following cycle counting menu items appear in the **Menu structure** column:
