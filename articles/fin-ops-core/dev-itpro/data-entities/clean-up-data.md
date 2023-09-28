@@ -22,22 +22,22 @@ customers can use **Job history cleanup**.
 1. Go to **Data management** > **Job history cleanup**.
 2. In the **Job history** pane, configure the **Number of days to retain history**, **Number of hours to execute the job**, and **Batch job recurrence** fields. 
 3. To schedule the job to run regularly in the background, select the **Batch processing** field.
-4. To define a recurrance, click **Recurrance** and select **No End Date** in the **Recurrence definition**.   
+4. To define a recurrence, click **Recurrence** and select **No End Date** in the **Recurrence definition**.   
 
 > [!Recommendation]
 > To clean large staging tables, an execution time of 6 hours with a batch recurrence of at least once per day is recommended.  
 
 ### Execution history cleanup batch error
 
-If a job history cleanup batch job has already been scheduled, the existing batch job will need to be deleted before rescheduling a new recurrence.  
-If you attempt to schedule a batch recurrence when one has already been scheduled will result in an error.   
+If a job history cleanup batch job has already been scheduled, the existing batch job needs to be deleted before rescheduling a new recurrence.  
+Scheduling a batch recurrence when one has already been scheduled results in an error.   
 
 To address this error:
 
 1. Go to **System administration** > **Inquiries** > **Batch jobs**.
 2. Search for the description **Job history cleanup**.
 3. Delete batch jobs with a **Waiting** state.
-4. If the batch job has a **Executing** state, you can either cancel it or **Remove recurrence**. **Remove recurraence** will remove the batch job schedule after the current cleanup execution completes.
+4. If the batch job has a **Executing** state, you can either cancel it or **Remove recurrence**. **Remove recurrence** will remove the batch job schedule after the current cleanup execution completes.
 5. After the job is either deleted or in an **Ended** state, create a new batch job recurrence.  
 
  
