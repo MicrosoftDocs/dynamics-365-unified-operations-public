@@ -58,7 +58,7 @@ For up-to-date information, regularly check the [Release plans](/dynamics365/rel
 - Customers can continue to use the Data Integrator to copy data between the two environments. Customers who merge data into a single environment after the migration will no longer have to integrate the data, because all data will be in a single database.
 
 >[!NOTE]
-> Customers using the [native data integration template](hr-admin-integration-finance) to integrate Human resources (standalone) with Dynamics 365 Finance, the native out of the box template needs to be replaced by a custom data integration. Customers may be able to use the [template mappings](hr-admin-integration-finance#template-mappings) available that were provided in the native integration template.
+> Customers using the [native data integration template](hr-admin-integration-finance.md) to integrate Human resources (standalone) with Dynamics 365 Finance, the native out of the box template needs to be replaced by a custom data integration. Customers may be able to use the [template mappings](hr-admin-integration-finance.md#template-mappings) available that were provided in the native integration template.
 
 ## Will customer ISV solutions automatically be migrated?
 
