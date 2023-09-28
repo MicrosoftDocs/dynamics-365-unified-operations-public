@@ -35,7 +35,18 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 ![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
-You can create a service request to add additional domains to an environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
+### Adding supported host names
+
+Additional **Supported host names** can be added to an environment in LCS after the initial environment provisioning. To add a new domain:
+
+- Navigate to your environment in LCS, and under **Environment Features > Commerce**, click **Manage**
+- Click on the **e-Commerce** selector to open the e-Commerce view
+- Click the **Add custom domain** button
+- When the **Add supported custom domain** window opens, add the full domain in the **New custom domain** input (Example - www.contoso.com)
+- Click **Add** to add the domain to the supported host names list
+
+The domain will now be included in the supported host names list.  In the LCS e-Commerce section of your environment, you can also view the list of supported host names under the **System Information** section as shown in the **Supported custom domains** displayed values.
+
 
 ## Commerce-generated URLs
 
