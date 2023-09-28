@@ -34,6 +34,8 @@ Messaging text that Copilot generates isn't intended to be used without manual r
 
 The **Confirmed purchase orders with changes** workspace underwent substantial testing before it was released. It relies on user feedback to report inappropriate content.
 
+If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback helps improve the functionality.
+
 Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected.
 
 ## What are the limitations of the Confirmed purchase orders with changes workspace? How can users minimize the impact of its limitations when they use it?
@@ -41,9 +43,6 @@ Microsoft might disable the Copilot-driven features for selected customers if ab
 The **Confirmed purchase orders with changes** workspace uses Copilot to generate a summary of impact and proposed communication content.
 
 The generated content should never be used without manual review or supervision.
-
-> [!NOTE]
-> If inappropriate content is generated, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback will help improve the functionality.
 
 ## What operational factors and settings allow for effective and responsible use of the Confirmed purchase orders with changes workspace?
 
