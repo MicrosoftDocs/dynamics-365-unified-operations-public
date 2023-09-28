@@ -14,6 +14,9 @@ ms.custom: bap-template
 
 # Enable and configure advanced export control
 
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
+
 ## Prerequisites
 
 Before you can use advanced export control, your system must meet the following requirements:
