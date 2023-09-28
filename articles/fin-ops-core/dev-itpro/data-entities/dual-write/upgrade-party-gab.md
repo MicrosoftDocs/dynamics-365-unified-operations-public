@@ -47,7 +47,7 @@ The following prerequisites must be in place before you can upgrade to the party
 + You must have an [Azure subscription](https://portal.azure.com/).
 + You must have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 + You must be an existing dual-write customer.
-+ If the party and global address book solution is installed, you must disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead. To disable the plugin, contact support.
++ If the party and global address book solution is installed, you must disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead.
 
 
 ## Prepare for the upgrade
