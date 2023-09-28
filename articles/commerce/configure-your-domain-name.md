@@ -31,7 +31,7 @@ To associate domains with your Dynamics 365 Commerce e-commerce environment, ini
 
 ## Add domains after e-commerce initialization
 
-To associate new domains with your e-commerce environment after e-commerce initialization, you must submit a service request.
+To associate new domains with your e-commerce environment after e-commerce initialization, follow instructions described in the [Add supported host names](domains-commerce.md#add-supported-host-names) section of the [Domains in Dynamics 365 Commerce](domains-commerce.md) article.
 
 ## Additional resources
 
