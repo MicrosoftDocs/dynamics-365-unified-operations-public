@@ -22,7 +22,7 @@ This feature is part of the *Procurement with Copilot* feature set, which is a g
 
 ## What are capabilities of the Confirmed purchase orders with changes workspace?
 
-The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *Text-davinci-003* generative AI model to generate the natural-language content.
+The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content.
 
 ## What is the intended use of the Confirmed purchase orders with changes workspace?
 
@@ -43,6 +43,9 @@ Microsoft might disable the Copilot-driven features for selected customers if ab
 The **Confirmed purchase orders with changes** workspace uses Copilot to generate a summary of impact and proposed communication content.
 
 The generated content should never be used without manual review or supervision.
+
+> [!NOTE]
+> If inappropriate content is generated, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback will help improve the functionality.
 
 ## What operational factors and settings allow for effective and responsible use of the Confirmed purchase orders with changes workspace?
 
