@@ -444,7 +444,7 @@ The **Periods covered** cell identifies the amount that the column should displa
 |-------------|-----------------------------------------------------------------------------|
 | PERIODIC    | Display the sum of the activity for the current period or range of periods. |
 | PERIODIC/BB | Display the beginning balance for the current period or range of periods.   |
-| YTD         | Display the sum of the year-to-date activity.                               |
+| YTD         |Display the sum of the year-to-date activity. Including the beginning balance for the year. |
 | YTD/BB      | Display the beginning balance for the year.                                 |
 
 ### Specify the periods that are covered for an FD column
