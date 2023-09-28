@@ -49,7 +49,7 @@ The procedure for using Lifecycle Services to export a database doesn't change f
 You can use Lifecycle Services to do a [database point-in-time restore (PITR)](/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
 
 > [!NOTE] 
-> Perform the restore and PITR in parallel, and start from the same point in time.
+> To ensure data consistency, perform the restores in parallel for both platforms, and choose the same point in time value.
 
 ### Refresh a database
 
