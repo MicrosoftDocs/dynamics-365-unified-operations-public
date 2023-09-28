@@ -19,16 +19,16 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
-## Version 2.1.15 
+## Version 2.1.15.0
 
-### New features introduced in version 2.1.5.0
+### New features introduced in version 2.1.15.0
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
 - Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It’s also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
 - Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
-### New fixes and improvements in version 2.1.5.0
+### New fixes and improvements in version 2.1.15.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
