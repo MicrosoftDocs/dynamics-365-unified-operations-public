@@ -24,8 +24,8 @@ customers can use **Job history cleanup**.
 3. To schedule the job to run regularly in the background, select the **Batch processing** field.
 4. To define a recurrance, click **Recurrance** and select **No End Date** in the **Recurrence definition**.   
 
->[!Recommendation:]
->To clean large staging tables, an execution time of 6 hours with a batch recurrence of at least once per day is recommended.  
+> [!Recommendation]
+> To clean large staging tables, an execution time of 6 hours with a batch recurrence of at least once per day is recommended.  
 
 ### Execution history cleanup batch error
 
