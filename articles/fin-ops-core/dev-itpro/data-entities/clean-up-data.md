@@ -14,30 +14,24 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-Starting September 2023, Data Management job history entries and related staging table data older than 90 days will be automatically deleted. To configure a job history retention period of less than 90 days,
-customers can use **Job history cleanup**. 
+As of September 2023, Data Management job history entries and related staging table data that are older than 90 days are automatically deleted. To configure a job history retention period of less than 90 days, customers can use the **Job history cleanup** batch job.
 
 ## Clean up data
 
-1. Go to **Data management** > **Job history cleanup**.
-2. In the **Job history** pane, configure the **Number of days to retain history**, **Number of hours to execute the job**, and **Batch job recurrence** fields. 
+1. Go to **Data management** \> **Job history cleanup**.
+2. In the **Job history** pane, set the **Number of days to retain history**, **Number of hours to execute the job**, and **Batch job recurrence** fields.
 3. To schedule the job to run regularly in the background, select the **Batch processing** field.
-4. To define a recurrence, click **Recurrence** and select **No End Date** in the **Recurrence definition**.   
+4. To define a recurrence, select **Recurrence**, and then, in **Recurrence definition**, select **No End Date**.
 
-> [!Recommendation]
-> To clean large staging tables, an execution time of 6 hours with a batch recurrence of at least once per day is recommended.  
+> [!NOTE]
+> To clean large staging tables, we recommend that you set an execution time of six hours and a batch recurrence of at least once per day.
 
 ### Execution history cleanup batch error
 
-If a job history cleanup batch job has already been scheduled, the existing batch job needs to be deleted before rescheduling a new recurrence.  
-Scheduling a batch recurrence when one has already been scheduled results in an error.   
+If a **Job history cleanup** batch job has already been scheduled, it must be deleted before a new recurrence can be rescheduled. If you try to schedule a batch recurrence when one has already been scheduled, an error occurs. To address the error, follow these steps.
 
-To address this error:
-
-1. Go to **System administration** > **Inquiries** > **Batch jobs**.
+1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
 2. Search for the description **Job history cleanup**.
-3. Delete batch jobs with a **Waiting** state.
-4. If the batch job has a **Executing** state, you can either cancel it or **Remove recurrence**. **Remove recurrence** will remove the batch job schedule after the current cleanup execution completes.
-5. After the job is either deleted or in an **Ended** state, create a new batch job recurrence.  
-
- 
+3. Delete batch jobs that are in a **Waiting** state.
+4. If a batch job is in an **Executing** state, you can either cancel it or select **Remove recurrence**. The **Remove recurrence** function removes the batch job schedule after the current cleanup execution is completed.
+5. After the job is either deleted or in an **Ended** state, create a new batch job recurrence.
