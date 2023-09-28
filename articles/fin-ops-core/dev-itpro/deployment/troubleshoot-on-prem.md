@@ -1662,4 +1662,25 @@ At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
 
 **Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## Configure-SQLCert.ps1 fails
+
+**Issue:** The execution ends unexpectedly with the following error.
+
+```stacktrace
+C:\InstallationFiles\InfrastructureScripts-*\InfrastructureScripts-*\Scripts\Configure-SQLCert.ps1 :
+Exception calling "Import" with "1" argument(s): "PKCS12 (PFX) without a supplied password has exceeded maximum
+allowed iterations. See
+https://go.microsoft.com/fwlink/?linkid=2233907
+for more information."
+At line:1 char:1
++ .\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\LBDin1.contoso.c ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Configure-SQLCert.ps1], MethodInvocationException
+    + FullyQualifiedErrorId : CryptographicException,Configure-SQLCert.ps1
+```
+
+**Reason:** A change was made to the way .NET and .NET Framework handle importing X.509 certificates. These changes caused imports to throw CryptographicException in some cases. For more information see [KB5025823 Change in how .NET applications import X.509 certificates
+](https://go.microsoft.com/fwlink/?linkid=2233907).
+
+**Resolution:** Ensure that you have applied the following update: [KB5028608](https://support.microsoft.com/en-gb/topic/kb5028608-change-in-how-net-framework-runtime-imports-x-509-certificates-abc64f77-5f7b-449b-9285-4d9a982fc368)
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)].
