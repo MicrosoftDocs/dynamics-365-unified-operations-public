@@ -35,6 +35,10 @@ To add the task to the build of your YML or Classic pipeline, search the task li
 | Search pattern for binaries to package | Yes | Provide a name matching pattern for X++ package (module) names inside the path that is specified in the **Location of the X++ binaries to package** option. You can also specify a list of names instead of search patterns, or you can specify exclusion filters so that, for example, test packages aren't included. The search pattern looks for folders and validates that they contain a `bin` sub-folder with X++ assemblies. For more information, see [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns).  |
 | Filename and path for the deployable package | Yes | The path and file name of the deployable package. The output file is a zip file, and the file name typically includes version information to make the file easy to identify. |
 
+> [!NOTE]
+> With introduction of the (unified developer experience)[/power-platform/developer/unified-experience/finance-operations-dev-overview], a new version of this task was released that is capable of generating the package in both LCS and the Power Platform Unified package format. To generate the package in the new format at the "Path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox and provide the platform and application version used. The search pattern and tools package path is still honored as before. The LCS package creation option is chosen by default and is generated the same way as before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
+
+
 ## NuGet dependency
 
 When this task is run on the build VM, NuGet is already available, and no action is required. However, when this task is run on hosted agents or other private agents, NuGet must be installed. In this case, Azure DevOps has the [NuGet Tool Installer task](/azure/devops/pipelines/tasks/tool/nuget) that you can run before you run the task to create the package.
@@ -60,5 +64,13 @@ The following example assumes the **Location of the X++ binaries to package** pr
 | `MyPackage` | Find a module named `MyPackage` in the `$(Build.BinariesDirectory)` folder. |
 | `*`<br/>`$(Build.SourcesDirectory)\Metadata\MyBinaryPackage` | Include all X++ binaries in `$(Build.BinariesDirectory)`, as well as a module named `MyBinaryPackage` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
 | `*`<br/>`!*Tests`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV1`<br/>`$(Build.SourcesDirectory)\Metadata\MyISV2` | Include all X++ binaries in `$(Build.BinariesDirectory)`, exclude any modules where the names end in `Tests`, and include two modules named `MyISV1` and `MyISV2` in the sources directory (which is the mapped source control repository folder) inside the `Metadata` folder. |
+
+## Frequently asked questions
+
+#### In the Create Deployable Package step, what is the workaround for when I get the "There is not enough space on the disk" error?
+
+If the agent running the pipeline runs out disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)` to create space if no other part of the pipeline is using those files. The **Create Deployable Package** step is not dependent on the model source files because it depends on the build output from the build step.
+
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
