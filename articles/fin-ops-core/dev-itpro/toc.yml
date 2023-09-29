@@ -241,6 +241,8 @@ items:
                 href: data-entities/entity-vendor-invoice-line-charges-vendorinvoicelinecharge.md
       - name: Data import and export jobs
         items:
+        - name: Clean up data management job history 
+          href: data-entities/clean-up-data.md
         - name: Data import and export jobs overview
           href: ../fin-ops/data-entities/data-import-export-job.md
         - name: Data import and export parameters 
