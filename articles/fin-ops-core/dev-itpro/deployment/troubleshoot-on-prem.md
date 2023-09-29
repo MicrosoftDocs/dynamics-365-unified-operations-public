@@ -66,7 +66,7 @@ The following commands must be run:
 - **Dvt** – This command runs a deployment verification test.
 - **Cleanup** – This command is used to service and delete an environment.
 
-The following folders contain additional information:
+The following folders contain more information:
 
 - AX-SetupModuleEvents
 - AX-SetupInfrastructureEvents
@@ -114,7 +114,7 @@ You might receive the following error:
 
 > "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
 
-If you receive this error, download the latest version of [Azure Service Fabric](https://go.microsoft.com/fwlink/?LinkId=730690). Note that the user name and path in the error message vary, depending on your environment.
+If you receive this error, download the latest version of [Azure Service Fabric](https://go.microsoft.com/fwlink/?LinkId=730690). The user name and path in the error message vary, depending on your environment.
 
 #### Service Fabric logs
 
@@ -189,7 +189,7 @@ To clean up an existing environment and redeploy, follow these steps.
 
 1. In LCS, open the project, and then, in the **Environments** section, delete the deployment.
 
-    The applications should start to disappear from Service Fabric Explorer in the environment. This process will take one to two minutes.
+    The applications should start to disappear from Service Fabric Explorer in the environment. This process takes one to two minutes.
 
 2. Access the orchestrator machine that contains LocalAgentCLI.exe, and follow these steps:
 
@@ -215,8 +215,8 @@ To clean up an existing environment and redeploy, follow these steps.
     Remove old certificates from all AOS, BI, ORCH, and DC nodes.
 
     - The certificates exist in the following certificate stores: Cert:\\CurrentUser\\My\\, Cert:\\LocalMachine\\My, and Cert:\\LocalMachine\\Root.
-    - If the setup of Microsoft SQL Server will be modified, remove the SQL Server certificates.
-    - If the settings for Active Directory Federation Services (AD FS) will be modified, remove the AD FS certificate.
+    - If the setup of Microsoft SQL Server is modified, remove the SQL Server certificates.
+    - If the settings for Active Directory Federation Services (AD FS) is modified, remove the AD FS certificate.
 
 4. Update the following configuration files as required:
 
@@ -433,7 +433,7 @@ select * from OrchestratorCommandArtifact where CommandId = 'xxx'
 
 If the preceding steps don't resolve the error, manually remove the local agent user from the SQL Server instance and the database, and then rerun the Initialize-Database script.
 
-If you re-create a user in AD DS, remember that the SID will change. In this case, remove the previous SID for the user, and add a new SID.
+If you re-create a user in AD DS, remember that the SID changes. In this case, remove the previous SID for the user, and add a new SID.
 
 ### Error
 
@@ -447,7 +447,7 @@ If you re-create a user in AD DS, remember that the SID will change. In this cas
 
 ### Issue
 
-When you performing the [Configure the databases](setup-deploy-on-premises-latest.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
+When performing the [Configure the databases](setup-deploy-on-premises-latest.md#configuredb) procedure, if the SQL Server instance is a named instance, use the **-DatabaseServer \[FQDN/Instancename\]** parameter.
 
 ### Issue
 
@@ -505,9 +505,9 @@ At C:\Infrastructure\Scripts\Test-D365FOConfiguration.ps1:79 char:9
     + FullyQualifiedErrorId : An unspecified error occurred.,Microsoft.PowerShell.Commands.GetLocalGroupMemberCommand" 
 ```
 
-**Reason:** There is a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that aren't valid.
+**Reason:** There's a bug in the PowerShell commandlet, Get-LocalGroupMember, which causes it to fail when there are entries that aren't valid.
 
-**Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrators group and remove any entries that have an entry like the one highlighted in the following image.
+**Steps:** On the machine where the script is failing, open **local users and groups**. Go to the administrator's group and remove any entries that have an entry like the one highlighted in the following image.
 
 ![Invalid SID.](media/InvalidSID.png)
 
@@ -519,7 +519,7 @@ In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** 
 
 ## Upgrade Service Fabric
 
-Service Fabric Explorer will show a message that resembles the following message:
+Service Fabric Explorer shows a message that resembles the following message:
 
 > Unhealthy event: SourceId='System.UpgradeOrchestrationService', Property='ClusterVersionSupport', HealthState='Warning', ConsiderWarningAsError=false.
 The current cluster version 6.1.467.9494 support ends 5/30/2018 12:00:00 AM. Please view available upgrades using Get-ServiceFabricRegisteredClusterCodeVersion and upgrade using Start-ServiceFabricClusterUpgrade.
@@ -652,16 +652,16 @@ If none of the preceding solutions work, follow these steps.
         1. Go to your environment page, and select **Maintain**.
         1. Select **Update settings**.
         1. Don't change any settings. Select **Prepare**.
-        1. After a few minutes, your environment will be prepared, and you can select **Deploy**.
+        1. After a few minutes, your environment is prepared, and you can select **Deploy**.
 
-    - If your environment is in a failed state in LCS, select **Retry**. The new Credentials.json file will be used during the retry operation.
+    - If your environment is in a failed state in LCS, select **Retry**. The new Credentials.json file is used during the retry operation.
 
 ## Gateway fails to deploy
 
 **Issue:** You receive the following error in the event viewer logs.
 
 ```stacktrace
-Message Module aos failed Detail System.InvalidOperationException: Gateway app and Bootstrapper app are not healthy at AOSSetupHybridCloud.Program.Main(String[] args) 
+Message Module aos failed Detail System.InvalidOperationException: Gateway app and Bootstrapper app aren't healthy at AOSSetupHybridCloud.Program.Main(String[] args) 
 at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args) 
 at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
 at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
@@ -693,7 +693,7 @@ Category does not exist.
 
 ## Management Reporter
 
-You can do additional logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
+You can do more logging by registering providers. To register providers, in the LCS Shared asset library, select **Model** as the asset type, and then download the **Microsoft Dynamics 365 Finance + Operations (on-premises), LBDMRDeployerTroubleshooter** asset. Copy the zip file that is downloaded to the **primary** orchestrator machine, unzip it, and then run the following commands. (To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.)
 
 > [!NOTE]
 > If results in Event Viewer don't appear correct (for example, if words are truncated), get the latest manifest and .dll files. To get the latest manifest and .dll files, go to the WP folder in the agent file share. This share was created in the "Set up file storage" section of the appropriate setup and deployment article for your environment:
@@ -713,16 +713,16 @@ If you must unregister providers, use the following command.
 .\RegisterETW.ps1 -ManifestsAndDll @{"C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.man" = "C:\Files\ETWManifest\Microsoft.Dynamics.Reporting.Instrumentation.dll"} -Unregister
 ```
 
-After providers are registered, additional details about the new deployment are logged in Event Viewer, at **Applications and Services Logs** \> **Microsoft** \> **Dynamics**. The following folders will be shown:
+After providers are registered, more details about the new deployment are logged in Event Viewer, at **Applications and Services Logs** \> **Microsoft** \> **Dynamics**. The following folders is shown:
 
 - MR-Logger
 - MR-Sql
 
-To see the new folders, you must close and reopen Event Viewer. To see additional details, you must deploy an environment again.
+To see the new folders, you must close and reopen Event Viewer. To see more details, you must deploy an environment again.
 
 ###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
 
-**Issue**: You are running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
+**Issue**: You're running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
 
 ```stacktrace
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
@@ -737,7 +737,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 
 ### Unable to deploy Financial Reporting Service
 
-**Issue:** You are unable to finish deployment of Platform update 26 and later for Financial Reporting because the following error is in the application log for Service Fabric.
+**Issue:** You're unable to finish deployment of Platform update 26 and later for Financial Reporting because the following error is in the application log for Service Fabric.
 
 ```stacktrace
 Application: FinancialReportingDeployer.exe Framework Version: v4.0.30319  
@@ -749,9 +749,9 @@ Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.Stri
 Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
 ```
 
-**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 was not correctly installed or is corrupt in some or all of the MR nodes.
+**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 wasn't correctly installed or is corrupt in some or all of the MR nodes.
 
-**Steps:** Re-run the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
+**Steps:** Rerun the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
 
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
@@ -783,11 +783,11 @@ If the thumbprints don't meet both these requirements, you must redeploy from LC
 
 **Reason:** This issue is often caused by an incorrect address or SOAP action.
 
-**Steps:** Verify that the address can be reached, by manually opening the URL. For more details, see the "InnerException" text in the Event Viewer, if it's present.
+**Steps:** Verify that the address can be reached, by manually opening the URL. For more information, see the "InnerException" text in the Event Viewer, if it's present.
 
 ### Error on ImportDefaultReports
 
-If Management Reporter reports are checked out during deployment, the deployment will fail. To see whether reports are checked out, run the following **select** statements on the FinancialReporting database.
+If Management Reporter reports are checked out during deployment, the deployment fails. To see whether reports are checked out, run the following **select** statements on the FinancialReporting database.
 
 ```sql
 select checkedoutto, * from Reporting.ControlReport where checkedoutto is not null
@@ -893,14 +893,14 @@ If you're having issues during authentication with the Workflow editor or the Ex
 
 ### Redirect sign-in questions and issues
 
-If you're having issues when you sign-in, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. Here is an example:
+If you're having issues when you sign-in, in Service Fabric Explorer, verify that the **Provisioning\_AdminPrincipalName** and **Provisioning\_AdminIdentityProvider** values are valid. For example:
 
 - **Provisioning\_AdminPrincipalName**: `AXServiceUser@contoso.com`
 - **Provisioning\_AdminIdentityProvider**: `https://DC1.contoso.com/adfs`
 
 If the values aren't valid, you won't be able to proceed, and you must update the admin user information or AD FS information in LCS.
 
-If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, make a note of the **NETWORKDOMAIN** and **NETWORKALIAS** values in the USERINFO table. Here is an example:
+If you used Reset-DatabaseUsers.ps1, you must restart the AOS before your changes take effect. If you still have sign-in issues, make a note of the **NETWORKDOMAIN** and **NETWORKALIAS** values in the USERINFO table. For example:
 
 - **NETWORKDOMAIN:** `https://DC1.contoso.com/adfs`
 - **NETWORKALIAS:** `AXServiceUser@contoso.com`
@@ -928,7 +928,7 @@ The following sections provide focused debugging steps for claims that are retur
 
 #### Analyze
 
-Once you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. Foreach request that gets sent you will be able to view the full request as well as the full response.
+Once you have the network log, you can analyze the claims that are returned to Microsoft Dynamics. Foreach request that gets sent you can view the full request as well as the full response.
 
 1. In the network log look for the POST request that gets sent to Finance +Operations after having successfully authenticated through AD FS.
     ![Network log.](media/NetworkLogOnpremADFS.png)
@@ -939,7 +939,7 @@ Once you have the network log, you can analyze the claims that are returned to M
 > Copy the value of the id_token parameter after the colon sign (:).
 > ![Payload example.](media/NetworkLogPayloadOnpremADFS.png)
 1. Go to [ADFS JWT Decoder](https://adfshelp.microsoft.com/JwtDecoder/GetToken)
-1. Paste the value of the id_token parameter in the **Encoded JWT Token** field, and it will be automatically decoded.
+1. Paste the value of the id_token parameter in the **Encoded JWT Token** field, and it's automatically decoded.
 1. Check the results in the Payload: Data and Claims section, and follow these steps:
 
     - Make sure that the **upn** value matches the user name.
@@ -967,7 +967,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 
 In some cases, you still might not be able to sign in, and you might receive the following error:
 
-> You are not authorized to login with your current credentials. You will be redirected to the login page in a few seconds.
+> You're not authorized to login with your current credentials. You're redirected to the login page in a few seconds.
 
 If this error occurs, follow these steps.
 
@@ -999,7 +999,7 @@ If you find that the keyset doesn't exist, scripts weren't run on all machines. 
 
 Copy the scripts in each folder to the VMs that correspond to the folder name.
 
-Additionally, check the .csv file to verify that the correct domain is used.
+Also, check the .csv file to verify that the correct domain is used.
 
 ## Error: "RunAsync failed due to an unhandled FabricException causing replica to fault"
 
@@ -1030,7 +1030,7 @@ To sign in to the client, disable Enhanced Security Configuration for Internet E
 
 ## Error: "Invalid algorithm specified / Cryptography"
 
-If you receive an "Invalid algorithm specified / Cryptography" error, you must use the Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, see the certificate requirements. Additionally, verify that the structure of the credentials.json file is correct.
+If you receive an "Invalid algorithm specified / Cryptography" error, you must use the Microsoft Enhanced RSA and AES Cryptographic Provider. For more information, see the certificate requirements. Also, verify that the structure of the credentials.json file is correct.
 
 If you must re-create the certificate by using the correct provider, follow these steps.
 
@@ -1041,7 +1041,7 @@ If you must re-create the certificate by using the correct provider, follow thes
 
 ## An "Unable to find certificate" error occurs when you run Test-D365FOConfiguration.ps1
 
-If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes. For example, you will receive this error if the client certificate and the SessionAuthentication certificate are combined. We recommend that you not combine certificates. For more information, see the certificate requirements, and check the acl.csv file for **domain.com\\user** versus **domain\\user** (for example, NETBIOS structure).
+If you receive an "Unable to find certificate" error when you run Test-D365FOConfiguration.ps1, check whether certificates or thumbprints are being combined for multiple purposes. For example, you receive this error if the client certificate and the SessionAuthentication certificate are combined. We recommend that you not combine certificates. For more information, see the certificate requirements, and check the acl.csv file for **domain.com\\user** versus **domain\\user** (for example, NETBIOS structure).
 
 ## The client and server can't communicate because they don't have a common algorithm
 
@@ -1084,7 +1084,7 @@ Get-ADServiceAccount -Identity svc-LocalAgent$ -Properties PrincipalsAllowedToRe
 > Framework Version: v4.0.30319  
 > Description: The process was terminated due to an unhandled exception.
 
-**Reason:** If you receive this error, strong name validation is enabled in the Reporting server, but it should not be enabled.
+**Reason:** If you receive this error, strong name validation is enabled in the Reporting server, but it shouldn't be enabled.
 
 **Steps:** To resolve this issue, run the **config-PreReq** script on the Reporting server machine.
 
@@ -1109,7 +1109,7 @@ If these "Files in use" errors occur, set up the exclusion rules that Service Fa
 
 ### Package deployment fails because of a "path too long" exception
 
-Because of a 260-character limit in Microsoft Windows, deployment will fail if a package has a longer name, or if the on-premises share has the full FQDN path. If the character limit is exceeded, you receive the following error:
+Because of a 260-character limit in Microsoft Windows, deployment fails if a package has a longer name, or if the on-premises share has the full FQDN path. If the character limit is exceeded, you receive the following error:
 
 > System.IO.PathTooLongException: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters. at System.IO.PathHelper.GetFullPathName
 
@@ -1127,7 +1127,7 @@ To work around this issue, keep the development or build environments on the sam
 
 ### Package deployment fails because of dependencies on missing modules
 
-If you try to apply a package that is missing dependent modules, package application will fail, and you will receive a message that resembles the following message:
+If you try to apply a package that is missing dependent modules, package application fails, and shows a message that resembles the following message:
 
 > Package \[dynamicsax-My\_commonextension.7.0.4679.35176.nupkg has missing dependencies: \[dynamicsax-demodatasuite;dynamicsax-financialreportingadaptors;dynamicsax-fleetmanagement;dynamicsax-fleetmanagementextension;dynamicsax-publicsectorformadaptor\]\]
 >
@@ -1175,7 +1175,7 @@ Follow these steps to configure the local agent with the updated tenant.
 
 ## Additional deployments (for example, two sandbox deployments, or a sandbox and production deployment)
 
-You will receive the following error when you deploy an additional environment:
+You receive the following error when you deploy another environment:
 
 > .\\Publish-ADFSApplicationGroup.ps1 -HostUrl `https://ax.d365ffo.onprem.contoso.com` New-AdfsApplicationGroup : MSIS9908: The application group identifier must be unique in AD FS configuration.
 
@@ -1222,13 +1222,13 @@ Run the following command against your business data database (AXDB):
 ```
 
 >[!NOTE]
-> If you are using version 10.0.12 or earlier, a full database synchronization will be executed.
+> If you're using version 10.0.12 or earlier, a full database synchronization is executed.
 
 After running the command, restart one of your AOS nodes through Service Fabric Explorer or restart the VM that the node is running on.
 
 ## Add axdbadmin to tempdb after a SQL Server restart via a stored procedure
 
-When SQL Server is restarted, the tempdb database is re-created. Therefore, there will be missing permissions. Run the following script to create a stored procedure on the master database.
+When SQL Server is restarted, the tempdb database is re-created. Therefore, there are missing permissions. Run the following script to create a stored procedure on the master database.
 
 ```sql
 \-----
@@ -1248,9 +1248,9 @@ You might receive the following error:
 
 The steps to resolve this issue depend on whether you have only an on-premises project, or whether you have both an online project and an on-premises project.
 
-### If have only an on-premises project
+### If you only have an on-premises project
 
-If have only an on-premises project, you can't update the existing credential with KeyId '\<key\>'.
+If you only have an on-premises project, you can't update the existing credential with KeyId '\<key\>'.
 
 > New-AzureRmADSpCredential : Update to existing credential with KeyId '\<key\>' is not allowed.  
 > At C:\\InfrastructureScripts\\Add-CertToServicePrincipal.ps1:62 char:1  
@@ -1313,7 +1313,7 @@ If you have both an online project and an on-premises project, follow these step
 
 ## ODBC driver 17 is required for platform updates
 
-The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](setup-deploy-on-premises-latest.md#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you will receive DB Sync errors during servicing of the environment.
+The latest platform binary update uses Open Database Connectivity (ODBC) driver 17. This upgrade resolves stability issues that are linked to older ODBC drivers. The [Setup perquisites](setup-deploy-on-premises-latest.md#prerequisites) documentation has been updated to reflect the change in which ODBC driver 17 must be installed on each AOS server. If you don't install ODBC driver 17, you receive DB Sync errors during servicing of the environment.
 
 Here are some examples of errors:
 
@@ -1371,7 +1371,7 @@ For more information about how to configure network printers in on-premises envi
 
 ## Ax-DatabaseSynchronize isn't populated with events
 
-In Platform update 20 and later, there is database synchronization log issue where the synchronization logs aren't written under **Ax-DatabaseSynchronize** in Event Viewer.
+In Platform update 20 and later, there's database synchronization log issue where the synchronization logs aren't written under **Ax-DatabaseSynchronize** in Event Viewer.
 
 To resolve this issue, go to \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log. For example, go to C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log. Here, you can see the output from DatabaseSynchronize in the Code\_AXSF\_M\_\<X\>.out files. Troubleshoot any issues that pertain to this component.
 
@@ -1401,7 +1401,7 @@ You might receive the following error during a new installation:
 
 > Error event: SourceId='System.Hosting', Property='CodePackageActivation:Code:EntryPoint'. There was an error during CodePackage activation.Service host failed to activate. Error:0x8007052e
 
-This error will cause the AXSF service to fail with the same error.
+This error causes the AXSF service to fail with the same error.
 
 To resolve this issue, follow these steps.
 
@@ -1440,11 +1440,11 @@ Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption --->
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
 System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
-The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
+The located assembly's manifest definition doesn't match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
 --- End of inner exception stack trace ---
 ```
 
-**Reason:** There is a .dll mismatch between the runtime and the application.
+**Reason:** There's a .dll mismatch between the runtime and the application.
 
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
 
@@ -1475,7 +1475,7 @@ Stack trace: Invalid attempt to call  running in CIL on the client.
 DB sync failed.
 ```
 
-**Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
+**Reason:** This issue occurs because there's data in the SQL DatabaseLog table that conflicts with the metadata in the package.
 
 **Resolution:** Run the following query on AXDB to clean the DatabaseLog table and retry the deployment.
 
@@ -1524,7 +1524,7 @@ Microsoft.Dynamics.AX.InitializationException: Database login failed. Please che
    at Microsoft.Dynamics.AX.Framework.Database.Monitor.DeadlockMonitor.CreateDeadlockTrackingSystemEvent()
 ```
 
-**Reason:** This issue occurs because the SQL Server account used by Finance + Operations does not have sufficient permissions to execute the operation.
+**Reason:** This issue occurs because the SQL Server account used by Finance + Operations doesn't have sufficient permissions to execute the operation.
 
 **Resolution:** Execute the following command in your SQL Server:
 
@@ -1535,7 +1535,7 @@ GRANT ALTER ANY EVENT SESSION to axdbadmin;
 
 ## ReportingService fails to start
 
-**Issue:** During deployment, the ReportingService fails to start. In the event logs you will see the following error:
+**Issue:** During deployment, the ReportingService fails to start. In the event logs you see the following error:
 
 ```stacktrace
 Could not load file or assembly 'Microsoft.SqlServer.BatchParser, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. An attempt was made to load a program with an incorrect format.
@@ -1554,7 +1554,7 @@ System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name,
 
 ## Report deployment fails on version 10.0.19 and later
 
-**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you will see the following error.
+**Issue:** During deployment, the report deployment operation fails. In the report deployment log, you see the following error.
 
 ```stacktrace
 Publish-AXReport : Value cannot be null.
@@ -1568,7 +1568,7 @@ Parameter name: The value supplied for parameter 'serviceName' cannot be null or
 Microsoft.Dynamics.AX.Framework.Management.Reports.PublishReportCommand
 ```
 
-**Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under does not have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
+**Reason:** The AOS needs to retrieve the list of services running on the BI node to find the version of SSRS that is currently installed. The account that the AOS runs under doesn't have the appropriate permissions to get the list of services, so it fails and is unable to retrieve the serviceName.
 
 **Resolution:** Version 2.11.1 of the infrastructure scripts, available from the Shared asset library in LCS, has been released to propagate these permissions so the serviceName can be retrieved.
 
@@ -1658,7 +1658,7 @@ At C:\InfrastructureScripts\Scripts\Add-CertToServicePrincipal.ps1:93 char:44
    + FullyQualifiedErrorId : nullToObjectInvalidCast,Microsoft.PowerShell.Commands.WhereObjectCommand
 ```
 
-**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that are not compatible with the scripts.
+**Reason:** Version 7.0 of the Azure PowerShell module has introduced breaking changes that aren't compatible with the scripts.
 
 **Resolution:** Downgrade the version of the Azure PowerShell module to version 6.6.0.
 
@@ -1679,7 +1679,7 @@ At line:1 char:1
     + FullyQualifiedErrorId : CryptographicException,Configure-SQLCert.ps1
 ```
 
-**Reason:** A change was made to the way .NET and .NET Framework handle importing X.509 certificates. These changes caused imports to throw CryptographicException in some cases. For more information see [KB5025823 Change in how .NET applications import X.509 certificates
+**Reason:** A change was made to the way .NET and .NET Framework handle importing X.509 certificates. These changes caused imports to throw CryptographicException in some cases. For more information, see [KB5025823 Change in how .NET applications import X.509 certificates
 ](https://go.microsoft.com/fwlink/?linkid=2233907).
 
 **Resolution:** Ensure that you have applied the following update: [KB5028608](https://support.microsoft.com/en-gb/topic/kb5028608-change-in-how-net-framework-runtime-imports-x-509-certificates-abc64f77-5f7b-449b-9285-4d9a982fc368)
