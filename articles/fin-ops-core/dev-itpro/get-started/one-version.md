@@ -33,41 +33,43 @@ This FAQ is intended to provide clarity about the service updates, processes, an
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
 > [!IMPORTANT]
-> There are important changes coming to the service update release schedule. The number of service updates released annually is being reduced from 7 to 4. This change impacts the Preview availability, General availability (self-update), and End of service dates for 10.0.38 and goes into full effect beginning with 10.0.39 (the “April” 2024 release).
+> There's an important change coming to the service update release schedule. The number of service updates released annually is being reduced from seven to four. This change impacts the preview availability, general availability (self-update), and end of service dates for version 10.0.38, and goes into full effect beginning with version 10.0.39 (the “April” 2024 release).
 
-### What is changing with the new release cadence?
+### What's changing with the new release cadence?
 
--	Service updates will only be released in February (December self-update), April, July, and October. The May, August, or November releases are no longer available for self-update or auto-update.
--	The lifecycle of each release overall has been extended substantially to 404 – 414 days.
--	The Preview period has been extended. Every release will now include one scheduled update to the Preview build.
--	The First Release program’s auto-update and feedback phase has been extended by 2 weeks. Click here to learn more about the First Release program.
--	The servicing window of every release has been substantially extended to 186 - 214 days with improved overlap between releases.
--	The number of consecutive pauses allowed will be reduced from 3 to 1. With the release durations extended, this maintains the same minimum 2 service updates annually as before.
+The following changes are being implemented.
+-	Service updates are only released in February (December self-update), April, July, and October. The May, August, and November releases are no longer available for self-update or auto-update.
+-	The lifecycle of each release is substantially extended to 404 – 414 days.
+-	The preview period is extended. Every release will now include one scheduled update to the preview build.
+-	The [First release program](https://aka.ms/FirstReleaseFnO)’s auto-update and feedback phase is extended by two weeks. 
+-	The servicing window of every release is substantially extended to 186 - 214 days with improved overlap between releases.
+-	The number of consecutive pauses allowed is reduced from three to one. With the release durations extended, the same minimum two annual service updates is maintained.
 
-### Is the change in maximum allowed pauses from 3 to 1 already in effect?
+### Is the change from three to one maximum pauses already in effect?
 
-No. The transition from 3 to 1 max pauses will be completed by April 2024. The change to 1 max pause enforcement goes into effect on February 19, 2024, after all scheduled auto-updates for 10.0.38 have been completed.
-The table below illustrates allowed pauses by month based on your installed version until the transition completes. For more information about pausing service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+No. The transition from three to one maximum pauses will be completed by April 2024. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled auto-updates for 10.0.38 are completed.
 
-...OneVersion FAQs_Max Pause Transition GOES HERE...
+The following table illustrates allowed pauses by month based on your installed version until the transition is completed. For more information about pausing service updates, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+
+![Allowed pauses by month.](../media/OneVersion-FAQs-Max-Pause-Transition.png)
 
 ### Does the new release schedule impact when I can schedule auto-updates?
 
-No. There is no change to how auto-updates are scheduled in LCS and when those auto-updates will occur. The only change is what service updates are being released each year. For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+No. There is no change to how auto-updates are scheduled in Lifecycle Services and when those auto-updates will occur. The only change is what service updates are being released each year. For information about how to pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### When does the new service update release cadence take effect?
 
-10.0.38 (the “February” release) has been revised to act as a transition release. 10.0.39 (the “April” release) will be the first service update released under the new cadence.
+Version 10.0.38 (the “February” release) is revised to act as a transition release. 10.0.39 (the “April” release) will be the first service update released under the new cadence.
 
-### Has the published 10.0.38 schedule been impacted by the new service update release cadence?
+### Is the published 10.0.38 schedule impacted by the new service update release cadence?
 
-Yes. To act as a transition release, some release milestones for 10.0.38 have been adjusted to align with the new release cadence:
--	Preview availability has been pushed out by 2 weeks from Oct 13 to Oct 27, 2023.
--	An update to Preview has been added, which will be released on Nov 3, 2023.
--	Customers participating in the [First release program](https://aka.ms/FirstReleaseFnO) will receive their auto-updates a month earlier in December 2023.
--	General availability for self-update will occur a month earlier on Dec 22, 2023.
--	There is no change to the GA broadcast (auto-update) dates.
--	The servicing window has been extended from April 12 to Aug 9, 2024.
+Yes. To act as a transition release, some release milestones for 10.0.38 were adjusted to align with the new release cadence.
+-	Preview availability was pushed out by two weeks from Oct 13 to Oct 27, 2023.
+-	An update to the preview was added, and will be released on Nov 3, 2023.
+-	Customers participating in the [First release program](https://aka.ms/FirstReleaseFnO) will receive their auto-updates a month earlier, in December 2023.
+-	General availability for self-update will occur a month earlier, on December 22, 2023.
+-	There is no change to the general availability broadcast (auto-update) dates.
+-	The servicing window is extended from April 12 to Aug 9, 2024.
 
 ### Can the updates be delayed? What is the policy?
 
