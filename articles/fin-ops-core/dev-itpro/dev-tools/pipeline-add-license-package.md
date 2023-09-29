@@ -33,5 +33,7 @@ To add the task to your build for the YML or Classic pipeline, search the task l
 | Search pattern for license files to add to the package | Yes | A list of license files on the build agent, or a search pattern for files on the build agent. To make the license files available on the build agent, you can add them to source control. Alternatively, they can be downloaded or generated in an earlier step of the pipeline. For more information, see [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns). |
 | Filename and path of the deployable package to update | Yes | The path and file name of an existing deployable package zip file that the license files should be added to. |
 
+> [!NOTE]
+> With introduction of the (unified developer experience)[/power-platform/developer/unified-experience/finance-operations-dev-overview], a new version of this task was released that is capable of generating the package in both LCS and the Power Platform Unified package format. To generate the package in the new format at the "Path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox and provide the platform and application version used. The search pattern and tools package path is still honored as before. The LCS package creation option is chosen by default and is generated the same way as before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
