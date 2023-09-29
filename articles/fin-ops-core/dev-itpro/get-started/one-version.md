@@ -3,7 +3,7 @@
 
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
-author: laneswenka
+author: josaw1
 ms.date: 09/29/2023
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.custom: bap-template
 # ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: laswenka
+ms.author: josaw
 ms.search.validFrom: 2018-10-31 
 ms.dyn365.ops.version: 8.1
 ---
@@ -73,9 +73,9 @@ Yes. To act as a transition release, some release milestones for 10.0.38 were ad
 
 ### Can the updates be delayed? What is the policy?
 
-Yes, customers can pause, delay, or opt out of an update via the update settings in Microsoft Dynamics Lifecycle Services (LCS) projects. Beginning with the April 2024 auto-update, customers can choose to pause one update. Up until April 2024, the number of pauses available to a customer will depend on their release version relative to the latest version. See the [Is the change in maximum allowed pauses from 3 to 1 already in effect?](#is-the-change-in-maximum-allowed-pauses-from-3-to-1-already-in-effect) FAQ for details.
+Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. Beginning with the April 2024 auto-update, customers can choose to pause one update. Prior to April 2024, the number of pauses available to a customer depends on their release version relative to the latest version. See [Is the change from three to one maximum pauses already in effect?](#Is-the-change-from-three-to-one-maximum-pauses-already-in-effect) for details.
 
-For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+For information about how to pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### How does the timing for general availability of a release work?
 
