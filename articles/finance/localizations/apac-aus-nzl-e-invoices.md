@@ -141,7 +141,7 @@ For more information about ER destinations, see [Electronic reporting destinatio
 
 ## Additional resources
 
-- [Forced electronic invoices generation](emea-eur-forced-einvoices.md)
-- [Supported standards for electronic invoicing](emea-oioubl-standards-electronic-invoicing.md)
+- [Forced electronic invoices generation](europe/emea-eur-forced-einvoices.md)
+- [Supported standards for electronic invoicing](europe/emea-oioubl-standards-electronic-invoicing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

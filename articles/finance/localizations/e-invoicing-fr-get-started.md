@@ -42,13 +42,13 @@ Some steps are required to configure the **French Chorus Pro submission (FR)** E
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](global/e-invoicing-service-overview.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
-    - [Sign up for and install the Electronic Invoicing service](e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
-    - [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md) – Use the information in this article to activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management app and the Electronic Invoicing service.
+    - [Sign up for and install the Electronic Invoicing service](global/e-invoicing-sign-up-install.md)
+    - [Set up Azure resources for Electronic invoicing](global/e-invoicing-set-up-azure-resources.md)
+    - [Install the add-in for microservices in Lifecycle Services](global/e-invoicing-install-add-in-microservices-lcs.md)
+    - [Activate and setup integration with Electronic invoicing](global/e-invoicing-activate-setup-integration.md) – Use the information in this article to activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management app and the Electronic Invoicing service.
 
 - Your organization must be registered to operate with Chorus Pro. Microsoft provides integration with Chorus pro in OAuth2 Mode via an application programming interface (API). For detailed information about Chorus Pro registration and application activation, see the [official documentation](https://communaute.chorus-pro.gouv.fr/documentation/help-for-api-developers-in-oauth2-mode/).
 
@@ -65,9 +65,9 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Some of the parameters from the **French Chorus Pro submission (FR)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review and update the default values as required, so that they better reflect your business operations.
 
-1. In the Azure key vault, create secrets and the corresponding reference to them. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
-2. Import the latest version of the **French Chorus Pro submission (FR)** globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
-3. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
+1. In the Azure key vault, create secrets and the corresponding reference to them. For more information, see [Customer certificates and secrets](global/e-invoicing-customer-certificates-secrets.md).
+2. Import the latest version of the **French Chorus Pro submission (FR)** globalization feature as described in [Import features from the Global repository](global/e-invoicing-import-feature-global-repository.md).
+3. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](global/e-invoicing-create-new-globalization-feature.md).
 4. On the **Versions** tab, verify that the **Draft** version is selected.
 5. On the **Setups** tab, in the grid, select the **UBL Sales invoice derived** feature setup.
 6. Select **Edit**, and then, on the **Processing pipeline** tab, in the **Processing pipeline** section, select **(Preview) Integrate with French Chorus Pro** with the action name **French Chorus Pro submit**.
@@ -107,7 +107,7 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 
 #### Enter a legal entity and a customer Siret number
 
-Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md) to set up NAF codes and Siret numbers. Alternatively, you can use [registration IDs](emea-registration-ids.md) to set up Siret numbers.
+Use the information in [NAF codes and siret numbers](france/emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](france/fr-00003-naf-codes-siret-numbers.md) to set up NAF codes and Siret numbers. Alternatively, you can use [registration IDs](europe/emea-registration-ids.md) to set up Siret numbers.
 
 ### Set up the project manager account
 
@@ -143,7 +143,7 @@ You can enable Siret numbers and service code validation before you post and inv
     - Technical user password
 
     > [!NOTE]
-    > We recommend that you use Azure Key Vault storage to store the secrets. For more information, see [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
+    > We recommend that you use Azure Key Vault storage to store the secrets. For more information, see [Set up the Azure Key Vault client](global/setting-up-azure-key-vault-client.md).
 
 3. Enable the **SIRET and service code validation** parameter.
 4. In the **Report format** field, select the configurable business document to use when a submission report is printed.
@@ -157,7 +157,7 @@ Follow these steps to complete the configuration.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
-3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 4. In the **Customer Invoice journal** table name field, select **Response types**.
 5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
 
@@ -214,10 +214,10 @@ To import documents from Chorus Pro, go to **Organization administration** \> **
 - Project manager
 - Project manager service code
 
-For more information, see [Use the electronic invoicing service to import vendor invoices](e-invoicing-get-started-import-vendor-invoices.md)
+For more information, see [Use the electronic invoicing service to import vendor invoices](global/e-invoicing-get-started-import-vendor-invoices.md)
 
 ## Additional resources
 
-- [Electronic invoicing add-on overview](e-invoicing-service-overview.md)
+- [Electronic invoicing add-on overview](global/e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing add-on service administration](e-invoicing-get-started-service-administration.md)
 - [Get started with the Electronic invoicing add-on](e-invoicing-get-started.md)

@@ -20,7 +20,7 @@ This article describes how to prepare your Microsoft Dynamics 365 Finance enviro
 
 ## Prerequisites
 
-To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](emea-dnk-vat-declaration-denmark.md).
+To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](denmark/emea-dnk-vat-declaration-denmark.md).
 
 Before you start to prepare your Finance environment for direct submission of VAT returns in XML format to the Danish Tax Agency, complete the required setup in [Preview a VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
@@ -45,7 +45,7 @@ To submit your VAT return, you must obtain certificates from the Danish Tax Agen
 
 ![Key Vault parameters.](media/Key-vault-parameters-dk.png)
 
-For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](setting-up-azure-key-vault-client.md).
+For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](global/setting-up-azure-key-vault-client.md).
 
 ## Set up electronic messages
 
@@ -159,7 +159,7 @@ Follow these steps to limit access to the **DK VAT return** electronic message p
 
 ### Set up a tax registration number
 
-The **DK VAT return - Skattestyrelsen EM package** setup file provides the **Tax registration number** field for the **DK VAT return** electronic message processing. This field enables a VAT registration number that's independent of the legal entity's primary address and the registration ID that has been defined for companies that must report VAT returns by using the **DK VAT return** electronic message processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md).
+The **DK VAT return - Skattestyrelsen EM package** setup file provides the **Tax registration number** field for the **DK VAT return** electronic message processing. This field enables a VAT registration number that's independent of the legal entity's primary address and the registration ID that has been defined for companies that must report VAT returns by using the **DK VAT return** electronic message processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](global/emea-multiple-vat-registration-numbers.md).
 
 Follow these steps to define the VAT registration number that the **DK VAT return** electronic message processing must use to submit VAT returns.
 
@@ -167,7 +167,7 @@ Follow these steps to define the VAT registration number that the **DK VAT retur
 2. Select the **DK VAT return** electronic message processing, and then, on the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return.
 3. Save your changes.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](europe/emea-registration-ids.md#registration-type-creation) and [Registration category](europe/emea-registration-ids.md#supported-registration-categories).
 
 ## Generate a VAT declaration from electronic messages and submit it to the Danish Tax Agency
 

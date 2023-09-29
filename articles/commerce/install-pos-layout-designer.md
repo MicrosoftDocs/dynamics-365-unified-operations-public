@@ -54,7 +54,7 @@ The graphical design interface for the Store Commerce app and Store Commerce for
 
 <!--## Additional resources-->
 
-<!--[Configure, install, and activate the Store Commerce app](retail-modern-pos-device-activation.md)-->
+<!--[Configure, install, and activate the Store Commerce app](dev-itpro/retail-modern-pos-device-activation.md)-->
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
