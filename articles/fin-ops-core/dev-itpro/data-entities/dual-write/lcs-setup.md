@@ -50,7 +50,9 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 8. When the linking is complete, a hyperlink is displayed. Use the link to sign in to the dual-write administration area in the finance and operations environment. From there, you can set up entity mappings.
 
-## Linking mismatch
+## Troubleshooting
+
+### Linking mismatch
 
 It is possible that your dual-write environment is linked to a Dataverse instance while LCS is not set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It is recommended that LCS environment details match what you are connected to in dual-write so that the same connection can be used by business events, virtual tables, and add-ins.
 
@@ -64,6 +66,17 @@ If you receive this warning, try one of the following solutions:
 - If your LCS environment is already set up for Power Platform integration, you should unlink dual-write and reconnect it to the one specified by LCS using the [Scenario: Reset or change linking](relink-environments.md#scenario-reset-or-change-linking).
 
 In the past a manual support ticket option was available, but that was before option 1 above existed.  Microsoft no longer supports manual relinking requests via Support tickets.
+
+### Incorrect permissions on service principal
+
+It is possible to receive the following error while linking the finance and operations environment to the Dataverse environment in LCS:
+
+| Error code | Error message |
+| --- | --- |
+| DW9003 | Failed to connect to CRM. Please ensure that the service principal has the correct permissions to access CRM.|
+| DW9003 | Failed to connect to AX. Please ensure that the service principal has the correct permissions to access AX. | 
+
+This error indicates that the application users created for dual-write to access data on the target platforms have not been configured with the appropriate permissions. To resolve this error, ensure the application users have been configured correctly following the guidance in [System requirements and prerequisites](./requirements-and-prerequisites.md).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
