@@ -71,7 +71,7 @@ Yes. To act as a transition release, some release milestones for 10.0.38 were ad
 -	There is no change to the general availability broadcast (auto-update) dates.
 -	The servicing window is extended from April 12 to Aug 9, 2024.
 
-### Can the updates be delayed? What is the policy?
+### Can the updates be delayed? What's the policy?
 
 Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. Beginning with the April 2024 auto-update, customers can choose to pause one update. Prior to April 2024, the number of pauses available to a customer depends on their release version relative to the latest version. See [Is the change from three to one maximum pauses already in effect?](#Is-the-change-from-three-to-one-maximum-pauses-already-in-effect) for details.
 
@@ -79,13 +79,13 @@ For information about how to pause an update, refer to [Pause service updates th
 
 ### How does the timing for general availability of a release work?
 
-The release package is made generally available to all customers for self-update prior to auto-updates. The timing of package release for self-update relative to production auto-updates varies. To determine self-update and auto-update timing for upcoming releases, use the [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+The release package is made generally available to all customers for self-update prior to auto-updates. The timing of the package release for self-update relative to the production auto-updates varies. To determine self-update and auto-update timing for upcoming releases, use the [Targeted release schedule (dates subject to change)](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
 
-Production auto-updates for a release are scheduled for the first, second, and third weeks of the month. The configuration setup is available in LCS. Depending on the configuration that you set up in LCS, you will receive updates during the selected week. Sandbox updates will always be scheduled the week before the production update.
+Production auto-updates for a release are scheduled for the first, second, and third weeks of the month. The configuration setup is available in Lifecycle Services. You receive updates during the selected week based on the configuration that you set up in Lifecycle Services. Sandbox updates are always scheduled the week before the production update.
 
-As an example, for the 10.0.39 April release, Microsoft will make the release generally available to all customers for self-update by the GA public date of March 15, 2024. Customers who have enabled auto-updates through LCS will receive production updates beginning two weeks after the GA public date during the weekends of April 5, April 12, or April 19, depending on your selected configuration in LCS. Sandbox updates will always be scheduled a week before the update.
+As an example, for the 10.0.39 ("April") release, Microsoft will make the release generally available to all customers for self-update by the general availability public date of March 15, 2024. Customers who have enabled auto-updates through Lifecycle Services will receive production updates beginning two weeks after the general availability public date, during the weekends of April 5, April 12, or April 19, depending on the configuration in Lifecycle Services. Sandbox updates are always scheduled a week before the update.
 
-Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in LCS. If a customer is already on the latest version, the automatic update will be canceled.
+Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in Lifecycle Services. If a customer is already on the latest version, the automatic update will be canceled.
 
 
 ## Service updates
@@ -94,26 +94,26 @@ Customers can always choose to apply the update at an earlier time or at a time 
 
 | Version       | Description |
 |---------------|-------------|
-| 10 | All customers will be scheduled for automatic service updates. These updates will be combined application and platform updates. Beginning in February 2024 you will only be allowed to pause one update before being required to take the next update. For information about how to pause an update, see [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
+| 10 | All customers are scheduled for automatic service updates. The updates are combined application and platform updates. Beginning in February 2024, you will only be allowed to pause one update before being required to take the next update. For information about how to pause an update, see [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 
 ### What do the service updates contain?
 
-Service updates contain application changes  and platform changes that are critical improvements to the service. These changes include regulatory updates. New experiences will be configurable. The service updates are backward compatible. There will be a single version that represents the update.
+Service updates contain application and platform changes that are critical to the service, including regulatory updates. Service updates are backward compatible and new experiences are configurable. The update is represented by a single version.
 
-> [!Note]
-> Add-in components, Power Apps, and Dataverse are updated independently of the finance and operations service update package and process.
+> [!NOTE]
+> Add-in components, Power Apps, and Dataverse are updated independently of the finance and operations apps service update package and process.
 
 ### What is a regulatory update?
 
-A regulatory update is a new feature or an existing feature change that is required by law, usually for a specific country or region. The regulatory update is always required by a specific law enforcement date (LED) and should be enabled by that date or earlier.
+A regulatory update is a new feature or an existing feature change required by law, usually for a specific country or region. A regulatory update is always required by a specific law enforcement date (LED) and should be enabled by that date or earlier.
 
-### How can I determine what is changed in a service update?
+### How can I determine what's changed in a service update?
 
-The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for all new features and changes for a future release. Features will also include Help topics on Microsoft Learn as needed. 
+The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features will also be documentated on Microsoft Learn as needed. 
 
 ### What is the upcoming schedule of updates?
 
-Each year, four  service updates are released. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than one update behind the current update.
+Each year, four service updates are released. You have the option to apply them when convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You're required to use an update that's no more than one update behind the current update.
 
 To view the targeted release schedule for upcoming releases, see [Service update availability](public-preview-releases.md).
 
@@ -121,82 +121,84 @@ To view the targeted release schedule for upcoming releases, see [Service update
 
 There are two major updates each year: the April update and the October update. New experiences can be enabled in these updates. Major updates don't require code or data upgrade. Breaking changes will be communicated 12 months in advance so that customers can plan accordingly. Breaking changes will be introduced only during major updates.
 
-### What does it mean when an update is backward compatible?
+### What does it mean that an update is backward compatible?
 
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without having to recompile, reconfigure, or redeploy customizations. It also means that, on a development environment at design time, X++ public and protected application programming interfaces (APIs) and metadata aren't modified or deleted. If Microsoft must break compatibility by removing obsolete APIs, this change will be communicated 12 months in advance and will follow a deprecation schedule. Functional compatibility is about the user experience. All new experiences will be available on an opt-in basis for a 12-month period.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without having to recompile, reconfigure, or redeploy customizations. It also means that, on a development environment at design time, X++ public and protected application programming interfaces (APIs) and metadata aren't modified or deleted. If Microsoft must break compatibility by removing obsolete APIs, the change will be communicated 12 months in advance and will follow a deprecation schedule. Functional compatibility refers to the user experience. All new experiences are available on an opt-in basis for a 12-month period.
 
 Backward compatibility doesn't include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies that the product uses, and to remove dependencies, without early warning. Microsoft doesn't commit to maintain backwards compatibility of dependent software libraries unless this commitment is expressly stated.
 
 For more information about deprecation guidelines, and deprecated methods and metadata elements, see [Deprecation of methods and metadata elements](../../dev-itpro/migration-upgrade/deprecation-deletion-apis.md).
 
-### What is the process for deprecation?
+### What's the process for deprecation?
 
-Before any feature is removed from the product, the deprecation notice will be announced in the product documentation 12 months before the removal.
+The deprecation notice is announced in the product documentation 12 months before Microsoft removes a feature from the app.
 
-For breaking changes that only affect compilation time, but that are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler. 
+For breaking changes that only affect compilation time, but that are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these changes are functional updates that must be made to the compiler. 
 
 ### If I'm not doing active development/recompilation of my code, how will I learn whether there is a deprecated feature that will affect me? 
 
-Deprecated features will be documented for each release. For more information, see [Removed or Deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).
+Deprecated features are documented for each release. For more information, see [Removed or Deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
 ### Can I update just the platform? Similarly, can I update just the application?
 
-No. Only combined application+platform update packages are released for both service updates and quality updates. 
+No. Only combined application plus platform update packages are released for both service updates and quality updates. 
 
 ### Service updates for on-premises deployments
 
-The policy and schedule for service updates are now the same for both cloud deployments and on-premises deployments. For example, the option to delay one service update applies to both types of deployment  . The process for applying each of these updates remains slightly different. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
+The policy and schedule for service updates are the same for both cloud deployments and on-premises deployments. For example, the option to delay one service update applies to both types of deployment. The process for applying each of these updates remains slightly different, however. For more information, see [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md#update-an-on-premises-deployment).
 
 ## Process
 
-### How will Microsoft ensure the quality of releases?
+### How does Microsoft ensure the quality of releases?
 
 Ensuring the quality of releases is a fundamental principle that is enabled through a series of progressive, rigorous, automated validations, as described in [Service update availability](public-preview-releases.md).
 
 ### Can I select the day and time to update?
 
-Customers can configure the day and maintenance time windows in LCS. The service update, which is based on your update settings, will start within 15 minutes. Customers who opt in to receive LCS notifications will receive an email that includes update instructions. Customers will be able to select the designated tier 2/UAT sandbox for the update. Customers will have seven calendar days to do testing and validation before the production environment is updated. All additional sandboxes will automatically be updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+You can configure the day and maintenance time windows in Lifecycle Services. The service update, which is based on your update settings, will start within 15 minutes. If you opt in to receive Lifecycle Services notifications, you'll receive an email that includes update instructions. You'll be able to select the designated tier 2/UAT sandbox for the update. You'll have seven calendar days to do testing and validation before the production environment is updated. All additional sandboxes are automatically updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
-Customers can optionally apply the update earlier to all environments through LCS. The production-ready deployable package will be made available to all customers via the Action Center in LCS by the Generally available (self-update) date. See [Service update availability](public-preview-releases.md) for the targeted release schedule of upcoming releases.
+You can optionally apply the update earlier to all environments through Lifecycle Services. The production-ready deployable package is available to all customers via the Action Center in Lifecycle Services by the generally available (self-update) date. See [Service update availability](public-preview-releases.md) for the targeted release schedule of upcoming releases.
 
-### A service update was applied to the environment. In LCS, what does the number on the tile for this environment represent?
+### A service update was applied to the environment. In Lifecycle Services, what does the number on the tile for this environment represent?
 
-Microsoft will automatically apply the same service update to all customers. Microsoft will continue to service the update until the release version’s end of service date is reached. In LCS, the available updates tile for that environment represents the cumulative quality update package that is available to be applied to your environment. There are two numbers on the tile. The top number is the release version. The bottom number is the build number of the latest quality update package. This build number will always be higher than that of the service update that was applied to your environment, either through self- or auto-update. Because Microsoft will automatically apply only the same version to all customers, you will be responsible for applying the cumulative hotfix package if it's required.
+Microsoft automatically applies the same service update to all customers. Microsoft will continue to service the update until the end of service date for that release is reached. In Lifecycle Services, the available updates tile for the environment represents the cumulative quality update package that is available to be applied to your environment. There are two numbers on the tile. The top number is the release version and the bottom number is the build number of the latest quality update package. The build number is always higher than the number of the service update that was applied to your environment, either through self-update or auto-update. Because Microsoft will automatically apply the same version to all customers, you're responsible for applying the cumulative hotfix package if it's required.
 
-> [!Note]
-> If your environment version is behind that of the latest release version, under available updates you will also see a tile to apply the latest service update via self-update.
+> [!NOTE]
+> If your environment version is earlier than the latest release version, a tile appears under **Available updates** to inform you to apply the latest service update using self-update.
 
 ### How do I update to the latest version?
 
-Users can update to the latest version by using the tiles on the environment details page in LCS. After the update is released by Microsoft, the tile will show the available update. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. For more details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md) and [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md). 
+You can self-update to the latest version by using the tile on the **Environment details** page. After an update is released by Microsoft, the tile shows the available update. You can choose to apply the update by going through the update experience on your sandbox and production environments. For more details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md) and [Apply updates to on-premises deployments](../../dev-itpro/deployment/apply-updates-on-premises.md). 
 
 ### How do I update the production environment to the same version after Microsoft updates the sandbox environment?
 
-When Microsoft updates a sandbox environment, the package that is used for the update is saved in the project's asset library. The name of the package is prefixed by the words "Service Update." Because the package was already applied to the sandbox environment, you can mark it as a Release Candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule the application of any other update.
+When Microsoft updates a sandbox environment, the package that's used for the update is saved in the project's asset library. The name of the package is prefixed by the words "Service Update." Because the package was already applied to the sandbox environment, you can mark it as a release candidate. You can then go to the production environment and schedule to apply the package, just as you might schedule any other update.
 
 ### What is the expected downtime during an auto-update?
 
-The expected downtime for a successful update is approximately 15 minutes. However, we ask for three hours of downtime in case issues occur while the update is applied.
+The expected downtime for a successful update is approximately 15 minutes. However, Microsoft asks for three hours of downtime in case issues occur while the update is applied.
 
 ### Can I delay an update?
 
-Yes, you can pause, delay, or opt out of an update via the update settings in LCS projects, provided that all your sandbox and production environments are not more than one version behind the latest available update. After this period, an update will be scheduled and automatically applied by Microsoft. The update experience for a delayed update will incur additional downtime.
+Yes, you can pause, delay, or opt out of an update using the update settings in Lifecycle Services projects, provided that all your sandbox and production environments aren't more than one version behind the latest available update. After this period, Microsoft schedules and automatically applies an update. The update experience for a delayed update incurs additional downtime.
 
-### Can I delay an update for longer than the one skipped service update allowed because of seasonal activity or another business reason?
+### Can I delay an update for longer than the one permitted skipped service update because of seasonal activity or other business reasons?
 
-No. Once your environment version is more than one version older than latest, the latest service update will automatically be applied to the default Tier-2 sandbox. Then, seven days later, the update will be applied to all additional sandbox and production environments that are also more than one version older than latest. A customer can pause only one update before they must take the next service update, which in effect requires a minimum of two service updates annually. For example, if a customer on version 10.0.39 chooses to pause update 10.0.40, service update 10.0.41 will automatically be applied first to the Tier-2 sandbox environment and later to all additional sandbox and production environments.
+No. Once your environment version is more than one version older than the latest, Microsoft automatically applies the latest service update to the default Tier-2 sandbox. Seven days later, the update is applied to all additional sandbox and production environments that are also more than one version older than latest. You can pause only one update before you must take the next service update, which in effect, requires a minimum of two service updates annually. For example, if a customer is running version 10.0.39 and chooses to pause update 10.0.40, service update 10.0.41 will automatically be applied first to the Tier-2 sandbox environment and later to all additional sandbox and production environments.
 
 ### What does it mean for a release to be “in service”?
 
-A release is a service update version that has been made available to customers. A release is “in service” from the day it is made available to customers for production use to its end of service date. See the Targeted release schedule for release milestones by release.    At most times, there will be three in-service releases at a time:
--	The latest version is the most recently released version as Generally available (self-update), such as 10.0.41.
+A release is a service update version that was made available to customers. A release is “in service” from the day it's made available to customers for production use to its end of service date. Usually there are three in-service releases at a time.
+-	The latest version is the version most recently released as generally available (self-update), such as 10.0.41.
 -	The version used for latest completed scheduled auto-updates, such as 10.0.40.
 -	The post-update servicing version, such as 10.0.39. A release in post-update servicing will reach its End of Service date about one month after auto-updates complete for the latest version (in this example, 10.0.41). This gives customers who had opted to pause (in this example, 10.0.40) to complete their required update (to 10.0.41) before the servicing window for their version (10.0.39) is closed.
 
-The below figure visualizes the staggered release rollout and servicing model described above:
+The following figure shows the staggered release rollout and servicing model.
 
-*** OneVersion FAQs_Staggered Release Rollout and Servicing Model.png GOES HERE ***
-*** OneVersion FAQs_Staggered Release Rollout and Servicing Model_legend.png GOES HERE ***
+![Staggered release rollout servicing model.](../media/OneVersion-FAQs-Max-Pause-Transition.png)
+
+![Staggered release rollout servicing model legend.](../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png)
+
 
 > [!Important]
 > For issues reported from versions that have reached end of service, the support team is not able to take your case. You must first update to the latest service update and then apply the latest quality update, and then if the issue still persists, report it.    
