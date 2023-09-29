@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/21/2023
+ms.date: 09/28/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -35,7 +35,20 @@ The following illustration shows the LCS e-commerce provisioning screen with the
 
 ![LCS e-commerce provisioning screen with the **Supported host names** box highlighted.](../media/Domains_ProvisioningeCommerceScreen_publish.png)
 
-You can create a service request to add additional domains to an environment if provisioning has already occurred. To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
+### Add supported host names
+
+You can add additional supported host names to an environment in LCS after the initial environment provisioning. 
+
+To add a new domain to the supported host names list in LCS, follow these steps.
+
+1. Navigate to your environment in LCS.
+1. Go to **Environment Features \> Commerce**, and then select **Manage**.
+1. Select **e-Commerce**.
+1. Select **Add custom domain**.
+1. In the **Add supported custom domain** dialog box, for **New custom domain**, enter the full domain name (for example, `www.contoso.com`).
+1. Select **Add** to add the domain to the supported host names list.
+
+You can view the list of supported host names in LCS under **e-Commerce \> System Information \> Supported custom domains**.
 
 ## Commerce-generated URLs
 
