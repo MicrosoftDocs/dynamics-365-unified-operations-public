@@ -21,7 +21,7 @@ As of September 2023, Data Management job history entries and related staging ta
 1. Go to **Data management** \> **Job history cleanup**.
 2. In the **Job history** pane, set the **Number of days to retain history**, **Number of hours to execute the job**, and **Batch job recurrence** fields.
 3. To schedule the job to run regularly in the background, select the **Batch processing** field.
-4. To define a recurrence, select **Recurrence**, and then, in **Recurrence definition**, select **No End Date**.
+4. To define a recurrence, select **Recurrence**, and then, in **Recurrence definition**, select **No end date**.
 
 > [!NOTE]
 > To clean large staging tables, we recommend that you set an execution time of six hours and a batch recurrence of at least once per day.
