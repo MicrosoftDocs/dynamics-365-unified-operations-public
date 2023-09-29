@@ -104,6 +104,20 @@ The following example of NuGet arguments will prevent a subfolder from being cre
 
 `-ExcludeVersion -OutputDirectory "$(Pipeline.Workspace)\NuGets"`
 
+> [!NOTE]
+> With the deprecation of the NuGetInstaller@0 version of the task, Microsoft recommends that you instead use the NuGetCommand@2 version of the task.
+
+To use the NuGetCommand@2 version of the task, follow these steps.
+
+1. Select the **Custom command** option for the task.
+1. In the **Command and arguments** field, add the following command (with the paths replaced):
+
+    `install -Noninteractive <path to packages.config> -ConfigFile <path to nuget.config> -Verbosity Detailed -ExcludeVersion -OutputDirectory <path to output where nugets are installed, for example NugetsPath>`
+
+    For example:
+
+    `install -Noninteractive $(NugetConfigsPath)\packages.config -ConfigFile $(NugetConfigsPath)\nuget.config -Verbosity Detailed -ExcludeVersion -OutputDirectory "$(NugetsPath)"`
+
 To build X++ by using MSBuild, you must supply several arguments. In the pipeline step that builds the solution, you can specify these arguments in the **MSBuild Arguments** field.
 
 | Argument | Description |
