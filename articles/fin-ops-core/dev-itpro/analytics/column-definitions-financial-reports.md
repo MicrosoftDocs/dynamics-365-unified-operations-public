@@ -71,7 +71,7 @@ This information appears in the following areas in the column definition:
     |-----------------------------------------------------------------------|-------------------------------------------------------------------------|
     | Column Type                                                           | (Required) Specify the type of data in the column.                                      |
     | Book Code/Attribute Category                                          | Specify financial data information for columns of the **FD** and **ATTR** types.     |
-    | Fiscal Year Period Periods Covered                                    | Specify financial data information for columns of the **FD** type.              |
+    | Fiscal Year Periods Covered                                    | Specify financial data information for columns of the **FD** type.              |
     | Formula                                                               | Specify a calculation formula for columns of the **CALC** type.                  |
     | Column Width Extra Spaces Before Column Format Override Print Control | Specify special format options.                                               |
     | Column Restrictions                                                   | Restrict data.                                                                        |
@@ -162,7 +162,7 @@ You can use the **Column header** dialog box to add, modify, and delete the head
 
 ### Create an automatically generated header
 
-Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **\@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **\@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
+Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they're supported only for **CALC** and **FD** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **\@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **\@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
 
 > [!NOTE]
 > The format of some of the text, such as the long date, depends on your regional settings on the server. To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**. The following table lists the available autotext options for column headers.
@@ -188,7 +188,7 @@ Report designer can automatically generate column headers, based on autotext cod
 Conditional spanning headers can span multiple columns that are based on specific period data. For example, if you have a budget report for the fiscal year and want to display the actual budgets of past months together with the projected budgets of future months, you can use a conditional spanning header to automatically update the report header. Be aware of the following situations when you create a conditional spanning header:
 
 - Any stop condition (**Spread to** field) that is matched before a start condition (**Spread from** field) is ignored. For example, column B has the spread condition defined as BASE+1 to BASE, BASE is in column C, and BASE+1 is in column D. In this case, the stop condition in column C is ignored, and the printing of the header starts at column D.
-- If you specify column headers that overlap, they overlap when they are printed on the report. The report is generated, but the following warning appears in the **Report queue status** field: "Column headers using Base intersect with other column headers and may cause overlapping text." For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable. Whenever BASE is used in a **Spread from/Spread to** definition, be sure to view the report that is generated, to see whether the headers overlap.
+- If you specify column headers that overlap, they overlap when they're printed on the report. The report is generated, but the following warning appears in the **Report queue status** field: "Column headers using Base intersect with other column headers and may cause overlapping text." For example, the header definition on column B is B to BASE+1, and the header definition on column D is BASE+1 to F. In this case, the headers are printed on top of each other and are unreadable. Whenever BASE is used in a **Spread from/Spread to** definition, be sure to view the report that is generated, to see whether the headers overlap.
 - If you specify BASE in the spread definition in a No Print (**NP**) column, it's ignored, regardless of what is defined in the column definition. Essentially, this scenario is the same as not creating a column header definition.
 - For conditional printing columns (**P&lt;B**, **P&gt;=B**), conditional spanning headers behave like any regular column header definition. For example, if the condition is false, any subsequent column matching for the spread condition starts the printing of the header.
 
@@ -204,7 +204,7 @@ Conditional spanning headers can span multiple columns that are based on specifi
 
 #### Example of a conditional spanning header
 
-A user is creating a report for a dynamic six-month forecast. The user wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there is one more actual column and one less budget column. Although the user can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, the user decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. The user opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. The user then enters the following information. The base period in the report definition is 4.
+A user is creating a report for a dynamic six-month forecast. The user wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there's one more actual column and one less budget column. Although the user can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, the user decides to create conditional spanning headers that will automatically create headers over the appropriate columns each time that the report is run. The user opens Report Designer, clicks **Column Definition** in the navigation pane, and opens the column definition for the report. The user then enters the following information. The base period in the report definition is 4.
 
 |  Format   |  A   | B     | C      | D       | E        | F       | G       | H      | I             | J             | K             | L             | M             |
 |-----------|------|-------|--------|---------|----------|---------|---------|---------|-------------|---------------|---------------|---------------|---------------|
@@ -299,7 +299,7 @@ The **Print control** cell can contain codes that adjust the display or the prin
 
 | Print control code | Translation                                     | Description |
 |--------------------|-------------------------------------------------|-------------|
-| NP                 | Nonprinting                                     | Exclude the amounts in this column from the report that is printed and from calculations. To include a non-printing column in a calculation, refer to the column directly in the calculation formula. For example, the non-printing column C is included in the following calculation: **B+C+D**. However, the non-printing column C isn't included in the following calculation: **B:D**. |
+| NP                 | Nonprinting                                     | Exclude the amounts in this column from the report that is printed and from calculations. To include a nonprinting column in a calculation, refer to the column directly in the calculation formula. For example, the nonprinting column C is included in the following calculation: **B+C+D**. However, the nonprinting column C isn't included in the following calculation: **B:D**. |
 | XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).<p><strong>Note:</strong> For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</p> |
 | X0            | Suppress column if all zeros or blanks   | Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros. |
 | SR                 | Suppress rounding                               | Prevent the amounts in this column from being rounded. |
@@ -399,7 +399,7 @@ The following **Column definition** row definitions apply to columns that have a
 
 #### Book Code/Attribute Category cell
 
-The **Book code/Attribute category** cell identifies the book code for the data in the **FD** column. A column definition can include multiple actual, budget, and statistical columns. A column definition can also display different periods, such as current or year-to-date, and different amounts. The list of book codes reflects the actual, budget, and statistical (non-financial) options that have been established in your financial data.
+The **Book code/Attribute category** cell identifies the book code for the data in the **FD** column. A column definition can include multiple actual, budget, and statistical columns. A column definition can also display different periods, such as current or year-to-date, and different amounts. The list of book codes reflects the actual, budget, and statistical (nonfinancial) options that have been established in your financial data.
 
 #### Fiscal year cell
 
@@ -444,7 +444,7 @@ The **Periods covered** cell identifies the amount that the column should displa
 |-------------|-----------------------------------------------------------------------------|
 | PERIODIC    | Display the sum of the activity for the current period or range of periods. |
 | PERIODIC/BB | Display the beginning balance for the current period or range of periods.   |
-| YTD         | Display the sum of the year-to-date activity.                               |
+| YTD         |Display the sum of the year-to-date activity. Including the beginning balance for the year. |
 | YTD/BB      | Display the beginning balance for the year.                                 |
 
 ### Specify the periods that are covered for an FD column
@@ -454,7 +454,7 @@ The **Periods covered** cell identifies the amount that the column should displa
 
 ### Attribute filter in a column definition
 
-Attributes are financial data values that further define an account or transaction. The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**. The transaction attributes include **Transaction description** and **Transaction apply date**. Attribute support might differ between Microsoft Dynamics 365 Finanace. The **Attribute filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories. Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required. In an **FD** column, there is a limit on the accounts or transactions that the report will include from the attribute filter.
+Attributes are financial data values that further define an account or transaction. The account attributes include **Asset**, **Liability**, **Revenue**, and **Expense**. The transaction attributes include **Transaction description** and **Transaction apply date**. Attribute support might differ between Microsoft Dynamics 365 Finance. The **Attribute filter** cell restricts the data in **FD** columns to specific values or ranges for attribute categories. Although this feature can be used together with an **ATTR** column, the **ATTR** column isn't required. In an **FD** column, there's a limit on the accounts or transactions that the report will include from the attribute filter.
 
 > [!NOTE]
 > To see which attributes your ERP system supports, see the integration guide for your system.
@@ -516,7 +516,7 @@ To determine a company's accounting currency, follow these steps.
 #### Specify the currency on a multiple-currency report
 
 1. In Report designer, open the column definition to modify.
-2. Double-click the **Currency cisplay** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
+2. Double-click the **Currency display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
 3. Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
 
 
@@ -546,7 +546,7 @@ The following table shows the report results that can occur for various combinat
 A column type of **CALC** in a column definition supports complex calculations in the **Formula** cell, and can include the **+**, **-**, **\***, and **/** operators, and also **IF/THEN/ELSE** statements. A calculation column can also refer to any other column, even subsequent columns. Additionally, a calculation column can also include the fiscal year and period to support headers for the column. The calculation formula can be up to 1,024 characters long. To express the calculation result as a percentage, use a special format override.
 
 > [!NOTE]
-> The results of calculation formulas don't include the values in non-printing column ranges. For example, **A:D** prints **0** (zero), whereas **A+B+C** for non-printing values calculates the value.
+> The results of calculation formulas don't include the values in nonprinting column ranges. For example, **A:D** prints **0** (zero), whereas **A+B+C** for nonprinting values calculates the value.
 
 #### Operators in calculation columns
 
@@ -571,7 +571,7 @@ A complex calculation can contain any combination of cell references, operators,
 
 #### Specify report cells in a column calculation
 
-You can refer to a specific report cell by entering a column letter and a row code. For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column. For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first. If you refer a column to another column that refers back to the first column, you will cause a circular reference error.
+You can refer to a specific report cell by entering a column letter and a row code. For example, **B.100** refers to row code 100 in column B. You can divide a whole column by a specific report cell amount that is in the same column. For example, the calculation **B/B.100** means that the amount in column B should be divided by the value in row code 100 in column B. If the calculation refers to a column that depends on another column, the dependent column is resolved first. If you refer a column to another column that refers back to the first column, you'll cause a circular reference error.
 
 > [!NOTE]
 > The calculation might be incorrect if you change the calculation priority for the report. You can set the calculation priority on the **Settings** tab of the report definition.
