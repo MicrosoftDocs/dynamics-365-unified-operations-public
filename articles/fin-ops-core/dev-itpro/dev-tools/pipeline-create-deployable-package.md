@@ -36,8 +36,7 @@ To add the task to the build of your YML or Classic pipeline, search the task li
 | Filename and path for the deployable package | Yes | The path and file name of the deployable package. The output file is a zip file, and the file name typically includes version information to make the file easy to identify. |
 
 > [!NOTE]
-> With introduction of the (unified developer experience)[/power-platform/developer/unified-experience/finance-operations-dev-overview], a new version of this task was released that is capable of generating the package in both LCS and the Power Platform Unified package format. To generate the package in the new format at the "Path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox and provide the platform and application version used. The search pattern and tools package path is still honored as before. The LCS package creation option is chosen by default and is generated the same way as before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
-
+> With introduction of the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), a new version of this task was released that is capable of generating the package in both the LCS and Power Platform unified package formats. To generate the package in the Power Platform unified package format at the "path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox, and then enter the platform and application version used. The search pattern and tools package path are still honored as before. The LCS package creation option is selected by default and is generated the same way it was before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
 
 ## NuGet dependency
 
@@ -69,7 +68,7 @@ The following example assumes the **Location of the X++ binaries to package** pr
 
 #### In the Create Deployable Package step, what is the workaround for when I get the "There is not enough space on the disk" error?
 
-If the agent running the pipeline runs out disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)` to create space if no other part of the pipeline is using those files. The **Create Deployable Package** step is not dependent on the model source files because it depends on the build output from the build step.
+If the agent running the pipeline runs out of disk space during the **Create Deployable Package** step, the workaround is to introduce a delete files task in the pipeline just before this task to delete the contents of the `$(Build.SourcesDirectory)`. This task then creates space if no other part of the pipeline is using those files. The **Create Deployable Package** step is not dependent on the model source files because it is dependent on the build output from the build step.
 
 
 
