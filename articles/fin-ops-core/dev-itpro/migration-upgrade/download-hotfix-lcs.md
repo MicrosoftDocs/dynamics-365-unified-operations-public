@@ -4,7 +4,7 @@
 title: Download updates from Lifecycle Services (LCS)
 description: This article covers what updates you should expect to see and how you can get the updates from Lifecycle Services (LCS).
 author: AngelMarshall
-ms.date: 09/24/2020
+ms.date: 09/29/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 ms.search.region: Global
@@ -65,9 +65,9 @@ Based on your product and version, you have different update options from Lifecy
 
    | Update        | Description           | Availability  |
    | ------------- |-------------| -----|
-   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available when your environment is running the same version of the current service update (n), or when your environment is running on one version older than the current service update (n-1). For example, if the current service update is version 10.0.2, you have the option to choose a quality update if you’re running version 10.0.2, or if you’re running one version older, which is 10.0.1.<br><br>There will be no quality update available for any version that’s older than two versions of the current service update. You have to apply the latest service update to stay current. |
-   | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings.<br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | A service update is available if your environment has not been updated to the current service update version available for autoupdate.<br><br>Only the designated sandbox or production environment will be autoupdated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments.|
-   | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the related quality update that is generally available. | An upcoming service update is made generally available for self-deployment approximately two weeks prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project.|
+   | Quality update      | A quality update is a cumulative, roll-up build that contains fixes for known issues that are specific to the service update. | A quality update is available for any in-service version. See [service update availability](../../fin-ops/get-started/public-preview-releases.md) for servicing dates by version.<br><br>There will be no quality update available for any version that has reached end of service. You have to apply the latest service update to stay current. See [service update availability](../../fin-ops/get-started/public-preview-releases.md) for end of service dates by version. |
+   | Service update     | A service update is the version currently automatically applied to customer environments based on the LCS project update settings. <br><br>A service update is a cumulative, roll-up build that contains new features, functionality, and the latest related quality update. | A service update is available if your environment has not been updated to the current service update version available for auto-update.<br><br>Only the designated sandbox or production environment will be auto-updated if you have configured the update settings for the LCS project. However, you can manually apply the current service update version to other sandbox environments or your cloud-hosted environments|
+   | Upcoming service update | An upcoming service update is the latest version that is generally available for self-update.<br><br>An upcoming service update is a cumulative, roll-up build that contains new features, functionality, and the latest related quality update. | An upcoming service update is made generally available for self-deployment prior to when Microsoft starts automatically applying this version based on your update settings for the LCS project. The timing of package release for self-update relative to production auto-updates varies. To determine self-update and auto-update timing for upcoming releases, use the [Targeted release schedule (dates subject to change)](../../fin-ops/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).|
 
 - **Application version 7.3 with Platform update 4 and later** - This release will still have the granular X++ updates. Starting with Platform update 4, no overlayering is allowed on the platform modules, which means that the **Platform binary updates** tile is available to provide the platform updates as a cumulative update.
  
@@ -122,7 +122,7 @@ To download X++ updates, follow these steps in LCS.
 
 3. Select **Download package**.
 
-4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
+4. On the **Review and download hotfixes** page, you can review the hotfixes that you selected, discard the package, return to the hotfix selections, or download the final hotfix package.
     
 5. Download the package, and select **Done**.
    
