@@ -92,7 +92,7 @@ The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Se
 
 Finance + Operations (on-premises) uses standalone Service Fabric. For more information, see the [Service Fabric documentation](/azure/service-fabric/).
 
-The setup of Finance + Operations (on-premises) will deploy a set of applications inside Service Fabric. During deployment, each node in the cluster will be defined as one of the following node types through configuration:
+The setup of Finance + Operations (on-premises) deploys a set of applications inside Service Fabric. During deployment, each node in the cluster is defined as one of the following node types through configuration:
 
 - **AOSNodeType** – Nodes of this type host AOS (business logic).
 - **OrchestratorType** – Nodes of this node type work as Service Fabric Primary nodes, and host deployment and servicing logic.
@@ -218,7 +218,7 @@ Before you start the setup process, the following prerequisites must be in place
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD&nbsp;CS is installed and configured in your network.
 
-The following table shows the Windows features that will be installed on the VMs by the infrastructure setup scripts that are downloaded from Lifecycle Services. For information about additional prerequisite software that must be downloaded and installed, see the [Set up VMs](#setupvms) section later in this article.
+The following table shows the Windows features that are installed on the VMs by the infrastructure setup scripts that are downloaded from Lifecycle Services. For information about additional prerequisite software that must be downloaded and installed, see the [Set up VMs](#setupvms) section later in this article.
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
@@ -265,15 +265,15 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that's transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's DNS name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that's presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client certificate            | Clients use this certificate to view and manage the Service Fabric cluster. | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS name:** client.d365ffo.onprem.contoso.com</li></ul> |
-| Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and should not include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
+| Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and shouldn't include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
 | AOS SSL certificate                          | This certificate is used as the server certificate that's presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates. | <p>You can use the same wildcard SSL certificate that you used as the Service Fabric server certificate. Otherwise, use the following values:</p><ul><li>**CN:** ax.d365ffo.onprem.contoso.com</li><li>**DNS name:** ax.d365ffo.onprem.contoso.com</li></ul> |
-| Session Authentication certificate           | AOS uses this certificate to help secure a user's session information. | <p>This certificate is also the File Share certificate that will be used at the time of deployment from Lifecycle Services.</p><ul><li>**CN:** SessionAuthentication</li><li>**DNS name:** SessionAuthentication </li></ul> |
+| Session Authentication certificate           | AOS uses this certificate to help secure a user's session information. | <p>This certificate is also the File Share certificate that is used at the time of deployment from Lifecycle Services.</p><ul><li>**CN:** SessionAuthentication</li><li>**DNS name:** SessionAuthentication </li></ul> |
 | Data Encryption certificate                  | AOS uses this certificate to encrypt sensitive information. | <ul><li>**CN:** DataEncryption</li><li>**DNS name:** DataEncryption</li></ul> |
 | Data Signing certificate                     | AOS uses this certificate to sign sensitive information. | <p>This certificate is separate from the Data Encryption certificate.</p><ul><li>**CN:** DataSigning</li><li>**DNS name:** DataSigning</li></ul> |
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Azure AD tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Azure AD tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate. Here's an example of a Service Fabric Server certificate that's combined with an AOS SSL certificate.
 
@@ -296,7 +296,7 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="plansvcacct"></a>Step 3. Plan your users and service accounts
 
-You must create several user or service accounts for Finance + Operations (on-premises) to work. You must create a combination of gMSAs, domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this article.
+You must create several user or service accounts for Finance + Operations (on-premises) to work. You must create a combination of gMSAs, domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that is used in this article.
 
 | User account                                            | Type | Purpose | User name |
 |---------------------------------------------------------|------|---------|-----------|
@@ -306,7 +306,7 @@ You must create several user or service accounts for Finance + Operations (on-pr
 | AOS Service Account                                     | gMSA | | Contoso\\svc-AXSF$ |
 | SSRS bootstrapper Service Account                       | gMSA | The reporting service bootstrapper uses this account to configure the SSRS service. | Contoso\\svc-ReportSvc$ |
 | AOS Service Account                                     | Domain account | This account is no longer used in new deployments since Application version 10.0.20.\* | Contoso\\AXServiceUser |
-| AOS SQL DB Admin user                                   | SQL user | Finance + Operations (on-premises) uses this user to authenticate with SQL Server\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
+| AOS SQL DB Admin user                                   | SQL user | Finance + Operations (on-premises) uses this user to authenticate with SQL Server\*\*. This user is replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 | Data Management Framework Service Account               | gMSA | | Contoso\\svc-DIXF$ |
 
@@ -414,7 +414,7 @@ You must set up the following SMB 3.0 file shares:
 - A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\LBDEN01FS01\\diagnostics-store)
 
     > [!WARNING]
-    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
+    > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that are put in the share.
 
 For information about how to enable SMB 3.0, see [SMB Security Enhancements](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn551363(v=ws.11)#BKMK_disablesmb1).
 
@@ -493,11 +493,11 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     > dir cert:\LocalMachine\Root
     > ```
 
-1. In the **ProtectTo** field for each certificate, specify a semicolon-separated list of Active Directory users or groups. Only users and groups that are specified in the **ProtectTo** field will have the permissions to import the certificates that are exported by using the scripts. The scripts don't support passwords to help protect the exported certificates.
-1. Export the certificates into .pfx files. As part of the export process, the following command will check that the correct cryptographic provider is set for your certificates. 
+1. In the **ProtectTo** field for each certificate, specify a semicolon-separated list of Active Directory users or groups. Only users and groups that are specified in the **ProtectTo** field have the permission to import the certificates that are exported by using the scripts. The scripts don't support passwords to help protect the exported certificates.
+1. Export the certificates into .pfx files. As part of the export process, the following command checks that the correct cryptographic provider is set for your certificates. 
 
     ```powershell
-    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    # Exports certificates into a directory VMs\<VMName>. All the certs are written to the infrastructure\Certs folder.
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
@@ -506,16 +506,16 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 To enable data management and SSIS workloads, you must install SSIS on at least two nodes (at least one if the environment is a sandbox environment). This step is required for the DMF service to run.
 
 > [!IMPORTANT]
-> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available and data management operations will be performed by AOS.
+> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available and data management operations are performed by AOS.
 
-You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want to have dedicated SSIS nodes, specify which machines will host the node type by filling in the details for that node in the ConfigTemplate.xml file.
+You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want to have dedicated SSIS nodes, specify which machines host the node type by filling in the details for that node in the ConfigTemplate.xml file.
 
 If your use of DMF is low, you might choose not to have dedicated nodes. Instead, you can choose which nodes will have SSIS installed by updating the **hasSSIS** attribute to **true** for each VM in the **ServiceFabricCluster** section of your ConfigTemplate.xml file. In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in your ConfigTemplate.xml file.
 
 > [!NOTE]
-> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic will provision the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service will be provisioned to all nodes of the **AOSNodeType** type.
+> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provisions the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
 
-1. After you've decided which VMs will need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
+1. After you've decided which VMs need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 1. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
 1. Complete the setup, and verify that the installation was successful.
 
@@ -529,7 +529,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
-    > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Do **not** configure the SSRS instance. The reporting service automatically configures everything.
     > - Do **not** use named instances when you set up the database engine or the SSRS service.
     > - The following steps aren't required for environments that were deployed with a base topology older than Platform update 41. In those environments, SSRS should be manually configured according to the information in [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
@@ -555,7 +555,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
         - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
 
     > [!NOTE]
-    > These scripts will **not** configure SSRS. SSRS will be configured during deployment by the Service Fabric service (ReportingService) that's deployed to that node. Instead, these scripts will grant the permissions that are required for the Service Fabric service (ReportingService) to perform the necessary configuration.
+    > These scripts **won't** configure SSRS. SSRS is configured during deployment by the Service Fabric service (ReportingService) that's deployed to that node. Instead, these scripts grant the permissions that are required for the Service Fabric service (ReportingService) to perform the necessary configuration.
 
 ### <a name="setupvms"></a>Step 14. Set up VMs
 
@@ -568,7 +568,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     ```
 
     > [!NOTE]
-    > The scripts will install or require different versions, depending on the version of Finance + Operations (on-premises) that you deploy. Specify the Application version that you'll deploy, so that the scripts can correctly configure your environment for that version. If you'll be deploying Application version 10.0.17 with Platform update 41, you should specify 10.0.17 for the **D365FOVersion** parameter.
+    > The scripts install or require different versions, depending on the version of Finance + Operations (on-premises) that you deploy. Specify the Application version that you'll deploy, so that the scripts can correctly configure your environment for that version. If you'll be deploying Application version 10.0.17 with Platform update 41, you should specify 10.0.17 for the **D365FOVersion** parameter.
 
 1. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
@@ -670,7 +670,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     > - If your client machine is a server machine (for example, a machine that's running Windows Server 2019), you must turn off the Internet Explorer Enhanced Security Configuration when you access the **Service Fabric Explorer** page.
     > - If any antivirus software is installed, make sure that you set exclusion. Follow the guidance in the [Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation#environment-setup) documentation.
 
-1. (Optional) If any of the nodes in your ConfigTemplate.xml have been setup with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
+1. (Optional) If any of the nodes in your ConfigTemplate.xml have been set up with the **hasSSIS** attribute set to **true**, you must run the following command from a node that belongs to the Service Fabric cluster.
 
 ```powershell
 .\Set-SFDynamicNodeTags.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -686,7 +686,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with Lifecycle Services.
-> - If you run the script below on a server machine (for example, a machine that's running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
+> - If you run the script below on a server machine (for example, a machine that's running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page is blocked.
 
 1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 1. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
@@ -885,16 +885,16 @@ You can verify that everything has been configured correctly by running the foll
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
-    The script will prompt you to enter several credentials:
+    The script prompts you to enter several credentials:
 
-    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA is used instead of the domain user, this prompt will be skipped. However, the script will create a placeholder value, because the installers will still look for it. Microsoft will address this issue in a future update.
+    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA is used instead of the domain user, this prompt is skipped. However, the script creates a placeholder value, because the installers still look for it. Microsoft will address this issue in a future update.
     - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations (on-premises) database (**AXDB**).
     - **SqlPassword** – The encrypted SQL password.
 
     > [!NOTE]
-    > The script will automatically put the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
+    > The script automatically puts the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
     >
-    > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
+    > The script requests the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
 ### <a name="configureadfs"></a>Step 20. Configure AD FS
 
@@ -912,7 +912,7 @@ Finance + Operations (on-premises) requires additional configuration of AD&nbsp;
     ```
 
     > [!WARNING]
-    > If your AD&nbsp;FS is set up to work with Microsoft 365 (formerly Office 365) for single sign-on, this step will break that scenario. Don't run the preceding command if you'll use the AD&nbsp;FS Microsoft 365 compatibility deployment option.
+    > If your AD&nbsp;FS is set up to work with Microsoft 365 (formerly Office 365) for single sign-on, this step breaks that scenario. Don't run the preceding command if you'll use the AD&nbsp;FS Microsoft 365 compatibility deployment option.
     >
     > To ensure that the scenario continues to work, you can specify a deployment option to adapt your Dynamics 365 for Finance + Operations (on-premises) installation to that requirement. For more information, see [AD&nbsp;FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
@@ -970,7 +970,7 @@ Finally, verify that you can access the AD&nbsp;FS OpenID configuration URL on a
 .\Install-ADFSCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
-If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD&nbsp;FS configuration, and it will indicate that your AD&nbsp;FS URL is trusted.
+If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD&nbsp;FS configuration, and it indicates that your AD&nbsp;FS URL is trusted.
 
 You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations (on-premises) environment in Lifecycle Services.
 
