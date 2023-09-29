@@ -32,7 +32,7 @@ Use the following procedure to configure the feature by selecting the minimum ra
 1. Go to **Procurement and sourcing \> Setup \> Supply risk assessment parameters**.
 1. On the **General** tab, set the following fields:
 
-    - **Requested delivery date acceptance rate** – Enter the minimum percentage of orders where vendors are expected to return a confirmed delivery date (CDD) that meets your requested delivery date (RDD).
+    - **Requested receipt date acceptance rate** – Enter the minimum percentage of orders where vendors are expected to return a confirmed receipt date (CRD) that meets your requested receipt date (RRD).
     - **In-full delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive in full (IF).
     - **On-Time delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive on time (OT).
     - **On-time in-full delivery rate** – Enter the minimum percentage of deliveries that are expected to arrive on time and in full (OTIF).

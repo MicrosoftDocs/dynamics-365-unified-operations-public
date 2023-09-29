@@ -43,7 +43,7 @@ The **Overview** tab shows metrics and actionable content that let you navigate 
 
 The **Key insights** FastTab of the **Overview** tab shows the following tiles. Each tile reports a metric that is calculated for the scope of the workspace.
 
-- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed delivery date (CDD) that was later than your requested delivery date (RDD).
+- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed receipt date (CRD) that was later than your requested receipt date (RRD).
 - **Not on time** – The number of purchase order lines that weren't delivered on time (OT).
 - **Not in full** – The number of purchase order lines that weren't delivered in full (IF).
 - **Single sourced** – The number of planned order items that only one vendor is assigned to. These items might indicate increased risk.

@@ -37,7 +37,7 @@ This procedure shows you how to create a request for quotation. This would typic
 3. In the **Document title** field, type a value.
 4. In the **Solicitation type** field, enter or select a value.
     + If a scoring method is associated with the solicitation type, this will be the default scoring method for the RFQ that you're creating. It is possible to change the scoring method later.  
-    + In the **Delivery date** field, enter a date.  
+    + In the **Receipt date** field, enter a date.  
     + Select the date by which you want to receive the items.  
     + In the **Expiration date and time** field, enter a date and time.  
     + Specify the date and time by which vendors must respond to the RFQ.  

@@ -122,7 +122,7 @@ In preview, the grouping is predefined and limited to pegged orders that have be
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on pegged orders. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
 - **Impacted downstream orders** – This tile summarizes impacts on pegged orders by the number and type of orders, and it shows the purchase order changes that cause each impact. This information helps you review potential downstream impacts based on the latest master planning run.
 
-Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed delivery dates, and so on.
+Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed receipt dates, and so on.
 
 ## Review changes to confirmed purchase orders
 
@@ -145,7 +145,7 @@ The workspace shows two lists: one for the purchase orders and one for the purch
 
 The purchase order list shows the purchase order number, the vendor, and the requested receipt date from the purchase order header. To view the related records, select the purchase order or vendor link in the list.
 
-The purchase order lines list shows information about each line that has proposed changes. This information includes the item number, product name, original quantity, new quantity, original confirmed delivery date, and new confirmed delivery date. The workspace also provides a hierarchical view of any downstream impact. The **Reference** field indicates the type of downstream impact, such as a planned kanban for a production order, a sales order, or a maintenance work order.
+The purchase order lines list shows information about each line that has proposed changes. This information includes the item number, product name, original quantity, new quantity, original confirmed receipt date, and new confirmed receipt date. The workspace also provides a hierarchical view of any downstream impact. The **Reference** field indicates the type of downstream impact, such as a planned kanban for a production order, a sales order, or a maintenance work order.
 
 ### Step 2: Focus on changes that have a low risk of downstream impact
 

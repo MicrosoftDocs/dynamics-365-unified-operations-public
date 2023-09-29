@@ -73,7 +73,7 @@ The agreement's header specifies the general conditions that qualify a company f
 - On the **General** tab, in the **Calculation date type** field, select the date that is used to determine whether the purchase occurs in the validity period of the rebate agreement.
 
     - **Created** – Use the creation date of the purchase order.
-    - **Requested delivery** – Use the requested delivery date.
+    - **Requested delivery** – Use the requested receipt date.
 
 On the agreement lines, you can specify the vendor rebate agreement in more detail.
 
