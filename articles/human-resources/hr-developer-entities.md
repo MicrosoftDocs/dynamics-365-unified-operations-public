@@ -192,7 +192,7 @@ For more information about the known issues, see [Issue search in Lifecycle Serv
 [Choose a data integration technology](hr-admin-integration-choose-technology.md)<br>
 [Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
+[Human Resources virtual tables FAQ](dev-itpro/hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

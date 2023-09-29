@@ -163,7 +163,7 @@ For more information on paging, see [Specify the number of entities to return in
 ## See also
 
 - [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)
-- [Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)
+- [Human Resources virtual tables FAQ](dev-itpro/hr-admin-virtual-entity-faq.md)
 - [Throttling FAQ](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

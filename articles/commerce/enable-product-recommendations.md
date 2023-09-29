@@ -48,7 +48,7 @@ This article explains how to make product recommendations that are based on arti
 After the steps above have been completed, you will be ready to enable recommendations.
 
 > [!NOTE]
-> There is a known issue where recommendations don't appear after the following steps are completed. This issue is caused by data flow issues in the environment. If your environment doesn't show recommendation results, configure the alternative data for the recommendations service by following the steps in [Set up an alternate dataflow for recommendations](set-up-alternate-data-flow.md). You must have Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
+> There is a known issue where recommendations don't appear after the following steps are completed. This issue is caused by data flow issues in the environment. If your environment doesn't show recommendation results, configure the alternative data for the recommendations service by following the steps in [Set up an alternate dataflow for recommendations](dev-itpro/set-up-alternate-data-flow.md). You must have Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
 
 ## Azure AD Identity configuration
 
@@ -105,7 +105,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
-[Set up alternate data flow for recommendations](set-up-alternate-data-flow.md)
+[Set up alternate data flow for recommendations](dev-itpro/set-up-alternate-data-flow.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 

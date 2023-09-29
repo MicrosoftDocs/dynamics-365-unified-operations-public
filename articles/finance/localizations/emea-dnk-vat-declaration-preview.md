@@ -20,7 +20,7 @@ This article describes how to set up a value-added tax (VAT) declaration for Den
 
 ## Prerequisites
 
-To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](emea-dnk-vat-declaration-denmark.md).
+To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](denmark/emea-dnk-vat-declaration-denmark.md).
 
 ## Configure system parameters
 
@@ -33,7 +33,7 @@ To generate a VAT declaration, you must configure the VAT number.
 5. In the **Registration number** field, enter the tax number.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
-For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
+For more information about how to set up registration categories and registration types, see [Registration IDs](europe/emea-registration-ids.md).
 
 ## Import ER configurations
 
@@ -67,7 +67,7 @@ Follow these steps to define which sales tax codes generate specific boxes on th
 
     | Field | Description |
     |-------|-------------|
-    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see [VAT declaration](emea-dnk-vat-declaration-denmark.md#vat-declaration). |
+    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see [VAT declaration](denmark/emea-dnk-vat-declaration-denmark.md#vat-declaration). |
     | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code are collected in the appropriate declaration box. We recommend that you separate sales tax codes so that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | <p>If you created enough sales tax codes so that one sales tax code generates amounts in only one declaration box, select **\*Not blank\***. Otherwise, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one line that has the transaction classifier value and one line that has the transaction classifier for the credit note value.</p> |
 
@@ -90,7 +90,7 @@ If you plan to submit a VAT return directly to the Danish Tax Agency from Financ
 
 4. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
-If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), follow these steps.
+If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **DNK**, select the **VAT Declaration Excel (DK)** ER format.

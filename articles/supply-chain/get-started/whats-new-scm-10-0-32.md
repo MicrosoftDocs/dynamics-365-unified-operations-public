@@ -76,7 +76,7 @@ The table also lists features that were previously in public preview but have ch
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | Mandatory |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | On by default |
-| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Mandatory |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Master planning | [Consider inventory lead time when creating a planned transfer order](whats-new-scm-10-0-27.md) | Generally available |
 | Master planning | [CTP for Planning Optimization](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Generally available |
 | Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | On by default |
@@ -103,7 +103,7 @@ The table also lists features that were previously in public preview but have ch
 | Product information management | [Country of origin management feature](../pim/country-of-origin.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | On by default |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md)  | On by default |
-| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | On by default |
+| Production control | [Copy generic routes](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Production control | [Enable to enter batch and serial numbers while reporting as finished from the Job Card Device](../production-control/report-finished-job-device.md) | Mandatory |
 | Production control | Improved production catch weight quantity picking | Mandatory |
 | Production control | [Manufacturing execution system integration](../production-control/mes-integration.md) | Mandatory |
@@ -115,12 +115,12 @@ The table also lists features that were previously in public preview but have ch
 | Production control | [Register material consumption on the production floor execution interface (non-WMS)](../production-control/production-floor-execution-use.md) | On by default |
 | Production control | [Report on co- and by-products from the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
 | Production control | [Report on planning items in the production floor execution interface](whats-new-scm-10-0-27.md) | Mandatory |
-| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | On by default |
+| Production control | [Update related resource requirements when a route operation is changed](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Production control | [Validate expiration of raw materials against planned consumption date](whats-new-scm-10-0-23.md) | Mandatory |
 | Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | On by default |
 | Sales and marketing | Limit the number of sales order lines per batch task | Mandatory |
 | Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md)  | On by default |
-| Sales and marketing | [Update Requested receipt date with Confirmed date for intercompany orders](whats-new-scm-10-0-19.md) | Mandatory |
+| Sales and marketing | [Update Requested receipt date with Confirmed date for intercompany orders](../supply-chain-dev/whats-new-scm-10-0-19.md) | Mandatory |
 | Shared AP and AR | Cancel posted rebate provision with a posting date | Generally available |
 | Shared AP and AR | Credit note calculation enhancement in Rebate management | Generally available |
 | Shared AP and AR | Enable auto negative tier in Rebate management | Generally available |
@@ -165,8 +165,8 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
 | Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | Mandatory |
 | Warehouse management | System directed work sequencing | Mandatory |
-| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Mandatory |
-| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Mandatory |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Warehouse management | [Warehouse management app data inquiry flow](../warehousing/warehouse-app-data-inquiry.md) | Mandatory |
 | Warehouse management | [Warehouse management application - blank GTD](whats-new-scm-10-0-26.md) | Mandatory |
 | Warehouse management | [Warehouse release rule](../warehousing/release-to-warehouse-rule.md) | Mandatory |
