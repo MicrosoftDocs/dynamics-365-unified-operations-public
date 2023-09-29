@@ -105,7 +105,7 @@ The following example of NuGet arguments will prevent a subfolder from being cre
 `-ExcludeVersion -OutputDirectory "$(Pipeline.Workspace)\NuGets"`
 
 > [!NOTE]
-> With the deprecation of the NuGetInstaller@0 version of the task, Microsoft recommends that you instead use the NuGetCommand@2 version of the task.
+> Because the NuGetInstaller@0 version of the task has been deprecated, Microsoft recommends that you use the NuGetCommand@2 version of the task instead.
 
 To use the NuGetCommand@2 version of the task, follow these steps.
 
