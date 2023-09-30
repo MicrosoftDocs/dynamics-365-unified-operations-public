@@ -45,7 +45,7 @@ The finance and operations online service is covered by the Modern Lifecycle Pol
     - **Non-critical updates** – Non-critical updates are made available through service updates and quality updates.          
 
 > [!IMPORTANT]
-> Microsoft won't investigate, troubleshoot, or provide any fixes to issues on versions that reached their end of service. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for end of service dates by release.
+> Microsoft won't investigate, troubleshoot, or provide any fixes to issues on versions that reached their end of service. See the [Targeted release schedule](../get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for end of service dates by release.
 > 
 > The Microsoft support team can't take cases relating to versions in end of service. You must first update to the latest service update and then apply the latest quality update. If the issue still persists, you can then report it. For more information, see [What happens to an environment that is running a finance and operations app version that is no longer supported](../../fin-ops/get-started/one-version.md#what-happens-to-an-environment-that-is-running-a-finance-and-operations-app-version-that-is-no-longer-supported).
 >
@@ -61,7 +61,7 @@ To see details on dates and versions for releases, see the [What's new or change
 
 ## Downloadable virtual hard drive (VHD) releases
 
-For finance and operations apps, updates to the downloadable VHD are released twice per year, concurrent with the major releases in April and October. The VHD is bundled with the latest service update, and therefore its release always follows the release of the associated service update for production use. You can expect the VHD update to be released after the generally available (self-update) date of the service update. Finance and operations release dates are published in the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
+For finance and operations apps, updates to the downloadable VHD are released twice per year, concurrent with the major releases in April and October. The VHD is bundled with the latest service update, and therefore its release always follows the release of the associated service update for production use. You can expect the VHD update to be released after the generally available (self-update) date of the service update. Finance and operations release dates are published in the [Targeted release schedule](../get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).
 
 Use of the VHDs is subject to the [Software license terms](https://go.microsoft.com/fwlink/?linkid=851163).
 
