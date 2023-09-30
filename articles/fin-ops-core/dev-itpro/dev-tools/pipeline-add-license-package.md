@@ -2,12 +2,12 @@
 title: Add license files to a deployable package in Azure Pipelines
 description: The article explains how you can add license files to an existing software deployable package when you run build automation in Microsoft Azure DevOps.
 author: gianugo
-ms.date: 03/05/2020
+ms.date: 09/29/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
+ms.author: josaw
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 
@@ -33,5 +33,7 @@ To add the task to your build for the YML or Classic pipeline, search the task l
 | Search pattern for license files to add to the package | Yes | A list of license files on the build agent, or a search pattern for files on the build agent. To make the license files available on the build agent, you can add them to source control. Alternatively, they can be downloaded or generated in an earlier step of the pipeline. For more information, see [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns). |
 | Filename and path of the deployable package to update | Yes | The path and file name of an existing deployable package zip file that the license files should be added to. |
 
+> [!NOTE]
+> With introduction of the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), a new version of this task was released that is capable of generating the package in both the Microsoft Dynamics Lifecycle Services (LCS) and Power Platform unified package formats. To generate the package in the Power Platform unified package format at the "path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox, and then enter the platform and application version used. The search pattern and tools package path are still honored as before. The LCS package creation option is selected by default and is generated the same way it was before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
