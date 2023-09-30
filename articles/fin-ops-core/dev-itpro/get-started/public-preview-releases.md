@@ -54,14 +54,14 @@ Customers can take up to four service updates per year and are required to take 
 
 |	Release Version     |    Preview availability   |   Preview update availability   |   Generally available (self-update)   |   Auto-update schedule** production start date   |    End of service	  |
 |---------------------|---------------------------|---------------------------------|---------------------------------------|--------------------------------------------------|---------------------|
-|  CY25Q4: 10.0.45*   |         July 28, 2025     |     August 8, 2025              |                September 12, 2025     |                              October 3, 2025     |    October 20, 2025	|
-|  CY25Q3: 10.0.44    |       April 25, 2025      |     May 2, 2025                 |                      June 6, 2025     |                                 July 4, 2025     |       July 21, 2025	|
+|  CY25Q4: 10.0.45*   |         July 28, 2025     |     August 8, 2025              |                September 12, 2025     |                              October 3, 2025     |    May 22, 2026	|
+|  CY25Q3: 10.0.44    |       April 25, 2025      |     May 2, 2025                 |                      June 6, 2025     |                                 July 4, 2025     |       February 17, 2026	|
 |  CY25Q2: 10.0.43*   |      January 27, 2025     |     February 7, 2025            |                    March 14, 2025     |                                April 4, 2025     |   November 21, 2025	|
-|  CY25Q1: 10.0.42    |      October 25, 2024     |     November 1, 2024            |                 December 27, 2024     |                             February 1, 2025     |   February 16, 2025	|
-|  CY24Q4: 10.0.41*   |         July 29, 2024     |     August 9, 2024              |                September 13, 2024     |                              October 4, 2024     |    October 21, 2024	|
-|  CY24Q3: 10.0.40    |        April 26, 2024     |     May 3, 2024                 |                      June 7, 2024     |                                 July 5, 2024     |       July 22, 2024	|
+|  CY25Q1: 10.0.42    |      October 25, 2024     |     November 1, 2024            |                 December 27, 2024     |                             February 1, 2025     |   August 22, 2025	|
+|  CY24Q4: 10.0.41*   |         July 29, 2024     |     August 9, 2024              |                September 13, 2024     |                              October 4, 2024     |    May 23, 2025	|
+|  CY24Q3: 10.0.40    |        April 26, 2024     |     May 3, 2024                 |                      June 7, 2024     |                                 July 5, 2024     |       February 18, 2025	|
 |  CY24Q2: 10.0.39*   |      January 29, 2024     |     February 9, 2024            |                    March 15, 2024     |                                April 5, 2024     |   November 22, 2024	|
-|  CY24Q1: 10.0.38    |      October 27, 2023     |     November 3, 2023            |                 December 22, 2023     |                             February 2, 2024     |   February 18, 2024	|
+|  CY24Q1: 10.0.38    |      October 27, 2023     |     November 3, 2023            |                 December 22, 2023     |                             February 2, 2024     |   August 23, 2024	|
 |  10.0.37<br>(The "November" release)  | September 1, 2023  |        N/A           |                  October 20, 2023     |                             November 3, 2023     |      March 15, 2024	|
 |  10.0.36\*<br>(The "October" release) | July 31, 2023      |        N/A           |                September 15, 2023     |                           September 29, 2023     |    January 12, 2024	|
 |  10.0.35<br>(The "August" release)    | May 26, 2023       |        N/A           |                     July 14, 2023     |                                July 28, 2023     |    October 20, 2023	|
