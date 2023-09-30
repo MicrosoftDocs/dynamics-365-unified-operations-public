@@ -3,7 +3,7 @@
 
 title: Pause service updates through Lifecycle Services (LCS)
 description: This article explains how to pause service updates to your environments.
-author: laneswenka 
+author: josaw1 
 ms.date: 09/29/2023
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: laswenka
-ms.search.validFrom: 2019-3-31 
+ms.author: josaw
+ms.search.validFrom: 2019-03-31 
 ms.dyn365.ops.version: Platform update 24 
 
 ---
@@ -34,10 +34,10 @@ This article explains how to pause updates to your sandbox and production cloud 
 
 Microsoft updates your configured sandbox and production environments to the latest service update that Microsoft has released. Microsoft notifies you about upcoming updates to your environments via email and through notifications in LCS. At that point, if you can't proceed with the update for some reason, you can pause it through LCS.
 
-> [!Important]
-> Beginning February 19, 2024, the number of maximum consecutive pauses to update allowed will be reduced from three to one. This change along with the service update cadence from 7 to 4 releases maintains the same minimum two service updates annually as before. See [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
+> [!IMPORTANT]
+> Beginning February 19, 2024, the maximum number of consecutive pauses to an update that will be allowed is reduced from three to one. This change, along with the service update cadence changing from seven to four releases, maintains a two service update minimum per year. See [One Version service updates FAQ](../../../fin-ops-core/fin-ops/get-started/one-version.md).
 
-For more information about how to change the configured sandbox environment and set the production update cadence, see [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
+For information about how to change the configured sandbox environment and set the production update cadence, refer to [Configure service updates through Lifecycle Services (LCS)](configure-service-updates.md).
 
 ## Who can pause service updates?
 
@@ -47,9 +47,7 @@ Staying current with service updates helps guarantee that customers always run o
 
 Beginning February 19, 2024, the number of maximum consecutive pauses to update allowed will be reduced from three to one. This means customers are required to take a minimum of two service updates annually.
 
-You can't use LCS to pause updates if any sandbox and production environments in your project are two updates behind the latest update that Microsoft has released. For example, if the latest update that Microsoft has released is version 10.0.41, customers who have environments that are on version 10.0.40 **can** pause updates. However, customers who have environments on version 10.0.39 **can't** pause updates, because they are two updates behind. If any sandbox or production environment is too far behind, you will receive the following error message if you try to pause updates via LCS:
-
-> One or more sandbox and/or production environments are not compliant with Microsoft's service update policy. All your environments need to be compliant before you can pause updates.
+You can't use Lifecycle Services to pause an update if there are any sandbox and production environments in your project that are two updates behind the latest update that Microsoft released. For example, if the latest update that Microsoft released is version 10.0.41, customers who have environments that are running version 10.0.40 **can** pause updates. However, customers who have environments running version 10.0.39 **can't** pause updates, because they are two updates behind. If any sandbox or production environment is too far behind, you'll receive the following error message if you try to pause updates in Lifecycle Services: "One or more sandbox and/or production environments are not compliant with Microsoft's service update policy. All your environments need to be compliant before you can pause updates."
 
 ## What can I pause?
 
@@ -65,9 +63,9 @@ If you decide to pause updates, you have these options:
 You can pause a maximum of one consecutive update at a time. For example, if you're using version 10.0.39, you can pause the 10.0.40 update. However, you can't pause the update to version 10.0.41. We require that you take at least two updates in a year.
 
 > [!IMPORTANT]
-> There is no way to pause more than one consecutive update, regardless of your industry or business schedule. For example, if you're two updates behind, and you find a critical issue with the Microsoft service update during validations in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. The issue must be logged as an active bug/regression with Microsoft. This requirement applies only if you're more than two updates behind and can't use the pause updates functionality that is available in LCS to pause the update to your production environment.
+> There is no way to pause more than one consecutive update, regardless of your industry or business schedule. For example, if you're two updates behind, and you find a critical issue with the Microsoft service update during validation in your sandbox environment after the update, you can contact Microsoft Support to pause the update to your production environment. The issue must be logged as an active bug/regression with Microsoft. This requirement applies only if you're more than two updates behind and can't pause updates to your production environment using the functionality available in Lifecycle Services.
 >
-> If you pause updates to your sandbox environment, updates are automatically paused for your production environment too, because Microsoft always updates configured sandbox environments before production environments.
+> If you pause updates to your sandbox environment, updates are automatically paused for your production environment, too, because Microsoft always updates configured sandbox environments before production environments.
 
 ## Can I pause updates to my additional sandbox environments only?
  
@@ -93,10 +91,10 @@ To pause updates, follow these steps.
 
 You can also edit an existing pause to cancel it so that updates are resumed. To edit a pause, select **Pause upcoming update**. The max one update pause limitation still applies, i.e. you cannot edit to extend the pause duration past one update.
 
-Any time that you pause an update or edit an existing pause, a notification appears at the top of the **Update settings** tab. This notification shows what has been paused. An email is also sent to all stakeholders (the project owner and environment manager) to inform them that a service update for the selected environments has been paused. If someone cancels an existing pause and resumes updates, the notification disappears, and an email is sent to inform the stakeholders that the paused update has been resumed.
+Whenever you pause an update or edit an existing pause, a notification appears at the top of the **Update settings** tab. This notification shows what version was paused. All stakeholders (the project owner and environment manager) also receive an email to inform them that a service update for the selected environments was paused. If someone cancels an existing pause and resumes updates, the notification disappears, and an email is sent to inform the stakeholders that the paused update was resumed.
 
 > [!IMPORTANT]
-> You can pause an update through LCS until four hours before the start of the downtime window.
+> You can pause an update through Lifecycle Services until four hours before the start of the downtime window.
 >
 > You can cancel a pause and resume updates only seven days or more before the start of the downtime date. If there are less than seven days before your downtime starts, you won't be able to cancel a pause.
 
