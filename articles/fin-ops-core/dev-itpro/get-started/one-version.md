@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this article as required.
+This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We continue to add information to this article as required.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -40,7 +40,7 @@ For more information about One Version service updates, see [One Version service
 The following changes are being implemented.
 -	Service updates are only released in February (December self-update), April, July, and October. The May, August, and November releases are no longer available for self-update or auto-update.
 -	The lifecycle of each release is substantially extended to 404 – 414 days.
--	The preview period is extended. Every release will now include one scheduled update to the preview build.
+-	The preview period is extended. Every release now includes one scheduled update to the preview build.
 -	The [First release program](https://aka.ms/FirstReleaseFnO)’s auto-update and feedback phase is extended by two weeks. 
 -	The servicing window of every release is substantially extended to 186 - 214 days with improved overlap between releases.
 -	The number of consecutive pauses allowed is reduced from three to one. With the release durations extended, the same minimum two annual service updates is maintained.
@@ -55,17 +55,17 @@ The following table illustrates allowed pauses by month based on your installed 
 
 ### Does the new release schedule impact when I can schedule auto-updates?
 
-No. There is no change to how auto-updates are scheduled in Lifecycle Services and when those auto-updates will occur. The only change is what service updates are being released each year. For information about how to pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+No. There is no change to how auto-updates are scheduled in Lifecycle Services and when those auto-updates occur. The only change is what service updates are being released each year. For information about how to pause an update, refer to [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 ### When does the new service update release cadence take effect?
 
-Version 10.0.38 (the “February” release) is revised to act as a transition release. 10.0.39 (the “April” release) will be the first service update released under the new cadence.
+Version 10.0.38 (the “February” release) is revised to act as a transition release. 10.0.39 (the “April” release) is be the first service update released under the new cadence.
 
 ### Is the published 10.0.38 schedule impacted by the new service update release cadence?
 
 Yes. To act as a transition release, some release milestones for 10.0.38 were adjusted to align with the new release cadence.
--	Preview availability was pushed out by two weeks from Oct 13 to Oct 27, 2023.
--	An update to the preview was added, and will be released on Nov 3, 2023.
+-	Preview availability was pushed out by two weeks from October 13 to October 27, 2023.
+-	An update to the preview was added, and will be released on November 3, 2023.
 -	Customers participating in the [First release program](https://aka.ms/FirstReleaseFnO) will receive their auto-updates a month earlier, in December 2023.
 -	General availability for self-update will occur a month earlier, on December 22, 2023.
 -	There is no change to the general availability broadcast (auto-update) dates.
@@ -85,7 +85,7 @@ Production auto-updates for a release are scheduled for the first, second, and t
 
 As an example, for the 10.0.39 ("April") release, Microsoft will make the release generally available to all customers for self-update by the general availability public date of March 15, 2024. Customers who have enabled auto-updates through Lifecycle Services will receive production updates beginning two weeks after the general availability public date, during the weekends of April 5, April 12, or April 19, depending on the configuration in Lifecycle Services. Sandbox updates are always scheduled a week before the update.
 
-Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in Lifecycle Services. If a customer is already on the latest version, the automatic update will be canceled.
+Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in Lifecycle Services. If a customer is already on the latest version, the automatic update is canceled.
 
 
 ## Service updates
@@ -94,7 +94,7 @@ Customers can always choose to apply the update at an earlier time or at a time 
 
 | Version       | Description |
 |---------------|-------------|
-| 10 | All customers are scheduled for automatic service updates. The updates are combined application and platform updates. Beginning in February 2024, you will only be allowed to pause one update before being required to take the next update. For information about how to pause an update, see [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
+| 10 | All customers are scheduled for automatic service updates. The updates are combined application and platform updates. Beginning in February 2024, you can only pause one update before being required to take the next update. For information about how to pause an update, see [Pause service updates](../../dev-itpro/lifecycle-services/pause-service-updates.md). |
 
 ### What do the service updates contain?
 
@@ -109,7 +109,7 @@ A regulatory update is a new feature or an existing feature change required by l
 
 ### How can I determine what's changed in a service update?
 
-The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features will also be documentated on Microsoft Learn as needed. 
+The "What's new or changed" documentation is the primary source for the details of each service update. The release plans are the primary source of information for new features and changes for a future release. Features are also documented on Microsoft Learn as needed. 
 
 ### What is the upcoming schedule of updates?
 
@@ -119,11 +119,11 @@ To view the targeted release schedule for upcoming releases, see [Service update
 
 ### Are there any major differences between the updates?
 
-There are two major updates each year: the April update and the October update. New experiences can be enabled in these updates. Major updates don't require code or data upgrade. Breaking changes will be communicated 12 months in advance so that customers can plan accordingly. Breaking changes will be introduced only during major updates.
+There are two major updates each year: the April update and the October update. New experiences can be enabled in these updates. Major updates don't require code or data upgrade. Breaking changes are communicated 12 months in advance so that customers can plan accordingly. Breaking changes are introduced only during major updates.
 
 ### What does it mean that an update is backward compatible?
 
-Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without having to recompile, reconfigure, or redeploy customizations. It also means that, on a development environment at design time, X++ public and protected application programming interfaces (APIs) and metadata aren't modified or deleted. If Microsoft must break compatibility by removing obsolete APIs, the change will be communicated 12 months in advance and will follow a deprecation schedule. Functional compatibility refers to the user experience. All new experiences are available on an opt-in basis for a 12-month period.
+Backward compatibility covers binary and functional compatibility. Binary compatibility means that you can apply an update on any runtime environment without having to recompile, reconfigure, or redeploy customizations. It also means that, on a development environment at design time, X++ public and protected application programming interfaces (APIs) and metadata aren't modified or deleted. If Microsoft must break compatibility by removing obsolete APIs, the change is communicated 12 months in advance and follows a deprecation schedule. Functional compatibility refers to the user experience. All new experiences are available on an opt-in basis for a 12-month period.
 
 Backward compatibility doesn't include non-X++/metadata APIs. Microsoft reserves the right to update versions of any dependencies that the product uses, and to remove dependencies, without early warning. Microsoft doesn't commit to maintain backwards compatibility of dependent software libraries unless this commitment is expressly stated.
 
@@ -155,13 +155,13 @@ Ensuring the quality of releases is a fundamental principle that is enabled thro
 
 ### Can I select the day and time to update?
 
-You can configure the day and maintenance time windows in Lifecycle Services. The service update, which is based on your update settings, will start within 15 minutes. If you opt in to receive Lifecycle Services notifications, you'll receive an email that includes update instructions. You'll be able to select the designated tier 2/UAT sandbox for the update. You'll have seven calendar days to do testing and validation before the production environment is updated. All additional sandboxes are automatically updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
+You can configure the day and maintenance time windows in Lifecycle Services. The service update, which is based on your update settings, starts within 15 minutes. If you opt in to receive Lifecycle Services notifications, you'll receive an email that includes update instructions. You'll be able to select the designated tier 2/UAT sandbox for the update. You'll have seven calendar days to do testing and validation before the production environment is updated. All additional sandboxes are automatically updated on the same day as the production environment. For more information, see [Configure service update](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 
 You can optionally apply the update earlier to all environments through Lifecycle Services. The production-ready deployable package is available to all customers via the Action Center in Lifecycle Services by the generally available (self-update) date. See [Service update availability](public-preview-releases.md) for the targeted release schedule of upcoming releases.
 
 ### A service update was applied to the environment. In Lifecycle Services, what does the number on the tile for this environment represent?
 
-Microsoft automatically applies the same service update to all customers. Microsoft will continue to service the update until the end of service date for that release is reached. In Lifecycle Services, the available updates tile for the environment represents the cumulative quality update package that is available to be applied to your environment. There are two numbers on the tile. The top number is the release version and the bottom number is the build number of the latest quality update package. The build number is always higher than the number of the service update that was applied to your environment, either through self-update or auto-update. Because Microsoft will automatically apply the same version to all customers, you're responsible for applying the cumulative hotfix package if it's required.
+Microsoft automatically applies the same service update to all customers. Microsoft continues to service the update until the end of service date for that release is reached. In Lifecycle Services, the available updates tile for the environment represents the cumulative quality update package that is available to be applied to your environment. There are two numbers on the tile. The top number is the release version and the bottom number is the build number of the latest quality update package. The build number is always higher than the number of the service update that was applied to your environment, either through self-update or auto-update. Because Microsoft automatically applies the same version to all customers, you're responsible for applying the cumulative hotfix package if it's required.
 
 > [!NOTE]
 > If your environment version is earlier than the latest release version, a tile appears under **Available updates** to inform you to apply the latest service update using self-update.
@@ -188,9 +188,9 @@ No. Once your environment version is more than one version older than the latest
 
 ### What does it mean for a release to be “in service”?
 
-A release is a service update version that has been made available to customers. A release is “in service” from the day it's made available to customers for production use to its end of service date. See the targeted release sechedule in the [Service update availability](public-preview-releases.md) article for release milestones by release.
+A release is a service update version that has been made available to customers. A release is “in service” from the day it's made available to customers for production use to its end of service date. See the targeted release schedule in the [Service update availability](public-preview-releases.md) article for release milestones by release.
 
-A release in post-update servicing will reach its end of service date about one month after auto-updates complete for the latest version. This gives customers who opted to pause time to complete their required update before the servicing window for their version is closed. You can see this illustrated in the following figure, which visualizes the staggered release rollout and servicing model.
+A release in post-update servicing reaches its end of service date about one month after auto-updates complete for the latest version. This gives customers who opted to pause time to complete their required update before the servicing window for their version is closed. You can see this illustrated in the following figure, which visualizes the staggered release rollout and servicing model.
 
 ![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
 
@@ -202,7 +202,7 @@ A release in post-update servicing will reach its end of service date about one 
 
 ### What happens to an environment that is running a finance and operations app version that's no longer supported?
 
-For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in Lifecycle Services.
+For environments that are running a finance and operations app version that is no longer supported, a warning message appears at the top of the environment details page in Lifecycle Services.
 
 For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some Lifecycle Services functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
 
@@ -216,29 +216,29 @@ After you apply a service update for a supported version, this functionality is 
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my Lifecycle Services implementation project? 
 
-All additional sandbox environments will be updated during the same update window as your production environment, and they will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions that have not reached end of service.
+All additional sandbox environments are updated during the same update window as your production environment, and are updated to the same release version that is used for the production update. The update is also applied to additional sandbox environments that are on versions that have not reached end of service.
 
 ### What happens during an update when my additional sandboxes are on different versions from that of default sandbox and production, which are scheduled to receive the latest service update?       
 
-All environments will be updated to the current version being used for auto-updates.
+All environments are updated to the current version being used for auto-updates.
 
 ### What if the default sandbox environment is manually updated to the exact same version or newer version than the automatic update version? 
 
-Automatic updates for the production environment and all additional sandbox environments will be updated to the current version being used for auto-updates.
+Automatic updates for the production environment and all additional sandbox environments are updated to the current version being used for auto-updates.
  
-The default sandbox environment update will be canceled. 
+The default sandbox environment update are canceled. 
 
 ### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
  
-The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current version being used for auto-updates.
+The default sandbox environment, production environment, and all additional sandbox environments are updated to the current version being used for auto-updates.
 
 ### What if the production environment is manually updated _before_ the production environment email is sent? 
 
-Automatic updates for the production environment and all additional sandbox environments will be canceled. 
+Automatic updates for the production environment and all additional sandbox environments are canceled. 
 
 ### What if the production environment is manually updated _after_ the production environment email is sent? 
 
-Automatic updates for the production environment will be canceled, but all additional sandbox environments will be updated to the current version being used for auto-updates.
+Automatic updates for the production environment are canceled, but all additional sandbox environments are updated to the current version being used for auto-updates.
 
 ### What if I find an issue during the sandbox update?
 
@@ -250,14 +250,14 @@ Critical issues should always be submitted to the Support team via LCS as soon a
 
 ### How much time do I have for validation?
 
-You will have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in LCS and apply it to your environments. In this way, you will get additional time to test the update before a production roll-out.
+You have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in LCS and apply it to your environments. In this way, you will get additional time to test the update before a production roll-out.
 
 ### What happens when the service update is completed?
 
 After the service update is applied by Microsoft, you'll receive a notification that indicates whether the update was successful or whether it couldn't be applied. Reasons why an update may not be applied are:
 
 - **Pending Package Sign-off** – If a package is pending signoff, Microsoft won't apply the service update to production.
-- **Deployment Failure** – If there was a deployment failure, the environment will be rolled back to the original state.
+- **Deployment Failure** – If there was a deployment failure, the environment is rolled back to the original state.
  
 ### If there's a failure, can I reschedule the update to be automatically applied?
 
@@ -267,14 +267,14 @@ No. You won't be able to reschedule the update. However, you can apply the packa
 
 The service update that's generally available to all customers for self-update and auto-update contains hotfixes and new functionality. If a critical issue is reported and fixed after the service update was applied, you can pull the latest cumulative quality update from the tile in Lifecycle Services.
 
-### How will my ISVs stay current?
+### How do my ISVs stay current?
 
-Service updates to customer environments are backward compatible, and no action is required by the independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time so ISVs can include them and do validation. Microsoft recommends that the ISVs take advantage of the preview release for each service update so that they can get early access to the platform code and validate their solutions against the update before it's made generally available. There is a [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) Yammer group that Microsoft encourages both ISVs and customers to join. The Yammer group provides a forum to receive preview and release-related announcements and to collaborate with others in the finance and operations apps community.
+Service updates to customer environments are backward compatible, and no action is required by the independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes have a 12-month lead time so ISVs can include them and do validation. Microsoft recommends that the ISVs take advantage of the preview release for each service update so that they can get early access to the platform code and validate their solutions against the update before it's made generally available. There is a [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) Yammer group that Microsoft encourages both ISVs and customers to join. The Yammer group provides a forum to receive preview and release-related announcements and to collaborate with others in the finance and operations apps community.
 
 
 ### What about new features?
 
-All new features will be available on an opt-in basis for a 12-month period. They won't require any change management until you choose to enable them.
+All new features are available on an opt-in basis for a 12-month period. They won't require any change management until you choose to enable them.
 
 ### Are batch jobs suspended during a service update?
 
@@ -288,7 +288,7 @@ For information about how to pause an update, see [Pause service updates through
 
 Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in Lifecycle Services, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
-To be in the first group of customers to take service updates to production, you can join the [First release program](https://aka.ms/FirstReleaseFnO). While enrolled in First Release, Microsoft will keep your system current with the latest updates. First Release customers receive updates to all sandbox and production environments and are always updated before general availability.
+To be in the first group of customers to take service updates to production, you can join the [First release program](https://aka.ms/FirstReleaseFnO). While enrolled in First Release, Microsoft keeps your system current with the latest updates. First Release customers receive updates to all sandbox and production environments and are always updated before general availability.
 
 ### Is any tooling available to support testing of the latest release?
 
@@ -302,12 +302,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I log an extensibility request?
 
-Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) article. Note the following timelines for logging and using the available extensions.
-
-| Date         | Extensibility requests |
-|--------------|------------------------|
-| January 2019 | All extensibility requests must be logged by January 1, 2019. We ask that ISVs and customers analyze the code and make these requests by that date. We will provide exceptions to stay on 7.3 after April 2019 only if the request has been filed by January 1, 2019. |
-| December 2019 | For the requests that were logged by January 1, 2019, extensions will be available on or before December 31, 2019. Customers who use these extensions are required to move to the current version by April 2020. |
+Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) article. 
 
 ### What does "end of service" mean?
 
@@ -327,11 +322,11 @@ Customer reported issues are searchable in Lifecycle Services Issue search. You 
 
 ### What options are available to help minimize the impact on my Commerce cloud components?
 
-Commerce cloud components will require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. For more information about RCSU, see the published release information on our [documentation](/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](/business-applications-release-notes/?panel=products1#pivot=products) sites.
+Commerce cloud components require the same down time as your Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) will be available to reduce and further schedule updates to your deployment. For more information about RCSU, see the published release information on our [documentation](/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](/business-applications-release-notes/?panel=products1#pivot=products) sites.
 
 ### Will there be options to take individual hotfixes for my commerce solution components?
 
-All fixes and updates for commerce components will be cumulative.
+All fixes and updates for commerce components are cumulative.
 
 ### What are the maintenance downtime requirements that might affect channel operations?
 
