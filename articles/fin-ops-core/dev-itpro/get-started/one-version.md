@@ -216,7 +216,7 @@ After you apply a service update for a supported version, this functionality is 
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my Lifecycle Services implementation project? 
 
-All additional sandbox environments are updated during the same update window as your production environment, and are updated to the same release version that is used for the production update. The update is also applied to additional sandbox environments that are on versions that have not reached end of service.
+All additional sandbox environments are updated during the same update window as your production environment, and are updated to the same release version that is used for the production update. The update is also applied to additional sandbox environments that are on versions that haven't reached end of service.
 
 ### What happens during an update when my additional sandboxes are on different versions from that of default sandbox and production, which are scheduled to receive the latest service update?       
 
@@ -250,7 +250,7 @@ Critical issues should always be submitted to the Support team via LCS as soon a
 
 ### How much time do I have for validation?
 
-You have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in LCS and apply it to your environments. In this way, you will get additional time to test the update before a production roll-out.
+You have seven calendar days for validation after the update is applied to your sandbox environment. If you need more time, you can access the deployable package via the Action Center in LCS and apply it to your environments. In this way, you'll get additional time to test the update before a production roll-out.
 
 ### What happens when the service update is completed?
 
