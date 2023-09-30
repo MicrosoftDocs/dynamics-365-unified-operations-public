@@ -188,9 +188,9 @@ No. Once your environment version is more than one version older than the latest
 
 ### What does it mean for a release to be “in service”?
 
-A release is a service update version that was made available to customers. A release is “in service” from the day it's made available to customers for production use to the end of service date. Usually there are three in-service releases at a time.
+A release is a service update version that has been made available to customers. A release is “in service” from the day it's made available to customers for production use to its end of service date. See the targeted release sechedule in the [Service update availability](public-preview-releases.md) article for release milestones by release.
 
-The following figure shows the staggered release rollout and servicing model.
+A release in post-update servicing will reach its end of service date about one month after auto-updates complete for the latest version. This gives customers who opted to pause time to complete their required update before the servicing window for their version is closed. You can see this illustrated in the following figure, which visualizes the staggered release rollout and servicing model.
 
 ![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
 
