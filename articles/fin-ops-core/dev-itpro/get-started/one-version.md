@@ -188,26 +188,23 @@ No. Once your environment version is more than one version older than the latest
 
 ### What does it mean for a release to be “in service”?
 
-A release is a service update version that was made available to customers. A release is “in service” from the day it's made available to customers for production use to its end of service date. Usually there are three in-service releases at a time.
--	The latest version is the version most recently released as generally available (self-update), such as 10.0.41.
--	The version used for latest completed scheduled auto-updates, such as 10.0.40.
--	The post-update servicing version, such as 10.0.39. A release in post-update servicing will reach its End of Service date about one month after auto-updates complete for the latest version (in this example, 10.0.41). This gives customers who had opted to pause (in this example, 10.0.40) to complete their required update (to 10.0.41) before the servicing window for their version (10.0.39) is closed.
+A release is a service update version that was made available to customers. A release is “in service” from the day it's made available to customers for production use to the end of service date. Usually there are three in-service releases at a time.
 
 The following figure shows the staggered release rollout and servicing model.
 
-![Staggered release rollout servicing model.](../media/OneVersion-FAQs-Max-Pause-Transition.png)
+![Staggered release rollout servicing model.](../media/OneVersion-FAQsa-Staggered-Release-Rollout-Servicing-Model.png)
 
 ![Staggered release rollout servicing model legend.](../media/OneVersion-FAQs-Staggered-Release-Rollout-Servicing-Model-legend.png)
 
 
-> [!Important]
-> For issues reported from versions that have reached end of service, the support team is not able to take your case. You must first update to the latest service update and then apply the latest quality update, and then if the issue still persists, report it.    
+> [!IMPORTANT]
+> The support team at Microsoft can't take cases for issues reported from versions that are at end of service. You must first update to the latest service update and then apply the latest quality update. If the issue still persists, then you can report it.    
 
-### What happens to an environment that is running a finance and operations apps version that is no longer supported?
+### What happens to an environment that is running a finance and operations app version that's no longer supported?
 
-For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
+For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in Lifecycle Services.
 
-For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
+For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some Lifecycle Services functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
 
 - Enable maintenance mode.
 - Use all capabilities that are provided for moving databases on an environment or across environments.
@@ -215,9 +212,9 @@ For all Microsoft-managed environments, and sandbox and production environments 
 - Download Regression suite automation tool (RSAT) certificates.
 - Regenerate RSAT certificates.
 
-After you apply a service update for a supported version, this functionality will be available in the affected environment.
+After you apply a service update for a supported version, this functionality is available in the affected environment.
 
-### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
+### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my Lifecycle Services implementation project? 
 
 All additional sandbox environments will be updated during the same update window as your production environment, and they will be updated to the same release version that is used for the production update. The update will also apply to additional sandboxes environments that are on versions that have not reached end of service.
 
@@ -257,22 +254,22 @@ You will have seven calendar days for validation after the update is applied to 
 
 ### What happens when the service update is completed?
 
-After the service update is applied by Microsoft, you will receive a notification that indicates whether the update was successful or whether it could not be applied. Reasons why an update might be unable to be applied:
+After the service update is applied by Microsoft, you'll receive a notification that indicates whether the update was successful or whether it couldn't be applied. Reasons why an update may not be applied are:
 
 - **Pending Package Sign-off** – If a package is pending signoff, Microsoft won't apply the service update to production.
 - **Deployment Failure** – If there was a deployment failure, the environment will be rolled back to the original state.
  
-### If there is a failure, can I reschedule the update to be automatically applied?
+### If there's a failure, can I reschedule the update to be automatically applied?
 
-No. You won't be able to reschedule the update. However, you can apply the package when it's convenient for you, just as you might schedule the application of any other update.
+No. You won't be able to reschedule the update. However, you can apply the package when it's convenient, just as you might schedule any other update.
 
 ### Will critical hotfixes be automatically applied to my sandbox/production environment during automatic update?
 
-The service update that will be made generally available to all customers for self- and auto-update will contain hotfixes and new functionality. If a critical issue is reported and fixed after the service update has been applied, customers can pull the latest cumulative quality update from the tile in LCS.
+The service update that's generally available to all customers for self-update and auto-update contains hotfixes and new functionality. If a critical issue is reported and fixed after the service update was applied, you can pull the latest cumulative quality update from the tile in Lifecycle Services.
 
 ### How will my ISVs stay current?
 
-Service updates to customer environments are backward compatible, and no action is required by the independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time to enable ISVs to include them and do validation. We recommend that the ISVs take advantage of each service update’s preview release so that they can get early access to the platform bits and validate their solutions against the update before it's made generally available. There is a [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) Yammer group that we encourage both ISVs and customers to join. It's a great forum to receive F&O preview- and release-related announcements and to collaborate with others in the F&O community.
+Service updates to customer environments are backward compatible, and no action is required by the independent software vendors (ISVs). ISVs develop on the minimum required platform release that their code depends on. Breaking changes will have a 12-month lead time so ISVs can include them and do validation. Microsoft recommends that the ISVs take advantage of the preview release for each service update so that they can get early access to the platform code and validate their solutions against the update before it's made generally available. There is a [Preview Early Access](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=12792233) Yammer group that Microsoft encourages both ISVs and customers to join. The Yammer group provides a forum to receive preview and release-related announcements and to collaborate with others in the finance and operations apps community.
 
 
 ### What about new features?
@@ -287,11 +284,11 @@ For information about how to pause an update, see [Pause service updates through
 
 ## Tools
 
-### How can I get early access to non-released updates?
+### How can I get early access to updates that weren't released?
 
-Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
+Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in Lifecycle Services, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
-To be in the first group of customers to take service updates to production, you can join the [First release program](https://aka.ms/FirstReleaseFnO). While enrolled in First Release, Microsoft will keep your system current with the latest updates. First Release customers receive updates to all sandbox and production environments  and are always updated before general availability.
+To be in the first group of customers to take service updates to production, you can join the [First release program](https://aka.ms/FirstReleaseFnO). While enrolled in First Release, Microsoft will keep your system current with the latest updates. First Release customers receive updates to all sandbox and production environments and are always updated before general availability.
 
 ### Is any tooling available to support testing of the latest release?
 
@@ -314,17 +311,17 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 
 ### What does "end of service" mean?
 
-Microsoft won't provide any fixes to issues on versions that have reached their end of service. If you encounter an issue on a version that has reached its end of service, you must update to the latest update and then report the issue if it persists. See [Service update availability](public-preview-releases.md) for end of service dates by version.
+Microsoft won't provide any fixes for issues on versions that reached their end of service. If you encounter an issue on a version that reached its end of service, you must apply the latest update and then report the issue if it persists. See [Service update availability](public-preview-releases.md) for end of service dates by version.
 
-All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is for supported versions.
+All environments continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, also continue as- is for supported versions.
 
 ### Are individual hotfixes supported?
 
-Individual hotfixes won't be supported after 8.1. To apply a fix, customers must update to the latest cumulative update available. Critical fixes are also applied via cumulative update and are available through the LCS servicing experience.
+Individual hotfixes aren't supported after version 8.1. To apply a fix, you must update to the latest cumulative update available. Critical fixes are also applied via cumulative update and are available through the Lifecycle Services servicing experience.
 
 ### Will you notify me about critical hotfixes released for the monthly update that I'm on? 
 
-Customer reported issues are searchable via LCS Issue search. You can sign up to be notified when an open issue is resolved. A summary list of customer reported issues is published to LCS Issue search for every preview and general availability release. You can find the list by title search using pattern, “Version 10.0.xx of Finance and Operations apps”.
+Customer reported issues are searchable in Lifecycle Services Issue search. You can sign up to be notified when an open issue is resolved. A summary list of customer reported issues is published to Lifecycle Services Issue search for every preview and general availability release. You can find the list by title search using the pattern “Version 10.0.xx of Finance and Operations apps”.
 
 ## Commerce service updates
 
