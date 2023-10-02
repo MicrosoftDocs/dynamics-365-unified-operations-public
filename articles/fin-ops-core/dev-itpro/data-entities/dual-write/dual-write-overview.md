@@ -83,7 +83,7 @@ To create parity with finance and operations applications, dual-write makes some
 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
 
-+ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places.md).
++ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](../../../fin-ops/data-entities/currrency-decimal-places.md).
 
 + [Date effectivity](../../dev-tools/date-effectivity.md) will be added to Dataverse. It will support past, present, and future data on the same table.
 

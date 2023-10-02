@@ -100,7 +100,7 @@ Device code flow authentication simplifies the authentication process, because u
 
 - You should create a unique Microsoft Entra ID user account for each device or user. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities.*
 - If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- The device code flow isn't fully supported by mobile mass deployment (MSM) systems such as Intune.
+- The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
 
 > [!IMPORTANT]
 > All Microsoft Entra ID accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.

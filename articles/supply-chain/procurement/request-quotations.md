@@ -84,7 +84,7 @@ If you added scoring criteria to your RFQ case, the RFQ will have a scoring
 panel where you can enter the scores. The total scores will appear on the RFQ
 and when you compare the replies on the **Compare replies** page. On the
 **Compare replies** page, you can also compare other reply data, such as the
-line price, delivery date, and total price.
+line price, receipt date, and total price.
 
 After you choose a bid or a number of lines in a bid, you can accept all or some
 lines and reject the rest. Acceptance journals, rejection journals, and
@@ -269,7 +269,7 @@ entered in the RFQ for that vendor.
 ## Amending an RFQ case
 
 Occasionally, you must change an RFQ case after you send it. You might have to
-change an RFQ case if, for example, the delivery dates have changed, or you want
+change an RFQ case if, for example, the receipt dates have changed, or you want
 additional products or different quantities of products. You can configure the
 amendment process so that it's either more restrictive or less restrictive.
 

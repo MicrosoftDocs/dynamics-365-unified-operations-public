@@ -50,7 +50,7 @@ To configure card types for your environment in Commerce headquarters, follow th
 1. Enter **ID**, **Electronic payment name**, **Type**, and **Issuer** values for the record.
 
 Next, the mapping parameters for the record must be set to associate the card type to the payment method used in a transaction for Dynamics financial reporting. Two mapping methods are available:
- - **Processor mapping** - This mapping method is only available when the **Enhanced wallet support and payment improvements** feature is already enabled. This mapping method is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. For more information about setting up processor mapping, see [Processor payment method mapping](wallets.md#processor-payment-method-mapping).
+ - **Processor mapping** - This mapping method is only available when the **Enhanced wallet support and payment improvements** feature is already enabled. This mapping method is used to map a card type when received from a designated payment connector and the returned issuer string from the payment gateway. For more information about setting up processor mapping, see [Processor payment method mapping](dev-itpro/wallets.md#processor-payment-method-mapping).
  - **Card numbers** - This is a card bin range listing used to match the card number used during payment to the card type for processing and reporting in the system. 
 
 The system uses the card numbers mapping method to check a **Card number from** value at the beginning of the number provided, to the **Card number to** value within the set length of the **Digits to identify** value.  

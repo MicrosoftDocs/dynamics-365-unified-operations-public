@@ -202,11 +202,11 @@ The logic that drives physically connected and network-addressable peripherals i
 ## Setup and configuration
 ### Hardware station installation
 
-For guidance about how to install an IIS hardware station, see [Configure and install hardware station](retail-hardware-station-configuration-installation.md).
+For guidance about how to install an IIS hardware station, see [Configure and install hardware station](dev-itpro/retail-hardware-station-configuration-installation.md).
 
 ### Modern POS for Windows setup and configuration
 
-For information, see [Configure, install and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+For information, see [Configure, install and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 
 ### Modern POS for Android and iOS setup and configuration
 
@@ -527,8 +527,8 @@ This configuration can be used for all Modern POS clients that have a hardware s
 4.  Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
 6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
-7.  Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
-8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+7.  Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md).
+8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 9.  Sign in to Modern POS, and select **Perform non-drawer operations**.
 10. Start the **Manage hardware stations** operation.
 11. Select **Manage**.
@@ -555,8 +555,8 @@ This configuration can be used for all Modern POS clients that share hardware st
 5.  Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 6.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
 7.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
-8.  Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
-9.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+8.  Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md).
+9.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 10. Sign in to Modern POS, and select **Perform non-drawer operations**.
 11. Start the **Manage hardware stations** operation.
 
@@ -797,7 +797,7 @@ You can also use other payment providers with Dynamics 365 Commerce by creating 
 
 **Solution:** Either of the following factors can cause this issue:
 
--   The hardware station hasn't been set up correctly in Headquarters. For more information, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md#troubleshooting). 
+-   The hardware station hasn't been set up correctly in Headquarters. For more information, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md#troubleshooting). 
 -   The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
 
 ### Modern POS doesn't reflect new cash drawer settings

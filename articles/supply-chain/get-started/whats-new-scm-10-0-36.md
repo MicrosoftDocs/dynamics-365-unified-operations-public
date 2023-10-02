@@ -57,6 +57,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Transportation management | (Preview) Match vendor invoice journal with voyage cost in different currency. | Lets you specify any currency code on a vendor invoice journal and match it with the voyage cost in another currency. |
 | Warehouse management | Consistent handling of license plate information for warehouse actions | Causes the system to be more consistent in the way it uses the columns of the `WHSWorkTrans` table, which stores information about user actions related to warehouse work. This change makes the system easier for developers to understand and may be required by future features related to inventory transactions. If your system includes customizations that affect or are affected by the `WHSWorkTrans` table, then you should enable this feature on a development system, test and modify your customizations as needed, and then deploy the updates to your production system. Then you can enable this feature on your production system to prepare it to take advantage of future updates. As a result of this feature, the system will store source and destination license plate information more consistently in the various columns of the table (no columns are removed or added). The first time you turn on this feature, it will process the `WHSWorkTrans` table by moving target license plate information for incomplete work to the `TargetLicensePlateId` column. It will also deduce the source license plate information for the pick work lines and update the `InventDimId` column accordingly. Records for already completed work won't be affected. Thereafter, the system will continue to work using the new convention. |
 
+> [!NOTE]
+> Supply Chain Management version 10.0.36 introduces a label change for purchase orders and related functionality. All labels that use the term *Delivery date* have been changed to use the term *Receipt date*. The functionality remains unchanged. The terminology has been changed to allow for an upcoming feature that distinguishes between the date a delivery is sent (*Ship date*) and the date it is received (*Receipt date*). This label change applies automatically starting in version 10.0.36 and is not managed through feature management.
+
 ## Feature state changes in this release
 
 The following table lists features that became mandatory or on by default in version 10.0.36. All these features will automatically be turned on for your system as soon as you update to version 10.0.36. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Features that are now listed as enabled by default are targeted to become mandatory with 2024 release wave 1.
@@ -88,10 +91,10 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | Charges setup with site and warehouse | Mandatory |
 | Procurement and sourcing | Check unit precision for not-stocked items | Mandatory |
 | Procurement and sourcing | [Consolidate multiple purchase requisitions into a single purchase order by accounting date](whats-new-scm-10-0-25.md) | Mandatory |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Mandatory |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | Mandatory |
 | Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Mandatory |
-| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | Mandatory |
+| Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
 | Procurement and sourcing | RFQ reference link added to PO | Mandatory |
 | Procurement and sourcing | [Sealed bidding for RFQs](../procurement/sealed-bidding.md) | Mandatory |
 | Procurement and sourcing | [Synchronize tracking dimensions on intercompany sales and purchase order lines](whats-new-scm-10-0-26.md) | Mandatory |
@@ -107,10 +110,10 @@ The table also lists features that were previously in public preview but have ch
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | Mandatory |
 | Product information management | [Product dimension version](../pim/product-dimensions.md#version-dim) | Mandatory |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Mandatory |
-| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Copy generic routes](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [My jobs tab on the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
 | Production control | [Production teams in the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
-| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | Mandatory |
+| Production control | [Update related resource requirements when a route operation is changed](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Production control | [Additional configuration on the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Enable use of a numpad in the sign-in page](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Improved user experience for the Report progress dialog in the Job Card Device](../production-control/report-finished-job-device.md) | On by default |

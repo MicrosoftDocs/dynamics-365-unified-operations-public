@@ -8,6 +8,7 @@ ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
+
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-07-15

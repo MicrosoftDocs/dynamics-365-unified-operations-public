@@ -46,7 +46,7 @@ In site builder, a URL is a combination of a domain and a path that defines the 
 
 #### Domain
 
-Domains are established when you set up your e-commerce site in Microsoft Dynamics Lifecycle Services (LCS). After your e-commerce environment is provisioned, you can add more domains by opening a service request. For more information about how to set up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](domains-commerce.md).
+Domains are established when you set up your e-commerce site in Microsoft Dynamics Lifecycle Services (LCS). After your e-commerce environment is provisioned, you can add more domains by opening a service request. For more information about how to set up domains for your e-commerce site, see [Domains in Dynamics 365 Commerce](dev-itpro/domains-commerce.md).
 
 #### Path
 

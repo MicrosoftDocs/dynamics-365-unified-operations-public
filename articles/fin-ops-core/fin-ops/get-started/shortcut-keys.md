@@ -222,7 +222,7 @@ Users can discover currently available shortcuts directly from the user interfac
 > [!NOTE]
 > The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
-## [Personalization](personalize-user-experience.md) shortcuts 
+## [Personalization](../../dev-itpro/get-started/personalize-user-experience.md) shortcuts 
 
 | To do this                                                                                                             | Press                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|

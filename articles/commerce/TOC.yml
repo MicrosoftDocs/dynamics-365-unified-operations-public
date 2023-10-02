@@ -31,13 +31,13 @@
         - name: Removed or deprecated features in Dynamics 365 Commerce
           href: get-started/removed-deprecated-features-commerce.md
       - name: AX 2012 features that were postponed
-        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/commerce
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/commerce
     - name: Get started
       items:
       - name: Service description
-        href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/get-started/service-description.md?context=/dynamics365/context/commerce
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
       - name: Deploy a demo environment
@@ -47,7 +47,7 @@
         - name: One Version service updates overview
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/commerce
         - name: One Version service updates FAQ
-          href: ../fin-ops-core/fin-ops/get-started/one-version.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/one-version.md?context=/dynamics365/context/commerce
         - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
           href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/commerce
         - name: Software lifecycle policy - Cloud
@@ -55,7 +55,7 @@
         - name: Software lifecycle policy - On-premises
           href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/commerce
         - name: Service update availability
-          href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/public-preview-releases.md?context=/dynamics365/context/commerce
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/commerce
         - name: Apply updates to on-premises deployments
@@ -63,7 +63,7 @@
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/commerce
         - name: Pre-servicing and post-servicing
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/lcs/pre-post-servicing.md?context=/dynamics365/context/commerce
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
@@ -71,11 +71,11 @@
         - name: Proactive quality updates
           items:
           - name: Proactive quality updates overview
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates.md?context=/dynamics365/context/commerce
           - name: Release schedule for proactive quality updates
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-schedule.md?context=/dynamics365/context/commerce
           - name: Proactive quality updates FAQ
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-faq.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -97,7 +97,7 @@
         - name: Deployment options
           href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?context=/dynamics365/context/commerce
         - name:  Comparison of cloud and on-premises features
-          href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
+          href: ../fin-ops-core/dev-itpro/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?context=/dynamics365/context/commerce
         - name: System requirements for cloud deployments
@@ -105,15 +105,15 @@
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?context=/dynamics365/context/commerce
         - name: System requirements for on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/commerce
         - name: Installation steps for Retail channel components in an on-premises environment
-          href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/deployment/deploy-dev-itpro/retail-onprem.md?context=/dynamics365/context/commerce
         - name: Buy Finance + Operations (on-premises)
-          href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/commerce
         - name: Commerce Data Exchange implementation guidance
           href: dev-itpro/implementation-considerations-cdx.md
       - name: Get support
-        href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/fin-ops/lcs/lcs-support.md?context=/dynamics365/context/commerce
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Commerce
@@ -127,15 +127,15 @@
         - name: Help system
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?context=/dynamics365/context/commerce
         - name: Connect the Help system
-          href: ../fin-ops-core/fin-ops/get-started/help-connect.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/help-connect.md?context=/dynamics365/context/commerce
         - name: Custom help overview
           href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/commerce
         - name: View and export field descriptions
-          href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/view-export-field-descriptions.md?context=/dynamics365/context/commerce
         - name: Task recorder
           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?context=/dynamics365/context/commerce
         - name: Create documentation or training with Task recorder
-          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
       - name: Learning catalog
@@ -183,17 +183,17 @@
         - name: Navigation search
           href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?context=/dynamics365/context/commerce
         - name: Personalize the user experience
-          href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/personalize-user-experience.md?context=/dynamics365/context/commerce
         - name: Saved views
-          href: ../fin-ops-core/fin-ops/get-started/saved-views.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/saved-views.md?context=/dynamics365/context/commerce
         - name: Grid capabilities
-          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/grid-capabilities.md?context=/dynamics365/context/commerce
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/commerce
         - name: Embed canvas apps from Power Apps
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/embed-power-apps.md?context=/dynamics365/context/commerce
         - name: Embed third-party apps
-          href: ../fin-ops-core/fin-ops/get-started/embed-website.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/embed-website.md?context=/dynamics365/context/commerce
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?context=/dynamics365/context/commerce
         - name: Change the date for a session
@@ -205,33 +205,33 @@
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md?context=/dynamics365/context/commerce
         - name: Architecture for finance and operations apps
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/architecture-overview.md?context=/dynamics365/context/commerce
         - name: Microsoft FastTrack
           href: /dynamics365/fasttrack/
         - name: Onboard an implementation project
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/onboard.md?context=/dynamics365/context/commerce
         - name: Environment planning
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/environment-planning.md?context=/dynamics365/context/commerce
         - name: Prepare for go-live
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/prepare-go-live.md?context=/dynamics365/context/commerce
         - name: Go-live FAQ
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/commerce
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
         - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/commerce
         - name: Geo-to-geo migrations
           href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce
         - name: Move licenses between agreement types
-          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce
         - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/commerce
         - name: Multiple LCS projects and production environments on one Azure AD tenant
-          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce
         - name: Implement finance and operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
         - name: Set up new environments, Azure DevOps, and branches for projects
@@ -245,9 +245,9 @@
       - name: Architecture
         items:
         - name: Dynamics 365 Commerce architecture overview
-          href: commerce-architecture.md
+          href: dev-itpro/commerce-architecture.md
         - name: Dynamics 365 Commerce authentication flows
-          href: arch-auth-flow.md
+          href: dev-itpro/arch-auth-flow.md
         - name: Headless commerce architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
@@ -261,7 +261,7 @@
           - name: Commerce Data Exchange troubleshooting
             href: dev-itpro/CDX-Troubleshooting.md
           - name: Sort Commerce Data Exchange packages by primary index
-            href: CDX-package-sort.md
+            href: dev-itpro/CDX-package-sort.md
         - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
         - name: Modernizing the Commerce in-store technology stack (white paper)
@@ -273,7 +273,7 @@
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
         - name: Commerce capabilities available in on-premises deployments
-          href: retail-onprem.md
+          href: dev-itpro/retail-onprem.md
       - name: Deployment and hotfixes
         items:
         - name: Synchronize self-service installers in Dynamics 365 Commerce
@@ -283,15 +283,15 @@
         - name: Configure and install Commerce Scale Unit (self-hosted)
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
         - name: Modern POS configuration and installation
-          href: retail-modern-pos-device-activation.md
+          href: dev-itpro/retail-modern-pos-device-activation.md
         - name: Manage accounts and devices from headquarters
-          href: set-up-activation-accounts-validate-devices-hq.md
+          href: dev-itpro/set-up-activation-accounts-validate-devices-hq.md
         - name: POS device activation
           href: dev-itpro/retail-device-activation.md
         - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
-          href: retail-hardware-station-configuration-installation.md
+          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Mass deployment of sealed Commerce self-service components
           href: dev-itpro/Enhanced-Mass-Deployment.md
         - name: Mass deployment of legacy self-service components
@@ -307,7 +307,7 @@
       - name: Application lifecycle management
         items:
         - name: Dynamics 365 Commerce component versioning requirements
-          href: arch-component-versioning.md
+          href: dev-itpro/arch-component-versioning.md
       - name: Go-live and update recommendations
         items:
         - name: Go-live and update recommendations overview
@@ -363,7 +363,7 @@
             - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?context=/dynamics365/context/commerce
             - name: Calculation of tax exemption
-              href: tax-exempt-price-inclusive.md
+              href: dev-itpro/tax-exempt-price-inclusive.md
             - name: Configure sales tax for online orders
               href: sales-tax-config.md
             - name: Hide tax breakup information in order summaries
@@ -405,7 +405,7 @@
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
           - name: Store Commerce app capabilities
-            href: store-commerce-capabilities.md
+            href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
           - name: Store Commerce app for mobile platforms
@@ -413,13 +413,13 @@
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
-            href: implementation-considerations-devices.md
+            href: dev-itpro/implementation-considerations-devices.md
           - name: Commerce offline implementation considerations
             href: dev-itpro/implementation-considerations-offline.md
           - name: Commerce offline implementation troubleshooting
             href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce app and Store Commerce for web
-            href: MPOS-or-CPOS.md
+            href: dev-itpro/MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
@@ -435,7 +435,7 @@
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
           - name: Offline POS functionality
-            href: pos-offline-functionality.md
+            href: dev-itpro/pos-offline-functionality.md
           - name: Shift and cash drawer management
             href: shift-drawer-management.md
           - name: Cash out gift card balance
@@ -447,7 +447,7 @@
           - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
           - name: Configure Store Commerce for web to use a custom Azure AD app
-            href: cpos-custom-aad.md
+            href: dev-itpro/cpos-custom-aad.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
@@ -461,7 +461,7 @@
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
             - name: Peripheral compatibility
-              href: Compatible-peripherals.md
+              href: dev-itpro/Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in Store Commerce
@@ -477,7 +477,7 @@
             - name: Set up and manage images for Store Commerce
               href: set-up-manage-images-retail-mpos.md
             - name: Client images in POS
-              href: pos-image.md
+              href: dev-itpro/pos-image.md
             - name: Open URL in POS
               href: open-url-in-pos.md
           - name: Payments
@@ -499,11 +499,11 @@
           - name: Device activation
             items:
             - name: Configure, install, and activate MPOS
-              href: retail-modern-pos-device-activation.md
+              href: dev-itpro/retail-modern-pos-device-activation.md
             - name: Set up extended sign-in functionality for Store Commerce
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
-              href: set-up-activation-accounts-validate-devices-hq.md
+              href: dev-itpro/set-up-activation-accounts-validate-devices-hq.md
           - name: Create financial dimensions for POS registers and configure dimension values on registers
             href: tasks/create-financial-dimensions-pos.md
           - name: Create POS permissions group
@@ -511,14 +511,14 @@
           - name: Create POS visual profiles
             href: tasks/create-pos-visual-profile-2016-02.md
         - name: Configure and install Retail hardware station
-          href: retail-hardware-station-configuration-installation.md
+          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
           - name: Send email receipts from Store Commerce
             href: email-receipts.md
-          - name: Reset receipt numbers
+          - name: Configure and manage receipt numbers
             href: reset_receipt_number_sequence.md
           - name: Embed processor credit card receipts in customer receipts
             href: dev-itpro/embed-cc-receipt.md
@@ -615,17 +615,17 @@
           - name: Saving online payment instruments with the Adyen connector
             href: dev-itpro/adyen-connector-listPI.md
           - name: Strong Customer Authentication (SCA) using the Adyen connector
-            href: adyen_redirect.md
+            href: dev-itpro/adyen_redirect.md
           - name: Dedicated payment terminals and prompts for a printer and cash drawer
             href: pos-multi-hws.md
           - name: Seamless offline switch for gift card and credit memo operations
-            href: dev-itpro/seamless-offline-improvements.md
+            href: seamless-offline-improvements.md
           - name: Set up pay invoice scenarios
             href: payinvoice.md
           - name: Prepayments in Dynamics 365 Commerce
-            href: dev-itpro/prepayments-commerce.md
+            href: prepayments-commerce.md
           - name: Duplicate payments prevention
-            href: duplicate-payment-protection.md
+            href: dev-itpro/duplicate-payment-protection.md
           - name: Omni-channel payments overview
             href: omni-channel-payments.md
           - name: Multiple available payment methods for in-store pickup
@@ -637,13 +637,13 @@
           - name: Process credit cards without a hardware station
             href: dev-itpro/cnp-pos.md
           - name: Dynamics 365 Payment Connector for PayPal
-            href: paypal.md
+            href: dev-itpro/paypal.md
           - name: Wallet payment support
-            href: wallets.md
+            href: dev-itpro/wallets.md
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
           - name: Configure express payments for PayPal
-            href: dev-itpro/express-payments-paypal.md
+            href: dev-itpro/express-payments-dev-itpro/paypal.md
           - name: Payments FAQ
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
@@ -699,9 +699,9 @@
           - name: Create a channel navigation hierarchy
             href: create-channel-hierarchy.md
           - name: Configure channel to use a channel navigation hierarchy
-            href: configure-channel-hierarchy.md
+            href: dev-itpro/configure-channel-hierarchy.md
           - name: Channel merchandising configuration validator
-            href: channel-merch-config-validator.md
+            href: dev-itpro/channel-merch-config-validator.md
         - name: Assortments
           items:
           - name: Assortment management
@@ -723,17 +723,17 @@
         - name: Omnichannel media management
           items:
           - name: Omnichannel media management overview
-            href: omnichannel-media-management-overview.md
+            href: dev-itpro/omnichannel-media-management-overview.md
           - name: Assign media to products and categories
-            href: assign-media-omnichannel.md
+            href: dev-itpro/assign-media-omnichannel.md
           - name: Publish media assignments
-            href: publish-media-omnichannel.md
+            href: dev-itpro/publish-media-omnichannel.md
           - name: Copy omnichannel content between tenants
-            href: copy-content-between-tenants.md
+            href: dev-itpro/copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
-            href: import-export-manifest.md
+            href: dev-itpro/import-export-manifest.md
         - name: Consume Commerce runtime (CRT) Product service requests
-          href: crt-product-requests.md
+          href: dev-itpro/crt-product-requests.md
       - name: Pricing and discounts
         items:
         - name: Discounts
@@ -753,7 +753,7 @@
         - name: Shipping discount
           href: shipping-discount.md
         - name: Configure gift with purchase promotions
-          href: gift-with-purchase.md
+          href: dev-itpro/gift-with-purchase.md
         - name: Coupons
           href: coupons.md
         - name: Pricing settings
@@ -781,7 +781,7 @@
         - name: Enable product recommendations
           href: enable-product-recommendations.md
         - name: Set up an alternate dataflow
-          href: set-up-alternate-data-flow.md
+          href: dev-itpro/set-up-alternate-data-flow.md
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
@@ -837,7 +837,7 @@
           - name: Configure inventory buffers and inventory levels
             href: inventory-buffers-levels.md
           - name: Inventory availability APIs for e-commerce
-            href: inventory-availability-apis.md
+            href: dev-itpro/inventory-availability-apis.md
           - name: POS inventory lookup with channel-side calculation
             href: inventory-lookup-channel-side-calc.md
           - name: Optimize inventory data
@@ -961,7 +961,7 @@
       - name: Clienteling
         items:
         - name: Clienteling overview
-          href: clienteling-overview.md
+          href: dev-itpro/clienteling-overview.md
       - name: Loyalty
         items:
         - name: Loyalty overview
@@ -981,7 +981,7 @@
       - name: Statements overview
         href: retail-statements.md
       - name: Commerce posting parameters
-        href: commerce-posting-parameters.md
+        href: dev-itpro/commerce-posting-parameters.md
       - name: Validate store transactions for statement calculation
         href: valid-checker.md
       - name: Disable rules in retail transaction consistency checker
@@ -1061,39 +1061,39 @@
         - name: Create an e-commerce site
           href: create-ecommerce-site.md
         - name: Copy an e-commerce site
-          href: copy-ecommerce-site.md
+          href: dev-itpro/copy-ecommerce-site.md
         - name: Associate a Dynamics 365 Commerce site with an online channel
           href: associate-site-online-store.md
         - name: Manage robots.txt files
           href: manage-robots-txt-files.md
         - name: Upload URL redirects in bulk
-          href: upload-bulk-redirects.md
+          href: dev-itpro/upload-bulk-redirects.md
         - name: Set up a B2C tenant in Commerce
           items:
           - name: Set up a B2C tenant
-            href: set-up-B2C-tenant.md
+            href: dev-itpro/set-up-B2C-tenant.md
           - name: Create or link to an existing Azure AD B2C tenant
-            href: create-link-aad-b2c-tenant.md
+            href: dev-itpro/create-link-aad-b2c-tenant.md
           - name: Create a B2C application
-            href: create-b2c-app.md
+            href: dev-itpro/create-b2c-app.md
           - name: Create user flow policies
-            href: create-user-flow-policies.md
+            href: dev-itpro/create-user-flow-policies.md
           - name: Add social identity providers
-            href: add-social-identity-providers.md
+            href: dev-itpro/add-social-identity-providers.md
           - name: Update Commerce headquarters with Azure AD B2C information
-            href: update-hq-aad-b2c-info.md
+            href: dev-itpro/update-hq-aad-b2c-info.md
           - name: Configure your B2C tenant in site builder
-            href: config-b2c-tenant-site-builder.md
+            href: dev-itpro/config-b2c-tenant-site-builder.md
           - name: Additional B2C information
-            href: additional-b2c-info.md
+            href: dev-itpro/additional-b2c-info.md
         - name: Set up custom pages for user sign-ins
           href: custom-pages-user-logins.md
         - name: Enable automatic linking of identity records to customer accounts
-          href: identity-record-linking.md
+          href: dev-itpro/identity-record-linking.md
         - name: Configure multiple B2C tenants in a Commerce environment
           href: configure-multi-B2C-tenants.md
         - name: Domains in Dynamics 365 Commerce
-          href: domains-commerce.md
+          href: dev-itpro/domains-commerce.md
         - name: Content delivery network implementation options
           href: cdn-options.md
         - name: Add support for a content delivery network (CDN)
@@ -1129,7 +1129,7 @@
         - name: Search engine optimization (SEO) considerations for your site
           href: search-engine-optimization-considerations.md
         - name: Manage Content Security Policy (CSP)
-          href: manage-csp.md
+          href: dev-itpro/manage-csp.md
         - name: Opt out of web activity event collection
           href: web-activity-opt-out.md
         - name: Apply unit of measure settings
@@ -1137,7 +1137,7 @@
         - name: Apply display settings for product dimensions
           href: dimension-settings.md
         - name: Enable and activate e-commerce maintenance mode
-          href: enable-maintenance-mode.md
+          href: dev-itpro/enable-maintenance-mode.md
       - name: Manage your site content
         items:
         - name: Ways to add content
@@ -1249,7 +1249,7 @@
         - name: Add a privacy policy page
           href: add-privacy-page.md
         - name: Replace user IDs associated with tracked content changes
-          href: replace-IDs-tracked-changes.md
+          href: dev-itpro/replace-IDs-tracked-changes.md
       - name: Module library
         items:
         - name: Module library overview
@@ -1295,13 +1295,13 @@
         - name: Page, metadata, and script modules
           items:
           - name: Default page module
-            href: default-page-module.md
+            href: dev-itpro/default-page-module.md
           - name: Page summary modules
-            href: page-summary-module.md
+            href: dev-itpro/page-summary-module.md
           - name: Metatags module
-            href: metatags-module.md
+            href: dev-itpro/metatags-module.md
           - name: External and inline script modules
-            href: script-module.md
+            href: dev-itpro/script-module.md
         - name: Product detail page modules
           items:
           - name: Buy box module
@@ -1351,7 +1351,7 @@
         - name: Identity management modules
           items:
           - name: Identity management pages and modules
-            href: identity-mgmt-modules.md
+            href: dev-itpro/identity-mgmt-modules.md
         - name: Product collection modules
           items:
           - name: Product collection modules
@@ -1385,13 +1385,13 @@
         - name: Chat modules
           items:
           - name: Commerce chat features overview
-            href: commerce-chat-overview.md
+            href: dev-itpro/commerce-chat-overview.md
           - name: Commerce Chat with Omnichannel for Customer Service module
-            href: commerce-chat-module.md
+            href: dev-itpro/commerce-chat-module.md
           - name: Commerce Chat with Power Virtual Agents module
-            href: chat-module-pva.md
+            href: dev-itpro/chat-module-pva.md
           - name: Commerce chat module proactive chat parameters
-            href: chat-proactive-chat-parameters.md
+            href: dev-itpro/chat-proactive-chat-parameters.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1409,7 +1409,7 @@
         - name: Device, market, and geolocation targeting
           href: targeting-overview.md
         - name: Set up geo detection and redirection
-          href: geo-detection-redirection.md
+          href: dev-itpro/geo-detection-redirection.md
       - name: Experimentation
         items:
         - name: Experimentation in Dynamics 365 Commerce
@@ -1463,7 +1463,7 @@
         - name: Create Commerce catalogs for B2B sites
           href: catalogs-b2b-sites.md
         - name: Extensibility impact of Commerce catalogs for B2B customizations
-          href: catalogs-b2b-sites-dev.md
+          href: dev-itpro/catalogs-b2b-sites-dev.md
         - name: Commerce catalogs for B2B FAQ
           href: catalogs-b2b-sites-FAQ.md
       - name: On behalf of (OBO) functionality for B2B sites
@@ -1471,11 +1471,11 @@
         - name: Enable on behalf of (OBO) functionality
           href: on-behalf-of.md
         - name: Create and configure an Azure AD application for account manager sign-in
-          href: obo-create-aad-application.md
+          href: dev-itpro/obo-create-aad-application.md
         - name: Create and modify B2B pages for on behalf of functionality (OBO)
-          href: obo-add-pages-site-builder.md
+          href: dev-itpro/obo-add-pages-site-builder.md
         - name: Set up and configure on behalf of functionality (OBO) in headquarters
-          href: obo-configure-hq.md
+          href: dev-itpro/obo-configure-hq.md
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -1491,7 +1491,7 @@
       - name: Set up Recency, Frequency, and Monetary (RFM) analysis
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
-        href: set-up-clarity.md
+        href: dev-itpro/set-up-clarity.md
       - name: Set up Operational Insights
         href: dev-itpro/operational-insights.md
       - name: Comparison of ETW and EventLog logger functionality
@@ -1499,25 +1499,25 @@
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
-        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/commerce
+        href: ../finance/localizations/global/globalization-studio-overview.md?context=/dynamics365/context/commerce
       - name: Fiscal integration overview for Commerce channel
-        href: localizations/fiscal-integration-for-retail-channel.md
+        href: localizations/dev-itpro/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
-        href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+        href: localizations/dev-itpro/setting-up-fiscal-integration-for-retail-channel.md
       - name: Set up build pipeline for fiscal integration sample
-        href: localizations/fiscal-integration-sample-build-pipeline.md
+        href: localizations/global/fiscal-integration-sample-build-pipeline.md
       - name: User-defined certificate profiles for retail stores
-        href: localizations/certificate-profiles-for-retail-stores.md
+        href: localizations/global/certificate-profiles-for-retail-stores.md
       - name: Regulatory configuration service (RCS)
         items:
         - name: Regulatory configuration service (RCS) overview
-          href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/commerce
+          href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/commerce
         - name: (RCS)  Regulatory configuration service (RCS) - Globalization features
-          href: ../finance/localizations/rcs-globalization-feature.md?context=/dynamics365/context/commerce
+          href: ../finance/localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/commerce
         - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-          href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
+          href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
         - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-          href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/commerce
+          href: ../finance/localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/commerce
         - name: Download ER configurations to Commerce
           items:
           - name: Download configurations from RCS
@@ -1531,147 +1531,147 @@
             - name: Import updated versions of ER configurations
               href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/commerce
             - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
             - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
             - name: Share configurations in GR
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
             - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
-          href: localizations/emea-aut-fi-sample.md
+          href: localizations/dev-itpro/emea-aut-fi-sample.md
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
-          href: localizations/emea-aut-fi-sample-sdk.md
+          href: localizations/dev-itpro/emea-aut-fi-sample-sdk.md
       - name: Brazil
         items:
         - name: Commerce localization for Brazil
-          href: localizations/latam-bra-commerce-localization.md
+          href: localizations/brazil/latam-bra-commerce-localization.md
         - name: Set up and deploy Commerce localization for Brazil
-          href: localizations/latam-bra-deployment.md
+          href: localizations/brazil/latam-bra-deployment.md
         - name: NFC-e fiscal document functionality in Commerce POS for Brazil
-          href: localizations/latam-bra-nfce.md
+          href: localizations/brazil/latam-bra-nfce.md
         - name: Manage customer information in POS for Brazil
-          href: localizations/latam-bra-customer-information.md
+          href: localizations/brazil/latam-bra-customer-information.md
         - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
-          href: localizations/latam-bra-nfce-cancel-return.md
+          href: localizations/brazil/latam-bra-nfce-cancel-return.md
         - name: Postponed registration of NFC-e documents issued in offline contingency mode
-          href: localizations/latam-bra-nfce-contingency-mode.md
+          href: localizations/brazil/latam-bra-nfce-contingency-mode.md
         - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters
-          href: localizations/latam-bra-retail-statements.md
+          href: localizations/brazil/latam-bra-retail-statements.md
         - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
-          href: localizations/latam-bra-cf-e-sat.md
+          href: localizations/brazil/latam-bra-cf-e-sat.md
         - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
-          href: localizations/latam-bra-adyen.md
+          href: localizations/brazil/latam-bra-adyen.md
       - name: Eastern Europe
         items:
         - name: Common
           items:
           - name: Advance invoices for Commerce for Eastern Europe
-            href: localizations/emea-eeu-advance-invoices-for-retail.md
+            href: localizations/europe/emea-eeu-advance-invoices-for-retail.md
           - name: Petty cash management for Commerce for Eastern Europe
-            href: localizations/emea-eeu-petty-cash-for-retail.md
+            href: localizations/europe/emea-eeu-petty-cash-for-retail.md
           - name: Customer invoices and return sales orders in Eastern European countries/regions
-            href: localizations/emea-eeu-retail-invoices.md
+            href: localizations/europe/emea-eeu-retail-invoices.md
           - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-            href: localizations/emea-eeu-deployment.md
+            href: localizations/europe/emea-eeu-deployment.md
         - name: Czech Republic
           items:
           - name: Fiscal registration service integration sample for Czech Republic
-            href: localizations/emea-cze-fi-sample.md
+            href: localizations/dev-itpro/emea-cze-fi-sample.md
           - name: Deployment guidelines for fiscal integration sample for Czech Republic (legacy)
-            href: localizations/emea-cze-fi-sample-sdk.md
+            href: localizations/dev-itpro/emea-cze-fi-sample-sdk.md
         - name: Poland
           items:
           - name: Fiscal printer integration sample for Poland
-            href: localizations/emea-pol-fpi-sample.md
+            href: localizations/dev-itpro/emea-pol-fpi-sample.md
           - name: Customer information management for Poland
-            href: localizations/emea-pol-customer-information.md
+            href: localizations/poland/emea-pol-customer-information.md
           - name: Deployment guidelines for fiscal integration sample for Poland (legacy)
-            href: localizations/emea-pol-fpi-sample-sdk.md
+            href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
         - name: Cash register functionality
-          href: localizations/emea-fra-cash-registers.md
+          href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: localizations/emea-fra-fi-deployment.md
+          href: localizations/france/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
-          href: localizations/emea-fra-fiscal-archive.md
+          href: localizations/france/emea-fra-fiscal-archive.md
         - name: Migrate from legacy functionality for France
-          href: localizations/emea-fra-fi-migration.md
+          href: localizations/france/emea-fra-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
-          href: localizations/emea-fra-deployment.md
+          href: localizations/france/emea-fra-deployment.md
       - name: Germany
         items:
         - name: Fiscal registration service integration sample for Germany
-          href: localizations/emea-deu-fi-sample.md
+          href: localizations/dev-itpro/emea-deu-fi-sample.md
         - name: Deployment guidelines for fiscal integration sample for Germany (legacy)
-          href: localizations/emea-deu-fi-sample-sdk.md
+          href: localizations/dev-itpro/emea-deu-fi-sample-sdk.md
       - name: India
         items:
         - name: Goods and Services Tax (GST) integration for cash registers
-          href: localizations/apac-ind-cash-registers.md
+          href: localizations/india/apac-ind-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: localizations/apac-ind-loc-deployment-guidelines.md
+          href: localizations/india/apac-ind-loc-deployment-guidelines.md
         - name: Support for upgrade and N-1 for India
-          href: localizations/apac-ind-n-1-for-india.md
+          href: localizations/india/apac-ind-n-1-for-india.md
         - name: Generate QR codes and print them on receipts for India
-          href: localizations/ind-generate-qr-code-print-receipt.md
+          href: localizations/india/ind-generate-qr-code-print-receipt.md
         - name: Goods and Services Tax (GST) integration for e-commerce sites
-          href: localizations/apac-ind-e-commerce.md
+          href: localizations/india/apac-ind-e-commerce.md
       - name: Italy
         items:
         - name: Fiscal printer integration sample for Italy
-          href: localizations/emea-ita-fpi-sample.md
+          href: localizations/dev-itpro/emea-ita-fpi-sample.md
         - name: Customer information management for Italy
-          href: localizations/emea-ita-customer-information.md
+          href: localizations/italy/emea-ita-customer-information.md
         - name: Deployment guidelines for fiscal integration sample for Italy (legacy)
-          href: localizations/emea-ita-fpi-sample-sdk.md
+          href: localizations/dev-itpro/emea-ita-fpi-sample-sdk.md
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
-          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?context=/dynamics365/context/commerce
+          href: ../finance/localizations/iberoamerica/latam-mex-global-cfdi-3-3.md?context=/dynamics365/context/commerce
       - name: Norway
         items:
         - name: Cash register functionality
-          href: localizations/emea-nor-cash-registers.md
+          href: localizations/norway/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
-          href: localizations/emea-nor-fi-deployment.md
+          href: localizations/dev-itpro/emea-nor-fi-deployment.md
         - name: Migrate from legacy functionality for Norway
-          href: localizations/emea-nor-fi-migration.md
+          href: localizations/dev-itpro/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
-          href: localizations/emea-nor-loc-deployment-guidelines.md
+          href: localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md
       - name: Russia
         items:
         - name: Commerce localization for Russia
-          href: localizations/rus-commerce-localization.md
+          href: localizations/russia/rus-commerce-localization.md
         - name: Set up Commerce localization for Russia
-          href: localizations/rus-commerce-setup.md
+          href: localizations/russia/rus-commerce-setup.md
         - name: Prepayments in Commerce for Russia
-          href: localizations/rus-commerce-prepayments.md
+          href: localizations/russia/rus-commerce-prepayments.md
         - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/rus-simplified-address.md
+          href: localizations/russia/rus-simplified-address.md
         - name: Fiscal printer integration sample for Russia
-          href: localizations/rus-fpi-sample.md
+          href: localizations/russia/rus-fpi-sample.md
         - name: Customer information management for Russia
-          href: localizations/rus-customer-information.md
+          href: localizations/russia/rus-customer-information.md
       - name: Saudi Arabia
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
-          href: localizations/emea-sau-qr-code.md
+          href: localizations/mea/emea-sau-qr-code.md
         - name: Generate and submit simplified electronic invoices for Saudi Arabia
-          href: localizations/emea-sau-simplified-e-invoices.md
+          href: localizations/mea/emea-sau-simplified-e-invoices.md
       - name: Sweden
         items:
         - name: Cash register functionality
-          href: localizations/emea-swe-cash-registers.md
+          href: localizations/sweden/emea-swe-cash-registers.md
         - name: Control unit integration sample for Sweden
-          href: localizations/emea-swe-fi-sample.md
+          href: localizations/dev-itpro/emea-swe-fi-sample.md
         - name: Deployment guidelines for control unit integration sample for Sweden (legacy)
-          href: localizations/emea-swe-fi-sample-sdk.md
+          href: localizations/dev-itpro/emea-swe-fi-sample-sdk.md
         - name: Sample for Retail POS integration with control units (legacy)
-          href: localizations/retail-sdk-control-unit-sample.md
+          href: localizations/dev-itpro/retail-sdk-control-unit-sample.md
     - name: Reporting and Power BI integrations
       items:
       - name: Reporting and analytics with Power BI
@@ -2191,7 +2191,7 @@
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/commerce
+            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/commerce
           - name: Download ER configurations to Commerce
             items:
             - name: Download configurations from RCS
@@ -2205,13 +2205,13 @@
             - name: Import updated versions of ER configurations
               href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/commerce
             - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/commerce
             - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/commerce
             - name: Share configurations in GR
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/commerce
             - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
+              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/commerce
       - name: Quick start guides
         items:
         - name: Adjust an ER format to generate a custom electronic document
@@ -2423,15 +2423,15 @@
     - name: Finance and operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
-        href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/commerce
       - name: Mobile workspaces
         items:
         - name: Available mobile workspaces
-          href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/commerce
         - name: Asset management
           href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Company directory
-          href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Expense management
@@ -2439,9 +2439,9 @@
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Invoice approvals
-          href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: My team
-          href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Project mobile applications overview
           href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
         - name: Project time entry
@@ -2463,7 +2463,7 @@
       - name: Office integration tutorial
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/commerce
       - name: Open entity data in Excel and update it using the Excel add-in
-        href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/fin-ops/mobile-apps/use-excel-add-in.md?context=/dynamics365/context/commerce
       - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/commerce
       - name: Add templates to the Open lines in Excel menu
@@ -2471,7 +2471,7 @@
       - name: Customize the Open in Microsoft Office menu
         href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?context=/dynamics365/context/commerce
       - name: Configure and send email
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/commerce
       - name: Create email templates for transactional events
         href: email-templates-transactions.md
       - name: Develop email experiences
@@ -2505,13 +2505,13 @@
       - name: Global address book
         items:
         - name: Global address book overview
-          href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/overview-global-address-book.md?context=/dynamics365/context/commerce
         - name: Plan for the global address book and other address books
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?context=/dynamics365/context/commerce
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?context=/dynamics365/context/commerce
         - name: Address setup
-          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/commerce
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/commerce
         - name: Configure address books
@@ -2521,7 +2521,7 @@
         - name: Workflow system overview
           href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?context=/dynamics365/context/commerce
         - name: Workflow system architecture
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/commerce
         - name: Workflow elements
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?context=/dynamics365/context/commerce
         - name: Workflow actions
@@ -2553,7 +2553,7 @@
           - name: Configure line-item workflows
             href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/commerce
         - name: Configure the Workflow Message Processing batch job as critical
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/commerce
         - name: Delegate work items in a workflow
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/commerce
         - name: View workflow history
@@ -2563,23 +2563,23 @@
         - name: Workflow types
           items:
           - name: Creating a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-create.md?context=/dynamics365/context/commerce
           - name: Workflow type checklist
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/commerce
           - name: Create a workflow category
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-category.md?context=/dynamics365/context/commerce
           - name: Create a query for a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-query.md?context=/dynamics365/context/commerce
           - name: Create a new workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/commerce
           - name: Create a workflow document class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/commerce
           - name: Create a SubmitToWorkflow class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/commerce
           - name: Associate a workflow document class with a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/commerce
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/commerce
         - name: Workflow types report
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-types-report.md?context=/dynamics365/context/commerce
         - name: Workflow FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?context=/dynamics365/context/commerce
       - name: Alerts
@@ -2601,23 +2601,23 @@
       - name: Case management
         items:
         - name: Case management overview
-          href: ../fin-ops-core/fin-ops/organization-administration/cases.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/cases.md?context=/dynamics365/context/commerce
         - name: Plan case security, processes, and categories
-          href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/organization-administration/plan-case-management.md?context=/dynamics365/context/commerce
       - name: Record templates
         items:
         - name: Record templates overview
           href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?context=/dynamics365/context/commerce
         - name: Create a record template
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/data-entities/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/commerce
         - name: Use a record template to create a new record
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md?context=/dynamics365/context/commerce
       - name: Configure document management
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md?context=/dynamics365/context/commerce
       - name: Configure and send email
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/commerce
       - name: Date/time data and time zones
-        href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/commerce
+        href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/commerce
     - name: Development
       items:
       - name: Cross-solution
@@ -2645,7 +2645,7 @@
           - name: Deploy payment connectors
             href: dev-itpro/deploy-payment-connector.md
           - name: Payment data use
-            href: payment-connector-data-fields.md
+            href: dev-itpro/payment-connector-data-fields.md
           - name: Support for tipping in the payments SDK
             href: dev-itpro/tipping.md
           - name: Incremental capture for order invoicing
@@ -3066,9 +3066,11 @@
             href: dev-itpro/hybridapp.md
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
-  - name: Finance and operations apps development and administration
+  - name: Development and administration for finance and operations apps
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Supply Chain Management
     href: ../supply-chain/supply-chain-management-welcome.md
+  - name: Dynamics 365 Human Resources
+    href: ../human-resources/welcome.md

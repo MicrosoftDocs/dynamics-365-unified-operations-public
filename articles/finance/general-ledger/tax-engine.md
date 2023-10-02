@@ -161,8 +161,8 @@ The set-off rule determines how the tax recoverable should be used to set off th
 
 ## Additional resources
 
-- [Extend tax engine configurations](extend-tax-engine-configurations.md)
-- [Tax engine integration](tax-engine-integration.md)
+- [Extend tax engine configurations](../dev-itpro/extend-tax-engine-configurations.md)
+- [Tax engine integration](../dev-itpro/tax-engine-integration.md)
 
 
 

@@ -71,12 +71,12 @@ The June 2023 release of the Dual-write Supply Chain solution contains the follo
 
 | Feature | Description | Status |
 |---|---|---|
-| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](add-efficiency-in-quote-to-cash-concept.md) | General availability |
-| Feature | [Set the default ownership for all sales quotations.](add-efficiency-in-quote-to-cash-use.md#default-ownership) | General availability |
-| Feature	| [Change ownership for a sales quotation.](add-efficiency-in-quote-to-cash-use.md#change-ownership-for-a-sales-quotation)	| General availability |
-| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](add-efficiency-in-quote-to-cash-use.md#push-to-sales)	| General availability |
-| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](add-efficiency-in-quote-to-cash-use.md#copy-quotation-data)	| General availability |
-| Feature	| [Process events related to Sales integration.](add-efficiency-in-quote-to-cash-use.md#process-events)	| General availability |
+| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md) | General availability |
+| Feature | [Set the default ownership for all sales quotations.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#default-ownership) | General availability |
+| Feature	| [Change ownership for a sales quotation.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#change-ownership-for-a-sales-quotation)	| General availability |
+| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#push-to-sales)	| General availability |
+| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#copy-quotation-data)	| General availability |
+| Feature	| [Process events related to Sales integration.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#process-events)	| General availability |
 
 ### Solution details
 
@@ -492,8 +492,8 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
-| [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and finance and operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
+| [Commerce price engine for sales quotations](../../../fin-ops/data-entities/commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
+| [Notes integration](../../../fin-ops/data-entities/notes-integration.md) | Notes are integrated between customer engagement apps and finance and operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
 
 > [!IMPORTANT]
 > If you don't need notes integration, don't install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
@@ -515,7 +515,7 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Purchase order integration](scm-field-service-procurement.md) | Integrates purchase order functionality between Dynamics 365 Field Service and Dynamics 365 Supply Chain Management. | General availability |
+| [Purchase order integration](../../../fin-ops/data-entities/scm-field-service-procurement.md) | Integrates purchase order functionality between Dynamics 365 Field Service and Dynamics 365 Supply Chain Management. | General availability |
 | Bug fix | Localization updates. | General availability |
 | Bug fix | In customer engagement apps, on the **Contact** form, after you set **Is Sellable** to **Yes** and save the record, the contact is considered a customer who can transact. Because customers are associated with transactions, **Is Sellable** becomes read-only after saving. You can't change it back to **No**. | General availability |
 
@@ -554,7 +554,7 @@ The September 2020 release contains the features and bug fixes listed in the fol
 |------|---------|-------|
 | Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [dual-write Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all). | General availability |
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** column. |   General availability   |  
-| [Money to decimal data type conversion](currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
+| [Money to decimal data type conversion](../../../fin-ops/data-entities/currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
 | Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
 | Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows nonadministrator users to create rows that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Tracing | Internal column added for use in tracing. This feature is part of Dual-write core solution 10.0.21. | General availability |

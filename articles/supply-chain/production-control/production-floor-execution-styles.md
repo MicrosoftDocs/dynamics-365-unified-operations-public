@@ -339,7 +339,7 @@ In Visual Studio, a grid, detail part, and quick filter can be created by using 
 
 ## Additional resources
 
-- [Customize the production floor execution interface](production-floor-execution-customize.md)
+- [Customize the production floor execution interface](../supply-chain-dev/production-floor-execution-customize.md)
 - [Design the production floor execution interface](production-floor-execution-tabs.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

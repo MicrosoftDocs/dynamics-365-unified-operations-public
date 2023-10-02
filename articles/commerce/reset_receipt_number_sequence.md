@@ -1,9 +1,9 @@
 ---
 
-title: Reset receipt numbers
-description: This article describes how to reset receipt numbers used for various actions on a specific date in Microsoft Dynamics 365 Commerce.
+title: Configure and manage receipt numbers
+description: This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 08/22/2023
+ms.date: 09/28/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -13,20 +13,17 @@ ms.search.validFrom: 2020-01-14
 
 ---
 
-# Reset receipt numbers 
+# Configure and manage receipt numbers 
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to reset receipt numbers used for various actions on a specific date (for example, the end of the fiscal year or calendar year) in Microsoft Dynamics 365 Commerce.
+This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 
-> [!NOTE]
-> We require that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the device, where the POS is being used, should match the corresponding store time zone. Due to these limitations, we recommend that you do not use this feature in production while we work to fix these issues in a future release. 
+Retailers generate receipt numbers for various actions in their stores such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on receipt formats. For example, regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of each year. Dynamics 365 Commerce helps retailers meet regulatory requirements by making the process of managing receipt numbers very flexible.
 
-Retailers generate receipt numbers for various actions in the store, such as cash and carry transactions, return transactions, customer orders, quotations, and payments. Although retailers define their own receipt formats, some countries or regions have regulations that put restrictions on these receipt formats. For example, these regulations might limit the number of characters on the receipt, require consecutive receipt numbers, restrict some special characters, or require a reset of receipt numbers at the beginning of the year. Microsoft Dynamics 365 Commerce makes the process of managing receipt numbers very flexible, to help retailers meet regulatory requirements. This article explains how to use the functionality for resetting receipt numbers.
+## Define receipt number formats
 
-## Define receipt formats
-
-In Commerce, receipt formats can be alphanumeric. You can put both static content and dynamic content in them. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
+Receipt numbering formats are composed of both static content and dynamic content. Static content includes alphabetic character, numbers, and special characters. Dynamic content includes one or more characters that represent information such as the store number, terminal number, date, month, year, and number sequences that are automatically incremented. The formats are defined in the **Receipt numbering** section of the functionality profile. The following table describes the characters that represent the dynamic content.
 
 | Characters | Description |
 |------------|-------------|
@@ -43,7 +40,10 @@ In Commerce, receipt formats can be alphanumeric. You can put both static conten
 
 You can reset the sequential numbering of the receipt on a specific date. Then, for the first transaction that occurs after 12:00 AM on the selected reset date, the system resets the receipt's number sequence to 1. You can also specify whether the reset occurs only one time, or whether it recurs every year. If yearly recurrence is specified, the reset automatically occurs every year until the retailer chooses to stop it. 
 
-To turn on the reset in Commerce headquarters, follow these steps.
+> [!NOTE]
+> Microsoft requires that you select the **Independent sequence** property for all receipt types in the functionality profile before using this feature. Also, the system time zone of the POS device must match the corresponding store time zone. Due to these limitations, Microsoft recommends that you don't use this feature in production until fixes for these issues are included in a future release. 
+
+To enable resetting of receipt numbers in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**.
 1. On the **Receipt numbering** FastTab, select **Reset number reset date**.

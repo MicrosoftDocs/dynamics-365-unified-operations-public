@@ -63,7 +63,7 @@ There are several benefits of using the workflow system in your organization:
 
 ## Workflow content
 
-+ [Workflow system architecture](workflow-system-architecture.md)
++ [Workflow system architecture](../../dev-itpro/organization-administration/workflow-system-architecture.md)
 + [Workflow elements](workflow-elements.md)
 + [Actions in workflow approval processes](workflow-actions.md)
 + [Create workflows overview](create-workflow.md)
