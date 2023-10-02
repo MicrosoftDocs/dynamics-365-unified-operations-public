@@ -37,12 +37,12 @@ Licensed customers must regularly update their deployment of the Finance + Opera
 
 As a customer, you are in full control of your on-premises deployments and must actively follow this policy. You are in control of installing updates in your on-premises environments.
 
-Microsoft will support your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
+Microsoft supports your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
 
-Critical fixes and non-critical updates are handled in the following way:
+Critical fixes and noncritical updates are handled in the following way:
 
 - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
-- **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy non-critical updates.
+- **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy noncritical updates.
 
 ## Finance + Operations (on-premises) release dates
 
