@@ -63,7 +63,7 @@ This procedure shows how to create, print, and post interest notes. This task us
 ## Post the interest note
 1. Select an interest note that is ready to post (status is **Created**).
 2. Click **Post**.
-3. Enter the posting date for the interest note. Select **Yes** to create a general ledger transaction for each interest note. If you don't select **Yes**, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction. The **Interest per transaction** option defaults to **Yes** and is disabled when the interest note is created with **Use posting profile from** value set to Transaction. The **Interest per transaction** is enabled when interest notes are created using options **Account** or **Select**.
+3. Enter the posting date for the interest note. Select **Yes** to create a general ledger transaction for each interest note. If you don't select **Yes**, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction. The **Interest per transaction** option defaults to **Yes** and is disabled when the interest note is created with **Use posting profile from** value set to **Transaction**. The **Interest per transaction** is enabled when interest notes are created using options **Account** or **Select**.
 4. Expand the **Records to include** FastTab.
 5. Click **OK**.
 6. In the **Status** field, select **Posted**.
