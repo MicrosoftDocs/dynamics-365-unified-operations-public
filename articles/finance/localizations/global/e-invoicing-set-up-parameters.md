@@ -1,7 +1,7 @@
 ---
 title: Set up Electronic invoicing parameters
 description: This article explains how to set up the Electronic invoicing parameters.
-author: gionoder
+author: ilikond
 ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
-ms.author: gionoder
+ms.author: ikondratenko
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 
@@ -20,7 +20,6 @@ ms.search.form:
 # Set up Electronic invoicing parameters 
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 The process of submitting electronic documents to the Electronic invoicing service requires that a message be generated in your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment in a unified structure that corresponds to the structure of the Electronic reporting (ER) invoice model and metadata that is known as *context*. For more information, see [Electronic invoicing overview](e-invoicing-service-overview.md).
 

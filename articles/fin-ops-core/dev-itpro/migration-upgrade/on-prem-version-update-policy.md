@@ -1,13 +1,14 @@
 ---
 title: Software lifecycle policy and on-premises releases
 description: This article outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
-author: josaw1
-ms.date: 09/29/2023
-ms.topic: article
+author: faix
+ms.date: 10/02/2023
+ms.topic: conceptual
 ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
+
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-07-15
@@ -24,15 +25,11 @@ search.app:
 
 This article outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 
-## Product life time
-
-The product life time of Finance + Operations (on-premises) software ends **December 2027**. Licensed customers who are in compliance with this policy are entitled to product support. Product support is available at a minimum through December 31, 2027.
-
 ## Modern Lifecycle Policy
 
-Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
+Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy rules products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).
 
-Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates).
+Licensed customers must regularly update their deployment of the Finance + Operations (on-premises) software. The servicing policy requires that you maintain the Software Assurance (SA) or the Enhancement Plan and it requires that you deploy the update releases provided through the [continuous service updates](on-prem-version-update-policy.md#continuous-service-updates). To check for the most up to date status on the lifecycle of the product you can check the lifecycle page [Dynamics 365 for Finance + Operations (on-premises)](/lifecycle/products/dynamics-365-for-finance-and-operations-onpremises).
 
 > [!NOTE]
 > If you want to use the Fixed Support Lifecycle Policy (5+5), you must downgrade to Microsoft Dynamics AX 2012 R3. If you instead lapse on your SA or the Enhancement Plan, you will only be eligible for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance + Operations (on-premises).
@@ -41,12 +38,12 @@ Licensed customers must regularly update their deployment of the Finance + Opera
 
 As a customer, you are in full control of your on-premises deployments and must actively follow this policy. You are in control of installing updates in your on-premises environments.
 
-Microsoft will support your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
+Microsoft supports your deployment of Finance + Operations (on-premises) software only if you keep the deployed software current according to this policy.
 
-Critical fixes and non-critical updates are handled in the following way:
+Critical fixes and noncritical updates are handled in the following way:
 
 - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.
-- **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy non-critical updates.
+- **Non-critical updates** – Customers must update to the most current Finance + Operations platform and financial reporter version to deploy noncritical updates.
 
 ## Finance + Operations (on-premises) release dates
 
