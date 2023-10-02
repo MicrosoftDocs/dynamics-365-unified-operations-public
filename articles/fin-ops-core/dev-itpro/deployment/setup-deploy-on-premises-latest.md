@@ -296,7 +296,7 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="plansvcacct"></a>Step 3. Plan your users and service accounts
 
-You must create several user or service accounts for Finance + Operations (on-premises) to work. You must create a combination of gMSAs, domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that is used in this article.
+You must create several user or service accounts for Finance + Operations (on-premises) to work. You must create a combination of gMSAs, domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that are used in this article.
 
 | User account                                            | Type | Purpose | User name |
 |---------------------------------------------------------|------|---------|-----------|
@@ -506,14 +506,14 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 To enable data management and SSIS workloads, you must install SSIS on at least two nodes (at least one if the environment is a sandbox environment). This step is required for the DMF service to run.
 
 > [!IMPORTANT]
-> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available and data management operations are performed by AOS.
+> For environments that were deployed with a base topology older than Application version 10.0.32, SSIS must be installed on all AOS nodes. Furthermore, the DMF service won't be available, and data management operations are performed by AOS.
 
 You can have dedicated nodes that contain SSIS, or you can install SSIS on other node types. If you want to have dedicated SSIS nodes, specify which machines host the node type by filling in the details for that node in the ConfigTemplate.xml file.
 
 If your use of DMF is low, you might choose not to have dedicated nodes. Instead, you can choose which nodes will have SSIS installed by updating the **hasSSIS** attribute to **true** for each VM in the **ServiceFabricCluster** section of your ConfigTemplate.xml file. In this case, you should set the **disabled** attribute to **true** for the **SSISNodeType** node type in your ConfigTemplate.xml file.
 
 > [!NOTE]
-> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provisions the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
+> If you disable the **SSISNodeType** node type but don't set the **hasSSIS** attribute on any node, the scripts and installation logic provision the DMF service to all nodes of the **BatchOnlyAOSNodeType** type. If that node type doesn't exist, the DMF service is provisioned to all nodes of the **AOSNodeType** type.
 
 1. After you've decided which VMs need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 1. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
@@ -555,7 +555,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
         - Grant the **CREATE ANY DATABASE** permission to **\[contoso\\svc-ReportSvc$\]**.
 
     > [!NOTE]
-    > These scripts **won't** configure SSRS. SSRS is configured during deployment by the Service Fabric service (ReportingService) that's deployed to that node. Instead, these scripts grant the permissions that are required for the Service Fabric service (ReportingService) to perform the necessary configuration.
+    > These scripts **don't** configure SSRS. SSRS is configured during deployment by the Service Fabric service (ReportingService) that's deployed to that node. Instead, these scripts grant the permissions that are required for the Service Fabric service (ReportingService) to perform the necessary configuration.
 
 ### <a name="setupvms"></a>Step 14. Set up VMs
 
