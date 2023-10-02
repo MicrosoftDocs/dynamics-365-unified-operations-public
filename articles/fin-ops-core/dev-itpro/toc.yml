@@ -533,6 +533,8 @@ items:
           items:
           - name: Troubleshoot on-premises deployments
             href: deployment/troubleshoot-on-prem.md
+          - name: Automating diagnostic collection
+            href: deployment/onprem-automate-diagnostics-collection.md
           - name: Scripts for resolving issues in on-premises environments
             href: deployment/onprem-tsg-implementations.md
       - name: Deploy custom code
