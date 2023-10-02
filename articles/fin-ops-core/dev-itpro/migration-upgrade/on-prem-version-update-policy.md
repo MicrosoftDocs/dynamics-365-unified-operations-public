@@ -2,12 +2,12 @@
 title: Software lifecycle policy and on-premises releases
 description: This article outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 author: faix
-ms.date: 12/14/2021
-ms.topic: article
+ms.date: 10/02/2023
+ms.topic: conceptual
 ms.prod: dynamics-365
 ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2017-07-15
