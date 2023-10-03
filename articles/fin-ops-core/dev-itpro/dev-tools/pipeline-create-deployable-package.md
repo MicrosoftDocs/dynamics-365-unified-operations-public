@@ -20,9 +20,8 @@ If you want to deploy customizations to an environment, a deployable package is 
 This article assumes a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
-> Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
->
-> This Azure DevOps task requires that the X++ compiler tools be available on the agent. Either run this task on a build virtual machine (VM) agent, or use the Compiler Tools NuGet package. For more information about the NuGet package and how to install it in a pipeline, see [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md).
+> - Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
+> - This Azure DevOps task requires that the X++ compiler tools be available on the agent. Either run this task on a build virtual machine (VM) agent, or use the Compiler Tools NuGet package. For more information about the NuGet package and how to install it in a pipeline, see [Build automation using Microsoft-hosted agents and Azure Pipelines](hosted-build-automation.md).
 
 ## Add the task to a pipeline
 
@@ -36,7 +35,7 @@ To add the task to the build of your YML or Classic pipeline, search the task li
 | Filename and path for the deployable package | Yes | The path and file name of the deployable package. The output file is a zip file, and the file name typically includes version information to make the file easy to identify. |
 
 > [!NOTE]
-> With introduction of the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), a new version of this task was released that is capable of generating the package in both the LCS and Power Platform unified package formats. To generate the package in the Power Platform unified package format at the "path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox, and then enter the platform and application version used. The search pattern and tools package path are still honored as before. The LCS package creation option is selected by default and is generated the same way it was before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
+> With the introduction of the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview), a new version of this task was released that is capable of generating the package in both the LCS and Power Platform unified package formats. To generate the package in the Power Platform unified package format at the "path for the cloud deployable package" location, select the **Create Power Platform Unified Package** checkbox, and then enter the platform and application version used. The search pattern and tools package path are still honored as before. The LCS package creation option is selected by default and is generated the same way it was before, with the option to turn off creating the LCS package. The **Platform** and **Application version** fields are ignored.
 
 ## NuGet dependency
 
