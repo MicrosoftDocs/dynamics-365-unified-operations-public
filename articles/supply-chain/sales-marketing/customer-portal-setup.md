@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-
 ## Licensing requirements
 
 To implement the Customer portal, you must have the following licenses:
@@ -64,10 +63,10 @@ Before you begin, make sure that you've already completed the [required setup](#
 
 1. Go to [Power Pages](https://make.powerpages.microsoft.com/).
 2. Make sure that you're using the environment where you enabled dual-write.
-3. On the **Templates** tab, go to **Dynamics 365** tab, and select the template that is named **Customer Portal**.
+3. On the **Templates** tab, open the **Dynamics 365** tab, and select the template named **Customer Portal**.
 4. Follow the on-screen instructions.
 
-After provisioning is completed, you can access the Customer portal under the **Active Sites** tab of the **Home** page.
+After provisioning is completed, you can access the Customer portal on the **Active Sites** tab of the **Home** page.
 
 > [!NOTE]
 > If the dual-write solution isn't installed in the environment that you're working in, you will receive an error message, and the Customer portal won't be provisioned.
