@@ -18,24 +18,33 @@ ms.custom: bap-template
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Installation of the Planning Optimization add-in doesn't complete or fails with error
+## Installation of the Planning Optimization Add-in doesn't complete or fails with an error
 
-- Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
+If you're having trouble installing the Planning Optimization Add-in, consider the advice provided in the following subsections.
 
-  **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
+### Make sure your environment meets the prerequisites
 
-- Planning optimization add-in requires a successfully linked Power platform environment. To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
-  > Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
+Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
-  > Current user does not have enough permission on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
+**Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
-  > Current user does not have assigned license to complete installation for Planning optimization. Consider assigning license on Microsoft admin center.
+### Make sure your user account meets the prerequisites
 
-  **Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
+The Planning Optimization Add-in requires a successfully linked Power Platform environment. To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
 
-- Planning optimization add-in might fail due to error on Power platform environment.
+> Current user does not have enough permission on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
 
-  **Fix**: Check the error details and take an action on your Power Platform organization settings accordingly. This might be a transient error, please try installation again later. If issue persists, reach out to support team.
+> Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
+
+> Current user does not have assigned license to complete installation for Planning optimization. Consider assigning license on Microsoft admin center.
+
+**Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
+
+### Review the error details
+
+The Planning Optimization Add-in might fail to install due to an error on your Power Platform environment.
+
+**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install again later. If the issue persists, please contact Microsoft Support.
 
 ## Planning Optimization job times out
 
@@ -251,7 +260,7 @@ Planning Optimization differs from the deprecated master planning engine design 
 
 The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
 
-**Fix**: Make sure that the Planning Optimization add-in was installed successfully.
+**Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
 
 ## Error message is shown during CTP
 
