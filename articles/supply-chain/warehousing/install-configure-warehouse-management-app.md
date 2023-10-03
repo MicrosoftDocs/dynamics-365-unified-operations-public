@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Install and connect the Warehouse Management mobile app
+# Install the Warehouse Management mobile app
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,73 +82,8 @@ Because the Warehouse Management mobile app has read/write access to some of you
 
 After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. If a device is lost or compromised, you can revoke its authentication by following the steps in the [Remove access for a lost or compromised device](#revoke) section.
 
-### Authenticate by using a certificate or client secret
-
-Authentication with Microsoft Entra ID provides a secure way of authenticating a mobile device with Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code.
-
-Each device should have its own unique certificate or client secret.
-
-Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
-
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
-
-### <a name="authenticate-devicecode"></a>Authenticate users by using the device code flow
-
-When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Microsoft Entra ID user account.
-
-Device code flow authentication simplifies the authentication process, because users don't have to manage certificates or client secrets. However, it introduces a few extra requirements and restrictions:
-
-- You should create a unique Microsoft Entra ID user account for each device or user. In addition, *these accounts should be strictly limited so that they can perform only warehouse mobile device user activities.*
-- If a device remains [idle for 90 days](/azure/active-directory/develop/refresh-tokens), it's automatically signed out.
-- The device code flow isn't fully supported by mobile mass deployment (MDM) systems such as Intune.
-
-> [!IMPORTANT]
-> All Microsoft Entra ID accounts that are used to sign in via the device code flow must be granted only the minimum set of permissions that they require to perform their warehousing tasks. Permissions should be strictly limited to warehouse mobile device user activities. Never use an admin account to sign in to devices.
-
-## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
-
-To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
-
-1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
-1. Enter the name and password of the user who has access to the Azure subscription.
-1. In the Azure portal, on the left navigation pane, select **Microsoft Entra ID**.
-1. Make sure that you're working with the instance of Microsoft Entra ID that's used by Supply Chain Management.
-1. In the **Manage** list, select **App registrations**.
-1. On the toolbar, select **New registration** to open the **Register an application** wizard.
-1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
-1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
-1. If you want to use [certificates or client secrets](#authenticate-devicecode) to authenticate devices, complete the following steps. If you want to use the device code flow instead, skip this step.
-
-    1. In the **Manage** list, select **Certificate & secrets**.
-    1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
-
-        - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
-        - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
-
-1. If you want to use the [device code flow](#authenticate-devicecode) to authenticate devices, complete the following steps to set it up and grant the required API permissions. If you want to use certificates or client secrets instead, skip this step.
-
-    1. In the **Manage** list, select **Authentication**.
-    1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
-    1. In the **Manage** list, select **API permissions**.
-    1. Select **Add a permission**.
-    1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
-    1. On the left navigation pane, select **Microsoft Entra ID**.
-    1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select the **All applications** tab.
-    1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
-    1. In the **Manage** list, select **Properties**.
-    1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
-    1. In the **Manage** list, select **Users and groups**.
-    1. On the toolbar, select **Add user/group**.
-    1. On the **Add Assignment** page, select the link under the **Users** heading.
-    1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
-
-For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
-
-- For instructions that show how to use Windows PowerShell to set up web service applications in Microsoft Entra ID, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- For complete details about how to manually create a web service application in Microsoft Entra ID, see the following articles:
-
-    - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
-    - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
+- **User-based Authentication:**  [Device code flow](/configure-user-based-auth-warehouse-management-app.md)
+- **Service-based Authentication (deprecated):**  [Client secret, Certificate](/configure-service-based-auth-warehouse-management-app.md)
 
 ## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
 
@@ -190,7 +125,7 @@ You can import connection settings from either a file or a QR code. For both app
 | `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
 | `ActiveDirectoryTenant` | Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are `"certificate"`, `"clientsecret"`, and `"devicecode"`. The default value is `"certificate"`.</p><p>**Note:** Client secrets can't be imported.</p> |
+| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"certificate"`](/configure-service-based-auth-warehouse-management-app.md), [`"clientsecret"`](/configure-service-based-auth-warehouse-management-app.md), and [`"devicecode"`](/configure-user-based-auth-warehouse-management-app.md). The default value is `"devicecode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
 | `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
@@ -318,36 +253,8 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management.
 
-### Remove access for a device that authenticates by using a certificate or client secret
-
-The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
-
-1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
-1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that's used for the device, because you'll need it later.
-
-    If you've registered only one client ID, and multiple devices use the same client ID, you must push out new connection settings to those devices. Otherwise, they'll lose access.
-
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
-1. In the left navigation pane, select **Active Directory**, and make sure that you're in the correct directory.
-1. In the **Manage** list, select **App registrations**, and then select the application to configure. The **Settings** page appears and shows configuration information.
-1. Make sure that the client ID of the application matches the client ID that you made a note of in step 2.
-1. On the toolbar, select **Delete**.
-1. In the confirmation message that appears, select **Yes**.
-
-### Remove access for a device that authenticates by using the device code flow
-
-When a device is authenticated by using the device code flow, it's essential that you disable the associated user in Microsoft Entra ID to revoke access for that device if it's ever lost or compromised. By disabling the user in Microsoft Entra ID, you effectively revoke access for any device that uses the device code that's associated with that user. For this reason, we recommend that you have one Microsoft Entra ID user per device.
-
-To disable a user in Microsoft Entra ID, follow these steps.
-
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.
-1. In the **Manage** list, select **Users**.
-1. Find the user who is associated with the device code, and select the name to open the user's profile.
-1. On the toolbar, select **Revoke sessions** to revoke the user's sessions.
-
-> [!NOTE]
-> Depending on how you set up your authentication system, you might also want to change the user's password or completely disable the user account.
+- **User-based Authentication:**  [Device code flow](/configure-user-based-auth-warehouse-management-app.md#revoke)
+- **Service-based Authentication (deprecated):**  [Client secret, Certificate](/configure-service-based-auth-warehouse-management-app.md#revoke)
 
 ## Additional resources
 
