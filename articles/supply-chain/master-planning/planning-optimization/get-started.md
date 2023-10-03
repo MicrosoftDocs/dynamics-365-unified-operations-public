@@ -41,7 +41,7 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
-- Your user should have license assigned. As mentioned above, your current product license is enough to use planning optimization. However, the user who will perform installation of add-in must have a license assigned. If you get an error message regarding assigning license while installing the Planning Optimization Add-in follow steps in [Assign licenses to users](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users).
+- Your user account must be assigned a license. As mentioned previously, your current product license is enough to use Planning Optimization. However, the user who installs the add-in must have a license assigned. If you get an error message regarding licensing while installing the Planning Optimization Add-in, follow the steps provided in [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
