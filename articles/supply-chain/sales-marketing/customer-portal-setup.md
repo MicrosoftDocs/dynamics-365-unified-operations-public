@@ -81,7 +81,7 @@ To learn how you can set up and customize the Customer portal, you should start 
 
 - [Power Pages documentation](/power-pages/introduction)
 - [Dynamics 365 templates](/power-pages/templates/dynamics-365-apps/overview#supply-chain-management-customer-site)
-- [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page)
+- [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 To effectively manage your sites, you must understand the Power Pages and Microsoft Dataverse lifecycle. For more information, see the following resources:
 
