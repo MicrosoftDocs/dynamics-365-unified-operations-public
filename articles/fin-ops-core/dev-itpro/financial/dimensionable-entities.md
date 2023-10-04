@@ -51,7 +51,7 @@ Examples of highly volatile data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.
+These are considered highly volitile values and should not be used as financial dimensions. The correct use today is to implement these as financial tags. More information about financial tags can be found here. [Financial tags](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag)
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
 
