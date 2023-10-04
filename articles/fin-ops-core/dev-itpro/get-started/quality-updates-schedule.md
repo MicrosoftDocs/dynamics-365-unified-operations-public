@@ -39,7 +39,7 @@ For information about the maintenance windows for each region, see [What are the
 | Station 6 | DoD, Government Community Cloud, China |
 
 > [!IMPORTANT]
-> 1. The PQU build for every train is typically published to Lifecycle Services after the change cutoff date that's shown in the high-level PQU train schedule below. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. 
+> 1. The PQU build for every train is typically published to Lifecycle Services after the change cutoff date that's shown in the following high-level PQU train schedule. In this way, customers can download and self-apply the build as needed, to frontload any testing requirements. 
 > 2. Standard performance test (tier-4) sandbox environments, Premium performance test (tier-5) sandbox environments, and production environments will receive PQUs on weekends. If a PQU of production environment, Standard performance test (tier4), or Premium performance test (tier5) sandboxes didn't complete on the scheduled weekend then the operation gets rescheduled to the next weekend.
 
 ## High-level PQU train schedule
@@ -48,8 +48,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | PQU release train | Change cutoff date | PQU train duration | Status
 |---|---|---|---|
-| 10.0.30 PQU-2 | December 16th 2022 | January 2 to January 29 2023 | Completed |
-| 10.0.30 PQU-3 | January 13th 2023 | January 30 to February 26 2023 | Completed |
+| 10.0.30 PQU-2 | December 16, 2022 | January 2 to January 29 2023 | Completed |
+| 10.0.30 PQU-3 | January 13, 2023 | January 30 to February 26 2023 | Completed |
 | 10.0.30 PQU-4 | February 24, 2023 | March 6 to April 9, 2023 | Completed |
 | 10.0.31 PQU-1 | February 3, 2023 | February 13, 2023 to March 19, 2023| Completed |
 | 10.0.31 PQU-2 | March 3, 2023 | March 13, 2023 to April 16, 2023| Completed |
@@ -127,7 +127,7 @@ The following table shows the high-level train schedule. It includes a descripti
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
-> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
+> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates are done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
 
 ## Additional resources
 
