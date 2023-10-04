@@ -5,7 +5,7 @@ author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
 ms.search.form:
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho

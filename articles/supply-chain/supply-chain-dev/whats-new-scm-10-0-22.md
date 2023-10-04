@@ -5,7 +5,7 @@ author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
