@@ -62,8 +62,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.33 PQU-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Completed |
 | 10.0.34 PQU-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Completed |
 | 10.0.34 PQU-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| Completed |
-| 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Not Started |
-| 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| In-Progress |
+| 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| In-Progress |
+| 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Completed |
 | 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| In-Progress |
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
 | 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
@@ -76,19 +76,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-2 train schedule
-
-**App version: 10.0.1591.100**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | July 31 to August 3, 2023 | NA |
-| Station 2 | August 7 to August 10, 2023 | August 19 to August 20, 2023 |
-| Station 3 | August 8 to August 11, 2023 | August 19 to August 20, 2023 |
-| Station 4 | August 14 to August 17, 2023 | August 26 to August 27, 2023 |
-| Station 5 | August 21 to August 24, 2023 | September 2 to September 3, 2023 |
-| Station 6 | August 22 to August 25, 2023 | September 2 to September 3, 2023 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-3 train schedule
 
@@ -105,19 +92,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 2 to October 5, 2023 | October 14 to October 15, 2023 |
 | Station 6 | October 3 to October 6, 2023 | October 14 to October 15, 2023 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.35 Release-1 train schedule
-
-**App version: 10.0.1627.75**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | August 7 to August 10, 2023 | NA |
-| Station 2 | August 14 to August 17, 2023 | August 26 to August 27, 2023 |
-| Station 3 | August 15 to August 18, 2023 | August 26 to August 27, 2023 |
-| Station 4 | August 21 to August 24, 2023 | September 2 to September 3, 2023 |
-| Station 5 | August 28 to August 31, 2023 | September 9 to September 10, 2023 |
-| Station 6 | August 29 to September 1, 2023 | September 9 to September 10, 2023 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.35 Release-2 train schedule
 
 **App version: 10.0.1627.92**
@@ -132,6 +106,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | September 18 to September 21, 2023 | September 30 to October 1, 2023 |
 | Station 5 | September 25 to September 28, 2023 | October 7 to October 8, 2023 |
 | Station 6 | September 26 to September 29, 2023 | October 7 to October 8, 2023 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-1 train schedule
+
+**App version: 10.0.1695.68**
+
+**Platform version: 7.0.7036.87**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | October 9 to October 12, 2023 | NA |
+| Station 2 | October 16 to October 19, 2023 | October 28 to October 29, 2023 |
+| Station 3 | October 17 to October 20, 2023 | October 28 to October 29, 2023 |
+| Station 4 | October 23 to October 26, 2023 | November 4 to November 5, 2023 |
+| Station 5 | October 30 to November 2, 2023 | November 11 to November 12, 2023 |
+| Station 6 | October 31 to November 3, 2023 | November 11 to November 12, 2023 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
