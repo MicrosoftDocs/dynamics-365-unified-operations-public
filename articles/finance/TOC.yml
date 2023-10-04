@@ -1670,6 +1670,8 @@
             items:
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic Invoicing for Australia and New Zealand
+              href: localizations/apac-aus-nzl-electronic-invoices.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Egypt
