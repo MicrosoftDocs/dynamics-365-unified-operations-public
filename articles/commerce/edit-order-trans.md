@@ -4,7 +4,7 @@ description: This article describes how to edit and audit online order and async
 author: josaw1
 ms.date: 09/05/2023
 ms.topic: index-page
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: josaw
