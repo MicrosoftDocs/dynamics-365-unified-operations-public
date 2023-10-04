@@ -15,7 +15,7 @@ ms.custom: bap-template
 When you configure the **SSRS Reports/Services references** page, a relation between the output of a report and the execution format specified is established.
 
 ## Prerequisites
-Before you complete the tasks in this article, import the model mapping, model, and execution format needed to configure from the **Global** repository. For more information, see [Download ER Configuration](../../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+Before you complete the tasks in this article, import the model mapping, model, and execution format needed to configure from the **Global** repository. For more information, see [Download ER Configuration](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## Set up SSRS/Services references 
 1. Go to **Organization administration** > **Setup** > **LATAM>SSRS Reports/Services references** and select **New** to create a new configuration.
