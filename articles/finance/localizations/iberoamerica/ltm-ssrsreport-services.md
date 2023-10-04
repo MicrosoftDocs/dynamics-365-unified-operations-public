@@ -10,7 +10,7 @@ ms.custom: bap-template
 ---
 
 # SSRS Reports/Services references configuration for Latin America
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 When you configure the **SSRS Reports/Services references** page, a relation between the output of a report and the execution format specified is established.
 
@@ -30,4 +30,4 @@ Before you complete the tasks in this article, import the model mapping, model, 
 10. In **Parameters** section, add the name and value to identify each report if necessary and then save your changes.
 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
