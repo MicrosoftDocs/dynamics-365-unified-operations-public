@@ -10,7 +10,7 @@ ms.custom: bap-template
 ---
 
 # SSRS Reports/Services references configuration for Latin America
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 When you configure the **SSRS Reports/Services references** page, a relation between the output of a report and the execution format specified is established.
 
