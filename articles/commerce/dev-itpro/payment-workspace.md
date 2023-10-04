@@ -4,7 +4,7 @@ description: This article describes the Payment workspace in Microsoft Dynamics 
 author: BrianShook
 ms.date: 09/01/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
