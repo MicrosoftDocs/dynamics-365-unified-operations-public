@@ -67,7 +67,7 @@ To set up your system for product sharing, follow these steps.
 
 1. Go to the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and enable the following features:
 
-    - *(Preview) Master company data sharing*
+    - [*(Preview) Master company data sharing*](../../fin-ops-core/dev-itpro/sysadmin/srs-overview.md#master-company-sharing-preview)
       - To enable this feature the environment will need to be put in [maintenance mode](../..//fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
     - *(Preview) Cross-company data sharing for products*
       - This feature will only show in the list after the feature "*(Preview) Master company data sharing*" has been enabled.
