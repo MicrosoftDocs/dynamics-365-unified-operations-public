@@ -12,11 +12,10 @@ ms.search.validFrom: 2020-10-12
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+<!-- markdownlint-disable MD033 -->
 # Considerations for initial synchronization
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Before you start dual-write on a table, you can run an initial synchronization to handle existing data on both sides: finance and operations apps and customer engagement apps. You can skip the initial synchronization if you don't have to sync data between the two environments.
 
@@ -63,9 +62,9 @@ This limitation applies only to the initial synchronization from Dataverse for t
 
 As a workaround you can split the initial sync into these steps:
 
-1. Remove some of the lookup columns that are not mandatory from the dual-write table map and bring the number of lookups to 10. 
-2. After the lookup columns are removed, save the map and do the initial sync. 
-3. After the initial sync for the first step is successful, add the remaining lookup columns and remove the lookup columns that were synced in first step. Once again make sure the number of lookup columns is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup columns are synced. 
+1. Remove some of the lookup columns that are not mandatory from the dual-write table map and bring the number of lookups to 10.
+2. After the lookup columns are removed, save the map and do the initial sync.
+3. After the initial sync for the first step is successful, add the remaining lookup columns and remove the lookup columns that were synced in first step. Once again make sure the number of lookup columns is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup columns are synced.
 4. Add all the lookup columns back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
 
 ### Five-minute limit for finance and operations data export
@@ -88,10 +87,19 @@ Company and currency exchange tables are global in nature and all dual-write use
 
 If an individual row fails to be synchronized, you can't resync only that individual row. The first run of initial synchronization pushes the whole data set. This behavior is known as a *full push*. When change tracking is enabled in finance and operations apps, the subsequent runs are an incremental push that is based on the last run map version. When change tracking is disabled, subsequent runs cause a full push. During the incremental push, the error records won't be considered for resubmission.
 
-
 #### Only the top five errors can be viewed
 
 You can view only the top five errors from the initial synchronization error log.
+
+### Double quotes limitation
+
+Because of how some source fields are processed during the initial sync process, double quotes in your data can cause the initial sync to fail with an error message similar to following:
+
+```console
+Initial writes failed while parsing the data for leg:From Dynamics 365 for Finance and Operations Entity to Dynamics 365 for Sales Entity - Legal Entity. Message: Type=Microsoft.VisualBasic.FileIO.MalformedLineException, Msg=Line # cannot be parsed using the current Delimiters.
+```
+
+Addressing this error will require you to locate and remove the double quotes from your data.
 
 ## Known issues
 
@@ -283,16 +291,14 @@ For information about known issues, see [Troubleshoot issues during initial sync
 
 ## <a id="single-threaded-entities"></a>Single-threaded tables
 
-- Sales tax codes (msdyn\_taxcodes)
-- Customers V3 (accounts)
-- Vendors V2 (msdyn\_vendors)
-- Warehouses (msdyn\_warehouses)
-- Product categories (msdyn\_productcategories)
-- Employment (cdm\_employments)
-- Position worker assignments (cdm\_positionworkerassignmentmaps)
-- Warehouse locations (msdyn\_inventorylocations)
-- Modes of delivery (msdyn\_shipvias)
-
++ Sales tax codes (msdyn\_taxcodes)
++ Customers V3 (accounts)
++ Vendors V2 (msdyn\_vendors)
++ Warehouses (msdyn\_warehouses)
++ Product categories (msdyn\_productcategories)
++ Employment (cdm\_employments)
++ Position worker assignments (cdm\_positionworkerassignmentmaps)
++ Warehouse locations (msdyn\_inventorylocations)
++ Modes of delivery (msdyn\_shipvias)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-
