@@ -562,22 +562,38 @@
         items:
         - name: Credit and collections overview
           href: accounts-receivable/cm-credit-and-collections-overview.md
-        - name: Collections in Accounts receivable
-          href: accounts-receivable/collections-credit-accounts-receivable.md
         - name: Configure Accounts receivables and credit and collections
-          href: accounts-receivable/accounts-receivables-set-up-overview.md
-        - name: Set up credit and collections
-          href: accounts-receivable/set-up-collections.md
+          href: accounts-receivable/accounts-receivables-set-up-overview.md   
+        - name: Collections management key concepts
+          href: accounts-receivable/cm-collections-concepts.md      
+        - name: Set up collections
+          href: accounts-receivable/set-up-collections.md          
         - name: Review collections information
           href: accounts-receivable/tasks/review-collections-information.md
-        - name: Collections coordinator workspace (preview)  
-          href: accounts-receivable/CollectionsWorkspace.md
-        - name: Collections coordinator summary (preview)
-          href: accounts-receivable/CollectionsCoordinatorSummary.md  
+        - name: Customer aging snapshot
+          href: accounts-receivable/customer-aging-snapshot.md
+        - name: Customer aging report
+          href: accounts-receivable/customer-aging.md
+        - name: Customer aging data storage
+          href: accounts-receivable/customer-aging-data-storage.md
+        - name: Create a collection letter sequence
+          href: accounts-receivable/tasks/create-collection-letter-sequence.md
+        - name: Process collection letters
+          href: accounts-receivable/tasks/process-collection-letters.md
+        - name: Process collection letters example
+          href: accounts-receivable/process-collection-letters-example.md
         - name: Collections process automation
           href: accounts-receivable/collections-process-automate.md
         - name: Configure parameters for collections process automation 
           href: accounts-receivable/config-paramtrs-collections-proc-automate.md
+        - name: Set up and generate accounts receivable aging information
+          href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+        - name: Create a write-off journal for a customer
+          href: accounts-receivable/tasks/create-write-off-journal-customer.md            
+        - name: Collections coordinator workspace (preview)  
+          href: accounts-receivable/CollectionsWorkspace.md
+        - name: Collections coordinator summary (preview)
+          href: accounts-receivable/CollectionsCoordinatorSummary.md 
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
@@ -594,38 +610,14 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
-        - name: Collections management key concepts
-          href: accounts-receivable/cm-collections-concepts.md
-        - name: Configure Accounts receivables and credit and collections
-          href: accounts-receivable/accounts-receivables-set-up-overview.md
-        - name: Set up credit and collections
-          href: accounts-receivable/set-up-collections.md
       - name: Set up interest rates for an interest code
-        href: accounts-receivable/set-up-interest-rates-interest-code.md
+        href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
         href: accounts-receivable/tasks/create-interest-code-range.md
       - name: Waive, reinstate, or reverse interest fees
         href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
       - name: Process interest
-        href: accounts-receivable/tasks/process-interest.md
-      - name: Review collections information
-        href: accounts-receivable/tasks/review-collections-information.md
-      - name: Create a collection letter sequence
-        href: accounts-receivable/tasks/create-collection-letter-sequence.md
-      - name: Process collection letters
-        href: accounts-receivable/tasks/process-collection-letters.md
-      - name: Process collection letters example
-        href: accounts-receivable/process-collection-letters-example.md
-      - name: Set up and generate accounts receivable aging information
-        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-      - name: Customer aging snapshot
-        href: accounts-receivable/customer-aging-snapshot.md
-      - name: Customer aging report
-        href: accounts-receivable/customer-aging.md
-      - name: Customer aging data storage
-        href: accounts-receivable/customer-aging-data-storage.md
-      - name: Create a write-off journal for a customer
-        href: accounts-receivable/tasks/create-write-off-journal-customer.md
+        href: accounts-receivable/tasks/process-interest.md    
       - name: Advanced notes management
         href: localizations/italy/emea-ita-exil-structured-notes.md
       - name: References to original invoices in credit notes
@@ -4171,6 +4163,8 @@
         href: business-performance-analytics/business-performance-analytics-data-model.md
       - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md
+      - name: Access business performance analytics
+        href: business-performance-analytics/access-bpa.md
       - name: Business performance analytics FAQ 
         href: business-performance-analytics/bpa-faq.md
       - name: Business performance analytics reports
