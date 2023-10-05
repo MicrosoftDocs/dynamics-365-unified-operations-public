@@ -6,27 +6,19 @@ description: This article describes how to use customer hierarchies to manage bu
 author: josaw1
 ms.date: 02/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-# optional metadata
 ms.search.form: RetailOperations
 audience: Application User
-# ms.devlang: 
 ms.reviewer: v-chgriffin
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
-ms.dyn365.ops.version: 10.0.14
 
 ---
 
 # Manage B2B business partners using customer hierarchies
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to use customer hierarchies to manage business partners for Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 
@@ -91,8 +83,8 @@ Commerce headquarters users can inspect property values for all customer records
 
 ## Control access to the B2B ecommerce site
 
-By default, once a business partner is onboarded to a B2B ecommerce site, then they have access to all the B2B ecommerce sites. However, to restrict a business partner to one or more B2B ecommerce sites, then starting 10.0.38, admins can associate the desired online B2B channels to the customer hierarchy of the business partner. If no channel is associated with the customer hierarchy of the business partner, then the business partner can access all the B2B ecommerce sites of the organization.
+When a business partner is onboarded to a B2B e-commerce site, by default the business partner has access to all B2B e-commerce sites under the same organization. To be able to restrict business partner access to B2B ecommerce sites, starting in Commerce version 10.0.38 administrators can associate online B2B channels with the customer hierarchy of a business partner. If no channel is associated with the business partner's customer hierarchy, then the business partner can access all of the B2B e-commerce sites under the same organization.
 
-![Associate one or more channels to a customer hierarchy record.](../media/customer_hierarhcy_channels.png)
+![Associate one or more channels to a customer hierarchy record.](../media/customer_hierarchy_channels.png)
 
 [!include [footer-include](../../includes/footer-banner.md)]
