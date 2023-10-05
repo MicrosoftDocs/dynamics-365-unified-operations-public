@@ -36,7 +36,7 @@ If you first activate the map in dual-write and then start to import data, migra
 
 The maximum number of rows that is allowed through initial synchronization is 500,000 per run. The limit of 500,000 rows applies to each legal table, because each legal entity runs separately. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator). In particular, pay attention to the note that states, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
 
-If there must be more than 500,000 rows in a run when you the initial synchronization, we recommend that you migrate data into the finance and operations app and Dataverse separately, and skip the initial synchronization.
+If there must be more than 500,000 rows in a run when using initial synchronization, we recommend that you migrate data into the finance and operations app and Dataverse separately, and skip the initial synchronization.
 
 ### Twenty-four-hour limit
 
