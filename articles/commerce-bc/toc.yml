@@ -22,6 +22,6 @@
   tocHref: /power-platform/
   topicHref: /dynamics365/index
   items:
-    - name: Development & administration for finance and operations
+    - name: Dynamics 365 Commerce
       tocHref: /power-platform/admin
       topicHref: /dynamics365/unified-operations/dev-itpro/
