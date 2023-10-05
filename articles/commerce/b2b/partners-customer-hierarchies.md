@@ -89,4 +89,10 @@ Commerce headquarters users can inspect property values for all customer records
 
 ![Example of a customer hierarchy record, showing the Override button and the option in the drop-down list.](../media/HierarchyDetails2.png)
 
+## Control access to the B2B ecommerce site
+
+By default, once a business partner is onboarded to a B2B ecommerce site, then they have access to all the B2B ecommerce sites. However, to restrict a business partner to one or more B2B ecommerce sites, then starting 10.0.38, admins can associate the desired online B2B channels to the customer hierarchy of the business partner. If no channel is associated with the customer hierarchy of the business partner, then the business partner can access all the B2B ecommerce sites of the organization.
+
+![Associate one or more channels to a customer hierarchy record.](../media/customer_hierarchy_channels.png)
+
 [!include [footer-include](../../includes/footer-banner.md)]
