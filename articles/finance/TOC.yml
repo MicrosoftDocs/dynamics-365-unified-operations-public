@@ -4171,6 +4171,8 @@
         href: business-performance-analytics/business-performance-analytics-data-model.md
       - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md
+      - name: Access business performance analytics
+        href: business-performance-analytics/access-bpa.md
       - name: Business performance analytics FAQ 
         href: business-performance-analytics/bpa-faq.md
       - name: Business performance analytics reports
