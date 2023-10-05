@@ -1839,7 +1839,7 @@ items:
       - name: Build OData metadata cache when the AOS starts
         href: sysadmin/odata-warmup.md
       - name: Setting Up Azure Key Vault client
-        href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md
+        href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
     - name: Upgrades, updates, and hotfixes
