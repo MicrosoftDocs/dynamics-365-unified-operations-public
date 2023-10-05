@@ -194,7 +194,7 @@ The environment state will show the deployment progress. The state will be chang
 
 #### Post-migration considerations
 
-- Apply the latest [quality updates](../fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
+- Apply the latest [quality updates](../fin-ops-core/fin-ops/get-started/quality-updates.md) to your environments.
 - If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you're using Human Resources virtual tables in integration scenarios, see [Human Resources virtual tables in integration],  section for more information 
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
@@ -231,7 +231,7 @@ The environment state will show the deployment progress. The state will be chang
 5. When you run the dual-write integration for the first time for table maps, select the **Initial sync** checkbox. If there's an existing integration from the source Human Resources environment, you don't have to select the **Initial sync** checkbox when you run the integration for table maps.
 
 ##### Human Resources virtual tables in integration 
-1.	Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference).
+1.	Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 2.	If you're using Human Resources virtual tables in any integration scenario, all virtual tables will have a prefix as ‘mshr’ in Human Resources standalone environment. In a finance and operations environment, the tables have a prefix of ‘mserp’. 
 3.	The integration code needs to be updated to use the virtual tables with prefix ‘mserp’. Changes will be specific to your integration codebase. A global search with ‘mshr’ and replace it with ‘mserp’ would help. 
 4.	After the prefix is updated to ‘mserp’, relevant entities can be enabled exposing using the **Available finance and operations entities** catalog Dataverse table. 
