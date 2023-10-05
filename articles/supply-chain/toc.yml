@@ -215,7 +215,7 @@
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
-        href: ../finance/localizations/global/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
+        href: ../finance/localizations/global/globalization-studio-overview.md?context=/dynamics365/context/supply-chain
       - name: Globalization resources
         href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/supply-chain
       - name: Globalization services

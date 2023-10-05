@@ -5,7 +5,7 @@
   items:
   - name: Dynamics 365 Commerce
     tocHref: /dynamics365/finance/
-    topicHref: /dynamics365/finance/index
+    topicHref: /dynamics365/commerce/index
   - name: Dynamics 365 Commerce
     tocHref: /dynamics365/fin-ops-core/
     topicHref: /dynamics365/commerce/index
@@ -14,14 +14,14 @@
     topicHref: /dynamics365/commerce/index
   - name: Dynamics 365 Commerce
     tocHref: /dynamics365/supply-chain/
-    topicHref: /dynamics365/supply-chain/index
+    topicHref: /dynamics365/commerce/index
   - name: Dynamics 365 Commerce
     tocHref: /dynamics365/human-resources/
-    topicHref: /dynamics365/human-resources/index
+    topicHref: /dynamics365/commerce/index
 - name: Dynamics 365
   tocHref: /power-platform/
   topicHref: /dynamics365/index
   items:
     - name: Dynamics 365 Commerce
       tocHref: /power-platform/admin
-      topicHref: /dynamics365/unified-operations/dev-itpro/
+      topicHref: /dynamics365/commerce/index
