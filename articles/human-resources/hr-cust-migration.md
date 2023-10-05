@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 08/02/2023
+ms.date: 10/02/2023
 ms.topic: conceptual
 ms.prod: 
 ms.technology: 
@@ -195,7 +195,7 @@ The environment state will show the deployment progress. The state will be chang
 #### Post-migration considerations
 
 - Apply the latest [quality updates](/fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
-- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
+- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you are using Human Resources virtual tables in integration scenarios, see [Human Resources virtual tables in integration],  section for more information 
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
 - All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
@@ -229,6 +229,29 @@ The environment state will show the deployment progress. The state will be chang
 3. In the pane, select **Dynamics installed solutions**, **Dual-write applications core entity maps**, and **Dynamics 365 Human Resources maps**. Then select **Apply**. A message confirms that the solution is being applied. After the solution is successfully applied, all the available table maps will be shown.
 4. Review the available table maps to select and run the integration by using dual-write.
 5. When you run the dual-write integration for the first time for table maps, select the **Initial sync** checkbox. If there's an existing integration from the source Human Resources environment, you don't have to select the **Initial sync** checkbox when you run the integration for table maps.
+
+##### Human Resources virtual tables in integration 
+1.	Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference).
+2.	If you are using Human Resources virtual tables in any integration scenario, all virtual tables will have a prefix as ‘mshr’ in Human Resources standalone environment. In a finance and operations environment, the tables have a prefix of ‘mserp’. 
+3.	The integration code needs to be updated to use the virtual tables with prefix ‘mserp’. Changes will be specific to your integration codebase. A global search with ‘mshr’ and replace it with ‘mserp’ would help. 
+4.	After the prefix is updated to ‘mserp’, relevant entities can be enabled exposing using the **Available finance and operations entities** catalog Dataverse table. 
+5.	If you're not able to update the prefix from ‘mshr’ to ‘mserp’ for integration, a temporary solution would be pointing the Human Resources data source configuration to the finance and operations data source configuration that is used for authentication.
+Follow these steps to install the Dynamics 365 Human Resources virtual tables application and use virtual tables with the prefix “mshr”.
+    - Go to Power Platform Admin Center.
+    - On the **Environments** tab, select the Dataverse environment to which your finance and operations instance is connected.
+    - On **Resources**, select **Dynamics 365 apps**.
+    - Select **Install app** to open the **Install Dynamics 365 apps** dialog.
+    - Find and select the **Dynamics 365 HR Virtual Tables** app and select **Next**.
+    - Agree to the terms of service and select **Install** to initiate the app installation. 
+ 
+>[!NOTE]
+>Installation of the app may take several minutes.  
+
+6.	Uninstall **Dynamic 365 HR Virtual tables** and all prefix entities with a prefix of "mshr" will be removed from the Dataverse.
+
+>[!Note]
+> This should be done after verifying all the equivalent entities with ‘mserp’ prefix in the finance and operations environment are working as expected.
+
 
 #### Recommended practices
 
