@@ -194,8 +194,8 @@ The environment state will show the deployment progress. The state will be chang
 
 #### Post-migration considerations
 
-- Apply the latest [quality updates](/fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
-- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you are using Human Resources virtual tables in integration scenarios, see [Human Resources virtual tables in integration],  section for more information 
+- Apply the latest [quality updates](../fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
+- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you're using Human Resources virtual tables in integration scenarios, see [Human Resources virtual tables in integration],  section for more information 
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
 - All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
@@ -232,7 +232,7 @@ The environment state will show the deployment progress. The state will be chang
 
 ##### Human Resources virtual tables in integration 
 1.	Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference).
-2.	If you are using Human Resources virtual tables in any integration scenario, all virtual tables will have a prefix as ‘mshr’ in Human Resources standalone environment. In a finance and operations environment, the tables have a prefix of ‘mserp’. 
+2.	If you're using Human Resources virtual tables in any integration scenario, all virtual tables will have a prefix as ‘mshr’ in Human Resources standalone environment. In a finance and operations environment, the tables have a prefix of ‘mserp’. 
 3.	The integration code needs to be updated to use the virtual tables with prefix ‘mserp’. Changes will be specific to your integration codebase. A global search with ‘mshr’ and replace it with ‘mserp’ would help. 
 4.	After the prefix is updated to ‘mserp’, relevant entities can be enabled exposing using the **Available finance and operations entities** catalog Dataverse table. 
 5.	If you're not able to update the prefix from ‘mshr’ to ‘mserp’ for integration, a temporary solution would be pointing the Human Resources data source configuration to the finance and operations data source configuration that is used for authentication.
