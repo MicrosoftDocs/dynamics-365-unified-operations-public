@@ -96,5 +96,5 @@ There's a brief downtime in the finance and operations apps environment, so that
 
 ## Recommendations
 
-* Because you're using an existing Dataverse instance and linking with the finance and operations apps environment, it's important that you remember the disconnected Power Platform environment that was created while the finance and operations environment was created.
+* Because you're using an existing Dataverse instance and linking with the finance and operations apps environment, it's important that you remember the disconnected Power Platform environment that was created while the finance and operations environment was created is not deleted. You'll need to manually delete it.
 * If you plan to keep the Power Platform environment, note that there isn't a Dataverse instance on it, and you can't use Dataverse capabilities and features such as the Export to Data Lake Add-In, dual-write, and virtual tables.
