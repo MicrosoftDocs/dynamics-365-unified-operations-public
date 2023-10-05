@@ -4,7 +4,7 @@
 title: Make backing tables consumable as financial dimensions
 description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: RyanCCarlson2
-ms.date: 03/04/2019
+ms.date: 10/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 191363
 ms.assetid: 
@@ -51,7 +51,7 @@ Examples of highly volatile data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are considered highly volitile values and should not be used as financial dimensions. The correct use today is to implement these as financial tags. More information about financial tags can be found here. [Financial tags](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/financial-tag)
+These are considered highly volitile values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../finance/general-ledger/financial-tag.md)
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
 
