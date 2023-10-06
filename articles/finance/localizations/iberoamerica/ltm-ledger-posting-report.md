@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Print a Ledger Posting report for LATAM
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article explains how to print a **Ledger Posting** report for Latin America.
 
@@ -49,4 +49,4 @@ Before you can print a **Ledger Posting** report, the following prerequisites mu
 6. Select the posting layers to include on the report.
 7. Select **Print**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
