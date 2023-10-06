@@ -4,7 +4,7 @@
 title: Create a fixed asset
 description: This article explains how to create a new fixed asset record from the Fixed asset list page.
 author: moaamer
-ms.date: 03/28/2023
+ms.date: 10/06/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -54,7 +54,13 @@ If you didn't define the fixed asset number in the template of the Excel add-in,
 > After posting the depreciation, the **Placed in service** and **Depreciation run date** fields will be locked on the **Book** page. Also, both fields will be updated from the data entity.
 
 > [!WARNING]
-> The fixed asset record won't be deleted if transactions were posted to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
+> A fixed asset record cannot be deleted in the following cases:
+> - If transactions have already been posted to an associated fixed asset book.
+> - If the newly created fixed asset is entered on a journal line that is not yet posted.
+> 
+> It is also not possible to delete a newly created fixed asset if there is an active financial dimension that is based on fixed assets. This is due to the fact that it is not allowed to delete financial dimension values. In this case, it is recommended to do the following:
+> 1. Rename the fixed asset record to clearly mark it as deleted. Open **Options > Record info > Rename** and set the fixed asset number accordingly.
+> 2. Remove all associated fixed asset books or set **Calculate depreciation** to **No** in the books to avoid including the fixed asset in depreciation proposals.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
