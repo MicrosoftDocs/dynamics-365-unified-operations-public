@@ -5,13 +5,13 @@ author: Cpicon85
 ms.date: 10/06/2023 
 ms.topic: article
 ms.reviewer: kfend
-ms.author: Cpicon85 
+ms.author: kfend
 ms.custom: bap-template
 ---
 
 # Printing Configuration for Chile Inventory and balance report
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The article describes how to set up and print the Inventory and balance report for Chile.
 
@@ -40,4 +40,4 @@ Complete the following steps to print the report.
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
