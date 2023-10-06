@@ -195,7 +195,7 @@ The environment state will show the deployment progress. The state will be chang
 #### Post-migration considerations
 
 - Apply the latest [quality updates](../fin-ops-core/fin-ops/get-started/quality-updates.md) to your environments.
-- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you're using Human Resources virtual tables in integration scenarios, see [Human Resources virtual tables in integration],  section for more information 
+- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you're using Human Resources virtual tables in integration scenarios, see the [Human Resources virtual tables in integration](hr-cust-migration.md#human-resources-virtual-tables-in-integration) section for more information. 
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
 - All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
