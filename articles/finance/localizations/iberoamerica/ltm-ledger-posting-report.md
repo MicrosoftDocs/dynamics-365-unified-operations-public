@@ -1,6 +1,6 @@
 ---
 title: Print a Ledger Posting report for LATAM
-description: This article explains how to print a Ledger Posting for Latin America.
+description: This article explains how to print a Ledger Posting report for Latin America.
 author: Fhernandez0088
 ms.date: 10/06/2023
 ms.topic: Article
@@ -13,39 +13,40 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to print a Ledger Posting report for Latin America.
+This article explains how to print a **Ledger Posting** report for Latin America.
 
 ## Prerequisites
-Before you can print a Ledger posting report, the following prerequisites must be met.
 
-- The legal entity must have an address in a country within the LATAM localization.
-- You must have enabled the country-specific LATAM feature and the general feature.
-- The following ER configurations must be imported.
+Before you can print a **Ledger Posting** report, the following prerequisites must be met:
 
-   - Ledger accounting reports
-   - Ledger Accounting LATAM
-   - Ledger posting
+- The legal entity must have an address in a country/region that's within the LATAM localization.
+- You must enable the country/region-specific LATAM feature and the general feature.
+- The following Electronic reporting (ER) configurations must be imported:
 
-   For more information about ER configurations, see [Download ER Configuration](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+    - Ledger accounting reports
+    - Ledger Accounting LATAM
+    - Ledger posting
 
-- Create a new SSRS Reports/Services references and configure it as follows:
+    For more information about ER configurations, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-  - **Report/Service Id**: LedgerPosting
-  - **Report/Service name**: LedgerPost
-  - **Report/Service type**: Select an ER configuration
-  - In the **Model mapping name** field, select **Ledger accounting LTM**
-  - In the **Data model definition** field, select **LedgerPosting**
-  - In the **Format mapping** field, select **Ledger Posting LATAM**
-  - In the list of Report/Service types, enable **Ledger Posting**
+- You must create a new SSRS Reports/Services reference and configure it in the following way:
 
-## Print the Ledger posting report for Latin America
+    - In the **Report/Service Id** field, enter **LedgerPosting**.
+    - In the **Report/Service name** field, enter **LedgerPost**.
+    - In the **Report/Service type** field, select an ER configuration.
+    - In the **Model mapping name** field, select **Ledger accounting LTM**.
+    - In the **Data model definition** field, select **LedgerPosting**.
+    - In the **Format mapping** field, select **Ledger Posting LATAM**.
+    - In the list of report/service types, enable **Ledger Posting**.
 
-1. Go to **General Ledger** > **Inquiries and Reports** > **LATAM** > **Ledger Posting Report**.
-2. On the **Ledger posting report** slider, configure the filters for the report.
-3. In the **Report ID** field, select the corresponding Report/Service ID.
-4. In the **From date** and **To date** fields, select the date range of the transactions you want to print.
-5. In the **Account number** field, select the account number if you want to print for a specific account.
-6. Select the posting layers to include in the report.
-4. Select **Print**. 
+## Print the Ledger Posting report for Latin America
+
+1. Go to **General Ledger** \> **Inquiries and Reports** \> **LATAM** \> **Ledger Posting Report**.
+2. In the **Ledger posting report** dialog box, configure the filters for the report.
+3. In the **Report ID** field, select the corresponding report/service ID.
+4. In the **From date** and **To date** fields, select the date range of the transactions that you want to print.
+5. In the **Account number** field, select the account number if you want to print the transactions for a specific account.
+6. Select the posting layers to include on the report.
+7. Select **Print**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
