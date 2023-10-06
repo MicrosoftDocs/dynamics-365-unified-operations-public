@@ -45,6 +45,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
+|Cash and bank management|Net customer and vendor balance|This feature enables the netting capability between open customer balance and open vendor balance. Netting journals will be created to settle the open vendor and customer transactions, instead of creating customer and vendor payment journals to settle them. This feature is a preview feature and is available in sandbox environments in Finance version 10.0.38/|Feature management|
+|Cash and bank management|Settle bank statement with open customer invoices|This feature enhances the bank statement and reconciliation worksheet. Users can settle open customer invoices directly from selected bank statement lines. User can turn on feature "Generate customer and vendor payments from bank statements and reconciliation" in feauture management workspace. This feature is a preview feature and is available in sandbox environments in Finance version 10.0.38.|Feature management|
 
 
 ## Feature enhancements included in this release
