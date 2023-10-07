@@ -32,6 +32,7 @@ If the **Create customer in async mode** option is set to **Yes** in the store's
 The async customer functionality currently has the following limitation:
 
 - Loyalty cards can't be issued to async customers unless the new customer account ID has been synced back to the channel.
+- Async customers which haven't been synced to HQ cannot be selected when creating sync customer orders. To create customer orders for async customers, please follow this [guidance](https://learn.microsoft.com/en-us/dynamics365/commerce/customer-orders-overview#enable-customer-orders-to-be-created-in-asynchronous-mode) to enable customer orders to be created in asynchronous mode.
 
 ## Async customer enhancements
 
