@@ -52,7 +52,7 @@ Both price adjustments and discounts can be associated with price groups. Price 
 
 ## Best practices
 #### Mix and match discounts
-To reach optimal pricing calculation performance, it's suggested to **not** configure mix and match discount line groups with *number of products needed* more than 20. You can use a different unit to reduce the quantity. For example, when you're setting a mix and match discount for 200 *capsules* of coffee, it's suggested to use *case* or *sleeve* as the unit of measure instead.
+To reach optimal pricing calculation performance, it's suggested to **not** configure mix and match discount line groups with *number of products needed* more than 20. You can use a different unit to reduce the quantity. For example, when you're setting a mix and match discount for 200 *capsules* of coffee, it's suggested to use *pack* or *sleeve* as the unit of measure instead.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
