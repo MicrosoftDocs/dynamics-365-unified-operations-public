@@ -261,8 +261,8 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
 | | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts are retrieved, regardless of coupon code requirements. |
-| | StartDate | DateTimeOffset | Optional | The starting date (inclusive). |
-| | EndDate | DateTimeOffset | Optional | The ending date (inclusive). |
+| | StartDate | DateTimeOffset | Required | The starting date (inclusive). |
+| | EndDate | DateTimeOffset | Required | The ending date (inclusive). |
 
 
 <details>
@@ -271,7 +271,9 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 ```json
 {
     "searchCriteria": {
-        "ChannelId": 5637144592
+        "ChannelId": 5637144592,
+        "StartDate": "1900-01-01T00:00:00Z",
+        "EndDate": "2154-12-31T00:00:00Z"
     }
 }
 ```

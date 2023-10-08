@@ -219,6 +219,10 @@ The Commerce pricing engine **does not support** the following pricing features:
 - Vendor discount pass-through is not supported.
 - The generic currency feature is not supported i.e. even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement will only be considered valid for the currency defined on the trade agreement.
 - The standard Supply Chain Management pricing engine supports the pricing calculation based on the "Requested ship date" and "Requested receipt date" along with the current date. However, retail pricing currently does not support these values. The reason is that for B2C scenarios customers do not expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations it is common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing kicks in only if the application user is added as a call center user, so the retailers can assign certain users who will work with the Supply Chain Management pricing and assign a few that will work with the Retail pricing, that is, these users should be added as a call center users. Additionally, the **Use today's date for calculating prices** property in the **Commerce parameters > pricing and discounts > Miscellaneous** section must be turned on. This way they can keep the using accounts receivable parameter value for Requested ship date or Requested receipt date for Supply Chain Management pricing, but the retail pricing will keep using the today's date for pricing calculation.
+- For trade agreements, **only** below dimensions are supported in the Commerce pricing engine:
+  - Product dimensions: Size, Style, Color, Configuration;
+  - Inventory dimensions: Site, Warehouse;
+  - Tracking dimensions: Serial number;
 
 In addition, **only** the Commerce pricing engine supports the following pricing features:
 
