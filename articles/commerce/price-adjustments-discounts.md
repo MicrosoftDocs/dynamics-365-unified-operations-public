@@ -50,5 +50,9 @@ Both price adjustments and discounts can be associated with price groups. Price 
 >
 > However, the property "Count non-discountable products towards threshold" has an additional capability when compared to the "Count non-discountable products" property of the mix and match discounts. If the threshold discount is enabled, and if there is an item that has an existing discount which would prevent the item from any other discounts, then  the price paid for this item would qualify towards meeting the threshold, but this item will not get the additional discount.
 
+## Best practices
+#### Mix and match discounts
+To reach optimal pricing calculation performance, it's suggested to **not** configure mix and match discount line groups with *number of products needed* more than 20. You can use a different unit to reduce the quantity. For example, when you're setting a mix and match discount for 200 *capsules* of coffee, it's suggested to use *case* or *sleeve* as the unit of measure instead.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
