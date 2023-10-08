@@ -28,12 +28,12 @@ This article answers frequently ask questions about pricing and discounts in Mic
 - In Ecommerce: All operations.
 
 ### How can I extend the Commerce pricing engine?
-You can checkout the latest Commerce SDK samples in the folder `src/PricingEngine` of [microsoft\/Dynamics365Commerce\.Solutions\: Repository for hosting the Dynamics 365 Commerce end to end sample solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/ "microsoft/Dynamics365Commerce.Solutions: Repository for hosting the Dynamics 365 Commerce end to end sample solutions")
+You can checkout the latest Commerce SDK samples in the folder `src/PricingEngine` of [microsoft\/Dynamics365Commerce\.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/)
 
 ### Why am I seeing a wrong price?
 To diagnostic you price and discount configurations, you can follow below steps:
 1. Go to **Retail and Commerce** > **Pricing and discounts** > **Price simualtor**. Set your price calculation context including the channel, customer(if any), sales lines, etc..
-1. If you're seeing expected prices in **Price simulator**, your price and discount configurations are likely to be correct. You can follow [Commerce Data Exchange best practices \- Commerce \| Dynamics 365 \| Microsoft Learn](dev-itpro/cdx-best-practices.md "Commerce Data Exchange best practices - Commerce | Dynamics 365 | Microsoft Learn") to double check if you have successfully synchronized your data to the Commerce Scale Unit.
+1. If you're seeing expected prices in **Price simulator**, your price and discount configurations are likely to be correct. You can follow [Commerce Data Exchange best practices](dev-itpro/cdx-best-practices.md) to double check if you have successfully synchronized your data to the Commerce Scale Unit.
 1. If you're **not** seeing expected prices in **Price simulator**, you need to reevaluate your price and discount configurations including price groups, loyalty, affiliation, discounts, etc..
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
