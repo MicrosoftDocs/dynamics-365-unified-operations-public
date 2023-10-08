@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer:
 ms.search.region: Global
-ms.author:
+ms.author: zhizhen
 ms.search.validFrom:
 ms.dyn365.ops.version:
 ms.assetid:
@@ -33,7 +33,7 @@ You can checkout the latest Commerce SDK samples in the folder `src/PricingEngin
 ### Why am I seeing a wrong price?
 To diagnostic you price and discount configurations, you can follow below steps:
 1. Go to **Retail and Commerce** > **Pricing and discounts** > **Price simualtor**. Set your price calculation context including the channel, customer(if any), sales lines, etc..
-1. If you're seeing expected prices in **Price simulator**, your price and discount configurations are likely to be correct. You can follow [Commerce Data Exchange best practices \- Commerce \| Dynamics 365 \| Microsoft Learn](/dev-itpro/cdx-best-practices "Commerce Data Exchange best practices - Commerce | Dynamics 365 | Microsoft Learn") to double check if you have successfully synchronized your data to the Commerce Scale Unit.
+1. If you're seeing expected prices in **Price simulator**, your price and discount configurations are likely to be correct. You can follow [Commerce Data Exchange best practices \- Commerce \| Dynamics 365 \| Microsoft Learn](dev-itpro/cdx-best-practices.md "Commerce Data Exchange best practices - Commerce | Dynamics 365 | Microsoft Learn") to double check if you have successfully synchronized your data to the Commerce Scale Unit.
 1. If you're **not** seeing expected prices in **Price simulator**, you need to reevaluate your price and discount configurations including price groups, loyalty, affiliation, discounts, etc..
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
