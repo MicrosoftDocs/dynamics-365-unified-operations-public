@@ -4,16 +4,16 @@ description: This article describes how to create a channel navigation hierarchy
 author: samjarawan
 ms.date: 04/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+ms.custom:
+ms.assetid:
 ---
 # Create a channel navigation hierarchy
 
@@ -56,6 +56,9 @@ To create any additional navigation category nodes to represent the product cate
 1. In the **Friendly name** box, enter a friendly name.
 1. In the **Display order** box, enter a display order (optional).
 1. On the action pane, select **Save**.
+
+> [!NOTE]
+> To improve the client performance such as POS and eCommerce, it's recommended to configured no more than 1000 category nodes in a navigation hierarchy. If you configure more than 1000 category nodes for an online channel, you will need to build SSK customizations to ensure all category nodes are loaded.
 
 The following image shows an example of a completed channel navigation hierarchy.
 

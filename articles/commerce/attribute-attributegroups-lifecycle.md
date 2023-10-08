@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage attributes and attribute groups
-description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce. 
+description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 08/31/2022
 ms.topic: article
@@ -152,6 +152,8 @@ The following additional attribute metadata options are also available on the **
 - Sortable
 - Ignore case and format
 - Complete match
+- Mandatory
+- Hidden
 
 These options were originally intended to improve the search functionality for legacy SharePoint-based online storefronts. They don't necessarily apply to Commerce e-commerce websites or POS terminals. Because headless integration continues to be supported, these options are available for exporting attribute metadata by using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into a custom, optimized external search index. In this way, you can ensure that only attributes that should be indexed are indexed.
 
@@ -301,7 +303,7 @@ To define variant-specific attribute values, and to define multiple values for p
     - Channel product attributes
 
 #### Example of variant-specific attribute configuration
-		
+
 In this example, the **P001-Master** product is a multiple-activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the value of the **Activity** attribute. On the **Products** FastTab of the **Channel categories and product attributes** page for your channel, you define the **Activity** attribute value for the variants as shown in the following table.
 
 | Variant     | Activity attribute value |

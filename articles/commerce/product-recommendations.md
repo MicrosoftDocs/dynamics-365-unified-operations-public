@@ -6,19 +6,19 @@ description: This article provides general information about product recommendat
 author: Moonma
 ms.date: 04/21/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
-ms.search.form: 
-# ROBOTS: 
+ms.search.form:
+# ROBOTS:
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 
-ms.assetid: 
+ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: 10.0.5
 # Product recommendations overview
 
 [!include [banner](includes/banner.md)]
+
+> [!IMPORTANT]
+> The product recommendations service of Microsoft Dynamics 365 Commerce is paused for new customers. New customers can explore third party solutions as a replacement option.
 
 Microsoft Dynamics 365 Commerce can be used to show product recommendations on the e-Commerce website and point of sale (POS) device. Product recommendations are items that a customer might be interested in. The recommendations are based on the purchase trends of other customers in online and brick-and-mortar stores.
 
