@@ -13,14 +13,14 @@ ms.search.validFrom:
 
 # Submit a VAT return in XML format to the Danish Tax Agency
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article describes how to prepare your Microsoft Dynamics 365 Finance environment to generate a value-added tax (VAT) return in XML format and submit it to the Danish Tax Agency (Skattestyrelsen).
 
 ## Prerequisites
 
-To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](denmark/emea-dnk-vat-declaration-denmark.md).
+To automatically generate a VAT declaration in Excel or XML format, first create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup results for the boxes on the VAT declaration. For more information about the structure of the VAT declaration of Denmark and lookup results for boxes of the VAT declaration, see [VAT declaration of Denmark overview](emea-dnk-vat-declaration-denmark.md).
 
 Before you start to prepare your Finance environment for direct submission of VAT returns in XML format to the Danish Tax Agency, complete the required setup in [Preview a VAT declaration in Excel format](emea-dnk-vat-declaration-preview.md).
 
@@ -43,9 +43,9 @@ To submit your VAT return, you must obtain certificates from the Danish Tax Agen
 
 7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Danish Tax Agency server and client certificates.
 
-![Key Vault parameters.](media/Key-vault-parameters-dk.png)
+![Key Vault parameters.](../media/Key-vault-parameters-dk.png)
 
-For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](global/setting-up-azure-key-vault-client.md).
+For more information about how to set up Key Vault parameters, see [Set up the Azure Key Vault client](../global/setting-up-azure-key-vault-client.md).
 
 ## Set up electronic messages
 
@@ -70,7 +70,7 @@ This scenario consists of the following actions.
 | DK VAT create preview in Excel | This action creates a new electronic message and lets you generate a VAT declaration in Excel format for a specified period. |
 | DK VAT preview declaration | This action lets you generate a VAT declaration in Excel format for a period that's defined by the **From date** and **To date** values of the electronic message by running an ER format that's specified for this action. (By default, the **VAT Declaration Excel (DK)** ER format is used.) The generated report is attached to the electronic message. |
 
-![Actions for previewing a VAT declaration in Excel without collecting sales tax payments.](media/em-processing-preview-dk.png)
+![Actions for previewing a VAT declaration in Excel without collecting sales tax payments.](../media/em-processing-preview-dk.png)
 
 #### Scenario 2: Request information from the Danish Tax Agency about VAT obligation periods for the period that's specified in an electronic message
 
@@ -81,7 +81,7 @@ This scenario consists of the following actions.
 | DK VAT create calendar request | This action creates a new electronic message and lets you generate a request about VAT obligation periods (calendar) of the legal entity for a specified period and send it to the Danish Tax Agency. |
 | DK VAT calendar request | This action lets you request information about VAT obligation periods of the legal entity directly from the Danish Tax Agency for a period that's defined by the **From date** and **To date** values of the electronic message by running the [EMVATSendCalendar\_DK](#calendar-request) executable class. The response from the Danish Tax Agency can be viewed in a web browser as an HTML file that's attached to the electronic message. |
 
-![Actions for requesting information about VAT obligation periods from the Danish Tax Agency.](media/em-processing-calendar-dk.png)
+![Actions for requesting information about VAT obligation periods from the Danish Tax Agency.](../media/em-processing-calendar-dk.png)
 
 #### Scenario 3: Generate a VAT return electronic file and submit it to the Danish Tax Agency
 
@@ -99,9 +99,9 @@ This scenario consists of the following actions.
 | DK VAT return approved | This action changes the status of the electronic message to **DK VAT return approved** so that receipt information can be received from the Danish Tax Agency. |
 | DK VAT receipt request | This action lets you send a request about the receipt for the previously approved period directly to the Danish Tax Agency by running the [EMVATSendReceiptController\_DK](#receipt-request) executable class. The response from the Danish Tax Agency can be viewed in a web browser as an HTML file that's attached to the electronic message. |
 
-![Actions for generating a VAT return electronic file and submitting it to the Danish Tax Agency.](media/em-processing-submission-dk.png)
+![Actions for generating a VAT return electronic file and submitting it to the Danish Tax Agency.](../media/em-processing-submission-dk.png)
 
-For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
+For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 #### Import the data package
 
@@ -115,7 +115,7 @@ Follow these steps to import the data package that contains example settings for
 6. Select **Close**.
 7. After the data entities are uploaded, on the Action Pane, select **Import** or **Import now**.
 
-    ![Importing the data package that contains example settings for electronic messages.](media/em-package-dk.png)
+    ![Importing the data package that contains example settings for electronic messages.](../media/em-package-dk.png)
 
 8. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and validate the electronic message processing that you imported (**DK VAT return**).
 
@@ -146,7 +146,7 @@ Before you use these classes for the first time, you must save the parameters.
 
 3. Select **OK** in the dialog box for each executable class to save the specified parameters.
 
-![Saving the executable class parameters for Electronic messaging.](media/exec-class-parameters-dk.png)
+![Saving the executable class parameters for Electronic messaging.](../media/exec-class-parameters-dk.png)
 
 ### <a id="security-roles"></a>Set up security roles for electronic message processing
 
@@ -159,7 +159,7 @@ Follow these steps to limit access to the **DK VAT return** electronic message p
 
 ### Set up a tax registration number
 
-The **DK VAT return - Skattestyrelsen EM package** setup file provides the **Tax registration number** field for the **DK VAT return** electronic message processing. This field enables a VAT registration number that's independent of the legal entity's primary address and the registration ID that has been defined for companies that must report VAT returns by using the **DK VAT return** electronic message processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](global/emea-multiple-vat-registration-numbers.md).
+The **DK VAT return - Skattestyrelsen EM package** setup file provides the **Tax registration number** field for the **DK VAT return** electronic message processing. This field enables a VAT registration number that's independent of the legal entity's primary address and the registration ID that has been defined for companies that must report VAT returns by using the **DK VAT return** electronic message processing. Therefore, legal entities that have multiple VAT registrations can easily submit VAT returns that are specific to their VAT registration in Denmark. For more information about how to support filing for multiple VAT registrations, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 
 Follow these steps to define the VAT registration number that the **DK VAT return** electronic message processing must use to submit VAT returns.
 
@@ -167,7 +167,7 @@ Follow these steps to define the VAT registration number that the **DK VAT retur
 2. Select the **DK VAT return** electronic message processing, and then, on the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used to send the VAT return.
 3. Save your changes.
 
-If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](europe/emea-registration-ids.md#registration-type-creation) and [Registration category](europe/emea-registration-ids.md#supported-registration-categories).
+If the VAT registration number isn't specified in the **Tax registration number** additional field of the **DK VAT return** electronic message processing, the system retrieves it from the registration ID that's defined in the properties of the legal entity that's associated with the **VAT ID** registration category. For more information, see [Registration type](../europe/emea-registration-ids.md#registration-type-creation) and [Registration category](../europe/emea-registration-ids.md#supported-registration-categories).
 
 ## Generate a VAT declaration from electronic messages and submit it to the Danish Tax Agency
 
@@ -202,7 +202,7 @@ The following procedures apply to the example **DK VAT return** electronic messa
 7. In the **Run processing** dialog box, in the **Action** field, select **DK VAT calendar request**. Then select **OK**. The request is sent to the Danish Tax Agency, and the response that includes information about obligation periods is attached to the electronic message in HTML format.
 8. Select the **Attachments** button (paperclip symbol), and then select **Open** to open the file. Review the information from the response in your web browser.
 
-![Requesting information about VAT obligation periods from the Danish Tax Agency.](media/dk-e-vat-calendar.png)
+![Requesting information about VAT obligation periods from the Danish Tax Agency.](../media/dk-e-vat-calendar.png)
 
 ### Generate a VAT return electronic file and submit it to the Danish Tax Agency
 
@@ -231,7 +231,7 @@ The following procedures apply to the example **DK VAT return** electronic messa
 17. In the **Run processing** dialog box, in the **Action** field, select **DK VAT submit VAT return**. Then select **OK**. Your VAT return is transferred to the Danish Tax Agency, and the response is attached to the electronic message as an HTML file (**DK VAT return\_pending\_approval.html**). In the response, the Danish Tax Agency sends you a link that you must use to approve your VAT return.
 18. Select the **Attachments** button (paperclip symbol), and then select **Open** to open the HTML file in your browser. The HTML file contains a link to approve your VAT return in the **Godkendelsesportal for momsangivelse (VAT return approval portal)** section. Select this link to approve the VAT return.
 
-    ![Submitting a VAT return in XML format to the Danish Tax Agency.](media/dk-e-vat-submission.png)
+    ![Submitting a VAT return in XML format to the Danish Tax Agency.](../media/dk-e-vat-submission.png)
 
 19. After the VAT return is approved, on the **Messages** FastTab, select **Update status**.
 20. In the **Update status** dialog box, in the **Action** field, select **DK VAT return approved**. Then select **OK**. Verify that the message status is changed to **DK VAT return approved**.
@@ -271,4 +271,4 @@ Follow these steps to set up electronic messages to collect data from multiple l
 
 When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

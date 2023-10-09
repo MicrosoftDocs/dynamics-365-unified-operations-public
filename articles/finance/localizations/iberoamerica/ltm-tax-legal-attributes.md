@@ -11,8 +11,8 @@ ms.custom: bap-template
 
 # Tax and legal attributes for Latin America
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to add the tax and legal information that you can use to comply with company and fiscal legislation. The attributes that you can configure include the tax identification at different levels, the taxpayer classification per country, and different customizable concepts that can be manually filled. The fields for this information are located on the **LATAM** FastTab of the following pages:
 
@@ -57,4 +57,4 @@ To enable the **LATAM tax and legal** functionality, first enable the **LATAM Gl
 
 3. Enter any remaining field information that's required.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

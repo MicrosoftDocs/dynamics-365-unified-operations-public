@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Style the production floor execution interface
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../finance/includes/banner.md)]
 
 The article explains how to configure form controls so that the default production floor execution styles are applied to them.
 
