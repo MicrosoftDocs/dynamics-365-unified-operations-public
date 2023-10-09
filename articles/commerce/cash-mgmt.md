@@ -153,4 +153,23 @@ To set up the financial reconciliation functionality in headquarters, follow the
 
 For more information about the financial reconciliation functionality, see [Financial reconciliation in store](fin-recon.md).
 
+## Cash management for multiple currencies
+
+The retailers can configure POS to accept the multiple currencies as a payment for the transaction. However, the change back can only be provided in the store's default currency. For example, retailers can configure their store in USA with the default currency as USD, but the customers can pay for a transaction using Euros. However, change back can only be provided in the store's default currency i.e., USD. Thus, at the start of the day, the cashier's would only have USD, but at the end of the day, the cash drawer could have multiple currencies.   However, some retailers enhance the POS to enable their cashiers to provide change back in the tendered currency and with that, they require cash management operations such as declare start amount, float tender and remove tender operations to support foreign currencies as well so that they can account for the currency movements across various transactions. 
+
+With 10.0.38, all cash management operations not only support store's default currency, but also support foreign currencies as well. Follow the steps below to track currency movements across various transactions:
+
+1. Navigate to the "All stores" form in the headquarters (HQ) application and select the store which require cash management across multiple currencies
+2. Under the "Set up" tab, click on the "Cash declaration" button to open the supported denominations across various currencies for the store. Refer the image below. ![Add denominations for the currencies](./media/currencies.png "Add denominations for the currencies")
+3. Add the required denominations for the currencies which need to be tracked along with the store's default currency.
+4. Open the store details form for the above store and set the "Start amount calculation" configuration to "Sum". Refer the image below. ![Start amount calculation configuration on the store details form](./media/declarestartamountsetup.png "Start amount calculation configuration")
+5. Run the 1070 - Channel configuration job.
+6. Navigate to POS for the store where the above setup is performed. Open the "Declare start amount" operation.
+7. To Click on the "Count" button to open the supported denominations.
+8. Click on the filter icon on the app bar, select the desired currency, enter the start amount and save.
+9. Repeat the above process to add the start amount for all desired currencies. The configuration mentioned in the step 4 above ensures that the various amounts across the currencies are added to calculate the start amount. Please note that only one currency amount can be added per transaction. Providing the start amounts for multiple currencies in a single transaction will result in an error.
+10. Similar experience is available for Float and Tender removal operations.
+11. During the day, the currency balance can be removed from the cash drawers by using the Safe drop and Bank drop operations.
+12. Finally, at the end of the day, the Tender declare operation can be used to record the totals across all currencies. This operation supports recording the data across multiple currencies in a single transaction, so it is not needed to record the totals one currency at a time.  
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
