@@ -105,7 +105,7 @@ For more information, see [Configure Inventory Visibility](inventory-visibility-
 For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
 
 > [!IMPORTANT]
-> The default soft reservation feature configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with the outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on the outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+> The default soft-reservation configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
 
 ## Use the reservation feature in Inventory Visibility
 
