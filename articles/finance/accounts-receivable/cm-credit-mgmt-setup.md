@@ -77,6 +77,8 @@ Several credit management statistics are included in the **Customer credit manag
 5. Average credit limit %
 6. Average exposure %
 
+Set the **Calculate statistics for zero balance customers** to **Yes** to update the credit statistics for customers with no open transactions when running the aging snapshot process. This includes updating the open order amount. Turning this on can can slow down the aging process. 
+
 ### Credit limits
 
 - In Credit management, the customer credit limit is shown in the customer's currency. You must define the exchange rate type for the credit limit in the customer's currency. In the **Credit limit exchange rate type** field, select the type of exchange rate that should be used to convert the primary credit limit to the customer's credit limit.
