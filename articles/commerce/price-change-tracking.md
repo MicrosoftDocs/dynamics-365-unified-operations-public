@@ -72,17 +72,19 @@ To configure the price change tracking feature in Commerce headquarters, follow 
 1. On the **Prices and discounts** tab, add the legal entities that you want to enable price change tracking for, and then select **Save**.
 1. Run the **1110 (Global configuration)** distribution schedule job.
 
-After organizations that use [cloud-powered product search](cloud-powered-search-overview.md) in Commerce upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that you [initialize the base configuration data for Commerce scheduler](dev-itpro/CDX-Best-Practices.md#update-configurations), and then run the **1020 (Prices and discounts)** distribution schedule job after you upgrade your environment. 
+After organizations that use Commerce [cloud-powered product search](cloud-powered-search-overview.md) upgrade to Commerce version 10.0.32 or later for the first time, the price change tracking feature is enabled by default for all legal entities where cloud-powered product search is enabled. This enhancement helps improve efficiency when pricing data is published in the search index, because only incremental updates for products that have changed prices are monitored. A full synchronization of product data isn't required. To take advantage of this enhancement, ensure that you [initialize the base configuration data for Commerce scheduler](dev-itpro/CDX-Best-Practices.md#update-configurations), and then run the **1020 (Prices and discounts)** distribution schedule job after you upgrade your environment. 
 
-To disable price change tracking for a specific legal entity, in headquarters, remove the legal entity from the price change tracking setting in Commerce shared parameters (**Retail and Commerce \> Headquarters setup > Parameters \> Commerce shared parameters**). The removed legal entities won't automatically be added again, even if cloud-powered product search is enabled for them. If you remove all legal entities, you effectively disable the whole price change tracking feature.
+To disable price change tracking in headquarters for a specific legal entity, remove the legal entity from the price change tracking setting in Commerce shared parameters (**Retail and Commerce \> Headquarters setup > Parameters \> Commerce shared parameters**). The removed legal entities won't automatically be added again, even if cloud-powered product search is enabled for them. If you remove all legal entities, you effectively disable the price change tracking feature.
 
-### Specify batch group for price change tracking batch jobs
+### Specify a batch group for price change tracking batch jobs
 
-The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, Microsoft recommends that you specify a batch group following the steps below.
+The price change tracking feature triggers batch jobs to run in the background. To prevent the batch jobs blocking other critical jobs from processing, Microsoft recommends that you specify a batch group for price change tracking batch jobs.
+ 
+To specify a batch group for price change tracking batch jobs in headquarters, follow these steps.
 
 1. Reuse an existing batch group or [create a batch group](/dynamicsax-2012/appuser-itpro/create-a-batch-group).
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.
-1. Under **Backend tasks**, specify the batch group which will be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
+1. Under **Backend tasks**, specify the batch group to be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
 
 For information on the the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
 
@@ -93,7 +95,7 @@ The price change tracking feature is enabled by default for Azure Search configu
 - Large-scale changes (for example, bulk data migration).
 - Highly frequent update of pricing or product data (for example, more than one line per second).
 
-For such cases, Microsoft recommends that you temporarily disable the price change tracking feature by removing all legal entities from the **Price change tracking** grid in **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**, and then restarting AOS. After the data changes are complete, to re-enable the feature for desired legal entities, add the legal entitie back to the grid, and then restart AOS. If restarting AOS isn't practical, ensure that the batch group for pricing processing is set up correctly so that the pricing jobs generated won't impact processing of other system batch tasks.
+For such cases, Microsoft recommends that you temporarily disable the price change tracking feature by removing all legal entities from the **Price change tracking** grid in **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**, and then restarting AOS. After the data changes are complete, to re-enable the feature for desired legal entities, add the legal entity back to the grid, and then restart AOS. If restarting AOS isn't practical, ensure that the batch group for pricing processing is set up correctly so that the pricing jobs generated won't impact processing of other system batch tasks.
 
 ### Cross-company entity change tracking
 
