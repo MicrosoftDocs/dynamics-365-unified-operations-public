@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management overview
-description: This article provides information about data management in finance and operations. 
+description: This article provides information about data management in finance and operations.  
 author: peakerbl
 ms.date: 06/20/2022
 ms.topic: overview
