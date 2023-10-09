@@ -103,7 +103,8 @@
         "commerce/**/index.yml": "MSDocsHeader-Dynamics365",
         "human-resources/**/*.md":"MSDocsHeader-Dynamics365",
         "human-resources/**/index.yml":"MSDocsHeader-Dynamics365",
-        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365"
+        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/index.yml": "MSDocsHeader-Dynamics365"
       },
       "search.app": {
         "finance/**/*.md": [
