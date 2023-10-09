@@ -93,7 +93,7 @@ Regardless of the soft reservation feature that you're using (*Inventory Visibil
 
 1. Sign in to the Inventory Visibility app.
 1. Open the **Configuration** page, and then, on the **Soft Reservation** tab, review the default soft reservation hierarchy. Add new dimensions to the hierarchy as required.
-1. In the **Set Soft Reservation Mapping** section, view the default settings. By default, the soft-reserved inventory quantities will be recorded against the `softreservephysical` physical measure of the data source `iv`. The *Available for reservation* calculated measure is mapped to `availabletoreserve`. If you want to update the `availabletoreserve` calculated measure, go to the **Configuration** page, and then, on the **Calculated Measure** tab, expand and modify the calculated measure.
+1. In the **Set Soft Reservation Mapping** section, view the default settings. By default, the soft-reserved inventory quantities will be recorded against the `softreserved` physical measure of the data source `iv`. The *Available for reservation* calculated measure is mapped to `availabletoreserve`. If you want to update the `availabletoreserve` calculated measure, go to the **Configuration** page, and then, on the **Calculated Measure** tab, expand and modify the calculated measure.
 
 For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
 
@@ -103,6 +103,9 @@ For more information, see [Configure Inventory Visibility](inventory-visibility-
 > Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration of Inventory Visibility.
 
 For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
+
+> [!IMPORTANT]
+> The default soft-reservation configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
 
 ## Use the reservation feature in Inventory Visibility
 
@@ -158,7 +161,7 @@ Authorization: "Bearer {access_token}"
         "SizeId": "small"
     },
     "quantityDataSource": "iv",
-    "modifier": "softreservphysical",
+    "modifier": "softreserved",
     "quantity": 1,
     "ifCheckAvailForReserv": true
 }
