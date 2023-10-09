@@ -50,7 +50,7 @@ Dual-write solutions are managed solutions that can be uninstalled. However, whe
 
 ### I have data in both a customer engagement app and a finance and operations app, and I bootstrap my existing data in the customer engagement app. If my data isn't currently aligned, can I specify a master source for the initialization run, so that all differences are applied to the target?
 
-After the bootstrapping is done, you can configure the initial synchronization to apply differences and select a master. For more information about bootstrapping, see [Bootstrap with company data FAQ](bootstrap-../../../fin-ops/data-entities/company-data.md). For more information about the initial synchronization, see [Enable table maps for dual-write](enable-entity-map.md).
+After the bootstrapping is done, you can configure the initial synchronization to apply differences and select a master. For more information about bootstrapping, see [Bootstrap with company data FAQ](../../../fin-ops/data-entities/bootstrap-company-data.md). For more information about the initial synchronization, see [Enable table maps for dual-write](enable-entity-map.md).
 
 ## Dual-write administration and management
 

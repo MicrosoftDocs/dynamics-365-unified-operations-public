@@ -51,7 +51,7 @@ To configure task guides for a solution, follow these steps on the **System para
 > [!IMPORTANT]
 > The first time that you open the **Help** tab, you must connect to Lifecycle Services. Be sure to select the link in the middle of the form, wait for the connection, close the dialog box, and then select **OK** to get to the **System Parameters** page.
 >
-> [![Connect to LCS](../../fin-ops/get-started/media/connect-to-lcs-crop-1024x365.png "Connect to LCS.")](./media/connect-to-lcs-crop.png)
+> [![Connect to LCS](../../fin-ops/get-started/media/connect-to-lcs-crop-1024x365.png "Connect to LCS.")](../../fin-ops/get-started/media/connect-to-lcs-crop.png)
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.
@@ -83,14 +83,14 @@ If you're a partner, and you promote a library to a corporate library and includ
 
 Finance and operations apps are rarely used in their out-of-box form. Instead, the solution is customized and extended to fit the organization's needs. You can also customize and extend the Help experience. For example, you can add custom Help to the in-product **Help** pane.
 
-Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../help/custom-../../fin-ops/get-started/help-overview.md).
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../../fin-ops/get-started/custom-help-overview.md).
 
 If you want to collaborate with Microsoft on tools and processes for customizing Help, fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 
 ## See also
 
 [Help system](../../fin-ops/get-started/help-overview.md)  
-[Custom Help overview](../help/custom-../../fin-ops/get-started/help-overview.md)  
+[Custom Help overview](../../fin-ops/get-started/custom-help-overview.md)  
 [Task recorder resources](../user-interface/task-recorder.md)  
 [Create documentation or training with Task Recorder](../../fin-ops/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

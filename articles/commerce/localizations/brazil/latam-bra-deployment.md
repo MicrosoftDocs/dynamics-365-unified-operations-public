@@ -185,7 +185,7 @@ In the receipt format designer, add Brazilian custom fields to the appropriate r
 
 ## Set up the fiscal registration process
 
-To set up the fiscal registration process in Commerce headquarters, follow these steps. For more information, see [Set up the fiscal integration for Commerce channels](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md).
+To set up the fiscal registration process in Commerce headquarters, follow these steps. For more information, see [Set up the fiscal integration for Commerce channels](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 

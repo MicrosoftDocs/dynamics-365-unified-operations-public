@@ -110,7 +110,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 <tr>
 <td>Create main accounts for the GST posting type.</td>
 <td><p>Go to <strong>General ledger</strong> &gt; <strong>Common</strong> &gt; <strong>Main accounts</strong>, and create a main account for each state-wide ledger account that is required. On the <strong>Setup</strong> FastTab, be sure to select <strong>GST</strong> as the posting type.</p>
-<p>For more information, see <a href="../general-ledger/tasks/create-main-account.md">Create a main account</a>.</p>
+<p>For more information, see <a href="../../general-ledger/tasks/create-main-account.md">Create a main account</a>.</p>
 </td>
 </tr>
 <tr>

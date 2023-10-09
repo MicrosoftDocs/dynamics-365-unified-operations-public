@@ -348,7 +348,7 @@ To automatically generate a VAT declaration, you should associate sales tax code
 
 6. In the **State** field, select **Completed**, and review the parameters.
 
-    [![Conditions FastTab on the Application specific parameters page.](../media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+    [![Conditions FastTab on the Application specific parameters page.](../media/Pic1_ReportFieldLookup.png)](../media/Pic1_ReportFieldLookup.png)
 
 7. On the Action Pane, select **Export** to export the parameters to an XML file.
 8. Select the **VAT declaration Excel (CZ**) configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CZ)**. 
@@ -377,7 +377,7 @@ To automatically classify a transaction by using the subject code of a reverse c
     |---------------|----------------------------|-------------------------------------|---------|
     | Other         | \*Blank\*                  | \*Not blank\*                       | This line must be set up to prevent an error message from being generated for transactions that don't have a reverse charge code. |
 
-[![Lookup for the subject code.](../media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[![Lookup for the subject code.](../media/Pic2_SubjectCodeLookup.png)](../media/Pic2_SubjectCodeLookup.png)
 
 ### Set up parameters for fulfillment mode codes
 
@@ -422,7 +422,7 @@ A sales transaction can automatically be classified as fulfilling the condition 
 
 6. Review the parameters.
 
-    [![Lookup for the condition that there is no obligation to issue a tax document.](../media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+    [![Lookup for the condition that there is no obligation to issue a tax document.](../media/Pic3_NoTaxDocumentLookup.png)](../media/Pic3_NoTaxDocumentLookup.png)
 
 7. Update the **State** field for all the parameters to **Completed**.
 
@@ -540,7 +540,7 @@ To generate the XML file for the VAT declaration, follow these steps.
 
 15. Select **OK**. When the declaration in XML format has been generated, the status of the message is changed to **Generated**.
 
-    [![Electronic message that has Generated status.](../media/PicEM.jpg)](media/PicEM.jpg)
+    [![Electronic message that has Generated status.](../media/PicEM.jpg)](../media/PicEM.jpg)
 
     If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 

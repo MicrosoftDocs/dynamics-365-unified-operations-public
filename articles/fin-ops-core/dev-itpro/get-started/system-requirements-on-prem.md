@@ -109,7 +109,7 @@ This means that users of the Finance + Operations (on-premises) application will
 
 Examples for a full 2-way trust setup could be.
 
-<img src="./media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
+<img src="../../fin-ops/get-started/media/2WayTrust.png" width="700" hspace="50" alt="Examples of supported full 2-way trust between DFL versions"/>
 
 #### Known limitations with using the full 2-way trust setup
 

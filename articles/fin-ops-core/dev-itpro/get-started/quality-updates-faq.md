@@ -111,7 +111,7 @@ To select a sandbox environment for the FRP for PQUs, follow these steps.
 2. Select **Project Settings** for the project.
 3. On the **Proactive quality update settings** tab, in the drop-down list, select a sandbox environment. Then select **Save**. 
 
-:::image type="content" source="media/pqu-setting-screen.png" alt-text="A screenshot of the Proactive quality update settings tab of the Project Settings page."::: 
+:::image type="content" source="../../fin-ops/get-started/media/pqu-setting-screen.png" alt-text="A screenshot of the Proactive quality update settings tab of the Project Settings page."::: 
 
 ### Can customers revert or change the selection for Station 1?
 

@@ -100,12 +100,12 @@ The following default data mapping is included in the fiscal document provider c
 
 For more information about general Commerce settings for Russia, see [Set up Commerce localization for Russia](rus-commerce-setup.md).
 
-To set up fiscal integration for Russia, complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md).
+To set up fiscal integration for Russia, complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md).
 
-1. [Set up a fiscal registration process](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to make a note of the settings of the fiscal registration process that are [specific to Russia](#configure-the-fiscal-registration-process).
-1. [Set error handling settings](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Set up a fiscal registration process](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to make a note of the settings of the fiscal registration process that are [specific to Russia](#configure-the-fiscal-registration-process).
+1. [Set error handling settings](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 1. [Set up fiscal X/Z reports from the POS](setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
-1. [Enable manual execution of deferred fiscal registration](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
+1. [Enable manual execution of deferred fiscal registration](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Set up the functionality for management of customer information in POS](rus-customer-information.md#setup).
 1. [Configure channel components](#configure-channel-components).
 
@@ -318,7 +318,7 @@ Follow these additional steps to create deployable packages that contain Commerc
 
 [Set up Commerce localization for Russia](rus-commerce-setup.md)
 
-[Set up the fiscal integration for Commerce channels](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md)
+[Set up the fiscal integration for Commerce channels](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md)
 
 [Retail SDK architecture](../../dev-itpro/retail-sdk/retail-sdk-overview.md)
 

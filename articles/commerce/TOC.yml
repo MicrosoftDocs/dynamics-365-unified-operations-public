@@ -643,7 +643,7 @@
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
           - name: Configure express payments for PayPal
-            href: dev-itpro/express-payments-dev-itpro/paypal.md
+            href: dev-itpro/paypal.md
           - name: Payments FAQ
             href: dev-itpro/payments-retail.md
         - name: Email and notifications
