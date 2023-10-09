@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft is committed to delivering predictable service updates. These service updates are made generally available for self-deployment before Microsoft automatically applies the update. The timing of the release of packages for for self-update relative to the timing of production auto-updates varies. To determine self-update and auto-update timing for upcoming releases, use the [Targeted release schedule (dates subject to change)](#targeted-release-schedule-dates-subject-to-change).
+Microsoft is committed to delivering predictable service updates. These service updates are made generally available for self-deployment before Microsoft automatically applies the update. The timing of the release of packages for self-update relative to the timing of production auto-updates varies. To determine self-update and auto-update timing for upcoming releases, use the [Targeted release schedule (dates subject to change)](#targeted-release-schedule-dates-subject-to-change).
 
 Customers can take up to four service updates per year and are required to take a minimum of two service updates per year. Customers can choose to pause one update at a time. Pausing a service update can apply to the designated user acceptance testing (UAT) sandbox, production, or both environments. After the pause window ends, and if the customer hasn't self-updated to a supported service update, Microsoft will auto-apply the latest update based on the configuration  in Dynamics Lifecycle Services. To learn more about how to pause service updates, see [Pause service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
