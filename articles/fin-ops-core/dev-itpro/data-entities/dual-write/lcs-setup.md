@@ -1,6 +1,6 @@
 ---
 title: Dual-write setup from Lifecycle Services
-description: This article explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
+description: This article explains how to set up a dual-write connection from Microsoft Dynamics 365 Lifecycle Services.
 author: laneswenka
 ms.date: 10/10/2023
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-01-06
 
 
 
-This article explains how to enable dual-write from Microsoft Dynamics Lifecycle Services (LCS).
+This article explains how to enable dual-write from Microsoft Dynamics 365 Lifecycle Services.
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ Customers must complete the Power Platform integration as described in the follo
 
 ## Set up dual-write for new or existing Dataverse environments
 
-Follow these steps to set up dual-write from LCS **Environment Details** page:
+Follow these steps to set up dual-write from Lifecycle Services **Environment Details** page:
 
 1. On the **Environment Details** page, expand the **Power Platform Integration** section.
 
@@ -54,22 +54,22 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 ### Linking mismatch
 
-It's possible that your dual-write environment is linked to a Dataverse instance while LCS isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It's recommended that LCS environment details match what you are connected to in dual-write so that the same connection can be used by business events, virtual tables, and add-ins.
+It's possible that your dual-write environment is linked to a Dataverse instance while Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It's recommended that Lifecycle Services environment details match what you are connected to in dual-write so that the same connection can be used by business events, virtual tables, and add-ins.
 
-If your environment has a linking mismatch, LCS shows a warning on your environment details page that resembles the following example : "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which isn't recommended."
+If your environment has a linking mismatch, Lifecycle Services shows a warning on your environment details page that resembles the following example : "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which isn't recommended."
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
 
 If you receive this warning, try one of the following solutions:
 
-- If your LCS environment has never been set up for Power Platform integration, you can connect to the Dataverse instance that is configured in dual-write by following the instructions in this article.
-- If your LCS environment is already set up for Power Platform integration, you should unlink dual-write and reconnect it to the one specified by LCS using the [Scenario: Reset or change linking](relink-environments.md#scenario-reset-or-change-linking).
+- If your Lifecycle Services environment has never been set up for Power Platform integration, you can connect to the Dataverse instance that is configured in dual-write by following the instructions in this article.
+- If your Lifecycle Services environment is already set up for Power Platform integration, you should unlink dual-write and reconnect it to the one specified by Lifecycle Services using the [Scenario: Reset or change linking](relink-environments.md#scenario-reset-or-change-linking).
 
 In the past a manual support ticket option was available, but that was before option 1 above existed.  Microsoft no longer supports manual relinking requests via Support tickets.
 
 ### Incorrect permissions on service principal
 
-It's possible to receive the following error while linking the finance and operations environment to the Dataverse environment in LCS:
+It's possible to receive the following error while linking the finance and operations environment to the Dataverse environment in Lifecycle Services:
 
 | Error code | Error message |
 | --- | --- |
