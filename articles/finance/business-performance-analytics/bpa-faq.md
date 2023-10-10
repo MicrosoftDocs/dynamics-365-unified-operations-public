@@ -55,7 +55,7 @@ We recommend that you check 24 hours after the installation of business performa
 
 ### How many years of data are available on reports?
 
-Business performance analytics has data for the current fiscal year plus the previous three years.
+Business performance analytics has data for the current calendar year plus the previous three calendar years.
 
 ### After business performance analytics is set up, how often is the data refreshed?
 
@@ -193,7 +193,7 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### Is there any cost to install and use business performance analytics during public preview?
 
-No. The data is restricted to the current fiscal year plus the previous three fiscal years.
+No. The data is restricted to the current calendar year plus the previous three calendar years.
 
 ### How do I know when a new release of business performance analytics is available?
 
