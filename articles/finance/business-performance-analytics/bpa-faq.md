@@ -6,7 +6,7 @@ description: This article answers frequently asked questions about business perf
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 08/30/2023
+ms.date: 10/10/2023
 ms.topic: faq
 ms.prod: 
 ms.technology:
@@ -34,8 +34,8 @@ The setup of business performance analytics takes about 30 minutes. However, it 
 The following errors are likely to occur if another operation is in progress during the installation of business performance analytics. If these errors persist, retry the installation.
 
 - "There's another \[RibbonMetadataGeneration\] running at this moment."
-- "Issues with enabling Change tracking: msdyn\_BpaTablesVirtualEntities."
-- "Import Failed - errorCode: 0Description: Unable to complete updates to the Track changes option for table."
+- "Issues with enabling change tracking: msdyn\_BpaTablesVirtualEntities."
+- "Import failed - errorCode: 0Description: Unable to complete updates to the Track changes option for table."
 - "Flight EnableSqlRowVersionChangeTracking isn't enabled. The functionality requires enabling sql row version change tracking feature. Enable flight EnableSqlRowVersionChangeTracking."
 
 ### How do I retry the installation of business performance analytics if it fails?
@@ -72,12 +72,12 @@ Option one:
 
 1. Sign into [Power Platform admin center](https://admin.powerplatform.microsoft.com/) using Microsoft Dataverse admin credentials. 
 2. Select the environment where you want to uninstall.
-3. Click on the Environment URL provided in the details. This redirects you to the Dataverse environment login page.
+3. Click on the environment URL provided in the details. This redirects you to the Dataverse environment login page.
 4. Open the developer console by either pressing **Ctrl+Shift+I** or go to **More tools**, select **Developer tools** and **Console** tab.
 5. Paste the following JavaScript code into the console to start the uninstallation process.
-6. The approximate time that's required to delete all the solutions is 20 minutes. Y If the operation is successful, you receive the following message: "BPA Solutions removed successfully".
+6. The approximate time that's required to delete all the solutions is 20 minutes. If the operation is successful, you receive the following message: Business performance analytics solutions removed successfully.
    
-Uninstall BPA
+Uninstall business performance analytics
 ```
 // Get the current org URL
 const ORG = window.location.hostname;
@@ -188,8 +188,8 @@ The approximate time that's required to delete all the solutions is 20 minutes.
 
 ### How often will updates for business performance analytics be released?
 
-- **New features:** Once per month 
-- **Bugs:** Bi-weekly 
+- **New features** - Once per month 
+- **Bugs** - Bi-weekly 
 
 ### Is there any cost to install and use business performance analytics during public preview?
 
