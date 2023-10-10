@@ -2,10 +2,10 @@
 title: Dual-write setup from Lifecycle Services
 description: This article explains how to set up a dual-write connection from Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
-ms.date: 05/16/2022
+ms.date: 10/10/2023
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.author: laswenka
 ms.search.validFrom: 2020-01-06
