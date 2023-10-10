@@ -22,6 +22,12 @@ ms.search.validFrom: 2021-11-30
 
 Export to Azure Data Lake lets you connect your finance and operations environment to a data lake to unlock insights that are hidden in your data.
 
+> **NOTE**
+>
+> Export to Data lake is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) Existing customers may transition to Synapse Link by following guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink)
+>
+> 
+
 When you enable the Export to Azure Data Lake add-in, you connect your finance and operations environment to a designated data lake. Authorized users can then copy data from your finance and operations environment to that data lake. Tools such as Power BI and Azure Synapse enable analytics, business intelligence, and machine learning scenarios for data in the data lake.
 
 When you select data in finance and operations apps, the system makes an initial copy of the data in the data lake. After that initial copy is made, the system keeps the data in the data lake fresh by continuously inserting, updating, and deleting data that changed. You don't have to manage exports or monitor the service, and there is no additional burden on your finance and operations workloads.
@@ -35,9 +41,8 @@ Export to Azure Data Lake is a fully managed, scalable, and highly available ser
 - You can select both standard and custom entities and tables.
 - You can work with data in the data lake by using Microsoft Azure Synapse Analytics or many other third party tools.
 
-The storage account must be in the same Azure region as your finance and operations environment.
+The storage account must be in the same Azure region as your finance and operations environment. You can select to enable near real-time data changes and business events when installing the service.
 
-You can select to enable near real-time data changes and business events when installing the service.
 
 ## Enable near real-time data changes 
 When you select this feature, data is inserted, updated, and deleted in your data lake in near real-time. As data changes in your finance and operations environment, the same data is updated in the data lake within a few minutes.
