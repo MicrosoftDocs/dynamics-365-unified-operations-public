@@ -83,14 +83,14 @@ If you're a partner, and you promote a library to a corporate library and includ
 
 Finance and operations apps are rarely used in their out-of-box form. Instead, the solution is customized and extended to fit the organization's needs. You can also customize and extend the Help experience. For example, you can add custom Help to the in-product **Help** pane.
 
-Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../../fin-ops/get-started/custom-help-overview.md).
+Microsoft has provided a toolkit to help you deploy and connect custom Help to the **Help** pane. For information about how you can set up a custom Help solution that is connected to the **Help** pane, see [Custom Help overview](../../fin-ops/get-started/help-overview.md).
 
 If you want to collaborate with Microsoft on tools and processes for customizing Help, fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).
 
 ## See also
 
 [Help system](../../fin-ops/get-started/help-overview.md)  
-[Custom Help overview](../../fin-ops/get-started/custom-help-overview.md)  
+[Custom Help overview](../../fin-ops/get-started/help-overview.md)  
 [Task recorder resources](../user-interface/task-recorder.md)  
 [Create documentation or training with Task Recorder](../../fin-ops/user-interface/task-recorder-training-docs.md)  
 [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

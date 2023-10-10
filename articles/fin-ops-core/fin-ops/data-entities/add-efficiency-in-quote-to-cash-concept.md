@@ -44,7 +44,7 @@ In Supply Chain Management, follow these steps to view origin and ownership info
     - Find the quotation in the grid, and review the values in the **Origin** and **Ownership** columns.
     - Open the quotation to view its details. On the **Sales quotation header** FastTab, in the **Quotation creation** section, review the values in the **Origin** and **Ownership** fields.
 
-    :::image type="content" source="media/qtc-origin-ownership.svg" alt-text="Origin and Ownership fields on a quotation details page." lightbox="../../dev-itpro/data-entities/dual-write/media/qtc-origin-ownership.svg":::
+    :::image type="content" source="../../dev-itpro/data-entities/dual-write/media/qtc-origin-ownership.svg" alt-text="Origin and Ownership fields on a quotation details page." lightbox="../../dev-itpro/data-entities/dual-write/media/qtc-origin-ownership.svg":::
 
 ### View origin and ownership information in Sales
 

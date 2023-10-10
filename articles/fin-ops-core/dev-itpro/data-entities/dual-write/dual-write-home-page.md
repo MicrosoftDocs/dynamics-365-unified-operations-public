@@ -71,7 +71,7 @@ These topics describe mapping between concepts in finance and operations apps an
 
 + [Company concept in Dataverse](../../../fin-ops/data-entities/company-data.md)
 
-    + [Initialize company data](../../../fin-ops/data-entities/bootstrap-company-data.md)
+    + [Initialize company data](../../../fin-ops/data-entities/company-data.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
