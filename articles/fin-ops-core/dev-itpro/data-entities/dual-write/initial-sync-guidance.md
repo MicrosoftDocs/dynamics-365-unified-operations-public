@@ -79,7 +79,7 @@ Every user in a customer engagement organization with dual-write must be added t
 
 ### Company and Currency Exchange Tables Required Security Role
 
-Company and currency exchange tables are global in nature and all dual-write users require read access to these two tables. To provide access, all dual-write users needs to be added to the **Dual-Write App User** security role. If a user doesn't have this security role assigned to them, they are unable to read tables that contain Company and Currency values.
+Company and currency exchange tables are global in nature and all dual-write users require read access to these two tables. To provide access, all dual-write users need to be added to the **Dual-Write App User** security role. If a user doesn't have this security role assigned to them, they're unable to read tables that contain Company and Currency values.
 
 ### Error handling capabilities
 
