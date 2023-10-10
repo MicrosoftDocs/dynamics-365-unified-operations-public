@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Field list configuration for Latin America
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 You can create lists that are used to provide required information that's related to Latin America (LATAM) on transactions. These lists are used in the **LATAM** section of multiple transaction posting pages, including the pages for invoices, packing slips, and journals. For every transaction, you can select an option in each list, based on the configuration of the document class that's used in the transaction.
 
@@ -41,4 +41,4 @@ This procedure shows how to create a custom field list.
 5. In the **Tax application code** field, enter the code that the fiscal authority uses to identify the document class type.
 6. Select **Save**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

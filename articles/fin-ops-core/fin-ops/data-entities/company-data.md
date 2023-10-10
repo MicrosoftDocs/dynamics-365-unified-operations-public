@@ -69,15 +69,15 @@ There are several ways to auto-populate the company name in customer engagement 
 
 + If you are a system administrator, you can set the default company by navigating to **Advanced Settings > System > Security > Users**. Open the **User** form, and in the **Organization Information** section, set the **Company to default on Forms** value.
 
-    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
+    :::image type="content" source="../../dev-itpro/data-entities/dual-write/media/autopopulate-company-name-1.png" alt-text="Set default company on Organization Information section.":::
 
 + If you have **Write** access to the **SystemUser** table for the **Business Unit** level, then you can change the default company on any form by selecting a company from the **Company** drop-down menu.
 
-    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
+    :::image type="content" source="../../dev-itpro/data-entities/dual-write/media/autopopulate-company-name-2.png" alt-text="Changing the company name on a new account.":::
 
 + If you have **Write** access to data in more than one company, then you can change the default company by choosing a row that belongs to different company.
 
-    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Choosing a row changes the default company.":::
+    :::image type="content" source="../../dev-itpro/data-entities/dual-write/media/autopopulate-company-name-3.png" alt-text="Choosing a row changes the default company.":::
 
 + If you are a system configurator or administrator, and you want to auto-populate company data on a custom form, then you can use [form events](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Add a JavaScript reference to **msdyn_/DefaultCompany.js** and use the following events. You can use any out-of-the-box form, for example, the **Account** form.
 
@@ -88,7 +88,7 @@ There are several ways to auto-populate the company name in customer engagement 
 
 To apply filtering based on the company context on your custom forms or on custom lookup columns added to the standard forms, open the form and use the **Related Records Filtering** section to apply the company filter. You must set this for each lookup column that requires filtering based on the underlying company on a given row. The setting is shown for **Account** in the following illustration.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Apply company context.":::
+:::image type="content" source="../../dev-itpro/data-entities/dual-write/media/apply-company-context.png" alt-text="Apply company context.":::
 
 
 

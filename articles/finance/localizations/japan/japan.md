@@ -92,7 +92,7 @@ This article includes information and links to resources that can help you set u
 
 ## Invoicing
 
-- [Qualified Invoice System](../apac-jpn-qualified-invoice-system.md)
+- [Qualified Invoice System](apac-jpn-qualified-invoice-system.md)
 - [Configure consolidated invoice parameters and setup for accounts payable](consolidated-invoice-parameters-setup-accounts-payable.md)
 - [Consolidated invoices](apac-jpn-consolidate-invoices.md)
 - [Create and confirm a customer consolidated invoice](create-confirm-customer-consolidated-invoice.md)
@@ -125,7 +125,7 @@ This article includes information and links to resources that can help you set u
 - [Inquiry on deductible expenses](inquiry-deductible-expenses.md)
 - [Progressive withholding tax](apac-jpn-progressive-withholding-tax-calculation.md)
 - [Set up master data for inclusion of deductible expenses for multiple posting layers](set-up-master-data-inclusion.md)
-- [Qualified Invoice System - Set up sales tax for JCT](../apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct)
+- [Qualified Invoice System - Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct)
 
 ### Consumption tax report
 

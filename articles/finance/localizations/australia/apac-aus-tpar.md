@@ -37,7 +37,7 @@ A TPAR requires that you provide information to the company contact person who i
 2. Select **New** to create a contact for your legal entity. Be sure to select a legal entity in the **Contact for** field.
 3. Check by **Party ID** value to make sure that you select the legal entity that Standard Audit File for Tax (SAF-T) will be reported from.
 
-    ![Creating a contact for your company.](media/apac-au-tpar-contact-person.png)
+    ![Creating a contact for your company.](../media/apac-au-tpar-contact-person.png)
 
 ### Import Electronic reporting configurations
 
@@ -47,7 +47,7 @@ In Microsoft Dynamics 365 Finance, import the latest available version of these 
 - TPAR model mapping (AU)
 - TPAR (AU) report format
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Prepare a TPAR
 
@@ -57,7 +57,7 @@ Before you generate a TPAR, collect the data that's required for the report. Thi
 2. In the **From date** and **To date** fields, enter values to define the reporting period.
 3. In the **Run type** field, select a value. If you're testing report data, select **Test**. To generate a report to send to the ATO, select **Production**.
 
-    ![Generating a TPAR.](media/apac-au-tpar-create.png)
+    ![Generating a TPAR.](../media/apac-au-tpar-create.png)
 
 4. In the report versions, select **New** to start to collect data for the report. Then select **Operations** \> **Collect data**.
 5. On the report, provide the vendor's selection criteria according to the TPAR reporting requirements. You can select vendors based on their posting profile or vendor group. You can also specify whether the process of collecting data should be run through batch processing.
@@ -66,7 +66,7 @@ Before you generate a TPAR, collect the data that's required for the report. Thi
 
 6. Select **Payees** to review the collected data.
 
-    ![View of collected data for payees.](media/apac-au-tpar-payees.png)
+    ![View of collected data for payees.](../media/apac-au-tpar-payees.png)
 
     Use this view to review the gross amount that's paid to vendors, together with GST and withholding tax information.
 

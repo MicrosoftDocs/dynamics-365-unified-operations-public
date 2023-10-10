@@ -43,7 +43,7 @@ This article explains how to get help with finance and operations apps or Micros
 </tr>
 <tr>
 <td>Use the <strong>Issue search</strong> tool.</td>
-<td>In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed. For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
+<td>In <a href="https://lcs.dynamics.com/">LCS</a>, use the <strong>Issue search</strong> tool to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed for a specific functional area, and which issues have already been fixed. For more information, see <a href="../../dev-itpro/lifecycle-services/issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
 <td>Get support within your finance and operations app.</td>

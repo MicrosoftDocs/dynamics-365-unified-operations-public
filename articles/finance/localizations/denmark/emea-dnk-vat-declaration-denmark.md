@@ -20,9 +20,9 @@ This article describes how to set up the value-added tax (VAT) declaration for D
 
 As of version 10.0.37 of Dynamics 365 Finance, direct submission of VAT returns in XML format to the Danish Tax Agency is supported.
 
-The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and [collecting tax data from several legal entities into one VAT declaration](../emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
+The **VAT return with direct submission to Danish Tax Agency** feature in Finance supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and [collecting tax data from several legal entities into one VAT declaration](emea-dnk-vat-declaration-submission.md#run-vat-declaration) in the same system database.
 
-For more information about how to prepare a VAT return for direct submission to the Danish Tax Agency, see [Submit a VAT return in XML format to the Danish Tax Agency](../emea-dnk-vat-declaration-submission.md).
+For more information about how to prepare a VAT return for direct submission to the Danish Tax Agency, see [Submit a VAT return in XML format to the Danish Tax Agency](emea-dnk-vat-declaration-submission.md).
 
 ## Sharing customer data
 
@@ -36,7 +36,7 @@ Data that's reported in a VAT declaration in Excel format has the same structure
 
 To automatically generate a VAT declaration in Excel or XML format, create enough sales tax codes to keep a separate VAT accounting for each box of the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result for the boxes on the VAT declaration.
 
-For Denmark, you must configure the **Report field lookup** lookup. For more information about how to set up application-specific parameters, see [Set up application-specific parameters for VAT declaration fields](../emea-dnk-vat-declaration-preview.md#set-up-application-specific-parameters).
+For Denmark, you must configure the **Report field lookup** lookup. For more information about how to set up application-specific parameters, see [Set up application-specific parameters for VAT declaration fields](emea-dnk-vat-declaration-preview.md#set-up-application-specific-parameters).
 
 In the following tables, the "Lookup result/Total" column shows the lookup result that's preconfigured for a specific box of the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the box of the VAT declaration.
 

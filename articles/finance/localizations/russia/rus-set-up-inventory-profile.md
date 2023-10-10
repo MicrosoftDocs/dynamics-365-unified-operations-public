@@ -304,7 +304,7 @@ On the **Inventory and warehouse management parameters** page, you can select a 
 2. On the **General** tab, in the **Inventory profile** section, in the **Inventory profile** field, select the inventory profile that should automatically be used in transfer orders.
 3. Set the **Use compatible inventory profiles** option to **Yes** if the **Use compatible inventory profiles** option in transfer orders should be set to **Yes** by default.
 
-    ![Inventory and warehouse management parameters page, General tab.](media/12_Inventory_and_warehouse_management_parameters.png)
+    ![Inventory and warehouse management parameters page, General tab.](../media/12_Inventory_and_warehouse_management_parameters.png)
 
 4. On the **Bills of materials** tab, in the **Inventory profile** field, select the inventory profile that should be used by default when BOMs are created and exploded, and when reporting as finished is processed, if an inventory profile isn't specified on the BOM lines.
 

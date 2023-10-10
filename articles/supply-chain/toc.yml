@@ -345,7 +345,7 @@
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing for France
-              href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
