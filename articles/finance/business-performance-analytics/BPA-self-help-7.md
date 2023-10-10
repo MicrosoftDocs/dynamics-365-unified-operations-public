@@ -21,7 +21,7 @@ audience: Application User
 
 ## Missing budget transaction header: Error code: ERR00007 [Type: Warning]
 
-Error code *ERR00007* is logged in the `BPA_SelfHelp_Log` table in Microsoft Dataverse when there are budget transaction line entries that don't have corresponding budget transaction headers. These records are excluded and won't be transferred to fact tables. Some Microsoft reports might show either fields that have no data or incomplete records. In these cases, you might have to create modified versions of the reports to address the gaps and ensure accurate reporting.
+Error code *ERR00007* is logged in the `Transform Log` table in Microsoft Dataverse when there are budget transaction line entries that don't have corresponding budget transaction headers. These records are excluded and won't be transferred to fact tables. Some Microsoft reports might show either fields that have no data or incomplete records. In these cases, you might have to create modified versions of the reports to address the gaps and ensure accurate reporting.
  
 No immediate action is required, because this issue might be caused by data synchronization delays. We recommend that you observe the next few business performance analytics runs to see whether the issue is fixed.
 
