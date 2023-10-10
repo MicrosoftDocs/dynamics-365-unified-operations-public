@@ -81,7 +81,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse configured for dual-write.
 
-        + f1752846-f0df-4766-96f5-c109adf67d7f
+        + 00000015-0000-0000-c000-000000000000
         + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
 
     + **Security roles**: Select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write.
@@ -101,11 +101,11 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     **Related health check result:**<br>
     *The finance and operations app can connect to the Dataverse*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID f1752846-f0df-4766-96f5-c109adf67d7f exists<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
     > [!NOTE]
-    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **f1752846-f0df-4766-96f5-c109adf67d7f** to communicate with Dataverse, the **Modified by** field will be set to the app user.
+    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
 
 4. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or later, this step is no longer needed.
