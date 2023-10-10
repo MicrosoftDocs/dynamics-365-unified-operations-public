@@ -42,7 +42,7 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 5. You can monitor the progress by periodically refreshing the environment details page. Setup typically takes 30 minutes or less.  
 
-6. When the setup is complete, a message will inform you if the process was successful or if there was a failure. If the setup failed, then a related error message is displayed. You must fix any errors before moving to the next step.
+6. When the setup is complete, a message informs you if the process was successful or if there was a failure. If the setup failed, then a related error message is displayed. You must fix any errors before moving to the next step.
 
 7. Select **Link to Power Platform environment** to create a link between Dataverse and the current environment's databases. This typically takes less than 5 minutes.
 
@@ -54,9 +54,9 @@ Follow these steps to set up dual-write from LCS **Environment Details** page:
 
 ### Linking mismatch
 
-It is possible that your dual-write environment is linked to a Dataverse instance while LCS is not set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It is recommended that LCS environment details match what you are connected to in dual-write so that the same connection can be used by business events, virtual tables, and add-ins.
+It's possible that your dual-write environment is linked to a Dataverse instance while LCS isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It's recommended that LCS environment details match what you are connected to in dual-write so that the same connection can be used by business events, virtual tables, and add-ins.
 
-If your environment has a linking mismatch, LCS shows a warning that resembles the following example on your environment details page: "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which is not recommended."
+If your environment has a linking mismatch, LCS shows a warning on your environment details page that resembles the following example : "Microsoft has detected that your environment is linked via Dual-write to a different destination than specified in Power Platform Integration, which isn't recommended."
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integration link mismatched.":::
 
@@ -69,14 +69,14 @@ In the past a manual support ticket option was available, but that was before op
 
 ### Incorrect permissions on service principal
 
-It is possible to receive the following error while linking the finance and operations environment to the Dataverse environment in LCS:
+It's possible to receive the following error while linking the finance and operations environment to the Dataverse environment in LCS:
 
 | Error code | Error message |
 | --- | --- |
-| DW9003 | Failed to connect to CRM. Please ensure that the service principal has the correct permissions to access CRM.|
-| DW9003 | Failed to connect to AX. Please ensure that the service principal has the correct permissions to access AX. | 
+| DW9003 | Failed to connect to CRM. Ensure that the service principal has the correct permissions to access CRM.|
+| DW9003 | Failed to connect to AX. Ensure that the service principal has the correct permissions to access AX. | 
 
-This error indicates that the application users created for dual-write to access data on the target platforms have not been configured with the appropriate permissions. To resolve this error, ensure the application users have been configured correctly following the guidance in [System requirements and prerequisites](./requirements-and-prerequisites.md).
+This error indicates that the application users created for dual-write to access data on the target platforms haven't been configured with the appropriate permissions. To resolve this error, ensure the application users have been configured correctly following the guidance in [System requirements and prerequisites](./requirements-and-prerequisites.md).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
