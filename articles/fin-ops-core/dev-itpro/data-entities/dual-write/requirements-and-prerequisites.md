@@ -2,10 +2,10 @@
 title: System requirements and prerequisites
 description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: NHelgren
-ms.date: 05/31/2023
+ms.date: 10/10/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -42,7 +42,7 @@ Currently, we support dual-write in the following regions:
 
 ## Verify requirements and grant access
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a finance and operations app environment to a Dataverse environment.
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a finance and operations app environment to a Microsoft Dataverse environment.
 
 You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
@@ -58,7 +58,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     *Dual Write is supported on finance and operations app environments with Platform Update PU 33 (App version 10.0.9) or later*
 
-2. Grant Dataverse access so that it can connect to a finance and operations app.
+2. Grant Dataverse access so that it can connect to a finance and operations apps.
 
     1. Open your instance of the finance and operations app, search and navigate to Microsoft Entra ID applications.
 
@@ -118,7 +118,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 5. Install **Dual-write application solutions**.
 
-    In Power Apps, in the left pane, selects **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
 
     + Customers, products, and vendors.
     + End-to-end process flows like quote to cash.
