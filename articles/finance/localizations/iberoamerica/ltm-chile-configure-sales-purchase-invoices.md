@@ -10,6 +10,9 @@ ms.custom: bap-template
 ---
 
 # Configure sales and purchase invoices
+
+[!include[banner](../../includes/banner.md)]
+
 This article explains how to use the LATAM features to work with Chilean fiscal documents related to purchase and sales transactions. An invoice is represented by a **Document class**, not the invoice transaction. The document class has the same information as a fiscal invoice document, like the typification, sales point, branch, invoice number structure and any additional required fields.
 
 ## Sales invoices
@@ -53,3 +56,8 @@ The requirements for vendor invoices are the same as sales invoices, however the
 2. Add a **Document class type** and a **Document class letter**.
 4. In each **Document class** form, in the **Journal names** section, add the journal names where the document classes can be used. 
 5. Configure the document mask following the Chilean requirements, four characters for the prefix and eight characters for the document number.
+
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
