@@ -107,7 +107,7 @@
         - name: System requirements for on-premises deployments
           href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/commerce
         - name: Installation steps for Retail channel components in an on-premises environment
-          href: ../fin-ops-core/dev-itpro/deployment/deploy-dev-itpro/retail-onprem.md?context=/dynamics365/context/commerce
+          href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?context=/dynamics365/context/commerce
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/commerce
         - name: Commerce Data Exchange implementation guidance
@@ -643,7 +643,7 @@
           - name: Enhanced payments in storefront checkout
             href: dev-itpro/enhanced-sca.md
           - name: Configure express payments for PayPal
-            href: dev-itpro/express-payments-dev-itpro/paypal.md
+            href: dev-itpro/paypal.md
           - name: Payments FAQ
             href: dev-itpro/payments-retail.md
         - name: Email and notifications

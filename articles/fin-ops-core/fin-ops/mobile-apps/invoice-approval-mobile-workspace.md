@@ -53,13 +53,13 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tr class="odd">
 <td>Microsoft Dynamics 365 Finance must be deployed in your organization.</td>
 <td>System administrator</td>
-<td>See <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.
+<td>See <a href="../../dev-itpro/deployment/deploy-demo-environment.md">Deploy a demo environment</a>.
 </td>
 </tr>
 <tr class="even">
 <td>The <strong>Invoice approvals</strong> mobile workspace must be published.</td>
 <td>System administrator</td>
-<td>See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
+<td>See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>
