@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format, version 1.2, has been implemented.
+To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented.
 
 This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
