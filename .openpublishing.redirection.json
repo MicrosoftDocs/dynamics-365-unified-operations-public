@@ -1,5 +1,11 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "/articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
+      "redirect_url": "/dynamics365/get-started",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "../apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
