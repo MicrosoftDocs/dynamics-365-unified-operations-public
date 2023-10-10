@@ -2,10 +2,10 @@
 title: Considerations for initial synchronization
 description: This article provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 06/24/2022
+ms.date: 10/10/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2020-10-12
@@ -46,7 +46,7 @@ Don't run the initial synchronization from Dataverse to a finance and operations
 
 ### Limit of 40 legal entities while the environments are being linked
 
-Currently, there is a limit of 40 legal entities while the environments are being linked. If you try to enable maps where more than 40 legal entities are linked between the environments, you will receive the following error message:
+Currently, there's a limit of 40 legal entities while the environments are being linked. If you try to enable maps where more than 40 legal entities are linked between the environments, you receive the following error message:
 
 ```console
 Dual-write failure - Plugin registration failed: [(Unable to get partition map for project DWM-1ae35e60-4bc2-4905-88ea-XXXXX. Error Exceeds the maximum partitions allowed for mapping DWM-1ae35e60-4bc2-4905-88ea- XXXXX)], One or more errors occurred.
@@ -62,10 +62,10 @@ This limitation applies only to the initial synchronization from Dataverse for t
 
 As a workaround you can split the initial sync into these steps:
 
-1. Remove some of the lookup columns that are not mandatory from the dual-write table map and bring the number of lookups to 10.
-2. After the lookup columns are removed, save the map and do the initial sync.
+1. Remove some of the lookup columns that aren't mandatory from the dual-write table map and bring the number of lookups to 10.
+2. After the lookup columns are removed, save the map, and do the initial sync.
 3. After the initial sync for the first step is successful, add the remaining lookup columns and remove the lookup columns that were synced in first step. Once again make sure the number of lookup columns is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup columns are synced.
-4. Add all the lookup columns back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
+4. Add all the lookup columns back to the map, save the map and run the map with skip initial sync. This enables the map for live sync mode.
 
 ### Five-minute limit for finance and operations data export
 
@@ -75,11 +75,11 @@ This type of synchronization is supported in Platform update 37 (PU37) and later
 
 ### Security role for write access
 
-Every user in a customer engagement organization with dual-write must be added to the **Dual-Write Runtime User** role. Without this role, users will be unable to create any rows in tables in the customer engagement organization.
+Every user in a customer engagement organization with dual-write must be added to the **Dual-Write Runtime User** role. Without this role, users are unable to create any rows in tables in the customer engagement organization.
 
 ### Company and Currency Exchange Tables Required Security Role
 
-Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To provide access, all dual-write users will need to be added to the **Dual-Write App User** security role. If a user does not have this security role assigned to them, they will be unable to read tables that contain Company and Currency values.
+Company and currency exchange tables are global in nature and all dual-write users require read access to these two tables. To provide access, all dual-write users needs to be added to the **Dual-Write App User** security role. If a user doesn't have this security role assigned to them, they are unable to read tables that contain Company and Currency values.
 
 ### Error handling capabilities
 
@@ -93,13 +93,13 @@ You can view only the top five errors from the initial synchronization error log
 
 ### Double quotes limitation
 
-Because of how some source fields are processed during the initial sync process, double quotes in your data can cause the initial sync to fail with an error message similar to following:
+Because some source fields are processed during the initial sync process, double quotes in your data can cause the initial sync to fail with an error message similar to following:
 
 ```console
 Initial writes failed while parsing the data for leg:From Dynamics 365 for Finance and Operations Entity to Dynamics 365 for Sales Entity - Legal Entity. Message: Type=Microsoft.VisualBasic.FileIO.MalformedLineException, Msg=Line # cannot be parsed using the current Delimiters.
 ```
 
-Addressing this error will require you to locate and remove the double quotes from your data.
+Addressing this error requires you to locate and remove the double quotes from your data.
 
 ## Known issues
 
