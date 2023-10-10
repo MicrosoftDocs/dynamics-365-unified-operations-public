@@ -18,7 +18,7 @@ An invoice is represented by a **Document class**, not the invoice transaction, 
 It is important to configure the following forms that will allow you to use them in sales transactions later:
 | Form | Description |
 | ------------- | ------------- |
-| Document class letter | countries that have different invoice types, and you can distinguish them by the letter. In Costa Rica you need to configure it as "WL" without letter|
+| Document class letter | Countries that have different invoice types, and you can distinguish them by the letter. In Costa Rica you need to configure it as "WL" without letter|
 | Document class type| Allows you to set which fiscal document type you need, for example invoice, credit note, packing skip, etc.|
 | Sales point| Allows you to create the sales point from where the fiscal document is issued|
 | Number sequence | Create a numerical sequence that will provide consecutive numbering for your fiscal documents|
