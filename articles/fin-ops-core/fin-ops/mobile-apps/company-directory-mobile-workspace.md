@@ -60,13 +60,13 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don&#39;t already have a finance and operations app deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Human Resources deployed in your organization, the system administrator can access a trial version from the <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources webpage</a>.
+<td>If you don&#39;t already have a finance and operations app deployed in your organization, see <a href="../../dev-itpro/deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Human Resources deployed in your organization, the system administrator can access a trial version from the <a href="https://dynamics.microsoft.com/human-resources/overview/">Human Resources webpage</a>.
 </td>
 </tr>
 <tr class="even">
 <td>The <strong>Company directory</strong> mobile workspace must be published.</td>
 <td>System administrator</td>
-<td>See <a href="publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
+<td>See <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>

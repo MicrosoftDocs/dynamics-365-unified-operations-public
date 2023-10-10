@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.34
 
 # Qualified Invoice System in Japan
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The Qualified Invoice System (QIS) represents updated requirements for issuing and reporting invoices that include Japan Consumption Tax (JCT) information. The requirements begin on October 1, 2023, and their purpose is to improve the accuracy and transparency of the tax regime. 
 
@@ -42,7 +42,7 @@ The localization of Microsoft Dynamics 365 Finance for Japan has extended the in
 - Print the total invoice amount and tax amounts by tax code on customer invoices.
 - Calculate non-deductible tax to apply transitional measures for input tax credits for purchases from non-qualified vendors.
 - Calculate and round consolidated tax per tax code at the consolidated invoice level.
-- Print the company's registration number and sales tax amounts by tax code on customer consolidated invoices. For more information, see [Consolidated invoices for Japan](japan/apac-jpn-consolidate-invoices.md).
+- Print the company's registration number and sales tax amounts by tax code on customer consolidated invoices. For more information, see [Consolidated invoices for Japan](apac-jpn-consolidate-invoices.md).
 
 ## Considerations
 
@@ -65,11 +65,11 @@ To use QII registration numbers, you must complete these tasks.
 3. Add your company's registration number to its primary address in Japan.
 
 > [!NOTE]
-> For more information, see [Registration IDs](europe/emea-registration-ids.md). The framework is extended so that you can maintain the QII registration numbers of your company and its counterparties (that is, vendors and customers). The QII number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
+> For more information, see [Registration IDs](../europe/emea-registration-ids.md). The framework is extended so that you can maintain the QII registration numbers of your company and its counterparties (that is, vendors and customers). The QII number of the company can be printed on Japan-specific customer invoice layouts, including sales invoices, free text invoices, and consolidated invoices.
 
 ## Set up sales tax for JCT
 
-For general information about sales tax, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+For general information about sales tax, see [Sales tax overview](../../general-ledger/indirect-taxes-overview.md).
 
 Consider the following guidelines when you set up JCT:
 
@@ -109,4 +109,4 @@ Consider the following guidelines when you set up JCT:
 1. On the **Invoice** tab, set the **Print qualified invoice issuer number on invoice** option to **Yes**.
 1. On the **Free text invoice** tab, set the **Print qualified invoice issuer number on invoice** option to **Yes**.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

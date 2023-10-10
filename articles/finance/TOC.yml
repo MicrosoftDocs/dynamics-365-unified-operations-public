@@ -1663,13 +1663,13 @@
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Australia and New Zealand
-              href: localizations/apac-aus-nzl-electronic-invoices.md
+              href: localizations/apac/apac-aus-nzl-electronic-invoices.md
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
-              href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
+              href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Indonesia
               href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
             - name: Get started with the Electronic Invoicing for Mexico
@@ -1919,9 +1919,9 @@
           - name: Payment times reporting schema
             href: localizations/australia/apac-aus-payment-times-report.md
           - name: Customer electronic invoices
-            href: localizations/apac-aus-nzl-e-invoices.md
+            href: localizations/apac/apac-aus-nzl-e-invoices.md
           - name: Taxable Payments Annual Report
-            href: localizations/apac-aus-tpar.md
+            href: localizations/australia/apac-aus-tpar.md
         - name: Austria
           items:
           - name: Austria overview
@@ -2095,7 +2095,7 @@
             - name: Events
               href: localizations/brazil/latam-bra-sped-reinf.md
             - name: Enable the Fiscal Establishment dimension
-              href: localizations/latam-bra-sped-fiscal-establishment.md
+              href: localizations/brazil/latam-bra-sped-fiscal-establishment.md
           - name: SPED fiscal resolution 13/2019 RJ
             href: localizations/brazil/latam-bra-resolution-13-2019-RJ.md
           - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
@@ -2311,13 +2311,13 @@
             - name: VAT declaration overview
               href: localizations/denmark/emea-dnk-vat-declaration-denmark.md
             - name: Preview VAT declaration in Excel format
-              href: localizations/emea-dnk-vat-declaration-preview.md
+              href: localizations/denmark/emea-dnk-vat-declaration-preview.md
             - name: Submit VAT return in XML to the Danish Tax Agency
-              href: localizations/emea-dnk-vat-declaration-submission.md
+              href: localizations/denmark/emea-dnk-vat-declaration-submission.md
           - name: Standard Audit File for Tax (SAF-T) for Denmark
             href: localizations/denmark/emea-dnk-saf-t.md
           - name: Accounting basis (Regnskab Basis) electronic report for Denmark
-            href: localizations/emea-dnk-accounting-basis.md
+            href: localizations/denmark/emea-dnk-accounting-basis.md
         - name: Egypt
           items: 
           - name: Egypt overview
@@ -3155,7 +3155,7 @@
           - name: Consumption tax report
             href: localizations/japan/apac-jpn-consumption-tax-report.md
           - name: Qualified Invoice System
-            href: localizations/apac-jpn-qualified-invoice-system.md            
+            href: localizations/japan/apac-jpn-qualified-invoice-system.md            
           - name: Consolidated invoices
             href: localizations/japan/apac-jpn-consolidate-invoices.md
           - name: Create a fixed asset with additional depreciation
@@ -3299,7 +3299,7 @@
           - name: Latin America parameters
             href: localizations/iberoamerica/ltm-core-latam-parameters.md
           - name: Field list configuration for Latin America
-            href: localizations/ltm-core-field-master-lists.md
+            href: localizations/iberoamerica/ltm-core-field-master-lists.md
           - name: Taxpayer types for Latin America
             href: localizations/iberoamerica/ltm-core-taxpayer-type.md
           - name: Tax ID types for Latin America
@@ -3307,7 +3307,7 @@
           - name: Tax application for Latin America
             href: localizations/iberoamerica/ltm-core-tax-application.md
           - name: Tax and legal attributes for Latin America
-            href: localizations/ltm-tax-legal-attributes.md
+            href: localizations/iberoamerica/ltm-tax-legal-attributes.md
           - name: Document classes for Latin America
             href: localizations/iberoamerica/ltm-core-document-class.md
           - name: Document class types for Latin America
@@ -3467,7 +3467,7 @@
           - name: GST declaration form GST101A for New Zealand (NZ-00003)
             href: localizations/new-zealand/apac-nzl-gst-declaration.md
           - name: Customer electronic invoices 
-            href: localizations/apac-aus-nzl-e-invoices.md
+            href: localizations/apac/apac-aus-nzl-e-invoices.md
         - name: Norway
           items:
           - name: Norway overview
@@ -3905,7 +3905,7 @@
           - name: EU sales list
             href: localizations/sweden/emea-swe-eu-sales-list.md      
           - name: Report statistics of vendor payment periods
-            href: localizations/emea-swe-payment-periods-statistics.md
+            href: localizations/sweden/emea-swe-payment-periods-statistics.md
         - name: Switzerland
           items:
           - name: Switzerland overview

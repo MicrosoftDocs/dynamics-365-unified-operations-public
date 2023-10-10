@@ -27298,6 +27298,71 @@
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/archive-tax-transactions.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-overview",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-aus-nzl-e-invoices.md",
+      "redirect_url": "apac/apac-aus-nzl-e-invoices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-aus-nzl-electronic-invoices.md",
+      "redirect_url": "apac/apac-aus-nzl-electronic-invoices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-aus-tpar.md",
+      "redirect_url": "australia/apac-aus-tpar",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/apac-jpn-qualified-invoice-system.md",
+      "redirect_url": "japan/apac-jpn-qualified-invoice-system",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-fr-get-started.md",
+      "redirect_url": "france/e-invoicing-fr-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-dnk-accounting-basis.md",
+      "redirect_url": "denmark/emea-dnk-accounting-basis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-dnk-vat-declaration-preview.md",
+      "redirect_url": "denmark/emea-dnk-vat-declaration-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-dnk-vat-declaration-submission.md",
+      "redirect_url": "denmark/emea-dnk-vat-declaration-submission",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-swe-payment-periods-statistics.md",
+      "redirect_url": "sweden/emea-swe-payment-periods-statistics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/latam-bra-sped-fiscal-establishment.md",
+      "redirect_url": "brazil/latam-bra-sped-fiscal-establishment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/ltm-core-field-master-lists.md",
+      "redirect_url": "iberoamerica/ltm-core-field-master-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/localizations/ltm-tax-legal-attributes.md",
+      "redirect_url": "iberoamerica/ltm-tax-legal-attributes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md ",
+      "redirect_url": "../supply-chain-dev/production-floor-execution-styles",
+      "redirect_document_id": false
     }
   ]
 }

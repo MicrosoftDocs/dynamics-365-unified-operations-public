@@ -65,7 +65,7 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 
 ## Tax adjustment on consolidated invoice
 
-The primary purpose of this feature is to support consolidated monthly invoices for Japan as qualified invoices. Changes are introduced in relation to the Qualified Invoice System (QIS) for Japan. For more information, see [Qualified Invoice System in Japan](../apac-jpn-qualified-invoice-system.md).
+The primary purpose of this feature is to support consolidated monthly invoices for Japan as qualified invoices. Changes are introduced in relation to the Qualified Invoice System (QIS) for Japan. For more information, see [Qualified Invoice System in Japan](apac-jpn-qualified-invoice-system.md).
 
 To support the QIS requirements that affect consolidated invoices, the following capabilities have been introduced (in both Accounts receivable and Accounts payable):
 
@@ -99,7 +99,7 @@ After you create and post a customer consolidated invoice, the consolidated cons
 
 Here are the main considerations for this functionality in Microsoft Dynamics 365 Finance:
 
-- Sales tax calculation parameters should be configured in the following way. For more information, see [Set up sales tax for JCT](../apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct).
+- Sales tax calculation parameters should be configured in the following way. For more information, see [Set up sales tax for JCT](apac-jpn-qualified-invoice-system.md#set-up-sales-tax-for-jct).
 
     - All sales tax codes have an appropriate value for the **Tax type** field (**Standard** or **Reduced**).
     - The **Origin** field is set to **Percentage of net amount**.
@@ -121,7 +121,7 @@ Here are the main considerations for this functionality in Microsoft Dynamics 36
 To set up this feature, follow these steps.
 
 1. In Feature Management, enable the **Enable tax adjustment on consolidated invoice for Japan** feature.
-1. Complete the setup that's described in [Qualified Invoice System in Japan](../apac-jpn-qualified-invoice-system.md).
+1. Complete the setup that's described in [Qualified Invoice System in Japan](apac-jpn-qualified-invoice-system.md).
 1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**. On the **General** tab, turn on the **Consolidated invoice for customer** option. Then, in the **Consolidated invoice journal name** field, specify a general journal name of the **Daily** type to post consolidated tax adjustments.
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**. On the **General** tab, turn on the **Consolidated invoice for vendor** option. Then, in the **Consolidated invoice journal name** field, specify a general journal name of the **Daily** type to post consolidated tax adjustments.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Style the production floor execution interface
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../finance/includes/banner.md)]
 
 The article explains how to configure form controls so that the default production floor execution styles are applied to them.
 
@@ -45,11 +45,11 @@ Styles can be applied to the **Cancel** button in a dialog box only if the follo
 
 The following illustration shows a typical form or dialog header.
 
-![Typical form or dialog header.](media/pfe-styles-header.png "Typical form or dialog header")
+![Typical form or dialog header.](../production-control/media/pfe-styles-header.png "Typical form or dialog header")
 
 In Visual Studio, headers are created by using a structure such as the one that is shown in the following illustration.
 
-![Typical code structure for creating a header.](media/pfe-styles-header-code-structure.png "Typical code structure for creating a header")
+![Typical code structure for creating a header.](../production-control/media/pfe-styles-header-code-structure.png "Typical code structure for creating a header")
 
 To add text to your header, use code such as the following example.
 
@@ -76,7 +76,7 @@ When you write your header code, apply the following rules:
 
 You can include a progress indicator, which is shown to the right of the header. The following illustration shows a progress indicator.
 
-![Typical progress indicator.](media/pfe-styles-header-progress.png "Typical progress indicator")
+![Typical progress indicator.](../production-control/media/pfe-styles-header-progress.png "Typical progress indicator")
 
 To show the progress indicator, the text field must be named `ShowProgress`.
 
@@ -106,13 +106,13 @@ Styles can be applied to card view controls only if the following requirements a
 
 The following illustration shows a card view that has no controls inside it.
 
-![Card view without elements.](media/pfe-styles-empty-card.png)
+![Card view without elements.](../production-control/media/pfe-styles-empty-card.png)
 
 The following illustrations show card views that have controls inside them.
 
-![Card with elements that show Hz.](media/pfe-styles-elements.png)
+![Card with elements that show Hz.](../production-control/media/pfe-styles-elements.png)
 
-![Card with elements for a maintenance request.](media/pfe-styles-elements-maintenance.png)
+![Card with elements for a maintenance request.](../production-control/media/pfe-styles-elements-maintenance.png)
 
 ## Business card
 
@@ -128,7 +128,7 @@ Set the following properties on the business card:
 - **Multi Select:** *No*
 - **Show Col Labels:** *No*
 
-![Business card.](media/pfe-styles-business-card.png)
+![Business card.](../production-control/media/pfe-styles-business-card.png)
 
 ## Radio button
 
@@ -144,17 +144,17 @@ Set the following properties on the radio button:
 
 The following illustration shows an example where the text appears below the radio buttons.
 
-![Radio buttons with text below.](media/pfe-styles-radio-text-below.png)
+![Radio buttons with text below.](../production-control/media/pfe-styles-radio-text-below.png)
 
 The following illustration shows an example where the text appears to the right of the radio buttons.
 
-![Radio buttons with text to the right.](media/pfe-styles-radio-text-right.png)
+![Radio buttons with text to the right.](../production-control/media/pfe-styles-radio-text-right.png)
 
 ### Radio buttons in Internet Explorer
 
 Radio button styles aren't supported in Internet Explorer. The following illustration shows what radio buttons look like in Internet Explorer.
 
-![Radio buttons in Internet Explorer.](media/pfe-styles-browser.png)
+![Radio buttons in Internet Explorer.](../production-control/media/pfe-styles-browser.png)
 
 ## Buttons
 
@@ -178,7 +178,7 @@ Styles can be applied to a primary button only if the following requirements are
 - The button is contained in a form group.
 - The group name starts with `DefaultButtonGroup` or `PrimaryButtonGroup` (for example, `DefaultButtonGroup10`).
 
-![Primary button.](media/pfe-styles-first.png)
+![Primary button.](../production-control/media/pfe-styles-first.png)
 
 ### Secondary button
 
@@ -187,7 +187,7 @@ Styles can be applied to a secondary button only if the following requirements a
 - The button is contained in a form group.
 - The group is named **Right panel**, or the group name starts with `SecondaryButtonGroup`.
 
-![Secondary button.](media/pfe-styles-second.png)
+![Secondary button.](../production-control/media/pfe-styles-second.png)
 
 ### Third-group button
 
@@ -196,7 +196,7 @@ Styles can be applied to a third-group button only if the following requirements
 - The button is contained in a form group.
 - The group is named **Left panel**, or the group name starts with `ThirdButtonGroup`.
 
-![Third-group button.](media/pfe-styles-third.png)
+![Third-group button.](../production-control/media/pfe-styles-third.png)
 
 ### Fourth-group button
 
@@ -213,7 +213,7 @@ Set the following properties on the button:
 - **Width:** *Auto*
 - **Height:** *Auto*
 
-![Fourth-group button.](media/pfe-styles-fourth.png)
+![Fourth-group button.](../production-control/media/pfe-styles-fourth.png)
 
 ### Flat button
 
@@ -230,7 +230,7 @@ Set the following properties on the button:
 - **Width:** *Auto* or *SizeToContent*
 - **Height:** *Auto* or *SizeToContent*
 
-![Flat button.](media/pfe-styles-flat-button.png)
+![Flat button.](../production-control/media/pfe-styles-flat-button.png)
 
 ### Continue button
 
@@ -247,7 +247,7 @@ Set the following properties on the button:
 - **Width:** *Auto* or *SizeToContent*
 - **Height:** *Auto* or *SizeToContent*
 
-![Continue button.](media/pfe-styles-continue-button.png)
+![Continue button.](../production-control/media/pfe-styles-continue-button.png)
 
 ## Combo box
 
@@ -299,7 +299,7 @@ Styles can be applied to a combo box only if the following requirements are met:
 
 The following illustration shows two combo box controls. The combo box on the left has an empty text box, and the **Clear** button is disabled. The combo box on the right has text in the text box, and the **Clear** button is enabled.
 
-![Combo boxes with and without a Clear button.](media/pfe-styles-combo.png)
+![Combo boxes with and without a Clear button.](../production-control/media/pfe-styles-combo.png)
 
 ## Quick filter
 
@@ -313,7 +313,7 @@ The quick filter control adds a search field to the page. You can apply styles t
 
 The following illustration shows two quick filter controls. The quick filter on the left has an empty quick filter, and the number of results isn't visible. The quick filter on the right contains a search string and shows the number of results.
 
-![Examples of a quick filter control with and without a search string.](media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
+![Examples of a quick filter control with and without a search string.](../production-control/media/pfe-styles-quick-filter.png "Examples of a quick filter control with and without a search string")
 
 ## Center-align elements on a tab
 
@@ -331,15 +331,15 @@ To arrange a customized grid, detail part, and quick filter so that they resembl
 
 The following illustration shows a typical grid that includes a quick filter and a detail part on the right.
 
-![Typical grid that includes a quick filter and detail part.](media/pfe-styles-align-grid.png "Typical grid that includes a quick filter and detail part")
+![Typical grid that includes a quick filter and detail part.](../production-control/media/pfe-styles-align-grid.png "Typical grid that includes a quick filter and detail part")
 
 In Visual Studio, a grid, detail part, and quick filter can be created by using a structure such as the one that is shown in the following illustration.
 
-![Typical code structure that aligns a grid, detail part, and quick filter.](media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
+![Typical code structure that aligns a grid, detail part, and quick filter.](../production-control/media/pfe-styles-header-code-structure2.png "Typical code structure that aligns a grid, detail part, and quick filter")
 
 ## Additional resources
 
 - [Customize the production floor execution interface](../supply-chain-dev/production-floor-execution-customize.md)
-- [Design the production floor execution interface](production-floor-execution-tabs.md)
+- [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
