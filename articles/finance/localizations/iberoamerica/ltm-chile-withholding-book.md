@@ -33,8 +33,9 @@ To configure parameters follow these steps:
 2. Select Reporting configurations.
 3. Select **Witholding Book CL** format
 4. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**
+5. On the Application specific parameters page, you can configure the rules for the lookups data source 
 
-   * For **vendorinvoiceisapplicable** lookup configuration follow these steps:
+  * For **vendorinvoiceisapplicable** lookup configuration follow these steps:
 
      1. On the Conditions FastTab, Select **Add**
         1. In the **Lookup result** field, select **Yes**
@@ -48,19 +49,19 @@ To configure parameters follow these steps:
         1. In the **Lookup result** field, select **No**
         2. In the **Document classification id.** field, select **Not Blank**
 
-For **TaxType** lookup configuration follow these steps:
+   * For **TaxType** lookup configuration follow these steps:
 
-1. On the Conditions FastTab, Select **Add**, and then follow these steps:
-   1. In the **Lookup result** field, select **VAT**
-   2. In the **Tax code** field, select an option from the list. Select the appropriate tax code for example **Ret-Hon**
+     1. On the Conditions FastTab, Select **Add**, and then follow these steps:
+        1. In the **Lookup result** field, select **VAT**
+        2. In the **Tax code** field, select an option from the list. Select the appropriate tax code for example **Ret-Hon**
 
-2. Select **Add** and complete:
-   1. In the **Lookup result** field, select **NotApplicable**
-   2. In the ** Tax code** field, select **Blank**
+     2. Select **Add** and complete:
+        1. In the **Lookup result** field, select **NotApplicable**
+        2. In the ** Tax code** field, select **Blank**
 
-3. Select **Add** and complete:
-   1. In the **Lookup result** field, select ** NotApplicable **
-   2. In the ** Tax code** field, select **Not Blank**
+     3. Select **Add** and complete:
+        1. In the **Lookup result** field, select ** NotApplicable **
+        2. In the ** Tax code** field, select **Not Blank**
 
 
 ## Run the Withholding tax books report
