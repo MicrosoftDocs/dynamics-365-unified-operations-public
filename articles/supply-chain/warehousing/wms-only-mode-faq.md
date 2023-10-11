@@ -79,3 +79,7 @@ When the system creates load data as a result of processing an inbound shipment 
 ## Why do I receive the following error for my existing Update product receipts process: "Unable to update product receipt for a load with inbound shipment order lines"?
 
 If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you must update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
+
+## Why do I receive the following error when processing a transfer order: "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form."?
+
+Besides setting up item model groups that don't use costing and general ledger settings, see [Master and reference data](wms-only-mode-exchange-data.md#master-data), you must make sure to enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the _Transfer issue_ and the _Transfer receipt_ warehouse scenarios.

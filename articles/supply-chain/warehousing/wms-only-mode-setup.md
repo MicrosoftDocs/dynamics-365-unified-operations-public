@@ -53,6 +53,7 @@ As part of the [Source system](#source-systems) creation process, the following 
 - **Post shipment packing slips** – This process is used for the outbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment packing slips posting delay** value is set to 1 day.)
 - **Post shipment receipts** – This process is used for the inbound shipment order finalization process. (By default, the repeat interval is 10 minutes if the **Shipment receipts posting delay** value is set to 1 day.)
 - **Process shipment order messages** – This process is used for processing inbound and outbound shipment order messages. (By default, the repeat interval is 1 minute.)
+- **Publish warehouse inventory update log updates** - This process is used to get the inventory update log data available for the external systems via the _WarehouseInventoryUpdateLogs_ entity. (By default, the repeat interval is 10 minutes.)
 
 ## Set up automatic release of outbound shipment orders
 

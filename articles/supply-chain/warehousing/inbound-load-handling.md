@@ -115,7 +115,7 @@ When the warehouse worker has completed the putaway work, the system records and
 
 <!--KFM: Preview until 10.0.37 GA -->
 
-Workers and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Web client users can do this using the **Load** or **Inbound load planning workbench** page. Workers using the  Warehouse Management mobile app can do it using a menu item set up with an **Activity code** of *Receiving completed confirmation*. In addition to updating the **Load receiving completed date and time** field for the load, workers and users may also be able (or required) to enter a packing slip ID and document date during the *Receiving completed* process (depending how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
+Background processing, workers, and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Automatic processing can get run via the **Warehouse management > Periodic tasks  > Receiving completed** process. Web client users can do this using the **Load** or **Inbound load planning workbench** page. Workers using the Warehouse Management mobile app can do it using a menu item set up with an **Activity code** of *Receiving completed confirmation*. In addition to updating the **Load status** and **Load receiving completed date and time** field for the load, workers and users may also be able (or required) to enter a packing slip ID and document date during the *Receiving completed* process (depending how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
 
 Follow these steps to choose how loads related to purchase orders will be finalized.
 
@@ -128,9 +128,10 @@ Follow these steps to choose how loads related to purchase orders will be finali
 1. Set **Load receiving completed confirmation policy for purchase orders** to one of the following values:
     - *Disabled* – Loads won't indicate whether inbound receiving is complete. With this setting, you run the risk that the *Update product receipts* cost update periodic task could run in the middle of an inbound registration process.
     - *Enabled* – After the *Receiving completed* process is run, loads are updated with a **Load receiving completed date and time** value (and related shipments are assigned a **Packing slip ID**). The *Update product receipts* cost update periodic task checks for these values to make sure it only processes loads that have been completely received, which is especially important if you allow over-receiving or under-receiving.
+    - *Enabled with auto post* - With this setting the _Load status_ will get updated to received and a new field _Product receipt processing status_ can be used as part of the following _Product receipt_ posting process. Note that you cannot use this setting in combination with allowing multiple product receipts per load.
 
 > [!NOTE]
-> You can use the **Load receiving completed date and time** field value as filter criteria for the *Update product receipts* cost update periodic task. Also, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process may be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
+> You can use the **Load status** and **Product receipt processing status** field value as filter criteria for the *Update product receipts* cost update periodic task. Also, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process may be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 

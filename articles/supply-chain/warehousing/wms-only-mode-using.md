@@ -119,7 +119,6 @@ You can specify whether workers should capture a packing slip ID and date for ea
 Go to **Warehouse management** \> **Inquiries and reports** \> **Shipment receipts** to view the detailed line transactions that are related to received inventory. The data is version controlled, and you can follow the posting status on the header.
 
 The header status is changed from *Ready for posting* to *Posted* as part of the *Post shipment receipts* [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) job. This job is automatically initialized as part of the [Source systems](wms-only-mode-setup.md#source-systems) setup. The Source systems setup also lets you schedule the batch job to ensure that the related inbound shipment order line transactions are moved to a finalized transaction state for the **Warehouse management** module.
-
 To view all the background processes that you have running, go to [**System administration** \> **Setup** \> **Process automations**](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 > [!NOTE]
@@ -127,6 +126,12 @@ To view all the background processes that you have running, go to [**System admi
 
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you probably have to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
+
+The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data#progress-data-and-business-events) and read the data via the following data entities:
+
+- `ShipmentReceiptJournalHeaders` - The Shipment receipt header data
+- `ShipmentReceiptJournalLines` - The Shipment receipt line data
+- `ShipmentReceiptTransactionDimensions` - The detailed Shipment receipt line data
 
 ## Outbound process
 
@@ -163,6 +168,12 @@ To view all the background processes that you have running, go to [**System admi
 
 > [!NOTE]
 > If no language is defined for an order, the report uses the company-specific language settings.
+
+The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data#progress-data-and-business-events) and read the data via the following data entities:
+
+- `ShipmentPackingSlipJournalHeaders` - The Shipment packing slip header data
+- `ShipmentPackingSlipJournalLines` - The Shipment packing slip line data
+- `ShipmentPackingSlipTransactionDimensions` - The detailed Shipment packing slip line data
 
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 
