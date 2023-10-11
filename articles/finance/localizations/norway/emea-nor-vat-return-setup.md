@@ -217,6 +217,11 @@ For this lookup field, the following master data sources are available for setup
 
 - **Tax code** – The sales tax code.
 - **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
+- **Item sales tax group** - The item sales tax group (supported from version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**).
+- **Sales tax group** - The sales tax group (supported from version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**).
+
+> [!IMPORTANT]
+> It's important that when you import version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)** to your Finance, you need to export application-specific parameters from previously used version of the formats by using **Export** button on the Action pane of **Application specific parameters** page and then import it to the version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**. This is required due to change of the structure of application-specific parameters in version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**. During import of the application-specific parameters configuration, system automatically updates the structure to the new version and users will be able to see additional **Item sales tax group** and **Sales tax group** columns for **StandardTaxCodes_Lookup**. This introduces additional level of flexibility of the setup and in certain scenarios improves user experience. You have the flexibility to keep the new columns empty if they do not align with your company's specific setup and requirements. 
 
 Define conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported in the `mvaKode` tag under the `mvaSpesifikasjonslinje` node for corresponding combinations of master data from your Finance environment.
 
