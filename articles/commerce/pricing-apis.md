@@ -38,6 +38,9 @@ The *GetActivePrices* API supports the **Employee**, **Customer**, **Anonymous**
 
 The main use case for the *GetActivePrices* API is the product details page (PDP), where retailers show the best price for a product, including any effective discounts.
 
+> [!NOTE]
+> If you're seeing fewer products returned for a `GetActivePrices` call, you can follow [Channel merchandising configuration validator](dev-itpro/channel-merch-config-validator.md) to validate your merchandising configurations.
+
 The following table shows the input parameters for the *GetActivePrices* API.
 
 | Name                                    | Sub-name | Type | Required/Optional | Description |
