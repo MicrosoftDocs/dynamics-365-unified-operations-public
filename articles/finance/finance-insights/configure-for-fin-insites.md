@@ -4,7 +4,7 @@
 title: Configuration for Finance insights
 description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-ms.date: 09/16/2022
+ms.date: 10/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
@@ -97,7 +97,7 @@ The add-in might take several minutes to install.
 
 ## One last thing...
 
-After the add-in is successfully installed, it might take up to an hour for the Finance Insights features to be enabled in the **Feature management** workspace in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
+After the add-in is successfully installed, it might take up to an hour for the Finance insights feature to be enabled in the **Feature management** workspace in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Process automation**.
 2. On the **Background processes** tab, find **Insights provisioning status check**, and select **Edit**.
