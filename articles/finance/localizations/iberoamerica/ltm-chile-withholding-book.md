@@ -2,7 +2,7 @@
 title: Generate and print the Withholding tax book report for Chile
 description: The article how to generate and print the Withholding tax book report for Chile. 
 author: Cpicon85 
-ms.date: 10/06/2023 
+ms.date: 10/11/2023 
 ms.topic: article
 ms.reviewer: kfend
 ms.author: Cpicon85 
@@ -25,43 +25,31 @@ Before you complete the steps in this article to generate and print the report, 
 - Configure the Electronic Reporting (ER) parameters. To learn more about ER parameters, see [ER configuration](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md)
 
 ## Configure application-specific parameters
-Once the model, mapping, and corresponding format have been downloaded, it is necessary to configure the specific parameters of the withholding tax book format. This way, you will be able to select the document class id. and tax codes used in the corresponding transactions. Lookups and conditions are designed to allow you to choose the combination of documents classification IDs and sales tax codes.
+After the model, mapping, and corresponding format have been downloaded, configure the specific parameters of the withholding tax book format. When the parameters are configured, you can select the document class ID and tax codes used in the corresponding transactions. Lookups and conditions are designed to allow you to choose the combination of document classification IDs and sales tax codes.
 
 To configure parameters follow these steps:
 
-1. On the default dashboard, select **Electronic reporting**.
-2. Select Reporting configurations.
-3. Select **Witholding Book CL** format
-4. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**
-5. On the Application specific parameters page, you can configure the rules for the lookups data source 
+1. Go to the **Electronic reporting** workspace and select **Reporting configurations**.
+2. Select **Witholding Book CL** and on the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**
+3. On the **Application specific parameters** page, configure the rules for the lookups data source. 
 
-  * For **vendorinvoiceisapplicable** lookup configuration follow these steps:
+  - For **vendorinvoiceisapplicable** lookup configuration, follow these steps:
 
-     1. On the Conditions FastTab, Select **Add**
-        1. In the **Lookup result** field, select **Yes**
-        2. In the **Document classification id.** field, select an option from the list. Select the appropriate document classification for example **“Bol-Hon”**
+     1. On the **Conditions** FastTab, select **Add** and in the **Lookup result** field, select **Yes**.
+     2. In the **Document classification id.** field, select the appropriate document classification from the list. for example, **Bol-Hon**.
+     3. Select **Add** and in the **Lookup result** field, select **No**.
+     4. In the **Document classification id.** field, select **Blank**
+     5. Select **Add** and in the **Lookup result** field, select **No**.
+     6. In the **Document classification id.** field, select **Not Blank**.
 
-     2. Select **Add** and complete:
-        1. In the **Lookup result** field, select **No**
-        2. In the **Document classification id.** field, select **Blank**
+  - For **TaxType** lookup configuration follow these steps:
 
-     3. Select **Add** and complete:
-        1. In the **Lookup result** field, select **No**
-        2. In the **Document classification id.** field, select **Not Blank**
-
-   * For **TaxType** lookup configuration follow these steps:
-
-     1. On the Conditions FastTab, Select **Add**, and then follow these steps:
-        1. In the **Lookup result** field, select **VAT**
-        2. In the **Tax code** field, select an option from the list. Select the appropriate tax code for example **Ret-Hon**
-
-     2. Select **Add** and complete:
-        1. In the **Lookup result** field, select **NotApplicable**
-        2. In the ** Tax code** field, select **Blank**
-
-     3. Select **Add** and complete:
-        1. In the **Lookup result** field, select ** NotApplicable **
-        2. In the ** Tax code** field, select **Not Blank**
+     1. On the **Conditions** FastTab, select **Add**, and in the **Lookup result** field, select **VAT**.
+     2. In the **Tax code** field, select the appropriate tax code from the list. for example, **Ret-Hon**.
+     3. Select **Add** and in the **Lookup result** field, select **NotApplicable**.
+     4. In the ** Tax code** field, select **Blank**.
+     5. Select **Add** and in the **Lookup result** field, select **NotApplicable**.
+     6. In the **Tax code** field, select **Not Blank**.
 
 
 ## Run the Withholding tax books report
