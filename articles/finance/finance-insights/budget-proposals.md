@@ -44,8 +44,7 @@ The term *cleansing data* refers to ensuring that the data is consistent in term
 ### Budget proposals setup
 Complete the following steps to set up the Budget proposals feature.
 
-1. To access this functionality, the corresponding feature of **Budget proposals (preview)** needs to be enabled in feature management. 
-2. After enabling a feature, a new menu item named **Budget Proposal** under **Budgeting > Setup > Basic budgeting** will be accessible for users with the Finance Insights Administrator role. The setting of the **Enable feature** field must be changed from **No** to **Yes**. No predictions will be generated until the feature is enabled. 
+1. After enabling a feature, a new menu item named **Budget Proposal** under **Budgeting > Setup > Basic budgeting** will be accessible for users with the Finance Insights Administrator role. The setting of the **Enable feature** field must be changed from **No** to **Yes**. No predictions will be generated until the feature is enabled. 
 
 ### Example - Generating a budget proposal
 Budget proposals must go through the following steps to prepare the proposed budget as a draft budget register document:
