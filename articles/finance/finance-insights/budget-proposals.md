@@ -4,7 +4,7 @@
 title: Budget proposals
 description: This article describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 10/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
