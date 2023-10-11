@@ -2,7 +2,7 @@
 title: Printing configuration for the Chile 8 Columns report
 description: The article describes how to set up and use the Chile 8 Columns report.
 author: Cpicon85 
-ms.date: 29/09/2023 
+ms.date: 9/29/2023 
 ms.topic: article
 ms.reviewer: kfend
 ms.author: Cpicon85 
