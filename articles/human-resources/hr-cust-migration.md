@@ -230,28 +230,29 @@ The environment state will show the deployment progress. The state will be chang
 4. Review the available table maps to select and run the integration by using dual-write.
 5. When you run the dual-write integration for the first time for table maps, select the **Initial sync** checkbox. If there's an existing integration from the source Human Resources environment, you don't have to select the **Initial sync** checkbox when you run the integration for table maps.
 
-##### Human Resources virtual tables in integration 
-1.	Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
-2.	If you're using Human Resources virtual tables in any integration scenario, all virtual tables will have a prefix as ‘mshr’ in Human Resources standalone environment. In a finance and operations environment, the tables have a prefix of ‘mserp’. 
-3.	The integration code needs to be updated to use the virtual tables with prefix ‘mserp’. Changes will be specific to your integration codebase. A global search with ‘mshr’ and replace it with ‘mserp’ would help. 
-4.	After the prefix is updated to ‘mserp’, relevant entities can be enabled exposing using the **Available finance and operations entities** catalog Dataverse table. 
-5.	If you're not able to update the prefix from ‘mshr’ to ‘mserp’ for integration, a temporary solution would be pointing the Human Resources data source configuration to the finance and operations data source configuration that is used for authentication.
-Follow these steps to install the Dynamics 365 Human Resources virtual tables application and use virtual tables with the prefix “mshr”.
-    - Go to Power Platform Admin Center.
-    - On the **Environments** tab, select the Dataverse environment to which your finance and operations instance is connected.
-    - On **Resources**, select **Dynamics 365 apps**.
-    - Select **Install app** to open the **Install Dynamics 365 apps** dialog.
-    - Find and select the **Dynamics 365 HR Virtual Tables** app and select **Next**.
-    - Agree to the terms of service and select **Install** to initiate the app installation. 
- 
->[!NOTE]
->Installation of the app may take several minutes.  
+##### Human Resources virtual tables in integration
 
-6.	Uninstall **Dynamic 365 HR Virtual tables** and all prefix entities with a prefix of "mshr" will be removed from the Dataverse.
+1. Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+2. If you're using Human Resources virtual tables in any integration scenario, all virtual tables have the prefix "mshr" in a Human Resources standalone environment. In a finance and operations environment, the tables have the prefix "mserp." You must update the integration so that it uses the virtual tables that have the "mserp" prefix. The changes will be specific to your integration codebase. A global search to find "mshr" and replace it with "mserp" can help.
+4. After you've updated the prefix to "mserp," you can enable relevant entities by using the **Available finance and operations entities** catalog Dataverse table.
+5. If you can't update the prefix from "mshr" to "mserp" for the integration, a temporary solution is to point the Human Resources data source configuration to the finance and operations data source configuration that is used for authentication.
 
->[!Note]
-> This should be done after verifying all the equivalent entities with ‘mserp’ prefix in the finance and operations environment are working as expected.
+    Follow these steps to install the Dynamics 365 Human Resources Virtual Tables app and use virtual tables that have the "mshr" prefix.
 
+    1. Go to Power Platform admin center.
+    2. On the **Environments** tab, select the Dataverse environment that your finance and operations instance is connected to.
+    3. In the **Resources** section, select **Dynamics 365 apps**.
+    4. Select **Install app**.
+    5. In the **Install Dynamics 365 apps** dialog box, find and select the **Dynamics 365 HR Virtual Tables** app, and then select **Next**.
+    6. Agree to the terms of service, and then select **Install** to start the app installation. 
+
+        > [!NOTE]
+        > Installation of the app might take several minutes.
+
+6. Uninstall Dynamic 365 HR Virtual Tables app. All prefix entities that have the "mshr" prefix are removed from Dataverse.
+
+> [!NOTE]
+> Before you begin this procedure, you should verify that all the equivalent entities that have the "mserp" prefix in the finance and operations environment are working as expected.
 
 #### Recommended practices
 
