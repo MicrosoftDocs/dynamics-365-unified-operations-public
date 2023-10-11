@@ -1,7 +1,7 @@
 ---
 title: VAT declaration (Czech Republic)
 description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic.
-author: AdamTrukawka
+author: liza-golub
 ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Czech Republic
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
 ms.assetid: 
@@ -274,7 +274,7 @@ Section B2 contains the following information about each document.
 | Tax base at second reduced rate                                                                                                                     | zakl\_dane3 |
 | Tax amount at second reduced rate                                                                                                                   | dan3        |
 | <p>Flag of VAT adjustment for bad debts:</p><ul><li>**N** – The document isn't a VAT adjustment of bad debts.</li><li>**P** – The document is a VAT adjustment of bad debts.</li></ul> | zdph\_44     |
-| <p>Flag of the proportional right of deduction: Yes/No</p><p>**Note:** Out of the box, this field is set to **No**.</p> | pomer       |
+| <p>Flag of the proportional right of deduction: Yes/No</p><ul><li>**A** – “ANO”, for documents with proportional deduction.</li><li>**N** – “NO”, for all other documents.</li></ul> | pomer       |
 
 ### Section A5: Taxable sales with an amount below 10 000 including VAT, and when there is no obligation to issue a tax document
 
