@@ -80,6 +80,7 @@ Follow these steps to configure Dataverse for Finance insights.
 
 ## Configure the Finance insights add-in
 
+Installing the Finance insights add-in will automatically enable all Finance Insights features in Dynamics 365 Finance.
 If you previously installed the Finance insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
@@ -96,7 +97,7 @@ The add-in might take several minutes to install.
 
 ## One last thing...
 
-After the add-in is successfully installed, it might take up to an hour before you can enable Finance insights features in the **Feature management** workspace in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
+After the add-in is successfully installed, it might take up to an hour for the Finance Insights features to be enabled in the **Feature management** workspace in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Process automation**.
 2. On the **Background processes** tab, find **Insights provisioning status check**, and select **Edit**.
@@ -104,7 +105,7 @@ After the add-in is successfully installed, it might take up to an hour before y
 
    This change should force the **Insights provisioning status check** process to run immediately.
 
-   After the **Insights provisioning status check** process is successfully run, you can enable Finance insights features in the **Feature management** workspace.
+   After the **Insights provisioning status check** process is successfully run, you can view the enabled Finance insights features in the **Feature management** workspace.
 
 > [!NOTE]
 > If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation polling system** field, change the value to **Waiting** to initiate the process. 
