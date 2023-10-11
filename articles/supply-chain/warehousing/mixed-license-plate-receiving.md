@@ -80,7 +80,7 @@ With the deferred receiving process you can for example optimize the process of 
 
 ### Deferred receiving policy
 
-Go to one of the above mobile device menu items and find the **Deferred receiving policy ID** field. From here you can assign or go to the policy settings **Warehouse management > Setup ** Mobile device > Deferred receiving policies** controlling when a receiving flow will use the _deferred receiving_ processing and thereby store the recorded entries into the _Mixed license plate receiving_ entities instead of immediately processing the registration and add inventory on-hand.
+Go to one of the above mobile device menu items and find the **Deferred receiving policy ID** field. From here you can assign or go to the policy settings **Warehouse management > Setup > Mobile device > Deferred receiving policies** controlling when a receiving flow will use the _deferred receiving_ processing and thereby store the recorded entries into the _Mixed license plate receiving_ entities instead of immediately processing the registration and add inventory on-hand.
 
 ### Deferred receiving async processing
 
