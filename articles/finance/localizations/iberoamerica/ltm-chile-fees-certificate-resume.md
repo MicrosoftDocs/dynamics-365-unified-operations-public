@@ -2,7 +2,7 @@
 title: Generate and print the Fees certificate resume report - Chile
 description: The article describes how to generate and print the Fees certificate resume report for Chile.
 author: Cpicon85 
-ms.date: 26/09/2023 
+ms.date: 09/26/2023 
 ms.topic: article
 ms.reviewer: kfend
 ms.author: Cpicon85 
