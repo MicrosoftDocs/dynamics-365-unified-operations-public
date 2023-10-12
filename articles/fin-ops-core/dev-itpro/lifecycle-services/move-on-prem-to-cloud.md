@@ -394,7 +394,9 @@ Document handling attachments for Finance + Operations (on-premises) environment
     $dBName = "<DATABASE_NAME>"
     $dBUsername = "<DATABASE_USER>"
     $dBPassword  = "<DATABASE_PASSWORD>"
+    # Note! - The storageAccountName should be set without the ".blob.core.windows.net", e.g. $storageAccountName = wxxtst4xx5bfxx
     $storageAccountName = "<STORAGE_ACCOUNT_NAME>"
+    # Note! - The sasToken starts with "sv=20"
     $sasToken = "<SAS_TOKEN>"
 
     [Reflection.Assembly]::LoadWithPartialName("System.Security.Cryptography") #Load crypto
