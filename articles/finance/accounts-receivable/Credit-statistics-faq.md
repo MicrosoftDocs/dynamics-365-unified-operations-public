@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Terminate schedule lines
-description: This topic 
+title: Credit statistics FAQ
+description: This article answers some frequently asked questions about Credit statistics
 author: JodiChristiansen
 ms.date: 10/15/2023
 ms.topic: article
@@ -28,19 +28,20 @@ ms.dyn365.ops.version: 10.0.35
 ---
 # Credit statistics frequently asked questions
 
-There are many Credit statistics that are calculated in the Related information FactBox when viewing All customers or Aged balances. This article answers some common questions beyond running the periodic task **Calculate balance statistics** under **Credit and collections > Periodic tasks > Credit management**. 
+There are many Credit statistics that are calculated in the **Related information** FactBox when viewing **All customers** or **Aged balances**. This article answers some common questions about running the periodic task **Calculate balance statistics**. This feature is found **Credit and collections > Periodic tasks > Credit management**. 
 
 ## DSO (Days Sales Outstanding)
 
-DSO (Days Sales Outstanding) can be calculated for two different time periods. In Credit and collections parameters > Credit tab > Credit management statistics, enter the values for DSO1 and DSO2 in months. For example if you want to see the days sales outstanding for the last 12 months and the last 6 months, enter 12 and 6 in the DSO1 and DSO2 fields. 
+DSO (Days Sales Outstanding) can be calculated for two different time periods. In **Credit and collections parameters** page, enter the values for DSO1 and DSO2 in months. For example, if you want to see the days sales outstanding for the last 12 months and the last six months, enter 12 and 6 in the DSO1 and DSO2 fields. 
 
-The formula for calculating DSO is (Outstanding balance/Total credit sales) * number of days
+The formula for calculating DSO is:
+(Outstanding balance/Total credit sales) * number of days
 
 **Outstanding balance** is the total open AR amount for the customer, regardless of invoice dates. This can be seen on the Balance page under Accounts receivable > Customers > All customers - select the customer account > Customer tab > Balance. 
 
-**Total credit sales** is the total of AR invoices between today's date and X number of months back, depending on the DSO1 and DSO2 months defined in parameters. In this example we are using 12 months and 6 months. The total sales can be verified using the Customer invoice journal listed in Accounts receivable > Inquiries and reports > Invoices > Invoice journal. Filter to the customer and a date range. 
+**Total credit sales** is the total of AR invoices between today's date and X number of months back, depending on the DSO1 and DSO2 months defined in parameters. In this example, we are using 12 months and 6 months. The total sales can be verified using the Customer invoice journal listed in Accounts receivable > Inquiries and reports > Invoices > Invoice journal. Filter to the customer and a date range. 
 
-**Number of days** is the number of days in the past X months, depending on the DSO1 and DSO2 months defined in parameters. For example, today is October 11 and DSO2 is defined as 6 months (ago) which is April 11. So the number of days between October 11 and April 11 is 183. For a DSO of 12 months use 365 days (366 if a leap year). 
+**Number of days** is the number of days in the past X months, depending on the DSO1 and DSO2 months defined in parameters. For example, today is October 11 and DSO2 is defined as 6 months (ago) which is April 11. So the number of days between October 11 and April 11 is 183. For a DSO of 12 months, use 365 days (366 if a leap year). 
 > [!Note]
 > If the **Customer since** field on the customer record, Credit and collections FastTab, is populated with a date that is later than the DSO date, then use the date on the **Customer since** field to calculate the number of days. For example, if the Customer since date is May 1, which is after the DSO date of Aprill 11, then the number of days would be 163 instead of 183. 
 
