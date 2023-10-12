@@ -1,0 +1,27 @@
+---
+title: Set up the company logo shown in the Warehouse Management mobile app
+description: This article explains how to set up the company logo that Supply Chain Management will pass to the Warehouse Management mobile app.
+author: Adesypri
+ms.author: Adesypri
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 10/12/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
+---
+
+# Set up the company logo shown in the Warehouse Management mobile app
+
+[!include [banner](../includes/banner.md)]
+
+This article explains how to set up the company logo that Supply Chain Management will pass to the Warehouse Management mobile app.
+
+## Upload the company logo image in Supply Chain Management
+In Supply Chain Management, there are two places where you can upload an image for the company logo, both in **Organization Administration** > **Organizations** > **Legal entities**:
+1.	On the **Dashboard image** tab, select *Logo* on the **Dashboard company image type field**, and upload your image
+2.	Or, upload the image on the **Report company logo image tab**
+
+## How the image is selected
+If an image has been uploaded in both the above places, then the image uploaded on the **Dashboard image** tab will always be the one that is used by the Warehouse Management mobile app, even if *Logo* is not the currently selected value of the **Dashboard company image type** field, as long as there is an image uploaded under that value.
