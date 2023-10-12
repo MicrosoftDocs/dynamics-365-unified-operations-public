@@ -209,7 +209,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 > [!IMPORTANT]
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
 >
-> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
+> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/mvameldingen_eng/informasjonsmodell/#encoding-code-list).
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
 
@@ -494,7 +494,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     - `https://platform.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *production* endpoint of Altinn
 
     > [!IMPORTANT]
-    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/english/test/#production-environment>.
+    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/mvameldingen_eng/test/#production-environment>.
 
 3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
