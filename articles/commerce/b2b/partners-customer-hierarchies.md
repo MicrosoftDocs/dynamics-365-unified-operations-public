@@ -85,7 +85,7 @@ Commerce headquarters users can inspect property values for all customer records
 
 When a business partner is onboarded to a B2B e-commerce site, by default the business partner has access to all B2B e-commerce sites under the same organization. To be able to restrict business partner access to B2B ecommerce sites, starting in Commerce version 10.0.38 administrators can associate online B2B channels with the customer hierarchy of a business partner. If no channel is associated with the business partner's customer hierarchy, then the business partner can access all of the B2B e-commerce sites under the same organization.
 
-The following example image from headquarters shows the customer hierarchy of a business partner with the associated retail channel highlighted.
+The following example image shows the customer hierarchy of a business partner in headquarters with the associated retail channel highlighted.
 
 ![Customer hierarchy of a business partner in headquarters with the associated retail channel highlighted](../media/customer_hierarchy_channels.png)
 
