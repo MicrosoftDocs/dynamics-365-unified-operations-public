@@ -1,6 +1,3 @@
----
-# required metadata
-
 title: Terminate schedule lines
 description: This topic 
 author: JodiChristiansen
