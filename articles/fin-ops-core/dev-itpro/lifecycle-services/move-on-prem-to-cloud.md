@@ -52,9 +52,9 @@ After your Lifecycle Services cloud implementation project has been created, you
 
 ## Complete development and testing of updated integrations
 
-You will have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
+You have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
 
-You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
+You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach simplifies management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
 
 ## Prerequisites
 
