@@ -1,6 +1,6 @@
 ---
 title: Create customer and vendor records with an address in Costa Rica
-description: This topic provides information about how to set up records for customers and vendors located in Costa Rica. 
+description: This article explains how to set up records for customers and vendors located in Costa Rica. 
 author: Cpicon85
 ms.date: 10/09/2023
 ms.topic: Article
@@ -11,60 +11,65 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Costa Rica
 
-The Latin American customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+[!include [banner](../../includes/banner.md)]
+
+The Costa Rican customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
+
 ## Prerequisites
+Before you create records for customers and vendors who are located in Costa Rica, the following must be set up:
 
-* Create regions, provinces and communes from Costa Rica using states, counties, and cities from the address setup.
-* Create tax codes for the VAT tax (value added tax) that will be used (VAT general rate, exempt, etc).
-* Create sales tax groups containing the tax codes created.
-* Create item sales tax groups containing the tax codes created.
-* Create document classes that will be used with the vendors/customers (invoices, credit notes, debit notes, packing slips, etc.) See sales and vendor invoice for Costa Rica company configuration.
-* Create a customer and vendor set that contains all the document classes that will be used.
-* Create a Tax ID for each type of tax identification that your customers and suppliers have.
-* Create a taxpayer type for each type of taxpayer that your customers and suppliers have.
+- Address formats specific to Costa Rica. This includes using States, Counties, and Cities for Regions, Provinces, and Communes, respectively.
+- Tax codes for the VAT tax (value added tax) that will be used (VAT general rate, exempt, etc).
+- Sales tax groups that contain the tax codes created.
+- Item sales tax groups that contain the tax codes created.
+- Document classes to use with customer and vendor invoices, credit notes, debit notes, and packing slips. For more details, see [Configure sales and purchase invoices for Costa Rica](ltm-configure-invoices-costa-rica.md).
+- A customer and vendor set that contains all the document classes that will be used.
+- A tax ID for each type of tax identification that your customers and suppliers have.
+- A taxpayer type for each type of taxpayer that your customers and suppliers have.
 
-## Customer configuration
+## Create a record for a customer in Costa Rica
 
-1. Go to **Accounts receivable > Customers > All customers** create a new customer.
-2. Set the type to “organization”.
-3. Set the customer group to a local one.
-4. In the **Address** section create a new one and give it a name.
-5. Set the country/region to Costa Rica.
-6. Complete the street and street number.
-7. Select a state, county, and city. 
-8. Set the address as primary.
-9. In the **Contact information** section create a new record for the company phone number. 
-10. In the **Sales demographic** section set the currency to **CRC** Costa Rican Colon.
-11. Configure the terms of payments.
-12. Configure the invoice account.
-13. Set the delivery terms, mode of delivery and delivery reason.
-14. Select a sales tax group that contains all the tax codes that can have the transactions with this customer.
-15. In the **LATAM** section complete the information as follows:
-    * **Customer set**: select a set created previously that contains the document classes to be used with the customer
-    * **Taxpayer type**: select a taxpayer created before, for example “persona juridica” that represents an organization
-    * **Based in country/region**: Costa Rica
-    * **Country document type**: select one tax ID type created before, for example "CJ" (cedula juridica)
-    * Complete the **Country document number** with the tax ID number the client
+1. Go to **Accounts receivable** > **Customers** > **All customers** and select **New**.
+2. In the **Type** field, select **Organization**.
+3. In the **Customer group** field, select a local group.
+4. In the **Address** section, select **New** and provide a name for the address.
+5. In the **Country/region** field, select **Costa Rica**.
+6. Enter the street and street number.
+7. Select a state, county, and city, and mark the address as primary. 
+8. In the **Contact information** section, select **New** to create a new record for the company phone number. 
+9. In the **Sales demographic** section set the currency to **CRC** (Costa Rican Colon).
+10. Configure the terms of payments and the invoice account.
+11. Set the delivery terms, mode of delivery, and delivery reason.
+12. Select a sales tax group that contains all the tax codes that can have transactions with this customer.
+13. In the **LATAM** section, enter the following field information:
 
-## Vendor configuration
+    - **Customer set** - Select a set that contains the document classes to be used with the customer.
+    - **Taxpayer type** - Select a taxpayer that represents an organization. For example **persona juridica**.
+    - **Based in country/region** - Select **Costa Rica**.
+    - **Country document type** - Select a tax ID type. For example, **CJ** (cedula juridica).
+    - Complete the **Country document number** with the customer's tax ID number.
 
-1. Go to **Accounts payable > Vendors > All vendors** create a new vendor.
-2. Set the type to “organization”.
-3. Set the customer group to a local one.
-4. In the **Address** section create a new one and give it a name.
-5. Set the country/region to Costa Rica.
-6. Complete the street and street number.
-7. Select a state, county, and city. 
-8. Set the address as primary.
-9. In the **Contact information** section create a new record for the company phone number. 
-10. In the **Sales demographic** section set the currency to **CRC** Costa Rican Colon
-11. Configure the terms of payments.
-12. Configure the invoice account.
-13. Set the delivery terms, mode of delivery and delivery reason.
-14. Select a sales tax group that contains all the tax codes that can have the transactions with this vendor.
-15. In the **LATAM** section complete the information as follows:
-      * **Vendor set**: select a set created previously that contains the document classes to be used with the vendor
-      * **Taxpayer type**: select a taxpayer created before, for example “persona juridica” that represents an organization
-    * **Based in country/region**: Costa Rica
-    * **Country document type**: select one tax ID type created before, for example "CJ" (cedula juridica)
-    * Complete the **Country document number** with the tax ID number the vendor
+## Create a record for a vendor in Costa Rica
+
+1. Go to **Accounts payable** > **Vendors** > **All vendors** and select **New**.
+2. In the **Type** field, select **Organization**.
+3. In the **Vendor group** field, select a local group.
+4. In the **Address** section, select **New** and provide a name for the address.
+5. In the **Country/region** field, select **Costa Rica**.
+6. Enter the street and street number.
+7. Select a state, county, and city, and mark the address as primary. 
+8. In the **Contact information** section, select **New** to create a new record for the company phone number. 
+9. In the **Sales demographic** section set the currency to **CRC** (Costa Rican Colon).
+10. Configure the terms of payments and the invoice account.
+11. Set the delivery terms, mode of delivery, and delivery reason.
+12. Select a sales tax group that contains all the tax codes that can have transactions with this vendor.
+13. In the **LATAM** section, enter the following field information:
+
+    - **Vendor set** - Select a set that contains the document classes to be used with the vendor.
+    - **Taxpayer type** - Select a taxpayer that represents the organization. For example, **persona juridica**.
+    - **Based in country/region** - Select **Costa Rica**.
+    * **Country document type** - Select a tax ID type. For example, **CJ** (cedula juridica).
+    * Complete the **Country document number** with the Vendor's tax ID number.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
