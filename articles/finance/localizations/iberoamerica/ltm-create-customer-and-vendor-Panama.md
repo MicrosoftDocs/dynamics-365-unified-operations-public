@@ -13,15 +13,16 @@ ms.custom: bap-template
 The Panamanian customer and vendor configuration contains the fiscal information required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
-Before you create records for customers and vendors who are located in Costa Rica, the following must be set up:
-*   Address formats specific to Panama. This includes using states, counties, and cities for regions, provinces, and communes respectively.
-*   Tax codes for the ITBMS tax that will be used (ITBMS general rate, exempt, etc).
-*   Sales tax groups containing the tax codes created.
-*   Item sales tax groups containing the tax codes created.
-*   Document classes to use with customers and vendor invoices, credit notes, debit notes, packing slips, etc. For more details, see [Configure sales and purchase invoices for Panama](ltm-Configure-invoices-Panama.md).
-*   A customer and vendor set that contains all the document classes that will be used.
-*   A Tax ID for each type of tax identification that your customers and suppliers have. 
-*   Taxpayer type for each type of taxpayer that your customers and suppliers have. 
+Before you create records for customers and vendors who are located in Panama, the following must be set up:
+
+- Address formats specific to Panama. This includes using states, counties, and cities for regions, provinces, and communes respectively.
+- Tax codes for the ITBMS tax that will be used (ITBMS general rate, exempt, etc).
+- Sales tax groups containing the tax codes created.
+- Item sales tax groups containing the tax codes created.
+- Document classes to use with customers and vendor invoices, credit notes, debit notes, packing slips, etc. For more details, see [Configure sales and purchase invoices for Panama](ltm-Configure-invoices-Panama.md).
+- A customer and vendor set that contains all the document classes that will be used.
+- A Tax ID for each type of tax identification that your customers and suppliers have.
+- Taxpayer type for each type of taxpayer that your customers and suppliers have. 
 
  
 
