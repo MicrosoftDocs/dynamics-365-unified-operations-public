@@ -63,6 +63,9 @@ You can configure a Sharepoint folder to be used as a source location of incomin
     
     ![ER source settings](../media/emea-dnk-er-source.jpg)
 
+> [!NOTE]
+> If no source is defined for import in batch mode then the system will request to define an individual import file right before the start of import process.
+
 ### Configure customer data
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
