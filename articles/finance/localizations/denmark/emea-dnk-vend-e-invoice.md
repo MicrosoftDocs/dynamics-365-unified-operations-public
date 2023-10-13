@@ -86,13 +86,12 @@ During import process products are identified via their external descriptions wh
 
 ### Configure units of measure
 
+Optionally, you can configure external codes for units of measure, if specific units will be explicitly defined in the incoming import files. Do the following steps.
+
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
-
-    > [!NOTE]
-    > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
+4. In **Value** section, in **Value** field, enter the external unit code which will be used in import files.
 
 ### Enter customer requisitions
 
