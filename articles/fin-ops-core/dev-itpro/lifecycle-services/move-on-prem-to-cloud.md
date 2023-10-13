@@ -4,7 +4,7 @@
 title: Move Lifecycle Services implementation projects from on-premises to the cloud
 description: This article explains how to move your Microsoft Dynamics 365 Finance + Operations (on-premises) environments to the cloud.
 author: ttreen
-ms.date: 03/20/2023
+ms.date: 10/12/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,9 +52,9 @@ After your Lifecycle Services cloud implementation project has been created, you
 
 ## Complete development and testing of updated integrations
 
-You will have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
+You have to make some changes to the integration design patterns that you used for interfaces with your Finance + Operations (on-premises) environment. These changes can be substantial, and a detailed discussion of them is beyond the scope of this article. Nevertheless, you must evaluate all your interfaces and make the appropriate changes to them.
 
-You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach will simplify management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
+You should consider developing your updated interfaces in such a way that they can coexist in the same code base as the original interfaces. This approach simplifies management of the code lifecycle during the period of your transition from on-premises to cloud. If this approach isn't possible, you must manage a new development branch through your cloud go-live. To simplify management of this new branch during the transition period, we recommend that you freeze other code changes as much as you can. Additionally, in your detailed cut-over plan, you should carefully document the steps for inactivating your old interfaces and activating the new interfaces.
 
 ## Prerequisites
 
@@ -394,7 +394,9 @@ Document handling attachments for Finance + Operations (on-premises) environment
     $dBName = "<DATABASE_NAME>"
     $dBUsername = "<DATABASE_USER>"
     $dBPassword  = "<DATABASE_PASSWORD>"
+    # Note! - The storageAccountName should be set without the ".blob.core.windows.net", e.g. $storageAccountName = wxxtst4xx5bfxx
     $storageAccountName = "<STORAGE_ACCOUNT_NAME>"
+    # Note! - The sasToken starts with "sv=20"
     $sasToken = "<SAS_TOKEN>"
 
     [Reflection.Assembly]::LoadWithPartialName("System.Security.Cryptography") #Load crypto
