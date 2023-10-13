@@ -66,17 +66,17 @@ You can configure a Sharepoint folder to be used as a source location of incomin
 > [!NOTE]
 > If no source is defined for import in batch mode then the system will request to define an individual import file right before the start of import process.
 
-### Configure customer data
+### Configure vendor data
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
-2. On the **Addresses** FastTab, add a valid address for the customer.
-3. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-4. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-5. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
-6. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
+2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number will be used for the vendor identification during import process via matching to **cac:AccountingSupplierParty\cac:Party\cac:PartyIdentification\cbc:ID** element's value in the import XML file.
 
-    > [!NOTE]
-    > All available contact persons must already be defined for the selected customer.
+### Configure products
+
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
+2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code that you selected in step 2.
+4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
 ### Configure units of measure
 
@@ -87,13 +87,6 @@ You can configure a Sharepoint folder to be used as a source location of incomin
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
-
-### Configure sales tax codes
-
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code that you selected in step 2.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
 
 ### Enter customer requisitions
 
