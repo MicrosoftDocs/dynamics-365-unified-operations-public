@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit statistics FAQ
-description: This article answers some frequently asked questions about Credit statistics
+description: This article answers some frequently asked questions about credit statistics
 author: JodiChristiansen
 ms.date: 10/15/2023
 ms.topic: article
@@ -26,34 +26,37 @@ ms.search.validFrom: 2023-10-15
 ms.dyn365.ops.version: 10.0.35
 
 ---
-# Credit statistics frequently asked questions
+# Credit statistics FAQ
 
-This article answers some common questions about running the periodic task **Calculate balance statistics**. This feature is found **Credit and collections > Periodic tasks > Credit management**. There are many credit statistics that are calculated in the **Related information** FactBox when viewing **All customers** or **Aged balances**. 
+This article answers some frequently asked questions about running the **Calculate balance statistics** periodic task. This feature is found at **Credit and collections** \> **Periodic tasks** \> **Credit management**. When you view the **All customers** or **Aged balances** page, many credit statistics are calculated in the **Related information** FactBox.
 
-## DSO (Days sales outstanding)
+## How is DSO (days sales outstanding) calculated and used?
 
-DSO (Days sales outstanding) can be calculated for two different time periods. On **Credit and collections parameters** page, enter the values for DSO1 and DSO2 in months. For example, if you want to see the days sales outstanding for the last 12 months and the last six months, enter 12 and 6 in the **DSO1** and **DSO2** fields. 
+DSO (days sales outstanding) can be calculated for two different time periods. On the **Credit and collections parameters** page, enter the values for DSO1 and DSO2 in months. For example, if you want to view the DSO for the last 12 months and the last six months, enter **12** in the **DSO1** field and **6** in the **DSO2** field.
 
-The formula for calculating DSO is:
-(Outstanding balance/Total credit sales) * number of days
+The following formula is used to calculate DSO:
 
-**Outstanding balance** is the total open Accounts receivable amount for the customer, regardless of invoice dates. This can be seen on the **Balance** page. Go to **Accounts receivable** > **Customers** > **All customers**. Select the customer account > **Customer tab** > **Balance**. 
+(*Outstanding balance* &divide; *Total credit sales*) &times; *Number of days*
 
-**Total credit sales** is the total of Accounts receivable invoices between today's date and X number of months back, depending on the DSO1 and DSO2 months defined in parameters. In this example, we are using 12 months and 6 months. The total sales can be verified using the **Customer invoice journal**. Go to **Accounts receivable** > **Inquiries and reports** > **Invoices** > **Invoice journal**. Select the customer and a date range. 
+Here's an explanation of the formula:
 
-**Number of days** is the number of days in the past X months, depending on the DSO1 and DSO2 months defined in parameters. For example, today is October 11 and DSO2 is defined as 6 months (ago) which is April 11. So the number of days between October 11 and April 11 is 183. For a DSO of 12 months, use 365 days (366 if a leap year). 
+- *Outstanding balance* – The total open Accounts receivable amount for the customer, regardless of invoice dates. You can view this amount on the **Balance** page. Go to **Accounts receivable** \> **Customers** \> **All customers**, select the customer account, and then, on the **Customer** tab, select **Balance**.
+- *Total credit sales* – The total of Accounts receivable invoices between today's date and *x* number of months in the past, depending on the DSO1 and DSO2 months that are defined in Credit and collections parameters. This example uses 12 months and six months. You can verify the total sales by using the Customer invoice journal. Go to **Accounts receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**, and select the customer and a date range.
+- *Number of days* – The number of days in the past *x* months, depending on the DSO1 and DSO2 months that are defined in Credit and collections parameters. For example, today is October 11, and DSO2 is defined as six months (in the past), or April 11. Therefore, the number of days between October 11 and April 11 is 183. For a DSO of 12 months, use 365 days (or 366 for a leap year).
 
-> [!Note]
-> If the **Customer since** field on the **Customer**, **Credit and collections** FastTab is populated with a date that is later than the DSO date, then the date on the **Customer since** field is used to calculate the number of days. For example, if the **Customer since** date is May 1, which is after the DSO date of Aprill 11, then the number of days would be 163 instead of 183. 
-
+> [!NOTE]
+> If the **Customer since** field on the **Credit and collections** FastTab of the **Customer** page is set to a date that's later than the DSO date, the date in the **Customer since** field is used to calculate the number of days. For example, the **Customer since** date is May 1, which is after the DSO date of April 11. In this case, the number of days is 163 instead of 183.
 
 ### DSO calculation example
-For customer Fabrikam, Inc. their outstanding balance is $50,000 and their total credit sales $150,000. The **Customer since** field is 01/01/2022. 
-- DSO1 (12 months) = 50,000/150,000 * 365 = 121.67. 
-- DSO2 (6 months) = 50,000/150,000 * 183 = 61.00. 
-- If the **Customer since** field is set to 01/02/2023 then DSO (12 months)  = 50,000/150,000 * 283  = 94.33
 
-## Average payment days
-Why is the average payment days not calculating? The customer has invoices and payments that have been settled together. 
-- Go to **Cash and bank management parameters** > **General** > **General**. The **Not sufficient funds** field needs to have a value entered.
-- The invoice date and payment date must be at least one day apart or the average would be zero. 
+For the customer Fabrikam, Inc., the outstanding balance is $50,000, and the total credit sales are $150,000. The **Customer since** field is set to January 1, 2022 (01/01/2022).
+
+- DSO1 (12 months) = (50,000 &divide; 150,000) &times; 365 = 121.67.
+- DSO2 (six months) = (50,000 &divide; 150,000) &times; 183 = 61.00.
+
+If the **Customer since** field is set to January 2, 2023 (01/02/2023), DSO (12 months) = (50,000 &divide; 150,000) &times; 283 = 94.33.
+
+## Why aren't the average payment days being calculated? The customer has invoices and payments that have been settled together.
+
+- Go to **Cash and bank management parameters** \> **General** \> **General**, and make sure that a value is entered in the **Not sufficient funds** field.
+- The invoice date and payment date must be at least one day apart. Otherwise, the average is 0 (zero).
