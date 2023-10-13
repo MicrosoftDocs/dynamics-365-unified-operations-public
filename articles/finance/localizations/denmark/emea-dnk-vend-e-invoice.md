@@ -30,6 +30,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 - The primary address of the legal entity must be in Denmark.
 - The latest version of the following Electronic reporting (ER) format configuration must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
+
     - Vendor Invoice Import (DK)
         
 > [!NOTE]
@@ -91,17 +92,16 @@ Optionally, you can configure external codes for units of measure, if specific u
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external unit code which will be used in import files.
+4. In **Value** section, in **Value** field, enter the external unit code which is expected to be used in import files.
 
-### Enter customer requisitions
 
-When you register free text invoices, invoices that are based on sales orders, or project invoices, you must enter a customer requisition. You can also add an optional customer reference.
+## Import vendor electronic invoices
 
-#### Enter a customer requisition for a free text invoice
+To run the procedure of vendor electronic invoices import, do the following steps.
 
-1. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
-2. Create a new invoice, or select an existing invoice.
-3. In the **Header** view, on the **Customer** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+1. Go to **Accounts payable** \> **Periodic tasks** \> **Import vendor invoices**.
+2. In the **Electronic report parameters** form, in the **File source** FastTab, in the **Source settings** field, select the previously configured source location for batch mode import. In case no source for batch import is defined, the system will request to select a single file for import.
+3. Click **OK** to immediately start import process or schedule import running in the background.
 
 #### Enter a customer requisition for a sales order
 
