@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and use vendor electronic invoices import for Denmark in Microsoft Dynamics 365 Finance.
+This article explains how to configure and use vendor electronic invoices import for Denmark from the country specific **OIOUBL** format in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -39,19 +39,23 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 ### Reference the imported ER format configurations
 
-1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
-2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, select the imported formats for electronic documents:
-
-    - **Sales and Free text invoice:** Sales Invoice DE
-    - **Sales and Free text credit note:** Sales Invoice DE
-    - **Project invoice:** Project Invoice DE
-    - **Project credit note:** Project Invoice DE
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
+2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Vendor invoice** field select the imported format **Vendor Invoice Import (DK)**.
     
-### Configure legal entity data
+### Configure the sources to import files in a batch mode
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
-2. On the **Addresses** FastTab, add a valid primary address for the legal entity.
-3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity.
+You can configure a Sharepoint folder to be used as a source location of incoming vendors invoices files.
+
+1. Go to **Organization administration** \> **Document management** \> **Document types**.
+2. Create a new or configure an existing Document type.
+3. On the **General** FastTab, in the **Location** field, select the **SharePoint** value.
+4. In the **SharePoint Address** field, select the folder where import files will be located.
+5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
+6. Create a new Electronic reporting source
+7. In the **Format** field select **Vendor Invoice Import (DK)** format configuration.
+8. It the **File source** FastTab, assing a source name in the **Name** field and click on **Settings** button.
+
+
 
 ### Configure customer data
 
