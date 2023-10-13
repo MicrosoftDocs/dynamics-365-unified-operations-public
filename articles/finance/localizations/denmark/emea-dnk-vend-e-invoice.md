@@ -28,7 +28,7 @@ This article explains how to configure and use vendor electronic invoices import
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Denmark.
-- The latest versions of the following Electronic reporting (ER) format configurations must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version of the following Electronic reporting (ER) format configuration must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Vendor Invoice Import (DK)
         
@@ -68,15 +68,21 @@ You can configure a Sharepoint folder to be used as a source location of incomin
 
 ### Configure vendor data
 
+During import process vendors are identified via their tax exempt numbers. To enable proper vendors identification, do the following configuration steps.
+
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
-2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number will be used for the vendor identification during import process via matching to **cac:AccountingSupplierParty\cac:Party\cac:PartyIdentification\cbc:ID** element's value in the import XML file.
+2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number will be used for the vendor identification during import process via matching to **Invoice\cac:AccountingSupplierParty\cac:Party\cac:PartyIdentification\cbc:ID** element's value in the import XML file.
 
 ### Configure products
 
-1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-2. Select a sales tax code, and then, on the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-3. In the **Overview** section, create a line for the selected unit. In the **External code** field, enter the sales tax code that you selected in step 2.
-4. In the **Value** section, in the **Value** field, enter an external code to use for the selected sales tax code, according to the [required codification](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/).
+During import process products are identified via their external descriptions which are usually vendor specific. To enable proper productss identification, do the following configuration steps.
+
+1. Go to **Product information management** \> **Products** \> **Released products**.
+2. Select a product, and then, in the **Purchase** menu, in the **Related information** section, select **External item description**.
+3. Create a new external description for the selected product.
+4. In the **Account code** column, select the **Table** value if you define an external product description for a specific vendor. 
+5. In the **Vendor relation** columnn, select a specific vendor.
+6. In the **External item number** columnn, enter an external product code. This code will be used for the product identification during import process via matching to **Invoice\cac:InvoiceLine\cac:Item\cbc:Description** element's value in the import XML file.
 
 ### Configure units of measure
 
