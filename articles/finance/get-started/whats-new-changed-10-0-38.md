@@ -57,7 +57,7 @@ they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/fin
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-
+|Credit and collections |Credit and collections analytics performance improvements|The credit and collections Power BI analytics reports have improved data joins and filtering for faster rendering of the reports. The currency calculation process and computed columns are redesigned so the overall performance of the reports is faster. The Day sales outstanding calculation was removed from the report. This calculation is available in the **Credit statistics** fact box. For more information, see [Credit and collections management Power BI content](finance/accounts-receivable/credit-collections-power-bi.md).| 
 
 
 ## Additional resources
