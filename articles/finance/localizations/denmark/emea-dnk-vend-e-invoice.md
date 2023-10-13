@@ -103,52 +103,28 @@ To run the procedure of vendor electronic invoices import, do the following step
 2. In the **Electronic report parameters** form, in the **File source** FastTab, in the **Source settings** field, select the previously configured source location for batch mode import. In case no source for batch import is defined, the system will request to select a single file for import.
 3. Click **OK** to immediately start import process or schedule import running in the background.
 
-#### Enter a customer requisition for a sales order
+### Import process description
 
-1. Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
-2. Create a new sales order, or select an existing sales order.
-3. In the **Header** view, on the **General** FastTab, in the **References** section, enter values in the **Customer requisition** and **Customer reference** fields.
+1. During import process, Vendors will be identified via Tax exempt number defined in Vendor's master data. If no vendor with matching data is found in the system then the import process will fail with a related error-message.
+2. Products used in invoices lines will be identified via External item number which can be vendor-specific. If no product with matching external description is found in the system then the import process will fail with a related error-message.
+3. Units of measure, if used in invoices lines, will be identified via External codes values. If no unit with matching external code value is found in the system then the import process will fail with a related error-message.
+4. If an incoming import file contains the information about purchase orders and its lines in **OrderReference** and **OrderLineReference** elements then these numbers will be used for the invoice matching with purchase orders and lines entered in the system.
+5. If no orders or lines references are defined in an incoming file then the system will try to automatically match incoming vendor invoices with existing purchase orders.
+6. If no purchase order is found, the system will raise a warning but continue import considering products in invoice lines as "Non-stock" items and will expect that such products belong to Item model group with unmarked Stocked product check-box in Inventory policy. 
+7. DEFAULT_ITEM ......, the import process will fail with a related error-message.
+8. File attachments are supported during the import. All attached files should have extensions. If an attached file has no extension then the system will raise a warning and this attachment will be skipped during the import.
+9. Taxes will be calculated in the system based on the imported data and tax settings, not imported as fixed amounts from the incoming XML file. The results of the calculation can be then manually adjusted, if needed.
 
-#### Enter a customer requisition for a project invoice
+Successfully imported vendor electronic invoices will be shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**. 
 
-1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
-2. Create a new project contract, or select an existing project contract.
-3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
-4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract.
-
-## Export customer electronic invoices
-
-### Generate e-invoices
-
-When an invoice is posted, you can generate an electronic invoice from any invoice journal. Select the invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Send** \> **Original**.
-
-![Sending an e-invoice.](../media/emea-nor-ger-einvoice.jpg)
-
-### View e-invoices
-
-To inquire about the XML files of electronic invoices that have been generated, follow these steps.
-
-1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
-2. Select a job, and then select **Show files**.
-
-    ![Show files button.](../media/emea-nor-ger-einvoice-open.jpg)
-
-3. Select **Open** to download the file that contains the electronic invoice.
-
-If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
-
-![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
-
-### Send e-invoices to ER destinations
-
-You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices are automatically sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
-
-For more information about ER destinations, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+> [!NOTE]
+> **Limitations**
+>  - Import of miscellaneous charges is not supported;
+>  - Only line-level discounts import is supported.
 
 ## Additional resources
 
-- [Forced electronic invoices generation](../europe/emea-eur-forced-einvoices.md)
-- [Supported standards for electronic invoicing](../europe/emea-oioubl-standards-electronic-invoicing.md)
+- [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
