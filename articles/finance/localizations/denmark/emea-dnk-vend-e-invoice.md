@@ -61,7 +61,7 @@ You can configure a Sharepoint folder to be used as a source location of incomin
   - To move there files which were imported with warnings in the **Document type for files with warnings** field;
   - To move there files which were failed with errors in the **Document type for failed files** field.
     
-    ![ER source settings](../media/emea-nor-ger-einvoice-open.jpg)
+    ![ER source settings](../media/emea-dnk-er-source.jpg)
 
 ### Configure customer data
 
