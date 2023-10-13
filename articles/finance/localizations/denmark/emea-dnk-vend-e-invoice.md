@@ -52,10 +52,16 @@ You can configure a Sharepoint folder to be used as a source location of incomin
 4. In the **SharePoint Address** field, select the folder where import files will be located.
 5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
 6. Create a new Electronic reporting source
-7. In the **Format** field select **Vendor Invoice Import (DK)** format configuration.
-8. It the **File source** FastTab, assing a source name in the **Name** field and click on **Settings** button.
-
-
+7. In the **Format** field select, **Vendor Invoice Import (DK)** format configuration.
+8. It the **File source** FastTab, assign a source name in the **Name** field and click on **Settings** button.
+9. It the **Source settings** form, enable **Sharepoint** option.
+10. It the **Document type for input sources** field, select the document type created at step 2.
+11. Optionally, three more Document types can be preliminary set up and used to define different *post-process* locations:
+  - To move there files which were successfully imported in the **Document type for imported files** field;
+  - To move there files which were imported with warnings in the **Document type for files with warnings** field;
+  - To move there files which were failed with errors in the **Document type for failed files** field.
+    
+    ![ER source settings](../media/emea-nor-ger-einvoice-open.jpg)
 
 ### Configure customer data
 
