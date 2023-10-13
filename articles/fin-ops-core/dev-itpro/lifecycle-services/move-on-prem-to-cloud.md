@@ -211,6 +211,10 @@ After the validation is successful, the application presents a set of menu optio
 
     > [!IMPORTANT]
     > You must use SQL Server authentication. You can't use a domain sign-in.
+    >
+    > You must use the SQL server (NetBIOS) name, and not the fully qualified domain name (FQDN). If you have a SQL cluster, you must use the server name of the active primary node.
+    >
+    > If you have an issue connecting with the SQL Server (NetBIOS) name, ensure that the certificate used for SQL encryption has the server’s name registered as an DNS entry in the Subject Alternative Names property. The SQL encryption certificate should have NetBIOS as well as FQDN entries for all SQL server nodes, and the listener if a cluster.
     > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you've used compression in your Dynamics 365 database, more space will be required, because the snapshot is uncompressed. The paths should be on the local disk of the machine. (Avoid using shared paths.)
     > 
