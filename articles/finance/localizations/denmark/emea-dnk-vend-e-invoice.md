@@ -72,7 +72,7 @@ You can configure a Sharepoint folder to be used as a source location of incomin
 During import process vendors are identified via their tax exempt numbers. To enable proper vendors identification, do the following configuration steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
-2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number will be used for the vendor identification during import process via matching to **Invoice\cac:AccountingSupplierParty\cac:Party\cac:PartyIdentification\cbc:ID** element's value in the import XML file.
+2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number will be used for the vendor identification during import process via matching to **Invoice\cac:AccountingSupplierParty\cac:Party\cac:PartyLegalEntity\cbc:CompanyID** element's value in the import XML file.
 
 ### Configure products
 
@@ -83,7 +83,7 @@ During import process products are identified via their external descriptions wh
 3. Create a new external description for the selected product.
 4. In the **Account code** column, select the **Table** value if you define an external product description for a specific vendor. 
 5. In the **Vendor relation** columnn, select a specific vendor.
-6. In the **External item number** columnn, enter an external product code. This code will be used for the product identification during import process via matching to **Invoice\cac:InvoiceLine\cac:Item\cbc:Description** element's value in the import XML file.
+6. In the **External item number** columnn, enter an external product code. This code will be used for the product identification during import process via matching to **Invoice\cac:InvoiceLine\cac:Item\cbc:Name** element's value in the import XML file.
 
 ### Configure units of measure
 
@@ -108,7 +108,7 @@ To run the procedure of vendor electronic invoices import, do the following step
 1. During import process, Vendors will be identified via Tax exempt number defined in Vendor's master data. If no vendor with matching data is found in the system then the import process will fail with a related error-message.
 2. Products used in invoices lines will be identified via External item number which can be vendor-specific. If no product with matching external description is found in the system then the import process will fail with a related error-message.
 3. Units of measure, if used in invoices lines, will be identified via External codes values. If no unit with matching external code value is found in the system then the import process will fail with a related error-message.
-4. If an incoming import file contains the information about purchase orders and its lines in **OrderReference** and **OrderLineReference** elements then these numbers will be used for the invoice matching with purchase orders and lines entered in the system.
+4. If an incoming import file contains the information about purchase orders and its lines in **Invoice\cac:OrderReference\cbc:ID** and **Invoice\cac:InvoiceLine\cac:OrderLineReference\cbc:LineID** elements then these numbers will be used for the invoice matching with purchase orders and lines entered in the system.
 5. If no orders or lines references are defined in an incoming file then the system will try to automatically match incoming vendor invoices with existing purchase orders.
 6. If no purchase order is found, the system will raise a warning but continue import considering products in invoice lines as "Non-stock" items and will expect that such products belong to Item model group with unmarked Stocked product check-box in Inventory policy. 
 7. DEFAULT_ITEM ......, the import process will fail with a related error-message.
