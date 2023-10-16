@@ -161,7 +161,7 @@ After a catalog is in an **Approved** status, you can publish it by selecting **
 
 ## Additional resources
 
-[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
+[Extensibility impact of Commerce catalogs for B2B customizations](dev-itpro/catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
 

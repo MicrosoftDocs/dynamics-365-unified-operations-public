@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 

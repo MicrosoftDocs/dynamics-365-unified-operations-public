@@ -37,7 +37,7 @@ This article shows you how to create a purchase order manually. It's more typica
 4. Expand the **General** section.
 
     - The **Site** field together with the **Warehouse** field specifies where the procured goods or services must be delivered to. The default delivery address is the site. Both fields can be populated with values set up for the selected vendor, or you can specify them manually.  
-    - The **Delivery date** field is used to specify when procured goods and services need to be delivered. You can specify a single delivery date for the order, or the individual order lines can be given unique delivery dates. If the delivery date specified here cannot be met for specific products or services because they have longer lead times, then those lines will be created with a later delivery date to accommodate for this.  
+    - The **Receipt date** field is used to specify when procured goods and services need to be delivered. You can specify a single receipt date for the order, or the individual order lines can be given unique receipt dates. If the receipt date specified here cannot be met for specific products or services because they have longer lead times, then those lines will be created with a later receipt date to accommodate for this.  
 
 5. Expand the **Administration** section. The **Orderer** field can be used to specify who is placing the order. This may be convenient to share with the vendor in case they need to contact that person. The field may be assigned a value automatically if the current user account is associated with a name on the **Users** page.  
 6. Select **OK**. The order header has now been created. When you work with purchase order lines, only a summary of the header information is shown. If you need to view the rest of the information, select **Header**.  
@@ -63,7 +63,7 @@ This article shows you how to create a purchase order manually. It's more typica
     - The value in the **Net Amount** field is calculated from other fields on the line including quantity, unit price, discount, and discount percent. It's possible to change the Net amount, but then the **Unit Price**, **Discount**, and **Discount percent** fields will be blank and when you post toward the line, the amount posted will be proportional to the net amount. Typically the **Net Amount** field is only used for displaying the net amount of the line.  
 
 8. Expand the **Line details** section.
-9. Select the **Delivery** tab. A unique delivery date can be assigned to each order line. The date is inherited from the field on the purchase order header, but you can change this.  
+9. Select the **Delivery** tab. A unique receipt date can be assigned to each order line. The date is inherited from the field on the purchase order header, but you can change this.  
 
 ## Review order totals
 1. Select **Totals**.

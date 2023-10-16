@@ -11,7 +11,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  FeatureManagementWorkspace
-audience: IT Pro, Application user
+audience: Application user
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 

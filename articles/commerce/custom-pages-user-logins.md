@@ -100,7 +100,7 @@ Dedicated Azure AD modules are included in Commerce to build custom pages for Az
 
 You can create a single page with the **AAD Generic** module and use it for all of your user policy pages, or you can build out specific pages using the individual Azure AD modules for sign-in, sign-up, profile edit, password reset, and password reset verification. You may also use a mix of both, using the specific Azure AD pages for the page layouts noted below, and the generic AAD module page for remaining page layouts within these or other user policies pages.
 
-To learn more about the Azure AD Modules that ship with the module library, read more at [Identity management pages and modules](identity-mgmt-modules.md).
+To learn more about the Azure AD Modules that ship with the module library, read more at [Identity management pages and modules](dev-itpro/identity-mgmt-modules.md).
 
 To build the custom pages with specific identity modules to handle user sign-ins, follow these steps.
 
@@ -203,9 +203,9 @@ After you update the global.json file and publish your changes, the new link tex
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 [Configure multiple B2C tenants in a Commerce environment](configure-multi-B2C-tenants.md)
 

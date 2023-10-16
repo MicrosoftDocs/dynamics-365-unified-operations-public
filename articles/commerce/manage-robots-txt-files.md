@@ -85,9 +85,9 @@ To delete a robots.txt file in Commerce, follow these steps.
 
 [Associate a Dynamics 365 Commerce site with an online channel](associate-site-online-store.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

@@ -6,7 +6,7 @@ ms.date: 04/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

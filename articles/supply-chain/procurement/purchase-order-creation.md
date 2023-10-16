@@ -42,7 +42,7 @@ The PO header also contains information about charges that apply to the whole or
 
 POs can be for physical products or for services. A setting on the inventory model group determines whether a particular item number applies to a product or a service. Usually, the item that is purchased is specified by an item number. However, if the order is for products or services that are directly consumed, you can also specify the item by using a procurement category.  
 
-PO lines contain lots of fields, but many of these fields have a default value or a value that is inherited from the order header. Additional fields are set when you select a product or service. The fields that are most often set manually include the fields for the item number, quantity, and requested delivery date. Information about unit price and discounts is also important, but the values of those fields are often determined by trade agreements or purchase agreements.  
+PO lines contain lots of fields, but many of these fields have a default value or a value that is inherited from the order header. Additional fields are set when you select a product or service. The fields that are most often set manually include the fields for the item number, quantity, and requested receipt date. Information about unit price and discounts is also important, but the values of those fields are often determined by trade agreements or purchase agreements.  
 
 When you select a product, you can search on all or part of the product name instead of using the item number. If the product has several variants, such as different sizes, you can see an overview of the available variants by using the **Add lines** function or by using the lookup that is available in the **Variant number** field.  
 

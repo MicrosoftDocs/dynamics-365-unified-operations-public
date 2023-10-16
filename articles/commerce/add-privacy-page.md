@@ -97,7 +97,7 @@ The fragment can now be referenced in the template for other site pages. When th
 
 [Cookie compliance](cookie-compliance.md)
 
-[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+[Replace user IDs associated with tracked content changes](dev-itpro/replace-IDs-tracked-changes.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

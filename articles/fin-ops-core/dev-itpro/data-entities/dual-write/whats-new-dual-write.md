@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 05/20/2023
+ms.date: 09/22/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -18,9 +18,38 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## August 2023
+
+Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
+
+> [!NOTE]
+> Beginning with this release there is a new naming convention for version numbers of the dual-write core solution. The format of the version number is **1.0.YYMMW.versionNumber**, where "YYMMW" are the calendar year, month, and week in which the version build is created. The "versionNumber" is **0** by default. With this change we also introduce a more consistent cadence in version rollouts for the dual-write core solution.
+
+| Feature | Description | Status |
+| ---|---|---|
+| Bug fix | Fix for reported bug in Authentication for the dual-write core plugin. | General availability |
+
+In addition to the above fixes, the following new objects are also included in the dual-write core solution in this release. These objects are related to the asynchronous processing for dual-write, which is a feature coming in a future release. The complete feature isn't yet available. These new objects are added to the environment in this release, but are nonfunctional until the full asynchronous processing feature is available.
+
+| Display name | Name | Type |
+| --- | --- | --- |
+| AsyncDataEnqueueOperation | AsyncDataEnqueueOperation | Custom API |
+| DataSyncAction | DataSyncAction | Custom API |
+| DataSyncEntityOperation | DataSyncEntityOperation | Custom API |
+| DataSyncExecutionRequest | DataSyncExecutionRequest | Custom API Request Parameter |
+| DataSyncExecutionResponse | DataSyncExecutionResponse | Custom API Response Property |
+| DataSyncPayload | DataSyncPayload | Custom API Request Parameter |
+| Dual Write Async Execution Partition Map Status | msdyn_dualwriteasyncexecutionpartitionmapstatus | Table |
+| Dual Write Async Processing Range | msdyn_dualwriteasyncprocessingrange | Table |
+| msdyn_datasyncexecutionerror | msdyn_datasyncexecutionerror | Table |
+| msdyn_datasyncexecutionsummary | msdyn_datasyncexecutionsummary | Table |
+| msdyn_datasyncexecutionsummary_elastic | msdyn_datasyncexecutionsummary_elastic | Table |
+| TriggerDataSyncAction | TriggerDataSyncAction | Custom API |
+
+
 ## July 2023 release
 
-The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) will begin rolling out in mid July with the following bug fixes and optimizations.
+The July 2023 release of [Dual-write core solution 1.0.42.1](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) rolls out in mid July with the following bug fixes and optimizations.
 
 | Feature | Description | Status |
 | ---|---|---|
@@ -34,10 +63,20 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix | CRM workflow performance fix to add an additional check on update calls. | General availability |
+| Bug fix | CRM workflow performance fix to add another check on update calls. | General availability |
 | Bug fix | Updates to the account entity during creation by the CreateVendorsinVendorsTable workflow are causing performance issues. | General availability |
-|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	General availability
+|Bug fix	| Postal address records not created in few cases as address composite fields are null while creation of address via accounts/contacts.	| General availability
 
+The June 2023 release of the Dual-write Supply Chain solution contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md) | General availability |
+| Feature | [Set the default ownership for all sales quotations.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#default-ownership) | General availability |
+| Feature	| [Change ownership for a sales quotation.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#change-ownership-for-a-sales-quotation)	| General availability |
+| Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#push-to-sales)	| General availability |
+| Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#copy-quotation-data)	| General availability |
+| Feature	| [Process events related to Sales integration.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#process-events)	| General availability |
 
 ### Solution details
 
@@ -48,6 +87,9 @@ The June release of Dual-write Global Address Book solution 3.5.1.91 contains th
 | Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.87 | 3.5.1.91 |
 | Dynamics365GABPartyAnchor |Yes | 3.5.1.87 | 3.5.1.91 |
 | Dynamics365GABPartyCommon | Yes | 3.5.1.87 | 3.5.1.91 |
+| Dynamics365SupplyChainExtended | Yes | 2.3.4.99 | 2.3.4.203 |
+| msdyn_Dynamics365SupplyChainExtendedMaps | Yes | 2.3.4.99 | 2.3.4.203 |
+| msdyn_Dynamics365SupplyChainExtendedAnchor | Yes | 2.3.4.99 | 2.3.4.203 |
 
 ## May 2023 release
 
@@ -62,7 +104,7 @@ The May release of the Dual-write Global Address Book solution 3.5.1.87 contains
 
 ## March 2023 release 
 
-The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid march.
+The March release of [Dual-write core solution 1.0.41.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It includes the following bug fixes. The rollout is starting mid March.
 
 | Feature | Description | Status |
 |---|---|---|
@@ -94,11 +136,11 @@ The February release of [Dual-write core solution 1.0.40.0](https://appsource.mi
 
 ## January 2023 release 
 
-The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
+The January release of [Dual-write core solution 1.0.39.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features. 
 
 ## November 2022 release 
 
-The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It does not include customer facing bug fixes or features. 
+The November release of [Dual-write core solution 1.0.38.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains monthly security updates. It doesn't include customer facing bug fixes or features. 
 
 ## October 2022 release 
 
@@ -106,7 +148,7 @@ The October release of [Dual-write core solution 1.0.37.0](https://appsource.mic
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
+| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side triggers only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
 
 The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
 
@@ -180,7 +222,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 
 | Feature | Description | Status |
 |---|---|---|
-| Address roles dropdown | Addresses can be classified as invoice addresses, business addresses, home addresses, and so on, through address purposes or roles. In this release, we are replacing the address roles text field with a Power Apps Component Framework (PCF) control that is a multi-select option set. This new control lets you select one or more address roles to assign to a given address. The drop-down list is available for both postal addresses and electronic addresses. | General availability |
+| Address roles dropdown | Addresses can be classified as invoice addresses, business addresses, home addresses, and so on, through address purposes or roles. In this release, we're replacing the address roles text field with a Power Apps Component Framework (PCF) control that is a multi-select option set. This new control lets you select one or more address roles to assign to a given address. The drop-down list is available for both postal addresses and electronic addresses. | General availability |
 | Bug fix | Updates to electronic address fields on the Account table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
 | Bug fix | Updates to electronic address fields on the Contact table (email, phone, fax) should update the primary electronic address in the msdyn_partyelectronicaddress table. | General availability |
 | Bug fix | Show the primary contact name for the primary contact that is selected on the **Associated contacts** tab on account, contact, and vendor pages. | General availability |
@@ -204,7 +246,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 This release includes the following map changes:
 
 + Apply the latest map version 1.0.0.2 for the CDS Parties - msdyn_parties map.
-+ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information will be synced from finance and operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the finance and operations entity for address roles is read only.
++ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information is synced from finance and operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the finance and operations entity for address roles is read only.
 
 
 ## March 2022 release
@@ -271,11 +313,11 @@ The November 2021 release of [Dual-write Party and Global Address Book Solutions
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Single view for party](view-party.md)| We are providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
-| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab do not synchronize, which causes a data mismatch between Microsoft Dataverse and finance and operations apps. | General availability |
-| Bug fix| When an electronic address is changed from non-primary to primary, the updates to telephone extension/description fields does not synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
-| Bug fix| Error while updating the **Gender** field on a Contact record to "non-specific" in finance and operations apps. | General availability |
-| Bug fix| In finance and operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change does not reflect in Dataverse. | General availability |
+| [Single view for party](view-party.md)| We're providing a new form to access Party data. The **Party** form provides the capability to view and manage party records along with all the associated customers, contacts, and vendors and their postal addresses and electronic addresses from a single form.| General availability |
+| Bug fix| On the **Accounts** form, postal address updates from the **Summary** tab don't synchronize, which causes a data mismatch between Microsoft Dataverse and finance and operations apps. | General availability |
+| Bug fix| When an electronic address is changed from nonprimary to primary, the updates to telephone extension/description fields doesn't synchronize from msdyn_partyelectronicaddress to **Contact** table.  | General availability |
+| Bug fix| Error while updating the **Gender** field on a Contact record to "nonspecific" in finance and operations apps. | General availability |
+| Bug fix| In finance and operations apps, during address creation, when a second address is marked as primary and saved, the IsPrimary value change doesn't reflect in Dataverse. | General availability |
 
 ## September 2021 release of party and global address book 
 
@@ -286,7 +328,7 @@ This release contains bug fixes listed in the following table.
 | Feature | Description | Status |
 |------|---------|-------|
 | Bug fix| Some client APIs have been deprecated and replaced with new APIs. The JavaScript code has been upgraded to use the new client APIs.| General availability |
-| Bug fix| Portals registration using email address fails when last name is not supplied. | General availability |
+| Bug fix| Portals registration using email address fails when last name isn't supplied. | General availability |
 | Bug fix| Unable to create a new postal address for a vendor.| General availability |
 
 ### Solution details
@@ -309,8 +351,8 @@ This release contains the features and bug fixes listed in the following table.
 |Bug fix | Fixes the case where dual-write alerts fail to send. | 	General availability |
 | System tables |	Adds support for enabling dual-write for system tables. |	General availability |
 |Bug fix | Some client APIs have been deprecated and replaced with new APIs. The JavaScript code in the dual-write orchestration package has been upgraded to use the new client APIs.| 	General availability |
-|Bug fix | Because dual-write doesn’t support offline mode, the company name does not automatically contain a default value. You must select the company manually.| 	General availability |
- |Bug fix | The **Vendor** group field on the **Accounts** form does not filter values based on the selected company.| 	General availability |
+|Bug fix | Because dual-write doesn’t support offline mode, the company name doesn't automatically contain a default value. You must select the company manually.| 	General availability |
+ |Bug fix | The **Vendor** group field on the **Accounts** form doesn't filter values based on the selected company.| 	General availability |
 |Bug fix | Saving a **Vendor** record in a finance and operations app fails with the error message *Cannot convert the literal '' to the expected type 'Edm.Int32'*. | 	General availability |
 |Bug fix | The transformation on the **Vendor payment method** map required an update. The enumeration on the **PAYMENTSTATUS** field is incorrect resulting in error message *Cannot convert the literal 'Confirmed' to expected type 'Edm.Int32'*. | 	General availability |
 |Bug fix | **Sales order header** and **Sales order line** maps conflict with **Project contract header** and **Project contract line** maps. You couldn't enable both at once.| 	General availability |
@@ -364,7 +406,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | Fixes processing of datetime fields during a catch-up sync. | General availability |
 | Tracing | Limits nonessential plugin trace logs for medium-size transactions (5 or more records). | General availability |
 | Bug fix | Added storage and tracking dimension group lookup fields to the **Shared Product Details** table. Added these lookup fields to the **Released products V2" -> msdyn_sharedproductdetails** dual-write map. | General availability |
-| Bug fix | In a sales order, when you select an existing product, the **Sales product category** value defaults to a value that comes from the **Product Category Assignments** table. But when the defaulted value is not part of sales hierarchy, the line-item addition throws an error message. To prevent the error and allow assignment inside finance and operations apps, the **sales product category** field can be left blank.  | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales product category** value defaults to a value that comes from the **Product Category Assignments** table. But when the defaulted value isn't part of sales hierarchy, the line-item addition throws an error message. To prevent the error and allow assignment inside finance and operations apps, the **sales product category** field can be left blank.  | General availability |
 | Bug fix | In a sales order, when you select an existing product, the **Sales Product Category** is read-only. It is editable when the product is set to write-in. | General availability |
 | Bug fix | The **Total Tax** field in a sales quotation and sales order are read-only. When the **Price per unit** field is changed in the sales quotation line or sales order line in finance and operations apps, it must sync back to the respective sales quotation or sales order line in customer engagement apps.  | General availability |
 | Bug fix | Updating the **Warehouse name** field in finance and operations apps caused the **Name** field in Dataverse to be blanked out. | General availability |
@@ -426,7 +468,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | Handle conflict resolution during catch-up sync. | General availability
 | Bug fix | Issues related to solution import on environments. | General availability
 | Bug fix | The **Notes** table now understands the **Null** value. | General availability |
-| Bug fix | Dual write orchestration package 2.2.2.50 does not replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
+| Bug fix | Dual write orchestration package 2.2.2.50 doesn't replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key, which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
 
 ## March 2021 release
 
@@ -437,10 +479,10 @@ This release contains the features and bug fixes listed in the following table.
 | Feature | Description | Status |
 |------|---------|-------|
 | [Party and Global Address Book](party-gab.md) | Brings schema parity with finance and operations apps, and gives you the ability to solve complex business problems on Dataverse related to customers, vendors, and contact persons. To use this feature, install [Dual-write Party and Global Address Book Solutions](https://aka.ms/dual-write-gab).<br>Supported finance and operations versions are 10.0.605.30025 (platform update 14), 10.0.644.20031 (platform update15), 10.0.689.10027 (platform update 16), and 10.0.761.1 (platform update 17) | General availability |
-| Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a finance and operations app cause an insert in Dataverse instead of an update. Please use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported finance and operations version is 10.0.778.0 (platform update 42) | General availability |
+| Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a finance and operations app cause an insert in Dataverse instead of an update. Use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported finance and operations version is 10.0.778.0 (platform update 42) | General availability |
 | Bug fix| Localization bug fixes and updates. | General availability |
 | Bug fix| A note without a description throws error. | General availability |
-| Bug fix| In finance and operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a re-cancellation or re-fulfillment causing a conflict error. | General availability |
+| Bug fix| In finance and operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a recancellation or refulfillment causing a conflict error. | General availability |
 
 ## February 2021 release
 
@@ -450,11 +492,11 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Commerce price engine for sales quotations](commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
-| [Notes integration](notes-integration.md) | Notes are integrated between customer engagement apps and finance and operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
+| [Commerce price engine for sales quotations](../../../fin-ops/data-entities/commerce-pricing.md) | Get pricing for sales quotations using commerce price engine. | General availability |
+| [Notes integration](../../../fin-ops/data-entities/notes-integration.md) | Notes are integrated between customer engagement apps and finance and operations applications for customers, vendors, sales orders, and purchase orders.  | General availability |
 
 > [!IMPORTANT]
-> If you don't need notes integration, do not install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
+> If you don't need notes integration, don't install or upgrade to Dual-write application orchestration solution version 2.2.2.23 or later. If you install the update, you won't be able to uninstall the notes feature. 
 
 ## January 2021 release
 
@@ -473,7 +515,7 @@ This release contains the features and bug fixes listed in the following table.
 
 | Feature | Description | Status |
 |------|---------|-------|
-| [Purchase order integration](scm-field-service-procurement.md) | Integrates purchase order functionality between Dynamics 365 Field Service and Dynamics 365 Supply Chain Management. | General availability |
+| [Purchase order integration](../../../fin-ops/data-entities/scm-field-service-procurement.md) | Integrates purchase order functionality between Dynamics 365 Field Service and Dynamics 365 Supply Chain Management. | General availability |
 | Bug fix | Localization updates. | General availability |
 | Bug fix | In customer engagement apps, on the **Contact** form, after you set **Is Sellable** to **Yes** and save the record, the contact is considered a customer who can transact. Because customers are associated with transactions, **Is Sellable** becomes read-only after saving. You can't change it back to **No**. | General availability |
 
@@ -512,9 +554,9 @@ The September 2020 release contains the features and bug fixes listed in the fol
 |------|---------|-------|
 | Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [dual-write Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all). | General availability |
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** column. |   General availability   |  
-| [Money to decimal data type conversion](currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
+| [Money to decimal data type conversion](../../../fin-ops/data-entities/currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
 | Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
-| Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows non-administrator users to create rows that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
+| Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows nonadministrator users to create rows that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Tracing | Internal column added for use in tracing. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Bug fix | Fixes issues where dual-write fails because of a mismatch between the plugin and the destination environments. This fix is part of Dual-write core solution 10.0.21. | General availability |
 | Bug fix | Support to ensure that unused plugins are deleted. This fix is part of Dual-write core solution 10.0.21. | General availability |
@@ -534,7 +576,7 @@ The June 2020 release of the dual-write orchestration package contains the featu
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
+| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have preexisting data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
 
 ## May 2020 release
 

@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
@@ -63,7 +63,7 @@ There are several benefits of using the workflow system in your organization:
 
 ## Workflow content
 
-+ [Workflow system architecture](workflow-system-architecture.md)
++ [Workflow system architecture](../../dev-itpro/organization-administration/workflow-system-architecture.md)
 + [Workflow elements](workflow-elements.md)
 + [Actions in workflow approval processes](workflow-actions.md)
 + [Create workflows overview](create-workflow.md)

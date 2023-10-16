@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This article covers how to connect peripherals to your Retail POS.
 
 > [!NOTE]
-> For specific installation instructions, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+> For specific installation instructions, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 
 ## Key components
 
@@ -110,7 +110,7 @@ In this scenario, a standalone hardware station is shared by the Store Commerce 
 
 Next, provide a description that will help the cashier identify the hardware station. In the **Host name** field, enter the host machine URL in the following format: `https://<MachineName:Port>/HardwareStation`. (Replace **&lt;MachineName:Port&gt;** with the actual machine name of the hardware station.) For a standalone hardware station, you should also specify the electronic funds transfer (EFT) terminal ID. This value identifies the EFT terminal that is connected to the hardware station when the payment connector communicates with the payment provider. 
 
-Next, from the machine that will host the hardware station, go to the channel in Headquarters, and select the hardware station. Then select **Download** to download the hardware station installer, and install the hardware station. For more information about how to install hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md). 
+Next, from the machine that will host the hardware station, go to the channel in Headquarters, and select the hardware station. Then select **Download** to download the hardware station installer, and install the hardware station. For more information about how to install hardware station, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md). 
 
 Next, from the Store Commerce app and Store Commerce for web, use the **Select hardware station** operation to select the hardware station that was previously installed. Select **Pair** to establish a secure relationship between the POS and the hardware station. This step must be completed once for every combination of a POS and a hardware station. 
 
@@ -206,7 +206,7 @@ All changes to a POS client, except changes in the device activation status, mus
 
 ## Additional resources
 
-[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)
+[Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

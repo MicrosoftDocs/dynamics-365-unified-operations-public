@@ -6,7 +6,7 @@ ms.date: 06/28/2019
 ms.topic: how-to
 ms.prod: 
 ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
@@ -108,7 +108,9 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 35.    Click **Validate**. 
 
 > [!NOTE]
-> We have successfully bound elements of data model with items of data sources that are described by using details of application metadata from the referred ER metadata configuration. 
+> We have successfully bound elements of data model with items of data sources that are described by using details of application metadata from the referred ER metadata configuration.
+
+
 36.    Click **Save**. 
 37.    Close the page. 
 38.    Close the page. 

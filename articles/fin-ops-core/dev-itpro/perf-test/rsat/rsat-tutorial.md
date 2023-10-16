@@ -4,7 +4,7 @@ description: This article shows how to use Regression suite automation tool (RSA
 author: FrankDahl
 ms.date: 09/23/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl

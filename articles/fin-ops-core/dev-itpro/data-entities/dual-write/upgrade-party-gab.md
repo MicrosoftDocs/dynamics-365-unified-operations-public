@@ -2,9 +2,9 @@
 title: Upgrade to the party and global address book model
 description: This article describes how to upgrade dual-write data to the party and global address book model.
 author: RamaKrishnamoorthy
-ms.date: 06/22/2023
+ms.date: 09/22/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri
@@ -48,7 +48,7 @@ The following prerequisites must be in place before you can upgrade to the party
 + You must have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 + You must be an existing dual-write customer.
 + If the party and global address book solution is installed, you must disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead. To disable the plugin, contact support.
-+ You must open a support ticket to enable or disable plugins.  
+
 
 ## Prepare for the upgrade
 
@@ -173,7 +173,7 @@ This section describes the setup that is required before you run the Party posta
     + Decision making roles
     + Loyalty levels
 
-5. In the customer engagement app, disable the following plugin steps. Contact support to disable the plugin:
+5. In the customer engagement app, disable the following plugin steps. 
 
     + Account Update
 
@@ -282,7 +282,7 @@ This section describes the setup that is required before you run the Party posta
 
     ![Successful import.](media/ADF-8.png)
 
-11. In the customer engagement app, enable the following plugin steps. Contact support to enable plugins:
+11. In the customer engagement app, enable the following plugin steps. 
 
     + Account Update
 

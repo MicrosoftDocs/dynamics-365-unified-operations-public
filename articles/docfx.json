@@ -52,9 +52,8 @@
         "Dynamics 365",
         "Unified Operations"
       ],
-      "extendBreadcrumb": "true",
       "breadcrumb_path": "/dynamics365/ops-bc/toc.json",
-      "uhfHeaderId": "MSDocsHeader-Dynamics365-Finance",
+      "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
@@ -94,6 +93,18 @@
         "supply-chain/**/**.md": [
           "Global"
         ]
+      },
+      "uhfHeaderId":{
+        "finance/**/*.md": "MSDocsHeader-Dynamics365-Finance",
+        "finance/**/index.yml": "MSDocsHeader-Dynamics365-Finance",
+        "supply-chain/**/*.md": "MSDocsHeader-Dynamics365-SupplyChainManagement",
+        "supply-chain/**/index.yml": "MSDocsHeader-Dynamics365-SupplyChainManagement",
+        "commerce/**/*.md": "MSDocsHeader-Dynamics365-Commerce",
+        "commerce/**/index.yml": "MSDocsHeader-Dynamics365-Commerce",
+        "human-resources/**/*.md":"MSDocsHeader-Dynamics365",
+        "human-resources/**/index.yml":"MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/index.yml": "MSDocsHeader-Dynamics365"
       },
       "search.app": {
         "finance/**/*.md": [
@@ -195,6 +206,11 @@
         "talent/**.md": "Talent | Dynamics 365"
       },
       "breadcrumb_path": {
+        "commerce/**/*.md": "/dynamics365/commerce-bc/toc.json",
+        "supply-chain/**/*.md": "/dynamics365/supply-chain-bc/toc.json",
+        "human-resources/**/*.md": "/dynamics365/human-resources-bc/toc.json",
+        "fin-ops-core/**/*.md": "/dynamics365/ops-bc/toc.json",
+        "finance/**/*.md": "/dynamics365/finance-bc/toc.json",
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/ops-bc/toc.json"
       },
       "ms.service": {

@@ -4,7 +4,7 @@ description: This article describes how to uninstall dual-write application orch
 author: RamaKrishnamoorthy
 ms.date: 03/16/2022
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
