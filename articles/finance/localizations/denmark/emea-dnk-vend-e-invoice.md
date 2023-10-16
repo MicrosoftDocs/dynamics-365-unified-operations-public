@@ -111,9 +111,8 @@ To run the procedure of vendor electronic invoices import, do the following step
 4. If an incoming import file contains the information about purchase orders and its lines in **Invoice\cac:OrderReference\cbc:ID** and **Invoice\cac:InvoiceLine\cac:OrderLineReference\cbc:LineID** elements then these numbers will be used for the invoice matching with purchase orders and lines entered in the system.
 5. If no orders or lines references are defined in an incoming file then the system will try to automatically match incoming vendor invoices with existing purchase orders.
 6. If no purchase order is found, the system will raise a warning but continue import considering products in invoice lines as "Non-stock" items and will expect that such products belong to Item model group with unmarked Stocked product check-box in Inventory policy. 
-7. DEFAULT_ITEM ......, the import process will fail with a related error-message.
-8. File attachments are supported during the import. All attached files should have extensions. If an attached file has no extension then the system will raise a warning and this attachment will be skipped during the import.
-9. Taxes will be calculated in the system based on the imported data and tax settings, not imported as fixed amounts from the incoming XML file. The results of the calculation can be then manually adjusted, if needed.
+7. If no related "Non-stock" products exist then the system will try to import invoice lines refering to **DEFAULT_ITEM**. The default item must be preliminary configured in the system with the product code defined exactly as **DEFAULT_ITEM** and also belong to Item model group with unmarked Stocked product check-box in Inventory policy. If no default item is configured in the system then the import process will fail with a related error-message.
+8. Taxes will be calculated in the system based on the imported data and tax settings, not imported as fixed amounts from the incoming XML file. The results of the calculation can be then manually adjusted, if needed.
 
 Successfully imported vendor electronic invoices will be shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**. 
 
