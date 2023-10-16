@@ -89,7 +89,7 @@ To add the service principal, complete the following steps.
 
 ## <a name="ConfigureAzureResources"></a>Configure Azure Resources 
 
-To configure the export to Data Lake, create a storage account in your own Azure subscription. This storage account is used to store data. Next, create an Azure AD application ID that grants access to the root of your storage account. Your Finance or Operations app use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the name of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you need assistance from someone in your organization with the required permissions.
+To configure the export to Data Lake, create a storage account in your own Azure subscription. This storage account is used to store data. Next, create an Azure AD application ID that grants access to the root of your storage account. Your finance or operations apps use the Azure AD application to gain access to storage, create the folder structure, and write data. Create a key vault in your subscription and store the name of the storage account, application ID, and the application secrets. If you don't have permission to create resources in Azure portal, you need assistance from someone in your organization with the required permissions.
 
 The steps, which take place in the Azure portal, are as follows:
 
@@ -128,7 +128,7 @@ The Data Lake Storage account is used to store data from your finance and operat
 
     - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you may incur more data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
     - **Performance**: We recommend you select **Standard**.
-    - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you'll see the option, **Data Lake storage Gen2**.
+    - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you see the option, **Data Lake storage Gen2**.
 
 3. On the **Advanced tab**, select **Data Lake storage Gen2** \> **Hierarchical namespaces**, and then select **Enabled**. If you disable this option, the **Export to Data lake** feature may fail with an error.
 4. Select **Review and create**. When the deployment is complete, the new resource is shown in the Azure portal.
@@ -182,7 +182,7 @@ You need to complete the following steps three times, once for each secret.
 4. Copy and paste the corresponding secret value in the **Value** field.
 6. Select **Enabled**, and then select **Create**. 
 
-You'll notice the secret created in the list of secrets.
+You notice the secret created in the list of secrets.
 
 ## <a name="authorize"></a>Authorize the application to read secrets in the key vault
 
@@ -197,7 +197,7 @@ You'll notice the secret created in the list of secrets.
     > If you can't find **Microsoft Dynamics ERP Microservices**, see the [Create Service Principal](#createServicePrincipal) section in this document.
 6. Select **Save**
 
-    You should see application with access to your key vault as shown below.
+    You should see application with access to your key vault similar to the following example.
 
     | Application                          | Secret permissions |
     |--------------------------------------|--------------------|
