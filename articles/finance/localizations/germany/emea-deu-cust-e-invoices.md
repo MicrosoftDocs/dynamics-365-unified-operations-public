@@ -53,8 +53,12 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
 2. On the **Addresses** FastTab, add a valid primary address for the legal entity.
-3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity.
+3. On the **Foreign trade and logistics** FastTab, in the **VAT exempt number export** field, enter a valid tax registration number for the legal entity.
 4. On the **Bank account information** FastTab, in the **Routing number** field, enter a valid number for the legal entity.
+5. In the **Bank account** field, enter the reference to the legal entity bank account.
+ 
+    > [!NOTE]
+    > Make sure that the selected bank account has a valid **IBAN** defined.
 
 ### Configure customer data
 
