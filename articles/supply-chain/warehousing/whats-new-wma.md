@@ -19,6 +19,28 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.17.0
+
+### New features introduced in version 2.1.17.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- Support for multi-level detour.
+- Support for password fields on the custom page.
+- A warning message about the deprecation of the certificate and the client's secret.
+- Updated and improved the About screen.
+
+### New fixes and improvements in version 2.1.17.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed the bug that prevented the Wi-Fi screen from being hidden.
+- Resolved the bug causing accessibility tooltips to appear on Windows unexpectedly.  
+- Fixed issues related to configuration mode.
+- Resolved the bug that prevents hiding the step instructions screen.
+- Corrected a localization bug on the calculator screen, which caused inconsistencies between commas and dots on some locales.
+
 ## Version 2.1.15.0
 
 ### New features introduced in version 2.1.15.0
