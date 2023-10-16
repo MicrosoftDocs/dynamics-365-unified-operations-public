@@ -31,7 +31,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 - The latest version of the following Electronic reporting (ER) format configuration must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 
-    - Vendor Invoice Import (DK)
+    - **Vendor Invoice Import (DK)**
         
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and use the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
@@ -111,7 +111,7 @@ To run the procedure of vendor electronic invoices import, do the following step
 4. If an incoming import file contains the information about purchase orders and its lines in **Invoice\cac:OrderReference\cbc:ID** and **Invoice\cac:InvoiceLine\cac:OrderLineReference\cbc:LineID** elements then these numbers will be used for the invoice matching with purchase orders and lines entered in the system.
 5. If no orders or lines references are defined in an incoming file then the system will try to automatically match incoming vendor invoices with existing purchase orders.
 6. If no purchase order is found, the system will raise a warning but continue import considering products in invoice lines as "Non-stock" items and will expect that such products belong to Item model group with unmarked Stocked product check-box in Inventory policy. 
-7. If no related "Non-stock" products exist then the system will try to import invoice lines refering to **DEFAULT_ITEM**. The default item must be preliminary configured in the system with the product code defined exactly as **DEFAULT_ITEM** and also belong to Item model group with unmarked Stocked product check-box in Inventory policy. If no default item is configured in the system then the import process will fail with a related error-message.
+7. If no related "Non-stock" products exist then the system will try to import invoice lines refering to **DEFAULT_ITEM**. The default item must be preliminary configured in the system as a released product with the code defined exactly as **DEFAULT_ITEM** and also belong to Item model group with unmarked Stocked product check-box in Inventory policy. If no default item is configured in the system then the import process will fail with a related error-message.
 8. Taxes will be calculated in the system based on the imported data and tax settings, not imported as fixed amounts from the incoming XML file. The results of the calculation can be then manually adjusted, if needed.
 
 Successfully imported vendor electronic invoices will be shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** > **Invoices** > **Pending vendor invoices**. 
