@@ -32,7 +32,7 @@ When you enable the Export to Azure Data Lake add-in, you connect your finance a
 
 When you select data in finance and operations apps, the system makes an initial copy of the data in the data lake. After that initial copy is made, the system keeps the data in the data lake fresh by continuously inserting, updating, and deleting data that changed. You don't have to manage exports or monitor the service, and there's no more burden on your finance and operations workloads.
 
-Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/common-data-model/). Common Data Model enhances value of your data in the lake. For an example, provides mroe metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The extra metadata includes the table structure, descriptions, and data types.
+Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/common-data-model/). Common Data Model enhances value of your data in the lake. For an example, provides more metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The extra metadata includes the table structure, descriptions, and data types.
 
 Export to Azure Data Lake is a fully managed, scalable, and highly available service from Microsoft. It includes built-in disaster recovery. Here are some of the features that are supported:
 
@@ -82,7 +82,7 @@ The FastTrack solution templates provide a tool that you can use to estimate the
 
 Customers use [bring your own database (BYOD)](../analytics/export-entities-to-your-own-database.md) to extract data from finance and operations apps so that they can use it for reporting or analytics. BYOD requires that customers provision and maintain an Azure SQL database to store data that is exported from finance and operations apps.
 
-In operational reporting scenarios, exported data in BYOD (that is, a SQL database) is used to create reports.
+In operational reporting scenarios, exported data in BYOD (that is, an SQL database) is used to create reports.
 
 For more complex, data warehousing scenarios, BYOD is used as a staging area, where a *snapshot* of the finance and operations data is retained. You might then have downstream data pipelines that copy the data from the BYOD staging area to the data warehouse.
 
