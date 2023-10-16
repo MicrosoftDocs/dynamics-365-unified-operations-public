@@ -277,7 +277,7 @@ The following sections list the features that are specific to Brazil.
 ### Commerce
 
   > [!WARNING]
-  > The below scope of Commerce localization for Brazil is outdated. Please see [Availability of Commerce localization features for Brazil](../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil) for an up-to-date information.
+  > The below scope of Commerce localization for Brazil is outdated. Please see [Availability of Commerce localization features for Brazil](../../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil) for an up-to-date information.
 
 - Customer CPF/CNPJ on fiscal receipts
 - File generation for Nota Fiscal Paulista
