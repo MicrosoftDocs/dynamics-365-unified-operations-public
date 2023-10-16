@@ -28,7 +28,7 @@ This version of the Warehouse Management mobile app introduces the following new
 - Support for multi-level detour.
 - Support for password fields on the custom page.
 - A warning message about the deprecation of the certificate and the client's secret.
-- Updated and improved the About screen.
+- Updated and improved the **About** page.
 
 ### New fixes and improvements in version 2.1.17.0
 
