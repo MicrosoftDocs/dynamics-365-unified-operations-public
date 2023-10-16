@@ -4,7 +4,7 @@
 title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in finance and operations or load them from a third-party program.
 author: panolte
-ms.date: 04/29/2021
+ms.date: 10/16/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: BudgetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
@@ -48,6 +48,13 @@ The budget register entry is considered completed when the budget balances have 
 
 ## Configuration
 When you configure budgeting, start on the **Budgeting parameters** page. On this page, you must define the budget journal, the number sequence for budget register entries, and the default behavior in the workspaces.
+
+On the **Budgeting parameters** page, the following fields are avaiable:  
+**Allocation key** – this field determines how the amount for a budget account entry is allocated in a cash flow forecast.  
+**Use rules for budget transfers** – select this option to enable budget transfers. 
+**Display legacy budget analysis inquiry** – select this to option to display the legacy budget analysis inquiry. 
+**Default account structure** – Select the **Default account structure** checkbox to auto-populate the account structure in the budget register based on the main account. This option is available if the **Default the account structure in the budget register entry** feature is enabled under **Feature management**. 
+**Budget journal** - select a journal name for budget appropriations. This field is available if the **Enable budget appropriation** field is selected on the **General Ledger parameters** page. 
 
 Next, if there are policies that govern the approval of budget register entries, based on budget type (for example, transfers or revisions), you must create budget register entry workflows on the **Budgeting workflows** page. If there are scenarios where transfers might be allowed without workflow approval, you can define budget transfer rules to support those scenarios. 
 
