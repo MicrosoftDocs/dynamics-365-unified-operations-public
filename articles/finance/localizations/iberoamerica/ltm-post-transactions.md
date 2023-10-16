@@ -54,7 +54,7 @@ To enable the LATAM extension on the **Legal entity** page, set the country/regi
 
 ## Step 8. Create the required journal names
 
-Journal names should represent the transactions that are being used, such as vendor invoices, payments, and collectables. For more information, see [Configure journal names for Latin America](ltm-core-journal-name-configuration.md).
+Journal names should represent the transactions that are being used, such as vendor invoices, payments, and collectables. For more information, see [Configure journal names for Latin America](ltm-core-journal-name-configuration..md).
 
 ## Step 9. Create bank groups
 
