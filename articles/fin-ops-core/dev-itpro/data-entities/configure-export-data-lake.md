@@ -116,7 +116,7 @@ The steps, which take place in the Azure portal, are as follows:
 3. After the application is created, select it, and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You need this ID later.
 4. In the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
 5. In the **Description** field, enter a name.
-6. In the **Expires** field, select an option, and then select **Add**. The system generates a secret and display it under the grid. 
+6. In the **Expires** field, select an option, and then select **Add**. The system generates a secret and displays it under the grid. 
 7. Copy the secret **Value** to the clipboard. This is the <a name="secret"></a>value you need to provide when you set up the key vault later.
 
 ## <a name="createsubscription"></a>Create a Data Lake Storage (Gen2) account in your subscription
