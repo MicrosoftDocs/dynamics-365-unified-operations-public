@@ -166,7 +166,7 @@ The Hardware station extension components are included in the Hardware station s
 
 #### Set up the registration process
 
-To enable the registration process, set up Headquarters using the steps below. For more details, see [Set up the fiscal integration for Commerce channels](./setting-up-../dev-itpro/fiscal-integration-for-retail-channel.md).
+To enable the registration process, set up Headquarters using the steps below. For more details, see [Set up the fiscal integration for Commerce channels](../dev-itpro/setting-up-fiscal-integration-for-retail-channel.md).
 
 1. Open **Commerce shared parameters** and enable **Fiscal integration** on the **General** tab.
 2. Open **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors** menu. Load connector configuration from RetailSdk. The file is located under SampleExtensions\HardwareStation\Extension.EFRSample\Configuration\ConnectorEFRSampleAustria.xml.

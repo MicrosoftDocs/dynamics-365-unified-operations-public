@@ -19,7 +19,7 @@ ms.search.form:
 
 # Customer electronic invoices in Australia and New Zealand
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article explains how to configure and issue customer electronic invoices by using the Australian and New Zealand extension of the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification.
 
@@ -28,7 +28,7 @@ This article explains how to configure and issue customer electronic invoices by
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Australia or in New Zealand.
-- The latest versions of the following Electronic reporting (ER) format configurations must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest versions of the following Electronic reporting (ER) format configurations must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Peppol Sales Invoice AU-NZ
     - Peppol Sales Credit Note AU-NZ
@@ -50,7 +50,7 @@ Before you complete the tasks in this article, the following prerequisites must 
     - **Project invoice:** Peppol Project Invoice AU-NZ
     - **Project credit note:** Peppol Project Credit Note AU-NZ
 
-    ![Formats for electronic documents.](media/apac_aus_nzl_einvoice_configs.jpg)
+    ![Formats for electronic documents.](../media/apac_aus_nzl_einvoice_configs.jpg)
 
 ### Configure legal entity data
 
@@ -116,7 +116,7 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 When an invoice is posted, you can generate an electronic invoice from any invoice journal. Select the invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Send** \> **Original**.
 
-![Sending an e-invoice.](media/emea-nor-ger-einvoice.jpg)
+![Sending an e-invoice.](../media/emea-nor-ger-einvoice.jpg)
 
 ### View e-invoices
 
@@ -125,23 +125,23 @@ To inquire about the XML files of electronic invoices that have been generated, 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**.
 2. Select a job, and then select **Show files**.
 
-    ![Show files button.](media/emea-nor-ger-einvoice-open.jpg)
+    ![Show files button.](../media/emea-nor-ger-einvoice-open.jpg)
 
 3. Select **Open** to download the file that contains the electronic invoice.
 
 If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
 
-![Viewing message details.](media/emea-nor-ger-einvoice-log.jpg)
+![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
 
 ### Send e-invoices to ER destinations
 
 You can set up ER destinations for electronic invoice formats. In this case, output XML files that contain electronic invoices are automatically sent to the defined destinations immediately after the invoices are posted. When you post the invoices, you must turn on the **Print invoice** parameter.
 
-For more information about ER destinations, see [Electronic reporting destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+For more information about ER destinations, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 ## Additional resources
 
-- [Forced electronic invoices generation](europe/emea-eur-forced-einvoices.md)
-- [Supported standards for electronic invoicing](europe/emea-oioubl-standards-electronic-invoicing.md)
+- [Forced electronic invoices generation](../europe/emea-eur-forced-einvoices.md)
+- [Supported standards for electronic invoicing](../europe/emea-oioubl-standards-electronic-invoicing.md)
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

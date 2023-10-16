@@ -209,7 +209,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 > [!IMPORTANT]
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
 >
-> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
+> Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/mvameldingen_eng/informasjonsmodell/#encoding-code-list).
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
 
@@ -217,6 +217,11 @@ For this lookup field, the following master data sources are available for setup
 
 - **Tax code** – The sales tax code.
 - **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
+- **Item sales tax group** – The item sales tax group (supported as of version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**).
+- **Sales tax group** – The sales tax group (supported as of version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**).
+
+> [!IMPORTANT]
+> When you import version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)** into your Finance environment, you must export the application-specific parameters from the previously used version of the formats by using the **Export** button on the Action Pane of the **Application specific parameters** page. You must then import the parameters into version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**. This export/import process is required because the structure of the application-specific parameters has changed in version **112.71** of **VAT Declaration XML (NO)** and version **112.71.59** of **VAT Declaration Excel (NO)**. While the application-specific parameters configuration is being imported, the system automatically updates the structure to the new version. You should then see the additional **Item sales tax group** and **Sales tax group** columns for **StandardTaxCodes\_Lookup**. The new structure makes the setup more flexible and improves the user experience in some scenarios. You can choose to keep the new columns blank if they aren't aligned with your company's specific setup and requirements. 
 
 Define conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported in the `mvaKode` tag under the `mvaSpesifikasjonslinje` node for corresponding combinations of master data from your Finance environment.
 
@@ -489,7 +494,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     - `https://platform.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *production* endpoint of Altinn
 
     > [!IMPORTANT]
-    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/english/test/#production-environment>.
+    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/mvameldingen_eng/test/#production-environment>.
 
 3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
