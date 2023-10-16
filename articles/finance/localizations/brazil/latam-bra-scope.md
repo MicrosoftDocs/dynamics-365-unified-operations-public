@@ -2,7 +2,7 @@
 title: Scope of the Brazilian localization
 description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil.
 author: AdamTrukawka
-ms.date: 11/22/2021
+ms.date: 10/16/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -275,6 +275,9 @@ The following sections list the features that are specific to Brazil.
     - Trial balance 
 
 ### Commerce
+
+  > [!WARNING]
+  > The below scope of Commerce localization for Brazil is outdated. Please see [Availability of Commerce localization features for Brazil](../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil) for an up-to-date information.
 
 - Customer CPF/CNPJ on fiscal receipts
 - File generation for Nota Fiscal Paulista
