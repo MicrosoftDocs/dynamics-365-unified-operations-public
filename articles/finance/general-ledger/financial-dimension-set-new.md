@@ -29,14 +29,14 @@ ms.dyn365.ops.version: 10.0.38
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Beginning in application 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available.
+> Beginning in Dynamics 365 Finance version 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available.
 
-Turning on this feature will initiate the process of creating new balances which may take several hours on large amounts of transactional data. Reports and inquiries using dimension sets will not be available until the processing is complete. You can view the status on the Dimension set page. This feature allows your trial balance inquiry page and reports that use financial dimension sets to run more efficiently. The financial dimension sets stores data more efficiently using less space and allowing the trial balance to show current balance data more quickly. This feature uses process automation to keep the balance amounts up to date.
+Turning on this feature initiates the process of creating new balances that may take several hours on large amounts of transactional data. Reports and inquiries using dimension sets won't be available until the processing is complete. You can view the status on the **Dimension set** page. This feature allows the **Trial balance inquiry** page and reports that use financial dimension sets to run more efficiently. The financial dimension sets stores data more efficiently using less space and allowing the trial balance to show current balance data more quickly. This feature uses process automation to keep the balance amounts up to date.
 
 
 ## Balance status
 
-The **balance status** button will allow you to view the current calculation state of the Financial dimension set.  Opening this page will show the status of the dimension set balance for each legal entity in the system.  It will also show the date and time the dimension set was last updated by the automatic background process. 
+The **Balance status** button allows you to view the current calculation state of the Financial dimension set. Opening this page will show the status of the dimension set balance for each legal entity. It also displays the date and time the dimension set was last updated by the automatic background process. 
 
 ## Enable balances
 
@@ -52,12 +52,12 @@ Use the **Disable balances** button to turn off tracking balances for a given di
 
 ## Rebuild balances
 
-Use the **Rebuild balances** button on the balance status page to re-create the balances from the root General ledger transactional data. In this way, you help ensure that they match the data in General ledger. A rebuild of balances requires lots of processing and should **rarely** be required. 
+Use the **Rebuild balances** button on the balance status page to recreate balances from the General ledger transactional data. This helps ensure that they match the data in General ledger. A rebuild of balances requires lots of processing and should rarely be required. 
 
 
 ## Delete a dimension set
 
-If you no longer require a dimension set you can remove it by pressing the delete buttong. Do not **delete and recreate** dimension sets as any form of workaround to solve potential issues with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with issues, contact customer support. 
+If you no longer require a dimension set you can remove it by pressing the delete button. Don't delete and recreate dimension sets as a workaround to solve potential issues with the balance data for a specific dimension set. Recreating a dimension set is costly. For further assistance with issues, contact support. 
 
 
 For more information, see [Financial dimensions](financial-dimensions.md).
