@@ -37,7 +37,7 @@ The only standard dimension set is the dimension set that contains only the main
 You use the **Financial dimension sets** page to create and manage financial dimension sets.
 > [!NOTE]
 > Beginning in application 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available.
-> Turning on this feature will initiate the process of creating new balances which may take several hours on large amounts of transactional data. Reports and inquiries using dimension sets will not be available until the processing is complete. You can view the status on the Dimension set page. This feature allows your trial balance inquiry page and reports that use financial dimension sets to run more efficiently. The financial dimension sets stores data more efficiently using less space and allowing the trial balance to show current balance data more quickly. This feature uses process automation to keep the balance amounts up to date.
+> For more information, see the page [New Financial dimension set](financial-dimension-set.md).
 
 ## Dimension set balances
 
