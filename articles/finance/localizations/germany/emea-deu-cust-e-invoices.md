@@ -54,6 +54,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
 2. On the **Addresses** FastTab, add a valid primary address for the legal entity.
 3. On the **Tax registration** FastTab, in the **Tax registration number** field, enter a valid tax registration number for the legal entity.
+4. On the **Bank account information** FastTab, in the **Routing number** field, enter a valid number for the legal entity.
 
 ### Configure customer data
 
@@ -67,12 +68,15 @@ Before you complete the tasks in this article, the following prerequisites must 
     > [!NOTE]
     > All available contact persons must already be defined for the selected customer.
 
+7. On the **Sales demographics** FastTab, in the **Employee responsible** field, select a person who will be considered the seller's contact.
+
 ### Configure units of measure
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
+3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
+4. In the **Standard code** column mark the check box.
+5. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
