@@ -13,19 +13,18 @@ ms.custom: bap-template
 This article shows the needed configurations to start using Costa Rca fiscal documents through LATAM features in purchase and sales transactions.
 An invoice is represented by a **Document class**, not the invoice transaction, but has all the information that a fiscal invoice document can contain and be related to, such as the typification, sales point, branch, invoice number structure and the additional (and customizable) fields that you must/should complete when posting one.
 
-## Prerequisites
+## Sales invoices
 
 It is important to configure the following forms that will allow you to use them in sales transactions later:
-| Form | Description |
-| ------------- | ------------- |
-| Document class letter | Countries that have different invoice types, and you can distinguish them by the letter. In Costa Rica you need to configure it as "WL" without letter|
-| Document class type| Allows you to set which fiscal document type you need, for example invoice, credit note, packing skip, etc.|
-| Sales point| Allows you to create the sales point from where the fiscal document is issued|
-| Number sequence | Create a numerical sequence that will provide consecutive numbering for your fiscal documents|
-| Document class sales point | Allows you to link the document class ID with the sales point and number sequence|
-| Document class | Allows you to configure all fiscal documents characteristics|
+   
+   * Document class type
+   * Document class letter
+   * Sales point
+   * Document class
+   * Document class sales point
+   * Number sequence
+   * Journal names
 
-## Sales invoices
 1. Create the **Document class types** that represents the fiscal documents that will be used in future transactions (invoices, credit notes, debit notes, packing slips). (See [Document class type for Latin America](../ltm-core-document-class-type.md) article)
 2. Create at least one **Sale point** to be used in the document classes numeration. This sales point should match the document mask of the document class that will be assigned to. (See [Sales point for Latin America]( https://learn.microsoft.com/en-us/dynamics365/finance/localizations/ltm-core-sales-point-prefixes) article)
 3. Create the document classes required for the commercial activity of the company according to the Costa Rica fiscal normative
