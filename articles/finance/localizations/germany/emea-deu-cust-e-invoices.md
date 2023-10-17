@@ -36,7 +36,7 @@ Before you complete the tasks in this article, the following prerequisites must 
     3. Invoice model mapping (version 288.293)
     
 > [!NOTE]
-> The ER formats are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
+> The **Sales Invoice DE** and **Project Invoice DE** format configurations are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
 
 ## Configure parameters
 
