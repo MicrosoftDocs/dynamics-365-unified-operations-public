@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 11/04/2022
+ms.date: 10/17/2023
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -47,8 +47,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with Product Search](#query_with_product_search) |
-| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with Product Search](#exact-query-with-product-search) |
+| /api/environment/{environmentId}/onhand/productsearch/indexquery | Post | [Post index query with product search](#query_with_product_search) |
+| /api/environment/{environmentId}/onhand/productsearch/exactquery | Post | [Post exact query with product search](#exact-query-with-product-search) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
@@ -775,24 +775,27 @@ The following example shows how to query all products in multiple sites and loca
 }
 
 ```
-## Query with Product Search
-With embedded product search capability, belwo two Inventory visibility on hand query APIs are enhanced to new APIs with product search capabilities.
- - [Query by using the post method](#query-with-post-method)
- - [Exact query by using the post method](#exact-query-with-post-method) 
 
->![Note]
-> When post Inventory Visibility query with product search,  we use the new request parameter ‘productSearch’ (a ProductAttributeQuery object inside) to find/filter productIds, so the original 'productid' request parameter in the request body will be removed in the new APIs.
+## <a name="product-search-query"></a>Query with product search
+
+The following on-hand query APIs are enhanced to support product search:
+
+- [Query by using the post method](#query-with-post-method)
+- [Exact query by using the post method](#exact-query-with-post-method)
+
+> [!NOTE]
+> When you post an Inventory Visibility query with product search, use the request parameter `productSearch` (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
 
 > [!IMPORTANT]
-> You need to make sure the product search service is successfuly enabled piror to call the new APIs. Details information please refer to : [Product Search Setup](product-search-setup.md).
+> Make sure the product search service is enabled before you start using the product search APIs. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
+### Product search contract
 
-### ProducSearch contract
-ProductSearch contract is used to define the rules for communication with Product Search APIs. It provides a standardized way to describe the capabilities and behavior of Product search capabilities, making it easier for users to understand, interact with, and build applications that consume the IV APIs in certain scenarios.
+The product search contract defines the rules for communicating with the product search APIs. It provides a standardized way to describe the capabilities and behavior of the product search capabilities, which makes it easier for users to understand, interact with, and build applications that consume the Inventory Visibility APIs.
 
-The following example shows sample contract.
+The following example shows a sample contract.
 
-~~~ Example
+```json
 {
     "productFilter": {
         "logicalOperator": "And",
@@ -804,7 +807,7 @@ The following example shows sample contract.
                 ],
             },
         ],
-        "subfilters": [
+        "subFilters": [
             {
                 "conditions": [
                     {
@@ -848,20 +851,21 @@ The following example shows sample contract.
     },
 }
 
-~~~
+```
+
+The following table describes the fields used in the contract.
 
 | Field ID | Description |
 |---|---|
-| `logicalOperator` | Contain values: And, Or, logicalOperator is used to connect multiple conditions or condition and subFilters. Note that subFilters is actually a new productFilter or attributeFilter object which means you can have subFilter inside subFilter. |
-| `conditionOperator` | Contain values: IsExactly, IsNot, Contains, DoesNotContain, BeginsWith, IsOneOf, GreaterEqual, LessEqual, Between. |
-| `ProductFilter`  |Use to filter product by product related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, `purchaseUnitSymbol` to fit your business needs. |
-| `AttributeFilter`   |Filter product by attribute related information. | 
-| `attributeArea` | Contain values: ProductAttribute, DimensionAttribute, BatchAttribute |
+| `logicalOperator` | Possible values: `And`, `Or`. Use this field to connect multiple conditions or conditions and sub-filters. Note that `subFilters` is actually a `productFilter` or `attributeFilter` object, which means you can have `subFilters` inside `subFilters`. |
+| `conditionOperator` | Possible values: `IsExactly`, `IsNot`, `Contains`, `DoesNotContain`, `BeginsWith`, `IsOneOf`, `GreaterEqual`, `LessEqual`, `Between`. |
+| `ProductFilter`  | Use this field to filter products by product-related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, or `purchaseUnitSymbol` as needed to fit your business needs. |
+| `AttributeFilter`   | Use this field to filter products by products by attribute-related information. |
+| `attributeArea` | Possible values: `ProductAttribute`, `DimensionAttribute`, `BatchAttribute` |
 
+### <a name="query_with_product_search"></a>Query with product search
 
-### <a name="query_with_product_search"></a>Query with Product Search
-
-~~~ Txt
+```txt
 Path:
     /api/environment/{environmentId}/onhand/productsearch/indexquery
 Method:
@@ -872,23 +876,23 @@ Headers:
 ContentType:
     application/json
 Body:
-{
-   productSearch: {ProductAttributeQuery contract object inherited from Product Search}
-        dimensionDataSource: string, # Optional
-        filters: {
-            organizationId: string[],
-            siteId: string[],
-            locationId: string[],
-            [dimensionKey:string]: string[],
-        },
-        groupByValues: string[],
-        returnNegative: boolean,
+    {
+        productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+            dimensionDataSource: string, # Optional
+            filters: {
+                organizationId: string[],
+                siteId: string[],
+                locationId: string[],
+                [dimensionKey:string]: string[],
+            },
+            groupByValues: string[],
+            returnNegative: boolean,
     }
-~~~
+```
 
 The following example shows sample body content.
 
-~~~JSON
+```JSON
 {
     "productSearch": {
         "productFilter": {
@@ -911,11 +915,11 @@ The following example shows sample body content.
     },
     "groupByValues": ["colorid"],
 }
-~~~
+```
 
 The following example shows a successful response.
 
-~~~
+```JSON
 [
     {
         "productId": "M0030",
@@ -996,12 +1000,11 @@ The following example shows a successful response.
     }
 ]
 
-~~~
+```
 
+### <a name="Exact_query_with_product_search"></a>Exact query with product search
 
-### <a name="Exact_query_with_product_search"></a>Exact query with Product Search
-
-~~~ Txt
+```txt
 Path:
     /api/environment/{environmentId}/onhand/productsearch/exactquery
 Method:
@@ -1012,22 +1015,22 @@ Headers:
 ContentType:
     application/json
 Body:
-{
-   productSearch: {ProductAttributeQuery contract object inherited from Product Search}
-        dimensionDataSource: string, # Optional
-        filters: {
-            organizationId: string[],
-            dimensions: string[],
-            values: string[][],
-        },
-        groupByValues: string[],
-        returnNegative: boolean,
+    {
+        productSearch: {ProductAttributeQuery contract object inherited from Product Search}
+            dimensionDataSource: string, # Optional
+            filters: {
+                organizationId: string[],
+                dimensions: string[],
+                values: string[][],
+            },
+            groupByValues: string[],
+            returnNegative: boolean,
     }
-~~~
+```
 
 The following example shows sample body content.
 
-~~~JSON
+```JSON
 {
     "productSearch": {
         "productFilter": {
@@ -1051,11 +1054,11 @@ The following example shows sample body content.
     "groupByValues": [],
     "returnNegative": true
 }
-~~~
+```
 
 The following example shows a successful response.
 
-~~~
+```JSON
 [
     {
         "productId": "M0030",
@@ -1095,8 +1098,7 @@ The following example shows a successful response.
         }
     }
 ]
-
-~~~
+```
 
 ## Available to promise
 
