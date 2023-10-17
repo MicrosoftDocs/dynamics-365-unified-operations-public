@@ -2,7 +2,7 @@
 title: Scope of the Brazilian localization
 description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil.
 author: AdamTrukawka
-ms.date: 11/22/2021
+ms.date: 10/16/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -276,43 +276,7 @@ The following sections list the features that are specific to Brazil.
 
 ### Commerce
 
-- Customer CPF/CNPJ on fiscal receipts
-- File generation for Nota Fiscal Paulista
-- Tax calculation according to Commerce headquarters configuration 
-- Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3 
-- Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II 
-- POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section of this article 
-- POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the [Out of scope](#out-of-scope) section 
-- Display approximated taxes in fiscal receipts 
-- Display approximated taxes in DANFE / CF-e-SAT 
-- Void last fiscal receipt 
-- Payments with multiple credit cards
-- EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda 
-- EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda <br>Presales according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014 
-- EFT integration with third-party software Adyen, basic capabilities 
-- Issuing return NF-e in POS for sales return 
-- Issuing NF-e linked to fiscal receipt in POS 
-- Configurable AOS for NF-e/NFC-e messaging with SEFAZ 
-- The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-
-    > [!NOTE]
-    > Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see the [Retail and Enterprise POS Localization for Brazil white paper](https://www.microsoft.com/download/details.aspx?id=42938).
-
-- Support for layout NFC-e (Nota Fiscal ao Consumidor Eletrônica) 4.0 
-- Contingency mode: off-line 
-- Contingency mode for SP: SAT (model 59) 
-- Sales presence type: in-person 
-- Commerce item management:
-
-    - Released products by category
-    - Mass update worksheet
-    - Product hierarchy 
-
-- SAT (model 59) for São Paulo state layout 0.07 
-- Support for only one SAT hardware per POS 
-- Support for SAT DLL selection, for multiple-brand compatibility 
-- Fiscal receipt reference 
-- Fiscal printer auto-configuration 
+For up-to-date information on the scope of Commerce localization for Brazil, see [Availability of Commerce localization features for Brazil](../../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil).
 
 ### Project accounting 
 
