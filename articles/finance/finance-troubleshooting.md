@@ -85,6 +85,7 @@ The following FAQ articles discuss issues specific to Finance:
 - [One voucher FAQ](general-ledger/one-voucher-faq.md)
 - [Year-end activities FAQ](general-ledger/faq-year-end-activities.md)
 - [Consolidation and elimination FAQ](budgeting/consolidation-elimination-overview.md)
+- [Credit statistics FAQ](accounts-receivable/credit-statistics-faq.md)
 - [Financial Reporting Data mart resets FAQ](../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance)
 - [Financial reporting FAQ](general-ledger/financial-reporting-faq.md)
 
