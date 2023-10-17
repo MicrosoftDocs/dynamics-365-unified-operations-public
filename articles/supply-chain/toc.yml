@@ -3753,6 +3753,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Mass deploy the Warehouse Management mobile app
             href: warehousing/warehouse-app-intune.md
+          - name: Customize the company logo shown in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
