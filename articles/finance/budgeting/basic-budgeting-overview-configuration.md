@@ -41,7 +41,7 @@ There are multiple methods for creating budget register entries:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.
--   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries into the system.
+-   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries.
 -   If the company uses Budget planning functionality to prepare budget data, you can use the **Generate budget register entry** periodic process.
 
 The budget register entry is considered completed when the budget balances have been updated. On the **Budget register entries** page, click **Update budget balances** for a selected budget register entry or multiple entries. After you update the budget balances, the status of the budget register entry changes to **Completed**. Completed budget register entry can't be re-opened for edits. Therefore, if the budget data must be adjusted, you must create a new budget register entry instead of correcting data in the completed budget register entry.
