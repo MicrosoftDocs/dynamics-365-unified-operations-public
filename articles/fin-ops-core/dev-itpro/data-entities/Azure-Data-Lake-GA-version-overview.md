@@ -22,7 +22,7 @@ ms.search.validFrom: 2021-11-30
 
 Export to Azure Data Lake lets you connect your finance and operations environment to a data lake to unlock insights that are hidden in your data.
 
-> **NOTE**
+> [!NOTE]
 >
 > Export to Data lake is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) Existing customers can transition to Synapse Link by following the guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink)
 >
