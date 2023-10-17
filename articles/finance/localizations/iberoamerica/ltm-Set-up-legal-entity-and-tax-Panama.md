@@ -28,10 +28,10 @@ Before you begin, go to the **Feature management** workspace, and verify that th
 1.  [Create a document class letter](../ltm-core-document-class-letter.md) without a prefix. This document class letter will be used in taxpayer and document class configurations.
 2.  Go to **Organization administration** > **Setup** > **LATAM** > **Tax ID type**.
 3.  Select **New** and in the **Overview** section, in the **Tax ID type** field, enter **RUC** (Unique Taxpayer Registry), which is one of the tax ID types for Panama.
-4.  In the **Format** field, enter **XXXXXXXX-XX**. For more information, see [Tax ID types](../ltm-core-tax-id-type.md).
-5.  Go to **Organization administration** > **Global address book** > **Addresses**, select the country where the company is set and select **LATAM** to add the tax ID type **RUC**. For more information, see [Address setup for Latin America](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/ltm-core-address-setup).
+4.  In the **Format** field, enter **XXXXXXXX-XX**. For more information, see [Tax ID types](ltm-core-tax-id-type.md).
+5.  Go to **Organization administration** > **Global address book** > **Addresses**, select the country where the company is set and select **LATAM** to add the tax ID type **RUC**. For more information, see [Address setup for Latin America](ltm-core-address-setup.md).
 6.  Go to **Organization administration** > **Setup** > **LATAM** > **Taxpayer type** and select **New** to create a new record that represents organizations.
-7.  In the **Type** field, select **persona juridica** and add the tax ID type and the document class letter you created. For more information, see [Tax payer type](../ltm-core-taxpayer-type.md).
+7.  In the **Type** field, select **persona juridica** and add the tax ID type and the document class letter you created. For more information, see [Tax payer type](ltm-core-taxpayer-type.md).
 8.  Go to **Organization administration** > **Organizations** > **Legal entities**.and in the **LATAM** section, configure the following entity tax and legal information:
 
     - Taxpayer type: Select **persona juridica** to represent an organization.
