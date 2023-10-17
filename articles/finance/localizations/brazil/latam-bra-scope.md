@@ -276,7 +276,7 @@ The following sections list the features that are specific to Brazil.
 
 ### Commerce
 
-Please see [Availability of Commerce localization features for Brazil](../../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil) for an up-to-date information on the scope of Commerce localization for Brazil.
+Please see [Availability of Commerce localization features for Brazil](../../../commerce/localizations/brazil/latam-bra-commerce-localization.md#availability-of-commerce-localization-features-for-brazil) for up-to-date information on the scope of Commerce localization for Brazil.
 
 ### Project accounting 
 
