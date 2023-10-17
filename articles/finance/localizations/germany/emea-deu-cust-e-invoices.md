@@ -29,13 +29,14 @@ This article explains how to set up and process customer electronic invoices in 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Germany.
-- The latest versions of the following Electronic reporting (ER) format configurations must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- To enable generation of electronic invoices in **xRechnung** format version **3** and higher, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
-    - Sales Invoice DE
-    - Project Invoice DE
+    1. Sales Invoice DE (version 288.9.16.11)
+    2. Project Invoice DE (version 288.8.22.12)
+    3. Invoice model mapping (version 288.293)
     
 > [!NOTE]
-> The ER formats are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
+> The ER formats are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
 
 ## Configure parameters
 
