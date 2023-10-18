@@ -45,7 +45,7 @@ For more information about BPM, see [Upload custom business processes to Busines
 
 ## Additional resources
 
-- [Globalization resources](country-region.md)
+- [Globalization resources](../../fin-ops/lcs/country-region.md)
 
 
 

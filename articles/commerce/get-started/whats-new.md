@@ -6,7 +6,7 @@ ms.date: 10/20/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application User, IT Pro, Developer
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

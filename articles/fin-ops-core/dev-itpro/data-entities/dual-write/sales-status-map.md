@@ -81,7 +81,7 @@ The following table shows the mapping of **Processing Status** between Sales and
 
 ## Mappings for the updated Dual-write Supply chain solution
 
-If you are using the updated Dual-write Supply chain solution, then the status map is updated as described in this section. These changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. For details about version requirements, see [Prerequisites](add-efficiency-in-quote-to-cash-enable.md#prerequisites).
+If you are using the updated Dual-write Supply chain solution, then the status map is updated as described in this section. These changes depend on whether the map for the *CDS sales order headers* entity or the map for the *Dynamics 365 Sales order headers* entity is running. For details about version requirements, see [Prerequisites](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md#prerequisites).
 
 The following table shows the resulting status map if the map for the *CDS sales order headers* entity is running.
 

@@ -52,7 +52,6 @@
         "Dynamics 365",
         "Unified Operations"
       ],
-      "extendBreadcrumb": "false",
       "breadcrumb_path": "/dynamics365/ops-bc/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
@@ -97,11 +96,15 @@
       },
       "uhfHeaderId":{
         "finance/**/*.md": "MSDocsHeader-Dynamics365-Finance",
+        "finance/**/index.yml": "MSDocsHeader-Dynamics365-Finance",
         "supply-chain/**/*.md": "MSDocsHeader-Dynamics365-SupplyChainManagement",
-        "commerce/**/*.md": "MSDocsHeader-Dynamics365",
+        "supply-chain/**/index.yml": "MSDocsHeader-Dynamics365-SupplyChainManagement",
+        "commerce/**/*.md": "MSDocsHeader-Dynamics365-Commerce",
+        "commerce/**/index.yml": "MSDocsHeader-Dynamics365-Commerce",
         "human-resources/**/*.md":"MSDocsHeader-Dynamics365",
-        "talent/**/*.md": "MSDocsHeader-Dynamics365",
-        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365"
+        "human-resources/**/index.yml":"MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365",
+        "fin-ops-core/**/index.yml": "MSDocsHeader-Dynamics365"
       },
       "search.app": {
         "finance/**/*.md": [

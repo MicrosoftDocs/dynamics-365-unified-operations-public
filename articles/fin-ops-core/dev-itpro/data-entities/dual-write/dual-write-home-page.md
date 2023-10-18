@@ -62,16 +62,16 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Integrated customer master](customer-mapping.md)
 + [Integrated vendor master](vendor-mapping.md)
 
-    + [Switch between vendor designs](vendor-switch.md)
+    + [Switch between vendor designs](../../../fin-ops/data-entities/vendor-switch.md)
 
 + [Customer loyalty cards and reward points](loyalty-mapping.md)
 + [Unified product experience](product-mapping.md)
 
     + [Integrated sites and warehouses](sites-warehouses-mapping.md)
 
-+ [Company concept in Dataverse](company-data.md)
++ [Company concept in Dataverse](../../../fin-ops/data-entities/company-data.md)
 
-    + [Initialize company data](bootstrap-company-data.md)
+    + [Initialize company data](../../../fin-ops/data-entities/company-data.md)
 
 + [Organization hierarchy awareness](organization-mapping.md)
 + [Access to finance and tax reference data](finance-tax-reference.md)
@@ -79,14 +79,14 @@ These topics describe mapping between concepts in finance and operations apps an
     + [Integrated ledger](ledger-mapping.md)
     + [Integrated tax master](tax-mapping.md)
 
-+ [Sync on-demand with the Supply Chain Management price engine](pricing-engine.md)
-+ [Sync on-demand with the Commerce price engine](commerce-pricing.md)
-+ [Prospect to cash in dual-write](dual-write-prospect-to-cash.md)
++ [Sync on-demand with the Supply Chain Management price engine](../../../fin-ops/data-entities/pricing-engine.md)
++ [Sync on-demand with the Commerce price engine](../../../fin-ops/data-entities/commerce-pricing.md)
++ [Prospect to cash in dual-write](../../../fin-ops/data-entities/dual-write-prospect-to-cash.md)
 
     + [Set up the mapping for the sales order status columns](sales-status-map.md)
     + [Filter intercompany orders to avoid synchronizing Orders and OrderLines](filtering-intercompany-orders.md)
     
-+ [Integrate procurement in Supply Chain Management with Field Service](scm-field-service-procurement.md)
++ [Integrate procurement in Supply Chain Management with Field Service](../../../fin-ops/data-entities/scm-field-service-procurement.md)
 + [In-house assets for servicing](in-house-assets.md)
 + [On-hand inventory availability](inventory-availability.md)
 + [Integrated worker, job, and position](integrated-hr.md)
@@ -96,7 +96,7 @@ These topics describe mapping between concepts in finance and operations apps an
     + [Upgrade to the party and global address book model](upgrade-party-gab.md)
     + [View party data](view-party.md)
 
-+ [Note integration](notes-integration.md)
++ [Note integration](../../../fin-ops/data-entities/notes-integration.md)
 + [Mapping reference](mapping-reference.md)
 
 ## Support
@@ -105,7 +105,7 @@ These topics describe mapping between concepts in finance and operations apps an
 + [Dual-write limits for live synchronization](sync-limits.md)
 + [Support for Field Service and Project Service Automation solutions](field-service-project-service-automation.md)
 + [Migrate Prospect to cash data from Data Integrator to dual-write](migrate-prospect-to-cash.md)
-+ [Currency data-type migration for dual-write](currrency-decimal-places.md)
++ [Currency data-type migration for dual-write](../../../fin-ops/data-entities/currrency-decimal-places.md)
 + [Frequently asked questions](dual-write-faq.md)
 
 ## Troubleshooting

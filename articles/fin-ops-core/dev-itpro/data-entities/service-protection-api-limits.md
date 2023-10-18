@@ -159,7 +159,7 @@ The service protection API limits don't apply to all Microsoft services. The fol
 - [Warehouse Management mobile app (WHSMobile)](../../../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md)
 - [Retail Server API](../../../commerce/dev-itpro/consume-retail-server-api.md)
 - [Office Integration](../office-integration/office-integration.md)
-- [Data Import/Export Framework (DIXF)](data-import-export-job.md)
+- [Data Import/Export Framework (DIXF)](../../fin-ops/data-entities/data-import-export-job.md)
 - [Recurring integrations](recurring-integrations.md)
 - [Data Integrator](/power-platform/admin/data-integrator)
 - [Dual-write](dual-write/dual-write-overview.md)

@@ -31,7 +31,7 @@ If you can run master planning by using your current license, you don't have to 
 
 ## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
-To use Planning Optimization, you must make sure your system has all of the prerequisites in place and then enable its license key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
+To use Planning Optimization, you must make sure your system has all of the prerequisites in place and then enable its configuration key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
 
 ### Prerequisites
 
@@ -40,6 +40,8 @@ Before you install the Planning Optimization Add-in, the following prerequisites
 - You must be running Supply Chain Management on an LCS enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.7 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
 
 - Your system must be set up for Power Platform integration. For more information, see [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+
+- Your Microsoft Entra account must have a Supply Chain Management licensed assigned to it. As mentioned previously, you don't need an extra license for Planning Optimization, but you do need a Supply Chain Management license to install it. If you get an error message regarding licensing while installing the Planning Optimization Add-in, check your licenses as described in [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
@@ -50,7 +52,7 @@ Before you install the Planning Optimization Add-in, the following prerequisites
   
     For more information about licenses and access modes for the Power Platform, see [Create a Power Platform admin account](/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
 
-### Enable the Planning Optimization license
+### Enable the Planning Optimization configuration key
 
 To use Planning Optimization, you must enable its configuration key. To do so:
 

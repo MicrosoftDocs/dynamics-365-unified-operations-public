@@ -76,3 +76,8 @@ Business performance analytics reports can be customized in Power BI. For more i
 ### How to create and edit reports
 
 Business performance analytics lets user create and edit reports. For more information, see [How to create and edit reports](how-to-create-and-edit-reports.md).
+
+### Business analytics self-help
+
+To maintain the accuracy of report data, business performance analytics assesses the quality of the source data. For more information, see [Business performance analytics self-help](bpa-help-overview.md).
+

@@ -27,7 +27,7 @@ If you don't want to store vendor data in the **Account/Contact** table in Datav
 
 ![Vendor data flow.](media/dual-write-vendor-data-flow.png)
 
-If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md).
+If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](../../../fin-ops/data-entities/vendor-switch.md).
 
 ![Extended vendor data flow.](media/dual-write-vendor-detail.jpg)
 
