@@ -52,7 +52,7 @@ The following features are included in this release. The feature titles link to 
 
 - [License plate receiving enhancements for the warehouse app (continued)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - For more information, see [License plate receiving via the Warehouse Management mobile app](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Mass deployment for Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md).
+- [Mass deployment for Warehouse mobile app](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - For more information, see [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maximum execution time for the warehouse management on-hand entries cleanup job](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - For more information, see [Warehouse management on-hand entries cleanup job](../warehousing/onhand-cleanup.md).
 

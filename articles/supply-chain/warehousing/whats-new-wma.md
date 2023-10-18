@@ -60,7 +60,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 ### New authentication method added in version 2.1.12.0
 
-The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
 ### New fixes and improvements in version 2.1.12.0
 

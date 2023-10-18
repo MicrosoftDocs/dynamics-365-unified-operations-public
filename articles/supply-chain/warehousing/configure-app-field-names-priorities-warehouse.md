@@ -143,7 +143,7 @@ The remaining metadata, for example, Location, will not be displayed on the task
 
 ## Additional resources
 
-[Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
+[Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

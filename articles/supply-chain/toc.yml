@@ -3749,7 +3749,7 @@
           href: warehousing/warehouse-app-accessibility.md
         - name: Install, set up, and use mobile devices
           items:
-          - name: Install and connect the Warehouse Management mobile app
+          - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Authenticate users by using device code flow
             href: warehousing/warehouse-app-authenticate-user-based.md
