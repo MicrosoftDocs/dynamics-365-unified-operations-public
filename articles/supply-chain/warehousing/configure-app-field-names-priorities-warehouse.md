@@ -60,8 +60,8 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 <td>Input type</td>
 <td>This option defines what input type should be used for the selected field name. Four options are available:
 <ul>
-<li><strong>Selection</strong> - Contains a list of options to choose from. Field names with this option are not editable.</li>
-<li><strong>Date</strong> - Field names specified as date will show a date format with the label. This helps warehouse workers see in which format to enter the date. Field names with this option are not editable.</li>
+<li><strong>Selection</strong> - Contains a list of options to choose from. Field names with this option aren't editable.</li>
+<li><strong>Date</strong> - Field names specified as date will show a date format with the label. This helps warehouse workers see in which format to enter the date. Field names with this option aren't editable.</li>
 <li><strong>Alpha</strong> - If selected, the device keyboard will be used when entering information manually in the app. The keyboard experience can be changed depending on which device is used.</li>
 <li><strong>Numeric</strong> - For field names that use numeric input only, you can select this option to display a custom numeric keypad with the input field instead of the device keyboard.</li>
 </ul></td>
@@ -71,7 +71,7 @@ When you use Warehousing on your mobile device, you can configure how metadata s
 
 ## Configure warehouse app field priority
 
-On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you click **Create default setup**, a default set of priority groups will be generated. It is possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
+On the **Warehouse app field priority** page, you can put field names into different priority groups. This makes it possible to decide what information should be displayed on the main task page when warehouse workers perform tasks using the app. If you select **Create default setup**, a default set of priority groups will be generated. It's possible to create as many priority groups as needed, but only three priority groups will be shown on the task page. When the system sends metadata to the app, it will assign each field a relative priority depending on its priority group, and the app will display the first three priority groups contained in the metadata on the task page. The rest of the overflowing metadata will be displayed on a secondary details page. The following table shows an example of five priority groups.
 
 <table>
 <colgroup>
@@ -133,13 +133,13 @@ For example, when a warehouse worker is performing a task on a mobile device, if
 -   Item description
 -   Size and Location
 
-Based on the warehouse app field priority set up in the table above, the following 3 rows of information will be displayed on the task page:
+Based on the warehouse app field priority set up in the table above, the following three rows of information will be displayed on the task page:
 
 -   Row 1: Item, Quantity, Unit of measure
 -   Row 2: Item description
 -   Row 3: Size
 
-The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 Supply Chain Management - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+The remaining metadata, for example, Location, won't be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 Supply Chain Management - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 ## Additional resources
 
