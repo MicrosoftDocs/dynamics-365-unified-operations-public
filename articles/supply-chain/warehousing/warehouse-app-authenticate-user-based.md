@@ -64,7 +64,7 @@ For more information about how to set up web service applications in Microsoft E
 
 ## Creating and Setting Up a User Account in Supply Chain Management
 To manage user access and permissions in Microsoft Dynamics 365 Supply Chain Management while needing to integrate the Microsoft Entra ID application, it is imperative to adhere to the procedures outlined in the subsequent documentation:
-[Create and configure a user account in Supply Chain Management](/configure-user-based-auth-warehouse-management-app.md#user-azure-ad)
+[Create and configure a user account in Supply Chain Management](warehouse-app-authenticate-user-based.md#user-azure-ad)
 
 ## <a name="revoke"></a>Remove access for a lost or compromised device
 
@@ -88,6 +88,6 @@ To disable a user in Microsoft Entra ID, follow these steps.
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](/install-configure-warehouse-management-app.md)
-- [Authenticate by using a certificate or client secret](/configure-service-based-auth-warehouse-management-app.md)
+- [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,7 +13,7 @@ ms.custom: bap-template
 ---
 
 > [!IMPORTANT]
-> Authentication methods on this page are deprecated. Use [device code flow](/configure-user-based-auth-warehouse-management-app.md) instead.
+> Authentication methods on this page are deprecated. Use [device code flow](warehouse-app-authenticate-user-based.md) instead.
 
 ## <a name="authenticate-service-based"></a>Authenticate by using a certificate or client secret
 
@@ -55,7 +55,7 @@ For more information about how to set up web service applications in Microsoft E
 
 ## Creating and Setting Up a User Account in Supply Chain Management
 To manage user access and permissions in Microsoft Dynamics 365 Supply Chain Management while needing to integrate the Microsoft Entra ID application, it is imperative to adhere to the procedures outlined in the subsequent documentation:
-[Create and configure a user account in Supply Chain Management](/configure-user-based-auth-warehouse-management-app.md#user-azure-ad)
+[Create and configure a user account in Supply Chain Management](warehouse-app-authenticate-user-based.md#user-azure-ad)
 
 ## <a name="revoke"></a>Remove access for a lost or compromised device
 
@@ -80,6 +80,6 @@ The following procedure describes the recommended process for removing access fo
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](/install-configure-warehouse-management-app.md)
-- [Authenticate users by using the device code flow](/configure-user-based-auth-warehouse-management-app.md)
+- [Authenticate users by using the device code flow](warehouse-app-authenticate-user-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

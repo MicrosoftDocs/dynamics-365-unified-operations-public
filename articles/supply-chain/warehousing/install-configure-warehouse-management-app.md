@@ -82,8 +82,8 @@ Because the Warehouse Management mobile app has read/write access to some of you
 
 After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. If a device is lost or compromised, you can revoke its authentication by following the steps in the [Remove access for a lost or compromised device](#revoke) section.
 
-- **User-based Authentication:**  [Device code flow](/configure-user-based-auth-warehouse-management-app.md)
-- **Service-based Authentication (deprecated):**  [Client secret, Certificate](/configure-service-based-auth-warehouse-management-app.md)
+- **User-based Authentication:**  [Device code flow](warehouse-app-authenticate-user-based.md)
+- **Service-based Authentication (deprecated):**  [Client secret, Certificate](warehouse-app-authenticate-service-based.md)
 
 ## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
 
@@ -125,7 +125,7 @@ You can import connection settings from either a file or a QR code. For both app
 | `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
 | `ActiveDirectoryTenant` | Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"certificate"`](/configure-service-based-auth-warehouse-management-app.md), [`"clientsecret"`](/configure-service-based-auth-warehouse-management-app.md), and [`"devicecode"`](/configure-user-based-auth-warehouse-management-app.md). The default value is `"devicecode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
+| `ConnectionType` | <p>(Optional) Specify whether the connection setting should use a certificate, a client secret, or a device code to connect to an environment. Valid values are [`"certificate"`](warehouse-app-authenticate-service-based.md), [`"clientsecret"`](warehouse-app-authenticate-service-based.md), and [`"devicecode"`](warehouse-app-authenticate-user-based.md). The default value is `"devicecode"`.</p><p>**Note:** Client secrets can't be imported.</p> |
 | `IsEditable` | (Optional) Specify whether the app user should be able to edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
 | `IsDefault` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection will automatically be preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
 | `CertificateThumbprint` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
@@ -253,8 +253,8 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management.
 
-- **User-based Authentication:**  [Device code flow](/configure-user-based-auth-warehouse-management-app.md#revoke)
-- **Service-based Authentication (deprecated):**  [Client secret, Certificate](/configure-service-based-auth-warehouse-management-app.md#revoke)
+- **User-based Authentication:**  [Device code flow](warehouse-app-authenticate-user-based.md#revoke)
+- **Service-based Authentication (deprecated):**  [Client secret, Certificate](warehouse-app-authenticate-service-based.md#revoke)
 
 ## Additional resources
 
