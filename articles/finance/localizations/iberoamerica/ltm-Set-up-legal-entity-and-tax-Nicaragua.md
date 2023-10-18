@@ -17,7 +17,7 @@ Before you begin, open the **Feature management** workspace, and verify that the
 ## Create a legal entity
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select **New** to create a legal entity. Some functionality is enabled only for Nicaragua. Examples include specific tax reports or electronic invoices.
-2. In the address setup, set up the address format for Nicaragua by configuring **State** as **Departamento** and **County** as **Municipio**.
+2. In the address setup, set up the address format for Nicaragua by using **State** as **Departamento** and **County** as **Municipio**.
 3. Go to **Organization administration** \> **Setup** \> **LATAM** \> **LATAM parameters**.
 4. On the **Concept and notes** tab, in the **Legal entity** section, set a field as **Activity**.
 
