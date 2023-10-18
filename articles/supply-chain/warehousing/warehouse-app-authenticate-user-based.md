@@ -1,7 +1,7 @@
 ---
 title: Authenticate users by using device code flow
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using user-based authentication.
-author: pavlodatsiuk
+author: JTOne123
 ms.author: pavlodatsiuk
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker

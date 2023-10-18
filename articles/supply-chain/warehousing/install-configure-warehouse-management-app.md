@@ -24,8 +24,6 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 ### Operating system requirements
 
-<!-- KFM: I reverted this (had been edited to ask user to use the Mobile device workspace, but that won't work until the device already has the app on it, right?) Are these still the right specs? -->
-
 The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
 
 - Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
