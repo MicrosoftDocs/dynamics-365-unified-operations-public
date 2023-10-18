@@ -87,12 +87,12 @@ Because the Warehouse Management mobile app has read/write access to some of you
 
 After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. 
 
-For details about each authentication method and how to set them up, see the following articles:
+For details about each authentication method and how to set it up, see the following articles:
 
 - User-based authentication: [Authenticate users by using the device code flow](warehouse-app-authenticate-user-based.md)
 - Service-based authentication (deprecated): [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
 
-If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you use:
+If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
 - User-based authentication: [Remove access for a device that authenticates by using the device code flow](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
@@ -133,7 +133,7 @@ You can import connection settings from either a file or a QR code. For both app
 | Parameter | Description |
 |---|---|
 | `ConnectionName` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, make sure that it's unique in the list. If a connection that has the same name already exists on the device, it will be overridden by the settings from the imported file. |
-| `ActiveDirectoryClientAppId` | Specify the client ID that you made a note of while you were setting up Microsoft Entra ID in the [Create a web service application in Microsoft Entra ID](#create-service) section. |
+| `ActiveDirectoryClientAppId` | Specify the client ID that you made a note of while you were setting up Microsoft Entra ID. (For more information, see one of the following articles, depending on which authentication method you're using: [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md) or [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md).) |
 | `ActiveDirectoryResource` | Specify the root URL of Supply Chain Management. |
 | `ActiveDirectoryTenant` | Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 | `Company` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
@@ -188,7 +188,7 @@ You can either save the information as a JSON file or generate a QR code that ha
 
 Typically, you'll use a device management tool or script to distribute the connection settings files to each device that you're managing. If you use the default name and location when you save the connection settings file on each device, the Warehouse Management mobile app will automatically import it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app will continue to use the specified name and location afterward.
 
-Every time that the app is started, it re-imports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
+Every time that the app is started, it reimports the connection settings from their previous location to determine whether there have been any changes. The app will update only connections that have the same names as the connections in the connection settings file. User-created connections that use other names won't be updated.
 
 You can't remove a connection by using the connection settings file.
 
@@ -235,11 +235,11 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Enter the following information:
 
-    - **Authentication method** – Set this option to *Client secret* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see the [Create a web service application in Microsoft Entra ID](#create-service) section.)
+    - **Authentication method** – Set this option to *Client secret* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md) or [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md).)
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
-    - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID in the [Create a web service application in Microsoft Entra ID](#create-service) section.
-    - **Active directory client secret** – This field is available only when the **Use client secret** option is set to *Yes*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID in the [Create a web service application in Microsoft Entra ID](#create-service) section.
-    - **Active directory certificate thumbprint** – This field is available only for Windows devices and only when the **Use client secret** option is set to *No*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID in the [Create a web service application in Microsoft Entra ID](#create-service) section.
+    - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md) or [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md).)
+    - **Active directory client secret** – This field is available only when the **Use client secret** option is set to *Yes*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md) or [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md).)
+    - **Active directory certificate thumbprint** – This field is available only for Windows devices and only when the **Use client secret** option is set to *No*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md) or [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md).)
     - **Active directory resource** – Specify the root URL of Supply Chain Management.
 
         > [!IMPORTANT]
@@ -270,6 +270,8 @@ If a device is lost or compromised, you must remove its ability to access Supply
 
 ## Additional resources
 
+- [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md)
+- [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)
 

@@ -39,22 +39,20 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
-1. Complete the following steps to use the device code flow to authenticate devices, follow the steps to set it up, and grant the required API permissions.
-
-    1. In the **Manage** list, select **Authentication**.
-    1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
-    1. In the **Manage** list, select **API permissions**.
-    1. Select **Add a permission**.
-    1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
-    1. On the left navigation pane, select **Microsoft Entra ID**.
-    1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select the **All applications** tab.
-    1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
-    1. In the **Manage** list, select **Properties**.
-    1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
-    1. In the **Manage** list, select **Users and groups**.
-    1. On the toolbar, select **Add user/group**.
-    1. On the **Add Assignment** page, select the link under the **Users** heading.
-    1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
+1. In the **Manage** list, select **Authentication**.
+1. Set the **Enable the following mobile and desktop flows** option to *Yes* to enable the device code flow for your application. Then select **Save**.
+1. In the **Manage** list, select **API permissions**.
+1. Select **Add a permission**.
+1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
+1. On the left navigation pane, select **Microsoft Entra ID**.
+1. In the **Manage** list, select **Enterprise applications**. Then, in the new **Manage** list, select the **All applications** tab.
+1. In the search form, enter the name that you entered for the app earlier in this procedure. Confirm that the **Application ID** value for the app that's found matches the client ID that you copied earlier. Then select the link in the **Name** column to open the properties for the app.
+1. In the **Manage** list, select **Properties**.
+1. Set the **Assignment required?** option to *Yes* and the **Visible to users?** option to *No*. Then select **Save** on the toolbar.
+1. In the **Manage** list, select **Users and groups**.
+1. On the toolbar, select **Add user/group**.
+1. On the **Add Assignment** page, select the link under the **Users** heading.
+1. In the **Users** dialog box, select each user that you'll use to authenticate devices with Supply Chain Management.
 
 For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
 
@@ -85,7 +83,7 @@ To disable a user in Microsoft Entra ID, follow these steps.
 
 ## Additional resources
 
-- [Install the Warehouse Management mobile app](/install-configure-warehouse-management-app.md)
+- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

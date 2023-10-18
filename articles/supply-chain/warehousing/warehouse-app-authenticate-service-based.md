@@ -39,13 +39,11 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
-1. Complete the following steps to use certificates or client secrets to authenticate devices.
+1. In the **Manage** list, select **Certificate & secrets**.
+1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
 
-    1. In the **Manage** list, select **Certificate & secrets**.
-    1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
-
-        - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
-        - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
+    - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
+    - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
 For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
 
@@ -77,7 +75,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 
 ## Additional resources
 
-- [Install the Warehouse Management mobile app](/install-configure-warehouse-management-app.md)
+- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Authenticate users by using the device code flow](warehouse-app-authenticate-user-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
