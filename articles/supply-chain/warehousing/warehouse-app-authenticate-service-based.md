@@ -1,21 +1,23 @@
 ---
-title: Install and connect the Warehouse Management mobile app
-description: This article explains how to configure it to connect with service-based authentication to your Microsoft Dynamics 365 Supply Chain Management environment.
+title: Authenticate by using a certificate or client secret
+description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: pavlodatsiuk
 ms.author: pavlodatsiuk
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
-ms.date: 06/15/2023
+ms.date: 10/18/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-> [!IMPORTANT]
-> Authentication methods on this page are deprecated. Use [device code flow](warehouse-app-authenticate-user-based.md) instead.
+# Authenticate by using a certificate or client secret
 
-## <a name="authenticate-service-based"></a>Authenticate by using a certificate or client secret
+[!include [banner](../includes/banner.md)]
+
+> [!IMPORTANT]
+> The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehouse-app-authenticate-user-based.md) instead.
 
 Authentication with Microsoft Entra ID provides a secure way of authenticating a mobile device with Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code.
 
@@ -37,7 +39,7 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 1. On the toolbar, select **New registration** to open the **Register an application** wizard.
 1. Enter a name for the application, select the **Accounts in this organizational directory only** option, and then select **Register**.
 1. Your new app registration is opened. Make a note of the **Application (client) ID** value, because you'll need it later. This ID will be referred to later in this article as the *client ID*.
-1. Complete the following steps to use [certificates or client secrets](#authenticate-devicecode) to authenticate devices.
+1. Complete the following steps to use certificates or client secrets to authenticate devices.
 
     1. In the **Manage** list, select **Certificate & secrets**.
     1. Select one of the following buttons, depending on whether you want to use certificates or client secrets for authentication:
@@ -48,22 +50,18 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
 For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
 
 - For instructions that show how to use Windows PowerShell to set up web service applications in Microsoft Entra ID, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
-- For complete details about how to manually create a web service application in Microsoft Entra ID, see the following articles:
 
+- For complete details about how to manually create a web service application in Microsoft Entra ID, see the following articles:
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Creating and Setting Up a User Account in Supply Chain Management
-To manage user access and permissions in Microsoft Dynamics 365 Supply Chain Management while needing to integrate the Microsoft Entra ID application, it is imperative to adhere to the procedures outlined in the subsequent documentation:
-[Create and configure a user account in Supply Chain Management](warehouse-app-authenticate-user-based.md#user-azure-ad)
+## Set up mobile-device user accounts in Supply Chain Management
 
-## <a name="revoke"></a>Remove access for a lost or compromised device
+To manage user access and permissions in Supply Chain Management while integrating with Microsoft Entra ID, you must follow the procedures outlined in [Create and configure a user account in Supply Chain Management](install-configure-warehouse-management-app.md#user-azure-ad).
 
-If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management.
+## <a name="revoke"></a>Remove access for a device that authenticates by using a certificate or client secret
 
-### Remove access for a device that authenticates by using a certificate or client secret
-
-The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
+If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The following procedure describes the recommended process for removing access for a device that authenticates by using a certificate or client secret.
 
 1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
 1. Delete the line that corresponds to the device that you want to remove access for. Make a note of the client ID that's used for the device, because you'll need it later.

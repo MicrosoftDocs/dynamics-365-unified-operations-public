@@ -24,8 +24,13 @@ The Warehouse Management mobile app is only for your internal business use. You 
 
 ### Operating system requirements
 
-You can check if your device is running a supported version on the [Mobile device workspace](mobile-device-workspace.md).
+<!-- KFM: I reverted this (had been edited to ask user to use the Mobile device workspace, but that won't work until the device already has the app on it, right?) Are these still the right specs? -->
 
+The Warehouse Management mobile app is available for both Windows and Google Android operating systems. To use the app, one of the following operating systems must be installed on your mobile devices:
+
+- Windows 10 (Universal Windows Platform \[UWP\]) October 2018 update 1809 (build 10.0.17763) or later
+- Android 4.4 or later
+- iOS 13.0 or later
 
 ### External URLs required by the app
 
@@ -78,12 +83,19 @@ The Warehouse Management mobile app isn't available in app stores in China. Howe
 
 ## <a name="authenticate"></a>Decide which authentication methods you'll use
 
-Because the Warehouse Management mobile app has read/write access to some of your Supply Chain Management data, each device must be authenticated with Supply Chain Management. The app supports several authentication methods, which are described in the following subsections. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
+Because the Warehouse Management mobile app has read/write access to some of your Supply Chain Management data, each device must be authenticated with Supply Chain Management. The app supports several authentication methods. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
 
-After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. If a device is lost or compromised, you can revoke its authentication by following the steps in the [Remove access for a lost or compromised device](#revoke) section.
+After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. 
 
-- **User-based Authentication:**  [Device code flow](warehouse-app-authenticate-user-based.md)
-- **Service-based Authentication (deprecated):**  [Client secret, Certificate](warehouse-app-authenticate-service-based.md)
+For details about each authentication method and how to set them up, see the following articles:
+
+- User-based authentication: [Authenticate users by using the device code flow](warehouse-app-authenticate-user-based.md)
+- Service-based authentication (deprecated): [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
+
+If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you use:
+
+- User-based authentication: [Remove access for a device that authenticates by using the device code flow](warehouse-app-authenticate-user-based.md#revoke)
+- Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
 ## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
 
@@ -251,10 +263,10 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 ## <a name="revoke"></a>Remove access for a lost or compromised device
 
-If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management.
+If a device is lost or compromised, you must remove its ability to access Supply Chain Management. The method that you use to remove access depends on how the device was configured to authenticate with Supply Chain Management. For instructions, see one of the following articles:
 
-- **User-based Authentication:**  [Device code flow](warehouse-app-authenticate-user-based.md#revoke)
-- **Service-based Authentication (deprecated):**  [Client secret, Certificate](warehouse-app-authenticate-service-based.md#revoke)
+- If you use user-based authentication, see [Authenticate users by using device code flow](warehouse-app-authenticate-user-based.md#revoke)
+- If you use service-based authentication (deprecated), see [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
 
 ## Additional resources
 
