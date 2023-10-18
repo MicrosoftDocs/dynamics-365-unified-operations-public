@@ -93,7 +93,7 @@ If the channel-side information isn't up to date for some reason, and a return i
 
 ### Offline return processing
 
-When POS is offline i.e., it cannot connect to the Commerce Scale Unit (CSU) as well, then the return options are limited.  Only those transactions can be returned offline, which were created offline and are still available in the offline database. If the transaction was created offline, but the POS went online before attempting to return the transaction, then the system will throw an error message stating that this operation is not available offline because, the system would have sent the original transaction to the online database and thus cannot find the original transaction in the offline database anymore.
+When POS is offline i.e., it cannot connect to the Commerce Scale Unit (CSU) as well, then the return options are limited.  Only those transactions can be returned offline, which were created offline and are still available in the offline database. If the transaction was created offline, but the POS went online before attempting to return the transaction, then the system will throw an error message stating that this operation is not available offline because, the system would have sent the original transaction to the online database and thus that transaction can be returned from another POS device which might lead to over returns.
 
 
 > [!NOTE]
