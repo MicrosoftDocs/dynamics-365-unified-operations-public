@@ -1753,6 +1753,8 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Log and view successful API posts
+          href: inventory/inventory-visibility-inventory-log-history.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence
