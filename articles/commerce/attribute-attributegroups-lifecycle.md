@@ -4,7 +4,7 @@
 title: Manage attributes and attribute groups
 description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 08/31/2022
+ms.date: 10/19/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
