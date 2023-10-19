@@ -32,7 +32,7 @@ For example, a typical television product might have the following attributes.
 | TV & Video | Brand               | Any valid brand value                     | None          |
 | TV         | Screen Size         | 20–85 inches                              | 55 inches     |
 |            | Vertical Resolution | 4K (2160p), Full HD (1080p), or HD (720p) | 4K (2160p)    |
-|            | Screen Refresh Rate | 60hz, 120hz, or 240hz                     | 60hz          |
+|            | Screen Refresh Rate | 60 hz, 12 0hz, or 240 hz                  | 60 hz         |
 |            | HDMI Inputs         | 0–10                                      | 3             |
 
 ## Attributes and attribute types
@@ -94,7 +94,7 @@ To set up an attribute, follow the steps in this example procedure.
 
 For products, the attribute metadata settings can be overridden at the channel level.
 
-An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, if you set the **Can be refined** option to **Yes** under **Attribute metadata for Commerce channels**, the attribute will be shown for refinement or filtering of products on search results and category browsing pages. To configure an attribute as refinable, you must first select **Filter settings** on the Action Pane and confirm the filter settings for the attribute.
+An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, if you set the **Can be refined** option to **Yes** under **Attribute metadata for Commerce channels**, the attribute is shown for refinement or filtering of products on search results and category browsing pages. To configure an attribute as refinable, you must first select **Filter settings** on the Action Pane and confirm the filter settings for the attribute.
 
 ## Filter settings for attributes
 
@@ -117,7 +117,7 @@ The **Filter settings** page includes the following fields:
 
 - **Threshold value** – This setting is required if you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
-    For example, for a **Bag Volume** attribute that has an attribute type of **Integer**, the threshold value might be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Ranges that don't have any products in the result set will appear dimmed.
+    For example, for a **Bag Volume** attribute that has an attribute type of **Integer**, the threshold value might be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS shows the following ranges. Ranges that don't have any products in the result set appears dimmed.
 
     - Less than 10
     - 10 – 20
@@ -131,13 +131,13 @@ Filter settings for attributes are applicable only to product attributes and can
 
 In the default Commerce modules, no out-of-box support is available for **Display control** filter settings such as **Range**, **Slider**, and **Slider with bars**. The **Range** and **Slider** settings continue to be supported for POS solutions, whereas the **Slider with bars** setting is applicable to legacy SharePoint online storefronts and continues to be available for third-party integration and custom scenarios.
 
-We recommend that refinable attributes have an attribute of the **Text** type where the **Fixed-list** option is enabled, and that you keep the list manageable (up to 100–200 unique values). If a refiner will have 1,000 or more unique values, it's more appropriate to use an attribute of the **Text** type where the **Fixed-list** option is disabled.
+We recommend that refinable attributes have an attribute of the **Text** type where the **Fixed-list** option is enabled, and that you keep the list manageable (up to 100–200 unique values). If a refiner has 1,000 or more unique values, it's more appropriate to use an attribute of the **Text** type where the **Fixed-list** option is disabled.
 
 Translations are critical for attribute names and their values. For attributes of the **Text** type where the **Fixed-list** option is enabled, you can define translations for the attribute values under **Attribute type**. For every other attribute type, you can define translations on the page where you define the attribute values. For example, for an attribute of the **Text** type, you can define translations for the default value on the attribute's **Attributes** page. However, if you override the default value at the product level, you can define translations for the attribute on the product's **Product attributes** page.
 
-After an attribute has been marked as refinable for a channel, you should not update the attribute type. Otherwise, you will affect the publication of product data to the search index. Instead, we recommend that you create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups.
+After an attribute has been marked as refinable for a channel, you shouldn't update the attribute type. Otherwise, you affect the publication of product data to the search index. Instead, we recommend that you create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups.
 
-Search by attributes is supported but fetches results only for exact matches of search words. For example, a **Fabric** attribute has a value of **Cashmere cotton**. If a customer searches for "Cash," no products that have **Cashmere cotton** as the fabric will be retrieved. However, if a customer searches for "Cashmere," "Cotton," or "Cashmere Cotton," products that have **Cashmere cotton** as the fabric will be retrieved.
+Search by attributes is supported but fetches results only for exact matches of search words. For example, a **Fabric** attribute has a value of **Cashmere cotton**. If a customer searches for "Cash," no products that have **Cashmere cotton** as the fabric is retrieved. However, if a customer searches for "Cashmere," "Cotton," or "Cashmere Cotton," products that have **Cashmere cotton** as the fabric is retrieved.
 
 ### Additional attribute metadata options
 
@@ -173,7 +173,7 @@ To create an attribute group, follow the steps in this example procedure.
 1. Add the following attributes: **CleaningMethod**, **CollarType**, **Collection**, and **Design**.
 
 > [!NOTE]
-> The display order values of attributes in the attribute group don't influence or apply to the order of the refiners in the search and category browse results. They are applicable only to the "order attributes" scenario.
+> The display order values of attributes in the attribute group don't influence or apply to the order of the refiners in the search and category browse results. They're applicable only to the "order attributes" scenario.
 
 ### Assign attribute groups to categories
 
@@ -313,7 +313,7 @@ In this example, the **P001-Master** product is a multiple-activity shoe that ha
 | P001-2      | Walking                  |
 | P001-3      | Trekking                 |
 
-If a user searches for "shoe," the **P001-Master** product will appear in the search results. If you configured the **Activity** attribute as refinable, the **Activity** refiner will list only **Sports** as a refinable value, because that value was defined for the **Activity** attribute at the **P001-Master** product level.
+If a user searches for "shoe," the **P001-Master** product appears in the search results. If you configured the **Activity** attribute as refinable, the **Activity** refiner lists only **Sports** as a refinable value, because that value was defined for the **Activity** attribute at the **P001-Master** product level.
 
 By default, variant-level attributes are intended to be used only on product details pages (PDPs). When you select a specific product variant on a PDP, the product specifications on the PDP are updated for that specific variant.
 
