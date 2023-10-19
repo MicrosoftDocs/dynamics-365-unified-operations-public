@@ -1,5 +1,5 @@
 ---
-title: Authenticate by using a certificate or client secret
+title: Service-based authentication
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,20 +12,25 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Authenticate by using a certificate or client secret
+# Service-based authentication
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehouse-app-authenticate-user-based.md) instead.
 
-Authentication with Microsoft Entra ID provides a secure way of authenticating a mobile device with Supply Chain Management. You can authenticate by using either a client secret or a certificate. If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code.
+Authentication with Microsoft Entra ID provides a secure way of authenticating a mobile device with Supply Chain Management. The Warehouse Management mobile app supports the following type of service-based authentication:
+
+- Certificates
+- Client secret
+
+If you'll import connection settings, we recommend that you use a certificate instead of a client secret. Because the client secret must always be stored securely, you can't import it from a connection settings file or a QR code.
 
 Each device should have its own unique certificate or client secret.
 
 Certificates can be used as secrets to prove the application's identity when a token is requested. The public part of the certificate is uploaded to the app registration in the Azure portal, whereas the full certificate must be deployed on each device where the Warehouse Management mobile app is installed. Your organization is responsible for managing the certificate in terms of rotation and so on. You can use self-signed certificates, but you should always use nonexportable certificates.
 
-You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
+You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md).
 
 ## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
 
@@ -76,6 +81,6 @@ If a device is lost or compromised, you must remove its ability to access Supply
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Authenticate users by using the device code flow](warehouse-app-authenticate-user-based.md)
+- [User-based authentication](warehouse-app-authenticate-user-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

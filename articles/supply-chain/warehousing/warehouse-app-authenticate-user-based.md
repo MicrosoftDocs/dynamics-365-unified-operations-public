@@ -1,5 +1,5 @@
 ---
-title: Authenticate users by using device code flow
+title: User-based authentication
 description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using user-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
@@ -12,9 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Authenticate users by using device code flow
+# User-based authentication
 
 [!include [banner](../includes/banner.md)]
+
+The Warehouse Management mobile app supports the following type of user-based authentication:
+
+- Device code flow authentication
 
 When you use device code flow authentication, the Warehouse Management mobile app generates and shows a unique device code. The user who is setting up the device must then enter this device code into an online form, together with the credentials (name and password) for a Microsoft Entra ID user account that represents either the device itself or the user who is signing in (depending on how the admin has implemented the system). In some cases, depending on how the Microsoft Entra ID user account is configured, an admin might also have to approve the sign-in. In addition to the unique device code, the mobile app shows the URL where the user must enter the code and the credentials for the Microsoft Entra ID user account.
 
@@ -84,6 +88,6 @@ To disable a user in Microsoft Entra ID, follow these steps.
 ## Additional resources
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
-- [Authenticate by using a certificate or client secret](warehouse-app-authenticate-service-based.md)
+- [Service-based authentication](warehouse-app-authenticate-service-based.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
