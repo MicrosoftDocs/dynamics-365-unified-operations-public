@@ -4,7 +4,7 @@
 title: Budgeting overview
 description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in finance and operations or load them from a third-party program.
 author: panolte
-ms.date: 04/29/2021
+ms.date: 10/16/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: BudgetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
@@ -41,13 +41,21 @@ There are multiple methods for creating budget register entries:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.
--   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries into the system.
+-   Use the **Budget Account Entries** data entity in Data management to import budget register entries. You should consider using this method and turning on the **Set based processing** parameter when you must import many budget account entries.
 -   If the company uses Budget planning functionality to prepare budget data, you can use the **Generate budget register entry** periodic process.
 
 The budget register entry is considered completed when the budget balances have been updated. On the **Budget register entries** page, click **Update budget balances** for a selected budget register entry or multiple entries. After you update the budget balances, the status of the budget register entry changes to **Completed**. Completed budget register entry can't be re-opened for edits. Therefore, if the budget data must be adjusted, you must create a new budget register entry instead of correcting data in the completed budget register entry.
 
 ## Configuration
 When you configure budgeting, start on the **Budgeting parameters** page. On this page, you must define the budget journal, the number sequence for budget register entries, and the default behavior in the workspaces.
+
+On the **Budgeting parameters** page, the following fields are available:
+
+- **Allocation key** – This field determines how the amount for a budget account entry is allocated in a cash flow forecast.
+- **Use rules for budget transfers** – Select this option to enable budget transfers.
+- **Display legacy budget analysis inquiry** – Select this to option to show the legacy budget analysis inquiry.
+- **Default account structure** – Select this checkbox to automatically populate the account structure in the budget register, based on the main account. This checkbox is available if the **Default the account structure in the budget register entry** feature is enabled in Feature management.
+- **Budget journal** – Select a journal name for budget appropriations. This field is available if the **Enable budget appropriation** field is selected on the **General Ledger parameters** page.
 
 Next, if there are policies that govern the approval of budget register entries, based on budget type (for example, transfers or revisions), you must create budget register entry workflows on the **Budgeting workflows** page. If there are scenarios where transfers might be allowed without workflow approval, you can define budget transfer rules to support those scenarios. 
 
