@@ -35,9 +35,9 @@ A dimension set is an ordered list of financial dimensions that can be used to s
 The only standard dimension set is the dimension set that contains only the main account.
 
 You use the **Financial dimension sets** page to create and manage financial dimension sets.
+
 > [!NOTE]
-> Beginning in application 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available.
-> For more information, see the page [New Financial dimension sets](financial-dimension-set-new.md).
+> As of application version 10.0.38, a new feature that's named **Performance enhancement for general ledger dimension set balance calculation** is available. For more information, see [New financial dimension sets](financial-dimension-set-new.md).
 
 ## Dimension set balances
 
