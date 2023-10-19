@@ -58,7 +58,7 @@ To create any additional navigation category nodes to represent the product cate
 1. On the action pane, select **Save**.
 
 > [!NOTE]
-> To improve the client performance such as POS and eCommerce, it's recommended to configured no more than 1000 category nodes in a navigation hierarchy. If you configure more than 1000 category nodes for an online channel, you will need to build SSK customizations to ensure all category nodes are loaded.
+> To improve client performance, such as POS and eCommerce, it's recommended you don't configure more than 1000 category nodes in a navigation hierarchy. If you configure more than 1000 category nodes for an online channel, you need to build SSK customizations to ensure all category nodes are loaded.
 
 The following image shows an example of a completed channel navigation hierarchy.
 
