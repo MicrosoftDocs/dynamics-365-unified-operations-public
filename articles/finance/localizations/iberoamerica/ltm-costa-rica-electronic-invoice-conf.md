@@ -2,7 +2,7 @@
 title: Configure electronic invoice parameters for Costa Rica
 description: This article explains how to configure the information needed to generate the electronic invoice XML for Costa Rica. 
 author: Fhernandez0088
-ms.date: 10/10/2023
+ms.date: 10/18/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe
@@ -12,6 +12,7 @@ ms.custom: bap-template
 # Configure electronic invoice parameters for Costa Rica
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to configure the information needed to generate the electronic invoice XML for Costa Rica. 
 
@@ -31,7 +32,7 @@ Before you complete the steps in this article, the following prerequisites must 
 3. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**.
 
    1. Select a record in the list and then select **Tax application**.
-   2. In the **Taxl application** page, in the **Tax application id** field, enter the ID used for Costa Rican electronic invoicing.
+   2. In the **Tax application** page, in the **Tax application id** field, enter the ID used for Costa Rican electronic invoicing.
    3. In the **Tax application code** field, enter the code according to the Costa Rican normative.
    4. In the **User defined 2** field, enter the status code of the electronic document code (normal situation, contingency, without internet).
    5. Repeat steps 1-4 for each record on the **Document class** page.
