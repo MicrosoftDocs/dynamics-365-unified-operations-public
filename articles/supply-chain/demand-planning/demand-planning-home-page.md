@@ -1,4 +1,21 @@
-﻿# Demand planning overview
+﻿---
+title: Demand planning home page
+description: The Demand planning app for Dynamics 365 Supply Chain Management is Microsoft's next-generation collaborative demand-planning solution, powered by best-in-class forecasting algorithms and models, and offering immersive user experiences, intelligent reports, and analytics.
+author: t-benebo
+ms.author: benebotg
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 10/19/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
+---
+
+# Demand planning home page
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Inaccurate forecasts and demand plans can lead to lost revenue and inefficiency in the supply chain, but providing forecasts infused with intelligence will lead to more accurate and effective demand plans. Direct impact can be measured in improved revenue and fewer stockouts. Operating expenses are reduced in supply chains that require fewer fire drills.
 
