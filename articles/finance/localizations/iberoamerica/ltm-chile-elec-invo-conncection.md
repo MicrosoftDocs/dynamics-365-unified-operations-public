@@ -15,14 +15,7 @@ ms.custom: bap-template
 
 This article explains how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use Chilean electronic invoices formats.
 
-## In this article
-
-1. [Prerequisites](#prerequisites)
-2. [Country/region-specific configuration for Electronic invoicing for Chile feature](#countryregion)
-3. [Finance configuration](#finance)
-4. [Issue electronic invoices](#issue)
-
-This article provides information that will help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in RCS and in Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](https://learn.microsoft.com/dynamics365/finance/localizations/global/e-invoicing-set-up-overview).
+This article provides information that will help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in RCS and in Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
 
 ## <a name="prerequisites"></a>Prerequisites
 
@@ -35,7 +28,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
     - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
 
-- Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service. For more information, see [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
+- Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service. For more information, see [Activate and set up integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Inventory e-invoice (CL)
@@ -62,7 +55,7 @@ Some parameters of the **Electronic invoicing for Chile** feature are published 
 
 Some parameters must be configured directly in Finance.
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters#set-up-electronic-document-parameters.md).
+1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
     > After you import the **Electronic invoicing for Chile** feature, electronic documents are configured by default. Follow these remaining steps of this procedure if you must make changes.
