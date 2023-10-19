@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.28
 
 As of Microsoft Dynamics 365 Finance version 10.0.36, the **Automatic split of large financial journals** feature improves the posting performance of financial journals. The performance improvements are achieved by automatically splitting a financial journal into multiple journals and posting them in batch mode. Batches are split based on a line limit that's defined by Microsoft. This feature works for all types of financial journals except payroll disbursement journals.
 
-Part of this new feature is **Parent journal and related journals**. All multiple journals that are created from the automatic split of one large journal are related to each other by storing the parent journal number in each of them and are considered as **Related journals** and the first journal is considered the parent. Users can include the **Parent journal number** field in the list to view the parent journal and their related journals. The benefit of storing this mapping is used during a **Reversal of journal** scenario.  
+Part of this new feature is **Parent journal and related journals**. All journals that are created from the automatic split of one large journal are related to each other through the parent journal number that's stored in each of them. All these journals are considered *related journals*, and the original journal is considered the *parent journal*. Users can include the **Parent journal number** field in the list to view the parent journal and its related journals. Storage of this mapping has benefits during a **Reversal of journal** scenario.  
 
 > [!NOTE]
 > The **Automatic split of large financial journals** feature is enabled in Feature management.
