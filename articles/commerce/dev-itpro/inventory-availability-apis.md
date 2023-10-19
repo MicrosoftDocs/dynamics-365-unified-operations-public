@@ -2,7 +2,7 @@
 title: Inventory availability APIs for e-commerce
 description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 07/18/2023
+ms.date: 10/18/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -22,6 +22,7 @@ Commerce provides the following APIs to query inventory availability of a produc
 - **GetEstimatedAvailability** – Use this API to query inventory for a product or product variant in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
 - **GetEstimatedProductWarehouseAvailability** – Use this API to query inventory for a product or product variant in a specific warehouse.
 - **GetDimensionValuesWithEstimatedAvailabilities** – Use this API to query inventory levels that are aggregated on the dimensions for a product, either in the online channel's default warehouse or in warehouses that are linked to the online channel's fulfillment group.
+- **UpdateProductWarehouseAvailabilities** – Use this API to update inventory quantity for a product or product variant in the channel's default warehouse.
 
 > [!NOTE]
 > The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs that are used in Commerce version 10.0.7 and earlier.
@@ -289,9 +290,70 @@ For more information about how to consume Retail Server APIs in external applica
 }
 ```
 
+## UpdateProductWarehouseAvailabilities
+
+### Input parameters
+
+| Name | Type | Required/Optional | Description |
+|----|----|----|----|
+| quantities | IEnumerable\<ProductWarehouseQuantity\> | Required | |
+
+#### ProductWarehouseQuantity
+
+| Name | Type | Required/Optional | Description |
+|----|----|----|----|
+| ProductId | long | Required | |
+| InventoryLocationId | string | Required | The ID of the warehouse. |
+| PhysicalInventory | decimal | Required | The target quantity. |
+
+### Sample request body
+
+```json
+{
+    "quantities": [
+        {
+            "ProductId": 123456,
+            "InventoryLocationId": "{WarehouseId}",
+            "PhysicalInventory": 100
+        }
+    ]
+}
+```
+
+### Sample response body
+
+```json
+{
+    "SuccessfulUpdates": [
+        {
+            "ProductId": 22565421964,
+            "ItemId": "0002",
+            "DataAreaId": "{DataAreaId}",
+            "ColorId": "",
+            "SizeId": "",
+            "StyleId": "",
+            "ConfigurationId": "",
+            "InventoryLocationId": "{WarehouseId}",
+            "InventorySiteId": "{SiteId}",
+            "TotalAvailable": 100.0,
+            "PhysicalAvailable": 100.0,
+            "PhysicalInventory": 100.0,
+            "PhysicalReserved": 0,
+            "OrderedInTotal": 0
+        }
+    ],
+    "FailedUpdates": [],
+    "ExtensionProperties": []
+}
+```
+
 ## The quantity output of APIs
 
-Both the **GetEstimatedAvailability** API and the **GetEstimatedProductWarehouseAvailability** API internally use the channel-side calculation logic and return an estimated *physical available* quantity, *total available* quantity, *unit of measure*, and *inventory level* for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
+There are two kinds of data source for the **GetEstimatedAvailability** API and the **GetEstimatedProductWarehouseAvailability** API.
+- Use the channel-side calculation logic and return an estimated *physical available* quantity, *total available* quantity, *unit of measure*, and *inventory level* for the requested product and warehouse. It can provide an accurate estimate of a product's availability by considering the transactions that have been created in the channels but that aren't yet known to Commerce headquarters.
+- Use Inventory Visibility (IV), a Dynamics 365 Supply Chain Management microservice, to increase sales and optimize fulfillment based on real-time inventory data.
+
+The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
 
 Other APIs that are available in Commerce can also directly access Commerce headquarters to fetch on-hand quantities for products. However, we don't recommend that you use them in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your Commerce headquarters servers. For channel-side calculation, the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs can provide a more accurate estimate of a product's availability by considering the transactions that have been created in the channels but that aren't yet known to Commerce headquarters.
 
@@ -305,5 +367,7 @@ To define how product quantity should be returned in the API output, follow thes
     - **Not return inventory quantity** – Only the inventory level is returned in the API output. For more information about inventory levels, see [Configure inventory buffers and inventory levels](../inventory-buffers-levels.md).
 
 1. Run the **1070** (**Channel configuration**) job to sync the latest setting to channels.
+
+The **UpdateProductWarehouseAvailabilities** API internally use Inventory Visibility (IV) microservice. It returns two result list - SuccessfulUpdates and FailedUpdates with latest *physical available* quantity, *total available* quantity, *physical inventory*, *physical reserved* and *ordered in total* for the requested product and warehouse.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
