@@ -3751,11 +3751,13 @@
           items:
           - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Authenticate users by using device code flow
+          - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
-          - name: Authenticate by using a certificate or client secret
+          - name: Service-based authentication
             href: warehousing/warehouse-app-authenticate-service-based.md
-          - name: Mass deploy the Warehouse Management mobile app
+          - name: Mass deploy the mobile app for user-based authentication
+            href: warehousing/warehouse-app-intune-user-based.md
+          - name: Mass deploy the mobile app for service-based authentication
             href: warehousing/warehouse-app-intune.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
             href: warehousing/warehouse-app-company-logo.md
