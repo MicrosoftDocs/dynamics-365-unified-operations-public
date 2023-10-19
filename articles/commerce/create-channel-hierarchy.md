@@ -2,7 +2,7 @@
 title: Create a channel navigation hierarchy
 description: This article describes how to create a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/27/2021
+ms.date: 10/19/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -41,7 +41,7 @@ To create a channel navigation hierarchy, follow these steps.
 1. In the **Friendly name** box, enter a friendly name.
 1. On the action pane, select **Save**.
 
-The following image shows a example root node.
+The following image shows an example root node.
 
 ![Sample root node.](media/create-channel-hierarchy-1.png)
 
