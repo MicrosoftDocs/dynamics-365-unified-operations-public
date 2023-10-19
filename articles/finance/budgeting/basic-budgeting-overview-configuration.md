@@ -1,4 +1,4 @@
- ---
+---
 # required metadata
 
 title: Budgeting overview
