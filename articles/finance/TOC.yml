@@ -18,12 +18,6 @@
           href: get-started/whats-new-changed-10-0-37.md
         - name: Finance 10.0.36 (October)
           href: get-started/whats-new-changed-10-0-36.md  
-        - name: Finance 10.0.35 (August)
-          href: get-started/whats-new-changed-10-0-35.md
-        - name: Finance 10.0.34 (July)  
-          href: get-started/whats-new-changed-10-0-34.md
-        - name: Finance 10.0.33 (April)  
-          href: get-started/whats-new-changed-changed-10-0-33.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -2192,6 +2186,24 @@
           items: 
           - name: GST/HST Internet File Transfer
             href: localizations/canada/can-gst-hst-internet-file-transfer.md
+        - name: Chile
+          items:
+          - name: Configure connections for Chilean electronic invoicing 
+            href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
+          - name: Generate and print the Fees certificate report
+            href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
+          - name: Generate and print the Withholding tax book report for Chile
+            href: localizations/iberoamerica/ltm-chile-withholding-book.md
+          - name: Print the Inventory and balance report for Chile
+            href: localizations/iberoamerica/ltm-chile-inventory-balance-report.md
+          - name: Printing configuration for the Chile 8 columns report
+            href: localizations/iberoamerica/ltm-8-columns-report.md
+          - name: Configure sales and purchase invoices
+            href: localizations/iberoamerica/ltm-chile-configure-sales-purchase-invoices.md
+          - name: Create customer and vendor records with an address in Chile
+            href: localizations/iberoamerica/ltm-chile-customer-vendor-addresses.md
+          - name: Set up a legal entity and tax information for Chile
+            href: localizations/iberoamerica/ltm-chile-set-up-legal-entity-tax-information.md
         - name: China
           items:
           - name: China overview
@@ -2238,6 +2250,16 @@
             href: localizations/china/apac-chn-tax-integration-vat-customer-invoices.md   
           - name: GB/T 24589-2010 export
             href: localizations/china/apac-chn-gbt-24589-2010.md
+        - name: Costa Rica
+          items:
+          - name: Configure electronic invoice parameters for Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
+          - name: Set up a legal entity and tax information for Costa Rica  
+            href: localizations/iberoamerica/set-up-legal-entity-tax-costa-rica.md
+          - name: Configure sales and purchase invoices for Costa Rica
+            href: localizations/iberoamerica/ltm-configure-invoices-costa-rica.md
+          - name: Create customer and vendor records with an address in Costa Rica
+            href: localizations/iberoamerica/ltm-create-customer-vendor-costa-rica.md
         - name: The Czech Republic
           items:
           - name: The Czech Republic
@@ -2292,6 +2314,8 @@
             href: localizations/denmark/emea-dnk-eu-sales-list.md
           - name: Customer electronic invoices in Denmark
             href: localizations/norway/emea-dnk-e-invoices.md
+          - name: Vendor electronic invoice import in Denmark
+            href: localizations/denmark/emea-dnk-vend-e-invoice.md
           - name: Post a free text invoice with a payment slip
             href: localizations/denmark/post-free-text-invoice-payment-slip.md
           - name: Post a project invoice with a payment slip
@@ -3340,6 +3364,22 @@
             href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
           - name: Value query for Latin America
             href: localizations/iberoamerica/ltm-core-value-query.md
+          - name:	Configure electronic document references 
+            href: localizations/iberoamerica/ltm-electronic-doc-references.md
+          - name: VAT book printing configuration 
+            href: localizations/iberoamerica/ltm-vat-book.md
+          - name: Print payment checks
+            href: localizations/iberoamerica/ltm-check-printing.md
+          - name: Configure the layout of a printed invoice for Latin America 
+            href: localizations/iberoamerica/ltm-invoice-layout-print.md
+          - name: Print a Ledger Posting report for LATAM 
+            href: localizations/iberoamerica/ltm-ledger-posting-report.md
+          - name: SSRS Reports/Services references configuration for Latin America 
+            href: localizations/iberoamerica/ltm-ssrsreport-services.md
+          - name: Printing configurations for General Ledger LATAM 
+            href: localizations/iberoamerica/ltm-general-ledger.md
+          - name: Set up transaction posting for Latin America 
+            href: localizations/iberoamerica/ltm-post-transactions.md        
         - name: Latvia
           items:
           - name: Latvia overview
@@ -3468,6 +3508,14 @@
             href: localizations/new-zealand/apac-nzl-gst-declaration.md
           - name: Customer electronic invoices 
             href: localizations/apac/apac-aus-nzl-e-invoices.md
+        - name: Nicaragua
+          items:
+          - name: Set up a legal entity and tax information for Nicaragua 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-nicaragua.md
+          - name: Configure sales and purchase invoices for Nicaragua 
+            href: localizations/iberoamerica/ltm-configure-invoices-nicaragua.md
+          - name: Create customer and vendor records with an address in Nicaragua 
+            href: localizations/iberoamerica/ltm-create-customer-vendor-nicaragua.md        
         - name: Norway
           items:
           - name: Norway overview
@@ -3506,6 +3554,16 @@
             href: localizations/mea/oman.md
           - name: VAT declaration for Oman (OM-00003)
             href: localizations/mea/emea-oma-vat-declaration.md
+        - name: Panama
+          items: 
+          - name:	Configure electronic invoice parameters for Panama 
+            href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
+          - name: Set up a legal entity and tax information for Panama 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
+          - name: Create customer and vendor records with an address in Panama
+            href: localizations/iberoamerica/ltm-create-customer-vendor-panama.md
+          - name: Configure sales and purchase invoices for Panama
+            href: localizations/iberoamerica/ltm-configure-invoices-panama.md
         - name: Poland
           items:
           - name: Poland overview
