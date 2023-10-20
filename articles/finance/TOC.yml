@@ -3364,6 +3364,22 @@
             href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
           - name: Value query for Latin America
             href: localizations/iberoamerica/ltm-core-value-query.md
+          - name:	Configure electronic document references 
+            href: localizations/iberoamerica/ltm-electronic-doc-references.md
+          - name: VAT book printing configuration 
+            href: localizations/iberoamerica/ltm-vat-book.md
+          - name: Print payment checks
+            href: localizations/iberoamerica/ltm-check-printing.md
+          - name: Configure the layout of a printed invoice for Latin America 
+            href: localizations/iberoamerica/ltm-invoice-layout-print.md
+          - name: Print a Ledger Posting report for LATAM 
+            href: localizations/iberoamerica/ltm-ledger-posting-report.md
+          - name: SSRS Reports/Services references configuration for Latin America 
+            href: localizations/iberoamerica/ltm-ssrsreport-services.md
+          - name: Printing configurations for General Ledger LATAM 
+            href: localizations/iberoamerica/ltm-general-ledger.md
+          - name: Set up transaction posting for Latin America 
+            href: localizations/iberoamerica/ltm-post-transactions.md        
         - name: Latvia
           items:
           - name: Latvia overview
