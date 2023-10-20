@@ -21,7 +21,7 @@ The Demand planning app lets you build a collection of *calculation profiles*, e
 
 - Increase all forecast by 10%
 - Combine two different forecasts, which result is using the average of the two
-- Remove outliers on the forecast by removing out some values that may be completely our of range
+- Remove outliers on the forecast by removing out some values that might be completely out of range
 
 Typically, a manager or system administrator will create the initial collection required profiles and, after that, forecasters and other users will be able to run the profiles to generate new calculated time series as needed.
 
@@ -45,7 +45,7 @@ To generate a new calculated time series by running an existing calculation prof
 
 1. A dialog opens. Set **Output option** to one of the following values:
     - *Create a new time series*: The job will create a new time series. Enter a name for the new series in the**Time series name** field.
-    - *Use an existing time series*: The job will overwrite or create a new version of an existing series. Use the settings to provided to choose the target series, whether to overwrite or create a new version, and what thew new version should be called (if you choose to create one).
+    - *Use an existing time series*: The job will overwrite or create a new version of an existing series. Use the settings to choose the target series, whether to overwrite or create a new version, and what the new version should be called (if you choose to create one).
 
 1. Select **Save and close**.
 

@@ -21,7 +21,7 @@ ms.custom: bap-template
 
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
-Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and*prophet*. Choosing the right demand forecasting algorithm depends on the specific characteristics of your historical data. auto-ARIMA shines when data follows stable patterns, ETS is a versatile choice for data with trends or seasonality, and Prophet excels with complex, real-world data. By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
+Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *prophet*. Choosing the right demand forecasting algorithm depends on the specific characteristics of your historical data. auto-ARIMA shines when data follows stable patterns, ETS is a versatile choice for data with trends or seasonality, and Prophet excels with complex, real-world data. By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
 
 This section describes how each of these algorithms works and their suitability for various types of historical demand data.
 
@@ -29,7 +29,7 @@ This section describes how each of these algorithms works and their suitability 
 
 The auto-ARIMA algorithm is like a time traveler, taking you on a journey through past demand patterns to make informed predictions about the future. At its core, auto-ARIMA uses a technique called ARIMA (autoregressive integrated moving average), which combines three key components: autoregression, differencing, and moving averages.
 
-Auto-ARIMA automatically identifies the best combination of these components to create a forecast model that fits your data like a glove. It works particularly well with time series data that exhibits a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, auto-ARIMA might be your go-to forecasting method.
+Auto-ARIMA automatically identifies the best combination of these components to create a forecast model that fits your data like a glove. It works especially well with time series data that exhibits a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, auto-ARIMA might be your go-to forecasting method.
 
 ### ETS – The shape shifter
 
@@ -47,9 +47,9 @@ Prophet works by decomposing the time series data into several components, such 
 
 The best fit model uses machine learning to find out which of the other available algorithms best fits your data, for each product and dimensions combination. This way, different products could have different models used.
 
-### Custom Azure machine learning algorithm
+### Custom Azure Machine Learning algorithm
 
-If you have a custom Azure machine learning algorithm that you'd like to use with your forecasting models, then you can use it in the Demand planning app.
+If you have a custom Azure Machine Learning algorithm that you'd like to use with your forecasting models, then you can use it in the Demand planning app.
 
 ## Create and customize a forecast model
 
@@ -71,9 +71,9 @@ The following illustration highlights the information and controls available for
 Legend:
 
 1. **Tile icon** – Illustrates the purpose of the tile.
-2. **Tile type** – The type of tile that it is. This usually describes the type of roles, calculations, or other actions that the tile represents.
-3. **Tile name** – A name applied to each specific tile. Sometimes, you can enter this manually in each tile's settings, but usually this indicates the value of one of they settings made for the tile.
-4. **Tile actions** – Select this button to open a drop-down list of actions you can take on the tile. Some of these are specific to the tile type, but most are common to all tiles. Some entries might be grayed out because they can't be used due to the tile's current positioning or some other contextual reason. Common commands include:
+2. **Tile type** – The type of tile that it is. This text usually describes the type of roles, calculations, or other actions that the tile represents.
+3. **Tile name** – A name applied to each specific tile. Sometimes, you can enter this text manually in each tile's settings, but usually it indicates the value of one of they settings made for the tile.
+4. **Tile actions** – Select this button to open a drop-down list of actions you can take on the tile. Some of these entries are specific to the tile type, but most are common to all tiles. Some entries might be grayed out because they can't be used due to the tile's current positioning or some other contextual reason. Common commands include:
     - **Settings** – Open a dialog that lets you set configuration settings for the tile.
     - **Remove** – Remove the tile.
     - **Move Up** and **Move Down** – Reposition the tile in the flowchart.

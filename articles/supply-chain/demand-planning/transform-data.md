@@ -44,7 +44,7 @@ To refresh your time series by running an existing transformation profile, follo
 
 1. The detail page opens for your selected profile. It provides the following tabs:
     - **Summary** – Provides basic information about the profile. If you like, you can edit the **Name** and/or **Description** to make the profile easier to identify and work with. You can also change the **Owner** and adjust the **Time Bucket** but usually you shouldn't change these for existing profiles. For more information about these settings, see [Create and manage transformation profiles](#create-transformation-profiles).
-    - **Transformations** – Shows details about the transformation that the profile will process. See [Create and manage transformation profiles](#create-transformation-profiles) for more information about these settings.
+    - **Transformations** – Shows details about the transformation that the profile will process. For more information about these settings, see [Create and manage transformation profiles](#create-transformation-profiles).
     - **Jobs** – Shows a list of each time the profile was run, include date information, job status, and the times series that was updated. Select the link in the **Time Series** column to open the time series.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab, where you can follow the status of the new transformation. The page doesn't refresh automatically, so you must select **Refresh** in the grid toolbar to refresh the status information.
@@ -63,7 +63,7 @@ To create or edit a transformation profile, follow these steps:
     - **Name** – Enter a name for the new profile.
     - **Description** – Enter a short description of the profile.
     - **Owner** – Select the user account that owns the profile.
-    - **Time Bucket** – Specify the time span by which data should summed in the time series output by this profile (*Daily*, *Weekly*, or*Monthly*). A shorter time bucket results in more data points along the X-axis. Choose the level of granularity that meets your needs.
+    - **Time Bucket** – Specify the time span by which data should be summed in the time series output by this profile (*Daily*, *Weekly*, or*Monthly*). A shorter time bucket results in more data points along the X-axis. Choose the level of granularity that meets your needs.
 
 1. Select **Next**.
 

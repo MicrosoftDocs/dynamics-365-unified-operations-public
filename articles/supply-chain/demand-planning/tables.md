@@ -146,10 +146,8 @@ To delete all the records in a table, follow these steps:
 
 ## Import data from Supply Chain Management
 
-You can easily import data from Dynamics 365 Supply Chain Management into the standard tables by using the Finance and Operations connector. By default, all system (standard) entities will be selected as well as its fields automapped. 
+You can easily import data from Dynamics 365 Supply Chain Management into the standard tables by using the Finance and Operations connector. By default, all system (standard) entities are selected and their fields are automapped.
 
-You can edit any relationship, unmap fields or add custom field mappings as needed. Note that to import a custom field, you must have added the custom field in the standard table first. 
+You can edit any relationship, unmap fields or add custom field mappings as needed. To import a custom field, you must have added the custom field in the standard table first.
 
-When you create an import job, an export data project is created in Supply Chain Management for the needed data entities. 
-
-
+When you create an import job, an export data project is created in Supply Chain Management for the needed data entities.

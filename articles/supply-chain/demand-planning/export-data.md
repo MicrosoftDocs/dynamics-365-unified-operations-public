@@ -1,6 +1,6 @@
 ﻿---
 title: Export and download data
-description: When you're done creating, analyzing, and editing a forecast, you can export back to Supply Chian management or download the data as a CSV file for viewing in Excel.
+description: When you're done creating, analyzing, and editing a forecast, you can export back to Supply Chain management or download the data as a CSV file for viewing in Excel.
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-When you're done creating, analyzing, and editing a forecast, you can export back to Supply Chian management or download the data as a CSV file for viewing in Excel.
+When you're done creating, analyzing, and editing a forecast, you can export back to Supply Chain management or download the data as a CSV file for viewing in Excel.
 
 ## Download time series values as a CSV file
 
@@ -40,8 +40,8 @@ To run an existing data export profile, follow these steps:
 1. The detail page opens for your selected profile. It provides the following tabs:
 
     - **Get started** – Provides basic information about the profile. If you like, you can edit the **Name** and/or **Description** to make the profile easier to identify and work with.
-    - **Map columns** – Shows how the selected profile maps columns in Demand planning to columns in the target system. You can edit these from here if needed.
-    - **Define data export rules** – Shows any filters that have been defined for the profile. You can edit these from here if needed.
+    - **Map columns** – Shows how the selected profile maps columns in Demand planning to columns in the target system. You can edit these mappings from here if needed.
+    - **Define data export rules** – Shows any export rules that have been defined for the profile. You can edit these settings from here if needed.
     - **Jobs** – Shows a list of each time the profile was run.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab, where you can follow the status of the new export. The page doesn't refresh automatically, so you must select **Refresh** in the grid toolbar to refresh the status information.

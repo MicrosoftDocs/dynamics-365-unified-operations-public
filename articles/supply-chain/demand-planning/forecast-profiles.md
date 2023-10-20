@@ -41,7 +41,7 @@ To generate a new forecast by running an existing forecast profile, follow these
 
 1. A dialog opens. Set **Output option** to one of the following values:
     - *Create a new time series*: The job will create a new time series. Enter a name for the new series in the**Time series name** field.
-    - *Use an existing time series*: The job will overwrite or create a new version of an existing series. Use the settings provided to choose the target series, whether to overwrite or create a new version, and what thew new version should be called (if you choose to create one).
+    - *Use an existing time series*: The job will overwrite or create a new version of an existing series. Use the settings provided to choose the target series, whether to overwrite or create a new version, and what the new version should be called (if you choose to create one).
 
 1. Select **Save and close**.
 
@@ -70,7 +70,7 @@ To create or edit a forecast profile, follow these steps:
 
 1. Select **Next**.
 
-1. The **Select input data source** page opens. Use this page to choose which time series to use as input for your forecast. You must selected exactly one time series.
+1. The **Select input data source** page opens. Use this page to choose which time series to use as input for your forecast. You must select exactly one time series.
     - The **Available** tab shows the full list of available time series. To add a times series to the forecast, select its name in the grid and then select **Include data source** from the toolbar. By default, the most recent version of the time series will be used, but you can select older versions by going to the **Included** tab.
     - The **Included** tab shows the time series selected for use with this forecast. If more than one version is available, select the version you want to use from the **Output version** drop-down list.
 

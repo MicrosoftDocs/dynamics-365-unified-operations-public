@@ -21,7 +21,7 @@ You can import data from a variety of sources and file types, including directly
 
 The Demand planning app lets you build a collection of *import profiles*, each of which imports data from a specific external source into one or more specific tables in Demand planning. Typically, a manager or system administrator will create the initial collection required profiles and, after that, forecasters and other users will be able to run the profiles to update the data as needed.
 
-It is also possible to import your custom data entities into custom tables or add custom fields that you may have extended in the standard tables without the need for a developer, doing it from the standard user interface.
+It's also possible to import your custom data entities into custom tables or add custom fields that you have extended in the standard tables without the need for a developer, doing it from the standard user interface.
 
 ## <a name="existing-import-profiles"></a>View and run existing data import profiles
 
@@ -65,7 +65,7 @@ Follow these steps:
 
 1. The **Configure data provider** page opens. In the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
 
-1. The **Entity selection** page opens. It lists each Supply Chain Management data entity that the solution supports out-of-the box supports and shows which Demand planning table it maps to. Turn on the **Enabled** slider for each entity you want to import from for this profile. Then select **Next**. All Supply Chain Management data entity is supported and can be imported, note a table must be created previously in the Demand Planning app for being able to map the fields. 
+1. The **Entity selection** page opens. It lists each Supply Chain Management data entity that the solution supports out-of-the-box and shows which Demand planning table it maps to. Turn on the **Enabled** slider for each entity you want to import from for this profile. Then select **Next**. All Supply Chain Management data entity is supported and can be imported, note a table must be created previously in the Demand Planning app for being able to map the fields. 
 
 1. The **Review and finish page** opens. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 
@@ -79,19 +79,19 @@ To import from a text or spreadsheet file exported from an external system, crea
 
 1. On the Action Pane, select **New**.
 
-1. On the **Select data provider** page, select one of the tiles under the **Power Query providers** heading. Choose the tile that matches the format of the exported file you will import using this profile.
+1. On the **Select data provider** page, select one of the tiles under the **Power Query providers** heading. Choose the tile that matches the format of the exported file you'll import using this profile.
 
 1. A setup wizard launches, open to the **Get started** page. Enter a **Name** and **Description** for your new profile. Then select **Next**.
 
 1. The **Select target table** page opens. From the **Select table** drop-down list, select the name of the table in Demand planning that you want to import data into using this profile. Then select **Next**.
 
-1. The **Configure provider** page opens. The settings on this page let you choose the file you want to import and then send it to Power Query, where you can transform the data and map the columns from the source document to the selected Demand planning table. The connection, transformation, and mapping features are all provided by Power Query. The procedure differs slightly depending on which Power Query provider you are using, as described in the following list.
+1. The **Configure provider** page opens. The settings on this page let you choose the file you want to import and then send it to Power Query, where you can transform the data and map columns from the source document to the selected Demand planning table. The connection, transformation, and mapping features are all provided by Power Query. The procedure differs slightly depending on which Power Query provider you're using, as described in the following list.
     - **Excel** – For details about how to select the target file, connect to Power Query, and work with data, see [Excel](/power-query/connectors/excel) in the Power Query documentation.
     - **CSV** – For details about how to select the target file, connect to Power Query, and work with data, see [Text/CSV](/power-query/connectors/text-csv) in the Power Query documentation.
-    - **Datalake** – For details about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. Note a datalake must have been previously setup ad indicated on [Datalake setup](https://learn.microsoft.com/en-us/power-query/connectors/data-lake-storage)
+    - **Datalake** – For details about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. A datalake must have been previously setup as described in [Datalake setup](/power-query/connectors/data-lake-storage).
 
 1. When you're done transforming and mapping your data with Power Query, select **Next** to continue to the **Refresh settings** page. Do one of the following steps:
-    - If you want to delete all the data currently in the destination table in Demand planning, select the **Delete all data for the chosen table before import** check box. You might use this option, for example, if the incoming data includes all the required records that are already in your table and/or you have not selected a key fields for the table. This setting guarantees that you won't have any duplicate records but also deletes all the data currently in the target table.
+    - If you want to delete all the data currently in the destination table in Demand planning, select the **Delete all data for the chosen table before import** check box. You might use this option, for example, if the incoming data includes all the required records that are already in your table and/or you haven't selected a key field for the table. This setting guarantees that you won't have any duplicate records but also deletes all the data currently in the target table.
     - If you want to keep all the data currently in the destination table in Demand planning, clear the **Delete all data for the chosen table before import** check box. You might use this option, for example, if the incoming data is an incremental export that only contains new records and/or if you have selected key fields for the table. Incoming records with key field values that match existing records will update those records, while incoming records with unique key field values will create new records. If your key fields aren't configured and mapped correctly, this setting risks creating duplicate records.
 
 1. Select **Next** to continue to the **Review and finish page**. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
