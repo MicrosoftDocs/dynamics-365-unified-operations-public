@@ -10,6 +10,8 @@ ms.custom: bap-template
 ---
 # Set up a legal entity and tax information for Nicaragua
 
+[!include [banner](../../includes/banner.md)]
+
 This article explains how to set up a legal entity and tax information for a company that's located in Nicaragua and is using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 
 Before you begin, open the **Feature management** workspace, and verify that the **LATAM globalization expansion – Nicaragua** feature is enabled. If it isn't enabled, enable it. After you're sure that the feature is enabled, complete the following procedures.
@@ -37,3 +39,6 @@ Before you begin, open the **Feature management** workspace, and verify that the
     - In the **Country document type** field, select **RUC**.
     - Complete the country document number, including the tax ID number of the company.
     - In the **Concept and notes** section, in the first field, enter the company activity.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
