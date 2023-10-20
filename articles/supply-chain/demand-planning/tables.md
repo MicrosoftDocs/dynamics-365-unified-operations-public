@@ -51,23 +51,17 @@ Local columns named **Operation Site ID** and **Site Location ID** have also bee
 
 You can derive site IDs by applying a warehouse location ID to the historical demand.
 
-To import warehouses from Supply Chain Management, export an Excel file from the **Warehouses** data entity in Supply Chain Management and then import that file into Demand planning.
-
 ### Customer Accounts table
 
 **Customer Accounts** is a new table that lets you import customers and related details such as customer group, address information (such as country/region), and so on.
 
 This table lets you generate forecasts based on customer, customer group, and/or customer country/region.
 
-To import customer accounts from Supply Chain Management, export an Excel file from the **Customer definitions** data entity in Supply Chain Management and then import that file into Demand planning.
-
 ### Legal Entity table
 
 The **Legal Entity** table stores information about legal entities and related details. You'll usually import this data from Supply Chain Management.
 
 This table lets you generate forecasts across legal entities, but also lets you slice forecasts according to the owning legal entity.
-
-To import legal entities from Supply Chain Management, export an Excel file from the **Legal entities** data entity in Supply Chain Management and then import that file into Demand planning.
 
 > [!NOTE]
 > When you export forecasts back into Supply Chain Management for use in supply planning, you must include the **Legal Entity ID** column because supply planning is performed per legal entity in Supply Chain Management.
@@ -82,17 +76,11 @@ You can forecast on products and product variants as a hierarchy, which means yo
 
 You can add columns for color ID, size ID, style ID, and configuration ID to the forecast. This will allow you to slice the forecast across products variants. For example, you could forecast demand for all silver LCD TVs across sizes.
 
-To import products from Supply Chain Management, export an Excel file from the **Distinct products or product variants** data entity in Supply Chain Management and then import that file into Demand planning. This entity is only available in Supply Chain Management version 10.0.32 and later.
-
 ### Historical Demand table
 
 The **Historical Demand** table stores information about historical demand in the form of orders. Each order includes a buyer and seller, which caters both to external sales and inter-company trade. An order can also be internal (same buyer and seller). You'll usually import this data from Supply Chain Management.
 
 The **Historical Demand** table includes an **Order Type** column, which classifies the origin of the demand (*Sales*, *Transfer*, or*Production*). Sales returns are classified as sale with a negative quantity.
-
-When you install and enable Demand planning, a new data entity named **HistoricalSalesDemandEntity** is added to Supply Chain Management. This entity lets you export historical sales based on the data available on the Sales packing slip.  
-
-To import historical sales from Supply Chain Management, export an Excel file from the **HistoricalSalesDemandEntity** data entity in Supply Chain Management and then import that file into Demand planning. This entity is only available in Supply Chain Management version 10.0.32 and later.
 
 ## Create or edit a table and its columns and relationships
 
@@ -155,3 +143,13 @@ To delete all the records in a table, follow these steps:
 1. In the **Name** column, select the name of the target table.
 1. On the Action Pane, select **Delete Data**.
 1. Select **OK** to confirm the deletion.
+
+## Import data from Supply Chain Management
+
+You can easily import data from Dynamics 365 Supply Chain Management into the standard tables by using the Finance and Operations connector. By default, all system (standard) entities will be selected as well as its fields automapped. 
+
+You can edit any relationship, unmap fields or add custom field mappings as needed. Note that to import a custom field, you must have added the custom field in the standard table first. 
+
+When you create an import job, an export data project is created in Supply Chain Management for the needed data entities. 
+
+
