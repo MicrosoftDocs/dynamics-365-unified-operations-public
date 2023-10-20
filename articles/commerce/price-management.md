@@ -33,7 +33,7 @@ The following terms are used in this article.
 
 ## Price groups
 
-Price groups are at the heart of price and discount management in Commerce. Price groups are used to assign prices and discounts to Commerce entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you'll use them before you start.
+Price groups are at the heart of price and discount management in Commerce. Price groups are used to assign prices and discounts to Commerce entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you use them before you start.
 
 By itself, a price group is just a name, a description, and, optionally, a pricing priority. The main point to remember about price groups is that they're used to manage the many-to-many relationships that discounts and prices have with Commerce entities.
 
@@ -45,13 +45,13 @@ When you create price groups, you shouldn't use a single price group for multipl
 
 As the red dashed line in the illustration shows, Commerce does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations. 
 
-Note that if the price group is set on the customer, then this price group gets associated to the sales order header of the orders created for this customer. If the user changes the price group on the order header, then the old price group gets replaced with the new price group only for the current order. For example, the old price group won't affect the current order, but it is still associated to the customer for future orders.
+If the price group is set on the customer, then this price group gets associated to the sales order header of the orders created for this customer. If the user changes the price group on the order header, then the old price group gets replaced with the new price group only for the current order. For example, the old price group won't affect the current order, but it's still associated to the customer for future orders.
 
 The following sections provide more information about the Commerce entities that you can use to set distinct prices when the price groups are used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to set the price groups on the entities first, because this step is likely to be a one-time setup that is done during implementation. Then, as prices and discounts are created, you can set the price groups on those prices and discounts individually.
 
 ### Channels
 
-In the commerce industry, it's very typical to have different prices in different channels. The two primary factors that affect channel-specific prices are costs and local market conditions.
+In the commerce industry, it's typical to have different prices in different channels. The two primary factors that affect channel-specific prices are costs and local market conditions.
 
 - **Costs** – The farther away a channel is from the product source, the more it costs to stock a product. For example, fresh produce has a limited shelf life and specific production requirements (for example, a growing season). During the winter, fresh lettuce likely costs more in northern climates than in southern climates. If you're setting prices for channels over a large geographical area, you'll probably want to set different prices in different channels.
 - **Local market conditions** – A store that has a direct competitor across the street is much more price-sensitive than a store that doesn't have a direct competitor nearby.
@@ -64,7 +64,7 @@ Although affiliations are most often associated with discounts, you can also use
 
 ### Loyalty programs
 
-In relation to prices and discounts, loyalty programs are basically just an affiliation that has a special name. Both prices and discounts can be set for a loyalty program, just as they can be set for an affiliation. However, the way that customers get loyalty pricing during a transaction or order differs from the way that they get affiliation pricing. Customers can get loyalty pricing only if a loyalty card is added to a transaction. When a loyalty card is added to a transaction, the loyalty program is also added. The loyalty program then enables special prices and discounts.
+In relation to prices and discounts, loyalty programs are an affiliation that has a special name. Both prices and discounts can be set for a loyalty program, just as they can be set for an affiliation. However, the way that customers get loyalty pricing during a transaction or order differs from the way that they get affiliation pricing. Customers can get loyalty pricing only if a loyalty card is added to a transaction. When a loyalty card is added to a transaction, the loyalty program is also added. The loyalty program then enables special prices and discounts.
 
 Loyalty programs can have multiple tiers, and the discounts can differ for different tiers. In this way, retailers can give frequent customers larger rewards without having to manually put those customers into a special group.
 
@@ -88,9 +88,9 @@ The price and a discount can come from two different pricing priorities, because
 
 To use pricing priority for prices, you must assign a pricing priority to a price group and then create a sales price trade agreement for that price group.
 
-The pricing priority feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or because the local market bears a higher price.
+The pricing priority feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, if a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or because the local market bears a higher price.
 
-As was described in the "Best price" section of this article, the pricing engine typically selects the lower of two prices. Therefore, the retailer is usually prevented from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the pricing priority feature was introduced, the retailer had to define prices for every product two times and not assign both price groups. Alternatively, the retailer had to create extra price groups to isolate the products that have higher prices from products that have the usual, lower prices.
+As was described in the "Best price" section of this article, the pricing engine typically selects the lower of two prices. Therefore, the retailer is prevented from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the pricing priority feature was introduced, the retailer had to define prices for every product two times and not assign both price groups. Alternatively, the retailer had to create extra price groups to isolate the products that have higher prices from products that have the usual, lower prices.
 
 However, the pricing priority feature lets the retailer create a pricing priority for store prices that is higher than the pricing priority for regional prices. Alternatively, the retailer can create a pricing priority just for store prices and leave regional prices at the default pricing priority, which is 0 (zero). Both setups help guarantee that store prices are always used before regional prices.
 
@@ -100,7 +100,7 @@ Let's look at an example where store prices override other prices.
 
 A national/regional retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
 
-For this example, we'll drill into the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
+For this example, we'll use the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
 
 The retailer sets up two pricing priorities: High cost has a priority number of 5, and Store prices has a priority number of 10. (Remember that, by default, the pricing priority is 0 \[zero\], and a price or discount that has a higher priority number is used before a price or discount that has a lower priority number.) For the North East price group, the pricing priority is left at the default value of **0** (zero). For the NYC price group, the pricing priority is set to **5**, because New York City is a high-cost market. For the Store 1 and Store 2 price groups, the pricing priority is set to **10**.
 
@@ -217,7 +217,7 @@ The Commerce pricing engine **doesn't support** the following pricing features:
 
 - Attribute-based pricing isn't supported.
 - Vendor discount pass-through isn't supported.
-- The generic currency feature isn't supported i.e. even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement is only considered valid for the currency defined on the trade agreement.
+- The generic currency feature isn't supported that is, even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement is only considered valid for the currency defined on the trade agreement.
 - The standard Supply Chain Management pricing engine supports the pricing calculation based on the "Requested ship date" and "Requested receipt date" along with the current date. However, retail pricing currently doesn't support these values. The reason is that for B2C scenarios customers don't expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations, it's common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing kicks in only if the application user is added as a call center user, so the retailers can assign certain users who work with the Supply Chain Management pricing and assign a few that work with the Retail pricing, that is, these users should be added as call center users. Additionally, the **Use today's date for calculating prices** property in the **Commerce parameters > pricing and discounts > Miscellaneous** section must be turned on. This way they can keep the using accounts receivable parameter value for Requested ship date or Requested receipt date for Supply Chain Management pricing, but the retail pricing keeps using the today's date for pricing calculation.
 - For trade agreements, **only** below dimensions are supported in the Commerce pricing engine:
   - Product dimensions: Size, Style, Color, and  Configuration.
@@ -233,7 +233,7 @@ In addition, **only** the Commerce pricing engine supports the following pricing
 
 Price is one of the most important factors that controls the buying decisions of many customers, and many customers compare prices on various sites before they make a purchase. To help ensure that they provide competitive prices, retailers carefully watch their competitors and often run promotions. To help these retailers attract customers, it's very important that product search, the browse feature, lists, and the product details page show the most accurate prices.
 
-The **GetActivePrices** application programming interface (API) in Commerce returns prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers pays for items. This API includes all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API returns the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity expires soon.
+The **GetActivePrices** application programming interface (API) in Commerce returns prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers pay for items. This API includes all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API returns the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity expires soon.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
