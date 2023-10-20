@@ -2011,6 +2011,22 @@
           href: demand-planning/tables.md
         - name: Import data into Demand planning
           href: demand-planning/import-data.md
+      - name: Transform data
+        href: demand-planning/transform-data.md
+      - name: Calculations
+        items:
+        - name: Work with calculation profiles
+          href: demand-planning/calculation-profiles.md
+        - name: Design calculation models
+          href: demand-planning/design-calculation-models.md
+      - name: Forecasts
+        items:
+        - name: Work with forecast profiles
+          href: demand-planning/forecast-profiles.md
+        - name: Design forecast models
+          href: demand-planning/design-forecast-models.md
+
+
     - name: Mobile app (Deprecated)
       items:
       - name: Mobile app home page

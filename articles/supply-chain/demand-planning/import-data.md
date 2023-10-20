@@ -17,15 +17,13 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-You can import data from a variety of sources and file types, including directly from Supply Chain Management or by importing text files in Microsoft Excel or CSV format. You can also import data stored in an Azure data lake.  
-
-You can use Power Query to transform the data before importing it into Demand planning if needed.
+You can import data from a variety of sources and file types, including directly from Supply Chain Management or by importing text files in Microsoft Excel or CSV format. You can also import data stored in an Azure data lake. You can use Power Query to transform the data before importing it into Demand planning if needed.
 
 The Demand planning app lets you build a collection of *import profiles*, each of which imports data from a specific external source into one or more specific tables in Demand planning. Typically, a manager or system administrator will create the initial collection required profiles and, after that, forecasters and other users will be able to run the profiles to update the data as needed.
 
-It is also possible to import your custom data entities into tables or custom fields that you may have extended in the standard tables without the need for a developer, doing it from the standard user interface.
+It is also possible to import your custom data entities into custom tables or add custom fields that you may have extended in the standard tables without the need for a developer, doing it from the standard user interface.
 
-## View and run existing data import profiles
+## <a name="existing-import-profiles"></a>View and run existing data import profiles
 
 You only need to import data as often as the relevant data changes in the external systems. Some profiles will only need to be run occasionally, while others might be run nearly every time a user works with the app.
 
@@ -38,7 +36,6 @@ To refresh your data by running an existing data import profile, follow these st
 1. The detail page opens for your selected profile. It provides the following tabs:
 
     - **Summary** – Provides basic information about the profile. If you like, you can edit the **Name** and/or **Description** to make the profile easier to identify and work with.
-
     - **Jobs** – Shows a list of each time the profile was run, include date information, job status, the provider used, the table updated, and the number of records imported. Links are provided for more information.
 
 1. To run the profile, select **Run** on the Action Pane. This command adds a new row to the grid on the **Jobs** tab, where you can follow the status of the new import. The page doesn't refresh automatically, so you must select **Refresh** in the grid toolbar to refresh the status information.
@@ -49,8 +46,7 @@ Each time your organization needs to run a new type of data import, a manager or
 
 Each data import profile makes use of a *data provider*, which is optimized for importing from a specific type of external data source or file type. The following types of data providers are currently available:
 
-- **Power Query providers** – Each of these providers import data from a specific type of file ((CSV, Excel, and Azure data lake storage) through Power Query, which enables you to transform and map the data for the relevant table in Demand planning.
-
+- **Power Query providers** – Each of these providers import data from a specific type of file (CSV, Excel, or Azure data lake storage) through Power Query, which enables you to transform and map the data for the relevant table in Demand planning.
 - **Microsoft finance and operations apps** – Connects directly to Dynamics 365 Supply Chain Management (or another Microsoft finance and operations app) and imports data provided by one or more data entities into the relevant tables in Demand planning.
 
 ### Create an import profile for importing directly from Supply Chain Management
@@ -75,7 +71,7 @@ Follow these steps:
 
 1. The **Review and finish page** opens. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 
-1. You return to the **Active Import Data Profiles** page, which now shows your new profile in the list. The profile is now available but hasn't run yet. To run it, follow the instructions in [Work with existing data import profiles](view-and-run-existing-data-import-profiles.md).
+1. You return to the **Active Import Data Profiles** page, which now shows your new profile in the list. The profile is now available but hasn't run yet. To run it, follow the instructions in [View and run existing data import profiles](#existing-import-profiles).
 
 ### Create an import profile for importing from exported files through Power Query
 
@@ -102,5 +98,4 @@ To import from a text or spreadsheet file exported from an external system, crea
 
 1. Select **Next** to continue to the **Review and finish page**. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 
-1. You return to the **Active Import Data Profiles** page, which now shows your new profile in the list. The profile is now available but hasn't run yet. To run it, follow the instructions in [Work with existing data import profiles](view-and-run-existing-data-import-profiles.md).
-
+1. You return to the **Active Import Data Profiles** page, which now shows your new profile in the list. The profile is now available but hasn't run yet. To run it, follow the instructions in [View and run existing data import profiles](#existing-import-profiles).

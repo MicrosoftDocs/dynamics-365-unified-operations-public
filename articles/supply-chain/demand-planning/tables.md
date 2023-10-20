@@ -117,7 +117,7 @@ To create or edit a table, follow these steps:
 1. Open the **Columns** tab. Here you can see the name, data type, and system status of each column. Use buttons on the toolbar to add new columns or delete existing non-system columns. Each column must have a **Name** and a **Data Type**.
 
     > [!NOTE]
-    > To be able to transform a table and its data into a time series, the table must include at least three types of columns:
+    > To be able to transform a table and its data into a time series, the table must include at least three columns, one each of the following types:
     >
     > - 1 *timestamp* column (DateTime)
     > - 1 *measure* column (Decimal or Integer)
