@@ -164,7 +164,7 @@ Under new guidelines of the Companies Act, the books of accounts and other relev
 * Databases are protected by automatic backups that are kept for 28 days. The backups include data from the database's production and sandbox environments. 
 * Administrators of a finance and operations apps tenant can't directly access or manage these backups, because they're automatically managed by Microsoft. In Lifecycle Using the **Services admin center**, an administrator can view evidence about which finance and operations apps environments have daily backups enabled, and may capture a screenshot of this on a daily basis to create a log of such evidence. 
 * Administrators in Lifecycle Services admin center may use the [Environment Metadata API](../../../fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata.md) to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis.  This can be done using any software which supports HTTP and RESTful APIs.
-* Administrators can also restore their environments to a specific point in time in the past by using Lifecycle Services admin center. For more information, see [Restoring an environment in the Admin center](dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
+* Administrators can also restore their environments to a specific point in time in the past by using Lifecycle Services admin center. For more information, see [Restoring an environment in the Admin center](../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
