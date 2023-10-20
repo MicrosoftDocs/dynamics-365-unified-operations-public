@@ -2,7 +2,7 @@
 title: Configure electronic invoice parameters for Panama
 description: This article explains how to generate electronic invoices in XML format for Panama.
 author: Fhernandez0088
-ms.date: 10/18/2023
+ms.date: 10/20/2023
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-federicohe
