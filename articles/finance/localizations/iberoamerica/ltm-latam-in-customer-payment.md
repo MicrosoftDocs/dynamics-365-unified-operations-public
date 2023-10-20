@@ -36,7 +36,7 @@ Use the **Payment method** page to select one or more payment methods for the sa
 ### Use Bank transfer
 Follow these steps to select a bank transfer payment.
 
-1. On Action Pane, select **LATAM**, and then select **Payment methods**.
+1. In the customer payment, On Action Pane, select **LATAM**, and then select **Payment methods**.
 2. On the **Payment method** page, select **New**.
 3. In the **Document class id.** field, select **TRB** as the Document class Id for a bank transfer. To learn more, see [Document classes for Latin America](ltm-core-document-class.md).
 4. In the **Account number** field, select a bank account.
@@ -46,7 +46,7 @@ Follow these steps to select a bank transfer payment.
 ### Use customer checks
 Follow these steps to record customer checks. You can use them for current date checks and post-dated checks. Entering these values is similar for both and has the same impact on the customer account. The only difference is the entry of more data.
 
-1. On the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. In the customer payment, On the Action Pane, select **LATAM**, and then select **Payment methods**.
 2. On the **Payment method** page, select **New**.
 3. In the **Document class id.** field, select a document class ID that represents customer checks. To learn more, see [Document classes for Latin America](ltm-core-document-class.md).
 4. In the **Document Number** field, enter the customer's check number.
