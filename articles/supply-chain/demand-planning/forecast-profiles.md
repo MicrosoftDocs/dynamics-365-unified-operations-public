@@ -76,7 +76,7 @@ To create or edit a forecast profile, follow these steps:
 
 1. When you're done selecting the input time series, select **Next.**
 
-1. The **Select a forecasting model preset** page opens. Here, you can select a forecast model preset to use with your current profile. Browse the various presets listed under the **Available model presets** heading to see a preview of the forecast made by that preset. You'll be able to make settings and customize the forecast model as needed after you save the profile, so just pick the preset that's closest to what you're looking for and then select **Next**. For details about how to make settings and customize the forecast model used by a profile, and how to create new presets, see [Designing forecast models](designing-forecast-models.md).
+1. The **Select a forecasting model preset** page opens. Here, you can select a forecast model preset to use with your current profile. Browse the various presets listed under the **Available model presets** heading to see a preview of the forecast made by that preset. You'll be able to make settings and customize the forecast model as needed after you save the profile, so just pick the preset that's closest to what you're looking for and then select **Next**. For details about how to make settings and customize the forecast model used by a profile, and how to create new presets, see [Designing forecast models](design-forecast-models.md).
 
 1. The **Review and finish page** opens. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 

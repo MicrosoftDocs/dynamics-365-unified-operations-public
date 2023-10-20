@@ -2004,7 +2004,7 @@
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
       - name: Install and enable the Demand planning app
-        href: demand-planning/install-demand-planning-app.md
+        href: demand-planning/install-demand-planning.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data

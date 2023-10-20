@@ -19,7 +19,7 @@ ms.custom: bap-template
 
 Transformations allow you to select a table that holds imported data and transform that data into time series, which you can use to create a forecast, compare to a forecast, or make calculations.
 
-For example, you may want to time shift the historical demand time from last year by 12 months so it can be used as the base for the forecast for next year. Or you may want to combine historical demand data that is daily into monthly buckets because you run planning on a monthly basis.
+For example, you might want to time shift the historical demand time from last year by 12 months so it can be used as the base for the forecast for next year. Or you might want to combine historical demand data that is daily into monthly buckets because you run planning on a monthly basis.
 
 Demand planning lets you build a collection of *transformation profiles*, each of which transforms data from a specific data table already set up in the app into a time series that you can analyze using the app.
 
@@ -28,7 +28,7 @@ Each transformation profile takes a selected [main table](tables.md) as its inpu
 - The main table typically represents historical demand, such as sales orders.
 - The main table must include a *timestamp* column, which will become the X-axis of the output time series. This will typically be the order date or delivery date.
 - The main table must include a *measure* column, which will become the Y-axis of the output time series. This will typically represent units sold.
-- Either the main table or one of its related tables must include at least one dimension column. Often you'll select more than one dimension because that will let you analyze the data in several ways. For example, if you are looking at T-shirts, you might include dimensions for color dimension, size, style, and warehouse. These dimensions would allow you to view the output time series to see, for example, the historical demand for red, extra-large T-shirts sold from the Chicago warehouse and compare that with the overall sales of all T-shirts from all warehouses.
+- Either the main table or one of its related tables must include at least one dimension column. Often you'll select more than one dimension because that will let you analyze the data in several ways. For example, if you're looking at T-shirts, you might include dimensions for color dimension, size, style, and warehouse. These dimensions would allow you to view the output time series to see, for example, the historical demand for red, extra-large T-shirts sold from the Chicago warehouse and compare that with the overall sales of all T-shirts from all warehouses.
 
 Typically, a manager or system administrator will create the initial collection required profiles and, after that, forecasters and other users will be able to run the profiles to update the time series as needed.
 
@@ -43,7 +43,7 @@ To refresh your time series by running an existing transformation profile, follo
 1. Find the profile for the type of transformation you want to run and select the link in its **Name** column.
 
 1. The detail page opens for your selected profile. It provides the following tabs:
-    - **Summary** – Provides basic information about the profile. If you like, you can edit the **Name** and/or **Description** to make the profile easier to identify and work with. You can also change the **Owner** and adjust the **Time Bucket** but usually you shouldn't change these for existing profiles. See [Create and manage transformation profiles](#create-transformation-profiles) for more information about these settings.
+    - **Summary** – Provides basic information about the profile. If you like, you can edit the **Name** and/or **Description** to make the profile easier to identify and work with. You can also change the **Owner** and adjust the **Time Bucket** but usually you shouldn't change these for existing profiles. For more information about these settings, see [Create and manage transformation profiles](#create-transformation-profiles).
     - **Transformations** – Shows details about the transformation that the profile will process. See [Create and manage transformation profiles](#create-transformation-profiles) for more information about these settings.
     - **Jobs** – Shows a list of each time the profile was run, include date information, job status, and the times series that was updated. Select the link in the **Time Series** column to open the time series.
 
@@ -67,7 +67,7 @@ To create or edit a transformation profile, follow these steps:
 
 1. Select **Next**.
 
-1. The **Configure transformation** page opens. This is where you will select a table and then map the columns of that table, and its related tables, to transform the data into a timeline.
+1. The **Configure transformation** page opens. Select a table and then map the columns of that table, and its related tables, to transform the data into a timeline.
     - The grid shows a row for each column output by the transformation.
     - Buttons on the toolbar let you add new columns, remove a column selected in the grid, or reset the grid entirely.
     - You can only select a single main table at a time. If you need to change the main table, then you must reset the grid.
@@ -86,7 +86,7 @@ To create or edit a transformation profile, follow these steps:
 
     Each time you add a data column, it's added to the list in the right column of the dialog, which lets you see your previous selections even while you explore the various tables. The order in which you selected the dimensions is reflected under the **Dimension** heading here.
 
-    Select **OK** when you are done selecting data columns.
+    Select **OK** when you're done selecting data columns.
 
 1. The **Review and finish page** opens. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 
