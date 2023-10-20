@@ -4,7 +4,7 @@
 title: Commerce pricing APIs
 description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
-ms.date: 03/20/2023
+ms.date: 10/20/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -23,7 +23,7 @@ This article describes various pricing APIs that are provided by the Microsoft D
 The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that can be consumed by external applications to support various pricing scenarios:
 
 - **GetActivePrices** – This API gets a product's calculated price, including simple discounts.
-- **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they are bought together.
+- **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they're bought together.
 - **GetAvailablePromotions** – This API gets applicable discounts for products in the cart. 
 - **AddCoupons** – This API adds coupons to a cart.
 - **RemoveCoupons** – This API removes coupons from a cart.
@@ -112,7 +112,7 @@ The following table shows the input parameters for the *GetActivePrices* API.
 
 ## CalculateSalesDocument
 
-The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they are bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
+The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they're bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
 
 The main use case for the *CalculateSalesDocument* API is the pricing calculation in scenarios where full cart context doesn't persist (such as sales quotations). Scenarios in point of sale (POS) and Commerce e-commerce can also benefit from this use case. A lower total price when cart items are calculated as a set (for example, for discrete bundles, linked or recommended products, or products that have already been added to the cart) might persuade customers to add products to the cart.
 
