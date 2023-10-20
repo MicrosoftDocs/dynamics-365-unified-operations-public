@@ -2292,6 +2292,8 @@
             href: localizations/denmark/emea-dnk-eu-sales-list.md
           - name: Customer electronic invoices in Denmark
             href: localizations/norway/emea-dnk-e-invoices.md
+          - name: Vendor electronic invoice import in Denmark
+            href: localizations/denmark/emea-dnk-vend-e-invoice.md
           - name: Post a free text invoice with a payment slip
             href: localizations/denmark/post-free-text-invoice-payment-slip.md
           - name: Post a project invoice with a payment slip
