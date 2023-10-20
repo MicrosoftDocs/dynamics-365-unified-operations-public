@@ -12,7 +12,6 @@ ms.custom: bap-template
 # Configure electronic invoice parameters for Costa Rica
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to configure the information that's required to generate the electronic invoice XML for Costa Rica.
 
