@@ -11,6 +11,8 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Nicaragua
 
+[!include [banner](../../includes/banner.md)]
+
 The Nicaraguan customer and vendor configuration contains the fiscal information that's required by the fiscal authorities. The configuration also includes a reference to the document classes that can be used in transactions with customers and vendors.
 
 ## Prerequisites
@@ -69,3 +71,6 @@ Before you create records for customers and vendors who are located in Nicaragua
     - In the **Based in country/region** field, select **Nicaragua**.
     - In the **Country document type** field, select a tax ID type. For example, select **RUC**.
     - Complete the **Country document number** field with the vendor's tax ID number.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
