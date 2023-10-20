@@ -41,6 +41,8 @@ Demand planning provides functionality for the complete demand planning process,
 
 1. **Import data** – Import your historical data, products, sites, warehouses, prices etc to the Demand Planning app.
 
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1dwCZ]
+
 1. **Create transformation** – Transform imported data from tables into time series by identifying data columns, choosing time buckets, and shifting dates. For example, you can shift historical data from last year to next year to be used as a base for the forecast, apply multiplications, or combine the data from different systems.
 
 1. **Create forecasts** – Use different forecasting models to create a forecast, including your own Azure Machine Learning model if you'd like, or let AI find out for you which forecast model works best.

@@ -25,7 +25,7 @@ To create and customize a calculation model, you must start by opening an existi
 
 Follow these steps to create and customize a calculation model:
 
-1. On the navigation pane, select **Data Creation \> Calculations**.
+1. On the navigation pane, select **Operations \> Calculations**.
 
 1. Select the calculation profile that you want to create or customize a calculation model for and then open the **Calculation Model** tab.
 

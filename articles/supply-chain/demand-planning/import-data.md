@@ -29,7 +29,7 @@ You only need to import data as often as the relevant data changes in the extern
 
 To refresh your data by running an existing data import profile, follow these steps:
 
-1. On the navigation pane, select **Data Providers \> Import**.
+1. On the navigation pane, select **Data management \> Import**.
 
 1. Find the profile for the type of import you want to run and select the link in its **Name** column.
 
@@ -53,11 +53,9 @@ Each data import profile makes use of a *data provider*, which is optimized for 
 
 To import directly from Supply Chain Management (and other Microsoft finance and operations app), create an import profile that uses the *Microsoft finance and operations apps* data provider.
 
-It is a pre-requisite that your Demand Planning app and your Supply Chain Management are connected so they can be used for both import and export. Follow the instructions in the Get started page for connecting both.
-
 Follow these steps:
 
-1. On the navigation pane, select **Data Providers \> Import**.
+1. On the navigation pane, select **Data management \> Import**.
 
 1. On the Action Pane, select **New**.
 
@@ -77,7 +75,7 @@ Follow these steps:
 
 To import from a text or spreadsheet file exported from an external system, create an import profile that uses one of the *Power Query* data providers. The provider you choose must match the format of the exported file, but the procedure is the same. Follow these steps:
 
-1. On the navigation pane, select **Data Providers \> Import**.
+1. On the navigation pane, select **Data management \> Import**.
 
 1. On the Action Pane, select **New**.
 

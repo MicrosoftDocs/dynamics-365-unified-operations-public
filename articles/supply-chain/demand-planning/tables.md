@@ -21,7 +21,7 @@ Data imported into Demand planning must be loaded into tables that are set with 
 
 ## View tables
 
-To see the full list of tables available to the Demand planning app, select **Tables** on the navigation pane. Here, each table is listed by name.
+To see the full list of tables available to the Demand planning app, select **Data management \> Tables and data** on the navigation pane. Here, each table is listed by name.
 
 - The **Name** columns shows the name of each table. Select a table name to view and edit details about that table, including column definitions, relationships, and data.
 - The **Is System** column tells whether each table is a standard table provided by the system or a custom table added by a user. It shows one of the following values:
@@ -100,7 +100,7 @@ You can create your own non-system tables or extend system tables by adding extr
 
 To create or edit a table, follow these steps:
 
-1. On the navigation pane, select **Configurations &gt; Tables**.
+1. On the navigation pane, select **Data management \> Tables and data**.
 
 1. Do one of the following steps:
     - To add a new non-system table, select **New** from the Action Pane.
@@ -153,7 +153,7 @@ If necessary, you can delete all the records from a selected table while keeping
 
 To delete all the records in a table, follow these steps:
 
-1. On the navigation pane, select **Configurations &gt; Tables**.
+1. On the navigation pane, select **Data management \> Tables and data**.
 1. In the **Name** column, select the name of the target table.
 1. On the Action Pane, select **Delete Data**.
 1. Select **OK** to confirm the deletion.

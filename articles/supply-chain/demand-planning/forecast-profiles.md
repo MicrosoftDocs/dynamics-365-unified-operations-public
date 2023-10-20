@@ -25,7 +25,7 @@ Typically, a manager or system administrator will create the initial collection 
 
 To generate a new forecast by running an existing forecast profile, follow these steps:
 
-1. On the navigation pane, select **Forecasts \> Forecast Profiles**.
+1. On the navigation pane, select **Operations \> Forecast profiles**.
 
 1. Find the profile for the type of forecast you want to run and select the link in its **Name** column.
 
@@ -53,7 +53,7 @@ Each time your organization requires a new type of forecast, a manager or admin 
 
 To create or edit a forecast profile, follow these steps:
 
-1. On the navigation pane, select **Forecasts &gt; Forecast Profiles**.
+1. On the navigation pane, select **Operations \> Forecast profiles**.
 
 1. On the Action Pane, select **New**.
 

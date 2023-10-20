@@ -38,7 +38,7 @@ You only need to run a transformation profile as often as you import new data in
 
 To refresh your time series by running an existing transformation profile, follow these steps:
 
-1. On the navigation pane, select **Data Creation \> Transformations**.
+1. On the navigation pane, select **Operations \> Transformations**.
 
 1. Find the profile for the type of transformation you want to run and select the link in its **Name** column.
 
@@ -55,7 +55,7 @@ Each time your organization requires a new type of data transformation, a manage
 
 To create or edit a transformation profile, follow these steps:
 
-1. On the navigation pane, select **Data Creation &gt; Transformation**.
+1. On the navigation pane, select **Operations \> Transformations**.
 
 1. On the Action Pane, select **New**.
 

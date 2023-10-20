@@ -2025,8 +2025,10 @@
           href: demand-planning/forecast-profiles.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
-
-
+      - name: Time series and planning data
+        href: demand-planning/time-series.md
+      - name: Export and download data
+        href: demand-planning/export-data.md
     - name: Mobile app (Deprecated)
       items:
       - name: Mobile app home page

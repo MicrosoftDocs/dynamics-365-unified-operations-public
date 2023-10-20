@@ -1,2 +1,0 @@
-﻿# Manage data export profiles
-

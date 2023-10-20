@@ -21,7 +21,11 @@ This article describes how to install, enable, and set up the Demand planning ap
 
 ## Prerequisites
 
-To use Demand planning with Supply Chain Management, you must be running Supply Chain Management version 10.0.38 or later.
+To use Demand planning with Supply Chain Management, you must be running one of the following versions of Supply Chain Management:
+
+- Supply Chain Management version 10.0.36, build 10.0.1695.83
+- Supply Chain Management version 10.0.37, build 10.0.1725.60
+- Supply Chain Management version 10.0.38 (any build) or later
 
 ## Install the Demand planning app in Power Platform admin center
 
