@@ -3502,6 +3502,16 @@
             href: localizations/mea/oman.md
           - name: VAT declaration for Oman (OM-00003)
             href: localizations/mea/emea-oma-vat-declaration.md
+        - name: Panama
+          items: 
+          - name:	Configure electronic invoice parameters for Panama 
+            href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
+          - name: Set up a legal entity and tax information for Panama 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
+          - name: Create customer and vendor records with an address in Panama
+            href: localizations/iberoamerica/ltm-create-customer-vendor-panama.md
+          - name: Configure sales and purchase invoices for Panama
+            href: localizations/iberoamerica/ltm-configure-invoices-panama.md
         - name: Poland
           items:
           - name: Poland overview
