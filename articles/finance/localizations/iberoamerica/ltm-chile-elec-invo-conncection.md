@@ -74,7 +74,5 @@ To download the XML files of electronic invoices for successfully processed invo
 ## More resources
 
 - [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../global/e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../global/e-invoicing-get-started.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
