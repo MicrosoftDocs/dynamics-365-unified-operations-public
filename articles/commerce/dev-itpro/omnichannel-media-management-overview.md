@@ -2,7 +2,7 @@
 title: Omnichannel media management overview
 description: This article provides an overview of omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 08/01/2023
+ms.date: 10/20/2023
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -74,13 +74,13 @@ To configure omnichannel media management features in your Commerce environments
 ```
 
 > [!NOTE]
-> To migrate existing product images that use the legacy filename-based approach, please open a support request with the title "**Migrate legacy product
+> To migrate existing product images that use the legacy filename-based approach, open a support request with the title "**Migrate legacy product
 images to new omnichannel media data model**."
 >
-> Please also provide the following information to your support engineer:
-> 1) The site builder URL of the source images
-> 2) Which source channel and locale to migrate
-> 3) Whether you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale ([Read here](../assign-media-omnichannel#omnichannel-channel-specific-and-locale-specific-media-assignments) for more details on the new Omnichannel and Neutral locale media assignment default options).
+> Also provide the following information to your support engineer:
+> 1) The site builder URL of the source images.
+> 2) Which source channel and locale to migrate.
+> 3) If you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale. For more details on the new Omnichannel and Neutral locale media assignment default options, see ([Omnichannel, channel-specific, and locale-specific media assignments](../assign-media-omnichannel#omnichannel-channel-specific-and-locale-specific-media-assignments).
 >
 > In the future, migrations will be self-serve using bulk export -> offline customizable PowerShell script -> bulk import. Until this sample PowerShell script is made publicly available, please follow the instructions above to initiate a migration through a support request. 
 
