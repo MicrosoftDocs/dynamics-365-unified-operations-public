@@ -2,7 +2,7 @@
 title: Customer electronic invoices in Germany
 description: This article explains how to get started with Electronic invoicing for Germany in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 10/10/2023
+ms.date: 10/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,8 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented.
-This article explains how to set up and process customer electronic invoices in **xRechnung** format.
+To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented. This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
 ## Prerequisites
 
@@ -36,7 +35,7 @@ Before you complete the tasks in this article, the following prerequisites must 
     3. **Invoice model mapping** (version 288.293)
     
 > [!NOTE]
-> The **Sales Invoice DE** and **Project Invoice DE** format configurations are based on the corresponding **Peppol** format configurations. Those format configurations, in turn, are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
+> The **Sales Invoice DE** and **Project Invoice DE** format configurations are based on the corresponding **Peppol** format configurations. Those format configurations are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
 
 ## Configure parameters
 
@@ -66,21 +65,21 @@ Before you complete the tasks in this article, the following prerequisites must 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Addresses** FastTab, add a valid address for the customer.
 3. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-4. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
-5. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
-6. On the **Sales demographics** FastTab, in the **Primary contact** field, select a person who will be considered the buyer's contact.
+4. Set **eInvoice** to **Yes** to enable electronic invoices to be generated.
+5. Set **eInvoice attachment** to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
+6. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
 
     > [!NOTE]
     > All available contact persons must already be defined for the selected customer.
 
-7. On the **Sales demographics** FastTab, in the **Employee responsible** field, select a person who will be considered the seller's contact.
+7. On the **Sales demographics** FastTab, in the **Employee responsible** field, select the person who is considered the seller's contact.
 
 ### Configure units of measure
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
-4. In the **Standard code** column mark the check box.
+4. In the **Standard code** column, mark the check box.
 5. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
 
     > [!NOTE]
@@ -135,9 +134,9 @@ To inquire about the XML files of electronic invoices that have been generated, 
 
 3. Select **Open** to download the file that contains the electronic invoice.
 
-If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
+   If generating the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
 
-![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
+   ![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
 
 ### Send e-invoices to ER destinations
 
@@ -145,7 +144,7 @@ You can set up ER destinations for electronic invoice formats. In this case, out
 
 For more information about ER destinations, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
-## Additional resources
+## More resources
 
 - [Forced electronic invoices generation](../europe/emea-eur-forced-einvoices.md)
 - [Supported standards for electronic invoicing](../europe/emea-oioubl-standards-electronic-invoicing.md)
