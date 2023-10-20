@@ -74,8 +74,7 @@ To configure omnichannel media management features in your Commerce environments
 ```
 
 > [!NOTE]
-> To migrate existing product images that use the legacy filename-based approach, open a support request with the title "**Migrate legacy product
-images to new omnichannel media data model**."
+> To migrate existing product images that use the legacy filename-based approach, open a support request with the title "**Migrate legacy product images to new omnichannel media data model**."
 >
 > Also provide the following information to your support engineer:
 > 1) The site builder URL of the source images.
