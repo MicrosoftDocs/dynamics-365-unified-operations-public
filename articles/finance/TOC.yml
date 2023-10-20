@@ -3492,6 +3492,14 @@
             href: localizations/new-zealand/apac-nzl-gst-declaration.md
           - name: Customer electronic invoices 
             href: localizations/apac/apac-aus-nzl-e-invoices.md
+        - name: Nicaragua
+          items:
+          - name: Set up a legal entity and tax information for Nicaragua 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-nicaragua.md
+          - name: Configure sales and purchase invoices for Nicaragua 
+            href: localizations/iberoamerica/ltm-configure-invoices-nicaragua.md
+          - name: Create customer and vendor records with an address in Nicaragua 
+            href: localizations/iberoamerica/ltm-create-customer-vendor-nicaragua.md        
         - name: Norway
           items:
           - name: Norway overview
