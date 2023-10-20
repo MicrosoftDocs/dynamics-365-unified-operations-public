@@ -60,13 +60,13 @@ Follow these steps to create and customize a forecast model:
 1. On the navigation pane, select **Operations \> Forecast profiles**.
 1. Select the forecast profile that you want to create or customize a forecast model for and then open the **Forecast model** tab.
 1. There will always be at least one tile (an **Input** tile) at the top of the flow chart. The model is processed from top to bottom, and the last tile must be a **Save** tile. Add, remove, and arrange tiles as needed, and make configuration settings for each of them. See the illustration after this procedure for guidelines.
-1. When you're done designing your forecast model, select the :::image type="icon" source="media/button-validate-model.png" border="false"::: **Validate** button in the top-right corner. The system will run a few tests to make sure your model will work and will then provide feedback. Fix any issues reported by the validation test.
+1. When you're done designing your forecast model, select the **Validate** button :::image type="icon" source="media/button-validate-model.png" border="false"::: in the top-right corner. The system will run a few tests to make sure your model will work and will then provide feedback. Fix any issues reported by the validation test.
 1. Continue working until your model is ready. Then, on the Action Pane, select **Save**.
-1. If you'd like to save your forecast model as a preset, which will be available when you and other users create a new forecast profile, then select the :::image type="icon" source="media/button-save-model-as-template.png" border="false"::: **Save as model template** button in the top-right corner.
+1. If you'd like to save your forecast model as a preset, which will be available when you and other users create a new forecast profile, then select the **Save as model template** button :::image type="icon" source="media/button-save-model-as-template.png" border="false"::: in the top-right corner.
 
 The following illustration highlights the information and controls available for tiles in a forecast model.
 
-:::image type="content" source="media/forecast-flowchart-elements.svg" alt-text="Forecast model elements":::
+:::image type="content" source="media/forecast-flowchart-elements.svg" alt-text="Forecast model elements" lightbox="media/forecast-flowchart-elements.svg":::
 
 Legend:
 

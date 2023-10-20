@@ -25,7 +25,7 @@ To see all your time series, on the navigation pane, select **Planning data \> A
 
 To open a series, select its name in the **Name** column. The following illustration shows the various features of the **Output** tab of time series details page.
 
-:::image type="content" source="media/time-series-elements.svg" alt-text="Time series elements":::
+:::image type="content" source="media/time-series-elements.svg" alt-text="Time series elements" lightbox="media/time-series-elements.svg":::
 
 Legend:
 
@@ -86,7 +86,7 @@ To view the change log and version history for a time series, open the time seri
 
 The following illustration highlights the features of the **Version history** panel.
 
-:::image type="content" source="media/version-history-elements.svg" alt-text="Elements of the version history panel":::
+:::image type="content" source="media/version-history-elements.svg" alt-text="Elements of the version history panel" lightbox="media/version-history-elements.svg":::
 
 Legend:
 
@@ -104,8 +104,8 @@ Legend:
 
 You can add comments to a time series to communicate with other users. For example, you might add an explanation about why you chose to edit certain time series values or how to understand a saved data view. Users can also reply to one another's comments, edit or delete comments, and mark comment threads as resolved.
 
-To view and work with comments, open a time series and select the :::image type="icon" source="media/button-commenting-pane.png" border="false"::: **Commenting Pane** button at the top-right corner of the page. This opens the commenting pane, which shows all comments made so far for the current series. From here, you can do the following actions:
+To view and work with comments, open a time series and select the **Commenting Pane** button :::image type="icon" source="media/button-commenting-pane.png" border="false"::: at the top-right corner of the page. This opens the commenting pane, which shows all comments made so far for the current series. From here, you can do the following actions:
 
 - Select **New** to add a new comment.
-- For exiting comments, select the :::image type="icon" source="media/button-more-actions.png" border="false"::: **More thread actions** button to open a menu where you can choose to edit or delete the selected comment or mark the selected thread as resolved.
+- For exiting comments, select the **More thread actions** button :::image type="icon" source="media/button-more-actions.png" border="false"::: to open a menu where you can choose to edit or delete the selected comment or mark the selected thread as resolved.
 - Reply to an existing comment by entering text in its **Reply** field.
