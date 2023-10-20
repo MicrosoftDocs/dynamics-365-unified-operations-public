@@ -2,7 +2,7 @@
 title: Price adjustments and discounts
 description: This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/11/2021
+ms.date: 10/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,8 +51,11 @@ Both price adjustments and discounts can be associated with price groups. Price 
 > However, the property "Count non-discountable products towards threshold" has an additional capability when compared to the "Count non-discountable products" property of the mix and match discounts. If the threshold discount is enabled, and if there is an item that has an existing discount which would prevent the item from any other discounts, then  the price paid for this item would qualify towards meeting the threshold, but this item will not get the additional discount.
 
 ## Best practices
-#### Mix and match discounts
-To reach optimal pricing calculation performance, it's suggested to **not** configure mix and match discount line groups with *number of products needed* more than 20. You can use a different unit to reduce the quantity. For example, when you're setting a mix and match discount for 200 *capsules* of coffee, it's suggested to use *pack* or *sleeve* as the unit of measure instead.
+
+This section contains best practices you can follow while making price adjustments and discounts.
+
+### Mix and match discounts
+To reach optimal pricing calculation performance, **don't** configure mix and match discount line groups with a *number of products needed* that exceeds 20. You can use a different unit to reduce the quantity. For example, when you're setting a mix and match discount for 200 *capsules* of coffee, it's suggested to use *pack* or *sleeve* as the unit of measure instead.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
