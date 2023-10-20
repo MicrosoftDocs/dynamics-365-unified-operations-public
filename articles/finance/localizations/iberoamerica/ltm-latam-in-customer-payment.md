@@ -31,7 +31,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 ## Add information to the Payment method page
 
-Use the **Payment method** page to select one or more payment methods for the same transaction. After you complete the information on the **LATAM** tab on the customer line, for each payment method to be used, follow the detailed steps in each of the following sections.
+Use the **Payment method** page to select one or more payment methods for the same transaction. In the customer payment journal, after selecting the invoice(s) to be collected and completing the information on the **LATAM** tab, for each payment method you need to use, follow the steps detailed in the sections below.
 
 ### Use Bank transfer
 Follow these steps to select a bank transfer payment.
