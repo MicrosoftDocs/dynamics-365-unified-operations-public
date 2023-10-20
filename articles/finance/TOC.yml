@@ -2250,6 +2250,16 @@
             href: localizations/china/apac-chn-tax-integration-vat-customer-invoices.md   
           - name: GB/T 24589-2010 export
             href: localizations/china/apac-chn-gbt-24589-2010.md
+        - name: Costa Rica
+          items:
+          - name: Configure electronic invoice parameters for Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
+          - name: Set up a legal entity and tax information for Costa Rica  
+            href: localizations/iberoamerica/set-up-legal-entity-tax-costa-rica.md
+          - name: Configure sales and purchase invoices for Costa Rica
+            href: localizations/iberoamerica/ltm-configure-invoices-costa-rica.md
+          - name: Create customer and vendor records with an address in Costa Rica
+            href: localizations/iberoamerica/ltm-create-customer-vendor-costa-rica.md
         - name: The Czech Republic
           items:
           - name: The Czech Republic
