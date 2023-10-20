@@ -37,9 +37,15 @@ The Demand planning app for Dynamics 365 Supply Chain Management is Microsoft's 
 
 Demand planning provides functionality for the complete demand planning process, which proceeds as follows:
 
+1. [Import data](import-data.md)
+1. [Transform data](transform-data.md)
+1. [Create forecasts](forecast-profiles.md)
+1. [Review and adjust forecast](time-series.md)
+1. [Export data](export-data.md)
+
 :::image type="content" source="media/demand-planning-process.png" alt-text="The demand planning process":::
 
-1. **Import data** – Import your historical data, products, sites, warehouses, prices etc to the Demand Planning app.
+1. **Import data** – Import your historical data, products, sites, warehouses, prices, and so on, to the Demand Planning app.
 
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1dwCZ]
 
