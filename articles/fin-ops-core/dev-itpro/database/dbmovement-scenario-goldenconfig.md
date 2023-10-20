@@ -211,9 +211,9 @@ First, sign in to the environment by using the admin account that can be found o
 
 ## Open the environment to users
 
-When the system is configured as you require, you can enable selected users to access the environment. By default, all users except the admin and Microsoft service accounts are disabled.
+User configuration in Sandbox will be copied as-is to Production environment. It is strongly recommended that you configure the users, as you require, in the Sandbox environment before copying to Production, to avoid any unwanted access after the copy is completed.
 
-Go to **System administration** \> **Users** \> **Users**, and enable the users that should have access to the Production environment. If many users must be enabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
+After the copy, if you want to update user access, go to **System administration** \> **Users** \> **Users**, and enable/disable the users to manage the access to Production environment. If many users must be enabled/disabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
 ## Community tools
 
