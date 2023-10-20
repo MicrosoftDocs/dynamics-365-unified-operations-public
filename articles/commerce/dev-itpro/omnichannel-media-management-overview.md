@@ -80,7 +80,7 @@ images to new omnichannel media data model**."
 > Also provide the following information to your support engineer:
 > 1) The site builder URL of the source images.
 > 2) Which source channel and locale to migrate.
-> 3) If you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale. For more details on the new Omnichannel and Neutral locale media assignment default options, see ([Omnichannel, channel-specific, and locale-specific media assignments](../assign-media-omnichannel#omnichannel-channel-specific-and-locale-specific-media-assignments).
+> 3) If you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale. For more details on the new Omnichannel and Neutral locale media assignment default options, see ([Omnichannel, channel-specific, and locale-specific media assignments](assign-media-omnichannel.md#omnichannel-channel-specific-and-locale-specific-media-assignments).
 >
 > In the future, migrations will be self-serve using bulk export -> offline customizable PowerShell script -> bulk import. Until this sample PowerShell script is made publicly available, please follow the instructions above to initiate a migration through a support request. 
 
