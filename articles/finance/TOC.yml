@@ -2189,11 +2189,11 @@
         - name: Chile
           items:
           - name: Configure connections for Chilean electronic invoicing 
-            href: localizations/iberoamerica/ltm-chile-elec-invo-connection.md
+            href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
           - name: Generate and print the Fees certificate report
             href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
           - name: Generate and print the Withholding tax book report for Chile
-            href: localizations/iberoamerica/ltm-chile-wihtholding-book.md
+            href: localizations/iberoamerica/ltm-chile-withholding-book.md
           - name: Print the Inventory and balance report for Chile
             href: localizations/iberoamerica/ltm-chile-inventory-balance-report.md
           - name: Printing configuration for the Chile 8 columns report
