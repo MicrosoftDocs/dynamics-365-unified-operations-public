@@ -1,121 +1,109 @@
 ---
-title: Use Latam functionality for checks 
-description: This article explains how use Latam functionality for checks
+title: Use LATAM functionality for checks 
+description: This article explains how use LATAM functionality for checks.
 author: Cpicon85 
-ms.date: 10/18/2023 
+ms.date: 10/20/2023 
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon 
 ms.custom: bap-template
 ---
 
-# Use Latam functionality for checks 
-## In this article
-1. [Prerequisites]()
-2. [Accrual of own checks]()
-3. [Own checks cancelation]()
-4. [Deposit received check from customer]()
-5. [Re-entry of customer checks]()
+# Use LATAM functionality for checks 
 
-This article explains how to use the LATAM functionality for certain check operations, such as the accrual of own checks, depositing third-party checks, cancellations, or re-entries.
+[!include [banner](../../includes/banner.md)]
+
+This article explains how to use the LATAM functionality for certain check operations, such as the accrual of own checks, depositing third-party checks, cancellations, and re-entries.
 
 ## Prerequisites
-* Enable the **LATAM** globalization feature with a valid country/region
-* Create a document class for each payment method.
-* Go to General ledger > Ledger setup > General ledger parameters, in Ledger tab select in **yes** allow multiple transactions within one voucher option.
+Before you complete the tasks in this article, the following prerequisites must be met.
+
+- Enable the **LATAM** globalization feature with a valid country/region.
+- Create a document class for each payment method.
+- Go to **General ledger** > **Ledger setup** > **General ledger parameters**, and on the **Ledger** tab, select to allow multiple transactions within one voucher option.
 
 ## Accrual of own checks
+Follow these steps to accrual of checks provided by your company.
 
-Follow these steps to accrual of own checks
-1. Go to General ledger > Journal entries > General journals.
-2. On the Action pane, Click **New**.
+1. Go to **General ledger** > **Journal entries** > **General journals**.
+2. On the Action Pane, select **New**.
 3. In **Name** field, select an accrual journal. 
-4. On the Action pane, select **Lines**.
-5. On the Journal page, on the Action Pane, select **LATAM**, and then select Payment methods form.
-6. On the **select payment media** page:
-   - In **Action** field, select **accrual action**.
-   - In the Document class Id field, select a document class id for the type of own check.
-   - Select one or more checks.
-   - Close the page.
-> [!NOTE]
->After closing the page, you could confirm the selection in the verification message.
-Once the checks have been selected, on the payment method page, as many lines will be automatically created as checks have been selected.
-
-
-### Check the transaction in the vendor's account
-
-To check the impact of accruals on transactions made with the vendor, you could enter in vendor account, located in Accounts Payable >> Vendors >> All Vendors >> TRANSACTION TAB. 
-The check that was previously listed as pending with the vendor is settled with the accrual transaction. This process is automatic.
-
-## Own checks cancelation
-In case you need to void own checks, follow these steps, whether they are accrued or not.
-
-1. Go to General ledger > Journal entries > General journals.
-2. On the Action pane, Click **New**.
-3. In **Name** field, select a general journal.
-4. On the Action pane, select **Lines**.
-5. On the Journal page, on the Action Pane, select **LATAM**, and then select Payment methods form.6. 
-6. On the **select payment media** page:
-   - In **Action** field, select **cancelation action**.
-   - In the Document class Id field, select a document class id for the type of own check.
-   - Select one or more checks:
-     1. In **open book** section, for pending accrual of issued checks.
-     2. In **history book** section, For accrued checks.
-7. Close the page.
+4. On the Action Pane, select **Lines**.
+5. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+6. On the **Payment methods** page, in teh **Action** field, select **Accrual action**.
+7. In the **Document class Id** field, select a document class ID for the check type.
+8. Select one or more checks and then close the page.
 
 > [!NOTE]
->After closing the page, you could confirm the selection in the verification message.
-Once the checks have been selected, on the payment method page, as many lines will be automatically created as checks have been selected.
+> After you close the page, confirm the selection in the verification message. After you select the checks, as many lines will be automatically created as checks have been selected on the **Payment methods** page.
 
-## Deposit received check from customer.
-Follow these steps to deposit checks from customers
+
+### Check a transaction in a vendor's account
+
+To check the impact of accruals on transactions made with a vendor, go to **Accounts Payable** > **Vendors** > **All Vendors**. Select and open the vendor record you want to review and select the **Transaction** tab.
+
+If the check was previously listed as pending with the vendor, it's now settled with the accrual transaction. This process is automatic.
+
+## Check cancellation 
+If you need to void checks provided by your company, whether they are accrued or not, complete the following steps.
+
+1. Go to **General ledger** > **Journal entries** > **General journals** and on the Action Pane, select **New**.
+2. In **Name** field, select a general journal.
+3. On the Action Pane, select **Lines**.
+4. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**. 
+5. On the **Payment methods** page, in the **Action** field, select **Cancelation**.
+6. In the **Document class Id** field, select a document class ID for the check type.
+7. Select one or more checks in either the **Open book** section, for the pending accrual of issued checks, or in the **History book** section for accrued checks.
+8. Close the page.
+
+> [!NOTE]
+> After you close the page, confirm the selection in the verification message. After the checks are selected, as many lines will be automatically created as checks have been selected on the **Payment method** page.
+
+## Deposit received check from customer
+Follow these steps to deposit checks from customers.
 
 ### Configure Latam extension from bank account 
 
-1. Go to Cash and bank management > Bank accounts > Bank accounts.
+1. Go to **Cash and bank management** > **Bank accounts** > **Bank accounts**.
 2. Select a bank account.
-3. On the Latam extension, In the Counterpart Behavior field, select an option.
+3. In the **LATAM** extension, in the **Counterpart Behavior** field, select an option.
+
    > [!NOTE]
-   > If you want to record the consolidated deposit of multiple checks, select the **Consolidated** option. For the individual deposit of a single check, select the **Individual** option
+   > To record the consolidated deposit of multiple checks, select **Consolidated**. For the individual deposit of a single check, select **Individual**.
 
 ### Post a check deposit
 
-1. Go to General ledger > Journal entries > General journals.
-2. On the Action pane, Click **New**.
-3. In **Name** field, select an bank deposit journal. 
-4. On the Action pane, select **Lines**.
-5. On the Journal page, on the Action Pane, select **LATAM**, and then select Payment methods form.
-6. On the **select payment media** page:
-   - In **Action** field, select **exit action**.
-   - In the Document class Id field, select a document class id of customer check.
-     - Select one or more checks.
-     - Close the page.
+1. Go to **General ledger** > **Journal entries** > **General journals** and on the Action Pane, select **New**.
+2. In **Name** field, select an bank deposit journal. 
+3. On the Action Pane, select **Lines**.
+4. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+5. On the **Payment methods** page, in the **Action** field, select **Exit action**.
+6. In the **Document class Id** field, select the document class ID of the customer check.
+7. Select one or more checks and then close the page.
 
 > [!NOTE]
->After closing the page, you could confirm the selection in the verification message.
-Once the checks have been selected, on the payment method page, as many lines will be automatically created as checks have been selected.
+> After you close the page, confirm the selection in the verification message. After the checks have been selected, as many lines will be automatically created as checks have been selected on the **Payment method** page.
 
-## Re-entry of customer checks
-In case you need to re-entry customer checks, follow these steps, whether they are deposit or not.
+## Re-entrering customer checks
+If you need to re-enter customer checks, follow these steps. 
 
-1. Go to General ledger > Journal entries > General journals.
-2. On the Action pane, Click **New**.
-3. In **Name** field, select a general journal.
-4. On the Action pane, select **Lines**.
-5. On the Journal page, on the Action Pane, select **LATAM**, and then select Payment methods form.
-6. On the **select payment media** page:
-   - In **Action** field, select **re-entry action**.
-   - In the Document class Id field, select a document class id of customer check.
-   - Select one or more checks:
-     1. In **open book** section, for customer checks not yet deposited.
-     2. In **history book** section, for checks deposited or handed over to vendors.
-7. Close the page.
+1. Go to **General ledger** > **Journal entries** > **General journals** and on the Action Pane, select **New**.
+2. In **Name** field, select a general journal.
+3. On the Action Pane, select **Lines**.
+4. On the **Journal** page, on the Action Pane, select **LATAM**, and then select **Payment methods**.
+5. On the **Payment methods** page, in the **Action** field, select **Re-entry action**.
+6. In the **Document class Id** field, select the document class ID of the customer check.
+7. Select one or more checks. For customer checks that haven't been deposited, select from the **Open book** section. For checks that have been deposited or given to vendors, select from the **history book** section.
+8. Close the page.
 
 > [!NOTE]
->After closing the page, you could confirm the selection in the verification message.
-Once the checks have been selected, on the payment method page, as many lines will be automatically created as checks have been selected.
+> After you close the page, confirm the selection in the verification message. After the checks have been selected,as many lines will be automatically created as checks have been selected on the **Payment methods** page.
 
-## Additional resources
+## More resources
 
 * [Use latam extension in customer payments](ltm-latam-in-customer-payment.md)
 * [Use latam extension in vendor payments](ltm-latam-in-vendor-payment.md)
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
