@@ -18,6 +18,15 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## September 2023
+Release notes for the September 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+**Version:** 1.0.23084.2
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Feature | 24811690 | When resuming a paused dual-write map it is possible that processing queued records before resuming live synchronization can take longer than expected. There is now the option to skip directly to live synchronization of new records when resuming the map, and either move the queued records to asynchronous processing in the **Catch-up errors** list, or discard the queued records.<br><p><br>See [Pause dual-write for maintenance](./pause-for-maintenance.md) for more information. | General availability |
+| Bug fix | 3548103 | This update fixes an issue in which the dual-write runtime throws the below error message if the description field has data but the length of the data is less than the length in the truncate function.<br><p><br>"Index and length must refer to a location within the string." | General availability |
+
 ## August 2023
 
 Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
