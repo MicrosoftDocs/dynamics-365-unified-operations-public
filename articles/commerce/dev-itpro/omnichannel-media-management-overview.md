@@ -45,12 +45,8 @@ To configure omnichannel media management features in your Commerce environments
 1. On the **All** tab, use the **Filter** field to search for "\*omni".
 1. In the search results, select **Enable omnichannel media assignment authoring UX**.
 1. In the lower right, select **Enable now**.
-
-    > [!NOTE]
-    > During the pre-general availability (GA) preview, if the **Feature state** value for the **Enable omnichannel media assignment authoring UX** feature is **Preview**, you must submit a support request to ask Microsoft to enable this feature flight for your environment. After the feature flight support request is approved, you'll be able to complete step 6. After you enable the feature, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**, and select **Omnichannel media management** on the left navigation pane. Enter the content management system (CMS) endpoint and CMS tenant code values that Microsoft Support provided in the response to your feature flighting support request, and then select **Save**.
-
 1. Go to **Distribution schedules**, and run the **1110 (Global configuration)** job.
-1. At this point, you can use all authoring experiences to stage product media assignments. However, nothing will flow through to headquarters, CSU databases, or end clients yet. For an existing environment migration, you might want to wait until all your media assignments are staged before you move on to step 9. For new or test environments, you can move on to step 9 now.
+1. At this point, you can use all authoring experiences to stage product media assignments. However, nothing will flow through to headquarters, CSU databases, or end clients yet. ***For an existing environment migration (see migration note below), you'll want to stage all your new assignments before you move on to step 9.*** For new or test environments, you can move on to step 9 now.
 1. In headquarters, search for and open the **CMS to HQ omnichannel media sync** page.
 1. Set the **Batch processing** option to **Yes**.
 1. Select **Recurrence**, and schedule the **CMS to HQ omnichannel media sync** job to run on your preferred schedule (typically once per hour).
