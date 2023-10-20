@@ -24,7 +24,7 @@ Release notes for the September 2023 release of [Dual-write core solution](https
 
 | Type | Number | Description | Status | 
 | --- | --- | --- | --- |
-| Feature | 24811690 | When resuming a paused dual-write map it's possible that processing queued records before resuming live synchronization can take longer than expected. There's now the option to skip directly to live synchronization of new records when resuming the map, and either move the queued records to asynchronous processing in the **Catch-up errors** list, or discard the queued records.<br><p><br>See [Pause dual-write for maintenance](./pause-for-maintenance.md) for more information. | General availability |
+| Feature | 24811690 | When resuming a paused dual-write map it's possible that processing queued records before resuming live synchronization can take longer than expected. There's now the option to skip directly to live synchronization of new records when resuming the map, and either move the queued records to asynchronous processing in the **Catch-up errors** list, or discard the queued records.<br><p><br>For more information, see [Pause dual-write for maintenance](./pause-for-maintenance.md). | General availability |
 | Bug fix | 3548103 | This update fixes an issue in which the dual-write runtime throws the below error message if the description field has data but the length of the data is less than the length in the truncate function.<br><p><br>"Index and length must refer to a location within the string." | General availability |
 
 ## August 2023
@@ -463,7 +463,7 @@ Follow these steps to apply the new maps:
 
 1. Apply the latest map version 1.0.0.2 for CDS Postal address history V2 (msdyn_postaladdresses) mapping.
 2. Apply the latest map version for Contacts V2 (msdyn_contactforparties) mapping.
-3. Run the initial sync of the CDS Party postal address locations (msdyn_partypostaladdresses) mapping twice to make sure that there is no loss of address records in Customer Address table due to concurrent address updates.
+3. Run the initial sync of the CDS Party postal address locations (msdyn_partypostaladdresses) mapping twice to make sure that there isn't loss of address records in Customer Address table due to concurrent address updates.
 
 ## April 2021 release
 
@@ -477,7 +477,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | Handle conflict resolution during catch-up sync. | General availability
 | Bug fix | Issues related to solution import on environments. | General availability
 | Bug fix | The **Notes** table now understands the **Null** value. | General availability |
-| Bug fix | Dual write orchestration package 2.2.2.50 doesn't replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key, which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
+| Bug fix | Dual write orchestration package 2.2.2.50 doesn't replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key, which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you're using the [party and global address book](party-gab.md) solution.| General availability |
 
 ## March 2021 release
 
