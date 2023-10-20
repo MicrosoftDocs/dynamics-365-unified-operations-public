@@ -65,7 +65,7 @@ Follow these steps:
 
 1. The **Configure data provider** page opens. In the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
 
-1. The **Entity selection** page opens. It lists each Supply Chain Management data entity that the solution supports and shows which Demand planning table it maps to. Turn on the **Enabled** slider for each entity you want to import from for this profile. Then select **Next**.
+1. The **Entity selection** page opens. It lists each Supply Chain Management data entity that the solution supports out-of-the box supports and shows which Demand planning table it maps to. Turn on the **Enabled** slider for each entity you want to import from for this profile. Then select **Next**. All Supply Chain Management data entity is supported and can be imported, note a table must be created previously in the Demand Planning app for being able to map the fields. 
 
 1. The **Review and finish page** opens. It summarizes the settings you've made. Review your settings and then select **Review and finish** to create the new profile.
 
@@ -88,7 +88,7 @@ To import from a text or spreadsheet file exported from an external system, crea
 1. The **Configure provider** page opens. The settings on this page let you choose the file you want to import and then send it to Power Query, where you can transform the data and map the columns from the source document to the selected Demand planning table. The connection, transformation, and mapping features are all provided by Power Query. The procedure differs slightly depending on which Power Query provider you are using, as described in the following list.
     - **Excel** – For details about how to select the target file, connect to Power Query, and work with data, see [Excel](/power-query/connectors/excel) in the Power Query documentation.
     - **CSV** – For details about how to select the target file, connect to Power Query, and work with data, see [Text/CSV](/power-query/connectors/text-csv) in the Power Query documentation.
-    - **Dataverse** – For details about how to select the target file, connect to Power Query, and work with data, see [Dataverse](/power-query/connectors/dataverse) in the Power Query documentation.
+    - **Datalake** – For details about how to select the target file, connect to Power Query, and work with data, see [Datalake](/power-query/connectors/dataverse) in the Power Query documentation. Note a datalake must have been previously setup ad indicated on [Datalake setup](https://learn.microsoft.com/en-us/power-query/connectors/data-lake-storage)
 
 1. When you're done transforming and mapping your data with Power Query, select **Next** to continue to the **Refresh settings** page. Do one of the following steps:
     - If you want to delete all the data currently in the destination table in Demand planning, select the **Delete all data for the chosen table before import** check box. You might use this option, for example, if the incoming data includes all the required records that are already in your table and/or you have not selected a key fields for the table. This setting guarantees that you won't have any duplicate records but also deletes all the data currently in the target table.
