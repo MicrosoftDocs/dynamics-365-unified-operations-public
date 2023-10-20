@@ -5,7 +5,7 @@ title: Revenue recognition reallocation - Scenario 4
 description: This article goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
 author: bking
 ms.date: 12/21/2020
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 
