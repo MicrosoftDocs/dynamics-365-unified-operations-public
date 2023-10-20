@@ -77,6 +77,17 @@ To configure omnichannel media management features in your Commerce environments
   }   
 ```
 
+> [!NOTE]
+> To migrate existing product images that use the legacy filename-based approach, please open a support request with the title "**Migrate legacy product
+images to new omnichannel media data model**."
+>
+> Please also provide the following information to your support engineer:
+> 1) The site builder URL of the source images
+> 2) Which source channel and locale to migrate
+> 3) Whether you want these source images mapped as default for all channels (Omnichannel) and locales (Neutral), or if you only want them mapped to a specific channel and locale ([Read here](../assign-media-omnichannel#omnichannel-channel-specific-and-locale-specific-media-assignments) for more details on the new Omnichannel and Neutral locale media assignment default options).
+>
+> In the future, migrations will be self-serve using bulk export -> offline customizable PowerShell script -> bulk import. Until this sample PowerShell script is made publicly available, please follow the instructions above to initiate a migration through a support request. 
+
 ## Omnichannel media publish (and unpublish) architecture and dataflow
 
 On their way to user interfaces, product media assignments flow from site builder's CMS to the headquarters database, and then to the CSU databases.
