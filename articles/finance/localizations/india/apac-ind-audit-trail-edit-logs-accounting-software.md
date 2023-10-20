@@ -4,7 +4,7 @@
 title: Audit trail and edit logs for accounting software
 description: This article provides information about the new Indian tax legislation guidelines for accounting software.
 author: EricWangChen
-ms.date: 04/21/2023
+ms.date: 10/20/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -151,5 +151,20 @@ On an annual basis, the company will provide the following information to the Re
 - The location where the books of accounts and other books and papers are maintained in the cloud (for example, the address that was provided by the service provider)
 
 This information is protected by server security. We don't recommend that you include it on any publicly available financial report. You can manually add this information to any specific report.
+
+### Compliance 7: Books of accounts must remain accessible in India
+
+Under new guidelines of the Companies Act, the books of accounts and other relevant books and papers that are maintained in electronic mode must remain accessible in India at all times, and their backup must be kept in servers that are physically located in India on a daily basis.
+
+* The books of accounts and other relevant books and papers that are maintained in electronic mode in finance and operations apps environments are accessible in India at all times for subsequent reference.
+* Finance and operations apps provides that the backup of the books of accounts and other books and papers of the company that are maintained in electronic mode in Finance and operations apps are kept in servers that are physically located in India on a daily basis.
+* Finance and operations apps environments are deployed in a defined region or datacenter where customer data will be stored. Customers choose where to deploy their environments when they create the environment through Lifecycle Services admin center. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location.
+* Administrators of a Finance and operations apps tenant can check where the database is deployed through Lifecycle Services admin center, by looking at the **Database backup location** field.
+* Microsoft provides business continuity and disaster recovery for production instances of the Finance and operations apps SaaS application if an Azure region-wide outage occurs.
+* Databases are protected by automatic backups that are kept for 28 days. The backups include data from the database's production and sandbox environments. 
+* Administrators of a Finance and operations apps tenant can't directly access or manage these backups, because they're automatically managed by Microsoft. In Lifecycle Services admin center, an administrator can view evidence about which Finance and operations apps environments have daily backups enabled, and may capture a screenshot of this on a daily basis to create a log of such evidence. 
+* Administrators in Lifecycle Services admin center may use the [Environment Metadata API](../../../fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata.md) to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis.  This can be done using any software which supports HTTP and RESTful APIs.
+* Administrators can also restore their environments to a specific point in time in the past by using Lifecycle Services admin center. For more information, see [Restoring an environment in the Admin center](/dynamics365/business-central/dev-itpro/administration/tenant-admin-center-backup-restore).
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
