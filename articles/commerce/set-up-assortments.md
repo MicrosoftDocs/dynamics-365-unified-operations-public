@@ -44,5 +44,34 @@ After you complete the prerequisites, you can create an assortment and assign it
 3. Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
 4. Publish the assortment. When you publish an assortment, the assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the channels that the product assortment is assigned to. If changes are made to an assortment that has been published, or to the channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the assortment scheduler as a batch job.
 
+## Publishing assortments
+
+You can publish an assortment in the **Retail and Commerce \> Catalogs and assortments \> Assortments** form, which will create an assortment scheduler to process the assortment. Also, you can publish multiple assortments at the same time via **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, which will create tasks for each assortment has been published.
+
+If you have many assortments configured, the assortment scheduler will create a large amount of tasks to publish assortments in parallel which consume much of the AX database resources. When the resource consumption reaches high level, the tasks might get killed and fail. To avoid this situation, it's recommended to to enable [Priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and **(Preview) Batch concurrency control** feature to limit the number of concurrent tasks so they will not fail.
+1. Make sure **Batch priority-based scheduling** feature is enabled.
+2. Make sure **(Preview) Batch concurrency control** feature is enabled.
+3. Go to **System administration \> Setup \> Batch group** and create a new batch group. Set Scheduling Priority as "Normal" or "Low" and specify the Max Concurrency value. Depending on the data volume and service status, you will need tests to see what value works for your service best.
+5. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, check "Batch processing" and set the new batch group you created as the "Batch group". If you already have a batch job, you can set the batch group from the batch jobs form as well.
+
+## Validating a channel's assortment
+
+After assortments are published, you can validate a channel's assortment on the F&O directly.
+
+### For brick-and-mortar stores
+
+1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**. Choose the store you want to validate.
+2. On the Action Pane, select **Store** tab, then under **Inventory** select **View channel products**.
+3. You will see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
+4. To validate assorted product variants, select the product master in the list.
+5. On the Action Pane, select **Product variants**. You will navigate to a new list where all assorted product variants appear there.
+
+If you find any product is not assorted unexpectedly, please double check the [Assortment management](./assortments.md) and make sure the channel and product are included in the assortment, the assortment is published, and the product is neither excluded nor stopped.
+
+### For online stores
+
+1. Go to **Retail and Commerce \> Channels \> Online stores**. Choose the store you want to validate.
+2. On the Action Pane, select **Channel** tab, then under **Inventory** select **View assortment products**.
+3. The rest steps are the same as brick-and-mortar stores.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
