@@ -34,7 +34,7 @@ To remove extensions, follow these steps.
 9. LCS validates the package. This validation takes a few minutes. After it's completed, mark the package as **Release candidate**.
 10. After the upload process is completed, the package must be deployed to the environment. Follow the steps in [Apply updates and extensions to Commerce Scale Unit (cloud)](../../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
-| ⚠️ | Remove CSU Extension package is designed to be deployed once per calendar day. Subsequent deployment attempt of this package in the same day will result in failure. | 
+| ⚠️ | Remove CSU Extension package is designed to be applied once per calendar day. Subsequent deployment attempts in the same day, while this package is in place, will result in failure. | 
 |:-:|:-|
 
 For information about how to deploy packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md).
