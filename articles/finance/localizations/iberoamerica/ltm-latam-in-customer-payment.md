@@ -2,7 +2,7 @@
 title: Use latam extension in customer payments journals
 description: This article explains how use payment methods in customer payments.
 author: Cpicon85 
-ms.date: 10/18/2023 
+ms.date: 10/23/2023 
 ms.topic: Article
 ms.reviewer: kfend
 ms.author: v-cpicon 
@@ -31,12 +31,12 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 ## Add information to the Payment method page
 
-Use the **Payment method** page to select one or more payment methods for the same transaction. In the customer payment journal, after selecting the invoice(s) to be collected and completing the information on the **LATAM** tab, for each payment method you need to use, follow the steps detailed in the sections below.
+Use the **Payment method** page to select one or more payment methods for the same transaction. In the customer payment journal, after you select the invoices to be collected and complete the information on the **LATAM** tab, for each payment method you need to use, follow the steps in the sections below.
 
 ### Use Bank transfer
 Follow these steps to select a bank transfer payment.
 
-1. In the customer payment, On Action Pane, select **LATAM**, and then select **Payment methods**.
+1. Go to **Accounts receivable** > **Payments** > **Customer payment journal**, and on Action Pane, select **LATAM** > **Payment methods**.
 2. On the **Payment method** page, select **New**.
 3. In the **Document class id.** field, select **TRB** as the Document class Id for a bank transfer. To learn more, see [Document classes for Latin America](ltm-core-document-class.md).
 4. In the **Account number** field, select a bank account.
@@ -46,7 +46,7 @@ Follow these steps to select a bank transfer payment.
 ### Use customer checks
 Follow these steps to record customer checks. You can use them for current date checks and post-dated checks. Entering these values is similar for both and has the same impact on the customer account. The only difference is the entry of more data.
 
-1. In the customer payment, On the Action Pane, select **LATAM**, and then select **Payment methods**.
+1. Go to **Accounts receivable** > **Payments** > **Customer payment journal** and on the Action Pane, select **LATAM** > **Payment methods**.
 2. On the **Payment method** page, select **New**.
 3. In the **Document class id.** field, select a document class ID that represents customer checks. To learn more, see [Document classes for Latin America](ltm-core-document-class.md).
 4. In the **Document Number** field, enter the customer's check number.
