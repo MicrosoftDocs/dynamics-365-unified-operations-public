@@ -45,7 +45,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Support for service-based authentication methods has been discontinued in Azure. |
+| **Reason for deprecation/removal** | Support for service-based authentication methods (certificate and shared secret) has been discontinued in Azure. |
 | **Replaced by another feature?**   | Yes. Service-based authentication is being replaced by user-based authentication (device code flow). |
 | **Product areas affected** | Supply Chain Management - Warehouse management |
 | **Deployment option** | Cloud and on-premises |
