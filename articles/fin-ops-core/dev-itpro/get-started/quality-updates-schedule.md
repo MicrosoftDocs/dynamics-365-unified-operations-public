@@ -4,7 +4,7 @@ description: This article provides the release schedule for proactive quality up
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 08/23/2023
+ms.date: 10/23/2023
 ms.custom: bap-template
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
@@ -62,50 +62,35 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.33 PQU-3 | July 14, 2023 | July 24, 2023 to August 27, 2023| Completed |
 | 10.0.34 PQU-1 | June 23, 2023 | July 3, 2023 to August 6, 2023| Completed |
 | 10.0.34 PQU-2 | July 21, 2023 | July 31, 2023 to September 3, 2023| Completed |
-| 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| In-Progress |
+| 10.0.34 PQU-3 | September 1, 2023 | September 11, 2023 to October 15, 2023| Completed |
 | 10.0.35 PQU-1 | July 28, 2023 | August 7, 2023 to September 10, 2023| Completed |
-| 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| In-Progress |
+| 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Completed |
 | 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Not Started |
-| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Not Started |
+| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| In-Progress |
 | 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to December 17, 2023| Not Started |
 | 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Not Started |
 | 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 7, 2024| Not Started |
-| 10.0.37 PQU-2 | December 30, 2023 | Janurary 8, 2024 to February 11, 2024| Not Started |
+| 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| Not Started |
 | 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Not Started |
 | 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.34 Release-3 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.35 Release-3 train schedule
 
-**App version: 10.0.1591.137**
+**App version: 10.0.1627.138**
 
-**Platform version: 7.0.6931.156**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | September 11 to September 14, 2023 | NA |
-| Station 2 | September 18 to September 21, 2023 | September 30 to October 1, 2023 |
-| Station 3 | September 19 to September 22, 2023 | September 30 to October 1, 2023 |
-| Station 4 | September 25 to September 28, 2023 | October 7 to October 8, 2023 |
-| Station 5 | October 2 to October 5, 2023 | October 14 to October 15, 2023 |
-| Station 6 | October 3 to October 6, 2023 | October 14 to October 15, 2023 |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.35 Release-2 train schedule
-
-**App version: 10.0.1627.92**
-
-**Platform version: 7.0.6972.126**
+**Platform version: 7.0.6972.170**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | September 4 to September 7, 2023 | NA |
-| Station 2 | September 11 to September 14, 2023 | September 23 to September 24, 2023 |
-| Station 3 | September 12 to September 15, 2023 | September 23 to September 24, 2023 |
-| Station 4 | September 18 to September 21, 2023 | September 30 to October 1, 2023 |
-| Station 5 | September 25 to September 28, 2023 | October 7 to October 8, 2023 |
-| Station 6 | September 26 to September 29, 2023 | October 7 to October 8, 2023 |
+| Station 1 | October 30 to November 2, 2023 | NA |
+| Station 2 | November 6 to November 9, 2023 | December 2 to December 3, 2023 |
+| Station 3 | November 7 to November 10, 2023 | December 2 to December 3, 2023 |
+| Station 4 | November 13 to November 16, 2023 | December 9 to December 10, 2023 |
+| Station 5 | November 20 to November 23, 2023 | December 16 to December 17, 2023 |
+| Station 6 | November 21 to November 24, 2023 | December 16 to December 17, 2023 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.36 Release-1 train schedule
 
@@ -123,11 +108,11 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 6 | October 31 to November 3, 2023 | November 11 to November 12, 2023 |
 
 > [!IMPORTANT] 
-> At least five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
+> At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
 >
-> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
+> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments begins with advance notifications to customers.
 > 
-> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates are done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
+> Quality updates always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update spans four days. It just means that we can't pre-determine which set of environments is updated on a given day within the four-day range. All updates are done during dark hours, with near-zero downtime. Updates definitively end within the dark-hour window of a given region.
 
 ## Additional resources
 
