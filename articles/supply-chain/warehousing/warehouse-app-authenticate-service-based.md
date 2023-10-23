@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehouse-app-authenticate-user-based.md) instead.
+> The authentication methods described in this topic are now deprecated. We strongly recommend that you authenticate using [device code flow](warehouse-app-authenticate-user-based.md) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
 Authentication with Microsoft Entra ID provides a secure way of authenticating a mobile device with Supply Chain Management. The Warehouse Management mobile app supports the following types of service-based authentication:
 
