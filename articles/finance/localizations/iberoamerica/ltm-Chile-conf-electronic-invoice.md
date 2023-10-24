@@ -52,14 +52,20 @@ The following steps go through the information that the XML tags requires in tha
     2. In the **LATAM** section, in the **Country identification number** field, select the customer's **RUT**.
 
 8. Go to **Accounts receivable** > **Customers** > **All customers**.
-
-   1. Add a business classification to the customers in use with the business activity.
-   2. On the Action Pane, in the **General** group, select the business activity to add this code to each customer.
+   
+   1. On the Action Pane, in the **General** group, select **Business classification**.
+   2. Create a new record to add the business classification declared in the fiscal records to each customer created.
       
-9. Go to **Organization administration** > **Setup** > **LATAM** > **Document class**.
+9. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** to configure the fiscal documents required infomration.
 
-   1. Configure the additional data section fields to match the information requirements for electronic invoicing:
-      Remission document classes should have the **Free text 1** and **Free text 3** required and for the driver’s RUT and driver’s name respectively. 
+   1. For remission documents classes, select each one created and in the **General** section complete the fields **Concept Label 1** and **Concept Label 3** with "RUT Chofer" and "Nombre Chofer" respectively.
+   2. Configure the **Additional data** section fields for each remission document class to match the information requirements for electronic invoicing:
+      Remission document classes should have the **Free text 1** and **Free text 3** required and for the driver’s RUT and driver’s name respectively.
+   3. In the **Additional data** section enable the lists 3, 4, 5, 7, and 8.
+   4. For each created credit/debit note document class, in the **Additional data** section enable the lists 9 and 10. 
+
+(See [Document class configuration](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/iberoamerica/ltm-core-document-class) article)
+
 
 10. Go to **Sales and marketing > Setup > Distribution > Reasons for delivery** and set the options for selling modes according to the Chilean normative stablished by the customs office. It is used only for export documents.
 11. Go to **Sales and marketing > Setup > Distribution > Terms of delivery** and set the options for selling clauses according to the Chilean normative (FOB, CIF, etc.).
