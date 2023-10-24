@@ -2,7 +2,7 @@
 title: Help system (contains video)
 description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
-ms.date: 04/20/2023
+ms.date: 10/24/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -172,5 +172,6 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
+| [The Dynamics 365 guidance hub](/dynamics365/guidance/) | This site hosts or links to resources that can help with Dynamics 365 implementation projects. | 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
