@@ -27,8 +27,7 @@ Planning Optimization is currently available in the following Azure geographies:
 
 ## Licensing
 
-You can run master planning by using your current Dynamics 365 Supply Chain Management licenses. 
-Planning Optimization is the master planning engine for Dynamics 365 Supply Chain Management and its cost/licensing is part of the standard licences for supply chain management. There is not any extra cost associated. 
+You can run master planning using your current Supply Chain Management licenses. Planning Optimization is the master planning engine for Supply Chain Management and is licensed as part of the standard licenses for the system. There are no extra costs associated with using Planning Optimization.
 
 ## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
