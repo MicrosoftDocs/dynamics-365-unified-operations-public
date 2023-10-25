@@ -4,7 +4,7 @@
 title: Price change tracking
 description: This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 10/09/2023
+ms.date: 10/25/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -20,10 +20,10 @@ ms.search.validFrom: 2023-06-01
 
 This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 
-A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows (note that the two examples are not out-of-the-box features):
+A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows (note that the two examples aren't out-of-the-box features):
 
 - A retail store must update shelf labels so that they reflect changed prices.
-- An e-commerce website alerts shoppers about a price drop for items in their shopping carts.
+- A e-commerce website alerts shoppers about a price drop for items in their shopping carts.
 
 The Commerce price change tracking feature provides a mechanism for monitoring products that have changed prices and generating data feeds to surface that information.
 
@@ -86,7 +86,7 @@ To specify a batch group for price change tracking batch jobs in headquarters, f
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.
 1. Under **Backend tasks**, specify the batch group to be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
 
-For information on the the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
+For information on the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
 
 ### Usage patterns not suitable for feature enablement
 
@@ -109,7 +109,7 @@ The following tables are cross-company entities that trigger change tracking whe
 
 ## Other considerations
 
-For customer environments where pricing or product data is updated very frequently (for example, more than one line per second), Microsoft recommends that you extensively test the price change feature to assess performance implications before you enable it in your production environment.
+For customer environments where pricing or product data is updated frequently (for example, more than one line per second), Microsoft recommends that you extensively test the price change feature to assess performance implications before you enable it in your production environment.
 
 When you make large-scale changes (for example, bulk data migration), Microsoft recommends that you temporarily remove all legal entities from the price change tracking setting before the changes. Then add them back after the changes are completed. In this way, the system mitigates the performance impact by making a one-time full refresh instead of tracking every single line change.
 
