@@ -45,8 +45,12 @@ To configure omnichannel media management features in your Commerce environments
 1. On the **All** tab, use the **Filter** field to search for "\*omni".
 1. In the search results, select **Enable omnichannel media assignment authoring UX**.
 1. In the lower right, select **Enable now**.
-1. Go to **Distribution schedules**, and run the **1110 (Global configuration)** job.
-1. At this point, you can use all authoring experiences to stage product media assignments. However, nothing flows through to headquarters, CSU databases, or end clients yet. ***For an existing environment migration (see migration note below), you'll want to stage all your new assignments before you move on to step 9.*** For new or test environments, you can move on to step 9 now.
+1. Go to **Distribution schedules** in HQ, and run the **1110 (Global configuration)** job.
+2. Go to **Commerce parameters** in HQ, and click the **Omnichannel media management** tab on the left.
+3. Enter the CMS endpoint, CMS tenant code, Site builder endpoint, and CMS tenant id fields and click **Save**.  These values can be copied from the **Tenant settings > Tenant information** tab in the lower left of the tenant level view within site builder.
+> [!NOTE]
+> If you do not see the **Tenant information** tab in site builder, please open a support request with the title, "**Help with configuring omnichannel media management HQ parameters**".
+10. At this point, you can use all authoring experiences to stage product media assignments. However, nothing flows through to headquarters, CSU databases, or end clients yet. ***For an existing environment migration (see migration note below), you'll want to stage all your new assignments before you move on to step 9.*** For new or test environments, you can move on to step 9 now.
 1. In headquarters, search for and open the **CMS to HQ omnichannel media sync** page.
 1. Set the **Batch processing** option to **Yes**.
 1. Select **Recurrence**, and schedule the **CMS to HQ omnichannel media sync** job to run on your preferred schedule (typically once per hour).
