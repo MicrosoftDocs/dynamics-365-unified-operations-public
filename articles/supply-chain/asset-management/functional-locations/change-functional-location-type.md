@@ -1,56 +1,49 @@
 ---
-# required metadata
-
-title: Change functional location type
-description: This article explains how to change the functional location type on a functional location.
+title: Change the type of an existing functional location
+description: This article explains how to change the functional location type of an existing functional location.
 author: johanhoffmann
-ms.date: 10/16/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 10/27/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
-# Change functional location type
+# Change the type of an existing functional location
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-This article explains how to functional location type on a functional location.
+<!-- KFM: Preview until further notice -->
 
-On the **All Functional locations** list page or details page (**Asset management** \> **Functional locations** \> **All functional locations**), you can change use the **Functional location type** function in the toolbar located in the **Maintain** field group to change to the functional location type on one or more selected functional locations. 
+This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.
 
-For information about the functional location types, see [Functional location types](../setup-for-functional-locations/functional-location-types.md). 
+## Prerequisites
 
-1. Select **Asset management** \> **Functional locations** \> **All functional locations**.
-2. On the **All functional locations** list page, select one or more functional locations for which you want to change functional location type. Note, that if you want to change the functional location type for multiple functional locations, then you need to make sure that the selected functional locations have the same functional location type. .
-3. Select **Change functional location type** from the **Maintain** field group in the toolbar. 
-4. In the **Change functional location type** dialog, set the following fields:
-    - **New functional location type** - Select the new functional location type for the selected functional locations.
-    
-    - In the **Append** group, select the following fields:
-        - **Attributes** - Select, if the attributes types associated the new functional location type, should be appended to the selected functional locations.
-        - **Asset attribute requirements** - Select, if the asset attribute requirements associated the new functional location type, should be appended to the selected functional locations.
-         **Maintenance plans** - Select, if the maintenance plans associated the new functional location type, should be appended to the selected functional locations.
-    - In the **Run in background** group, select **Batch processing** if you want the process of changing asset types as a batch job.
-5. Select **OK** in the **Change asset type** dialog, to confirm the update of the new asset type.
+To use this feature, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
+- The feature that is named *(Preview) Change types on assets and functional locations* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+## Change the functional location type of an existing functional location
+
+To change the functional location type of an existing functional location, follow these steps:
+
+1. Go to **Asset management** \> **Functional locations** \> **All functional locations**.
+1. On the **All functional locations** list page, select one or more functional locations for which you want to change the type. If you select multiple functional locations, then all of them must be of the same type.
+1. On the Action Pane, open the **Functional locations** tab and, from the **Maintain** field group, select **Change functional location type**.
+1. The **Change functional location type** dialog opens. Expand the **Parameters** FastTab and make the following settings:
+    - **New functional location type** - Select the new type to assign to the selected functional location.
+    - **Attributes** - Set to *Yes* to append the attribute types associated with the new functional location type to the selected functional locations.
+    - **Asset attribute requirements** - Set to *Yes* to append the asset attribute requirements associated with the new functional location type to the selected functional locations.
+    - **Maintenance plans** - Set to *Yes* to append the maintenance plans associated with the new functional location type to the selected functional locations.
+1. Expand the **Run in background** FastTab and set **Batch processing** to *Yes* to run the process of changing functional location types as a batch job.
+1. Select **OK** in the **Change functional location type** dialog to apply your settings.
 
 > [!NOTE]
-> On the functional location type you defined which supporting data is applicable for functional locations. This is information such as Asset types, Maintenance plans, and Asset attribute requirements. Be aware that when you change the functional location type, you might introduce an inconsistency between supporting data for existing functional locations and the supporting data on the functional location type. 
+> Each functional location type has settings that define which supporting data applies for functional locations of that type. This includes information such as asset types, maintenance plans, and asset attribute requirements. When you change the functional location type, the supporting data for existing functional locations might not match the supporting data for the new functional location type.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
