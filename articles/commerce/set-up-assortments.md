@@ -31,7 +31,7 @@ Before you can set up an assortment and assign it to a commerce channel, you mus
 | Task                              | Description |
 |-----------------------------------|-------------|
 | Set up a channel.          | Channels represent a brick-and-mortar store, an online store, or an online marketplace. You must set up at least one channel and configure the options for the store. Assortments are assigned to stores to identify the products that a particular store carries. |
-| Create an organization hierarchy. | After you set up the commerce channels for your organization, you must configure an organization hierarchy that represents the organizational structure of your channels. An organization hierarchy can be used for assortments, replenishment, and reporting. By adding your channels to an organization hierarchy, you can assign assortments to groups of stores. Instead of assigning the assortment individually to each store, you assign the assortment to the high-level organization node. Then, whenever a new channel is added to the high-level organization node, that channel automatically inherits any assortments that were assigned to the higher-level organization node. You can assign assortments only to channels that are included in an organization hierarchy that is assigned the **Retail assortment** purpose. |
+| Create an organization hierarchy. | After you set up the commerce channels for your organization, you must configure an organization hierarchy that represents the organizational structure of your channels. An organization hierarchy can be used for assortments, replenishment, and reporting. By adding your channels to an organization hierarchy, you can assign assortments to groups of stores. Instead of assigning the assortment individually to each store, you assign the assortment to the high-level organization node. Whenever a new channel is added to the high-level organization node, that channel automatically inherits any assortments that were assigned to the higher-level organization node. You can assign assortments only to channels that are included in an organization hierarchy that is assigned the **Retail assortment** purpose. |
 | Define products.                  | Before you can add products to an assortment, you must add them in Commerce. You can add products manually, or you can import them from a vendor. After you add the products, you must release them to a legal entity. Only products that have been released to a legal entity can be made available to your channels. Products that haven't yet been released to a legal entity can be added to an assortment, and the assortment can be approved. However, until the products have been released to a legal entity, they can't be made available to the channels. |
 | Set up a category hierarchy.      | When you create your commerce products, you can group and categorize them by using the category hierarchy feature. You can create one core hierarchy to group and categorize all products that you distribute through your channels. You can also create separate, supplemental category hierarchies to group or categorize your products for special purposes, such as promotions or assortments. By using category hierarchies, you can assign all the products in a specific category to an assortment. Any products that are added to the category that is included in the assortment are automatically included in the assortment. Then, the next time that the commerce assortment scheduler is run, these products become available to the channels that the assortment is assigned to. |
 
@@ -40,38 +40,47 @@ Before you can set up an assortment and assign it to a commerce channel, you mus
 After you complete the prerequisites, you can create an assortment and assign it to your channels. To set up an assortment, you must complete the following tasks.
 
 1. Create a new assortment, or copy an existing assortment.
-2. Select the channels or the high-level groups of channels that the assortment applies to.
-3. Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
-4. Publish the assortment. When you publish an assortment, the assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the channels that the product assortment is assigned to. If changes are made to an assortment that has been published, or to the channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the assortment scheduler as a batch job.
+1. Select the channels or the high-level groups of channels that the assortment applies to.
+1. Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
+1. Publish the assortment. When you publish an assortment, the assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the channels that the product assortment is assigned to. If changes are made to an assortment that has been published or to the channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the assortment scheduler as a batch job.
 
 ## Publishing assortments
 
-You can publish an assortment in the **Retail and Commerce \> Catalogs and assortments \> Assortments** form, which will create an assortment scheduler to process the assortment. Also, you can publish multiple assortments at the same time via **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, which will create tasks for each assortment has been published.
+You can publish an assortment in the **Retail and Commerce \> Catalogs and assortments \> Assortments** form, which creates an assortment scheduler to process the assortment. Also, you can publish multiple assortments at the same time via **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, which creates tasks for each assortment that has been published.
 
-If you have many assortments configured, the assortment scheduler will create a large amount of tasks to publish assortments in parallel which consume much of the AX database resources. When the resource consumption reaches high level, the tasks might get killed and fail. To avoid this situation, it's recommended to to enable [Priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and **(Preview) Batch concurrency control** feature to limit the number of concurrent tasks so they will not fail.
-1. Make sure **Batch priority-based scheduling** feature is enabled.
-2. Make sure **(Preview) Batch concurrency control** feature is enabled.
-3. Go to **System administration \> Setup \> Batch group** and create a new batch group. Set Scheduling Priority as "Normal" or "Low" and specify the Max Concurrency value. Depending on the data volume and service status, you will need tests to see what value works for your service best.
-5. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, check "Batch processing" and set the new batch group you created as the "Batch group". If you already have a batch job, you can set the batch group from the batch jobs form as well.
+If you have many assortments configured, the assortment scheduler creates a large number of tasks to publish the assortments in parallel. These tasks consume much of the AX database resources. When the resource consumption reaches high level, the tasks might terminate and fail. To avoid this situation, it's recommended to enable [Priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and the **(Preview) Batch concurrency control** feature to limit the number of concurrent tasks so they won't fail.
 
-## Validating a channel's assortment
+To enable priority-based scheduling, follow these steps.
 
-After assortments are published, you can validate a channel's assortment on the F&O directly.
+1. Enable the **Batch priority-based scheduling** feature.
+1. Enable the **(Preview) Batch concurrency control** feature.
+1. Go to **System administration \> Setup \> Batch group** and create a new batch group. Set Scheduling Priority as **Normal** or **Low** and specify the **Max Concurrency** value. Depending on the data volume and service status, you need to test to see which value works best for your service.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, select **Batch processing** and set the new batch group you created as the **Batch group**. If you already have a batch job, you can set the batch group from the batch jobs form as well.
 
-### For brick-and-mortar stores
+## Validate a channel's assortment
+
+After assortments are published, you can validate a channel's assortment in finance and operations apps directly.
+
+### Validate a channel's assortment for brick-and-mortar stores
+
+To validate a channel's assortment for brick-and-morter stores, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**. Choose the store you want to validate.
-2. On the Action Pane, select **Store** tab, then under **Inventory** select **View channel products**.
-3. You will see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
-4. To validate assorted product variants, select the product master in the list.
-5. On the Action Pane, select **Product variants**. You will navigate to a new list where all assorted product variants appear there.
+1. On the Action pane, select the **Store** tab, then under **Inventory** select **View channel products**.
+1. You see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
+1. To validate assorted product variants, select the product master in the list.
+1. On the Action pane, select **Product variants**. You navigate to a new list where all assorted product variants appear there.
 
-If you find any product is not assorted unexpectedly, please double check the [Assortment management](./assortments.md) and make sure the channel and product are included in the assortment, the assortment is published, and the product is neither excluded nor stopped.
+If you find any product isn't assorted unexpectedly, double check [Assortment management](./assortments.md) to make sure the channel and product are included in the assortment, the assortment is published, and the product is neither excluded nor stopped.
 
-### For online stores
+### Validate a channel's assortment for online stores
+
+To validate a channel's assortment for online stores, follow these steps.
 
 1. Go to **Retail and Commerce \> Channels \> Online stores**. Choose the store you want to validate.
-2. On the Action Pane, select **Channel** tab, then under **Inventory** select **View assortment products**.
-3. The rest steps are the same as brick-and-mortar stores.
+1. On the Action Pane, select the **Channel** tab, then under **Inventory** select **View assortment products**.
+1. You see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
+1. To validate assorted product variants, select the product master in the list.
+1. On the Action Pane, select **Product variants**. You navigate to a new list where all assorted product variants appear there.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
