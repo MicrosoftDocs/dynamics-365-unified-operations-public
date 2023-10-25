@@ -119,7 +119,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
 5. **Miscellaneous charges per kilogram** filed is available for Italy **Country/region**. Select this field to calculate miscellaneous charges by multiplying the cost of each kilogram and the weight of goods in kilograms. When this field is not selected, miscellaneous charges are calculated as a percentage of the invoice amount. For more information, see [Miscellaneous charges per kilogram in an Intrastat declaration](../italy/emea-ita-exil-misc-charges-intrastat.md)
 
-    ![Foreign trade parameters2.](../media/Multipleid-image3-1.png)
+    ![Foreign trade parameters2.](../media/mediaMultipleid-image3-1.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
