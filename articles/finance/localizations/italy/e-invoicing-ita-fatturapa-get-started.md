@@ -464,7 +464,7 @@ Follow these steps on the machine where the proxy service is hosted.
     3. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer file for S2S authentication.
     4. Go to Key Vault and select the certificate you uploaded before that mentioned as **App Registration Certificate**. Select **New Version**.
 	
-    ![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
+    ![Creating new version of the certificate.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
 	
     5. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
 2. Rotate proxy server certificate.
