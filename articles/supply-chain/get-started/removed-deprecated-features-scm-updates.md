@@ -39,6 +39,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.37 release
+
+### Service-based authentication methods for the Warehouse Management mobile app
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Support for service-based authentication methods (certificate and shared secret) is being removed to improve security. |
+| **Replaced by another feature?**   | Yes. Service-based authentication is being replaced by user-based authentication (device code flow), which is more secure. |
+| **Product areas affected** | Supply Chain Management - Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Deprecated. As of July 15, 2024, Microsoft will discontinue support for using service-based authentication methods (certificate and shared secret) to connect the Warehouse Management mobile app to Supply Chain Management. Service-based authentication is being replaced by user-based authentication (device code flow). Administrators must update all devices to use user-based authentication before July 15, 2024. For more information about device code flow, see [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md).</p><p>Mass deployment with Microsoft Intune isn't yet supported for user-based authentication, but we expect to add support for it soon. For more information and the latest news about mass deploying to mobile devices for user-based authentication, see [Mass deploy the mobile app for user-based authentication](../warehousing/warehouse-app-intune-user-based.md).</p> |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.35 release
 
 ### Integration with Outlook for contacts, appointments, and tasks
