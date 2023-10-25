@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes the real async feature enhancements to the functionality of SysOperations that allows operations to be executed asynchronously without blocking the client as the regular SysOperations do.
+This article describes the real async feature enhancements to SysOperations that allows operations to be executed asynchronously without blocking the client as the regular SysOperations do.
 This allows users to initiate multiple operations simultaneously and improve the overall performance. The status of Async operations can be viewed on the same screen. 
 
  
