@@ -83,12 +83,15 @@ The Warehouse Management mobile app isn't available in app stores in China. Howe
 
 Because the Warehouse Management mobile app has read/write access to some of your Supply Chain Management data, each device must be authenticated with Supply Chain Management. The app supports several authentication methods. Before you start to deploy the app, take the time to learn about the authentication methods that are available, and decide which one you want to use.
 
-After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management. 
+After a device is authenticated with Supply Chain Management, each worker who uses that device signs in by using their Supply Chain Management worker account. That worker's personal preferences (such as their default warehouse and app preferences) are then loaded. Therefore, different workers can sign in and out for each shift, while the device itself remains authenticated with Supply Chain Management.
 
 For details about each authentication method and how to set it up, see the following articles:
 
 - User-based authentication: [User-based authentication](warehouse-app-authenticate-user-based.md)
 - Service-based authentication (deprecated): [Service-based authentication](warehouse-app-authenticate-service-based.md)
+
+> [!IMPORTANT]
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
