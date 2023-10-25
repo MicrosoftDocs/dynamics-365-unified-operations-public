@@ -25,18 +25,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-
+# Real async feature enhancements
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-# Real async feature enhancements
 This article describes the real async feature enhancements to the functionality of SysOperations that allows operations to be executed asynchronously without blocking the client as the regular SysOperations do.
 This allows users to initiate multiple operations simultaneously and improve the overall performance. The status of Async operations can be viewed on the same screen. 
 
  
 To use real async operations, you must extend the SysOperationServiceController class. 
-For more information about the SysOperations framework, see [SysOperation Framework Overview](/dynamicsax-2012/developer/sysoperation-framework-overview.md). 
+For more information about the SysOperations framework, see [SysOperation Framework Overview](../../dynamicsax-2012/developer/sysoperation-framework-overview.md). 
 
 ## Enable the Real Async feature 
 
@@ -48,7 +47,7 @@ For more information about the SysOperations framework, see [SysOperation Framew
 To use real async operations, you must extend SysOperationServiceController class as you normally do to implement SysOperation. 
 After extending the SysOperationServiceController class, override the following methods to enable real async for your service operation class: 
 
-Method1: canRunAsRealAsync 
+Method 1: canRunAsRealAsync 
 
 1. By default, this method returns false. 
 2. For end users to control execution type, introduce a feature in **Feature management** for each operation that must be processed in real async. Confirm that this feature is enabled in your operation class. 
@@ -68,10 +67,10 @@ public boolean canRunAsRealAsync()
         } 
     } 
 
-Method2: canSysRealAsyncOperationId 
+Method 2: canSysRealAsyncOperationId 
 
 1. By default, this method returns an empty string.
-2. Override this new method and return the "id" of the current operation. 
+2. Override this new method and return the "ID" of the current operation. 
 
 For example, if the operation is confirming a sales order, then return the "SalesId" of the order. 
 
