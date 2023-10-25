@@ -416,72 +416,72 @@ Follow these steps on the machine where the proxy service is hosted.
 
     ![Adding permissions to the service user.](../media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 23. Enable Client certificate renegotiation.
-	1. Run **Windows PowerShell** as administrator.
-	2. Execute next command to open netsh:
+    1. Run **Windows PowerShell** as administrator.
+    2. Execute next command to open netsh:
 	
-	```powershell
+    ```powershell
     netsh
     ```
 	
-	3. Run next command to see current binding parameters.
+    3. Run next command to see current binding parameters.
 	
-	```powershell
+    ```powershell
     http show sslcert ipport=0.0.0.0:443
     ```
 	
-	4. Copy **Certificate hash** value from the output and ensure it is equal to the server certificate thumbprint.
+    4. Copy **Certificate hash** value from the output and ensure it is equal to the server certificate thumbprint.
 	
-	![Showing current binding parameters.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-show.png)
+    ![Showing current binding parameters.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-show.png)
 	
-	5. Execute next command to remove current binding.
+    5. Execute next command to remove current binding.
 	
-	```powershell
+    ```powershell
     http delete sslcert ipport=0.0.0.0:443
     ```
 	
-	6. Execute next command to add new binding with the same certificate and different parameters. Substitute **CertificateThumbprint** placeholder in the command with the **Certificate hash** value from previous commands.
+    6. Execute next command to add new binding with the same certificate and different parameters. Substitute **CertificateThumbprint** placeholder in the command with the **Certificate hash** value from previous commands.
 	
-	```powershell
+    ```powershell
     http add sslcert ipport=0.0.0.0:443 certhash=CertificateThumbprint appid={4dc3e181-e14b-4a21-b022-59fc669b0914} certstorename=My verifyclientcertrevocation=Disable VerifyRevocationWithCachedClientCertOnly=Disable clientcertnegotiation=Enable
     ```
 	
-	![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-delete-add.png)
+    ![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-delete-add.png)
 	
-	7. Run next command to restart IIS.
+    7. Run next command to restart IIS.
 	
-	```powershell
+    ```powershell
     exit
     iisreset
     ```
 	
-	![Performing IIS reset.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-iisreset.png)
+    ![Performing IIS reset.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-iisreset.png)
 		
 ## Certificate rotation
 
 1. Rotate App registration service-to-service (S2S) authentication certificate.
-	1. Generate new certificate by running the PowerShell script from the [Create an app registration](../e-invoicing-ita-fatturapa-get-started.md#create-an-app-registration) section of this article.
-	2. In the [Azure portal](https://portal.azure.com), go to **App registrations** and find the app created for S2S.
-	3. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer file for S2S authentication.
-	4. Go to Key Vault and select the certificate you uploaded before that mentioned as **App Registration Certificate**. Select **New Version**.
+    1. Generate new certificate by running the PowerShell script from the [Create an app registration](../e-invoicing-ita-fatturapa-get-started.md#create-an-app-registration) section of this article.
+    2. In the [Azure portal](https://portal.azure.com), go to **App registrations** and find the app created for S2S.
+    3. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer file for S2S authentication.
+    4. Go to Key Vault and select the certificate you uploaded before that mentioned as **App Registration Certificate**. Select **New Version**.
 	
-	![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
+    ![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
 	
-	5. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
+    5. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
 2. Rotate proxy server certificate.
-	1. Request new server sertificate from the tax autority portal.
-	2. Install the .pfx certificate file into Local Machine\Personal storage.
-	3. Open IIS Manager, select the proxy website in the tree on the left part of the window, go to **Bindings** on the right part of the window.
-	4. Select existing binding and then **Edit**. Select newly added certificate for the **SSL certificate** field and then **OK**.
-	5. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
+    1. Request new server sertificate from the tax autority portal.
+    2. Install the .pfx certificate file into Local Machine\Personal storage.
+    3. Open IIS Manager, select the proxy website in the tree on the left part of the window, go to **Bindings** on the right part of the window.
+    4. Select existing binding and then **Edit**. Select newly added certificate for the **SSL certificate** field and then **OK**.
+    5. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
         `<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
 		
-	6. Perform **Enable Client certificate renegotiation** steps from the [Set up the SDI Proxy service in IIS](../e-invoicing-ita-fatturapa-get-started.md#set-up-the-sdi-proxy-service-in-iis) section of this article.
+    6. Perform **Enable Client certificate renegotiation** steps from the [Set up the SDI Proxy service in IIS](../e-invoicing-ita-fatturapa-get-started.md#set-up-the-sdi-proxy-service-in-iis) section of this article.
 3. Rotate Client identity certificate.
-	1. Request new client certificate from the tax autority portal.
-	2. In the [Azure portal](https://portal.azure.com), go to **Key Vaults** and find the key vault linked to the service.
-	3. In the **Certificates** section find the client identity certificate and select it. Then select **New Version**.
-	4. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
+    1. Request new client certificate from the tax autority portal.
+    2. In the [Azure portal](https://portal.azure.com), go to **Key Vaults** and find the key vault linked to the service.
+    3. In the **Certificates** section find the client identity certificate and select it. Then select **New Version**.
+    4. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
 	
 ## Privacy notice 
 
