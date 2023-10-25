@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Human Resources 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.38 preview release.
 author: twheeloc
-ms.date: 10/04/2023
+ms.date: 10/24/2023
 ms.topic: faq
 ms.prod: 
 ms.technology: 
@@ -41,8 +41,19 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 
 The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
-| Feature area | Feature name | More information |
+| Feature name |Overview | Release status |
 |--------------|--------------|------------------|
+|Set primary position for hire	|Enabling this feature helps organizations to assign a primary position while hiring a worker. |On by default.|
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
+
+| Feature name | More information |
+|--------------|------------------|
+|Configure multiple leave types on a single leave plan|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](/human-resources/hr-leave-and-absence-plans).|
+|Configure leave units per leave type|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. When enabled, the units for each leave type can be set to either **Hours** or **Day**. The default seeting is **Hours**. It's important for the administrators to look for this feature getting enabled in their environments. For more information on this feature, see [Leave and absence types](/human-resources/hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type). |
+|Open ended leave|This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled.| 
 
 
 
