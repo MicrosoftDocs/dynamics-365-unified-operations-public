@@ -23,7 +23,7 @@ This article describes the price change tracking feature in Microsoft Dynamics 3
 A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows (note that the two examples aren't out-of-the-box features):
 
 - A retail store must update shelf labels so that they reflect changed prices.
-- A e-commerce website alerts shoppers about a price drop for items in their shopping carts.
+- An e-commerce website alerts shoppers about a price drop for items in their shopping carts.
 
 The Commerce price change tracking feature provides a mechanism for monitoring products that have changed prices and generating data feeds to surface that information.
 
