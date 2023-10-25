@@ -60,6 +60,9 @@ This section complements the [Country/region-specific configuration of applicati
     - Certificate for digital signature (Optional)
 
     For more information, see the [Create a digital certificate secret](../e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
+	
+> [!NOTE]
+> Client identity certificate has an expiration date. Please check this date and arrange a task to obtain new certificate when the current one is about to expire. To establish proper rotation of the certificates used for this integration, please refer to the **Certificate rotation** section of the article.
 
 5. Select **Chain of certificates**.
 6. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**), and then, in the **Certificates** section, add the following certificates in the order that they're listed in here:
@@ -190,6 +193,9 @@ This section provides information that will help you set up and configure the pr
 
 1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
 
+> [!NOTE]
+> The certificate is set to expire in 12 months. You may extend this by modifying **NotAfter** parameter value. To establish proper rotation of the certificates used for this integration, please refer to the **Certificate rotation** section of the article.
+
     ```powershell
     $certOutputLocation = "C:\certs\proxytest"
     $certName = "sdiProxyClientS2SCert"
@@ -200,7 +206,7 @@ This section provides information that will help you set up and configure the pr
 
     $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
 
-    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
+    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter (Get-Date).AddMonths(12)
 
     Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
     Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
@@ -366,6 +372,9 @@ Follow these steps on the machine where the proxy service is hosted.
 6. In the **Import Certificate** dialog box, in the **Certificate file (.pfx)** field, specify the path of the .pfx file for the proxy server certificate. Usually, this file is generated while you perform registration of the SDICoop service channel, and it's named sdiproxy.com.pfx, where sdiproxy.com is a DNS that's assigned to the proxy VM.
 
     ![Specifying the proxy service certificate file.](../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
+	
+> [!NOTE]
+> Server certificate has an expiration date. Please check this date and arrange a task to obtain new certificate when the current one is about to expire. To establish proper rotation of the certificates used for this integration, please refer to the **Certificate rotation** section of the article.
 
 7. Select and hold (or right-click) **Sites**, and then select **Add website**.
 8. In the **Add Website** dialog box, in the **Site name** field, enter a name for the site.
@@ -406,7 +415,74 @@ Follow these steps on the machine where the proxy service is hosted.
     4. Repeat steps 1 through 3 for the other folder.
 
     ![Adding permissions to the service user.](../media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
+23. Enable Client certificate renegotiation.
+	1. Run **Windows PowerShell** as administrator.
+	2. Execute next command to open netsh:
+	
+	```powershell
+    netsh
+    ```
+	
+	3. Run next command to see current binding parameters.
+	
+	```powershell
+    http show sslcert ipport=0.0.0.0:443
+    ```
+	
+	4. Copy **Certificate hash** value from the output and ensure it is equal to the server certificate thumbprint.
+	
+	![Showing current binding parameters.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-show.png)
+	
+	5. Execute next command to remove current binding.
+	
+	```powershell
+    http delete sslcert ipport=0.0.0.0:443
+    ```
+	
+	6. Execute next command to add new binding with the same certificate and different parameters. Substitute **CertificateThumbprint** placeholder in the command with the **Certificate hash** value from previous commands.
+	
+	```powershell
+    http add sslcert ipport=0.0.0.0:443 certhash=CertificateThumbprint appid={4dc3e181-e14b-4a21-b022-59fc669b0914} certstorename=My verifyclientcertrevocation=Disable VerifyRevocationWithCachedClientCertOnly=Disable clientcertnegotiation=Enable
+    ```
+	
+	![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-delete-add.png)
+	
+	7. Run next command to restart IIS.
+	
+	```powershell
+    exit
+    iisreset
+    ```
+	
+	![Performing IIS reset.](../media/e-invoicing-ita-fatturapa-get-started-proxy-netsh-iisreset.png)
+		
+## Certificate rotation
 
+1. Rotate App registration service-to-service (S2S) authentication certificate.
+	1. Generate new certificate by running the PowerShell script from the [Create an app registration](../e-invoicing-ita-fatturapa-get-started.md#create-an-app-registration) section of this article.
+	2. In the [Azure portal](https://portal.azure.com), go to **App registrations** and find the app created for S2S.
+	3. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer file for S2S authentication.
+	4. Go to Key Vault and select the certificate you uploaded before that mentioned as **App Registration Certificate**. Select **New Version**.
+	
+	![Adding new binding.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
+	
+	5. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
+2. Rotate proxy server certificate.
+	1. Request new server sertificate from the tax autority portal.
+	2. Install the .pfx certificate file into Local Machine\Personal storage.
+	3. Open IIS Manager, select the proxy website in the tree on the left part of the window, go to **Bindings** on the right part of the window.
+	4. Select existing binding and then **Edit**. Select newly added certificate for the **SSL certificate** field and then **OK**.
+	5. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
+
+        `<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
+		
+	6. Perform **Enable Client certificate renegotiation** steps from the [Set up the SDI Proxy service in IIS](../e-invoicing-ita-fatturapa-get-started.md#set-up-the-sdi-proxy-service-in-iis) section of this article.
+3. Rotate Client identity certificate.
+	1. Request new client certificate from the tax autority portal.
+	2. In the [Azure portal](https://portal.azure.com), go to **Key Vaults** and find the key vault linked to the service.
+	3. In the **Certificates** section find the client identity certificate and select it. Then select **New Version**.
+	4. Select **Method of certificate creation** = **Import**, specify path to .pfx file and password and select **Create**.
+	
 ## Privacy notice 
 
 Enabling the **Italian electronic invoice** feature might require that limited data be sent. This data includes the organization's tax registration ID. An administrator can enable and disable the Italian electronic invoice feature. To disable the feature, follow these steps.
