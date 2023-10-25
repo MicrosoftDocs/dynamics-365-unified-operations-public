@@ -355,6 +355,9 @@ Follow these steps on the machine where the proxy service is hosted.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – Specify the name of the service environment that's configured in RCS.
         - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
+        > [!TIP]
+        > **InvoicingServiceClientOptions.Endpoint** and **InvoicingServiceClientOptions.ServiceEnvironmentId** value could be copied from Finance & Operations > Organization Administration > Setup > Electronic document parameters > Electronic Invoicing.
+		
     3. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
         `<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
@@ -439,7 +442,7 @@ Follow these steps on the machine where the proxy service is hosted.
     http delete sslcert ipport=0.0.0.0:443
     ```
 	
-    6. Execute next command to add new binding with the same certificate and different parameters. Substitute **CertificateThumbprint** placeholder in the command with the **Certificate hash** value from previous commands.
+    6. Execute next command to add new binding with the same certificate and different parameters. Substitute **CertificateThumbprint** placeholder in the command with the **Certificate hash** value from previous commands without spaces or any other symbols.
 	
     ```powershell
     http add sslcert ipport=0.0.0.0:443 certhash=CertificateThumbprint appid={4dc3e181-e14b-4a21-b022-59fc669b0914} certstorename=My verifyclientcertrevocation=Disable VerifyRevocationWithCachedClientCertOnly=Disable clientcertnegotiation=Enable
