@@ -26,77 +26,76 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Real async feature enhancements
+
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes the real async feature enhancements to SysOperations that allows operations to be executed asynchronously without blocking the client as the regular SysOperations do.
-This allows users to initiate multiple operations simultaneously and improve the overall performance. The status of Async operations can be viewed on the same screen. 
+This article describes the real async feature enhancements to SysOperations. These enhancements enable operations to be run asynchronously without blocking the client as the regular SysOperations do. Therefore, users can initiate multiple operations simultaneously. In this way, the enhancements help improve overall performance.
 
- 
-To use real async operations, you must extend the SysOperationServiceController class. 
-For more information about the SysOperations framework, see [SysOperation Framework Overview](../../dynamicsax-2012/developer/sysoperation-framework-overview.md). 
+The status of async operations can be viewed on the same page.
 
-## Enable the Real Async feature 
+To use real async operations, you must extend the `SysOperationServiceController` class.
 
-1. In **Feature management**, click **Check for updates**. Enable **SysRealAsyncOperationsFeature**. 
-2. After enabling the feature in Feature Management, go to **Client performance options**, select the **Enable real async operations** option.  
+For more information about the SysOperation framework, see [SysOperation Framework Overview](../../dynamicsax-2012/developer/sysoperation-framework-overview.md).
 
-### How to uptake the real async feature 
+## Enable the real async feature
 
-To use real async operations, you must extend SysOperationServiceController class as you normally do to implement SysOperation. 
-After extending the SysOperationServiceController class, override the following methods to enable real async for your service operation class: 
+1. In the **Feature management** workspace, select **Check for updates**.
+2. Enable **SysRealAsyncOperationsFeature**.
+2. After you've enabled the feature in Feature management, go to **Client performance options**, and select the **Enable real async operations** option.
 
-Method 1: canRunAsRealAsync 
+### Uptake the real async feature
 
-1. By default, this method returns false. 
-2. For end users to control execution type, introduce a feature in **Feature management** for each operation that must be processed in real async. Confirm that this feature is enabled in your operation class. 
-3. To enable/disable by default, return true/false. 
+To use real async operations, you must first extend the `SysOperationServiceController` class, as you normally do to implement SysOperations. Then override the following methods to enable real async operations for your service operation class.
 
-Example: 
-public boolean canRunAsRealAsync() 
-    { 
-        if (featureManagementForSalesOrderConfirmationRealAsync::isEnabled()) 
-        { 
-            // This operation can run through real async 
-            return true; 
-        } 
-        else 
-        { 
-            return false; 
-        } 
-    } 
+#### Method 1: canRunAsRealAsync
 
-Method 2: canSysRealAsyncOperationId 
+By default, the `canRunAsRealAsync` method returns *false*.
 
-1. By default, this method returns an empty string.
-2. Override this new method and return the "ID" of the current operation. 
+1. To enable users to control the execution type, introduce a feature in Feature management for each operation that must be processed in real async. Then confirm that the feature is enabled in your operation class.
+2. To enable user control of the execution type by default, return *true*. To disable it by default, return *false*.
 
-For example, if the operation is confirming a sales order, then return the "SalesId" of the order. 
+Here's an example.
 
-Example: 
-public SysRealAsyncOperationId getSysRealAsyncOperationId() 
-    { 
-        Common sourceTable = this.parmSourceTable(); 
-    str orderId; 
+```
+public boolean canRunAsRealAsync()
+{
+    if (featureManagementForSalesOrderConfirmationRealAsync::isEnabled())
+    {
+        // This operation can run through real async
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+```
 
-    if (sourceTable && sourceTable is SalesTable) 
-    { 
-        SalesTable salesTable = sourceTable; 
-        orderId = salesTable.SalesId; 
-    } 
-    else 
-    { 
-        orderId = this.parmId(); 
-    } 
-    return orderId; 
-} 
+#### Method 2: canSysRealAsyncOperationId
 
+By default, the `canSysRealAsyncOperationId` method returns an empty string.
 
+- Override this new method, and return the ID of the current operation. For example, if the operation is confirming a sales order, return the `SalesId` value of the order.
 
+Here's an example.
 
+```
+public SysRealAsyncOperationId getSysRealAsyncOperationId()
+{
+    Common sourceTable = this.parmSourceTable();
+    str orderId;
 
-
-
-
-
+    if (sourceTable && sourceTable is SalesTable)
+    {
+        SalesTable salesTable = sourceTable;
+        orderId = salesTable.SalesId;
+    }
+    else
+    {
+        orderId = this.parmId();
+    }
+    return orderId;
+}
+```
