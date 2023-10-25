@@ -91,7 +91,7 @@ The deferred async receiving processing will automatically be running as soon as
 - Error
 - Received
 
-Via the _Batch job processes_ button you can view the related background tasks and in case of having a failing batch job (_Execute deferred receiving [License plate id]_) the related _Mixed license plate receiving status_ becomes equal to "Error" and you can view the reason by selecting the _Processing errors_ button and take the needed actions like for example updating a line quantity or deleting a line following a manual update to run the process again by selecting the _Complete license plate_ button.
+In case of having a failing batch job (_Execute deferred receiving [License plate id]_) the related _Mixed license plate receiving status_ becomes equal to "Error" and you can view the reason by selecting the _Processing errors_ button and take the needed actions like for example updating a line quantity or deleting a line following a manual update to run the process again by selecting the _Complete license plate_ button.
 
 > [!NOTE]
 > Like the _Mixed license plate receiving_ mobile device activity code you can print license plate labels as part of the _deferred receiving_ process. You control at which point in time the labels should get generated and printed via the _Label printing on confirming receiving_ and the _Label printing on deferred receiving_ fields on the _Deferred receiving policies_ page.
