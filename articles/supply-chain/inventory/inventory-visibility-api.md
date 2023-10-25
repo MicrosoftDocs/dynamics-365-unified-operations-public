@@ -1002,7 +1002,7 @@ The following example shows a successful response.
 
 ```
 
-### <a name="Exact_query_with_product_search"></a>Exact query with product search
+### <a name="exact-query-with-product-search"></a>Exact query with product search
 
 ```txt
 Path:

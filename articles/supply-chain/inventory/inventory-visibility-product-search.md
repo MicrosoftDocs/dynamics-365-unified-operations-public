@@ -24,7 +24,10 @@ This feature is accessible both through the Inventory Visibility app in Power Ap
 
 ## Prerequisites
 
-The product search service requires Supply Chain Management 10.0.36 or later.
+To use the product search service, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.36 or later.
+- You must be running Inventory Visibility version 1.2.2.54 or newer.
 
 ## Install the product search service
 
@@ -34,7 +37,7 @@ The product search service is included in the current version of the Inventory V
 
 ### Existing Inventory Visibility installations
 
-If your system is already running Inventory Visibility version 1.2.2.54 or newer, then you must uninstall Inventory Visibility in your Microsoft Dynamics Lifecycle Services (LCS) project and then install the newest version. See also [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+If your system is running Inventory Visibility version 1.2.2.53 or older, then you must uninstall Inventory Visibility in your Microsoft Dynamics Lifecycle Services (LCS) project and then install the newest version. See also [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Configure the product search service
 
