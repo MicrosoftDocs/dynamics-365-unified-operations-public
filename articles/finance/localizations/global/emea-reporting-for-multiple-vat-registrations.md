@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 261354
@@ -29,6 +29,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Finland](../finland/emea-reporting-multiple-vat-registrations-fi.md)
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
+- [Italy](../italy/emea-reporting-multiple-vat-registrations-it.md)
 - [Netherlands](../netherlands/emea-reporting-multiple-vat-registrations-nl.md)
 - [Norway](../norway/emea-reporting-multiple-vat-registrations-no.md)
 - [Poland](../poland/emea-reporting-multiple-vat-registrations-pl.md)
@@ -139,6 +140,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
     | 10.0.34 | The Czech Republic | Intrastat (CZ).version.24.6 |
+    | 10.0.38<br>10.0.37 - build 10.0.1725.25<br>10.0.36 - build 10.0.1695.56 | Italy | Intrastat (IT).version.24.36 |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
