@@ -32,9 +32,13 @@ ms.dyn365.ops.version: Platform Update 33
 
 > [!NOTE]
 >
-> **Export to Data Lake** add-in is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) New customers may not be able to install the Export to data Lake add-in after this date.
-> 
-> Existing customers may transition to Synapse Link by following guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink). Existing customers can continue to install and use **Export to Data Lake** add-in until the service is decommissioned on 1-Nov-2024. 
+> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in Finance and Operations, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Dynamics 365 apps.
+>
+>We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
+>
+>If you are a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
+>
+> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these additional improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
 >
 > The **Export to Data Lake** feature isn't available in Tier-1 (developer) environments. You must have a cloud-based Tier-2 or higher sandbox environment to enable this feature. 
 > 
