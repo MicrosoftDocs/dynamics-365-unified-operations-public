@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.39 (February 2024)
+title: Preview features in Dynamics 365 Commerce 10.0.38 (February 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.38. 
 author: josaw1
 ms.date: 10/27/2023
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.38
 [!include [banner](../includes/preview-banner.md)]
 
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.37. This version has a build number of 10.0.1725 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.38. This version has a build number of 10.0.NNNN and is available on the following schedule:
 
 - **Preview of release:** October 2023
 - **General availability of release (self-update):** December 2023
@@ -31,18 +31,20 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Payments | Aggregated payments workspace in Commerce headquarters | An aggregated **Payments** workspace was added to headquarters workspaces to simplify analysis of payment configurations and comparison of settings across your legal entity. The new workspace provides options to review all call centers, online stores, and retail stores, and provides a view of various payment connector settings.You can adjust and save columns in the grid per saved view, and you can print from the workspace. Payment-related quick links were also added so you can quickly navigate to key configuration pages in Commerce headquarters. | Default |
+|B2B   | Enable site admins to control which business partners can access specific B2B ecommerce websites. | Site admins can now control which business partners have access to specific B2B ecommerce websites. To do so, a site admin must add the online channels of type "B2B" to the customer hierarchy record of the business partner.<p><p>[Manage B2B business partners using customer hierarchies](../b2b/partners-customer-hierarchies.md)| Site admin |
+| Copilot | [Generate product enrichment content for e-commerce sites with Copilot in site builder](/release-plan/2023wave2/commerce/dynamics365-commerce/generate-engaging-product-content-e-commerce-websites-using-copilot-dynamics-365-commerce).| Transform your product storytelling and marketing strategy with copilot functionality. This feature allows to you leverage AI-generated product marketing and enrichment content tailored to engage and delight your diverse customer base. | Admin must enable Copilot in site builder through feature configuration available in **Tenant settings**. |
+| POS | Cash management for multiple currencies in a store | Cash management operations in the store, such as declare start amount, tender removal, and float entry now support multiple currencies, enabling retailers to manage cash across various currencies in a store. | By default |
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md). 
+Microsoft Dynamics 365 Commerce version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md). 
   
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.37, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=838613).
+For information about the bug fixes included in each of the updates that are part of version 10.0.38, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](UPDATE).
 
 ### Dynamics 365 and industry clouds: 2023 release wave 2 plan
 
