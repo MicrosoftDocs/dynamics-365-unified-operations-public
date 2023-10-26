@@ -41,7 +41,7 @@ In the flow for mixed license plate receiving, you can display the list of items
 
 Mixed license plate receiving is a mobile device receiving flow to register and create work for multiple lines/items at the same time. This is useful if you receive inbound license plates with multiple items.
 
-Besides the specific _Mixed license plate receiving_ mobile device flow, the [_deferred receiving process_](#deferred-receiving-processing) uses the data entities part of the _Mixed license plate receiving_ page.  
+Besides the specific *Mixed license plate receiving* mobile device flow, the [*deferred receiving process*](#deferred-receiving-processing) uses the data entities part of the *Mixed license plate receiving* page.  
 
 ## How to set up mixed license plate receiving
 
@@ -64,11 +64,11 @@ The following options for identifying the source document lines are available:
 - Load item receiving
 
 > [!NOTE]
-> You can add multiple items to a license plate for all the source document line identification methods. However, although you can change the receiving order on a single license plate during the receiving process for all the other methods, you can't change the selected load for the _Load item receiving_ method.
+> You can add multiple items to a license plate for all the source document line identification methods. However, although you can change the receiving order on a single license plate during the receiving process for all the other methods, you can't change the selected load for the *Load item receiving* method.
 
-## <a name="deferred-receiving"></a>Deferred receiving processing
+## <a name="deferred-receiving-processing"></a>Deferred receiving processing
 
-Besides using the _Mixed license plate receiving_ and _Mixed license plate receiving and put away_ mobile device menu items, to quickly record incoming inventory and get it inventory on-hand group-registered against a license plate, you can use the following below mobile device menu item flows to run a deferred receiving process:
+Besides using the *Mixed license plate receiving* and *Mixed license plate receiving and put away* mobile device menu items, to quickly record incoming inventory and get it inventory on-hand group-registered against a license plate, you can use the following below mobile device menu item flows to run a deferred receiving process:
 
 - Purchase order item receiving
 - Purchase order line receiving
@@ -76,25 +76,25 @@ Besides using the _Mixed license plate receiving_ and _Mixed license plate recei
 - Transfer order line receiving
 - Load item receiving
 
-With the deferred receiving process you can for example optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** for your mobile device menu item. In a scenario with several thousand serial numbers the system can record the serial numbers in a quick manner and store the information into the _mixed license plate receiving_ entities. A background process will following process the actual inventory on-hand updates and work creation processes and thereby enabling the warehouse workers to continue to do other work while this process runs in the background. Deferred receiving processing is useful for warehouse processes where it is not the same warehouse worker making the inbound receiving following an immediately put-away process.
+With the deferred receiving process you can for example optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** for your mobile device menu item. In a scenario with several thousand serial numbers the system can record the serial numbers in a quick manner and store the information into the *mixed license plate receiving* entities. A background process will following process the actual inventory on-hand updates and work creation processes and thereby enabling the warehouse workers to continue to do other work while this process runs in the background. Deferred receiving processing is useful for warehouse processes where it is not the same warehouse worker making the inbound receiving following an immediately put-away process.
 
 ### Deferred receiving policy
 
-Go to one of the above mobile device menu items and find the **Deferred receiving policy ID** field. From here you can assign or go to the policy settings **Warehouse management > Setup > Mobile device > Deferred receiving policies** controlling when a receiving flow will use the _deferred receiving_ processing and thereby store the recorded entries into the _Mixed license plate receiving_ entities instead of immediately processing the registration and add inventory on-hand.
+Go to one of the above mobile device menu items and find the **Deferred receiving policy ID** field. From here you can assign or go to the policy settings **Warehouse management > Setup > Mobile device > Deferred receiving policies** controlling when a receiving flow will use the *deferred receiving* processing and thereby store the recorded entries into the *Mixed license plate receiving* entities instead of immediately processing the registration and add inventory on-hand.
 
 ### Deferred receiving async processing
 
-The deferred async receiving processing will automatically be running as soon as the mobile device menu item process completes the receiving flow and thereby all the _Mixed license plate receiving_ data is available. You will be able to monitor the status of the process in the _Mixed license plate receiving_ page via the field _Mixed license plate receiving status_ which can have the following values:
+The deferred async receiving processing will automatically be running as soon as the mobile device menu item process completes the receiving flow and thereby all the *Mixed license plate receiving* data is available. You will be able to monitor the status of the process in the *Mixed license plate receiving* page via the field *Mixed license plate receiving status* which can have the following values:
 
 - Building license plate
 - Processing
 - Error
 - Received
 
-In case of having a failing batch job (_Execute deferred receiving [License plate id]_) the related _Mixed license plate receiving status_ becomes equal to "Error" and you can view the reason by selecting the _Processing errors_ button and take the needed actions like for example updating a line quantity or deleting a line following a manual update to run the process again by selecting the _Complete license plate_ button.
+In case of having a failing batch job (*Execute deferred receiving [License plate id]*) the related *Mixed license plate receiving status* becomes equal to "Error" and you can view the reason by selecting the *Processing errors* button and take the needed actions like for example updating a line quantity or deleting a line following a manual update to run the process again by selecting the *Complete license plate* button.
 
 > [!NOTE]
-> Like the _Mixed license plate receiving_ mobile device activity code you can print license plate labels as part of the _deferred receiving_ process. You control at which point in time the labels should get generated and printed via the _Label printing on confirming receiving_ and the _Label printing on deferred receiving_ fields on the _Deferred receiving policies_ page.
+> Like the *Mixed license plate receiving* mobile device activity code you can print license plate labels as part of the *deferred receiving* process. You control at which point in time the labels should get generated and printed via the *Label printing on confirming receiving* and the *Label printing on deferred receiving* fields on the *Deferred receiving policies* page.
 >
 > When printing a label before the work creation process (Label printing on confirming receiving), you will for example not be able to print details about the to-location for the license plate, because this data will not be found before the deferred receiving async processing has happened.
 

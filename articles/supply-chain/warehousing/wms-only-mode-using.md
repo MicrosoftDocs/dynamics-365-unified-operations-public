@@ -127,7 +127,7 @@ To view all the background processes that you have running, go to [**System admi
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you probably have to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
 
-The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data#progress-data-and-business-events) and read the data via the following data entities:
+The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) and read the data via the following data entities:
 
 - `ShipmentReceiptJournalHeaders` - The Shipment receipt header data
 - `ShipmentReceiptJournalLines` - The Shipment receipt line data
@@ -169,7 +169,7 @@ To view all the background processes that you have running, go to [**System admi
 > [!NOTE]
 > If no language is defined for an order, the report uses the company-specific language settings.
 
-The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data#progress-data-and-business-events) and read the data via the following data entities:
+The external systems can be informed when new data is available via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) and read the data via the following data entities:
 
 - `ShipmentPackingSlipJournalHeaders` - The Shipment packing slip header data
 - `ShipmentPackingSlipJournalLines` - The Shipment packing slip line data
