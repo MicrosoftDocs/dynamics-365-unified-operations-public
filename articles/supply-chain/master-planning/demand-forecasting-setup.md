@@ -214,12 +214,10 @@ This section describes how to set up your machine learning workspace by using an
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore, and compute resources. However, you must still perform several steps manually by following the remaining steps of this procedure:
-    - Configure a created datastore as default.
-    - Create the required pipelines (pipelines provide a way to start forecasting scripts from Supply Chain Management.).
-1. Use the following procedure to set up a datastore created by the script as a default datastore.
+1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore named workspaceblobdemplan, and compute resources. However, you must still perform several steps manually by following the remaining steps of this procedure in order to configure the created datastore as default and create the required pipelines (pipelines provide a way to start forecasting scripts from Supply Chain Management).
+1. Use the following procedure to set up the datastore workspaceblobdemplan created by the script as a default datastore.
     -	In Azure Machine Learning workspace, select Datastores in the left pane navigator;
-    -	Select a datastore of the Azure Blob Storage type that points to the demplan-azureml Blob storage container.
+    -	Select the datastore of the Azure Blob Storage type that points to the demplan-azureml Blob storage container.
     -	Make your new datastore as the default datastore by opening its details and selecting Set as default datastore.
 
 1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
