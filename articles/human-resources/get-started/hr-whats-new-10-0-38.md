@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.38
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.38 (February 2023)
+# What's new or changed in Dynamics 365 Human Resources 10.0.38 (February 2024)
 
 [!include [banner](../../includes/preview-banner.md)]
 
@@ -35,7 +35,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 
 - **Preview of release:** October 2023
 - **General availability of release (self-update):** December 2023
-- **General availability of release (auto-update):** February 2023
+- **General availability of release (auto-update):** February 2024
 
 ## Features included in this release
 
