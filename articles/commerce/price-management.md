@@ -88,7 +88,7 @@ The price and a discount can come from two different pricing priorities, because
 
 To use pricing priority for prices, you must assign a pricing priority to a price group and then create a sales price trade agreement for that price group.
 
-The pricing priority feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, if a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or because the local market bears a higher price.
+The pricing priority feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or because the local market bears a higher price.
 
 As was described in the "Best price" section of this article, the pricing engine typically selects the lower of two prices. Therefore, the retailer is prevented from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the pricing priority feature was introduced, the retailer had to define prices for every product two times and not assign both price groups. Alternatively, the retailer had to create extra price groups to isolate the products that have higher prices from products that have the usual, lower prices.
 
@@ -100,7 +100,7 @@ Let's look at an example where store prices override other prices.
 
 A national/regional retailer sets most prices per region, and it has four regions: North east, South east, Mid-west and West. It has identified several high-cost markets that can support higher prices. These markets are in New York City, Chicago, and the San Francisco Bay area.
 
-For this example, we'll use the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
+This example uses the North east region. Store 1 is in Boston, and store 2 is in Manhattan. For the Boston store, two price groups are linked to the channel: North East and Store 1. For the Manhattan store, three price groups are linked to the channel: North East, NYC, and Store 2.
 
 The retailer sets up two pricing priorities: High cost has a priority number of 5, and Store prices has a priority number of 10. (Remember that, by default, the pricing priority is 0 \[zero\], and a price or discount that has a higher priority number is used before a price or discount that has a lower priority number.) For the North East price group, the pricing priority is left at the default value of **0** (zero). For the NYC price group, the pricing priority is set to **5**, because New York City is a high-cost market. For the Store 1 and Store 2 price groups, the pricing priority is set to **10**.
 
@@ -217,12 +217,13 @@ The Commerce pricing engine **doesn't support** the following pricing features:
 
 - Attribute-based pricing isn't supported.
 - Vendor discount pass-through isn't supported.
-- The generic currency feature isn't supported that is, even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement is only considered valid for the currency defined on the trade agreement.
-- The standard Supply Chain Management pricing engine supports the pricing calculation based on the "Requested ship date" and "Requested receipt date" along with the current date. However, retail pricing currently doesn't support these values. The reason is that for B2C scenarios customers don't expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations, it's common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing kicks in only if the application user is added as a call center user, so the retailers can assign certain users who work with the Supply Chain Management pricing and assign a few that work with the Retail pricing, that is, these users should be added as call center users. Additionally, the **Use today's date for calculating prices** property in the **Commerce parameters > pricing and discounts > Miscellaneous** section must be turned on. This way they can keep the using accounts receivable parameter value for Requested ship date or Requested receipt date for Supply Chain Management pricing, but the retail pricing keeps using the today's date for pricing calculation.
-- For trade agreements, **only** below dimensions are supported in the Commerce pricing engine:
-  - Product dimensions: Size, Style, Color, and  Configuration.
-  - Inventory dimensions: Site, and Warehouse.
-  - Tracking dimensions: Serial number.
+- The generic currency feature isn't supported. In other words, even if a trade agreement has the **Include generic currency** toggle turned on, the trade agreement is still considered valid only for the currency that's defined in it.
+- The standard Supply Chain Management pricing engine supports the pricing calculation that's based on the requested ship date and the requested receipt date, together with the current date. However, retail pricing currently doesn't support these values. The reason is that, for B2C scenarios, customers don't expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations, it's common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing goes into effect only if the application user is added as a call center user, so that the retailers can assign specific users who work with the Supply Chain Management pricing and also assign a few who work with retail pricing. In other words, these users should be added as call center users. Additionally, the **Use today's date for calculating prices** property must be turned on in the **Miscellaneous** section on the **Pricing and discounts** tab of the **Commerce parameters** page. In this way, users can continue to use the Accounts receivable parameter value for the requested ship date or requested receipt date for Supply Chain Management pricing. However, the retail pricing continues to use today's date for pricing calculations.
+- For trade agreements, **only** the following dimensions are supported in the Commerce pricing engine:
+
+    - **Product dimensions:** Size, Style, Color, and Configuration
+    - **Inventory dimensions:** Site and Warehouse
+    - **Tracking dimensions:** Serial number
 
 In addition, **only** the Commerce pricing engine supports the following pricing features:
 
