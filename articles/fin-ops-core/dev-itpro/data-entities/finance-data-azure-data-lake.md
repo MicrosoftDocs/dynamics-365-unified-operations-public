@@ -31,7 +31,15 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The **Export to Data Lake** feature is generally available in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, India, Latin America, and Japan regions. If your finance and operations environment is in any of those regions, you will be able to install the **Export to Data Lake** add-in in it. Microsoft will enable this feature in additional regions in the future. You can join the [Synapse Link for Dynamics preview feedback Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=32768909312&view=all) to stay in touch and ask questions that will help you understand the feature and upcoming improvements.
+>
+> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in Finance and Operations, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Dynamics 365 apps.
+>
+>We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
+>
+>If you are a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
+>
+> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these additional improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
+>
 
 The **Export to Data Lake** feature lets you copy data from your finance and operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your finance and operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
