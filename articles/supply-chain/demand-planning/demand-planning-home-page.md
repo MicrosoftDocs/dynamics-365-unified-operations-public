@@ -24,7 +24,7 @@ The Demand planning app for Microsoft Dynamics 365 Supply Chain Management is Mi
 The Demand planning app provides the following capabilities:
 
 - **A no-code approach** to demand modeling and planning configuration. Flexible building blocks enable the vast majority (over 85 percent) of demand planners who aren't data scientists to do what-if planning and analyze, optimize, and compare scenarios in minutes.
-- **Seamless, on-the-fly aggregation and disaggregation**. Therefore, planners can edit forecasts at the corporate or product group level, and then zoom in and instantly see the impact at the regional and stock keeping unit (SKU) levels.
+- **Seamless, on-the-fly aggregation and disaggregation**. Therefore, planners can edit forecasts at the corporate or product group level, and then zoom in and instantly see the impact at the regional and stockkeeping unit (SKU) levels.
 - **Improved forecast accuracy** with automatic AI parameter tuning to help ensure accurate forecasting and preprocessing. External signals enable superior forecast accuracy by considering promotions or stockouts.
 - **Disruption readiness** with interactive and fast what-if analysis. Version history enables tracking, evaluating forecast changes, and using the lessons learned to improve the decision making process.
 - **Effective collaboration throughout the planning cycle**. This capability is enabled through Microsoft Teams in-context communication, in-product commenting, and restorable versions of forecast values throughout the planning process.
@@ -38,7 +38,7 @@ The Demand planning app provides functionality for the complete demand planning 
 
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1dwCZ]
 
-1. **[Create transformation](transform-data.md)** – Transform imported data from tables into time series by identifying data columns, choosing time buckets, and shifting dates. For example, you can shift historical data from last year to next year so that you can use it as a basis for the forecast, apply multiplications, or combine the data from different systems.
+1. **[Create transformation](transform-data.md)** – Transform imported data from tables into time series by identifying data columns, choosing time buckets, and shifting dates. For example, you can shift historical data from last year to next year so that you can use it as a basis for the forecast. Alternatively, you can apply multiplications or combine data from different systems.
 1. **[Create forecasts](forecast-profiles.md)** – Use different forecasting models (including your own Azure Machine Learning model) to create a forecast, or let AI determine which forecast model works best.
 
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1d4sy]
