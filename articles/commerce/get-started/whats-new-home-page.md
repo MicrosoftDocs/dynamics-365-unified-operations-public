@@ -36,7 +36,7 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
 | 10.0.38 | 10.0.XXX| November 2023 | [Preview features in Dynamics 365 Commerce 10.0.38](whats-new-commerce-10-0-38.md) |
-| 10.0.37 | 10.0.1725 | November 2023 | [Preview features in Dynamics 365 Commerce 10.0.37](whats-new-commerce-10-0-37.md) |
+| 10.0.37 | 10.0.1725 | November 2023 | [WHat's new or changed in Dynamics 365 Commerce 10.0.37](whats-new-commerce-10-0-37.md) |
 | 10.0.36 | 10.0.1695 | September 2023 | [What's new or changed in Dynamics 365 Commerce 10.0.36](whats-new-commerce-10-0-36.md) |
 | 10.0.35 | 10.0.1627 | July 2023 | [What's new or changed in Dynamics 365 Commerce 10.0.35](whats-new-commerce-10-0-35.md) |
 | 10.0.34 | 10.0.1591  | June 2023 | [What's new or changed in Dynamics 365 Commerce 10.0.34](whats-new-commerce-10-0-34.md) |
