@@ -47,7 +47,7 @@ Business performance analytics has the following prerequisites:
 
 ### System requirements
 
-A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md). Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. Ensure that the environment where you plan to install BPA is in one of the above mentioned regions.
 
 ### Version requirements
 
