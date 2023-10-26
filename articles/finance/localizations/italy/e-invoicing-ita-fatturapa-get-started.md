@@ -30,7 +30,7 @@ Before you complete the steps in this article, the following prerequisites must 
 
 - Obtain SDICoop service channel accreditation in the Exchange system (SDI) government portal.
 - Complete the steps in [Get started with Electronic invoicing](../e-invoicing-get-started.md).
-- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 3 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](../e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
+- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 5 or later) into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](../e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
 - Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](../e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the article, "Get started with Electronic invoicing service administration."
 - Optional: You can use the Digital signature certificate only for non-qualified signatures.
 
@@ -226,7 +226,7 @@ This section provides information that will help you set up and configure the pr
     4. Go to **Certificates & secrets**, select **Upload certificate**, and upload the **App Registration Certificate** .cer file for S2S authentication.
     5. Go to **Enterprise applications**, and select the app that you created.
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
-    7. The Invoicing Service team must grant the app access to the service. Send the values of the following parameters to <D365EInvoiceSupport@microsoft.com>:
+    7. The Invoicing Service team must grant the app access to the service. Open support ticket with theme **Electronic invoicing service integration with SDI. Application allow-listing** and provide the folowwing information:
 
         - AAD Tenant ID
         - LCS Environment ID
