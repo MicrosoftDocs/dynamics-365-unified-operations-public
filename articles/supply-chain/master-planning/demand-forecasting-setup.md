@@ -223,7 +223,7 @@ This section describes how to set up your machine learning workspace by using an
 1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location that you found in the previous step.
-1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API.
+1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
 1. Your workspace is now set up. Skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 
 #### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace
