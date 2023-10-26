@@ -214,10 +214,10 @@ This section describes how to set up your machine learning workspace by using an
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore (named `workspaceblobdemplan`), and compute resources.
-1. Follow these steps to set the `workspaceblobdemplan` datastore (created by the **quick_setup.ps1** script) as the default datastore.
+1. Open a PowerShell window and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore (named `workspaceblobdemplan`), and compute resources.
+1. Follow these steps to set the `workspaceblobdemplan` datastore (created by the **quick_setup.ps1** script) as a default datastore.
     1. In Azure Machine Learning studio, select **Datastores** in the navigator.
-    1. Select the datastore of type *Azure Blob Storage* that points to the `demplan-azureml` blob storage container.
+    1. Select the `workspaceblobdemplan` datastore (it's of type *Azure Blob Storage* and points to the `demplan-azureml` blob storage container).
     1. Open the details page for the `workspaceblobdemplan` datastore and select **Set as default datastore**.
 1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The **quick_setup.ps1** script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
 1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
