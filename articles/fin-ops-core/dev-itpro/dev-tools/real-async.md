@@ -53,9 +53,8 @@ To use real async operations, you must first extend the `SysOperationServiceCont
 
 By default, the `canRunAsRealAsync` method returns *false*.
 
-1. To enable users to control the execution type, introduce a feature in Feature management for each operation that must be processed in real async. Then confirm that the feature is enabled in your operation class.
-2. To enable user control of the execution type by default, return *true*. To disable it by default, return *false*.
-
+1. To turn ON/OFF the real async execution of your operation at runtime, introduce a feature for your operation and confirm the feature is enabled inside canRunAsRealAsync method. If the main Real Asyncfeature is enabled in Feature management, the returned value decides if the operation will be ran in real async or not.
+   
 Here's an example.
 
 ```
@@ -72,6 +71,8 @@ public boolean canRunAsRealAsync()
     }
 }
 ```
+
+2. Return *true* to run the operation in real async by default.
 
 #### Method 2: canSysRealAsyncOperationId
 
