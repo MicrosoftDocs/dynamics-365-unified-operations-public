@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 04/04/2023
+ms.date: 10/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
 > [!NOTE]
-> Financial reporting is available thru an add-in.  This will change the default availability of Financial reporting through Dynamics 365 Finance. For existing customers Microsoft will backfill the new Financial reporting add-In into your Microsoft Dynamics Lifecycle services environment. There will be no impact on your environments or your organization’s ability to run financial reports if you are currently using the Financial reporting module.
+> Financial reporting is available thru an add-in. This will change the default availability of Financial reporting through Dynamics 365 Finance. For existing customers, Microsoft will provide the new Financial reporting add-In into your Microsoft Dynamics Lifecycle services environment. There will be no impact on your environments or your organization’s ability to run financial reports if you are currently using the Financial reporting module.
 
-## Installing the Financial Reporting Add-In
+## Installing the Financial reporting add-in
 The Financial reporting add-in allows financial and business professionals to create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required upon installation.
 	
- 1. In LCS, ensure the  Power platform Integration is configured and available (If not configured, please follow these steps to configure (need external doc here).
+ 1. In LCS, confirm the Power platform integration is configured and available. If not configured, follow these steps to configure (need external doc here).
  2. Click on Install a new add-in and search for Financial Reporting
  3. Agree to terms of agreement and Install.
 
