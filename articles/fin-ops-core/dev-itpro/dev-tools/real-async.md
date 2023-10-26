@@ -53,7 +53,7 @@ To use real async operations, you must first extend the `SysOperationServiceCont
 
 By default, the `canRunAsRealAsync` method returns *false*.
 
-1. To turn ON/OFF the real async execution of your operation at runtime, introduce a feature for your operation and confirm the feature is enabled inside canRunAsRealAsync method. If the main Real Asyncfeature is enabled in Feature management, the returned value decides if the operation will be ran in real async or not.
+1. To turn ON/OFF the real async execution of your operation at runtime, introduce a feature for your operation and confirm the feature is enabled inside canRunAsRealAsync method. If the main Real Async feature is enabled in Feature management, the returned value decides if the operation will be ran in real async or not.
    
 Here's an example.
 
@@ -74,9 +74,9 @@ public boolean canRunAsRealAsync()
 
 2. Return *true* to run the operation in real async by default.
 
-#### Method 2: canSysRealAsyncOperationId
+#### Method 2: getSysRealAsyncOperationId
 
-By default, the `canSysRealAsyncOperationId` method returns an empty string.
+By default, the `getSysRealAsyncOperationId` method returns an empty string.
 
 - Override this new method, and return the ID of the current operation. For example, if the operation is confirming a sales order, return the `SalesId` value of the order.
 
