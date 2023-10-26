@@ -54,7 +54,7 @@ The following steps go through the information that the XML tags requires in tha
 8. Go to **Accounts receivable** > **Customers** > **All customers**.
    
    1. On the Action Pane, in the **General** group, select **Business classification**.
-   2. Create a new record to add the business classification declared in the fiscal records to each customer created.
+   2. Create a new record to add the business classification declared in the fiscal records to each customer record.
       
 9. Go to **Organization administration** > **Setup** > **LATAM** > **Document class** to configure the fiscal documents required infomration.
 
