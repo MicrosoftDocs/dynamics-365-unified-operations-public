@@ -24,9 +24,15 @@ Export to Azure Data Lake lets you connect your finance and operations environme
 
 > [!NOTE]
 >
-> Export to Data lake is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) Existing customers can transition to Synapse Link by following the guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink)
+> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in Finance and Operations, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Dynamics 365 apps.
 >
-> 
+>We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
+>
+>If you are a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
+>
+> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these additional improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
+>
+
 
 When you enable the Export to Azure Data Lake add-in, you connect your finance and operations environment to a designated data lake. Authorized users can then copy data from your finance and operations environment to that data lake. Tools such as Power BI and Azure Synapse enable analytics, business intelligence, and machine learning scenarios for data in the data lake.
 
