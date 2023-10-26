@@ -12,7 +12,7 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
       - name: What's new or changed in Finance
         items:
-        - name: What's new or changed in Finance home page           
+        - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
         - name: Finance 10.0.38 (February)
           href: get-started/whats-new-changed-10-0-38.md   
