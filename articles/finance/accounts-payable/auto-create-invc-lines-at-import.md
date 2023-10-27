@@ -4,7 +4,7 @@
 title: Generate invoice lines when you import vendor invoices
 description: This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 author: sunfzam
-ms.date: 09/10/2021
+ms.date: 10/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,16 +62,15 @@ If lines are successfully generated, the following message is logged in the vend
 
 If lines don't generate, the following error message is logged: "Automatically create invoice lines: Failed."
 
-# Import prepayment invoice
+## Import prepayment invoice
 
 The prepayment invoice can be imported directly via data entity **Vendor invoice header** when the parameter **Automatically create invoice lines** is enabled.
-- **HeaderOnlyImport** – This field must be set to **Yes** to generate lines for prepayment invoice.
-- **PurchIdRange** - This field must be filled by the **purchase order number** which has already set the prepayment amount.
-- **VENDORINVOICETYPE** - This field shall be filled by value **"VendorAdvance"** to represent it is a prepayment invoice.
-- **IMPORTEDAMOUNT** - This field shall be filled by the **amount** on the prepayment invoice.
+- **HeaderOnlyImport** – Set to **Yes** to generate lines for prepayment invoice.
+- **PurchIdRange** - The **Purchase order number** that set the prepayment amount.
+- **VENDORINVOICETYPE** - This will be **"VendorAdvance"** to indicate a prepayment invoice.
+- **IMPORTEDAMOUNT** - The **Amount** on the prepayment invoice.
 
-The import of prepayment invoice is not accpeted when:
-- The prepayment invoice has already been generated without settlement under the purchase order.
+The import of a prepayment invoice isn't accpeted when the prepayment invoice has already been generated without a settlement under the purchase order.
 
 
 
