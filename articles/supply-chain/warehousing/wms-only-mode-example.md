@@ -38,9 +38,9 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
 
-You can as well create a `Fork` of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Make sure to select the `Environment` and fill in the proper environment variables before running the `CREATE TOKEN VARIABLE` collection.
+If you like, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the `Environment` and fill in the proper environment variables before running the `CREATE TOKEN VARIABLE` collection.
 
-The example data below uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
+The example data provided in this article uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
 
 > [!NOTE]
 > To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).

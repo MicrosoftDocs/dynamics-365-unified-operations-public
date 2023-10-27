@@ -154,6 +154,6 @@ The external system will be informed about the available data via the `WHSSource
 
 ## Warehouse inventory update logs
 
-For integrations requiring a very quick inventory on-hand synchronization processes you can use the _Warehouse inventory update logs_ which is capable to collect all the inventory transaction updates resulting in on-hand updates of interest for the external systems. This could for example be a scenario where an external system can handling information about an inventory status change process within the Warehouse management only mode deployment.
+For integrations requiring a very quick inventory on-hand synchronization processes, you can use the *Warehouse inventory update log*, which is capable of collecting all the inventory transaction updates resulting in on-hand updates of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
 
-By default a **Publish warehouse inventory update log updates** background process gets enabled to run every 10 minutes, creating data for the external systems which can get consumed as part of the _WarehouseInventoryUpdateLogs_ entity. The business event `WHSInventoryUpdateLogBusinessEvent` can be used as part of this process.
+By default, the *Publish warehouse inventory update log updates* background process ist set to run every 10 minutes. It creates data that external systems can consume using the `WarehouseInventoryUpdateLogs` entity. The business event `WHSInventoryUpdateLogBusinessEvent` can be used as part of this process.

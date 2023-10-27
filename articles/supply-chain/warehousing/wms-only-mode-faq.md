@@ -82,4 +82,4 @@ If you enable Warehouse management only mode and are already running a periodic 
 
 ## Why do I receive the following error when processing a transfer order: "The accounting currency has not been defined for the ledger. You must define the currency in the Ledger form."?
 
-Besides setting up item model groups that don't use costing and general ledger settings, see [Master and reference data](wms-only-mode-exchange-data.md#master-data), you must make sure to enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the _Transfer issue_ and the _Transfer receipt_ warehouse scenarios.
+In addition to setting up item model groups that don't use costing and general ledger settings (see also [Master and reference data](wms-only-mode-exchange-data.md#master-data)), you must enable [Warehouse-specific inventory transactions](warehouse-transactions.md) for the *Transfer issue* and the *Transfer receipt* warehouse scenarios.
