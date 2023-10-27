@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Supply Chain Management
 description: This article describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 06/29/2022
+ms.date: 10/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,6 +38,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Features removed or deprecated in the Supply Chain Management 10.0.41 release
+
+### Inventory transactions support for internal warehouse operations
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Using inventory transactions to track on-hand inventory for internal warehouse operations has well-known performance issues. |
+| **Replaced by another feature?**   | Yes. [Warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) replace the older inventory transactions. |
+| **Product areas affected** | Supply Chain Management - Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Supported. As of version 10.0.41, inventory transactions will be deprecated for tracking on-hand inventory for internal warehouse operations. Existing customers will be able to continue using them after that version, but new features and bug fixes will only be implemented for [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md).</p><p>Approximately one year after that release, support for this scenario will be removed and all customers will be required to move to [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) for tracking on-hand inventory for internal warehouse operations.</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.37 release
 
@@ -73,7 +85,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, the [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) functionality is being replaced by the [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md) functionality. |
 | **Product areas affected** | Supply Chain Management - inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Being deprecated. The *Stock transfer orders that have tax on the transfer price* functionality won't receive support with bug fixes and security fixes.</p><p>After April 2023, customers will be asked to use the improved functionality, *Stock transfer orders for India*, by default. After October 2023, the *Stock transfer orders that have tax on the transfer price* functionality will no longer be available, and customers will be asked to move to the improved *Stock transfer orders for India* functionality.</p><p>For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
+| **Status** | <p>Deprecated. The *Stock transfer orders that have tax on the transfer price* functionality no longer receives support with bug fixes and security fixes.</p><p>After April 2023, customers will be asked to use the improved functionality, *Stock transfer orders for India*, by default. After October 2023, the *Stock transfer orders that have tax on the transfer price* functionality will no longer be available, and customers will be asked to move to the improved *Stock transfer orders for India* functionality.</p><p>For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
@@ -85,7 +97,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
 | **Product areas affected** | Supply Chain Management - production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Deprecated. The job card device will receive support with bug and security fixes, but feature enhancements will no longer be provided. After April 2022, the job card device will no longer be supported and customers will be asked to move to the new production floor execution interface. |
+| **Status** | Removed. As of April 2022, the job card device is no longer supported and customers must use the new production floor execution interface. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
@@ -109,7 +121,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | We recommend that customers transition to Microsoft Edge.|
 | **Product areas affected**         | All Dynamics 365 products |
 | **Deployment option**              | All|
-| **Status**                         | Deprecated. Internet Explorer 11 won’t be supported after August 2021.|
+| **Status**                         | Removed. Support for Internet Explorer 11 was removed in August 2021.|
 
 ### Use of built-in Supply Chain Management master planning engine for manufacturing scenarios
 
@@ -131,7 +143,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, Planning Optimization will replace the existing built-in Supply Chain Management master planning engine. |
 | **Product areas affected**         | Supply Chain Management - Master planning |
 | **Deployment option**              | Cloud only. Planning Optimization is not supported with on-premises deployments. |
-| **Status**                         | Deprecated. On April 1, 2021, support for distribution scenarios was discontinued for the built-in master planning engine for Supply Chain Management. Since then, customers running distribution scenarios have been required to use Planning Optimization for master planning calculations. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2021, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for distribution scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
+| **Status**                         | Removed. On April 1, 2021, support for distribution scenarios was discontinued for the built-in master planning engine for Supply Chain Management. Since then, customers running distribution scenarios have been required to use Planning Optimization for master planning calculations. For more information, see [Deprecated master planning overview](../master-planning/deprecated-master-planning-overview.md).<br><br>Since April 2021, only companies with on-premises deployments of Supply Chain Management have been able to continue using the built-in master planning engine for distribution scenarios. However, as of March 2023, Microsoft has now fully discontinued all support for the built-in master planning engine for all types of deployments. Hereafter, Microsoft will only provide support for critical blocking issues (which result in no planned orders being created or the continuous failure of built-in master planning). The built-in master planning engine is now referred to as the *deprecated master planning engine*. |
 
 ## Previous announcements about removed or deprecated features
 
