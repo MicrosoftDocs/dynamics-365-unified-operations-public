@@ -1999,36 +1999,6 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Demand planning
-      items:
-      - name: Demand planning home page
-        href: demand-planning/demand-planning-home-page.md
-      - name: Install and enable the Demand planning app
-        href: demand-planning/install-demand-planning.md
-      - name: Import data
-        items:
-        - name: View and customize tables for holding imported data
-          href: demand-planning/tables.md
-        - name: Import data into Demand planning
-          href: demand-planning/import-data.md
-      - name: Transform data
-        href: demand-planning/transform-data.md
-      - name: Calculations
-        items:
-        - name: Work with calculation profiles
-          href: demand-planning/calculation-profiles.md
-        - name: Design calculation models
-          href: demand-planning/design-calculation-models.md
-      - name: Forecasts
-        items:
-        - name: Work with forecast profiles
-          href: demand-planning/forecast-profiles.md
-        - name: Design forecast models
-          href: demand-planning/design-forecast-models.md
-      - name: Time series and planning data
-        href: demand-planning/time-series.md
-      - name: Export and download data
-        href: demand-planning/export-data.md
     - name: Mobile app (Deprecated)
       items:
       - name: Mobile app home page
