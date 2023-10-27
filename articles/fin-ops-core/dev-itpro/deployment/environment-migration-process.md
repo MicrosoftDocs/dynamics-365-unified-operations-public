@@ -43,7 +43,6 @@ Be sure to review the [availability of features in the selected target geography
 - Environment migrations aren't self-service operations and require a customer-initiated support ticket.
 - Create your support request for migration at least 10 days before you want the environment to be migrated.
 - The overall migration activity requires up to 48 hours of downtime. The overall time varies, depending on connectivity between the two geographies, and on the database and storage account size.
-- If there's a linked Dataverse environment, it required another 24 hours of downtime.
 
 ### Geo migration between Lifecycle Services endpoints
 
@@ -63,7 +62,7 @@ After sandbox migration and validation are successfully completed, the project t
 | 2 | Customer/Partner | Submit a support request to migrate a specific environment. | Create your support request for migration at least 10 days before you want the environment to be migrated. The following information is required in the ticket: customer name, Azure Active Directory (Azure AD) tenant ID, environment ID, Lifecycle Services project ID that's associated with the environment, source geography, target geography, and preferred date and time. |
 | 3 | Microsoft | Review the geo-to-geo migration request, and approve it. | |
 | 4 | Customer/Partner | Before the start of the downtime, uninstall any microservices or add-ins. | If you are relocating to a different region within the same geography, you can skip this step. |
-| 5 | Microsoft | Perform the migration. | <p>Any associated Dataverse environments are migrated during same time frame.</p><p>Premigration work begins 12 hours before the scheduled downtime. During premigration, the environment remains available for use. However, the environment is put into an **Infrastructure Maintenance** state, so that no lifecycle management operations can be performed.</p></p>During the migration, finance and operations apps and Dataverse environments are unlinked. Both environments are migrated and then relinked after the migration is completed. |
+| 5 | Microsoft | Perform the migration. | <p>Any associated Dataverse environments are migrated during same time frame.</p><p>Premigration work begins 24 hours before the scheduled downtime. During premigration, the environment remains available for use. However, the environment is put into an **Infrastructure Maintenance** state, so that no lifecycle management operations can be performed.</p></p>During the migration, finance and operations apps and Dataverse environments are unlinked. Both environments are migrated and then relinked after the migration is completed. |
 | 6 | Microsoft | Confirm with the customer/partner that the migration was completed. | |
 | 7 | Customer/Partner | Validate functionality in the migrated environment in the target geography. | Consider potential feature parity differences. |
 | 8 | Customer/Partner | Reconfigure any add-ins, Commerce/point of sale (POS), third-party integrations, and so on. | Consider changes to endpoint URLs.This step does not apply if move is for region within same geography |
