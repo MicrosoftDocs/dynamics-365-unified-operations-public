@@ -34,7 +34,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-
 ## Self-service point-in-time restore
 [!include [pitr](../includes/dbmovement-pitr.md)]
 
-### Applicable scenario for production
+### Applicable scenario for production restore
 
 Restoring the database in production to a previous point-in-time is not a common lifecycle operation. However, it may be required to recover your production environment if it has undergone significant data corruption. Keep in mind that the operation could have a large downtime and SQL data loss up to the point of time of the request.
 
