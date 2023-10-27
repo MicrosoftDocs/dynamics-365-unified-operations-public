@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.3
 
 Database movement operations are a suite of self-service actions that can be used as part of data application lifecycle management (DataALM). "Golden configuration" refers to a common practice among customers and partners in the Microsoft Dynamics ecosystem, where a developer environment is used as a configuration store. In this way, implementation projects can store finalized global and company-specific settings in a database that can later become a baseline for Conference Room Pilots, mock go-lives, and go-lives. This tutorial shows how to prepare a golden configuration database and hydrate a target user acceptance testing (UAT) environment.
 
-In this tutorial, you will learn how to:
+In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 > * Prepare the golden configuration database for Microsoft Azure SQL Database.
@@ -56,7 +56,7 @@ The only supported collation databases in the cloud is **SQL\_Latin1\_General\_C
 
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must reenter some data from your source environment in your target environment.
 
-Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database will be unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and reenter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import will be readable. The following fields are affected. The field names are given in *Table.Field* format.
+Because of a technical limitation that is related to the certificate that is used for data encryption, values that are stored in encrypted fields in a database are unreadable after that database is imported into a new environment. Therefore, after an import, you must manually delete and reenter values that are stored in encrypted fields. New values that are entered in encrypted fields after an import are readable. The following fields are affected. The field names are given in *Table.Field* format.
 
 | Field name                                               | Where to set the value |
 |----------------------------------------------------------|------------------------|
@@ -72,7 +72,7 @@ Because of a technical limitation that is related to the certificate that is use
 
 ### If you're running Commerce components, document encrypted and environment-specific values
 
-The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
+The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values are incorrect.
 
 - Payments services (**Accounts receivable** &gt; **Payments setup** &gt; **Payments services**)
 - Hardware profiles (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**)
@@ -86,7 +86,7 @@ Back up the source database using SSMS. Right-click the source database, and sel
 Run the following script against the AxDB\_CopyForExport database that you created in the previous section. This script makes the following changes:
 
 - Set the **SysGlobalConfiguration** flag to inform the application that the database is Azure-based.
-- Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The database synchronization process will re-create the reference later.
+- Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The database synchronization process re-creates the reference later.
 - Drop users, because Microsoft Windows users are forbidden in Azure SQL databases. Other users must be re-created later, so that they're correctly linked to the appropriate sign-in on the target server.
 - Clear encrypted hardware profile merchant properties.
 
@@ -144,15 +144,15 @@ cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
 SqlPackage.exe /a:export /ssn:localhost /sdn:<database to export> /tf:D:\Exportedbacpac\<filename>.bacpac /p:CommandTimeout=1200 /p:VerifyFullTextDocumentTypesSupported=false /SourceTrustServerCertificate:True
 ```
 
-Here is an explanation of the parameters:
+Here's an explanation of the parameters:
 
 - **ssn (source server name)** – The name of the SQL Server to export from. For the purposes of this article, the name should always be **localhost**.
 - **sdn (source database name)** – The name of the database to export.
-- **tf (target file)** – The path and name of the file to export to. The folder should already exist, but the export process will create the file.
+- **tf (target file)** – The path and name of the file to export to. The folder should already exist, but the export process creates the file.
 
 ## Import the database
 
-Upload the .bacpac file that was created in the previous step to the **Database backup** section in your LCS project's Asset Library. Then begin the import. The target UAT environment's databases will be overwritten by the golden configuration database.
+Upload the .bacpac file that was created in the previous step to the **Database backup** section in your LCS project's Asset Library. Then begin the import. The target UAT environment's databases are overwritten by the golden configuration database.
 
 > [!NOTE]
 > Certain elements are not copied as part of the import database step.  In the golden configuration scenario, this would impact things such as Email Addresses and Print Management setup.  These settings ideally should be populated as part of the master data migration in the steps below, and should not be part of the golden configuration database.
@@ -161,10 +161,10 @@ Upload the .bacpac file that was created in the previous step to the **Database 
 
 ## Perform master data migration
 
-Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.  
+Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you'll have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Files stored in Azure blob storage are not copied from UAT to Production in the next step. This includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, you will want to import those in the Production environment directly.
+> Files stored in Azure blob storage are not copied from UAT to Production in the next step. This includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, you'll want to import those in the Production environment directly.
 
 ## Copy the sandbox database to production
 
@@ -177,7 +177,7 @@ Determine the **Environment type** of your production environment and follow the
 2. In the **Maintain** menu, select **Move database**.
 3. For the operations options, select **Refresh database**.
 4. In the **Source environment**, select the sandbox where your golden configuration is. Note the important instructions found on the [Refresh database page](database-refresh.md) for this operation.
-5. Select the check box to confirm that you understand this operation will overwrite the production database. The operation starts immediately after submitting the request.
+5. Select the check box to confirm that you understand this operation overwrites the production database. The operation starts immediately after submitting the request.
 
 ### Microsoft-managed
 1. In LCS, on the project home page, select **Service requests**.
@@ -190,13 +190,13 @@ Determine the **Environment type** of your production environment and follow the
 
 
 > [!IMPORTANT]
-> Every database refresh will create a new database that will reset the **Point-in-time-restore** chain of restore points.
+> Every database refresh creates a new database that resets the **Point-in-time-restore** chain of restore points.
 
 ## Reconfigure environment specific settings
 
 After the refresh is completed, use the **Sign off** button in LCS to close out of the operation. You then can start to configure the environment-specific settings.
 
-First, sign in to the environment by using the admin account that can be found on the **Environment details** page in LCS. Here are some typical areas of reconfiguration. You might require additional reconfiguration, based on your setup and the independent software vendor (ISV) solutions that are installed:
+First, sign in to the environment by using the admin account that can be found on the **Environment details** page in LCS. Here are some typical areas of reconfiguration. You might require more reconfiguration, based on your setup and the independent software vendor (ISV) solutions that are installed:
 
 * **System administration** \> **Setup** \> **Batch groups:** Add the various AOS instances to the batch server groups that you require.
 * **System administration** \> **Setup** \> **Entity Store:** Update the various entities that you require for Microsoft Power BI reporting.
@@ -207,13 +207,13 @@ First, sign in to the environment by using the admin account that can be found o
 * **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
 
 > [!NOTE]
-> As a best practice, all mission-critical batch jobs that will run with recurrence should be created and run by the admin account. The admin should be a generic user such as `erp@customer.com`. It should not be linked to a specific employee's Azure Active Directory (Azure AD) account, because that account might be disabled later if the employee leaves the company.
+> As a best practice, all mission-critical batch jobs that run with recurrence should be created and run by the admin account. The admin should be a generic user such as `erp@customer.com`. It should not be linked to a specific employee's Azure Active Directory (Azure AD) account, because that account might be disabled later if the employee leaves the company.
 
 ## Open the environment to users
 
-The user configuration in Sandbox is copied as-is to Production environment. It's strongly recommended that you configure the users, as you require, in the Sandbox environment before copying to Production, to avoid any unwanted access after copying is completed.
+The user configuration in Sandbox is copied as-is to Production environment. It's recommended that you configure the users, as you require, in the Sandbox environment before copying to Production, to avoid any unwanted access after copying is completed.
 
-After copying is completed, if you want to update user access, go to **System administration** \> **Users** \> **Users**, and enable or disable the users to manage the access to Production environment. If many users must be enabled or disabled, you can complete this task more quickly by using the [Microsoft Excel Add-In](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
+After copying is completed, if you want to update user access, go to **System administration** \> **Users** \> **Users**, and enable or disable the users to manage the access to Production environment. If many users must be enabled or disabled, you can complete this task more quickly by using the [Microsoft Excel add-in](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
 ## Community tools
 
