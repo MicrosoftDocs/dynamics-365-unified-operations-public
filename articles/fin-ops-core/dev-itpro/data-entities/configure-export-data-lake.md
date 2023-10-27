@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform Update 33
 
 > [!NOTE]
 >
-> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in Finance and Operations, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Dynamics 365 apps.
+> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in finance and operations apps, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Microsoft Dynamics 365 apps.
 >
 >We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
 >
@@ -130,7 +130,7 @@ The Data Lake Storage account is used to store data from your finance and operat
 1. In the Azure portal, select **Create new resource**, and then search for and select **Storage account – blob, file, table, queue**.
 2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you may incur more data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
+    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you might incur more data movement costs. If your Microsoft Power BI or your data warehouse is in a different region, you can use replication to move storage between regions.
     - **Performance**: We recommend you select **Standard**.
     - **Account kind**: You must select **StorageV2**. In the **Advanced options** dialog box, you see the option, **Data Lake storage Gen2**.
 
@@ -211,7 +211,7 @@ You notice the secret created in the list of secrets.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration
 
-If this is the first time you're installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
+If you're installing add-ins in this environment for the first time, you might need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in Lifecycle Services 
 
