@@ -69,9 +69,11 @@ GO
 
 ### Export operation failure
 
-Most often, export operations fail because the process in Lifecycle Services times out while it's waiting for a response from Microsoft Azure SQL Database. You can use the **Resume** button to reconnect Lifecycle Services to the ongoing export process and see it through to completion. If more than 24 hours have passed since you began the export, the pending asset in the Lifecycle Services Project asset library is expired. In this case, you must roll back the export operation and restart it.
+Most often, export operations fail because the process in Lifecycle Services times out while it's waiting for a response from Microsoft Azure SQL Database. If the operation times out, it will *rollback* automatically and your sandbox environment is restored to the state it was before the export began.
 
-To cancel an export operation that has failed, you can use the **Rollback** button.
+To cancel an ongoing export operation, you can use the **Cancel** button.
+
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.
 
 ### Data elements that aren't exported
 
