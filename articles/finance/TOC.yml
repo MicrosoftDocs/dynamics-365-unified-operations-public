@@ -2252,6 +2252,8 @@
             href: localizations/china/apac-chn-gbt-24589-2010.md
         - name: Costa Rica
           items:
+          - name: Set up electronic invoicing in Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
           - name: Configure electronic invoice parameters for Costa Rica
             href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
           - name: Set up a legal entity and tax information for Costa Rica  
@@ -3556,6 +3558,8 @@
             href: localizations/mea/emea-oma-vat-declaration.md
         - name: Panama
           items: 
+          - name: Set up electronic invoicing for Panama
+            href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
           - name:	Configure electronic invoice parameters for Panama 
             href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
           - name: Set up a legal entity and tax information for Panama 
