@@ -4,7 +4,7 @@
 title: Commerce pricing APIs
 description: This article describes various pricing APIs that are provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
-ms.date: 03/20/2023
+ms.date: 10/20/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chgriffin
@@ -23,7 +23,7 @@ This article describes various pricing APIs that are provided by the Microsoft D
 The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that can be consumed by external applications to support various pricing scenarios:
 
 - **GetActivePrices** – This API gets a product's calculated price, including simple discounts.
-- **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they are bought together.
+- **CalculateSalesDocument** – This API calculates prices and discounts for products at given quantities if they're bought together.
 - **GetAvailablePromotions** – This API gets applicable discounts for products in the cart. 
 - **AddCoupons** – This API adds coupons to a cart.
 - **RemoveCoupons** – This API removes coupons from a cart.
@@ -37,6 +37,9 @@ The *GetActivePrices* API was introduced in the Commerce version 10.0.4 release.
 The *GetActivePrices* API supports the **Employee**, **Customer**, **Anonymous**, and **Application** Commerce roles.
 
 The main use case for the *GetActivePrices* API is the product details page (PDP), where retailers show the best price for a product, including any effective discounts.
+
+> [!NOTE]
+> If you see fewer products returned for a `GetActivePrices` call, you can follow [Channel merchandising configuration validator](dev-itpro/channel-merch-config-validator.md) to validate your merchandising configurations.
 
 The following table shows the input parameters for the *GetActivePrices* API.
 
@@ -109,7 +112,7 @@ The following table shows the input parameters for the *GetActivePrices* API.
 
 ## CalculateSalesDocument
 
-The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they are bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
+The *CalculateSalesDocument* API was introduced in the Commerce version 10.0.25 release. This API calculates prices and discounts for products at given quantities if they're bought together in an order. The pricing calculation behind the *CalculateSalesDocument* API considers both single-line discounts and multi-lines discounts.
 
 The main use case for the *CalculateSalesDocument* API is the pricing calculation in scenarios where full cart context doesn't persist (such as sales quotations). Scenarios in point of sale (POS) and Commerce e-commerce can also benefit from this use case. A lower total price when cart items are calculated as a set (for example, for discrete bundles, linked or recommended products, or products that have already been added to the cart) might persuade customers to add products to the cart.
 
@@ -261,8 +264,8 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 | | ChannelId | long | Required | |
 | | Keyword | string | Optional | |
 | | IsDiscountCodeRequired | bool | Optional | Indicates whether the coupon code is required or not. If null is passed, all discounts are retrieved, regardless of coupon code requirements. |
-| | StartDate | DateTimeOffset | Optional | The starting date (inclusive). |
-| | EndDate | DateTimeOffset | Optional | The ending date (inclusive). |
+| | StartDate | DateTimeOffset | Required | The starting date (inclusive). |
+| | EndDate | DateTimeOffset | Required | The ending date (inclusive). |
 
 
 <details>
@@ -271,7 +274,9 @@ The following table lists the input parameters for the *GetAvailablePromotions* 
 ```json
 {
     "searchCriteria": {
-        "ChannelId": 5637144592
+        "ChannelId": 5637144592,
+        "StartDate": "1900-01-01T00:00:00Z",
+        "EndDate": "2154-12-31T00:00:00Z"
     }
 }
 ```

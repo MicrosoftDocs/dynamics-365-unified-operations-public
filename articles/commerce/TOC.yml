@@ -768,6 +768,8 @@
           href: pricing-apis.md
         - name: Price change tracking
           href: price-change-tracking.md
+        - name: Price FAQ
+          href: price-faq.md
       - name: Recommendations
         items:
         - name: Product recommendations overview
