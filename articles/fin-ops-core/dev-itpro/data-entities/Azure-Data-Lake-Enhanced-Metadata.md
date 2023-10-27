@@ -19,16 +19,11 @@ ms.search.validFrom: 2021-11-30
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
+> Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >
-> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in finance and operations apps, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Microsoft Dynamics 365 apps.
+> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead. 
 >
->We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of 15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
->
->If you are a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
->
-> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We're listening to the community intently and are working on a slew of features to help transition smoother. We will announce these other improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
->
-
+> We understand that that transition might seem daunting, but we want to provide a smoother experience and offer guidance. To get started, see the [Synapse Link transition guide](https://aka.ms/TransitionToSynapseLink). We're listening closely to the community and are working on multiple features to help make the transition smoother. We'll announce these other improvements to the transition process as we bring new features online. If you want to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics).
 
 ## How data is stored in the data lake
 
@@ -124,7 +119,7 @@ If the structure of a table or entity is changed, and especially if a field is r
 > [!NOTE]
 > Finance and operations apps include governance processes and developer tools that help developers learn about such changes and their impact. However, users who consume data in the date lake by creating and running a Power BI report, for example, might not be aware of changes in finance and operations apps.
 
-When a new field is added to a table, metadata files in the data lake are updated to reflect the change. All the records in the CSV files that include the newly added data contains the new field. If a CSV file isn't modified, or no new rows are added, the file won't contain the new field. This behavior helps minimize the data writes to the data lake. Most data pipeline tools, and especially those tools that understand the CDM standard, support a feature that can adapt to changes. This feature is known as *schema drift*.
+When a new field is added to a table, metadata files in the data lake are updated to reflect the change. All the records in the CSV files that include the newly added data contain the new field. If a CSV file isn't modified, or no new rows are added, the file won't contain the new field. This behavior helps minimize the data writes to the data lake. Most data pipeline tools, and especially those tools that understand the CDM standard, support a feature that can adapt to changes. This feature is known as *schema drift*.
 
 If the change to the data structure is destructive, the system might repopulate the whole table folder (that is, all the CSV files). For example, in a rare but destructive change, a field might be removed from a table in a finance and operations app. In this case, the whole table folder is repopulated, together with the updated metadata. Destructive changes might require changes to downstream reports, especially if the report is expecting a data field that was removed.
 
