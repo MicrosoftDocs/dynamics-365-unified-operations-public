@@ -35,7 +35,7 @@ Change data in a data lake lets you build near-real-time data pipelines that rea
 
 Data in a data lake is often used for reporting purposes. Although you can use the table data in the data lake to create reports, you can also create more copies of the data to improve your reporting. For example, you might have a data mart that is designed to enable your power users. In this data mart, you might have simplified, often aggregated, fact tables and dimension tables.
 
-As table data in the data lake is updated, you must keep the corresponding fact tables and dimension tables in the data lake updated. Otherwise, your reports won't reflect the latest data.
+As table data in the data lake is updated, you must keep the corresponding fact tables and dimension tables in the data lake updated. Otherwise, your reports don't reflect the latest data.
 
 The easiest way to update fact tables and dimension tables is to periodically create a full copy by using tables. However, this approach can be inefficient. If your tables are large (for example, if they have tens of millions or hundreds of millions of rows), the process of updating a fact table by making a full copy might take hours and consume lots of compute resources. Therefore, your users might not have the reports in time (that is, they might have to wait hours to see the latest data in reports). Because compute resources are consumed every time that data is reprocessed, you might receive a larger bill from the services that you've consumed.
 
@@ -56,7 +56,7 @@ The following illustration shows how change feeds work in finance and operations
 1. Whenever a data change occurs in finance and operations apps, the underlying database (AXDB) is updated. The CDC feature ensures that the update is reflected in the database. CDC captures the changes in a log (the change log), together with a logical sequence number (**LSN** value), a date/time stamp (**Change Date-Time** value), and a **Change Payload** value that identifies the data that changed.
 2. **Export to Data Lake** microservices capture the changes in the database and write the change log to the customer's data lake. **Change feed** folders in the data lake are organized by table. Each folder contains the change log for a specific table.
 3. In addition, in the **Tables** folder, each row that changed also contains several new fields. Each row contains the **LSN** value of the corresponding change record and the **Change Date-Time** value. Although you can use the **LSN** and **Change Date-Time** fields in the table folders to identify whether a row changed, they contain only the latest change. If the same row changed multiple times, only the latest change is shown in the **Tables** folder.
-4. Changes are written to the **Change feed** folder in the same sequence (that is, LSN) in which they are committed in the database. Change feed files are written in batches in the data lake, so that their size is optimized for reading. After change feed files are written, they are never updated.
+4. Changes are written to the **Change feed** folder in the same sequence (that is, LSN) in which they're committed in the database. Change feed files are written in batches in the data lake, so that their size is optimized for reading. After change feed files are written, they're never updated.
 
 
 ## Exploring the Change feed folder in your data lake
@@ -83,14 +83,14 @@ As you should notice from the metadata definitions, the **Change feed** folder c
 
 | Field name                    | Contents |
 |-------------------------------|----------|
-| Start\_LSN                    | <p>This field identifies the LSN of the transaction that changed source data in the finance and operations database.</p><p>**Note:** The **Start\_LSN** value is **not** enclosed in double quotation marks in CSV files. It's a hexadecimal value, as represented in the SQL Server database. Here is a sample value: **0X00011E9F00000FB00001**.</p> |
+| Start\_LSN                    | <p>This field identifies the LSN of the transaction that changed source data in the finance and operations database.</p><p>**Note:** The **Start\_LSN** value is **not** enclosed in double quotation marks in CSV files. It's a hexadecimal value, as represented in the SQL Server database. Example value: **0X00011E9F00000FB00001**.</p> |
 | End\_LSN                      | This field isn't used. |
 | DML\_Action                   | <p>Each change is stored as a separate record. The **DML\_Action** field identifies the change that was made to the record.</p><ul><li>1: DELETE</li><li>2: INSERT</li><li>3: BEFORE\_UPDATE</li><li>4: AFTER\_UPDATE</li></ul><p>**Note:** The system doesn't add a **BEFORE\_UPDATE** record to change feeds.</p> |
 | Seq\_Val                      | <p>This field identifies the sequence number within the LSN that changed data in the source. Because a transaction might update more than one table in the finance and operations database, the **Seq\_Val** field indicates the sequence number that CDC assigned to the table.</p><p>A change record is added for every change that is made to a table in a transaction. If the same record was updated multiple times in a single transaction, you find multiple change records that have a separate sequence number. In the future, in extreme cases (for example, when there are thousands of updates to the same record in a single transaction), the system might store the latest update record.</p> |
 | Update\_Mask                  | A bitmap that identifies the fields that changed. This bitmap resembles the update mask in Change tracking. However, by examining the bitmap, you can identify the fields that changed. |
 | List of fields and values    | The remaining columns provide a list of fields that are present in the table, together with the values. You should use the update mask to identify fields that changed as part of the transaction. |
-| LastProcessedChange\_DateTime | <p>This field provides the value of the CDC **Change Date-Time** field from the finance and operations database. The date/time is expressed in Coordinated Universal Time (UTC), per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
-| DataLakeModified\_DateTime    | <p>This field provides the date and time of writing to the data lake. The date/time is expressed in UTC, per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
+| LastProcessedChange\_DateTime | <p>This field provides the value of the CDC **Change Date-Time** field from the finance and operations database. The date/time is expressed in Coordinated Universal Time (UTC), per ISO 8601.</p><p>Example value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
+| DataLakeModified\_DateTime    | <p>This field provides the date and time of writing to the data lake. The date/time is expressed in UTC, per ISO 8601.</p><p>Example value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
 
 ## Best practices when change feeds are used
 
@@ -124,7 +124,7 @@ If your users expect data marts to be updated daily or several times per day, tr
 
 ### Changing feeds to audit and verify master data updates
 
-The **Change feed** folder is an exact replica of the CDC change logs that are maintained by the finance and operations database. Changes that are made to master data in finance and operations apps are reflected in CDC. Therefore, by extension, they are also reflected in change feed folders in your data lake.
+The **Change feed** folder is an exact replica of the CDC change logs that are maintained by the finance and operations database. Changes that are made to master data in finance and operations apps are reflected in CDC. Therefore, by extension, they're also reflected in change feed folders in your data lake.
 
 You can use reports that are built over the **Change feed** folder to audit and verify master data changes in the system.
 
@@ -132,7 +132,7 @@ You can use reports that are built over the **Change feed** folder to audit and 
 
 The **Change feed** folder isn't deleted by the **Export to Data Lake** process unless you reinitialize the data to recover from an error.
 
-Because tables continue to add changes while they are in **Running** status, change feed folders continue to grow in the data lake. (However, the cost of retaining data in the data lake is a fraction of the cost of an SQL database. Therefore, the cost of growing data might not be a major concern.)
+Because tables continue to add changes while they're in **Running** status, change feed folders continue to grow in the data lake. (However, the cost of retaining data in the data lake is a fraction of the cost of an SQL database. Therefore, the cost of growing data might not be a major concern.)
 
 If you want to reduce the amount of data that is stored in your data lake, you can periodically delete the change log from the data lake. For example, you can run a job that deletes change log files that haven't been modified for 90 days or 180 days.
 
