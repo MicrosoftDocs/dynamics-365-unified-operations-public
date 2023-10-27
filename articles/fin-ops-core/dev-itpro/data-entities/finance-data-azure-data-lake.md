@@ -31,15 +31,11 @@ ms.dyn365.ops.version: Platform Update 34
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
+> Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >
-> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in finance and operations apps, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Microsoft Dynamics 365 apps.
+> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead. 
 >
->We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you're already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
->
->If you're a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
->
-> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these additional improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
->
+> We understand that that transition might seem daunting, but we want to provide a smoother experience and offer guidance. To get started, see the [Synapse Link transition guide](https://aka.ms/TransitionToSynapseLink). We're listening closely to the community and are working on multiple features to help make the transition smoother. We'll announce these other improvements to the transition process as we bring new features online. If you want to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics).
 
 The **Export to Data Lake** feature lets you copy data from your finance and operations apps into your own data lake (Azure Data Lake Storage Gen2). The system lets you select the tables and entities that are included. After you select the data that you want, the system makes an initial copy. The system then keeps the selected data up to date by applying changes, deletions, and additions. After data changes in your finance and operations app instances, there might be a delay of a few minutes before the data is available in your data lake.
 
@@ -64,7 +60,7 @@ You can select the tables and entities that should be staged in data lake.
 
 4. Select **Activate data feed**, and then select **OK**. When you add a table, the system might show its status as **Initializing**. This status indicates that the system is making an initial copy of the data. When the initial copy is completed, the system changes the status to **Running**. As data changes in finance and operations apps after the initial copy, the data is updated in the data lake. You can see the most recent data change in the **Last processed change** column. If there are no data changes in the system after the initial copy, this field remains blank.
 
-    If there is an error, the system shows the status as **Deactivated**.
+    If there's an error, the system shows the status as **Deactivated**.
 
     You can consume data in the data lake when the status is **Running**. If you consume data in the data lake while the status is **Initializing** or **Deactivated** status, you might not see all the data. 
 
@@ -158,11 +154,10 @@ When an error occurs in a table that you added to Export to Data Lake, you might
 Due to the error, the system has paused data export – data that exists in the lake won't be updated until the error is resolved. Try to deactivate and activate the table to see if this resolves the issue. Deactivating and activating the table might cause the system to reinitialize the data in the lake by taking a full copy. If the issue persists, contact Microsoft support with the table name and the error code.
 
 #### Error status codes 8xx indicates an issue with finance and operations apps database 
-The Export to Microsoft Azure Data Lake feature uses Change data capture feature in finance and operations apps database. Error 8xx indicates an issue with Change data capture feature in the finance and operations apps database. This error might be the result of a database maintenance operation or another issue impacting database operations. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you might contact Microsoft support for an update. 
+The Export to Microsoft Azure Data Lake feature uses Change data capture feature in finance and operations apps database. Error 8xx indicates an issue with Change data capture feature in the finance and operations apps database. This error might be the result of a database maintenance operation or another issue impacting database operations. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you can contact Microsoft support for an update. 
 
 #### Error status codes 9xx indicate an issue with Finance and Operations environment
-Error codes 9xx indicate a system configuration issue with Finance and Operations environment. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you might contact Microsoft support for an update.
-                                                                                                                                                                    |
+Error codes 9xx indicate a system configuration issue with Finance and Operations environment. The Service management team is actively working on resolving this issue and no customer action is required. If the issue persists, you can contact Microsoft support for an update.
 
 > [!NOTE]
 > Deactivating and activating the table might cause the system to reinitialize the data in the lake by creating a full copy. If this is a large table, the initialize process might take some time. In the future, the system might automatically update data in the lake to reflect the table structure changes. 
