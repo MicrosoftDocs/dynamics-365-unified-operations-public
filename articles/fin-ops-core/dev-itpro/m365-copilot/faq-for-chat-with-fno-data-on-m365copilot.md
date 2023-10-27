@@ -5,7 +5,7 @@ title: FAQ for chat with finance and operations data by using Microsoft 365 Copi
 description: This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 author: ramasri
 ms.date: 10/27/2023
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
-# ms.custom: NotInToc
+# ms.custom: bap-template
 ms.search.region: Global
 # ms.search.industry:
 ms.author: ramasri
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.35 PU59
 
 This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 
-A Microsoft 365 Copilot license enables authorized users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
+A Microsoft 365 Copilot license enables authorizes users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
 
 - I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability? Give me the details by product name, site, warehouse, color, available quantity.
 - Do we have red Laptop15 M1501 model in warehouses other than Chicago within the site Central? Give me the details by product name, site, warehouse, color, available quantity.
@@ -39,11 +39,13 @@ Microsoft 365 Copilot summarizes the information that's spread across emails, ch
 
 ## What types of data are supported?
 
-Data that resides inside tables is referred to as *structured data*. Data that's present in static documents, such Word files, PDF files, and publicly available content, is referred to as *unstructured data*. Microsoft 365 Copilot supports data inquiries against both structured and unstructured data. For this release, the scope for finance and operations apps is limited to structured data only.
+Data that resides inside tables is referred to as *structured data*. Data that's present in static documents, such Microsoft Word files, PDF files, and publicly available content, is referred to as *unstructured data*. Microsoft 365 Copilot supports data inquiries against both structured and unstructured data. For this release, the scope for finance and operations apps is limited to structured data only.
 
-## What are the scenarios available out-of-the-box?
+## What are the scenarios that are available out-of-the-box?
 
 **Microsoft Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory by using Microsoft 365 Copilot**
+
+Examples: 
 
 - What is the inventory availability of Laptop15 M1501 in Silver color in Site Central, Warehouse Chicago? Give me the details in table format by product name, site, warehouse, color, available quantity.
 - What colors do you have for Laptop15 M1501 other than Silver color in Site Central, Warehouse Chicago? Any other new colors coming?
@@ -125,7 +127,7 @@ Examples:
 - What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 - Use letter casing correctly:
   - Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
-  - If you're unsure about the spelling for string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and might not be spell checked. 
+  - If you're unsure about the spelling for string literals, try using lower case letters so that spelling correction is more likely to kick in. Words with capital-letters are more likely to be treated as special names and might not have the spelling checked. 
 - Use precise terms for concepts with multiple ways of referencing.
   - Company can be referred to using company name or company code:
     - What is the inventory availability of Laptop15 M1501 in company Contoso Retail USA?
