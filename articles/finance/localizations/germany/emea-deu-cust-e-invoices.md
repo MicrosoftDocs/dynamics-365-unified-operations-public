@@ -25,15 +25,15 @@ To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **
 
 ## Prerequisites
 
-Before you complete the tasks in this article, the following prerequisites must be met:
+Before you complete the procedures in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Germany.
-- To enable generation of electronic invoices in **xRechnung** format version **3** and higher, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- To enable the generation of electronic invoices in **xRechnung** format version **3** and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     1. **Sales Invoice DE** (version 288.9.16.11)
     2. **Project Invoice DE** (version 288.8.22.12)
     3. **Invoice model mapping** (version 288.293)
-    
+
 > [!NOTE]
 > The **Sales Invoice DE** and **Project Invoice DE** format configurations are based on the corresponding **Peppol** format configurations. Those format configurations are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
 
@@ -48,7 +48,7 @@ Before you complete the tasks in this article, the following prerequisites must 
     - **Sales and Free text credit note:** Sales Invoice DE
     - **Project invoice:** Project Invoice DE
     - **Project credit note:** Project Invoice DE
-    
+
 ### Configure legal entity data
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select a legal entity.
@@ -56,17 +56,17 @@ Before you complete the tasks in this article, the following prerequisites must 
 3. On the **Foreign trade and logistics** FastTab, in the **VAT exempt number export** field, enter a valid tax registration number for the legal entity.
 4. On the **Bank account information** FastTab, in the **Routing number** field, enter a valid number for the legal entity.
 5. In the **Bank account** field, enter the reference to the legal entity bank account.
- 
+
     > [!NOTE]
-    > Make sure that the selected bank account has a valid **IBAN** defined.
+    > Make sure that a valid International Bank Account Number (IBAN) is defined for the selected bank account.
 
 ### Configure customer data
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**, and select a customer.
 2. On the **Addresses** FastTab, add a valid address for the customer.
 3. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-4. Set **eInvoice** to **Yes** to enable electronic invoices to be generated.
-5. Set **eInvoice attachment** to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
+4. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+5. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
 6. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
 
     > [!NOTE]
@@ -79,8 +79,8 @@ Before you complete the tasks in this article, the following prerequisites must 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
-4. In the **Standard code** column, mark the check box.
-5. In **Value** section, in **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
+4. In the **Standard code** column, select the checkbox.
+5. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
@@ -112,8 +112,8 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 1. Go to **Project management and accounting** \> **Projects** \> **Project contracts**.
 2. Create a new project contract, or select an existing project contract.
-3. On **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
-4. On the **Funding source details** page, on the **Other** FastTab, in **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract.
+3. On the **Funding sources** FastTab, create or select a funding source of the **Customer** type, and then select **Details**.
+4. On the **Funding source details** page, on the **Other** FastTab, in the **References** section, in the **Customer requisition** and **Customer reference** fields, enter default values for the contract.
 
 ## Export customer electronic invoices
 
@@ -134,9 +134,9 @@ To inquire about the XML files of electronic invoices that have been generated, 
 
 3. Select **Open** to download the file that contains the electronic invoice.
 
-   If generating the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
+    If generation of the electronic invoices fails because of errors, select **Show log** \> **Message details** to view more details about the error.
 
-   ![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
+    ![Viewing message details.](../media/emea-nor-ger-einvoice-log.jpg)
 
 ### Send e-invoices to ER destinations
 
@@ -150,4 +150,3 @@ For more information about ER destinations, see [Electronic reporting destinatio
 - [Supported standards for electronic invoicing](../europe/emea-oioubl-standards-electronic-invoicing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
