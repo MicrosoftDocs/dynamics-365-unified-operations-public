@@ -89,8 +89,12 @@ To add this privilege to Dynamics 365 role, follow these steps:
 1. In Dynamics 365, go to path **System administrator** > **Security** > **Security configuration**.
 1. Select the **Privileges** tab In the privileges list table, search for **companyinfoentityview**.
 1. Select **Roles** in the references table, and select the **Add references** button.
+   
    > [!NOTE]
    > The role to be extended should have access to inventory on hand list form.
+
+   :::image type="content" source="media/security-configuration.png" alt-text="A screenshot of the Security configuration page with Add references highlighted.":::
+   
 1. Select roles you want to extend in the popup **Select roles** table, and then select **OK**. 
 1. Select the **Unpublished objects** tab, publish roles with update by selecting either the **Publish all** button, or **Publish selection**.
 
@@ -114,9 +118,21 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
 	|	price	| selling price |
 - If you have access to multiple companies, add "list results by company" to you questions. Alternatively, you can add "in company…" at the end of your question.
 
-  Examples: 
+Examples: 
 
-    + What is the availability for Laptop15 M1501? List the result by company.    
-    + What is the availability for Laptop15 M1501 in company Contoso Retail USA?
-
+- What is the availability for Laptop15 M1501? List the result by company.    
+- What is the availability for Laptop15 M1501 in company Contoso Retail USA?
+- Use letter casing correctly:
+  - Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
+  - If you are unsure about the spelling about a string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and may not be spell checked. 
+- Use precise terms for concepts with multiple ways of referencing.
+  - Company can be referred to using company name or company code:
+    - What is the inventory availability of Laptop15 M1501 in company Contoso Retail USA?
+    - What is the inventory availability of Laptop15 M1501 in company code USRT?
+  - Product can be referred to using product name or item number:
+    - What is the inventory availability of Laptop15 M1501 in company Bank of House?
+    - What is the inventory availability of item number 1104 in company Bank of House?
+  - Customer can be referred to by customer name or customer account number:
+    - Who is the contact person for customer Forest Wholesales?
+    - Who is the contact person for customer account US-003?
 
