@@ -53,9 +53,9 @@ Restoring the production database to a sandbox environment can be useful if you 
 
 ### Restore operation failure
 
-If the restore operation isn't successful, your target sandbox environment is automatically rolled back to the state that it was in before the restore began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
+If the restore operation isn't successful, it will rollback automatically. Your target sandbox environment is restored to the state that it was in before the restore began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
 
-To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.
 
 ### Data elements that aren't copied during restore copy
 
