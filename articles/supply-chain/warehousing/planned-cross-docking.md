@@ -343,10 +343,9 @@ The following illustration shows how the completed cross-docking work might appe
 
 ![Cross-docking work completed.](media/PlannedCrossDockingWork.png "Cross-docking work completed")
 
-
 > [!NOTE]
-> For the [Warehouse management only mode process](wms-only-mode-overview.md) using Inbound and Outbound shipment orders you can as part of the [Source system setup](wms-only-mode-setup.md#source-systems) define if the [Release to warehouse process](release-to-warehouse-process.md) should convert cross docking requests (*Outbound shipment order line cross docking*) to markings before evaluating the planned cross docking templates using the *Demand requirements* equal *Marking*.
+> If you are using [warehouse management only mode](wms-only-mode-overview.md) (which uses inbound and outbound shipment orders) use the [source system setup](wms-only-mode-setup.md#source-systems) to define whether the [release to warehouse process](release-to-warehouse-process.md) should convert cross docking requests (*Outbound shipment order line cross docking*) to markings before evaluating planned cross-docking templates that have **Demand requirements** set to *Marking*.
 >
-> To use this logic you must specify the requested cross docking quantities as part of the *Outbound shipment order line cross docking* message data (`OutboundShipmentOrderLineCrossDockMessages`) linked to the _Inbound shipment order lines_ message data (`InboundShipmentOrderLineMessages`) by setting the same value in the field `CrossDockSourceID`. You can monitor this data as part of the **Outbound shipment orders** page under the **Line details** **Cross dock requests** tab.
+> To use this logic, specify the requested cross docking quantities as part of the *Outbound shipment order line cross docking* message data (`OutboundShipmentOrderLineCrossDockMessages`) linked to the *Inbound shipment order lines* message data (`InboundShipmentOrderLineMessages`) by setting the same value in the `CrossDockSourceID` field. You can monitor this data on the **Outbound shipment orders** page using the **Cross dock requests** tab of the **Line details** FastTab.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
