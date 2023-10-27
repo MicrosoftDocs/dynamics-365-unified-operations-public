@@ -51,8 +51,8 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature name | More information |
 |--------------|------------------|
-|Configure multiple leave types on a single leave plan|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](../human-resources/hr-leave-and-absence-plans).|
-|Configure leave units per leave type|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. When enabled, the units for each leave type can be set to either **Hours** or **Day**. The default setting is **Hours**. It's important for the administrators to look for this feature getting enabled in their environments. For more information on this feature, see [Leave and absence types](../human-resources/hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type). |
+|Configure multiple leave types on a single leave plan|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. There are additional features that are dependent on this feature and must be reviewed by HRAdmin/Administrators beforehand. For more information, see [Leave and absence plans](../hr-leave-and-absence-plans).|
+|Configure leave units per leave type|	This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled. When enabled, the units for each leave type can be set to either **Hours** or **Day**. The default setting is **Hours**. It's important for the administrators to look for this feature getting enabled in their environments. For more information on this feature, see [Leave and absence types](../hr-leave-and-absence-types.md#configure-leave-units-hoursdays-per-leave-type). |
 |Open ended leave|This feature is mandatory in Dynamics 365 Finance version 10.0.39 release and can't be disabled.| 
 
 
