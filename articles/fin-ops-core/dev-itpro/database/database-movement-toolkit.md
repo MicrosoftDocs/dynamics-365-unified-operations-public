@@ -44,7 +44,7 @@ The toolkit contains the following primary components:
 
 The toolkit currently supports the following scenarios. More will be added over time.  
 
-* [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/database/data-upgrade-self-service)
+* [Upgrade from AX 2012 - Data upgrade in sandbox environments](/articles/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service.md)
 
 ## Versions
 
