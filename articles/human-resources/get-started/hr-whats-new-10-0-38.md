@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.38
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.38. This version has a build number of 10.0.XXXX and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.38. This version has a build number of 10.0.1777 and is available on the following schedule:
 
 - **Preview of release:** October 2023
 - **General availability of release (self-update):** December 2023
@@ -61,7 +61,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md).
+Dynamics 365 Human Resources version 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md).
 
 ### Bug fixes
 
