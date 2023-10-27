@@ -4,10 +4,10 @@
 title: Change data in Azure Data Lake
 description: This article provides information about change data in a data lake and explains what you can do with it.
 author: MilindaV2
-ms.date: 06/16/2022
+ms.date: 10/27/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2021-06-10
@@ -18,13 +18,13 @@ ms.search.validFrom: 2021-06-10
 
 > [!NOTE]
 >
-> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in Finance and Operations, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Dynamics 365 apps.
+> Over the past 12 months, we have been working to fill the gaps and add new features highlighted by you and other members of the user community. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to Export to Data lake feature in finance and operations apps, is generally available and is ready for you. With Synapse Link, you get one experience to work with your data from all Microsoft Dynamics 365 apps.
 >
 >We do want you to benefit from enhanced performance, flexibility, and improved user experience offered by Synapse Link sooner and have announced the deprecation of Export to data lake feature effective of  15-Oct-2023. If you are already using Export to data lake feature, you can continue to use Export to Data lake until 1-Nov-2024. 
 >
 >If you are a new to Export to data lake feature or are planning adopt this feature in the coming months, our guidance is to use Synapse Link instead. 
 >
-> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these additional improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
+> We understand that transitioning can seem daunting, but we want to provide a smoother experience and offer guidance. Please see Synapse Link transition guide at [https://aka.ms/TransitionToSynapseLink](https://aka.ms/TransitionToSynapseLink) to get started. We are listening to the community intently and are working on a slew of features to help transition smoother. We will announce these improvements to the transition process as we bring new features online. If you like to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics)
 >
 
 When you select the **Enable near real-time data changes** option, data is inserted, updated, and deleted in your data lake in near real-time. As data changes in your finance and operations environment, the same data is updated in the data lake within a few minutes. You also get the data changes in a separate **Change feed** folder. 
@@ -33,11 +33,11 @@ Change data in a data lake lets you build near-real-time data pipelines that rea
 
 ## Why do you need change data in a data lake?
 
-Data in a data lake is often used for reporting purposes. Although you can use the table data in the data lake to create reports, you can also create additional copies of the data to improve your reporting. For example, you might have a data mart that is designed to enable your power users. In this data mart, you might have simplified, often aggregated, fact tables and dimension tables.
+Data in a data lake is often used for reporting purposes. Although you can use the table data in the data lake to create reports, you can also create more copies of the data to improve your reporting. For example, you might have a data mart that is designed to enable your power users. In this data mart, you might have simplified, often aggregated, fact tables and dimension tables.
 
 As table data in the data lake is updated, you must keep the corresponding fact tables and dimension tables in the data lake updated. Otherwise, your reports won't reflect the latest data.
 
-The easiest way to update fact tables and dimension tables is to periodically create a full copy by using tables. However, this approach can be inefficient. If your tables are large (for example, if they have tens of millions or hundreds of millions of rows), the process of updating a fact table by making a full copy might take hours and consume lots of compute resources. Therefore, your users might not have the reports in time (that is, they might have to wait hours to see the latest data in reports). Additionally, because compute resources are consumed every time that data is reprocessed, you might receive a larger bill from the services that you've consumed.
+The easiest way to update fact tables and dimension tables is to periodically create a full copy by using tables. However, this approach can be inefficient. If your tables are large (for example, if they have tens of millions or hundreds of millions of rows), the process of updating a fact table by making a full copy might take hours and consume lots of compute resources. Therefore, your users might not have the reports in time (that is, they might have to wait hours to see the latest data in reports). Because compute resources are consumed every time that data is reprocessed, you might receive a larger bill from the services that you've consumed.
 
 Incremental update of your fact tables and dimension tables provides the answer to both problems (time consumption and compute resource consumption). In an incremental update, you select only the changed records from source tables, and update them in corresponding fact tables and dimension tables.
 
@@ -77,7 +77,7 @@ CDM metadata files describe the structure of change feed data that is contained 
 
 ![CDM metadata file opened in a text editor.](media/Change-feed-folders-examine-metadata.png)
 
-As you should notice from the metadata definitions, the **Change feed** folder contains the CDC change log details, together with additional fields. The following illustration and table provide details about the format of changes in change folders.
+As you should notice from the metadata definitions, the **Change feed** folder contains the CDC change log details, together with more fields. The following illustration and table provide details about the format of changes in change folders.
 
 ![Format of changes in change folders.](media/Change-feed-folders-change-data-format2.png)
 
@@ -86,11 +86,11 @@ As you should notice from the metadata definitions, the **Change feed** folder c
 | Start\_LSN                    | <p>This field identifies the LSN of the transaction that changed source data in the finance and operations database.</p><p>**Note:** The **Start\_LSN** value is **not** enclosed in double quotation marks in CSV files. It's a hexadecimal value, as represented in the SQL Server database. Here is a sample value: **0X00011E9F00000FB00001**.</p> |
 | End\_LSN                      | This field isn't used. |
 | DML\_Action                   | <p>Each change is stored as a separate record. The **DML\_Action** field identifies the change that was made to the record.</p><ul><li>1: DELETE</li><li>2: INSERT</li><li>3: BEFORE\_UPDATE</li><li>4: AFTER\_UPDATE</li></ul><p>**Note:** The system doesn't add a **BEFORE\_UPDATE** record to change feeds.</p> |
-| Seq\_Val                      | <p>This field identifies the sequence number within the LSN that changed data in the source. Because a transaction might update more than one table in the finance and operations database, the **Seq\_Val** field indicates the sequence number that CDC assigned to the table.</p><p>A change record is added for every change that is made to a table in a transaction. If the same record was updated multiple times in a single transaction, you will find multiple change records that have a separate sequence number. In the future, in extreme cases (for example, when there are thousands of updates to the same record in a single transaction), the system might store the latest update record.</p> |
+| Seq\_Val                      | <p>This field identifies the sequence number within the LSN that changed data in the source. Because a transaction might update more than one table in the finance and operations database, the **Seq\_Val** field indicates the sequence number that CDC assigned to the table.</p><p>A change record is added for every change that is made to a table in a transaction. If the same record was updated multiple times in a single transaction, you find multiple change records that have a separate sequence number. In the future, in extreme cases (for example, when there are thousands of updates to the same record in a single transaction), the system might store the latest update record.</p> |
 | Update\_Mask                  | A bitmap that identifies the fields that changed. This bitmap resembles the update mask in Change tracking. However, by examining the bitmap, you can identify the fields that changed. |
 | List of fields and values    | The remaining columns provide a list of fields that are present in the table, together with the values. You should use the update mask to identify fields that changed as part of the transaction. |
-| LastProcessedChange\_DateTime | <p>This field provides the value of the CDC **Change Date-Time** field from the finance and operations database. The date/time is expressed in Coordinated Universal Time (UTC), per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. Additionally, it includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
-| DataLakeModified\_DateTime    | <p>This field provides the date and time of writing to the data lake. The date/time is expressed in UTC, per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. Additionally, it includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
+| LastProcessedChange\_DateTime | <p>This field provides the value of the CDC **Change Date-Time** field from the finance and operations database. The date/time is expressed in Coordinated Universal Time (UTC), per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
+| DataLakeModified\_DateTime    | <p>This field provides the date and time of writing to the data lake. The date/time is expressed in UTC, per ISO 8601.</p><p>Here is a sample value: **"2020-08-24T05:26:03.8622647Z"**. Notice that this value is enclosed in double quotation marks. It includes the default seven digits of precision after the second value, and a *Z* that signifies UTC.</p> |
 
 ## Best practices when change feeds are used
 
@@ -132,7 +132,7 @@ You can use reports that are built over the **Change feed** folder to audit and 
 
 The **Change feed** folder isn't deleted by the **Export to Data Lake** process unless you reinitialize the data to recover from an error.
 
-Because tables continue to add changes while they are in **Running** status, change feed folders will continue to grow in the data lake. (However, note that the cost of retaining data in the data lake is a fraction of the cost of a SQL database. Therefore, the cost of growing data might not be a major concern.)
+Because tables continue to add changes while they are in **Running** status, change feed folders continue to grow in the data lake. (However, the cost of retaining data in the data lake is a fraction of the cost of an SQL database. Therefore, the cost of growing data might not be a major concern.)
 
 If you want to reduce the amount of data that is stored in your data lake, you can periodically delete the change log from the data lake. For example, you can run a job that deletes change log files that haven't been modified for 90 days or 180 days.
 
