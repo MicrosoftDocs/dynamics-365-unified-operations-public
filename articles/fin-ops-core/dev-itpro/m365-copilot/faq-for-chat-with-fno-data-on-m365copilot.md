@@ -32,7 +32,7 @@ This article explains how to use Microsoft 365 Copilot to chat with finance and 
 
 A Microsoft 365 Copilot license enables authorized users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
 
-- I need 6 Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability? Give me the details by product name, site, warehouse, color, available quantity.
+- I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability? Give me the details by product name, site, warehouse, color, available quantity.
 - Do we have red Laptop15 M1501 model in warehouses other than Chicago within the site Central? Give me the details by product name, site, warehouse, color, available quantity.
 
 Microsoft 365 Copilot summarizes the information that's spread across emails, chats, and documents, and reconciles it with the relevant data that resides inside finance and operations apps. The reconciled summary is presented as the response to the user.
@@ -49,7 +49,7 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 - What colors do you have for Laptop15 M1501 other than Silver color in Site Central, Warehouse Chicago? Any other new colors coming?
 - I need 6 Laptop15 M1501 in Silver color, can you check the inventory availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity.
 - Do we have red Laptop15 M1501 in warehouses other than Chicago within the site Central in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-- I am looking for laptop15 M1501, what’s the item number? Include item number, product name, and company name.
+- I'm looking for laptop15 M1501, what’s the item number? Include item number, product name, and company name.
 - What is inventory availability for Laptop15 M1501 in company Contoso Retail USA? 
 - I need 6 Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 - I need 6 Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
@@ -64,7 +64,7 @@ The user's question is translated into a FetchXML query and run against the fina
 
 No, you aren't limited to the supported customer scenarios. Think of those scenarios as patterns that Microsoft 365 Copilot can process. All finance and operations entities that follow those patterns can be enabled for Microsoft 365 Copilot and support virtual entities. Here's is the supported list of entities eligible for copilot. However, this release doesn’t contain a UX for custom plugin management using the virtual entities. 
 
-M365 Copilot is available only for en-us language settings. 
+Microsoft 365 Copilot is available only for en-us language settings. 
 
 ## How can I set up Microsoft 365 Copilot for my finance and operations data?
 
@@ -76,13 +76,13 @@ Before you can set up Microsoft 365 Copilot for your finance and operations data
 If you want to try the built-in scenarios, install the following two AppSource packages:
 
 - **Supply Chain Management package:** [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview)
-- Enable a security role to query inventory data via M365 Copilot.
+- Enable a security role to query inventory data via Microsoft 365 Copilot.
 
 If you want to try your entities, enable them as virtual entities, then please stay tuned for updates. In the meantime, if you want to learn about virtual entities or how to enable Finance and Operations entities as virtual entities on Dataverse, see [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ## How to enable Dynamics 365 role to query inventory data via Microsoft 365 Copilot?
 
-To query inventory data via Microsoft 365 Copilot , user roles should contains privilege **companyinfoentityview**. 
+To query inventory data via Microsoft 365 Copilot , user roles should contain privilege **companyinfoentityview**. 
 
 To add this privilege to Dynamics 365 role, follow these steps:
 
@@ -102,20 +102,20 @@ For more information, see [Role-based security](../sysadmin/role-based-security.
 
 ## Best practices
 
-When you use Microsoft 365 Copilot to chat with finance and operations data, follow these best practices. These will be revised as continuously improve the product experience. 
+When you use Microsoft 365 Copilot to chat with finance and operations data, follow these best practices. These will be revised continuously to improve the product experience. 
 
-- Be specific with your ask to copilot and avoid ambiguity. If your question is about a customer, then use the keyword "customer" in your question. For example, don't ask, "Who is the contact person for Forest Wholesales?" Instead, ask, "Who is the contact person for customer Forest Wholesales?".
+- Be specific with your question to copilot and avoid ambiguity. If your question is about a customer, then use the keyword "customer" in your question. For example, don't ask, "Who is the contact person for Forest Wholesales?" Instead, ask, "Who is the contact person for customer Forest Wholesales?".
 - Be specific about the expected outcomes. If you want results in table format, then use the key phrase "in table format". If you want a consolidated result or a summary, make sure you call it out explicitly. For example, you can ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
 - Be granular with your question as much as possible to avoid partial results. For example, when the item Surface Pro 128 GB is available in multiple legal entities and each has a set of sites, warehouses, then you can ask "what is the inventory availability of Surface Pro 128 GB in Site Central, Warehouse Chicago in company Contoso Retail USA?". You can also use inventory dimensions like size, color, style etc. for more granularity.  
 - If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, you can ask, "What is the inventory availability for item number 1104?". To inquire on-hand inventory stock availability details, use the following keywords whenever possible. 
   | Keywords | &nbsp; |
   |----------|--------|
-	| product availability | inventory availability |
-	|	color	| site |
-	|	warehouse	 | inventory |
-	|	stock	| item |
-	|	product	| available quantity |
-	|	price	| selling price |
+  | product availability | inventory availability |
+  | color | site |
+  | warehouse | inventory |
+  | stock | item |
+  | product | available quantity |
+  | price | selling price |
 - If you have access to multiple companies, add "list results by company" to you questions. Alternatively, you can add "in company…" at the end of your question.
 
 Examples: 
@@ -124,7 +124,7 @@ Examples:
 - What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 - Use letter casing correctly:
   - Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
-  - If you are unsure about the spelling about a string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and may not be spell checked. 
+  - If you're unsure about the spelling for string literals, try using lower case letters so that spelling correction is more likely to kick in. Capital-lettered words are more likely treated as special names and might not be spell checked. 
 - Use precise terms for concepts with multiple ways of referencing.
   - Company can be referred to using company name or company code:
     - What is the inventory availability of Laptop15 M1501 in company Contoso Retail USA?
