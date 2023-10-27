@@ -47,12 +47,12 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 - What is the inventory availability of Laptop15 M1501 in Silver color in Site Central, Warehouse Chicago? Give me the details in table format by product name, site, warehouse, color, available quantity.
 - What colors do you have for Laptop15 M1501 other than Silver color in Site Central, Warehouse Chicago? Any other new colors coming?
-- I need 6 Laptop15 M1501 in Silver color, can you check the inventory availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity.
+- I need six Laptop15 M1501 in Silver color, can you check the inventory availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity.
 - Do we have red Laptop15 M1501 in warehouses other than Chicago within the site Central in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 - I'm looking for laptop15 M1501, what’s the item number? Include item number, product name, and company name.
 - What is inventory availability for Laptop15 M1501 in company Contoso Retail USA? 
-- I need 6 Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
-- I need 6 Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+- I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
+- I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability in site Central, warehouse Chicago in company Contoso Retail USA? Give me the details by product name, site, warehouse, color, available quantity. 
 
 ## What is happening behind the scenes?
 
@@ -78,7 +78,7 @@ If you want to try the built-in scenarios, install the following two AppSource p
 - **Supply Chain Management package:** [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview)
 - Enable a security role to query inventory data via Microsoft 365 Copilot.
 
-If you want to try your entities, enable them as virtual entities, then please stay tuned for updates. In the meantime, if you want to learn about virtual entities or how to enable Finance and Operations entities as virtual entities on Dataverse, see [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+If you want to try your entities, enable them as virtual entities, stay tuned for updates. In the meantime, if you want to learn about virtual entities or how to enable Finance and Operations entities as virtual entities on Dataverse, see [Enable Microsoft Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ## How to enable Dynamics 365 role to query inventory data via Microsoft 365 Copilot?
 
@@ -102,12 +102,13 @@ For more information, see [Role-based security](../sysadmin/role-based-security.
 
 ## Best practices
 
-When you use Microsoft 365 Copilot to chat with finance and operations data, follow these best practices. These will be revised continuously to improve the product experience. 
+When you use Microsoft 365 Copilot to chat with finance and operations data, follow these best practices. These are revised continuously to improve the product experience. 
 
 - Be specific with your question to copilot and avoid ambiguity. If your question is about a customer, then use the keyword "customer" in your question. For example, don't ask, "Who is the contact person for Forest Wholesales?" Instead, ask, "Who is the contact person for customer Forest Wholesales?".
 - Be specific about the expected outcomes. If you want results in table format, then use the key phrase "in table format". If you want a consolidated result or a summary, make sure you call it out explicitly. For example, you can ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
 - Be granular with your question as much as possible to avoid partial results. For example, when the item Surface Pro 128 GB is available in multiple legal entities and each has a set of sites, warehouses, then you can ask "what is the inventory availability of Surface Pro 128 GB in Site Central, Warehouse Chicago in company Contoso Retail USA?". You can also use inventory dimensions like size, color, style etc. for more granularity.  
-- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, you can ask, "What is the inventory availability for item number 1104?". To inquire on-hand inventory stock availability details, use the following keywords whenever possible. 
+- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, you can ask, "What is the inventory availability for item number 1104?". To inquire on-hand inventory stock availability details, use the following keywords whenever possible.
+  
   | Keywords | &nbsp; |
   |----------|--------|
   | product availability | inventory availability |
