@@ -111,10 +111,6 @@ When the warehouse worker has completed the putaway work, the system records and
 
 ## <a name="receive-complete-confirm"></a>Mark a load as receive complete
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
-<!--KFM: Preview until 10.0.37 GA -->
-
 Workers and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Web client users can do this using the **Load** or **Inbound load planning workbench** page. Workers using the  Warehouse Management mobile app can do it using a menu item set up with an **Activity code** of *Receiving completed confirmation*. In addition to updating the **Load receiving completed date and time** field for the load, workers and users may also be able (or required) to enter a packing slip ID and document date during the *Receiving completed* process (depending how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
 
 Follow these steps to choose how loads related to purchase orders will be finalized.
