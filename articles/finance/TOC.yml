@@ -12,8 +12,10 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
       - name: What's new or changed in Finance
         items:
-        - name: What's new or changed in Finance home page           
+        - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.38 (February)
+          href: get-started/whats-new-changed-10-0-38.md   
         - name: Finance 10.0.37 (November)
           href: get-started/whats-new-changed-10-0-37.md
         - name: Finance 10.0.36 (October)
@@ -2252,6 +2254,8 @@
             href: localizations/china/apac-chn-gbt-24589-2010.md
         - name: Costa Rica
           items:
+          - name: Set up electronic invoicing in Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
           - name: Configure electronic invoice parameters for Costa Rica
             href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
           - name: Set up a legal entity and tax information for Costa Rica  
@@ -3556,6 +3560,8 @@
             href: localizations/mea/emea-oma-vat-declaration.md
         - name: Panama
           items: 
+          - name: Set up electronic invoicing for Panama
+            href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
           - name:	Configure electronic invoice parameters for Panama 
             href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
           - name: Set up a legal entity and tax information for Panama 
