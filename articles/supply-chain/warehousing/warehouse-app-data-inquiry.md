@@ -54,10 +54,6 @@ Before you can use the functionality that is described in this article, you must
 
 ## <a name="session-query"></a>The work user session query range utility tool
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
-<!--KFM: Preview until 10.0.37 GA -->
-
 Supply Chain Management version 10.0.37 (and later) includes a *work user session query range utility tool*, which adds the following functionality for setting up queries to help workers find specific records using the Warehouse Management mobile app:
 
 - **Filter records by warehouse** – Lets you set up queries that use the worker's current warehouse as a value. You can use this value as a criterion for range filters (on the **Range** tab of the standard query designer). This is useful, for example, if you want to display a list of purchase orders expected to arrive at the warehouse where the worker is currently working. To set up a mobile device menu item to use this feature, open the query designer and, on the **Range** tab, set up a row that uses a **Criteria** of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*. An example of how to use this functionality is provided later in this article.
