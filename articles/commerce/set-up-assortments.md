@@ -46,41 +46,41 @@ After you complete the prerequisites, you can create an assortment and assign it
 
 ## Publishing assortments
 
-You can publish an assortment in the **Retail and Commerce \> Catalogs and assortments \> Assortments** form, which creates an assortment scheduler to process the assortment. Also, you can publish multiple assortments at the same time via **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, which creates tasks for each assortment that has been published.
+You can publish an assortment on the **Assortments** page (**Retail and Commerce** \> **Catalogs and assortments** \> **Assortments**). In this case, an assortment scheduler is created to process the assortment. You can also publish multiple assortments at the same time by going to **Retail and Commerce** \> **Retail and Commerce IT** \> **Products and inventory** \> **Process assortments**. In this case, tasks are created for each assortment that has been published.
 
-If you have many assortments configured, the assortment scheduler creates a large number of tasks to publish the assortments in parallel. These tasks consume much of the AX database resources. When the resource consumption reaches high level, the tasks might terminate and fail. To avoid this situation, it's recommended to enable [Priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and the **(Preview) Batch concurrency control** feature to limit the number of concurrent tasks so they won't fail.
+If many assortments are configured, the assortment scheduler creates a large number of tasks to publish them in parallel. These tasks consume lots of the AX database's resources. When resource consumption reaches a high level, the tasks might be terminated and fail. To help avoid this situation, we recommend that you enable [priority-based batch scheduling](../fin-ops-core/dev-itpro/sysadmin/priority-based-batch-scheduling.md) and the **(Preview) Batch concurrency control** feature. In this way, you limit the number of concurrent tasks so that they don't fail.
 
 To enable priority-based scheduling, follow these steps.
 
 1. Enable the **Batch priority-based scheduling** feature.
 1. Enable the **(Preview) Batch concurrency control** feature.
-1. Go to **System administration \> Setup \> Batch group** and create a new batch group. Set Scheduling Priority as **Normal** or **Low** and specify the **Max Concurrency** value. Depending on the data volume and service status, you need to test to see which value works best for your service.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Process assortments**, select **Batch processing** and set the new batch group you created as the **Batch group**. If you already have a batch job, you can set the batch group from the batch jobs form as well.
+1. Go to **System administration** \> **Setup** \> **Batch group**, and create a new batch group. Set the **Scheduling Priority** field to **Normal** or **Low**, and specify a **Max Concurrency** value. Depending on the data volume and service status, you must do testing to determine which value works best for your service.
+1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Products and inventory** \> **Process assortments**, select **Batch processing**, and set the batch group that you created as the **Batch group**. If you already have a batch job, you can also set the batch group from the batch jobs page.
 
 ## Validate a channel's assortment
 
-After assortments are published, you can validate a channel's assortment in finance and operations apps directly.
+After assortments are published, you can validate a channel's assortment directly in finance and operations apps.
 
 ### Validate a channel's assortment for brick-and-mortar stores
 
-To validate a channel's assortment for brick-and-morter stores, follow these steps.
+To validate a channel's assortment for brick-and-mortar stores, follow these steps.
 
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**. Choose the store you want to validate.
-1. On the Action pane, select the **Store** tab, then under **Inventory** select **View channel products**.
-1. You see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
+1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**, and select the store that you want to validate.
+1. On the Action Pane, on the **Store** tab, in the **Inventory** group, select **View channel products**.
+1. A list shows all the assorted distinct products or product masters. Search for the products that you want to validate.
 1. To validate assorted product variants, select the product master in the list.
-1. On the Action pane, select **Product variants**. You navigate to a new list where all assorted product variants appear there.
+1. On the Action Pane, select **Product variants**. A new list shows all assorted product variants.
 
-If you find any product isn't assorted unexpectedly, double check [Assortment management](./assortments.md) to make sure the channel and product are included in the assortment, the assortment is published, and the product is neither excluded nor stopped.
+If you find that any product isn't assorted as you expect, double-check [Assortment management](./assortments.md). Make sure that the channel and product are included in the assortment, the assortment is published, and the product is neither excluded nor stopped.
 
 ### Validate a channel's assortment for online stores
 
 To validate a channel's assortment for online stores, follow these steps.
 
-1. Go to **Retail and Commerce \> Channels \> Online stores**. Choose the store you want to validate.
-1. On the Action Pane, select the **Channel** tab, then under **Inventory** select **View assortment products**.
-1. You see all the assorted distinct products or product masters in the list. Search for the products you want to validate.
+1. Go to **Retail and Commerce** \> **Channels** \> **Online stores**, and select the store that you want to validate.
+1. On the Action Pane, on the **Channel** tab, in the **Inventory** group, select **View assortment products**.
+1. A list shows all the assorted distinct products or product masters. Search for the products that you want to validate.
 1. To validate assorted product variants, select the product master in the list.
-1. On the Action Pane, select **Product variants**. You navigate to a new list where all assorted product variants appear there.
+1. On the Action Pane, select **Product variants**. A new list shows all assorted product variants.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
