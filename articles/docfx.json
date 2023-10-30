@@ -101,8 +101,8 @@
         "supply-chain/**/index.yml": "MSDocsHeader-Dynamics365-SupplyChainManagement",
         "commerce/**/*.md": "MSDocsHeader-Dynamics365-Commerce",
         "commerce/**/index.yml": "MSDocsHeader-Dynamics365-Commerce",
-        "human-resources/**/*.md":"MSDocsHeader-Dynamics365",
-        "human-resources/**/index.yml":"MSDocsHeader-Dynamics365",
+        "human-resources/**/*.md":"MSDocsHeader-Dynamics365-human-resources",
+        "human-resources/**/index.yml":"MSDocsHeader-Dynamics365-human-resources",
         "fin-ops-core/**/*.md": "MSDocsHeader-Dynamics365",
         "fin-ops-core/**/index.yml": "MSDocsHeader-Dynamics365"
       },
