@@ -1,5 +1,5 @@
 ---
-title: Allow Row version change tracking for tables and data entities
+title: Row version change tracking for tables and data entities
 description: This article explains how to enable row version change tracking for data entities and tables for finance and operations apps.
 author: peakerbl
 ms.date: 10/30/2023
