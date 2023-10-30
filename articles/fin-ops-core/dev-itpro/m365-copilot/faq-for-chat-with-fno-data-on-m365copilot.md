@@ -68,7 +68,7 @@ The user's question is translated into a FetchXML query and run against the fina
 
 ## Are we limited to the supported customer scenarios?
 
-No, you aren't limited to the supported customer scenarios. Think of those scenarios as patterns that Microsoft 365 Copilot can process. All finance and operations entities that follow those patterns can be enabled for Microsoft 365 Copilot and support virtual entities. Here's is the supported list of entities eligible for copilot. However, this release doesn’t contain a UX for custom plugin management using the virtual entities. 
+No, you aren't limited to the supported customer scenarios. Think of those scenarios as patterns that Microsoft 365 Copilot can process. All finance and operations entities that follow those patterns can be enabled for Microsoft 365 Copilot and support virtual entities. Here's is the [supported list of entities eligible for copilot](copilot-data-entities.md). However, this release doesn’t contain a UX for custom plugin management using the virtual entities. 
 
 Microsoft 365 Copilot is available only for en-us language settings. 
 
