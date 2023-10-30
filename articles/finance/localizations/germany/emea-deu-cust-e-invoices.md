@@ -2,7 +2,7 @@
 title: Customer electronic invoices in Germany
 description: This article explains how to get started with Electronic invoicing for Germany in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 10/20/2023
+ms.date: 10/30/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,9 +30,9 @@ Before you complete the procedures in this article, the following prerequisites 
 - The primary address of the legal entity must be in Germany.
 - To enable the generation of electronic invoices in **xRechnung** format version **3** and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
-    1. **Sales Invoice DE** (version 288.9.16.11)
-    2. **Project Invoice DE** (version 288.8.22.12)
-    3. **Invoice model mapping** (version 288.293)
+    - **Sales Invoice DE** (version 288.9.16.11)
+    - **Project Invoice DE** (version 288.8.22.12)
+    - **Invoice model mapping** (version 288.293)
 
 > [!NOTE]
 > The **Sales Invoice DE** and **Project Invoice DE** format configurations are based on the corresponding **Peppol** format configurations. Those format configurations are based on the **UBL** format configurations that use the **Invoice model** configuration and the **Invoice model mapping** configuration. All remaining additional configurations are automatically imported.
