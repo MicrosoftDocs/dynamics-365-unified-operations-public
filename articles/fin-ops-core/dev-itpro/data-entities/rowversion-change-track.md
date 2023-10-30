@@ -30,7 +30,7 @@ In row version change tracking functionality, a new column of type [rowversion](
 
 ## Enable row version change tracking functionality
 
-Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page, **System administration > Setup > Licensing > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). After enabling **Sql row version change tracking** configuration key, during exit of [Maintenance mode](../sysadmin/maintenance-mode.md) the Database synchronization will add **rowversion** column to tables that are enabled for row version change tracking.
+Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page, **System administration > Setup > Licensing > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). After enabling **Sql row version change tracking** configuration key, during exit of [Maintenance mode](../sysadmin/maintenance-mode.md) the Database synchronization will add rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column to tables that are enabled for row version change tracking.
 
 > [!NOTE]
 > The [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column.
