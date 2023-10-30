@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: Training
       itemType: training
-      url: /dynamics365/supply-chain/get-started/learning-catalog
+      url: /training/dynamics365/scm
     # Card
     - title: Troubleshoot
       itemType: concept
