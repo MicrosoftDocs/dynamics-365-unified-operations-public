@@ -96,7 +96,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, replaced by the new Warehouse Management mobile app. |
 | **Product areas affected**         | Supply Chain Management - warehouse app |
 | **Deployment option**              | Cloud and on-premises |
-| **Status**                         | Removed. As of April 2022, the old warehouse app is longer supported and has been removed from the Microsoft Store and Google Play store. Customers must now use the new Warehouse Management mobile app instead. |
+| **Status**                         | Removed. As of April 2022, the old warehouse app is no longer supported and has been removed from the Microsoft Store and Google Play store. Customers must now use the new Warehouse Management mobile app instead. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.15 release
 
