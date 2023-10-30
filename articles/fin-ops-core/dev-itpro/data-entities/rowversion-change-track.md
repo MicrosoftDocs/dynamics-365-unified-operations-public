@@ -26,14 +26,14 @@ ms.dyn365.ops.version: 10.0.31
 
 A new change tracking functionality called row version change tracking has been added to finance and operations apps. This option enables Microsoft Dataverse to be used for incremental synchronization of data. Change tracking is a prerequisite for several features, such as Data archival, Synapse integration, Mobile offline, and Relevance search. The eventual goal is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
 
-In row version change tracking functionality, a new column of type [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) needs to be added to all tables in the data entity that requires change tracking. **Rowversion** column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the **Rowversion** column with the previous value. 
+In row version change tracking functionality, a new column of type [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) needs to be added to all tables in the data entity that requires change tracking. The [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column with the previous value. 
 
 ## Enable row version change tracking functionality
 
 Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page. When **Sql row version change tracking** configuration key is enabled, the Database synchronization will add **Rowversion** column to tables that are enabled for row version change tracking.
 
 > [!NOTE]
-> The **rowversion** column is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column.
+> The [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column.
 >
 > ```SQL
 > INSERT INTO table2
