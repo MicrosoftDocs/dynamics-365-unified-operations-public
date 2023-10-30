@@ -51,9 +51,7 @@ To enable row version change tracking for a table, set the **Allow Row Version C
 
 ## Enable row version change tracking for data entities
 
-You can enable the **Allow Row Version Change Tracking** option for data entities by setting their metadata property to **Yes**. Not all existing data entities are configured to support row version change tracking. The main limiting factor is the complexity of the entities. When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, validation rules are evaluated at build time. However, we still recommend that you review and proactively apply these rules when you create or update entities.
-
-ISVs and partners are recommended to always create new data entities when enabling Row version change tracking. This to avoid risks of existing custom extensions violating the validation rules below. Runtime validations will prevent new breaking extensions from being added once Allow row version is enabled
+To enable row version change tracking for an entity, set **Allow Row Version Change Tracking** property of the entity to **Yes**. Not all existing data entities are configured to support row version change tracking. The main limiting factor is the complexity of the entities. When **Allow Row Version Change Tracking** is set to **Yes** for an entity, validation rules are evaluated at build time.
 
 The following table describes the data entity validation rules.
 
@@ -70,6 +68,8 @@ The following table describes the data entity validation rules.
 | The relationship between data sources must be many to one. | One-to-many relationships aren't supported. A one-to-many relationship will generate duplicate virtual table **entityid** values. | Change tracking can't be enabled because the Relation %1 between the data source %2 and the data source %3 in the F&O entity %4 is one-to-many. |
 | Only normal relation constraints are supported for data sources in a data entity. | [![Screen shot of Data sources Relation Constraints.](./media/DataSourceRelations.jpg)](./media/DataSourceRelations.jpg) | Change tracking can't be enabled because the Relation %1 between the data source %2 and the data source %3 in the F&O entity %4 isn't set to Normal. |
 | Validate data entities that have time state–enabled tables. | Root tables that have an **Apply Date** filter aren't supported, because they can cause record disappearance. Time state tables aren't supported for related data sources, because they can cause either record disappearance or one-to-many relationships. | Change tracking can't be enabled because the data source %3 in the F&O entity %1 has a time state enabled table %2. |
+
+ISVs and partners are recommended to always create new data entities when enabling row version change tracking. This to avoid risks of existing custom extensions violating the validation rules.
 
 When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, the **SysRowVersionNumber** column of the primary table is added to the data entity view.
 
