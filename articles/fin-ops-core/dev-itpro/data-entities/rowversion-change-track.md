@@ -30,7 +30,7 @@ In row version change tracking functionality, a new column of type [rowversion](
 
 ## Enable row version change tracking functionality
 
-Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page. 
+Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page. When **Sql row version change tracking** configuration key is enabled, the Database synchronization will add **Rowversion** column to tables that are enabled for row version change tracking.
 
 ## Enable row version change tracking for tables
 
