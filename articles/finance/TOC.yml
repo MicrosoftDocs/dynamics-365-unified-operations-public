@@ -3383,7 +3383,13 @@
           - name: Printing configurations for General Ledger LATAM 
             href: localizations/iberoamerica/ltm-general-ledger.md
           - name: Set up transaction posting for Latin America 
-            href: localizations/iberoamerica/ltm-post-transactions.md        
+            href: localizations/iberoamerica/ltm-post-transactions.md   
+          - name: Use LATAM functionality for checks
+            href: localizations/iberoamerica/ltm-checks-in-latam.md
+          - name: Use the LATAM extension in customer payments journals
+            href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
+          - name: Use the LATAM extension in vendor payments journals
+            href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
         - name: Latvia
           items:
           - name: Latvia overview
