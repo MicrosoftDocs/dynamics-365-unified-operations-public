@@ -47,7 +47,7 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 :::image type="content" source="media/scenario-1.gif" alt-text="An animated GIF demonstrating how to ask copilot about the availability of laptops."::: 
 
-:::image type="content" source="media/scenario-1.gif" alt-text="An animated GIF demonstrating how to ask copilot about the colors that are availabile."::: 
+:::image type="content" source="media/scenario-1.gif" alt-text="An animated GIF demonstrating how to ask copilot about the colors that are available."::: 
 
 Example questions: 
 
@@ -88,7 +88,7 @@ If you want to try your entities, enable them as virtual entities, stay tuned fo
 
 ## How to enable Dynamics 365 role to query inventory data via Microsoft 365 Copilot?
 
-To query inventory data via Microsoft 365 Copilot , user roles should contain privilege **companyinfoentityview**. 
+To query inventory data via Microsoft 365 Copilot, user roles should contain privilege **companyinfoentityview**. 
 
 To add this privilege to Dynamics 365 role, follow these steps:
 
@@ -110,10 +110,10 @@ For more information, see [Role-based security](../sysadmin/role-based-security.
 
 When you use Microsoft 365 Copilot to chat with finance and operations data, follow these best practices. These are revised continuously to improve the product experience. 
 
-- Be specific with your question to copilot and avoid ambiguity. If your question is about a customer, then use the keyword "customer" in your question. For example, don't ask, "Who is the contact person for Forest Wholesales?" Instead, ask, "Who is the contact person for customer Forest Wholesales?".
-- Be specific about the expected outcomes. If you want results in table format, then use the key phrase "in table format". If you want a consolidated result or a summary, make sure you call it out explicitly. For example, you can ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
-- Be granular with your question as much as possible to avoid partial results. For example, when the item Surface Pro 128 GB is available in multiple legal entities and each has a set of sites, warehouses, then you can ask "what is the inventory availability of Surface Pro 128 GB in Site Central, Warehouse Chicago in company Contoso Retail USA?". You can also use inventory dimensions like size, color, style etc. for more granularity.  
-- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, you can ask, "What is the inventory availability for item number 1104?". To inquire on-hand inventory stock availability details, use the following keywords whenever possible.
+- Be specific with your question to copilot and avoid ambiguity. If your question is about a customer, then use the keyword "customer" in your question. For example, don't ask, "Who is the contact person for Forest Wholesales?" Instead, ask, "Who is the contact person for customer Forest Wholesales?."
+- Be specific about the expected outcomes. If you want results in table format, then use the key phrase "in table format." If you want a consolidated result or a summary, make sure you call it out explicitly. For example, you can ask, "What is the availability of Surface Pro 128 GB? Give me the details by site, warehouse, and color in table format."
+- Be granular with your question as much as possible to avoid partial results. For example, when the item Surface Pro 128 GB is available in multiple legal entities and each has a set of sites, warehouses, then you can ask "what is the inventory availability of Surface Pro 128 GB in Site Central, Warehouse Chicago in company Contoso Retail USA?" You can also use inventory dimensions like size, color, style etc. for more granularity.  
+- If you know the name or label that's associated with the required data in finance and operations apps, use that name when you search, to make the search easier. For example, you can ask, "What is the inventory availability for item number 1104?" To inquire on-hand inventory stock availability details, use the following keywords whenever possible.
   
   | Keywords | &nbsp; |
   |----------|--------|
@@ -123,14 +123,14 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
   | stock | item |
   | product | available quantity |
   | price | selling price |
-- If you have access to multiple companies, add "list results by company" to you questions. Alternatively, you can add "in company…" at the end of your question.
+- If you have access to multiple companies, add "list results by company" to your questions. Alternatively, you can add "in company…" at the end of your question.
 
 Examples: 
 
 - What is the availability for Laptop15 M1501? List the result by company.    
 - What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 - Use letter casing correctly:
-  - Use lower case for field or attribute names, like 'site', 'amount due'. Capital cased words are more likely to be treated as literals. 
+  - Use lower case for field or attribute names, like 'site,' 'amount due.' Capital cased words are more likely to be treated as literals. 
   - If you're unsure about the spelling for string literals, try using lower case letters so that spelling correction is more likely to kick in. Words with capital-letters are more likely to be treated as special names and might not have the spelling checked. 
 - Use precise terms for concepts with multiple ways of referencing.
   - Company can be referred to using company name or company code:
