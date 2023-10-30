@@ -32,6 +32,8 @@ The mobile app uses [Dataverse virtual tables that are connected to Supply Chain
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
+The [*Power Apps component framework feature* must be enabled](https://learn.microsoft.com/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature).
+
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Asset Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
