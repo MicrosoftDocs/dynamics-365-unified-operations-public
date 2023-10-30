@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.35 PU59
 
 This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 
-A Microsoft 365 Copilot license enables authorizes users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
+A Microsoft 365 Copilot license enables authorized users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions:
 
 - I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability? Give me the details by product name, site, warehouse, color, available quantity.
 - Do we have red Laptop15 M1501 model in warehouses other than Chicago within the site Central? Give me the details by product name, site, warehouse, color, available quantity.
