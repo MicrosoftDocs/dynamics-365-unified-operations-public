@@ -45,7 +45,11 @@ Data that resides inside tables is referred to as *structured data*. Data that's
 
 **Microsoft Dynamics 365 Supply Chain Management scenario – Inquire about on-hand inventory by using Microsoft 365 Copilot**
 
-Examples: 
+:::image type="content" source="media/scenario-1.gif" alt-text="An animated GIF demonstrating how to ask copilot about the availability of laptops."::: 
+
+:::image type="content" source="media/scenario-1.gif" alt-text="An animated GIF demonstrating how to ask copilot about the colors that are availabile."::: 
+
+Example questions: 
 
 - What is the inventory availability of Laptop15 M1501 in Silver color in Site Central, Warehouse Chicago? Give me the details in table format by product name, site, warehouse, color, available quantity.
 - What colors do you have for Laptop15 M1501 other than Silver color in Site Central, Warehouse Chicago? Any other new colors coming?
