@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: FAQ for chat with finance and operations data by using Microsoft 365 Copilot
+title: FAQ for finance and operations data on Microsoft 365 Copilot
 description: This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 author: ramasri
 ms.date: 10/27/2023
@@ -24,7 +24,7 @@ ms.search.validFrom: 09/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# FAQ for chat with finance and operations data by using Microsoft 365 Copilot
+# FAQ for finance and operations data on Microsoft 365 Copilot
 
 [!include[banner](../includes/banner.md)]
 
@@ -123,12 +123,9 @@ When you use Microsoft 365 Copilot to chat with finance and operations data, fol
   | stock | item |
   | product | available quantity |
   | price | selling price |
-- If you have access to multiple companies, add "list results by company" to your questions. Alternatively, you can add "in company…" at the end of your question.
-
-Examples: 
-
-- What is the availability for Laptop15 M1501? List the result by company.    
-- What is the availability for Laptop15 M1501 in company Contoso Retail USA?
+- If you have access to multiple companies, add "list results by company" to your questions. Alternatively, you can add "in company…" at the end of your question. For example.
+  - What is the availability for Laptop15 M1501? List the result by company.    
+  - What is the availability for Laptop15 M1501 in company Contoso Retail USA?
 - Use letter casing correctly:
   - Use lower case for field or attribute names, like 'site,' 'amount due.' Capital cased words are more likely to be treated as literals. 
   - If you're unsure about the spelling for string literals, try using lower case letters so that spelling correction is more likely to kick in. Words with capital-letters are more likely to be treated as special names and might not have the spelling checked. 
