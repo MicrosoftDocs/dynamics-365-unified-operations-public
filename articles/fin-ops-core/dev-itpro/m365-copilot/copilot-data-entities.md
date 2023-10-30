@@ -1,8 +1,8 @@
 ---
 title: Entities eligible for copilot
-description: The article contains a list of entities eligible for copilot.
-author: 
-ms.author: 
+description: This article contains a list of entities eligible for copilot.
+author: ramasri
+ms.author: ramasri
 ms.topic: conceptual
 ms.date: 10/30/2023
 ms.reviewer: johnmichalak
@@ -11,6 +11,7 @@ ms.custom: bap-template
 
 # Entities eligible for copilot
 
+This article contains a list of entities eligible for copilot.
 
 AbbreviationsEntity
 AccountingDistributionBiEntity
