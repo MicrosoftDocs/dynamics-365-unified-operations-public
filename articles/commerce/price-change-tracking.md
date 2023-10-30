@@ -20,7 +20,7 @@ ms.search.validFrom: 2023-06-01
 
 This article describes the price change tracking feature in Microsoft Dynamics 365 Commerce.
 
-A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows (note that the two examples aren't out-of-the-box features):
+A product's active sales price is influenced by multiple factors (for example, seasonal adjustments and promotions), and might go up and down over time. Many Commerce scenarios rely on price change signals to trigger specific business workflows. Here are some examples of these triggered business workflows. (Note that these two examples aren't out-of-box features.)
 
 - A retail store must update shelf labels so that they reflect changed prices.
 - An e-commerce website alerts shoppers about a price drop for items in their shopping carts.
@@ -86,7 +86,7 @@ To specify a batch group for price change tracking batch jobs in headquarters, f
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters \> Prices and discounts**.
 1. Under **Backend tasks**, specify the batch group to be used to run pricing batch jobs. Microsoft recommends that you dedicate a few Application Object Server (AOS) instances to that batch group, separate from other instances dedicated to processing of backbone operations.
 
-For information on the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
+For information about the availability of batch group support, see [LCS Issue 830636](https://fix.lcs.dynamics.com/Issue/Details/?bugId=830636&dbType=3).
 
 ### Usage patterns not suitable for feature enablement
 
