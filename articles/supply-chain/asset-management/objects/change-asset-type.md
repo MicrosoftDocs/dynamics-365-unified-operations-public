@@ -23,28 +23,30 @@ This article explains how to change the [asset type](../setup-for-objects/object
 
 ## Prerequisites
 
-To use this feature, your system must meet the following requirements:
+Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that is named *(Preview) Change types on assets and functional locations* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *(Preview) Change types on assets and functional locations* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Change the asset type of an asset
 
-To change the asset type of an existing asset, follow these steps:
+To change the asset type of an existing asset, follow these steps.
 
 1. Go to **Asset management** \> **Assets** \> **All assets**.
-1. On the **All assets** list page, select one or more assets for which you want to change asset type. If you select multiple assets, then all of them must be of the same asset type.
-1. On the Action Pane, open the **Asset** tab and, from the **Maintain** field group, select **Change asset type**.
-1. The **Change asset type** dialog opens. Expand the **Parameters** FastTab and make the following settings:
-    - **New asset type** - Select the new asset type to assign to the selected assets.
-    - **Attributes** - Set to *Yes* to append the attribute types associated with the new asset type to the selected assets.
-    - **Maintenance plans** - Set to *Yes* to append the maintenance plans associated with the new asset type to the selected assets.
-1. Expand the **Run in background** FastTab and set **Batch processing** to *Yes* to run the process of changing asset types as a batch job.
-1. Select **OK** in the **Change asset type** dialog to apply your settings.
+1. On the **All assets** list page, select one or more assets that you want to change asset type for. If you select multiple assets, all of them must be of the same asset type.
+1. On the Action Pane, on the **Asset** tab, in the **Maintain** group, select **Change asset type**.
+1. In the **Change asset type** dialog box, on the **Parameters** FastTab, set the following fields:
+
+    - **New asset type** – Select the new asset type to assign to the selected assets.
+    - **Attributes** – Set this option to *Yes* to append the attribute types that are associated with the new asset type to the selected assets.
+    - **Maintenance plans** – Set this option to *Yes* to append the maintenance plans that are associated with the new asset type to the selected assets.
+
+1. On the **Run in background** FastTab, set the **Batch processing** option to *Yes* to run the process of changing asset types as a batch job.
+1. Select **OK** to apply your settings.
 
 > [!NOTE]
-> Each asset type has settings that define which supporting data can be used for assets of that type. This includes information such as maintenance job types, counters, and attribute types. When you change the asset type, the supporting data for existing assets might not match the supporting data for the new asset type.
+> Each asset type has settings that define which supporting data can be used for assets of that type. This supporting data includes information such as maintenance job types, counters, and attribute types. When you change the asset type, the supporting data for existing assets might not match the supporting data for the new asset type.
 >
-> For example, suppose asset *A1* has an asset type of *AT1*. *AT1* has two selected maintenance job types: *JT1* and *JT2*. Work orders have been created for *A1* and maintenance job types *JT1* and *JT2* are selected for those work orders. The asset type on asset *A1* is then changed to *AT2*. *AT2* has maintenance job types *JT3* and *JT4* selected. As a result of changing the asset type, you'll now have work orders with maintenance job types that aren't associated with the asset type of the asset for these work orders.
+> For example, asset *A1* has an asset type of *AT1*. Two maintenance job types, *JT1* and *JT2*, are selected for asset type *AT1*. Work orders have been created for asset *A1*, and maintenance job types *JT1* and *JT2* are selected for those work orders. Later, the asset type of asset *A1* is changed to *AT2*. Maintenance job types *JT3* and *JT4* are selected for asset type *AT2*. Therefore, after the asset type is changed, the work orders have maintenance job types that aren't associated with the asset type of the asset for those work orders.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
