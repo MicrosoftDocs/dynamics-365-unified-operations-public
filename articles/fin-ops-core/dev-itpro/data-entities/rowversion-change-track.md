@@ -33,19 +33,21 @@ In row version change tracking functionality, a new column of type [rowversion](
 Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page, **System administration > Setup > Licensing > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). After enabling **Sql row version change tracking** configuration key, during exit of [Maintenance mode](../sysadmin/maintenance-mode.md) the Database synchronization will add [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column to tables that are enabled for row version change tracking.
 
 > [!NOTE]
-> The [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column.
+> The [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to insert or update this column.
 >
 > ```SQL
 > INSERT INTO table2
 > SELECT * FROM table1
 > ```
-> Hence enable the configuration key in your sandbox environment first and validate, before enabling the configuration key in production. In the unlikely event that custom SQL update statements are trying to create or update the column, it will be required to disable the **Sql row version change tracking** configuration key until the issue is resolved. 
+> Hence enable the configuration key in your sandbox environment first and validate, before enabling the configuration key in production. In the unlikely event that custom SQL update statements are trying to insert or update the column, it will be required to disable the **Sql row version change tracking** configuration key until the issue is resolved. 
 
 ## Enable row version change tracking for tables
 
-You can enable the **Allow Row Version Change Tracking** option for tables by setting their metadata property to **Yes**. The property must be set to **Yes** for all tables that are used as data sources for a data entity to enable row version change tracking for that entity. During build operations, a **SysRowVersionNumber** column of the **rowversion** data type is added to the tables. Beginning in 10.0.34 a new **SysRowVersion** column is introduced and will be used for row version change tracking instead of the **SysRowVersionNumber** column. The **SysRowVersionNumber** column will become obsolete. Everything stated below will from 10.0.34 be true for the **SysRowVersion column**.
+To enable row version change tracking for a table, set the **Allow Row Version Change Tracking** property of the table to **Yes**. When **Allow Row Version Change Tracking** property of a table is set to **Yes**, the table gets a new system field called **SysRowVersion** of type [rowversion](https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16).
 
-The **SysRowVersionNumber** column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the **SysRowVersionNumber** column with the previous value.
+> [!NOTE]
+> Before 10.0.34 when the row version change tracking functionality was in preview, the row version column was called **SysRowVersionNumber**. Beginning in 10.0.34 **SysRowVersionNumber** column was replaced with new **SysRowVersion** column. The **SysRowVersionNumber** column is obsolete. The **SysRowVersionNumber** column will be removed from metadata of out of the box tables in 10.0.39. Hence do not take any dependency on **SysRowVersionNumber** column in your X++ code.
+> 
 
 ## Enable row version change tracking for data entities
 
