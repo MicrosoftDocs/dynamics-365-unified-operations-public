@@ -73,7 +73,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| Not Started |
 | 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 8, 2024| Not Started |
-| 10.0.39 PQU-9 | November 27, 2024 | December 4, 2024 to January 19, 2024| Not Started |
+| 10.0.39 PQU-9 | November 27, 2024 | December 4, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Not Started |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Not Started |
 | 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| Not Started |
