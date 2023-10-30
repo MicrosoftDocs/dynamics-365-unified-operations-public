@@ -72,7 +72,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes, the [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) functionality is being replaced by the [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md) functionality. |
 | **Product areas affected** | Supply Chain Management - inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | <p>Removed. The *Stock transfer orders that have tax on the transfer price* functionality no longer receives support with bug fixes and security fixes.</p><p>After April 2023, customers will be asked to use the improved functionality, *Stock transfer orders for India*, by default. After October 2023, the *Stock transfer orders that have tax on the transfer price* functionality will no longer be available, and customers will be asked to move to the improved *Stock transfer orders for India* functionality.</p><p>For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
+| **Status** | <p>Removed. The *Stock transfer orders that have tax on the transfer price* functionality has been removed as of October 2023. Customers must instead use the improved functionality, *Stock transfer orders for India*. For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).</p> |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
@@ -92,11 +92,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Effective April 2021, *Supply Chain Management - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It's now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy. If needed, the two apps can be used side-by-side to help users gradually adjust as they learn to use the new app.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
+| **Reason for deprecation/removal** | Effective April 2021, *Supply Chain Management - Warehousing* (the warehouse app) is deprecated and won't be supported after April 2022. It's now replaced by the *Warehouse Management mobile app*, which was released with version 10.0.17 of Supply Chain Management. The new app is a complete replacement but uses same underlying framework, which makes migration easy.<br><br>For more information about the new Warehouse Management mobile app, see [Warehouse Management mobile application](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) and [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md). |
 | **Replaced by another feature?**   | Yes, replaced by the new Warehouse Management mobile app. |
 | **Product areas affected**         | Supply Chain Management - warehouse app |
 | **Deployment option**              | Cloud and on-premises |
-| **Status**                         | Removed. As of April 2022, the old warehouse app is longer supported and has been removed from the Microsoft Store and Google Play store.  |
+| **Status**                         | Removed. As of April 2022, the old warehouse app is longer supported and has been removed from the Microsoft Store and Google Play store. Customers must now use the new Warehouse Management mobile app instead. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.15 release
 
