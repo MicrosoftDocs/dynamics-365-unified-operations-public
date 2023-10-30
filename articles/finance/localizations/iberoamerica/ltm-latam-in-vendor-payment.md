@@ -38,7 +38,7 @@ Use the **Payment method** page to select one or more payment methods for the sa
 
 ### Use a bank transfer
 
-Follow these steps to select bank transfer payment.
+Follow these steps to select a bank transfer payment.
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 2. On the Action Pane, select **LATAM** \> **Payment methods**.
