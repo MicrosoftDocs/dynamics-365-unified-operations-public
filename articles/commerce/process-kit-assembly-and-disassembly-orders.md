@@ -1,7 +1,7 @@
 ---
 title: Process kit assembly and disassembly orders
 description: This article describes the steps of processing kit assembly and disassembly orders.
-author: tonyafehr
+author: rickwyang
 ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
