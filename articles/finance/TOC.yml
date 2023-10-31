@@ -2326,10 +2326,6 @@
             href: localizations/denmark/post-project-invoice-payment-slip.md
           - name: Post a sales invoice with a payment slip
             href: localizations/denmark/post-sales-invoice-payment-slip.md
-          - name: Set up customer accounts for OIOUBL electronic invoicing
-            href: localizations/denmark/set-up-customer-accounts-oioubl-electronic-invoicing.md
-          - name: Set up OIOUBL electronic invoicing
-            href: localizations/denmark/set-up-oioubl-electronic-invoicing.md
           - name: Set up payment slip format
             href: localizations/denmark/set-up-payment-slip-format.md
           - name: Danish Intrastat
@@ -2628,8 +2624,8 @@
             href: localizations/germany/emea-deu-vat-declaration-germany.md
           - name: German Intrastat
             href: localizations/germany/emea-deu-intrastat.md
-          - name: Customer electronic invoices report
-            href: localizations/germany/emea-deu-e-invoices.md
+          - name: Customer electronic invoices
+            href: localizations/germany/emea-deu-cust-e-invoices.md
           - name: Journal list report
             href: localizations/germany/emea-deu-journal-list-report.md
           - name: Set up electronic tax declarations
