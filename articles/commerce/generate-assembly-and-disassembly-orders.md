@@ -32,7 +32,8 @@ After you generate an assembly order and enter the quantities that you want to a
 
 To generate an assembly order from a product kit, follow these steps.
 
-1. Go to **Retail and Commerce \> Products and categories \> Released product kits**. In the **Released product kits** list, double-click a product kit.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Released product kits**.
+1. In the **Released product kits** list, double-click a product kit.
 1. In the **Released product details** form, select **Edit**. Then, on the Action Pane, on the **Product** tab, on the **Product kit**, select **Configure**.
 1. In the **Configure kit** form, select **Generate assembly order**.
 1. In the **Kit order** form, on the **General** FastTab, in the **Warehouse** field, select the warehouse where the product kits will be assembled.
@@ -43,7 +44,7 @@ You can view the assembly order that you created and the BOM journal entries tha
 
 To view the assembly order and BOM journal entries, follow these steps.
 
-1. Go to **Retail and Commerce \> Products and categories \> Kit orders**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Kit orders**.
 1. In the **Kit orders** list, double-click a kit order to view the details of the assembly order that you just created.
 1. To view the BOM journal entries, in the **Kit order** form, on the **Configurations** FastTab, select **View BOM journal**.
 
@@ -57,7 +58,7 @@ After the assembly and disassembly orders are created, kits can be assembled or 
 
 To manually generate assembly and disassembly orders for a product kit, follow these steps.
 
-1. Go to **Retail and Commerce \> Products and categories \> Kit orders**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Kit orders**.
 1. In the **Kit orders** list, on the Action Pane, select **Order**.
 1. In the **Create a new kit order** dialog box, enter information as described in the following table.
 
@@ -77,7 +78,7 @@ You can view the order that you created and the BOM journal entries that were cr
 
 To view the order and BOM journal entries, follow these steps.
 
-1. Go to **Retail and Commerce \> Products and categories \> Kit orders**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Kit orders**.
 1. In the **Kit orders** list, double-click a kit order to view the details of the assembly or disassembly order that you just created.
 1. To view the BOM journal entries, in the **Kit order** form, on the **Configurations** FastTab, select **View BOM journal**.
 
@@ -92,7 +93,8 @@ When product kits are sold in a cash-and-carry scenario, and the product kit is 
 
 To generate an assembly order from a sales order, follow these steps:
 
-1. Go to **Sales and marketing \> Sales orders \> All sales orders**. In the **All sales orders** list, on the Action Pane, on the **Sales order** tab, select **Sales order** to create a new sales order.
+1. In Commerce headquarters, go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. In the **All sales orders** list, on the Action Pane, on the **Sales order** tab, select **Sales order** to create a new sales order.
 1. In the **Create sales order** form, in the **Customer account** field, select the customer account to create the sales order for. Enter any addition information such as invoice account, currency, or language, and then select **OK**.
 1. In the **Sales order** form, on the **Sales order lines** FastTab, in the **Item number** field, select a product kit to add to the sales order.
 1. On the **Line details** FastTab, on the **Product** tab, in the **Configuration** field, select the specific configuration of the product kit that you want to add to the sales order.
