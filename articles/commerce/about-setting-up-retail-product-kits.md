@@ -14,6 +14,7 @@ ms.search.validFrom: 2023-10-23
 # About setting up retail product kits
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes the process flow for setting up retail product kits. You use product kits to group and package individual products into one sellable unit. By selling products as a kit, you can reduce costs that are associated with order fulfillment and shipping. A product kit can include multiple products, variants for those products, and product substitutes. Customers can select a product substitute to replace a standard kit product. If the product substitute costs more than the standard kit product, the kit price is adjusted to include the additional cost. The products that are included in a kit are referred to as components. The set of products that make up a product kit are referred to as kit configurations. One product kit can include many components and kit configurations.
 
