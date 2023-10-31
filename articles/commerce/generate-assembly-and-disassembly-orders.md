@@ -1,7 +1,7 @@
 ---
 title: Generate assembly and disassembly orders
 description: This article describes the steps of generating kit assembly and disassembly orders.
-author: tonyafehr
+author: rickwyang
 ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
@@ -121,11 +121,13 @@ To generate an assembly order from a sales order, follow these steps:
 
 6.  Enter any additional information to the sales order, and then process the sales order to automatically generate the assembly order for the kit products.
 
-## See also
+## Additional resources
 
-[Create retail product kits](./create-retail-product-kits.md)
+[Retail product kit setup overview](retail-product-kit-setup.md)
 
-[About setting up retail product kits](./about-setting-up-retail-product-kits.md)
+[Create retail product kits](create-retail-product-kits.md)
+
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
