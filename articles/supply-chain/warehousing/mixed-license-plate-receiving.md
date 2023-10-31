@@ -68,7 +68,7 @@ The following options for identifying the source document lines are available:
 
 ## <a name="deferred-receiving-processing"></a>Deferred receiving processing
 
-With the deferred receiving process, you can, for example, optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** for your mobile device menu item. In a scenario with several thousand serial numbers, the system records the serial numbers quickly and stores the information into the *mixed license plate receiving* entities. The system then processes on-hand inventory updates and creates work in the background, which frees warehouse workers to continue doing other work. Deferred receiving processing is useful for warehouse processes where different workers are responsible for inbound receiving and putaway, respectively.
+The deferred receiving process lets you, for example, optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** value to your mobile device menu item. In a scenario that involves several thousand serial numbers, the system quickly records the serial numbers and stores the information in the *mixed license plate receiving* entities. It then processes on-hand inventory updates and creates work in the background, so that warehouse workers can continue to do other work. Deferred receiving processing is useful for warehouse processes where different workers are responsible for inbound receiving and putaway.
 
 You can configure mobile device menu items that use one of the following **Work creation process** settings to run a deferred receiving process that quickly records incoming inventory and group-registers on-hand inventory against license plates:
 
@@ -80,27 +80,28 @@ You can configure mobile device menu items that use one of the following **Work 
 
 ### Create and assign deferred receiving policies
 
-To use deferred receiving processing, you must first create a deferred receiving policy and assign it to the relevant mobile device menu item(s).
+To use deferred receiving processing, you must first create a deferred receiving policy and assign it to the relevant mobile device menu items.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Deferred receiving policies**. Identify the policy you want to use or create a new one. Each policy establishes when a receiving flow uses deferred receiving processing and makes a few other options for how the process should work. Use the tooltips provided on the page to learn about how to use each setting.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Deferred receiving policies**.
+1. Identify the policy that you want to use, or create a new one. Each policy defines when a receiving flow uses deferred receiving processing. It also sets a few other options that control how the process works. Use the tooltips that are provided on the page to learn how to use each setting.
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
-1. In the list pane, select the menu item you want to set up. The selected menu item must use one of the work creation policies listed previously.
-1. Set **Deferred receiving policy ID** to the policy you identified at the start of this procedure.
+1. In the list pane, select the menu item that you want to set up. The selected menu item must use one of the previously listed work creation policies.
+1. Set the **Deferred receiving policy ID** field to the policy that you identified in step 2.
 
 > [!NOTE]
-> As with the *Mixed license plate receiving* mobile device **Work creation process**, the system can print license plate labels when you run a *deferred receiving* process. These options are among the settings established by the **Deferred receiving policy ID** selected for each menu item.
+> As for the *Mixed license plate receiving* mobile device work creation process, the system can print license plate labels when you run a deferred receiving process. The options are among the settings that are established by the deferred receiving policy ID that's selected for each menu item.
 >
-> If you choose to print labels before creating work (as established by the **Label printing on confirming receiving** for the receiving policy), the label won't include details such as the to-location for the license plate because this information won't be available until the system has finished the running the deferred receiving asynchronous process.
+> If you set the **Label printing on confirming receiving** field so that labels are printed before work is created, the labels won't include details such as the "to" location for the license plate, because this information won't be available until the system has finished running the deferred receiving asynchronous process.
 
 ### Deferred receiving asynchronous processing
 
-*Deferred asynchronous receiving processing* automatically runs immediately after a mobile device menu item finishes a *Receiving completed* process, which indicates that all the required *Mixed license plate receiving* data is available. You can monitor the status of the process on **Mixed license plate receiving** page, where the **Mixed license plate receiving status** field shows one of the following values:
+*Deferred asynchronous receiving processing* automatically runs immediately after a mobile device menu item completes a *Receiving completed* process, which indicates that all the required *Mixed license plate receiving* data is available. You can monitor the status of the process on the **Mixed license plate receiving** page, where the **Mixed license plate receiving status** field shows one of the following values:
 
 - *Building license plate*
 - *Processing*
 - *Error*
 - *Received*
 
-If an *Execute deferred receiving [License plate ID]* batch job fails, the related **Mixed license plate receiving status** is set to *Error*. To view the reason for the failure, selected the failed job and then select the **Processing errors** button. Take the appropriate actions to address the error, such as updating a line quantity or deleting a line, and rerun the process manually by selecting the **Complete license plate** button.
+If an *Execute deferred receiving \[License plate ID\]* batch job fails, the related **Mixed license plate receiving status** field is set to *Error*. To view the reason for the failure, select the failed job, and then select **Processing errors**. Take the appropriate action to address the error (for example, by updating a line quantity or deleting a line). Then manually rerun the process by selecting **Complete license plate**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
