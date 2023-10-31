@@ -115,9 +115,9 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country/region of your tax registration.
-3. In the **File format mapping** field, select the Electronic reporting (ER) format for Intrastat file export, for example, select **Intrastat (DE)** for Germany (DEU).
+3. In the **File format mapping** field, select the Electronic reporting (ER) format for Intrastat file export. For example, select **Intrastat (DE)** for Germany (DEU).
 4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
-5. **Miscellaneous charges per kilogram** filed is available for Italy **Country/region**. Select this field to calculate miscellaneous charges by multiplying the cost of each kilogram and the weight of goods in kilograms. When this field is not selected, miscellaneous charges are calculated as a percentage of the invoice amount. For more information, see [Miscellaneous charges per kilogram in an Intrastat declaration](../italy/emea-ita-exil-misc-charges-intrastat.md)
+5. The **Miscellaneous charges per kilogram** checkbox is available when **Country/region** field is set to **ITA** (Italy). Select this checkbox to calculate miscellaneous charges by multiplying the cost of each kilogram and the weight of goods in kilograms. If this checkbox is cleared, miscellaneous charges are calculated as a percentage of the invoice amount. For more information, see [Miscellaneous charges per kilogram in an Intrastat declaration](../italy/emea-ita-exil-misc-charges-intrastat.md).
 
     ![Foreign trade parameters2.](../media/mediaMultipleid-image3-1.png)
 
