@@ -14,6 +14,7 @@ ms.search.validFrom: 2023-10-23
 # Create retail product kits
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes the tasks that are required to set up retail product kits. By using product kits, you can package individual products into one sellable unit and make them available for sale in any retail channel. A product kit consists of kit components and component substitutes. Kit components can be either a distinct product or a product variant. Component substitutes can be a distinct product, product master, or product variant. The different combinations of components and component substitutes that are included in a product kit are referred to as kit configurations. One product kit can have one or more configurations.
 
@@ -173,27 +174,9 @@ After you set up the kit and define your kit configuration, the next steps are t
 
 If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Configuration keys</strong></p></td>
-<td><p>Retail</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Security roles</strong></p></td>
-<td><p>Merchandising manager</p></td>
-</tr>
-</tbody>
-</table>
+| Category | Prerequisite |
+|-------|-------------|
+| Configuration keys | Retail |
+| Security roles | Merchandising manager |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
