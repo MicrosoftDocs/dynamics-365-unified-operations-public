@@ -1,9 +1,9 @@
 ---
-title: About setting up retail product kits
-description: This article describes the overview steps of setting up retail product kits.
-author: tonyafehr
-ms.date: 10/23/2023
-ms.topic: article
+title: Retail product kit setup overview
+description: This article provides an overview of the process flow for setting up retail product kits.
+author: rickwyang
+ms.date: 10/31/2023
+ms.topic: overview
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
@@ -11,12 +11,14 @@ ms.author: wenxyang
 ms.search.validFrom: 2023-10-23
 ---
 
-# About setting up retail product kits
+# Retail product kit setup overview
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This topic describes the process flow for setting up retail product kits. You use product kits to group and package individual products into one sellable unit. By selling products as a kit, you can reduce costs that are associated with order fulfillment and shipping. A product kit can include multiple products, variants for those products, and product substitutes. Customers can select a product substitute to replace a standard kit product. If the product substitute costs more than the standard kit product, the kit price is adjusted to include the additional cost. The products that are included in a kit are referred to as components. The set of products that make up a product kit are referred to as kit configurations. One product kit can include many components and kit configurations.
+This article provides an overview of the process flow for setting up retail product kits.
+
+Retail product kits group and package individual products into one sellable unit. By selling products as a kit, you can reduce the costs associated with order fulfillment and shipping. A product kit can include multiple products, variants for those products, and product substitutes. Customers can select a product substitute to replace a standard kit product. If the product substitute costs more than the standard kit product, the kit price is adjusted to include the additional cost. The products that are included in a kit are referred to as components. The set of products that make up a product kit are referred to as kit configurations. One product kit can include many components and kit configurations.
 
 The following diagram illustrates the steps that you must complete to create and process retail product kits so that they can be sold in your retail channels. The numbers in the diagram correspond to the sections later in the topic.
 
