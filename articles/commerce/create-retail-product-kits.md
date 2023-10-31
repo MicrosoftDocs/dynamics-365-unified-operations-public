@@ -33,33 +33,11 @@ The following illustration shows how the process of creating retail product kits
 
 The following table shows the prerequisites that must be in place before you start.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Category</p></th>
-<th><p>Prerequisite</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Set up kit parameters</p></td>
-<td><p>Specify the journal name to use to generate trade agreements for products and product variants that are included in a retail product kit.</p></td>
-</tr>
-<tr class="even">
-<td><p>Set up receipt formats for kit products</p></td>
-<td><p>Specify whether to show the individual kit components on the product receipt.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Set up products</p></td>
-<td><p>Before you can add products, product variants, and product substitutes to a product kit, you must set up your products. For more information about how to set up retail products, see <a href="set-up-retail-products.md">Set up retail products</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Category | Prerequisite |
+|-------|-------------|
+| Set up kit parameters | Specify the journal name to use to generate trade agreements for products and product variants that are included in a retail product kit. |
+| Set up receipt formats for kit products | Specify whether to show the individual kit components on the product receipt. |
+| Set up products | Before you can add products, product variants, and product substitutes to a product kit, you must set up your products. For more information about how to set up retail products, see [Set up retail products](set-up-retail-products.md). |
 
 ## 1\. Create a product kit
 
