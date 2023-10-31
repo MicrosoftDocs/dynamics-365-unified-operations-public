@@ -44,7 +44,7 @@ Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **S
 > To resolve the issue, the direct SQL DML statement in the X++ code needs to be modified to explicitly specify column list for source and destination tables in the SQL DML statement, such as the following example.
 >
 > ```SQL
-> INSERT INTO table2 (Column1, COlumn2)
+> INSERT INTO table2 (Column1, Column2)
 > SELECT ColumnA, ColumnB FROM table1
 > ```
 > 
