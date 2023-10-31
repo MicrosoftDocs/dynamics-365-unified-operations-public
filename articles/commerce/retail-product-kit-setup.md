@@ -22,7 +22,7 @@ Retail product kits group and package individual products into one sellable unit
 
 The following diagram illustrates the steps that you must complete to create and process retail product kits so that they can be sold in your retail channels.
 
-![Process flow to set up and maintain product kits](./media/Dn497848.RetailProductKitsProcessFlow(AX.60).gif "Process flow to set up and maintain product kits")
+![Process flow to set up and maintain product kits](./media/Dn497848.RetailProductKitsProcessFlow(AX.60).gif)
 
 ## Create a product kit
 
@@ -64,10 +64,10 @@ For more information about how to view and maintain assembly orders for product 
 
 ## Additional resources
 
-[Create retail product kits](./create-retail-product-kits.md)
+[Create retail product kits](create-retail-product-kits.md)
 
-[Generate assembly and disassembly orders](./generate-assembly-and-disassembly-orders.md)
+[Generate assembly and disassembly orders](generate-assembly-and-disassembly-orders.md)
 
-[Process kit assembly and disassembly orders](./process-kit-assembly-and-disassembly-orders.md)
+[Process kit assembly and disassembly orders](process-kit-assembly-and-disassembly-orders.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
