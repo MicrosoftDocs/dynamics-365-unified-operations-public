@@ -51,7 +51,7 @@ To enable row version change tracking for a table, set the **Allow Row Version C
 
 ## Enable row version change tracking for data entities
 
-To enable row version change tracking for an entity, set **Allow Row Version Change Tracking** property of the entity to **Yes**. Not all existing data entities are configured to support row version change tracking. The main limiting factor is the complexity of the entities. When **Allow Row Version Change Tracking** is set to **Yes** for an entity, validation rules are evaluated at build time.
+To enable row version change tracking for a data entity, set **Allow Row Version Change Tracking** property of the data entity to **Yes**. Not all existing data entities are configured to support row version change tracking. The main limiting factor is the complexity of the data entities. When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, validation rules are evaluated at build time.
 
 The following table describes the data entity validation rules.
 
@@ -69,9 +69,9 @@ The following table describes the data entity validation rules.
 | Only normal relation constraints are supported for data sources in a data entity. | [![Screen shot of Data sources Relation Constraints.](./media/DataSourceRelations.jpg)](./media/DataSourceRelations.jpg) | Change tracking can't be enabled because the Relation %1 between the data source %2 and the data source %3 in the F&O entity %4 isn't set to Normal. |
 | Validate data entities that have time state–enabled tables. | Root tables that have an **Apply Date** filter aren't supported, because they can cause record disappearance. Time state tables aren't supported for related data sources, because they can cause either record disappearance or one-to-many relationships. | Change tracking can't be enabled because the data source %3 in the F&O entity %1 has a time state enabled table %2. |
 
-ISVs and partners are recommended to always create new data entities when enabling row version change tracking. This to avoid risks of existing custom extensions violating the validation rules.
+ISVs and partners are recommended to always create new data entities when enabling row version change tracking. This is to avoid risks of existing custom extensions violating the validation rules. Validation rule failures from custom extensions are surfaced as build warning instead of error to prevent back compatibility break.
 
-When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, the **SysRowVersionNumber** column of the primary table is added to the data entity view.
+When **Allow Row Version Change Tracking** is set to **Yes** for a data entity, the **SysRowVersion** column from underlying datasource(s) are added to the data entity view. 
 
 ## Track deletions and cleanup
 
