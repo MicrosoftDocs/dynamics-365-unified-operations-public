@@ -26,7 +26,7 @@ The following illustration shows the process flow for setting up a retail produc
 
 ## This task is part of a bigger process
 
-The following illustration shows how the process of creating retail product kits relates to the overall process flow for retail product kits. For an overview of the process, see [About setting up retail product kits](./about-setting-up-retail-product-kits.md).
+The following illustration shows how the process of creating retail product kits relates to the overall process flow for retail product kits. For an overview of the process, see [Retail product kit setup overview](retail-product-kit-setup.md).
 
 ![The overall kit process flow](./media/Dn497863.KitBiggerProcess(AX.60).gif "The overall kit process flow")
 
@@ -168,7 +168,7 @@ After you set up the kit and define your kit configuration, the next steps are t
 
 ## Related tasks
 
-[About setting up retail product kits](./about-setting-up-retail-product-kits.md)
+[Retail product kit setup overview](retail-product-kit-setup.md)
 
 ## Technical information for system administrators
 
