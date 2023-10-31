@@ -43,7 +43,7 @@ Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **S
 > ```
 > Hence enable the configuration key in your sandbox environment first and validate, before enabling the configuration key in production. In the unlikely event that direct SQL DML statements are trying to insert or update the column, it will be required to disable the **Sql row version change tracking** configuration key until the issue is resolved.
 >
-> To resolve the issue, the direct SQL DML statement in the X++ code needs to be modified to explicitly specify column list for source and destination tables in the SQL DML statement, such as the following example.
+> To resolve the issue, the direct SQL DML statement in the X++ code needs to be modified to explicitly specify column list for source and destination tables, such as the following example.
 >
 > ```SQL
 > INSERT INTO table2 (Column1, Column2)
@@ -55,7 +55,7 @@ Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **S
 To enable row version change tracking for a table, set the **Allow Row Version Change Tracking** property of the table to **Yes**. When **Allow Row Version Change Tracking** property of a table is set to **Yes**, the table gets a new system field called **SysRowVersion** of type [rowversion](/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16).
 
 > [!NOTE]
-> Before 10.0.34 when the row version change tracking functionality was in preview, the row version column was called **SysRowVersionNumber**. Beginning in 10.0.34 **SysRowVersionNumber** column was replaced with new **SysRowVersion** column. The **SysRowVersionNumber** column is obsolete. The **SysRowVersionNumber** column will be removed from metadata of out of the box tables in 10.0.39. Hence do not take any dependency on **SysRowVersionNumber** column in your X++ code.
+> Before 10.0.34 when the row version change tracking functionality was in preview, the row version column was called **SysRowVersionNumber**. Beginning in 10.0.34 **SysRowVersionNumber** column was replaced with new **SysRowVersion** column. The **SysRowVersionNumber** column is obsolete. The **SysRowVersionNumber** column will be removed from metadata of out of the box tables in 10.0.39. Hence do not take any dependency on **SysRowVersionNumber** column.
 > 
 
 ## Enable row version change tracking for data entities
