@@ -1,6 +1,6 @@
 ---
-title: Change the asset type of an existing asset
-description: This article explains how to change the asset type of an existing asset.
+title: Change the asset type of existing assets
+description: This article explains how to Change the asset type of existing assets.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Change the asset type of an existing asset
+# Change the asset type of existing assets
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
@@ -28,9 +28,9 @@ Before you can use this feature, your system must meet the following requirement
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
 - The feature that's named *(Preview) Change types on assets and functional locations* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Change the asset type of an asset
+## Change the asset type of one or more existing assets
 
-To change the asset type of an existing asset, follow these steps.
+To change the asset type of one or more existing assets, follow these steps.
 
 1. Go to **Asset management** \> **Assets** \> **All assets**.
 1. On the **All assets** list page, select one or more assets that you want to change asset type for. If you select multiple assets, all of them must be of the same asset type.

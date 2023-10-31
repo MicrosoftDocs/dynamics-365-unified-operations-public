@@ -417,7 +417,7 @@
           href: asset-management/functional-locations/introduction-to-functional-locations.md
         - name: Create functional locations
           href: asset-management/functional-locations/create-functional-locations.md
-        - name: Change the type of an existing functional location
+        - name: Change the type of existing functional locations
           href: asset-management/functional-locations/change-functional-location-type.md
         - name: Install assets on functional locations
           href: asset-management/functional-locations/install-objects-on-functional-locations.md
@@ -449,7 +449,7 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
-        - name: Change the asset type of an existing asset
+        - name: Change the asset type of existing assets
           href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
