@@ -2,7 +2,7 @@
 title: Create retail product kits
 description: This article describes the steps of creating retail product kits.
 author: tonyafehr
-ms.date: 10/23/2023
+ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -139,7 +139,7 @@ Release the product kit to the legal entities in which the product kits will be 
 
 ## 4\. Set the standard properties for the product kit
 
-After you release the product kits to the legal entities, you can set the standard properties that apply to the products in the kit. These properties can include inventory dimensions, product categories, and product attributes. For general information about how to set up product properties, see [Key tasks: Define products](key-tasks-define-products.md). For information about how to set up retail products, see [Set up retail products](set-up-retail-products.md).
+After you release the product kits to the legal entities, you can set the standard properties that apply to the products in the kit. These properties can include inventory dimensions, product categories, and product attributes. For general information about how to set up product properties, see [Key tasks: Define products](/dynamicsax-2012/appuser-itpro/key-tasks-define-products). For information about how to set up retail products, see [Set up retail products](set-up-retail-products.md).
 
 1.  Click **Retail and Commerce \> Products and categories \> Released product kits**. On the **Released product kits** list page, double-click the product kit that you released in the previous task.
 
