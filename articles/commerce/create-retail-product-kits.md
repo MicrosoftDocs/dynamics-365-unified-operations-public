@@ -1,7 +1,7 @@
 ---
 title: Create retail product kits
 description: This article describes the steps of creating retail product kits.
-author: tonyafehr
+author: rickwyang
 ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
