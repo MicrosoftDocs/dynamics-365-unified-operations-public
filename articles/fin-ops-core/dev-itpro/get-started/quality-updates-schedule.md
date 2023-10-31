@@ -133,6 +133,21 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 30 to November 2, 2023 | November 11 to November 12, 2023 |
 | Station 6 | October 31 to November 3, 2023 | November 11 to November 12, 2023 |
 
+### <a name="schedule"></a> [New] Proactive quality update upcoming 10.0.36 Release-2 train schedule
+
+**App version: 10.0.1695.90**
+
+**Platform version: 7.0.7036.113**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | November 6 to November 9, 2023 | NA |
+| Station 2 | November 13 to November 16, 2023 | December 2 to December 3, 2023 |
+| Station 3 | November 14 to November 17, 2023 | December 2 to December 3, 2023 |
+| Station 4 | November 20 to November 23, 2023 | December 9 to December 10, 2023 |
+| Station 5 | December 4 to December 7, 2023 | December 16 to December 17, 2023 |
+| Station 6 | December 5 to December 8, 2023 | December 16 to December 17, 2023 |
+
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
 >
