@@ -65,37 +65,6 @@ You can manually net customer and vendor balances by selecting the open customer
 2. All the pairs of customer account and vendor account available for netting are displayed on this page. Select one of the pairs, and then select **Create Netting**.
 3. Select the open customer invoices and open vendor invoices that you want to net, and select **Post**.
 
-## Automatic netting
-
-You can automatically net customer and vendor balances by defining a netting rule and then running it through a batch job or the process automation framework.
-
-### Set up netting rule
-
-1. Go to **Accounts payable** > **Payments** > **Netting** > **Netting rule** , or **Accounts receivable** > **Payments** > **Netting** > **Netting rule**
-2. Create a new record, and enter a name and description.
-3. Select a netting sequence. There are four options available:
-
-   - By due date - From oldest to newest
-   - By due date - From newest to oldest
-   - By invoice balance - From largest to smallest
-   - By invoice balance - From smallest to largest
-
-4. Select the netting agreement scope. If you select **All**, all the active netting agreements are included in this rule; If you select **Selected**, you should define a netting agreement list.
-5. In the **Include credit not and debit note** field, in the automatic netting, select **Yes** or **No**.
-6. On the **Netting criteria** FastTab define the criteria if users only want to automatically net certain vendor accounts, customer accounts, or invoice currency.
-7. Activate the netting rule.
-
-### Run automatic netting
-
-There are three ways to run the automatic netting.
-
-- Trigger a one time automatic netting by selecting **Automatic netting** on the **Customer and vendor balances netting** page.
-- Trigger a one time automatic netting by selecting **Automatic netting** on the **Periodical tasks** menu in the **Accounts payable** or **Accounts receivable** modules.
-- Schedule periodical automatic netting by selecting **Process automation** on the **Setup** menu in the **Accounts payable** or **Accounts receivable** modules.
-
-> [!NOTE]
-> Automatic netting will be available in Dynamics 365 Finance release version 10.0.39. Please monitor the [What's new or changed in Dynamics 365 Finance](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/whats-new-home-page) for detail release information.
-
 ## Reverse netting
 
 You can reverse posted netting transactions by selecting **Reverse netting** on the **Netting history** page. This function automatically unsettles the selected customer invoices, unsettles the selected vendor invoices, and reverses the posted netting journal.
