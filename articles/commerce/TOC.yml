@@ -730,8 +730,8 @@
             href: dev-itpro/import-export-manifest.md
         - name: Retail product kits
           items:
-          - name: About setting up retail product kits
-            href: about-setting-up-retail-product-kits.md
+          - name: Retail product kit setup overview
+            href: retail-product-kit-setup.md
           - name: Create retail product kits
             href: create-retail-product-kits.md
           - name: Generate assembly and disassembly orders
