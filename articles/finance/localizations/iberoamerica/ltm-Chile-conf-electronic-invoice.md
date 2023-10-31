@@ -64,7 +64,7 @@ The following steps go through the information that the XML tags require, in the
     3. In the **Additional data** section, enable lists 3, 4, 5, 7, and 8.
     4. For each credit/debit note document class that has been created, in the **Additional data** section, enable lists 9 and 10.
 
-    For more information, see [Document class configuration](ltm-core-document-class)/
+    For more information, see [Document classes for Latin America](ltm-core-document-class.md).
 
 10. Go to **Sales and marketing \> Setup \> Distribution \> Reasons for delivery**, and set the options for selling modes according to the Chilean normative that's established by the customs office. This information is used only for export documents.
 11. Go to **Sales and marketing \> Setup \> Distribution \> Terms of delivery**, and set the options for selling clauses according to the Chilean normative (FOB, CIF, and so on).
