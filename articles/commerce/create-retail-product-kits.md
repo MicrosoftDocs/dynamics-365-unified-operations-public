@@ -24,11 +24,11 @@ After you create retail product kits, you release the kits to the legal entities
 
 The following illustration shows the process flow for setting up a retail product kit.
 
-![Set up retail product kits](./media/Dn497863.SetupProductKits(AX.60).gif "Set up retail product kits")
+![Set up retail product kits](./media/Dn497863.SetupProductKits(AX.60).gif)
 
 The following illustration shows how the process of creating retail product kits relates to the overall process flow for retail product kits. For an overview of the process, see [Retail product kit setup overview](retail-product-kit-setup.md).
 
-![The overall kit process flow](./media/Dn497863.KitBiggerProcess(AX.60).gif "The overall kit process flow")
+![The overall kit process flow](./media/Dn497863.KitBiggerProcess(AX.60).gif)
 
 ## Prerequisites
 
@@ -46,30 +46,30 @@ Create a new product, and designate it as a product kit. After you create the pr
 
 To create a product kit, follow these steps:
 
-1. Go to **Retail and Commerce \> Products and categories \> Product kits**.
-1. On the **Action Pane**, click **New**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Product kits**.
+1. On the **Action Pane**, select **New**.
 1. In the **New product** dialog box, enter the following information:
     1. In the **Product type** field, select **Item**.
     1. Enter a product number, product name, and search name.
     1. Optional: In the **Retail category** field, select the retail product category that you want to assign the product kit to. The **Product kit** check box is selected by default.
     1. In the **Product dimension group** field, select the product dimension group that includes the **Configuration** product dimension.
-1. Leave the default values for all other fields, and then click **OK**.
+1. Leave the default values for all other fields, and then select **OK**.
 
 ## Add products and product substitutes to the product kit
 
 Add the kit components and component substitutes to the kit to define every kit combination that you offer. Also, set up the kit configuration options to indicate whether the kit can be disassembled in the point-of-sale (POS) store.
 
-1. Go to **Retail and Commerce \> Products and categories \> Product kits**.
-1. On the **Product masters** list page, select the new product kit that you created in the previous task. On the **Action Pane**, on the **Product kit** tab, click **Configure**.
-1. In the **Configure kit** form, click **Edit**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Product kits**.
+1. On the **Product masters** list page, select the new product kit that you created in the previous task. On the **Action Pane**, on the **Product kit** tab, select **Configure**.
+1. In the **Configure kit** form, select **Edit**.
 1. On the **General** FastTab, select the **Disassemble at register** check box if you allow the kit to be disassembled in the POS store, so that the kit components can be sold individually.
-1. On the **Kit components** FastTab, in the **Components** grid, click **Add** to add the base products to the kit.
-1. In the **Add products** form, select the products and product variants that you want to add to the product kit, and then click **OK**.
+1. On the **Kit components** FastTab, in the **Components** grid, select **Add** to add the base products to the kit.
+1. In the **Add products** form, select the products and product variants that you want to add to the product kit, and then select **OK**.
 1. In the **Components** grid, you can adjust the quantity and unit of measure for each kit component that you added.
-1. On the **Kit components** FastTab, in the **Substitution** grid, click **Add** to add product substitutes for selected base products in the kit.
-1. In the **Add products** form, select the products and product variants that you want to add as product substitutes, and then click **OK**.
+1. On the **Kit components** FastTab, in the **Substitution** grid, select **Add** to add product substitutes for selected base products in the kit.
+1. In the **Add products** form, select the products and product variants that you want to add as product substitutes, and then select **OK**.
 1. Repeat steps 8 and 9 for each product substitute that you want to add.
-1. After you have added all the product components and component substitutes to the kit, click **Approve** to approve the product kit.
+1. After you have added all the product components and component substitutes to the kit, select **Approve** to approve the product kit.
 
 > [!NOTE]
 > Product kits must have a status of **Approved** before you can release the kit to your legal entities, price the kit, or generate assembly orders.
@@ -78,11 +78,11 @@ Add the kit components and component substitutes to the kit to define every kit 
 
 Release the product kit to the legal entities in which the product kits will be sold. You must release the product kit in order to define the pricing for the kit configurations, set up the product properties for the kit, and generate assembly orders for the product kit.
 
-1. Go to **Retail and Commerce \> Products and categories \> Product kits**.
-1. On the **Product masters** list page, select the new product kit that you configured in the previous task, and then, on the **Action Pane**, click **Release products**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Product kits**.
+1. On the **Product masters** list page, select the new product kit that you configured in the previous task, and then, on the **Action Pane**, select **Release products**.
 1. In the **Release products** form, on the **Select products to release** tab, select the kit configurations that you want to release. By default, all configurations for the selected product kit are selected.
-1. On the **Select companies to release to** tab, select the legal entities to which the kit should be released, and then click **Next**.
-1. In the **Confirm selection** tab, click **Finish** to run the process and release the products to the selected legal entities.
+1. On the **Select companies to release to** tab, select the legal entities to which the kit should be released, and then select **Next**.
+1. In the **Confirm selection** tab, select **Finish** to run the process and release the products to the selected legal entities.
 1. To verify that the product kit has been released to the selected legal entities, follow these steps:
     1. Go to **Retail and Commerce \> Products and categories \> Released product kits**.
     1. On the **Released product kits** list page, view your product kit.
@@ -91,8 +91,8 @@ Release the product kit to the legal entities in which the product kits will be 
 
 After you release the product kits to the legal entities, you can set the standard properties that apply to the products in the kit. These properties can include inventory dimensions, product categories, and product attributes. For general information about how to set up product properties, see [Key tasks: Define products](/dynamicsax-2012/appuser-itpro/key-tasks-define-products). For information about how to set up retail products, see [Set up retail products](set-up-retail-products.md).
 
-1. Go to **Retail and Commerce \> Products and categories \> Released product kits**. On the **Released product kits** list page, double-click the product kit that you released in the previous task.
-1. In the **Released product details** form, click **Edit**. Then, on the **Action Pane**, on the **Product** tab, on the **Set up**, click **Dimension groups**, and select the inventory dimension groups for the product kit.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Released product kits**. On the **Released product kits** list page, double-click the product kit that you released in the previous task.
+1. In the **Released product details** form, select **Edit**. Then, on the **Action Pane**, on the **Product** tab, on the **Set up**, select **Dimension groups**, and select the inventory dimension groups for the product kit.
 1. On the **General** FastTab, in the **Administration** group, select the item model group for the kit, so that the kit can be assembled.
 1. On the **Purchase** FastTab, in the **Unit** field, select the unit of measure to use for the purchase of the product kit.
 1. On the **Sell** FastTab, in the **Unit** field, select the unit of measure to use for the sale of the product kit.
@@ -105,8 +105,8 @@ You can price product kits as a whole product or as a sum of the individual comp
 
 If you define a price for the overall kit, the new price is distributed across all the products in the kit. The price adjustment to each product is based on the percentage that each product’s base price contributes to the total base price for the product kit. You can also specify whether there is an additional charge for product substitutes when the customer selects the product substitute instead of the base component. The additional cost is included when the kit price is calculated.
 
-1. Go to **Retail and Commerce \> Products and categories \> Released product kits**. On the **Released product kits** list page, double-click a released product kit in the list.
-1. In the **Released product details** form, click **Edit**. Then, on the **Action Pane**, on the **Product** tab, on the **Product kit**, click **Configure**.
+1. In Commerce headquarters, go to **Retail and Commerce \> Products and categories \> Released product kits**. On the **Released product kits** list page, double-click a released product kit in the list.
+1. In the **Released product details** form, select **Edit**. Then, on the **Action Pane**, on the **Product** tab, on the **Product kit**, select **Configure**.
 1. In the **Configure kit** form, on the **Kit components** FastTab, in the **Components** grid, follow one of these steps:
     1. In the **Kit price** column, enter the kit price for each component in the product kit.
     1. Select **Specify kit price** to enter a price for the overall product kit.
