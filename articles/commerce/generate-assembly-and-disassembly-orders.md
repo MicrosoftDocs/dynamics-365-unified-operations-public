@@ -15,6 +15,7 @@ ms.search.validFrom: 2023-10-23
 
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to generate assembly orders for retail product kits. An assembly order tells the warehouse how many kits to assemble. After an assembly order is created, a warehouse worker can use it to assemble each configuration of the product kit.
 
