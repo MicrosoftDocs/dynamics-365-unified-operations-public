@@ -37,19 +37,18 @@ Automatic charges, or auto charges, are automatically applied when you create a 
 The **Procurement and sourcing parameters** page has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
 
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
-2. Open the **Prices** tab.
-3. On the **Prices** FastTab, make the following settings:
+1. Open the **Prices** tab.
+1. On the **Prices** FastTab, make the following settings:
     - **Find auto charges for header** – Specifies whether charges should automatically be applied for purchase order headers. Set this to *Yes* to use automatic application of charges.
     - **Find auto charges for line** – Specifies whether charges should automatically be applied for purchase order lines. Set this to *Yes* to use automatic application of charges.
 
 The **Sales and marketing parameters** page has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
 
 1. Go to **Sales and marketing \> Setup \> Sales and marketing parameters**.
-2. Open the **Prices** tab.
-3. On the **Prices** FastTab, make the following settings:
+1. Open the **Prices** tab.
+1. On the **Prices** FastTab, make the following settings:
     - **Find auto charges for header** – Specifies whether charges should automatically be applied for sales quotation and sales order headers. Set this to *Yes* to use automatic application of charges.
     - **Find auto charges for line** – Specifies whether charges should automatically be applied forsales quotation and sales order lines. Set this to *Yes* to use automatic application of charges.
-
 
 ## Set up charges codes
 
@@ -60,8 +59,8 @@ To apply charges, you must first define charges codes.
     - For purchase orders: Go to **Procurement and sourcing \> setup \> Charges \> Charges code**.
     - For sales orders: Go to **Accounts receivable \> setup \> Charges \> Charges code**.
 
-2. On the Action Pane, select **New** to create a charges code.
-3. In the header of the new record, set the following fields:
+1. On the Action Pane, select **New** to create a charges code.
+1. In the header of the new record, set the following fields:
 
     - **Charges code** – Enter a code for the charges.
     - **Description** – Enter a description of the charges.
@@ -72,13 +71,13 @@ To apply charges, you must first define charges codes.
         > [!NOTE]
         > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable \> Setup \> Accounts payable parameters**. On the **Invoice validation** FastTab, in the **Invoice validation** section, set the **Enable invoice matching validation** option to *Yes*.
 
-4. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
+1. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
 
     - **Type** – Select the type of account that you're posting to (*Ledger*, *Customer*, or *Item*).
     - **Posting** – Select the type of postings to create (such as *Broker fee* or *Customer settlement*).
     - **Account** – Select the account to post the charge for.
 
-5. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Save**.
 
 ## Create charge groups
 
@@ -89,28 +88,28 @@ Charge groups automatically apply specific charges to a group of customers or ve
 To create charge groups for purchase orders, follow these steps.
 
 1. Go to **Procurement and sourcing \> setup \> Charges \> Vendor charges group**.
-2. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
+1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
 
     - **Charges group** – Enter the name of the charge group.
     - **Description** – Enter a description of the charge group.
 
-3. On the Action Pane, select **Save**.
-4. Go to **Procurement and sourcing \>  Vendors \> All vendors**, and either open an existing vendor or create a new vendor.
-5. On the **Purchase order defaults** FastTab, in the **Purchase order** section, set the **Charges group** field to the charge group that you just created.
+1. On the Action Pane, select **Save**.
+1. Go to **Procurement and sourcing \>  Vendors \> All vendors**, and either open an existing vendor or create a new vendor.
+1. On the **Purchase order defaults** FastTab, in the **Purchase order** section, set the **Charges group** field to the charge group that you just created.
 
 ### Charge groups for sales orders
 
 To create charge groups for sales orders, follow these steps.
 
 1. Go to **Accounts receivable \> setup \> Charges \> Customer charge groups**.
-2. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
+1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
 
     - **Charges group** – Enter the name of the charge group.
     - **Description** – Enter a description of the charge group.
 
-3. On the Action Pane, select **Save**.
-4. Go to **Accounts receivable \> Customers \> All customers**, and either open an existing customer or create a new customer.
-5. On the **Sales order defaults** FastTab, in the **Sales order** section, set the **Charges group** field to the charge group that you just created.
+1. On the Action Pane, select **Save**.
+1. Go to **Accounts receivable \> Customers \> All customers**, and either open an existing customer or create a new customer.
+1. On the **Sales order defaults** FastTab, in the **Sales order** section, set the **Charges group** field to the charge group that you just created.
 
 ## Define auto charges
 
@@ -121,34 +120,34 @@ After your charges codes are set up, follow these steps to define the auto charg
     - For purchase orders: Go to **Procurement and sourcing \> Setup \> Charges \> Automatic charges**.
     - For sales orders: Go to **Accounts receivable \> Setup \> Charges setup \> Auto charges**.
 
-2. In the list pane, in the **Level** field, select the level where your auto charge applies:
+1. In the list pane, in the **Level** field, select the level where your auto charge applies:
 
     - *Header* – Apply charges to the order header.
     - *Line* – Apply charges to the order lines.
 
-3. Select an existing auto charge to edit it, or select **New** to define a new auto charge.
-4. In the **Account code** list, select one of the following values to specify the scope of accounts that will be affected:
+1. Select an existing auto charge to edit it, or select **New** to define a new auto charge.
+1. In the **Account code** list, select one of the following values to specify the scope of accounts that will be affected:
 
     - *Table* – Assign charges to a specific customer or vendor.
     - *Group* – Assign charges to a miscellaneous charges group.
     - *All* – Assign charges to all customers or vendors.
 
-5. In the **Customer relation** or **Vendor relation** field, select a specific customer or vendor if you set the **Account code** field to *Table*. If you set the **Account code** field to *Group*, select a customer or vendor charges group.
-6. In the **Item code** field, select one of the following values to specify the scope of items that will be affected. You can select an item code only when you define auto charges at the line level.
+1. In the **Customer relation** or **Vendor relation** field, select a specific customer or vendor if you set the **Account code** field to *Table*. If you set the **Account code** field to *Group*, select a customer or vendor charges group.
+1. In the **Item code** field, select one of the following values to specify the scope of items that will be affected. You can select an item code only when you define auto charges at the line level.
 
     - *Table* – Assign charges to a specific item.
     - *Group* – Assign charges to an item charges group.
     - *All* – Assign charges to all items.
 
-7. In the **Item relation** field, select a specific item if you set the **Item code** field to *Table*. If you set the **Item code** field to *Group*, select an item charges group.
-8. **For sales orders only:** In the **Mode of delivery code** field, select one of the following values to specify the scope of delivery modes that will be affected:
+1. In the **Item relation** field, select a specific item if you set the **Item code** field to *Table*. If you set the **Item code** field to *Group*, select an item charges group.
+1. **For sales orders only:** In the **Mode of delivery code** field, select one of the following values to specify the scope of delivery modes that will be affected:
 
     - *Table* – Assign charges to a specific mode of delivery.
     - *Group* – Assign charges to a mode of delivery group.
     - *All* – Assign charges to all modes of delivery.
 
-9. **For sales orders only:** In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
-10. On the **Lines** FastTab, define the charges and the charges rates that will be used when the current auto charge is applied. You can use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
+1. **For sales orders only:** In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
+1. On the **Lines** FastTab, define the charges and the charges rates that will be used when the current auto charge is applied. You can use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
 
     - **Sequence** – Select the currency that should be used to calculate the charge. Only applicable for **Level** *Header* for sales quotation and sales order charges.
     - **Compound** – Select the currency that should be used to calculate the charge. Only applicable for **Level** *Header* for sales quotation and sales order charges.
@@ -175,20 +174,20 @@ After your charges codes are set up, follow these steps to define the auto charg
 
    **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
 
-> [!NOTE] 
-        > To turn on the functionality for working working with sequence and compound on header level charges, you need to enable the feature 'Sequence and compound for customer charges' in feature management. For more information see [link to new page for Sequence and compound]. To turn on the functionality for working with line level charges category types specific unit and specific unit match, you need to enable the feature 'Unit of measure for line level charges' in feature management. For more information see [link to new page for Unit of measure for line level charges].
+> [!NOTE]
+> To turn on the functionality for working working with sequence and compound on header level charges, you need to enable the feature 'Sequence and compound for customer charges' in feature management. For more information see [link to new page for Sequence and compound]. To turn on the functionality for working with line level charges category types specific unit and specific unit match, you need to enable the feature 'Unit of measure for line level charges' in feature management. For more information see [link to new page for Unit of measure for line level charges].
 
 ## Allocate charges from the header to a line
 
 The following procedure shows how to allocate header-level charges to a line. Before you start this procedure, you should already have a header-level charge of the *fixed amount* type and an order where that charge is applied. Additionally, the order should already include at least one line item.
 
 1. Open the purchase order or charge order.
-2. On the Action Pane, follow one of these steps:
+1. On the Action Pane, follow one of these steps:
 
     - For purchase orders: On the **Purchase** tab, in the **Charges** group, select **Allocate charges**.
     - For sales orders: On the **Sell** tab, in the **Charges** group, select **Allocate charges**.
 
-3. In the **Allocate charges to order lines** dialog box, set the following fields:
+1. In the **Allocate charges to order lines** dialog box, set the following fields:
 
     - **Charges allocation** – Select one of the following values to specify how the charges should be allocated:
 
@@ -202,10 +201,10 @@ The following procedure shows how to allocate header-level charges to a line. Be
     - **Stocked** – Select this check box to allocate charges to only inventoried order lines.
     - **Show selections and clear specific lines** – Select this check box to exclude specific lines from this allocation. When you select this check box, the **Choose lines to exclude from allocation** grid is opened. This grid includes only lines that match the criteria that are defined by the **Allocate charges to lines** and **Stocked** settings. For example, if you set the **Allocate charges to lines** field to *Positive lines* and select the **Stocked** check box, the grid shows only lines that are both positive and inventoried. In addition, the grid automatically filters out any lines that the full quantity has already been received for. While the grid is open, clear the **Include** check box for each line that should be excluded from allocation. 
 
-        > [!IMPORTANT]
-        > When you work with the **Choose lines to exclude from allocation** grid, be sure to leave the grid open until you select **Allocate**. If you close the grid before you select **Allocate**, your settings in the grid will be lost. Therefore, charges will be allocated based on the criteria that you previously defined.
+    > [!IMPORTANT]
+    > When you work with the **Choose lines to exclude from allocation** grid, be sure to leave the grid open until you select **Allocate**. If you close the grid before you select **Allocate**, your settings in the grid will be lost. Therefore, charges will be allocated based on the criteria that you previously defined.
 
-4. Select **Allocate** to apply your settings and close the dialog box.
+1. Select **Allocate** to apply your settings and close the dialog box.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
