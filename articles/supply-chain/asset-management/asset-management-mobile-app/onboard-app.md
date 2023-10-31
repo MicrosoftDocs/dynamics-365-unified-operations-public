@@ -32,7 +32,7 @@ The mobile app uses [Dataverse virtual tables that are connected to Supply Chain
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
-The [*Power Apps component framework feature* must be enabled](https://learn.microsoft.com/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature).
+The [Power Apps component framework feature](https://learn.microsoft.com/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
