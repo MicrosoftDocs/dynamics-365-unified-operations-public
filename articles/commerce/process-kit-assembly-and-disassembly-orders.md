@@ -2,7 +2,7 @@
 title: Process kit assembly and disassembly orders
 description: This article describes the steps of processing kit assembly and disassembly orders.
 author: tonyafehr
-ms.date: 10/23/2023
+ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -14,6 +14,7 @@ ms.search.validFrom: 2023-10-23
 # Process kit assembly and disassembly orders
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This topic describes how to process assembly and disassembly orders for retail product kits. After you generate assembly or disassembly orders for the different kit configurations and generate BOM journals to reserve the product inventory, the next step is to process the assembly and disassembly orders for the kit configurations.
 
