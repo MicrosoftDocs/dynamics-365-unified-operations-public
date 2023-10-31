@@ -2,7 +2,7 @@
 title: Generate assembly and disassembly orders
 description: This article describes the steps of generating kit assembly and disassembly orders.
 author: tonyafehr
-ms.date: 10/23/2023
+ms.date: 10/31/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -60,7 +60,7 @@ If you want to prevent any more assembly orders from being created for a kit, yo
 
 After the assembly and disassembly orders are created, kits can be assembled or disassembled by warehouse workers. For more information about how to process assembly and disassembly orders, see [Process kit assembly and disassembly orders](./process-kit-assembly-and-disassembly-orders.md).
 
-To manually generate assembly and disassembly orders for a product kit, follow these steps:
+To manually generate assembly and disassembly orders for a product kit, follow these steps.
 
 1.  Click **Retail and Commerce \> Products and categories \> Kit orders**.
 
@@ -68,47 +68,23 @@ To manually generate assembly and disassembly orders for a product kit, follow t
 
 3.  In the **Create a new kit order** dialog box, enter information as described in the following table.
 
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Field</p></th>
-    <th><p>Description</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><strong>Order type</strong></p></td>
-    <td><p>Select whether you want to create an assembly order or a disassembly order.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Product kit</strong></p></td>
-    <td><p>Select the product kit that you want to assemble or disassemble.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p><strong>Company</strong></p></td>
-    <td><p>Select the legal entity for which the kits are being assembled or disassembled.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p><strong>Warehouse</strong></p></td>
-    <td><p>Select the warehouse that will process the assembly or disassembly order.</p></td>
-    </tr>
-    </tbody>
-    </table>
+| Field | Description |
+|-------|-------------|
+| **Order type** | Select whether you want to create an assembly order or a disassembly order. |
+| **Product kit** | Select the product kit that you want to assemble or disassemble. |
+| **Company** | Select the legal entity for which the kits are being assembled or disassembled. |
+| **Warehouse** | Select the warehouse that will process the assembly or disassembly order. |
 
 
-4.  Click **OK**.
+5.  Click **OK**.
 
-5.  To complete the order, on the **Kit orders** list page, double-click the assembly or disassembly order that you created in the previous step.
+6.  To complete the order, on the **Kit orders** list page, double-click the assembly or disassembly order that you created in the previous step.
 
-6.  In the **Kit order** form, on the **Configurations** FastTab, in the **Quantity** field, enter the number of kits that you want the warehouse worker to assemble or disassemble for each kit configuration.
+7.  In the **Kit order** form, on the **Configurations** FastTab, in the **Quantity** field, enter the number of kits that you want the warehouse worker to assemble or disassemble for each kit configuration.
 
     The total number of kits that will be assembled or disassembled for this order is displayed in the **Quantity** field on the **General** FastTab.
 
-7.  After you enter the quantity for each configuration, close the form to create the order.
+8.  After you enter the quantity for each configuration, close the form to create the order.
 
 You can view the order that you created and the BOM journal entries that were created in the **Kit orders** form. To view the order and BOM journal entries, complete the following steps:
 
