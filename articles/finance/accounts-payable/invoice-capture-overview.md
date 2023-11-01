@@ -60,7 +60,9 @@ The **InvoiceCaptureOperator** role must be included in the role settings to suc
 > The **Environment maker** role must be assigned to the Accounts payable administrator if they create channels in Invoice capture.
 
 ## License
-To use Invoice capture solution, the following licenses need to be considered for Dynamics 365 Finance customers:
--	Power Apps license (per user) - To access the Invoice capture, users need to access Power Apps. 
--	Azure Data Lake Storage subscription - Usually, Dynamics 365 Finance customers don't need to subscribe to additional Azure Data Lake storage if the 20G Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. Additional subscriptions might be needed if the Dataverse file capacity isn't sufficient. The same applies for Dataverse database storage (Default 10GB).
--	Invoice processing fee based on number of invoices - Dynamics 365 Finance customers are entitled to 100 invoice capture transactions/tenant/month. If customers need additional transactions, additional Electronic Invoicing SKU need to be purchased at 300 USD for 1K transactions/tenant/month. The transaction capacity is use-it-or-lose-it on a monthly basis, and customers need to purchase for peak capacity.
+
+To use the Invoice capture solution, the following licenses must be considered for Dynamics 365 Finance customers:
+
+- **Power Apps license (per user)** – To access Invoice capture, users must access Power Apps. 
+- **Azure Data Lake Storage subscription** – Usually, Dynamics 365 Finance customers don't have to subscribe to additional Azure Data Lake storage if the 20 gigabyte (GB) Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. Additional subscriptions might be needed if the Dataverse file capacity isn't sufficient. The same applies to Dataverse database storage (default capacity: 10 GB).
+- **Invoice processing fee based on number of invoices** – Dynamics 365 Finance customers are entitled to 100 invoice capture transactions per tenant per month. If customers need additional transactions, they must purchase additional Electronic Invoicing stockkeeping units (SKUs) at 300 US dollars (USD) for 1,000 transactions per tenant per month. The transaction capacity is available on a monthly, use-it-or-lose-it basis, and customers must purchase for peak capacity.
