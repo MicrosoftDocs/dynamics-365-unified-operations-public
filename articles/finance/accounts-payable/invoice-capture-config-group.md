@@ -4,7 +4,7 @@
 title: Invoice capture solution configuration groups
 description: This article provides general information about configuration groups in the Invoice capture solution.
 author: sunfzam
-ms.date: 07/19/2023
+ms.date: 11/01/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -84,10 +84,14 @@ Admins can create a configuration group, select the supported invoice type, and 
 For each invoice type, different fields can be selected to appear in the side-by-side view, default fields can be added or removed, and fields can be set as mandatory.
 
 ## Configuration group assignment
-Customers might receive invoices of different types, layout, and context from different suppliers. To handle the invoices more efficiently within Invoice capture, it provides the assignment of configuration on either vendor account level or legal entity level. During the time of invoice capture processing, it will determine the configuration group for each captured invoice by following the priority **Vendor account > Legal entity > System level**. 
-Here is the step how to assign a configuration group under a selected vendor:
-- Go to Setup system > Manage vendors.
-- Click the vendor account to open the detailed form.
-- Select the assigned configuration from the list.
-When the configuration is assigned, you can also see which vendors or legal entities have been assigned under the **Related** options in the configuration detailed form. 
+Customers might receive different types of invoices, layout, and context from different suppliers. To handle invoices more efficiently within Invoice capture, it provides the assignment of configuration on either vendor account level or legal entity level. During the time of invoice capture processing, it determines the configuration group for each captured invoice by the following priority:
+ - **Vendor account**
+ - **Legal entity**
+ - **System level** 
+
+To assign a configuration group for a selected vendor:
+1. Go to **Setup system > Manage vendors**.
+2. Click the vendor account to open the detailed page.
+3. Select the assigned configuration from the list.
+When the configuration is assigned, you can see which vendors or legal entities have been assigned under **Related** on the **Configuration detailed** page. 
 
