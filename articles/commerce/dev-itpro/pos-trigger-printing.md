@@ -70,7 +70,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |	 |
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |	 |
-| PreCustomerSaveTrigger  | Cancelable          | Executed after user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating new customer or editing an existing customer.     |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed after user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating a new customer or editing an existing customer.     |	 |
 | PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created or updated.       |	 |
 | PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
