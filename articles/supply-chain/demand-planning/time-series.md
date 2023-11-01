@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 Time series represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 
 ## <a name="explore"></a>Explore time series

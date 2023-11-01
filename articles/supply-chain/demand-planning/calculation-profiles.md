@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 The Demand planning app lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
 
 Here are some examples of purposes that you might use calculations for:
