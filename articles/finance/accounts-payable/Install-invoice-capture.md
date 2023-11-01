@@ -4,7 +4,7 @@
 title: Install the Invoice capture solution
 description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
-ms.date: 08/14/2023
+ms.date: 11/01/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ Before you install Invoice capture, complete the following setup in Invoice capt
    
 3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
 
-   When the parameter is enabled, please make sure the default document file is assigned to the field “File” under Organization administration > Document management > Default document types.
+   When the parameter is enabled, confirm the default document file is assigned to the **File** field on the **Default document types** page.
    
 5. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
