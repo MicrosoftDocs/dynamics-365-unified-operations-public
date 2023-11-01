@@ -47,11 +47,10 @@ Soft reservations are usually created, consumed, and canceled by using API calls
 
 ## <a name="turn-on"></a>Turn on and set up the reservation feature
 
-To turn on the reservation feature, follow these steps.
+To turn on and use Soft reservation feature, you need to configure on both Dynamics 365 and Inventory Visibility Add-in.
 
-1. Sign in to Power Apps and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Feature Management** tab, turn on the *OnHandReservation* feature.
+### Configuration in Dynamics 365 Supply Chain Management
+
 1. Sign in to Supply Chain Management, and make sure that you've enabled **one** of the following two features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). *Do not enable both features.* For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
     - *Inventory Visibility integration with reservation offset* – This feature requires version 10.0.22 or later.
@@ -60,7 +59,7 @@ To turn on the reservation feature, follow these steps.
     > [!IMPORTANT]
     > These two features are incompatible with each other. Therefore, enable only one of them. We recommend that you enable *Inventory Visibility integration with soft reservation on sales order lines* for all new installations that are running Supply Chain Management version 10.0.33 or later. If you're already using the *Inventory Visibility integration with reservation offset* feature, you can continue to use it if you don't have to make direct soft reservations from Supply Chain Management sales orders. However, you can also change to the newer feature if you prefer, provided that you meet the system requirements.
 
-### Configure additional settings if the Inventory Visibility integration with soft reservation on sales order lines feature is enabled
+#### Configure additional settings if the Inventory Visibility integration with soft reservation on sales order lines feature is enabled
 
 If you enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature, follow these steps to configure additional settings.
 
@@ -74,7 +73,7 @@ If you enabled the *Inventory Visibility integration with soft reservation on sa
 > [!TIP]
 > You don't have to enable or set up the offset modifier, because offset for soft reservation is always enabled and will be triggered when a sales line proceeds to hard reservation status (or further, if the hard reservation step is skipped).
 
-### Configure additional settings if the Inventory Visibility integration with reservation offset feature is enabled
+#### Configure additional settings if the Inventory Visibility integration with reservation offset feature is enabled
 
 If you enabled the *Inventory Visibility integration with reservation offset* feature, follow these steps to configure additional settings.
 
@@ -87,22 +86,112 @@ If you enabled the *Inventory Visibility integration with reservation offset* fe
         - *On order* – Orders that have an *On order* status will send an offset request when they're created. The offset quantity will be the quantity of the created order (line).
         - *Reserve* – Orders that have a *Reserve* status will send an offset request when they're either order reserved or physically reserved. When you offset at the *Reserve* status, the order will send an offset request at any new inventory status that's closest to reserved picked (for example, pick, packing-slip posted, or invoiced). This behavior occurs even if you skip the reservation in Supply Chain Management and continue to another inventory status (for example, if you skip from release to warehouse to pick and pack). The request will be triggered only once. If it's been triggered at pick, it won't duplicate the offset when a packing slip is posted. The offset quantity will be the same as the quantity of the inventory transaction status when the offset was triggered (in other words, *Reserved ordered*/*Reserve Physical*, or a later status, on the corresponding order line).
 
-## Configure common settings in the Inventory Visibility app
+### Configuration in Inventory Visibility app
 
 Regardless of the soft reservation feature that you're using (*Inventory Visibility integration with reservation offset* or *Inventory Visibility integration with soft reservation on sales order lines*), follow these steps to set up soft reservations in the Inventory Visibility app.
 
-1. Sign in to the Inventory Visibility app.
-1. Open the **Configuration** page, and then, on the **Soft Reservation** tab, review the default soft reservation hierarchy. Add new dimensions to the hierarchy as required.
-1. In the **Set Soft Reservation Mapping** section, view the default settings. By default, the soft-reserved inventory quantities will be recorded against the `softreservephysical` physical measure of the data source `iv`. The *Available for reservation* calculated measure is mapped to `availabletoreserve`. If you want to update the `availabletoreserve` calculated measure, go to the **Configuration** page, and then, on the **Calculated Measure** tab, expand and modify the calculated measure.
+1. Sign in to Power Apps and open **Inventory Visibility**.
+1. Go to **Feature Management** section under **Settings (Preview)** on the left panel.
+1. Find **Soft Reservation** feature, click **Managed** button.
+1. Turned on **Enable Feature** toggle.
 
-For more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md).
+5. Set up **Filter unconfigured dimensions** toggle:
+
+    Users enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature is required to enable the `Filter unconfigured dimensions` toggle. <br>
+    This toggle controls the behavior when user reserves with dimensions not specified in [**Reservation Dimensions**](#configure-reservation-dimensions). <br> 
+    - *Disabled* - Reservation requests including dimensions not defined in Reservation Dimensions will fail.
+    - *Enabled* - Reservation requests including dimensions not defined in Reservation Dimensions will fail, but undefined dimensions will be ignored.
+
+    When switching the status of `Filter unconfigured dimensions` toggle, previous reservation should all be reversed for data consistency. Use [this API](inventory-visibility-api.md#clean-up-reservation-data) to clean up existing soft reservation records.
+
+#### Configure Reservation Mappings
+
+When you make a reservation, you might want to know whether on-hand inventory is currently available for reservation. The validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
+
+By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
+
+We have already provided default Reservation mappings, you can check and use them directly, you can also follow steps below to define your own Reservation mappings.
+
+Please note that the physical measures, calculated measures, and their data sources must be defined on the **Data source settings** under **Feature Management** tab. For how to configure measures and data sources, see [Configure Inventory Visibility](inventory-visibility-configuration.md) for more details.
+
+1. Define the physical measure that serves as the soft reservation measure (for example, `SoftReservPhysical`).
+1. Define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `AvailableToReserve` (available for reservation) so that it's mapped to the previously defined `SoftReservPhysical` physical measure. In this way, you can find which quantities that have the `SoftReservPhysical` inventory status will be available for reservation. The following table shows the AFR computation formula.
+
+    | Calculation type | Data source | Physical measure |
+    |---|---|---|
+    | Addition | `fno` | `AvailPhysical` |
+    | Addition | `pos` | `Inbound` |
+    | Subtraction | `pos` | `Outbound` |
+    | Subtraction | `iv` | `SoftReservPhysical` |
+
+    We recommend that you set up the physical measure on which the reservation measure is based as a component of the calculated measure. In this way, the calculated measure quantity will be affected by the quantity of reservation. For example, here we use the `SoftReservPhysical` physical measure from `iv` as a component of the `AvailableToReserve` calculated measure of the `iv` data source.
+
+1. In the **Reservation mapping** section, set up the mapping from the physical measure to the calculated measure. As for the previous example, you might use the following settings to map `AvailableToReserve` to the previously defined `SoftReservPhysical` physical measure.
+
+    | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
+    |---|---|---|---|
+    | `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
+
+Now, when you do reservation on `SoftReservPhysical`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
+
+For example, when you have the following on-hand inventory in Inventory Visibility.
+
+```json
+{
+    "productId": "D0002",
+    "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "ColorId": "Red"
+    },
+    "quantities": {
+        "iv": {
+            "SoftReservPhysical": 90
+        },
+        "fno": {
+            "availphysical": 70.0,
+        },
+        "pos": {
+            "inbound": 50.0,
+            "outbound": 20.0
+        }
+    }
+}
+```
+
+In this case, the following calculation applies:
+
+`AvailableToReserve` = `fno.availphysical` + `pos.inbound` – `pos.outbound` – `iv.SoftReservPhysical`  
+= 70 + 50 – 20 – 90  
+= 10
+
+Therefore, if you try to make reservations on `iv.SoftReservPhysical`, and the quantity is less than or equal to `AvailableToReserve` (10), the soft reservation request will succeed.
 
 > [!NOTE]
-> The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the index hierarchy works for on-hand queries, but it's used independently so that users can specify dimension details to make more precise reservations.
->
-> Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration of Inventory Visibility.
+> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required (although you might end up with a negative `AvailableToReserve` quantity, the system will still allow you to soft reserve). The default value is `True`.
 
-For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
+#### Configure Reservation Dimensions
+
+The reservation dimensions describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the index configuration works for on-hand queries.
+
+The reservation dimensions is independent of the index configuration. **Reservation dimensions should contain partition configuration as components.**
+
+Here's an example of reservation dimensions.
+
+| Base dimension | Hierarchy |
+|---|---|
+| `SiteId` | 1 |
+| `LocationId` | 2 |
+| `ColorId` | 3 |
+| `SizeId` | 4 |
+| `StyleId` | 5 |
+
+When you do the reservation, you must specify a partition for the product. In this example, the partition schema is ByLocation, the basic hierarchy that you should use is `(SiteId, LocationId)`. Here are examples of feasible dimension combinations.
+
+- `(SiteId, LocationId)`
+- `(SiteId, LocationId, SizeId)`
+- `(SiteId, LocationId, ColorId, SizeId)`
+- `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 ## Use the reservation feature in Inventory Visibility
 
