@@ -92,7 +92,7 @@ To remove a business partner user, follow these steps.
 - Go to **My Account > Organization users \> View details**, and select the **Remove** button ("X" symbol). When a confirmation message appears, confirm that you want to remove the user. The change takes effect only after the **P-0001**, **Synchronize customers and channel requests**, and **1010 (Customers)** jobs have been run.
 
 > [!NOTE]
-> When you remove a user from the list of users who can access the B2B e-commerce website, the corresponding customer record is removed from the business partner's customer hierarchy record. However, the customer record itself isn't deleted from Commerce headquarters.
+> When you remove a user from the list of users who can access the B2B e-commerce website, the corresponding customer record is removed from the business partner's customer hierarchy record. However, the customer record itself isn't deleted from Commerce headquarters. The customer can still logon the B2B site.
 
 ## Onboard existing customers as business partners on the B2B e-commerce website
 
