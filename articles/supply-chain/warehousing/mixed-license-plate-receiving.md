@@ -68,6 +68,10 @@ The following options for identifying the source document lines are available:
 
 ## <a name="deferred-receiving-processing"></a>Deferred receiving processing
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+<!-- KFM: Preview until 10.0.38 GA -->
+
 The deferred receiving process lets you, for example, optimize the process of receiving shipments that include order lines for many items and/or serial numbers by assigning a **Deferred receiving policy ID** value to your mobile device menu item. In a scenario that involves several thousand serial numbers, the system quickly records the serial numbers and stores the information in the *mixed license plate receiving* entities. It then processes on-hand inventory updates and creates work in the background, so that warehouse workers can continue to do other work. Deferred receiving processing is useful for warehouse processes where different workers are responsible for inbound receiving and putaway.
 
 You can configure mobile device menu items that use one of the following **Work creation process** settings to run a deferred receiving process that quickly records incoming inventory and group-registers on-hand inventory against license plates:
@@ -77,6 +81,10 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Transfer order item receiving*
 - *Transfer order line receiving*
 - *Load item receiving*
+
+### Prerequisites
+
+Deferred receiving processing requires Supply Chain Management 10.0.38 or higher.
 
 ### Create and assign deferred receiving policies
 

@@ -57,6 +57,8 @@ For make-to-order businesses, it can be useful to configure coverage groups to c
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
+<!-- KFM: Preview until 10.0.38 GA -->
+
 To use the **Prioritize existing supply over required BOM or formula version or route version** setting described in the next section, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
