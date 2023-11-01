@@ -84,7 +84,7 @@ File filters are flexible and can be applied at different channel levels. When a
 
 Configure the following settings in the file filter:
 
-1. **Accepted file size** – Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size can't exceed 5 megabytes (MB).
+1. **Accepted file size** – Define the minimum and maximum accepted file sizes for invoice documents. The maximum file size can't exceed 20 megabytes (MB).
 2. **Supported file types** – Select at least one of the following file types that are currently supported for AI Builder recognition service:
 
     - PDF
