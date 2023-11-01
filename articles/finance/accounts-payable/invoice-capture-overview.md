@@ -4,7 +4,7 @@
 title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
-ms.date: 07/19/2023
+ms.date: 11/01/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -60,10 +60,7 @@ The **InvoiceCaptureOperator** role must be included in the role settings to suc
 > The **Environment maker** role must be assigned to the Accounts payable administrator if they create channels in Invoice capture.
 
 ## License
-To use Invoice capture solution, licenses need to be considered for Dynamics 365 Finance customers:
--	Power Apps license (per user) 
-If users want to access the Invoice capture, they have to gain the access to Power Apps first. 
--	Azure Data Lake Storage subscription 
-Normally, Dynamics 365 Finance customers don't need to subscribe to additional Azure Data Lake storage if the entitled 20G Dataverse file license is sufficient to persist the original invoice documents. However, different apps will share this Dataverse file storage. Therefore, they might need to make additional subscription if the entitled Dataverse file capacity is not sufficient. The same applies for Dataverse database storage (Default 10GB) to persist with the captured invoice data.
--	Invoice processing fee based on number of invoices
-Dynamics 365 Finance customers will be entitled to 100 invoice capture transactions/tenant/month. If customers need additional transactions, they need to purchase Electronic Invoicing SKU which costs 300 USD for 1K transactions/tenant/month. The transaction capacity is use-it-or-lose-it on a monthly basis, and customers will need to purchase for peak capacity.
+To use Invoice capture solution, the following licenses need to be considered for Dynamics 365 Finance customers:
+-	Power Apps license (per user) - To access the Invoice capture, users need to access Power Apps. 
+-	Azure Data Lake Storage subscription - Usually, Dynamics 365 Finance customers don't need to subscribe to additional Azure Data Lake storage if the 20G Dataverse file license is sufficient to persist the original invoice documents. Different apps share this Dataverse file storage. Additional subscriptions might be needed if the Dataverse file capacity isn't sufficient. The same applies for Dataverse database storage (Default 10GB).
+-	Invoice processing fee based on number of invoices - Dynamics 365 Finance customers are entitled to 100 invoice capture transactions/tenant/month. If customers need additional transactions, additional Electronic Invoicing SKU need to be purchased at 300 USD for 1K transactions/tenant/month. The transaction capacity is use-it-or-lose-it on a monthly basis, and customers need to purchase for peak capacity.
