@@ -28,7 +28,7 @@ A new change tracking functionality called row version change tracking has been 
 
 In row version change tracking functionality, a new column of type [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) needs to be added to all tables in the data entity that requires change tracking. Please refer to section [Enable row version change tracking for tables](rowversion-change-track.md#enable-row-version-change-tracking-for-tables) in this page, for information on how to add [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column to a table.
 
-The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the [rowversion](https://learn.microsoft.com/sql/t-sql/data-types/rowversion-transact-sql) column with the previous value. 
+The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column with the previous value. 
 
 ## Enable row version change tracking functionality
 
