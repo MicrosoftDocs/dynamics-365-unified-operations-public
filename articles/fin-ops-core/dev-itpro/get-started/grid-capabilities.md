@@ -53,7 +53,7 @@ In versions before 10.0.29, the total is the only supported calculated value. Ho
 
 A single column can show only one type of calculated value. However, each column in the grid can be configured to show a different type of calculated value. 
 
-In versions 10.0.31 and earlier, if more than one row is selected in the grid, the calculated value for the column will no longer be shown in the footer of the grid. This behavior has been enhanced in version 10.0.32 and later, where the calculated value for the column is updated based on the values in the selected row.   
+If more than one row is selected in the grid, the calculated value for the column is updated based on the values in the selected rows.   
 
 ### Showing the grid footer
 There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
@@ -109,6 +109,11 @@ When you enter data ahead of the place where the system is processing, you can e
 - You will notice that there are no lookup drop-down lists, field values aren't validated after you move to a different column in the same row, and columns don't initially show default values. This behavior occurs when you create or update ahead of the system. However, after the system catches up to the place where you're currently editing, the standard experience will resume. If you made changes to a field that typically receives a default value, your changes override the default field value when the server starts to process the row.
 - If you create a new row by using the **Down arrow** key, all columns in the grid will appear as editable. By default, the focus will be put in the first column in the new row. This column might not be the same column that received the initial focus in the legacy grid, or the same column that receives focus after you select a **New** button. Your organization can customize the system and change the column that receives the initial focus when the **Down arrow** key is selected. For more information, see the [Specifying the column that receives the initial focus when new rows are created by using the Down arrow key](#developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key) section. Regardless, you can use personalization to optimize each grid for data entry. Specifically, you can reorder fields so that the first column is the column that you want to start to enter data in. You might also want to reorder fields in general for data entry, to reduce tab stops and hide any fields that aren't required for data entry in this particular view.
 
+### Editing multiple rows simultaneously (bulk edit) 
+In versions 10.0.38 and later, users can update multiple selected rows in a single action using the **Bulk editing in grids** feature, which can be enabled through **Feature management**. To use this capability, first select the rows you wish to update in the grid and then select **Grid options**  > **Edit selected rows**. This action will open an **Edit rows** modal dialog that allows you to choose the column(s) you want to update and to provide the new value(s). Only columns backed by editable fields in the grid can be selected for update. The **Edit rows** dialog also allows you to define the order that columns will be update (from top to bottom), which can impact field level validations are triggered during the save process. After configuring the columns and values you want to update, select **Apply**. 
+
+Similar to the **Pasting from Excel** capability below, the grid will show the updated contents in italics as a preview of the data changes. After reviewing to ensure the updated content looks correct, select **Discard** to cancel the bulk editing or **Save** to initiate the save process. When saving, the system will use the **Typing ahead of the system** save model to submit the updates one row at a time, ensuring that all form and field validation is executed for each row. You will monitor the progress and results of each validation by checking the row status at the beginning of the row.     
+
 ### Pasting from Excel
 Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
 
@@ -116,7 +121,7 @@ Users have always been able to export data from grids in finance and operations 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
 
 ### Copying from a grid in the product
-As of version 10.0.32, grids in finance and operations apps support range selection capability that resembles the capability in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns). That range can then be copied and pasted as required.  
+Grids in finance and operations apps support a range selection capability that resembles the corresponding feature in Excel. This capability enables users to use the keyboard to select a range of cells (multiple rows and columns), which can then be copied and pasted as required.  
 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
@@ -125,14 +130,15 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
-As of version 10.0.29, the ability to evaluate math expressions in numeric controls has been extended and is now available outside the grid too.
+> [!NOTE]
+> The ability to evaluate math expressions in numeric controls is available outside the grid as well! 
 
 ## Grouping tabular data
-Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, lets users organize their tabular data in interesting ways within finance and operations apps. Because this feature extends the **Calculated values** feature, **Grouping** lets you gain meaningful insights into the data by providing calculated values (for example, subtotals) at the group level.
+Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** capability lets users organize their tabular data in interesting ways within finance and operations apps. Grouping works together with the **Calculated values** capability to let you gain meaningful insights into the data by displaying calculated values (for example, subtotals) at the group level.
 
 [![Grouping data in a grid.](../../fin-ops/get-started/media/grids-groupingWithTotals.png)](/media/grids-groupingWithTotals.png)
 
-To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
+To use this capability, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
 
 - Data value for the group 
 - Column name (this information is especially useful when you have multiple levels of grouping)
@@ -167,7 +173,7 @@ When you group on Date or DateTime fields, you have the option to group by year,
 > Users can't currently add a grouping column after they group on a segment of a date or time column.
 
 ## Freezing columns
-Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you might want the values in those columns to always be visible. The **Freezing columns in grid** feature provides this flexibility to users. 
+Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you might want the values in those columns to always be visible. The **Freezing columns in grid** capability provides this flexibility to users. 
 
 [![Freezing columns in a grid.](../../fin-ops/get-started/media/gridFreezingColumns-07-25-2022.gif)](/media/gridFreezingColumns-07-25-2022.gif)
 
