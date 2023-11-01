@@ -82,3 +82,12 @@ Admins can create a configuration group, select the supported invoice type, and 
 ### Define the control of invoice fields
 
 For each invoice type, different fields can be selected to appear in the side-by-side view, default fields can be added or removed, and fields can be set as mandatory.
+
+## Configuration group assignment
+Customers might receive invoices of different types, layout, and context from different suppliers. To handle the invoices more efficiently within Invoice capture, it provides the assignment of configuration on either vendor account level or legal entity level. During the time of invoice capture processing, it will determine the configuration group for each captured invoice by following the priority **Vendor account > Legal entity > System level**. 
+Here is the step how to assign a configuration group under a selected vendor:
+- Go to Setup system > Manage vendors.
+- Click the vendor account to open the detailed form.
+- Select the assigned configuration from the list.
+When the configuration is assigned, you can also see which vendors or legal entities have been assigned under the **Related** options in the configuration detailed form. 
+
