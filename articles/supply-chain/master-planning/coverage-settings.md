@@ -62,7 +62,7 @@ To use the **Prioritize existing supply over required BOM or formula version or 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
 - The feature that is named *Prioritize existing supply over required BOM/route in Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-The **Use the specified BOM or formula version** and **Prioritize existing supply over required BOM or formula version or route version** settings described in the next section are already generally available and don't require these prerequisites. However, without the *Prioritize existing supply over required BOM/route in Planning Optimization* feature, the system will always work as though **Prioritize existing supply over required BOM or formula version or route version** were set to *No*.
+The **Use the specified BOM or formula version** and **Use the specified route version** settings described in the next section are already generally available and don't require these prerequisites. However, without the *Prioritize existing supply over required BOM/route in Planning Optimization* feature, the system will always work as though **Prioritize existing supply over required BOM or formula version or route version** were set to *No*.
 
 ### Configure a coverage group to use demand-specified BOM or formula versions and/or routes
 
