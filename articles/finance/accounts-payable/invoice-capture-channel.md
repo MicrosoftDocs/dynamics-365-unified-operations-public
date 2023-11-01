@@ -180,7 +180,7 @@ In Invoice capture, follow these steps to create a channel that will use a share
 9. Set the **Only with Attachments** and **Include Attachments** options to **Yes**. 
 10. Add other criteria to meet your business requirements.
 11. Select the plus sign (**\+**) to insert a new step.
-12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perfom an unbound action**.
+12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perform an unbound action**.
 13. Select the ellipsis (**&hellip;**), and then select **Rename** to enter a new name for the step.
 14. In the **Action name** field, select **vis\_ExternalDocumentReceiver**.
 15. Update **channel id** to **ChannelId**.
@@ -204,26 +204,31 @@ Administrators can use the **Activate**/**Deactivate** button to specify whether
 
 If the channel is assigned as the **Channel for file upload** at **Setup system \> System preference**, but it's deactivated, file upload on the **Received file** page doesn't work.
 
-##	Set up a channel with shared mailbox
-A shared mailbox can be used by a group of people, like a support team, to receive and send email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. In invoice capture, follow these steps to create a channel which uses the shared mailbox to receive invoice emails from the supplier:
+## Set up a channel with a shared mailbox
 
-1.	Click **+ New** to create a channel. 
-2.	Enter a **Channel name**, set **Use manage channel** to **No**.
-3.	Save and note the **Channel id** from the browser url.
-4.	In Power Apps, select **Flow**.
-5.	Click **+ New flow**, select **Automated cloud flow** from the dropdown list.
-6.	Enter a name for the flow. Select the **When a new email arrives in a shared mailbox** trigger. 
-7.	Click **Create** to create the power automated flow.
-8.	Provide the shared mailbox address in the **Original mailbox address**. Set the **Only with attachments** and **Include attachments** to **Yes**. 
-9.	Enter additional criteria to address business requirements.
-10.	Click **+** to insert a new step. Choose **Add an action**, select **Microsoft Dataverse** and **Perform an unbound** actions.
-11.	Click **Rename** to rename the step.
-12.	Choose vis_ExternalDocumentReceiver for the action name.
-13.	Fill the record channel id to "ChannelId".
-14.	Select **Attachments name** for **FileName**.
-15.	Select **Attachment content** for **FileContent**. Select **...** > **Peek code**. Copy **Item/FileContent** which looks like "@items('xxx')?['contentBytes']" and wrap with string function like "string(items('xxx')?['contentBytes'])" and paste the final value to **Attachment content** field.
-16.	Fill "AdditionalInfo" with 
-    additionalInfo:{
-        "SendFrom": @{triggerOutputs()?['body/from']}
-}
+A group of people (for example, a support team) can use a shared mailbox to receive and send email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. In Invoice capture, follow these steps to create a channel that uses the shared mailbox to receive invoice emails from the supplier.
 
+1. Select **New** to create a channel. 
+2. Enter a name for the channel, and set the **Use manage channel** option to **No**.
+3. Save your changes, and make a note of the **Channel id** value from the URL in the browser's address bar.
+4. In Power Apps, select **Flow**.
+5. Select **New flow**, and then select **Automated cloud flow** in the dropdown list.
+6. Enter a name for the flow, and select **When a new email arrives in a shared mailbox** as the trigger.
+7. Select **Create** to create the automated flow.
+8. In the **Original mailbox address** field, enter the address of the shared mailbox.
+9. Set the **Only with attachments** and **Include attachments** options to **Yes**. 
+10. Add other criteria to meet your business requirements.
+11. Select the plus sign (**+**) to insert a new step.
+12. Select **Add an action**, and then select the **Microsoft Dataverse** and **Perform an unbound action** actions.
+13. Select **Rename** to enter a new name for the step.
+14. Select **vis\_ExternalDocumentReceiver** as the action name.
+15. Set the record channel ID to **ChannelId**.
+16. In the **FileName** field, select **Attachments name**.
+17. In the **FileContent** field, select **Attachment content**.
+18. Select the ellipsis (**&hellip;**), and then select **Peek code**.
+19. Copy the **Item/FileContent** value, which looks like **@items('xxx')?\['contentBytes'\]**. Wrap this value in a string function so that the result looks like **string(items('xxx')?\['contentBytes'\])**. Then paste the final value into the **Attachment content** field.
+20. In the **AdditionalInfo** field, enter the following value:
+
+    additionalInfo:\{<br>
+    &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
+    \}
