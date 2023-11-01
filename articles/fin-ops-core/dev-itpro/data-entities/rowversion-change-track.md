@@ -28,14 +28,14 @@ A new change tracking functionality called row version change tracking has been 
 
 In row version change tracking functionality, a new column of type [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) needs to be added to all tables in the data entity that requires change tracking. Please refer to section [Enable row version change tracking for tables](rowversion-change-track.md#enable-row-version-change-tracking-for-tables) in this page, for information on how to add [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column to a table.
 
-The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the [rowversion](https://learn.microsoft.com/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column with the previous value. 
+The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the [rowversion](https://learn.microsoft.com/sql/t-sql/data-types/rowversion-transact-sql) column with the previous value. 
 
 ## Enable row version change tracking functionality
 
-Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page, **System administration > Setup > Licensing > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). After enabling **Sql row version change tracking** configuration key, during exit of [Maintenance mode](../sysadmin/maintenance-mode.md) the Database synchronization will add [rowversion](/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column to tables that are enabled for row version change tracking.
+Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **Sql row version change tracking** configuration key on the **License configuration** page, **System administration > Setup > Licensing > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). After enabling **Sql row version change tracking** configuration key, during exit of [Maintenance mode](../sysadmin/maintenance-mode.md) the Database synchronization will add [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column to tables that are enabled for row version change tracking.
 
 > [!NOTE]
-> The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16) column is read-only in SQL Server. Therefore, direct SQL DML statements executed using the X++ [Statement](/dotnet/api/dynamics.ax.application.statement.executeupdate) object, such as the following example, will break if they try to insert or update this column.
+> The [rowversion](/sql/t-sql/data-types/rowversion-transact-sql) column is read-only in SQL Server. Therefore, direct SQL DML statements executed using the X++ [Statement](/dotnet/api/dynamics.ax.application.statement.executeupdate) object, such as the following example, will break if they try to insert or update this column.
 >
 > ```SQL
 > INSERT INTO table2
@@ -52,7 +52,7 @@ Beginning in Microsoft Dynamics Finance 10.0.34, it's required to enable the **S
 > 
 ## Enable row version change tracking for tables
 
-To enable row version change tracking for a table, set the **Allow Row Version Change Tracking** property of the table to **Yes**. When **Allow Row Version Change Tracking** property of a table is set to **Yes**, the table gets a new system field called **SysRowVersion** of type [rowversion](/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver16).
+To enable row version change tracking for a table, set the **Allow Row Version Change Tracking** property of the table to **Yes**. When **Allow Row Version Change Tracking** property of a table is set to **Yes**, the table gets a new system field called **SysRowVersion** of type [rowversion](/sql/t-sql/data-types/rowversion-transact-sql).
 
 > [!NOTE]
 > Before 10.0.34 when the row version change tracking functionality was in preview, the row version column was called **SysRowVersionNumber**. Beginning in 10.0.34 **SysRowVersionNumber** column was replaced with new **SysRowVersion** column. The **SysRowVersionNumber** column is obsolete. The **SysRowVersionNumber** column will be removed from metadata of out of the box tables in 10.0.39. Hence do not take any dependency on **SysRowVersionNumber** column.
