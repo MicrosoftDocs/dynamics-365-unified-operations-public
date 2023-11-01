@@ -20,9 +20,11 @@ Container labels provide information about a container and the related shipment 
 
 As for [license plate labels](document-routing-layout-for-license-plates.md), the Zebra Programming Language (ZPL) is used to create label layouts for container labels.
 
-## Turn on the container label printing functionality
+## Turn container label printing functionality on or off
 
-Container label functionality is provided by default in Microsoft Supply Chain Management version 10.0.32. In version 10.0.31, you must enable the *Pack containers using the Warehouse Management mobile app* feature in order to use the container label printing functionality. (For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the *Pack containers using the Warehouse Management mobile app* feature and turn it on or off.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Pack containers using the Warehouse Management mobile app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+
+For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
@@ -54,8 +56,8 @@ Follow these steps to create a container label layout.
     - **Definition type** – Select the method that's used to define the label layout:
 
         - *ZPL* – Define the label layout by using ZPL.
-        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
-        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
+        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
 
             ```plaintext
             "filePath": "/Instant Print/GS1-128.nlbl", 

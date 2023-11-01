@@ -4,7 +4,7 @@ description: This article provides information about access to finance and tax r
 author: RamaKrishnamoorthy
 ms.date: 01/27/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

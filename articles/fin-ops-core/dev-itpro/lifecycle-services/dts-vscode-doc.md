@@ -30,15 +30,15 @@ Next, install the DTS extension for VS Code from the Visual Studio Marketplace. 
 
 ## Access the DTS extension
 
-The extension will be active if you're in an AL workspace. To access the extension, select the DTS icon in the Activity Bar on the side of the VS Code window, as shown in the following illustration.
+The extension is only functional from inside an AL workspace. You may have multiple AL Projects in a workspace, but each project should follow the directory structure shown below. Before using the extension, you should generate your translation files which will populate the Translations folder. If you don't yet have any translation files, see [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files) for information about how to generate them.
 
+
+ To access the extension, select the DTS icon in the Activity Bar on the side of the VS Code window, as shown below.
 ![DTS icon in the Activity Bar in VS Code.](media/dtsvsc-icon.png)
 
-The DTS view is opened. It consists of the resource file explorer and the translation request configuration view.
+The DTS view is opened. It consists of the resource file explorer and the translation request configuration view. Note that the resources view will be empty if no valid translation files are found under the Translations Folder.
 
 ![DTS view.](media/dtsvsc-dtsview.png)
-
-If you don't yet have any resource files, see [Working with translation files](/dynamics365/business-central/dev-itpro/developer/devenv-work-with-translation-files) for information about how to generate them. After you've generated the XML Localization Interchange File Format (XLIFF), it will appear in the resource file explorer.
 
 ## Resource file explorer
 

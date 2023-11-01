@@ -7,7 +7,7 @@ author: ashishmsft
 ms.date: 07/18/2023
 ms.topic: article
 ms.search.form: EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResProductCategory, EcoResCategoryAddProduct, EcoResAttributeValue
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
 ms.search.region: Global

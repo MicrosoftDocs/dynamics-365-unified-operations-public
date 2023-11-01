@@ -39,7 +39,7 @@ When change management is enabled, POs move through six approval statuses, from 
 
 ## Confirming purchase orders
 
-POs that have an approval status of *Approved* can go through additional steps before they're confirmed. For example, you might have to send a purchase inquiry to the vendor to inquire about prices, discounts, or delivery dates. In this case, you can set the PO to the *In external review* status by using the **Purchase inquiry** action.
+POs that have an approval status of *Approved* can go through additional steps before they're confirmed. For example, you might have to send a purchase inquiry to the vendor to inquire about prices, discounts, or receipt dates. In this case, you can set the PO to the *In external review* status by using the **Purchase inquiry** action.
 
 Vendors that are set up to use the vendor collaboration module can review orders on the portal, and approve or reject them. During this review process, the PO has a status of *In external review*. The vendor collaboration module can be configured so that a confirmation from the vendor automatically confirms the order in Supply Chain Management. In this scenario, you must schedule the **Confirm accepted purchase orders from vendor collaboration** batch job, which is responsible for processing and confirming your POs. Alternatively, you can manually confirm a PO after you receive confirmation from the vendor. If a vendor rejects a PO, the rejection is received together with the reason for the rejection and suggestions for changes. In this case, the status of the PO remains *In external review*.
 

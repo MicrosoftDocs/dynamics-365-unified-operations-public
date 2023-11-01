@@ -1,12 +1,11 @@
 ---
 # required metadata
-
 title: Create returns in POS
 description: This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 08/04/2022
+ms.date: 10/20/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro 
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
@@ -43,9 +42,9 @@ For each order line in the list of returnable products, POS shows information ab
 
 ![Returnable products page.](media/returnslist.png)
 
-During return processing, if a user has the physical product, and that product has a bar code, the user can scan the bar code to register the return. Each scan of the bar code increases the return quantity by one item. However, if the bar code label has an embedded quantity, that quantity will be entered in the **Returning now** field.
+During return processing, if a user has the physical product, and that product has a bar code, the user can scan the bar code to register the return. Each scan of the bar code increases the return quantity by one item. However, if the bar code label has an embedded quantity, that quantity is entered in the **Returning now** field.
 
-Users can also manually select items to return on the **Returnable products** page and then update the **Returning now** field by using the details pane on the right.
+Users can also manually select items to return on the **Returnable products** page and then update the **Returning now** field by using the details pane.
 
 If the maximum available **Returning now** quantity is being specified for a transaction, the user can select the **Select all** operation on the POS app bar to set the maximum returnable quantity on all lines.
 
@@ -53,13 +52,15 @@ For each line that has a **Returning now** quantity, the user must select a retu
 
 After the return quantity and reason code have been set for each item that must be returned, the user can select the **Return** operation on the POS app bar to proceed with the processing. The POS transaction page appears, where the returnable items that were selected on the previous page have been added to the cart. The **Returning now** quantities for the items appear as negative-quantity lines on the transaction, and the total refund is calculated.
 
-When there is more than one item to return in a transaction, unified return processing can cause some user experience issues. To mitigate these issues, starting with Commerce version 10.0.36 you can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and deselect returnable products, and automatically brings up the return reason dialog box to reduce the number of user steps taken to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile, which when enabled combines all returnable products from an order, regardless of the invoice from which they were fulfilled. This feature reduces the number of steps cashiers have to take because they don't have to find and select the correct invoice to return an item. 
+### User experience enhancements
+
+If there's more than one item to return in a transaction, and the store associate has selected multiple items to return, the return grid shows only the last selected row as checked. This behavior can confuse the associate and make them believe that only a single item has been selected. To mitigate this issue, as of Commerce version 10.0.36, you can enable the **Improved user experience for POS returns** feature. This feature makes the return products grid a multiselect grid where users can select and clear the selection of returnable products. The multiselect grid automatically opens the return reason dialog box. Therefore, fewer steps are required to open and close the return reason dialog box. This feature also introduces the **Skip sales invoice selection during returns** configuration in the POS functionality profile. If this configuration is enabled, the system combines all returnable products from an order, regardless of the invoice that they were fulfilled from. Therefore, the number of steps that cashiers must complete is reduced, because they don't have to find and select the correct invoice to return an item.
 
 The **Improved user experience for POS returns** feature improvements have been backported to Commerce versions 10.0.33 through 10.0.35, but for these versions you must enable the improvements by updating config files in your sandbox/development/test environments, and then contacting Microsoft to enable them in production. For internal environments, modify the bin\CommerceRuntime.config file under the Retail Server physical path to add the `"FeatureState.Dynamics.AX.Application.RetailUnifiedReturnUXImprovementFeature" value="true"` and `"FeatureState.Dynamics.AX.Application.RetailSkipInvoiceSelectionDuringReturnFlight" value="true"` settings. If you don't want to skip the invoice selection view, don't add the second setting to the config file. 
 
 ## Other return options in POS
 
-Users can add lines to a return transaction if they are creating an exchange order. Users can add additional return items to a return transaction by using the **Return product** operation for a selected positive-quantity sales line that has already been added.
+Users can add lines to a return transaction if they're creating an exchange order. Users can add more return items to a return transaction by using the **Return product** operation for a selected positive-quantity sales line that has already been added.
 
 > [!NOTE]
 > The **Return product** operation in POS doesn't provide validation against original transactions, and allows any product to be returned. Microsoft recommends that you only allow authorized users to perform this operation, or enforce that a manager override is required to do so.
@@ -68,29 +69,31 @@ When the **Unified return processing experience in POS** feature is turned on, u
 
 Users can also use the **Recall order** operation in POS to search for and recall customer orders. (This operation can't be used for cash-and-carry transactions). In this case, after a customer order is selected, the **Return** operation on the POS app bar can be used to initiate a return for the customer order. This operation is available only if there are returnable lines on the order. It initiates the same user experience as the **Return transaction** or **Show journal** operation.
 
-If a refund is due at checkout, you can configure [refund payment policies](refund_policy_returns.md) that limit the payment methods used to refund customers. If an original transaction was paid by using a credit card, depending on the payment processor and the system configuration, users might have the option to [issue a refund to the original card](dev-itpro/linked-refunds.md). In this case, the refund can be processed without requiring that the customer swipe their credit card again because the original payment token is used to issue the refund.
+If a refund is due at checkout, you can configure [refund payment policies](refund_policy_returns.md) that limit the payment methods used to refund customers. If an original transaction was paid by using a credit card, depending on the payment processor and the system configuration, users might [issue a refund to the original card](dev-itpro/linked-refunds.md). In this case, the refund can be processed without requiring that the customer swipe their credit card again because the original payment token is used to issue the refund.
 
 ## Return orders are posted to Commerce headquarters as sales orders 
 
 When the **Unified return processing experience in POS** feature is turned on, all returns that are created in POS are written to Commerce headquarters as sales orders that have negative lines. In releases before the Commerce version 10.0.20 release, users can select whether return orders should be posted as sales orders that have negative lines, or whether they should be return orders that are created through the return merchandise authorization (RMA) process. 
 
-In the **Unified return processing experience in POS** feature, the option to use the RMA process to create returns in POS has been deprecated. After this feature is turned on, all returns will be created as sales orders that have negative lines.
+In the **Unified return processing experience in POS** feature, the option to use the RMA process to create returns in POS has been deprecated. After this feature is turned on, all returns are created as sales orders that have negative lines.
 
-## Offline return processing improvements
+## Return processing improvements when the connection to headquarters is down
 
 In most cases, when a return is processed in POS, the system tries to make a real-time service (RTS) call to Commerce headquarters to validate the current quantities that are available for return. This validation helps prevent fraudulent scenarios where a customer tries to return the same item in multiple locations.
 
-To handle situations where the RTS call can't be made because of network or connectivity issues, a process has been put in place to periodically synchronize return quantity data from Commerce headquarters to a store's channel database. This channel-side return tracking helps ensure that the **Available to return** quantities that are shown in POS are reasonably accurate, even when POS is offline. It also ensures that POS can continue to validate the channel-side information to help prevent fraudulent returns.
-
-To use the offline return process in the appropriate manner, organizations should schedule the **Update return quantities** batch job in Commerce headquarters so that it runs frequently. We recommend that this job run at the same frequency as the P job that pulls new transactions from Commerce channels into Commerce headquarters.
+To handle situations where the RTS call can't be made because of network or connectivity issues, a process has been put in place to periodically synchronize return quantity data from Commerce headquarters to a store's channel database. This channel-side return tracking helps ensure that the **Available to return** quantities that are shown in POS are reasonably accurate, even when the connection to headquarters can't be made. It also ensures that POS can continue to validate the channel-side information to help prevent fraudulent returns. To help minimize the likelihood that the same item is returned more than once, organizations should schedule the **Update return quantities** batch job in Commerce headquarters so that it runs frequently. We recommend that this job runs at the same frequency as the P job that pulls new transactions from Commerce channels into Commerce headquarters.
 
 The **Update return quantities** job calculates the quantity that is available for return for all sales orders that are found in Commerce headquarters. The data that the job calculates must then be sent to channel databases, so that the store channels can be updated. The **Return quantities** (1200) distribution job is used for this purpose. Because data about the returnable quantity is synchronized from Commerce headquarters, if a return is processed in POS, but the RTS call can't be made, POS can use the channel-side return information to validate the **Available to return** quantities for a given sales line.
 
-When RTS calls can't be made, and POS is using channel-side data for return validation, a warning message informs users that they are creating an "offline" return. Therefore, they are aware that the **Available to return** quantity that is shown in POS might be out of date and no longer accurate, depending on when the **Update return quantities** job was last processed and synchronized to the channel.
+When RTS calls can't be made, and POS is using channel-side data for return validation, a warning message informs users that they're creating an "offline" return. Therefore, they're aware that the **Available to return** quantity that is shown in POS might be out of date and no longer accurate, depending on when the **Update return quantities** job was last processed and synchronized to the channel.
 
-For example, a customer recently processed a return for an order line in another channel, but that data hasn't yet been synchronized to the channel databases through the **Update return quantities** job. The customer then goes to a different store and tries to return the same item again. In this case, if the store can't make the RTS call to Commerce headquarters to get real-time return data, POS will allow the item to be returned again. However, the user is warned that the information that is being used to validate the return might be out of date. The message that the user receives is only a warning message. It doesn't prevent the user from continuing to process the return.
+For example, a customer recently processed a return for an order line in another channel, but that data hasn't yet been synchronized to the channel databases through the **Update return quantities** job. The customer then goes to a different store and tries to return the same item again. In this case, if the store can't make the RTS call to Commerce headquarters to get real-time return data, POS allows the item to be returned again. However, the user is warned that the information that is being used to validate the return might be out of date. The message that the user receives is only a warning message. It doesn't prevent the user from continuing to process the return.
 
-If the channel-side information isn't up to date for some reason, and an offline return is processed for a quantity that exceeds the actual **Available to return** quantity, an error might be generated when statement posting is run to create the transaction in Commerce headquarters.
+If the channel-side information isn't up to date for some reason, and a return is processed for a quantity that exceeds the actual **Available to return** quantity, an error might be generated when statement posting is run to create the transaction in Commerce headquarters.
+
+### Offline return processing
+
+When POS is offline and can't connect to the Commerce Scale Unit (CSU), the return options are limited. Only transactions that were created offline and that are still available in the offline database can be returned offline. If a transaction was created offline, but POS went online before the attempt to return the transaction, the system shows an error message. This error message states that the operation isn't available offline because the system has sent the original transaction to the online database, and that transaction can be returned from another POS device (which might lead to over-returns).
 
 > [!NOTE]
 > When the **Unified returns processing experience in POS** feature is turned on, new optional features that support the validation of serialized product returns become available. For more information, see [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md).
@@ -104,7 +107,7 @@ The following list provides the minimum version requirements for the various com
 
 ## Enable proper tax calculation for returns with partial quantity
 
-This feature ensures that when an order is returned using multiple invoices, the taxes will ultimately be equal to the tax amount originally charged.
+This feature ensures that when an order is returned using multiple invoices, the taxes are ultimately equal to the tax amount originally charged.
 
 1. In the **Feature management** workspace, search for **Enable proper tax calculation for returns with partial quantity**.
 1. Select the **Enable proper tax calculation for returns with partial quantity** feature, and then select **Enable**.

@@ -4,7 +4,7 @@
 title: Create a fixed asset
 description: This article explains how to create a new fixed asset record from the Fixed asset list page.
 author: moaamer
-ms.date: 03/28/2023
+ms.date: 10/06/2023
 ms.topic: how-to 
 ms.prod:  
 ms.technology:  
@@ -51,10 +51,15 @@ You can also import fixed assets by using the Excel add-in or by running an impo
 If you didn't define the fixed asset number in the template of the Excel add-in, or in Data management, a fixed asset number is created for each imported asset and automatically increments the number sequence for each. However, if you import assets and define asset numbers in the template, the system does **not** automatically increment the number sequence. In this case, an admin might have to manually update the number sequence. If you defined the fixed asset number in the template of the Excel add-in, the system uses the defined fixed asset number and increments the number sequence.
 
 > [!NOTE]                                                                                                         
-> After posting the depreciation, the **Placed in service** and **Depreciation run date** fields will be locked on the **Book** page. Also, both fields will be updated from the data entity.
+> After posting depreciation, the **Placed in service** and **Depreciation run date** fields are locked on the **Book** page. Both fields will be updated from the data entity.
 
 > [!WARNING]
-> The fixed asset record won't be deleted if transactions were posted to the associated book, or if the newly created fixed asset is entered on a journal line but not posted. 
+> A fixed asset record can't be deleted if:
+> - transactions have already been posted to an associated fixed asset book.
+> - the newly created fixed asset is entered on a journal line that's not posted.
+> - A newly created fixed asset can't be deleted if there's an active financial dimension that is based on fixed assets. To delete this asset:
+> 1. Rename the fixed asset record to mark it as deleted. Go to **Options > Record info > Rename** and set the fixed asset number accordingly.
+> 2. Remove all associated fixed asset books or set **Calculate depreciation** to **No** in the asset books to avoid including the fixed asset in depreciation proposals.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

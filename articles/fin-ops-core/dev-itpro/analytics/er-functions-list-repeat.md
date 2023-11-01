@@ -11,7 +11,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kfend
 ms.custom:
 ms.assetid: 

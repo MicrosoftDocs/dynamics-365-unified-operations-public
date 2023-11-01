@@ -6,7 +6,7 @@ description: This article explains how to audit synchronization of customer oper
 author: gvrmohanreddy
 ms.date: 10/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

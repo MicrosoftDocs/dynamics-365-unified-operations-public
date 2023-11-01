@@ -3,7 +3,7 @@ title: Electronic reporting formula language
 description: This article provides information about how to use the formula language in Electronic reporting (ER).
 author: kfend
 ms.date: 05/04/2020
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

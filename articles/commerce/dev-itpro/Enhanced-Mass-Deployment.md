@@ -6,7 +6,7 @@ description: This article explains how to use the framework for self-service com
 author: jashanno
 ms.date: 02/17/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global 
 ms.author: jashanno

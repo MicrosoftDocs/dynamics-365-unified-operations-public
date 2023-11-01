@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Keyboard shortcuts can help you quickly and efficiently enter data in finance and operations apps. 
 
@@ -222,7 +222,7 @@ Users can discover currently available shortcuts directly from the user interfac
 > [!NOTE]
 > The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
-## [Personalization](personalize-user-experience.md) shortcuts 
+## [Personalization](../../dev-itpro/get-started/personalize-user-experience.md) shortcuts 
 
 | To do this                                                                                                             | Press                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|

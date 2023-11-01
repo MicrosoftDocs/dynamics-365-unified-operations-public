@@ -5,7 +5,7 @@ author: jasongre
 ms.date: 09/11/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
@@ -18,7 +18,7 @@ ms.search.form: SysTaskRecorderPane
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes how to use Task recorder to record business processes.
 

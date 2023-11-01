@@ -4,7 +4,7 @@
 title: Credit management parameters setup
 description: This article describes the options that you can use to configure Credit management to meet your business's requirements.
 author: JodiChristiansen
-ms.date: 11/21/2022
+ms.date: 10/09/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -76,6 +76,8 @@ Several credit management statistics are included in the **Customer credit manag
 4. Average balance 2
 5. Average credit limit %
 6. Average exposure %
+
+Set the **Calculate statistics for zero balance customers** to **Yes** to update the credit statistics for customers with no open transactions when running the aging snapshot process. This includes updating the open order amount. Selecting this option can slow down the aging process. 
 
 ### Credit limits
 

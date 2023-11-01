@@ -6,7 +6,7 @@ description: This article provides information about screen layouts for Dynamics
 author: boycezhu
 ms.date: 02/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: Global

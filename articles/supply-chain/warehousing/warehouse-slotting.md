@@ -29,26 +29,11 @@ ms.dyn365.ops.version: 10.0.9
 
 Several warehouse slotting features are available to help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 
-The *Warehouse slotting feature* lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
+The *Warehouse slotting* feature lets you consolidate demand by item and unit of measure from orders that have a status of *Ordered*, *Reserved*, or *Released*. Generated demand can then be applied to locations that will be used for picking, based on quantity, unit, physical dimensions, fixed locations, and more. After the slotting plan has been established, replenishment work can be created to bring the appropriate amount of inventory to each location.
 
-The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items that are required for the transfer orders after they are released to warehouse. This feature requires that you also turn on the *Warehouse slotting feature* feature.
+The *Warehouse slotting for transfer orders* feature lets warehouse managers replenish picking locations, based on demand from transfer orders that aren't yet released to the warehouse. It ensures that picking locations will include all the items that are required for the transfer orders after they are released to the warehouse.
 
-The *Warehouse slotting allocation enhancements* feature adds an option for the template lines that are used by the *Warehouse slotting feature* feature. The option enables the system to consider existing on-hand inventory at a target location. Therefore, fewer replenishments might be generated for slotting. The *Warehouse slotting allocation enhancements* feature requires that you also turn on the *Warehouse slotting feature* feature. It can optionally be used together with the *Warehouse slotting for transfer orders* feature.
-
-## Turn on the warehouse slotting features
-
-Before you can use these features, they must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. Turn on the following features as required:
-
-- Warehouse slotting feature
-- Warehouse slotting for transfer orders
-
-    > [!IMPORTANT]
-    > The *Warehouse slotting feature* feature must be turned on before this feature.
-
-- Warehouse slotting allocation enhancements
-
-    > [!IMPORTANT]
-    > The *Warehouse slotting feature* feature must be turned on before this feature.
+The *Warehouse slotting allocation enhancements* feature adds an option for the template lines that are used by the *Warehouse slotting* feature. The option enables the system to consider existing on-hand inventory at a target location. Therefore, fewer replenishments might be generated for slotting.
 
 ## Set up warehouse slotting
 
@@ -121,7 +106,7 @@ Next, you must set up the template header, slotting specifications, and location
     - **Demand type:** *Sales order*
 
         > [!NOTE]
-        > Currently, *Sales orders* and *Transfer orders* are the only demand types that are supported. You can select *Transfer orders* only if the *Warehouse Slotting for transfer orders* feature is turned on.
+        > Currently, *Sales orders*, *Transfer orders*, and *Outbound shipment orders* are the only demand types that are supported.
 
     - **Demand strategy:** _Ordered_
 
@@ -181,7 +166,7 @@ For each sales order template that you create, follow these steps to add a line 
 
         - **Assume empty** – This system should assume that all locations in the picking area are empty and should not check those locations for inventory.
         - **Consider qty** – The system should check the locations in the picking area for inventory and should skip any locations that aren't empty.
-        - **Consider on-hand** – The system should check whether any target location contains unreserved quantities for the item on the demand line. If the quantity is large enough to satisfy at least one unit of the demand line, the generated slotting plan record is reduced by the available amount. For example, if the demand is 10 cases, and one case is on hand, the located demand will be nine cases. If the demand is 10 cases, and one each is on hand, the located demand will be 10 cases. This value is available only when the *Warehouse slotting allocation enhancements* feature is turned on.
+        - **Consider on-hand** – The system should check whether any target location contains unreserved quantities for the item on the demand line. If the quantity is large enough to satisfy at least one unit of the demand line, the generated slotting plan record is reduced by the available amount. For example, if the demand is 10 cases, and one case is on hand, the located demand will be nine cases. If the demand is 10 cases, and one each is on hand, the located demand will be 10 cases.
 
     - **Directive code:** _Slotting_
 

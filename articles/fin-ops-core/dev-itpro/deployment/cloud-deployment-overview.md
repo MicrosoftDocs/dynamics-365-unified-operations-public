@@ -154,8 +154,8 @@ Finance and operations apps can be deployed into a subset of Microsoft Azure dat
 > Regardless of where customer data is stored, Microsoft does not control or limit the locations from which customers or their end-users may access it. For more information, see the following articles:
 >
 > - [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](deployment-options-geo.md)
-> - [Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)](us-gcc-deployment.md)
-> - [Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China](china-local-deployment.md)
+> - [Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)
+> - [Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China](../../fin-ops/deployment/china-local-deployment.md)
 
 ## Frequently asked questions
 

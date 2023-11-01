@@ -45,7 +45,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### Roadmaps
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
 
 ### Blogs
 

@@ -192,7 +192,7 @@ Supply Chain Management calculates demand forecasts by using the Azure Machine L
 
 ### Enable the Azure Machine Learning Service in Feature management
 
-To use the Azure Machine Learning Service for demand forecasting, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 
@@ -214,12 +214,16 @@ This section describes how to set up your machine learning workspace by using an
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, default datastore, and compute resources. However, you must still create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
-1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
+1. Open a PowerShell window and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore (named *workspaceblobdemplan*), and compute resources.
+1. Follow these steps to set the *workspaceblobdemplan* datastore (created by the **quick_setup.ps1** script) as a default datastore.
+    1. In Azure Machine Learning studio, select **Datastores** in the navigator.
+    1. Select the *workspaceblobdemplan* datastore (it's of type *Azure Blob Storage* and points to the *demplan-azureml* blob storage container).
+    1. Open the details page for the *workspaceblobdemplan* datastore and select **Set as default datastore**.
+1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The **quick_setup.ps1** script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
 1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location that you found in the previous step.
-1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API.
+1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
 1. Your workspace is now set up. Skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 
 #### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace

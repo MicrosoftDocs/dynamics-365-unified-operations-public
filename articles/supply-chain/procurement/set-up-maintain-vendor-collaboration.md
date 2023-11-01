@@ -13,7 +13,7 @@ ms.technology:
 
 ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 

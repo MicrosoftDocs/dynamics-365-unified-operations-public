@@ -4,7 +4,7 @@ description: The Dual-write Application Orchestration package is no longer a sin
 author: RamaKrishnamoorthy
 ms.date: 05/04/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.custom: "separate-solution"
 ms.search.region: global
 ms.author: ramasri

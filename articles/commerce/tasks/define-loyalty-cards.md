@@ -6,7 +6,7 @@ description: This article describes how to define loyalty cards in Microsoft Dyn
 author: chuzho
 ms.date: 07/31/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.author: chuzho
@@ -17,7 +17,6 @@ ms.search.validFrom: 2023-06-25
 # Define loyalty cards
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to define loyalty cards in Microsoft Dynamics 365 Commerce.
 
@@ -39,5 +38,6 @@ To define loyalty cards in Commerce headquarters, follow these steps.
 1. Select **Save**.
 1. To adjust points for the card, select **Card adjustments**.
 1. To view all earn, redeem, and adjust transactions that have occurred for the card, select **Card transactions**.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

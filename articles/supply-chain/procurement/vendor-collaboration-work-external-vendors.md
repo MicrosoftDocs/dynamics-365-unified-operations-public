@@ -111,13 +111,13 @@ The following table shows the typical exchange of information, depending on the 
 <td>The vendor <strong>accepts</strong> the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts.</td>
 <td>The status of the order is updated to <strong>Confirmed</strong>. If the order can&#39;t be updated for some reason, the vendor response is still recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>. 
 
-The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>Confirmed</strong> status. When the PO is confirmed, it appears in the vendor collaboration interface.</td>
+The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to <strong>Confirmed</strong> status. When the PO is confirmed, it appears in the vendor collaboration interface.</td>
 </tr>
 <tr class="odd">
 <td>The vendor <strong>accepts</strong> the order, but Supply Chain Management isn&#39;t configured to automatically confirm POs that the vendor accepts.</td>
 <td>The vendor response is recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>.
 
-The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>In External Review</strong> status. You can then manually confirm the PO.</td>
+The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed receipt dates on the lines. This update initiates a new version that is automatically set to <strong>In External Review</strong> status. You can then manually confirm the PO.</td>
 </tr>
 <tr class="even">
 <td>The vendor <strong>rejects</strong> the order.</td>
@@ -127,7 +127,7 @@ The PO that was sent to the vendor and that has a status of <strong>In External 
 <td>The vendor <strong>accepts</strong> the order <strong>with changes</strong>. Changes are suggested at the line level. The vendor can accept or reject individual lines. Here are some other changes that the vendor can suggest:
 <ul>
 <li>Change dates or quantities.</li>
-<li>Split lines for different delivery dates or quantities.</li>
+<li>Split lines for different receipt dates or quantities.</li>
 <li>Substitute an item.</li>
 </ul>
 The vendor can&#39;t change price information and charges. However, the vendor can suggest these changes by using notes.</td>
@@ -164,11 +164,11 @@ On a response, a vendor can change the following information on the header:
 - Vendor document reference
 - Mode of delivery
 - Delivery terms
-- Confirmed delivery date
+- Confirmed receipt date
 
 The vendor can also add a note or attachment.
 
-On the lines, the vendor can change the quantity and the delivery dates, add notes and attachments, reject a line, substitute a line with another product that is entered as text, and split a line into multiple deliveries. The status of a line varies, depending on the changes that the vendor has suggested:
+On the lines, the vendor can change the quantity and the receipt dates, add notes and attachments, reject a line, substitute a line with another product that is entered as text, and split a line into multiple deliveries. The status of a line varies, depending on the changes that the vendor has suggested:
 	
 - **Accepted with changes**
 - **Rejected**
@@ -184,7 +184,7 @@ You can update a PO by selecting **Process PO update** on the response or on one
 
 Not all suggested changes can be updated on a PO. Only updates on the header, and updates of dates and quantities on lines, can be automatically updated on the PO. For other changes, you must manually update the PO. In this case, the value of the **Is PO update processed?** field is **Manual update**. For example, if a vendor suggests that a line be split into a schedule, this change must be made manually.
 
-Every line that has a status of **Accepted** will have a confirmed delivery date. When you run the **Process PO update** action, this date is updated on the PO. Notes and attachments aren't automatically transferred to the current PO. Additionally, trade agreements aren't reassessed on the PO lines when you update the current PO via the **Process PO update** action.
+Every line that has a status of **Accepted** will have a confirmed receipt date. When you run the **Process PO update** action, this date is updated on the PO. Notes and attachments aren't automatically transferred to the current PO. Additionally, trade agreements aren't reassessed on the PO lines when you update the current PO via the **Process PO update** action.
 
 ## PO statuses and versions
 

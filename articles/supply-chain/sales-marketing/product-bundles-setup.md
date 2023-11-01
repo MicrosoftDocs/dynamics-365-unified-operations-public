@@ -15,7 +15,6 @@ ms.custom: bap-template
 # Enable and set up product bundles
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 ## Prerequisites
 

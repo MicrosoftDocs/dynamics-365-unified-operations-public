@@ -29,7 +29,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Planning | New exception process for migrating to Planning Optimization | [Migration to Planning Optimization for master planning](../master-planning/new-master-planning-engine.md) | Enabled by default |
-| Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning for some companies](../master-planning/planning-optimization/get-started.md#exclude-po) | Enabled by default |
+| Planning | [Transition to Planning Optimization one company at a time](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/transition-planning-optimization-one-company-at-time) | [Continue to use deprecated master planning for some companies](../master-planning/continue-using-deprecated-planning.md) | Enabled by default |
 | Procurement | [Improve security for vendor bank account information updates](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/improve-security-vendor-bank-account-information-updates) |  [Vendor bank account workflow](../../finance/accounts-payable/vendor-bank-account-workflow.md) | Feature management:<br>*Vendor bank account change proposal workflow* |
 | Product information management | [Share product information across legal entity boundaries](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/share-product-information-across-legal-entity-boundaries) | [Cross-company product sharing](../pim/share-products-across-companies.md) | Feature management:<br>*(Preview) Cross-company data sharing for products* |
 | Warehouse management | License plate layouts | [License plate label layouts and printing](../warehousing/print-license-plate-labels-using-label-layouts.md) | Enabled by default |
@@ -39,7 +39,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -76,7 +76,7 @@ The table also lists features that were previously in public preview but have ch
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | Mandatory |
 | Inventory management | [Inventory on-hand report data clean up](whats-new-scm-10-0-28.md) | On by default |
 | Master planning | [Azure Machine Learning Service for demand forecasting](../master-planning/demand-forecasting-setup.md) | On by default |
-| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Mandatory |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Master planning | [Consider inventory lead time when creating a planned transfer order](whats-new-scm-10-0-27.md) | Generally available |
 | Master planning | [CTP for Planning Optimization](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) | Generally available |
 | Master planning | [Group transactions in Planning Optimization](whats-new-scm-10-0-29.md) | On by default |
@@ -103,7 +103,7 @@ The table also lists features that were previously in public preview but have ch
 | Product information management | [Country of origin management feature](../pim/country-of-origin.md) | Mandatory |
 | Product information management | [Populate product attribute values](whats-new-scm-10-0-27.md) | On by default |
 | Production control | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md)  | On by default |
-| Production control | [Copy generic routes](whats-new-scm-10-0-20.md) | On by default |
+| Production control | [Copy generic routes](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Production control | [Enable to enter batch and serial numbers while reporting as finished from the Job Card Device](../production-control/report-finished-job-device.md) | Mandatory |
 | Production control | Improved production catch weight quantity picking | Mandatory |
 | Production control | [Manufacturing execution system integration](../production-control/mes-integration.md) | Mandatory |
@@ -115,12 +115,12 @@ The table also lists features that were previously in public preview but have ch
 | Production control | [Register material consumption on the production floor execution interface (non-WMS)](../production-control/production-floor-execution-use.md) | On by default |
 | Production control | [Report on co- and by-products from the production floor execution interface](../production-control/production-floor-execution-use.md) | Mandatory |
 | Production control | [Report on planning items in the production floor execution interface](whats-new-scm-10-0-27.md) | Mandatory |
-| Production control | [Update related resource requirements when a route operation is changed](whats-new-scm-10-0-20.md) | On by default |
+| Production control | [Update related resource requirements when a route operation is changed](../supply-chain-dev/whats-new-scm-10-0-20.md) | On by default |
 | Production control | [Validate expiration of raw materials against planned consumption date](whats-new-scm-10-0-23.md) | Mandatory |
 | Sales and marketing | [Calculate sales totals using multiple threads](whats-new-scm-10-0-29.md) | On by default |
 | Sales and marketing | Limit the number of sales order lines per batch task | Mandatory |
 | Sales and marketing | [Update prices and discounts entered manually for intercompany](whats-new-scm-10-0-29.md)  | On by default |
-| Sales and marketing | [Update Requested receipt date with Confirmed date for intercompany orders](whats-new-scm-10-0-19.md) | Mandatory |
+| Sales and marketing | [Update Requested receipt date with Confirmed date for intercompany orders](../supply-chain-dev/whats-new-scm-10-0-19.md) | Mandatory |
 | Shared AP and AR | Cancel posted rebate provision with a posting date | Generally available |
 | Shared AP and AR | Credit note calculation enhancement in Rebate management | Generally available |
 | Shared AP and AR | Enable auto negative tier in Rebate management | Generally available |
@@ -165,8 +165,8 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Schedule work creation](../warehousing/configure-wave-schedule-work-creation.md) | Mandatory |
 | Warehouse management | [System directed cluster picking](../warehousing/system-directed-cluster-pick.md) | Mandatory |
 | Warehouse management | System directed work sequencing | Mandatory |
-| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Mandatory |
-| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Mandatory |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | Mandatory |
 | Warehouse management | [Warehouse management app data inquiry flow](../warehousing/warehouse-app-data-inquiry.md) | Mandatory |
 | Warehouse management | [Warehouse management application - blank GTD](whats-new-scm-10-0-26.md) | Mandatory |
 | Warehouse management | [Warehouse release rule](../warehousing/release-to-warehouse-rule.md) | Mandatory |
@@ -183,7 +183,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Master planning | [DDMRP FAQ](../master-planning/planning-optimization/ddmrp-faqs.md) |
 | Master planning | [Set up scrap to calculate raw material requirements](../master-planning/scrap-calculations.md) |
-| Supply Chain Management development | [Create and process custom message queues and message types](../supply-chain-dev/message-processor.md) |
+| Supply Chain Management development | [Create and process message queues and message types](../supply-chain-dev/message-processor.md) |
 | Support | [Use Customer Lockbox to manage secure access to customer data](../../fin-ops-core/dev-itpro/sysadmin/customer-lockbox.md) |
 | Warehouse management | [Manage inbound putaway based on container types](../warehousing/inbound-putaway-by-container-type.md) |
 | Warehouse management | [Monitor Warehouse Management usage and performance](../warehousing/application-insights-monitor-usage-performance.md)
@@ -198,11 +198,11 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.32 includes platform updates
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.32, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=787268).
 
-### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

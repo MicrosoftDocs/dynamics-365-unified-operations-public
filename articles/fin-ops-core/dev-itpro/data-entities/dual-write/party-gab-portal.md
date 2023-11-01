@@ -4,7 +4,7 @@ description: This article describes the changes to the web roles for Microsoft P
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri

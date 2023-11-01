@@ -55,8 +55,6 @@ Follow these steps to set up the runtime filter and BOM levels for a master plan
 1. In the **Planning Optimization** dialog box, on the **Parameters** FastTab, set the following settings fields:
 
     - **Master plan** – Select the master plan to run.
-    - **Track processing time** – Select whether you want to record the processing time that is required to complete each task.
-    - **Number of threads** – Enter the number of child threads to use to parallelize and help speed up master planning. Numbers above 0 (zero) are allowed only when you use batch processing to run the job.
     - **Comment** – Add a comment to describe the purpose of the job.
 
 1. On the **Records to include** FastTab, set the following fields:

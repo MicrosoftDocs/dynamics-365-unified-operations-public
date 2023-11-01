@@ -23,9 +23,9 @@ Priority-based planning lets you prioritize replenishment orders to ensure that 
 
 To get a quick overview of this feature, see the following video: [Planning optimization support for priority-based planning in Dynamics 365 Supply Chain Management](https://youtu.be/GmMHzFETTQc).
 
-## Turn on priority-based planning for your system
+## Turn priority-based planning on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [**Feature management** workspace](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Priority driven MRP support for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Where and how planning priorities are assigned
 
@@ -177,3 +177,7 @@ Here are some examples:
 
 - A user changes the planning priority for an intercompany sales order line from 20 to 30. This change is reflected on the linked intercompany purchase order line.
 - A user changes the planning priority for an intercompany purchase order line from 40 to 50. This change is reflected on the linked intercompany sales order line.
+
+## Action messages
+
+The system doesn't generate action messages for coverage codes with priority-based planning.

@@ -3,7 +3,7 @@ title: Test location directives with acceptance tests
 description: This article explains how to set up and run automated tests that validate whether your location directive setup is working as expected and help you troubleshoot if it isn't.
 author: MichaelFruergaardPontoppidan
 ms.author: mfp 
-ms.reviewer: kmaybac
+ms.reviewer: kamaybac
 ms.search.form: WHSLocDirTable, WHSLocationDirectiveAcceptanceTest
 ms.topic: how-to
 ms.date: 09/29/2022
