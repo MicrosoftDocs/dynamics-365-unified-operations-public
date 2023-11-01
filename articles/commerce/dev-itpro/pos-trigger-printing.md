@@ -61,16 +61,16 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                   | Type                    | Description                                                        |Release    |
 |---------------------------|-------------------------|--------------------------------------------------------------------|-----------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |	 |
-| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |	 |
+| PreCustomerAddTrigger     | Cancelable              | Executed before "Create customer" form is opened.             |	 |
+| PostCustomerAddTrigger    | Non-cancelable          | Executed after the customer is created.              |	 |
 | PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |	 |
 | PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |	 |
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |	 |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |	 |
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |	 |
-| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |	 |
-| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed after user clicks the "Save" button and before the customer is created or updated. `isNewCustomer` in the option indicates whether the operation is creating new customer or editing existing customer.     |	 |
+| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created or updated.       |	 |
 | PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
 | PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |	 |
