@@ -102,7 +102,7 @@ To set the **Minimum Age** attribute for a video asset, follow these steps.
 
 [Add a privacy policy page](add-privacy-page.md)
 
-[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+[Replace user IDs associated with tracked content changes](dev-itpro/replace-IDs-tracked-changes.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,10 +2,10 @@
 title: Independent software vendor (ISV) licensing
 description: This article describes the independent software vendor (ISV) licensing feature.
 author: pnghub
-ms.date: 07/28/2023
+ms.date: 10/17/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: twheeloc
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: gned
 ms.search.validFrom: 2016-02-28
@@ -58,7 +58,7 @@ The certificate is used to sign your customer license files and validate the lic
 -   **Personal Information Exchange (PFX, also known as PKCS \#12)** – The PKCS \#12 format, which uses the .pfx file name extension, supports secure storage of certificates, private keys, and all certificates in a certification path. The PKCS \#12 format is the only file format that can be used to export a certificate and its private key.
 -   **Base64-encoded X.509** – The Base64 format supports storage of a single certificate. This format doesn't support storage of the private key or certification path.
 
-There'is a restriction on the format. The PFX (PKCS \#12) format should be used only to export the certificate together with its private key for signing/generating purposes. It should never be shared outside the ISV organization. The DER-encoded binary X.509 format, which uses the .cer file name extension, should be used to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License. This public key is distributed to customers via the model. It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.
+There's a restriction on the format. The PFX (PKCS \#12) format should be used only to export the certificate together with its private key for signing/generating purposes. It should never be shared outside the ISV organization. The DER-encoded binary X.509 format, which uses the .cer file name extension, should be used to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License. This public key is distributed to customers via the model. It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.
 
 ## Enable licensing for your ISV solution
 Follow these steps to enable licensing for your solution.
@@ -135,10 +135,12 @@ Follow these steps to enable licensing for your solution.
     | customer        | The customer's tenant name (from the screenshot under step 1).              |
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
-    | usercount       | Optional: The number that custom validation logic can use as required. This could be users, but isn't limited to users. |
+    | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
     | SignatureVersion| Optional: Defines the hashing algorithm to be used for license generation. Value 1 defines SHA1. Value 2 defines SHA256 and the default value is 2. IMPORTANT: SHA1 will be deprecated in a future release. It's recommended to use 2 for this parameter. After SHA1 is deprecated, ISV Licensing will work with SHA256 (value 2). |
-    | UseLegacyCryptoServiceProvider| Optional: Use an older CryptoServiceProvider. If generating the license key fails, this option allows users to use on an older version of ISV License generation. The default value is 0 and should only be used to provide a fallback mechanism in case of an error with the default value. This parameter is available in Dynamics 365 Finance version 10.0.36. |
+    | UseLegacyCryptoServiceProvider| Optional: Use an older CryptoServiceProvider. If generating the license key fails, this option allows users to use on an older version of ISV License generation. The default value is 0 and should only be used to provide a fallback mechanism if there's an error with the default value. This parameter is available in Dynamics 365 Finance version 10.0.36. |
     | AllowCrossDomainInstallation| Optional: This parameter provides ISVs (Independent Software Vendors) with the ability to generate licenses that can be used across different environments for the same tenant (customer). The default value is set to **false**, which means the tenant can't use the same ISV license across different environments or reuse the same ISV license within the same environment when the admin domain name changes. When the value is set to **true**, the customer can install the same ISV license across different environments associated with the same tenant or when the customer changes the admin domain name of the environment. This parameter is available in Dynamics 365 Finance version 10.0.38 and higher. |
+    | subjectname| Specifies the subject name of the certificate that is installed in the cert store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
+    | thumbprint| Optional: It's a unique identifier for selecting a particular certificate with the given subject name. While this parameter is optional, it can only be used along with subjectname. If thumbprint isn't specified and the store contains multiple certificates with same subject name, the tool picks up the certificate with the furthest(maximum) expiry. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
         
 
     For example.
@@ -146,23 +148,29 @@ Follow these steps to enable licensing for your solution.
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
     ``` 
+   
+    > [!NOTE]
+    > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
+    
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode  /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
+     ```
 
-
-4.  Import the license into the target environment.
+3.  Import the license into the target environment.
 
     > [!NOTE]
     > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
 
     | Parameter name                | Description                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|
-    | --setupmode importlicensefile | Use this parameter to inform the setup tool that a license will be loaded.                             |
+    | --setupmode importlicensefile | Use this parameter to inform the setup tool that a license is loaded.                             |
     | --metadatadir                 | Use this parameter to specify the metadata directory. You should use the default packages directory.   |
     | --bindir                      | Use this parameter to specify the binaries directory. You should use the default packages directory.   |
     | --sqlserver                   | Use this parameter to specify the Microsoft SQL Server. For one-box environment, use a period (**.**). |
     | --sqldatabase                 | Use this parameter to specify the SQL Server database. For one-box environments, use **AXDB**.     |
     | --sqluser                     | Use this parameter to specify the SQL Server user. You should use **axdbadminr**.                  |
     | --sqlpwd                      | Use this parameter to specify the SQL Server password.                                                 |
-    | --licensefilename             | Use this parameter to specify the license file that will be loaded.                                    |
+    | --licensefilename             | Use this parameter to specify the license file that is loaded.                                    |
 
     For example.
 
@@ -170,11 +178,11 @@ Follow these steps to enable licensing for your solution.
     C:\AOSService\PackagesLocalDirectory\Bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --setupmode importlicensefile --metadatadir c:\packages --bindir c:\packages --sqlserver . --sqldatabase axdb --sqluser axdbadmin --sqlpwd ******** --licensefilename c:\templicense.txt
     ```
 
-5.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
+4.  The corresponding configuration key is available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screenshot. 
 
     ![ISVConfigurationKey1 configuration key enabled on the License configuration page.](media/isv_license_configuration_page.png)
 
-6.  In non-production installations, you must start the database synchronization process from Visual Studio.
+5.  In nonproduction installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button becomes visible, as shown in the following screenshot. 
 
@@ -186,7 +194,7 @@ Solutions can be delivered in two forms:
 -   Model files (source code)
 -   Deployable packages (binary)
 
-To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package. Customers will then be able to install and interact with those elements in Visual Studio. Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and shouldn't be able to customize. 
+To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package. Customers are able to install and interact with those elements in Visual Studio. Although customers are able to refer to items in the deployable package, they aren't able to access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and shouldn't be able to customize. 
 
 ![Protected vs. unprotected ISV solutions.](./media/isv_protected_solution.png)
 

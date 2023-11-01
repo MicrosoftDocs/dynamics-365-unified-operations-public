@@ -77,7 +77,7 @@ The following table explains whether destination-based taxes or customer account
 
 [Whole amount and Interval calculation options for sales tax codes](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Calculation of tax exemption](tax-exempt-price-inclusive.md) 
+[Calculation of tax exemption](dev-itpro/tax-exempt-price-inclusive.md) 
 
 
 

@@ -99,7 +99,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 4. In the **Scheduled start date/time** field, enter a date and time.
 5. In the **Run by** field, select the users whose security credentials will be used when the batch job is run. For more information, see [Batch manager security role](runby.md).
 6. Optional: In the **Monitoring category** field, select a value to make it easier to identify the types of jobs during monitoring.
-7. Optional: Set the **Critical job** option to **Yes**. For more information, see [Import users in bulk](tasks/import-bulk-users.md) or [Configure the Workflow message processing batch job as critical](../../fin-ops/organization-administration/workflow-batch-job-critical.md).
+7. Optional: Set the **Critical job** option to **Yes**. For more information, see [Import users in bulk](../../fin-ops/sysadmin/import-bulk-users.md) or [Configure the Workflow message processing batch job as critical](../../fin-ops/organization-administration/workflow-batch-job-critical.md).
 8. In the **Batch group** field, select the batch group for the job.
 9. Optional: Set the **Scheduling priority is overridden** option to **Yes**, to make the **Job scheduling priority** field available.
 10. Optional: In the **Job scheduling priority** field, select a default priority that differs from the default priority that is defined for the batch group.

@@ -185,7 +185,7 @@ Demo data shipped in Commerce version 10.0.26 and earlier had a bug where the **
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
