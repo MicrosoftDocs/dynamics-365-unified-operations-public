@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 You can import data from a range of sources and file types. For example, you can import data directly from Microsoft Dynamics 365 Supply Chain Management or by importing text files in Excel or comma-separated values (CSV) format. You can also import data that's stored in an Azure data lake. Before you import the data into Demand planning, you can use Power Query to transform it as you require.
 
 The Demand planning app lets you build a collection of *import profiles*. Each profile imports data from a specific external source into one or more specific tables in Demand planning.

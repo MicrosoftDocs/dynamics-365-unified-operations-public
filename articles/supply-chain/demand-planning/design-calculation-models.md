@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 *Calculation models* let you arrange and configure tiles to define the calculation that's done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
 ## Create and customize a calculation model

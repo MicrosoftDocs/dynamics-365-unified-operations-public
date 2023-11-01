@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 Data that's imported into Demand planning must be loaded into tables that are set with the fields and relations that are required to accommodate the incoming data. Demand planning includes a set of predefined tables that support the most useful standard data that you'll probably want to import from Microsoft Dynamics 365 Supply Chain Management. If you've customized your tables in Supply Chain Management, you can use the tools that are provided to reproduce the custom fields. You can also create new custom tables to store data from Supply Chain Management and other sources.
 
 ## View tables
