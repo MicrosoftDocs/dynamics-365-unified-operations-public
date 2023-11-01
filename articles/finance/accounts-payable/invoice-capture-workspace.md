@@ -49,24 +49,22 @@ Here are some key features of the side-by-side viewer:
 
 1. The document header consists of four fields:
 
-- **Status**
-- **Legal entity**
-- **Vendor account**
-- **Invoice type**
+    - **Status**
+    - **Legal entity**
+    - **Vendor account**
+    - **Invoice type**
 
 2. Users can update the legal entity, vendor account, and invoice type by selecting **Classify invoice**.
+3. The document viewer shows the original document. Controls in the upper-right corner let users adjust the page view by changing pages, zooming in or out, fitting the document to the page, or rotating the document. Users can resize the whole pane by dragging the resize line between the original document pane and the invoice pane.
+4. The invoice pane contains different cards that show the invoice context.
 
-3. The document viewer shows the original document. Controls in the upper-right corner let users adjust the page view by changing pages, zooming in or out, fitting the document to the page, or rotating it. Users can resize the whole pane by dragging the resize line between the original document pane and the invoice pane.
+    - The message card shows all errors, warnings, and informational messages. It's an expandable/collapsible section in the central part of the interface. To expand it, users select the message symbol. Users can select which types of messages are shown.
+    - The **Invoice header** card shows the header fields that are set as visible through configuration groups. The fields that are shown depend on the selected invoice type.
+    - The **Invoice lines** card shows the grid for invoice lines. The line fields are customized through configuration groups. This card is hidden if the invoice type is **Header-only**. A maximum of five invoice lines are shown per page. Users can navigate through the pages by using the left and right arrow buttons in the lower-right corner of the interface.
+    - The **Charges** and **Sales tax** cards show the table for charges and sales tax on the document header. If there are no charges lines and sales tax lines, these cards are hidden. Users can select **Show more** to show the cards. Users can manually add charges and sales tax by selecting **Add**. 
 
-4. The invoice pane contains different cards that show invoice context.
-- The message card shows all errors, warnings, and informational messages. It's an expandable/collapsible section in the central part of the interface. To expand it, users select the message symbol. Users can select which types of messages are shown.
-- The **Invoice header** card shows the header fields that are set as visible through configuration groups. The fields that are shown depend on the selected invoice type.
-- The **Invoice lines** card shows the grid for invoice lines. The line fields are customized through configuration groups. This card is hidden if the invoice type is **Header-only**. A maximum of five invoice lines are shown per page. Users can navigate through the pages by using the left and right arrow buttons in the lower-right corner of the interface.
-- The **Charges** card and **Sales tax** show the table for charges and sales tax on the document header. If there are no charges and sales tax line, both cards are not displayed. Users can click **Show more** to display the cards. Users can manually add the charges and sales tax by clicking **Add**. 
-
-  a) The **Charges code** has to be assigned before transferring the invoice to Dynamics 365 Finance. The charges lines will be imported with the invoice header and lines by leveraging the data entity **Header vendor invoice charges**.
-
-  b) When the value of **Total sales tax** is null or zero and multiples sales tax lines are defined, the sum of the sales tax amount will be automatically calculated and populated in the **Total sales tax** field in the invoice header. When the **Validate total sales tax amount** parameter is enabled, the consistency between the sum of sales tax amount and the total sales tax amount are validated. If no sales tax line is defined, the validation will be skipped. 
+        - The **Charges code** value must be assigned before the invoice can be transferred to Dynamics 365 Finance. The charges lines will be imported together with the invoice header and lines by using the **Header vendor invoice charges** data entity.
+        - If the value of the **Total sales tax** field is null or zero, and multiple sales tax lines are defined, the sum of the sales tax amount is automatically calculated and entered in the **Total sales tax** field on the invoice header. If the **Validate total sales tax amount** parameter is enabled, the consistency between the sum of the sales tax amount and the total sales tax amount is validated. If no sales tax line is defined, the validation is skipped. 
 
 ## Captured invoice statuses
 
@@ -94,7 +92,7 @@ In the **Captured invoices** list, the legal entity might be missing because it 
 2. Select the legal entity in the dropdown list.
 3. Select **Save**.
 
-Correct assignment of the legal entity ensures that AP clerks can view the status of the invoice that they are responsible for.
+Correct assignment of the legal entity ensures that Accounts payable (AP) clerks can view the status of the invoice that they are responsible for.
 
 ## Classify an invoice
 
@@ -112,13 +110,13 @@ The derivation and validation logic is triggered again immediately after the use
 
 An invoice document that has been captured might require manual review because of errors or warnings. In the side-by-side viewer, the document header will show a status of **Captured**, and the current version will be **Original Version**.
 
-The invoice header information (legal entity, vendor account, invoice type) must be complete before users can start to review the invoice.
+The invoice header information (legal entity, vendor account, and invoice type) must be complete before users can start to review the invoice.
 
 When a user selects **Start review**, the **Status** field is updated to **In review**, and the **Current version** field is updated to **Modified version**. The invoice form is then in edit mode. 
 
-AP clerk can enter values for invoice header or add/edit/delete lines in the **Invoice lines**, **Charges**, and **Sales tax** fields. Clicking **Remove all** will delete all the invoice lines.
+The AP clerk can enter values for the invoice header. Alternatively, they can add, edit, or delete lines in the **Invoice lines**, **Charges**, and **Sales tax** fields. By selecting **Remove all**, they can delete all the invoice lines.
 
-By clicking the top-right icon in the document preview pane, the invoice will be in mapping mode. AP clerk can then correct/add the mapping by selecting the key-value pair and the **Mapped invoice** field. After saving the changes, it will extract the value and apply to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies the same logic from invoices from the same vendor.
+The AP clerk can select the upper-right icon in the document preview pane to put the invoice into mapping mode. The AP clerk can then correct or add the mapping by selecting the key-value pair and the **Mapped invoice** field. After the changes are saved, the value is extracted and applied to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies the same logic to invoices from the same vendor.
 
 ## Derivation and validation logic
 
@@ -134,10 +132,10 @@ The entities include legal entity, vendor account, and item number. If derivatio
     2. Derived vendor account
     3. Item description or external item number
 
-4. **Currency code** – The currency code has to be determined before transferring the invoice from invoice capture to Dynamics 365 Finance.
-   
-    1. When an invoice associated with purchase order (PO invoice or Header-only invoice), the currency code between invoice and purchase order must be the same. When no currency code returned from the recognition result, the currency code will default from the purchase order. 
-    2. A cost invoice can select to derive the currency code from the vendor master data by selecting the **Derive currency code for cost invoice** parameter.
+4. **Currency code** – The currency code must be determined before the invoice can be transferred from Invoice capture to Dynamics 365 Finance.
+
+    - If an invoice is associated with a purchase order (PO invoice or Header-only invoice), the currency code between the invoice and the purchase order must be the same. If no currency code is returned from the recognition result, the currency code from the purchase order is entered by default.
+    - If you want a cost invoice to derive the currency code from the vendor master data, select the **Derive currency code for cost invoice** parameter.
 
 After the fields are derived, the following additional validation checks are run:
 
@@ -171,22 +169,22 @@ When users complete their review, if the invoice contains no errors, they can se
 - If the invoice is successfully generated, the status of captured invoice is **Complete**.
 
 There are two ways to transfer the complete invoice:
-- If invoice transfer is triggered manually, it will use the synchronous mode. 
-- If the invoice transfer is triggered automatically through the touchless process, it will be submitted into the awaiting list and the **Transfer invoices from invoice capture** will process these invoices.
 
-## Status
-1. **In Processing** - The invoice has been successfully captured and is currently being processed for creation in the captured invoices section. It's not allowed to update the invoices with this status.
-   
-2. **Captured** - The invoice is ready for further action. Account payable (AP) clerk can use the classify invoice function to determine the legal entity, vendor account, and invoice type if needed. 
-   
-3. **In Review** - The invoice is being reviewed in a modified mode. The Accounts Payable (AP) clerk has the following options:
-    1. Assign correct values for entity details such as items, and procurement categories.
-    2. Choose the correct purchase order number.
-    3. Disregard any confidence score warnings or errors.
-    4. Correct the invoice context.
+- If invoice transfer is manually triggered, it uses the synchronous mode.
+- If the invoice transfer is automatically triggered through the touchless process, it's submitted to the awaiting list, and **Transfer invoices from invoice capture** will process the invoices.
 
-4. **Verified** - The invoice has been reviewed, doesn't contain any errors and is ready for transfer. Click **Transfer** to move the invoice from invoice capture to Dynamics 365 Finance.
-5. **Transferred** - The invoice has been successfully transferred to Dynamics 365 Finance. Click **Dynamics 365 Finance** to navigate to either the pending vendor invoice section or the invoice journal based on the Invoice capture settings to check the transferred result.
-6. **Voided** - The invoice is no longer needed and is obsolete. All the records and attached invoice files will be permanently deleted.
-7. **Awaiting** - The invoice is submitted to the waiting list to be picked up by the automation job in Dynamics 365 Finance for further processing. 
+## Statuses
 
+1. **In Processing** – The invoice has been successfully captured and is currently being processed for creation in the **Captured invoices** section. You can't update invoices that have this status.
+2. **Captured** – The invoice is ready for further action. The AP clerk can use the **Classify invoice** function to specify the legal entity, vendor account, and invoice type as required.
+3. **In Review** – The invoice is being reviewed in a modified mode. The AP clerk has the following options:
+
+    - Assign correct values for entity details such as items and procurement categories.
+    - Select the correct purchase order number.
+    - Disregard any confidence score warnings or errors.
+    - Correct the invoice context.
+
+4. **Verified** – The invoice has been reviewed, doesn't contain any errors, and is ready for transfer. Select **Transfer** to move the invoice from Invoice capture to Dynamics 365 Finance.
+5. **Transferred** – The invoice has been successfully transferred to Dynamics 365 Finance. Select **Dynamics 365 Finance** to go to either the **Pending vendor invoice** section or the invoice journal (based on the Invoice capture settings), so that you can check the transferred result.
+6. **Voided** – The invoice is no longer needed and is obsolete. All the records and attached invoice files will be permanently deleted.
+7. **Awaiting** – The invoice has been submitted to the waiting list so that the automation job in Dynamics 365 Finance can pick it up for further processing.
