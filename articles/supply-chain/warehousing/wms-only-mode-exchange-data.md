@@ -70,6 +70,7 @@ Several out-of-box business events are supported for warehouse integration. The 
 |---|---|
 | `InventCountingJournalPostedBusinessEvent` | Counting journal posted |
 | `WHSSourceSystemInventoryOnhandReportBusinessEvent` | Source system on-hand inventory report created |
+| `WHSInventoryUpdateLogBusinessEvent` | Warehouse inventory update log updated |
 | `WHSOutboundNotificationCreatedBusinessEvent` | Outbound warehouse notification created |
 | `WHSShipmentOrderMessageChangedStatusBusinessEvent` | Shipment order message status updated |
 | `WHSShipmentPackingSlipJournalModifiedBusinessEvent` | Shipment packing slip updated |
@@ -150,3 +151,9 @@ The external system will be informed about the available data via the `WHSSource
 
 > [!TIP]
 > If you run the **Create source system on-hand inventory** report as a recurring batch job, the **As of date** value is ignored, and data is generated based on the current processing date. For example, you set up the recurrence so that it has a **Start date** value of yesterday, and you set the job to run once per day. In this case, every day, the batch job automatically generates on-hand inventory data for the previous day.
+
+## Warehouse inventory update logs
+
+For integrations that require very quick on-hand inventory synchronization processes, you can use the *Warehouse inventory update log*. This log can collect all the inventory transaction updates that lead to on-hand updates that are of interest for the external systems. For example, you might have an external system that handles information about inventory status changes.
+
+By default, the *Publish warehouse inventory update log updates* background process is set to run every 10 minutes. It creates data that external systems can consume by using the `WarehouseInventoryUpdateLogs` entity. The `WHSInventoryUpdateLogBusinessEvent` business event can be used as part of this process.
