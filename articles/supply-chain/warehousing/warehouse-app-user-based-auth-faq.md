@@ -30,6 +30,7 @@ More information about user-based authentication and the deprecation of service-
 - [User-based authentication](warehouse-app-authenticate-user-based.md)
 - [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
+- [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md)
 
 ## Why is Microsoft deprecating service-based authentication for the Warehouse Management mobile app?
 
@@ -37,13 +38,13 @@ Service-based authentication is less secure than user-based authentication for c
 
 ## Is service-based authentication being deprecated everywhere?
 
-No. Service-based authentication only being for the Warehouse Management mobile app. It will continue to be supported for other applications.
+No. Service-based authentication only being deprecated for the Warehouse Management mobile app. It will continue to be supported for other applications.
 
 ## In which version of the mobile app will service-based authentication be removed?
 
 Starting with version 3.0, the Warehouse Management mobile app will no longer support service-based authentication, so existing certificates and client secrets will no longer work.
 
-Older versions of the mobile app will continue to work and will continue support service-based authentication, even after version 3.0 is released. However, we strongly recommend that you switch to user-based authentication as soon as possible. If you use autoupdate from your app stores (such as Microsoft Store, Google Play, or Apple App Store), you'll automatically get the latest version of the mobile app, and service-based authentication will stop working when version 3.0 is released.
+Older versions of the mobile app will continue to work and will continue support service-based authentication, even after version 3.0 is released. However, we strongly recommend that you switch to user-based authentication as soon as possible. Devices set to autoupdate apps from app stores (such as Microsoft Store, Google Play, or Apple App Store) will automatically get the latest version of the mobile app, so service-based authentication will stop working on these devices soon after version 3.0 is released.
 
 ## What if I forget about it?
 
