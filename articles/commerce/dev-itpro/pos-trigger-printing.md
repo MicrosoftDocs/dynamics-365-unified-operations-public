@@ -2,7 +2,7 @@
 title: Store Commerce app triggers and printing
 description: This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 11/01/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,7 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                   | Type                    | Description                                                        |Release    |
 |---------------------------|-------------------------|--------------------------------------------------------------------|-----------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before "Create customer" form is opened.             |	 |
+| PreCustomerAddTrigger     | Cancelable              | Executed before the **Create customer** form is opened.             |	 |
 | PostCustomerAddTrigger    | Non-cancelable          | Executed after the customer is created.              |	 |
 | PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |	 |
 | PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |	 |
@@ -69,7 +69,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |	 |
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |	 |
-| PreCustomerSaveTrigger  | Cancelable          | Executed after user clicks the "Save" button and before the customer is created or updated. `isNewCustomer` in the option indicates whether the operation is creating new customer or editing existing customer.     |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed after user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating new customer or editing an existing customer.     |	 |
 | PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created or updated.       |	 |
 | PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
