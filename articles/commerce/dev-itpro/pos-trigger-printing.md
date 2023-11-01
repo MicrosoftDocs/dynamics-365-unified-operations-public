@@ -189,8 +189,8 @@ The following table lists the available triggers and denotes whether they can be
 | PreConfirmReturnTransactionTrigger | Cancelable     | Executed before the return transaction is confirmed.  |
 | PreReturnTransactionTrigger        | Cancelable     | Executed before the return transaction is processed. |
 | PostReturnTransactionTrigger       | Non-cancelable | Executed after the return transaction is processed.   |
-| PreEndTransactionTrigger           | Cancelable     | Executed before the end transaction request is called to commit the changes to DB and close the transaction. |
-| PostEndTransactionTrigger          | Non-cancelable | Executed after the end transaction request is called to commit the changes to DB and close the transaction.  |
+| PreEndTransactionTrigger           | Cancelable     | Executed before the end transaction request is called to commit the changes to the database and close the transaction. |
+| PostEndTransactionTrigger          | Non-cancelable | Executed after the end transaction request is called to commit the changes to the database and close the transaction.  |
 | PreVoidTransactionTrigger          | Cancelable     | Executed before the transaction is voided.         |
 | PostVoidTransactionTrigger         | Non-cancelable | Executed after the transaction is voided.        |
 | PreSuspendTransactionTrigger       | Cancelable     | Executed before the transaction is suspended.   
