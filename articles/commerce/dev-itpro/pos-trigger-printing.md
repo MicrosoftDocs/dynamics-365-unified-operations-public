@@ -119,8 +119,8 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                    | Type       | Description                                                                                                     |
 |----------------------------|------------|--------|
-| PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed form the show journal screen or receipt view screen. |
-| PostReceiptPromptTrigger   | Non-cancelable | Executed after the receipt prompt - Do you want to print or not print receipt. |
+| PrePrintReceiptCopyTrigger | Cancelable | Executed before the receipt copy is printed from the show journal screen or receipt view screen. |
+| PostReceiptPromptTrigger   | Non-cancelable | Executed after the receipt prompt (for example, "Do you want to print the receipt?"). |
 
 ## Product triggers
 
