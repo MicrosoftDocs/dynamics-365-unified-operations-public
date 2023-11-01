@@ -51,10 +51,19 @@ The following table shows the roles that are required to set up and use the Invo
 |------|---------|---------|------------|
 | Administrator | <ul><li>Set up environments in Microsoft Power Platform.</li><li>Deploy solutions in Microsoft Power Platform.</li><li>Set up connections between Dynamics 365 and AI Builder.</li><li>Set up Azure Data Lake Storage locations.</li><li>Install Invoice capture.</li></ul> | <ul><li>Dynamics 365</li><li>Microsoft Power Platform</li><li>Azure Data Lake Storage</li></ul> | <ul><li>Dynamics 365 administrator</li><li>Power Platform administrator</li><li>Storage Blob data owner</li></ul> |
 | Environment maker | <ul><li>Create custom AI models, and create flows in Power Automate.</li></ul> | <ul><li>Microsoft Power Platform</li></ul> | <ul><li>Environment makers</li></ul> |
-| AP admin | <ul><li>Set up and configure Invoice capture.</li></ul> | <ul><li>Microsoft Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts Payable admin</li><li>InvoiceCaptureOperator</li></ul> |
-| AP clerk | <ul><li>Review and correct captured invoices in Invoice capture.</li></ul> | <ul><li>Invoice capture in Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts payable clerk</li><li>InvoiceCaptureOperator</li></ul> |
+| AP admin | <ul><li>Set up and configure Invoice capture.</li></ul> | <ul><li>Microsoft Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts Payable admin role</li><li>InvoiceCaptureOperator</li></ul> |
+| AP clerk | <ul><li>Review and correct captured invoices in Invoice capture.</li></ul> | <ul><li>Invoice capture in Power Platform</li><li>Dynamics 365 Finance</li></ul> | <ul><li>Accounts payable clerk role</li><li>InvoiceCaptureOperator</li></ul> |
 
 The **InvoiceCaptureOperator** role must be included in the role settings to successfully run the derivation and validation logic in Invoice capture, and to transfer the invoice to Dynamics 365 Finance. For a touchless scenario, the role must be added to the corresponding flow user on the finance and operations apps side. 
 
 > [!NOTE]
 > The **Environment maker** role must be assigned to the Accounts payable administrator if they create channels in Invoice capture.
+
+## License
+To use Invoice capture solution, licenses need to be considered for Dynamics 365 Finance customers:
+-	Power Apps license (per user) 
+If users want to access the Invoice capture, they have to gain the access to Power Apps first. 
+-	Azure Data Lake Storage subscription 
+Normally, Dynamics 365 Finance customers don't need to subscribe to additional Azure Data Lake storage if the entitled 20G Dataverse file license is sufficient to persist the original invoice documents. However, different apps will share this Dataverse file storage. Therefore, they might need to make additional subscription if the entitled Dataverse file capacity is not sufficient. The same applies for Dataverse database storage (Default 10GB) to persist with the captured invoice data.
+-	Invoice processing fee based on number of invoices
+Dynamics 365 Finance customers will be entitled to 100 invoice capture transactions/tenant/month. If customers need additional transactions, they need to purchase Electronic Invoicing SKU which costs 300 USD for 1K transactions/tenant/month. The transaction capacity is use-it-or-lose-it on a monthly basis, and customers will need to purchase for peak capacity.
