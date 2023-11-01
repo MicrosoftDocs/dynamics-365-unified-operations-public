@@ -91,7 +91,7 @@ To install Invoice capture, follow this step.
 > After installation, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
 
 ## Upgrade the Invoice capture solution
-When a new solution is available, it will remind the user of the availability of the new release version and customers can follow the steps below to complete the upgrade:
+When a new solution is available, the user will be notified of the availability of the new version. Follow the steps below to complete the upgrade:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
 2. Select **Resource \> Dynamic 365 apps**.
