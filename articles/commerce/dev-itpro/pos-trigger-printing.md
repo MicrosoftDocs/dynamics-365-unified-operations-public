@@ -690,7 +690,7 @@ This section explains how to override the existing CRT request to print a receip
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.
 5. Click **Designer** to open the receipt designer.
 6. Follow the instructions if prompted to install. Enter the Azure Active Directory (AAD) credentials to launch the designer.
-7. Drag and drop the required field into the header, lines, or footer. Or, copy the from existing receipt format by using the copy feature and then edit it.
+7. Drag and drop the required field into the header, lines, or footer. Or, copy from the existing receipt format by using the copy feature and then edit it.
 8. Click **Save**.
 9. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Receipt profiles**.
 10. Select the **Email receipt** profile or the that profile you store. Click the **Add** button in the **General** tab.
