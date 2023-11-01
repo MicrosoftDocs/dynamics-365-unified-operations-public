@@ -58,7 +58,10 @@ Before you install Invoice capture, complete the following setup in Invoice capt
    By default, the option **Sync all vendors** is enabled. This option synchronizes any changes or additions to vendors within onboarded legal entities from Dynamics 365 finance and operations to Invoice capture in real-time. Manual vendor synchronization is needed for each individual legal entity to avoid potential failure due to a virtual entity bottleneck with larger data volume.
    
 3. Select whether an invoice attachment should be transferred together with the invoice from Invoice capture.
-4. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
+
+   When the parameter is enabled, please make sure the default document file is assigned to the field “File” under Organization administration > Document management > Default document types.
+   
+5. Maintain the mapping relationship between the invoice type in Invoice capture and the invoice framework to create the invoice in Dynamics 365 Finance.
 
     In the current version, the following options are available.
 
@@ -88,6 +91,7 @@ To install Invoice capture, follow this step.
 > After installation, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
 
 ## Upgrade the Invoice capture solution
+When a new solution is available, it will remind the user of the availability of the new release version and customers can follow the steps below to complete the upgrade:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
 2. Select **Resource \> Dynamic 365 apps**.
