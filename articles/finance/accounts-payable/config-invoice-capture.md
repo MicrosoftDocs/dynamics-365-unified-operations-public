@@ -46,10 +46,9 @@ After the Invoice capture solution is installed, default configurations for usin
 6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
 
 ## Manage processing rules
-In invoice capture processing, different derivation rules and derivation rules are applied to assure the completeness and correctness of the invoices. Considering some aren't applicable to all the customers, it uses additional parameters to enable/disable the logic.  
-1.	Format purchase order
-When the parameter is enabled, it checks the number sequence settings in Dynamics 365 Finance and format the purchase order number accordingly. This can increase the touchless rate when the purchase order number doesn’t follow the same format as the one set in the number sequence settings. 
-Here are the supported format examples:
+In invoice capture processing, different derivation rules are applied to assure the completeness and correctness of the invoices. Considering some aren't applicable to all the customers, it uses the following parameters to enable/disable the logic: 
+ - **Format purchase order** - Select this parameter to check the number sequence settings in Dynamics 365 Finance and format the purchase order number accordingly. This can increase the touchless rate when the purchase order number doesn’t follow the same format as the one set in the number sequence settings. 
+Supported format examples:
 - Purchase order number: "125", Format: "########", Formatted purchase order number: "00000125"
 - Purchase order number: "00125", Format: "########", Formatted purchase order number: "00000125"
 - Purchase order number: "125", Format: "USMF-########", Formatted purchase order number: "USMF-00000125"
@@ -57,19 +56,16 @@ Here are the supported format examples:
 - Purchase order number: "P.O.125", Format: "USMF-########", Formatted purchase order number: "USMF-00000125"
 - Purchase order number: "125", Format: "PO-########", Formatted purchase order number: "PO-00000125"
 
-2.	Derive currency code for cost invoice
-When the parameter is enabled, it will automatically derive the currency code from the invoice master data on Dynamics 365 Finance side. The logic is only applied for cost invoices as the currency code has to be identical to the currency code on the purchase order.
+ - **Derive currency code for cost invoice** - Select this parameter to automatically derive the currency code from invoice master data in Dynamics 365 Finance. The logic is only applied for cost invoices as the currency code has to be identical to the currency code on the purchase order.
 
-3.	Validate total sales tax amount
-It validates the consistency between the sum of the sales tax amount in sales tax card and the total sales tax amount. When there is no sales tax line, the validation logic is skipped. 
+ - **Validate total sales tax amount** - This parameter validates the consistency between the sales tax amount in sales tax card and the total sales tax amount. If there's no sales tax line, the validation logic is skipped. 
 
-4.	Validate total amount
-This rule ensures alignment between the calculated total invoice amount and the captured total amount. First, we need to ensure the line amount on each line and the total sales tax amount before applying the equation: 
-- If line amount has zero or null value, it sets the line net amount = unit price x qty
-- If total sale tax has zero or null value, it sums the sales tax lines as total sales tax.
+ - **Validate total amount** - Confirm alignment between the calculated total invoice amount and the captured total amount.  
+- If line amount has zero or null value, the line net amount will be set to (unit price x qty).
+- If total sale tax has zero or null value, the sales tax lines will be summed as total sales tax.
 Total amount == Sum (line amount) + Sum (charge lines) - ABS(Discount) + Total sales tax
 
-In case there is no invoice line, or the sum of line amount is zero, the total amount validation is skipped. 
+If there's no invoice line, or the sum of line amount is zero, the total amount validation is skipped. 
 
 
 ## Manage file filters (optional)
