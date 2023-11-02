@@ -167,19 +167,19 @@ With Commerce version 10.0.38, all cash management operations support foreign cu
 To configure allowing cash management across multiple currencies to track currency movements across various transactions, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Stores \> All stores**.
-2. Select the store for which you want to allow cash management across multiple currencies.
-3. Select the **Set up** tab, and then select **Cash declaration** to open the supported denominations across various currencies for the store, as shown in the following example image.
+1. Select the store for which you want to allow cash management across multiple currencies.
+1. Select the **Set up** tab, and then select **Cash declaration** to open the supported denominations across various currencies for the store, as shown in the following example image.
     ![Add denominations for the currencies](./media/currencies.png)
-4. Add the required denominations for the currencies to be tracked along with the store's default currency.
-5. Go to the store details form and set the **Start amount calculation** configuration to **Sum**, as shown in the following example image.
+1. Add the required denominations for the currencies to be tracked along with the store's default currency.
+1. Go to the store details form and set the **Start amount calculation** configuration to **Sum**, as shown in the following example image.
     ![Start amount calculation configuration on the store details form](./media/declarestartamountsetup.png)
-6. Run the **1070 - Channel configuration** job.
-7. Navigate to POS for the store for which you want to allow cash management across multiple currencies.
-8. Run the **Declare start amount** operation.
-9. Select **Count** to open the supported denominations.
-10. Select the filter symbol, select the desired currency, enter the start amount, and then select **Save**.
-11. Repeat the above process to add the start amount for all desired currencies. The configuration described in step 5 ensures that the various amounts across multiple currencies are added to calculate the start amount. Only one currency amount can be added per transaction, so attempting to add start amounts for multiple currencies in a single transaction will result in an error. Similar experiences are applicable for the **Float tender** and **Remove tender** operations.
-12. During the business day, you can remove the currency balance from the cash drawers by using the **Safe drop** and **Bank drop** operations.
-13. At the end of the business day, you can use the **Tender declare** operation to record the totals across all currencies. The **Tender declare** operation supports recording the data across multiple currencies in a single transaction, so it isn't necessary to record the totals one currency at a time.  
+1. Run the **1070 - Channel configuration** job.
+1. Navigate to POS for the store for which you want to allow cash management across multiple currencies.
+1. Run the **Declare start amount** operation.
+1. Select **Count** to open the supported denominations.
+1. Select the filter symbol, select the desired currency, enter the start amount, and then select **Save**.
+1. Repeat the above process to add the start amount for all desired currencies. The configuration described in step 5 ensures that the various amounts across multiple currencies are added to calculate the start amount. Only one currency amount can be added per transaction, so attempting to add start amounts for multiple currencies in a single transaction will result in an error. Similar experiences are applicable for the **Float tender** and **Remove tender** operations.
+1. During the business day, you can remove the currency balance from the cash drawers by using the **Safe drop** and **Bank drop** operations.
+1. At the end of the business day, you can use the **Tender declare** operation to record the totals across all currencies. The **Tender declare** operation supports recording the data across multiple currencies in a single transaction, so it isn't necessary to record the totals one currency at a time.  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
