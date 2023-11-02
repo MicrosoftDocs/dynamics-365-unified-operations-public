@@ -152,6 +152,9 @@ In this example, the partition schema is ByLocation, the basic partition dimensi
 
 Please go to sections [reservation mappings](#configure-reservation-mappings) and [reservation hierarchy](#configure-reservation-dimensions) for details.
 
+> [!IMPORTANT]
+> The default soft-reservation configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+
 ## Use the reservation feature in Inventory Visibility
 
 When you call the reservation API, the system marks the reservation of the specified goods and quantities.
@@ -206,7 +209,7 @@ Authorization: "Bearer {access_token}"
         "SizeId": "small"
     },
     "quantityDataSource": "iv",
-    "modifier": "softreservphysical",
+    "modifier": "softreserved",
     "quantity": 1,
     "ifCheckAvailForReserv": true
 }

@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/17/2023
+ms.date: 09/19/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -15,13 +15,12 @@ ms.custom: bap-template
 # Asset Management mobile app overview
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 The Asset Management mobile app provides the following capabilities for workers and organizations that use Asset Management for Microsoft Dynamics 365 Supply Chain Management:
 
 - **Manage work orders.** Maintenance workers use work orders as a daily to-do list that provides the information that they need to complete their planned maintenance tasks. In the app, workers can search for work orders that have been assigned to them. They then use the app to record their progress, so that the system can track labor, materials, and services for the work that's done. Workers can process work orders and perform tasks such as updating checklist items, registering time and materials, and viewing and adding notes.
 - **Create maintenance requests.** Administrators can use the role-based security setup in Supply Chain Management to grant workers permission to create new maintenance requests. Workers who receive this permission will then be able to use the mobile app to proactively request maintenance of assets.
+- **Create work orders.** Maintenance workers can create new work orders from scratch, or from existing work orders that need further work in the future.
 
 To use the app, you must have a fully implemented setup of Asset Management in your Supply Chain Management environment.
 

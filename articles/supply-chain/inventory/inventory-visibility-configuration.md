@@ -185,7 +185,7 @@ Customers who want to use external data sources in the data source can take adva
 
 Be sure to synchronize with the database after creating the extensions in order for the custom fields to be added in the `InventSum` table. You can then refer to the "Dimensions" section earlier in this article, to map your custom dimensions to any of the eight extended dimensions in `BaseDimensions` in Inventory.
 
-> [!NOTE] 
+> [!NOTE]
 > For additional details about creating extensions, see [Extensibility home page](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md).
 
 ### Calculated measures
@@ -450,6 +450,9 @@ After you've completed the configuration, you must commit all the changes to Inv
 
 During its initialization stage, Inventory Visibility sets up a default configuration, which is detailed here. You can modify this configuration as you require.
 
+> [!IMPORTANT]
+> The default configuration has evolved through various version iterations. It's possible that your sandbox environment was initially set up with an outdated default configuration, while your production environment was initialized with the latest version of the default configuration. If you've customized your third-party system based on an outdated default configuration, it may encounter issues when your production environment goes live, especially if you haven't reviewed and adjusted the configuration. To prevent this scenario, we recommend thoroughly reviewing and updating your draft and runtime configurations before transitioning your production environment.
+
 ### Data source configuration
 
 #### Configuration of the iv data source
@@ -461,90 +464,7 @@ This section describes how the `iv` data source is configured.
 The following physical measures are configured for the `iv` data source:
 
 - `Ordered`
-- `SoftReservPhysical`
-- `SoftReservOrdered`
-- `ReservOrdered`
-- `ReservPhysical`
-
-##### OrderedTotal calculated measure
-
-The `OrderedTotal` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `Ordered` |
-| Addition | `fno` | `Arrived` |
-| Addition | `iv` | `Ordered` |
-
-##### OnHand calculated measure
-
-The `OnHand` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-##### ReservedTotal calculated measure
-
-The `ReservedTotal` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
-
-##### SoftReserved calculated measure
-
-The `SoftReserved` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-
-##### HardReserved calculated measure
-
-The `HardReserved` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
-
-##### OpenOrder calculated measure
-
-The `OpenOrder` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `OnOrder` |
-| Addition | `iom` | `OnOrder` |
-
-##### OnHandAvailable calculated measure
-
-The `OnHandAvailable` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `fno` | `ReservPhysical` |
-| Subtraction | `iv` | `SoftReservPhysical` |
-| Subtraction | `pos` | `PosOutbound` |
+- `Softreserved`
 
 ##### AvailableToReserve calculated measure
 
@@ -553,51 +473,32 @@ The `AvailableToReserve` calculated measure is configured for the `iv` data sour
 | Calculation type | Data source | Physical measure |
 |---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
 | Addition | `fno` | `Ordered` |
 | Addition | `fno` | `Arrived` |
+| Addition | `pos` | `Inbound` |
 | Addition | `iv` | `Ordered` |
 | Subtraction | `fno` | `ReservPhysical` |
-| Subtraction | `fno` | `ReservOrdered` |
-| Subtraction | `iv` | `SoftReservPhysical` |
-| Subtraction | `iv` | `SoftReservOrdered` |
-| Subtraction | `iv` | `ReservPhysical` |
-| Subtraction | `iv` | `ReservOrdered` |
-| Subtraction | `pos` | `PosOutbound` |
+| Subtraction | `iv` | `Softreserved` |
+| Subtraction | `pos` | `Outbound` |
+| Subtraction | `fno` | `Softreserved` |
 
-##### InventorySupply calculated measure
+##### TotalAvailable calculated measure
 
-The `InventorySupply` calculated measure is configured for the `iv` data source as shown in the following table.
+The `TotalAvailable` calculated measure is configured for the `iv` data source as shown in the following table.
 
 | Calculation type | Data source | Physical measure |
 |---|---|---|
-| Addition | `fno` | `Ordered` |
-| Addition | `fno` | `Arrived` |
-| Addition | `iv` | `Ordered` |
+| Addition | `fno` | `AvailOrdered` |
+| Subtraction | `iv` | `Softreserved` |
+| Subtraction | `@iv` | `@allocated` |
+
+##### TotalOnHand calculated measure
+
+The `TotalOnHand` calculated measure is configured for the `iv` data source as shown in the following table.
+
+| Calculation type | Data source | Physical measure |
+|---|---|---|
 | Addition | `fno` | `PhysicalInvent` |
-| Addition | `iom` | `OnHand` |
-| Addition | `erp` | `Unrestricted` |
-| Addition | `erp` | `QualityInspection` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-##### InventoryDemand calculated measure
-
-The `InventoryDemand` calculated measure is configured for the `iv` data source as shown in the following table.
-
-| Calculation type | Data source | Physical measure |
-|---|---|---|
-| Addition | `fno` | `OnOrder` |
-| Addition | `iom` | `OnOrder` |
-| Addition | `iv` | `SoftReservPhysical` |
-| Addition | `iv` | `SoftReservOrdered` |
-| Addition | `fno` | `ReservPhysical` |
-| Addition | `fno` | `ReservOrdered` |
-| Addition | `iv` | `ReservPhysical` |
-| Addition | `iv` | `ReservOrdered` |
 
 #### Configuration of the "fno" data source
 
@@ -652,6 +553,8 @@ The following physical measures are configured for the `fno` data source:
 - `received`
 - `ordered`
 - `ReservOrdered`
+- `OrderedSum`
+- `SoftReserved`
 
 #### Configuration of the "pos" data source
 
@@ -661,8 +564,8 @@ This section describes how the data source `pos` is configured.
 
 The following physical measures are configured for the `pos` data source:
 
-- `PosInbound`
-- `PosOutbound`
+- `Inbound`
+- `Outbound`
 
 ##### AvailQuantity calculated measure
 
@@ -671,22 +574,8 @@ The `AvailQuantity` calculated measure is configured for the `pos` data source a
 | Calculation type | Data source | Physical measure |
 |---|---|---|
 | Addition | `fno` | `AvailPhysical` |
-| Addition | `pos` | `PosInbound` |
-| Subtraction | `pos` | `PosOutbound` |
-
-#### Configuration of the "iom" data source
-
-The following physical measures are configured for the `iom` (intelligent order management) data source:
-
-- `OnOrder`
-- `OnHand`
-
-#### Configuration of the "erp" data source
-
-The following physical measures are configured for the `erp` (enterprise resource planning) data source:
-
-- `Unrestricted`
-- `QualityInspection`
+| Addition | `pos` | `Inbound` |
+| Subtraction | `pos` | `Outbound` |
 
 ### Partition configuration
 

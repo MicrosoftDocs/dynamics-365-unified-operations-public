@@ -2,12 +2,12 @@
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: The article explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
 author: gianugo
-ms.date: 03/05/2020
+ms.date: 09/29/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
+ms.author: josaw
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 
@@ -103,6 +103,20 @@ To simplify use of the extracted NuGet packages, consider using the **NuGet inst
 The following example of NuGet arguments will prevent a subfolder from being created for the package versions and will extract the NuGet packages into **$(Pipeline.Workspace)\\NuGets**.
 
 `-ExcludeVersion -OutputDirectory "$(Pipeline.Workspace)\NuGets"`
+
+> [!NOTE]
+> Because the NuGetInstaller@0 version of the task has been deprecated, Microsoft recommends that you use the NuGetCommand@2 version of the task instead.
+
+To use the NuGetCommand@2 version of the task, follow these steps.
+
+1. Select the **Custom command** option for the task.
+1. In the **Command and arguments** field, add the following command (with the paths replaced):
+
+    `install -Noninteractive <path to packages.config> -ConfigFile <path to nuget.config> -Verbosity Detailed -ExcludeVersion -OutputDirectory <path to output where nugets are installed, for example NugetsPath>`
+
+    For example:
+
+    `install -Noninteractive $(NugetConfigsPath)\packages.config -ConfigFile $(NugetConfigsPath)\nuget.config -Verbosity Detailed -ExcludeVersion -OutputDirectory "$(NugetsPath)"`
 
 To build X++ by using MSBuild, you must supply several arguments. In the pipeline step that builds the solution, you can specify these arguments in the **MSBuild Arguments** field.
 

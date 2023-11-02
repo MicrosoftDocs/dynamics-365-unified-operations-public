@@ -6,7 +6,7 @@ ms.date: 04/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: edupont
 ms.search.region: Global
 ms.author: edupont
@@ -123,7 +123,7 @@ From the **Help** pane, you can access topics that apply to the client. When you
 
 ### Accessing task guides from the Help pane
 
-Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](help-connect.md#adding-task-guides).
+Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](../../dev-itpro/get-started/help-connect.md#adding-task-guides).
 
 <!-- > [!NOTE]
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.

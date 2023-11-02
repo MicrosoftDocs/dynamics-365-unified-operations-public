@@ -49,7 +49,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 - [Set up a retail functionality profile](retail-functionality-profile.md)
 - [Set up an employee address book](new-address-book.md)
 - [Set up a screen layout](pos-screen-layouts.md)
-- [Set up a hardware station](retail-hardware-station-configuration-installation.md)
+- [Set up a hardware station](dev-itpro/retail-hardware-station-configuration-installation.md)
 
 ## Call Center channel prerequisites
 

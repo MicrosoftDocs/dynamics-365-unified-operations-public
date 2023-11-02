@@ -64,7 +64,7 @@ The table also lists features that were previously in public preview, but have c
 | Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | Generally available |
 | Cost management | [Cost calculation level](../cost-management/cost-calculation-level.md) | Generally available |
 | Cost management | Enable user-defined batch number setup for inventory closing reverse | Generally available |
-| Cost management | [Inventory closing progress details](whats-new-scm-10-0-21.md) | Generally available |
+| Cost management | [Inventory closing progress details](../supply-chain-dev/whats-new-scm-10-0-21.md) | Generally available |
 | Cost management | [Options of defaulting financial dimensions for inventory standard cost revaluation](../cost-management/manage-standard-cost-updates.md) | Generally available |
 | Cost management | Inventory value report data clean up | On by default |
 | Cost management | [Inventory value report storage](../cost-management/inventory-value-report-storage.md) | On by default |
@@ -77,7 +77,7 @@ The table also lists features that were previously in public preview, but have c
 | Engineering change management | [Product readiness checks](../engineering-change-management/product-readiness.md) | On by default |
 | Engineering change management | [Variant generation for engineering products](../engineering-change-management/engineering-variants.md) | On by default |
 | Inventory and warehouse management | Navigation to BOM version from BOM lines | Mandatory |
-| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](whats-new-scm-10-0-20.md) | Generally available |
+| Master planning | [Batchable firming and consolidation for planned bulk and pack batch orders](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Master planning | Resource planning with maintenance | Generally available |
 | Master planning | Enable master plan setup wizard features | Mandatory |
 | Master planning | [Forecast model selection on Demand forecast details](../master-planning/manual-adjustments-baseline-forecast.md) | Mandatory |
@@ -86,7 +86,7 @@ The table also lists features that were previously in public preview, but have c
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | On by default |
 | Master planning | [Saved views for planned orders](saved-views-scm.md) | On by default |
 | Procurement and sourcing | Disable Purchase Requisition Distribution Reset Button | Generally available |
-| Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | Generally available |
+| Procurement and sourcing | [Enable resetting procurement related workflows](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Procurement and sourcing | Ability to confirm accepted purchase orders from vendor collaboration in batch | Mandatory |
 | Procurement and sourcing | Purchase agreement Closed status | Mandatory |
 | Procurement and sourcing | Add lines to PO invoices associated with a purchase agreement | On by default |
@@ -115,7 +115,7 @@ The table also lists features that were previously in public preview, but have c
 | Production control | [Asset management functionality for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Job search for the production floor execution interface](../production-control/production-floor-execution-configure.md) | On by default |
 | Production control | [Override default production reservation](../production-control/override-default-reservation-principle.md) | On by default |
-| Production control | [Show full serial, batch, and license plate numbers in the production floor execution interface](whats-new-scm-10-0-21.md) | On by default |
+| Production control | [Show full serial, batch, and license plate numbers in the production floor execution interface](../supply-chain-dev/whats-new-scm-10-0-21.md) | On by default |
 | Sales and marketing | [Sales order details performance enhancement](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Generally available |
 | Sales and marketing | Sales quotation details performance enhancement | Generally available |
 | Sales and marketing | Sales order referenced data export policy | Mandatory |
@@ -132,11 +132,11 @@ The table also lists features that were previously in public preview, but have c
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | Generally available |
 | Warehouse management | License plate receiving history | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Generally available |
-| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Generally available |
+| Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](../supply-chain-dev/whats-new-scm-10-0-19.md) | Generally available |
 | Warehouse management | Scale unit support for warehouse app work lists | Generally available |
 | Warehouse management | Shipment wave label details | Generally available |
-| Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | Generally available |
-| Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | Generally available |
+| Warehouse management | [Use faster API for containers closing/reopening on packing station](../supply-chain-dev/whats-new-scm-10-0-21.md) | Generally available |
+| Warehouse management | [Validate templates selected for replenishment jobs](../supply-chain-dev/whats-new-scm-10-0-20.md) | Generally available |
 | Warehouse management | Allow replenishment template to use existing immediate replenishment work (across units) | Mandatory |
 | Warehouse management | Automatic assigning of the GUIDs on WHS user creation | Mandatory |
 | Warehouse management | Capture product variants and tracking dimensions in the warehousing app during load item receiving | Mandatory |

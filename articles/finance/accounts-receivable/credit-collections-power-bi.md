@@ -12,7 +12,7 @@ ms.technology:
 # optional metadata
 
 ms.search.form:  CustomerCollectionManagerWorkspace
-audience: Application User, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 

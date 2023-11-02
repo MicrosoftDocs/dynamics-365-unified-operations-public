@@ -4,7 +4,7 @@ description: This article describes the integration of product data between fina
 author: t-benebo
 ms.date: 02/23/2023
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: twheeloc
 ms.search.region: global
 ms.author: ramasri

@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/17/2023
+ms.date: 09/19/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -15,8 +15,6 @@ ms.custom: bap-template
 # Manage work orders using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice. -->
 
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 
@@ -32,7 +30,7 @@ To view and process work orders by using the Asset Management mobile app, you mu
 
 - Your user account in Supply Chain Management must be assigned the *Maintenance worker* security role. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
 - Your user account in Supply Chain Management must be associated with a human resources *Worker* record that's also set up as an Asset Management worker. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
-- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Azure Active Directory (Azure AD) ID.
+- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Microsoft Entra ID username.
 
 ## View the jobs and work orders assigned to you
 

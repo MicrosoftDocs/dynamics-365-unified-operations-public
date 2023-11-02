@@ -25,7 +25,7 @@ This article explains how to reset the Financial reporting data mart for Microso
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
-> To confirm that it's necessary to reset your data mart, see [When to reset a data mart](when-to-reset-data-mart.md).
+> To confirm that it's necessary to reset your data mart, see [When to reset a data mart](../../fin-ops/analytics/when-to-reset-data-mart.md).
 
 > A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this article in the section titled, Export and import report definitions, later in this article.
 
