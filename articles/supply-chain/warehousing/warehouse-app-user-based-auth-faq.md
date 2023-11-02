@@ -52,7 +52,7 @@ Older versions of the mobile app will continue to work and will continue to supp
 
 ## What if I forget that service-based authentication is being removed?
 
-You won't forget. Soon before the scheduled release of Warehouse Management mobile app version 3.0, we plan to add prominent, nonblocking warnings that all app users will receive. You might even be contacted by Microsoft Support soon before the release of Warehouse Management mobile app version 3.0.
+You won't forget. Soon before the scheduled release of Warehouse Management mobile app version 3.0, we plan to add prominent, nonblocking warnings that all app users will receive. Microsoft Support might even contact you soon before the release of Warehouse Management mobile app version 3.0.
 
 ## How and when will the app show pop-up warnings about the authentication method?
 
