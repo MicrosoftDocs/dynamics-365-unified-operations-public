@@ -60,6 +60,7 @@ Follow these steps to enable and configure Demand planning in Supply Chain Manag
     - **Quantity of numbers** – Set the value to *500*.
 
 1. On the Action Pane, select **Save**.
+1. Refresh data entity list: Go to **Data management > Framework parameters > Entity settings > Refresh entity list**. This is needed for ensuring the right import and export data to Dynamics 365 Supply Chain Management. 
 
 ## Security roles and duties
 
