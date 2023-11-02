@@ -2,7 +2,7 @@
 title: Create retail product kits
 description: This article describes how to create retail product kits in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -109,9 +109,9 @@ To set the standard properties for the product kit, follow these steps.
 
 ## Define kit pricing and generate trade agreements
 
-You can price product kits as a whole product or as a sum of the individual components. The base price for each kit component is the price of the product at the time that it was added to the product kit.
+You can price product kits as a whole product, or as a sum of the individual components. The base price for each kit component is the price of the product at the time it was added to the product kit.
 
-If you define a price for the overall kit, the new price is distributed across all the products in the kit. The price adjustment to each product is based on the percentage that each product’s base price contributes to the total base price for the product kit. You can also specify whether there is an additional charge for product substitutes when the customer selects the product substitute instead of the base component. The additional cost is included when the kit price is calculated.
+If you define a price for the overall kit, the new price is distributed across all the products in the kit. The price adjustment to each product is based on the percentage that each product's base price contributes to the total base price for the product kit. You can also specify whether there is an additional charge for product substitutes when the customer selects the product substitute instead of the base component. The additional cost is included when the kit price is calculated.
 
 To define kit pricing and generate trade agreements, follow these steps.
 
