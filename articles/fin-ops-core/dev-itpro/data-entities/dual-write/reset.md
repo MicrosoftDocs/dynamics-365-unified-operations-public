@@ -18,18 +18,19 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-The initial configuration for setting up the dual-write connection between finance and operations apps and Microsoft Power Platform is performed in Microsoft Dynamics Lifecycle Services using the Power Platform Integration setup. For more information on the initial configuration, see [Dual-write setup from Lifecycle Services](./lcs-setup.md). After the initial configuration there might be cases where you want to clear the dual-write connections and configuration and start from scratch, or when you encounter a stuck state. The dual-write platform enables you to reset the dual-write connections in these cases. This clears and resets all connections and configuration enabling you to set up dual-write again for the environment.
+The initial configuration of the dual-write connection between finance and operations apps and Microsoft Power Platform is done in Microsoft Dynamics Lifecycle Services by using the Power Platform integration setup. For more information about this initial configuration, see [Dual-write setup from Lifecycle Services](./lcs-setup.md). After it's done, there might be cases where you want to clear the dual-write connections and configuration, and start again from scratch. Alternatively, you might encounter a stuck state. In these cases, the dual-write platform lets you clear and reset all dual-write connections and configuration, so that you can set up dual-write again for the environment.
 
-There are two options when selecting to perform a reset:
-- **Power Platform Link Dataverse Environment:** Selecting this option clears the dual-write connections between finance and operations apps and Microsoft Dataverse, and reset the connection linking the finance and operations environment with the Microsoft Dataverse environment configured with the [Power Platform Integration](../../power-platform/enable-power-platform-integration.md). If the dual-write connection is currently set up with a Microsoft Dataverse environment other than one that's linked through the Power Platform Integration, that connection is cleared and reset to align the link with the Power Platform Integration. This is the default and recommended option. The Power Platform Integration is intended to link finance and operations apps one-to-one with a Microsoft Dataverse environment enabling tight integration between the two platforms.
-- **Current Dataverse Environment:** Selecting this option clears the dual-write connection and reset the link, creating the dual-write connection with the same Microsoft Dataverse environment to which the finance and operations environment is currently linked. In previous releases, dual-write provided the option to create the dual-write connection to Microsoft Dataverse environments other than one that's linked through the Power Platform Integration. Although this option is no longer available, the option might have been used in your environment. During the reset for dual-write connections, select the **Current Dataverse Environment** option only if you want dual-write connections recreated to link to the current Microsoft Dataverse environment rather than changing the connection to align with the Power Platform Integration.
+You can select between two options when you perform a reset:
+
+- **Power Platform Link Dataverse Environment** – This option is the default and recommended option. It clears the dual-write connections between finance and operations apps and Dataverse, and resets the connection that links the finance and operations environment to the Dataverse environment that's configured with the [Power Platform integration](../../power-platform/enable-power-platform-integration.md). If the dual-write connection is currently set up with a Dataverse environment other than the one that's linked through the Power Platform integration, that connection is cleared and reset to align the link with the Power Platform integration. The Power Platform integration is intended to link finance and operations apps to a Dataverse environment on a one-to-one basis, to enable tight integration between the two platforms.
+- **Current Dataverse Environment** – This option clears the dual-write connection and resets the link to create a dual-write connection with the same Dataverse environment that the finance and operations environment is currently linked to. In previous releases, dual-write provided the option to create the dual-write connection to Dataverse environments other than the one that's linked through the Power Platform integration. Although that option is no longer available, it might have been used in your environment. During the reset for dual-write connections, select the **Current Dataverse Environment** option only if you want to re-create dual-write connections to link to the current Dataverse environment instead of changing the connection to align the link with the Power Platform integration.
 
 > [!NOTE]
-> If the dual-write connection is currently configured linking to a Microsoft Dataverse environment other than that set up with the Power Platform Integration, and you select to reset the connection to link to Microsoft Dataverse environment selected in the Power Platform Integration, there is no option available to reset and return to the previously linked environment. The dual-write connection is permanently aligned with the Power Platform Integration.
+> If the dual-write connection is currently configured to link to a Dataverse environment other than the one that's set up with the Power Platform integration, and you select to reset the connection so that you can link to the Dataverse environment that's selected in the Power Platform integration, no option is available to reset and return to the previously linked environment. The dual-write connection is permanently aligned with the Power Platform integration.
 
 ## Prerequisite
 
-You must stop all dual-write maps prior to performing a reset of dual-write connections.
+You must stop all dual-write maps before you perform a reset of dual-write connections.
 
 ## What does the Reset link button do? 
 
@@ -69,7 +70,7 @@ When you select **Reset link**, the **Reset link to Dataverse** wizard is opened
 4. When you've finished selecting the legal entities, select **Next** to open the **Health check** page.
 5. Select **Next** to open the **Summary** page.
 
-If you forgot to stop the running dual-write maps before you selected the **Reset link** button, then you see another **Force Reset** checkbox on the **Choose environment** page. This checkbox and its associated behavior have been adopted from the **Unlink** functionality because users are familiar with them. You must select this checkbox to proceed further.
+If you forgot to stop the running dual-write maps before you selected the **Reset link** button, another **Force Reset** checkbox appears on the **Choose environment** page. This checkbox and its associated behavior have been adopted from the **Unlink** functionality, because users are familiar with them. You must select this checkbox to proceed.
 
 ![Failed message in the Reset link to Dataverse wizard.](media/reset-image-2.png)
 
@@ -82,7 +83,7 @@ When you select **Reset**, the **Reset link to Dataverse** wizard is opened. The
 - **Current Dataverse Environment** refers to the Dataverse database that's associated with your dual-write connection.
 - **Power Platform Link Dataverse Environment** refers to the Dataverse database that's associated with the Power Platform integration setup for your finance and operations environment. As you'll see, the two values differ.
 
-As for scenario 1, you should select the **Acknowledge Reset** to proceed further. If maps are in **not running** state, then you see a **Force Reset** button for selection.
+As for scenario 1, you should select the **Acknowledge Reset** checkbox to proceed. If maps are in a **not running** state, a **Force Reset** button is available for selection.
 
 ![Choose environment page in the Reset link to Dataverse wizard for scenario 2. Reset Power Platfor link to Dataverse.](media/reset-image-7.png)
 
@@ -106,8 +107,8 @@ When you select **Reset link**, the **Reset link to Dataverse** wizard is opened
 
 **Current Dataverse Environment** refers to the database that's associated with your dual-write connection. Because there won't be any Power Platform integration setup, the reset functionality refreshes the displayed dual-write connection set as-is. If you want to associate the finance and operations environment with a different Dataverse organization, you must redeploy the finance and operations environment.
 
-As for scenario 1, you should select the **Acknowledge Reset** to proceed further. If maps are in **not running** state, then you see a **Force Reset** button for selection.
+As for scenario 1, you should select the **Acknowledge Reset** checkbox to proceed. If maps are in a **not running** state, a **Force Reset** button is available for selection.
 
-![Choose environment page in the Reset link to Dataverse wizard for scenario 4. Reset Link to Dataverse](media/reset-image-6.png)
+![Choose environment page in the Reset link to Dataverse wizard for scenario 4. Reset Link to Dataverse.](media/reset-image-6.png)
 
 On the **Select legal entities** page, select the legal entities that you want to reset your dual-write connection for. When you've finished, select **Next** to open the **Health check** page. Then select **Next** to open the **Summary** page.
