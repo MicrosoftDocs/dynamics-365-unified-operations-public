@@ -20,7 +20,7 @@ This article covers search engine optimization (SEO) considerations for your sit
 
 ## A site that is under development
 
-To ensure that search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\> section of all templates used on your site.
+To ensure that search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](dev-itpro/metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\> section of all templates used on your site.
 
 ```html
 <meta name="robots" content="noindex,nofollow" /> 
@@ -46,7 +46,7 @@ Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) 
 
 [Add script code to site pages to support telemetry](add-telemetry.md)
 
-[Manage Content Security Policy (CSP)](manage-csp.md)
+[Manage Content Security Policy (CSP)](dev-itpro/manage-csp.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

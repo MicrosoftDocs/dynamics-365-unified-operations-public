@@ -6,7 +6,7 @@ ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-audience: Application user, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: richdi

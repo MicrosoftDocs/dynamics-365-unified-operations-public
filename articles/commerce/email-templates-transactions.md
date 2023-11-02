@@ -64,7 +64,7 @@ The packing completed notification type supports the following additional email 
 | `packingslipid`      | The ID of the packing slip for the order that will be picked up. |
 | `confirmationid`      | The order confirmation ID of the order that will be picked up. (This ID is sometimes referred to as the channel reference ID.) |
 
-For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
+For more information about the customer check-in and order lookup features, see [Set up geo detection and redirection](dev-itpro/geo-detection-redirection.md) and [Enable order lookup for guest checkouts](order-lookup-guest.md).
 
 ### Order ready for pickup
 

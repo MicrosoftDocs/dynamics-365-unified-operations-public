@@ -45,7 +45,7 @@ The following features are included in this release. Some of the listed features
 -  Renamed 'Session idle timeout' to 'Session inactivity timeout'<br>- To differentiate the types of session timeouts between maximum user session and inactivity user session, a change in the name was implemented. For more information, see [Set the session inactivity timeout](../sysadmin/session-idle-timeout.md).
 
 -  Removing support for Visual Studio 2015<br>- Version 10.0.16 is the last version to support Visual Studio 2015. For more information, see [
-Removing support for Visual Studio 2015](removed-deprecated-features-platform-updates.md#visual-studio-2015).
+Removing support for Visual Studio 2015](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md#visual-studio-2015).
 
 -  [Email throttling](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/email-throttling)<br>- This feature allows non-interactive email providers to adhere to a per-minute email sending limit, which prevents errors that are currently triggered when the system attempts to send more emails than the provider can handle. When email throttling is enabled, sending limits for Microsoft 365 email providers will be set automatically; manual configuration is required for all other email providers. For more information, see 
 [Configure and send email](../../fin-ops/organization-administration/configure-email.md).
@@ -78,12 +78,12 @@ Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
 

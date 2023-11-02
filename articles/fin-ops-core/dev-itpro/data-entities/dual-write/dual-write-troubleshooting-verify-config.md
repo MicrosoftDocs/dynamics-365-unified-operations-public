@@ -4,7 +4,7 @@ description: This article explains how you can determine whether dual-write is c
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
@@ -14,9 +14,6 @@ ms.search.validFrom: 2020-01-06
 # Verify dual-write configuration in finance and operations apps and Dataverse
 
 [!include [banner](../../includes/banner.md)]
-
-
-
 
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it explains how you can determine whether dual-write is configured in finance and operations apps and in Dataverse.

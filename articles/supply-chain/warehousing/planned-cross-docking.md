@@ -343,5 +343,9 @@ The following illustration shows how the completed cross-docking work might appe
 
 ![Cross-docking work completed.](media/PlannedCrossDockingWork.png "Cross-docking work completed")
 
+> [!NOTE]
+> If you're using [warehouse management only mode](wms-only-mode-overview.md) (which uses inbound and outbound shipment orders), use the [source system setup](wms-only-mode-setup.md#source-systems) to define whether the [release to warehouse process](release-to-warehouse-process.md) should convert cross docking requests (*Outbound shipment order line cross docking*) to markings before it evaluates planned cross-docking templates where the **Demand requirements** field is set to *Marking*.
+>
+> To use this logic, specify the requested cross docking quantities as part of the *Outbound shipment order line cross docking* message data (`OutboundShipmentOrderLineCrossDockMessages`) that's linked to the *Inbound shipment order lines* message data (`InboundShipmentOrderLineMessages`) by setting the same value in the `CrossDockSourceID` field. You can monitor this data on the **Cross dock requests** tab on the **Line details** FastTab of the **Outbound shipment orders** page.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

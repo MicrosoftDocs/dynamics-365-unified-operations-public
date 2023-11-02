@@ -42,9 +42,9 @@ The **Vendor collaboration** mobile workspace keeps vendors informed about new p
 >[!NOTE]
 > The mobile workspace should be used as a supplement to the vendor collaboration web interface, not a replacement for it. 
 
-Your vendors can use the **Vendor collaboration** mobile workspace to view new purchase orders that are sent to them for approval. It shows purchase order information, such as products, quantities, and requested delivery dates. Price information is also available, depending on the configuration of each vendor. 
+Your vendors can use the **Vendor collaboration** mobile workspace to view new purchase orders that are sent to them for approval. It shows purchase order information, such as products, quantities, and requested receipt dates. Price information is also available, depending on the configuration of each vendor. 
 
-A user who signs in as a vendor will see which purchase orders have been responded to, and which purchase orders are still awaiting customer action. For example, a purchase order might be awaiting customer action because the vendor suggested another delivery date, but the customer hasn't yet agreed to that date. The vendor will also see a list of purchase orders that have been confirmed but haven't yet been delivered. 
+A user who signs in as a vendor will see which purchase orders have been responded to, and which purchase orders are still awaiting customer action. For example, a purchase order might be awaiting customer action because the vendor suggested another receipt date, but the customer hasn't yet agreed to that date. The vendor will also see a list of purchase orders that have been confirmed but haven't yet been delivered. 
 
 To respond to a purchase order, the vendor must use the vendor collaboration web interface that is available in the web client. There, the vendor can also get more information about the order, such as document attachments, the delivery address per line, and charges that are associated with the vendor. 
 

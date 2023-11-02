@@ -111,11 +111,7 @@ When the warehouse worker has completed the putaway work, the system records and
 
 ## <a name="receive-complete-confirm"></a>Mark a load as receive complete
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
-<!--KFM: Preview until 10.0.37 GA -->
-
-Workers and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Web client users can do this using the **Load** or **Inbound load planning workbench** page. Workers using the  Warehouse Management mobile app can do it using a menu item set up with an **Activity code** of *Receiving completed confirmation*. In addition to updating the **Load receiving completed date and time** field for the load, workers and users may also be able (or required) to enter a packing slip ID and document date during the *Receiving completed* process (depending how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
+Background processes, workers, and users can run the *Receiving completed* process to indicate that nothing more will be registered against a specific load. Admins can schedule automatic processing by setting up a batch job as described in the following procedure. Web client users can do it by using the **Load** or **Inbound load planning workbench** page. Workers who use the Warehouse Management mobile app can do it by using a menu item that's set up with an **Activity code** value of *Receiving completed confirmation*. In addition to updating the **Load status** and **Load receiving completed date and time** fields for the load, workers and users might also be able (or required) to enter a packing slip ID and document date during the *Receiving completed* process (depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page).
 
 Follow these steps to choose how loads related to purchase orders will be finalized.
 
@@ -128,9 +124,11 @@ Follow these steps to choose how loads related to purchase orders will be finali
 1. Set **Load receiving completed confirmation policy for purchase orders** to one of the following values:
     - *Disabled* – Loads won't indicate whether inbound receiving is complete. With this setting, you run the risk that the *Update product receipts* cost update periodic task could run in the middle of an inbound registration process.
     - *Enabled* – After the *Receiving completed* process is run, loads are updated with a **Load receiving completed date and time** value (and related shipments are assigned a **Packing slip ID**). The *Update product receipts* cost update periodic task checks for these values to make sure it only processes loads that have been completely received, which is especially important if you allow over-receiving or under-receiving.
+    - *Enabled with auto post* – This option works just like the *Enabled* option, but the **Load status** value is also updated to *Received*, and the **Product receipt processing status** field on the load becomes available for use with the subsequent *Product receipt* posting process. You can't use this setting if you allow multiple product receipts per load.
+1. If you set the **Load receiving completed confirmation policy for purchase orders** field to *Enabled with auto post* and want to the *Receiving completed* process to run automatically, go to **Warehouse management \> Periodic tasks  \> Receiving completed** to set up the batch processing schedule. (The **Receiving completed** dialog box is available only when the **Load receiving completed confirmation policy for purchase orders** field is set to *Enabled with auto post*.)
 
 > [!NOTE]
-> You can use the **Load receiving completed date and time** field value as filter criteria for the *Update product receipts* cost update periodic task. Also, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process may be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
+> You can use the **Load status** and **Product receipt processing status** field values as filter criteria for the *Update product receipts* cost update periodic task. In addition, depending on how the **Capture receiving completed packing slip** option is set on the **Warehouse management parameters** page, the purchase order product receipt process might be able to use the recorded packing slip ID as part of the *Update product receipts* periodic task.
 
 ## <a name="post-registered-quantities"></a>Post registered product quantities against purchase orders
 
@@ -251,16 +249,8 @@ To work through the sample scenarios that are described in this section, you mus
 These scenarios require the *Multiple product receipt postings per load* feature and its prerequisite feature. Admins can turn on those features by following these steps.
 
 1. Open the **Feature management** workspace. (For complete details about how to find and use this workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-
-1. Make sure the *Associate purchase order inventory transactions with load* feature is turned on. As of Supply Chain Management version 10.0.21, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Associate purchase order inventory transactions with load*
-
-1. Turn on the *Multiple product receipt postings per load* feature. As of Supply Chain Management version 10.0.36, this feature is mandatory, so it is turned on by default and can't be turned off again. However, the feature is still listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) in the following way:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Multiple product receipt postings per load*
+1. Make sure that the *Associate purchase order inventory transactions with load* feature is turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.21, this feature is mandatory. Therefore, it's turned on by default and can't be turned off.
+1. Make sure that the *Multiple product receipt postings per load* feature is turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.36, this feature is mandatory. Therefore, it's turned on by default and can't be turned off.
 
 #### Enable sample data
 

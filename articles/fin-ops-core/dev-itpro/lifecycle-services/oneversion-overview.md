@@ -4,7 +4,7 @@
 title: One Version service updates overview
 description: This article gives an overview of the various steps that make up the experience for managing service updates initiated by Microsoft as part of One Version.
 author: angelmarshall
-ms.date: 03/02/2023
+ms.date: 09/29/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.custom: bap-template
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
@@ -51,7 +51,7 @@ Customers can select a maintenance window, based on their business constraints. 
 
 [![Update settings tab on the Project settings page.](./media/UpdateSettings-ConfigureUpdates.JPG)](./media/UpdateSettings-ConfigureUpdates.JPG)
 
-Users must opt in to new features and turn them on. All updates are applied first to the user acceptance testing (UAT) environment and then to the production environment. Therefore, customers have time to do any validation that is required. Customers can select the environment that is updated. They can also pause an update for up to three months.
+Users must opt in to new features and turn them on. All updates are applied first to the user acceptance testing (UAT) environment and then to the production environment. Therefore, customers have time to do any validation that is required. Customers can select the environment that is updated. They can also pause for a maximum of one consecutive service update.
 
 ## Notice
 
@@ -83,4 +83,3 @@ Some customers have both external data integrations and internal data integratio
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

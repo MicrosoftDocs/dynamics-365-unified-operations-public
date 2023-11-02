@@ -4,7 +4,7 @@
 title: Configure integration with Finance
 description: This article describes the integration between Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: twheeloc  
-ms.date: 08/19/2021
+ms.date: 09/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,80 +90,80 @@ In the following template mapping tables, the name of the task contains the enti
 
 | Dataverse table (source) | Finance entity (destination) |
 |-------------------------------------|---------------------------------------------|
-| cdm_name (cdm_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
-| cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
+| cdm\_name (cdm\_Job   Function Name)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
+| cdm\_description   (cdm\_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### Departments to Operating Unit
 
 | Dataverse table (source)           | Finance entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
-| cdm_name (cdm_name)                           | NAME (NAME)                                 |
-| cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
+| cdm\_name (cdm\_name)                           | NAME (NAME)                                 |
+| cdm\_departmentnumber   (cdm\_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
 |                                               | OPERATINGUNITTYPE   (OPERATINGUNITTYPE)     |
-| cdm_description   (cdm_description)           | NAMEALIAS   (NAMEALIAS)                     |
+| cdm\_description   (cdm\_description)           | NAMEALIAS   (NAMEALIAS)                     |
 
 ### Job Types to Compensation Job Type
 
 | Dataverse table (source)   | Finance entity (destination) |
 |---------------------------------------|---------------------------------------------|
-| cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
-| cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
-| cdm_exemptstatus   (cdm_exemptstatus) | EXEMPTSTATUS   (EXEMPTSTATUS)               |
+| cdm\_name (cdm\_name)                   | JOBTYPEID   (JOBTYPEID)                     |
+| cdm\_description   (cdm\_description)   | DESCRIPTION   (DESCRIPTION)                 |
+| cdm\_exemptstatus   (cdm\_exemptstatus) | EXEMPTSTATUS   (EXEMPTSTATUS)               |
 
 ### Jobs to Jobs
 
 | Dataverse table (source)                           | Finance entity (destination)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
-| cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
-| cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
-| cdm_allowedunlimitedpositions   (cdm_allowunlimitedpositions) | ALLOWUNLIMITEDPOSITIONS   (ALLOWUNLIMITEDPOSITIONS)   |
-| cdm_description   (cdm_description)                           | DESCRIPTION   (DESCRIPTION)                           |
-| cdm_jobdescription   (cdm_jobdescription)                     | JOBDESCRIPTION   (JOBDESCRIPTIONS)                    |
+| cdm\_name (cdm\_name)                                           | JOBID (JOBID)                                         |
+| cdm\_maximumnumberofpositions   (cdm\_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
+| cdm\_allowedunlimitedpositions   (cdm\_allowunlimitedpositions) | ALLOWUNLIMITEDPOSITIONS   (ALLOWUNLIMITEDPOSITIONS)   |
+| cdm\_description   (cdm\_description)                           | DESCRIPTION   (DESCRIPTION)                           |
+| cdm\_jobdescription   (cdm\_jobdescription)                     | JOBDESCRIPTION   (JOBDESCRIPTIONS)                    |
 
 ### Jobs to Job Detail
 
 | Dataverse table (source)                             | Finance entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
-| cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
-| cdm_jobtypeid.cdm_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
-| cdm_jobfunctionid.cdm_name   (Job Function (Job Function Name)) | FUNCTIONID   (FUCNTIONID)                   |
-| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                     |
-| cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                           |
-| cdm_defaultfulltimeequivalent   (Default Full-time Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
+| cdm\_name (cdm\_name)                                             | JOBID (JOBID)                               |
+| cdm\_jobtypeid.cdm\_name   (Job Type (Job Type Name))             | JOBTYPEID   (JOBTYPEID)                     |
+| cdm\_jobfunctionid.cdm\_name   (Job Function (Job Function Name)) | FUNCTIONID   (FUCNTIONID)                   |
+| cdm\_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                     |
+| cdm\_validto (Valid To)                                        | VALIDTO (VALIDTO)                           |
+| cdm\_defaultfulltimeequivalent   (Default Full-time Equivalent)   | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)   |
 
 ### Position Types to Position Type
 
 | Dataverse table (source)       | Finance entity (destination) |
 |-------------------------------------------|---------------------------------------------|
-| cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
-| cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
-| cdm_classification   (cdm_classification) | CLASSIFICATION   (CLASSIFICATION)           |
+| cdm\_name (cdm\_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
+| cdm\_description   (cdm\_description)       | DESCRIPTION   (DESCRIPTION)                 |
+| cdm\_classification   (cdm\_classification) | CLASSIFICATION   (CLASSIFICATION)           |
 
 ### Job Positions to Base Position
 
 | Dataverse table (source)           | Finance entity (destination) |
 |-----------------------------------------------|---------------------------------------------|
-| cdm_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
+| cdm\_jobpositionnumber   (Job Position Number) | POSITIONID (POSITIONID)                      |
 
 ### Job Positions to Position Details
 
 | Dataverse table (source)              | Finance entity (destination)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
-| cdm_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
-| cdm_jobid.cdm_name   (Job (Name))                                        | JOBID (JOBID)                                    |
-| cdm_description   (cdm_description)                                        | DESCRIPTION   (DESCRIPTION)                       |
-| cdm_departmentid.cdm_departmentnumber   (Department (Department Number)) | DEPARTMENTNUMBER   (DEPARTMENTNUMBER)             |
-| cdm_positiontypeid.cdm_name   (Position Type (Name))                     | POSITIONTYPEID   (POSITIONTYPEID)                 |
-| cdm_avaialableforassignment   (Available for Assignment)                 | AVAILABLEFORASSIGNMENT   (AVAILABLEFORASSIGNMENT) |
-| cdm_validfrom   (Valid From)                                            | VALIDFROM   (VALIDFROM)                           |
-| cdm_validto (Valid To)                                                 | VALIDTO (VALIDTO)                               |
-| cdm_fulltimeequivalent   (Full-time Equivalent)                           | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)         |
+| cdm\_jobpositionnumber  (Job Position Number)                            | POSITIONID (POSITIONID)                             |
+| cdm\_jobid.cdm\_name   (Job (Name))                                        | JOBID (JOBID)                                    |
+| cdm\_description   (cdm\_description)                                        | DESCRIPTION   (DESCRIPTION)                       |
+| cdm\_departmentid.cdm\_departmentnumber   (Department (Department Number)) | DEPARTMENTNUMBER   (DEPARTMENTNUMBER)             |
+| cdm\_positiontypeid.cdm\_name   (Position Type (Name))                     | POSITIONTYPEID   (POSITIONTYPEID)                 |
+| cdm\_avaialableforassignment   (Available for Assignment)                 | AVAILABLEFORASSIGNMENT   (AVAILABLEFORASSIGNMENT) |
+| cdm\_validfrom   (Valid From)                                            | VALIDFROM   (VALIDFROM)                           |
+| cdm\_validto (Valid To)                                                 | VALIDTO (VALIDTO)                               |
+| cdm\_fulltimeequivalent   (Full-time Equivalent)                           | FULLTIMEEQUIVALENT   (FULLTIMEEQUIVALENT)         |
 
 ### Job Positions to Position Durations
 
 | Dataverse table (source)             | Finance entity (destination) |
 |-------------------------------------------------|---------------------------------------------|
-| cdm_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
+| cdm\_jobpositionnumber   (Job Position Number)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Calculated Activation) | VALIDFROM (VALIDFROM)                        |
 | Calculated   Retirement (Calculated Retirement) | VALIDTO (VALIDTO)                         |
 
@@ -171,83 +171,83 @@ In the following template mapping tables, the name of the task contains the enti
 
 | Dataverse table (source)        | Finance entity (destination) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
-| cdm_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
-| cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
-| cdm_validfrom   (Valid From)                                                                  | VALIDFROM   (VALIDFROM)                     |
-| cdm_validto (Valid   To)                                                                      | VALIDTO (VALIDTO)                           |
+| cdm\_jobpositionnumber   (Job Position Number)                                                 | POSITIONID(POSITIONID)                      |
+| cdm\_parentjobpositionid.cdmjobpositionnumber   (cdm\_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
+| cdm\_validfrom   (Valid From)                                                                  | VALIDFROM   (VALIDFROM)                     |
+| cdm\_validto (Valid   To)                                                                      | VALIDTO (VALIDTO)                           |
 | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)                                                       | HIERARCHYTYPENAME   (HIERARCHYTYPENAME)     |
 
 
 ### Workers to Worker
 | Dataverse table (source)           | Finance entity (destination)       |
 |-----------------------------------------------|---------------------------------------------------|
-| cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
-| cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
-| cdm_primaryaddress   (cdm_primaryaddress)     | PRIMARYCONTACTEMAIL   (PRIMARYCONTACTEMAIL )      |
-| cdm_primarytelephone   (cdm_primarytelephone) | PRIMARYCONTACTPHONE   (PRIMARYCONTACTPHONE)       |
-| cdm_facebookidentity   (cdm_facebookidentity) | PRIMARYCONTACTFACEBOOK   (PRIMARYCONTACTFACEBOOK) |
-| cdm_twitteridentity   (cdm_twitteridentity)   | PRIMARYCONTACTTWITTER   (PRIMARYCONTACTTWITTER)   |
-| cdm_linkedinIdentity   (cdm_linkedinIdentity) | PRIMARYCONTACTLINKEDIN   (PRIMARYCONTACTLINKEDIN) |
-| cdm_websiteurl   (cdm_websiteurl)             | PRIMARYCONTACTURL   (PRIMARYCONTACTURL)           |
-| cdm_firstname   (cdm_firstname)               | FIRSTNAME   (FIRSTNAME)                           |
-| cdm_middlename   (cdm_middlename)             | MIDDLENAME   (MIDDLENAME)                         |
-| cdm_lastname   (cdm_lastname)                 | LASTNAME (LASTNAME)                               |
-| cdm_workernumber   (cdm_workernumber)         | PERSONNELNUMBER   (PERSONNELNUMBER)               |
-| cdm_type (cdm_type)                           | WORKERTYPE   (WORKERTYPE)                         |
-| cdm_state   (cdm_state)                       | WORKSTATUS   (WORKERSTATUS)                       |
+| cdm\_birthdate   (cdm\_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
+| cdm\_gender   (cdm\_gender)                     | GENDER (GENDER)                                   |
+| cdm\_primaryaddress   (cdm\_primaryaddress)     | PRIMARYCONTACTEMAIL   (PRIMARYCONTACTEMAIL )      |
+| cdm\_primarytelephone   (cdm\_primarytelephone) | PRIMARYCONTACTPHONE   (PRIMARYCONTACTPHONE)       |
+| cdm\_facebookidentity   (cdm\_facebookidentity) | PRIMARYCONTACTFACEBOOK   (PRIMARYCONTACTFACEBOOK) |
+| cdm\_twitteridentity   (cdm\_twitteridentity)   | PRIMARYCONTACTTWITTER   (PRIMARYCONTACTTWITTER)   |
+| cdm\_linkedinIdentity   (cdm\_linkedinIdentity) | PRIMARYCONTACTLINKEDIN   (PRIMARYCONTACTLINKEDIN) |
+| cdm\_websiteurl   (cdm\_websiteurl)             | PRIMARYCONTACTURL   (PRIMARYCONTACTURL)           |
+| cdm\_firstname   (cdm\_firstname)               | FIRSTNAME   (FIRSTNAME)                           |
+| cdm\_middlename   (cdm\_middlename)             | MIDDLENAME   (MIDDLENAME)                         |
+| cdm\_lastname   (cdm\_lastname)                 | LASTNAME (LASTNAME)                               |
+| cdm\_workernumber   (cdm\_workernumber)         | PERSONNELNUMBER   (PERSONNELNUMBER)               |
+| cdm\_type (cdm\_type)                           | WORKERTYPE   (WORKERTYPE)                         |
+| cdm\_state   (cdm\_state)                       | WORKSTATUS   (WORKERSTATUS)                       |
 
 ### Employments to Employment
 
 | Dataverse table (source)                             | Finance entity (destination) |
 |-----------------------------------------------------------------|---------------------------------------------|
-| cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
-| cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
-| cdm_workertype   (cdm_workertype)                               | WORKERTYPE   (WORKERTYPE)                   |
-| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)         |
-| cdm_companyid.cdm_companycode   (cdm_companyid.cdm_companycode) | LEGALENTITYID   (LEGALENTITYID)             |
+| cdm\_employmentstartdate   (cdm\_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
+| cdm\_employmentenddate   (cdm\_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
+| cdm\_workertype   (cdm\_workertype)                               | WORKERTYPE   (WORKERTYPE)                   |
+| cdm\_workerid.cdm\_workernumber   (cdm\_workerid.cdm\_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)         |
+| cdm\_companyid.cdm\_companycode   (cdm\_companyid.cdm\_companycode) | LEGALENTITYID   (LEGALENTITYID)             |
 
 ### Employments to Employment Detail
 
 | Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
-| cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
-| cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
-| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
-| cdm_validto (Valid   To)                                        | VALIDTO (VALIDTO)                             |
-| cdm_workerstartdate   (cdm_workerstartdate)                     | WORKERSTARTDATE   (WORKERSTARTDATE)           |
-| cdm_lastdateworked   (cdm_lastdateworked)                       | LASTDATEWORKED   (LASTDATEWORKED)             |
-| cdm_transitiondate   (cdm_transitiondate)                       | TRANSITIONDATE   (TRANSITIONDATE)             |
-| cdm_employerunitofnotice   (cdm_employerunitofnotice)           | EMPLOYERUNITOFNOTICE   (EMPLOYERUNITOFNOTICE) |
-| cdm_workerunitofnotice   (cdm_workerunitofnotice)               | WORKERUNITOFNOTICE   (WORKERUNITOFNOTICE)     |
-| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
-| cdm_companyid.cdm_companycode   (cdm_companyid.cdm_companycode) | LEGALENTITYID   (LEGALENTITYID)               |
-| cdm_employernoticeamount   (cdm_employernoticeamount)           | EMPLOYERNOTICEAMOUNT   (EMPLOYERNOTICEAMOUNT) |
-| cdm_workernoticeamount   (cdm_workernoticeamount )              | WORKERNOTICEAMOUNT   (WORKERNOTICEAMOUNT)     |
+| cdm\_employmentstartdate   (cdm\_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
+| cdm\_employmentenddate   (cdm\_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
+| cdm\_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
+| cdm\_validto (Valid   To)                                        | VALIDTO (VALIDTO)                             |
+| cdm\_workerstartdate   (cdm\_workerstartdate)                     | WORKERSTARTDATE   (WORKERSTARTDATE)           |
+| cdm\_lastdateworked   (cdm\_lastdateworked)                       | LASTDATEWORKED   (LASTDATEWORKED)             |
+| cdm\_transitiondate   (cdm\_transitiondate)                       | TRANSITIONDATE   (TRANSITIONDATE)             |
+| cdm\_employerunitofnotice   (cdm\_employerunitofnotice)           | EMPLOYERUNITOFNOTICE   (EMPLOYERUNITOFNOTICE) |
+| cdm\_workerunitofnotice   (cdm\_workerunitofnotice)               | WORKERUNITOFNOTICE   (WORKERUNITOFNOTICE)     |
+| cdm\_workerid.cdm\_workernumber   (cdm\_workerid.cdm\_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm\_companyid.cdm\_companycode   (cdm\_companyid.cdm\_companycode) | LEGALENTITYID   (LEGALENTITYID)               |
+| cdm\_employernoticeamount   (cdm\_employernoticeamount)           | EMPLOYERNOTICEAMOUNT   (EMPLOYERNOTICEAMOUNT) |
+| cdm\_workernoticeamount   (cdm\_workernoticeamount )              | WORKERNOTICEAMOUNT   (WORKERNOTICEAMOUNT)     |
 
 ### Position Worker Assignment to Position Worker Assignments
 
 | Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
-| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
-| cdm_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
-| cdm_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
-| cdm_validto (Valid To)                                        | VALIDTO (VALIDTO)                             |
+| cdm\_workerid.cdm\_workernumber   (cdm\_workerid.cdm\_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm\_jobpositionnumber   (Job Position Number)                   | POSITIONID(POSITIONID)                        |
+| cdm\_validfrom   (Valid From)                                    | VALIDFROM   (VALIDFROM)                       |
+| cdm\_validto (Valid To)                                        | VALIDTO (VALIDTO)                             |
 
 ### Worker Addresses to Worker Postal Address V2
 
 | Dataverse table (source)                             | Finance entity (destination)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
-| cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
-| cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
-| cdm_line1   (cdm_line1)                                         | ADDRESSSTREET   (ADDRESSSTREET)               |
-| cdm_city (cdm_city)                                             | ADDRESSCITY   (ADDRESSCITY)                   |
-| cdm_stateorprovince   (cdm_stateorprovince)                     | ADDRESSSTATE   (ADDRESSSTATE)                 |
-| cdm_postalcode   (cdm_postalcode)                               | ADDRESSZIPCODE(ADDRESSZIPCODE)                |
-| cdm_countryregion   (cdm_countryregion)                         | ADDRESSCOUNTRYREGION(ADDRESSCOUNTRYREGION)    |
-| cdm_addressnumber   (cdm_addressnumber)                         | ADDRESSLOCATIONID(ADDRESSLOCATIONID)          |
-| cdm_ispreferred   (cdm_ispreferred)                             | ISPRIMARY   (ISPRIMARY)                       |
-| cdm_county   (cdm_county)                                       | ADDRESSCOUNTYID(ADDRESSCOUNTYID)              |
-| cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
+| cdm\_workerid.cdm\_workernumber   (cdm\_workerid.cdm\_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
+| cdm\_addresstype   (cdm\_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
+| cdm\_line1   (cdm\_line1)                                         | ADDRESSSTREET   (ADDRESSSTREET)               |
+| cdm\_city (cdm\_city)                                             | ADDRESSCITY   (ADDRESSCITY)                   |
+| cdm\_stateorprovince   (cdm\_stateorprovince)                     | ADDRESSSTATE   (ADDRESSSTATE)                 |
+| cdm\_postalcode   (cdm\_postalcode)                               | ADDRESSZIPCODE(ADDRESSZIPCODE)                |
+| cdm\_countryregion   (cdm\_countryregion)                         | ADDRESSCOUNTRYREGION(ADDRESSCOUNTRYREGION)    |
+| cdm\_addressnumber   (cdm\_addressnumber)                         | ADDRESSLOCATIONID(ADDRESSLOCATIONID)          |
+| cdm\_ispreferred   (cdm\_ispreferred)                             | ISPRIMARY   (ISPRIMARY)                       |
+| cdm\_county   (cdm\_county)                                       | ADDRESSCOUNTYID(ADDRESSCOUNTYID)              |
+| cdm\_addresstype   (cdm\_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
 ## Integration considerations
 
@@ -262,5 +262,24 @@ The location ID used for worker address isn't part of a number sequence. When in
 The following illustration shows an example of a template mapping in Data Integrator. 
 
 ![Template Mapping.](./media/IntegrationMapping.png)
+
+## Migration considerations
+
+As part of the migration from Human Resources to Finance, the dual-write maps are also supported.
+
+The following table shows the mapping from Data Integrator maps to equivalent dual-write maps.
+
+| Data Integrator map | Dual-write map |
+|---------------------|----------------|
+| Job functions to Compensation job function | Compensation job function (cdm\_jobfunctions) |
+| Departments to Operating unit | Department V2 (cdm\_departments) |
+| Job types to Compensation job type | Compensation job type (cdm\_jobtypes) |
+| Jobs to Jobs | Jobs dual-write (cdm\_jobs) |
+| Position types to Position type | Position type (cdm\_positiontypes) |
+| <ul><li>Job positions to Base position</li><li>Job positions to Position details</li><li>Job positions to Position durations</li><li>Job positions to Position hierarchies</li></ul> | Job positions dual-write (cdm\_jobpositions) |
+| Workers to Worker | Worker (cdm\_workers) |
+| <ul><li>Employments to Employment</li><li>Employments to Employment detail</li></ul> | Employment per company (cdm\_employments) |
+| Position worker assignment to Position worker assignments | Position worker assignments V2 (cdm\_positionworkerassignmentmaps) |
+| Worker addresses to Worker postal address V2 | Worker postal addresses dual-write (cdm\_workeraddresss) |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

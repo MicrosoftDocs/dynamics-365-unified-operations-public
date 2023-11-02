@@ -4,7 +4,7 @@
 title: Ledger settlements
 description: This article explains how to use the Ledger settlements page to settle ledger transactions and reverse settlements.
 author: kweekley
-ms.date: 07/14/2023
+ms.date: 10/27/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 # Ledger settlements
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ledger settlement is the process of matching debit and credit transactions in the general ledger. The settlement of the debit and credit amounts is used to reconcile the balance of the ledger account with the detailed transactions that make up that balance.
 
@@ -65,7 +66,8 @@ To settle ledger transactions, follow these steps.
 1. Go to **General ledger** \> **Periodic tasks** \> **Ledger settlements**.
 2. Set the filters at the top of the page:
 
-    - Select a date range. Alternatively, select a date interval code to automatically fill in the date range. We don't recommend that you do ledger settlement for transactions that cross fiscal years.
+    - Select a date range. Alternatively, select a date interval code to automatically fill in the date range. We don't recommend that you do ledger settlement for transactions that cross fiscal years. When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be completed within a fiscal year.
+    - When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be done for transactions in a single main account and the main account is a required filter.
     - Change the posting layer as required. You can't settle transactions that are in different posting layers.
     - To show the main account and dimensions separately, select a financial dimension set.
 
@@ -91,7 +93,7 @@ The **Ledger settlements** page includes capabilities that make it easier to vie
 
 ## Reverse a settlement
 
-You can reverse a settlement that was made by mistake.
+You can reverse a settlement that was made by mistake. When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement and the reversal can’t be done for transactions that are posted within a closed fiscal year (in other words, the year-end close has been run).
 
 1. Follow steps 1 through 3 in the [Settle transactions](#settle-transactions) section to show the transactions that you're interested in.
 2. In the **Status** filter, select **Settled**.
@@ -119,9 +121,9 @@ For more information about how to use the **Review cross-year settlements** page
 
 ## Post foreign currency realized gains/losses for ledger settlements
 
-In Finance version 10.0.36, the **Post foreign currency realized gains/losses for ledger settlements** feature is available in the **Feature management** workspace. This feature calculates and posts foreign currency realized gains and losses for settlements from the **Ledger settlements** page when the reporting currency values of the debits and credits differ. Before you can enable the **Post foreign currency realized gains/losses for ledger settlements** feature, the **Awareness between ledger settlement and year-end close** feature must be enabled.
+In Finance version 10.0.36, the **Post foreign currency realized gains/losses for ledger settlements** feature is available in the **Feature management** workspace. This feature calculates and posts foreign currency realized gains and losses for settlements from the **Ledger settlements** page when the reporting currency values of the debits and credits differ. In Finance version 10.0.38, support has been added for calculating and posting foreign currency realized gains and losses for settlement when the accounting currency values of the debits and credits differ. Before you can enable the **Post foreign currency realized gains/losses for ledger settlements** feature, the **Awareness between ledger settlement and year-end close** feature must be enabled.
 
-The feature also improves the usability of the ledger settlement process by simplifying the marking process. You no longer have to select and mark vouchers for ledger settlement in two steps. Instead, you can mark the voucher in the grid on the **Ledger settlements** page. The **Marked debits**, **Marked credits**, and **Difference** fields are shown to provide a clear indication of the totals for your work in progress. You must complete your work by settling the marked vouchers before you close the **Ledger settlements** page.
+The feature also improves the usability of the ledger settlement process by simplifying the marking process. You no longer have to select and mark vouchers for ledger settlement in two steps. Instead, you can mark the voucher in the grid on the **Ledger settlements** page. The **Marked debits**, **Marked credits**, and **Difference** fields are shown to provide a clear indication of the totals for your work in progress. You must complete your work by settling the marked vouchers before you close the **Ledger settlements** page. Starting in version 10.0.38, the **Marked debits**, **Marked credits** and **Difference** fields in both the accounting and reporting currencies can be viewed from the **Ledger settlements** page.
 
 ### Set up realized gain and realized loss account information
 
@@ -135,7 +137,7 @@ After you enable the feature, you must specify which ledger settlement accounts 
 1. Go to **General ledger** \> **Periodic tasks** \> **Ledger settlements**.
 2. Select **Ledger settlement accounts**.
 
-By default, the **Calculate realized gains and losses** option is set to **No**. When it's set to **Yes**, the foreign currency exchange rate realized gains and losses are posted during the ledger settlement process. Foreign currency exchange rate realized gains and losses are generated when the debit and credit amounts in the reporting currency don't match. When the option is set to **No**, realized gains and losses aren't generated by the ledger settlement process. We recommend that you leave the option set to **No** for your AR and AP summary accounts, because foreign currency exchange rate gains and losses are typically realized in the subledgers. Additional consideration should be given to your **Cash** accounts that might be revalued in the **Cash and bank management** module.
+By default, the **Calculate realized gains and losses** option is set to **No**. When it's set to **Yes**, the foreign currency exchange rate realized gains and losses are posted during the ledger settlement process. Foreign currency exchange rate realized gains and losses are generated when the debit and credit amounts in the reporting or accounting currency don't match. When the option is set to **No**, realized gains and losses aren't generated by the ledger settlement process. We recommend that you leave the option set to **No** for your AR and AP summary accounts, because foreign currency exchange rate gains and losses are typically realized in the subledgers. Additional consideration should be given to your **Cash** accounts that might be revalued in the **Cash and bank management** module.
 
 The posting accounts for the realized gains and losses can be set up on the **General ledger** tab of the **Currency revaluation posting profile** page. If these accounts aren't defined in the currency revaluation posting profile, the accounts that are selected on the **Account for currency revaluation** FastTab of the **Ledger** page are used.
 
@@ -143,7 +145,7 @@ Before a realized gain or loss can be posted, the number sequence information fo
 
 ### Post a realized gain or loss
 
-During the ledger settlement process, realized gains and losses are posted when the reporting currency amounts of the marked debits and the marked credits differ. To determine whether there's a gain or a loss, the system consider the account type and the direction of the change. The adjustment amount is calculated by using the formula *Adjustment amount* = 0 – (*Debits* – *Credits*). The calculated amount represents the adjustment that's required to balance the debits and credits to 0 (zero). A gain or loss is determined based on the **Main account type** value of the account that's being settled: 
+During the ledger settlement process, realized gains and losses are posted when the reporting or accounting currency amounts of the marked debits and the marked credits differ. If the same transaction currency is used on the marked entries, the system will sum the **Amount in transaction currency** values. If the **Amount in transaction currency** summed debit and summed credit values net to zero, settlement will be allowed. If the marked entries have differing transactional currencies, the system will sum the **Amount in accounting currency** values.  If the **Amount in accounting currency** summed debit and summed credit values net to zero, settlement will be allowed. To determine whether there's a gain or a loss, the system consider the account type and the direction of the change. The adjustment amount is calculated by using the formula *Adjustment amount* = 0 – (*Debits* – *Credits*). The calculated amount represents the adjustment that's required to balance the debits and credits to 0 (zero). A gain or loss is determined based on the **Main account type** value of the account that's being settled: 
 
 - For accounts of the **Balance sheet**, **Asset**, **Liability**, **Equity** or **CA Common** type, a gain is posted when the adjustment value is more than 0 (zero), and a loss is posted when the adjustment value is less than or equal to 0 (zero).
 - For accounts of the **Profit and loss**, **Revenue** or **Expense** type, a loss is posted when the adjustment value is greater more 0 (zero), and a gain is posted when the adjustment value is less than or equal to 0 (zero).

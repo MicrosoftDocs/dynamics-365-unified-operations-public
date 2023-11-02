@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Some or all of the functionality that's described in this article is available as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> The AI-powered and Copilot functionality that's described in this article is available as part of a preview release. All other functionality is generally available. The content and the functionality related to AI-powered and Copilot functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
 >
@@ -122,7 +122,7 @@ In preview, the grouping is predefined and limited to pegged orders that have be
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on pegged orders. These high-risk changes are summarized together with the detected impacts, to help you investigate further and decide what action to take.
 - **Impacted downstream orders** – This tile summarizes impacts on pegged orders by the number and type of orders, and it shows the purchase order changes that cause each impact. This information helps you review potential downstream impacts based on the latest master planning run.
 
-Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed delivery dates, and so on.
+Each tile provides a **Show** link, which lets you filter the list of purchase orders and purchase order lines. The list includes columns for the original and new quantities, original and new confirmed receipt dates, and so on.
 
 ## Review changes to confirmed purchase orders
 
@@ -145,7 +145,7 @@ The workspace shows two lists: one for the purchase orders and one for the purch
 
 The purchase order list shows the purchase order number, the vendor, and the requested receipt date from the purchase order header. To view the related records, select the purchase order or vendor link in the list.
 
-The purchase order lines list shows information about each line that has proposed changes. This information includes the item number, product name, original quantity, new quantity, original confirmed delivery date, and new confirmed delivery date. The workspace also provides a hierarchical view of any downstream impact. The **Reference** field indicates the type of downstream impact, such as a planned kanban for a production order, a sales order, or a maintenance work order.
+The purchase order lines list shows information about each line that has proposed changes. This information includes the item number, product name, original quantity, new quantity, original confirmed receipt date, and new confirmed receipt date. The workspace also provides a hierarchical view of any downstream impact. The **Reference** field indicates the type of downstream impact, such as a planned kanban for a production order, a sales order, or a maintenance work order.
 
 ### Step 2: Focus on changes that have a low risk of downstream impact
 
@@ -184,15 +184,6 @@ In this view, you can analyze the changes from the perspective of downstream imp
 
 A good way to focus on the most pressing downstream impact is to sort and filter the list by the date of impact (the requested date in the downstream order). You can then take action by communicating with downstream stakeholders. Those stakeholders might, in turn, contact affected customers and replan the downstream orders.
 
-## Frequently asked questions
+## See also
 
-### How does the Copilot technology work?
-
-The system summarizes changes to purchase orders, such as changed quantities and confirmed delivery dates, and identifies downstream impacts. It uses the Text-davinci-003 generative AI model to generate natural-language change summaries and suggested content for email and Teams conversations.
-
-### What if I'm not satisfied with the generated content?
-
-Text that Copilot generates isn't intended to be used without manual review or supervision.
-
-> [!NOTE]
-> If inappropriate content is generated, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback will help improve the functionality.
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)

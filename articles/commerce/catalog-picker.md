@@ -94,7 +94,7 @@ The following illustration shows an example of an ecommerce website header with 
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
 
-[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
+[Extensibility impact of Commerce catalogs for B2B customizations](dev-itpro/catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
 

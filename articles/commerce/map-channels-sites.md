@@ -76,7 +76,7 @@ In this scenario, a single channel supports more than one language. Therefore, p
 
 The limitation of this scenario is that a single channel can be configured with only one currency, one legal entity, and one set of products and prices. This configuration works best for countries/regions that have a single currency and multiple languages (for example, Canada, which has the English and French languages), a single legal entity, and a single set of products and prices.
 
-Each language in a channel can be configured with its own domain name. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and the `www.adventure-works-fr.ca` domain can be configured for the Canada French version. Alternatively, different languages in a channel can be configured in a single domain, and then a different path can be used for each language. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and then the `www.adventure-works.ca/fr` path can be used for the Canada French version. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site, based on the user's location.
+Each language in a channel can be configured with its own domain name. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and the `www.adventure-works-fr.ca` domain can be configured for the Canada French version. Alternatively, different languages in a channel can be configured in a single domain, and then a different path can be used for each language. For example, the `www.adventure-works.ca` domain can be configured for the Canada English version, and then the `www.adventure-works.ca/fr` path can be used for the Canada French version. [Geo detection](dev-itpro/geo-detection-redirection.md) can also be enabled to automatically redirect a user to the correct site, based on the user's location.
 
 For information about how to enable customers to manually switch between languages, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this article. For information about how to customize localized pages and fragments, see the [Manage site content that has multiple channels and languages](#manage-site-content-that-has-multiple-channels-and-languages) section.
 
@@ -90,7 +90,7 @@ Another method is to create a new e-commerce site for each language in site buil
 
 A branded site might require multiple online channels per region to support a different currency, set of products, and set of prices for each channel in a single site. For example, the Adventure Works site might have an online channel for the Canadian market that has multiple languages, a channel for the US market that has one language, and a channel for the German market that has one language. In this scenario, each online channel will be configured for a region-specific legal entity, and it can have the same set of products that other channels have, a subset of those products, or a different set of products. Each channel will also have its own prices in the regional currency, taxes, discounts, and shipping modes.
 
-In this scenario, each market can be configured with its own domain names. For example, the `www.adventure-works.com` domain can be configured for the US market, and the `www.adventure-works.de` domain can be configured for the German market. Alternatively, each market can be configured to use a different path. For example, the `www.adventure-works.com` domain can be configured for the US market, and then the `www.adventure-works.com/de` path can be used for the German market. [Geo detection](geo-detection-redirection.md) can also be enabled to automatically redirect users to the correct site, based on their region.
+In this scenario, each market can be configured with its own domain names. For example, the `www.adventure-works.com` domain can be configured for the US market, and the `www.adventure-works.de` domain can be configured for the German market. Alternatively, each market can be configured to use a different path. For example, the `www.adventure-works.com` domain can be configured for the US market, and then the `www.adventure-works.com/de` path can be used for the German market. [Geo detection](dev-itpro/geo-detection-redirection.md) can also be enabled to automatically redirect users to the correct site, based on their region.
 
 You might also want your site to provide a drop-down list that lets users manually switch to a specific market. For more information, see the [Add and configure the site picker module](#add-and-configure-the-site-picker-module) section of this article.
 
@@ -129,7 +129,7 @@ To copy an existing site, go to the **Sites** list page in site builder, and sel
 
 At this point, you can't yet select the default online channel and language for the site. However, you can configure those properties after the site copy operation has been completed. When you first select the site on the **Sites** list page in site builder, the **Setup your site** dialog box appears, where you can select the default channel and language.
 
-For more information about the site copy operation, see [Copy an e-commerce site](copy-ecommerce-site.md).
+For more information about the site copy operation, see [Copy an e-commerce site](dev-itpro/copy-ecommerce-site.md).
 
 ### Manage an existing site channel
 
@@ -199,12 +199,12 @@ You can add channels to an e-commerce site in site builder by going to **Site se
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md)
 
-[Set up geo detection and redirection](geo-detection-redirection.md)
+[Set up geo detection and redirection](dev-itpro/geo-detection-redirection.md)
 
 [Enable and use cross-channel sharing](cross-channel-sharing.md)
 
 [Create an e-commerce site](create-ecommerce-site.md)
 
-[Copy an e-commerce site](copy-ecommerce-site.md)
+[Copy an e-commerce site](dev-itpro/copy-ecommerce-site.md)
 
 [Site picker module](site-selector.md)

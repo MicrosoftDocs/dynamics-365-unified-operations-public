@@ -5,7 +5,7 @@ author: AndersGirke
 ms.date: 12/16/2021
 ms.topic: article
 ms.search.form:
-audience: Application User
+audience: Developer
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir

@@ -5,7 +5,7 @@
 title: Dynamics 365 Human Resources infrastructure merge overview
 description: This article describes the Microsoft Dynamics 365 Human Resources infrastructure merge.
 author: twheeloc
-ms.date: 05/15/2023
+ms.date: 10/25/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -135,6 +135,10 @@ During the automatic process, the following actions are completed and should be 
 
 - Migration to environments will always be on the latest generally available (GA) version. Depending on your migration and testing plan, if your migration validation for sandbox environments was on a different version, we recommend that you validate a sandbox migration on the same version as your production environment. 
 - During migration, the migrated environments will be placed in the same region as the source standalone Human Resources environments.
+
+> [!NOTE]
+> The migrated environments will be placed in the same region as the source standalone Human Resources environments. There is an exception to customers in the Canada East and Australia Southeast region as they will be moved to Canada Central and Australia East respectively.
+
 
 ## Licensing
 
