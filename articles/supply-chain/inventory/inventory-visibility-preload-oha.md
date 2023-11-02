@@ -50,6 +50,8 @@ If you are using UI version 2, please follow these steps to set up the feature:
 1. If you want to change the group-by configurations, you need to go to **Settings \> Admin Settings \> Delete preloaded onhand data \> Manage** to clean up the database and make it ready to accept your new group-by settings.
 1. Go to **Settings \> Admin Settings \> Update Configuration \> Manage** to update configuration to activate all the changes.
 
+![The index query preload configuration.](media/inventory-visibility-oha-config.png "The index query preload configuration")
+
 ## Turn on and configure preloaded on-hand queries from Inventory Visibility app's Legacy UI
 
 If you are using UI version 1, please follow these steps to set up the feature:
