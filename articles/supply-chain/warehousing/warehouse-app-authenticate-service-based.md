@@ -68,13 +68,13 @@ To enable Supply Chain Management to use your Microsoft Entra ID application, fo
     1. Create a user.
     1. Assign the *Warehousing mobile device user* role to the user.
 
-    ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
+    ![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
 1. Associate your Microsoft Entra ID application with the Warehouse Management mobile app user:
 
     1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
-    1. Select **New** on the Action Pane to create a line.
-    1. In the **Client ID** field, enter the client ID that you made a note of when setting up the web service application in Microsoft Entra ID.
+    1. On the Action Pane, select **New** to add a line.
+    1. In the **Client ID** field, enter the client ID that you made a note of when you set up the web service application in Microsoft Entra ID.
     1. In the **Name** field, enter a name.
     1. In the **User ID** field, select the user ID that you just created.
 
