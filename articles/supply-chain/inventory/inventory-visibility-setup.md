@@ -142,7 +142,7 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the *Inventory Visibility Integration* feature.
 1. Go to **Inventory Management \> Set up \> Inventory Visibility Integration parameters**.
 1. Open the **General** tab and make the following settings:
-    - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, refer to [find service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you have received advice from Microsoft Support or are otherwise certain that you need to change it.
 
 1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use one or both of these features. If you do, set them up. (You can also set them up later.)
@@ -155,25 +155,29 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
 1. After you finish setting up the optional features you selected, go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 > [!NOTE]
-> If, on enabling the Inventory Visibility integration job, you get an error that indicates that you need to update the partition schema, see [Update partition schema to two](#update-partition-schema) for instructions.
+> If, on enabling the Inventory Visibility integration job, you get an error that indicates that you need to update the partition schema, see [update partition schema to two](#update-partition-schema-to-two-if-you-get-an-error-when-enabling-the-inventory-visibility-integration-job) for instructions.
 
-### <a name="update-partition-schema"></a>Update partition schema to two if you get an error when enabling the Inventory Visibility integration job
+### Update partition schema to two if you get an error when enabling the Inventory Visibility integration job
 
-If you get the following error when you try to enable Inventory Visibility integration batch job from Supply Chain Management, then you need change partition schema to two to prevent encountering an out of memory issue, which can result from having just one partition.
+If you get the following error when you try to enable Inventory Visibility integration batch job from Supply Chain Management, your [partition schema](inventory-visibility-power-platform.md#partition-configuration) should be changed to avoid out of memory issue.
 
 > Cannot sync more than 500000 records in the same warehouse. To mitigate this issue, update partition schema to 2 in Inventory Visibility add-in. Contact Inventory Visibility Support Team (inventvisibilitysupp@microsoft.com) for more info.
 
-If you don’t get this error, then you can ignore this section.
+If you don’t get this error, you can ignore this section.
 
-Follow these steps to update your partition schema:
+Follow these steps to update your partition schema.
 
-1. Open the **Configuration** page in Inventory Visibility Power Apps, and then select **Clear User Data** in the upper-right corner to clean the previous data if it exists.
+1. In Power Apps, [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data).
+
 1. Set up *Postman* to send requests to Inventory Visibility as described in [Inventory Visibility public APIs](inventory-visibility-api.md).
-1. After you clear the data, call the `Get` API with a body of `none` to get all partition IDs (using `/api/environment/{environmentId}/allpartitionids`). Check the response to confirm that the data has been completely cleared. The result should be empty.
+1. After data deletion completes, call the `Get` API with a body of `none` to get all partition IDs (using `/api/environment/{environmentId}/allpartitionids`). Check the response to confirm that data has been completely cleared. The result should be empty.
+
 1. Call the `Post` API with a body of `none` to change partition schema (using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
-1. In Power Apps, turn on the *AdvancedWHS* feature for Inventory Visibility (see also [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md)).
-1. In Power Apps, open the **Configuration** page for Inventory Visibility. Then select **Update Configuration** in the upper-right corner to make the current configuration take effect.
-1. After the configuration updates, select **Show Service Details** in the upper-right corner to see currently active configuration. The field `CachePartitonIdVersion` should now show a value of `ByLocationAndProductIdMod64`.
+
+1. In Power Apps, turn on the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update configuration](inventory-visibility-power-platform.md#update-configuration).
+
+1. In Power Apps, [check runtime configuration](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration). The field `CachePartitonIdVersion` should show a value of `ByLocationAndProductIdMod64`.
+
 1. In Supply Chain Management, go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and enable the job.
 
 ## <a name="uninstall-add-in"></a>Uninstall the Inventory Visibility Add-in

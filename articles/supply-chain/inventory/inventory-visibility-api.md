@@ -55,17 +55,7 @@ The following table lists the APIs that are currently available:
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## <a name = "endpoint-lcs"></a>Find the endpoint according to your Lifecycle Services environment
-
-The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. There isn't currently a central endpoint that can automatically redirect your request to the corresponding geography and region. Therefore, you must compose the pieces of information into a URL by using the following pattern:
-
-`https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
-
-The region short name can be found in the Lifecycle Services environment. For a list of regions (and region short names) that are currently supported, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-
-The island number is where your Lifecycle Services environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
-
-Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
+[Service endpoint](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration) can be obtained from Power Apps UI.
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
@@ -161,7 +151,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
+> Due to the constraints of [partition configuration](inventory-visibility-power-platform.md#partition-configuration), `siteId` and `locationId` are required dimensions.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -621,7 +611,7 @@ In the body part of this request, `dimensionDataSource` is still an optional par
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
 - `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
 
-We suggest that you use the `groupByValues` parameter to follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
+We suggest that you use the `groupByValues` parameter following your configuration of indexing. For more information, refer to [onhand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration).
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
