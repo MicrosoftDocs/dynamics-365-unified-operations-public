@@ -178,7 +178,7 @@ To configure allowing cash management across multiple currencies to track curren
 1. Run the **Declare start amount** operation.
 1. Select **Count** to open the supported denominations.
 1. Select the filter symbol, select the desired currency, enter the start amount, and then select **Save**.
-1. Repeat the above process to add the start amount for all desired currencies. The configuration described in step 5 ensures that the various amounts across multiple currencies are added to calculate the start amount. Only one currency amount can be added per transaction, so attempting to add start amounts for multiple currencies in a single transaction will result in an error. Similar experiences are applicable for the **Float tender** and **Remove tender** operations.
+1. Repeat the above process to add the start amount for all desired currencies. The configuration described in step 5 ensures that the various amounts across multiple currencies are added to calculate the start amount. Only one currency amount can be added per transaction, so attempting to add start amounts for multiple currencies in a single transaction will result in an error. Similar experiences are applicable to the **Float tender** and **Remove tender** operations.
 1. During the business day, you can remove the currency balance from the cash drawers by using the **Safe drop** and **Bank drop** operations.
 1. At the end of the business day, you can use the **Tender declare** operation to record the totals across all currencies. The **Tender declare** operation supports recording the data across multiple currencies in a single transaction, so it isn't necessary to record the totals one currency at a time.  
 
