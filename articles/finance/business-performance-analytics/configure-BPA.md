@@ -25,12 +25,12 @@ This article describes how to configure business performance analytics.
 To complete the following procedures and successfully configure business performance analytics, you must have the following privileges:
 
 - The **System Administrator** and **System Customizer** roles in [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-  To confirm that you have these priviliges:
+  Follow these steps to confirm that you have these privileges:
   1. In the Power Platform Admin Center, go to **Environments**. Select the relevant environment.
   2. In the **Access** section, select users.
-  3. Click **Installing user** > **Roles**. Confirm the necessary priviliges.
+  3. Click **Installing user** > **Roles**. Confirm the necessary privileges.
 - The **System administrator** role in Microsoft Dynamics 365 Finance.
-  To confirm that you have these priviliges:
+  Follow these steps to confirm that you have these privileges:
   1. In Dynamics 365 Finance, go to **System administration**.
   2. Select **Users** > **Users**.
   3. Click **Installing user** > **Roles**. Confirm the necessary permissions.
