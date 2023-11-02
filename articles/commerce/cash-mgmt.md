@@ -156,21 +156,30 @@ For more information about the financial reconciliation functionality, see [Fina
 
 ## Cash management for multiple currencies
 
-The retailers can configure POS to accept the multiple currencies as a payment for the transaction. However, the change back can only be provided in the store's default currency. For example, retailers can configure their store in USA with the default currency as USD, but the customers can pay for a transaction using Euros. However, change back can only be provided in the store's default currency i.e., USD. Thus, at the start of the day, the cashier's would only have USD, but at the end of the day, the cash drawer could have multiple currencies.   However, some retailers enhance the POS to enable their cashiers to provide change back in the tendered currency and with that, they require cash management operations such as declare start amount, float tender and remove tender operations to support foreign currencies as well so that they can account for the currency movements across various transactions. 
+Retailers can configure POS to accept the multiple currencies as payment for a transaction, but normally the change returned can only be provided in the store's default currency. 
 
-With 10.0.38, all cash management operations not only support store's default currency, but also support foreign currencies as well. Follow the steps below to track currency movements across various transactions:
+For example, a retailer configures their U.S. store with United States dollars (USD) as the default currency, but a customer pays for a transaction using Euros (EUR). Any change returned for the transaction can only be provided in the store's default currency of USD. In this scenario, at the start of the business day the cash drawer would only contain USD, but at the end of the business day the cash drawer would contain multiple currencies (USD and EUR). 
 
-1. Navigate to the "All stores" form in the headquarters (HQ) application and select the store which require cash management across multiple currencies
-2. Under the "Set up" tab, click on the "Cash declaration" button to open the supported denominations across various currencies for the store. Refer the image below. ![Add denominations for the currencies](./media/currencies.png "Add denominations for the currencies")
-3. Add the required denominations for the currencies which need to be tracked along with the store's default currency.
-4. Open the store details form for the above store and set the "Start amount calculation" configuration to "Sum". Refer the image below. ![Start amount calculation configuration on the store details form](./media/declarestartamountsetup.png "Start amount calculation configuration")
-5. Run the 1070 - Channel configuration job.
-6. Navigate to POS for the store where the above setup is performed. Open the "Declare start amount" operation.
-7. To Click on the "Count" button to open the supported denominations.
-8. Click on the filter icon on the app bar, select the desired currency, enter the start amount and save.
-9. Repeat the above process to add the start amount for all desired currencies. The configuration mentioned in the step 4 above ensures that the various amounts across the currencies are added to calculate the start amount. Please note that only one currency amount can be added per transaction. Providing the start amounts for multiple currencies in a single transaction will result in an error.
-10. Similar experience is available for Float and Tender removal operations.
-11. During the day, the currency balance can be removed from the cash drawers by using the Safe drop and Bank drop operations.
-12. Finally, at the end of the day, the Tender declare operation can be used to record the totals across all currencies. This operation supports recording the data across multiple currencies in a single transaction, so it is not needed to record the totals one currency at a time.  
+Some retailers opt to enhance their POS to enable cashiers to return change in the tendered currency, but to do so requires cash management operations such as declare start amount, float tender, and remove tender to also support foreign currencies so the retailers can account for currency movements across various transactions. 
+
+With Commerce version 10.0.38, all cash management operations support foreign currencies in addition to a store's default currency. 
+
+To track currency movements across various transactions, follow these steps.
+
+1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Stores \> All stores**.
+2. Select a store for which you want to allow cash management across multiple currencies.
+3. Select the **Set up** tab, and then select **Cash declaration** to open the supported denominations across various currencies for the store, as shown in the following example image.
+    ![Add denominations for the currencies](./media/currencies.png)
+4. Add the required denominations for the currencies to be tracked along with the store's default currency.
+5. Open the store details form and set the **Start amount calculation** configuration to **Sum**, as shown in the following example image.
+    ![Start amount calculation configuration on the store details form](./media/declarestartamountsetup.png)
+6. Run the **1070 - Channel configuration** job.
+7. Navigate to POS for the store for which you want to allow cash management across multiple currencies.
+8. Run the **Declare start amount** operation.
+9. Select **Count** to open the supported denominations.
+10. Select the filter symbol, select the desired currency, enter the start amount, and then select **Save**.
+11. Repeat the above process to add the start amount for all desired currencies. The configuration described in step 5 ensures that the various amounts across multiple currencies are added to calculate the start amount. Only one currency amount can be added per transaction, and attempting to add the start amounts for multiple currencies in a single transaction will result in an error. Similar experiences are applicable for the float and tender removal operations.
+12. During the business day, you can remove the currency balance from the cash drawers by using the safe drop and bank drop operations.
+13. At the end of the business day, you can use the tender declare operation to record the totals across all currencies. The tender declare operation supports recording the data across multiple currencies in a single transaction, so it isn't necessary to record the totals one currency at a time.  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
