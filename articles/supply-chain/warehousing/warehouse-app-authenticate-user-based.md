@@ -68,13 +68,13 @@ For more information about how to set up web service applications in Microsoft E
 
 ## <a name="user-azure-ad"></a>Set up a mobile-device user account in Supply Chain Management
 
-Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
+Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
 
 1. In Supply Chain Management, go to **System administration \> Users \> Users**.
 1. Create a user.
 1. Assign the *Warehousing mobile device user* role to the user.
 
-![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
+![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
 
