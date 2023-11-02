@@ -293,7 +293,7 @@ For more information about how to consume Retail Server APIs in external applica
 
 ## UpdateProductWarehouseAvailabilities
 
-This API internally leverages Inventory Visibility service (IVS) to update omnichannel inventory data in real-time. Therefore, you must first enable IVS as inventory data provider for your Commerce environment as prerequisite to use this API.
+This API internally leverages Inventory Visibility service (IVS) to update omnichannel inventory data in real-time. Therefore, you must first enable IVS as inventory data provider for your Commerce environment as prerequisite to use this API. This API operates under [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role which is used for requests that represent an contractor works for a seller channel in B2B2B scenario.
 
 ### Input parameters
 
@@ -354,7 +354,7 @@ This API internally leverages Inventory Visibility service (IVS) to update omnic
 
 The GetEstimatedAvailability API and GetEstimatedProductWarehouseAvailability API can fetch inventory data from two data sources:
 
-- When Use Inventory Visibility as inventory data provider setting is turned on in Commerce shared parameters, the inventory availability data is retrieved from IVs you have configured for your Commerce headquarters environment.
+- When Use Inventory Visibility as inventory data provider setting is turned on in Commerce shared parameters, the inventory availability data is retrieved from IVS you have configured for your Commerce headquarters environment.
 
 - When Use Inventory Visibility as inventory data provider setting is turned off, the inventory availability data is retrieved from CSU channel databases where estimated physical available and total available quantities are calculated.
 
