@@ -42,11 +42,10 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Azure Active Directory (Azure AD) user authentication. If Azure AD is enabled this trigger won't work.   | 
+| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Azure Active Directory (Azure AD) user authentication. If Azure AD is enabled, this trigger won't work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
-
 
 ## Cash management triggers
 
@@ -56,7 +55,6 @@ The following table lists the available triggers and denotes whether they can be
 | PostTenderDeclarationTrigger | Noncancelable | Executed after the POS tender declaration.  |
 | PreFloatEntryTrigger         | Cancelable     | Executed before the POS float entry. |
 | PostFloatEntryTrigger        | Noncancelable | Executed after the POS float entry.  |    
-
 
 ## Customer triggers
 
@@ -70,15 +68,13 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |	 |
 | PostCustomerSearchTrigger | Noncancelable          | Executed after customer search is performed.       |	 |
 | PostIssueLoyaltyCardTrigger  | Noncancelable          | Executed after the loyalty card is issued.       |	 |
-| PreCustomerSaveTrigger  | Cancelable          | Executed after user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating a new customer or editing an existing customer.     |	 |
+| PreCustomerSaveTrigger  | Cancelable          | Executed after the user selects the **Save** button, and before the customer is created or updated. The `isNewCustomer` value in the option indicates whether the operation is creating a new customer or editing an existing customer.     |	 |
 | PostCustomerSaveTrigger  | Noncancelable          | Executed after the customer is created or updated.       |	 |
 | PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |	 |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |	 |
 | PostGetLoyaltyCardBalanceTrigger  | Noncancelable          | Executed after getting the loyalty card balance.       |	 |
 | PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |	 |
 | PreCustomerEditTrigger  | Cancelable          | Executed before editing the Customer.       |	10.0.19 |
-
-
 
 ## Discount triggers
 
@@ -207,12 +203,14 @@ The following table lists the available triggers and denotes whether they can be
 | PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
 
 ## Transfer Order triggers
+
 | Trigger              | Type           | Description                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
 | PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
 ## Inventory triggers
+
 | Trigger              | Type           | Description                                             | Release		|
 |----------------------|----------------|---------------------------------------------------------|--------------------------|
 | PreCreateInventoryDocumentTrigger | Cancelable | This trigger is executed before the inbound/outbound document is created (executed after the order input). | 10.0.15 |
@@ -226,6 +224,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreSaveStockCountJournalTrigger | Cancelable | This trigger is executed before the stock count journal is saved. | 10.0.16 |
 
 ## Business scenario
+
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
 
 To implement this scenario, you must complete these steps.
@@ -691,7 +690,7 @@ To add the custom receipt layout, follow these steps.
 3. Select **New** in **Receipts formats**.
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.
 5. Select **Designer** to open the receipt designer.
-6. Follow the instructions if prompted to install. Enter the Azure Active Directory (AAD) credentials to launch the designer.
+6. Follow the instructions if prompted to install. Enter the Azure Active AD credentials to launch the designer.
 7. Drag and drop the required field into the header, lines, or footer. Or, copy from the existing receipt format by using the copy feature and then edit it.
 8. Select **Save**.
 9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Receipt profiles**.
@@ -710,7 +709,7 @@ To configure the XPS printer for quick testing, follow these steps.
 4. Expand the **Printer** FastTab. In the **Printer** drop-down list, select **Windows driver** and in the device name field enter **Microsoft XPS Document Writer**.
 5. Select **Save**.
 6. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
-7. Select **Registers (1090)**, and then select **Run now** in the action bar. When prompted, select **Yes** to run the job. 
+7. Select **Registers (1090)**, and then select **Run now** on the action bar. When prompted, select **Yes** to run the job. 
 
 ## Validate the extension
 
