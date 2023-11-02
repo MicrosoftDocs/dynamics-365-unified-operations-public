@@ -2,7 +2,7 @@
 title: Store Commerce app triggers and printing
 description: This article describes how to use triggers to capture events that occur before and after any Microsoft Dynamics 365 Commerce Store Commerce app operations.
 author: josaw1
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -161,8 +161,6 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallCustomerQuoteTrigger (10.0.18)	| Cancelable 	 | Executed before the customer quote is recalled from the recall order view.|
 | PostRecallCustomerQuoteTrigger (10.0.18)	| Non-Cancelable 	 | Executed after the customer quote is recalled from the recall order view.|
 
-
-
 ## Shift triggers
 
 | Trigger              | Type           | Description                                             | Release    |
@@ -236,6 +234,8 @@ To implement this scenario, you must complete these steps.
 2. **CRT extension:** Generate the receipt data for printing.
 
 ## Implement a trigger
+
+To implement a trigger, follow these steps.
 
 1. Open Visual Studio 2015 in administrator mode.
 2. Open the **ModernPOS** solution from **…\RetailSDK\POS**.
@@ -430,9 +430,9 @@ To implement this scenario, you must complete these steps.
 
 ## Override the CRT receipt request to generate the receipt data
 
+The following procedure describes how to override an existing CRT request to print a receipt for suspended transactions. 
 
-This section explains how to override the existing CRT request to print a receipt for suspended transactions. 
-
+To override the CRT receipt request to generate the receipt data, follow these steps.
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
@@ -684,15 +684,17 @@ This section explains how to override the existing CRT request to print a receip
 
 ## Add the custom receipt layout
 
+To add the custom receipt layout, follow these steps.
+
 1. Open Dynamics 365 Commerce.
-2. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Receipts formats**.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> **Receipts formats**.
 3. Select **New** in **Receipts formats**.
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.
 5. Select **Designer** to open the receipt designer.
 6. Follow the instructions if prompted to install. Enter the Azure Active Directory (AAD) credentials to launch the designer.
 7. Drag and drop the required field into the header, lines, or footer. Or, copy from the existing receipt format by using the copy feature and then edit it.
 8. Select **Save**.
-9. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Receipt profiles**.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Receipt profiles**.
 10. Select the **Email receipt** profile, or the profile you stores. Select the **Add** button on the **General** tab.
 11. In the **Receipt type**, select **CustomReceiptType7** and in the **Receipt format** select **Suspend**.
 12. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**.
@@ -700,15 +702,19 @@ This section explains how to override the existing CRT request to print a receip
 
 ## Configure the XPS printer for quick testing
 
-1. Go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS profiles** > **Hardware profiles**.
+To configure the XPS printer for quick testing, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 2. Select the hardware profile that your device is using. For example, in the demo data all the Houston devices uses **HW002**.
 3. Select **Edit** on the action bar.
 4. Expand the **Printer** FastTab. In the **Printer** drop-down list, select **Windows driver** and in the device name field enter **Microsoft XPS Document Writer**.
 5. Select **Save**.
-6. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+6. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 7. Select **Registers (1090)**, and then select **Run now** in the action bar. When prompted, select **Yes** to run the job. 
 
 ## Validate the extension
+
+To validate the extension, follow these steps.
 
 1. Press **F5** and deploy the POS to test your customization.
 2. After the POS starts, sign in to POS and add an item to a transaction.
