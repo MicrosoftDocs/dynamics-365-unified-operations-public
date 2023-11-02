@@ -37,7 +37,7 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 3. Provide a **unique name** for the environment.
 
     > [!NOTE]
-    > For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
+    > `sandbox` and `trial` are reserved and cannot be used for your environment name. Additionally, environment names are limited to 20 characters due to the total length of the resulting URL.
 
 4. Select the **region** where you want this environment to be deployed. 
 
