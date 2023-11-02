@@ -3571,7 +3571,7 @@
         - name: Panama
           items: 
           - name: Panama overview
-            href: localizations/iberoamerica/pamana.md
+            href: localizations/iberoamerica/panama.md
           - name: Set up a legal entity and tax information for Panama 
             href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
           - name: Set up electronic invoicing for Panama
