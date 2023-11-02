@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 
-ms.search.region: Chile
+ms.search.region: Costa Rica
 # ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2023-10-20
