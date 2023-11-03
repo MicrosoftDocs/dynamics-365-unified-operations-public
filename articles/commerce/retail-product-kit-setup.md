@@ -2,7 +2,7 @@
 title: Retail product kit setup overview
 description: This article provides an overview of the process flow for setting up retail product kits.
 author: rickwyang
-ms.date: 11/02/2023
+ms.date: 11/03/2023
 ms.topic: overview
 audience: Application User
 ms.reviewer: josaw
