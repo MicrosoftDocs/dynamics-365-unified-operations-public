@@ -78,7 +78,7 @@ We recommend that you set up one Microsoft Entra ID user for each device. This a
 
 ## Do I have to map users on the Microsoft Entra ID applications page in Supply Chain Management when I use user-based authentication?
 
-No, you don't have to map users on the **Microsoft Entra ID applications** page in Supply Chain Management when you use user-based authentication. That approach is required only when you use service-based authentication. For more information about the settings, see [Create and configure a user account in Supply Chain Management](install-configure-warehouse-management-app.md#user-azure-ad).
+No, you don't have to map users on the **Microsoft Entra ID applications** page in Supply Chain Management when you use user-based authentication. That approach is required only when you use [service-based authentication](warehouse-app-authenticate-service-based.md#user-azure-ad).
 
 ## How often will the Warehouse Management mobile app have to be signed in?
 
