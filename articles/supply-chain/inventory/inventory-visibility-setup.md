@@ -174,7 +174,7 @@ Follow these steps to update your partition schema.
 
 1. Call the `Post` API with a body of `none` to change partition schema (using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 
-1. In Power Apps, turn on the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update configuration](inventory-visibility-power-platform.md#update-configuration).
+1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature and [update configuration](inventory-visibility-power-platform.md#update-configuration).
 
 1. In Power Apps, [check runtime configuration](inventory-visibility-power-platform.md#find-service-endpoint-and-read-configuration). The field `CachePartitonIdVersion` should show a value of `ByLocationAndProductIdMod64`.
 
