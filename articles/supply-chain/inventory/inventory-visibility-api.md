@@ -608,8 +608,8 @@ Body:
 In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
 
 - `organizationId` should contain only one value, but it's still an array.
-- `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
+- `productId` could contain one or more values. If it's an empty array, all products of the specific sites and locations will be returned. In this case, `siteId` and `locationId` should not be empty.
+- `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both are empty arrays, all sites and locations of the specific products will be returned. In this case, `productId` should not be empty.
 
 We suggest that you use the `groupByValues` parameter following your configuration of indexing. For more information, refer to [onhand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration).
 

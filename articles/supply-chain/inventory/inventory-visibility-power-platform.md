@@ -17,19 +17,11 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This article describes some basic usage of the Inventory Visibility app.
+This article describes some basic usage of the Inventory Visibility power app.
 
 Inventory Visibility power app offers two versions of model-driven user experiences for visualization. Users now have the option to choose between the new version UI (referred to as UI Version 2 in this article) and the legacy UI (also refferred to as UI Version 1 in this article).
 
- This app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features:
-
-- It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
-- It supports real-time on-hand inventory queries on various dimension combinations.
-- It provides a UI for posting reservation requests.
-- It provides a view of the inventory on-hand for products together with all dimensions.
-- It provides a view of an on-hand inventory list for products together with predefined dimensions. The on-hand list view can be either a full summary or a preloaded result from an on-hand query.
-
-## <a name="introduction"></a>Introduction
+## Introduction
 
 For UI Version 2 users, refer to the following sections.
 - [Authenticate the Inventory Visibility app](#authenticate-the-inventory-visibility-app)
@@ -66,13 +58,13 @@ Before you start, [install and set up Inventory Visibility](inventory-visibility
 
 1. Go to **Settings (Preview)** - **Admin Settings** - **Set Tokens** and click **Manage** button.
 
-1. Enter **Client Id**, **Tenant Id**, and **Client Secret** in the dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter `Client Id`, `Tenant Id`, and `Client Secret` in the dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
 
 1. Click **Login** button. A new bearer token will be generated and will expire after an hour.
 
 ## Find service endpoint and read configuration
 
-The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. Currently there is no central endpoint to automatically redirect your request to the corresponding geography and region. Therefore, service endpoint is composed in the following pattern to include necessary information:
+The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. Currently there is no central endpoint to automatically redirect your request to the corresponding geography and region. Therefore, service endpoint is composed in the following pattern to include necessary information.
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
@@ -98,18 +90,15 @@ Each time configuration is modified, new configuration will not take effect unti
 
 ## Partition configuration
 
-Partition configuration controls how data is distributed. Operations inside the same partition will deliver better performance at lower cost, comparing to those cross multiple partitions. Currently Inventory Visibility supports two schemas of partition configuration and solution includes the default one as below.
+Partition configuration controls how data is distributed. Operations inside the same partition will deliver better performance at lower cost, comparing to those cross multiple partitions. Below is the default partition configuration included in solution, so *you don't need to set it up yourself*.
 
 | Base dimension | Hierarchy |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-Generally, *you don't need to set it up yourself*, unless you encounter a specific error when enabling the Inventory Visibility integration job. Refer
-to [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](inventory-visibility-setup.md#update-partition-schema-to-two-if-you-get-an-error-when-enabling-the-inventory-visibility-integration-job) for more details. 
-
 > [!IMPORTANT]
-> Don't customize the default partition configuration. If you delete or change it without official guide, you are likely to encounter an unexpected error.
+> Don't customize your partition configuration. If you delete or change it without official guide, you are likely to encounter an unexpected error.
 
 ## Onhand index configuration
 
@@ -121,9 +110,9 @@ As defined in the following table, an index is composed of *set number*, *dimens
 |---|---|
 | *Set number* | Dimensions under the same set number belong to the same set (index), and will be grouped together. |
 | *Dimension(s)* | Base dimension(s) that query results are aggregated on. |
-| *Hierarchy* | Hierarchy determines the specific combinations of dimensions that can take advantage of index query. For example, if you set up an index with dimensions and hierarchy of `(ColorId, SizeId, StyleId)`, only queries that use the following four dimension combinations for their filter and group-by fields will be enhanced. (Filter feild is not order-restricted.) The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. Queries with other dimension combinations will not be sped up. |
+| *Hierarchy* | Hierarchy determines the specific combinations of dimensions that can take advantage of index query. For example, if you set up an index with dimensions and hierarchy of `(ColorId, SizeId, StyleId)`, only queries that use the following four dimension combinations for their filter and group-by fields will be enhanced. (Filter field is not order-restricted.) The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. Queries with other dimension combinations will not be sped up. |
 
-A list of indexes are provided in the default onhand index configuration. To make modification, refer to [Set up onhand index configuration](#set-up-onhand-index-configuration) or [Set up onhand index configuration (Legacy UI)](#set-up-onhand-index-configuration-legacy-ui) according to your UI version. An [example](#example) is also provided to help with understanding.
+A list of indexes are provided in the default onhand index configuration. To make modification, refer to [set up onhand index configuration](#set-up-onhand-index-configuration) or [set up onhand index configuration (Legacy UI)](#set-up-onhand-index-configuration-legacy-ui) according to your UI version. An [example](#onhand-index-configuration-example) is also provided to help with understanding.
 
 > [!TIP]
 > Be aware of the following tips when setting up your onhand index configuration:
@@ -135,6 +124,14 @@ A list of indexes are provided in the default onhand index configuration. To mak
 1. Open the **Inventory Visibility** power app.
 
 1. Go to **Settings (Preview)** - **Index Configurations**. One line in the table represents one dimension in the corresponding index.
+
+1. [Update Configuration](#update-configuration) after you modify onhand index configuration.
+
+### Set up onhand index configuration (Legacy UI)
+
+1. Open the **Inventory Visibility** power app.
+
+1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** - **Product Index Hierarchy**. Set number and hierarchy will be automatically generated when you make modification.
 
 1. [Update Configuration](#update-configuration) after you modify onhand index configuration.
 
@@ -162,7 +159,7 @@ The following table shows an onhand index configuration.
 | 1 | `SizeId` | 2 |
 | 1 | `StyleId` | 3 |
 
-This index improves the following on-hand inventory queries:
+This index improves the performance of following on-hand inventory queries.
 
 - `()` – Grouped by all
 
@@ -216,7 +213,7 @@ Delete all out-of-box configurations except for ones contained in Inventory Visi
 
 ## Delete all inventory data
 
-Delete all Inventory Visibility data in both cache and Ddataverse except for configurations. Deleted data cannot be restored and user will be blocked until deletion completed.
+Delete all Inventory Visibility data in both cache and Dataverse except for configurations. Deleted data cannot be restored and users will be blocked until deletion completes.
 
 1. Open the **Inventory Visibility** power app.
 
@@ -224,17 +221,17 @@ Delete all Inventory Visibility data in both cache and Ddataverse except for con
 
 ## Inventory query and update
 
-The **Operational Visibility** group provides pages to make real-time on-hand inventory query and update. When the [soft reservation](inventory-visibility-reservations.md) feature is [turned on](#feature-management), reservation requests can also be posted. For more details about API requests, refer to [Inventory Visibility public APIs](inventory-visibility-api.md).
+The **Operational Visibility** group provides pages to make real-time on-hand inventory query and update. When the [soft reservation](inventory-visibility-reservations.md) feature is [enabled](#feature-management), reservation requests can also be posted. For more details about API requests, refer to [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 Below are the common components for each of these pages.
 
 - **Post/Query** button on the top navigation bar allows users to send API requests to Inventory Visibility Add-in. It is disabled until all necessary contents for an API call are filled in the page.
 
-- A Product section to fill in the `Product ID`, `Organization ID`, and dimensions for the API request. User can click **Edit Dimensions** button and select dimensions needed for the request.
+- A **Product** section to fill in `Product ID`, `Organization ID`, and dimensions for the API request. User can click **Edit Dimensions** and select dimensions needed for the request.
 
-- A settings section to fill in API-specific settings. E.g., whether to query available-to-promise contents for on-hand query.
+- A **Settings** section to fill in API-specific settings. E.g., whether to query available-to-promise contents for on-hand query.
 
-- A request body section to show the raw contents for this query. This is a read-only field for developer references. 
+- A **Request Body** section to show the raw contents of this request. This is a read-only field for developer references. 
 
 Detailed setup for each type of operations is as below.
 
@@ -244,9 +241,9 @@ The **On Hand Query** page in **Operational Visibility** group allows users to q
 
 1. In the **Product** section, enter the `Organization ID`, `Site ID`, and `Location ID` values that you want to query.
 
-1. Click **Edit Dimensions** button to select or unselect dimensions from query body.
+1. Click **Edit Dimensions** to select or unselect dimensions from query body.
 
-1. Select `Use all values` if a dimension should be included in query, but not filtering any certain value.
+1. Select `Use all values` if a dimension should be included in query without filtering any certain value.
 
 1. In the **Query Settings** section, select `Query ATP` to include ATP related information; select `Include negative quantities` to include negative quantities for calculated measure results.
 
@@ -258,7 +255,7 @@ The **Inventory Adjustment** page in **Operational Visibility** group allows use
 
 1. In the **Product** section, enter the `Organization ID`, `Site ID`, and `Location ID` values that you want to update inventory.
 
-1. Click **Edit Dimensions** button to select or unselect dimensions from request body. Enter correpsonding values.
+1. Click **Edit Dimensions** to select or unselect dimensions from request body. Enter correpsonding values.
 
 1. Click **Add** button in **Measures to update** section. Select data source, physical measure and quantity to update. At least one measure is required for an update. 
 
@@ -269,17 +266,17 @@ The **Inventory Adjustment** page in **Operational Visibility** group allows use
 The **Soft Reserve** page in **Operational Visibility** group allows users to make soft reservations to inventory.
 
 > [!NOTE]
-> The capability of making soft reservations through user interface is intended for feature test. Each soft reservation request should be associated with a transaction order line change (creation, modification, deletion, and so on). Therefore, it is recommended to only make soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> The capability of making soft reservations through user interface is intended for feature test. Each soft reservation request should be associated with a transaction order line change (creation, modification, deletion, etc.). Therefore, it is recommended to only make soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and run a soft reservation.
 
 1. In the **Product** section, enter the `Organization ID`, `Site ID`, and `Location ID` values that you want to make soft reservation.
 
-1. Click **Edit Dimensions** button to select or unselect dimensions from request body. Enter correpsonding values.
+1. Click **Edit Dimensions** to select or unselect dimensions from request body. Enter correpsonding values.
 
 1. In **Reservation Settings** section, select `Enable negative inventory to support oversell` to skip available-for-reservation check, or unselect it to enforce the check.
 
-1. In **Reservation Settings** section, select for **Reserve on measure** the data source and physical measure to execute the soft reservation on, and then enter the quantity below. 
+1. In **Reservation Settings** section, select for `Reserve on measure` the data source and physical measure to execute soft reservation on, and then enter the quantity below. 
 
 1. Click **Post** button on top navigation bar to send the request. 
 
@@ -297,9 +294,9 @@ Allocation operations are only supported in Legacy UI.
 
 1. Click **Settings** button (gear symbol) at the top of the page.
 
-1. Enter **Client Id**, **Tenant Id**, and **Client Secret** in the **Settings** dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
+1. Enter `Client Id`, `Tenant Id`, and `Client Secret` in the **Settings** dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in).
 
-1. Click **Refresh** button next to the **Bearer Token** field. A new bearer token will be generated and will expire after an hour.
+1. Click **Refresh** button next to the `Bearer Token` field. A new bearer token will be generated and will expire after an hour.
 
     ![On-hand query settings.](media/inventory-visibility-query-settings.png "On-hand query settings")
 
@@ -313,7 +310,7 @@ To obtain your service endpoint and runtime configuration, apply the following s
 
 1. Open the **Inventory Visibility** power app.
 
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Show Service Details** button on the upper-right corner.
+1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Show Service Details** on the upper-right corner.
 
 ## Update configuration (Legacy UI)
 
@@ -321,9 +318,9 @@ Each time configuration is modified, new configuration will not take effect unti
 
 1. Open the **Inventory Visibility** power app.
 
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Update Configuration** button on the upper-right corner.
+1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **Update Configuration** on the upper-right corner.
 
-1. Enter **Client Id**, **Tenant Id**, and **Client Secret** in the dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in). Click **Login** button.
+1. Enter `Client Id`, `Tenant Id`, `and Client Secret` in the dialog box with the same values when you [installed the Inventory Visibility Add-in](inventory-visibility-setup.md#install-the-inventory-visibility-add-in). Click **Login** button.
 
 1. Check your configuration modification in the dialog box.
     > [!IMPORTANT]
@@ -331,23 +328,15 @@ Each time configuration is modified, new configuration will not take effect unti
     
 1. Click **Confirm Update** to commit. Runtime configuration will be replaced by your new configuration.
 
-### Set up onhand index configuration (Legacy UI)
-
-1. Open the **Inventory Visibility** power app.
-
-1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** - **Product Index Hierarchy**. Set number and hierarchy will be automatically generated when you make modification.
-
-1. [Update Configuration](#update-configuration) after you modify onhand index configuration.
-
 ## Delete all inventory data (Legacy UI)
 
-Delete all Inventory Visibility data except configurations in both cache and Ddataverse. Deleted data cannot be restored and user will be blocked until deletion completed.
+Delete all Inventory Visibility data except configurations in both cache and Dataverse. Deleted data cannot be restored and users will be blocked until deletion completes.
 
 1. Open the **Inventory Visibility** power app.
 
 1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **More** button (three dots symbol) on the upper-right corner.
 
-1. Click **Delete all inventory data** button.
+1. Click **Delete all inventory data**.
 
 ## Delete all configurations (Legacy UI)
 
@@ -357,7 +346,7 @@ Delete all out-of-box configurations except for ones contained in Inventory Visi
 
 1. Go to **Inventory Visibility (Legacy UI)** - **Configuration** and click **More** button (three dots symbol) on the upper-right corner.
 
-1. Click **Delete all configurations** button.
+1. Click **Delete all configurations**.
 
 ## Inventory query and update (Legacy UI)
 
