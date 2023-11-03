@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 08/29/2022
+ms.date: 11/03/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,9 +110,13 @@ When you enter data ahead of the place where the system is processing, you can e
 - If you create a new row by using the **Down arrow** key, all columns in the grid will appear as editable. By default, the focus will be put in the first column in the new row. This column might not be the same column that received the initial focus in the legacy grid, or the same column that receives focus after you select a **New** button. Your organization can customize the system and change the column that receives the initial focus when the **Down arrow** key is selected. For more information, see the [Specifying the column that receives the initial focus when new rows are created by using the Down arrow key](#developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key) section. Regardless, you can use personalization to optimize each grid for data entry. Specifically, you can reorder fields so that the first column is the column that you want to start to enter data in. You might also want to reorder fields in general for data entry, to reduce tab stops and hide any fields that aren't required for data entry in this particular view.
 
 ### Editing multiple rows simultaneously (bulk edit) 
-In versions 10.0.38 and later, users can update multiple selected rows in a single action using the **Bulk editing in grids** feature, which can be enabled through **Feature management**. To use this capability, first select the rows you wish to update in the grid and then select **Grid options**  > **Edit selected rows**. This action will open an **Edit rows** modal dialog that allows you to choose the column(s) you want to update and to provide the new value(s). Only columns backed by editable fields in the grid can be selected for update. The **Edit rows** dialog also allows you to define the order that columns will be update (from top to bottom), which can impact field level validations are triggered during the save process. After configuring the columns and values you want to update, select **Apply**. 
+In versions 10.0.38 and later, users can update multiple selected rows in a single action using the **Bulk editing in grids** feature, which can be enabled through **Feature management**. 
+To use this feature: 
+1. Select the rows you wish to update in the grid.
+2. Select **Grid options**  > **Edit selected rows**.
+3. This action will open an **Edit rows** dialog that allows you to choose the column(s) you want to update and to provide the new value(s). Only columns backed by editable fields in the grid can be selected for update. The **Edit rows** dialog defines the order that columns will be update (from top to bottom), which can impact field level validations are triggered during the save process. After configuring the columns and values you want to update, select **Apply**. 
 
-Similar to the **Pasting from Excel** capability below, the grid will show the updated contents in italics as a preview of the data changes. After reviewing to ensure the updated content looks correct, select **Discard** to cancel the bulk editing or **Save** to initiate the save process. When saving, the system will use the **Typing ahead of the system** save model to submit the updates one row at a time, ensuring that all form and field validation is executed for each row. You will monitor the progress and results of each validation by checking the row status at the beginning of the row.     
+Similar to the **Pasting from Excel** below, the grid displays the updated contents in italics as a preview of the data changes. Select **Discard** to cancel the bulk editing or **Save** to initiate the save process. When saving, the system uses the **Typing ahead of the system** save model to submit the updates one row at a time, ensuring that all form and field validation is executed for each row. You will monitor the progress and results of each validation by checking the row status at the beginning of the row.     
 
 ### Pasting from Excel
 Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
@@ -131,7 +135,7 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 > [!NOTE]
-> The ability to evaluate math expressions in numeric controls is available outside the grid as well! 
+> The ability to evaluate math expressions in numeric controls is available outside the grid. 
 
 ## Grouping tabular data
 Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** capability lets users organize their tabular data in interesting ways within finance and operations apps. Grouping works together with the **Calculated values** capability to let you gain meaningful insights into the data by displaying calculated values (for example, subtotals) at the group level.
