@@ -62,7 +62,7 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 1. Change **Schedule for 180 days** toggle to true to support the longer ATP schedule period (180 days).
 
     > [!IMPORTANT]
-    > By default, the ATP feature is limited to 7 days. Please note that the 7-day ATP and 180-days ATP features are separate and independent from each other. Any schedule changes created or modified using the 7-day ATP feature will not take effect when the 180-day ATP feature is turned on.
+    > By default, the ATP feature is limited to 7 days. Please note that the 7-day ATP and 180-days ATP features are separate and independent from each other. Any schedule changes created or modified using the 7-day ATP feature will not take effect when the 180-day ATP feature is turned on. If you have used 7-days ATP feature and want to migrate to 180-days ATP, we suggest to delete old data and post onhand change schedule again after enabling 180-days.
 
 1. For field **Max Schedule Period (Days)**, enter the number of days that users can view and submit scheduled on-hand changes. Users who query for stock information will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in this period, starting with the current date. The maximum value for this field is 180 days. By default, it is set to 30 days, which means you can schedule changes for up to 30 days from today.
 
