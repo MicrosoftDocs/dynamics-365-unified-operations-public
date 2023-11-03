@@ -674,6 +674,8 @@
         href: cash-bank-management/cash-discount-handling-overpayments.md
       - name: Manage IBAN account validation
         href: cash-bank-management/iban-validation.md
+      - name: Net customer and vendor balances
+        href: cash-bank-management/Net-customer-and-vendor-balances.md 
       - name: Settlement overview
         href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments

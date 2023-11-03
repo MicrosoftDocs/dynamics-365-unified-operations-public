@@ -91,37 +91,12 @@ For details about each authentication method and how to set it up, see the follo
 - Service-based authentication (deprecated): [Service-based authentication](warehouse-app-authenticate-service-based.md)
 
 > [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
 - User-based authentication: [Remove access for a device that authenticates by using the device code flow](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
-
-## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
-
-To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps.
-
-1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
-
-    1. In Supply Chain Management, go to **System administration \> Users \> Users**.
-    1. Create a user.
-    1. Assign the *Warehousing mobile device user* role to the user.
-
-    ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
-
-1. Associate your Microsoft Entra ID application with the Warehouse Management mobile app user:
-
-    1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
-    1. Select **New** on the Action Pane to create a line.
-    1. In the **Client ID** field, enter the client ID that you made a note of in the previous section.
-    1. In the **Name** field, enter a name.
-    1. In the **User ID** field, select the user ID that you just created.
-
-> [!TIP]
-> One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
->
-> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## Configure the application by importing connection settings
 
@@ -272,6 +247,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 ## Additional resources
 
 - [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Service-based authentication](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)

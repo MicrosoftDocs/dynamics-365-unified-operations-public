@@ -66,9 +66,15 @@ For more information about how to set up web service applications in Microsoft E
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## Set up mobile-device user accounts in Supply Chain Management
+## <a name="user-azure-ad"></a>Set up a mobile-device user account in Supply Chain Management
 
-To manage user access and permissions in Supply Chain Management while integrating with Microsoft Entra ID, you must follow the procedures outlined in [Create and configure a user account in Supply Chain Management](install-configure-warehouse-management-app.md#user-azure-ad).
+Create a user that corresponds to the user credentials for the Warehouse Management mobile app.
+
+1. In Supply Chain Management, go to **System administration \> Users \> Users**.
+1. Create a user.
+1. Assign the *Warehousing mobile device user* role to the user.
+
+![Warehousing mobile device user role assigned to a user.](media/app-connect-app-users.png "Warehousing mobile device user role assigned to a user")
 
 ## <a name="revoke"></a>Remove access for a device that authenticates by using the device code flow
 
@@ -87,6 +93,7 @@ To disable a user in Microsoft Entra ID, follow these steps.
 
 ## Additional resources
 
+- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Service-based authentication](warehouse-app-authenticate-service-based.md)
 
