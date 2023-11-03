@@ -214,10 +214,10 @@ When **Value base for header charges** is set to *Sum including charge amounts*,
 
 The **Re-searching on posting** option ensures that header charges are assessed against the header-level auto-charge setup upon posting. Auto-charges set up as tiered charges are automatically assessed. The assessment compares automatically applied header charges against the auto-charges setup. It ensures that all the header charges automatically applied to sales orders and quotations on creation are similar to the auto-charges setup. All automatically added header charges that were manually changed or deleted are restored. All manually added header charges are left unchanged. The setting ensures that the auto-charge setup is always applied.
 
-<!-- KFM: Continue here -->
-
 > [!NOTE]
-> Tiered charges are only supported for sales order, and as such is only included in the re-search for sales orders.
+> Tiered charges are only supported for sales orders, and are therefore only included in the re-search for sales orders.
+
+The following procedure illustrates the effect of the **Re-search on posting** option. <!-- KFM: Continue here-->
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
