@@ -33,10 +33,9 @@ The following illustration shows an example of a list of jobs for a work order i
 [<img src="media/mobile-app-in-phone.png" alt="Job list for a work order in the Asset Management mobile app." title="Job list for a work order in the Asset Management mobile app" width="250" />](media/mobile-app-in-phone.png#lightbox)
 
 > [!NOTE]
-> The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
+> Use of the Asset Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app for maintenance requests requires a *Dynamics 365 Team Members* license. Using the app for processing work orders requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-> [!NOTE]
-> The use of the app is covered by the Supply Chain Management user licenses. Using the app for maintenance requests requires a Dynamics Team member license. Using the app for processing work orders requires a Dynamics Activity user license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see https://download.microsoft.com/download/9/6/7/96706B15-1CBE-47B7-AB9E-6BC31A377BBB/Dynamics%20365%20Licensing%20Guide%20Oct%202023.pdf.
+The Asset Management mobile app replaces the now-deprecated [Asset management mobile workspace](../asset-management-mobile-workspace.md).
 
 ## Next steps
 
