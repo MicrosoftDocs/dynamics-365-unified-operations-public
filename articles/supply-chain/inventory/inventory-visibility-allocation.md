@@ -43,7 +43,7 @@ The inventory allocation feature lets sales planners or key account managers man
 
 The following terms and concepts are useful in discussions of inventory allocation:
 
-- **Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type. A maximum of eight allocation group names can be set, corresponding to **Group0** to **Group7** in the hierarchy. **Group0** and **Group7** correspond to the highest and lowest levels of hierarchy, respectively. When creating an allocation, hierarchies must be specified from the highest to the lowest order. For example, suppose your configuration has *Country/region* for **Group0**, *State* for **Group1**, and *City* for **Group2**. *Country/region* and *State* are both required when specifying *City*, however, an allocation can be created with *Country/region* and *State*, or *Country/region* only. Follow these steps to view and update allocation groups.
+- **Allocation group** – The group that owns the allocation, such as a sales channel, customer group, or order type.
 - **Allocation group value** – The value of each allocation group. For example, *web* or *store* might be the value of the sales channel allocation group, whereas *VIP* or *normal* might be the value of the customer allocation group.
 - **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. A maximum of eight levels of hierarchy are supported. In Power Apps, on the **Allocation Configuration** page for Inventory Visibility, they are labeled **Group0** to **Group7**. For example, you could define *Channel* as hierarchy level 1 (**Group0**), *Region* as level 2 (**Group1**), and *Customer group* as level 3 (**Group2**). During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you could create an allocation of 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
@@ -66,6 +66,20 @@ To setup Inventory Allocation, user follows below process:
 - Configure allocation groups
 - Update configuration to activate all the changes
 
+ ### Enable inventory allocation feature
+
+1. Enable inventory allocation feature
+   
+- Setup Inventory Allocation feature in the Inventory Visibility app by going to **Settings \> Feature Management \> Inventory Allocation \> Manage**.
+- `Feature Name` is an non-editable field with value "Allocation"
+- `Enable feature` controls on-off of the feature. Feature is enabled when toggled on, and disabled otherwise. Enable the feature and update configuration to proceed.
+
+2. Configure the `available to allocate` calculated measure and `allocated` physical measure.
+
+- Go to **Settings \> Feature Management \> Data Source Settings \> Manage**. Select data source with name `@iv`. Go to `Calculated Measures` section, select the record with name `@available_to_allocate`. You can manually create one if it does not exist. 
+
+- Modify the calculated measure details formula in `Calculated Measure Details` section as per actual needs. Be sure to always include `@iv.@allocated` physical measure in the formula. 
+
 When you enable the allocation feature and call the configuration update API, Inventory Visibility creates one predefined data source and several initial measures.
 
 The data source is named `@iv`. It includes a set of default physical measures:
@@ -83,24 +97,12 @@ To use allocation, you must correctly set up the formula for the available-to-al
 > Data source `@iv` is a predefined data source and the physical measures defined in `@iv` with prefix `@` are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature.
 > You can add new physical measures to the predefined calculated measure `@iv.@available_to_allocate`, but you must not change its name.
 
-### Setup allocation group and enable feature from Inventory Visibility app
-1. Enable inventory allocation feature
-   
-- Setup Inventory Allocation feature in the Inventory Visibility app by going to **Settings \> Feature Management \> Inventory Allocation \> Manage**.
-- `Feature Name` is an non-editable field with value "Allocation"
-- `Enable feature` controls on-off of the feature. Feature is enabled when toggled on, and disabled otherwise. Enable the feature and update configuration to proceed.
-
-2. Configure the `available to allocate` calculated measure and `allocated` physical measure.
-
-- Go to **Settings \> Feature Management \> Data Source Settings \> Manage**. Select data source with name `@iv`. Go to `Calculated Measures` section, select the record with name `@available_to_allocate`. You can manually create one if it does not exist. 
-
-- Modify the calculated measure details formula in `Calculated Measure Details` section as per actual needs. Be sure to always include `@iv.@allocated` physical measure in the formula. 
-
-3. Configure allocation groups
+### Set up allocation group
 
 - Go back to **Settings \> Feature Management \> Inventory Allocation \> Manage**. `Allocation group` section contains the group name for allocations. The `GroupLevel` field controls the allocation group names and corresponding hierarchies valid from 0~7. Double-click on the record to edit the group name and level. 
+-  A maximum of eight allocation group names can be set, corresponding to **Group0** to **Group7** in the hierarchy. **Group0** and **Group7** correspond to the highest and lowest levels of hierarchy, respectively. When creating an allocation, hierarchies must be specified from the highest to the lowest order. For example, suppose your configuration has *Country/region* for **Group0**, *State* for **Group1**, and *City* for **Group2**. *Country/region* and *State* are both required when specifying *City*, however, an allocation can be created with *Country/region* and *State*, or *Country/region* only. Follow these steps to view and update allocation groups.
 
-4. Update configuration to activate all the changes
+Update configuration to activate all the changes
 
 ### Setup allocation group and enable feature from Inventory Visibility app's Legacy UI
 
