@@ -56,7 +56,7 @@ This section provides an example scenario, based on the standard demo data, that
 
 ### Enable demo data
 
-To work through this scenario using the demo records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
+To work through this and the other scenarios in this article using the demo records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
 
 ### Create sample auto charges
 
@@ -109,7 +109,7 @@ The charges you set up can now be applied automatically to a sales quotation or 
 
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New** to create a new sales order.
-1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the charge you set up (*USD*).
+1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
 1. The new sales order opens. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
 1. The **Maintain charges** page opens, showing the following two lines, which came from your auto-charges setup:
 
@@ -172,7 +172,7 @@ The following example illustrates how setting **Value base for header charges** 
 1. On the **Charges** FastTab, set **Value base for header charges** to *Sum of line net amounts only*.
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New** to create a new sales order
-1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the charge you set up (*USD*).
+1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
 1. Your new order opens. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
 1. With you new order line still selected, select **Financials \> Maintain charges** from the **Sales order lines** FastTab toolbar.
 1. The **Maintain charges** page opens. On the Action Pane, select **New** to add a new line charge. Then enter the following values for the new line:
@@ -193,7 +193,7 @@ The following example illustrates how setting **Value base for header charges** 
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
-1. On the **Charges** FastTab, change **Value base for header charges** to *value base for header charges*.
+1. On the **Charges** FastTab, change **Value base for header charges** to *Sum including charge amounts*.
 1. Open the sales order that you created in the previous example.
 1. On Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
 1. The **Totals** dialog opens. This time, the value shown for **Total Charges** is 114.20 USD. It's calculated as follows:
@@ -217,105 +217,75 @@ The **Re-searching on posting** option ensures that header charges are assessed 
 > [!NOTE]
 > Tiered charges are only supported for sales orders, and are therefore only included in the re-search for sales orders.
 
-The following procedure illustrates the effect of the **Re-search on posting** option. <!-- KFM: Continue here-->
+The following procedure illustrates the effect of the **Re-search on posting** option.
 
+1. If you haven't already done so, [set up the auto charges specified for example scenario 1](#scenario1).
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
 1. On the **Charges** FastTab, make the following settings:
-    - **Re-search on posting** – 	Select the option 'Yes'
-    - Ensure that the **value base for header charges** is "Sum of line net amounts only".
-
-With the auto charge setup done previously, do the following:
-
+    - **Re-search on posting** – Set to *Yes*.
+    - **value base for header charges** – Set to *Sum of line net amounts only*.
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New** to create a new sales order
-    Create the sales order for customer US-004, or any customer using USD as currency.
-    Create a sales line. Ensure that the line net amount is 100 USD
-    On the sales order header do the following:
-1. Header ribbon **Sell**, **Maintain charges**
-1. Select **Delete** to all the charges automatically added from auto charges
-1. Select **New** to add a line charge with the following values:
-    - **Charge Code** – Freight
-    - **Category** – Fixed
-    - **charges value** – 10
-    - **Currency** – USD
-1. Select **Save**
-1. On header action pane, tab **Sales order**, select **Totals**.
-
-Notice the amount for **Total Charges**. It contains the following: 10 USD (charge fixed manually added) = 10 USD
-
-1. Header ribbon **Sell**, **Confirm sales order**
-1. Click **OK** to confirm the sales order
-
-Back in  the sales order header do the following:
-
-1. Header ribbon **Sell**, **Maintain charges**
-
-    Notice that the auto charges deleted previously have been re-applied on the sales order header. It contains the following: 10 USD (charge fixed manually added) + 100 USD (header charge fixed) + 4 USD (header charge percentage and compound (2% of 200: 100(line amunt)+100(header charge with lower position).
-
-1. Close the form
-Back in  the sales order header do the following:
-1. Header ribbon **Sell**, **Totals**
-
-Notice the amount for **Total Charges**. It contains the following: 10 USD (line charge fixed) + 100 USD (header charge fixed) + 4 USD (header charge percentage and compound (2% of 200: 100(line amount)+100(header charge with lower position) = 114 USD
-
-## Working with Combine charges on combined invoices parameter setting
-
-This setting controls how header level auto charges are calculated when multiple sales orders are combined into a single invoice using the "summary update" function. Set this to "No" to have header level auto charges calculated per sales order included in the summary invoice, covering both charge category fixed and percentage, with/without compound. In scenarios where header auto charges are setup with the intent of representing a per invoice charge rather than an per sales order charge, this may result in over charging.
-
-Consider the following scenario:
-
-1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
-1. Open the **Prices** tab.
-1. On the **Charges** FastTab, make the following settings:
-    - **Re-search on posting** – Select the option 'Yes'
-    - **Combine charges on combined invoices** – Select the option 'No'
-    - Ensure that the **value base for header charges** is "Sum of line net amounts only".
-
-1. Go to **Accounts receivable \> Charges setup \> Auto charges**.
-1. Select Level 'Header'
-1. On the Action Pane, select **New** to create a charges.
-1. In the header of the new record, set the following fields:
-    - **Account code** – All
-    - **Item code** – All
-    - **Mode of delivery code** – All
-    - **Charge description** – Enter the appropriate description.
-
+1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
+1. The new sales order opens. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
+1. The **Maintain charges** page opens, showing lines that came from your auto-charges setup.
+1. Use the **Delete** button on the Action Pane to delete each of the auto-charge lines so that there are no charges listed.
+1. Select **New** on the Action Pane to add a new charge line. Then make the following settings for the new line:
+    - **Position** – Enter *3*.
+    - **Sequence** – Enter *3*.
+    - **Charges code** – Select *Freight*.
+    - **Category** – Select *Fixed*.
+    - **Charges value** – Enter *10*.
+    - **Currency** – Select *USD*.
 1. On the Action Pane, select **Save**.
-1. In the Lines grid Action ribbon, select **Add** to create the following charge line.
+1. On the Action Pane, select the back button to return to your sales order.
+1. On the Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
+1. On the **Totals** dialog, notice that **Total charges** shows the value of the fixed header charge that you just added (10 USD). Then close the dialog.
+1. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Sell** tab and, from the **Generate** group, select **Confirm sales order**.
+1. The **Confirm sales order** dialog opens. Select **OK** to confirm the order.
+1. You return to the sales order. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
+1. Notice that the two auto charges you deleted have been reapplied on the sales order header while your custom line is still included. This happened because the **Re-search on posting** option is enabled and you confirmed (posted) the order. As a result, the following three lines should now be shown:
 
-    - **Sequence** – 1
-    - **Compound** – unchecked
-    - **Currency** – USD
-    - **Charges code** – Freight
-    - **Category** – Fixed
-    - **Charges value** – 100
-    - **From amount** – Empty.
-    - **To amount** – Empty
-    - **Sales tax group** – Empty
-    - **Site** and **Warehouse** – Empty
-    - **Keep** – unchecked
+    | Position | Sequence | Compound | Charges code | Category | Charges value |
+    | --- | --- | --- | --- | --- | --- |
+    | 1 | 1 | No | Freight | Fixed | 100 |
+    | 2 | 2 | Yes | Handling | Percent | 2 |
+    | 3 | 3 | No | Freight | Fixed | 10 |
 
-1. In the Lines grid Action ribbon, select **Add** to create the following charge line.
+1. On the Action Pane, select the back button to return to your sales order.
+1. On the Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
+1. On the **Totals** dialog, notice that **Total charges** now shows the calculated value of all three header charges.
 
-    - **Sequence** – 2
-    - **Currency** – USD
-    - **Charges code** – Handling
-    - **Category** – Percentage
-    - **Compound** – checked
-    - **Charges value** – 2
-    - **From amount** – Empty.
-    - **To amount** – Empty
-    - **Sales tax group** – Empty
-    - **Site** and **Warehouse** – Empty
-    - **Keep** – unchecked
+    **Total Charges** = [*Line charge fixed* (10 USD)] &plus; [*Header charge fixed* (100 USD)] &plus; [*Header charge percentage and compound* (2% of line amount (2% of 100 USD = 2 USD) &plus; 2% of header charge with lower position (2% of 100 USD = 2 USD))] = 114 USD.
+
+## Example scenario 4: Combine charges on combined invoices options
+
+The **Combine charges on combined invoices** setting on the **Accounts receivable parameters** page controls how header-level auto charges are calculated when multiple sales orders are combined into a single invoice using the *Summary update* function.
+
+- Set **Combine charges on combined invoices** to *Yes* to first calculate the grand total of all sales orders included in the combined invoice and then apply the auto charges to that total.
+- Set **Combine charges on combined invoices** to *No* to calculate header-level auto charges individually for each sales order included in the summary invoice. In scenarios where header-level auto charges are set up with the intent of representing per-invoice charges rather than a per-sales order charges, this setting may result in over charging.
+
+The following scenario illustrates the effects of this setting:
+
+1. If you haven't already done so, [set up the auto charges specified for example scenario 1](#scenario1).
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Prices** tab.
+1. On the **Charges** FastTab, make the following settings:
+    - **Re-search on posting** – Set to *Yes*.
+    - **Combine charges on combined invoices** – Set to *No*.
+    - **value base for header charges** – set to *Sum of line net amounts only*.
 
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
-1. On the Action Pane, select **New** to create a new sales order
-
-Create **two** identical sales orders for customer US-004, or any customer using USD as currency. 
-Create a sales line. Ensure that the line net amount is 100 USD.
-Pick and pack both sales orders.
+1. Follow these steps to create a new sales order with one sales line:
+    1. On the Action Pane, select **New** to create a new sales order.
+    1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
+    1. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
+    1. On the Action Pane, select **Save**.
+1. Repeat the previous step to create a second, identical sales order. <!--KFM: Continue here -->
+1. Pick and pack both sales orders.
 
 1. In  **Sales and Marketing \> Sales orders \> All sales orders** select the two sales orders
 1. In header ribbon **Invoice**, Generate **Invoice**
