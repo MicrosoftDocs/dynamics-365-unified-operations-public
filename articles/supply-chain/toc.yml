@@ -3787,6 +3787,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
+          - name: User-based authentication FAQ
+            href: warehousing/warehouse-app-user-based-auth-faq.md
           - name: Service-based authentication
             href: warehousing/warehouse-app-authenticate-service-based.md
           - name: Mass deploy the mobile app for user-based authentication
