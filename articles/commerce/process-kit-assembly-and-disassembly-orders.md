@@ -2,7 +2,7 @@
 title: Process kit assembly and disassembly orders
 description: This article describes how to process kit assembly and disassembly orders for retail product kits in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/02/2023
+ms.date: 11/03/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
