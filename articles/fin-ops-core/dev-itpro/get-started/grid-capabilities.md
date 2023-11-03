@@ -109,14 +109,17 @@ When you enter data ahead of the place where the system is processing, you can e
 - You will notice that there are no lookup drop-down lists, field values aren't validated after you move to a different column in the same row, and columns don't initially show default values. This behavior occurs when you create or update ahead of the system. However, after the system catches up to the place where you're currently editing, the standard experience will resume. If you made changes to a field that typically receives a default value, your changes override the default field value when the server starts to process the row.
 - If you create a new row by using the **Down arrow** key, all columns in the grid will appear as editable. By default, the focus will be put in the first column in the new row. This column might not be the same column that received the initial focus in the legacy grid, or the same column that receives focus after you select a **New** button. Your organization can customize the system and change the column that receives the initial focus when the **Down arrow** key is selected. For more information, see the [Specifying the column that receives the initial focus when new rows are created by using the Down arrow key](#developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key) section. Regardless, you can use personalization to optimize each grid for data entry. Specifically, you can reorder fields so that the first column is the column that you want to start to enter data in. You might also want to reorder fields in general for data entry, to reduce tab stops and hide any fields that aren't required for data entry in this particular view.
 
-### Editing multiple rows simultaneously (bulk edit) 
-In versions 10.0.38 and later, users can update multiple selected rows in a single action using the **Bulk editing in grids** feature, which can be enabled through **Feature management**. 
-To use this feature: 
-1. Select the rows you wish to update in the grid.
-2. Select **Grid options**  > **Edit selected rows**.
-3. This action will open an **Edit rows** dialog that allows you to choose the column(s) you want to update and to provide the new value(s). Only columns backed by editable fields in the grid can be selected for update. The **Edit rows** dialog defines the order that columns will be update (from top to bottom), which can impact field level validations are triggered during the save process. After configuring the columns and values you want to update, select **Apply**. 
+### Editing multiple rows simultaneously (bulk edit)
 
-Similar to the **Pasting from Excel** below, the grid displays the updated contents in italics as a preview of the data changes. Select **Discard** to cancel the bulk editing or **Save** to initiate the save process. When saving, the system uses the **Typing ahead of the system** save model to submit the updates one row at a time, ensuring that all form and field validation is executed for each row. You will monitor the progress and results of each validation by checking the row status at the beginning of the row.     
+In version 10.0.38 and later, users can update multiple selected rows in a single action by using the **Bulk editing in grids** feature, which can be enabled through Feature management.
+
+To use this feature, follow these steps.
+
+1. In the grid, select the rows that you want to update.
+2. Select **Grid options** \> **Edit selected rows**.
+3. In the **Edit rows** dialog box that appears, select the columns that you want to update, and provide the new values. Only columns that are backed by editable fields in the grid can be selected for update. The **Edit rows** dialog box defines the order that columns will be updated in (from top to bottom). This order can affect field-level validations that are triggered during the save process. After you've finished specifying the columns and values that you want to update, select **Apply**.
+
+As when you paste from Excel (as described in the next section), the grid shows the updated contents in italic as a preview of the data changes. Select **Discard** to cancel the bulk editing or **Save** to initiate the save process. During the save process, the system uses the **Typing ahead of the system** save model to submit the updates one row at a time. This approach ensures that all form and field validations are run for each row. Monitor the progress and results of each validation by checking the row status at the beginning of the row.
 
 ### Pasting from Excel
 Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
@@ -138,7 +141,7 @@ To make the system recognize a value as an expression, start the value with an e
 > The ability to evaluate math expressions in numeric controls is available outside the grid. 
 
 ## Grouping tabular data
-Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** capability lets users organize their tabular data in interesting ways within finance and operations apps. Grouping works together with the **Calculated values** capability to let you gain meaningful insights into the data by displaying calculated values (for example, subtotals) at the group level.
+Business users often have to perform ad-hoc analysis of data. Although this analysis can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** capability lets users organize their tabular data in interesting ways within finance and operations apps. Grouping works together with the **Calculated values** capability to let you gain meaningful insights into the data by showing calculated values (for example, subtotals) at the group level.
 
 [![Grouping data in a grid.](../../fin-ops/get-started/media/grids-groupingWithTotals.png)](/media/grids-groupingWithTotals.png)
 
