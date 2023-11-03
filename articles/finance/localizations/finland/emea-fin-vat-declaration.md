@@ -101,6 +101,20 @@ Follow these steps to define which sales tax codes in your Finance generate whic
 7. Select the **VAT declaration Excel (FI)** configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration TXT (FI)**.
 8. In the **State** field, select **Completed**.
 
+    > [!NOTE]
+    > For electronic reporting formats of VAT declaration of Finland that is based on **Tax declaration model mapping**, **Tax direction** of the tax transactions posted in relevant reporting period is crucial criteria.
+    >
+    > Thus, in scenario when positive and negative lines are posted within same document (invoice) in general journal, if it is customer invoice, the **Sales tax payable** direction will be used by default and both transactions will contribute in the same box - \[303\], for example.
+    > If it is necessary to report the negative tax transaction in box \[307\] the following settings are suggested:
+    >
+    > (1) In the settings of the main account used in the negative line define **Legal entity overrides** rule for Sales tax to apply "Sales tax receivable" tax direction.
+    >
+    > (2) In the General tab of the general journal, for the negative line switch on **Sales tax direction** parameter.
+    >
+    > Validate, that for this line the sales tax transaction has **Sales tax receivable** tax direction.
+    >
+    > When journal line is posted with **Sales tax receivable** tax direction and relevant tax code and **Purchase** Transaction classifier is set up for the box \[307\] in application-specific parameters of the format, amount from negative line is reported in box \[307\].
+
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
