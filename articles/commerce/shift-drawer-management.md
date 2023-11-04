@@ -63,6 +63,11 @@ For shared shifts to be used in a store, the cash drawer must be configured as a
 
 Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Store Commerce.
 
+Several operations at the POS can cause the cash drawer to open. Most operations can't proceed while the cash drawer is open. The exceptions are some end-of-day procedures. If the POS user receives an error message that states that an operation can't be performed while the cash drawer is open, the user must close the virtual or physical cash drawer to proceed.
+
+> [!NOTE]
+> If a cash drawer is marked as **Shared shift drawer** in the hardware profile, the system doesn't verify that the drawer is closed before an operation. The operation proceeds as usual, even if the cash drawer is open. This behavior supports scenarios where cash drawers are shared among sales associates, and where one associate uses a cash drawer while another associate performs unrelated tasks on their own POS device. Changes that are made to the cash drawer aren't evident until the current shift is closed and a new shift is opened.
+
 ### Open shift
 
 The POS requires that users have an active, open shift in order to perform any operations that will produce a financial transaction, such as a sale, return, or customer order.
