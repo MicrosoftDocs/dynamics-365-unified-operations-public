@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.38 (February 2024)
+          href: get-started/whats-new-scm-10-0-38.md
         - name: Supply Chain Management 10.0.37 (November 2023)
           href: get-started/whats-new-scm-10-0-37.md
         - name: Supply Chain Management 10.0.36 (October 2023)
           href: get-started/whats-new-scm-10-0-36.md
-        - name: Supply Chain Management 10.0.35 (August 2023)
-          href: get-started/whats-new-scm-10-0-35.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -417,6 +417,8 @@
           href: asset-management/functional-locations/introduction-to-functional-locations.md
         - name: Create functional locations
           href: asset-management/functional-locations/create-functional-locations.md
+        - name: Change the type of existing functional locations
+          href: asset-management/functional-locations/change-functional-location-type.md
         - name: Install assets on functional locations
           href: asset-management/functional-locations/install-objects-on-functional-locations.md
       - name: Setup for assets
@@ -447,6 +449,8 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
+        - name: Change the asset type of existing assets
+          href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
         - name: Move, replace, and install assets
@@ -1999,6 +2003,36 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
+    - name: Demand planning
+      items:
+      - name: Demand planning home page
+        href: demand-planning/demand-planning-home-page.md
+      - name: Install and enable the Demand planning app
+        href: demand-planning/install-demand-planning.md
+      - name: Import data
+        items:
+        - name: View and customize tables for holding imported data
+          href: demand-planning/tables.md
+        - name: Import data into Demand planning
+          href: demand-planning/import-data.md
+      - name: Transform data
+        href: demand-planning/transform-data.md
+      - name: Calculations
+        items:
+        - name: Work with calculation profiles
+          href: demand-planning/calculation-profiles.md
+        - name: Design calculation models
+          href: demand-planning/design-calculation-models.md
+      - name: Forecasts
+        items:
+        - name: Work with forecast profiles
+          href: demand-planning/forecast-profiles.md
+        - name: Design forecast models
+          href: demand-planning/design-forecast-models.md
+      - name: Time series and planning data
+        href: demand-planning/time-series.md
+      - name: Export and download data
+        href: demand-planning/export-data.md
     - name: Mobile app (Deprecated)
       items:
       - name: Mobile app home page
@@ -3749,10 +3783,20 @@
           href: warehousing/warehouse-app-accessibility.md
         - name: Install, set up, and use mobile devices
           items:
-          - name: Install and connect the Warehouse Management mobile app
+          - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Mass deploy the Warehouse Management mobile app
+          - name: User-based authentication
+            href: warehousing/warehouse-app-authenticate-user-based.md
+          - name: User-based authentication FAQ
+            href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Service-based authentication
+            href: warehousing/warehouse-app-authenticate-service-based.md
+          - name: Mass deploy the mobile app for user-based authentication
+            href: warehousing/warehouse-app-intune-user-based.md
+          - name: Mass deploy the mobile app for service-based authentication
             href: warehousing/warehouse-app-intune.md
+          - name: Customize the company logo shown in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app

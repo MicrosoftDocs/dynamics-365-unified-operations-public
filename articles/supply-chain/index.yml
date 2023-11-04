@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: Training
       itemType: training
-      url: /dynamics365/supply-chain/get-started/learning-catalog
+      url: /training/dynamics365/scm
     # Card
     - title: Troubleshoot
       itemType: concept
@@ -201,7 +201,7 @@ additionalContent:
     - title: Warehouse Management mobile app
       links: 
       - url: /dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app
-        text: Install and connect the mobile app
+        text: Install the mobile app
       - url: /dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
         text: Set up mobile devices for warehouse work
       - url: /dynamics365/supply-chain/warehousing/mobile-device-work-users

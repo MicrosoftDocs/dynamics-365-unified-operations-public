@@ -2,7 +2,7 @@
 title: Automate ledger settlements
 description: This article provides information about the Automate ledger settlements process.
 author: abruer
-ms.date: 1/19/2023
+ms.date: 9/19/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,10 +19,13 @@ ms.search.form:
 # Automate ledger settlements
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Finance version 10.0.31, the **Automate ledger settlements process** feature is available in the **Feature management** workspace. You can enable the **Automate ledger settlements process** feature only if the **Awareness between ledger settlement and year-end close** feature has been enabled.
 
 Ledger settlement is the process of matching debit and credit transactions in the general ledger. Organizations that perform ledger settlement activities on a recurring schedule can now automate the process. During the automatic ledger settlement process, a debit transaction and a credit transaction can be automatically matched only if their amounts in the accounting currency are equal. For example, a debit amount of $1.00 can be automatically matched to a credit amount of $1.00. However, a debit value of $1.00 can't be automatically matched to two credits, each of which is valued at $0.50. Partial matching of ledger transaction amounts isn't supported.
+
+Starting in Finance version 10.0.36, enabling the **Post foreign currency realized gains/losses for ledger settlements** feature allows recognition of realized gains and realized losses in the reporting currency during automatic settlement. In Finance version 10.0.38, support has been added for calculating and posting foreign currency realized gains and losses for settlement when the accounting currency values of the debits and credits differ.
 
 Ledger settlement automation defines the following details:
 

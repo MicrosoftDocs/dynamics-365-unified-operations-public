@@ -14,14 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.38 (February 2024)
+          href: get-started/whats-new-commerce-10-0-38.md
         - name: Commerce 10.0.37 (November 2023)
           href: get-started/whats-new-commerce-10-0-37.md
         - name: Commerce 10.0.36 (October 2023)
           href: get-started/whats-new-commerce-10-0-36.md
-        - name: Commerce 10.0.35 (August 2023)
-          href: get-started/whats-new-commerce-10-0-35.md
-        - name: Commerce 10.0.34 (July 2023)
-          href: get-started/whats-new-commerce-10-0-34.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -772,6 +770,8 @@
           href: pricing-apis.md
         - name: Price change tracking
           href: price-change-tracking.md
+        - name: Price FAQ
+          href: price-faq.md
       - name: Recommendations
         items:
         - name: Product recommendations overview

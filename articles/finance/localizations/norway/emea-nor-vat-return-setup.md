@@ -70,6 +70,9 @@ Import the latest versions of these configurations. The version description usua
 
 For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
+> [!NOTE]
+> As of version **136.301** of the **Tax declaration model mapping** under the **Tax declaration model**, we recommend that you enable the **Enable consumption of "Original document is credit note" property from tax transaction in VAT declaration reporting** feature in the **Feature management** workspace. After you enable the feature, run the **Consistency check for TaxTrans_Reporting** consistency check in **Fix errors** mode for every legal entity where tax transactions were posted. To run the consistency check, go to **System administration** \> **Periodic tasks** \> **Database** \> **Consistency check**, and then select **Program** \> **General ledger** \> **Sales tax** \> **Consistency check for TaxTrans_Reporting**.
+
 ## <a id="application-specific-parameters"></a>Set up application-specific parameters for the VAT Declaration format
 
 The format that is used to report VAT returns to the Norwegian Tax Administration requires specific values from enumerated lists for some elements (for example, standard tax codes). To ensure that the required values are provided for these elements, you must set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats before you start to use them. Application-specific parameters help associate master data from your Finance environment with the enumerated lists of elements that the Norwegian Tax Administration requires for the report.
@@ -273,6 +276,7 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 >
 > - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
 > - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
+> - **85** – Basis for importatng goods that VAT isn't to be calculated from.
 > - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
 > - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
 >

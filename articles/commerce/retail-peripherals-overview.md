@@ -621,6 +621,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 | ------------ | -------- | --------- | ----------------------- |
 | Epson        | TM-T88V  | OPOS      |                         |
 | Epson        | TM-T88IV | OPOS      |                         |
+| Epson        | TM-T88VI | OPOS      |                         |
 | HP           | H300     | OPOS      | Powered USB             |
 | Star         | TSP650II | Custom    | Connected via network   |
 | Star         | mPOP     | OPOS      | Connected via Bluetooth |

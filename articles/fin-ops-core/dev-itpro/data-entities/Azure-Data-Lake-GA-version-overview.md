@@ -22,24 +22,25 @@ ms.search.validFrom: 2021-11-30
 
 Export to Azure Data Lake lets you connect your finance and operations environment to a data lake to unlock insights that are hidden in your data.
 
-> **NOTE**
+> [!NOTE]
+> Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >
-> Export to Data lake is deprecated as of 15-Oct-2023 and we advise new customers to use [Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data) Existing customers can transition to Synapse Link by following the guidance provided in [https://aka.ms/TransitionToSynapseLink](https://aka.ms/FnOtoSynapseLink)
+> We want you to benefit from the enhanced performance, flexibility, and improved user experience that Synapse Link offers as soon as possible. Therefore, we've announced the deprecation of the **Export to Data Lake** feature, effective October 15, 2023. If you're already using the **Export to Data Lake** feature, you can continue to use it until November 1, 2024. If you're new to the **Export to Data Lake** feature or are planning to adopt this feature in the coming months, we recommend that you use Synapse Link instead. 
 >
-> 
+> We understand that that transition might seem daunting, but we want to provide a smoother experience and offer guidance. To get started, see the [Synapse Link transition guide](https://aka.ms/TransitionToSynapseLink). We're listening closely to the community and are working on multiple features to help make the transition smoother. We'll announce these other improvements to the transition process as we bring new features online. If you want to stay in touch, join the community at [https://aka.ms/SynapseLinkforDynamics](https://aka.ms/SynapseLinkforDynamics).
 
 When you enable the Export to Azure Data Lake add-in, you connect your finance and operations environment to a designated data lake. Authorized users can then copy data from your finance and operations environment to that data lake. Tools such as Power BI and Azure Synapse enable analytics, business intelligence, and machine learning scenarios for data in the data lake.
 
 When you select data in finance and operations apps, the system makes an initial copy of the data in the data lake. After that initial copy is made, the system keeps the data in the data lake fresh by continuously inserting, updating, and deleting data that changed. You don't have to manage exports or monitor the service, and there's no more burden on your finance and operations workloads.
 
-Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/common-data-model/). Common Data Model enhances value of your data in the lake. For an example, provides more metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The extra metadata includes the table structure, descriptions, and data types.
+Data that is stored in the data lake is organized using [Common Data Model](https://powerplatform.microsoft.com/common-data-model/). Common Data Model enhances the value of your data in the lake. For example, it provides more metadata in a machine-readable JavaScript Object Notation (JSON) format, so that downstream tools can determine the semantics of the data. The extra metadata includes the table structure, descriptions, and data types.
 
 Export to Azure Data Lake is a fully managed, scalable, and highly available service from Microsoft. It includes built-in disaster recovery. Here are some of the features that are supported:
 
 - You can select up to 350 tables. All changes to data are continuously updated in the data lake. These changes include insert, update, and delete operations.
 - You can select data by using tables or entities. If you use entities, underlying tables are selected by the service.
 - You can select both standard and custom entities and tables.
-- You can work with data in the data lake by using Microsoft Azure Synapse Analytics or many other third party tools.
+- You can work with data in the data lake by using Microsoft Azure Synapse Analytics or many other third-party tools.
 
 The storage account must be in the same Azure region as your finance and operations environment. You can select to enable near real-time data changes and business events when installing the service.
 
@@ -90,19 +91,19 @@ If you're currently using BYOD for these types of scenarios, you can transition 
 
 - **Because data is already present, export isn't required.** Data Lake integration manages continuous export of data to the data lake as it changes in finance and operations apps. You don't have to monitor and manage data exports as you do in BYOD.
 - **The cost of data storage is reduced.** Data is stored in a data lake instead of in the SQL database that BYOD requires. Therefore, customers can use a storage medium that is much less expensive than Azure SQL Database to stage data.
-- **Existing downstream/consumption pipelines can be preserved.** Using [Azure Synapse Analytics serverless SQL pools](/azure/synapse-analytics/sql/on-demand-workspace-overview), you can create T-SQL view definitions over data in the lake and read data the same way as you read data from BYOD. Your data integration pipeline may be repointed to consume data in the lake without incurring major costs. 
+- **Existing downstream/consumption pipelines can be preserved.** Using [Azure Synapse Analytics serverless SQL pools](/azure/synapse-analytics/sql/on-demand-workspace-overview), you can create T-SQL view definitions over data in the lake and read data the same way as you read data from BYOD. Your data integration pipeline might be repointed to consume data in the lake without incurring major costs. 
 
 The BYOD solution exports entity data shapes from finance and operations apps into Azure SQL database. The **Export to Data Lake** feature lets you choose data using entity shapes or tables. Using data exported to the lake, you can re-create entity shapes in Azure Synapse Analytics serverless SQL pools using [FastTrack for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).  
 
 ### How is the data stored in the lake?
-Data in the lake is stored as CSV files in a folder structure maintained by the system. The folder structure is based on data organization in finance and operations apps. For an example, you see folders with names such as **Finance**, **Supply Chain**, **Commerce**, and within these folders you see subfolders with names such as **Accounts Receivable** or **Accounts Payable**. Further down the hierarchy, you see folders that contain the actual data for each table. Within a table-level folder, you see one or more CSV files and metadata files that describe the format of the data. 
+Data in the lake is stored as CSV files in a folder structure maintained by the system. The folder structure is based on data organization in finance and operations apps. For example, you see folders with names such as **Finance**, **Supply Chain**, **Commerce**, and within these folders you see subfolders with names such as **Accounts Receivable** or **Accounts Payable**. Further down the hierarchy, you see folders that contain the actual data for each table. Within a table-level folder, you see one or more CSV files and metadata files that describe the format of the data. 
 
 When data in finance and operations apps gets updated, corresponding data rows in CSV files in the table folders are updated. When a new row is added to a table in finance and operations apps, or an existing row is deleted, new rows are added or deleted from corresponding CSV files. 
 
-When the data structures change in finance and operations apps, for an example, when a new field is added to a table, metadata files in the lake are updated to reflect the change. The system may also repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For an example, in case a field is removed from a table in a finance and operations app, a rare but more destructive scenario, the entire table folder is repopulated. Whereas when a new field is added, all the data files aren't repopulated. Only the data files that contain changed rows are updated to include the new field. Because many consuming tools can work with newly added data fields (a feature called *schema drift*) the system doesn't repopulate the entire folder.  
+When the data structures change in finance and operations apps, for example, when a new field is added to a table, metadata files in the lake are updated to reflect the change. The system might also repopulate the entire table folder (all the CSV files) in case the data structure change is destructive. For example, in case a field is removed from a table in a finance and operations app, a rare but more destructive scenario, the entire table folder is repopulated. Whereas when a new field is added, all the data files aren't repopulated. Only the data files that contain changed rows are updated to include the new field. Because many consuming tools can work with newly added data fields (a feature called *schema drift*) the system doesn't repopulate the entire folder.  
 
 ### How can I consume data in the lake?
-You can work with data in the data lake using various of tools from Microsoft, and third parties. Most tools can consume data in the lake stored as CSV files.  
+You can work with data in the data lake using various tools from Microsoft, and third parties. Most tools can consume data in the lake stored as CSV files.  
 
 Using Azure Synapse Analytics serverless SQL pools, you can consume data in the lake using Transact-SQL language (T-SQL). T-SQL language is widely supported by many tools. You can define a Synapse workspace over the data in the lake and use T-SQL, Spark, or Synapse Pipelines as if you're consuming data from a database. To create a Synapse workspace over your data in the lake, you can use [FastTrack Solutions for Dynamics 365 - CDMUtilSolution](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution).
 

@@ -2,10 +2,10 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: jaredha
-ms.date: 09/22/2023
+ms.date: 10/20/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-07-31
@@ -18,12 +18,39 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## October 2023 
+The October release of Dual-write GAB solution 3.5.1.136 contains the following bug fixes.
+
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix | Address primary flag removed in Customer experience when adding contacts	|General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.102 | 3.5.1.136 |
+| Dynamics365GABExtended | Yes | 3.5.1.102 | 3.5.1.136 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.102 | 3.5.1.136 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.1.102 | 3.5.1.136 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.102 | 3.5.1.136 |
+
+
+## September 2023
+Release notes for the September 2023 release of [Dual-write core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).<br>
+**Version:** 1.0.23084.2
+
+| Type | Number | Description | Status | 
+| --- | --- | --- | --- |
+| Feature | 24811690 | When resuming a paused dual-write map it's possible that processing queued records before resuming live synchronization can take longer than expected. There's now the option to skip directly to live synchronization of new records when resuming the map, and either move the queued records to asynchronous processing in the **Catch-up errors** list, or discard the queued records.<br><p><br>For more information, see [Pause dual-write for maintenance](./pause-for-maintenance.md). | General availability |
+| Bug fix | 3548103 | This update fixes an issue in which the dual-write runtime throws the below error message if the description field has data but the length of the data is less than the length in the truncate function.<br><p><br>"Index and length must refer to a location within the string." | General availability |
+
 ## August 2023
 
 Release notes for the August 2023 release of [Dual-write core solution 1.0.23084.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write). 
 
 > [!NOTE]
-> Beginning with this release there is a new naming convention for version numbers of the dual-write core solution. The format of the version number is **1.0.YYMMW.versionNumber**, where "YYMMW" are the calendar year, month, and week in which the version build is created. The "versionNumber" is **0** by default. With this change we also introduce a more consistent cadence in version rollouts for the dual-write core solution.
+> Beginning with this release there's a new naming convention for version numbers of the dual-write core solution. The format of the version number is **1.0.YYMMW.versionNumber**, where "YYMMW" are the calendar year, month, and week in which the version build is created. The "versionNumber" is **0** by default. With this change we also introduce a more consistent cadence in version rollouts for the dual-write core solution.
 
 | Feature | Description | Status |
 | ---|---|---|
@@ -148,7 +175,7 @@ The October release of [Dual-write core solution 1.0.37.0](https://appsource.mic
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug | Before this release, dual-write platform core plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side triggers only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
+| Bug | Before this release, dual-write platform core plugins on the Dataverse side are triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side triggers only when the updated field is in dual-write map. [Learn more](data-sync-for-map-fields.md) | Preview |
 
 The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
 
@@ -166,7 +193,7 @@ The August release of Dual-write Global Address Book solution 3.5.1.22 contains 
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix | Contacts that were created from the marketing portal and during the lead qualification scenario didn't having a valid party ID. | General availability |
+| Bug fix | Contacts that were created from the marketing portal and during the lead qualification scenario didn't have a valid party ID. | General availability |
 | Bug fix | Fixed the following error that occurred when a contact was created from CRM portals: "The 'contact' entity must be in the default (null) or unchanged state." | General availability |
 
 ### Solution details
@@ -246,7 +273,7 @@ The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 
 This release includes the following map changes:
 
 + Apply the latest map version 1.0.0.2 for the CDS Parties - msdyn_parties map.
-+ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information is synced from finance and operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. Note that no subsequent updates/additions are allowed with this map, because the finance and operations entity for address roles is read only.
++ Run the initial synchronization of the CDS Address roles - msdyn_addressroles map so that all the address role information is synced from finance and operations apps to Dataverse. This map is a new dual-write map that was added as part of this release. No subsequent updates/additions are allowed with this map, because the finance and operations entity for address roles is read only.
 
 
 ## March 2022 release
@@ -404,10 +431,10 @@ This release contains the features and bug fixes listed in the following table.
 |------|---------|-------|
 | Bug fix | Implements rollback of transactions that exceed a 2-minute time limit. | General availability |
 | Bug fix | Fixes processing of datetime fields during a catch-up sync. | General availability |
-| Tracing | Limits nonessential plugin trace logs for medium-size transactions (5 or more records). | General availability |
+| Tracing | Limits nonessential plugin trace logs for medium-size transactions (five or more records). | General availability |
 | Bug fix | Added storage and tracking dimension group lookup fields to the **Shared Product Details** table. Added these lookup fields to the **Released products V2" -> msdyn_sharedproductdetails** dual-write map. | General availability |
 | Bug fix | In a sales order, when you select an existing product, the **Sales product category** value defaults to a value that comes from the **Product Category Assignments** table. But when the defaulted value isn't part of sales hierarchy, the line-item addition throws an error message. To prevent the error and allow assignment inside finance and operations apps, the **sales product category** field can be left blank.  | General availability |
-| Bug fix | In a sales order, when you select an existing product, the **Sales Product Category** is read-only. It is editable when the product is set to write-in. | General availability |
+| Bug fix | In a sales order, when you select an existing product, the **Sales Product Category** is read-only. It's editable when the product is set to write-in. | General availability |
 | Bug fix | The **Total Tax** field in a sales quotation and sales order are read-only. When the **Price per unit** field is changed in the sales quotation line or sales order line in finance and operations apps, it must sync back to the respective sales quotation or sales order line in customer engagement apps.  | General availability |
 | Bug fix | Updating the **Warehouse name** field in finance and operations apps caused the **Name** field in Dataverse to be blanked out. | General availability |
 | Bug fix | Localization fixes for Ukraine. | General availability |
@@ -454,7 +481,7 @@ Follow these steps to apply the new maps:
 
 1. Apply the latest map version 1.0.0.2 for CDS Postal address history V2 (msdyn_postaladdresses) mapping.
 2. Apply the latest map version for Contacts V2 (msdyn_contactforparties) mapping.
-3. Run the initial sync of the CDS Party postal address locations (msdyn_partypostaladdresses) mapping twice to make sure that there is no loss of address records in Customer Address table due to concurrent address updates.
+3. Run the initial sync of the CDS Party postal address locations (msdyn_partypostaladdresses) mapping twice to make sure that there isn't loss of address records in Customer Address table due to concurrent address updates.
 
 ## April 2021 release
 
@@ -468,7 +495,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | Handle conflict resolution during catch-up sync. | General availability
 | Bug fix | Issues related to solution import on environments. | General availability
 | Bug fix | The **Notes** table now understands the **Null** value. | General availability |
-| Bug fix | Dual write orchestration package 2.2.2.50 doesn't replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key, which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you are using the [party and global address book](party-gab.md) solution.| General availability |
+| Bug fix | Dual write orchestration package 2.2.2.50 doesn't replace the existing key (**msdyn_locationid** field) on the **Address** table with the new key, which is a combination of the **msdyn_locationid** and **parentid** fields. Instead it shows both keys. This has been fixed with the new version 2.2.2.60. This new version is applicable only when you're using the [party and global address book](party-gab.md) solution.| General availability |
 
 ## March 2021 release
 
@@ -555,7 +582,7 @@ The September 2020 release contains the features and bug fixes listed in the fol
 | Lead qualification process in Sales is now company striped | Dynamics 365 Sales users can create a lead, qualify the lead to an opportunity, convert an opportunity into a quote, activate a quote, and create an order. This process was broken in dual-write due to lack of company striping on the **Lead** entity. We implemented company striping on the **Lead** entity, which cascades the company to the underlying **Account** and **Opportunity** tables. Thus the application behavior is restored to support the process. During the **Lead** qualification process, the **Contact** entity isn't company striped. This design supports the **Party** entity model that is due in October 2020. To learn about the **Party** and **GlobalAddressBook** model for dual-write, join the [dual-write Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096&view=all). | General availability |
 | [Map state transitions from **Order** to **SalesOrder**](sales-status-map.md) | The **Order** form in Dynamics 365 Sales is always set to **Active**. To create state transitions from **Order** in Dynamics 365 Sales to **SalesOrder** in Dynamics 365 Supply Chain Management, we introduced the **ProcessingStatus** column. |   General availability   |  
 | [Money to decimal data type conversion](../../../fin-ops/data-entities/currrency-decimal-places.md) |  Dataverse environments are limited to 4 decimal places for currency and 10 decimal places for exchange rates. finance and operations apps support more decimal places than Dataverse. You can now opt in to extend the decimal support in Dataverse to help ensure there's no loss of decimal place data when using dual-write. | General availability |
-| Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
+| Security role for company and currency exchange | Company and currency exchange tables are global in nature and all dual-write users require read access to these two tables. To simplify the experience, we've added a new security role named **dual-write app user**. Each dual-write user must be added to this security role.   | General availability |
 | Security role for setup | Adds the **Dual-write Runtime User** security role. This role allows nonadministrator users to create rows that are set up for dual-write. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Tracing | Internal column added for use in tracing. This feature is part of Dual-write core solution 10.0.21. | General availability |
 | Bug fix | Fixes issues where dual-write fails because of a mismatch between the plugin and the destination environments. This fix is part of Dual-write core solution 10.0.21. | General availability |
@@ -576,7 +603,7 @@ The June 2020 release of the dual-write orchestration package contains the featu
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have preexisting data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
+| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
 
 ## May 2020 release
 
@@ -592,7 +619,7 @@ The May 2020 release of the dual-write orchestration package (version 2.0.777.35
 | **SalesTaxGroup** support | Support for **SalesTaxGroup** in **Account** and **Contact** forms for business-to-business (B2B) and business-to-consumer (B2C) customers. | General availability |
 | Create sellable contacts | Allow creation of a sellable contact using the **Quick Create: Contact** form in customer engagement apps. | General availability |
 | Quote and order creation | Enable quote and order creation for B2C customers. | General availability |
-| Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This wasn't always practical and required additional approval, which can be time consuming. With this feature, we removed this prerequisite and the need for explicitly giving consent to the applications. | General availability |
-| Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment. This seemed cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
+| Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This wasn't always practical and required more approval, which can be time consuming. With this feature, we removed this prerequisite and the need for explicitly giving consent to the applications. | General availability |
+| Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment which was cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
