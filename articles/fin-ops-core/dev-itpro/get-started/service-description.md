@@ -4,10 +4,10 @@
 title: Service description for finance and operations apps
 description: This article provides the service description for finance and operations apps.
 author: tomhig
-ms.date: 04/27/2022
+ms.date: 11/06/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
@@ -48,7 +48,7 @@ The operating model of finance and operations apps defines specific roles and re
 
 ### Customer activities
 
-Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Dynamics 365 Implementation Guide](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework, and the tools and best practice templates provided in [Lifecycle Services](../lifecycle-services/lcs.md) to implement their solution. Common activities include:
+Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttrack/) following the [Dynamics 365 Implementation Guide](../../../guidance/implementation-portal/overview.md), the [Success by Design](/dynamics365/fasttrack/success-by-design-overview) framework, and the tools and best practice templates provided in [Lifecycle Services](../lifecycle-services/lcs.md) to implement their solution. Common activities include:
 
 - User identity and security management
 - Define, develop, and operate business processes
@@ -94,7 +94,7 @@ To ensure that an implementation is configured for high performance, customers m
 - Provide accurate usage information about the finance and operations implementation in the [LCS Subscription estimator](../lifecycle-services/subscription-estimator.md).
 - Build and test extensions for performance and scale.
 - Appropriately test data configurations for performance.
-- Ensure scalability by doing [performance testing](https://community.dynamics.com/365/b/techtalks/posts/performance-testing-approach-april-30-2018) before go-live.
+- Ensure scalability by doing [performance testing](https://community.dynamics.com/blogs/post/?postid=65bab99a-cfbb-4d1c-8ba6-2fce506f3987)) before go-live.
 
 ## Onboarding and implementation
 
@@ -415,9 +415,9 @@ The SLA applies to Microsoft online services. For more information, see [Service
 
 Microsoft services finance and operations environments on consistent basis through service updates. Customers set their own service update calendar, based on their business needs. For more information, see [One Version service updates](../lifecycle-services/oneversion-overview.md).
 
-### [Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+### Success by Design
 
-The framework that systematically guides an implementation through a series of assessments at critical stages to ensure optimal architecture, security, performance, and user experience for a Dynamics 365 solution.
+[Success by Design](/dynamics365/guidance/implementation-guide/success-by-design) is the framework that systematically guides an implementation through a series of assessments at critical stages to ensure optimal architecture, security, performance, and user experience for a Dynamics 365 solution.
 
 ### User
 
