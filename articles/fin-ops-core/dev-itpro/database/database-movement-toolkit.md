@@ -4,7 +4,7 @@
 title: Database movement toolkit
 description: This article explains how to download and use the Database movement toolkit. 
 author: laneswenka
-ms.date: 12/02/2020
+ms.date: 11/06/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ The toolkit contains the following primary components:
 
 The toolkit currently supports the following scenarios. More will be added over time.  
 
-* [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/database/data-upgrade-self-service)
+* [Upgrade from AX 2012 - Data upgrade in sandbox environments](../database/data-upgrade-self-service)
 
 ## Versions
 
