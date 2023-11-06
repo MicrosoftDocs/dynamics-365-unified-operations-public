@@ -24,6 +24,9 @@ The following illustration outlines the steps that you must complete to create a
 
 ![Diagram of the process flow for setting up and maintaining product kits.](./media/Dn497848.RetailProductKitsProcessFlow(AX.60).gif)
 
+> [!NOTE]
+> You can sell product kits via POS, but selling retail product kits via online channels is not supported today. To enable it, you will need to build e-commerce customizations following [Get started with e-commerce online extensibility development](./e-commerce-extensibility/sdk-getting-started).
+
 ## Create a product kit
 
 A product kit includes a group of separate products, product variants, and product substitutes. To create a product kit, you create a new product and designate it as a product kit. After you create the product kit, you can add products and product variants to it as kit components. You can also add product substitutes for any of the kit components. For more information about how to set up a product kit, see [Create retail product kits](create-retail-product-kits.md).
