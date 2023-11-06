@@ -37,7 +37,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time re
 
 ## Self-service point-in-time restore Production to Sandbox
 
-To provide customers with data application lifecycle management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated restore database action. Here is an overview of the process for doing a self-service database restore.
+To provide customers with data application lifecycle management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated restore database action. The following is an overview of the process for doing a self-service database restore.
 
 1. Go to the **Environment Details** page for your target Sandbox, and select **Maintain** \> **Move database** button.
 2. Select the **Point-in-time restore Prod to Sandbox** option, and then select the desired point in time.
@@ -45,7 +45,7 @@ To provide customers with data application lifecycle management (DataALM) capabi
 4. The restore operation begins immediately.
 
 > [!IMPORTANT]
-> Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this article.
+> Self-service point in time restore (PITR) isn't supported between environments that are on different regions. For more information, see the Known issues section later in this article.
 
 ### Applicable scenario for production to sandbox restore
 
@@ -53,7 +53,7 @@ Restoring the production database to a sandbox environment is useful if you acci
 
 ### Restore operation failure
 
-If the restore operation isn't successful, it automatically rolls back. Your target sandbox environment is restored to the state that it was in before the restore began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
+If the restore operation isn't successful, it automatically rolls back. Your target sandbox environment is restored to the state that it was in before the restore began. Rollbacks are made available by the PITR capability of Azure SQL Database. They're typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
 
 To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed rollback operation.
 
@@ -71,9 +71,9 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
-* Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
-Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform postrestore cleanup activities.
+Some of these elements aren't copied because they're environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post restore cleanup activities.
 
 ### Environment administrator
 
@@ -85,17 +85,17 @@ An environment can't be restored from one tenant to another. This restriction ap
 
 ### Conditions for doing a PITR copy of a production environment to a sandbox environment
 
-Here is the list of requirements and conditions of operation for a database restore:
+The following is a list of requirements and conditions of operation for a database restore:
 
 - A restore performs a delete operation on the original target database.
-- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the reestore process is completed.
+- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the restore process is completed.
 - The restore will affect only the application and Financial Reporting databases.
 -  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management integration jobs that have recurring import and export enabled must be fully processed and stopped in the target system before the restore is started. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. In this way, you ensure that there are no orphaned files from either system in Azure storage. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
-- Business events end points must be deleted and reconfigured in the environment where the database is restored to ensure the same end points are not used. This will also require the business events to be deactivated and re-activated to the new end points that were configured in the environment.
-- Any user who has the Project owner or Environment manager role in LCS will have access to the SQL and machine credentials for all non-production environments.
+- Business events end points must be deleted and reconfigured in the environment where the database is restored to ensure the same end points aren't used. This will also require the business events to be deactivated and reactivated to the new end points that were configured in the environment.
+- Any user who has the Project owner or Environment manager role in LCS will have access to the SQL and machine credentials for all nonproduction environments.
 - The databases must be hosted in the same Azure geographic region, unless the databases are Spartan-managed.  Databases are Spartan-managed when you see 'spartan' as part of the fully qualified SQL server address.
 - The allocated database capacity of the source environment must be less than the maximum database capacity of the target environment.
 
@@ -143,10 +143,10 @@ Conversely, if your production environment is newer than your target sandbox env
 
 ### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
 
-The PITR process is not supported between a Microsoft-managed environment as a source and a self-service environment as a destination. For example, if the production environment is Microsoft-managed and in East US, and a PITR is needed for the sandbox environment, which is self-service and in East US. PITR is not supported. The alternative is to move the production environment to self-service or opt for a regular database refresh instead.
+The PITR process isn't supported between a Microsoft-managed environment as a source and a self-service environment as a destination. For example, if the production environment is Microsoft-managed and in East US, and a PITR is needed for the sandbox environment, which is self-service and in East US. PITR isn't supported. The alternative is to move the production environment to self-service or to opt for a regular database refresh instead.
 
 ### Point in time restore between source and target that are both on self-Service, in different regions
-The PITR process is not supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR is not supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
+The PITR process isn't supported between self-service environments across different regions. For example, if the production environment is in East US and a PITR is needed for the sandbox environment, which is self-service and in West Europe, PITR isn't supported. The alternative is to get both the environments in the same region or opt for a regular database refresh instead.
 
 
 
