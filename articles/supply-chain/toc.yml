@@ -3945,6 +3945,8 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
+        - name: Analyze warehouse material movement through process mining
+          href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights
