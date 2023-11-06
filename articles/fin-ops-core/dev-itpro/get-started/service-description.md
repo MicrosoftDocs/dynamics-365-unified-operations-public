@@ -55,7 +55,7 @@ Customers work with their partner and [Microsoft FastTrack](/dynamics365/fasttra
 - Define, develop, test, and operate extensions
 - Monitor and manage nonproduction deployments
 - Manage application updates and validate extensions
-- Manage ISV solutions and 3rd party integrations
+- Manage ISV solutions and third party integrations
 
 ### Microsoft responsibilities
 
@@ -102,7 +102,7 @@ The following table shows typical onboarding and implementation events.
 
 | Request | Expected Microsoft action | Expected customer/implementation partner action |
 |---|---|---|
-| Initial offer purchase | An Lifecycle Services project is created after the purchase of the offer, based on an event that is triggered by the customer. | Go through the Enterprise Agreement (EA) or Cloud Solution Provider (CSP) [commercial process](../../fin-ops/get-started/before-you-buy.md). The partner creates a tenant for the customer, if applicable. |
+| Initial offer purchase | A Lifecycle Services project is created after the purchase of the offer, based on an event that is triggered by the customer. | Go through the Enterprise Agreement (EA) or Cloud Solution Provider (CSP) [commercial process](../../fin-ops/get-started/before-you-buy.md). The partner creates a tenant for the customer, if applicable. |
 | Add-on purchase | Grant the customer access to the add-on that is selected during implementation. | Not applicable |
 | Implementation planning and analysis | Provide relevant tools in Lifecycle Services, such as [Business process modeler (BPM)](../lifecycle-services/bpm-overview.md) and [interoperability with Azure DevOps](../lifecycle-services/synchronize-bpm-vsts.md). | Do project planning, set up Azure DevOps, complete system onboarding, and set up admin accounts. |
 
@@ -258,7 +258,7 @@ The customer's tenant administrator can access production instances or nonproduc
 | Environment type | Purpose | Level of customer access |
 |---|---|---|
 | **Nonproduction**<br>Tier 1 sandbox | A nonproduction environment that customers deploy for development, demonstration, or training purposes. | A Tier 1 sandbox (also referred to as a cloud-hosted environment) is a customer-managed VM that is deployed to the customer's Azure subscription from Lifecycle Services. Because it's a VM in the customer's Azure subscription, the customer has full administrative access to the environment via Remote Desktop. |
-| **Nonproduction**<br>Tier 2 (or higher) sandbox | A nonproduction environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other pre-production scenario. | Tier 2 and higher sandboxes are deployed to the finance and operations SaaS subscription. Access to Azure SQL databases that are associated with the nonproduction environment is granted via [just-in-time access](../database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
+| **Nonproduction**<br>Tier 2 (or higher) sandbox | A nonproduction environment that customers deploy for user acceptance testing, integration testing, training, staging, or any other preproduction scenario. | Tier 2 and higher sandboxes are deployed to the finance and operations SaaS subscription. Access to Azure SQL databases that are associated with the nonproduction environment is granted via [just-in-time access](../database/database-just-in-time-jit-access.md). Remote Desktop access isn't available. |
 | **Production** | A production environment is deployed when the project is [ready for initial go-live](../organization-administration/environment-planning.md#production-system-readiness). | Production environments are deployed to the SaaS subscription. All access is through the browser, service endpoints, or Lifecycle Services. |
 
 ### Microsoft administrative access
