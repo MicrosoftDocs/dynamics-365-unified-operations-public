@@ -4,7 +4,7 @@
 title: Database point-in-time restore (PITR)
 description: This article explains how to perform a point-in-time restore of a database for finance and operations.
 author: LaneSwenka
-ms.date: 06/21/2021
+ms.date: 11/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,10 +34,14 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to perform the point-in-
 ## Self-service point-in-time restore
 [!include [pitr](../includes/dbmovement-pitr.md)]
 
-### Restore operation failed
-In the event of failure, the option to do a **rollback** is available. If you select the rollback option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the restore began. A rollback is often required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
+### Applicable scenario for production restore
 
-To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.
+Restoring the database in production to a previous point-in-time is not a common lifecycle operation. However, it might be required to recover your production environment if it has undergone significant data corruption. Keep in mind that the operation could have a large downtime and SQL data loss up to the point of time of the request.
+
+### Restore operation failed
+In the event of failure, the restore operation automatically rolls back. If you select the rollback option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the restore began. A rollback is often required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
+
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.
 
 ### Data elements that need attention after restore
 When you restore a database from a previous point in time, keep in mind that the database is provided "as was." For example, batch jobs and other data elements in the system can be in an in-progress state. These elements will require manual review.
