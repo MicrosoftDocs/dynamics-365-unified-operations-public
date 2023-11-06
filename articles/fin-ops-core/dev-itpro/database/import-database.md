@@ -33,7 +33,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden confi
 
 ## Prerequisites
 
-Database import isn't applicable to LCS projects that are configured for a Dynamics AX 2012 upgrade. Therefore, import will be blocked if the **Legacy system** field at **Project Onboarding** \> **Project overview** is set to **AX2012 Upgrade**.
+Database import isn't applicable to LCS projects that are configured for a Dynamics AX 2012 upgrade. Therefore, import is blocked if the **Legacy system** field at **Project Onboarding** \> **Project overview** is set to **AX2012 Upgrade**.
 
 ## Self-service import database
 
@@ -60,11 +60,11 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
 * Make sure that dual-write is relinked if required.
-* Make sure that dual-write is relinked if required.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Make sure that dual-write is relinked if required.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 ### Environment admin
 
-The system admin account in the target environment (**Admin** user ID) is reset to the value that is found in the web.config file in that environment. This account should be the same as the admin account from LCS. To preview which account this account will be, visit the **Environment details** page for your target sandbox in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system admin in the transactional database. Therefore, the tenant of the environment will be the tenant of the environment admin.
+The system admin account in the target environment (**Admin** user ID) is reset to the value that is found in the web.config file in that environment. This account should be the same as the admin account from LCS. To preview which account this account is, visit the **Environment details** page for your target sandbox in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system admin in the transactional database. Therefore, the tenant of the environment is the tenant of the environment admin.
 
 If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
 
