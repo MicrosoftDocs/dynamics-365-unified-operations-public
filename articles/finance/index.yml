@@ -34,7 +34,7 @@ highlightedContent:
     # Card
     - title: Troubleshoot
       itemType: reference
-      url: /dynamics365/finance/finance-troubleshooting
+      url: /troubleshoot/dynamics365/finance/welcome-finance
 additionalContent:
   sections:
   - title: Implement 
