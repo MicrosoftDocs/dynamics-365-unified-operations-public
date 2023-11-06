@@ -44,6 +44,9 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
+## Use Microsoft Copilot to conversationally guide users
+With Microsoft Copilot users have a conversational guide at their hands. Users can ask questions in natutral language 
+
 ## Get notified about changes through an RSS feed
 
 To subscribe to an RSS feed of all updates made to the content on Microsoft technical documentation across the finance and operations apps, use the following link:
