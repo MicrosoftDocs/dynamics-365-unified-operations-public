@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 10/04/2023
+ms.date: 11/04/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,7 +40,7 @@ This article describes where to access Financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 	
-1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. If it isn't configured, configure it by following the steps in [need external doc here](URL).
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. 
 2. Select **Install a new add-in**, and search for **Financial reporting**.
 3. Agree to the terms, and then select **Install**.
 
