@@ -4,7 +4,7 @@
 title: Refresh database
 description: This article explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
-ms.date: 01/12/2023
+ms.date: 11/06/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -47,9 +47,9 @@ With the goal of providing Data Application Lifecycle Management (also referred 
 4. The refresh operation begins immediately.
 
 ### Refresh operation failed
-If there is a failure, the option to perform a rollback is available.  By selecting the **Rollback** option after the operation has initially failed, your target sandbox environment is restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization that is present in the target sandbox can't complete a database synchronization with the newly refreshed data.
+If there is a failure, the refresh operation automatically rolls back. Your target sandbox environment is restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization that is present in the target sandbox can't complete a database synchronization with the newly refreshed data.
 
-To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.  
 
 ### Data elements that aren't copied during refresh
 The information in this section lists certain elements of the database that aren't copied over to the target environment during a database refresh operation.
