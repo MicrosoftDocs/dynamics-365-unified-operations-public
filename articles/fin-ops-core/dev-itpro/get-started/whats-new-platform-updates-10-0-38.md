@@ -30,6 +30,7 @@ This section will contain a table that lists the features that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Client | Bulk editing for grids | [Grid capabilities](grid-capabilities.md) | Feature management | 
 
 ## Feature enhancements included in this release
 
