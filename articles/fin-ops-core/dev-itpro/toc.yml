@@ -2190,7 +2190,7 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
-  - name: Responsible AI FAQs
+  - name: Responsible AI
     items:
     - name: Responsible AI FAQS for Dynamics 365 Platform
       href: responsible-ai/responsible-ai-overview.md
