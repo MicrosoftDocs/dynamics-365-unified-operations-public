@@ -4,7 +4,7 @@
 title: Database movement operations home page
 description: This article provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
-ms.date: 06/04/2021
+ms.date: 11/06/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -45,8 +45,8 @@ The following table shows the various scenarios that are supported and a link to
 |DevTest|	Sandbox|	[Import a database](import-database.md)| Not supported | [Golden configuration promotion](dbmovement-scenario-goldenconfig.md) |
 Production|	DevTest|	Not directly supported | Not supported | Recommend [Export a copy of the standard user acceptance testing (UAT) database](dbmovement-scenario-exportuat.md) |
 |Sandbox point-in-time | Sandbox |[Point-in-time restore (PITR)](database-point-in-time-restore.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
-|Production point-in-time| Sandbox| [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md) | Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
-|Production point-in-time| Production | [Point-in-time restore (PITR)](database-point-in-time-restore.md) | Not supported | Not applicable |
+|Production point-in-time| Sandbox| [Point-in-time restore of the production database to a sandbox environment](database-pitr-prod-sandbox.md)  [Applicable scenario for production to sandbox restore](database-pitr-prod-sandbox.md#applicable-scenario-for-production-to-sandbox-restore)| Not supported | [Destructive testing](dbmovement-scenario-destructivetests.md) |
+|Production point-in-time| Production | [Point-in-time restore (PITR)](database-point-in-time-restore.md) [Applicable scenario for production restore](database-point-in-time-restore.md#applicable-scenario-for-production-restore)| Not supported | Not applicable |
 
 > [!IMPORTANT]
 > Database movement operations are very lengthy operations. The amount of time these operations take varies by data volume, schema complexity, and whether the target of the operation is a flat file, like a .bacpac file in the case of the export operation. In general, these operations can take up to 24 hours to complete, and during the operation there is no way to cancel. In addition, if the target of the operation is an environment like in the production to sandbox scenario, the sandbox environment will go offline at an undetermined time, when the database copy operation has completed, but before the database synchronization steps begin. This will happen with no warning to end users in the environment. As result, it is best to schedule these types of operations during non-business hours.
