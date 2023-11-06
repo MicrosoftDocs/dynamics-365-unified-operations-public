@@ -34,20 +34,23 @@ ms.dyn365.ops.version: AX 7.0.0
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
 > [!NOTE]
-> Financial reporting is available thru an add-in. This will change the default availability of Financial reporting through Dynamics 365 Finance. For existing customers, Microsoft provides the new Financial reporting add-In into your Microsoft Dynamics Lifecycle services environment. There will be no impact on your environments or your organization’s ability to run financial reports if you are currently using the Financial reporting module.
+> Financial reporting is now available through an add-in. Therefore, the default availability of Financial reporting through Microsoft Dynamics 365 Finance has changed. If you're an existing customer, Microsoft provides the new Financial reporting add-in in your Microsoft Dynamics Lifecycle Services environment. If you're currently using the **Financial reporting** module, there's no impact on your environments or your organization's ability to run financial reports.
 
-## Installing the Financial reporting add-in
-The Financial reporting add-in allows financial and business professionals to create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required upon installation.
+## Install the Financial reporting add-in
+
+The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 	
- 1. In LCS, confirm the Power platform integration is configured and available. If not configured, follow these steps to configure (need external doc here).
- 2. Click on Install a new add-in and search for Financial Reporting
- 3. Agree to terms of agreement and Install.
+1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. If it isn't configured, configure it by following the steps in [need external doc here](URL).
+2. Select **Install a new add-in**, and search for **Financial reporting**.
+3. Agree to the terms, and then select **Install**.
 
-## Uninstalling the Financial reporting Add-In
-> [IMPORTANT:] Uninstalling the Financial reporting add in will remove resources that have been used for financial reporting. This action will permanently delete any previously created reports, report designs and configurations. Recovery is not supported.
+## Uninstall the Financial reporting add-in
 
- 1. In LCS, find the Financial reporting add-in in environment add-ins under Power Platform Integration.
- 2. Select Uninstall and Agree.
+> [!IMPORTANT]
+> If you uninstall the Financial reporting add-in, you remove resources that have been used for Financial reporting. This action permanently deletes any previously created reports, report designs, and configurations. Recovery isn't supported.
+
+1. In Lifecycle Services, find the Financial reporting add-in in the **Environment add-ins** section under **Power Platform Integration**.
+2. Select **Uninstall** and then **Agree**.
 
 ## Accessing Financial reporting
 
