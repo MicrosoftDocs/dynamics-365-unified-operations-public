@@ -34,7 +34,7 @@ This feature enables the capability to validate check number when user generates
 
 Turn on feature **Enable check number validation** in Feature management workspace.
 
-Two parameters are introduced in **Cash and bank management parameters** > **General** > **Check setup **page.
+Two parameters are introduced in **Cash and bank management parameters** > **General** > **Check setup** page.
 
 - **Allow check number validation**: Turn on this parameter if you want to validate check number when generating payment document in vendor payment journal. This parameter enables two validations:
   - Check number interval validation
