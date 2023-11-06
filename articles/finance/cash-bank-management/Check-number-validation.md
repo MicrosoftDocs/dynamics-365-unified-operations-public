@@ -49,14 +49,14 @@ Scenario 1: Wrong check number
 
 When you generate payment on a vendor payment journal and the method of payment is Check, you enter the check number as 7920 by mistake
 
-![image-20231106154457202](media\Check number validation 1.png)
+![image-20231106154457202](media/Check-number-validation-1.png)
 
 Scenario 2: Characters in the check number
 
 When you generate payment on a vendor payment journal and the method of payment is Check, you enter the check number as 7920 by mistake
 
-![image-20231106154917789](media\Check number validation 3.png)
+![image-20231106154917789](media/Check-number-validation-3.png)
 
 System will validate the check number 7920 against last check number 791. If it exceeds the defined interval, a warning message will be populated to ask for user confirmation.
 
-![image-20231106154632093](media\Check number validation 2.png)
+![image-20231106154632093](media/Check-number-validation-2.png)
