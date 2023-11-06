@@ -226,21 +226,17 @@ The following table describes some typical scenarios and activities for the serv
 
 ## Service update strategy
 
-In accordance with the [software lifecycle policy](../migration-upgrade/versions-update-policy.md), finance and operations apps follow the Microsoft [Modern Lifecycle Policy](../migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported. 
+In accordance with the [software lifecycle policy](../migration-upgrade/versions-update-policy.md), finance and operations apps follow the Microsoft [Modern Lifecycle Policy](../migration-upgrade/versions-update-policy.md#modern-lifecycle-policy), which covers products that are continuously serviced and supported.
 
-Microsoft releases eight service updates to finance and operations apps every year on the following months:
+Microsoft releases four service updates to finance and operations apps every year on the following months:
 
-- January
 - February
 - April
-- May
 - July
-- August
 - October
-- November
 
 >[!NOTE]
->April and October are major feature release waves. Customers may pause an individual service update for up to three consecutive update cycles.
+>April and October are major feature release waves. Customers may pause an individual service update for a maximum of one update cycle.
 
 For more information, review the following topics:
 
