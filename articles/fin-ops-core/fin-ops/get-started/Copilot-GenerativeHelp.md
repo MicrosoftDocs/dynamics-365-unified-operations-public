@@ -1,7 +1,10 @@
-title: Create alert rules
-description: This article provides information about alerts and explains how to create an alert rule.
-author: RichdiMSFT
-ms.date: 10/08/2020
+---
+# required metadata
+
+title: Copilot for generative help and guidance
+description: This article provides information 
+author: cabeln
+ms.date: 
 ms.topic: article
 ms.prod: 
 ms.technology: 
