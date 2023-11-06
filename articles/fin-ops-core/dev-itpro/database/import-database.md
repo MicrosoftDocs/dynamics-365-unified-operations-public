@@ -4,7 +4,7 @@
 title: Import a database
 description: This article explains how to import a database for finance and operations apps.
 author: LaneSwenka
-ms.date: 11/01/2021
+ms.date: 11/06/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,12 @@ Database import isn't applicable to LCS projects that are configured for a Dynam
 
 ### Import operation failure
 
-If the import operation isn't successful, you can do a *rollback*. If you select the **Rollback** option after the initial failure of the operation, your target sandbox environment is restored to the state that it was in before the import began. The rollback operation is made available by the Microsoft Azure SQL Database point-in-time restore capability for restoring the database. Rollback is often required if a customization that is present in the target sandbox can't complete a database synchronization with the newly imported data.
+If the import operation isn't successful, it automatically *rolls back*. Your target sandbox environment is restored to the state that it was in before the import began. The rollback operation is made available by the Microsoft Azure SQL Database point-in-time restore capability for restoring the database. Rollback is required if a customization that is present in the target sandbox can't complete a database synchronization with the newly imported data.
+
+To cancel an ongoing export operation, use the **Cancel** button.
+
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.
+
 
 ### Data elements that require attention after import
 
