@@ -4,7 +4,7 @@
 title: Point-in-time restore of the production database to a sandbox environment
 description: This article describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 11/01/2021
+ms.date: 11/06/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -37,7 +37,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to do a point-in-time re
 
 ## Self-service point-in-time restore Production to Sandbox
 
-To provide customers with data application lifecycle management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated refresh database action. Here is an overview of the process for doing a self-service database refresh.
+To provide customers with data application lifecycle management (DataALM) capabilities that don't rely on human or manual processes, the Lifecycle Services team has introduced an automated restore database action. Here is an overview of the process for doing a self-service database restore.
 
 1. Go to the **Environment Details** page for your target Sandbox, and select **Maintain** \> **Move database** button.
 2. Select the **Point-in-time restore Prod to Sandbox** option, and then select the desired point in time.
@@ -47,11 +47,15 @@ To provide customers with data application lifecycle management (DataALM) capabi
 > [!IMPORTANT]
 > Self-service point in time restore (PITR) is not supported between environments that are on different regions. For more details, refer to the "Known issues" section later in this article.
 
+### Applicable scenario for production to sandbox restore
+
+Restoring the production database to a sandbox environment is useful if you accidentally lost data in your production environment. Using this method, you have a chance to recover the data and repopulate it into your production environment. Perform a point-in-time restore from your production environment to your sandbox environment, connect to your sandbox environment to recover the data from the restored database, then repopulate it back into your production environment.
+
 ### Restore operation failure
 
-If the restore operation isn't successful, you can do a rollback. If you select the **Rollback** option after the operation originally fails, your target sandbox environment is restored to the state that it was in before the refresh began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly refreshed data.
+If the restore operation isn't successful, it automatically rolls back. Your target sandbox environment is restored to the state that it was in before the restore began. Rollbacks are made available by the PITR capability of Azure SQL Database. They are typically required if a customization that is present in the target sandbox environment can't complete a database synchronization with the newly restored data.
 
-To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.
+To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed rollback operation.
 
 ### Data elements that aren't copied during restore copy
 
@@ -69,23 +73,23 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 * Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
-Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
+Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform postrestore cleanup activities.
 
 ### Environment administrator
 
 The system administrator account in the target environment (that is, the account that has a **UserId** value of **Admin**) is reset to the value that is found in the web.config file in the target environment. This value should match the value of the administrator account in LCS. To preview this account, go to the **Environment Details** page for your target sandbox environment in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated so that it matches the system administrator account in the transactional database. Therefore, the tenant of the environment will also be the tenant of the environment administrator.
 
-If you've used the Admin User Provisioning Tool on your environment to change the value in the web.config file, that value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox environment, and then redeploy it and select another account. You can then perform another refresh database action to restore the data.
+If you've used the Admin User Provisioning Tool on your environment to change the value in the web.config file, that value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox environment, and then redeploy it and select another account. You can then perform another restore database action to restore the data.
 
-An environment can't be refreshed from one tenant to another. This restriction applies even to .onmicrosoft.com tenants. You should make sure that the admin accounts in the source and target environments are from the same tenant domain.
+An environment can't be restored from one tenant to another. This restriction applies even to .onmicrosoft.com tenants. You should make sure that the admin accounts in the source and target environments are from the same tenant domain.
 
 ### Conditions for doing a PITR copy of a production environment to a sandbox environment
 
-Here is the list of requirements and conditions of operation for a database refresh:
+Here is the list of requirements and conditions of operation for a database restore:
 
-- A refresh performs a delete operation on the original target database.
-- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
-- The refresh will affect only the application and Financial Reporting databases.
+- A restore performs a delete operation on the original target database.
+- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the reestore process is completed.
+- The restore will affect only the application and Financial Reporting databases.
 -  No **file stored in Azure blob storage is copied** from one environment to another. This includes **document attachments and custom Microsoft Office templates**. These documents won't be changed and will remain in their current state. 
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before  other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
@@ -107,11 +111,11 @@ Even if a customization is successfully added to the sandbox environment (that i
 
 ### The Restore operation is denied for environments that run Platform update 20 or earlier
 
-The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
+The database restore process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### The source and target environments have incompatible versions of Financial Reporting
 
-The database refresh process (self-service or via a service request) can't be successfully completed if the version of Financial Reporting in your target environment is earlier than the version in your source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
+The database restore process (self-service or via a service request) can't be successfully completed if the version of Financial Reporting in your target environment is earlier than the version in your source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
 
 To determine the version that is installed in your source and target environments, select **View detailed version information** on the **Environment Details** page. Then search for **MRApplicationService**, and make sure that the version in the target environment is later than or the same as the version in the source environment.
 
@@ -131,11 +135,11 @@ Customers that are using version 8.0 or earlier should follow these steps.
 
 ### The source and target environments have incompatible application versions
 
-The database refresh process (self-service or via service request) can't be completed if the application release of your source environment and the application release of your target environment aren't the same. Because the data upgrade process isn't run by using database movement operations such as refresh, data loss can occur.
+The database restore process (self-service or via service request) can't be completed if the application release of your source environment and the application release of your target environment aren't the same. Because the data upgrade process isn't run by using database movement operations such as refresh, data loss can occur.
 
-If you're upgrading your sandbox UAT environment to a newer application version (for example, from 7.3 to 8.1), be sure to perform the database refresh action before you start the upgrade. After your sandbox environment is upgraded to the newer version, you can't restore an older production environment database to the sandbox UAT environment.
+If you're upgrading your sandbox UAT environment to a newer application version (for example, from 7.3 to 8.1), be sure to perform the database restore action before you start the upgrade. After your sandbox environment is upgraded to the newer version, you can't restore an older production environment database to the sandbox UAT environment.
 
-Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the refresh, or just deallocate, delete, and redeploy the environment before you do the refresh.
+Conversely, if your production environment is newer than your target sandbox environment, you must either upgrade the target sandbox environment before the restore, or just deallocate, delete, and redeploy the environment before you do the refresh.
 
 ### The source and target are on different infrastructure (Microsoft-managed vs. self-Service)
 
