@@ -54,6 +54,7 @@ With Microsoft Copilot users have a conversational guide at their hands. Users c
 > To learn about the capabilities and limitations of AI-powered and Copilot features see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 Once the Copilot has been enabled by the administrator, users can open the Copilot side car using to Copilot button at th etop of the page.
+
 ![Help pane.](./media/Copilot-Help.png)
 
 ## Get notified about changes through an RSS feed
