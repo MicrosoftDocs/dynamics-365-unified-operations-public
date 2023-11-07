@@ -67,6 +67,7 @@ To apply a charge set as compound, you must first set up the auto charge. Use th
 1. On the Action Pane, select **New** to create a charges.
 1. In the header of the new record, set the following fields:
     - **Account code** – Select *All*.
+    - **Item code** – Select *All*.
     - **Mode of delivery code** – Select *All*.
     - **Charge description** – Enter a name for the charge.
 
@@ -284,10 +285,10 @@ The following scenario illustrates the effects of this setting:
     1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
     1. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
     1. On the Action Pane, select **Save**.
-1. Repeat the previous step to create a second, identical sales order. <!--KFM: Continue here -->
-1. Pick and pack both sales orders.
+1. Repeat the previous step to create a second, identical sales order.
+1. Pick and pack both sales orders. <!--KFM: **lots** of steps are missing here. Is this ok? -->
 
-1. In  **Sales and Marketing \> Sales orders \> All sales orders** select the two sales orders
+1. In  **Sales and Marketing \> Sales orders \> All sales orders** select the two sales orders.
 1. In header ribbon **Invoice**, Generate **Invoice**
 1. In the **Posting invoice** page, set **Summary update for** to 'Invoice account' and **Arrange**
 1. Press **OK**
