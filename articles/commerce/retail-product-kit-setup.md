@@ -2,7 +2,7 @@
 title: Retail product kit setup overview
 description: This article provides an overview of the process flow for setting up retail product kits.
 author: rickwyang
-ms.date: 11/03/2023
+ms.date: 11/07/2023
 ms.topic: overview
 audience: Application User
 ms.reviewer: josaw
@@ -23,6 +23,9 @@ Retail product kits group and package individual products into one sellable unit
 The following illustration outlines the steps that you must complete to create and process product kits so that they can be sold in your retail channels.
 
 ![Diagram of the process flow for setting up and maintaining product kits.](./media/Dn497848.RetailProductKitsProcessFlow(AX.60).gif)
+
+> [!NOTE]
+> You can sell retail product kits via point of sale (POS), but selling retail product kits via online channels isn't currently supported. To enable selling retail product kits via online channels, you must build e-commerce customizations. For more information, see [Get started with e-commerce online extensibility development](e-commerce-extensibility/sdk-getting-started.md).
 
 ## Create a product kit
 
