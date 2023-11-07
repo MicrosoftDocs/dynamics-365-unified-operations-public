@@ -5,10 +5,11 @@ title: Connect finance and operations apps with an existing Microsoft Dataverse 
 description: This article explains how to connect finance and operations apps with an existing Microsoft Dataverse instance.
 ms.author: sakuchha
 author: saurabh-kuchhal
-ms.date: 05/02/2023
+ms.date: 11/07/2023
 ms.topic: how-to
 ms.prod:
 ms.technology: 
+ms.reviewer: johnmichalak
 
 # optional metadata
 
@@ -96,5 +97,5 @@ There's a brief downtime in the finance and operations apps environment, so that
 
 ## Recommendations
 
-* Because you're using an existing Dataverse instance and linking with the finance and operations apps environment, it's important that you remember the disconnected Power Platform environment that was created while the finance and operations environment was created is not deleted. You'll need to manually delete it.
+* Because you're using an existing Dataverse instance and linking with the finance and operations apps environment, it's important that you remember the disconnected Power Platform environment that was created when the finance and operations environment was created isn't deleted. You'll need to manually delete the disconnected Power Platform environment.
 * If you plan to keep the Power Platform environment, note that there isn't a Dataverse instance on it, and you can't use Dataverse capabilities and features such as the Export to Data Lake Add-In, dual-write, and virtual tables.
