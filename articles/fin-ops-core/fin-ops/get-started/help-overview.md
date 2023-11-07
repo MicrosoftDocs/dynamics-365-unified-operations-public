@@ -57,6 +57,8 @@ Once the Copilot has been enabled by the administrator, users can open the Copil
 
 ![Help pane.](./media/CopilotHelp.png)
 
+Read more about [Copilot for generative help and guidance](../copilot/copilot-generative-help.md)
+
 ## Get notified about changes through an RSS feed
 
 To subscribe to an RSS feed of all updates made to the content on Microsoft technical documentation across the finance and operations apps, use the following link:

@@ -18,3 +18,4 @@ ms.reviewer: kamaybac
 
 - [The Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Detect spikes and deviations in sensor data](faq-sdi-spike.md)
+- [FAQ for generative help and guidance with Copilot in the Dynamics 365 finance and operations platform](../fin-ops-core/fin-ops/copilot/copilot-generative-help-rai-faq.md)

@@ -54,3 +54,7 @@ Microsoft is committed to responsible AI practices with Copilot, ensuring user p
 
 
 In conclusion, Copilot stands as a pivotal enhancement to the D365 FnO experience, marrying the complexity of supply chain management with the simplicity of AI-powered assistance, ultimately fostering a more productive and cost-efficient environment for users.
+
+## See also
+
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](copilot-generative-help-rai-faq.md)
