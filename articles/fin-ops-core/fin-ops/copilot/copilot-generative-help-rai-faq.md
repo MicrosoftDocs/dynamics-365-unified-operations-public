@@ -25,7 +25,7 @@ ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
 
-# FAQ for the Copilot dor generative he and answers
+# FAQ for the Copilot for generative help and answers
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used by **Copilot for generative help and guidance** in Microsoft Dynamics 365 finance and operations appications. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
