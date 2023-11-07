@@ -130,6 +130,8 @@ Start by creating a new Azure DevOps project if you don't already have one. In y
 ![VSTS project.](./media/2-VSTS-project.png)
 
 After you create the new Azure DevOps project, you must give Azure DevOps access to it. First, create a new personal access token on the Azure DevOps account. Then configure the LCS project with the correct URL and personal access token.
+> [!IMPORTANT]
+> Do not disable 'classic build and classic release pipelines' in the Azure DevOps project. 
 
 ![LCS project.](./media/3-LCS-project.png)
 
