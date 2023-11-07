@@ -1757,6 +1757,8 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Inventory Visibillity Copilot
+          href: inventory-visibility-copilot-API.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence
