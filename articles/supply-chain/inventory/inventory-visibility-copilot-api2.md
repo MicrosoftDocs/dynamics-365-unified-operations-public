@@ -54,4 +54,4 @@ Sample Body
    }
 ```
 
-You can change value of `LogLevel` to `Debug`, `Trace`, or `Information` in the body to see more or less detailed information.
+You can chose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
