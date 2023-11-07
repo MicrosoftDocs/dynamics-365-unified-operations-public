@@ -25,7 +25,7 @@ The following illustration outlines the steps that you must complete to create a
 ![Diagram of the process flow for setting up and maintaining product kits.](./media/Dn497848.RetailProductKitsProcessFlow(AX.60).gif)
 
 > [!NOTE]
-> You can sell retail product kits via point of sale (POS), but selling retail product kits via online channels isn't currently supported. To enable selling retail product kits via online channels, you must build e-commerce customizations. For more information, see [Get started with e-commerce online extensibility development](./e-commerce-extensibility/sdk-getting-started).
+> You can sell retail product kits via point of sale (POS), but selling retail product kits via online channels isn't currently supported. To enable selling retail product kits via online channels, you must build e-commerce customizations. For more information, see [Get started with e-commerce online extensibility development](e-commerce-extensibility/sdk-getting-started).
 
 ## Create a product kit
 
