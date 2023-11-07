@@ -2,7 +2,7 @@
 title: Inventory availability APIs for e-commerce
 description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 10/18/2023
+ms.date: 11/07/2023
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -22,11 +22,10 @@ Commerce provides the following APIs to query inventory availability of a produc
 - **GetEstimatedAvailability** – Use this API to query inventory for a product or product variant in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
 - **GetEstimatedProductWarehouseAvailability** – Use this API to query inventory for a product or product variant in a specific warehouse.
 - **GetDimensionValuesWithEstimatedAvailabilities** – Use this API to query inventory levels that are aggregated on the dimensions for a product, either in the online channel's default warehouse or in warehouses that are linked to the online channel's fulfillment group.
+- **UpdateProductWarehouseAvailabilities** – Use this API to update inventory for products or product variants in specific warehouses.
 
 > [!NOTE]
-> The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs that are used in Commerce version 10.0.7 and earlier.
-
-- **UpdateProductWarehouseAvailabilities** – Use this API to update inventory for products or product variants in specific warehouses.
+> The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs used in Commerce version 10.0.7 and earlier.
 
 For more information about how to consume Retail Server APIs in external applications, see [Consume Retail Server APIs in external applications](consume-retail-server-api.md).
 
