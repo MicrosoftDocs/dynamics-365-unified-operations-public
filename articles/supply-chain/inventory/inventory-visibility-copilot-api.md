@@ -16,6 +16,7 @@ ms.custom: bap-template
 # Copilot for Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Copilot for Inventory Visibility is AI-powered inventory management solution designed to revolutionize the way businesses manage and optimize their inventory. In a dynamic and competitive marketplace, efficient and real-time inventory management is critical for success. Copilot for Inventory Visibility offers a natural-language based feature that provides real-time inventory query, seamless system integration, and extensible solutions. By partnering with Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
 
