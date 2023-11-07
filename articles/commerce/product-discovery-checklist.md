@@ -1,8 +1,8 @@
 ---
 title: Product discover checklist
-description: This article describes the checklist to make products discoverable on a channel.
+description: This article provides a product discovery checklist to follow to ensure that products are discoverable in Microsoft Dynamics 365 Commerce channels for various scenarios.
 author: rickwyang
-ms.date: 11/04/2023
+ms.date: 11/07/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -14,19 +14,19 @@ ms.search.validFrom: 2023-11-04
 
 # Product discovery checklist
 
-[!include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]\
 
-This article describes the checklist to make products discoverable on a channel in different scenarios.
+This article provides a product discovery checklist to follow to ensure that products are discoverable in Microsoft Dynamics 365 Commerce channels for various scenarios.
 
 ## Basic configurations
 
-* Make sure the product is released to the legal entity of the channel's warehouse. See [Release an engineering product to a local company](https://learn.microsoft.com/en-us/dynamics365/supply-chain/engineering-change-management/engineering-scenarios#release) for more details.
-* Make sure the product is assorted to the channel. See [Set up assortments](set-up-assortments.md) for more details. You can validate the product is assorted the channel using the **Validate a channel's assortment** section.
-* Make sure distribution schedule 1040 (Products) and 1150 (Catalog) jobs are run. In case any key table is deleted from the jobs, you can run **Retail and Commerce** \> **Headquarters setup** \> **Commerce scheduler** \> **Initialize commerce scheduler** to add them back.
+- Ensure that the product is released to the legal entity of the channel's warehouse. See [Release an engineering product to a local company](https://learn.microsoft.com/en-us/dynamics365/supply-chain/engineering-change-management/engineering-scenarios#release) for more details.
+- Ensure that the product is assorted to the channel. See [Set up assortments](set-up-assortments.md) for more details. You can validate the product is assorted the channel using the **Validate a channel's assortment** section.
+- Ensure that you run the distribution schedule **1040 (Products)** and **1150 (Catalog)** jobs. In case any key table is deleted from the jobs, to add the table(s) back to the job(s), run the **Initialize Commerce scheduler** (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**) in Commerce headquarters.
 
 ## Additional configurations to check if you are using cloud-powered search
 
-When [Cloud-powered search overview](cloud-powered-search-overview) is used, the products will be published to search indexes.
+When [Cloud-powered search overview](cloud-powered-search-overview) is used, products are published to search indexes.
 
 * Since the price information is required to be accurate in the search indexes, to ensure products can be published successfully, we need to ensure the prices can be calculated as well.
   * Make sure the sales unit of measure is configured for the product.
