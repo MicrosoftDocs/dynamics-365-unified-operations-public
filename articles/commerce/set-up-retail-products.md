@@ -2,18 +2,14 @@
 title: Set up retail products
 description: This article describes how to set up products in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/20/2017
+ms.date: 11/07/2023
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
-ms.search.industry: Retail
 ms.search.form: RetailProductAndCategoryWorkspace, EcoResProductDetails
 ---
 
@@ -33,8 +29,6 @@ Before you can offer products for resale in your commerce channels, you must cre
 6. **Add products to catalogs.** Although this step is optional for POS, online stores require that products be included in at least one catalog.
 
 > [!NOTE]
-> To make products discoverable on a channel, a few configurations are required. Please read [Product discovery checklist](product-discovery-checklist.md) to ensure products are set up properly. Furthermore,
-
-You can use [Channel merchandising configuration validator](dev-itpro/channel-merch-config-validator.md) to validate configurations of all assorted products for a channel.
+> To make products discoverable in a channel, some configuration is required. To ensure that products are set up correctly, refer to the [Product discovery checklist](product-discovery-checklist.md). Also, you can use the [Channel merchandising configuration validator](dev-itpro/channel-merch-config-validator.md) to validate configurations of all assorted products for a channel.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
