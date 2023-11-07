@@ -22,7 +22,7 @@ This article provides a product discovery checklist to follow to ensure that pro
 
 - Ensure that the product is released to the legal entity of the channel's warehouse. For more information, see [Release an engineering product to a local company](/dynamics365/supply-chain/engineering-change-management/engineering-scenarios#release).
 - Ensure that the product is assorted to the channel. You can validate the product is assorted to the channel using the **Validate a channel's assortment** section. For more information, see [Set up assortments](set-up-assortments.md).
-- Ensure that you run the distribution schedule **1040 (Products)** and **1150 (Catalog)** jobs. In case any key table is deleted from the jobs, to add the table(s) back to the job(s), run the **Initialize Commerce scheduler** (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**) in Commerce headquarters.
+- Ensure that you run the distribution schedule **1040 (Products)** and **1150 (Catalog)** jobs. If any key tables are deleted from the jobs, to add the table(s) back to the jobs, run the **Initialize Commerce scheduler** (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**) in Commerce headquarters.
 
 ## Additional configurations to check if you are using cloud-powered search
 
