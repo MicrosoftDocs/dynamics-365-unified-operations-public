@@ -30,6 +30,8 @@ To use the Copilot for Inventory Visibility, your system must meet the following
 
 ## Copilot for Inventory Visibility API
 
+You can interact with Copilot for Inventory Visibility by using its API.
+
 ```txt
 Path:
 /Copilot/nl/iv/{environmentId}/query
@@ -47,7 +49,7 @@ Body:
     }
 ```
 
-Sample Body
+The following example shows sample body content.
 
 ```json
    {
@@ -55,4 +57,4 @@ Sample Body
    }
 ```
 
-You can chose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
+You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
