@@ -40,22 +40,18 @@ If the channel and accounting currencies are different, follow these steps.
 1. Configure the currency exchange rate at **General ledger \> Currencies \> Currency exchange rates**.
 1. Assign the exchange rate as the **Exchange rate type** at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
   
-
-
 ## Product discovery under the channel's navigation hierarchy
 
 - Ensure that the navigation hierarchy is associated with the channel. For more information, see [Configure a channel to use a channel navigation hierarchy](configure-channel-hierarchy.md).
 - Ensure that the product is added to a category of the channel's navigation hierarchy.
 
-## Unblock your business on the Store Commerce app when there is a product discovery issue
+## Workarounds on the Store Commerce app when there is a product discovery issue
 
-In case you encounter a product discovery issue on Store Commerce app, there is a quick workaround to sell the product without engaging Microsoft's support.
+If you encounter a product discovery issue on Store Commerce app, there is a quick workaround to sell the product without engaging Microsoft's support.
 
-1. When you see a message like "We didn't find anything to display here." on the search screen, it means the product cannot be discovered in the channel. Click the "Search other stores" link below the message.
-1. Click the "Search all stores and catalogs" link. The selected store will changed to "All stores and catalogs" afterwards.
-  ![](./media/product-rts-search-all-stores.png)
-1. Click the "All store products" tile. A real-time service call will be performed to search the product.
-  ![](./media/product-rts-search-products.png)
-1. If the product is still not found, probably the product is not released to the legal entity properly. Please double check the product's setup.
+1. When you see a message like "We didn't find anything to display here" on the search screen, it means the product can't be discovered in the channel. Select **Search other stores** below the message.
+1. Select **Search all stores and catalogs**. The selected store then changes to **All stores and catalogs**.
+1. Select the **All store products** tile. A real-time service call is then performed to search the product.
+1. If you still can't find the product, it probably isn't correctly released to the legal entity. Check the product's configuration.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
