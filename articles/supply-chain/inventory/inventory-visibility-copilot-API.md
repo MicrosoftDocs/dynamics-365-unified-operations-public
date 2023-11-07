@@ -1,12 +1,12 @@
 ---
 title: Copilot for Inventory Visibility
-description: XXXX
-author: XXXX
-ms.author: XXXX
+description: Copilot for Inventory Visibility is AI-powered inventory management solution that provides real-time inventory query, seamless system integration, and extensible solutions
+author: Weijiesa
+ms.author: weijiesa
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: MM/DD/YYYY
+ms.date: 11/07/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -17,7 +17,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-Inventory visibility Copilot is AI-powered inventory management solution designed to revolutionize the way businesses manage and optimize their inventory. In a dynamic and competitive marketplace, efficient and real-time inventory management is critical for success. Inventory visibility copilot offers a natural language based feature to provide real-time inventory query, seamless system integration, and extensible solutions. By partnering with Inventory Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction. 
+Copilot for Inventory Visibility is AI-powered inventory management solution designed to revolutionize the way businesses manage and optimize their inventory. In a dynamic and competitive marketplace, efficient and real-time inventory management is critical for success. Copilot for Inventory Visibility offers a natural-language based feature that provides real-time inventory query, seamless system integration, and extensible solutions. By partnering with Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
 
 Copilot for Inventory Visibility introduces an API-driven solution that simplifies and revolutionizes the management of your inventory.
 
