@@ -38,3 +38,5 @@ Sample Body
         "Text" : "what's the inventory of product D0001 in organization usmf, site 1, location 11"
    }
 ~~~
+
+You can change value of **LogLevel** to (`Debug`, `Trace`, `Information`) in the body to see more/less detail information.
