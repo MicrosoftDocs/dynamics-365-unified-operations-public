@@ -2,7 +2,7 @@
 title: Commerce Scale Unit customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: josaw1
-ms.date: 06/02/2020
+ms.date: 11/07/2020
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -35,7 +35,7 @@ Every request to Commerce Scale Unit (via commerce proxy) operates under these m
 - CommerceRole.Application
 - CommerceRole.BusinessPartnerEmployee
 
-The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them. The BusinessPartnerEmployee role is used for requests that represent an contractor works for a seller channel in B2B2B scenario.
+The Anonymous and Customer roles apply to e-commerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an e-commerce customer who hasn't signed in. The Customer role is used for requests that represent an e-commerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit (CSU). For e-commerce scenarios, you can use only APIs that have either the CommerceRole.Anonymous or CommerceRole.Customer roles associated with them. The BusinessPartnerEmployee role is used for requests that represent a contractor that works for a seller channel in a business to business to business (B2B2B) scenario.
 
 > [!NOTE]
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
