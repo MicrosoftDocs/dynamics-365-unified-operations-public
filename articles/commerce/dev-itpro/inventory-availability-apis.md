@@ -292,7 +292,7 @@ For more information about how to consume Retail Server APIs in external applica
 
 ## UpdateProductWarehouseAvailabilities
 
-The UpdateProductWarehouseAvailabilities API internally uses the Inventory Visibility Service (IVS) to update omnichannel inventory data in real time. As a prerequisite to using this API, you must first enable IVS as the inventory data provider for your Commerce environment. The UpdateProductWarehouseAvailabilities API operates under the [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role, which is used for requests that represent a contractor working for a seller channel in a business to business to business (B2B2B) scenario.
+The UpdateProductWarehouseAvailabilities API uses the Inventory Visibility Service (IVS) to update omnichannel inventory data in real time. As a prerequisite to using this API, you must first enable IVS as the inventory data provider for your Commerce environment. The UpdateProductWarehouseAvailabilities API operates under the [BusinessPartnerEmployee](./retail-server-customer-consumer-api.md#roles) role, which is used for requests that represent a contractor working for a seller channel in a business to business to business (B2B2B) scenario.
 
 ### Input parameters
 
@@ -354,7 +354,7 @@ The UpdateProductWarehouseAvailabilities API internally uses the Inventory Visib
 The GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs can fetch inventory data from two data sources:
 
 - When the **Use Inventory Visibility as inventory data provider** setting is turned on in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the IVS you configured for your Commerce headquarters environment.
-- When the **Use Inventory Visibility as inventory data provider** setting is turned off in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from Commerce Scale Unit (CSU) channel databases where estimated physical available and total available quantities are calculated.
+- When the **Use Inventory Visibility as inventory data provider** setting is turned off in **Commerce shared parameters** in headquarters, the inventory availability data is retrieved from the Commerce Scale Unit (CSU) channel databases where estimated physical available and total available quantities are calculated.
 
 The returned values can be shown on your e-commerce site, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products that have an "out of stock" inventory level.
 
