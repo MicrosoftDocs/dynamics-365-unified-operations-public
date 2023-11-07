@@ -55,7 +55,7 @@ With Microsoft Copilot users have a conversational guide at their hands. Users c
 
 Once the Copilot has been enabled by the administrator, users can open the Copilot side car using to Copilot button at th etop of the page.
 
-![Help pane.](./media/Copilot-Help.png)
+![Help pane.](./media/CopilotHelp.png)
 
 ## Get notified about changes through an RSS feed
 
