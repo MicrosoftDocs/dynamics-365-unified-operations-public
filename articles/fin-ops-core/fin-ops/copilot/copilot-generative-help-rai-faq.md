@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Resposible AI FAQ for Copilot for generative help and guidance
+title: Responsible AI FAQ for Copilot for generative help and guidance
 description: This article provides responsible AI related information on Copilot for generative help and guidance in the finance and operations platform
 author: cabeln
 ms.date: 11/07/2023
