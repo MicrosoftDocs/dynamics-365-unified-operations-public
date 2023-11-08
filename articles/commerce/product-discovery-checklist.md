@@ -2,7 +2,7 @@
 title: Product discovery checklist
 description: This article provides a product discovery checklist to follow to ensure that products are discoverable in Microsoft Dynamics 365 Commerce channels for various scenarios.
 author: rickwyang
-ms.date: 11/07/2023
+ms.date: 11/08/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
