@@ -47,3 +47,7 @@ Sensor Data Intelligence enables several types of functionality, each of which i
 The following architectural diagram provides an overview of the solution and its components.
 
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
+
+
+[!NOTE]
+>To learn more about how you connect your sensors to the Azure IOT Hub please visit this article: https://learn.microsoft.com/en-us/azure/architecture/guide/iiot-guidance/iiot-architecture
