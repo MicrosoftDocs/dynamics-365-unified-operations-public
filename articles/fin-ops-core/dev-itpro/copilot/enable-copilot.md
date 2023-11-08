@@ -25,6 +25,8 @@ ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
 
+# Enable *Microsoft Copilot for generative help and guidance* on your Dynamics 365 finance and operations environment 
+
 The **Copilot for generative help and guidance** helps users by providing in-app help guidance with the help of the power of generative AI.
 
 > [!IMPORTANT]
@@ -37,7 +39,7 @@ The **Copilot for generative help and guidance** helps users by providing in-app
 
 ## Enable the feature for your system
 
-This section describes the steps that you must complete to enable the **Confirmed purchase orders with changes** workspace and the related Copilot support.
+This section describes the steps that you must complete to enable the **Copilot for generative help and guidance**.
 
 ### Prerequisites: Your Supply Chain Management environment and connection to Data Verse 
 To install the preview build must be running Supply Chain Management 10.0.37 or later and have enabled the Power Platform integration in LCS. (It is not required to enambe Dual-Write for this feature.)
