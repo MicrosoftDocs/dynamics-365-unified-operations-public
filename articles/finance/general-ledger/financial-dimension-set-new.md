@@ -54,16 +54,14 @@ Use the **Rebuild balances** button on the balance status page to re-create bala
 
 ## Delete a dimension set
 
-If you no longer require a dimension set, you can use the **Delete** button to remove it. Don't delete and re-create dimension sets as a workaround for potential issues with the balance data for a specific dimension set. Re-creation of a dimension set is costly. For help with issues, contact Support.
+If you no longer require a dimension set, you can use the **Delete** button to remove it. Don't delete and re-create dimension sets as a workaround for potential issues with the balance data for a specific dimension set. Re-creation of a dimension set is costly. For help with issues, contact support.
 
 ## Techincal information 
 
 | New Table | Old Table | Description |
 |-----------|-----------|-------------|
 | GeneralLedgerBalance, GeneralLedgerMainAccountBalance | DimensionFocusBalance | FocusDimensionHierarchy and FocusLedgerDimension are removed from the balance tables. The data is now aggregated by the original GeneralJournalAccountEntry.LedgerDimension value (no new DimensionAttributeValueCombination records created for balances any longer). <br> The GeneralLedgerMainAccountBalance stores balances at the main account level only as a performance optimization as the primary use case scenario. |
-| GeneralLedgerBalanceReportingDimension | DimensionAttributeValueCombination / DimensionAttributeValueGroupCombination / DimensionAttributeValueGroup / DimensionAttributeValue /
-DimensionAttributeLevelValue /
-Etc. | New tables store segment values of the dimension attribute value natural key values in hierarchical order based on the dimension set. |
+| GeneralLedgerBalanceReportingDimension | DimensionAttributeValueCombination,  DimensionAttributeValueGroupCombination,  DimensionAttributeValueGroup,  DimensionAttributeValue,  DimensionAttributeLevelValue, etc... | New tables store segment values of the dimension attribute value natural key values in hierarchical order based on the dimension set. |
 | GeneralLedgerBalanceReportingDimensionReference | DimensionFocusLedgerDimensionReference | The new table is the link between the original ledger account and reporting account structure per dimension set |
 | GeneralLedgerBalanceUnprocessedTransactions | DimensionFocusUnporcessedTransactions | Records to perform incremental update of balances no longer created per dimension set. |
 
