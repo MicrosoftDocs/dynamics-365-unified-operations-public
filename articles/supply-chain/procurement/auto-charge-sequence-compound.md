@@ -293,7 +293,7 @@ The following scenario illustrates the effects of this setting:
 1. In the **Posting invoice** page, set **Summary update for** to 'Invoice account' and **Arrange**
 1. Press **OK**
 
-Notice that the header charges are calculated per sales order. For each sales order a header charge of 100USD + 2% compound (equalling 4 USD) is applied creating a sum of 2x104=208 USD as total charges for the invoice.
+    Notice that the header charges are calculated per sales order. For each sales order a header charge of 100USD + 2% compound (equalling 4 USD) is applied creating a sum of 2x104=208 USD as total charges for the invoice. <!--KFM: Where do I look to notice this?  -->
 
 Repeat the same previous steps of creating two identical sales orders, pick and pack. Then do the following change:  
 Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
@@ -307,13 +307,13 @@ Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. In the **Posting invoice** page, set **Summary update for** to 'Invoice account' and **Arrange**
 1. Press **OK**
 
-Notice that the header auto charges are re-searched and re-applied per the invoice. The customer will  be debited one instance of the fixed auto charge of 100USD instead of two instances of the 100USD fixed charge, since this charge is now applied on a per invoice and not on a per sales order. The charge total calculated for the invoice is one header charge of 100USD + 2% compound (equalling 6 USD (2% of off line amounts 100+100 and 100 fixed charge) = 106 USD as total charges). 
+    Notice that the header auto charges are re-searched and re-applied per the invoice. The customer will  be debited one instance of the fixed auto charge of 100USD instead of two instances of the 100USD fixed charge, since this charge is now applied on a per invoice and not on a per sales order. The charge total calculated for the invoice is one header charge of 100USD + 2% compound (equalling 6 USD (2% of off line amounts 100+100 and 100 fixed charge) = 106 USD as total charges).
 
-With this setup the fixed auto charge is applied once (per the invoice) and the percentage based charge set to compound is calculated from a value base which is 100 USD lower than compared to header charges calculated per sales order. 
+    With this setup the fixed auto charge is applied once (per the invoice) and the percentage based charge set to compound is calculated from a value base which is 100 USD lower than compared to header charges calculated per sales order. 
 
 1. Back in **Sales and Marketing \> Sales orders \> All sales orders**, lookup header ribbon **Sell** , **Maintain charges** for both sales orders.
 
-Notice that, as part the combining charges on combined invoices, the auto charges only now are present on the first sales order. This is by intent to ensure that the combining of charges on combined invoices provides the correct charge calculation.
+    Notice that, as part the combining charges on combined invoices, the auto charges only now are present on the first sales order. This is by intent to ensure that the combining of charges on combined invoices provides the correct charge calculation.
 
 > [!NOTE]
 > Auto charges are applied based on customer accounts on the sales orders, not invoice accounts for the invoice. In the cases where a summary update is done for sales orders for different customer accounts with the same invoice account, and where different header level auto charges are setup for the different customer accounts, then the customer account for the sales order, which is the **last** sales order for the summary update, will be the customer account upon which the header level auto charges are re-searched and re-applied upon invoicing.
