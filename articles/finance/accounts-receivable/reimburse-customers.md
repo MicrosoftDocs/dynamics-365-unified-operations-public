@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
 
+> [!NOTE]
+> To streamline the process of reimbursement and avoid manual, time-consuming methods, Microsoft introduced a feature that allows for direct refunds to clients from the customer payments journal using the International Organization for Standardization (ISO) 20022 credit transfer format. This feature generates payment files in the ISO 20022 credit transfer format for customers based on accounts receivable transactions. This functionality is particularly useful if you need to generate Single Euro Payments Area (SEPA) or generic ISO 20022 payments. To learn more, see [Refund payment processing in Customer payment journal](refund-customers.md).
+
 The following table shows the prerequisites that must be in place before you start.
 
 | Prerequisite                                                            | Description |
