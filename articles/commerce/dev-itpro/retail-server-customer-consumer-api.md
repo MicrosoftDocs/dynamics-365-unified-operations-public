@@ -2,7 +2,7 @@
 title: Commerce Scale Unit customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients.
 author: josaw1
-ms.date: 11/07/2020
+ms.date: 11/08/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
+This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and e-commerce clients.
 
 - Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
