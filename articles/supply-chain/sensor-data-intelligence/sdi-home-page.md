@@ -49,4 +49,4 @@ The following architectural diagram provides an overview of the solution and its
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
 > [!NOTE]
-> For more information about about how to connect your sensors to the Azure IOT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).
+> For more information about about how to connect sensors to the Azure IOT Hub, see [Azure industrial IoT analytics guidance](/azure/architecture/guide/iiot-guidance/iiot-architecture).
