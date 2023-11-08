@@ -46,14 +46,14 @@ You can find content on Microsoft Learn by using any search engine. For the best
 
 ## Use Microsoft Copilot to conversationally guide users
 
-With Microsoft Copilot users have a conversational guide at their hands. Users can ask questions in natutral language and Copilot will identify the relevant content in the socumentation and compose a targeted guidance to the question asked.
+With Microsoft Copilot users have a conversational guide at their hands. Users can ask questions in natutral language and Copilot will identify the relevant content in the documentation and compose a targeted guidance to the question asked.
 
 > [!IMPORTANT]
 > The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > To learn about the capabilities and limitations of AI-powered and Copilot features see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
-Once the Copilot has been enabled by the administrator, users can open the Copilot side car using to Copilot button at th etop of the page.
+Once the Copilot has been enabled by the administrator, users can open the Copilot side car using to Copilot button at the top of the page.
 
 ![Copilot help pane in the user experience](../copilot/media/copilot-help-welcome.png)
 
