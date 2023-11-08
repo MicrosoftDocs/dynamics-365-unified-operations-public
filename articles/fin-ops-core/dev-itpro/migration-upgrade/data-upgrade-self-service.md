@@ -113,7 +113,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **2**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start process, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.
+    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.  
     - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
 
 
@@ -194,15 +194,22 @@ After the validation is successful, the application presents a set of menu optio
 5. **Replication: Setup Publication for Primary Key (PK) Tables**
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
-    
-    You will be prompted with: **Do you want the snapshot to start automatically ? Continue by giving Y(Yes) for Automatic, else N(No) for manual(If No you have to manually start the snapshots from replication monitor)**. Selecting **Yes** will start the snapshot replication automatically, **No** will require that you go into SQL Management Studio, launch the Replication Monitor and manually start each snapshot. The advantage of manually starting snapshots allows you to control the load on the source SQL Server. This can use useful if you have limited low-usage periods or maintenance windows to start the replication. Additionally, it allows you to split up when you start the snapshot process. 
+
+   > [!NOTE]
+   > Snapsnots will need to be manually started in SQL Management Studio. To do this launch the **Replication Monitor**, select your SQL Server, and click on the **Agents** tab. Select the publisher you which to start, right click and select **Start**
+   > Please start one snapshot at a time, and wait for the replication of that snapshot to compete. Withing the **Replication Monitor**, check in the **Distributor to subscriber** history until you see a message similar to **"Delivered snapshot from the \\unc\server\folder"**
+   > For further details on how to monitor the replication see: [Monitor replication for the Data migration toolkit](monitor-replication.md)
+
+   > [!NOTE]
+   > You will need to manually start the publisher snapshots mnally for the steps 6 and 7 as well. 
+   > Older versions of the Data Migration Toolkit still have the automatic and manual starts. We recommend that you migrate to the latest version of the toolkit. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
     > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
-6. **Replication: Setup Publication for Other Objects (functions)**
+7. **Replication: Setup Publication for Other Objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
@@ -215,9 +222,9 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-7. **Cutover: Setup Publication for Non PK Tables**
+8. **Cutover: Setup Publication for Non PK Tables**
 
-    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. Again, you will be prompted as in the PK table step if you want to automatically or manually start the snapshot. 
+    This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
     > [!NOTE]
     > If there are no locked tables, then publication will not be created.
@@ -234,7 +241,7 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
  
-8. **Cutover: Remove replication setup**
+9. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
 
@@ -251,11 +258,11 @@ After the validation is successful, the application presents a set of menu optio
     > RECONFIGURE WITH OVERRIDE
     > ```
 
-9. **Post-replication: Update environment state to Replicated**
+10. **Post-replication: Update environment state to Replicated**
 
     This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
 
-10. **Data Synchronise: Trigger Transformation**
+11. **Data Synchronise: Trigger Transformation**
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
@@ -270,7 +277,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
-11. **Rollback data upgrade: Trigger rollback**
+12. **Rollback data upgrade: Trigger rollback**
 
     This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
     
