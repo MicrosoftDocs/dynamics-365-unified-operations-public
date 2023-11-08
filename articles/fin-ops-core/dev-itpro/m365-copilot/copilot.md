@@ -24,7 +24,7 @@ ms.search.validFrom: 11/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# Copilot for Finance and Operations (preview)
+# Copilot in Finance and Operations (preview)
 
 [!include[banner](../includes/banner.md)]
 [!INCLUDE[banner](../includes/preview-banner.md)]
