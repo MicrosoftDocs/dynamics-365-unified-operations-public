@@ -37,15 +37,19 @@ The **Copilot for generative help and guidance** helps users by providing in-app
 
 ## What are capabilities of the Copilot for generative help and guidance?
 
+The capabilities of Copilot for generative help and guidance include providing real-time, context-aware assistance within Dynamics 365 finance and operations applications. It simplifies complex tasks by interpreting user queries and pulling relevant information from an extensive pool of public documentation. 
 
+Future enhancements may allow direct navigation and suggest actions within the application to streamline user tasks further. 
 
 ## What is the intended use of the Copilot for generative help and guidance?
 
-The **Copilot for generative help and guidance** workspace is intended to help 
+The intended use of **Copilot for generative help and guidance** is to provide users with an interactive, AI-powered support tool within the Dynamics 365 environment. 
+
+It is designed to aid new users in onboard, assisting with problem-solving, and minimizing the need for extensive training by offering quick access to information and step-by-step guidance. 
 
 ## How was the Copilot for generative help and guidance evaluated? What metrics are used to measure performance?
 
-The **Copilot for generative help and guidance** underwent substantial testing before it was released.
+The evaluation of **Copilot for generative help and guidance** was conducted through rigorous testing across various scenarios within Dynamics 365 finance and operations applications. Performance metrics include accuracy of information provided, user satisfaction ratings, reduction in support ticket volumes, and overall impact on user productivity and application usability 
 
 If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report/abuse?ThreatType=URL&IncidentType=Responsible%20AI&SourceUrl=https://dynamics.microsoft.com/supply-chain-management/overview/). Your feedback helps improve the functionality.
 
@@ -57,12 +61,19 @@ The **Copilot for generative help and guidance** uses Copilot to generate conten
 
 The generated guidance should always be used with a critical eye to identify if the answer provided is correct and sufficient to completethe user's task.
 
-## What operational factors and settings allow for effective and responsible use of the Copilot for generative help and guidance?
-
 When you use the feature, follow these recommendations:
 
 - Always review generated content, help and guidance, and before commencing the steps.
-- Use the references to the source documenttaion in the generated content to looup more datail.
+- Use the references to the source documentaion in the generated content to looup more datail.
+
+## What operational factors and settings allow for effective and responsible use of the Copilot for generative help and guidance?
+
+Effective and responsible use of Copilot for generative help and guidance depends on appropriate user settings, data privacy configurations, content moderation mechanisms, and adherence to responsible AI principles such as fairness, transparency, and accountability. 
+
+Users should have clear guidelines on the types of queries suitable for Copilot and understand the importance of critical assessment of the AI-generated guidance.
+
+Additionally, system administrators should monitor usage patterns to ensure the tool is used as intended and to identify any areas for improvement. 
+
 
 ## See also
 
