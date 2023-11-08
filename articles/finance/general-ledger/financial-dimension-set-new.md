@@ -61,9 +61,11 @@ If you no longer require a dimension set, you can use the **Delete** button to r
 | New Table | Old Table | Description |
 |-----------|-----------|-------------|
 | GeneralLedgerBalance, GeneralLedgerMainAccountBalance | DimensionFocusBalance | FocusDimensionHierarchy and FocusLedgerDimension are removed from the balance tables. The data is now aggregated by the original GeneralJournalAccountEntry.LedgerDimension value (no new DimensionAttributeValueCombination records created for balances any longer). <br> The GeneralLedgerMainAccountBalance stores balances at the main account level only as a performance optimization as the primary use case scenario. |
-| GLBRD | DAVC | TBD|
-| GLBRD | DAVC | TBD|
-| GLBRD | DAVC | TBD|
+| GeneralLedgerBalanceReportingDimension | DimensionAttributeValueCombination / DimensionAttributeValueGroupCombination / DimensionAttributeValueGroup / DimensionAttributeValue /
+DimensionAttributeLevelValue /
+Etc. | New tables store segment values of the dimension attribute value natural key values in hierarchical order based on the dimension set. |
+| GeneralLedgerBalanceReportingDimensionReference | DimensionFocusLedgerDimensionReference | The new table is the link between the original ledger account and reporting account structure per dimension set |
+| GeneralLedgerBalanceUnprocessedTransactions | DimensionFocusUnporcessedTransactions | Records to perform incremental update of balances no longer created per dimension set. |
 
 
 For more information, see [Financial dimensions](financial-dimensions.md).
