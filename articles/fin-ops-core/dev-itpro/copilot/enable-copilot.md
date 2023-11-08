@@ -52,7 +52,7 @@ This feature is available in public preview in build 10.0.38. You can install th
 in LCS navigate to the Project Level asset library. Click *Import* and select the build 10.0.38 from the list in the shared asset library. This will import the 10.0.38 PEAP build into your Project Asset library. 
 Once available you can deploy it using *Apply update* on your environment. 
 
-Find more information about availability and using [early access build](https://learn.microsoft.com/en-us/dynamics365/get-started/release-schedule#early-access---frequently-asked-questions).
+Find more information about availability and using [early access build](https://learn.microsoft.com/dynamics365/get-started/release-schedule#early-access---frequently-asked-questions).
 
 
 ### <a name="enable-sql-key"></a>Step 2: Enable the SQL row version change tracking license key
@@ -61,7 +61,7 @@ Follow these steps to check the status of the **Sql row version change tracking 
 
 1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, scroll down the **Sql row version change tracking (Preview)** key. If the key is already enabled, then skip the rest of this procedure. If it isn't enabled, then continue to the next step.
-1. Put your system into maintenance mode, as described in [Maintenance mode](../s`ysadmin/maintenance-mode.md).
+1. Put your system into maintenance mode, as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 1. Return to the **License configuration** and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode, as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
