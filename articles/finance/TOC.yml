@@ -554,6 +554,8 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer refunds with credit transfer format
+          href: accounts-receivable/refund-customers.md          
       - name: Credit and collections
         items:
         - name: Credit and collections overview
