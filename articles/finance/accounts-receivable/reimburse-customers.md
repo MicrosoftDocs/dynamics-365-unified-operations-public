@@ -4,25 +4,15 @@
 title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers.  
 author: JodiChristiansen
-ms.date: 09/09/2020
+ms.date: 11/08/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
