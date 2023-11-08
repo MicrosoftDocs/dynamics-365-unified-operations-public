@@ -25,7 +25,7 @@ ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
 
-# Enable *Microsoft Copilot for generative help and guidance* on your Dynamics 365 finance and operations environment 
+# Enable Microsoft Copilot for your Dynamics 365 finance and operations environment 
 
 The **Copilot for generative help and guidance** helps users by providing in-app help guidance with the help of the power of generative AI.
 

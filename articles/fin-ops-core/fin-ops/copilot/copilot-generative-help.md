@@ -25,7 +25,7 @@ ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
 
-# Microsoft Copilot for Dynamics 365 Finance and Operations: Overview and Functional Mechanism
+# Microsoft Copilot for Dynamics 365 finance and operations: Overview and Functional Mechanism
 
 > [!IMPORTANT]
 > The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
