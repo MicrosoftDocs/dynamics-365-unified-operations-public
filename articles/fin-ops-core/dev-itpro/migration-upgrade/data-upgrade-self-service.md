@@ -4,10 +4,10 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This article explains how to upgrade data from Microsoft Dynamics AX 2012 in self-service environments.
 author: ttreen  
-ms.date: 04/03/2023
+ms.date: 11/03/2023
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: ttreen
 ms.search.validFrom: 2021-06-30
@@ -196,20 +196,18 @@ After the validation is successful, the application presents a set of menu optio
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
 
    > [!NOTE]
-   > Snapsnots will need to be manually started in SQL Management Studio. To do this launch the **Replication Monitor**, select your SQL Server, and click on the **Agents** tab. Select the publisher you which to start, right click and select **Start**
-   > Please start one snapshot at a time, and wait for the replication of that snapshot to compete. Withing the **Replication Monitor**, check in the **Distributor to subscriber** history until you see a message similar to **"Delivered snapshot from the \\unc\server\folder"**
-   > For further details on how to monitor the replication see: [Monitor replication for the Data migration toolkit](monitor-replication.md)
-
-   > [!NOTE]
-   > You will need to manually start the publisher snapshots mnally for the steps 6 and 7 as well. 
-   > Older versions of the Data Migration Toolkit still have the automatic and manual starts. We recommend that you migrate to the latest version of the toolkit. 
+   > Snapsnots need to be manually started in SQL Management Studio. To do this launch the **Replication Monitor**, select your SQL Server, and click on the **Agents** tab. Select the publisher you which to start, right click and select **Start**
+   > Start one snapshot at a time, and wait for the replication of that snapshot to compete. In the **Replication Monitor**, check the **Distributor to subscriber** history until you see a message similar to **"Delivered snapshot from the \\unc\server\folder"**
+   > For further details on how to monitor the replication, see: [Monitor replication for the Data migration toolkit](monitor-replication.md)
+   > You need to manually start the publisher snapshots for steps 6 and 7. 
+   > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit. 
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
     > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to complete. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
-7. **Replication: Setup Publication for Other Objects (functions)**
+6. **Replication: Setup Publication for Other Objects (functions)**
 
     This step creates a publication for other objects (functions) and replicates them in the target database. If you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
@@ -222,7 +220,7 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
-8. **Cutover: Setup Publication for Non PK Tables**
+7. **Cutover: Setup Publication for Non PK Tables**
 
     This step creates two publications: one used to replicate non-primary key tables, and the other one used to replicate locked tables. 
     
@@ -241,7 +239,7 @@ After the validation is successful, the application presents a set of menu optio
     > 
     > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
  
-9. **Cutover: Remove replication setup**
+8. **Cutover: Remove replication setup**
 
     This step deletes all the publications that were created in the source database, the distribution database, and the replication snapshot.
 
@@ -258,11 +256,11 @@ After the validation is successful, the application presents a set of menu optio
     > RECONFIGURE WITH OVERRIDE
     > ```
 
-10. **Post-replication: Update environment state to Replicated**
+9. **Post-replication: Update environment state to Replicated**
 
     This step changes the state of the LCS environment from **Replication in progress** to **Replication completed**.
 
-11. **Data Synchronise: Trigger Transformation**
+10. **Data Synchronise: Trigger Transformation**
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
@@ -277,7 +275,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > Repeat this step until the data upgrade is successful.
 
-12. **Rollback data upgrade: Trigger rollback**
+11. **Rollback data upgrade: Trigger rollback**
 
     This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
     
