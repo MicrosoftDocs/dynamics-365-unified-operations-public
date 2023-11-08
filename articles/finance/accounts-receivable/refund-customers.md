@@ -43,8 +43,8 @@ To configure the electronic payment format for customer refunds, follow these st
 
 For more information, see [Establish customer method of payment](tasks/establish-customer-method-payment.md).
 
-To transfer the payment to the customers, you must provide the bank account details for the customers to whom you are providing the refunds. For more information, see [Set up a customer bank account](../localizations/europe/set-up-bank-accounts-iso20022-direct-debits.md#set-up-a-customer-bank-account).
+To transfer a payment to a customer, you must provide the bank account details for the customer to whom you are providing the refunds. For more information, see [Set up a customer bank account](../localizations/europe/set-up-bank-accounts-iso20022-direct-debits.md#set-up-a-customer-bank-account).
 
-To refund to specific customer accounts, in the customer payment journal, select the method of payment you created earlier, and then on the Action Pane, select **Functions \> Generate payments**.
+To provide a refund to a specific customer account, in the customer payment journal, select the method of payment you created earlier, and then on the Action Pane, select **Functions \> Generate payments**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
