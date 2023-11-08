@@ -52,7 +52,7 @@ This feature is available in public preview in build 10.0.38. You can install th
 in LCS navigate to the Project Level asset library. Click *Import* and select the build 10.0.38 from the list in the shared asset library. This will import the 10.0.38 PEAP build into your Project Asset library. 
 Once available you can deploy it using *Apply update* on your environment. 
 
-Find more information about availability and using [early access build](dynamics365/get-started/release-schedule#early-access---frequently-asked-questions).
+Find more information about availability and using [early access build](/dynamics365/get-started/release-schedule#early-access---frequently-asked-questions).
 
 
 ### <a name="enable-sql-key"></a>Step 2: Enable the SQL row version change tracking license key
