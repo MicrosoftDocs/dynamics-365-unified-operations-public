@@ -24,7 +24,7 @@ This article provides a product discovery checklist to follow to ensure that pro
 - Ensure that the product is assorted to the channel. You can validate the product is assorted to the channel using the **Validate a channel's assortment** section. For more information, see [Set up assortments](set-up-assortments.md).
 - Ensure that you run the distribution schedule **1040 (Products)** and **1150 (Catalog)** jobs. If any key tables are deleted from the jobs, to add the table(s) back to the jobs, run the **Initialize Commerce scheduler** (**Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**) in Commerce headquarters.
 
-## Additional configurations to check if you are using cloud-powered search
+## Configurations for cloud-powered search
 
 - When [Cloud-powered search overview](cloud-powered-search-overview.md) is used, products are published to search indexes. Since price information is required to be accurate in the search indexes, to publish products successfully, you must ensure that prices can be calculated.
 - Ensure that the sales unit of measure is configured for the product.
@@ -40,12 +40,12 @@ If the channel and accounting currencies are different, follow these steps.
 1. Configure the currency exchange rate at **General ledger \> Currencies \> Currency exchange rates**.
 1. Assign the exchange rate as **Exchange rate type** at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
   
-## Product discovery under the channel's navigation hierarchy
+## Configurations for product discovery under a channel's navigation hierarchy
 
 - Ensure that the navigation hierarchy is associated with the channel. For more information, see [Configure a channel to use a channel navigation hierarchy](configure-channel-hierarchy.md).
 - Ensure that the product is added to a category of the channel's navigation hierarchy.
 
-## What to do if there is a product discovery issue using the Store Commerce app 
+## Workaround for product discovery issues on the Store Commerce app 
 
 If you encounter a product discovery issue on the Store Commerce app, follow these steps to sell the product without engaging Microsoft support.
 
