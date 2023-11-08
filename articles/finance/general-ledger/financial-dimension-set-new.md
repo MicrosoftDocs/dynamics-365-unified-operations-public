@@ -56,6 +56,13 @@ Use the **Rebuild balances** button on the balance status page to re-create bala
 
 If you no longer require a dimension set, you can use the **Delete** button to remove it. Don't delete and re-create dimension sets as a workaround for potential issues with the balance data for a specific dimension set. Re-creation of a dimension set is costly. For help with issues, contact Support.
 
+## Techincal information 
+
+| New Table | Old Table | Description |
+|-----------|-----------|-------------|
+| GeneralLedgerBalance, GeneralLedgerMainAccountBalance | DimensionFocusBalance | FocusDimensionHierarchy and FocusLedgerDimension are removed from the balance tables. The data is now aggregated by the original GeneralJournalAccountEntry.LedgerDimension value (no new DimensionAttributeValueCombination records created for balances any longer). <br> The GeneralLedgerMainAccountBalance stores balances at the main account level only as a performance optimization as the primary use case scenario. |
+
+
 For more information, see [Financial dimensions](financial-dimensions.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
