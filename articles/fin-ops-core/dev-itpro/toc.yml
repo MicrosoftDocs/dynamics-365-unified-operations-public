@@ -2193,7 +2193,7 @@ items:
   - name: Copilot in finance and operations
     items:
     - name: Overview
-      href: m365-copilot/copilot.md
+      href: copilot/copilot-generative-help.md
   - name: Responsible AI FAQs
     items:
     - name: Responsible AI FAQS for Dynamics 365 Platform

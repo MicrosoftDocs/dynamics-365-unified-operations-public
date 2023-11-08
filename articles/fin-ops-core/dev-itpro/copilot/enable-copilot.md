@@ -15,19 +15,21 @@ ms.search.form: EventCreateRule
 # ROBOTS:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: 
 # ms.tgt_pltfrm: 
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: richdi
+ms.author: 
 ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
 
 # Enable Microsoft Copilot for your Dynamics 365 finance and operations environment 
 
-The **Copilot for generative help and guidance** helps users by providing in-app help guidance with the help of the power of generative AI.
+Copilot for Dynamics 365 finance and operations brings skills that help users efficiently completing there tasks. One of the skills provides for example in-app help guidance with the help of the power of generative AI.
+
+This section describes the steps that you must complete to enable the **Copilot for Dynamics 365 finance and operations**.
 
 > [!IMPORTANT]
 > The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
@@ -38,8 +40,6 @@ The **Copilot for generative help and guidance** helps users by providing in-app
 > During the preview phase, the Copilot application can only be installed for environments on tenants that are hosted in the US.
 
 ## Enable the feature for your system
-
-This section describes the steps that you must complete to enable the **Copilot for generative help and guidance**.
 
 ### Prerequisites: Your Supply Chain Management environment and connection to Data Verse 
 To install the preview build must be running Supply Chain Management 10.0.37 or later and have enabled the Power Platform integration in LCS. (It is not required to enambe Dual-Write for this feature.)
