@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.37
 ---
 # Check number validation
 
-You can use this feature to validate a check number when you generate a payment. When this feature is enabled, the system validates whether the interval between the current check number and the last check number exceeds the value that you defined. If it does, you must confirm your entry before you proceed, to avoid manually entering the wrong check number. The system then validates whether there's a character in the check number.
+You can use this feature to validate a check number when you generate a payment. When this feature is enabled, the system validates whether the interval between the current check number and the last check number exceeds the value that you defined. If it does, you must confirm your entry before you proceed, to avoid manually entering the wrong check number. The system then validates whether there's an uexpected character type in the check number.
 
 ## Set up validation parameters
 
