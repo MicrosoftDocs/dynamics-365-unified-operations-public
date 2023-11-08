@@ -87,7 +87,7 @@ Follow these steps to enable Supply Chain Management to access your Dataverse en
 ### Step 6: Install the Copilot application in Supply Chain Management
 
 > [!NOTE]
-> During this preview phase, the Copilot application can only be installed for environments that are hosted in the US.
+> During the preview phase, the Copilot application can only be installed for environments on tenants that are hosted in the US.
 
 Follow these steps to install the Copilot application in your Supply Chain Management environment.
 
