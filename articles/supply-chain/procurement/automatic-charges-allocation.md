@@ -1,36 +1,24 @@
 ---
-# required metadata
-
-title: Automatic allocation of charges
-description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically allocate charges to purchase orders or sales orders.
+title: Automatic application of charges
+description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 author: Henrik Andersen
-ms.date: 10/04/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
-ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: 10.0.15
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 11/08/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Automatic application of charges
 
 [!include [banner](../includes/banner.md)]
 
-Based on the customer that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
+Based on the customer that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 
-Automatic charges, or auto charges, are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
+Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, or items. You can also define auto charges that apply to all vendors, customers, or items.
 
 ## Set up parameters
 
@@ -42,13 +30,13 @@ The **Procurement and sourcing parameters** page has a few settings that are esp
     - **Find auto charges for header** – Specifies whether charges should automatically be applied for purchase order headers. Set this to *Yes* to use automatic application of charges.
     - **Find auto charges for line** – Specifies whether charges should automatically be applied for purchase order lines. Set this to *Yes* to use automatic application of charges.
 
-The **Sales and marketing parameters** page has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
+The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
 
-1. Go to **Sales and marketing \> Setup \> Sales and marketing parameters**.
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
 1. On the **Prices** FastTab, make the following settings:
-    - **Find auto charges for header** – Specifies whether charges should automatically be applied for sales quotation and sales order headers. Set this to *Yes* to use automatic application of charges.
-    - **Find auto charges for line** – Specifies whether charges should automatically be applied forsales quotation and sales order lines. Set this to *Yes* to use automatic application of charges.
+    - **Find auto charges for header** – Specify whether charges should automatically be applied for sales quotation and sales order headers. Set this to *Yes* to use automatic application of charges.
+    - **Find auto charges for line** – Specify whether charges should automatically be applied for sales quotation and sales order lines. Set this to *Yes* to use automatic application of charges.
 
 ## Set up charges codes
 
@@ -56,8 +44,8 @@ To apply charges, you must first define charges codes.
 
 1. Follow one of these steps:
 
-    - For purchase orders: Go to **Procurement and sourcing \> setup \> Charges \> Charges code**.
-    - For sales orders: Go to **Accounts receivable \> setup \> Charges \> Charges code**.
+    - For purchase orders: Go to **Procurement and sourcing \> Setup \> Charges \> Charges code**.
+    - For sales orders: Go to **Accounts receivable \> Setup \> Charges \> Charges code**.
 
 1. On the Action Pane, select **New** to create a charges code.
 1. In the header of the new record, set the following fields:
@@ -87,7 +75,7 @@ Charge groups automatically apply specific charges to a group of customers or ve
 
 To create charge groups for purchase orders, follow these steps.
 
-1. Go to **Procurement and sourcing \> setup \> Charges \> Vendor charges group**.
+1. Go to **Procurement and sourcing \> Setup \> Charges \> Vendor charges group**.
 1. On the Action Pane, select **New** to add a row to the grid, and then set the following fields:
 
     - **Charges group** – Enter the name of the charge group.
@@ -155,15 +143,15 @@ After your charges codes are set up, follow these steps to define the auto charg
     - **Charges code** – Select the code for the charge.
     - **Category** – Select one of the following values:
 
-        - *Fixed* – The charge is entered as a fixed amount on the line. Fixed charges can be used on charges both in the order header and on the order lines. 
-        - *Pcs* – The charge is based on the unit. These charges can be used only on order lines. They will appear when you calculate the order total. This category is only applicable for **Level** *Line*
+        - *Fixed* – The charge is entered as a fixed amount on the line. Fixed charges can be used on charges both in the order header and on the order lines.
+        - *Pcs* – The charge is based on the unit. These charges can be used only on order lines. They will appear when you calculate the order total. This category only applies for **Level** *Line*.
         - *Percent* – The charge is entered as a percentage on the line. Percentage charges can be used on charges both in the order header and on the order lines.
         - *Intercompany percent* – The charge is entered as a percentage on the line for intercompany orders. Intercompany percentage charges can be used only on order lines.
         - *External* – The charge is calculated by a third-party service that is associated with one or more shipping carriers.
-        - *Specific unit* – The charge value is expressed by the unit of measure in the charge line. It is applied proportionally to the sales line unit of measure using unit of measure conversion. This category is only applicable for **Level** *Line*
-        - *Specific unit match* – The charge value is expressed by the unit of measure in the charge line. The sales line unit of measure must match the unit on for the charge line to be applied. no unit of measure conversion is applied. This category is only applicable for **Level** *Line*
+        - *Specific unit* – The charge value is expressed by the unit of measure in the charge line. It is applied proportionally to the sales line unit of measure using unit of measure conversion. This category only applies for **Level** *Line*
+        - *Specific unit match* – The charge value is expressed by the unit of measure in the charge line. The sales line unit of measure must match the unit on for the charge line to be applied. No unit of measure conversion is applied. This category only applies for **Level** *Line*.
 
-    - **Unit** – Enter the unit applicable when the category is *Specific unit* or *Specific unit match*.
+    - **Unit** – Enter the unit that applies when the **Category** is *Specific unit* or *Specific unit match*.
     - **Charges value** – Enter the charge value, based on the category that you selected.
     - **Charges currency code** – Specify a currency for the charge if you want to use a currency other than the currency that you specified in the **Currency** field. You can use a different currency only if the **Debit type** or **Credit type** field is set to either *Ledger account* or *Item* for the selected charges code.
     - **From amount** – Specify a starting amount to apply the auto charge to. In this context, the amount refers to the order total.

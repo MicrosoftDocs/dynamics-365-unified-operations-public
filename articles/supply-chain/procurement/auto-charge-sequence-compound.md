@@ -4,7 +4,7 @@ description: Advanced auto charges enable you to compound header charges for sal
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: MarkupAutoSetup, CustParameters, SalesTableListPage, SalesTable, MarkupTrans, SalesTotals
 ms.topic: how-to
 ms.date: 10/31/2023
 audience: Application User
@@ -19,9 +19,9 @@ ms.custom: bap-template
 
 Advanced auto charges let you apply specific charges to order headers and order lines based on which customer you're working with and/or which items you're selling. For sales quotations and sales orders, you can also choose to compound header charges.
 
-Header-level compounding affects the value base used to calculate an auto charge. All header-level charges (where the customer is debit or credit) with a sequence equal to or lower than the sequence for a compound charge are added to the sum of line net amounts. This sum is referred to as  the *value base*. The value base can be set either to *sum of line net amounts only* or *sum including charge amounts*. Compounding is only applied when the charge category is percentage.  
+Header charge compounding affects the value base used to calculate an auto charge. All header charges (where the customer is debit or credit) with a sequence equal to or lower than the sequence for a compound charge are added to the sum of line net amounts. This sum is referred to as  the *value base*. The value base can be set either to *sum of line net amounts only* or *sum including charge amounts*. Compounding is only applied when the charge category is percentage.  
 
-Compounded header charges require a *charge sequence*, which determines the order in which header charges are calculated. Charge sequences can only exist at the header level. Depending on how you configure the feature, interim header charge totals can be applied on top of the sum of line net amounts (including all line charges and sales taxes) or the sum of line net amounts only. As the calculation progress, interim header charges establish a value base upon which subsequent compound charges are calculated. You can define a default header-level sequence for your system, which automatically applies to new sales quotations and sales orders. Sequences only have an impact when you have one or more charges set to compound.
+Compounded header charges require a *charge sequence*, which determines the order in which header charges are calculated. Charge sequences can only exist at the header level. Depending on how you configure the feature, interim header charge totals can be applied on top of the sum of line net amounts (including all line charges and sales taxes) or the sum of line net amounts only. As the calculation progress, interim header charges establish a value base upon which subsequent compound charges are calculated. You can define a default header-charge sequence for your system, which automatically applies to new sales quotations and sales orders. Sequences only have an impact when you have one or more charges set to compound.
 
 When several header charges with the same sequence are applied, the position of the header charges controls the order in which they are applied when compounding. The position only has an impact when one or more charges are set to compound.
 
@@ -213,7 +213,7 @@ When **Value base for header charges** is set to *Sum including charge amounts*,
 
 ## Example scenario 3: Re-search on posting options
 
-The **Re-searching on posting** option ensures that header charges are assessed against the header-level auto-charge setup upon posting. Auto-charges set up as tiered charges are automatically assessed. The assessment compares automatically applied header charges against the auto-charges setup. It ensures that all the header charges automatically applied to sales orders and quotations on creation are similar to the auto-charges setup. All automatically added header charges that were manually changed or deleted are restored. All manually added header charges are left unchanged. The setting ensures that the auto-charge setup is always applied.
+The **Re-searching on posting** option ensures that header charges are assessed against the header-charge setup upon posting. Auto charges set up as tiered charges are automatically assessed. The assessment compares automatically applied header charges against the auto-charges setup. It ensures that all the header charges automatically applied to sales orders and quotations on creation are similar to the auto-charges setup. All automatically added header charges that were manually changed or deleted are restored. All manually added header charges are left unchanged. The setting ensures that the auto-charge setup is always applied.
 
 > [!NOTE]
 > Tiered charges are only supported for sales orders, and are therefore only included in the re-search for sales orders.
@@ -264,17 +264,16 @@ The following procedure illustrates the effect of the **Re-search on posting** o
 
 ## Example scenario 4: Combine charges on combined invoices options
 
-The **Combine charges on combined invoices** setting on the **Accounts receivable parameters** page controls how header-level auto charges are calculated when multiple sales orders are combined into a single invoice using the *Summary update* function.
+The **Combine charges on combined invoices** setting on the **Accounts receivable parameters** page controls how header charges are calculated when multiple sales orders are combined into a single invoice using the *Summary update* function.
 
 - Set **Combine charges on combined invoices** to *Yes* to first calculate the grand total of all sales orders included in the combined invoice and then apply the auto charges to that total.
-- Set **Combine charges on combined invoices** to *No* to calculate header-level auto charges individually for each sales order included in the summary invoice. In scenarios where header-level auto charges are set up with the intent of representing per-invoice charges rather than a per-sales order charges, this setting may result in over charging.
+- Set **Combine charges on combined invoices** to *No* to calculate header charges individually for each sales order included in the summary invoice. In scenarios where header charges are set up with the intent of representing per-invoice charges rather than a per-sales order charges, this setting may result in over charging.
 
 The following scenario illustrates the effects of this setting:
 
 1. If you haven't already done so, [set up the auto charges specified for example scenario 1](#scenario1).
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
-1. Open the **Prices** tab.
-1. On the **Charges** FastTab, make the following settings:
+1. Open the **Prices** tab and, on the **Charges** FastTab, make the following settings:
     - **Re-search on posting** – Set to *Yes*.
     - **Combine charges on combined invoices** – Set to *No*.
     - **value base for header charges** – set to *Sum of line net amounts only*.
@@ -288,56 +287,55 @@ The following scenario illustrates the effects of this setting:
 1. Repeat the previous step to create a second, identical sales order.
 1. Pick and pack both sales orders. <!--KFM: **lots** of steps are missing here. Is this ok? -->
 
-1. In  **Sales and Marketing \> Sales orders \> All sales orders** select the two sales orders.
-1. In header ribbon **Invoice**, Generate **Invoice**
-1. In the **Posting invoice** page, set **Summary update for** to 'Invoice account' and **Arrange**
-1. Press **OK**
+1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. Find and select the two new sales orders.
+1. On the Action Pane, open the **Invoice** tab and, from the **Generate** group, select **Invoice**.
+1. In the **Posting invoice** dialog, set **Summary update for** to *Invoice account*.
+1. On the dialog toolbar, select **Arrange**.
+1. Select **OK**.
 
-    Notice that the header charges are calculated per sales order. For each sales order a header charge of 100USD + 2% compound (equalling 4 USD) is applied creating a sum of 2x104=208 USD as total charges for the invoice. <!--KFM: Where do I look to notice this?  -->
+    Notice that the header charges are calculated for each sales order. For each sales order, a header charge of 100 USD + 2% compound (2% of the line amount (100 USD) &plus; 2% of the fixed charge (100 USD)) is applied, resulting in 2 &times; 104 = 208 USD in total charges for the invoice. <!--KFM: Where do I look to notice this? I just went back to the sales orders list. -->
 
-Repeat the same previous steps of creating two identical sales orders, pick and pack. Then do the following change:  
-Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
+1. Open the **Prices** tab and, on the **Charges** FastTab, make the following settings:
+    - **Combine charges on combined invoices** – Change from *No* to *Yes*.
 
-1. Open the **Prices** tab.
-1. On the **Charges** FastTab, make the following settings:
-    - **Combine charges on combined invoices** – Change from 'No' to 'Yes'
+1. As you did previously, go to **Sales and Marketing \> Sales orders \> All sales orders** and create two new sales orders for the same account with identical sales lines. Then pick and pack both sales orders.
+1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. Find and select the two new sales orders.
+1. On the Action Pane, open the **Invoice** tab and, from the **Generate** group, select **Invoice**.
+1. In the **Posting invoice** dialog, set **Summary update for** to *Invoice account*.
+1. On the dialog toolbar, select **Arrange**.
+1. Select **OK**.
 
-1. In  **Sales and Marketing \> Sales orders \> All sales orders** select the two sales orders created
-1. In header ribbon **Invoice**, Generate **Invoice**
-1. In the **Posting invoice** page, set **Summary update for** to 'Invoice account' and **Arrange**
-1. Press **OK**
+    Notice that the header auto charges have been re-searched and re-applied per invoice. The customer will be debited just one instance of the fixed auto charge of 100 USD instead of two instances because the charge is now applied per invoice instead of per sales order. The total calculated charge for the invoice is one header fixed charge of 100 USD + 2% compound (2% of the total line amounts (100 USD &plus; 100 USD) &plus; 2% of the fixed charge (100 USD)) = 106 USD in total charges.
 
-    Notice that the header auto charges are re-searched and re-applied per the invoice. The customer will  be debited one instance of the fixed auto charge of 100USD instead of two instances of the 100USD fixed charge, since this charge is now applied on a per invoice and not on a per sales order. The charge total calculated for the invoice is one header charge of 100USD + 2% compound (equalling 6 USD (2% of off line amounts 100+100 and 100 fixed charge) = 106 USD as total charges).
+    With this setup, the fixed auto charge is only applied once (per invoice) and the percentage-based charge set to compound is calculated from a value base that is 100 USD lower compared to header charges calculated per sales order.
 
-    With this setup the fixed auto charge is applied once (per the invoice) and the percentage based charge set to compound is calculated from a value base which is 100 USD lower than compared to header charges calculated per sales order. 
+1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. 
+1. Select the first of your two new sales orders. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**. Note the charges shown and then do the same for the second new sales order.
 
-1. Back in **Sales and Marketing \> Sales orders \> All sales orders**, lookup header ribbon **Sell** , **Maintain charges** for both sales orders.
-
-    Notice that, as part the combining charges on combined invoices, the auto charges only now are present on the first sales order. This is by intent to ensure that the combining of charges on combined invoices provides the correct charge calculation.
+    Notice that, as part the combining charges on combined invoices, the auto charges are now only present on the first sales order. This is by intent to ensure that the combining of charges on combined invoices provides the correct charge calculation.
 
 > [!NOTE]
-> Auto charges are applied based on customer accounts on the sales orders, not invoice accounts for the invoice. In the cases where a summary update is done for sales orders for different customer accounts with the same invoice account, and where different header level auto charges are setup for the different customer accounts, then the customer account for the sales order, which is the **last** sales order for the summary update, will be the customer account upon which the header level auto charges are re-searched and re-applied upon invoicing.
+> Auto charges are applied based on customer accounts on the sales orders, not invoice accounts for the invoice. In cases where a summary update is done for sales orders for different customer accounts with the same invoice account, and where different header charges are set up for the various customer accounts, the customer account for the *last* sales order for the summary update is the customer account for which the header charges are re-searched and re-applied on invoicing.
 
 ## Pricing management
 
-Feature “Sequence and compound for customer charges” works in conjunction with the 'Pricing management' feature. The “Pricing management" feature introduces changes to the setup and search of auto charges and changes to the behavior described in this topic. When “Pricing management feature” is enabled, then any charges setup using the auto charge setup available under **Accounts receivable \> Charges setup** will not apply. Only auto charges setup in the auto charge page specific to the “Pricing management" feature will be applied for sales orders and sales quotations. How to setup and work with auto charges in conjunction with the “Pricing management" feature see Pricing management.
+The features described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges and therefore also changes some of the behavior described in this article. When the Pricing management module is [enabled](../pricing-management/pricing-management-enable.md), then charges set up under **Accounts receivable \> Charges setup** don't apply. Instead, only those auto charges set up on the auto-charges page specific to the Pricing management module will apply for sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management \> During-sales pricing \> Charges setup \> Auto charges**.
 
 ## Limitations
 
-The ability to compound charges and to define a value base upon which the compounding is performed, is available for sales quotation and sales order, not for purchase order. Similarly new capabilities are introduced which do not support all scenarios.
+The abilities to compound charges and define a value base upon which the compounding is applied is available for sales quotations and sales orders, not for purchase orders. This feature also introduces as few new capabilities that don't support all scenarios. The following subsections describe the most important limitations.
 
-Therefore a few limitations exists of which the most important ones are listed below:
+### Intercompany trade
 
-### Intercompany sales order sequence and compound auto charge application
+The lack of compounding and sequencing support for purchase orders affects intercompany scenarios because it means that sales-order and purchase-order charges would be calculated differently. To prevent intercompany scenarios from being blocked, header charges for any sales order that fulfils a local purchase order are applied and calculated without using the compounding and sequencing features described in this article. This means that whether compounding and sequencing are applied is contextual. In intercompany scenarios, compounding and sequencing aren't applied; in non-intercompany scenarios, they are.
 
-Feature “Sequence and compound for customer charges” is only supported for sales order and sales quotation. Not supporting purchase order has implications in intercompany scenarios, since the value base upon which to calculate header level charges with category percent will be different for purchase and sales and the concept of compounding is not supported for purchase order. In order not to block intercompany scenarios when feature “Sequence and compound for customer charges” is enabled, header charges for any sales order (also known as an intercompany sales order) which fulfils an purchase order will be applied and calculated as if the feature “Sequence and compound for customer charges” were not enabled. This means, that whether feature “Sequence and compound for customer charges” takes effect once enabled is contextual: In Intercompany scenarios, it does not take effect, in non-intercompany scenarios it takes effect. This allows intercompany scenarios to flow seamlessly where the calculation logic for header charges will be the one used in purchasing.
+### Prorate and summary updates
 
-### Prorate and summary update
+Header charges can be set to *prorate*. <!--KFM: How/where? --> The ability to re-search on posting and to combine charges on combined invoices prevents fixed charges from auto charges from being duplicated. Combining charges on combined invoices isn't supported for header charges set to prorate. That means that prorate header charges that are applied in a summary-update scenario will always be re-searched and calculated based on the individual sales orders, not combined.
 
-A header charge can be set to prorate. Sequence and compound provides the ability to re-search on posting and combine charges on combined invoices prevents the duplication of fixed charges from auto charges. Combining charges on combined invoices is  not supported for a header charge set to prorate. That means that a header charge (auto charge) set to prorate that is applied in a summary update scenario, will be re-searched and calculated based on the individual sales orders going into the summary update (the single invoice) always and not combined.
+### Tiered charge and summary updates
 
-### Tiered charge and summary update
-
-A header charge can be set to use amount tiers from/to. The tiers are evaluated based on the net amount for a sales order and the resulting header charge is applied to the sales order. Tiered charges together with Sequence and compound, work in the following manner: The tiers (from/to amounts) are assessed against the net amount for a sales order always. If the net amount for a sales order is within a tier, and the tiered charge is setup a category percentage, then the actual charge will be calculated from the 'Value base' selected while it has been assessed from the net amount only. For summary update, such as summary invoice, and when the system is configured to re-search on posting, then the tiers are assessed against the net amount for the first sales order included in the summary update only. The tiers are not assessed against the net amount across all order lines in the summary update.
+A header charge can be set to use **From amount** and **To amount** tiers. The tiers are evaluated based on the net amount for a sales order. When you are using sequencing and compounding, tiers are always assessed against the net amount for a sales order. If the net amount for a sales order is within a tier, and a tiered charge is set to be calculated as a percentage, then the charge will be calculated based on the current value base even though the tier was assessed based on the net amount. If you make a summary update, such as summary invoice, when the system is configured to re-search on posting, then the tiers are assessed against the net amount for the *first* sales order included in the summary update only. The tiers are not assessed against the net amount across all order lines in the summary update.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
