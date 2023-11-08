@@ -38,8 +38,6 @@ To configure the electronic payment format for customer refunds, follow these st
 1. In the **Payment type** field, select **Electronic Payment**.
 1. On the **File formats** FastTab, under **FILE FORMATS**, set the **Generic electronic Export format** and **Export format for refunds** sliders to **Yes**. 
 
-  [![Method of payment for customer's refund.](./media/method-of-payment-customers-refunds.jpg)](./media/method-of-payment-customers-refunds.jpg)
-
 > [!NOTE]
 > The same format configuration used for vendor payments specified at **FILE FORMATS \> Export format configuration** is also used for returning payments to customers.
 
@@ -48,7 +46,5 @@ For more information, see [Establish customer method of payment](tasks/establish
 To transfer the payment to the customers, you must provide the bank account details for the customers to whom you are providing the refunds. For more information, see [Set up a customer bank account](../localizations/europe/set-up-bank-accounts-iso20022-direct-debits.md#set-up-a-customer-bank-account).
 
 To refund to specific customer accounts, in the customer payment journal, select the method of payment you created earlier, and then on the Action Pane, select **Functions \> Generate payments**.
-
-  [![Generate payment for the customer refund.](./media/customer-refund-generate-payment.jpg)](./media/customer-refund-generate-payment.jpg)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
