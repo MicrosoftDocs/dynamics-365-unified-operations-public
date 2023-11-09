@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.8
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
 ## October 2023 
-The October release of Dual-write GAB solution 3.5.1.136 contains the following bug fixes.
+The October release of Dual-write GAB solution 3.5.1.135 contains the following bug fixes.
 
 | Feature | Description | Status |
 | ---|---|---|
@@ -29,11 +29,11 @@ The October release of Dual-write GAB solution 3.5.1.136 contains the following 
 
 | Solution name | Has new changes? | Previous version | New version |
 |---|---|---|---|
-| Party | Yes | 3.5.1.102 | 3.5.1.136 |
-| Dynamics365GABExtended | Yes | 3.5.1.102 | 3.5.1.136 |
-| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.102 | 3.5.1.136 |
-| Dynamics365GABPartyAnchor |Yes | 3.5.1.102 | 3.5.1.136 |
-| Dynamics365GABPartyCommon | Yes | 3.5.1.102 | 3.5.1.136 |
+| Party | Yes | 3.5.1.102 | 3.5.1.135 |
+| Dynamics365GABExtended | Yes | 3.5.1.102 | 3.5.1.135 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.102 | 3.5.1.135 |
+| Dynamics365GABPartyAnchor |Yes | 3.5.1.102 | 3.5.1.135 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.102 | 3.5.1.135 |
 
 
 ## September 2023
