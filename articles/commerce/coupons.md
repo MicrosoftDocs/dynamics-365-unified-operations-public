@@ -79,9 +79,9 @@ Coupons can be used across selling channels. However, for call center, limited-u
 
 ## Other considerations
 
-If a coupon has a large number of coupon codes, activating all the coupon codes by setting coupon status to Active could be time consuming. For such case, the following best practices are recommended:
+If a coupon has a large number of coupon codes, activating all the coupon codes by setting the coupon status to **Active** can be time-consuming. For such cases, the following best practices are recommended:
 
-1. Split the large group of coupon codes into multiple coupons, each linked to the same discount. 
-1. If the large number of coupon codes are created by data import, it is recommended to import them as **Active** with **From date** set as the desired effective date. By such settings, there is no need to manually activate the coupon codes.
+- Split large groups of coupon codes into multiple coupons, with each linked to the same discount.
+- If a large number of coupon codes is created by data import, Microsoft recommends that you import them as **Active**, with the **From date** value set as the desired effective date. When configured this way, there is no need to manually activate the coupon codes.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
