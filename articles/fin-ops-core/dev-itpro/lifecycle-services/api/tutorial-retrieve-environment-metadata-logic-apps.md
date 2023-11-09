@@ -29,7 +29,7 @@ To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automat
 Visit the Azure portal, and then create a new logic app and give it a name:
 
 > [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/appmgmt-tutorial-1.png "Create a logic app (Azure)")
+> ![Create a logic app.](media/tutorial-create-logic-app.png "Create a logic app (Azure)")
 
 After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run on schedule of your choosing:
 
@@ -45,7 +45,7 @@ Next we'll authenticate with Microsoft Azure Active Directory (Azure AD) and ret
 In this tutorial, we're using a user credential with password to obtain a token.  An example call to Azure AD is below:
 
 > [!div class="mx-imgBorder"] 
-> ![Authenticate with Azure AD and retrieve a token for calling the Lifecycle Services API.](media/appmgmt-tutorial-2.png "Authenticate with Azure AD and retrieve a token for calling the Lifecycle Services API")
+> ![Authenticate with Azure AD and retrieve a token for calling the Lifecycle Services API.](media/tutorial-lcs-token.png "Authenticate with Azure AD and retrieve a token for calling the Lifecycle Services API")
 
 We then parse the Azure AD token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
@@ -146,5 +146,9 @@ And we will receive responses similar to the following:
 ```
 ### Applications of this data
 For customers who need to maintain logs or records of the environment details, they may use this approach to capture the state of the environment via the API as shown in earlier steps.  This can then be saved in the logs of the tool itself like Logic Apps using their run history, or it can be saved as a file in to blob storage or on-premises for long term retention.  
+
+> [!div class="mx-imgBorder"] 
+> ![Review the logs in Logic Apps.](media/tutorial-logic-app-history.png "Review the logs in Logic Apps")
+
 
 
