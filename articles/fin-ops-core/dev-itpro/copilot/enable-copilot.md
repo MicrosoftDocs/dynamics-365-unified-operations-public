@@ -1,104 +1,82 @@
 ---
-# required metadata
-
-title: Configurationm instructions for Copilot for generative help and guidance
-description: This article provides instructins for administrators on how to enable Copilot for generative help and guidance in the finance and operations platform
+title: Enable Microsoft Copilot for finance and operations apps
+description: This article provides instructions for administrators on how to enable Copilot for generative help and guidance for Microsoft finance and operations apps
 author: cabeln
-ms.date: 11/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EventCreateRule
-# ROBOTS:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.author: cabeln
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 11/09/2023
+audience: Application User
 ms.search.region: Global
-# ms.search.industry:
-ms.author: 
-ms.search.validFrom: 2023-11-15
-ms.dyn365.ops.version: Platform update 62
+ms.custom: bap-template
 ---
 
-# Enable Microsoft Copilot for your Dynamics 365 finance and operations environment 
+# Enable Microsoft Copilot for finance and operations apps
 
-Copilot for Dynamics 365 finance and operations brings skills that help users efficiently completing there tasks. One of the skills provides for example in-app help guidance with the help of the power of generative AI.
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-This section describes the steps that you must complete to enable the **Copilot for Dynamics 365 finance and operations**.
+Microsoft Copilot for finance and operations apps brings features that help users complete their tasks more efficiently. One of the features provides, for example, in-app help guidance with the help of the power of generative AI.
+
+This articles describes how to enable the *Copilot for finance and operations apps*.
 
 > [!IMPORTANT]
-> The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> The Copilot functionality described in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > To learn about the capabilities and limitations of AI-powered and Copilot features see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
+>
+> During the preview phase, Copilot functionality can only be enabled for environments on tenants that are hosted in the US.
 
-> [!NOTE]
-> During the preview phase, the Copilot application can only be installed for environments on tenants that are hosted in the US.
+## Prerequisites
 
-## Enable the feature for your system
+To enable Copilot for finance and operations apps, you must have the following prerequisites in place:
 
-### Prerequisites: Your Supply Chain Management environment and connection to Data Verse 
-To install the preview build must be running Supply Chain Management 10.0.37 or later and have enabled the Power Platform integration in LCS. (It is not required to enambe Dual-Write for this feature.)
+- You must be running version 10.0.38 of finance and operations apps (or later).
+- You must have enabled the Power Platform integration in Lifecycle Services (LCS). (However, you don't need to enable dual-write for this feature.)
 
-
-### Step 1: Upgrade Supply Chain Management to the required build
-
-This feature is available in public preview in build 10.0.38. You can install the preview build on an environment Supply Chain Management 10.0.37 or later and add the latest PEAP preview build for build 10.0.38.
-
-in LCS navigate to the Project Level asset library. Click *Import* and select the build 10.0.38 from the list in the shared asset library. This will import the 10.0.38 PEAP build into your Project Asset library. 
-Once available you can deploy it using *Apply update* on your environment. 
-
-Find more information about availability and using [early access build](/dynamics365/get-started/release-schedule#early-access---frequently-asked-questions).
-
-
-### <a name="enable-sql-key"></a>Step 2: Enable the SQL row version change tracking license key
+## <a name="enable-sql-key"></a>Step 1: Enable the SQL row version change tracking license key
 
 Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it if necessary. If the key isn't enabled, you'll get an error when you try to install the Copilot application in the Power Platform admin center.
 
 1. Go to **System administration \> Setup \> License configuration**.
 1. On the **Configuration keys** tab, scroll down the **Sql row version change tracking (Preview)** key. If the key is already enabled, then skip the rest of this procedure. If it isn't enabled, then continue to the next step.
 1. Put your system into maintenance mode, as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
-1. Return to the **License configuration** and enable the **Sql row version change tracking (Preview)** key.
+1. Return to the **License configuration** page and enable the **Sql row version change tracking (Preview)** key.
 1. Turn off maintenance mode, as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
 
-### Step 3: Enable Supply Chain Management to access your Dataverse environment
+## Step 2: Enable your finance and operations apps to access your Dataverse environment
 
-Follow these steps to enable Supply Chain Management to access your Dataverse environment.
+Follow these steps to enable your finance and operations apps to access your Dataverse environment.
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the Dataverse environment that's connected to your Supply Chain Management environment, and open the detail view.
+1. Select the Dataverse environment that's connected to your finance and operations apps environment, and open the detail view.
 1. Select the **Settings** menu on the menu bar.
 1. Go to **Product \> Features**.
-1. Set the **Finance and Operations in Dataverse** option to *On*.
+1. Set **Finance and Operations in Dataverse** to *On*.
 
-### Step 4: Install the Copilot application in Supply Chain Management
+## Step 3: Install the Copilot application on your finance and operations apps environment
 
 > [!NOTE]
 > During the preview phase, the Copilot application can only be installed for environments on tenants that are hosted in the US.
 
-Follow these steps to install the Copilot application in your Supply Chain Management environment.
+Follow these steps to install the Copilot application on your finance and operations apps environment.
 
 1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://aka.ms/dynamicsfnocopilot_scmaiapp) page in the Microsoft commercial marketplace.
 1. Select **Get it now**.
-1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
+1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your finance and operations apps environment to install the Copilot application.
 
     > [!IMPORTANT]
-    > **Troubleshooting:** You may see the following error message while installing the Copilot application in the Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you see this error, follow the instructions given in [Step 3: Enable the SQL row version change tracking license key](#enable-sql-key).
+    > **Troubleshooting:** You may see the following error message while installing the Copilot application in the Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you see this error, follow the instructions given in [Step 2: Enable the SQL row version change tracking license key](#enable-sql-key).
 
-1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is **Installing**. After the installation is complete, the status changes to **Installed**. If an error occurs, the status changes to **Failed** and you can find details about the error in the **Notifications** field.
+1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. The status of the Copilot application is *Installing*. After the installation is complete, the status changes to *Installed*. If an error occurs, the status changes to *Failed* and you can find details about the error in the **Notifications** field.
 
-### Step 5: Enable the required security roles
+## Step 4: Enable the required security roles
 
 Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
 
-In the detail view of the environment, in the **Access** field, select **Users** or **Teams**. Select the users or teams that should have access, and assign the *AIB Roles* and *Finance and Operations AI* security roles to them.
+In the detail view of the environment, in the **Access** field, select *Users* or *Teams*. Select the users or teams that should have access, and assign the *AIB Roles* and *Finance and Operations AI* security roles to them.
 
+## Step 5: Enable the feature in the Feature management workspace
 
-### Step 6: Enable the workspace feature in Feature management
-
-In the [**Feature management**](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) User experience for Copilot in Finance and Operations*. As of Supply Chain Management version 10.0.36, this feature is turned on by default.
-
+In the [**Feature management**](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace, turn on the feature that's named *(Preview) User experience for Copilot in Finance and Operations*.

@@ -44,20 +44,20 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
-## Use Microsoft Copilot to conversationally guide users
+## Use Microsoft Copilot to get conversational guidance
 
-With Microsoft Copilot users have a conversational guide at their hands. Users can ask questions in natutral language and Copilot will identify the relevant content in the documentation and compose a targeted guidance to the question asked.
+Microsoft Copilot for finance and operations apps provides users with a conversational guide that's always nearby and ready to help. Users can ask questions in natural language and Copilot will identify the relevant content in the documentation and compose a targeted response to the question asked.
 
 > [!IMPORTANT]
 > The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > To learn about the capabilities and limitations of AI-powered and Copilot features see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
-Once the Copilot has been enabled by the administrator, users can open the Copilot side car using to Copilot button at the top of the page.
+Once the Copilot has been enabled for your system, users can open the Copilot side car using to Copilot button at the top of the page.
 
-![Copilot help pane in the user experience](../copilot/media/copilot-help-welcome.png)
+![<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
-Read more about [Copilot for generative help and guidance](../copilot/copilot-generative-help.md)
+For more information, see [Microsoft Copilot for finance and operations apps](../copilot/copilot-generative-help.md)
 
 ## Get notified about changes through an RSS feed
 

@@ -1712,6 +1712,8 @@ items:
           href: lcs-solutions/submit-localization-alerts.md
     - name: Support
       items:
+      - name: Microsoft Copilot for finance and operations apps
+        href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Get support for finance and operations and Lifecycle Services
         href: ../fin-ops/lcs/lcs-support.md
       - name: Dynamics 365 support overview
@@ -1842,6 +1844,8 @@ items:
         href: sysadmin/odata-warmup.md
       - name: Setting Up Azure Key Vault client
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
+      - name: Enable Microsoft Copilot for finance and operations apps
+        href: copilot/enable-copilot.md
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
     - name: Upgrades, updates, and hotfixes
