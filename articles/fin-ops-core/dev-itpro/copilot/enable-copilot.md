@@ -1,5 +1,5 @@
 ---
-title: Enable Microsoft Copilot for finance and operations apps
+title: Enable Microsoft Copilot for finance and operations apps (Preview)
 description: This article provides instructions for administrators on how to enable Copilot for generative help and guidance for Microsoft finance and operations apps
 author: cabeln
 ms.author: cabeln
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Enable Microsoft Copilot for finance and operations apps
+# Enable Microsoft Copilot for finance and operations apps (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

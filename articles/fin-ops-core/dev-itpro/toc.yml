@@ -2190,11 +2190,11 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
-  - name: Copilot in finance and operations
+  - name: Copilot for finance and operations
     items:
-    - name: Microsoft Copilot for finance and operations apps
+    - name: Microsoft Copilot for finance and operations apps (Preview)
       href: ../fin-ops/copilot/copilot-for-finance-operations.md
-    - name: Enable Microsoft Copilot for finance and operations apps
+    - name: Enable Microsoft Copilot for finance and operations apps (Preview)
       href: copilot/enable-copilot.md
   - name: Responsible AI
     items:
