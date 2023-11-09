@@ -46,14 +46,14 @@ You can find content on Microsoft Learn by using any search engine. For the best
 
 ## Use Microsoft Copilot to get conversational guidance
 
-Microsoft Copilot for finance and operations apps provides users with a conversational guide that's always nearby and ready to help. Users can ask questions in natural language and Copilot will identify the relevant content in the documentation and compose a targeted response to the question asked.
+Microsoft Copilot for finance and operations apps gives users a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
 
 > [!IMPORTANT]
-> The Microsoft Copilot functionality in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> The Microsoft Copilot functionality that's described in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
-> To learn about the capabilities and limitations of AI-powered and Copilot features see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
+> To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
-Once the Copilot has been enabled for your system, users can open the Copilot side car using to Copilot button at the top of the page.
+After Copilot is enabled for your system, users can open the Copilot sidecar by using the Copilot button at the top of the page.
 
 [<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
@@ -80,7 +80,7 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
 
-<!--If you have feedback or questions about a article, leave us a comment at the bottom of the page.
+<!--If you have feedback or questions about an article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -93,7 +93,7 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a article. The following video shows how you can contribute to our documentation.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -131,7 +131,7 @@ To access Help content, select the **Help** button (**?**), and then select **He
 
 ### Accessing Help topics from the Help pane
 
-From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a article in the **Help** pane, it's opened on a new tab in your browser.
+From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select an article in the **Help** pane, it's opened on a new tab in your browser.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.
