@@ -1,6 +1,6 @@
 ---
 
-title: How to make schema changes for shorter downtime during custom package deployments
+title: Schema changes for shorter downtime during custom package deployments
 description: This article describes how to make schema changes for shorter downtime when deploying custom packages
 author: gianugo
 ms.date: 11/09/2023
@@ -15,7 +15,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# How to make schema changes for shorter downtime during custom package deployments
+# Make schema changes for shorter downtime during custom package deployments
 
 [!include [banner](../includes/banner.md)]
 
