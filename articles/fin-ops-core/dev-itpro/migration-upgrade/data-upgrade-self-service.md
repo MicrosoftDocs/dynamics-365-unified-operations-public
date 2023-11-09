@@ -113,8 +113,8 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This in conjunction with the manual snapshot start, allows you to run smaller initial snapshots, that can be useful if you have limited maintenance windows and need to split the start up of the replication over several.  
-    - **snapshotPostPublication** - This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
+    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, in conjunction with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
+    - **snapshotPostPublication** – This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
 
 
 > [!NOTE]
@@ -195,12 +195,16 @@ After the validation is successful, the application presents a set of menu optio
 
     This step creates publications for primary key tables under the **Replication** folder on the source server and replicates them in the target database. If any **ignore-table** entries were specified, the specified tables are exempted from replication. Any **special-table** entries were added, these will be added to additional special tables publications. 
 
-   > [!NOTE]
-   > Snapsnots need to be manually started in SQL Management Studio. To do this launch the **Replication Monitor**, select your SQL Server, and click on the **Agents** tab. Select the publisher you which to start, right click and select **Start**
-   > Start one snapshot at a time, and wait for the replication of that snapshot to compete. In the **Replication Monitor**, check the **Distributor to subscriber** history until you see a message similar to **"Delivered snapshot from the \\unc\server\folder"**
-   > For further details on how to monitor the replication, see: [Monitor replication for the Data migration toolkit](monitor-replication.md)
-   > You need to manually start the publisher snapshots for steps 6 and 7. 
-   > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit. 
+    > [!NOTE]
+    > Snapshots must be manually started in SQL Management Studio. Open the replication monitor, and select your SQL Server instance. Then, on the **Agents** tab, select and hold (or right-click) the publisher that you want to start, and select **Start**.
+    >
+    > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
+    >
+    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](monitor-replication.md).
+    >
+    > You must manually start the publisher snapshots for steps 6 and 7.
+    >
+    > Older versions of the Data Migration Toolkit have automatic and manual starts. We recommend that you migrate to the latest version of the toolkit.
 
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
