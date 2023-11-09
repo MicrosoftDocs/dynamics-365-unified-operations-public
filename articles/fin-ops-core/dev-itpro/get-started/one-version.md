@@ -48,56 +48,66 @@ The following changes are being implemented:
 
 ### Is the change from the maximum of three pauses to one already in effect?
 
-No. The transition from the maximum of three pauses to one will be completed by April 2024. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled auto-updates for version 10.0.38 are completed.
+No. The enforcement of one maximum pause goes into effect on February 19, 2024, after all scheduled auto-updates for version 10.0.38 are completed. From a release version perspective, beginning with 10.0.39 you will only be able to pause a maximum of one update. See the [Targeted release schedule](public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) for GA (self-update) and auto-update dates by version.
 
-The following table shows the allowed pauses by month, based on your installed version, until the transition is completed. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 <table>
 <head>
-<tr>
-<th colspan="8">Auto-update month</th>
-</tr>
-<tr>
-<th><p>September 2023</p><p>10.0.36 GA self-update Sept 15.<br>10.0.36 auto-update starts Sept 29.</p></th>
-<th><p>October 2023</p><p>10.0.37 GA self-update Oct 20.</p></th>
-<th><p>November 2023</p><p>10.0.37 auto-update starts Nov 3.</p></th>
-<th><p>December 2023</p><p>10.0.38 GA self-update Dec 22.</p></th>
-<th>January 2024</th>
-<th><p>February 2024</p><p>10.0.38 auto-update starts Feb 2, ends Feb 18.<br>Max. of 1 pause starts Feb 19.</p></th>
-<th><p>March 2024</p><p>10.0.39 GA self-update Mar 15.</p></th>
-<th><p>April 2024</p><p>10.0.39 auto-update starts Apr 5.</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p><b>On 10.0.35</b></p><p>10.0.36 auto-update pause allowed.</p></td>
-<td rowspan="4"></td>
-<td><p><b>On 10.0.36</b></p><p>10.0.37 auto-update pause allowed.</p></td>
-<td rowspan="4"><b><i>Blackout month – no auto-updates.</i></b></td>
-<td rowspan="4"><b><i>Blackout month – no auto-updates.</i></b></td>
-<td><p><b>On 10.0.37</b></p><p>10.0.38 auto-update pause allowed.</p></td>
-<td rowspan="4"><b><i>Blackout month – no auto-updates.</i></b></td>
-<td><p><b>On 10.0.38</b></p><p>10.0.39 auto-update pause allowed.</p></td>
-</tr>
-<tr>
-<td><p><b>On 10.0.34</b></p><p>10.0.35 auto-update was paused.</p><p>10.0.36 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.35</b></p><p>10.0.36 auto-update was paused.</p><p>10.0.37 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.36</b></p><p>10.0.37 auto-update was paused.</p><p>10.0.38 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.37</b></p><p>10.0.38 auto-update was paused.</p><p>10.0.39 auto-update pause allowed.</p></td>
-</tr>
-<tr>
-<td><p><b>On 10.0.33</b></p><p>10.0.34, 10.0.35 auto-updates were paused.</p><p>10.0.36 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.34</b></p><p>10.0.35, 10.0.36 auto-updates were paused.</p><p>10.0.37 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.35</b></p><p>10.0.36, 10.0.37 auto-updates were paused.</p><p>10.0.38 auto-update pause allowed.</p></td>
-<td><p><b>On 10.0.36</b></p><p>10.0.37, 10.0.38 auto-updates were paused.</p><p>10.0.39 auto-update pause allowed.</p></td>
-</tr>
-<tr>
-<td><p><b>On 10.0.32 (and older)</b></p><p>10.0.33, 10.0.34, 10.0.35 auto-updates were paused.</p><p>Must take 10.0.36 auto-update.</p></td>
-<td><p><b>On 10.0.33 (and older)</b></p><p>10.0.34, 10.0.35, 10.0.36 auto-updates were paused.</p><p>Must take 10.0.37 auto-update.</p></td>
-<td><p><b>On 10.0.34 (and older)</b></p><p>10.0.35, 10.0.36, 10.0.37 auto-updates were paused.</p><p>Must take 10.0.38 auto-update.</p></td>
-<td><p><b>On 10.0.35 (and older)</b></p><p>10.0.36, 10.0.37, 10.0.38 auto-updates were paused.</p><p>Must take 10.0.39 auto-update.</p></td>
-</tr>
-</tbody>
+ <tr>
+  <th><b>On 10.0.35</b></th>
+  <th><b>On 10.0.36</b></th>
+  <th><b>On 10.0.37</b></th>
+  <th><b>On 10.0.38</b></th>
+  <th><b></b></th>
+  <th><b>On 10.0.39</b></th>
+ </tr>
+ </head>
+ <tbody>
+ <tr>
+  <td>
+  <ul>
+	  <li>10.0.36 auto-update pause allowed.</li>
+	  <li>10.0.37 auto-update pause allowed.</li>
+	  <li>10.0.38 auto-update pause allowed.</li>
+	  <li>Must take 10.0.39 auto-update.</li>
+	  <li>10.0.40 auto-update pause allowed.</li>
+	  <li>Must take 10.0.41 auto-update.</li>
+  </ul>
+  </td>
+  <td>
+  <ul>
+	  <li>10.0.37 auto-update pause allowed.</li>
+	  <li>10.0.38 auto-update pause allowed.</li>
+	  <li>Must take 10.0.39 auto-update.</li>
+	  <li>10.0.40 auto-update pause allowed.</li>
+	  <li>Must take 10.0.41 auto-update.</li>
+  </ul>
+  </td>
+  <td>
+  <ul>
+	  <li>10.0.38 auto-update pause allowed.</li>
+	  <li>Must take 10.0.39 auto-update.</li>
+	  <li>10.0.40 auto-update pause allowed.</li>
+	  <li>Must take 10.0.41 auto-update.</li>
+  </ul>
+  </td>
+  <td>
+  <ul>
+	  <li>10.0.39 auto-update pause allowed <i>after</i> Feb 19.</span></li>
+	  <li>Must take 10.0.40 auto-update.</li>
+  </ul>
+  </td>
+  <td><b>Max. of 1 pause starts Feb 19 after 10.0.38 auto-update completes.</b>
+  </td>
+  <td>
+  <ul>
+	  <li>10.0.40 auto-update pause allowed.</li>
+	  <li>Must take 10.0.41 auto-update.</li>
+  </ul>
+  </td>
+ </tr>
+ </tbody>
 </table>
 
 ### Does the new release schedule affect when I can schedule auto-updates?
