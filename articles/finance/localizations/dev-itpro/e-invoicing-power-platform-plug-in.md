@@ -51,7 +51,7 @@ The [Dataverse solution for Electronic invoicing (Microsoft Dynamics 365 Electro
 
 ## Authentication and authorization
 
-After the solution is imported into the Dataverse environment, the finance and operations apps environment and the Dataverse environment must be set up to connect to each other. Dataverse will call finance and operations apps by using Service-to-Service (S2S) authentication, based on an Azure Active Directory (Azure AD) application. The security role for finance and operations apps must be manually added by the system administrator. Different security roles can be assigned to users in your finance and operations apps. The roles that are assigned to a user (for example, the Accounts payable clerk) depend on the functions that the user requires to perform their duties. These assigned roles must have the privileges to run the corresponding virtual entities and business events.
+After the solution is imported into the Dataverse environment, the finance and operations apps environment and the Dataverse environment must be set up to connect to each other. Dataverse will call finance and operations apps by using Service-to-Service (S2S) authentication, based on a Microsoft Entra application. The security role for finance and operations apps must be manually added by the system administrator. Different security roles can be assigned to users in your finance and operations apps. The roles that are assigned to a user (for example, the Accounts payable clerk) depend on the functions that the user requires to perform their duties. These assigned roles must have the privileges to run the corresponding virtual entities and business events.
 
 Follow these steps to assign security roles.
 
@@ -64,7 +64,7 @@ Follow these steps to set up the integration between environments.
 
 1. In Regulatory Configuration Services (RCS), go to **Globalization features** \> **Environments** \> **Service environments**, and select the target service environment.
 2. In the **Dataverse endpoint URI** field, enter `https://<Dataverse organization URL>/api/data/v9.1/`.
-3. In your finance and operations apps, go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse.
+3. In your finance and operations apps, go to **System Administration** \> **Setup** \> **Microsoft Entra applications** to register Dataverse.
 4. Add a row.
 5. In the **Client ID** field, enter **ecd93392-c922-4f48-9ddf-10741e4a9b65**.
 6. In the **Name** field, enter **Microsoft Dataverse Integration**.
@@ -110,4 +110,3 @@ For Indonesia, the following virtual entities must be enabled in Dataverse:
 - BusinessDocumentParametersEntity
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

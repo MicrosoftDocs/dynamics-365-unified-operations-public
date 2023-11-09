@@ -222,7 +222,7 @@ This section provides information that will help you set up and configure the pr
     6. Save the **Application ID** (client ID) and **Object ID** values for the app.
     7. The Invoicing Service team must grant the app access to the service. Send the values of the following parameters to <D365EInvoiceSupport@microsoft.com>:
 
-        - AAD Tenant ID
+        - Microsoft Entra Tenant ID
         - LCS Environment ID
         - Application ID
         - Object ID

@@ -38,7 +38,7 @@ To enable the drop-down list in the feature version configuration of Tax Calcula
 
 1. [Enable Microsoft Power Platform integration and open the Dataverse environment.](#enable)
 2. [Install finance and operations virtual entities.](#install)
-3. [Register an Azure Active Directory (Azure AD) application.](#register)
+3. [Register a Microsoft Entra application.](#register)
 4. [Grant app permissions in finance and operations apps.](#grant)
 5. [Configure the virtual entity data source.](#configure)
 6. [Enable Dataverse virtual entities.](#virtual)
@@ -77,44 +77,44 @@ When the installation is completed, you can find the **Finance and operations vi
 
 For more information, see [Getting the virtual entity solution](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution).
 
-## <a name='register'></a>Register an Azure AD application
+## <a name='register'></a>Register a Microsoft Entra application
 
-You must register an Azure AD application on the same tenant as the finance and operations apps, so that they can be called by Dataverse.
+You must register a Microsoft Entra application on the same tenant as the finance and operations apps, so that they can be called by Dataverse.
 
-1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> App registrations**.
+1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra \> App registrations**.
 2. Select **New registration**, and enter the following information:
 
     - **Name** – Enter a unique name.
-    - **Account type** – Enter **Any Azure AD directory** (single-tenant or multi-tenant).
+    - **Account type** – Enter **Any Microsoft Entra directory** (single-tenant or multi-tenant).
     - **Redirect URI** – Leave this field blank.
 
 3. Select **Register**.
 4. Make a note of the **Application (client) ID** value, because you will need it later.
 
-    [![Azure AD Application (client) ID value.](../media/tcs-dataverse-master-data-lookup-3.png)](/media/tcs-dataverse-master-data-lookup-3.png)
+    [![Microsoft Entra Application (client) ID value.](../media/tcs-dataverse-master-data-lookup-3.png)](/media/tcs-dataverse-master-data-lookup-3.png)
 
 5. Create a symmetric key for the application.
 6. In the new application, select **Certificates & secrets**.
 7. Select **New client secret**.
 8. Enter a description, select an expiration date, and then select **Save**. A key will be created and shown. Copy the value for later use.
 
-For more information, see [Register Azure AD application](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#register-the-app-in-the-azure-portal).
+For more information, see [Register Microsoft Entra application](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#register-the-app-in-the-azure-portal).
 
 ## <a name='grant'></a>Grant app permissions in finance and operations apps
 
-Dataverse uses the Azure AD application that you created to call finance and operations apps. Therefore, the application must be trusted by the finance and operations apps and associated with a user account that has the appropriate rights. In the finance and operations apps, you must create a special service user that has rights **only** to the virtual entity functionality. This service user must have no other rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call the finance and operations apps environment and access the virtual entity functionality.
+Dataverse uses the Microsoft Entra application that you created to call finance and operations apps. Therefore, the application must be trusted by the finance and operations apps and associated with a user account that has the appropriate rights. In the finance and operations apps, you must create a special service user that has rights **only** to the virtual entity functionality. This service user must have no other rights. After you complete this step, any application that has the secret of the Microsoft Entra application that you created will be able to call the finance and operations apps environment and access the virtual entity functionality.
 
 1. In your environment, go to **System Administration** \> **Users** \> **Users**.
 2. Select **New** to add a new user, and enter the following information:
 
     - **User ID** – Enter **dataverseintegration** or another value.
     - **User name** – Enter **dataverse integration** or another value.
-    - **Provider** – Set this field to **NonAAD**.
+    - **Provider** – Set this field to **NonMicrosoft Entra ID**.
     - **Email** – Enter **dataverseintegration** or another value. (The value doesn't have to be a valid email account.)
 
 3. Assign the **Dataverse Virtual entity integration app** security role to the user.
 4. Remove all other roles, including **System user**.
-5. Go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse. 
+5. Go to **System Administration** \> **Setup** \> **Microsoft Entra applications** to register Dataverse. 
 6. Add a row, and then, in the **Client ID** field, enter the **Application (client) ID** value that you made a note of earlier.
 7. In the **Name** field, enter a name. For example, enter **Dataverse Integration**.
 8. In the **User ID** field, enter the user ID that you created earlier.
@@ -146,9 +146,9 @@ You must provide Dataverse with the finance and operations app instance to conne
     - **Target URL** – Enter the URL where you can access finance and operations apps.
     - **OAuth URL** – Enter `https://login.windows.net/`.
     - **Tenant ID** – Specify your tenant. This value can be the domain name of your company email (such as contoso.com).
-    - **AAD Application ID** – Enter the **Application (client) ID** value that was created earlier.
-    - **AAD Application Secret** – Enter the secret that was generated earlier.
-    - **AAD Resource** – Enter **00000015-0000-0000-c000-000000000000**. This value is the Azure AD application that represents finance and operations apps. It should always be this same value.
+    - **Microsoft Entra Application ID** – Enter the **Application (client) ID** value that was created earlier.
+    - **Microsoft Entra Application Secret** – Enter the secret that was generated earlier.
+    - **Microsoft Entra Resource** – Enter **00000015-0000-0000-c000-000000000000**. This value is the Microsoft Entra application that represents finance and operations apps. It should always be this same value.
 
 6. Save your changes.
 7. Close the page to return to the **Administration** page, where you will begin [Step 6. Enable Dataverse virtual entities](#virtual).

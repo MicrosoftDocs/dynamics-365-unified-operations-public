@@ -97,7 +97,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Invoice capture FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json)
-- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
+- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json)
 
 ## Other support resources

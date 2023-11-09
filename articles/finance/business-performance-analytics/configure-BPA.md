@@ -38,11 +38,11 @@ To configure Microsoft Power Platform for business performance analytics, follow
 4. Confirm that the Microsoft Power Platform Integration is shown. If Microsoft Power Platform has been set up, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment will be listed and shows a status of **Power Platform environment setup is complete**. If Microsoft Power Platform hasn't yet been set up, select **Setup**, and follow the prompts as required. After the setup is successfully completed, the name of the Microsoft Power Platform environment that's linked to the Dynamics 365 Finance environment should be listed.
 5. If the integration was set up for an existing Microsoft Power Platform environment, confirm that the linked environment isn't in a disabled state. For more information, see [Enable Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). For more information, go to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-## Configure the Azure AD tenant
+## Configure the Microsoft Entra tenant
 
-Azure Active Directory (Azure AD) must be configured so that it can be used with Microsoft Power Platform. The following setup must be completed.
+Microsoft Entra must be configured so that it can be used with Microsoft Power Platform. The following setup must be completed.
 
-1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_AAD_IAM/LicensesMenuBlade/~/Products). Sign in using the credentials of the tenant administrator.
+1. In the Azure portal, go to the [license assignment page](https://ms.portal.azure.com/#view/Microsoft_Microsoft Entra ID_IAM/LicensesMenuBlade/~/Products). Sign in using the credentials of the tenant administrator.
 2. Apply a Dynamics 365 Finance or equivalent license to the user who's installing business performance analytics.
 
 For more information, see [Assign or remove licenses](/azure/active-directory/fundamentals/license-users-groups).

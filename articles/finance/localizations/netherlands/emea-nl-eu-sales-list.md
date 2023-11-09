@@ -77,8 +77,8 @@ To set up Azure Key Vault for certificate storage, follow these steps:
 6. On the **General** FastTab, set the following fields:
 
     - **Key Vault URL**: Enter the default Azure Key Vault URL.
-    - **Key Vault client**: Enter the interactive client ID of the Azure Active Directory (Azure AD) application that is associated with Key Vault storage for authentication.
-    - **Key Vault secret key**: Enter a secret key that is associated with the Azure AD application that's used for authentication to Key Vault storage.
+    - **Key Vault client**: Enter the interactive client ID of the Microsoft Entra application that is associated with Key Vault storage for authentication.
+    - **Key Vault secret key**: Enter a secret key that is associated with the Microsoft Entra application that's used for authentication to Key Vault storage.
 
 7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Digipoort server and client certificates.
 

@@ -38,8 +38,8 @@ To submit your VAT return, you must obtain certificates from the Danish Tax Agen
 6. On the **General** FastTab, set the following fields:
 
     - **Key Vault URL** – Enter the default Key Vault URL.
-    - **Key Vault client** – Enter the interactive client ID of the Azure Active Directory (Azure AD) application that's associated with Key Vault storage for authentication.
-    - **Key Vault secret key** – Enter a secret key that's associated with the Azure AD application that's used for authentication with Key Vault storage.
+    - **Key Vault client** – Enter the interactive client ID of the Microsoft Entra application that's associated with Key Vault storage for authentication.
+    - **Key Vault secret key** – Enter a secret key that's associated with the Microsoft Entra application that's used for authentication with Key Vault storage.
 
 7. On the **Secrets** FastTab, select **Add**, and create lines for Key Vault secrets for the Danish Tax Agency server and client certificates.
 

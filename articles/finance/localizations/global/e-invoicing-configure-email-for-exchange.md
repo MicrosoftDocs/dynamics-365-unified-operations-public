@@ -23,7 +23,7 @@ ms.search.form:
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, you should configure an email account channel.
 
-## Add the IMAP permissions to your Azure AD application
+## Add the IMAP permissions to your Microsoft Entra application
 
 1. In the Microsoft Azure portal, select the **App registrations** service.
 2. Select **New registration** to create a new app registration.
@@ -38,9 +38,9 @@ If the Electronic invoicing feature that you created imports electronic vendor i
     ![Adding the IMAP.AccessAsApp permissionpermissions for the app registration.](../media/e-invoicing-configure-email-for-exchange2.png)
 
 10. Select **Add permissions**.
-11. To access Exchange mailboxes via IMAP, your Azure Active Directory (Azure AD) application must get tenant admin consent for each tenant. For more information, see [Introduction to permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent).
+11. To access Exchange mailboxes via IMAP, your Microsoft Entra application must get tenant admin consent for each tenant. For more information, see [Introduction to permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent).
 
-    - In the management view for your Azure AD application, select **API Permissions**.
+    - In the management view for your Microsoft Entra application, select **API Permissions**.
     - Under **Configured permissions**, select **Grant admin consent for \<name\>**.
 
     ![Granting admin consent for the selected permissions.](../media/e-invoicing-configure-email-for-exchange1.png)
@@ -62,7 +62,7 @@ If the Electronic invoicing feature that you created imports electronic vendor i
 
 ## Register service principals in Exchange
 
-After a tenant admin consents to your Azure AD application, the tenant admin must register the application's service principal in Exchange via Exchange Online PowerShell by running a series of PowerShell snippets. Some of these snippets use values that you copied in the previous procedure:
+After a tenant admin consents to your Microsoft Entra application, the tenant admin must register the application's service principal in Exchange via Exchange Online PowerShell by running a series of PowerShell snippets. Some of these snippets use values that you copied in the previous procedure:
 
 - **\<ORGANIZATION\_ID\>** is the **Directory (tenant) ID** value that you copied.
 - **\<APPLICATION\_ID\>** is the **Application (client) ID** value that you copied.
@@ -86,7 +86,7 @@ Follow these steps to register service principals in Exchange.
     Connect-ExchangeOnline -Organization <ORGANIZATION_ID>
     ```
 
-3. The following example shows how to register an Azure AD application's service principal in Exchange.
+3. The following example shows how to register a Microsoft Entra application's service principal in Exchange.
 
     ```powershell
     New-ServicePrincipal -AppId <APPLICATION_ID> -ServiceId <OBJECT_ID> -Organization <ORGANIZATION_ID>

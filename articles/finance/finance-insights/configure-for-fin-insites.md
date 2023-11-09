@@ -46,23 +46,23 @@ Follow these steps to deploy the environments.
 
 2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions will work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 
-## Configure your Azure AD tenant
+## Configure your Microsoft Entra tenant
 
-Azure Active Directory (Azure AD) must be configured so that it can be used with Dataverse and the Microsoft Power Platform applications. This configuration requires that either the **Project Owner** role or the **Environment Manager** role be assigned to the user in the **Project security role** field in LCS.
+Microsoft Entra must be configured so that it can be used with Dataverse and the Microsoft Power Platform applications. This configuration requires that either the **Project Owner** role or the **Environment Manager** role be assigned to the user in the **Project security role** field in LCS.
 
 Verify that the following setup is completed:
 
 - You have **System administrator** and **System Customizer** access in the Power Portal admin center.
 - A Dynamics 365 Finance or equivalent license is applied to the user who is installing the Finance insights add-in.
-- The following Azure AD apps are registered in Azure AD.
+- The following Microsoft Entra apps are registered in Microsoft Entra ID.
 
     |  Application                             | App ID                               |
     |------------------------------------------|--------------------------------------|
     | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-    To verify the application is registered in Azure AD, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+    To verify the application is registered in Microsoft Entra ID, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
   
-    If the application isn't registered in Azure AD, contact support.
+    If the application isn't registered in Microsoft Entra ID, contact support.
   
 ## Configure Dataverse
 

@@ -137,9 +137,8 @@ To set up users, follow these steps.
 2. Search for the user name or email address to set up in business performance analytics. The search field searches Microsoft Dataverse for users. You can set up only one user at a time.
 
     > [!NOTE]
-    > If a new user is added to Azure Active Directory (Azure AD), it might take some time for the user to become available.
+    > If a new user is added to Microsoft Entra ID, it might take some time for the user to become available.
 
 3. Select **Next**.
 4. Assign at least one role and one dimension group to the user. To make this user a business performance analytics admin, select **App administrator**.
 5. Select **Save**.
-
