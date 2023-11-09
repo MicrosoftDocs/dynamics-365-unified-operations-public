@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Import users from Azure Active Directory
-description: This procedure can be used by system administrators to manually import selected users or to import a large number of users from Azure Active Directory. 
+title: Import users from Microsoft Entra ID
+description: This procedure can be used by system administrators to manually import selected users or to import a large number of users from Microsoft Entra ID. 
 author: peakerbl
 ms.date: 07/07/2017
 ms.topic: how-to 
@@ -23,13 +23,13 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Import users from Azure Active Directory
+# Import users from Microsoft Entra ID
 
 [!include [banner](../../../finance/includes/banner.md)]
 
 ## Import select users
 
-This procedure can be used by system administrators to import select users from Azure Active Directory (Azure AD).
+This procedure can be used by system administrators to import select users from Microsoft Entra ID.
 
 1. User will be imported with the current session company as their default company. Change current company if applicable before importing users.
 2. Go to **System administration > Users > User**s.
@@ -40,7 +40,7 @@ After import is completed it will be required to assign roles to users.
 
 ## Import users in bulk
 
-This procedure can be used by system administrators to import a large number of users from Azure Active Directory.
+This procedure can be used by system administrators to import a large number of users from Microsoft Entra ID.
 Note that it is not possible to select users when using the Batch import option.
 
 ## Run the import as a batch job

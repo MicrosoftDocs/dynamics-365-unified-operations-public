@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization. <br>
 
-Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the Microsoft 365 portal when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Lifecycle Services (LCS). 
+Currently, users can sign in by using the Microsoft Microsoft Entra credentials that they created in the Microsoft 365 portal when they signed up. Users who are administrators for their organization in Microsoft Entra ID will be administrators in Lifecycle Services (LCS). 
 
-Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD to be team members.
+Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Microsoft Entra to be team members.
 
 > [!IMPORTANT]
 > We strongly recommend that you manage all users within your company at the organization level. Additionally, you help ensure that users can access the benefits that are available to your organization.
@@ -49,14 +49,14 @@ There are three types of organizational roles in LCS:
 - Delegated admin
 
 ### Organization admin
-At the organization or tenant level, anyone who has the Global Administrator role in Azure AD automatically becomes an organization admin when they sign in to LCS. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
+At the organization or tenant level, anyone who has the Global Administrator role in Microsoft Entra ID automatically becomes an organization admin when they sign in to LCS. These admins can then promote other users who are currently contributors to admins. Admins have unique capabilities. For example, they can add themselves as a project owner to any project that is owned by their tenant, even if they weren't previously part of that project.
 
 ![Message in LCS that states that organization admins can add themselves to any project.](media/OrgAdminProjectInject.png "Message in LCS that states that organization admins can add themselves to any project")
 
 In addition, admins can create additional LCS implementation projects by following the steps in [Create multiple LCS projects](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects).
 
 ### Organization contributor
-Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable finance and operations apps licenses.
+Contributors are other users from your Microsoft Entra tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable finance and operations apps licenses.
 
 ### Delegated admin
 The delegated admin role is identical to the admin role, except the user is from a Microsoft partner tenant and has an established relationship with the customer organization. The delegated admin can sign in on behalf of the customer, and can perform required operations and provide required support.
@@ -64,7 +64,7 @@ The delegated admin role is identical to the admin role, except the user is from
 ## Manage LCS organization users
 Only an administrator can manage users. Follow these steps.
 
-1.  In PartnerSource Business Center (PSBC) or Azure AD, associate all the users in your organization who require access to LCS with your organization. Users might have to wait up to two business days before they can sign in to LCS.
+1.  In PartnerSource Business Center (PSBC) or Microsoft Entra ID, associate all the users in your organization who require access to LCS with your organization. Users might have to wait up to two business days before they can sign in to LCS.
 2.  Add your users to the appropriate projects in LCS.
 
 ### Invite a user to an LCS project
@@ -107,7 +107,7 @@ You can invite users from inside or outside your organization to join your proje
 </tr>
 <tr class="even">
 <td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Azure AD account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
+<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Microsoft Entra account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
 </tr>
 <tr class="odd">
 <td>Operations user</td>

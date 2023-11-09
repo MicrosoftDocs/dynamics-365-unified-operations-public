@@ -47,12 +47,12 @@ Before you can test a service by using an external application, you must registe
 
 For details, see:
 
-- [Register an application with AAD](services-home-page.md#register-a-web-application-with-aad)
+- [Register an application with Microsoft Entra ID](services-home-page.md#register-a-web-application-with-aad)
 - [Register your external application](services-home-page.md#register-your-external-application)
 
 ## Query OData by using Postman
 
-Postman (<https://www.getpostman.com/postman>) is a tool that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from the application.
+Postman (<https://www.getpostman.com/postman>) is a tool that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Microsoft Entra, and then make OData requests to and receive responses from the application.
 
 1. Start Postman.
 2. In the upper-right corner, select the gear button, and then select **Manage environments** to create or update an environment.
@@ -62,7 +62,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     | Key            | Value                                                                                               |
     |----------------|-----------------------------------------------------------------------------------------------------|
     | tenant\_id     | The Azure tenant ID that you looked up during the setup of prerequisites                            |
-    | client\_id     | The Azure AD application ID that you registered during the setup of prerequisites                   |
+    | client\_id     | The Microsoft Entra application ID that you registered during the setup of prerequisites                   |
     | client\_secret | The secret key that you generated during application registration during the setup of prerequisites |
     | grant\_type    | client\_credentials                                                                                 |
     | resource       | The base URL of the instance without the trailing '/'                                                 |
@@ -70,11 +70,11 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 5. To verify that the key-value pairs can be parsed correctly, select **Key-Value Edit**, and review the results.
 6. Close the environment page.
 7. In the field to the left of the gear and eye buttons, select the new or updated environment.
-8. To retrieve an Azure AD token, create a POST request that has a URL in the format `https://login.microsoftonline.com/[tenant ID]/oauth2/token`.
+8. To retrieve a Microsoft Entra token, create a POST request that has a URL in the format `https://login.microsoftonline.com/[tenant ID]/oauth2/token`.
 
     You can use a URL parameter that refers to the **tenant\_id** environment variable, such as `https://login.microsoftonline.com/:tenant_id/oauth2/token`.
 
-    ![Retrieve an Azure AD token.](./media/postman6.png)
+    ![Retrieve a Microsoft Entra token.](./media/postman6.png)
 
 9. On the **Body** tab, add body elements as request parameters that refer to the environment variables that you created earlier. Select **Bulk Edit**, enter the keys from the previous table, enter a colon (:), and then enter the key name again but enclose it in double braces ({{}}). Enter one request parameter per line. For example, enter **grant\_type:{{grant\_type}}**. Here is an example.
 
@@ -84,14 +84,14 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
     ```csharp
     var json = JSON.parse(responseBody);
-    tests["Get Azure AD Token"] = !json.error && responseBody !== '' && responseBody !== '{}' && json.access_token !== '';
+    tests["Get Microsoft Entra Token"] = !json.error && responseBody !== '' && responseBody !== '{}' && json.access_token !== '';
     postman.setEnvironmentVariable("bearerToken", json.access_token);
     ```
 
 11. Select **Save**, enter a name and collection for the request, and then select **Save** again.
-12. Select **Send** to make the authorization request. The **Body** tab should now contain an Azure AD token together with other response details.
+12. Select **Send** to make the authorization request. The **Body** tab should now contain a Microsoft Entra token together with other response details.
 
-    ![Azure AD token.](./media/postman11.png)
+    ![Microsoft Entra token.](./media/postman11.png)
 
 13. Because of the test code, the token is now in an environment variable. You can see that the token is an environment variable by selecting the **Environment quick look** button (the eye button).
 
@@ -122,7 +122,7 @@ In our example, we have now successfully authenticated and then used the OData s
 
 ## Query the SOAP custom service in your application by using SoapUI
 
-SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make SOAP requests to and receive responses.
+SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Microsoft Entra, and then make SOAP requests to and receive responses.
 
 1. Start SoapUI, and select the **SOAP** button to create a project.
 2. Complete the information for the project:
@@ -138,7 +138,7 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 
         ![Sample requests.](./media/soapui3.png)
 
-3. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for an Azure AD authorization token.
+3. Right-click the new project, and then select **New TestSuite** to create a test suite. This test suite will generate a POST request for a Microsoft Entra authorization token.
 4. Right-click the test suite, and then select **New TestCase**.
 5. Expand the test case, right-click **Test Steps**, select **Add Step**, and then select **HTTP Request**.
 6. Enter a name for the request, and then select **OK**.
@@ -148,8 +148,8 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     | Parameter      | Value                                                           |
     |----------------|-----------------------------------------------------------------|
     | grant\_type    | client\_credentials                                             |
-    | client\_id     | The application ID from the Azure AD application registration   |
-    | client\_secret | The secret key value from the Azure AD application registration |
+    | client\_id     | The application ID from the Microsoft Entra application registration   |
+    | client\_secret | The secret key value from the Microsoft Entra application registration |
     | resource       | The URL of the instance without the trailing '/'                 |
 
 9. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
@@ -166,4 +166,3 @@ In our example, we have now successfully authenticated and then queried UserSess
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

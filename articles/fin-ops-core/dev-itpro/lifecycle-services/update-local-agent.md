@@ -79,7 +79,7 @@ This article explains how to update the local agent. The latest version of the l
 - This release also upgrades the Azure Storage libraries to the latest version. The checkpointing functionality is no longer available, however there's now automated retry functionality that can be customized. We'll consider bringing back checkpoints once the Azure Storage libraries support it again.
 - Artifact management logic has been improved, and downloading existing artifacts again should no longer take place.
 - Filehash validation has been added to ensure artifacts in the artifact store match exactly what is in the Lifecycle Services artifact store.
-- The MSAL libraries are now used to authenticate with Microsoft Azure Active Directory (Azure AD).
+- The MSAL libraries are now used to authenticate with Microsoft Microsoft Entra ID.
 - Detection of the local agent being deprecated with clear messaging in Service Fabric Explorer.
 
 > [!IMPORTANT]
@@ -214,4 +214,3 @@ After the date when a local agent becomes expired, it can no longer communicate 
 > A released local agent version will be supported for at least six months.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

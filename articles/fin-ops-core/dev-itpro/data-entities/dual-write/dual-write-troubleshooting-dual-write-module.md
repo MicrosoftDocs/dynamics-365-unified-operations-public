@@ -20,7 +20,7 @@ ms.search.validFrom: 2020-03-16
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues with the **Dual-write** module in finance and operations apps.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## You can't load the dual-write module in a finance and operations app
 
@@ -110,4 +110,3 @@ You might receive the following error messages when you try to run the table map
 To fix the issues, update the dual-write solutions in Dataverse. Make sure to upgrade to latest solution that matches the required solution version.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

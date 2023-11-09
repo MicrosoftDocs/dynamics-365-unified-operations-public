@@ -97,7 +97,6 @@ If you receive any other error message or encounter other issues, create a suppo
 
 ## Additional resources
 
-[Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
+[Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

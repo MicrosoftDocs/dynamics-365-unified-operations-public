@@ -50,7 +50,7 @@ The following prerequisites must be in place before you set up the Microsoft Pow
 
     :::image type="content" source="media/ppi-ppac-governance-environmentcreation.png" alt-text="Screenshot of the Power Platform settings page.":::
 
-- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Azure Active Directory (Azure AD). To make this change, you must be assigned to the **Global administrator** role.
+- For organizations that **don't allow everyone** to create Power Platform environments, the user who does the setup in Lifecycle Services must be added to one of the following roles in Microsoft Entra ID. To make this change, you must be assigned to the **Global administrator** role.
 
     - Dynamics 365 Service Admin
     - Power Platform Admin

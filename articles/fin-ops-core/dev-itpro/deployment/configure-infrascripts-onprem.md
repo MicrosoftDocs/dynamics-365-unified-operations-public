@@ -505,7 +505,7 @@ As it did for the gMSAs, Contoso has added the **-prod** suffix to all its other
 
 According to the setup guide, the infrastructure scripts will automatically generate the information for the **SQLCluster** certificate, provided that the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso has left everything blank except the **ProtectTo** field.
 
-Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Azure Active Directory (Azure AD) tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
+Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Microsoft Entra tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
 
 Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they've left the **disabled** attribute of the **RSAT** certificate set to **true**.
 

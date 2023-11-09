@@ -49,11 +49,11 @@ Within this configuration file (which is on each AOS machine), you'll find some 
 
 ```xml
 <Section Name="Aad">
-    <Parameter Name="AADIssuerNameFormat" Value="http://ADFS.contoso.com/{0}/services/trust" />
-    <Parameter Name="AADLoginWsfedEndpointFormat" Value="https://ADFS.contoso.com/{0}/wsfed" />
-    <Parameter Name="AADMetadataLocationFormat" Value="https://ADFS.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml" />
-    <Parameter Name="AADTenantId" Value="adfs" />
-    <Parameter Name="AADValidAudience" Value="https://ax.contoso.com/" />
+    <Parameter Name="Microsoft Entra IDIssuerNameFormat" Value="http://ADFS.contoso.com/{0}/services/trust" />
+    <Parameter Name="Microsoft Entra IDLoginWsfedEndpointFormat" Value="https://ADFS.contoso.com/{0}/wsfed" />
+    <Parameter Name="Microsoft Entra IDMetadataLocationFormat" Value="https://ADFS.contoso.com/FederationMetadata/2007-06/FederationMetadata.xml" />
+    <Parameter Name="Microsoft Entra IDTenantId" Value="adfs" />
+    <Parameter Name="Microsoft Entra IDValidAudience" Value="https://ax.contoso.com/" />
     <Parameter Name="ACSServiceEndpoint" Value="https://accounts.accesscontrol.windows-ppe.net/tokens/OAuth/2" />
     <Parameter Name="ACSServicePrincipal" Value="00000001-0001-0000-c000-000000000000" />
     <Parameter Name="ADFSEndpoint" Value="https://ADFS.contoso.com/adfs" />
@@ -114,4 +114,3 @@ If any of the AD FS application group setup is incorrect, you're likely see an e
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

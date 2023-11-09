@@ -32,7 +32,7 @@ Dual-write is transaction-based. For example, if a change in a finance and opera
 
 ### Do application users require any special permissions to enable or configure dual-write?
 
-You must have two Azure Active Directory (Azure AD) applications set up for the finance and operations environment and two application users set up in the Dataverse environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant table permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
+You must have two Microsoft Entra applications set up for the finance and operations environment and two application users set up in the Dataverse environment. These application users should contain the appropriate application IDs. For the connection to work properly, you must give the applications the relevant table permissions by using a security role. For more information, see [Verify requirements and grant access](requirements-and-prerequisites.md#verify-requirements-and-grant-access).
 
 ### Do end users require any special permissions to enable or configure dual-write?
 
@@ -140,4 +140,3 @@ You should use the [out-of-box scenarios](./customer-mapping.md) if you can, bec
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

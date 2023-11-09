@@ -42,11 +42,10 @@ To generate an audit log of users who have used the system, follow these steps.
 4. On the **Activity** tab, select **View raw logs**.
 5. In the **Query** field, select **User Login Events**. You see a time duration that has a start date that is set to **End date - 7 days**.
 6. Set the end date, and then select **Search**. The search results that are returned include all users who signed in to the system during the seven days before the selected end date.
-7. The search results show the **AADUserID** value and the sign-in start and end times of the user's session. To map the **AADUserID** value to the user's user name and email address, use the **Users** page (**System administration** > **Users**).
+7. The search results show the **Microsoft Entra IDUserID** value and the sign-in start and end times of the user's session. To map the **Microsoft Entra IDUserID** value to the user's user name and email address, use the **Users** page (**System administration** > **Users**).
 8. To export the records and keep them for a longer period, select **Export grid**.
 
 To help guarantee a complete audit trail, an IT administrator must complete this procedure every seven days.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -82,7 +82,7 @@ Because of the architecture differences between cloud-hosted development environ
 
 ## Verify Power Platform integration status at runtime
 
-The `RetrieveFinanceAndOperationsIntegrationDetails` API is available in Dataverse to validate the status of the Power Platform integration for the Power Platform environment. If the Power Platform environment is linked to a finance and operations apps environment through the Power Platform integration, the API will return the Azure AD tenant and environment details of the finance and operations apps environment.
+The `RetrieveFinanceAndOperationsIntegrationDetails` API is available in Dataverse to validate the status of the Power Platform integration for the Power Platform environment. If the Power Platform environment is linked to a finance and operations apps environment through the Power Platform integration, the API will return the Microsoft Entra tenant and environment details of the finance and operations apps environment.
 
 The API can be used during troubleshooting to verify that the Power Platform integration is enabled for an environment. We recommend that you also use the API when you code plug-ins, client forms, or other applications that must be aware of the finance and operations apps environment that's linked to the Power Platform environment.
 
@@ -105,7 +105,7 @@ GET [Organization URI]/api/data/v9.1/RetrieveFinanceAndOperationsIntegrationDeta
 | Property<br>**Physical name**<br>***Type*** | Use | Description |
 | --- | --- | --- |
 | Environment URL<br>**Url**<br>***String*** | Read-only<br>Required | The URL of the finance and operations apps environment linked to the Power Platform environment through the Power Platform integration. |
-| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Azure AD tenant on which both the finance and operations apps environment and Power Platform environment are located. |
+| Tenant ID<br>**TenantId**<br>***GUID*** | Read-only<br>Required | The ID of the Microsoft Entra tenant on which both the finance and operations apps environment and Power Platform environment are located. |
 | Environment ID<br>**Id**<br>***GUID*** | Read-only<br>Required | The ID of the finance and operations apps environment linked to the Power Platform environment through the Power Platform integration. |
 
 If the environment isn't linked to a finance and operations apps environment through the Power Platform integration, the following error is returned in the API response:
@@ -115,4 +115,3 @@ If the environment isn't linked to a finance and operations apps environment thr
 | 0x80048d0b | Dataverse instance isn't integrated with finance and operations. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

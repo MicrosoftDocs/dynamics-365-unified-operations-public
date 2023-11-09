@@ -856,7 +856,7 @@ Note the **Redirect URI** value. It should match the DNS forward lookup zone for
 
 If you receive an error that states, "Could not establish trust relationship for the SSL/TLS secure channel," follow these steps.
 
-1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_AADMetadataLocationFormat** and **Aad\_FederationMetadataLocation**.
+1. In Service Fabric, go to **Cluster** \> **Applications** \> **AXSFType** \> **fabric:/AXSF**, and then, on the **Details** tab, scroll down and note the URLs for **Aad\_Microsoft Entra IDMetadataLocationFormat** and **Aad\_FederationMetadataLocation**.
 2. Browse to those URLs from AOS.
 3. On the AOS machine, in Event Viewer, go to **Applications and Services Logs** \> **Microsoft** \> **Dynamics** \> **AX-SystemRuntime** for details.
 4. Verify that the AD&nbsp;FS certificate is trusted:
@@ -968,7 +968,7 @@ select SID, NETWORKDOMAIN, NETWORKALIAS, * from AXDB.dbo.USERINFO where id = 'ad
 ```
 
 > [!NOTE]
-> In an Azure Active Directory (Azure AD) environment (that is, an online environment), the SID is a hash of a network alias and a network domain. In an AD&nbsp;DS environment (that is, an on-premises environment), the SID is a hash of a network alias and an identify provider.
+> In a Microsoft Entra environment (that is, an online environment), the SID is a hash of a network alias and a network domain. In an AD&nbsp;DS environment (that is, an on-premises environment), the SID is a hash of a network alias and an identify provider.
 
 In some cases, you still might not be able to sign in, and you might receive the following error:
 
@@ -1380,13 +1380,13 @@ In Platform update 20 and later, there's a database synchronization log issue wh
 
 To resolve this issue, go to \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log. For example, go to C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log. Here, you can see the output from DatabaseSynchronize in the Code\_AXSF\_M\_\<X\>.out files. Troubleshoot any issues that pertain to this component.
 
-## You can't access Finance + Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"
+## You can't access Finance + Operations: "Microsoft EntraSTS50058: A silent sign-in request was sent but no user is signed in"
 
 After a user enters credentials to sign in to Finance + Operations, the browser briefly shows the application layout. However, it then tries to redirect outside Finance + Operations, but fails with the following error:
 
-> AADSTS50058: A silent sign-in request was sent but no user is signed in.
+> Microsoft EntraSTS50058: A silent sign-in request was sent but no user is signed in.
 
-The cookies that represent the user's session weren't sent in the request to Azure AD. This issue can occur if the user is using Internet Explorer or Microsoft Edge, and if the web app that sends the silent sign-in request is in a different IE security zone than the Azure AD endpoint (login.microsoftonline.com).
+The cookies that represent the user's session weren't sent in the request to Microsoft Entra ID. This issue can occur if the user is using Internet Explorer or Microsoft Edge, and if the web app that sends the silent sign-in request is in a different IE security zone than the Microsoft Entra endpoint (login.microsoftonline.com).
 
 This issue occurs because there was a change in the Skype Presence API, and on-premises environments connect to this API by default.
 

@@ -27,7 +27,7 @@ This article describes how to install and configure the Document Routing Agent. 
 - Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, Microsoft Windows Server 2016, or Microsoft Windows Server 2019.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you are logged in as the Admin user.
-- The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
+- The Microsoft Entra ID (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
 - The Document Routing Agent requires .NET 4.7.2 or later and Adobe Acrobat Reader 32-bit or 64-bit on the client.
 - Configure Adobe client print settings to prevent document scaling.
 
@@ -126,7 +126,7 @@ The Document Routing Agent now supports running in the background as a service. 
 
 ### Do I need to update credentials or refresh Azure authentication tokens on a recurring basis?
 
-Yes. The Azure Active Directory token must be refreshed every 90 days. Failing to do so will prevent the Document Routing Agent from being able to authenticate and retrieve printing instructions applications.
+Yes. The Microsoft Entra token must be refreshed every 90 days. Failing to do so will prevent the Document Routing Agent from being able to authenticate and retrieve printing instructions applications.
 
 ### Is the Document Routing Agent supported on Microsoft Windows Server 2019?
 
@@ -153,4 +153,3 @@ Multiple Document Routing Agents should be configured for your printers to ensur
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -70,7 +70,7 @@ The following table shows the regional instances of Lifecycle Services.
 
 - If you're using a higher-level firewall outside the virtual network's network security group, you must allow a broader range of inbound ports from the Lifecycle Services source IP addresses. This requirement exists because the load balancer is configured to map a randomized port in the range 50000–65535 to well-known ports, such as the ports for WinRM and RDP. Deployment from Lifecycle Services requires that ports in this range be accessible.
 - The HTTPS port (443) doesn't have to be exposed externally, and it isn't used during deployment or management operations.
-- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Azure Active Directory (Azure AD) is required for authentication.
+- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Microsoft Entra is required for authentication.
 
 Deployment to a custom virtual network is an advanced configuration. The preceding guidance is provided as an outline of the requirements that will help you successfully use a custom virtual network. An incorrect virtual network configuration can prevent deployment or management operations from Lifecycle Services. Therefore, make sure that you understand how the customizations might affect external integrations.
 

@@ -158,7 +158,7 @@ To publish a view, follow these steps:
     >    - ** If the **Improved legal entity support for saved views** feature is turned on, and you publish the view to a subset of legal entities, the default view for those legal entities will be changed for every targeted user.
     >
     > - If a user has roles where multiple views are published as the default view, the last view that was published will be used as the user's default view. 
-    > - Publishing will not work for role assignments made using AAD groups. 
+    > - Publishing will not work for role assignments made using Microsoft Entra groups. 
 
 8. Add the security roles that correspond to the users who are being targeted by this view. 
 9. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
@@ -253,4 +253,3 @@ If you publish a view to a specific legal entity, but you don't publish that vie
 - If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

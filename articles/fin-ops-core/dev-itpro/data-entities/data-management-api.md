@@ -49,10 +49,10 @@ If you decide that the recurring integrations API meets your requirement better 
 
 ## Authorization
 
-The Data management framework's package API uses OAuth 2.0 to authorize access. The API must be called by using a valid OAuth access token. For more information about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). For on-premises deployments, Active Directory Federation Services (AD FS) is used for authorization.
+The Data management framework's package API uses OAuth 2.0 to authorize access. The API must be called by using a valid OAuth access token. For more information about OAuth 2.0 and Microsoft Microsoft Entra ID, see [Authorize access to web applications using OAuth 2.0 and Microsoft Entra ID](/azure/active-directory/develop/active-directory-protocols-oauth-code). For on-premises deployments, Active Directory Federation Services (AD FS) is used for authorization.
 
 > [!NOTE]
-> When you use the Client Credentials Grant flow, the application maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
+> When you use the Client Credentials Grant flow, the application maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Microsoft Entra applications**. The **Microsoft Entra applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
 >
 > For on-premises deployments, this list must have a valid client ID from AD FS. Additionally, for on-premises use, **\<baseurl\>** in the following examples must append **/namespaces/AXSF** when a connection is made.
 
@@ -517,4 +517,3 @@ A sample console application that showcases the data import and data export meth
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

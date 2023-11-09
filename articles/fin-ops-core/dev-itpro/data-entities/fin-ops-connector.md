@@ -51,7 +51,7 @@ This section describes the actions that are available in the connector.
 
 This action can be used to fetch a record for a specific data entity from the target instance.
 
-*Instance* refers to the URL of the target instance of the application to which the connector must connect. The expected value is to enter the URL without the ‘https://’ prefix or choose one from the drop-down menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
+*Instance* refers to the URL of the target instance of the application to which the connector must connect. The expected value is to enter the URL without the ‘https://’ prefix or choose one from the drop-down menu. This lists of all the environments that are deployed in the Microsoft Entra tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
 
 *Entity name* refers to the data entity from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
 
@@ -61,7 +61,7 @@ This action can be used to fetch a record for a specific data entity from the ta
 
 This action can be used to create data records for a data entity.
 
-*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Microsoft Entra tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
 
 *Entity name* refers to the data entity in which the record must be created. The dropdown menu shows the list of data entities from the target environment.
 
@@ -79,7 +79,7 @@ This action can be used to delete an existing data record for a data entity. The
 
 This action can be used to invoke methods on a data entity to perform a business action.
 
-*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Microsoft Entra tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
 
 *Action* refers to the method on the data entity that must be executed. Based on the selected method, the list of fields displayed will be vary. These fields represent the parameters for the selected method.
 
@@ -87,7 +87,7 @@ This action can be used to invoke methods on a data entity to perform a business
 
 This action can be used to get the list of entities for further use in the app that is being developed.
 
-*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Microsoft Entra tenant for the user account that was used to sign in to the specific client like Power Automate, Power Apps, or Logic App.
 
 **List items present in the table**
 
@@ -96,4 +96,3 @@ This action can be used to get the list of records from an entity. This action s
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

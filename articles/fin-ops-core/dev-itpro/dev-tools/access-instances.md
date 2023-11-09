@@ -29,7 +29,7 @@ This article describes how to access development instances, configure local deve
 
 | Term      | Definition                             |
 |-----------|----------------------------------------|
-| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
+| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Microsoft Entra credentials to access an instance and must be provisioned/added as a user of that instance. |
 | Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM. |
 
 
@@ -179,7 +179,7 @@ After the user is provisioned as an administrator, that user can access the inst
 
 The URL of the POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com/`. 
 
-The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com`. After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
+The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com`. After you complete the configuration steps, this VM is provisioned with your Microsoft Entra tenant. Your Microsoft Entra admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
 
 - Cashier user ID: **000160**
 - Cashier password: **123**
@@ -265,8 +265,8 @@ This process might take a while. The process is completed when the cmd.exe windo
 
 ## Frequently asked questions
 
-### Can we join cloud-hosted environments to our Azure AD domain as it is currently deployed in a workgroup?
-These environments are self-contained and haven't been tested, nor are they supported when joined to an Azure AD domain when deployed via Azure.  
+### Can we join cloud-hosted environments to our Microsoft Entra domain as it is currently deployed in a workgroup?
+These environments are self-contained and haven't been tested, nor are they supported when joined to an Microsoft Entra domain when deployed via Azure.  
 
 ### Is there a way to hide the local account passwords in LCS?
 This is only possible if you lower a user's security role in the project to *Project team member* role, and it isn't possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
@@ -274,30 +274,30 @@ This is only possible if you lower a user's security role in the project to *Pro
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments haven't been tested, nor are they supported with Azure Bastion.  
 
-### Environment is in a failed state with the error message, "Updated AAD Tenant is missing reply URL configuration". How do I resolve this issue?
-This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
+### Environment is in a failed state with the error message, "Updated Microsoft Entra Tenant is missing reply URL configuration". How do I resolve this issue?
+This message indicates that a Tier 1/customer-managed environment is configured with an Microsoft Entra tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
 1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
 2. Revert the settings to the tenant configuration used at the time of deployment.
 3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
-A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
+A Tier 1/customer-managed environment should be deployed under the customer's Microsoft Entra tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
 
 To facilitate cloud-hosted deployments, we recommend that partners follow this step to create customer-specific, cloud-hosted environments. In this way, they'll ensure that the deployment is registered under the correct tenant.
 
 - Deploy the environment via a user from the tenant that the environment will be used with. The Admin user provisioning tool shouldn't be used to change the tenant for a Tier 1/customer-managed/cloud-hosted environment.
 
 > [!NOTE]
-> The Azure AD tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
+> The Microsoft Entra tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
 
-### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application."
-As was stated earlier, it's important that finance and operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
+### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: Microsoft EntraSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application."
+As was stated earlier, it's important that finance and operations environments be deployed under the correct Microsoft Entra tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Microsoft Entra tenant settings aren't supported after deployment.
 
 ### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
 
-If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
+If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Microsoft Entra tenant.
 
-If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. 
+If an existing environment can't be deleted and redeployed, its URL must be added to the configured Microsoft Entra tenant. The following commands can be run by the tenant admin. 
 
 > [!Note]
 > Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
@@ -311,21 +311,21 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
 2. Retrieve the following values from the web.config file.
 
     ```powershell
-    $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
+    $Microsoft EntraTenant = <Value of Aad.TenantDomainGUID from web.config>
     $EnvironmentUrl = <Value of Infrastructure.HostUrl from web.config>
 
     # For example, if value is spn:fd663e81-110e-4c18-8995-ddf534bcf5e1 then take only fd663e81-110e-4c18-8995-ddf534bcf5e1
-    $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
+    $Microsoft EntraRealm = <Value of Aad.Realm from web.config without spn: prefix. >
     ```
 
-3. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
+3. Run the following commands **via the tenant admin account for the Microsoft Entra tenant in the web.config file**.
 
     ```powershell
     # Using tenant admin account under this tenant login via Microsoft Graph PowerShell cmdlet.
-    Connect-MgGraph -TenantId $AADTenant -Scopes "Application.ReadWrite.All"
+    Connect-MgGraph -TenantId $Microsoft EntraTenant -Scopes "Application.ReadWrite.All"
 
     # Get Service Principal details
-    $SP = Get-MgServicePrincipal -Filter "AppId eq '$AADRealm'"
+    $SP = Get-MgServicePrincipal -Filter "AppId eq '$Microsoft EntraRealm'"
     
     # Add Reply URLs
     [System.Collections.ArrayList]$ReplyUrls = $SP.ReplyUrls
@@ -346,4 +346,3 @@ Restart your environment from LCS by first performing **Stop** and then **Start*
 If you're using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. For more information, see [Set up the downloadable VHD for first use](vhd-setup.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

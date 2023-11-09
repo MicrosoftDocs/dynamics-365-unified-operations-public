@@ -81,8 +81,8 @@ Before you start, you must complete these tasks in the Azure portal.
 
 1. **Create storage accounts.** Provision a storage account in the same data center where your environment is provisioned. Make a note of the connection string for the storage account, because you will have to provide it later.
 2. **Create a Key Vault and a secret.** Provision Azure Key Vault in your own subscription. You will need the Domain Name System (DNS) name of the Key Vault entry that you created. Also add a secret to Key Vault. As the value, specify the connection string that you made a note of in the previous task. Make a note of the name of the secret, because you will have to provide it later.
-3. **Register the app.** Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to Key vault. Make a note of the application ID and its application key (secret), because you will have to provide them later.
-4. **Add a service principal to Key Vault.** In Key Vault, use the **Access policies** option to grant the Azure AD application **Get** and **List** permissions. In this way, the application will have access to the secrets in Key Vault.
+3. **Register the app.** Create a Microsoft Entra application, and grant application programming interface (API) access to Key vault. Make a note of the application ID and its application key (secret), because you will have to provide them later.
+4. **Add a service principal to Key Vault.** In Key Vault, use the **Access policies** option to grant the Microsoft Entra application **Get** and **List** permissions. In this way, the application will have access to the secrets in Key Vault.
 
 The following sections describe each task in more detail.
 
@@ -113,11 +113,11 @@ The following sections describe each task in more detail.
 
 ### Register the app
 
-1. In the Azure portal, select **Azure Active Directory**, and then select **App registrations**.
+1. In the Azure portal, select **Microsoft Entra**, and then select **App registrations**.
 2. Select **New registration** at the top of the menu, and enter the following information:
 
     - **Name** - Enter a friendly name for the app.
-    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Azure Active Directory domains.
+    - Select **Accounts in this Organizational directory only** unless your storage account and your Dynamics environment are in different Microsoft Entra domains.
 
 3. After the application is created, select **API permissions**.
 4. In the dialog box that appears, select **Add a permission**.
@@ -145,8 +145,8 @@ The following sections describe each task in more detail.
 1. Go to **System administration** \> **Set up** \> **System parameters**.
 2. On the **Data connections** tab, enter the following information that you made a note of earlier in this article:
 
-    - **Application ID:** Enter the application ID of the Azure AD application that you registered earlier.
-    - **Application Secret:** Enter the application key (secret) for the Azure AD application.
+    - **Application ID:** Enter the application ID of the Microsoft Entra application that you registered earlier.
+    - **Application Secret:** Enter the application key (secret) for the Microsoft Entra application.
     - **DNS name:** Enter the DNS name of Key Vault.
     - **Secret name:** Enter the name of the secret that you added to Key Vault together with connection string information.
 

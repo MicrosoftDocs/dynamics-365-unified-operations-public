@@ -68,12 +68,12 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 
 ## Feature deprecation effective July 2023
 
-### Non-Azure AD external user sign-in 
+### Non-Microsoft Entra external user sign-in 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Azure Active Directory (Azure AD) tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
-| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Azure AD portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
+| **Reason for deprecation/removal** | We're deprecating access for external users who aren't present in the Microsoft Microsoft Entra tenant that's used for your finance and operations environment. Microsoft has identified this type of access as a security issue. |
+| **Replaced by another feature?**   | Yes, finance and operations apps already support business-to-business (B2B) collaboration that provides a secure way to provide access for external guest users. For more information, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b/). If you want, you can take proactive action by inviting and onboarding external users from the Microsoft Entra portal. No changes are required through finance and operations apps. We'll share customer communications with affected customers, and will also share instructions for fixing this issue in version 10.0.35 or later of finance and operations apps. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for October 2023. |
@@ -91,7 +91,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Crash and dump analysis | Yes | No | No |
 | Feedback and bugs | Yes | Yes | No |
 | My subscription | Yes | Yes | No |
-| Office 365 | Yes | Yes | Yes: Azure Active Directory or Microsoft admin portal. |
+| Office 365 | Yes | Yes | Yes: Microsoft Entra ID or Microsoft admin portal. |
 | Impact analysis | No | Yes | No |
 | Total economic impact estimator | No | Yes | No |
 | Service requests | No | Yes | Yes: [Self-service deployments](../../dev-itpro/deployment/infrastructure-stack.md) |
@@ -425,7 +425,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
-| **Replaced by another feature?**   | For more information, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
+| **Replaced by another feature?**   | For more information, see [Configuring Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
 | **Status**                         | Deprecated: This feature is fully deprecated for self-service deployments. |
@@ -488,4 +488,3 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

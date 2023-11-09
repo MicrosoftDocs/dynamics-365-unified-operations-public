@@ -106,7 +106,7 @@ The following incidents and support benefits will appear based on your sign in, 
 -   Individual incidents and 5 packs purchased on [support.microsoft.com/supportforbusiness]. 
 
    > [!NOTE]
-   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Azure Active Directory accounts cannot have incidents tied to them.
+   > Incidents must be purchased with a Microsoft account such as \@hotmail.com or \@outlook.com. Work or Microsoft Entra accounts cannot have incidents tied to them.
 
 ### Tenant subscription
 The following entitlements will appear based on your subscription and ProDirect
@@ -133,4 +133,3 @@ We prefer that you contact Support following the steps in [Open a new incident](
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

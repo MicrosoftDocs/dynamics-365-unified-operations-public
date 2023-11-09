@@ -23,7 +23,7 @@ Before you can migrate your data from Microsoft Dynamics AX 2009 to finance and 
 Before you can generate maps, you must provide the target URL, tenant URL, and service app ID to validate the connection.
 
 > [!NOTE]
-> When you create a new app under Microsoft Azure Active Directory (Azure AD) in the Azure portal, you have two options, **Web API** and **Native**. Select **Native**, and grant permissions to the native Azure AD app.
+> When you create a new app under Microsoft Microsoft Entra ID in the Azure portal, you have two options, **Web API** and **Native**. Select **Native**, and grant permissions to the native Microsoft Entra app.
 
 ## Prerequisites
 Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [AX 2009 migration - Install the Data migration tool](install-dmt.md).

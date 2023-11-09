@@ -43,13 +43,13 @@ For resource-based service protection API limits, you can set the relative prior
 
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/training/modules/integrate-azure-finance-operations/7-connect-external). 
 
-The following are the authentication types supported in Azure Active Directory (AAD). For more information, see [Authentication](services-home-page.md).
+The following are the authentication types supported in Microsoft Entra ID (Microsoft Entra ID). For more information, see [Authentication](services-home-page.md).
 - **User based**: This flow uses a username and password for authentication and authorization. 
-- **AAD application based**: This flow uses an application registered in AAD and an associated secret for authentication. 
+- **Microsoft Entra application based**: This flow uses an application registered in Microsoft Entra and an associated secret for authentication. 
 
 When setting the priority mapping, you will select the authentication type that is used for the integration, either for a specific application (client ID) or a specific user.
-- If the priority mapping is set for an application, then the priority mapping is applied to any API request from the selected AAD application ID.
-- If the priority mapping is set for a user, then the priority mapping is applied to any API request from the selected AAD user ID.
+- If the priority mapping is set for an application, then the priority mapping is applied to any API request from the selected Microsoft Entra application ID.
+- If the priority mapping is set for a user, then the priority mapping is applied to any API request from the selected Microsoft Entra user ID.
 
 There are three priority levels available: Low, Medium, and High. Each priority level assigns different throttling thresholds for the selected application or user.
 - **Low**: Applications or users with a Low priority mapping have a lower threshold of service resource consumption for which they will be throttled than integrations set with a Medium or High priority.
@@ -60,15 +60,15 @@ These priority mappings ensure that requests from high-priority applications and
  
 ## Configure priorities for integrations 
 
-After you have registered your service in AAD and in your finance and operations apps, you can set up priorities for integrations.
+After you have registered your service in Microsoft Entra and in your finance and operations apps, you can set up priorities for integrations.
 
 > [!NOTE]
 > You must be assigned the **System administrator** or **Integration priority manager** role to complete the set up. 
 
 1. In finance and operations apps, go to **System administration** > **Setup** > **Throttling priority mapping**. 
 2. Select **New**. 
-3. In the **Authentication type** field, select **User** or **AAD application** based on your integration scenario.
-4. If **AAD application type** is selected, in the **Client ID** field select the application that you registered in the Azure Active Directory application.
+3. In the **Authentication type** field, select **User** or **Microsoft Entra application** based on your integration scenario.
+4. If **Microsoft Entra application type** is selected, in the **Client ID** field select the application that you registered in the Microsoft Entra application.
 5. If **User** type is selected, in the **User ID** field select an appropriate service account user ID.
 6. Assign the appropriate priority and then select **Save**.
 

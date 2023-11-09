@@ -92,7 +92,7 @@ Go to the location to where you extracted the zip file, and find **defaultvalue.
     - **Tenant URL** – Enter the URL for the application tenant. If you aren't sure of the tenant, see the web.config file for the finance and operations applications.
 
     > [!NOTE}
-    > In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native AAD app.
+    > In the Azure Portal, when you create a new app in the Microsoft Entra (Microsoft Entra ID), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native Microsoft Entra app.
 
 ## Multi-box setup
 For a multi-box setup, you must have the following machines:

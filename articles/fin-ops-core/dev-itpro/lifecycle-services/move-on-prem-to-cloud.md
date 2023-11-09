@@ -36,11 +36,11 @@ Previous migrations to the cloud used SQLPackage to create and restore a .bacpac
 
 ## Cloud subscription licenses
 
-If you don't already have cloud subscription licenses, work with your cloud service provider or volume license reseller to get and activate the required subscriptions on your Azure Active Directory (Azure AD) tenant. All subscriptions for users and add-on environments must be activated.
+If you don't already have cloud subscription licenses, work with your cloud service provider or volume license reseller to get and activate the required subscriptions on your Microsoft Entra tenant. All subscriptions for users and add-on environments must be activated.
 
 ## Configure Lifecycle Services cloud implementation project
 
-If no finance and operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
+If no finance and operations cloud-named user subscription licenses have previously been activated on the Microsoft Entra tenant, a new Microsoft Dynamics Lifecycle Services cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have a Lifecycle Services cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Microsoft Entra tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
 After your Lifecycle Services cloud implementation project has been created, you must fully configure it. As part of this configuration, you must complete the following steps (and others):
 
@@ -354,7 +354,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Post-migration tasks
 
-1. If necessary, reimport all other users, and assign the appropriate security roles. Users must now be assigned to Azure AD accounts.
+1. If necessary, reimport all other users, and assign the appropriate security roles. Users must now be assigned to Microsoft Entra accounts.
 2. Direct printing in a cloud environment is done by using the Document routing agent (DRA). Set up sandbox DRAs as described in [Install the Document routing agent to enable network printing](../analytics/install-document-routing-agent.md), so that regression testing can include your printing scenarios.
 3. Copy document handling attachments to the cloud. Document handling attachments aren't stored in the database. If they must be preserved, you must move them separately. For more information, see the [Migrate document handling attachments to your sandbox](#migrate-document-handling-attachments-to-your-sandbox) section in this article.
 4. Run a complete regression test cycle. This cycle should include testing of integrations.

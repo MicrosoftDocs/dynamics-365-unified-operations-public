@@ -81,7 +81,7 @@ To enable Finance + Operations to use your AD FS application, you must create a 
 
 2.  Associate your AD FS application with the Warehousing app user.
 
-    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Azure Active Directory applications**.
+    1.  In Finance + Operations, click **System administration** \> **Setup** \> **Microsoft Entra applications**.
     
     2.  Create a new line.
     
@@ -186,4 +186,3 @@ The application connects to Finance + Operations (on-premises), and the sign-in 
 > In older releases, if you don't have a telemetry ID for the Warehousing app user, you might encounter some errors. The workaround is to sign in to Finance + Operations (on-premises) through the web client to get a telemetry ID.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

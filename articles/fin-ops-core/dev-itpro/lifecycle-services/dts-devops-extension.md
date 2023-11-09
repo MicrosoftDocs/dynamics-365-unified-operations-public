@@ -140,7 +140,7 @@ To create an LCS service connection to authenticate with DTS, you must first reg
 Now that you have an app that is registered with LCS API connections, you must create a service connection to authenticate with LCS.
 
 > [!NOTE]
-> LCS authentication requires Azure Active Directory (Azure AD) accounts where multifactor authentication (MFA) is turned off, and that aren't backed by federated sign-ins. Microsoft is reviewing options for new authentication features that will enable the API and these tasks to be authenticated in these types of setups.
+> LCS authentication requires Microsoft Entra accounts where multifactor authentication (MFA) is turned off, and that aren't backed by federated sign-ins. Microsoft is reviewing options for new authentication features that will enable the API and these tasks to be authenticated in these types of setups.
 
 The service connection takes the following inputs.
 
