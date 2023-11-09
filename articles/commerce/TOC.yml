@@ -730,8 +730,20 @@
             href: dev-itpro/copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: dev-itpro/import-export-manifest.md
+        - name: Retail product kits
+          items:
+          - name: Retail product kit setup overview
+            href: retail-product-kit-setup.md
+          - name: Create retail product kits
+            href: create-retail-product-kits.md
+          - name: Generate assembly and disassembly orders
+            href: generate-assembly-and-disassembly-orders.md
+          - name: Process kit assembly and disassembly orders
+            href: process-kit-assembly-and-disassembly-orders.md
         - name: Consume Commerce runtime (CRT) Product service requests
           href: dev-itpro/crt-product-requests.md
+        - name: Product discovery checklist
+          href: product-discovery-checklist.md
       - name: Pricing and discounts
         items:
         - name: Discounts

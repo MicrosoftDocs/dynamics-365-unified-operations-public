@@ -554,6 +554,8 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer refunds with credit transfer format
+          href: accounts-receivable/refund-customers.md          
       - name: Credit and collections
         items:
         - name: Credit and collections overview
@@ -607,7 +609,7 @@
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
-          herf: accounts-receivable/Credit-statistics-faq.md
+          href: accounts-receivable/credit-statistics-faq.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range

@@ -2194,7 +2194,7 @@ items:
     items:
     - name: Overview
       href: copilot/copilot-generative-help.md
-  - name: Responsible AI FAQs
+  - name: Responsible AI
     items:
     - name: Responsible AI FAQS for Dynamics 365 Platform
       href: responsible-ai/responsible-ai-overview.md
