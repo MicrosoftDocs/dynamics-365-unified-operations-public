@@ -38,6 +38,9 @@ You can use Microsoft Dynamics Lifecycle Services to export a database from a sa
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
+### Long running operations
+Export operation can take several hours and in extreme cases days to complete.  This is due to the schema complexity of Finance and Operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  In cases where this is taking too long and you wish to stop the process, you can click the **Cancel** button from the environment details page.
+
 ### Maximum limit 50 GB on exported bacpacs 
 To maintain the system that performs database export from Lifecycle Services, a limit on the maximum bacpac size is being imposed. This limit is set at 50 GB for each bacpac exported. The reasons for this limit include: 
 
