@@ -714,6 +714,8 @@
         href: cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Check number validation
+        href: cash-bank-management/check-number-validation.md
       - name: Create checks that have Blank status
         href: cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments

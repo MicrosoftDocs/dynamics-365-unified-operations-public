@@ -67,7 +67,7 @@ The following table shows the information that this entity contains, and that ca
 | Contact person's first name  | The first name of the person who will be invited to register vendor information. |
 | Contact person's middle name | The middle name of the person who will be invited to register vendor information. |
 | Contact person's last name   | The last name of the person who will be invited to register vendor information. |
-| Contact person's email       | The email address that will be used to create a new user in Supply Chain Management, and that will be registered in the tenant's Azure Active Directory (Azure AD) account. |
+| Contact person's email       | The email address that will be used to create a new user in Supply Chain Management, and that will be registered in the tenant's Microsoft Entra account. |
 | Submitted date               | The date when the request was created in an external system. |
 | Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Supply Chain Management. If no value is received though the import process, a value from the Procurement and sourcing parameters is applied. |
 | Vendor type                  | The vendor can be either an organization or a person. The vendor type determines how the vendor is finally created. |
@@ -78,7 +78,7 @@ After the prospective vendor registration request is imported, it appears on the
 
 The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that they can sign in to Supply Chain Management by using the email account that is provided in the prospective vendor registration request.
 
-The prospective vendor user request is processed by the user request workflow. This workflow communicates through Azure AD B2B collaboration. It creates a user in Supply Chain Management that has the appropriate security settings.
+The prospective vendor user request is processed by the user request workflow. This workflow communicates through Microsoft Entra B2B collaboration. It creates a user in Supply Chain Management that has the appropriate security settings.
 
 New users that are set up have the following security roles:
 
