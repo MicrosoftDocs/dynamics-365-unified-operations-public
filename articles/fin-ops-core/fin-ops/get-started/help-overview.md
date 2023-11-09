@@ -55,9 +55,9 @@ Microsoft Copilot for finance and operations apps provides users with a conversa
 
 Once the Copilot has been enabled for your system, users can open the Copilot side car using to Copilot button at the top of the page.
 
-![<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+![<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox "Copilot help pane in the user experience")
 
-For more information, see [Microsoft Copilot for finance and operations apps](../copilot/copilot-generative-help.md)
+For more information, see [Microsoft Copilot for finance and operations apps (Preview)](../copilot/copilot-for-finance-operations.md).
 
 ## Get notified about changes through an RSS feed
 
