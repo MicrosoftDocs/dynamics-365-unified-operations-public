@@ -541,6 +541,8 @@ items:
         items:
         - name: Create deployable packages of models
           href: deployment/create-apply-deployable-package.md
+        - name: Schema changes for shorter downtime during custom package deployment
+          href: deployment/schema-changes.md
         - name: Install deployable packages from the command line
           href: deployment/install-deployable-package.md
         - name: Uninstall a package
