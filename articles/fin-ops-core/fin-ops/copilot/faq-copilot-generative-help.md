@@ -63,7 +63,7 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 ## See also
 
-- [Copilot for generative help and guidance](copilot-generative-help.md)
-- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
+- [Microsoft Copilot for finance and operations apps (Preview)](copilot-for-finance-operations.md)
+- [Enable Microsoft Copilot for finance and operations apps (Preview)](../../dev-itpro/copilot/enable-copilot.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
