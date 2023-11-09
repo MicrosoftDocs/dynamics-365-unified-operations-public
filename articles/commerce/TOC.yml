@@ -742,6 +742,8 @@
             href: process-kit-assembly-and-disassembly-orders.md
         - name: Consume Commerce runtime (CRT) Product service requests
           href: dev-itpro/crt-product-requests.md
+        - name: Product discovery checklist
+          href: product-discovery-checklist.md
       - name: Pricing and discounts
         items:
         - name: Discounts
