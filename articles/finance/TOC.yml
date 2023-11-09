@@ -114,26 +114,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/finance
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/finance
-      - name: Learning catalog
-        items: 
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements

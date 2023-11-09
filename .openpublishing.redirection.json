@@ -27409,6 +27409,51 @@
       "source_path": "articles/commerce/get-started/learning-catalog-solution-architect.md",
       "redirect_url": "/training/dynamics365/commerce",
       "redirect_document_id": false
-    }    
+    },    
+    {
+      "source_path": "articles/finance/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },    
   ]
 }
