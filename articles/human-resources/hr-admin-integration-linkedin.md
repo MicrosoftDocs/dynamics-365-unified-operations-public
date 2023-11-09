@@ -121,9 +121,9 @@ After you save and close the new application user in the previous section, you'r
 
 5. Select **OK**.
 
-### Add an Azure Active Directory app in Human Resources
+### Add a Microsoft Entra app in Human Resources
 
-1. In Dynamics 365 Human Resources, open the **Azure Active Directory applications** page.
+1. In Dynamics 365 Human Resources, open the **Microsoft Entra applications** page.
 2. Add a new record to the list, and set the following fields:
 
     - **Client ID**: Enter **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.

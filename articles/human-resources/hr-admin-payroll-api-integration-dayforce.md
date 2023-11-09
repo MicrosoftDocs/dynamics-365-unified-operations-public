@@ -279,7 +279,7 @@ For more information, see the following resources:
 
 ### Add the Dayforce people connector to the Human Resources environment
 
-1. In Human Resources, go to **Azure Active Directory Application**, and select **New**.
+1. In Human Resources, go to **Microsoft Entra Application**, and select **New**.
 2. Add the Dayforce payroll connector that has the client ID **6817703f-e5b3-4eec-b11f-ba6367f1b156** and the user ID **DFAPIConnector**.
 
 ## Ready to pay

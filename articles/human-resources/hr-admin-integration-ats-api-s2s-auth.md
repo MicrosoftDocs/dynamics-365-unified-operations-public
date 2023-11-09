@@ -103,7 +103,7 @@ To set up the new user with appropriate permissions, follow these steps:
   2. Enter a **User ID** and **User name** for the new application user. For example, you can enter "RecruitingIntegration".
 
       > [!NOTE]
-      > If the app doesn't have a Microsoft Azure Active Directory (Azure AD) user account or email address, you can put something like "RecruitingApp" in the email address and provider fields for the user.
+      > If the app doesn't have a Microsoft Microsoft Entra user account or email address, you can put something like "RecruitingApp" in the email address and provider fields for the user.
 
   3. On the **User's roles** FastTab, select the **Assign roles** action.
   4. In the **Assign roles to user** pane, select **Recruiting application**, and select **OK**.
@@ -111,9 +111,9 @@ To set up the new user with appropriate permissions, follow these steps:
 
 ### Link the new Human Resources user to the application
 
-After the user is created, a record must be created for the application in the **Azure Active Directory Applications** form to link the app to the Human Resources user.
+After the user is created, a record must be created for the application in the **Microsoft Entra Applications** form to link the app to the Human Resources user.
 
-  1. Open the **Azure Active Directory Applications** form and select **New**.
+  1. Open the **Microsoft Entra Applications** form and select **New**.
   2. In the **Client ID** field, enter the client ID of the application user created for the application.
   3. In the **Name** field, enter the name of the integrating application.
   4. In the **User ID** field, select the new Human Resources user created for the recruiting integration.

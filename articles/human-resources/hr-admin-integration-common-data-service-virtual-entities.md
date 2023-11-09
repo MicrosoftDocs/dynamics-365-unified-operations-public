@@ -153,11 +153,11 @@ The next step is to configure the virtual table data source in the Power Apps en
      >[!NOTE]
      >The Target URL determines the Human Resources environment that virtual tables will point to for data. If you create a sandbox environment by creating a copy of your production environment, update this value to the namespace URL of your new sandbox environment. This ensures the virtual tables are connected to the sandbox environment data rather than continuing to point to the production environment.
 
-   - **Tenant ID**: The Azure Active Directory (Azure AD) tenant ID.
+   - **Tenant ID**: The Microsoft Entra tenant ID.
 
-   - **AAD Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Microsoft Entra Application ID**: The application (client) ID created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   - **AAD Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Microsoft Entra Application Secret**: The client secret created for the application registered in the Microsoft Azure portal. You received this information earlier during the step [Register the app in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
    ![Microsoft HR Data Source.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
@@ -165,12 +165,12 @@ The next step is to configure the virtual table data source in the Power Apps en
 
 ### Grant app permissions in Human Resources
 
-Grant permissions for the two Azure AD applications in Human Resources:
+Grant permissions for the two Microsoft Entra applications in Human Resources:
 
 - The app created for your tenant in the Microsoft Azure portal
 - The Dynamics 365 HR Virtual Table app installed in the Power Apps environment 
 
-1. In Human Resources, open the **Azure Active Directory applications** page.
+1. In Human Resources, open the **Microsoft Entra applications** page.
 
 2. Select **New** to create a new application record:
 
@@ -225,4 +225,3 @@ The slideout pane displays the most recent execution results for the process. Yo
 [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
