@@ -34,7 +34,7 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 
 The Copilot skill for in-app help guidance leverages the power of generative AI to provide users with contextual support. Copilot accesses the full breadth of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
 
-![<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox "Copilot help pane in the user experience")
+[<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
 
 ## How Copilot works for in-app help and guidance
 
