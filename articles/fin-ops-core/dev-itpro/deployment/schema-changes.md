@@ -24,47 +24,42 @@ custom package deployments.
 
 ## Deployment phases
 During any custom package deployment, the environment first goes to 'Pre-Servicing' phase. This is when the system is still accessible to the users, and they can login and use the environment. Many additive 
-online table schema changes are made here. After this the downtime starts and the environment stays in the 'Servicing' phase. This is where all the online unsupported schema changes are made. Our focus is to 
-reduce the database synchronization time during this phase. This article will provide details on all the points we need to keep in mind to reduce the downtime. After servicing, the environment goes to 
-'Post-Servicing' phase. This is where the majority of the index related schema changes are applied with online options. The customer can start using their environment in this phase.
+online table schema changes are made here. After this the downtime starts and the environment stays in the 'Servicing' phase. This is where all the online unsupported schema changes are made. This article provides details on all the points to keep in mind to reduce the downtime. After servicing, the environment goes to 'Post-Servicing' phase. This is where the majority of the index related schema changes are applied with online options. The customer can start using their environment in this phase.
 
 ## Online supported changes
-SQL provides online schema change that can be done without exclusive locks on the table, i.e. table stays available for read and write operations. FnO deployments are being modified to use these online options 
-to perform most of the schema changes that can be done online without causing downtime for the users. 
+SQL provides online schema change that can be done without exclusive locks on the table, i.e. table stays available for read and write operations. Finance and operations deployments are being modified to use these online options to perform most of the schema changes that can be done online without causing downtime for the users. 
 
-Use the following list to identify the changes that are online supported:
+The following list identifies the changes that are supported online:
  - All new field addition to the table. [Pre-Servicing]
  - All string size increase field change. (string size decreases are ignored as it can result in data truncation) [Pre-Servicing]
- - All string to memo field changes that do not require dependent index drops. [Pre-Servicing]
- - All memo to string field changes given it does not cause data truncation. [Pre-Servicing]
+ - All string to memo field changes that don't require dependent index drops. [Pre-Servicing]
+ - All memo to string field changes given it doesn't cause data truncation. [Pre-Servicing]
  - All non-clustered index addition and modifications. [Post-Servicing]
- - Non-Primary Clustered index changes that do not require CI drop (including adding/removing fields from non-primary CI, changing it from one index to another). [Post-Servicing]
- - Non clustered primary key change from one index to another. [Post-Servicing]
+ - Non-Primary clustered index changes that don't require CI drop (including adding/removing fields from non-primary CI, changing it from one index to another). [Post-Servicing]
+ - Non-clustered primary key change from one index to another. [Post-Servicing]
  - Columnstore index changes that do not require index drop. [Post-Servicing]
 
 
 >[!Note]
 > Since these changes are happening in Pre and Post servicing with online options, the execution time of these phases can be high depending on numerous factors like type of schema change, number of such changes,
 > size of the tables, any transient blockers etc.
-> Alter fields such as memo to string and clustered index changes can take a lot of time if table size is huge as these internally requires whole table to be rebuilt. We have seen cases where memo to string on
-> 300 GB table took 16 hours when run online. Therefore, we should be mindful while applying such changes. It's always better to explore the option to add new field/ new table instead OR if it's a staging table,
-> check if the data can be removed before the alter.
+> Altering fields such as memo to string and clustered index changes can take a lot of time if there's a large table size as these internally requires whole table to be rebuilt. We have seen cases where memo to string on 300 GB table took 16 hours when run online. Explore the option to add new field/ new table instead OR if it's a staging table, check if the data can be removed before the alter.
 > String size decrease change is ignored during database synchronization as it results in data loss.
 
 
 
 ## Online Unsupported changes
-All the remaining schema changes not covered in the above section are not supported online yet in FnO deployments and therefore should be avoided wherever possible. These run in the 'Servicing' phase of the 
-deployments where the environment is down. Listing down such changes and suggestions for avoiding these/ use alternatives:
+All the remaining schema changes not covered in the above section are not supported online yet in finance and operations deployments and should be avoided wherever possible. These run in the 'Servicing' phase of the deployments where the environment is down. 
 
-1. Clustered PK change: Changing a clustered primary key for a table cannot be done online. In general, it is not recommended to change the primary key of the table as it is most likely to be used in multiple
+Below is a list of changes and suggestions for avoiding these and alternatives:
+
+1. Clustered PK change: Changing a clustered primary key for a table can't be done online. In general, it's not recommended to change the primary key of the table as it is likely to be used in multiple
 other indexes. We suggest adding a new table with corrected primary index.
-2. Numeric field scale change: In FnO, changing scale of a numeric field is allowed. This is not yet online supported in FnO deployments. We suggest, if possible, adding a new field instead of modifying the
-existing one if the table size is larger.
+2. Numeric field scale change: In finance and operations, changing scale of a numeric field is allowed. This isn't supported online in finance and operations deployments. It's recommended to add a new field instead of modifying the existing one if the table size is larger.
 3. Index drops: No index drop is supported online. Non clustered index drops will soon be supported online. Avoid changes that can cause clustered and/or primary index drop.
 4. String to memo field change when it is the single field in the index resulting in index drop: Sql restricts any memo field to be part of the index. If any index has this single field, then the index needs to be
-dropped and that is not a supported change. For such cases, the index can be altered to include more fields and later can be removed if not needed in next deployments.
-5. Fulltext index changes: This is not supported online yet.
+dropped and it isn't a supported change. For such cases, the index can be altered to include more fields and later can be removed if not needed in the next deployments.
+5. Fulltext index changes: This isn't supported online.
 
 ## How to effectively plan custom deployments for Prod environments?
 The following points should be considered before applying a custom package to Production instance:
