@@ -1,5 +1,5 @@
 ---
-title: Microsoft Copilot for finance and operations apps
+title: Microsoft Copilot for finance and operations apps (Preview)
 description: This article provides information about Microsoft Copilot for finance and operations apps and how to use it.
 author: cabeln
 ms.author: cabeln
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Microsoft Copilot for finance and operations apps
+# Microsoft Copilot for finance and operations apps (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

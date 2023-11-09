@@ -2192,9 +2192,9 @@ items:
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
   - name: Copilot in finance and operations
     items:
-    - name: Microsoft Copilot for finance and operations apps
+    - name: Microsoft Copilot for finance and operations apps (Preview)
       href: ../fin-ops/copilot/copilot-for-finance-operations.md
-    - name: Enable Microsoft Copilot for finance and operations apps
+    - name: Enable Microsoft Copilot for finance and operations apps (Preview)
       href: copilot/enable-copilot.md
   - name: Responsible AI
     items:
@@ -2202,6 +2202,8 @@ items:
       href: responsible-ai/responsible-ai-overview.md
     - name: FAQ for chat with finance and operations data on Microsoft 365 Copilot (Preview)
       href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
+    - name: FAQ for Copilot for generative help and guidance (Preview)
+      href: ../fin-ops/copilot/faq-copilot-generative-help.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 
