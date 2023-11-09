@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This article describes how to provision Microsoft Teams by using organizational data from Dynamics 365 Commerce.
 
-Dynamics 365 Commerce offers an easy way to provision Teams if you haven't yet set up teams for your retail stores there. By taking advantage of well-defined information from Commerce that you want to use in Teams, you can help your store employees get started in Teams. This information includes the organizational hierarchy, store names, employee information, and Azure Active Directory (Azure AD) accounts. 
+Dynamics 365 Commerce offers an easy way to provision Teams if you haven't yet set up teams for your retail stores there. By taking advantage of well-defined information from Commerce that you want to use in Teams, you can help your store employees get started in Teams. This information includes the organizational hierarchy, store names, employee information, and Microsoft Entra accounts. 
 
 The process of provisioning Teams has two main steps:
 
@@ -68,7 +68,7 @@ To upload a Commerce organizational hierarchy to Teams, follow these steps.
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Microsoft Teams Integration Configuration**.
 1. Select **Download targeting hierarchy**, and then select **Retail Stores by Region** to download a comma-separated values (CSV) file of the organizational hierarchy.
 1. Install the Microsoft Teams PowerShell module by following the steps in [Install Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
-1. When you're prompted in the Teams PowerShell window, sign in by using the administrator account for your Azure AD tenant.
+1. When you're prompted in the Teams PowerShell window, sign in by using the administrator account for your Microsoft Entra tenant.
 1. Follow the steps in [Set up your team targeting hierarchy](/microsoftteams/set-up-your-team-hierarchy) to upload the CSV file for the targeting hierarchy.
 
 ## Verify that the organizational hierarchy was uploaded to Teams

@@ -64,13 +64,13 @@ The **DigitalSignatureKeyVaultSample** project contains sample code that uses a 
     settings.Add(WellKnownKeyVaultSettings.KeyVaultUrl, "Set your Azure Key Vault URL here");
     ```
 
-- **Client ID** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Azure Key Vault storage for authentication purposes. This client should have access to read secrets from the Azure Key Vault storage.
+- **Client ID** – An interactive client ID of the Microsoft Entra application that is associated with the Azure Key Vault storage for authentication purposes. This client should have access to read secrets from the Azure Key Vault storage.
 
     ``` csharp
     settings.Add(WellKnownKeyVaultSettings.KeyVaultInteractiveClientId, "Set the client ID here");
     ```
 
-- **Client secret** – A secret key that is associated with the Azure AD application that is used for authentication in the Azure Key Vault storage.
+- **Client secret** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Azure Key Vault storage.
 
     ``` csharp
     // Secret key value should be encrypted and stored in a safe place.

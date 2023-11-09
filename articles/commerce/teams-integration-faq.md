@@ -41,9 +41,9 @@ In Commerce headquarters, every organization's hierarchy is associated with one 
 
 ![Example of an organization hierarchy purpose in Commerce headquarters.](media/d365-commerce-organization-hierarchies-purpose.png)
 
-### How do I enable retail store workers to sign in to Commerce point of sale (POS) using Azure Active Directory (Azure AD)?
+### How do I enable retail store workers to sign in to Commerce point of sale (POS) using Microsoft Entra ID?
 
-For information about how to configure the Commerce POS sign-in experience to use Azure AD authentication, see [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md).
+For information about how to configure the Commerce POS sign-in experience to use Microsoft Entra authentication, see [Enable Microsoft Entra authentication for POS sign-in](aad-pos-logon.md).
 
 ### How do I map stores and corresponding teams in Commerce headquarters if my organization has already created teams in Microsoft Teams?
 
@@ -51,7 +51,7 @@ For information on how to map stores and teams if there are pre-existing teams, 
 
 ### How do I clear the Microsoft Graph API token stored in the session storage?
 
-A user who has signed in to the point of sale (POS) with an Azure Active Directory (Azure AD) account should sign out from the POS or close the application to clear the session storage. 
+A user who has signed in to the point of sale (POS) with an Microsoft Entra account should sign out from the POS or close the application to clear the session storage. 
 
 > [!TIP]
 > A recommended best practice is to always have store workers lock the POS terminal or sign out from a session when not using the terminal. 

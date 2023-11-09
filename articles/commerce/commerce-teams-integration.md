@@ -37,8 +37,8 @@ Here are some of the key features that the Commerce and Microsoft Teams integrat
 The following prerequisites must be in place before you can start to use Microsoft Teams integration features:
 
 - Microsoft 365 Business Standard License (This license includes Teams.)
-- Azure Active Directory (Azure AD) accounts for all store managers and workers
-- Point of sale (POS) systems that are configured with Azure AD authentication
+- Microsoft Entra accounts for all store managers and workers
+- Point of sale (POS) systems that are configured with Microsoft Entra authentication
 
 ## Conceptual architecture
 

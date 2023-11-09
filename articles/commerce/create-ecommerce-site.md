@@ -28,14 +28,14 @@ When you license the Dynamics 365 Commerce capabilities, site builder will be pr
 
 ## Site creation prerequisites
 
-A site builder user must have a Microsoft Azure Active Directory (Azure AD) user account included in the Azure AD security group assigned for the e-commerce system administrators. For more information, see [Deploy a new e-commerce tenant](deploy-ecommerce-site.md).
+A site builder user must have a Microsoft Microsoft Entra user account included in the Microsoft Entra security group assigned for the e-commerce system administrators. For more information, see [Deploy a new e-commerce tenant](deploy-ecommerce-site.md).
 
 > [!NOTE]
-> Azure AD guest users may have different access permissions in your Azure AD tenant. Even if included in the Azure AD security group assigned for the e-commerce system administrators, a guest user may need Azure AD **External users** permission settings to be adjusted in order to create an e-commerce site in Commerce. 
+> Microsoft Entra guest users may have different access permissions in your Microsoft Entra tenant. Even if included in the Microsoft Entra security group assigned for the e-commerce system administrators, a guest user may need Microsoft Entra **External users** permission settings to be adjusted in order to create an e-commerce site in Commerce. 
 
-To adjust Azure AD **External users** settings, follow these steps.
+To adjust Microsoft Entra **External users** settings, follow these steps.
 
-1. In the Azure portal, navigate to your Azure AD tenant.
+1. In the Azure portal, navigate to your Microsoft Entra tenant.
 1. Go to **User settings \> External users** and select the **Manage external collaboration settings** link. This opens the **External collaboration settings** page where guest user access, guest invite settings, and collaboration restrictions can be set. 
 1. Adjust the external collaboration settings in accordance with your company's security policies. 
 
@@ -50,7 +50,7 @@ To set up your site, do the following.
 | Field                               | Description |
 |-------------------------------------|-------------|
 | Site name                           | Enter the display name that should be used for your site in the site authoring environment. This name is visible only in the authoring environment and will not be shown to customers. |
-| Site administrator's security group | Specify the Microsoft Azure Active Directory (Azure AD) security group that manages users who have the site administrator role in this site. |
+| Site administrator's security group | Specify the Microsoft Microsoft Entra security group that manages users who have the site administrator role in this site. |
 | Default channel (operating unit number) | Select the online store that this site will serve as the web storefront for. If you want your e-commerce site to support multiple online stores, you must associate the stores with your site in **Site settings** after the site is set up. |
 | Default language                            | Specify the default language for this online store and market. An online store can support multiple languages. If you want to support multiple languages for this online store or another online store, you can configure that support in **Site settings** after the site is set up.  |
 | Domain                              | Select a domain name that will serve as the domain for this online store. If you haven't configured any domains in LCS, you can leave this field blank. After your domain is configured in LCS, you must add it to your online store in **Site settings**.  |

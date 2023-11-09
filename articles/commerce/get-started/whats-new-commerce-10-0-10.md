@@ -41,7 +41,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365-release-plan/2020wave1/) site.
 
-- [Azure AD support for POS sign-in](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
+- [Microsoft Entra support for POS sign-in](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
 - [Channel-side calculations for available physical inventory for stores](/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
 - [Change mode of delivery operation for POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
 - [Upsell and cross-sell using available discounts by enabling store associates to view promotions in POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)

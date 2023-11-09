@@ -42,7 +42,7 @@ The following features are included in this release. The feature titles link to 
 - [Invoke Dynamics 365 Fraud Protection during e-commerce checkout](/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
 - [Recommendations](/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
 - [Product recommendations in POS](/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [Azure Active Directory business to customer tenant per channel](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [Microsoft Entra business to customer tenant per channel](/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
 
 
 ## Additional resources

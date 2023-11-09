@@ -25,17 +25,17 @@ This article describes how to mock a signed-in user in a Dynamics 365 Commerce o
 
 Over the course of developing your e-Commerce online site, it may become necessary to develop and test scenarios for signed-in users. Rather than publish these pages and test against live pages, you can instead mock the signed-in state when running in developer mode.
  
-## Configure your Azure AD B2C tenant
+## Configure your Microsoft Entra B2C tenant
 
-To take advantage of this feature, you must perform a one-time setup in your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant to allow you to mock the signed-in user status. To proceed with the following steps, you will need to be signed in as a user with global administrator privileges.
+To take advantage of this feature, you must perform a one-time setup in your Microsoft Entra business-to-consumer (B2C) tenant to allow you to mock the signed-in user status. To proceed with the following steps, you will need to be signed in as a user with global administrator privileges.
 
 ### Create a new resource owner password credentials (ROPC) flow
  
-The first step is to create a new resource owner password credentials (ROPC) flow in your Azure AD B2C tenant. 
+The first step is to create a new resource owner password credentials (ROPC) flow in your Microsoft Entra B2C tenant. 
 
 To create a new ROPC flow, follow these steps.
 
-1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Azure AD B2C tenant, and then select the **Azure AD B2C** service.
+1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Microsoft Entra B2C tenant, and then select the **Microsoft Entra B2C** service.
 1.	Select **User flows** and **New user flow**.
 1.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
 1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name, as it will be used later as the `ropcUserFlowName` value in your credentials.json file.
@@ -68,7 +68,7 @@ From the example above, you can obtain values for the `ropcUserFlowName`, `login
 
 Next, you will create a native application meant to represent the Node application you will run during local development.
  
-1.	In the **Azure AD B2C** settings, select **App Registrations**, and then select **New registration**.
+1.	In the **Microsoft Entra B2C** settings, select **App Registrations**, and then select **New registration**.
 1.	Enter a name for the application, for example "local_node_app".
 1.	For **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
 1.	For **Redirect URIs**, select **Public client/native (mobile & desktop)** from the drop-down list, and leave the URI as is.
@@ -99,8 +99,8 @@ From the examples above, you have now obtained the following information:
 
 ### Configure scope and register the native application
 
-1.	In the Azure AD B2C settings, go to **App registrations**.
-1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this is the application whose client ID is used in the Azure AD B2C configuration for your site. If Azure AD B2C is already configured, the application ID used for your e-commerce site can be found in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID can also be found in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
+1.	In the Microsoft Entra B2C settings, go to **App registrations**.
+1.	Open the application that is currently being used by the e-commerce rendering application. In the Azure portal, this is the application whose client ID is used in the Microsoft Entra B2C configuration for your site. If Microsoft Entra ID B2C is already configured, the application ID used for your e-commerce site can be found in Commerce headquarters at **Commerce Shared Parameters \> Identity Providers** in the **ClientId** field under **Relying Parties**. The application ID can also be found in Commerce site builder at **Tenant Settings \> B2C Settings** as the **Client GUID** within the B2C application configuration used for your site.
 1.	In the left navigation pane under **Manage**, select **Expose an API** and verify that a **user_impersonation** scope exists. If one does not exist, select **Add a scope** to create one. When prompted for an **Application ID URI**, leave the application ID URI as is and then add "user_impersonation" for the **Scope name**. Then enter friendly values for **Admin consent display name** and **Admin consent description**.
 
     ![Expose an API.](media/local-sign-in-04.png)
@@ -115,7 +115,7 @@ From the examples above, you have now obtained the following information:
 1.	Select **Add permissions**.
 1.	Select **Grant admin consent for** (this name will contain your domain), and then select **Yes** to apply the consent. You should now see a green checkmark under **Status** for **user_impersonation**.
  
-The Azure AD setup portion is now complete and you should now have your versions of all of the following example values.
+The Microsoft Entra setup portion is now complete and you should now have your versions of all of the following example values.
 
 | Property name | Example value |
 | ----------- | ----------- |
@@ -127,7 +127,7 @@ The Azure AD setup portion is now complete and you should now have your versions
 
 ## Configure your Node application
 
-After you have completed the steps to configure you Azure AD B2C tenant, you will need to create a credentials file in your online software development kit (SDK) Node application.
+After you have completed the steps to configure you Microsoft Entra B2C tenant, you will need to create a credentials file in your online software development kit (SDK) Node application.
  
 The credentials will live under the `secrets/` directory in your Node application. Create a `secrets/` directory in your application if you haven't already, and then create a new file named `credentials.json` that is similar to the following example that uses the data gathered above.
 

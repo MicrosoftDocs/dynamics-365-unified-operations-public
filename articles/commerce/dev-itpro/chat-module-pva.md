@@ -96,7 +96,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 For a complete list of proactive chat configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
 
 > [!NOTE]
-> Currently, Power Virtual Agents doesn't support Azure Active Directory B2C (Azure AD B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Power Virtual Agents chatbots require an explicit customer sign-in.
+> Currently, Power Virtual Agents doesn't support Microsoft Entra ID B2C (Microsoft Entra B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Power Virtual Agents chatbots require an explicit customer sign-in.
 
 ## Additional resources
 

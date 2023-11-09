@@ -189,7 +189,7 @@ You can also use the **help** command in PowerShell to find information about al
 |---|---|
 | --config \<path to config file\> | Specifies the path of the configuration file used as part of the installation. |
 | --device \<device identifier\> | Specifies the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user is prompted to input the device identifier during device activation. |
-| --disableaadauthentication | Disables the usage of Azure Active Directory (Azure AD) authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
+| --disableaadauthentication | Disables the usage of Microsoft Entra authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
 | --enablewebviewdevtools | Enables developer tools for Store Commerce. If this parameter is omitted, developer tools are only enabled if Windows Developer Mode is enabled. |
 | --help | Shows parameter information. |
 | --inplaceupgradefrommodernpos | Executes an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
@@ -237,7 +237,7 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 
 ## Known issues with the Microsoft Edge WebView2 control
 
-During activation, when prompted to enter the Azure AD password with multiple options, choose the password option. The other options might not work.
+During activation, when prompted to enter the Microsoft Entra password with multiple options, choose the password option. The other options might not work.
 
 ## Additional resources
 

@@ -238,8 +238,8 @@ The following procedure describes the configuration that is required to run the 
         > [!NOTE]
         > The Store Commerce for web and Commerce Scale Unit URL can be obtained from finance and operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
-   + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
-   + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
+   + **Microsoft Entra user email** – Enter the email address of the Microsoft Entra user that should be used for device activation. The Microsoft Entra user must have permission to activate the device.
+   + **Microsoft Entra password** – Enter the password of the Microsoft Entra user that should be used for device activation.
    + **Register number** – Enter the ID of the register number (channel) where the test should be run.
    + **Device** – Enter the ID of the device where the test should be run.
    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
@@ -394,4 +394,3 @@ If multifactor authentication is enabled for the device activation user, then pl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -31,7 +31,7 @@ The following table shows the current reference list of cookies placed by Dynami
 
 | Cookie name                               | Usage                                                        | Lifetime |
 | ------------------------------------------- | ------------------------------------------------------------ |  ------- |
-| `.AspNet.Cookies`                             | Store Microsoft Azure Active Directory (Azure AD) authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
+| `.AspNet.Cookies`                             | Store Microsoft Microsoft Entra authentication cookies for single sign-on (SSO). Stores encrypted user principal information (name, surname, email). | Session |
 | `_msdyn365___cart_`                           | Store cart ID used to obtain list of products added to cart instance. | Session |
 | `_msdyn365___checkout_cart_`                           | Store checkout cart ID used to obtain list of products added to the checkout cart instance. | Session |
 | `_msdyn365___ucc_`                            | Cookie compliance consent tracking.                          | One year |

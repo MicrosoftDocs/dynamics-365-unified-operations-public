@@ -68,7 +68,7 @@ At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** f
 8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Receipt formats**.
 9. Select an existing or create a new receipt format and then select **Designer** on the Action Pane.
 10. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
-11. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
+11. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
 12. In the designer, drag and drop the **Custom** field from the left pane to the receipt designer.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransa
 3. Save the changes.
 4. Select **Designer** on the Action Pane.
 5. If you're prompted to confirm that you want to open the application, select **Open**, and then follow the installation instructions.
-6. After the designer is installed, you're asked for Azure Active Directory (Azure AD) credentials. Enter the information to start the designer.
+6. After the designer is installed, you're asked for Microsoft Entra credentials. Enter the information to start the designer.
 7. In the designer, drag and drop the required receipt fields from the left pane to the receipt designer.
 8. Save the changes.
 9. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.

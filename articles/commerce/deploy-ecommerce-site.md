@@ -39,13 +39,13 @@ Use this procedure to initialize the e-commerce feature in an existing environme
 Before you begin, make sure that you have the following required information:
 
 - The RCSU that will be used.
-- The Microsoft Azure Active Directory security group that will be used for e-commerce system admins.
-- The Microsoft Azure Active Directory security group that will be used for ratings and reviews moderators.
+- The Microsoft Entra ID security group that will be used for e-commerce system admins.
+- The Microsoft Entra ID security group that will be used for ratings and reviews moderators.
 - The domains that will be associated with the environment.
 
 In addition, you can collect the following optional information:
 
-- Azure AD business-to-consumer (B2C) information:
+- Microsoft Entra business-to-consumer (B2C) information:
 
 	- Tenant Name.
 	- Client ID.

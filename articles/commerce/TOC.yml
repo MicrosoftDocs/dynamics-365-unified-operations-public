@@ -218,17 +218,17 @@
           href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/commerce
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/commerce
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
           href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/commerce
         - name: Geo-to-geo migrations
           href: ../fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations.md?context=/dynamics365/context/commerce
         - name: Move licenses between agreement types
           href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/commerce
-        - name: Move LCS implementation projects to different Azure AD tenants
+        - name: Move LCS implementation projects to different Microsoft Entra tenants
           href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/commerce
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/commerce
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
+        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/commerce
         - name: Implement finance and operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
@@ -422,7 +422,7 @@
             href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
-          - name: Configure Azure Active Directory authentication for POS sign-in
+          - name: Configure Microsoft Entra authentication for POS sign-in
             href: aad-pos-logon.md
           - name: Product search in the POS
             href: POS-search-improvements.md
@@ -444,7 +444,7 @@
             href: hide-non-carrier-modes.md
           - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
-          - name: Configure Store Commerce for web to use a custom Azure AD app
+          - name: Configure Store Commerce for web to use a custom Microsoft Entra app
             href: dev-itpro/cpos-custom-aad.md
           - name: Hardware peripherals
             items:
@@ -1084,7 +1084,7 @@
           items:
           - name: Set up a B2C tenant
             href: dev-itpro/set-up-B2C-tenant.md
-          - name: Create or link to an existing Azure AD B2C tenant
+          - name: Create or link to an existing Microsoft Entra B2C tenant
             href: dev-itpro/create-link-aad-b2c-tenant.md
           - name: Create a B2C application
             href: dev-itpro/create-b2c-app.md
@@ -1092,7 +1092,7 @@
             href: dev-itpro/create-user-flow-policies.md
           - name: Add social identity providers
             href: dev-itpro/add-social-identity-providers.md
-          - name: Update Commerce headquarters with Azure AD B2C information
+          - name: Update Commerce headquarters with Microsoft Entra B2C information
             href: dev-itpro/update-hq-aad-b2c-info.md
           - name: Configure your B2C tenant in site builder
             href: dev-itpro/config-b2c-tenant-site-builder.md
@@ -1482,7 +1482,7 @@
         items:
         - name: Enable on behalf of (OBO) functionality
           href: on-behalf-of.md
-        - name: Create and configure an Azure AD application for account manager sign-in
+        - name: Create and configure a Microsoft Entra application for account manager sign-in
           href: dev-itpro/obo-create-aad-application.md
         - name: Create and modify B2B pages for on behalf of functionality (OBO)
           href: dev-itpro/obo-add-pages-site-builder.md
@@ -2906,7 +2906,7 @@
                 href: e-commerce-extensibility/interactive-components.md
               - name: Mock the signed-in state during local development
                 href: e-commerce-extensibility/mock-sign-in.md
-              - name: Set up web API authentication transfer using Azure Active Directory B2C
+              - name: Set up web API authentication transfer using Microsoft Entra ID B2C
                 href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
               - name: Configure module properties to be shown based on context
                 href: e-commerce-extensibility/configure-properties-context.md

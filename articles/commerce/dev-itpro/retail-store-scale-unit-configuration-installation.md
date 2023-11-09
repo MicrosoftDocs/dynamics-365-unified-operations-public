@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 ms.custom: 219744
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
 ms.search.industry: Retail
-ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
+ms.search.form: SysMicrosoft Entra IDClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 ---
 
 # Configure and install Commerce Scale Unit (self-hosted)
@@ -34,12 +34,12 @@ This article explains how you can use self-service to configure a Commerce Scale
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new application ID (client ID) and key (secret) for each store that is created. This step requires a new Web app.
 
-1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration.
+1. Generate a Microsoft Microsoft Entra app registration to create an application ID (client ID) and key (secret). For instructions, see [Create a Microsoft Entra application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This article reviews Azure user permissions and requirements, and explains how to generate an app registration.
 
     > [!IMPORTANT]
     > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md).
 
-2. After an application ID (client ID) and key are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2. After an application ID (client ID) and key are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Microsoft Entra applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Commerce Scale Unit
 
@@ -129,7 +129,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
     >
     > For on-premises deployments, the configuration file (at this time) requires manual editing:
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
-    > - AADTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
+    > - Microsoft Entra IDTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
     > - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
     > - TransactionServiceAzureResource should have the base URL value of the **StoreSystemAosUrl** edited as shown above. For instance, based on the above example `https://myContosoURL.com` would be used as the value, removing the **/namespaces/AXSF/** portion of the URL.
 
@@ -199,9 +199,9 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
     > [!NOTE]
     > - The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must be entered in the **Host name** field for the selected Store system entry.
 
-8. Enter the application ID (client ID) and key (secret) that are associated with this Commerce Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of the page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure, so that Retail Cloud POS can be used on-premises. If you are installing Commerce Scale Unit for use with an on-premises environment, you must clear this option.
+8. Enter the application ID (client ID) and key (secret) that are associated with this Commerce Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of the page is selected. This configuration requests Microsoft Entra sign-in and automatically generates all required information in Azure, so that Retail Cloud POS can be used on-premises. If you are installing Commerce Scale Unit for use with an on-premises environment, you must clear this option.
 
-    For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application).
+    For information about how to create web applications in Azure, see [Create a Microsoft Entra application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application).
 
     > [!IMPORTANT]
     > - When installing Commerce Scale Unit for use with an on-premises environment, Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
@@ -218,7 +218,7 @@ The last steps require validation and verification that the Azure application ID
 
 1. After the application ID (client ID) and key (secret) are created for Commerce Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Headquarters.
 
-    In Headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+    In Headquarters, go to **System administration** &gt; **Setup** &gt; **Microsoft Entra applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 2. If Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Commerce shared parameters** page in Commerce.
 
@@ -271,7 +271,7 @@ The last steps require validation and verification that the Azure application ID
 >   - Retail Store Scale Unit Retail Server for Cloud POS
 >
 > - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Commerce Scale Unit installation (for example, CommerceScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
-> - The application ID (client ID) of the manually created web application has been added to the **Azure Active Directory applications** page in Commerce, as explained in step 1 of the preceding procedure.
+> - The application ID (client ID) of the manually created web application has been added to the **Microsoft Entra applications** page in Commerce, as explained in step 1 of the preceding procedure.
 > - The Cloud POS application ID (client ID) that was shown at the end of the Commerce Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the "Run the Commerce Scale Unit installer" section.
 
 ### Multiple-computer installation
@@ -288,7 +288,7 @@ On the first computer, run the Commerce Scale Unit self-service installer as des
     > You can use a generated service account for Async Client, because Async Client won't be accessed outside the computer that it's installed on.
 
 2. Enter the client ID and key (secret). Keep these details available, so that you can use them again on the second computer.
-3. After a client ID and key (secret) are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+3. After a client ID and key (secret) are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Microsoft Entra applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 4. When setup is successful, start SQL Server Configuration Manager.
 5. Go to **SQL Server Network Configuration** &gt; **Protocols** for the SQL Server instance.
 6. Right-click, and then select **Properties**.
@@ -324,9 +324,9 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
     > [!IMPORTANT]
     > It's critical that you add this Client ID to Commerce headquarters as described earlier.
 
-4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps.
+4. Select **Configure Cloud POS**, and then enter Microsoft Entra credentials that have the correct permissions to create Azure Web Apps.
 
-    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). Note that the sign-in URL and the App ID URI are not important.
+    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). Note that the sign-in URL and the App ID URI are not important.
 
 5. When setup is successful, don't exit the installer.
 
@@ -401,7 +401,7 @@ Here is a checklist of things to verify:
 
 1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.  Validate that there is no trailing or additional slash (the character **/**) in the URL or at the end of it.
 2. In Commerce, on the **Commerce shared parameters** page, verify that the correct client ID has been added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry has been added to the **Server resource IDs** FastTab.
-3. In Commerce, verify that every client ID that was generated for each store exists on the **Azure Active Directory applications** page.
+3. In Commerce, verify that every client ID that was generated for each store exists on the **Microsoft Entra applications** page.
 4. In Commerce, on the **Channel profile** page, verify that the URLs are correct. To do this, verify that the computer name in each URL is correct, the URL is correctly formatted, and so on.
 5. In Commerce, on the **Channel database** page, verify that full synchronization correctly occurred for the new channel database.
 6. Verify that the store is correctly configured to use the new channel database.

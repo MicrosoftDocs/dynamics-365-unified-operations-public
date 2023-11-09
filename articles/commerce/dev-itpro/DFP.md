@@ -99,7 +99,7 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
 
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce parameters**.
 2. On the **Dynamics Fraud Protection** tab, set the **Enable Dynamics Fraud Protection integration** option to **Yes**.
-3. On the **Configuration** FastTab, add the Azure Active Directory (Azure AD) client ID, and then select the name of the Key Vault secret that you configured earlier.
+3. On the **Configuration** FastTab, add the Microsoft Entra client ID, and then select the name of the Key Vault secret that you configured earlier.
 
     By default, the **Assessment type** field is set to **Evaluate**. In this case, Fraud Protection will passively check orders for fraud but won't actively reject orders. Therefore, merchants can compare Fraud Protection risk assessments with their current fraud tools to understand the impact of Fraud Protection on acceptance rates.
 

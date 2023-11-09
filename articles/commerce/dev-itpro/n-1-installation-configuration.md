@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
+ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
 ---
 
 # Phased Rollout (N-1) installation, configuration, and cutover guide
@@ -35,7 +35,7 @@ This article explains how to set up Phased Rollout (N-1) components so that your
 
 The sections in this article describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Set up Azure AD accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Headquarters.
+- **[Set up Microsoft Entra accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Microsoft Entra accounts that the N-1 components use to connect to Headquarters.
 - **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Headquarters.
 - **[Install N-1 components](#install-n-1-components)** – This section explains how to download and install N-1 components in the existing AX 2012 R3 environment.
 - **[Cutover steps to switch to N-1](#cutover-steps-to-switch-to-n-1)** – This section explains how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Headquarters.
@@ -58,13 +58,13 @@ Before you start to configure and install the N-1 components, make sure that the
     > [!NOTE]
     > If the key isn't turned on, contact Microsoft Support for help turning it on.
 
-## Set up Azure AD accounts
+## Set up Microsoft Entra accounts
 
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
-1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
-2. After you've finished creating the client ID and secret, the client ID must be accepted in Commerce. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create a Microsoft Entra application" section in [Create a Microsoft Entra Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+2. After you've finished creating the client ID and secret, the client ID must be accepted in Commerce. Go to **System administration \> Setup \> Microsoft Entra applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure N-1 components
 
@@ -258,10 +258,10 @@ When you're ready, follow these steps to download and install the component.
     4. Select **Install**.
 
     > [!NOTE]
-    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Microsoft Entra ID" section in [Create a Microsoft Entra Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal).
     > - When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
-5. After an application ID (client ID) and secret are created, the application ID must be accepted in Commerce. Go to **Retail and Commerce \> Headquarters setup \> Azure Active Directory applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+5. After an application ID (client ID) and secret are created, the application ID must be accepted in Commerce. Go to **Retail and Commerce \> Headquarters setup \> Microsoft Entra applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 6. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 7. On the **Identity Providers** tab, select the provider that has an **Issuer** value that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are automatically set, based on your selection.
 8. On the **Relying parties** FastTab, select **Add**. Enter the application ID (client ID) that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
@@ -286,7 +286,7 @@ When you're ready, follow these steps to download and install the component.
 
     5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select **Install**.
 
-        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Microsoft Entra ID" section in [Create a Microsoft Entra Application](/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 ## Cutover steps to switch to N-1
 
@@ -300,7 +300,7 @@ Follow these steps to prepare your environment for the cutover.
 |---|---|---|
 | 1. Deploy Headquarters. | Headquarters is up and running. Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
 | 2. Install the Commerce application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
-| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
+| 3. Set up Microsoft Entra accounts. | Follow the instructions in the [Set up Microsoft Entra accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
 | 4. Configure Headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
 | 5. Configure Headquarters. | Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**, select the **Security** tab, and change the value in **TS password encryption name** to "SHA256". |
 | 6. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately turned off to ensure that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |

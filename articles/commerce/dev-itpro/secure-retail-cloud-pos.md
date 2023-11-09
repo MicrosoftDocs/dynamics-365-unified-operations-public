@@ -27,7 +27,7 @@ Store Commerce for web is a web application that runs in the context of a web br
 ## Hardening instructions for a Store Commerce for web computer
 
 >[!NOTE]
->Removing Reply URLs or Service Principals will break operations related to AAD in Store Commerce in the browser.
+>Removing Reply URLs or Service Principals will break operations related to Microsoft Entra in Store Commerce in the browser.
 
 Here are some of the defense-in-depth recommendations for the operating system and/or browser that will have an activated instance of Store Commerce for web. The settings should be enabled or set by a high-privileged account for the operating system. Store Commerce for web should be used by a low-privileged account that can't override those settings. We recommend that you enable all the following settings. Otherwise, you could create a security loophole that will be prone to security exploitation.
 
@@ -334,7 +334,7 @@ The following table lists the group policies to enable kiosk mode. The set of po
 You can define a list of websites that a store worker (cashier) requires for normal operations, and set up an administrator-controlled proxy that has access only to these websites. Store Commerce for web requires access to the following websites:
 
 - Store Commerce for web website
-- Microsoft Azure Active Directory sign-in page
+- Microsoft Entra ID sign-in page
 - Commerce Scale Unit website
 - Bing Maps resources
 - Media resources

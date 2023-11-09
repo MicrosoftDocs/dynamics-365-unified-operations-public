@@ -72,8 +72,8 @@ On the **Key Vault parameters** page, you must specify the following parameters 
 
 - **Name** and **Description** – The name and description of the Key Vault storage account.
 - **Key Vault URL** – The URL of the Key Vault storage account.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage account for authentication purposes. This client should have access to read secrets from the storage account.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage account.
+- **Key Vault client** – An interactive client ID of the Microsoft Entra application that is associated with the Key Vault storage account for authentication purposes. This client should have access to read secrets from the storage account.
+- **Key Vault secret key** – A secret key that is associated with the Microsoft Entra application that is used for authentication in the Key Vault storage account.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
 For more information, see [Set up the Azure Key Vault client](../../../finance/localizations/global/setting-up-azure-key-vault-client.md).

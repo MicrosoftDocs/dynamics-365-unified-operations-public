@@ -225,7 +225,7 @@ You can create dynamic page mocks that mimic live e-Commerce site pages and can 
 The raw JavaScript Object Notation (JSON) structure of any live e-Commerce page can be captured and saved so that it can be used as a page mock. Open the e-Commerce site page that you want to capture, and sign in if the signed-in state is desired. Next, append the query string parameter `?item=nodeserviceproxy:true` to the page URL, and then reload the page to obtain the JSON of the raw page context.
 
 > [!NOTE]
-> For this operation to work, you must have secure Azure Active Directory (Azure AD) access to your production site, and you might be prompted to sign in if you aren't already signed. Use the same Azure AD account that you use to sign in to Commerce site builder.
+> For this operation to work, you must have secure Microsoft Entra access to your production site, and you might be prompted to sign in if you aren't already signed. Use the same Microsoft Entra account that you use to sign in to Commerce site builder.
 
 Next, in your development environment, create a new page mock JSON file under the **src/pageMocks** directory. Paste in the JSON file that you obtained from the capture and save operation. 
 

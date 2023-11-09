@@ -25,7 +25,7 @@ ms.search.form:
 
 This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 
-To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Azure Active Directory (Azure AD). You first assign a new or existing security group from Azure AD to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
+To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Microsoft Entra ID. You first assign a new or existing security group from Microsoft Entra to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
 
 ## Overview of roles in the authoring environment
 

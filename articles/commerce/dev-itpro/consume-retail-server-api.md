@@ -42,7 +42,7 @@ Access to each API is natively restricted according to the following roles:
 
 - **Employee** – Access to APIs that are associated with this role requires point of sale (POS) device activation (a device token) and an authenticated employee.
 - **Customer** – Access to APIs that are associated with this role requires an authenticated customer. E-Commerce sites generally use these APIs for operations such as retrieving order history and changing customer details.
-- **Application** – Access to APIs that are associated with this role requires application-level authentication, such as Azure Active Directory (Azure AD) service-to-service authentication.
+- **Application** – Access to APIs that are associated with this role requires application-level authentication, such as Microsoft Entra service-to-service authentication.
 - **Anonymous** – APIs that are associated with this role are primarily used by e-Commerce sites without user authentication.
 - **Customized APIs** – Access to APIs that are associated with this role can be restricted by using methods such as POS device activation, customer authentication, and anonymous authentication.
 
@@ -62,7 +62,7 @@ Application registration establishes a trust relationship between your app and t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. If you have access to multiple tenants, use the **Directory + subscription** filter on the top menu to select the tenant that you want to register an application in.
-3. Search for and select **Azure Active Directory**.
+3. Search for and select **Microsoft Entra ID**.
 4. Under **Manage**, select **App registrations**, and then select **New registration**.
 5. Enter a name for your application. Users of your app might see this name, and you can change it later.
 6. Specify who can use this application as **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
@@ -97,7 +97,7 @@ The client secret is also known as an *application password*. It's a string valu
 ## Register the app in the finance and operations app so that Retail Server trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
-2. On the **Identity providers** FastTab, select the provider with type `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
+2. On the **Identity providers** FastTab, select the provider with type `Microsoft Entra ID`. The values on the **Relying parties** FastTab are set based on your selection.
 3. On the **Relying parties** FastTab, select **Add**. Enter the client ID that was generated during the client app registration (not the headless Commerce app). Set the **Type** field to **Confidential** and the **UserType** field to **Application**.
 4. On the Action Pane, select **Save**.
 5. Select the new relying party, and then on the **Server resource IDs** FastTab, select **Add**. In the **Server Resource ID** column, enter the Application ID URI (this is the API URI generated during the Retail Server app registration).
@@ -265,4 +265,3 @@ After the request has finished running, the response body will contain the custo
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

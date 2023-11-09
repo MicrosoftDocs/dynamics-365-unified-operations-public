@@ -75,7 +75,7 @@ You can add new channels by selecting **Add a channel**. To add new languages to
 
 ## Set up an Azure B2C tenant
 
-Dynamics 365 Commerce uses Azure Active Directory (Azure AD) business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
+Dynamics 365 Commerce uses Microsoft Entra business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
 
 ## Overview of the default site pages
 

@@ -86,7 +86,7 @@ To create a new website, follow these steps.
 2. Enter the following required information for the new website:
 
     - **Site name** – Enter the name of the website. This name isn't shown to website customers. Instead, it's used in the site list and other places in the authoring tool.
-    - **Site administers security group** – Enter the full name of the Microsoft Azure Active Directory (Azure AD) security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
+    - **Site administers security group** – Enter the full name of the Microsoft Microsoft Entra security group that contains the users who should have administrative access to the website. The admin group name, together with the other permissions for the website, can be changed after the website is created.
     - **Default channel** – Enter the default merchandizing channel that should be associated with the website. The default channel determines the products that can be sold through the website.
     - **Default language** – After you specify the default channel, select the default language for the channel. The default channel defines the language that products are shown in if the customer doesn't specify a preferred language.
     - **Default market** – Enter the default market for the website. The default market defines the market that is shown if the customer doesn't specify a preferred market.

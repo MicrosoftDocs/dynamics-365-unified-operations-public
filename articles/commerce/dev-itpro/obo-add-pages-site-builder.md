@@ -75,6 +75,6 @@ For the OBO scenario, a header should contain both the name of the account manag
 
 ## Additional resources
 
-[Create and configure an Azure AD application for account manager sign-in](obo-create-aad-application.md)
+[Create and configure a Microsoft Entra application for account manager sign-in](obo-create-aad-application.md)
 
 [Set up on behalf of (OBO) functionality](obo-configure-hq.md)

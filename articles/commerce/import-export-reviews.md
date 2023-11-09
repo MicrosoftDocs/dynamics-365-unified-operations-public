@@ -40,7 +40,7 @@ To import ratings and reviews data from your existing system into Commerce, you 
 To import ratings and reviews into Commerce by using the Dynamics 365 Ratings and Reviews Power Automate connector, follow these steps.
 
 1. Select the **Submit User Review** action.
-1. Establish a connection by using the Azure Active Directory (Azure AD) app information that was created when you configured S2S authentication. For more information, see [Configure service-to-service authentication](service-to-service-auth.md).
+1. Establish a connection by using the Microsoft Entra app information that was created when you configured S2S authentication. For more information, see [Configure service-to-service authentication](service-to-service-auth.md).
 1. The **Submit User Review** action takes one review at a time. Therefore, repeat the action. Use the source reviews as a list to submit bulk reviews.
 	
 ## Export ratings and reviews
