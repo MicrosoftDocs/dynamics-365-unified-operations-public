@@ -20,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom:
 ms.search.region: Global
 # ms.search.industry:
-ms.author: richdi
+ms.author: cabeln
 ms.search.validFrom: 2023-11-15
 ms.dyn365.ops.version: Platform update 62
 ---
