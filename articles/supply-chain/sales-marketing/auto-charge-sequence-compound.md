@@ -1,5 +1,5 @@
 ---
-title: Auto charge compounding and sequencing
+title: Auto-charge compounding and sequencing
 description: Advanced auto charges enable you to compound header charges for sales quotations and sales orders. They also let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders. 
 author: Henrikan
 ms.author: henrikan
@@ -12,10 +12,13 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Auto charge compounding and sequencing
+# Auto-charge compounding and sequencing
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!--KFM: Preview until 10.0.38 GA -->
+<!--KFM: NOTE: I moved this and the other two new topics to the sales folder and also listed them only under sales in the TOC. Agree? -->
 
 Advanced auto charges let you apply specific charges to order headers and order lines based on which customer you're working with and/or which items you're selling. For sales quotations and sales orders, you can also choose to compound header charges.
 
@@ -34,9 +37,9 @@ To use this feature, your system must meet the following requirements:
 
 The *Sequence and compound for customer charges* adds new settings to the **Accounts receivable parameters** page to control the compounding. It also adds the columns **Sequence**, **Compound**, and **Position** for header charges on sales quotations and sales orders.  
 
-## <a name="set-up-comp-seq"></a>Set up auto charge compounding and sequencing
+## <a name="set-up-comp-seq"></a>Set up auto-charge compounding and sequencing
 
-To set up auto charge compounding and sequencing, follow these steps:
+To set up auto-charge compounding and sequencing, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
@@ -50,9 +53,9 @@ To set up auto charge compounding and sequencing, follow these steps:
 
 Examples of how these settings will effect your calculations are given in the various example scenarios provided later in this article.
 
-## <a name="scenario1"></a>Example scenario 1: Work with auto charge compounding and sequencing
+## <a name="scenario1"></a>Example scenario 1: Work with auto-charge compounding and sequencing
 
-This section provides an example scenario, based on the standard demo data, that shows how auto charge compounding and sequencing works.
+This section provides an example scenario, based on the standard demo data, that shows how auto-charge compounding and sequencing works.
 
 ### Enable demo data
 
@@ -161,7 +164,7 @@ As we saw in [Example scenario 1](#scenario1), charge settings on the **Maintain
 
 When the system calculates the value of a charge with a **Category** of *Percent*, it applies the defined percentage to the *value base* calculated so far at that position of the calculation. The value base can consist of the net amount across all order lines or the net amount across all order lines including line changes, both with or without sales taxes.
 
-The following examples show how the **Value base for header charges** option set on the **Accounts receivable parameters** page can impact your calculations. This setting is also described in the [Set up auto charge compounding and sequencing](#set-up-comp-seq) section.
+The following examples show how the **Value base for header charges** option set on the **Accounts receivable parameters** page can impact your calculations. This setting is also described in the [Set up auto-charge compounding and sequencing](#set-up-comp-seq) section.
 
 ### Sum of line amounts only
 

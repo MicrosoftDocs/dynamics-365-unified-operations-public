@@ -160,10 +160,13 @@ After your charges codes are set up, follow these steps to define the auto charg
     - **Site** and **Warehouse** – Specify a site and warehouse if charges should be applied only for a specific site and warehouse.
     - **Keep** – Select this check box to keep the charges transactions after invoicing is completed, so that the charge will be applied every time that you create a new invoice for the selected customer account.
 
-   **For sales orders only:** If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
+*For sales orders only:* If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
 
 > [!NOTE]
-> To turn on the functionality for working working with sequence and compound on header level charges, you need to enable the feature 'Sequence and compound for customer charges' in feature management. For more information see [link to new page for Sequence and compound]. To turn on the functionality for working with line level charges category types specific unit and specific unit match, you need to enable the feature 'Unit of measure for line level charges' in feature management. For more information see [link to new page for Unit of measure for line level charges].
+> Supply Chain Management provides the following optional functionality for calculating auto charges. You might need to enable and configure these features before you can use them. Follow the links for details.
+>
+> - [Auto-charge compounding and sequencing](auto-charge-sequence-compound.md)
+> - [Units of measure for line-level charges](line-charges-specific-unit.md)
 
 ## Allocate charges from the header to a line
 
@@ -187,12 +190,11 @@ The following procedure shows how to allocate header-level charges to a line. Be
     - **Allocate all** – Select this check box to allocate charges to order lines even if the charges code has a debit type other than *Item*.
     - **Received** – Select this check box to allocate charges only to received order lines.
     - **Stocked** – Select this check box to allocate charges to only inventoried order lines.
-    - **Show selections and clear specific lines** – Select this check box to exclude specific lines from this allocation. When you select this check box, the **Choose lines to exclude from allocation** grid is opened. This grid includes only lines that match the criteria that are defined by the **Allocate charges to lines** and **Stocked** settings. For example, if you set the **Allocate charges to lines** field to *Positive lines* and select the **Stocked** check box, the grid shows only lines that are both positive and inventoried. In addition, the grid automatically filters out any lines that the full quantity has already been received for. While the grid is open, clear the **Include** check box for each line that should be excluded from allocation. 
+    - **Show selections and clear specific lines** – Select this check box to exclude specific lines from this allocation. When you select this check box, the **Choose lines to exclude from allocation** grid is opened. This grid includes only lines that match the criteria that are defined by the **Allocate charges to lines** and **Stocked** settings. For example, if you set the **Allocate charges to lines** field to *Positive lines* and select the **Stocked** check box, the grid shows only lines that are both positive and inventoried. In addition, the grid automatically filters out any lines that the full quantity has already been received for. While the grid is open, clear the **Include** check box for each line that should be excluded from allocation.
 
     > [!IMPORTANT]
     > When you work with the **Choose lines to exclude from allocation** grid, be sure to leave the grid open until you select **Allocate**. If you close the grid before you select **Allocate**, your settings in the grid will be lost. Therefore, charges will be allocated based on the criteria that you previously defined.
 
 1. Select **Allocate** to apply your settings and close the dialog box.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
