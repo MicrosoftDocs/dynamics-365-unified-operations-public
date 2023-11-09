@@ -108,12 +108,12 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
    ```
    
     > [!IMPORTANT]
-    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you may need to manually start the replication on during downtime hours. 
+    > Tables specified in the SpecialTables file, will be added to a dedicated publisher. The number of special table publishers is based on the NumberOfPublishers parameter, see the step below. Special table handling can be useful for very large tables that you might need to manually start the replication on during downtime hours. 
     
 9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
-    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there can be situations where you may want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, in conjunction with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
+    - **NumberOfPublishers** – By default, this parameter is set to **4**. The recommendation is to use this value. However, there might be situations where you want to increase the number of publishers, to distribute smaller numbers of tables to each publisher. This change, in conjunction with the manual snapshot start, lets you run smaller initial snapshots, which can be useful if you have limited maintenance windows and must split the startup of the replication over several.  
     - **snapshotPostPublication** – This option will add in a 5-minute delay between automatic snapshot processes starting, that can assist with loads on the source server. The toolkit also allows for manual snapshot starts, if you choose that option, you don't need to set this. 
 
 
