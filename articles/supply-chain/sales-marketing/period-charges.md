@@ -123,7 +123,7 @@ Result: 5 USD quantity threshold minimum amount free text invoice with one invoi
 
 ## Free text invoice
 
-The Calculate period charge process creates one or more free text invoices when shortfalls are found. From the free text invoice details page, a **Line invoice base** page is added on the line action bar. The **Line invoice base** page is available only for a free text invoice created as a result of a period charge calculation. This page can be used to get insight into the basis upon which a speific free text invoice line was created.
+The Calculate period charge process creates one or more free text invoices when shortfalls are found. From the free text invoice details page, a **Line invoice base** page is added on the line action bar. The **Line invoice base** page is available only for a free text invoice created as a result of a period charge calculation. This page can be used to get insight into the basis upon which a specific free text invoice line was created.
 
 1. Click Accounts  **Accounts receivable \> Invoices \> All free text invoices**
 1. Select the free text invoice and click **Edit**.
@@ -131,4 +131,4 @@ The Calculate period charge process creates one or more free text invoices when 
 1. On the **Period charge rule** line fast tab, detail of period charge rule applied on this free text line can be found.  
 1. On the **Lines** fast tab, a summary of the invoice and sales order transactions included in the period charge evaluation for this free text line can be found.
 
-To get more information about free text invoice, see Create a free text invoice. 
+To get more information about free text invoice, see Create a free text invoice.

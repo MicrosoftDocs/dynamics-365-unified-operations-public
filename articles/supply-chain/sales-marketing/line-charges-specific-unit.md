@@ -23,11 +23,11 @@ In addition to create line charges of category *pcs* it is possible to create li
 
 ## Enable specific unit and specific unit match
 
-Enable the feature *Unit of measure for line level charges* in feature management. When this feature is enabled, line charges and auto charges of level line can now be setup with category types *specific unit* and *specific unit match*. *Specific unit* and *Specific unit match* is supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines. 
+Enable the feature *Unit of measure for line level charges* in feature management. When this feature is enabled, line charges and auto charges of level line can now be setup with category types *specific unit* and *specific unit match*. *Specific unit* and *Specific unit match* is supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines.
 
 ## Working with specific unit and specific unit match and auto changes
 
-It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automaticlly through auto charges setup. 
+It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automatically through auto charges setup.
 
 Follow these steps to setup a line charge in auto charges:
 
@@ -38,7 +38,7 @@ Follow these steps to setup a line charge in auto charges:
     - **Account code** – All
     - **Item code** – All
     - **Mode of delivery code** – All
-    - **Charge description** – Enter the apropriate description.
+    - **Charge description** – Enter the appropriate description.
 
 1. On the Action Pane, select **Save**.
 1. In the Lines grid Action ribbon, select **Add** to create the following charge line.
@@ -72,7 +72,7 @@ These charges can now be applied automatically onto a sales quotation line or sa
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New** to create a new sales order
 
-    Create the sales order for customer US-001, or any customer using USD as currency. 
+    Create the sales order for customer US-001, or any customer using USD as currency.
 
 1. Header ribbon **Sell**, **Maintain charges**
 1. Select **Delete** to any charges automatically added from auto charges
@@ -96,11 +96,11 @@ These charges can now be applied automatically onto a sales quotation line or sa
     Notice the amount for **Total Charges**. It contains the following: 5 USD (line charge for case, as the sell unit is case and there is an exact match on the unit) + 12 (line charge for ea; as the sell unit is case, 6 ea:1, the charge of 1 each is applied proportionally to the case (2x6=12) = 17 USD.  
 
     > [!NOTE]
-    > Auto charges setup with specific match and specific unit match are applied to lines when the charge search criteria are met. For specific unit, a charge takes effect on the line resulting in an actual charge calcuation, when unit of measure conversion exists between the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is expressed. the actual charge is calculated proportionally to unit conversion. For specific unit match, a charge takes effect on the line resulting in an actual charge calculation, when the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is the same.
+    > Auto charges setup with specific match and specific unit match are applied to lines when the charge search criteria are met. For specific unit, a charge takes effect on the line resulting in an actual charge calculation, when unit of measure conversion exists between the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is expressed. the actual charge is calculated proportionally to unit conversion. For specific unit match, a charge takes effect on the line resulting in an actual charge calculation, when the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is the same.
 
 ## Working with specific unit and specific unit match on an order line
 
-It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automatically through auto charges setup. 
+It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automatically through auto charges setup.
 
 Follow these steps to manually add a line charge to a purchase order line:
 
