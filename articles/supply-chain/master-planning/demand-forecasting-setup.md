@@ -297,7 +297,7 @@ Pipelines provide a way to start forecasting scripts from Supply Chain Managemen
 An Active Directory application is required to authenticate with the resources that are dedicated to demand forecasting by using service principal. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
 
 1. Sign in to your Azure portal.
-1. Register a new application in the tenant's Azure Active Directory (Azure AD). For instructions, see [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+1. Register a new application in the tenant's Microsoft Entra ID. For instructions, see [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 1. Follow the on-screen instructions as you complete the wizard. Use the default settings.
 1. Give your new Active Directory application access to the following resources that you created in the [Set up machine learning in Azure](#ml-workspace) section. For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This step will enable the system to import and export forecasting data, and to trigger machine learning pipeline runs from Supply Chain Management.
 
@@ -318,7 +318,7 @@ Use the following procedure to connect your Supply Chain Management environment 
 1. On the **Item allocation keys** tab, make sure that the **Forecast generation strategy** field is set to *Azure Machine Learning Service* for each allocation key that should use the Azure Machine Learning Service for demand forecasting.
 1. On the **Azure Machine Learning Service** tab, set the following fields:
 
-    - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Azure Machine Learning Service. You can find your tenant ID on the **Overview** page for Azure AD in the Azure portal.
+    - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Azure Machine Learning Service. You can find your tenant ID on the **Overview** page for Microsoft Entra ID in the Azure portal.
     - **Service principal application ID** – Enter the application ID for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to authorize API requests to Azure Machine Learning Service.
     - **Service principal secret** – Enter the service principal application secret for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard in your Azure workspace. (For more information, see the [Set up machine learning in Azure](#ml-workspace) section.)

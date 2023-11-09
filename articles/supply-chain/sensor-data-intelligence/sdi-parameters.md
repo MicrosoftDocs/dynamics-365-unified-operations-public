@@ -27,7 +27,7 @@ Typically, you will set up your Azure IoT solution and connect it to Microsoft D
 
 1. Go to **System administration \> Setup \> Sensor Data Intelligence \> Sensor Data Intelligence parameters**.
 1. On the **Time series** tab, in the **Redis metric store connection string** field, enter the **Primary connection string (StackExchange.Redis)** value for the Azure IoT solution that you want to connect to. For more information about how to find this value, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).
-1. On the **Integrations** tab, in the **Azure AD application client ID** field, enter the **Client ID** value for the Azure IoT solution you want to connect to. For more information about how to find this value, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).
+1. On the **Integrations** tab, in the **Microsoft Entra application client ID** field, enter the **Client ID** value for the Azure IoT solution you want to connect to. For more information about how to find this value, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).
 
 ## Set the lifetime of alert messages
 
