@@ -37,7 +37,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 ### Reference the imported ER format configurations
 
 1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Vendor invoice** field, select the imported **Vendor Invoice Import (DK)** format.
+2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Vendor invoice** field, select the imported **Vendor Invoice Import** format.
 
 ### Configure the sources to import files in a batch mode
 
@@ -49,7 +49,7 @@ You can configure a SharePoint folder as a source location for incoming vendor i
 4. In the **SharePoint Address** field, select the folder where import files will be located.
 5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
 6. Create a new ER source.
-7. In the **Format** field, select the **Vendor Invoice Import (DK)** format configuration.
+7. In the **Format** field, select the **Vendor Invoice Import** format configuration.
 8. On the **File source** FastTab, in the **Name** field, assign a source name. Then select **Settings**.
 9. On the **Source settings** page, enable the **Sharepoint** option.
 10. In the **Document type for input sources** field, select the document type that you created in step 2.
@@ -122,7 +122,7 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 
 ## Learn more
 
-- [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md)
+- [Supported standards for electronic invoicing in Europe](emea-oioubl-standards-electronic-invoicing.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
