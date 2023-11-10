@@ -2970,7 +2970,7 @@
       - name: Set up and use the production floor execution interface
         items:
         - name: Configure the production floor execution interface
-          href: supply-chain-dev/production-floor-execution-configure.md
+          href: production-control/production-floor-execution-configure.md
         - name: Design the production floor execution interface
           href: production-control/production-floor-execution-tabs.md
         - name: Set up a device to run the production floor execution interface
