@@ -2333,7 +2333,7 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
-        - name: Review and accept changes to confirmed purchase orders
+        - name: Review and accept changes to confirmed purchase orders (preview)
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
@@ -3973,7 +3973,7 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: FAQ for the Confirmed purchase orders with changes workspace
+      - name: FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
     - name: Supply Chain Management development 
       items:
