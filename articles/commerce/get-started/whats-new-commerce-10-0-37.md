@@ -30,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Payments | Aggregated payments workspace in Commerce headquarters | An aggregated **Payments** workspace was added to headquarters workspaces to simplify analysis of payment configurations and comparison of settings across your legal entity. The new workspace provides options to review all call centers, online stores, and retail stores, and provides a view of various payment connector settings.You can adjust and save columns in the grid per saved view, and you can print from the workspace. Payment-related quick links were also added so you can quickly navigate to key configuration pages in Commerce headquarters. | Default |
+| Payments | Aggregated payments workspace in Commerce headquarters | An aggregated **Payments** workspace was added to headquarters workspaces to simplify analysis of payment configurations and comparison of settings across your legal entity. The new workspace provides options to review all call centers, online stores, and retail stores, and provides a view of various payment connector settings. You can adjust and save columns in the grid per saved view, and you can print from the workspace. Payment-related quick links were also added so you can quickly navigate to key configuration pages in Commerce headquarters. | Default |
 
 ## Additional resources
 
@@ -54,7 +54,7 @@ Check out the [Dynamics 365 and industry clouds: 2023 release wave 2 plan](/dyna
 The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
 
