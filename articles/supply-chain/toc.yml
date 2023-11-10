@@ -1773,8 +1773,6 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: Anomaly detection scenario
-          href: sensor-data-intelligence/sdi-scenario-anomaly.md
         - name: Asset downtime scenario
           href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
         - name: Asset maintenance scenario
@@ -2335,7 +2333,7 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
-        - name: Review and accept changes to confirmed purchase orders
+        - name: Review and accept changes to confirmed purchase orders (preview)
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
@@ -2982,7 +2980,7 @@
         - name: Show vacation balances in the production floor execution interface
           href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
-          href: production-control/production-floor-execution-styles.md
+          href: supply-chain-dev/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
           href: supply-chain-dev/production-floor-execution-customize.md
     - name: Rebate management
@@ -3975,10 +3973,8 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: FAQ for the Confirmed purchase orders with changes workspace
+      - name: FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
-      - name: FAQ for the Detect spikes and deviations in sensor data feature
-        href: faq-sdi-spike.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
