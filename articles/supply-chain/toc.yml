@@ -2035,7 +2035,7 @@
         href: demand-planning/time-series.md
       - name: Export and download data
         href: demand-planning/export-data.md
-    - name: Mobile app (Deprecated)
+    - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
         href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
