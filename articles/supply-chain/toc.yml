@@ -2980,7 +2980,7 @@
         - name: Show vacation balances in the production floor execution interface
           href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
-          href: production-control/production-floor-execution-styles.md
+          href: supply-chain-dev/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
           href: supply-chain-dev/production-floor-execution-customize.md
     - name: Rebate management
