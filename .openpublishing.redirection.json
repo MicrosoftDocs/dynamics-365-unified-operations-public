@@ -27361,7 +27361,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md ",
+      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md",
       "redirect_url": "../supply-chain-dev/production-floor-execution-styles",
       "redirect_document_id": false
     },
@@ -27454,6 +27454,16 @@
       "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
       "redirect_url": "/training/dynamics365/finance",
       "redirect_document_id": false
-    },    
+    },
+    {
+      "source_path": "articles/supply-chain/sensor-data-intelligence/sdi-scenario-anomaly.md",
+      "redirect_url": "/dynamics365/supply-chain/sensor-data-intelligence/sdi-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "supply-chain/faq-sdi-spike.md ",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
+    }
   ]
 }

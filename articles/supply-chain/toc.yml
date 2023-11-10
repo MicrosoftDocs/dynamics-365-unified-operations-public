@@ -1773,8 +1773,6 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: Anomaly detection scenario
-          href: sensor-data-intelligence/sdi-scenario-anomaly.md
         - name: Asset downtime scenario
           href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
         - name: Asset maintenance scenario
@@ -2972,7 +2970,7 @@
       - name: Set up and use the production floor execution interface
         items:
         - name: Configure the production floor execution interface
-          href: production-control/production-floor-execution-configure.md
+          href: supply-chain-dev/production-floor-execution-configure.md
         - name: Design the production floor execution interface
           href: production-control/production-floor-execution-tabs.md
         - name: Set up a device to run the production floor execution interface
@@ -3977,8 +3975,6 @@
         href: responsible-ai-overview.md
       - name: FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
-      - name: FAQ for the Detect spikes and deviations in sensor data feature
-        href: faq-sdi-spike.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
