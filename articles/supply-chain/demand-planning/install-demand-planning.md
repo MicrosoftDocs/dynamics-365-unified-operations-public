@@ -1,5 +1,5 @@
 ---
-title: Install, enable, and set up the Demand planning app
+title: Install, enable, and set up the Demand planning app (preview)
 description: This article describes how to install, enable, and set up the Demand planning app for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Install, enable, and set up the Demand planning app
+# Install, enable, and set up the Demand planning app (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

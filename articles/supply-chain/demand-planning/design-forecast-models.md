@@ -1,5 +1,5 @@
 ---
-title: Design forecast models
+title: Design forecast models (preview)
 description: This article provides information about forecast models. These models let you arrange and configure tiles to define the forecast that is made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Design forecast models
+# Design forecast models (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

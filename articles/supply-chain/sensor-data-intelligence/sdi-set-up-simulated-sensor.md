@@ -1,5 +1,5 @@
 ---
-title: Set up a simulated sensor for testing
+title: Set up a simulated sensor for testing (preview)
 description: This article describes how to set up a simulator that you can use to test Sensor Data Intelligence without installing any physical sensors.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Set up a simulated sensor for testing
+# Set up a simulated sensor for testing (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

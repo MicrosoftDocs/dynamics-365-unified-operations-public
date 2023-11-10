@@ -1,5 +1,5 @@
 ---
-title: Sensor Data Intelligence home page
+title: Sensor Data Intelligence home page (preview)
 description: This article provides an overview of Sensor Data Intelligence. Organizations can use this feature to drive business processes in Microsoft Dynamics 365 Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Sensor Data Intelligence home page
+# Sensor Data Intelligence home page (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -28,6 +28,8 @@ Sensor Data Intelligence lets you perform the following tasks:
 - Set up the solution by using a simple onboarding wizard instead of manually installing and configuring components in Microsoft Dynamics Lifecycle Services (LCS).
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Business scenarios
 
