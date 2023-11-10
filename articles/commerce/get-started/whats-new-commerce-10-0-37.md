@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Commerce version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md). 
+Microsoft Dynamics 365 Commerce version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md). 
   
 
 ### Bug fixes
