@@ -1,34 +1,33 @@
 ---
-title: Vendor electronic invoice import in Denmark
-description: This article explains how to configure and use vendor electronic invoice import for Denmark in Microsoft Dynamics 365 Finance.
+title: Vendor electronic invoice import in PEPPOL format
+description: This article explains how to configure and use vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 10/13/2023
+ms.date: 11/10/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
-ms.search.region: Denmark
+ms.search.region: Europe
 ms.author: ikondratenko
-ms.search.validFrom: 2023-11-03
-ms.dyn365.ops.version: AX 10.0.38
-ms.custom: 853863
+ms.search.validFrom: 2023-01-01
+ms.dyn365.ops.version: AX 10.0.32
+ms.custom: 
 ms.assetid: 
 ms.search.form: 
 ---
 
-# Vendor electronic invoice import in Denmark
+# Vendor electronic invoice import in PEPPOL format
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and use vendor electronic invoice import for Denmark from the country-specific **OIOUBL** format in Microsoft Dynamics 365 Finance.
+This article explains how to configure and use vendor electronic invoice import for **Pan-European Public Procurement Online** ([PEPPOL](https://peppol.org/)) format in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
-- The primary address of the legal entity must be in Denmark.
-- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import (DK)** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
