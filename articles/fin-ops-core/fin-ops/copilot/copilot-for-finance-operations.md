@@ -1,26 +1,21 @@
 ---
-title: Microsoft Copilot for finance and operations apps (Preview)
+title: Microsoft Copilot for finance and operations apps overview (preview)
 description: This article provides information about Microsoft Copilot for finance and operations apps and explains how to use it.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
+ms.topic: overview
 ms.date: 11/09/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Microsoft Copilot for finance and operations apps (Preview)
+# Microsoft Copilot for finance and operations apps overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-> [!IMPORTANT]
-> The Microsoft Copilot functionality that's described in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
->
-> To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
+[This article is prerelease documentation and is subject to change.]
 
 Microsoft Copilot for finance and operations apps gives users access to AI capabilities that augment the application experiences and functionality.
 
@@ -29,6 +24,13 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 - **Sidecar** – The Copilot sits alongside the application as a *sidecar* and provides conversational support to the user. The sidecar is the primary Copilot interface in finance and operations apps. It provides a natural language chat experience that helps users work with application functionality and data.
 - **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
 - **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [FAQ for finance and operations data on Microsoft 365 Copilot (Preview)](../../dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md).
+
+> [!IMPORTANT]
+>
+> - The Microsoft Copilot functionality that's described in this article is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> - To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 ## Generative help and guidance
 

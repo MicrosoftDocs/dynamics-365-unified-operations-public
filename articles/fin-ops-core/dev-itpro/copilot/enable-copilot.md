@@ -1,5 +1,5 @@
 ---
-title: Enable Microsoft Copilot for finance and operations apps (Preview)
+title: Enable Microsoft Copilot for finance and operations apps (preview)
 description: This article provides instructions for administrators on how to enable Copilot for generative help and guidance for Microsoft finance and operations apps
 author: cabeln
 ms.author: cabeln
@@ -12,21 +12,21 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Enable Microsoft Copilot for finance and operations apps (Preview)
+# Enable Microsoft Copilot for finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[This article is prerelease documentation and is subject to change.]
 
 Microsoft Copilot for finance and operations apps brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
 
 This article describes how to enable Copilot for finance and operations apps.
 
 > [!IMPORTANT]
-> The Copilot functionality that's described in this article is available as part of a preview release. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
-> To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
->
-> During the preview phase, Copilot functionality can be enabled only for environments on tenants that are hosted in the United States.
+> - The Microsoft Copilot functionality that's described in this article is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> - To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 ## Prerequisites
 
