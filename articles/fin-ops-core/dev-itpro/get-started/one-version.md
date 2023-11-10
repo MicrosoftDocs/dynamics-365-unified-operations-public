@@ -82,7 +82,7 @@ Yes. To enable version 10.0.38 to act as a transition release, some release mile
 
 ### Can the updates be delayed? What's the policy?
 
-Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 auto-update, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see [Is the change from the maximum of three pauses to one already in effect?](#is-the-change-from-three-maximum-pauses-to-one-already-in-effect) earlier in this FAQ.
+Yes, customers can pause, delay, or opt out of an update by using the update settings in Lifecycle Services projects. As of the April 2024 auto-update, customers can choose to pause one update. Before April 2024, the number of pauses that are available to a customer depends on that customer's release version relative to the latest version. For more information, see [Is the change from the maximum of three pauses to one already in effect?](#is-the-change-from-three-maximum-pauses-to-one-already-in-effect?) earlier in this FAQ.
 
 For information about how to pause an update, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
