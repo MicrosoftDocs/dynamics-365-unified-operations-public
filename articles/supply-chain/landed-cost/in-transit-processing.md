@@ -144,7 +144,7 @@ The configuration settings for these processes resemble the settings for the [pu
 
 #### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->
 
 Workers using the Warehouse Management mobile app can register the receipt of goods in transit even when multiple orders are associated with the same voyage, container, item number, and purchase order number. To do so, the worker starts by entering the voyage, container, item, and order numbers, and can then select the relevant goods-in-transit order from a drop-down list.
@@ -158,15 +158,19 @@ This functionality is available in the following types of mobile device menu ite
 
 Both options provide flexibility and control over the selection of goods-in-transit orders, ensuring accurate and efficient handling of incoming inventory.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 #### <a name="batch-serial"></a>Assign batch/serial numbers when receiving with a mobile device (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->
 
 Workers using the Warehouse Management mobile app can register batch/serial numbers when receiving goods-in-transit orders that include items enabled for batch/serial number tracking. The system consolidates the received quantity for each batch/serial number into one work process and automatically assigns the numbers to the received items.
 
 > [!NOTE]
 > The system doesn't support [under deliveries](over-under-transactions.md) of batch/serial numbered items because the under-delivery process is fully automated and doesn't allow for the manual interaction required to register the batch/serial numbers.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Location directives
 

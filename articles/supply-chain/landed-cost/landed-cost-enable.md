@@ -21,7 +21,13 @@ ms.custom: bap-template
 
 This article describes how to turn the **Landed cost** module and its optional related features on or off.
 
-The following table describes the *Landed cost* feature and each of its available add-on features. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of each feature and turn it on as needed. In the **Feature management** workspace in Microsoft Dynamics 365 Supply Chain Management, every feature in this table is listed under the **Transportation management** module.
+> [!IMPORTANT]
+>
+> - Some of the features described in this article are preview features. The content and the functionality described in this article are subject to change.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+The following table describes the *Landed cost* feature and each of its available add-on features. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of each feature and turn it on as needed. In the **Feature management** workspace in Microsoft Dynamics 365 Supply Chain Management, every feature in this table is listed under the **Transportation management** module. Preview features are marked as such; other features are generally available.
 
 | Feature name and requirements | Feature description |
 |---|---|

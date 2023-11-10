@@ -31,6 +31,8 @@ For more information about Power Automate Process Mining, see [Overview of Power
 
 This article describes what's included in the *Warehouse material movement analysis* template, and explains how to deploy and access Power Automate Process Mining processes.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Prerequisites
 
 The *Warehouse material movement analysis* template for Power Automate Process Mining has the following prerequisites:

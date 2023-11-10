@@ -23,6 +23,8 @@ ms.custom: bap-template
 
 The integration of Supply Chain Management WMS functionality with external ERP and ordering systems is made possible by lightweight source documents that are dedicated to inbound and outbound shipment orders. Because these documents focus exclusively on warehouse management, they can replace multiple types of more general-purpose documents (such as sales orders, purchase orders, and transfer orders) from a pure warehouse management perspective.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Deployment options
 
 Warehouse management only mode provides several deployment options to support the business needs of running your [warehouse management](warehouse-management-overview.md) processes.

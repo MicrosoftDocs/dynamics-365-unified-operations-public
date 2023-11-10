@@ -32,6 +32,8 @@ The Demand planning app provides the following capabilities:
 - **Effective collaboration throughout the planning cycle**. This capability is enabled through Microsoft Teams in-context communication, in-product commenting, and restorable versions of forecast values throughout the planning process.
 - **Increased agility through integrated planning and execution flow** with native integration with Supply Chain Management, customizable worksheets, and exception-based planning.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## The demand planning process
 
 The Demand planning app provides functionality for the complete demand planning process. This process has the following steps:

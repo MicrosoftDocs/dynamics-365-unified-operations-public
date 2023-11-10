@@ -21,6 +21,8 @@ ms.custom: bap-template
 
 This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.
 
+[!INCLUDE [preview-note](../../includes/preview-note.md)]
+
 ## Prerequisites
 
 Before you can use this feature, your system must meet the following requirements:

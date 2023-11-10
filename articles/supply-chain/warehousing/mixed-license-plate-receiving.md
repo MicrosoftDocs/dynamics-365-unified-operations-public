@@ -68,7 +68,7 @@ The following options for identifying the source document lines are available:
 
 ## <a name="deferred-receiving-processing"></a>Deferred receiving processing (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
 <!-- KFM: Preview until 10.0.38 GA -->
 
@@ -81,6 +81,8 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Transfer order item receiving*
 - *Transfer order line receiving*
 - *Load item receiving*
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Prerequisites
 

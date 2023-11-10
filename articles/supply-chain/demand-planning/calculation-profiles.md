@@ -29,6 +29,8 @@ Here are some examples of purposes that you might use calculations for:
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to generate new calculated time series as they require.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## View and run existing calculation profiles
 
 You have to run a calculation profile only as often as you import new data into the relevant tables. Some profiles must be run only occasionally, whereas others must be run almost every time that a user works with the app.

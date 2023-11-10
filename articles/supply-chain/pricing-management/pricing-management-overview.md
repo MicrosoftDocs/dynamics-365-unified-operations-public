@@ -40,6 +40,8 @@ Supply Chain Management uses the [Commerce Scale Unit (CSU) Core](../../commerce
 - Use enhanced discount budget controls to help avoid margin leakage from fund consumption.
 - Use the [CSU-based pricing API](../../commerce/pricing-apis.md) for Dynamics 365 Commerce to enable pricing calculations to be retrieved by a native Commerce point of sale (POS) system and/or consumed by external applications to support different pricing scenarios.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Pricing components
 
 Pricing management applies the following key elements to determine pricing:

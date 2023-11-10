@@ -24,6 +24,8 @@ Copilot for Inventory Visibility is AI-powered inventory management solution des
 
 Copilot for Inventory Visibility introduces an API-driven solution that simplifies and revolutionizes the management of your inventory.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Prerequisites
 
 To use the Copilot for Inventory Visibility, your system must meet the following requirement:

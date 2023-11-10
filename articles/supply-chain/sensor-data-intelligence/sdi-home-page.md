@@ -29,6 +29,8 @@ Sensor Data Intelligence lets you perform the following tasks:
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Business scenarios
 
 Sensor Data Intelligence enables several types of functionality, each of which is represented by a specific *scenario* in the system. Each scenario provides a specialized set of configuration options in the system, as detailed in the following table.
