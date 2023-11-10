@@ -52,63 +52,14 @@ No. The enforcement of one maximum pause goes into effect on February 19, 2024, 
 
 The following table shows the allowed pauses through the transition based on your installed version. For more information about how to pause service updates, see [Pause service updates through Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
-<table>
-<head>
- <tr>
-  <th><b>On 10.0.35</b></th>
-  <th><b>On 10.0.36</b></th>
-  <th><b>On 10.0.37</b></th>
-  <th><b>On 10.0.38</b></th>
-  <th><b></b></th>
-  <th><b>On 10.0.39</b></th>
- </tr>
- </head>
- <tbody>
- <tr>
-  <td>
-  <ul>
-	  <li>10.0.36 auto-update pause allowed.</li>
-	  <li>10.0.37 auto-update pause allowed.</li>
-	  <li>10.0.38 auto-update pause allowed.</li>
-	  <li>Must take 10.0.39 auto-update.</li>
-	  <li>10.0.40 auto-update pause allowed.</li>
-	  <li>Must take 10.0.41 auto-update.</li>
-  </ul>
-  </td>
-  <td>
-  <ul>
-	  <li>10.0.37 auto-update pause allowed.</li>
-	  <li>10.0.38 auto-update pause allowed.</li>
-	  <li>Must take 10.0.39 auto-update.</li>
-	  <li>10.0.40 auto-update pause allowed.</li>
-	  <li>Must take 10.0.41 auto-update.</li>
-  </ul>
-  </td>
-  <td>
-  <ul>
-	  <li>10.0.38 auto-update pause allowed.</li>
-	  <li>Must take 10.0.39 auto-update.</li>
-	  <li>10.0.40 auto-update pause allowed.</li>
-	  <li>Must take 10.0.41 auto-update.</li>
-  </ul>
-  </td>
-  <td>
-  <ul>
-	  <li>10.0.39 auto-update pause allowed <i>after</i> Feb 19.</span></li>
-	  <li>Must take 10.0.40 auto-update.</li>
-  </ul>
-  </td>
-  <td><b>Max. of 1 pause starts Feb 19 after 10.0.38 auto-update completes.</b>
-  </td>
-  <td>
-  <ul>
-	  <li>10.0.40 auto-update pause allowed.</li>
-	  <li>Must take 10.0.41 auto-update.</li>
-  </ul>
-  </td>
- </tr>
- </tbody>
-</table>
+| On 10.0.35 | On 10.0.36  | On 10.0.37  | On 10.0.38  |         | On 10.0.39   |
+|------------|-------------|-------------|-------------|---------|--------------|
+| 10.0.36 auto-update pause allowed. | 10.0.37 auto-update pause allowed. | 10.0.38 auto-update pause allowed. | 10.0.39 auto-update pause allowed after Feb 19. | Max. of 1 pause starts Feb 19 after 10.0.38 auto-update completes. | 10.0.40 auto-update pause allowed. |
+| 10.0.37 auto-update pause allowed. | 10.0.38 auto-update pause allowed. | Must take 10.0.39 auto-update. | Must take 10.0.40 auto-update. |  | Must take 10.0.41 auto-update. |
+| 10.0.38 auto-update pause allowed. | Must take 10.0.39 auto-update. | 10.0.40 auto-update pause allowed. |  |  |  |
+| Must take 10.0.39 auto-update. | 10.0.40 auto-update pause allowed. | Must take 10.0.41 auto-update. |  |  |  |
+| 10.0.40 auto-update pause allowed. | Must take 10.0.41 auto-update. |  |  |  |  |
+| Must take 10.0.41 auto-update. |  |  |  |  |  |
 
 ### Does the new release schedule affect when I can schedule auto-updates?
 
