@@ -1,5 +1,5 @@
 ---
-title: Enable and configure Warehouse management only mode
+title: Enable and configure Warehouse management only mode (preview)
 description: This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
 author: perlynne
 ms.author: perlynne
@@ -16,7 +16,7 @@ ms.custom:
   - ai-seo-date:08/10/2023
 ---
 
-# Enable and configure Warehouse management only mode
+# Enable and configure Warehouse management only mode (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
