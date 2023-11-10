@@ -1,6 +1,15 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "../apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
