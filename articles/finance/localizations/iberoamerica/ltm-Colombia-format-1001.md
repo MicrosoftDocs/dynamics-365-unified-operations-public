@@ -108,7 +108,7 @@ Once the prerequisites are met, follow these steps:
 
 ## Issue file 1001 format
 
-1. Go to Tax > Inquiries and reports > LATAM > Tax reporting.
+1. **Go to Tax > Inquiries and reports > LATAM > Tax reporting.**
 2. In the Format mapping field, select a **Format 1001**.
 3. Select OK.
 4. Select a date range.
