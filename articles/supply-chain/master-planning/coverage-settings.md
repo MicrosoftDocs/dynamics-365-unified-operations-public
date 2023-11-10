@@ -53,7 +53,7 @@ Each replenishment method is assigned one of the following coverage codes:
 
 For make-to-order businesses, it can be useful to configure coverage groups to consider BOM or formula versions and/or routes specified in demand lines (such as sales order lines) when creating supply (such as planned production orders). For demand where no BOM or formula version and/or route are specified, the system chooses the currently active ones.
 
-### Prerequisites
+### Prerequisites (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

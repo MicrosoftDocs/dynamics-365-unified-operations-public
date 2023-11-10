@@ -142,7 +142,7 @@ The configuration settings for these processes resemble the settings for the [pu
 
 - **Enable shipping container complete** – If this option is set to *Yes*, when the putaway work is completed, the Warehouse Management mobile app provides an option called **Shipping container complete**. When that option is selected, the worker is asked to confirm that the container is complete. At that point, all short receipts will be processed as an under transaction.
 
-#### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device
+#### <a name="specify-GIT-order"></a>Specify goods-in-transit orders when receiving with a mobile device (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->
@@ -158,7 +158,7 @@ This functionality is available in the following types of mobile device menu ite
 
 Both options provide flexibility and control over the selection of goods-in-transit orders, ensuring accurate and efficient handling of incoming inventory.
 
-#### <a name="batch-serial"></a>Assign batch/serial numbers when receiving with a mobile device
+#### <a name="batch-serial"></a>Assign batch/serial numbers when receiving with a mobile device (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->

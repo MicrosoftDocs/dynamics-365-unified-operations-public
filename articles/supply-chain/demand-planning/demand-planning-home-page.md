@@ -1,5 +1,5 @@
 ---
-title: Demand planning home page
+title: Demand planning home page (preview)
 description: This article introduces the Demand planning app for Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Demand planning home page
+# Demand planning home page (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

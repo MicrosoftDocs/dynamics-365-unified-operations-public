@@ -159,7 +159,7 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
 
-## Adjust material consumption and make material reservations
+## Adjust material consumption and make material reservations (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
@@ -207,7 +207,7 @@ The following actions can be performed:
 
 The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
-### Adjust material consumption for catch weight items
+### Adjust material consumption for catch weight items (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->

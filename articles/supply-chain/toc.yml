@@ -417,7 +417,7 @@
           href: asset-management/functional-locations/introduction-to-functional-locations.md
         - name: Create functional locations
           href: asset-management/functional-locations/create-functional-locations.md
-        - name: Change the type of existing functional locations
+        - name: Change the type of existing functional locations (preview)
           href: asset-management/functional-locations/change-functional-location-type.md
         - name: Install assets on functional locations
           href: asset-management/functional-locations/install-objects-on-functional-locations.md
@@ -449,7 +449,7 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
-        - name: Change the asset type of existing assets
+        - name: Change the asset type of existing assets (preview)
           href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
@@ -513,7 +513,7 @@
           href: asset-management/work-orders/maintenance-forecasts.md
         - name: Procurement
           href: asset-management/work-orders/procurement.md
-        - name: Material availability check for work orders
+        - name: Material availability check for work orders (preview)
           href: asset-management/work-orders/material-availability-check-work-orders.md
         - name: Manual update of asset counters
           href: asset-management/work-orders/manual-update-of-asset-counters.md
@@ -885,7 +885,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
       - name: Power Automate Process Mining content
         items:
-        - name: Analyze warehouse material movement through process mining
+        - name: Analyze warehouse material movement through process mining (preview)
           href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
@@ -1757,11 +1757,11 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Copilot for Inventory Visibility
+        - name: Copilot for Inventory Visibility (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
-    - name: Sensor Data Intelligence
+    - name: Sensor Data Intelligence (preview)
       items:
         - name: Sensor Data Intelligence home page
           href: sensor-data-intelligence/sdi-home-page.md
@@ -2005,7 +2005,7 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Demand planning
+    - name: Demand planning (preview)
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
@@ -2233,7 +2233,7 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Pricing management
+    - name: Pricing management (preview)
       items:
       - name: Pricing management overview
         href: pricing-management/pricing-management-overview.md
@@ -2487,7 +2487,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing
+        - name: Cross-company product sharing (preview)
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
@@ -3507,7 +3507,7 @@
         href: landed-cost/landed-cost-vs-tms.md
       - name: Set up and configure the Landed cost module
         items:
-        - name: Turn on the Landed cost module and related features for your system
+        - name: Turn on the Landed cost module and related features for your system (preview)
           href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
@@ -3947,7 +3947,7 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
-        - name: Analyze warehouse material movement through process mining
+        - name: Analyze warehouse material movement through process mining (preview)
           href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
@@ -3957,7 +3957,7 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehouse management only mode
+      - name: Warehouse management only mode (preview)
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md

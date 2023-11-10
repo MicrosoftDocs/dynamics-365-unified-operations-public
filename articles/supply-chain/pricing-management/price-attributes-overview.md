@@ -1,5 +1,5 @@
 ---
-title: Price attributes overview
+title: Price attributes overview (preview)
 description: This article introduces the concept of price attributes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price attributes overview
+# Price attributes overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

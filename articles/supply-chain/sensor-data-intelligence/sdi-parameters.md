@@ -1,5 +1,5 @@
 ---
-title: Sensor Data Intelligence parameters
+title: Sensor Data Intelligence parameters (preview)
 description: This article provides information about configuration settings that are available on the Sensor Data Intelligence parameters page.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Sensor Data Intelligence parameters
+# Sensor Data Intelligence parameters (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Material availability check for work orders
+title: Material availability check for work orders (preview)
 description: This article describes how supervisors can check whether all the required materials are available for one or more maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Material availability check for work orders
+# Material availability check for work orders (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]

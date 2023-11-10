@@ -66,7 +66,7 @@ The following options for identifying the source document lines are available:
 > [!NOTE]
 > You can add multiple items to a license plate for all the source document line identification methods. However, although you can change the receiving order on a single license plate during the receiving process for all the other methods, you can't change the selected load for the *Load item receiving* method.
 
-## <a name="deferred-receiving-processing"></a>Deferred receiving processing
+## <a name="deferred-receiving-processing"></a>Deferred receiving processing (preview)
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
