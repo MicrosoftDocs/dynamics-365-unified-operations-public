@@ -61,6 +61,11 @@ Below is a list of changes and suggestions:
 4. String to memo field change when it's the single field in the index resulting in index drop: Sql restricts any memo field to be part of the index. If any index has this single field, the index needs to be
 dropped and it isn't a supported change. For such cases, the index can be altered to include more fields and later can be removed if not needed in the next deployments.
 5. Fulltext index changes: This isn't supported online.
+6. Table and field drop: These are non additive changes and are done in downtime.
+7. Field rename: This is considered as drop of old field and creating new field with updated name. The new named field is added in PreServicing but the old field drop still happens in downtime.
+8. Table rename: This is also considered as drop old table and create new with updated name. Creation of new table happens in preservicing and old name table is dropped in Servicing downtime.
+
+
 
 ## How to effectively plan custom deployments for production environments
 Consider the following before applying a custom package to production environment:
