@@ -40,7 +40,7 @@ Database import isn't applicable to LCS projects that are configured for a Dynam
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
 ### Long running operations
-Import operation can take several hours and in extreme cases days to complete. This is due to the schema complexity of finance and operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  In cases where this is taking too long and you wish to stop the process, you can click the **Cancel** button from the environment details page.
+Import operation can take several hours and in extreme cases days to complete. This amount of time is due to the schema complexity of finance and operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  When the export operations takes too long and you want to stop the process, you can click the **Cancel** button from the environment details page.
 
 ### Import operation failure
 
@@ -57,14 +57,14 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that system Help and task guides are reconnected.
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
-* Make sure that dual-write is relinked if required.
-* Make sure that dual-write is relinked if required.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Make sure that dual-write is relinked if necessary.
+* Make sure that dual-write is relinked if necessary.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
 ### Environment admin
 
 The system admin account in the target environment (**Admin** user ID) is reset to the value that is found in the web.config file in that environment. This account should be the same as the admin account from LCS. To preview which account this account will be, visit the **Environment details** page for your target sandbox in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system admin in the transactional database. Therefore, the tenant of the environment will be the tenant of the environment admin.
 
-If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
+If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account is used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
 
 ## Steps to complete after a database import for environments that use Commerce functionality
 
