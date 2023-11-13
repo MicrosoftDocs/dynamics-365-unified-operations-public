@@ -1,5 +1,5 @@
 ---
-title: Auto-charge compounding and sequencing
+title: Autocharge compounding and sequencing
 description: Advanced auto charges enable you to compound header charges for sales quotations and sales orders. They also let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders. 
 author: Henrikan
 ms.author: henrikan
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Auto-charge compounding and sequencing
+# Autocharge compounding and sequencing
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -26,7 +26,7 @@ Header charge compounding affects the value base used to calculate an auto charg
 
 Compounded header charges require a *charge sequence*, which determines the order in which header charges are calculated. Charge sequences can only exist at the header level. Depending on how you configure the feature, interim header charge totals can be applied on top of the sum of line net amounts (including all line charges and sales taxes) or the sum of line net amounts only. As the calculation progress, interim header charges establish a value base upon which subsequent compound charges are calculated. You can define a default header-charge sequence for your system, which automatically applies to new sales quotations and sales orders. Sequences only have an impact when you have one or more charges set to compound.
 
-When several header charges with the same sequence are applied, the position of the header charges controls the order in which they are applied when compounding. The position only has an impact when one or more charges are set to compound.
+When several header charges with the same sequence are applied, the position of the header charges controls the order in which they're applied when compounding. The position only has an impact when one or more charges are set to compound.
 
 ## Prerequisites
 
@@ -37,9 +37,9 @@ To use this feature, your system must meet the following requirements:
 
 The *Sequence and compound for customer charges* adds new settings to the **Accounts receivable parameters** page to control the compounding. It also adds the columns **Sequence**, **Compound**, and **Position** for header charges on sales quotations and sales orders.  
 
-## <a name="set-up-comp-seq"></a>Set up auto-charge compounding and sequencing
+## <a name="set-up-comp-seq"></a>Set up autocharge compounding and sequencing
 
-To set up auto-charge compounding and sequencing, follow these steps:
+To set up autocharge compounding and sequencing, follow these steps:
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
@@ -51,11 +51,11 @@ To set up auto-charge compounding and sequencing, follow these steps:
         - *Sum of line net amounts only* – Calculate charges based on the sum of line amounts only. This option ensures compatibility with charge calculations made before the *Sequence and compound for customer charges* feature was enabled for your system.
         - *Sum including charge amounts* – Calculate charges based on the sum of line amounts, including line charges. This option also lets you choose to include tax amounts in the value base by specifying tax codes that should be used to determine the tax amount. You can define this for an individual auto charge line by selecting **Include taxes in value base**, which is shown when this option is enabled.
 
-Examples of how these settings will effect your calculations are given in the various example scenarios provided later in this article.
+Examples of how these settings affect your calculations are given in the various example scenarios provided later in this article.
 
-## <a name="scenario1"></a>Example scenario 1: Work with auto-charge compounding and sequencing
+## <a name="scenario1"></a>Example scenario 1: Work with autocharge compounding and sequencing
 
-This section provides an example scenario, based on the standard demo data, that shows how auto-charge compounding and sequencing works.
+This section provides an example scenario (based on the standard demo data) that shows how autocharge compounding and sequencing works.
 
 ### Enable demo data
 
@@ -67,7 +67,7 @@ To apply a charge set as compound, you must first set up the auto charge. Use th
 
 1. Go to **Accounts receivable \> Charges setup \> Auto charges**.
 1. On the list pane, set **Level** to *Header*.
-1. On the Action Pane, select **New** to create a charges.
+1. On the Action Pane, select **New** to create a new auto charges record.
 1. In the header of the new record, set the following fields:
     - **Account code** – Select *All*.
     - **Item code** – Select *All*.
@@ -90,7 +90,7 @@ To apply a charge set as compound, you must first set up the auto charge. Use th
     - **Site** – Leave blank.
     - **Warehouse** – Leave blank.
 
-1. In the Lines grid Action ribbon, select **Add** to add a second charge line. Make the following settings for the new line:
+1. On the **Lines** FastTab, select **Add** to add a second charge line. Make the following settings for the new line:
 
     - **Sequence** – Enter *2*.
     - **Compound** – Select.
@@ -115,20 +115,20 @@ The charges you set up can now be applied automatically to a sales quotation or 
 1. On the Action Pane, select **New** to create a new sales order.
 1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
 1. The new sales order opens. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
-1. The **Maintain charges** page opens, showing the following two lines, which came from your auto-charges setup:
+1. The **Maintain charges** page opens, showing the following two lines, which came from your autocharges setup:
 
     | Position | Sequence | Compound | Charges code | Category | Charges value |
     | --- | --- | --- | --- | --- | --- |
     | 1 | 1 | No | Freight | Fixed | 100 |
     | 2 | 2 | Yes | Handling | Percent | 2 |
 
-    Note that the **Position** matches the **Sequence** from the auto charges setup. The position will differ from sequence in cases where there is a overlap in sequence numbering. The position is used to calculate the value base for charges set to compound.
+    Note that the **Position** matches the **Sequence** from the auto charges setup. The position differs from sequence in cases where there's an overlap in sequence numbering. The position is used to calculate the value base for charges set to compound.
 
-    In this example, a 2% charge is applied on top of the 100 USD fixed charge equalling 102 USD as total header charges. The 2% charge also applies to each order line.
+    In this example, a 2% charge is applied on top of the 100 USD fixed charge equaling 102 USD as total header charges. The 2% charge also applies to each order line.
 
     Users can change the assigned position, sequence, and compound values for a header charge applied from auto charges. But care should be taken because edits such as these can significantly impact the calculated value base used for charges set to compound.
 
-    For example, a user might change the auto-created lines listed previously to the settings shown in the following table:
+    For example, a user might change the autocreated lines listed previously to the settings shown in the following table:
 
     | Position | Sequence | Compound | Charges code | Category | Charges value |
     | --- | --- | --- | --- | --- | --- |
@@ -144,18 +144,18 @@ The charges you set up can now be applied automatically to a sales quotation or 
     | 1 | 1 | No | Freight | Fixed | 100 |
     | 2 | 2 | No | Handling | Percent | 2 |
 
-    This time, the **Position** values match the **Sequence** from the setup, but both charges have **Compound** set to *No*. Therefore, the 100 USD fixed charge is applied first, but the 2% handling charge isn't set to compound, so it doesn't affect header charge because 2% of zero is zero (though it will still add a 2% charge to each order line). The total sum of header charges is therefore just 100 USD.
+    This time, the **Position** values match the **Sequence** from the setup, but both charges have **Compound** set to *No*. Therefore, the 100 USD fixed charge is applied first, but the 2% handling charge isn't set to compound, so it doesn't affect header charge because 2% of zero is zero (though it still adds a 2% charge to each order line). The total sum of header charges is therefore just 100 USD.
 
 1. Close the **Maintain charges** page by selecting the back button on the Action Pane.
-1. If necessary, you can revert edits made on **Maintain charges** page to the default setup lines. To do so, on the Action Pane, open the **Sell** tab and, from the **Calculate** group, select **Header auto charges**. This action only restores those lines that were automatically added from auto charges. Any charge lines that were added manually to the sales order header won't be affected by this action. This action also won't restore any order line charges.
+1. If necessary, you can revert edits made on **Maintain charges** page to the default setup lines. To do so, on the Action Pane, open the **Sell** tab and, from the **Calculate** group, select **Header auto charges**. This action only restores those lines that were automatically added from auto charges. Any charge lines that were added manually to the sales order header aren't affected by this action. This action also doesn't restore any order line charges.
 
 ## Position, Sequence, and Compound fields on header charges
 
 As we saw in [Example scenario 1](#scenario1), charge settings on the **Maintain charges** page include the following fields:
 
-- **Position** – Use this field to prioritize the calculation of each charge line. Lines are calculated in sequence starting with the lowest **Position** value (lowest **Position** has highest priority). This value is auto generated for all auto-charge lines (based on each line's **Sequence** setting on the **Auto charges** page), but it's still editable and can be manually updated. Each **Position** value must be unique for each order (no overlaps).
-- **Sequence** – This value indicates the intended position of the charge as set up on the **Auto charges** page. The value is copied from the **Auto charges** setup for each default charge line. For custom charge lines (added manually to the **Maintain charges** page), this value is set to zero. Sequence numbers don't need to be unique and therefore might overlap. If your auto-charge setup includes overlapping **Sequence** numbers, the system will assign unique **Position** values starting with the most specific (customer) record. **Sequence** is an editable field and can be manually updated, but we recommend keeping it aligned with the **Position** value.
-- **Compound** – Indicates whether the line should be compounded with other header charges added so far. This only applies to charges with a **Category** of *Percent*. Compounding only applies for charges added by the **Auto charges** setup.  Although the system will allow you to select **Compound** for manually added charge lines, compounding is not actually performed for such a line.
+- **Position** – Use this field to prioritize the calculation of each charge line. Lines are calculated in sequence starting with the lowest **Position** value (lowest **Position** has highest priority). This value is auto generated for all autocharge lines (based on each line's **Sequence** setting on the **Auto charges** page), but it's still editable and can be manually updated. Each **Position** value must be unique for each order (no overlaps).
+- **Sequence** – This value indicates the intended position of the charge as set up on the **Auto charges** page. The value is copied from the **Auto charges** setup for each default charge line. For custom charge lines (added manually to the **Maintain charges** page), this value is set to zero. Sequence numbers don't need to be unique and therefore might overlap. If your autocharge setup includes overlapping **Sequence** numbers, the system assigns unique **Position** values starting with the most specific (customer) record. **Sequence** is an editable field and can be manually updated, but we recommend keeping it aligned with the **Position** value.
+- **Compound** – Indicates whether the line should be compounded with other header charges added so far. This only applies to charges with a **Category** of *Percent*. Compounding only applies for charges added by the **Auto charges** setup.  Although the system allows you to select **Compound** for manually added charge lines, compounding isn't actually performed for such a line.
 
 > [!NOTE]
 > Though the system normally prevents you from entering duplicate **Position** values, duplicates can still occur, for example, if you delete an auto-charge line, add new manual charges, and then restore auto charges by selecting the **Header auto charges** action. In such a case, the system will use the record ID of each charge record to resolve their relative positions when calculating the value base. We recommend that you avoid this scenario because you won't be able to see how the value base was calculated.
@@ -164,7 +164,7 @@ As we saw in [Example scenario 1](#scenario1), charge settings on the **Maintain
 
 When the system calculates the value of a charge with a **Category** of *Percent*, it applies the defined percentage to the *value base* calculated so far at that position of the calculation. The value base can consist of the net amount across all order lines or the net amount across all order lines including line changes, both with or without sales taxes.
 
-The following examples show how the **Value base for header charges** option set on the **Accounts receivable parameters** page can impact your calculations. This setting is also described in the [Set up auto-charge compounding and sequencing](#set-up-comp-seq) section.
+The following examples show how the **Value base for header charges** option set on the **Accounts receivable parameters** page can impact your calculations. This setting is also described in the [Set up autocharge compounding and sequencing](#set-up-comp-seq) section.
 
 ### Sum of line amounts only
 
@@ -178,7 +178,7 @@ The following example illustrates how setting **Value base for header charges** 
 1. On the Action Pane, select **New** to create a new sales order
 1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
 1. Your new order opens. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
-1. With you new order line still selected, select **Financials \> Maintain charges** from the **Sales order lines** FastTab toolbar.
+1. With your new order line still selected, select **Financials \> Maintain charges** from the **Sales order lines** FastTab toolbar.
 1. The **Maintain charges** page opens. On the Action Pane, select **New** to add a new line charge. Then enter the following values for the new line:
     - **Charge code** – Select *Freight*.
     - **Category** – Select *Fixed*.
@@ -187,7 +187,7 @@ The following example illustrates how setting **Value base for header charges** 
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, select the back button to return to your sales order.
 1. On Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
-1. The **Totals** dialog opens, showing the various calculation results that apply to the current order. Notice the value shown for for **Total Charges**. It's calculated as follows:
+1. The **Totals** dialog opens, showing the various calculation results that apply to the current order. Notice the value shown for **Total Charges**. It's calculated as follows:
 
     **Total Charges** = [*Line charge fixed* (10 USD)] &plus; [*Header charge fixed* (100 USD)] &plus; [*Header charge percentage and compound* (2% of line amount (2% of 100 USD = 2 USD) &plus; 2% of header charge with lower position (2% of 100 USD = 2 USD))] = 114 USD.
 
@@ -209,14 +209,14 @@ When **Value base for header charges** is set to *Sum including charge amounts*,
 1. Go to **Accounts receivable \> Charges setup \> Auto charges**.
 1. On the list pane, set **Level** to *Header*.
 1. On the list pane, select the auto charge that you want to set up (or create a new one).
-1. On teh **Lines** FastTab, select the line that you want to set up (or add a new one).
+1. On the **Lines** FastTab, select the line that you want to set up (or add a new one).
 1. From the **Lines** FastTab toolbar, select **Include taxes in value base**. (This toolbar button is only shown when **Value base for header charges** is set to *Sum including charge amounts* on the **Accounts receivable parameters** page.)
-1. The **Sales tax codes in value base for auto charge** page opens. Add a line for each sales tax code that you want to include in your value base calculations for the selected auto-charge line.
+1. The **Sales tax codes in value base for auto charge** page opens. Add a line for each sales tax code that you want to include in your value base calculations for the selected autocharge line.
 1. On the Action Pane, select **Save**.
 
 ## Example scenario 3: Re-search on posting options
 
-The **Re-searching on posting** option ensures that header charges are assessed against the header-charge setup upon posting. Auto charges set up as tiered charges are automatically assessed. The assessment compares automatically applied header charges against the auto-charges setup. It ensures that all the header charges automatically applied to sales orders and quotations on creation are similar to the auto-charges setup. All automatically added header charges that were manually changed or deleted are restored. All manually added header charges are left unchanged. The setting ensures that the auto-charge setup is always applied.
+The **Re-searching on posting** option ensures that header charges are assessed against the header-charge setup upon posting. Auto charges set up as tiered charges are automatically assessed. The assessment compares automatically applied header charges against the autocharges setup. It ensures that all the header charges automatically applied to sales orders and quotations on creation are similar to the autocharges setup. All automatically added header charges that were manually changed or deleted are restored. All manually added header charges are left unchanged. The setting ensures that the autocharge setup is always applied.
 
 > [!NOTE]
 > Tiered charges are only supported for sales orders, and are therefore only included in the re-search for sales orders.
@@ -233,8 +233,8 @@ The following procedure illustrates the effect of the **Re-search on posting** o
 1. On the Action Pane, select **New** to create a new sales order
 1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
 1. The new sales order opens. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
-1. The **Maintain charges** page opens, showing lines that came from your auto-charges setup.
-1. Use the **Delete** button on the Action Pane to delete each of the auto-charge lines so that there are no charges listed.
+1. The **Maintain charges** page opens, showing lines that came from your autocharges setup.
+1. Use the **Delete** button on the Action Pane to delete each of the autocharge lines so that there are no charges listed.
 1. Select **New** on the Action Pane to add a new charge line. Then make the following settings for the new line:
     - **Position** – Enter *3*.
     - **Sequence** – Enter *3*.
@@ -270,7 +270,7 @@ The following procedure illustrates the effect of the **Re-search on posting** o
 The **Combine charges on combined invoices** setting on the **Accounts receivable parameters** page controls how header charges are calculated when multiple sales orders are combined into a single invoice using the *Summary update* function.
 
 - Set **Combine charges on combined invoices** to *Yes* to first calculate the grand total of all sales orders included in the combined invoice and then apply the auto charges to that total.
-- Set **Combine charges on combined invoices** to *No* to calculate header charges individually for each sales order included in the summary invoice. In scenarios where header charges are set up with the intent of representing per-invoice charges rather than a per-sales order charges, this setting may result in over charging.
+- Set **Combine charges on combined invoices** to *No* to calculate header charges individually for each sales order included in the summary invoice. In scenarios where header charges are set up with the intent of representing per-invoice charges rather than a per-sales order charges, this setting can result in over charging.
 
 The following scenario illustrates the effects of this setting:
 
@@ -309,7 +309,7 @@ The following scenario illustrates the effects of this setting:
 1. On the dialog toolbar, select **Arrange**.
 1. Select **OK**.
 
-    Notice that the header auto charges have been re-searched and re-applied per invoice. The customer will be debited just one instance of the fixed auto charge of 100 USD instead of two instances because the charge is now applied per invoice instead of per sales order. The total calculated charge for the invoice is one header fixed charge of 100 USD + 2% compound (2% of the total line amounts (100 USD &plus; 100 USD) &plus; 2% of the fixed charge (100 USD)) = 106 USD in total charges.
+    Notice that the header auto charges have been re-searched and reapplied per invoice. The customer will be debited just one instance of the fixed auto charge of 100 USD instead of two instances because the charge is now applied per invoice instead of per sales order. The total calculated charge for the invoice is one header fixed charge of 100 USD + 2% compound (2% of the total line amounts (100 USD &plus; 100 USD) &plus; 2% of the fixed charge (100 USD)) = 106 USD in total charges.
 
     With this setup, the fixed auto charge is only applied once (per invoice) and the percentage-based charge set to compound is calculated from a value base that is 100 USD lower compared to header charges calculated per sales order.
 
@@ -323,7 +323,7 @@ The following scenario illustrates the effects of this setting:
 
 ## Pricing management
 
-The features described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges and therefore also changes some of the behavior described in this article. When the Pricing management module is [enabled](../pricing-management/pricing-management-enable.md), then charges set up under **Accounts receivable \> Charges setup** don't apply. Instead, only those auto charges set up on the auto-charges page specific to the Pricing management module will apply for sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management \> During-sales pricing \> Charges setup \> Auto charges**.
+The features described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges and therefore also changes some of the behavior described in this article. When the Pricing management module is [enabled](../pricing-management/pricing-management-enable.md), then charges set up under **Accounts receivable \> Charges setup** don't apply. Instead, only those charges set up on the auto charges page specific to the Pricing management module apply for sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management \> During-sales pricing \> Charges setup \> Auto charges**.
 
 ## Limitations
 
@@ -331,7 +331,7 @@ The abilities to compound charges and define a value base upon which the compoun
 
 ### Intercompany trade
 
-The lack of compounding and sequencing support for purchase orders affects intercompany scenarios because it means that sales-order and purchase-order charges would be calculated differently. To prevent intercompany scenarios from being blocked, header charges for any sales order that fulfils a local purchase order are applied and calculated without using the compounding and sequencing features described in this article. This means that whether compounding and sequencing are applied is contextual. In intercompany scenarios, compounding and sequencing aren't applied; in non-intercompany scenarios, they are.
+The lack of compounding and sequencing support for purchase orders affects intercompany scenarios because it means that sales-order and purchase-order charges would be calculated differently. To prevent intercompany scenarios from being blocked, header charges for any sales order that fulfills a local purchase order are applied and calculated without using the compounding and sequencing features described in this article. This means that whether compounding and sequencing are applied is contextual. In intercompany scenarios, compounding and sequencing aren't applied; in non-intercompany scenarios, they are.
 
 ### Prorate and summary updates
 
@@ -339,6 +339,6 @@ Header charges can be set to *prorate*. <!--KFM: How/where? --> The ability to r
 
 ### Tiered charge and summary updates
 
-A header charge can be set to use **From amount** and **To amount** tiers. The tiers are evaluated based on the net amount for a sales order. When you are using sequencing and compounding, tiers are always assessed against the net amount for a sales order. If the net amount for a sales order is within a tier, and a tiered charge is set to be calculated as a percentage, then the charge will be calculated based on the current value base even though the tier was assessed based on the net amount. If you make a summary update, such as summary invoice, when the system is configured to re-search on posting, then the tiers are assessed against the net amount for the *first* sales order included in the summary update only. The tiers are not assessed against the net amount across all order lines in the summary update.
+A header charge can be set to use **From amount** and **To amount** tiers. The tiers are evaluated based on the net amount for a sales order. When you're using sequencing and compounding, tiers are always assessed against the net amount for a sales order. If the net amount for a sales order is within a tier, and a tiered charge is calculated as a percentage, then the charge will be calculated based on the current value base even though the tier was assessed based on the net amount. If you make a summary update, such as summary invoice, when the system is configured to re-search on posting, then the tiers are assessed against the net amount for the *first* sales order included in the summary update only. The tiers aren't assessed against the net amount across all order lines in the summary update.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

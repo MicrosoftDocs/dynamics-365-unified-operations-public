@@ -1,6 +1,6 @@
 ---
 title: Units of measure for line-level charges
-description: The charges feature in Microsoft Dynamics 365 Supply Chain Management has been extended with additional capabilities covering the ability to work with specific unit and specific unit match for line charges. This capability is applicable to both sales and purchase.
+description: This article describes how to set up line charges based on specific units and unit matches. This capability applies to both sales orders and purchase orders.
 author: Henrik Andersen
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -19,133 +19,105 @@ ms.custom: bap-template
 
 <!--KFM: Preview until 10.0.38 GA -->
 
-In addition to create line charges of category *pcs* it is possible to create line charges of category *Specific unit* and *Specific unit match*. These capabilities enables companies to setup and apply line charges specific to the unit of measure for a line item which is either sold or purchased. Consider selling an item. When it is sold in smaller units such as a box, a line charge is added. However when selling in cases, there is no line charge. Consider regardless of the unit in which the item is sold or purchased there is always a relative charge of *X* expressed in unit of measure *Y*. When the item is sold or purchased the line charge is calculated as a fraction of the sold or purchased unit of measure to the unit of measure for the line charge using unit of measure conversion.
+All line-level auto charges and line charges include a **Category**, which controls how and where the charge applies. Among the available **Category** values are *Specific unit* and *Specific unit match*. These categories let you set up and apply line charges specific to the unit of measure for a line item that is either sold or purchased. They work as follows:
 
-## Enable specific unit and specific unit match
+- *Specific unit* – The auto charge is defined using a specific unit (such as *ea*) and the system converts from other units proportionally if a conversion factor is available. So, for example, if a sales line is for an item where a box is defined as containing 10 ea, and there's a charge of 2 USD per ea, and a sales line is for 2 boxes, then that sales line would result in a charge for 40 USD (2 boxes &times; 10 ea/box &times; 2 USD/ea = 40 USD). If no conversion factor is available, then the charge isn't applied. <!--KFM: True? -->
+- *Specific unit match* – The auto charge is defined using a specific unit (such as *ea*) but the system applies that charge to lines that use that same exact unit. So, for example, you could set up a charge such that, when the item is sold in smaller units (such as ea), a line charge is added. However for orders specified using larger units (such as cases), there's no line charge.
 
-Enable the feature *Unit of measure for line level charges* in feature management. When this feature is enabled, line charges and auto charges of level line can now be setup with category types *specific unit* and *specific unit match*. *Specific unit* and *Specific unit match* is supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines.
+The *Specific unit* and *Specific unit match* categories are supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines. Because both options apply to both sales orders and purchase orders, they're also supported for intercompany trade.
 
-## Working with specific unit and specific unit match and auto changes
+## Prerequisites
 
-It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automatically through auto charges setup.
+To use the features described in this article, your system must meet the following requirements:
 
-Follow these steps to setup a line charge in auto charges:
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
+- The feature that is named *Unit of measure for line level charges* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-1. Go to **Accounts receivable \> setup \> Charges \> Auto charges**. Similar steps can be performed for **Accounts payable \> setup \> Charges \> Automatic charges** and **Procurement and sourcing \> setup \> Charges \> Automatic charges**  
-1. Select Level *Line*
-1. On the Action Pane, select **New** to create a charges.
-1. In the header of the new record, set the following fields:
-    - **Account code** – All
-    - **Item code** – All
-    - **Mode of delivery code** – All
-    - **Charge description** – Enter the appropriate description.
+## Example scenario 1: Set up line-level auto charges for specific units and unit matching
+
+This example scenario shows how to set up line-level auto charges that apply to a specific unit or that are calculated based on unit matching.
+
+### Enable demo data
+
+To work through this scenario using the demo records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the *USMF* legal entity before you begin.
+
+### Set up the auto charges
+
+Follow these steps to set up a line charge in auto charges:
+
+1. Go to **Accounts receivable \> setup \> Charges \> Auto charges**. (Similar steps can be performed for **Accounts payable \> setup \> Charges \> Automatic charges** and **Procurement and sourcing \> setup \> Charges \> Automatic charges**.)  
+1. On the list pane, set **Level** to *Link*.
+1. On the Action Pane, select **New** to create a new auto charges record.
+1. In the header of the new record, make the following settings:
+    - **Account code** – Select *All*.
+    - **Item code** – Select *All*.
+    - **Mode of delivery code** – Select *All*.
+    - **Charge description** – Enter a short description.
 
 1. On the Action Pane, select **Save**.
-1. In the Lines grid Action ribbon, select **Add** to create the following charge line.
+1. On the **Lines** FastTab, you should now see an empty line (select **Add** from the toolbar to add one if you don't). Make the following settings for the new line:
 
-    - **Currency** – USD
-    - **Charges code** – Freight
-    - **Category** – Specific unit
-    - **Charges value** – 2
-    - **Unit** - ea
-    - **From amount** – Empty.
-    - **To amount** – Empty
-    - **Sales tax group** – Empty
-    - **Site** and **Warehouse** – Empty
-    - **Keep** – unchecked
+    - **Currency** – Select *USD*.
+    - **Charges code** – Select *Freight*.
+    - **Category** – Select *Specific unit*.
+    - **Unit** - Select *ea*.
+    - **Charges value** – Enter *2*.
+    - **Sales tax group** – Leave blank.
+    - **Site** – Leave blank.
+    - **Warehouse** – Leave blank.
+    - **Keep** – Leave unchecked.
 
-1. In the Lines grid Action ribbon, select **Add** to create the following charge line.
+1. On the **Lines** FastTab, select **Add** to add a second charge line. Make the following settings for the new line:
 
-    - **Currency** – USD
-    - **Charges code** – Install
-    - **Category** – Specific unit match
-    - **Charges value** – 5
-    - **Unit** - case
-    - **From amount** – Empty.
-    - **To amount** – Empty
-    - **Sales tax group** – Empty
-    - **Site** and **Warehouse** – Empty
-    - **Keep** – unchecked
+    - **Currency** – Select *USD*.
+    - **Charges code** – Select *Install*.
+    - **Category** – Select *Specific unit match*.
+    - **Unit** - Select *dz* (dozen). <!-- KFM: Original said "cases" but that seems not to be in the sample data, so I picked dozen. OK? -->
+    - **Charges value** – Enter *5*.
+    - **Sales tax group** – Leave blank.
+    - **Site** – Leave blank.
+    - **Warehouse** – Leave blank.
+    - **Keep** – Leave unchecked.
+1. On the Action Pane, select **Save**.
 
-These charges can now be applied automatically onto a sales quotation line or sales order line. To apply the charges to a sales order, follow these steps:
+### Use the auto charges in a sales order
+
+The charges can now be applied automatically to a sales quotation line or sales order line. To apply the charges to a sales order, follow these steps:
 
 1. Go to **Sales and Marketing \> Sales orders \> All sales orders**.
-1. On the Action Pane, select **New** to create a new sales order
+1. On the Action Pane, select **New** to create a new sales order.
+1. The **Create sales order** dialog opens. Set **Customer account** *US-004* and then select **OK** to create the order. The selected customer must use the same currency as the auto charges you set up (*USD*).
+1. The new sales order opens. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**.
+1. If any charges are listed on the **Maintain charges** page, select them and then select **Delete** on the Action Pane.
+1. Close the **Maintain charges** page by selecting the back button on the Action Pane.
+1. You return to the order. On the **Sales order lines** FastTab, add an order line with the following settings:
+    - **Item number** – Select *A0002*.
+    - **Quantity** – Enter *2*.
+    - **Unit** – Select *ea*.
+    - **Site** – Select *6*.
+    - **Unit price** – Enter *50*.
+    - **Net amount** – Should show a calculated value of *100*.
 
-    Create the sales order for customer US-001, or any customer using USD as currency.
+1. With your new order line still selected, select **Financials \> Maintain charges** from the **Sales order lines** FastTab toolbar.
+1. The **Maintain charges** page opens. It should show the two auto charges that you set up earlier.
+1. Close the **Maintain charges** page by selecting the back button on the Action Pane.
+1. On Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
+1. The **Totals** dialog opens, showing the various calculation results that apply to the current order. Notice the value shown for **Total Charges** is 4 USD. The charge is calculated as follows:
+    - Because there's a *Specific unit* charge of 2 USD per ea, and the line is for the equivalent of 2 ea, this charge is 2 ea &times; 2 USD/ea = 4 USD.
+    - There's also a *Specific unit match* charge of 5 USD per dz, but because you're ordering in ea, not dz, this charge doesn't apply.
+    - The total charge for the line combines both charges, which is 4 USD.
 
-1. Header ribbon **Sell**, **Maintain charges**
-1. Select **Delete** to any charges automatically added from auto charges
-1. Create a sales line. Select an item that has unit of measure conversion setup between units ea and case. The unit of measure conversion is setup as 6 ea = 1 case, rounding to nearest. Ensure that the line net amount is 100 USD.
+1. Select **OK** to return to your sales order.
+1. On the sales line, change **Unit** to *dz*. When prompted to **Overwrite prices and discounts**, select *No* and then **OK**. (The system is configured to convert 1 dz to 12 ea.)
+1. On Action Pane, open the **Sales order** tab and, from the **View** group, select **Totals**.
+1. The **Totals** dialog opens again. Notice the value shown for **Total Charges** is now 58 USD. This charge is calculated as follows:
+    - Because the **Unit** is now *dz* and there's a *Specific unit match* charge of 5 USD per dz, and you're now ordering two dozens, this charge is 2 dz &times; 5 USD/dz = 10 USD.
+    - Because you're now ordering a total of two dozen items, and the system is configured to convert 1 dz to 12 ea, it knows the order line is for 24 ea. There's a *Specific unit* charge of 2 USD per ea, so this charge is 24 ea &times; 2 USD/ea = 48 USD.
+    - The total charge for the line combines both charges, which is 10 USD &plus; 48 USD = 58 USD.
 
-1. On the sales order line do the following:
-    1. Line ribbon **Financials**, **maintain charges**
-
-    You will notice the two line charges created in auto charges have been applied.
-
-1. On header action pane, tab **Sales order**, select **Totals**
-
-    Notice the amount for **Total Charges**. It contains the following: 2 USD (line charge for ea) = 2 USD.
-
-1. On the sales line, change the sell unit from ea to case.
-
-    When prompted to **Overwrite prices and discounts** select *No*
-
-1. On header action pane, tab **Sales order**, select **Totals**
-
-    Notice the amount for **Total Charges**. It contains the following: 5 USD (line charge for case, as the sell unit is case and there is an exact match on the unit) + 12 (line charge for ea; as the sell unit is case, 6 ea:1, the charge of 1 each is applied proportionally to the case (2x6=12) = 17 USD.  
-
-    > [!NOTE]
-    > Auto charges setup with specific match and specific unit match are applied to lines when the charge search criteria are met. For specific unit, a charge takes effect on the line resulting in an actual charge calculation, when unit of measure conversion exists between the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is expressed. the actual charge is calculated proportionally to unit conversion. For specific unit match, a charge takes effect on the line resulting in an actual charge calculation, when the line unit (the unit in which the item is sold or purchased) and the unit in which the charge value is the same.
-
-## Working with specific unit and specific unit match on an order line
-
-It is possible to apply a line charge with specific unit or specific unit match directly on a source document line charge or to have the line charge with specific unit or specific unit match applied automatically through auto charges setup.
-
-Follow these steps to manually add a line charge to a purchase order line:
-
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
-1. On the Action Pane, select **New** to create a new purchase order
-
-    Create the purchase order for vendor 1001, or any vendor using USD as currency.
-
-1. Header ribbon **Purchase**, **Maintain charges**
-1. Select **Delete** to any charges automatically added from auto charges
-1. Create a purchase order line. Select an item that has unit of measure conversion setup between units ea and case. The unit of measure conversion is setup as 6 ea = 1 case, rounding to nearest. Ensure that the line net amount is 100 USD.
-
-On the purchase order line, do the following:
-
-1. Line ribbon **Financials**, **maintain charges**
-1. Click **New** to add a new charge line as the following:
-    - **Charges code** – Freight
-    - **Category** – Specific unit
-    - **Unit** - ea
-    - **Charges value** – 2
-1. Click **New** to add a second charge line as the following:
-    - **Charges code** – install
-    - **Category** – Specific unit match
-    - **Unit** - case
-    - **Charges value** – 5
-
-    Since the **maintain charges** page in purchase provides a calculated amount field, you will notice immediately that the first charge line will result in a 2 USD charge being calculated, whereas the second charge line will result in a 0 USD charge.
-
-1. Back in the purchase order line, change the unit from ea to case.
-
-    When prompted to **Overwrite prices and discounts** select *No*
-
-1. Line ribbon **Financials**, **maintain charges**
-
-    In the **maintain charges** page, notice in calculated amount field that the first charge line will result in a 12 USD charge being calculated, whereas the second charge line will result in a 5 USD charge.
-
-1. On header action pane, tab **Sales order**, select **Totals**
-
-    The amount for **Total Charges**. It contains the following: 5 USD (line charge for case, as the purchase unit is case and there is an exact match on the unit) + 12 (line charge for ea; as the purchase unit is case, 6 ea:1, the charge of 1 each is applied proportionally to the case (2x6=12) = 17 USD.  
-
-    > [!NOTE]
-    > Specific unit and specific unit match is applicable on sales quotation line, sales order line, purchase requisition line, request for quotation line, and purchase order line charges. Since both options for sales order and purchase order, both options are supported in intercompany flows.
-
+<!-- KFM: I removed the section "Working with specific unit and specific unit match on an order line" because it seems redundant with the above. OK? -->
 ## Pricing management
 
-Feature *Unit of measure for line level charges* works in conjunction with the *Pricing management* feature. The *Pricing management* feature introduces changes to the setup and search of auto charges and changes to the behavior described in this topic for sales order and sales quotation. When *Pricing management* feature is enabled, then any charges setup using the auto charge setup available under **Accounts receivable \> Charges setup** will not apply. Only auto charges setup in the auto charge page specific to the *Pricing management* feature will be applied for sales order and sales quotation. How to setup and work with auto charges in conjunction with the *Pricing management* feature see Pricing management.
+The features described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges and therefore also changes some of the behavior described in this article. When the Pricing management module is [enabled](../pricing-management/pricing-management-enable.md), then charges set up under **Accounts receivable \> Charges setup** don't apply. Instead, only those charges set up on the auto charges page specific to the Pricing management module apply for sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management \> During-sales pricing \> Charges setup \> Auto charges**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
