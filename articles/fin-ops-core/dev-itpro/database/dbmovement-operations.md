@@ -4,7 +4,7 @@
 title: Database movement operations home page
 description: This article provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
-ms.date: 06/04/2021
+ms.date: 11/13/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -12,9 +12,9 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer, IT Pro
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 
 ms.search.region: Global
