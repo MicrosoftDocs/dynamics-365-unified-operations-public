@@ -37,6 +37,7 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/reserve/resyncjob |Post | [Clean up reservation data](#clean-up-reservation-data) |
 | /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
@@ -579,6 +580,28 @@ Body:
             OffsetQty: number
         }
         ...
+    ]
+```
+## Clean up reservation data
+
+This API is for cleaning up historical reservation data. <br>
+Body should be a list of dataSources. <br>
+Given an empty list, all dataSources will be cleaned up.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/reserve/resyncjob
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        "iv",
+        "pos"
     ]
 ```
 
