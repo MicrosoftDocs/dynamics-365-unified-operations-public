@@ -1,8 +1,8 @@
 ---
-title: Vendor electronic invoices import in PEPPOL format
-description: This article explains how to configure and use vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance.
+title: Import vendor electronic invoices in PEPPOL format
+description: This article explains how to configure and use the vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 11/10/2023
+ms.date: 11/113/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -17,17 +17,17 @@ ms.assetid:
 ms.search.form: 
 ---
 
-# Vendor electronic invoices import in PEPPOL format
+# Import vendor electronic invoices in PEPPOL format
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and use vendor electronic invoice import for **Pan-European Public Procurement Online** ([PEPPOL](https://peppol.org/)) format in Microsoft Dynamics 365 Finance.
+This article explains how to configure and import vendor electronic invoices in the **Pan-European Public Procurement Online** ([PEPPOL](https://peppol.org/)) format in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
-- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version of the Electronic reporting (ER) format configuration, **Vendor Invoice Import** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
@@ -41,18 +41,18 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 ### Configure the sources to import files in a batch mode
 
-You can configure a SharePoint folder as a source location for incoming vendor invoice files.
+Configure a SharePoint folder as a source location for incoming vendor invoice files.
 
 1. Go to **Organization administration** \> **Document management** \> **Document types**.
-2. Create a new document type, or configure an existing one.
+2. Create a new document type, or select an existing one.
 3. On the **General** FastTab, in the **Location** field, select **SharePoint**.
 4. In the **SharePoint Address** field, select the folder where import files will be located.
 5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
 6. Create a new ER source.
 7. In the **Format** field, select the **Vendor Invoice Import** format configuration.
-8. On the **File source** FastTab, in the **Name** field, assign a source name. Then select **Settings**.
+8. On the **File source** FastTab, in the **Name** field, assign a source name and then select **Settings**.
 9. On the **Source settings** page, enable the **Sharepoint** option.
-10. In the **Document type for input sources** field, select the document type that you created in step 2.
+10. In the **Document type for input sources** field, select the document type that you created earlier
 11. Optional: Set up three more document types, and use them to define different *post-process* locations:
 
     - **Document type for imported files** – Move the files that were successfully imported.
@@ -76,7 +76,7 @@ During the import process, vendors are identified by their tax exempt number. To
 During the import process, products are identified by their external descriptions. These descriptions are usually vendor-specific. To enable correct product identification, follow these steps.
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
-2. Select a product, and then, on the **Purchase** menu, in the **Related information** section, select **External item description**.
+2. Select a product, and on the **Purchase** menu, in the **Related information** section, select **External item description**.
 3. Create a new external description for the selected product.
 4. In the **Account code** column, select **Table** to define an external product description for a specific vendor.
 5. In the **Vendor relation** column, select a vendor.
@@ -84,7 +84,7 @@ During the import process, products are identified by their external description
 
 ### Configure units of measure (optional)
 
-You can optionally configure external codes for units of measure, if specific units are explicitly defined in the incoming import files.
+You can choose configure external codes for units of measure, if specific units are explicitly defined in the incoming import files.
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
@@ -101,7 +101,7 @@ To run the import vendor electronic invoices, follow these steps.
 
 ### Import process description
 
-Here's an overview of the steps in the import process and the order that they occur in.
+The following is an overview of the steps in the import process.
 
 1. Vendors are identified by using the tax exempt number that's defined in the vendor record. If no vendor matches the data that's being searched, the import process fails, and a related error message is shown.
 2. Products that are used on invoice lines are identified by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and a related error message is shown.
@@ -118,8 +118,8 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 > [!NOTE]
 > There are some limitations to this import process:
 >
-> - The import of miscellaneous charges isn't supported.
-> - Only the import of line-level discounts is supported.
+> - Importing miscellaneous charges isn't supported.
+> - Only importing of line-level discounts is supported.
 
 ## Learn more
 
