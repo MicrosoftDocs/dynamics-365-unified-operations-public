@@ -1,5 +1,5 @@
 ---
-title: FAQ for the Confirmed purchase orders with changes workspace
+title: FAQ for the Confirmed purchase orders with changes workspace (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 06/19/2023
 ms.custom: 
@@ -10,9 +10,16 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# FAQ for the Confirmed purchase orders with changes workspace
+# FAQ for the Confirmed purchase orders with changes workspace (preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](includes/preview-banner.md)]
+
+<!--KFM: Preview until further notice -->
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in the **Confirmed purchase orders with changes** workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+
+[!INCLUDE [preview-note](includes/preview-note.md)]
 
 ## What is the Confirmed purchase orders with changes workspace?
 

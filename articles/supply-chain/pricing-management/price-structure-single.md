@@ -1,5 +1,5 @@
 ---
-title: Set up a company to use a single price structure
+title: Set up a company to use a single price structure (preview)
 description: This article explains how to configure a company to use a single price structure, and how to set up that structure.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up a company to use a single price structure
+# Set up a company to use a single price structure (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

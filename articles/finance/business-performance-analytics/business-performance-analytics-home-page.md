@@ -5,7 +5,7 @@ description: This article provides information about business performance analyt
 author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
-ms.date: 09/07/2023
+ms.date: 10/26/2023
 ms.topic: welcome
 ms.prod: 
 ms.technology:
@@ -47,11 +47,17 @@ Business performance analytics has the following prerequisites:
 
 ### System requirements
 
-A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md). Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. Confirm the environment where you plan to install Business performance analytics is in one of the above mentioned regions.
 
 ### Version requirements
 
 Business performance analytics requires Dynamics 365 Finance version 10.0.35 and PU59 and later and the selected language to be en-US.
+The recommended platform build for each PU for Dynamics 365 Finance:
+
+PU61: 7.0.7068.78
+PU60: 7.0.7036.102
+PU59: 7.0.6972.167
+
 
 ## Set up business performance analytics
 

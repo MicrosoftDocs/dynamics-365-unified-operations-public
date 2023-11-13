@@ -69,14 +69,14 @@ Microsoft has built a user interface (UI) in Power Apps so that you can get the 
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
-The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an *Azure Active Directory (Azure AD) token* by using your Azure AD application. You must then use the Azure AD token to get the *access token* from the security service.
+The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
 Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
 To get a security service token, follow these steps.
 
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
-1. Fetch an Azure AD token (`aadToken`) by submitting an HTTP request that has the following properties:
+1. Fetch a Microsoft Entra token (`aadToken`) by submitting an HTTP request that has the following properties:
 
     - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
     - **Method:** `GET`
@@ -89,7 +89,7 @@ To get a security service token, follow these steps.
         | grant_type    | client_credentials                               |
         | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
-    You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
+    You should receive a Microsoft Entra token (`aadToken`) in response. It should resemble the following example.
 
     ```json
     {
@@ -106,7 +106,7 @@ To get a security service token, follow these steps.
     {
         "grant_type": "client_credentials",
         "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
+        "client_assertion": "{Your_Microsoft EntraToken}",
         "scope": "https://inventoryservice.operations365.dynamics.com/.default",
         "context": "{$LCS_environment_id}",
         "context_type": "finops-env"
@@ -115,7 +115,7 @@ To get a security service token, follow these steps.
 
     Note the following points:
 
-    - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
+    - The `client_assertion` value must be the Microsoft Entra token (`aadToken`) that you received in the previous step.
     - The `context` value must be the Lifecycle Services environment ID where you want to deploy the add-in.
     - Set all the other values as shown in the example.
 

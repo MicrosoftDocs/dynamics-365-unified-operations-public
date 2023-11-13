@@ -17,12 +17,12 @@ items:
           href: ../fin-ops/get-started/whats-new-home-page.md
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.38 (February 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
         - name: Platform updates for version 10.0.37 (November 2023)
-          href: get-started/whats-new-platform-updates-10-0-37.md
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-37.md
         - name: Platform updates for version 10.0.36 (September 2023)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-36.md
-        - name: Platform updates for version 10.0.35 (August 2023)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-35.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1810,6 +1810,8 @@ items:
           href: sysadmin/copy-batch-job.md
         - name: Priority-based batch scheduling
           href: sysadmin/priority-based-batch-scheduling.md
+        - name: Real async feature enhancements
+          href: dev-tools/real-async.md
         - name: Active batch periods
           href: sysadmin/activeperiod.md
         - name: Daylight saving time support for active batch periods
@@ -2188,6 +2190,12 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
+  - name: Responsible AI
+    items:
+    - name: Responsible AI FAQS for Dynamics 365 Platform
+      href: responsible-ai/responsible-ai-overview.md
+    - name: FAQ for chat with finance and operations data on Microsoft 365 Copilot (Preview)
+      href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

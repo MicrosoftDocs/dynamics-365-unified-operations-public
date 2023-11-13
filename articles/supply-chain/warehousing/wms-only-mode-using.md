@@ -1,5 +1,5 @@
 ---
-title: Work with Warehouse management only mode in Supply Chain Management
+title: Work with Warehouse management only mode in Supply Chain Management (preview)
 description: This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Work with Warehouse management only mode in Supply Chain Management
+# Work with Warehouse management only mode in Supply Chain Management (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -128,6 +128,12 @@ To view all the background processes that you have running, go to [**System admi
 > [!WARNING]
 > If you enable Warehouse management only mode and are already running a periodic *Update product receipts* batch job for loads that are associated with purchase orders, you probably have to update the query for the batch job to exclude inventory transaction updates for inbound shipment orders. To update the query, add the *Load details* entity, and specify a *NotExist* join to the *Loads* entity. Then add a range definition for the **Reference** field, where **Criteria** = *Inbound shipment order*.
 
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+
+- `ShipmentReceiptJournalHeaders` – The shipment receipt header data.
+- `ShipmentReceiptJournalLines` – The shipment receipt line data.
+- `ShipmentReceiptTransactionDimensions` – The detailed shipment receipt line data.
+
 ## Outbound process
 
 The following illustration highlights the elements of the outbound process.
@@ -163,6 +169,12 @@ To view all the background processes that you have running, go to [**System admi
 
 > [!NOTE]
 > If no language is defined for an order, the report uses the company-specific language settings.
+
+External systems can be informed via [business events](wms-only-mode-exchange-data.md#progress-data-and-business-events) when new data is available. They can read the data via the following data entities:
+
+- `ShipmentPackingSlipJournalHeaders` – The shipment packing slip header data.
+- `ShipmentPackingSlipJournalLines` – The shipment packing slip line data.
+- `ShipmentPackingSlipTransactionDimensions` – The detailed shipment packing slip line data.
 
 ## <a name="maintain-messages"></a>View and maintain shipment order messages
 

@@ -12,18 +12,14 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
       - name: What's new or changed in Finance
         items:
-        - name: What's new or changed in Finance home page           
+        - name: What's new or changed in Finance home page            
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.38 (February)
+          href: get-started/whats-new-changed-10-0-38.md   
         - name: Finance 10.0.37 (November)
           href: get-started/whats-new-changed-10-0-37.md
         - name: Finance 10.0.36 (October)
           href: get-started/whats-new-changed-10-0-36.md  
-        - name: Finance 10.0.35 (August)
-          href: get-started/whats-new-changed-10-0-35.md
-        - name: Finance 10.0.34 (July)  
-          href: get-started/whats-new-changed-10-0-34.md
-        - name: Finance 10.0.33 (April)  
-          href: get-started/whats-new-changed-changed-10-0-33.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -118,26 +114,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/finance
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/finance
-      - name: Learning catalog
-        items: 
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -558,6 +534,8 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer refunds with credit transfer format
+          href: accounts-receivable/refund-customers.md          
       - name: Credit and collections
         items:
         - name: Credit and collections overview
@@ -610,6 +588,8 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
+        - name: Credit statistics FAQ
+          href: accounts-receivable/credit-statistics-faq.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
@@ -676,6 +656,8 @@
         href: cash-bank-management/cash-discount-handling-overpayments.md
       - name: Manage IBAN account validation
         href: cash-bank-management/iban-validation.md
+      - name: Net customer and vendor balances
+        href: cash-bank-management/Net-customer-and-vendor-balances.md 
       - name: Settlement overview
         href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
@@ -712,6 +694,8 @@
         href: cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Check number validation
+        href: cash-bank-management/check-number-validation.md
       - name: Create checks that have Blank status
         href: cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
@@ -2192,6 +2176,28 @@
           items: 
           - name: GST/HST Internet File Transfer
             href: localizations/canada/can-gst-hst-internet-file-transfer.md
+        - name: Chile
+          items:
+          - name: Chile overview
+            href: localizations/iberoamerica/chile.md
+          - name: Configure connections for Chilean electronic invoicing 
+            href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
+          - name: Configure electronic invoice parameters for Chile
+            href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
+          - name: Generate and print the Fees certificate report
+            href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
+          - name: Generate and print the Withholding tax book report for Chile
+            href: localizations/iberoamerica/ltm-chile-withholding-book.md
+          - name: Print the Inventory and balance report for Chile
+            href: localizations/iberoamerica/ltm-chile-inventory-balance-report.md
+          - name: Printing configuration for the Chile 8 columns report
+            href: localizations/iberoamerica/ltm-8-columns-report.md
+          - name: Configure sales and purchase invoices
+            href: localizations/iberoamerica/ltm-chile-configure-sales-purchase-invoices.md
+          - name: Create customer and vendor records with an address in Chile
+            href: localizations/iberoamerica/ltm-chile-customer-vendor-addresses.md
+          - name: Set up a legal entity and tax information for Chile
+            href: localizations/iberoamerica/ltm-chile-set-up-legal-entity-tax-information.md
         - name: China
           items:
           - name: China overview
@@ -2238,6 +2244,20 @@
             href: localizations/china/apac-chn-tax-integration-vat-customer-invoices.md   
           - name: GB/T 24589-2010 export
             href: localizations/china/apac-chn-gbt-24589-2010.md
+        - name: Costa Rica
+          items:
+          - name: Costa Rica overview
+            href: localizations/iberoamerica/costa-rica.md
+          - name: Set up electronic invoicing in Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-ei-connec-configuration.md
+          - name: Configure electronic invoice parameters for Costa Rica
+            href: localizations/iberoamerica/ltm-costa-rica-electronic-invoice-conf.md
+          - name: Set up a legal entity and tax information for Costa Rica  
+            href: localizations/iberoamerica/set-up-legal-entity-tax-costa-rica.md
+          - name: Configure sales and purchase invoices for Costa Rica
+            href: localizations/iberoamerica/ltm-configure-invoices-costa-rica.md
+          - name: Create customer and vendor records with an address in Costa Rica
+            href: localizations/iberoamerica/ltm-create-customer-vendor-costa-rica.md
         - name: The Czech Republic
           items:
           - name: The Czech Republic
@@ -2292,16 +2312,14 @@
             href: localizations/denmark/emea-dnk-eu-sales-list.md
           - name: Customer electronic invoices in Denmark
             href: localizations/norway/emea-dnk-e-invoices.md
+          - name: Vendor electronic invoice import in Denmark
+            href: localizations/denmark/emea-dnk-vend-e-invoice.md
           - name: Post a free text invoice with a payment slip
             href: localizations/denmark/post-free-text-invoice-payment-slip.md
           - name: Post a project invoice with a payment slip
             href: localizations/denmark/post-project-invoice-payment-slip.md
           - name: Post a sales invoice with a payment slip
             href: localizations/denmark/post-sales-invoice-payment-slip.md
-          - name: Set up customer accounts for OIOUBL electronic invoicing
-            href: localizations/denmark/set-up-customer-accounts-oioubl-electronic-invoicing.md
-          - name: Set up OIOUBL electronic invoicing
-            href: localizations/denmark/set-up-oioubl-electronic-invoicing.md
           - name: Set up payment slip format
             href: localizations/denmark/set-up-payment-slip-format.md
           - name: Danish Intrastat
@@ -2600,8 +2618,8 @@
             href: localizations/germany/emea-deu-vat-declaration-germany.md
           - name: German Intrastat
             href: localizations/germany/emea-deu-intrastat.md
-          - name: Customer electronic invoices report
-            href: localizations/germany/emea-deu-e-invoices.md
+          - name: Customer electronic invoices
+            href: localizations/germany/emea-deu-cust-e-invoices.md
           - name: Journal list report
             href: localizations/germany/emea-deu-journal-list-report.md
           - name: Set up electronic tax declarations
@@ -3340,6 +3358,28 @@
             href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
           - name: Value query for Latin America
             href: localizations/iberoamerica/ltm-core-value-query.md
+          - name:	Configure electronic document references 
+            href: localizations/iberoamerica/ltm-electronic-doc-references.md
+          - name: VAT book printing configuration 
+            href: localizations/iberoamerica/ltm-vat-book.md
+          - name: Print payment checks
+            href: localizations/iberoamerica/ltm-check-printing.md
+          - name: Configure the layout of a printed invoice for Latin America 
+            href: localizations/iberoamerica/ltm-invoice-layout-print.md
+          - name: Print a Ledger Posting report for LATAM 
+            href: localizations/iberoamerica/ltm-ledger-posting-report.md
+          - name: SSRS Reports/Services references configuration for Latin America 
+            href: localizations/iberoamerica/ltm-ssrsreport-services.md
+          - name: Printing configurations for General Ledger LATAM 
+            href: localizations/iberoamerica/ltm-general-ledger.md
+          - name: Set up transaction posting for Latin America 
+            href: localizations/iberoamerica/ltm-post-transactions.md   
+          - name: Use LATAM functionality for checks
+            href: localizations/iberoamerica/ltm-checks-in-latam.md
+          - name: Use the LATAM extension in customer payments journals
+            href: localizations/iberoamerica/ltm-latam-in-customer-payment.md
+          - name: Use the LATAM extension in vendor payments journals
+            href: localizations/iberoamerica/ltm-latam-in-vendor-payment.md
         - name: Latvia
           items:
           - name: Latvia overview
@@ -3468,6 +3508,16 @@
             href: localizations/new-zealand/apac-nzl-gst-declaration.md
           - name: Customer electronic invoices 
             href: localizations/apac/apac-aus-nzl-e-invoices.md
+        - name: Nicaragua
+          items:
+          - name: Nicaragua overview
+            href: localizations/iberoamerica/nicaragua.md
+          - name: Set up a legal entity and tax information for Nicaragua 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-nicaragua.md
+          - name: Configure sales and purchase invoices for Nicaragua 
+            href: localizations/iberoamerica/ltm-configure-invoices-nicaragua.md
+          - name: Create customer and vendor records with an address in Nicaragua 
+            href: localizations/iberoamerica/ltm-create-customer-vendor-nicaragua.md        
         - name: Norway
           items:
           - name: Norway overview
@@ -3506,6 +3556,20 @@
             href: localizations/mea/oman.md
           - name: VAT declaration for Oman (OM-00003)
             href: localizations/mea/emea-oma-vat-declaration.md
+        - name: Panama
+          items: 
+          - name: Panama overview
+            href: localizations/iberoamerica/panama.md
+          - name: Set up a legal entity and tax information for Panama 
+            href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
+          - name: Set up electronic invoicing for Panama
+            href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
+          - name:	Configure electronic invoice parameters for Panama 
+            href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
+          - name: Create customer and vendor records with an address in Panama
+            href: localizations/iberoamerica/ltm-create-customer-vendor-panama.md
+          - name: Configure sales and purchase invoices for Panama
+            href: localizations/iberoamerica/ltm-configure-invoices-panama.md
         - name: Poland
           items:
           - name: Poland overview
