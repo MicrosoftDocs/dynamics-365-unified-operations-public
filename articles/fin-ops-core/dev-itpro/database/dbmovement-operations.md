@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 
 Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.
 
-In this article, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
+In this article, you learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
 
 ## Database movement scenarios and quick start guides
 The following table shows the various scenarios that are supported and a link to a quick start guide for each scenario. 
@@ -54,7 +54,7 @@ Production|	DevTest|	Supported in Power Platform admin center | Supported via Po
 ## Database Movement API
 The Database Movement application programming interface (API) lets you integrate several of the previously mentioned database movement operations into your overall ALM process. In addition, by using the API together with your preferred scheduling engine, you can build recurrence into the process, so that it runs daily or on demand.
 
-For more information about about the Database Movement API, see the following topics:
+For more information about the Database Movement API, see the following topics:
 
 * [Overview](./api/dbmovement-api-overview.md)
 * [Versioning and support](./api/dbmovement-api-versioning-support.md)
