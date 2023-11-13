@@ -1,6 +1,6 @@
 ---
 title: Retrieve environment metadata via Logic Apps tutorial
-description: This tutorial demonstrates how to use the Lifecycle Services API to fetch details about your environments.
+description: This tutorial shows how to use the Microsoft Dynamics Lifecycle Services API to fetch details about your environments.
 author: laneswenka
 ms.reviewer: johnmichalak
 ms.component: pa-admin
@@ -15,42 +15,42 @@ ms.custom:
 
 # Retrieve environment metadata via Logic Apps tutorial
 
-This tutorial is aimed at enabling you to take advantage of the Lifecycle Services API to periodically scan your environments and capture the metadata details. 
+This tutorial shows how you can take advantage of the Microsoft Dynamics Lifecycle Services API to periodically scan your environments and capture the metadata details.
 
-In this tutorial, you learn how to:
+In this tutorial, you learn how to perform these tasks:
 
-1.	Create a Power Automate or Logic Apps workflow (Azure) that authenticates with Lifecycle Services API. 
-2.	Call the Environment Metadata endpoint to retrieve the details about a given environment. 
+1. Create a Power Automate flow or an Azure Logic Apps workflow that authenticates with the Lifecycle Services API.
+2. Call the Environment Metadata endpoint to retrieve the details of a given environment.
 
-In this example scenario, a customer needs to know the database backup location and if a backup was taken daily for their audit and compliance needs. This location is retrieved using the following steps.
+In the example scenario, a customer must know the database backup location and whether a daily backup was made, so that it can meet its audit and compliance requirements. The customer retrieves the backup location by using the following steps.
 
 ## Step 1: Create the workflow and set up the variables
 
-This tutorial uses a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation. All the calls to retrieve the data use RESTful APIs so any tooling that supports REST works with this tutorial.
+This tutorial uses a Logic Apps workflow. However, you can use a Power Automate flow or any other orchestration engine that your company prefers to use for automation. All the calls to retrieve the data use RESTful APIs. Therefore, any tooling that supports REST works with this tutorial.
 
-Visit the Azure portal, and then create a new logic app and give it a name:
+In the [Azure portal](https://portal.azure.com/), create a new logic app, and give it a name.
 
-> [!div class="mx-imgBorder"] 
-> ![Create a logic app.](media/tutorial-create-logic-app.png "Create a logic app (Azure)")
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows a logic app being created in the Azure portal.](media/tutorial-create-logic-app.png "Screenshot that shows a logic app being created in the Azure portal")
 
-After that finishes provisioning, edit the workflow using the Designer and set up a Recurrence trigger to run on schedule of your choosing:
+After the new logic app is provisioned, use the designer to edit the workflow. Set up a **Recurrence** trigger that runs on a schedule of your choice.
 
-> [!div class="mx-imgBorder"] 
-> ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows a Recurrence trigger being set up.](media/capacity2.png "Screenshot that shows a Recurrence trigger being set up")
 
-For the remainder of this tutorial, you need a Project ID and an environment ID to complete the subsequent steps:
+To complete the remaining steps in this tutorial, you need a project ID and an environment ID.
 
-- **Environment Id**: The ID of the environment to which you would install the package. This ID is found on the environment details page in Lifecycle Service.
-- **Project ID**: The ID of the project where the environment resides. This ID is found in the URL of the environment details page.
+- **Environment ID** – The ID of the environment where you want to install the package. You can find this ID on the environment details page in Lifecycle Service.
+- **Project ID** – The ID of the project where the environment resides. You can find this ID in the URL of the environment details page.
 
-Next, authenticate with Microsoft Entra ID and retrieve a token for calling the Lifecycle Services API. If you haven’t completed your Entra ID setup, see [Authentication (preview)](../../database/api/dbmovement-api-authentication.md).
+Next, authenticate with Microsoft Entra ID, and retrieve a token that can be used to call the Lifecycle Services API. If you haven't finished setting up Microsoft Entra ID, see [Authentication (preview)](../../database/api/dbmovement-api-authentication.md).
 
-In this tutorial, we're using a user credential with password to obtain a token. The following example is a call to Entra ID.
+To obtain the token, this tutorial uses user credentials that include a password. The following example shows a call to Microsoft Entra ID.
 
-> [!div class="mx-imgBorder"] 
-> ![Authenticate with Entra ID and retrieve a token for calling the Lifecycle Services API.](media/tutorial-lcs-token.png "Authenticate with Entra ID and retrieve a token for calling the Lifecycle Services API")
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows a call to authenticate with Microsoft Entra ID and retrieve a token for calling the Lifecycle Services API.](media/tutorial-lcs-token.png "Screenshot that shows a call to authenticate with Microsoft Entra ID and retrieve a token for calling the Lifecycle Services API")
 
-We then parse the Entra ID token response into a typed object using this JSON schema in the 'Parse JSON' action:
+Next, parse the Microsoft Entra ID token response into a strongly typed object by using the following JavaScript Object Notation (JSON) schema in the **Parse JSON** action.
 
 ```json
 {
@@ -72,22 +72,22 @@ We then parse the Entra ID token response into a typed object using this JSON sc
 }
 ```
 
-> [!div class="mx-imgBorder"] 
-> ![Parse the Entra ID token response into a strongly typed object.](media/capacity5.png "Parse the Entra ID token response into a strongly typed object")
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows the Microsoft Entra ID token response being parsed into a strongly typed object.](media/capacity5.png "Screenshot that shows the Microsoft Entra ID token response being parsed into a strongly typed object")
 
 ## Step 2: Retrieve the environment details
 
-In this section, we retrieve the backup details. Be sure to have your **environment Id** and **project ID** available.
+In this section, you retrieve the backup details. Be sure to have the environment ID and project ID available.
 
 ### Environment Metadata endpoint
 
-Now we make our first call to the Lifecycle Services API. Use the [Fetch environment metadata](./v1/reference-environment-metadata.md) to retrieve all of the available metadata properties. Be sure that you use a bearer token from a user who has access to see this environment in the Lifecycle Services project in question.
+Make your first call to the Lifecycle Services API. Use the [Fetch environment metadata](./v1/reference-environment-metadata.md) to retrieve all the available metadata properties. Be sure to use a bearer token from a user who has access to see this environment in the applicable Lifecycle Services project.
 
 ```http
 GET https://lcsapi.lcs.dynamics.com/environmentinfo/v1/detail/project/{projectId}/?environmentId={environmentId}
 ```
 
-And we receive responses similar to the following example.
+The response that you receive resembles the following example.
 
 ```json
 {
@@ -149,11 +149,10 @@ And we receive responses similar to the following example.
     "VersionEOL": "9999-12-31T23:59:59.9999999"
 }
 ```
+
 ### Applications of this data
-For customers who need to maintain logs or records of the environment details, they might use this approach to capture the state of the environment via the API as shown in earlier steps.  This can then be saved in the logs of the tool itself like Logic Apps using their run history, or it can be saved as a file in to blob storage or on-premises for long term retention.  
 
-> [!div class="mx-imgBorder"] 
-> ![Review the logs in Logic Apps.](media/tutorial-logic-app-history.png "Review the logs in Logic Apps")
+Customers who must maintain logs or records of the environment details might use this approach to capture the state of the environment via the API, as shown in earlier steps. This state information can then be saved in the logs of the tool itself (for example, the run history of logic apps). Alternatively, for long-term retention, it can be saved as a file in Azure Blob Storage or on-premises.
 
-
-
+> [!div class="mx-imgBorder"]
+> ![Screenshot that shows the logs being reviewed in Logic Apps.](media/tutorial-logic-app-history.png "Screenshot that shows the logs being reviewed in Logic Apps")
