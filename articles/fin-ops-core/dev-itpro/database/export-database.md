@@ -4,7 +4,7 @@
 title: Export a database
 description: This article explains how to export a database for finance and operations.
 author: LaneSwenka
-ms.date: 11/06/2023
+ms.date: 11/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -13,9 +13,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: IT Pro, Developer
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -38,14 +38,18 @@ You can use Microsoft Dynamics Lifecycle Services to export a database from a sa
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-### Maximum limit 50 GB on exported bacpacs 
+### Long running operations
+Export operation can take several hours and in extreme cases days to complete. This amount of time is due to the schema complexity of finance and operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  When the export operations takes too long and you want to stop the process, you can click the **Cancel** button from the environment details page.
+
+### Maximum limit 50-GB on exported bacpacs 
 To maintain the system that performs database export from Lifecycle Services, a limit on the maximum bacpac size is being imposed. This limit is set at 50 GB for each bacpac exported. The reasons for this limit include: 
 
 - A centralized system is performing the exports for multiple customers in the same geographic region, and this system has constraints on disk space.  
 
 If you need to reduce the size of the database, follow the [cleanup routines](../sysadmin/cleanuproutines.md).
 
-If the above cleanup routines don't bring the bacpac file to under 50 GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes. Any tables for data entity staging (they have "staging" at the end of the table name) can be truncated. Any tables that store binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data can't be compressed, so storing large volumes of data in the database itself causes you to quickly reach the 50-GB limit.
+
+If the above cleanup routines don't bring the bacpac file to under 50-GB in size, try running the following SQL script against your sandbox database to identify the top 15 tables by size in megabytes. Any tables for data entity staging (they have "staging" at the end of the table name) can be truncated. Any tables that store binary or blob data (JSON/XML/binary) should either be truncated or the contents of that field should be deleted to free up space. Binary data can't be compressed, so storing large volumes of data in the database itself causes you to quickly reach the 50-GB limit.
 
 ```sql
 USE [YourDBName] -- replace your dbname
@@ -71,9 +75,8 @@ GO
 
 Most often, export operations fail because the process in Lifecycle Services times out while it's waiting for a response from Microsoft Azure SQL Database. If the operation times out, it will *roll back* automatically and your sandbox environment is restored to the state it was before the export began.
 
-To cancel an ongoing export operation, use the **Cancel** button.
 
-To determine the root cause of the failure, use the **Environment change history** page to download the logs for the failed operation.
+To cancel an export operation that failed, you can use the **Rollback** button.
 
 ### Data elements that aren't exported
 
@@ -86,9 +89,9 @@ When you export a database backup from an environment, some elements of the data
 * Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
 * Document attachments in the **DocuValue** table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
 * Database log history in the **DatabaseLog** table.
-* All users except the admin will be set to **Disabled** status.
+* All users except the admin are set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
-* All users will have their partition value reset to the "initial" partition record ID.
+* All users have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the **SysEmailSMTPPassword** table.
 * [Maintenance mode](../sysadmin/maintenance-mode.md) settings are disabled even if it was enabled in source.
 * Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
