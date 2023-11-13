@@ -27470,8 +27470,53 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/faq-sdi-spike.md ",
+      "source_path": "articles/supply-chain/faq-sdi-spike.md",
       "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/scm",
       "redirect_document_id": false
     }
   ]
