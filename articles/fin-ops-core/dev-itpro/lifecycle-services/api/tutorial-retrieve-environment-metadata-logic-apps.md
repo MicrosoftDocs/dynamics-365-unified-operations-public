@@ -22,9 +22,10 @@ In this tutorial, you learn how to:
 1.	Create a Power Automate or Logic Apps workflow (Azure) that authenticates with Lifecycle Services API. 
 2.	Call the Environment Metadata endpoint to retrieve the details about a given environment. 
 
-In this example scenario, a customer needs to know the database backup location and if a backup was taken daily for their audit and compliance needs. This can be retrieved using the follwoing steps.
+In this example scenario, a customer needs to know the database backup location and if a backup was taken daily for their audit and compliance needs. This location is retrieved using the following steps.
 
 ## Step 1: Create the workflow and set up the variables
+
 This tutorial uses a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation. All the calls to retrieve the data use RESTful APIs so any tooling that supports REST works with this tutorial.
 
 Visit the Azure portal, and then create a new logic app and give it a name:
@@ -44,7 +45,7 @@ For the remainder of this tutorial, you need a Project ID and an environment ID 
 
 Next, authenticate with Microsoft Entra ID and retrieve a token for calling the Lifecycle Services API. If you haven’t completed your Entra ID setup, see [Authentication (preview)](../../database/api/dbmovement-api-authentication.md).
 
-In this tutorial, we're using a user credential with password to obtain a token. The following is an example call to Entra ID.
+In this tutorial, we're using a user credential with password to obtain a token. The following example is a call to Entra ID.
 
 > [!div class="mx-imgBorder"] 
 > ![Authenticate with Entra ID and retrieve a token for calling the Lifecycle Services API.](media/tutorial-lcs-token.png "Authenticate with Entra ID and retrieve a token for calling the Lifecycle Services API")
