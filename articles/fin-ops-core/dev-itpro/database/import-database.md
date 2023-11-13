@@ -4,7 +4,7 @@
 title: Import a database
 description: This article explains how to import a database for finance and operations apps.
 author: LaneSwenka
-ms.date: 11/01/2021
+ms.date: 11/13/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -13,9 +13,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: IT Pro, Developer
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -40,7 +40,7 @@ Database import isn't applicable to LCS projects that are configured for a Dynam
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
 ### Long running operations
-Import operation can take several hours and in extreme cases days to complete.  This is due to the schema complexity of Finance and Operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  In cases where this is taking too long and you wish to stop the process, you can click the **Cancel** button from the environment details page.
+Import operation can take several hours and in extreme cases days to complete. This is due to the schema complexity of finance and operations apps, and limitations of Azure SQL provided tools to convert a cloud database to a flat file for use by traditional SQL Server.  In cases where this is taking too long and you wish to stop the process, you can click the **Cancel** button from the environment details page.
 
 ### Import operation failure
 
