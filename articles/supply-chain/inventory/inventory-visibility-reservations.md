@@ -60,7 +60,7 @@ Soft reservations are usually created, consumed, and canceled by using API calls
     Users enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature is required to enable the **Filter unconfigured dimensions** toggle. <br>
     This toggle controls the behavior when user reserves with dimensions not specified in [Reservation Dimensions](#configure-reservation-dimensions). <br> 
     - *Disabled* - Reservation requests including dimensions not defined in Reservation Dimensions will fail.
-    - *Enabled* - Reservation requests including dimensions not defined in Reservation Dimensions will fail, but undefined dimensions will be ignored.
+    - *Enabled* - Reservation requests including dimensions not defined in Reservation Dimensions will succeed, but undefined dimensions will be ignored.
 
     When switching the status of **Filter unconfigured dimensions** toggle, previous reservation should all be reversed for data consistency. Use [Clean up reservation data API](inventory-visibility-api.md#clean-up-reservation-data) to clean up existing soft reservation records.
 
