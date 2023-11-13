@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Retrieve environment metadata via Logic Apps
+title: Retrieve environment metadata via Logic Apps tutorial
 description: This tutorial demonstrates how to use the Lifecycle Services API to fetch details about your environments.
 author: laneswenka
 ms.reviewer: johnmichalak
@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Tutorial: Retrieve environment metadata via Logic Apps
+# Retrieve environment metadata via Logic Apps tutorial
 
 This tutorial is aimed at enabling you to take advantage of the Lifecycle Services API to periodically scan your environments and capture the metadata details. 
 
