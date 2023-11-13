@@ -132,8 +132,16 @@ To use the Commerce-supplied Azure Front Door instance, you must create a servic
 
 - You'll need to provide your company name, the production domain, environment ID, and production e-commerce tenant name. 
 - You'll need to confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
-- For a new domain, the domain verification and SSL certificate can be achieved in a single step. 
-- For a domain serving an existing website, there's a multistep process required to establish the domain verification and SSL certificate. This process has a 7-working-day service level agreement (SLA) for a domain to go live, because it includes multiple sequential steps.
+- The domain verification and SSL certificate can be achieved via DNS TXT record verification. This involves multiple sequential steps and it has a 7-working-day service level agreement (SLA) for a domain to go live. This process will include the following steps:
+  - Create a support ticket requesting the domain setup
+  - Microsoft support will reach back with the DNS record to verify the domain
+  - Create the DNS record in your DNS provider's service
+  - Microsoft support will confirm that the DNS verification is complete
+  - Microsoft support shares the DNS CNAME record to be created for the live traffic switchover
+  - Create the DNS CNAME for custom domain pointing to the Commerce provided frontdoor endpoint 
+- For a new domain, you can update the CNAME to a commerce provided front door endpoint immediately. Traffic will be routed through the Commerce front door endpoint once the CNAME record is updated.
+- For a domain serving an existing website, you need to verify that the new domain is set up correctly and execute the CNAME change to point the custom domain to the Commerce front door endpoint at the scheduled cut over time.
+- Please note that until the CNAME change is completed, the existing traffic to the custom domain should not be impacted.
 
 To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
