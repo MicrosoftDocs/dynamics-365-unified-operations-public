@@ -57,14 +57,14 @@ Any schema changes that aren't covered in the previous section aren't yet suppor
 
 Here's a list of changes and suggestions:
 
-1. **Clustered primary key changes** – Changes to a clustered primary key for a table can't be done online. We don't recommend that you change the primary key of the table, because it's likely used in multiple other indexes. Instead, we recommend that you add a new table that has a corrected primary index.
-2. **Numeric field scale changes** – In finance and operations apps, changes to the scale of a numeric field aren't allowed and aren't supported online. We recommend that you add a new field instead of modifying the existing one if the table size is larger.
-3. **Index drops** – Index drops aren't supported online. Avoid changes that can cause clustered and/or primary index drops.
-4. **String to memo field changes when the field is the single field in the index, resulting in an index drop** – SQL restricts any memo field from being part of the index. If any index has this single field, the index must be dropped, and this change isn't supported. In such cases, the index can be changed so that it includes more fields. Those fields can then be removed later if they aren't required in future deployments.
-5. **Fulltext index changes** – This type of change isn't supported online.
-6. **Table and field drops** – These changes are non-additive and are done during downtime.
-7. **Field renames** – This type of change is considered a drop of the old field and the creation of a new field that has an updated name. The new named field is added during the **Pre-servicing** phase, but the drop of the old field still occurs during downtime.
-8. **Table renames** – This type of change is considered a drop of the old table and the creation of a new table that has an updated name. Creation of the new named table occurs during the **Pre-servicing** phase, and the old named table is dropped during downtime in the **Servicing** phase.
+ - **Clustered primary key changes** – Changes to a clustered primary key for a table can't be done online. We don't recommend that you change the primary key of the table, because it's likely used in multiple other indexes. Instead, we recommend that you add a new table that has a corrected primary index.
+ - **Numeric field scale changes** – In finance and operations apps, changes to the scale of a numeric field aren't allowed and aren't supported online. We recommend that you add a new field instead of modifying the existing one if the table size is larger.
+ - **Index drops** – Index drops aren't supported online. Avoid changes that can cause clustered and/or primary index drops.
+ - **String to memo field changes when the field is the single field in the index, resulting in an index drop** – SQL restricts any memo field from being part of the index. If any index has this single field, the index must be dropped, and this change isn't supported. In such cases, the index can be changed so that it includes more fields. Those fields can then be removed later if they aren't required in future deployments.
+ - **Fulltext index changes** – This type of change isn't supported online.
+ - **Table and field drops** – These changes are non-additive and are done during downtime.
+ - **Field renames** – This type of change is considered a drop of the old field and the creation of a new field that has an updated name. The new named field is added during the **Pre-servicing** phase, but the drop of the old field still occurs during downtime.
+ - **Table renames** – This type of change is considered a drop of the old table and the creation of a new table that has an updated name. Creation of the new named table occurs during the **Pre-servicing** phase, and the old named table is dropped during downtime in the **Servicing** phase.
 
 ## Effectively plan custom deployments for production environments
 
