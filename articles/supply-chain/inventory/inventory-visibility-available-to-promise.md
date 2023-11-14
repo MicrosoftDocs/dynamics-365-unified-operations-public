@@ -55,6 +55,44 @@ For more information about calculated measures, see [Calculated measures](invent
 Follow these steps to turn on the *On-hand change schedule* feature in Power Apps and configure the ATP settings.
 
 1. Sign in to Power Apps, and open Inventory Visibility.
+1. Open the **Settings (Preview)** => **Feature Management** in side navigator.
+1. On the **Feature Management** page, click `Manage` button on the *Available to Promise* entry.
+    ![Adding dimension mappings](media/inventory-visibility-atp-settings-ui.png "ATP Settings UI Page")
+1. Change **Enable Feature** toggle to true to turn on ATP featue. 
+1. Change **Schedule for 180 days** toggle to true to support the longer ATP schedule period (180 days).
+
+    > [!IMPORTANT]
+    > By default, the ATP feature is limited to 7 days. Please note that the 7-day ATP and 180-days ATP features are separate and independent from each other. Any schedule changes created or modified using the 7-day ATP feature will not take effect when the 180-day ATP feature is turned on. If you have used 7-days ATP feature and want to migrate to 180-days ATP, we suggest to delete old data and post onhand change schedule again after enabling 180-days.
+
+1. For field **Max Schedule Period (Days)**, enter the number of days that users can view and submit scheduled on-hand changes. Users who query for stock information will get the on-hand quantity, scheduled on-hand changes, and ATP for each day in this period, starting with the current date. The maximum value for this field is 180 days. By default, it is set to 30 days, which means you can schedule changes for up to 30 days from today.
+
+    > [!IMPORTANT]
+    > The schedule period includes the current date. Therefore, users can schedule on-hand changes to occur any time from the current date (the day when the change is submitted) through (schedule period – 1) days in the future.
+
+1. **Schedule Measures** section: Schedule Measures could be an existing calculated measure or you can create a new calculated measure. When you query Inventory Visibility, the ATP value will be provided for defined calculated measures, based on the scheduled changes of component physical measures. In this section, select **New OnHand Change Schedule Configuration V2** to bind a calculated measure for ATP, the calculated is what you want to use to find the currently available on-hand quantity. To create a new calculated measure, see [Calculated measures](inventory-visibility-configuration.md#calculated-measures). 
+
+    > [!IMPORTANT]
+    > The default ATP calculated formula is for reference, users can modify and add other datasources and physical measures to reflect the right ATP calculation in their business.
+
+1. Set ATP index in **ATP Index Set Configuration** section. This setting is similar to the "Product Index Hierarchy" which allows you to group your query results by specific dimensions. For example, if you set ColorId and SizeId as your ATP Index Set, your query results will be grouped by color and size. It is allowed to have multiple index sets.
+
+    > [!IMPORTANT]
+    > The default index "ColorId" and "SizeId" is for reference, users can remove and add other dimensions. 
+
+1. Select **Save**.
+1. When you've finished configuring all the required settings, select **Update Configuration** under **Admin Settings** side navigator.
+
+For more information, see [Complete and update the configuration](inventory-visibility-configuration.md).
+
+
+### Turn on the On-hand change schedule feature and configure ATP settings (Legacy UI)
+
+> [!WARNING]
+> This section is for Legacy UI.
+
+Follow these steps to turn on the *On-hand change schedule* feature in Power Apps and configure the ATP settings.
+
+1. Sign in to Power Apps, and open Inventory Visibility.
 1. Open the **Configuration** page.
 1. On the **Feature Management** tab, turn on the *OnhandChangeSchedule* feature.
 1. Select the **ATP Setting** tab.
@@ -71,8 +109,6 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 1. Select **Save**.
 1. Repeat steps 5 through 7 until you've added all the calculated measures that you require for ATP.
 1. When you've finished configuring all the required settings, select **Update Configuration**.
-
-For more information, see [Complete and update the configuration](inventory-visibility-configuration.md).
 
 ## How the on-hand change schedule and ATP calculations work
 
@@ -100,8 +136,9 @@ The results in this example show a *projected on-hand* value. This value incorpo
 
 1. The following settings are configured for your system on the **ATP setting** page in Power Apps:
 
-    - **ATP calculated measure** – You have a calculated measure that is named *On-hand*. It's calculated as *On-hand = Supply – Demand*. You select that measure here.
-    - **Schedule period** – You select *7*.
+    - **Schedule Measures** – You have a calculated measure that is named *On-hand*. It's calculated as *On-hand = Supply – Demand*. You added that measure here.
+    - **Max Schedule Period (Days)** –  for example, enter 7.
+    - **ATP Index Set Configuration** – ColorId and SizeId are added here.
 
 1. The following conditions also apply:
 
@@ -254,11 +291,9 @@ The following example shows sample body content without `dimensionDataSource`.
         "ColorId": "Red",
         "SizeId": "Small"
     },
-    "quantitiesByDate":
-    {
-        "2022-02-01": // today
-        {
-            "pos":{
+    "quantitiesByDate": {
+        "2022-02-01": {
+            "pos": {
                 "inbound": 10
             }
         }
@@ -317,11 +352,9 @@ The following example shows sample body content.
             "ColorId": "Red",
             "SizeId": "Small"
         },
-        "quantitiesByDate":
-        {
-            "2022-02-01": // today
-            {
-                "pos":{
+        "quantitiesByDate": {
+            "2022-02-01": {
+                "pos": {
                     "inbound": 10
                 }
             }
@@ -337,11 +370,9 @@ The following example shows sample body content.
             "ColorId": "Red",
             "SizeId": "Small"
         },
-        "quantitiesByDate":
-        {
-            "2022-02-05":
-            {
-                "pos":{
+        "quantitiesByDate": {
+            "2022-02-05": {
+                "pos": {
                     "outbound": 10
                 }
             }
@@ -382,7 +413,7 @@ The following example shows a request body that contains a single on-hand change
 
 You can query scheduled on-hand changes and ATP results by submitting either a `POST` request or a `GET` request to the appropriate API URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section).
 
-In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results.
+In your request, set `QueryATP` to *true* if you want to query scheduled on-hand changes and ATP results. By default query will return all ATP related data from today, you can specify `ATPFromDate` and `ATPToDate` to narrow down the results(the from/to dates are to filter the result, it does not affect how ATP is calculated).
 
 - If you're submitting the request by using the `GET` method, set this parameter in the URL.
 - If you're submitting the request by using the `POST` method, set this parameter in the request body.
@@ -421,6 +452,7 @@ The following example shows how to create an index query request body that can b
 
 ```json
 {
+    // OnHand Index Query fields
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
@@ -429,7 +461,11 @@ The following example shows how to create an index query request body that can b
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true
+
+    // ATP related fields
+    "QueryATP":true,
+    "ATPFromDate": "2022-02-01",
+    "ATPToDate": "2022-02-10",
 }
 ```
 
@@ -454,52 +490,24 @@ Query(Url Parameters):
 The following example shows how to create an index query request URL as a `GET` request.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true&ATPToDate=2022-02-01&ATPToDate=2022-02-10
 ```
 
 The result of this `GET` request is exactly the same as the result of `POST` request in the previous example.
 
 ### Exact query by using the POST method
 
-```txt
-Path:
-    /api/environment/{environmentId}/onhand/exactquery
-Method:
-    Post
-Headers:
-    Api-Version="1.0"
-    Authorization="Bearer $access_token"
-ContentType:
-    application/json
-Body:
-    {
-        dimensionDataSource: string, # Optional
-        filters: {
-            organizationId: string[],
-            productId: string[],
-            dimensions: string[],
-            values: string[][],
-        },
-        groupByValues: string[],
-        returnNegative: boolean,
-    }
-```
-
-The following example shows how to create an exact query request body that can be submitted to Inventory Visibility by using the `POST` method.
+Simply add ATP related fields in query body, see [Exact query by using the post method](inventory-visibility-api.md#exact-query-with-post-method) for exact query details.
 
 ```json
 {
-    "filters": {
-        "organizationId": ["usmf"],
-        "productId": ["Bike"],
-        "dimensions": ["SiteId", "LocationId"],
-        "values": [
-            ["1", "11"]
-        ]
-    },
-    "groupByValues": ["ColorId", "SizeId"],
-    "returnNegative": true,
-    "QueryATP":true
+    // Exact query fields
+    // ...
+
+    // ATP related fields
+    "QueryATP":true,
+    "ATPFromDate": "2022-02-01",
+    "ATPToDate": "2022-02-10",
 }
 ```
 
