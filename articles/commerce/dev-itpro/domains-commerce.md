@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/28/2023
+ms.date: 11/14/2023
 ms.topic: article
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -132,16 +132,16 @@ To use the Commerce-supplied Azure Front Door instance, you must create a servic
 
 - You'll need to provide your company name, the production domain, environment ID, and production e-commerce tenant name. 
 - You'll need to confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
-- The domain verification and SSL certificate can be achieved via DNS TXT record verification. This involves multiple sequential steps and it has a 7-working-day service level agreement (SLA) for a domain to go live. This process will include the following steps:
-  - Create a support ticket requesting the domain setup
-  - Microsoft support will reach back with the DNS record to verify the domain
-  - Create the DNS record in your DNS provider's service
-  - Microsoft support will confirm that the DNS verification is complete
-  - Microsoft support shares the DNS CNAME record to be created for the live traffic switchover
-  - Create the DNS CNAME for custom domain pointing to the Commerce provided frontdoor endpoint 
-- For a new domain, you can update the CNAME to a commerce provided front door endpoint immediately. Traffic will be routed through the Commerce front door endpoint once the CNAME record is updated.
-- For a domain serving an existing website, you need to verify that the new domain is set up correctly and execute the CNAME change to point the custom domain to the Commerce front door endpoint at the scheduled cut over time.
-- Please note that until the CNAME change is completed, the existing traffic to the custom domain should not be impacted.
+- The domain verification and SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a 7-working-day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
+  1. You create a support ticket requesting the domain setup.
+  1. Microsoft support contacts you with the DNS record to verify the domain.
+  1. You create the DNS record in your DNS provider's service.
+  1. Microsoft support confirms that the DNS verification is complete.
+  1. Microsoft support provides you with the DNS CNAME record to be created for the live traffic switchover.
+  1. You create the DNS CNAME for the custom domain pointing to the Commerce-provided front door endpoint. 
+- For a new domain, you can update the CNAME to a Commerce-provided front door endpoint immediately. Traffic will be routed through the Commerce front door endpoint after the CNAME record is updated.
+- For a domain serving an existing website, you must verify that the new domain is set up correctly and execute the CNAME change to point the custom domain to the Commerce front door endpoint at the scheduled cutover time.
+- Existing traffic to the custom domain should not be impacted until the CNAME change is completed.
 
 To create a service request in LCS, within your environment go to **Support \> Support issues** and select **Submit an incident**.
 
