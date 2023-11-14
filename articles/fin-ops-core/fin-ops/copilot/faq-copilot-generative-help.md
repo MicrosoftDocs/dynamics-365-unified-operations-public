@@ -17,7 +17,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [This article is prerelease documentation and is subject to change.]
 
-This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Generative help and guidance with Copilot*. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Generative help and guidance with Copilot* feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 > [!IMPORTANT]
 >
