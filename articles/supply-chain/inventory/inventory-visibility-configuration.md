@@ -24,8 +24,6 @@ This article describes how to configure Inventory Visibility using the Inventory
 Before you start to work with Inventory Visibility, you must complete the following configuration as described in this article:
 
 - [Data source configuration](#data-source-configuration)
-- [Partition configuration](#partition-configuration)
-- [Product index hierarchy configuration](#index-configuration)
 - [Reservation configuration (optional)](#reservation-configuration)
 - [Query preload configuration (optional)](#query-preload-configuration)
 - [Default configuration sample](#default-configuration-sample)
@@ -40,30 +38,6 @@ In Power Apps, the **Configuration** page of the [Inventory Visibility app](inve
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
 
-## <a name="feature-switch"></a>Enable Inventory Visibility features in Power Apps feature management
-
-The Inventory Visibility Add-in adds several new features to your Power Apps installation. By default, these features are turned off. To use them, open the **Configuration** page, and then, on the **Feature Management** tab, turn on the following features as you require.
-
-| Feature Management name | Description |
-|---|---|
-| *OnHandReservation* | This feature lets you create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
-| *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. The default synchronization frequency is once every 15 minutes, and can be set as high as once every 5 minutes. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
-| *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. It provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
-| *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
-| *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ring fencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
-| *AdvancedWHS* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
-
-> [!IMPORTANT]
-> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
-
-## <a name="get-service-endpoint"></a>Find the service endpoint
-
-If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Details** in the upper-right corner. The page will show the correct service endpoint. You can also find the endpoint in Microsoft Dynamics Lifecycle Services, as described in [Find the endpoint according to your Lifecycle Services environment](inventory-visibility-api.md#endpoint-lcs).
-
-> [!NOTE]
-> Use of an incorrect endpoint can cause a failed Inventory Visibility installation and errors when Supply Chain Management is synced to Inventory Visibility. If you aren't sure what your endpoint is, contact your system administrator. Endpoint URLs use the following format:
->
-> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
@@ -306,103 +280,34 @@ When this computation formula is used, the new query result will include the cus
 
 The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
-## <a name="partition-configuration"></a>Partition configuration
-
-Currently, the partition configuration consists of two base dimensions (`SiteId` and `LocationId`) that indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The following table shows the default partition configuration that the Inventory Visibility Add-in provides.
-
-| Base dimension | Hierarchy |
-|---|---|
-| `SiteId` | 1 |
-| `LocationId` | 2 |
-
-The solution includes this partition configuration by default. Therefore, *you don't have to define it yourself*.
-
-> [!IMPORTANT]
-> Don't customize the default partition configuration. If you delete or change it, you're likely to cause an unexpected error.
-
-## <a name="index-configuration"></a>Product index hierarchy configuration
-
-Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
-
-Inventory Visibility provides flexibility by letting you set up *indexes* to improve the performance of your queries. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
-
-| Name | Description |
-|---|---|
-| Set number | Dimensions that belong to the same set (index) will be grouped together, and the same set number will be allocated to them. |
-| Dimension | Base dimensions that the query result is aggregated on. |
-| Hierarchy | The hierarchy lets you increase the performance of specific combinations of dimension when used in filter and group-by query parameters. For example, if you set up a dimension set with a hierarchy sequence of `(ColorId, SizeId, StyleId)`, then the system can process queries related to four dimension combinations more quickly. The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. Other combinations won't be sped up. Filters aren't restricted by order but must be inside these dimensions if you want to improve their performance. For more information, see the example that follows. |
-
-To set up your product hierarchy index, follow these steps.
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Product Hierarchy Index** tab, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
-1. By default, a list of indexes is provided. To modify an existing index, select **Edit** or **Add** in the section for the relevant index. To create a new index set, select **New index set**. For each row in every index set, in the **Dimension** field, select from the list of base dimensions. Values for the following fields are automatically generated:
-
-    - **Set number** – Dimensions that belong to the same group (index) will be grouped together, and the same set number will be allocated to them.
-    - **Hierarchy** – The hierarchy increases the performance of specific combinations of dimension when used in filter and group-by query parameters.
-
-> [!TIP]
-> Here are a few tips to keep in mind when setting up your index hierarchy:
->
-> - Base dimensions that are defined in the partition configuration shouldn't be defined in index configurations. If a base dimension is defined again in the index configuration, you won't be able to query by this index.
-> - If you only need to query inventory that is aggregated by all dimension combinations, then set up a single index that contains the base dimension `Empty`.
-
-### Example
-
-This section provides an example that shows how the hierarchy works.
-
-The following table provides a list of available inventory for this example.
-
-| Item | ColorId | SizeId | StyleId | Quantity |
-|---|---|---|---|---|
-| D0002 | Black | Small | Wide | 1 |
-| D0002 | Black | Small | Regular | 2 |
-| D0002 | Black | Large | Wide | 3 |
-| D0002 | Black | Large | Regular | 4 |
-| D0002 | Red | Small | Wide | 5 |
-| D0002 | Red | Small | Regular | 6 |
-| D0002 | Red | Large | Regular | 7 |
-
-The following table shows how the index hierarchy is set up.
-
-| Set Number | Dimension | Hierarchy |
-|---|---|---|
-| 1 | `ColorId` | 1 |
-| 1 | `SizeId` | 2 |
-| 1 | `StyleId` | 3 |
-
-The index lets you query the on-hand inventory in the following ways:
-
-- `()` – Grouped by all
-
-    - D0002, 28
-
-- `(ColorId)` – Grouped by `ColorId`
-
-    - D0002, Black, 10
-    - D0002, Red, 18
-
-- `(ColorId, SizeId)` – Grouped by the combination of `ColorId` and `SizeId`
-
-    - D0002, Black, Small, 3
-    - D0002, Black, Large, 7
-    - D0002, Red, Small, 11
-    - D0002, Red, Large, 7
-
-- `(ColorId, SizeId, StyleId)` – Grouped by the combination of `ColorId`, `SizeId`, and `StyleId`
-
-    - D0002, Black, Small, Wide, 1
-    - D0002, Black, Small, Regular, 2
-    - D0002, Black, Large, Wide, 3
-    - D0002, Black, Large, Regular, 4
-    - D0002, Red, Small, Wide, 5
-    - D0002, Red, Small, Regular, 6
-    - D0002, Red, Large, Regular, 7
 
 ## Available to promise configuration (optional)
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
+
+## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries (optional)
+
+Inventory Visibility can periodically fetch and store a set of on-hand inventory summary data based on your preconfigured dimensions. This provides the following benefits:
+
+- A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
+- An inventory summary that is compatible with items enabled for warehouse management processes (WMS).
+
+See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) for more information about how to work with this feature after you have set it up.
+
+> [!IMPORTANT]
+> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
+
+Follow these steps to set up the feature:
+
+1. Sign into the Inventory Visibility power app.
+1. Go to **Configuration \> Feature Management & Settings**.
+1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure.
+1. Open the **Preload Setting** tab.
+1. In the **Step 1: Clean up Preload Storage** section, select **Clean** to clean up the database and make it ready to accept your new group-by settings.
+1. In the **Step 2: Set up Group By Values** section, in the **Group Result By** field, enter a comma-separated list of field names by which to group your query results. Once you have data in the preload storage database, you won't be able to change this setting until you clean the database, as described in the previous step.
+1. Go to **Configuration \> Feature Management & Settings**.
+1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature.
+1. Select **Update Configuration** in the upper-right corner of the **Configuration** page to commit your changes.
 
 ## Complete and update the configuration
 

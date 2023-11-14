@@ -606,6 +606,8 @@
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
+        - name: Credit statistics FAQ
+          herf: accounts-receivable/Credit-statistics-faq.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range

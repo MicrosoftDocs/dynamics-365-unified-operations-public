@@ -17,6 +17,8 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
+<!-- KFM: Preview until further notice -->
+
 Transformations let you transform the imported data in a selected table into time series. You can then use the time series to create a forecast, do a comparison to a forecast, or do calculations. For example, you might want to shift the historical demand time from last year by 12 months, so that it can be used as the basis for next year's forecast. Alternatively, you might want to combine daily historical demand data into monthly buckets, because you run planning on a monthly basis.
 
 The Demand planning app lets you build a collection of *transformation profiles*. Each profile transforms data from a specific data table that's already set up in the app into a time series that you can analyze by using the app.

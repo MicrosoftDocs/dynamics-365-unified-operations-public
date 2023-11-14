@@ -60,41 +60,34 @@ The following illustration shows the allocation hierarchy and allocation groups.
 
 ## Set up inventory allocation
 
-The inventory allocation feature consists of the following components:
+To setup Inventory Allocation, user follows below process: 
+- Enable allocation feature and update configuration to initialize relevant setups. 
+- Configure the `available to allocate` calculated measure and `allocated` physical measure.
+- Configure allocation groups
+- Update configuration to activate all the changes
 
-- The predefined, allocation-related data source, physical measures, and calculated measures.
-- Customizable allocation groups that have a maximum of eight levels.
-- A set of allocation application programming interfaces (APIs):
-  - allocate
-  - reallocate
-  - unallocate
-  - consume
-  - query
+ ### Enable inventory allocation feature
 
-The process of configuring the allocation feature has three steps:
+1. Enable inventory allocation feature
+   
+- Setup Inventory Allocation feature in the Inventory Visibility app by going to **Settings \> Feature Management \> Inventory Allocation \> Manage**.
+- `Feature Name` is an non-editable field with value "Allocation"
+- `Enable feature` controls on-off of the feature. Feature is enabled when toggled on, and disabled otherwise. Enable the feature and update configuration to proceed.
 
-- Enable the feature in the Inventory Visibility app by going to **Configuration \> Feature Management & Settings \> Allocation**.
-- Set up the [data source](inventory-visibility-configuration.md#data-source-configuration) and its [measures](inventory-visibility-configuration.md#data-source-configuration-physical-measures).
-- Set up the allocation group name and hierarchy.
+2. Configure the `available to allocate` calculated measure and `allocated` physical measure.
 
-### Predefined data source
+- Go to **Settings \> Feature Management \> Data Source Settings \> Manage**. Select data source with name `@iv`. Go to `Calculated Measures` section, select the record with name `@available_to_allocate`. You can manually create one if it does not exist. 
+
+- Modify the calculated measure details formula in `Calculated Measure Details` section as per actual needs. Be sure to always include `@iv.@allocated` physical measure in the formula. 
 
 When you enable the allocation feature and call the configuration update API, Inventory Visibility creates one predefined data source and several initial measures.
 
-The data source is named `@iv`. It includes a set of default physical measures. You can view them from the Inventory Visibility app by going to **Configuration \> Data Source**. You should see **Datasource - @IV**. Expand the `@iv` data source to view the list of initial physical measures:
+The data source is named `@iv`. It includes a set of default physical measures:
 
-- `@iv`
   - `@allocated`
   - `@cumulative_allocated`
   - `@consumed`
   - `@cumulative_consumed`
-
-Select the **Calculated Measures** tab to view the initial calculated measure, which is named `@iv.@available_to_allocate`:
-
-- `@iv`
-  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
-
-### Add other physical measures to the available-to-allocate calculated measure
 
 To use allocation, you must correctly set up the formula for the available-to-allocate calculated measure (`@iv.@available_to_allocate`). For example, you have the `fno` data source and the `onordered` measure, and the `pos` data source and the `inbound` measure, and you want to do allocation on the on-hand stock for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here's an example:
 
@@ -102,27 +95,42 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 > [!NOTE]
 > Data source `@iv` is a predefined data source and the physical measures defined in `@iv` with prefix `@` are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature.
->
 > You can add new physical measures to the predefined calculated measure `@iv.@available_to_allocate`, but you must not change its name.
 
-### Manage allocation groups
+### Set up allocation group
 
-A maximum of eight allocation group names can be set, corresponding to **Group0** to **Group7** in the hierarchy. **Group0** and **Group7** correspond to the highest and lowest levels of hierarchy, respectively. When creating an allocation, hierarchies must be specified from the highest to the lowest order. For example, suppose your configuration has *Country/region* for **Group0**, *State* for **Group1**, and *City* for **Group2**. *Country/region* and *State* are both required when specifying *City*, however, an allocation can be created with *Country/region* and *State*, or *Country/region* only. Follow these steps to view and update allocation groups.
+- Go back to **Settings \> Feature Management \> Inventory Allocation \> Manage**. `Allocation group` section contains the group name for allocations. The `GroupLevel` field controls the allocation group names and corresponding hierarchies valid from 0~7. Double-click on the record to edit the group name and level. 
+-  A maximum of eight allocation group names can be set, corresponding to **Group0** to **Group7** in the hierarchy. **Group0** and **Group7** correspond to the highest and lowest levels of hierarchy, respectively. When creating an allocation, hierarchies must be specified from the highest to the lowest order. For example, suppose your configuration has *Country/region* for **Group0**, *State* for **Group1**, and *City* for **Group2**. *Country/region* and *State* are both required when specifying *City*, however, an allocation can be created with *Country/region* and *State*, or *Country/region* only. Follow these steps to view and update allocation groups.
 
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. In the default allocation configuration, there are four levels of hierarchy, from the highest to lowest: *Channel* (**Group0**), *customerGroup* (**Group1**), *Region* (**Group2**), and *OrderType* (**Group3**).
-1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
+Update configuration to activate all the changes
 
-    > [!IMPORTANT]
-    > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](#allocation-tips).
+### Setup allocation group and enable feature from Inventory Visibility app's Legacy UI
 
-1. When you've finished configuring the allocation group and hierarchy settings, select **Save**, then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
+1. Enable inventory allocation feature
 
-If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
+Go to **Inventory Visibility (Legacy UI) \> Configuration**, go to `Feature Management & Settings` tab page and enable the feature with name `Inventory Allocation`. Click `Update configuration` button on top-right corner to activate this change. 
+
+2.  Configure the `available to allocate` calculated measure and `allocated` physical measure.
+-  Select the **Calculated Measures** tab to view the initial calculated measure, which is named `@iv.@available_to_allocate`. You can edit the formula based on actual needs. 
+
+3. 
+-  In the default allocation configuration, there are four levels of hierarchy, from the highest to lowest: *Channel* (**Group0**), *customerGroup* (**Group1**), *Region* (**Group2**), and *OrderType* (**Group3**).
+ You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
+
+4. Update configuration to activate all the changes
+-  When you've finished configuring the allocation group and hierarchy settings, select **Save**, then select **Update Configuration** in the upper right. 
+
+The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article. If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
+
+> [!Note]
+> The allocation feature enabled value and allocation group changes in Settings and Legacy UI will not affect each other. 
+
+> [!IMPORTANT]
+> Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](#allocation-tips).
 
 ### <a name="allocation-tips"></a>Tips for using allocation
 
-- For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
+- For every product, the allocation function should use in the same *dimension level* according to the onhand index configuration you set in the [onhand index configuration](inventory-visibility-power-platform.md#onhand-index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
 - **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to use the `unallocate` API to remove all old data before updating the configuration. However, you don't need to clean up the data if you are only adding new allocation groups to the lowest hierarchy.
 - Allocation will succeed only if the product has a positive `available_to_allocate` quantity.
 - To allocate products from a high *allocation hierarchy* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[`Online`, `VIP`\] to the sub allocation group \[`Online`, `VIP`, `EU`\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
