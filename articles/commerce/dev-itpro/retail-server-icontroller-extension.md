@@ -2,7 +2,7 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This article explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: josaw1
-ms.date: 01/13/2023
+ms.date: 11/14/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -26,7 +26,7 @@ This article applies to Retail software development kit (SDK) version 10.0.11 an
 The Retail SDK includes only a few samples of end-to-end Retail Server extensions that include the Commerce runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the **RetailSDK\\SampleExtensions\\RetailServer** folder.
 
 > [!NOTE]
-> If you create a new Retail Server extension API that will have high volume and need to read from channel database, please consider enabling cache for the database reading. Otherwise, it will consume too much resources of Retail Server and channel database, and cause overall CSU performance issues which will impact your business.
+> If you create a new Retail Server extension API that will have high volume and need to read from the channel database, Microsoft recommends that you enable the cache for the database reading. Otherwise, the extension will consume too much Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that impact your business.
 
 ## End-to-end sample repository in the Retail SDK
 
