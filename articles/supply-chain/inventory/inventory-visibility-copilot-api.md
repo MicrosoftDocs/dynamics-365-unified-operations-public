@@ -1,5 +1,5 @@
 ---
-title: Natural-language inventory search with Copilot API (preview)
+title: Inquire inventory with Copilot API (preview)
 description: The inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function. The functionality is implemented as an API, so developers can easily integrate it into their own applications and web sites. 
 author: Weijiesa
 ms.author: weijiesa
@@ -13,20 +13,20 @@ ms.custom: bap-template
 ---
 
 
-# Natural-language inventory search with Copilot API (preview)
+# Inquire inventory with Copilot API (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
-The inventory visibility service interacts with Microsoft Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is provided as an API, so developers can easily use it to create an interactive inventory chatbot for their own applications and web sites. By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
+The inventory visibility service interacts with Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is provided as an API, so developers can easily use it to create an interactive inventory chatbot for their own applications and web sites. By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
 
 For example, a user might send the following natural-language query:
 
 > What is the inventory for Silver Chronograph Watch in USMF?
 
-And Copilot would respond with the following answer:
+And Copilot could respond with the following answer:
 
 > Silver Chronograph Watch's product number is 81325. There are 888 Silver Chronograph Watches available in USMF. Here are the details:
 >
@@ -45,7 +45,7 @@ To use natural-language inventory search with Copilot, your system must meet the
 
 - You must be running Inventory Visibility version 1.2.2.54 or newer.
 
-## Natural-language inventory search API
+## Use the inquire inventory with Copilot API
 
 You submit inventory queries and receive results using the query API, which is defined as follows
 
