@@ -284,6 +284,21 @@ Follow these steps to set up and run a soft reservation.
 
 Allocation operations are only supported in Legacy UI. 
 
+## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries
+
+By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the advanced filter, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
+
+The **Inventory summary** page provides three fields above the grid (**Default dimension**, **Custom dimension**, and **Measure**) that you can use to control which columns are visible. You can also select any column header to filter or sort the current result by that column. The following screenshot highlights the dimension, filtering, result count, and "load more" fields available on the **Inventory summary** page.
+
+![The Inventory summary page.](media/inventory-visibility-onhand-list.png "The Inventory summary page")
+
+Because you'll have predefined the dimensions used for loading summary data, the **Preload the Inventory Visibility summary** page displays dimension-related columns. *The dimensions aren't customizable&mdash;the system only supports site and location dimensions for preloaded on-hand lists.* The **Preload the Inventory Visibility summary** page provides filters that are similar to those on the **Inventory summary** page, except the dimensions are already selected. The following screenshot highlights the filtering fields available on the **Preload the Inventory Visibility summary** page.
+
+![The Preload the Inventory Visibility summary page.](media/inventory-visibility-preload-onhand-list.png "The Preload the Inventory Visibility summary page")
+
+At the bottom of the **Preload the Inventory Visibility summary** and  **Inventory summary** pages, you'll find information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There's also a **Load more** button that you can use to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, the next 1,000 available records will be loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
+
 ## Authenticate the Inventory Visibility app (Legacy UI)
 
 1. Sign in to your Power Apps environment.
@@ -373,6 +388,7 @@ The **Onhand Query** tab of the **Operational Visibility** page allows users to 
 The **Reservation Posting** tab of the **Operational Visibility** page allows users to make soft reservations to inventory.
 
 > [!NOTE]
+
 > The capability of making soft reservations through user interface is intended for feature test. Each soft reservation request should be associated with a transaction order line change (creation, modification, deletion, and so on). Therefore, it is recommended to only make soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and run a soft reservation.
@@ -394,3 +410,9 @@ Follow these steps to set up and run a soft reservation.
 ### Allocation (Legacy UI)
 
 Refer to [use the allocation user interface](inventory-visibility-allocation.md#use-the-allocation-user-interface) for details.
+
+> As with the *OnHandMostSpecificBackgroundService* feature, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
+>
+> When you change the settings for a calculated measure, data on the **Preload the Inventory Visibility Summary** page won't update automatically until the related product data is modified.
+>
+> If your **Preload the Inventory Visibility Summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
