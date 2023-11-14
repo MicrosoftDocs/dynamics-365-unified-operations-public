@@ -105,8 +105,8 @@ After the prerequisites are met, follow these steps:
     1. In the **Lookup result** field, select the following:
 
        - **COMUN:** VAT withholding practiced common regime.
-       - **IDED:** VAT higher value of the deductible cost or expense
-       - **INDED:** VAT higher value of the non-deductible cost or expense
+       - **IDED:** VAT higher value of the deductible cost or expense.
+       - **INDED:** VAT higher value of the non-deductible cost or expense.
        - **NO DOM:** VAT withholding practiced to foreign.
        - **RASUMC:** CREE withholding suffered.
        - **RECREE:** CREE withholding practiced.
