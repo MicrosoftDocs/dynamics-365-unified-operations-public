@@ -24,7 +24,7 @@ The inventory visibility service interacts with Copilot in Dynamics 365 Supply C
 
 For example, a user might send the following natural-language query:
 
-> What is the inventory for Silver Chronograph Watch in USMF?
+> What's the inventory for Silver Chronograph Watch in USMF?
 
 And Copilot could respond with the following answer:
 
@@ -36,6 +36,8 @@ And Copilot could respond with the following answer:
 > Available physical quantity: 888<br>
 > Physical inventory quantity: 888<br>
 > Posted quantity: 888
+>
+> This is AI-generated content. AI-generated content can contain mistakes – please review.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
