@@ -50,6 +50,7 @@ The following table lists the changes that are supported online and the related 
 > These changes occur during the **Pre-servicing** and **Post-servicing** phases with online options. The execution time of these phases depends on numerous factors, such as the type of schema change, the number of changes, the size of the tables, and any transient blockers.
 >
 > Field changes, such as memo to string field changes, and clustered index changes can be time consuming, because the table must be rebuilt. Explore options to add a new field or a new table. Alternatively, if the table is a staging table, determine whether the data can be removed before the change.
+> 
 > String size decrease changes are ignored during database synchronization, because they cause data loss.
 
 ## Online unsupported changes
