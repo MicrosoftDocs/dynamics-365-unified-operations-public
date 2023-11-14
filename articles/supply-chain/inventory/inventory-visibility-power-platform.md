@@ -93,6 +93,41 @@ Another way to post a soft reservation is to make direct API requests. Use the p
 
 For information about how to manage allocations from the user interface and APIs, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md).
 
+## <a name="inventory-summary"></a>Inventory summary
+
+The **Inventory summary** page provides an inventory summary for products together with all dimensions. It's a customized view for the *Inventory OnHand Sum* entity. Inventory summary data is synced periodically from Inventory Visibility.
+
+To enable the **Inventory summary** page and set the synchronization frequency, follow these steps:
+
+1. Open the **Configuration** page.
+1. Open the **Feature Management & Settings** tab.
+1. Set the toggle switch for the *OnHandMostSpecificBackgroundService* feature to *Yes*.
+1. When the feature is enabled, the **Service Configuration** section becomes available and includes a row for configuring the **OnHandMostSpecificBackgroundService** feature. This setting lets you choose the frequency at which inventory summary data is synced. Use the **Up** and **Down** buttons in the **Value** column to change the time between syncs (which can be as low as 5 minutes). Then select **Save**.
+
+    ![The OnHandMostSpecificBackgroundService Setting](media/inventory-visibility-ohms-freq.png "The OnHandMostSpecificBackgroundService Setting")
+
+1. Select **Update configuration** to save all the changes.
+
+> [!NOTE]
+> The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment.
+>
+> When you change the settings for a calculated measure, data on the **Inventory summary** page won't update automatically until the related product data is modified.
+>
+> If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+
+## <a name="additional-tip-for-viewing-data"></a>Filter and browse the inventory summaries
+
+By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the advanced filter, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
+
+The **Inventory summary** page provides three fields above the grid (**Default dimension**, **Custom dimension**, and **Measure**) that you can use to control which columns are visible. You can also select any column header to filter or sort the current result by that column. The following screenshot highlights the dimension, filtering, result count, and "load more" fields available on the **Inventory summary** page.
+
+![The Inventory summary page.](media/inventory-visibility-onhand-list.png "The Inventory summary page")
+
+Because you'll have predefined the dimensions used for loading summary data, the **Preload the Inventory Visibility summary** page displays dimension-related columns. *The dimensions aren't customizable&mdash;the system only supports site and location dimensions for preloaded on-hand lists.* The **Preload the Inventory Visibility summary** page provides filters that are similar to those on the **Inventory summary** page, except the dimensions are already selected. The following screenshot highlights the filtering fields available on the **Preload the Inventory Visibility summary** page.
+
+![The Preload the Inventory Visibility summary page.](media/inventory-visibility-preload-onhand-list.png "The Preload the Inventory Visibility summary page")
+
+At the bottom of the **Preload the Inventory Visibility summary** and  **Inventory summary** pages, you'll find information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There's also a **Load more** button that you can use to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, the next 1,000 available records will be loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 ## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]

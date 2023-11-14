@@ -404,30 +404,6 @@ The index lets you query the on-hand inventory in the following ways:
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries (optional)
-
-Inventory Visibility can periodically fetch and store a set of on-hand inventory summary data based on your preconfigured dimensions. This provides the following benefits:
-
-- A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
-- An inventory summary that is compatible with items enabled for warehouse management processes (WMS).
-
-See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) for more information about how to work with this feature after you have set it up.
-
-> [!IMPORTANT]
-> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
-
-Follow these steps to set up the feature:
-
-1. Sign into the Inventory Visibility power app.
-1. Go to **Configuration \> Feature Management & Settings**.
-1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure.
-1. Open the **Preload Setting** tab.
-1. In the **Step 1: Clean up Preload Storage** section, select **Clean** to clean up the database and make it ready to accept your new group-by settings.
-1. In the **Step 2: Set up Group By Values** section, in the **Group Result By** field, enter a comma-separated list of field names by which to group your query results. Once you have data in the preload storage database, you won't be able to change this setting until you clean the database, as described in the previous step.
-1. Go to **Configuration \> Feature Management & Settings**.
-1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature.
-1. Select **Update Configuration** in the upper-right corner of the **Configuration** page to commit your changes.
-
 ## Complete and update the configuration
 
 After you've completed the configuration, you must commit all the changes to Inventory Visibility. Follow these steps to commit your changes.
