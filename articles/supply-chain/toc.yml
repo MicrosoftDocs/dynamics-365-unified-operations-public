@@ -1737,7 +1737,7 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Copilot for Inventory Visibility (preview)
+        - name: Natural-language inventory search with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md

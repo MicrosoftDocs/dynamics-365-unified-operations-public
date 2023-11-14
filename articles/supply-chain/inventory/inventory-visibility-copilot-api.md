@@ -1,6 +1,6 @@
 ---
-title: Copilot for Inventory Visibility (preview)
-description: Copilot for Inventory Visibility is AI-powered inventory management solution that provides real-time inventory query, seamless system integration, and extensible solutions
+title: Natural-language inventory search with Copilot (preview)
+description: The inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function. The functionality is implemented as an API, so developers can easily integrate it into their own applications and web sites. 
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
@@ -13,28 +13,43 @@ ms.custom: bap-template
 ---
 
 
-# Copilot for Inventory Visibility (preview)
+# Natural-language inventory search with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
-Copilot for Inventory Visibility is AI-powered inventory management solution designed to revolutionize the way businesses manage and optimize their inventory. In a dynamic and competitive marketplace, efficient and real-time inventory management is critical for success. Copilot for Inventory Visibility offers a natural-language based feature that provides real-time inventory query, seamless system integration, and extensible solutions. By partnering with Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
+The inventory visibility service interacts with Microsoft Copilot in Dynamics 365 Supply Chain Management to provide a natural-language search interface. It lets users formulate inventory queries using natural language and provides natural-language answers in real time. The functionality is provided as an API, so developers can easily integrate it into their own applications and web sites. By partnering with Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
 
-Copilot for Inventory Visibility introduces an API-driven solution that simplifies and revolutionizes the management of your inventory.
+For example, a user might send the following natural-language query:
+
+> What is the inventory for Silver Chronograph Watch in USMF?
+
+And Copilot would respond with the following answer:
+
+> Silver Chronograph Watch's product number is 81325. There are 888 Silver Chronograph Watches available in USMF. Here are the details:
+>
+> Location: Site 1, Location 13
+>
+> Available ordered quantity: 888<br>
+> Available physical quantity: 888<br>
+> Physical inventory quantity: 888<br>
+> Posted quantity: 888
+
+
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 
-To use the Copilot for Inventory Visibility, your system must meet the following requirement:
+To use natural-language inventory search with Copilot, your system must meet the following requirement:
 
 - You must be running Inventory Visibility version 1.2.2.54 or newer.
 
-## Copilot for Inventory Visibility API
+## Natural-language inventory search API
 
-You can interact with Copilot for Inventory Visibility by using its API.
+You submit inventory queries and receive results using the query API, which is defined as follows
 
 ```txt
 Path:
@@ -57,7 +72,7 @@ The following example shows sample body content.
 
 ```json
    {
-        "Text" : "what's the inventory of product D0001 in organization usmf, site 1, location 11"
+        "Text" : "What's the inventory of product D0001 in organization USMF, site 1, location 11?"
    }
 ```
 
