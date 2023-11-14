@@ -41,15 +41,16 @@ The following table lists the changes that are supported online and the related 
 | All field changes that involve increases in the string size. Decreases in the string size are ignored, because they can cause data truncation. | Pre-servicing |
 | All string to memo field changes that don't require dependent index drops. | Pre-servicing |
 | All memo to string field changes that don't cause data truncation. | Pre-servicing |
-| All additions and modifications of nonclustered indexes. | Pre-servicing |
-| Nonprimary clustered index changes that don't require clustered index drops, including adding fields to a nonprimary clustered index, removing fields from it, and changing it from one index to another. | Pre-servicing |
-| Nonclustered primary key changes from one index to another. | Pre-servicing |
-| Columnstore index changes that don't require index drops. | Pre-servicing |
+| All additions and modifications of nonclustered indexes. | Post-servicing |
+| Nonprimary clustered index changes that don't require clustered index drops, including adding fields to a nonprimary clustered index, removing fields from it, and changing it from one index to another. | Post-servicing |
+| Nonclustered primary key changes from one index to another. | Post-servicing |
+| Columnstore index changes that don't require index drops. | Post-servicing |
 
 > [!NOTE]
 > These changes occur during the **Pre-servicing** and **Post-servicing** phases with online options. The execution time of these phases depends on numerous factors, such as the type of schema change, the number of changes, the size of the tables, and any transient blockers.
 >
-> Field changes, such as memo to string field changes, and clustered index changes can be time consuming, because the table must be rebuilt. Explore options to add a new field or a new table. Alternatively, if the table is a staging table, determine whether the data can be removed before the change. String size decrease changes are ignored during database synchronization, because they cause data loss.
+> Field changes, such as memo to string field changes, and clustered index changes can be time consuming, because the table must be rebuilt. Explore options to add a new field or a new table. Alternatively, if the table is a staging table, determine whether the data can be removed before the change.
+> String size decrease changes are ignored during database synchronization, because they cause data loss.
 
 ## Online unsupported changes
 
