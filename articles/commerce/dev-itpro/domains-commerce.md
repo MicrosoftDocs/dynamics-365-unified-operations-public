@@ -132,7 +132,7 @@ To use the Commerce-supplied Azure Front Door instance, you must create a servic
 
 - You must provide your company name, the production domain, environment ID, and production e-commerce tenant name. 
 - You must to confirm if this service request is for an existing domain (used for a currently active site) or a new domain. 
-- The domain verification and SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a 7-working-day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
+- The domain verification and SSL certificate are obtained via DNS TXT record verification. This process involves multiple sequential steps and it has a seven working day service level agreement (SLA) for a domain to go live. The process consists of the following steps:
   1. You create a support ticket requesting the domain setup.
   1. Microsoft support contacts you with the DNS record to verify the domain.
   1. You create the DNS record in your DNS provider's service.
