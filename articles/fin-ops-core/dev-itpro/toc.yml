@@ -1045,6 +1045,8 @@ items:
             href: lifecycle-services/api/v1/reference-start-stop-environments.md
           - name: Fetch environment metadata
             href: lifecycle-services/api/v1/reference-environment-metadata.md
+          - name: Retrieve environment metadata via Logic Apps tutorial
+            href: lifecycle-services/api/tutorial-retrieve-environment-metadata-logic-apps.md
           - name: Fetch environment history
             href: lifecycle-services/api/v1/reference-environment-history.md
           - name: Fetch environment RSAT certificate ZIP
