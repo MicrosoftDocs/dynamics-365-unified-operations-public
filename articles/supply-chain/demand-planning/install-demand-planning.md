@@ -60,11 +60,6 @@ Follow these steps to enable and configure Demand planning in Supply Chain Manag
     - **Quantity of numbers** – Set the value to *500*.
 
 1. On the Action Pane, select **Save**.
-1. You must now refresh the data entity list in Supply Chain Management to ensure that data imports and exports between Supply Chain Management and Demand planning will work correctly. Follow these steps:
-    1. Go to **System administration \> Workspaces \> Data management**.
-    1. Select the **Framework parameters** tile.
-    1. Open the **Entity settings** tab.
-    1. Select **Refresh entity list**.
 
 ## Security roles and duties
 
