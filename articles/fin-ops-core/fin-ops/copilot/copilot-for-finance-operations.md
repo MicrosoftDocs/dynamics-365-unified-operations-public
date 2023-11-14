@@ -1,6 +1,6 @@
 ---
-title: Microsoft Copilot for finance and operations apps overview (preview)
-description: This article provides information about Microsoft Copilot for finance and operations apps and explains how to use it.
+title: Overview of Copilot capabilities in finance and operations apps (preview)
+description: This article provides information about Copilot capabilities in finance and operations apps and explains how to use them.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Microsoft Copilot for finance and operations apps overview (preview)
+# Overview of Copilot capabilities in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
 [This article is prerelease documentation and is subject to change.]
 
-Microsoft Copilot for finance and operations apps gives users access to AI capabilities that augment the application experiences and functionality.
+Copilot gives users access to AI capabilities that augment the application experiences and functionality of finance and operations apps.
 
 Copilot brings a growing set of skills that help users complete various tasks. It can appear in many different user experiences. Here are some examples:
 
@@ -27,14 +27,13 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 
 > [!IMPORTANT]
 >
-> - The Microsoft Copilot functionality that's described in this article is a preview feature.
+> - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
-> - To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 ## Generative help and guidance
 
-The Copilot skill for in-app help guidance uses the power of generative AI to provide contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
+Copilot provides in-app help guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation though the extensive capabilities of finance and operations apps.
 
 [<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
 
@@ -64,5 +63,5 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 
 ## See also
 
-- For administrators: [Enable Microsoft Copilot for finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
-- [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md)
+- For administrators: [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
+- [Responsible AI FAQs for generative help and guidance with Copilot](../../dev-itpro/responsible-ai/responsible-ai-overview.md)
