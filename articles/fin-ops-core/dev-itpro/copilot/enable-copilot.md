@@ -1,6 +1,6 @@
 ---
-title: Enable Microsoft Copilot for finance and operations apps (preview)
-description: This article provides instructions for administrators on how to enable Copilot for generative help and guidance for Microsoft finance and operations apps
+title: Enable Copilot capabilities in finance and operations apps (preview)
+description: This article provides instructions for administrators on how to enable Copilot capabilities in finance and operations apps
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -12,25 +12,24 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Enable Microsoft Copilot for finance and operations apps (preview)
+# Enable Copilot capabilities in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
 [This article is prerelease documentation and is subject to change.]
 
-Microsoft Copilot for finance and operations apps brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
+Copilot brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
 
-This article describes how to enable Copilot for finance and operations apps.
+This article describes how to enable Copilot capabilities in finance and operations apps.
 
 > [!IMPORTANT]
 >
-> - The Microsoft Copilot functionality that's described in this article is a preview feature.
+> - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
-> - To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 ## Prerequisites
 
-To enable Copilot for finance and operations apps, you must have the following prerequisites in place:
+To enable Copilot capabilities in finance and operations apps, you must have the following prerequisites in place:
 
 - You must be running version 10.0.38 or later of finance and operations apps.
 - You must have enabled the Power Platform integration in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
