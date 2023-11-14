@@ -20,7 +20,7 @@ ms.custom: bap-template
 
 <!-- KFM: Preview until further notice -->
 
-The inventory visibility service interacts with Microsoft Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is provided as an API, so developers can easily use it to create an interactive inventory chatbot for their applications and web sites. By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
+The inventory visibility service interacts with Microsoft Copilot in Dynamics 365 Supply Chain Management to provide a natural-language inventory search feature. It lets users ask questions about inventory and receive answers in real time. The functionality is provided as an API, so developers can easily use it to create an interactive inventory chatbot for their own applications and web sites. By using Copilot, organizations can gain control over their inventory and enhance operational efficiency, ultimately leading to increased profitability and improved customer satisfaction.
 
 For example, a user might send the following natural-language query:
 
@@ -36,8 +36,6 @@ And Copilot would respond with the following answer:
 > Available physical quantity: 888<br>
 > Physical inventory quantity: 888<br>
 > Posted quantity: 888
-
-
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
