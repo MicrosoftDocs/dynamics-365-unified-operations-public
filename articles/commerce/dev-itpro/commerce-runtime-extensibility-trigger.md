@@ -2,7 +2,7 @@
 title: Commerce runtime (CRT) extensibility and triggers
 description: This article explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 author: josaw1
-ms.date: 08/20/2020
+ms.date: 11/14/2023
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -30,7 +30,7 @@ Commerce runtime (CRT) triggers give you a way to extend the CRT workflow, and l
 -   **OnExecuted** – This method is invoked after the request has been processed by a corresponding **IRequestHandler** implementation.
 
 > [!NOTE]
-> If you extend a CRT request that is used by a high-volume API (e.g., Carts/AddCartLines, Products/GetByIds), and your extension needs to read from channel database, please consider enabling cache for the database reading. Otherwise, it will consume too much resources of Retail Server and channel database, and cause overall CSU performance issues which will impact your business.
+> If you extend a CRT request that is used by a high-volume API (for example, Carts/AddCartLines or Products/GetByIds), and your extension needs to read from the channel database, Microsoft recommends that you enable the cache for the database reading. Otherwise, the extension will consume too much Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that impact your business.
 
 ## CRT trigger extension
 To implement a trigger, you must complete these tasks, as shown in the code example that follows:
