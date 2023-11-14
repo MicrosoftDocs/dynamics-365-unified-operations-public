@@ -1,5 +1,5 @@
 ---
-title: FAQ for Copilot for generative help and guidance (Preview)
+title: FAQ for Copilot for generative help and guidance (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the Copilot for generative help and guidance. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: cabeln
 ms.author: cabeln
@@ -12,9 +12,19 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# FAQ for Copilot for generative help and guidance (Preview)
+# FAQ for Copilot for generative help and guidance (preview)
+
+[!include [banner](../includes/banner.md)]
+[This article is prerelease documentation and is subject to change.]
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Copilot for generative help and guidance*. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+
+> [!IMPORTANT]
+>
+> - The Microsoft Copilot functionality that's described in this article is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> - To learn about the capabilities and limitations of AI-powered and Copilot features, see [Responsible AI FAQs for Dynamics 365 finance and operations platform](../../dev-itpro/responsible-ai/responsible-ai-overview.md).
 
 ## What is Copilot for generative help and guidance?
 
@@ -63,7 +73,7 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 ## See also
 
-- [Microsoft Copilot for finance and operations apps (Preview)](copilot-for-finance-operations.md)
-- [Enable Microsoft Copilot for finance and operations apps (Preview)](../../dev-itpro/copilot/enable-copilot.md)
+- [Microsoft Copilot for finance and operations apps (preview)](copilot-for-finance-operations.md)
+- [Enable Microsoft Copilot for finance and operations apps (preview)](../../dev-itpro/copilot/enable-copilot.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
