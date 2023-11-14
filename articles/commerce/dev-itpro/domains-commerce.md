@@ -52,7 +52,7 @@ You can view the list of supported host names in LCS under **e-Commerce \> Syste
 
 ## Commerce-generated URLs
 
-When provisioning a Dynamics 365 Commerce e-commerce environment, Commerce generates a URL that is the working address for the environment. This URL is referenced in the e-commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-commerce tenant name>.dynamics365commerce.ms`, where the e-commerce tenant name is the name entered in LCS for the Commerce environment.
+When you provision a Dynamics 365 Commerce e-commerce environment, Commerce generates a URL that is the working address for the environment. This URL is referenced in the e-commerce site link shown in LCS after the environment is provisioned. A Commerce-generated URL is in the format `https://<e-commerce tenant name>.dynamics365commerce.ms`, where the e-commerce tenant name is the name entered in LCS for the Commerce environment.
 
 You can use production site host names in a sandbox environment as well. This option is ideal when you're copying a site from a sandbox environment to production.
 
