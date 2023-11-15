@@ -2,7 +2,7 @@
 title: DOM processing
 description: This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/07/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 audience: Application User
 ms.reviewer: josaw
@@ -62,9 +62,9 @@ DOM looks up available inventory by viewing on-hand inventory in warehouse V2 en
 
 ## Calculate distance
 
-DOM converts addresses of the **Delivery** type to latitude and longitude values. DOM then converts the delivery address on the sales order to latitude and longitude values, and updates the latitude and longitude values of the address for future use. DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. To allow DOM to use Bing Maps functionality, enable the **Confirm Bing Maps usage for DOM** setting. For more information, see [Set up DOM](./set-up-dom.md).
+DOM converts addresses of the **Delivery** type to latitude and longitude values. DOM then converts the delivery address on the sales order to latitude and longitude values, and updates the latitude and longitude values of the address for future use. DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. To allow DOM to use Bing Maps functionality, enable the **Confirm Bing Maps usage for DOM** setting. For more information, see [Set up DOM](dom-set-up.md).
 
-DOM uses the Bing Maps API to calculate aerial or road distance, depending on the value of the **Disable road distance calculation** setting. DOM then uses this information to determine the cost of shipping. The optimization model prioritizes fulfillment of a complete order from one location. Even if part of an order is available in the same city or postal code, the model has been optimized to reduce the number of shipments. For more information, see [Set up DOM](./set-up-dom.md).
+DOM uses the Bing Maps API to calculate aerial or road distance, depending on the value of the **Disable road distance calculation** setting. DOM then uses this information to determine the cost of shipping. The optimization model prioritizes fulfillment of a complete order from one location. Even if part of an order is available in the same city or postal code, the model has been optimized to reduce the number of shipments. For more information, see [Set up DOM](dom-set-up.md).
 
 ## Generate fulfillment plans
 
