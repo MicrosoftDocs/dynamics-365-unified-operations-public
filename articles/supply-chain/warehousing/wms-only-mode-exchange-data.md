@@ -1,5 +1,5 @@
 ---
-title: Exchange data between systems
+title: Exchange data between systems (preview)
 description: This article explains how to exchange data and business events between systems in Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Exchange data between systems
+# Exchange data between systems (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

@@ -23,6 +23,8 @@ This article lists features that are either new or changed in Microsoft Dynamics
 - **General availability of release (self-update):** December 2023
 - **General availability of release (auto-update):** February 2024
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Features included in this release
 
 The following table lists the features that are included in this release. We might update this article to include features that were added to the build after this article was originally published.
@@ -74,7 +76,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
 
 ### Bug fixes
 

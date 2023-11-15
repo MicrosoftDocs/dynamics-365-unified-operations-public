@@ -18,9 +18,9 @@ items:
         - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
           href: get-started/whats-new-platform-updates-vcruntime.md
         - name: Platform updates for version 10.0.38 (February 2024)
-          href: get-started/whats-new-platform-updates-10-0-38.md
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
         - name: Platform updates for version 10.0.37 (November 2023)
-          href: get-started/whats-new-platform-updates-10-0-37.md
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-37.md
         - name: Platform updates for version 10.0.36 (September 2023)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-36.md
       - name: Removed or deprecated features
@@ -1045,6 +1045,8 @@ items:
             href: lifecycle-services/api/v1/reference-start-stop-environments.md
           - name: Fetch environment metadata
             href: lifecycle-services/api/v1/reference-environment-metadata.md
+          - name: Retrieve environment metadata via Logic Apps tutorial
+            href: lifecycle-services/api/tutorial-retrieve-environment-metadata-logic-apps.md
           - name: Fetch environment history
             href: lifecycle-services/api/v1/reference-environment-history.md
           - name: Fetch environment RSAT certificate ZIP

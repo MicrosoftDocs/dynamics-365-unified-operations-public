@@ -1,5 +1,5 @@
 ---
-title: Sensor Data Intelligence home page
+title: Sensor Data Intelligence home page (preview)
 description: This article provides an overview of Sensor Data Intelligence. Organizations can use this feature to drive business processes in Microsoft Dynamics 365 Supply Chain Management, based on Internet of Things (IoT) signals from machines and equipment on the production floor.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Sensor Data Intelligence home page
+# Sensor Data Intelligence home page (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -29,13 +29,14 @@ Sensor Data Intelligence lets you perform the following tasks:
 - Deploy components on your own subscription, so that you have more flexibility to manage Azure components.
 - Configure, scale, and extend the solution as business logic that runs on Azure components. Those components are now managed on your own subscription. Therefore, you can customize them as required to meet your unique business needs.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Business scenarios
 
 Sensor Data Intelligence enables several types of functionality, each of which is represented by a specific *scenario* in the system. Each scenario provides a specialized set of configuration options in the system, as detailed in the following table.
 
 | Scenario | Description |
 |---|---|
-| [Anomaly detection](sdi-scenario-anomaly.md) | Detect anomalies in sensor readings for machine assets, and notify supervisors when anomalies occur. |
 | [Asset downtime](sdi-scenario-asset-downtime.md) | Accurately track the efficiency of machine assets by using sensor data to track machine downtime. |
 | [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets. |
 | [Machine status](sdi-scenario-equipment-downtime.md) | Ensure operation efficiency by using sensor readings to notify planners about machine outages and provide options for mitigating potential delays. |

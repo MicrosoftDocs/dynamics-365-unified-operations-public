@@ -1,5 +1,5 @@
 ---
-title: Set up a company to use multiple price structures
+title: Set up a company to use multiple price structures (preview)
 description: This article explains how to set up multiple price structures in a company.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up a company to use multiple price structures
+# Set up a company to use multiple price structures (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

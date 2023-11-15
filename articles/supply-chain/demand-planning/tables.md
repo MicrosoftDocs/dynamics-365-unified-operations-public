@@ -1,5 +1,5 @@
 ---
-title: View and customize tables for holding imported data
+title: View and customize tables for holding imported data (preview)
 description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations. This article describes the predefined tables that the app includes. It also explains how to customize the tables and create new ones.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# View and customize tables for holding imported data
+# View and customize tables for holding imported data (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
