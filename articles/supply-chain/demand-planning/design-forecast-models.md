@@ -129,9 +129,9 @@ This section describes the purpose of each type of forecast tile. It also explai
 
 ## Finance and operations – Azure Machine Learning tiles
 
-If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), then you can continue to do so while using the Demand planning app by placing a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
 
-For details about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning (preview)](custom-azure-machine-learning-algorithms.md).
+For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning (preview)](custom-azure-machine-learning-algorithms.md).
 
 ### Save tiles
 
