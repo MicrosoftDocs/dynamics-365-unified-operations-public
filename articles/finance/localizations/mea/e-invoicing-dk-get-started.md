@@ -38,7 +38,7 @@ Before you begin the procedures in this article, complete the following prerequi
 - Create certificates and secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
 
     - The 
-    - The ([KSeF](https://www.podatki.gov.pl/ksef))
+    - The 
     - The 
 
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
@@ -54,6 +54,9 @@ Before you begin the procedures in this article, complete the following prerequi
     - Peppol Sales Credit Note
     - Peppol Project Invoice
     - Peppol Project Credit Note
+
+> [!NOTE]
+> The specified above ER formats are based on the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
 ## Country/region-specific configuration for the Danish electronic invoice (DK) feature
 
@@ -75,6 +78,8 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
 15. Select **Save** (if you made any changes), and close the page.
 16. Repeat steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+
+Configure the ISV connector [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md):
 
 ## Finance configuration
 
