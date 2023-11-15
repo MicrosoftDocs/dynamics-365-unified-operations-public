@@ -29,6 +29,10 @@ This feature is part of the *Procurement with Copilot* feature set, which is a g
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
 >
 > To learn about the capabilities and limitations of AI-powered and Copilot features in Microsoft Dynamics 365 Supply Chain Management, see [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md).
+>
+> - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 ## Enable the feature for your system
 

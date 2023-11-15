@@ -1737,7 +1737,7 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
-        - name: Copilot for Inventory Visibility (preview)
+        - name: Inquire into inventory with Copilot through API (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
@@ -3953,8 +3953,10 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: FAQ for the Confirmed purchase orders with changes workspace (preview)
+      - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
+        href: faq-inventory-query.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
