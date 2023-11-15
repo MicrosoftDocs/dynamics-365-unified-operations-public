@@ -2200,7 +2200,7 @@ items:
       href: copilot/enable-copilot.md
   - name: Responsible AI
     items:
-    - name: Responsible AI FAQS for Dynamics 365 Platform
+    - name: Overview
       href: responsible-ai/responsible-ai-overview.md
     - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot (preview)
       href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
