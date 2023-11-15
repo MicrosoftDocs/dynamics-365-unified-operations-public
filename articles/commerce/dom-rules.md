@@ -2,7 +2,7 @@
 title: DOM rules
 description: This article describes the rules of distributed order management (DOM).
 author: rickwyang
-ms.date: 11/07/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 audience: Application User
 ms.reviewer: josaw
@@ -60,6 +60,6 @@ This rule lets organizations define the maximum distance that a location or grou
 
 This rule lets organizations define the maximum number of orders that a location or group of locations can process. During the optimization process, the system will consider orders that haven't been shipped from these locations. This check is done across profiles. Therefore, if overlapping maximum numbers of orders are defined across profiles for the same location, the system will consider the maximum number of orders that is defined across all profiles.
 
-When maximum orders rule is enabled and there are multiple fulfillment plan tasks created during DOM processing, due to the technical limitation the rule might not apply correctly. The number of fulfillment tasks created is determined by the **Thread utilization (percentage)**, see [Set up DOM](./set-up-dom.md) for more details. If you use this rule, it's recommended to set **Thread utilization (percentage)** as 0. Starting from Commerce version 10.0.38 and above, when this rule is enabled, only one fulfillment plan task will be created regardless of the **Thread utilization (percentage)** value.
+When maximum orders rule is enabled and there are multiple fulfillment plan tasks created during DOM processing, due to the technical limitation the rule might not apply correctly. The number of fulfillment tasks created is determined by the **Thread utilization (percentage)**, see [Set up DOM](dom-set-up.md) for details. If you use this rule, it's recommended to set **Thread utilization (percentage)** as 0. Starting from Commerce version 10.0.38 and above, when this rule is enabled, only one fulfillment plan task will be created regardless of the **Thread utilization (percentage)** value.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
