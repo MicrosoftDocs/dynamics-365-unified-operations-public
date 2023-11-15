@@ -47,7 +47,7 @@ To generate a new forecast by running an existing forecast profile, follow these
 1. Select **Save and close**.
 1. The new job is added to the grid on the **Jobs** tab. There, you can follow the status of the new calculation. To update the status information, select **Refresh** on the grid toolbar.
 
-## Create and manage forecast profiles
+## <a name="create-profile"></a> Create and manage forecast profiles
 
 Each time that your organization requires a new type of forecast, a manager or admin must create a new forecast profile. After the profile is created, it becomes available to users, who can run it as often as they require.
 

@@ -2009,6 +2009,8 @@
           href: demand-planning/forecast-profiles.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
+        - name: Use your own custom Azure Machine Learning algorithms in Demand planning
+          href: demand-planning/custom-azure-machine-learning-algorithms.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
       - name: Export and download data
