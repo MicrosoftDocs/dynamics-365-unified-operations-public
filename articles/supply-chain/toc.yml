@@ -3953,8 +3953,10 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
-      - name: FAQ for the Confirmed purchase orders with changes workspace (preview)
+      - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
         href: faq-confirmed-po-changes.md
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
+        href: faq-inventory-query.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
