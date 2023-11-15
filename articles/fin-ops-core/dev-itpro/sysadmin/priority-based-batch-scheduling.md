@@ -194,10 +194,11 @@ As a best practice, we recommend that you do not assign a high or critical prior
 
 ## Batch concurrency
 
-In Platform update 58, you can turn on the **(Preview) Batch concurrency control** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). This feature lets you set a limit on the number of tasks that can run concurrently in a specific batch job. Therefore, it helps you prioritize your batch jobs and optimize the use of your resources. For example, by limiting the number of tasks for a low-priority batch job, you can avoid overloading the system and affecting the performance of other, higher-priority batch jobs.
+In Platform update 58, you can turn on the **Batch concurrency control** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). This feature lets you set a limit on the number of tasks that can run concurrently in a specific batch job. Therefore, it helps you prioritize your batch jobs and optimize the use of your resources. For example, by limiting the number of tasks for a low-priority batch job, you can avoid overloading the system and affecting the performance of other, higher-priority batch jobs.
 
 > [!IMPORTANT]
-> - This feature is available with version 10.0.34 (PU 58).
+> - This feature is available with version 10.0.34 (PU 58) as **(Preview) Batch concurrency control** .
+> - This feature is generally available starting 10.0.38 (PU 62).
 > - This feature is enabled by default for all new instances with version 10.0.39 (PU 63).
 
 ### Prerequisites
