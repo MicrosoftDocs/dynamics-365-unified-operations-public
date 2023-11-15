@@ -1,5 +1,5 @@
 ---
-title: FAQ for the Confirmed purchase orders with changes workspace (preview)
+title: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 06/19/2023
 ms.custom: 
@@ -10,7 +10,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# FAQ for the Confirmed purchase orders with changes workspace (preview)
+# Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](includes/preview-banner.md)]
@@ -24,8 +24,6 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 ## What is the Confirmed purchase orders with changes workspace?
 
 The **Confirmed purchase orders with changes** workspace helps procurement professional quickly and easily assess, manage, and follow up on changes that are made to purchase orders after they're confirmed. It uses [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to generate natural-language change summaries and draft communications for vendors.
-
-This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
 ## What are capabilities of the Confirmed purchase orders with changes workspace?
 
@@ -60,7 +58,7 @@ When you use the feature, follow these recommendations:
 
 ## See also
 
-- [Review and accept changes to confirmed purchase orders](procurement/purchase-order-changes-after-confirmation.md)
+- [Review and accept changes to confirmed purchase orders (preview)](procurement/purchase-order-changes-after-confirmation.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
