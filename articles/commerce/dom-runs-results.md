@@ -3,7 +3,7 @@ title: Results of DOM runs
 description: This article describes the results of distributed order management (DOM) runs in Microsoft Dynamics 365 Commerce.
 author: rickwyang
 ms.date: 11/15/2023
-ms.topic: conceptual
+ms.topic: article
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
@@ -58,4 +58,4 @@ Despite running DOM with batch jobs, during the sales order entry, DOM can be ru
 
 While you're entering an order line, after you specify the product and quantity, you can select **Update line** and then, under **DOM**, select **Suggest fulfillment location**. You then see a list of locations that is based on DOM rules that can fulfill the quantity on the order line. This list is sorted by distance. Select a location to set the relevant site and warehouse on the sales order line.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
