@@ -24,7 +24,6 @@ During procurement planning, any changes that are made to confirmed purchase ord
 This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
 
 > [!IMPORTANT]
->
 > The AI-powered and Copilot functionality that's described in this article is available as part of a preview release. All other functionality is generally available. The content and the functionality related to AI-powered and Copilot functionality are subject to change. For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 >
 > **During this preview phase, the summaries of changes and downstream impacts are available only in environments that are hosted in the United States (US)**, and they are shown only in English. All other functionality is globally available.
