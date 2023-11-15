@@ -4,7 +4,7 @@ description: This article provides the release schedule for proactive quality up
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 10/23/2023
+ms.date: 11/15/2023
 ms.custom: bap-template
 audience: Developer, IT Pro
 ms.reviewer: johnmichalak
