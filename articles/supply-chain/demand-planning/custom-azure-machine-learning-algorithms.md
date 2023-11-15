@@ -54,7 +54,7 @@ Follow these steps to set up the Azure Machine Learning service connection in De
 
 1. Sign in to the Demand planning app.
 1. In the left column, select **Custom Azure ML**.
-1. Select the **&plus;** button to establish a new connection and make the following settings for it:
+1. Select the **&plus;** button to create a new connection and make the following settings for it:
     - **Name** – Enter a name for the connection.
     - **Subscription ID** – Enter the ID for your Azure subscription.
     - **Resource group name** – Enter the name of the resource group that contains your Azure Machine Learning workspace.
@@ -63,9 +63,9 @@ Follow these steps to set up the Azure Machine Learning service connection in De
     - **Application ID** – Enter the application ID for the Microsoft Entra application that you created. This value is used to authorize API requests to Azure Machine Learning service.
     - **Application secret** – Enter the service principal application secret for the Microsoft Entra application that you created. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
 
-## Create a forecast using your own Azure Machine Learning algorithms
+## Set up a forecast that uses your own Azure Machine Learning algorithms
 
-Follow these steps to create a forecast using your own Azure Machine Learning algorithms:
+Follow these steps to set up a forecast that uses your own Azure Machine Learning algorithms:
 
 1. Create a new forecast profile as described in [Work with forecast profiles (preview)](forecast-profiles.md#create-profile).
 1. On the **Select a forecasting model preset** page, select *None*.
