@@ -1711,6 +1711,8 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+      - name: Inventory On-hand Mobile App (preview)
+        href: inventory/inventory-onhand-mobile-app.md
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
