@@ -92,11 +92,11 @@ Follow these steps to enable Supply Chain Management to access your Dataverse en
 ### Step 6: Install the Copilot application in Supply Chain Management
 
 > [!NOTE]
-> During this preview phase, the Copilot application can only be installed for environments that are hosted in the US.
+> During the preview phase, the Copilot application can be installed only for environments on tenants that are hosted in the United States.
 
 Follow these steps to install the Copilot application in your Supply Chain Management environment.
 
-1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamicsscmai-preview?flightCodes=f42a7338c806438f8fca820c4ed82b7c&tab=Overview) page in the Microsoft commercial marketplace.
+1. Go to the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://aka.ms/dynamicsfnocopilot_scmaiapp) page in the Microsoft commercial marketplace.
 1. Select **Get it now**.
 1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment that's connected to your Supply Chain Management environment to install the Copilot application.
 

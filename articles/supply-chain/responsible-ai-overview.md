@@ -18,3 +18,4 @@ ms.reviewer: kamaybac
 
 - [The Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)
+
