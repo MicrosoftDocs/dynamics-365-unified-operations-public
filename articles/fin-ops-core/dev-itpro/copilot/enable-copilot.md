@@ -15,17 +15,13 @@ ms.custom: bap-template
 # Enable Copilot capabilities in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
 Copilot brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
 
 This article describes how to enable Copilot capabilities in finance and operations apps.
 
-> [!IMPORTANT]
->
-> - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 ## Prerequisites
 
