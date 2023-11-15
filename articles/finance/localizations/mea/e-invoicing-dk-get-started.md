@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance. These steps complement the steps that are described in [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Denmark. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
@@ -32,15 +32,13 @@ Before you begin the procedures in this article, complete the following prerequi
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
     - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-
+    - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)  
 - Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
 - Create certificates and secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
 
-    - The secret for the legal entity's tax identification number
-    - The secret that will contain the public key that is provided by the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef))
-    - The certificate for digital signing
+    - The 
+    - The ([KSeF](https://www.podatki.gov.pl/ksef))
+    - The 
 
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
@@ -49,7 +47,7 @@ Before you begin the procedures in this article, complete the following prerequi
     - OIOUBL Project invoice (DK)
     - OIOUBL Project credit note (DK)
  
-  - PEPPOL.
+- PEPPOL.
 
     - Peppol Sales Invoice
     - Peppol Sales Credit Note
