@@ -23,6 +23,8 @@ This article offers a comprehensive overview of data source configuration within
 >Users working with the legacy UI can find specific guidance on data source configurations in [Set data source configuration on V1](#set-configuration-v1).
 >
 >Users who have recently transitioned from the legacy version to the latest UI can access the dedicated comparison guide [Detailed setups for different features and configurations in Version 2](#differences-between-v1-and-v2). This resource concisely outlines the key disparities between UI v2 and v1, allowing for a smooth adaptation and effective utilization of the latest features.
+>
+>For all new users we recommend you to keep using the new UI (UI version 2), and for existing users please find proper time to test and upgrade your legacy UI to the new UI.
 
 ## Prerequisites
 
