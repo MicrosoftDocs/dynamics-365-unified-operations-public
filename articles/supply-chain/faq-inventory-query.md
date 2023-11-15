@@ -15,15 +15,11 @@ ms.custom: bap-template
 # Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)
 
 [!include [banner](../includes/banner.md)]
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Inquire into inventory with Copilot through API* feature in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-> [!IMPORTANT]
->
-> - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-note](includes/preview-note.md)]
 
 ## What is Inquire into inventory with Copilot through API?
 
