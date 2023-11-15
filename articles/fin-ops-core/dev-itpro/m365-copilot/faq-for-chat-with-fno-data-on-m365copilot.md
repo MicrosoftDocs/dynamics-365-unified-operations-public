@@ -24,7 +24,7 @@ ms.search.validFrom: 09/01/2023
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (Preview)
+# Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (preview)
 
 [!include[banner](../includes/banner.md)]
 [!INCLUDE[banner](../includes/preview-banner.md)]

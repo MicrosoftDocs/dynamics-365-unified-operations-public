@@ -78,4 +78,4 @@ To ensure transparency, your chatbot must include a clear, noticeable disclaimer
 
 ## See also
 
-- [Inquire into inventory with Copilot through API](inventory/inventory-visibility-copilot-api.md)
+- [Inquire into inventory with Copilot through API (preview)](inventory/inventory-visibility-copilot-api.md)

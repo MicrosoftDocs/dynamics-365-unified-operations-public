@@ -25,8 +25,6 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 
 The **Confirmed purchase orders with changes** workspace helps procurement professional quickly and easily assess, manage, and follow up on changes that are made to purchase orders after they're confirmed. It uses [Dynamics 365 Copilot](/power-platform/transparency-note-copilot-data-security-privacy) to generate natural-language change summaries and draft communications for vendors.
 
-This feature is part of the *Procurement with Copilot* feature set, which is a growing collection of features that use AI to help procurement managers with their daily procurement tasks.
-
 ## What are capabilities of the Confirmed purchase orders with changes workspace?
 
 The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *Text-davinci-003* generative AI model to generate the natural-language content.
@@ -60,7 +58,7 @@ When you use the feature, follow these recommendations:
 
 ## See also
 
-- [Review and accept changes to confirmed purchase orders](procurement/purchase-order-changes-after-confirmation.md)
+- [Review and accept changes to confirmed purchase orders (preview)](procurement/purchase-order-changes-after-confirmation.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
