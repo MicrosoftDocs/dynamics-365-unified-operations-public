@@ -53,7 +53,7 @@ You must install the Inventory On-hand mobile app in your Dataverse environment 
 
 Follow these steps to install the Inventory On-hand mobile app in Dataverse.
 
-1. Find the ["Dynamics 365 Inventory On-hand mobile application" app in Microsoft AppSource](/product/dynamics-365/mscrm.d365-scm-inventoryonhandmobileapp).
+1. Find the ["Dynamics 365 Inventory On-hand mobile application" app in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-inventoryonhandmobileapp).
 1. Select **Get it now**.
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
