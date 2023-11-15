@@ -3,7 +3,7 @@ title: What's new or changed for extensibility
 description: This article provides links to topics about extensibility updates.
 author: josaw1
 ms.date: 05/14/2019
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Developer

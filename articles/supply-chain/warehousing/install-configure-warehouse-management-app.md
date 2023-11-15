@@ -91,37 +91,12 @@ For details about each authentication method and how to set it up, see the follo
 - Service-based authentication (deprecated): [Service-based authentication](warehouse-app-authenticate-service-based.md)
 
 > [!IMPORTANT]
-> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
+> Service-based authentication methods (including certificates and shared secret) are now deprecated. We strongly recommend that you set up your mobile devices to use user-based authentication (device code flow) instead. For more information about this deprecation, including the deprecation schedule, see [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md).
 
 If a device is lost or compromised, you can revoke its authentication by following the steps in one of the following articles, depending on which authentication method you're using:
 
 - User-based authentication: [Remove access for a device that authenticates by using the device code flow](warehouse-app-authenticate-user-based.md#revoke)
 - Service-based authentication (deprecated): [Remove access for a device that authenticates by using a certificate or client secret](warehouse-app-authenticate-service-based.md#revoke)
-
-## <a name="user-azure-ad"></a>Create and configure a user account in Supply Chain Management
-
-To enable Supply Chain Management to use your Microsoft Entra ID application, follow these steps.
-
-1. Create a user that corresponds to the user credentials for the Warehouse Management mobile app:
-
-    1. In Supply Chain Management, go to **System administration \> Users \> Users**.
-    1. Create a user.
-    1. Assign the *Warehousing mobile device user* role to the user.
-
-    ![Assign the warehousing mobile device user.](media/app-connect-app-users.png "Assign the warehousing mobile device user")
-
-1. Associate your Microsoft Entra ID application with the Warehouse Management mobile app user:
-
-    1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
-    1. Select **New** on the Action Pane to create a line.
-    1. In the **Client ID** field, enter the client ID that you made a note of in the previous section.
-    1. In the **Name** field, enter a name.
-    1. In the **User ID** field, select the user ID that you just created.
-
-> [!TIP]
-> One way to use these settings is to create a client ID in Azure for each of your physical devices and then add each client ID to the **Microsoft Entra ID applications** page. Then, if a device is lost, you can easily remove its access to Supply Chain Management by removing its client ID from that page. (This approach works because the connection credentials that are saved on each device also specify a client ID, as described later in this article.)
->
-> Additionally, the default language, number format, and time zone settings for each client ID are established by the preferences that are set for the **User ID** value that's mapped here. Therefore, you might use those preferences to establish default settings for each device or collection of devices, based on the client ID. However, these default settings will be overridden if they are also defined for the *warehouse app user account* that a worker uses to sign in on the device. (For more information, see [Mobile device user accounts](mobile-device-work-users.md).)
 
 ## Configure the application by importing connection settings
 
@@ -236,18 +211,18 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
 1. Enter the following information:
 
-    - **Authentication method** – Set this option to *Client secret* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Authentication method** – Set this option to *Client secret (Deprecated)* to use a client secret to authenticate with Supply Chain Management. Set it to *Certificate (Deprecated)* to use a certificate for authentication. Set it to *Device code* to authenticate by using the device code flow. The method that you select here must match the setup of the app in Azure. (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
     - **Connection name** – Enter a name for the new connection. This name will appear in the **Select connection** field the next time that you open the connection settings. The name that you enter must be unique. (In other words, it must differ from all other connection names that are stored on your device, if any other connection names are stored there.)
-    - **Active directory client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Active directory client secret** – This field is available only when the **Use client secret** option is set to *Yes*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Active directory certificate thumbprint** – This field is available only for Windows devices and only when the **Use client secret** option is set to *No*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
-    - **Active directory resource** – Specify the root URL of Supply Chain Management.
+    - **Microsoft Entra ID client ID** – Enter the client ID that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Microsoft Entra ID client secret** – This field is available only when **Authentication method** is set to *Client secret (Deprecated)*. Enter the client secret that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Certificate thumbprint** – This field is available only for Windows devices and only when **Authentication method** is set to *Certificate (Deprecated)*. Enter the certificate thumbprint that you made a note of while you were setting up Microsoft Entra ID.  (For more information, see one of the following articles, depending on which authentication method you're using: [User-based authentication](warehouse-app-authenticate-user-based.md) or [Service-based authentication](warehouse-app-authenticate-service-based.md).)
+    - **Microsoft Entra ID resource** – Specify the root URL of Supply Chain Management.
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
         > Ensure the HTTPS (SSL) certificate is valid.
 
-    - **Active directory tenant** – Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
+    - **Microsoft Entra ID tenant** – Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
@@ -272,6 +247,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 ## Additional resources
 
 - [User-based authentication](warehouse-app-authenticate-user-based.md)
+- [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Service-based authentication](warehouse-app-authenticate-service-based.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)

@@ -22,6 +22,9 @@ This article explains how to set up a local development environment for the Comm
 > [!IMPORTANT]
 > The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
+> [!NOTE]
+> The 10.0.38 release will not contain updates for the following components: MPOS, Retail SDK and the Retail Server / Channel Database.
+
 ## Supported development environment types
 
 Commerce supports both cloud-based environments and local environments.

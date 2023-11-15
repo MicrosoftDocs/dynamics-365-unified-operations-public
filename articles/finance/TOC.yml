@@ -114,26 +114,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/finance
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/finance
-      - name: Learning catalog
-        items: 
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -554,6 +534,8 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
+        - name: Customer refunds with credit transfer format
+          href: accounts-receivable/refund-customers.md          
       - name: Credit and collections
         items:
         - name: Credit and collections overview
@@ -607,7 +589,7 @@
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Credit statistics FAQ
-          herf: accounts-receivable/Credit-statistics-faq.md
+          href: accounts-receivable/credit-statistics-faq.md
       - name: Set up interest rates for an interest code
         href: accounts-receivable/set-up-interest-rates-interest-code.md 
       - name: Create an interest code with a range
@@ -674,6 +656,8 @@
         href: cash-bank-management/cash-discount-handling-overpayments.md
       - name: Manage IBAN account validation
         href: cash-bank-management/iban-validation.md
+      - name: Net customer and vendor balances
+        href: cash-bank-management/Net-customer-and-vendor-balances.md 
       - name: Settlement overview
         href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
@@ -710,6 +694,8 @@
         href: cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Check number validation
+        href: cash-bank-management/check-number-validation.md
       - name: Create checks that have Blank status
         href: cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
