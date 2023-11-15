@@ -2192,12 +2192,12 @@ items:
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: ../fin-ops/user-interface/task-recorder-training-docs.md
-  - name: Copilot capabilities in finance and operations apps
-    items:
-    - name: Overview of Copilot capabilities in finance and operations apps (preview)
-      href: ../fin-ops/copilot/copilot-for-finance-operations.md
-    - name: Enable Copilot capabilities in finance and operations apps (preview)
-      href: copilot/enable-copilot.md
+    - name: Copilot capabilities in finance and operations apps
+      items:
+      - name: Overview of Copilot capabilities in finance and operations apps (preview)
+        href: ../fin-ops/copilot/copilot-for-finance-operations.md
+      - name: Enable Copilot capabilities in finance and operations apps (preview)
+        href: copilot/enable-copilot.md
   - name: Responsible AI
     items:
     - name: Overview
