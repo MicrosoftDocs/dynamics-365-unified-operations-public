@@ -1,6 +1,6 @@
 ---
-title: Configure Inventory Visibility
-description: This article describes how to configure Inventory Visibility.
+title: Configure Inventory Visibility Data Source
+description: This article describes how to configure Inventory Visibility data source.
 author: yufeihuang
 ms.date: 03/03/2023
 ms.topic: article
@@ -13,31 +13,22 @@ ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Configure Inventory Visibility
+# Configure Inventory Visibility Data Source
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
+This article offers a comprehensive overview of data source configuration within the Inventory Visibility app on Power Apps. It covers the essential steps for setting up and optimizing data source configurations to enhance your inventory management processes.
 
-## <a name="introduction"></a>Introduction
-
-Before you start to work with Inventory Visibility, you must complete the following configuration as described in this article:
-
-- [Data source configuration](#data-source-configuration)
-- [Reservation configuration (optional)](#reservation-configuration)
-- [Query preload configuration (optional)](#query-preload-configuration)
-- [Default configuration sample](#default-configuration-sample)
+> [!NOTE]
+>Users working with the legacy UI can find specific guidance on data source configurations in [Set data source configuration on V1](#set-configuration-v1).
+>
+>Users who have recently transitioned from the legacy version to the latest UI can access the dedicated comparison guide [Detailed setups for different features and configurations in Version 2](#differences-between-v1-and-v2). This resource concisely outlines the key disparities between UI v2 and v1, allowing for a smooth adaptation and effective utilization of the latest features.
+>
+>For all new users we recommend you to keep using the new UI (UI version 2), and for existing users please find proper time to test and upgrade your legacy UI to the new UI.
 
 ## Prerequisites
 
 Before you begin, install and set up the Inventory Visibility Add-in as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-
-## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
-
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across multiple systems. The remaining sections of the article explain how to use each part of the **Configuration** page.
-
-After the configuration is completed, be sure to select **Update Configuration** in the app.
-
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
@@ -49,9 +40,12 @@ Each data source represents a system that your data comes from. Example data sou
 To add a data source, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Data Source** tab, select **New Data Source** to add a data source (for example `ecommerce` or another meaningful data source ID).
-
+1. Open the **Feature management** page.
+1. Click **Manage** button in the right side of **Data Source Settings** section to open **Data source settings** page
+![Datasource settings v2](media/inventory-visibility-datasource-settings-v2.png "Datasource settings v2")
+1. On **Data source settings** page, select **New** to add a data source (for example `ecommerce` or another meaningful data source ID).
+1. Select **Save**.
+   
 > [!NOTE]
 > When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
@@ -108,16 +102,14 @@ External systems can access Inventory Visibility through its RESTful APIs. For t
 By configuring a dimension mapping, you can send the external dimensions directly to Inventory Visibility. Inventory Visibility will then automatically convert external dimensions to base dimensions.
 
 To add dimension mappings, follow these steps.
-
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source where you want to do the dimension mapping. Then, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
-
-    ![Adding dimension mappings](media/inventory-visibility-dimension-mapping.png "Adding dimension mappings")
-
-1. In the **Dimension Name** field, specify the source dimension.
-1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
+1. Open the **Feature management** page.
+1. Click **Manage** button in the right side of **Data Source Settings** section to open **Data source settings** page
+1. On **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Dimension Mappings** section, select **More Options Icon** and select **New Dimension Mapping**.
+   ![Adding dimension mappings](media/inventory-visibility-dimension-mapping-v2.png "Adding dimension mappings v2")
+1. On **New Dimension Mapping** page, specify the source dimension in **Customer dimension** field, and select the dimension in Inventory Visibility that you want to map in **Base Dimension** field.
 1. Select **Save**.
+   ![Adding dimension mappings details](media/inventory-visibility-add-new-dimension-mapping-v2.png "Adding dimension mappings details")
 
 For example, you've already created a data source that is named `ecommerce`, and it includes a product color dimension. In this case, to do the mapping, you can first add `ProductColor` to the **Dimension Name** field in the `ecommerce` data source and then select `ColorId` in the **To Base Dimension** field.
 
@@ -150,8 +142,16 @@ Inventory Visibility provides a list of default physical measures that are mappe
 If your data source is Supply Chain Management, you don't have to re-create the default physical measures. However, for external data sources, you can create new physical measures by following these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source to add physical measures to (for example, the `ecommerce` data source). Then, in the **Physical Measures** section, select **Add**, and specify the measure name (for example, `Returned` if you want to record returned quantities in this data source to Inventory Visibility). Save your changes.
+1. Open the **Feature management** page.
+1. Click **Manage** button in the right side of **Data Source Settings** section to open **Data source settings** page
+1. On **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Physical Measure** section, select **More Options Icon** and select **New Physical Measure V2**.
+   ![Adding physical measures v2](media/inventory-visibility-physical-measures-v2.png "Adding physical measures v2")
+1. On **New Physical Measure V2** page, set the following fields for the new physical measure:
+   - **Physical Measure Name**– Enter the name of the physical measure.
+   - **Display Name** – Enter a name that is unique not only within its own data source but also across different data sources. The recommended format is `[Data Source].[Physical Measure Name]`, similar to `ecommerce.returned`. This ensures that the Display Name remains distinct and does not duplicate in any data source.
+2. Select **Save**.
+   ![Adding phyiscal measures details v2](media/inventory-visibility-add-physical-measures-v2.png "Adding phyiscal measures details v2")
+
 
 ### Extended dimensions
 
@@ -174,22 +174,27 @@ The configuration lets you define a set of calculated measure formulas that incl
 To set up a custom calculated measure, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure.
-1. Set the following fields for the new calculated measure:
+1. Open the **Feature management** page.
+1. Click **Manage** button in the right side of **Data Source Settings** section to open **Data source settings** page.
+1. On **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Calculated Measures** section, select **More Options Icon** and select **New Calculated Measures Metadata V2**.
+   ![Adding calcualted measures v2](media/inventory-visibility-calculated-measures-v2.png "Adding calcualted measures v2")
+1. On **New Calculated Measure V2** page, set the following fields for the new calculated measure:
+   - **Calculated Measure Name** – Enter the name of the calculated measure.
+   - **Calculated Measure Display Name** – Enter a unique name that should be distinct not only within its own data source but also across different data sources. The recommended format is `[Data Source].[Calculated Measure Name]`, similar to `iv.TotalAvailable`. While the Calculated Measure Name can be the same between different data sources, it is essential to ensure that the Calculated Measure Display Name remains distinct and does not duplicate across data sources.
+  
+   ![Adding calcualted measures v2 enter name](media/inventory-visibility-add-calculated-measures-v2.png "Adding calcualted measures details v2 enter name")
 
-    - **New calculated measure name** – Enter the name of the calculated measure.
-    - **Data source** – Select the data source to include the new calculated measure in. The querying system is a data source.
+1. Select **New Calculated Measure Details V2** in **Calculated Measure Details** to add a new modifier to the new calculated measure.
 
-1. Select **Add** to add a modifier to the new calculated measure.
-1. Set the following fields for the new modifier:
+   ![Adding calcualted measures details v2](media/inventory-visibility-calculated-measures-details-v2.png "Adding calcualted measures details v2")
 
-    - **Modifier** – Select the modifier type (*Addition* or *Subtraction*).
-    - **Data source** – Select the data source where the measure that provides the modifier value should be found.
-    - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
-
-1. Repeat steps 5 through 6 until you've added all the required modifiers and completed the formula for your calculated measure.
-1. Select **Save**.
+1. On **New Calculated Measure Detail V2** page, set the following fields for the new modifier:
+    - **Calculated Measure Formula Description** - Provides a detailed explanation of the significance and purpose of the formula within the calculated measure.
+    - **+/- to result** – Select the modifier type (*Addition* or *Subtraction*).
+    - **Physical Measure Name Reference** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
+![Adding calcualted measures details v2 enter name](media/inventory-visibility-add-calculated-measures-details-v2.png "Adding calcualted measures details v2 enter name")
+1.  Repeat steps 5 through 6 until you've added all the required modifiers and completed the formula for your calculated measure.
+1.  Select **Save**.
 
 For example, a fashion company operates across three data sources:
 
@@ -280,250 +285,7 @@ When this computation formula is used, the new query result will include the cus
 
 The `MyCustomAvailableforReservation` output, based on the calculation setting in the custom measurements, is 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
-## <a name="partition-configuration"></a>Partition configuration
-
-Currently, the partition configuration consists of two base dimensions (`SiteId` and `LocationId`) that indicate how the data is distributed. Operations under the same partition can deliver higher performance at lower cost. The following table shows the default partition configuration that the Inventory Visibility Add-in provides.
-
-| Base dimension | Hierarchy |
-|---|---|
-| `SiteId` | 1 |
-| `LocationId` | 2 |
-
-The solution includes this partition configuration by default. Therefore, *you don't have to define it yourself*.
-
-> [!IMPORTANT]
-> Don't customize the default partition configuration. If you delete or change it, you're likely to cause an unexpected error.
-
-## <a name="index-configuration"></a>Product index hierarchy configuration
-
-Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
-
-Inventory Visibility provides flexibility by letting you set up *indexes* to improve the performance of your queries. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
-
-| Name | Description |
-|---|---|
-| Set number | Dimensions that belong to the same set (index) will be grouped together, and the same set number will be allocated to them. |
-| Dimension | Base dimensions that the query result is aggregated on. |
-| Hierarchy | The hierarchy lets you increase the performance of specific combinations of dimension when used in filter and group-by query parameters. For example, if you set up a dimension set with a hierarchy sequence of `(ColorId, SizeId, StyleId)`, then the system can process queries related to four dimension combinations more quickly. The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. Other combinations won't be sped up. Filters aren't restricted by order but must be inside these dimensions if you want to improve their performance. For more information, see the example that follows. |
-
-To set up your product hierarchy index, follow these steps.
-
-1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
-1. Open the **Configuration** page.
-1. On the **Product Hierarchy Index** tab, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
-1. By default, a list of indexes is provided. To modify an existing index, select **Edit** or **Add** in the section for the relevant index. To create a new index set, select **New index set**. For each row in every index set, in the **Dimension** field, select from the list of base dimensions. Values for the following fields are automatically generated:
-
-    - **Set number** – Dimensions that belong to the same group (index) will be grouped together, and the same set number will be allocated to them.
-    - **Hierarchy** – The hierarchy increases the performance of specific combinations of dimension when used in filter and group-by query parameters.
-
-> [!TIP]
-> Here are a few tips to keep in mind when setting up your index hierarchy:
->
-> - Base dimensions that are defined in the partition configuration shouldn't be defined in index configurations. If a base dimension is defined again in the index configuration, you won't be able to query by this index.
-> - If you only need to query inventory that is aggregated by all dimension combinations, then set up a single index that contains the base dimension `Empty`.
-> - If you need to query FinOps SCM WMS items by any dimensions in **Batch ID, Serial ID, License plate ID, WMS Location ID**, we strongly suggest to add them in your index hierarchy. For more information, see [Choose whether to truncate unused dimensions.](inventory-visibility-whs-support.md#choose-whether-to-truncate-unused-dimensions)
-
-### Example
-
-This section provides an example that shows how the hierarchy works.
-
-The following table provides a list of available inventory for this example.
-
-| Item | ColorId | SizeId | StyleId | Quantity |
-|---|---|---|---|---|
-| D0002 | Black | Small | Wide | 1 |
-| D0002 | Black | Small | Regular | 2 |
-| D0002 | Black | Large | Wide | 3 |
-| D0002 | Black | Large | Regular | 4 |
-| D0002 | Red | Small | Wide | 5 |
-| D0002 | Red | Small | Regular | 6 |
-| D0002 | Red | Large | Regular | 7 |
-
-The following table shows how the index hierarchy is set up.
-
-| Set Number | Dimension | Hierarchy |
-|---|---|---|
-| 1 | `ColorId` | 1 |
-| 1 | `SizeId` | 2 |
-| 1 | `StyleId` | 3 |
-
-The index lets you query the on-hand inventory in the following ways:
-
-- `()` – Grouped by all
-
-    - D0002, 28
-
-- `(ColorId)` – Grouped by `ColorId`
-
-    - D0002, Black, 10
-    - D0002, Red, 18
-
-- `(ColorId, SizeId)` – Grouped by the combination of `ColorId` and `SizeId`
-
-    - D0002, Black, Small, 3
-    - D0002, Black, Large, 7
-    - D0002, Red, Small, 11
-    - D0002, Red, Large, 7
-
-- `(ColorId, SizeId, StyleId)` – Grouped by the combination of `ColorId`, `SizeId`, and `StyleId`
-
-    - D0002, Black, Small, Wide, 1
-    - D0002, Black, Small, Regular, 2
-    - D0002, Black, Large, Wide, 3
-    - D0002, Black, Large, Regular, 4
-    - D0002, Red, Small, Wide, 5
-    - D0002, Red, Small, Regular, 6
-    - D0002, Red, Large, Regular, 7
-
-## <a name="reservation-configuration"></a>Reservation configuration (optional)
-
-Reservation configuration is required if you want to use the soft reservation feature. The configuration consists of two fundamental parts:
-
-- Soft reservation mapping
-- Soft reservation hierarchy
-
-### Soft reservation mapping
-
-When you make a reservation, you might want to know whether on-hand inventory is currently available for reservation. The validation is linked to a calculated measure that represents a computation formula of a combination of physical measures.
-
-By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
-
-Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this article).
-
-To define the soft reservation mapping, follow these steps.
-
-1. Define the physical measure that serves as the soft reservation measure (for example, `Softreserved`).
-1. On the **Calculated measure** tab of the **Configuration** page, define the *available for reservation* (AFR) calculated measure that contains the AFR computation formula that you want to map to the physical measure. For example, you might set up `AvailableToReserve` (available for reservation) so that it's mapped to the previously defined `Softreserved` physical measure. In this way, you can find which quantities that have the `Softreserved` inventory status will be available for reservation. The following table shows the AFR computation formula.
-
-    | Calculation type | Data source | Physical measure |
-    |---|---|---|
-    | Addition | `fno` | `PhysicalInvent` |
-    | Addition | `pos` | `Inbound` |
-    | Subtraction | `pos` | `Outbound` |
-    | Subtraction | `iv` | `Softreserved` |
-
-    We recommend that you set up the calculated measure so that it contains the physical measure that the reservation measure is based on. In this way, the calculated measure quantity will be affected by the reservation measure quantity. Therefore, in this example, the `AvailableToReserve` calculated measure of the `iv` data source should contain the `Softreserved` physical measure from `iv` as a component.
-
-1. Open the **Configuration** page.
-1. On the **Soft Reservation Mapping** tab, set up the mapping from the physical measure to the calculated measure. For the previous example, you might use the following settings to map `AvailableToReserve` to the previously defined `Softreserved` physical measure.
-
-    | Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
-    |---|---|---|---|
-    | `iv` | `Softreserved` | `iv` | `AvailableToReserve` |
-
-    > [!NOTE]
-    > If you can't edit the **Soft Reservation Mapping** tab, you may need to turn on the *OnHandReservation* feature on the **Feature Management** tab.
-
-Now, when you do reservation on `Softreserved`, Inventory Visibility will automatically find `AvailableToReserve` and its related computation formula to do the reservation validation.
-
-For example, you have the following on-hand inventory in Inventory Visibility.
-
-```json
-{
-    "productId": "D0002",
-    "dimensions": {
-        "SiteId": "1",
-        "LocationId": "11",
-        "ColorId": "Red"
-    },
-    "quantities": {
-        "iv": {
-            "Softreserved": 90
-        },
-        "fno": {
-            "PhysicalInvent": 70.0,
-        },
-        "pos": {
-            "inbound": 50.0,
-            "outbound": 20.0
-        }
-    }
-}
-```
-
-In this case, the following calculation applies:
-
-`AvailableToReserve` = `fno.PhysicalInvent` + `pos.inbound` – `pos.outbound` – `iv.Softreserved`  
-= 70 + 50 – 20 – 90  
-= 10
-
-Therefore, if you try to make reservations on `iv.Softreserved`, and the quantity is less than or equal to `AvailableToReserve` (10), the soft reservation request will succeed.
-
-> [!NOTE]
-> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required (although you might end up with a negative `AvailableToReserve` quantity, the system will still allow you to soft reserve). The default value is `True`.
-
-### Soft reservation hierarchy
-
-The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the product index hierarchy works for on-hand queries.
-
-The reservation hierarchy is independent of the product index hierarchy. This independence lets you implement category management where users can break down the dimensions into details to specify the requirements for making more precise reservations. Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration. When you do the reservation, you must specify a partition for the product.
-
-Here's an example of a soft reservation hierarchy.
-
-| Base dimension | Hierarchy |
-|---|---|
-| `SiteId` | 1 |
-| `LocationId` | 2 |
-| `ColorId` | 3 |
-| `SizeId` | 4 |
-| `StyleId` | 5 |
-
-In this example, you can do reservation in the following dimension sequences. You must specify a partition for the product when you do the reservation. Therefore, the basic hierarchy that you can use is `(SiteId, LocationId)`.
-
-- `(SiteId, LocationId)`
-- `(SiteId, LocationId, ColorId)`
-- `(SiteId, LocationId, ColorId, SizeId)`
-- `(SiteId, LocationId, ColorId, SizeId, StyleId)`
-
-A valid dimension sequence should strictly follow the reservation hierarchy, dimension by dimension. For example, the hierarchy sequence `(SiteId, LocationId, SizeId)` isn't valid, because `ColorId` is missing.
-
-## Available to promise configuration (optional)
-
-You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
-
-## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries (optional)
-
-Inventory Visibility can periodically fetch and store a set of on-hand inventory summary data based on your preconfigured dimensions. This provides the following benefits:
-
-- A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
-- An inventory summary that is compatible with items enabled for warehouse management processes (WMS).
-
-See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query) for more information about how to work with this feature after you have set it up.
-
-> [!IMPORTANT]
-> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
-
-Follow these steps to set up the feature:
-
-1. Sign into the Inventory Visibility power app.
-1. Go to **Configuration \> Feature Management & Settings**.
-1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure.
-1. Open the **Preload Setting** tab.
-1. In the **Step 1: Clean up Preload Storage** section, select **Clean** to clean up the database and make it ready to accept your new group-by settings.
-1. In the **Step 2: Set up Group By Values** section, in the **Group Result By** field, enter a comma-separated list of field names by which to group your query results. Once you have data in the preload storage database, you won't be able to change this setting until you clean the database, as described in the previous step.
-1. Go to **Configuration \> Feature Management & Settings**.
-1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature.
-1. Select **Update Configuration** in the upper-right corner of the **Configuration** page to commit your changes.
-
-## Complete and update the configuration
-
-After you've completed the configuration, you must commit all the changes to Inventory Visibility. Follow these steps to commit your changes.
-
-1. In Power Apps, on the **Configuration** page, select **Update Configuration** in the upper-right corner. 
-1. The system requests sign-in credentials. Enter the following values:
-
-    - **Client Id** – The Azure application ID that you created for Inventory Visibility.
-    - **Tenant Id** – Your Azure tenant ID.
-    - **Client Secret** – The Azure application secret that you created for Inventory Visibility.
-
-    For more information about these credentials and how to find them, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-
-    > [!IMPORTANT]
-    > Be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration. You won't be able to modify these settings after you update it.
-
-1. After sign-in, select **Update Configuration** again. The system applies your settings and shows what has changed.
-
-## <a name="default-configuration-sample"></a>Default configuration sample
+## <a name="default-configuration-sample"></a>Default configuration sample of data source setting
 
 During its initialization stage, Inventory Visibility sets up a default configuration, which is detailed here. You can modify this configuration as you require.
 
@@ -654,46 +416,73 @@ The `AvailQuantity` calculated measure is configured for the `pos` data source a
 | Addition | `pos` | `Inbound` |
 | Subtraction | `pos` | `Outbound` |
 
-### Partition configuration
+#### Configuration of the "iom" data source
 
-The following table shows the default partition configuration.
+The following physical measures are configured for the `iom` (intelligent order management) data source:
 
-| Base dimension | Hierarchy |
-|---|---|
-| `SiteId` | 1 |
-| `LocationId` | 2 |
+- `OnOrder`
+- `OnHand`
 
-### Index configuration
+#### Configuration of the "erp" data source
 
-The following table shows the default index configuration.
+The following physical measures are configured for the `erp` (enterprise resource planning) data source:
 
-| Set Number | Dimension | Hierarchy |
-|---|---|---|
-| 1 | `ColorId` | 1 |
-| 1 | `SizeId` | 2 |
-| 1 | `StyleId` | 3 |
+- `Unrestricted`
+- `QualityInspection`
 
-### Reservation configuration
 
-This section describes the default reservation configuration.
+## <a name="differences-between-v1-and-v2"></a>Differences between Version1 and Version 2
 
-#### Reservation mapping
+**Physical measures**: Unlike version 1, user no longer needs to specify the data source for a physical measure, it's by default the current data source.
+**Calculated measures**: Unlike version 1, user specifies the measure in two steps: (1) Calculated measre metadata to specify the name and data source for a calculated measure; and (2) Calculated measure detail, each record consists of an addition / subtraction operator of an existing physical measure to a calculated measure with specified metadata.
 
-The following table shows the default reservation mapping.
+## <a name="set-configuration-v1"></a>Set data source configuration on V1
 
-| Physical measure data source | Physical measure | Available for reservation data source | Available for reservation calculated measure |
-|---|---|---|---|
-| `iv` | `SoftReservPhysical` | `iv` | `AvailableToReserve` |
+#### Data source configuration
+Add data source, follow these steps:
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
+2. Open the **Configuration** page.
+3. On the **Data Source** tab, select **New Data Source** to add a data source (for example `ecommerce` or another meaningful data source ID).
 
-#### Reservation hierarchy
+> [!NOTE]
+> When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
-The following table shows the default reservation hierarchy.
+#### Dimension mappings configuration
+Add dimension mappings, follow these steps:
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
+1. Open the **Configuration** page.
+1. On the **Data Source** tab, select the data source where you want to do the dimension mapping. Then, in the **Dimension Mappings** section, select **Add** to add dimension mappings.
 
-| Base dimension | Hierarchy |
-|---|---|
-| `SiteId` | 1 |
-| `LocationId` | 2 |
-| `ColorId` | 3 |
-| `SizeId` | 4 |
+    ![Adding dimension mappings](media/inventory-visibility-dimension-mapping.png "Adding dimension mappings")
+
+1. In the **Dimension Name** field, specify the source dimension.
+1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
+1. Select **Save**.
+
+#### Physical measures configuration
+Add new physical measures, follow these steps:
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
+1. Open the **Configuration** page.
+1. On the **Data Source** tab, select the data source to add physical measures to (for example, the `ecommerce` data source). Then, in the **Physical Measures** section, select **Add**, and specify the measure name (for example, `Returned` if you want to record returned quantities in this data source to Inventory Visibility). Save your changes.
+
+#### Calculated measures configuration
+Add new custom calculated measure, follow these steps:
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
+1. Open the **Configuration** page.
+1. On the **Calculated Measure** tab, select **New Calculate Measure** to add a calculated measure.
+1. Set the following fields for the new calculated measure:
+
+    - **New calculated measure name** – Enter the name of the calculated measure.
+    - **Data source** – Select the data source to include the new calculated measure in. The querying system is a data source.
+
+1. Select **Add** to add a modifier to the new calculated measure.
+1. Set the following fields for the new modifier:
+
+    - **Modifier** – Select the modifier type (*Addition* or *Subtraction*).
+    - **Data source** – Select the data source where the measure that provides the modifier value should be found.
+    - **Measure** – Select the name of the measure (from the selected data source) that provides the value for the modifier.
+
+1. Repeat steps 5 through 6 until you've added all the required modifiers and completed the formula for your calculated measure.
+1. Select **Save**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
