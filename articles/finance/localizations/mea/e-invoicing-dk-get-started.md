@@ -21,15 +21,14 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark. 
+This article provides information that will help you get started with Electronic invoicing for Denmark and configure the system to enable generation and submission of electronic invoices in Danish-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. 
 
-It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
+The article guides you through the configuration steps that are general and country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- .
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
