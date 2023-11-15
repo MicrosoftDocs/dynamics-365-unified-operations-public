@@ -68,7 +68,7 @@ DOM uses the Bing Maps API to calculate aerial or road distance, depending on th
 
 ## Generate fulfillment plans
 
-After DOM applies the rules, inventory constraints, and optimization, it picks the location that is closest to the customer's delivery address. Fulfillment plans are then obtained from the optimizer. Whether fulfillment plans are applied on the sales lines or not depends on the value of the **Auto apply result** setting. For more information, see [Results of DOM runs](./results-of-dom-runs.md).
+After DOM applies the rules, inventory constraints, and optimization, it picks the location that is closest to the customer's delivery address. Fulfillment plans are then obtained from the optimizer. Whether fulfillment plans are applied on the sales lines or not depends on the value of the **Auto apply result** setting. For more information, see [Results of DOM runs](dom-runs-results.md).
 
 ![Sales order criteria.](./media/ordercriteria.png)
 
