@@ -33,19 +33,19 @@ Copilot provides in-app help guidance that uses the power of generative AI to gi
 
 [<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
 
-## How Copilot works for in-app help and guidance
+### How Copilot works for in-app help and guidance
 
 Copilot transforms the support experience by introducing a conversational sidecar in finance and operations apps. Therefore, users can enter questions or express their needs directly in the app. The system is effective at interpreting the context of user queries, and provides relevant, tailored information to help with task completion. Future enhancements are expected to expand the system's capabilities so that they include direct navigation and proactive action suggestions.
 
-## Grounded in public documentation
+### Grounded in public documentation
 
 Copilot in-app help guidance is deeply grounded in the official public documentation for Microsoft finance and operations apps. This grounding ensures that the AI has a comprehensive understanding of the system and can generate responses that are not only accurate but also aligned with the latest features and best practices that Microsoft has established.
 
-## Powered by generative AI
+### Powered by generative AI
 
 Copilot uses state-of-the-art generative AI to dynamically interpret user inquiries and compose responses in real time. This process involves a sophisticated mechanism where the AI first rephrases the user's question for clarity, then searches the indexed public documentation, and finally synthesizes the information into a coherent, actionable answer.
 
-## Process for generating guidance with large language models
+### Process for generating guidance with large language models
 
 The workflow for generating a response through Copilot can be broken down into the following steps.
 
