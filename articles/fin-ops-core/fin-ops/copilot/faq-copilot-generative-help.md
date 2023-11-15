@@ -1,5 +1,5 @@
 ---
-title: FAQ for generative help and guidance with Copilot (preview)
+title: Responsible AI FAQ for Generative help and guidance with Copilot (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in generative help and guidance with Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: cabeln
 ms.author: cabeln
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# FAQ for generative help and guidance with Copilot (preview)
+# Responsible AI FAQ for Generative help and guidance with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
 [This article is prerelease documentation and is subject to change.]
@@ -72,7 +72,7 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 ## See also
 
-- [Microsoft Copilot for finance and operations apps (preview)](copilot-for-finance-operations.md)
-- [Enable Microsoft Copilot for finance and operations apps (preview)](../../dev-itpro/copilot/enable-copilot.md)
+- [Overview of Copilot capabilities in finance and operations apps (preview)](copilot-for-finance-operations.md)
+- [Enable Copilot capabilities in finance and operations apps (preview)](../../dev-itpro/copilot/enable-copilot.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

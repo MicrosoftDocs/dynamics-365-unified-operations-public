@@ -16,6 +16,5 @@ ms.reviewer: kamaybac
 
 [!INCLUDE[responsible-ai-features](../includes/responsible-ai-features.md)]
 
-- [The Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
+- [The Confirmed purchase orders with changes workspace (preview)](faq-confirmed-po-changes.md)
 - [Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)
-
