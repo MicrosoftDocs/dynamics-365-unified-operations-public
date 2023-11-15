@@ -1,9 +1,9 @@
 ---
 title: DOM limitations
-description: This article decribes the limitations of the distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
+description: This article decribes the limitations of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/07/2023
-ms.topic: conceptual
+ms.date: 11/15/2023
+ms.topic: article
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
@@ -15,7 +15,7 @@ ms.search.validFrom: 2023-11-07
 
 [!include [banner](includes/banner.md)]
 
-This article decribes the limitations of the distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
+This article decribes the limitations of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 
 Here are some things to consider when you use the DOM feature:
 
