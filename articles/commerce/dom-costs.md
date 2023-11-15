@@ -35,35 +35,10 @@ Two major cost component types can be defined in the system: **Shipping** and **
 
 Both cost component types support multiple calculation bases, as shown in the following table.
 
-<table>
-<thead>
-<tr>
-<th>Cost component type</th>
-<th>Calculation basis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Shipping</td>
-<td>
-<ul>
-<li>Simple</li>
-<li>Tiered</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Other</td>
-<td>
-<ul>
-<li>Sales order</li>
-<li>Sales line</li>
-<li>Location</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+| Cost component type | Calculation basis |
+| ------------- |-------------|
+| Shipping     | <ul><li>Simple</li><li>Tiered</li></ul> |
+| Other      | <ul><li>Sales order</li><li>Sales line</li><li>Location</li></ul> |
 
 ### Shipping cost component type
 
