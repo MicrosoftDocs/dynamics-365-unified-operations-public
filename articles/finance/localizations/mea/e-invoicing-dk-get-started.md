@@ -21,14 +21,16 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
+This article provides information that will help you get started with Electronic invoicing for Denmark. 
+
+It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
 
 ## Prerequisites
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- A valid certificate for digital signing must be obtained from the appropriate authorities.
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- .
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
     - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
