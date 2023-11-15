@@ -175,4 +175,4 @@ You must set up the following fields for this combination:
 > For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)] 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
