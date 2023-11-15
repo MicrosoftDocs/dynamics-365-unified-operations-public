@@ -15,7 +15,7 @@ ms.custom: bap-template
 # Overview of Copilot capabilities in finance and operations apps (preview)
 
 [!include [banner](../includes/banner.md)]
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 
 Copilot gives users access to AI capabilities that augment the application experiences and functionality of finance and operations apps.
 
@@ -25,11 +25,7 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 - **Embedded** – These Copilot features add intelligent capabilities to the application itself. In this way, they bring AI to the center of the application experience. For example, in the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md), AI capabilities that are built into the page help users understand and react to changes in confirmed purchase orders.
 - **Outside** – External agents help orchestrate across different apps and tasks. For example, users can use Copilot to ask questions about finance and operations data. For more information, see [FAQ for finance and operations data on Microsoft 365 Copilot (Preview)](../../dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md).
 
-> [!IMPORTANT]
->
-> - This is a preview feature. It is subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 ## Generative help and guidance
 
@@ -37,19 +33,19 @@ Copilot provides in-app help guidance that uses the power of generative AI to gi
 
 [<img src="media/copilot-homepage-explain-worflow.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](media/copilot-homepage-explain-worflow.png#lightbox)
 
-## How Copilot works for in-app help and guidance
+### How Copilot works for in-app help and guidance
 
 Copilot transforms the support experience by introducing a conversational sidecar in finance and operations apps. Therefore, users can enter questions or express their needs directly in the app. The system is effective at interpreting the context of user queries, and provides relevant, tailored information to help with task completion. Future enhancements are expected to expand the system's capabilities so that they include direct navigation and proactive action suggestions.
 
-## Grounded in public documentation
+### Grounded in public documentation
 
 Copilot in-app help guidance is deeply grounded in the official public documentation for Microsoft finance and operations apps. This grounding ensures that the AI has a comprehensive understanding of the system and can generate responses that are not only accurate but also aligned with the latest features and best practices that Microsoft has established.
 
-## Powered by generative AI
+### Powered by generative AI
 
 Copilot uses state-of-the-art generative AI to dynamically interpret user inquiries and compose responses in real time. This process involves a sophisticated mechanism where the AI first rephrases the user's question for clarity, then searches the indexed public documentation, and finally synthesizes the information into a coherent, actionable answer.
 
-## Process for generating guidance with large language models
+### Process for generating guidance with large language models
 
 The workflow for generating a response through Copilot can be broken down into the following steps.
 
@@ -63,5 +59,5 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 
 ## See also
 
-- For administrators: [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
-- [Responsible AI FAQs for generative help and guidance with Copilot](../../dev-itpro/responsible-ai/responsible-ai-overview.md)
+- For administrators: [Enable Copilot capabilities in finance and operations apps (preview)](../../dev-itpro/copilot/enable-copilot.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot (preview)](faq-copilot-generative-help.md)
