@@ -29,17 +29,19 @@ The article guides you through the configuration steps that are general and coun
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
+- The company must be registered in Danish authorities and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable submission of electronic invoices generated in Microsoft D365 Finance.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
     - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
     - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)  
 - Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- Create certificates and secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
+- Create secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
 
-    - The 
-    - The 
-    - The 
+    - The **Service ID** which uniquely identifies the company by the provider of electronic documents delivery service.
+    - The **Group ID** which is required for internal routing within the infrastructure of the provider of electronic documents delivery service.
+    - The **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service.
 
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
