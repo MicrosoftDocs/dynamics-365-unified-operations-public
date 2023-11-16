@@ -32,14 +32,12 @@ To configure DOM parameters, follow these steps.
 1. On the **General** tab, set the following values:
 
     - **Enable distributed order management** – Set this option to **Yes**.
-    - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**. When this option is enabled, DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. When this option is disabled, the latitude and longitude values on the warehouse setting or customer's delivery address will be used. The latitude and longitude values will be used for distance calculation in the DOM processing.
+    - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**. When this option is enabled, DOM depends on Bing Maps to determine accurate latitude and longitude values based on address, city, and postal code information. When this option is disabled, the latitude and longitude values on the warehouse setting or customer's delivery address are used. The latitude and longitude values are used for distance calculation in the DOM processing.
 
         > [!NOTE]
-        > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
-        >
-        > The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
+        > - You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the headquarters **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
+        > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
     - **Disable road distance calculation** - If this option is **Yes**, aerial distance will be calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
-
     - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders which have been accepted by retail stores.
     - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if ou want to update financial dimensions on sales order lines based on the site.
     - **Fulfillment data retention period (in days)** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.
@@ -71,7 +69,7 @@ To configure DOM parameters, follow these steps.
 
 The DOM feature supports the definition of various types of DOM rules, and organizations can configure multiple rules, depending on their business needs. DOM rules can be defined for a group of locations or individual locations, and for a specific product category, product, or variant. To create the grouping of locations that must be used for the DOM rules, follow these steps:
 
-1. Go to **Retail and Commerce \> Channel setup \> Fulfillment groups**.
+1. In headquarters, go to **Retail and Commerce \> Channel setup \> Fulfillment groups**.
 1. Select **New**, and then enter a name and description for the new group.
 1. Select **Save**.
 1. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
