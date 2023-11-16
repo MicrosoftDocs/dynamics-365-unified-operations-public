@@ -127,6 +127,12 @@ This section describes the purpose of each type of forecast tile. It also explai
 - *Prophet* – Facebook Prophet
 - *Best fit model*
 
+## Finance and operations – Azure Machine Learning tiles
+
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+
+For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning (preview)](custom-azure-machine-learning-algorithms.md).
+
 ### Save tiles
 
 *Save* tiles save the result of the forecast model as a new or updated series. All forecast models must end with a single *Save* tile.
