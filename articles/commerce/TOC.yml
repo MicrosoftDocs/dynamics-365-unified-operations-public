@@ -902,8 +902,22 @@
         items:
         - name: DOM overview
           href: dom.md
+        - name: Set up DOM
+          href: dom-set-up.md
+        - name: DOM rules
+          href: dom-rules.md
         - name: Cost configuration
-          href: cost.md
+          href: dom-costs.md
+        - name: DOM processing
+          href: dom-processing.md
+        - name: Results of DOM runs
+          href: dom-runs-results.md
+        - name: DOM fulfillment plans and logs clean-up
+          href: dom-clean-up.md
+        - name: DOM extensibility
+          href: dom-extensibility.md
+        - name: DOM limitations
+          href: dom-limitations.md
       - name: Order fulfillment and processing
         items:
         - name: Store order fulfillment
