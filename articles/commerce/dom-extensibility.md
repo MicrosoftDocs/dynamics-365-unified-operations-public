@@ -2,7 +2,7 @@
 title: DOM extensibility
 description: This article describes the extensibility of distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -25,5 +25,23 @@ The events defined in `DOMExtensionEvents` class can replace or extend use of th
 - `OnSettingAvailableInventory`: allows you to override the on-hand inventory of products.
 - `OnExecutingFulfillmentPlan`: allows you to perform actions before fulfillment plans are applied.
 - `OnExecutedFulfillmentPlan`: allows you to perform actions after fulfillment plans were applied.
+
+## Additional resources
+
+[DOM overview](dom.md)
+
+[Set up DOM](dom-set-up.md)
+
+[DOM rules](dom-rules.md)
+
+[DOM cost configuration](dom-costs.md)
+
+[DOM processing](dom-processing.md)
+
+[Results of DOM runs](dom-runs-results.md)
+
+[Clean up DOM fulfillment plans and logs](dom-clean-up.md)
+
+[DOM limitations](dom-limitations.md)
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
