@@ -56,6 +56,9 @@ You can use the **Country of origin vendor certificates** page to keep track of 
 
 You must decide which certificate documents you're issuing and how you will report them to customers. This feature helps you keep track of your certificates. It also lets you choose whether the relevant certificate numbers appear on invoices, packing slips, and/or order confirmations.
 
+>[!NOTE]
+> The feature does not include changes to the invoice, packing slip, and order confirmations. Thise reports must be extended in your project to enable the actual printout of the certificate numbers. 
+
 To set up your certificate information, follow these steps.
 
 1. Go to **Product information management \> Setup \> Product compliance \> Country of origin \> Country of origin vendor certificates**.
@@ -70,9 +73,9 @@ To set up your certificate information, follow these steps.
     | Certificate number | Enter the identification number of the certificate that you issued. |
     | Effective | Select the first date when the current certificate is valid.|
     | Expiration | Select the last date when the current certificate is valid. |
-    | Print on invoice | Select this check box to print the certificate number on invoices that are addressed to the specified country/region during the specified date range. |
-    | Print on packing slip | Select this check box to print the certificate number on packing slips that are addressed to the specified country/region during the specified date range. |
-    | Print on sales order | Select this check box to print the certificate number on sales orders that are addressed to the specified country/region during the specified date range. |
+    | Print on invoice | This checkbox is provided to support an extension of the invoice report to include the certificate numbers. The certificate number is not included in the D365 invoice report.|
+    | Print on packing slip | This checkbox is provided to support an extension of the packing slip report to include the certificate numbers. The certificate number is not included in the D365 packing slip report.|
+    | Print on sales order | This checkbox is provided to support an extension of the order confirmation report to include the certificate numbers. The certificate number is not included in the D365 order confirmation report. |
 
 ## Include the country/region of origin on BOM reports
 
