@@ -64,22 +64,31 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Some of the parameters from the **Danish electronic invoice (DK)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
-1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Submit batch** feature setup, and then select **Edit**.
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **(Preview) KSeF send batch to e-invoice system** action.
-6. In the **Parameters** section, select **Client ID**, and then select the name of the secret that you previously created for the legal entity's tax identification number.
-7. Select **Certificate name**, and then select the name of the digital certificate that you created.
-8. Select **Public key**, and then select the name of the secret that you created for the public key.
-9. Select **Service URI**, and make sure that a valid URI is configured. To get the testing and production URIs, go to the website of the Polish National system for electronic invoicing ([KSeF](https://www.podatki.gov.pl/ksef)).
-10. In the **Processing pipeline** section, select the **(Preview) KSeF get batch status from e-invoice system** action.
-11. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
+4. On the **Setups** tab, in the grid, select the **OIOUBL Sales invoice processing** feature setup, and then select **Edit**.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **QQQQ ISV connector QQQQ** action.
+6. In the **Parameters** section, select **ServiceID**, and then select the name of the secret that you previously created for the legal entity's Service ID.
+7. Select **Group ID**, and then select the name of the secret that you previously created for the legal entity's Group ID.
+8. Select **Token**, and then select the name of the secret that you created for the token.
+9. Select **Service URI**, and make sure that a valid URI is configured. QQQQ !!!!!!!!!!!!!!!!!!!  QQQQQQQQ.
+10. I
+11. I.
 12. Select **Save**, and close the page.
 13. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
 14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
 15. Select **Save** (if you made any changes), and close the page.
-16. Repeat steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+16. Repeat steps 5 through 13 for the following feature setups if your business process assumes involvement of the related types of documents:
+  
+   - OIOUBL Sales credit note processing
+   - OIOUBL Project invoice processing
+   - OIOUBL Project credit note processing
+   - Peppol Sales invoice processing
+   - Peppol Sales credit note processing
+   - Peppol Project invoice processing
+   - Peppol Project credit processing
+
 
 Configure the ISV connector [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md):
 
