@@ -20,14 +20,13 @@ The *inventory log history* feature for Inventory Visibility creates a log of su
 
 To start keeping the log of successfully updated inventory API posts, you must enable the feature in Power Apps. Follow these steps to enable the feature:
 
-1. Make sure your Dataverse solutions are in version 1.2.2.1 or higher. <!-- KFM: Version of which Dataverse solutions? How do I make sure of this? -->
 1. Sign into Power Apps and go to **Inventory Visibility \> Settings \> Feature Management**.
 1. Enable the *Inventory log history* feature.
 1. Go to **Admin settings** and select **Update configuration**.
 
 ## View inventory log history
 
-Once you have enabled the log, you can view the log entries either by using the Inventory Visibility app in Power Apps or by calling the API.
+Once the log is enabled, you can view the log entries either by using the Inventory Visibility app in Power Apps or by calling the API.
 
 ### View log entries using the Inventory Visibility app in Power Apps
 
@@ -41,7 +40,7 @@ Follow these steps to view the log using the Inventory Visibility app in Power A
 Follow these steps to retrieve log entries by calling the [Inventory Visibility API](inventory-visibility-api.md):
 
 1. Run a tool that lets you call APIs (such as [Postman](https://www.postman.com/)) and use it to access the `{inventoryVisibilityEndpoint}/api/environment/{yourEnvironmentId}/logTransactionDetails` API using the `Post` method.
-1. Set up and submit a request body to retrieve the log data you are interested in <!-- KFM:What does this message do? Just start a job and return a job ID? What does that job do?  -->. Here's an example:
+1. Set up and submit a request body to retrieve the log data you're interested in. The following example shows a request body that asks the system to prepare and retrieve the log. This step is necessary because the log is stored in Data Lake and is only transferred to Dataverse on request. The API returns a log history job ID that you can use to check the job completion status.
 
     ```txt
     
@@ -79,5 +78,6 @@ Follow these steps to retrieve log entries by calling the [Inventory Visibility 
     
     ```
 
-1. Use the `{inventoryVisibilityEndpoint}/api/environment/{yourEnvironmentId}/getJobProgress?jobId={jobIdGotInLastStep}` API to track the status of inventory log history job. <!-- KFM: What "job" is this? What is going on here? This should be mentioned in the intro. -->
-1. Once the job is completed successfully, you can check all the logs in Dataverse table: Transaction Logging Report (`is_transactionloggingreport`). <!-- KFM: Does this API call create or update this table instead of returning the log entries? What is going on here? How do I do this step?  -->
+1. Use the `{inventoryVisibilityEndpoint}/api/environment/{yourEnvironmentId}/getJobProgress?jobId={jobIdFromPreviousStep}` API to track the status of the inventory log history job.
+
+1. When the API reports that the job is completed successfully, you can review the logs in Dataverse by opening the transaction logging report table (`is_transactionloggingreport`).
