@@ -24,8 +24,8 @@ The November release of Dual-write Supply Chain solution 2.3.4.265 contains the 
 | Feature | Description | Status |
 | ---|---|---|
 |Bug fix | ATP Information is returning incorrect site/warehouse results in CE.	|General availability |
-|Bug fix | When creating a sales order in CE, an inactive price list has been selected. |General availability |
-|Bug fix | The warning message **Feature management states map not running** should not be displayed if no quotation map is running. |General availability |
+|Bug fix | When you create a sales order in CE, an inactive price list has been selected. |General availability |
+|Bug fix | The warning message **Feature management states map not running** shouldn't be displayed if no quotation map is running. |General availability |
 
 ### Solution details
 
@@ -153,7 +153,7 @@ The March release of [Dual-write core solution 1.0.41.0](https://appsource.micro
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug | Require additional exception handling to PostCommit plugin. | General availability |
+| Bug | Require more exception handling to PostCommit plugin. | General availability |
 |Bug fix|	When updating the postal address page, the street field wasn't concatenating correctly when the street 2 field wasn't populated. |General availability|
 |Bug fix|	Fixed the GAB plugin for creation of account. The **Search name** field in Dataverse won't be overwritten at CREATE if the search name is different than the name.|	General availability|
 |Bug fix	|Prevent the deactivation of primary postal address and customer addresses in Customer engagement to match functionality with finance and operations and avoid data corruption.|	General availability|
@@ -527,7 +527,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | **Product category name** is part of the natural/integration key of the **Product Categories** table. Updating the name using a finance and operations app cause an insert in Dataverse instead of an update. Use the new map for `msdyn_productcategories - Product categories` with version 1.0.0.1. The supported finance and operations version is 10.0.778.0 (platform update 42) | General availability |
 | Bug fix| Localization bug fixes and updates. | General availability |
 | Bug fix| A note without a description throws error. | General availability |
-| Bug fix| In finance and operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order for example, **canceled** or **fulfilled**. That action triggers a recancellation or refulfillment causing a conflict error. | General availability |
+| Bug fix| In finance and operations apps, running the "Calculate Sales Totals" batch job updates all orders modified within last 24 hours and fixes the totals regardless of the status of the order, for example, **canceled** or **fulfilled**. That action triggers a recancellation or refulfillment causing a conflict error. | General availability |
 
 ## February 2021 release
 
@@ -621,7 +621,7 @@ The June 2020 release of the dual-write orchestration package contains the featu
 
 | Feature | Description | Status |
 |------|---------|-------|
-| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. That can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
+| Edit legal entity after setup | The company or legal entity list isn't static and is constantly changing. You might need to add new companies, for example, during a phased rollout or acquisition. Previously, you couldn't add a company or legal entity without system downtime. During this downtime, you would have to unlink and relink your environment. Relinking can be expensive, especially if you have pre-existing data. With this feature, you can add a company in a live environment without having to unlink and relink. | General availability |
 
 ## May 2020 release
 
@@ -638,6 +638,6 @@ The May 2020 release of the dual-write orchestration package (version 2.0.777.35
 | Create sellable contacts | Allow creation of a sellable contact using the **Quick Create: Contact** form in customer engagement apps. | General availability |
 | Quote and order creation | Enable quote and order creation for B2C customers. | General availability |
 | Removal of tenant admin-level consent requirement | Until now, before you could enable dual-write, a tenant admin needed to explicitly give consent to the applications. This wasn't always practical and required more approval, which can be time consuming. With this feature, we removed this prerequisite and the need for explicitly giving consent to the applications. | General availability |
-| Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment which was cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
+| Force unlink dual-write environment | Previously, while testing dual-write, you had to disable all the table maps before unlinking a dual-write environment, which was cumbersome and sometimes not possible if one of the environments wasn't available. This new feature provides a quick way to unlink your test and trial environments. | General availability |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
