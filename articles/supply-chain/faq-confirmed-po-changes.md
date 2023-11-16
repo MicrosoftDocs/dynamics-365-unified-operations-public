@@ -1,6 +1,6 @@
 ---
 
-title: Responsible AI FAQ for Procurement with Copilot - Confirmed purchase orders with changes workspace (preview)
+title: Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the Confirmed purchase orders with changes workspace in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 11/16/2023
 ms.custom: 
@@ -10,7 +10,7 @@ author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ---
-# Responsible AI FAQ for Procurement with Copilot - Confirmed purchase orders with changes workspace (preview)
+# Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](includes/preview-banner.md)]
@@ -27,7 +27,7 @@ The **Confirmed purchase orders with changes** workspace helps procurement profe
 
 ## What are capabilities of the Confirmed purchase orders with changes workspace?
 
-The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content is generated from data such a Product, purchase order or vendor information in the system.
+The feature takes changes to confirmed purchase orders as input and then identifies the downstream orders that are related to those purchase orders. The feature uses Copilot to generate natural-language summaries and draft communications for vendors. Copilot uses the *gpt-3.5-turbo* generative AI model to generate the natural-language content. Summaries and content are generated from data records stored in the system, including products, purchase orders, and vendors.
 
 ## What is the intended use of the Confirmed purchase orders with changes workspace?
 
@@ -53,7 +53,7 @@ The generated content should never be used without manual review or supervision.
 
 When you use the feature, follow these recommendations:
 
-- Companies must assure that permissions to data is sufficiently controlled such that business data is not tempered with to influences AI data processing in an undesired way.
+- Make sure that your company has sufficient control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Always review generated summaries, and study the detailed lists of changes and impacts, before you make decisions about reconfirming purchase orders.
 - Always review generated communication drafts before you send them by email or post them to a Teams message.
 
