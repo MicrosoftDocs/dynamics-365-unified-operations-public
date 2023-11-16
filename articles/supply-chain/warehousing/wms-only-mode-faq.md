@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode FAQ
+title: Warehouse management only mode FAQ (preview)
 description: This article provides answers to frequently asked questions about Warehouse management only mode.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode FAQ
+# Warehouse management only mode FAQ (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

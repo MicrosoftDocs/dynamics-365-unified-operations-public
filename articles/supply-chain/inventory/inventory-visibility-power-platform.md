@@ -115,12 +115,14 @@ To enable the **Inventory summary** page and set the synchronization frequency, 
 >
 > If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
+## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 

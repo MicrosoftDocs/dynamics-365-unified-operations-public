@@ -16,5 +16,5 @@ ms.reviewer: kamaybac
 
 [!INCLUDE[responsible-ai-features](../includes/responsible-ai-features.md)]
 
-- [The Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
-- [Detect spikes and deviations in sensor data](faq-sdi-spike.md)
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace (preview)](faq-confirmed-po-changes.md)
+- [Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)
