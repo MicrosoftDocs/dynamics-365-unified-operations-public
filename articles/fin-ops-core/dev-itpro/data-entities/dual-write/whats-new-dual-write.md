@@ -18,6 +18,23 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## November 2023 
+The November release of Dual-write Supply Chain solution 2.3.4.265 contains the following bug fixes.
+
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix | ATP Information is returning incorrect site/warehouse results in CE.	|General availability |
+|Bug fix | When creating a sales order in CE, an inactive price list has been selected. |General availability |
+|Bug fix | The warning message "Feature management states map not running" should not be displayed if no quotation map is running |General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Dynamics365SupplyChainExtended | Yes | 2.3.4.203 | 2.3.4.265 |
+| msdyn_Dynamics365SupplyChainExtendedMaps | Yes | 2.3.4.203 | 2.3.4.265 |
+| msdyn_Dynamics365SupplyChainExtendedAnchor | Yes | 2.3.4.203 | 2.3.4.265 |
+
 ## October 2023 
 The October release of Dual-write GAB solution 3.5.1.135 contains the following bug fixes.
 
@@ -101,6 +118,7 @@ The June 2023 release of the Dual-write Supply Chain solution contains the follo
 | Feature | [Add efficiency in quote-to-cash with Dynamics 365 Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-concept.md) | General availability |
 | Feature | [Set the default ownership for all sales quotations.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#default-ownership) | General availability |
 | Feature	| [Change ownership for a sales quotation.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#change-ownership-for-a-sales-quotation)	| General availability |
+| Feature	| [Make Supply Chain Management the price master.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#scm-price-master)	| General availability |
 | Feature	| [Calculate and push prices, discounts, and totals from Supply Chain Management to Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#push-to-sales)	| General availability |
 | Feature	| [Copy Supply Chain Management sales quotation data to sales orders synced from Sales.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#copy-quotation-data)	| General availability |
 | Feature	| [Process events related to Sales integration.](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-use.md#process-events)	| General availability |
