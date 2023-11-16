@@ -4,7 +4,7 @@
 title: Distributed order management (DOM)
 description: This article provides an overview of the distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: overview
 audience: Application User
 ms.reviewer: josaw
@@ -32,5 +32,24 @@ The following video provides an overview of DOM capabilities in Dynamics 365 Com
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bRYl]
+
+## Additional resources
+
+[Set up DOM](dom-set-up.md)
+
+[DOM rules](dom-rules.md)
+
+[DOM cost configuration](dom-costs.md)
+
+[DOM processing](dom-processing.md)
+
+[Results of DOM runs](dom-runs-results.md)
+
+[Clean up DOM fulfillment plans and logs](dom-clean-up.md)
+
+[DOM extensibility](dom-extensibility.md)
+
+[DOM limitations](dom-limitations.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
