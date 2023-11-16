@@ -30,7 +30,6 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Inventory and logistics | [Empower users with near real-time inventory insights](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/empower-users-near-real-time-inventory-insights) | [Inventory Visibility Power BI dashboard](../inventory/inventory-visibility-dashboard.md) | Enabled by default |
 | Inventory and logistics | [Sell and price multiple items as a bundle](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/sell-price-multiple-items-as-bundle) | [Product bundles overview](../sales-marketing/product-bundles-overview.md) | Feature management:<br>*Product bundles*  |
-| Manufacturing and asset management | [Detect spikes and deviations in sensor data](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/detect-spikes-deviations-sensor-data) | [Anomaly detection scenario](../sensor-data-intelligence/sdi-scenario-anomaly.md) | Enabled by default |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | [Advanced export control overview](../pim/export-control-overview.md) | Feature management:<br>*(Preview) Advanced export control configuration*  |
 | Warehouse management | Dynamic printer selection | [Dynamic printer selection](../warehousing/dynamic-printing-selection.md) | Enabled by default |
 | Warehouse management | Operate warehouses connected to external order management systems | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
@@ -175,7 +174,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Procurement and sourcing | [Review and accept changes to confirmed purchase orders](../procurement/purchase-order-changes-after-confirmation.md) |
 | Responsible AI | [Responsible AI FAQs for Dynamics 365 Supply Chain Management](../responsible-ai-overview.md) |
-| Warehouse management | [Install and connect the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
+| Warehouse management | [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md) now describes how to authenticate using device code flow |
 | Warehouse management | [Optimize location directive queries](../warehousing/location-directives-optimize.md) |
 | Warehouse management | [Warehouse Mobile app accessibility features](../warehousing/warehouse-app-accessibility.md) |
 

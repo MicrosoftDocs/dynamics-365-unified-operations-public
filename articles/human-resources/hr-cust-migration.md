@@ -174,7 +174,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 #### Prerequisites
 
 - The Subscription estimator should be completed.
-- The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+- The Human Resources migration [Go-live readiness assessment](hr-migration-admin-go-live-readiness-review.md) should be completed.
 - The user initiating the Production migration in Lifecycle services should have a System administrator role on the Power Platform. 
 
 #### Migrate the production environment

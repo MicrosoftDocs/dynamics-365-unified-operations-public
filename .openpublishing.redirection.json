@@ -1,11 +1,15 @@
 {
   "redirections": [
     {
-      "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
-      "redirect_url": "dynamics365/get-started",
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37",
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md",
+      "redirect_url": "fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38",
+      "redirect_document_id": "false"
+    },    {
       "source_path": "articles/finance/localizations/tasks/fixed-asset-depreciation-allocation.md",
       "redirect_url": "../apac/fixed-asset-depreciation-allocation",
       "redirect_document_id": "false"
@@ -27366,8 +27370,153 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md ",
+      "source_path": "articles/supply-chain/production-control/production-floor-execution-styles.md",
       "redirect_url": "../supply-chain-dev/production-floor-execution-styles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/commerce",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/finance/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "articles/finance/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/finance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/sensor-data-intelligence/sdi-scenario-anomaly.md",
+      "redirect_url": "/dynamics365/supply-chain/sensor-data-intelligence/sdi-home-page",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/faq-sdi-spike.md",
+      "redirect_url": "/dynamics365/supply-chain/responsible-ai-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-administrator.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-bdm.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-business-user.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-developer.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-functional-consultant.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-partner-sales.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-project-manager.md",
+      "redirect_url": "/training/dynamics365/scm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/get-started/learning-catalog-solution-architect.md",
+      "redirect_url": "/training/dynamics365/scm",
       "redirect_document_id": false
     }
   ]

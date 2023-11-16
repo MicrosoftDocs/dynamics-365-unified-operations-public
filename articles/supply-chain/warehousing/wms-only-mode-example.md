@@ -1,5 +1,5 @@
 ---
-title: Example of using inbound and outbound shipment orders
+title: Example of using inbound and outbound shipment orders (preview)
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Example of using inbound and outbound shipment orders
+# Example of using inbound and outbound shipment orders (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -38,7 +38,9 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
 
-The example data uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
+If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.
+
+The example data that's provided in this article uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
 
 > [!NOTE]
 > To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).

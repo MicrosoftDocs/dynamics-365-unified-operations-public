@@ -15,9 +15,6 @@ ms.custom: bap-template
 # Warehouse mobile devices workspace
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!--KFM: preview until 10.0.37 GA -->
 
 The **Warehouse mobile devices** workspace lets you monitor the health and license status of all handheld devices that are used in your warehouses.
 
@@ -48,7 +45,7 @@ The **Summary** FastTab of the **Warehouse mobile devices** workspace provides t
 
 The **Devices needing attention** FastTab of the **Warehouse mobile devices** workspace provides a quick overview of devices that require attention. It provides the following two tabs:
 
-- **Devices to update** – Select this tab to view a list of devices that are running an old version of the Warehouse Management application. You should update each of these devices to the latest version to ensure optimal compliance, performance, and user experience. For details about the latest version of the app and a change history, see [What's new or changed in the Warehouse Management mobile app](whats-new-wma.md). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the Warehouse Management mobile app](warehouse-app-intune.md).
+- **Devices to update** – Select this tab to view a list of devices that are running an old version of the Warehouse Management application. You should update each of these devices to the latest version to ensure optimal compliance, performance, and user experience. For details about the latest version of the app and a change history, see [What's new or changed in the Warehouse Management mobile app](whats-new-wma.md). For information about how to mass deploy installations and updates for the Warehouse Management mobile app, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md) or [Mass deploy the mobile app for service-based authentication](warehouse-app-intune.md) (depending on which type of authentication method you are using).
 - **Devices to replace** – Select this tab to view a list of devices that are running an operation system that's no longer supported. These devices might pose a risk to system integrity and compliance. Therefore, you should replace them as soon as possible. If the list includes devices that you're no longer using, you can [delete them](#delete-devices).
 
 ## <a name="licenses"></a>Manage device licenses

@@ -1,5 +1,5 @@
 ---
-title: Price structure overview
+title: Price structure overview (preview)
 description: This article provides an overview of how price structures work in Pricing management.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Price structure overview
+# Price structure overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

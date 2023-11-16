@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: 
-ms.author: atrukawk
+ms.author: egolub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.custom: 261354
@@ -29,6 +29,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [Finland](../finland/emea-reporting-multiple-vat-registrations-fi.md)
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
+- [Italy](../italy/emea-reporting-multiple-vat-registrations-it.md)
 - [Netherlands](../netherlands/emea-reporting-multiple-vat-registrations-nl.md)
 - [Norway](../norway/emea-reporting-multiple-vat-registrations-no.md)
 - [Poland](../poland/emea-reporting-multiple-vat-registrations-pl.md)
@@ -114,10 +115,11 @@ For more information about how to configure Intrastat, see [Intrastat overview](
 
 1. Go to **Tax** > **Set up** > **Foreign trade** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting for countries/regions** FastTab, select the Intrastat reporting format for each country/region of your tax registration.
-3. In the **File format mapping** field, select the Electronic reporting (ER) format for Intrastat file export, for example, select **Intrastat (NL)** for Netherlands.
+3. In the **File format mapping** field, select the Electronic reporting (ER) format for Intrastat file export. For example, select **Intrastat (DE)** for Germany (DEU).
 4. In the **Report format mapping** field, select the ER format for printable report layout, for example, select **Intrastat report**.
+5. The **Miscellaneous charges per kilogram** checkbox is available when **Country/region** field is set to **ITA** (Italy). Select this checkbox to calculate miscellaneous charges by multiplying the cost of each kilogram and the weight of goods in kilograms. If this checkbox is cleared, miscellaneous charges are calculated as a percentage of the invoice amount. For more information, see [Miscellaneous charges per kilogram in an Intrastat declaration](../italy/emea-ita-exil-misc-charges-intrastat.md).
 
-    ![Foreign trade parameters2.](../media/Multipleid-image3.png)
+    ![Foreign trade parameters2.](../media/mediaMultipleid-image3-1.png)
 
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
@@ -139,6 +141,7 @@ For more information about how to configure Intrastat, see [Intrastat overview](
     | 10.0.23 | Poland | Intrastat (PL).version.25.5 |
     | 10.0.25 | Belgium | Intrastat (BE).version.2.9 |
     | 10.0.34 | The Czech Republic | Intrastat (CZ).version.24.6 |
+    | 10.0.38<br>10.0.37 - build 10.0.1725.25<br>10.0.36 - build 10.0.1695.56 | Italy | Intrastat (IT).version.24.36 |
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 

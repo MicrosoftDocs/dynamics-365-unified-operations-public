@@ -1,5 +1,5 @@
 ---
-title: Turn on Sensor Data Intelligence for your system
+title: Turn on Sensor Data Intelligence for your system (preview)
 description: This article explains how to turn on Sensor Data Intelligence for your system.
 author: johanhoffmann
 ms.date: 09/02/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Turn on Sensor Data Intelligence for your system
+# Turn on Sensor Data Intelligence for your system (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]

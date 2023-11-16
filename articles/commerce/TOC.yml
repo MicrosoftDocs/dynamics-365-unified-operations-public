@@ -14,14 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.38 (February 2024)
+          href: get-started/whats-new-commerce-10-0-38.md
         - name: Commerce 10.0.37 (November 2023)
           href: get-started/whats-new-commerce-10-0-37.md
         - name: Commerce 10.0.36 (October 2023)
           href: get-started/whats-new-commerce-10-0-36.md
-        - name: Commerce 10.0.35 (August 2023)
-          href: get-started/whats-new-commerce-10-0-35.md
-        - name: Commerce 10.0.34 (July 2023)
-          href: get-started/whats-new-commerce-10-0-34.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -138,26 +136,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
-      - name: Learning catalog
-        items:
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md?
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -732,8 +710,20 @@
             href: dev-itpro/copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: dev-itpro/import-export-manifest.md
+        - name: Retail product kits
+          items:
+          - name: Retail product kit setup overview
+            href: retail-product-kit-setup.md
+          - name: Create retail product kits
+            href: create-retail-product-kits.md
+          - name: Generate assembly and disassembly orders
+            href: generate-assembly-and-disassembly-orders.md
+          - name: Process kit assembly and disassembly orders
+            href: process-kit-assembly-and-disassembly-orders.md
         - name: Consume Commerce runtime (CRT) Product service requests
           href: dev-itpro/crt-product-requests.md
+        - name: Product discovery checklist
+          href: product-discovery-checklist.md
       - name: Pricing and discounts
         items:
         - name: Discounts
@@ -772,6 +762,8 @@
           href: pricing-apis.md
         - name: Price change tracking
           href: price-change-tracking.md
+        - name: Price FAQ
+          href: price-faq.md
       - name: Recommendations
         items:
         - name: Product recommendations overview
