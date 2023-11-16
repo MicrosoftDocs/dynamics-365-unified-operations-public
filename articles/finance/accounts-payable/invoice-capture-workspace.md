@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-In Invoice capture, when an invoice is successfully recognized by AI Builder and mapped to invoice fields, it can be automatically updated and validated according to rules before it's converted to a vendor invoice in Microsoft Dynamics 365 Finance. If the invoice isn't complete, or if the confidence score of the invoice recognition isn't high enough, manual intervention is required to review and correct the invoice.
+In Invoice capture, when an invoice is successfully recognized by AI Builder and mapped to invoice fields, it can be automatically updated and validated according to rules before it's converted to a vendor invoice in Microsoft Dynamics 365 Finance. If the invoice contains errrors or warnings, manual intervention is required to review and correct the invoice.
 
 ## What is the side-by-side viewer?
 
@@ -77,9 +77,6 @@ Here are some key features of the side-by-side viewer:
 | Transferred | The invoice was successfully transferred to Dynamics 365 Finance. | Open the invoice in Dynamics 365 Finance. |
 | Voided | The invoice is no longer needed and is obsolete. | <p>Select **Obsolete**.</p><p>When you select **Obsolete**, both captured invoices and received files are permanently deleted from Dataverse.</p> |
 | Awaiting | The invoice is submitted to the waiting list to be picked up by the automation job in Dynamics 365 Finance side for further processing.   |No action is required.|
-
-> [!NOTE]
-> The process automation task is called "Transfer Invoices from Invoice Capture". The default repeat interval of the task is 15 minutes. Admins have the flexibility to modify this interval by navigating to **System System administration > Setup > Process automation > Background processes**.
 
 ## Navigate to the side-by-side viewer
 
@@ -130,7 +127,7 @@ The entities include legal entity, vendor account, and item number. If derivatio
 
 1. **Legal entity** – If an active mapping rule is found for the legal entity, the legal entity is selected based on the company's name and address.
 2. **Vendor account** – Next, the vendor account is selected based on an active mapping rule and a combination of the selected legal entity and the vendor's name, address, or tax number.
-3. **Item number** – The item name is derived from staging, based on the following three types of information:
+3. **Item number** – The item number is derived based on the following three types of information:
 
     1. Derived legal entity
     2. Derived vendor account
@@ -139,7 +136,7 @@ The entities include legal entity, vendor account, and item number. If derivatio
 4. **Currency code** – The currency code must be determined before the invoice can be transferred from Invoice capture to Dynamics 365 Finance.
 
     - If an invoice is associated with a purchase order (PO invoice or Header-only invoice), the currency code between the invoice and the purchase order must be the same. If no currency code is returned from the recognition result, the currency code from the purchase order is entered by default.
-    - If you want a cost invoice to derive the currency code from the vendor master data, select the **Derive currency code for cost invoice** parameter.
+    - If you want a cost invoice to derive the currency code from the vendor master data, select the **Derive currency code for cost invoice** parameter under **Setup system > Manage processing rules**.
 
 After the fields are derived, the following additional validation checks are run:
 
@@ -176,3 +173,6 @@ There are two ways to transfer the complete invoice:
 
 - If invoice transfer is manually triggered, it uses the synchronous mode.
 - If the invoice transfer is automatically triggered through the touchless process, it's submitted to the awaiting list, and **Transfer invoices from invoice capture** will process the invoices.
+
+> [!NOTE]
+> The process automation task is called "Transfer Invoices from Invoice Capture". The default repeat interval of the task is one hour. Admins have the flexibility to modify this interval by navigating to **System System administration > Setup > Process automation > Background processes**.
