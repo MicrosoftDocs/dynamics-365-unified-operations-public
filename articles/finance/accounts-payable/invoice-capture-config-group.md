@@ -59,7 +59,7 @@ Administrators can define the quality standard for the invoice date that's recog
 > [!NOTE]
 > The confidence score will not be improved since Microsoft is not allowed to train the prebuilt model with customer data without permission. In most cases, the captured text is accurate and the low confidence score results from a lack of sample invoices during the prebuilt model training process. To address this, administrators can enable the **"Use confidence score"** parameter under **Setup system > Manage process rules** to determine whether the validation logic for low confidence scores is still applied.
 
-### Define whether manual review is required before invoice creation
+### Define manual review condition
 
 Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations. This parameter affects the touchless rate in the Invoice capture process.
 
