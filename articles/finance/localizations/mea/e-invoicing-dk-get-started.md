@@ -163,15 +163,8 @@ Follow these steps to enter additional invoice data.
 
 ## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
-
-> [!NOTE]
-> For Polish electronic invoice submission, additional steps must be completed in addition to the standard procedure that was described earlier.
-
-In Poland, the standard submission procedure just generates electronic invoices and stores them on the service side. It doesn't actually submit them to KSeF. To submit the electronic invoices, follow these steps.
-
-1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Run submission process in export channels**.
-2. In the **Channel** field, select the channel that you [previously created](#channel). Then select **OK**.
+When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. 
+For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
 You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
 
@@ -233,8 +226,6 @@ Follow these steps to receive electronic invoices.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 2. Select **OK**, and then close the page.
-
-During the import process, the system tries to automatically match incoming electronic vendor invoices with existing purchase orders. If no purchase order is found, the system raises a warning but continues to import the products on invoice lines as **Non-stock** items, expecting that the products belong to an item model group where the **Stocked product** checkbox is cleared in the inventory policy. Otherwise, the import process fails, and a related error message is shown.
 
 To view the receipt logs for electronic invoices, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document receipt log**.
 
