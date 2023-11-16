@@ -21,7 +21,9 @@ ms.custom: bap-template
 
 If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app.
 
-This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace?view=azureml-api-2).
+This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Set up a new Microsoft Entra application
 
