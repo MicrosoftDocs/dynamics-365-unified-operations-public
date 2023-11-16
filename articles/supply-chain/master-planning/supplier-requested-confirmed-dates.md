@@ -1,5 +1,5 @@
 ﻿---
-title: Supplier requested and confirmed dates
+title: Supplier requested and confirmed dates (preview)
 description:
 author: t-benebo
 ms.author: benebotg
@@ -12,10 +12,14 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Supplier requested and confirmed dates
+# Supplier requested and confirmed dates (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!--KFM: Preview until 10.0.38 GA -->
+
+<!--KFM: Confirm preview date and add to appropriate What's new -->
 
 If you have vendors without specific delivery terms, such as delivery duty paid, delivery at place, or delivery at place unloaded, you must tell them when they should ship. This feature adds a new ship date field to purchase orders, calculated according to the configured transport dates.
 
