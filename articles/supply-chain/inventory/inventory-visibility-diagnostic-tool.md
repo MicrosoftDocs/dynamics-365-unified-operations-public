@@ -28,17 +28,17 @@ The Inventory Visibility diagnostic tool requires that you have set up the integ
 1. The **Inventory Visibility on-hand diagnostic process** dialog opens. Make the following settings:
     - **Fix inventory discrepancy** – Set to *Yes* to immediately force synchronization and address mismatches. Allow around a minute for the synchronization process to complete. <!--KFM: What if I set this to No? Why would I set this to No? -->
     - **Only check warehouse items** – Set to *Yes* if you only need to review warehouse items. <!--KFM: What if I set this to No? What do we check then? -->
-    - **Only check previous mismatched data** – Set to *Yes* to verify the effectiveness of the forced synchronization and confirm the resolution of prior discrepancies. <!--KFM: What if I set this to No? Why would I set this to No? What do we mean by "only" --> If **Fix inventory discrepancy** is also set to *Yes*, the system synchronizes any remaining mismatches.
+    - **Only check previous mismatched data** – Set to *Yes* to verify the effectiveness of the forced synchronization and confirm the resolution of prior discrepancies. <!--KFM: What if I set this to No? Why would I set this to No? What do we mean by "only"? --> If **Fix inventory discrepancy** is also set to *Yes*, the system synchronizes any remaining mismatches.
     - **Utilize filters to examine specific items or warehouses** – Additionally, you can select to check either open quantities or closed quantities by modifying the **No open quantities** field (by default the tool will only check open quantities).  <!--KFM: This isn't clear. I need to see this. -->
     - **Batch Processing** – You must set this option to *Yes* because the tool can only run in batch mode.
 
 1. Select **OK** to apply your settings and return to the **Inventory Visibility diagnostic tool** page.
-1. Select **Run diagnostic** again. <!--KFM: No dialog this time? --> The system shows the message, "The Inventory Visibility on-hand diagnostic process job is added to the batch queue." To follow the batch job progress, go to **Inventory Management \> Workspaces \> Business process form test**.
+1. Select **Run diagnostic** again. The system shows the message, "The Inventory Visibility on-hand diagnostic process job is added to the batch queue." <!--KFM: No dialog this time? --> To monitor the batch job progress, go to **Inventory Management \> Workspaces \> Business process form test**.
 1. When the job is finished, go back to the **Inventory Visibility diagnostic tool** page to view and compare the on-hand inventory records for each system.
-    - To fix a discrepancy, select **Run diagnostic**, set **Fix inventory discrepancy** to *Yes*, and select **OK**.
-    - To fix a discrepancy that was found in previous run, select **Run diagnostic**, set both **Only check previous mismatched data** and **Fix inventory discrepancy** to *Yes*, and select **OK**.
+    - To fix a discrepancy, select **Run diagnostic**, set **Fix inventory discrepancy** to *Yes*, and select **OK**. <!--KFM: Which kind of discrepancies are we fixing here, compared to the next bullet settings? -->
+    - To fix a discrepancy that was found in previous run, select **Run diagnostic**, set both **Only check previous mismatched data** and **Fix inventory discrepancy** to *Yes*, and select **OK**. <!--KFM: How is this different from the previous bullet? -->
 
     <!--KFM: Looks like this time, when we selected **Run diagnostic**, we got the dialog again. Do I need to select **Run diagnostic** yet again to run the job with the new settings? -->
 
-1. Monitor the batch job progress via the **System Administrator \> Inquiries \> Batch Jobs**. <!--KFM: Why is this different than the path we used for this previously? -->
+1. To monitor the batch job progress, go to **System Administrator \> Inquiries \> Batch Jobs**. <!--KFM: Why is this different than the path we used for this previously? -->
 1. View batch job result once it's completed <!--KFM: How? Where? -->. Refresh the page <!--KFM: What page? How? --> to view the list of all resolved mismatched on-hand quantities.
