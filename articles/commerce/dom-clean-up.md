@@ -2,7 +2,7 @@
 title: Clean up DOM fulfillment plans and logs
 description: This article describes how to clean up distributed order management (DOM) fulfillment plans and logs in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -25,5 +25,23 @@ Configure a batch job that deletes older fulfillment plans, follow these steps.
 1. In the **Batch group** field, select a configured batch group.
 1. Select **Recurrence**, and define the recurrence of the batch job.
 1. Select **OK**.
+
+## Additional resources
+
+[DOM overview](dom.md)
+
+[Set up DOM](dom-set-up.md)
+
+[DOM rules](dom-rules.md)
+
+[DOM cost configuration](dom-costs.md)
+
+[DOM processing](dom-processing.md)
+
+[Results of DOM runs](dom-runs-results.md)
+
+[DOM extensibility](dom-extensibility.md)
+
+[DOM limitations](dom-limitations.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
