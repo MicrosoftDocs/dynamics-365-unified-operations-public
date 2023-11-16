@@ -17,12 +17,16 @@ ms.search.validFrom: 2023-11-07
 
 This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 
-## Enable DOM configuration key
+## Enable the DOM configuration key
+
+To enable the DOM configuration key, follow these steps.
 
 1. Go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, expand the **Commerce** node, and then select the **Distributed Order Management** check box.
+1. On the **Configuration keys** tab, expand the **Commerce** node, and then select the **Distributed Order Management** checkbox.
 
 ## Configure DOM parameters
+
+To configure DOM parameters, follow these steps.
 
 1. Go to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 1. On the **General** tab, set the following values:
@@ -59,12 +63,11 @@ This article describes how to set up distributed order management (DOM) function
 
         1. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
         1. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
-        1. Go to the Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
+        1. In Commerce headquarters, go to the **DOM parameters** page. On the **Solver** tab, for **Solver type**, select **Production solver**, and then confirm that no error messages appear.
 
         > [!NOTE]
-        > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
-        >
-        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). The **Partial orders** rule requires Production Solver.
+        > - The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
+        > - The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). The **Partial orders** rule requires Production Solver.
 1. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 1. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
 
@@ -75,48 +78,49 @@ This article describes how to set up distributed order management (DOM) function
 The DOM feature supports the definition of various types of DOM rules, and organizations can configure multiple rules, depending on their business needs. DOM rules can be defined for a group of locations or individual locations, and for a specific product category, product, or variant. To create the grouping of locations that must be used for the DOM rules, follow these steps:
 
 1. Go to **Retail and Commerce \> Channel setup \> Fulfillment groups**.
-1. Select **New**, and enter a name and description for the new group.
+1. Select **New**, and then enter a name and description for the new group.
 1. Select **Save**.
 1. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
 
 > [!NOTE]
-> In Commerce version 10.0.12 and higher, **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** must be enabled in the **Feature Management** workspace.
->
-> This feature adds new configurations on the **Fulfillment group** page so you can define if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup, or both.
->
-> If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS will be updated.
->
-> Enabling the feature also results in updated pages in POS when the "ship all" or "ship selected" operations are selected.
+> - In Commerce version 10.0.12 and higher, **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** must be enabled in the **Feature Management** workspace.
+> - This feature adds new configurations on the **Fulfillment group** page so you can specify if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup, or both.
+> - If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS are updated.
+> - Enabling the feature also results in updated pages in POS when the **Ship all** or **Ship selected** operations are selected.
+
 ## Configure DOM rules
 
-To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported. See [DOM rules](./dom-rules.md) for more details.
+To configure DOM rules, in headquarters, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. 
 
-* Minimum inventory rule.
-* Fulfillment location priority rule.
-* Partial orders rule.
-* Offline fulfillment location rule.
-* Maximum rejects rule.
-* Maximum distance rule.
-* Maximum orders rule.
+The following DOM rules are currently supported.
 
-## Configure DOM profiles
+- Minimum inventory rule.
+- Fulfillment location priority rule.
+- Partial orders rule.
+- Offline fulfillment location rule.
+- Maximum rejects rule.
+- Maximum distance rule.
+- Maximum orders rule.
 
-Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery. Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. To set up fulfillment profiles, follow these steps:
+For more information, see [DOM rules](dom-rules.md).
+
+## Set up and configure DOM fulfillment profiles
+
+Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery. Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. 
+
+To set up and configure DOM fulfillment profiles, follow these steps:
 
 1. Go to **Retail and Commerce \> Distributed order management \> Setup \> Fulfillment profiles**.
 1. Select **New**.
-1. Enter values in the **Profile** and **Description** fields.
-1. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan. They won't be applied to the sales order lines.
-1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page, as explained later.
+1. Enter values for **Profile** and **Description**.
+1. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile are automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan, and aren't applied to the sales order lines.
+1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page as explained below.
 
     > [!NOTE]
-    > In the Commerce version 10.0.12 release and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.
-    >
-    > This feature adds a new configuration on the **Fulfillment profile** page that can be associated to a single fulfillment group.
-    >
-    > If you select the fulfillment group, the DOM rules for that fulfillment profile will efficiently run against the "shipping" warehouses included in the fulfillment group.
-    >
-    > To effectively use this feature, ensure that there is one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
+    > - In the Commerce version 10.0.12 release and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.
+    > - This feature adds a new configuration on the **Fulfillment profile** page that can be associated to a single fulfillment group.
+    > - If you select the fulfillment group, the DOM rules for that fulfillment profile will efficiently run against the "shipping" warehouses included in the fulfillment group.
+    > - To effectively use this feature, ensure that there is one fulfillment group that contains all the shipping warehouses, and then associate that fulfillment group to the fulfillment profile.
 1. On the **Legal entities** FastTab, select **Add**, and then select a legal entity.
 1. On the **Rules** FastTab, select **Add**, and then select the rule to link to the profile.
 1. Repeat the previous two steps until all the required rules are associated with the profile.
@@ -133,7 +137,7 @@ Fulfillment profiles are used to group a collection of rules, legal entities, sa
 1. In the **Sales origin** field, select the sales origin to associate with this profile. A sales origin can't be associated with multiple active profiles.
 1. Repeat the previous two steps until all the required sales origins are associated with the profile.
 1. Close the **Sales origins** page.
-1. Set the **Enable profile** option to **Yes**. If there are any errors in the setup, you receive a warning message.
+1. Set the **Enable profile** option to **Yes**. If there are any errors in the setup, a warning message appears.
 
 ## Additional resources
 
