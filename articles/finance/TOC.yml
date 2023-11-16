@@ -2468,6 +2468,8 @@
             href: localizations/europe/emea-oioubl-standards-electronic-invoicing.md
           - name: Forced electronic invoices generation
             href: localizations/europe/emea-eur-forced-einvoices.md
+          - name: Import vendor electronic invoices in PEPPOL format
+            href: localizations/europe/emea-peppol-import.md
           - name: Original invoice reference (Eastern Europe)
             href: localizations/estonia/ee-00004-original-invoice-reference.md
           - name: Party search using VAT ID
