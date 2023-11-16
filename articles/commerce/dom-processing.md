@@ -2,7 +2,7 @@
 title: DOM processing
 description: This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: conceptual
 audience: Application User
 ms.reviewer: josaw
@@ -71,5 +71,23 @@ DOM uses the Bing Maps API to calculate aerial or road distance, depending on th
 After DOM applies the rules, inventory constraints, and optimization, it picks the location that is closest to the customer's delivery address. Fulfillment plans are then obtained from the optimizer. Whether fulfillment plans are applied on the sales lines or not depends on the value of the **Auto apply result** setting. For more information, see [Results of DOM runs](dom-runs-results.md).
 
 ![Sales order criteria.](./media/ordercriteria.png)
+
+## Additional resources
+
+[DOM overview](dom.md)
+
+[Set up DOM](dom-set-up.md)
+
+[DOM rules](dom-rules.md)
+
+[DOM cost configuration](dom-costs.md)
+
+[Results of DOM runs](dom-runs-results.md)
+
+[Clean up DOM fulfillment plans and logs](dom-clean-up.md)
+
+[DOM extensibility](dom-extensibility.md)
+
+[DOM limitations](dom-limitations.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
