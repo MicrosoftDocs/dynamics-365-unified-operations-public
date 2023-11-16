@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Cost configuration for distributed order management (DOM)
+title: DOM cost configuration
 description: This article describes cost configuration for distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/15/2023
+ms.date: 11/16/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -15,7 +15,7 @@ ms.author: josaw
 ms.search.validFrom: 2018-12-15
 
 ---
-# Cost configuration for distributed order management (DOM)
+# DOM cost configuration
 
 [!include [banner](../includes/banner.md)]
 
@@ -140,5 +140,22 @@ You must set up the following fields for this combination:
 > [!IMPORTANT]
 > For DOM to consider these costs when it's run, you must add the cost factor to the relevant fulfillment profile.
 
+## Additional resources
+
+[DOM overview](dom.md)
+
+[Set up DOM](dom-set-up.md)
+
+[DOM rules](dom-rules.md)
+
+[DOM processing](dom-processing.md)
+
+[Results of DOM runs](dom-runs-results.md)
+
+[Clean up DOM fulfillment plans and logs](dom-clean-up.md)
+
+[DOM extensibility](dom-extensibility.md)
+
+[DOM limitations](dom-limitations.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
