@@ -21,7 +21,7 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Denmark and configure the system to enable generation and submission of electronic invoices in Danish-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. 
+This article provides information that will help you get started with Electronic invoicing for Denmark and configure the system to enable generation, submission and reception of electronic invoices in Danish-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. 
 
 The article guides you through the configuration steps that are general and country/region-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance.
 
@@ -29,8 +29,8 @@ The article guides you through the configuration steps that are general and coun
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- The company must be registered in Danish authorities and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable submission of electronic invoices generated in Microsoft D365 Finance.
+- The company must be registered in the Danish authorities and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable submission and reception of electronic invoices generated in Microsoft D365 Finance.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -225,27 +225,7 @@ You must configure the following types of master data to provide a match for inc
 - Products
 - Units
 
-#### Vendors 
- 
-1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
-2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid value. The vendor's tax exempt number is used to identify the vendor during the import process for incoming electronic invoices. If no vendor that has matching data is found in the system, the import process fails, and a related error message is shown.
-
-#### Products
-
-1. Go to **Product information management** \> **Products** \> **Released products**, and select a product.
-2. On the Action Pane, on the **Purchase** tab, in the **Related information** group, select **External item description**.
-3. In the **Vendor relation** field, select the vendor or vendor group that the product's external identification is being set up for.
-4. In the **External item number** field, enter the identification number of the product for a specific vendor or the group of vendors. External item numbers are used to identify the product during the import process for incoming electronic invoices. If no product that has matching criteria is found in the system, the import process fails, and a related error message is shown.
-
-#### Units
-
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit.
-4. In the **Value** section, in the **Value** field, enter the external code to match with the unit codes from incoming electronic invoices during the import process.
-
-    > [!NOTE]
-    > External unit codes make sense only if incoming electronic invoices contain explicitly defined units. Otherwise, you can skip step 4. 
+Please do the configuration steps described in the [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md) article startin from the  [Configure vendor data](../denmark/emea-dnk-vend-e-invoice.md#configure-vendor-data) section.
 
 ### Receive electronic invoices
 
