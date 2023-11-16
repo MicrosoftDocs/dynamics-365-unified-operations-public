@@ -120,6 +120,11 @@ You might be confused about when you should use **.error()** to log an error in 
 
 The best guidance is to use **.exception()** to log actual **Error** objects and **.error()** to log string messages that state that an error has occurred in the business logic. Generally, **.exception()** logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from **.error()** are treated as another trace log, and more detailed analysis might be required to find the issue than if you use **.exception()**. Therefore, it can take more time to recognize that an issue has occurred. In addition, **.exception()** allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
 
+## Exposing telemetry data in Azure Application Insights
+
+Follow the instructions in the (platform settings documentation)[https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/platform-settings] to connect your telemetry events to your Azure subscription Application Insights service in the (platform settings file)[https://learn.microsoft.com/en-us/dynamics365/commerce/e-commerce-extensibility/platform-settings]. 
+
+
 ## Additional resources
 
 [Online channel extensibility overview](overview.md)
