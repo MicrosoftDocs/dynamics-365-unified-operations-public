@@ -898,7 +898,7 @@
           href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
-      - name: Distributed order management
+      - name: Distributed order management (DOM)
         items:
         - name: DOM overview
           href: dom.md
@@ -906,13 +906,13 @@
           href: dom-set-up.md
         - name: DOM rules
           href: dom-rules.md
-        - name: Cost configuration
+        - name: DOM cost configuration
           href: dom-costs.md
         - name: DOM processing
           href: dom-processing.md
         - name: Results of DOM runs
           href: dom-runs-results.md
-        - name: DOM fulfillment plans and logs clean-up
+        - name: Clean up DOM fulfillment plans and logs
           href: dom-clean-up.md
         - name: DOM extensibility
           href: dom-extensibility.md
