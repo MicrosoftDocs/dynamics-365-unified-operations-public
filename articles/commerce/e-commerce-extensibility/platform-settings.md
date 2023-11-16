@@ -82,6 +82,12 @@ Smaller JavaScript bundles put less pressure on the main thread by causing the b
 
 `"maxClientChunkSize": 500000 // 500KB unzipped size`
 
+### secondaryInstrumentationKey
+
+This is the Instrumentation Key for your Azure Application Insights subscription.  It is used to connect and log telemetry events as described in the [telemetry-logger article](telemetry-logger) to your own Application Insights subscription, as shown in the following example.
+
+`"secondaryInstrumentationKey": "00000000-0000-0000-0000-000000000000" // Instrumentation Key GUID from your Azure Application Insights subscription`
+
 ## Additional resources
 
 [Request properties object](request-properties-object.md)
