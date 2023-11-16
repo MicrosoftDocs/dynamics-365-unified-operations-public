@@ -4,7 +4,7 @@
 title: Credit limits for customers
 description: This article provides an overview of how credit limits work in Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 09/15/2017
+ms.date: 16/11/2023
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 Setting a credit limit lets you specify the maximum amount of credit to extend
 to your customers. If a credit limit is specified, it is checked automatically
 when a user attempts to update a document. If the credit limit is exceeded, a
-message is displayed to the user. This article provides an overview of how credit
+message is displayed to the user. 
+
+> [!NOTE]
+> The credit limit functionality described here is only applicable if the Credit management feature is disabled in Feature management. Credit management is On by default and requires blocking rules to be setup for customer credit checking. Credit management documentation starts here [Credit management parameters setup - Finance | Dynamics 365 | Microsoft Learn ](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdynamics365%2Ffinance%2Faccounts-receivable%2Fcm-credit-mgmt-setup&data=05%7C01%7Chenrikan%40microsoft.com%7Ccaa6bfaf97ef4256759108dbe48247a4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638355020457608672%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=Ddt1xj85ky1Pm0fIj%2FkprGG6c0kk%2BLQgr4aOzVceuQ0%3D&reserved=0)
+
+This article provides an overview of how credit
 limits work  and answers the following questions:
 
 -   What documents and processes can I check credit limits for?
