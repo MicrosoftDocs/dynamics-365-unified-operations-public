@@ -773,7 +773,6 @@ The following example shows how to query all products in multiple sites and loca
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
 }
-
 ```
 
 ## <a name="product-search-query"></a>Query with product search
@@ -784,15 +783,15 @@ The following on-hand query APIs are enhanced to support product search:
 - [Exact query by using the post method](#exact-query-with-post-method)
 
 > [!NOTE]
-> When you post an Inventory Visibility query with product search, use the request parameter `productSearch` (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
+> When you post an Inventory Visibility query that uses product search, use the `productSearch` request parameter (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
 
 ### Prerequisites
 
-Before you can start using the product search APIs, you must install and set up the Inventory Visibility search service. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
+Before you can start to use the product search APIs, you must install and set up the Inventory Visibility search service. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
 ### Product search contract
 
-The product search contract defines the rules for communicating with the product search APIs. It provides a standardized way to describe the capabilities and behavior of the product search capabilities, which makes it easier for users to understand, interact with, and build applications that consume the Inventory Visibility APIs.
+The product search contract defines the rules for communicating with the product search APIs. It provides a standardized way to describe the capabilities and behavior of the product search capabilities. Therefore, users can more easily understand, interact with, and build applications that consume the Inventory Visibility APIs.
 
 The following example shows a sample contract.
 
@@ -851,18 +850,17 @@ The following example shows a sample contract.
         ]
     },
 }
-
 ```
 
-The following table describes the fields used in the contract.
+The following table describes the fields that are used in the contract.
 
 | Field ID | Description |
 |---|---|
-| `logicalOperator` | Possible values: `And`, `Or`. Use this field to connect multiple conditions or conditions and sub-filters. Note that `subFilters` is actually a `productFilter` or `attributeFilter` object, which means you can have `subFilters` inside `subFilters`. |
-| `conditionOperator` | Possible values: `IsExactly`, `IsNot`, `Contains`, `DoesNotContain`, `BeginsWith`, `IsOneOf`, `GreaterEqual`, `LessEqual`, `Between`. |
-| `ProductFilter`  | Use this field to filter products by product-related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, or `purchaseUnitSymbol` as needed to fit your business needs. |
-| `AttributeFilter`   | Use this field to filter products by products by attribute-related information. |
-| `attributeArea` | Possible values: `ProductAttribute`, `DimensionAttribute`, `BatchAttribute` |
+| `logicalOperator` | The possible values are `And` and `Or`. Use this field to connect multiple conditions or conditions and sub-filters. Note that `subFilters` is actually a `productFilter` or `attributeFilter` object. Therefore, you can have `subFilters` inside `subFilters`. |
+| `conditionOperator` | The possible values are `IsExactly`, `IsNot`, `Contains`, `DoesNotContain`, `BeginsWith`, `IsOneOf`, `GreaterEqual`, `LessEqual`, and `Between`. |
+| `ProductFilter`  | Use this field to filter products by product-related information. For example, you can change `productName` in the contract to `Company`, `itemNumber`, `productSearchName`, `productType`, `productName`, `productDescription`, `inventoryUnitSymbol`, `salesUnitSymbol`, or `purchaseUnitSymbol` to fit your business needs. |
+| `AttributeFilter`   | Use this field to filter products by attribute-related information. |
+| `attributeArea` | The possible values are `ProductAttribute`, `DimensionAttribute`, and `BatchAttribute`. |
 
 ### <a name="query_with_product_search"></a>Query with product search
 
@@ -1000,7 +998,6 @@ The following example shows a successful response.
         }
     }
 ]
-
 ```
 
 ### <a name="exact-query-with-product-search"></a>Exact query with product search
