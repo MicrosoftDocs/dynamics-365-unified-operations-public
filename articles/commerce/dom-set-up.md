@@ -2,7 +2,7 @@
 title: Set up DOM
 description: This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/16/2023
+ms.date: 11/17/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -37,23 +37,23 @@ To configure DOM parameters, follow these steps.
         > [!NOTE]
         > - You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the headquarters **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
         > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
-    - **Disable road distance calculation** - If this option is **Yes**, aerial distance will be calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
-    - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders which have been accepted by retail stores.
+    - **Disable road distance calculation** - If this option is **Yes**, aerial distance is calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
+    - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders that have been accepted by retail stores.
     - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if ou want to update financial dimensions on sales order lines based on the site.
-    - **Fulfillment data retention period (in days)** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.
-    - **DOM logs retention period (in days)** - Specify how long the DOM logs that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any DOM logs that is older than the number of days that you specify here.
+    - **Fulfillment data retention period (in days)** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch deletes any fulfillment plan that is older than the number of days that you specify here.
+    - **DOM logs retention period (in days)** - Specify how long the DOM logs that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job deletes any DOM logs that are older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
-    - **Thread utilization (percentage)** - When fulfillment plans are generated, DOM will create fulfillment plan tasks to apply fulfillment plans in parallel automatically, if **Auto apply result** is enabled in the fulfillment profile. Specify how much thread resource should DOM utilize to create tasks, the higher, the more tasks will be created. If it's set to 0, only 1 fulfillment plan task will be created.
+    - **Thread utilization (percentage)** - When fulfillment plans are generated and **Auto apply result** is enabled in the fulfillment profile, DOM creates fulfillment plan tasks to automatically apply fulfillment plans in parallel. Specify how many thread resources DOM should use to create tasks. A higher number means that more tasks are created. If set to 0, only one fulfillment plan task is created.
 
 1. On the **Solver** tab, set the following values:
 
-    - **Max auto-fulfillment attempts** – Specify how many times the DOM engine will try to broker an order line to a location. If the DOM engine can't broker an order line to a location in the specified number of attempts, it will flag the order line as an exception. It will then skip that line in future runs until the status is manually reset.
+    - **Max auto-fulfillment attempts** – Specify how many times the DOM engine attempts to broker an order line to a location. If the DOM engine can't broker an order line to a location in the specified number of attempts, it flags the order line as an exception. It will then skip that line in future runs until the status is manually reset.
     - **Local store region radius** – Enter a value. This field helps determine how locations are grouped and considered equal in terms of distance. For example, if you enter **100**, every store or distribution center within a 100-mile radius of the fulfillment address is considered equal in terms of distance.
-    - **Solver type** – Select a value. Two solver types are released with Commerce: **Production Solver** and **Simplified Solver**. For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected. The Production Solver requires the special license key that, by default, is licensed and deployed in production environments. In newer Tier 2+ environments, the Production Solver will already be enabled.
+    - **Solver type** – Select a value. Two solver types are released with Commerce: **Production Solver** and **Simplified Solver**. For all machines that run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected. The Production Solver requires the special license key that, by default, is licensed and deployed in production environments. In newer Tier 2+ environments, the Production Solver is already enabled.
 
-      For non-production environments, this license key must be manually deployed. Due to the limitation of non-production environments, you will need to contact Microsoft support to get the latest **DOM license** file. After you have obtained the license file, follow these steps:
+      For nonproduction environments, this license key must be manually deployed. Due to the limitation of nonproduction environments, you must contact Microsoft support to get the latest **DOM license** file. After you obtain the license file, follow these steps:
 
-        1. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
+        1. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you'll use it in the next step.
         1. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
         1. In Commerce headquarters, go to the **DOM parameters** page. On the **Solver** tab, for **Solver type**, select **Production solver**, and then confirm that no error messages appear.
 
@@ -98,7 +98,7 @@ For more information, see [DOM rules](dom-rules.md).
 
 ## Set up and configure DOM fulfillment profiles
 
-Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery. Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. 
+Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. Organizations can define and run rules for a set of legal entities on orders that have specific sales order origins and modes of delivery. If different sets of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. 
 
 To set up and configure DOM fulfillment profiles, follow these steps:
 
@@ -106,7 +106,7 @@ To set up and configure DOM fulfillment profiles, follow these steps:
 1. Select **New**.
 1. Enter values for **Profile** and **Description**.
 1. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile are automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan, and aren't applied to the sales order lines.
-1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page as explained below.
+1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page.
 
     > [!NOTE]
     > - In Commerce version 10.0.12 and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.
