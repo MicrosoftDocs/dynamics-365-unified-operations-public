@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # Log and view successful API posts
 
-This article describes how to set up and use the *inventory log history* feature for Inventory Visibility, which creates a log of successfully updated inventory API posts. The posts include a timestamp and specify the API type.
+This article describes how to set up and use the *inventory log history* feature for Inventory Visibility. This feature creates a log of successfully updated inventory API posts. The posts include a timestamp and specify the API type.
 
 ## Set up inventory log history
 
