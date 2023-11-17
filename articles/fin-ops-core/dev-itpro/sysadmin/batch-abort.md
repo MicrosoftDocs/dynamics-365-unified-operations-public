@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 27
 > [!NOTE]
 > System jobs can't be moved to **Canceling** status.
 
-If you must cancel a batch job that is running, you can change its status to **Canceling**. The batch job is then prevented from picking up new tasks. The status of tasks in the batch job that hasn't started is set to **Didn't run**, and the status of tasks that have been started is set to **Canceling**. The status of a task isn't changed until that task can be terminated gracefully (that is, either it completes or it errors out).
+If you must cancel a batch job that is running, you can change its status to **Canceling**. The batch job is then prevented from picking up new tasks. The status of tasks in the batch job that hasn't started is set to **Didn't run**, and the status of tasks that have started is set to **Canceling**. The status of a task isn't changed until that task can be terminated gracefully (that is, either it completes or it errors out).
 
 To cancel a running batch job, follow these steps.
 
