@@ -3,7 +3,7 @@ title: DOM processing
 description: This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 author: rickwyang
 ms.date: 11/16/2023
-ms.topic: conceptual
+ms.topic: article
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
@@ -17,28 +17,28 @@ ms.search.validFrom: 2023-11-07
 
 This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 
-## Configure DOM processor job
+## Configure DOM processor batch job
 
 DOM will run only in a batch job. 
 
-To configure the batch job for DOM runs, follow these steps.
+To configure the DOM processor batch job for DOM runs, follow these steps.
 
 1. Go to **Retail and Commerce \> Distributed order management \> Batch processing \> DOM processor job setup**.
 1. On the **Parameters** FastTab, for **Fulfillment profile**, select a profile for which DOM must be run.
 1. On the **Run in the background** FastTab, for **Batch group**, select a configured batch group.
 1. For **Task description**, enter a name for the batch job.
-1. Select **Recurrence**, and then define the recurrence of the batch job.
+1. Select **Recurrence**, and then specify the recurrence of the batch job.
 1. Select **OK**.
 
 ## Search sales orders and lines
 
-At the time of processing, DOM will consider the following order and order lines:
+At the time of processing, DOM considers the following order and order lines:
 
 - Order lines that meet the criteria for sales order origins, modes of delivery, and legal entity as defined in the DOM profile, and that also meet any of the following criteria:
     - The order lines are created from Commerce channels. Sales orders are identified as being from Commerce channels when the **Commerce sale** option is set to **Yes**.
     - The order lines have never been brokered by DOM.
     - The order lines have been brokered by DOM before, but they are marked as exceptions and are below the maximum attempt threshold.
-    - The mode of delivery isn't pick-up or electronic delivery.
+    - The mode of delivery isn't pickup or electronic delivery.
     - The order lines aren't marked for delivery.
     - The order lines aren't manually excluded.
     - If **Do not process accepted store orders during order optimization** is enabled, the order lines aren't assigned to retail store warehouses with the fulfillment status as **Accepted** .
@@ -53,12 +53,12 @@ During each DOM processor job, DOM breaks orders into batches, depending on the 
 For example, if 10,000 order lines are being optimized in a run, and the **Maximum number of order lines per optimization** parameter is set to **2000**, DOM creates five batches that are processed simultaneously.
 
 If the **Maximum number of order lines per optimization** value is 0:
-- For simple solver, DOM creates a batch for every 100 sales lines.
-- For production solver, DOM creates a batch for every 1500 sales lines.
+- For the Simplified Solver type, DOM creates a batch for every 100 sales lines.
+- For the Production Solver type, DOM creates a batch for every 1500 sales lines.
 
-## Lookup inventory
+## Inventory lookup
 
-DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To support on-hand inventory on other dimensions or custom dimensions, you must to build customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
+DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To support on-hand inventory on other dimensions or custom dimensions, you must create customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
 
 ## Calculate distance
 
