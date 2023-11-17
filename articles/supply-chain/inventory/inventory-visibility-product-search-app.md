@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-## Search for products using the Inventory Visibility app
+# Search for products using the Inventory Visibility app
 
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. It provides the following benefits:
 
@@ -22,14 +22,14 @@ The *product search* feature lets users search for products and on-hand inventor
 
 This feature is accessible both through the Inventory Visibility app in Microsoft Power Apps and through the [API](inventory-visibility-api.md#product-search-query). This article describes how to search for products by using the Inventory Visibility app in Power Apps.
 
-### Prerequisites
+## Prerequisites
 
 Before you can search for products in the Inventory Visibility app, your system must meet the following requirements:
 
 - The Inventory Visibility Add-in must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 - The Inventory Visibility search service must be installed and set up as described in [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
-### Search for products using attribute filters
+## Search for products using attribute filters
 
 When you search by using attribute filters, you select one or more specific product attributes (such as product number, color, and brand). You also specify the value that you're looking for in each attribute. The search results include all products that match all the specified values.
 
@@ -49,7 +49,7 @@ To search for products by using attribute filters in the Inventory Visibility ap
 > [!NOTE]
 > You can't combine attribute search criteria with quick search criteria. If you do one type of search and then do the other type of search, the first search results are cleared.
 
-### Search for products using quick search
+## Search for products using quick search
 
 Quick search provides a single search field that matches products based only on their product number or product name. It doesn't support searching by other attributes. The search results include all products that include the specified value in their product number, their product name, or both.
 
