@@ -68,6 +68,8 @@ To abort all the tasks that are in **Canceling** status for a batch job, follow 
 
 > [!IMPORTANT]
 > In release 10.0.31, a drain period has been added. The appropriate batch servers won't pick up new tasks for a maximum of 15 minutes after the **Enhanced batch abort** feature is used. This drain period gives other tasks that are in an **Executing** state on the batch servers time to be completed correctly. When either no more tasks in an **Executing** state remain on those servers or 15 minutes have passed, the batch servers are restarted.
+> - This feature will enabled by default starting 10.0.38 (PU 62).
+> - This feature is required starting 10.0.39 (PU 63).
 
 To use the **Enhanced batch abort** feature, you must enable it in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace. After this feature is enabled, the **Abort** command will restart all the batch servers that are currently running tasks of the batch job that you're trying to abort. Note that other tasks might also be running on those servers. Those tasks will be interrupted when the servers are restarted.
 
