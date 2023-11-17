@@ -2,7 +2,7 @@
 title: DOM rules
 description: This article describes the rules of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/16/2023
+ms.date: 11/17/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -29,11 +29,11 @@ This rule type lets organizations "ring fence" a specific quantity of a product 
 
 ## Fulfillment location priority rule
 
-This rule type lets organizations define a hierarchy of locations to establish the priority that the DOM engine considers when it tries to identify fulfillment locations for specific products. The valid range of priorities is 1 through 10, where 1 is the highest priority and 10 is the lowest priority. Locations that have higher priority are considered before locations that have lower priority. If the rule is defined as a hard constraint rule, orders are brokered only to locations that priorities are defined for. DOM gives preference to shipping orders completely from one location. Therefore, if a whole order and its lines aren't available from a location that has a priority of 1, DOM will try to fulfill it from a location that has a priority of 2.
+This rule type lets organizations define a hierarchy of locations to establish the priority that the DOM engine considers when it tries to identify fulfillment locations for specific products. The valid range of priorities is 1 through 10, where 1 is the highest priority and 10 is the lowest priority. Locations that have higher priority are considered before locations that have lower priority. If the rule is defined as a hard constraint rule, orders are brokered only to locations that priorities are defined for. DOM gives preference to shipping orders completely from one location. If a whole order and its lines aren't available from a location that has a priority of 1, DOM attempts to fulfill it from a location that has a priority of 2.
 
 ## Partial orders rule
 
-In Retail version 10.0.5, the **Fulfill order from one location only** parameter was changed to **Maximum fulfilling locations**. The old parameter enabled users to configure whether orders can be fulfilled from only one location or from as many locations as possible. The new parameter enables users to specify whether the fulfillment can be from a definite set of locations (up to five) or from as many locations as possible. For all options except fulfillment from one location, DOM will split the line, because the processing of order occurs by line. This rule works only with Production Solver.
+In Retail version 10.0.5, the **Fulfill order from one location only** parameter was changed to **Maximum fulfilling locations**. The old parameter enabled users to configure whether orders can be fulfilled from only one location or from as many locations as possible. The new parameter enables users to specify whether the fulfillment can be from a definite set of locations (up to five) or from as many locations as possible. For all options except fulfillment from one location, DOM splits the line, because the processing of order occurs by line. This rule works only with Production Solver.
 
 Use the following parameters to configure partial orders rule:
 - **Maximum fulfilling locations** - This parameter has 6 options: **1**, **2**, **3**, **4**, **5** and **Any number**.
