@@ -1803,6 +1803,8 @@
           href: master-planning/make-to-order-supply-automation.md
         - name: Negative days and dynamic negative days
           href: master-planning/more-about-dynamic-negative-days.md
+        - name: Dynamic positive days for last-minute orders (preview)
+          href: master-planning/dynamic-positive-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
         - name: Create a schedule for a site
@@ -2663,6 +2665,8 @@
         href: production-control/process-automation-quality-orders.md
       - name: Integrate with third-party manufacturing execution systems
         href: production-control/mes-integration.md
+      - name: React to last minute changes in production (preview)
+        href: production-control/react-to-last-minute-changes.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data

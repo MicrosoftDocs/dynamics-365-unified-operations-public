@@ -43,7 +43,7 @@ It is not just the lead time that is used for evaluation, but outside of the lea
 
 Note the number of positive days for a given item are set on the Item coverage group associated, and they can be overwritten at the master plan level. This allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable to promise versus actual for the day-to-day business.
 
-## Example 1: demand inside of the lead time
+## Example 1: Demand inside of the lead time
 
 *Given:*
 
@@ -64,7 +64,7 @@ Note the number of positive days for a given item are set on the Item coverage g
 
 ![A line of days and numbers Description automatically generated](media/image1.png)
 
-## Example 2: demand outside of the lead time
+## Example 2: Demand outside of the lead time
 
 *Given:*
 
@@ -88,7 +88,7 @@ Note the number of positive days for a given item are set on the Item coverage g
 
 ![A screenshot of a graph Description automatically generated](media/image2.png)
 
-## Example 3: sales order within the positive days but outside of the lead time
+## Example 3: Sales order within the positive days but outside of the lead time
 
 *Given:*
 
