@@ -39,7 +39,7 @@ To open and authenticate the Inventory Visibility app, follow these steps.
 1. Open the **Inventory Visibility** app.
 1. Open the **Operational Visibility** page from the left pane.
 1. Select the **Settings** button (gear symbol) at the top of the page.
-1. In the **Settings** dialog box, enter the **Client Id**,**Tenant Id**, and **Client Secret** values that you noted when you [installed and set up Inventory Visibility](inventory-visibility-setup.md).
+1. In the **Settings** dialog box, enter the **Client Id**, **Tenant Id**, and **Client Secret** values that you noted when you [installed and set up Inventory Visibility](inventory-visibility-setup.md).
 1. Select the **Refresh** button next to the **Bearer Token** field. The system generates a new bearer token, based on the information that you've entered.
 
     ![On-hand query settings.](media/inventory-visibility-query-settings.png "On-hand query settings")
@@ -149,4 +149,4 @@ At the bottom of the **Preload the Inventory Visibility summary** and  **Invento
 
 ## Search for products in the Inventory Visibility app
 
-The *product search* feature lets users search for products and on-hand inventory information based on specific attributes such as size, color, and more. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).
+The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).
