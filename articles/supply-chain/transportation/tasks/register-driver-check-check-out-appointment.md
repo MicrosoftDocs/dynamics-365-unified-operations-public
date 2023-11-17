@@ -1,65 +1,53 @@
---- 
-# required metadata 
- 
+---
 title: Register driver check-in and check-out for an appointment
-description: This procedure shows how to register a driver check-in and a driver check-out. 
+description: This article shows how to register driver check-in and a driver check-out and how to interpret the appointment status.
 author: Weijiesa
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
 ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.reviewer: kamaybac
+ms.search.form: TMSDriverLogListPage, TMSDriverCheckIn
+ms.topic: how-to
+ms.date: 11/17/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template 
 ---
 # Register driver check-in and check-out for an appointment
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to register a driver check-in and a driver check-out. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company. Before you start, there must be an appointment set up for a load. To create an appointment, you can run the "Set up an appointment for a load" procedure as a prerequisite.
-
+This procedure shows how to register a driver check-in and a driver check-out. This procedure is typically done by a transportation coordinator. Before you start, there must be an appointment set up for a load.
 
 ## Select an appointment
-1. Go to Transportation management > Planning > Dock appointment scheduling > Driver check-in and check-out.
+
+1. Go to **Transportation management > Planning > Dock appointment scheduling > Driver check-in and check-out**.
 2. Select an appointment.
 
 ## Register driver check-in
-1. Click Driver check-in.
-2. In the Trailer number field, type a value.
-3. In the Driver name field, type a value.
-4. In the Driver license field, type a value.
-5. Click OK.
+
+1. Select **Driver check-in**.
+2. In the **Trailer number** field, type a value.
+3. In the **Driver name** field, type a value.
+4. In the **Driver license** field, type a value.
+5. Select **OK**.
 
 ## Register driver check-out
-1. Click Driver check-out.
-2. Click OK.
+
+1. Select **Driver check-out**.
+2. Select **OK**.
 
 ## Appointment status
-The status for appointments are varies based on the actual driver check-in and check-out times in comparison to the predefined deadline, accurately reflecting the current circumstances.
+
+The **Appointment status** indicates how actual driver check-in and check-out times compare to the scheduled times.
 
 | Status| Description |
 |---------|---------|
-| <p>Waiting</p> |Driver not check-in, the remain left time does not exceed the scheduled deadline. |  
-| <p>Checked In</p> | Driver checked-in but not check-out, the remain left time does not exceed the scheduled deadline. |
-| <p>Dropped Tailor</p> | Driver checked-in with enable 'Dropped tarilor' toggle. |
-| <p>Completed</p> | Driver check-in and check-out processes are successfully executed and concluded ahead of schedule. |
-| <p>Completed Late</p> | Driver check-in and check-out processes are successfully executed, but the complete time exceed the scheduled deadline. |
-| <p>Check out warning</p> | Driver checked-in but not check-out, the remaining time small than the Alert interval value.  To setup Alert interval, go to **Transportation Management > Setup > Transportation Management parameters > General** , Fast tab: Driver check-in and check out.|
-| <p>Late on check in</p> | Driver not checked-in, the remaining time has exceed the scheduled deadline. |
-| <p>Late on check out</p> |Driver checked-in but not check-out, the remaining time has exceed the scheduled deadline. |
-
-
-
+| *Waiting* | The driver didn't checked in and isn't late. |  
+| *Checked in* | Driver checked in but didn't check out and isn't yet late checking out. |
+| *Dropped trailer* | The driver checked in and selected the **Dropped trailer** option. |
+| *Completed* | The driver checked in and checked out on time or ahead of schedule. |
+| *Completed late* | The driver checked in and checked out but after the scheduled deadline. |
+| *Check out warning* | The driver checked in but didn't check out and the **Alert interval** value didn't expire yet. To set the **Alert interval**, go to **Transportation Management > Setup > Transportation Management parameters**, open the **General** tab and expand the **Driver check-in and check out** FastTab.|
+| *Late on check in* | The driver didn't check in yet and is now late. |
+| *Late on check out* | The driver checked in but didn't check out yet and the **Alert interval** has expired. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

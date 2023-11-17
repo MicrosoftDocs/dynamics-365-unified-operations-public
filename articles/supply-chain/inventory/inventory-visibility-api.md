@@ -786,8 +786,9 @@ The following on-hand query APIs are enhanced to support product search:
 > [!NOTE]
 > When you post an Inventory Visibility query with product search, use the request parameter `productSearch` (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
 
-> [!IMPORTANT]
-> Make sure the product search service is enabled before you start using the product search APIs. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
+### Prerequisites
+
+Before you can start using the product search APIs, you must install and set up the Inventory Visibility search service. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
 ### Product search contract
 

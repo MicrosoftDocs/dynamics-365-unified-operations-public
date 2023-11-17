@@ -16,11 +16,11 @@ ms.custom: bap-template
 
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes such as size, color, and more. It provides the following benefits:
 
-- **Time Savings** – Users can quickly find products that meet their exact requirements, eliminating the need for extensive browsing. This improves user experience and saves valuable time.
-- **Higher Confidence** – Attribute-based search ensures that users get precisely what they're looking for, leading to increased confidence.
-- **Increased Product Visibility** – Attribute-based search can highlight products that are less-often searched for but still potentially relevant. This exposes users to a broader range of options that they might not have considered.
+- **Time savings** – Users can quickly find products that meet their exact requirements, eliminating the need for extensive browsing. This improves user experience and saves valuable time.
+- **Higher confidence** – Attribute-based search ensures that users get precisely what they're looking for, leading to increased confidence.
+- **Increased product visibility** – Attribute-based search can highlight products that are less-often searched for but still potentially relevant. This exposes users to a broader range of options that they might not have considered.
 
-This feature is accessible both through the Inventory Visibility app in Power Apps and through the API. For more information about the API, see [Query with product search](inventory-visibility-api.md#product-search-query).
+This feature is accessible both through the [Inventory Visibility app in Power Apps](inventory-visibility-product-search-app.md) and through the [API](inventory-visibility-api.md#product-search-query).
 
 ## Prerequisites
 
@@ -64,3 +64,11 @@ If some table maps fail to do an initial sync because of a permission issue, the
    - *Dual-write runtime user*
 
 For more how to set up dual-write security roles, see [Set up dual-write security roles and permissions](../../fin-ops-core/dev-itpro/data-entities/dual-write/security-roles.md)
+
+## Search for products using the API
+
+After you have set up the product search service, you can search for products using either the Inventory Visibility app in Power Apps or the Inventory Visibility API. For details about how to search for products using the Inventory Visibility API, see [Query with product search](inventory-visibility-api.md#product-search-query).
+
+## Search for products using the Inventory Visibility app in Power Apps
+
+After you have set up the product search service, you can search for products using either the Inventory Visibility app in Power Apps or the Inventory Visibility API. For details about how to search for products using the Inventory Visibility app in Power Apps, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).
