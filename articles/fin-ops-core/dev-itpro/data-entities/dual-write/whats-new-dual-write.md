@@ -26,6 +26,7 @@ The November release of Dual-write Supply Chain solution 2.3.4.265 contains the 
 |Bug fix | ATP Information is returning incorrect site/warehouse results in CE.	|General availability |
 |Bug fix | When you create a sales order in CE, an inactive price list has been selected. |General availability |
 |Bug fix | The warning message **Feature management states map not running** shouldn't be displayed if no quotation map is running. |General availability |
+|Bug fix | Ensure dual write supply chain solution is compatible with an important Dual-write platform fix. |General availability |
 
 ### Solution details
 
@@ -34,6 +35,21 @@ The November release of Dual-write Supply Chain solution 2.3.4.265 contains the 
 | Dynamics365SupplyChainExtended | Yes | 2.3.4.203 | 2.3.4.265 |
 | msdyn_Dynamics365SupplyChainExtendedMaps | Yes | 2.3.4.203 | 2.3.4.265 |
 | msdyn_Dynamics365SupplyChainExtendedAnchor | Yes | 2.3.4.203 | 2.3.4.265 |
+
+The November release of Dual-write Asset Management solution 2.2.2.101 contains the following bug fixes.
+
+| Feature | Description | Status |
+| ---|---|---|
+|Bug fix | Ensure dual write asset management solution is compatible with an important Dual-write platform fix. |General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Dynamics365AssetManagement | Yes | 2.2.2.52 | 2.2.2.101 |
+| Dynamics365AssetManagementApp | Yes | 2.2.2.52 | 2.2.2.101 |
+| msdyn_DualWriteAssetManagementMaps | Yes | 2.2.2.52 | 2.2.2.101 |
+| msdyn_DualWriteAssetManagementAnchor | Yes | 2.2.2.52 | 2.2.2.101 |
 
 ## October 2023 
 The October release of Dual-write GAB solution 3.5.1.135 contains the following bug fixes.
