@@ -72,7 +72,7 @@ For example, an assortment is originally defined and published so that it refere
 
 ### Stopped products
 
-You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often used when a product is at the end of its life and should not be sold at any channel. Assortments respect this setting, and stopped products won't be assorted, regardless of the assortment configuration.
+You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often used when a product is at the end of its life and should not be sold at any channel. Assortments respect this setting, if a product is stopped in all legal entities that it's released to, it won't be assorted, regardless of the assortment configuration.
 
 ### Blocked products
 
