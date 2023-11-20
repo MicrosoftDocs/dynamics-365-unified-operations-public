@@ -14,6 +14,8 @@ ms.custom: bap-template
 
 # Set up product search for Inventory Visibility
 
+[!include [banner](../includes/banner.md)]
+
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. It provides the following benefits:
 
 - **Time savings** – Users can quickly find products that meet their exact requirements without having to do extensive browsing. Therefore, the feature helps improve the user experience and save valuable time.
