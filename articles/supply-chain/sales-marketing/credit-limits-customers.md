@@ -71,14 +71,13 @@ To check credit limits for the following documents, you must specify additional 
 
 | Document | Additional setting |
 |--|--|
-| Free text invoice | In the Accounts receivable parameters page, in the Credit rating area, select Check credit limit on free text invoice. |
-| Sales order (manually entered) | In the Accounts receivable parameters page, in the Credit rating area, select Check credit limit on sales order. |
-| Sales order (electronically received) | In the Accounts receivable parameters page, in the AIF area, select Check credit limit for sales orders. |
+| Free text invoice | On the **Accounts receivable parameters** page, in the **Credit rating** area, select **Check credit limit on free text invoice**. |
+| Sales order (manually entered) | On the **Accounts receivable parameters** page, in the **Credit rating** area, select **Check credit limit on sales order**. |
+| Sales order (electronically received) | On the **Accounts receivable parameters** page, in the **AIF** area, select **Check credit limit for sales orders**. |
 
 ## Where do I configure the way that a customer’s remaining credit is calculated?
 
-You can configure Dynamics 365 to calculate a customer’s remaining
-credit in any of the following ways:
+You can configure Supply Chain Management to calculate a customer’s remaining credit in any of the following ways:
 
 - Compare the credit limit against the customer balance.
 - Compare the credit limit against the customer balance and packing slip amounts.
