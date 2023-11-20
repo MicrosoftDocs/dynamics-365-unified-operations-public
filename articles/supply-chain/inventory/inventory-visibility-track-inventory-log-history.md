@@ -6,13 +6,15 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/18/2023
+ms.date: 11/20/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---
 
 # Log and view successful API posts
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up and use the *inventory log history* feature for Inventory Visibility. This feature creates a log of successfully updated inventory API posts. The posts include a timestamp and specify the API type.
 
