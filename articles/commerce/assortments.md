@@ -80,7 +80,7 @@ In addition to stopping sales of a product, you can temporarily block sales of a
 
 ### Date effectivity
 
-Assortments are date-effective. Therefore, retailers can configure when products should or shouldn't be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products automatically become available or unavailable on the specified dates.
+Assortments are date-effective so that retailers can configure when products should or shouldn't be available per channel. You can specify the start and end dates when you define and publish assortments ahead of time. The affected products automatically become available or unavailable during the specified date ranges.
 
 ### Process assortments batch job
 
