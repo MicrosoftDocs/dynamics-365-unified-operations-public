@@ -1725,14 +1725,14 @@
           href: inventory/inventory-visibility-configuration.md
         - name: Set up product search for Inventory Visibility (preview)
           href: inventory/inventory-visibility-product-search.md
-        - name: Search for products using the Inventory Visibility app (preview)
-          href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
+        - name: Search for products using the Inventory Visibility app (preview)
+          href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation

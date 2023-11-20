@@ -200,6 +200,12 @@
         items:
         - name: Configure Accounts payable overview
           href: accounts-payable/accounts-payable-overview.md
+        - name: Vendor posting profiles
+          href: accounts-payable/vendor-posting-profiles.md   
+        - name: Default offset accounts for vendor invoice journals and invoice approval journals
+          href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md  
+        - name: Accounting distributions and subledger journal entries for vendor invoices
+          href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md    
         - name: Key invoice data into accounts payable using a vendor invoice
           href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
         - name: Key invoice data into accounts payable using an approval journal
@@ -208,22 +214,30 @@
           href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
         - name: Copy vendors by using shared number sequences
           href: accounts-payable/vendor-copy.md
-        - name: Record a vendor invoice in the invoice journal
-          href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
         - name: Apply a payment schedule to the invoice journal
-          href: accounts-payable/payment-invoice-journal.md
-      - name: Audit invoices and key data in accounts payable
-        href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
-      - name: Three-way matching policies
-        href: accounts-payable/three-way-matching-policies.md
+          href: accounts-payable/payment-invoice-journal.md 
       - name: Accounts payable invoice matching
         items:
+        - name: Three-way matching policies
+          href: accounts-payable/three-way-matching-policies.md
         - name: Accounts payable invoice matching overview
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Invoice capture solution
         items:
+        - name: Import and key vendor data
+          items: 
+          - name: Key invoice data into accounts payable using a vendor invoice
+            href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
+          - name: Key invoice data into accounts payable using an approval journal
+            href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
+          - name: Key invoice data into the AP system using invoice pool
+            href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+          - name: Record a vendor invoice in the invoice journal
+            href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+          - name: Record vendor invoice and match against received quantity
+            href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md    
         - name: Invoice capture overview
           href: accounts-payable/invoice-capture-overview.md
         - name: Invoice capture install
@@ -266,24 +280,18 @@
           href: accounts-payable/vendor-aging-report.md
         - name: Vendor aging data storage
           href: accounts-payable/vendor-aging-data-store.md
-      - name: Accounting distributions and subledger journal entries for vendor invoices
-        href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
         href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
       - name: Set up vendor invoice policies
         href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Automate vendor payment proposals
         href: accounts-payable/automate-vendor-payment-proposal.md
-      - name: Record vendor invoice and match against received quantity
-        href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
         href: accounts-payable/set-up-generate-positive-pay-files.md
       - name: Set up and generate positive pay files using Electronic reporting
         href: accounts-payable/set-up-positive-pay-ER.md
-      - name: Default offset accounts for vendor invoice journals and invoice approval journals
-        href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
         href: accounts-payable/vendor-workflow.md
       - name: Vendor bank account workflow
@@ -296,8 +304,6 @@
           href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Accounts payable posting
         href: general-ledger/accts-payble-posting.md
-      - name: Vendor posting profiles
-        href: accounts-payable/vendor-posting-profiles.md
       - name: Create charges codes
         href: accounts-receivable/create-charges-codes.md
       - name: Vendor invoice dates
