@@ -62,7 +62,7 @@ In addition to including products and categories in assortments, you can use the
 
 ### Global and released products
 
-Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, a product must be released before it can actually be sold, ordered, counted, or received in the channel (for example, in the point of sale \[POS\]). Therefore, although two stores in different legal entities can share an assortment that contains the same products, the products are available only if they have been released to those legal entities.
+Assortments are defined at a global level and can contain channels from multiple legal entities. The products and categories that are included in assortments are also shared across legal entities. However, a product must be released before it can actually be sold, ordered, counted, or received in the channel (for example, in the point of sale (POS)). Although two stores in different legal entities can share an assortment that contains the same products, the products are only available if they are released to those legal entities.
 
 ### Dynamic and static assortments
 
@@ -72,11 +72,11 @@ For example, an assortment is originally defined and published so that it refere
 
 ### Stopped products
 
-You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often enabled when a product is at the end of its life and shouldn't be sold via any channel. Assortments respect this setting. If a product is stopped in all legal entities that it's released to, it won't be assorted, regardless of the assortment configuration.
+You can "stop" released products for the sales process by turning on a setting in the **Default order** settings. This setting is most often enabled when a product is at the end of its life and shouldn't be sold via any channel. Assortments respect this setting. If a product is stopped in all legal entities that it's released to, it isn't assorted, regardless of the assortment configuration.
 
 ### Blocked products
 
-In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you'll receive a message in the POS that states that the product can't be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
 
@@ -86,16 +86,16 @@ Assortments are date-effective so that retailers can configure when products sho
 
 Assortments that are defined in Commerce must be processed before they take effect. This processing is done for the following reasons:
 
-- Assortment definitions must be de-normalized so that channels can more easily consume them. A product mix for a channel can be defined through multiple assortments that span various date ranges. When some of this information is calculated ahead of time on the server, performance at the channel is improved.
+- Assortment definitions must be denormalized so that channels can more easily consume them. A product mix for a channel can be defined through multiple assortments that span various date ranges. When some of this information is calculated ahead of time on the server, performance at the channel is improved.
 - The products and channels in the assortment can change outside the assortment itself. Dynamic assortments that contain references to categories or organization units must be processed periodically so that they include or exclude records, based on their current assignment.
 
 ## Implementation considerations
 
 Consider the following implementation requirements as you plan and manage assortments for your Commerce implementation:
 
-- **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases improves performance when you add items to a transaction, search, and browse for products.
-- **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
-- **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product was mistakenly omitted from an assortment, or where a product was returned outside the effective dates for the assortment.
+- **Data replication and database size** – Although assortments help serve the business need to manage product availability, they're also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Having fewer records in channel and offline databases improves performance when you add items to a transaction, search, and browse for products.
+- **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (nonexpiring) assortments for seasonal products or products that are at the end of their life, these databases grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
+- **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product is mistakenly omitted from an assortment, or where a product is returned outside the effective dates for the assortment.
 
 If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls are made as required.
 
