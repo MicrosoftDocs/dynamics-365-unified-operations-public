@@ -41,13 +41,13 @@ Alternatively, you can add store 1 to assortment 2.
 
 ### Organization hierarchies
 
-In situations where multiple channels share the same product assortments, you can configure the assortments by using the Commerce assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
+In situations where multiple channels share the same product assortments, you can configure the assortments by using the Commerce assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes are included.
 
 ![Organization hierarchy.](./media/Managing-assortments-figure4.png)
 
 ### Product categories
 
-Similarly, on the product side, you can include groups of products by using product category hierarchies. You can configure assortments by including one or more category hierarchy nodes. In this case, the assortment will include all products in that category node and its child nodes.
+Similarly, on the product side, you can include groups of products by using product category hierarchies. You can configure assortments by including one or more category hierarchy nodes. In this case, the assortment includes all products in that category node and its child nodes.
 
 ![Product categories.](./media/Managing-assortments-figure5.png)
 
@@ -56,7 +56,7 @@ Similarly, on the product side, you can include groups of products by using prod
 In addition to including products and categories in assortments, you can use the Exclude option to define specific products or categories that should be excluded from assortments. In the following example, you want to include all the products in a specific category, except product 2. In this case, you don't have to define the assortment product by product or create additional category nodes. Instead, you can just include the category but exclude the product.
 
 > [!NOTE]
-> If a product is both included and excluded in one or more assortments by definition, the product will always be considered excluded.
+> If a product is both included and excluded in one or more assortments by definition, the product is always considered to be excluded.
 
 ![Excluded product.](./media/Managing-assortments-figure6.png)
 
@@ -66,7 +66,7 @@ Assortments are defined at a global level and can contain channels from multiple
 
 ### Dynamic and static assortments
 
-Assortments can be defined with specific channels and products or by including organization units and categories. Assortments including references to these groups are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment will also change.
+Assortments can be defined with specific channels and products or by including organization units and categories. Assortments including references to these groups are considered dynamic assortments. If the definition or contents of those groups change while the assortment is active, the definition of the assortment also changes.
 
 For example, an assortment is originally defined and published so that it references a category of products. If additional products are later added to the category, those products are automatically included in the definition of the existing assortment. You don't have to manually add the products to the assortment. Similarly, if an organization unit is added to a different node, the organization unit's assortment is automatically adjusted based on that definition.
 
@@ -76,11 +76,11 @@ You can "stop" released products for the sales process by turning on a setting i
 
 ### Blocked products
 
-In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
 
-Assortments are date-effective. Therefore, retailers can configure when products should or should not be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products will automatically become available or unavailable on the specified dates.
+Assortments are date-effective. Therefore, retailers can configure when products should or shouldn't be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products automatically becomes available or unavailable on the specified dates.
 
 ### Process assortments batch job
 
@@ -93,13 +93,13 @@ Assortments that are defined in Commerce must be processed before they take effe
 
 Consider the following implementation requirements as you plan and manage assortments for your Commerce implementation:
 
-- **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases will increase performance when you add items to a transaction, search, and browse for products.
-- **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases will grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
+- **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases improves performance when you add items to a transaction, search, and browse for products.
+- **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
 - **Sales and returns outside assortments** – This capability helps retailers effectively manage their assortments by letting them limit the number of available products to products that belong to the core product mix for the store. This capability also helps retailers handle situations where a product was mistakenly omitted from an assortment, or where a product was returned outside the effective dates for the assortment.
 
-If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls will be made as required.
+If product data doesn't exist in the channel database, the POS makes real-time calls to headquarters to retrieve the required information, so that the product can be sold, returned, or put on a customer order. Product information that is retrieved in this manner is available only during the scope of that transaction. The product isn't added to the assortment definition. Therefore, subsequent real-time calls are made as required.
 
 > [!NOTE]
-> When POS makes real-time calls to headquarters to retrieve product information to download to the channel database, depending on the data size of product information such as the number of product variants, product attributes, and inventory dimensions, you might experience performance issues during real-time calls or when saving the data to the channel database. These performance issues will lead to Commerce Scale Unit (CSU) API failures. To avoid performance issues related to real-time calls, you should add products with large amounts of product information data to the channel's assortment.
+> When POS makes real-time calls to headquarters to retrieve product information to download to the channel database, depending on the data size of product information such as the number of product variants, product attributes, and inventory dimensions, you might experience performance issues during real-time calls or when saving the data to the channel database. These performance issues can lead to Commerce Scale Unit (CSU) API failures. To avoid performance issues related to real-time calls, you should add products with large amounts of product information data to the channel's assortment.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
