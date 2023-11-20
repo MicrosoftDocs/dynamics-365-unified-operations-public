@@ -685,6 +685,7 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
+
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
 On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
@@ -775,7 +776,11 @@ The following example shows how to query all products in multiple sites and loca
 }
 ```
 
-## <a name="product-search-query"></a>Query with product search
+## <a name="product-search-query"></a>Query with product search (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+
+<!-- KFM: Preview until Jan 2024 -->
 
 The following on-hand query APIs are enhanced to support product search:
 
@@ -784,6 +789,8 @@ The following on-hand query APIs are enhanced to support product search:
 
 > [!NOTE]
 > When you post an Inventory Visibility query that uses product search, use the `productSearch` request parameter (with a `ProductAttributeQuery` object inside) to find or filter by product ID. The newer APIs no longer support the older `productid` request parameter in the request body.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Prerequisites
 
