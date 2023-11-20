@@ -4,7 +4,7 @@
 title: Invoice capture solution workspace
 description: This article provides information about the Invoice capture solution workspace.
 author: sunfzam
-ms.date: 11/01/2023
+ms.date: 11/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -76,7 +76,7 @@ Here are some key features of the side-by-side viewer:
 | Verified | The invoice has been reviewed but not transferred. | Select **Transfer**, **Classify invoice**, **Start review**, or **Void**. |
 | Transferred | The invoice was successfully transferred to Dynamics 365 Finance. | Open the invoice in Dynamics 365 Finance. |
 | Voided | The invoice is no longer needed and is obsolete. | <p>Select **Obsolete**.</p><p>When you select **Obsolete**, both captured invoices and received files are permanently deleted from Dataverse.</p> |
-| Awaiting | The invoice is submitted to the waiting list to be picked up by the automation job in Dynamics 365 Finance side for further processing.   |No action is required.|
+| Awaiting | The invoice is submitted to the waiting list to be picked up by the automation job in Dynamics 365 Finance for further processing.   |No action is required.|
 
 ## Navigate to the side-by-side viewer
 
@@ -175,4 +175,4 @@ There are two ways to transfer the complete invoice:
 - If the invoice transfer is automatically triggered through the touchless process, it's submitted to the awaiting list, and **Transfer invoices from invoice capture** will process the invoices.
 
 > [!NOTE]
-> The process automation task is called "Transfer Invoices from Invoice Capture". The default repeat interval of the task is one hour. Admins have the flexibility to modify this interval by navigating to **System System administration > Setup > Process automation > Background processes**.
+> The process automation task is **Transfer invoices from Invoice capture**. The default repeat interval of the task is one hour. To modify this internal, Admins can go to **System administration > Setup > Process automation > Background processes**.
