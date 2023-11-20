@@ -1,5 +1,5 @@
 ---
-title: Set up product search for Inventory Visibility
+title: Set up product search for Inventory Visibility (preview)
 description: This article describes how to set up product search for Inventory Visibility. This feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color.
 author: Weijiesa
 ms.author: weijiesa
@@ -12,9 +12,12 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Set up product search for Inventory Visibility
+# Set up product search for Inventory Visibility (preview)
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+
+<!-- KFM: Preview until Jan 2024 -->
 
 The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. It provides the following benefits:
 
@@ -23,6 +26,8 @@ The *product search* feature lets users search for products and on-hand inventor
 - **Increased product visibility** – Attribute-based search can highlight products that are less often searched for but still potentially relevant. Therefore, users are exposed to a broader range of options that they might not have considered.
 
 This feature is accessible both through the [Inventory Visibility app in Microsoft Power Apps](inventory-visibility-product-search-app.md) and through the [API](inventory-visibility-api.md#product-search-query).
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 

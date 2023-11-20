@@ -1723,9 +1723,9 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
-        - name: Set up product search for Inventory Visibility
+        - name: Set up product search for Inventory Visibility (preview)
           href: inventory/inventory-visibility-product-search.md
-        - name: Search for products using the Inventory Visibility app
+        - name: Search for products using the Inventory Visibility app (preview)
           href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
