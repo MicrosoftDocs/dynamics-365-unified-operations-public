@@ -22,7 +22,7 @@ ms.dyn365.ops.version: 10.0.30
 
 Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
 
-:::image type="content" source="media/sdi-architecture-2.svg" alt-text="Sensor Data Intelligence architectural diagram" lightbox="media/sdi-architecture-2.svg":::
+![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
 ## Prerequisites
 
