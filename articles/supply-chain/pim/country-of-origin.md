@@ -61,9 +61,9 @@ To set up your certificate information, follow these steps.
     | Certificate number | Enter the identification number of the certificate that you issued. |
     | Effective | Select the first date when the current certificate is valid.|
     | Expiration | Select the last date when the current certificate is valid. |
-    | Print on invoice | If you have extended your invoice reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management invoice report. |
-    | Print on packing slip | If you have extended your packing slip reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management packing slip report. |
-    | Print on sales order | If you have extended your sales order reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management sales order report. |
+    | Print on invoice | If you have extended your invoice reports to support certificate numbers, then select this check box to include them when relevant. The out-of-box invoice report design doesn't provide support for certificate numbers. |
+    | Print on packing slip | If you have extended your packing slip reports to support certificate numbers, then select this check box to include them when relevant. The out-of-box packing slip report deign doesn't provide support for certificate numbers. |
+    | Print on sales order | If you have extended your sales order reports to support certificate numbers, then select this check box to include them when relevant. The out-of-box sales order report design doesn't provide support for certificate numbers. |
 
 ## Include the country/region of origin on BOM reports
 
