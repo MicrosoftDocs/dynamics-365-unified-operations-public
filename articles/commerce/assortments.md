@@ -76,11 +76,11 @@ You can "stop" released products for the sales process by turning on a setting i
 
 ### Blocked products
 
-In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you receive a message in the POS that states that the product can't be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you'll receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
 
-Assortments are date-effective. Therefore, retailers can configure when products should or shouldn't be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products automatically becomes available or unavailable on the specified dates.
+Assortments are date-effective. Therefore, retailers can configure when products should or shouldn't be available per channel. You can define and publish assortments ahead of time, and specify the start and end dates. The products automatically become available or unavailable on the specified dates.
 
 ### Process assortments batch job
 
