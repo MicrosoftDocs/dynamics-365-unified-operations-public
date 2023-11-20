@@ -27518,6 +27518,11 @@
       "source_path": "articles/supply-chain/get-started/learning-catalog-solution-architect.md",
       "redirect_url": "/training/dynamics365/scm",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/cost.md ",
+      "redirect_url": "/dynamics365/commerce/dom-cost",
+      "redirect_document_id": false
     }
   ]
 }
