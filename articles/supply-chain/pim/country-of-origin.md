@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Country of origin
 description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country/region of origin. This article provides information about the country of origin feature, which lets you link a product to its country/region of origin and keep track of its product certifications.
 author: t-benebo
-ms.date: 07/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  COOVendorCerts
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
-ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: 10.0.9
+ms.reviewer: kamaybac
+ms.search.form:  COOVendorCerts
+ms.topic: how-to
+ms.date: 11/20/2023
+audience: Application User
+ms.search.region: Global
+ms.custom: bap-template
 ---
 
 # Country of origin
@@ -29,6 +17,9 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country/region of origin. The country of origin feature lets you link a product to its country/region of origin and keep track of its product certifications.
+
+> [!IMPORTANT]
+> The *Country of origin management* feature described in this article helps you keep track of vendor certificates but doesn't modify the standard functionality of invoices, packing slips, or order confirmations to include them. If you want to print out certificate numbers on one or more of these reports, then you must extend them in your project.
 
 ## Turn the country of origin feature on or off
 
@@ -46,18 +37,15 @@ Before you issue a certificate for a product, you must link the product to its d
     |---|---|
     | Item number | Select the item number of the product. |
     | Destination country | Select the country/region that you're sending the product to. |
-    | Origin country | Select the country that you're shipping the product from. |
+    | Origin country | Select the country/region that you're shipping the product from. |
 
-The purpose of this setup is to help you generate a bill of materials (BOM) report where you can include the country/region of origin for each part that source and destination countries/regions are specified for. This report will help you get a holistic picture of where your parts come from and where they are going.
+The purpose of this setup is to help you generate a bill of materials (BOM) report where you can include the country/region of origin for each part that source and destination countries/regions are specified for. This report helps you get a holistic picture of where your parts come from and where they're going.
 
 ## Keep track of vendor certificates
 
 You can use the **Country of origin vendor certificates** page to keep track of certificates that you issue to vendors.
 
-You must decide which certificate documents you're issuing and how you will report them to customers. This feature helps you keep track of your certificates. It also lets you choose whether the relevant certificate numbers appear on invoices, packing slips, and/or order confirmations.
-
->[!NOTE]
-> The feature does not include changes to the invoice, packing slip, and order confirmations. Thise reports must be extended in your project to enable the actual printout of the certificate numbers. 
+You must decide which certificate documents you're issuing and how you'll report them to customers. This feature helps you keep track of your certificates. It also lets you choose whether the relevant certificate numbers appear on invoices, packing slips, and/or order confirmations.
 
 To set up your certificate information, follow these steps.
 
@@ -69,13 +57,13 @@ To set up your certificate information, follow these steps.
     |---|---|
     | Vendor account | Select the vendor that you issued the certificate to. |
     | Item number | Select the item that you issued the certificate for. |
-    | Country/region | The destination country or region where you must use this certificate. |
+    | Country/region | The destination country/region where you must use this certificate. |
     | Certificate number | Enter the identification number of the certificate that you issued. |
     | Effective | Select the first date when the current certificate is valid.|
     | Expiration | Select the last date when the current certificate is valid. |
-    | Print on invoice | This checkbox is provided to support an extension of the invoice report to include the certificate numbers. The certificate number is not included in the D365 invoice report.|
-    | Print on packing slip | This checkbox is provided to support an extension of the packing slip report to include the certificate numbers. The certificate number is not included in the D365 packing slip report.|
-    | Print on sales order | This checkbox is provided to support an extension of the order confirmation report to include the certificate numbers. The certificate number is not included in the D365 order confirmation report. |
+    | Print on invoice | If you have extended your invoice reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management invoice report. |
+    | Print on packing slip | If you have extended your packing slip reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management packing slip report. |
+    | Print on sales order | If you have extended your sales order reports to include a certificate number, then select this check box to include it. The certificate number isn't included in the standard Supply Chain Management sales order report. |
 
 ## Include the country/region of origin on BOM reports
 
@@ -88,7 +76,7 @@ When you generate a BOM report, you can include the country/region of origin for
 1. In **Bill of materials lines** dialog box, set the **Destination country** field to the destination country/region that you want to view on your report.
 1. Select **OK**.
 
-A report that shows information about the country/region of origin of each part is generated and shown. Here is an example of the report.
+A report that shows information about the country/region of origin of each part is generated and shown. Here's an example of the report.
 
 ![Country of origin report.](media/country-of-origin-report.png "Country of origin report")
 
