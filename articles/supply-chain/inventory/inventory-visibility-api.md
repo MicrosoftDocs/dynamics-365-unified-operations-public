@@ -787,7 +787,11 @@ The following on-hand query APIs are enhanced to support product search:
 
 ### Prerequisites
 
-Before you can start to use the product search APIs, you must install and set up the Inventory Visibility search service. For instructions, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
+Before you can start to use the product search APIs, your system must meet the following requirements:
+
+- You must be running Dynamics 365 Supply Chain Management 10.0.36 or later.
+- Inventory Visibility version 1.2.2.54 or later must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- The Inventory Visibility search service must be installed and set up as described in [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
 ### Product search contract
 

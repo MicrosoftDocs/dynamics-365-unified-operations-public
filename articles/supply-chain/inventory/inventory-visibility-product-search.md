@@ -29,7 +29,7 @@ This feature is accessible both through the [Inventory Visibility app in Microso
 Before you can use the product search service, your system must meet the following requirements:
 
 - You must be running Dynamics 365 Supply Chain Management 10.0.36 or later.
-- You must be running Inventory Visibility version 1.2.2.54 or later.
+- Inventory Visibility version 1.2.2.54 or later must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Install the product search service
 

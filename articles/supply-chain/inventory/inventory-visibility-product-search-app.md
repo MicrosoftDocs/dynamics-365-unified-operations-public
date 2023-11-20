@@ -28,7 +28,8 @@ This feature is accessible both through the Inventory Visibility app in Microsof
 
 Before you can search for products in the Inventory Visibility app, your system must meet the following requirements:
 
-- The Inventory Visibility Add-in must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- You must be running Dynamics 365 Supply Chain Management 10.0.36 or later.
+- Inventory Visibility version 1.2.2.54 or later must be installed and set up as described in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 - The Inventory Visibility search service must be installed and set up as described in [Set up product search for Inventory Visibility](inventory-visibility-product-search.md).
 
 ## Search for products using attribute filters
