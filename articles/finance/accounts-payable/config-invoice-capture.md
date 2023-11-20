@@ -4,7 +4,7 @@
 title: Configure the Invoice capture solution
 description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
-ms.date: 11/01/2023
+ms.date: 11/20/2023
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -38,13 +38,13 @@ After the Invoice capture solution is installed, default configurations for usin
 1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
 
 > [!NOTE]
-> For invoices that have more complex layouts, customers can create their own custom prebuilt models. After a model is published, it appears in the dropdown list, and additional mapping is required to map the model fields to the invoice files. This feature will be supported in a future release.
+> In a future release, invoices with more complex layouts, customers can create their own custom prebuilt models. After a model is published, additional mapping is required to map the model fields to the invoice files. 
 
-3. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
-4. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
-5. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
-6. **Use continuous learning** – Select this option to turn on the continuous learning feature.
-7. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
+2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
+3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
+4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
+5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
+6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
 
 ## Manage processing rules
 
@@ -75,8 +75,9 @@ In invoice capture processing, different derivation rules are applied to ensure 
 ## Manage file filters (optional)
 
 **Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. 
+
 > [!NOTE]
-> This behavior differs from the behavior that is defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
+> This behavior is different from the behavior that is defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.
 
@@ -100,7 +101,7 @@ Configure the following settings in the file filter:
 
 ## Definition of master data
 
-Invoice capture processing requires two basic data to classify the invoices: legal entities and vendors.
+Invoice capture processing requires two basic data types to classify invoices: legal entities and vendors.
 
 **Legal entities** are organizations that are registered with legal authorities and defined in Dynamics 365 Finance. Business activities are performed and recorded separately for each legal entity. In Microsoft Power Platform, business units, security roles, and users are linked to conform to the role-based security model. This link controls data access through business units and security roles, and allows Accounts payable clerks to view only the invoices that are assigned to their users.
 
@@ -122,7 +123,9 @@ After synchronization is completed, a message shows the number of new legal enti
  2. **Sync by legal entity** - The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
  3. **Sync by selection** - Administrators can search and select one or multiple vendors and sync the selected vendor.
     
-An Accounts Payable administrator has the option to initiate vendor synchronization manually or in real-time. To enable real-time synchronization, please activate the "Sync all vendors" checkbox next to the onboarded legal entity under Accounts Payable > Setup > Invoice Capture in Dynamics 365 Finance.
+An Accounts Payable administrator can initiate the vendor synchronization manually or in real-time. To enable real-time synchronization, go to:
+1. In Dynamics 365 Finance, **Accounts payable > Setup > Invoice capture**.
+2. Select the **Sync all vendors** checkbox next to the onboarded legal entity.
 
 
 
