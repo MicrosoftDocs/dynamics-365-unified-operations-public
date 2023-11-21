@@ -1,95 +1,115 @@
 ---
-title: Format 1006 file for Colombia issue configuration
-description: This article provides information about the required configuration for issuing the Format 1006 file for Colombia. 
+title: Format 1006 file for Colombia configuration
+description: This article provides information about the configuration required to issue the Format 1006 file for Colombia. 
 author: Fhernandez0088 
-ms.date: 11/10/2023 
+ms.date: 11/21/2023 
 ms.topic: articule
 ms.reviewer: kfend
 ms.author: v-federicohe
 ms.custom: bap-template
 ---
 
-# Format 1006 file for Colombia issue configuration
+# Format 1006 file for Colombia configuration
 
-This article will explain the necessary configurations to be done to issue a format 1006 file.
-This report informs VAT generated in sales, purchase devolutions and consumption taxes.
+This article explains how to set up and issue a format 1006 file. This report includes VAT that is generated in sales and purchase transactions, and consumption taxes.
 
 ## Prerequisites
 
-To print the report, it is necessary to meet the following prerequisites: 
-* The legal entity with an address in a country within the LATAM localization.
-* Have both the country specific LATAM feature and the general feature activated.
-* Import the configurations needed from the **Global** repository:
-		* LTM Tax Report
-		* Format 1006 file
+To print the report, the following prerequisites must be met: 
 
-See [ER download reports](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance) article.
+- The legal entity must have an address in a country within the LATAM localization.
+- Activate the country-specific LATAM feature and the general feature.
+- Import the configurations needed from the **Global** repository:
 
-* Configure ER parameters
+  - LTM Tax Report
+  - Format 1006 file
 
- See [ER configuration]( https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters) article.
+    To learn more, see [ER download reports](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-## Configure application specific parameters for format 1006
+- Configure ER parameters
 
-Lookups and conditions are designed to allow you to choose the combination of documents classification ids. and tax codes used in the transactions that are shown in this report.
+  For more details, see [ER configuration](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-Once the prerequisites are met, follow these steps:
-1. Go to **Organization administration > Workspaces > Electronic reporting**.
-2. Select **Reporting configuration**.
-3. On the left tree of content select **LTM Tax Report deployment > Format 1006**
-4. In the top menu go to **Configurations > Application specific parameters > Setup**.
-5. In the **Lookups** section select the first lookup “ApplicableCreditNote”. This lookup will allow to select the document classes that are used for purchases devolutions that contain VAT.
-6. On the **Conditions** section select **Add**
-7. In the **Lookup result** field, select **Yes**
-8. In the **Document classification id.** field, select an option from the list. Select the appropriate document class (sales credit notes). 
-9. On the **Conditions** section select **Add**.
-10. In the **Lookup result** field, select **No**.
-11. In the **Document classification id.** field, select **Blank**.
-12. On the **Conditions** section select **Add**.
-13. In the **Lookup result** field, select **No**.
-14. In the **Document classification id.** field, select **Not Blank**.
+## Configure application-specific parameters for format 1006
 
-> [!NOTE]
-> The document classes selected in this configuration must be used in the company transactions to be listed in this report.
+Lookups and conditions are designed so you can select the combination of document classification IDs and tax codes used in the transactions that are shown in the report.
 
-15. In the **Lookups** section select “TaxType”:
-16. On the **Conditions** section select **Add**.
-17. In the **Lookup Result** field select **Consumption tax**.
-18. In the **Tax code** field, select an option from the list that represents consumption taxes. 
-19. On the Conditions section, Select **Add**.
-20. In the **Lookup result** field, select **Generated Tax **.
-21. In the **Tax code** field, select an option from the list that represents the VAT generated in sales. 
-22. On the Conditions section, Select **Add**.
-23. In the **Lookup result** field, select **Tax Refund **.
-24. In the **Tax code** field, select an option from the list that represents the VAT returns in purchases returns. 
-25. On the **Conditions** section select **Add**.
-26. In the **Lookup result** field, select **N/A**.
-27. In the ** the type of tax.** field, select **Blank**.
-28. On the **Conditions** section select **Add**.
-29. In the **Lookup result** field, select **N/A**.
-30. In the ** the type of tax** field, select **Not Blank**.
+After the prerequisites are met, complete the following steps.
 
-> [!NOTE]
-> The tax codes selected in this configuration must be used in the company transactions to be listed in this report.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
+2. On the left, select **LTM Tax Report deployment** \> **Format 1006**.
+3. On the Action Pane, select **Configurations** \> **Application specific parameters** \> **Setup**.
+4. In the **Lookups** section, select the first lookup, **ApplicableCreditNote**. Use this lookup to select the document classes to use for purchases that contain VAT.
+5. In the **Conditions** section, select **Add**
 
-31. In the **Lookups** section select “ApplicableInvoice”:
-32. On the Conditions section select **Add**.
-33. In the **Lookup result** field, select **Yes**.
-34. In the **Document classification id.** field, select an option from the list. Select the appropriate document class (purchase invoices). 
-35. On the **Conditions** section select **Add**.
-36. In the **Lookup result** field, select **No**.
-37. In the **Document classification id.** field, select **Blank**
-38. On the **Conditions** section select **Add**.
-39. In the **Lookup result** field, select **No**.
-40. In the **Document classification id.** field, select **Not Blank**.
+  1. In the **Lookup result** field, select **Yes**.
+  2. In the **Document classification id.** field, select a value. 
 
-> [!NOTE]
-> The document classes selected in this configuration must be used in the company transactions to be listed in this report.
+6. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Blank**.
+
+7. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Not blank**.
+
+  > [!NOTE]
+  > The document classes selected in this configuration must be used in the company transactions listed in the report.
+
+8. In the **Lookups** section, select **TaxType**.
+9. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup Result** field select **Consumption tax**.
+  2. In the **Tax code** field, select an option from the list that represents consumption taxes. 
+
+10. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **Generated tax**.
+  2. In the **Tax code** field, select a value from the list that represents the VAT generated in sales. 
+
+11. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **Tax refund**.
+  2. In the **Tax code** field, select an option from the list that represents the VAT returns in purchases returns. 
+
+12. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **N/A**.
+  2. In the **Type of tax** field, select **Blank**.
+
+13. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **N/A**.
+  2. In the **Type of tax** field, select **Not Blank**.
+
+  > [!NOTE]
+  > The tax codes selected in this configuration must be used in the company transactions listed in the report.
+
+14. In the **Lookups** section select **ApplicableInvoice**.
+15. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **Yes**.
+  2. In the **Document classification id.** field, select an option from the list. Select the appropriate document class (purchase invoices). 
+
+16. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Blank**
+
+17. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Not Blank**.
+
+  > [!NOTE]
+  > The document classes selected in this configuration must be used in the company transactions listed in the report.
 
 ## Issue file 1006 format
 
-1. Go to Tax > Inquiries and reports > LATAM > Tax reporting.
-2. In the Format mapping field, select a **Format 1006**.
-3. Select OK.
+1. Go to **Tax** > **Inquiries and reports** > **LATAM** > **Tax reporting**.
+2. In the **Format mapping** field, select **Format 1006**.
+3. Select **OK**.
 4. Select a date range.
-6. Select OK.
+6. Select **OK**.
