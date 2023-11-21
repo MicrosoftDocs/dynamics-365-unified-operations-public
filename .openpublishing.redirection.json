@@ -27520,8 +27520,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/commerce/cost.md ",
-      "redirect_url": "/dynamics365/commerce/dom-cost",
+      "source_path": "articles/commerce/cost.md",
+      "redirect_url": "/dynamics365/commerce/dom-costs",
       "redirect_document_id": false
     }
   ]
