@@ -126,36 +126,35 @@ Some additional parameters must be configured directly in Finance.
 
 ## Finance business data configuration
 
-Please do the configuration steps described in the [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md) article startin from the  [Configure parameters](../norway/emea-dnk-e-invoices.md#configure-parameters) section.
+Please do the configuration steps described in the [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md) article starting from the  [Configure parameters](../norway/emea-dnk-e-invoices.md#configure-parameters) section.
 
+### Configure output format type
 
-
-
-
-### Configure additional data
-
-You can add any additional arbitrary data to invoices. This data will be put in a special section of electronic invoices that is named *DodatkowyOpis*.
+By default all outgoing electronic invoices will be generated in **OIOUBL** format for all customers. User can configure generation of electronic invoices in **PEPPOL** format for specific customers using configurable electronic document property types.
+> [!NOTE]
+> Perform the configuration steps described in this chapter only if you additionally need to generate electronic invoices in **PEPPOL** format. Skip these configuration steps if only generation in **OIOUBL** format is required.
 
 #### Configure electronic document properties
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 2. Select **New** to add a property type.
-2. In the **Type** field, enter the value to use as an additional data key (*Klucz*) in the resulting XML file of an e-invoice.
+2. In the **Type** field, enter the **FormatType** value exactly as specified here.
 3. Select **Applicability** to add an applicable table.
-4. On the **Electronic document property type applicability setup** page, in **Table name** field, select **Customer invoice journal** and **Project invoice**.
-5. Add as many additional document properties as you require.
-6. Save your changes, and return to the **Electronic document property types** page.
+4. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
+5. Save your changes, and return to the **Electronic document property types** page.
 
     ![Property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
-#### Enter additional data
+#### Enter the type of format
 
-Follow these steps to enter additional invoice data.
+Follow these steps to enter the type of format for specific customers.
 
-1. Go to **Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**.
-2. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
-3. Enter a required value. This value will be used in the *Wartosc* field in the resulting XML file of an e-invoice.
-
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. Select a specific customer in the list, and then, on the Action Pane, on the **Customer** tab, in the **Properties** group, select **Electronic document properties**.
+3. In the **Value** column, enter the **PEPPOL** value exactly as specified here.
+    > [!NOTE]
+    > Only if the **PEPPOL** value is entered, the system will generate electronic invoices in the PEPPOL format. All other values or missing values will lead to generation of electronic invoices in the default OIOUBL format.
+    
     ![Value entered on the Electronic document properties page.](../media/emea_dk_format_type.jpg)
 
 
