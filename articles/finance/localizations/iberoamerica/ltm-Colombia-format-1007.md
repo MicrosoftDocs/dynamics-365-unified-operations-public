@@ -1,81 +1,92 @@
 ---
 title: Report 1007 for Colombia configuration
-description: This article provides information about the required configuration for issuing the Format 1007 file for Colombia.  
+description: This article provides information about how to set up and issue Format 1007 file for Colombia.  
 author: Fhernandez0088 
-ms.date: 11/10/2023 
+ms.date: 11/21/2023 
 ms.topic: articule
 ms.reviewer: kfend
 ms.author: v-federicohe
 ms.custom: bap-template
 ---
 
-# Format 1007 file for Colombia issue configuration
+# Format 1007 file for Colombia configuration
 
-This article will explain the necessary configurations to be done to issue a format 1007 file.
-The format 1007 file informs the revenue received in a span of time by the company.
+This article explains how to set up and issue a format 1007 file. The format 1007 file provides informationa about the revenue received in a span of time by the company.
 
 ## Prerequisites
 
-To print the report, it is necessary to meet the following prerequisites: 
-* The legal entity address must be set in Colombia.
-* Have both the country specific LATAM globalization feature and the general LATAM feature enabled.
-* Import the configurations needed from the **Global** repository: 
-	* LTM Tax Report
-	* Format 1007 format
+Before you print the report, the following prerequisites must be met.
 
-See [Download ER Configuration]( https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?context=%2Fdynamics365%2Fcontext%2Ffinance) article.
+- The legal entity address must be set in Colombia.
+- Enable the country-specific LATAM globalization feature and the general LATAM feature.
+- Import the following configurations from the Global repository: 
 
-* Configure ER parameters
+  - LTM Tax Report
+  - Format 1007 format
 
-See [ER configuration]( https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters) article.
+   To learn more, see [Download ER Configuration](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
+- Configure ER parameters
 
-## Configure application specific parameters
+  For more details, see [ER configuration](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md).
 
-Lookups and conditions are designed to allow you to choose the combination of documents classification ids. and sales tax codes used in the transactions.
+## Configure application-specific parameters
 
-Once the prerequisites are met, follow these steps:
-1. Go to **Organization administration > Workspaces > Electronic reporting**.
-2. Select **Reporting configuration**.
-3. On the left tree of content select **LTM Tax Report deployment > Format 1007**
-4. In the top menu go to **Configurations > Application specific parameters > Setup**.
+Lookups and conditions are designed so you can select the combination of documents classification IDs and sales tax codes used in transactions.
 
-5. In the **Lookups** section select the first lookup “InvoiceAndCreditNoteIsApplicable”. This lookup will allow to select the document classes that are used for invoices and credit notes transactions that contain the company revenue.
-6. On the **Conditions** section select **Add**
-7. In the **Lookup result** field, select **Yes**
-8. In the **Document classification id.** field, select an option from the list. Select the appropriate document class. 
-9. On the **Conditions** section select **Add**
-10. In the **Lookup result** field, select **No**
-11. In the **Document classification id.** field, select **Blank**
-12. On the **Conditions** section select **Add**
-13. In the **Lookup result** field, select **No**
-14. In the **Document classification id.** field, select **Not Blank**
+Follow these steps to set up the parameters for the report. 
 
-> [!NOTE]
-> The document classes selected in this configuration must be used in the company transactions to be listed in this report.
+1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**, and select **Reporting configuration**.
+2. On the left, select **LTM Tax Report deployment** \> **Format 1007**
+3. On the Action Pane, go to **Configurations** \> **Application specific parameters** \> **Setup**.
+4. In the **Lookups** section, select the first lookup **InvoiceAndCreditNoteIsApplicable**. Use this lookup to select the document classes that are used for invoice and credit note transactions that contain the company revenue.
+5. In the **Conditions** section, select **Add**.
 
-15. In the **Lookups** section select “MainAccountGroup”:
-16. On the **Conditions** section, select **Add**
-17. In the **Lookup result** field, select a concept:
-* 4001: common activities revenue.
-* 4002: other activities revenue.
-* 4003: financial interest revenue.
-* 4004: mortgage interest revenue.
-18. In the **Main Account** field, select an option from the list. 
-19. On the **Conditions** section select **Add**.
-20. In the **Lookup result** field, select **N/A**.
-21. In the **Main account** field, select **Blank**.
-22. On the **Conditions** section select **Add**
-23. In the **Lookup result** field, select **N/A**.
-24. In the **Main account** field, select **Not Blank**.
+  1. In the **Lookup result** field, select **Yes**.
+  2. In the **Document classification id.** field, select a value.
 
-> [!NOTE]
-> The ledger accounts selected in this configuration must be used in the company transactions to be listed in this report.
+6. In the **Conditions** section, select **Add**.
 
-## Issue format 1007 file:
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Blank**.
 
-1. Go to Tax > Inquiries and reports > LATAM > Tax reporting.
-2. In the Format mapping field, select a **Format 1007**.
-3. Select OK.
+7. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **No**.
+  2. In the **Document classification id.** field, select **Not Blank**.
+
+  > [!NOTE]
+  > The document classes selected in this configuration must be used in the company transactions listed in the report.
+
+8. In the **Lookups** section, select **MainAccountGroup**.
+9. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select one of the following values:
+
+     - 4001: Common activities revenue
+     - 4002: Other activities revenue
+     - 4003: Financial interest revenue
+     - 4004: Mortgage interest revenue
+
+  2. In the **Main Account** field, select a value. 
+
+10. On the **Conditions** section select **Add**.
+
+  1. In the **Lookup result** field, select **N/A**.
+  2. In the **Main account** field, select **Blank**.
+
+11. In the **Conditions** section, select **Add**.
+
+  1. In the **Lookup result** field, select **N/A**.
+  2. In the **Main account** field, select **Not Blank**.
+
+  > [!NOTE]
+  > The ledger accounts selected in this configuration must be used in the company transactions for the report.
+
+## Issue a format 1007 file
+
+1. Go to **Tax** \> **Inquiries and reports** \> **LATAM** \> **Tax reporting**.
+2. In the **Format mapping** field, select **Format 1007**.
+3. Select **OK**.
 4. Select a date range.
-6. Select OK.
+6. Select **OK**.
