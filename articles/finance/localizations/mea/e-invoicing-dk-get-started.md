@@ -29,7 +29,7 @@ The article guides you through the configuration steps that are general and coun
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- The company must be registered in the Danish authorities and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
+- The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
   > [!IMPORTANT]
 - The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable submission and reception of electronic invoices generated in Microsoft D365 Finance.
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
