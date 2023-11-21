@@ -146,7 +146,7 @@ You can add any additional arbitrary data to invoices. This data will be put in 
 5. Add as many additional document properties as you require.
 6. Save your changes, and return to the **Electronic document property types** page.
 
-    ![Property type added on the Electronic document property types page.](../media/e-invoicing-pol-parameters.jpg)
+    ![Property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
 #### Enter additional data
 
@@ -156,10 +156,8 @@ Follow these steps to enter additional invoice data.
 2. Select an invoice in the list, and then, on the Action Pane, on the **Invoice** tab, in the **Properties** group, select **Electronic document properties**.
 3. Enter a required value. This value will be used in the *Wartosc* field in the resulting XML file of an e-invoice.
 
-    ![Value entered on the Electronic document properties page.](../media/e-invoicing-pol-values.jpg)
+    ![Value entered on the Electronic document properties page.](../media/emea_dk_format_type.jpg)
 
-> [!NOTE]
-> You can enter additional data for project invoices in a similar way at **Project management and accounting** \> **Project invoices** \> **Project invoice**.
 
 ## Issue electronic invoices
 
