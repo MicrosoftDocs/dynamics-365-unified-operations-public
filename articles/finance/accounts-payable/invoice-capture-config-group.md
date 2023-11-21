@@ -51,16 +51,16 @@ After deployment, a default configuration group (**Default configuration**) is c
 To manage configuration groups, go to **Setup**, and select **System setup \> Define configuration groups component**.
 
 > [!NOTE]
-> To create a new configuration group, select an existing configuration group > select **Copy**. A new configuration group is created by duplicating the existing group. The new configuration group appears in the **Configuration group** list view. It has all the same values as the original configuration group except in the **Group name** and **Group description** fields.
+> To create a new configuration group, select an existing configuration group, and then select **Copy**. A new configuration group is created by duplicating the existing group. The new configuration group appears in the **Configuration group** list view. It has all the same values as the original configuration group, except in the **Group name** and **Group description** fields.
 
 ### Define the confidence score
 
 Administrators can define the quality standard for the invoice date that's recognized by AI Builder. When the recognition is completed, structured invoice data and the corresponding confidence score for each field on the invoice are sent from AI Builder. The confidence score on each recognized field indicates confidence about the accuracy for the returned result. For more information about confidence scores, see [Confidence score](/azure/applied-ai-services/form-recognizer/concept-accuracy-confidence). The confidence score on each recognized field indicates confidence about the accuracy of the returned result. The value range of confidence scores in Invoice capture is interpreted as a number from 0 (zero) through 100. A higher score indicates that AI Builder has more confidence in the recognized result. Administrators can configure the threshold of confidence scores to indicate different message severities. The low confidence message will display in the side-by-side viewer. 
 
 > [!NOTE]
-> The confidence score won't be improved as the prebuilt model can't be trained with customer data without permission. In most cases, the captured text is accurate and the low confidence score results from a lack of sample invoices during the prebuilt model training process. Administrators can enable the **"Use confidence score"** parameter under **Setup system > Manage process rules** to determine whether the validation logic for low confidence scores will be applied.
+> The confidence score won't be improved, because the prebuilt model can't be trained with customer data without permission. In most cases, the captured text is accurate, and the low confidence score is caused by a lack of sample invoices during the training process for the prebuilt model. To specify whether the validation logic for low confidence scores is applied, administrators can enable the **Use confidence score** parameter at **Setup system** \> **Manage process rules**.
 
-### Define manual review condition
+### Define a manual review condition
 
 Administrators can define whether a manual review is required for each recognized invoice, based on the severity of the issues (warnings or errors). In the default configuration group, it can be specified that manual review is required only when there are errors. If there are no errors during the Invoice capture process, the invoice is transferred from Invoice capture to Dynamics 365 finance and operations. This parameter affects the touchless rate in the Invoice capture process.
 
