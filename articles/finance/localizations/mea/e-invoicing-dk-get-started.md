@@ -161,10 +161,11 @@ Follow these steps to enter the type of format for specific customers.
 
 ## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices. 
-For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+When you've completed all the required configuration steps, you can generate and submit electronic invoices for posted invoices at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**). 
+For more information about how to generate electronic invoices, see [Submit electronic documents to Electronic invoicing](../global/e-invoicing-submit-electronic-documents.md).
 
-You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**).
+You can inquire about the results of the submission at **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**). 
+For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## Receive incoming electronic invoices
 
