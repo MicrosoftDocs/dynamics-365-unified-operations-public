@@ -27,7 +27,7 @@ Planning Optimization is currently available in the following Azure geographies:
 
 ## Licensing
 
-If you can run master planning by using your current license, you don't have to buy an additional license to start to use Planning Optimization.
+You can run master planning using your current Supply Chain Management licenses. Planning Optimization is the master planning engine for Supply Chain Management and is licensed as part of the standard licenses for the system. There are no extra costs associated with using Planning Optimization.
 
 ## <a name="install-enable-po"></a>Install and enable Planning Optimization
 

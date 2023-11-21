@@ -1,5 +1,5 @@
 ---
-title: Resolve concurrency across price component codes
+title: Resolve concurrency across price component codes (preview)
 description: Concurrency rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line. This article explains how to manage across-price-component-code concurrency in a price structure. 
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Resolve concurrency across price component codes
+# Resolve concurrency across price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

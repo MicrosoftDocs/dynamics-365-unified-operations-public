@@ -73,7 +73,7 @@ The following table includes links to resources that can help you implement both
 <td>1</td>
 <td>System administrator</td>
 <td>Implement the finance and operations app in your organization.</td>
-<td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
+<td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../../dev-itpro/deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -95,7 +95,7 @@ The following table includes links to resources that can help you implement both
 <td>3</td>
 <td>System administrator</td>
 <td>Publish the mobile workspaces that are provided by Microsoft.</td>
-<td><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+<td><a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a>
 </td>
 </tr>
 <tr class="even">
@@ -108,19 +108,19 @@ The following table includes links to resources that can help you implement both
 <td>5</td>
 <td>ISV</td>
 <td>Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></td>
+<td><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Create a deployable package</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>System administrator</td>
 <td>Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</td>
-<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></td>
+<td><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Apply a deployable package</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>System administrator</td>
 <td>Publish the custom mobile workspaces that are provided by the ISV.</td>
-<td><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></td>
+<td><a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publish a mobile workspace</a></td>
 </tr>
 <tr class="even">
 <td>8</td>

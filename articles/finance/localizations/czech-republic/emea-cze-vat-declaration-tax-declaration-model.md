@@ -348,7 +348,7 @@ To automatically generate a VAT declaration, you should associate sales tax code
 
 6. In the **State** field, select **Completed**, and review the parameters.
 
-    [![Conditions FastTab on the Application specific parameters page.](../media/Pic1_ReportFieldLookup.png)](media/Pic1_ReportFieldLookup.png)
+    [![Conditions FastTab on the Application specific parameters page.](../media/Pic1_ReportFieldLookup.png)](../media/Pic1_ReportFieldLookup.png)
 
 7. On the Action Pane, select **Export** to export the parameters to an XML file.
 8. Select the **VAT declaration Excel (CZ**) configuration, and then, on the Action Pane, select **Import** to import the parameters that you configured for **VAT declaration XML (CZ)**. 
@@ -377,7 +377,7 @@ To automatically classify a transaction by using the subject code of a reverse c
     |---------------|----------------------------|-------------------------------------|---------|
     | Other         | \*Blank\*                  | \*Not blank\*                       | This line must be set up to prevent an error message from being generated for transactions that don't have a reverse charge code. |
 
-[![Lookup for the subject code.](../media/Pic2_SubjectCodeLookup.png)](media/Pic2_SubjectCodeLookup.png)
+[![Lookup for the subject code.](../media/Pic2_SubjectCodeLookup.png)](../media/Pic2_SubjectCodeLookup.png)
 
 ### Set up parameters for fulfillment mode codes
 
@@ -422,7 +422,7 @@ A sales transaction can automatically be classified as fulfilling the condition 
 
 6. Review the parameters.
 
-    [![Lookup for the condition that there is no obligation to issue a tax document.](../media/Pic3_NoTaxDocumentLookup.png)](media/Pic3_NoTaxDocumentLookup.png)
+    [![Lookup for the condition that there is no obligation to issue a tax document.](../media/Pic3_NoTaxDocumentLookup.png)](../media/Pic3_NoTaxDocumentLookup.png)
 
 7. Update the **State** field for all the parameters to **Completed**.
 
@@ -483,7 +483,7 @@ You should complete the following setup before you generate a VAT declaration.
 | Page                           | Description |
 |--------------------------------|-------------|
 | Legal entities (**Organization administration \> Organizations \> Legal entities**) | The tax registration type should be assigned to the **VAT ID** tax registration category. For more information, see [Set up VAT ID](../europe/eur-00015-vat-id.md). |
-| Legal entities                 | <p>On the **Addresses** FastTab, define the primary address for the legal entity.</p><p>On the **Contact information** FastTab, in the **Phone** and **Email** fields, select **Primary**.</p> |
+| Legal entities                 | <p>On the **Addresses** FastTab, define the primary address for the legal entity: Company city (`naz_obce` field of the VAT declaration), Company street and street number (`ulice`, `c_orient` fields of the VAT declaration), Company building complement (`c_pop` field of the VAT declaration), Company postcode (`psc` field of the VAT declaration)</p><p>On the **Contact information** FastTab, in the **Phone** and **Email** fields, select **Primary**.</p> |
 | Tax authorities (**Tax \> Indirect taxes \> Sales tax \> Sales tax authorities**) | Create the tax authority where the tax declaration is provided. Enter the tax authority code in the **Authority identification** field. |
 | All customers (**Accounts receivable \> Customers \> All customers**), All vendors (**Accounts payable \> Vendors \> All vendors**) | Set up VAT IDs for customers and vendors. For more information, see [Registration of vendor VAT ID](../europe/eur-00015-registration-vendor-vat-id.md). |
 | General ledger parameters (**General ledger \> Setup \> Ledger setup \> General ledger parameters**) | <p>On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select **VAT declaration Excel (CZ)**. This format will be printed when you run the **Report sales tax for settlement period** report. It will also be printed when you select **Print** on the **Sales tax payments** page.</p><p>If you must report the corrections, on the **Special report** section, set **Include corrections** to **Yes**.</p>|
@@ -540,7 +540,7 @@ To generate the XML file for the VAT declaration, follow these steps.
 
 15. Select **OK**. When the declaration in XML format has been generated, the status of the message is changed to **Generated**.
 
-    [![Electronic message that has Generated status.](../media/PicEM.jpg)](media/PicEM.jpg)
+    [![Electronic message that has Generated status.](../media/PicEM.jpg)](../media/PicEM.jpg)
 
     If an error occurs while the report is being generated, the status of the message is changed to **Technical error**.
 

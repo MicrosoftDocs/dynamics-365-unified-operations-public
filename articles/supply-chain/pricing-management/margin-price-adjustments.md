@@ -1,5 +1,5 @@
 ---
-title: Margin price adjustments
+title: Margin price adjustments (preview)
 description: This article describes how to set up and use margin price adjustments.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Margin price adjustments
+# Margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

@@ -1,6 +1,6 @@
 ---
-title: Mass deploy the Warehouse Management mobile app
-description: This article explains how to mass deploy the Warehouse Management mobile app by using Microsoft Intune.
+title: Mass deploy the mobile app for service-based authentication
+description: This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
@@ -12,13 +12,16 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Mass deploy the Warehouse Management mobile app
+# Mass deploy the mobile app for service-based authentication
 
 [!include [banner](../includes/banner.md)]
 
+> [!IMPORTANT]
+> Service-based authentication methods (such as certificates and client secrets) are now deprecated. We strongly recommend that you authenticate using [user-based authentication](warehouse-app-authenticate-user-based.md) (such as device code flow) instead. For details about how to mass deploy the Warehouse Management mobile app for user-based authentication, see [Mass deploy the mobile app for user-based authentication](warehouse-app-intune-user-based.md).
+
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you have many devices to manage. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 
-This article explains how to mass deploy the Warehouse Management mobile app by using Intune.
+This article explains how to mass deploy the Warehouse Management mobile app for service-based authentication by using Microsoft Intune.
 
 ## Prerequisites
 
@@ -208,7 +211,7 @@ Obtain a self-signed PFX certificate (.pfx file) either through the Windows Serv
 Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
-1. From the **Home** page, go to **Manage Azure Active Directory**.
+1. From the **Home** page, go to **Manage Microsoft Entra ID**.
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:

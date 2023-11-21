@@ -19,6 +19,47 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.19.0
+
+### New features introduced in version 2.1.19.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- The Wi-Fi screen is now correctly hidden in all contexts.
+- Fields on the details card are now sorted by priority.
+- The empty confirmation label on the details card is now hidden.
+- Translations have been updated.
+- Telemetry is now available in China.
+- The app can now scan the pipe character (|) correctly as a separator.
+- New icons are now provided for action buttons.
+- The worklist and inquiry cards now have full text accessibility pop-ups.
+- Pressing the escape key while entering vendor batches no longer causes the app to crash. 
+- The about screen now shows the latest version correctly.  
+- The app no longer crashes on Android devices that lack of a preinstalled browser. 
+
+## Version 2.1.17.0
+
+### New features introduced in version 2.1.17.0
+
+This version of the Warehouse Management mobile app introduces the following new features:  
+
+- Support for multi-level detour.
+- Support for password fields on the custom page.
+- A warning message about the deprecation of the certificate and the client's secret.
+- Updated and improved the **About** page.
+
+### New fixes and improvements in version 2.1.17.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed the bug that prevented the Wi-Fi screen from being hidden.
+- Resolved the bug causing accessibility tooltips to appear on Windows unexpectedly.  
+- Fixed issues related to configuration mode.
+- Resolved the bug that prevents hiding the step instructions screen.
+- Corrected a localization bug on the calculator screen, which caused inconsistencies between commas and dots on some locales.
+
 ## Version 2.1.15.0
 
 ### New features introduced in version 2.1.15.0
@@ -60,7 +101,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 ### New authentication method added in version 2.1.12.0
 
-The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+The Warehouse Management mobile app can now use *device code flow* authentication to connect to Supply Chain Management. This new authentication method simplifies the authentication process because it doesn't require users to manage certificates or client secrets. See also [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
 ### New fixes and improvements in version 2.1.12.0
 

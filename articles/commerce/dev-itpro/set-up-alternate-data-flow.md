@@ -32,7 +32,7 @@ The following illustration depicts an alternate dataflow, where the entity store
 
 ## Assumptions
 
-- This article assumes that you've already enabled the recommendations service for your environment. For more information, see [Enable product recommendations](../enable-../product-recommendations.md).
+- This article assumes that you've already enabled the recommendations service for your environment. For more information, see [Enable product recommendations](../enable-product-recommendations.md).
 - When you're working with files and folders in the Microsoft Azure Data Lake storage account:
 
     - You can use either the Azure web portal interface or the Azure Storage Explorer application.

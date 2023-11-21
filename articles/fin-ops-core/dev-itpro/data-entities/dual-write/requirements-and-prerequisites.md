@@ -2,21 +2,21 @@
 title: System requirements and prerequisites
 description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: NHelgren
-ms.date: 05/31/2023
+ms.date: 10/10/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
+<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD025 -->
 # System requirements and prerequisites
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 ## What regions are available?
 
@@ -37,13 +37,12 @@ Currently, we support dual-write in the following regions:
 + United Kingdom
 + United States
 
-
 > [!NOTE]
 > There are currently no plans to support more regions.
 
 ## Verify requirements and grant access
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a finance and operations app environment to a Dataverse environment.
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a finance and operations app environment to a Microsoft Dataverse environment.
 
 You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
@@ -59,9 +58,9 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     *Dual Write is supported on finance and operations app environments with Platform Update PU 33 (App version 10.0.9) or later*
 
-3. Grant Dataverse access so that it can connect to a finance and operations app.
+2. Grant Dataverse access so that it can connect to a finance and operations apps.
 
-    1. Open your instance of the finance and operations app, search and navigate to Azure Active Directory applications.
+    1. Open your instance of the finance and operations app, search and navigate to Microsoft Entra ID applications.
 
     2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that is used to connect from Dataverse to the finance and operations app.
     3. On the new row for the client, select an application user that is enabled and has the appropriate privileges for dual-write data management.
@@ -78,7 +77,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with ID 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
-4. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
+3. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
     + **Applications**: Add users to the following applications. The application users must be assigned to a security role that has **Create**, **Read**, **Write**, and **Delete** permissions on all tables in Microsoft Dataverse configured for dual-write.
 
@@ -108,7 +107,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     > [!NOTE]
     > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
 
-5. Provide app consent in the tenant.
+4. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or later, this step is no longer needed.
 
     **Related health check result:**<br>
@@ -117,35 +116,35 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App ID: 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b*
 
-7. Install **Dual-write application solutions**.
+5. Install **Dual-write application solutions**.
 
-    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover master data scenarios like
-    
+    In Power Apps, in the left pane, select **Solutions**. Select **Open AppSource**, and search for packages namely [Dual-write Application Core solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwappcore?tab=Overview), [Dual-write Human Resources solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcm_dualwrite?tab=Overview), [Dual-write Supply Chain solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwscm?tab=Overview), [Dual-write Finance solution](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dwfne?exp=kyyw&tab=Overview), [Dual-write Notes solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwnotessln?tab=Overview), [Dual-write Asset Management solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwassetmanagement?tab=Overview), and [Dual-write party and global address book solution](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln?tab=Overview). These solutions cover primary data scenarios like:
+
     + Customers, products, and vendors.
     + End-to-end process flows like quote to cash.
     + On-demand functions like pricing, inventory, ATP dates.
     + Reference data for ledger, tax, payment terms, and schedules etc.
 
-    Follow the [prerequisites instructions](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it. 
-     
-    The dual-write framework is extensible and accommodates customer-centric business data exchange through a few more clicks.
-    
+    Follow the [prerequisites instructions](separated-solutions.md) to find the solution you're looking for. Select the solution, and follow the prompts to import it.
+
+    The dual-write framework is extensible and accommodates customer-centric business data exchange through a few more select.
+
     > [!NOTE]
-    > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
+    > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments.
     > It may take a few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
-8. Uninstall the Prospect to Cash (P2C) solution.
+6. Uninstall the Prospect to Cash (P2C) solution.
 
     The P2C solution doesn't work concurrently with dual-write. Therefore, don't install the P2C solution. If it's already installed, you must uninstall it before you enable dual-write.
 
-9. Provide the supported tenant configuration.
+7. Provide the supported tenant configuration.
 
     Make sure that the finance and operations app and Dataverse are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
     > [!NOTE]
-    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and steps. 
+    > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and steps.
 
-**For dual-write core solution lower than version 1.0.16.0 only**
+### For dual-write core solution lower than version 1.0.16.0 only
 
 1. In step 3b, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
 2. Add app consent in the tenant:
@@ -158,7 +157,6 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
         By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Dataverse requires this app to communicate with the finance and operations app.
 
-    
     **Related health check result:**<br>
     *Apps in tenant*<br>
     *The required dual-write applications need to be installed in the tenant.<br>
@@ -170,4 +168,3 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 [Use the dual-write wizard to link your environments](link-your-environment.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

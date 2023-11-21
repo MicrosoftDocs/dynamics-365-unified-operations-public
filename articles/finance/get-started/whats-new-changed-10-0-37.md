@@ -46,7 +46,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
 | Accounts payable | Default option for Approved by field in the Invoice register | This feature lets administrators control the mandatory status of the **Approved by** field on the invoice register. The field can be set as optional when formal approval isn't required in the invoice register's business process. |
-|Tax and audit regulatory reporting|VAT declaration of Denmark direct submission to the Danish Tax Agency|This feature allows direct submission of VAT returns in XML format to the Danish Tax Agency. For more information, see [Submit a VAT return in XML format to the Danish Tax Agency]( ../localizations/emea-dnk-vat-declaration-submission.md).|
+|Tax and audit regulatory reporting|VAT declaration of Denmark direct submission to the Danish Tax Agency|This feature allows direct submission of VAT returns in XML format to the Danish Tax Agency. For more information, see [Submit a VAT return in XML format to the Danish Tax Agency]( ../localizations/denmark/emea-dnk-vat-declaration-submission.md).|
 
 ## Feature enhancements included in this release
 
@@ -67,7 +67,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-37.md)
+Dynamics 365 Finance version 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md)
 
 ### Bug fixes
 

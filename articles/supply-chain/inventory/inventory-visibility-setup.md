@@ -68,12 +68,12 @@ If you have any questions about these prerequisites, contact the Inventory Visib
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
-Before you install the add-in, register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
+Before you install the add-in, register an application and add a client secret to Microsoft Entra under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
 
 > [!IMPORTANT]
-> If you have more than one Lifecycle Services environment, create a different Azure AD application for each of them. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the last installation will be valid.
+> If you have more than one Lifecycle Services environment, create a different Microsoft Entra application for each of them. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the last installation will be valid.
 
-After you register an application and add a client secret to Azure AD, follow these steps to install the Inventory Visibility Add-in.
+After you register an application and add a client secret to Microsoft Entra ID, follow these steps to install the Inventory Visibility Add-in.
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/Logon/Index).
 1. On the home page, select the project where your environment is deployed.
@@ -93,8 +93,8 @@ After you register an application and add a client secret to Azure AD, follow th
 1. In the list, select **Inventory Visibility**.
 1. Set the following fields for your environment:
 
-    - **AAD application (client) ID** – Enter the Azure AD application ID that you created and made a note of earlier.
-    - **AAD tenant ID** – Enter the tenant ID that you made a note of earlier.
+    - **Microsoft Entra application (client) ID** – Enter the Microsoft Entra application ID that you created and made a note of earlier.
+    - **Microsoft Entra tenant ID** – Enter the tenant ID that you made a note of earlier.
 
     ![Setup add-in page](media/inventory-visibility-setup.png "Setup add-in page")
 

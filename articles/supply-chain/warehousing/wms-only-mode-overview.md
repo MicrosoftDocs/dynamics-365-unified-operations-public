@@ -1,5 +1,5 @@
 ---
-title: Warehouse management only mode overview
+title: Warehouse management only mode overview (preview)
 description: This article provides information about Warehouse management only mode, which enables the integration of warehouse management (WMS) functionality in Microsoft Dynamics 365 Supply Chain Management with external enterprise resource planning (ERP) and order management systems.
 author: perlynne
 ms.author: perlynne
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Warehouse management only mode overview
+# Warehouse management only mode overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -22,6 +22,8 @@ ms.custom: bap-template
 *Warehouse management only mode* lets you take advantage of the core warehouse management (WMS) functionality that Microsoft Dynamics 365 Supply Chain Management offers while you also continue to take advantage of your existing investments in third-party enterprise resource planning (ERP) and order management systems. Regardless of the ERP or ordering systems that you have in place, you can now quickly deploy our advanced WMS functionality without having to set up or maintain areas of Supply Chain Management that you don't need. You're then ready to benefit from advanced WMS features such as automation integration, carrier integration, and the Warehouse Management mobile app.
 
 The integration of Supply Chain Management WMS functionality with external ERP and ordering systems is made possible by lightweight source documents that are dedicated to inbound and outbound shipment orders. Because these documents focus exclusively on warehouse management, they can replace multiple types of more general-purpose documents (such as sales orders, purchase orders, and transfer orders) from a pure warehouse management perspective.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Deployment options
 
@@ -66,7 +68,7 @@ Here's a high-level description of the outbound process:
 1. An external system submits an *outbound shipment order* message.
 1. Supply Chain Management processes the message in Warehouse management only mode and creates orders.
 1. Inventory reservations are created either manually or automatically (depending on your configuration).
-1. The orders are released for further warehouse processing, either manually or automatically.
+1. The orders are released for further warehouse processing, either manually or automatically. If you're using outbound load planning processes, you can create loads by using the outbound load planning workbench before you release the orders.
 1. Depending on the setup of your [wave template](wave-templates.md) definitions, warehouse work might be created and released immediately.
 1. The outbound warehouse work is processed, and the status of the related outbound shipment order line transactions is updated to *Picked*.
 1. The loads are outbound ship confirmed. As a result, *business events* and a [*shipment packing slip*](wms-only-mode-using.md#shipment-packing-slips) are created for the external system.
@@ -77,16 +79,14 @@ For a more detailed description of this process and the related processes, see [
 
 ## Unsupported processes
 
-<!-- Review: Slotting, QMS, x-docking -->
 The following high-level processes aren't supported out of the box when Supply Chain Management is integrated with external systems.
 
 | Process | Description |
 |---|---|
 | Return order processing with disposition codes | When you use the inbound shipment orders that are related to an inbound return process, you can't use the process that's used by [sales return orders](sales-returns.md). That process supports return reason codes and disposition codes as part of the flow for the **Return order receiving (and put away)** mobile device menu item. |
-| Cross-docking | Inbound and outbound shipment orders can't yet be used with [planned cross-docking](planned-cross-docking.md) or [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md). |
 | Inbound Warehouse Management mobile app flows | The Warehouse Management mobile app flows for inbound shipment orders don't support [goods in transit](../landed-cost/in-transit-processing.md#warehouse-management), where the receiving process is handled against a container. |
-| Production flows | Inbound and outbound shipment orders don't support production order, batch order, and kanban processing, including material consumption and reporting as finished via the Warehouse Management mobile app. |
-| Outbound load planning with release to the warehouse from loads | The current release of Warehouse management only mode doesn't provide out-of-box support for associating outbound shipment order lines with loads before the [release to warehouse](release-to-warehouse-process.md) process. This association can be made only when warehouse waves are processed. Therefore, Supply Chain Management Transportation management integration isn't supported out of the box. |
+| Production flows | Inbound and outbound shipment orders don't support production order, batch order, or kanban processing, including material consumption and reporting as finished via the Warehouse Management mobile app. In addition, you can't use [cross-docking from production orders to outbound docks](../production-control/cross-docking-opportunities.md) in combination with inbound and outbound shipment orders. |
+| Transportation management processes | The transportation management engines that are currently supported for the purchase and sales orders aren't supported for the inbound and outbound shipment order processes. Therefore, Supply Chain Management Transportation management integration isn't supported out of the box. |
 | Creation of orders from the warehouse app | The process of creating outbound shipment orders from the Warehouse Management mobile app isn't supported. (That process resembles the *Create transfer order from license plates* process for mobile devices.) |
 | Internal order processing information that's provided to external systems | When you're using the supported orders in Supply Chain Management (such as transfer, sales, purchase, and production orders), all the related business process data is automatically maintained in Supply Chain Management. However, no business events or related inbound and outbound on-hand information is provided to external systems for these types of processes. For example, if you create a transfer order, ship inventory out of one warehouse, and receive it in another warehouse in Supply Chain Management, you can't use the method that's described for inbound and outbound shipment orders to inform the external systems about the operations. You must use a different method. |
 | [Order-committed reservations](flexible-warehouse-level-dimension-reservation.md) as part of the *allow reservation on demand order* capability | *Outbound shipment order line* transaction reservations don't support reservations on inventory dimensions below the location in the reservation hierarchy. (However, these reservations are supported for *Sales order line* transactions.) |

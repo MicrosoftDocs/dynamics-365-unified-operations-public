@@ -46,7 +46,10 @@ Detailed information about objects in finance and operations apps can be found i
 | **Reason for deprecation/removal** | The SHA1 algorithm has been widely recognized as vulnerable to security breaches due to its susceptibility to collision attacks. To address this security requirement, imports for ISV licenses that are generated using the SHA1 cryptographic algorithm are longer supported. |
 | **Replaced by another feature?**   | SHA256 - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure SHA256 algorithm for generating ISV licenses. 
 
-Migrating to SHA256 is straightforward: You need to use signature version 2 or keep this field empty while generating license using AxUtil tool to generate a new license using SHA256. For more information, see [Independent software vendor (ISV) licensing](../../dev-itpro/dev-tools/isv-licensing.md). |
+Migrating to SHA256 is straightforward: You need to use signature version 2 or keep this field empty while generating license using AxUtil tool to generate a new license using SHA256. For more information, see [Independent software vendor (ISV) licensing](../../dev-itpro/dev-tools/isv-licensing.md). 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
 | **Product areas affected**         | System Administration  |
 | **Deployment option**              | All |
 | **Status**                         | Support for SHA1 is removed by February 2024 (10.0.39/PU63) |
