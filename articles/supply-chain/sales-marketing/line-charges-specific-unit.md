@@ -1,5 +1,5 @@
 ---
-title: Units of measure for line-level charges
+title: Units of measure for line-level charges (preview)
 description: This article describes how to set up line charges based on specific units and unit matches. This capability applies to both sales orders and purchase orders.
 author: Henrik Andersen
 ms.author: henrikan
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Units of measure for line-level charges
+# Units of measure for line-level charges (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -25,6 +25,8 @@ All line-level auto charges and line charges include a **Category**, which contr
 - *Specific unit match* – The auto charge is defined using a specific unit (such as *ea*) but the system applies that charge to lines that use that same exact unit. So, for example, you could set up a charge such that, when the item is sold in smaller units (such as ea), a line charge is added. However for orders specified using larger units (such as cases), there's no line charge.
 
 The *Specific unit* and *Specific unit match* categories are supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines. Because both options apply to both sales orders and purchase orders, they're also supported for intercompany trade.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## Prerequisites
 
