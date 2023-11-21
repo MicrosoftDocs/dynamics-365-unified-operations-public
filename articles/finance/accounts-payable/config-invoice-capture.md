@@ -37,8 +37,8 @@ After the Invoice capture solution is installed, default configurations for usin
 
 1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
 
-> [!NOTE]
-> In a future release, invoices with more complex layouts, customers can create their own custom prebuilt models. After a model is published, additional mapping is required to map the model fields to the invoice files. 
+    > [!NOTE]
+    > In a future release, customers can create their own custom prebuilt models to handle invoices that have more complex layouts. After a model is published, additional mapping is required to map the model fields to the invoice files.
 
 2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
 3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
@@ -77,7 +77,7 @@ In invoice capture processing, different derivation rules are applied to ensure 
 **Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. 
 
 > [!NOTE]
-> This behavior is different from the behavior that is defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
+> This behavior differs from the behavior that's defined in the flow behind the channel. In that flow, files that don't meet the criteria aren't received.
 
 After the Invoice capture solution is installed, a default file filter is provided. This file filter is global. If you want a different filter setting, you can create a file filter and update the default filter.
 
@@ -111,24 +111,20 @@ Invoice capture processing requires two basic data types to classify invoices: l
 
 In the **Manage legal entities** process, users can't manually create legal entities. Instead, you must sync the legal entities by following these steps.
 
-1. Go to **Setup \> System setup \> Manage legal entities**.
+1. Go to **Setup** \> **System setup** \> **Manage legal entities**.
 2. Select **Sync**.
 3. In the confirmation message box, select **OK**.
 
 After synchronization is completed, a message shows the number of new legal entities. The list view is automatically refreshed to show the new legal entities.
 
 ### Sync vendors
- In **Manage vendors**, there are three options to sync the vendor accounts:
- 1. **Sync all** - all vendor accounts are synced. This will potentially cause a performance issue.
- 2. **Sync by legal entity** - The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
- 3. **Sync by selection** - Administrators can search and select one or multiple vendors and sync the selected vendor.
+In **Manage vendors**, there are three options to sync the vendor accounts:
+
+- **Sync all** – all vendor accounts are synced. This will potentially cause a performance issue.
+- **Sync by legal entity** – The administrator can select one or multiple legal entities and sync the vendors in the selected legal entities.
+- **Sync by selection** – Administrators can search and select one or multiple vendors and sync the selected vendors.
     
-An Accounts Payable administrator can initiate the vendor synchronization manually or in real-time. To enable real-time synchronization, go to:
-1. In Dynamics 365 Finance, **Accounts payable > Setup > Invoice capture**.
+An Accounts payable administrator can initiate the vendor synchronization manually or in real time. To enable real-time synchronization, follow these steps.
+
+1. In Dynamics 365 Finance, go to **Accounts payable** \> **Setup** \> **Invoice capture**.
 2. Select the **Sync all vendors** checkbox next to the onboarded legal entity.
-
-
-
-
-
-
