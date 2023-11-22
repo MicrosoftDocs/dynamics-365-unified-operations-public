@@ -64,7 +64,7 @@ To work through this and the other scenarios in this article using the demo reco
 
 ### Create sample auto charges
 
-To apply a charge set as compound, you must first set up the auto charge. Use the following procedure to crate an example auto charge (for more information about these settings, see [Automatic application of charges](automatic-charges-allocation.md)).
+To apply a charge set as compound, you must first set up the auto charge. Use the following procedure to crate an example auto charge (for more information about these settings, see [Automatic application of charges](../procurement/automatic-charges-allocation.md)).
 
 1. Go to **Accounts receivable \> Charges setup \> Auto charges**.
 1. On the list pane, set **Level** to *Header*.
