@@ -99,6 +99,18 @@ Some additional parameters must be configured directly in Finance.
 
 Please do the configuration steps described in the [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md) article starting from the  [Configure parameters](../norway/emea-dnk-e-invoices.md#configure-parameters) section.
 
+### Seller identification
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**,  and select a customer.
+2. On the **Bank account information** FastTab, in **Codes** section, **Routing number** field, make sure that a valid Legal Entity CVR number is defined here.
+3. The CVR number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
+
+### Buyer identification
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's [Global Location Number (GLN)](https://en.gs1.dk/services/gln) is defined here.
+3. The GLN number will be populated to **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Buyer's identification during the submission process.
+
 ### Configure output format type
 
 By default all outgoing electronic invoices will be generated in **OIOUBL** format for all customers. User can configure generation of electronic invoices in **PEPPOL** format for specific customers using configurable electronic document property types.
