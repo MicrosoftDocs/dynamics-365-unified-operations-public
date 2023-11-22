@@ -290,8 +290,7 @@ The following scenario illustrates the effects of this setting:
     1. On the **Sales order lines** FastTab, add an order line for any item and edit the **Quantity** and **Unit price** fields to make sure the line **Net amount** is 100 USD.
     1. On the Action Pane, select **Save**.
 1. Repeat the previous step to create a second, identical sales order.
-1. Pick and pack both sales orders. <!--KFM: **lots** of steps are missing here. Is this ok? -->
-
+1. If this were a real warehouse, warehouse workers would now pick and pack both sales orders and register their work using the Warehouse Management mobile app. However, these steps aren't necessary to continue working through this example scenario.
 1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. Find and select the two new sales orders.
 1. On the Action Pane, open the **Invoice** tab and, from the **Generate** group, select **Invoice**.
 1. In the **Posting invoice** dialog, set **Summary update for** to *Invoice account*.
