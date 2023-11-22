@@ -494,7 +494,7 @@ The *Unreserve* API serves as the reverse operation for [*Reservation*](#create-
 
 ### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
 
-When a reservation is created, a `reservationId` will be included in the response body. You must provide the same `reservationId` to cancel the reservation, and include the same `organizationId` and `dimensions` used for the reservation API call. Finally, specify an `OffsetQty` value that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on the specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
+When a reservation is created, a `reservationId` will be included in the response body. You must provide the same `reservationId` to cancel the reservation, and include the same `organizationId`, `productId` and `dimensions` used for the reservation API call. Finally, specify an `OffsetQty` value that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on the specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
 
 ```txt
 Path:
@@ -510,6 +510,7 @@ Body:
     {
         id: string,
         organizationId: string,
+        productId: string,
         reservationId: string,
         dimensions: {
             [key:string]: string,
@@ -524,6 +525,7 @@ The following code shows an example of body content.
 {
     "id": "unreserve-0",
     "organizationId": "SCM_IV",
+    "productId": "iv_postman_product",
     "reservationId": "RESERVATION_ID",
     "dimensions": {
         "siteid":"iv_postman_site",
@@ -574,6 +576,7 @@ Body:
         {
             id: string,
             organizationId: string,
+            productId: string,
             reservationId: string,
             dimensions: {
                 [key:string]: string,
