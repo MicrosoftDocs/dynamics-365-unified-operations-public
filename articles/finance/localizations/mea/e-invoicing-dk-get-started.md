@@ -31,7 +31,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
   > [!IMPORTANT]
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable submission and reception of electronic invoices generated in Microsoft D365 Finance.
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV connector. For more information, see [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md)
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -69,18 +69,13 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **OIOUBL Sales invoice processing** feature setup, and then select **Edit**.
-5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **QQQQ ISV connector QQQQ** action.
-6. In the **Parameters** section, select **ServiceID**, and then select the name of the secret that you previously created for the legal entity's Service ID.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with Edicom** action.
+6. In the **Parameters** section, select **ServiceI D**, and then select the name of the secret that you previously created for the legal entity's Service ID.
 7. Select **Group ID**, and then select the name of the secret that you previously created for the legal entity's Group ID.
 8. Select **Token**, and then select the name of the secret that you created for the token.
-9. Select **Service URI**, and make sure that a valid URI is configured. QQQQ !!!!!!!!!!!!!!!!!!!  QQQQQQQQ.
-10. I
-11. I.
-12. Select **Save**, and close the page.
-13. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setup, and then select **Edit**.
-14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid legal entity code is configured in the **Value** column.
-15. Select **Save** (if you made any changes), and close the page.
-16. Repeat steps 5 through 13 for the following feature setups if your business process assumes involvement of the related types of documents:
+9. Repeat steps 5 through 8 for the **Waiting for response from Edicom** action.
+10. Select **Save**, and close the page.
+11. Repeat steps 4 through 9 for the following feature setups if your business process assumes involvement of the related types of documents:
   
    - OIOUBL Sales credit note processing
    - OIOUBL Project invoice processing
@@ -89,9 +84,6 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
    - Peppol Sales credit note processing
    - Peppol Project invoice processing
    - Peppol Project credit processing
-
-
-Configure the ISV connector [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md):
 
 ## Finance configuration
 
