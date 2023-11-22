@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 11/09/2023
+ms.date: 11/22/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -22,7 +22,7 @@ ms.custom: bap-template
 All line-level auto charges and line charges include a **Category**, which controls how and where the charge applies. Among the available **Category** values are *Specific unit* and *Specific unit match*. These categories let you set up and apply line charges specific to the unit of measure for a line item that is either sold or purchased. They work as follows:
 
 - *Specific unit* – The auto charge is defined using a specific unit (such as *ea*) and the system converts from other units proportionally if a conversion factor is available. So, for example, if a sales line is for an item where a box is defined as containing 10 ea, and there's a charge of 2 USD per ea, and a sales line is for 2 boxes, then that sales line would result in a charge for 40 USD (2 boxes &times; 10 ea/box &times; 2 USD/ea = 40 USD). If no conversion factor is available, then the charge isn't applied.
-- *Specific unit match* – The auto charge is defined using a specific unit (such as *ea*) but the system applies that charge to lines that use that same exact unit. So, for example, you could set up a charge such that, when the item is sold in smaller units (such as ea), a line charge is added. However for orders specified using larger units (such as cases), there's no line charge.
+- *Specific unit match* – The auto charge is defined using a specific unit (such as *ea*) but the system applies that charge to lines that use that same exact unit. So, for example, you could set up a charge such that, when the item is sold in smaller units (such as *ea*), a line charge is added. However for orders specified using larger units (such as cases), there's no line charge.
 
 The *Specific unit* and *Specific unit match* categories are supported for sales quotation lines, sales order lines, purchase requisition lines, request for quotation lines, and purchase order lines. Because both options apply to both sales orders and purchase orders, they're also supported for intercompany trade.
 

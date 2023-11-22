@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 11/08/2023
+ms.date: 11/22/2023
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -27,16 +27,16 @@ The **Procurement and sourcing parameters** page has a few settings that are esp
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. Open the **Prices** tab.
 1. On the **Prices** FastTab, make the following settings:
-    - **Find auto charges for header** – Specifies whether charges should automatically be applied for purchase order headers. Set this to *Yes* to use automatic application of charges.
-    - **Find auto charges for line** – Specifies whether charges should automatically be applied for purchase order lines. Set this to *Yes* to use automatic application of charges.
+    - **Find auto charges for header** – Specifies whether charges should automatically be applied for purchase order headers. Set this option to *Yes* to use automatic application of charges.
+    - **Find auto charges for line** – Specifies whether charges should automatically be applied for purchase order lines. Set this option to *Yes* to use automatic application of charges.
 
 The **Accounts receivable parameters** page also has a few settings that are especially relevant when you want to apply charges automatically. To complete this setup, follow these steps.
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
 1. On the **Prices** FastTab, make the following settings:
-    - **Find auto charges for header** – Specify whether charges should automatically be applied for sales quotation and sales order headers. Set this to *Yes* to use automatic application of charges.
-    - **Find auto charges for line** – Specify whether charges should automatically be applied for sales quotation and sales order lines. Set this to *Yes* to use automatic application of charges.
+    - **Find auto charges for header** – Specify whether charges should automatically be applied for sales quotation and sales order headers. Set this option to *Yes* to use automatic application of charges.
+    - **Find auto charges for line** – Specify whether charges should automatically be applied for sales quotation and sales order lines. Set this option to *Yes* to use automatic application of charges.
 
 ## Set up charges codes
 
@@ -83,7 +83,7 @@ To create charge groups for purchase orders, follow these steps.
 
 1. On the Action Pane, select **Save**.
 1. Go to **Procurement and sourcing \>  Vendors \> All vendors**, and either open an existing vendor or create a new vendor.
-1. On the **Purchase order defaults** FastTab, in the **Purchase order** section, set the **Charges group** field to the charge group that you just created.
+1. On the **Purchase order defaults** FastTab, in the **Purchase order** section, set the **Charges group** field to the charge group that you created.
 
 ### Charge groups for sales orders
 
@@ -97,7 +97,7 @@ To create charge groups for sales orders, follow these steps.
 
 1. On the Action Pane, select **Save**.
 1. Go to **Accounts receivable \> Customers \> All customers**, and either open an existing customer or create a new customer.
-1. On the **Sales order defaults** FastTab, in the **Sales order** section, set the **Charges group** field to the charge group that you just created.
+1. On the **Sales order defaults** FastTab, in the **Sales order** section, set the **Charges group** field to the charge group that you created.
 
 ## Define auto charges
 
@@ -144,11 +144,11 @@ After your charges codes are set up, follow these steps to define the auto charg
     - **Category** – Select one of the following values:
 
         - *Fixed* – The charge is entered as a fixed amount on the line. Fixed charges can be used on charges both in the order header and on the order lines.
-        - *Pcs* – The charge is based on the unit. These charges can be used only on order lines. They will appear when you calculate the order total. This category only applies for **Level** *Line*.
+        - *Pcs* – The charge is based on the unit. These charges can be used only on order lines. They'll appear when you calculate the order total. This category only applies for **Level** *Line*.
         - *Percent* – The charge is entered as a percentage on the line. Percentage charges can be used on charges both in the order header and on the order lines.
         - *Intercompany percent* – The charge is entered as a percentage on the line for intercompany orders. Intercompany percentage charges can be used only on order lines.
-        - *External* – The charge is calculated by a third-party service that is associated with one or more shipping carriers.
-        - *Specific unit* – The charge value is expressed by the unit of measure in the charge line. It is applied proportionally to the sales line unit of measure using unit of measure conversion. This category only applies for **Level** *Line*
+        - *External* – A third-party service that is associated with one or more shipping carriers will calculate the charge.
+        - *Specific unit* – The charge value is expressed by the unit of measure in the charge line. It's applied proportionally to the sales line unit of measure using unit of measure conversion. This category only applies for **Level** *Line*
         - *Specific unit match* – The charge value is expressed by the unit of measure in the charge line. The sales line unit of measure must match the unit on for the charge line to be applied. No unit of measure conversion is applied. This category only applies for **Level** *Line*.
 
     - **Unit** – Enter the unit that applies when the **Category** is *Specific unit* or *Specific unit match*.
