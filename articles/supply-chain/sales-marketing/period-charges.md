@@ -1,7 +1,7 @@
 ---
 title: Period charges (preview)
 description: Period charges let you charge customers when a collection of orders invoiced over a specified period failed to meet certain criteria. The feature supports setting up  period charge rules that identify such invoices and define applicable charges.
-author: Henrik Andersen
+author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
@@ -117,12 +117,12 @@ To calculate period charges and generate free text invoice lines for customers w
 The *Calculate period charge* job creates one or more free text invoices when shortfalls are found. Follow these steps to get more information about free text invoices that were created by period charge calculations.
 
 1. Go to  **Accounts receivable \> Invoices \> All free text invoices**.
-1. Select the free text invoice you want to inspect and select **Edit**. <!--KFM: Is this right? -->
-1. Select the free text invoice line you want to inspect and then select **Line invoice base**. <!--KFM: Where is this command? I couldn't confirm the rest of this. Can I see a demo? -->
-1. Expand the **Period charge rule** line fast tab, to see details about the period charge rule that crated this free text line.  
-1. Expand the **Lines** fast tab to see a summary of the invoice and sales order transactions included in the period charge evaluation for this free text line.
+1. Open the free text invoice you want to inspect.
+1. Select the free text invoice line you want to inspect and then select **Line invoice base** from the **Invoice lines** toolbar. (The **Line invoice base** page is only visible for free text invoices created as a result of a period charge calculation.)
+1. Expand the **Period charge rule** line FastTab to see details about the period charge rule that created this free text invoice line.  
+1. Expand the **Lines** FastTab to see a summary of the invoice and sales order transactions included in the period charge evaluation for this free text invoice line.
 
-To get more information about free text invoice, see Create a free text invoice. <!--KFM: Do you have a link in mind? I couldn't find a good one. -->
+For more information about free text invoice, see [Create a free text invoice](../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
 ## Period charge rule example scenarios
 

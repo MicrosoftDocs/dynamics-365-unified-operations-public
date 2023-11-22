@@ -1,7 +1,7 @@
 ---
 title: Units of measure for line-level charges (preview)
 description: This article describes how to set up line charges based on specific units and unit matches. This capability applies to both sales orders and purchase orders.
-author: Henrik Andersen
+author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
@@ -117,7 +117,6 @@ The charges can now be applied automatically to a sales quotation line or sales 
     - Because you're now ordering a total of two dozen items, and the system is configured to convert 1 dz to 12 ea, it knows the order line is for 24 ea. There's a *Specific unit* charge of 2 USD per ea, so this charge is 24 ea &times; 2 USD/ea = 48 USD.
     - The total charge for the line combines both charges, which is 10 USD &plus; 48 USD = 58 USD.
 
-<!-- KFM: I removed the section "Working with specific unit and specific unit match on an order line" because it seems redundant with the above. OK? -->
 ## Pricing management
 
 The features described in this article work together with the [Pricing management module](../pricing-management/pricing-management-overview.md). Pricing management introduces changes to the setup and search of auto charges and therefore also changes some of the behavior described in this article. When the Pricing management module is [enabled](../pricing-management/pricing-management-enable.md), then charges set up under **Accounts receivable \> Charges setup** don't apply. Instead, only those charges set up on the auto charges page specific to the Pricing management module apply for sales orders and sales quotations. To set up auto charges in Pricing management, go to **Pricing management \> During-sales pricing \> Charges setup \> Auto charges**.

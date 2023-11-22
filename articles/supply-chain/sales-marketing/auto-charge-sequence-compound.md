@@ -18,7 +18,6 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 <!--KFM: Preview until 10.0.38 GA -->
-<!--KFM: NOTE: I moved this and the other two new topics to the sales folder and also listed them only under sales in the TOC. Agree? -->
 
 Advanced auto charges let you apply specific charges to order headers and order lines based on which customer you're working with and/or which items you're selling. For sales quotations and sales orders, you can also choose to compound header charges.
 
@@ -293,11 +292,13 @@ The following scenario illustrates the effects of this setting:
 1. If this were a real warehouse, warehouse workers would now pick and pack both sales orders and register their work using the Warehouse Management mobile app. However, these steps aren't necessary to continue working through this example scenario.
 1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. Find and select the two new sales orders.
 1. On the Action Pane, open the **Invoice** tab and, from the **Generate** group, select **Invoice**.
-1. In the **Posting invoice** dialog, set **Summary update for** to *Invoice account*.
+1. In the **Posting invoice** dialog, expand the **Parameters** FastTab and set **Summary update for** to *Invoice account*.
 1. On the dialog toolbar, select **Arrange**.
 1. Select **OK**.
+1. Select one of the two sales orders. On the Action Pane open the **Invoice** tab and, from the **Journals** group, select **Invoice**.
+1. The invoice opens. On the Action Pane, select **Charges**.
 
-    Notice that the header charges are calculated for each sales order. For each sales order, a header charge of 100 USD + 2% compound (2% of the line amount (100 USD) &plus; 2% of the fixed charge (100 USD)) is applied, resulting in 2 &times; 104 = 208 USD in total charges for the invoice. <!--KFM: Where do I look to notice this? I just went back to the sales orders list. -->
+    The header charges have been calculated for each sales order. For each sales order, a header charge of 100 USD + 2% compound (2% of the line amount (100 USD) &plus; 2% of the fixed charge (100 USD)) is applied, resulting in 2 &times; 104 = 208 USD in total charges for the invoice.
 
 1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab and, on the **Charges** FastTab, make the following settings:
@@ -309,12 +310,14 @@ The following scenario illustrates the effects of this setting:
 1. In the **Posting invoice** dialog, set **Summary update for** to *Invoice account*.
 1. On the dialog toolbar, select **Arrange**.
 1. Select **OK**.
+1. Select one of the two sales orders. On the Action Pane open the **Invoice** tab and, from the **Journals** group, select **Invoice**.
+1. The invoice opens. On the Action Pane, select **Charges**.
 
-    Notice that the header auto charges have been re-searched and reapplied per invoice. The customer will be debited just one instance of the fixed auto charge of 100 USD instead of two instances because the charge is now applied per invoice instead of per sales order. The total calculated charge for the invoice is one header fixed charge of 100 USD + 2% compound (2% of the total line amounts (100 USD &plus; 100 USD) &plus; 2% of the fixed charge (100 USD)) = 106 USD in total charges.
+    The header auto charges have been re-searched and reapplied per invoice. The customer will be debited just one instance of the fixed auto charge of 100 USD instead of two instances because the charge is now applied per invoice instead of per sales order. The total calculated charge for the invoice is one header fixed charge of 100 USD + 2% compound (2% of the total line amounts (100 USD &plus; 100 USD) &plus; 2% of the fixed charge (100 USD)) = 106 USD in total charges.
 
     With this setup, the fixed auto charge is only applied once (per invoice) and the percentage-based charge set to compound is calculated from a value base that is 100 USD lower compared to header charges calculated per sales order.
 
-1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**. 
+1. Go back to **Sales and Marketing \> Sales orders \> All sales orders**.
 1. Select the first of your two new sales orders. On the Action Pane, open the **Sell** tab and, from the **Charges** group, select **Maintain charges**. Note the charges shown and then do the same for the second new sales order.
 
     Notice that, as part the combining charges on combined invoices, the auto charges are now only present on the first sales order. This is by intent to ensure that the combining of charges on combined invoices provides the correct charge calculation.
@@ -336,7 +339,7 @@ The lack of compounding and sequencing support for purchase orders affects inter
 
 ### Prorate and summary updates
 
-Header charges can be set to *prorate*. <!--KFM: How/where? --> The ability to re-search on posting and to combine charges on combined invoices prevents fixed charges from auto charges from being duplicated. Combining charges on combined invoices isn't supported for header charges set to prorate. That means that prorate header charges that are applied in a summary-update scenario will always be re-searched and calculated based on the individual sales orders, not combined.
+Header charges can be assigned a charges code that is set to *prorate*. The ability to re-search on posting and to combine charges on combined invoices prevents fixed charges from auto charges from being duplicated. Combining charges on combined invoices isn't supported for header charges set to prorate. That means that prorate header charges that are applied in a summary-update scenario will always be re-searched and calculated based on the individual sales orders, not combined.
 
 ### Tiered charge and summary updates
 

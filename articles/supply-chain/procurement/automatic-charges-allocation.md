@@ -1,7 +1,7 @@
 ---
 title: Automatic application of charges
 description: The charges feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
-author: Henrik Andersen
+author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:

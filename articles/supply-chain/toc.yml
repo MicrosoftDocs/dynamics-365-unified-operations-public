@@ -2363,6 +2363,8 @@
           href: procurement/tasks/create-purchase-agreement.md
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
+        - name: Units of measure for line-level charges (preview)
+          href: sales-marketing/line-charges-specific-unit.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
       - name: Purchasing policies
@@ -3032,11 +3034,11 @@
         - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
         - name: Auto-charge compounding and sequencing (preview)
-          href: procurement/auto-charge-sequence-compound.md
+          href: sales-marketing/auto-charge-sequence-compound.md
         - name: Units of measure for line-level charges (preview)
-          href: procurement/line-charges-specific-unit.md
+          href: sales-marketing/line-charges-specific-unit.md
         - name: Period charges (preview)
-          href: procurement/period-charges.md
+          href: sales-marketing/period-charges.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
