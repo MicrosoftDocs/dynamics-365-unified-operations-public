@@ -28,19 +28,24 @@ Your test environment must be running Platform update 15 or newer. The Regressio
 
 ### Excel
 
-You need Microsoft Excel installed to generate and edit test parameters.
+You need Microsoft Excel installed to edit test parameters.
 
 ### Azure DevOps (Prerequisite)
 
 You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) or [Pricing for Azure DevOps Server](https://azure.microsoft.com/pricing/details/devops/server/).
 
-### Authentication Certificate
+### Authentication by Certificate or User-Based
 
-RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to an environment.
+RSAT is designed to be installed on any Windows 10 or later computer and connect remotely via a web browser to an environment.
 
 ![Client computer and environment.](media/client-environment.png)
 
-To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
+To enable secure authentication, RSAT need to authenticate access with the Dynamics 365 Finance and Operations apps environment tested. Two options exist to authenticate access either by a certificate or by user-based authentication.
+
+Certificate based authentication requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
+
+User-based authentication require some set up steps to enable. Detail of this is described in this topic:
++ [User-Based authentication](rsat-user-based-authentication.md)
 
 ## Installation
 
@@ -96,11 +101,13 @@ Configure your connection to the test environment.
 
 + **Hostname** – The hostname of the test environment, such as myhost.cloudax.dynamics.com. Don't include the https:// or http:// prefix.
 + **SOAP Hostname** – The SOAP hostname of the test environment.
+    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
     + For demo and development environments (also known as one-box environments), add a **soap** suffix to the hostname. For example, if your hostname is `myhost.cloudax.dynamics.com`, use `myhost.soap.cloudax.dynamics.com` as the SOAP hostname.
     + If you don't know the SOAP hostname of your test environment, you can find it in the web.config file for the AOS server in Infrastructure.SoapServicesUrl.
-    + If your test environment is a user acceptance testing (UAT) or higher-tier sandbox environment that has no Remote Desktop access, the SOAP hostname is equal to the hostname.
 
 + **Admin User Name** – The email address of an admin user in the test environment. The admin user name must be the email address of a user who belongs to the System Administrator role on the finance and operations test environment that RSAT is connecting to. The user account (email address) must also belong to the same tenant as the test environment. For example, if your test environment's default tenant is contoso.com, the admin user must end with @constoso.com.
+
++ **Authentication method** – Select the method for authenticating access to the Hostname. Options are Certificate and User-Based. Both options include steps to complete. The Microsoft recommended method is User-Based authentication, and it is planned that Dynamics 365 Finance and Operations apps will remove the option of certificate-based authentication.
 
 + **Thumbprint** – The thumbprint of the authentication certificate that you're using.
  If you don't have Remote Desktop Protocol (RDP) access to your environment, follow the steps lower in this article to download the certificate from Lifecycle Services and paste the thumbprint here.
@@ -112,6 +119,8 @@ Configure your connection to the test environment.
         ![Successfully created.](media/thumbprint-certificate.png)
 
     3. The thumbprint of the newly created certificate is automatically inserted on this form. Copy this thumbprint, you will use it in the next section to configure the AOS to trust the connection.
+
++ **KeyVault URL, Tenant ID, Client ID, Client Secret** - This is used when configuring user-based authentication. Detail on how to set these up is found in this topic: [User-Based authentication](rsat-user-based-authentication.md)
 
 + **Company name** – Specify a company name to use as your default company during creation of Excel parameters files. It can be changed later by editing an Excel file.
 
@@ -143,6 +152,8 @@ Select the **Optional** tab to configure optional settings.
     > The **Cloud provider** setting is required, and the selected value must be **China** if your finance and operations apps were deployed in 21Vianet.
 
 ### Configure the test environment to trust the connection
+
+**The following paragraphs are only relevant when using Certificate-Based authentication. With User-Based authentication review this topic instead: [User-Based authentication](rsat-user-based-authentication.md)**
 
 #### If your AOS allows for Remote Desktop connections
 
