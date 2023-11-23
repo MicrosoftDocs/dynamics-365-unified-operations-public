@@ -114,13 +114,19 @@ To use identification by the GLN (EAN) number please complete the following conf
 4. On the **Registration ID** FastTab, add a resitratoin ID of **EAN** registration type created on step 2.
 5. In the **Registration number** field enter a valid GLN number.
 6. The GLN number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
+   
+    > [!NOTE]
+    > The GLN number has higher priority than CVR number. If both numbers are configured simultaneously then the GLN number will be used.
 
 
 ### Buyer identification
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**,  and select a customer.
-2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's [Global Location Number (GLN)](https://en.gs1.dk/services/gln) is defined here.
+2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's GLN number is defined here.
 3. The GLN number will be populated to **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Buyer's identification during the submission process.
+
+    > [!NOTE]
+    > If the GLN number is not defined then the customer's Tax exempt number will be used.
 
 ### Configure output format type
 
