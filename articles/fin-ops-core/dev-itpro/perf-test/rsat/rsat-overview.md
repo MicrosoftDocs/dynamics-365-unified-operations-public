@@ -25,6 +25,7 @@ RSAT is fully integrated with Microsoft Azure DevOps for test execution, reporti
 In addition to this article, RSAT usage is described in these topics:
 
 + [Regression suite automation tool (RSAT) installation and configuration](rsat-install-configure.md)
++ [User-Based authentication](rsat-user-based-authentication.md)
 + [Run Regression suite automation tool (RSAT) test cases](rsat-run.md)
 + [Run Regression suite automation tool (RSAT) with parallel execution](rsat-parallel-execution.md)
 + [Maintain test cases within Regression suite automation tool (RSAT)](rsat-maintain-test-cases.md)
