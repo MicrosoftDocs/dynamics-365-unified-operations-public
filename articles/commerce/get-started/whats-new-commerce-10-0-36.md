@@ -37,6 +37,17 @@ The following table lists the features that are included in this release. We mig
 |  Point of sale (POS) | POS UX improvements  | POS now has improvements to the user interface to match current Microsoft design practices. Updates include rounded corners on tiles and buttons, drop shadows and rollover elevation on product and category cards, and an updated **Logout** screen.   | By default  |
 |  Point of sale (POS) | Bar code scanning performance improvements | Product data is now cached in POS when you add products to the cart, resulting in an a significant performance improvement. POS makes a Commerce Scale Unit (CSU) call in the background for product data older than one hour to ensure that the cache contains the latest data.   | By default<p><p>To disable this functionality for your organization, submit a service request.  |
 
+## Feature state changes in this release
+The following table lists features that became mandatory or on by default in version 10.0.36. All these features will automatically be turned on for your system as soon as you update to version 10.0.36. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+| Feature | Title | New feature state |
+| --- | --- | --- |
+| RetailShouldDiscountBeAppliedToGiftCardsFeature | Support gift card items in discount calculation | Mandatory |
+| RetailEInvoiceFeature_SA | KSA Electronic-Invoicing capability for the fiscal integration framework | On by default |
+> [!NOTE]
+> If you already have disabled the feature "Support gift card items in discount calculation", we recommend you to validate your configurations for your gift card items, for example, the default sales unit of measure is mandatory for gift card items, and test those configuration (like issue and redeem gift cards) on a UAT environment with the feature "Support gift card items in discount calculation" enabled before upgrading to 10.0.36 or later.
+
+> [!NOTE]
+> "KSA Electronic-Invoicing capability for the fiscal integration framework" feature requires you to setup electronic invoices for Saudi Arabia follwing this documentation [Generate and submit simplified electronic invoices for Saudi Arabia](../localizations/mea/emea-sau-simplified-e-invoices.md).
 
 
 ## Additional resources
