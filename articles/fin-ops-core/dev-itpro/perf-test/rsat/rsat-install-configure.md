@@ -153,7 +153,7 @@ Select the **Optional** tab to configure optional settings.
 
 ### Configure the test environment to trust the connection
 
-**The following paragraphs are only relevant when using Certificate-Based authentication. With User-Based authentication review this topic instead: [User-Based authentication](rsat-user-based-authentication.md)**
+The following paragraphs are only relevant when using Certificate-Based authentication. With User-Based authentication review this topic instead: [User-Based authentication](rsat-user-based-authentication.md)
 
 #### If your AOS allows for Remote Desktop connections
 
