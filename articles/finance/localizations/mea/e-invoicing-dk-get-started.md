@@ -101,13 +101,24 @@ Please do the configuration steps described in the [Customer electronic invoices
 
 ### Seller identification
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**,  and select a customer.
+A company which submints electronic invoices can be idendified eithr by its CVR number or by its [Global Location Number (GLN)](https://en.gs1.dk/services/gln).
+To use identification by the CVR number please complete the following configuration steps.
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. On the **Bank account information** FastTab, in **Codes** section, **Routing number** field, make sure that a valid Legal Entity CVR number is defined here.
 3. The CVR number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
 
+To use identification by the GLN (EAN) number please complete the following configuration steps.
+1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
+2. Define a new registration type for Denmark with the **EAN** name, exactly as writteh here.
+3. Go to **Organization administration** \> **Organizations** \> **Legal entities**, and select the **Registration IDs** from the top menu.
+4. On the **Registration ID** FastTab, add a resitratoin ID of **EAN** registration type created on step 2.
+5. In the **Registration number** field enter a valid GLN number.
+6. The GLN number will be populated to **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Seller's identification during the submission process.
+
+
 ### Buyer identification
 
-1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**,  and select a customer.
 2. On the **Invoice and delivery** FastTab, in the **EAN** field, make sure a valid customer's [Global Location Number (GLN)](https://en.gs1.dk/services/gln) is defined here.
 3. The GLN number will be populated to **Invoice\\cac:AccountingCustomerParty\\cac:Party\\cbc:EndpointID** element in the generated electronic invoice XML file and used for the Buyer's identification during the submission process.
 
