@@ -55,7 +55,7 @@ Access needs to be granted to the Key vault to the Application Registration. Wit
 
 Information collected from setting Key vault and App registration is needed for completing setup in RSAT. First select Authentication method “User-Based”, which will expose the new fields for the setup as seen below. It is here you provide the Tenant ID, Key vault URL, Client ID, Secret ID, and Secret Value collected from prior steps.
 
-INCLUDE RSAT-settings.png
+![RSAT settings](media/rsat-settings.png)
 
 Notice a thumbprint still needs to be selected for a certificate, however this certificate is not used to gain access but used locally only. You can simply click the New next to the field to create a new certificate that install locally to complete this. It is not needed to install the certificate to the hostname environment.
 
@@ -73,6 +73,6 @@ It is possible to configure tenant on Microsoft Entra ID and disable security de
 
 The secure approach is to disable MFA only for the test accounts used with running test cases by RSAT and only for environments used in testing.
 
-This is possible by using Conditional Access Policies:
-LINK
+This is possible by using Conditional Access Policies: [Building a Conditional Access policy](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policies)
+
 
