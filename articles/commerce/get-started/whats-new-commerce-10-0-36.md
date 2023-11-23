@@ -39,6 +39,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature state changes in this release
 The following table lists features that became mandatory or on by default in version 10.0.36. All these features will automatically be turned on for your system as soon as you update to version 10.0.36. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
 | Feature | Title | New feature state |
 | --- | --- | --- |
 | RetailShouldDiscountBeAppliedToGiftCardsFeature | Support gift card items in discount calculation | Mandatory |
