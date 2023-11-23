@@ -43,6 +43,7 @@ The following table lists features that became mandatory or on by default in ver
 | --- | --- | --- |
 | RetailShouldDiscountBeAppliedToGiftCardsFeature | Support gift card items in discount calculation | Mandatory |
 | RetailEInvoiceFeature_SA | KSA Electronic-Invoicing capability for the fiscal integration framework | On by default |
+
 > [!NOTE]
 > If you already have disabled the feature "Support gift card items in discount calculation", we recommend you to validate your configurations for your gift card items, for example, the default sales unit of measure is mandatory for gift card items, and test those configuration (like issue and redeem gift cards) on a UAT environment with the feature "Support gift card items in discount calculation" enabled before upgrading to 10.0.36 or later.
 
