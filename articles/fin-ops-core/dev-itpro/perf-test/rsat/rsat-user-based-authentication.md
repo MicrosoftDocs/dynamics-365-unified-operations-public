@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 
 ---
 
-# User-based authentication
+# User-Based authentication
 
 Certificate-based authentication to Dynamics 365 Finance and Operations apps is planned to be removed. The Admin Center that replaces LCS will no longer include the option to download certificates. RSAT usage needs to transition to replace certificates with user-based authentication. Dynamics 365 Finance and Operations apps does not support authentication by a service principal like App Registration or by Managed Identity which means, only user-based authentication exists as option.
 
