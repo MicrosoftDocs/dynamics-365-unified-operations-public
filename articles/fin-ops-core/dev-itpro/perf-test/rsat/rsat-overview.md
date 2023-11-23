@@ -120,7 +120,7 @@ Do not use RSAT for integration tests, instead rely on the data management frame
 
 ## RSAT User interface overview
 
-RSAT 2.1 introduced a modern user interface that simplifies navigation through the main components of the app, including a **Quick links** tab, and quick navigation to DevOps test suites and test runs.
+RSAT 2.6 introduced a modern user interface that simplifies navigation through the main components of the app, including a **Quick links** tab, and quick navigation to DevOps test suites and test runs.
 
 Use the left navigation pane to navigate between the test plan, settings, Cloud POS settings and the quick links page.
 
@@ -129,6 +129,18 @@ Use the left navigation pane to navigate between the test plan, settings, Cloud 
 The **Test plan** tab is the main tab that allows you to interact with and execute test cases.
 
 ![UI Test Plans Tab.](media/UI-test-plans-tab.png)
+
+The Test Plan tab is where the main page is located. Here tests are managed, run, and test results are inspected. Navigation between elements on this page can be done by tapping, or by using available shortcuts for productivity. Some shortcuts are only active when a test case is selected.
+
+| Action                                                                                                                   | Shortcut |
+|--------------------------------------------------------------------------------------------------------------------------|----------|
+| Load (Load test plan from Azure DevOps project)                                                                          | ALT+L    |
+| Generate (Create local automation files (execution files only)) – This is what clicking New was on earlier RSAT versions | ALT+G    |
+| Run                                                                                                                      | ALT+R    |
+| New (Add new Test Case)                                                                                                  | ALT+N    |
+| Parameters                                                                                                               | ALT+P    |
+| Edit (Open test case details page)                                                                                       | ALT+E    |
+| Delete (deleting test case – a prompt to confirm is presented)                                                           | ALT+D    |
 
 ### Settings
 
