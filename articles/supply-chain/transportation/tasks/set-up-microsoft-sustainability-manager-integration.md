@@ -30,3 +30,14 @@ You need to map **Transportation method in Dynamics 365 SCM** with the value of 
 > For more information about EPA's GHG Emission Factors Hub, see https://www.epa.gov/climateleadership/ghg-emission-factors-hub
 >
 3. Select **Save**.
+
+### Validate the connection and enable the integration scenario 
+
+1. Go to **Transportation management -> Setup -> Transportation management parameters**. 
+2. Select **Microsoft Cloud for Sustainability integration configuration** tab.
+3. Click on **Validate connection** to validate Power platform environment is all set up and ready for the integration.
+   >![Note]: Error message will popup in the above message bar if the Power Platform environment does not setup correctly.
+   > 
+5. Once validation passed, select a model in field **Model Name** from the drop-down menu.
+6. Activate the toggle for **Enabling McFS integration**
+7. Select **Save**.**
