@@ -28,8 +28,7 @@ When editing parameter files in Excel remember always to use the Generate action
 PowerFX is almost 100 % compatible, and you can in most cases use Excel parameter files directly with PowerFX without making any changes.
 
 For reference to what formulas are available with PowerFX consult this page:
-
-LINK
+[Power Fx formula reference overview](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview)
 
 There are a few cases you need to be aware of to ensure formulas are compatible. The following paragraphs show do’s and don'ts on how to use formulas.
 
@@ -41,15 +40,15 @@ For example, step number 2 cannot reference a value from the step number 3 cell 
 
 The example here, where inventory unit attempt to use the value from purchase unit will not work.
 
-PIC
+![RSAT reference forward](media/rsat-reference-forward.png)
 
 The reverse case is perfectly fine where Purchase order reference back and use the Inventory unit cell value.
 
-PIC
+![RSAT reference backward](media/rsat-reference-backward.png)
 
 One way this may be fixed is by creating a new named cell that holds a value, which then can be referenced from both cells like Inventory and Purchase unit steps in the example.
 
-PIC
+![RSAT reference named cell](media/rsat-reference-named.png)
 
 ## Using saved variables in formulas
 
@@ -71,7 +70,7 @@ This represents a symptom where variables have been referenced in a non-supporte
 
 Below is an example how RSAT will present an exception when using the Generate action, if a formula has compatibility issues.
 
-PIC
+![RSAT Generate exception](media/rsat-generate-exception.png)
 
 ## Excel turn TODAY and NOW into decimal numbers
 
@@ -83,26 +82,19 @@ Excel sometimes dynamically converts date and time like from functions TODAY and
 
 Excel process functions like TODAY and NOW dynamically as decimal numbers.
 
-Using the function:
-=LEFT(TODAY(),5)
-Has Excel returning a 5 digits number that represents the current date.
+Using the function: =LEFT(TODAY(),5) has Excel returning a 5 digits number that represents the current date.
 
-Using the function:
-=MID(NOW(),7,8)
-has Excel returning a 8 digit number that represents the time of day.
-
+Using the function: =MID(NOW(),7,8) has Excel returning a 8 digit number that represents the time of day.
 
 You can piece this together into a unique identifier like “ITEM 45254 – 0200787”, where the part before the hyphen is the date represented as number, and the part after if the time of day.
 
 PowerFX will not process these functions as decimals, but instead process the text value returned from the TODAY and NOW functions, and the similar case result in something like this with PowerFX:
 
-PIC
+![RSAT dates in PowerFX](media/rsat-dates-powerfx.png)
 
 To ensure this works fully compatible with PowerFX you need to compensate by wrapping TODAY and NOW functions in a VALUE function to explicitly request the decimal representation, like:
 
-=LEFT(VALUE(TODAY()),5)
-and
-=MID(VALUE(NOW()),7,8)
+=LEFT(VALUE(TODAY()),5) and =MID(VALUE(NOW()),7,8)
 
 This ensures consistent decimal values, and you can compose a unique identifier compatible with PowerFX. Hint: Create separate new cells with the formulas mentioned above and concatenate values in a separate cell from these cells into an identifier string. Different Excel versions have been seen to treat this differently and using separate cells seem to provide a way consistent with different version.
 
