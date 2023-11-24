@@ -83,6 +83,47 @@ Microsoft Defender and Azure Well-Architected security assessments provide gener
 
 When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, such restrictions will break some integration scenarios, such as export to Excel, that require that files be externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur additional costs that the resource owner will have to consider if those recommendations are applicable to their needs.
 
+## External integrations
+
+Your one-box development environment can integrate with your Microsoft Entra Tenant for added capabilities. These capabilities include,
+
+- Import Users 
+- Import AAD Groups 
+- Import Electronics Reporting configurationsconfigurations
+
+To use these capabilities it is necessary to configure certificate access to your tenant.
+
+> [!NOTE]
+> Granting access to your Microsoft Entra Tenant should be done with care. Unless these capabilities are necessary for development, Microsoft recommends restricting certificate access to your tenant. 
+
+> [!NOTE]
+> Starting November 15 2023, certificates on your Microsoft Entra Tenant will no longer be installed on new one-box development environments by default. This will impact the external integrations mentioned in this section. See the instructions below for re-enabling this capability.
+>
+> This change does not impact development environments deployed prior to this date. Optionally, these certificates can be removed. See the [Frequently Asked Questions](#frequently-asked-questions) for instructions.
+
+If you need to use the above-mentioned features in your one-box development environment, it will be necessary to follow the steps below to set up a new application and tenant certificate. 
+
+### Setting up an new application and certificate registration
+
+1. Create an application: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#register-an-application)
+2. Create a certificate: [Add a certificate](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-certificate)
+3. Install the certificate in the Cloud-Hosted environment virtual machine. 
+4. In the K:\AosService\webroot\web.config file, replace the AAD.Realm value with the AAD Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
+
+<pre>&lt;add key="Aad.Realm" value="spn:&lt;insert your application id here&gt;" /&gt;
+&lt;add key="Infrastructure.S2SCertThumbprint" value="&lt;insert thumbprint here&gt;" /&gt;
+&lt;add key="GraphApi.GraphAPIServicePrincipalCert" value="&lt;insert thumbprint here&gt;" /&gt;</pre>
+
+5. Add Environment URL as redirect URI for the AAD Application: [Add a redirect URI](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-redirect-uri)
+6. Assign the following API permissions for the AAD Application: 
+    * Navigate to API Permissions, then select Add a Permission
+        * Dynamics ERP: Required for accessing Finance and Operations environments. 
+        * Microsoft Graph (User.Read.All and Group.Read.All permissions of type Application) 
+    * On the Cloud-Hosted Environment(CHE) grant Read Access to the Network Service for the newly installed certificate.  
+
+To import Electronic Reporting configurations customers can follow instructions for [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations).
+
+
 ## Frequently asked questions
 
 ### Why does my newly provisioned one-box developer environment have security recommendations from Microsoft Defender and other security assessments?
@@ -98,5 +139,27 @@ Many recommendations from such assessments require engagement from the resource 
 ### My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what is wrong?
 
 The [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) section of this article lists the network access requirements for the Azure resources for your environment. Unfortunately, because of the wide variety of possible configurations, Microsoft Support can't help troubleshoot custom networking configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your additional restrictions to isolate issues with the desired custom configuration.
+
+### I have a development environment deployed prior to November 15th, 2023. Do I need to take any action?
+
+No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if it is not required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
+
+> To optionally remove the Dynamics ERP Application certificate from your tenant’s Service Principal, do the following from any one of your one-box development virtual machines: 
+>
+> Download version 2.19.1 or later of the Infrastructure scripts for on-premises deployments from the LCS shared asset library. The asset is available in the global and EU LCS regions. For more information see: [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem#download-the-infrastructure-scripts).
+>
+> Find the thumbprint of your S2S certificate. To do that open the  K:\AosService\webroot\web.config file and locate the ‘Infrastructure. S2SCertThumbprint’ key. You will then specify this thumbprint when running the script below. 
+>
+> To remove the certificate from your service principal you can run the following PowerShell script: 
+>
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> 
+>
+> If you are unsure if a certificate is registered against your serviceprincipal you can run the following PowerShell script to validate: 
+>
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> -Test 
+>
+> If your account has access to multiple tenants, you can specify the tenant in which to carry out the operation by running the PowerShell script with your tenant id: 
+>
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> -Tenant <your tenant id>  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
