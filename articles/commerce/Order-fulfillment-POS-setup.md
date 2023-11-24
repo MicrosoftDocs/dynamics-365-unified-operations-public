@@ -2,26 +2,26 @@
 # required metadata
 
 title: Set up order fulfillment for stores
-description: This article provides an overview of how to set up store order fulfillment. 
+description: This article provides an overview of how to set up store order fulfillment.
 author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.prod:
+ms.technology:
 
 # optional metadata
 
 ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
+# ms.tgt_pltfrm:
+# ms.custom:
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version:
 
 
 ---
@@ -59,7 +59,7 @@ To turn on manual acceptance for order lines, navigate to **Retail and Commerce*
 
 ### Enable reject order line capability
 
-Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow reject order** permission in the POS permission group associated with the worker. While rejecting a line, the retailers can mandate their workers to provide a reason for rejection. This can be achieved by using info codes of **Info code activity** type **Order fulfillment** and assigning the info code to **Reject order line** in the functionality profile associated with the channel.
+Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow reject order** permission in the POS permission group associated with the worker. While rejecting a line, the retailers can mandate their workers to provide a reason for rejection. This can be achieved by using info codes of **Info code activity** type **Order fulfillment** and assigning the info code to **Reject order line** in the functionality profile associated with the channel. In case you want further analysis on the rejection reasons, the info code is saved on the columns of RetailSalesLine: INFOCODEID, SUBINFOCODEID and INFORMATION.
 
 > [!NOTE]
 > Only the info codes of **Info code activity** type **Order fulfillment** can be assigned to the **Reject order line** action.

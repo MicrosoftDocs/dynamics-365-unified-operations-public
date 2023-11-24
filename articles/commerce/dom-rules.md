@@ -21,7 +21,7 @@ Here are some of the common attributes that can be defined for all rule types:
 
 - **Start date** and **End date** – Use these fields to set the rule start and end dates.
 - **Disabled** – Only rules that have a value of **No** for this field are considered in a DOM run.
-- **Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of the **Hard constraint** attribute. In other words, every rule is applied. The only exception is the **Location priority** rule, which is always treated as a hard constraint. In the second iteration, rules that aren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations.
+- **Hard constraint** – A rule can be defined as either a hard constraint or not a hard constraint. Every DOM run goes through two iterations. In the first iteration, every rule is treated as a hard constraint rule, regardless of the setting of the **Hard constraint** attribute. In other words, every rule is applied. In the second iteration, rules that aren't defined as hard constraint rules are removed, and the order or order lines that weren't assigned to locations when all the rules were applied are assigned to locations. The only exception is the **Location priority** rule, which is always treated as a hard constraint.
 
 ## Minimum inventory rule
 

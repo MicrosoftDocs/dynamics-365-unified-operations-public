@@ -19,7 +19,7 @@ This article describes how distributed order management (DOM) processes sales or
 
 ## Configure DOM processor batch job
 
-DOM will run only in a batch job. 
+DOM will run only in a batch job.
 
 To configure the DOM processor batch job for DOM runs, follow these steps.
 
@@ -58,7 +58,13 @@ If the **Maximum number of order lines per optimization** value is 0:
 
 ## Inventory lookup
 
-DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To support on-hand inventory on other dimensions or custom dimensions, you must create customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
+DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To view the on-hand inventory used by DOM, enter the following URL in your browser's address bar. Replace `<DomainName>` with the domain name of your environment and `<CompanyName>` with the name of your legal entity.
+
+`https://<DomainName>/?cmp=<CompanyName>&mi=SysTableBrowser&TableName=InventWarehouseOnHandAggregatedView`
+
+Additionally, DOM looks up reserved inventory on the sales lines to be processed. Similar to the on-hand inventory, DOM only supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. If the reserved inventory is on other dimensions such as location, inventory status, license plate, it will not be considered by DOM.
+
+To support on-hand or reserved inventory on other dimensions or custom dimensions, you must to build customizations. For more information, see [DOM extensibility](./dom-extensibility.md).
 
 ## Calculate distance
 

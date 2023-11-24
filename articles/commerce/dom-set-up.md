@@ -39,7 +39,10 @@ To configure DOM parameters, follow these steps.
         > - The [Bing Maps Dev Center](https://www.bingmapsportal.com/) portal allows you to restrict access on your Bing Maps API keys to a set of domains that you specify. With this feature, customers can define a strict set of referrer values or IP address ranges that the key will be validated against. Requests originating from your allow list will process normally, while requests from outside of your list will return an access denied response. Adding domain security to your API key is optional and keys left as-is will continue to function. The allow list for a key is independent from all of your other keys, enabling you to have distinct rules for each of your keys. Distributed Order Management does not support the setting up of domain-referred properties.
     - **Disable road distance calculation** - If this option is **Yes**, aerial distance is calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
     - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders that have been accepted by retail stores.
-    - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if ou want to update financial dimensions on sales order lines based on the site.
+    - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if you want to update financial dimensions on sales order lines based on the site.
+
+        > [!NOTE]
+        > The financial dimensions might fail to update on sales order lines if the financial dimension link to the site is locked or deactivated. See [Configure and manage financial dimension links to sites](https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites) for more details.
     - **Fulfillment data retention period (in days)** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch deletes any fulfillment plan that is older than the number of days that you specify here.
     - **DOM logs retention period (in days)** - Specify how long the DOM logs that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job deletes any DOM logs that are older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
@@ -82,7 +85,7 @@ The DOM feature supports the definition of various types of DOM rules, and organ
 
 ## Configure DOM rules
 
-To configure DOM rules, in headquarters, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. 
+To configure DOM rules, in headquarters, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**.
 
 The following DOM rules are currently supported.
 
@@ -98,7 +101,7 @@ For more information, see [DOM rules](dom-rules.md).
 
 ## Set up and configure DOM fulfillment profiles
 
-Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. Organizations can define and run rules for a set of legal entities on orders that have specific sales order origins and modes of delivery. If different sets of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. 
+Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. Organizations can define and run rules for a set of legal entities on orders that have specific sales order origins and modes of delivery. If different sets of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly.
 
 To set up and configure DOM fulfillment profiles, follow these steps:
 
