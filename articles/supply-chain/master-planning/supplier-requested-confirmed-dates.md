@@ -4,7 +4,7 @@ description:
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: VendCustTransportPoint2Point, SrmParameters
 ms.topic: how-to
 ms.date: 11/16/2023
 audience: Application User
@@ -21,79 +21,102 @@ ms.custom: bap-template
 
 <!--KFM: Confirm preview date and add to appropriate What's new -->
 
-If you have vendors without specific delivery terms, such as delivery duty paid, delivery at place, or delivery at place unloaded, you must tell them when they should ship. This feature adds a new ship date field to purchase orders, calculated according to the configured transport dates.
+If you have vendors without specific delivery terms (such as delivery duty paid, delivery at place, or delivery at place unloaded) you must tell the vendor when they should ship <!-- KFM: Not clear. Please clarify.-->. 
 
-Purchase orders in Dynamics 365 Supply Chain Management currently include a *delivery date*, which specifies when the order should be received at your company's location. This feature adds a *ship date*, specifying the date the vendor should ship from their location.
+Purchase orders in Dynamics 365 Supply Chain Management can include both a *requested receipt date*, which specifies when the order should be received at your company's location, and a *requested ship date*, which specifies the date the vendor should ship from their location. The system calculates requested ship dates based on the requested receipt date, lead time, transportation days setup, vendor calendar, and other settings. The transportation days setup lets you define the number of days needed to transport items between various pairs of addresses. *Vendor ship calendars* define the days on which each vendor can ship.
 
-The system calculates the ship date according to the new transportation days setup, which lets you define the number of days needed to transport items between a vendor's location and your locations. When master planning suggests a date for placing a planned order, it will also consider the transportation days setup to help make sure the goods will arrive at your location on time.
-
-You can also choose to set up a vendor ship calendar to define the days a vendor can ship. When some goods need to be expedited, and a vendor makes an exception on their vendor ship calendar, you can accommodate this by changing or removing the vendor ship calendar for the relevant purchase order lines.
-
-![A diagram of a company Description automatically generated](media/image1.png)
+When master planning suggests a date for placing a planned order, it also considers the transportation days setup to help make sure the goods will arrive on time.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-## Setup
+## Prerequisites
 
-To enable the supplier requested and confirmed dates, the following feature must be enabled in feature management, available from 10.0.38:
+To calculate requested ship dates, your system must meet the following requirements:
 
-"Supplier requested and confirmed dates"
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
+- The feature that is named *Supplier requested and confirmed shipment dates* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- You must be using Planning Optimization, not the [deprecated master planning engine](deprecated-master-planning-overview.md).
 
-With this feature the following functionality and setup is included in the application.
+## Requested and confirmed receipt dates on purchase orders
 
-## Requested ship date and confirmed ship date on purchase orders
+As of Supply Chain Management 10.0.38, the following date fields on purchase orders have been renamed to better align with similar date fields on sales orders, and to make it clear that these dates indicate when the items are to be *received* at your location, not when they are *sent* from the vendor's location:
 
-New fields are introduced to indicate the ship date and confirmed ship date when vendors should ship the orders so they arrive on time to the corresponding requested delivery date and confirmed receipt date.
+- **Requested delivery date** is now labeled **Requested receipt date**.
+- **Confirmed delivery date** is now labeled **Confirmed receipt date**.
 
-Note with the 10.0.38 release the purchase order fields **requested delivery date** and **confirmed delivery date** are renamed to **requested receipt date** and **confirmed receipt date**, aligning with how the fields are called for Sales orders.
+## Choose whether to allow requested ship dates in the past
 
-## Purchase transport days
+Sometimes, as a result of your requested receipt date, plus the lead time, transportation days, vendor calendar, and other settings, the system might calculate a requested ship date that is in the past. You can choose how the system should handle this situation by following these steps:
 
-A new form called **Purchase transport days** is introduced so that the needed transport days. Note that this form is an address to address form, so that:
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
+1. Open the **Delivery** tab.
+1. Set **Requested ship date in the past** to one of the following values:
+    - *None* – Always allow requested ship dates to be in the past without showing a warning.
+    - *Allow with warning* – Allow requested ship dates to be in the past but show a warning message to users when they occur.
+    - *Disallow with warning* – Always recalculate the requested ship date based on today's date and show a warning message to users when this occurs. <!-- KFM: Not clear. Please clarify.-->
 
-- If you need to specify the transport from a certain vendor to one of your warehouses, you must include the address of your warehouse.
-- There is not a specific address for a vendor, a vendor can have many addresses
-- The most specific address will be taken. For example, if there are two transport days one for Spain to US of 20 days and another one between cities in those countries (Valencia to New York) of 30 days. If the purchase order has the city to city (Valencia to New York), then that transport days of 20 days will be taken.
-- This is also useful is any of the delivery addresses of the lines is changed, so it can be the most specific possible.
+## Set up purchase transport days
 
-## Vendor shipping calendar
+Follow these steps to define the number of days needed to transfer goods between various addresses:
 
-For a given vendor, a new field is introduced indicating the Vendor ship calendar that can be used to indicate in which dates the vendor is able to ship. For example, it may be all days that the vendor is open or that the vendor may only be able to send shipments a certain day of the week (like Mondays, so a calendar open only Mondays could be entered).
+1. Go to **Procurement and sourcing \> Setup \> Distribution \> Purchase transport days**.
+1. Do one of the following steps:
+    - If you're looking for an existing record, use the filters at the top of the grid to find it. To edit the found record, select the link in the **Shipping country/region** column. To delete a selected record, select **Delete** on the Action Pane.
+    - If you're creating a new record, on the Action Pane, select **New**.
+1. The details page for your new or selected record opens. Use the settings on the **General** tab to define the shipping address, receiving address, and the number of days needed to transport goods between them. For more information about a field, hover your mouse pointer over the field label to open a tooltip. Here are a few tips for filling out the fields:
+    - A convenient way to fill out an address is to start by entering the **Shipping ZIP/postal code**. Often, then system can automatically fill out the rest of the address for you based on this.
+    - When calculating the ship date, the system will use the most specific purchase transport days record it can find. For example, suppose you have just two purchase transport days records: one for Spain to USA of 30 days and another for Madrid to New York of 20 days. In this case, a purchase order shipping from Madrid to New York would use 20 days, while an order from Valencia to New York would use 30 days.
+    - If you need to specify the transport from a certain vendor to one of your warehouses, you must include the address of your warehouse. <!-- KFM: Not clear. Please clarify. -->
+    - There is not a specific address for a vendor, a vendor can have many addresses <!-- KFM: How do these work? What if there is more than one? -->
+1. On the **Transport days per mode of delivery** tab <!-- KFM: What do we do here? How does this work? -->
 
-The vendor ship calendar is located under the tab **Purchase and Delivery** for the vendor details page.
+## Vendor settings for calculating requested ship dates
 
-Remember that the addresses for the vendor are kept under the tab **Addresses** on the vendor details page.
+To calculate requested ship dates, you must set up each vendor with vendor addresses. To help make the calculation even more accurate, you can also set up vendor shipping calendars that define on which specific days each vendor can ship.
 
-## Calculation of the ship date, receipt date and updates
+### Set up vendor addresses
+
+Remember that the addresses for the vendor are kept under the tab **Addresses** on the vendor details page. <!-- KFM: How do these work? What if there is more than one? -->
+
+### Assign vendor shipping calendars
+
+For each vendor, you can specify a ship calendar that indicates the dates on which that vendor is able to ship. For example, some vendors might be able to ship during all opening hours, while others might only ship on Mondays. You can define as many specific ship calendars as you need and then apply them to each vendor as appropriate. If you have goods that need to be expedited, and the relevant vendor makes an exception on their vendor ship calendar, you can accommodate this by changing or removing the vendor ship calendar for the relevant purchase order lines.
+
+For details about how to set up a shipping calendar and define the available ship dates and times for it, see [Calendars and master planning](supply-chain-calendars-master-planning.md).
+
+To assign a calendar to a vendor, follow these steps:
+
+1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
+1. Open the vendor record that you want to assign a calendar to.
+1. Expand the **Invoice and delivery** FastTab.
+1. In the Ship Calendar field, select the [ship calendar](supply-chain-calendars-master-planning.md) that applies to the vendor.
+
+## Date calculations and recalculations
 
 ### Requested ship date
 
-Requested ship date is calculated taking into account lead time (lead time per vendor if setup on trade agreements), mode of delivery and vendor shipping calendar).
+Requested ship date is calculated taking into account lead time (lead time per vendor if set up on trade agreements), mode of delivery, and vendor shipping calendar.
 
 It is expected that the lead time is the time it takes for the vendor to produce the item. It does NOT include the transport days (from vendor to company).
 
-Ship date must be calculated backwards from the receipt date, transport days and finding the previous open date on the vendor ship calendar.
+Requested ship date must be calculated backwards from the requested receipt date, transport days and finding the previous open date on the vendor ship calendar.
 
-The vendor ship date must be &gt;= today. If prior to today, then ship date and receipt dates must be recalculated according to the first feasible ship date.
+The requested ship date must be today or later. If prior to today, then requested ship receipt dates must be recalculated according to the first feasible ship date. <!-- KFM: Don't we have a setting for how to handle this? -->
 
-Note confirmed dates can be in the past.
+Confirmed dates can be in the past.
 
-### Requested receipt date (existing field)
+### Requested receipt date
 
-This field currently is calculated according to the lead time of the item.
+This field currently is calculated according to the lead time of the item. It must be modified so that it also takes into account the transport days (lead time + transport days)
 
-It must be modified so that it also takes into account the transport days (lead time + transport days)
-
-### Order date on planned purchase order
+### Order date on planned purchase orders
 
 Order date on planned purchase order must also be modified so that when calculating backwards from requirement date it makes sure that a part of the lead time, the new transport days are taking into account, and that the shipping date (not saved as a field on the planned purchaser order but should be taken into account in the calculation) must be an open day in the vendor calendar.
 
-NOTE classic master planning is OUT OF SCOPE
-
 ### Updates between the dates
 
-- When Requested ship date is changed, Receipt date must be recalculated.
-- When Receipt date is changed, Ship date must be recalculated.
+- When Requested ship date is changed, Requested receipt date must be recalculated.
+- When Requested receipt date is changed, Requested ship date must be recalculated.
 - When Confirmed ship date is changed, Confirmed receipt date must be recalculated.
 - When Confirmed receipt date is changed, Confirmed ship date must be recalculated.
 
@@ -111,11 +134,11 @@ If "Requested ship date" or "Confirmed ship date" are updated on the header, the
 
 ### Manual creation of planned purchase orders
 
-Ship date will also be calculated
+Requested ship date will also be calculated
 
 ### On purchase order confirmation
 
-Ship date will also be added
+Ship date will also be added <!--KFM: Do you mean confirmed ship date?  -->
 
 Note the calculation will not be applicable to:
 
@@ -124,20 +147,10 @@ Note the calculation will not be applicable to:
 - receipt journal, invoice journal, Vendor collaboration
 - History
 
-## Ship date in the past
 
-There is a parameter indicating if the ship dates should or should not be allowed in the past. It can be found under **Procurement and sourcing parameters** form, Delivery tab.
 
-This parameter allows you to specify the default value for validation of the requested ship date if it is in the past. The options are:
-
-- **None**: if you want to allow requested ship dates to be in the past.
-- **Allow with warning**: if you would like to allow requested ship dates in the past but show a warning message.
-- **Disallow with warning**: if the requested ship dates should always be calculated again from today's date and a warning message should be shown.
-
-## Ship date in master planning
+## Requested ship date in master planning
 
 When needing to calculate the order date, it will take into account the transport dates, so that the order date is calculated backwards from the requirement date taking into account margins, transport days and lead time.
 
-The ship date is calculated following the same rules as with purchase orders. However, this date is not shown in the planned purchase order form.
-
-Note this only applies for the current master planning engine and not the deprecated planning.
+The requested ship date is calculated following the same rules as with purchase orders. However, this date is not shown in the planned purchase order form.
