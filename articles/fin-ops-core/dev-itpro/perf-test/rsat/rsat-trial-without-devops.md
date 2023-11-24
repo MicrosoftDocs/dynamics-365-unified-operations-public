@@ -32,7 +32,7 @@ During the installation process, you select which of the RSAT modes you want to 
 
 RSAT will continue to work exactly as it used to work when it was run in Normal mode.
 
-Trial mode isolates all test suites and cases under a single dedicated test plan that is named **Local Test Plan**. Currently, no exchange of test suites or cases between trial mode and Normal mode is supported. In other words, when RSAT is run in trial mode, it works without any type of integration with RSAT in Normal mode. However, in the RSAT 2.5 release, a new function that is planned will enable export and import of test suites together with cases. When this function is implemented, you will be able to transfer test suites and cases between the two RSAT modes. You will even be able to transfer them from one environment to another.
+Trial mode isolates all test suites and cases under a single dedicated test plan that is named **Local Test Plan**. Currently, no exchange of test suites or cases between trial mode and Normal mode is supported. In other words, when RSAT is run in trial mode, it works without any type of integration with RSAT in Normal mode.
 
 ## Install RSAT in trial mode
 
@@ -88,8 +88,6 @@ The **Save as** and **Open** commands that are available under **Settings** let 
 To open RSAT in trial mode, select the desktop shortcut that has a "Trial" band on the icon. If you've used previous versions of RSAT, the application will seem very familiar. However, fewer commands will be available.
 
 Trial mode works without a connection to Azure DevOps, and tests are maintained exclusively by local files. When you run RSAT in trial mode, you run an installation as a single user. Tests that you make aren't exchanged with other users. We recommend that you not share working directories between users.
-
-The RSAT 2.5 release plan includes the addition of a function that will enable test suites to be exported and imported. In this way, you will be able to exchange test suites and cases.
 
 When you open RSAT in trial mode for the first time, no test suites or cases are shown. There is just a single test plan that is named **Local Test Plan**. The test cases for trial mode are in a **Trial** folder under the working directory that you specified in RSAT settings. Each test case has its own subfolder in the **Trial** folder. The name of the subfolder indicates the ID of the case.
 
