@@ -180,16 +180,25 @@ To enable import of incoming invoices in OIOUBL format, complete the following a
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined in step 3.
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
 10. Select **Save**, and close the page.
-11. Complete, publish and deploy the configured version of the **Danish electronic invoice (DK)*** electronic invoicing feature.
+11. Complete, publish and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
 
 Some additional parameters must be configured directly in Finance.
 
-1. Make sure that the following Electronic Reporting configurations are imported:
+1. Make sure that the latest version of the **Vendor invoice import (DK)** Electronic Reporting configuration isimported.
 
-    - Vendor invoice import (DK)
+    - 
     - Vendor invoice Mapping to destination (PL)
+
+
+9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same import channel name that you created earlier.
+11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the configuration that you created earlier.
+12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
+13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
+14. Select **Save**, and close the page.
+
 
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
@@ -198,12 +207,7 @@ Some additional parameters must be configured directly in Finance.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
 7. In the **Value** field, select **Edit**, and then enter the data channel name.
 8. Save your changes, and complete the derived configuration.
-9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the same import channel name that you created earlier.
-11. In the **Channels** section, in the **Company** field, select a required legal entity. In the **Document context** field, select the configuration that you created earlier.
-12. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
-13. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (PL)** configuration.
-14. Select **Save**, and close the page.
+
 
 ### Configure Finance business data
 
