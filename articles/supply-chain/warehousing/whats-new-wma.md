@@ -19,6 +19,25 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.1.19.0
+
+### New features introduced in version 2.1.19.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- The Wi-Fi screen is now correctly hidden in all contexts.
+- Fields on the details card are now sorted by priority.
+- The empty confirmation label on the details card is now hidden.
+- Translations have been updated.
+- Telemetry is now available in China.
+- The app can now scan the pipe character (|) correctly as a separator.
+- New icons are now provided for action buttons.
+- The worklist and inquiry cards now have full text accessibility pop-ups.
+- Pressing the escape key while entering vendor batches no longer causes the app to crash. 
+- The about screen now shows the latest version correctly.  
+- The app no longer crashes on Android devices that lack of a preinstalled browser. 
+
 ## Version 2.1.17.0
 
 ### New features introduced in version 2.1.17.0

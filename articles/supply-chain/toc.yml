@@ -1711,6 +1711,8 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
+      - name: Inventory On-hand mobile app (preview)
+        href: inventory/inventory-onhand-mobile-app.md
       - name: Archive inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
@@ -1721,12 +1723,16 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
+        - name: Set up product search for Inventory Visibility (preview)
+          href: inventory/inventory-visibility-product-search.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
+        - name: Search for products using the Inventory Visibility app (preview)
+          href: inventory/inventory-visibility-product-search-app.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
@@ -1739,6 +1745,8 @@
           href: inventory/inventory-visibility-api.md
         - name: Inquire into inventory with Copilot through API (preview)
           href: inventory/inventory-visibility-copilot-api.md
+        - name: Log and view successful API posts
+          href: inventory/inventory-visibility-track-inventory-log-history.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
     - name: Sensor Data Intelligence (preview)

@@ -37,11 +37,7 @@ To use Demand planning with Supply Chain Management, you must be running one of 
 Follow these steps to install the Demand planning app in Power Platform admin center.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Follow one of these steps:
-
-    - Select the following link to go directly to the Demand planning installation page: [Install Demand planning](https://go.microsoft.com/fwlink/?linkid=2247704).
-    - In Power Platform admin center, select **Resources** \> **Dynamics 365 apps** on the left navigation pane. Select the **Demand planning (preview)** app, and then select **Install** on the top toolbar.
-
+1. Select **Resources** \> **Dynamics 365 apps** on the left navigation pane. Select the **Demand planning (preview)** app, and then select **Install** on the top toolbar.
 1. Select an environment, review the packages that will be installed, and select the **I agree to the terms of service** checkbox.
 1. Select **Install**.
 
