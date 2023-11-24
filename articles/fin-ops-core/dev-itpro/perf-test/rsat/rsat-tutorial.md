@@ -187,6 +187,7 @@ RSAT can be called from a **Command Prompt** or **PowerShell** window.
         quit
         upload
         uploadrecording
+        uploadsuite
         usage
     ```
 
@@ -622,6 +623,33 @@ Uploads only the Recording file that belongs to one or more specified test cases
 `uploadrecording 123`
 
 `uploadrecording 123 456`
+
+#### uploadsuite
+
+Uploads attachment files (Recording, Execution, and Parameter files) that belongs to one or more specified test suites to Azure DevOps.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadsuite``**``[test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN]``
+
+##### uploadsuite: optional switches
+
++ `/byid`: This switch indicates that the desired test suite is identified by its Azure DevOps ID instead of the test suite name.
+
+##### uploadsuite: required parameters
+
++ `test_suite_name1`: Represents the test suite name. This parameter is required if the /byid switch is **not** specified. This name is the Azure DevOps test suite name.
++ `test_suite_nameN`: Represents the test suite name. This parameter is required if the /byid switch is **not** specified. This name is the Azure DevOps test suite name.
++ `test_case_id1`   : Represents the first test case ID for the recording that should be uploaded to Azure DevOps.
++ `test_case_idN`   : Represents the last test case ID for the recording that should be uploaded to Azure DevOps.
+
+##### uploadsuite: examples
+
+`uploadsuite suiteName`
+
+`uploadsuite suiteName suiteNameToo`
+
+`uploadsuite /byid 123`
+
+`uploadsuite /byid 123 456`
 
 #### usage
 
