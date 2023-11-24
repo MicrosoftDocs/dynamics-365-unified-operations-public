@@ -17,7 +17,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-Regression suite automation tool (RSAT) version 2.2 and later lets you maintain test cases and attachments in the tool itself. In earlier versions, you had to use Microsoft Azure DevOps to maintain test cases and then switch to RSAT to run tests. Therefore, newer versions offer better usability and help improve productivity. Many operations can be done completely in RSAT, and it's also easier to work with test suites.
+Regression suite automation tool (RSAT) lets you maintain test cases and attachments in the tool itself. In earlier versions, you had to use Microsoft Azure DevOps to maintain test cases and then switch to RSAT to run tests. Therefore, newer versions offer better usability and help improve productivity. Many operations can be done completely in RSAT, and it's also easier to work with test suites.
 
 Test plans and test suites continue to be maintained in Azure DevOps.
 
@@ -27,15 +27,11 @@ To use this feature, you must enable the **Enable upload to Azure DevOps** optio
 
 Follow these steps to view information about a test case.
 
-1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
+1. In the **Test Cases** grid, find the relevant test case, and select this by checking the checkmark column, and then click the **Edit** action to open test case information.
 
-    ![Ellipsis button in the Test Cases grid.](media/test-case-details.png)
+    ![Edit test case](media/test-case-details.png)
 
-2. Select the ellipsis button. The menu that appears has two commands: **Open test case** and **Delete Test Case**.
-
-    ![Commands on the ellipsis button menu.](media/test-case-details-context.png)
-
-3. Select **Open test case** to open the **Test Case information** dialog box.
+2. This open the **Test Case information** dialog box.
 
     ![Test Case information dialog box.](media/test-case-information.png)
 
@@ -49,14 +45,14 @@ The **Test Case information** dialog box shows the following information about t
 
 Follow these steps to add a new test case by using RSAT.
 
-1. Select the test suite that you want to add a new test case to (**Procure to Pay – v2** in this example). Then select **New Test Case** to open the **Test Case information** dialog box.
+1. Select the test suite that you want to add a new test case to (**Procure to Pay – v2** in this example). Then select **New** to open the **Test Case information** dialog box.
 
-    ![New Test Case button.](media/test-case-add.png)
+    ![New button](media/test-case-add.png)
 
 2. Enter the name of the test case, and add attachment files. These files include the recording XML file that contains steps for the test case. To add attachment files, select **Add**, and then, in the dialog box that appears, select the files to add as attachments.
 3. When you've finished, select **Save** to save the new test case or **Cancel** to discard it.
 
-    ![Add and Save buttons.](media/add-test-case.png)
+    ![Add and Save buttons](media/add-test-case.png)
 
 When you save a new test case, RSAT copies the attachment files that you selected into your local RSAT working directory. It maintains the copies there so that they can be used with the test case.
 
@@ -84,12 +80,13 @@ You can also use this procedure if you've edited the recording XML file and you 
 
 Follow these steps to delete a test case.
 
-1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
-2. Select the ellipsis button, and then select **Delete Test Case** on the menu.
+1. In the **Test Cases** grid, find the relevant test case, and select this by checking the checkmark column, and then click the **Delete** action to delete a test case.
 
-    ![Delete Test Case command.](media/delete-test-case.png)
+   ![Delete Test Case command.](media/delete-test-case.png)
 
-3. Confirm that you want to delete the test case, and optionally specify a reason for the deletion.
+2. This open a dialog box to confirm that the test case should be deleted. Confirm by selecting **Yes** or cancel by **No**
+
+    ![Delete Test Case command.](media/confirm-delete-test-case.png)
 
 A test case that you delete in RSAT is removed from the current test suite, both locally and in Azure DevOps.
 
