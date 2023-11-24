@@ -29,15 +29,15 @@ Follow these steps to view information about a test case.
 
 1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
 
-    ![Ellipsis button in the Test Cases grid.](media/test-case-details.PNG)
+    ![Ellipsis button in the Test Cases grid.](media/test-case-details.png)
 
 2. Select the ellipsis button. The menu that appears has two commands: **Open test case** and **Delete Test Case**.
 
-    ![Commands on the ellipsis button menu.](media/test-case-details-context.PNG)
+    ![Commands on the ellipsis button menu.](media/test-case-details-context.png)
 
 3. Select **Open test case** to open the **Test Case information** dialog box.
 
-    ![Test Case information dialog box.](media/test-case-information.PNG)
+    ![Test Case information dialog box.](media/test-case-information.png)
 
 The **Test Case information** dialog box shows the following information about the test case:
 
@@ -51,12 +51,12 @@ Follow these steps to add a new test case by using RSAT.
 
 1. Select the test suite that you want to add a new test case to (**Procure to Pay – v2** in this example). Then select **New Test Case** to open the **Test Case information** dialog box.
 
-    ![New Test Case button.](media/test-case-add.PNG)
+    ![New Test Case button.](media/test-case-add.png)
 
 2. Enter the name of the test case, and add attachment files. These files include the recording XML file that contains steps for the test case. To add attachment files, select **Add**, and then, in the dialog box that appears, select the files to add as attachments.
 3. When you've finished, select **Save** to save the new test case or **Cancel** to discard it.
 
-    ![Add and Save buttons.](media/add-test-case.PNG)
+    ![Add and Save buttons.](media/add-test-case.png)
 
 When you save a new test case, RSAT copies the attachment files that you selected into your local RSAT working directory. It maintains the copies there so that they can be used with the test case.
 
@@ -76,7 +76,7 @@ You can remove attachments from a test case when you no longer require them.
 
 - In the **Test Case information** dialog box, select and hold (or right-click) the row for the attachment file, and then select **Remove**.
 
-    ![Remove button.](media/remove-attachment.PNG)
+    ![Remove button.](media/remove-attachment.png)
 
 You can also use this procedure if you've edited the recording XML file and you want to upload the new version to the test case. In this case, you should first remove the existing file and then add the new file.
 
@@ -87,7 +87,7 @@ Follow these steps to delete a test case.
 1. In the **Test Cases** grid, find the relevant test case, and hover over the row until an ellipsis button (**...**) appears between the **Title** and **Parameters File** columns.
 2. Select the ellipsis button, and then select **Delete Test Case** on the menu.
 
-    ![Delete Test Case command.](media/delete-test-case.PNG)
+    ![Delete Test Case command.](media/delete-test-case.png)
 
 3. Confirm that you want to delete the test case, and optionally specify a reason for the deletion.
 
