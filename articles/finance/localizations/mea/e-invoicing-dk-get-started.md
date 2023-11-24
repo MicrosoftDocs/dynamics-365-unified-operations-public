@@ -198,7 +198,7 @@ Some additional parameters must be configured directly in Finance.
 5. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
 6. Select **Save**, and close the page.
 
-==================
+=====================================
 
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
