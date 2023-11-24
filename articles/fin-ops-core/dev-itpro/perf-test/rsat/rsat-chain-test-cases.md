@@ -28,7 +28,7 @@ When RSAT generates the Excel parameters file, saved variables appear in the **S
 
 ![Saved variables in Excel.](media/saved-variables.png)
 
-To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown below.
+To reuse these variables during test playback, copy the variable name and use it in place of a parameter value in the data file of another test (or the same test), as shown below. Variables used in cells with strings like D4 may use variables directly by their name. When variables are used in formulas always surround the variable name by double quotes to make the variable part of a string, consider D9 should show use of the variable surrounded by double quotes.
 
 ![Reusing variables in Excel.](media/reuse-variables.png)
 
@@ -36,7 +36,7 @@ Variables can be used in the same test case where they are defined and can also 
 
 ## Support for formulas of saved variables
 
-You can create formulas that contain saved (copied) variables. If you have been using an older version of the Regression Suite Automation Tool, you will need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are `+`, `-`, `/` and '\'. Only numerical variables can be used in the Regression Suite Automation Tool formulas. Strings or dates are not supported. Always specify variable names within double braces `{{varname}}`. For example, `{{var1}} + {{var2}}`.
+You can create formulas that contain saved (copied) variables. If you have been using an older version of the Regression Suite Automation Tool, you will need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are `+`, `-`, `/` and '\'. Only numerical variables can be used in the Regression Suite Automation Tool formulas. Strings or dates are not supported. Always specify variable names with double braces and surrounded each variable by double quotes and obtain their value by the VALUE function. For example, `VALUE("{{var1}}") + VALUE("{{var2}}")`.
 
 In the image below, two different variables are used in a formula.
 
@@ -44,19 +44,21 @@ In the image below, two different variables are used in a formula.
 
 As of RSAT version 1.220, you can also use Excel functions, such as **ROUND**, **CONCAT**, and **UPPER**, to create formulas with RSAT variables. This feature is implemented using the Excel formula evaluation functionality, so any function supported by Excel is supported by RSAT.
 
+This has changed with RSAT verion 2.6 such that variables that contain numeric values should be consider string, and converter to their number value using the VALUE function.
+
 For example,
 
 + To round a value into the nearest whole number, use:
 
-    `=ROUND({{Item_Price_3274_Copy}}, 0)`
+    `=ROUND(VALUE("{{Item_Price_3274_Copy}}"), 0)`
 
 + To concatenate strings, use:
 
-    `=CONCATENATE({{AccountNum_3274_Copy}}, " ", {{ AddressBP_Locator_3274_Copy}})`
+    `=CONCAT("{{AccountNum_3274_Copy}}", " ", "{{AddressBP_Locator_3274_Copy}}")`
 
 + To calculate and format a date and convert it to a string, use:
 
-    `=TEXT(DATEVALUE({{SystemDate_CurrentDate_3276_Copy}}) - 1, "mm/dd/yyyy")`
+    `=TEXT(DATEVALUE("{{SystemDate_CurrentDate_3276_Copy}}") - 1, "mm/dd/yyyy")`
 
     Always convert RSAT date values to text for reliable test case execution.
 
