@@ -3,7 +3,7 @@ title: Globalization resources
 description: This article includes lists of resources that can help you learn more about country/region-specific functionality and offerings.
 author: sericks007
 ms.date: 02/19/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 audience: Application User

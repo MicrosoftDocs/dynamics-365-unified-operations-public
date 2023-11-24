@@ -172,13 +172,15 @@ To run the periodic task, follow these steps.
 > - Each relevant product must have a **Gross depth**, **Gross width**, and **Gross height** defined.
 > - Each relevant vendor must have a **From port** defined.
 
-## <a name="source-doc-post"></a>Show landed costs in the accounting distribution of product receipts
+## <a name="source-doc-post"></a>Show landed costs in the accounting distribution of product receipts (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 
 <!-- KFM: Preview until further notice -->
 
 This feature enables landed costs to be included in the accounting distribution of purchased product receipts. Therefore, you can more easily identify and track those costs. This feature doesn't affect the product receipt accounting logic that's used in other places in Microsoft Dynamics 365 Supply Chain Management.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Prerequisites
 

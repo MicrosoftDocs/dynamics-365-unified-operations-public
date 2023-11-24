@@ -1,5 +1,5 @@
 ---
-title: Sales trade agreement prices
+title: Sales trade agreement prices (preview)
 description: This article provides information about sales trade agreement prices.
 author: sherry-zheng
 ms.author: chuzheng
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Sales trade agreement prices
+# Sales trade agreement prices (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

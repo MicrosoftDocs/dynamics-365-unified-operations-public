@@ -5,7 +5,7 @@ title: Open financial journal templates in Office
 description: This article describes issues that might occur when you create custom financial journals by using a Microsoft Excel template.
 author: kweekley
 ms.date: 05/14/2021
-ms.topic: index-page
+ms.topic: conceptual
 ms.prod: 
 ms.technology: 
 

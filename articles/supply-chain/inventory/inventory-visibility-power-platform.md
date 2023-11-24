@@ -209,6 +209,10 @@ Delete all out-of-box configurations except for ones contained in Inventory Visi
 
 1. Open the **Inventory Visibility** power app.
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
+The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
+
 1. Go to **Settings (Preview)** - **Admin Settings** - **Delete all configurations** and click **Manage** button.
 
 ## Delete all inventory data
@@ -416,3 +420,7 @@ Refer to [use the allocation user interface](inventory-visibility-allocation.md#
 > When you change the settings for a calculated measure, data on the **Preload the Inventory Visibility Summary** page won't update automatically until the related product data is modified.
 >
 > If your **Preload the Inventory Visibility Summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job, and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+
+## Search for products in the Inventory Visibility app
+
+The *product search* feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color. For details about how to set up this feature, see [Set up product search for Inventory Visibility](inventory-visibility-product-search.md). For details about how to use it in the Inventory Visibility app, see [Search for products using the Inventory Visibility app](inventory-visibility-product-search-app.md).

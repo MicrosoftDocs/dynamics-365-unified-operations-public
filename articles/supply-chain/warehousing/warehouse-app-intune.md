@@ -211,7 +211,7 @@ Obtain a self-signed PFX certificate (.pfx file) either through the Windows Serv
 Follow these steps to create an app registration for PFXImport PowerShell in Microsoft Entra ID.
 
 1. Sign in to Azure.
-1. From the **Home** page, go to **Manage Azure Active Directory**.
+1. From the **Home** page, go to **Manage Microsoft Entra ID**.
 1. In the navigation pane, select **App registrations**.
 1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:

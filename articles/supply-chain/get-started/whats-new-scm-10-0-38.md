@@ -23,6 +23,8 @@ This article lists features that are either new or changed in Microsoft Dynamics
 - **General availability of release (self-update):** December 2023
 - **General availability of release (auto-update):** February 2024
 
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
 ## Features included in this release
 
 The following table lists the features that are included in this release. We might update this article to include features that were added to the build after this article was originally published.
@@ -32,8 +34,10 @@ The following table lists the features that are included in this release. We mig
 | Cost management | [Evaluate discrete manufacturing costs using standard cost](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/evaluate-costs-discrete-manufacturing-using-standard-cost) |  This enhancement for the Global Inventory Accounting enables discrete manufacturing companies to perform parallel inventory accounting practices for standard cost using multiple configurations. Though it's possible to enable this feature in Supply Chain Management 10.0.38, we recommend against doing so until further notice because additional service upgrades are still required (expected in early 2024). | Feature management:<br>*(Preview) Evaluate costs in discrete manufacturing using standard cost in Global Inventory Accounting*  |
 | Inventory and logistics | [Apply compound charges to quotations and sales orders](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/apply-compound-charges-quotations-sales-orders) | *Coming soon* |  <p>Feature&nbsp;management:</p><ul><li>*Period charges*</li><li>*Sequence and compound for customer charges*</li><li>*Unit of measure for line level charges*</li></ul> |
 | Inventory and logistics | [Enhanced order processing in Pricing management](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enhanced-order-processing-pricing-management) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [Find products and on-hand information by attribute](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/find-products-on-hand-information-attribute) | [Search for products using the Inventory Visibility app](../inventory/inventory-visibility-product-search-app.md)<br><br>[Query with product search](../inventory/inventory-visibility-api.md#product-search-query) (API) | Enabled by default |
+| Inventory and logistics | Log and view successful API posts in Inventory Visibility | [Log and view successful API posts](../inventory/inventory-visibility-track-inventory-log-history.md) | Enabled by default |
 | Inventory and logistics | [Manage prices with the pricing management workspace](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-prices-pricing-management-workspace) | Provides a pricing management workspace, which lets sales managers know about impending price rule status changes and supports their choice to modify pricing policies. Sales managers can perform light tasks to enable or disable the pricing rules without leaving the workspaces. | Feature management:<br>*(Preview) Pricing management workspace* |
-| Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | *Coming soon* | Enabled by default |
+| Inventory and logistics | [View and manage inventory with a new mobile app](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/view-manage-inventory-new-mobile-app) | [Inventory On-hand mobile app](../inventory/inventory-onhand-mobile-app.md) | Enabled by default |
 | Manufacturing and asset management | Change the asset type of existing assets | [Change the asset type of existing assets](../asset-management/objects/change-asset-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
 | Manufacturing and asset management | Change the functional location type of existing functional locations | [Change the type of existing functional locations](../asset-management/functional-locations/change-functional-location-type.md) | Feature management:<br>*(Preview) Change types on assets and functional locations*  |
 | Manufacturing and asset management | [React to last-minute changes in production](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/react-last-minute-changes-production) | [Feature enhancements included in this release](#enhancements) | <p>Feature&nbsp;management:</p><ul><li>*Dynamic positive days for Planning Optimization*</li><li>*Prevent production orders to be released when full material is not available*</li><li>*Use of margins for scheduling orders*</li></ul> |
@@ -74,7 +78,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).<!--KFM: Confirm link -->
 
 ### Bug fixes
 

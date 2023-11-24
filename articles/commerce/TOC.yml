@@ -136,26 +136,6 @@
           href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/commerce
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/commerce
-      - name: Learning catalog
-        items:
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md?
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -730,8 +710,20 @@
             href: dev-itpro/copy-content-between-tenants.md
           - name: Bulk import and export digital assets using manifests
             href: dev-itpro/import-export-manifest.md
+        - name: Retail product kits
+          items:
+          - name: Retail product kit setup overview
+            href: retail-product-kit-setup.md
+          - name: Create retail product kits
+            href: create-retail-product-kits.md
+          - name: Generate assembly and disassembly orders
+            href: generate-assembly-and-disassembly-orders.md
+          - name: Process kit assembly and disassembly orders
+            href: process-kit-assembly-and-disassembly-orders.md
         - name: Consume Commerce runtime (CRT) Product service requests
           href: dev-itpro/crt-product-requests.md
+        - name: Product discovery checklist
+          href: product-discovery-checklist.md
       - name: Pricing and discounts
         items:
         - name: Discounts
@@ -906,12 +898,26 @@
           href: customize-email-delivery-mode.md
         - name: Change mode of delivery in POS
           href: POS-change-delivery-mode.md
-      - name: Distributed order management
+      - name: Distributed order management (DOM)
         items:
         - name: DOM overview
           href: dom.md
-        - name: Cost configuration
-          href: cost.md
+        - name: Set up DOM
+          href: dom-set-up.md
+        - name: DOM rules
+          href: dom-rules.md
+        - name: DOM cost configuration
+          href: dom-costs.md
+        - name: DOM processing
+          href: dom-processing.md
+        - name: Results of DOM runs
+          href: dom-runs-results.md
+        - name: Clean up DOM fulfillment plans and logs
+          href: dom-clean-up.md
+        - name: DOM extensibility
+          href: dom-extensibility.md
+        - name: DOM limitations
+          href: dom-limitations.md
       - name: Order fulfillment and processing
         items:
         - name: Store order fulfillment

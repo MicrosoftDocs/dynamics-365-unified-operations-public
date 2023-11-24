@@ -1,5 +1,5 @@
 ---
-title: Design forecast models
+title: Design forecast models (preview)
 description: This article provides information about forecast models. These models let you arrange and configure tiles to define the forecast that is made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 author: t-benebo
 ms.author: benebotg
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Design forecast models
+# Design forecast models (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -126,6 +126,12 @@ This section describes the purpose of each type of forecast tile. It also explai
 - *ETS* – Error, trend, seasonality
 - *Prophet* – Facebook Prophet
 - *Best fit model*
+
+## Finance and operations – Azure Machine Learning tiles
+
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+
+For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning (preview)](custom-azure-machine-learning-algorithms.md).
 
 ### Save tiles
 
