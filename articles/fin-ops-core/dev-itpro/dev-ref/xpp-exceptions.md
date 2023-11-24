@@ -179,6 +179,8 @@ Occasionally, you want to do nothing inside your **catch** block. However, the X
 
 If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception, (unless it is a **UpdateConflict** or a **DuplicateKeyException**). Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
+To catch **UpdateConflict** or **DuplicateKeyException** inside a transaction, the exception should be explicitly specified in catch statement, like: `catch (Exception::DuplicateKeyException)`. A general **catch-all** statement `catch{}` cannot catch **UpdateConflict** or **DuplicateKeyException** inside a transaction.
+
 The finally clause will be executed even in transaction scope.
 
 ## Exceptions and `using` statements
