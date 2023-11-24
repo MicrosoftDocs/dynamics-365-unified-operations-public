@@ -19,31 +19,46 @@ ms.custom: bap-template
 
 <!--KFM: Preview until 10.0.38 GA -->
 
-Increase your order fulfillment rate by using on-hand inventory and planned receipts for last-minute orders. Master planning will suggest creating a new planned order when an item is needed outside of its lead time while using existing supply if it is needed within the lead time. You can control this using the **Dynamic positive days** parameter.
+Dynamic positive days help increase your sales order fulfillment rate by using on-hand inventory and planned receipts for last-minute orders. When you use dynamic positive days, master planning will apply the following rules to determine whether to create a new planned order or use existing supply:
 
-To enable this feature you must enable the following feature on feature management, available from 10.0.38:
+- When an item is needed outside of its lead time, master planning will suggest creating a new planned order.
+- When an item is needed within the lead time, master planning will suggest using existing supply.
 
-- Dynamic positive days for Planning Optimization
+When a customer requests an item to be delivered outside of that item's lead time, then the system shouldn't peg the sales order against existing purchase orders that are confirmed before the requested ship date on the sales order. Instead, the sales order should be pegged against a new planned purchase order. This strategy allows sales orders that are created later, but are requested earlier than the first sales order, to use the existing purchase orders. It lets you fulfill all demand while better managing your supply and delivery dates (including when using capable to promise).
 
-And then setup the system to use Dynamic positive must be done by enabling the parameter **Use dynamic positive days** on the **Master planning parameters** page, under the **General** tab. It applies to the whole system, all your companies and master plans.
+<!--KFM: Definitions of "positive days" and "dynamic positive days" are needed. Make it clear how they are different. Link to [Master plans overview](master-plans.md)-->
+
+The system doesn't only use the lead time when deciding which supply to peg, but outside of the lead time, it also takes into account the positive days. The number of positive days that apply for a given item are set on its item coverage group, and this value can be overwritten at the master plan level. This allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable to promise versus actual for the day-to-day business.
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-## Why use dynamic positive days
+## Prerequisites
 
-If a sales order is wanted outside the item's lead time, then we do not want the sales order to be pegged against existing purchase orders that are confirmed before the requested ship date on the sales order. Instead, the sales order should be pegged against a new planned purchase order.
+To use dynamic positive days, your system must meet the following requirements:
 
-The reason is that sales orders that are created subsequently and that are requested earlier than the first sales order will be able to use the existing purchase orders. With this, it will be possible to fulfill all the sales orders demand, and in general, provide better supply and dates (including when using capable to promise).
+- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
+- The feature that is named *Dynamic positive days for Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Master planning calculation
+## Set up your system to use positive days
 
-Master planning will suggest creating a new planned order when an item is needed outside of its lead time while using existing supply if it is needed within the lead time.
+Follow these steps to set up your system to use positive days:
 
-It is not just the lead time that is used for evaluation, but outside of the lead time, it will take into account the positive days.
+1. Go to **Master planning \> Setup \> Master planning parameters**.
+1. Open the **General** tab.
+1. Set **Use dynamic positive days** to *Yes*.
+1. On the Action Pane, select **Save**.
 
-Note the number of positive days for a given item are set on the Item coverage group associated, and they can be overwritten at the master plan level. This allows certain master plans to have a higher number of positive days than others, allowing different plans to be used for capable to promise versus actual for the day-to-day business.
+This setting applies all legal entities (companies) and master plans in your Supply Chain Management environment.
 
-## Example 1: Demand inside of the lead time
+## Assign the number of positive days to an item coverage group
+
+## Assign the number of positive days to a master plan
+
+## Example scenarios
+
+This section provides few example scenarios to help you understand how dynamic positive days work.
+
+### Example scenario 1: Demand inside of the lead time
 
 *Given:*
 
@@ -64,7 +79,7 @@ Note the number of positive days for a given item are set on the Item coverage g
 
 ![A line of days and numbers Description automatically generated](media/image1.png)
 
-## Example 2: Demand outside of the lead time
+## Example scenario 2: Demand outside of the lead time
 
 *Given:*
 
@@ -88,7 +103,7 @@ Note the number of positive days for a given item are set on the Item coverage g
 
 ![A screenshot of a graph Description automatically generated](media/image2.png)
 
-## Example 3: Sales order within the positive days but outside of the lead time
+## Example scenario 3: Sales order within the positive days but outside of the lead time
 
 *Given:*
 
