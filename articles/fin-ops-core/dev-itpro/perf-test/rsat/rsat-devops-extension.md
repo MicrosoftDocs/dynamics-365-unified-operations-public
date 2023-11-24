@@ -50,15 +50,6 @@ When you configure the Azure DevOps agent, follow these guidelines:
     3. Select and hold (or right-click) the agent service, and then select **Properties**.
     4. On the **Identity** tab, select the **This user** option, and then specify the local administrator user that your Azure DevOps agent will run as. Use the format *domain\\username*. Then enter and confirm the password.
 
-        Next, you must give the agent service permission to access Microsoft Excel COM objects.
-
-    5. In the Component Services app, expand **Component Services** \> **Computers** \> **My Computer**, and select **DCOM Config**.
-    6. Find **Microsoft Excel Application** (or **000208D5-0000-0000-C000-000000000046**: this value can vary, depending on the version of Excel that is installed on your computer).
-    7. Select and hold (or right-click), and then select **Properties**.
-    8. On the **Security** tab, for the **Launch and Activation Permissions** category, select the **Customize** option. Then select **Edit**, and provide full access to the user. Repeat this step for the other two permission categories (**Access Permissions** and **Configuration Permissions**).
-
-        ![Configuring Excel DCOM security.](media/excel-dcom-security.png)  
-
 ## Configure Azure DevOps pipelines to run RSAT tasks
 
 When you configure Azure DevOps pipelines to run RSAT tasks, you have two options:
