@@ -41,7 +41,7 @@ Before you begin the procedures in this article, complete the following prerequi
 - Create secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
 
     - The **Service ID** which uniquely identifies the company by the provider of electronic documents delivery service.
-    - The **Group ID** which is required for internal routing within the infrastructure of the provider of electronic documents delivery service.
+    - The **Group** which is required for internal routing within the infrastructure of the provider of electronic documents delivery service.
     - The **Token** which grants the authorization to access the infrastructure of the provider of electronic documents delivery service.
 
 - Make sure that the following Electronic Reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
@@ -70,8 +70,8 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **OIOUBL Sales invoice processing** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with Edicom** action.
-6. In the **Parameters** section, select **ServiceI D**, and then select the name of the secret that you previously created for the legal entity's Service ID.
-7. Select **Group ID**, and then select the name of the secret that you previously created for the legal entity's Group ID.
+6. In the **Parameters** section, select **Service ID**, and then select the name of the secret that you previously created for the Service ID.
+7. Select **Group**, and then select the name of the secret that you previously created for the Group.
 8. Select **Token**, and then select the name of the secret that you created for the token.
 9. Repeat steps 5 through 8 for the **Waiting for response from Edicom** action.
 10. Select **Save**, and close the page.
@@ -169,18 +169,18 @@ For more information, see [Work with Electronic document submission log](../glob
 
 ## Receive incoming electronic invoices
 
-Complete the following additional configuration steps for the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that's used for outgoing invoice submission.
+To enable import of incoming invoices in OIOUBL format, complete the following additional configuration steps for the same version of the **Danish electronic invoice (DK)*** electronic invoicing feature that's used for outgoing invoice submission.
 
-1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the same version of the **Polish electronic invoice (PL)** electronic invoicing feature that was configured for outgoing invoices submission.
+1. In RCS, on the **Globalization features** tile, on the **Electronic invoicing** tile, select the required version of the **Danish electronic invoice (DK)*** electronic invoicing feature.
 2. On the **Setups** tab, in the grid, select **Import vendor invoice**, and then select **Edit**.
 3. On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. Whatever you do, make a note of the value, because you will use it in later configuration steps.
-4. Select the **Service URI** parameter, and make sure that a valid URI is configured.
-5. Select the **Client ID** parameter, and then select the name of the secret that contains the client identifier.
-6. Select the **Certificate name** parameter, and then select the name of the digital certificate that you created.
-7. Select the **Start date** parameter, and then define the initial date for the first receipt of invoices from KSEF. All invoices that have dates between the **Start date** value and the current receiving date will be downloaded. Each successive receiving process will start from the date of the previous process.
-8. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined.
+4. Select the **Service ID** parameter, and then select the name of the secret that contains the Service identifier.
+5. Select the **Group** parameter, and then select the name of the secret that contains the Group identifier.
+6. Select the **Token** parameter, and then select the name of the secret created for the token.
+7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same import channel name that you previously defined in step 3.
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you will use it in later configuration steps.
-10. Select **Save**, and close the page. 
+10. Select **Save**, and close the page.
+11. Complete, publish and deploy the configured version of the **Danish electronic invoice (DK)*** electronic invoicing feature.
 
 ### Finance configuration
 
@@ -188,15 +188,11 @@ Some additional parameters must be configured directly in Finance.
 
 1. Make sure that the following Electronic Reporting configurations are imported:
 
-    - Vendor invoice import (PL)
+    - Vendor invoice import (DK)
     - Vendor invoice Mapping to destination (PL)
 
 2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
 3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-
-    > [!NOTE]
-    > The derived configuration must differ from the [configuration](#ExportChannel) that's used for the invoice *submission* setup. 
-
 4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
 5. Open the **DataChannel** definition for editing in the designer.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
