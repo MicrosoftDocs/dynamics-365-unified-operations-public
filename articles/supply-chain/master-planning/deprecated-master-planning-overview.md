@@ -16,6 +16,9 @@ ms.custom: bap-template
 
 [!include [banner](../../includes/banner.md)]
 
+> [!NOTE]
+> While it is strongly recommended to migrate to Planning Optimization for the reasons outlined below, it is possible to continue using the deprecated master planning engine during preparation for your migration, without requesting an exception from Microsoft. This is done with a few prerequisites and parameter setup. Please follow the directions in [Continue using deprecated master planning for some companies](continue-using-deprecated-planning.md). 
+
 As [previously announced](../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), the built-in master planning engine is now deprecated. This means that it's no longer supported (unless customers face a blocking issue or a regression in functionality) and Microsoft is no longer investing in it (no new features will be released).
 
 Planning Optimization is the master planning engine for Supply Chain Management and completely replaces the built-in master planning engine.
