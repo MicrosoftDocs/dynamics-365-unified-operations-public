@@ -38,6 +38,14 @@ Before you begin the procedures in this article, complete the following prerequi
 
 This chapter provides the information how to configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
 
+The following required credentials must be prliminary obtailned from **Edicom** to enable integration of the Electronic Invoicing service with the list-mile connector. 
+
+- The **Service ID** which uniquely identifies the company by Edicom.
+- The **Group** which is required for internal routing within the Edicom infrastructure.
+- The **Token** which grants the authorization to access the Edicom services.
+
+These credentials must be uploaded to the secrets created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secrets will be used in the related Electronic Invoicing feature pipeline actions as parameters.
+
 9. <a id="OutputFile"></a>On the 
 you [created earlier](#OutputFile).
 
