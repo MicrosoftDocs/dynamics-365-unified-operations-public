@@ -46,6 +46,10 @@ The following required credentials must be prliminary obtailned from **Edicom** 
 
 These credentials must be uploaded to the secrets created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secrets will be used in the related Electronic Invoicing feature pipeline actions as parameters.
 
+### Integration with "NemHandel" in Denmark
+
+For the details of the electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, refer to [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
+
 9. <a id="OutputFile"></a>On the 
 you [created earlier](#OutputFile).
 
