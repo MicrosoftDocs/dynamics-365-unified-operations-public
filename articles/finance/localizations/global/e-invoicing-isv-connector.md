@@ -25,13 +25,36 @@ Independent Software Vendor (ISV) last-mile connector complements the standard E
 
 This article provides information about how to configure and use the Electronic Invoicing service ISV last-mile connector.
 
+## Prerequisites
+
+Before you begin the procedures in this article, complete the following prerequisites:
+
+- The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
+  > [!IMPORTANT]
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV connector. For more information, see [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md)
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
+- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
+
+    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
+    - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)  
+- Activate the integration between your Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
+- Create secrets in Azure Key Vault, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md):
+
 ## RCS
 ...RCS, follow these steps:
 
-1. Consult the list of [generally available Electronic invoicing features](../e-invoicing-configuration-rcs.md#generally-available-features).
-2. Select and import the Electronic invoicing feature. For more information, see [Import an Electronic invoicing feature from Microsoft configuration provider](../e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider).
-3. Create an Electronic invoicing feature for your organization. For more information, see [Create an Electronic invoicing feature under your organization provider](../e-invoicing-get-started.md#create-an-electronic-invoicing-feature-under-your-organization-provider).
+1. Consult the list of [generally available Electronic invoicing features](e-invoicing-country-specific-availability.md).
 
+
+
+9. <a id="OutputFile"></a>On the 
+you [created earlier](#OutputFile).
+
+
+    > [!NOTE]
+    > The **Vendor invoice import (DK)** format configuration is based on the parent **Vendor invoice import** format configuration. The formats use the **Invoice model** configuration and the **Vendor invoice Mapping to destination** configuration. All required additional configurations are automatically imported.
+
+![Property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
 ## Additional resources
 
