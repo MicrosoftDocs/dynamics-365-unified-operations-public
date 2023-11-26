@@ -34,7 +34,9 @@ Before you begin the procedures in this article, complete the following prerequi
 - Become familiar with Electronic invoicing functionality - [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 - Consult the list of [available Electronic invoicing features](e-invoicing-country-specific-availability.md).
 
+## Integration with Edicom
 
+This chapter provides the information how to configure and use the Electronic Invoicing ISV last-mile connector's integration with the Global e-Invoicing Platform provided by [Edicom](https://edicomgroup.com/electronic-invoicing).
 
 9. <a id="OutputFile"></a>On the 
 you [created earlier](#OutputFile).
