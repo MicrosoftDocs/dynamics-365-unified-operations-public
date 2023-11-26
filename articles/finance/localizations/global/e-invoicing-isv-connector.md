@@ -46,6 +46,21 @@ The following required credentials must be prliminary obtailned from **Edicom** 
 
 These credentials must be uploaded to the secrets created in the **Azure Key Vault** managed by your company, for more information see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). Then the secrets will be used in the related Electronic Invoicing feature pipeline actions as parameters.
 
+### Electronic invoices submission
+
+The following pipeline actions are introduced for enabling outbound documents submission via the ISV list-mile connector.
+
+- **Integrate with Edicom**
+- **Waiting for response from Edicom**
+- **Get status from Edicom**
+
+### Electronic invoices receiption
+
+The **Edicom service** feature setup type is introduced for enabling inbound documents receiving via ISV the list-mile connector.
+
+The following pipeline actions are introduced for enabling integration via ISV the list-mile connector.
+
+
 ### Integration with "NemHandel" in Denmark
 
 For the details of the electronic invoicing in Denmark, including the integration with [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, refer to [Get started with Electronic invoicing for Denmark](../mea/e-invoicing-dk-get-started.md)
