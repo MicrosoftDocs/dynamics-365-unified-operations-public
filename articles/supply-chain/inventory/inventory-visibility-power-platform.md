@@ -17,15 +17,16 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This article describes some basic usage of the Inventory Visibility power app.
+This article describes how to use the Inventory Visibility app, which runs in Microsoft Power Apps.
 
-Inventory Visibility power app offers two versions of model-driven user experiences for visualization. Users now have the option to choose between the new version UI (referred to as UI Version 2 in this article) and the legacy UI (also refferred to as UI Version 1 in this article).
+The Inventory Visibility app offers two versions of model-driven user experiences for visualization. Users now have the option to choose between the new version UI (referred to as UI Version 2 in this article) and the legacy UI (also referred to as UI Version 1 in this article).
 
 ## Introduction
 
 For UI Version 2 users, refer to the following sections.
+
 - [Authenticate the Inventory Visibility app](#authenticate-the-inventory-visibility-app)
-- [Find service endpoint and read cofiguration](#find-service-endpoint-and-read-configuration)
+- [Find service endpoint and read configuration](#find-service-endpoint-and-read-configuration)
 - [Update configuration](#update-configuration)
 - [Partition configuration](#partition-configuration)
 - [Onhand index configuration](#onhand-index-configuration)
@@ -116,6 +117,7 @@ A list of indexes are provided in the default onhand index configuration. To mak
 
 > [!TIP]
 > Be aware of the following tips when setting up your onhand index configuration:
+>
 > - Base dimensions that are reserved in partition configuration (set number 0) should not be included in other onhand index configurations.
 > - If you are not interested in querying some specific dimension combinations, set up an index with only one base dimension `Empty`.
 

@@ -14,49 +14,61 @@ ms.custom: bap-template
 
 # Inventory Visibility app user interface version 2
 
-Inventory Visibility power app offers a new model-driven user experience as user interface version 2 (referred to as UI version 2 in this article)
+The Inventory Visibility app runs in Microsoft Power Apps. The current version of the app supports two user interface versions. You can choose which version you prefer to use. The following versions are available:
 
-Inventory Visibility user now have the option to use only the legacy UI (also referred to as UI version 1 in this article) or with UI version 2.
+- User interface version 2, which is referred to as *UI version 2* in this article
+- User interface version 1, which is referred to as *UI version 1* in this article
 
-This article describes the difference between two versions, new operations supported under UI version 2, and how to migrate to UI version 2.
+This article describes the differences between the two versions, the new operations supported in UI version 2, and how to migrate from UI version 1 to UI version 2.
 
-## Supported features and configurations in different versions
+## Features and configurations supported by each version
 
-Below settings and features are only accessible in the UI version 1 configuration page:
+The following settings and features are only accessible from the UI version 1 configuration page:
 
-- Clean up of preloaded on-hand results. Note the majority of preloaded on-hand feature settings and viewing the preloaded on-hand result is supported by both versions, only the clean up of existing preloaded on-hand result needs to be done in version 1 UI
+- Clean up of preloaded on-hand results
 - Inventory Allocation relevant operations
 
-Below settings and features are only accessible in UI version 2 pages:
+> [!NOTE]
+> The majority of the features for setting up and viewing preloaded on-hand results are supported by both UI versions. Only the clean up of existing preloaded on-hand result requires UI version 1.
 
-- Support for 180 days available-to-promise (ATP) calculation
-- Inventory adjustment via UI
+The following settings and features are only accessible from UI version 2 pages:
 
-Below settings are accessible in both version 1 and version 2 pages, and the change in one version would be synchronized to the other version:
+- Support for 180 days available-to-promise (ATP) calculations
+- Inventory adjustments via the user interface
+
+The following settings are accessible both in UI version 1 and UI version 2 pages. Changes are synchronized between versions:
 
 - Index hierarchy setup
 
-For other features and settings, they can be accessed in the both versions while the changes will not synchronize to corresponding pages in the other version.
+All other features and settings can be accessed in the both UI versions, but changes aren't synchronized between versions.
 
-## Configuring Inventory Visibility in UI version 2
+## Switch between UI versions
 
-For users first time installing IV after `${specificVersion}`, the default user interface version is version 2. For earlier users whose first installation is before `${specificVersion}`, the default configuration is version 1.
+If the first version of Inventory Visibility that you installed was `${specificVersion}` or later, the default user interface is UI version 2. If you first installed an older version of Inventory Visibility, the default user interface is UI version 1. <!-- KFM: Did you mean to specify a number here (instead of `${specificVersion}`)?-->
 
-### Switching user interface versions
+### Switch between UI versions 1 and UI version 2
 
-User can go to `UI Version Control` - `Configuration entity version` to set the version value. You can select the row and update the version number from 1 to 2. After the value is updated, configuration update API calls read configuration value from data verse entities corresponding to the version 2 user interface.
+Follow these steps to switch between UI versions:
 
-Users are still able to access legacy UI (UI version 1) pages on the lower left of the Inventory Visibility power app menu and make adjustments on these pages even if the UI version 2 is enabled.
+1. Open the **Inventory Visibility** app in Power Apps.
+1. On the navigation pane, select **UI Version Control**.
+1. Select **Configuration entity version**.
+1. Set **Entity version** to *2* or *1*, depending on which version of the UI (and Dataverse configuration entities) you want to use.
+1. If you're moving to UI version 2, you'll probably want to migrate your UI version 1 settings, as described in the next section.
 
-However, when updating configurations, Inventory will only read from the pages under current UI version.
+### Migrate configuration settings from UI version 1 to UI version 2
 
-### Migrating configuration from version 1 to version 2
+When you change from UI version 1 to UI version 2, Inventory Visibility updates to only use configuration values from the Dataverse entities that correspond to UI version 2. You'll still be able to read and update the legacy Dataverse entities using the pages from UI version 1, but changes to these settings won't have any effect unless you switch the entire app back to UI version 1. While UI version 2 is active, only the settings made on the UI version 2 pages are used. To view and edit the legacy settings from UI version 1, open the Inventory Visibility menu at the bottom of the navigation pane and then select **Legacy UI**. <!-- KFM: Please confirm this edit. -->
 
-For users already using version 1 and wish to switch to version 2 without manually re-create the entries, go to `Settings (Preview)` - `Admin settings` - `Migrate entities to V2` and click `Manage` button. This triggers a job to copy existing settings in version 1 interface to its equivalence in version 2.
+After you change to UI version 2, you can migrate your previous UI version 1 settings to the new Dataverse entities used by UI version 2. You can switch back to UI version 1 at any time, but you can't migrate settings from UI version 2 to UI version 1. If you later return to UI version 2 after working in UI version 1 for a while, you can remigrate your UI version 1 settings, but only newly created records will be migrated; updated and deleted records aren't replicated, so all of your previous UI version 2 settings will be kept.
 
-User can migrate entities multiple times. For the difference between migrations, only newly created records will be included in the latter migrations. The updated and deleted records will not be migrated.
+To migrate your settings from UI version 1 to UI version 2, follow these steps:
 
-There is no reverse process to migrate configuration from version 2 to version 1. However, user can switch the user interface to version 1 at any time by going to `UI Version Control` - `Configuration entity version` to set the version value as 1.
+1. Open the **Inventory Visibility** app in Power Apps.
+1. On the navigation pane, select **Admin settings**.
+1. On the **Migrate entities to V2** tile, select **Manage**.
+1. A dialog opens where you must enter the credentials you used when installing the Inventory Visibility service. Enter the credentials and then select **Login**.
+1. The system copies your existing settings from UI version 1 to UI version 2.
 
 ## Set up features and configurations in UI version 2
 
