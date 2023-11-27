@@ -2,10 +2,10 @@
 title: Maintain test cases in Regression suite automation tool (RSAT)
 description: This article explains how to maintain test cases and attachments in Regression suite automation tool (RSAT).
 author: FrankDahl
-ms.date: 04/12/2021
+ms.date: 11/27/2023
 ms.topic: article
 audience: Developer
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
@@ -82,11 +82,11 @@ Follow these steps to delete a test case.
 
 1. In the **Test Cases** grid, find the relevant test case, and select this by checking the checkmark column, and then click the **Delete** action to delete a test case.
 
-   ![Delete Test Case command.](media/delete-test-case.png)
+   ![Screenshot of the Delete Test Case command.](media/delete-test-case.png)
 
 2. This open a dialog box to confirm that the test case should be deleted. Confirm by selecting **Yes** or cancel by **No**
 
-    ![Delete Test Case command.](media/confirm-delete-test-case.png)
+    ![Screenshot of the confirmation for the Delete Test Case command.](media/confirm-delete-test-case.png)
 
 A test case that you delete in RSAT is removed from the current test suite, both locally and in Azure DevOps.
 
