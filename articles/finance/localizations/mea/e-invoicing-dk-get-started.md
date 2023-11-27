@@ -31,7 +31,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
   > [!IMPORTANT]
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV connector. For more information, see [ Use the electronic invoicing service ISV connectors](../global/e-invoicing-isv-connector.md)
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV connector. For more information, see [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -197,17 +197,6 @@ Some additional parameters must be configured directly in Finance.
 4. In the **Import sources** section, in the **Name** field, enter the same **OutputFile** name that you [created earlier](#OutputFile).
 5. In the **Data entity name** field, select **Vendor invoice header**. In the **Model mapping** field, reference the **Vendor invoice import (DK)** configuration.
 6. Select **Save**, and close the page.
-
-=====================================
-
-2. In the **Electronic reporting** workspace, on the **Reporting configurations** tile, select the **Customer invoice context model** configuration.
-3. Select **Create configuration**, and then, in the drop-down dialog box, select **Derive from Name: Customer invoice context model, Microsoft** to create a derived configuration.
-4. Open the derived configuration for editing in the designer, and then select **Map model to datasource**.
-5. Open the **DataChannel** definition for editing in the designer.
-6. In the **Data sources** tree, expand the **$Context\_Channel** container.
-7. In the **Value** field, select **Edit**, and then enter the data channel name.
-8. Save your changes, and complete the derived configuration.
-
 
 ### Configure Finance business data
 
