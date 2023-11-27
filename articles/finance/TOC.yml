@@ -205,13 +205,7 @@
         - name: Default offset accounts for vendor invoice journals and invoice approval journals
           href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md  
         - name: Accounting distributions and subledger journal entries for vendor invoices
-          href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md    
-        - name: Key invoice data into accounts payable using a vendor invoice
-          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
-        - name: Key invoice data into accounts payable using an approval journal
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
-        - name: Key invoice data into the AP system using invoice pool
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+          href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md           
         - name: Copy vendors by using shared number sequences
           href: accounts-payable/vendor-copy.md
         - name: Apply a payment schedule to the invoice journal
@@ -226,18 +220,6 @@
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Invoice capture solution
         items:
-        - name: Import and key vendor data
-          items: 
-          - name: Key invoice data into accounts payable using a vendor invoice
-            href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
-          - name: Key invoice data into accounts payable using an approval journal
-            href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
-          - name: Key invoice data into the AP system using invoice pool
-            href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-          - name: Record a vendor invoice in the invoice journal
-            href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-          - name: Record vendor invoice and match against received quantity
-            href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md    
         - name: Invoice capture overview
           href: accounts-payable/invoice-capture-overview.md
         - name: Invoice capture install
@@ -258,6 +240,18 @@
           href: accounts-payable/invoice-capture-rec-files.md
         - name: Invoice capture FAQ  
           href: accounts-payable/invoice-capture-faq.md
+      - name: Import and key vendor data
+        items: 
+        - name: Key invoice data into accounts payable using a vendor invoice
+          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
+        - name: Key invoice data into accounts payable using an approval journal
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
+        - name: Key invoice data into the AP system using invoice pool
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+        - name: Record a vendor invoice in the invoice journal
+          href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+        - name: Record vendor invoice and match against received quantity
+          href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md      
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
