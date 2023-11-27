@@ -52,10 +52,10 @@ The following pipeline actions are introduced for enabling outbound documents su
 
 - **Integrate with Edicom**
 
- **Country**                                             | **Format** |     **Base Documents**     | **Date** | **Documentation**     |
-|-----------------------------------------------------------------------|-------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Poland | FA2 ?| <li>Customer invoice</li><li>Free text invoice</li><li>Project invoice</li><li>Advance invoice</li><li>Vendor invoice</li> | 01.10.2023 | [Electronic invoicing for Poland](e-invoicing-pol-get-started.md) |
-| ...                    | ...    |  ...   | ...   |                   |
+ **Parameter**                                            | **Value** | **Description**     |
+|-----------------------------------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Service URI | ssssss | Default value provided. No change needed.|
+| ...                   | ...   |                   |
   
 - **Waiting for response from Edicom**
 - **Get status from Edicom**
