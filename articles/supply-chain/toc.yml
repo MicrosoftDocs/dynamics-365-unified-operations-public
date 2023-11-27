@@ -1813,6 +1813,8 @@
           href: master-planning/more-about-dynamic-negative-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
+        - name: Calculate requested ship dates for purchase orders (preview)
+          href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
         - name: Create a plan for a site
@@ -2323,6 +2325,8 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
+        - name: Calculate requested ship dates for purchase orders (preview)
+          href: master-planning/supplier-requested-confirmed-dates.md
         - name: Review and accept changes to confirmed purchase orders (preview)
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
