@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Human Resources
 Human Resources (preview) is an app that integrates with Dynamics 365 Human Resources on the finance and operations environment. It's designed and developed for organizations to ensure their employees can 
 request, edit, and cancel time off and leave of absence requests seamlessly. Employees can view their leave balances, upcoming leaves and leave history. Managers can also view and approve or reject requests.
 
-The application is used within Microsoft Teams or in a web browser and provides an overall view of employees leave requests, leave balances, draft leave requests, leave requests taken in the past. The Human Resources app can be used both on mobile and desktop. Administrators of an organization need to install the Human Resources app and share it to Microsoft Teams for the organization users to use.
+The application cab be used within Microsoft Teams or in a web browser and provides an overall view of employees leave requests, leave balances, draft leave requests, leave requests taken in the past. The Human Resources app can be used both on mobile and desktop. Administrators of an organization need to install the Human Resources app and share it to Microsoft Teams for organization users to use.
 
 >[!Note:]
 >There will be updates for the Human Resources app that will be available, it's not recommended to customize the app.  
