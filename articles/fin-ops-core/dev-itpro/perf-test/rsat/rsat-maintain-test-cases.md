@@ -21,7 +21,7 @@ Regression suite automation tool (RSAT) lets you maintain test cases and attachm
 
 Test plans and test suites continue to be maintained in Azure DevOps.
 
-To use this feature, you must enable the **Enable upload to Azure DevOps** option. Changes that are made in RSAT are then automatically uploaded to Azure DevOps and will be available there. Therefore, test suites will include the updated test cases that are available to other users or that can be run in Azure DevOps by a pipeline.
+To use this feature, you must enable the **Enable upload to Azure DevOps** option. Changes that are made in RSAT are then automatically uploaded to Azure DevOps and is available there. Therefore, test suites include the updated test cases that are available to other users or that can be run in Azure DevOps by a pipeline.
 
 ## View test case information
 
@@ -50,21 +50,21 @@ Follow these steps to add a new test case by using RSAT.
     ![New button](media/test-case-add.png)
 
 2. Enter the name of the test case, and add attachment files. These files include the recording XML file that contains steps for the test case. To add attachment files, select **Add**, and then, in the dialog box that appears, select the files to add as attachments.
-3. When you've finished, select **Save** to save the new test case or **Cancel** to discard it.
+3. When finished, select **Save** to save the new test case or **Cancel** to discard it.
 
     ![Add and Save buttons](media/add-test-case.png)
 
 When you save a new test case, RSAT copies the attachment files that you selected into your local RSAT working directory. It maintains the copies there so that they can be used with the test case.
 
-There is no feature that automatically clones test cases from one test suite to another. However, but you can manually clone test cases by following these steps.
+There isn't a feature that automatically clones test cases from one test suite to another. However, but you can manually clone test cases by following these steps.
 
 1. Create a test case as described in the previous procedure. As part of this step, add the recording XML file.
 2. Save the new test case, and make a note of the **CaseID** value that is assigned to it.
 3. You can add a parameter Excel file to the new test case. However, the file name must match the new **CaseID** value. Copy the parameter Excel file from the test case that you're cloning, and change the file name of the copy so that it matches the new **CaseID** value.
 4. Open the new parameter Excel file, and change all instances of the old **CaseID** value to the new **CaseID** value.
-5. After you've finished updating the new parameter Excel file, add it to the new test case as an attachment.
+5. After updating the new parameter Excel file, add it to the new test case as an attachment.
 
-Alternatively, you can generate a parameter Excel file for the new test case first, and then manually edit it so that it matches the parameter Excel file of the test case that you're cloning.
+You can generate a parameter Excel file for the new test case first, and then manually edit it so that it matches the parameter Excel file of the test case that you're cloning.
 
 ## Remove an attachment from a test case
 
@@ -84,7 +84,7 @@ Follow these steps to delete a test case.
 
    ![Screenshot of the Delete Test Case command.](media/delete-test-case.png)
 
-2. This open a dialog box to confirm that the test case should be deleted. Confirm by selecting **Yes** or cancel by **No**
+2. This opens a dialog box to confirm that the test case should be deleted. Confirm by selecting **Yes** or cancel by **No**
 
     ![Screenshot of the confirmation for the Delete Test Case command.](media/confirm-delete-test-case.png)
 
