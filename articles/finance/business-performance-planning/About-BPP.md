@@ -90,7 +90,7 @@ But the sales director may also want a deeper analysis so that they can understa
 
 By creating a cube that contains the dimensions of product, time, customer, and territory and actual sales, the sales director can filter and group data based on how they want to view it. For example, they may want to group sales by territory so that the top selling products within each territory are identified and have insight into when the peak season of sales is.
 
-| Territory | Sales Amount | Product      | Order date | Customer          |
+| Territory | Sales amount | Product      | Order date | Customer          |
 |-----------|--------------|--------------|------------|-------------------|
 | South     |              |              |            |                   |
 |           | 10           | Water bottle | 05/01/2022 | Southern rides    |
@@ -100,7 +100,6 @@ By creating a cube that contains the dimensions of product, time, customer, and 
 |           | 50           | Helmet       | 9/01/22    | Southern rides    |
 |           | 50           | Helmet       | 9/15/2022  | Palm Street Sales |
 |           | 1000         | Bike         | 9/15/2022  | Southwest Campers |
-|           |              |              |            |                   |
 | North     |              |              |            |                   |
 |           | 50           | Helmet       | 6/15/2022  | Blue Ox Trails    |
 |           | 1000         | Bike         | 6/15/2022  | Blue Ox Trails    |
@@ -131,6 +130,7 @@ The following dimensions should be defined for the cube:
 As part of the planning process, the sales director wants to look at the sales fact data and start to build out a plan of what they think will happen in the upcoming year. As part of this process, the sales data can be copied into a new scenario called **Sales plan**. This gives the organization a starting point for creating a sales plan for the upcoming year. For example, by reviewing their actuals, they can plan for a spike in sales in the summer and decline in sales in the winter. By having the ability to filter and group the data by the dimensions above, they can build a plan based on the insights that the data is giving them.
 
 ## Configuring and using planning 
+
 The process of configuring and using planning involves the following tasks:
  - Create dimensions
  - Create cube
@@ -138,9 +138,7 @@ The process of configuring and using planning involves the following tasks:
  - Connect Power BI to data
  - Install planning visuals
  - Configure visuals
+ - Secure by dimension or cube (available in a later release)
+ - Share plans
 
-Secure by dimension or cube (available in a later release)
-
-Share plans
-
-### 
+ 
