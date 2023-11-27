@@ -1,6 +1,35 @@
+---
+# required metadata
+
+title: Microsoft Dynamics 365 Finance business performance planning
+description: This article describes Microsoft Dynamics 365 Finance business performance planning.
+author: ShielaSogge
+ms.date: 11/28/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: Human Resources
+
+---
 # About Microsoft Dynamics 365 Finance business performance planning
 
-The functionality that is described in this article is available as part of a preview release. The functionality and the content of this article are subject to change.
+>[!Important]
+>The functionality that is described in this article is available as part of a preview release. The functionality and the content of this article are subject to change.
 
 As businesses grow and evolve, planning becomes a critical part of in operationalizing strategic goals. However, planning is often complex and time consuming due to disconnected systems, large volumes of data, and manual processes in Excel. These issues result in inaccuracies, delays, and a high total cost of ownership. In a time when businesses are looking to take full advantage of key opportunities, they are lacking visibility into data relationships and any outliers.
 
