@@ -26,7 +26,7 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: Human Resources
 
 ---
-# About Microsoft Dynamics 365 Finance business performance planning
+# Microsoft Dynamics 365 Finance business performance planning
 
 >[!Important]
 >The functionality that is described in this article is available as part of a preview release. The functionality and the content of this article are subject to change.
@@ -45,19 +45,17 @@ An Excel Add-in provides additional ways to update dimension data and enter in p
 
 \*Available in a later release:
 
-# Key Concepts and Terms
+## Key terms
 
-## Key terms:
+Below are some key terms in business performance planning:
 
-**Cube** - A cube consists of dimension and fact data and is used for modeling and analytical purposes.
+ - **Cube** - A cube consists of dimension and fact data and is used for modeling and analytical purposes.
+ - **Dimensions** – Descriptions that define the facts and are how you would want to slide and view your fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension could contain the date, month, year and other aggregation details or attributes. These columns can then be used in the analysis of the transactions to create a hierarchical structure allows a drill down path from year to month to date.
+ - **Facts** – Numeric values that can be aggregated and analyzed. It is the fundamental reason for defining a cube. Examples of fact data might be sales invoices, production costs, or salaries and wages.
 
-**Dimensions** – descriptors that define the facts and are typically how you would want to slide and view your fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension could contain the date, month, year and other aggregation details or attributes. These columns can then be used in the analysis of the transactions to create a hierarchical structure allows a drill down path from Year to Month to Date.
+## Cube example
 
-**Facts** – Numeric values that can be aggregated and analyzed. It is the fundamental reason for defining a cube. Examples of fact data might be salesinvoices, production costs, or salaries and wages.
-
-## Cube example:
-
-When creating a cube, consideration should be made for the dimensions that should be created and included when assembling the cube. As stated in the terms section, the dimensions will provide the mechanism for how you will eventually filter your data in Power BI. When creating your cube, you can select as many dimensions as you would like to be included in the cube. However, for the data to be filtered by the dimensions in Power BI, the fact data must have a relationship with the dimension.
+When creating a cube, consideration should be made for the dimensions that should be created and included when assembling the cube. The dimensions provide the mechanism for how you will eventually filter your data in Power BI. When creating your cube, you can select as many dimensions as you would like to be included in the cube. However, for the data to be filtered by the dimensions in Power BI, the fact data must have a relationship with the dimension.
 
 For example, Contoso Company has the following sales data:
 
@@ -85,12 +83,12 @@ A sales director at Contoso may want to answer the following basic questions:
 1.  Who is my best customer?
 2.  Which sales territory has the most sales?
 
-But the sales director may also want to do deeper analysis so that they can understand trends and relationships between my data. For example, they may want to know:
+But the sales director may also want a deeper analysis so that they can understand trends and relationships between data. For example, they may want to know:
 
 1.  What are my top selling products within each territory?
 2.  Do any of my products have a seasonal sales pattern?
 
-By creating a cube that contains the dimensions of Product, Time, Customer, and Territory and actual sales, the sales director can filter and group data based on how they want to view it. For example, they may want to group sales by territory so that the top selling products within each territory are identified and have insight into when the peak season of sales is.
+By creating a cube that contains the dimensions of product, time, customer, and territory and actual sales, the sales director can filter and group data based on how they want to view it. For example, they may want to group sales by territory so that the top selling products within each territory are identified and have insight into when the peak season of sales is.
 
 | Territory | Sales Amount | Product      | Order date | Customer          |
 |-----------|--------------|--------------|------------|-------------------|
@@ -115,25 +113,31 @@ By creating a cube that contains the dimensions of Product, Time, Customer, and 
 |           | 1000         | Bike         | 7/1/2022   | Oregon trails     |
 |           | 1000         | Bike         | 7/1/2022   | Joe’s bikes       |
 
-When reviewing the data above the Sales director can utilize the dimensions that were created in planning to slice their data by territory, product, and date in Power BI. This enables the sales director to understand trends and prepare a plan that takes into account any trends or outliers.
+When reviewing the data above, the sales director can utilize the dimensions that were created in planning to slice their data by territory, product, and date in Power BI. This enables the sales director to understand trends and prepare a plan that takes into account any trends or outliers.
 
-To identify patterns and to filter data, I need to ensure that I have a dimension that maps to the sales data in table 1. Therefore, I should have the following dimensions defined for the cube: Territory, Product, Time, and Customer and my sales data (fact data) needs to contain the details for Territory, Product, Time, and Customer.
+To identify patterns and to filter data, users need to ensure that there's a dimension that maps to the sales data in table 1. 
+The following dimensions should be defined for the cube: 
+ - territory
+ - product
+ - time
+ - customer
 
-As part of the planning process the sales director will want to look at the sales fact data and start to build out a plan of what they think will happen in the upcoming year. As part of this process the sales data can be copied into a new scenario called ‘Sales Plan’. This will give the organization a starting point for creating a sales plan for the upcoming year. For example, by reviewing their actuals, they can plan for a spike in sales in the summer and decline in sales in the winter. By having the ability to filter and group the data by the dimensions above, they can build a plan based on the insights that the data is giving them.
+ The sales data (fact data) needs to contain the details for:
+  - territory
+  - product
+  - time
+  - customer
 
-## The process of configuring and using planning involves the following tasks:
+As part of the planning process, the sales director wants to look at the sales fact data and start to build out a plan of what they think will happen in the upcoming year. As part of this process, the sales data can be copied into a new scenario called **Sales plan**. This gives the organization a starting point for creating a sales plan for the upcoming year. For example, by reviewing their actuals, they can plan for a spike in sales in the summer and decline in sales in the winter. By having the ability to filter and group the data by the dimensions above, they can build a plan based on the insights that the data is giving them.
 
-Create dimensions
-
-Create cube
-
-Load fact data into cube
-
-Connect Power BI to data
-
-Install planning visuals
-
-Configure visuals
+## Configuring and using planning 
+The process of configuring and using planning involves the following tasks:
+ - Create dimensions
+ - Create cube
+ - Load fact data into cube
+ - Connect Power BI to data
+ - Install planning visuals
+ - Configure visuals
 
 Secure by dimension or cube (available in a later release)
 
