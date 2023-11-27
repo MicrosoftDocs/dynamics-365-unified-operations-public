@@ -52,9 +52,12 @@ The following pipeline actions are introduced for enabling outbound documents su
 
 - **Integrate with Edicom**
 
- **Parameter**                                            | **Value** | **Description**     |
-|-----------------------------------------------------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Service URI | ssssss | Default value provided. No change needed.|
+ **Parameter**          | **Value** | **Description**     |
+|-----------------------|------------------|------------------|
+| Service URI | ipaasgw.edicomgroup.com | Default value provided. No change needed.|
+| **Service ID**                   |    | Used for identification by Edicom. **Must be defined**. |
+| **Group**                   |    | Required for internal routing within the Edicom infrastructure. **Must be defined**.  |
+| **Token**                   |    | Used for accessing the Edicom services.  **Must be defined**.     |
 | ...                   | ...   |                   |
   
 - **Waiting for response from Edicom**
