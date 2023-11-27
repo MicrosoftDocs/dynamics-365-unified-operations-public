@@ -54,7 +54,11 @@ As of Supply Chain Management 10.0.38, the following date fields on purchase ord
 - **Requested delivery date** is now labeled **Requested receipt date**.
 - **Confirmed delivery date** is now labeled **Confirmed receipt date**.
 
-## Choose whether to allow requested ship dates in the past
+## Requested ship dates in master planning
+
+When a master planning run indicates that a planned order is needed, the order date is calculated backwards from the requirement date and takes into into account margins, lead time, and **Purchase transport days** setup. The requested ship date is calculated following the same rules as for purchase orders. However, the requested ship date isn't shown on the **Planned purchase order** details page.
+
+## Choose whether to allow requested ship dates to be in the past
 
 Sometimes, as a result of your requested receipt date, plus the lead time, transportation days, vendor calendar, and other settings, the system might calculate a requested ship date that is in the past. You can choose how the system should handle this situation by following these steps:
 
@@ -175,6 +179,3 @@ Note the calculation will not be applicable to:
 - receipt journal, invoice journal, Vendor collaboration
 - History
 
-## Requested ship dates in master planning
-
-When a master planning run indicates that a planned order is needed, the order date is calculated backwards from the requirement date and takes into into account margins, lead time, and **Purchase transport days** setup. The requested ship date is calculated following the same rules as for purchase orders. However, the requested ship date isn't shown on the **Planned purchase order** details page.
