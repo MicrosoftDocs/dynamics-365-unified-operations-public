@@ -23,7 +23,7 @@ Microsoft recommend access to Dynamics 365 Finance and Operations apps environme
 
 Dynamics 365 Finance and Operations apps on-premises hosted environment is not supported with ADFS user account identities. This means these environments deployed as Local Business Data cannot use user-based authentication.
 
-# How to set up user-based authentication
+## How to set up user-based authentication
 
 User-based authentication requires some extra steps to set up, but once it has been configured once centrally then set up of individual RSAT client environment become more seamless without concerns for installing certificates that is granted access to the test environment.
 
@@ -65,7 +65,7 @@ Note that the secrets with the App registration or Client ID have an expiry and 
 
 Settings files saved and loaded from RSAT settings do not include the Client Secret. This is excluded as an extra security precaution. The Client Secret will always have to be entered manually and is saved only in the save storage we use as the Windows vault with Credentials Manager. Keep this in mind when configuring an environment to run RSAT by CLI like by pipelines, that you need to log into the environment with the user account RSAT is started under and manually provide this value in RSAT settings to save the value in the vault, such that this will be used during playback.
 
-# How to disable MFA for test accounts
+## How to disable MFA for test accounts
 
 As mentioned before user-based authentication will not work for accounts that had multi-factor authentication (MFA) enabled.
 
@@ -73,6 +73,6 @@ It is possible to configure tenant on Microsoft Entra ID and disable security de
 
 The secure approach is to disable MFA only for the test accounts used with running test cases by RSAT and only for environments used in testing.
 
-This is possible by using Conditional Access Policies: [Building a Conditional Access policy](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policies)
+This is possible by using Conditional Access Policies: [Building a Conditional Access policy](/entra/identity/conditional-access/concept-conditional-access-policies)
 
 
