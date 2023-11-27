@@ -26,7 +26,7 @@ When editing parameter files in Excel remember always to use the Generate action
 PowerFX is almost 100 % compatible, and you can in most cases use Excel parameter files directly with PowerFX without making any changes.
 
 For reference to what formulas are available with PowerFX consult this page:
-[Power Fx formula reference overview](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview)
+[Power Fx formula reference overview](/power-platform/power-fx/formula-reference-overview)
 
 There are a few cases you need to be aware of to ensure formulas are compatible. The following paragraphs show do’s and don'ts on how to use formulas.
 
