@@ -24,7 +24,7 @@ This article assumes that you're familiar with the management of Azure DevOps or
 
 ## Prerequisite: Install an Azure DevOps self-hosted Windows agent
 
-To configure Azure DevOps pipelines to include RSAT tasks, you must configure a self-hosted Windows agent on a machine where RSAT is installed. For more information about this process, see [Azure Pipelines agents](/azure/devops/pipelines/agents/agents?view=vsts). For information about how to set up a self-hosted Windows agent, see [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows).
+To configure Azure DevOps pipelines to include RSAT tasks, you must configure a self-hosted Windows agent on a machine where RSAT is installed. For more information about this process, see [Azure Pipelines agents](/azure/devops/pipelines/agents/agents). For information about how to set up a self-hosted Windows agent, see [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows).
 
 When you configure the Azure DevOps agent, follow these guidelines:
 
