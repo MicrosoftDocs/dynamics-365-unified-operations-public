@@ -1,8 +1,34 @@
-# Installing Microsoft Dynamics 365 Finance business performance planning
+---
+# required metadata
+
+title: Install Microsoft Dynamics 365 Finance business performance planning
+description: This article describes how to install Microsoft Dynamics 365 Finance business performance planning.
+author: ShielaSogge
+ms.date: 11/28/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: Human Resources
+
+---
+# Install Microsoft Dynamics 365 Finance business performance planning
 
 This article describes how to install business performance planning.
-
-## 
 
 ## System requirements
 
