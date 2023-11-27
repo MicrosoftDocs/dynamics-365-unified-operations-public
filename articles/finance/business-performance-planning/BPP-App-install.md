@@ -26,7 +26,6 @@ ms.search.validFrom: 2023-12-03
 ms.dyn365.ops.version: Human Resources
 
 ---
-# About Microsoft Dynamics 365 Finance business performance planning
 # Installing the business performance planning application
 
 This article describes how to install the business performance planning application. You must also install the Power BI visuals to fully use business performance planning. Please review the Power BI visual install documentation here: **xxxx.xxxx – link to that doc.**
@@ -53,7 +52,7 @@ Select the environment URL. The Apps form of the environment will display the **
 
 The home screen should appear.
 
-Important! Before other users can use the business performance planning app it must be shared. Please review the documentation on assign security roles or people to the model-driven app here: [https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/share-model-driven-app\#assign-security-roles-or-people-to-a-model-driven-app](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app) The security roles that should be associated with the business performance planning app are: Business performance planning administrator, Business performance planning contributor, Business performance planning power user, Business performance planning viewer
+Important! Before other users can use the business performance planning app it must be shared. Please review the documentation on assign security roles or people to the model-driven app here: [https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/share-model-driven-app\#assign-security-roles-or-people-to-a-model-driven-app](../../power-apps/maker/model-driven-apps/share-model-driven-app#assign-security-roles-or-people-to-a-model-driven-app). The security roles that should be associated with the business performance planning app are: Business performance planning administrator, Business performance planning contributor, Business performance planning power user, Business performance planning viewer
 
 Important! The planning roles are not assigned to users by default, including the user who performed the install. You must assign users a Business performance planning role before accessing the application. If a role is not assigned you may not be able to access the home page or you may not be able create dimensions or cubes.
 
@@ -68,8 +67,6 @@ Business performance planning power user
 Business performance planning viewer
 
 To assign users to the roles select the ellipses to the right of the role and choose members. You can add people to the role. Alternatively, you can navigate to the users form, and add roles from there.
-
-## 
 
 ## Delete Business performance planning
 
