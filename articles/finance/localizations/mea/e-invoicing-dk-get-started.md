@@ -31,7 +31,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - The company must be registered in the [Danish Central Business Register (CVR)](https://datacvr.virk.dk/) and in the Danish electronic invoicing infrastructure [NemHandel](https://nemhandel.dk/).
   > [!IMPORTANT]
-- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV connector. For more information, see [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
+- The company must have a signed agreement with the provider of electronic documents delivery service and obtain the required credentials to enable integration of the electronic invoicing service with the ISV last-mile connector. For more information, see [Electronic invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md)
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
 
@@ -61,7 +61,7 @@ Before you begin the procedures in this article, complete the following prerequi
 > [!NOTE]
 > The specified above ER formats are based on the **Invoice model** configuration and the **Invoice model mapping** configuration. All required additional configurations are automatically imported.
 
-## Country/region-specific configuration for the Danish electronic invoice (DK) feature
+## Country-specific configuration for the Danish electronic invoice (DK) feature
 
 Some of the parameters from the **Danish electronic invoice (DK)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operations.
 
@@ -87,7 +87,7 @@ Some of the parameters from the **Danish electronic invoice (DK)** electronic in
 
 ## Finance configuration
 
-Some additional parameters must be configured directly in Finance.
+Some additional parameters must be configured directly in Microsoft Dynamics 365 Finance.
 
 1. Make sure that the country/region-specific **Document context** and **Electronic document model mapping** ER configurations that are required for Denmark are imported. For more information, see [Set up Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
