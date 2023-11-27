@@ -56,9 +56,9 @@ To upgrade the parameter files, follow these steps.
 
 1. Open RSAT.
 2. Select that test cases that have the parameter files that you want to upgrade.
-3. On the **New** menu, select **Upgrade Parameter files (will auto generate Test Execution files)**.
+3. On the **Generate** menu, select **Upgrade Parameter files (will auto generate Test Execution files)**.
 
-    ![Upgrade Parameter files (will auto generate Test Execution files) command on the New menu.](media/new_dropdown_menu.png)
+    ![Upgrade Parameter files (will auto generate Test Execution files) command on the Generate menu.](media/new_dropdown_menu.png)
 
 The parameter files for all the selected cases are upgraded.
 
