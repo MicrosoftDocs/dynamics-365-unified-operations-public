@@ -136,7 +136,7 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 > [!NOTE]
 > The outbound IP address from the AOS will be an IP address from the listed ranges based on the Azure region of your deployment. The specific outbound IP address may vary across outbound requests, even from within the same session.
 
-Infrastructure hosting your Microsoft-managed environments is registered as part of the `PowerPlatformPlex` Service Tag. For more information, see the [Service Tag Documentation](https://learn.microsoft.com/azure/virtual-network/service-tags-overview), such as how to get the specific IP address ranges for components that don't support Service Tags.
+Infrastructure hosting your Microsoft-managed environments is registered as part of the `PowerPlatformPlex` Service Tag. For more information, see the [Service Tag Documentation](/azure/virtual-network/service-tags-overview), such as how to get the specific IP address ranges for components that don't support Service Tags.
 
 > [!NOTE]
 > Outbound requests may originate from multiple regions within a geo in disaster recovery scenarios that require regional failover within the geography.
