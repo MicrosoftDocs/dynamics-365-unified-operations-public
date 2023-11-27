@@ -32,7 +32,7 @@ This article describes how to install business performance planning.
 
 ## System requirements
 
-A Tier-2 environment (multi-box) is required to install business performance planning. For more information about environments, see [Environment planning](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning). Business performance planning is currently supported in the following geographies: Australia, Brazil, UK, USA, Europe, Canada, France, Germany, India, Norway, Switzerland, UAE, South America, South Africa and Japan. Confirm the environment where you plan to install Business performance planning is in one of the above mentioned regions.
+A Tier-2 environment (multi-box) is required to install business performance planning. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md). Business performance planning is currently supported in the following geographies: Australia, Brazil, UK, USA, Europe, Canada, France, Germany, India, Norway, Switzerland, UAE, South America, South Africa and Japan. Confirm the environment where you plan to install Business performance planning is in one of the above mentioned regions.
 
 ## Version requirements
 
