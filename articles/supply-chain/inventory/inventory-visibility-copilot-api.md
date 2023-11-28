@@ -49,7 +49,7 @@ To use natural-language inventory search with Copilot, your system must meet the
 
 ## Use the query API
 
-You submit inventory queries and receive results using the query API, which is defined as follows
+You submit inventory queries and receive results using the query API, which is defined as follows:
 
 ```txt
 Path:
