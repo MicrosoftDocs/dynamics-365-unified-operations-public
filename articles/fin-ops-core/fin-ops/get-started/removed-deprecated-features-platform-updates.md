@@ -356,10 +356,10 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This is a legacy page that was built for previous client/server architecture. The information on this page isn't always accurate, which can be confusing and misleading. |
-| **Replaced by another feature?**   | We'll provide a new page in a future update.|
+| **Replaced by another feature?**   | We'll provide a new page in a future update. As a workaround, use the table browser for the SysClientSessions table to view client sessions.|
 | **Product areas affected**         | System Administration |
 | **Deployment option**              | All |
-| **Status**                         | By October 2021 this form will be removed.   |
+| **Status**                         | This page will be removed in a future release.   |
 
 
 ## Platform updates for version 10.0.13 of finance and operations apps
