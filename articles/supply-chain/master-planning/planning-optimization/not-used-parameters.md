@@ -52,10 +52,6 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 Planning Optimization doesn't use the following parameters or options on the **Coverage groups** page:
 
-- **General** FastTab:
-
-  - **Positive days** – The *Positive days* value isn't used. With Planning Optimization, positive days are considered infinite.
-
 - **Other** FastTab:
 
   - **Freeze time fence (days)** – Pending *Freeze time fence* support.
