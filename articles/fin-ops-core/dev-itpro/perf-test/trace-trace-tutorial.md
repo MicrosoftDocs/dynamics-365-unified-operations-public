@@ -1,5 +1,5 @@
 ---
-title: Capturing a Trace
+title: Capturing a trace
 description: This tutorial provides guidelines on how to take traces.
 author: ttreen
 ms.date: 11/28/2023
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ---
 
-# Capturing a Trace
+# Capturing a trace
 
 [!include [banner](../includes/banner.md)]
 
