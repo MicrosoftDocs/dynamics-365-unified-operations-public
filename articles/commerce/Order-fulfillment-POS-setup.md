@@ -22,11 +22,11 @@ ms.search.validFrom: 2017-10-30
 
 This article describes how to set up store order fulfillment in Microsoft Dynamics 365 Commerce.
 
-Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale (POS).
+Many retailers want to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help ease overstock scenarios for a specific store, or may be needed in cases where a store has extra capacity, or is located within a closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale (POS).
 
 Orders for fulfillment at a specific store has the store's warehouse designated on the header or lines of the order.
 
-The order fulfillment operation in the POS provides a single work area that cashiers can use to process orders. This includes everything from accepting the order, to marking it as shipped, or initiating store pickup.
+The order fulfillment operation at the POS provides a single work area that cashiers can use to accept orders, mark orders as shipped, and initiate store pickup.
 
 ## Set up the order fulfillment operation
 
