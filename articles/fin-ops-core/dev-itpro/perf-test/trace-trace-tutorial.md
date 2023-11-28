@@ -21,7 +21,7 @@ ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 
 This tutorial provides guidelines on how to take traces in Microsoft Dynamics 365 finance and operations.
 
-In this tutorial, you'll take a tour of how to collect and download traces. The trace parser tool works largely similar to the Microsoft Dynamics AX 2012 version, but it is not backward compatible and can't be used to analyze AX 2012 traces. The tool can be found in your development environments. Go to the Windows Start menu > **Microsoft Dynamics Trace Parser**, or in **C:\Program Files (x86)\Microsoft Dynamics Trace Parser\Microsoft.Dynamics.AX.Tracing.TraceParser.exe**.
+In this tutorial, you take a tour of how to collect and download traces. The trace parser tool works largely similar to the Microsoft Dynamics AX 2012 version, but it is not backward compatible and can't be used to analyze AX 2012 traces. The tool can be found in your development environments. Go to the Windows start menu > **Microsoft Dynamics Trace Parser**, or in **C:\Program Files (x86)\Microsoft Dynamics Trace Parser\Microsoft.Dynamics.AX.Tracing.TraceParser.exe**.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ This tutorial requires that you access the environment as an administrator on th
 4. Select **Start trace**.
 5. Perform actions that need to be analyzed, for example, opening **Accounts payable > Vendors > All vendors**.
 6. When you are finished, select **Stop trace**.
-7. Once the trace has stopped, you can select one of the following options (for this tutorial, select the second option):
+7. After the trace has stopped, select one of the following options (for this tutorial, select the second option):
     - **Download trace** – Store the captured trace on a local machine. You can analyze a downloaded trace with the desktop version of **Trace parser**.
       
 >[!NOTE]
@@ -45,7 +45,7 @@ This tutorial requires that you access the environment as an administrator on th
    - **Return to main menu** – Returns to the main tracing menu to start another trace.
 
 >[!NOTE]
->If your scenario takes more than 1-2 minutes, it is better to try to take multiple smaller traces of 30 seconds each. The trace will likely get too big to be easily analyzed and there's a risk for losing data if the trace gets too big.
+>If your scenario takes more than 1-2 minutes, it is better to take multiple smaller traces of 30 seconds each. The trace will get too big to be easily analyzed and there's a risk for losing data if the trace gets too big.
 
 ### Assign trace rights to user
 
@@ -68,7 +68,7 @@ Remove the user role after the user is done with tracing to avoid unwanted traci
 4. After you download the trace, delete the trace.
 
 > [!NOTE]
-> The trace will be deleted after 7 days. For more information about the desktop version of the trace parser, see [Diagnose issues and analyze performance by using Trace parser](trace-parser.md).
+> The trace will be deleted after seven days. For more information about the desktop version of the trace parser, see [Diagnose issues and analyze performance by using Trace parser](trace-parser.md).
 
 ### Capture a trace - performance monitor (Cloud hosted environments\VHDs\On-Premises LBD)
 
@@ -78,7 +78,7 @@ To capture a trace using Windows performance monitor, follow these steps:
 
 1. Remote desktop to the CHE, development VHD, or on-premises AOS Node (Batch\Interactive) you want to collect event traces from.
 2. Start **Windows performance monitor (perfmon.msc)**. Add a new **User defined data collector set**.
-3. Give the **Data collector set** a name, e.g. D365Trace, and select **Create manually**. You'll be able to use **Create from a template** after a template is created after going through the manual steps.
+3. Give the **Data collector set** a name, and select **Create manually**. You'll be able to use **Create from a template** after a template is created after going through the manual steps.
 4. Click **Next**.
 5. Go to **Create data logs**, check **Event trace data**, and click **Next**.
 6. In **Which event trace provider would you like to enable?**, click **Add** and select the following from the **Event trace provider** list: 
@@ -88,8 +88,8 @@ To capture a trace using Windows performance monitor, follow these steps:
 7. Click **OK**.
 8. Click **Next** and specify a directory for storing trace files or keep the default directory.
 9. Select **Save and close** and then click **Finish**.
-10. The next step is to change settings for the newly created data collector. Select your new user defined trace, and in the righthand pane right click on the **DataCollector01**. Select **Properties**.
-   - In the **Properties** window, switch to the **Trace buffers** tab and modify the default buffer settings. The default buffer values don't work well for collecting Dynamics 365 event trace data when there's a high volume of events in a short period of time. It is recommended to use the following values (leave all other settings as default):
+10. The next step is to change settings for the newly created data collector. Select your new user defined trace, and right click on the **DataCollector01**. Select **Properties**.
+   - In the **Properties** window, switch to the **Trace buffers** tab and modify the default buffer settings. The default buffer values don't work well for collecting Dynamics 365 event trace data when there's a high volume of events in a short period of time. It's recommended to use the following values (leave all other settings as default):
        - Buffer size: 512 KB
        - Minimum buffers: 256
        - Maximum buffers: 256
@@ -98,17 +98,17 @@ To capture a trace using Windows performance monitor, follow these steps:
 ### Save as template
  - You may want to save the data collector set as a template and reuse it on a different server.
  - To do save the data collector as a template, follow these steps: 
-      1. Right click the **Data collector sets** and select **Save Template**.
+      1. Right click the **Data collector sets** and select **Save template**.
       2. The template XML file can be copied and imported.
 
 ### Limit trace file size
- - Setting a maximum file size helps makes the traces more manageable when importing into the **Trace Parser** tool. You can set the data collector properties to restart after a set number of megabytes.
- - Follow these steps to set the file size to 1000MB (1GB):
+ - Setting a maximum file size helps makes the traces more manageable when importing into the **Trace parser** tool. You can set the data collector properties to restart after a set number of megabytes.
+ - Follow these steps to set the file size to 1000 MB (1 GB):
       1. **Right click** on the user defined trace and select **Properties**.
       2. In the **Stop condition** tab, check **Restart the data collector set at limits.**
       3. In the **Maximum size** field, enter 1000.
- - After the trace reaches its maximum size, it'll start to write on top of the same file again. If you want the trace to create additional files, follow these steps: 
-      1. Select your new user defined trace, and right click on the **DataCollector01**, and select **Properties**.
+ - After the trace reaches its maximum size, it will start to write on top of the same file again. If you want the trace to create additional files, follow these steps: 
+      1. Select your new user defined trace, and right click the **DataCollector01**, and select **Properties**.
       2. In the **Properties** window, switch to the **File** tab and check **Circular (requires a non-zero maximum file size)**.
 
 #### Additional notes
