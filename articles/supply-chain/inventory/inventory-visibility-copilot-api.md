@@ -68,6 +68,8 @@ Body:
     }
 ```
 
+The path URL should resemble the following example: `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{Supply_Chain_Management_environment_id}}/query`.
+
 The following example shows sample body content.
 
 ```json
@@ -75,8 +77,6 @@ The following example shows sample body content.
         "Text" : "What's the inventory of product D0001 in organization USMF, site 1, location 11?"
    }
 ```
-
-The path URL should resemble the following example: `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{Supply_Chain_Management_environment_id}}/query`.
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
 
