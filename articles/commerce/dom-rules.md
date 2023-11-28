@@ -2,7 +2,7 @@
 title: DOM rules
 description: This article describes the rules of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/17/2023
+ms.date: 11/28/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
