@@ -110,6 +110,7 @@ To set up and configure DOM fulfillment profiles, follow these steps:
 1. Enter values for **Profile** and **Description**.
 1. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile are automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan, and aren't applied to the sales order lines.
 1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page.
+1. Set a value for **Maximum number of order lines per optimization** if you want to change how DOM break sales lines into different batches. See **Partition sales lines** of [DOM processing](./dom-processing.md) for more details.
 
     > [!NOTE]
     > - In Commerce version 10.0.12 and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.

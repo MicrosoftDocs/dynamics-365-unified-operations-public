@@ -56,6 +56,9 @@ If the **Maximum number of order lines per optimization** value is 0:
 - For the Simplified Solver type, DOM creates a batch for every 100 sales lines.
 - For the Production Solver type, DOM creates a batch for every 1500 sales lines.
 
+    > [!NOTE]
+    > If you set a large value for **Maximum number of order lines per optimization**, DOM processor job will take longer time to complete. Set a proper value to ensure DOM can utilize batch server resources and broker sales lines faster.
+
 ## Inventory lookup
 
 DOM looks up available inventory by viewing on-hand inventory in warehouse V2 entities (for example, `InventWarehouseOnHandAggregatedView`). The on-hand inventory supports product dimensions such as color, size, style, and configuration, and storage dimensions such as site and warehouse. Other dimensions such as location, inventory status, license plate are not supported. To view the on-hand inventory used by DOM, enter the following URL in your browser's address bar. Replace `<DomainName>` with the domain name of your environment and `<CompanyName>` with the name of your legal entity.
