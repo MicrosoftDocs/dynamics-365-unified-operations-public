@@ -26,7 +26,7 @@ This article describes the differences between the two versions, the new operati
 The following settings and features are only accessible from the UI version 1 configuration page:
 
 - Clean up of preloaded on-hand results
-- Inventory Allocation relevant operations
+- Operations related to inventory allocation <!--KFM: Is this right? It seems like we have at least some settings for this...  -->
 
 > [!NOTE]
 > The majority of the features for setting up and viewing preloaded on-hand results are supported by both UI versions. Only the clean up of existing preloaded on-hand result requires UI version 1.
@@ -70,52 +70,71 @@ To migrate your settings from UI version 1 to UI version 2, follow these steps:
 1. A dialog opens where you must enter the credentials you used when installing the Inventory Visibility service. Enter the credentials and then select **Login**.
 1. The system copies your existing settings from UI version 1 to UI version 2.
 
-## Set up features and configurations in UI version 2
+## Manage features and configurations in UI version 2
 
-This section illustrates the usage of different features in version 2.
+This section shows how to work with Inventory Visibility features in UI version 2.
 
-From start up page or left navigation bar, user can go to feature management to configure the use of different feature, including enable/disable feature and related settings. Under version 2, user can select "manage" button beside the corresponding feature descriptions, whereas for version 1, all these buttons will redirect to the legacy configuration page. Detailed coverages are as follows:
+Do either of the following steps to open the **Feature management** page, where you can enable or disable features and configure their settings:
 
-### Data Source settings
+- On the navigation pane, select **Home**. Then, on the **Feature management** tile, select **Manage**.
+- On the navigation pane, select **Feature management**. <!-- KFM: Please confirm this edit. -->
 
-In this page user is presented with a list of data source names. In the detail form of each name, contains the below configuration for a data source:
+The **Feature management** page shows a collection of tiles, with each tile named after a feature or feature area. Select the **Manage** button on a tile to open the configuration page for that feature. The following sections describe the configuration pages for each feature for UI version 2. (If UI version 1 is active for your app, then each of these buttons instead takes you to the legacy configuration page for that feature.)
 
-- `Data Source Name`: The name of data source to be used in Inventory Visibility Add-in.
-- `Dimension mappings`: The mapping of custom dimension name to base dimension name. User needs to specify data source name, customer dimension and base dimension correspondingly.
-- `Physical measures`: Unlike version 1, user no longer needs to specify the data source for a physical measure, it's by default the current data source.
-- `Calculated measures`: Unlike version 1, user specifies the measure in two steps: (1) Calculated measre metadata to specify the name and data source for a calculated measure; and (2) Calculated measure detail, each record consists of an addition / subtraction operator of an existing physical measure to a calculated measure with specified metadata.
+<!-- KFM: It seems like most of all of the rest of this topic is better explained and in more detail elsewhere. I think this info is redundant here and should be removed from here.
 
-### Available-to-Promise (ATP)
+### Data source settings
 
-Below settings are for users configurating ATP. For user using ATP for a time period longer than 7 days, using version 2 of user interface is required.
+USe the **Data source settings** page to set up and map data sources to Inventory Visibility. The page lists the data sources used by Inventory Visibility. Select a data source to view and set the following configuration options for that data source:
 
-- `Enable feature` controls on-off of the feature
-- `Schedule for 180 days`: When enabled, the longest period for ATP calculation is 180 days; when disabled, the longest support is 7 days.
+- **Data source name** – Specify the name used to refer to the data source in the Inventory Visibility app and service.
+- **Dimension mappings** – Map customer dimension names to base dimension names. For each mapping, you must specify the data source name, customer dimension and the matching base dimension.
+- **Physical measures** – You no longer need to specify the data source for a physical measure because the current data source is assumed. \<!--KFM: More detail is needed about what this settings *do* do. Maybe a link to another topic where this is explained more... --\> 
+- **Calculated measures** – Specify calculated measures in two steps: \<!--KFM: Maybe give a link to another topic where this is explained more... --\>
+    1. Specify the name and data source for each calculated measure
+    1. Specify calculated measure details. Each calculated measure specifies two or more existing physical measures, each combined using either an addition or subtraction modifier.
 
-The below fields and reference tables are only valid for configurations when `Schedule for 180 days` option enabled:
+### Available to promise
 
-- `Schedule common configurations`: Controls the schedule period as maximum number of days, whose value cannot exceed the max schedule period; and the bucket size controlling the group size of storage. ATP calculation under same group is generally faster than that of different groups.
-- `Schedule measures`: Configures the calculated measure to calculate in ATP, and their maximum schedule period correspondingly.
-- `Schedule index configuration`: The ATP calculation is required to be queried with a dimension combination as a subset of a defined dimension set in schedule configuration.
+The **Manage** button on the **Available to promise** tile opens the **OnHandChangeSchedule** page. Use this page to turn on and configure the available-to-promise (ATP) features. If you want to apply ATP for a period longer than 7 days, you must use UI version 2.
+\<!--KFM: Give a link for more info about ATP --\>
 
-### Inventory Allocation
+Use the following settings to turn the ATP feature on or off and to configure the ATP period:
 
-- `Enable feature` controls on-off of the feature
-- `Allocation group` contains the group name for allocations. This is not in the same table of version 1, so change in one version is not reflected to the allocation configuration group in the other version.
+- **Enable feature** – Turn the ATP feature on or off.
+- **Schedule for 180 days** – Turn the extended (180 day) ATP period on or off. This option also turns several other settings on this page on or off. When this option is disabled, the longest possible ATP period is 7 days.
+- **Max Schedule Period (Days)** – \<!--KFM: Description needed. --\>
+
+The following fields and reference tables are only valid for configurations **Schedule for 180 days** is set to *True*:
+
+- **Schedule common configurations** – Set the schedule period as maximum number of days (whose value cannot exceed the max schedule period) and the bucket size (which control the group size of storage). ATP calculation under same group is generally faster than that of different groups. \<!--KFM: I don't see this in the UI. Is this renamed to **Max Schedule Period (Days)**? I don't understand the parts about bucket size and groups. --\>
+- **Schedule measures** – Set the calculated measures to use for ATP and their maximum schedule period.  \<!--KFM: Where to we set the max schedule period? I don't see that here. --\>
+- **Schedule index configuration** – Specify the combination of dimensions to query when calculating ATP. \<!--KFM: I don't understand this. Explain what the columns mean and how to use them. --\>
+
+### Inventory allocation
+
+Inventory allocation lets you allocate your valuable on-hand stock for your most important channels, customers, or predefined groups and to track the consumption of each allocated pool. \<!--KFM: link to another topic for more info, if available. --\>
+
+The **Allocation** page provides the following settings:
+
+- **Enable feature** – Turn the inventory allocation feature on or off.
+- **Allocation group** – contains the group name for allocations. This is not in the same table of version 1, so change in one version is not reflected to the allocation configuration group in the other version.
 
 ### Advanced Warehouse Inventory
 
-- `Enable feature` controls on-off of the feature
-- `Use truncated dimensions`: When enabled, Warehouse items would support queries excluding certain dimensions for faster query and fewer storage. This would be enabled by default during configuration updates, unless at least one of below dimensions is included in index hierarchy: Batch ID, Serial ID, License Plate ID, WMS Location Id."
+This feature lets you use Inventory Visibility to sync and view items in that are enabled for advanced warehouse management (WMS) in Supply Chain Management. \<!--KFM: link to another topic for more info, if available. --\>
+
+- **Enable feature** controls on-off of the feature
+- **Use truncated dimensions** – When enabled, Warehouse items would support queries excluding certain dimensions for faster query and fewer storage. This would be enabled by default during configuration updates, unless at least one of below dimensions is included in index hierarchy: Batch ID, Serial ID, License Plate ID, WMS Location Id."
 
 ### Soft Reservation
 
-For soft reservation feature, when feature is enabled, the option `filter unconfigured dimensions` would control the behavior when user reserves with dimensions not specified in `Reservation dimensions`
+For soft reservation feature, when feature is enabled, the option **filter unconfigured dimensions** would control the behavior when user reserves with dimensions not specified in **Reservation dimensions**
 
-- `Enable feature` controls on-off of the feature
-- `Filter unconfigured dimensions`: When enabled, soft reserve request that are not in reserve dimensions will be automatically purged; when disabled, system will only accept requests will all dimensions in reservation dimensions. Users making reservations from Dynamics 365 Supply Chain Management's Sales Orders is required to enable this option.
-- `Reservation mappings`: Defines a mapping of a physical measure to its corresponding `available to reserve` calculated measures. User needs to specify reserving against a physical measure configured in soft reservation.
-- `Reservation Dimensions`: Defines the set of dimensions that are expected to appear in reservation requests.
+- **Enable feature** controls on-off of the feature
+- **Filter unconfigured dimensions** – When enabled, soft reserve request that are not in reserve dimensions will be automatically purged; when disabled, system will only accept requests will all dimensions in reservation dimensions. Users making reservations from Dynamics 365 Supply Chain Management's Sales Orders is required to enable this option.
+- **Reservation mappings** – Defines a mapping of a physical measure to its corresponding **available to reserve** calculated measures. User needs to specify reserving against a physical measure configured in soft reservation.
+- **Reservation Dimensions** – Defines the set of dimensions that are expected to appear in reservation requests.
 
 ### Other features
 
@@ -129,7 +148,7 @@ For the features below, see their corresponding feature pages for detailed usage
 
 All changes under the UI pages requires a configuration update operation to activate.
 
-User finds below operations in `Admin settings` section as below:
+User finds below operations in **Admin settings** section as below:
 
 - Set of accessed tokens
 - Show / update service configurations
@@ -151,3 +170,5 @@ Each API page consists of 3 sections:
 3. Request body. Upon updating the mentioned 2 sections, this field updates with latest request JSON body, where user can copy and save for later references.
 
 When the required fields are set, the Query or Update button will be enabled for user to execute the API with info on the page.
+
+ -->
