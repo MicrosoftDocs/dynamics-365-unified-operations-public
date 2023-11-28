@@ -12,7 +12,6 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Upgrade parameter files
