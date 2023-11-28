@@ -54,7 +54,6 @@ You submit inventory queries and receive results using the query API, which is d
 ```txt
 Path:
     /nl/iv/{environmentId}/query
-
 Method:
     Post
 Headers:
