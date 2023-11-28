@@ -117,7 +117,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We're removing the following list of cipher suites to comply with our current security protocols.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
-| **Replaced by another feature?**   | Beginning January 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers. For example, it may impact your third party integrations, that aren't adhering to our standard cipher suites. |
+| **Replaced by another feature?**   | Beginning January 2023, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers. For example, it may impact your third party integrations that aren't adhering to our standard cipher suites. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | Cloud deployments |
 | **Status**                         | Deprecated. Customers must upgrade their servers before January 2023. For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
