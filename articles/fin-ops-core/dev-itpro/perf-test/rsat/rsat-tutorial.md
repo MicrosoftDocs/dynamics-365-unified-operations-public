@@ -2,10 +2,10 @@
 title: Regression suite automation tool tutorial
 description: This article shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting.
 author: FrankDahl
-ms.date: 09/23/2021
+ms.date: 11/28/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
@@ -72,7 +72,7 @@ After the test case is run, the message in the Excel parameter file is compared 
 
 ### Snapshot
 
-This feature takes screenshots of the steps that were performed during task recording. It is useful for auditing or debugging purposes.
+This feature takes screenshots of the steps that were performed during task recording. It's useful for auditing or debugging purposes.
 
 - To use this feature while running RSAT with the user interface, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.
 
@@ -115,7 +115,7 @@ The following illustration shows the business processes hierarchy for this scena
 - Make sure that you have representative data volumes (a copy of production/golden configuration data plus migrated data).
 - When you generate new data via Task recorder, create test names that won't conflict with existing names (for example, use a prefix such as **RSATxxx**).
 - Use Azure Point-In-Time restore to rerun tests in non-Tier 1 environments.
-- Although you can use the **RANDOM** and **NOW** Excel functions to generate a unique combination, the effort is considerably high. Here is an example.
+- Although you can use the **RANDOM** and **NOW** Excel functions to generate a unique combination, the effort is considerably high. Here's an example.
 
     ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
@@ -124,7 +124,7 @@ The following illustration shows the business processes hierarchy for this scena
 ### Task recorder
 
 - Define scenarios before you start recording. A well-managed project has predefined test scenarios. To build a test case, consider how predictable the outcome of those test scenarios is.
-- Split recordings if they are performed by different roles, or if there is waiting time or an external event before the next step.
+- Split recordings if they're performed by different roles, or if there's wait time or an external event before the next step.
 - Avoid selecting values in lists. Instead, use text formats, such as **FIFO**, **AudioRM**, and **SiteWH**. When you select in a list, the position of the value in the list is recorded, not the value itself. If items are added to that list, the position of the value can change. Therefore, your recording will use a different parameter, and the rest of the scenario might be affected.
 - Think about multi-user behavior. For example, don't assume that your newly created sales order will always be automatically selected. Instead, always use the filter to find the correct order.
 - Use the Copy function in Task recorder to save the name of a newly created product so it can be used in chained test cases.
@@ -291,7 +291,7 @@ Generates test execution and parameter files for the specified test case in the 
 
 ##### generate: optional switches
 
-+ `/retry[=seconds]`: If this switch is specified, and case test cases are blocked by other RSAT instances, the generate process will wait the specified number of seconds and then try one more time. The default value for \[seconds\] is 120 seconds. Without this switch, the process will be canceled immediately if test cases are blocked.
++ `/retry[=seconds]`: If this switch is specified, and case test cases are blocked by other RSAT instances, the generate process waits the specified number of seconds and then try one more time. The default value for \[seconds\] is 120 seconds. Without this switch, the process will be canceled immediately if test cases are blocked.
 + `/dllonly`: Generate Test Execution files only. Don't regenerate the Excel parameter file.
 + `/keepcustomexcel`: Upgrade the existing parameters file. Also regenerate Execution files.
 
@@ -579,7 +579,7 @@ Runs all test cases in the specified Azure DevOps test suite.
 
 #### quit
 
-Closes the application. This command is useful only when the applications is running in interactive mode.
+Closes the application. This command is useful only when the application is running in interactive mode.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
@@ -675,13 +675,13 @@ Running the application by providing a settings file:
 
 You have a test script that creates a new customer. Via scripting, this test case can be run in a loop by randomizing the following data before each iteration is run:
 
-- Customer ID
+- Customerid
 - Customer name
 - Customer address
 
-The customer ID will be in the format *ATCUS\<number\>*, where \<number\> is a value between **000000001** and **999999999**.
+The customerid will be in the format *ATCUS\<number\>*, where \<number\> is a value between **000000001** and **999999999**.
 
-The following example uses one parameter, **start**, to define the first number that is used. Is uses a second parameter, **nr**, to define the number of customers that must be created. For each iteration, the parameters in the Excel parameter file are changed by using an UpdateCustomer function. Then the RSAT command line is called in a RunTestCase function.
+The following example uses one parameter, **start**, to define the first number that is used. It uses a second parameter, **nr**, to define the number of customers that must be created. For each iteration, the parameters in the Excel parameter file are changed by using an UpdateCustomer function. Then the RSAT command line is called in a RunTestCase function.
 
 Open Microsoft Windows PowerShell Integrated Scripting Environment (ISE) in admin mode, and paste the following code into the window that is named **Untitled1.ps1**.
 
