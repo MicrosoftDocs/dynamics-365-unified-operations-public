@@ -49,11 +49,11 @@ To use natural-language inventory search with Copilot, your system must meet the
 
 ## Use the query API
 
-You submit inventory queries and receive results using the query API, which is defined as follows
+You submit inventory queries and receive results using the query API, which is defined as follows:
 
 ```txt
 Path:
-/Copilot/nl/iv/{environmentId}/query
+    /nl/iv/{environmentId}/query
 Method:
     Post
 Headers:
@@ -67,6 +67,8 @@ Body:
         "Text" : { Your text input }
     }
 ```
+
+The path URL should resemble the following example: `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{Supply_Chain_Management_environment_id}}/query`.
 
 The following example shows sample body content.
 
