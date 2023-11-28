@@ -2,34 +2,25 @@
 # required metadata
 
 title: Set up order fulfillment for stores
-description: This article provides an overview of how to set up store order fulfillment.
+description: This article describes how to set up store order fulfillment in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/30/2017
+ms.date: 11/28/2023
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
 ms.search.form:  RetailStoreTable, RetailTillLayout
 audience: Application User
-# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version:
-
 
 ---
-
 
 # Set up order fulfillment for stores
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to set up store order fulfillment in Microsoft Dynamics 365 Commerce.
 
 Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
 
@@ -55,18 +46,18 @@ Be default, order lines assigned to a store are marked as **Accepted**. This mea
 
 Order lines for store pickup are marked as **Pending** and are not subject to acceptance.
 
-To turn on manual acceptance for order lines, navigate to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**.
+To turn on manual acceptance for order lines, navigate to **Retail and Commerce \> Channels \> Stores \> All stores**. Select the store and select in the store ID to view the store's details. Select **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**.
 
 ### Enable reject order line capability
 
-Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow reject order** permission in the POS permission group associated with the worker. While rejecting a line, the retailers can mandate their workers to provide a reason for rejection. This can be achieved by using info codes of **Info code activity** type **Order fulfillment** and assigning the info code to **Reject order line** in the functionality profile associated with the channel. In case you want further analysis on the rejection reasons, the info code is saved on the columns of RetailSalesLine: INFOCODEID, SUBINFOCODEID and INFORMATION.
+Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it won't be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow reject order** permission in the POS permission group associated with the worker. When rejecting a line, retailers can mandate their workers to provide a reason for rejection. This can be achieved by using info codes of **Info code activity** type **Order fulfillment** and assigning the info code to **Reject order line** in the functionality profile associated with the channel. If you want to conduct further analysis on the rejection reasons, the info code is saved in the INFOCODEID, SUBINFOCODEID, and INFORMATION columns of the RetailSalesLine entity.
 
 > [!NOTE]
 > Only the info codes of **Info code activity** type **Order fulfillment** can be assigned to the **Reject order line** action.
 
 ### Synchronize changes to the channel database
 
-After the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**. Select schedule "1090-Registers" to sync button grid changes and then click **Run now**. Next, sync permissions changes by selecting "1060-Staff" and then click **Run now**. Next, sync channel changes by selecting "1070-Channel configuration" and click **Run now**. Finally, sync the newly created info code for reject reason by selecting the "1110-Global configuration" and click **Run now**.
+After the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Select schedule "1090-Registers" to sync button grid changes and then select **Run now**. Next, sync permissions changes by selecting "1060-Staff" and then select **Run now**. Next, sync channel changes by selecting "1070-Channel configuration" and select **Run now**. Finally, sync the newly created info code for reject reason by selecting the "1110-Global configuration" and select **Run now**.
 
 ## Use order fulfillment at the point of sale
 
