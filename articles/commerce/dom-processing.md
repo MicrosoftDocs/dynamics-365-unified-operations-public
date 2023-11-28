@@ -57,7 +57,7 @@ If the **Maximum number of order lines per optimization** value is 0:
 - For the Production Solver type, DOM creates a batch for every 1500 sales lines.
 
     > [!NOTE]
-    > If you set a large value for **Maximum number of order lines per optimization**, DOM processor job will take longer time to complete. Set a proper value to ensure DOM can utilize batch server resources and broker sales lines faster.
+    > If you set a large value for **Maximum number of order lines per optimization**, DOM processor job will take longer time to complete because it runs on a batch server. Set a proper value to ensure DOM can utilize more batch servers to improve the performance.
 
 ## Inventory lookup
 
