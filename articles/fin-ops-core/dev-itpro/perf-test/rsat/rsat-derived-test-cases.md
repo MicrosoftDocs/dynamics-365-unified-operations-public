@@ -4,7 +4,8 @@ description: This article shows how you can use the Regression suite automation 
 author: FrankDahl
 ms.date: 11/27/2023
 ms.topic: how-to
-play back
+ms.custom: 
+  - bap-template
 ms.prod: 
 ms.technology: 
 audience: Developer
