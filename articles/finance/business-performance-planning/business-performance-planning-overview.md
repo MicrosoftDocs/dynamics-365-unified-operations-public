@@ -39,8 +39,8 @@ Business performance planning offers financial and operational planning and anal
 
 The planning feature set consists of two main concepts:
 
-  - Modeling data that's needed for planning
-  - Acting on data provided
+  - Modeling data needed for planning
+  - Acting on the data provided
 
 In the planning application, you can create dimensions and cubes, load fact data into the cubes, and define dimension and cube access. The dimension data can also be modified to create new master data by using the canvas application, Power BI, and Excel.
 
