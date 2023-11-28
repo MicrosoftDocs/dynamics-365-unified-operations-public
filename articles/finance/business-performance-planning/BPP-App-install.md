@@ -42,7 +42,7 @@ Select **Install app** from the menu.
 
 Select **Dynamics 365 Finance business performance planning** from the list of apps.
 
-Important! You must have purchased a Finance license to view and select the Dynamics 365 for Finance business performance planning application for install. Without having a Finance license, the app will not be visible in the Power Platform Admin Center. Learn more about Finance licensing here: [Finance Pricing \| Microsoft Dynamics 365](https://dynamics.microsoft.com/en-us/finance/pricing/)
+Important! You must have purchased a Finance license to view and select the Dynamics 365 for Finance business performance planning application for install. Without having a Finance license, the app will not be visible in the Power Platform Admin Center. For more information about finance licensing, see: [Finance pricing](https://dynamics.microsoft.com/en-us/finance/pricing/)
 
 Once in the installation form, the agreement to the **terms of service** must be selected before the **install** button will be enabled.
 
