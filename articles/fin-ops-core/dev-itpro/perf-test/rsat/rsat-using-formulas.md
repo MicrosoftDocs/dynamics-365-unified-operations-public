@@ -35,9 +35,9 @@ There are a few cases that you need to be aware of to ensure formulas are compat
 
 Test steps can't reference later steps in a case. 
 
-For example, step number two can't reference a value from the step number three cell within a test case. This is because step three logically doesn't happen when step two is running, and the value for step three can change before it executes. 
+For example, step number 2 can't reference a value from the step number 3 cell within a test case. This is because step 3 logically doesn't happen when step 2 is running, and the value for step 3 can change before it executes. 
 
-For example, an inventory unit that attempts to use the value from purchase unit will not work.
+For example, an inventory unit that attempts to use the value from purchase unit won't work.
 
 ![RSAT reference forward](media/rsat-reference-forward.png)
 
@@ -51,19 +51,19 @@ One way this may be fixed is by creating a new named cell that holds a value, wh
 
 ## Use saved variables in formulas
 
-Variables can be saved with recordings, and they are assigned names with curly brackets like {{PurchCreateOrder_PurchTable_PurchId_16601_Copy}}.
+Variables can be saved with recordings, and they're assigned names with curly brackets like {{PurchCreateOrder_PurchTable_PurchId_16601_Copy}}.
 
-Variables provides a convenient way to save a value to reuse later during test execution, both within a test case and to pass as context when connecting test cases. Variable can only be used in primary test step cells and message validation cells.
+Variables provide a convenient way to save a value to reuse later during test execution, both within a test case and to pass as context when connecting test cases. Variable can only be used in primary test step cells and message validation cells.
 
 Cells that include strings just include variable by their names directly within the string. For example, “The variable has the value {{PurchCreateOrder_PurchTable_PurchId_16601_Copy}} as purchase order ID”.
 
 Cells with formulas must include variables using their name surrounded by double quotes. For example, =CONCAT("All field values required for validation are specified for product ", "{{EcoResProductDetailsExtended_InventTable_ItemId_17691_Copy}}").
 
-Variables that have numeric values must also be referenced double quotes in formulas, here use the VALUE function to get the numeric value. For exampl, =VALUE(“{{PurchCreateOrder_PurchLine_Quantity_16601_Copy}}”) * 2.
+Variables that have numeric values must also be referenced double quotes in formulas, here use the VALUE function to get the numeric value. For example, =VALUE(“{{PurchCreateOrder_PurchLine_Quantity_16601_Copy}}”) * 2.
 
 Never use ‘ (single quotes) in front of formulas as workaround. For example, ‘={{PurchCreateOrder_PurchLine_Quantity_16601_Copy}}”) * 2.
 
-This represents a symptom where variables have been referenced in a unsupported way, and the cell should be edited to validate and save without the single quote character up front.
+This represents a symptom where variables have been referenced in an unsupported way, and the cell should be edited to validate and save without the single quote character up front.
 
 Below is an example how RSAT presents an exception when using the **Generate** action, if a formula has compatibility issues.
 
@@ -75,7 +75,7 @@ Some common test cases create new records that have unique identifiers. For exam
 
 Excel is internally maintaining date and time as decimal numbers, and this can be used when generating unique identifiers.
 
-Excel sometimes dynamically converts date and time like from functions TODAY and NOW into decimal numbers. However, this doesn't work with PowerFX without we explicitly mention indicate this in the formulas.
+Excel sometimes dynamically converts date and time like from functions TODAY and NOW into decimal numbers. However, this doesn't work with PowerFX without we explicitly mention indicating this in the formulas.
 
 Excel process functions like TODAY and NOW dynamically as decimal numbers.
 
