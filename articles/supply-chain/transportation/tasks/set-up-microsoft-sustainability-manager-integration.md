@@ -1,4 +1,4 @@
-This article shows how to setup integration with Microsoft Sustainability Manager to calculate carbon emission during the rate and route planning. A transporatation planner can then make decision to assign the most envrionment friendly transporatation service provider to the load.
+This article provides a detailed guide on integrating with Microsoft Sustainability Manager to accurately calculate carbon emissions during rate and route planning in transportation management. By leveraging this integration, transportation planners can make informed decisions, strategically assigning environmentally-friendly transportation service providers to each load.
 
 ## Prerequisites
 Before you complete the steps in this article, the following prerequisites must be met:
@@ -39,5 +39,5 @@ You need to map **Transportation method in Dynamics 365 SCM** with the value of 
    >![Note]: Error message will popup in the above message bar if the Power Platform environment does not setup correctly.
    > 
 5. Once validation passed, select a model in field **Model Name** from the drop-down menu.
-6. Activate the toggle for **Enabling McFS integration**
-7. Select **Save**.**
+6. Activate the toggle for **Enable McFS integration**
+7. Select **Save**.
