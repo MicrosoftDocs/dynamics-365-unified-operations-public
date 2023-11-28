@@ -75,7 +75,7 @@ The following example shows sample body content.
         "Text" : "What's the inventory of product D0001 in organization USMF, site 1, location 11?"
    }
 ```
-**Path URL** format is : `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{finops_environment_id}}/query`.
+**Path URL**  example : `https://inventoryservice-copilot.weu-il301.gateway.prod.island.powerapps.com/nl/iv/{{finops_environment_id}}/query`.
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
 
