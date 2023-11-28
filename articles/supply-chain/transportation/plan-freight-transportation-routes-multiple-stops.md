@@ -54,15 +54,15 @@ The Load building workbench uses the customer addresses and delivery dates from 
 
 
 ## Sustainable Transportation Planning
-Dynamics 365 Supply Chain Management is offering Sustainability TMS solution by integration with Microsoft Clould for Sustainability (MCfs) for carbon emission calculation.
+Dynamics 365 Supply Chain Management is offering Sustainability TMS solution by integration with Microsoft Sustainability Manager for carbon emission calculation.
 
 Sustainability TMS can help companies reduce their carbon footprint by optimizing routes, reducing fuel consumption, minimizing empty miles, and increasing the use of lower-emission transportation modes. Companies can achieve better visibility, control, and automation over their transportation operations. By reducing fuel consumption and carbon emissions, companies can minimize their environmental impact and play a part in combating climate change. Furthermore, by demonstrating a commitment to sustainability, companies can improve their brand image and attract environmentally conscious customers.
 
-- **System Integration**: The integration between Dynamics 365 Transportation Management System (TMS) and Microsoft Clould for Sustainability (MCfS) using REST APIs (application programming interfaces). This allows data to flow between the two systems seamlessly, enabling organizations to track sustainability metrics alongside their other business processes.
+- **System Integration**: The integration between Dynamics 365 Transportation Management System (TMS) and Microsoft Sustainability Manager using REST APIs (application programming interfaces). This allows data to flow between the two systems seamlessly, enabling organizations to track sustainability metrics alongside their other business processes.
 
-- **Carbon Emission Calculation**: By utilizing the route data from Dynamics 365 TMS, MCfs offers a variety of data models and services that can help organizations calculate, analyze transportation-related carbon emission. The route data can be used to calculate emissions from different modes of transportation, including cars, trucks, planes, and ships
+- **Carbon Emission Calculation**: By utilizing the route data from Dynamics 365 TMS, Microsoft Sustainability Manager offers a variety of data models and services that can help organizations calculate, analyze transportation-related carbon emission. The route data can be used to calculate emissions from different modes of transportation, including cars, trucks, planes, and ships
 
-- **Route planning with CO2E result**: After MCfs return the calculated the emissions for each mode of transportation, you can compare them to determine which mode emits the least carbon dioxide. You can choose the most eco-friendly route based on the emissions calculation or choose the mode of transportation with the lowest carbon emissions in TMS rate and route workbench.
+- **Route planning with CO2E result**: After Microsoft Sustainability Manager return the calculated the emissions for each mode of transportation, you can compare them to determine which mode emits the least carbon dioxide. You can choose the most eco-friendly route based on the emissions calculation or choose the mode of transportation with the lowest carbon emissions in TMS rate and route workbench.
 
 
 
