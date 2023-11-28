@@ -1,4 +1,36 @@
-**Dimensions**
+---
+# required metadata
+
+title: Microsoft Dynamics 365 Finance business performance planning dimensions
+description: This article describes dimensions and how dimensions are used in Microsoft Dynamics 365 Finance business performance planning.
+author: ShielaSogge
+ms.date: 11/28/2023
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+
+# ms.tgt_pltfrm: 
+ms.custom: 7521
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: twheeloc
+ms.search.validFrom: 2023-12-03
+ms.dyn365.ops.version: 
+
+---
+# Microsoft Dynamics 365 Finance business performance planning dimensions
+
+This article describes dimensions and how dimensions are used in business performance planning.
+
+## Dimensions
 
 Dimensions are descriptors that define your fact data. The structure of a dimension is comprised of columns, that are referred to as attributes of the dimension. These columns can be used for creating hierarchical structures in your analysis. For example, a dimension may include the columns of date, month name and year. This would allow analyzation of data by drilling down from year, to month, to date. Common dimensions are people, product, places, and time.
 
