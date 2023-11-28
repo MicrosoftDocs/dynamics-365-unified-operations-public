@@ -2,7 +2,7 @@
 title: Set up DOM
 description: This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/17/2023
+ms.date: 11/28/2023
 ms.topic: article
 audience: Application User
 ms.reviewer: josaw
@@ -40,9 +40,8 @@ To configure DOM parameters, follow these steps.
     - **Disable road distance calculation** - If this option is **Yes**, aerial distance is calculated for latitude and longitude values of the warehouse and the customer address. Set this option to **No** if you want to use Bing Maps API to calculate road distance, in this case, **Confirm Bing Maps usage for DOM** option is required to be **Yes**.
     - **Do not process accepted store orders during order optimization** - Set this option to **Yes** if you don't want DOM to process sales orders that have been accepted by retail stores.
     - **Update Financial Dimensions on Sales Order Line based on Site** - Set this option to **Yes** if you want to update financial dimensions on sales order lines based on the site.
-
         > [!NOTE]
-        > The financial dimensions might fail to update on sales order lines if the financial dimension link to the site is locked or deactivated. See [Configure and manage financial dimension links to sites](https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites) for more details.
+        > The financial dimensions might fail to update on sales order lines if the financial dimension link to the site is locked or deactivated. For more information, see [Configure and manage financial dimension links to sites](https://learn.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
     - **Fulfillment data retention period (in days)** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch deletes any fulfillment plan that is older than the number of days that you specify here.
     - **DOM logs retention period (in days)** - Specify how long the DOM logs that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job deletes any DOM logs that are older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
@@ -78,7 +77,7 @@ The DOM feature supports the definition of various types of DOM rules, and organ
 1. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
 
 > [!NOTE]
-> - In Commerce version 10.0.12 and higher, **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** must be enabled in the **Feature Management** workspace.
+> - In Commerce version 10.0.12 and higher, the **Ability to specify locations as 'Shipping' or 'Pickup' enabled within Fulfillment group** feature must be enabled in the **Feature Management** workspace.
 > - This feature adds new configurations on the **Fulfillment group** page so you can specify if the warehouse can be used for shipping or if the warehouse/store combination can be used for shipping, pickup, or both.
 > - If you enable the feature, the options available for location selection when you create pickup or shipment orders in POS are updated.
 > - Enabling the feature also results in updated pages in POS when the **Ship all** or **Ship selected** operations are selected.
@@ -110,7 +109,7 @@ To set up and configure DOM fulfillment profiles, follow these steps:
 1. Enter values for **Profile** and **Description**.
 1. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile are automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan, and aren't applied to the sales order lines.
 1. If you want the DOM profile to be run for orders that have every sales order origin, including orders where the sales order origin is undefined, set the **Process orders with empty sales origin** option to **Yes**. To run the profile for only a few sales order origins, you can define them on the **Sales origins** page.
-1. Set a value for **Maximum number of order lines per optimization** if you want to change how DOM break sales lines into different batches. See **Partition sales lines** of [DOM processing](./dom-processing.md) for more details.
+1. If you want to change how DOM break sales lines into different batches, set a value for **Maximum number of order lines per optimization**. For more information, see [Partition sales lines](dom-processing.md#partition-sales-lines).
 
     > [!NOTE]
     > - In Commerce version 10.0.12 and later, the **Ability to assign Fulfillment group to a Fulfillment Profile** feature must be enabled in the **Feature Management** workspace. This feature lets you specify a list of warehouses that DOM should consider when optimization is run with a fulfillment profile. If this list of warehouses isn't specified, DOM will look at all warehouses on legal entities that are defined in the profile.
