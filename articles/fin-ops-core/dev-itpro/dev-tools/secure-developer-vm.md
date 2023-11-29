@@ -89,7 +89,7 @@ Your one-box development environment can integrate with your Microsoft Entra Ten
 
 - Import Users 
 - Import AAD Groups 
-- Import Electronics Reporting configurationsconfigurations
+- Import Electronics Reporting configurations
 
 To use these capabilities it is necessary to configure certificate access to your tenant.
 
@@ -106,7 +106,8 @@ If you need to use the above-mentioned features in your one-box development envi
 ### Setting up an new application and certificate registration
 
 1. Create an application: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#register-an-application)
-2. Create a certificate: [Add a certificate](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-certificate)
+2. Create a certificate and add to your Service Principal: [Add a certificate](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-certificate)
+    * [Certificate creation options](https://learn.microsoft.com/en-us/azure/key-vault/certificates/create-certificate#partnered-ca-providers)
 3. Install the certificate in the Cloud-Hosted environment virtual machine. 
 4. In the K:\AosService\webroot\web.config file, replace the AAD.Realm value with the AAD Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
 
