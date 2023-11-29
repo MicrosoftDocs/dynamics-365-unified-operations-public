@@ -32,142 +32,148 @@ ms.dyn365.ops.version: Human Resources
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-## Dynamics 365 Human Resources (preview) app 
+The Human Resources (preview) app is integrated with Microsoft Dynamics 365 Human Resources in a finance and operations environment. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. The app provides an overall view of employee leave requests, leave balances, draft leave requests, and the leave requests for leave that was taken in the past. Managers can also use the app to view requests, and approve or reject them.
 
-Human Resources (preview) is an app that integrates with Dynamics 365 Human Resources on the finance and operations environment. It's designed and developed for organizations to ensure their employees can 
-request, edit, and cancel time off and leave of absence requests seamlessly. Employees can view their leave balances, upcoming leaves and leave history. Managers can also view and approve or reject requests.
+The Human Resources app can be used in Microsoft Teams or in a web browser. It can be used on both mobile devices and desktop devices. 
 
-The application can be used within Microsoft Teams or in a web browser and provides an overall view of employees leave requests, leave balances, draft leave requests, leave requests taken in the past. The Human Resources app can be used both on mobile and desktop. Administrators of an organization need to install the Human Resources app and share it to Microsoft Teams for organization users to use.
+Administrators of an organization must install the Human Resources app and share it with Microsoft Teams before organization users can use it.
 
->[!Note:]
->There will be updates for the Human Resources app that will be available, it's not recommended to customize the app.  
+> [!IMPORTANT]
+> Updates for the Human Resources app will be available. We don't recommend that you customize the app.
 
-### Install Human Resources 
+## Install the Human Resources app
 
-Before you install the Human Resources app, the following prerequisites are required:
- - Dynamics 365 finance and operations environment version 10.0.36 or later with latest quality update.
- - Confirm the latest quality update is installed and follow the steps to install the quality update.
- - License to Dynamics 365 Human Resources on a Dynamics 365 finance and operations environment.
- - The user who is installing the app needs to have a system administrator role in both Dynamics 365 Human Resources environment and in Microsoft Power Apps.
+Before you install the Human Resources app, the following prerequisites must be met:
 
+- You must have a version 10.0.36 or later Dynamics 365 finance and operations environment, and the latest quality update must be installed.
+- You must have a license to Dynamics 365 Human Resources in a finance and operations environment.
+- The user who installs the app must have a system administrator role in both the Dynamics 365 Human Resources environment and Power Apps.
 
-To install Human Resources for the first time, follow these steps:
-1.	In the Power Platform admin center (https://admin.powerplatform.microsoft.com), log in as admin.
-2.	Select **Environments**. Search for and select your environment. 
-3.	Confirm that **Power Apps component framework for canvas apps**.  
-After choosing the correct environment as mentioned in Step 1, follow these steps:
-    a.	Go to **Settings**, expand **Product** section and click **Features**.      	
-    b.	Search for **Power Apps component framework for canvas apps** and enable it.
-  	 c. Click **Save**.
-4.	Click **Human Resources App V2**.
-5.	Click **Get it now**. Sign into the Power Platform Admin Center. 
-6.	Select your environment and click **Install**.
-7.	After the installation is completed and the status changes to **Installed** for Dynamics 365 Human Resources. You can check the status by going to the Power Platform Admin Center. **Environments** > **(Environment name)** > **Dynamics 365 apps** (under Resources section). If the installation fails, try installing again using **Retry installation** in the Power Platform admin center.
+To install the Human Resources app for the first time, follow these steps.
 
-### Update the Human Resources app 
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as an admin.
+1. Select **Environments**, search for your environment, and select it.
+1. Follow these steps to confirm that the **Power Apps component framework for canvas apps** feature is enabled:
 
-This section helps if the previous version Human Resources app is installed and you need to update it to the enhanced version.
+    1. Go to **Settings**, expand **Product**, and select **Features**.
+    1. Search for **Power Apps component framework for canvas apps**, and enable it if it isn't already enabled.
+    1. Select **Save**.
 
-1.	Go to Power Platform Admin Center. **Environments** > **(Environment name)** > **Dynamics 365 apps** (under Resources section).
-2.	Check for available updates in the **Status** column for Dynamics 365 Human Resources. Select it and click **Update**. 
-3.	If the installation fails, install the app again using **Retry installation** in the Power Platform admin center.
+1. Select **Human Resources App V2**, and then select **Get it now**.
+1. Sign in to Power Platform admin center, select your environment, and then select **Install**.
+1. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the value in the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as personal app in Teams](../../power-apps/teams/embed-model-driven-teams-personal.md). The Human Resource app can also be used on a browser. 
- 
-### Onboard users to Human Resources app
+## Update the Human Resources app
 
-To onboard users to the Human Resources app, follow these steps:
-1.	Users of the app should have the following roles in Power Platform:
- - Basic user
- - Finance and operations basic user
- - Human Resources Teams app user
-2.	End users should be assigned an employee role in the Dynamics 365 Human Resources finance and operations environment. 
+Use this procedure if the previous version of the Human Resources app is installed, and you must update it to the enhanced version.
 
+1. In Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**.
+1. In the **Status** column for Dynamics 365 Human Resources, if an update is available, select it, and then select **Update**.
+1. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-### Create, update, and cancel leave requests using the Human Resources app
+For information about how to embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as personal app in Teams](../../power-apps/teams/embed-model-driven-teams-personal.md). The Human Resource app can also be used in a web browser.
 
-View Available Balances
-1.	Expand **Leave details** and click **Available balances**.
-2.	This displays the available balances tiles for the various leave plans assigned to the user logged in.
-3.	You can also request leaves directly from the tiles using the **Request** button in each tile.
+## Onboard users to the Human Resources app
 
-To request leave, follow these steps: 
-1.	Leave requests can be created either from the **Available balances** tile or the **+Request time off** button. 
-2.	Click **+Request time off**. A new page contain the **Leave type**, **Reason code**, **Start date** and **End date** fields that must be entered.
-3.	Click **+Add**.
-4.	The number of days selected appears in **Selected dates**.
-5.	Click **Edit days present** in **Selected dates** to update the details of the dates. For example, if you need to change the number of hours or request for a half day leave.
-6.	Click **Edit day** to change the number of hours, request for half day leaves or click bin on the date tiles to remove a particular date from the date range. 
-7.	Click **Save** after all the changes are updated.
-8.	Add any comments and attachments if needed and click **Next**.
-9.	Review the details of the leave request and click **Submit**.
-10.	Leave requests can be saved as draft using the **Save as draft** option or the action can be canceled by clicking **Cancel**.
-11.	You can also view the drafts, or the leave request submitted in **Upcoming leaves**.
+- Users of the app should have the following roles in Microsoft Power Platform:
 
+    - Basic user
+    - Finance and operations basic user
+    - Human Resources Teams app user
 
-To edit leave requests, follow these steps:
-1.	Select the leave request, click **Edit leave**.
-2.	Update the leave request and submit the request. If there is an approval workflow associated with the leave type, it's submitted for approval again.
-3.	To edit a single day in a leave request with more than one day, select the edit icon in the tile beside the day that needs to be edited, update the details, and submit the request.
+- End users should be assigned an employee role in the Dynamics 365 Human Resources environment.
 
+## Create and manage leave requests by using the Human Resources app
 
-To cancel leave requests, follow these steps:
-1.	Select the leave request to be cancelled, click **Delete leave**.
-2.	Click **Request cancellation**.
-3.	To cancel a single day in a leave request with more than one day, select **X** in the tile beside the day that needs to be edited and submit the request.
+### View available balances
 
+- Expand **Leave details**, and select **Available balances**.
 
-To create leave of absence requests, follow these steps:
-1.	Click **+ Request time off** or **+ Request leave of absence**.
-2.	Select the **Leave type**, enter the **Start date**, **End date** and update the other details.
+    For each leave plan that's assigned to the signed-in user, a tile shows the available balance. You can request leave directly from a tile by selecting the **Request** button.
 
+### Request leave
 
-To view upcoming requests:
-1.	Expand **Leave details** and click **Upcoming requests**.
-2.	All the draft leave requests will be displayed in an ascending order of dates followed by the future leave requests in ascending order. 
+1. Select either the **Request** button on an available balance tile or the **Request time off** button. A new page contains **Leave type**, **Reason code**, **Start date**, and **End date** fields that must be set.
+1. Select **Add**.
+1. The selected number of days appears in **Selected dates**. Select **Edit days present** to update the details of the dates. For example, you might have to change the number of hours or a request for half-day leave.
+1. Select **Edit day** to change the number of hours or a request for half-day leave. To remove a specific date from the date range, select the **Delete** (trashcan) button on the date tile. 
+1. When you've finished making changes, select **Save**.
+1. Add any comments and attachments that are required, and then select **Next**.
+1. Review the details of the leave request. If everything looks correct, select **Submit**. Alternatively, you can save the leave request as a draft by selecting **Save as draft**. To cancel the action of creating a leave request, select **Cancel**. You can view draft and submitted leave requests in **Upcoming leaves**.
 
+### Edit a leave request
 
-To view leave history:
-1.	Expand **Leave details** and click **History**.
-2.	All leaves that have an end date in the past will be displayed.  
+1. Select the leave request that you want to edit, and then select **Edit leave**.
+1. Update the leave request, and then submit it. If an approval workflow is associated with the leave type, it's submitted for approval again.
 
+    To edit a single day in a leave request that includes more than one day, select the **Edit** button on the tile next to that day, and update the details. Then submit the request.
 
-Managers can now approve or reject leave requests for their direct reports using the Human Resources app. Users with HR Manager role, HR Absence manager role can approve or reject leave requests for their team. 
+### Cancel a leave request
 
-To approve or reject leave requests: 
-Managers can now approve or reject leave requests for their direct reports using the Human Resources app. Users with HR Manager role, HR Absence manager role can approve or reject leave requests for their team. 
-1. Expand **My team** and click **Pending requests** to view open leave requests that are awaiting an approval.
-2.	Click the leave request and click **Approve** or **Reject**.
+1. Select the leave request that you want to cancel, and then select **Delete leave**.
+1. Select **Request cancellation**.
 
-### Troubleshooting
+    To cancel a single day in a leave request that includes more than one day, select the **X** button on the tile next to that day, and then submit the request.
 
-This section is for the Administrators of the organization who has installed the application.
- - If the installation fails, confirm the finance and operations virtual entity solution is installed with updates if available.
- - If you experience any data discrepancy, refresh the app and to update the latest data.
- - If you're not able to either submit a leave request or approve a leave request, follow these steps:
-a. Go to the Maker Portal (https://make.powerapps.com) 
-b. Click **Tables** > **Select all**. Search for the **Available finance and operations entity**, click **Edit**. 
-c. In **Available finance and operations entity columns and data**, search for **EssWorkflowWorkItemEntity** entity and click it to edit.
-d. Select **EssWorkflowWorkItemEntity** and click **Edit row using form**.
-e. Go to **General**. Select **Refresh** checkbox and click **Save**.
-f. Follow c, d and e steps for the following entities:
-•	EssLeaveBalanceEntity
-•	EssLoaRequestEntity 
-•	EssLeaveRequestAttachmentEntity                    
-•	MssLeaveRequestAttachmentEntity
-•	EssLeaveRequestDetailEntity
-•	EssTimeOffDetailApproverEntity
-•	EssLoaRequestDetailApproverEntity
-•	EssLeaveRequestHeaderEntity
-•	EssLeaveTypeEntity
-•	EssLeaveTypeReasonCodeEntity
-•	MssHRTeamsAppPendingLoaEntity
-•	MssHRTeamsAppPendingTimeoffEntity
-•	EssWorkCalendarDayEntity
-•	EssWorkerDetailEntity
+### Create a leave of absence request
 
-Where can I ask questions or submit feedback about the app? 
-The Human Resources App Viva Engage (Yammer) group is a great place to exchange tips, check on issues, submit feedback to Microsoft. Yammer group includes Microsoft partners, customers, experts, and employees.
+1. Select **Request time off** or **Request leave of absence**.
+1. Select the leave type, enter the start and end dates, and update the other details.
 
-#### Supported languages
-The Human Resources app supports all languages Power Apps supports. 
+### View upcoming requests
+
+- Expand **Leave details**, and select **Upcoming requests**.
+
+    The app shows all draft leave requests in order of ascending date, followed by future leave requests in order of ascending date.
+
+### View leave history
+
+- Expand **Leave details**, and select **History**.
+
+    The app shows all leaves that have an end date in the past.
+
+### Approve or reject a leave request
+
+Users who have the HR Manager or HR Absence manager role can use the Human Resources app to approve or reject leave requests for their direct reports on their team.
+
+1. Expand **My team**, and select **Pending requests** to view open leave requests that are awaiting approval.
+1. Select a leave request, and then select **Approve** or **Reject**.
+
+## Troubleshooting
+
+This section is for administrators of an organization that has installed the app.
+
+- If installation fails, confirm that the finance and operations virtual entity solution and any available updates are installed.
+- If you experience any data discrepancy, refresh the app to update it with the latest data.
+- If you can't submit a leave request or approve a leave request, follow these steps:
+
+    1. Sign in to the [Power Apps maker portal](https://make.powerapps.com/).
+    1. Select **Tables**, and then select **Select all**.
+    1. Search for the **Available finance and operations entity** table, and then select **Edit**.
+    1. Under **Available finance and operations entity columns and data**, search for the **EssWorkflowWorkItemEntity** entity, and select it to edit it.
+    1. Select **EssWorkflowWorkItemEntity**, and then select **Edit row using form**.
+    1. Go to **General**, select the **Refresh** checkbox, and then select **Save**.
+    1. Repeat steps d through f for each of the following entities:
+
+        - EssLeaveBalanceEntity
+        - EssLoaRequestEntity
+        - EssLeaveRequestAttachmentEntity
+        - MssLeaveRequestAttachmentEntity
+        - EssLeaveRequestDetailEntity
+        - EssTimeOffDetailApproverEntity
+        - EssLoaRequestDetailApproverEntity
+        - EssLeaveRequestHeaderEntity
+        - EssLeaveTypeEntity
+        - EssLeaveTypeReasonCodeEntity
+        - MssHRTeamsAppPendingLoaEntity
+        - MssHRTeamsAppPendingTimeoffEntity
+        - EssWorkCalendarDayEntity
+        - EssWorkerDetailEntity
+
+### Submitting questions or submit feedback about the Human Resources app
+
+The Human Resources App Viva Engage (Yammer) group is a great place to exchange tips, check on issues, and submit feedback to Microsoft. The group includes Microsoft partners, customers, experts, and employees.
+
+### Supported languages
+
+The Human Resources app supports all languages that Power Apps supports.
