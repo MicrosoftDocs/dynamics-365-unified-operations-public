@@ -2,8 +2,10 @@
 title: Secure one-box development environments
 description: This article describes how to help secure one-box developer environments.
 author: mnordick
-ms.date: 09/15/2022
+ms.date: 11/29/2023
 ms.topic: article
+ms.custom: 
+  - bap-template
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -30,9 +32,9 @@ When you deploy a one-box developer environment, you can expect the following Az
 - 1 virtual network
 - 1 public IP address
 - 1 storage account
-- 1 or more additional storage accounts that are prefixed with "dyn," for the storage of product binaries
+- 1 or more other storage accounts that are prefixed with "dyn," for the storage of product binaries
 
-Because these Azure resources will be under your own management, you might have to comply with security and compliance requirements that are specific to your organization. In addition, recommendations from sources such as Microsoft Defender or Azure Well-Architected security assessments might apply to your one-box developer environment. This article outlines some of these recommendations to help you make decisions that will best secure your one-box environments.
+Because these Azure resources are under your own management, you might have to comply with security and compliance requirements that are specific to your organization. In addition, recommendations from sources such as Microsoft Defender or Azure Well-Architected security assessments might apply to your one-box developer environment. This article outlines some of these recommendations to help you make decisions that best secure your one-box environments.
 
 ## Default configuration
 
@@ -40,9 +42,9 @@ Out of the box, your one-box developer environment has the following basic secur
 
 - Management ports on your VM are restricted to Microsoft Dynamics Lifecycle Services IP addresses. You can view these restrictions in the network security group in the resource group for your environment. Lifecycle Services uses the Windows Remote Management (WinRM) management port (5986) to do the initial configuration of your environment and to enable operations such as package deployments from Lifecycle Services.
 - Remote Desktop Protocol (RDP) is one of the primary that ways one-box environments are accessed. Therefore, the RDP port (3389) is allowed by default. RDP access can be limited to your own client IP address in the network security group. As a best practice, you should limit RDP access to clients that require access after deployment. Customers can also consider using other Azure technologies, such as Azure Bastion, to securely obtain RDP access.
-- On port 443, the one-box environment has a public endpoint that is exposed for HTTPS traffic. This endpoint is used by the environment URL and provides access to the product itself, which runs on the VM. By default, the endpoint is exposed to the internet. Although authorization is required for any sign-in to the site, as a best practice, you should still restrict port 443 access to clients that require it. This configuration will be specific to your organization, and you must define it after the environment is deployed.
+- On port 443, the one-box environment has a public endpoint that is exposed for HTTPS traffic. This endpoint is used by the environment URL and provides access to the product itself, which runs on the VM. By default, the endpoint is exposed to the internet. Although authorization is required for any sign-in to the site, as a best practice, you should still restrict port 443 access to clients that require it. This configuration is specific to your organization, and you must define it after the environment is deployed.
 - A storage account is associated with the environment for the storage of non-SQL data, such as document attachments. The configuration file on your VM contains a storage key in an encrypted field to enable your environment to access the storage account. The storage account has a publicly accessible IP address, because some product features require that the storage account be externally accessible.
-- An additional storage account (prefixed with "dyn") in your subscription is used to host finance and operations code packages. This storage account is also publicly addressable and is required for Lifecycle Services to access code packages for deployment.
+- Another storage account (prefixed with "dyn") in your subscription is used to host finance and operations code packages. This storage account is also publicly addressable and is required for Lifecycle Services to access code packages for deployment.
 
 ## Deploy to a custom virtual network
 
@@ -72,94 +74,94 @@ The following table shows the regional instances of Lifecycle Services.
 - The HTTPS port (443) doesn't have to be exposed externally, and it isn't used during deployment or management operations.
 - Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Azure Active Directory (Azure AD) is required for authentication.
 
-Deployment to a custom virtual network is an advanced configuration. The preceding guidance is provided as an outline of the requirements that will help you successfully use a custom virtual network. An incorrect virtual network configuration can prevent deployment or management operations from Lifecycle Services. Therefore, make sure that you understand how the customizations might affect external integrations.
+Deployment to a custom virtual network is an advanced configuration. The preceding guidance is provided as an outline of the requirements that help you successfully use a custom virtual network. An incorrect virtual network configuration can prevent deployment or management operations from Lifecycle Services. Therefore, make sure that you understand how the customizations might affect external integrations.
 
 > [!NOTE]
-> Because of the wide variety of possible customizations, Microsoft Support can't troubleshoot issues with custom configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your additional restrictions to isolate issues with the desired custom configuration.
+> Because of the wide variety of possible customizations, Microsoft Support can't troubleshoot issues with custom configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your other restrictions to isolate issues with the desired custom configuration.
 
 ## Security architecture recommendations
 
 Microsoft Defender and Azure Well-Architected security assessments provide general security guidance that applies to any Azure resources that you provision in your subscription, including your one-box development environment resources.
 
-When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, such restrictions will break some integration scenarios, such as export to Excel, that require that files be externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur additional costs that the resource owner will have to consider if those recommendations are applicable to their needs.
+When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, such restrictions break some integration scenarios, such as export to Microsoft Excel, that requires that files be externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner needs to consider if those recommendations are applicable to their needs.
 
 ## External integrations
 
 Your one-box development environment can integrate with your Microsoft Entra Tenant for added capabilities. These capabilities include,
 
 - Import Users 
-- Import AAD Groups 
+- Import Microsoft Entra ID groups 
 - Import Electronics Reporting configurations
 
-To use these capabilities it is necessary to configure certificate access to your tenant.
+To use these capabilities it's necessary to configure certificate access to your tenant.
 
 > [!NOTE]
 > Granting access to your Microsoft Entra Tenant should be done with care. Unless these capabilities are necessary for development, Microsoft recommends restricting certificate access to your tenant. 
 
 > [!NOTE]
-> Starting November 15 2023, certificates on your Microsoft Entra Tenant will no longer be installed on new one-box development environments by default. This will impact the external integrations mentioned in this section. See the instructions below for re-enabling this capability.
+> Starting November 15 2023, certificates on your Microsoft Entra Tenant no longer installs on new one-box development environments by default. This impacts the external integrations mentioned in this section. See the instructions below for re-enabling this capability.
 >
 > This change does not impact development environments deployed prior to this date. Optionally, these certificates can be removed. See the [Frequently Asked Questions](#frequently-asked-questions) for instructions.
 
-If you need to use the above-mentioned features in your one-box development environment, it will be necessary to follow the steps below to set up a new application and tenant certificate. 
+If you need to use the above-mentioned features in your one-box development environment, it's necessary to follow the steps below to set up a new application and tenant certificate. 
 
-### Setting up an new application and certificate registration
+### Setting up new application and certificate registration
 
-1. Create an application: [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#register-an-application)
-2. [Create a certificate](https://learn.microsoft.com/en-us/azure/key-vault/certificates/create-certificate#partnered-ca-providers) and [add it to your service principal](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-certificate).
+1. Create an application: [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app#register-an-application)
+2. [Create a certificate](/azure/key-vault/certificates/create-certificate#partnered-ca-providers) and [add it to your service principal](/entra/identity-platform/quickstart-register-app#add-a-certificate).
 3. Install the certificate in the Cloud-Hosted environment virtual machine. 
-4. In the K:\AosService\webroot\web.config file, replace the AAD.Realm value with the AAD Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
+4. In the K:\AosService\webroot\web.config file, replace the Entra ID.Realm value with the Entra ID Application Id/ClientId and the ‘Infrastructure.S2SCertThumbprint’ key and ‘GraphApi.GraphAPIServicePrincipalCert’ key with the value of the installed cert’ Thumbprint.
 
 <pre>&lt;add key="Aad.Realm" value="spn:&lt;insert your application id here&gt;" /&gt;
 &lt;add key="Infrastructure.S2SCertThumbprint" value="&lt;insert thumbprint here&gt;" /&gt;
 &lt;add key="GraphApi.GraphAPIServicePrincipalCert" value="&lt;insert thumbprint here&gt;" /&gt;</pre>
 
-5. Add Environment URL as redirect URI for the AAD Application: [Add a redirect URI](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#add-a-redirect-uri)
-6. Assign the following API permissions for the AAD Application: 
+5. Add Environment URL as redirect URI for the Entra ID Application: [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri)
+6. Assign the following API permissions for the Entra ID Application: 
     * Navigate to API Permissions, then select Add a Permission
         * Dynamics ERP: Required for accessing Finance and Operations environments. 
         * Microsoft Graph (User.Read.All and Group.Read.All permissions of type Application) 
     * On the Cloud-Hosted Environment(CHE) grant Read Access to the Network Service for the newly installed certificate.  
 
-To import Electronic Reporting configurations customers can follow instructions for [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations).
+To import Electronic Reporting configurations customers can follow instructions for [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
 
 
 ## Frequently asked questions
 
 ### Why does my newly provisioned one-box developer environment have security recommendations from Microsoft Defender and other security assessments?
 
-Many recommendations from such assessments require engagement from the resource owner to determine whether they will incur any additional costs. You should consider the guidance in this article when you evaluate the implementation of any security recommendations.
+Many recommendations from such assessments require engagement from the resource owner to determine whether they'll incur any more costs. You should consider the guidance in this article when you evaluate the implementation of any security recommendations.
 
 ### I want to restrict network access to my one-box developer environment, to help limit my security exposure. How can I block network access? 
 
 - VM access can be restricted by using the network security group in the environment's resource group. The WinRM management port (5986) is already restricted so that it's accessible only by Lifecycle Services. The network security group rules for the RDP port (3389) and the HTTPS port (443) aren't limited by default. However, they can be restricted down to the client IPs of your choice.
 - Outbound internet access must remain available for finance and operations apps to work.
-- The environment's Azure storage account can have access restricted, but it must remain accessible by the VM's public IP address and the IP addresses of any authorized client. If you don't correctly allow access, finance and operations features that rely on the storage functionality will fail.
+- The environment's Azure storage account can have access restricted, but it must remain accessible by the VM's public IP address and the IP addresses of any authorized client. If you don't correctly allow access, finance and operations features that rely on the storage functionality fail.
 
 ### My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what is wrong?
 
-The [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) section of this article lists the network access requirements for the Azure resources for your environment. Unfortunately, because of the wide variety of possible configurations, Microsoft Support can't help troubleshoot custom networking configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your additional restrictions to isolate issues with the desired custom configuration.
+The [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) section of this article lists the network access requirements for the Azure resources for your environment. Unfortunately, because of the wide variety of possible configurations, Microsoft Support can't help troubleshoot custom networking configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration. Then incrementally apply your other restrictions to isolate issues with the desired custom configuration.
 
-### I have a development environment deployed prior to November 15th, 2023. Do I need to take any action?
+### I have a development environment deployed prior to November 15, 2023. Do I need to take any action?
 
-No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if it is not required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
+No action is required for your development environment to continue to function as-is. However, Microsoft does encourage customers to limit their tenant's security exposure and recommends removing this certificate if it's not required. See the [External integrations](#external-integrations) section for details on the feature areas requiring this certificate.
 
 > To optionally remove the Dynamics ERP Application certificate from your tenant’s Service Principal, do the following from any one of your one-box development virtual machines: 
 >
-> Download version 2.19.1 or later of the Infrastructure scripts for on-premises deployments from the LCS shared asset library. The asset is available in the global and EU LCS regions. For more information see: [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem#download-the-infrastructure-scripts).
+> Download version 2.19.1 or later of the Infrastructure scripts for on-premises deployments from the LCS shared asset library. The asset is available in the global and EU LCS regions. For more information see: [Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment](../deployment/obtain-infrascripts-onprem#download-the-infrastructure-scripts.md).
 >
-> Find the thumbprint of your S2S certificate. To do that open the  K:\AosService\webroot\web.config file and locate the ‘Infrastructure. S2SCertThumbprint’ key. You will then specify this thumbprint when running the script below. 
+> Find the thumbprint of your S2S certificate. To do that open the  K:\AosService\webroot\web.config file and locate the ‘Infrastructure. S2SCertThumbprint’ key. You then specify this thumbprint when running the script below. 
 >
 > To remove the certificate from your service principal you can run the following PowerShell script: 
 >
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> 
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> 
 >
 > If you are unsure if a certificate is registered against your serviceprincipal you can run the following PowerShell script to validate: 
 >
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> -Test 
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> -Test 
 >
 > If your account has access to multiple tenants, you can specify the tenant in which to carry out the operation by running the PowerShell script with your tenant id: 
 >
-> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint <thumbprint of your S2S cert> -Tenant <your tenant id>  
+> .\Remove-CertFromServicePrincipal.ps1 -CertificateThumbprint \<thumbprint of your S2S cert\> -Tenant <your tenant id>  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
